@@ -1,0 +1,70 @@
+@use "sass:map";
+@use "./light.scss" as l;
+@use "./dark.scss" as d;
+@use "./default.light.scss" as _l;
+@use "./default.dark.scss" as _d;
+
+// Utils
+@function override($base: false, $override: false, $default) {
+  @if $override {
+    @return $override;
+  }
+  @if $base {
+    @return $base;
+  }
+  @return $default;
+}
+
+
+// Light
+$light: (
+  "background": override(l.$background, l.$background_, _l.$background),
+  "border": override(l.$border, l.$border_, _l.$border),
+  "lines": override(l.$lines, l.$lines_, _l.$lines),
+  "text": override(l.$text, l.$text_, _l.$text),
+  "header-text": override(l.$header-text, l.$header-text_, _l.$header-text),
+  "special-text": override(l.$special-text, l.$special-text_, _l.$special-text),
+  "hover": override(l.$hover, l.$hover_, _l.$hover),
+  "links-background": override(l.$links-background, l.$links-background_, _l.$links-background),
+  "highlight": override(l.$highlight, l.$highlight_, _l.$highlight),
+);
+
+// Dark
+$dark: (
+  "background": override(d.$background, d.$background_, _d.$background),
+  "border": override(d.$border, d.$border_, _d.$border),
+  "lines": override(d.$lines, d.$lines_, _d.$lines),
+  "text": override(d.$text, d.$text_, _d.$text),
+  "header-text": override(d.$header-text, d.$header-text_, _d.$header-text),
+  "special-text": override(d.$special-text, d.$special-text_, _d.$special-text),
+  "hover": override(d.$hover, d.$hover_, _d.$hover),
+  "links-background": override(d.$links-background, d.$links-background_, _d.$links-background),
+  "highlight": override(d.$highlight, d.$highlight_, _d.$highlight),
+);
+
+:root[saved-theme="light"] {
+    --light: #{map-get($light, "background")} !important;
+    --lightgray: #{map-get($light, "border")} !important;
+    --gray: #{map-get($light, "lines")} !important;
+    --darkgray: #{map-get($light, "text")} !important;
+    --dark: #{map-get($light, "header-text")} !important;
+    --secondary: #{map-get($light, "special-text")} !important;
+    --tertiary: #{map-get($light, "hover")} !important;
+    --highlight: #{map-get($light, "links-background")} !important;
+    --textHighlight: #{map-get($light, "highlight")} !important;
+  }
+:root[saved-theme="dark"] {
+  --light: #{map-get($dark, "background")} !important;
+  --lightgray: #{map-get($dark, "border")} !important;
+  --gray: #{map-get($dark, "lines")} !important;
+  --darkgray: #{map-get($dark, "text")} !important;
+  --dark: #{map-get($dark, "header-text")} !important;
+  --secondary: #{map-get($dark, "special-text")} !important;
+  --tertiary: #{map-get($light, "hover")} !important;
+  --highlight: #{map-get($dark, "links-background")} !important;
+  --textHighlight: #{map-get($dark, "highlight")} !important;
+  }
+
+  // Callouts
+
+

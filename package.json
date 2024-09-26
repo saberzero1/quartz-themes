@@ -1,0 +1,30 @@
+{
+  "name": "quartz-themes",
+  "version": "1.0.0",
+  "description": "Quartz-compatible Obsidian themes",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saberzero1/quartz-themes.git"
+  },
+  "keywords": [
+    "quartz",
+    "obsidian",
+    "themes",
+    "publish",
+    "obsidian-publish"
+  ],
+  "author": "saberzero1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saberzero1/quartz-themes/issues"
+  },
+  "homepage": "https://github.com/saberzero1/quartz-themes#readme",
+  "devDependencies": {
+    "sass": "^1.79.3"
+  }
+}
