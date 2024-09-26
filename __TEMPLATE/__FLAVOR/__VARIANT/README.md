@@ -1,10 +1,10 @@
-# \_\_TEMPLATE
+# \_\_TEMPLATE/\_\_FLAVOR/\_\_VARIANT
 
 [Obsidian Theme Name](link to repo)
 
 Type: `LIGHT`/`DARK`
-Flavors: `FLAVOR1`/`FLAVOR2`
-Variants: `VARIANT1`/`VARIANT2`/`VARIANT3`
+Flavors: `__FLAVOR`
+Variants: `__VARIANT`
 
 Description...
 
