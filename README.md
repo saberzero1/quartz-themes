@@ -10,6 +10,14 @@ From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone into 
 git clone https://github.com/saberzero1/quartz-themes.git quartz/styles/quartz-themes
 ```
 
+### Updating
+
+Pull from upstream by running the following from the `quartz-themes` folder.
+
+```sh
+git pull
+```
+
 ## Usage
 
 ## Specification
