@@ -2,12 +2,12 @@
 @use "sass:meta";
 @use "sass:string";
 @use "sass:list";
-@use "./light.scss" as l;
-@use "./dark.scss" as d;
+@use "light" as l;
+@use "dark" as d;
 
 // Overrides default options with light mode/dark mode specific version.
 @function override($override: false, $base) {
-  @if $override {
+  @if $override != false {
     @return $override;
   }
   @return $base;
@@ -78,14 +78,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   }
 }
 
-:root[saved-theme="dark"] {
+:root {
   --light: #{get($dark, "background")} !important;
   --lightgray: #{get($dark, "border")} !important;
   --gray: #{get($dark, "lines")} !important;
   --darkgray: #{get($dark, "text")} !important;
   --dark: #{get($dark, "header-text")} !important;
   --secondary: #{get($dark, "special-text")} !important;
-  --tertiary: #{get($light, "hover")} !important;
+  --tertiary: #{get($dark, "hover")} !important;
   --highlight: #{get($dark, "links-background")} !important;
   --textHighlight: #{get($dark, "highlight")} !important;
   .callout {
