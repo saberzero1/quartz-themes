@@ -4,18 +4,13 @@
 @use "sass:list";
 @use "./light.scss" as l;
 @use "./dark.scss" as d;
-@use "./default.light.scss" as _l;
-@use "./default.dark.scss" as _d;
 
 // Utils
-@function override($base: false, $override: false, $default) {
+@function override($override: false, $base) {
   @if $override {
     @return $override;
   }
-  @if $base {
-    @return $base;
-  }
-  @return $default;
+  @return $base;
 }
 
 @function get($collection, $value, $sub: false) {
@@ -27,28 +22,28 @@
 
 // Light
 $light: (
-  "background": override(l.$background, l.$background_, _l.$background),
-  "border": override(l.$border, l.$border_, _l.$border),
-  "lines": override(l.$lines, l.$lines_, _l.$lines),
-  "text": override(l.$text, l.$text_, _l.$text),
-  "header-text": override(l.$header-text, l.$header-text_, _l.$header-text),
-  "special-text": override(l.$special-text, l.$special-text_, _l.$special-text),
-  "hover": override(l.$hover, l.$hover_, _l.$hover),
-  "links-background": override(l.$links-background, l.$links-background_, _l.$links-background),
-  "highlight": override(l.$highlight, l.$highlight_, _l.$highlight),
+  "background": override(l.$background, l.$background_),
+  "border": override(l.$border, l.$border_),
+  "lines": override(l.$lines, l.$lines_),
+  "text": override(l.$text, l.$text_),
+  "header-text": override(l.$header-text, l.$header-text_),
+  "special-text": override(l.$special-text, l.$special-text_),
+  "hover": override(l.$hover, l.$hover_),
+  "links-background": override(l.$links-background, l.$links-background_),
+  "highlight": override(l.$highlight, l.$highlight_),
 );
 
 // Dark
 $dark: (
-  "background": override(d.$background, d.$background_, _d.$background),
-  "border": override(d.$border, d.$border_, _d.$border),
-  "lines": override(d.$lines, d.$lines_, _d.$lines),
-  "text": override(d.$text, d.$text_, _d.$text),
-  "header-text": override(d.$header-text, d.$header-text_, _d.$header-text),
-  "special-text": override(d.$special-text, d.$special-text_, _d.$special-text),
-  "hover": override(d.$hover, d.$hover_, _d.$hover),
-  "links-background": override(d.$links-background, d.$links-background_, _d.$links-background),
-  "highlight": override(d.$highlight, d.$highlight_, _d.$highlight),
+  "background": override(d.$background, d.$background_),
+  "border": override(d.$border, d.$border_),
+  "lines": override(d.$lines, d.$lines_),
+  "text": override(d.$text, d.$text_),
+  "header-text": override(d.$header-text, d.$header-text_),
+  "special-text": override(d.$special-text, d.$special-text_),
+  "hover": override(d.$hover, d.$hover_),
+  "links-background": override(d.$links-background, d.$links-background_),
+  "highlight": override(d.$highlight, d.$highlight_),
 );
 
 :root[saved-theme="light"] {
@@ -83,20 +78,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
-        --color: #{override(
-            get(l.$callouts, "color", $type),
-            get(l.$callouts_, "color", $type),
-            get(_l.$callouts, "color", $type)
-          )};
+        --color: #{override(get(l.$callouts, "color", $type), get(l.$callouts_, "color", $type))};
         --border: #{override(
             get(l.$callouts, "border", $type),
-            get(l.$callouts_, "border", $type),
-            get(_l.$callouts, "border", $type)
+            get(l.$callouts_, "border", $type)
           )};
         --bg: #{override(
             get(l.$callouts, "background", $type),
-            get(l.$callouts_, "background", $type),
-            get(_l.$callouts, "background", $type)
+            get(l.$callouts_, "background", $type)
           )};
       }
     }
@@ -107,20 +96,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
-        --color: #{override(
-            get(d.$callouts, "color", $type),
-            get(d.$callouts_, "color", $type),
-            get(_d.$callouts, "color", $type)
-          )};
+        --color: #{override(get(d.$callouts, "color", $type), get(d.$callouts_, "color", $type))};
         --border: #{override(
             get(d.$callouts, "border", $type),
-            get(d.$callouts_, "border", $type),
-            get(_d.$callouts, "border", $type)
+            get(d.$callouts_, "border", $type)
           )};
         --bg: #{override(
             get(d.$callouts, "background", $type),
-            get(d.$callouts_, "background", $type),
-            get(_d.$callouts, "background", $type)
+            get(d.$callouts_, "background", $type)
           )};
       }
     }
