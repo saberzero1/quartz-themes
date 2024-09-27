@@ -50,22 +50,22 @@ Soothing pastel theme for the high-spirited!
 
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/frappe/preview.png" alt="Preview of Frappe theme"/>
+<img src="frappe/preview.png" alt="Preview of Frappe theme"/>
 </details>
 
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/macchiato/preview.png" alt="Preview of Macchiato theme"/>
+<img src="macchiato/preview.png" alt="Preview of Macchiato theme"/>
 </details>
 
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/mocha/preview.png" alt="Preview of Mocha theme"/>
+<img src="mocha/preview.png" alt="Preview of Mocha theme"/>
 </details>
 
 ### Light
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/latte/preview.png" alt="Preview of Latte theme"/>
+<img src="latte/preview.png" alt="Preview of Latte theme"/>
 </details>

@@ -29,12 +29,12 @@ The one that started it all. Implements the default Quartz theme.
 
 <details>
 <summary>⬛ Quartz Dark</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/quartz/preview-dark.png" alt="Preview of Quartz Dark theme"/>
+<img src="preview-dark.png" alt="Preview of Quartz Dark theme"/>
 </details>
 
 ### Light
 
 <details>
 <summary>⬜ Quartz Light</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/quartz/preview-light.png" alt="Preview of Quartz Light theme"/>
+<img src="preview-light.png" alt="Preview of Quartz Light theme"/>
 </details>

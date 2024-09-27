@@ -20,5 +20,5 @@ The Original — Our darkest variant offering a cozy feeling with color-rich acc
 
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/mocha/preview.png" alt="Preview of Mocha theme"/>
+<img src="preview.png" alt="Preview of Mocha theme"/>
 </details>

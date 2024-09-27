@@ -20,5 +20,5 @@ Our lightest theme harmoniously inverting the essence of Catppuccin's dark theme
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/latte/preview.png" alt="Preview of Latte theme"/>
+<img src="preview.png" alt="Preview of Latte theme"/>
 </details>
