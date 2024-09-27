@@ -36,7 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
+      - run: npm ci --include=dev
 
       - name: Check types and style
         run: npm run check
