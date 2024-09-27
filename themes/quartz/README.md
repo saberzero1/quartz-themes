@@ -3,33 +3,38 @@
 [Original Repository](https://github.com/jackyzha0/quartz)
 
 - **Type**: `LIGHT`/`DARK`
-- **Flavors**: `none`
-- **Variants**: `none`
+- **Flavors**: [Light](#light), [Dark](#dark)
 
 The one that started it all. Implements the default Quartz theme.
 
 ## Usage
 
-For `LIGHT` version:
-
-```scss
-// In light.scss
-@import "themes/quartz/light";
-```
-
-For `DARK` version:
+### Dark
 
 ```scss
 // In dark.scss
 @import "themes/quartz/dark";
 ```
 
-## Preview
-
 ### Light
 
-![example picture](image)
+```scss
+// In light.scss
+@import "themes/quartz/light";
+```
+
+## Preview
 
 ### Dark
 
-![example picture](image)
+<details>
+<summary>⬛ Quartz Dark</summary>
+<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/quartz/frappe/preview.png" alt="Preview of Frappe theme"/>
+</details>
+
+### Light
+
+<details>
+<summary>⬜ Quartz Light</summary>
+<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/quartz/latte/preview.png" alt="Preview of Latte theme"/>
+</details>

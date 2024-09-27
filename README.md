@@ -1,6 +1,6 @@
 # Quartz Themes
 
-Collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
+A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 ## Installation
 
@@ -23,7 +23,6 @@ Your `custom.scss` should look something like this:
 @use "quartz-themes";
 
 // put your custom CSS here!
-
 ```
 
 ### Updating
@@ -48,4 +47,37 @@ git pull
 
 ## Usage
 
+You can set a separate theme for light mode and dark mode.
+
+### Light Mode
+
+Add your desired dark theme to `light.scss`.
+
+```scss
+// light.scss
+// Use Catppuccin Latte for dark mode
+@import "themes/catppuccin/latte";
+```
+
+### Dark Mode
+
+Add your desired dark theme to `dark.scss`.
+
+```scss
+// dark.scss
+// Use Catppuccin Frappe for dark mode
+@import "themes/catppuccin/frappe";
+```
+
+## Supported Themes
+
+This list is ever expanding.
+
+| Theme                                     | Flavors                                                                                                                                                                                  | Original Obsidian Theme                                       |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [Catppuccin](themes/catppuccin/README.md) | [Frappe](themes/catppuccin/frappe/README.md), [Latte](themes/catppuccin/latte/README.md), [Macchiato](themes/catppuccin/macchiato/README.md), [Mocha](themes/catppuccin/mocha/README.md) | [Obsidian Catppuccin](https://github.com/catppuccin/obsidian) |
+| [Quartz](themes/quartz/README.md)         | [Dark](themes/quartz/README.md), [Light](themes/quartz/README.md)                                                                                                                        | [Quartz](https://github.com/jackyzha0/quartz)                 |
+
 ## Specification
+
+WIP
