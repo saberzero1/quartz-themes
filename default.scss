@@ -1,16 +1,19 @@
-@import "index";
+// Default fallback for generic themes (themes that DO NOT have BOTH light mode AND dark mode under the same name.
+//
+// Usage:
+// @import "../../default"; (might have to add more "../", depending on folder depth.
 
-$background: false;
-$border: false;
-$lines: false;
-$text: false;
-$header-text: false;
-$special-text: false;
-$hover: false;
-$links-background: false;
-$highlight: false;
+$background_: false;
+$border_: false;
+$lines_: false;
+$text_: false;
+$header-text_: false;
+$special-text_: false;
+$hover_: false;
+$links-background_: false;
+$highlight_: false;
 
-$callouts: (
+$callouts_: (
   "note": (
     "color": false,
     "border": false,

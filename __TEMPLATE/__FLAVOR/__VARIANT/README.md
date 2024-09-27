@@ -1,11 +1,11 @@
-# \_\_TEMPLATE
+# \_\_TEMPLATE/\_\_FLAVOR/\_\_VARIANT
 
 [Original Repository](link to repo)
 
-- **Default**: `LIGHT`, `FLAVOR1`, `VARIANT1`
+- **Default**: `VARIANT1`
 - **Type**: `LIGHT`/`DARK`
-- **Flavors**: `FLAVOR1`/`FLAVOR2`
-- **Variants**: `VARIANT1`/`VARIANT2`/`VARIANT3`
+- **Flavors**: `__FLAVOR`
+- **Variants**: `__VARIANT`
 
 Description...
 
@@ -15,14 +15,14 @@ For `LIGHT` version:
 
 ```scss
 // In light.scss
-@import "themes/__TEMPLATE/light";
+@import "themes/__TEMPLATE/__FLAVOR/__VARIANT/light";
 ```
 
 For `DARK` version:
 
 ```scss
 // In dark.scss
-@import "themes/__TEMPLATE/dark";
+@import "themes/__TEMPLATE/__FLAVOR/__VARIANT/dark";
 ```
 
 ## Preview
