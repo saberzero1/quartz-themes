@@ -4,6 +4,10 @@
 
 A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
+> ![Quartz using Catppuccin Frappe](preview-catppuccin-frappe.png)
+>
+> Quartz using Catppuccin Frappe theme
+
 ## Installation
 
 From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone as submodule into the styles folder:
