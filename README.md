@@ -1,5 +1,7 @@
 # Quartz Themes
 
+[PLEASE USE THE PINNED DISCUSSION FOR THEME REQUESTS](https://github.com/saberzero1/quartz-themes/discussions/6)
+
 A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 ## Installation
@@ -55,7 +57,7 @@ Add your desired dark theme to `light.scss`.
 
 ```scss
 // light.scss
-// Use Catppuccin Latte for dark mode
+// Use Catppuccin Latte for light mode
 @import "themes/catppuccin/latte";
 ```
 
