@@ -1,0 +1,79 @@
+@import "index";
+
+$background: #161618;
+$border: #393639;
+$lines: #646464;
+$text: #d4d4d4;
+$header-text: #ebebec;
+$special-text: #7b97aa;
+$hover: #84a59d;
+$links-background: rgba(143, 159, 169, 0.15);
+$highlight: #b3aa0288;
+
+$callouts: (
+  "note": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "abstract": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "info": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "todo": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "tip": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "success": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "question": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "warning": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "failure": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "danger": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "bug": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "example": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "quote": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+);
