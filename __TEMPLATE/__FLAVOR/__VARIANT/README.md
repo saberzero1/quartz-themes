@@ -2,6 +2,7 @@
 
 [Original Repository](link to repo)
 
+- **Default**: `VARIANT1`
 - **Type**: `LIGHT`/`DARK`
 - **Flavors**: `__FLAVOR`
 - **Variants**: `__VARIANT`
