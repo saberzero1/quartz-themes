@@ -4,7 +4,7 @@ A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jacky
 
 ## Installation
 
-From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone into the styles folder:
+From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone as submodule into the styles folder:
 
 ```sh
 git submodule add https://github.com/saberzero1/quartz-themes.git quartz/styles/quartz-themes
