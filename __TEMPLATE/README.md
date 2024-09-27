@@ -8,4 +8,22 @@
 
 Description...
 
+## Usage
+
+For `LIGHT` version:
+
+```scss
+// In light.scss
+@import "themes/__TEMPLATE/light";
+```
+
+For `DARK` version:
+
+```scss
+// In dark.scss
+@import "themes/__TEMPLATE/dark";
+```
+
+## Preview
+
 ![example picture](image)
