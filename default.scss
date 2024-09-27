@@ -1,0 +1,82 @@
+// Default fallback for generic themes (themes that DO NOT have BOTH light mode AND dark mode under the same name.
+//
+// Usage:
+// @import "../../default"; (might have to add more "../", depending on folder depth.
+
+$background_: false;
+$border_: false;
+$lines_: false;
+$text_: false;
+$header-text_: false;
+$special-text_: false;
+$hover_: false;
+$links-background_: false;
+$highlight_: false;
+
+$callouts_: (
+  "note": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "abstract": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "info": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "todo": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "tip": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "success": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "question": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "warning": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "failure": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "danger": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "bug": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "example": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+  "quote": (
+    "color": false,
+    "border": false,
+    "background": false,
+  ),
+);
