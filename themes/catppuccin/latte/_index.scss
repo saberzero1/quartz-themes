@@ -1,14 +1,16 @@
-$background_: #eff1f5;
-$border_: #9ca0b0;
-$lines_: #7287fd;
-$text_: #4c4f69;
-$header-text_: #6c6f85;
-$special-text_: #1e66f5;
-$hover_: #209fb5;
-$links-background_: #1e66f533;
-$highlight_: #7c7f934d;
+@import "../../../default";
 
-$callouts_: (
+$background: #eff1f5;
+$border: #bcc0cc;
+$lines: #7287fd;
+$text: #4c4f69;
+$header-text: #6c6f85;
+$special-text: #1e66f5;
+$hover: #209fb5;
+$links-background: #1e66f533;
+$highlight: #7c7f934d;
+
+$callouts: (
   "note": (
     "color": #1e66f5,
     "border": #1e66f544,
