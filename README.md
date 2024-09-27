@@ -55,7 +55,7 @@ Add your desired dark theme to `light.scss`.
 
 ```scss
 // light.scss
-// Use Catppuccin Latte for dark mode
+// Use Catppuccin Latte for light mode
 @import "themes/catppuccin/latte";
 ```
 
