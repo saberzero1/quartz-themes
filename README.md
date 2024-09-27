@@ -82,6 +82,7 @@ This list is ever expanding.
 | Theme                                     | Flavors                                                                                                                                                                                  | Original Obsidian Theme                                       |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Catppuccin](themes/catppuccin/README.md) | [Frappe](themes/catppuccin/frappe/README.md), [Latte](themes/catppuccin/latte/README.md), [Macchiato](themes/catppuccin/macchiato/README.md), [Mocha](themes/catppuccin/mocha/README.md) | [Obsidian Catppuccin](https://github.com/catppuccin/obsidian) |
+| [Obsidian](themes/obsidian/README.md)     | [Dark](themes/obsidian/README.md#dark-1), [Light](themes/obsidian/README.md#light-1)                                                                                                     | [Obsidian.md](https://obsidian.md/)                           |
 | [Quartz](themes/quartz/README.md)         | [Dark](themes/quartz/README.md#dark-1), [Light](themes/quartz/README.md#light-1)                                                                                                         | [Quartz](https://github.com/jackyzha0/quartz)                 |
 
 ## Specification
