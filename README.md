@@ -7,7 +7,7 @@ A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jacky
 From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone into the styles folder:
 
 ```sh
-git submodule add https://github.com/saberzero1/quartz-themes.git
+git submodule add https://github.com/saberzero1/quartz-themes.git quartz/styles/quartz-themes
 ```
 
 Add the following line to your `custom.scss` file:
