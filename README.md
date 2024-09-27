@@ -1,5 +1,7 @@
 # Quartz Themes
 
+[PLEASE USE THE PINNED DISCUSSION FOR THEME REQUESTS](https://github.com/saberzero1/quartz-themes/discussions/6)
+
 A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 ## Installation
