@@ -1,6 +1,6 @@
 # \_\_TEMPLATE
 
-[Obsidian Theme Name](link to repo)
+[Original Repository](link to repo)
 
 - **Type**: `LIGHT`/`DARK`
 - **Flavors**: `FLAVOR1`/`FLAVOR2`
@@ -25,5 +25,11 @@ For `DARK` version:
 ```
 
 ## Preview
+
+### Light
+
+![example picture](image)
+
+### Dark
 
 ![example picture](image)
