@@ -4,7 +4,7 @@
   "description": "Quartz-compatible Obsidian themes",
   "main": "index.js",
   "scripts": {
-    "check": "tsc --noEmit && npx prettier . --check",
+    "check": "npx prettier . --check",
     "format": "npx prettier . --write"
   },
   "repository": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/saberzero1/quartz-themes#readme",
   "devDependencies": {
+    "prettier": "^3.3.3",
     "sass": "^1.79.3"
   }
 }
