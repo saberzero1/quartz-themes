@@ -1,5 +1,6 @@
 // Light
-//
+
+// Main colors
 // Background
 $background: #faf8f8;
 // Border
@@ -15,6 +16,75 @@ $special-text: #284b63;
 // Hover effects for special elements, matching search results highlight
 $hover: #84a59d;
 // Background color for internal links, internal tags
-$links-background: rgba(143, 159, 169, 0.15);
+$links-background: #8f9fa926;
 // Text highlight color
 $highlight: #fff23688;
+
+// Callouts
+$callouts: (
+  "note": (
+    "color": #448aff,
+    "border": #448aff44,
+    "background": #448aff10,
+  ),
+  "abstract": (
+    "color": #00b0ff,
+    "border": #00b0ff44,
+    "background": #00b0ff10,
+  ),
+  "info": (
+    "color": #00b8d4,
+    "border": #00b8d444,
+    "background": #00b8d410,
+  ),
+  "todo": (
+    "color": #00b8d4,
+    "border": #00b8d444,
+    "background": #00b8d410,
+  ),
+  "tip": (
+    "color": #00bfa5,
+    "border": #00bfa544,
+    "background": #00bfa510,
+  ),
+  "success": (
+    "color": #09ad7a,
+    "border": #09ad7144,
+    "background": #09ad7110,
+  ),
+  "question": (
+    "color": #dba642,
+    "border": #dba64244,
+    "background": #dba64210,
+  ),
+  "warning": (
+    "color": #db8942,
+    "border": #db894244,
+    "background": #db894210,
+  ),
+  "failure": (
+    "color": #db4242,
+    "border": #db424244,
+    "background": #db424210,
+  ),
+  "danger": (
+    "color": #db4242,
+    "border": #db424244,
+    "background": #db424210,
+  ),
+  "bug": (
+    "color": #db4242,
+    "border": #db424244,
+    "background": #db424210,
+  ),
+  "example": (
+    "color": #7a43b5,
+    "border": #7a43b544,
+    "background": #7a43b510,
+  ),
+  "quote": (
+    "color": #284b63,
+    "border": #e5e5e5,
+    "background": #448aff10,
+  ),
+);

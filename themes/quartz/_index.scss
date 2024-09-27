@@ -1,27 +1,14 @@
-// Dark
+$background_: false;
+$border_: false;
+$lines_: false;
+$text_: false;
+$header-text_: false;
+$special-text_: false;
+$hover_: false;
+$links-background_: false;
+$highlight_: false;
 
-// Main colors
-// Background
-$background: #161618;
-// Border
-$border: #393639;
-// Line and Border for checkboxes
-$lines: #646464;
-// Text color
-$text: #d4d4d4;
-// Darker text for headers, input, buttons
-$header-text: #ebebec;
-// Text for special elements like hyperlinks, checkbox fill, blockquote border
-$special-text: #7b97aa;
-// Hover effects for special elements, matching search results highlight
-$hover: #84a59d;
-// Background color for internal links, internal tags
-$links-background: #8f9fa926;
-// Text highlight color
-$highlight: #b3aa0288;
-
-// Callouts
-$callouts: (
+$callouts_: (
   "note": (
     "color": #448aff,
     "border": #448aff44,
@@ -83,8 +70,8 @@ $callouts: (
     "background": #7a43b510,
   ),
   "quote": (
-    "color": #7b97aa,
-    "border": #393639,
+    "color": false,
+    "border": false,
     "background": #448aff10,
   ),
 );

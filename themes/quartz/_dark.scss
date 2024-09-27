@@ -1,14 +1,14 @@
 @import "index";
 
-$background: false;
-$border: false;
-$lines: false;
-$text: false;
-$header-text: false;
-$special-text: false;
-$hover: false;
-$links-background: false;
-$highlight: false;
+$background: #161618;
+$border: #393639;
+$lines: #646464;
+$text: #d4d4d4;
+$header-text: #ebebec;
+$special-text: #7b97aa;
+$hover: #84a59d;
+$links-background: #8f9fa926;
+$highlight: #b3aa0288;
 
 $callouts: (
   "note": (
@@ -72,8 +72,8 @@ $callouts: (
     "background": false,
   ),
   "quote": (
-    "color": false,
-    "border": false,
+    "color": #7b97aa,
+    "border": #393639,
     "background": false,
   ),
 );
