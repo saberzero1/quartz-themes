@@ -20,5 +20,5 @@ Medium contrast with gentle colors creating a soothing atmosphere.
 
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/macchiato/preview.png" alt="Preview of Macchiato theme"/>
+<img src="preview.png" alt="Preview of Macchiato theme"/>
 </details>

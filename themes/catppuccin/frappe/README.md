@@ -20,5 +20,5 @@ A less vibrant alternative using subdued colors for a muted aesthetic.
 
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/catppuccin/frappe/preview.png" alt="Preview of Frappe theme"/>
+<img src="preview.png" alt="Preview of Frappe theme"/>
 </details>
