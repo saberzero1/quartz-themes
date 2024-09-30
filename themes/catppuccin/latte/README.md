@@ -13,7 +13,7 @@ Our lightest theme harmoniously inverting the essence of Catppuccin's dark theme
 
 ```scss
 // In light.scss
-@import "themes/catppuccin/latte";
+@import "quartz-themes/themes/catppuccin/latte";
 ```
 
 ## Preview

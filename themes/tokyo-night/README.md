@@ -18,21 +18,21 @@ A clean theme that celebrates the lights of Downtown Tokyo at night.
 
 ```scss
 // In dark.scss
-@import "themes/tokyo-night/moon";
+@import "quartz-themes/themes/tokyo-night/moon";
 ```
 
 #### Night
 
 ```scss
 // In dark.scss
-@import "themes/tokyo-night/night";
+@import "quartz-themes/themes/tokyo-night/night";
 ```
 
 #### Storm
 
 ```scss
 // In dark.scss
-@import "themes/tokyo-night/storm";
+@import "quartz-themes/themes/tokyo-night/storm";
 ```
 
 ### Light
@@ -41,7 +41,7 @@ A clean theme that celebrates the lights of Downtown Tokyo at night.
 
 ```scss
 // In light.scss
-@import "themes/tokyo-night/day";
+@import "quartz-themes/themes/tokyo-night/day";
 ```
 
 ## Previews

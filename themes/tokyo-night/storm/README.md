@@ -13,7 +13,7 @@ A clean theme that celebrates the lights of Downtown Tokyo at night.
 
 ```scss
 // In dark.scss
-@import "themes/tokyo-night/storm";
+@import "quartz-themes/themes/tokyo-night/storm";
 ```
 
 ## Preview
