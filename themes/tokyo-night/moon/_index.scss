@@ -1,0 +1,112 @@
+@import "../../../default";
+
+$background: #222436;
+$border: #444a73;
+$lines: #636da6;
+$text: #c0caf5;
+$header-text: #a9b1d6;
+$special-text: #bb9af7;
+$hover: #86e1fc;
+$links-background: #86e1fc26;
+$highlight: #65bcff88;
+
+$callouts: (
+  "note": (
+    "color": #65bcff,
+    "border": #65bcff44,
+    "background": #65bcff10,
+  ),
+  "abstract": (
+    "color": #86e1fc,
+    "border": #86e1fc44,
+    "background": #86e1fc10,
+  ),
+  "info": (
+    "color": #65bcff,
+    "border": #65bcff44,
+    "background": #65bcff10,
+  ),
+  "todo": (
+    "color": #86e1fc,
+    "border": #86e1fc44,
+    "background": #86e1fc10,
+  ),
+  "tip": (
+    "color": #86e1fc,
+    "border": #86e1fc44,
+    "background": #86e1fc10,
+  ),
+  "success": (
+    "color": #4fd6be,
+    "border": #4fd6be44,
+    "background": #4fd6be10,
+  ),
+  "question": (
+    "color": #ffc777,
+    "border": #ffc77744,
+    "background": #ffc77710,
+  ),
+  "warning": (
+    "color": #ff966c,
+    "border": #ff966c44,
+    "background": #ff966c10,
+  ),
+  "failure": (
+    "color": #c53b53,
+    "border": #c53b5344,
+    "background": #c53b5310,
+  ),
+  "danger": (
+    "color": #c53b53,
+    "border": #c53b5344,
+    "background": #c53b5310,
+  ),
+  "bug": (
+    "color": #ff757f,
+    "border": #ff757f44,
+    "background": #ff757f10,
+  ),
+  "example": (
+    "color": #c099ff,
+    "border": #c099ff44,
+    "background": #c099ff10,
+  ),
+  "quote": (
+    "color": #828bb8,
+    "border": #828bb844,
+    "background": #828bb810,
+  ),
+);
+
+:root {
+  h1 {
+    color: #ff757f;
+  }
+
+  h2 {
+    color: #ffc777;
+  }
+
+  h3 {
+    color: #c3e88d;
+  }
+
+  strong,
+  em,
+  h4 {
+    color: #86e1fc;
+  }
+
+  h5 {
+    color: #82aaff;
+  }
+
+  h6 {
+    color: #c099ff;
+  }
+
+  pre:has(> code),
+  code {
+    background-color: #444a73 !important;
+  }
+}
