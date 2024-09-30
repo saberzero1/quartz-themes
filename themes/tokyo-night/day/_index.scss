@@ -1,7 +1,7 @@
 @import "../../../default";
 
 $background: #e6e7ed;
-$border: #9ba2c5;
+$border: #ccd0e2; //#9ba2c5
 $lines: #6c6e75;
 $text: #40434f;
 $header-text: #343b58;
@@ -107,6 +107,6 @@ $callouts: (
 
   pre:has(> code),
   code {
-    background-color: #9ba2c5 !important;
+    background-color: #ccd0e2 !important; //#9ba2c5
   }
 }
