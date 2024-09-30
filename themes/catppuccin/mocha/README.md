@@ -13,7 +13,7 @@ The Original — Our darkest variant offering a cozy feeling with color-rich acc
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/mocha";
+@import "quartz-themes/themes/catppuccin/mocha";
 ```
 
 ## Preview

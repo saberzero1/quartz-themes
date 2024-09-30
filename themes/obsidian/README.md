@@ -15,14 +15,14 @@ For those who want more Obsidian in their Quartz site. Implements the default Ob
 
 ```scss
 // In dark.scss
-@import "themes/obsidian/dark";
+@import "quartz-themes/themes/obsidian/dark";
 ```
 
 ### Light
 
 ```scss
 // In light.scss
-@import "themes/obsidian/light";
+@import "quartz-themes/themes/obsidian/light";
 ```
 
 ## Preview
