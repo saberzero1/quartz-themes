@@ -102,12 +102,15 @@ Add your desired dark theme to `dark.scss`.
 
 This list is ever expanding.
 
-| Theme                                     | Flavors                                                                                                                                                                                  | Original Obsidian Theme                                       |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [Catppuccin](themes/catppuccin/README.md) | [Frappe](themes/catppuccin/frappe/README.md), [Latte](themes/catppuccin/latte/README.md), [Macchiato](themes/catppuccin/macchiato/README.md), [Mocha](themes/catppuccin/mocha/README.md) | [Obsidian Catppuccin](https://github.com/catppuccin/obsidian) |
-| [Obsidian](themes/obsidian/README.md)     | [Dark](themes/obsidian/README.md#dark-1), [Light](themes/obsidian/README.md#light-1)                                                                                                     | [Obsidian.md](https://obsidian.md/)                           |
-| [Quartz](themes/quartz/README.md)         | [Dark](themes/quartz/README.md#dark-1), [Light](themes/quartz/README.md#light-1)                                                                                                         | [Quartz](https://github.com/jackyzha0/quartz)                 |
+| Theme                                       | Flavors                                                                                                                                                                                  | Original Obsidian Theme                                                          |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [Catppuccin](themes/catppuccin/README.md)   | [Frappe](themes/catppuccin/frappe/README.md), [Latte](themes/catppuccin/latte/README.md), [Macchiato](themes/catppuccin/macchiato/README.md), [Mocha](themes/catppuccin/mocha/README.md) | [Obsidian Catppuccin](https://github.com/catppuccin/obsidian)                    |
+| [Obsidian](themes/obsidian/README.md)       | [Dark](themes/obsidian/README.md#dark-1), [Light](themes/obsidian/README.md#light-1)                                                                                                     | [Obsidian.md](https://obsidian.md/)                                              |
+| [Quartz](themes/quartz/README.md)           | [Dark](themes/quartz/README.md#dark-1), [Light](themes/quartz/README.md#light-1)                                                                                                         | [Quartz](https://github.com/jackyzha0/quartz)                                    |
+| [Tokyo Night](themes/tokyo-night/README.md) | [Day](themes/tokyo-night/day/README.md), [Moon](themes/tokyo-night/moon/README.md), [Night](themes/tokyo-night/moon/README.md), [Storm](themes/tokyo-night/storm/README.md)              | [Obsidian and Tokyonight](https://github.com/tcmmichaelb139/obsidian-tokyonight) |
 
+<!--
 ## Specification
 
 WIP
+-->
