@@ -13,7 +13,7 @@ A clean theme that celebrates the lights of Downtown Tokyo at night.
 
 ```scss
 // In light.scss
-@import "themes/tokyo-night/day";
+@import "quartz-themes/themes/tokyo-night/day";
 ```
 
 ## Preview

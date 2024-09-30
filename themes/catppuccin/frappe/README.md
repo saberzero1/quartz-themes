@@ -13,7 +13,7 @@ A less vibrant alternative using subdued colors for a muted aesthetic.
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/frappe";
+@import "quartz-themes/themes/catppuccin/frappe";
 ```
 
 ## Preview

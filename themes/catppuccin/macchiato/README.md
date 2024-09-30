@@ -13,7 +13,7 @@ Medium contrast with gentle colors creating a soothing atmosphere.
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/macchiato";
+@import "quartz-themes/themes/catppuccin/macchiato";
 ```
 
 ## Preview

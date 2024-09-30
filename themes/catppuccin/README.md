@@ -18,21 +18,21 @@ Soothing pastel theme for the high-spirited!
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/frappe";
+@import "quartz-themes/themes/catppuccin/frappe";
 ```
 
 #### Macchiato
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/macchiato";
+@import "quartz-themes/themes/catppuccin/macchiato";
 ```
 
 #### Mocha
 
 ```scss
 // In dark.scss
-@import "themes/catppuccin/mocha";
+@import "quartz-themes/themes/catppuccin/mocha";
 ```
 
 ### Light
@@ -41,7 +41,7 @@ Soothing pastel theme for the high-spirited!
 
 ```scss
 // In light.scss
-@import "themes/catppuccin/latte";
+@import "quartz-themes/themes/catppuccin/latte";
 ```
 
 ## Previews
