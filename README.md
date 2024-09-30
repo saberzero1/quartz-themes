@@ -10,11 +10,17 @@ A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jacky
 
 ## Installation
 
+### First install
+
+#### Setup submodule
+
 From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone as submodule into the styles folder:
 
 ```sh
 git submodule add https://github.com/saberzero1/quartz-themes.git quartz/styles/quartz-themes
 ```
+
+#### Link submodule
 
 Add the following line to your `custom.scss` file:
 
@@ -30,6 +36,23 @@ Your `custom.scss` should look something like this:
 
 // put your custom CSS here!
 ```
+
+#### Setting themes
+
+Copy `dark.scss` and `light.scss` from the `quartz-themes` root folder to `quartz/styles`.
+
+The resulting structure should look something like this:
+
+```
+quartz/
+  styles/
+    quartz-themes/
+    custom.scss
+    dark.scss
+    light.scss
+```
+
+To set the desired theme, [see below](#usage).
 
 ### Updating
 
@@ -62,7 +85,7 @@ Add your desired dark theme to `light.scss`.
 ```scss
 // light.scss
 // Use Catppuccin Latte for light mode
-@import "themes/catppuccin/latte";
+@import "quartz-themes/themes/catppuccin/latte";
 ```
 
 ### Dark Mode
@@ -72,7 +95,7 @@ Add your desired dark theme to `dark.scss`.
 ```scss
 // dark.scss
 // Use Catppuccin Frappe for dark mode
-@import "themes/catppuccin/frappe";
+@import "quartz-themes/themes/catppuccin/frappe";
 ```
 
 ## Supported Themes

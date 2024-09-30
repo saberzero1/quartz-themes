@@ -2,8 +2,8 @@
 @use "sass:meta";
 @use "sass:string";
 @use "sass:list";
-@use "light" as l;
-@use "dark" as d;
+@use "../light" as l;
+@use "../dark" as d;
 
 // Overrides default options with light mode/dark mode specific version.
 @function override($override: false, $base) {
