@@ -41,7 +41,6 @@ Your `custom.scss` should look something like this:
 @use "quartz-themes";
 
 // put your custom CSS here!
-
 ```
 
 #### Setting themes
