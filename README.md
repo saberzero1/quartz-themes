@@ -20,6 +20,12 @@ From your [Quartz](https://github.com/jackyzha0/quartz) root folder, clone as su
 git submodule add https://github.com/saberzero1/quartz-themes.git quartz/styles/quartz-themes
 ```
 
+If you've already added the submodule before, you can restore it with:
+
+```sh
+git submodule update --init --recursive --remote
+```
+
 #### Link submodule
 
 Add the following line to your `custom.scss` file:
@@ -56,7 +62,7 @@ To set the desired theme, [see below](#usage).
 
 ### Updating
 
-Pull the submodule from upstream by running the following from the `quartz-themes` folder.
+Pull the submodule from upstream by running the following from your Quartz repository:
 
 ```sh
 git submodule update --remote
