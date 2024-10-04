@@ -245,9 +245,7 @@ body {
       padding: 0;
       .sidebar.left {
         background-color: var(--light-lighten);
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 2rem;
+        padding: 0.5rem 1rem 0.25rem;
         border-bottom: 1px solid var(--light-border);
         position: sticky;
       }
