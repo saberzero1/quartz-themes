@@ -1,0 +1,293 @@
+// https://minimal.guide/home
+
+// Shared
+:root[saved-theme="light"] {
+  --light-darken: hsl(from var(--light) h s calc(l - 3));
+  --light-border: hsl(from var(--light) h s calc(l - 5));
+}
+
+:root {
+  --light-lighten: hsl(from var(--light) h s calc(l + 3));
+  --light-border: hsl(from var(--light) h s calc(l + 5));
+}
+
+.backlinks:after,
+.explorer:after,
+ul.overflow:after,
+ol.overflow:after {
+  display: none;
+}
+
+.clipboard-button {
+  background-color: transparent;
+}
+
+.clipboard-button,
+pre,
+div.graph > div.graph-outer {
+  border-color: var(--light-border);
+}
+
+.center {
+  h1,
+  h2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--light-border);
+  }
+  .page-header > div,
+  article {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+hr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: var(--light-border);
+}
+
+footer > p,
+footer > ul {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+div.search {
+  background-color: var(--light);
+  border: 1px solid var(--light-border);
+  border-radius: 5px;
+  > button.search-button {
+    background-color: var(--light);
+    border-radius: 5px;
+  }
+}
+div.sidebar.left {
+  border-right: 1px solid var(--light-border);
+}
+
+// Tablet
+body {
+  #quartz-body {
+    background: black;
+    background: linear-gradient(
+      90deg,
+      var(--light) 0%,
+      var(--light) 20%,
+      var(--light-lighten) 20%,
+      var(--light-lighten) 100%
+    );
+    .sidebar.left {
+      background-color: var(--light);
+    }
+    .sidebar.right,
+    .center,
+    footer {
+      background-color: var(--light-lighten);
+    }
+    .sidebar.right {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+  div.search {
+    background-color: var(--light-lighten);
+    border: 1px solid var(--light-border);
+    border-radius: 5px;
+    > button.search-button {
+      border-radius: 5px;
+      background-color: var(--light-lighten);
+    }
+  }
+}
+
+:root[saved-theme="light"] {
+  body {
+    #quartz-body {
+      background: black;
+      background: linear-gradient(
+        90deg,
+        var(--light-darken) 0%,
+        var(--light-darken) 20%,
+        var(--light) 20%,
+        var(--light) 100%
+      );
+      .sidebar.left {
+        //background-color: var(--light);
+        background-color: var(--light-darken);
+      }
+      .sidebar.right,
+      .center,
+      footer {
+        background-color: var(--light);
+      }
+    }
+    div.search {
+      border: 1px solid var(--light-border);
+      border-radius: 5px;
+      > button.search-button {
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+    }
+  }
+}
+
+// Desktop
+@media all and (min-width: 1200px) {
+  :root[saved-theme="light"] {
+    body {
+      background: black;
+      background: linear-gradient(
+        90deg,
+        var(--light-darken) 0%,
+        var(--light-darken) 50%,
+        var(--light) 50%,
+        var(--light) 100%
+      );
+      #quartz-body .sidebar.left {
+        //background-color: var(--light);
+        background-color: var(--light-darken);
+      }
+      #quartz-body,
+      .sidebar.right,
+      .center,
+      footer {
+        background-color: var(--light);
+      }
+      .sidebar.right {
+        margin-left: unset;
+        margin-right: unset;
+      }
+    }
+    div.search {
+      background-color: var(--light);
+      border: 1px solid var(--light-border);
+      border-radius: 5px;
+      > button.search-button {
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+    }
+  }
+  body {
+    background: black;
+    background: linear-gradient(
+      90deg,
+      var(--light) 0%,
+      var(--light) 50%,
+      var(--light-lighten) 50%,
+      var(--light-lighten) 100%
+    );
+    #quartz-body .sidebar.left {
+      //background-color: var(--light);
+      background-color: var(--light);
+    }
+    #quartz-body,
+    .sidebar.right,
+    .center,
+    footer {
+      background-color: var(--light-lighten);
+    }
+  }
+  div.search {
+    background-color: var(--light-lighten);
+    border: 1px solid var(--light-border);
+    border-radius: 5px;
+    > button.search-button {
+      border-radius: 5px;
+      background-color: var(--light-lighten);
+    }
+  }
+}
+
+// Mobile
+@media all and (max-width: 800px) {
+  :root[saved-theme="light"] {
+    body {
+      .page > #quartz-body {
+        background: var(--light);
+        .sidebar.left,
+        .sidebar.right,
+        .center,
+        footer {
+          background-color: var(--light);
+        }
+        .sidebar.left,
+        .explorer {
+          background-color: var(--light-darken);
+        }
+      }
+      div.search {
+        background-color: var(--light);
+        border: 1px solid var(--light-border);
+        border-radius: 5px;
+        > button.search-button {
+          border-radius: 5px;
+          background-color: var(--light);
+        }
+      }
+    }
+  }
+  body {
+    .page > #quartz-body {
+      background: var(--light);
+      .sidebar.left,
+      .sidebar.right,
+      .center,
+      footer {
+        background-color: var(--light);
+      }
+      h1.article-title {
+        margin-top: 1rem;
+      }
+      padding: 0;
+      .sidebar.left {
+        background-color: var(--light-lighten);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--light-border);
+      }
+      .explorer {
+        background-color: var(--light-lighten);
+      }
+      .sidebar.right,
+      .center,
+      footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        max-width: calc(100% - 2rem);
+        min-width: calc(100% - 2rem);
+      }
+    }
+    div.search {
+      background-color: var(--light);
+      border: 1px solid var(--light-border);
+      border-radius: 5px;
+      > button.search-button {
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+    }
+  }
+  .center {
+    .page-header > div,
+    article {
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+
+  hr {
+    margin-left: unset;
+    margin-right: unset;
+    background-color: var(--light-border);
+  }
+
+  footer > p,
+  footer > ul {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}

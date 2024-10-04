@@ -43,9 +43,9 @@ Your `custom.scss` should look something like this:
 // put your custom CSS here!
 ```
 
-#### Setting themes
+#### Setting themes and layout
 
-Copy `dark.scss` and `light.scss` from the `quartz-themes` root folder to `quartz/styles`.
+Copy `layout.scss`, `dark.scss` and `light.scss` from the `quartz-themes` root folder to `quartz/styles`.
 
 The resulting structure should look something like this:
 
@@ -55,17 +55,18 @@ quartz/
     quartz-themes/
     custom.scss
     dark.scss
+    layout.scss
     light.scss
 ```
 
-To set the desired theme, [see below](#usage).
+To set the desired layout and theme, [see below](#usage).
 
 ### Updating
 
 Pull the submodule from upstream by running the following from your Quartz repository:
 
 ```sh
-git submodule update --remote
+git submodule update --init --recursive --remote
 ```
 
 ### Developing
@@ -82,7 +83,25 @@ git pull
 
 ## Usage
 
-You can set a separate theme for light mode and dark mode.
+You need to set a layout. You can set a separate theme for light mode and dark mode.
+
+### Layout
+
+To use the default Quartz layout, set the following in `layout.scss`:
+
+```scss
+// Copy this file into the quartz/styles
+// You can change the path of the import to point to the desired layout.
+@import "quartz-themes/layouts/default";
+```
+
+If you want something closer to Obsidian Publish's layout, set the following in `layout.scss`:
+
+```scss
+// Copy this file into the quartz/styles
+// You can change the path of the import to point to the desired layout.
+@import "quartz-themes/layouts/minimal";
+```
 
 ### Light Mode
 
