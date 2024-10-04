@@ -2,8 +2,25 @@
 
 A layout based on [Obsidian Publish](https://obsidian.md/publish) and [Minimal theme](https://minimal.guide/home).
 
+## Usage
+
 ```scss
-// Copy this file into the quartz/styles
-// You can change the path of the import to point to the desired layout.
+// In layout.scss
 @import "quartz-themes/layouts/minimal";
 ```
+
+## Preview
+
+### Dark
+
+<details>
+<summary>⬛ Minimal Dark layout</summary>
+<img src="preview-dark.png" alt="Preview of Minimal Dark layout"/>
+</details>
+
+### Light
+
+<details>
+<summary>⬜ Minimal Light layout</summary>
+<img src="preview-light.png" alt="Preview of Minimal Light layout"/>
+</details>

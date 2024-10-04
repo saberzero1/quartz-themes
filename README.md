@@ -87,6 +87,18 @@ You need to set a layout. You can set a separate theme for light mode and dark m
 
 ### Layout
 
+#### Default Layout
+
+<details>
+<summary>⬛ Default Dark Preview</summary>
+<img src="layouts/default/preview-dark.png" alt="Preview of Default Dark layout"/>
+</details>
+
+<details>
+<summary>⬜ Default Light Preview</summary>
+<img src="layouts/default/preview-light.png" alt="Preview of Default Light layout"/>
+</details>
+
 To use the default Quartz layout, set the following in `layout.scss`:
 
 ```scss
@@ -94,6 +106,18 @@ To use the default Quartz layout, set the following in `layout.scss`:
 // You can change the path of the import to point to the desired layout.
 @import "quartz-themes/layouts/default";
 ```
+
+#### Minimal Layout
+
+<details>
+<summary>⬛ Minimal Dark Preview</summary>
+<img src="layouts/minimal/preview-dark.png" alt="Preview of Minimal Dark layout"/>
+</details>
+
+<details>
+<summary>⬜ Minimal Light Preview</summary>
+<img src="layouts/minimal/preview-light.png" alt="Preview of Minimal Light layout"/>
+</details>
 
 If you want something closer to Obsidian Publish's layout, set the following in `layout.scss`:
 
