@@ -35,7 +35,8 @@ div.graph > div.graph-outer {
     border-bottom: 1px solid var(--light-border);
   }
   .page-header > div,
-  article {
+  article,
+  div.page-listing {
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -273,7 +274,8 @@ body {
   }
   .center {
     .page-header > div,
-    article {
+    article,
+    div.page-listing {
       margin-left: unset;
       margin-right: unset;
     }
