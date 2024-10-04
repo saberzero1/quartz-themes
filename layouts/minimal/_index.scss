@@ -37,21 +37,21 @@ div.graph > div.graph-outer {
   .page-header > div,
   article,
   div.page-listing {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 hr {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: var(--light-border);
 }
 
 footer > p,
 footer > ul {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 div.search {
@@ -87,8 +87,8 @@ body {
       background-color: var(--light-lighten);
     }
     .sidebar.right {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
   div.search {
@@ -157,8 +157,8 @@ body {
         background-color: var(--light);
       }
       .sidebar.right {
-        margin-left: unset;
-        margin-right: unset;
+        padding-left: unset;
+        padding-right: unset;
       }
     }
     div.search {
@@ -276,20 +276,20 @@ body {
     .page-header > div,
     article,
     div.page-listing {
-      margin-left: unset;
-      margin-right: unset;
+      padding-left: unset;
+      padding-right: unset;
     }
   }
 
   hr {
-    margin-left: unset;
-    margin-right: unset;
+    padding-left: unset;
+    padding-right: unset;
     background-color: var(--light-border);
   }
 
   footer > p,
   footer > ul {
-    margin-left: unset;
-    margin-right: unset;
+    padding-left: unset;
+    padding-right: unset;
   }
 }
