@@ -4,6 +4,7 @@
 @use "sass:list";
 @use "../light" as l;
 @use "../dark" as d;
+@use "../layout";
 
 // Overrides default options with light mode/dark mode specific version.
 @function override($override: false, $base) {
