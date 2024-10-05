@@ -1,0 +1,45 @@
+:root {
+  --dark0: #242424;
+  --dark1: #202020;
+  --dark2: #393939;
+  --dark3: #424242;
+  --light0: #d8dee9;
+  --light1: #e5e9f0;
+  --light2: #eceff4;
+  --light3: #ffffff;
+  --frost0: #8fbcbb;
+  --frost1: #88c0d0;
+  --frost3: #81a1c1;
+  --frost5: #5e81ac;
+  --teal0: #009999;
+  --teal1: #00c8ff;
+  --teal2: #00fff2;
+  --teal3: #3aa0b9;
+  --teal4: #007991;
+  --red: #ff5c5c;
+  --orange: #ff9035;
+  --yellow: #eeec79;
+  --green: #37c991;
+  --blue: #63c8da;
+  --purple: #d469c1;
+  --pink: #eb95db;
+}
+
+body {
+  --accent-h: 180;
+  --accent-s: 100%;
+  --accent-l: 30%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 600;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
+}

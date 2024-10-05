@@ -1,0 +1,12 @@
+:root {
+  --checkbox-size: 1em;
+}
+
+body {
+  --collapse-icon-color: var(--text-muted);
+  --collapse-icon-color-collapsed: var(--text-muted);
+  --list-marker-color: var(--text-muted);
+  --list-marker-color-hover: var(--text-faint);
+  --list-marker-color-collapsed: var(--text-accent);
+  --list-bullet-size: 4px;
+}

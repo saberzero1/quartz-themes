@@ -1,0 +1,34 @@
+:root {
+  --font-size-normal: 16px;
+  --font-size-code: 15px;
+  --font-size-side-dock: 15px;
+  --font-size-side-dock-title: 16px;
+  --font-size-status-bar: 13.75px;
+  --font-size-h1: 23px;
+  --font-size-h2: 22px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --table-border-radius: 5px;
+  --callout-color: rgba(103, 161, 149, 0.459);
+  --cards-min-width: 174px;
+  --cards-max-width: 1fr;
+  --cards-mobile-width: 150px;
+  --cards-image-height: 400px;
+  --cards-padding: 1.2em;
+  --cards-image-fit: contain;
+  --cards-background: transparent;
+  --cards-border-width: 1px;
+  --cards-min-width: var(--cards-mobile-width);
+  --checkbox-size2: 17px;
+  --checkbox-icon: 20px;
+  --checkbox-radius: 50%;
+  --checkbox-top: 2px;
+  --checkbox-left: 0px;
+  --checkbox-margin: 0px 6px 0px -1.35em;
+}
+
+body {
+  --signature: "֎";
+}

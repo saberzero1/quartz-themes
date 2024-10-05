@@ -1,0 +1,44 @@
+:root {
+}
+
+body {
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --input-radius: 4px;
+  --tab-radius-active: 4px;
+  --checkbox-radius: 4px;
+  --tab-container-background: #a3d5aa;
+  --tab-text-color: #e6f1e9;
+  --tab-text-color-focused: #e6f1e9;
+  --tab-outline-width: 0;
+  --tab-outline-color: #f8f6ea;
+  --icon-color: #ffffff;
+  --icon-color-hover: #e6f1e9;
+  --icon-color-active: #ffffff;
+  --ribbon-background: #a3d5aa;
+  --ribbon-background: var(--ribbon-background);
+  --titlebar-background: #a3d5aa;
+  --divider-color: rgba(0, 0, 0, 0);
+  --icon-color-focused: #edf4f0;
+  --icon-color-active: #edf4f0;
+  --tab-text-color-focused-active-current: #66876b;
+  --tab-divider-color: #b4d8b4;
+  --nav-indentation-guide-color: rgba(0, 0, 0, 0);
+  --vault-name-color: #636867;
+  --nav-item-color: #626666;
+  --tag-color: #fcfdfe;
+  --tag-background: #d4e4f1;
+  --link-external-color: #5273a5;
+  --link-external-color-hover: #1a4078;
+  --background-modifier-border: rgba(0, 0, 0, 0);
+  --input-shadow: none;
+  --font-text: "宋体", SimSun;
+  --input-shadow-hover: none;
+  --background-modifier-border-focus: #add4ad;
+  --modal-border-color: rgba(0, 0, 0, 0);
+  --background-modifier-error: #c9627a;
+  --text-muted: #455445;
+  --tab-curve: 6px;
+  --toggle-radius: 4px;
+}

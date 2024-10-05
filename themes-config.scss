@@ -1,0 +1,15 @@
+// Shared theme between light mode and dark mode.
+$use-different-themes-for-light-mode-and-dark-mode: false;
+
+// Different themes between light mode and dark mode.
+// $use-different-themes-for-light-mode-and-dark-mode: true;
+
+$quartz-themes: (
+  // Set theme name here if you want light mode and dark mode to use the same theme.
+  // For details, see the README.md file of your preferred theme.
+  both: "",
+  // You can also set a different theme for light mode and dark mode.
+  // If you want to use different theme, make sure to set BOTH values.
+  light: "",
+  dark: ""
+);

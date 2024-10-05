@@ -1,0 +1,38 @@
+:root {
+  --dark0: rgb(var(--dark0_x));
+  --dark1: rgb(var(--dark1_x));
+  --dark2: rgb(var(--dark2_x));
+  --dark3: rgb(var(--dark3_x));
+  --dark4: rgb(var(--dark3_x));
+  --light0: rgb(var(--light0_x));
+  --light1: rgb(var(--light1_x));
+  --light2: rgb(var(--light2_x));
+  --light3: rgb(var(--light3_x));
+  --frost0: rgb(var(--frost0_x));
+  --frost1: rgb(var(--frost1_x));
+  --frost2: rgb(var(--frost2_x));
+  --frost3: rgb(var(--frost3_x));
+  --red: rgb(var(--red_x));
+  --orange: rgb(var(--orange_x));
+  --yellow: rgb(var(--yellow_x));
+  --green: rgb(var(--green_x));
+  --purple: rgb(var(--purple_x));
+}
+
+body {
+  --accent-s: 42%;
+  --accent-l: 56%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 600;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
+}

@@ -1,0 +1,30 @@
+:root {
+}
+
+body {
+  --h1-size: 1.3em;
+  --h2-size: 1.2em;
+  --h3-size: 1.1em;
+  --h4-size: 1em;
+  --h5-size: 0.85em;
+  --h6-size: 0.75em;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-accent);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-muted);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-faint);
+  --icon-color: var(--text-faint);
+  --icon-color-hover: var(--text-muted);
+  --icon-color-focused: var(--text-muted);
+  --indentation-guide-width: 1.5px;
+  --yellow: #fcd86c;
+  --strong-color: var(--text-normal);
+  --em-color: var(--text-normal);
+  --bold-underline-color: var(--text-accent);
+  --italic-underline-color: var(--yellow);
+  --modal-border-width: 2px;
+  --modal-border-color: var(--background-modifier-border);
+  --link-color: var(--text-accent);
+  --link-external-color: var(--text-accent);
+}

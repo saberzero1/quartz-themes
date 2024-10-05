@@ -1,0 +1,54 @@
+:root {
+  --font-size-xs: 0.78em;
+  --font-size-sm: 0.875em;
+  --font-size-base: 1em;
+  --font-size-lg: 1.125em;
+  --font-size-xl: 1.25em;
+  --font-size-2xl: 1.5em;
+  --font-size-3xl: 1.875em;
+  --size-0-5: 0.125em;
+  --size-1: 0.25em;
+  --size-1-5: 0.375em;
+  --size-2: 0.5em;
+  --size-2-5: 0.625em;
+  --size-3: 0.75em;
+  --size-3-5: 0.875em;
+  --size-4: 1em;
+  --size-5: 1.25em;
+  --size-6: 1.5em;
+  --size-7: 1.75em;
+  --size-8: 2em;
+  --size-12: 3em;
+  --size-16: 4em;
+  --size-24: 6em;
+  --size-32: 8em;
+  --size-48: 12em;
+  --size-64: 16em;
+  --size-96: 24em;
+  --size-128: 32em;
+  --font-size-h1: 1.3em;
+  --font-size-h2: 1.2em;
+  --font-size-h3: 1.1em;
+  --font-size-h4: 1em;
+  --font-size-h5: 1em;
+  --font-size-h6: 1em;
+  --code-font-face: Consolas, "Courier New", Courier, monospace;
+  --gutter-width: 50px;
+  --prev-margin: 150px;
+  --max-width-text: 950px;
+  --monochrome-color: hsl(13, 100%, 50%);
+  --list-padding-num: 2.5;
+  --list-padding: var(--size-6);
+  --list-marker-num: 1.5;
+  --list-marker: 1.5rem;
+  --chart-color-1: var(--accent-1);
+  --chart-color-2: var(--accent-2);
+  --chart-color-3: var(--accent-3);
+  --chart-color-4: var(--accent-4);
+  --chart-color-5: var(--accent-5);
+  --chart-color-6: var(--accent-6);
+}
+
+body {
+  --file-line-width: var(--max-width-text);
+}

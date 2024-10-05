@@ -1,0 +1,33 @@
+:root {
+  --font-family-editor: Inconsolata, Monaco, Consolas, "Courier New", Courier;
+  --font-family-preview: Avenir, Avenir Next, sans-serif;
+  --forest-green-light: #759e93;
+  --forest-green-faded: #c3d5d0;
+  --forest-green-dark: #4a6860;
+  --mint-green: #9dd4cf;
+  --forest-green-half: rgb(117, 158, 147, 0.4);
+  --berry-red-strong: #c72e6e;
+  --berry-red-light: #ad3266;
+  --berry-red-faded: #ab687e;
+  --blue-gray-light: #7a859f;
+  --blue-gray: #546285;
+  --blue-gray-dark: #3b4252;
+  --blue-gray-darkest: #15181e;
+  --off-white: #f2f2f2;
+  --off-white-faded: rgb(242, 242, 242, 0.8);
+  --off-white-alt: #e6e6e6;
+  --off-white-dark: #cccccc;
+  --off-white-darker: #8c8c8c;
+  --orange-yellow: #f2bd77;
+  --orange-yellow-dark: #eea444;
+}
+
+body {
+  --checkbox-radius: 50%;
+  --checkbox-top: 2px;
+  --checkbox-left: 0px;
+  --checkbox-margin: 0px 6px 0px -2em;
+  --checklist-done-decoration: line-through;
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--text-normal);
+}

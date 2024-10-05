@@ -1,0 +1,11 @@
+:root {
+}
+
+body {
+  --callout-padding: 0;
+  --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+  --callout-content-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+  --callout-radius: 5px;
+  --callout-border-opacity: 1;
+  --callout-blend-mode: normal;
+}

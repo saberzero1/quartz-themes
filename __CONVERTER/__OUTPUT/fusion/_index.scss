@@ -1,0 +1,33 @@
+:root {
+  --color-base-00: #0b0e14;
+  --color-base-10: #1c2028;
+  --color-base-20: #2d323c;
+  --color-base-25: #363b46;
+  --color-base-30: #3f4450;
+  --color-base-35: #474d5a;
+  --color-base-40: #505664;
+  --color-base-50: #626879;
+  --color-base-60: #737a8d;
+  --color-base-70: #848ca1;
+  --color-base-100: #b9c3de;
+  --text-on-accent: black;
+  --background-modifier-form-field: var(--background-primary-alt);
+  --color-base-100: rgb(var(--mono-rgb-100));
+  --accent-s: 60%;
+  --accent-l: 60%;
+  --color-base-00: rgb(var(--mono-rgb-0));
+  --interactive-normal: var(--background-primary);
+}
+
+body {
+  --background-primary-alt: var(--background-primary);
+  --background-secondary: var(--background-primary);
+  --background-modifier-active-hover: var(--background-primary);
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+  --divider-color: var(--background-primary);
+  --tab-divider-color: var(--background-primary);
+  --icon-color: var(--text-faint);
+  --accent-h: 228;
+  --hr-color: var(--text-accent);
+}

@@ -1,0 +1,37 @@
+:root {
+  --base03-rgb: 0, 43, 54;
+  --base03: rgb(var(--base03-rgb));
+  --base02-rgb: 7, 54, 66;
+  --base02: rgb(var(--base02-rgb));
+  --base01-rgb: 88, 110, 117;
+  --base01: rgb(var(--base01-rgb));
+  --base00-rgb: 101, 123, 131;
+  --base00: rgb(var(--base00-rgb));
+  --base0-rgb: 131, 148, 150;
+  --base0: rgb(var(--base0-rgb));
+  --base1-rgb: 147, 161, 161;
+  --base1: rgb(var(--base1-rgb));
+  --base2-rgb: 238, 232, 213;
+  --base2: rgb(var(--base2-rgb));
+  --base3-rgb: 253, 246, 227;
+  --base3: rgb(var(--base3-rgb));
+  --yellow-rgb: 181, 137, 0;
+  --yellow: rgb(var(--yellow-rgb));
+  --orange-rgb: 203, 75, 22;
+  --orange: rgb(var(--orange-rgb));
+  --red-rgb: 220, 50, 47;
+  --red: rgb(var(--red-rgb));
+  --magenta-rgb: 211, 54, 130;
+  --magenta: rgb(var(--magenta-rgb));
+  --violet-rgb: 108, 113, 196;
+  --violet: rgb(var(--violet-rgb));
+  --blue-rgb: 38, 139, 210;
+  --blue: rgb(var(--blue-rgb));
+  --cyan-rgb: 42, 161, 152;
+  --cyan: rgb(var(--cyan-rgb));
+  --green-rgb: 133, 153, 0;
+  --green: rgb(var(--green-rgb));
+}
+
+body {
+}

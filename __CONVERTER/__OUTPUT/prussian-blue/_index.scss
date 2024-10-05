@@ -1,0 +1,48 @@
+:root {
+  --dark0: #0f1116;
+  --dark1: #1f2026;
+  --dark2: #393939;
+  --dark3: #000716;
+  --dark4: #00002a;
+  --light0: #22198e;
+  --light1: #889ef9;
+  --light2: #ebebfb;
+  --light3: #4e72ff;
+  --frost0: #122886;
+  --frost1: #2f459c;
+  --frost3: #2f459c;
+  --frost5: #2f459c;
+  --teal0: #2f459c;
+  --teal1: #2f459c;
+  --teal2: #8b9bd8;
+  --teal3: #4568fc;
+  --teal4: #2f459c;
+  --grey: #595151;
+  --red: #c51b0c;
+  --orange: #ff9035;
+  --yellow: #fcc200;
+  --green: #37c991;
+  --blue: #63c8da;
+  --purple: #d469c1;
+  --pink: #eb95db;
+}
+
+body {
+  --accent-h: 228;
+  --accent-s: 54%;
+  --accent-l: 40%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 800;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
+  --status-bar-text-color: var(--teal3) !important;
+}

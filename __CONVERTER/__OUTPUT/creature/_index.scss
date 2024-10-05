@@ -1,0 +1,32 @@
+:root {
+  --dark0: #1e1e1e;
+  --dark1: #232323;
+  --dark2: #282828;
+  --dark3: #2d2d2d;
+  --dark4: #323232;
+  --light0: rgba(255, 255, 255, 0.18);
+  --light1: rgba(255, 255, 255, 0.38);
+  --light2: rgba(255, 255, 255, 0.6);
+  --light3: rgba(255, 255, 255, 0.87);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --border: var(--dark4);
+  --red: red-base;
+  --red-light: #ff6b64;
+  --blue: #009fff;
+  --blue-light: #1aa9ff;
+  --green: #2edb6e;
+  --green-light: #44df7d;
+  --primary: var(--green);
+  --primary-hover: var(--green-light);
+  --error: var(--red);
+  --error-hover: var(--red-light);
+  --info: var(--blue);
+  --info-hover: var(--blue-light);
+  --success: var(--green);
+  --success-hover: var(--green-light);
+  --font-monospace: SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
+}
+
+body {
+}

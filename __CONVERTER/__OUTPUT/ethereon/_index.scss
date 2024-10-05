@@ -1,0 +1,35 @@
+:root {
+}
+
+body {
+  --font-monospace: "Courier New", monospace;
+  --font-text: "Inter", sans-serif;
+  --accent-h: 174;
+  --accent-s: 20%;
+  --accent-l: 48%;
+  --inline-title-color: var(--color-base-50);
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-0), 0.5);
+  --text-highlight-bg-rgb: var(--color-yellow-rgb);
+  --background-modifier-border: var(--color-base-20);
+  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --status-bar-border-width: 0;
+  --inline-title-style: italic;
+  --inline-title-weight: 50;
+  --inline-title-size: var(--h3-size);
+  --heading-spacing: calc(var(--p-spacing) * 1.5);
+  --checkbox-radius: 10px;
+  --blockquote-border-thickness: 4px;
+  --hr-thickness: 1px;
+  --code-size: --font-normal;
+  --list-bullet-radius: 40%;
+  --list-bullet-size: 0.4em;
+  --indentation-guide-width: 2px;
+}

@@ -1,0 +1,22 @@
+:root {
+  --mermaid-font: var(--default-font);
+  --reveal-font: var(--default-font);
+  --font-monospace: "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;
+  --fast: 0.1s;
+  --medium: 0.2s;
+  --slow: 0.5s;
+  --color-1-1: hsl(227, 66%, 9%);
+  --color-1-1-alt: hsl(227, 66%, 11%);
+  --color-1-2: hsl(227, 56%, 13%);
+  --color-1-2-alt: hsl(227, 56%, 16%);
+  --color-2: hsl(231, 49%, 39%);
+  --color-3: hsl(109, 9%, 39%);
+  --color-3-alt: hsl(109, 9%, 19%);
+  --color-4: hsl(109, 19%, 92%);
+  --color-4-alt: hsl(109, 9%, 82%);
+  --color-5: hsl(176, 16%, 64%);
+  --color-5-alt: hsl(176, 16%, 70%);
+}
+
+body {
+}

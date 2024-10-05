@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Formular";
+  src: url("data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAXMAA4AAAAACOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAAFZAAAABYAAAAWABMABkdQT1MAAAV8AAAAIAAAACBEdkx1R1NVQgAABZwAAAAvAAAAMCN+JIxPUy8yAAACDAAAAEcAAABgII84HWNtYXAAAAJUAAAAMQAAADwAOwB9Z2FzcAAABVwAAAAIAAAACP//AANnbHlmAAABRAAAACgAAAAoKX11F2hlYWQAAAGcAAAANgAAADYW4dEnaGhlYQAAAewAAAAgAAAAJA/2Cc9obXR4AAAB1AAAABgAAAAYDeYAd2xvY2EAAAGMAAAADQAAAA4APAA8bWF4cAAAAWwAAAAeAAAAIABLAEVuYW1lAAACiAAAAq4AAAXocAf8uHBvc3QAAAU4AAAAJAAAADNVXVC5AAIAdwAAA8MFtgADAAcAADMRIRElIREhdwNM/T8CNf3LBbb6SoEEtHjaY2BkYGBgY3BiYGYAASYgZmQAiTmA+QwACZIAkQAAeNpjYGAQQUAAAt4AeQAAAAABAAAAAgCDDlp/b18PPPUACwgAAAAAAM8sf4QAAAAA4KMGkP+m/lgITAc7AAAACAACAAAAAAAABDkAdwAAAAACqgAAAAAAAAI5AAAEygAAeNpjYGRgYLP8Z8l4krv//zIGBg4fBqAICmADAH24BNx42mNgZrnJOIGBlYGB1ZjlLAMDwywIzXSWIY0pC0gzIAFGBnTgwKDAoMxm+c+S8ST7XcY3CgwM08EKfzCdAlIKDEwAU4UM+QB42mNgYGBiYGBgBmIRIMkIplkYNIA0G5BmBMoqMCj//w/kg+n/T/4/AqsCAgCI4wiyAAAAeNqtUrtu1EAUvfZu3g/RISGERqJJpMReVkFityKJlBSRUEgRiXJsjx+s12ONZ9dxw5/QUFJS8QF8AZ9CS8Px7CRrIJEosOWZc1/nnrkeInrmFOTQ4nmHb4EdWoe1wC6tEbe4Ry8ptbjfyVmhHfpo8WrHv0Zv6bPF67RHPy3e6ODNTt8teuw8t3i7g3dozxlbvEtPnQBKnP4GrC/OB4sdeuQOLHZp131tcY/eu28s7ndyVuiJ+9Xi1Y5/jT653y1ep8uetnijgzc7fbfI632zeLuDd5D/w+JdetU/OZVlo7Ik1Wwv3GfDwYujQywjFjTsnDe8EOyEJxGvuIJxwK4bHqaiyvmcXWQqy0UxkR47znNmSCqmRCXUXETemVTTWc7VlUjabUHW5VpS3TGN2W3VuJUyuhaqymTBht5gMLzMBa8EGsRCMS2ZTgVbqq9EqNvUWCoTiWWhmVY8ElOuJoxrrbJgZlIKqbNQVN6/ni/Vuhz7fl3XXqBkXcTyxpMqOS4aNoOgOtOpnGlWCjXNKqM3q1ipZJoFmRaRLe+W+jkEFKHw6ZQkldSQoowS3GJNDLcwpH3sQxrQCzqiQ4tG8AXIZXSOu9/gK0jAOgFKKMJa4VM2coDItcEheAViOfAc3gv0avvl8BY0gQIP3mPYOfalkspYbaXAPscaIfMM+YqmNDN8iq7gT+6srrKHdN2n6m9NY3T/s9f4biojsLSqKtRIVLR+D5EB9kvDwo3uxQlik8twJmnW1ETum31bEwLdssZGwbImNn5tPAo9IninRtsEPg6vNnwBNC9ZCuytFZoTe//9/6Wmb4n5+Hhr83rQoBCrkdOqvoGnPUuCP12YWzSzE6rB1Z5PGs0MPMJMPUN8Od/M3IfScKbmhG1Veyd+7/5QVx96FxMozOr/AnWqLjEAAHjaY2BiAIP/DAxpDNgAGxAzMjAxMjEwM7Cx+IX6+AAAP3gCvAAAAAH//wACAAEAAAAMAAAAAAAAAAIAAQADAAUAAQAAAAEAAAAKABwAHgABREZMVAAIAAQAAAAA//8AAAAAAAB42mNgZGBg4GLQYdBjYHZx8wlhEEmuLMphkMtJLMljkGNgAcoy/P/PAAcArlkHTgA=")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --table-border-radius: var(--radius-s);
+}
+
+body {
+  --font-interface-theme: Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R";
+  --border-width: 2px;
+  --inline-title-weight: 500;
+  --inline-title-size: 2.5em;
+  --inline-title-line-height: 1.3em;
+  --h1-weight: 300;
+  --h1-size: 2.3em;
+  --h2-weight: 300;
+  --h2-size: 2em;
+  --h3-size: 1.85em;
+  --h3-weight: 400;
+  --h4-size: 1.7em;
+  --h4-weight: 400;
+  --h5-size: 1.58em;
+  --h5-weight: 400;
+  --h6-size: 1.35em;
+  --h6-weight: 500;
+  --radius-s: 0.75em;
+  --radius-m: 1.1em;
+  --radius-l: 20px;
+  --divider-color: transparent;
+  --file-line-width: 750px;
+  --background-modifier-hover: hsla(var(--accent-h), 17%, 50%, 0.15) !important;
+  --background-modifier-border-focus: var(--primary-container) !important;
+  --background-modifier-form-field: var(--surface-variant) !important;
+  --input-radius: var(--radius-l);
+  --input-border-width: 0;
+  --graph-node: var(--primary-lighter);
+  --graph-node-unresolved: var(--tertiary);
+  --graph-node-focused: var(--primary-container);
+  --graph-node-tag: var(--color-cyan);
+  --graph-line: vaR(--surface-variant);
+  --link-color: var(--primary);
+  --link-color-hover: var(--primary);
+  --link-external-color: var(--tertiary);
+  --link-decoration-thickness: 1.5px;
+  --link-external-decoration: none;
+  --nav-indentation-guide-width: 2px;
+  --nav-indentation-guide-color: var(--interactive-accent);
+  --blockquote-border-thickness: 0px;
+  --blockquote-background-color: var(--secondary-container);
+  --blockquote-color: var(--on-secondary-container);
+  --tag-radius: 5px;
+  --tag-color: var(--on-tertiary-container);
+  --tag-background: var(--tertiary-container);
+  --tag-color-hover: var(--on-tertiary-container);
+  --tag-background-hover: var(--tertiary-container);
+  --table-header-background: var(--secondary);
+  --table-header-background-hover: var(--secondary);
+  --table-header-size: var(--font-smaller);
+  --table-header-align: center;
+  --tab-radius-active: 0;
+  --tab-curve: 0;
+  --tab-background-active: transparent;
+  --tab-divider-color: transparent;
+  --tab-outline-width: 0;
+  --tab-width: 250px;
+  --file-header-justify: left;
+  --checkbox-radius: 0.2rem;
+  --checklist-done-decoration: none;
+  --checklist-done-color: inherit;
+  --custom-drawer-header: "Bolt";
+  --metadata-background: var(--surface);
+  --metadata-padding: 1em;
+  --metadata-border-radius: var(--radius-s);
+  --scrollbar-thumb-bg: var(--surface-variant);
+  --scrollbar-active-thumb-bg: var(--secondary-container);
+  --interactive-normal: var(--surface);
+  --input-shadow: var(--shadow-s) !important;
+}

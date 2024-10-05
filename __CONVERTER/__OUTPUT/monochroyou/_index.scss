@@ -1,0 +1,28 @@
+:root {
+}
+
+body {
+  --interactive-normal: hsl(var(--accent-h), 100%, 90%);
+  --interactive-accent: var(--colorPrimary);
+  --interactive-accent-hover: var(--colorPrimary);
+  --background-primary: var(--colorBackgroundPrimary);
+  --background-secondary: var(--colorBackgroundSecondary);
+  --background-modifier-border: transparent;
+  --titlebar-background-focused: var(--colorBackgroundSecondary);
+  --tab-background-active: var(--colorPrimaryContainerVariant);
+  --nav-item-background-hover: var(--colorPrimaryContainerVariantHover);
+  --nav-item-background-active: var(--colorPrimaryContainerVariant);
+  --text-highlight-bg: var(--colorPrimaryContainerVariant);
+  --code-background: var(--colorPrimaryContainer);
+  --code-normal: var(--colorPrimary);
+  --link-external-color: var(--colorPrimary);
+  --link-external-color-hover: var(--colorPrimary);
+  --tag-color: var(--colorPrimary);
+  --tag-background: var(--colorPrimaryContainerVariant);
+  --tag-background-hover: var(--colorPrimaryContainerVariant);
+  --button-radius: 100px;
+  --radius-s: 100px;
+  --toggle-thumb-color: var(--colorOnPrimary);
+  --text-on-accent: var(--colorOnPrimary);
+  --text-on-accent-inverted: var(--colorOnPrimary);
+}

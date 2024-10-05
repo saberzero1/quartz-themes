@@ -1,0 +1,38 @@
+:root {
+  --icon-xs: 14px;
+  --icon-s: 16px;
+  --icon-m: 18px;
+  --icon-l: 24px;
+  --icon-xl: 32px;
+  --icon-xs-stroke-width: 2px;
+  --icon-s-stroke-width: 2px;
+  --icon-m-stroke-width: 1.75px;
+  --icon-l-stroke-width: 1.75px;
+  --icon-xl-stroke-width: 1.25px;
+  --oreo-background-secondary-alt-light: #f2f2f2;
+  --oreo-background-primary-light: #ffffff;
+  --oreo-background-primary-secondary-light: #e0e0e0;
+  --oreo-text-faint-light: #707070;
+  --oreo-text-muted-light: #333333;
+  --oreo-text-accent-light: #ffcc00;
+  --oreo-background-modifier-border-hover-light: #cccccc;
+  --oreo-background-secondary-alt-dark: #333333;
+  --oreo-background-primary-dark: #1a1a1a;
+  --oreo-background-primary-secondary-dark: #4d4d4d;
+  --oreo-text-faint-dark: #cccccc;
+  --oreo-text-muted-dark: #ffffff;
+  --oreo-text-accent-dark: #ffcc00;
+  --oreo-background-modifier-border-hover-dark: #666666;
+  --oreo-tab-width: 200px;
+  --oreo-tab-max-width: 320px;
+  --oreo-tab-radius: 6px;
+  --oreo-border-width: 1px;
+  --oreo-tab-gap: 10px;
+  --oreo-header-height: 40px;
+  --oreo-tab-height: 28px;
+}
+
+body {
+  --button-radius: 10px;
+  --table-header-size: inherit;
+}

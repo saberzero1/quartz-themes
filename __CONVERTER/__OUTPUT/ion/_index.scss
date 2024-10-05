@@ -1,0 +1,45 @@
+:root {
+  --ion-l-p: 60;
+}
+
+body {
+  --bloom-fct: 0.25;
+  --bloom-const: 0.1em;
+  --bloom: calc(var(--bloom-const) * var(--bloom-fct));
+  --ion-threshold: 80;
+  --base-d-h: 20;
+  --base-d-s: 0.5;
+  --base-d-l: 0.85;
+  --base-h: var(--base-d-h);
+  --base-s: calc(var(--base-d-s) * 100%);
+  --base-l-p: calc(var(--base-d-l) * 100);
+  --ion-h: var(--base-h);
+  --ion-s: var(--base-s);
+  --ion-l-p: var(--base-l-p);
+  --text-normal: var(--ion-color);
+  --color-red-h: 352;
+  --color-red-s: 80%;
+  --color-red-l-p: 55;
+  --color-green-h: 143;
+  --color-green-s: 91%;
+  --color-green-l-p: 37;
+  --color-orange-h: 29;
+  --color-orange-s: 100%;
+  --color-orange-l-p: 46;
+  --color-yellow-h: 46;
+  --color-yellow-s: 100%;
+  --color-yellow-l-p: 43;
+  --color-cyan-h: 179;
+  --color-cyan-s: 100%;
+  --color-cyan-l-p: 37;
+  --color-blue-h: 211;
+  --color-blue-s: 93%;
+  --color-blue-l-p: 44;
+  --color-purple-h: 254;
+  --color-purple-s: 82%;
+  --color-purple-l-p: 62;
+  --color-pink-h: 331;
+  --color-pink-s: 65%;
+  --color-pink-l-p: 52;
+  --code-base-l: 30;
+}

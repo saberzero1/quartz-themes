@@ -1,0 +1,21 @@
+:root {
+}
+
+body {
+  --blockquote-border-color: #4d3ca699;
+  --code-tag: var(--text-accent) !important;
+  --h1-color: #ba6ea0;
+  --h2-color: #b78b60;
+  --h3-color: #a79645;
+  --h4-color: #859679;
+  --h5-color: #59a2c5;
+  --h6-color: #939bd6;
+  --link-color: var(--my-link-color);
+  --link-color-hover: var(--my-link-color-hover);
+  --link-decoration: none !important;
+  --link-decoration-hover: none !important;
+  --link-external-color: var(--my-link-color);
+  --link-external-color-hover: var(--my-link-color-hover);
+  --link-external-decoration: none !important;
+  --link-external-decoration-hover: none !important;
+}

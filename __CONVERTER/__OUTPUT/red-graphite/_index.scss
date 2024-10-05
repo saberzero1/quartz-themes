@@ -1,0 +1,33 @@
+:root {
+}
+
+body {
+  --code-background: var(--background-primary-alt);
+  --divider-color: var(--color-base-95);
+  --divider-color-hover: var(--interactive-accent);
+  --divider-width: 1px;
+  --red-graphite-interface-font: "Avenir";
+  --red-graphite-text-font: "Avenir";
+  --red-graphite-monospace-font: "";
+  --font-interface-override: var(--red-graphite-interface-font);
+  --font-text-override: var(--red-graphite-text-font);
+  --font-monospace-override: var(--red-graphite-monospace-font);
+  --modal-border-width: 0;
+  --status-bar-background: var(--divider-color);
+  --status-bar-border-color: var(--divider-color);
+  --status-bar-radius: var(--radius-m) 0 0 0;
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-focused: var(--text-faint);
+  --tab-divider-color: var(--color-base-100);
+  --tab-outline-width: 0px;
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 15px;
+  --font-ui-large: 20px;
+  --titlebar-background: var(--color-base-95);
+  --titlebar-background-focused: var(--color-base-95);
+  --titlebar-text-color: var(--text-faint);
+  --titlebar-text-color-focused: var(--text-faint);
+  --titlebar-text-weight: var(--font-normal);
+}

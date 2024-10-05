@@ -1,0 +1,26 @@
+:root {
+  --custom-accent: #8ba4cc;
+  --custom-accent-muted: #304f80;
+  --custom-accent-muted-transparent: rgba(48, 79, 128, 0.3);
+  --custom-accent-muted-selection: rgba(48, 79, 128, 0.99);
+  --custom-text-on-accent: #000000;
+  --custom-text-muted: #cacaca;
+  --custom-text-faint: #909090;
+  --mica-base-bg-end: #1a1f28;
+  --mica-content-bg-start: #212834;
+  --mica-content-bg-end: #202732;
+  --mica-base-bg-start: #202028;
+  --mica-base-bg-end: #1b2020;
+  --mica-content-bg-start: #222832;
+  --mica-content-bg-start-transparent: rgba(34, 40, 50, 0.3);
+  --mica-content-bg-end: #212223;
+  --mica-content-bg-end-transparent: rgba(33, 34, 35, 0.3);
+  --mica-border: #1a1f28;
+}
+
+body {
+  --file-header-justify: left;
+  --file-line-width: 100%;
+  --callout-radius: 0;
+  --callout-padding: 18px;
+}

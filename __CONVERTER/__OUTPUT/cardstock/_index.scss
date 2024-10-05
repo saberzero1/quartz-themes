@@ -1,0 +1,49 @@
+:root {
+  --main-bg: #ffffff;
+  --beige: #f0eae2;
+  --dark-beige: #e6dbcc;
+  --light-beige: #f8f5f1;
+  --red: #c95454;
+  --red-rgb: 201, 84, 84;
+  --red-hsl: 0, 52, 55.9;
+  --red-deep: #c43131;
+  --text: #2d2c2c;
+  --heading-text: #000000;
+  --light-text: #949494;
+  --highlight: #f3e118;
+  --highlight-dark: #756b13;
+  --green: #06b43c;
+  --foldgutter-width: 1.8rem;
+  --dark-bg: #2f2a27;
+  --dark-secondary: #38312e;
+  --dark-alternate: #988982;
+  --dark-light-text: #473e3a;
+  --dark-lightness: #bbb1ac;
+  --h1: 2.5em;
+  --h2: 2em;
+}
+
+body {
+  --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
+  --font-monospace: MonoLisa, "Source Code Pro", monospace;
+  --inline-title-size: 0.8rem;
+  --inline-title-color: var(--text-muted);
+  --inline-title-weight: 700;
+  --titlebar-background: var(--darky-dark);
+  --titlebar-background-focused: var(--darky-dark);
+  --ribbon-background-collapsed: var(--background-primary-alt);
+  --tab-background-active: transparent;
+  --tab-container-background: var(--background-secondary);
+  --tab-divider-color: var(--background-secondary-alt);
+  --tab-outline-color: var(--background-secondary-alt);
+  --tab-outline-width: 1px;
+  --tab-curve: 10px;
+  --tab-radius: 10px;
+  --tab-radius-active: 10px 10px 0 0;
+  --tab-max-width: 350px;
+  --scrollbar-active-thumb-bg: var(--background-secondary);
+  --scrollbar-bg: var(--darky-dark);
+  --scrollbar-thumb-bg: var(--darky-dark);
+  --divider-vertical-height: calc(100% - 90px) !important;
+  --tag-background: rgba(var(--red-rgb), 0.1);
+}

@@ -1,0 +1,37 @@
+:root {
+}
+
+body {
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-20);
+  --background-secondary: var(--color-base-00);
+  --background-modifier-border: var(--interactive-accent);
+  --background-modifier-border-hover: var(--interactive-accent);
+  --background-modifier-border-focus: var(--interactive-accent);
+  --interactive-hover: var(--color-base-00);
+  --radius-s: 0;
+  --radius-m: 0;
+  --radius-l: 0;
+  --nav-item-padding: 3px;
+  --tab-container-background: var(--color-base-00);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-00);
+  --graph-line: var(--color-base-40, var(--background-modifier-border-focus));
+  --header-size: 1.25em;
+  --h1-size: var(--header-size);
+  --h2-size: var(--header-size);
+  --h3-size: var(--header-size);
+  --h4-size: var(--header-size);
+  --h5-size: var(--header-size);
+  --h6-size: var(--header-size);
+  --font-ui-smaller: 13px;
+  --font-ui-small: 14px;
+  --font-ui-medium: 16px;
+  --font-ui-large: 22px;
+  --h1-color: var(--interactive-accent);
+  --h2-color: var(--interactive-accent);
+  --h3-color: var(--interactive-accent);
+  --h4-color: var(--interactive-accent);
+  --h5-color: var(--interactive-accent);
+  --h6-color: var(--interactive-accent);
+}

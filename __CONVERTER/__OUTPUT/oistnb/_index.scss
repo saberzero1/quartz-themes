@@ -1,0 +1,40 @@
+:root {
+  --orange-darkest: #802200;
+  --orange-darker: #aa4400;
+  --orange-dark: #cc5500;
+  --orange-medium: #ff6600;
+  --orange-light: #ff8533;
+  --orange-lighter: #ffa366;
+  --true-black: #000000;
+  --off-black: #0a0a0a;
+  --dark-gray: #1a1a1a;
+  --medium-gray: #333333;
+  --light-gray: #4d4d4d;
+  --off-white: #e5e5e5;
+  --white: #ffffff;
+}
+
+body {
+  --font-text-theme: "Courier New", monospace;
+  --font-ui-theme: "VT323", "Courier New", monospace;
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --input-radius: 5px;
+  --tab-radius-active: 5px 5px 0 0;
+  --checkbox-radius: 3px;
+  --toggle-radius: 15px;
+  --toggle-thumb-radius: 13px;
+  --slider-thumb-radius: 50%;
+  --font-size-small: 12px;
+  --font-size-normal: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-huge: 24px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 24px;
+}

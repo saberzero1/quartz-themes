@@ -1,0 +1,23 @@
+:root {
+}
+
+body {
+  --text-normal: var(--color-base-60);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-80);
+  --text-on-accent: var(--color-base-20);
+  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --prompt-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --radius-s: 3px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --radius-xl: 10px;
+  --modal-radius: var(--radius-m);
+  --input-radius: var(--radius-s);
+  --tab-radius: var(--radius-m);
+  --tab-radius-active: var(--radius-m);
+  --checkbox-radius: var(--radius-s);
+  --toggle-radius: var(--radius-s);
+  --toggle-thumb-radius: var(--radius-s);
+  --slider-thumb-radius: var(--radius-s);
+}

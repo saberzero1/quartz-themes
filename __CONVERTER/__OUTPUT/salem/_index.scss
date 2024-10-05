@@ -1,0 +1,64 @@
+:root {
+}
+
+body {
+  --h1-size: 2em;
+  --h2-size: 1.7em;
+  --h3-size: 1.4em;
+  --h4-size: 1.2em;
+  --h5-size: 1.1em;
+  --h6-size: 1em;
+  --inline-title-color: var(--color-red);
+  --inline-title-size: 2.3em;
+  --text-on-accent: rgb(59, 53, 34);
+  --text-on-accent-inverted: white;
+  --text-muted: var(--muted-accent);
+  --italic-color: rgb(var(--color-crimson-rgb));
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --line-height-tight: 1.8;
+  --checklist-done-decoration: none;
+  --checklist-done-color: rgb(var(--muted-accent-rgb) / 45%);
+  --checkbox-radius: var(--radius-xl);
+  --list-marker-color: var(--color-accent);
+  --list-bullet-border: 1px solid var(--color-accent-2);
+  --blockquote-border-thickness: 3px;
+  --callout-radius: 20px;
+  --callout-default: var(--color-blue-rgb);
+  --callout-tip: var(--color-starred-rgb);
+  --titlebar-background-focused: var(--background-secondary);
+  --vault-name-font-size: var(--font-ui-large);
+  --canvas-color: var(--color-starred-rgb) !important;
+  --canvas-color-2: var(--color-goldFusion-rgb) !important;
+  --canvas-color-3: transparent !important;
+  --tab-text-color-focused: var(--color-base-50);
+  --tab-text-color-focused-active-current: var(--text-accent);
+  --tab-outline-color: transparent;
+  --tab-radius-active: 12px;
+  --tab-background-active: var(--active-bg);
+  --tab-width: 180px;
+  --metadata-property-background-hover: rgba(var(--mono-rgb-100), 0.03);
+  --metadata-input-background-active: var(--background-secondary);
+  --divider-color: var(--color-base-20);
+  --hr-color: rgb(var(--muted-accent-rgb) / 10%);
+  --code-background: black;
+  --code-radius: var(--radius-l);
+  --input-radius: var(--radius-m);
+  --table-header-color: var(--muted-accent);
+  --color-crimson: rgb(var(--color-crimson-rgb));
+  --color-starred: rgb(var(--color-starred-rgb));
+  --color-red-rgb: 211, 69, 91;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-blue-rgb: 104, 149, 210;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-cyan-rgb: 26, 174, 159;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-purple-rgb: 115, 15, 195;
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-green-rgb: 0, 175, 167;
+  --color-green: rgb(var(--color-green-rgb));
+  --accent-h: 45;
+  --accent-s: 41%;
+  --accent-l: 60%;
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8.8%));
+}

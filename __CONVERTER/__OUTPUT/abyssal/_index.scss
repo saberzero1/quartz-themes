@@ -1,0 +1,61 @@
+:root {
+}
+
+body {
+  --accent-h: 200;
+  --accent-s: 70%;
+  --accent-l: 45%;
+  --accent-dark: 55%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-hover: hsla(var(--color-accent-hsl), 0.1);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-color-hover-embed: var(--text-accent-hover-embed);
+  --indentation-guide-color: var(--tag-border-color);
+  --indentation-guide-color-active: var(--tag-border-color-hover);
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.15em;
+  --tag-radius: 0.5em;
+  --tag-size: var(--h6-size);
+  --vault-name-color: var(--text-accent);
+  --text-faint: var(--color-base-60);
+  --inline-title-size: var(--h5-size);
+  --inline-title-weight: bold;
+  --h1-size: 2.25em;
+  --h2-size: 1.75em;
+  --h3-size: 1.5em;
+  --h4-size: 1.25em;
+  --h5-size: 1em;
+  --h6-size: 0.75em;
+  --h1-line-height: 1.111;
+  --h2-line-height: 1.143;
+  --h3-line-height: 1.167;
+  --h4-line-height: 1.2;
+  --h5-line-height: 1.25;
+  --h6-line-height: 1.333;
+  --line-height-normal: 1.5;
+  --line-height-roomy: 1.75;
+  --list-spacing: 0.5em;
+  --block-margin: 2em 0;
+  --blockquote-style: italic;
+  --hr-thickness: 1px;
+  --checkbox-border-color: var(--color-base-50);
+  --checkbox-border-color-hover: var(--color-base-70);
+  --checkbox-color: var(--interactive-accent);
+  --checkbox-color-hover: var(--color-accent-alt);
+  --checkbox-marker-color: var(--background-primary);
+  --checkbox-radius: var(--radius-s);
+  --list-marker-color: var(--text-accent);
+  --list-marker-color-collapsed: var(--text-normal);
+  --list-marker-color-hover: var(--text-muted);
+}

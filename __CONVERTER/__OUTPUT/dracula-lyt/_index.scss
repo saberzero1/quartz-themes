@@ -1,0 +1,34 @@
+:root {
+  --font-monospace: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-code: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-1: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-2: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --h1-size: var(--font-scale-7);
+  --h2-size: var(--font-scale-6);
+  --h3-size: var(--font-scale-5);
+  --h4-size: var(--font-scale-4);
+  --h5-size: var(--font-scale-4);
+  --h6-size: var(--font-scale-4);
+  --header-line-height: calc(0.8 * var(--line-height));
+  --h1-size: 1.75rem;
+  --h2-size: 1.688rem;
+  --h3-size: 1.563rem;
+  --h4-size: 1.438rem;
+  --h5-size: 1.313rem;
+  --h6-size: 1.188rem;
+  --header-line-height: calc(0.8 * var(--line-height));
+  --header-shadow-size: 0px 4px 3px;
+  --header-shadow-color: rgb(31, 31, 31);
+  --h1-size: calc(0.85 * var(--font-scale-7));
+  --h2-size: calc(0.85 * var(--font-scale-6));
+  --h3-size: calc(0.85 * var(--font-scale-5));
+  --h4-size: calc(0.85 * var(--font-scale-4));
+  --h5-size: calc(0.85 * var(--font-scale-4));
+  --h6-size: calc(0.85 * var(--font-scale-4));
+  --header-line-height: calc(0.8 * var(--line-height));
+}
+
+body {
+  --gap: 0;
+  --gap: 0;
+}

@@ -1,0 +1,40 @@
+:root {
+  --uno: 260;
+  --duo: 28;
+  --D0-rgb: 207, 136, 74;
+  --baseA0: hsl(var(--uno), 18%, 17%);
+  --baseA1: hsl(var(--uno), 17%, 22%);
+  --baseA2: hsl(var(--uno), 16%, 35%);
+  --baseA3: hsl(var(--uno), 15%, 40%);
+  --baseA4: hsl(var(--uno), 14%, 45%);
+  --baseA5: hsl(var(--uno), 13%, 53%);
+  --baseA6: hsl(var(--uno), 12%, 61%);
+  --baseA7: hsl(var(--uno), 11%, 69%);
+  --baseB0: hsl(var(--uno), 75%, 61%);
+  --baseB1: hsl(var(--uno), 80%, 66%);
+  --baseB2: hsl(var(--uno), 87%, 71%);
+  --baseB3: hsl(var(--uno), 97%, 76%);
+  --baseB4: hsl(var(--uno), 97%, 81%);
+  --baseB5: hsl(var(--uno), 97%, 86%);
+  --baseB6: hsl(var(--uno), 97%, 91%);
+  --baseB7: hsl(var(--uno), 100%, 96%);
+  --baseC0: hsl(var(--duo), 4%, 46%);
+  --baseC1: hsl(var(--duo), 5%, 53%);
+  --baseC2: hsl(var(--duo), 6%, 60%);
+  --baseC3: hsl(var(--duo), 6%, 67%);
+  --baseC4: hsl(var(--duo), 8%, 74%);
+  --baseC5: hsl(var(--duo), 13%, 82%);
+  --baseC6: hsl(var(--duo), 18%, 90%);
+  --baseC7: hsl(var(--duo), 23%, 98%);
+  --baseD0: hsl(var(--duo), 58%, 55%);
+  --baseD1: hsl(var(--duo), 63%, 60%);
+  --baseD2: hsl(var(--duo), 80%, 65%);
+  --baseD3: hsl(var(--duo), 85%, 68%);
+  --baseD4: hsl(var(--duo), 90%, 71%);
+  --baseD5: hsl(var(--duo), 95%, 75%);
+  --baseD6: hsl(var(--duo), 100%, 80%);
+  --baseD7: hsl(var(--duo), 100%, 85%);
+}
+
+body {
+}

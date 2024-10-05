@@ -1,0 +1,65 @@
+:root {
+  --color-dracula-background: #282a36;
+  --color-dracula-foreground: #f8f8f2;
+  --color-dracula-comment: #6272a4;
+  --color-dracula-cyan: #8be9fd;
+  --color-dracula-green: #50fa7b;
+  --color-dracula-orange: #ffb86c;
+  --color-dracula-pink: #ff79c6;
+  --color-dracula-purple: #bd93f9;
+  --color-dracula-red: #ff5555;
+  --color-dracula-yellow: #f1fa8c;
+}
+
+body {
+  --accent-h: 225;
+  --accent-s: 27%;
+  --accent-l: 51%;
+  --color-base-10: hsl(231, 15%, 22%);
+  --color-base-20: hsl(231, 15%, 24%);
+  --color-base-25: hsl(231, 15%, 27%);
+  --color-base-30: hsl(231, 15%, 30%);
+  --color-base-35: hsl(231, 15%, 33%);
+  --color-base-40: hsl(231, 15%, 40%);
+  --color-base-50: hsl(231, 15%, 50%);
+  --color-base-60: hsl(231, 15%, 65%);
+  --color-base-70: hsl(231, 15%, 84%);
+  --text-selection: var(--color-dracula-selection);
+  --blockquote-border-thickness: 4px;
+  --blockquote-border-color: var(--color-dracula-yellow);
+  --blockquote-color: var(--color-dracula-yellow-ish);
+  --bold-color: var(--color-dracula-orange);
+  --italic-color: var(--color-dracula-yellow);
+  --tag-size: var(--font-text-size);
+  --tag-color: var(--color-dracula-pink);
+  --tag-color-hover: var(--color-dracula-pink);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.4);
+  --h1-color: var(--color-dracula-pink);
+  --h2-color: var(--color-dracula-purple);
+  --h3-color: var(--color-dracula-cyan);
+  --h4-color: var(--color-dracula-green);
+  --h5-color: var(--color-dracula-yellow);
+  --h6-color: var(--color-dracula-orange);
+  --h1-size: 2em;
+  --h2-size: 1.8em;
+  --h3-size: 1.6em;
+  --h4-size: 1.4em;
+  --h5-size: 1.2em;
+  --h6-size: 1em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --heading-spacing: 0;
+  --link-color: var(--color-dracula-pink);
+  --link-color-hover: var(--color-dracula-purple);
+  --link-external-color: var(--color-dracula-pink);
+  --link-external-color-hover: var(--color-dracula-purple);
+  --link-unresolved-color: var(--color-dracula-pink);
+  --link-unresolved-opacity: 0.5;
+  --link-unresolved-decoration-color: var(--color-dracula-pink);
+  --table-header-background: var(--color-base-20);
+}
