@@ -160,6 +160,10 @@ This list is ever expanding.
 
 ## Roadmap
 
+<!--
+Colors in GitHub markdown: https://gist.github.com/luigiMinardi/4574708d404cdf4fe0da7ac6fe2314db
+-->
+
 > [!NOTE]
 > Below list was taken from Obsidian's theme browser, sorted by number of installs. _Last updated: 2024-10-05_.
 
