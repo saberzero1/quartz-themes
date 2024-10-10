@@ -1,4 +1,8 @@
 @import "fonts";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+@use "sass:list";
 
 :root {
   --anim-duration-none: 0;
@@ -45,6 +49,9 @@
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-abstract: var(--summary);
+  --callout-failure: var(--callout-fail);
+  --callout-danger: var(--callout-error);
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
   --canvas-color-1: var(--color-red-rgb);
@@ -313,6 +320,7 @@
 }
 
 body {
+  --null: "null";
   --blockquote-border-color: #4d3ca699;
   --code-tag: var(--text-accent) !important;
   --h1-color: #ba6ea0;
@@ -464,4 +472,58 @@ body {
   --italic-color: #474a4d;
   --interactive-accent: #92a1a1;
   --text-highlight-bg: #00000033;
+}
+
+// Get an option from a set.
+@function get($collection, $value, $sub: false) {
+  @if $sub != false {
+    @return map-get($collection, $sub, $value);
+  }
+  @return map-get($collection, $value);
+}
+
+// Callouts
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="light"] {
+  --light: var(--background-primary) !important;
+  --lightgray: var(--background-modifier-border) !important;
+  --gray: var(--checkbox-border-color) !important;
+  --darkgray: var(--text-normal) !important;
+  --dark: var(--h1-color) !important;
+  --secondary: var(--link-color) !important;
+  --tertiary: var(--link-color-hover) !important;
+  --highlight: var(--tag-background) !important;
+  --textHighlight: var(--text-highlight-bg) !important;
+  .callout {
+    @each $type in $callout-types {
+      &[data-callout="#{$type}"] {
+        --color: var(--callout-#{$type});
+        --border: var(--callout-#{$type}, 0.267);
+        --bg: var(--callout-#{$type}, 0.063);
+      }
+    }
+  }
+}
+
+:root {
+  --light: var(--background-primary) !important;
+  --lightgray: var(--background-modifier-border) !important;
+  --gray: var(--checkbox-border-color) !important;
+  --darkgray: var(--text-normal) !important;
+  --dark: var(--h1-color) !important;
+  --secondary: var(--link-color) !important;
+  --tertiary: var(--link-color-hover) !important;
+  --highlight: var(--tag-background) !important;
+  --textHighlight: var(--text-highlight-bg) !important;
+  .callout {
+    @each $type in $callout-types {
+      &[data-callout="#{$type}"] {
+        --color: var(--callout-#{$type});
+        --border: var(--callout-#{$type}, 0.267);
+        --bg: var(--callout-#{$type}, 0.063);
+      }
+    }
+  }
 }

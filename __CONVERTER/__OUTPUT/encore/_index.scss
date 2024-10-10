@@ -1,4 +1,8 @@
 @import "fonts";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+@use "sass:list";
 
 :root {
   --anim-duration-none: 0;
@@ -45,6 +49,9 @@
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-abstract: var(--summary);
+  --callout-failure: var(--callout-fail);
+  --callout-danger: var(--callout-error);
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
   --canvas-color-1: var(--color-red-rgb);
@@ -315,6 +322,7 @@
 }
 
 body {
+  --null: "null";
   --lucide-x: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
   --lucide-minus: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
   --lucide-maximize: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E");
@@ -957,4 +965,58 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+}
+
+// Get an option from a set.
+@function get($collection, $value, $sub: false) {
+  @if $sub != false {
+    @return map-get($collection, $sub, $value);
+  }
+  @return map-get($collection, $value);
+}
+
+// Callouts
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="light"] {
+  --light: var(--background-primary) !important;
+  --lightgray: var(--background-modifier-border) !important;
+  --gray: var(--checkbox-border-color) !important;
+  --darkgray: var(--text-normal) !important;
+  --dark: var(--h1-color) !important;
+  --secondary: var(--link-color) !important;
+  --tertiary: var(--link-color-hover) !important;
+  --highlight: var(--tag-background) !important;
+  --textHighlight: var(--text-highlight-bg) !important;
+  .callout {
+    @each $type in $callout-types {
+      &[data-callout="#{$type}"] {
+        --color: var(--callout-#{$type});
+        --border: var(--callout-#{$type}, 0.267);
+        --bg: var(--callout-#{$type}, 0.063);
+      }
+    }
+  }
+}
+
+:root {
+  --light: var(--background-primary) !important;
+  --lightgray: var(--background-modifier-border) !important;
+  --gray: var(--checkbox-border-color) !important;
+  --darkgray: var(--text-normal) !important;
+  --dark: var(--h1-color) !important;
+  --secondary: var(--link-color) !important;
+  --tertiary: var(--link-color-hover) !important;
+  --highlight: var(--tag-background) !important;
+  --textHighlight: var(--text-highlight-bg) !important;
+  .callout {
+    @each $type in $callout-types {
+      &[data-callout="#{$type}"] {
+        --color: var(--callout-#{$type});
+        --border: var(--callout-#{$type}, 0.267);
+        --bg: var(--callout-#{$type}, 0.063);
+      }
+    }
+  }
 }
