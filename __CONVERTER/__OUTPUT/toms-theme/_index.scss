@@ -61,7 +61,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
-  --callout-abstract: var(--summary);
+  --callout-abstract: var(--callout-summary);
+  --callout-note: var(--callout-default);
   --callout-failure: var(--callout-fail);
   --callout-danger: var(--callout-error);
   --canvas-background: var(--background-primary);
@@ -349,6 +350,45 @@ body {
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  /* Metadata */
+  --metadata-background: transparent;
+  --metadata-display-reading: block;
+  --metadata-display-editing: block;
+  --metadata-max-width: none;
+  --metadata-padding: var(--size-4-2) 0;
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-divider-color: var(--background-modifier-border);
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-background: transparent;
+  --metadata-property-background-hover: transparent;
+  --metadata-property-background-active: var(--background-modifier-hover);
+  --metadata-label-background-hover: transparent;
+  --metadata-label-background-active: var(--background-modifier-hover);
+  --metadata-label-font: var(--font-interface);
+  --metadata-label-font-size: var(--font-smaller);
+  --metadata-label-font-weight: inherit;
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-muted);
+  --metadata-label-width: 9em;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75);
+  --metadata-input-text-color: var(--text-normal);
+  --metadata-input-font: var(--font-interface);
+  --metadata-input-font-size: var(--font-smaller);
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-background-active: var(--background-modifier-hover);
+  --metadata-sidebar-label-font-size: var(--font-ui-small);
+  --metadata-sidebar-input-font-size: var(--font-ui-small);
+
   --font-default: Courier, monospace;
   --font-monospace-default: "Lucida Console", monospace;
   --file-line-width: 520px;
@@ -414,6 +454,7 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
   --background-primary: black;
   --background-primary-alt: var(--color-nearblack);
   --background-secondary: black;
@@ -444,6 +485,7 @@ body {
   --interactive-success: var(--color-green);
   --scrollbar-active-thumb-bg: var(--color-green);
   --scrollbar-bg: rgba(0, 0, 0, 0.05) /* Scrollbar */ --scrollbar-thumb-bg: var(--color-darkgreen);
+
   --light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -456,9 +498,9 @@ body {
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
-        --color: var(--callout-#{$type});
-        --border: var(--callout-#{$type}, 0.267);
-        --bg: var(--callout-#{$type}, 0.063);
+        --color: rgb(var(#{"--callout-#{$type}"}));
+        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
       }
     }
   }
@@ -510,6 +552,7 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
   --background-primary: var(--color-light);
   --background-primary-alt: var(--color-off-light);
   --background-secondary: var(--color-light);
@@ -541,6 +584,7 @@ body {
   --scrollbar-active-thumb-bg: var(--color-green);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: var(--color-darkgreen);
+
   --light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -553,14 +597,20 @@ body {
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
-        --color: rgb(var(--callout-#{$type}));
-        --border: rgba(var(--callout-#{$type}), 0.267);
-        --bg: rgba(var(--callout-#{$type}), 0.063);
+        --color: rgb(var(#{"--callout-#{$type}"}));
+        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
       }
     }
   }
 }
 
+.callout {
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+}
+
+/* LINKS */
 a {
   --font-weight: var(--link-weight);
   color: var(--link-color);
@@ -595,7 +645,11 @@ a {
     }
   }
 }
+#explorer-content ul li > a:hover {
+  color: var(--link-color-hover);
+}
 
+/* TAGS */
 a.tag {
   background-color: var(--tag-background);
   border: var(--tag-border-width) solid var(--tag-border-color);
@@ -770,4 +824,48 @@ h6 {
 }
 h6 a {
   --link-weight: var(--h6-weight);
+}
+
+/* CODE */
+code {
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+}
+*:is(:not(pre)) > code {
+  background-color: var(--code-background);
+}
+
+/* EXPLORER */
+.folder-container {
+  .folder-icon,
+  div > button,
+  div > button > span {
+    color: var(--nav-heading-color-collapsed);
+  }
+  &:hover {
+    .folder-icon,
+    div > button,
+    div > button > span {
+      color: var(--nav-heading-color-collapsed-hover);
+    }
+  }
+  &:has(+ div.folder-outer.open) {
+    .folder-icon,
+    div > button,
+    div > button > span {
+      color: var(--nav-heading-color);
+    }
+    &:hover {
+      .folder-icon,
+      div > button,
+      div > button > span {
+        color: var(--nav-heading-color-hover);
+      }
+    }
+  }
+}
+
+/* METADATA */
+.content-meta {
+  color: var(--text-faint);
 }

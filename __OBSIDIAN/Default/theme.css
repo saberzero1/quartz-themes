@@ -945,7 +945,7 @@
 }
 
 .pdf-viewer.removePageBorders .page {
-   margin: 0 auto 10px; 
+   margin: 0 auto 10px;
  border: none;
 }
 
@@ -978,12 +978,12 @@
  margin-inline: var(--spreadHorizontalWrapped-margin-LR);
 } */
 
-  @obsidian 
+  @obsidian
   .pdf-viewer.removePageBorders .spread .page,
 .pdf-viewer.removePageBorders:is(.scrollHorizontal, .scrollWrapped) .page {
  margin-left: 5px;
  margin-right: 5px;
-} 
+}
 
 .pdf-viewer .page canvas {
  margin: 0;
@@ -2682,12 +2682,12 @@ body.is-grabbing webview {
 }
 /*
 
-OS-dependent rules to make space for traffic lights buttons, 
+OS-dependent rules to make space for traffic lights buttons,
 window buttons and sidebar toggles.
 
 ---
 
-Scenarios to account for: 
+Scenarios to account for:
 
 Window frame styles
 - Hidden
@@ -5349,7 +5349,7 @@ button.mod-destructive {
   color: var(--text-accent);
 }
 /* Document search and replace */
-/* 
+/*
 Moves search to the top
 #todo move this into DOM */
 .markdown-reading-view.is-searching,
