@@ -1,0 +1,35 @@
+:root[saved-theme="dark"] {
+  --opacity-translucency: 0.8;
+  --background-primary-alt: #171717;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-nav-alt: rgba(62, 147, 216, 0.1);
+  --text-accent: #3e93d8;
+  --text-accent-hover: #3378e0;
+  --text-accent-hover-dark: #1052b5;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-on-accent: #dcddde;
+  --text-selection: rgba(6, 66, 113, 0.5);
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: #3378e0;
+  --interactive-accent-hover: #4e8ae4;
+  --interactive-accent-hover-dark: #0f56bf;
+  --scrollbar-bg: rgba(255, 255, 255, 0);
+  --color-green: #4a8069;
+  --color-H1: rgb(255, 255, 255);
+  --color-H2: rgb(220, 220, 220, 0.2);
+  --color-H3: rgb(200, 200, 200, 0.4);
+  --color-H4: rgb(160, 160, 160, 0.5);
+  --color-H5: rgb(120, 120, 120, 0.5);
+  --color-H6: rgb(70, 70, 70, 0.5);
+  --graph-node-fill-OP1: #3e93d8;
+  --graph-node-fill-OP2: #91b8d7;
+  --graph-node-fill-yellow: #ffcf00;
+  --color-yellow-bright: #fbff00;
+  --color-purple: #b352e0;
+  --color-purple2: #5252e0;
+  --color-green2: #58aa31;
+  --blockquote-background-color: var(--background-secondary);
+}

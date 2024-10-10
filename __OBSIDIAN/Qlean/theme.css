@@ -1,0 +1,4630 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
+    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+  --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace: var(--font-monospace-default);
+  --font-text: var(--font-default);
+  --font-tag: var(--font-monospace);
+  --font-file-tree: var(--font-default);
+  --font-source-view: var(--font-monospace);
+  --font-vault-name: var(--font-file-tree);
+  --font-interface-override: "";
+  --font-tag-size: 0.9em;
+  --font-latex-size: 1em;
+  --font-monospace-size: 0.95em;
+  --font-file-tree-size: 0.95em;
+  --font-vault-name-size: 1.25em;
+  --font-source-view-size: 1em;
+  --font-text-weight: normal;
+  --font-tag-weight: normal;
+  --font-latex-weight: normal;
+  --font-monospace-weight: normal;
+  --font-file-tree-weight: normal;
+  --font-vault-name-weight: normal;
+  --font-source-view-weight: normal;
+  --font-header: var(--font-text);
+  --font-h1-size: 2em;
+  --font-h2-size: 1.8em;
+  --font-h3-size: 1.6em;
+  --font-h4-size: 1.4em;
+  --font-h5-size: 1.2em;
+  --font-h6-size: 1.1em;
+  --font-h1-weight: normal;
+  --font-h2-weight: var(--font-h1-weight);
+  --font-h3-weight: var(--font-h1-weight);
+  --font-h4-weight: var(--font-h1-weight);
+  --font-h5-weight: var(--font-h1-weight);
+  --font-h6-weight: var(--font-h1-weight);
+  --h1-color: var(--color-default-h1);
+  --h2-color: var(--color-default-h2);
+  --h3-color: var(--color-default-h3);
+  --h4-color: var(--color-default-h4);
+  --h5-color: var(--color-default-h5);
+  --h6-color: var(--color-default-h6);
+  --color-default-h1: var(--text-normal);
+  --color-default-h2: var(--text-normal);
+  --color-default-h3: var(--text-normal);
+  --color-default-h4: var(--text-normal);
+  --color-default-h5: var(--text-normal);
+  --color-default-h6: var(--text-normal);
+  --color-accent-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h2: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h3: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h4: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h5: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h6: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-gradient-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-gradient-h2: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 3%));
+  --color-gradient-h3: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 6%));
+  --color-gradient-h4: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 9%));
+  --color-gradient-h5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 12%));
+  --color-gradient-h6: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
+  --font-strong-size: 1em;
+  --font-strong-weight: 900;
+  --font-strong-style: normal;
+  --font-strong-color: var(--text-strong);
+  --font-strong-decoration-line: none;
+  --font-strong-decoration-width: 1px;
+  --font-strong-decoration-style: solid;
+  --font-strong-decoration-color: var(--font-strong-color);
+  --font-strong-decoration-offset: 2px;
+  --font-em-size: 1em;
+  --font-em-weight: normal;
+  --font-em-style: italic;
+  --font-em-color: var(--text-normal);
+  --font-em-decoration-line: none;
+  --font-em-decoration-width: 1px;
+  --font-em-decoration-style: solid;
+  --font-em-decoration-color: var(--font-em-color);
+  --font-em-decoration-offset: 2px;
+  --font-highlight-size: 1em;
+  --font-highlight-weight: normal;
+  --font-highlight-style: normal;
+  --font-highlight-color: var(--text-reversed);
+  --font-highlight-bg-color: var(--color-accent);
+  --font-highlight-decoration-width: 2px;
+  --font-highlight-decoration-style: solid;
+  --font-highlight-decoration-line: none;
+  --font-highlight-decoration-color: var(--text-normal);
+  --font-highlight-decoration-offset: 3px;
+  --font-strikethrough-size: 1em;
+  --font-strikethrough-weight: normal;
+  --font-strikethrough-style: normal;
+  --font-strikethrough-color: var(--text-muted);
+  --font-strikethrough-decoration-line: line-through;
+  --font-strikethrough-decoration-width: 1px;
+  --font-strikethrough-decoration-style: solid;
+  --font-strikethrough-decoration-color: var(--font-strikethrough-color);
+  --font-underlined-size: 1em;
+  --font-underlined-weight: normal;
+  --font-underlined-color: var(--text-normal);
+  --font-underlined-decoration-line: underline;
+  --font-underlined-decoration-width: 1px;
+  --font-underlined-decoration-style: solid;
+  --font-underlined-decoration-color: var(--font-underlined-color);
+  --font-underlined-decoration-offset: 2px;
+  --font-inline-title: var(--font-header);
+  --font-inline-title-size: 2em;
+  --font-inline-title-weight: 900;
+  --link-unresolved-color: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
+  --link-unresolved-color-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
+  --link-external-color: var(--color-accent-ln5);
+  --link-external-color-hover: var(--color-accent);
+  --link-color: var(--color-accent-ln5);
+  --link-color-hover: var(--color-accent);
+  --font-inline-tile-color: var(--text-normal);
+  --text-accent-hover: var(--text-strong);
+  --link-decoration-line: underline;
+  --link-decoration-width: auto;
+  --link-decoration-style: solid;
+  --link-decoration-color: var(--link-color);
+  --link-decoration-offset: 2px;
+  --link-unresolved-decoration-line: underline;
+  --link-unresolved-decoration-width: auto;
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: hsla(var(--link-unresolved-color), 0.3);
+  --link-unresolved-decoration-offset: 1px;
+  --link-unresolved-decoration-color-hover: hsla(var(--link-unresolved-color-hover), 0.3);
+  --checkbox-checked-color: hsla(var(--color-h), var(--color-s), var(--color-l));
+  --checkbox-border-color: var(--color-base-70);
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-unchecked-color-hover: hsla(var(--color-h), var(--color-s), calc(var(--color-l)), 0.5);
+  --checklist-decoration-color: var(--text-normal);
+  --checklist-decoration-line: none;
+  --checklist-done-decoration-color: var(--text-muted);
+  --checklist-done-decoration-line: none;
+  --checklist-delete-decoration-color: var(--background-modifier-error);
+  --checklist-delete-decoration-line: line-through;
+  --tag-radius: 1em;
+  --blockquote-border-thickness: 2px;
+  --callout-dogs-ear-size: 30px;
+  --tab-curve: 6px;
+  --icon-color-focused: hsl(var(--color-h), var(--color-s), 30%);
+  --icon-color-hovering: var(--text-strong);
+  --color-bw-h: 0;
+  --color-bw-s: 0%;
+  --color-green-h: 150;
+  --color-green-s: 100%;
+  --color-green-l: 40%;
+  --color-green-main: hsl(var(--color-green-h), var(--color-green-s), var(--color-green-l));
+  --color-orange-h: 30;
+  --color-orange-s: 100%;
+  --color-orange-l: 50%;
+  --color-orange-main: hsl(var(--color-orange-h), var(--color-orange-s), var(--color-orange-l));
+  --color-blue-h: 210;
+  --color-blue-s: 100%;
+  --color-blue-l: 50%;
+  --color-blue-main: hsl(var(--color-blue-h), var(--color-blue-s), var(--color-blue-l));
+  --color-red-h: 10;
+  --color-red-s: 80%;
+  --color-red-l: 50%;
+  --color-red-main: hsl(var(--color-red-h), var(--color-red-s), var(--color-red-l));
+  --color-yellow-h: 60;
+  --color-yellow-s: 80%;
+  --color-yellow-l: 40%;
+  --color-yellow-main: hsl(var(--color-yellow-h), var(--color-yellow-s), var(--color-yellow-l));
+  --color-pink-h: 330;
+  --color-pink-s: 100%;
+  --color-pink-l: 50%;
+  --color-pink-main: hsl(var(--color-pink-h), var(--color-pink-s), var(--color-pink-l));
+  --color-purple-h: 270;
+  --color-purple-s: 80%;
+  --color-purple-l: 60%;
+  --color-purple-main: hsl(var(--color-purple-h), var(--color-purple-s), var(--color-purple-l));
+  --accent-color-light-hue-default: 254;
+  --accent-color-light-saturation-default: 80%;
+  --accent-color-light-lightness-default: 68%;
+  --accent-color-dark-hue-default: 254;
+  --accent-color-dark-saturation-default: 80%;
+  --accent-color-dark-lightness-default: 68%;
+  --accent-h: var(--color-h);
+  --accent-s: var(--color-s);
+  --accent-l: var(--color-l);
+  --color-main: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent: var(--color-main) !important;
+  --color-accent-1: var(--color-main) !important;
+  --color-accent-ln5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 5%));
+  --color-accent-ln10: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
+  --color-accent-ln15: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
+  --color-accent-ln20: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
+  --color-accent-o80: hsla(var(--color-h), var(--color-s), var(--color-l), 0.8);
+  --color-accent-o60: hsla(var(--color-h), var(--color-s), var(--color-l), 0.6);
+  --color-accent-o50: hsla(var(--color-h), var(--color-s), var(--color-l), 0.5);
+  --color-accent-o40: hsla(var(--color-h), var(--color-s), var(--color-l), 0.4);
+  --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
+  --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
+  --interactive-hover: var(--background-primary) !important;
+  --interactive-accent: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%)) !important;
+  --interactive-accent-hover: hsl(
+    var(--color-h),
+    var(--color-s),
+    calc(var(--color-l) - 5%)
+  ) !important;
+  --color-error: var(--background-modifier-error);
+  --color-done: hsl(120, 100%, 40%);
+  --color-warning: #fbbc04;
+  --color-info: hsl(210, 100%, 40%);
+  --color-ques: hsl(30, 100%, 40%);
+  --inactive-opacity: 0.3;
+  --inactive-hover-opacity: 0.8;
+  --focuse-transition-duration: 0.2s;
+}
+body.theme-light {
+  color-scheme: light;
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 10% --text-normal: #555555;
+  --text-strong: hsl(0, 0%, 0%);
+  --text-muted: #888888 !important;
+  --text-reversed: #fff;
+  --code-bg-color: #f7f7f7;
+  --inline-code-bg-color: hsla(0, 0%, 90%, 1);
+  --background-primary: #fff !important;
+  --background-primary-alt: #e8e8e8;
+  --background-secondary: #fafafa;
+  --background-secondary-alt: #d6d6d6;
+  --background-modifier-active-hover: #d9d9d9;
+  --background-modifier-border-focus: #d9d9d9;
+  --background-modifier-error-rgb: var(--color-red-rgb);
+  --button-shadow-color: rgba(0, 0, 0, 0.2);
+  --titlebar-isfocused: hsl(0, 0%, 92%);
+  --titlebar-not-focused: hsla(0, 0%, 70%, 1);
+  --divider-color: #d9d9d9;
+  --tab-bg-color: #ddd;
+  --tab-hover-bg-color: var(--background-modifier-active-hover);
+  --tab-active-bg-color: #eee;
+  --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
+  --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --quote-bg-color: rgba(0, 0, 0, 0.05);
+  --border-color: #ccc;
+}
+body.theme-light.accent-color-bw-dark {
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 10%;
+}
+body.theme-light.accent-color-green-light {
+  --color-h: var(--color-green-h);
+  --color-s: var(--color-green-s);
+  --color-l: var(--color-green-l);
+}
+body.theme-light.accent-color-orange-light {
+  --color-h: var(--color-orange-h);
+  --color-s: var(--color-orange-s);
+  --color-l: var(--color-orange-l);
+}
+body.theme-light.accent-color-blue-light {
+  --color-h: var(--color-blue-h);
+  --color-s: var(--color-blue-s);
+  --color-l: var(--color-blue-l);
+}
+body.theme-light.accent-color-red-light {
+  --color-h: var(--color-red-h);
+  --color-s: var(--color-red-s);
+  --color-l: var(--color-red-l);
+}
+body.theme-light.accent-color-yellow-light {
+  --color-h: var(--color-yellow-h);
+  --color-s: var(--color-yellow-s);
+  --color-l: var(--color-yellow-l);
+}
+body.theme-light.accent-color-pink-light {
+  --color-h: var(--color-pink-h);
+  --color-s: var(--color-pink-s);
+  --color-l: var(--color-pink-l);
+}
+body.theme-light.accent-color-purple-light {
+  --color-h: var(--color-purple-h);
+  --color-s: var(--color-purple-s);
+  --color-l: var(--color-purple-l);
+}
+body.theme-light.custom-accent-color {
+  --color-h: var(--accent-color-light-hue-default);
+  --color-s: var(--accent-color-light-saturation-default);
+  --color-l: var(--accent-color-light-lightness-default);
+}
+body.theme-dark {
+  color-scheme: dark;
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 90%;
+  --text-normal: #aaaaaa;
+  --text-strong: hsl(0, 0%, 100%);
+  --text-muted: #999999 !important;
+  --text-reversed: #111;
+  --code-bg-color: #181818;
+  --inline-code-bg-color: rgba(255, 255, 255, 0.1);
+  --background-primary: #111 !important;
+  --background-primary-alt: #242424;
+  --background-secondary: #151515;
+  --background-secondary-alt: #363636;
+  --background-modifier-active-hover: #222;
+  --background-modifier-border-focus: #222;
+  --button-shadow-color: rgba(255, 255, 255, 0.2);
+  --titlebar-isfocused: #171514;
+  --titlebar-not-focused: hsla(218, 1%, 30%, 1);
+  --divider-color: #303030;
+  --tab-bg-color: #303030;
+  --tab-hover-bg-color: var(--background-modifier-active-hover);
+  --tab-active-bg-color: #202020;
+  --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
+  --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --quote-bg-color: rgba(255, 255, 255, 0.05);
+  --border-color: #333;
+}
+body.theme-dark.accent-color-bw-dark {
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 90%;
+}
+body.theme-dark.accent-color-green-dark {
+  --color-h: var(--color-green-h);
+  --color-s: var(--color-green-s);
+  --color-l: var(--color-green-l);
+}
+body.theme-dark.accent-color-orange-dark {
+  --color-h: var(--color-orange-h);
+  --color-s: var(--color-orange-s);
+  --color-l: var(--color-orange-l);
+}
+body.theme-dark.accent-color-blue-dark {
+  --color-h: var(--color-blue-h);
+  --color-s: var(--color-blue-s);
+  --color-l: var(--color-blue-l);
+}
+body.theme-dark.accent-color-red-dark {
+  --color-h: var(--color-red-h);
+  --color-s: var(--color-red-s);
+  --color-l: var(--color-red-l);
+}
+body.theme-dark.accent-color-yellow-dark {
+  --color-h: var(--color-yellow-h);
+  --color-s: var(--color-yellow-s);
+  --color-l: var(--color-yellow-l);
+}
+body.theme-dark.accent-color-pink-dark {
+  --color-h: var(--color-pink-h);
+  --color-s: var(--color-pink-s);
+  --color-l: var(--color-pink-l);
+}
+body.theme-dark.accent-color-purple-dark {
+  --color-h: var(--color-purple-h);
+  --color-s: var(--color-purple-s);
+  --color-l: var(--color-purple-l);
+}
+body.theme-dark.custom-accent-color {
+  --color-h: var(--accent-color-dark-hue-default);
+  --color-s: var(--accent-color-dark-saturation-default);
+  --color-l: var(--accent-color-dark-lightness-default);
+}
+body.colorful-headers {
+  --h1-color: var(--color-accent-h1);
+  --h2-color: var(--color-accent-h1);
+  --h3-color: var(--color-accent-h1);
+  --h4-color: var(--color-accent-h1);
+  --h5-color: var(--color-accent-h1);
+  --h6-color: var(--color-accent-h1);
+}
+body.colorful-headers.header-color-gradient {
+  --h1-color: var(--color-gradient-h1);
+  --h2-color: var(--color-gradient-h2);
+  --h3-color: var(--color-gradient-h3);
+  --h4-color: var(--color-gradient-h4);
+  --h5-color: var(--color-gradient-h5);
+  --h6-color: var(--color-gradient-h6);
+}
+
+body *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+body *::-webkit-scrollbar-thumb {
+  background-color: var(--text-muted);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-normal);
+}
+
+.markdown-rendered p,
+.style-settings-container p,
+.markdown-source-view.is-live-preview .cm-line {
+  font-family: var(--font-text);
+  font-size: 1em;
+  font-weight: normal;
+  color: var(--text-normal);
+  line-height: 2;
+}
+
+.markdown-rendered h1,
+.style-settings-container h1,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-1 {
+  font-family: var(--font-header);
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-h1-weight);
+  color: var(--h1-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-1::after {
+  margin-top: calc(1px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h1,
+    .style-settings-container h1,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1
+  ):before {
+  content: "H1";
+}
+
+.markdown-rendered h2,
+.style-settings-container h2,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-2 {
+  font-family: var(--font-header);
+  font-size: var(--font-h2-size);
+  font-weight: var(--font-h2-weight);
+  color: var(--h2-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-2::after {
+  margin-top: calc(2px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h2,
+    .style-settings-container h2,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2
+  ):before {
+  content: "H2";
+}
+
+.markdown-rendered h3,
+.style-settings-container h3,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-3 {
+  font-family: var(--font-header);
+  font-size: var(--font-h3-size);
+  font-weight: var(--font-h3-weight);
+  color: var(--h3-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-3::after {
+  margin-top: calc(3px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h3,
+    .style-settings-container h3,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3
+  ):before {
+  content: "H3";
+}
+
+.markdown-rendered h4,
+.style-settings-container h4,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-4 {
+  font-family: var(--font-header);
+  font-size: var(--font-h4-size);
+  font-weight: var(--font-h4-weight);
+  color: var(--h4-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-4::after {
+  margin-top: calc(4px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h4,
+    .style-settings-container h4,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4
+  ):before {
+  content: "H4";
+}
+
+.markdown-rendered h5,
+.style-settings-container h5,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-5 {
+  font-family: var(--font-header);
+  font-size: var(--font-h5-size);
+  font-weight: var(--font-h5-weight);
+  color: var(--h5-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-5::after {
+  margin-top: calc(5px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h5,
+    .style-settings-container h5,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5
+  ):before {
+  content: "H5";
+}
+
+.markdown-rendered h6,
+.style-settings-container h6,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-6 {
+  font-family: var(--font-header);
+  font-size: var(--font-h6-size);
+  font-weight: var(--font-h6-weight);
+  color: var(--h6-color);
+}
+
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-6::after {
+  margin-top: calc(6px * 1.5 - 0.8rem);
+}
+
+body.header-level-indicator
+  :is(
+    .markdown-rendered h6,
+    .style-settings-container h6,
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6
+  ):before {
+  content: "H6";
+}
+
+body.header-level-indicator
+  .markdown-source-view.is-live-preview
+  .cm-line.cm-line.HyperMD-header
+  .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-level-indicator
+  .markdown-source-view.is-live-preview
+  .cm-line.cm-line.HyperMD-header
+  .collapse-indicator
+  svg {
+  opacity: 0 !important;
+}
+body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator,
+body.header-level-indicator
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6)
+  .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg,
+body.header-level-indicator
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6)
+  .collapse-indicator
+  svg {
+  opacity: 0 !important;
+}
+
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.style-settings-container :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+body.header-hovering-underline .markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline .style-settings-container :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline
+  .markdown-source-view.is-live-preview
+  .cm-line.HyperMD-header:hover::after {
+  background-color: var(--text-normal);
+}
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after,
+.style-settings-container :is(h1, h2, h3, h4, h5, h6)::after,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+body.header-level-indicator
+  .markdown-rendered
+  :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
+body.header-level-indicator
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
+body.header-level-indicator
+  .markdown-source-view.is-live-preview
+  .cm-line.HyperMD-header:has(.is-collapsed):before {
+  color: var(--text-strong);
+}
+
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
+.style-settings-container :is(h1, h2, h3, h4, h5, h6):before,
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header:before {
+  font-family: var(--font-monospace);
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text-muted);
+  position: relative;
+  width: 20px;
+  margin: 0 5px 0 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.markdown-rendered strong,
+.style-settings-container strong,
+.markdown-source-view.is-live-preview .cm-line .cm-strong,
+.markdown-source-view.is-live-preview strong {
+  font-family: var(--font-text);
+  font-size: var(--font-strong-size);
+  font-weight: var(--font-strong-weight);
+  color: var(--font-strong-color);
+  -webkit-text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style)
+    var(--font-strong-decoration-color) var(--font-strong-decoration-width);
+  text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style)
+    var(--font-strong-decoration-color) var(--font-strong-decoration-width);
+  text-underline-offset: var(--font-strong-decoration-offset);
+  font-style: var(--font-strong-style);
+}
+
+.markdown-rendered em,
+.style-settings-container em,
+.markdown-source-view.is-live-preview .cm-line .cm-em,
+.markdown-source-view.is-live-preview em {
+  font-family: var(--font-text);
+  font-size: var(--font-em-size);
+  font-weight: var(--font-em-weight);
+  color: var(--font-em-color);
+  -webkit-text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style)
+    var(--font-em-decoration-color) var(--font-em-decoration-width);
+  text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style)
+    var(--font-em-decoration-color) var(--font-em-decoration-width);
+  text-underline-offset: var(--font-em-decoration-offset);
+  font-style: var(--font-em-style);
+}
+
+.markdown-rendered mark,
+.style-settings-container mark,
+.markdown-source-view.is-live-preview .cm-line .cm-highlight,
+.markdown-source-view.is-live-preview mark {
+  font-family: var(--font-text);
+  font-size: var(--font-highlight-size);
+  font-weight: var(--font-highlight-weight);
+  color: var(--font-highlight-color) !important;
+  -webkit-text-decoration: var(--font-highlight-decoration-line)
+    var(--font-highlight-decoration-style) var(--font-highlight-decoration-color)
+    var(--font-highlight-decoration-width);
+  text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style)
+    var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
+  text-underline-offset: var(--font-highlight-decoration-offset);
+  background-color: var(--font-highlight-bg-color);
+  font-style: var(--font-highlight-style);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.markdown-rendered del,
+.style-settings-container del,
+.markdown-source-view.is-live-preview .cm-line .cm-strikethrough,
+.markdown-source-view.is-live-preview del {
+  font-family: var(--font-text);
+  font-size: var(--font-strikethrough-size);
+  font-weight: var(--font-strikethrough-weight);
+  color: var(--font-strikethrough-color);
+  -webkit-text-decoration: var(--font-strikethrough-decoration-line)
+    var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color)
+    var(--font-strikethrough-decoration-width);
+  text-decoration: var(--font-strikethrough-decoration-line)
+    var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color)
+    var(--font-strikethrough-decoration-width);
+  font-style: var(--font-strikethrough-style);
+}
+
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) u {
+  font-family: var(--font-text);
+  font-size: var(--font-underlined-size);
+  font-weight: var(--font-underlined-weight);
+  color: var(--font-underlined-color);
+  -webkit-text-decoration: var(--font-underlined-decoration-line)
+    var(--font-underlined-decoration-style) var(--font-underlined-decoration-color)
+    var(--font-underlined-decoration-width);
+  text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style)
+    var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
+  text-underline-offset: var(--font-underlined-decoration-offset);
+}
+
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview)
+  .inline-title {
+  font-family: var(--font-inline-title);
+  font-size: var(--font-inline-title-size);
+  font-weight: var(--font-inline-title-weight);
+  color: var(--text-strong);
+}
+
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^="cm-list"],
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
+.markdown-rendered .task-list-item:is([data-task="-"]) [class^="cm-list"],
+.style-settings-container .task-list-item:is([data-task="-"]) [class^="cm-list"],
+.markdown-rendered .task-list-item:is([data-task="-"]),
+.style-settings-container .task-list-item:is([data-task="-"]) {
+  color: var(--checklist-delete-decoration-color);
+}
+
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox,
+.style-settings-container .task-list-item > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item > .task-list-item-checkbox,
+.style-settings-container .task-list-item > .task-list-item-checkbox {
+  transition: all 0.3s ease-in-out;
+}
+body.circle-checkbox
+  .markdown-source-view.is-live-preview
+  .HyperMD-task-line
+  .task-list-item-checkbox,
+body.circle-checkbox .markdown-rendered .task-list-item > p .task-list-item-checkbox,
+body.circle-checkbox .style-settings-container .task-list-item > p .task-list-item-checkbox,
+body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkbox,
+body.circle-checkbox .style-settings-container .task-list-item > .task-list-item-checkbox {
+  border-radius: 50%;
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked {
+  border-color: var(--color-done);
+  background-color: var(--color-done);
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked:hover,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked:hover {
+  border-color: var(--checkbox-border-color);
+  background-color: var(--checkbox-color-hover);
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:after,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:after,
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked:after,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:after,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked:after {
+  -webkit-mask-position: center center;
+  mask-position: center center;
+}
+
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line[data-task=" "]
+  .task-list-item-checkbox:hover,
+.markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover,
+.style-settings-container .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover,
+.markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover,
+.style-settings-container .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
+  border-color: var(--color-done);
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox {
+  border-color: var(--color-error);
+  background-color: var(--color-error);
+}
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line[data-task="-"]
+  .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox {
+  border-color: var(--color-warning);
+  background-color: var(--color-warning);
+}
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line[data-task="!"]
+  .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox {
+  border-color: var(--color-ques);
+  background-color: var(--color-ques);
+}
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line[data-task="?"]
+  .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 2 11 19" fill="none"><path d="M9.09009 9.00003 C9.32519 8.33169 9.78924 7.76813 10.4 7.40916 C11.0108 7.05019 12.079 6.94542 12.7773 7.06519C13.9093 7.25935 14.9767 8.25497 14.9748 9.49073C14.9748 11.9908 12 11.2974 12 14 M12 17 H 12.01" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
+}
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line:is([data-task="i"], [data-task="I"])
+  .task-list-item-checkbox,
+.markdown-rendered
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > p
+  .task-list-item-checkbox,
+.style-settings-container
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > p
+  .task-list-item-checkbox,
+.markdown-rendered .task-list-item:is([data-task="i"], [data-task="I"]) > .task-list-item-checkbox,
+.style-settings-container
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > .task-list-item-checkbox {
+  border-color: var(--color-info);
+  background-color: var(--color-info);
+}
+.markdown-source-view.is-live-preview
+  .HyperMD-task-line:is([data-task="i"], [data-task="I"])
+  .task-list-item-checkbox:after,
+.markdown-rendered
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > p
+  .task-list-item-checkbox:after,
+.style-settings-container
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > p
+  .task-list-item-checkbox:after,
+.markdown-rendered
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > .task-list-item-checkbox:after,
+.style-settings-container
+  .task-list-item:is([data-task="i"], [data-task="I"])
+  > .task-list-item-checkbox:after {
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
+}
+
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) .callout {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 4px;
+  mix-blend-mode: normal;
+}
+
+body.callout-dogs-ear
+  :is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview)
+  .callout:after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: var(--callout-dogs-ear-size);
+  height: var(--callout-dogs-ear-size);
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--callout-color), 0.2) 50%,
+    var(--background-primary) 50%
+  );
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+body.callout-dogs-ear
+  :is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview)
+  .callout:hover:after {
+  width: 0;
+  height: 0;
+}
+
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line {
+  background-color: var(--quote-bg-color);
+}
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line::before,
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line .cm-blockquote-border::before {
+  border-left: 4px solid var(--text-muted);
+}
+
+.markdown-rendered blockquote,
+.style-settings-container blockquote {
+  margin: 16px auto;
+  padding: 20px 30px;
+  background-color: var(--quote-bg-color);
+  border-radius: 4px;
+  color: var(--text-muted);
+  border-left: 4px solid var(--text-muted);
+  transition: all 0.2s ease;
+  position: relative;
+}
+.markdown-rendered blockquote > p:first-child::before,
+.style-settings-container blockquote > p:first-child::before {
+  content: "”";
+  font-family: "Arial Black", sans-serif;
+  position: absolute;
+  display: block;
+  top: -20px;
+  right: 10px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--text-muted);
+  opacity: 0.2;
+}
+.markdown-rendered blockquote:hover,
+.style-settings-container blockquote:hover {
+  border-left-color: var(--text-normal);
+}
+.markdown-rendered blockquote p,
+.style-settings-container blockquote p {
+  margin-top: 0;
+}
+
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) .mermaid {
+  background-color: var(--background-primary);
+  overflow-x: auto;
+}
+
+body.embed-alt
+  :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  .media-embed:after {
+  content: attr(alt);
+  font-family: var(--font-default);
+  font-size: 0.8em;
+  font-weight: 100;
+  color: var(--text-muted);
+  display: block;
+  width: 100%;
+  text-align: end;
+  margin-top: 0.5em;
+}
+body.embed-alt.embed-alt-left
+  :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  .media-embed:after {
+  text-align: start;
+}
+body.embed-alt.embed-alt-middle
+  :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  .media-embed:after {
+  text-align: center;
+}
+
+.markdown-source-view.is-live-preview .cm-line .cm-inline-code,
+.markdown-source-view.is-live-preview .HyperMD-codeblock,
+.markdown-rendered code,
+.style-settings-container code {
+  font-family: var(--font-monospace);
+  font-size: var(--font-monospace-size);
+  font-weight: var(--font-monospace-weight);
+  color: var(--text-muted);
+  background-color: var(--inline-code-bg-color);
+}
+
+.markdown-rendered pre,
+.style-settings-container pre {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--code-bg-color);
+  position: relative;
+  margin: 16px auto;
+}
+.markdown-rendered pre[class^="language-"],
+.style-settings-container pre[class^="language-"] {
+  padding: 20px 30px;
+}
+.markdown-rendered pre[class^="language-"]:before,
+.style-settings-container pre[class^="language-"]:before {
+  font-family: Lato sans-serif;
+  font-size: 0.9em;
+  font-weight: 100;
+  color: var(--text-muted);
+  position: absolute;
+  right: 0.8em;
+  height: auto;
+  bottom: 0.8em;
+  width: auto;
+}
+.markdown-rendered pre.language-markup:before,
+.style-settings-container pre.language-markup:before {
+  content: "markup";
+}
+.markdown-rendered pre.language-html:before,
+.style-settings-container pre.language-html:before {
+  content: "html";
+}
+.markdown-rendered pre.language-xml:before,
+.style-settings-container pre.language-xml:before {
+  content: "xml";
+}
+.markdown-rendered pre.language-svg:before,
+.style-settings-container pre.language-svg:before {
+  content: "svg";
+}
+.markdown-rendered pre.language-mathml:before,
+.style-settings-container pre.language-mathml:before {
+  content: "mathml";
+}
+.markdown-rendered pre.language-ssml:before,
+.style-settings-container pre.language-ssml:before {
+  content: "ssml";
+}
+.markdown-rendered pre.language-atom:before,
+.style-settings-container pre.language-atom:before {
+  content: "atom";
+}
+.markdown-rendered pre.language-rss:before,
+.style-settings-container pre.language-rss:before {
+  content: "rss";
+}
+.markdown-rendered pre.language-css:before,
+.style-settings-container pre.language-css:before {
+  content: "css";
+}
+.markdown-rendered pre.language-like:before,
+.style-settings-container pre.language-like:before {
+  content: "like";
+}
+.markdown-rendered pre.language-javascript:before,
+.style-settings-container pre.language-javascript:before {
+  content: "javascript";
+}
+.markdown-rendered pre.language-js:before,
+.style-settings-container pre.language-js:before {
+  content: "js";
+}
+.markdown-rendered pre.language-abap:before,
+.style-settings-container pre.language-abap:before {
+  content: "abap";
+}
+.markdown-rendered pre.language-abnf:before,
+.style-settings-container pre.language-abnf:before {
+  content: "abnf";
+}
+.markdown-rendered pre.language-actionscript:before,
+.style-settings-container pre.language-actionscript:before {
+  content: "actionscript";
+}
+.markdown-rendered pre.language-ada:before,
+.style-settings-container pre.language-ada:before {
+  content: "ada";
+}
+.markdown-rendered pre.language-agda:before,
+.style-settings-container pre.language-agda:before {
+  content: "agda";
+}
+.markdown-rendered pre.language-al:before,
+.style-settings-container pre.language-al:before {
+  content: "al";
+}
+.markdown-rendered pre.language-antlr4:before,
+.style-settings-container pre.language-antlr4:before {
+  content: "antlr4";
+}
+.markdown-rendered pre.language-g4:before,
+.style-settings-container pre.language-g4:before {
+  content: "g4";
+}
+.markdown-rendered pre.language-apacheconf:before,
+.style-settings-container pre.language-apacheconf:before {
+  content: "apacheconf";
+}
+.markdown-rendered pre.language-apex:before,
+.style-settings-container pre.language-apex:before {
+  content: "apex";
+}
+.markdown-rendered pre.language-apl:before,
+.style-settings-container pre.language-apl:before {
+  content: "apl";
+}
+.markdown-rendered pre.language-applescript:before,
+.style-settings-container pre.language-applescript:before {
+  content: "applescript";
+}
+.markdown-rendered pre.language-aql:before,
+.style-settings-container pre.language-aql:before {
+  content: "aql";
+}
+.markdown-rendered pre.language-arduino:before,
+.style-settings-container pre.language-arduino:before {
+  content: "arduino";
+}
+.markdown-rendered pre.language-ino:before,
+.style-settings-container pre.language-ino:before {
+  content: "ino";
+}
+.markdown-rendered pre.language-arff:before,
+.style-settings-container pre.language-arff:before {
+  content: "arff";
+}
+.markdown-rendered pre.language-armasm:before,
+.style-settings-container pre.language-armasm:before {
+  content: "armasm";
+}
+.markdown-rendered pre.language-arm-asm:before,
+.style-settings-container pre.language-arm-asm:before {
+  content: "arm-asm";
+}
+.markdown-rendered pre.language-arturo:before,
+.style-settings-container pre.language-arturo:before {
+  content: "arturo";
+}
+.markdown-rendered pre.language-art:before,
+.style-settings-container pre.language-art:before {
+  content: "art";
+}
+.markdown-rendered pre.language-asciidoc:before,
+.style-settings-container pre.language-asciidoc:before {
+  content: "asciidoc";
+}
+.markdown-rendered pre.language-adoc:before,
+.style-settings-container pre.language-adoc:before {
+  content: "adoc";
+}
+.markdown-rendered pre.language-aspnet:before,
+.style-settings-container pre.language-aspnet:before {
+  content: "aspnet";
+}
+.markdown-rendered pre.language-asm6502:before,
+.style-settings-container pre.language-asm6502:before {
+  content: "asm6502";
+}
+.markdown-rendered pre.language-asmatmel:before,
+.style-settings-container pre.language-asmatmel:before {
+  content: "asmatmel";
+}
+.markdown-rendered pre.language-autohotkey:before,
+.style-settings-container pre.language-autohotkey:before {
+  content: "autohotkey";
+}
+.markdown-rendered pre.language-autoit:before,
+.style-settings-container pre.language-autoit:before {
+  content: "autoit";
+}
+.markdown-rendered pre.language-avisynth:before,
+.style-settings-container pre.language-avisynth:before {
+  content: "avisynth";
+}
+.markdown-rendered pre.language-avs:before,
+.style-settings-container pre.language-avs:before {
+  content: "avs";
+}
+.markdown-rendered pre.language-avro-idl:before,
+.style-settings-container pre.language-avro-idl:before {
+  content: "avro-idl";
+}
+.markdown-rendered pre.language-avdl:before,
+.style-settings-container pre.language-avdl:before {
+  content: "avdl";
+}
+.markdown-rendered pre.language-awk:before,
+.style-settings-container pre.language-awk:before {
+  content: "awk";
+}
+.markdown-rendered pre.language-gawk:before,
+.style-settings-container pre.language-gawk:before {
+  content: "gawk";
+}
+.markdown-rendered pre.language-bash:before,
+.style-settings-container pre.language-bash:before {
+  content: "bash";
+}
+.markdown-rendered pre.language-sh:before,
+.style-settings-container pre.language-sh:before {
+  content: "sh";
+}
+.markdown-rendered pre.language-shell:before,
+.style-settings-container pre.language-shell:before {
+  content: "shell";
+}
+.markdown-rendered pre.language-basic:before,
+.style-settings-container pre.language-basic:before {
+  content: "basic";
+}
+.markdown-rendered pre.language-batch:before,
+.style-settings-container pre.language-batch:before {
+  content: "batch";
+}
+.markdown-rendered pre.language-bbcode:before,
+.style-settings-container pre.language-bbcode:before {
+  content: "bbcode";
+}
+.markdown-rendered pre.language-shortcode:before,
+.style-settings-container pre.language-shortcode:before {
+  content: "shortcode";
+}
+.markdown-rendered pre.language-bbj:before,
+.style-settings-container pre.language-bbj:before {
+  content: "bbj";
+}
+.markdown-rendered pre.language-bicep:before,
+.style-settings-container pre.language-bicep:before {
+  content: "bicep";
+}
+.markdown-rendered pre.language-birb:before,
+.style-settings-container pre.language-birb:before {
+  content: "birb";
+}
+.markdown-rendered pre.language-bison:before,
+.style-settings-container pre.language-bison:before {
+  content: "bison";
+}
+.markdown-rendered pre.language-bnf:before,
+.style-settings-container pre.language-bnf:before {
+  content: "bnf";
+}
+.markdown-rendered pre.language-rbnf:before,
+.style-settings-container pre.language-rbnf:before {
+  content: "rbnf";
+}
+.markdown-rendered pre.language-bqn:before,
+.style-settings-container pre.language-bqn:before {
+  content: "bqn";
+}
+.markdown-rendered pre.language-brainfuck:before,
+.style-settings-container pre.language-brainfuck:before {
+  content: "brainfuck";
+}
+.markdown-rendered pre.language-brightscript:before,
+.style-settings-container pre.language-brightscript:before {
+  content: "brightscript";
+}
+.markdown-rendered pre.language-bro:before,
+.style-settings-container pre.language-bro:before {
+  content: "bro";
+}
+.markdown-rendered pre.language-bsl:before,
+.style-settings-container pre.language-bsl:before {
+  content: "bsl";
+}
+.markdown-rendered pre.language-oscript:before,
+.style-settings-container pre.language-oscript:before {
+  content: "oscript";
+}
+.markdown-rendered pre.language-c:before,
+.style-settings-container pre.language-c:before {
+  content: "c";
+}
+.markdown-rendered pre.language-csharp:before,
+.style-settings-container pre.language-csharp:before {
+  content: "csharp";
+}
+.markdown-rendered pre.language-cs:before,
+.style-settings-container pre.language-cs:before {
+  content: "cs";
+}
+.markdown-rendered pre.language-dotnet:before,
+.style-settings-container pre.language-dotnet:before {
+  content: "dotnet";
+}
+.markdown-rendered pre.language-cpp:before,
+.style-settings-container pre.language-cpp:before {
+  content: "cpp";
+}
+.markdown-rendered pre.language-cfscript:before,
+.style-settings-container pre.language-cfscript:before {
+  content: "cfscript";
+}
+.markdown-rendered pre.language-cfc:before,
+.style-settings-container pre.language-cfc:before {
+  content: "cfc";
+}
+.markdown-rendered pre.language-chaiscript:before,
+.style-settings-container pre.language-chaiscript:before {
+  content: "chaiscript";
+}
+.markdown-rendered pre.language-cil:before,
+.style-settings-container pre.language-cil:before {
+  content: "cil";
+}
+.markdown-rendered pre.language-cilkc:before,
+.style-settings-container pre.language-cilkc:before {
+  content: "cilkc";
+}
+.markdown-rendered pre.language-cilk-c:before,
+.style-settings-container pre.language-cilk-c:before {
+  content: "cilk-c";
+}
+.markdown-rendered pre.language-cilkcpp:before,
+.style-settings-container pre.language-cilkcpp:before {
+  content: "cilkcpp";
+}
+.markdown-rendered pre.language-cilk:before,
+.style-settings-container pre.language-cilk:before {
+  content: "cilk";
+}
+.markdown-rendered pre.language-clojure:before,
+.style-settings-container pre.language-clojure:before {
+  content: "clojure";
+}
+.markdown-rendered pre.language-cmake:before,
+.style-settings-container pre.language-cmake:before {
+  content: "cmake";
+}
+.markdown-rendered pre.language-cobol:before,
+.style-settings-container pre.language-cobol:before {
+  content: "cobol";
+}
+.markdown-rendered pre.language-coffeescript:before,
+.style-settings-container pre.language-coffeescript:before {
+  content: "coffeescript";
+}
+.markdown-rendered pre.language-coffee:before,
+.style-settings-container pre.language-coffee:before {
+  content: "coffee";
+}
+.markdown-rendered pre.language-concurnas:before,
+.style-settings-container pre.language-concurnas:before {
+  content: "concurnas";
+}
+.markdown-rendered pre.language-conc:before,
+.style-settings-container pre.language-conc:before {
+  content: "conc";
+}
+.markdown-rendered pre.language-Security:before,
+.style-settings-container pre.language-Security:before {
+  content: "Security";
+}
+.markdown-rendered pre.language-cooklang:before,
+.style-settings-container pre.language-cooklang:before {
+  content: "cooklang";
+}
+.markdown-rendered pre.language-coq:before,
+.style-settings-container pre.language-coq:before {
+  content: "coq";
+}
+.markdown-rendered pre.language-crystal:before,
+.style-settings-container pre.language-crystal:before {
+  content: "crystal";
+}
+.markdown-rendered pre.language-css-extras:before,
+.style-settings-container pre.language-css-extras:before {
+  content: "css-extras";
+}
+.markdown-rendered pre.language-csv:before,
+.style-settings-container pre.language-csv:before {
+  content: "csv";
+}
+.markdown-rendered pre.language-cue:before,
+.style-settings-container pre.language-cue:before {
+  content: "cue";
+}
+.markdown-rendered pre.language-cypher:before,
+.style-settings-container pre.language-cypher:before {
+  content: "cypher";
+}
+.markdown-rendered pre.language-d:before,
+.style-settings-container pre.language-d:before {
+  content: "d";
+}
+.markdown-rendered pre.language-dart:before,
+.style-settings-container pre.language-dart:before {
+  content: "dart";
+}
+.markdown-rendered pre.language-dataweave:before,
+.style-settings-container pre.language-dataweave:before {
+  content: "dataweave";
+}
+.markdown-rendered pre.language-dax:before,
+.style-settings-container pre.language-dax:before {
+  content: "dax";
+}
+.markdown-rendered pre.language-dhall:before,
+.style-settings-container pre.language-dhall:before {
+  content: "dhall";
+}
+.markdown-rendered pre.language-diff:before,
+.style-settings-container pre.language-diff:before {
+  content: "diff";
+}
+.markdown-rendered pre.language-django:before,
+.style-settings-container pre.language-django:before {
+  content: "django";
+}
+.markdown-rendered pre.language-jinja2:before,
+.style-settings-container pre.language-jinja2:before {
+  content: "jinja2";
+}
+.markdown-rendered pre.language-dns-zone-file:before,
+.style-settings-container pre.language-dns-zone-file:before {
+  content: "dns-zone-file";
+}
+.markdown-rendered pre.language-dns-zone:before,
+.style-settings-container pre.language-dns-zone:before {
+  content: "dns-zone";
+}
+.markdown-rendered pre.language-docker:before,
+.style-settings-container pre.language-docker:before {
+  content: "docker";
+}
+.markdown-rendered pre.language-dockerfile:before,
+.style-settings-container pre.language-dockerfile:before {
+  content: "dockerfile";
+}
+.markdown-rendered pre.language-dot:before,
+.style-settings-container pre.language-dot:before {
+  content: "dot";
+}
+.markdown-rendered pre.language-gv:before,
+.style-settings-container pre.language-gv:before {
+  content: "gv";
+}
+.markdown-rendered pre.language-ebnf:before,
+.style-settings-container pre.language-ebnf:before {
+  content: "ebnf";
+}
+.markdown-rendered pre.language-editorconfig:before,
+.style-settings-container pre.language-editorconfig:before {
+  content: "editorconfig";
+}
+.markdown-rendered pre.language-eiffel:before,
+.style-settings-container pre.language-eiffel:before {
+  content: "eiffel";
+}
+.markdown-rendered pre.language-ejs:before,
+.style-settings-container pre.language-ejs:before {
+  content: "ejs";
+}
+.markdown-rendered pre.language-eta:before,
+.style-settings-container pre.language-eta:before {
+  content: "eta";
+}
+.markdown-rendered pre.language-elixir:before,
+.style-settings-container pre.language-elixir:before {
+  content: "elixir";
+}
+.markdown-rendered pre.language-elm:before,
+.style-settings-container pre.language-elm:before {
+  content: "elm";
+}
+.markdown-rendered pre.language-etlua:before,
+.style-settings-container pre.language-etlua:before {
+  content: "etlua";
+}
+.markdown-rendered pre.language-erb:before,
+.style-settings-container pre.language-erb:before {
+  content: "erb";
+}
+.markdown-rendered pre.language-erlang:before,
+.style-settings-container pre.language-erlang:before {
+  content: "erlang";
+}
+.markdown-rendered pre.language-excel-formula:before,
+.style-settings-container pre.language-excel-formula:before {
+  content: "excel-formula";
+}
+.markdown-rendered pre.language-xlsx:before,
+.style-settings-container pre.language-xlsx:before {
+  content: "xlsx";
+}
+.markdown-rendered pre.language-xls:before,
+.style-settings-container pre.language-xls:before {
+  content: "xls";
+}
+.markdown-rendered pre.language-fsharp:before,
+.style-settings-container pre.language-fsharp:before {
+  content: "fsharp";
+}
+.markdown-rendered pre.language-factor:before,
+.style-settings-container pre.language-factor:before {
+  content: "factor";
+}
+.markdown-rendered pre.language-false:before,
+.style-settings-container pre.language-false:before {
+  content: "false";
+}
+.markdown-rendered pre.language-firestore-security-rules:before,
+.style-settings-container pre.language-firestore-security-rules:before {
+  content: "firestore-security-rules";
+}
+.markdown-rendered pre.language-flow:before,
+.style-settings-container pre.language-flow:before {
+  content: "flow";
+}
+.markdown-rendered pre.language-fortran:before,
+.style-settings-container pre.language-fortran:before {
+  content: "fortran";
+}
+.markdown-rendered pre.language-ftl:before,
+.style-settings-container pre.language-ftl:before {
+  content: "ftl";
+}
+.markdown-rendered pre.language-gml:before,
+.style-settings-container pre.language-gml:before {
+  content: "gml";
+}
+.markdown-rendered pre.language-gamemakerlanguage:before,
+.style-settings-container pre.language-gamemakerlanguage:before {
+  content: "gamemakerlanguage";
+}
+.markdown-rendered pre.language-gap:before,
+.style-settings-container pre.language-gap:before {
+  content: "gap";
+}
+.markdown-rendered pre.language-code:before,
+.style-settings-container pre.language-code:before {
+  content: "code";
+}
+.markdown-rendered pre.language-gdscript:before,
+.style-settings-container pre.language-gdscript:before {
+  content: "gdscript";
+}
+.markdown-rendered pre.language-gedcom:before,
+.style-settings-container pre.language-gedcom:before {
+  content: "gedcom";
+}
+.markdown-rendered pre.language-gettext:before,
+.style-settings-container pre.language-gettext:before {
+  content: "gettext";
+}
+.markdown-rendered pre.language-po:before,
+.style-settings-container pre.language-po:before {
+  content: "po";
+}
+.markdown-rendered pre.language-gherkin:before,
+.style-settings-container pre.language-gherkin:before {
+  content: "gherkin";
+}
+.markdown-rendered pre.language-git:before,
+.style-settings-container pre.language-git:before {
+  content: "git";
+}
+.markdown-rendered pre.language-glsl:before,
+.style-settings-container pre.language-glsl:before {
+  content: "glsl";
+}
+.markdown-rendered pre.language-gn:before,
+.style-settings-container pre.language-gn:before {
+  content: "gn";
+}
+.markdown-rendered pre.language-gni:before,
+.style-settings-container pre.language-gni:before {
+  content: "gni";
+}
+.markdown-rendered pre.language-linker-script:before,
+.style-settings-container pre.language-linker-script:before {
+  content: "linker-script";
+}
+.markdown-rendered pre.language-ld:before,
+.style-settings-container pre.language-ld:before {
+  content: "ld";
+}
+.markdown-rendered pre.language-go:before,
+.style-settings-container pre.language-go:before {
+  content: "go";
+}
+.markdown-rendered pre.language-go-module:before,
+.style-settings-container pre.language-go-module:before {
+  content: "go-module";
+}
+.markdown-rendered pre.language-go-mod:before,
+.style-settings-container pre.language-go-mod:before {
+  content: "go-mod";
+}
+.markdown-rendered pre.language-gradle:before,
+.style-settings-container pre.language-gradle:before {
+  content: "gradle";
+}
+.markdown-rendered pre.language-graphql:before,
+.style-settings-container pre.language-graphql:before {
+  content: "graphql";
+}
+.markdown-rendered pre.language-groovy:before,
+.style-settings-container pre.language-groovy:before {
+  content: "groovy";
+}
+.markdown-rendered pre.language-haml:before,
+.style-settings-container pre.language-haml:before {
+  content: "haml";
+}
+.markdown-rendered pre.language-handlebars:before,
+.style-settings-container pre.language-handlebars:before {
+  content: "handlebars";
+}
+.markdown-rendered pre.language-hbs:before,
+.style-settings-container pre.language-hbs:before {
+  content: "hbs";
+}
+.markdown-rendered pre.language-mustache:before,
+.style-settings-container pre.language-mustache:before {
+  content: "mustache";
+}
+.markdown-rendered pre.language-haskell:before,
+.style-settings-container pre.language-haskell:before {
+  content: "haskell";
+}
+.markdown-rendered pre.language-hs:before,
+.style-settings-container pre.language-hs:before {
+  content: "hs";
+}
+.markdown-rendered pre.language-haxe:before,
+.style-settings-container pre.language-haxe:before {
+  content: "haxe";
+}
+.markdown-rendered pre.language-hcl:before,
+.style-settings-container pre.language-hcl:before {
+  content: "hcl";
+}
+.markdown-rendered pre.language-hlsl:before,
+.style-settings-container pre.language-hlsl:before {
+  content: "hlsl";
+}
+.markdown-rendered pre.language-hoon:before,
+.style-settings-container pre.language-hoon:before {
+  content: "hoon";
+}
+.markdown-rendered pre.language-http:before,
+.style-settings-container pre.language-http:before {
+  content: "http";
+}
+.markdown-rendered pre.language-Key:before,
+.style-settings-container pre.language-Key:before {
+  content: "Key";
+}
+.markdown-rendered pre.language-Transport:before,
+.style-settings-container pre.language-Transport:before {
+  content: "Transport";
+}
+.markdown-rendered pre.language-ichigojam:before,
+.style-settings-container pre.language-ichigojam:before {
+  content: "ichigojam";
+}
+.markdown-rendered pre.language-icon:before,
+.style-settings-container pre.language-icon:before {
+  content: "icon";
+}
+.markdown-rendered pre.language-icu-message-format:before,
+.style-settings-container pre.language-icu-message-format:before {
+  content: "icu-message-format";
+}
+.markdown-rendered pre.language-idris:before,
+.style-settings-container pre.language-idris:before {
+  content: "idris";
+}
+.markdown-rendered pre.language-idr:before,
+.style-settings-container pre.language-idr:before {
+  content: "idr";
+}
+.markdown-rendered pre.language-ignore:before,
+.style-settings-container pre.language-ignore:before {
+  content: "ignore";
+}
+.markdown-rendered pre.language-gitignore:before,
+.style-settings-container pre.language-gitignore:before {
+  content: "gitignore";
+}
+.markdown-rendered pre.language-hgignore:before,
+.style-settings-container pre.language-hgignore:before {
+  content: "hgignore";
+}
+.markdown-rendered pre.language-npmignore:before,
+.style-settings-container pre.language-npmignore:before {
+  content: "npmignore";
+}
+.markdown-rendered pre.language-inform7:before,
+.style-settings-container pre.language-inform7:before {
+  content: "inform7";
+}
+.markdown-rendered pre.language-ini:before,
+.style-settings-container pre.language-ini:before {
+  content: "ini";
+}
+.markdown-rendered pre.language-io:before,
+.style-settings-container pre.language-io:before {
+  content: "io";
+}
+.markdown-rendered pre.language-j:before,
+.style-settings-container pre.language-j:before {
+  content: "j";
+}
+.markdown-rendered pre.language-java:before,
+.style-settings-container pre.language-java:before {
+  content: "java";
+}
+.markdown-rendered pre.language-javadoc:before,
+.style-settings-container pre.language-javadoc:before {
+  content: "javadoc";
+}
+.markdown-rendered pre.language-like:before,
+.style-settings-container pre.language-like:before {
+  content: "like";
+}
+.markdown-rendered pre.language-javastacktrace:before,
+.style-settings-container pre.language-javastacktrace:before {
+  content: "javastacktrace";
+}
+.markdown-rendered pre.language-jexl:before,
+.style-settings-container pre.language-jexl:before {
+  content: "jexl";
+}
+.markdown-rendered pre.language-jolie:before,
+.style-settings-container pre.language-jolie:before {
+  content: "jolie";
+}
+.markdown-rendered pre.language-jq:before,
+.style-settings-container pre.language-jq:before {
+  content: "jq";
+}
+.markdown-rendered pre.language-jsdoc:before,
+.style-settings-container pre.language-jsdoc:before {
+  content: "jsdoc";
+}
+.markdown-rendered pre.language-js-extras:before,
+.style-settings-container pre.language-js-extras:before {
+  content: "js-extras";
+}
+.markdown-rendered pre.language-json:before,
+.style-settings-container pre.language-json:before {
+  content: "json";
+}
+.markdown-rendered pre.language-webmanifest:before,
+.style-settings-container pre.language-webmanifest:before {
+  content: "webmanifest";
+}
+.markdown-rendered pre.language-json5:before,
+.style-settings-container pre.language-json5:before {
+  content: "json5";
+}
+.markdown-rendered pre.language-jsonp:before,
+.style-settings-container pre.language-jsonp:before {
+  content: "jsonp";
+}
+.markdown-rendered pre.language-jsstacktrace:before,
+.style-settings-container pre.language-jsstacktrace:before {
+  content: "jsstacktrace";
+}
+.markdown-rendered pre.language-js-templates:before,
+.style-settings-container pre.language-js-templates:before {
+  content: "js-templates";
+}
+.markdown-rendered pre.language-julia:before,
+.style-settings-container pre.language-julia:before {
+  content: "julia";
+}
+.markdown-rendered pre.language-keepalived:before,
+.style-settings-container pre.language-keepalived:before {
+  content: "keepalived";
+}
+.markdown-rendered pre.language-keyman:before,
+.style-settings-container pre.language-keyman:before {
+  content: "keyman";
+}
+.markdown-rendered pre.language-kotlin:before,
+.style-settings-container pre.language-kotlin:before {
+  content: "kotlin";
+}
+.markdown-rendered pre.language-kt:before,
+.style-settings-container pre.language-kt:before {
+  content: "kt";
+}
+.markdown-rendered pre.language-kts:before,
+.style-settings-container pre.language-kts:before {
+  content: "kts";
+}
+.markdown-rendered pre.language-kumir:before,
+.style-settings-container pre.language-kumir:before {
+  content: "kumir";
+}
+.markdown-rendered pre.language-kum:before,
+.style-settings-container pre.language-kum:before {
+  content: "kum";
+}
+.markdown-rendered pre.language-kusto:before,
+.style-settings-container pre.language-kusto:before {
+  content: "kusto";
+}
+.markdown-rendered pre.language-latex:before,
+.style-settings-container pre.language-latex:before {
+  content: "latex";
+}
+.markdown-rendered pre.language-tex:before,
+.style-settings-container pre.language-tex:before {
+  content: "tex";
+}
+.markdown-rendered pre.language-context:before,
+.style-settings-container pre.language-context:before {
+  content: "context";
+}
+.markdown-rendered pre.language-latte:before,
+.style-settings-container pre.language-latte:before {
+  content: "latte";
+}
+.markdown-rendered pre.language-less:before,
+.style-settings-container pre.language-less:before {
+  content: "less";
+}
+.markdown-rendered pre.language-lilypond:before,
+.style-settings-container pre.language-lilypond:before {
+  content: "lilypond";
+}
+.markdown-rendered pre.language-ly:before,
+.style-settings-container pre.language-ly:before {
+  content: "ly";
+}
+.markdown-rendered pre.language-liquid:before,
+.style-settings-container pre.language-liquid:before {
+  content: "liquid";
+}
+.markdown-rendered pre.language-lisp:before,
+.style-settings-container pre.language-lisp:before {
+  content: "lisp";
+}
+.markdown-rendered pre.language-emacs:before,
+.style-settings-container pre.language-emacs:before {
+  content: "emacs";
+}
+.markdown-rendered pre.language-elisp:before,
+.style-settings-container pre.language-elisp:before {
+  content: "elisp";
+}
+.markdown-rendered pre.language-emacs-lisp:before,
+.style-settings-container pre.language-emacs-lisp:before {
+  content: "emacs-lisp";
+}
+.markdown-rendered pre.language-livescript:before,
+.style-settings-container pre.language-livescript:before {
+  content: "livescript";
+}
+.markdown-rendered pre.language-llvm:before,
+.style-settings-container pre.language-llvm:before {
+  content: "llvm";
+}
+.markdown-rendered pre.language-log:before,
+.style-settings-container pre.language-log:before {
+  content: "log";
+}
+.markdown-rendered pre.language-lolcode:before,
+.style-settings-container pre.language-lolcode:before {
+  content: "lolcode";
+}
+.markdown-rendered pre.language-lua:before,
+.style-settings-container pre.language-lua:before {
+  content: "lua";
+}
+.markdown-rendered pre.language-magma:before,
+.style-settings-container pre.language-magma:before {
+  content: "magma";
+}
+.markdown-rendered pre.language-makefile:before,
+.style-settings-container pre.language-makefile:before {
+  content: "makefile";
+}
+.markdown-rendered pre.language-markdown:before,
+.style-settings-container pre.language-markdown:before {
+  content: "markdown";
+}
+.markdown-rendered pre.language-md:before,
+.style-settings-container pre.language-md:before {
+  content: "md";
+}
+.markdown-rendered pre.language-markup-templating:before,
+.style-settings-container pre.language-markup-templating:before,
+.markdown-rendered pre mata:before,
+.style-settings-container pre mata:before {
+  content: "markup-templating, mata";
+}
+.markdown-rendered pre.language-matlab:before,
+.style-settings-container pre.language-matlab:before {
+  content: "matlab";
+}
+.markdown-rendered pre.language-maxscript:before,
+.style-settings-container pre.language-maxscript:before {
+  content: "maxscript";
+}
+.markdown-rendered pre.language-mel:before,
+.style-settings-container pre.language-mel:before {
+  content: "mel";
+}
+.markdown-rendered pre.language-mermaid:before,
+.style-settings-container pre.language-mermaid:before {
+  content: "mermaid";
+}
+.markdown-rendered pre.language-metafont:before,
+.style-settings-container pre.language-metafont:before {
+  content: "metafont";
+}
+.markdown-rendered pre.language-mizar:before,
+.style-settings-container pre.language-mizar:before {
+  content: "mizar";
+}
+.markdown-rendered pre.language-mongodb:before,
+.style-settings-container pre.language-mongodb:before {
+  content: "mongodb";
+}
+.markdown-rendered pre.language-monkey:before,
+.style-settings-container pre.language-monkey:before {
+  content: "monkey";
+}
+.markdown-rendered pre.language-moonscript:before,
+.style-settings-container pre.language-moonscript:before {
+  content: "moonscript";
+}
+.markdown-rendered pre.language-moon:before,
+.style-settings-container pre.language-moon:before {
+  content: "moon";
+}
+.markdown-rendered pre.language-n1ql:before,
+.style-settings-container pre.language-n1ql:before {
+  content: "n1ql";
+}
+.markdown-rendered pre.language-n4js:before,
+.style-settings-container pre.language-n4js:before {
+  content: "n4js";
+}
+.markdown-rendered pre.language-n4jsd:before,
+.style-settings-container pre.language-n4jsd:before {
+  content: "n4jsd";
+}
+.markdown-rendered pre.language-nand2tetris-hdl:before,
+.style-settings-container pre.language-nand2tetris-hdl:before {
+  content: "nand2tetris-hdl";
+}
+.markdown-rendered pre.language-naniscript:before,
+.style-settings-container pre.language-naniscript:before {
+  content: "naniscript";
+}
+.markdown-rendered pre.language-nani:before,
+.style-settings-container pre.language-nani:before {
+  content: "nani";
+}
+.markdown-rendered pre.language-nasm:before,
+.style-settings-container pre.language-nasm:before {
+  content: "nasm";
+}
+.markdown-rendered pre.language-neon:before,
+.style-settings-container pre.language-neon:before {
+  content: "neon";
+}
+.markdown-rendered pre.language-nevod:before,
+.style-settings-container pre.language-nevod:before {
+  content: "nevod";
+}
+.markdown-rendered pre.language-nginx:before,
+.style-settings-container pre.language-nginx:before {
+  content: "nginx";
+}
+.markdown-rendered pre.language-nim:before,
+.style-settings-container pre.language-nim:before {
+  content: "nim";
+}
+.markdown-rendered pre.language-nix:before,
+.style-settings-container pre.language-nix:before {
+  content: "nix";
+}
+.markdown-rendered pre.language-nsis:before,
+.style-settings-container pre.language-nsis:before {
+  content: "nsis";
+}
+.markdown-rendered pre.language-C:before,
+.style-settings-container pre.language-C:before {
+  content: "C";
+}
+.markdown-rendered pre.language-ocaml:before,
+.style-settings-container pre.language-ocaml:before {
+  content: "ocaml";
+}
+.markdown-rendered pre.language-odin:before,
+.style-settings-container pre.language-odin:before {
+  content: "odin";
+}
+.markdown-rendered pre.language-opencl:before,
+.style-settings-container pre.language-opencl:before {
+  content: "opencl";
+}
+.markdown-rendered pre.language-openqasm:before,
+.style-settings-container pre.language-openqasm:before {
+  content: "openqasm";
+}
+.markdown-rendered pre.language-qasm:before,
+.style-settings-container pre.language-qasm:before {
+  content: "qasm";
+}
+.markdown-rendered pre.language-oz:before,
+.style-settings-container pre.language-oz:before {
+  content: "oz";
+}
+.markdown-rendered pre.language-parigp:before,
+.style-settings-container pre.language-parigp:before {
+  content: "parigp";
+}
+.markdown-rendered pre.language-parser:before,
+.style-settings-container pre.language-parser:before {
+  content: "parser";
+}
+.markdown-rendered pre.language-pascal:before,
+.style-settings-container pre.language-pascal:before {
+  content: "pascal";
+}
+.markdown-rendered pre.language-objectpascal:before,
+.style-settings-container pre.language-objectpascal:before {
+  content: "objectpascal";
+}
+.markdown-rendered pre.language-pascaligo:before,
+.style-settings-container pre.language-pascaligo:before {
+  content: "pascaligo";
+}
+.markdown-rendered pre.language-psl:before,
+.style-settings-container pre.language-psl:before {
+  content: "psl";
+}
+.markdown-rendered pre.language-Axis:before,
+.style-settings-container pre.language-Axis:before {
+  content: "Axis";
+}
+.markdown-rendered pre.language-peoplecode:before,
+.style-settings-container pre.language-peoplecode:before {
+  content: "peoplecode";
+}
+.markdown-rendered pre.language-pcode:before,
+.style-settings-container pre.language-pcode:before {
+  content: "pcode";
+}
+.markdown-rendered pre.language-perl:before,
+.style-settings-container pre.language-perl:before {
+  content: "perl";
+}
+.markdown-rendered pre.language-php:before,
+.style-settings-container pre.language-php:before {
+  content: "php";
+}
+.markdown-rendered pre.language-phpdoc:before,
+.style-settings-container pre.language-phpdoc:before {
+  content: "phpdoc";
+}
+.markdown-rendered pre.language-php-extras:before,
+.style-settings-container pre.language-php-extras:before {
+  content: "php-extras";
+}
+.markdown-rendered pre.language-plant-uml:before,
+.style-settings-container pre.language-plant-uml:before {
+  content: "plant-uml";
+}
+.markdown-rendered pre.language-plantuml:before,
+.style-settings-container pre.language-plantuml:before {
+  content: "plantuml";
+}
+.markdown-rendered pre.language-plsql:before,
+.style-settings-container pre.language-plsql:before {
+  content: "plsql";
+}
+.markdown-rendered pre.language-powerquery:before,
+.style-settings-container pre.language-powerquery:before {
+  content: "powerquery";
+}
+.markdown-rendered pre.language-pq:before,
+.style-settings-container pre.language-pq:before {
+  content: "pq";
+}
+.markdown-rendered pre.language-mscript:before,
+.style-settings-container pre.language-mscript:before {
+  content: "mscript";
+}
+.markdown-rendered pre.language-powershell:before,
+.style-settings-container pre.language-powershell:before {
+  content: "powershell";
+}
+.markdown-rendered pre.language-processing:before,
+.style-settings-container pre.language-processing:before {
+  content: "processing";
+}
+.markdown-rendered pre.language-prolog:before,
+.style-settings-container pre.language-prolog:before {
+  content: "prolog";
+}
+.markdown-rendered pre.language-promql:before,
+.style-settings-container pre.language-promql:before {
+  content: "promql";
+}
+.markdown-rendered pre.language-properties:before,
+.style-settings-container pre.language-properties:before {
+  content: "properties";
+}
+.markdown-rendered pre.language-protobuf:before,
+.style-settings-container pre.language-protobuf:before {
+  content: "protobuf";
+}
+.markdown-rendered pre.language-pug:before,
+.style-settings-container pre.language-pug:before {
+  content: "pug";
+}
+.markdown-rendered pre.language-puppet:before,
+.style-settings-container pre.language-puppet:before {
+  content: "puppet";
+}
+.markdown-rendered pre.language-pure:before,
+.style-settings-container pre.language-pure:before {
+  content: "pure";
+}
+.markdown-rendered pre.language-purebasic:before,
+.style-settings-container pre.language-purebasic:before {
+  content: "purebasic";
+}
+.markdown-rendered pre.language-pbfasm:before,
+.style-settings-container pre.language-pbfasm:before {
+  content: "pbfasm";
+}
+.markdown-rendered pre.language-purescript:before,
+.style-settings-container pre.language-purescript:before {
+  content: "purescript";
+}
+.markdown-rendered pre.language-purs:before,
+.style-settings-container pre.language-purs:before {
+  content: "purs";
+}
+.markdown-rendered pre.language-python:before,
+.style-settings-container pre.language-python:before {
+  content: "python";
+}
+.markdown-rendered pre.language-py:before,
+.style-settings-container pre.language-py:before {
+  content: "py";
+}
+.markdown-rendered pre.language-qsharp:before,
+.style-settings-container pre.language-qsharp:before {
+  content: "qsharp";
+}
+.markdown-rendered pre.language-qs:before,
+.style-settings-container pre.language-qs:before {
+  content: "qs";
+}
+.markdown-rendered pre.language-q:before,
+.style-settings-container pre.language-q:before {
+  content: "q";
+}
+.markdown-rendered pre.language-qml:before,
+.style-settings-container pre.language-qml:before {
+  content: "qml";
+}
+.markdown-rendered pre.language-qore:before,
+.style-settings-container pre.language-qore:before {
+  content: "qore";
+}
+.markdown-rendered pre.language-r:before,
+.style-settings-container pre.language-r:before {
+  content: "r";
+}
+.markdown-rendered pre.language-racket:before,
+.style-settings-container pre.language-racket:before {
+  content: "racket";
+}
+.markdown-rendered pre.language-rkt:before,
+.style-settings-container pre.language-rkt:before {
+  content: "rkt";
+}
+.markdown-rendered pre.language-cshtml:before,
+.style-settings-container pre.language-cshtml:before {
+  content: "cshtml";
+}
+.markdown-rendered pre.language-razor:before,
+.style-settings-container pre.language-razor:before {
+  content: "razor";
+}
+.markdown-rendered pre.language-jsx:before,
+.style-settings-container pre.language-jsx:before {
+  content: "jsx";
+}
+.markdown-rendered pre.language-tsx:before,
+.style-settings-container pre.language-tsx:before {
+  content: "tsx";
+}
+.markdown-rendered pre.language-reason:before,
+.style-settings-container pre.language-reason:before {
+  content: "reason";
+}
+.markdown-rendered pre.language-regex:before,
+.style-settings-container pre.language-regex:before {
+  content: "regex";
+}
+.markdown-rendered pre.language-rego:before,
+.style-settings-container pre.language-rego:before {
+  content: "rego";
+}
+.markdown-rendered pre.language-renpy:before,
+.style-settings-container pre.language-renpy:before {
+  content: "renpy";
+}
+.markdown-rendered pre.language-rpy:before,
+.style-settings-container pre.language-rpy:before {
+  content: "rpy";
+}
+.markdown-rendered pre.language-rescript:before,
+.style-settings-container pre.language-rescript:before {
+  content: "rescript";
+}
+.markdown-rendered pre.language-res:before,
+.style-settings-container pre.language-res:before {
+  content: "res";
+}
+.markdown-rendered pre.language-rest:before,
+.style-settings-container pre.language-rest:before {
+  content: "rest";
+}
+.markdown-rendered pre.language-rip:before,
+.style-settings-container pre.language-rip:before {
+  content: "rip";
+}
+.markdown-rendered pre.language-roboconf:before,
+.style-settings-container pre.language-roboconf:before {
+  content: "roboconf";
+}
+.markdown-rendered pre.language-robotframework:before,
+.style-settings-container pre.language-robotframework:before {
+  content: "robotframework";
+}
+.markdown-rendered pre.language-robot:before,
+.style-settings-container pre.language-robot:before {
+  content: "robot";
+}
+.markdown-rendered pre.language-ruby:before,
+.style-settings-container pre.language-ruby:before {
+  content: "ruby";
+}
+.markdown-rendered pre.language-rb:before,
+.style-settings-container pre.language-rb:before {
+  content: "rb";
+}
+.markdown-rendered pre.language-rust:before,
+.style-settings-container pre.language-rust:before {
+  content: "rust";
+}
+.markdown-rendered pre.language-sas:before,
+.style-settings-container pre.language-sas:before {
+  content: "sas";
+}
+.markdown-rendered pre.language-sass:before,
+.style-settings-container pre.language-sass:before {
+  content: "sass";
+}
+.markdown-rendered pre.language-scss:before,
+.style-settings-container pre.language-scss:before {
+  content: "scss";
+}
+.markdown-rendered pre.language-scala:before,
+.style-settings-container pre.language-scala:before {
+  content: "scala";
+}
+.markdown-rendered pre.language-scheme:before,
+.style-settings-container pre.language-scheme:before {
+  content: "scheme";
+}
+.markdown-rendered pre.language-shell-session:before,
+.style-settings-container pre.language-shell-session:before {
+  content: "shell-session";
+}
+.markdown-rendered pre.language-sh-session:before,
+.style-settings-container pre.language-sh-session:before {
+  content: "sh-session";
+}
+.markdown-rendered pre.language-shellsession:before,
+.style-settings-container pre.language-shellsession:before {
+  content: "shellsession";
+}
+.markdown-rendered pre.language-smali:before,
+.style-settings-container pre.language-smali:before {
+  content: "smali";
+}
+.markdown-rendered pre.language-smalltalk:before,
+.style-settings-container pre.language-smalltalk:before {
+  content: "smalltalk";
+}
+.markdown-rendered pre.language-smarty:before,
+.style-settings-container pre.language-smarty:before {
+  content: "smarty";
+}
+.markdown-rendered pre.language-sml:before,
+.style-settings-container pre.language-sml:before {
+  content: "sml";
+}
+.markdown-rendered pre.language-smlnj:before,
+.style-settings-container pre.language-smlnj:before {
+  content: "smlnj";
+}
+.markdown-rendered pre.language-solidity:before,
+.style-settings-container pre.language-solidity:before {
+  content: "solidity";
+}
+.markdown-rendered pre.language-sol:before,
+.style-settings-container pre.language-sol:before {
+  content: "sol";
+}
+.markdown-rendered pre.language-solution-file:before,
+.style-settings-container pre.language-solution-file:before {
+  content: "solution-file";
+}
+.markdown-rendered pre.language-soy:before,
+.style-settings-container pre.language-soy:before {
+  content: "soy";
+}
+.markdown-rendered pre.language-sparql:before,
+.style-settings-container pre.language-sparql:before {
+  content: "sparql";
+}
+.markdown-rendered pre.language-rq:before,
+.style-settings-container pre.language-rq:before {
+  content: "rq";
+}
+.markdown-rendered pre.language-splunk-spl:before,
+.style-settings-container pre.language-splunk-spl:before {
+  content: "splunk-spl";
+}
+.markdown-rendered pre.language-sqf:before,
+.style-settings-container pre.language-sqf:before {
+  content: "sqf";
+}
+.markdown-rendered pre.language-sql:before,
+.style-settings-container pre.language-sql:before {
+  content: "sql";
+}
+.markdown-rendered pre.language-squirrel:before,
+.style-settings-container pre.language-squirrel:before {
+  content: "squirrel";
+}
+.markdown-rendered pre.language-stan:before,
+.style-settings-container pre.language-stan:before {
+  content: "stan";
+}
+.markdown-rendered pre.language-stata:before,
+.style-settings-container pre.language-stata:before {
+  content: "stata";
+}
+.markdown-rendered pre.language-iecst:before,
+.style-settings-container pre.language-iecst:before {
+  content: "iecst";
+}
+.markdown-rendered pre.language-stylus:before,
+.style-settings-container pre.language-stylus:before {
+  content: "stylus";
+}
+.markdown-rendered pre.language-supercollider:before,
+.style-settings-container pre.language-supercollider:before {
+  content: "supercollider";
+}
+.markdown-rendered pre.language-sclang:before,
+.style-settings-container pre.language-sclang:before {
+  content: "sclang";
+}
+.markdown-rendered pre.language-swift:before,
+.style-settings-container pre.language-swift:before {
+  content: "swift";
+}
+.markdown-rendered pre.language-systemd:before,
+.style-settings-container pre.language-systemd:before {
+  content: "systemd";
+}
+.markdown-rendered pre.language-t4-templating:before,
+.style-settings-container pre.language-t4-templating:before {
+  content: "t4-templating";
+}
+.markdown-rendered pre.language-t4-cs:before,
+.style-settings-container pre.language-t4-cs:before {
+  content: "t4-cs";
+}
+.markdown-rendered pre.language-t4:before,
+.style-settings-container pre.language-t4:before {
+  content: "t4";
+}
+.markdown-rendered pre.language-t4-vb:before,
+.style-settings-container pre.language-t4-vb:before {
+  content: "t4-vb";
+}
+.markdown-rendered pre.language-tap:before,
+.style-settings-container pre.language-tap:before {
+  content: "tap";
+}
+.markdown-rendered pre.language-tcl:before,
+.style-settings-container pre.language-tcl:before {
+  content: "tcl";
+}
+.markdown-rendered pre.language-tt2:before,
+.style-settings-container pre.language-tt2:before {
+  content: "tt2";
+}
+.markdown-rendered pre.language-textile:before,
+.style-settings-container pre.language-textile:before {
+  content: "textile";
+}
+.markdown-rendered pre.language-toml:before,
+.style-settings-container pre.language-toml:before {
+  content: "toml";
+}
+.markdown-rendered pre.language-tremor:before,
+.style-settings-container pre.language-tremor:before {
+  content: "tremor";
+}
+.markdown-rendered pre.language-trickle:before,
+.style-settings-container pre.language-trickle:before {
+  content: "trickle";
+}
+.markdown-rendered pre.language-troy:before,
+.style-settings-container pre.language-troy:before {
+  content: "troy";
+}
+.markdown-rendered pre.language-turtle:before,
+.style-settings-container pre.language-turtle:before {
+  content: "turtle";
+}
+.markdown-rendered pre.language-trig:before,
+.style-settings-container pre.language-trig:before {
+  content: "trig";
+}
+.markdown-rendered pre.language-twig:before,
+.style-settings-container pre.language-twig:before {
+  content: "twig";
+}
+.markdown-rendered pre.language-typescript:before,
+.style-settings-container pre.language-typescript:before {
+  content: "typescript";
+}
+.markdown-rendered pre.language-ts:before,
+.style-settings-container pre.language-ts:before {
+  content: "ts";
+}
+.markdown-rendered pre.language-typoscript:before,
+.style-settings-container pre.language-typoscript:before {
+  content: "typoscript";
+}
+.markdown-rendered pre.language-tsconfig:before,
+.style-settings-container pre.language-tsconfig:before {
+  content: "tsconfig";
+}
+.markdown-rendered pre.language-unrealscript:before,
+.style-settings-container pre.language-unrealscript:before {
+  content: "unrealscript";
+}
+.markdown-rendered pre.language-uscript:before,
+.style-settings-container pre.language-uscript:before {
+  content: "uscript";
+}
+.markdown-rendered pre.language-uc:before,
+.style-settings-container pre.language-uc:before {
+  content: "uc";
+}
+.markdown-rendered pre.language-uorazor:before,
+.style-settings-container pre.language-uorazor:before {
+  content: "uorazor";
+}
+.markdown-rendered pre.language-uri:before,
+.style-settings-container pre.language-uri:before {
+  content: "uri";
+}
+.markdown-rendered pre.language-url:before,
+.style-settings-container pre.language-url:before {
+  content: "url";
+}
+.markdown-rendered pre.language-v:before,
+.style-settings-container pre.language-v:before {
+  content: "v";
+}
+.markdown-rendered pre.language-vala:before,
+.style-settings-container pre.language-vala:before {
+  content: "vala";
+}
+.markdown-rendered pre.language-vbnet:before,
+.style-settings-container pre.language-vbnet:before {
+  content: "vbnet";
+}
+.markdown-rendered pre.language-velocity:before,
+.style-settings-container pre.language-velocity:before {
+  content: "velocity";
+}
+.markdown-rendered pre.language-verilog:before,
+.style-settings-container pre.language-verilog:before {
+  content: "verilog";
+}
+.markdown-rendered pre.language-vhdl:before,
+.style-settings-container pre.language-vhdl:before {
+  content: "vhdl";
+}
+.markdown-rendered pre.language-vim:before,
+.style-settings-container pre.language-vim:before {
+  content: "vim";
+}
+.markdown-rendered pre.language-visual-basic:before,
+.style-settings-container pre.language-visual-basic:before {
+  content: "visual-basic";
+}
+.markdown-rendered pre.language-vba:before,
+.style-settings-container pre.language-vba:before {
+  content: "vba";
+}
+.markdown-rendered pre.language-vb:before,
+.style-settings-container pre.language-vb:before {
+  content: "vb";
+}
+.markdown-rendered pre.language-warpscript:before,
+.style-settings-container pre.language-warpscript:before {
+  content: "warpscript";
+}
+.markdown-rendered pre.language-wasm:before,
+.style-settings-container pre.language-wasm:before {
+  content: "wasm";
+}
+.markdown-rendered pre.language-web-idl:before,
+.style-settings-container pre.language-web-idl:before {
+  content: "web-idl";
+}
+.markdown-rendered pre.language-webidl:before,
+.style-settings-container pre.language-webidl:before {
+  content: "webidl";
+}
+.markdown-rendered pre.language-wgsl:before,
+.style-settings-container pre.language-wgsl:before {
+  content: "wgsl";
+}
+.markdown-rendered pre.language-wiki:before,
+.style-settings-container pre.language-wiki:before {
+  content: "wiki";
+}
+.markdown-rendered pre.language-wolfram:before,
+.style-settings-container pre.language-wolfram:before {
+  content: "wolfram";
+}
+.markdown-rendered pre.language-mathematica:before,
+.style-settings-container pre.language-mathematica:before {
+  content: "mathematica";
+}
+.markdown-rendered pre.language-nb:before,
+.style-settings-container pre.language-nb:before {
+  content: "nb";
+}
+.markdown-rendered pre.language-wl:before,
+.style-settings-container pre.language-wl:before {
+  content: "wl";
+}
+.markdown-rendered pre.language-wren:before,
+.style-settings-container pre.language-wren:before {
+  content: "wren";
+}
+.markdown-rendered pre.language-xeora:before,
+.style-settings-container pre.language-xeora:before {
+  content: "xeora";
+}
+.markdown-rendered pre.language-xeoracube:before,
+.style-settings-container pre.language-xeoracube:before {
+  content: "xeoracube";
+}
+.markdown-rendered pre.language-xml-doc:before,
+.style-settings-container pre.language-xml-doc:before {
+  content: "xml-doc";
+}
+.markdown-rendered pre.language-xojo:before,
+.style-settings-container pre.language-xojo:before {
+  content: "xojo";
+}
+.markdown-rendered pre.language-xquery:before,
+.style-settings-container pre.language-xquery:before {
+  content: "xquery";
+}
+.markdown-rendered pre.language-yaml:before,
+.style-settings-container pre.language-yaml:before {
+  content: "yaml";
+}
+.markdown-rendered pre.language-yml:before,
+.style-settings-container pre.language-yml:before {
+  content: "yml";
+}
+.markdown-rendered pre.language-yang:before,
+.style-settings-container pre.language-yang:before {
+  content: "yang";
+}
+.markdown-rendered pre.language-zig:before,
+.style-settings-container pre.language-zig:before {
+  content: "zig";
+}
+.markdown-rendered pre:hover button.copy-code-button,
+.style-settings-container pre:hover button.copy-code-button {
+  opacity: 1;
+}
+.markdown-rendered pre button.copy-code-button,
+.style-settings-container pre button.copy-code-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--code-bg-color);
+  transition: all 0.2s ease;
+  z-index: 1;
+  width: 50px;
+  height: 30px;
+  color: transparent;
+  opacity: 0;
+}
+.markdown-rendered pre button.copy-code-button:hover,
+.style-settings-container pre button.copy-code-button:hover {
+  background-color: var(--code-bg-color);
+  border-color: var(--border-color);
+}
+.markdown-rendered pre button.copy-code-button::after,
+.style-settings-container pre button.copy-code-button::after {
+  content: "Copy";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.markdown-rendered pre button.copy-code-button:hover,
+.style-settings-container pre button.copy-code-button:hover {
+  background-color: var(--code-bg-color);
+  border: 1px solid var(--text-muted);
+}
+.markdown-rendered pre button.copy-code-button:hover::after,
+.style-settings-container pre button.copy-code-button:hover::after {
+  color: var(--text-strong);
+}
+
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
+  border-radius: auto;
+  background-color: var(--code-bg-color);
+  padding: 0 30px;
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
+  border-radius: 4px 4px 0 0;
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg
+  span.code-block-flair {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--code-bg-color);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg
+  span.code-block-flair:hover {
+  background-color: var(--code-bg-color);
+  border-color: var(--border-color);
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg
+  span.code-block-flair
+  svg {
+  vertical-align: middle;
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg
+  span.code-block-flair:hover {
+  background-color: var(--code-bg-color);
+  border: 1px solid var(--text-muted);
+  color: var(--text-strong);
+}
+.markdown-source-view.is-live-preview
+  div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
+  border-radius: 0 0 4px 4px;
+}
+
+.markdown-source-view.is-live-preview div.math-block,
+.markdown-source-view.is-live-preview span.math,
+.markdown-rendered div.math-block,
+.style-settings-container div.math-block,
+.markdown-rendered span.math,
+.style-settings-container span.math {
+  color: var(--text-strong);
+}
+
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table) {
+  width: 100% !important;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table {
+  white-space: pre-wrap;
+  width: 100%;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  .cm-s-obsidian
+  .cm-line {
+  line-height: 1.3;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  .cm-gutters {
+  display: none;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  * {
+  border-color: var(--text-muted);
+  border-left: none;
+  border-right: none;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  thead
+  th {
+  border-top: none;
+  border-bottom: 1.5px solid var(--text-normal);
+  padding: 10px 20px !important;
+  text-align: center;
+  font-weight: inherit;
+  color: var(--text-strong);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  thead
+  th
+  .cm-line.cm-active {
+  color: var(--text-strong);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  tbody
+  tr {
+  border-top: 1px solid var(--divider-color);
+  transition: all 0.2s ease-in-out;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  tbody
+  tr:hover {
+  background-color: var(--background-modifier-active-hover);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container)
+  div:has(> table)
+  table
+  tbody
+  td {
+  padding: 10px 10px !important;
+}
+
+.markdown-rendered a.tag,
+.style-settings-container a.tag,
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag,
+.metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
+  font-family: var(--font-tag);
+  font-size: var(--font-tag-size) !important;
+  font-weight: var(--font-tag-weight);
+  color: var(--text-strong);
+  transition: all 0.2s ease-in-out;
+  border-width: 1px;
+}
+
+.metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill
+  .multi-select-pill-content {
+  margin: 0;
+}
+.metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill
+  .multi-select-pill-remove-button {
+  margin: 0;
+}
+.metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill
+  .multi-select-pill-remove-button
+  svg {
+  color: var(--text-normal);
+}
+
+.markdown-rendered a.tag,
+.style-settings-container a.tag,
+.metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
+  padding: 0 0.5em;
+}
+
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag.cm-hashtag-begin {
+  padding-left: 0.5em;
+}
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag.cm-hashtag-end {
+  padding-right: 0.5em;
+}
+
+body.tag-fill .markdown-rendered a.tag,
+body.tag-fill .style-settings-container a.tag,
+body.tag-fill .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
+  border-color: var(--color-accent-o40);
+  background-color: var(--color-accent-o30);
+  color: var(--text-strong);
+}
+body.tag-fill .markdown-rendered a.tag:hover,
+body.tag-fill .style-settings-container a.tag:hover,
+body.tag-fill
+  .metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill:hover {
+  border-color: var(--color-accent-o80);
+  background-color: var(--color-accent-o60);
+  color: var(--text-strong);
+}
+body.tag-fill
+  .markdown-source-view.is-live-preview
+  .cm-line
+  .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  border-color: var(--color-accent-o40);
+  background-color: var(--color-accent-o30);
+  color: var(--text-strong);
+}
+
+body.tag-outline .markdown-rendered a.tag,
+body.tag-outline .style-settings-container a.tag,
+body.tag-outline
+  .metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill {
+  border-color: var(--color-accent-o50);
+  background-color: transparent;
+  color: var(--text-strong);
+}
+body.tag-outline .markdown-rendered a.tag:hover,
+body.tag-outline .style-settings-container a.tag:hover,
+body.tag-outline
+  .metadata-container
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill:hover {
+  border-color: var(--color-accent-o80);
+  background-color: var(--color-accent-o30);
+}
+body.tag-outline
+  .markdown-source-view.is-live-preview
+  .cm-line
+  .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  border-color: var(--color-accent-o50);
+  background-color: transparent;
+  color: var(--text-strong);
+}
+
+.workspace-tab.mod-top,
+.workspace-tab-header-container,
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right,
+.workspace-ribbon.mod-left:before {
+  background-color: var(--background-primary);
+}
+
+.workspace.is-left-sidedock-open .side-dock-ribbon.mod-left {
+  background-color: var(--background-primary);
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner {
+  gap: 0;
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  min-width: 30px;
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  svg {
+  transition: all 0.2s ease-in-out;
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover
+  .workspace-tab-header-inner {
+  background-color: transparent;
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover
+  svg {
+  stroke: var(--icon-color-hovering);
+}
+.workspace
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active
+  svg {
+  stroke: var(--icon-color-focused);
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header.is-active {
+  background-color: var(--tab-active-bg-color);
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--text-strong);
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner {
+  margin: 0;
+  padding-top: 2px;
+  gap: 0;
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  border-width: 0;
+  border-radius: 4px;
+  min-width: 100px;
+  height: 30px;
+  margin: 3.2px 5px 0 0;
+  padding: 1px 3px 1px;
+  color: var(--text-muted);
+  box-shadow: none;
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner:after {
+  background-color: transparent;
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
+  display: flex;
+  color: var(--text-normal);
+}
+.workspace
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button:hover {
+  color: var(--text-strong);
+  background-color: var(--close-button-hover-bg-color);
+}
+
+.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
+  background-color: transparent;
+}
+.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:before,
+.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:after {
+  box-shadow: none;
+}
+
+.markdown-source-view.is-live-preview .cm-hmd-internal-link:has(.is-unresolved):hover,
+.markdown-source-view.is-live-preview .is-unresolved:hover {
+  -webkit-text-decoration: var(--link-unresolved-decoration-line)
+    var(--link-unresolved-decoration-style) var(--link-unresolved-decoration-color)
+    var(--link-unresolved-decoration-width);
+  text-decoration: var(--link-unresolved-decoration-line) var(--link-unresolved-decoration-style)
+    var(--link-unresolved-decoration-color) var(--link-unresolved-decoration-width);
+  text-underline-offset: var(--link-unresolved-decoration-offset);
+  opacity: var(--link-unresolved-opacity);
+  color: var(--link-unresolved-color);
+}
+
+.workspace .mod-left .side-dock-settings {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 12px;
+  left: 4px;
+  width: 35px;
+}
+
+.clickable-icon:not([aria-disabled="true"]) {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.75;
+  background-color: transparent;
+}
+.clickable-icon:not([aria-disabled="true"]):hover {
+  opacity: 1;
+  background-color: transparent;
+}
+.clickable-icon:not([aria-disabled="true"]):hover svg {
+  stroke: var(--icon-color-hovering);
+}
+.clickable-icon:not([aria-disabled="true"])[aria-disabled="true"] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.markdown-source-view.is-live-preview .cm-embed-block .edit-block-button svg {
+  transition: all 0.2s ease-in-out;
+}
+.markdown-source-view.is-live-preview .cm-embed-block .edit-block-button:hover {
+  background-color: transparent !important;
+}
+.markdown-source-view.is-live-preview .cm-embed-block .edit-block-button:hover svg {
+  stroke: var(--icon-color-hovering);
+}
+
+body.color-expanded-folder-indicator
+  .workspace
+  .mod-left-split
+  .tree-item-icon:not(.is-collapsed)
+  svg {
+  stroke: hsl(var(--color-h), var(--color-s), var(--color-l));
+}
+.workspace .mod-left-split .nav-folder.mod-root > .nav-folder-title {
+  font-family: var(--font-vault-name);
+  font-size: var(--font-vault-name-size);
+  font-weight: var(--font-vault-name-weight);
+  color: var(--text-strong);
+  background-color: transparent;
+  justify-content: center;
+  padding: 8px;
+}
+.workspace .mod-left-split .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+  padding: 0;
+  height: auto;
+}
+body.file-tree-icons
+  .workspace
+  .mod-left-split
+  .nav-folder-title
+  .nav-folder-title-content:not(:nth-child(1)):before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+.workspace .mod-left-split .nav-file-title,
+.workspace .mod-left-split .nav-folder-title {
+  font-family: var(--font-file-tree);
+  font-size: var(--font-file-tree-size);
+  font-weight: var(--font-file-tree-weight);
+  color: var(--text-normal);
+}
+.workspace .mod-left-split .tree-item-self:not(.is-active) {
+  opacity: 0.5;
+}
+.workspace .mod-left-split .tree-item-inner {
+  padding-left: 0.3em;
+  height: 21.52px;
+}
+
+body.file-tree-icons
+  .nav-file-title:is([data-path$=".md"], [data-path$=".markdown"])
+  .nav-file-title-content:before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+body.file-tree-icons .nav-file-title[data-path$=".pdf"] .nav-file-title-content:before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm12 6V9c0-.55-.45-1-1-1h-2v5h2c.55 0 1-.45 1-1zm-2-3h1v3h-1V9zm4 2h1v-1h-1V9h1V8h-2v5h1zm-8 0h1c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H9v5h1v-2zm0-2h1v1h-1V9z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm12 6V9c0-.55-.45-1-1-1h-2v5h2c.55 0 1-.45 1-1zm-2-3h1v3h-1V9zm4 2h1v-1h-1V9h1V8h-2v5h1zm-8 0h1c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H9v5h1v-2zm0-2h1v1h-1V9z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+body.file-tree-icons
+  .nav-file-title:is([data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"])
+  .nav-file-title-content:before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+body.file-tree-icons .nav-file-title[data-path$=".mp3"] .nav-file-title-content:before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+body.file-tree-icons .nav-file-title[data-path$=".mp4"] .nav-file-title-content:before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  left: -0.3em;
+  display: inline-block;
+  background-color: var(--text-normal);
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+  mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z" stroke="black" fill="black" stroke-width="0.6" stroke-linejoin="round" /></svg>');
+}
+
+.nav-file-title {
+  border: 1px solid transparent;
+}
+.nav-file-title:hover {
+  opacity: 0.8;
+}
+
+body.indicate-ascendant
+  .tree-item:has(.nav-file-title:hover):not(.nav-folder.mod-root)
+  > .tree-item-self:not(.is-active) {
+  background-color: var(--nav-item-background-hover);
+  border-radius: var(--radius-s);
+  opacity: 0.8;
+}
+
+.workspace
+  .mod-left-split
+  .nav-folder-title:not(.is-acitve, .nav-folder.mod-root > .nav-folder-title):hover {
+  opacity: 0.8;
+}
+body.indicate-child
+  .workspace
+  .mod-left-split
+  .nav-folder-title:not(.is-acitve, .nav-folder.mod-root > .nav-folder-title):hover
+  ~ .tree-item-children {
+  background-color: var(--nav-item-background-hover);
+  border-radius: var(--radius-s);
+}
+
+body.active-file-border .workspace .mod-left-split .nav-file-title.is-active {
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(var(--color-h), var(--color-s), var(--color-l));
+  border-radius: var(--radius-s);
+  color: var(--text-strong);
+  opacity: 1;
+}
+
+body.opaque-expanded-folder
+  .workspace
+  .mod-left-split
+  .nav-folder:not(.is-collapsed)
+  > .tree-item-self {
+  opacity: 1;
+}
+
+.workspace-leaf .view-header .view-header-title-container .view-header-title {
+  min-width: 10%;
+  padding: 0;
+  flex: 1 1 auto;
+  color: var(--text-normal);
+}
+.workspace-leaf .view-header .view-header-title-container .view-header-title-parent {
+  max-width: 100%;
+  overflow: auto;
+  margin-right: 10px;
+  color: var(--text-normal);
+}
+.workspace-leaf
+  .view-header
+  .view-header-title-container
+  .view-header-title-parent
+  .view-header-breadcrumb {
+  color: var(--text-muted);
+  transition: all 0.2s ease-in-out;
+}
+.workspace-leaf
+  .view-header
+  .view-header-title-container
+  .view-header-title-parent
+  .view-header-breadcrumb:hover {
+  color: var(--text-strong);
+  background-color: transparent;
+}
+.workspace-leaf
+  .view-header
+  .view-header-title-container
+  .view-header-title-parent::-webkit-scrollbar {
+  display: none;
+}
+
+.view-header-title-container:not(.mod-at-start):before,
+.view-header-title-container:not(.mod-at-end):after {
+  display: none;
+}
+
+body.use-builtin-color-picker {
+  --color-h: var(--accent-h) !important;
+  --color-s: var(--accent-s) !important;
+  --color-l: var(--accent-l) !important;
+}
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item {
+  transition: all 0.2s ease-in-out;
+}
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item:hover {
+  background-color: var(--tab-bg-color);
+}
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item.is-active {
+  background-color: var(--text-muted);
+  color: var(--background-primary);
+}
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item.is-active:hover {
+  background-color: var(--text-muted);
+}
+body .setting-item.setting-item-heading .setting-item-info .setting-item-name,
+body .vertical-tab-header-group-title {
+  color: var(--text-strong);
+}
+body .modal-close-button {
+  transition: all 0.2s ease-in-out;
+}
+body .modal-close-button:hover {
+  background-color: transparent;
+  color: var(--text-strong);
+}
+body select,
+body select.dropdown,
+body button:not(.clickable-icon) {
+  transition: all 0.3s;
+  box-shadow: none;
+  background-color: var(--tab-bg-color);
+  border: 1px solid var(--background-modifier-border);
+}
+body select:hover,
+body select.dropdown:hover,
+body button:not(.clickable-icon):hover {
+  border: 1px solid var(--text-strong);
+  outline: none;
+  box-shadow: none;
+  background-color: var(--interactive-hover);
+}
+body select:active,
+body select:focus,
+body select.dropdown:active,
+body select.dropdown:focus,
+body button:not(.clickable-icon):active,
+body button:not(.clickable-icon):focus {
+  box-shadow: 0 0 0 1px var(--text-strong);
+}
+body button.mod-cta {
+  border: 1px solid var(--interactive-accent);
+  background-color: var(--interactive-accent);
+}
+body button.mod-cta:hover {
+  background-color: var(--interactive-hover);
+  color: var(--text-strong);
+}
+body input[type="range"] {
+  border: 1px solid var(--background-modifier-border-focus);
+  height: 0.3em;
+  transition: all 0.3s;
+  border-radius: 0.5em;
+}
+body input[type="range"]:hover {
+  background-color: var(--interactive-hover);
+  height: 0.6em;
+  border: 1px solid var(--text-strong);
+}
+body input[type="text"],
+body input[type="search"],
+body input[type="number"],
+body textarea {
+  transition: all 0.3s;
+  border: 1px solid var(--background-modifier-border);
+}
+body input[type="text"]:hover,
+body input[type="search"]:hover,
+body input[type="number"]:hover,
+body textarea:hover {
+  border: 1px solid var(--background-modifier-border-hover);
+}
+body input[type="text"]:active,
+body input[type="text"]:focus,
+body input[type="search"]:active,
+body input[type="search"]:focus,
+body input[type="number"]:active,
+body input[type="number"]:focus,
+body textarea:active,
+body textarea:focus {
+  box-shadow: 0 0 0 1px var(--text-strong);
+}
+body .checkbox-container {
+  border: 2px solid var(--background-modifier-border-focus);
+  overflow-x: hidden;
+  border-radius: 1em;
+  transition: all 0.3s;
+  box-shadow: none;
+}
+body .checkbox-container:has(input[type="checkbox"]) {
+  width: 40px;
+  padding-right: 0;
+}
+body .checkbox-container:focus-within {
+  outline: none !important;
+}
+body .checkbox-container:hover {
+  background-color: var(--background-modifier-border-hover);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+  border: 2px solid var(--text-muted);
+}
+body .checkbox-container:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+body .checkbox-container:after {
+  margin-top: 0;
+  left: -20px;
+  width: 100% !important;
+  transition: all 0.3s ease-in-out;
+}
+body .checkbox-container:active:after {
+  left: -2px;
+}
+body .checkbox-container.is-enabled {
+  border: 2px solid var(--interactive-accent);
+}
+body .checkbox-container.is-enabled:hover {
+  background-color: var(--interactive-accent);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+  border: 2px solid var(--interactive-accent-hover);
+}
+body .checkbox-container.is-enabled:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+body .checkbox-container.is-enabled:after {
+  transform: translateX(38px);
+}
+body .checkbox-container.is-enabled:active:after {
+  transform: translateX(2px);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small {
+  width: 34px;
+  box-shadow: none;
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small:hover {
+  background-color: var(--background-modifier-border-hover);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small input {
+  width: 30px;
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small:before {
+  width: 30px;
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small:after {
+  top: -2px;
+  width: 30px;
+  left: -17px;
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small:active:after {
+  transform: translateX(17px);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small.is-enabled {
+  border: 2px solid var(--interactive-accent);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small.is-enabled:hover {
+  background-color: var(--interactive-accent);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small.is-enabled:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small.is-enabled:after {
+  transform: translateX(32px);
+}
+body .checkbox-container:has(input[type="checkbox"]).mod-small.is-enabled:active:after {
+  transform: translateX(17px);
+}
+body
+  .checkbox-container:has(input[type="checkbox"]).mod-small
+  .style-settings-container
+  .themed-color-wrapper
+  > div
+  + div {
+  margin-top: 0;
+}
+body
+  .checkbox-container:has(input[type="checkbox"]).mod-small
+  .style-settings-container
+  .themed-color-wrapper
+  button {
+  border: 2px solid var(--background-modifier-border);
+  transition: all 0.3s;
+  box-shadow: none;
+}
+body
+  .checkbox-container:has(input[type="checkbox"]).mod-small
+  .style-settings-container
+  .themed-color-wrapper
+  button:hover {
+  border: 2px solid var(--background-modifier-border-hover);
+  box-shadow: 0 1px 0.6px 1.5px var(--button-shadow-color);
+}
+body button[aria-label="Restore default"] {
+  height: 40px;
+}
+body .setting-item[data-id*="hue"] .slider {
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%) 0%,
+    hsl(60, 100%, 50%) 17%,
+    hsl(120, 100%, 50%) 33%,
+    hsl(180, 100%, 50%) 50%,
+    hsl(240, 100%, 50%) 67%,
+    hsl(300, 100%, 50%) 83%,
+    hsl(0, 100%, 50%) 100%
+  );
+}
+body .setting-item .themed-color-wrapper > div + div {
+  margin-top: 0;
+}
+body .setting-item .setting-item-info .setting-item-name {
+  font-family: --font-default;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+body .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
+  border-radius: 10px;
+}
+body .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
+  margin-bottom: 10px;
+}
+body .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]),
+body
+  .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"])
+  + .style-settings-container {
+  padding-left: 15px;
+}
+:has(body .setting-item).style-settings-container {
+  padding-bottom: 0;
+}
+body .setting-item:nth-last-child(1) {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+body .setting-item + .setting-item-heading {
+  margin-top: 0;
+  border-top: 1px solid var(--background-modifier-border);
+}
+body .community-item {
+  transition: all 0.3s ease-in-out;
+}
+body .community-item:hover {
+  border: 1px solid var(--text-strong);
+}
+
+body.fade-out-inactive-lines :is(.cm-line:not(.cm-active), .cm-embed-block) {
+  transition: var(--focuse-transition-duration);
+  opacity: var(--inactive-opacity);
+}
+body.fade-out-inactive-lines :is(.cm-line:not(.cm-active), .cm-embed-block):hover {
+  opacity: var(--inactive-hover-opacity);
+}
+body.fade-out-inactive-lines .cm-line.cm-active {
+  opacity: 1;
+}
+
+.markdown-source-view:not(.is-live-preview) {
+  --color-text: var(--text-normal);
+  --color-header: var(--text-strong);
+  --color-strong: var(--text-strong);
+}
+.theme-dark .markdown-source-view:not(.is-live-preview) {
+  --color-list-bullet: rgb(216, 179, 139);
+  --color-link: rgb(87, 128, 243);
+  --color-inline-code: rgb(87, 222, 107);
+  --color-quote-format: rgb(116, 152, 93);
+}
+.theme-light .markdown-source-view:not(.is-live-preview) {
+  --color-list-bullet: rgb(148, 101, 51);
+  --color-link: rgb(87, 128, 243);
+  --color-inline-code: rgb(51, 139, 64);
+  --color-quote-format: rgb(116, 152, 93);
+}
+.markdown-source-view:not(.is-live-preview) .cm-line {
+  font-family: var(--font-source-view);
+  font-size: var(--font-text-size);
+  font-weight: var(--font-source-view-weight);
+  color: var(--color-text);
+  background-color: transparent;
+}
+.markdown-source-view:not(.is-live-preview) .cm-line.cm-active {
+  background-color: var(--background-modifier-border);
+}
+.markdown-source-view:not(.is-live-preview) .inline-title {
+  font-family: var(--font-source-view);
+  font-size: var(--font-inline-title-size);
+  font-weight: var(--font-source-view-weight);
+  color: var(--color-text);
+}
+.markdown-source-view:not(.is-live-preview) .cm-header {
+  color: var(--color-header);
+  line-height: 1.5;
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) {
+  color: var(--color-link);
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):hover {
+  text-decoration: none;
+  color: var(--color-link);
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-url):not(.cm-formatting-link-string) {
+  color: var(--color-text);
+  -webkit-text-decoration: underline solid 2px var(--color-text);
+  text-decoration: underline solid 2px var(--color-text);
+  text-underline-offset: 4px;
+}
+.markdown-source-view:not(.is-live-preview) .cm-formatting-link {
+  color: var(--color-text);
+}
+.markdown-source-view:not(.is-live-preview) .cm-highlight {
+  background-color: transparent;
+}
+.markdown-source-view:not(.is-live-preview) .cm-strong {
+  color: var(--color-strong);
+}
+.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-list {
+  color: var(--color-list-bullet);
+}
+.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-link-string {
+  color: var(--color-text);
+}
+.markdown-source-view:not(.is-live-preview) .cm-inline-code {
+  color: var(--color-inline-code);
+  white-space: nowrap;
+}
+.markdown-source-view:not(.is-live-preview) .cm-hashtag {
+  color: var(--color-text);
+  font-size: var(--font-text-size);
+  padding: 0;
+  background: transparent;
+}
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote {
+  color: var(--color-quote-format);
+}
+
+body.zen-mode .side-dock-ribbon.is-collapsed {
+  border-right: none;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+body.zen-mode .side-dock-ribbon.is-collapsed:hover {
+  opacity: 1;
+}
+body.zen-mode .workspace-ribbon.is-collapsed.mod-left:before {
+  display: none;
+}
+body.zen-mode .workspace-ribbon.mod-left:before,
+body.zen-mode .mod-right-split .sidebar-toggle-button.mod-right {
+  background-color: var(--background-primary) !important;
+  border-bottom: none;
+}
+body.zen-mode .sidebar-toggle-button.mod-right {
+  background-color: var(--background-primary) !important;
+}
+body.zen-mode :is(.mod-root .workspace-tab-header-container, .view-header) {
+  background-color: var(--background-primary);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  border-bottom: none;
+}
+body.zen-mode .mod-root .workspace-tab-header-container:hover,
+body.zen-mode
+  .mod-root
+  .workspace-tab-header-container:hover
+  + .workspace-tab-container
+  .view-header,
+body.zen-mode .view-header:hover,
+body.zen-mode .view-header:hover + .workspace-tab-container .view-header {
+  height: 40px;
+  opacity: 1;
+}
+
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable .tree-item-inner {
+  transition: all 0.3s ease-in-out;
+}
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable:hover {
+  background-color: transparent;
+}
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable:hover .tree-item-inner {
+  color: var(--text-strong);
+}
+.embedded-backlinks .search-input-container {
+  width: calc(100% - 200px);
+  margin-left: 0;
+}
+
+#calendar-container .nav .arrow,
+#calendar-container .nav .reset-button,
+#calendar-container table.calendar .day {
+  transition: all 0.3s ease-in-out;
+}
+#calendar-container .nav .arrow svg,
+#calendar-container .nav .reset-button svg,
+#calendar-container table.calendar .day svg {
+  transition: all 0.3s ease-in-out;
+}
+#calendar-container .nav .arrow:hover,
+#calendar-container .nav .reset-button:hover,
+#calendar-container table.calendar .day:hover {
+  background-color: transparent;
+  color: var(--text-strong);
+}
+#calendar-container .nav .arrow:hover svg,
+#calendar-container .nav .reset-button:hover svg,
+#calendar-container table.calendar .day:hover svg {
+  color: var(--text-strong);
+}
+
+.search-row input[type="search"] {
+  transition: all 0.3s;
+  border: 1px solid var(--background-modifier-border);
+}
+.search-row input[type="search"]:hover {
+  border: 1px solid var(--background-modifier-border-hover);
+}
+.search-row input[type="search"]:active,
+.search-row input[type="search"]:focus {
+  box-shadow: 0 0 0 1px var(--text-strong);
+}
+
+body:not(.custom-accent-color)
+  .setting-item:is([data-id^="custom-accent-color-for-"], [data-id^="custom-accent-color-"]) {
+  display: none;
+}
+body:not(.colorful-headers) .setting-item:is([data-id="header-color-gradient"]) {
+  display: none;
+}
+body:not(.callout-dogs-ear) .setting-item:is([data-id^="callout-dogs-ear-size"]) {
+  display: none;
+}
+body:not(.fade-out-inactive-lines)
+  .setting-item:is(
+    [data-id="inactive-opacity"],
+    [data-id="inactive-hover-opacity"],
+    [data-id="focuse-transition-duration"]
+  ) {
+  display: none;
+}
+body.use-builtin-color-picker
+  .setting-item:is(
+    [data-id^="accent-color-for"],
+    [data-id^="custom-accent-color-for-"],
+    [data-id^="custom-accent-color-"],
+    [data-id="custom-accent-color"]
+  ) {
+  display: none;
+}
+
+/* @settings
+name: Accent Color
+id: accent-color
+settings:
+  -
+    id: accent-color-info
+    title: Look at this
+    title.zh: 看这
+    type: info-text
+    description: |
+      - If you want to use the built-in color picker, you can turn on `Use Built-in Color Picker`.
+      - If `Use Built-in Color Picker` is off, please use the settings below to customize accent color.
+      - However the built-in color picker will still influence the text color in buttons with a accent color background even if `Use Built-in Color Picker` is off.
+    description.zh: |
+      - 如果想使用内置的颜色选择器，请打开“使用内建颜色选择器”。
+      - 如果“使用内建颜色选择器”关闭，请使用下面的设置来自定义强调色。
+      - **注意**：即使“使用内建颜色选择器”关闭，内置的颜色选择器仍然会影响带有强调色背景的按钮的文本颜色。
+    markdown: true
+  -
+    id: use-builtin-color-picker
+    title: Use Built-in Color Picker
+    title.zh: 使用内建颜色选择器
+    type: class-toggle
+    default: false
+  -
+    id: accent-color-for-light-theme
+    title: Accent Color for Light Theme
+    title.zh: 亮色主题强调色
+    description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
+    description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
+    type: class-select
+    allowEmpty: false
+    default: accent-color-bw-light
+    options:
+    -
+      label: Panda
+      value: accent-color-bw-light
+    -
+      label: Green
+      value: accent-color-green-light
+    -
+      label: Red
+      value: accent-color-red-light
+    -
+      label: Yellow
+      value: accent-color-yellow-light
+    -
+      label: Blue
+      value: accent-color-blue-light
+    -
+      label: Orange
+      value: accent-color-orange-light
+    -
+      label: Purple
+      value: accent-color-purple-light
+    -
+      label: Pink
+      value: accent-color-pink-light
+  -
+    id: accent-color-for-dark-theme
+    title: Accent Color for Dark Theme
+    title.zh: 暗色主题强调色
+    description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
+    description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
+    type: class-select
+    allowEmpty: false
+    default: accent-color-bw-dark
+    options:
+    -
+      label: Panda
+      value: accent-color-bw-dark
+    -
+      label: Green
+      value: accent-color-green-dark
+    -
+      label: Red
+      value: accent-color-red-dark
+    -
+      label: Yellow
+      value: accent-color-yellow-dark
+    -
+      label: Blue
+      value: accent-color-blue-dark
+    -
+      label: Orange
+      value: accent-color-orange-dark
+    -
+      label: Purple
+      value: accent-color-purple-dark
+    -
+      label: Pink
+      value: accent-color-pink-dark
+  -
+    id: custom-accent-color
+    title: Custom Accent Color
+    title.zh: 自定义强调色
+    description: Selections above will be ignored if this toggle is on. (I know it's annoying but please bear with me.)
+    description.zh: 如果开启，上面的选择将被忽略。（反复强调别嫌啰嗦）
+    type: class-toggle
+    default: false
+  -
+    id: custom-accent-color-for-light-theme
+    title: Custom Accent Color for Light Theme
+    title.zh: 亮色主题自定义强调色
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: accent-color-light-hue-default
+    title: Hue
+    title.zh: 色相
+    description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 254
+  -
+    id: accent-color-light-saturation-default
+    title: Saturation(%)
+    title.zh: 饱和度（%）
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 80
+  -
+    id: accent-color-light-lightness-default
+    title: Lightness(%)
+    title.zh: 亮度（%）
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 68
+  -
+    id: custom-accent-color-for-dark-theme
+    title: Custom Accent Color for Dark Theme
+    title.zh: 暗色主题自定义强调色
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: accent-color-dark-hue-default
+    title: Hue
+    title.zh: 色相
+    description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 254
+  -
+    id: accent-color-dark-saturation-default
+    title: Saturation(%)
+    title.zh: 饱和度（%）
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 80
+  -
+    id: accent-color-dark-lightness-default
+    title: Lightness(%)
+    title.zh: 亮度（%）
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 68
+
+
+*/
+/* @settings
+name: Font & Text
+id: font
+settings:
+  -
+    id: font-family
+    title: Font Family
+    title.zh: 字体
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-text
+    title: Text Font
+    title.zh: 文本字体
+    description: This will be the default font for most of the text in editor except for math and code.
+    description.zh: 将会影响编辑器中除了数学公式和代码外的几乎所有文字。
+    type: variable-text
+    default: '"Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif'
+    allowEmpty: true
+  -
+    id: font-header
+    title: Header Font
+    title.zh: 标题字体
+    description: Will be the same as text font if empty.
+    description.zh: 如果为空，将与文本字体相同。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-monospace
+    title: Monospace Font
+    title.zh: 等宽字体
+    description: This will be the default font for code and tags in editor.
+    description.zh: 将会影响编辑器中的代码和标签等。
+    type: variable-text
+    default: 'iawriter-mono, Nitti, Menlo, Courier, monospace'
+    allowEmpty: true
+  -
+    id: font-interface-override
+    title: UI Font
+    title.zh: 界面字体
+    description: Will be Obsidian's default font if empty.
+    description.zh: 如果为空，将使用 Obsidian 的默认字体。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-file-tree
+    title: File Tree Font
+    title.zh: 文件树字体
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-vault-name
+    title: Vault Name Font
+    title.zh: 库名称字体
+    description: Will be the same as file tree font if empty.
+    description.zh: 如果为空，将与文件树字体相同。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-inline-title
+    title: Inline Title Font
+    title.zh: 行内标题字体
+    description: Will be the same as header font if empty.
+    description.zh: 如果为空，将与标题字体相同。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-source-view
+    title: Source View Font
+    title.zh: 源代码视图字体
+    description: Will be monospace font if empty.
+    description.zh: 如果为空，将使用等宽字体。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: strong-style
+    title: Strong Style
+    title.zh: 粗体样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-strong-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 0%)
+    default-dark: hsl(0, 0%, 100%)
+  -
+    id: font-strong-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 900
+    min: 100
+    max: 900
+    step: 100
+  -
+    id: font-strong-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: custom-em-style
+    title: Emphasis Style
+    title.zh: 强调样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-em-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 33.3%)
+    default-dark: hsl(0, 0%, 66.7%)
+  -
+    id: font-em-style
+    title: Style
+    title.zh: 样式
+    description: In case you want to make the text not italic.
+    description.zh: 万一你不喜欢斜体……
+    type: variable-select
+    default: italic
+    allowEmpty: false
+    options:
+    -
+      label: italic
+      value: italic
+    -
+      label: normal
+      value: normal
+  -
+    id: font-em-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  -
+    id: font-em-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: custom-highlight-style
+    title: Highlight Style
+    title.zh: 高亮样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-highlight-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 100%)
+    default-dark: hsl(0, 0%, 6.67%)
+  -
+    id: font-highlight-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  -
+    id: font-highlight-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: font-highlight-bg-color
+    title: Background
+    title.zh: 背景色
+    description: Default values displayed are incorrect. Default values are accent color.
+    description.zh: 下面显示的默认值是错的，它的默认值是强调色。
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 0%, 0)
+    default-dark: hsla(0, 0%, 0%, 0)
+  -
+    id: font-highlight-decoration-line
+    title: Decoration
+    title.zh: 装饰位置
+    type: variable-select
+    default: none
+    allowEmpty: false
+    options:
+    -
+      label: underline
+      value: underline
+    -
+      label: overline
+      value: overline
+    -
+      label: line-through
+      value: line-through
+    -
+      label: none
+      value: none
+  -
+    id: font-highlight-decoration-style
+    title: Decoration Style
+    title.zh: 装饰样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+    -
+      label: solid
+      value: solid
+    -
+      label: double
+      value: double
+    -
+      label: dotted
+      value: dotted
+    -
+      label: dashed
+      value: dashed
+    -
+      label: wavy
+      value: wavy
+  -
+    id: font-highlight-decoration-color
+    title: Decoration Color
+    title.zh: 装饰颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 33.3%, 1)
+    default-dark: hsla(0, 0%, 66.7%, 1)
+  -
+    id: font-highlight-decoration-width
+    title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 0.5
+    format: px
+    default: 2
+  -
+    id: font-highlight-decoration-offset
+    title: Underline Offset(px)
+    title.zh: 下划线偏移（px）
+    description: Only available for underline.
+    description.zh: 仅对下划线有效。
+    type: variable-number-slider
+    min: -5
+    max: 5
+    step: 0.5
+    format: px
+    default: 3
+  -
+    id: custom-underlined-style
+    title: Underlined Style
+    title.zh: 下划线样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-underlined-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 33.3%)
+    default-dark: hsl(0, 0%, 66.7%)
+  -
+    id: font-underlined-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  -
+    id: font-underlined-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: font-underlined-decoration-style
+    title: Decoration Style
+    title.zh: 装饰样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+    -
+      label: solid
+      value: solid
+    -
+      label: double
+      value: double
+    -
+      label: dotted
+      value: dotted
+    -
+      label: dashed
+      value: dashed
+    -
+      label: wavy
+      value: wavy
+  -
+    id: font-underlined-decoration-color
+    title: Decoration Color
+    title.zh: 装饰颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 33.3%, 1)
+    default-dark: hsla(0, 0%, 66.7%, 1)
+  -
+    id: font-underlined-decoration-width
+    title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 0.5
+    format: px
+    default: 1
+  -
+    id: font-underlined-decoration-offset
+    title: Underline Offset(px)
+    title.zh: 下划线偏移（px）
+    type: variable-number-slider
+    min: -5
+    max: 5
+    step: 0.5
+    format: px
+    default: 2
+  -
+    id: custom-strikethrough-style
+    title: Strikethrough Style
+    title.zh: 删除线样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-strikethrough-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 53%)
+    default-dark: hsl(0, 0%, 60%)
+  -
+    id: font-strikethrough-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  -
+    id: font-strikethrough-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: font-strikethrough-decoration-style
+    title: Decoration Style
+    title.zh: 装饰样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+    -
+      label: solid
+      value: solid
+    -
+      label: double
+      value: double
+    -
+      label: dotted
+      value: dotted
+    -
+      label: dashed
+      value: dashed
+    -
+      label: wavy
+      value: wavy
+  -
+    id: font-strikethrough-decoration-color
+    title: Decoration Color
+    title.zh: 装饰颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 53%, 1)
+    default-dark: hsla(0, 0%, 60%, 1)
+  -
+    id: font-strikethrough-decoration-width
+    title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 0.5
+    format: px
+    default: 1
+  -
+
+*/
+/* @settings
+name: Inline Elements
+id: inline-elements
+settings:
+  -
+    id: header-style
+    title: Header Style
+    title.zh: 标题样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: header-level-indicator
+    title: Header Level Indicator
+    title.zh: 标题层级指示器
+    description: If turned on, the collapse indicator will not be displayed and clicking the level indicator will fold or unfold the contents of a header.
+    description.zh: 如果开启，折叠指示器将不会显示，点击标题层级指示器将展开或折叠标题下的内容。
+    type: class-toggle
+    default: true
+  -
+    id: header-hovering-underline
+    title: Header Hovering Underline
+    title.zh: 标题悬停下划线
+    type: class-toggle
+    default: true
+  -
+    id: colorful-headers
+    title: Headers Coloring
+    title.zh: 彩色标题
+    type: class-toggle
+    default: true
+  -
+    id: header-color-gradient
+    title: Gradient Header Colors
+    title.zh: 渐变标题颜色
+    type: class-toggle
+    default: true
+  -
+    id: tag-style
+    title: Tag Style
+    title.zh: 标签样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: custom-tag-color-fill
+    title: Color Fill
+    title.zh: 颜色填充
+    type: class-select
+    default: tag-outline
+    options:
+    -
+      label: outline
+      value: tag-outline
+    -
+      label: fill
+      value: tag-fill
+  -
+    id: tag-radius
+    title: Radius(em)
+    title.zh: 圆角（em）
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    format: em
+    default: 1
+  -
+    id: checkbox-style
+    title: Checkbox Style
+    title.zh: 复选框样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: circle-checkbox
+    title: Circle Checkbox
+    title.zh: 圆形复选框
+    type: class-toggle
+    default: true
+  -
+    id: callout-style
+    title: Callout Style
+    title.zh: 标注样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: callout-dogs-ear
+    title: Dog's Ear
+    title.zh: 折角
+    description: It's kind of useless but we keeped this feature in case you like it.
+    description.zh: 这个功能有点没用，但万一你喜欢呢？
+    type: class-toggle
+    default: false
+  -
+    id: callout-dogs-ear-size
+    title: Dog's Ear Size(em)
+    title.zh: 折角大小（em）
+    type: variable-number-slider
+    min: 20
+    max: 60
+    step: 1
+    format: px
+    default: 30
+  -
+    id: embed-style
+    title: Embed Style
+    title.zh: 嵌入样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: embed-alt
+    title: Embed Alt
+    title.zh: 嵌入图片别名
+    type: class-toggle
+    default: true
+  -
+    id: embed-alt-position
+    title: Embed Alt Position
+    title.zh: 别名位置
+    type: class-select
+    default: embed-alt-right
+    options:
+    -
+      label: left
+      value: embed-alt-left
+    -
+      label: middle
+      value: embed-alt-middle
+    -
+      label: right
+      value: embed-alt-right
+  -
+*/
+/* @settings
+name: File Tree Style
+id: file-tree-style
+settings:
+  -
+    id: static-style
+    title: Static Style
+    title.zh: 静态样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: file-tree-icons
+    title: File Tree Icons
+    title.zh: 文件树图标
+    type: class-toggle
+    default: true
+  -
+    id: color-expanded-folder-indicator
+    title: Expanded Folder Indicator Coloring
+    title.zh: 展开文件夹指示器颜色
+    type: class-toggle
+    default: true
+  -
+    id: active-file-border
+    title: Active File Border
+    title.zh: 活动文件边框
+    type: class-toggle
+    default: true
+  -
+    id: Dynamic Style
+    title: Dynamic Style
+    title.zh: 动态样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: indicate-child
+    title: Indicate Child When Hovering
+    title.zh: 悬停时指示子文件
+    type: class-toggle
+    default: true
+  -
+    id: indicate-ascendant
+    title: Indicate Ascendant When Hovering
+    title.zh: 悬停时指示父文件
+    type: class-toggle
+    default: true
+  -
+    id: opaque-expanded-folder
+    title: Opaque Expanded Folder
+    title.zh: 不透明展开文件夹
+    description: If turned on, the expanded folder will be less transparent.
+    description.zh: 如果开启，展开的文件夹将会更不透明。
+    type: class-toggle
+    default: true
+  -
+*/
+/*
+@settings
+name: Focus Mode
+id: focus-mode
+settings:
+  -
+    id: fade-out-inactive-lines
+    title: Fade Out Inactive Lines
+    title.zh: 淡化非活动行
+    type: class-toggle
+    default: true
+  -
+    id: inactive-opacity
+    title: Inactive Opacity
+    title.zh: 淡化透明度
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.3
+  -
+    id: inactive-hover-opacity
+    title: Inactive Hover Opacity
+    title.zh: 悬停时透明度
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.8
+  -
+    id: focuse-transition-duration
+    title: Transition Duration(s)
+    title.zh: 过渡时长（秒）
+    type: variable-number-slider
+    format: s
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.2
+  -
+    id: zen-mode
+    title: Zen Mode
+    title.zh: Zen 模式
+    description: Hide all UI elements except the editor.
+    description.zh: 隐藏除编辑器外的所有界面元素。
+    type: class-toggle
+    default: false
+*/
+/*# sourceMappingURL=theme.css.map */
