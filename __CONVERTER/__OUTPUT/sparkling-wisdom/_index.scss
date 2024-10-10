@@ -1,92 +1,4 @@
-@font-face {
-  font-family: "Avenir Next";
-  src: url(public/fonts/94f2f163d4b698242fef.otf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(public/fonts/367685b2ca6303dc3853.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(public/fonts/746a677fc34469759ede.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Inter";
-  src: url(public/fonts/450beda71fb8564202a0.woff2);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  src: url(public/fonts/c39581384bcfe728af02.woff2);
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(public/fonts/b0b9c035692f884e8635.woff2);
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(public/fonts/856e8f46fd911d2040c3.woff2);
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(public/fonts/bdbbdeddfdfff17b0879.woff2);
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Code Pro";
-  src: url(public/fonts/70cc7ff27245e82ad414.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Code Pro";
-  src: url(public/fonts/454577c22304619db035.ttf);
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Code Pro";
-  src: url(public/fonts/52ac8f3034507f1d9e53.ttf);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Code Pro";
-  src: url(public/fonts/05b618077343fbbd92b7.ttf);
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Flow Circular";
-  src: url(public/fonts/853ff76f08786ae44ca0.woff);
-  font-display: swap;
-}
+@import "fonts";
 
 :root {
   --mermaid-font: var(--default-font);
@@ -95,4 +7,80 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #202020;
+  --background-primary-alt: #1a1a1a;
+  --background-secondary: #000000;
+  --background-secondary-alt: #020519;
+  --background-modifier-border: #333;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #7f6df2;
+  --text-accent-hover: #8875ff;
+  --text-normal: #dcddde;
+  --text-muted: #999;
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #666;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: #483699;
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-accent-hover: #4d3ca6;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+}
+
+:root[saved-theme="light"] {
+  --background-primary: #ffffff;
+  --background-primary-alt: #f5f6f8;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --background-modifier-border: #ddd;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #a4e7c3;
+  --background-modifier-error: #990000;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #bb0000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --text-muted: #888888;
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: #999999;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent: #7b6cd9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #8273e6;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
 }

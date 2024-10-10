@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -65,4 +67,10 @@ body {
   --fc-button-bg-color: var(--color-base-20);
   --fc-button-border-color: transparent;
   --fc-neutral-bg-color: var(--color-base-20);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

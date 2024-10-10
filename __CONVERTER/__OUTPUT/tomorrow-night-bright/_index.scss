@@ -1,5 +1,29 @@
+@import "fonts";
+
 :root {
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --text-normal: var(--color-1);
+  --text-muted: var(--color-5);
+  --text-accent: var(--color-3);
+  --text-on-accent: var(--color-1);
+  --text-selection: var(--color-10);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --interactive-accent-rgb: 72, 54, 153;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+}
+
+:root[saved-theme="light"] {
+  --text-accent: var(--color-3);
+  --text-on-accent: var(--color-1);
 }

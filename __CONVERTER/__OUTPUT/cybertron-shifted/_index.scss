@@ -1,5 +1,52 @@
+@import "fonts";
+
 :root {
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --glow-color-const-blue: #6c99bb;
+  --glow-color-class-green: #e6f355;
+  --glow-color-orange-param: #e87d3e;
+  --glow-color-tag-salmon: #fc929e;
+  --glow-color-variable-mint: #e6eee7;
+  --glow-color-escape-cyan: #89ddff;
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #141414;
+  --background-secondary-alt: #222222;
+  --text-normal: var(--glow-color-variable-mint);
+  --text-faint: #999999;
+  --text-muted: #aaaaaa;
+  --text-inline-code: var(--glow-color-tag-salmon);
+  --text-selection: #164f92;
+  --text-on-accent: #5dbcd2;
+  --text-accent: #319cb4;
+  --text-title-h2: #b9adff;
+  --text-title-h3: #52c1da;
+  --text-title-h6: #b4b4b4;
+  --text-link: #99ff99;
+  --text-a: #d669bc;
+  --pre-code: #40444d;
+  --inline-pre-code: #131315;
+  --interactive-accent: rgb(252, 246, 1, 0.95);
+  --interactive-accent-muted: rgb(252, 246, 1, 0.55);
+  --interactive-before: #5e6565;
+  --blockquote-border: #9e8aff;
+  --interactive-accent-rgb: #fe8019;
+  --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --scrollbar-bg: rgb(20, 20, 20, 0);
+  --scrollbar-thumb-bg: #595959;
+  --background-modifier-error: #36393f;
+  --background-modifier-success: #36393f;
+  --background-modifier-form-field: #2f3136;
+  --background-modifier-form-field-highlighted: #2f3136;
+  --custom-black: #000000;
+  --nav-items-space: 4px 8px;
+}
+
+:root[saved-theme="light"] {
 }

@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -38,4 +40,10 @@ body {
   --nav-item-color-hover: var(--color-bossidian-primary);
   --vault-name-color: var(--color-bossidian-primary);
   --nav-item-color-highlighted: var(--color-bossidian-secondary);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -61,4 +63,28 @@ body {
   --accent-s: 41%;
   --accent-l: 60%;
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8.8%));
+}
+
+:root[saved-theme="dark"] {
+  --cm-active: #2e2e1d39;
+  --active-bg: #2527229e;
+  --background-primary: #110f0f;
+  --primary-90: rgba(17, 15, 15, 0.9);
+  --background-secondary: #111111;
+  --blockquote-background-color: #1d1d1da4;
+  --blockquote-background-hover: #232323ef;
+  --text-stroke-color: hsl(45deg 100% 84%);
+  --muted-accent-rgb: 198 193 135;
+}
+
+:root[saved-theme="light"] {
+  --cm-active: #f0f09839;
+  --active-bg: #edffd19e;
+  --background-primary: #fefff6;
+  --background-secondary: var(--background-primary);
+  --primary-90: rgb(254 255 246 / 0.9);
+  --blockquote-background-color: #dae6c5a4;
+  --blockquote-background-hover: rgba(246, 246, 199, 0.937);
+  --text-stroke-color: var(--color-base-100);
+  --muted-accent-rgb: 110 102 3;
 }

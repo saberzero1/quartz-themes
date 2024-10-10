@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -18,4 +20,40 @@ body {
   --link-external-color-hover: var(--my-link-color-hover);
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
+}
+
+:root[saved-theme="dark"] {
+  --my-link-color: #59a2c5;
+  --my-link-color-hover: #b3a14b;
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #202225;
+  --background-secondary-alt: #0c1018d1;
+  --background-modifier-border: #92a1a17a;
+  --text-normal: #bbc0c5;
+  --text-faint: #a09b80;
+  --text-accent: #ff9640ba;
+  --text-accent-hover: #b3a14b;
+  --bold-color: #b5c7c7;
+  --italic-color: #b8cece;
+  --interactive-accent: #92a1a1;
+  --text-highlight-bg: #ffff0033;
+}
+
+:root[saved-theme="light"] {
+  --my-link-color: #59a2c5;
+  --my-link-color-hover: #b3a14b;
+  --background-primary: #e0e2e5;
+  --background-primary-alt: #d6d9dc;
+  --background-secondary: #f0f1f2;
+  --background-secondary-alt: #ffffff;
+  --background-modifier-border: #92a1a17a;
+  --text-normal: #2f3136;
+  --text-faint: #5f615e;
+  --text-accent: #ff9640ba;
+  --text-accent-hover: #b3a14b;
+  --bold-color: #4a4c4f;
+  --italic-color: #474a4d;
+  --interactive-accent: #92a1a1;
+  --text-highlight-bg: #00000033;
 }

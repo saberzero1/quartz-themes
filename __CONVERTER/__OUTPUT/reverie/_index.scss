@@ -1,6 +1,61 @@
+@import "fonts";
+
 :root {
   --font-monospace: "Source Code Pro", monospace;
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #1a2023;
+  --background-primary-alt: #1a2023;
+  --background-secondary: #222b2f;
+  --background-secondary-alt: #073334;
+  --text-normal: #faf2d6;
+  --text-faint: #bdae93;
+  --text-title-h1: #c1dde1;
+  --text-title-h2: #8ab8bd;
+  --text-title-h3: #56a7b0;
+  --text-title-h4: #309093;
+  --text-title-h5: #0b797d;
+  --text-title-h6: #0b797d;
+  --text-highlight-bg: #22a578;
+  --text-link: #83a598;
+  --text-a-hover: #83a598;
+  --inline-code: #83a598;
+  --code-block: #83a598;
+  --text-a: #2ccab7;
+  --interactive-accent: #0b797d;
+  --text-accent: #2ccab7;
+  --text-on-accent: #fff;
+  --interactive-accent-rgb: #2ccab7;
+  --vim-cursor: #2ccab7;
+  --pre-code: #073334;
+  --interactive-before: #7c6f64;
+  --background-modifier-border: #95c1bb;
+  --text-selection: #16304d;
+}
+
+:root[saved-theme="light"] {
+  --background-primary: #e7e7e7;
+  --background-primary-alt: #e7e7e7;
+  --text-normal: #1a2023;
+  --text-faint: #665c54;
+  --text-title-h1: #1bb0b6;
+  --text-title-h2: #3fa7ab;
+  --text-title-h3: #458588;
+  --text-title-h4: #4b6667;
+  --text-title-h5: #3b4646;
+  --text-link: #458588;
+  --text-a-hover: #458588;
+  --inline-code: #458588;
+  --pre-code: #bebebe;
+  --interactive-before: #a89984;
+  --background-modifier-border: #1bb0b6;
+  --text-a: #22a578;
+  --interactive-accent: #22a578;
+  --text-accent: #22a578;
+  --interactive-accent-rgb: #22a578;
+  --vim-cursor: #22a578;
 }

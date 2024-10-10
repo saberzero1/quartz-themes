@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -25,4 +27,26 @@ body {
   --toggle-thumb-color: var(--colorOnPrimary);
   --text-on-accent: var(--colorOnPrimary);
   --text-on-accent-inverted: var(--colorOnPrimary);
+}
+
+:root[saved-theme="dark"] {
+  --colorPrimary: hsl(var(--accent-h), 100%, 80%);
+  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 10%);
+  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 20%);
+  --colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 10%);
+  --colorOnPrimary: var(--colorBackgroundSecondary);
+  --colorBackgroundPrimary: hsl(var(--accent-h), 20%, 7%);
+  --colorBackgroundSecondary: hsl(var(--accent-h), 30%, 12%);
+  --nav-item-color: white;
+}
+
+:root[saved-theme="light"] {
+  --colorPrimary: hsl(var(--accent-h), 100%, 31%);
+  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 93%);
+  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 85%);
+  --colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 91%);
+  --colorOnPrimary: white;
+  --colorBackgroundPrimary: hsl(var(--accent-h), 100%, 97%);
+  --colorBackgroundSecondary: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 2%);
+  --nav-item-color: black;
 }

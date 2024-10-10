@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --light-base: #faf4ed;
   --light-surface: #fffaf3;
@@ -17,4 +19,50 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --background-modifier-border: var(--overlay);
+  --text-normal: var(--text);
+  --text-muted: var(--muted);
+  --text-accent: var(--love);
+  --text-accent-hover: var(--foam);
+  --tag-color: var(--iris);
+  --tag-background: var(--overlay);
+  --h1-color: var(--love);
+  --h2-color: var(--gold);
+  --h3-color: var(--pine);
+  --h4-color: var(--foam);
+  --h5-color: var(--iris);
+  --h6-color: var(--rose);
+  --code-normal: var(--subtle);
+  --code-background: var(--highlight-low);
+  --link-url: var(--pine);
+  --link-url-hover: var(--iris);
+  --bold-color: var(--subtle);
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--light-base);
+  --background-secondary: var(--light-surface);
+  --background-modifier-border: var(--light-overlay);
+  --text-normal: var(--light-text);
+  --text-muted: var(--light-muted);
+  --text-accent: var(--light-love);
+  --text-accent-hover: var(--light-foam);
+  --tag-color: var(--light-iris);
+  --tag-background: var(--light-overlay);
+  --h1-color: var(--light-love);
+  --h2-color: var(--light-gold);
+  --h3-color: var(--light-pine);
+  --h4-color: var(--light-foam);
+  --h5-color: var(--light-iris);
+  --h6-color: var(--light-rose);
+  --code-normal: var(--light-subtle);
+  --code-background: var(--light-highlight-low);
+  --link-url: var(--light-pine);
+  --link-url-hover: var(--light-iris);
+  --bold-color: var(--light-subtle);
 }

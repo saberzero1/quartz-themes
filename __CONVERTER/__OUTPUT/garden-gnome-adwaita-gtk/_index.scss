@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -148,4 +150,104 @@ body {
   --only-tab-text: var(--tab-text-color-active);
   --only-tab-text-hover: var(--tab-text-color-active);
   --only-tab-close-button: transparent;
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: hsl(220, 3%, 12%);
+  --background-primary-alt: hsl(290, 1%, 15%);
+  --background-secondary: hsl(0, 0%, 19%);
+  --background-hover: hsla(0, 0%, 100%, 0.067);
+  --background-active: hsla(0, 0%, 100%, 0.133);
+  --background-active-hover: hsla(0, 0%, 100%, 0.2);
+  --background-double-active: hsla(0, 0%, 100%, 0.267);
+  --titlebar-background-focused: var(--background-secondary);
+  --titlebar-background: var(--background-primary-alt);
+  --interactive-accent: var(--blue-3);
+  --text-accent: var(--blue-2);
+  --text-accent-hover: var(--blue-1);
+  --callout-default: var(--light-5-rgb);
+  --callout-info: var(--blue-3-rgb);
+  --callout-todo: var(--blue-3-rgb);
+  --callout-important: var(--cyan-3-rgb);
+  --callout-summary: var(--cyan-3-rgb);
+  --callout-tip: var(--cyan-3-rgb);
+  --callout-success: var(--green-3-rgb);
+  --callout-question: var(--yellow-5-rgb);
+  --callout-warning: var(--orange-3-rgb);
+  --callout-bug: var(--red-2-rgb);
+  --callout-error: var(--red-2-rgb);
+  --callout-fail: var(--red-2-rgb);
+  --callout-example: var(--purple-2-rgb);
+  --callout-quote: var(--brown-2-rgb);
+  --color-red-rgb: var(--red-3-rgb);
+  --color-orange-rgb: var(--orange-3-rgb);
+  --color-yellow-rgb: var(--yellow-3-rgb);
+  --color-green-rgb: var(--green-3-rgb);
+  --color-cyan-rgb: var(--cyan-3-rgb);
+  --color-blue-rgb: var(--blue-3-rgb);
+  --color-purple-rgb: var(--purple-3-rgb);
+  --color-pink-rgb: var(--pink-3-rgb);
+  --color-red: var(--red-3);
+  --color-orange: var(--orange-3);
+  --color-yellow: var(--yellow-3);
+  --color-green: var(--green-3);
+  --color-cyan: var(--cyan-3);
+  --color-blue: var(--blue-3);
+  --color-purple: var(--purple-3);
+  --color-pink: var(--pink-3);
+  --invert-filter-b: invert() hue-rotate(180deg);
+  --invert-filter-w: none;
+  --color-invert-filter-b: invert();
+  --color-invert-filter-w: none;
+  --tab-scroll-mask-color: #3e3e3e;
+}
+
+:root[saved-theme="light"] {
+  --background-primary: hsl(0, 0%, 98%);
+  --background-primary-alt: hsl(0, 0%, 95%);
+  --background-secondary: hsl(0, 0%, 92%);
+  --background-hover: hsla(0, 0%, 0%, 0.067);
+  --background-active: hsla(0, 0%, 0%, 0.133);
+  --background-active-hover: hsla(0, 0%, 0%, 0.2);
+  --background-double-active: hsla(0, 0%, 0%, 0.267);
+  --titlebar-background-focused: var(--light-1);
+  --interactive-accent: var(--blue-3);
+  --text-accent: var(--blue-4);
+  --text-accent-hover: var(--blue-3);
+  --titlebar-background: var(--light-1);
+  --callout-default: var(--dark-2-rgb);
+  --callout-info: var(--blue-3-rgb);
+  --callout-todo: var(--blue-3-rgb);
+  --callout-important: var(--cyan-3-rgb);
+  --callout-summary: var(--cyan-3-rgb);
+  --callout-tip: var(--cyan-3-rgb);
+  --callout-success: var(--green-4-rgb);
+  --callout-question: var(--yellow-5-rgb);
+  --callout-warning: var(--orange-3-rgb);
+  --callout-bug: var(--red-3-rgb);
+  --callout-error: var(--red-3-rgb);
+  --callout-fail: var(--red-3-rgb);
+  --callout-example: var(--purple-3-rgb);
+  --callout-quote: var(--brown-3-rgb);
+  --color-red-rgb: var(--red-3-rgb);
+  --color-orange-rgb: var(--orange-3-rgb);
+  --color-yellow-rgb: var(--yellow-5-rgb);
+  --color-green-rgb: var(--green-3-rgb);
+  --color-cyan-rgb: var(--cyan-3-rgb);
+  --color-blue-rgb: var(--blue-3-rgb);
+  --color-purple-rgb: var(--purple-3-rgb);
+  --color-pink-rgb: var(--pink-3-rgb);
+  --color-red: var(--red-3);
+  --color-orange: var(--orange-3);
+  --color-yellow: var(--yellow-5);
+  --color-green: var(--green-3);
+  --color-cyan: var(--cyan-3);
+  --color-blue: var(--blue-3);
+  --color-purple: var(--purple-3);
+  --color-pink: var(--pink-3);
+  --invert-filter-b: none;
+  --invert-filter-w: invert() hue-rotate(180deg);
+  --color-invert-filter-b: none;
+  --color-invert-filter-w: invert();
+  --tab-scroll-mask-color: #dbdbdb;
 }

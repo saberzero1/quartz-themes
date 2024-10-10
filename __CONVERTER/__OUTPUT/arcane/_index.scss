@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -594,4 +596,10 @@ body {
   --green-5: #50fa7b;
   --green-6: hsl(135, 65%, 65%);
   --green-7: rgba(101, 230, 168, 0.7);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

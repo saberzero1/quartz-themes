@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --color-150: rgb(69, 46, 123);
   --color-140: rgb(83, 55, 147);
@@ -54,4 +56,10 @@ body {
   --checklist-done-color: rgb(80, 80, 80);
   --bold-color: var(--color-accent);
   --italic-color: var(--color-accent);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

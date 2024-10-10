@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --bg0-dark: #1d2021;
   --bg1-dark: #3c3836;
@@ -65,4 +67,61 @@
 
 body {
   --font-monospace: "Source Code Pro", "Source Code Pro", "Source Code Pro";
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--bg-dark);
+  --background-primary-alt: var(--bg-dark);
+  --background-secondary: var(--bg-dark);
+  --background-secondary-alt: var(--bg-dark);
+  --text-normal: var(--fg-dark);
+  --text-faint: var(--grey1-dark);
+  --text-title-h1: var(--dim-red);
+  --text-title-h2: var(--dim-orange);
+  --text-title-h3: var(--dim-yellow);
+  --text-title-h4: var(--dim-green);
+  --text-title-h5: var(--dim-aqua);
+  --text-title-h6: var(--dim-purple);
+  --text-link: var(--faded-blue);
+  --text-a: var(--dim-aqua);
+  --text-a-hover: var(--faded-aqua);
+  --pre-code: var(--bg1-dark);
+  --text-highlight-bg: var(--bg_green);
+  --interactive-accent: var(--dim-aqua);
+  --interactive-before: var(--bg5-dark);
+  --background-modifier-border: var(--bg5-dark);
+  --text-accent: var(--dim-blue);
+  --interactive-accent-rgb: var(--dim-blue);
+  --inline-code: var(--dim-blue);
+  --code-block: var(--fg-dark);
+  --vim-cursor: var(--faded-blue);
+  --text-selection: var(--bg5-dark);
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--bg-light);
+  --background-primary-alt: var(--bg-light);
+  --background-secondary: var(--bg-light);
+  --background-secondary-alt: var(--bg-light);
+  --text-normal: var(--fg-light);
+  --text-faint: var(--grey1-light);
+  --text-title-h1: var(--light-red);
+  --text-title-h2: var(--light-orange);
+  --text-title-h3: var(--light-yellow);
+  --text-title-h4: var(--light-green);
+  --text-title-h5: var(--light-aqua);
+  --text-title-h6: var(--light-purple);
+  --text-link: var(--light-blue);
+  --text-a: var(--light-dim-blue);
+  --text-a-hover: var(--light-blue);
+  --pre-code: var(--bg1-light);
+  --text-highlight-bg: var(--light-dim-green);
+  --interactive-accent: var(--bg5-light);
+  --interactive-before: var(--bg5-light);
+  --background-modifier-border: var(--bg5-light);
+  --text-accent: var(--bg5-light);
+  --interactive-accent-rgb: var(--light-dim-green);
+  --inline-code: var(--light-blue);
+  --code-block: var(--fg-light);
+  --vim-cursor: var(--light-blue);
 }

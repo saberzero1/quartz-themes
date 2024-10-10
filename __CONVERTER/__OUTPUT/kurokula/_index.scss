@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --kuro-red-normal: #d23e08;
   --kuro-red-normal-rgb: 210, 62, 8;
@@ -459,4 +461,13 @@ body {
   --callout-fail: var(--kuro-red-dark-rgb);
   --callout-error: var(--kuro-red-normal-rgb);
   --callout-quote: var(--kuro-brown-normal-rgb);
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--kuro-black-dark);
+  --background-secondary: var(--kuro-black-normal);
+  --background-secondary: #212121;
+}
+
+:root[saved-theme="light"] {
 }

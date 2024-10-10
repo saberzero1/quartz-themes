@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -21,4 +23,14 @@ body {
   --accent-h: 50;
   --accent-s: 80%;
   --accent-l: 55%;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
+  --ribbon-background: #e1e1e3;
+  --ribbon-background-collapsed: #e1e1e3;
+  --status-bar-background: #e1e1e3c0;
+  --icon-color: #e2b714;
 }

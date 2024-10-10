@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --table-border-radius: 8px;
 }
@@ -14,4 +16,24 @@ body {
   --slider-thumb-radius: 10px;
   --font-text-theme: "Cascadia Mono", Sans-serif;
   --file-line-width: 750px;
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--accent-color-bg_d);
+  --background-secondary: #0e0e0e;
+  --popover-width: 1050px;
+  --popover-height: 1250px;
+  --tab-max-width: 35%;
+  --callout-border-width: 0.05rem;
+  --callout-border-opacity: 0.8 !important;
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--accent-color-bg);
+  --background-secondary: rgb(255, 255, 255);
+  --popover-width: 1050px;
+  --popover-height: 1250px;
+  --tab-max-width: 35%;
+  --callout-border-width: 0.05rem;
+  --callout-border-opacity: 0.8 !important;
 }

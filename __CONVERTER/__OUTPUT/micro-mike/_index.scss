@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -155,4 +157,14 @@ body {
   --text-on-accent-inverted: #ffffff;
   --ribbon-background: var(--bottom);
   --ribbon-background-collapsed: var(--bottom);
+}
+
+:root[saved-theme="dark"] {
+  --input-shadow: var(--bevelStyleButton);
+  --input-shadow-hover: var(--bevelStyleButton);
+  --interactive-normal: var(--level2);
+  --interactive-hover: var(--level2_a);
+}
+
+:root[saved-theme="light"] {
 }

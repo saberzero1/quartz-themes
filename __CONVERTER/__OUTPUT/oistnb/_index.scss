@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --orange-darkest: #802200;
   --orange-darker: #aa4400;
@@ -37,4 +39,30 @@ body {
   --spacing-m: 12px;
   --spacing-l: 16px;
   --spacing-xl: 24px;
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--true-black);
+  --background-secondary: var(--off-black);
+  --background-tertiary: var(--dark-gray);
+  --text-normal: var(--orange-medium);
+  --text-muted: var(--orange-dark);
+  --text-faint: var(--orange-darker);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--off-white);
+  --background-secondary: var(--white);
+  --background-tertiary: var(--light-gray);
+  --text-normal: var(--true-black);
+  --text-muted: var(--medium-gray);
+  --text-faint: var(--light-gray);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
 }

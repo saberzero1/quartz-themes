@@ -1,0 +1,18 @@
+:root[saved-theme="dark"] {
+  --font-text: "iA Writer Duo", var(--font-text-override), "iA Writer Duo", var(--font-interface);
+  --line-height-normal: 1.7;
+  --link-decoration: underline;
+  --link-unresolved-decoration-color: var(--text-muted);
+  --link-external-decoration-color: var(--text-muted);
+  --checklist-done-decoration: line-through;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  --checkbox-marker-color: transparent;
+  --background-primary: #1b1b1b;
+  --background-secondary: #141414;
+  --text-normal: #ccc;
+  --text-muted: #707070;
+  --text-highlight-bg: #494113;
+  --text-highlight-border: 4px solid #d4b000;
+  --text-highlight-color: #dccf99;
+}

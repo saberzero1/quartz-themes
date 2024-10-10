@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --color-dark: #3f3e3c;
   --color-gray: #696966;
@@ -30,4 +32,60 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --color-front: var(--color-light);
+  --color-back: var(--color-dark);
+  --color-off: #ccc;
+  --background-nav-alt: var(--color-dark);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-dark);
+  --background-primary: var(--color-dark);
+  --background-secondary-alt: var(--color-dark);
+  --background-secondary: var(--color-darkt);
+  --code-block-background: #000;
+  --code-block-border: var(--color-gray-light);
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent2);
+  --text-accent-hover: var(--color-accent);
+  --text-accent: var(--color-accent2);
+  --text-faint: rgba(150, 150, 150, 255);
+  --text-highlight-bg: #d0d6b1;
+  --text-nav-selected: var(--color-light);
+  --text-nav: var(--color-light);
+  --text-normal: var(--color-light);
+  --text-selection: #9a71aa38;
+}
+
+:root[saved-theme="light"] {
+  --color-accent: var(--color-green);
+  --color-accent-faded: var(--color-green-light);
+  --color-blue-accent: var(--color-blue);
+  --color-blue-accent-faded: var(--color-blue-lightest);
+  --color-front: var(--color-dark);
+  --color-back: var(--color-light);
+  --color-off: var(--color-gray-light);
+  --background-nav-alt: var(--color-light);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-light);
+  --background-primary: var(--color-light);
+  --background-secondary-alt: var(--color-light);
+  --background-secondary: var(--color-light);
+  --code-block-border: var(--color-gray-light);
+  --code-block-background: #fff;
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent);
+  --text-accent-hover: var(--color-blue-accent);
+  --text-accent: var(--color-accent);
+  --text-faint: var(--color-gray-light);
+  --text-highlight-bg: var(--color-green-lightest);
+  --text-nav-selected: var(--color-dark);
+  --text-nav: var(--color-dark);
+  --text-normal: var(--color-dark);
+  --text-selection: var(--color-purple-lightest);
 }

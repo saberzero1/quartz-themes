@@ -1,0 +1,10 @@
+:root[saved-theme="light"] {
+  --color-base-35: hsla(210, 15%, 73%, 1);
+  --color-base-50: hsla(217, 15%, 73%, 1);
+  --color-base-70: hsla(218, 19%, 39%, 1);
+  --color-red: hsla(365, 85%, 55%, 1);
+  --color-muted: var(--color-base-70);
+  --color-italic: hsla(215, 43%, 63%, 1);
+  --color-highlight: var(--color-yellow);
+  --text-highlight-bg: hsla(45, 53%, 73%, 1);
+}

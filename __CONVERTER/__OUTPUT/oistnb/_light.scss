@@ -1,0 +1,12 @@
+:root[saved-theme="light"] {
+  --background-primary: var(--off-white);
+  --background-secondary: var(--white);
+  --background-tertiary: var(--light-gray);
+  --text-normal: var(--true-black);
+  --text-muted: var(--medium-gray);
+  --text-faint: var(--light-gray);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
+}

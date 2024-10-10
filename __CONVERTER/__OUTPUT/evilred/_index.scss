@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --dark0: #390000;
   --dark1: #290202;
@@ -29,4 +31,81 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark1);
+  --background-secondary-alt: var(--dark2);
+  --text-normal: var(--light2);
+  --text-faint: var(--light0);
+  --text-muted: var(--light1);
+  --text-title-h1: var(--red);
+  --text-title-h2: var(--orange);
+  --text-title-h3: var(--yellow);
+  --text-title-h4: var(--green);
+  --text-title-h5: var(--purple);
+  --text-title-h6: var(--orange);
+  --text-link: var(--frost0);
+  --text-a: var(--frost3);
+  --text-a-hover: var(--frost2);
+  --text-mark: rgba(147, 217, 236, 0.3);
+  --pre-code: var(--dark1);
+  --text-highlight-bg: rgba(163, 190, 140, 0.3);
+  --text-highlight-bg-active: var(--green);
+  --interactive-accent: var(--frost0);
+  --interactive-before: var(--dark3);
+  --background-modifier-border: var(--dark2);
+  --text-accent: var(--orange);
+  --interactive-accent-rgb: var(--orange);
+  --inline-code: var(--frost1);
+  --code-block: var(--frost1);
+  --vim-cursor: var(--orange);
+  --text-selection: var(--dark3);
+  --text-tag: var(--frost0);
+  --task-checkbox: var(--frost0);
+  --table-header: hsl(220, 16%, 16%);
+  --table-row-even: hsl(220, 16%, 20%);
+  --table-row-odd: hsl(220, 16%, 24%);
+  --table-hover: var(--dark3);
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--light1);
+  --background-primary-alt: var(--light1);
+  --background-secondary: var(--light2);
+  --background-secondary-alt: var(--light1);
+  --text-normal: var(--dark1);
+  --text-faint: var(--dark3);
+  --text-muted: var(--dark2);
+  --text-title-h1: var(--red);
+  --text-title-h2: var(--dark-orange);
+  --text-title-h3: var(--yellow);
+  --text-title-h4: var(--green);
+  --text-title-h5: var(--purple);
+  --text-title-h6: var(--orange);
+  --text-link: var(--frost0);
+  --text-a: var(--frost3);
+  --text-a-hover: var(--frost1);
+  --text-mark: rgba(136, 192, 208, 0.3);
+  --pre-code: var(--light2);
+  --text-highlight-bg: rgba(235, 203, 139, 0.6);
+  --text-highlight-bg-active: var(--yellow);
+  --interactive-accent: var(--frost0);
+  --interactive-before: var(--light0);
+  --background-modifier-border: var(--light1);
+  --text-accent: var(--orange);
+  --interactive-accent-rgb: var(--orange);
+  --inline-code: var(--frost1);
+  --code-block: var(--frost1);
+  --vim-cursor: var(--orange);
+  --text-selection: var(--light0);
+  --text-tag: var(--frost2);
+  --task-checkbox: var(--frost0);
+  --table-header: hsl(217, 74%, 70%);
+  --table-row-even: hsl(220, 16%, 94%);
+  --table-row-odd: hsl(220, 16%, 98%);
+  --table-hover: var(--light1);
+  --icon-color: var(--light2);
 }

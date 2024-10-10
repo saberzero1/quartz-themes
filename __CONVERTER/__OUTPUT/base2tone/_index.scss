@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --uno: 260;
   --duo: 28;
@@ -37,4 +39,33 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: var(--baseA0);
+  --background-primary-alt: var(--baseA1);
+  --background-secondary: var(--baseA2);
+  --background-secondary-alt: var(--baseA1);
+  --background-accent: var(--baseA4);
+  --background-modifier-border: var(--baseA2);
+  --text-accent: var(--baseB0);
+  --text-accent-hover: var(--baseB1);
+  --text-normal: var(--baseB7);
+  --text-muted: var(--baseB6);
+  --text-faint: var(--baseB5);
+  --text-highlight-bg: var(--baseD0);
+  --text-selection: hsla(var(--uno), 75%, 61%, 0.25);
+  --text-on-accent: var(--baseC7);
+  --interactive-normal: var(--baseA0);
+  --interactive-hover: var(--baseD0);
+  --interactive-accent: var(--baseD0);
+  --interactive-accent-hover: var(--baseD1);
+  --operators: var(--baseA3);
+  --link-external: var(--baseD0);
+  --link-internal: var(--baseD4);
+  --inline-code: var(--baseD0);
+  --bullet: var(--baseD0);
+}
+
+:root[saved-theme="light"] {
 }

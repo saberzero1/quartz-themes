@@ -1,7 +1,26 @@
+@import "fonts";
+
 :root {
 }
 
 body {
   --nav-item-background-active: var(--interactive-accent);
   --nav-item-color-active: var(--text-on-accent);
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #161a1d;
+  --background-secondary: #0b0d0f;
+  --divider-color: #30363d;
+  --ribbon-background: #000000;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #161a1f;
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.09);
+  --inline-title-weight: normal;
+  --inline-title-size: 3em;
+}
+
+:root[saved-theme="light"] {
 }

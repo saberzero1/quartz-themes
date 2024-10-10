@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -27,4 +29,10 @@ body {
   --text-normal: #bbbbbb;
   --h2-color: #fff;
   --h3-color: #fff;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

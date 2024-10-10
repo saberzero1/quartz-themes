@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --dark0: #0f1116;
   --dark1: #1f2026;
@@ -45,4 +47,96 @@ body {
   --checkbox-radius: 0;
   --embed-border-left: 6px double var(--interactive-accent);
   --status-bar-text-color: var(--teal3) !important;
+}
+
+:root[saved-theme="dark"] {
+  --link-unresolved-color: var(--light1);
+  --color-teal0-rgb: var(--teal0);
+  --color-teal0: var(--teal0);
+  --color-light3-rgb: var(--light3);
+  --color-light3: var(--light3);
+  --color-frost1-rgb: var(--frost1);
+  --color-frost1: var(--frost1);
+  --color-cyan-rgb: var(--frost1);
+  --color-cyan: var(--frost1);
+  --color-blue-rgb: var(--frost5);
+  --color-blue: var(--frost5);
+  --color-frost0-rgb: var(--frost0);
+  --color-frost0: var(--frost0);
+  --color-teal0-rgb: var(--teal0);
+  --color-teal0: var(--teal0);
+  --color-red: var(--red);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark0);
+  --background-secondary-alt: var(--dark3);
+  --background-modifier-border: var(--dark2);
+  --cursor-line-background: rgba(var(--teal0), 0.2);
+  --text-normal: var(--light2);
+  --text-faint: var(--light1);
+  --text-muted: var(--frost0);
+  --text-accent: var(--teal0);
+  --text-accent-hover: var(--light3);
+  --bold-color: var(--red);
+  --italic-color: var(--yellow);
+  --link-url: var(--light3);
+  --h1-color: var(--frost0);
+  --h2-color: var(--frost0);
+  --h3-color: var(--frost0);
+  --h4-color: var(--frost0);
+  --h5-color: var(--frost0);
+  --h6-color: var(--frost0);
+  --text-highlight-bg: var(--frost0);
+  --text-highlight-fg: var(--dark0);
+  --tag-color: var(--frost0);
+  --tag-background: var(--dark0);
+  --tag-background-hover: var(--dark0);
+  --titlebar-text-color-focused: var(--teal0);
+  --inline-title-color: var(--frost0);
+  --checkbox-color: var(--frost0);
+  --checkbox-color-hover: var(--light3);
+  --checkbox-border-color: var(--light3);
+  --checkbox-border-color-hover: var(--frost0);
+  --checklist-done-color: var(--frost0);
+  --table-header-background: var(--teal4);
+  --table-header-background-hover: var(--teal3);
+  --table-row-even-background: var(--dark3);
+  --table-row-odd-background: var(--dark2);
+  --table-row-background-hover: var(--frost5);
+  --text-selection: var(--teal4);
+  --flashing-background: var(--teal4);
+  --code-normal: var(--light2);
+  --code-background: var(--dark1);
+  --mermaid-note: var(--frost5);
+  --mermaid-loopline: var(--frost1);
+  --mermaid-exclude: var(--dark0);
+  --mermaid-seqnum: var(--dark0);
+  --icon-color-hover: var(--teal0);
+  --icon-color-focused: var(--teal0);
+  --nav-item-color-hover: var(--teal0);
+  --nav-item-color-active: var(--light3);
+  --nav-file-tag: var(--teal2);
+  --graph-line: var(--teal2);
+  --graph-node: var(--teal3);
+  --graph-node-tag: var(--teal4);
+  --graph-node-attachment: var(--teal1);
+  --calendar-hover: var(--teal0);
+  --calendar-background-hover: var(--dark0);
+  --calendar-week: var(--frost0);
+  --calendar-today: var(--frost0);
+  --dataview-key: var(--text-faint);
+  --dataview-key-background: rgba(var(--frost3), 0.3);
+  --dataview-value: var(--text-faint);
+  --dataview-value-background: rgba(var(--teal0), 0.3);
+  --tab-text-color-focused-active: var(--teal0);
+  --tab-text-color-focused-active-current: var(--light3);
+}
+
+:root[saved-theme="light"] {
 }

@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --color-tan: #ebdbb2;
   --color-tan-rgb: 235, 219, 178;
@@ -326,4 +328,10 @@ body {
   --vault-name-font-size: var(--font-ui-small);
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--color-tan);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -18,4 +20,27 @@ body {
   --h4-size: 1.2em;
   --h5-size: 1em;
   --h6-size: 1em;
+}
+
+:root[saved-theme="dark"] {
+  --text-normal: #eeeeee;
+  --code-background: #1a1a1a;
+  --cus-inline-code-text: #f3b37f;
+  --cus-code-block-border: #1c1c1c;
+  --cus-table-header: #171717;
+  --cus-table-gap-tr: #1a1a1a;
+  --table-row-background-hover: #171717;
+  --cus-highlight-cursor-line: rgba(225, 225, 225, 0.12);
+}
+
+:root[saved-theme="light"] {
+  --text-normal: #34495e;
+  --background-secondary: #ffffff;
+  --code-background: #f8f8f8;
+  --cus-inline-code-text: #e96900;
+  --cus-code-block-border: #f4f4f4;
+  --cus-table-header: #f2f2f2;
+  --cus-table-gap-tr: #fafafa;
+  --table-row-background-hover: #f2f2f2;
+  --cus-highlight-cursor-line: rgba(245, 204, 142, 0.12);
 }

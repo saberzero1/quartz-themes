@@ -1,5 +1,48 @@
+@import "fonts";
+
 :root {
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #2b2751;
+  --background-primary-alt: #1e1d3d;
+  --background-secondary: #201e42;
+  --background-secondary-alt: #2d2355;
+  --background-modifier-border: #121025;
+  --background-modifier-form-field: #2a2458;
+  --background-modifier-form-field-highlighted: #2d285e;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #79f269;
+  --background-modifier-error: #c80000bf;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #ff0000;
+  --background-modifier-cover: #171532;
+  --text-accent: #bd6af5;
+  --text-accent-hover: #fdc307;
+  --text-normal: #fff;
+  --text-muted: #c5b5ff;
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #c5b5ff;
+  --text-error: #ff3737bf;
+  --text-error-hover: #990000;
+  --text-highlight-bg: #662ca5;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: #8f2bd2;
+  --text-on-accent: #202020;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: #ddaa03;
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-accent-hover: #ae3afc;
+  --interactive-success: #79f269;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+}
+
+:root[saved-theme="light"] {
 }

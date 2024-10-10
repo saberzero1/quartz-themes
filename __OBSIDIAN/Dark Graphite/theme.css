@@ -87,9 +87,9 @@
   --ul-line-color: #777;
 
   --link-text: var(--text-accent);
-  --link-bg:      	;
+  --link-bg: #666a6c;
   --link-text-hover: var(--text-accent);
-  --link-bg-hover:      	;
+  --link-bg-hover: #666a6c;
 
   --hashtag-color: #3b3e43;
   --tag-text-color: var(--background-primary);

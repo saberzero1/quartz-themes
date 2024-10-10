@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -74,4 +76,10 @@ body {
   --tag-padding-x: 0;
   --tag-padding-y: 0;
   --code-size: var(--font-text-size);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

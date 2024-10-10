@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --white: #fcfcfc;
   --raisin-black: #1b1825;
@@ -17,4 +19,73 @@
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
+  --background-primary: var(--white);
+  --background-secondary: var(--white-smoke);
+  --background-secondary-alt: var(--anti-flash-white);
+  --background-code: var(--anti-flash-white);
+  --text-normal: var(--rich-black);
+  --text-accent: var(--folly);
+  --text-selection: var(--french-gray);
+  --text-header: var(--ylmn-blu);
+  --h1-color: var(--ylmn-blue);
+  --h1-gradient-start: transparent;
+  --h1-gradient-mid: var(--ylmn-blue);
+  --h1-gradient-end: transparent;
+  --h2-color: var(--ylmn-blue);
+  --h2-gradient-start: var(--ylmn-blue);
+  --h2-gradient-end: transparent;
+  --h3-color: var(--ylmn-blue);
+  --h4-color: var(--ylmn-blue);
+  --h5-color: var(--ylmn-blue);
+  --h6-color: var(--ylmn-blue);
+  --bar-gradient-start: transparent;
+  --bar-gradient-mid: var(--mint);
+  --bar-gradient-end: transparent;
+  --strong: var(--folly);
+  --italic: var(--folly);
+  --underline-text-color: var(--rich-black);
+  --underline-line-color: var(--mint);
+  --underline-line-thickness: 3px;
+  --codeblock-background: var(--anti-flash-white);
+  --codeblock-color: var(--rich-black);
+  --inline-code-background: var(--anti-flash-white);
+  --inline-code-color: var(--tropical-indigo);
+  --code-variable-color: var(--rich-black);
+  --code-function-color: var(--mint);
+  --code-builtin-color: var(--mint);
+  --code-string-color: var(--folly);
+  --code-operator-color: var(--mint);
+  --code-comment-color: var(--cool-gray);
+  --tags-background: var(--anti-flash-white);
+  --tags-color: var(--folly);
+  --list-marker-color: var(--rich-black);
+  --list-marker-color-hover: var(--mint);
+  --checkbox-marker-color: var(--white);
+  --radius-s: 2px;
+  --checklist-done-color: var(--cool-gray);
+  --checkbox-border-color: var(--rich-black);
+  --checkbox-border-color-hover: var(--mint);
+  --checkbox-color-hover: var(--mint);
+  --quote-background: var(--anti-flash-white);
+  --quote-style: italic;
+  --link-text-shadow: var(--white);
+  --link-text-color: var(--rich-black);
+  --link-text-color-hover: var(--mint);
+  --link-ext-color: var(--mint);
+  --link-int-color: var(--tropical-indigo);
+  --link-url-text-color: var(--tropical-indigo);
+  --folder-title-color: var(--raisin-black);
+  --file-title-color: var(--rich-black);
+  --progress-bar-color: var(--mint);
+  --highlight-background-color: var(--mint);
+  --highlight-text-color: var(--white);
+  --highlight-text-shadow: var(--text-normal);
+  --search-result-background: var(--french-gray);
+  --find-flashing: var(--mint);
 }

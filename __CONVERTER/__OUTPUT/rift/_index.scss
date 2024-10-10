@@ -1,5 +1,51 @@
+@import "fonts";
+
 :root {
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #1a1b26;
+  --background-secondary: #171722;
+  --titlebar-background: #1a1b26;
+  --titlebar-background-focused: #171722;
+  --color-accent: #c23ba8;
+  --color-accent-hovered: #cc5fb6;
+  --link-color: var(--color-accent);
+  --link-color-hover: var(--color-accent-hovered);
+  --link-external-color: var(--color-accent);
+  --link-external-color-hover: var(--color-accent-hovered);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-hovered);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-hovered);
+  --text-muted: #999999;
+  --text-faint: #999999;
+  --text-error: rgb(244, 105, 188);
+  --text-normal: #ffffff;
+  --bold-color: #ff4fdc;
+  --bold-weight: 700;
+  --italic-color: #f93fff;
+  --h1-color: #c23ba8;
+  --h2-color: #cb5cb3;
+  --h3-color: #d379be;
+  --h4-color: #da94c9;
+  --h5-color: #e0aed4;
+  --h6-color: #e5c8de;
+  --inline-title-color: var(--color-accent);
+  --code-background: #000000;
+  --code-normal: #ffffff;
+  --code-comment: #ffffff;
+  --graph-text: rgb(204, 204, 204);
+  --graph-node: var(--color-accent-hovered);
+  --graph-node-tag: #5dc1d2;
+  --graph-node-attachment: #d669bc;
+  --graph-node-unresolved: #9e8aff;
+  --graph-line: #a54aa8;
+  --graph-node-focused: #a54aa8;
+}
+
+:root[saved-theme="light"] {
 }

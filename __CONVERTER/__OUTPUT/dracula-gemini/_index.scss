@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --color-dracula-background: #282a36;
   --color-dracula-foreground: #f8f8f2;
@@ -62,4 +64,10 @@ body {
   --link-unresolved-opacity: 0.5;
   --link-unresolved-decoration-color: var(--color-dracula-pink);
   --table-header-background: var(--color-base-20);
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

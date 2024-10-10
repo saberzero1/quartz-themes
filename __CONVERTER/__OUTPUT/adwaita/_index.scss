@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --adwaita-mod-scale: 1;
   --adwaita-mod-right-margin: 8px;
@@ -183,4 +185,10 @@ body {
   --h1-weight: 900;
   --titlebar-height: 45px;
   --header-height: 46px;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

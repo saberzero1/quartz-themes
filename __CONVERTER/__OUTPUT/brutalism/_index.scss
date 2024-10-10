@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -30,4 +32,20 @@ body {
   --h4-color: var(--header-color);
   --h5-color: var(--header-color);
   --h6-color: var(--header-color);
+}
+
+:root[saved-theme="dark"] {
+  --color-base-00: #1a1b26;
+  --bold-color: #bb9af7;
+  --italic-color: #9aa5ce;
+  --text-highlight-bg: #9ece6a66;
+  --text-faint: #565f8988;
+}
+
+:root[saved-theme="light"] {
+  --color-base-00: #d5d6db;
+  --bold-color: #5a4a78;
+  --italic-color: #343b58;
+  --text-highlight-bg: #485e3066;
+  --text-faint: #9699a388;
 }

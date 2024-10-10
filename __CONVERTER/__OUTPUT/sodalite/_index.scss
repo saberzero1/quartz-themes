@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --custom-accent: #8ba4cc;
   --custom-accent-muted: #304f80;
@@ -23,4 +25,10 @@ body {
   --file-line-width: 100%;
   --callout-radius: 0;
   --callout-padding: 18px;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

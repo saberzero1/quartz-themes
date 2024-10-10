@@ -1,0 +1,11 @@
+:root[saved-theme="light"] {
+  --color-base-05: #d5d0d034;
+  --color-base-20: #d5d0d034;
+  --color-base-25: #d5d0d034;
+  --color-base-35: #d5d0d034;
+  --color-base-40: #d5d0d034;
+  --color-base-60: #d5d0d034;
+  --color-base-100: rgb(20, 20, 20);
+  --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
+  --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
+}

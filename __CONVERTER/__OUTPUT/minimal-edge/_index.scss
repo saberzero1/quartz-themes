@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -84,4 +86,92 @@ body {
   --custom-border: var(--border-size) var(--border-style);
   --modal-animation: modalAnimation 0.1s ease-in;
   --font-family: "Courier New", Courier, monospace;
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #20242b;
+  --background-primary-alt: #20242b;
+  --background-secondary: #252933;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #55af7f;
+  --background-modifier-error: rgb(163, 82, 82);
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #d67474;
+  --background-modifier-cover: rgba(0, 0, 0, 0.366);
+  --background-modifier-border: var(--border-size) solid #6e72796d;
+  --code-background: #2f3039;
+  --code-keyword: #de895b;
+  --code-normal: #a8aeb0;
+  --code-operator: #b89cdd;
+  --code-value: #e3b750;
+  --code-function: #dcbb59;
+  --code-property: #d29a8c;
+  --code-string: #05a36e;
+  --checkbox-marker-color: #fff;
+  --checkbox-color: #c37a5b;
+  --checkbox-color-hover: #d18c6e;
+  --tab-background-active: #fbfbfa;
+  --tab-outline-color: #7c7c7c37;
+  --text-accent: #ba7e47;
+  --text-accent-hover: #d18c6e;
+  --text-normal: #8f93a1;
+  --text-muted: #8e8e90;
+  --text-faint: #999999;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-selection: rgba(0, 122, 255, 0.15);
+  --text-on-accent: #f2f2f2;
+  --icon-color: #59607b;
+  --interactive-normal: #dae1ef;
+  --interactive-hover: #dbdbdc;
+  --interactive-accent-rgb: 21, 146, 255;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: #d9d3f7;
+  --scrollbar-thumb-bg: #a9bdc64e;
+  --panel-border-color: #dbdbdc;
+}
+
+:root[saved-theme="light"] {
+  --background-primary: #e4ddd3;
+  --background-primary-alt: #eae4dd;
+  --background-secondary: #eae4dd;
+  --background-modifier-border: var(--border-size) solid #000;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #a4e7c3;
+  --background-modifier-error: #e68787;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #ff9494;
+  --background-modifier-cover: rgba(0, 0, 0, 0.507);
+  --code-background: #e2dcd5;
+  --code-keyword: #de895b;
+  --code-normal: #a8aeb0;
+  --code-operator: #b89cdd;
+  --code-value: #e3b750;
+  --code-function: #dcbb59;
+  --code-property: #d29a8c;
+  --code-string: #05a36e;
+  --checkbox-marker-color: #fff;
+  --checkbox-color: #c37a5b;
+  --checkbox-color-hover: #d18c6e;
+  --tab-background-active: #fbfbfa;
+  --tab-outline-color: #7c7c7c37;
+  --text-accent: #985c35;
+  --text-accent-hover: #bf7c50;
+  --text-normal: #383a42;
+  --text-muted: #8e8e90;
+  --text-faint: #999999;
+  --text-error: #ba6d64;
+  --text-error-hover: #533232;
+  --text-highlight-bg: rgba(84, 84, 56, 0.4);
+  --text-selection: rgba(0, 122, 255, 0.15);
+  --text-on-accent: #f2f2f2;
+  --icon-color: #705757;
+  --interactive-normal: #eaeaeb;
+  --interactive-hover: #dbdbdc;
+  --interactive-accent-rgb: 21, 146, 255;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: #f7eed3;
+  --scrollbar-thumb-bg: #c6bfa94e;
+  --panel-border-color: #dbdbdc;
 }

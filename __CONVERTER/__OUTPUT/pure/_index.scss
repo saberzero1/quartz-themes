@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
   --checkbox-size: 1em;
 }
@@ -9,4 +11,10 @@ body {
   --list-marker-color-hover: var(--text-faint);
   --list-marker-color-collapsed: var(--text-accent);
   --list-bullet-size: 4px;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

@@ -405,6 +405,9 @@ manifestCollection.forEach((manifest) => {
 // _index.scss
 const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
 const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
+const fontRegex = new RegExp(/(@font-face.*?\})/, "gmsv")
+const darkRegex = new RegExp(/^\.theme-dark.*?\{([^\}]*?)\}$/, "gmsv")
+const lightRegex = new RegExp(/^\.theme-light.*?\{([^\}]*?)\}$/, "gmsv")
 manifestCollection.forEach((manifest) => {
   const bodyValue = findAllMatchesAsString(
     `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
@@ -431,7 +434,6 @@ manifestCollection.forEach((manifest) => {
 })
 
 // _fonts.scss
-const fontRegex = new RegExp(/(@font-face.*?\})/, "gmsv")
 manifestCollection.forEach((manifest) => {
   const fontValue = findAllMatchesAsString(
     `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
@@ -446,5 +448,39 @@ manifestCollection.forEach((manifest) => {
 })
 
 // _dark.scss
+manifestCollection.forEach((manifest) => {
+  const darkValue = findAllMatchesAsString(
+    `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    darkRegex,
+  )
+  const darkValue2 = darkValue.replace(darkRegex, "$1")
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//DARK`,
+    removeNonVariableLines(darkValue2),
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+    `//DARK`,
+    removeNonVariableLines(darkValue2),
+  )
+})
 
 // _light.scss
+manifestCollection.forEach((manifest) => {
+  const lightValue = findAllMatchesAsString(
+    `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    lightRegex,
+  )
+  const lightValue2 = lightValue.replace(lightRegex, "$1")
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//LIGHT`,
+    removeNonVariableLines(lightValue2),
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+    `//LIGHT`,
+    removeNonVariableLines(lightValue2),
+  )
+})

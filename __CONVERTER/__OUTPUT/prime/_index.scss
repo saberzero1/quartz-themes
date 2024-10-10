@@ -1,3 +1,5 @@
+@import "fonts";
+
 :root {
 }
 
@@ -560,4 +562,10 @@ body {
   --code-tag: var(--color-tokyo-night-light-red);
   --code-value: var(--color-tokyo-night-light-purple);
   --color-green: #a0fa9c;
+}
+
+:root[saved-theme="dark"] {
+}
+
+:root[saved-theme="light"] {
 }

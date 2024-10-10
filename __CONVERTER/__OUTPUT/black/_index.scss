@@ -1,5 +1,16 @@
+@import "fonts";
+
 :root {
 }
 
 body {
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #000;
+  --background-secondary: #000;
+  --titlebar-background-focused: #000;
+}
+
+:root[saved-theme="light"] {
 }

@@ -1,6 +1,50 @@
+@import "fonts";
+
 :root {
 }
 
 body {
   --font-text-theme: "Fira Code";
+}
+
+:root[saved-theme="dark"] {
+  --background-primary: #1d1f21;
+  --background-secondary: #282a2e;
+  --text-normal: #c5c8c6;
+  --text-muted: #969896;
+  --text-selection: #373b41;
+  --code-background: var(--background-secondary);
+  --divider-color: #181a1e;
+  --color-red: #cc6666;
+  --color-orange: #de935f;
+  --color-yellow: #f0c674;
+  --color-green: #b5bd68;
+  --color-cyan: #8abeb7;
+  --color-blue: #81a2be;
+  --color-pink: #b294bb;
+  --color-purple: #b777e0;
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--ribbon-background);
+}
+
+:root[saved-theme="light"] {
+  --background-primary: #ffffff;
+  --background-secondary: #efefef;
+  --text-normal: #4d4d4c;
+  --text-muted: #8e908c;
+  --divider-color: #cecece;
+  --color-red: #c82829;
+  --color-orange: #f5871f;
+  --color-yellow: #eab700;
+  --color-green: #718c00;
+  --color-cyan: #3e999f;
+  --color-blue: #4271ae;
+  --color-pink: #b777e0;
+  --color-purple: #8959a8;
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--ribbon-background);
 }
