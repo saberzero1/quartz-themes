@@ -147,6 +147,40 @@ Add your desired dark theme to `dark.scss`.
 @import "quartz-themes/themes/catppuccin/frappe";
 ```
 
+## FAQ
+
+### GitHub Pages throws error during deploy
+
+```
+Error: R] Can't find stylesheet to import.
+  ╷
+2 │ @use "quartz-themes";
+  │ ^^^^^^^^^^^^^^^^^^^^
+  ╵
+```
+
+To solve, add `submodule:recursive` to your `deploy.yml` like below:
+
+```yml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+          submodules: recursive # <<<<<< ADD THIS LINE
+      - uses: actions/setup-node@v4
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Quartz
+        run: npx quartz build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+```
+
 ## Supported Themes
 
 This list is ever expanding.
