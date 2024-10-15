@@ -214,9 +214,13 @@ body {
         footer {
           background-color: var(--light);
         }
-        .sidebar.left,
+        .sidebar.left {
+          > .explorer {
+            background-color: var(--light-darken);
+          }
+        }
         .explorer {
-          background-color: var(--light-darken);
+          background-color: var(--light);
         }
       }
       div.search {
@@ -248,9 +252,13 @@ body {
         padding: 0.5rem 1rem 0.25rem;
         border-bottom: 1px solid var(--light-border);
         position: sticky;
+
+        > .explorer {
+          background-color: var(--light-lighten);
+        }
       }
       .explorer {
-        background-color: var(--light-lighten);
+        background-color: var(--light);
       }
       .sidebar.right,
       .center,
