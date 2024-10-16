@@ -14,8 +14,10 @@
   --text-link: var(--lotusBlue5);
   --text-a: var(--lotusTeal1);
   --text-a-hover: var(--lotusRed);
+  --text-mark: rgba(183, 208, 174, 0.4);
   --pre-code: var(--lotusGray);
   --text-highlight-bg: var(--lotusBlue2);
+  --interactive-accent: var(--lotusBlue3);
   --interactive-before: var(--lotusGray2);
   --background-modifier-border: var(--lotusBlue3);
   --text-accent: var(--lotusGreen);
@@ -24,6 +26,7 @@
   --code-block: var(--lotusGray3);
   --vim-cursor-backgroung: var(--lotusGray);
   --vim-cursor-color: var(--lotusInk1);
+  --text-selection: rgba(183, 208, 174, 0.5);
   --text-tag: var(--lotusAqua);
   --task-checkbox: var(--lotusGray2);
   --table-header: hsl(42, 33%, 91%);

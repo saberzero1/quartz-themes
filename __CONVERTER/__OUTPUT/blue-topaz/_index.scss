@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -460,8 +515,14 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 
   --font-size-obsidian-titlebar: 13px;
+  --font-size-vault-name: 1em;
+  --font-size-file-header-title: 0.9em;
+  --font-size-file-header-title-andy-plugin: 1em;
   --font-size-embed-title-size: 1.3em;
   --font-size-embed-file: 1.25em;
+  --font-size-folder-and-file: 0.9em;
+  --font-size-edit-normal: 1em;
+  --font-size-preview-normal: 1em;
   --h1-size: 1.5625em;
   --h2-size: 1.4375em;
   --h3-size: 1.3125em;
@@ -483,11 +544,15 @@ body {
   --font-size-loading-diy-text: 3em;
   --font-size-loading-add: 1.5em;
   --table-header-size: inherit;
+  --font-family-list: ;
+  --font-text-theme: Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei";
   --h1-font: var(--font-text), var(--font-default);
   --h2-font: var(--font-text), var(--font-default);
   --h3-font: var(--font-text), var(--font-default);
   --h4-font: var(--font-text), var(--font-default);
+  --font-family-title: ;
   --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
+  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
   --font-family-em: ;
@@ -1924,6 +1989,8 @@ body {
   --color-text-heading: var(--text-normal);
   --color-text-day: var(--text-normal);
   --color-text-today: var(--text-accent);
+  --font-family-vault: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important;
+  --font-family-folder-file-title: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important;
   --color1: #ffde89;
   --color2: #ffd876;
   --color3: #ffd362;
@@ -2052,18 +2119,29 @@ body {
   --background-secondary: var(--background-secondary-bg-4-bt, #333333);
   --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #222222);
   --background-modifier-border: #565656;
+  --text-selection: #47a5914d;
   --accent-h: 43;
   --accent-s: 69%;
   --accent-l: 50%;
+  --interactive-accent-rgb: 216, 166, 39;
+  --panel-border-color: #18191e;
+  --search-text: var(--color1);
+  --folder-title: #ffffff;
   --strong-em-highlight-color: var(--color11);
   --text-search-highlight-bg: #bb4361;
+  --strong-em-color-1: #43d3ff;
+  --strong-em-color-2: #baaaff;
+  --search-result-file-matched-bg: var(--color9);
   --background-mobile-drawer-1: var(--bg-color);
   --background-mobile-drawer-2: var(--bg-color);
   --background-transparent-blue: #003e759a;
   --scrollbar-thumb-bg: #8282827e;
   --scrollbar-active-thumb-bg: #828282;
   --search-result-file-title-color: var(--main-color);
+  --background-blockquote: #9191911c;
+  --background-code: #1111118c;
   --background-code-2: #4c4c4cb0;
+  --text-color-code: #d58000;
   --list-ul-block-color: var(--deep-color);
   --list-ul-disc-color: var(--main-color);
   --green-1: #3dc730;
@@ -2077,6 +2155,14 @@ body {
   --h4-color: var(--print-h4-color, var(--color9));
   --h5-color: var(--print-h5-color, var(--color10));
   --h6-color: var(--print-h6-color, var(--color11));
+  --graph-text-color: #b5b5b5;
+  --graph-tag: #88d842bb;
+  --graph-attach: #b2cfe0bb;
+  --graph-circle: var(--color8);
+  --graph-line: #8c8c8c;
+  --graph-unresolved: #f08080de;
+  --graph-arrow: #c23917;
+  --graph-control-bg: #00000080;
   --mermaid-active-task-color: var(--low-color);
   --mermaid-seq-dia-color: var(--high-color);
   --table-background-color: var(--bg-color2);
@@ -2261,17 +2347,35 @@ body {
   --background-primary-alt: var(--background-primary-alt-bg-4-bt, #222222);
   --background-secondary: var(--background-secondary-bg-4-bt, #222222);
   --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #222222);
+  --background-modifier-border: #565656;
+  --text-muted: #8a8a8a;
+  --text-faint: #797979;
+  --text-folder-file: #b3b3b3;
+  --accent-em: #a4ca8e;
+  --text-selection: #47a5914d;
   --accent-h: 17;
   --accent-s: 44%;
   --accent-l: 32%;
+  --interactive-accent: var(--main-color);
+  --interactive-accent-rgb: 116, 65, 45;
+  --panel-border-color: #18191e;
+  --search-text: #e0e0e0;
+  --folder-title: #ffffff;
   --strong-em-highlight-color: var(--color11);
   --text-search-highlight-bg: #bb4361;
+  --strong-em-color-1: #43d3ff;
+  --strong-em-color-2: #baaaff;
+  --search-result-file-matched-bg: var(--color9);
   --background-mobile-drawer-1: var(--bg-color);
   --background-mobile-drawer-2: var(--bg-color);
+  --background-transparent-blue: #003e759a;
   --scrollbar-thumb-bg: #8282827e;
   --scrollbar-active-thumb-bg: #828282;
   --search-result-file-title-color: var(--main-color);
+  --background-blockquote: #9191911c;
+  --background-code: #1111118c;
   --background-code-2: #4c4c4cb0;
+  --text-color-code: #d58000;
   --list-ul-block-color: var(--color6);
   --list-ul-disc-color: var(--main-color);
   --green-1: #3dc730;
@@ -2342,6 +2446,7 @@ body {
   --event-item-color9: var(--color10);
   --event-item-color10: var(--color11);
   --sliding-panes-header-color: var(--color1);
+  --background-4-sliding-panel: #252525ed;
   --color-view-header-gradient-1: var(--bg-color2);
   --color-view-header-gradient-2: var(--bg-color);
   --checkbox-color-0: var(--main-color);
@@ -2474,7 +2579,16 @@ body {
   --background-primary-alt: var(--background-primary-alt-bg-4-bt, #222222);
   --background-secondary: var(--background-secondary-bg-4-bt, #222222);
   --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #444444);
+  --text-muted: #8a8a8a;
+  --text-faint: #797979;
+  --text-folder-file: #b3b3b3;
+  --accent-strong: #f7f7f7;
+  --accent-em: #a4ca8e;
+  --text-selection: #47a5914d;
+  --interactive-accent: var(--main-color);
+  --interactive-accent-rgb: 104, 56, 39;
   --strong-em-highlight-color: var(--color11);
+  --search-result-file-matched-bg: var(--color9);
   --background-mobile-drawer-1: var(--bg-color);
   --background-mobile-drawer-2: var(--bg-color);
   --search-result-file-title-color: var(--main-color);
@@ -2504,6 +2618,14 @@ body {
   --h4-color: var(--print-h4-color, var(--color7));
   --h5-color: var(--print-h5-color, var(--color8));
   --h6-color: var(--print-h6-color, var(--color9));
+  --graph-text-color: #b5b5b5;
+  --graph-tag: #88d842bb;
+  --graph-attach: #b2cfe0bb;
+  --graph-circle: var(--color8);
+  --graph-line: #8c8c8c;
+  --graph-unresolved: #f08080de;
+  --graph-arrow: #c23917;
+  --graph-control-bg: #00000080;
   --mermaid-active-task-color: var(--low-color);
   --mermaid-seq-dia-color: var(--high-color);
   --table-background-color: var(--bg-color2);
@@ -2761,6 +2883,7 @@ body {
   --text-selection: #8b66bb59;
   --interactive-normal: #eaeaeb;
   --interactive-hover: #d1b6f0;
+  --interactive-accent-rgb: 195, 144, 230;
   --accent-h: 266;
   --accent-s: 62%;
   --accent-l: 72%;
@@ -2859,6 +2982,7 @@ body {
   --tape-color: #acacac65;
   --sliding-panes-header-color: #2c0240;
   --background-4-sliding-pane: #ffffffef;
+  --color-view-header-gradient-1: #efe0f1ef;
   --color-view-header-gradient-2: #e1c9f1ef;
   --checkbox-color-0: var(--text-accent);
   --checkbox-color-1: #e0dd2a;
@@ -4402,7 +4526,7 @@ body {
   --matrix-4: var(--p-kanban-color-5);
   --matrix-5: var(--p-kanban-color-6);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -4410,7 +4534,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -4764,7 +4888,7 @@ body {
   --matrix-4: var(--p-kanban-color-5);
   --matrix-5: var(--p-kanban-color-6);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -4772,7 +4896,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

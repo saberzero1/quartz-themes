@@ -14,8 +14,10 @@
   --text-link: var(--springBlue);
   --text-a: var(--dragonBlue);
   --text-a-hover: var(--peachRed);
+  --text-mark: rgba(34, 50, 73, 0.4);
   --pre-code: var(--sumiInk0);
   --text-highlight-bg: var(--waveBlue1);
+  --interactive-accent: var(--dragonBlue);
   --interactive-before: var(--sumiInk4);
   --background-modifier-border: var(--dragonBlue);
   --text-accent: var(--autumnGreen);
@@ -24,6 +26,7 @@
   --code-block: var(--fujiGray);
   --vim-cursor-backgroung: var(--fujiWhite);
   --vim-cursor-color: var(--sumiInk1);
+  --text-selection: rgba(34, 50, 73, 0.5);
   --text-tag: var(--springViolet1);
   --task-checkbox: var(--sumiInk4);
   --table-header: hsl(0, 0%, 14%);

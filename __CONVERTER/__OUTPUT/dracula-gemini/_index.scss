@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -339,6 +394,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-stroke: var(--icon-l-stroke-width);
 
   --color-dracula-background: #282a36;
+  --color-dracula-selection: #44475a;
   --color-dracula-foreground: #f8f8f2;
   --color-dracula-comment: #6272a4;
   --color-dracula-cyan: #8be9fd;
@@ -348,6 +404,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-dracula-purple: #bd93f9;
   --color-dracula-red: #ff5555;
   --color-dracula-yellow: #f1fa8c;
+  --color-dracula-yellow-ish: #f4f9bf;
+  --empty-line-height: 1em;
+  --header-hanging-margin: 30px;
 }
 
 body {
@@ -410,6 +469,8 @@ body {
   --accent-h: 225;
   --accent-s: 27%;
   --accent-l: 51%;
+  --file-margins: var(--size-4-8) var(--size-4-12);
+  --color-base-00: var(--color-dracula-background);
   --color-base-10: hsl(231, 15%, 22%);
   --color-base-20: hsl(231, 15%, 24%);
   --color-base-25: hsl(231, 15%, 27%);
@@ -419,17 +480,38 @@ body {
   --color-base-50: hsl(231, 15%, 50%);
   --color-base-60: hsl(231, 15%, 65%);
   --color-base-70: hsl(231, 15%, 84%);
+  --color-base-100: var(--color-dracula-foreground);
   --text-selection: var(--color-dracula-selection);
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--text-faint);
+  --color-base-00: hsl(231, 15%, 12%);
+  --color-base-10: hsl(231, 15%, 17%);
+  --color-base-20: hsl(231, 15%, 20%);
   --blockquote-border-thickness: 4px;
   --blockquote-border-color: var(--color-dracula-yellow);
   --blockquote-color: var(--color-dracula-yellow-ish);
   --bold-color: var(--color-dracula-orange);
   --italic-color: var(--color-dracula-yellow);
+  --code-size: var(--font-small);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--color-dracula-comment);
+  --code-function: var(--color-dracula-green);
+  --code-important: var(--color-dracula-red);
+  --code-keyword: var(--color-dracula-pink);
+  --code-operator: var(--color-dracula-foreground);
+  --code-property: var(--color-dracula-orange);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-dracula-yellow);
+  --code-tag: var(--color-dracula-red);
+  --code-value: var(--color-dracula-purple);
   --tag-size: var(--font-text-size);
   --tag-color: var(--color-dracula-pink);
   --tag-color-hover: var(--color-dracula-pink);
   --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.4);
+  --tag-padding-x: 0.25em;
+  --tag-padding-y: 0.125em;
+  --tag-radius: 0.1875em;
   --h1-color: var(--color-dracula-pink);
   --h2-color: var(--color-dracula-purple);
   --h3-color: var(--color-dracula-cyan);
@@ -448,6 +530,12 @@ body {
   --h4-weight: 600;
   --h5-weight: 600;
   --h6-weight: 600;
+  --h1-line-height: 1.3125;
+  --h2-line-height: 1.2847;
+  --h3-line-height: 1.2891;
+  --h4-line-height: 1.2946;
+  --h5-line-height: 1.3021;
+  --h6-line-height: 1.3125;
   --heading-spacing: 0;
   --link-color: var(--color-dracula-pink);
   --link-color-hover: var(--color-dracula-purple);
@@ -456,6 +544,14 @@ body {
   --link-unresolved-color: var(--color-dracula-pink);
   --link-unresolved-opacity: 0.5;
   --link-unresolved-decoration-color: var(--color-dracula-pink);
+  --list-spacing: 0;
+  --list-indent: 1.172em;
+  --list-item-gap: 0.375em;
+  --list-ul-margin: 0.272em;
+  --list-ul-bullet-width: 0.75em;
+  --list-ol-margin: 0.125em;
+  --list-ol-bullet-width: 1.75em;
+  --list-task-checkbox-width: 2.0625em;
   --table-header-background: var(--color-base-20);
 }
 
@@ -515,7 +611,7 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -523,7 +619,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -582,7 +678,7 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -590,7 +686,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

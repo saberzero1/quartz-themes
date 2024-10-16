@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -337,6 +392,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --default-font: "Fira Sans", "Inter", sans-serif;
+  --font-monospace: "Fira Code", "Source Code Pro", monospace;
 }
 
 body {
@@ -395,6 +453,8 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --font-monospace-theme: "Fira Code", "Source Code Pro", monospace;
 }
 
 :root[saved-theme="dark"] {
@@ -513,6 +573,11 @@ body {
   --pink-secondary-tuple: var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
   --pinkSecondary: hsl(var(--pink-secondary-tuple));
   --gradientDegree: 135deg;
+  --background-modifier-cover: var(--layer-0);
+  --background-primary: var(--layer-2);
+  --background-primary-alt: var(--layer-1);
+  --background-secondary: var(--layer-1);
+  --background-secondary-alt: var(--layer-0);
   --background-modifier-form-field: var(--pink-100);
   --background-modifier-form-field-highlighted: var(--pink-300);
   --background-modifier-box-shadow: var(--layer-3);
@@ -520,12 +585,28 @@ body {
   --background-modifier-error: var(--red-900);
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
+  --text-normal: var(--on-layer);
+  --text-muted: var(--on-layer-600);
+  --text-accent: var(--pink);
+  --text-accent-hover: var(--pinkSecondary);
+  --text-faint: var(--on-layer-600);
   --text-error: var(--red);
   --text-error-hover: var(--redSecondary);
+  --text-highlight-bg: var(--yellow-100);
+  --text-highlight-bg-active: var(--orange-100);
+  --text-selection: var(--purple-200);
   --indentation-guide-opacity: 10%;
+  --interactive-normal: var(--layer-1);
+  --interactive-hover: var(--layer-0);
+  --interactive-accent: var(--pink);
+  --interactive-accent-hover: var(--orange);
   --interactive-success: var(--green);
+  --scrollbar-bg: var(--layer-2);
+  --scrollbar-thumb-bg: var(--pink-100);
+  --scrollbar-active-thumb-bg: var(--pink-300);
   --indentation-guide: var(--layer-4);
   --blockquote-border: var(--red);
+  --link-color: var(--orange);
   --link-color-hover: var(--orangeSecondary);
   --link-unresolved-color: var(--yellow-700);
   --link-unresolved-hover: var(--yellow);
@@ -536,14 +617,17 @@ body {
   --background-modifier-border-hover: transparent;
   --modal-border-color: transparent;
   --prompt-border-color: transparent;
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border: transparent;
   --input-shadow: none;
   --blockquote-border-color: none;
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
   --code-normal: var(--purple-pink);
   --code-size: 100%;
+  --hr-color: var(--orange);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -551,7 +635,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -670,6 +754,11 @@ body {
   --pink-secondary-tuple: var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
   --pinkSecondary: hsl(var(--pink-secondary-tuple));
   --gradientDegree: 135deg;
+  --background-modifier-cover: var(--layer-0);
+  --background-primary: var(--layer-2);
+  --background-primary-alt: var(--layer-1);
+  --background-secondary: var(--layer-1);
+  --background-secondary-alt: var(--layer-0);
   --background-modifier-form-field: var(--pink-100);
   --background-modifier-form-field-highlighted: var(--pink-300);
   --background-modifier-box-shadow: var(--layer-3);
@@ -677,12 +766,28 @@ body {
   --background-modifier-error: var(--red-900);
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
+  --text-normal: var(--on-layer);
+  --text-muted: var(--on-layer-600);
+  --text-accent: var(--pink);
+  --text-accent-hover: var(--pinkSecondary);
+  --text-faint: var(--on-layer-600);
   --text-error: var(--red);
   --text-error-hover: var(--redSecondary);
+  --text-highlight-bg: var(--yellow-100);
+  --text-highlight-bg-active: var(--orange-100);
+  --text-selection: var(--purple-200);
   --indentation-guide-opacity: 10%;
+  --interactive-normal: var(--layer-1);
+  --interactive-hover: var(--layer-0);
+  --interactive-accent: var(--pink);
+  --interactive-accent-hover: var(--orange);
   --interactive-success: var(--green);
+  --scrollbar-bg: var(--layer-2);
+  --scrollbar-thumb-bg: var(--pink-100);
+  --scrollbar-active-thumb-bg: var(--pink-300);
   --indentation-guide: var(--layer-4);
   --blockquote-border: var(--red);
+  --link-color: var(--orange);
   --link-color-hover: var(--orangeSecondary);
   --link-unresolved-color: var(--yellow-700);
   --link-unresolved-hover: var(--yellow);
@@ -693,14 +798,17 @@ body {
   --background-modifier-border-hover: transparent;
   --modal-border-color: transparent;
   --prompt-border-color: transparent;
+  --background-modifier-border-focus: transparent;
+  --background-modifier-border: transparent;
   --input-shadow: none;
   --blockquote-border-color: none;
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
   --code-normal: var(--purple-pink);
   --code-size: 100%;
+  --hr-color: var(--orange);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -708,7 +816,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

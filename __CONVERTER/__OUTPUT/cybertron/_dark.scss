@@ -1,4 +1,5 @@
 :root[saved-theme="dark"] {
+  --window-border: 1px solid var(--window-border-color);
   --window-border-color: var(--background-secondary-alt);
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
@@ -14,8 +15,11 @@
   --bold-color: rgb(158, 138, 255);
   --bold-weight: 700;
   --italic-color: rgb(186, 192, 79);
+  --h1-color: #c7c400;
   --h2-color: #b9adff;
   --h3-color: #52c1da;
+  --h4-color: #67c073;
+  --h5-color: #de87ca;
   --h6-color: #b4b4b4;
   --inline-title-color: rgb(93, 188, 210);
   --link-color: rgb(214, 105, 188);
@@ -23,15 +27,20 @@
   --link-external-color-hover: rgb(236, 154, 217);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
+  --text-mark: transparent;
   --pre-code: rgb(64, 68, 77);
   --code-size: 13.125px;
   --code-background: rgb(54, 57, 63);
   --code-normal: rgb(170, 170, 170);
   --code-tag: rgb(49, 156, 180);
   --code-punctuation: rgb(49, 156, 180);
+  --text-highlight-bg: rgba(252, 246, 1, 0.4);
   --interactive-accent: rgba(252, 246, 1, 0.95);
   --interactive-accent-muted: rgba(252, 246, 1, 0.55);
+  --interactive-accent-hover: #9e8aff;
   --interactive-before: #5e6565;
+  --interactive-hover: #36393f;
+  --background-modifier-border: #595959;
   --blockquote-border-color: rgb(130, 114, 208);
   --blockquote-border-thickness: 2px;
   --blockquote-color: rgb(93, 188, 210);

@@ -15,6 +15,7 @@
   --text-title-h6: var(--r-mist-energy-blue);
   --text-link: var(--r-dark-orange);
   --text-link-hover: var(--r-deep-orange);
+  --text-a: var(--r-bright-orange);
   --text-a-hover: var(--r-yellow-orange);
   --text-mark: var(--r-bg-highlight);
   --text-highlight-bg: var(--r-bg-highlight);
@@ -23,7 +24,11 @@
   --text-accent: var(--r-bright-orange);
   --text-accent-hover: var(--r-yellow-orange);
   --interactive-accent-rgb: var(--r-bright-orange);
+  --inline-code: var(--r-dark2);
+  --code-block: var(--r-dark2);
   --code-normal: var(--r-dark2);
+  --default-codeblock: var(--r-light3);
+  --pre-code: var(--default-codeblock);
   --vim-cursor: var(--r-bright-orange);
   --text-selection: var(--r-bg-selection);
   --text-tag: var(--r-deep-orange);

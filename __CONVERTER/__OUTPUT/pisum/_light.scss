@@ -8,6 +8,8 @@
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
@@ -19,6 +21,7 @@
   --text-highlight-bg: rgba(181, 118, 20, 0.5);
   --text-error: #800000;
   --text-error-hover: #990000;
+  --text-selection: rgba(89, 75, 95, 0.99);
   --text-on-accent: #fbf1c7;
   --interactive-normal: #b57614;
   --interactive-hover: #fe8019;
@@ -39,5 +42,7 @@
   --pre-code-bg: rgba(0, 0, 0, 0.2);
   --blockquote-border: #b57614;
   --vim-cursor: #d65d0e;
+  --border-color: #504945;
   --hover-bg: rgba(0, 0, 0, 0.5);
+  --sticky-left: 25px;
 }

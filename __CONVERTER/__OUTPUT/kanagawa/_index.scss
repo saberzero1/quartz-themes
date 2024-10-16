@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -365,6 +420,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --crystalBlue: #7e9cd8;
   --springViolet2: #9cabca;
   --springBlue: #7fb4ca;
+  --lightBlue: #a3d4d5;
+  --waveAqua2: #7aa89f;
   --springGreen: #98bb6c;
   --boatYellow1: #938056;
   --boatYellow2: #c0a36e;
@@ -450,6 +507,10 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --lotusTeal2: #6693bf;
   --lotusTeal3: #5a7785;
   --lotusCyan: #d7e3d8;
+  --soft-white: #f8f8f8;
+  --warm-off-white: #f5f5f0;
+  --cool-off-white: #f0f5f5;
+  --paper-like: #f2efe9;
 }
 
 body {
@@ -581,8 +642,10 @@ body {
   --text-link: var(--springBlue);
   --text-a: var(--dragonBlue);
   --text-a-hover: var(--peachRed);
+  --text-mark: rgba(34, 50, 73, 0.4);
   --pre-code: var(--sumiInk0);
   --text-highlight-bg: var(--waveBlue1);
+  --interactive-accent: var(--dragonBlue);
   --interactive-before: var(--sumiInk4);
   --background-modifier-border: var(--dragonBlue);
   --text-accent: var(--autumnGreen);
@@ -591,6 +654,7 @@ body {
   --code-block: var(--fujiGray);
   --vim-cursor-backgroung: var(--fujiWhite);
   --vim-cursor-color: var(--sumiInk1);
+  --text-selection: rgba(34, 50, 73, 0.5);
   --text-tag: var(--springViolet1);
   --task-checkbox: var(--sumiInk4);
   --table-header: hsl(0, 0%, 14%);
@@ -599,7 +663,7 @@ body {
   --table-hover: var(--sumiInk2);
   --bold-color: var(--light1);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -607,7 +671,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -681,8 +745,10 @@ body {
   --text-link: var(--lotusBlue5);
   --text-a: var(--lotusTeal1);
   --text-a-hover: var(--lotusRed);
+  --text-mark: rgba(183, 208, 174, 0.4);
   --pre-code: var(--lotusGray);
   --text-highlight-bg: var(--lotusBlue2);
+  --interactive-accent: var(--lotusBlue3);
   --interactive-before: var(--lotusGray2);
   --background-modifier-border: var(--lotusBlue3);
   --text-accent: var(--lotusGreen);
@@ -691,6 +757,7 @@ body {
   --code-block: var(--lotusGray3);
   --vim-cursor-backgroung: var(--lotusGray);
   --vim-cursor-color: var(--lotusInk1);
+  --text-selection: rgba(183, 208, 174, 0.5);
   --text-tag: var(--lotusAqua);
   --task-checkbox: var(--lotusGray2);
   --table-header: hsl(42, 33%, 91%);
@@ -699,7 +766,7 @@ body {
   --table-hover: var(--lotusWhite1);
   --bold-color: var(--lotusInk1);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -707,7 +774,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

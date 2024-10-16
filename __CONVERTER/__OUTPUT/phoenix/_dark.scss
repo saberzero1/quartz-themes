@@ -13,6 +13,7 @@
   --text-title-h4: var(--r-bright-yellow);
   --text-title-h5: var(--r-yellow-green);
   --text-title-h6: var(--r-mist-energy-blue);
+  --text-link: var(--text-a);
   --text-link-hover: var(--text-a-hover);
   --text-a-hover: var(--r-yellow-orange);
   --text-mark: var(--r-bg-highlight);
@@ -22,7 +23,11 @@
   --text-accent: var(--r-bright-orange);
   --text-accent-hover: var(--r-yellow-orange);
   --interactive-accent-rgb: var(--r-bright-orange);
+  --inline-code: var(--code-light-gray);
+  --code-block: var(--code-light-gray);
   --code-normal: var(--code-light-gray);
+  --default-codeblock: var(--obsidian-codeblock);
+  --pre-code: var(--default-codeblock);
   --vim-cursor: var(--r-bright-orange);
   --text-selection: var(--r-bg-selection);
   --text-tag: var(--r-bright-orange);

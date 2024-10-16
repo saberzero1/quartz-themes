@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -339,8 +394,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-stroke: var(--icon-l-stroke-width);
 
   --font-size-obsidian-titlebar: 0.75em;
+  --font-size-vault-name: 0.875em;
+  --font-size-file-header-title: 0.9375em;
+  --font-size-file-header-title-andy-plugin: 1em;
   --font-size-embed-title-size: 1.125em;
   --font-size-embed-file: 1.25em;
+  --font-size-folder-and-file: 0.8125em;
+  --font-size-edit-normal: 1em;
+  --font-size-preview-normal: 1em;
   --font-size-h1: 1.5625em;
   --font-size-h2: 1.4375em;
   --font-size-h3: 1.3125em;
@@ -355,15 +416,20 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-size-edit-code: 1em;
   --font-size-latex: 1.25em;
   --text-size-cloze: 0.9375em;
+  --font-family-list:                                                    ;
+  --font-family-major:                                                   ;
   --font-family-h1:                                                      ;
   --font-family-h2:                                                      ;
   --font-family-h3:                                                      ;
   --font-family-h4:                                                      ;
   --font-family-h5:                                                      ;
   --font-family-h6:                                                      ;
+  --font-family-title:                                                   ;
+  --font-family-folder-file-title:                                       ;
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
   --text-family-inline-code: "Consolas", "Monaco", monospace;
   --font-family-tag:                                                     ;
+  --font-family-vault:                                                   ;
   --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
   --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
@@ -771,7 +837,7 @@ body {
   --tape-color: #ffccbc47;
   --header-color: #f39ba0;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -779,7 +845,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1117,7 +1183,7 @@ body {
   --tape-color: #acacac65;
   --header-color: #f5a7a2;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -1125,7 +1191,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

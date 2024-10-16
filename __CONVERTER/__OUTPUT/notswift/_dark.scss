@@ -52,9 +52,11 @@
   --code-normal: var(--color-base-100);
   --code-comment: var(--color-base-60);
   --code-background: #171818;
+  --color-base-icons: #95908e;
   --color-scrollbar-1: #959595;
   --color-scrollbar-2: #959595;
   --color-scrollbar-3: #6b6b6b;
+  --color-base-highlight: hsl(var(--accent-h), 80%, 55%);
   --color-base-lowlight: hsl(var(--accent-h), 50%, 50%);
   --color-base-verylowlight: hsl(var(--accent-h), 50%, 20%);
   --color-base-darklight: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 40%));

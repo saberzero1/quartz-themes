@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -466,6 +521,7 @@ body {
   --nav-item-background-selected: var(--Axt);
   --background-primary: var(--EBgnd);
   --color-scheme: dark;
+  --Bgnd: #30222b;
   --background-table-rows: var(--Bgnd);
   --ribbon-background: var(--Bgnd);
   --search-result-background: var(--EBgnd);
@@ -473,18 +529,22 @@ body {
   --titlebar-background-focused: var(--Bgnd);
   --titlebar-border-color: var(--Bgnd);
   --background-secondary: var(--Bgnd);
+  --EBgnd: #252429;
   --background-modifier-form-field-highlighted: var(--EBgnd);
   --background-modifier-form-field: var(--EBgnd);
+  --Bgcl: #a32d7f52;
   --background-modifier-hover: var(--Bgcl);
   --background-modifier-active-hover: var(--Bgcl);
   --nav-item-background-active: var(--Bgcl);
   --nav-item-background-hover: var(--Bgcl);
   --text-highlight-bg: var(--Bgcl);
+  --AccentA1: #a32d7f;
   --background-modifier-border-focus: var(--AccentA1);
   --checkbox-color: var(--AccentA1);
   --prompt-border-color: var(--AccentA1);
   --scrollbar-active-thumb-bg: var(--AccentA1);
   --interactive-accent: var(--AccentA1);
+  --Axt: #a32d7f36;
   --divider-color: var(--Axt);
   --interactive-hover: var(--Axt);
   --modal-border-color: var(--Axt);
@@ -493,10 +553,12 @@ body {
   --nav-indentation-guide-color: var(--Axt);
   --scrollbar-thumb-bg: var(--Axt);
   --tab-outline-color: var(--Axt);
+  --AccentA2: #d560b1;
   --background-modifier-accent: var(--AccentA2);
   --interactive-accent-hover: var(--AccentA2);
   --text-accent-hover: var(--AccentA2);
   --text-accent: var(--AccentA2);
+  --txt: hsl(300, 24%, 75%);
   --nav-item-color: var(--txt);
   --nav-item-color-active: var(--txt);
   --nav-item-color-hover: var(--txt);
@@ -510,6 +572,7 @@ body {
   --code-normal: var(--txi);
   --titlebar-text-color: #c8a2c8;
   --titlebar-text-color-focused: #c8a2c8;
+  --txi: #c576c5a2;
   --icon-color-hover: var(--txi);
   --icon-color: var(--txi);
   --nav-collapse-icon-color: var(--txi);
@@ -550,7 +613,7 @@ body {
   --graph-node-tag: #c8d89bdb;
   --graph-node-attachment: #d6d89b;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -558,7 +621,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -620,6 +683,7 @@ body {
   --nav-item-background-selected: var(--Axt);
   --background-primary: var(--EBgnd);
   --color-scheme: light;
+  --Bgnd: hsla(300, 30%, 92%, 1);
   --background-table-rows: var(--Bgnd);
   --ribbon-background: var(--Bgnd);
   --search-result-background: var(--EBgnd);
@@ -627,18 +691,22 @@ body {
   --titlebar-background-focused: var(--Bgnd);
   --titlebar-border-color: var(--Bgnd);
   --background-secondary: var(--Bgnd);
+  --EBgnd: hsla(89, 58%, 95%, 1);
   --background-modifier-form-field-highlighted: var(--EBgnd);
   --background-modifier-form-field: var(--EBgnd);
+  --Bgcl: #a32d7f52;
   --background-modifier-hover: var(--Bgcl);
   --background-modifier-active-hover: var(--Bgcl);
   --nav-item-background-active: var(--Bgcl);
   --nav-item-background-hover: var(--Bgcl);
   --text-highlight-bg: var(--Bgcl);
+  --AccentA1: #a32d7f;
   --background-modifier-border-focus: var(--AccentA1);
   --checkbox-color: var(--AccentA1);
   --prompt-border-color: var(--AccentA1);
   --scrollbar-active-thumb-bg: var(--AccentA1);
   --interactive-accent: var(--AccentA1);
+  --Axt: #a32d7f36;
   --divider-color: var(--Axt);
   --interactive-hover: var(--Axt);
   --modal-border-color: var(--Axt);
@@ -647,10 +715,12 @@ body {
   --nav-indentation-guide-color: var(--Axt);
   --scrollbar-thumb-bg: var(--Axt);
   --tab-outline-color: var(--Axt);
+  --AccentA2: #d560b1;
   --background-modifier-accent: var(--AccentA2);
   --interactive-accent-hover: var(--AccentA2);
   --text-accent-hover: var(--AccentA2);
   --text-accent: var(--AccentA2);
+  --txt: #30222b;
   --nav-item-color: var(--txt);
   --nav-item-color-active: var(--txt);
   --nav-item-color-hover: var(--txt);
@@ -664,6 +734,7 @@ body {
   --code-normal: var(--txi);
   --titlebar-text-color: #30222b;
   --titlebar-text-color-focused: #30222b;
+  --txi: #412438cd;
   --icon-color-hover: var(--txi);
   --icon-color: var(--txi);
   --nav-collapse-icon-color: var(--txi);
@@ -704,7 +775,7 @@ body {
   --graph-node-tag: #c8d89bdb;
   --graph-node-attachment: #412438;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -712,7 +783,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

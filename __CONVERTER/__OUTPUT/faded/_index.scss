@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -338,6 +393,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --font: "";
   --its: "its";
   --FA6Regular: "Font Awesome 6 Free Regular";
   --FA6Solid: "Font Awesome 6 Free Solid";
@@ -640,6 +696,8 @@ body {
   --nav-item-weight-hover: inherit;
   --nav-item-weight-active: inherit;
   --nav-item-white-space: nowrap;
+  --nav-item-children-margin-left: 12px;
+  --nav-item-children-padding-left: 4px;
   --nav-indentation-guide-width: var(--indentation-guide-width);
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-collapse-icon-color: var(--collapse-icon-color);
@@ -783,6 +841,7 @@ body {
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-bold);
+  --frame-right-space: 126px;
   --toggle-border-width: 2px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
@@ -832,8 +891,44 @@ body {
   --interactive-accent-hover: var(--color-accent-2);
   --custom-gradientDegree: 135deg;
   --custom-outliner-indent-lines-width: 1px;
+  --White-00: #dcddde;
+  --White-Accent-2: #aab3ca;
+  --Gold-Accent-1-Litest: #f1e4c8;
+  --Gold-Accent-1-Liter: #e4d1aa;
+  --Gold-Accent-1-Lite: #ddc48e;
+  --Gold-Accent-1: #d6ba7c;
+  --Red-Accent-1-Lite: #b94a4a;
+  --Red-Accent-1-Lighten: #b34141;
+  --Red-Accent-1: #ad3939;
+  --Red-Accent-1-Dark: #963232;
+  --Red-Accent-1-Darker: #752727;
+  --Red-Accent-1-Darkest-Lighten: #521c1c;
+  --Red-Accent-1-Darkest: #461818;
+  --Red-Accent-2: #aa3c5d;
+  --Grey-Accent-1-Lite-Lighten: #2f3641;
+  --Grey-Accent-1-Lite: #252b33;
+  --Grey-Accent-1-Lighten: #232830;
+  --Grey-Accent-1: #1a1e24;
+  --Grey-Accent-1-Darken: #171a1f;
+  --Grey-Accent-1-Dark: #14171b;
+  --Grey-Accent-1-Darker: #0b0f13;
+  --Grey-Accent-1-Darker-Darken: #090c0f;
+  --Grey-Accent-1-Darkest: #050708;
+  --Grey-Accent-2: #919191;
+  --Grey-Accent-3-Lite: #414344;
+  --Grey-Accent-3: #2a2c2d;
+  --Grey-Accent-3-Dark: #121415;
+  --Blue-Grey-Accent-1: #8292a2;
+  --Blue-Accent-1-Lite: #16bfe0;
+  --Blue-Accent-1: #2799ad;
+  --Blue-Accent-2-Dark: #2255a1;
+  --Blue-Accent-2: #2f61ac;
+  --Purple-Accent-1: #797fd8;
+  --Purple-Accent-2: #ae81ff;
   --pure-white: rgb(255, 255, 255);
   --pure-black: rgb(0, 0, 0);
+  --custom-white-100: #dcddde;
+  --custom-white-200: #aab3ca;
   --custom-white-2-100: #f2f3f3;
   --custom-white-2-200: #e8eaeb;
   --custom-white-2-300: #dcddde;
@@ -864,6 +959,7 @@ body {
   --custom-red-700-hsl: 0, 50%, 31%;
   --custom-red-800-hsl: 0, 49%, 22%;
   --custom-red-900-hsl: 0, 49%, 18%;
+  --custom-red-2-500: #aa3c5d;
   --custom-text-highlight-bg: rgba(168, 60, 60, 0.4);
   --custom-text-highlight-bg-active: rgba(253, 115, 115, 0.4);
   --custom-text-highlight-box-shadow-active: var(--custom-gold-2-950);
@@ -1115,6 +1211,7 @@ body {
   --float-medium-width: 400px;
   --float-large-width: 600px;
   --list-min-width: 200px;
+  --col-rule-color: var(--background-modifier-border);
   --col-rule-width: 1px;
   --list-grid-min-width: 250px;
   --mcl-card-header-border-width: 1px;
@@ -1407,6 +1504,7 @@ body {
   --status-bar-background: var(--custom-background-tertiary);
   --tab-text-color: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-normal);
   --tab-text-color-focused-active-current: var(--text-normal);
   --custom-admonition-border-color: var(--custom-black-950);
   --custom-callout-background-color: var(--custom-black-700);
@@ -1429,7 +1527,7 @@ body {
   --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px black) drop-shadow(0px 2px 6px black);
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--custom-black-850);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -1437,7 +1535,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1649,6 +1747,7 @@ body {
   --status-bar-background: var(--custom-background-tertiary);
   --tab-text-color: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-normal);
   --tab-text-color-focused-active-current: var(--text-normal);
   --custom-admonition-border-color: var(--custom-black-950);
   --custom-callout-background-color: var(--custom-black-700);
@@ -1672,7 +1771,7 @@ body {
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--zinc-500);
   --divider-color: var(--custom-white-2-400);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -1680,7 +1779,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

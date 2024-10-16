@@ -2,10 +2,15 @@
   --accent-h: 202;
   --accent-s: 100%;
   --accent-l: 75%;
+  --bg_dark2_x: 18, 18, 24;
   --bg_dark2: rgb(var(--bg_dark2_x));
+  --bg_dark_x: 36, 40, 59;
   --bg_dark: rgb(var(--bg_dark_x));
+  --bg_x: 36, 40, 59;
   --bg: rgb(var(--bg_x));
+  --bg_highlight_x: 65, 72, 104;
   --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark_x: 35, 35, 55;
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
   --terminal_black_x: 65, 72, 104;
   --terminal_black: rgb(var(--terminal_black_x));

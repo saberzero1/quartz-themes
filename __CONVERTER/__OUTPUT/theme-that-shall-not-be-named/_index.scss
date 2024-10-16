@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -457,23 +512,51 @@ body {
   --green-bright: #227e67;
   --green-light: #0f6751;
   --green-dark: #00372a;
+  --green-deep: #090c0d;
+  --green-compliment: #7b2e00;
   --brass-base: #575042;
   --brass-bright: #b7ad97;
+  --brass-light: #8b806c;
+  --brass-dark: #3f3624;
   --brass-deep: #392d15;
   --brass-compliment: #4b505d;
   --silver-base: #909090;
+  --silver-bright: #eeeded;
   --silver-light: #bbbbbb;
+  --silver-dark: #616161;
   --silver-deep: #252525;
   --silver-compliment: #737373;
   --purple-base: #3b0050;
   --purple-bright: #66008b;
   --purple-light: #51006d;
   --purple-dark: #22002e;
+  --purple-deep: #0c090d;
   --purple-compliment: #707700;
   --black: #000000;
+  --background-primary: var(--green-deep);
+  --text-accent-hover: var(--brass-base);
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #666;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(139, 128, 108, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(63, 54, 36, 0.99);
+  --text-title-h1: var(--brass-deep);
+  --text-title-h2: var(--brass-dark);
+  --text-title-h3: var(--brass-base);
+  --text-title-h4: var(--brass-light);
+  --text-title-h5: var(--brass-bright);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --interactive-accent-rgb: 97, 97, 97;
+  --interactive-success: #197300;
+  --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1);
   --highlight-mix-blend-mode: lighten;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -481,7 +564,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -540,7 +623,55 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --light: var(--background-primary);
+  --green-base: #00503b;
+  --green-bright: #227e67;
+  --green-light: #0f6751;
+  --green-dark: #00372a;
+  --green-deep: #090c0d;
+  --green-compliment: #7b2e00;
+  --brass-base: #575042;
+  --brass-bright: #b7ad97;
+  --brass-light: #8b806c;
+  --brass-dark: #3f3624;
+  --brass-deep: #392d15;
+  --brass-compliment: #4b505d;
+  --silver-base: #909090;
+  --silver-bright: #eeeded;
+  --silver-light: #bbbbbb;
+  --silver-dark: #616161;
+  --silver-deep: #252525;
+  --silver-compliment: #737373;
+  --purple-base: #3b0050;
+  --purple-bright: #66008b;
+  --purple-light: #51006d;
+  --purple-dark: #22002e;
+  --purple-deep: #0c090d;
+  --purple-compliment: #707700;
+  --black: #000000;
+  --background-primary: var(--green-deep);
+  --text-accent-hover: var(--brass-base);
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #666;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(139, 128, 108, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(63, 54, 36, 0.99);
+  --text-title-h1: var(--brass-deep);
+  --text-title-h2: var(--brass-dark);
+  --text-title-h3: var(--brass-base);
+  --text-title-h4: var(--brass-light);
+  --text-title-h5: var(--brass-bright);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --interactive-accent-rgb: 97, 97, 97;
+  --interactive-success: #197300;
+  --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1);
+  --highlight-mix-blend-mode: lighten;
+
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -548,7 +679,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

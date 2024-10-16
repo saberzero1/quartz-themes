@@ -278,8 +278,11 @@ function removeNonVariableLines(cssString) {
     // Read the string as an array of lines
     const lines = cssString.split("\n")
 
+    // Remove comments
+    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
+
     // Filter lines to include only those that match the CSS variable pattern
-    const variableLines = lines.filter(
+    const variableLines = linesCleared.filter(
       (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
     )
 
@@ -421,6 +424,8 @@ const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
 const fontRegex = new RegExp(/(@font-face.*?\})/, "gmsv")
 const darkRegex = new RegExp(/^\.theme-dark.*?\{([^\}]*?)\}$/, "gmsv")
 const lightRegex = new RegExp(/^\.theme-light.*?\{([^\}]*?)\}$/, "gmsv")
+let hasDarkOptions = true
+let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
@@ -467,40 +472,62 @@ manifestCollection.forEach((manifest) => {
   )
 })
 
-// _dark.scss
+// _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
   const darkValue = findAllMatchesAsString(
     `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
     darkRegex,
   )
-  const darkValue2 = darkValue.replace(darkRegex, "$1")
-  replaceInFile(
-    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//DARK`,
-    removeNonVariableLines(darkValue2),
-  )
-  replaceInFile(
-    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
-    `//DARK`,
-    removeNonVariableLines(darkValue2),
-  )
-})
-
-// _light.scss
-manifestCollection.forEach((manifest) => {
   const lightValue = findAllMatchesAsString(
     `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,
     lightRegex,
   )
+  hasDarkOptions = darkValue !== ""
+  hasLightOptions = lightValue !== ""
+  const darkValue2 = darkValue.replace(darkRegex, "$1")
   const lightValue2 = lightValue.replace(lightRegex, "$1")
+  if (hasDarkOptions) {
+    replaceInFile(
+      `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+      `//DARK`,
+      removeNonVariableLines(darkValue2),
+    )
+    replaceInFile(
+      `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+      `//DARK`,
+      removeNonVariableLines(darkValue2),
+    )
+  }
+  if (hasLightOptions) {
+    replaceInFile(
+      `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+      `//LIGHT`,
+      removeNonVariableLines(lightValue2),
+    )
+    replaceInFile(
+      `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+      `//LIGHT`,
+      removeNonVariableLines(lightValue2),
+    )
+  }
   replaceInFile(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//LIGHT`,
+    `//DARK`,
     removeNonVariableLines(lightValue2),
   )
   replaceInFile(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
-    `//LIGHT`,
+    `//DARK`,
     removeNonVariableLines(lightValue2),
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//LIGHT`,
+    removeNonVariableLines(darkValue2),
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+    `//LIGHT`,
+    removeNonVariableLines(darkValue2),
   )
 })

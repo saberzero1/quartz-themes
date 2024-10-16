@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -396,6 +451,10 @@ body {
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 
+  --divider-width: 0px;
+  --tab-outline-width: 0px;
+  --modal-border-width: 0px;
+  --tab-curve: var(--size-4-1);
   --tab-container-background: var(--titlebar-background-focused);
   --divider-color: var(--background-primary);
   --ribbon-background: var(--background-primary);
@@ -426,8 +485,13 @@ body {
   --h4-font: "Karla", "Inter";
   --default-font: "Inter";
   --font-text-theme: "Inter";
+  --keyheader-font: "Open Sans";
   --h1-size: 1.6em;
   --h2-size: 1.48em;
+  --h3-size: 1.36em;
+  --h4-size: 1.12em;
+  --h5-size: 1em;
+  --h6-size: 1em;
   --h1-weight: 600;
   --h2-weight: 600;
   --h3-weight: 600;
@@ -443,6 +507,7 @@ body {
   --h3-border-width: 0px;
   --h2-top-spacing: 1.4rem;
   --h2-bottom-spacing: 0.3rem;
+  --heading-spacing: var(--h2-top-spacing);
   --h2-bottom-spacing-edit: var(--h2-bottom-spacing);
   --h4-bottom-spacing: 0.1rem;
   --h2-top-spacing: 0.4rem;
@@ -455,11 +520,14 @@ body {
   --lst-p-ul-margin: 0.4em;
   --bold-weight: var(--font-bold);
   --bold-color: var(--h1-color);
+  --text-highlight-bg: rgba(255, 208, 0, 0.3);
+  --tag-size: 12px;
   --tag-color: #111;
   --tag-radius: 0.6em;
   --tag-padding-y: 0.1em;
   --tag-padding-x: 0.5em;
   --tag-color-hover: #eee;
+  --tag-bg-accent-hsl: 15, 72%, 70%;
   --tag-background: hsla(var(--tag-bg-accent-hsl), 0.7);
   --tag-background-hover: hsla(var(--tag-bg-accent-hsl), 0.45);
   --link-decoration: none;
@@ -481,6 +549,8 @@ body {
   --blockquote-background-color: var(--background-secondary);
   --blockquote-border-thickness: var(--size-4-1);
   --blockquote-font-style: italic;
+  --callout-content-padding: var(--size-4-2) 0 var(--size-4-1) 0;
+  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-3) var(--size-4-4);
   --icon-size: 48px;
   --alt-checkbox-bg-content: "";
   --list-bullet-size: 0.3rem;
@@ -491,6 +561,10 @@ body {
   --metadata-gap: 0px;
   --metadata-padding: 0;
   --metadata-background: none;
+  --lst-fab-view-y: 10vh;
+  --lst-fab-b2-y: 30vh;
+  --lst-fab-view-x: 2vw;
+  --lst-fab-button-size: 60px;
   --h1-border-width: 0px;
   --h2-bottom-spacing: 0.8rem;
   --link-decoration: none;
@@ -555,18 +629,33 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: hsl(0, 0%, 20%);
+  --background-primary-alt: #1a1a1a;
+  --background-secondary: hsl(300, 5%, 25%);
+  --background-secondary-alt: hsl(300, 5%, 19%);
+  --background-modifier-border: hsl(20, 5%, 33%);
+  --background-modifier-cover: #262626;
+  --background-modifier-cover: hsl(0, 0%, 16%);
+  --background-modifier-backlinks: hsl(0, 0%, 18%);
   --he-title-bar-active-pinned-bg: #735050;
   --he-title-bar-inactive-pinned-bg: #735050;
   --he-title-bar-active-bg: #3d373a;
   --he-title-bar-inactive-bg: #3d373a;
+  --h1-color: #ddedee;
   --h1-color: hsl(217, 22%, 90%);
+  --h2-color: #bccad6;
   --h2-color: hsl(217, 22%, 80%);
+  --h3-color: #8d9db6;
   --h3-color: hsl(217, 22%, 70%);
+  --h4-color: #fbefcc;
   --h4-color: hsl(45, 45%, 85%);
+  --h5-color: #f9ccac;
   --h5-color: hsl(45, 45%, 75%);
+  --h6-color: #f4a688;
   --h6-color: hsl(45, 45%, 65%);
+  --text-selection: rgba(30, 144, 255, 0.4);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -574,7 +663,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -634,24 +723,35 @@ body {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
   --background-primary: hsl(0, 0%, 92%);
+  --background-secondary: hsl(300, 5%, 80%);
+  --background-secondary-alt: #a6a6a6;
+  --background-accent: #afbfcf;
   --background-modifier-border: #ada7a4;
   --background-modifier-cover: hsl(0, 0%, 85%);
   --background-modifier-form-field: #e6e6e6;
+  --interactive-accent-hover: #708ca9;
   --he-title-bar-active-bg: #eaa4a4;
   --he-title-bar-inactive-bg: #eaa4a4;
   --he-title-bar-active-pinned-bg: #a7b3a1;
   --he-title-bar-inactive-pinned-bg: #a7b3a1;
   --text-muted: #1a1a1a;
   --text-faint: #808080;
+  --background-modifier-backlinks: hsl(0, 0%, 90%);
+  --h1-color: #224244;
   --h1-color: hsl(217, 22%, 30%);
+  --h2-color: #4e687e;
   --h2-color: hsl(217, 22%, 40%);
+  --h3-color: #8d9db6;
   --h3-color: hsl(217, 22%, 50%);
+  --h4-color: #8e6d0b;
   --h4-color: hsl(45, 45%, 40%);
+  --h5-color: #8f410a;
   --h5-color: hsl(45, 45%, 30%);
+  --h6-color: #8c310d;
   --h6-color: hsl(45, 45%, 20%);
   --text-selection: DarkGray;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -659,7 +759,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

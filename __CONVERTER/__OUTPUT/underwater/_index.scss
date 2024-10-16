@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -702,18 +757,88 @@ body {
   --accent-s: 53%;
   --accent-l: 72%;
   --color-accent-hsl: 196, 53%, 72%;
+  --love-rgb: 243, 139, 168;
+  --gold-rgb: 249, 226, 175;
+  --rose-rgb: 250, 179, 135;
+  --pine-rgb: 137, 180, 250;
+  --foam-rgb: 166, 227, 161;
+  --iris-rgb: 203, 166, 247;
+  --base: #11111b;
+  --surface-rgb: 24, 24, 37;
+  --overlay: #1e1e2e;
+  --muted: #a6adc8;
+  --subtle: #bac2de;
+  --text: #cdd6f4;
+  --highlight-low: #313244;
+  --highlight-med-rgb: 69, 71, 90;
+  --highlight-high: #585b70;
   --accent-h: 232;
   --accent-s: 97%;
   --accent-l: 85%;
+  --color-accent-hsl: 232, 97%, 85%;
+  --love-rgb: 230, 126, 128;
+  --gold-rgb: 219, 188, 127;
+  --rose-rgb: 230, 152, 117;
+  --pine-rgb: 131, 192, 146;
+  --foam-rgb: 127, 187, 179;
+  --iris-rgb: 214, 153, 182;
+  --base: #1e2326;
+  --surface-rgb: 39, 46, 51;
+  --overlay: #384b55;
+  --muted: #859289;
+  --subtle: #9da9a0;
+  --text: #d3c6aa;
+  --highlight-low: #374145;
+  --highlight-med-rgb: 65, 75, 80;
+  --highlight-high: #495156;
   --accent-h: 90;
   --accent-s: 36%;
   --accent-l: 66%;
+  --color-accent-hsl: 90, 36%, 66%;
+  --love-rgb: 202, 63, 63;
+  --gold-rgb: 227, 156, 69;
+  --rose-rgb: 228, 106, 58;
+  --pine-rgb: 81, 120, 148;
+  --foam-rgb: 98, 147, 134;
+  --iris-rgb: 159, 86, 154;
+  --base: #181515;
+  --surface-rgb: 34, 30, 30;
+  --overlay: #423939;
+  --muted: #978787;
+  --subtle: #b6a8a5;
+  --text: #f4e6d2;
+  --highlight-low: #423939;
+  --highlight-med-rgb: 109, 95, 95;
+  --highlight-high: #978787;
   --accent-h: 226 !important;
   --accent-s: 31% !important;
   --accent-l: 42% !important;
+  --color-accent-hsl: 226, 31%, 42%;
+  --love-rgb: 251, 70, 76;
+  --gold-rgb: 224, 222, 113;
+  --rose-rgb: 233, 151, 63;
+  --pine-rgb: 2, 122, 255;
+  --foam-rgb: 68, 207, 110;
+  --iris-rgb: 168, 130, 255;
+  --base: #262626;
+  --surface-rgb: 30, 30, 30;
+  --overlay: #363636;
+  --muted: #666666;
+  --subtle: #bababa;
+  --text: #dadada;
+  --highlight-low: #2a2a2a;
+  --highlight-med-rgb: 63, 63, 63;
+  --highlight-high: #555555;
   --accent-h: 258;
   --accent-s: 88%;
   --accent-l: 66%;
+  --color-accent-hsl: 258, 88%, 66%;
+  --love-rgb: 215, 97, 76;
+  --gold-rgb: 217, 209, 89;
+  --rose-rgb: 229, 156, 88;
+  --pine-rgb: 105, 147, 194;
+  --foam-rgb: 159, 195, 135;
+  --iris-rgb: 146, 135, 194;
   --base: #11121a;
   --surface-rgb: 21, 23, 29;
   --overlay: #22252f;
@@ -726,6 +851,7 @@ body {
   --accent-h: 213;
   --accent-s: 49%;
   --accent-l: 61%;
+  --color-accent-hsl: 213, 49%, 61%;
   --love-rgb: 254, 114, 143;
   --gold-rgb: 255, 225, 97;
   --rose-rgb: 232, 177, 146;
@@ -763,6 +889,7 @@ body {
   --accent-h: 169;
   --accent-s: 42%;
   --accent-l: 82%;
+  --color-accent-hsl: 169, 42%, 82%;
   --love-rgb: 232, 157, 149;
   --gold-rgb: 246, 173, 119;
   --rose-rgb: 187, 163, 121;
@@ -781,9 +908,10 @@ body {
   --accent-h: 213;
   --accent-s: 60%;
   --accent-l: 67%;
+  --color-accent-hsl: 213, 60%, 67%%;
   --latex-color: var(--gold);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -791,7 +919,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1063,18 +1191,82 @@ body {
   --accent-s: 53%;
   --accent-l: 72%;
   --color-accent-hsl: 196, 53%, 72%;
+  --love-rgb: 230, 69, 83;
+  --gold-rgb: 223, 142, 29;
+  --rose-rgb: 221, 120, 120;
+  --pine-rgb: 4, 165, 229;
+  --foam-rgb: 32, 159, 181;
+  --iris-rgb: 114, 135, 253;
+  --base: #eff1f5;
+  --surface-rgb: 230, 233, 239;
+  --overlay: #dce0e8;
+  --muted: #6c6f85;
+  --subtle: #5c5f77;
+  --text: #4c4f69;
+  --highlight-low: #ccd0da;
+  --highlight-med-rgb: 188, 192, 204;
+  --highlight-high: #acb0be;
   --accent-h: 11;
   --accent-s: 59%;
   --accent-l: 67%;
+  --color-accent-hsl: 11, 59%, 67%;
+  --love-rgb: 248, 85, 82;
+  --gold-rgb: 223, 160, 0;
+  --rose-rgb: 245, 125, 38;
+  --pine-rgb: 53, 167, 124;
+  --foam-rgb: 58, 148, 197;
+  --iris-rgb: 223, 105, 186;
+  --base: #efebd4;
+  --surface-rgb: 253, 246, 227;
+  --overlay: #eaedc8;
+  --muted: #939f91;
+  --subtle: #829181;
+  --text: #5c6a72;
+  --highlight-low: #efebd4;
+  --highlight-med-rgb: 230, 226, 204;
+  --highlight-high: #e0dcc7;
   --accent-h: 97;
   --accent-s: 38%;
   --accent-l: 53%;
+  --color-accent-hsl: 97, 38%, 53%;
+  --love-rgb: 204, 36, 29;
+  --gold-rgb: 215, 153, 33;
+  --rose-rgb: 152, 151, 26;
+  --pine-rgb: 69, 133, 136;
+  --foam-rgb: 104, 157, 106;
+  --iris-rgb: 177, 98, 134;
+  --base: #ebdbb2;
+  --surface-rgb: 251, 241, 199;
+  --overlay: #f2e5bc;
+  --muted: #7c6f54;
+  --subtle: #504945;
+  --text: #3c3836;
+  --highlight-low: #d5c4a1;
+  --highlight-med-rgb: 189, 174, 147;
+  --highlight-high: #a89984;
   --accent-h: 122;
   --accent-s: 22%;
   --accent-l: 51%;
+  --color-accent-hsl: 122, 22%, 51%;
+  --love-rgb: 233, 49, 71;
+  --gold-rgb: 224, 172, 0;
+  --rose-rgb: 236, 117, 0;
+  --pine-rgb: 8, 109, 221;
+  --foam-rgb: 8, 185, 78;
+  --iris-rgb: 120, 82, 238;
+  --base: #f6f6f6;
+  --surface-rgb: 255, 255, 255;
+  --overlay: #e3e3e3;
+  --muted: #ababab;
+  --subtle: #707070;
+  --text: #222222;
+  --highlight-low: #fafafa;
+  --highlight-med-rgb: 224, 224, 224;
+  --highlight-high: #d4d4d4;
   --accent-h: 258;
   --accent-s: 88%;
   --accent-l: 66%;
+  --color-accent-hsl: 258, 88%, 66%;
   --love-rgb: 205, 106, 94;
   --gold-rgb: 230, 161, 73;
   --rose-rgb: 127, 111, 134;
@@ -1093,6 +1285,7 @@ body {
   --accent-h: 6;
   --accent-s: 53%;
   --accent-l: 59%;
+  --color-accent-hsl: 6, 53%, 59%;
   --love-rgb: 145, 121, 123;
   --gold-rgb: 242, 154, 99;
   --rose-rgb: 145, 166, 204;
@@ -1111,6 +1304,7 @@ body {
   --accent-h: 11;
   --accent-s: 56%;
   --accent-l: 70%;
+  --color-accent-hsl: 11, 56%, 70%;
   --love-rgb: 194, 105, 128;
   --gold-rgb: 183, 195, 121;
   --rose-rgb: 215, 131, 116;
@@ -1129,12 +1323,13 @@ body {
   --accent-h: 187;
   --accent-s: 40%;
   --accent-l: 60%;
+  --color-accent-hsl: 187, 40%, 60%;
   --latex-color: var(--pine);
   --pomodoro-timer-dot-color: var(--love);
   --pomodoro-timer-elapsed-color: var(--foam);
   --pomodoro-timer-color: var(--text-selection);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -1142,7 +1337,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

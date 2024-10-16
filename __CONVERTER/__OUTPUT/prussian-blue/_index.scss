@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -585,7 +640,7 @@ body {
   --tab-text-color-focused-active: var(--teal0);
   --tab-text-color-focused-active-current: var(--light3);
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -593,7 +648,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -652,7 +707,94 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --light: var(--background-primary);
+  --link-unresolved-color: var(--light1);
+  --color-teal0-rgb: var(--teal0);
+  --color-teal0: var(--teal0);
+  --color-light3-rgb: var(--light3);
+  --color-light3: var(--light3);
+  --color-frost1-rgb: var(--frost1);
+  --color-frost1: var(--frost1);
+  --color-cyan-rgb: var(--frost1);
+  --color-cyan: var(--frost1);
+  --color-blue-rgb: var(--frost5);
+  --color-blue: var(--frost5);
+  --color-frost0-rgb: var(--frost0);
+  --color-frost0: var(--frost0);
+  --color-teal0-rgb: var(--teal0);
+  --color-teal0: var(--teal0);
+  --color-red: var(--red);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark0);
+  --background-secondary-alt: var(--dark3);
+  --background-modifier-border: var(--dark2);
+  --cursor-line-background: rgba(var(--teal0), 0.2);
+  --text-normal: var(--light2);
+  --text-faint: var(--light1);
+  --text-muted: var(--frost0);
+  --text-accent: var(--teal0);
+  --text-accent-hover: var(--light3);
+  --bold-color: var(--red);
+  --italic-color: var(--yellow);
+  --link-url: var(--light3);
+  --h1-color: var(--frost0);
+  --h2-color: var(--frost0);
+  --h3-color: var(--frost0);
+  --h4-color: var(--frost0);
+  --h5-color: var(--frost0);
+  --h6-color: var(--frost0);
+  --text-highlight-bg: var(--frost0);
+  --text-highlight-fg: var(--dark0);
+  --tag-color: var(--frost0);
+  --tag-background: var(--dark0);
+  --tag-background-hover: var(--dark0);
+  --titlebar-text-color-focused: var(--teal0);
+  --inline-title-color: var(--frost0);
+  --checkbox-color: var(--frost0);
+  --checkbox-color-hover: var(--light3);
+  --checkbox-border-color: var(--light3);
+  --checkbox-border-color-hover: var(--frost0);
+  --checklist-done-color: var(--frost0);
+  --table-header-background: var(--teal4);
+  --table-header-background-hover: var(--teal3);
+  --table-row-even-background: var(--dark3);
+  --table-row-odd-background: var(--dark2);
+  --table-row-background-hover: var(--frost5);
+  --text-selection: var(--teal4);
+  --flashing-background: var(--teal4);
+  --code-normal: var(--light2);
+  --code-background: var(--dark1);
+  --mermaid-note: var(--frost5);
+  --mermaid-loopline: var(--frost1);
+  --mermaid-exclude: var(--dark0);
+  --mermaid-seqnum: var(--dark0);
+  --icon-color-hover: var(--teal0);
+  --icon-color-focused: var(--teal0);
+  --nav-item-color-hover: var(--teal0);
+  --nav-item-color-active: var(--light3);
+  --nav-file-tag: var(--teal2);
+  --graph-line: var(--teal2);
+  --graph-node: var(--teal3);
+  --graph-node-tag: var(--teal4);
+  --graph-node-attachment: var(--teal1);
+  --calendar-hover: var(--teal0);
+  --calendar-background-hover: var(--dark0);
+  --calendar-week: var(--frost0);
+  --calendar-today: var(--frost0);
+  --dataview-key: var(--text-faint);
+  --dataview-key-background: rgba(var(--frost3), 0.3);
+  --dataview-value: var(--text-faint);
+  --dataview-value-background: rgba(var(--teal0), 0.3);
+  --tab-text-color-focused-active: var(--teal0);
+  --tab-text-color-focused-active-current: var(--light3);
+
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -660,7 +802,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

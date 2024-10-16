@@ -14,6 +14,7 @@
   --text-link: var(--light-blue);
   --text-a: var(--light-dim-blue);
   --text-a-hover: var(--light-blue);
+  --text-mark: rgba(215, 153, 33, 0.4);
   --pre-code: var(--bg1-light);
   --text-highlight-bg: var(--light-dim-green);
   --interactive-accent: var(--bg5-light);
@@ -24,4 +25,5 @@
   --inline-code: var(--light-blue);
   --code-block: var(--fg-light);
   --vim-cursor: var(--light-blue);
+  --text-selection: rgba(189, 174, 147, 0.5);
 }

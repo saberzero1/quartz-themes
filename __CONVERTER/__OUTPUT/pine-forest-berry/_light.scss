@@ -21,16 +21,20 @@
   --graph-background: var(--background-primary);
   --graph-links: rgba(117, 158, 147, 0.7);
   --graph-dots: var(--forest-green-dark);
+  --text-accent: var(--orange-yellow-dark);
+  --text-accent-hover: var(--berry-red-strong);
   --text-normal-alt: var(--blue-gray-dark);
   --text-normal: var(--blue-gray-darkest);
   --text-muted: var(--off-white-darker);
   --text-muted-real: var(--off-white-dark);
+  --text-faint: var(--forest-green-light);
   --text-highlight-bg: #f2bd7746;
   --text-highlight: #ad3266;
   --text-error: var(--berry-red-faded);
   --text-error-hover: var(--berry-red-faded);
   --text-selection: rgba(157, 212, 207, 0.5);
   --text-status-bar: var(--forest-green-dark);
+  --text-on-accent: var(--off-white);
   --text-nav: var(--forest-green-light);
   --interactive-normal: var(--forest-green-light);
   --interactive-hover: var(--orange-yellow-dark);
@@ -61,4 +65,5 @@
   --pre-code: var(--forest-green-faded);
   --blockquote-border: var(--forest-green-dark);
   --vim-cursor: var(--forest-green-dark);
+  --border-color: var(--forest-green-dark);
 }

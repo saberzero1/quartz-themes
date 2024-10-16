@@ -19,6 +19,61 @@
   @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
+/* START CANVAS GRAPH WORKAROUND */
+:root:root {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+:root:root[saved-theme="dark"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
+  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
+  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
+  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
+  --secondary: var(
+    --link-color,
+    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+  ) !important;
+  --tertiary: var(
+    --link-color-hover,
+    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+
+/* END CANVAS GRAPH WORKAROUND */
+
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -399,6 +454,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --OT-view-header-title-focus-color: var(--color-base-100);
   --OT-view-header-title-no-focus-color: var(--color-base-50);
   --OT-YAML-color: var(--color-base-50);
+  --background-modifier-message: var(--color-accent-1);
+  --background-modifier-success-rgb: 106, 245, 161;
   --background-modifier-success: rgb(106, 245, 161);
   --blockquote-background-color: floralwhite;
   --interactive-accent-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.7);
@@ -443,6 +500,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-marker-color: var(--text-normal);
   --metadata-background: var(--color-base-00);
   --metadata-border-width: 0;
+  --metadata-divider-color: var(--color-base-35);
   --metadata-divider-width: 1;
   --metadata-label-text-color: var(--color-base-50);
   --nav-collapse-icon-color: var(--nav-item-color);
@@ -466,7 +524,10 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-stacked-text-transform: rotate(180deg);
   --table-background: var(--OT-table-background);
   --table-column-alt-background: undefined;
+  --table-header-background-hover: transparent;
   --table-header-color: var(--h3-color);
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
   --tag-color: var(--OT-pill-color);
   --tag-background: var(--OT-pill-background);
   --tag-color-hover: var(--OT-color-on-accent-1);
@@ -498,6 +559,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --file-header-font-weight: var(--font-semibold);
   --file-header-justify: left;
   --file-line-width: var(--OT-readingMode-line-width);
+  --heading-spacing: 0;
+  --img-max-height: 33rem;
   --inline-title-font: var(--font-monospace);
   --inline-title-line-height: 0em;
   --inline-title-size: var(--OT-readingMode-text-size);
@@ -507,9 +570,15 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --line-height-normal: var(--OT-readingMode-line-height);
   --list-bullet-size: 0.4em;
   --list-indent: 1.3em;
+  --list-spacing: 0rem;
+  --list-spacing-below: 0.8rem;
+  --list-spacing-1: 0.3rem;
+  --list-spacing-2: 0.3rem;
+  --list-spacing-3: 0.2rem;
   --metadata-border-radius: 7px;
   --metadata-label-font-weight: var(--font-semibold);
   --metadata-padding: 0;
+  --metadata-property-padding: 0em 0em 0em 0.3em;
   --modal-height: 88vh;
   --modal-max-height: 98vh;
   --nav-item-size: var(--OT-sidebars-font-size);
@@ -518,6 +587,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --popover-height: 40vh;
   --popover-max-height: 70vh;
   --popover-width: 46rem;
+  --status-bar-border-width: 1px 0 0 1px;
   --table-header-weight: var(--font-bold);
   --table-text-size: 0.9em;
   --vault-name-font-size: calc(var(--OT-sidebars-font-size) * 1.3);
@@ -643,6 +713,8 @@ body {
   --OT-view-header-title-focus-color: var(--color-base-100);
   --OT-view-header-title-no-focus-color: var(--color-base-50);
   --OT-YAML-color: var(--color-base-50);
+  --background-modifier-message: var(--color-accent-1);
+  --background-modifier-success-rgb: 106, 245, 161;
   --background-modifier-success: rgb(106, 245, 161);
   --blockquote-background-color: floralwhite;
   --interactive-accent-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.7);
@@ -687,6 +759,7 @@ body {
   --list-marker-color: var(--text-normal);
   --metadata-background: var(--color-base-00);
   --metadata-border-width: 0;
+  --metadata-divider-color: var(--color-base-35);
   --metadata-divider-width: 1;
   --metadata-label-text-color: var(--color-base-50);
   --nav-collapse-icon-color: var(--nav-item-color);
@@ -710,7 +783,10 @@ body {
   --tab-stacked-text-transform: rotate(180deg);
   --table-background: var(--OT-table-background);
   --table-column-alt-background: undefined;
+  --table-header-background-hover: transparent;
   --table-header-color: var(--h3-color);
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
   --tag-color: var(--OT-pill-color);
   --tag-background: var(--OT-pill-background);
   --tag-color-hover: var(--OT-color-on-accent-1);
@@ -742,6 +818,8 @@ body {
   --file-header-font-weight: var(--font-semibold);
   --file-header-justify: left;
   --file-line-width: var(--OT-readingMode-line-width);
+  --heading-spacing: 0;
+  --img-max-height: 33rem;
   --inline-title-font: var(--font-monospace);
   --inline-title-line-height: 0em;
   --inline-title-size: var(--OT-readingMode-text-size);
@@ -751,9 +829,15 @@ body {
   --line-height-normal: var(--OT-readingMode-line-height);
   --list-bullet-size: 0.4em;
   --list-indent: 1.3em;
+  --list-spacing: 0rem;
+  --list-spacing-below: 0.8rem;
+  --list-spacing-1: 0.3rem;
+  --list-spacing-2: 0.3rem;
+  --list-spacing-3: 0.2rem;
   --metadata-border-radius: 7px;
   --metadata-label-font-weight: var(--font-semibold);
   --metadata-padding: 0;
+  --metadata-property-padding: 0em 0em 0em 0.3em;
   --modal-height: 88vh;
   --modal-max-height: 98vh;
   --nav-item-size: var(--OT-sidebars-font-size);
@@ -762,6 +846,7 @@ body {
   --popover-height: 40vh;
   --popover-max-height: 70vh;
   --popover-width: 46rem;
+  --status-bar-border-width: 1px 0 0 1px;
   --table-header-weight: var(--font-bold);
   --table-text-size: 0.9em;
   --vault-name-font-size: calc(var(--OT-sidebars-font-size) * 1.3);
@@ -833,6 +918,7 @@ body {
   --h4-size: 1.563em;
   --h5-size: 1.25em;
   --h6-size: 1em;
+  --link-decoration: none;
   --link-decoration-hover: none;
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
@@ -1635,7 +1721,7 @@ body {
   --link-color: silver;
   --link-external-color: silver;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -1643,7 +1729,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -2262,6 +2348,7 @@ body {
   --accent-s: 100% !important;
   --accent-l: 50% !important;
   --color-accent-1: #f5c504 !important;
+  --color-accent-2: gold !important;
   --color-accent-3: #fdeca6 !important;
   --OT-color-on-accent-1: white;
   --OT-color-muted-on-accent-1: #9a8200;
@@ -2463,7 +2550,7 @@ body {
   --link-color: silver;
   --link-external-color: silver;
 
-  --light: var(--background-primary);
+  /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
   --darkgray: var(--text-normal);
@@ -2471,7 +2558,7 @@ body {
   --secondary: var(--link-color);
   --tertiary: var(--link-color-hover);
   --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);
+  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
