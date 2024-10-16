@@ -43,8 +43,6 @@ div.graph > div.graph-outer {
 }
 
 hr {
-  padding-left: 2rem;
-  padding-right: 2rem;
   background-color: var(--light-border);
 }
 
@@ -67,7 +65,7 @@ div.sidebar.left {
   border-right: 1px solid var(--light-border);
 }
 
-// Tablet
+// Dark theme
 body {
   .page > #quartz-body {
     background: black;
@@ -101,6 +99,9 @@ body {
     }
   }
 }
+section {
+  background-color: var(--light-lighten);
+}
 
 :root[saved-theme="light"] {
   body {
@@ -131,6 +132,9 @@ body {
         background-color: var(--light);
       }
     }
+  }
+  section {
+    background-color: var(--light);
   }
 }
 
@@ -214,9 +218,13 @@ body {
         footer {
           background-color: var(--light);
         }
-        .sidebar.left,
+        .sidebar.left {
+          > .explorer {
+            background-color: var(--light-darken);
+          }
+        }
         .explorer {
-          background-color: var(--light-darken);
+          background-color: var(--light);
         }
       }
       div.search {
@@ -248,9 +256,13 @@ body {
         padding: 0.5rem 1rem 0.25rem;
         border-bottom: 1px solid var(--light-border);
         position: sticky;
+
+        > .explorer {
+          background-color: var(--light-lighten);
+        }
       }
       .explorer {
-        background-color: var(--light-lighten);
+        background-color: var(--light);
       }
       .sidebar.right,
       .center,
@@ -284,8 +296,6 @@ body {
   }
 
   hr {
-    padding-left: unset;
-    padding-right: unset;
     background-color: var(--light-border);
   }
 
