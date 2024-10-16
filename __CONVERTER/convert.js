@@ -332,6 +332,12 @@ manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   )
+  // INIT ONLY
+  if (args[0] === "INIT") {
+    ensureDirectoryExists(
+      `./__CONVERTER/__OVERRIDES/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    )
+  }
 })
 
 // STEP 4
@@ -348,7 +354,14 @@ manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./__CONVERTER/__TEMPLATE/_index.scss`,
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    // INIT ONLY
   )
+  if (args[0] === "INIT") {
+    copyFileToDirectory(
+      `./__CONVERTER/__TEMPLATE/__OVERRIDES/_index.scss`,
+      `./__CONVERTER/__OVERRIDES/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    )
+  }
 })
 
 // _fonts.scss
@@ -408,6 +421,13 @@ const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
 const fontRegex = new RegExp(/(@font-face.*?\})/, "gmsv")
 const darkRegex = new RegExp(/^\.theme-dark.*?\{([^\}]*?)\}$/, "gmsv")
 const lightRegex = new RegExp(/^\.theme-light.*?\{([^\}]*?)\}$/, "gmsv")
+manifestCollection.forEach((manifest) => {
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//OVERRIDES`,
+    `@import "../../__OVERRIDES/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}";`,
+  )
+})
 manifestCollection.forEach((manifest) => {
   const bodyValue = findAllMatchesAsString(
     `./__OBSIDIAN/${getValueFromDictionary(manifest, "name")}/theme.css`,

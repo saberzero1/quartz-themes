@@ -4,6 +4,8 @@
   "description": "Quartz-compatible Obsidian themes",
   "main": "index.js",
   "scripts": {
+    "build": "node __CONVERTER/compile.js",
+    "compile": "node __CONVERTER/convert.js && npx prettier . --write",
     "check": "npx prettier . --check",
     "format": "npx prettier . --write"
   },

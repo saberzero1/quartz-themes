@@ -2,7 +2,9 @@
 @use "sass:meta";
 @use "sass:string";
 @use "sass:list";
+@use "sass:color";
 @import "fonts";
+@import "../../__OVERRIDES/heboric";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
@@ -10,6 +12,11 @@
     @return map-get($collection, $sub, $value);
   }
   @return map-get($collection, $value);
+}
+
+/* Color converter*/
+@function color_convert($color, $opacity: 0%) {
+  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
 }
 
 /* Callouts */
@@ -725,10 +732,12 @@ a {
   transition: opacity 0.15s ease-in-out;
   background-position: center right;
   background-repeat: no-repeat;
-  background-image: rgba(var(--link-color), 0.15);
   &:hover {
     color: var(--link-color-hover);
     /* text-decoration-line: var(--link-decoration-hover); */
+  }
+  &.internal {
+    background-color: color_convert(var(--link-color), 15%);
   }
   &.external {
     color: var(--link-external-color);
@@ -736,6 +745,7 @@ a {
     background-position: center right;
     background-repeat: no-repeat;
     background-image: linear-gradient(transparent, transparent);
+    background-color: transparent;
     /* background-size: 13px; */
     /* padding-inline-end: 16px; */
     /* background-position-y: 4px; */
