@@ -67,7 +67,7 @@ div.sidebar.left {
   border-right: 1px solid var(--light-border);
 }
 
-// Tablet
+// Dark theme
 body {
   .page > #quartz-body {
     background: black;
@@ -101,6 +101,9 @@ body {
     }
   }
 }
+section {
+  background-color: var(--light-lighten);
+}
 
 :root[saved-theme="light"] {
   body {
@@ -131,6 +134,9 @@ body {
         background-color: var(--light);
       }
     }
+  }
+  section {
+    background-color: var(--light);
   }
 }
 
