@@ -4,6 +4,7 @@
 @use "sass:list";
 @use "sass:color";
 @import "fonts";
+
 @import "../../__OVERRIDES/sparkling-night";
 
 /* Get an option from a set. */
@@ -720,6 +721,24 @@ a {
   }
   &.internal {
     background-color: color_convert(var(--link-color), 15%);
+    &.tag-link {
+      --highlight-fallback: 258, 88%, 66%;
+      --textHighlight-fallback: 255, 208, 0;
+      color: var(--tag-color, var(--text-accent));
+      text-decoration: var(--tag-decoration, none);
+      background-color: var(
+        --tag-background,
+        hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+      );
+      &:hover {
+        color: var(--tag-color-hover, var(--text-accent));
+        text-decoration: var(--tag-decoration-hover, none);
+        background-color: var(
+          --tag-background-hover,
+          hsla(var(--interactive-accent-hsl, var(--highlight-fallback)), 0.2)
+        );
+      }
+    }
   }
   &.external {
     color: var(--link-external-color);
@@ -932,47 +951,63 @@ code {
 #explorer-content,
 .backlinks {
   ul {
-    li {
-      > a {
-        color: var(--nav-item-color, var(--text-muted, var(--dark)));
-        &:hover {
-          color: var(--nav-item-color-hover, var(--text-normal, var(--tertiary)));
-        }
+    li > a {
+      color: var(--nav-item-color, var(--text-muted, var(--dark)));
+      &:hover {
+        color: var(--nav-item-color-hover, var(--text-normal, var(--tertiary)));
       }
     }
   }
 }
+.backlinks:after {
+  background: unset;
+}
+
+.explorer {
+  &:after {
+    background: unset;
+  }
+}
+button#explorer {
+  color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed));
+}
+#explorer-content {
+  & ul {
+    & li a {
+      color: var(--nav-item-color, var(--nav-heading-color-collapsed));
+    }
+  }
+}
+
 .folder-container {
   .folder-icon {
     color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed));
+    &:hover {
+      .folder-icon {
+        color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed-hover));
+      }
+    }
   }
+  div > a,
   div > button,
   div > button > span {
     color: var(--nav-item-color, var(--nav-heading-color-collapsed));
-  }
-  &:hover {
-    .folder-icon {
-      color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed-hover));
-    }
-    div > button,
-    div > button > span {
+    &:hover {
       color: var(--nav-item-color-hover, var(--nav-heading-color-collapsed-hover));
     }
   }
   &:has(+ div.folder-outer.open) {
     .folder-icon {
       color: var(--collapse-icon-color, var(--nav-heading-color));
+      &:hover {
+        color: var(--collapse-icon-color, var(--nav-heading-color-hover));
+      }
     }
+    div > a,
     div > button,
     div > button > span {
       color: var(--nav-heading-color);
-    }
-    &:hover {
-      .folder-icon {
-        color: var(--collapse-icon-color, var(--nav-heading-color-hover));
-      }
-      div > button,
-      div > button > span {
+      &:hover {
         color: var(--nav-heading-color-hover);
       }
     }
@@ -994,7 +1029,7 @@ code {
 
 /* DARKMODE */
 .darkmode {
-  svg {
+  & svg {
     color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
   }
@@ -1010,6 +1045,26 @@ code {
   color: var(--text-faint);
 }
 
+/* GRAPH */
+.graph {
+  & > .graph-outer {
+    border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+    --background-modifier-border-focus: var(--color-base-40);
+    & > #global-graph-icon {
+      color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+      &:hover {
+        background-color: var(--background-modifier-hover);
+      }
+    }
+  }
+  & > #global-graph-outer {
+    & > #global-graph-container {
+      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      background-color: var(--background-primary);
+    }
+  }
+}
+
 /* MISC */
 hr {
   border: none;
@@ -1017,22 +1072,86 @@ hr {
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
 }
 
+.clipboard-button {
+  color: var(--text-muted);
+  border-color: var(--checkbox-border-color, var(--text-faint));
+  background-color: transparent;
+  &:hover {
+    border-color: var(--checkbox-border-color-hover, var(--text-muted));
+    background-color: var(--background-modifier-hover);
+  }
+  & > svg {
+    fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+  }
+}
+
+details#toc {
+  & summary {
+    cursor: pointer;
+
+    &::marker {
+      color: var(--text-muted);
+    }
+  }
+}
+
+/* POPOVER */
+.popover {
+  & .popover-inner {
+    border: var(--background-modifier-border, var(--color-base-30));
+    background-color: var(--background-primary);
+  }
+}
+
 /* START CANVAS GRAPH WORKAROUND */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
-  --light: var(--background-primary, var(--color-base-00, #ffffff)) !important;
-  --lightgray: var(--background-modifier-border, var(--color-base-30, #e0e0e0)) !important;
-  --gray: var(--checkbox-border-color, var(--text-faint, #ababab)) !important;
-  --darkgray: var(--text-normal, var(--color-base-100, #222222)) !important;
+  --light: var(
+    --graph-node,
+    var(--text-muted, var(--background-primary, var(--color-base-00, #ffffff)))
+  ) !important;
+  --lightgray: var(
+    --graph-line,
+    var(
+      --color-base-35,
+      var(
+        --background-modifier-border-focus,
+        var(--background-modifier-border, var(--color-base-30, #e0e0e0))
+      )
+    )
+  ) !important;
+  --gray: var(
+    --graph-node,
+    var(
+      --text-muted,
+      var(
+        --graph-text,
+        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #ababab)))
+      )
+    )
+  ) !important;
+  --darkgray: var(
+    --graph-node-unresolved,
+    var(--text-faint, var(--text-normal, var(--color-base-100, #222222)))
+  ) !important;
   --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
   --secondary: var(
-    --link-color,
-    var(--text-accent, var(--color-accent, hsl(258, 88%, 66%)))
+    --graph-node-focused,
+    var(
+      --text-accent,
+      var(--link-color, var(--text-accent, var(--color-accent, hsl(258, 88%, 66%))))
+    )
   ) !important;
   --tertiary: var(
-    --link-color-hover,
-    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+    --graph-node-tag,
+    var(
+      --color-green,
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+      )
+    )
   ) !important;
   --highlight: var(
     --tag-background,
@@ -1047,18 +1166,54 @@ hr {
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
-  --light: var(--background-primary, var(--color-base-00, #1e1e1e)) !important;
-  --lightgray: var(--background-modifier-border, var(--color-base-30, #363636)) !important;
-  --gray: var(--checkbox-border-color, var(--text-faint, #666666)) !important;
-  --darkgray: var(--text-normal, var(--color-base-100, #dadada)) !important;
+  --light: var(
+    --graph-node,
+    var(--text-muted, var(--background-primary, var(--color-base-00, #1e1e1e)))
+  ) !important;
+  --lightgray: var(
+    --graph-line,
+    var(
+      --color-base-35,
+      var(
+        --background-modifier-border-focus,
+        var(--background-modifier-border, var(--color-base-30, #363636))
+      )
+    )
+  ) !important;
+  --gray: var(
+    --graph-node,
+    var(
+      --text-muted,
+      var(
+        --graph-text,
+        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #666666)))
+      )
+    )
+  ) !important;
+  --darkgray: var(
+    --graph-node-unresolved,
+    var(--text-faint, var(--text-normal, var(--color-base-100, #dadada)))
+  ) !important;
   --dark: var(--h1-color, var(--text-faint, #666666)) !important;
   --secondary: var(
-    --link-color,
-    var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+    --graph-node-focused,
+    var(
+      --text-accent,
+      var(
+        --link-color,
+        var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
+      )
+    )
   ) !important;
   --tertiary: var(
-    --link-color-hover,
-    var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+    --graph-node-tag,
+    var(
+      --color-green,
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
+      )
+    )
   ) !important;
   --highlight: var(
     --tag-background,
