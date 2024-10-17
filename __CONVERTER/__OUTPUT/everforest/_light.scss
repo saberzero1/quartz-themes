@@ -1,0 +1,29 @@
+:root[saved-theme="light"] {
+  --background-primary: var(--bg-light);
+  --background-primary-alt: var(--bg-light);
+  --background-secondary: var(--bg-light);
+  --background-secondary-alt: var(--bg-light);
+  --text-normal: var(--fg-light);
+  --text-faint: var(--grey1-light);
+  --text-title-h1: var(--light-red);
+  --text-title-h2: var(--light-orange);
+  --text-title-h3: var(--light-yellow);
+  --text-title-h4: var(--light-green);
+  --text-title-h5: var(--light-aqua);
+  --text-title-h6: var(--light-purple);
+  --text-link: var(--light-blue);
+  --text-a: var(--light-dim-blue);
+  --text-a-hover: var(--light-blue);
+  --text-mark: rgba(215, 153, 33, 0.4);
+  --pre-code: var(--bg1-light);
+  --text-highlight-bg: var(--light-dim-green);
+  --interactive-accent: var(--bg5-light);
+  --interactive-before: var(--bg5-light);
+  --background-modifier-border: var(--bg5-light);
+  --text-accent: var(--light-dim-green);
+  --interactive-accent-rgb: var(--light-dim-green);
+  --inline-code: var(--light-blue);
+  --code-block: var(--fg-light);
+  --vim-cursor: var(--light-blue);
+  --text-selection: rgba(189, 174, 147, 0.5);
+}

@@ -1,0 +1,450 @@
+/* @settings
+
+name: W95 Display Properties
+id: w95-display-props
+settings:
+    -
+        id: w95-display-props-font
+        title: Font
+        type: heading
+        level: 3
+    -
+        id: font-ui-smaller
+        title: Smaller font size (px)
+        type: variable-number
+        default: 11
+        format: px
+    -
+        id: font-ui-small
+        title: Small font size (px)
+        type: variable-number
+        default: 12
+        format: px
+    -
+        id: font-ui-medium
+        title: Medium font size (px)
+        type: variable-number
+        default: 14
+        format: px
+    -
+        id: font-ui-large
+        title: Large font size (px)
+        type: variable-number
+        default: 20
+        format: px
+    - 
+        id: w95-display-theme
+        title: Theme
+        type: heading
+        level: 3
+    - 
+        id: w95-display-themes
+        title: Select Theme
+        description: Select your preferred theme
+        type: class-select
+        allowEmpty: false
+        default: w95-default
+        options:
+        - 
+          label: W95
+          value: w95-default
+        - 
+          label: Reactionary
+          value: w95-reactionary
+*/
+
+.theme-dark,
+.theme-light {
+  --background-primary: #bdbebd;
+  --background-secondary: #bdbebd;
+  --nav-item-background-active: #00007b;
+  --nav-item-color-active: var(--accent-1);
+}
+
+.theme-dark.w95-reactionary,
+.theme-light.w95-reactionary {
+  --background-primary: #d4d0c8;
+  --background-secondary: #d4d0c8;
+  --text-normal: #181612;
+  --nav-item-background-active: #3a6ea5;
+  --nav-item-color-active: var(--accent-1);
+}
+
+.theme-dark,
+.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-55: #808080;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-base-100: #222222;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+
+  --accent-1: #ffffff;
+  --accent-2: #00ffff;
+  --accent-3: #00ff00;
+  --accent-4: #ffff00;
+  --accent-5: #ff0000;
+  --accent-6: #00007b;
+
+  --accent-1-muted: #ff79c6;
+  --accent-2-muted: #8be9fd;
+  --accent-3-muted: #50fa7b;
+  --accent-4-muted: #ffb86c;
+  --accent-5-muted: #ff5555;
+  --accent-6-muted: #bd93f9;
+
+  --header-color: #34548a;
+  --bold-color: #000000;
+  --italic-color: #343b58;
+  --text-highlight-bg: #485e3066;
+  --text-faint: #4f5057;
+
+  --accent-h: 240;
+  --accent-s: 100%;
+  --accent-l: 24%;
+
+  --interactive-normal: var(--accent-1);
+  --interactive-hover: var(--accent-1);
+  --interactive-accent: var(--accent-6);
+  --interactive-accent-hover: var(--background-primary);
+
+  --background-editor-primary: #ffffff;
+
+  --border-highlight: var(--accent-1);
+  --border-shadow: var(--color-base-55);
+
+  --nav-files-background: var(--background-editor-primary);
+
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
+
+  /* Backgrounds */
+  --background-modifier-border: var(--color-base-60);
+  --background-modifier-border-hover: var(--background-primary);
+  --background-modifier-border-focus: var(--background-primary);
+  --ribbon-background: var(--background-primary);
+  --code-background: var(--accent-1);
+
+  /* editor */
+
+  /* Normalize title bar colors */
+  --tab-container-background: var(--background-primary);
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+
+  /* Graph adjustments */
+  --graph-line: var(--background-primary, var(--background-modifier-border-focus));
+
+  /* UI font colors */
+  --h1-color: var(--header-color);
+  --h2-color: var(--header-color);
+  --h3-color: var(--header-color);
+  --h4-color: var(--header-color);
+  --h5-color: var(--header-color);
+  --h6-color: var(--header-color);
+}
+
+body {
+  /* Font sizes */
+  --header-size: 1.4rem;
+  --h1-size: var(--header-size);
+  --h2-size: 1.3rem;
+  --h3-size: 1.2rem;
+  --h4-size: 1.1rem;
+  --h5-size: 1rem;
+  --h6-size: 0.9rem;
+
+  /* UI font sizes */
+  --font-ui-smaller: 11px;
+  --font-ui-small: 12px;
+  --font-ui-medium: 14px;
+  --font-ui-large: 20px;
+
+  /* tabs */
+  --tab-radius-active: 1px;
+  --tab-curve: 1px;
+
+  /* buttons */
+  --clickable-icon-radius: 0;
+}
+
+button,
+button.mod-cta,
+button:not(.clickable-icon) {
+  background-color: var(--background-primary);
+  border: 2px outset var(--color-base-30);
+  border-radius: 0;
+  color: var(--color-base-100);
+}
+
+button:active,
+button.mod-cta:active {
+  background-color: var(--background-primary);
+  border: 2px inset var(--color-base-30);
+  border-radius: 0;
+  color: var(--color-base-100);
+}
+
+select.dropdown {
+  border-radius: 0;
+  border: 2px inset var(--color-base-30);
+}
+
+.clickable-icon {
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  border-right: 1px solid var(--border-shadow);
+  border-bottom: 1px solid var(--border-shadow);
+}
+
+.clickable-icon:active {
+  border-top: 1px solid var(--border-shadow);
+  border-left: 1px solid var(--border-shadow);
+  border-right: 1px solid var(--border-highlight);
+  border-bottom: 1px solid var(--border-highlight);
+}
+
+.clickable-icon::before {
+  content: " ";
+}
+
+.side-dock-settings,
+.side-dock-actions {
+  gap: 0;
+}
+
+.workspace-tab-container .view-header {
+  margin-bottom: 1px;
+}
+
+.mod-left-split .workspace-tab-header-container-inner {
+  gap: 0;
+}
+
+.mod-left-split .workspace-tab-header {
+  border-radius: 0;
+}
+
+.mod-left-split .workspace-tab-header {
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  border-right: 1px solid var(--border-shadow);
+  border-bottom: 1px solid var(--border-shadow);
+  color: var(--tab-text-color-active);
+  background-color: var(--tab-background-active);
+
+  box-shadow: none;
+}
+
+.mod-left-split .workspace-tab-header.is-active {
+  border-top: 1px solid var(--tab-outline-color);
+  border-left: 1px solid var(--tab-outline-color);
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid var(--color-base-20);
+
+  box-shadow: none;
+}
+
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: 0;
+}
+
+.mod-root .workspace-tab-header:not(.is-active) {
+  top: 3px;
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  border-right: 1px solid var(--border-shadow);
+  border-right: 1px solid var(--border-shadow);
+  color: var(--tab-text-color-active);
+}
+
+.mod-root .workspace-tab-header :not(.is-active) * {
+  border: none;
+}
+
+.mod-root .workspace-tab-header-inner::after {
+  background: none !important;
+}
+
+.workspace-tab-header {
+  align-items: center;
+  border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+}
+
+.workspace-tab-header-inner {
+  margin: 1px 0;
+  border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: 1px dotted var(--color-base-70);
+}
+
+.workspace-tab-header-container {
+  display: flex;
+  background-color: var(--tab-container-background);
+  height: var(--header-height);
+  border-bottom: var(--tab-outline-width) solid #ffffff;
+  flex: 0 0 auto;
+  padding-left: 0;
+  padding-right: var(--size-4-2);
+  position: relative;
+}
+
+.workspace-ribbon.mod-left:before {
+  border-bottom: 1px solid var(--accent-1);
+  opacity: 0;
+}
+
+.workspace-tab-header.is-active {
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  box-shadow: 1px 1px 0 var(--tab-outline-width) var(--tab-outline-color);
+  color: var(--tab-text-color-active);
+  background-color: var(--tab-background-active);
+  z-index: 2;
+}
+
+.workspace-leaf-resize-handle {
+  opacity: 0;
+}
+
+.workspace-tabs .workspace-leaf .view-content {
+  background-color: var(--background-editor-primary);
+  border: 4px ridge var(--color-base-25);
+}
+
+.nav-action-button:active {
+}
+
+.nav-header {
+  padding: 5px;
+  /* todo: make this more dynamic */
+  background-color: var(--background-primary);
+}
+
+.nav-files-container {
+  background-color: var(--nav-files-background);
+  border: 4px ridge var(--color-base-25);
+  border-right: 0;
+}
+
+.nav-buttons-container {
+  padding: 0;
+  gap: 0;
+  margin-bottom: 1px;
+}
+
+.inline-title {
+  font-size: 2rem;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  background-color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tree-item-self.is-being-renamed:focus-within {
+  color: var(--tab-text-color-active);
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-base-25);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px outset var(--color-base-20);
+}
+
+/* status bar */
+.status-bar {
+  position: inherit;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  background-color: inherit;
+}
+
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) dotted var(--nav-indentation-guide-color);
+}
+
+.modal-close-button {
+  margin-right: 0.25rem;
+}
+
+/* search results */
+.search-result:not(.is-collapsed) .search-result-file-title {
+  color: var(--nav-item-color);
+}
+
+/* mobile */
+
+.is-mobile .workspace-drawer.mod-left {
+  border-right: 1px outset var(--color-base-60);
+}
+
+.is-mobile .workspace-drawer.mod-right {
+  border-left: 1px outset var(--color-base-60);
+}
+
+.is-mobile .nav-files-container {
+  border: 4px ridge var(--color-base-25);
+}
+
+.is-mobile .empty-state-action {
+  background-color: transparent;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Dark Clarity",
+  "author": "chenbihao",
+  "authorUrl": "https://github.com/chenbihao",
+  "version": "1.0.3",
+  "repo": "chenbihao/obsidian-theme-dark-clarity",
+  "screenshot": "screenshot.png",
+  "modes": ["dark", "light"]
+}

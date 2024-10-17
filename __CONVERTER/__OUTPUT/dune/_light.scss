@@ -1,0 +1,11 @@
+:root[saved-theme="light"] {
+  --graph-fill-tag: var(--interactive-accent);
+  --graph-circle-fill-unresolved: dimgray;
+  --graph-circle-fill: var(--def-red);
+  --graph-line: rgba(128, 128, 128);
+  --graph-line-highlight: var(--interactive-accent);
+  --graph-fill-tag: darkorange;
+  --graph-circle-fill-highlight: var(--interactive-accent);
+  --graph-arrow: var(--text-muted);
+  --graph-circle-fill-unresolved: gray;
+}
