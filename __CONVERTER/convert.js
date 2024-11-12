@@ -430,7 +430,7 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//OVERRIDES`,
-    `@import "../../__OVERRIDES/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}";`,
+    `@import "./overrides/_index.scss";`,
   )
 })
 manifestCollection.forEach((manifest) => {

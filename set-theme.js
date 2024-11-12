@@ -122,20 +122,20 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
   }
 }
 
-const getCurrentFolder = `${getCurrentFolder()}/../quartz`
+const currentFolder = `${getCurrentFolder()}/../quartz`
 
 // Get the command line arguments
 const args = getCommandLineArgs()
 
 if (args.length === 0) {
-  console.error("Please provide a theme name as an argument.")
+  console.error("Please provide a theme name as an argument. Example: node run theme -- my-theme")
   process.exit(1)
 }
 
 const themeName = args[0]
 
 // check if quartz/styles exists
-if (!fs.existsSync(path.join(getCurrentFolder, "quartz", "styles"))) {
+if (!fs.existsSync(path.join(currentFolder, "quartz", "styles"))) {
   console.error(
     "The quartz/styles directory does not exist. Please run this script from the root of a Quartz project.",
   )
@@ -143,16 +143,24 @@ if (!fs.existsSync(path.join(getCurrentFolder, "quartz", "styles"))) {
 }
 
 // ensure the quartz/styles directory exists
-ensureDirectoryExists(path.join(getCurrentFolder, "quartz", "styles", "themes"))
+ensureDirectoryExists(path.join(currentFolder, "quartz", "styles", "themes"))
 
 // Clear the contents of the quartz/styles/themes directory
-clearDirectoryContents(path.join(getCurrentFolder, "quartz", "styles", "themes"))
+clearDirectoryContents(path.join(currentFolder, "quartz", "styles", "themes"))
+
+ensureDirectoryExists(path.join(currentFolder, "quartz", "styles", "themes", "overrides"))
 
 // Copy the theme files
-const themeSource = path.join(getCurrentFolder(), "__CONVERTER", "__OUTPUT")
-const themeDest = path.join(getCurrentFolder, "quartz", "styles", "themes")
+const themeSource = path.join(getCurrentFolder(), "__CONVERTER", "__OUTPUT", themeName)
+const themeOverrideSource = path.join(getCurrentFolder(), "__CONVERTER", "__OVERRIDES", themeName)
+const themeDest = path.join(currentFolder, "quartz", "styles", "themes")
 const themeFiles = ["_index.scss", "_dark.scss", "_light.scss", "_fonts.scss", "README.md"]
 
 themeFiles.forEach((file) => {
   copyFileToDirectory(path.join(themeSource, file), themeDest)
 })
+
+copyFileToDirectory(
+  path.join(themeOverrideSource, "_index.scss"),
+  path.join(themeDest, "overrides"),
+)

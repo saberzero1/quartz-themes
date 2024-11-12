@@ -7,7 +7,8 @@
     "build": "node __CONVERTER/convert.js",
     "compile": "node __CONVERTER/convert.js && npx prettier . --write",
     "check": "npx prettier . --check",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "theme": "node set-theme.js"
   },
   "repository": {
     "type": "git",
