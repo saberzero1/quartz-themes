@@ -23,14 +23,14 @@ npm ci
 Add the following line to your `custom.scss` file:
 
 ```scss
-@use "themes";
+@use "./themes";
 ```
 
 Your `custom.scss` should look something like this:
 
 ```scss
 @use "./base.scss";
-@use "themes";
+@use "./themes";
 
 // put your custom CSS here!
 ```
