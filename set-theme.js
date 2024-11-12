@@ -156,6 +156,12 @@ const themeOverrideSource = path.join(getCurrentFolder(), "__CONVERTER", "__OVER
 const themeDest = path.join(currentFolder, "quartz", "styles", "themes")
 const themeFiles = ["_index.scss", "_dark.scss", "_light.scss", "_fonts.scss", "README.md"]
 
+// Check if theme exists
+if (!fs.existsSync(themeSource)) {
+  console.error(`Theme ${themeName} does not exist`)
+  process.exit(1)
+}
+
 themeFiles.forEach((file) => {
   copyFileToDirectory(path.join(themeSource, file), themeDest)
 })
@@ -164,3 +170,5 @@ copyFileToDirectory(
   path.join(themeOverrideSource, "_index.scss"),
   path.join(themeDest, "overrides"),
 )
+
+console.log(`Theme ${themeName} has been set successfully`)
