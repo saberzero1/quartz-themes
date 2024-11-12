@@ -7,12 +7,15 @@ test-theme-path := ''
 
 set quiet
 
-[doc('List all available commands')]
+[doc('List all available commands'), private]
 default:
   @just --list
 
+[private]
 alias c := check
+[private]
 alias t := theme
+[private]
 alias u := update
 
 [doc('Update themes')]
