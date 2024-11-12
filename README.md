@@ -39,10 +39,9 @@ Your `custom.scss` should look something like this:
 
 Run the following from the Quartz Themes project root:
 
-````
 ```bash
 just theme <theme-name>
-````
+```
 
 ### Updating
 
