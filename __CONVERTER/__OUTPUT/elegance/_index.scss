@@ -1143,6 +1143,10 @@ section {
   background-color: var(--background-primary);
 }
 
+.search > #search-container > #search-space > * {
+  background-color: var(--background-secondary, var(--background-primary));
+}
+
 /* START CANVAS GRAPH WORKAROUND */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
