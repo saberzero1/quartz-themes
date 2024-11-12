@@ -30,5 +30,8 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "sass": "^1.79.3"
+  },
+  "dependencies": {
+    "just-install": "^2.0.2"
   }
 }
