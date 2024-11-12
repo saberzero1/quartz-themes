@@ -26,17 +26,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - run: npm ci --include=dev
-
-      - name: Check types and style
-        run: npm run check
+          node-version: 22
+      - run: npm i just-install
+      - run: npm ci
+      - run: npm run check
