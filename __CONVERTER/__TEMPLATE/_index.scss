@@ -947,6 +947,11 @@ details#toc {
   }
 }
 
+/* BACKGROUNDS */
+body, section {
+  background-color: var(--background-primary);
+}
+
 /* START CANVAS GRAPH WORKAROUND */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;

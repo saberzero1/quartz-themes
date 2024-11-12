@@ -5,7 +5,7 @@
 @use "sass:color";
 @import "fonts";
 
-@import "../../__OVERRIDES/w95";
+@import "./overrides/_index.scss";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
@@ -1141,6 +1141,12 @@ details#toc {
     border: var(--background-modifier-border, var(--color-base-30));
     background-color: var(--background-primary);
   }
+}
+
+/* BACKGROUNDS */
+body,
+section {
+  background-color: var(--background-primary);
 }
 
 /* START CANVAS GRAPH WORKAROUND */
