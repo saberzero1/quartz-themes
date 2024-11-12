@@ -12,30 +12,6 @@ function getCurrentFolder() {
 }
 
 /**
- * Lists all folders within a specified directory.
- *
- * @param {string} dirPath - The path of the directory to search.
- * @returns {string[]} An array of folder names within the provided directory.
- * @throws {Error} If the directory cannot be accessed or read.
- */
-function listFoldersInDirectory(dirPath) {
-  try {
-    // Read the directory contents
-    const items = fs.readdirSync(dirPath)
-
-    // Filter out the items that are directories
-    const folders = items.filter((item) => {
-      const itemPath = path.join(dirPath, item)
-      return fs.statSync(itemPath).isDirectory()
-    })
-
-    return folders
-  } catch (error) {
-    throw new Error(`Unable to access directory: ${error.message}`)
-  }
-}
-
-/**
  * Retrieves the command line arguments passed to the Node.js script.
  *
  * @returns {string[]} An array containing the command line arguments.
