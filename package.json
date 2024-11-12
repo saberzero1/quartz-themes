@@ -4,8 +4,11 @@
   "description": "Quartz-compatible Obsidian themes",
   "main": "index.js",
   "scripts": {
+    "build": "node __CONVERTER/convert.js",
+    "compile": "node __CONVERTER/convert.js && npx prettier . --write",
     "check": "npx prettier . --check",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "theme": "node set-theme.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,8 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "sass": "^1.79.3"
+  },
+  "dependencies": {
+    "just-install": "^2.0.2"
   }
 }
