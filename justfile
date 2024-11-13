@@ -6,6 +6,9 @@ error-quartz-not-found := 'Quartz not found. Please make sure you are in the rig
 test-theme-path := ''
 
 set quiet
+set allow-duplicate-recipes
+set allow-duplicate-variables
+set shell := if os() == "windows" { ["powershell", "-c"] } else { "sh" }
 
 [doc('List all available commands'), private]
 default:
@@ -27,7 +30,7 @@ check:
   git fetch
   git status
 
-[doc('Set theme')]
+[doc('Set theme'), unix]
 theme +name:
   #!/usr/bin/env sh
   if ! '{{quartz-path}}'; then
@@ -36,4 +39,15 @@ theme +name:
   exit 1
   fi
   echo 'Setting theme "{{name}}"'
+  npm run --silent theme -- "{{replace(trim(lowercase(name)), ' ', '-')}}"
+
+[doc('Set theme'), windows]
+theme +name:
+  if ( -not '{{quartz-path}}' )
+  {
+  Write-Host '{{quartz-path}}'
+  Write-Host '{{error-quartz-not-found}}'
+  exit 1
+  }
+  Write-Host 'Setting theme "{{name}}"'
   npm run --silent theme -- "{{replace(trim(lowercase(name)), ' ', '-')}}"
