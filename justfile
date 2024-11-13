@@ -8,7 +8,13 @@ test-theme-path := ''
 set quiet
 set allow-duplicate-recipes
 set allow-duplicate-variables
-set shell := if os() == "windows" { ["powershell", "-c"] } else { "sh" }
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+set shell := ["sh", "-c"]
+shebang := if os() == 'windows' {
+  'powershell.exe'
+} else {
+  '/usr/bin/env sh'
+}
 
 [doc('List all available commands'), private]
 default:
@@ -32,7 +38,7 @@ check:
 
 [doc('Set theme'), unix]
 theme +name:
-  #!/usr/bin/env sh
+  #!{{shebang}}
   if ! '{{quartz-path}}'; then
   echo '{{quartz-path}}'
   echo '{{error-quartz-not-found}}'
@@ -43,6 +49,7 @@ theme +name:
 
 [doc('Set theme'), windows]
 theme +name:
+  #!{{shebang}}
   if ( -not '{{quartz-path}}' )
   {
   Write-Host '{{quartz-path}}'
