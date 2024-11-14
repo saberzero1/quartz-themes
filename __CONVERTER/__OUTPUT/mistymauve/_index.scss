@@ -1014,6 +1014,28 @@ section {
   background-color: var(--background-secondary, var(--background-primary));
 }
 
+/* TEXT */
+strong {
+  color: var(--bold-color);
+}
+i,
+em {
+  color: var(--italic-color);
+}
+p,
+ul,
+text,
+a,
+tr,
+td,
+li,
+ol,
+ul,
+.katex,
+.math {
+  color: var(--text-normal);
+}
+
 /* START CANVAS GRAPH WORKAROUND */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
