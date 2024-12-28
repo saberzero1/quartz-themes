@@ -4,11 +4,13 @@
   "description": "Quartz-compatible Obsidian themes",
   "main": "index.js",
   "scripts": {
-    "build": "node __CONVERTER/convert.js",
-    "compile": "node __CONVERTER/convert.js && npx prettier . --write",
-    "check": "npx prettier . --check",
-    "format": "npx prettier . --write",
-    "theme": "node set-theme.js"
+    "build": "just build",
+    "compile": "just compile",
+    "check": "just check",
+    "format": "just format",
+    "update": "just update",
+    "theme": "just theme",
+    "verify": "just verify"
   },
   "repository": {
     "type": "git",
