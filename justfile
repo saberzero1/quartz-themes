@@ -18,6 +18,10 @@ alias t := theme
 [private]
 alias u := update
 
+[private]
+compile:
+  npm run compile
+
 [doc('Update themes')]
 update:
   git pull
