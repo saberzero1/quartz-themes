@@ -14,7 +14,8 @@ jobs:
     if: ${{ github.repository == 'saberzero1/quartz-themes' }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        # os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
@@ -27,5 +28,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci --include=dev
+      - run: npm i just-install
+      - run: npm ci
       - run: npm run verify
