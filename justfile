@@ -20,6 +20,10 @@ alias t := theme
 alias u := update
 
 [private]
+verify:
+  npx prettier . --check
+
+[private]
 build:
   node __CONVERTER/convert.js
 

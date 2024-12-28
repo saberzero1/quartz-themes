@@ -9,7 +9,8 @@
     "check": "just check",
     "format": "just format",
     "update": "just update",
-    "theme": "just theme"
+    "theme": "just theme",
+    "verify": "just verify"
   },
   "repository": {
     "type": "git",
