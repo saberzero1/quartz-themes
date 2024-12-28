@@ -53,5 +53,4 @@ theme +name:
   exit 1
   fi
   echo 'Setting theme "{{name}}"'
-  npm run --silent theme -- "{{replace(trim(lowercase(name)), ' ', '-')}}"
-  ehco 'Succesfully set theme "{{name}}".'
+  node set-theme.js "{{replace(trim(lowercase(name)), ' ', '-')}}"
