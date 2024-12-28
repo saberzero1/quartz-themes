@@ -38,7 +38,7 @@ Your `custom.scss` should look something like this:
 Run the following from the Quartz Themes project root:
 
 ```bash
-just theme <theme-name>
+npm run theme <theme-name>
 ```
 
 ### Updating
@@ -46,13 +46,13 @@ just theme <theme-name>
 Run the following from the Quartz Themes project root to check for updates:
 
 ```bash
-just check
+npm run check
 ```
 
 Run the following from the Quartz Themes project root to update the themes:
 
 ```bash
-just update
+npm run update
 ```
 
 ## Supported Themes
