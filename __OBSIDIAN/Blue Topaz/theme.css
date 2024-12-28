@@ -5553,10 +5553,10 @@ body {
   --text-highlight-bg-l-light: 80%;
   --text-highlight-bg-a-light: 0.847;
 
-  --cursor-color: var(var(--text-normal));
+  --cursor-color: var(--text-normal);
 
   --fancy-cursor-width: 2px;
-  --cursor-color-temp: var(var(--text-normal));
+  --cursor-color-temp: var(--text-normal);
 
   --print-strong-color: ;
   --print-em-color: var(--accent-em);
@@ -9431,6 +9431,8 @@ body.color-scheme-options-lilac.theme-light #calendar-container {
   --simple-red-3: hsl(365, 85%, 45%, 1);
   --button-radius: 4px;
   --window-radius: 8px;
+
+  --color-accent-hsl: 209, 95%, 62%;
 }
 
 body.color-scheme-options-simplicity-topaz .theme-light,

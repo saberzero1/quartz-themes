@@ -455,6 +455,23 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: #15141b;
+  --background-secondary: #110f18;
+  --ribbon-background: #15141b;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
+  --background-primary: #21202e;
+  --background-secondary: #1c1b22;
+  --ribbon-background: #21202e;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +538,23 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: #15141b;
+  --background-secondary: #110f18;
+  --ribbon-background: #15141b;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
+  --background-primary: #21202e;
+  --background-secondary: #1c1b22;
+  --ribbon-background: #21202e;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

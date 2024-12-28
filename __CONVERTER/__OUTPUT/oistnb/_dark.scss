@@ -1,2 +1,12 @@
 :root[saved-theme="dark"] {
+  --background-primary: var(--true-black);
+  --background-secondary: var(--off-black);
+  --background-tertiary: var(--dark-gray);
+  --text-normal: var(--orange-medium);
+  --text-muted: var(--orange-dark);
+  --text-faint: var(--orange-darker);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
 }

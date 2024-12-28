@@ -339,6 +339,37 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --base: #191724;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ebbcba;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-low: #21202e;
+  --highlight-med: #403d52;
+  --highlight-high: #524f67;
+  --light-base: #faf4ed;
+  --light-surface: #fffaf3;
+  --light-overlay: #f2e9e1;
+  --light-muted: #9893a5;
+  --light-subtle: #797593;
+  --light-text: #575279;
+  --light-love: #b4637a;
+  --light-gold: #ea9d34;
+  --light-rose: #d7827e;
+  --light-pine: #286983;
+  --light-foam: #56949f;
+  --light-iris: #907aa9;
+  --light-highlight-low: #f4ede8;
+  --light-highlight-med: #dfdad9;
+  --light-highlight-high: #cecacd;
 }
 
 body {
@@ -455,6 +486,29 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --background-modifier-border: var(--overlay);
+  --text-normal: var(--text);
+  --text-muted: var(--muted);
+  --text-accent: var(--love);
+  --text-accent-hover: var(--foam);
+  --tag-color: var(--iris);
+  --tag-background: var(--overlay);
+  --h1-color: var(--love);
+  --h2-color: var(--gold);
+  --h3-color: var(--pine);
+  --h4-color: var(--foam);
+  --h5-color: var(--iris);
+  --h6-color: var(--rose);
+  --code-normal: var(--subtle);
+  --code-background: var(--highlight-low);
+  --text-selection: rgba(49, 116, 143, 0.6);
+  --flashing-background: rgba(235, 111, 146, 0.3);
+  --link-url: var(--pine);
+  --link-url-hover: var(--iris);
+  --bold-color: var(--subtle);
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +575,29 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--light-base);
+  --background-secondary: var(--light-surface);
+  --background-modifier-border: var(--light-overlay);
+  --text-normal: var(--light-text);
+  --text-muted: var(--light-muted);
+  --text-accent: var(--light-love);
+  --text-accent-hover: var(--light-foam);
+  --tag-color: var(--light-iris);
+  --tag-background: var(--light-overlay);
+  --h1-color: var(--light-love);
+  --h2-color: var(--light-gold);
+  --h3-color: var(--light-pine);
+  --h4-color: var(--light-foam);
+  --h5-color: var(--light-iris);
+  --h6-color: var(--light-rose);
+  --code-normal: var(--light-subtle);
+  --code-background: var(--light-highlight-low);
+  --text-selection: rgba(40, 105, 131, 0.6);
+  --flashing-background: rgba(180, 99, 122, 0.3);
+  --link-url: var(--light-pine);
+  --link-url-hover: var(--light-iris);
+  --bold-color: var(--light-subtle);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -1,2 +1,20 @@
 :root[saved-theme="dark"] {
+  --interactive-accent: var(--my-accent-color-dark);
+  --color-base-00: var(--edit-view-background-color-dark);
+  --tab-background-active: var(--edit-view-background-color-dark);
+  --nav-item-background-active: var(--nav-activer-color-dark);
+  --background-primary: var(--edit-view-background-color-dark);
+  --list-marker-color-collapsed: var(--text-color-dark);
+  --collapse-icon-color-collapsed: var(--text-color-dark);
+  --tag-color: var(--text-color-dark);
+  --checkbox-border-color: var(--text-color-dark);
+  --checklist-done-color: var(--list-done-color-dark);
+  --color-base-10: var(--code-block-background-color-dark);
+  --color-base-20: var(--nav-background-color-dark);
+  --color-base-100: var(--text-color-dark);
+  --color-accent: var(--text-color-dark);
+  --accent-h: 196;
+  --accent-s: 61.5%;
+  --accent-l: 20.4%;
+  --text-selection: var(--my-accent-color-dark);
 }

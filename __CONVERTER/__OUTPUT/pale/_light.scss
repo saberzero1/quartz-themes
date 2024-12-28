@@ -1,2 +1,29 @@
 :root[saved-theme="light"] {
+  --background-primary: #efdcbc;
+  --background-secondary: rgba(255, 255, 255, 0.062);
+  --shadow: 0 2px 9px 1px rgba(71, 71, 71, 0.212);
+  --interactive-normal: #ecdfd2;
+  --sidebar-forground-color: #b8b8b8bd;
+  --tab-text-color: #242424c7;
+  --code-background: #292929;
+  --table-border-color: #8c8c8cc7;
+  --nav-item-color-active: #191919bb;
+  --nav-item-color: #828282;
+  --nav-item-color-hover: #3e3e3e9c;
+  --setting-bg: #efdcbcb6;
+  --hr-color: #8c8c8c46;
+  --icon-color: #525252;
+  --h1-color: #242424c7;
+  --h2-color: #242424c7;
+  --h3-color: #2d2d2dc7;
+  --h4-color: #363636c7;
+  --h5-color: #3e3e3ec7;
+  --h6-color: #616161c7;
+  --code-keyword: #ff6347;
+  --code-normal: #c4c4c4;
+  --code-operator: #b89cdd;
+  --code-value: #e3b750;
+  --code-function: #dcbb59;
+  --code-property: #d29a8c;
+  --code-string: #05a3a3;
 }

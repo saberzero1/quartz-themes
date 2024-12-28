@@ -1,2 +1,19 @@
 :root[saved-theme="dark"] {
+  --bgcolor: #07053500;
+  --background-primary: var(--bgcolor);
+  --background-primary-alt: #06094059;
+  --background-secondary: var(--bgcolor);
+  --background-secondary-alt: #06094059;
+  --text-selection: #97a5f954;
+  --text-highlight-bg: var(--text-selection);
+  --text-normal: #ffffffdd;
+  --text-muted: #efd1d1;
+  --interactive-accent: #b44949;
+  --background-modifier-cover: rgb(0 0 0 / 70%);
+  --text-highlight-bg: #c9e7aba3;
+  --list-marker-color: #ffd7d7;
+  --settings-red: #d0535375;
+  --settings-blue: #7772d76e;
+  --settings-red-light: var(--interactive-accent);
+  --overlay-bg: #101f618a;
 }

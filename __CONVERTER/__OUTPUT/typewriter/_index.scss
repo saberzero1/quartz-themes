@@ -339,6 +339,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --link-decoration: none;
+  --link-decoration-hover: none;
 }
 
 body {
@@ -397,6 +400,70 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --base-h: 0;
+  --base-s: 0%;
+  --base-d: 15%;
+  --base-l: 96%;
+  --theme-accent-h: 129;
+  --theme-accent-s: 31.9%;
+  --theme-accent-l: 46.7%;
+  --theme-accent-d: 46.7%;
+  --theme-accent-h: calc(var(--accent-h) - 125);
+  --theme-accent-d: calc(var(--accent-d) - 21.3%);
+  --theme-accent-l: calc(var(--accent-l) - 21.3%);
+  --theme-accent-s: calc(var(--accent-s) - 48.1%);
+  --font-text-theme: "iA Writer Quattro S";
+  --font-interface-theme: var(--font-text-theme);
+  --font-editor-theme: "iA Writer Mono V", var(--font-text-theme), var(--font-text-override);
+  --font-monospace-theme: "JetBrains Mono";
+  --metadata-input-font-size: var(--font-small);
+  --font-normal-size: 1em;
+  --font-small: 0.813em;
+  --font-smaller: 0.688em;
+  --font-smallest: 0.625em;
+  --code-size: var(--font-small);
+  --code-normal: var(--blue);
+  --h1: 1.8em;
+  --h2: 1.55em;
+  --h3: 1.35em;
+  --h4: 1.15em;
+  --h5: 1em;
+  --h6: 0.95em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 550;
+  --h4-weight: 550;
+  --h5-weight: 550;
+  --h6-weight: 550;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+  --normal-weight: 500;
+  --bold-weight: 620;
+  --line-width: 40rem;
+  --line-height: 1.5;
+  --max-width: 88%;
+  --icon-muted: 0.5;
+  --border-width: 1px;
+  --border-width-alt: 1px;
+  --radius-s: 2px;
+  --radius-m: 5px;
+  --radius-l: 10px;
+  --input-height: 32px;
+  --header-height: 40px;
+  --yellow: #e5b567;
+  --green: #b4d273;
+  --orange: #e87d3e;
+  --purple: #9e86c8;
+  --pink: #b05279;
+  --blue: #6c99bb;
+  --table-header-size: var(--font-small);
+  --table-header-weight: var(--font-semibold);
+  --table-header-color: var(--text-normal);
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +521,42 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: hsl(var(--base-h), var(--base-s), var(--base-d));
+  --background-primary-alt: #202020;
+  --background-secondary-alt: #000000;
+  --background-modifier-border: #333;
+  --background-modifier-border-hover: rgb(94, 94, 94);
+  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 60%));
+  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d), 0.8);
+  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d));
+  --text-normal: rgb(197, 184, 161);
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 177, 80, 0.3);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+  --graph-line-color: #6f7577;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +624,36 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary-alt: #fcf5e4;
+  --background-secondary-alt: #fcf5e4;
+  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
+  --background-translucent: rgba(255, 255, 255, 0.85);
+  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
+  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
+  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l), 0.8);
+  --text-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --text-normal: hsl(var(--base-h), var(--base-s), var(--base-d));
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
+  --text-highlight-bg: hsla(53, 100%, 50%, 0.5);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
+  --icon-color: var(--text-muted);
+  --icon-hex: 000;
+  --graph-line-color: #c0c9ce;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -339,6 +339,35 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --color-dark: #3f3e3c;
+  --color-gray: #696966;
+  --color-gray-light: #b6b5af;
+  --color-gray-lightest: #87837070;
+  --color-gray-lightest-fade: #8783703b;
+  --color-light: #f6f6f4;
+  --color-blue: #117a8b;
+  --color-blue-light: #17a2b8;
+  --color-blue-lightest: #8bd1dc;
+  --color-purple: #886b97;
+  --color-purple-light: #b19fb6;
+  --color-purple-lightest: #e1d6e2;
+  --color-green: #adbb63;
+  --color-green-light: #c4cd8e;
+  --color-green-lightest: #d4dbad;
+  --color-red: #d62c1a;
+  --color-red-light: #e74c3c;
+  --color-red-lightest: #f3a69e;
+  --color-yellow: #fcbb42;
+  --color-yellow-light: #ffce54;
+  --color-yellow-lightest: #f9dda2c0;
+  --color-orange: #e9573f;
+  --color-orange-light: #fc6e51;
+  --color-accent: #e9573f;
+  --color-accent-faded: #fc6e51;
+  --shadow: 1px 1px 2px #88888888;
+  --font-monospace: "courier prime code" !important;
+  --font-title: "moranga", "matchbook regular", bitter, prompt, var(--font-family-editor);
 }
 
 body {
@@ -455,6 +484,30 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-front: var(--color-light);
+  --color-back: var(--color-dark);
+  --color-off: #ccc;
+  --background-nav-alt: var(--color-dark);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-dark);
+  --background-primary: var(--color-dark);
+  --background-secondary-alt: var(--color-dark);
+  --background-secondary: var(--color-darkt);
+  --code-block-background: #000;
+  --code-block-border: var(--color-gray-light);
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent2);
+  --text-accent-hover: var(--color-accent);
+  --text-accent: var(--color-accent2);
+  --text-faint: rgba(150, 150, 150, 255);
+  --text-highlight-bg: #d0d6b1;
+  --text-nav-selected: var(--color-light);
+  --text-nav: var(--color-light);
+  --text-normal: var(--color-light);
+  --text-selection: #9a71aa38;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +574,34 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-accent: var(--color-green);
+  --color-accent-faded: var(--color-green-light);
+  --color-blue-accent: var(--color-blue);
+  --color-blue-accent-faded: var(--color-blue-lightest);
+  --color-front: var(--color-dark);
+  --color-back: var(--color-light);
+  --color-off: var(--color-gray-light);
+  --background-nav-alt: var(--color-light);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-light);
+  --background-primary: var(--color-light);
+  --background-secondary-alt: var(--color-light);
+  --background-secondary: var(--color-light);
+  --code-block-border: var(--color-gray-light);
+  --code-block-background: #fff;
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent);
+  --text-accent-hover: var(--color-blue-accent);
+  --text-accent: var(--color-accent);
+  --text-faint: var(--color-gray-light);
+  --text-highlight-bg: var(--color-green-lightest);
+  --text-nav-selected: var(--color-dark);
+  --text-nav: var(--color-dark);
+  --text-normal: var(--color-dark);
+  --text-selection: var(--color-purple-lightest);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

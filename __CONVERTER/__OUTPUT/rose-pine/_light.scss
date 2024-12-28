@@ -1,2 +1,24 @@
 :root[saved-theme="light"] {
+  --background-primary: var(--light-base);
+  --background-secondary: var(--light-surface);
+  --background-modifier-border: var(--light-overlay);
+  --text-normal: var(--light-text);
+  --text-muted: var(--light-muted);
+  --text-accent: var(--light-love);
+  --text-accent-hover: var(--light-foam);
+  --tag-color: var(--light-iris);
+  --tag-background: var(--light-overlay);
+  --h1-color: var(--light-love);
+  --h2-color: var(--light-gold);
+  --h3-color: var(--light-pine);
+  --h4-color: var(--light-foam);
+  --h5-color: var(--light-iris);
+  --h6-color: var(--light-rose);
+  --code-normal: var(--light-subtle);
+  --code-background: var(--light-highlight-low);
+  --text-selection: rgba(40, 105, 131, 0.6);
+  --flashing-background: rgba(180, 99, 122, 0.3);
+  --link-url: var(--light-pine);
+  --link-url-hover: var(--light-iris);
+  --bold-color: var(--light-subtle);
 }

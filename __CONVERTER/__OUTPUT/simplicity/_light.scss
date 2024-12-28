@@ -1,2 +1,5 @@
 :root[saved-theme="light"] {
+  --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  --tab-container-background: var(--color-base-00);
 }

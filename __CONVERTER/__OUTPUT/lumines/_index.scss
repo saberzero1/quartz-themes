@@ -339,6 +339,37 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --color-150: rgb(69, 46, 123);
+  --color-140: rgb(83, 55, 147);
+  --color-130: rgb(97, 64, 172);
+  --color-120: rgb(110, 74, 196);
+  --color-110: rgb(124, 83, 221);
+  --color-100: rgb(138, 92, 245);
+  --color-090: rgb(150, 108, 246);
+  --color-080: rgb(161, 125, 247);
+  --color-070: rgb(173, 141, 248);
+  --color-060: rgb(185, 157, 249);
+  --color-050: rgb(197, 174, 250);
+  --color-040: rgb(208, 190, 251);
+  --color-030: rgb(220, 206, 252);
+  --color-020: rgb(232, 222, 253);
+  --color-010: rgb(243, 239, 254);
+  --color-000: rgb(255, 255, 255);
+  --color-red: rgb(248, 113, 113);
+  --color-orange: rgb(254, 163, 98);
+  --color-yellow: rgb(255, 224, 102);
+  --color-lime: rgb(190, 242, 100);
+  --color-green: rgb(105, 219, 124);
+  --color-cyan: rgb(102, 217, 232);
+  --color-sky: rgb(77, 171, 247);
+  --color-blue: rgb(59, 130, 246);
+  --color-indigo: rgb(129, 140, 248);
+  --color-violet: rgb(159, 143, 239);
+  --color-pink: rgb(250, 162, 193);
+  --color-gray: rgb(206, 212, 218);
+  --color-white: rgb(220, 220, 220);
+  --color-purple: rgb(138, 92, 245);
 }
 
 body {
@@ -397,6 +428,29 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --graph-controls-width: 240px;
+  --graph-node: var(--text-muted);
+  --graph-text: var(--text-normal);
+  --graph-node-tag: var(--color-accent);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-attachment: var(--color-yellow);
+  --graph-node-focused: var(--background-modifier-border-focus);
+  --graph-line: var(--color-base-45, var(--background-modifier-border-focus));
+  --nav-item-background-hover: transparent;
+  --nav-item-background-active: transparent;
+  --callout-radius: 8px;
+  --callout-padding: 24px;
+  --callout-title-size: 16px;
+  --callout-border-width: 1px;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --checklist-done-decoration: none;
+  --checklist-done-color: rgb(80, 80, 80);
+  --bold-color: var(--color-accent);
+  --italic-color: var(--color-accent);
 }
 
 :root[saved-theme="dark"] {

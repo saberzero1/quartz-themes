@@ -397,6 +397,16 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --input-radius: 12px;
+  --checkbox-radius: 12px;
+  --toggle-radius: 12px;
+  --toggle-thumb-radius: 12px;
+  --slider-thumb-radius: 12px;
+  --font-text-theme: "Noto Serif KR", serif;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +464,21 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --text: #121421;
+  --background-primary: #e7e9f3;
+  --primary: #313a5e;
+  --secondary: #af8dc3;
+  --accent: #96539d;
+  --highlight-hue: 30;
+  --italic-color: var(--accent);
+  --bold-color: var(--accent);
+  --h1-color: var(--accent);
+  --h2-color: var(--accent);
+  --h3-color: var(--accent);
+  --h4-color: var(--accent);
+  --h5-color: var(--accent);
+  --h6-color: var(--accent);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +546,21 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --text: #121421;
+  --background-primary: #e7e9f3;
+  --primary: #313a5e;
+  --secondary: #af8dc3;
+  --accent: #96539d;
+  --highlight-hue: 30;
+  --italic-color: var(--accent);
+  --bold-color: var(--accent);
+  --h1-color: var(--accent);
+  --h2-color: var(--accent);
+  --h3-color: var(--accent);
+  --h4-color: var(--accent);
+  --h5-color: var(--accent);
+  --h6-color: var(--accent);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

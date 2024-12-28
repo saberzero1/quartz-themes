@@ -1,2 +1,27 @@
 :root[saved-theme="light"] {
+  --background-primary: #fff;
+  --background-primary-alt: #dedede;
+  --background-secondary: #dedede;
+  --background-secondary-alt: #dedede;
+  --background-modifier-border: #f7f7f7;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
+  --text-accent: #df4a16;
+  --text-accent-hover: #df7a16;
+  --text-normal: #03050b;
+  --text-muted: #555;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-matched: #dcddde;
+  --text-on-accent: #dcddde;
+  --text-selection: rgba(223, 74, 22, 0.8);
+  --text-highlight-bg: #df4a16;
+  --interactive-accent: #df4a16;
+  --interactive-accent-rgb: #df7a16;
+  --interactive-accent-hover: #df7a16;
+  --workspace-leaf-resize: #c1c1c1;
+  --accent-strong: #ec0d0d;
+  --accent-mild: #e6b64f;
+  --bw: #03050b;
+  --lines-identation: #dad8d8;
+  --tooltip-bg: rgba(223, 74, 22, 0.9);
 }

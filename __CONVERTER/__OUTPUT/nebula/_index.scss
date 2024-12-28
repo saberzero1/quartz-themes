@@ -339,6 +339,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --nice-font: "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif;
+  --mono-font: "Source Code Pro", "Consolas", monospace;
 }
 
 body {
@@ -455,6 +458,24 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --bgcolor: #07053500;
+  --background-primary: var(--bgcolor);
+  --background-primary-alt: #06094059;
+  --background-secondary: var(--bgcolor);
+  --background-secondary-alt: #06094059;
+  --text-selection: #97a5f954;
+  --text-highlight-bg: var(--text-selection);
+  --text-normal: #ffffffdd;
+  --text-muted: #efd1d1;
+  --interactive-accent: #b44949;
+  --background-modifier-cover: rgb(0 0 0 / 70%);
+  --text-highlight-bg: #c9e7aba3;
+  --list-marker-color: #ffd7d7;
+  --settings-red: #d0535375;
+  --settings-blue: #7772d76e;
+  --settings-red-light: var(--interactive-accent);
+  --overlay-bg: #101f618a;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +542,24 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --bgcolor: #07053500;
+  --background-primary: var(--bgcolor);
+  --background-primary-alt: #06094059;
+  --background-secondary: var(--bgcolor);
+  --background-secondary-alt: #06094059;
+  --text-selection: #97a5f954;
+  --text-highlight-bg: var(--text-selection);
+  --text-normal: #ffffffdd;
+  --text-muted: #efd1d1;
+  --interactive-accent: #b44949;
+  --background-modifier-cover: rgb(0 0 0 / 70%);
+  --text-highlight-bg: #c9e7aba3;
+  --list-marker-color: #ffd7d7;
+  --settings-red: #d0535375;
+  --settings-blue: #7772d76e;
+  --settings-red-light: var(--interactive-accent);
+  --overlay-bg: #101f618a;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

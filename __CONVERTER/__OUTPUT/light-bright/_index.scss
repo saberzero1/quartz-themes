@@ -339,6 +339,15 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --cards-min-width: 180px;
+  --cards-max-width: 1fr;
+  --cards-mobile-width: 120px;
+  --cards-image-height: 400px;
+  --cards-padding: 1.2em;
+  --cards-image-fit: contain;
+  --cards-background: var(--background-tertiary) !important;
+  --cards-border-width: 1px;
 }
 
 body {
@@ -397,6 +406,68 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --font-default: "Roboto", "Assistant", sans-serif;
+  --bold-weight: var(--font-bold);
+  --font-bold: 600;
+  --font-normal: 300;
+  --font-light: 100;
+  --link-decoration: none;
+  --checkbox-radius: 100px;
+  --checklist-done-decoration: none;
+  --list-spacing: 0.5em;
+  --table-background: var(--text-selection);
+  --table-border-width: 0px;
+  --table-border-color: var(--background-modifier-border);
+  --table-white-space: normal;
+  --table-header-background: var(--color-accent-1);
+  --table-header-background-hover: var(--color-accent-2);
+  --table-header-border-width: var(--table-border-width);
+  --table-header-border-color: var(--table-border-color);
+  --table-header-size: inherit;
+  --table-header-weight: var(--font-bold);
+  --table-header-color: var(--text-on-accent);
+  --table-text-size: inherit;
+  --table-text-color: inherit;
+  --table-column-max-width: 100%;
+  --table-column-alt-background: none;
+  --table-column-first-border-width: var(--table-border-width);
+  --table-column-last-border-width: var(--table-border-width);
+  --table-row-background-hover: var(--table-background);
+  --table-row-alt-background: var(--link-unresolved-decoration-color);
+  --table-row-last-border-width: var(--table-border-width);
+  --titlebar-background: transparent;
+  --vault-name-font-size: var(--font-ui-large);
+  --vault-name-font-weight: var(--font-bold);
+  --vault-name-color: var(--text-muted);
+  --divider-width: 0px;
+  --callout-border-opacity: 25%;
+  --callout-border-width: 0px;
+  --callout-border-color: rgb(var(--callout-color));
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-radius: var(--radius-s);
+  --callout-blend-mode: normal;
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+  --callout-content-padding: 0;
+  --tab-background-active: transparent;
+  --h2-line-height: 1.6em;
+  --h1-size: 2.17em;
+  --h1-weight: 600;
+  --h1-font: "Lato";
+  --h2-size: 2em;
+  --h2-weight: 400;
+  --h2-font: "Work Sans";
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h5-weight: 400;
+  --h6-weight: 400;
+  --tab-outline-color: transparent;
+  --tab-text-color-active: var(--color-accent-2);
+  --tab-text-color-focused-active: var(--color-accent-2);
+  --tab-text-color-focused-active-current: var(--color-accent-2);
+  --tag-decoration: underline;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +525,16 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-tertiary: hsl(calc(0 + var(--accent-h)), 100%, 80%, 0.08);
+  --color-base-100: hsl(calc(0 + var(--accent-h)), 20%, 80%);
+  --color-base-00: hsl(calc(0 + var(--accent-h)), 11%, 25.5%);
+  --color-base-10: hsl(calc(0 + var(--accent-h)), 11.5%, 18.5%);
+  --color-base-20: hsl(calc(0 + var(--accent-h)), 10%, 20%);
+  --color-base-25: hsl(calc(0 + var(--accent-h)), 11.5%, 10%);
+  --color-base-30: hsl(calc(0 + var(--accent-h)), 12%, 33%);
+  --color-base-60: hsl(calc(0 + var(--accent-h)), 20%, 13%);
+  --color-base-70: hsl(calc(0 + var(--accent-h)), 50%, 73%);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +602,44 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-tertiary: hsl(1, 100%, 100%);
+  --text-muted: hsl(var(--accent-h), 20%, 50%);
+  --text-faint: hsl(var(--accent-h), 20%, 63%, 65%);
+  --color-base-00: hsl(calc(0 + var(--accent-h)), 100%, 99.5%);
+  --color-base-05: hsl(calc(0 + var(--accent-h)), 40%, 96.5%);
+  --color-base-10: hsl(calc(0 + var(--accent-h)), 30%, 95.9%);
+  --color-base-20: hsl(calc(0 + var(--accent-h)), 40%, 94.5%);
+  --color-base-25: hsl(calc(0 + var(--accent-h)), 80%, 42%);
+  --color-base-30: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%);
+  --color-base-35: hsl(calc(0 + var(--accent-h)), 70%, 88%);
+  --color-base-40: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%);
+  --color-base-50: hsl(calc(0 + var(--accent-h)), 18%, 63%);
+  --color-base-60: hsl(calc(0 + var(--accent-h)), 55%, 72%);
+  --color-base-70: hsl(calc(0 + var(--accent-h)), 5%, 55%);
+  --color-base-100: hsl(calc(0 + var(--accent-h)), 5%, 30%);
+  --h1-color: hsl(var(--accent-h), 10%, 25%);
+  --h2-color: var(--h1-color);
+  --h3-color: var(--h1-color);
+  --h4-color: var(--h1-color);
+  --h5-color: var(--h1-color);
+  --h6-color: var(--h1-color);
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

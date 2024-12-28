@@ -397,6 +397,36 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --h1-size: calc(var(--font-text-size) * 1.6);
+  --h2-size: calc(var(--font-text-size) * 1.4);
+  --h3-size: calc(var(--font-text-size) * 1.2);
+  --h4-size: var(--font-text-size);
+  --h5-size: var(--font-text-size);
+  --h6-size: var(--font-text-size);
+  --h1-line-height: 1.7;
+  --h2-line-height: 1.7;
+  --h3-line-height: 1.7;
+  --h4-line-height: 1.7;
+  --h5-line-height: 1.7;
+  --h6-line-height: 1.7;
+  --list-marker-color: var(--text-normal);
+  --modal-background: var(--background-secondary);
+  --font-text: "Geist Mono", ui-monospace, monospace;
+  --h1-font: "Geist", system-ui, sans-serif;
+  --h2-font: "Geist", system-ui, sans-serif;
+  --h3-font: "Geist", system-ui, sans-serif;
+  --line-height-normal: 1.7;
+  --link-decoration: underline;
+  --link-unresolved-decoration-color: var(--text-muted);
+  --link-external-decoration-color: var(--text-muted);
+  --checklist-done-color: rgb(60, 152, 60);
+  --checklist-done-decoration: none;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  --checkbox-marker-color: transparent;
+  --divider-color: transparent;
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.4);
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +484,12 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: transparent;
+  --background-secondary: #141414;
+  --text-normal: #ccc;
+  --text-muted: #707070;
+  --background-primary: #111111;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +557,11 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: #f7f7f7;
+  --background-secondary: #fcfcfc;
+  --text-normal: #1a1a1a;
+  --text-muted: #b5b3b1;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

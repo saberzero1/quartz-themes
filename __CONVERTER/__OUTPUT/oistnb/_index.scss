@@ -339,6 +339,20 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --orange-darkest: #802200;
+  --orange-darker: #aa4400;
+  --orange-dark: #cc5500;
+  --orange-medium: #ff6600;
+  --orange-light: #ff8533;
+  --orange-lighter: #ffa366;
+  --true-black: #000000;
+  --off-black: #0a0a0a;
+  --dark-gray: #1a1a1a;
+  --medium-gray: #333333;
+  --light-gray: #4d4d4d;
+  --off-white: #e5e5e5;
+  --white: #ffffff;
 }
 
 body {
@@ -397,6 +411,29 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --font-text-theme: "Courier New", monospace;
+  --font-ui-theme: "VT323", "Courier New", monospace;
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --input-radius: 5px;
+  --tab-radius-active: 5px 5px 0 0;
+  --checkbox-radius: 3px;
+  --toggle-radius: 15px;
+  --toggle-thumb-radius: 13px;
+  --slider-thumb-radius: 50%;
+  --font-size-small: 12px;
+  --font-size-normal: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-huge: 24px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 24px;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +491,17 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: var(--true-black);
+  --background-secondary: var(--off-black);
+  --background-tertiary: var(--dark-gray);
+  --text-normal: var(--orange-medium);
+  --text-muted: var(--orange-dark);
+  --text-faint: var(--orange-darker);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +569,17 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--off-white);
+  --background-secondary: var(--white);
+  --background-tertiary: var(--light-gray);
+  --text-normal: var(--true-black);
+  --text-muted: var(--medium-gray);
+  --text-faint: var(--light-gray);
+  --interactive-normal: var(--orange-dark);
+  --interactive-hover: var(--orange-medium);
+  --interactive-accent: var(--orange-light);
+  --background-modifier-border: var(--orange-darker);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

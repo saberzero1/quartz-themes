@@ -397,6 +397,47 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --divider-color: var(--color-base-23);
+  --default-border-radius: 3px;
+  --hr-thickness: 1px;
+  --modal-max-width: 900px;
+  --modal-radius: calc(var(--default-border-radius) + 2px);
+  --heading-text-color: var(--color-base-90);
+  --blockquote-background-color: var(--color-base-10);
+  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-serif: Times, Georgia, "Times New Roman", serif;
+  --font-family-sans: var(--font-family-inter);
+  --font-default: var(--font-family-sans);
+  --font-smallest: 0.7rem;
+  --tag-size: 0.75rem;
+  --font-ui-smaller: 11px;
+  --font-ui-small: 12px;
+  --font-ui-medium: 13px;
+  --font-ui-large: 17px;
+  --size-h1: 1.75rem;
+  --size-h2: 1.45rem;
+  --size-h3: 1.2rem;
+  --size-h4: 1rem;
+  --size-h5: 0.9rem;
+  --size-h6: 0.8rem;
+  --font-paragraph: 0.95rem;
+  --frontmatter-font-size: 0.65rem;
+  --metadata-label-font-size: 0.8rem;
+  --metadata-input-font-size: var(--metadata-label-font-size);
+  --list-spacing: 5px;
+  --tab-radius-active: var(--default-border-radius);
+  --tab-font-size: 0.7rem;
+  --font-default: var(--font-family-ibm);
+  --font-default: var(--font-family-iawriter-quattro);
+  --color-base-23: #eee;
+  --color-base-23: #323232;
+  --ribbon-bg: #262626;
+  --text-icon-color: #bababa;
+  --nav-item: #bababa;
+  --background-primary: #fefcf1;
 }
 
 :root[saved-theme="dark"] {

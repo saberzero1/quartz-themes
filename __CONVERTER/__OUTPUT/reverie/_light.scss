@@ -1,2 +1,24 @@
 :root[saved-theme="light"] {
+  --background-primary: #e7e7e7;
+  --background-primary-alt: #e7e7e7;
+  --background-secondary: #e3e3e3;
+  --background-secondary-alt: #bebebe;
+  --text-normal: #1a2023;
+  --text-faint: #665c54;
+  --text-title-h1: #1bb0b6;
+  --text-title-h2: #3fa7ab;
+  --text-title-h3: #458588;
+  --text-title-h4: #4b6667;
+  --text-title-h5: #3b4646;
+  --text-link: #458588;
+  --text-a-hover: #458588;
+  --inline-code: #458588;
+  --pre-code: #bebebe;
+  --interactive-before: #a89984;
+  --background-modifier-border: #1bb0b6;
+  --text-a: #22a578;
+  --interactive-accent: #22a578;
+  --text-accent: #22a578;
+  --interactive-accent-rgb: #22a578;
+  --vim-cursor: #22a578;
 }

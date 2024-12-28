@@ -1,2 +1,19 @@
 :root[saved-theme="light"] {
+  --background-primary: #ffffff;
+  --background-secondary: #efefef;
+  --text-normal: #4d4d4c;
+  --text-muted: #8e908c;
+  --divider-color: #cecece;
+  --color-red: #c82829;
+  --color-orange: #f5871f;
+  --color-yellow: #eab700;
+  --color-green: #718c00;
+  --color-cyan: #3e999f;
+  --color-blue: #4271ae;
+  --color-pink: #b777e0;
+  --color-purple: #8959a8;
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--ribbon-background);
 }

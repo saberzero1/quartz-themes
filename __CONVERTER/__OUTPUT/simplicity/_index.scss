@@ -397,6 +397,31 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --accent-h: 180;
+  --accent-s: 45%;
+  --accent-l: 46%;
+  --h1-weight: 400;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h1-size: 2em;
+  --h2-size: 1.5em;
+  --h3-size: 1.2em;
+  --h4-size: 1.1em;
+  --tab-outline-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08) !important;
+  --color-accent: #4f60b3;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --file-line-width: 700px;
+  --metadata-input-height: 3em;
+  --line-height-normal: var(--line-height-value);
+  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+  --nav-item-color: #fff;
+  --background-primary: #111 !important;
+  --background-secondary: #111 !important;
+  --tag-background: transparent;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +479,8 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.01) !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +548,10 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  --tab-container-background: var(--color-base-00);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

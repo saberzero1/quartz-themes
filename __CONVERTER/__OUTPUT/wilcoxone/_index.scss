@@ -339,6 +339,24 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --mermaid-font: var(--default-font);
+  --reveal-font: var(--default-font);
+  --font-monospace: "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;
+  --fast: 0.1s;
+  --medium: 0.2s;
+  --slow: 0.5s;
+  --color-1-1: hsl(227, 66%, 9%);
+  --color-1-1-alt: hsl(227, 66%, 11%);
+  --color-1-2: hsl(227, 56%, 13%);
+  --color-1-2-alt: hsl(227, 56%, 16%);
+  --color-2: hsl(231, 49%, 39%);
+  --color-3: hsl(109, 9%, 39%);
+  --color-3-alt: hsl(109, 9%, 19%);
+  --color-4: hsl(109, 19%, 92%);
+  --color-4-alt: hsl(109, 9%, 82%);
+  --color-5: hsl(176, 16%, 64%);
+  --color-5-alt: hsl(176, 16%, 70%);
 }
 
 body {
@@ -455,6 +473,42 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: var(--color-1-1);
+  --background-primary-alt: var(--color-1-1-alt);
+  --background-secondary: var(--color-1-2);
+  --background-secondary-alt: var(--color-1-2-alt);
+  --background-modifier-border: var(--color-2);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--color-5);
+  --text-accent-hover: var(--color-5-alt);
+  --text-normal: var(--color-4);
+  --text-muted: #999;
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #999;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-highlight-bg: var(--color-2);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: var(--color-4);
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: #483699;
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-accent-hover: #4d3ca6;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +575,42 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--color-4);
+  --background-primary-alt: var(--color-4-alt);
+  --background-secondary: var(--color-5);
+  --background-secondary-alt: var(--color-5-alt);
+  --background-modifier-border: #ddd;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #a4e7c3;
+  --background-modifier-error: #990000;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #bb0000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--color-1-2);
+  --text-accent-hover: var(--color-1-2-alt);
+  --text-normal: var(--color-1-1);
+  --text-muted: #888888;
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: #999999;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent: #7b6cd9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #8273e6;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

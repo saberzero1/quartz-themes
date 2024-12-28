@@ -1,2 +1,10 @@
 :root[saved-theme="dark"] {
+  --colorPrimary: hsl(var(--accent-h), 100%, 80%);
+  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 10%);
+  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 20%);
+  --colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 10%);
+  --colorOnPrimary: var(--colorBackgroundSecondary);
+  --colorBackgroundPrimary: hsl(var(--accent-h), 20%, 7%);
+  --colorBackgroundSecondary: hsl(var(--accent-h), 30%, 12%);
+  --nav-item-color: white;
 }

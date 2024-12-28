@@ -397,6 +397,39 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --base-h: 218;
+  --base-s: 18%;
+  --base-d: 11%;
+  --base-l: 97%;
+  --accent-h: 206;
+  --accent-s: 92%;
+  --accent-d: 61%;
+  --accent-l: 60%;
+  --blue: #3c94ff;
+  --pink: #ff3c7f;
+  --green: #00d3a3;
+  --yellow: #ffd500;
+  --orange: #ff6a00;
+  --red: #ff3c3c;
+  --purple: #b97cff;
+  --divider-color: var(--color-base-30);
+  --current-line-number-color: var(--yellow);
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--blue);
+  --h4-color: var(--yellow);
+  --h5-color: var(--red);
+  --h6-color: var(--purple);
+  --strong-color: var(--pink);
+  --em-color: var(--pink);
+  --quote-color: var(--green);
+  --h1-size: 1.7rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.2rem;
+  --h4-size: 1.1rem;
+  --h5-size: 1rem;
+  --h6-size: 0.9rem;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +487,20 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --color-base-00: #171b21;
+  --color-base-10: #262c36;
+  --color-base-20: #262c36;
+  --color-base-25: #303845;
+  --color-base-30: #455063;
+  --color-base-35: #546178;
+  --color-base-40: #647590;
+  --color-base-50: #7b89a3;
+  --color-base-60: #939fb4;
+  --color-base-70: #aeb7c7;
+  --color-base-100: #ccd2db;
+  --titlebar-background: var(--color-base-25);
+  --line-number-color: var(--color-base-50);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +568,21 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-base-00: #f6f7f9;
+  --color-base-10: #e1e4ea;
+  --color-base-20: #e1e4ea;
+  --color-base-25: #ccd2db;
+  --color-base-30: #b7bfcd;
+  --color-base-35: #a2acbe;
+  --color-base-40: #8d9ab0;
+  --color-base-50: #7886a1;
+  --color-base-60: #647590;
+  --color-base-70: #56647b;
+  --color-base-100: #485465;
+  --titlebar-background: var(--color-base-10);
+  --titlebar-background-focused: var(--color-base-25);
+  --line-number-color: var(--color-base-50);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -455,6 +455,21 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-base-00: #000;
+  --color-base-05: #080808;
+  --color-base-10: #111;
+  --color-base-20: #1a1a1a;
+  --color-base-25: #222;
+  --color-base-30: #333;
+  --color-base-35: #363636;
+  --color-base-40: #4a4a4a;
+  --color-base-50: #666;
+  --color-base-60: #999 --color-base-70: #bbb --color-base-100: #fff;
+  --background-primary: var(--color-base-00);
+  --background-secondary: var(--color-base-05);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-10);
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +536,21 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-base-00: #000;
+  --color-base-05: #080808;
+  --color-base-10: #111;
+  --color-base-20: #1a1a1a;
+  --color-base-25: #222;
+  --color-base-30: #333;
+  --color-base-35: #363636;
+  --color-base-40: #4a4a4a;
+  --color-base-50: #666;
+  --color-base-60: #999 --color-base-70: #bbb --color-base-100: #fff;
+  --background-primary: var(--color-base-00);
+  --background-secondary: var(--color-base-05);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-10);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -455,6 +455,10 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: #000;
+  --background-secondary: #000;
+  --titlebar-background-focused: #000;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +525,10 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: #000;
+  --background-secondary: #000;
+  --titlebar-background-focused: #000;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

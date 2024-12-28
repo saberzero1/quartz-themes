@@ -1,2 +1,16 @@
 :root[saved-theme="light"] {
+  --color-base-00: #f6f7f9;
+  --color-base-10: #e1e4ea;
+  --color-base-20: #e1e4ea;
+  --color-base-25: #ccd2db;
+  --color-base-30: #b7bfcd;
+  --color-base-35: #a2acbe;
+  --color-base-40: #8d9ab0;
+  --color-base-50: #7886a1;
+  --color-base-60: #647590;
+  --color-base-70: #56647b;
+  --color-base-100: #485465;
+  --titlebar-background: var(--color-base-10);
+  --titlebar-background-focused: var(--color-base-25);
+  --line-number-color: var(--color-base-50);
 }

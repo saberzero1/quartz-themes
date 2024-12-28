@@ -339,6 +339,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --table-border-radius: 8px;
 }
 
 body {
@@ -397,6 +399,18 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --radius-s: 10px;
+  --radius-m: 10px;
+  --radius-l: 10px;
+  --input-radius: 10px;
+  --tab-radius-active: 10px;
+  --checkbox-radius: 10px;
+  --toggle-radius: 10px;
+  --toggle-thumb-radius: 10px;
+  --slider-thumb-radius: 10px;
+  --font-text-theme: "Cascadia Mono", Sans-serif;
+  --file-line-width: 750px;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +468,14 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: var(--accent-color-bg_d);
+  --background-secondary: #0e0e0e;
+  --popover-width: 1050px;
+  --popover-height: 1250px;
+  --tab-max-width: 35%;
+  --callout-border-width: 0.05rem;
+  --callout-border-opacity: 0.8 !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +543,14 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--accent-color-bg);
+  --background-secondary: rgb(255, 255, 255);
+  --popover-width: 1050px;
+  --popover-height: 1250px;
+  --tab-max-width: 35%;
+  --callout-border-width: 0.05rem;
+  --callout-border-opacity: 0.8 !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

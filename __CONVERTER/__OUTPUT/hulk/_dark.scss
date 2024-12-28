@@ -1,2 +1,38 @@
 :root[saved-theme="dark"] {
+  --background-primary: #1a1b24;
+  --background-primary-alt: #282a36;
+  --background-secondary: #1a1b24;
+  --background-secondary-alt: #282a36;
+  --background-modifier-cover: #7f5fd4;
+  --text-normal: #bbc0c5;
+  --text-faint: rgba(187, 192, 197, 0.4);
+  --text-selection: #ceef83;
+  --text-title-h1: #bbc0c5;
+  --text-title-h2: #bbc0c5;
+  --text-title-h3: #bbc0c5;
+  --text-title-h4: #bbc0c5;
+  --text-title-h5: #bbc0c5;
+  --text-title-h6: var(--purple-pale);
+  --text-link: #3fce4a;
+  --text-a: #3fce4a;
+  --text-a-hover: rgba(63, 206, 74, 0.6);
+  --text-mark: var(--purple-paley);
+  --pre-code: #283136;
+  --text-highlight-bg: var(--purple-paley);
+  --interactive-accent: #00ba00;
+  --interactive-before: #2ac7c7;
+  --background-modifier-border: rgba(146, 161, 161, 0.5);
+  --text-accent: rgb(0, 186, 0);
+  --interactive-accent-rgb: var(--green-light);
+  --font-family-editor: inter;
+  --font-family-preview: inter;
+  --purple: #3c0a96;
+  --purple-light: #4632c8;
+  --purple-pale: #ac91f7;
+  --purple-paley: #7f5fd4;
+  --green: #0a5519;
+  --green-light: #0a8c28;
+  --green-pale: #a4e7c3;
+  --brackets-color: #0a5519;
+  --pink: rgba(237, 160, 255, 0.73);
 }

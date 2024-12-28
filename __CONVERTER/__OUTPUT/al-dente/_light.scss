@@ -1,2 +1,29 @@
 :root[saved-theme="light"] {
+  --color-accent: var(--color-green);
+  --color-accent-faded: var(--color-green-light);
+  --color-blue-accent: var(--color-blue);
+  --color-blue-accent-faded: var(--color-blue-lightest);
+  --color-front: var(--color-dark);
+  --color-back: var(--color-light);
+  --color-off: var(--color-gray-light);
+  --background-nav-alt: var(--color-light);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-light);
+  --background-primary: var(--color-light);
+  --background-secondary-alt: var(--color-light);
+  --background-secondary: var(--color-light);
+  --code-block-border: var(--color-gray-light);
+  --code-block-background: #fff;
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent);
+  --text-accent-hover: var(--color-blue-accent);
+  --text-accent: var(--color-accent);
+  --text-faint: var(--color-gray-light);
+  --text-highlight-bg: var(--color-green-lightest);
+  --text-nav-selected: var(--color-dark);
+  --text-nav: var(--color-dark);
+  --text-normal: var(--color-dark);
+  --text-selection: var(--color-purple-lightest);
 }

@@ -1,2 +1,24 @@
 :root[saved-theme="light"] {
+  --main-background: #f5f5f5;
+  --secondary-background: #e2e2e2;
+  --secondary-background-low-opacity: #e2e2e254;
+  --main-node: #dea500;
+  --accent-3: #b7ad3a;
+  --accent-4: #8ac536;
+  --accent-5: #3cad7f;
+  --external-link: #307a8e;
+  --external-link-hidden: #307a8e99;
+  --default-font: "JetBrains Mono", monospace;
+  --font-monospace: var(--default-font);
+  --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --background-modifier-error: #cf2d2d;
+  --background-modifier-error-hover: #a72020;
+  --text-highlight-bg: #e9b35f;
+  --ribbon-width: 40px;
+  --header-height: 42px;
 }

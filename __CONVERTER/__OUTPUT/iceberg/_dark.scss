@@ -1,2 +1,28 @@
 :root[saved-theme="dark"] {
+  --background-primary: #161821;
+  --background-primary-alt: #0f1117;
+  --background-secondary: var(--black);
+  --background-secondary-alt: #0f1117;
+  --background-modifier-success: var(--green);
+  --background-modifier-error: var(--red);
+  --background-modifier-error-rgb: 226, 120, 120;
+  --text-accent: var(--orange);
+  --text-accent-hover: var(--lightOrange);
+  --text-normal: var(--white);
+  --text-muted: var(--brightBlack);
+  --text-faint: var(--brightBlack);
+  --text-error: var(--red);
+  --text-highlight-bg: #e2a47880;
+  --text-selection: var(--lblue);
+  --text-on-accent: var(--black);
+  --interactive-accent: var(--blue);
+  --interactive-accent-rgb: 132, 160, 198;
+  --interactive-accent-hover: var(--lightBlue);
+  --interactive-success: var(--green);
+  --text-strong: var(--brightWhite);
+  --text-inline-code: var(--blue);
+  --background-tag: var(--brightBlack);
+  --background-tag-hover: #81859c;
+  --text-tag: var(--black);
+  --background-block-cursor: var(--white);
 }

@@ -455,6 +455,14 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-base-00: #0c0c11ee;
+  --color-base-30: #191926;
+  --color-base-40: #151520;
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --code-background: #22223333;
+  --modal-background: var(--color-base-00);
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +529,14 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-base-00: #0c0c11ee;
+  --color-base-30: #191926;
+  --color-base-40: #151520;
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --code-background: #22223333;
+  --modal-background: var(--color-base-00);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

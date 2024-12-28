@@ -339,6 +339,42 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --uno: 260;
+  --duo: 28;
+  --D0-rgb: 207, 136, 74;
+  --baseA0: hsl(var(--uno), 18%, 17%);
+  --baseA1: hsl(var(--uno), 17%, 22%);
+  --baseA2: hsl(var(--uno), 16%, 35%);
+  --baseA3: hsl(var(--uno), 15%, 40%);
+  --baseA4: hsl(var(--uno), 14%, 45%);
+  --baseA5: hsl(var(--uno), 13%, 53%);
+  --baseA6: hsl(var(--uno), 12%, 61%);
+  --baseA7: hsl(var(--uno), 11%, 69%);
+  --baseB0: hsl(var(--uno), 75%, 61%);
+  --baseB1: hsl(var(--uno), 80%, 66%);
+  --baseB2: hsl(var(--uno), 87%, 71%);
+  --baseB3: hsl(var(--uno), 97%, 76%);
+  --baseB4: hsl(var(--uno), 97%, 81%);
+  --baseB5: hsl(var(--uno), 97%, 86%);
+  --baseB6: hsl(var(--uno), 97%, 91%);
+  --baseB7: hsl(var(--uno), 100%, 96%);
+  --baseC0: hsl(var(--duo), 4%, 46%);
+  --baseC1: hsl(var(--duo), 5%, 53%);
+  --baseC2: hsl(var(--duo), 6%, 60%);
+  --baseC3: hsl(var(--duo), 6%, 67%);
+  --baseC4: hsl(var(--duo), 8%, 74%);
+  --baseC5: hsl(var(--duo), 13%, 82%);
+  --baseC6: hsl(var(--duo), 18%, 90%);
+  --baseC7: hsl(var(--duo), 23%, 98%);
+  --baseD0: hsl(var(--duo), 58%, 55%);
+  --baseD1: hsl(var(--duo), 63%, 60%);
+  --baseD2: hsl(var(--duo), 80%, 65%);
+  --baseD3: hsl(var(--duo), 85%, 68%);
+  --baseD4: hsl(var(--duo), 90%, 71%);
+  --baseD5: hsl(var(--duo), 95%, 75%);
+  --baseD6: hsl(var(--duo), 100%, 80%);
+  --baseD7: hsl(var(--duo), 100%, 85%);
 }
 
 body {
@@ -455,6 +491,31 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: var(--baseA0);
+  --background-primary-alt: var(--baseA1);
+  --background-secondary: var(--baseA2);
+  --background-secondary-alt: var(--baseA1);
+  --background-accent: var(--baseA4);
+  --background-modifier-border: var(--baseA2);
+  --text-accent: var(--baseB0);
+  --text-accent-hover: var(--baseB1);
+  --text-normal: var(--baseB7);
+  --text-muted: var(--baseB6);
+  --text-faint: var(--baseB5);
+  --text-highlight-bg: var(--baseD0);
+  --text-selection: hsla(var(--uno), 75%, 61%, 0.25);
+  --text-on-accent: var(--baseC7);
+  --interactive-normal: var(--baseA0);
+  --interactive-hover: var(--baseD0);
+  --interactive-accent: var(--baseD0);
+  --interactive-accent-rgb: var(--D0-rgb);
+  --interactive-accent-hover: var(--baseD1);
+  --operators: var(--baseA3);
+  --link-external: var(--baseD0);
+  --link-internal: var(--baseD4);
+  --inline-code: var(--baseD0);
+  --bullet: var(--baseD0);
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +582,31 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--baseA0);
+  --background-primary-alt: var(--baseA1);
+  --background-secondary: var(--baseA2);
+  --background-secondary-alt: var(--baseA1);
+  --background-accent: var(--baseA4);
+  --background-modifier-border: var(--baseA2);
+  --text-accent: var(--baseB0);
+  --text-accent-hover: var(--baseB1);
+  --text-normal: var(--baseB7);
+  --text-muted: var(--baseB6);
+  --text-faint: var(--baseB5);
+  --text-highlight-bg: var(--baseD0);
+  --text-selection: hsla(var(--uno), 75%, 61%, 0.25);
+  --text-on-accent: var(--baseC7);
+  --interactive-normal: var(--baseA0);
+  --interactive-hover: var(--baseD0);
+  --interactive-accent: var(--baseD0);
+  --interactive-accent-rgb: var(--D0-rgb);
+  --interactive-accent-hover: var(--baseD1);
+  --operators: var(--baseA3);
+  --link-external: var(--baseD0);
+  --link-internal: var(--baseD4);
+  --inline-code: var(--baseD0);
+  --bullet: var(--baseD0);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

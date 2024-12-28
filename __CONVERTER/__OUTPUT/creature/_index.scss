@@ -339,6 +339,34 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --dark0: #1e1e1e;
+  --dark1: #232323;
+  --dark2: #282828;
+  --dark3: #2d2d2d;
+  --dark4: #323232;
+  --light0: rgba(255, 255, 255, 0.18);
+  --light1: rgba(255, 255, 255, 0.38);
+  --light2: rgba(255, 255, 255, 0.6);
+  --light3: rgba(255, 255, 255, 0.87);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --border: var(--dark4);
+  --red: red-base;
+  --red-light: #ff6b64;
+  --blue: #009fff;
+  --blue-light: #1aa9ff;
+  --green: #2edb6e;
+  --green-light: #44df7d;
+  --primary: var(--green);
+  --primary-hover: var(--green-light);
+  --error: var(--red);
+  --error-hover: var(--red-light);
+  --info: var(--blue);
+  --info-hover: var(--blue-light);
+  --success: var(--green);
+  --success-hover: var(--green-light);
+  --font-monospace: SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
 }
 
 body {
@@ -455,6 +483,37 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark0);
+  --background-secondary-alt: var(--dark0);
+  --text-normal: var(--light3);
+  --text-faint: var(--light1);
+  --text-muted: var(--light2);
+  --text-accent: var(--primary);
+  --text-accent-hover: var(--primary-hover);
+  --text-on-accent: var(--white);
+  --text-error: var(--error);
+  --text-error-hover: var(--error-hover);
+  --text-highlight-bg: var(--info);
+  --background-modifier-border: var(--dark4);
+  --background-modifier-form-field: var(--dark2);
+  --background-modifier-form-field-highlighted: var(--dark3);
+  --background-modifier-error: var(--error);
+  --background-modifier-error-hover: var(--error-hover);
+  --background-modifier-success: var(--success);
+  --background-modifier-success-hover: var(--success-hover);
+  --interactive-success: var(--success);
+  --interactive-accent: var(--primary);
+  --interactive-accent-hover: var(--primary-hover);
+  --text-selection: var(--dark4);
+  --pre-code: var(--dark2);
+  --inline-code: var(--text-normal);
+  --code-block: var(--text-normal);
+  --todoList-listItemBackground: $gray-base;
+  --todoList-listItemBorderRadius: $border-radius-softer !important;
+  --todoList-checkboxBorder: 2px solid $gray-lighter !important;
+
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -521,6 +580,37 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark0);
+  --background-secondary-alt: var(--dark0);
+  --text-normal: var(--light3);
+  --text-faint: var(--light1);
+  --text-muted: var(--light2);
+  --text-accent: var(--primary);
+  --text-accent-hover: var(--primary-hover);
+  --text-on-accent: var(--white);
+  --text-error: var(--error);
+  --text-error-hover: var(--error-hover);
+  --text-highlight-bg: var(--info);
+  --background-modifier-border: var(--dark4);
+  --background-modifier-form-field: var(--dark2);
+  --background-modifier-form-field-highlighted: var(--dark3);
+  --background-modifier-error: var(--error);
+  --background-modifier-error-hover: var(--error-hover);
+  --background-modifier-success: var(--success);
+  --background-modifier-success-hover: var(--success-hover);
+  --interactive-success: var(--success);
+  --interactive-accent: var(--primary);
+  --interactive-accent-hover: var(--primary-hover);
+  --text-selection: var(--dark4);
+  --pre-code: var(--dark2);
+  --inline-code: var(--text-normal);
+  --code-block: var(--text-normal);
+  --todoList-listItemBackground: $gray-base;
+  --todoList-listItemBorderRadius: $border-radius-softer !important;
+  --todoList-checkboxBorder: 2px solid $gray-lighter !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

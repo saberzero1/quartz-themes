@@ -397,6 +397,9 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-color-active: var(--text-on-accent);
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +457,18 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --background-primary: #161a1d;
+  --background-secondary: #0b0d0f;
+  --divider-color: #30363d;
+  --ribbon-background: #000000;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #161a1f;
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.09);
+  --inline-title-weight: normal;
+  --inline-title-size: 3em;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +536,18 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: #161a1d;
+  --background-secondary: #0b0d0f;
+  --divider-color: #30363d;
+  --ribbon-background: #000000;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #161a1f;
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.09);
+  --inline-title-weight: normal;
+  --inline-title-size: 3em;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

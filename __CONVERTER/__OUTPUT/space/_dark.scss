@@ -1,2 +1,29 @@
 :root[saved-theme="dark"] {
+  --background-primary: var(--space-new);
+  --background-primary-alt: var(--space-new);
+  --background-secondary: var(--space-new);
+  --background-secondary-alt: var(--space-new);
+  --text-normal: var(--platinum);
+  --text-faint: var(--platinum-faint);
+  --text-title-h1: var(--periwinkle);
+  --text-title-h2: var(--yellow);
+  --text-title-h3: var(--orange);
+  --text-title-h4: var(--blue);
+  --text-title-h5: var(--brown);
+  --text-title-h6: var(--grey);
+  --text-link: var(--blue-faint);
+  --text-a: var(--blue);
+  --text-a-hover: var(--blue-faint);
+  --text-mark: rgba(215, 153, 33, 0.4);
+  --interactive-accent: var(--red);
+  --interactive-before: var(--space-light);
+  --pre-code: var(--space-dark);
+  --inline-code: var(--periwinkle);
+  --code-block: var(--periwinkle);
+  --vim-cursor: var(--blue-faint);
+  --text-highlight-bg: var(--red);
+  --text-accent: var(--yellow-faint);
+  --interactive-accent-rgb: var(--yellow-faint);
+  --text-selection: var(--red);
+  --background-modifier-border: var(--space-light);
 }

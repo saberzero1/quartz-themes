@@ -1,2 +1,25 @@
 :root[saved-theme="light"] {
+  --color-00-l: 100%;
+  --color-05-l: 98.2%;
+  --color-10-l: 95.5%;
+  --color-15-l: 92.4%;
+  --color-20-l: 88.9%;
+  --color-25-l: 85.2%;
+  --color-30-l: 81.2%;
+  --color-35-l: 77%;
+  --color-40-l: 72.7%;
+  --color-50-l: 63.4%;
+  --color-60-l: 53.7%;
+  --color-70-l: 43.4%;
+  --color-80-l: 32.7%;
+  --color-90-l: 21.5%;
+  --color-100-l: 10%;
+  --color-base-00-transp: #ffffff80;
+  --color-base-10-transp: #fafafa80;
+  --color-base-20-transp: #f6f6f680;
+  --color-base-30-transp: #e0e0e080;
+  --accent-s-alt: min(calc(var(--accent-s) * 1.25), 75%);
+  --accent-l-alt: min(var(--accent-l), 40%);
+  --min-highlight: 45%;
+  --max-highlight: 65%;
 }

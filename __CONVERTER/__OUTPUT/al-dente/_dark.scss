@@ -1,2 +1,25 @@
 :root[saved-theme="dark"] {
+  --color-front: var(--color-light);
+  --color-back: var(--color-dark);
+  --color-off: #ccc;
+  --background-nav-alt: var(--color-dark);
+  --background-nav: var(--color-light);
+  --background-primary-alt: var(--color-dark);
+  --background-primary: var(--color-dark);
+  --background-secondary-alt: var(--color-dark);
+  --background-secondary: var(--color-darkt);
+  --code-block-background: #000;
+  --code-block-border: var(--color-gray-light);
+  --interactive-accent-hover: var(--color-accent);
+  --interactive-accent-rgb: var(--color-accent);
+  --interactive-accent: var(--color-accent);
+  --list-color: var(--color-accent2);
+  --text-accent-hover: var(--color-accent);
+  --text-accent: var(--color-accent2);
+  --text-faint: rgba(150, 150, 150, 255);
+  --text-highlight-bg: #d0d6b1;
+  --text-nav-selected: var(--color-light);
+  --text-nav: var(--color-light);
+  --text-normal: var(--color-light);
+  --text-selection: #9a71aa38;
 }

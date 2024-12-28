@@ -1,2 +1,37 @@
 :root[saved-theme="dark"] {
+  --accent-h: 132;
+  --accent-s: 79%;
+  --accent-l: 83%;
+  --color-red-rgb: 255, 192, 185;
+  --color-red: #ffc0b9;
+  --color-yellow-rgb: 254, 224, 148;
+  --color-yellow: #fce094;
+  --color-green-rgb: 179, 246, 192;
+  --color-green: #b3f6c0;
+  --color-cyan-rgb: 140, 248, 247;
+  --color-cyan: #8cf8f7;
+  --color-blue-rgb: 166, 219, 255;
+  --color-blue: #a6dbff;
+  --color-purple-rgb: 255, 202, 255;
+  --color-purple: #ffcaff;
+  --color-base-10: #07080d;
+  --color-base-20: #14161b;
+  --color-base-30: #2c2e33;
+  --color-base-40: #4f5258;
+  --color-base-50: #9b9ea4;
+  --color-base-60: #c4c6cd;
+  --color-base-70: #e0e2ea;
+  --color-base-80: #eef1f8;
+  --background-primary: var(--color-base-20);
+  --background-primary-alt: var(--color-base-30);
+  --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-form-field: var(--color-base-30);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-40);
+  --interactive-normal: var(--color-base-10);
+  --interactive-hover: var(--color-base-20);
 }

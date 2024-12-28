@@ -1,2 +1,34 @@
 :root[saved-theme="light"] {
+  --base-05: hsl(var(--base-hue), 17%, 9%);
+  --base-10: hsl(var(--base-hue), 15%, 12%);
+  --base-15: hsl(var(--base-hue), 11%, 15%);
+  --base-20: hsl(var(--base-hue), 10%, 19%);
+  --base-25: hsl(var(--base-hue), 10%, 25%);
+  --base-30: hsl(var(--base-hue), 10%, 35%);
+  --base-35: hsl(var(--base-hue), 10%, 62%);
+  --base-40: hsl(var(--base-hue), 15%, 78%);
+  --base-45: hsl(var(--base-hue), 20%, 86%);
+  --base-50: hsl(var(--base-hue), 30%, 92%);
+  --base-55: hsl(var(--base-hue), 25%, 96%);
+  --base-60: hsl(var(--base-hue), 15%, 98%);
+  --color-accent-50: hsl(var(--base-hue), 70%, 95%);
+  --base-05: hsl(0, 0%, 9%);
+  --base-10: hsl(0, 0%, 12%);
+  --base-15: hsl(0, 0%, 15%);
+  --base-20: hsl(0, 0%, 19%);
+  --base-25: hsl(0, 0%, 25%);
+  --base-30: hsl(0, 0%, 35%);
+  --base-35: hsl(0, 0%, 62%);
+  --base-40: hsl(0, 0%, 78%);
+  --base-45: hsl(0, 0%, 86%);
+  --base-50: hsl(0, 0%, 92%);
+  --base-55: hsl(0, 0%, 96%);
+  --base-60: hsl(0, 0%, 98%);
+  --color-accent-50: var(--base-55);
+  --tab-active-color: var(--base-60);
+  --tab-active-shadow: inset 0 0 0 1px var(--background-modifier-border);
+  --mono-rgb-100: 0, 0, 0;
+  --kanban-item-background: var(--base-60);
+  --kanban-item-active-background: var(--color-accent-50);
+  --kanban-item-new-background: var(--base-60);
 }

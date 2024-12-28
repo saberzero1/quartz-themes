@@ -397,6 +397,41 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
+  --interactive-accent: var(--indicator-color);
+  --font-text-theme: "iA Writer Duo V";
+  --font-interface-override: "iA Writer Quattro V";
+  --font-monospace-theme: "iA Writer Mono V";
+  --nav-item-size: 0.875rem;
+  --nav-item-background-active: var(--nav-activer-color);
+  --blockquote-font-style: italic;
+  --font-text-size: 1.125rem !important;
+  --table-header-size: 0.93rem;
+  --table-text-size: 0.93rem;
+  --embed-block-shadow-hover: clear;
+  --list-marker-color-collapsed: var(--text-color);
+  --collapse-icon-color-collapsed: var(--text-color);
+  --tag-background: clear;
+  --tag-color: var(--text-color);
+  --checkbox-border-color: var(--text-color);
+  --checklist-done-color: var(--list-done-color);
+  --checkbox-color: clear;
+  --text-accent-hover: #0591cf;
+  --h1-size: 1.4rem;
+  --h2-size: 1.3rem;
+  --h3-size: 1.2rem;
+  --h4-size: 1.2rem;
+  --h5-size: 1.17rem;
+  --h6-size: 1.17rem;
+  --h5-weight: normal;
+  --h4-style: oblique;
+  --h5-style: oblique;
+  --table-border-width: 0px;
+  --table-header-border-width: 1px;
+  --table-row-last-border-width: 1px;
+  --line-height-normal: 1.6;
+  --blockquote-border-color: clear;
+  --file-line-width: 750px;
 }
 
 :root[saved-theme="dark"] {
@@ -454,6 +489,25 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --interactive-accent: var(--my-accent-color-dark);
+  --color-base-00: var(--edit-view-background-color-dark);
+  --tab-background-active: var(--edit-view-background-color-dark);
+  --nav-item-background-active: var(--nav-activer-color-dark);
+  --background-primary: var(--edit-view-background-color-dark);
+  --list-marker-color-collapsed: var(--text-color-dark);
+  --collapse-icon-color-collapsed: var(--text-color-dark);
+  --tag-color: var(--text-color-dark);
+  --checkbox-border-color: var(--text-color-dark);
+  --checklist-done-color: var(--list-done-color-dark);
+  --color-base-10: var(--code-block-background-color-dark);
+  --color-base-20: var(--nav-background-color-dark);
+  --color-base-100: var(--text-color-dark);
+  --color-accent: var(--text-color-dark);
+  --accent-h: 196;
+  --accent-s: 61.5%;
+  --accent-l: 20.4%;
+  --text-selection: var(--my-accent-color-dark);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -521,6 +575,18 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-base-00: var(--edit-view-background-color);
+  --color-base-10: var(--code-block-background-color);
+  --color-base-20: var(--nav-background-color);
+  --color-base-100: var(--text-color);
+  --color-accent: var(--text-color);
+  --accent-h: 201;
+  --accent-s: 93%;
+  --accent-l: 66%;
+  --text-selection: var(--my-accent-color);
+  --tab-background-active: var(--edit-view-background-color);
+  --background-primary: var(--edit-view-background-color);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -287,7 +287,7 @@ function removeNonVariableLines(cssString) {
     )
 
     // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => line.trim().endsWith("#;"))
+    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
 
     // Join the filtered lines back into a single string
     const updatedContent = emptyColorLines.join("\n")
