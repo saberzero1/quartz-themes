@@ -29,5 +29,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm i --include=dev
+      - run: npm i prettier sass
       - run: npm run verify
