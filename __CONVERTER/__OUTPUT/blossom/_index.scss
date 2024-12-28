@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -480,7 +481,6 @@ body {
   --text-on-accent: #ffffff;
   --interactive-accent-rgb: #ff058d;
   --vim-cursor: #ff058d;
-  --pre-code: #;
   --interactive-before: #ea748f;
   --background-modifier-border: #ff058d;
   --text-selection: #b80034;
@@ -554,7 +554,6 @@ body {
 
   --background-primary: #ededed;
   --background-secondary: #c4c4c4;
-  --background-primary-alt: #;
   --background-secondary-alt: #707070;
   --text-normal: #1a2023;
   --text-faint: #dedede;

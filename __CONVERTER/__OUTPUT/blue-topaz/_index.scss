@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -366,6 +367,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --simple-red-3: hsl(365, 85%, 45%, 1);
   --button-radius: 4px;
   --window-radius: 8px;
+  --color-accent-hsl: 209, 95%, 62%;
   --code-keyword: #c792ea;
   --code-atom: #f78c6c;
   --code-number: #ff5370;
@@ -618,9 +620,9 @@ body {
   --text-highlight-bg-s-light: 100%;
   --text-highlight-bg-l-light: 80%;
   --text-highlight-bg-a-light: 0.847;
-  --cursor-color: var(var(--text-normal));
+  --cursor-color: var(--text-normal);
   --fancy-cursor-width: 2px;
-  --cursor-color-temp: var(var(--text-normal));
+  --cursor-color-temp: var(--text-normal);
   --print-strong-color: ;
   --print-em-color: var(--accent-em);
   --tag-border-width: 1px;
@@ -4062,8 +4064,6 @@ body {
   --pdf-background: var(--background-secondary);
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 8px transparent;
   --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 8px transparent;
-  --custom-bg-pdf-style: #;
-  --custom-bg-pdf-style: #;
   --callout-radius: 2px;
   --page-border-bottom: transparent;
   --page-border-bottom: transparent;
