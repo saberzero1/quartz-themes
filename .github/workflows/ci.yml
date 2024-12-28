@@ -23,11 +23,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: extractions/setup-just@v2
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm i prettier sass
+      - run: npm i just-install
+      - run: npm ci
       - run: npm run verify
