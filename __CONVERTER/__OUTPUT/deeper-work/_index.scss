@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,90 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --font-monospace: "JetBrains Mono", "Consolas", monospace;
-  --color-black: #010409;
-  --color-white: #f7f9fc;
-  --color-gray-0: #e1e7ee;
-  --color-gray-1: #c9d1d9;
-  --color-gray-2: #b1bac4;
-  --color-gray-3: #8b949e;
-  --color-gray-4: #6e7681;
-  --color-gray-5: #484f58;
-  --color-gray-6: #30363d;
-  --color-gray-7: #21262d;
-  --color-gray-8: #161b22;
-  --color-gray-9: #0d1117;
-  --color-blue-0: #cae8ff;
-  --color-blue-1: #a5d6ff;
-  --color-blue-2: #79c0ff;
-  --color-blue-3: #58a6ff;
-  --color-blue-4: #388bfd;
-  --color-blue-5: #1f6feb;
-  --color-blue-6: #1158c7;
-  --color-blue-7: #0d419d;
-  --color-blue-8: #0c2d6b;
-  --color-blue-9: #051d4d;
-  --color-green-0: #aff5b4;
-  --color-green-1: #7ee787;
-  --color-green-2: #56d364;
-  --color-green-3: #3fb950;
-  --color-green-4: #2ea043;
-  --color-green-5: #238636;
-  --color-green-6: #196c2e;
-  --color-green-7: #0f5323;
-  --color-green-8: #033a16;
-  --color-green-9: #04260f;
-  --color-yellow-0: #f8e3a1;
-  --color-yellow-1: #f2cc60;
-  --color-yellow-2: #e3b341;
-  --color-yellow-3: #d29922;
-  --color-yellow-4: #bb8009;
-  --color-yellow-5: #9e6a03;
-  --color-yellow-6: #845306;
-  --color-yellow-7: #693e00;
-  --color-yellow-8: #4b2900;
-  --color-yellow-9: #341a00;
-  --color-orange-0: #ffdfb6;
-  --color-orange-1: #ffc680;
-  --color-orange-2: #ffa657;
-  --color-orange-3: #f0883e;
-  --color-orange-4: #db6d28;
-  --color-orange-5: #bd561d;
-  --color-orange-6: #9b4215;
-  --color-orange-7: #762d0a;
-  --color-orange-8: #5a1e02;
-  --color-orange-9: #3d1300;
-  --color-red-0: #ffdcd7;
-  --color-red-1: #ffc1ba;
-  --color-red-2: #ffa198;
-  --color-red-3: #ff7b72;
-  --color-red-4: #f85149;
-  --color-red-5: #da3633;
-  --color-red-6: #b62324;
-  --color-red-7: #8e1519;
-  --color-red-8: #67060c;
-  --color-red-9: #490202;
-  --color-purple-0: #eddeff;
-  --color-purple-1: #e2c5ff;
-  --color-purple-2: #d2a8ff;
-  --color-purple-3: #bc8cff;
-  --color-purple-4: #a371f7;
-  --color-purple-5: #8957e5;
-  --color-purple-6: #6e40c9;
-  --color-purple-7: #553098;
-  --color-purple-8: #3c1e70;
-  --color-purple-9: #271052;
-  --color-pink-0: #ffdaec;
-  --color-pink-1: #ffbedd;
-  --color-pink-2: #ff9bce;
-  --color-pink-3: #f778ba;
-  --color-pink-4: #fc6dab;
-  --color-pink-5: #bf4b8a;
-  --color-pink-6: #9e3670;
-  --color-pink-7: #7d2457;
-  --color-pink-8: #5e103e;
-  --color-pink-9: #42062a;
 }
 
 body {
@@ -480,8 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-secondary-alt: transparent;
 }
 
 :root[saved-theme="dark"] {
@@ -539,72 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: var(--color-gray-9);
-  --background-primary-alt: var(--color-gray-8);
-  --background-secondary: var(--color-gray-8);
-  --background-secondary-alt: var(--color-gray-7);
-  --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: var(--color-gray-8);
-  --background-modifier-form-field-highlighted: var(--color-gray-8);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: var(--color-green-4);
-  --background-modifier-error: var(--color-red-6);
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: var(--color-red-6);
-  --background-modifier-cover: rgba(0, 0, 0, 0.1);
-  --text-accent: var(--color-blue-4);
-  --text-accent-light: var(--color-blue-3);
-  --text-accent-hover: var(--text-accent-light);
-  --text-normal: var(--color-gray-1);
-  --text-code: var(--color-gray-1);
-  --text-muted: var(--color-gray-4);
-  --text-muted-rgb: 153, 153, 153;
-  --text-faint: var(--color-gray-4);
-  --text-bright: var(--color-gray-0);
-  --text-error: var(--color-red-4);
-  --text-error-hover: var(--color-red-5);
-  --text-highlight-bg: rgba(0, 63, 179, 0.75);
-  --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
-  --text-selection: rgba(23, 48, 77, 0.99);
-  --text-on-accent: var(--color-white);
-  --interactive-normal: var(--color-gray-6);
-  --interactive-hover: var(--color-gray-5);
-  --interactive-accent: var(--color-green-4);
-  --interactive-accent-rgb: 46, 160, 67;
-  --interactive-accent-hover: var(--color-green-3);
-  --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: var(--text-accent);
-  --scrollbar-bg: var(--background-primary);
-  --scrollbar-thumb-bg: var(--color-gray-6);
-  --highlight-mix-blend-mode: screen;
-  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
-  --cursor-bg: var(--color-green-3);
-  --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
-  --color-transparent: rgba(255, 255, 255, 0);
-  --color-border: rgba(255, 255, 255, 0.2);
-  --panel-border-color: #18191e;
-  --gray-1: #5c6370;
-  --gray-2: #abb2bf;
-  --red: #e06c75;
-  --orange: #d19a66;
-  --green: #98c379;
-  --aqua: #56b6c2;
-  --purple: #c678dd;
-  --blue: #61afef;
-  --yellow: #e5c07b;
-  --h3-color: var(--h3456-color);
-  --h4-color: var(--h3456-color);
-  --h5-color: var(--h3456-color);
-  --h6-color: var(--h3456-color);
-  --h1-size: 1.55rem;
-  --h2-size: 1.4rem;
-  --h3-size: 1.3rem;
-  --h4-size: 1.2rem;
-  --h5-size: 1.1rem;
-  --h6-size: 1.1rem;
-  --heading-spacing: 1.5rem;
-  --code-size: 1em;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -672,72 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--color-gray-9);
-  --background-primary-alt: var(--color-gray-8);
-  --background-secondary: var(--color-gray-8);
-  --background-secondary-alt: var(--color-gray-7);
-  --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: var(--color-gray-8);
-  --background-modifier-form-field-highlighted: var(--color-gray-8);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: var(--color-green-4);
-  --background-modifier-error: var(--color-red-6);
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: var(--color-red-6);
-  --background-modifier-cover: rgba(0, 0, 0, 0.1);
-  --text-accent: var(--color-blue-4);
-  --text-accent-light: var(--color-blue-3);
-  --text-accent-hover: var(--text-accent-light);
-  --text-normal: var(--color-gray-1);
-  --text-code: var(--color-gray-1);
-  --text-muted: var(--color-gray-4);
-  --text-muted-rgb: 153, 153, 153;
-  --text-faint: var(--color-gray-4);
-  --text-bright: var(--color-gray-0);
-  --text-error: var(--color-red-4);
-  --text-error-hover: var(--color-red-5);
-  --text-highlight-bg: rgba(0, 63, 179, 0.75);
-  --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
-  --text-selection: rgba(23, 48, 77, 0.99);
-  --text-on-accent: var(--color-white);
-  --interactive-normal: var(--color-gray-6);
-  --interactive-hover: var(--color-gray-5);
-  --interactive-accent: var(--color-green-4);
-  --interactive-accent-rgb: 46, 160, 67;
-  --interactive-accent-hover: var(--color-green-3);
-  --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: var(--text-accent);
-  --scrollbar-bg: var(--background-primary);
-  --scrollbar-thumb-bg: var(--color-gray-6);
-  --highlight-mix-blend-mode: screen;
-  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
-  --cursor-bg: var(--color-green-3);
-  --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
-  --color-transparent: rgba(255, 255, 255, 0);
-  --color-border: rgba(255, 255, 255, 0.2);
-  --panel-border-color: #18191e;
-  --gray-1: #5c6370;
-  --gray-2: #abb2bf;
-  --red: #e06c75;
-  --orange: #d19a66;
-  --green: #98c379;
-  --aqua: #56b6c2;
-  --purple: #c678dd;
-  --blue: #61afef;
-  --yellow: #e5c07b;
-  --h3-color: var(--h3456-color);
-  --h4-color: var(--h3456-color);
-  --h5-color: var(--h3456-color);
-  --h6-color: var(--h3456-color);
-  --h1-size: 1.55rem;
-  --h2-size: 1.4rem;
-  --h3-size: 1.3rem;
-  --h4-size: 1.2rem;
-  --h5-size: 1.1rem;
-  --h6-size: 1.1rem;
-  --heading-spacing: 1.5rem;
-  --code-size: 1em;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

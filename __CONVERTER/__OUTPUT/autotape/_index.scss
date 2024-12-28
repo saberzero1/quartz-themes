@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,39 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-20);
-  --background-secondary: var(--color-base-00);
-  --background-modifier-border: var(--interactive-accent);
-  --background-modifier-border-hover: var(--interactive-accent);
-  --background-modifier-border-focus: var(--interactive-accent);
-  --interactive-hover: var(--color-base-00);
-  --radius-s: 0;
-  --radius-m: 0;
-  --radius-l: 0;
-  --nav-item-padding: 3px;
-  --tab-container-background: var(--color-base-00);
-  --titlebar-background: var(--color-base-00);
-  --titlebar-background-focused: var(--color-base-00);
-  --graph-line: var(--color-base-40, var(--background-modifier-border-focus));
-  --header-size: 1.25em;
-  --h1-size: var(--header-size);
-  --h2-size: var(--header-size);
-  --h3-size: var(--header-size);
-  --h4-size: var(--header-size);
-  --h5-size: var(--header-size);
-  --h6-size: var(--header-size);
-  --font-ui-smaller: 13px;
-  --font-ui-small: 14px;
-  --font-ui-medium: 16px;
-  --font-ui-large: 22px;
-  --h1-color: var(--interactive-accent);
-  --h2-color: var(--interactive-accent);
-  --h3-color: var(--interactive-accent);
-  --h4-color: var(--interactive-accent);
-  --h5-color: var(--interactive-accent);
-  --h6-color: var(--interactive-accent);
 }
 
 :root[saved-theme="dark"] {
@@ -486,13 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --color-base-00: #111111;
-  --header-color: var(--interactive-accent);
-  --bold-color: white;
-  --italic-color: white;
-  --text-highlight-bg: #9ece6a66;
-  --text-faint: #565f8988;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -560,13 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #d5d5d5;
-  --header-color: ;
-  --bold-color: black;
-  --italic-color: black;
-  --text-highlight-bg: #485e3066;
-  --text-faint: #9699a388;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

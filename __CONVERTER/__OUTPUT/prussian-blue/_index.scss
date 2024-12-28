@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,33 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --dark0: #0f1116;
-  --dark1: #1f2026;
-  --dark2: #393939;
-  --dark3: #000716;
-  --dark4: #00002a;
-  --light0: #22198e;
-  --light1: #889ef9;
-  --light2: #ebebfb;
-  --light3: #4e72ff;
-  --frost0: #122886;
-  --frost1: #2f459c;
-  --frost3: #2f459c;
-  --frost5: #2f459c;
-  --teal0: #2f459c;
-  --teal1: #2f459c;
-  --teal2: #8b9bd8;
-  --teal3: #4568fc;
-  --teal4: #2f459c;
-  --grey: #595151;
-  --red: #c51b0c;
-  --orange: #ff9035;
-  --yellow: #fcc200;
-  --green: #37c991;
-  --blue: #63c8da;
-  --purple: #d469c1;
-  --pink: #eb95db;
 }
 
 body {
@@ -423,24 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 228;
-  --accent-s: 54%;
-  --accent-l: 40%;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.2em;
-  --tag-radius: 0.5em;
-  --tab-font-weight: 600;
-  --bold-weight: 800;
-  --checkbox-radius: 0;
-  --embed-border-left: 6px double var(--interactive-accent);
-  --status-bar-text-color: var(--teal3) !important;
 }
 
 :root[saved-theme="dark"] {
@@ -498,93 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --link-unresolved-color: var(--light1);
-  --color-teal0-rgb: var(--teal0);
-  --color-teal0: var(--teal0);
-  --color-light3-rgb: var(--light3);
-  --color-light3: var(--light3);
-  --color-frost1-rgb: var(--frost1);
-  --color-frost1: var(--frost1);
-  --color-cyan-rgb: var(--frost1);
-  --color-cyan: var(--frost1);
-  --color-blue-rgb: var(--frost5);
-  --color-blue: var(--frost5);
-  --color-frost0-rgb: var(--frost0);
-  --color-frost0: var(--frost0);
-  --color-teal0-rgb: var(--teal0);
-  --color-teal0: var(--teal0);
-  --color-red: var(--red);
-  --color-orange: var(--orange);
-  --color-yellow: var(--yellow);
-  --color-green: var(--green);
-  --color-blue: var(--blue);
-  --color-purple: var(--purple);
-  --color-pink: var(--pink);
-  --background-primary: var(--dark0);
-  --background-primary-alt: var(--dark0);
-  --background-secondary: var(--dark0);
-  --background-secondary-alt: var(--dark3);
-  --background-modifier-border: var(--dark2);
-  --cursor-line-background: rgba(var(--teal0), 0.2);
-  --text-normal: var(--light2);
-  --text-faint: var(--light1);
-  --text-muted: var(--frost0);
-  --text-accent: var(--teal0);
-  --text-accent-hover: var(--light3);
-  --bold-color: var(--red);
-  --italic-color: var(--yellow);
-  --link-url: var(--light3);
-  --h1-color: var(--frost0);
-  --h2-color: var(--frost0);
-  --h3-color: var(--frost0);
-  --h4-color: var(--frost0);
-  --h5-color: var(--frost0);
-  --h6-color: var(--frost0);
-  --text-highlight-bg: var(--frost0);
-  --text-highlight-fg: var(--dark0);
-  --tag-color: var(--frost0);
-  --tag-background: var(--dark0);
-  --tag-background-hover: var(--dark0);
-  --titlebar-text-color-focused: var(--teal0);
-  --inline-title-color: var(--frost0);
-  --checkbox-color: var(--frost0);
-  --checkbox-color-hover: var(--light3);
-  --checkbox-border-color: var(--light3);
-  --checkbox-border-color-hover: var(--frost0);
-  --checklist-done-color: var(--frost0);
-  --table-header-background: var(--teal4);
-  --table-header-background-hover: var(--teal3);
-  --table-row-even-background: var(--dark3);
-  --table-row-odd-background: var(--dark2);
-  --table-row-background-hover: var(--frost5);
-  --text-selection: var(--teal4);
-  --flashing-background: var(--teal4);
-  --code-normal: var(--light2);
-  --code-background: var(--dark1);
-  --mermaid-note: var(--frost5);
-  --mermaid-loopline: var(--frost1);
-  --mermaid-exclude: var(--dark0);
-  --mermaid-seqnum: var(--dark0);
-  --icon-color-hover: var(--teal0);
-  --icon-color-focused: var(--teal0);
-  --nav-item-color-hover: var(--teal0);
-  --nav-item-color-active: var(--light3);
-  --nav-file-tag: var(--teal2);
-  --graph-line: var(--teal2);
-  --graph-node: var(--teal3);
-  --graph-node-tag: var(--teal4);
-  --graph-node-attachment: var(--teal1);
-  --calendar-hover: var(--teal0);
-  --calendar-background-hover: var(--dark0);
-  --calendar-week: var(--frost0);
-  --calendar-today: var(--frost0);
-  --dataview-key: var(--text-faint);
-  --dataview-key-background: rgba(var(--frost3), 0.3);
-  --dataview-value: var(--text-faint);
-  --dataview-value-background: rgba(var(--teal0), 0.3);
-  --tab-text-color-focused-active: var(--teal0);
-  --tab-text-color-focused-active-current: var(--light3);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -652,93 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --link-unresolved-color: var(--light1);
-  --color-teal0-rgb: var(--teal0);
-  --color-teal0: var(--teal0);
-  --color-light3-rgb: var(--light3);
-  --color-light3: var(--light3);
-  --color-frost1-rgb: var(--frost1);
-  --color-frost1: var(--frost1);
-  --color-cyan-rgb: var(--frost1);
-  --color-cyan: var(--frost1);
-  --color-blue-rgb: var(--frost5);
-  --color-blue: var(--frost5);
-  --color-frost0-rgb: var(--frost0);
-  --color-frost0: var(--frost0);
-  --color-teal0-rgb: var(--teal0);
-  --color-teal0: var(--teal0);
-  --color-red: var(--red);
-  --color-orange: var(--orange);
-  --color-yellow: var(--yellow);
-  --color-green: var(--green);
-  --color-blue: var(--blue);
-  --color-purple: var(--purple);
-  --color-pink: var(--pink);
-  --background-primary: var(--dark0);
-  --background-primary-alt: var(--dark0);
-  --background-secondary: var(--dark0);
-  --background-secondary-alt: var(--dark3);
-  --background-modifier-border: var(--dark2);
-  --cursor-line-background: rgba(var(--teal0), 0.2);
-  --text-normal: var(--light2);
-  --text-faint: var(--light1);
-  --text-muted: var(--frost0);
-  --text-accent: var(--teal0);
-  --text-accent-hover: var(--light3);
-  --bold-color: var(--red);
-  --italic-color: var(--yellow);
-  --link-url: var(--light3);
-  --h1-color: var(--frost0);
-  --h2-color: var(--frost0);
-  --h3-color: var(--frost0);
-  --h4-color: var(--frost0);
-  --h5-color: var(--frost0);
-  --h6-color: var(--frost0);
-  --text-highlight-bg: var(--frost0);
-  --text-highlight-fg: var(--dark0);
-  --tag-color: var(--frost0);
-  --tag-background: var(--dark0);
-  --tag-background-hover: var(--dark0);
-  --titlebar-text-color-focused: var(--teal0);
-  --inline-title-color: var(--frost0);
-  --checkbox-color: var(--frost0);
-  --checkbox-color-hover: var(--light3);
-  --checkbox-border-color: var(--light3);
-  --checkbox-border-color-hover: var(--frost0);
-  --checklist-done-color: var(--frost0);
-  --table-header-background: var(--teal4);
-  --table-header-background-hover: var(--teal3);
-  --table-row-even-background: var(--dark3);
-  --table-row-odd-background: var(--dark2);
-  --table-row-background-hover: var(--frost5);
-  --text-selection: var(--teal4);
-  --flashing-background: var(--teal4);
-  --code-normal: var(--light2);
-  --code-background: var(--dark1);
-  --mermaid-note: var(--frost5);
-  --mermaid-loopline: var(--frost1);
-  --mermaid-exclude: var(--dark0);
-  --mermaid-seqnum: var(--dark0);
-  --icon-color-hover: var(--teal0);
-  --icon-color-focused: var(--teal0);
-  --nav-item-color-hover: var(--teal0);
-  --nav-item-color-active: var(--light3);
-  --nav-file-tag: var(--teal2);
-  --graph-line: var(--teal2);
-  --graph-node: var(--teal3);
-  --graph-node-tag: var(--teal4);
-  --graph-node-attachment: var(--teal1);
-  --calendar-hover: var(--teal0);
-  --calendar-background-hover: var(--dark0);
-  --calendar-week: var(--frost0);
-  --calendar-today: var(--frost0);
-  --dataview-key: var(--text-faint);
-  --dataview-key-background: rgba(var(--frost3), 0.3);
-  --dataview-value: var(--text-faint);
-  --dataview-value-background: rgba(var(--teal0), 0.3);
-  --tab-text-color-focused-active: var(--teal0);
-  --tab-text-color-focused-active-current: var(--light3);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

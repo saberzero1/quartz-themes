@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,23 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --blockquote-border-color: #4d3ca699;
-  --code-tag: var(--text-accent) !important;
-  --h1-color: #ba6ea0;
-  --h2-color: #b78b60;
-  --h3-color: #a79645;
-  --h4-color: #859679;
-  --h5-color: #59a2c5;
-  --h6-color: #939bd6;
-  --link-color: var(--my-link-color);
-  --link-color-hover: var(--my-link-color-hover);
-  --link-decoration: none !important;
-  --link-decoration-hover: none !important;
-  --link-external-color: var(--my-link-color);
-  --link-external-color-hover: var(--my-link-color-hover);
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
 }
 
 :root[saved-theme="dark"] {
@@ -470,22 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --my-link-color: #59a2c5;
-  --my-link-color-hover: #b3a14b;
-  --background-primary: #2f3136;
-  --background-primary-alt: #36393f;
-  --background-secondary: #202225;
-  --background-secondary-alt: #0c1018d1;
-  --background-modifier-border: #92a1a17a;
-  --text-normal: #bbc0c5;
-  --text-faint: #a09b80;
-  --text-accent: #ff9640ba;
-  --text-accent-hover: #b3a14b;
-  --bold-color: #b5c7c7;
-  --italic-color: #b8cece;
-  --interactive-accent: #92a1a1;
-  --text-highlight-bg: #ffff0033;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -553,22 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --my-link-color: #59a2c5;
-  --my-link-color-hover: #b3a14b;
-  --background-primary: #e0e2e5;
-  --background-primary-alt: #d6d9dc;
-  --background-secondary: #f0f1f2;
-  --background-secondary-alt: #ffffff;
-  --background-modifier-border: #92a1a17a;
-  --text-normal: #2f3136;
-  --text-faint: #5f615e;
-  --text-accent: #ff9640ba;
-  --text-accent-hover: #b3a14b;
-  --bold-color: #4a4c4f;
-  --italic-color: #474a4d;
-  --interactive-accent: #92a1a1;
-  --text-highlight-bg: #00000033;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

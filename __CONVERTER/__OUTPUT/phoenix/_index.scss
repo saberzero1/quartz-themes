@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,73 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --max-embed-height: 1000px;
-  --dark0-hard: #1d2021;
-  --dark0: #282828;
-  --dark0-soft: #32302f;
-  --dark1: #3c3836;
-  --dark2: #504945;
-  --dark3: #665c54;
-  --dark4: #7c6f64;
-  --gray: #928374;
-  --light0-hard: #f9f5d7;
-  --light0: #fbf1c7;
-  --light0-soft: #f2e5bc;
-  --light1: #ebdbb2;
-  --light2: #d5c4a1;
-  --light3: #bdae93;
-  --light4: #a89984;
-  --bright-red: #fb4934;
-  --bright-orange-v: #fe8019;
-  --bright-yellow-v: #fabd2f;
-  --neutral-red: #cc241d;
-  --neutral-orange: #d65d0e;
-  --neutral-yellow: #d79921;
-  --faded-red: #9d0006;
-  --faded-orange: #af3a03;
-  --faded-yellow: #b57614;
-  --platinum: #cccccc;
-  --r-dark0-accent: #1e1e1e;
-  --r-gray: #9d8f82;
-  --r-gray2: #a89c90;
-  --r-gray3: #b3ab9e;
-  --r-lightn1: #f2e5d8;
-  --r-light0: #e7cfb8;
-  --r-light1: #dbc5af;
-  --r-light2: #d0baa6;
-  --r-light2-soft: #c4b09c;
-  --r-light3: #b9a693;
-  --r-light4: #a79584;
-  --r-dark0: #212121;
-  --r-dark1: #191717;
-  --r-dark2: #161414;
-  --r-standard-text: #eadad9;
-  --r-dark-red: #bc0104;
-  --r-red-orange: #c52d0a;
-  --r-orange: #ea4f0d;
-  --r-deep-orange: #ed5b0f;
-  --r-bright-orange: #fe750e;
-  --r-yellow-orange: #fe9109;
-  --r-bright-yellow: #fea30f;
-  --r-yellow-green: #c0c90a;
-  --r-mist-energy-blue: #27cac7;
-  --r-dark-orange: #d5520e;
-  --r-meteor: #72504b;
-  --r-gunmetal: #534f4e;
-  --r-scorpion: #625e5e;
-  --code-orange: #b46629;
-  --code-light-gray: #cccccc;
-  --obsidian-codeblock: #1a1a1a;
-  --test-green: #00ff00;
-  --r-bg-highlight: color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
-  --r-bg-selection: color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
-  --r-pdf-highlight: var(--r-bright-orange);
-  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --font-monospace: JetBrains Mono, Liberation Mono, Monospace, Courier New;
-  --size-normal: 16px;
-  --size-code: 14.4px;
 }
 
 body {
@@ -463,12 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --embed-border-left: none !important;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5);
-  --code-background: var(--default-codeblock);
-  --callout-blend-mode: normal !important;
-  --img-border-radius: 2px !important;
 }
 
 :root[saved-theme="dark"] {
@@ -526,66 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: var(--r-dark0);
-  --background-primary-alt: var(--dark0);
-  --background-secondary: var(--r-dark1);
-  --background-secondary-alt: var(--r-dark2);
-  --text-normal: var(--r-standard-text);
-  --text-faint: var(--r-scorpion);
-  --text-muted: var(--color-base-70);
-  --text-platinum: var(--platinum);
-  --text-title-h1: var(--r-dark-red);
-  --text-title-h2: var(--r-orange);
-  --text-title-h3: var(--r-bright-orange);
-  --text-title-h4: var(--r-bright-yellow);
-  --text-title-h5: var(--r-yellow-green);
-  --text-title-h6: var(--r-mist-energy-blue);
-  --text-link: var(--text-a);
-  --text-link-hover: var(--text-a-hover);
-  --text-a-hover: var(--r-yellow-orange);
-  --text-mark: var(--r-bg-highlight);
-  --text-highlight-bg: var(--r-bg-highlight);
-  --interactive-accent: var(--r-deep-orange);
-  --interactive-before: var(--dark4);
-  --text-accent: var(--r-bright-orange);
-  --text-accent-hover: var(--r-yellow-orange);
-  --interactive-accent-rgb: var(--r-bright-orange);
-  --inline-code: var(--code-light-gray);
-  --code-block: var(--code-light-gray);
-  --code-normal: var(--code-light-gray);
-  --default-codeblock: var(--obsidian-codeblock);
-  --pre-code: var(--default-codeblock);
-  --vim-cursor: var(--r-bright-orange);
-  --text-selection: var(--r-bg-selection);
-  --text-tag: var(--r-bright-orange);
-  --text-card: var(--r-light2-soft);
-  --status-bar-background: var(--background-secondary);
-  --interactive-normal: var(--color-base-30);
-  --callout-bg-darken-pct: 0%;
-  --button-text-color: var(--background-secondary-alt);
-  --graph-view-line-color: var(--dark1);
-  --h1-size: 2.2em;
-  --h2-size: 2em;
-  --h3-size: 1.85em;
-  --h4-size: 1.6em;
-  --h5-size: 1.47em;
-  --h6-size: 1.35em;
-  --list-indent: 1em;
-  --p-spacing: 0.25rem;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --link-unresolved-decoration: none;
-  --link-unresolved-decoration-hover: none;
-  --hx-link-ul-transparency-pct: 33%;
-  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
-  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
-  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
-  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
-  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
-  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -653,68 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--r-light1);
-  --background-primary-alt: var(--r-light0);
-  --background-secondary: var(--r-light2);
-  --background-secondary-alt: var(--r-light3);
-  --text-normal: var(--r-dark0-accent);
-  --text-faint: var(--r-gunmetal);
-  --text-muted: var(--r-gunmetal);
-  --text-platinum: var(--platinum);
-  --text-title-h1: var(--r-dark-red);
-  --text-title-h2: var(--r-orange);
-  --text-title-h3: var(--r-bright-orange);
-  --text-title-h4: var(--r-bright-yellow);
-  --text-title-h5: var(--r-yellow-green);
-  --text-title-h6: var(--r-mist-energy-blue);
-  --text-link: var(--r-dark-orange);
-  --text-link-hover: var(--r-deep-orange);
-  --text-a: var(--r-bright-orange);
-  --text-a-hover: var(--r-yellow-orange);
-  --text-mark: var(--r-bg-highlight);
-  --text-highlight-bg: var(--r-bg-highlight);
-  --interactive-accent: var(--r-deep-orange);
-  --interactive-before: var(--r-light4);
-  --text-accent: var(--r-bright-orange);
-  --text-accent-hover: var(--r-yellow-orange);
-  --interactive-accent-rgb: var(--r-bright-orange);
-  --inline-code: var(--r-dark2);
-  --code-block: var(--r-dark2);
-  --code-normal: var(--r-dark2);
-  --default-codeblock: var(--r-light3);
-  --pre-code: var(--default-codeblock);
-  --vim-cursor: var(--r-bright-orange);
-  --text-selection: var(--r-bg-selection);
-  --text-tag: var(--r-deep-orange);
-  --text-card: var(--r-dark2);
-  --status-bar-background: var(--r-light2-soft);
-  --interactive-normal: var(--r-light2);
-  --interactive-hover: var(--r-light0);
-  --callout-bg-darken-pct: 5%;
-  --button-text-color: var(--text-on-accent);
-  --graph-view-line-color: var(--light4);
-  --h1-size: 2.2em;
-  --h2-size: 2em;
-  --h3-size: 1.85em;
-  --h4-size: 1.6em;
-  --h5-size: 1.47em;
-  --h6-size: 1.35em;
-  --list-indent: 1em;
-  --p-spacing: 0.25rem;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --link-unresolved-decoration: none;
-  --link-unresolved-decoration-hover: none;
-  --hx-link-ul-transparency-pct: 33%;
-  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
-  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
-  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
-  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
-  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
-  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

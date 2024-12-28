@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,14 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --heading-spacing: var(--p-spacing);
-  --indentation-guide-width: 0px;
-  --divider-color: transparent;
-  --tab-divider-color: transparent;
-  --tab-background-active: transparent;
-  --tab-text-color-focused-active: var(--accent);
-  --tab-text-color-focused-active-current: var(--accent);
 }
 
 :root[saved-theme="dark"] {
@@ -461,15 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 20%);
-  --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 40%);
-  --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 80%);
-  --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 90%);
-  --background-primary-alt: var(--background-primary);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -537,15 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 30%);
-  --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 50%);
-  --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 80%);
-  --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 90%);
-  --background-primary-alt: var(--background-primary);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

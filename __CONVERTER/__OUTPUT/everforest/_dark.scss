@@ -1,29 +1,2 @@
 :root[saved-theme="dark"] {
-  --background-primary: var(--bg-dark);
-  --background-primary-alt: var(--bg-dark);
-  --background-secondary: var(--bg-dark);
-  --background-secondary-alt: var(--bg-dark);
-  --text-normal: var(--fg-dark);
-  --text-faint: var(--grey1-dark);
-  --text-title-h1: var(--dim-red);
-  --text-title-h2: var(--dim-orange);
-  --text-title-h3: var(--dim-yellow);
-  --text-title-h4: var(--dim-green);
-  --text-title-h5: var(--dim-aqua);
-  --text-title-h6: var(--dim-purple);
-  --text-link: var(--faded-blue);
-  --text-a: var(--dim-aqua);
-  --text-a-hover: var(--faded-aqua);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --pre-code: var(--bg1-dark);
-  --text-highlight-bg: var(--bg_green);
-  --interactive-accent: var(--dim-aqua);
-  --interactive-before: var(--bg5-dark);
-  --background-modifier-border: var(--bg5-dark);
-  --text-accent: var(--dim-blue);
-  --interactive-accent-rgb: var(--dim-blue);
-  --inline-code: var(--dim-blue);
-  --code-block: var(--fg-dark);
-  --vim-cursor: var(--faded-blue);
-  --text-selection: var(--bg5-dark);
 }

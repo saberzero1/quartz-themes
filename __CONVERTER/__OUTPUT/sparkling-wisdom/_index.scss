@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,10 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --mermaid-font: var(--default-font);
-  --reveal-font: var(--default-font);
-  --font-monospace: "Source Code Pro", monospace;
 }
 
 body {
@@ -458,42 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: #202020;
-  --background-primary-alt: #1a1a1a;
-  --background-secondary: #000000;
-  --background-secondary-alt: #020519;
-  --background-modifier-border: #333;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #197300;
-  --background-modifier-error: #3d0000;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --text-accent: #7f6df2;
-  --text-accent-hover: #8875ff;
-  --text-normal: #dcddde;
-  --text-muted: #999;
-  --text-muted-rgb: 153, 153, 153;
-  --text-faint: #666;
-  --text-error: #ff3333;
-  --text-error-hover: #990000;
-  --text-highlight-bg: rgba(255, 255, 0, 0.4);
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: rgba(23, 48, 77, 0.99);
-  --text-on-accent: #dcddde;
-  --interactive-normal: #2a2a2a;
-  --interactive-hover: #303030;
-  --interactive-accent: #483699;
-  --interactive-accent-rgb: 72, 54, 153;
-  --interactive-accent-hover: #4d3ca6;
-  --interactive-success: #197300;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --highlight-mix-blend-mode: lighten;
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -560,42 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #ffffff;
-  --background-primary-alt: #f5f6f8;
-  --background-secondary: #f2f3f5;
-  --background-secondary-alt: #e3e5e8;
-  --background-modifier-border: #ddd;
-  --background-modifier-form-field: #fff;
-  --background-modifier-form-field-highlighted: #fff;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-success: #a4e7c3;
-  --background-modifier-error: #990000;
-  --background-modifier-error-rgb: 230, 135, 135;
-  --background-modifier-error-hover: #bb0000;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --text-accent: #705dcf;
-  --text-accent-hover: #7a6ae6;
-  --text-normal: #2e3338;
-  --text-muted: #888888;
-  --text-muted-rgb: 136, 136, 136;
-  --text-faint: #999999;
-  --text-error: #800000;
-  --text-error-hover: #990000;
-  --text-highlight-bg: rgba(255, 255, 0, 0.4);
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: rgba(204, 230, 255, 0.99);
-  --text-on-accent: #f2f2f2;
-  --interactive-normal: #f2f3f5;
-  --interactive-hover: #e9e9e9;
-  --interactive-accent: #7b6cd9;
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #8273e6;
-  --interactive-success: #197300;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
-  --scrollbar-bg: rgba(0, 0, 0, 0.05);
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-  --highlight-mix-blend-mode: darken;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

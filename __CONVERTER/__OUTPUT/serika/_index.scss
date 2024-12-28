@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,26 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace-theme: "Roboto Mono *", monospace;
-  --font-text-theme: "Roboto Mono *", monospace;
-  --font-interface-theme: "Roboto Mono *", monospace;
-  --radius-s: 0px;
-  --radius-m: 0px;
-  --radius-l: 0px;
-  --input-radius: 0px;
-  --tab-radius-active: 0px;
-  --checkbox-radius: 0px;
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --ribbon-background: #323437;
-  --ribbon-background-collapsed: #323437;
-  --status-bar-background: #323437;
-  --icon-color: #e2b714;
-  --accent-h: 50;
-  --accent-s: 80%;
-  --accent-l: 55%;
 }
 
 :root[saved-theme="dark"] {
@@ -473,11 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --ribbon-background: #e1e1e3;
-  --ribbon-background-collapsed: #e1e1e3;
-  --status-bar-background: #e1e1e3c0;
-  --icon-color: #e2b714;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -545,11 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --ribbon-background: #e1e1e3;
-  --ribbon-background-collapsed: #e1e1e3;
-  --status-bar-background: #e1e1e3c0;
-  --icon-color: #e2b714;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

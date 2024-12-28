@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,137 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --base-hue: 230;
-  --accent-h: 250;
-  --accent-s: 80%;
-  --accent-l: 75%;
-  --text-normal: var(--base-15);
-  --text-muted: var(--base-20);
-  --text-faint: var(--base-35);
-  --bold-color: var(--base-10);
-  --code-background: var(--background-secondary);
-  --inline-title-color: var(--base-05);
-  --tab-active-color: var(--base-45);
-  --prompt-border-width: 1px;
-  --prompt-border-color: var(--base-50);
-  --indentation-guide-color: var(--base-45);
-  --indentation-guide-color-active: var(--base-35);
-  --modal-border-width: 1px;
-  --modal-border-color: var(--base-45);
-  --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-secondary);
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --h1-color: hsl(var(--accent-h), 52%, 72%);
-  --h2-color: hsl(var(--accent-h), 52%, 68%);
-  --h3-color: hsl(var(--accent-h), 52%, 64%);
-  --h4-color: hsl(var(--accent-h), 50%, 60%);
-  --h5-color: hsl(var(--accent-h), 40%, 52%);
-  --h6-color: hsl(var(--accent-h), 38%, 46%);
-  --base-hue: var(--accent-h);
-  --anim-duration-none: 0;
-  --anim-duration-superfast: 70ms;
-  --anim-duration-fast: 140ms;
-  --anim-duration-moderate: 250ms;
-  --anim-duration-slow: 400ms;
-  --radius-s: 4px;
-  --radius-m: 6px;
-  --radius-l: 10px;
-  --radius-xl: 16px;
-  --cursor: pointer;
-  --cursor-link: pointer;
-  --cursor: default;
-  --tab-divider-color: transparent;
-  --tab-width: 200px;
-  --tab-min-width: 92px;
-  --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
-  --clickable-icon-radius: 6px;
-  --ribbon-padding: 8px 0px;
-  --ribbon-width: 40px;
-  --icon-size: var(--icon-l);
-  --interactive-accent: var(--text-muted);
-  --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-normal);
-  --status-bar-background: var(--background-secondary);
-  --status-bar-border-width: 1px 0 0 0px;
-  --status-bar-radius: 0;
-  --status-bar-height: 24px;
-  --scrollbar-opacity: 0;
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.08);
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.15);
-  --font-text-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-editor-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-interface-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
-  --line-height-normal: 1.6;
-  --line-height-tight: 1.3;
-  --h1-size: 1.802rem;
-  --h2-size: 1.602rem;
-  --h3-size: 1.424rem;
-  --h4-size: 1.266rem;
-  --h5-size: 1.125rem;
-  --h6-size: 1rem;
-  --h1-weight: 700;
-  --h2-weight: 675;
-  --h3-weight: 650;
-  --h4-weight: 650;
-  --h5-weight: 625;
-  --h6-weight: 625;
-  --inline-title-size: 2rem;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --heading-indicator: "H1";
-  --heading-indicator: "H2";
-  --heading-indicator: "H3";
-  --heading-indicator: "H4";
-  --heading-indicator: "H5";
-  --heading-indicator: "H6";
-  --table-header-background: var(--background-secondary);
-  --table-header-background-hover: var(--background-secondary);
-  --table-border-width: 1px;
-  --table-border-color: var(--background-modifier-border);
-  --tag-radius: var(--radius-m);
-  --callout-default: var(--color-purple-rgb);
-  --callout-bug: var(--color-red-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-question: var(--color-yellow-rgb);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
-  --callout-quote: var(--color-muted-rgb);
-  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4) var(--size-4-6);
-  --callout-border-width: 1px;
-  --callout-border-opacity: 0.15;
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-faint);
-  --checkbox-progress-width: 40px;
-  --dot-color: hsl(0 0% 40% / 20%);
-  --dot-spacing: 20px;
-  --dot-size: 1px;
-  --cards-min-width: 150px;
-  --cards-max-width: 1fr;
-  --cards-mobile-width: 120px;
-  --cards-image-height: 400px;
-  --cards-padding: 1.2em;
-  --cards-image-fit: contain;
-  --cards-background: transparent;
-  --cards-border-width: 1px;
-  --cards-aspect-ratio: auto;
-  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
 }
 
 :root[saved-theme="dark"] {
@@ -584,61 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --base-05: hsl(var(--base-hue), 2%, 93%);
-  --base-10: hsl(var(--base-hue), 3%, 82%);
-  --base-15: hsl(var(--base-hue), 4%, 75%);
-  --base-20: hsl(var(--base-hue), 5%, 65%);
-  --base-25: hsl(var(--base-hue), 6%, 56%);
-  --base-30: hsl(var(--base-hue), 6%, 46%);
-  --base-35: hsl(var(--base-hue), 7%, 35%);
-  --base-40: hsl(var(--base-hue), 8%, 25%);
-  --base-45: hsl(var(--base-hue), 10%, 19%);
-  --base-50: hsl(var(--base-hue), 11%, 15%);
-  --base-55: hsl(var(--base-hue), 12%, 12%);
-  --base-60: hsl(var(--base-hue), 16%, 9%);
-  --base-05: hsl(0, 0%, 93%);
-  --base-10: hsl(0, 0%, 82%);
-  --base-15: hsl(0, 0%, 75%);
-  --base-20: hsl(0, 0%, 65%);
-  --base-25: hsl(0, 0%, 56%);
-  --base-30: hsl(0, 0%, 46%);
-  --base-35: hsl(0, 0%, 35%);
-  --base-40: hsl(0, 0%, 25%);
-  --base-45: hsl(0, 0%, 19%);
-  --base-50: hsl(0, 0%, 15%);
-  --base-55: hsl(0, 0%, 12%);
-  --base-60: hsl(0, 0%, 9%);
-  --base-05: hsl(var(--base-hue), 16%, 90%);
-  --base-10: hsl(var(--base-hue), 14%, 79%);
-  --base-15: hsl(var(--base-hue), 12%, 70%);
-  --base-20: hsl(var(--base-hue), 12%, 60%);
-  --base-25: hsl(var(--base-hue), 10%, 49%);
-  --base-30: hsl(var(--base-hue), 10%, 37%);
-  --base-35: hsl(var(--base-hue), 12%, 26%);
-  --base-40: hsl(var(--base-hue), 13%, 19%);
-  --base-45: hsl(var(--base-hue), 12%, 15%);
-  --base-50: hsl(var(--base-hue), 10%, 12%);
-  --base-55: hsl(var(--base-hue), 8%, 8%);
-  --base-60: hsl(var(--base-hue), 8%, 5%);
-  --text-accent: hsl(var(--accent-h), 75%, 75%);
-  --text-accent-hover: hsl(var(--accent-h), 75%, 84%);
-  --base-05: hsl(0, 0%, 90%);
-  --base-10: hsl(0, 0%, 79%);
-  --base-15: hsl(0, 0%, 70%);
-  --base-20: hsl(0, 0%, 60%);
-  --base-25: hsl(0, 0%, 49%);
-  --base-30: hsl(0, 0%, 37%);
-  --base-35: hsl(0, 0%, 26%);
-  --base-40: hsl(0, 0%, 19%);
-  --base-45: hsl(0, 0%, 15%);
-  --base-50: hsl(0, 0%, 12%);
-  --base-55: hsl(0, 0%, 8%);
-  --base-60: hsl(0, 0%, 5%);
-  --mono-rgb-100: 255, 255, 255;
-  --kanban-item-background: var(--base-50);
-  --kanban-item-active-background: var(--base-60);
-  --kanban-item-new-background: var(--base-60);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -706,39 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --base-05: hsl(var(--base-hue), 17%, 9%);
-  --base-10: hsl(var(--base-hue), 15%, 12%);
-  --base-15: hsl(var(--base-hue), 11%, 15%);
-  --base-20: hsl(var(--base-hue), 10%, 19%);
-  --base-25: hsl(var(--base-hue), 10%, 25%);
-  --base-30: hsl(var(--base-hue), 10%, 35%);
-  --base-35: hsl(var(--base-hue), 10%, 62%);
-  --base-40: hsl(var(--base-hue), 15%, 78%);
-  --base-45: hsl(var(--base-hue), 20%, 86%);
-  --base-50: hsl(var(--base-hue), 30%, 92%);
-  --base-55: hsl(var(--base-hue), 25%, 96%);
-  --base-60: hsl(var(--base-hue), 15%, 98%);
-  --color-accent-50: hsl(var(--base-hue), 70%, 95%);
-  --base-05: hsl(0, 0%, 9%);
-  --base-10: hsl(0, 0%, 12%);
-  --base-15: hsl(0, 0%, 15%);
-  --base-20: hsl(0, 0%, 19%);
-  --base-25: hsl(0, 0%, 25%);
-  --base-30: hsl(0, 0%, 35%);
-  --base-35: hsl(0, 0%, 62%);
-  --base-40: hsl(0, 0%, 78%);
-  --base-45: hsl(0, 0%, 86%);
-  --base-50: hsl(0, 0%, 92%);
-  --base-55: hsl(0, 0%, 96%);
-  --base-60: hsl(0, 0%, 98%);
-  --color-accent-50: var(--base-55);
-  --tab-active-color: var(--base-60);
-  --tab-active-shadow: inset 0 0 0 1px var(--background-modifier-border);
-  --mono-rgb-100: 0, 0, 0;
-  --kanban-item-background: var(--base-60);
-  --kanban-item-active-background: var(--color-accent-50);
-  --kanban-item-new-background: var(--base-60);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

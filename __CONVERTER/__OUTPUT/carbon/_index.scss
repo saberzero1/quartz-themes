@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,12 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --input-focus-border-color: var(--text-accent);
-  --input-focus-outline: 3px solid var(--text-accent);
-  --input-unfocused-border-color: transparent;
-  --input-disabled-border-color: transparent;
-  --input-hover-border-color: black;
 }
 
 body {
@@ -402,60 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-ui-small: 14px;
-  --font-text-size: 16px;
-  --line-height-normal: 1.5;
-  --radius-s: 0px;
-  --radius-m: 0px;
-  --radius-l: 0px;
-  --input-radius: 0px;
-  --tab-radius-active: 0px;
-  --checkbox-radius: 0px;
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --text-accent: #0f62fe;
-  --accent-h: 219;
-  --accent-s: 99%;
-  --accent-l: 53%;
-  --divider-color: transparent;
-  --background-modifier-border-hover: transparent;
-  --input-height: calc(var(--font-text-size) * 2.5) !important;
-  --icon-color-active: var(--text-accent);
-  --inactive-tab-background: #262626;
-  --icon-color: #8d8d8d;
-  --icon-color-hover: #c6c6c6;
-  --tab-text-color-focused-active-current: #ffffff;
-  --list-indent: 1.75em;
-  --list-spacing: 0.05em;
-  --list-marker-color: var(--text-faint);
-  --list-marker-color-hover: var(--text-muted);
-  --list-marker-color-collapsed: var(--text-accent);
-  --list-bullet-border: none;
-  --list-bullet-radius: 50%;
-  --list-bullet-size: 0.4em;
-  --list-bullet-transform: none;
-  --list-numbered-style: decimal;
-  --h1-weight: 400;
-  --h2-weight: 400;
-  --tab-background-active: var(--background-primary);
-  --tab-text-color: var(--text-faint);
-  --tab-text-color-active: var(--text-muted);
-  --tab-text-color-focused: var(--text-muted);
-  --tab-text-color-focused-active: var(--text-muted);
-  --tab-text-color-focused-highlighted: var(--text-accent);
-  --tab-text-color-focused-active-current: var(--text-normal);
-  --tab-font-size: var(--font-ui-small);
-  --tab-font-weight: inherit;
-  --tab-divider-color: var(--background-modifier-border-hover);
-  --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
-  --tab-curve: 6px;
-  --tab-radius: var(--radius-s);
-  --tab-radius-active: 0;
-  --tab-width: 200px;
-  --tab-max-width: 320px;
 }
 
 :root[saved-theme="dark"] {
@@ -513,25 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: #161616;
-  --background-secondary: #262626;
-  --ribbon-background: #000000;
-  --list-marker-color: #f4f4f4;
-  --text-normal: #f4f4f4;
-  --icon-color: #f4f4f4;
-  --icon-color-hover: #f4f4f4;
-  --background-secondary-alt: #000000;
-  --titlebar-background: #000000;
-  --icon-color-focused: #ffffff;
-  --tab-text-color-focused: #8d8d8d;
-  --tab-text-color: #8d8d8d;
-  --background-modifier-border: #6f6f6f;
-  --background-modifier-active-hover: #525252;
-  --text-highlight-bg: #001d6c;
-  --text-error: #d8343c;
-  --table-borders: #8d8d8d;
-  --table-headers: #333333;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -599,25 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #ffffff;
-  --background-secondary: #f4f4f4;
-  --ribbon-background: #000000;
-  --list-marker-color: #262626;
-  --text-normal: #262626;
-  --icon-color: #262626;
-  --icon-color-hover: #262626;
-  --background-secondary-alt: #000000;
-  --titlebar-background: #000000;
-  --icon-color-focused: #000000;
-  --tab-text-color-focused: #8d8d8d;
-  --tab-text-color: #8d8d8d;
-  --background-modifier-border: #8d8d8d;
-  --background-modifier-active-hover: #e8e8e8;
-  --text-highlight-bg: #d0e2ff;
-  --text-error: #da1e28;
-  --table-borders: #c6c6c6;
-  --table-headers: #e8e8e8;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

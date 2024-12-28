@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,9 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: Source Code Pro, Fira Code, monospace;
-  --default-font: Source Code Pro, Fira Code, monospace;
 }
 
 :root[saved-theme="dark"] {
@@ -456,50 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: #212121;
-  --background-modifier-border: #303030;
-  --background-primary-alt: #171717;
-  --background-secondary: #212121;
-  --background-secondary-alt: #000000;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
-  --background-nav-alt: rgb(58, 62, 63);
-  --background-nav-file-tag: rgb(116, 190, 247);
-  --background-nav-selected: #3e93d8;
-  --background-nav: rgb(41, 44, 46);
-  --text-accent: #3e93d8;
-  --text-accent-hover: #2b60af;
-  --text-normal: #dcddde;
-  --text-normal-original: #dcddde;
-  --text-muted: #999;
-  --text-faint: #666;
-  --text-error: #ff3333;
-  --text-error-hover: #990000;
-  --text-matched: #0cf32b;
-  --text-on-accent: #dcddde;
-  --text-selection: rgba(6, 66, 113, 0.99);
-  --text-highlight-bg: rgba(26, 73, 100, 0.66);
-  --text-nav-selected: rgb(255, 255, 255);
-  --text-nav: rgb(190, 190, 190);
-  --interactive-normal: #2a2a2a;
-  --interactive-hover: #303030;
-  --interactive-accent: rgb(32, 171, 233);
-  --interactive-accent-rgb: 32, 171, 233;
-  --interactive-accent-hover: #1da3d6;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0);
-  --scrollbar-thumb-bg: rgba(81, 144, 175, 0.36);
-  --accent-strong: #3e93d8;
-  --accent-mild: #3e93d8;
-  --bw: #ffffff;
-  --graph-circle: #fcf601;
-  --graph-line: #26798c;
-  --graph-bg: rgb(22, 22, 22);
-  --graph-text: #cccccc;
-  --graphtag: #5dbcd2;
-  --graph-attach: #d669bc;
-  --graph-unresolved: #9e8aff;
-  --checklist-done-decoration: none;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -567,58 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #ffffff;
-  --background-primary-alt: #f0f2f5;
-  --background-secondary: rgb(57, 63, 63);
-  --background-secondary-alt: rgb(203, 77, 73);
-  --background-accent: #fff;
-  --background-modifier-border: #ddd;
-  --background-modifier-form-field: #fff;
-  --background-modifier-form-field-highlighted: #fff;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-success: #a4e7c3;
-  --background-modifier-error: #e68787;
-  --background-modifier-error-rgb: rgb(230, 135, 135);
-  --background-modifier-error-hover: #ff9494;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --background-nav-alt: rgb(58, 62, 63);
-  --background-nav-file-tag: rgb(203, 77, 73);
-  --background-nav-selected: rgb(203, 77, 73);
-  --background-nav: rgb(41, 44, 46);
-  --text-accent: rgb(203, 77, 73);
-  --text-accent-hover: rgb(203, 77, 73);
-  --text-normal: rgb(203, 77, 73);
-  --text-normal-original: #2e3338;
-  --text-muted: rgb(143, 147, 143);
-  --text-faint: #999999;
-  --text-error: #ce2222;
-  --text-error-hover: #cb2c22;
-  --text-highlight-bg: rgba(240, 255, 82, 0.76);
-  --text-selection: rgba(134, 202, 255, 0.99);
-  --text-on-accent: #f2f2f2;
-  --text-matched: #000000;
-  --text-nav-selected: rgb(255, 255, 255);
-  --text-nav: rgb(190, 190, 190);
-  --interactive-normal: #f2f3f5;
-  --interactive-hover: #e9e9e9;
-  --interactive-accent: rgb(34, 182, 226);
-  --interactive-accent-rgb: 34, 182, 226;
-  --interactive-accent-hover: #1da3d6;
-  --scrollbar-active-thumb-bg: rgb(97, 170, 221);
-  --scrollbar-bg: rgba(0, 0, 0, 0);
-  --scrollbar-thumb-bg: rgb(0, 0, 0);
-  --accent-strong: #ff3333;
-  --accent-mild: #e0a330;
-  --bw: #000000;
-  --graph-circle: #ec0c0c;
-  --graph-line: #cccccc;
-  --graph-bg: rgb(255, 255, 255);
-  --graph-text: #969696;
-  --graphtag: #b9ec41;
-  --graph-attach: #83d4f4;
-  --graph-unresolved: rgb(143, 147, 143);
-  --checklist-done-decoration: none;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

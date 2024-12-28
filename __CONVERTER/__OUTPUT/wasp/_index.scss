@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,8 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --font-monospace: "Source Code Pro", monospace;
 }
 
 body {
@@ -398,9 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-modifier-hover: var(--button-hover-bg-color);
-  --icon-color: var(--button-text-color);
 }
 
 :root[saved-theme="dark"] {
@@ -459,38 +455,7 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --button-hover-bg-color: #daa520;
-  --button-hover-text-color: #ffffff;
-  --button-bg-color: #d49335;
-  --button-text-color: #242424;
-  --background-primary: #242424;
-  --background-primary-alt: #242424;
-  --background-secondary: #191919;
-  --background-secondary-alt: #3d3d3d;
-  --text-normal: #faf2d6;
-  --text-faint: #bdae93;
-  --text-title-h1: #e0e0e0;
-  --text-title-h2: #e0e0e0;
-  --text-title-h3: #e0e0e0;
-  --text-title-h4: #e0e0e0;
-  --text-title-h5: #e0e0e0;
-  --text-title-h6: #e0e0e0;
-  --text-highlight-bg: #640211;
-  --text-link: #83a598;
-  --text-a-hover: #83a598;
-  --text-accent-hover: #d49335;
-  --inline-code: #83a598;
-  --code-block: #83a598;
-  --text-a: #f8c537;
-  --interactive-accent: #f8c537;
-  --text-accent: #f8c537;
-  --text-on-accent: #fff;
-  --interactive-accent-rgb: #f8c537;
-  --vim-cursor: #f8c537;
   --pre-code: #;
-  --interactive-before: #7c6f64;
-  --background-modifier-border: #f8c537;
-  --text-selection: #f8c537;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -559,31 +524,7 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-primary: #ededed;
-  --background-secondary: #c4c4c4;
   --background-primary-alt: #;
-  --background-secondary-alt: #707070;
-  --text-normal: #1a2023;
-  --text-faint: #dedede;
-  --text-title-h1: #d49335;
-  --text-title-h2: #d49335;
-  --text-title-h3: #d49335;
-  --text-title-h4: #d49335;
-  --text-title-h5: #d49335;
-  --text-link: #d49335;
-  --text-a-hover: #d49335;
-  --text-accent-hover: #d49335;
-  --inline-code: #458588;
-  --pre-code: #bebebe;
-  --interactive-before: #a89984;
-  --background-modifier-border: #d49335;
-  --text-a: #961327;
-  --interactive-accent: #f8c537;
-  --text-accent: #961327;
-  --interactive-accent-rgb: #961327;
-  --vim-cursor: #961327;
-  --text-selection: #edc180;
-  --text-white: #ffffff;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

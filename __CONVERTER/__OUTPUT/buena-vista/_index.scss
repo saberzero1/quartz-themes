@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,26 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-semitransp: hsla(0, 0%, var(--color-00-l), 85%);
-  --background-semitransp-alt: hsla(0, 0%, var(--color-10-l), 85%);
-  --background-secondary: var(--color-base-30);
-  --background-secondary-alt: var(--color-base-50);
-  --blockquote-border-thickness: 0;
-  --prompt-border-width: 0;
-  --modal-border-width: 0;
-  --tab-outline-width: 0;
-  --embed-border-left: 1px solid var(--interactive-accent);
-  --embed-border-right: dashed white 1px;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
-  --titlebar-background: var(--color-base-20);
-  --tab-container-background: var(--color-base-20);
-  --titlebar-background-focused: var(--color-base-30-transp);
-  --file-header-font-weight: 600;
-  --embed-max-height: 80vh;
-  --background-blurred: var(--background-primary);
-  --background-blurred-alt: var(--background-primary-alt);
-  --blur-size: 4;
 }
 
 :root[saved-theme="dark"] {
@@ -473,30 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --color-00-l: 10%;
-  --color-05-l: 11.4%;
-  --color-10-l: 13.6%;
-  --color-15-l: 16.3%;
-  --color-20-l: 19.5%;
-  --color-25-l: 22.9%;
-  --color-30-l: 26.7%;
-  --color-35-l: 30.7%;
-  --color-40-l: 34.9%;
-  --color-50-l: 44.1%;
-  --color-60-l: 54%;
-  --color-70-l: 64.6%;
-  --color-80-l: 75.9%;
-  --color-90-l: 87.7%;
-  --color-100-l: 100%;
-  --color-base-00-transp: #1e1e1e80;
-  --color-base-10-transp: #24242480;
-  --color-base-20-transp: #26262680;
-  --color-base-30-transp: #36363680;
-  --accent-s-alt: max(calc(var(--accent-s) * 0.75), 75%);
-  --accent-l-alt: max(var(--accent-l), 75%);
-  --min-highlight: 35%;
-  --max-highlight: 45%;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -564,30 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-00-l: 100%;
-  --color-05-l: 98.2%;
-  --color-10-l: 95.5%;
-  --color-15-l: 92.4%;
-  --color-20-l: 88.9%;
-  --color-25-l: 85.2%;
-  --color-30-l: 81.2%;
-  --color-35-l: 77%;
-  --color-40-l: 72.7%;
-  --color-50-l: 63.4%;
-  --color-60-l: 53.7%;
-  --color-70-l: 43.4%;
-  --color-80-l: 32.7%;
-  --color-90-l: 21.5%;
-  --color-100-l: 10%;
-  --color-base-00-transp: #ffffff80;
-  --color-base-10-transp: #fafafa80;
-  --color-base-20-transp: #f6f6f680;
-  --color-base-30-transp: #e0e0e080;
-  --accent-s-alt: min(calc(var(--accent-s) * 1.25), 75%);
-  --accent-l-alt: min(var(--accent-l), 40%);
-  --min-highlight: 45%;
-  --max-highlight: 65%;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

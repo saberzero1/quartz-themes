@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,16 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-text-theme: Cabin, Quicksand;
-  --radius-s: 8px;
-  --radius-m: 12px;
-  --radius-l: 16px;
-  --input-radius: 12px;
-  --checkbox-radius: 12px;
-  --toggle-radius: 12px;
-  --toggle-thumb-radius: 12px;
-  --slider-thumb-radius: 12px;
 }
 
 :root[saved-theme="dark"] {
@@ -463,22 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --text: rgb(221, 221, 253);
-  --background-primary: rgb(2, 4, 34);
-  --background-secondary: rgb(0, 0, 0);
-  --primary: rgb(119, 248, 194);
-  --secondary: rgb(7, 151, 57);
-  --accent: rgb(155, 182, 47);
-  --highlight-hue: 30;
-  --italic-color: #82c0e9;
-  --bold-color: #d86679;
-  --h1-color: #ffc444;
-  --h2-color: #faa250;
-  --h3-color: #f88765;
-  --h4-color: #f88773;
-  --h5-color: #f88773;
-  --h6-color: #f88773;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -546,22 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --text: rgb(2, 2, 34);
-  --background-primary: rgb(221, 223, 253);
-  --background-secondary: rgb(255, 255, 255);
-  --primary: rgb(7, 136, 82);
-  --secondary: rgb(104, 248, 154);
-  --accent: rgb(181, 208, 73);
-  --highlight-hue: 30;
-  --italic-color: #82c0e9;
-  --bold-color: #d86679;
-  --h1-color: #ffc444;
-  --h2-color: #faa250;
-  --h3-color: #f88765;
-  --h4-color: #f88773;
-  --h5-color: #f88773;
-  --h6-color: #f88773;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

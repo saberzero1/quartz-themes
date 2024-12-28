@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,13 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --callout-padding: 0;
-  --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
-  --callout-content-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
-  --callout-radius: 5px;
-  --callout-border-opacity: 1;
-  --callout-blend-mode: normal;
 }
 
 :root[saved-theme="dark"] {
@@ -460,18 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --interactive-accent: #6c41d8;
-  --code-normal: #fb463b;
-  --text-accent: #814cff;
-  --link-unresolved-decoration-style: #814cff;
-  --background-primary: #262626ff;
-  --background-primary-alt: #161616;
-  --background-modifier-error: #5c0000;
-  --background-modifier-error-hover: #990000;
-  --text-highlight-bg: #6c41d8;
-  --nav-item-background-active: #6c41d8;
-  --tab-min-width: 100px;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -539,18 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --interactive-accent: #6c41d8;
-  --code-normal: #fb463b;
-  --text-accent: #814cff;
-  --link-unresolved-decoration-style: #814cff;
-  --background-primary: #262626ff;
-  --background-primary-alt: #161616;
-  --background-modifier-error: #5c0000;
-  --background-modifier-error-hover: #990000;
-  --text-highlight-bg: #6c41d8;
-  --nav-item-background-active: #6c41d8;
-  --tab-min-width: 100px;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

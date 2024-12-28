@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,32 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --radius-s: 0px;
-  --radius-m: 0px;
-  --radius-l: 0px;
-  --input-radius: 0px;
-  --tab-radius-active: 0px;
-  --checkbox-radius: 0px;
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --nobb-color: rgb(250, 81, 81);
-  --title-border-bottom: 2px solid var(--nobb-color);
-  --fluro-red-rgb: 255, 0, 0 --fluro-yellow-rgb: 255, 255, 0;
-  --fluro-pink-rgb: 255, 0, 255;
-  --fluro-purple-rgb: 200, 0, 255;
-  --fluro-coral-rgb: 240, 128, 128;
-  --fluro-blue-rgb: 0, 255, 255;
-  --fluro-green-rgb: 0, 255, 0;
-  --text-highlight-rgb: var(--fluro-yellow-rgb);
-  --blockquote-border-color: var(--nobb-color);
-  --blockquote-border-thickness: 0.15em;
-  --h3-weight: 500;
-  --code-background: #000000;
-  --text-normal: #bbbbbb;
-  --h2-color: #fff;
-  --h3-color: #fff;
 }
 
 :root[saved-theme="dark"] {

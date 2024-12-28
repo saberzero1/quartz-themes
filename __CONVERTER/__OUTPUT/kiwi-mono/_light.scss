@@ -1,10 +1,2 @@
 :root[saved-theme="light"] {
-  --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 30%);
-  --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 50%);
-  --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 80%);
-  --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 90%);
-  --background-primary-alt: var(--background-primary);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary);
 }

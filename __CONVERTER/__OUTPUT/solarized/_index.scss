@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,39 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --base03-rgb: 0, 43, 54;
-  --base03: rgb(var(--base03-rgb));
-  --base02-rgb: 7, 54, 66;
-  --base02: rgb(var(--base02-rgb));
-  --base01-rgb: 88, 110, 117;
-  --base01: rgb(var(--base01-rgb));
-  --base00-rgb: 101, 123, 131;
-  --base00: rgb(var(--base00-rgb));
-  --base0-rgb: 131, 148, 150;
-  --base0: rgb(var(--base0-rgb));
-  --base1-rgb: 147, 161, 161;
-  --base1: rgb(var(--base1-rgb));
-  --base2-rgb: 238, 232, 213;
-  --base2: rgb(var(--base2-rgb));
-  --base3-rgb: 253, 246, 227;
-  --base3: rgb(var(--base3-rgb));
-  --yellow-rgb: 181, 137, 0;
-  --yellow: rgb(var(--yellow-rgb));
-  --orange-rgb: 203, 75, 22;
-  --orange: rgb(var(--orange-rgb));
-  --red-rgb: 220, 50, 47;
-  --red: rgb(var(--red-rgb));
-  --magenta-rgb: 211, 54, 130;
-  --magenta: rgb(var(--magenta-rgb));
-  --violet-rgb: 108, 113, 196;
-  --violet: rgb(var(--violet-rgb));
-  --blue-rgb: 38, 139, 210;
-  --blue: rgb(var(--blue-rgb));
-  --cyan-rgb: 42, 161, 152;
-  --cyan: rgb(var(--cyan-rgb));
-  --green-rgb: 133, 153, 0;
-  --green: rgb(var(--green-rgb));
 }
 
 body {
@@ -487,81 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: var(--base03);
-  --color-base-30: var(--base02);
-  --color-base-35: var(--base02);
-  --color-base-40: var(--base0);
-  --color-base-50: #666;
-  --color-base-60: #999;
-  --color-base-70: #bababa;
-  --color-base-100: #dadada;
-  --background-primary: var(--base03);
-  --background-primary-alt: var(--base02);
-  --text-normal: var(--base0);
-  --text-muted: var(--base00);
-  --text-faint: var(--base01);
-  --active-bg: var(--nav-item-background-active);
-  --color-red-rgb: var(--red-rgb);
-  --color-red: var(--red);
-  --color-green-rgb: var(--green-rgb);
-  --color-green: var(--green);
-  --color-orange: var(--orange);
-  --color-yellow: var(--yellow);
-  --color-cyan: var(--cyan);
-  --color-blue: var(--blue);
-  --color-purple: var(--violet);
-  --color-pink: var(--magenta);
-  --accent-h: 18;
-  --accent-s: 80%;
-  --accent-l: 44%;
-  --interactive-accent: var(--color-accent);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary-alt);
-  --text-on-accent: var(--background-primary);
-  --text-title: var(--cyan);
-  --heading-formatting: var(--text-title);
-  --h1-color: var(--text-title);
-  --h2-color: var(--text-title);
-  --h3-color: var(--text-title);
-  --h4-color: var(--text-title);
-  --h5-color: var(--text-title);
-  --h6-color: var(--text-title);
-  --link-color: var(--blue);
-  --link-color-hover: var(--link-color);
-  --link-decoration: none;
-  --link-decoration-hover: underline;
-  --link-external-color: var(--violet);
-  --link-external-color-hover: var(--link-external-color);
-  --link-external-decoration: none;
-  --link-external-decoration-hover: underline;
-  --link-unresolved-color: var(--red);
-  --link-unresolved-color-hover: var(--link-unresolved-color);
-  --link-unresolved-opacity: unset;
-  --link-unresolved-decoration-color: var(--link-unresolved-color);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--cyan);
-  --code-function: var(--blue);
-  --code-important: var(--orange);
-  --code-keyword: var(--green);
-  --code-operator: var(--code-normal);
-  --code-property: var(--code-normal);
-  --code-punctuation: var(--code-normal);
-  --code-string: var(--cyan);
-  --code-tag: var(--red);
-  --code-value: var(--magenta);
-  --table-header-size: inherit;
-  --table-header-weight: var(--font-bold);
-  --table-header-color: inherit;
-  --text-highlight-bg: var(--color-accent);
-  --text-highlight-bg-active: var(--color-accent);
-  --checkbox-border-color: var(--interactive-accent);
-  --checkbox-border-color-hover: var(--interactive-accent-hover);
-  --tag-padding-x: var(--tag-padding-y);
-  --background-modifier-border-focus: var(--interactive-accent);
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -628,83 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: var(--base2);
-  --color-base-05: #fcfcfc;
-  --color-base-10: var(--base2);
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: var(--base2);
-  --color-base-35: var(--base2);
-  --color-base-40: var(--base00);
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5a5a5a;
-  --color-base-100: #222222;
-  --background-primary: var(--base3);
-  --background-primary-alt: var(--base2);
-  --text-normal: var(--base00);
-  --text-muted: var(--base0);
-  --text-faint: var(--base1);
-  --active-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
-  --nav-item-background-active: var(--active-bg);
-  --color-red-rgb: var(--red-rgb);
-  --color-red: var(--red);
-  --color-green-rgb: var(--green-rgb);
-  --color-green: var(--green);
-  --color-orange: var(--orange);
-  --color-yellow: var(--yellow);
-  --color-cyan: var(--cyan);
-  --color-blue: var(--blue);
-  --color-purple: var(--violet);
-  --color-pink: var(--magenta);
-  --accent-h: 18;
-  --accent-s: 80%;
-  --accent-l: 44%;
-  --interactive-accent: var(--color-accent);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary-alt);
-  --text-on-accent: var(--background-primary);
-  --text-title: var(--cyan);
-  --heading-formatting: var(--text-title);
-  --h1-color: var(--text-title);
-  --h2-color: var(--text-title);
-  --h3-color: var(--text-title);
-  --h4-color: var(--text-title);
-  --h5-color: var(--text-title);
-  --h6-color: var(--text-title);
-  --link-color: var(--blue);
-  --link-color-hover: var(--link-color);
-  --link-decoration: none;
-  --link-decoration-hover: underline;
-  --link-external-color: var(--violet);
-  --link-external-color-hover: var(--link-external-color);
-  --link-external-decoration: none;
-  --link-external-decoration-hover: underline;
-  --link-unresolved-color: var(--red);
-  --link-unresolved-color-hover: var(--link-unresolved-color);
-  --link-unresolved-opacity: unset;
-  --link-unresolved-decoration-color: var(--link-unresolved-color);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--cyan);
-  --code-function: var(--blue);
-  --code-important: var(--orange);
-  --code-keyword: var(--green);
-  --code-operator: var(--code-normal);
-  --code-property: var(--code-normal);
-  --code-punctuation: var(--code-normal);
-  --code-string: var(--cyan);
-  --code-tag: var(--red);
-  --code-value: var(--magenta);
-  --table-header-size: inherit;
-  --table-header-weight: var(--font-bold);
-  --table-header-color: inherit;
-  --text-highlight-bg: var(--color-accent);
-  --text-highlight-bg-active: var(--color-accent);
-  --checkbox-border-color: var(--interactive-accent);
-  --checkbox-border-color-hover: var(--interactive-accent-hover);
-  --tag-padding-x: var(--tag-padding-y);
-  --background-modifier-border-focus: var(--interactive-accent);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

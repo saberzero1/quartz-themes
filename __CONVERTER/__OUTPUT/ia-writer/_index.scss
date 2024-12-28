@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,36 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --h1-size: var(--font-text-size);
-  --h2-size: var(--font-text-size);
-  --h3-size: var(--font-text-size);
-  --h4-size: var(--font-text-size);
-  --h5-size: var(--font-text-size);
-  --h6-size: var(--font-text-size);
-  --vault-name-font-weight: 600;
-  --file-line-width: min(800px, 98vw);
-  --file-margins: 64px 32px 32px 32px;
-  --h1-color: var(--text-normal);
-  --link-color: var(--text-normal);
-  --text-faint: var(--text-muted);
-  --callout-title-color: var(--text-normal);
-  --link-unresolved-color: var(--text-normal);
-  --link-external-color: var(--text-normal);
-  --link-external-color-hover: var(--color-accent);
-  --checkbox-color: var(--text-muted);
-  --checkbox-border-color: var(--text-muted);
-  --list-marker-color: var(--text-muted);
-  --tab-text-color: var(--text-normal);
-  --tab-text-color-focused: var(--text-normal);
-  --tab-text-color-focused-active: var(--text-normal);
-  --tab-text-color-active: var(--text-normal);
-  --nav-item-color: var(--text-normal);
-  --nav-item-background-active: transparent;
-  --nav-item-background-hover: transparent;
-  --link-unresolved-opacity: 1;
-  --list-marker-color: var(--text-normal);
-  --titlebar-background-focused: var(--background-secondary);
 }
 
 :root[saved-theme="dark"] {
@@ -483,23 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --font-text: "iA Writer Duo", var(--font-text-override), "iA Writer Duo", var(--font-interface);
-  --line-height-normal: 1.7;
-  --link-decoration: underline;
-  --link-unresolved-decoration-color: var(--text-muted);
-  --link-external-decoration-color: var(--text-muted);
-  --checklist-done-decoration: line-through;
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
-  --background-primary: #1b1b1b;
-  --background-secondary: #141414;
-  --text-normal: #ccc;
-  --text-muted: #707070;
-  --text-highlight-bg: #494113;
-  --text-highlight-border: 4px solid #d4b000;
-  --text-highlight-color: #dccf99;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -567,23 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --font-text: "iA Writer Duo", var(--font-text-override), "iA Writer Duo", var(--font-interface);
-  --line-height-normal: 1.7;
-  --link-decoration: underline;
-  --link-unresolved-decoration-color: var(--text-muted);
-  --link-external-decoration-color: var(--text-muted);
-  --checklist-done-decoration: line-through;
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
-  --background-primary: #f7f7f7;
-  --background-secondary: #fcfcfc;
-  --text-normal: #1a1a1a;
-  --text-muted: #b5b3b1;
-  --text-highlight-bg: #fcea95;
-  --text-highlight-border: 4px solid #ffd700;
-  --text-highlight-color: var(--text-normal);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

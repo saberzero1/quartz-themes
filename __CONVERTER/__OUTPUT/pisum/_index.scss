@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,20 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --font-size-normal: 15px;
-  --font-size-code: 13.5px;
-  --font-size-side-dock: 13.5px;
-  --font-size-side-dock-title: 15px;
-  --font-size-status-bar: 12px;
-  --font-size-h1: 23px;
-  --font-size-h2: 22px;
-  --font-size-h3: 21px;
-  --font-size-h4: 20px;
-  --font-size-h5: 19px;
-  --font-size-h6: 18px;
-  --font-family-editor: Avenir, Avenir Next, sans-serif;
-  --font-family-preview: Avenir, Avenir Next, sans-serif;
 }
 
 body {
@@ -468,52 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: #364549;
-  --background-primary-alt: #2c383a;
-  --background-secondary: #415358;
-  --background-secondary-alt: #2c383a;
-  --background-accent: #fff;
-  --background-modifier-border: #f2e5bc;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #197300;
-  --background-modifier-error: #3d0000;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #fe8019;
-  --text-accent-hover: #83a598;
-  --text-normal: #fbf1c7;
-  --text-muted: #d5c4a1;
-  --text-faint: #bdae93;
-  --text-highlight-bg: rgba(181, 118, 20, 0.5);
-  --text-error: #800000;
-  --text-error-hover: #990000;
-  --text-selection: rgba(89, 75, 95, 0.99);
-  --text-on-accent: #fbf1c7;
-  --interactive-normal: #b57614;
-  --interactive-hover: #fe8019;
-  --interactive-accent: #b57614;
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #fe8019;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
-  --scrollbar-bg: rgba(0, 0, 0, 0.05);
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
-  --text-title-h1: #d65d0e;
-  --text-title-h2: #d79921;
-  --text-title-h3: #98971a;
-  --text-title-h4: #689d6a;
-  --text-title-h5: #458588;
-  --text-title-h6: #b16286;
-  --inline-code: #b48ead;
-  --code-block: #b48ead;
-  --pre-code-bg: rgba(0, 0, 0, 0.2);
-  --blockquote-border: #b57614;
-  --vim-cursor: #d65d0e;
-  --border-color: #504945;
-  --hover-bg: rgba(0, 0, 0, 0.5);
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -580,53 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #364549;
-  --background-primary-alt: #2c383a;
-  --background-secondary: #415358;
-  --background-secondary-alt: #2c383a;
-  --background-accent: #fff;
-  --background-modifier-border: #f2e5bc;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #197300;
-  --background-modifier-error: #3d0000;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #fe8019;
-  --text-accent-hover: #83a598;
-  --text-normal: #fbf1c7;
-  --text-muted: #d5c4a1;
-  --text-faint: #bdae93;
-  --text-highlight-bg: rgba(181, 118, 20, 0.5);
-  --text-error: #800000;
-  --text-error-hover: #990000;
-  --text-selection: rgba(89, 75, 95, 0.99);
-  --text-on-accent: #fbf1c7;
-  --interactive-normal: #b57614;
-  --interactive-hover: #fe8019;
-  --interactive-accent: #b57614;
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #fe8019;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
-  --scrollbar-bg: rgba(0, 0, 0, 0.05);
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
-  --text-title-h1: #d65d0e;
-  --text-title-h2: #d79921;
-  --text-title-h3: #98971a;
-  --text-title-h4: #689d6a;
-  --text-title-h5: #458588;
-  --text-title-h6: #b16286;
-  --inline-code: #b48ead;
-  --code-block: #b48ead;
-  --pre-code-bg: rgba(0, 0, 0, 0.2);
-  --blockquote-border: #b57614;
-  --vim-cursor: #d65d0e;
-  --border-color: #504945;
-  --hover-bg: rgba(0, 0, 0, 0.5);
-  --sticky-left: 25px;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

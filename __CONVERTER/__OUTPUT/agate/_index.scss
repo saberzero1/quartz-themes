@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,115 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-color: 55, 0, 255;
-  --light-color: 170, 170, 170;
-  --light-alpha-color: 0;
-  --bg-color: rgba(var(--light-color), var(--light-alpha-color));
-  --modal-color: rgba(var(--light-color), 1);
-  --line-color: rgba(20, 20, 20, 0.2);
-  --border-width: 1px;
-  --text-selection: rgba(var(--accent-color), 0.2);
-  --text-highlight-bg: rgba(var(--accent-color), 0.2);
-  --radius-s: 2px;
-  --radius-m: 8px;
-  --radius-l: 12px;
-  --radius-xl: 16px;
-  --input-radius: 0px;
-  --tab-radius-active: 0px;
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --font-interface-theme: "Pretendard-Regular", serif;
-  --font-text-theme: "Noto Serif KR", serif;
-  --bold-modifier: 500;
-  --line-height-normal: 2em;
-  --button-radius: var(--radius-s);
-  --checkbox-radius: 0px;
-  --checkbox-marker-color: rgb(101, 101, 101);
-  --checkbox-color: rgba(152, 151, 151, 0.766);
-  --modal-background: var(--modal-color);
-  --modal-radius: var(--radius-l);
-  --popover-width: 450px;
-  --popover-height: 300px;
-  --popover-font-size: 0.9em;
-  --blockquote-border-thickness: 3px;
-  --blockquote-border-color: rgba(var(--accent-color), 0.6);
-  --blockquote-font-style: italic;
-  --callout-border-width: 1px;
-  --callout-border-opacity: 100%;
-  --callout-padding: 15px 20px;
-  --callout-radius: 20px;
-  --callout-blend-mode: multiply;
-  --code-normal: #333d40;
-  --code-comment: #5b6a6a;
-  --code-function: #b500e7;
-  --code-important: #d64609;
-  --code-keyword: #098800;
-  --code-operator: #c45b00;
-  --code-property: #333d40;
-  --code-punctuation: #00b4f0;
-  --code-string: #b58900;
-  --code-tag: #dc322f;
-  --code-value: rgb(var(--accent-color));
-  --file-line-width: 630px;
-  --file-folding-offset: 300px;
-  --file-margins: 30px 10px;
-  --file-header-border: 1px solid var(--line-color);
-  --file-header-justify: center;
-  --h1-font: "Pretendard-Bold";
-  --h2-font: "Pretendard-Bold";
-  --h3-font: "Pretendard-Bold";
-  --h4-font: "Pretendard-Bold";
-  --h5-font: "Pretendard-Bold";
-  --h6-font: "Pretendard-Bold";
-  --h1-size: 2em;
-  --h2-size: 1.8em;
-  --h3-size: 1.4em;
-  --h4-size: 1.2em;
-  --h5-size: 1.1em;
-  --h6-size: 1em;
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 700;
-  --h4-weight: 700;
-  --h5-weight: 700;
-  --h6-weight: 700;
-  --hr-color: var(--line-color);
-  --hr-thickness: var(--border-width);
-  --inline-title-size: 2.3em;
-  --inline-title-font: "ITC Slimbach Std", "Noto Serif KR";
-  --inline-title-line-height: 1.2em;
-  --inline-title-color: var(--color-base-100);
-  --inline-title-size: 3.5em;
-  --link-color: rgb(var(--accent-color));
-  --link-unresolved-color: rgb(var(--accent-color));
-  --link-unresolved-decoration-color: rgb(var(--accent-color));
-  --link-external-color: rgb(var(--accent-color));
-  --list-indent: 2em;
-  --list-indent-editing: 2em;
-  --list-indent-source: 2em;
-  --list-spacing: 0px;
-  --list-marker-color: var(--color-base-100);
-  --list-marker-color-hover: var(--color-base-100);
-  --list-marker-color-collapsed: var(--color-base-100);
-  --metadata-background: rgba(20, 20, 20, 0.05);
-  --metadata-max-width: 100%;
-  --metadata-padding: 5px 20px;
-  --metadata-border-radius: 10px;
-  --metadata-gap: 0px;
-  --table-column-first-border-width: 0;
-  --table-column-last-border-width: 0;
-  --table-header-border-width: 0;
-  --table-last-border-width: 0;
-  --table-row-last-border-width: 0;
-  --tag-color: rgb(var(--accent-color));
-  --tag-background: rgba(var(--accent-color), 0.2);
-  --graph-line: var(--line-color);
-  --status-bar-background: var(--modal-background);
-  --status-bar-border-color: var(--line-color);
-  --status-bar-border-width: var(--border-width);
-  --status-bar-radius: var(--radius-s);
 }
 
 :root[saved-theme="dark"] {
@@ -562,20 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --color-base-00: #f7f7f730;
-  --color-base-05: #d5d0d034;
-  --color-base-10: #f7f7f7c1;
-  --color-base-20: #d5d0d034;
-  --color-base-25: #d5d0d034;
-  --color-base-30: rgba(20, 19, 19, 0.172);
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-base-50: rgb(20, 20, 20);
-  --color-base-60: #d5d0d034;
-  --color-base-100: rgb(20, 20, 20);
-  --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
-  --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -643,20 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #f7f7f730;
-  --color-base-05: #d5d0d034;
-  --color-base-10: #f7f7f7c1;
-  --color-base-20: #d5d0d034;
-  --color-base-25: #d5d0d034;
-  --color-base-30: rgba(20, 19, 19, 0.172);
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-base-50: rgb(20, 20, 20);
-  --color-base-60: #d5d0d034;
-  --color-base-100: rgb(20, 20, 20);
-  --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
-  --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

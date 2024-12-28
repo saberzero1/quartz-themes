@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,76 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --text-on-accent: white !important;
-  --modal-border-color: var(--background-modifier-border) !important;
-  --collapse-icon-color-collapsed: var(--text-muted) !important;
-  --nav-collapse-icon-color: var(--text-muted);
-  --radius-s: 3px;
-  --radius-m: 5px;
-  --radius-l: 6px;
-  --header-height: 30px;
-  --ribbon-width: 30px;
-  --titlebar-height: 25px;
-  --size-2-1: 6px;
-  --size-2-2: 10px;
-  --size-2-3: 10px;
-  --size-4-1: 4px;
-  --size-4-2: 8px;
-  --ribbon-padding: 0px;
-  --ribbon-background: var(--background-secondary-alt);
-  --ribbon-background-collapsed: var(--background-secondary-alt);
-  --nav-indentation-guide-width: 0px;
-  --nav-item-background-active: var(--background-secondary-alt);
-  --nav-item-background-hover: var(--background-secondary-alt);
-  --background-modifier-hover: var(--background-secondary);
-  --nav-item-background-selected: transparent;
-  --titlebar-background-focused: var(--background-secondary-alt);
-  --titlebar-background: var(--background-secondary-alt);
-  --tab-curve: 0;
-  --tab-radius: 3px;
-  --tab-radius-active: 3px;
-  --tab-background-active: var(--background-primary-alt);
-  --tab-divider-color: transparent;
-  --tab-outline-color: transparent;
-  --file-header-justify: left;
-  --blockquote-border-thickness: 4px;
-  --blockquote-border-color: var(--background-modifier-border);
-  --callout-title-color: var(--text-normal);
-  --callout-title-padding: 0.7em 0.5em 0.7em 0.7em;
-  --callout-title-size: var(--h6-size);
-  --callout-padding: 0;
-  --callout-content-padding: 0.25em 1.2em;
-  --callout-content-background: var(--background-secondary);
-  --callout-blend-mode: normal;
-  --callout-bug: var(--color-pink-rgb);
-  --callout-fail: var(--color-orange-red-rgb);
-  --callout-important: var(--color-teal-rgb);
-  --callout-info: var(--color-cyan-rgb);
-  --callout-question: var(--color-green-rgb);
-  --callout-success: var(--color-dark-green-rgb);
-  --callout-summary: var(--color-light-blue-rgb);
-  --callout-tip: var(--color-teal-rgb);
-  --callout-todo: var(--color-cyan-rgb);
-  --code-background: var(--background-secondary);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-operator: var(--color-red);
-  --code-property: var(--color-dark-green);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-teal);
-  --code-tag: var(--color-orange-red);
-  --code-value: var(--color-purple);
-  --table-header-weight: bold;
-  --modal-width: 80vw;
-  --modal-max-width: 80vw;
-  --modal-height: 650px;
-  --modal-border-width: 0px;
-  --background-modifier-cover: rgba(0, 0, 0, 0.78) !important;
-  --button-radius: 3px;
 }
 
 :root[saved-theme="dark"] {
@@ -523,36 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --color-base-00: #202020;
-  --color-base-05: #1a1a1a;
-  --color-base-10: #000000;
-  --color-base-20: #161616;
-  --interactive-normal: #0c0c0c;
-  --input-shadow: var(--background-modifier-border) 0 0 0px 1px;
-  --background-secondary-alt: var(--color-base-10);
-  --color-blue-rgb: 68, 138, 255;
-  --color-blue: rgb(68, 138, 255);
-  --color-light-blue-rgb: 0, 176, 255;
-  --color-light-blue: rgb(0, 176, 255);
-  --color-cyan-rgb: 0, 184, 212;
-  --color-cyan: rgb(0, 184, 212);
-  --color-teal-rgb: 0, 191, 165;
-  --color-teal: rgb(0, 191, 165);
-  --color-dark-green-rgb: 0, 191, 165;
-  --color-dark-green: rgb(0, 191, 165);
-  --color-green-rgb: 100, 221, 23;
-  --color-green: rgb(100, 221, 23);
-  --color-orange-rgb: 255, 145, 0;
-  --color-orange: rgb(255, 145, 0);
-  --color-orange-red-rgb: 255, 82, 82;
-  --color-orange-red: rgb(255, 82, 82);
-  --color-red-rgb: 255, 23, 68;
-  --color-red: rgb(255, 23, 68);
-  --color-pink-rgb: 245, 0, 87;
-  --color-pink: rgb(245, 0, 87);
-  --color-purple-rgb: 124, 77, 255;
-  --color-purple: rgb(124, 77, 255);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -620,41 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #ffffff;
-  --color-base-10: #f5f6f8;
-  --color-base-20: #f2f3f5;
-  --color-base-05: #e3e5e8;
-  --color-base-30: #ddd;
-  --color-base-25: rgb(242, 242, 242);
-  --color-base-35: rgb(250, 250, 250);
-  --color-base-50: #999999;
-  --color-base-60: #919191;
-  --color-base-70: #888888;
-  --color-base-100: #2e3338;
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
-  --color-blue-rgb: 68, 138, 255;
-  --color-blue: rgb(68, 138, 255);
-  --color-light-blue-rgb: 0, 176, 255;
-  --color-light-blue: rgb(0, 176, 255);
-  --color-cyan-rgb: 0, 184, 212;
-  --color-cyan: rgb(0, 184, 212);
-  --color-teal-rgb: 0, 191, 165;
-  --color-teal: rgb(0, 191, 165);
-  --color-dark-green-rgb: 0, 191, 165;
-  --color-dark-green: rgb(0, 191, 165);
-  --color-green-rgb: 100, 221, 23;
-  --color-green: rgb(100, 221, 23);
-  --color-orange-rgb: 255, 145, 0;
-  --color-orange: rgb(255, 145, 0);
-  --color-orange-red-rgb: 255, 82, 82;
-  --color-orange-red: rgb(255, 82, 82);
-  --color-red-rgb: 255, 23, 68;
-  --color-red: rgb(255, 23, 68);
-  --color-pink-rgb: 245, 0, 87;
-  --color-pink: rgb(245, 0, 87);
-  --color-purple-rgb: 124, 77, 255;
-  --color-purple: rgb(124, 77, 255);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

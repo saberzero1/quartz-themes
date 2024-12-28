@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,35 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --base-h: 0;
-  --base-s: 0%;
-  --base-d: 10%;
-  --base-l: 95%;
-  --accent-h: 210;
-  --accent-h-o: 50;
-  --accent-s: 90%;
-  --accent-d: 85%;
-  --accent-l: 63%;
-  --main-accent-h: 360;
-  --main-accent-s: 70%;
-  --main-accent-d: 60%;
-  --main-accent-l: 10%;
-  --font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-  --font-normal: 16px;
-  --font-medium: 13.5px;
-  --font-small: 12px;
-  --font-smaller: 11px;
-  --normal-weight: 300;
-  --bold-weight: 500;
-  --line-width: 800px;
-  --max-width: 100%;
-  --view-width: 95%;
-  --cursor: pointer;
-  --buttons-fade-in-speed: filter 100ms ease-in-out;
-  --buttons-fade-out-speed: filter 2000ms ease-in-out;
-  --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
-  --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 body {
@@ -483,44 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --translucency: 0.95;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --background-primary: hsl(var(--base-h), var(--base-s), calc(var(--base-d) - 4%));
-  --background-primary-alt: hsl(var(--base-h), var(--base-s), calc(var(--base-d) - 3%));
-  --background-secondary: hsl(var(--base-h), var(--base-s), var(--base-d));
-  --background-secondary-table: hsl(var(--base-h), var(--base-s), calc(var(--base-d) - 2%));
-  --background-secondary-alt: hsl(var(--base-h), var(--base-s), var(--base-d));
-  --background-tertiary: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 4%));
-  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 5%));
-  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --text-normal: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 70%));
-  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
-  --text-selection: rgba(50, 50, 50, 1);
-  --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 3%));
-  --line-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 2%));
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-d), 0);
-  --background-translucent: hsla(var(--base-h), var(--base-s), var(--base-d), 0.85);
-  --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) - 10%));
-  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 10%));
-  --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 10%));
-  --quote-opening-modifier: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 15%));
-  --interactive-accent-rgb: 66, 66, 66;
-  --text-highlight-bg: rgba(168, 220, 250, 0.33);
-  --button-background: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 5%));
-  --button-background-active: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
-  --icon-bright: brightness(140%);
-  --icon-normal: brightness(100%);
-  --icon-dark: brightness(90%);
-  --color-external: #4ed5ff;
-  --color-accent: hsl(var(--main-accent-h), var(--main-accent-s), var(--main-accent-d));
-  --color-accent-hover-invert: var(--text-muted);
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -587,41 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --translucency: 0.85;
-  --background-primary: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 5%));
-  --background-primary-alt: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --background-secondary: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 0%));
-  --background-secondary-table: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --background-secondary-alt: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --background-tertiary: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 8%));
-  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
-  --text-normal: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 100%));
-  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 55%));
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 3s5%));
-  --text-selection: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%));
-  --line-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 70%));
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
-  --background-translucent: hsla(var(--base-h), var(--base-s), var(--base-l), 0.85);
-  --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%));
-  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
-  --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
-  --quote-opening-modifier: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 15%));
-  --interactive-accent-rgb: 220, 220, 220;
-  --button-background: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 75%));
-  --button-background-active: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 60%));
-  --icon-bright: brightness(20%);
-  --icon-normal: brightness(100%);
-  --icon-dark: brightness(120%);
-  --color-external: #389ebd;
-  --color-accent: hsl(var(--main-accent-h), var(--main-accent-s), var(--main-accent-d));
-  --color-accent-hover-invert: var(--text-muted);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -454,21 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --color-base-00: #111111;
-  --color-base-05: #111111;
-  --color-base-10: #131313;
-  --color-base-20: #151515;
-  --color-base-25: #171717;
-  --color-base-30: #272727;
-  --color-base-35: #272727;
-  --color-base-40: #333333;
-  --color-base-50: #404040;
-  --color-base-60: #666666;
-  --color-base-70: #787878;
-  --color-base-100: #cbcbcb;
-  --background-secondary: #111111;
-  --background-secondary-alt: #151515;
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -535,21 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #111111;
-  --color-base-05: #111111;
-  --color-base-10: #131313;
-  --color-base-20: #151515;
-  --color-base-25: #171717;
-  --color-base-30: #272727;
-  --color-base-35: #272727;
-  --color-base-40: #333333;
-  --color-base-50: #404040;
-  --color-base-60: #666666;
-  --color-base-70: #787878;
-  --color-base-100: #cbcbcb;
-  --background-secondary: #111111;
-  --background-secondary-alt: #151515;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

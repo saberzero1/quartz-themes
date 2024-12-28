@@ -1,15 +1,2 @@
 :root[saved-theme="dark"] {
-  --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 18%, 14%));
-  --text-faint: #aaa;
-  --code-bg-s: 20%;
-  --code-bg-l: 45%;
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 24%), 24%);
-  --button-gray-1: var(--color-base-30);
-  --button-gray-3: var(--color-base-30);
-  --dialog-border-color: var(--color-base-40);
-  --island-bg-color: var(--color-base-00);
-  --input-border-color: var(--color-base-30);
-  --input-bg-color: var(--color-base-20);
-  --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23eee" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
-  --folder-inactive: 70%;
 }

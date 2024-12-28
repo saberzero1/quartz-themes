@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,32 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-editor: Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --discord-green: hsla(153, 46%, 49%, 1);
-  --discord-yellow: hsla(38, 96%, 54%, 1);
-  --discord-yellow-alt: hsla(37, 65%, 63%, 1);
-  --discord-yellow-light: hsla(50, 42%, 48%, 1);
-  --discord-yellow-bg: hsla(38, 96%, 54%, 0.1);
-  --discord-orange: hsla(20, 84%, 52%, 1);
-  --discord-orange-light: hsla(24, 90%, 61%, 1);
-  --discord-red: hsla(0, 85%, 61%, 1);
-  --discord-red-hover: hsla(0, 66%, 55%, 1);
-  --discord-blue: hsla(227, 58%, 65%, 1);
-  --discord-blue-hover: hsla(227, 44%, 59%, 1);
-  --discord-grey: hsla(214, 10%, 50%, 1);
-  --discord-grey-hover: hsla(214, 10%, 45%, 1);
-  --discord-grey-toggle: hsla(218, 5%, 47%, 1);
-  --discord-dark: hsla(216, 7%, 14%, 1);
-  --discord-dark-hover: hsla(216, 7%, 14%, 0.7);
-  --elevation-stroke: 0 1px 0 1px hsla(240, 11%, 2%, 0.1);
-  --elevation-medium: 0 4px 4px hsla(0, 0%, 0%, 0.16);
-  --elevation-high: 0 8px 16px hsla(0, 0%, 0%, 0.24);
-  --readable-line-length: 45rem;
-  --font-size-notes: 0.875rem;
-  --font-size-file-explorer: 0.875rem;
-  --letter-spacing-notes: -0.2px;
 }
 
 body {
@@ -480,86 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: hsla(220, 8%, 23%, 1);
-  --background-primary-alt: hsla(232, 14%, 31%, 1);
-  --background-secondary: hsla(223, 7%, 20%, 1);
-  --background-secondary-alt: hsla(216, 7%, 14%, 1);
-  --background-tertiary: hsla(220, 7%, 17%, 1);
-  --background-accent: hsla(217, 8%, 34%, 1);
-  --background-code: hsla(204, 6%, 17%, 1);
-  --background-code-preview: hsla(204, 6%, 17%, 1);
-  --background-code-border: hsla(0, 0%, 16%, 1);
-  --background-modifier-cover: hsla(220, 8%, 23%, 1);
-  --background-modifier-hover: hsla(217, 8%, 34%, 0.16);
-  --background-modifier-active: hsla(217, 8%, 34%, 0.24);
-  --background-modifier-selected: hsla(217, 8%, 34%, 0.32);
-  --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
-  --background-modifier-error: var(--discord-red);
-  --background-modifier-error-hover: var(--discord-red-hover);
-  --background-modifier-form-field: hsla(0, 0%, 0%, 0.2);
-  --background-modifier-form-field-highlighted: hsla(0, 0%, 0%, 0.2);
-  --background-modifier-border: var(--background-secondary-alt);
-  --text-normal: hsla(213, 3%, 82%, 1);
-  --text-muted: hsla(213, 4%, 57%, 1);
-  --text-faint: hsla(0, 0%, 61%, 1);
-  --text-link: hsla(197, 100%, 48%, 1);
-  --text-accent: hsla(265, 66%, 72%, 1);
-  --text-on-accent: hsla(210, 3%, 87%, 1);
-  --text-selection: hsla(212, 34%, 54%, 0.5);
-  --text-highlight-bg: hsla(212, 34%, 54%, 1);
-  --text-linenumber: hsla(216, 3%, 32%, 0.85);
-  --text-linenumber-active: hsla(0, 0%, 61%, 0.85);
-  --text-strong: var(--discord-yellow-alt);
-  --text-em: hsla(62, 31%, 61%, 1);
-  --text-tag: hsla(27, 100%, 63%, 0.73);
-  --text-mark: hsla(37, 82%, 74%, 1);
-  --markup-code: hsla(34, 89%, 61%, 1);
-  --text-header: hsla(233, 45%, 69%, 1);
-  --text-title-h1: hsla(243, 35%, 65%, 1);
-  --text-title-h2: var(--text-header);
-  --text-title-h3: var(--text-header);
-  --text-title-h4: var(--text-header);
-  --text-title-h5: var(--text-header);
-  --text-title-h6: hsla(192, 13%, 53%, 1);
-  --text-a: hsla(322, 65%, 70%, 1);
-  --text-a-hover: hsla(327, 100%, 77%, 1);
-  --interactive-accent: var(--discord-green);
-  --interactive-accent-hover: hsla(152, 60%, 43%, 1);
-  --interactive-accent-light: var(--discord-yellow-light);
-  --interactive-accent-alt: hsla(220, 7%, 17%, 1);
-  --interactive-hover: hsla(210, 3%, 87%, 1);
-  --interactive-muted: hsla(217, 8%, 34%, 1);
-  --interactive-normal: hsla(216, 4%, 74%, 1);
-  --interactive-active: hsla(0, 100%, 100%, 1);
-  --blockquote-border: hsla(286, 22%, 66%, 1);
-  --blockquote-bg: hsla(240, 11%, 2%, 0.07);
-  --scrollbar-bg: transparent;
-  --scrollbar-thin-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-auto-track: hsla(210, 10%, 20%, 1);
-  --scrollbar-auto-scrollbar-color-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-auto-scrollbar-color-track: hsla(223, 7%, 20%, 1);
-  --cursor: default;
-  --opacity-translucency: 1;
-  --graph-line: hsla(191, 57%, 35%, 1);
-  --graph-line-highlight: hsla(191, 57%, 59%, 1);
-  --graph-circle-outline: transparent;
-  --graph-circle-fill: hsla(59, 99%, 50%, 1);
-  --graph-circle-fill-highlight: hsla(59, 99%, 50%, 1);
-  --graph-circle-fill-unresolved: hsla(206, 89%, 71%, 1);
-  --graph-fill-tag: hsla(250, 100%, 77%, 1);
-  --graph-fill-attachment: hsla(314, 57%, 63%, 1);
-  --graph-arrow: hsla(314, 57%, 63%, 1);
-  --syntax-default: rgb(191, 193, 194);
-  --syntax-red: rgb(224, 108, 117);
-  --syntax-green: rgb(152, 195, 121);
-  --syntax-yellow: rgb(209, 154, 102);
-  --syntax-blue: rgb(86, 156, 214);
-  --syntax-teal: rgb(86, 182, 194);
-  --syntax-purple: rgb(198, 120, 221);
-  --syntax-grey: rgb(112, 128, 144);
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -626,86 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: hsla(220, 8%, 23%, 1);
-  --background-primary-alt: hsla(232, 14%, 31%, 1);
-  --background-secondary: hsla(223, 7%, 20%, 1);
-  --background-secondary-alt: hsla(216, 7%, 14%, 1);
-  --background-tertiary: hsla(220, 7%, 17%, 1);
-  --background-accent: hsla(217, 8%, 34%, 1);
-  --background-code: hsla(204, 6%, 17%, 1);
-  --background-code-preview: hsla(204, 6%, 17%, 1);
-  --background-code-border: hsla(0, 0%, 16%, 1);
-  --background-modifier-cover: hsla(220, 8%, 23%, 1);
-  --background-modifier-hover: hsla(217, 8%, 34%, 0.16);
-  --background-modifier-active: hsla(217, 8%, 34%, 0.24);
-  --background-modifier-selected: hsla(217, 8%, 34%, 0.32);
-  --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
-  --background-modifier-error: var(--discord-red);
-  --background-modifier-error-hover: var(--discord-red-hover);
-  --background-modifier-form-field: hsla(0, 0%, 0%, 0.2);
-  --background-modifier-form-field-highlighted: hsla(0, 0%, 0%, 0.2);
-  --background-modifier-border: var(--background-secondary-alt);
-  --text-normal: hsla(213, 3%, 82%, 1);
-  --text-muted: hsla(213, 4%, 57%, 1);
-  --text-faint: hsla(0, 0%, 61%, 1);
-  --text-link: hsla(197, 100%, 48%, 1);
-  --text-accent: hsla(265, 66%, 72%, 1);
-  --text-on-accent: hsla(210, 3%, 87%, 1);
-  --text-selection: hsla(212, 34%, 54%, 0.5);
-  --text-highlight-bg: hsla(212, 34%, 54%, 1);
-  --text-linenumber: hsla(216, 3%, 32%, 0.85);
-  --text-linenumber-active: hsla(0, 0%, 61%, 0.85);
-  --text-strong: var(--discord-yellow-alt);
-  --text-em: hsla(62, 31%, 61%, 1);
-  --text-tag: hsla(27, 100%, 63%, 0.73);
-  --text-mark: hsla(37, 82%, 74%, 1);
-  --markup-code: hsla(34, 89%, 61%, 1);
-  --text-header: hsla(233, 45%, 69%, 1);
-  --text-title-h1: hsla(243, 35%, 65%, 1);
-  --text-title-h2: var(--text-header);
-  --text-title-h3: var(--text-header);
-  --text-title-h4: var(--text-header);
-  --text-title-h5: var(--text-header);
-  --text-title-h6: hsla(192, 13%, 53%, 1);
-  --text-a: hsla(322, 65%, 70%, 1);
-  --text-a-hover: hsla(327, 100%, 77%, 1);
-  --interactive-accent: var(--discord-green);
-  --interactive-accent-hover: hsla(152, 60%, 43%, 1);
-  --interactive-accent-light: var(--discord-yellow-light);
-  --interactive-accent-alt: hsla(220, 7%, 17%, 1);
-  --interactive-hover: hsla(210, 3%, 87%, 1);
-  --interactive-muted: hsla(217, 8%, 34%, 1);
-  --interactive-normal: hsla(216, 4%, 74%, 1);
-  --interactive-active: hsla(0, 100%, 100%, 1);
-  --blockquote-border: hsla(286, 22%, 66%, 1);
-  --blockquote-bg: hsla(240, 11%, 2%, 0.07);
-  --scrollbar-bg: transparent;
-  --scrollbar-thin-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-auto-track: hsla(210, 10%, 20%, 1);
-  --scrollbar-auto-scrollbar-color-thumb: hsla(216, 7%, 14%, 1);
-  --scrollbar-auto-scrollbar-color-track: hsla(223, 7%, 20%, 1);
-  --cursor: default;
-  --opacity-translucency: 1;
-  --graph-line: hsla(191, 57%, 35%, 1);
-  --graph-line-highlight: hsla(191, 57%, 59%, 1);
-  --graph-circle-outline: transparent;
-  --graph-circle-fill: hsla(59, 99%, 50%, 1);
-  --graph-circle-fill-highlight: hsla(59, 99%, 50%, 1);
-  --graph-circle-fill-unresolved: hsla(206, 89%, 71%, 1);
-  --graph-fill-tag: hsla(250, 100%, 77%, 1);
-  --graph-fill-attachment: hsla(314, 57%, 63%, 1);
-  --graph-arrow: hsla(314, 57%, 63%, 1);
-  --syntax-default: rgb(191, 193, 194);
-  --syntax-red: rgb(224, 108, 117);
-  --syntax-green: rgb(152, 195, 121);
-  --syntax-yellow: rgb(209, 154, 102);
-  --syntax-blue: rgb(86, 156, 214);
-  --syntax-teal: rgb(86, 182, 194);
-  --syntax-purple: rgb(198, 120, 221);
-  --syntax-grey: rgb(112, 128, 144);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

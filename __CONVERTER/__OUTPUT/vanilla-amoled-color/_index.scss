@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -454,41 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --color-base-00: #000;
-  --color-base-05: #080808;
-  --color-base-10: #111;
-  --color-base-20: #1a1a1a;
-  --color-base-25: #222;
-  --color-base-30: #333;
-  --color-base-35: #363636;
-  --color-base-40: #4a4a4a;
-  --color-base-50: #666;
-  --color-base-60: #999 --color-base-70: #bbb --color-base-100: #fff;
-  --background-primary: var(--color-base-00);
-  --background-secondary: var(--color-base-05);
-  --titlebar-background: var(--color-base-00);
-  --titlebar-background-focused: var(--color-base-10);
-  --red_x: 191, 97, 106;
-  --red: rgb(var(--red_x));
-  --orange_x: 208, 135, 112;
-  --orange: rgb(var(--orange_x));
-  --yellow_x: 235, 203, 139;
-  --yellow: rgb(var(--yellow_x));
-  --green_x: 163, 190, 140;
-  --green: rgb(var(--green_x));
-  --purple_x: 180, 142, 173;
-  --purple: rgb(var(--purple_x));
-  --frost0_x: 143, 188, 187;
-  --frost0: rgb(var(--frost0_x));
-  --frost2_x: 129, 161, 193;
-  --frost2: rgb(var(--frost2_x));
-  --h1-color: var(--red);
-  --h2-color: var(--yellow);
-  --h3-color: var(--green);
-  --h4-color: var(--purple);
-  --h5-color: var(--frost0);
-  --h6-color: var(--frost2);
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -555,41 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #000;
-  --color-base-05: #080808;
-  --color-base-10: #111;
-  --color-base-20: #1a1a1a;
-  --color-base-25: #222;
-  --color-base-30: #333;
-  --color-base-35: #363636;
-  --color-base-40: #4a4a4a;
-  --color-base-50: #666;
-  --color-base-60: #999 --color-base-70: #bbb --color-base-100: #fff;
-  --background-primary: var(--color-base-00);
-  --background-secondary: var(--color-base-05);
-  --titlebar-background: var(--color-base-00);
-  --titlebar-background-focused: var(--color-base-10);
-  --red_x: 191, 97, 106;
-  --red: rgb(var(--red_x));
-  --orange_x: 208, 135, 112;
-  --orange: rgb(var(--orange_x));
-  --yellow_x: 235, 203, 139;
-  --yellow: rgb(var(--yellow_x));
-  --green_x: 163, 190, 140;
-  --green: rgb(var(--green_x));
-  --purple_x: 180, 142, 173;
-  --purple: rgb(var(--purple_x));
-  --frost0_x: 143, 188, 187;
-  --frost0: rgb(var(--frost0_x));
-  --frost2_x: 129, 161, 193;
-  --frost2: rgb(var(--frost2_x));
-  --h1-color: var(--red);
-  --h2-color: var(--yellow);
-  --h3-color: var(--green);
-  --h4-color: var(--purple);
-  --h5-color: var(--frost0);
-  --h6-color: var(--frost2);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

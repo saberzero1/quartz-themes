@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,69 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --bg0-dark: #22282c;
-  --bg1-dark: #272f34;
-  --bg-dark: #2f383e;
-  --bg2-dark: #374247;
-  --bg3-dark: #404c51;
-  --bg4-dark: #4a555b;
-  --bg5-dark: #525c62;
-  --bg_visual: #503946;
-  --bg_red: #4e3e43;
-  --bg_green: #404d44;
-  --bg_blue: #394f5a;
-  --bg_yellow: #4a4940;
-  --shadow: #00000070;
-  --fg-dark: #d3c6aa;
-  --grey0-dark: #7f897d;
-  --grey1-dark: #859289;
-  --grey2-dark: #9aa79d;
-  --faded-red: #e67e80;
-  --faded-orange: #e69875;
-  --faded-yellow: #dbbc7f;
-  --faded-green: #a7c080;
-  --faded-aqua: #83c092;
-  --faded-blue: #7fbbb3;
-  --faded-purple: #d699b6;
-  --dim-red: #da6362;
-  --dim-orange: #d77f48;
-  --dim-yellow: #bf983d;
-  --dim-green: #899c40;
-  --dim-aqua: #569d79;
-  --dim-blue: #5a93a2;
-  --dim-purple: #b87b9d;
-  --bg0-light: #f0edd8;
-  --bg1-light: #f6f1dd;
-  --bg-light: #fdf6e3;
-  --bg2-light: #f3efda;
-  --bg3-light: #edead5;
-  --bg4-light: #e4e1cd;
-  --bg5-light: #dfdbc8;
-  --grey0-light: #a4ad9e;
-  --grey1-light: #939f91;
-  --grey2-light: #879686;
-  --shadow-light: #3c474d20;
-  --bg_visual_light: #eaedc8;
-  --bg_red_light: #fbe3da;
-  --bg_green_light: #f0f1d2;
-  --bg_blue_light: #e9f0e9;
-  --bg_yellow_light: #faedcd;
-  --fg-light: #5c6a72;
-  --light-red: #f85552;
-  --light-orange: #f57d26;
-  --light-yellow: #bf983d;
-  --light-green: #899c40;
-  --light-aqua: #569d79;
-  --light-blue: #5a93a2;
-  --light-purple: #b87b9d;
-  --light-dim-red: #f1706f;
-  --light-dim-orange: #f39459;
-  --light-dim-yellow: #e4b649;
-  --light-dim-green: #a4bb4a;
-  --light-dim-aqua: #6ec398;
-  --light-dim-blue: #6cb3c6;
-  --light-dim-purple: #e092be;
 }
 
 body {
@@ -459,14 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
-  --h1-color: var(--text-title-h1);
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
-  --h4-color: var(--text-title-h4);
-  --h5-color: var(--text-title-h5);
-  --h6-color: var(--text-title-h6);
 }
 
 :root[saved-theme="dark"] {
@@ -524,34 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: var(--bg-dark);
-  --background-primary-alt: var(--bg-dark);
-  --background-secondary: var(--bg-dark);
-  --background-secondary-alt: var(--bg-dark);
-  --text-normal: var(--fg-dark);
-  --text-faint: var(--grey1-dark);
-  --text-title-h1: var(--dim-red);
-  --text-title-h2: var(--dim-orange);
-  --text-title-h3: var(--dim-yellow);
-  --text-title-h4: var(--dim-green);
-  --text-title-h5: var(--dim-aqua);
-  --text-title-h6: var(--dim-purple);
-  --text-link: var(--faded-blue);
-  --text-a: var(--dim-aqua);
-  --text-a-hover: var(--faded-aqua);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --pre-code: var(--bg1-dark);
-  --text-highlight-bg: var(--bg_green);
-  --interactive-accent: var(--dim-aqua);
-  --interactive-before: var(--bg5-dark);
-  --background-modifier-border: var(--bg5-dark);
-  --text-accent: var(--dim-blue);
-  --interactive-accent-rgb: var(--dim-blue);
-  --inline-code: var(--dim-blue);
-  --code-block: var(--fg-dark);
-  --vim-cursor: var(--faded-blue);
-  --text-selection: var(--bg5-dark);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -619,34 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--bg-light);
-  --background-primary-alt: var(--bg-light);
-  --background-secondary: var(--bg-light);
-  --background-secondary-alt: var(--bg-light);
-  --text-normal: var(--fg-light);
-  --text-faint: var(--grey1-light);
-  --text-title-h1: var(--light-red);
-  --text-title-h2: var(--light-orange);
-  --text-title-h3: var(--light-yellow);
-  --text-title-h4: var(--light-green);
-  --text-title-h5: var(--light-aqua);
-  --text-title-h6: var(--light-purple);
-  --text-link: var(--light-blue);
-  --text-a: var(--light-dim-blue);
-  --text-a-hover: var(--light-blue);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --pre-code: var(--bg1-light);
-  --text-highlight-bg: var(--light-dim-green);
-  --interactive-accent: var(--bg5-light);
-  --interactive-before: var(--bg5-light);
-  --background-modifier-border: var(--bg5-light);
-  --text-accent: var(--light-dim-green);
-  --interactive-accent-rgb: var(--light-dim-green);
-  --inline-code: var(--light-blue);
-  --code-block: var(--fg-light);
-  --vim-cursor: var(--light-blue);
-  --text-selection: rgba(189, 174, 147, 0.5);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

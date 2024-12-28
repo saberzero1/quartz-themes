@@ -286,8 +286,11 @@ function removeNonVariableLines(cssString) {
       (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
     )
 
+    // Filter lines that end with invalid colors (like color: #;)
+    const emptyColorLines = variableLines.filter((line) => line.trim().endsWith("#;"))
+
     // Join the filtered lines back into a single string
-    const updatedContent = variableLines.join("\n")
+    const updatedContent = emptyColorLines.join("\n")
 
     // Write the updated content back to the file
     return updatedContent
@@ -430,7 +433,7 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//OVERRIDES`,
-    `@import "./overrides/_index.scss";`,
+    `@use "overrides";`,
   )
 })
 manifestCollection.forEach((manifest) => {

@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,26 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-primary: #35674d;
-  --background-primary-alt: #2c5640;
-  --background-secondary: #a23227;
-  --background-secondary-alt: #952e24;
-  --background-modifier-border: rgba(0, 0, 0, 0.25);
-  --text-normal: #f2f2f2;
-  --text-muted: #f2f2f2;
-  --text-faint: #c5c5c5;
-  --text-accent: #f2f2f2;
-  --text-accent-hover: #ffffff;
-  --interactive-accent-rgb: 255, 191, 0;
-  --interactive-accent: #ffbf00;
-  --interactive-accent-hover: #d0a011;
-  --text-on-accent: #000000;
-  --background-accent: #b5aa29;
-  --text-highlight-bg: #b5aa29;
-  --text-selection: rgba(44, 86, 64, 0.99);
-  --interactive-normal: #f2f3f5;
-  --interactive-hover: #e9e9e9;
 }
 
 :root[saved-theme="dark"] {

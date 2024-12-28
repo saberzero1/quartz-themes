@@ -1,23 +1,2 @@
 :root[saved-theme="dark"] {
-  --color-base-00: #161511;
-  --color-base-05: #302a1d;
-  --color-base-10: #3f3d2f;
-  --color-base-20: #302a1d;
-  --color-base-25: #3f3d2f;
-  --color-base-30: #57543f;
-  --color-base-35: #636049;
-  --color-base-40: #636049;
-  --color-base-50: #777357;
-  --color-base-60: #a89366;
-  --color-base-70: #fcfbf1;
-  --color-base-100: #fcfbf1;
-  --accent-h: 79;
-  --accent-s: 25%;
-  --accent-l: 40%;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-on-accent: var(--color-base-100);
-  --text-on-accent-inverted: var(--color-base-10);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
 }

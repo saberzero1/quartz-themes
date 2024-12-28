@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -454,31 +455,6 @@ body {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: #1e2022;
-  --background-primary-alt: #1e2022;
-  --background-secondary: #1e2022;
-  --background-secondary-alt: #2e3236;
-  --text-normal: #dddddd;
-  --text-faint: #b2b2b2;
-  --text-title-h1: #cbdbe5;
-  --text-title-h2: #cbdbe5;
-  --text-title-h3: #cbdbe5;
-  --text-title-h4: #cbdbe5;
-  --text-title-h5: #cbdbe5;
-  --text-link: #b4b4b4;
-  --text-a: #6bcafb;
-  --text-a-hover: #6bcafb;
-  --text-mark: #263d92;
-  --pre-code: #252525;
-  --interactive-accent: #92a1a1;
-  --interactive-before: #5e6565;
-  --background-modifier-border: #92a1a17a;
-  --blockquote-border: #4aa8fb;
-  --tag-background: #a7b0b3;
-  --interactive-accent-rgb: #6bcafb;
-  --font-family-editor: Avenir, "Avenir Next";
-  --font-family-preview: Avenir, "Avenir Next";
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -545,31 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #fbfbfb;
-  --background-primary-alt: #fbfbfb;
-  --background-secondary: #fbfbfb;
-  --background-secondary-alt: #2e3236;
-  --text-normal: #333;
-  --text-faint: #b2b2b2;
-  --text-title-h1: #333;
-  --text-title-h2: #333;
-  --text-title-h3: #333;
-  --text-title-h4: #333;
-  --text-title-h5: #333;
-  --text-link: #b4b4b4;
-  --text-a: #db4d52;
-  --text-a-hover: #db4d52;
-  --text-mark: #d3ffa4;
-  --pre-code: #ffffff;
-  --interactive-accent: #92a1a1;
-  --interactive-before: #5e6565;
-  --background-modifier-border: #92a1a17a;
-  --blockquote-border: #d6555f;
-  --tag-background: #a7b0b3;
-  --interactive-accent-rgb: #db4d52;
-  --font-family-editor: Avenir, "Avenir Next";
-  --font-family-preview: Avenir, "Avenir Next";
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

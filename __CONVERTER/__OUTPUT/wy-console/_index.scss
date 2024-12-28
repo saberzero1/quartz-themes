@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,37 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --col-base-background: #0b1510;
-  --col-base: #318c54;
-  --col-accent: #3fff8c;
-  --col-accent-plus: #99e5b5;
-  --col-muted: #163f26;
-  --col-muted-plus: #020704;
-  --col-text-selection: #437254;
-  --col-important: #ffd303;
-  --col-important-muted: #3f3401;
-  --col-important-plus: #fff2bf;
-  --col-safety: #122127;
-  --col-danger: #230d0d;
-  --col-txt-titlebars: black;
-  --siz-txt-title: 2em;
-  --siz-txt-h1: 1.75em;
-  --siz-txt-h2: 1.6em;
-  --siz-txt-h3: 1.45em;
-  --siz-txt-h4: 1.3em;
-  --siz-txt-h5: 1.15em;
-  --siz-txt-h6: 1em;
-  --siz-txt-p: 1em;
-  --letterspacing-txt-headers: 1.5px;
-  --letterspacing-txt-p: 0.5px;
-  --oz-fta-folder-font-size: 1em;
-  --oz-fta-file-font-size: 1em;
-  --folders-font-size: 1em;
-  --files-font-size: 1em;
-  --fnt-title: "Scifi Title";
-  --fnt-head-p: "ModeSeven Regular";
-  --text-selection: var(--col-base);
 }
 
 body {
@@ -427,130 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-interface: var(--fnt-head-p);
-  --col-ed-background: var(--col-base-background);
-  --col-ed-caret: var(--col-accent-plus);
-  --fnt-ed-title: var(--fnt-title);
-  --fnt-ed-headers: var(--fnt-head-p);
-  --line-height-ed-text: 20px;
-  --line-height-ed-headers: 20px;
-  --pad-ed-headers: 5px;
-  --letterspacing-ed-headers: var(--letterspacing-txt-headers);
-  --col-ed-txt-title: var(--col-accent-plus);
-  --siz-ed-txt-title: var(--siz-txt-title);
-  --col-ed-txt-h1: var(--col-accent);
-  --siz-ed-txt-h1: var(--siz-txt-h1);
-  --col-ed-txt-h2: var(--col-accent);
-  --siz-ed-txt-h2: var(--siz-txt-h2);
-  --col-ed-txt-h3: var(--col-accent);
-  --siz-ed-txt-h3: var(--siz-txt-h3);
-  --col-ed-txt-h4: var(--col-accent);
-  --siz-ed-txt-h4: var(--siz-txt-h4);
-  --col-ed-txt-h5: var(--col-accent);
-  --siz-ed-txt-h5: var(--siz-txt-h5);
-  --col-ed-txt-h6: var(--col-accent);
-  --siz-ed-txt-h6: var(--siz-txt-h6);
-  --fnt-ed-text: var(--fnt-head-p);
-  --letterspacing-ed-text: var(--letterspacing-txt-p);
-  --col-ed-txt-strong: var(--col-accent);
-  --siz-ed-txt-strong: var(--siz-txt-p);
-  --col-ed-txt-italic: var(--col-accent);
-  --siz-ed-txt-italic: var(--siz-txt-p);
-  --col-ed-txt-strikethrough: var(--col-muted);
-  --col-ed-txt-highlight: var(--col-muted-plus);
-  --siz-ed-txt-highlight: var(--siz-txt-p);
-  --col-ed-bckg-highlight: var(--col-base);
-  --col-ed-txt-quote: var(--col-accent-plus);
-  --siz-ed-txt-quote: var(--siz-txt-p);
-  --col-ed-bckg-quote: var(--col-base-background);
-  --col-ed-bckg-quote-callout: var(--col-safety);
-  --col-ed-bckg-quote-warning: var(--col-danger);
-  --col-ed-txt-codeblock: var(--col-accent);
-  --siz-ed-txt-codeblock: var(--siz-txt-p);
-  --col-ed-bckg-codeblock: var(--col-muted);
-  --col-ed-hyperlink: var(--col-important);
-  --col-ed-hyperlink-highlight-hover: var(--col-muted-plus);
-  --col-ed-hyperlink-strikethrough: var(--col-important-muted);
-  --col-ed-hyperlink-hover: var(--col-important-plus);
-  --col-ed-hyperlink-broken: red;
-  --col-ed-bckg-hyperlink-broken: var(--col-danger);
-  --col-ed-txt-p: var(--col-base);
-  --siz-ed-txt-p: var(--siz-txt-p);
-  --col-ed-bckg-checkbox-empty: var(--col-muted);
-  --col-ed-bckg-checkbox-full: var(--col-accent-plus);
-  --col-ed-txt-checkbox-full: var(--col-muted);
-  --col-ed-hr: var(--col-base);
-  --col-ed-txt-tableh: var(--col-accent-plus);
-  --col-ed-txt-table: var(--col-base);
-  --siz-ed-txt-table: var(--siz-txt-p);
-  --col-ed-bckg-tableh: var(--col-muted);
-  --col-ed-bckg-table: var(--col-base-background);
-  --col-ed-txt-ul-bullet: var(--col-accent-plus);
-  --col-ed-txt-ol-bullet: var(--col-accent-plus);
-  --col-ed-txt-tagbeg: var(--col-important);
-  --col-ed-bckg-tagbeg: var(--col-muted);
-  --col-ed-txt-tagend: var(--col-important);
-  --col-ed-bckg-tagend: var(--col-muted);
-  --col-pr-background: var(--col-base-background);
-  --fnt-pr-title: var(--fnt-title);
-  --fnt-pr-headers: var(--fnt-head-p);
-  --line-height-pr-text: 20px;
-  --line-height-pr-headers: 20px;
-  --letterspacing-pr-headers: var(--letterspacing-txt-headers);
-  --col-pr-txt-title: var(--col-accent-plus);
-  --siz-pr-txt-title: var(--siz-txt-title);
-  --col-pr-txt-h1: var(--col-accent);
-  --siz-pr-txt-h1: var(--siz-txt-h1);
-  --col-pr-txt-h2: var(--col-accent);
-  --siz-pr-txt-h2: var(--siz-txt-h2);
-  --col-pr-txt-h3: var(--col-accent);
-  --siz-pr-txt-h3: var(--siz-txt-h3);
-  --col-pr-txt-h4: var(--col-accent);
-  --siz-pr-txt-h4: var(--siz-txt-h4);
-  --col-pr-txt-h5: var(--col-accent);
-  --siz-pr-txt-h5: var(--siz-txt-h5);
-  --col-pr-txt-h6: var(--col-accent);
-  --siz-pr-txt-h6: var(--siz-txt-h6);
-  --fnt-pr-text: var(--fnt-head-p);
-  --letterspacing-pr-text: var(--letterspacing-txt-p);
-  --col-pr-txt-strong: var(--col-accent);
-  --siz-pr-txt-strong: var(--siz-txt-p);
-  --col-pr-txt-italic: var(--col-accent);
-  --siz-pr-txt-italic: var(--siz-txt-p);
-  --col-pr-txt-strikethrough: var(--col-muted);
-  --col-pr-txt-highlight: var(--col-muted-plus);
-  --siz-pr-txt-highlight: var(--siz-txt-p);
-  --col-pr-bckg-highlight: var(--col-base);
-  --col-pr-txt-quote: var(--col-accent-plus);
-  --siz-pr-txt-quote: var(--siz-txt-p);
-  --col-pr-bckg-quote: var(--col-base-background);
-  --col-pr-bckg-quote-callout: var(--col-safety);
-  --col-pr-bckg-quote-warning: var(--col-danger);
-  --col-pr-txt-codeblock: var(--col-accent);
-  --siz-pr-txt-codeblock: var(--siz-txt-p);
-  --col-pr-bckg-codeblock: var(--col-muted);
-  --col-pr-txt-hyperlink: var(--col-important);
-  --col-pr-txt-hyperlink-highlight-hover: var(--col-muted-plus);
-  --col-pr-txt-hyperlink-unresolved: var(--col-important);
-  --col-pr-txt-hyperlink-strikethrough: var(--col-important-muted);
-  --col-pr-txt-hyperlink-hover: var(--col-important-plus);
-  --col-pr-hyperlink-broken: red;
-  --col-pr-txt-p: var(--col-base);
-  --siz-pr-txt-p: var(--siz-txt-p);
-  --col-pr-bckg-checkbox-empty: var(--col-muted);
-  --col-pr-bckg-checkbox-full: var(--col-accent-plus);
-  --col-pr-txt-checkbox-full: var(--col-muted);
-  --col-pr-hr: var(--col-base);
-  --col-pr-txt-tableh: var(--col-accent-plus);
-  --col-pr-txt-table: var(--col-muted-plus);
-  --siz-pr-txt-table: var(--siz-txt-p);
-  --col-pr-bckg-tableh: var(--col-base);
-  --col-pr-bckg-table: var(--col-base-background);
-  --col-pr-txt-ul-bullet: var(--col-accent-plus);
-  --col-pr-txt-ol-bullet: var(--col-accent-plus);
-  --col-pr-txt-tag: var(--col-muted);
-  --col-pr-bckg-tag: var(--col-important);
 }
 
 :root[saved-theme="dark"] {
@@ -608,60 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --col-base-background: #0b1510;
-  --col-base: #40b266;
-  --col-accent: #3fff8c;
-  --col-accent-plus: #99e5b5;
-  --col-muted: #163f26;
-  --col-muted-plus: #020704;
-  --col-important: #ffd303;
-  --col-important-muted: #3f3401;
-  --col-important-plus: #fff2bf;
-  --col-safety: #163f26;
-  --col-danger: #318c54;
-  --col-bckg-mainpanels: var(--col-muted-plus);
-  --col-bckg-filetreeheader: var(--col-base-background);
-  --col-txt-titlebars: #070707;
-  --col-icons: var(--col-accent-plus);
-  --col-txt-selectedtitles: var(--col-accent-plus);
-  --col-bckg-selectedtitles: var(--col-muted);
-  --col-txt-titles: var(--col-accent);
-  --col-menucheckbox: var(--col-accent);
-  --col-txt-menudropdowns: var(--col-accent);
-  --col-bckg-menudropdowns: var(--col-muted);
-  --col-txt-menudropdownhover: var(--col-accent);
-  --col-bckg-menudropdownhover: var(--col-muted);
-  --background-primary: var(--col-base-background);
-  --background-primary-alt: black;
-  --background-secondary: var(--col-base-background);
-  --background-secondary-alt: var(--col-base-background);
-  --background-modifier-hover: var(--col-muted);
-  --background-modifier-active-hover: var(--col-muted);
-  --background-modifier-border: var(--col-muted-plus);
-  --background-modifier-border-hover: var(--col-accent);
-  --background-modifier-border-focus: var(--col-accent-plus);
-  --background-modifier-error-rgb: var(--col-accent);
-  --background-modifier-error: var(--col-muted-plus);
-  --background-modifier-error-hover: var(--col-accent);
-  --background-modifier-success-rgb: var(--col-accent-plus);
-  --background-modifier-success: var(--col-muted-plus);
-  --background-modifier-message: var(--col-base);
-  --background-modifier-form-field: var(--col-muted-plus);
-  --text-normal: var(--col-accent-plus);
-  --text-muted: var(--col-accent-plus);
-  --text-faint: var(--col-accent-plus);
-  --text-on-accent: var(--col-muted-plus);
-  --text-error: var(--col-important);
-  --text-success: var(--col-accent);
-  --text-selection: var(--col-text-selection);
-  --text-accent: var(--col-accent-plus);
-  --text-accent-hover: var(--col-important-plus);
-  --interactive-normal: var(--col-base);
-  --interactive-hover: var(--col-muted);
-  --interactive-accent-hsl: var(--col-accent);
-  --interactive-accent: var(--col-accent);
-  --interactive-accent-hover: var(--col-accent-plus);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -729,60 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --col-base-background: #d7ddd9;
-  --col-base: #64a055;
-  --col-accent: #437a41;
-  --col-accent-plus: #20542c;
-  --col-muted: #86c66c;
-  --col-muted-plus: #c9d3cb;
-  --col-important: #0457e5;
-  --col-important-muted: #3f8cff;
-  --col-important-plus: #011f64;
-  --col-safety: #acd580;
-  --col-danger: #86c66c;
-  --col-bckg-mainpanels: var(--col-muted-plus);
-  --col-bckg-filetreeheader: var(--col-base-background);
-  --col-txt-titlebars: #e5eae7;
-  --col-icons: var(--col-accent-plus);
-  --col-txt-selectedtitles: var(--col-accent-plus);
-  --col-bckg-selectedtitles: var(--col-muted);
-  --col-txt-titles: var(--col-accent);
-  --col-menucheckbox: var(--col-accent);
-  --col-txt-menudropdowns: var(--col-accent);
-  --col-bckg-menudropdowns: var(--col-muted);
-  --col-txt-menudropdownhover: var(--col-accent);
-  --col-bckg-menudropdownhover: var(--col-muted);
-  --background-primary: var(--col-base-background);
-  --background-primary-alt: black;
-  --background-secondary: var(--col-base-background);
-  --background-secondary-alt: var(--col-base-background);
-  --background-modifier-hover: var(--col-muted);
-  --background-modifier-active-hover: var(--col-muted);
-  --background-modifier-border: var(--col-muted-plus);
-  --background-modifier-border-hover: var(--col-accent);
-  --background-modifier-border-focus: var(--col-accent-plus);
-  --background-modifier-error-rgb: var(--col-accent);
-  --background-modifier-error: var(--col-muted-plus);
-  --background-modifier-error-hover: var(--col-accent);
-  --background-modifier-success-rgb: var(--col-accent-plus);
-  --background-modifier-success: var(--col-muted-plus);
-  --background-modifier-message: var(--col-base);
-  --background-modifier-form-field: var(--col-muted-plus);
-  --text-normal: var(--col-accent-plus);
-  --text-muted: var(--col-accent-plus);
-  --text-faint: var(--col-accent-plus);
-  --text-on-accent: var(--col-muted-plus);
-  --text-error: var(--col-important);
-  --text-success: var(--col-accent);
-  --text-selection: var(--col-text-selection);
-  --text-accent: var(--col-accent-plus);
-  --text-accent-hover: var(--col-important-plus);
-  --interactive-normal: var(--col-base);
-  --interactive-hover: var(--col-muted);
-  --interactive-accent-hsl: var(--col-accent);
-  --interactive-accent: var(--col-accent);
-  --interactive-accent-hover: var(--col-accent-plus);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,28 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --font-family-editor: Inconsolata, Monaco, Consolas, "Courier New", Courier;
-  --font-family-preview: Avenir, Avenir Next, sans-serif;
-  --forest-green-light: #759e93;
-  --forest-green-faded: #c3d5d0;
-  --forest-green-dark: #4a6860;
-  --mint-green: #9dd4cf;
-  --forest-green-half: rgb(117, 158, 147, 0.4);
-  --berry-red-strong: #c72e6e;
-  --berry-red-light: #ad3266;
-  --berry-red-faded: #ab687e;
-  --blue-gray-light: #7a859f;
-  --blue-gray: #546285;
-  --blue-gray-dark: #3b4252;
-  --blue-gray-darkest: #15181e;
-  --off-white: #f2f2f2;
-  --off-white-faded: rgb(242, 242, 242, 0.8);
-  --off-white-alt: #e6e6e6;
-  --off-white-dark: #cccccc;
-  --off-white-darker: #8c8c8c;
-  --orange-yellow: #f2bd77;
-  --orange-yellow-dark: #eea444;
 }
 
 body {
@@ -418,14 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --checkbox-radius: 50%;
-  --checkbox-top: 2px;
-  --checkbox-left: 0px;
-  --checkbox-margin: 0px 6px 0px -2em;
-  --checklist-done-decoration: line-through;
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-normal);
 }
 
 :root[saved-theme="dark"] {
@@ -483,69 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: #2e3440;
-  --background-primary-alt: #2a2c32;
-  --background-secondary: #3b4252;
-  --background-secondary-alt: #292c33;
-  --background-accent: #f8f8f2;
-  --background-header-one: var(--background-primary);
-  --background-header-two: var(--forest-green-dark);
-  --background-modal: rgba(0, 0, 0, 0.6);
-  --background-modifier-border: var(--forest-green-light);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --background-nav: var(--background-primary);
-  --background-nav-alt: var(--background-primary-alt);
-  --background-code: var(--background-secondary-alt);
-  --graph-background: var(--background-primary-alt);
-  --graph-links: rgba(157, 212, 207, 0.75);
-  --graph-dots: var(--off-white);
-  --text-accent: #f2bd77;
-  --text-accent-hover: #c72e6e;
-  --text-normal: #f8f8f2;
-  --text-muted: #f8f8f2;
-  --text-muted-real: #f8f8f2;
-  --text-faint: #759e93;
-  --text-highlight: #ad3266;
-  --text-highlight-bg: #d5548a60;
-  --text-error: #ab687e;
-  --text-error-hover: #ff79c6;
-  --text-selection: rgba(157, 212, 207, 0.75);
-  --text-status-bar: var(--off-white-dark);
-  --text-on-accent: #eddee3;
-  --text-nav: var(--forest-green-faded);
-  --interactive-normal: #ffffff;
-  --interactive-hover: #d47d7d;
-  --interactive-accent: #548a7b;
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #d47d7d;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --horizontal-line: #759e93;
-  --horizontal-line-element: #9fd4d6;
-  --menu-item-hover: var(--background-primary);
-  --calendar-days: var(--off-white-dark);
-  --calendar-days-hover: var(--off-white);
-  --checklist-done-color: var(--off-white-darker);
-  --active-header-border: var(--forest-green-light);
-  --active-header-buttons: var(--off-white);
-  --selected-item: var(--forest-green-light);
-  --text-title-h1: #c72e6e;
-  --text-title-h2: #ffffff;
-  --text-title-h3: #95bab0;
-  --text-title-h4: #759e93;
-  --text-title-h5: #548a7b;
-  --text-title-h6: #377362;
-  --inline-code: #759e93;
-  --code-block: #759e93;
-  --pre-code: #2e3440;
-  --blockquote-border: #ffb86c;
-  --vim-cursor: #ff5555;
-  --border-color: #2b2727;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -613,74 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--off-white);
-  --background-primary-faded: var(--off-white-faded);
-  --background-primary-alt: var(--off-white-alt);
-  --background-dark: var(--blue-gray-dark);
-  --background-header-one: var(--background-primary);
-  --background-header-two: var(--forest-green-faded);
-  --background-secondary: var(--off-white);
-  --background-secondary-real: var(--off-white-dark);
-  --background-secondary-alt: var(--forest-green-faded);
-  --background-accent: var(--forest-green-dark);
-  --background-modal: rgba(0, 0, 0, 0.3);
-  --background-modifier-border: var(--forest-green-light);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --background-nav: var(--background-primary);
-  --background-nav-alt: var(--background-primary-alt);
-  --background-code: var(--off-white-alt);
-  --graph-background: var(--background-primary);
-  --graph-links: rgba(117, 158, 147, 0.7);
-  --graph-dots: var(--forest-green-dark);
-  --text-accent: var(--orange-yellow-dark);
-  --text-accent-hover: var(--berry-red-strong);
-  --text-normal-alt: var(--blue-gray-dark);
-  --text-normal: var(--blue-gray-darkest);
-  --text-muted: var(--off-white-darker);
-  --text-muted-real: var(--off-white-dark);
-  --text-faint: var(--forest-green-light);
-  --text-highlight-bg: #f2bd7746;
-  --text-highlight: #ad3266;
-  --text-error: var(--berry-red-faded);
-  --text-error-hover: var(--berry-red-faded);
-  --text-selection: rgba(157, 212, 207, 0.5);
-  --text-status-bar: var(--forest-green-dark);
-  --text-on-accent: var(--off-white);
-  --text-nav: var(--forest-green-light);
-  --interactive-normal: var(--forest-green-light);
-  --interactive-hover: var(--orange-yellow-dark);
-  --interactive-accent: var(--forest-green-light);
-  --interactive-accent-rgb: rgba(117, 158, 147);
-  --interactive-accent-hover: var(--orange-yellow-dark);
-  --scrollbar-active-thumb-bg: rgba(194, 208, 204, 0.2);
-  --scrollbar-bg: rgba(194, 208, 204, 0.05);
-  --scrollbar-thumb-bg: rgba(126, 147, 157, 0.1);
-  --horizontal-line: var(--forest-green-faded);
-  --horizontal-line-element: var(--forest-green-dark);
-  --menu-item-hover: var(--off-white);
-  --calendar-days: var(--forest-green-dark);
-  --calendar-days-hover: var(--text-normal);
-  --checklist-done-color: var(--off-white-darker);
-  --checkbox-marker-color: var(--background-dark);
-  --active-header-border: var(--orange-yellow);
-  --active-header-buttons: var(--forest-green-dark);
-  --selected-item: var(--forest-green-light);
-  --text-title-h1: #c72e6e;
-  --text-title-h2: #548a7b;
-  --text-title-h3: #95bab0;
-  --text-title-h4: #759e93;
-  --text-title-h5: #548a7b;
-  --text-title-h6: #377362;
-  --inline-code: #c72e6e;
-  --code-block: #c72e6e;
-  --pre-code: var(--forest-green-faded);
-  --blockquote-border: var(--forest-green-dark);
-  --vim-cursor: var(--forest-green-dark);
-  --border-color: var(--forest-green-dark);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

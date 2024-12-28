@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,38 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-primary: #080808;
-  --background-secondary: #080808;
-  --text-normal: #f5f7fa;
-  --ribbon-background: var(--background-primary);
-  --font-text: "pixel_squareregular";
-  --code-background: #111112;
-  --code-normal: var(--text-normal);
-  --code-comment: #a4b9db;
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-red);
-  --code-operator: var(--color-cyan);
-  --code-property: var(--color-pink);
-  --code-punctuation: var(--text-muted);
-  --code-string: #4682e3;
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-  --color-accent: var(--interactive-accent);
-  --checkbox-color-hover: var(--text-accent-hover);
-  --text-selection: var(--text-accent-hover);
-  --text-accent: var(--text-accent-hover);
-  --selection-color: #f5f7fa;
-  --background-primary: #f5f7fa;
-  --background-secondary: #f5f7fa;
-  --text-normal: #080808;
-  --font-text: "pixel_squareregular";
-  --code-string: #4682e3;
-  --color-accent: var(--interactive-accent);
-  --checkbox-color-hover: var(--text-accent-hover);
-  --text-selection: var(--text-accent-hover);
-  --selection-color: #f5f7fa;
 }
 
 :root[saved-theme="dark"] {

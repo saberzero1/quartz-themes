@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,8 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --ion-l-p: 60;
 }
 
 body {
@@ -398,46 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --bloom-fct: 0.25;
-  --bloom-const: 0.1em;
-  --bloom: calc(var(--bloom-const) * var(--bloom-fct));
-  --ion-threshold: 80;
-  --base-d-h: 20;
-  --base-d-s: 0.5;
-  --base-d-l: 0.85;
-  --base-h: var(--base-d-h);
-  --base-s: calc(var(--base-d-s) * 100%);
-  --base-l-p: calc(var(--base-d-l) * 100);
-  --ion-h: var(--base-h);
-  --ion-s: var(--base-s);
-  --ion-l-p: var(--base-l-p);
-  --text-normal: var(--ion-color);
-  --color-red-h: 352;
-  --color-red-s: 80%;
-  --color-red-l-p: 55;
-  --color-green-h: 143;
-  --color-green-s: 91%;
-  --color-green-l-p: 37;
-  --color-orange-h: 29;
-  --color-orange-s: 100%;
-  --color-orange-l-p: 46;
-  --color-yellow-h: 46;
-  --color-yellow-s: 100%;
-  --color-yellow-l-p: 43;
-  --color-cyan-h: 179;
-  --color-cyan-s: 100%;
-  --color-cyan-l-p: 37;
-  --color-blue-h: 211;
-  --color-blue-s: 93%;
-  --color-blue-l-p: 44;
-  --color-purple-h: 254;
-  --color-purple-s: 82%;
-  --color-purple-l-p: 62;
-  --color-pink-h: 331;
-  --color-pink-s: 65%;
-  --color-pink-l-p: 52;
-  --code-base-l: 30;
 }
 
 :root[saved-theme="dark"] {
@@ -495,17 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --color-base-00: #000;
-  --color-base-10: #000;
-  --color-base-20: #000;
-  --color-base-25: #000;
-  --color-base-30: #000;
-  --color-base-50: #000;
-  --color-base-70: #000;
-  --color-base-100: #024;
-  --tab-divider-color: #000;
-  --background-modifier-border: transparent;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -573,17 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --color-base-00: #000;
-  --color-base-10: #000;
-  --color-base-20: #000;
-  --color-base-25: #000;
-  --color-base-30: #000;
-  --color-base-50: #000;
-  --color-base-70: #000;
-  --color-base-100: #024;
-  --tab-divider-color: #000;
-  --background-modifier-border: transparent;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

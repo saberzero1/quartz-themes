@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,32 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --space-new: #181d27;
-  --space-light: #242b3a;
-  --space-dark: #0f1218;
-  --space-old: #2b3242;
-  --space-old-dark: #212531;
-  --space-old-light: #3a4358;
-  --yellow: #ffd85e;
-  --yellow-faint: #ffe699;
-  --periwinkle: #beb7df;
-  --red: #db5461;
-  --grey: #c9cad9;
-  --brown: #806443;
-  --orange: #ff4f00;
-  --blue: #4c86a8;
-  --blue-faint: #6b9ab6;
-  --platinum: #d8d7df;
-  --platinum-faint: #b2b2b8;
-  --nav-item-weight-hover: bold;
-  --default-text-color: #d0d0d0;
-  --highlight: #fff;
-  --contrast-color: var(--highlight);
-  --bg-contrast-amount: 15%;
-  --fg-contrast-amount: 40%;
-  --medium-contrast-amount: 20%;
-  --active-contrast-amount: 10%;
 }
 
 body {
@@ -422,14 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: "Bai Jamjuree";
-  --h1-color: var(--text-title-h1);
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
-  --h4-color: var(--text-title-h4);
-  --h5-color: var(--text-title-h5);
-  --h6-color: var(--text-title-h6);
 }
 
 :root[saved-theme="dark"] {
@@ -487,34 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: var(--space-new);
-  --background-primary-alt: var(--space-new);
-  --background-secondary: var(--space-new);
-  --background-secondary-alt: var(--space-new);
-  --text-normal: var(--platinum);
-  --text-faint: var(--platinum-faint);
-  --text-title-h1: var(--periwinkle);
-  --text-title-h2: var(--yellow);
-  --text-title-h3: var(--orange);
-  --text-title-h4: var(--blue);
-  --text-title-h5: var(--brown);
-  --text-title-h6: var(--grey);
-  --text-link: var(--blue-faint);
-  --text-a: var(--blue);
-  --text-a-hover: var(--blue-faint);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --interactive-accent: var(--red);
-  --interactive-before: var(--space-light);
-  --pre-code: var(--space-dark);
-  --inline-code: var(--periwinkle);
-  --code-block: var(--periwinkle);
-  --vim-cursor: var(--blue-faint);
-  --text-highlight-bg: var(--red);
-  --text-accent: var(--yellow-faint);
-  --interactive-accent-rgb: var(--yellow-faint);
-  --text-selection: var(--red);
-  --background-modifier-border: var(--space-light);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -582,34 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--space-new);
-  --background-primary-alt: var(--space-new);
-  --background-secondary: var(--space-new);
-  --background-secondary-alt: var(--space-new);
-  --text-normal: var(--platinum);
-  --text-faint: var(--platinum-faint);
-  --text-title-h1: var(--periwinkle);
-  --text-title-h2: var(--yellow);
-  --text-title-h3: var(--orange);
-  --text-title-h4: var(--blue);
-  --text-title-h5: var(--brown);
-  --text-title-h6: var(--grey);
-  --text-link: var(--blue-faint);
-  --text-a: var(--blue);
-  --text-a-hover: var(--blue-faint);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --interactive-accent: var(--red);
-  --interactive-before: var(--space-light);
-  --pre-code: var(--space-dark);
-  --inline-code: var(--periwinkle);
-  --code-block: var(--periwinkle);
-  --vim-cursor: var(--blue-faint);
-  --text-highlight-bg: var(--red);
-  --text-accent: var(--yellow-faint);
-  --interactive-accent-rgb: var(--yellow-faint);
-  --text-selection: var(--red);
-  --background-modifier-border: var(--space-light);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

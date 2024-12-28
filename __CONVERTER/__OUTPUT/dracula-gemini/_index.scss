@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,21 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --color-dracula-background: #282a36;
-  --color-dracula-selection: #44475a;
-  --color-dracula-foreground: #f8f8f2;
-  --color-dracula-comment: #6272a4;
-  --color-dracula-cyan: #8be9fd;
-  --color-dracula-green: #50fa7b;
-  --color-dracula-orange: #ffb86c;
-  --color-dracula-pink: #ff79c6;
-  --color-dracula-purple: #bd93f9;
-  --color-dracula-red: #ff5555;
-  --color-dracula-yellow: #f1fa8c;
-  --color-dracula-yellow-ish: #f4f9bf;
-  --empty-line-height: 1em;
-  --header-hanging-margin: 30px;
 }
 
 body {
@@ -411,94 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 225;
-  --accent-s: 27%;
-  --accent-l: 51%;
-  --file-margins: var(--size-4-8) var(--size-4-12);
-  --color-base-00: var(--color-dracula-background);
-  --color-base-10: hsl(231, 15%, 22%);
-  --color-base-20: hsl(231, 15%, 24%);
-  --color-base-25: hsl(231, 15%, 27%);
-  --color-base-30: hsl(231, 15%, 30%);
-  --color-base-35: hsl(231, 15%, 33%);
-  --color-base-40: hsl(231, 15%, 40%);
-  --color-base-50: hsl(231, 15%, 50%);
-  --color-base-60: hsl(231, 15%, 65%);
-  --color-base-70: hsl(231, 15%, 84%);
-  --color-base-100: var(--color-dracula-foreground);
-  --text-selection: var(--color-dracula-selection);
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-faint);
-  --color-base-00: hsl(231, 15%, 12%);
-  --color-base-10: hsl(231, 15%, 17%);
-  --color-base-20: hsl(231, 15%, 20%);
-  --blockquote-border-thickness: 4px;
-  --blockquote-border-color: var(--color-dracula-yellow);
-  --blockquote-color: var(--color-dracula-yellow-ish);
-  --bold-color: var(--color-dracula-orange);
-  --italic-color: var(--color-dracula-yellow);
-  --code-size: var(--font-small);
-  --code-normal: var(--text-muted);
-  --code-comment: var(--color-dracula-comment);
-  --code-function: var(--color-dracula-green);
-  --code-important: var(--color-dracula-red);
-  --code-keyword: var(--color-dracula-pink);
-  --code-operator: var(--color-dracula-foreground);
-  --code-property: var(--color-dracula-orange);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-dracula-yellow);
-  --code-tag: var(--color-dracula-red);
-  --code-value: var(--color-dracula-purple);
-  --tag-size: var(--font-text-size);
-  --tag-color: var(--color-dracula-pink);
-  --tag-color-hover: var(--color-dracula-pink);
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.4);
-  --tag-padding-x: 0.25em;
-  --tag-padding-y: 0.125em;
-  --tag-radius: 0.1875em;
-  --h1-color: var(--color-dracula-pink);
-  --h2-color: var(--color-dracula-purple);
-  --h3-color: var(--color-dracula-cyan);
-  --h4-color: var(--color-dracula-green);
-  --h5-color: var(--color-dracula-yellow);
-  --h6-color: var(--color-dracula-orange);
-  --h1-size: 2em;
-  --h2-size: 1.8em;
-  --h3-size: 1.6em;
-  --h4-size: 1.4em;
-  --h5-size: 1.2em;
-  --h6-size: 1em;
-  --h1-weight: 600;
-  --h2-weight: 600;
-  --h3-weight: 600;
-  --h4-weight: 600;
-  --h5-weight: 600;
-  --h6-weight: 600;
-  --h1-line-height: 1.3125;
-  --h2-line-height: 1.2847;
-  --h3-line-height: 1.2891;
-  --h4-line-height: 1.2946;
-  --h5-line-height: 1.3021;
-  --h6-line-height: 1.3125;
-  --heading-spacing: 0;
-  --link-color: var(--color-dracula-pink);
-  --link-color-hover: var(--color-dracula-purple);
-  --link-external-color: var(--color-dracula-pink);
-  --link-external-color-hover: var(--color-dracula-purple);
-  --link-unresolved-color: var(--color-dracula-pink);
-  --link-unresolved-opacity: 0.5;
-  --link-unresolved-decoration-color: var(--color-dracula-pink);
-  --list-spacing: 0;
-  --list-indent: 1.172em;
-  --list-item-gap: 0.375em;
-  --list-ul-margin: 0.272em;
-  --list-ul-bullet-width: 0.75em;
-  --list-ol-margin: 0.125em;
-  --list-ol-bullet-width: 1.75em;
-  --list-task-checkbox-width: 2.0625em;
-  --table-header-background: var(--color-base-20);
 }
 
 :root[saved-theme="dark"] {

@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -396,30 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --interactive-normal: hsl(var(--accent-h), 100%, 90%);
-  --interactive-accent: var(--colorPrimary);
-  --interactive-accent-hover: var(--colorPrimary);
-  --background-primary: var(--colorBackgroundPrimary);
-  --background-secondary: var(--colorBackgroundSecondary);
-  --background-modifier-border: transparent;
-  --titlebar-background-focused: var(--colorBackgroundSecondary);
-  --tab-background-active: var(--colorPrimaryContainerVariant);
-  --nav-item-background-hover: var(--colorPrimaryContainerVariantHover);
-  --nav-item-background-active: var(--colorPrimaryContainerVariant);
-  --text-highlight-bg: var(--colorPrimaryContainerVariant);
-  --code-background: var(--colorPrimaryContainer);
-  --code-normal: var(--colorPrimary);
-  --link-external-color: var(--colorPrimary);
-  --link-external-color-hover: var(--colorPrimary);
-  --tag-color: var(--colorPrimary);
-  --tag-background: var(--colorPrimaryContainerVariant);
-  --tag-background-hover: var(--colorPrimaryContainerVariant);
-  --button-radius: 100px;
-  --radius-s: 100px;
-  --toggle-thumb-color: var(--colorOnPrimary);
-  --text-on-accent: var(--colorOnPrimary);
-  --text-on-accent-inverted: var(--colorOnPrimary);
 }
 
 :root[saved-theme="dark"] {
@@ -477,15 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --colorPrimary: hsl(var(--accent-h), 100%, 80%);
-  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 10%);
-  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 20%);
-  --colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 10%);
-  --colorOnPrimary: var(--colorBackgroundSecondary);
-  --colorBackgroundPrimary: hsl(var(--accent-h), 20%, 7%);
-  --colorBackgroundSecondary: hsl(var(--accent-h), 30%, 12%);
-  --nav-item-color: white;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -553,15 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --colorPrimary: hsl(var(--accent-h), 100%, 31%);
-  --colorPrimaryContainer: hsl(var(--accent-h), 100%, 93%);
-  --colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 85%);
-  --colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 91%);
-  --colorOnPrimary: white;
-  --colorBackgroundPrimary: hsl(var(--accent-h), 100%, 97%);
-  --colorBackgroundSecondary: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 2%);
-  --nav-item-color: black;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

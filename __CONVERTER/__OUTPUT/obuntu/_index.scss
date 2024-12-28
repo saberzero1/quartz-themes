@@ -3,21 +3,22 @@
 @use "sass:string";
 @use "sass:list";
 @use "sass:color";
-@import "fonts";
+@use "fonts";
 
-@import "./overrides/_index.scss";
+@use "overrides";
 
 /* Get an option from a set. */
 @function get($collection, $value, $sub: false) {
-  @if $sub != false {
-    @return map-get($collection, $sub, $value);
+  @if $sub {
+    @return map-get(#{$collection}, #{$value});
+  } @else {
+    @return map-get(#{$collection}, #{$sub}, #{$value});
   }
-  @return map-get($collection, $value);
 }
 
 /* Color converter*/
 @function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, $color, #0000 calc(100% - $opacity));
+  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
 }
 
 /* Callouts */
@@ -338,9 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
-  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
 
 body {
@@ -399,8 +397,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: "Fira Code", "Source Code Pro", monospace;
 }
 
 :root[saved-theme="dark"] {
@@ -458,39 +454,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --background-primary: #343434;
-  --background-primary-alt: #2c2c2c;
-  --background-secondary: #2c2c2c;
-  --background-secondary-alt: #2c2c2c;
-  --background-modifier-border: #303030;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
-  --background-modifier-form-field: var(--background-primary);
-  --text-accent: #df4a16;
-  --text-accent-hover: #df7a16;
-  --text-normal: #dcddde;
-  --text-muted: #999;
-  --text-faint: #666;
-  --text-error: #ff3333;
-  --text-error-hover: #990000;
-  --text-matched: #dcddde;
-  --text-on-accent: #dcddde;
-  --text-selection: rgba(223, 74, 22, 0.8);
-  --text-highlight-bg: #df4a16;
-  --interactive-normal: var(--background-primary);
-  --interactive-hover: #303030;
-  --interactive-accent: #df4a16;
-  --interactive-accent-rgb: #df7a16;
-  --interactive-accent-hover: #df7a16;
-  --workspace-leaf-resize: #494949;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-  --accent-strong: #ec0d0d;
-  --accent-mild: #e6b64f;
-  --bw: #ffffff;
-  --lines-identation: #535353;
-  --tooltip-bg: rgba(223, 74, 22, 0.9);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -558,32 +521,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #fff;
-  --background-primary-alt: #dedede;
-  --background-secondary: #dedede;
-  --background-secondary-alt: #dedede;
-  --background-modifier-border: #f7f7f7;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
-  --text-accent: #df4a16;
-  --text-accent-hover: #df7a16;
-  --text-normal: #03050b;
-  --text-muted: #555;
-  --text-error: #ff3333;
-  --text-error-hover: #990000;
-  --text-matched: #dcddde;
-  --text-on-accent: #dcddde;
-  --text-selection: rgba(223, 74, 22, 0.8);
-  --text-highlight-bg: #df4a16;
-  --interactive-accent: #df4a16;
-  --interactive-accent-rgb: #df7a16;
-  --interactive-accent-hover: #df7a16;
-  --workspace-leaf-resize: #c1c1c1;
-  --accent-strong: #ec0d0d;
-  --accent-mild: #e6b64f;
-  --bw: #03050b;
-  --lines-identation: #dad8d8;
-  --tooltip-bg: rgba(223, 74, 22, 0.9);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
