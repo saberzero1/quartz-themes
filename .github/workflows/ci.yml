@@ -14,7 +14,8 @@ jobs:
     if: ${{ github.repository == 'saberzero1/quartz-themes' }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        # os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
