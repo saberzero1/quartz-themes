@@ -44,8 +44,6 @@ jobs:
       - name: Set Theme
         working-directory: ./runner_content/quartz-themes
         run: npm run theme ${{ matrix.value }}
-      - name: Move to Quartz
-        run: cd ../quartz
       - name: Setup Quartz
         working-directory: ./runner_content/quartz
         run: npm install
@@ -54,7 +52,7 @@ jobs:
         run: npx quartz build -d docs
       - name: Set light/dark mode
         working-directory: ./runner_content/quartz/public
-        run: sed -i 's/<html lang="en">/<html lang="en" saved-theme="${{matrix.color-scheme}}">/g' index.html
+        run: sed -ir 's/<html/<html saved-theme="${{matrix.color-scheme}}"/' index.html
       - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
         with:
