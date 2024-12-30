@@ -51,16 +51,31 @@ jobs:
       - name: Build Quartz
         working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
-      - name: Generate preview image
+      - name: Generate preview image (light mode)
         uses: cloudposse-github-actions/screenshot@main
         with:
           url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "previews/${{matrix.value}}.png"
+          output: "previews/${{matrix.value}}-light.png"
+          css: |
+            :root {
+              color-scheme: light !important;
+            }
+          viewportWidth: 1920
+          viewportHeight: 1080
+      - name: Generate preview image (dark mode)
+        uses: cloudposse-github-actions/screenshot@main
+        with:
+          url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
+          output: "previews/${{matrix.value}}-dark.png"
+          css: |
+            :root {
+              color-scheme: dark !important;
+            }
           viewportWidth: 1920
           viewportHeight: 1080
       - name: Upload image
         uses: actions/upload-artifact@v4
         with:
           name: ${{matrix.value}}
-          path: "${{github.workspace}}/previews/${{matrix.value}}.png"
+          path: "${{github.workspace}}/previews/*.png"
           overwrite: true
