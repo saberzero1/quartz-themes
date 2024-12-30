@@ -21,21 +21,11 @@ jobs:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
     steps:
       - name: Clone Quartz
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        uses: actions/checkout@v4
         with:
-          depth: 1
-          branch: "v4"
-          owner: "jackyzha0"
-          repository: "quartz"
-      - name: Clone Quartz Themes
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
-        with:
-          depth: 1
-          branch: "master"
-          owner: "saberzero1"
-          repository: "quartz-themes"
-      - name: Move to Quartz Themes
-        run: cd quartz-themes
+          fetch-depth: 1
+          repository: "jackyzha0/quartz"
+          path: quartz
       - uses: actions/setup-node@v4
         with:
           node-version: 22
