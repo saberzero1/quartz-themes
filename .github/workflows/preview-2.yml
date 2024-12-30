@@ -9,9 +9,8 @@ jobs:
       matrix: ${{ steps.matrix.outputs.value }}
     steps:
       - id: matrix
-        #  echo "value=[\"obsidian-boom\", \"obsidian-gruvbox\", \"obsidian-nord\", \"obsidian_ia\", \"obsidianite\", \"obsidianotion\", \"obuntu\", \"oistnb\", \"oldsidian-purple\", \"oliviers-theme\", \"ono-sendai\", \"oreo\", \"origin\", \"pale\", \"panic-mode\", \"penumbra\", \"perso\", \"phoenix\", \"pine-forest-berry\", \"pink-topaz\", \"pisum\", \"pln\", \"poimandres\", \"polka\", \"primary\", \"prime\", \"prism\", \"proper-dark\", \"protocolblue\", \"prussian-blue\", \"pure\", \"purple-aurora\", \"purple-owl\", \"pxld\", \"qlean\", \"red-graphite\", \"refined-default\", \"reshi\", \"retronotes\", \"reverie\", \"rezin\", \"rift\", \"rmaki\", \"rose-pine-moon\", \"rose-pine\", \"rose-red\", \"royal-velvet\", \"salem\", \"sanctum-reborn\", \"sanctum\", \"sandover\", \"sandstorm\", \"sanguine\", \"sea-glass\", \"seamless-view\", \"serika\", \"shade-sanctuary\", \"shiba-inu\", \"shimmering-focus\", \"simple\", \"simplicity\", \"sodalite\", \"solarized\", \"solitude\", \"soloing\", \"soothe\", \"space\", \"sparkling-day\", \"sparkling-night\", \"sparkling-wisdom\", \"spectrum-blue\", \"spectrum\", \"spring\", \"sqdthone\", \"strict\", \"subtlegold\", \"suddha\", \"synthwave-84\", \"synthwave\", \"terminal\", \"theme-that-shall-not-be-named\", \"things\", \"tiniri\", \"tokyo-night-storm\", \"tokyo-night\", \"tomorrow-night-bright\", \"tomorrow\", \"toms-theme\", \"trace-labs\", \"transient\", \"typewriter\", \"typomagical\", \"typora-vue\", \"ukiyo\", \"ultra-lobster\", \"underwater\", \"ursa\", \"vanilla-amoled-color\", \"vanilla-amoled\", \"vanilla-palettes\", \"vauxhall\", \"velvet-moon\", \"venom\", \"vicious\", \"violet-evening\", \"virgo\", \"w95\", \"wasp\", \"wilcoxone\", \"willemstad\", \"wiselight\", \"wombat\", \"wy-console\", \"wyrd\", \"yue\", \"zario\", \"zenburn\", \"🔔-chime\"]" >> $GITHUB_OUTPUT
         run: |
-          echo "value=[\"obsidian-boom\"]" >> $GITHUB_OUTPUT
+          echo "value=[\"ebullientworks\", \"eldritch\", \"elegance\", \"encore\", \"ethereon\", \"everblush\", \"everforest-enchanted\", \"everforest\", \"evergreen-shadow\", \"evilred\", \"faded\", \"feather\", \"firefly\", \"flexoki\", \"focus\", \"fusion\", \"garden-gnome-adwaita-gtk\", \"gdct-dark\", \"gdct\", \"github-theme\", \"githubdhc\", \"gitsidian\", \"golden-topaz\", \"green-nightmare\", \"gummy-revived\", \"halcyon\", \"heboric\", \"hipstersmoothie\", \"hulk\", \"ia-writer\", \"ib-writer\", \"iceberg\", \"improved-potato\", \"ion\", \"its-theme\", \"jotter\", \"kakano\", \"kanagawa\", \"kiwi-mono\", \"kurokula\", \"latex\", \"lavender-mist\", \"lemons-theme\", \"light-bright\", \"listive\", \"lorens\", \"lumines\", \"lyt-mode\", \"mado-11\", \"mado-miniflow\", \"magicuser\", \"mammoth\", \"maple\", \"material-flat\", \"material-gruvbox\", \"material-ocean\", \"micro-mike\", \"midnight-fjord\", \"midnight\", \"minimal-edge\", \"minimal-resources\", \"minimal\", \"mint-breeze\", \"mistymauve\", \"mono-black-monochrome-charcoal\", \"monochroyou\", \"monokai\", \"moonlight\", \"muted-blue\", \"nebula\", \"neo\", \"neon-synthwave\", \"neovim\", \"neuborder\", \"nier\", \"nightfox\", \"nightingale\", \"nobb\", \"nordic\", \"northern-sky\", \"notation-2\", \"notation\", \"notswift\", \"novadust\"]" >> $GITHUB_OUTPUT
       - run: |
           echo "${{ steps.matrix.outputs.value }}"
   generate_preview:
@@ -57,18 +56,14 @@ jobs:
         uses: saberzero1/github-actions-screenshot@main
         with:
           url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "${{github.workspace}}/runner_content/quartz-themes/previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
+          output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
           viewportWidth: 1920
           viewportHeight: 1080
           waitForTimeout: 2500
           theme: "${{matrix.color-scheme}}"
-      - name: Push preview image
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Upload image
+        uses: actions/upload-artifact@v4
         with:
-          repository: "${{github.workspace}}/runner_content/quartz-themes/"
-          file_pattern: previews/*.png
-          skip_fetch: true
-          commit_message: "[ci] preview: generated ${{matrix.value}} (${{matrix.color-scheme}})"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          name: ${{matrix.value}}-${{matrix.color-scheme}}
+          path: "${{github.workspace}}/previews/*.png"
+          overwrite: true
