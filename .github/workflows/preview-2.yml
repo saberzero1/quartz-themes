@@ -57,7 +57,7 @@ jobs:
         uses: saberzero1/github-actions-screenshot@main
         with:
           url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
+          output: "${{github.workspace}}/runner_content/quartz-themes/previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
           viewportWidth: 1920
           viewportHeight: 1080
           waitForTimeout: 2500
