@@ -60,6 +60,7 @@ jobs:
           viewportWidth: 1920
           viewportHeight: 1080
           waitForTimeout: 2500
+          deviceScaleFactor: 1
           theme: "${{matrix.color-scheme}}"
       - name: Upload image
         uses: actions/upload-artifact@v4
