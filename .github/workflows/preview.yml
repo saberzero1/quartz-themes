@@ -57,7 +57,7 @@ jobs:
           output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
           css: |
             :root {
-              color-scheme: ${{matrix-color-scheme}} !important;
+              color-scheme: ${{matrix.color-scheme}} !important;
             }
           viewportWidth: 1920
           viewportHeight: 1080
