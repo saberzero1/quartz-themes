@@ -65,6 +65,7 @@ jobs:
       - name: Push preview image
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          repository: "${{github.workspace}}/runner_content/quartz-themes/"
           file_pattern: previews/*.png
           skip_fetch: true
           commit_message: "[ci] preview: generated ${{matrix.value}} (${{matrix.color-scheme}})"
