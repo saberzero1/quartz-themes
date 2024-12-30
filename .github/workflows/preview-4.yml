@@ -1,0 +1,69 @@
+name: Generate preview images
+on:
+  workflow_dispatch:
+
+jobs:
+  target_list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.value }}
+    steps:
+      - id: matrix
+        run: |
+          echo "value=[\"salem\", \"sanctum-reborn\", \"sanctum\", \"sandover\", \"sandstorm\", \"sanguine\", \"sea-glass\", \"seamless-view\", \"serika\", \"shade-sanctuary\", \"shiba-inu\", \"shimmering-focus\", \"simple\", \"simplicity\", \"sodalite\", \"solarized\", \"solitude\", \"soloing\", \"soothe\", \"space\", \"sparkling-day\", \"sparkling-night\", \"sparkling-wisdom\", \"spectrum-blue\", \"spectrum\", \"spring\", \"sqdthone\", \"strict\", \"subtlegold\", \"suddha\", \"synthwave-84\", \"synthwave\", \"terminal\", \"theme-that-shall-not-be-named\", \"things\", \"tiniri\", \"tokyo-night-storm\", \"tokyo-night\", \"tomorrow-night-bright\", \"tomorrow\", \"toms-theme\", \"trace-labs\", \"transient\", \"typewriter\", \"typomagical\", \"typora-vue\", \"ukiyo\", \"ultra-lobster\", \"underwater\", \"ursa\", \"vanilla-amoled-color\", \"vanilla-amoled\", \"vanilla-palettes\", \"vauxhall\", \"velvet-moon\", \"venom\", \"vicious\", \"violet-evening\", \"virgo\", \"w95\", \"wasp\", \"wilcoxone\", \"willemstad\", \"wiselight\", \"wombat\", \"wy-console\", \"wyrd\", \"yue\", \"zario\", \"zenburn\", \"🔔-chime\"]" >> $GITHUB_OUTPUT
+      - run: |
+          echo "${{ steps.matrix.outputs.value }}"
+  generate_preview:
+    needs: [target_list]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        value: ${{fromJSON(needs.target_list.outputs.matrix)}}
+        color-scheme: [light, dark]
+    steps:
+      - name: Setup Directory
+        run: mkdir runner_content
+      - name: Clone Quartz Themes
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: runner_content/quartz-themes
+      - name: Clone Quartz
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          repository: "jackyzha0/quartz"
+          path: runner_content/quartz
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Setup Quartz Themes
+        working-directory: ./runner_content/quartz-themes
+        run: npm install
+      - name: Set Theme
+        working-directory: ./runner_content/quartz-themes
+        run: npm run theme ${{ matrix.value }}
+      - name: Setup Quartz
+        working-directory: ./runner_content/quartz
+        run: npm install
+      - name: Build Quartz
+        working-directory: ./runner_content/quartz
+        run: npx quartz build -d docs
+      - name: Set light/dark mode
+        working-directory: ./runner_content/quartz/public
+        run: sed -ir 's/<html/<html saved-theme="${{matrix.color-scheme}}"/' index.html
+      - name: Generate preview image
+        uses: saberzero1/github-actions-screenshot@main
+        with:
+          url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
+          output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
+          viewportWidth: 1920
+          viewportHeight: 1080
+          waitForTimeout: 2500
+          theme: "${{matrix.color-scheme}}"
+      - name: Upload image
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{matrix.value}}-${{matrix.color-scheme}}
+          path: "${{github.workspace}}/previews/*.png"
+          overwrite: true
