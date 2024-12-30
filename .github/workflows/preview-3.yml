@@ -73,14 +73,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download previews' artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          path: ${{github.workspace}}/downloaded_artifacts
+          path: downloaded_artifacts
       - name: Place previews' artifacts
-        run: rsync -av ${{github.workspace}}/downloaded_artifacts/* ${{github.workspace}}/previews_output/
+        run: rsync -av ${{github.workspace}}/downloaded_artifacts/*/* ${{github.workspace}}/previews_output
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: preview-images-part-3
-          path: ${{github.workspace}}/previews_output/*
+          path: "${{github.workspace}}/previews_output/*"
           overwrite: true
