@@ -35,23 +35,23 @@ jobs:
           owner: "saberzero1"
           repository: "quartz-themes"
       - name: Move to Quartz Themes
-        run: |
-          cd quartz-themes
+        run: cd quartz-themes
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Setup Quartz Themes
-        run: |
-          npm ci
+        run: npm ci
       - name: Set Theme
-        run: |
-          npm run theme ${{ matrix.value }}
+        run: npm run theme ${{ matrix.value }}
       - name: Move to Quartz
-        run: |
-          cd ../quartz
+        run: cd ../quartz
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Setup Quartz
-        run: |
-          npm ci
+        run: npm ci
       - name: Build Quartz
-        run: |
-          npx quartz build -d docs
+        run: npx quartz build -d docs
       - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
         with:
