@@ -64,6 +64,7 @@ jobs:
             }
           viewportWidth: 1920
           viewportHeight: 1080
+          waitForTimeout: 2500
       - name: Upload image
         uses: actions/upload-artifact@v4
         with:
