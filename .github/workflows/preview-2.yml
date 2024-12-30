@@ -54,7 +54,7 @@ jobs:
       - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
         with:
-          url: "file://$(dirname $(realpath $0))/public/index.html"
+          url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
           output: "previews/${{matrix.value}}.png"
           viewportWidth: 1920
           viewportHeight: 1080
@@ -62,5 +62,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{matrix.value}}
-          path: "$(dirname $(realpath $0))/previews/${{matrix.value}}.png"
+          path: "${{github.workspace}}/previews/${{matrix.value}}.png"
           overwrite: true
