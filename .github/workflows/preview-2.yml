@@ -1,4 +1,4 @@
-name: Generate preview images (A-D)
+name: Generate preview images (E-N)
 on:
   workflow_dispatch:
 
@@ -10,7 +10,7 @@ jobs:
     steps:
       - id: matrix
         run: |
-          echo "value=[\"80s-neon\", \"abate\", \"abecedarium\", \"absolutegruv\", \"abyssal\", \"adrenaline\", \"adwaita\", \"agate\", \"al-dente\", \"allium\", \"anuppuccin\", \"apatheia\", \"apex\", \"arcane\", \"atom\", \"atomus\", \"aura-dark\", \"aura\", \"aurora-twilight\", \"aurora\", \"autotape\", \"ayu-light-mirage\", \"ayu-mirage\", \"base2tone\", \"behave-dark\", \"big-bold\", \"black\", \"blackbird\", \"blossom\", \"blue-topaz\", \"bolt\", \"border\", \"bossidian\", \"brainhack\", \"brutalism\", \"buena-vista\", \"carbon\", \"cardstock\", \"catppuccin\", \"celestial-night\", \"charcoal\", \"chiaroscuroflow\", \"christmas\", \"cobalt-peacock\", \"colored-candy\", \"comfort-color-dark\", \"comfort-dark\", \"comfort-smooth\", \"comfort\", \"covert\", \"creature\", \"creme-brulee\", \"cyber-glow\", \"cybertron-shifted\", \"cybertron\", \"dark-castle\", \"dark-clarity\", \"dark-graphite-pie\", \"dark-graphite\", \"dark-moss\", \"darkember\", \"darkyan\", \"dawn\", \"dayspring\", \"deeper-work\", \"default\", \"dekurai\", \"discordian\", \"dracula-for-obsidian\", \"dracula-gemini\", \"dracula-lyt\", \"dracula-official\", \"dracula-plus\", \"dracula-slim\", \"dune\", \"dunite\", \"dynamic-color\"]" >> $GITHUB_OUTPUT
+          echo "value=[\"ebullientworks\", \"eldritch\", \"elegance\", \"encore\", \"ethereon\", \"everblush\", \"everforest-enchanted\", \"everforest\", \"evergreen-shadow\", \"evilred\", \"faded\", \"feather\", \"firefly\", \"flexoki\", \"focus\", \"fusion\", \"garden-gnome-adwaita-gtk\", \"gdct-dark\", \"gdct\", \"github-theme\", \"githubdhc\", \"gitsidian\", \"golden-topaz\", \"green-nightmare\", \"gummy-revived\", \"halcyon\", \"heboric\", \"hipstersmoothie\", \"hulk\", \"ia-writer\", \"ib-writer\", \"iceberg\", \"improved-potato\", \"ion\", \"its-theme\", \"jotter\", \"kakano\", \"kanagawa\", \"kiwi-mono\", \"kurokula\", \"latex\", \"lavender-mist\", \"lemons-theme\", \"light-bright\", \"listive\", \"lorens\", \"lumines\", \"lyt-mode\", \"mado-11\", \"mado-miniflow\", \"magicuser\", \"mammoth\", \"maple\", \"material-flat\", \"material-gruvbox\", \"material-ocean\", \"micro-mike\", \"midnight-fjord\", \"midnight\", \"minimal-edge\", \"minimal-resources\", \"minimal\", \"mint-breeze\", \"mistymauve\", \"mono-black-monochrome-charcoal\", \"monochroyou\", \"monokai\", \"moonlight\", \"muted-blue\", \"nebula\", \"neo\", \"neon-synthwave\", \"neovim\", \"neuborder\", \"nier\", \"nightfox\", \"nightingale\", \"nobb\", \"nordic\", \"northern-sky\", \"notation-2\", \"notation\", \"notswift\", \"novadust\"]" >> $GITHUB_OUTPUT
       - run: |
           echo "${{ steps.matrix.outputs.value }}"
   generate_preview:
@@ -81,6 +81,6 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: preview-images-part-1
+          name: preview-images-part-2
           path: ${{github.workspace}}/previews_output/*
           overwrite: true
