@@ -9,8 +9,9 @@ jobs:
       matrix: ${{ steps.matrix.outputs.value }}
     steps:
       - id: matrix
+        #  echo "value=[\"obsidian-boom\", \"obsidian-gruvbox\", \"obsidian-nord\", \"obsidian_ia\", \"obsidianite\", \"obsidianotion\", \"obuntu\", \"oistnb\", \"oldsidian-purple\", \"oliviers-theme\", \"ono-sendai\", \"oreo\", \"origin\", \"pale\", \"panic-mode\", \"penumbra\", \"perso\", \"phoenix\", \"pine-forest-berry\", \"pink-topaz\", \"pisum\", \"pln\", \"poimandres\", \"polka\", \"primary\", \"prime\", \"prism\", \"proper-dark\", \"protocolblue\", \"prussian-blue\", \"pure\", \"purple-aurora\", \"purple-owl\", \"pxld\", \"qlean\", \"red-graphite\", \"refined-default\", \"reshi\", \"retronotes\", \"reverie\", \"rezin\", \"rift\", \"rmaki\", \"rose-pine-moon\", \"rose-pine\", \"rose-red\", \"royal-velvet\", \"salem\", \"sanctum-reborn\", \"sanctum\", \"sandover\", \"sandstorm\", \"sanguine\", \"sea-glass\", \"seamless-view\", \"serika\", \"shade-sanctuary\", \"shiba-inu\", \"shimmering-focus\", \"simple\", \"simplicity\", \"sodalite\", \"solarized\", \"solitude\", \"soloing\", \"soothe\", \"space\", \"sparkling-day\", \"sparkling-night\", \"sparkling-wisdom\", \"spectrum-blue\", \"spectrum\", \"spring\", \"sqdthone\", \"strict\", \"subtlegold\", \"suddha\", \"synthwave-84\", \"synthwave\", \"terminal\", \"theme-that-shall-not-be-named\", \"things\", \"tiniri\", \"tokyo-night-storm\", \"tokyo-night\", \"tomorrow-night-bright\", \"tomorrow\", \"toms-theme\", \"trace-labs\", \"transient\", \"typewriter\", \"typomagical\", \"typora-vue\", \"ukiyo\", \"ultra-lobster\", \"underwater\", \"ursa\", \"vanilla-amoled-color\", \"vanilla-amoled\", \"vanilla-palettes\", \"vauxhall\", \"velvet-moon\", \"venom\", \"vicious\", \"violet-evening\", \"virgo\", \"w95\", \"wasp\", \"wilcoxone\", \"willemstad\", \"wiselight\", \"wombat\", \"wy-console\", \"wyrd\", \"yue\", \"zario\", \"zenburn\", \"🔔-chime\"]" >> $GITHUB_OUTPUT
         run: |
-          echo "value=[\"obsidian-boom\", \"obsidian-gruvbox\", \"obsidian-nord\", \"obsidian_ia\", \"obsidianite\", \"obsidianotion\", \"obuntu\", \"oistnb\", \"oldsidian-purple\", \"oliviers-theme\", \"ono-sendai\", \"oreo\", \"origin\", \"pale\", \"panic-mode\", \"penumbra\", \"perso\", \"phoenix\", \"pine-forest-berry\", \"pink-topaz\", \"pisum\", \"pln\", \"poimandres\", \"polka\", \"primary\", \"prime\", \"prism\", \"proper-dark\", \"protocolblue\", \"prussian-blue\", \"pure\", \"purple-aurora\", \"purple-owl\", \"pxld\", \"qlean\", \"red-graphite\", \"refined-default\", \"reshi\", \"retronotes\", \"reverie\", \"rezin\", \"rift\", \"rmaki\", \"rose-pine-moon\", \"rose-pine\", \"rose-red\", \"royal-velvet\", \"salem\", \"sanctum-reborn\", \"sanctum\", \"sandover\", \"sandstorm\", \"sanguine\", \"sea-glass\", \"seamless-view\", \"serika\", \"shade-sanctuary\", \"shiba-inu\", \"shimmering-focus\", \"simple\", \"simplicity\", \"sodalite\", \"solarized\", \"solitude\", \"soloing\", \"soothe\", \"space\", \"sparkling-day\", \"sparkling-night\", \"sparkling-wisdom\", \"spectrum-blue\", \"spectrum\", \"spring\", \"sqdthone\", \"strict\", \"subtlegold\", \"suddha\", \"synthwave-84\", \"synthwave\", \"terminal\", \"theme-that-shall-not-be-named\", \"things\", \"tiniri\", \"tokyo-night-storm\", \"tokyo-night\", \"tomorrow-night-bright\", \"tomorrow\", \"toms-theme\", \"trace-labs\", \"transient\", \"typewriter\", \"typomagical\", \"typora-vue\", \"ukiyo\", \"ultra-lobster\", \"underwater\", \"ursa\", \"vanilla-amoled-color\", \"vanilla-amoled\", \"vanilla-palettes\", \"vauxhall\", \"velvet-moon\", \"venom\", \"vicious\", \"violet-evening\", \"virgo\", \"w95\", \"wasp\", \"wilcoxone\", \"willemstad\", \"wiselight\", \"wombat\", \"wy-console\", \"wyrd\", \"yue\", \"zario\", \"zenburn\", \"🔔-chime\"]" >> $GITHUB_OUTPUT
+          echo "value=[\"obsidian-boom\"]" >> $GITHUB_OUTPUT
       - run: |
           echo "${{ steps.matrix.outputs.value }}"
   generate_preview:
@@ -20,14 +21,21 @@ jobs:
       matrix:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
     steps:
+      - name: Setup Directory
+        run: mkdir runner_content
       - name: Clone Quartz Themes
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: runner_content/quartz-themes
       - name: Clone Quartz
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
           repository: "jackyzha0/quartz"
-          path: quartz
+          path: runner_content/quartz
+      - name: Move to Quartz Themes
+        run: cd runner_content/quartz-themes
       - uses: actions/setup-node@v4
         with:
           node-version: 22

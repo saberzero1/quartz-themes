@@ -9,8 +9,9 @@ jobs:
       matrix: ${{ steps.matrix.outputs.value }}
     steps:
       - id: matrix
+        #  echo "value=[\"80s-neon\", \"abate\", \"abecedarium\", \"absolutegruv\", \"abyssal\", \"adrenaline\", \"adwaita\", \"agate\", \"al-dente\", \"allium\", \"anuppuccin\", \"apatheia\", \"apex\", \"arcane\", \"atom\", \"atomus\", \"aura-dark\", \"aura\", \"aurora-twilight\", \"aurora\", \"autotape\", \"ayu-light-mirage\", \"ayu-mirage\", \"base2tone\", \"behave-dark\", \"big-bold\", \"black\", \"blackbird\", \"blossom\", \"blue-topaz\", \"bolt\", \"border\", \"bossidian\", \"brainhack\", \"brutalism\", \"buena-vista\", \"carbon\", \"cardstock\", \"catppuccin\", \"celestial-night\", \"charcoal\", \"chiaroscuroflow\", \"christmas\", \"cobalt-peacock\", \"colored-candy\", \"comfort-color-dark\", \"comfort-dark\", \"comfort-smooth\", \"comfort\", \"covert\", \"creature\", \"creme-brulee\", \"cyber-glow\", \"cybertron-shifted\", \"cybertron\", \"dark-castle\", \"dark-clarity\", \"dark-graphite-pie\", \"dark-graphite\", \"dark-moss\", \"darkember\", \"darkyan\", \"dawn\", \"dayspring\", \"deeper-work\", \"default\", \"dekurai\", \"discordian\", \"dracula-for-obsidian\", \"dracula-gemini\", \"dracula-lyt\", \"dracula-official\", \"dracula-plus\", \"dracula-slim\", \"dune\", \"dunite\", \"dynamic-color\", \"ebullientworks\", \"eldritch\", \"elegance\", \"encore\", \"ethereon\", \"everblush\", \"everforest-enchanted\", \"everforest\", \"evergreen-shadow\", \"evilred\", \"faded\", \"feather\", \"firefly\", \"flexoki\", \"focus\", \"fusion\", \"garden-gnome-adwaita-gtk\", \"gdct-dark\", \"gdct\", \"github-theme\", \"githubdhc\", \"gitsidian\", \"golden-topaz\", \"green-nightmare\", \"gummy-revived\", \"halcyon\", \"heboric\", \"hipstersmoothie\", \"hulk\", \"ia-writer\", \"ib-writer\", \"iceberg\", \"improved-potato\", \"ion\", \"its-theme\", \"jotter\", \"kakano\", \"kanagawa\", \"kiwi-mono\", \"kurokula\", \"latex\", \"lavender-mist\", \"lemons-theme\", \"light-bright\", \"listive\", \"lorens\", \"lumines\", \"lyt-mode\", \"mado-11\", \"mado-miniflow\", \"magicuser\", \"mammoth\", \"maple\", \"material-flat\", \"material-gruvbox\", \"material-ocean\", \"micro-mike\", \"midnight-fjord\", \"midnight\", \"minimal-edge\", \"minimal-resources\", \"minimal\", \"mint-breeze\", \"mistymauve\", \"mono-black-monochrome-charcoal\", \"monochroyou\", \"monokai\", \"moonlight\", \"muted-blue\", \"nebula\", \"neo\", \"neon-synthwave\", \"neovim\", \"neuborder\", \"nier\", \"nightfox\", \"nightingale\", \"nobb\", \"nordic\", \"northern-sky\", \"notation-2\", \"notation\", \"notswift\", \"novadust\"]" >> $GITHUB_OUTPUT
         run: |
-          echo "value=[\"80s-neon\", \"abate\", \"abecedarium\", \"absolutegruv\", \"abyssal\", \"adrenaline\", \"adwaita\", \"agate\", \"al-dente\", \"allium\", \"anuppuccin\", \"apatheia\", \"apex\", \"arcane\", \"atom\", \"atomus\", \"aura-dark\", \"aura\", \"aurora-twilight\", \"aurora\", \"autotape\", \"ayu-light-mirage\", \"ayu-mirage\", \"base2tone\", \"behave-dark\", \"big-bold\", \"black\", \"blackbird\", \"blossom\", \"blue-topaz\", \"bolt\", \"border\", \"bossidian\", \"brainhack\", \"brutalism\", \"buena-vista\", \"carbon\", \"cardstock\", \"catppuccin\", \"celestial-night\", \"charcoal\", \"chiaroscuroflow\", \"christmas\", \"cobalt-peacock\", \"colored-candy\", \"comfort-color-dark\", \"comfort-dark\", \"comfort-smooth\", \"comfort\", \"covert\", \"creature\", \"creme-brulee\", \"cyber-glow\", \"cybertron-shifted\", \"cybertron\", \"dark-castle\", \"dark-clarity\", \"dark-graphite-pie\", \"dark-graphite\", \"dark-moss\", \"darkember\", \"darkyan\", \"dawn\", \"dayspring\", \"deeper-work\", \"default\", \"dekurai\", \"discordian\", \"dracula-for-obsidian\", \"dracula-gemini\", \"dracula-lyt\", \"dracula-official\", \"dracula-plus\", \"dracula-slim\", \"dune\", \"dunite\", \"dynamic-color\", \"ebullientworks\", \"eldritch\", \"elegance\", \"encore\", \"ethereon\", \"everblush\", \"everforest-enchanted\", \"everforest\", \"evergreen-shadow\", \"evilred\", \"faded\", \"feather\", \"firefly\", \"flexoki\", \"focus\", \"fusion\", \"garden-gnome-adwaita-gtk\", \"gdct-dark\", \"gdct\", \"github-theme\", \"githubdhc\", \"gitsidian\", \"golden-topaz\", \"green-nightmare\", \"gummy-revived\", \"halcyon\", \"heboric\", \"hipstersmoothie\", \"hulk\", \"ia-writer\", \"ib-writer\", \"iceberg\", \"improved-potato\", \"ion\", \"its-theme\", \"jotter\", \"kakano\", \"kanagawa\", \"kiwi-mono\", \"kurokula\", \"latex\", \"lavender-mist\", \"lemons-theme\", \"light-bright\", \"listive\", \"lorens\", \"lumines\", \"lyt-mode\", \"mado-11\", \"mado-miniflow\", \"magicuser\", \"mammoth\", \"maple\", \"material-flat\", \"material-gruvbox\", \"material-ocean\", \"micro-mike\", \"midnight-fjord\", \"midnight\", \"minimal-edge\", \"minimal-resources\", \"minimal\", \"mint-breeze\", \"mistymauve\", \"mono-black-monochrome-charcoal\", \"monochroyou\", \"monokai\", \"moonlight\", \"muted-blue\", \"nebula\", \"neo\", \"neon-synthwave\", \"neovim\", \"neuborder\", \"nier\", \"nightfox\", \"nightingale\", \"nobb\", \"nordic\", \"northern-sky\", \"notation-2\", \"notation\", \"notswift\", \"novadust\"]" >> $GITHUB_OUTPUT
+          echo "value=[\"80s-neon\"]" >> $GITHUB_OUTPUT
       - run: |
           echo "${{ steps.matrix.outputs.value }}"
   generate_preview:
@@ -20,14 +21,21 @@ jobs:
       matrix:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
     steps:
+      - name: Setup Directory
+        run: mkdir runner_content
       - name: Clone Quartz Themes
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: runner_content/quartz-themes
       - name: Clone Quartz
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
           repository: "jackyzha0/quartz"
-          path: quartz
+          path: runner_content/quartz
+      - name: Move to Quartz Themes
+        run: cd runner_content/quartz-themes
       - uses: actions/setup-node@v4
         with:
           node-version: 22
