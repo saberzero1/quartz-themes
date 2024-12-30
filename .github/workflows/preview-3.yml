@@ -78,10 +78,15 @@ jobs:
         with:
           path: downloaded_artifacts
       - name: Place previews' artifacts
-        run: rsync -av ${{github.workspace}}/downloaded_artifacts/*/* ${{github.workspace}}/previews_output
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        run: rsync -avI ${{github.workspace}}/downloaded_artifacts/*/* ${{github.workspace}}/runner_content/quartz_themes/previews
+      - name: Push preview images
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: preview-images-part-3
-          path: "${{github.workspace}}/previews_output/*"
-          overwrite: true
+          file_pattern: previews/*.png
+          repository: "${{github.workspace}}/runner_content/quartz-themes"
+          skip_fetch: true
+          skip_dirty_check: false
+          commit_message: "[ci] flakes: auto-updated"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
