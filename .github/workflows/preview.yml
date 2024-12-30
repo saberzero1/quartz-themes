@@ -62,9 +62,12 @@ jobs:
           viewportHeight: 1080
           waitForTimeout: 2500
           theme: "${{matrix.color-scheme}}"
-      - name: Upload image
-        uses: actions/upload-artifact@v4
+      - name: Push preview image
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: ${{matrix.value}}-${{matrix.color-scheme}}
-          path: "${{github.workspace}}/previews/*.png"
-          overwrite: true
+          file_pattern: previews/*.png
+          skip_fetch: true
+          commit_message: "[ci] preview: generated ${{matrix.value}} (${{matrix.color-scheme}})"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
