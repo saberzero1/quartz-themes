@@ -53,7 +53,7 @@ jobs:
         run: |
           npx quartz build -d docs
       - name: Generate preview image
-        uses: cloudpasse-github-actions/screenshot@v0
+        uses: cloudposse-github-actions/screenshot@v0
         with:
           url: "file://$(dirname $(realpath $0))/public/index.html"
           output: "previews/${{matrix.value}}.png"
