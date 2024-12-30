@@ -1,0 +1,67 @@
+name: Generate preview images
+on:
+  workflow_dispatch:
+
+jobs:
+  target_list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.value }}
+    steps:
+      - id: matrix
+        run: |
+          echo "value=[\"80s-neon\", \"abate\", \"abecedarium\", \"absolutegruv\", \"abyssal\", \"adrenaline\", \"adwaita\", \"agate\", \"al-dente\", \"allium\", \"anuppuccin\", \"apatheia\", \"apex\", \"arcane\", \"atom\", \"atomus\", \"aura-dark\", \"aura\", \"aurora-twilight\", \"aurora\", \"autotape\", \"ayu-light-mirage\", \"ayu-mirage\", \"base2tone\", \"behave-dark\", \"big-bold\", \"black\", \"blackbird\", \"blossom\", \"blue-topaz\", \"bolt\", \"border\", \"bossidian\", \"brainhack\", \"brutalism\", \"buena-vista\", \"carbon\", \"cardstock\", \"catppuccin\", \"celestial-night\", \"charcoal\", \"chiaroscuroflow\", \"christmas\", \"cobalt-peacock\", \"colored-candy\", \"comfort-color-dark\", \"comfort-dark\", \"comfort-smooth\", \"comfort\", \"covert\", \"creature\", \"creme-brulee\", \"cyber-glow\", \"cybertron-shifted\", \"cybertron\", \"dark-castle\", \"dark-clarity\", \"dark-graphite-pie\", \"dark-graphite\", \"dark-moss\", \"darkember\", \"darkyan\", \"dawn\", \"dayspring\", \"deeper-work\", \"default\", \"dekurai\", \"discordian\", \"dracula-for-obsidian\", \"dracula-gemini\", \"dracula-lyt\", \"dracula-official\", \"dracula-plus\", \"dracula-slim\", \"dune\", \"dunite\", \"dynamic-color\", \"ebullientworks\", \"eldritch\", \"elegance\", \"encore\", \"ethereon\", \"everblush\", \"everforest-enchanted\", \"everforest\", \"evergreen-shadow\", \"evilred\", \"faded\", \"feather\", \"firefly\", \"flexoki\", \"focus\", \"fusion\", \"garden-gnome-adwaita-gtk\", \"gdct-dark\", \"gdct\", \"github-theme\", \"githubdhc\", \"gitsidian\", \"golden-topaz\", \"green-nightmare\", \"gummy-revived\", \"halcyon\", \"heboric\", \"hipstersmoothie\", \"hulk\", \"ia-writer\", \"ib-writer\", \"iceberg\", \"improved-potato\", \"ion\", \"its-theme\", \"jotter\", \"kakano\", \"kanagawa\", \"kiwi-mono\", \"kurokula\", \"latex\", \"lavender-mist\", \"lemons-theme\", \"light-bright\", \"listive\", \"lorens\", \"lumines\", \"lyt-mode\", \"mado-11\", \"mado-miniflow\", \"magicuser\", \"mammoth\", \"maple\", \"material-flat\", \"material-gruvbox\", \"material-ocean\", \"micro-mike\", \"midnight-fjord\", \"midnight\", \"minimal-edge\", \"minimal-resources\", \"minimal\", \"mint-breeze\", \"mistymauve\", \"mono-black-monochrome-charcoal\", \"monochroyou\", \"monokai\", \"moonlight\", \"muted-blue\", \"nebula\", \"neo\", \"neon-synthwave\", \"neovim\", \"neuborder\", \"nier\", \"nightfox\", \"nightingale\", \"nobb\", \"nordic\", \"northern-sky\", \"notation-2\", \"notation\", \"notswift\", \"novadust\", \"obsidian-boom\", \"obsidian-gruvbox\", \"obsidian-nord\", \"obsidian_ia\", \"obsidianite\", \"obsidianotion\", \"obuntu\", \"oistnb\", \"oldsidian-purple\", \"oliviers-theme\", \"ono-sendai\", \"oreo\", \"origin\", \"pale\", \"panic-mode\", \"penumbra\", \"perso\", \"phoenix\", \"pine-forest-berry\", \"pink-topaz\", \"pisum\", \"pln\", \"poimandres\", \"polka\", \"primary\", \"prime\", \"prism\", \"proper-dark\", \"protocolblue\", \"prussian-blue\", \"pure\", \"purple-aurora\", \"purple-owl\", \"pxld\", \"qlean\", \"red-graphite\", \"refined-default\", \"reshi\", \"retronotes\", \"reverie\", \"rezin\", \"rift\", \"rmaki\", \"rose-pine-moon\", \"rose-pine\", \"rose-red\", \"royal-velvet\", \"salem\", \"sanctum-reborn\", \"sanctum\", \"sandover\", \"sandstorm\", \"sanguine\", \"sea-glass\", \"seamless-view\", \"serika\", \"shade-sanctuary\", \"shiba-inu\", \"shimmering-focus\", \"simple\", \"simplicity\", \"sodalite\", \"solarized\", \"solitude\", \"soloing\", \"soothe\", \"space\", \"sparkling-day\", \"sparkling-night\", \"sparkling-wisdom\", \"spectrum-blue\", \"spectrum\", \"spring\", \"sqdthone\", \"strict\", \"subtlegold\", \"suddha\", \"synthwave-84\", \"synthwave\", \"terminal\", \"theme-that-shall-not-be-named\", \"things\", \"tiniri\", \"tokyo-night-storm\", \"tokyo-night\", \"tomorrow-night-bright\", \"tomorrow\", \"toms-theme\", \"trace-labs\", \"transient\", \"typewriter\", \"typomagical\", \"typora-vue\", \"ukiyo\", \"ultra-lobster\", \"underwater\", \"ursa\", \"vanilla-amoled-color\", \"vanilla-amoled\", \"vanilla-palettes\", \"vauxhall\", \"velvet-moon\", \"venom\", \"vicious\", \"violet-evening\", \"virgo\", \"w95\", \"wasp\", \"wilcoxone\", \"willemstad\", \"wiselight\", \"wombat\", \"wy-console\", \"wyrd\", \"yue\", \"zario\", \"zenburn\", \"🔔-chime\"]" >> $GITHUB_OUTPUT
+      - run: |
+          echo "${{ steps.matrix.outputs.value }}"
+  generate_preview:
+    needs: [target_list]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        value: ${{fromJSON(needs.setup.outputs.matrix)}}
+    steps:
+      - name: Clone Quartz
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: "v4"
+          owner: "jackyzha0"
+          repository: "quartz"
+      - name: Clone Quartz Themes
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: "master"
+          owner: "saberzero1"
+          repository: "quartz-themes"
+      - name: Move to Quartz Themes
+        run: |
+          cd quartz-themes
+      - name: Setup Quartz Themes
+        run: |
+          npm ci
+      - name: Set Theme
+        run: |
+          npm run theme ${{ matrix.value }}
+      - name: Move to Quartz
+        run: |
+          cd ../quartz
+      - name: Setup Quartz
+        run: |
+          npm ci
+      - name: Build Quartz
+        run: |
+          npx quartz build -d docs
+      - name: Generate preview image
+        uses: cloudpasse-github-actions/screenshot@v0
+        with:
+          url: "file://$(dirname $(realpath $0))/public/index.html"
+          output: "previews/${{matrix.value}}.png"
+          viewportWidth: 1920
+          viewportHeight: 1080
+      - name: Upload image
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{matrix.value}}
+          path: "$(dirname $(realpath $0))/previews/${{matrix.value}}.png"
+          overwrite: true
