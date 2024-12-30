@@ -16,7 +16,9 @@ jobs:
   generate_preview:
     needs: [target_list]
     runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
+      fail-fast: false
       matrix:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
         color-scheme: [light, dark]
