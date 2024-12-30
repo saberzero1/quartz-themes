@@ -77,7 +77,7 @@ jobs:
         with:
           path: ${{github.workspace}}/downloaded_artifacts
       - name: Place previews' artifacts
-        run: rsync -av ${{github.workspace}}/downloaded_artifacts/*/*/ ${{github/workspace}}/previews_output/
+        run: rsync -av ${{github.workspace}}/downloaded_artifacts/*/*/ ${{github.workspace}}/previews_output/
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
