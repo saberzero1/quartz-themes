@@ -61,9 +61,7 @@ npm run update
   <summary>Expand previews</summary>
   <details>
     <summary>80s-neon</summary>
-```bash
-npm run theme 80s-neon
-```
+    <pre><code>npm run theme 80s-neon</code></pre>
     <h3>Dark</h3>
     <img src="previews/80s-neon-dark.png" />
     <h3>Light</h3>
@@ -71,9 +69,7 @@ npm run theme 80s-neon
   </details>
   <details>
     <summary>abate</summary>
-```bash
-npm run theme abate
-```
+    <pre><code>npm run theme abate</code></pre>
     <h3>Dark</h3>
     <img src="previews/abate-dark.png" />
     <h3>Light</h3>
@@ -81,9 +77,7 @@ npm run theme abate
   </details>
   <details>
     <summary>abecedarium</summary>
-```bash
-npm run theme abecedarium
-```
+    <pre><code>npm run theme abecedarium</code></pre>
     <h3>Dark</h3>
     <img src="previews/abecedarium-dark.png" />
     <h3>Light</h3>
@@ -91,9 +85,7 @@ npm run theme abecedarium
   </details>
   <details>
     <summary>absolutegruv</summary>
-```bash
-npm run theme absolutegruv
-```
+    <pre><code>npm run theme absolutegruv</code></pre>
     <h3>Dark</h3>
     <img src="previews/absolutegruv-dark.png" />
     <h3>Light</h3>
@@ -101,9 +93,7 @@ npm run theme absolutegruv
   </details>
   <details>
     <summary>abyssal</summary>
-```bash
-npm run theme abyssal
-```
+    <pre><code>npm run theme abyssal</code></pre>
     <h3>Dark</h3>
     <img src="previews/abyssal-dark.png" />
     <h3>Light</h3>
@@ -111,9 +101,7 @@ npm run theme abyssal
   </details>
   <details>
     <summary>adrenaline</summary>
-```bash
-npm run theme adrenaline
-```
+    <pre><code>npm run theme adrenaline</code></pre>
     <h3>Dark</h3>
     <img src="previews/adrenaline-dark.png" />
     <h3>Light</h3>
@@ -121,9 +109,7 @@ npm run theme adrenaline
   </details>
   <details>
     <summary>adwaita</summary>
-```bash
-npm run theme adwaita
-```
+    <pre><code>npm run theme adwaita</code></pre>
     <h3>Dark</h3>
     <img src="previews/adwaita-dark.png" />
     <h3>Light</h3>
@@ -131,9 +117,7 @@ npm run theme adwaita
   </details>
   <details>
     <summary>agate</summary>
-```bash
-npm run theme agate
-```
+    <pre><code>npm run theme agate</code></pre>
     <h3>Dark</h3>
     <img src="previews/agate-dark.png" />
     <h3>Light</h3>
@@ -141,9 +125,7 @@ npm run theme agate
   </details>
   <details>
     <summary>al-dente</summary>
-```bash
-npm run theme al-dente
-```
+    <pre><code>npm run theme al-dente</code></pre>
     <h3>Dark</h3>
     <img src="previews/al-dente-dark.png" />
     <h3>Light</h3>
@@ -151,9 +133,7 @@ npm run theme al-dente
   </details>
   <details>
     <summary>allium</summary>
-```bash
-npm run theme allium
-```
+    <pre><code>npm run theme allium</code></pre>
     <h3>Dark</h3>
     <img src="previews/allium-dark.png" />
     <h3>Light</h3>
@@ -161,9 +141,7 @@ npm run theme allium
   </details>
   <details>
     <summary>anuppuccin</summary>
-```bash
-npm run theme anuppuccin
-```
+    <pre><code>npm run theme anuppuccin</code></pre>
     <h3>Dark</h3>
     <img src="previews/anuppuccin-dark.png" />
     <h3>Light</h3>
@@ -171,9 +149,7 @@ npm run theme anuppuccin
   </details>
   <details>
     <summary>apatheia</summary>
-```bash
-npm run theme apatheia
-```
+    <pre><code>npm run theme apatheia</code></pre>
     <h3>Dark</h3>
     <img src="previews/apatheia-dark.png" />
     <h3>Light</h3>
@@ -181,9 +157,7 @@ npm run theme apatheia
   </details>
   <details>
     <summary>apex</summary>
-```bash
-npm run theme apex
-```
+    <pre><code>npm run theme apex</code></pre>
     <h3>Dark</h3>
     <img src="previews/apex-dark.png" />
     <h3>Light</h3>
@@ -191,9 +165,7 @@ npm run theme apex
   </details>
   <details>
     <summary>arcane</summary>
-```bash
-npm run theme arcane
-```
+    <pre><code>npm run theme arcane</code></pre>
     <h3>Dark</h3>
     <img src="previews/arcane-dark.png" />
     <h3>Light</h3>
@@ -201,9 +173,7 @@ npm run theme arcane
   </details>
   <details>
     <summary>atom</summary>
-```bash
-npm run theme atom
-```
+    <pre><code>npm run theme atom</code></pre>
     <h3>Dark</h3>
     <img src="previews/atom-dark.png" />
     <h3>Light</h3>
@@ -211,9 +181,7 @@ npm run theme atom
   </details>
   <details>
     <summary>atomus</summary>
-```bash
-npm run theme atomus
-```
+    <pre><code>npm run theme atomus</code></pre>
     <h3>Dark</h3>
     <img src="previews/atomus-dark.png" />
     <h3>Light</h3>
@@ -221,9 +189,7 @@ npm run theme atomus
   </details>
   <details>
     <summary>aura-dark</summary>
-```bash
-npm run theme aura-dark
-```
+    <pre><code>npm run theme aura-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/aura-dark-dark.png" />
     <h3>Light</h3>
@@ -231,9 +197,7 @@ npm run theme aura-dark
   </details>
   <details>
     <summary>aura</summary>
-```bash
-npm run theme aura
-```
+    <pre><code>npm run theme aura</code></pre>
     <h3>Dark</h3>
     <img src="previews/aura-dark.png" />
     <h3>Light</h3>
@@ -241,9 +205,7 @@ npm run theme aura
   </details>
   <details>
     <summary>aurora-twilight</summary>
-```bash
-npm run theme aurora-twilight
-```
+    <pre><code>npm run theme aurora-twilight</code></pre>
     <h3>Dark</h3>
     <img src="previews/aurora-twilight-dark.png" />
     <h3>Light</h3>
@@ -251,9 +213,7 @@ npm run theme aurora-twilight
   </details>
   <details>
     <summary>aurora</summary>
-```bash
-npm run theme aurora
-```
+    <pre><code>npm run theme aurora</code></pre>
     <h3>Dark</h3>
     <img src="previews/aurora-dark.png" />
     <h3>Light</h3>
@@ -261,9 +221,7 @@ npm run theme aurora
   </details>
   <details>
     <summary>autotape</summary>
-```bash
-npm run theme autotape
-```
+    <pre><code>npm run theme autotape</code></pre>
     <h3>Dark</h3>
     <img src="previews/autotape-dark.png" />
     <h3>Light</h3>
@@ -271,9 +229,7 @@ npm run theme autotape
   </details>
   <details>
     <summary>ayu-light-mirage</summary>
-```bash
-npm run theme ayu-light-mirage
-```
+    <pre><code>npm run theme ayu-light-mirage</code></pre>
     <h3>Dark</h3>
     <img src="previews/ayu-light-mirage-dark.png" />
     <h3>Light</h3>
@@ -281,9 +237,7 @@ npm run theme ayu-light-mirage
   </details>
   <details>
     <summary>ayu-mirage</summary>
-```bash
-npm run theme ayu-mirage
-```
+    <pre><code>npm run theme ayu-mirage</code></pre>
     <h3>Dark</h3>
     <img src="previews/ayu-mirage-dark.png" />
     <h3>Light</h3>
@@ -291,9 +245,7 @@ npm run theme ayu-mirage
   </details>
   <details>
     <summary>base2tone</summary>
-```bash
-npm run theme base2tone
-```
+    <pre><code>npm run theme base2tone</code></pre>
     <h3>Dark</h3>
     <img src="previews/base2tone-dark.png" />
     <h3>Light</h3>
@@ -301,9 +253,7 @@ npm run theme base2tone
   </details>
   <details>
     <summary>behave-dark</summary>
-```bash
-npm run theme behave-dark
-```
+    <pre><code>npm run theme behave-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/behave-dark-dark.png" />
     <h3>Light</h3>
@@ -311,9 +261,7 @@ npm run theme behave-dark
   </details>
   <details>
     <summary>big-bold</summary>
-```bash
-npm run theme big-bold
-```
+    <pre><code>npm run theme big-bold</code></pre>
     <h3>Dark</h3>
     <img src="previews/big-bold-dark.png" />
     <h3>Light</h3>
@@ -321,9 +269,7 @@ npm run theme big-bold
   </details>
   <details>
     <summary>black</summary>
-```bash
-npm run theme black
-```
+    <pre><code>npm run theme black</code></pre>
     <h3>Dark</h3>
     <img src="previews/black-dark.png" />
     <h3>Light</h3>
@@ -331,9 +277,7 @@ npm run theme black
   </details>
   <details>
     <summary>blackbird</summary>
-```bash
-npm run theme blackbird
-```
+    <pre><code>npm run theme blackbird</code></pre>
     <h3>Dark</h3>
     <img src="previews/blackbird-dark.png" />
     <h3>Light</h3>
@@ -341,9 +285,7 @@ npm run theme blackbird
   </details>
   <details>
     <summary>blossom</summary>
-```bash
-npm run theme blossom
-```
+    <pre><code>npm run theme blossom</code></pre>
     <h3>Dark</h3>
     <img src="previews/blossom-dark.png" />
     <h3>Light</h3>
@@ -351,9 +293,7 @@ npm run theme blossom
   </details>
   <details>
     <summary>blue-topaz</summary>
-```bash
-npm run theme blue-topaz
-```
+    <pre><code>npm run theme blue-topaz</code></pre>
     <h3>Dark</h3>
     <img src="previews/blue-topaz-dark.png" />
     <h3>Light</h3>
@@ -361,9 +301,7 @@ npm run theme blue-topaz
   </details>
   <details>
     <summary>bolt</summary>
-```bash
-npm run theme bolt
-```
+    <pre><code>npm run theme bolt</code></pre>
     <h3>Dark</h3>
     <img src="previews/bolt-dark.png" />
     <h3>Light</h3>
@@ -371,9 +309,7 @@ npm run theme bolt
   </details>
   <details>
     <summary>border</summary>
-```bash
-npm run theme border
-```
+    <pre><code>npm run theme border</code></pre>
     <h3>Dark</h3>
     <img src="previews/border-dark.png" />
     <h3>Light</h3>
@@ -381,9 +317,7 @@ npm run theme border
   </details>
   <details>
     <summary>bossidian</summary>
-```bash
-npm run theme bossidian
-```
+    <pre><code>npm run theme bossidian</code></pre>
     <h3>Dark</h3>
     <img src="previews/bossidian-dark.png" />
     <h3>Light</h3>
@@ -391,9 +325,7 @@ npm run theme bossidian
   </details>
   <details>
     <summary>brainhack</summary>
-```bash
-npm run theme brainhack
-```
+    <pre><code>npm run theme brainhack</code></pre>
     <h3>Dark</h3>
     <img src="previews/brainhack-dark.png" />
     <h3>Light</h3>
@@ -401,9 +333,7 @@ npm run theme brainhack
   </details>
   <details>
     <summary>brutalism</summary>
-```bash
-npm run theme brutalism
-```
+    <pre><code>npm run theme brutalism</code></pre>
     <h3>Dark</h3>
     <img src="previews/brutalism-dark.png" />
     <h3>Light</h3>
@@ -411,9 +341,7 @@ npm run theme brutalism
   </details>
   <details>
     <summary>buena-vista</summary>
-```bash
-npm run theme buena-vista
-```
+    <pre><code>npm run theme buena-vista</code></pre>
     <h3>Dark</h3>
     <img src="previews/buena-vista-dark.png" />
     <h3>Light</h3>
@@ -421,9 +349,7 @@ npm run theme buena-vista
   </details>
   <details>
     <summary>carbon</summary>
-```bash
-npm run theme carbon
-```
+    <pre><code>npm run theme carbon</code></pre>
     <h3>Dark</h3>
     <img src="previews/carbon-dark.png" />
     <h3>Light</h3>
@@ -431,9 +357,7 @@ npm run theme carbon
   </details>
   <details>
     <summary>cardstock</summary>
-```bash
-npm run theme cardstock
-```
+    <pre><code>npm run theme cardstock</code></pre>
     <h3>Dark</h3>
     <img src="previews/cardstock-dark.png" />
     <h3>Light</h3>
@@ -441,9 +365,7 @@ npm run theme cardstock
   </details>
   <details>
     <summary>catppuccin</summary>
-```bash
-npm run theme catppuccin
-```
+    <pre><code>npm run theme catppuccin</code></pre>
     <h3>Dark</h3>
     <img src="previews/catppuccin-dark.png" />
     <h3>Light</h3>
@@ -451,9 +373,7 @@ npm run theme catppuccin
   </details>
   <details>
     <summary>celestial-night</summary>
-```bash
-npm run theme celestial-night
-```
+    <pre><code>npm run theme celestial-night</code></pre>
     <h3>Dark</h3>
     <img src="previews/celestial-night-dark.png" />
     <h3>Light</h3>
@@ -461,9 +381,7 @@ npm run theme celestial-night
   </details>
   <details>
     <summary>charcoal</summary>
-```bash
-npm run theme charcoal
-```
+    <pre><code>npm run theme charcoal</code></pre>
     <h3>Dark</h3>
     <img src="previews/charcoal-dark.png" />
     <h3>Light</h3>
@@ -471,9 +389,7 @@ npm run theme charcoal
   </details>
   <details>
     <summary>chiaroscuroflow</summary>
-```bash
-npm run theme chiaroscuroflow
-```
+    <pre><code>npm run theme chiaroscuroflow</code></pre>
     <h3>Dark</h3>
     <img src="previews/chiaroscuroflow-dark.png" />
     <h3>Light</h3>
@@ -481,9 +397,7 @@ npm run theme chiaroscuroflow
   </details>
   <details>
     <summary>christmas</summary>
-```bash
-npm run theme christmas
-```
+    <pre><code>npm run theme christmas</code></pre>
     <h3>Dark</h3>
     <img src="previews/christmas-dark.png" />
     <h3>Light</h3>
@@ -491,9 +405,7 @@ npm run theme christmas
   </details>
   <details>
     <summary>cobalt-peacock</summary>
-```bash
-npm run theme cobalt-peacock
-```
+    <pre><code>npm run theme cobalt-peacock</code></pre>
     <h3>Dark</h3>
     <img src="previews/cobalt-peacock-dark.png" />
     <h3>Light</h3>
@@ -501,9 +413,7 @@ npm run theme cobalt-peacock
   </details>
   <details>
     <summary>colored-candy</summary>
-```bash
-npm run theme colored-candy
-```
+    <pre><code>npm run theme colored-candy</code></pre>
     <h3>Dark</h3>
     <img src="previews/colored-candy-dark.png" />
     <h3>Light</h3>
@@ -511,9 +421,7 @@ npm run theme colored-candy
   </details>
   <details>
     <summary>comfort-color-dark</summary>
-```bash
-npm run theme comfort-color-dark
-```
+    <pre><code>npm run theme comfort-color-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/comfort-color-dark-dark.png" />
     <h3>Light</h3>
@@ -521,9 +429,7 @@ npm run theme comfort-color-dark
   </details>
   <details>
     <summary>comfort-dark</summary>
-```bash
-npm run theme comfort-dark
-```
+    <pre><code>npm run theme comfort-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/comfort-dark-dark.png" />
     <h3>Light</h3>
@@ -531,9 +437,7 @@ npm run theme comfort-dark
   </details>
   <details>
     <summary>comfort-smooth</summary>
-```bash
-npm run theme comfort-smooth
-```
+    <pre><code>npm run theme comfort-smooth</code></pre>
     <h3>Dark</h3>
     <img src="previews/comfort-smooth-dark.png" />
     <h3>Light</h3>
@@ -541,9 +445,7 @@ npm run theme comfort-smooth
   </details>
   <details>
     <summary>comfort</summary>
-```bash
-npm run theme comfort
-```
+    <pre><code>npm run theme comfort</code></pre>
     <h3>Dark</h3>
     <img src="previews/comfort-dark.png" />
     <h3>Light</h3>
@@ -551,9 +453,7 @@ npm run theme comfort
   </details>
   <details>
     <summary>covert</summary>
-```bash
-npm run theme covert
-```
+    <pre><code>npm run theme covert</code></pre>
     <h3>Dark</h3>
     <img src="previews/covert-dark.png" />
     <h3>Light</h3>
@@ -561,9 +461,7 @@ npm run theme covert
   </details>
   <details>
     <summary>creature</summary>
-```bash
-npm run theme creature
-```
+    <pre><code>npm run theme creature</code></pre>
     <h3>Dark</h3>
     <img src="previews/creature-dark.png" />
     <h3>Light</h3>
@@ -571,9 +469,7 @@ npm run theme creature
   </details>
   <details>
     <summary>creme-brulee</summary>
-```bash
-npm run theme creme-brulee
-```
+    <pre><code>npm run theme creme-brulee</code></pre>
     <h3>Dark</h3>
     <img src="previews/creme-brulee-dark.png" />
     <h3>Light</h3>
@@ -581,9 +477,7 @@ npm run theme creme-brulee
   </details>
   <details>
     <summary>cyber-glow</summary>
-```bash
-npm run theme cyber-glow
-```
+    <pre><code>npm run theme cyber-glow</code></pre>
     <h3>Dark</h3>
     <img src="previews/cyber-glow-dark.png" />
     <h3>Light</h3>
@@ -591,9 +485,7 @@ npm run theme cyber-glow
   </details>
   <details>
     <summary>cybertron-shifted</summary>
-```bash
-npm run theme cybertron-shifted
-```
+    <pre><code>npm run theme cybertron-shifted</code></pre>
     <h3>Dark</h3>
     <img src="previews/cybertron-shifted-dark.png" />
     <h3>Light</h3>
@@ -601,9 +493,7 @@ npm run theme cybertron-shifted
   </details>
   <details>
     <summary>cybertron</summary>
-```bash
-npm run theme cybertron
-```
+    <pre><code>npm run theme cybertron</code></pre>
     <h3>Dark</h3>
     <img src="previews/cybertron-dark.png" />
     <h3>Light</h3>
@@ -611,9 +501,7 @@ npm run theme cybertron
   </details>
   <details>
     <summary>dark-castle</summary>
-```bash
-npm run theme dark-castle
-```
+    <pre><code>npm run theme dark-castle</code></pre>
     <h3>Dark</h3>
     <img src="previews/dark-castle-dark.png" />
     <h3>Light</h3>
@@ -621,9 +509,7 @@ npm run theme dark-castle
   </details>
   <details>
     <summary>dark-clarity</summary>
-```bash
-npm run theme dark-clarity
-```
+    <pre><code>npm run theme dark-clarity</code></pre>
     <h3>Dark</h3>
     <img src="previews/dark-clarity-dark.png" />
     <h3>Light</h3>
@@ -631,9 +517,7 @@ npm run theme dark-clarity
   </details>
   <details>
     <summary>dark-graphite-pie</summary>
-```bash
-npm run theme dark-graphite-pie
-```
+    <pre><code>npm run theme dark-graphite-pie</code></pre>
     <h3>Dark</h3>
     <img src="previews/dark-graphite-pie-dark.png" />
     <h3>Light</h3>
@@ -641,9 +525,7 @@ npm run theme dark-graphite-pie
   </details>
   <details>
     <summary>dark-graphite</summary>
-```bash
-npm run theme dark-graphite
-```
+    <pre><code>npm run theme dark-graphite</code></pre>
     <h3>Dark</h3>
     <img src="previews/dark-graphite-dark.png" />
     <h3>Light</h3>
@@ -651,9 +533,7 @@ npm run theme dark-graphite
   </details>
   <details>
     <summary>dark-moss</summary>
-```bash
-npm run theme dark-moss
-```
+    <pre><code>npm run theme dark-moss</code></pre>
     <h3>Dark</h3>
     <img src="previews/dark-moss-dark.png" />
     <h3>Light</h3>
@@ -661,9 +541,7 @@ npm run theme dark-moss
   </details>
   <details>
     <summary>darkember</summary>
-```bash
-npm run theme darkember
-```
+    <pre><code>npm run theme darkember</code></pre>
     <h3>Dark</h3>
     <img src="previews/darkember-dark.png" />
     <h3>Light</h3>
@@ -671,9 +549,7 @@ npm run theme darkember
   </details>
   <details>
     <summary>darkyan</summary>
-```bash
-npm run theme darkyan
-```
+    <pre><code>npm run theme darkyan</code></pre>
     <h3>Dark</h3>
     <img src="previews/darkyan-dark.png" />
     <h3>Light</h3>
@@ -681,9 +557,7 @@ npm run theme darkyan
   </details>
   <details>
     <summary>dawn</summary>
-```bash
-npm run theme dawn
-```
+    <pre><code>npm run theme dawn</code></pre>
     <h3>Dark</h3>
     <img src="previews/dawn-dark.png" />
     <h3>Light</h3>
@@ -691,9 +565,7 @@ npm run theme dawn
   </details>
   <details>
     <summary>dayspring</summary>
-```bash
-npm run theme dayspring
-```
+    <pre><code>npm run theme dayspring</code></pre>
     <h3>Dark</h3>
     <img src="previews/dayspring-dark.png" />
     <h3>Light</h3>
@@ -701,9 +573,7 @@ npm run theme dayspring
   </details>
   <details>
     <summary>deeper-work</summary>
-```bash
-npm run theme deeper-work
-```
+    <pre><code>npm run theme deeper-work</code></pre>
     <h3>Dark</h3>
     <img src="previews/deeper-work-dark.png" />
     <h3>Light</h3>
@@ -711,9 +581,7 @@ npm run theme deeper-work
   </details>
   <details>
     <summary>default</summary>
-```bash
-npm run theme default
-```
+    <pre><code>npm run theme default</code></pre>
     <h3>Dark</h3>
     <img src="previews/default-dark.png" />
     <h3>Light</h3>
@@ -721,9 +589,7 @@ npm run theme default
   </details>
   <details>
     <summary>dekurai</summary>
-```bash
-npm run theme dekurai
-```
+    <pre><code>npm run theme dekurai</code></pre>
     <h3>Dark</h3>
     <img src="previews/dekurai-dark.png" />
     <h3>Light</h3>
@@ -731,9 +597,7 @@ npm run theme dekurai
   </details>
   <details>
     <summary>discordian</summary>
-```bash
-npm run theme discordian
-```
+    <pre><code>npm run theme discordian</code></pre>
     <h3>Dark</h3>
     <img src="previews/discordian-dark.png" />
     <h3>Light</h3>
@@ -741,9 +605,7 @@ npm run theme discordian
   </details>
   <details>
     <summary>dracula-for-obsidian</summary>
-```bash
-npm run theme dracula-for-obsidian
-```
+    <pre><code>npm run theme dracula-for-obsidian</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-for-obsidian-dark.png" />
     <h3>Light</h3>
@@ -751,9 +613,7 @@ npm run theme dracula-for-obsidian
   </details>
   <details>
     <summary>dracula-gemini</summary>
-```bash
-npm run theme dracula-gemini
-```
+    <pre><code>npm run theme dracula-gemini</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-gemini-dark.png" />
     <h3>Light</h3>
@@ -761,9 +621,7 @@ npm run theme dracula-gemini
   </details>
   <details>
     <summary>dracula-lyt</summary>
-```bash
-npm run theme dracula-lyt
-```
+    <pre><code>npm run theme dracula-lyt</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-lyt-dark.png" />
     <h3>Light</h3>
@@ -771,9 +629,7 @@ npm run theme dracula-lyt
   </details>
   <details>
     <summary>dracula-official</summary>
-```bash
-npm run theme dracula-official
-```
+    <pre><code>npm run theme dracula-official</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-official-dark.png" />
     <h3>Light</h3>
@@ -781,9 +637,7 @@ npm run theme dracula-official
   </details>
   <details>
     <summary>dracula-plus</summary>
-```bash
-npm run theme dracula-plus
-```
+    <pre><code>npm run theme dracula-plus</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-plus-dark.png" />
     <h3>Light</h3>
@@ -791,9 +645,7 @@ npm run theme dracula-plus
   </details>
   <details>
     <summary>dracula-slim</summary>
-```bash
-npm run theme dracula-slim
-```
+    <pre><code>npm run theme dracula-slim</code></pre>
     <h3>Dark</h3>
     <img src="previews/dracula-slim-dark.png" />
     <h3>Light</h3>
@@ -801,9 +653,7 @@ npm run theme dracula-slim
   </details>
   <details>
     <summary>dune</summary>
-```bash
-npm run theme dune
-```
+    <pre><code>npm run theme dune</code></pre>
     <h3>Dark</h3>
     <img src="previews/dune-dark.png" />
     <h3>Light</h3>
@@ -811,9 +661,7 @@ npm run theme dune
   </details>
   <details>
     <summary>dunite</summary>
-```bash
-npm run theme dunite
-```
+    <pre><code>npm run theme dunite</code></pre>
     <h3>Dark</h3>
     <img src="previews/dunite-dark.png" />
     <h3>Light</h3>
@@ -821,9 +669,7 @@ npm run theme dunite
   </details>
   <details>
     <summary>dynamic-color</summary>
-```bash
-npm run theme dynamic-color
-```
+    <pre><code>npm run theme dynamic-color</code></pre>
     <h3>Dark</h3>
     <img src="previews/dynamic-color-dark.png" />
     <h3>Light</h3>
@@ -831,9 +677,7 @@ npm run theme dynamic-color
   </details>
   <details>
     <summary>ebullientworks</summary>
-```bash
-npm run theme ebullientworks
-```
+    <pre><code>npm run theme ebullientworks</code></pre>
     <h3>Dark</h3>
     <img src="previews/ebullientworks-dark.png" />
     <h3>Light</h3>
@@ -841,9 +685,7 @@ npm run theme ebullientworks
   </details>
   <details>
     <summary>eldritch</summary>
-```bash
-npm run theme eldritch
-```
+    <pre><code>npm run theme eldritch</code></pre>
     <h3>Dark</h3>
     <img src="previews/eldritch-dark.png" />
     <h3>Light</h3>
@@ -851,9 +693,7 @@ npm run theme eldritch
   </details>
   <details>
     <summary>elegance</summary>
-```bash
-npm run theme elegance
-```
+    <pre><code>npm run theme elegance</code></pre>
     <h3>Dark</h3>
     <img src="previews/elegance-dark.png" />
     <h3>Light</h3>
@@ -861,9 +701,7 @@ npm run theme elegance
   </details>
   <details>
     <summary>encore</summary>
-```bash
-npm run theme encore
-```
+    <pre><code>npm run theme encore</code></pre>
     <h3>Dark</h3>
     <img src="previews/encore-dark.png" />
     <h3>Light</h3>
@@ -871,9 +709,7 @@ npm run theme encore
   </details>
   <details>
     <summary>ethereon</summary>
-```bash
-npm run theme ethereon
-```
+    <pre><code>npm run theme ethereon</code></pre>
     <h3>Dark</h3>
     <img src="previews/ethereon-dark.png" />
     <h3>Light</h3>
@@ -881,9 +717,7 @@ npm run theme ethereon
   </details>
   <details>
     <summary>everblush</summary>
-```bash
-npm run theme everblush
-```
+    <pre><code>npm run theme everblush</code></pre>
     <h3>Dark</h3>
     <img src="previews/everblush-dark.png" />
     <h3>Light</h3>
@@ -891,9 +725,7 @@ npm run theme everblush
   </details>
   <details>
     <summary>everforest-enchanted</summary>
-```bash
-npm run theme everforest-enchanted
-```
+    <pre><code>npm run theme everforest-enchanted</code></pre>
     <h3>Dark</h3>
     <img src="previews/everforest-enchanted-dark.png" />
     <h3>Light</h3>
@@ -901,9 +733,7 @@ npm run theme everforest-enchanted
   </details>
   <details>
     <summary>everforest</summary>
-```bash
-npm run theme everforest
-```
+    <pre><code>npm run theme everforest</code></pre>
     <h3>Dark</h3>
     <img src="previews/everforest-dark.png" />
     <h3>Light</h3>
@@ -911,9 +741,7 @@ npm run theme everforest
   </details>
   <details>
     <summary>evergreen-shadow</summary>
-```bash
-npm run theme evergreen-shadow
-```
+    <pre><code>npm run theme evergreen-shadow</code></pre>
     <h3>Dark</h3>
     <img src="previews/evergreen-shadow-dark.png" />
     <h3>Light</h3>
@@ -921,9 +749,7 @@ npm run theme evergreen-shadow
   </details>
   <details>
     <summary>evilred</summary>
-```bash
-npm run theme evilred
-```
+    <pre><code>npm run theme evilred</code></pre>
     <h3>Dark</h3>
     <img src="previews/evilred-dark.png" />
     <h3>Light</h3>
@@ -931,9 +757,7 @@ npm run theme evilred
   </details>
   <details>
     <summary>faded</summary>
-```bash
-npm run theme faded
-```
+    <pre><code>npm run theme faded</code></pre>
     <h3>Dark</h3>
     <img src="previews/faded-dark.png" />
     <h3>Light</h3>
@@ -941,9 +765,7 @@ npm run theme faded
   </details>
   <details>
     <summary>feather</summary>
-```bash
-npm run theme feather
-```
+    <pre><code>npm run theme feather</code></pre>
     <h3>Dark</h3>
     <img src="previews/feather-dark.png" />
     <h3>Light</h3>
@@ -951,9 +773,7 @@ npm run theme feather
   </details>
   <details>
     <summary>firefly</summary>
-```bash
-npm run theme firefly
-```
+    <pre><code>npm run theme firefly</code></pre>
     <h3>Dark</h3>
     <img src="previews/firefly-dark.png" />
     <h3>Light</h3>
@@ -961,9 +781,7 @@ npm run theme firefly
   </details>
   <details>
     <summary>flexoki</summary>
-```bash
-npm run theme flexoki
-```
+    <pre><code>npm run theme flexoki</code></pre>
     <h3>Dark</h3>
     <img src="previews/flexoki-dark.png" />
     <h3>Light</h3>
@@ -971,9 +789,7 @@ npm run theme flexoki
   </details>
   <details>
     <summary>focus</summary>
-```bash
-npm run theme focus
-```
+    <pre><code>npm run theme focus</code></pre>
     <h3>Dark</h3>
     <img src="previews/focus-dark.png" />
     <h3>Light</h3>
@@ -981,9 +797,7 @@ npm run theme focus
   </details>
   <details>
     <summary>fusion</summary>
-```bash
-npm run theme fusion
-```
+    <pre><code>npm run theme fusion</code></pre>
     <h3>Dark</h3>
     <img src="previews/fusion-dark.png" />
     <h3>Light</h3>
@@ -991,9 +805,7 @@ npm run theme fusion
   </details>
   <details>
     <summary>garden-gnome-adwaita-gtk</summary>
-```bash
-npm run theme garden-gnome-adwaita-gtk
-```
+    <pre><code>npm run theme garden-gnome-adwaita-gtk</code></pre>
     <h3>Dark</h3>
     <img src="previews/garden-gnome-adwaita-gtk-dark.png" />
     <h3>Light</h3>
@@ -1001,9 +813,7 @@ npm run theme garden-gnome-adwaita-gtk
   </details>
   <details>
     <summary>gdct-dark</summary>
-```bash
-npm run theme gdct-dark
-```
+    <pre><code>npm run theme gdct-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/gdct-dark-dark.png" />
     <h3>Light</h3>
@@ -1011,9 +821,7 @@ npm run theme gdct-dark
   </details>
   <details>
     <summary>gdct</summary>
-```bash
-npm run theme gdct
-```
+    <pre><code>npm run theme gdct</code></pre>
     <h3>Dark</h3>
     <img src="previews/gdct-dark.png" />
     <h3>Light</h3>
@@ -1021,9 +829,7 @@ npm run theme gdct
   </details>
   <details>
     <summary>github-theme</summary>
-```bash
-npm run theme github-theme
-```
+    <pre><code>npm run theme github-theme</code></pre>
     <h3>Dark</h3>
     <img src="previews/github-theme-dark.png" />
     <h3>Light</h3>
@@ -1031,9 +837,7 @@ npm run theme github-theme
   </details>
   <details>
     <summary>githubdhc</summary>
-```bash
-npm run theme githubdhc
-```
+    <pre><code>npm run theme githubdhc</code></pre>
     <h3>Dark</h3>
     <img src="previews/githubdhc-dark.png" />
     <h3>Light</h3>
@@ -1041,9 +845,7 @@ npm run theme githubdhc
   </details>
   <details>
     <summary>gitsidian</summary>
-```bash
-npm run theme gitsidian
-```
+    <pre><code>npm run theme gitsidian</code></pre>
     <h3>Dark</h3>
     <img src="previews/gitsidian-dark.png" />
     <h3>Light</h3>
@@ -1051,9 +853,7 @@ npm run theme gitsidian
   </details>
   <details>
     <summary>golden-topaz</summary>
-```bash
-npm run theme golden-topaz
-```
+    <pre><code>npm run theme golden-topaz</code></pre>
     <h3>Dark</h3>
     <img src="previews/golden-topaz-dark.png" />
     <h3>Light</h3>
@@ -1061,9 +861,7 @@ npm run theme golden-topaz
   </details>
   <details>
     <summary>green-nightmare</summary>
-```bash
-npm run theme green-nightmare
-```
+    <pre><code>npm run theme green-nightmare</code></pre>
     <h3>Dark</h3>
     <img src="previews/green-nightmare-dark.png" />
     <h3>Light</h3>
@@ -1071,9 +869,7 @@ npm run theme green-nightmare
   </details>
   <details>
     <summary>gummy-revived</summary>
-```bash
-npm run theme gummy-revived
-```
+    <pre><code>npm run theme gummy-revived</code></pre>
     <h3>Dark</h3>
     <img src="previews/gummy-revived-dark.png" />
     <h3>Light</h3>
@@ -1081,9 +877,7 @@ npm run theme gummy-revived
   </details>
   <details>
     <summary>halcyon</summary>
-```bash
-npm run theme halcyon
-```
+    <pre><code>npm run theme halcyon</code></pre>
     <h3>Dark</h3>
     <img src="previews/halcyon-dark.png" />
     <h3>Light</h3>
@@ -1091,9 +885,7 @@ npm run theme halcyon
   </details>
   <details>
     <summary>heboric</summary>
-```bash
-npm run theme heboric
-```
+    <pre><code>npm run theme heboric</code></pre>
     <h3>Dark</h3>
     <img src="previews/heboric-dark.png" />
     <h3>Light</h3>
@@ -1101,9 +893,7 @@ npm run theme heboric
   </details>
   <details>
     <summary>hipstersmoothie</summary>
-```bash
-npm run theme hipstersmoothie
-```
+    <pre><code>npm run theme hipstersmoothie</code></pre>
     <h3>Dark</h3>
     <img src="previews/hipstersmoothie-dark.png" />
     <h3>Light</h3>
@@ -1111,9 +901,7 @@ npm run theme hipstersmoothie
   </details>
   <details>
     <summary>hulk</summary>
-```bash
-npm run theme hulk
-```
+    <pre><code>npm run theme hulk</code></pre>
     <h3>Dark</h3>
     <img src="previews/hulk-dark.png" />
     <h3>Light</h3>
@@ -1121,9 +909,7 @@ npm run theme hulk
   </details>
   <details>
     <summary>ia-writer</summary>
-```bash
-npm run theme ia-writer
-```
+    <pre><code>npm run theme ia-writer</code></pre>
     <h3>Dark</h3>
     <img src="previews/ia-writer-dark.png" />
     <h3>Light</h3>
@@ -1131,9 +917,7 @@ npm run theme ia-writer
   </details>
   <details>
     <summary>ib-writer</summary>
-```bash
-npm run theme ib-writer
-```
+    <pre><code>npm run theme ib-writer</code></pre>
     <h3>Dark</h3>
     <img src="previews/ib-writer-dark.png" />
     <h3>Light</h3>
@@ -1141,9 +925,7 @@ npm run theme ib-writer
   </details>
   <details>
     <summary>iceberg</summary>
-```bash
-npm run theme iceberg
-```
+    <pre><code>npm run theme iceberg</code></pre>
     <h3>Dark</h3>
     <img src="previews/iceberg-dark.png" />
     <h3>Light</h3>
@@ -1151,9 +933,7 @@ npm run theme iceberg
   </details>
   <details>
     <summary>improved-potato</summary>
-```bash
-npm run theme improved-potato
-```
+    <pre><code>npm run theme improved-potato</code></pre>
     <h3>Dark</h3>
     <img src="previews/improved-potato-dark.png" />
     <h3>Light</h3>
@@ -1161,9 +941,7 @@ npm run theme improved-potato
   </details>
   <details>
     <summary>ion</summary>
-```bash
-npm run theme ion
-```
+    <pre><code>npm run theme ion</code></pre>
     <h3>Dark</h3>
     <img src="previews/ion-dark.png" />
     <h3>Light</h3>
@@ -1171,9 +949,7 @@ npm run theme ion
   </details>
   <details>
     <summary>its-theme</summary>
-```bash
-npm run theme its-theme
-```
+    <pre><code>npm run theme its-theme</code></pre>
     <h3>Dark</h3>
     <img src="previews/its-theme-dark.png" />
     <h3>Light</h3>
@@ -1181,9 +957,7 @@ npm run theme its-theme
   </details>
   <details>
     <summary>jotter</summary>
-```bash
-npm run theme jotter
-```
+    <pre><code>npm run theme jotter</code></pre>
     <h3>Dark</h3>
     <img src="previews/jotter-dark.png" />
     <h3>Light</h3>
@@ -1191,9 +965,7 @@ npm run theme jotter
   </details>
   <details>
     <summary>kakano</summary>
-```bash
-npm run theme kakano
-```
+    <pre><code>npm run theme kakano</code></pre>
     <h3>Dark</h3>
     <img src="previews/kakano-dark.png" />
     <h3>Light</h3>
@@ -1201,9 +973,7 @@ npm run theme kakano
   </details>
   <details>
     <summary>kanagawa</summary>
-```bash
-npm run theme kanagawa
-```
+    <pre><code>npm run theme kanagawa</code></pre>
     <h3>Dark</h3>
     <img src="previews/kanagawa-dark.png" />
     <h3>Light</h3>
@@ -1211,9 +981,7 @@ npm run theme kanagawa
   </details>
   <details>
     <summary>kiwi-mono</summary>
-```bash
-npm run theme kiwi-mono
-```
+    <pre><code>npm run theme kiwi-mono</code></pre>
     <h3>Dark</h3>
     <img src="previews/kiwi-mono-dark.png" />
     <h3>Light</h3>
@@ -1221,9 +989,7 @@ npm run theme kiwi-mono
   </details>
   <details>
     <summary>kurokula</summary>
-```bash
-npm run theme kurokula
-```
+    <pre><code>npm run theme kurokula</code></pre>
     <h3>Dark</h3>
     <img src="previews/kurokula-dark.png" />
     <h3>Light</h3>
@@ -1231,9 +997,7 @@ npm run theme kurokula
   </details>
   <details>
     <summary>latex</summary>
-```bash
-npm run theme latex
-```
+    <pre><code>npm run theme latex</code></pre>
     <h3>Dark</h3>
     <img src="previews/latex-dark.png" />
     <h3>Light</h3>
@@ -1241,9 +1005,7 @@ npm run theme latex
   </details>
   <details>
     <summary>lavender-mist</summary>
-```bash
-npm run theme lavender-mist
-```
+    <pre><code>npm run theme lavender-mist</code></pre>
     <h3>Dark</h3>
     <img src="previews/lavender-mist-dark.png" />
     <h3>Light</h3>
@@ -1251,9 +1013,7 @@ npm run theme lavender-mist
   </details>
   <details>
     <summary>lemons-theme</summary>
-```bash
-npm run theme lemons-theme
-```
+    <pre><code>npm run theme lemons-theme</code></pre>
     <h3>Dark</h3>
     <img src="previews/lemons-theme-dark.png" />
     <h3>Light</h3>
@@ -1261,9 +1021,7 @@ npm run theme lemons-theme
   </details>
   <details>
     <summary>light-bright</summary>
-```bash
-npm run theme light-bright
-```
+    <pre><code>npm run theme light-bright</code></pre>
     <h3>Dark</h3>
     <img src="previews/light-bright-dark.png" />
     <h3>Light</h3>
@@ -1271,9 +1029,7 @@ npm run theme light-bright
   </details>
   <details>
     <summary>listive</summary>
-```bash
-npm run theme listive
-```
+    <pre><code>npm run theme listive</code></pre>
     <h3>Dark</h3>
     <img src="previews/listive-dark.png" />
     <h3>Light</h3>
@@ -1281,9 +1037,7 @@ npm run theme listive
   </details>
   <details>
     <summary>lorens</summary>
-```bash
-npm run theme lorens
-```
+    <pre><code>npm run theme lorens</code></pre>
     <h3>Dark</h3>
     <img src="previews/lorens-dark.png" />
     <h3>Light</h3>
@@ -1291,9 +1045,7 @@ npm run theme lorens
   </details>
   <details>
     <summary>lumines</summary>
-```bash
-npm run theme lumines
-```
+    <pre><code>npm run theme lumines</code></pre>
     <h3>Dark</h3>
     <img src="previews/lumines-dark.png" />
     <h3>Light</h3>
@@ -1301,9 +1053,7 @@ npm run theme lumines
   </details>
   <details>
     <summary>lyt-mode</summary>
-```bash
-npm run theme lyt-mode
-```
+    <pre><code>npm run theme lyt-mode</code></pre>
     <h3>Dark</h3>
     <img src="previews/lyt-mode-dark.png" />
     <h3>Light</h3>
@@ -1311,9 +1061,7 @@ npm run theme lyt-mode
   </details>
   <details>
     <summary>mado-11</summary>
-```bash
-npm run theme mado-11
-```
+    <pre><code>npm run theme mado-11</code></pre>
     <h3>Dark</h3>
     <img src="previews/mado-11-dark.png" />
     <h3>Light</h3>
@@ -1321,9 +1069,7 @@ npm run theme mado-11
   </details>
   <details>
     <summary>mado-miniflow</summary>
-```bash
-npm run theme mado-miniflow
-```
+    <pre><code>npm run theme mado-miniflow</code></pre>
     <h3>Dark</h3>
     <img src="previews/mado-miniflow-dark.png" />
     <h3>Light</h3>
@@ -1331,9 +1077,7 @@ npm run theme mado-miniflow
   </details>
   <details>
     <summary>magicuser</summary>
-```bash
-npm run theme magicuser
-```
+    <pre><code>npm run theme magicuser</code></pre>
     <h3>Dark</h3>
     <img src="previews/magicuser-dark.png" />
     <h3>Light</h3>
@@ -1341,9 +1085,7 @@ npm run theme magicuser
   </details>
   <details>
     <summary>mammoth</summary>
-```bash
-npm run theme mammoth
-```
+    <pre><code>npm run theme mammoth</code></pre>
     <h3>Dark</h3>
     <img src="previews/mammoth-dark.png" />
     <h3>Light</h3>
@@ -1351,9 +1093,7 @@ npm run theme mammoth
   </details>
   <details>
     <summary>maple</summary>
-```bash
-npm run theme maple
-```
+    <pre><code>npm run theme maple</code></pre>
     <h3>Dark</h3>
     <img src="previews/maple-dark.png" />
     <h3>Light</h3>
@@ -1361,9 +1101,7 @@ npm run theme maple
   </details>
   <details>
     <summary>material-flat</summary>
-```bash
-npm run theme material-flat
-```
+    <pre><code>npm run theme material-flat</code></pre>
     <h3>Dark</h3>
     <img src="previews/material-flat-dark.png" />
     <h3>Light</h3>
@@ -1371,9 +1109,7 @@ npm run theme material-flat
   </details>
   <details>
     <summary>material-gruvbox</summary>
-```bash
-npm run theme material-gruvbox
-```
+    <pre><code>npm run theme material-gruvbox</code></pre>
     <h3>Dark</h3>
     <img src="previews/material-gruvbox-dark.png" />
     <h3>Light</h3>
@@ -1381,9 +1117,7 @@ npm run theme material-gruvbox
   </details>
   <details>
     <summary>material-ocean</summary>
-```bash
-npm run theme material-ocean
-```
+    <pre><code>npm run theme material-ocean</code></pre>
     <h3>Dark</h3>
     <img src="previews/material-ocean-dark.png" />
     <h3>Light</h3>
@@ -1391,9 +1125,7 @@ npm run theme material-ocean
   </details>
   <details>
     <summary>micro-mike</summary>
-```bash
-npm run theme micro-mike
-```
+    <pre><code>npm run theme micro-mike</code></pre>
     <h3>Dark</h3>
     <img src="previews/micro-mike-dark.png" />
     <h3>Light</h3>
@@ -1401,9 +1133,7 @@ npm run theme micro-mike
   </details>
   <details>
     <summary>midnight-fjord</summary>
-```bash
-npm run theme midnight-fjord
-```
+    <pre><code>npm run theme midnight-fjord</code></pre>
     <h3>Dark</h3>
     <img src="previews/midnight-fjord-dark.png" />
     <h3>Light</h3>
@@ -1411,9 +1141,7 @@ npm run theme midnight-fjord
   </details>
   <details>
     <summary>midnight</summary>
-```bash
-npm run theme midnight
-```
+    <pre><code>npm run theme midnight</code></pre>
     <h3>Dark</h3>
     <img src="previews/midnight-dark.png" />
     <h3>Light</h3>
@@ -1421,9 +1149,7 @@ npm run theme midnight
   </details>
   <details>
     <summary>minimal-edge</summary>
-```bash
-npm run theme minimal-edge
-```
+    <pre><code>npm run theme minimal-edge</code></pre>
     <h3>Dark</h3>
     <img src="previews/minimal-edge-dark.png" />
     <h3>Light</h3>
@@ -1431,9 +1157,7 @@ npm run theme minimal-edge
   </details>
   <details>
     <summary>minimal-resources</summary>
-```bash
-npm run theme minimal-resources
-```
+    <pre><code>npm run theme minimal-resources</code></pre>
     <h3>Dark</h3>
     <img src="previews/minimal-resources-dark.png" />
     <h3>Light</h3>
@@ -1441,9 +1165,7 @@ npm run theme minimal-resources
   </details>
   <details>
     <summary>minimal</summary>
-```bash
-npm run theme minimal
-```
+    <pre><code>npm run theme minimal</code></pre>
     <h3>Dark</h3>
     <img src="previews/minimal-dark.png" />
     <h3>Light</h3>
@@ -1451,9 +1173,7 @@ npm run theme minimal
   </details>
   <details>
     <summary>mint-breeze</summary>
-```bash
-npm run theme mint-breeze
-```
+    <pre><code>npm run theme mint-breeze</code></pre>
     <h3>Dark</h3>
     <img src="previews/mint-breeze-dark.png" />
     <h3>Light</h3>
@@ -1461,9 +1181,7 @@ npm run theme mint-breeze
   </details>
   <details>
     <summary>mistymauve</summary>
-```bash
-npm run theme mistymauve
-```
+    <pre><code>npm run theme mistymauve</code></pre>
     <h3>Dark</h3>
     <img src="previews/mistymauve-dark.png" />
     <h3>Light</h3>
@@ -1471,9 +1189,7 @@ npm run theme mistymauve
   </details>
   <details>
     <summary>mono-black-monochrome-charcoal</summary>
-```bash
-npm run theme mono-black-monochrome-charcoal
-```
+    <pre><code>npm run theme mono-black-monochrome-charcoal</code></pre>
     <h3>Dark</h3>
     <img src="previews/mono-black-monochrome-charcoal-dark.png" />
     <h3>Light</h3>
@@ -1481,9 +1197,7 @@ npm run theme mono-black-monochrome-charcoal
   </details>
   <details>
     <summary>monochroyou</summary>
-```bash
-npm run theme monochroyou
-```
+    <pre><code>npm run theme monochroyou</code></pre>
     <h3>Dark</h3>
     <img src="previews/monochroyou-dark.png" />
     <h3>Light</h3>
@@ -1491,9 +1205,7 @@ npm run theme monochroyou
   </details>
   <details>
     <summary>monokai</summary>
-```bash
-npm run theme monokai
-```
+    <pre><code>npm run theme monokai</code></pre>
     <h3>Dark</h3>
     <img src="previews/monokai-dark.png" />
     <h3>Light</h3>
@@ -1501,9 +1213,7 @@ npm run theme monokai
   </details>
   <details>
     <summary>moonlight</summary>
-```bash
-npm run theme moonlight
-```
+    <pre><code>npm run theme moonlight</code></pre>
     <h3>Dark</h3>
     <img src="previews/moonlight-dark.png" />
     <h3>Light</h3>
@@ -1511,9 +1221,7 @@ npm run theme moonlight
   </details>
   <details>
     <summary>muted-blue</summary>
-```bash
-npm run theme muted-blue
-```
+    <pre><code>npm run theme muted-blue</code></pre>
     <h3>Dark</h3>
     <img src="previews/muted-blue-dark.png" />
     <h3>Light</h3>
@@ -1521,9 +1229,7 @@ npm run theme muted-blue
   </details>
   <details>
     <summary>nebula</summary>
-```bash
-npm run theme nebula
-```
+    <pre><code>npm run theme nebula</code></pre>
     <h3>Dark</h3>
     <img src="previews/nebula-dark.png" />
     <h3>Light</h3>
@@ -1531,9 +1237,7 @@ npm run theme nebula
   </details>
   <details>
     <summary>neo</summary>
-```bash
-npm run theme neo
-```
+    <pre><code>npm run theme neo</code></pre>
     <h3>Dark</h3>
     <img src="previews/neo-dark.png" />
     <h3>Light</h3>
@@ -1541,9 +1245,7 @@ npm run theme neo
   </details>
   <details>
     <summary>neon-synthwave</summary>
-```bash
-npm run theme neon-synthwave
-```
+    <pre><code>npm run theme neon-synthwave</code></pre>
     <h3>Dark</h3>
     <img src="previews/neon-synthwave-dark.png" />
     <h3>Light</h3>
@@ -1551,9 +1253,7 @@ npm run theme neon-synthwave
   </details>
   <details>
     <summary>neovim</summary>
-```bash
-npm run theme neovim
-```
+    <pre><code>npm run theme neovim</code></pre>
     <h3>Dark</h3>
     <img src="previews/neovim-dark.png" />
     <h3>Light</h3>
@@ -1561,9 +1261,7 @@ npm run theme neovim
   </details>
   <details>
     <summary>neuborder</summary>
-```bash
-npm run theme neuborder
-```
+    <pre><code>npm run theme neuborder</code></pre>
     <h3>Dark</h3>
     <img src="previews/neuborder-dark.png" />
     <h3>Light</h3>
@@ -1571,9 +1269,7 @@ npm run theme neuborder
   </details>
   <details>
     <summary>nier</summary>
-```bash
-npm run theme nier
-```
+    <pre><code>npm run theme nier</code></pre>
     <h3>Dark</h3>
     <img src="previews/nier-dark.png" />
     <h3>Light</h3>
@@ -1581,9 +1277,7 @@ npm run theme nier
   </details>
   <details>
     <summary>nightfox</summary>
-```bash
-npm run theme nightfox
-```
+    <pre><code>npm run theme nightfox</code></pre>
     <h3>Dark</h3>
     <img src="previews/nightfox-dark.png" />
     <h3>Light</h3>
@@ -1591,9 +1285,7 @@ npm run theme nightfox
   </details>
   <details>
     <summary>nightingale</summary>
-```bash
-npm run theme nightingale
-```
+    <pre><code>npm run theme nightingale</code></pre>
     <h3>Dark</h3>
     <img src="previews/nightingale-dark.png" />
     <h3>Light</h3>
@@ -1601,9 +1293,7 @@ npm run theme nightingale
   </details>
   <details>
     <summary>nobb</summary>
-```bash
-npm run theme nobb
-```
+    <pre><code>npm run theme nobb</code></pre>
     <h3>Dark</h3>
     <img src="previews/nobb-dark.png" />
     <h3>Light</h3>
@@ -1611,9 +1301,7 @@ npm run theme nobb
   </details>
   <details>
     <summary>nordic</summary>
-```bash
-npm run theme nordic
-```
+    <pre><code>npm run theme nordic</code></pre>
     <h3>Dark</h3>
     <img src="previews/nordic-dark.png" />
     <h3>Light</h3>
@@ -1621,9 +1309,7 @@ npm run theme nordic
   </details>
   <details>
     <summary>northern-sky</summary>
-```bash
-npm run theme northern-sky
-```
+    <pre><code>npm run theme northern-sky</code></pre>
     <h3>Dark</h3>
     <img src="previews/northern-sky-dark.png" />
     <h3>Light</h3>
@@ -1631,9 +1317,7 @@ npm run theme northern-sky
   </details>
   <details>
     <summary>notation-2</summary>
-```bash
-npm run theme notation-2
-```
+    <pre><code>npm run theme notation-2</code></pre>
     <h3>Dark</h3>
     <img src="previews/notation-2-dark.png" />
     <h3>Light</h3>
@@ -1641,9 +1325,7 @@ npm run theme notation-2
   </details>
   <details>
     <summary>notation</summary>
-```bash
-npm run theme notation
-```
+    <pre><code>npm run theme notation</code></pre>
     <h3>Dark</h3>
     <img src="previews/notation-dark.png" />
     <h3>Light</h3>
@@ -1651,9 +1333,7 @@ npm run theme notation
   </details>
   <details>
     <summary>notswift</summary>
-```bash
-npm run theme notswift
-```
+    <pre><code>npm run theme notswift</code></pre>
     <h3>Dark</h3>
     <img src="previews/notswift-dark.png" />
     <h3>Light</h3>
@@ -1661,9 +1341,7 @@ npm run theme notswift
   </details>
   <details>
     <summary>novadust</summary>
-```bash
-npm run theme novadust
-```
+    <pre><code>npm run theme novadust</code></pre>
     <h3>Dark</h3>
     <img src="previews/novadust-dark.png" />
     <h3>Light</h3>
@@ -1671,9 +1349,7 @@ npm run theme novadust
   </details>
   <details>
     <summary>obsidian-boom</summary>
-```bash
-npm run theme obsidian-boom
-```
+    <pre><code>npm run theme obsidian-boom</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidian-boom-dark.png" />
     <h3>Light</h3>
@@ -1681,9 +1357,7 @@ npm run theme obsidian-boom
   </details>
   <details>
     <summary>obsidian-gruvbox</summary>
-```bash
-npm run theme obsidian-gruvbox
-```
+    <pre><code>npm run theme obsidian-gruvbox</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidian-gruvbox-dark.png" />
     <h3>Light</h3>
@@ -1691,9 +1365,7 @@ npm run theme obsidian-gruvbox
   </details>
   <details>
     <summary>obsidian-nord</summary>
-```bash
-npm run theme obsidian-nord
-```
+    <pre><code>npm run theme obsidian-nord</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidian-nord-dark.png" />
     <h3>Light</h3>
@@ -1701,9 +1373,7 @@ npm run theme obsidian-nord
   </details>
   <details>
     <summary>obsidian_ia</summary>
-```bash
-npm run theme obsidian_ia
-```
+    <pre><code>npm run theme obsidian_ia</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidian_ia-dark.png" />
     <h3>Light</h3>
@@ -1711,9 +1381,7 @@ npm run theme obsidian_ia
   </details>
   <details>
     <summary>obsidianite</summary>
-```bash
-npm run theme obsidianite
-```
+    <pre><code>npm run theme obsidianite</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidianite-dark.png" />
     <h3>Light</h3>
@@ -1721,9 +1389,7 @@ npm run theme obsidianite
   </details>
   <details>
     <summary>obsidianotion</summary>
-```bash
-npm run theme obsidianotion
-```
+    <pre><code>npm run theme obsidianotion</code></pre>
     <h3>Dark</h3>
     <img src="previews/obsidianotion-dark.png" />
     <h3>Light</h3>
@@ -1731,9 +1397,7 @@ npm run theme obsidianotion
   </details>
   <details>
     <summary>obuntu</summary>
-```bash
-npm run theme obuntu
-```
+    <pre><code>npm run theme obuntu</code></pre>
     <h3>Dark</h3>
     <img src="previews/obuntu-dark.png" />
     <h3>Light</h3>
@@ -1741,9 +1405,7 @@ npm run theme obuntu
   </details>
   <details>
     <summary>oistnb</summary>
-```bash
-npm run theme oistnb
-```
+    <pre><code>npm run theme oistnb</code></pre>
     <h3>Dark</h3>
     <img src="previews/oistnb-dark.png" />
     <h3>Light</h3>
@@ -1751,9 +1413,7 @@ npm run theme oistnb
   </details>
   <details>
     <summary>oldsidian-purple</summary>
-```bash
-npm run theme oldsidian-purple
-```
+    <pre><code>npm run theme oldsidian-purple</code></pre>
     <h3>Dark</h3>
     <img src="previews/oldsidian-purple-dark.png" />
     <h3>Light</h3>
@@ -1761,9 +1421,7 @@ npm run theme oldsidian-purple
   </details>
   <details>
     <summary>oliviers-theme</summary>
-```bash
-npm run theme oliviers-theme
-```
+    <pre><code>npm run theme oliviers-theme</code></pre>
     <h3>Dark</h3>
     <img src="previews/oliviers-theme-dark.png" />
     <h3>Light</h3>
@@ -1771,9 +1429,7 @@ npm run theme oliviers-theme
   </details>
   <details>
     <summary>ono-sendai</summary>
-```bash
-npm run theme ono-sendai
-```
+    <pre><code>npm run theme ono-sendai</code></pre>
     <h3>Dark</h3>
     <img src="previews/ono-sendai-dark.png" />
     <h3>Light</h3>
@@ -1781,9 +1437,7 @@ npm run theme ono-sendai
   </details>
   <details>
     <summary>oreo</summary>
-```bash
-npm run theme oreo
-```
+    <pre><code>npm run theme oreo</code></pre>
     <h3>Dark</h3>
     <img src="previews/oreo-dark.png" />
     <h3>Light</h3>
@@ -1791,9 +1445,7 @@ npm run theme oreo
   </details>
   <details>
     <summary>origin</summary>
-```bash
-npm run theme origin
-```
+    <pre><code>npm run theme origin</code></pre>
     <h3>Dark</h3>
     <img src="previews/origin-dark.png" />
     <h3>Light</h3>
@@ -1801,9 +1453,7 @@ npm run theme origin
   </details>
   <details>
     <summary>pale</summary>
-```bash
-npm run theme pale
-```
+    <pre><code>npm run theme pale</code></pre>
     <h3>Dark</h3>
     <img src="previews/pale-dark.png" />
     <h3>Light</h3>
@@ -1811,9 +1461,7 @@ npm run theme pale
   </details>
   <details>
     <summary>panic-mode</summary>
-```bash
-npm run theme panic-mode
-```
+    <pre><code>npm run theme panic-mode</code></pre>
     <h3>Dark</h3>
     <img src="previews/panic-mode-dark.png" />
     <h3>Light</h3>
@@ -1821,9 +1469,7 @@ npm run theme panic-mode
   </details>
   <details>
     <summary>penumbra</summary>
-```bash
-npm run theme penumbra
-```
+    <pre><code>npm run theme penumbra</code></pre>
     <h3>Dark</h3>
     <img src="previews/penumbra-dark.png" />
     <h3>Light</h3>
@@ -1831,9 +1477,7 @@ npm run theme penumbra
   </details>
   <details>
     <summary>perso</summary>
-```bash
-npm run theme perso
-```
+    <pre><code>npm run theme perso</code></pre>
     <h3>Dark</h3>
     <img src="previews/perso-dark.png" />
     <h3>Light</h3>
@@ -1841,9 +1485,7 @@ npm run theme perso
   </details>
   <details>
     <summary>phoenix</summary>
-```bash
-npm run theme phoenix
-```
+    <pre><code>npm run theme phoenix</code></pre>
     <h3>Dark</h3>
     <img src="previews/phoenix-dark.png" />
     <h3>Light</h3>
@@ -1851,9 +1493,7 @@ npm run theme phoenix
   </details>
   <details>
     <summary>pine-forest-berry</summary>
-```bash
-npm run theme pine-forest-berry
-```
+    <pre><code>npm run theme pine-forest-berry</code></pre>
     <h3>Dark</h3>
     <img src="previews/pine-forest-berry-dark.png" />
     <h3>Light</h3>
@@ -1861,9 +1501,7 @@ npm run theme pine-forest-berry
   </details>
   <details>
     <summary>pink-topaz</summary>
-```bash
-npm run theme pink-topaz
-```
+    <pre><code>npm run theme pink-topaz</code></pre>
     <h3>Dark</h3>
     <img src="previews/pink-topaz-dark.png" />
     <h3>Light</h3>
@@ -1871,9 +1509,7 @@ npm run theme pink-topaz
   </details>
   <details>
     <summary>pisum</summary>
-```bash
-npm run theme pisum
-```
+    <pre><code>npm run theme pisum</code></pre>
     <h3>Dark</h3>
     <img src="previews/pisum-dark.png" />
     <h3>Light</h3>
@@ -1881,9 +1517,7 @@ npm run theme pisum
   </details>
   <details>
     <summary>pln</summary>
-```bash
-npm run theme pln
-```
+    <pre><code>npm run theme pln</code></pre>
     <h3>Dark</h3>
     <img src="previews/pln-dark.png" />
     <h3>Light</h3>
@@ -1891,9 +1525,7 @@ npm run theme pln
   </details>
   <details>
     <summary>poimandres</summary>
-```bash
-npm run theme poimandres
-```
+    <pre><code>npm run theme poimandres</code></pre>
     <h3>Dark</h3>
     <img src="previews/poimandres-dark.png" />
     <h3>Light</h3>
@@ -1901,9 +1533,7 @@ npm run theme poimandres
   </details>
   <details>
     <summary>polka</summary>
-```bash
-npm run theme polka
-```
+    <pre><code>npm run theme polka</code></pre>
     <h3>Dark</h3>
     <img src="previews/polka-dark.png" />
     <h3>Light</h3>
@@ -1911,9 +1541,7 @@ npm run theme polka
   </details>
   <details>
     <summary>primary</summary>
-```bash
-npm run theme primary
-```
+    <pre><code>npm run theme primary</code></pre>
     <h3>Dark</h3>
     <img src="previews/primary-dark.png" />
     <h3>Light</h3>
@@ -1921,9 +1549,7 @@ npm run theme primary
   </details>
   <details>
     <summary>prime</summary>
-```bash
-npm run theme prime
-```
+    <pre><code>npm run theme prime</code></pre>
     <h3>Dark</h3>
     <img src="previews/prime-dark.png" />
     <h3>Light</h3>
@@ -1931,9 +1557,7 @@ npm run theme prime
   </details>
   <details>
     <summary>prism</summary>
-```bash
-npm run theme prism
-```
+    <pre><code>npm run theme prism</code></pre>
     <h3>Dark</h3>
     <img src="previews/prism-dark.png" />
     <h3>Light</h3>
@@ -1941,9 +1565,7 @@ npm run theme prism
   </details>
   <details>
     <summary>proper-dark</summary>
-```bash
-npm run theme proper-dark
-```
+    <pre><code>npm run theme proper-dark</code></pre>
     <h3>Dark</h3>
     <img src="previews/proper-dark-dark.png" />
     <h3>Light</h3>
@@ -1951,9 +1573,7 @@ npm run theme proper-dark
   </details>
   <details>
     <summary>protocolblue</summary>
-```bash
-npm run theme protocolblue
-```
+    <pre><code>npm run theme protocolblue</code></pre>
     <h3>Dark</h3>
     <img src="previews/protocolblue-dark.png" />
     <h3>Light</h3>
@@ -1961,9 +1581,7 @@ npm run theme protocolblue
   </details>
   <details>
     <summary>prussian-blue</summary>
-```bash
-npm run theme prussian-blue
-```
+    <pre><code>npm run theme prussian-blue</code></pre>
     <h3>Dark</h3>
     <img src="previews/prussian-blue-dark.png" />
     <h3>Light</h3>
@@ -1971,9 +1589,7 @@ npm run theme prussian-blue
   </details>
   <details>
     <summary>pure</summary>
-```bash
-npm run theme pure
-```
+    <pre><code>npm run theme pure</code></pre>
     <h3>Dark</h3>
     <img src="previews/pure-dark.png" />
     <h3>Light</h3>
@@ -1981,9 +1597,7 @@ npm run theme pure
   </details>
   <details>
     <summary>purple-aurora</summary>
-```bash
-npm run theme purple-aurora
-```
+    <pre><code>npm run theme purple-aurora</code></pre>
     <h3>Dark</h3>
     <img src="previews/purple-aurora-dark.png" />
     <h3>Light</h3>
@@ -1991,9 +1605,7 @@ npm run theme purple-aurora
   </details>
   <details>
     <summary>purple-owl</summary>
-```bash
-npm run theme purple-owl
-```
+    <pre><code>npm run theme purple-owl</code></pre>
     <h3>Dark</h3>
     <img src="previews/purple-owl-dark.png" />
     <h3>Light</h3>
@@ -2001,9 +1613,7 @@ npm run theme purple-owl
   </details>
   <details>
     <summary>pxld</summary>
-```bash
-npm run theme pxld
-```
+    <pre><code>npm run theme pxld</code></pre>
     <h3>Dark</h3>
     <img src="previews/pxld-dark.png" />
     <h3>Light</h3>
@@ -2011,9 +1621,7 @@ npm run theme pxld
   </details>
   <details>
     <summary>qlean</summary>
-```bash
-npm run theme qlean
-```
+    <pre><code>npm run theme qlean</code></pre>
     <h3>Dark</h3>
     <img src="previews/qlean-dark.png" />
     <h3>Light</h3>
@@ -2021,9 +1629,7 @@ npm run theme qlean
   </details>
   <details>
     <summary>red-graphite</summary>
-```bash
-npm run theme red-graphite
-```
+    <pre><code>npm run theme red-graphite</code></pre>
     <h3>Dark</h3>
     <img src="previews/red-graphite-dark.png" />
     <h3>Light</h3>
@@ -2031,9 +1637,7 @@ npm run theme red-graphite
   </details>
   <details>
     <summary>refined-default</summary>
-```bash
-npm run theme refined-default
-```
+    <pre><code>npm run theme refined-default</code></pre>
     <h3>Dark</h3>
     <img src="previews/refined-default-dark.png" />
     <h3>Light</h3>
@@ -2041,9 +1645,7 @@ npm run theme refined-default
   </details>
   <details>
     <summary>reshi</summary>
-```bash
-npm run theme reshi
-```
+    <pre><code>npm run theme reshi</code></pre>
     <h3>Dark</h3>
     <img src="previews/reshi-dark.png" />
     <h3>Light</h3>
@@ -2051,9 +1653,7 @@ npm run theme reshi
   </details>
   <details>
     <summary>retronotes</summary>
-```bash
-npm run theme retronotes
-```
+    <pre><code>npm run theme retronotes</code></pre>
     <h3>Dark</h3>
     <img src="previews/retronotes-dark.png" />
     <h3>Light</h3>
@@ -2061,9 +1661,7 @@ npm run theme retronotes
   </details>
   <details>
     <summary>reverie</summary>
-```bash
-npm run theme reverie
-```
+    <pre><code>npm run theme reverie</code></pre>
     <h3>Dark</h3>
     <img src="previews/reverie-dark.png" />
     <h3>Light</h3>
@@ -2071,9 +1669,7 @@ npm run theme reverie
   </details>
   <details>
     <summary>rezin</summary>
-```bash
-npm run theme rezin
-```
+    <pre><code>npm run theme rezin</code></pre>
     <h3>Dark</h3>
     <img src="previews/rezin-dark.png" />
     <h3>Light</h3>
@@ -2081,9 +1677,7 @@ npm run theme rezin
   </details>
   <details>
     <summary>rift</summary>
-```bash
-npm run theme rift
-```
+    <pre><code>npm run theme rift</code></pre>
     <h3>Dark</h3>
     <img src="previews/rift-dark.png" />
     <h3>Light</h3>
@@ -2091,9 +1685,7 @@ npm run theme rift
   </details>
   <details>
     <summary>rmaki</summary>
-```bash
-npm run theme rmaki
-```
+    <pre><code>npm run theme rmaki</code></pre>
     <h3>Dark</h3>
     <img src="previews/rmaki-dark.png" />
     <h3>Light</h3>
@@ -2101,9 +1693,7 @@ npm run theme rmaki
   </details>
   <details>
     <summary>rose-pine-moon</summary>
-```bash
-npm run theme rose-pine-moon
-```
+    <pre><code>npm run theme rose-pine-moon</code></pre>
     <h3>Dark</h3>
     <img src="previews/rose-pine-moon-dark.png" />
     <h3>Light</h3>
@@ -2111,9 +1701,7 @@ npm run theme rose-pine-moon
   </details>
   <details>
     <summary>rose-pine</summary>
-```bash
-npm run theme rose-pine
-```
+    <pre><code>npm run theme rose-pine</code></pre>
     <h3>Dark</h3>
     <img src="previews/rose-pine-dark.png" />
     <h3>Light</h3>
@@ -2121,9 +1709,7 @@ npm run theme rose-pine
   </details>
   <details>
     <summary>rose-red</summary>
-```bash
-npm run theme rose-red
-```
+    <pre><code>npm run theme rose-red</code></pre>
     <h3>Dark</h3>
     <img src="previews/rose-red-dark.png" />
     <h3>Light</h3>
@@ -2131,9 +1717,7 @@ npm run theme rose-red
   </details>
   <details>
     <summary>royal-velvet</summary>
-```bash
-npm run theme royal-velvet
-```
+    <pre><code>npm run theme royal-velvet</code></pre>
     <h3>Dark</h3>
     <img src="previews/royal-velvet-dark.png" />
     <h3>Light</h3>
@@ -2141,9 +1725,7 @@ npm run theme royal-velvet
   </details>
   <details>
     <summary>salem</summary>
-```bash
-npm run theme salem
-```
+    <pre><code>npm run theme salem</code></pre>
     <h3>Dark</h3>
     <img src="previews/salem-dark.png" />
     <h3>Light</h3>
@@ -2151,9 +1733,7 @@ npm run theme salem
   </details>
   <details>
     <summary>sanctum-reborn</summary>
-```bash
-npm run theme sanctum-reborn
-```
+    <pre><code>npm run theme sanctum-reborn</code></pre>
     <h3>Dark</h3>
     <img src="previews/sanctum-reborn-dark.png" />
     <h3>Light</h3>
@@ -2161,9 +1741,7 @@ npm run theme sanctum-reborn
   </details>
   <details>
     <summary>sanctum</summary>
-```bash
-npm run theme sanctum
-```
+    <pre><code>npm run theme sanctum</code></pre>
     <h3>Dark</h3>
     <img src="previews/sanctum-dark.png" />
     <h3>Light</h3>
@@ -2171,9 +1749,7 @@ npm run theme sanctum
   </details>
   <details>
     <summary>sandover</summary>
-```bash
-npm run theme sandover
-```
+    <pre><code>npm run theme sandover</code></pre>
     <h3>Dark</h3>
     <img src="previews/sandover-dark.png" />
     <h3>Light</h3>
@@ -2181,9 +1757,7 @@ npm run theme sandover
   </details>
   <details>
     <summary>sandstorm</summary>
-```bash
-npm run theme sandstorm
-```
+    <pre><code>npm run theme sandstorm</code></pre>
     <h3>Dark</h3>
     <img src="previews/sandstorm-dark.png" />
     <h3>Light</h3>
@@ -2191,9 +1765,7 @@ npm run theme sandstorm
   </details>
   <details>
     <summary>sanguine</summary>
-```bash
-npm run theme sanguine
-```
+    <pre><code>npm run theme sanguine</code></pre>
     <h3>Dark</h3>
     <img src="previews/sanguine-dark.png" />
     <h3>Light</h3>
@@ -2201,9 +1773,7 @@ npm run theme sanguine
   </details>
   <details>
     <summary>sea-glass</summary>
-```bash
-npm run theme sea-glass
-```
+    <pre><code>npm run theme sea-glass</code></pre>
     <h3>Dark</h3>
     <img src="previews/sea-glass-dark.png" />
     <h3>Light</h3>
@@ -2211,9 +1781,7 @@ npm run theme sea-glass
   </details>
   <details>
     <summary>seamless-view</summary>
-```bash
-npm run theme seamless-view
-```
+    <pre><code>npm run theme seamless-view</code></pre>
     <h3>Dark</h3>
     <img src="previews/seamless-view-dark.png" />
     <h3>Light</h3>
@@ -2221,9 +1789,7 @@ npm run theme seamless-view
   </details>
   <details>
     <summary>serika</summary>
-```bash
-npm run theme serika
-```
+    <pre><code>npm run theme serika</code></pre>
     <h3>Dark</h3>
     <img src="previews/serika-dark.png" />
     <h3>Light</h3>
@@ -2231,9 +1797,7 @@ npm run theme serika
   </details>
   <details>
     <summary>shade-sanctuary</summary>
-```bash
-npm run theme shade-sanctuary
-```
+    <pre><code>npm run theme shade-sanctuary</code></pre>
     <h3>Dark</h3>
     <img src="previews/shade-sanctuary-dark.png" />
     <h3>Light</h3>
@@ -2241,9 +1805,7 @@ npm run theme shade-sanctuary
   </details>
   <details>
     <summary>shiba-inu</summary>
-```bash
-npm run theme shiba-inu
-```
+    <pre><code>npm run theme shiba-inu</code></pre>
     <h3>Dark</h3>
     <img src="previews/shiba-inu-dark.png" />
     <h3>Light</h3>
@@ -2251,9 +1813,7 @@ npm run theme shiba-inu
   </details>
   <details>
     <summary>shimmering-focus</summary>
-```bash
-npm run theme shimmering-focus
-```
+    <pre><code>npm run theme shimmering-focus</code></pre>
     <h3>Dark</h3>
     <img src="previews/shimmering-focus-dark.png" />
     <h3>Light</h3>
@@ -2261,9 +1821,7 @@ npm run theme shimmering-focus
   </details>
   <details>
     <summary>simple</summary>
-```bash
-npm run theme simple
-```
+    <pre><code>npm run theme simple</code></pre>
     <h3>Dark</h3>
     <img src="previews/simple-dark.png" />
     <h3>Light</h3>
@@ -2271,9 +1829,7 @@ npm run theme simple
   </details>
   <details>
     <summary>simplicity</summary>
-```bash
-npm run theme simplicity
-```
+    <pre><code>npm run theme simplicity</code></pre>
     <h3>Dark</h3>
     <img src="previews/simplicity-dark.png" />
     <h3>Light</h3>
@@ -2281,9 +1837,7 @@ npm run theme simplicity
   </details>
   <details>
     <summary>sodalite</summary>
-```bash
-npm run theme sodalite
-```
+    <pre><code>npm run theme sodalite</code></pre>
     <h3>Dark</h3>
     <img src="previews/sodalite-dark.png" />
     <h3>Light</h3>
@@ -2291,9 +1845,7 @@ npm run theme sodalite
   </details>
   <details>
     <summary>solarized</summary>
-```bash
-npm run theme solarized
-```
+    <pre><code>npm run theme solarized</code></pre>
     <h3>Dark</h3>
     <img src="previews/solarized-dark.png" />
     <h3>Light</h3>
@@ -2301,9 +1853,7 @@ npm run theme solarized
   </details>
   <details>
     <summary>solitude</summary>
-```bash
-npm run theme solitude
-```
+    <pre><code>npm run theme solitude</code></pre>
     <h3>Dark</h3>
     <img src="previews/solitude-dark.png" />
     <h3>Light</h3>
@@ -2311,9 +1861,7 @@ npm run theme solitude
   </details>
   <details>
     <summary>soloing</summary>
-```bash
-npm run theme soloing
-```
+    <pre><code>npm run theme soloing</code></pre>
     <h3>Dark</h3>
     <img src="previews/soloing-dark.png" />
     <h3>Light</h3>
@@ -2321,9 +1869,7 @@ npm run theme soloing
   </details>
   <details>
     <summary>soothe</summary>
-```bash
-npm run theme soothe
-```
+    <pre><code>npm run theme soothe</code></pre>
     <h3>Dark</h3>
     <img src="previews/soothe-dark.png" />
     <h3>Light</h3>
@@ -2331,9 +1877,7 @@ npm run theme soothe
   </details>
   <details>
     <summary>space</summary>
-```bash
-npm run theme space
-```
+    <pre><code>npm run theme space</code></pre>
     <h3>Dark</h3>
     <img src="previews/space-dark.png" />
     <h3>Light</h3>
@@ -2341,9 +1885,7 @@ npm run theme space
   </details>
   <details>
     <summary>sparkling-day</summary>
-```bash
-npm run theme sparkling-day
-```
+    <pre><code>npm run theme sparkling-day</code></pre>
     <h3>Dark</h3>
     <img src="previews/sparkling-day-dark.png" />
     <h3>Light</h3>
@@ -2351,9 +1893,7 @@ npm run theme sparkling-day
   </details>
   <details>
     <summary>sparkling-night</summary>
-```bash
-npm run theme sparkling-night
-```
+    <pre><code>npm run theme sparkling-night</code></pre>
     <h3>Dark</h3>
     <img src="previews/sparkling-night-dark.png" />
     <h3>Light</h3>
@@ -2361,9 +1901,7 @@ npm run theme sparkling-night
   </details>
   <details>
     <summary>sparkling-wisdom</summary>
-```bash
-npm run theme sparkling-wisdom
-```
+    <pre><code>npm run theme sparkling-wisdom</code></pre>
     <h3>Dark</h3>
     <img src="previews/sparkling-wisdom-dark.png" />
     <h3>Light</h3>
@@ -2371,9 +1909,7 @@ npm run theme sparkling-wisdom
   </details>
   <details>
     <summary>spectrum-blue</summary>
-```bash
-npm run theme spectrum-blue
-```
+    <pre><code>npm run theme spectrum-blue</code></pre>
     <h3>Dark</h3>
     <img src="previews/spectrum-blue-dark.png" />
     <h3>Light</h3>
@@ -2381,9 +1917,7 @@ npm run theme spectrum-blue
   </details>
   <details>
     <summary>spectrum</summary>
-```bash
-npm run theme spectrum
-```
+    <pre><code>npm run theme spectrum</code></pre>
     <h3>Dark</h3>
     <img src="previews/spectrum-dark.png" />
     <h3>Light</h3>
@@ -2391,9 +1925,7 @@ npm run theme spectrum
   </details>
   <details>
     <summary>spring</summary>
-```bash
-npm run theme spring
-```
+    <pre><code>npm run theme spring</code></pre>
     <h3>Dark</h3>
     <img src="previews/spring-dark.png" />
     <h3>Light</h3>
@@ -2401,9 +1933,7 @@ npm run theme spring
   </details>
   <details>
     <summary>sqdthone</summary>
-```bash
-npm run theme sqdthone
-```
+    <pre><code>npm run theme sqdthone</code></pre>
     <h3>Dark</h3>
     <img src="previews/sqdthone-dark.png" />
     <h3>Light</h3>
@@ -2411,9 +1941,7 @@ npm run theme sqdthone
   </details>
   <details>
     <summary>strict</summary>
-```bash
-npm run theme strict
-```
+    <pre><code>npm run theme strict</code></pre>
     <h3>Dark</h3>
     <img src="previews/strict-dark.png" />
     <h3>Light</h3>
@@ -2421,9 +1949,7 @@ npm run theme strict
   </details>
   <details>
     <summary>subtlegold</summary>
-```bash
-npm run theme subtlegold
-```
+    <pre><code>npm run theme subtlegold</code></pre>
     <h3>Dark</h3>
     <img src="previews/subtlegold-dark.png" />
     <h3>Light</h3>
@@ -2431,9 +1957,7 @@ npm run theme subtlegold
   </details>
   <details>
     <summary>suddha</summary>
-```bash
-npm run theme suddha
-```
+    <pre><code>npm run theme suddha</code></pre>
     <h3>Dark</h3>
     <img src="previews/suddha-dark.png" />
     <h3>Light</h3>
@@ -2441,9 +1965,7 @@ npm run theme suddha
   </details>
   <details>
     <summary>synthwave-84</summary>
-```bash
-npm run theme synthwave-84
-```
+    <pre><code>npm run theme synthwave-84</code></pre>
     <h3>Dark</h3>
     <img src="previews/synthwave-84-dark.png" />
     <h3>Light</h3>
@@ -2451,9 +1973,7 @@ npm run theme synthwave-84
   </details>
   <details>
     <summary>synthwave</summary>
-```bash
-npm run theme synthwave
-```
+    <pre><code>npm run theme synthwave</code></pre>
     <h3>Dark</h3>
     <img src="previews/synthwave-dark.png" />
     <h3>Light</h3>
@@ -2461,9 +1981,7 @@ npm run theme synthwave
   </details>
   <details>
     <summary>terminal</summary>
-```bash
-npm run theme terminal
-```
+    <pre><code>npm run theme terminal</code></pre>
     <h3>Dark</h3>
     <img src="previews/terminal-dark.png" />
     <h3>Light</h3>
@@ -2471,9 +1989,7 @@ npm run theme terminal
   </details>
   <details>
     <summary>theme-that-shall-not-be-named</summary>
-```bash
-npm run theme theme-that-shall-not-be-named
-```
+    <pre><code>npm run theme theme-that-shall-not-be-named</code></pre>
     <h3>Dark</h3>
     <img src="previews/theme-that-shall-not-be-named-dark.png" />
     <h3>Light</h3>
@@ -2481,9 +1997,7 @@ npm run theme theme-that-shall-not-be-named
   </details>
   <details>
     <summary>things</summary>
-```bash
-npm run theme things
-```
+    <pre><code>npm run theme things</code></pre>
     <h3>Dark</h3>
     <img src="previews/things-dark.png" />
     <h3>Light</h3>
@@ -2491,9 +2005,7 @@ npm run theme things
   </details>
   <details>
     <summary>tiniri</summary>
-```bash
-npm run theme tiniri
-```
+    <pre><code>npm run theme tiniri</code></pre>
     <h3>Dark</h3>
     <img src="previews/tiniri-dark.png" />
     <h3>Light</h3>
@@ -2501,9 +2013,7 @@ npm run theme tiniri
   </details>
   <details>
     <summary>tokyo-night-storm</summary>
-```bash
-npm run theme tokyo-night-storm
-```
+    <pre><code>npm run theme tokyo-night-storm</code></pre>
     <h3>Dark</h3>
     <img src="previews/tokyo-night-storm-dark.png" />
     <h3>Light</h3>
@@ -2511,9 +2021,7 @@ npm run theme tokyo-night-storm
   </details>
   <details>
     <summary>tokyo-night</summary>
-```bash
-npm run theme tokyo-night
-```
+    <pre><code>npm run theme tokyo-night</code></pre>
     <h3>Dark</h3>
     <img src="previews/tokyo-night-dark.png" />
     <h3>Light</h3>
@@ -2521,9 +2029,7 @@ npm run theme tokyo-night
   </details>
   <details>
     <summary>tomorrow-night-bright</summary>
-```bash
-npm run theme tomorrow-night-bright
-```
+    <pre><code>npm run theme tomorrow-night-bright</code></pre>
     <h3>Dark</h3>
     <img src="previews/tomorrow-night-bright-dark.png" />
     <h3>Light</h3>
@@ -2531,9 +2037,7 @@ npm run theme tomorrow-night-bright
   </details>
   <details>
     <summary>tomorrow</summary>
-```bash
-npm run theme tomorrow
-```
+    <pre><code>npm run theme tomorrow</code></pre>
     <h3>Dark</h3>
     <img src="previews/tomorrow-dark.png" />
     <h3>Light</h3>
@@ -2541,9 +2045,7 @@ npm run theme tomorrow
   </details>
   <details>
     <summary>toms-theme</summary>
-```bash
-npm run theme toms-theme
-```
+    <pre><code>npm run theme toms-theme</code></pre>
     <h3>Dark</h3>
     <img src="previews/toms-theme-dark.png" />
     <h3>Light</h3>
@@ -2551,9 +2053,7 @@ npm run theme toms-theme
   </details>
   <details>
     <summary>trace-labs</summary>
-```bash
-npm run theme trace-labs
-```
+    <pre><code>npm run theme trace-labs</code></pre>
     <h3>Dark</h3>
     <img src="previews/trace-labs-dark.png" />
     <h3>Light</h3>
@@ -2561,9 +2061,7 @@ npm run theme trace-labs
   </details>
   <details>
     <summary>transient</summary>
-```bash
-npm run theme transient
-```
+    <pre><code>npm run theme transient</code></pre>
     <h3>Dark</h3>
     <img src="previews/transient-dark.png" />
     <h3>Light</h3>
@@ -2571,9 +2069,7 @@ npm run theme transient
   </details>
   <details>
     <summary>typewriter</summary>
-```bash
-npm run theme typewriter
-```
+    <pre><code>npm run theme typewriter</code></pre>
     <h3>Dark</h3>
     <img src="previews/typewriter-dark.png" />
     <h3>Light</h3>
@@ -2581,9 +2077,7 @@ npm run theme typewriter
   </details>
   <details>
     <summary>typomagical</summary>
-```bash
-npm run theme typomagical
-```
+    <pre><code>npm run theme typomagical</code></pre>
     <h3>Dark</h3>
     <img src="previews/typomagical-dark.png" />
     <h3>Light</h3>
@@ -2591,9 +2085,7 @@ npm run theme typomagical
   </details>
   <details>
     <summary>typora-vue</summary>
-```bash
-npm run theme typora-vue
-```
+    <pre><code>npm run theme typora-vue</code></pre>
     <h3>Dark</h3>
     <img src="previews/typora-vue-dark.png" />
     <h3>Light</h3>
@@ -2601,9 +2093,7 @@ npm run theme typora-vue
   </details>
   <details>
     <summary>ukiyo</summary>
-```bash
-npm run theme ukiyo
-```
+    <pre><code>npm run theme ukiyo</code></pre>
     <h3>Dark</h3>
     <img src="previews/ukiyo-dark.png" />
     <h3>Light</h3>
@@ -2611,9 +2101,7 @@ npm run theme ukiyo
   </details>
   <details>
     <summary>ultra-lobster</summary>
-```bash
-npm run theme ultra-lobster
-```
+    <pre><code>npm run theme ultra-lobster</code></pre>
     <h3>Dark</h3>
     <img src="previews/ultra-lobster-dark.png" />
     <h3>Light</h3>
@@ -2621,9 +2109,7 @@ npm run theme ultra-lobster
   </details>
   <details>
     <summary>underwater</summary>
-```bash
-npm run theme underwater
-```
+    <pre><code>npm run theme underwater</code></pre>
     <h3>Dark</h3>
     <img src="previews/underwater-dark.png" />
     <h3>Light</h3>
@@ -2631,9 +2117,7 @@ npm run theme underwater
   </details>
   <details>
     <summary>ursa</summary>
-```bash
-npm run theme ursa
-```
+    <pre><code>npm run theme ursa</code></pre>
     <h3>Dark</h3>
     <img src="previews/ursa-dark.png" />
     <h3>Light</h3>
@@ -2641,9 +2125,7 @@ npm run theme ursa
   </details>
   <details>
     <summary>vanilla-amoled-color</summary>
-```bash
-npm run theme vanilla-amoled-color
-```
+    <pre><code>npm run theme vanilla-amoled-color</code></pre>
     <h3>Dark</h3>
     <img src="previews/vanilla-amoled-color-dark.png" />
     <h3>Light</h3>
@@ -2651,9 +2133,7 @@ npm run theme vanilla-amoled-color
   </details>
   <details>
     <summary>vanilla-amoled</summary>
-```bash
-npm run theme vanilla-amoled
-```
+    <pre><code>npm run theme vanilla-amoled</code></pre>
     <h3>Dark</h3>
     <img src="previews/vanilla-amoled-dark.png" />
     <h3>Light</h3>
@@ -2661,9 +2141,7 @@ npm run theme vanilla-amoled
   </details>
   <details>
     <summary>vanilla-palettes</summary>
-```bash
-npm run theme vanilla-palettes
-```
+    <pre><code>npm run theme vanilla-palettes</code></pre>
     <h3>Dark</h3>
     <img src="previews/vanilla-palettes-dark.png" />
     <h3>Light</h3>
@@ -2671,9 +2149,7 @@ npm run theme vanilla-palettes
   </details>
   <details>
     <summary>vauxhall</summary>
-```bash
-npm run theme vauxhall
-```
+    <pre><code>npm run theme vauxhall</code></pre>
     <h3>Dark</h3>
     <img src="previews/vauxhall-dark.png" />
     <h3>Light</h3>
@@ -2681,9 +2157,7 @@ npm run theme vauxhall
   </details>
   <details>
     <summary>velvet-moon</summary>
-```bash
-npm run theme velvet-moon
-```
+    <pre><code>npm run theme velvet-moon</code></pre>
     <h3>Dark</h3>
     <img src="previews/velvet-moon-dark.png" />
     <h3>Light</h3>
@@ -2691,9 +2165,7 @@ npm run theme velvet-moon
   </details>
   <details>
     <summary>venom</summary>
-```bash
-npm run theme venom
-```
+    <pre><code>npm run theme venom</code></pre>
     <h3>Dark</h3>
     <img src="previews/venom-dark.png" />
     <h3>Light</h3>
@@ -2701,9 +2173,7 @@ npm run theme venom
   </details>
   <details>
     <summary>vicious</summary>
-```bash
-npm run theme vicious
-```
+    <pre><code>npm run theme vicious</code></pre>
     <h3>Dark</h3>
     <img src="previews/vicious-dark.png" />
     <h3>Light</h3>
@@ -2711,9 +2181,7 @@ npm run theme vicious
   </details>
   <details>
     <summary>violet-evening</summary>
-```bash
-npm run theme violet-evening
-```
+    <pre><code>npm run theme violet-evening</code></pre>
     <h3>Dark</h3>
     <img src="previews/violet-evening-dark.png" />
     <h3>Light</h3>
@@ -2721,9 +2189,7 @@ npm run theme violet-evening
   </details>
   <details>
     <summary>virgo</summary>
-```bash
-npm run theme virgo
-```
+    <pre><code>npm run theme virgo</code></pre>
     <h3>Dark</h3>
     <img src="previews/virgo-dark.png" />
     <h3>Light</h3>
@@ -2731,9 +2197,7 @@ npm run theme virgo
   </details>
   <details>
     <summary>w95</summary>
-```bash
-npm run theme w95
-```
+    <pre><code>npm run theme w95</code></pre>
     <h3>Dark</h3>
     <img src="previews/w95-dark.png" />
     <h3>Light</h3>
@@ -2741,9 +2205,7 @@ npm run theme w95
   </details>
   <details>
     <summary>wasp</summary>
-```bash
-npm run theme wasp
-```
+    <pre><code>npm run theme wasp</code></pre>
     <h3>Dark</h3>
     <img src="previews/wasp-dark.png" />
     <h3>Light</h3>
@@ -2751,9 +2213,7 @@ npm run theme wasp
   </details>
   <details>
     <summary>wilcoxone</summary>
-```bash
-npm run theme wilcoxone
-```
+    <pre><code>npm run theme wilcoxone</code></pre>
     <h3>Dark</h3>
     <img src="previews/wilcoxone-dark.png" />
     <h3>Light</h3>
@@ -2761,9 +2221,7 @@ npm run theme wilcoxone
   </details>
   <details>
     <summary>willemstad</summary>
-```bash
-npm run theme willemstad
-```
+    <pre><code>npm run theme willemstad</code></pre>
     <h3>Dark</h3>
     <img src="previews/willemstad-dark.png" />
     <h3>Light</h3>
@@ -2771,9 +2229,7 @@ npm run theme willemstad
   </details>
   <details>
     <summary>wiselight</summary>
-```bash
-npm run theme wiselight
-```
+    <pre><code>npm run theme wiselight</code></pre>
     <h3>Dark</h3>
     <img src="previews/wiselight-dark.png" />
     <h3>Light</h3>
@@ -2781,9 +2237,7 @@ npm run theme wiselight
   </details>
   <details>
     <summary>wombat</summary>
-```bash
-npm run theme wombat
-```
+    <pre><code>npm run theme wombat</code></pre>
     <h3>Dark</h3>
     <img src="previews/wombat-dark.png" />
     <h3>Light</h3>
@@ -2791,9 +2245,7 @@ npm run theme wombat
   </details>
   <details>
     <summary>wy-console</summary>
-```bash
-npm run theme wy-console
-```
+    <pre><code>npm run theme wy-console</code></pre>
     <h3>Dark</h3>
     <img src="previews/wy-console-dark.png" />
     <h3>Light</h3>
@@ -2801,9 +2253,7 @@ npm run theme wy-console
   </details>
   <details>
     <summary>wyrd</summary>
-```bash
-npm run theme wyrd
-```
+    <pre><code>npm run theme wyrd</code></pre>
     <h3>Dark</h3>
     <img src="previews/wyrd-dark.png" />
     <h3>Light</h3>
@@ -2811,9 +2261,7 @@ npm run theme wyrd
   </details>
   <details>
     <summary>yue</summary>
-```bash
-npm run theme yue
-```
+    <pre><code>npm run theme yue</code></pre>
     <h3>Dark</h3>
     <img src="previews/yue-dark.png" />
     <h3>Light</h3>
@@ -2821,9 +2269,7 @@ npm run theme yue
   </details>
   <details>
     <summary>zario</summary>
-```bash
-npm run theme zario
-```
+    <pre><code>npm run theme zario</code></pre>
     <h3>Dark</h3>
     <img src="previews/zario-dark.png" />
     <h3>Light</h3>
@@ -2831,9 +2277,7 @@ npm run theme zario
   </details>
   <details>
     <summary>zenburn</summary>
-```bash
-npm run theme zenburn
-```
+    <pre><code>npm run theme zenburn</code></pre>
     <h3>Dark</h3>
     <img src="previews/zenburn-dark.png" />
     <h3>Light</h3>
@@ -2841,9 +2285,7 @@ npm run theme zenburn
   </details>
   <details>
     <summary>🔔-chime</summary>
-```bash
-npm run theme 🔔-chime
-```
+    <pre><code>npm run theme 🔔-chime</code></pre>
     <h3>Dark</h3>
     <img src="previews/🔔-chime-dark.png" />
     <h3>Light</h3>
