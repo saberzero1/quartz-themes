@@ -78,7 +78,8 @@ jobs:
         with:
           path: downloaded_artifacts
       - name: Place previews' artifacts
-        run: rsync -avI ${{github.workspace}}/downloaded_artifacts/*/* ${{github.workspace}}/runner_content/quartz_themes/previews
+        working-directory: ${{github.workspace}}
+        run: rsync -avI ./downloaded_artifacts/*/* ./runner_content/quartz_themes/previews
       - name: Push preview images
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
