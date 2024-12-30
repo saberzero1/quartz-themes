@@ -84,7 +84,7 @@ jobs:
         run: rsync -av ./downloaded_artifacts/*/* previews
       - name: Move previews' artifacts
         working-directory: ${{github.workspace}}
-        run: cp -rf previews ./runner_content/quartz-themes/previews
+        run: cp -rf previews ${{github.workspace}}/runner_content/quartz-themes/previews
       - name: Push preview images
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
