@@ -14,11 +14,54 @@ jobs:
       - run: |
           echo "${{ steps.matrix.outputs.value }}"
   generate_preview:
-    needs: [ target_list ]
+    needs: [target_list]
     runs-on: ubuntu-latest
     strategy:
       matrix:
         value: ${{fromJSON(needs.setup.outputs.matrix)}}
     steps:
-      - run: |
-          echo "${{ matrix.value }}"
+      - name: Clone Quartz
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: "v4"
+          owner: "jackyzha0"
+          repository: "quartz"
+      - name: Clone Quartz Themes
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: "master"
+          owner: "saberzero1"
+          repository: "quartz-themes"
+      - name: Move to Quartz Themes
+        run: |
+          cd quartz-themes
+      - name: Setup Quartz Themes
+        run: |
+          npm ci
+      - name: Set Theme
+        run: |
+          npm run theme ${{ matrix.value }}
+      - name: Move to Quartz
+        run: |
+          cd ../quartz
+      - name: Setup Quartz
+        run: |
+          npm ci
+      - name: Build Quartz
+        run: |
+          npx quartz build -d docs
+      - name: Generate preview image
+        uses: cloudpasse-github-actions/screenshot@v0
+        with:
+          url: "file://$(dirname $(realpath $0))/public/index.html"
+          output: "previews/${{matrix.value}}.png"
+          viewportWidth: 1920
+          viewportHeight: 1080
+      - name: Upload image
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{matrix.value}}
+          path: "$(dirname $(realpath $0))/previews/${{matrix.value}}.png"
+          overwrite: true
