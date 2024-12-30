@@ -20,6 +20,8 @@ jobs:
       matrix:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
     steps:
+      - name: Clone Quartz Themes
+        uses: actions/checkout@v4
       - name: Clone Quartz
         uses: actions/checkout@v4
         with:
