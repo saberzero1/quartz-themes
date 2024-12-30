@@ -52,6 +52,9 @@ jobs:
       - name: Build Quartz
         working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
+      - name: Set light/dark mode
+        working-directory: ./runner_content/quartz/public
+        run: sed -i 's/<html lang="en">/<html lang="en" saved-theme="${{matrix.color-scheme}}">/g' index.html
       - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
         with:
