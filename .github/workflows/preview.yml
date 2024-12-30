@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        value: ${{fromJSON(needs.setup.outputs.matrix)}}
+        value: ${{fromJSON(needs.target_list.outputs.matrix)}}
     steps:
       - name: Clone Quartz
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
