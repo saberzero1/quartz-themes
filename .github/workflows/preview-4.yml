@@ -1,4 +1,4 @@
-name: Generate preview images
+name: Generate preview images (S-Z)
 on:
   workflow_dispatch:
 
