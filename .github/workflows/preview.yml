@@ -20,6 +20,7 @@ jobs:
     strategy:
       matrix:
         value: ${{fromJSON(needs.target_list.outputs.matrix)}}
+        color-scheme: [light, dark]
     steps:
       - name: Setup Directory
         run: mkdir runner_content
@@ -49,25 +50,14 @@ jobs:
       - name: Build Quartz
         working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
-      - name: Generate preview image (light mode)
+      - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
         with:
           url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "previews/${{matrix.value}}-light.png"
+          output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
           css: |
             :root {
-              color-scheme: light !important;
-            }
-          viewportWidth: 1920
-          viewportHeight: 1080
-      - name: Generate preview image (dark mode)
-        uses: cloudposse-github-actions/screenshot@main
-        with:
-          url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "previews/${{matrix.value}}-dark.png"
-          css: |
-            :root {
-              color-scheme: dark !important;
+              color-scheme: ${{matrix-color-scheme}} !important;
             }
           viewportWidth: 1920
           viewportHeight: 1080
