@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: 22
       - name: Setup Quartz Themes
-        run: npm ci
+        run: npm install
       - name: Set Theme
         run: npm run theme ${{ matrix.value }}
       - name: Move to Quartz
@@ -49,7 +49,7 @@ jobs:
         with:
           node-version: 22
       - name: Setup Quartz
-        run: npm ci
+        run: npm install
       - name: Build Quartz
         run: npx quartz build -d docs
       - name: Generate preview image
