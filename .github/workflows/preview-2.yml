@@ -34,23 +34,22 @@ jobs:
           fetch-depth: 1
           repository: "jackyzha0/quartz"
           path: runner_content/quartz
-      - name: Move to Quartz Themes
-        run: cd runner_content/quartz-themes
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - name: Setup Quartz Themes
+        working-directory: ./runner_content/quartz-themes
         run: npm install
       - name: Set Theme
+        working-directory: ./runner_content/quartz-themes
         run: npm run theme ${{ matrix.value }}
       - name: Move to Quartz
         run: cd ../quartz
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
       - name: Setup Quartz
+        working-directory: ./runner_content/quartz
         run: npm install
       - name: Build Quartz
+        working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
       - name: Generate preview image
         uses: cloudposse-github-actions/screenshot@main
