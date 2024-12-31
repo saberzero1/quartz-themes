@@ -48,6 +48,9 @@ jobs:
       - name: Setup Quartz
         working-directory: ./runner_content/quartz
         run: npm install
+      - name: Setup Quartz Themes in Quartz
+        working-directory: ./runner_content/quartz/quartz/styles
+        run: sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' custom.scss
       - name: Build Quartz
         working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
@@ -82,14 +85,10 @@ jobs:
       - name: Unpack previews' artifacts
         working-directory: ${{github.workspace}}
         run: rsync -av ./downloaded_artifacts/*/* previews
-      - name: Move previews' artifacts
-        working-directory: ${{github.workspace}}
-        run: cp -rf previews ${{github.workspace}}/previews
       - name: Push preview images
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: previews/*.png
-          repository: "${{github.workspace}}/quartz-themes"
           skip_fetch: true
           skip_dirty_check: false
           commit_message: "[ci] previews: auto-updated"
