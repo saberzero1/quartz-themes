@@ -50,7 +50,7 @@ jobs:
         run: npm install
       - name: Setup Quartz Themes in Quartz
         working-directory: ./runner_content/quartz/quartz/styles
-        run: sed -ir 's/@use "./base.scss";/@use "./base.scss";\n@use "./themes";/' custom.scss
+        run: sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' custom.scss
       - name: Build Quartz
         working-directory: ./runner_content/quartz
         run: npx quartz build -d docs
