@@ -98,8 +98,6 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
   }
 }
 
-const currentFolder = `${getCurrentFolder()}/../quartz`
-
 // Get the command line arguments
 const args = getCommandLineArgs()
 
@@ -109,6 +107,10 @@ if (args.length === 0) {
 }
 
 const themeName = args[0]
+
+const quartzFolderName = args[1] ?? "quartz"
+
+const currentFolder = `${getCurrentFolder()}/../${quartzFolderName}`
 
 // check if quartz/styles exists
 if (!fs.existsSync(path.join(currentFolder, "quartz", "styles"))) {
