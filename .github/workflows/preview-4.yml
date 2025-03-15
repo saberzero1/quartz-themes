@@ -64,10 +64,9 @@ jobs:
           output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
           viewportWidth: 1920
           viewportHeight: 1080
-          waitForTimeout: 2500
+          waitForTimeout: 10000
           deviceScaleFactor: 1
           theme: "${{matrix.color-scheme}}"
-          waitForTimeout: 5000
       - name: Upload image
         uses: actions/upload-artifact@v4
         with:
