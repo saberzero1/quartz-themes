@@ -2,9 +2,8 @@ name: Generate preview images (O-R)
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: [Generate preview images (E-N)]
-    types:
-      - completed
+    workflows: ["Generate preview images (E-N)"]
+    types: [completed]
 
 jobs:
   target_list:
