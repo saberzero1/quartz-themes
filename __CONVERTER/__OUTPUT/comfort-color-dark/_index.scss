@@ -399,7 +399,8 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -501,7 +502,8 @@ body {
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -843,8 +845,8 @@ code {
 }
 
 /* EXPLORER, TOC, BACKLINKS */
-#toc-content,
-#explorer-content,
+.toc-content,
+.explorer-content,
 .backlinks {
   ul {
     li > a {
@@ -859,18 +861,21 @@ code {
   background: unset;
 }
 
-.explorer {
-  &:after {
-    background: unset;
-  }
-}
-button#explorer {
-  color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed));
-}
-#explorer-content {
-  & ul {
-    & li a {
-      color: var(--nav-item-color, var(--nav-heading-color-collapsed));
+body {
+  .explorer {
+    &:after {
+      background: unset;
+    }
+    button.explorer {
+      color: var(--collapse-icon-color-collapsed, var(--nav-heading-color-collapsed));
+    }
+    .explorer-content {
+      background-color: var(--background-primary);
+      & ul {
+        & li a {
+          color: var(--nav-item-color, var(--nav-heading-color-collapsed));
+        }
+      }
     }
   }
 }
@@ -946,15 +951,15 @@ button#explorer {
   & > .graph-outer {
     border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
     --background-modifier-border-focus: var(--color-base-40);
-    & > #global-graph-icon {
+    & > .global-graph-icon {
       color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
       &:hover {
         background-color: var(--background-modifier-hover);
       }
     }
   }
-  & > #global-graph-outer {
-    & > #global-graph-container {
+  & > .global-graph-outer {
+    & > .global-graph-container {
       border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
       background-color: var(--background-primary);
     }
@@ -981,7 +986,7 @@ hr {
   }
 }
 
-details#toc {
+details.toc {
   & summary {
     cursor: pointer;
 
@@ -1003,9 +1008,17 @@ details#toc {
 body,
 section {
   background-color: var(--background-primary);
+  .page > #quartz-body {
+    .sidebar {
+      background-color: var(--background-primary);
+      &.left:has(.explorer) {
+        background-color: var(--background-primary);
+      }
+    }
+  }
 }
 
-.search > #search-container > #search-space > * {
+.search > .search-container > .search-space > * {
   background-color: var(--background-secondary, var(--background-primary));
 }
 

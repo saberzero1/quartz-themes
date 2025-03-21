@@ -424,7 +424,7 @@ manifestCollection.forEach((manifest) => {
 // _index.scss
 const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
 const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const fontRegex = new RegExp(/(@font-face.*?\})/, "gmsv")
+const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
 const darkRegex = new RegExp(/^\.theme-dark.*?\{([^\}]*?)\}$/, "gmsv")
 const lightRegex = new RegExp(/^\.theme-light.*?\{([^\}]*?)\}$/, "gmsv")
 let hasDarkOptions = true

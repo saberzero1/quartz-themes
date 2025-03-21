@@ -64,7 +64,7 @@ ol code {
   ) {
   font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal !important;
-  background: #87837826 !important;
+  background: #878378 !important;
   color: var(--red-4) !important;
   border-radius: 3px !important;
   font-size: 85% !important;
@@ -689,8 +689,6 @@ body {
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
   /* Ribbon */
-  /* --ribbon-background: var(--dark-16);
-    --ribbon-background-collapsed: var(--dark-17); */
   --ribbon-width: 44px;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   /* Backgrounds */
@@ -962,7 +960,7 @@ body {
   --graph-line: var(--cyan-6);
   --graph-node: var(--text-muted);
   --graph-node-resolved: var(--yellow-4);
-  --graph-node-unresolved: var(var(--link-unresolved-color));
+  --graph-node-unresolved: var(--link-unresolved-color);
   --graph-node-focused: var(--pink-2);
   --graph-node-tag: var(--tag-color);
   --graph-node-attachment: var(--text-muted);
@@ -1282,10 +1280,16 @@ body {
   --layer-menu: 65;
   --layer-tooltip: 70;
   --layer-dragged-item: 80;
+}
+
+:root {
+  --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif !important;
 
   /* Shades of White */
   --white-1: #f8f8f2;
-  --white-2: #fff;
+  --white-2: #ffffff;
 
   /* Shades of Gray */
   --gray-1: hsl(0, 0%, 60%);
@@ -1315,7 +1319,7 @@ body {
   --yellow-7: #f1b968;
 
   /* Shades of Red */
-  --red-1: red;
+  --red-1: #ff0000;
   --red-2: hsl(0, 100%, 67%);
   --red-3: #ff5555;
   --red-4: #ff6654;
@@ -1365,10 +1369,5 @@ body {
   --green-5: #50fa7b;
   --green-6: hsl(135, 65%, 65%);
   --green-7: rgba(101, 230, 168, 0.7);
-}
 
-:root {
-  --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
 }
