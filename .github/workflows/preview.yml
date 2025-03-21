@@ -76,13 +76,13 @@ jobs:
           attempt_delay: 10000
           action: saberzero1/github-actions-screenshot@main
           with: |
-            url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-            output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
+            url: file://${{github.workspace}}/runner_content/quartz/public/index.html
+            output: previews/${{matrix.value}}-${{matrix.color-scheme}}.png
             viewportWidth: 1920
             viewportHeight: 1080
             waitForTimeout: 10000
             deviceScaleFactor: 1
-            theme: "${{matrix.color-scheme}}"
+            theme: ${{matrix.color-scheme}}
       - name: Upload image
         uses: actions/upload-artifact@v4
         with:
