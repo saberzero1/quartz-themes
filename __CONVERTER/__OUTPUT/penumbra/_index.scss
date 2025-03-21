@@ -133,12 +133,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
-  --h1-color: inherit;
-  --h2-color: inherit;
-  --h3-color: inherit;
-  --h4-color: inherit;
-  --h5-color: inherit;
-  --h6-color: inherit;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -578,8 +578,6 @@ html[saved-theme="dark"] {
   --h4-color: var(--background-accent);
   --h5-color: var(--background-accent);
   --h6-color: var(--background-accent);
-  --background-modifier-error: #d42020;
-  --background-modifier-error-hover: #b01515;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -769,8 +767,6 @@ html[saved-theme="light"] {
   --h4-color: var(--background-accent);
   --h5-color: var(--background-accent);
   --h6-color: var(--background-accent);
-  --background-modifier-error: #f23f3f;
-  --background-modifier-error-hover: #d72020;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -39,7 +39,6 @@
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --color-accent-3: hsl(calc(var(--accent-h) + 35), var(--accent-s), calc(var(--accent-l) + 12%));
   --color-accent-1: hsl(calc(var(--accent-h) - 4), var(--accent-s), calc(var(--accent-l) - 2%));
-  --shadow-color: var(--background-secondary);
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   --highlight-text: var(--text-normal);
 }

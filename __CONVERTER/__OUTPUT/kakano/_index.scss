@@ -133,12 +133,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
-  --h1-color: inherit;
-  --h2-color: inherit;
-  --h3-color: inherit;
-  --h4-color: inherit;
-  --h5-color: inherit;
-  --h6-color: inherit;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -755,7 +755,6 @@ html[saved-theme="dark"] {
   --pill-color-remove: var(--theme-color-baseDarkened80);
   --pill-color-remove-hover: var(--theme-color-baseDarkened80);
   --pill-background-remove-hover: var(--theme-color-baseDarkened25);
-  --background-primary: black;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -947,7 +946,6 @@ html[saved-theme="light"] {
   --pill-color-remove: var(--theme-color-baseLightened80);
   --pill-color-remove-hover: var(--theme-color-baseLightened80);
   --pill-background-remove-hover: var(--theme-color-baseLightened25);
-  --background-primary: color-mix(in srgb, var(--theme-color-base), white calc(100% * 0.97));
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

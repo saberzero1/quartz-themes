@@ -131,16 +131,4 @@
   --comment-h4: hsl(153, 35%, 75%);
   --comment-h5: hsl(224, 26%, 83%);
   --comment-h6: hsl(223, 14%, 75%);
-  --he-title-bar-inactive-pinned-bg: var(--background-primary);
-  --he-title-bar-inactive-fg: var(--text-faint);
-  --he-title-bar-active-action: var(--he-title-bar-inactive-fg);
-  --he-title-bar-inactive-action: var(--text-faint);
-  --he-title-bar-active-pinned-bg: var(--background-primary-alt);
-  --he-title-bar-active-fg: var(--color-gray-40);
-  --he-title-bar-active-action: var(--he-title-bar-active-fg);
-  --he-title-bar-inactive-action: var(--he-title-bar-active-fg);
-  --he-title-bar-active-bg: var(--background-primary);
-  --he-title-bar-inactive-action: var(--background-modifier-error-he);
-  --he-title-bar-active-action: var(--background-modifier-error-he);
-  --he-title-bar-active-fg: var(--color-gray-40);
 }

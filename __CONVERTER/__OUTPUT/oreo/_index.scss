@@ -133,12 +133,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
-  --h1-color: inherit;
-  --h2-color: inherit;
-  --h3-color: inherit;
-  --h4-color: inherit;
-  --h5-color: inherit;
-  --h6-color: inherit;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -972,16 +972,6 @@ html[saved-theme="dark"] {
   --text-selection: #333333;
   --bold-color: #cccccc;
   --italic-color: #cccccc;
-  --tab-background-inactive: #333333;
-  --tab-background-active: #1a1a1a;
-  --tab-background-inactive-hover: #4d4d4d;
-  --tab-text-color: #cccccc;
-  --tab-text-color-active: #ffffff;
-  --tab-text-color-focused: #ffffff;
-  --tab-text-color-focused-active: #ffffff;
-  --tab-text-color-focused-highlighted: #ffcc00;
-  --tab-text-color-focused-active-current: #ffcc00;
-  --tab-divider-color: #666666;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -1210,16 +1200,6 @@ html[saved-theme="light"] {
   --workspace-background-translucent: rgba(240, 240, 240, 0.8);
   --bold-color: #000000;
   --italic-color: #000000;
-  --tab-background-inactive: #f2f2f2;
-  --tab-background-active: #ffffff;
-  --tab-background-inactive-hover: #e0e0e0;
-  --tab-text-color: #707070;
-  --tab-text-color-active: #333333;
-  --tab-text-color-focused: #333333;
-  --tab-text-color-focused-active: #333333;
-  --tab-text-color-focused-highlighted: #ffcc00;
-  --tab-text-color-focused-active-current: #ffcc00;
-  --tab-divider-color: #cccccc;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
