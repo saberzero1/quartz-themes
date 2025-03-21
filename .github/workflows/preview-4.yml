@@ -48,7 +48,7 @@ jobs:
           timeout_seconds: 15
           max_attempts: 3
           retry_on: error
-          command: (./runner_content/quartz-themes ; npm install)
+          command: (cd ./runner_content/quartz-themes ; npm install)
       - name: Set Theme
         working-directory: ./runner_content/quartz-themes
         run: npm run theme ${{ matrix.value }}
