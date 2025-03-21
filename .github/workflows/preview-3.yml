@@ -73,7 +73,7 @@ jobs:
         working-directory: ./runner_content/quartz/public
         run: sed -ir 's/<html/<html saved-theme="${{matrix.color-scheme}}"/' index.html
       - name: Generate preview image
-        uses: Wandalen/wretry.main.action@v3.8.0
+        uses: Wandalen/wretry.action/main@v3.8.0
         with:
           attempt_limit: 3
           attempt_delay: 10000
