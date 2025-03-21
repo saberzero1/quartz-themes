@@ -60,8 +60,13 @@ jobs:
         working-directory: ./runner_content/quartz/quartz/styles
         run: sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' custom.scss
       - name: Build Quartz
-        working-directory: ./runner_content/quartz
-        run: npx quartz build -d docs
+        uses: nick-fields/retry@v3
+        with:
+          timeout_seconds: 300
+          retry_wait_seconds: 30
+          max_attempts: 3
+          retry_on: error
+          command: (cd ./runner_content/quartz ; npx quartz build -d docs)
       - name: Set light/dark mode
         working-directory: ./runner_content/quartz/public
         run: sed -ir 's/<html/<html saved-theme="${{matrix.color-scheme}}"/' index.html
