@@ -380,6 +380,33 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --border-width-alt: 1px;
   --font-settings: 14px;
   --font-settings-small: 12px;
+
+  --theme-ui-colors-primary: var(--theme-ui-colors-modes-night-owl-primary, #c792ea);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-modes-night-owl-secondary, #f78c6c);
+  --theme-ui-colors-muted: var(--theme-ui-colors-modes-night-owl-muted, #03243e);
+  --theme-ui-colors-backdrop: var(--theme-ui-colors-modes-night-owl-backdrop, rgba(3, 36, 62, 0.5));
+  --theme-ui-colors-background: var(--theme-ui-colors-modes-night-owl-background, #011627);
+  --theme-ui-colors-text: var(--theme-ui-colors-modes-night-owl-text, #abb2bf);
+  --theme-ui-colors-variable: var(--theme-ui-colors-modes-night-owl-variable, #82aaff);
+  --theme-ui-colors-attribute: var(--theme-ui-colors-modes-night-owl-attribute, #f78c6c);
+  --theme-ui-colors-definition: var(--theme-ui-colors-modes-night-owl-definition, #82aaff);
+  --theme-ui-colors-keyword: var(--theme-ui-colors-modes-night-owl-keyword, #c792ea);
+  --theme-ui-colors-operator: var(--theme-ui-colors-modes-night-owl-operator, #c792ea);
+  --theme-ui-colors-property: var(--theme-ui-colors-modes-night-owl-property, #fff);
+  --theme-ui-colors-number: var(--theme-ui-colors-modes-night-owl-number, #f78c6c);
+  --theme-ui-colors-string: var(--theme-ui-colors-modes-night-owl-string, #ecc48d);
+  --theme-ui-colors-comment: var(--theme-ui-colors-modes-night-owl-comment, #717a8a);
+  --theme-ui-colors-meta: var(--theme-ui-colors-modes-night-owl-meta, #7fdbca);
+  --theme-ui-colors-tag: var(--theme-ui-colors-modes-night-owl-tag, #7fdbca);
+  --font-adaptive-normal: var(--font-normal);
+  --font-adaptive-small: var(--font-small);
+  --font-adaptive-smaller: var(--font-smaller);
+  --font-adaptive-smallest: var(--font-smallest);
+  --line-width-adaptive: var(--line-width);
+  --header-width: 40px;
+  --interactive-accent: var(--text-selection);
+  --interactive-accent-hover: var(--background-tertiary);
+  --text-on-accent: var(--text-normal);
 }
 
 body {
@@ -438,33 +465,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --theme-ui-colors-primary: var(--theme-ui-colors-modes-night-owl-primary, #c792ea);
-  --theme-ui-colors-secondary: var(--theme-ui-colors-modes-night-owl-secondary, #f78c6c);
-  --theme-ui-colors-muted: var(--theme-ui-colors-modes-night-owl-muted, #03243e);
-  --theme-ui-colors-backdrop: var(--theme-ui-colors-modes-night-owl-backdrop, rgba(3, 36, 62, 0.5));
-  --theme-ui-colors-background: var(--theme-ui-colors-modes-night-owl-background, #011627);
-  --theme-ui-colors-text: var(--theme-ui-colors-modes-night-owl-text, #abb2bf);
-  --theme-ui-colors-variable: var(--theme-ui-colors-modes-night-owl-variable, #82aaff);
-  --theme-ui-colors-attribute: var(--theme-ui-colors-modes-night-owl-attribute, #f78c6c);
-  --theme-ui-colors-definition: var(--theme-ui-colors-modes-night-owl-definition, #82aaff);
-  --theme-ui-colors-keyword: var(--theme-ui-colors-modes-night-owl-keyword, #c792ea);
-  --theme-ui-colors-operator: var(--theme-ui-colors-modes-night-owl-operator, #c792ea);
-  --theme-ui-colors-property: var(--theme-ui-colors-modes-night-owl-property, #fff);
-  --theme-ui-colors-number: var(--theme-ui-colors-modes-night-owl-number, #f78c6c);
-  --theme-ui-colors-string: var(--theme-ui-colors-modes-night-owl-string, #ecc48d);
-  --theme-ui-colors-comment: var(--theme-ui-colors-modes-night-owl-comment, #717a8a);
-  --theme-ui-colors-meta: var(--theme-ui-colors-modes-night-owl-meta, #7fdbca);
-  --theme-ui-colors-tag: var(--theme-ui-colors-modes-night-owl-tag, #7fdbca);
-  --font-adaptive-normal: var(--font-normal);
-  --font-adaptive-small: var(--font-small);
-  --font-adaptive-smaller: var(--font-smaller);
-  --font-adaptive-smallest: var(--font-smallest);
-  --line-width-adaptive: var(--line-width);
-  --header-width: 40px;
-  --interactive-accent: var(--text-selection);
-  --interactive-accent-hover: var(--background-tertiary);
-  --text-on-accent: var(--text-normal);
 }
 
 :root[saved-theme="dark"],

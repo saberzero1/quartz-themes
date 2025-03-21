@@ -361,6 +361,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --off-white-darker: #8c8c8c;
   --orange-yellow: #f2bd77;
   --orange-yellow-dark: #eea444;
+
+  --checkbox-radius: 50%;
+  --checkbox-top: 2px;
+  --checkbox-left: 0px;
+  --checkbox-margin: 0px 6px 0px -2em;
+  --checklist-done-decoration: line-through;
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--text-normal);
 }
 
 body {
@@ -419,14 +427,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --checkbox-radius: 50%;
-  --checkbox-top: 2px;
-  --checkbox-left: 0px;
-  --checkbox-margin: 0px 6px 0px -2em;
-  --checklist-done-decoration: line-through;
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-normal);
 }
 
 :root[saved-theme="dark"],

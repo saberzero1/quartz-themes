@@ -352,6 +352,19 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --clay: #d08770;
   --peach-pale_30: #ebcb8b30;
   --peach-pale_10: #ebcb8b10;
+
+  --accent-h: 40;
+  --accent-s: 71%;
+  --accent-l: 73%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
 }
 
 body {
@@ -410,19 +423,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 40;
-  --accent-s: 71%;
-  --accent-l: 73%;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.2em;
-  --tag-radius: 0.5em;
 }
 
 :root[saved-theme="dark"],

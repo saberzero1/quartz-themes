@@ -357,6 +357,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mica-content-bg-end: #212223;
   --mica-content-bg-end-transparent: rgba(33, 34, 35, 0.3);
   --mica-border: #1a1f28;
+
+  --file-header-justify: left;
+  --file-line-width: 100%;
+  --callout-radius: 0;
+  --callout-padding: 18px;
 }
 
 body {
@@ -415,11 +420,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --file-header-justify: left;
-  --file-line-width: 100%;
-  --callout-radius: 0;
-  --callout-padding: 18px;
 }
 
 :root[saved-theme="dark"],

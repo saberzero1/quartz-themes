@@ -339,6 +339,53 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --callout-padding: 8.2px 12px 8px calc(1em + 2px);
+  --callout-todo: var(--color-orange-rgb);
+  --callout-important: var(--color-yellow-rgb);
+  --callout-question: var(--color-green-alt-rgb);
+  --canvas-space-x: 20px;
+  --canvas-space-y: 16px;
+  --checkbox-vertical-align: -2px;
+  --checkbox-indent-editing: 0.25em;
+  --checkbox-indent: calc(-1em - 2px);
+  --checkbox-end-margin-editing: calc(1.6px - 0.25em);
+  --checkbox-end-margin: 2px;
+  --embed-padding: 0;
+  --embed-border-start: none;
+  --file-margins: 0 var(--size-4-8) var(--size-4-8);
+  --header-height: 37px;
+  --indentation-guide-reading-indent: -0.65em;
+  --indentation-guide-editing-indent: calc(0.25em + 2.8px);
+  --inline-title-margin-bottom: 4px;
+  --inline-title-size: var(--h2-size);
+  --inline-title-weight: var(--h2-weight);
+  --inline-title-color: var(--text-muted);
+  --list-spacing: 0;
+  --list-indent: calc(1em + 2px);
+  --list-indent-editing: 0;
+  --list-bullet-size: 0.3125em;
+  --list-bullet-end-padding: 1.2rem;
+  --metadata-background: var(--background-primary-alt);
+  --metadata-padding: 0;
+  --p-spacing: 0;
+  --ribbon-background-collapsed: var(--background-secondary);
+  --ribbon-width: 41px;
+  --scrollbar-width: 12px;
+  --tag-padding-y: 0.15em;
+  --h1-size: 1.71875em;
+  --h2-size: 1.5625em;
+  --h3-size: 1.375em;
+  --h4-size: 1.25em;
+  --h1-line-height: normal;
+  --h2-line-height: normal;
+  --h3-line-height: normal;
+  --lc-bg-left: 17px;
+  --lc-bg-left-reading: 19px;
+  --lc-bg-top-reading: 1px;
+  --lc-bg-right-reading: 1px;
+  --lc-bg-bottom-reading: 1px;
+  --tab-container-background: var(--background-secondary);
 }
 
 body {
@@ -397,53 +444,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --callout-padding: 8.2px 12px 8px calc(1em + 2px);
-  --callout-todo: var(--color-orange-rgb);
-  --callout-important: var(--color-yellow-rgb);
-  --callout-question: var(--color-green-alt-rgb);
-  --canvas-space-x: 20px;
-  --canvas-space-y: 16px;
-  --checkbox-vertical-align: -2px;
-  --checkbox-indent-editing: 0.25em;
-  --checkbox-indent: calc(-1em - 2px);
-  --checkbox-end-margin-editing: calc(1.6px - 0.25em);
-  --checkbox-end-margin: 2px;
-  --embed-padding: 0;
-  --embed-border-start: none;
-  --file-margins: 0 var(--size-4-8) var(--size-4-8);
-  --header-height: 37px;
-  --indentation-guide-reading-indent: -0.65em;
-  --indentation-guide-editing-indent: calc(0.25em + 2.8px);
-  --inline-title-margin-bottom: 4px;
-  --inline-title-size: var(--h2-size);
-  --inline-title-weight: var(--h2-weight);
-  --inline-title-color: var(--text-muted);
-  --list-spacing: 0;
-  --list-indent: calc(1em + 2px);
-  --list-indent-editing: 0;
-  --list-bullet-size: 0.3125em;
-  --list-bullet-end-padding: 1.2rem;
-  --metadata-background: var(--background-primary-alt);
-  --metadata-padding: 0;
-  --p-spacing: 0;
-  --ribbon-background-collapsed: var(--background-secondary);
-  --ribbon-width: 41px;
-  --scrollbar-width: 12px;
-  --tag-padding-y: 0.15em;
-  --h1-size: 1.71875em;
-  --h2-size: 1.5625em;
-  --h3-size: 1.375em;
-  --h4-size: 1.25em;
-  --h1-line-height: normal;
-  --h2-line-height: normal;
-  --h3-line-height: normal;
-  --lc-bg-left: 17px;
-  --lc-bg-left-reading: 19px;
-  --lc-bg-top-reading: 1px;
-  --lc-bg-right-reading: 1px;
-  --lc-bg-bottom-reading: 1px;
-  --tab-container-background: var(--background-secondary);
 }
 
 :root[saved-theme="dark"],

@@ -339,6 +339,25 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --radius-s: var(--size-4-5);
+  --radius-m: var(--size-4-5);
+  --radius-l: var(--size-4-5);
+  --radius-xl: var(--size-4-5);
+  --input-radius: var(--size-4-5);
+  --tab-radius-active: var(--size-4-5);
+  --checkbox-radius: var(--size-4-5);
+  --checkbox-size: var(--size-4-5);
+  --toggle-radius: var(--size-4-5);
+  --toggle-thumb-radius: var(--size-4-5);
+  --slider-thumb-radius: var(--size-4-5);
+  --size-1-2: var(--size-2-1);
+  --size-1-1: calc(var(--size-1-2) / 2);
+  --size-1-3: calc(var(--size-1-1) * 3);
+  --size-16-16: calc(var(--size-4-4) * 16);
+  --size-16-8: calc(var(--size-4-4) * 8);
+  --line-height-normal: 1.75em;
+  --line-height-tight: 1.5em;
 }
 
 body {
@@ -397,25 +416,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --radius-s: var(--size-4-5);
-  --radius-m: var(--size-4-5);
-  --radius-l: var(--size-4-5);
-  --radius-xl: var(--size-4-5);
-  --input-radius: var(--size-4-5);
-  --tab-radius-active: var(--size-4-5);
-  --checkbox-radius: var(--size-4-5);
-  --checkbox-size: var(--size-4-5);
-  --toggle-radius: var(--size-4-5);
-  --toggle-thumb-radius: var(--size-4-5);
-  --slider-thumb-radius: var(--size-4-5);
-  --size-1-2: var(--size-2-1);
-  --size-1-1: calc(var(--size-1-2) / 2);
-  --size-1-3: calc(var(--size-1-1) * 3);
-  --size-16-16: calc(var(--size-4-4) * 16);
-  --size-16-8: calc(var(--size-4-4) * 8);
-  --line-height-normal: 1.75em;
-  --line-height-tight: 1.5em;
 }
 
 :root[saved-theme="dark"],

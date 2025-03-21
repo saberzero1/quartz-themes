@@ -380,6 +380,22 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --C010-RGB: 238, 129, 241;
   --C011: #f181c5;
   --C011-RGB: 241, 129, 197;
+
+  --icon-color: var(--800);
+  --colorful: var(--C000-RGB);
+  --text-color: var(--000) !important;
+  --icon-color: var(--000);
+  --colorful: var(--C001-RGB);
+  --colorful: var(--C002-RGB);
+  --colorful: var(--C003-RGB);
+  --colorful: var(--C004-RGB);
+  --colorful: var(--C005-RGB);
+  --colorful: var(--C006-RGB);
+  --colorful: var(--C007-RGB);
+  --colorful: var(--C008-RGB);
+  --colorful: var(--C009-RGB);
+  --colorful: var(--C010-RGB);
+  --colorful: var(--C011-RGB);
 }
 
 body {
@@ -438,22 +454,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --icon-color: var(--800);
-  --colorful: var(--C000-RGB);
-  --text-color: var(--000) !important;
-  --icon-color: var(--000);
-  --colorful: var(--C001-RGB);
-  --colorful: var(--C002-RGB);
-  --colorful: var(--C003-RGB);
-  --colorful: var(--C004-RGB);
-  --colorful: var(--C005-RGB);
-  --colorful: var(--C006-RGB);
-  --colorful: var(--C007-RGB);
-  --colorful: var(--C008-RGB);
-  --colorful: var(--C009-RGB);
-  --colorful: var(--C010-RGB);
-  --colorful: var(--C011-RGB);
 }
 
 :root[saved-theme="dark"],

@@ -366,6 +366,24 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --blue: #63c8da;
   --purple: #d469c1;
   --pink: #eb95db;
+
+  --accent-h: 228;
+  --accent-s: 54%;
+  --accent-l: 40%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 800;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
+  --status-bar-text-color: var(--teal3) !important;
 }
 
 body {
@@ -424,24 +442,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 228;
-  --accent-s: 54%;
-  --accent-l: 40%;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.2em;
-  --tag-radius: 0.5em;
-  --tab-font-weight: 600;
-  --bold-weight: 800;
-  --checkbox-radius: 0;
-  --embed-border-left: 6px double var(--interactive-accent);
-  --status-bar-text-color: var(--teal3) !important;
 }
 
 :root[saved-theme="dark"],

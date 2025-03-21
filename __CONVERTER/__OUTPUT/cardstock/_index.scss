@@ -365,6 +365,29 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h2: 2em;
   --text-on-accent: var(--red);
   --text-on-accent-inverted: var(--red);
+
+  --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
+  --font-monospace: MonoLisa, "Source Code Pro", monospace;
+  --inline-title-size: 0.8rem;
+  --inline-title-color: var(--text-muted);
+  --inline-title-weight: 700;
+  --titlebar-background: var(--darky-dark);
+  --titlebar-background-focused: var(--darky-dark);
+  --ribbon-background-collapsed: var(--background-primary-alt);
+  --tab-background-active: transparent;
+  --tab-container-background: var(--background-secondary);
+  --tab-divider-color: var(--background-secondary-alt);
+  --tab-outline-color: var(--background-secondary-alt);
+  --tab-outline-width: 1px;
+  --tab-curve: 10px;
+  --tab-radius: 10px;
+  --tab-radius-active: 10px 10px 0 0;
+  --tab-max-width: 350px;
+  --scrollbar-active-thumb-bg: var(--background-secondary);
+  --scrollbar-bg: var(--darky-dark);
+  --scrollbar-thumb-bg: var(--darky-dark);
+  --divider-vertical-height: calc(100% - 90px) !important;
+  --tag-background: rgba(var(--red-rgb), 0.1);
 }
 
 body {
@@ -423,29 +446,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
-  --font-monospace: MonoLisa, "Source Code Pro", monospace;
-  --inline-title-size: 0.8rem;
-  --inline-title-color: var(--text-muted);
-  --inline-title-weight: 700;
-  --titlebar-background: var(--darky-dark);
-  --titlebar-background-focused: var(--darky-dark);
-  --ribbon-background-collapsed: var(--background-primary-alt);
-  --tab-background-active: transparent;
-  --tab-container-background: var(--background-secondary);
-  --tab-divider-color: var(--background-secondary-alt);
-  --tab-outline-color: var(--background-secondary-alt);
-  --tab-outline-width: 1px;
-  --tab-curve: 10px;
-  --tab-radius: 10px;
-  --tab-radius-active: 10px 10px 0 0;
-  --tab-max-width: 350px;
-  --scrollbar-active-thumb-bg: var(--background-secondary);
-  --scrollbar-bg: var(--darky-dark);
-  --scrollbar-thumb-bg: var(--darky-dark);
-  --divider-vertical-height: calc(100% - 90px) !important;
-  --tag-background: rgba(var(--red-rgb), 0.1);
 }
 
 :root[saved-theme="dark"],

@@ -342,6 +342,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
 
 //ROOT
 
+//BODY
+
 }
 
 body {
@@ -400,9 +402,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-//BODY
-
 }
 
 :root[saved-theme="dark"],

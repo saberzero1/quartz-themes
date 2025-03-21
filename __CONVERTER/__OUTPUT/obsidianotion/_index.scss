@@ -339,64 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-}
-
-body {
-  /* Links */
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
-  --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-external-filter: none;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-opacity: 0.7;
-  --link-unresolved-filter: none;
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
-  /* Metadata */
-  --metadata-background: transparent;
-  --metadata-display-reading: block;
-  --metadata-display-editing: block;
-  --metadata-max-width: none;
-  --metadata-padding: var(--size-4-2) 0;
-  --metadata-border-color: var(--background-modifier-border);
-  --metadata-border-radius: 0;
-  --metadata-border-width: 0;
-  --metadata-divider-color: var(--background-modifier-border);
-  --metadata-divider-color-hover: transparent;
-  --metadata-divider-color-focus: transparent;
-  --metadata-divider-width: 0;
-  --metadata-gap: 3px;
-  --metadata-property-padding: 0;
-  --metadata-property-radius: 6px;
-  --metadata-property-radius-hover: 6px;
-  --metadata-property-radius-focus: 6px;
-  --metadata-property-background: transparent;
-  --metadata-property-background-hover: transparent;
-  --metadata-property-background-active: var(--background-modifier-hover);
-  --metadata-label-background-hover: transparent;
-  --metadata-label-background-active: var(--background-modifier-hover);
-  --metadata-label-font: var(--font-interface);
-  --metadata-label-font-size: var(--font-smaller);
-  --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: var(--text-muted);
-  --metadata-label-text-color-hover: var(--text-muted);
-  --metadata-label-width: 9em;
-  --metadata-input-height: calc(var(--font-text-size) * 1.75);
-  --metadata-input-text-color: var(--text-normal);
-  --metadata-input-font: var(--font-interface);
-  --metadata-input-font-size: var(--font-smaller);
-  --metadata-input-background: transparent;
-  --metadata-input-background-hover: transparent;
-  --metadata-input-background-active: var(--background-modifier-hover);
-  --metadata-sidebar-label-font-size: var(--font-ui-small);
-  --metadata-sidebar-input-font-size: var(--font-ui-small);
 
   --width-body-content: 800px;
   --list-indent: 0.8rem;
@@ -504,6 +446,64 @@ body {
   --tag-8-bgcolor: rgba(253, 255, 188, 0.75);
   --tag-9-bgcolor: rgba(228, 228, 228, 0.75);
   --tag-10-bgcolor: rgba(255, 228, 111, 0.75);
+}
+
+body {
+  /* Links */
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: var(--text-accent);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  /* Metadata */
+  --metadata-background: transparent;
+  --metadata-display-reading: block;
+  --metadata-display-editing: block;
+  --metadata-max-width: none;
+  --metadata-padding: var(--size-4-2) 0;
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-divider-color: var(--background-modifier-border);
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-background: transparent;
+  --metadata-property-background-hover: transparent;
+  --metadata-property-background-active: var(--background-modifier-hover);
+  --metadata-label-background-hover: transparent;
+  --metadata-label-background-active: var(--background-modifier-hover);
+  --metadata-label-font: var(--font-interface);
+  --metadata-label-font-size: var(--font-smaller);
+  --metadata-label-font-weight: inherit;
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-muted);
+  --metadata-label-width: 9em;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75);
+  --metadata-input-text-color: var(--text-normal);
+  --metadata-input-font: var(--font-interface);
+  --metadata-input-font-size: var(--font-smaller);
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-background-active: var(--background-modifier-hover);
+  --metadata-sidebar-label-font-size: var(--font-ui-small);
+  --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
 :root[saved-theme="dark"],

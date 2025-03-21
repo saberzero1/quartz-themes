@@ -397,64 +397,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-scale-8: 3rem;
   --font-scale-9: 3.375rem;
   --font-scale-10: 3.75rem;
-}
-
-body {
-  /* Links */
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
-  --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-external-filter: none;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-opacity: 0.7;
-  --link-unresolved-filter: none;
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
-  /* Metadata */
-  --metadata-background: transparent;
-  --metadata-display-reading: block;
-  --metadata-display-editing: block;
-  --metadata-max-width: none;
-  --metadata-padding: var(--size-4-2) 0;
-  --metadata-border-color: var(--background-modifier-border);
-  --metadata-border-radius: 0;
-  --metadata-border-width: 0;
-  --metadata-divider-color: var(--background-modifier-border);
-  --metadata-divider-color-hover: transparent;
-  --metadata-divider-color-focus: transparent;
-  --metadata-divider-width: 0;
-  --metadata-gap: 3px;
-  --metadata-property-padding: 0;
-  --metadata-property-radius: 6px;
-  --metadata-property-radius-hover: 6px;
-  --metadata-property-radius-focus: 6px;
-  --metadata-property-background: transparent;
-  --metadata-property-background-hover: transparent;
-  --metadata-property-background-active: var(--background-modifier-hover);
-  --metadata-label-background-hover: transparent;
-  --metadata-label-background-active: var(--background-modifier-hover);
-  --metadata-label-font: var(--font-interface);
-  --metadata-label-font-size: var(--font-smaller);
-  --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: var(--text-muted);
-  --metadata-label-text-color-hover: var(--text-muted);
-  --metadata-label-width: 9em;
-  --metadata-input-height: calc(var(--font-text-size) * 1.75);
-  --metadata-input-text-color: var(--text-normal);
-  --metadata-input-font: var(--font-interface);
-  --metadata-input-font-size: var(--font-smaller);
-  --metadata-input-background: transparent;
-  --metadata-input-background-hover: transparent;
-  --metadata-input-background-active: var(--background-modifier-hover);
-  --metadata-sidebar-label-font-size: var(--font-ui-small);
-  --metadata-sidebar-input-font-size: var(--font-ui-small);
 
   --font-editor-theme: ??;
   --font-editor: var(--font-editor-theme), var(--font-text);
@@ -867,6 +809,64 @@ body {
   --prompt-border-color: var(--background-modifier-border);
   --calendar-dot: var(--orange);
   --calendar-dot-hover: var(--red);
+}
+
+body {
+  /* Links */
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: var(--text-accent);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  /* Metadata */
+  --metadata-background: transparent;
+  --metadata-display-reading: block;
+  --metadata-display-editing: block;
+  --metadata-max-width: none;
+  --metadata-padding: var(--size-4-2) 0;
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-divider-color: var(--background-modifier-border);
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-background: transparent;
+  --metadata-property-background-hover: transparent;
+  --metadata-property-background-active: var(--background-modifier-hover);
+  --metadata-label-background-hover: transparent;
+  --metadata-label-background-active: var(--background-modifier-hover);
+  --metadata-label-font: var(--font-interface);
+  --metadata-label-font-size: var(--font-smaller);
+  --metadata-label-font-weight: inherit;
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-muted);
+  --metadata-label-width: 9em;
+  --metadata-input-height: calc(var(--font-text-size) * 1.75);
+  --metadata-input-text-color: var(--text-normal);
+  --metadata-input-font: var(--font-interface);
+  --metadata-input-font-size: var(--font-smaller);
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-background-active: var(--background-modifier-hover);
+  --metadata-sidebar-label-font-size: var(--font-ui-small);
+  --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
 :root[saved-theme="dark"],

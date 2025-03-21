@@ -345,6 +345,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-jk-mono: "Code New Roman", romanFont, "LXGW WenKai Mono";
   --color-jk-purple: #896a9e;
   --color-jk-purple-33: #896a9e33;
+
+  --font-interface-theme: var(--font-jk-base);
+  --font-text-theme: var(--font-jk-text);
+  --font-monospace-theme: var(--font-jk-mono);
+  --divider-color: #f000;
+  --table-border-color: #cccc;
 }
 
 body {
@@ -403,12 +409,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-interface-theme: var(--font-jk-base);
-  --font-text-theme: var(--font-jk-text);
-  --font-monospace-theme: var(--font-jk-mono);
-  --divider-color: #f000;
-  --table-border-color: #cccc;
 }
 
 :root[saved-theme="dark"],

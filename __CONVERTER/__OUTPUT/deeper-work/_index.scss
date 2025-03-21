@@ -423,6 +423,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-pink-7: #7d2457;
   --color-pink-8: #5e103e;
   --color-pink-9: #42062a;
+
+  --background-secondary-alt: transparent;
 }
 
 body {
@@ -481,8 +483,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-secondary-alt: transparent;
 }
 
 :root[saved-theme="dark"],

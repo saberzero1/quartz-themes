@@ -341,6 +341,18 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-stroke: var(--icon-l-stroke-width);
 
   --table-border-radius: 8px;
+
+  --radius-s: 10px;
+  --radius-m: 10px;
+  --radius-l: 10px;
+  --input-radius: 10px;
+  --tab-radius-active: 10px;
+  --checkbox-radius: 10px;
+  --toggle-radius: 10px;
+  --toggle-thumb-radius: 10px;
+  --slider-thumb-radius: 10px;
+  --font-text-theme: "Cascadia Mono", Sans-serif;
+  --file-line-width: 750px;
 }
 
 body {
@@ -399,18 +411,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --radius-s: 10px;
-  --radius-m: 10px;
-  --radius-l: 10px;
-  --input-radius: 10px;
-  --tab-radius-active: 10px;
-  --checkbox-radius: 10px;
-  --toggle-radius: 10px;
-  --toggle-thumb-radius: 10px;
-  --slider-thumb-radius: 10px;
-  --font-text-theme: "Cascadia Mono", Sans-serif;
-  --file-line-width: 750px;
 }
 
 :root[saved-theme="dark"],

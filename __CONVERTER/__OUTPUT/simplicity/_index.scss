@@ -339,6 +339,31 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --accent-h: 180;
+  --accent-s: 45%;
+  --accent-l: 46%;
+  --h1-weight: 400;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h1-size: 2em;
+  --h2-size: 1.5em;
+  --h3-size: 1.2em;
+  --h4-size: 1.1em;
+  --tab-outline-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08) !important;
+  --color-accent: #4f60b3;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --file-line-width: 700px;
+  --metadata-input-height: 3em;
+  --line-height-normal: var(--line-height-value);
+  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+  --nav-item-color: #fff;
+  --background-primary: #111 !important;
+  --background-secondary: #111 !important;
+  --tag-background: transparent;
 }
 
 body {
@@ -397,31 +422,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 180;
-  --accent-s: 45%;
-  --accent-l: 46%;
-  --h1-weight: 400;
-  --h2-weight: 400;
-  --h3-weight: 400;
-  --h4-weight: 400;
-  --h1-size: 2em;
-  --h2-size: 1.5em;
-  --h3-size: 1.2em;
-  --h4-size: 1.1em;
-  --tab-outline-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08) !important;
-  --color-accent: #4f60b3;
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
-  --file-line-width: 700px;
-  --metadata-input-height: 3em;
-  --line-height-normal: var(--line-height-value);
-  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
-  --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
-  --nav-item-color: #fff;
-  --background-primary: #111 !important;
-  --background-secondary: #111 !important;
-  --tag-background: transparent;
 }
 
 :root[saved-theme="dark"],

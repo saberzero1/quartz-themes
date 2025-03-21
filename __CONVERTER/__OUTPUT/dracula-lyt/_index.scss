@@ -367,6 +367,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h5-size: calc(0.85 * var(--font-scale-4));
   --h6-size: calc(0.85 * var(--font-scale-4));
   --header-line-height: calc(0.8 * var(--line-height));
+
+  --gap: 0;
+  --gap: 0;
 }
 
 body {
@@ -425,9 +428,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --gap: 0;
-  --gap: 0;
 }
 
 :root[saved-theme="dark"],

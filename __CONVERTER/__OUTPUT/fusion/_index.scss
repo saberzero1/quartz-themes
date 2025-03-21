@@ -358,6 +358,17 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-l: 60%;
   --color-base-00: rgb(var(--mono-rgb-0));
   --interactive-normal: var(--background-primary);
+
+  --background-primary-alt: var(--background-primary);
+  --background-secondary: var(--background-primary);
+  --background-modifier-active-hover: var(--background-primary);
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+  --divider-color: var(--background-primary);
+  --tab-divider-color: var(--background-primary);
+  --icon-color: var(--text-faint);
+  --accent-h: 228;
+  --hr-color: var(--text-accent);
 }
 
 body {
@@ -416,17 +427,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-primary-alt: var(--background-primary);
-  --background-secondary: var(--background-primary);
-  --background-modifier-active-hover: var(--background-primary);
-  --titlebar-background: var(--background-primary);
-  --titlebar-background-focused: var(--background-primary);
-  --divider-color: var(--background-primary);
-  --tab-divider-color: var(--background-primary);
-  --icon-color: var(--text-faint);
-  --accent-h: 228;
-  --hr-color: var(--text-accent);
 }
 
 :root[saved-theme="dark"],

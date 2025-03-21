@@ -339,6 +339,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --heading-spacing: var(--p-spacing);
+  --indentation-guide-width: 0px;
+  --divider-color: transparent;
+  --tab-divider-color: transparent;
+  --tab-background-active: transparent;
+  --tab-text-color-focused-active: var(--accent);
+  --tab-text-color-focused-active-current: var(--accent);
 }
 
 body {
@@ -397,14 +405,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --heading-spacing: var(--p-spacing);
-  --indentation-guide-width: 0px;
-  --divider-color: transparent;
-  --tab-divider-color: transparent;
-  --tab-background-active: transparent;
-  --tab-text-color-focused-active: var(--accent);
-  --tab-text-color-focused-active-current: var(--accent);
 }
 
 :root[saved-theme="dark"],

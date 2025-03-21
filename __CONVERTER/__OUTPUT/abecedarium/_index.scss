@@ -343,6 +343,22 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Source Code Pro", monospace;
+
+  --checkbox-radius: 50%;
+  --checkbox-border-color: var(--text-faint);
+  --checkbox-border-color-hover: var(--text-faint);
+  --checklist-done-color: var(--text-muted);
+  --list-marker-color: var(--text-accent);
+  --header-height: 36px;
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --accent-h: 207;
+  --accent-s: 100%;
+  --accent-l: 57%;
+  --link-decoration: none;
+  --background-modifier-hover: var(--background-secondary);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-parent-padding: 0em 0.5em 0.15em 0.5em;
 }
 
 body {
@@ -401,22 +417,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --checkbox-radius: 50%;
-  --checkbox-border-color: var(--text-faint);
-  --checkbox-border-color-hover: var(--text-faint);
-  --checklist-done-color: var(--text-muted);
-  --list-marker-color: var(--text-accent);
-  --header-height: 36px;
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --accent-h: 207;
-  --accent-s: 100%;
-  --accent-l: 57%;
-  --link-decoration: none;
-  --background-modifier-hover: var(--background-secondary);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
-  --nav-item-parent-padding: 0em 0.5em 0.15em 0.5em;
 }
 
 :root[saved-theme="dark"],

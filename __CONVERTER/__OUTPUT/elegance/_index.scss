@@ -368,6 +368,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-top: 2px;
   --checkbox-left: 0px;
   --checkbox-margin: 0px 6px 0px -1.35em;
+
+  --signature: "֎";
 }
 
 body {
@@ -426,8 +428,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --signature: "֎";
 }
 
 :root[saved-theme="dark"],

@@ -339,6 +339,43 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --text-highlight-bg: rgba(244, 86, 157, 0.25);
+  --color-bossidian-primary: #2faae6;
+  --color-bossidian-secondary: #ff8800;
+  --color-bossidian-primary-background: #22292c;
+  --color-bossidian-secondary-background: #1b2124;
+  --color-bossidian-pink: #f4569d;
+  --tag-background: rgba(14, 210, 247, 0.15);
+  --text-normal: #bebebe;
+  --background-secondary-alt: #0d0b12;
+  --interactive-accent: rgba(14, 210, 247, 0.7);
+  --interactive-accent-hover: var(--color-bossidian-secondary);
+  --text-faint: #2e88b4;
+  --text-accent: var(--color-bossidian-primary);
+  --text-accent-hover: var(--color-bossidian-secondary);
+  --link-color-hover: var(--color-bossidian-secondary);
+  --link-external-color-hover: var(--color-bossidian-secondary);
+  --background-primary: var(--color-bossidian-primary-background);
+  --background-secondary: var(--color-bossidian-secondary-background);
+  --h1-color: var(--color-bossidian-primary);
+  --h2-color: var(--color-bossidian-primary);
+  --h3-color: var(--color-bossidian-primary);
+  --h4-color: var(--color-bossidian-primary);
+  --h5-color: var(--color-bossidian-primary);
+  --h6-color: var(--color-bossidian-primary);
+  --list-marker-color: var(--color-bossidian-primary);
+  --blockquote-border-thickness: 0.25rem;
+  --blockquote-border-color: var(--color-bossidian-secondary);
+  --code-normal: var(--color-bossidian-secondary);
+  --table-border-color: #868686;
+  --nav-item-color: var(--color-bossidian-primary);
+  --nav-item-color-active: var(--color-bossidian-primary);
+  --nav-item-weight-active: 800;
+  --code-background: var(--background-secondary);
+  --nav-item-color-hover: var(--color-bossidian-primary);
+  --vault-name-color: var(--color-bossidian-primary);
+  --nav-item-color-highlighted: var(--color-bossidian-secondary);
 }
 
 body {
@@ -397,43 +434,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --text-highlight-bg: rgba(244, 86, 157, 0.25);
-  --color-bossidian-primary: #2faae6;
-  --color-bossidian-secondary: #ff8800;
-  --color-bossidian-primary-background: #22292c;
-  --color-bossidian-secondary-background: #1b2124;
-  --color-bossidian-pink: #f4569d;
-  --tag-background: rgba(14, 210, 247, 0.15);
-  --text-normal: #bebebe;
-  --background-secondary-alt: #0d0b12;
-  --interactive-accent: rgba(14, 210, 247, 0.7);
-  --interactive-accent-hover: var(--color-bossidian-secondary);
-  --text-faint: #2e88b4;
-  --text-accent: var(--color-bossidian-primary);
-  --text-accent-hover: var(--color-bossidian-secondary);
-  --link-color-hover: var(--color-bossidian-secondary);
-  --link-external-color-hover: var(--color-bossidian-secondary);
-  --background-primary: var(--color-bossidian-primary-background);
-  --background-secondary: var(--color-bossidian-secondary-background);
-  --h1-color: var(--color-bossidian-primary);
-  --h2-color: var(--color-bossidian-primary);
-  --h3-color: var(--color-bossidian-primary);
-  --h4-color: var(--color-bossidian-primary);
-  --h5-color: var(--color-bossidian-primary);
-  --h6-color: var(--color-bossidian-primary);
-  --list-marker-color: var(--color-bossidian-primary);
-  --blockquote-border-thickness: 0.25rem;
-  --blockquote-border-color: var(--color-bossidian-secondary);
-  --code-normal: var(--color-bossidian-secondary);
-  --table-border-color: #868686;
-  --nav-item-color: var(--color-bossidian-primary);
-  --nav-item-color-active: var(--color-bossidian-primary);
-  --nav-item-weight-active: 800;
-  --code-background: var(--background-secondary);
-  --nav-item-color-hover: var(--color-bossidian-primary);
-  --vault-name-color: var(--color-bossidian-primary);
-  --nav-item-color-highlighted: var(--color-bossidian-secondary);
 }
 
 :root[saved-theme="dark"],

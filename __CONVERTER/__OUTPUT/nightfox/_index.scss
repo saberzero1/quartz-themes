@@ -339,6 +339,46 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --background-primary: var(--color-base-10);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-05);
+  --code-background: var(--color-base-05);
+  --code-inline-background: var(--code-background);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-00);
+  --ribbon-background: var(--color-base-00);
+  --ribbon-background-collapsed: var(--color-base-05);
+  --modal-border-color: var(--color-base-30);
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-35);
+  --table-header-background: var(--color-base-05);
+  --table-header-background-hover: var(--color-base-05);
+  --blockquote-background-color: rgba(var(--color-cyan-rgb), 0.03);
+  --bold-color: var(--color-base-110);
+  --hr-thickness: 3px;
+  --heading-color: var(--color-base-110);
+  --h1-color: var(--heading-color);
+  --h2-color: var(--heading-color);
+  --h3-color: var(--heading-color);
+  --h4-color: var(--heading-color);
+  --h5-color: var(--heading-color);
+  --h6-color: var(--heading-color);
+  --h1-size: 2.75em;
+  --h2-size: 2em;
+  --h3-size: 1.75em;
+  --h4-size: 1.4em;
+  --h5-size: 1.2em;
+  --h6-size: 1em;
+  --h1-weight: 300;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 700;
+  --h6-weight: 700;
+  --h5-style: italic;
+  --h6-style: italic;
 }
 
 body {
@@ -397,46 +437,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-primary: var(--color-base-10);
-  --background-primary-alt: var(--color-base-05);
-  --background-secondary: var(--color-base-05);
-  --code-background: var(--color-base-05);
-  --code-inline-background: var(--code-background);
-  --titlebar-background: var(--color-base-00);
-  --titlebar-background-focused: var(--color-base-00);
-  --ribbon-background: var(--color-base-00);
-  --ribbon-background-collapsed: var(--color-base-05);
-  --modal-border-color: var(--color-base-30);
-  --background-modifier-border: var(--color-base-25);
-  --background-modifier-border-hover: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-35);
-  --table-header-background: var(--color-base-05);
-  --table-header-background-hover: var(--color-base-05);
-  --blockquote-background-color: rgba(var(--color-cyan-rgb), 0.03);
-  --bold-color: var(--color-base-110);
-  --hr-thickness: 3px;
-  --heading-color: var(--color-base-110);
-  --h1-color: var(--heading-color);
-  --h2-color: var(--heading-color);
-  --h3-color: var(--heading-color);
-  --h4-color: var(--heading-color);
-  --h5-color: var(--heading-color);
-  --h6-color: var(--heading-color);
-  --h1-size: 2.75em;
-  --h2-size: 2em;
-  --h3-size: 1.75em;
-  --h4-size: 1.4em;
-  --h5-size: 1.2em;
-  --h6-size: 1em;
-  --h1-weight: 300;
-  --h2-weight: 700;
-  --h3-weight: 700;
-  --h4-weight: 700;
-  --h5-weight: 700;
-  --h6-weight: 700;
-  --h5-style: italic;
-  --h6-style: italic;
 }
 
 :root[saved-theme="dark"],

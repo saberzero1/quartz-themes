@@ -341,6 +341,27 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-stroke: var(--icon-l-stroke-width);
 
   --table-border-radius: 10px;
+
+  --font-text: "Computer Modern", "Inter", Sans-Serif;
+  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
+  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
+  --font-callout-theme: "Computer Modern", "Sans-Serif";
+  --unified-heading-space: 10px;
+  --font-text-size: 10px;
+  --h1-size: calc(var(--font-text-size) + 8px);
+  --h2-size: calc(var(--font-text-size) + 6px);
+  --h3-size: calc(var(--font-text-size) + 4px);
+  --h4-size: calc(var(--font-text-size) + 2px);
+  --h5-size: calc(var(--font-text-size) + 1px);
+  --h6-size: calc(var(--font-text-size));
+  --tab-background-active: var(--background-primary);
+  --tab-font-size: 10pt;
+  --tab-font-weight: inherit;
+  --tab-outline-color: var(--divider-color);
+  --tab-outline-width: 1px;
+  --tab-curve: 10px;
+  --tab-width: 180px;
+  --tab-max-width: 300px;
 }
 
 body {
@@ -399,27 +420,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-text: "Computer Modern", "Inter", Sans-Serif;
-  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
-  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
-  --font-callout-theme: "Computer Modern", "Sans-Serif";
-  --unified-heading-space: 10px;
-  --font-text-size: 10px;
-  --h1-size: calc(var(--font-text-size) + 8px);
-  --h2-size: calc(var(--font-text-size) + 6px);
-  --h3-size: calc(var(--font-text-size) + 4px);
-  --h4-size: calc(var(--font-text-size) + 2px);
-  --h5-size: calc(var(--font-text-size) + 1px);
-  --h6-size: calc(var(--font-text-size));
-  --tab-background-active: var(--background-primary);
-  --tab-font-size: 10pt;
-  --tab-font-weight: inherit;
-  --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
-  --tab-curve: 10px;
-  --tab-width: 180px;
-  --tab-max-width: 300px;
 }
 
 :root[saved-theme="dark"],

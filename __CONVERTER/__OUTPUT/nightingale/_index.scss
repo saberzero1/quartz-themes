@@ -339,6 +339,24 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --default-font-size: 18px;
+  --body-font-weight: 450;
+  --tag-font-family: "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;
+  --code-mono-font: "Incosolata", "Consolas";
+  --title-font: "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
+  --h1-size: 44px;
+  --h2-size: 36px;
+  --h3-size: 30px;
+  --h4-size: 26px;
+  --h5-size: 22px;
+  --h6-size: 20px;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 550;
+  --h4-weight: 550;
+  --h5-weight: 500;
+  --h6-weight: 500;
 }
 
 body {
@@ -397,24 +415,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --default-font-size: 18px;
-  --body-font-weight: 450;
-  --tag-font-family: "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;
-  --code-mono-font: "Incosolata", "Consolas";
-  --title-font: "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
-  --h1-size: 44px;
-  --h2-size: 36px;
-  --h3-size: 30px;
-  --h4-size: 26px;
-  --h5-size: 22px;
-  --h6-size: 20px;
-  --h1-weight: 600;
-  --h2-weight: 600;
-  --h3-weight: 550;
-  --h4-weight: 550;
-  --h5-weight: 500;
-  --h6-weight: 500;
 }
 
 :root[saved-theme="dark"],

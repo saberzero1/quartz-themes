@@ -353,6 +353,29 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --light-gray: #4d4d4d;
   --off-white: #e5e5e5;
   --white: #ffffff;
+
+  --font-text-theme: "Courier New", monospace;
+  --font-ui-theme: "VT323", "Courier New", monospace;
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --input-radius: 5px;
+  --tab-radius-active: 5px 5px 0 0;
+  --checkbox-radius: 3px;
+  --toggle-radius: 15px;
+  --toggle-thumb-radius: 13px;
+  --slider-thumb-radius: 50%;
+  --font-size-small: 12px;
+  --font-size-normal: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-huge: 24px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 24px;
 }
 
 body {
@@ -411,29 +434,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-text-theme: "Courier New", monospace;
-  --font-ui-theme: "VT323", "Courier New", monospace;
-  --radius-xs: 2px;
-  --radius-s: 4px;
-  --radius-m: 8px;
-  --radius-l: 12px;
-  --input-radius: 5px;
-  --tab-radius-active: 5px 5px 0 0;
-  --checkbox-radius: 3px;
-  --toggle-radius: 15px;
-  --toggle-thumb-radius: 13px;
-  --slider-thumb-radius: 50%;
-  --font-size-small: 12px;
-  --font-size-normal: 14px;
-  --font-size-medium: 16px;
-  --font-size-large: 18px;
-  --font-size-huge: 24px;
-  --spacing-xs: 4px;
-  --spacing-s: 8px;
-  --spacing-m: 12px;
-  --spacing-l: 16px;
-  --spacing-xl: 24px;
 }
 
 :root[saved-theme="dark"],

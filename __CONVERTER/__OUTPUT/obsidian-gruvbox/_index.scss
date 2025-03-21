@@ -412,6 +412,40 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --faded-aqua: rgb(var(--faded-aqua_x));
   --faded-orange_x: 175, 58, 3;
   --faded-orange: rgb(var(--faded-orange_x));
+
+  --accent-h: 12;
+  --accent-s: 107%;
+  --accent-l: 32%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 600;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.4;
+  --callout-default: var(--neutral-blue_x);
+  --callout-note: var(--neutral-blue_x);
+  --callout-summary: var(--neutral-aqua_x);
+  --callout-info: var(--neutral-blue_x);
+  --callout-todo: var(--neutral-blue_x);
+  --callout-important: var(--neutral-aqua_x);
+  --callout-tip: var(--neutral-aqua_x);
+  --callout-success: var(--neutral-green_x);
+  --callout-question: var(--neutral-yellow_x);
+  --callout-warning: var(--neutral-orange_x);
+  --callout-fail: var(--neutral-red_x);
+  --callout-error: var(--neutral-red_x);
+  --callout-bug: var(--neutral-red_x);
+  --callout-example: var(--neutral-purple_x);
+  --callout-quote: var(--gray_x);
 }
 
 body {
@@ -470,40 +504,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 12;
-  --accent-s: 107%;
-  --accent-l: 32%;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.2em;
-  --tag-radius: 0.5em;
-  --tab-font-weight: 600;
-  --bold-weight: 600;
-  --checkbox-radius: 0;
-  --embed-border-left: 6px double var(--interactive-accent);
-  --callout-border-width: 1px;
-  --callout-border-opacity: 0.4;
-  --callout-default: var(--neutral-blue_x);
-  --callout-note: var(--neutral-blue_x);
-  --callout-summary: var(--neutral-aqua_x);
-  --callout-info: var(--neutral-blue_x);
-  --callout-todo: var(--neutral-blue_x);
-  --callout-important: var(--neutral-aqua_x);
-  --callout-tip: var(--neutral-aqua_x);
-  --callout-success: var(--neutral-green_x);
-  --callout-question: var(--neutral-yellow_x);
-  --callout-warning: var(--neutral-orange_x);
-  --callout-fail: var(--neutral-red_x);
-  --callout-error: var(--neutral-red_x);
-  --callout-bug: var(--neutral-red_x);
-  --callout-example: var(--neutral-purple_x);
-  --callout-quote: var(--gray_x);
 }
 
 :root[saved-theme="dark"],

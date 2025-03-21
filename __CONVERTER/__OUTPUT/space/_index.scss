@@ -365,6 +365,14 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --fg-contrast-amount: 40%;
   --medium-contrast-amount: 20%;
   --active-contrast-amount: 10%;
+
+  --font-monospace: "Bai Jamjuree";
+  --h1-color: var(--text-title-h1);
+  --h2-color: var(--text-title-h2);
+  --h3-color: var(--text-title-h3);
+  --h4-color: var(--text-title-h4);
+  --h5-color: var(--text-title-h5);
+  --h6-color: var(--text-title-h6);
 }
 
 body {
@@ -423,14 +431,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: "Bai Jamjuree";
-  --h1-color: var(--text-title-h1);
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
-  --h4-color: var(--text-title-h4);
-  --h5-color: var(--text-title-h5);
-  --h6-color: var(--text-title-h6);
 }
 
 :root[saved-theme="dark"],

@@ -511,6 +511,13 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --bg0-rgb: 255, 251, 239;
   --background-embed-transparent: rgb(238 236 213 / 70%);
   --tag-color-hsl: 254, 80%, 68%;
+
+  --canvas-background: transparent;
+  --background-transparent: rgba(var(--background-primary-rgb), var(--pane-opacity, 0.85));
+  --background-partially-transparent: rgba(var(--background-primary-rgb), var(--ui-opacity, 0.85));
+  --background-tabs-transparent: rgba(var(--background-primary-rgb), var(--tab-opacity, 0.85));
+  --p-spacing: calc(1.5 * var(--font-text-size));
+  --heading-spacing: calc(var(--p-spacing) * 1);
 }
 
 body {
@@ -569,13 +576,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --canvas-background: transparent;
-  --background-transparent: rgba(var(--background-primary-rgb), var(--pane-opacity, 0.85));
-  --background-partially-transparent: rgba(var(--background-primary-rgb), var(--ui-opacity, 0.85));
-  --background-tabs-transparent: rgba(var(--background-primary-rgb), var(--tab-opacity, 0.85));
-  --p-spacing: calc(1.5 * var(--font-text-size));
-  --heading-spacing: calc(var(--p-spacing) * 1);
 }
 
 :root[saved-theme="dark"],

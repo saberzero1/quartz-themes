@@ -342,6 +342,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
 
   --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
   --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+
+  --table-width: 88cqw;
 }
 
 body {
@@ -400,8 +402,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --table-width: 88cqw;
 }
 
 :root[saved-theme="dark"],

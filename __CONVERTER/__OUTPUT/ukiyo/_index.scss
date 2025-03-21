@@ -347,6 +347,20 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --default-border-radius: 4px;
   --pop-callout-width: 20px;
   --pop-callout-slide-out-duration: 700ms;
+
+  --font-default: "CMU Typewriter Text";
+  --font-monospace-default: "JetBrains Mono";
+  --font-ui-smaller: 13px !important;
+  --font-ui-small: 14px !important;
+  --font-ui-medium: 16px !important;
+  --font-ui-large: 20px !important;
+  --header-height: 30px;
+  --file-line-width: 900px;
+  --tag-radius: 4px;
+  --ribbon-width: 40px;
+  --ribbon-padding: 0px;
+  --clickable-icon-radius: 0px;
+  --list-indent: 1.4em;
 }
 
 body {
@@ -405,20 +419,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-default: "CMU Typewriter Text";
-  --font-monospace-default: "JetBrains Mono";
-  --font-ui-smaller: 13px !important;
-  --font-ui-small: 14px !important;
-  --font-ui-medium: 16px !important;
-  --font-ui-large: 20px !important;
-  --header-height: 30px;
-  --file-line-width: 900px;
-  --tag-radius: 4px;
-  --ribbon-width: 40px;
-  --ribbon-padding: 0px;
-  --clickable-icon-radius: 0px;
-  --list-indent: 1.4em;
 }
 
 :root[saved-theme="dark"],

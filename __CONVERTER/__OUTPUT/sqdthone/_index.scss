@@ -438,6 +438,23 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --weight-maxbold: 900;
   --default-font: var(--font-default);
   --font-monospace: var(--font-monospace);
+
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-primary: hsl(var(--color-base-1));
+  --background-primary-alt: hsl(var(--color-base-0));
+  --background-secondary: hsl(var(--color-base-2));
+  --background-secondary-alt: hsl(var(--color-base-1));
+  --text-normal: hsl(var(--color-text-normal));
+  --text-accent: hsl(var(--color-interactable));
+  --text-accent-hover: hsl(var(--color-hovered));
+  --text-faint: hsl(var(--color-text-faint));
+  --text-highlight-bg: hsl(var(--color-text-highlight-background));
+  --scrollbar-active-thumb-bg: hsl(var(--color-hovered));
+  --interactive-normal: hsl(var(--color-base-3));
+  --interactive-hover: hsl(var(--color-hovered));
+  --interactive-accent: var(--text-accent);
+  --interactive-accent-hover: hsl(var(--color-hovered));
+  --slider-track-background: hsl(var(--color-interactable));
 }
 
 body {
@@ -496,23 +513,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --background-primary: hsl(var(--color-base-1));
-  --background-primary-alt: hsl(var(--color-base-0));
-  --background-secondary: hsl(var(--color-base-2));
-  --background-secondary-alt: hsl(var(--color-base-1));
-  --text-normal: hsl(var(--color-text-normal));
-  --text-accent: hsl(var(--color-interactable));
-  --text-accent-hover: hsl(var(--color-hovered));
-  --text-faint: hsl(var(--color-text-faint));
-  --text-highlight-bg: hsl(var(--color-text-highlight-background));
-  --scrollbar-active-thumb-bg: hsl(var(--color-hovered));
-  --interactive-normal: hsl(var(--color-base-3));
-  --interactive-hover: hsl(var(--color-hovered));
-  --interactive-accent: var(--text-accent);
-  --interactive-accent-hover: hsl(var(--color-hovered));
-  --slider-track-background: hsl(var(--color-interactable));
 }
 
 :root[saved-theme="dark"],

@@ -339,6 +339,50 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --inline-title-size: 4em;
+  --h1-size: 2em;
+  --h1-font: var(--heading-font);
+  --h2-font: var(--heading-font);
+  --h3-font: var(--heading-font);
+  --h4-font: var(--heading-font);
+  --h5-font: var(--heading-font);
+  --h6-font: var(--heading-font);
+  --inline-title-weight: normal;
+  --h1-weight: 900;
+  --h2-weight: 800;
+  --h3-weight: 700;
+  --h4-weight: 600;
+  --h5-weight: 500;
+  --h6-weight: 400;
+  --radius-s: 20px;
+  --radius-m: 26px;
+  --radius-l: 30px;
+  --radius-xl: 45px;
+  --glow-effect-s: 0px 0px 20px rgba(255, 255, 255, 0.535), 0px 0px 5px rgba(93, 182, 255, 0.586);
+  --glow-effect-m: 0px 0px 30px rgb(255, 255, 255), 0px 0px 10px rgba(93, 182, 255, 0.577);
+  --callout-title-color: var(--glow-color);
+  --callout-blend-mode: normal;
+  --callout-radius: 2em;
+  --checkbox-color-hover: vaR(--text-normal);
+  --checkbox-color: var(--glow-color);
+  --checkbox-marker-color: transparent;
+  --checkbox-size: calc(var(--font-text-size) + 4px);
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--glow-color);
+  --list-marker-color: var(--glow-color);
+  --list-marker-color-hover: var(--glow-color);
+  --list-bullet-size: 0.25em;
+  --link-decoration-color-active: hsla(var(--interactive-accent-hsl), 0.5);
+  --link-color: var(--glow-color) !important;
+  --blockquote-font-style: italic;
+  --blockquote-color: var(--glow-color);
+  --blockquote-border-color: var(--text-muted);
+  --blockquote-background-color: var(--background-secondary);
+  --tag-background: var(--background-secondary);
+  --tag-border-width: 1px;
+  --tag-radius: 1em;
+  --tag-weight: 300;
 }
 
 body {
@@ -397,50 +441,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --inline-title-size: 4em;
-  --h1-size: 2em;
-  --h1-font: var(--heading-font);
-  --h2-font: var(--heading-font);
-  --h3-font: var(--heading-font);
-  --h4-font: var(--heading-font);
-  --h5-font: var(--heading-font);
-  --h6-font: var(--heading-font);
-  --inline-title-weight: normal;
-  --h1-weight: 900;
-  --h2-weight: 800;
-  --h3-weight: 700;
-  --h4-weight: 600;
-  --h5-weight: 500;
-  --h6-weight: 400;
-  --radius-s: 20px;
-  --radius-m: 26px;
-  --radius-l: 30px;
-  --radius-xl: 45px;
-  --glow-effect-s: 0px 0px 20px rgba(255, 255, 255, 0.535), 0px 0px 5px rgba(93, 182, 255, 0.586);
-  --glow-effect-m: 0px 0px 30px rgb(255, 255, 255), 0px 0px 10px rgba(93, 182, 255, 0.577);
-  --callout-title-color: var(--glow-color);
-  --callout-blend-mode: normal;
-  --callout-radius: 2em;
-  --checkbox-color-hover: vaR(--text-normal);
-  --checkbox-color: var(--glow-color);
-  --checkbox-marker-color: transparent;
-  --checkbox-size: calc(var(--font-text-size) + 4px);
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--glow-color);
-  --list-marker-color: var(--glow-color);
-  --list-marker-color-hover: var(--glow-color);
-  --list-bullet-size: 0.25em;
-  --link-decoration-color-active: hsla(var(--interactive-accent-hsl), 0.5);
-  --link-color: var(--glow-color) !important;
-  --blockquote-font-style: italic;
-  --blockquote-color: var(--glow-color);
-  --blockquote-border-color: var(--text-muted);
-  --blockquote-background-color: var(--background-secondary);
-  --tag-background: var(--background-secondary);
-  --tag-border-width: 1px;
-  --tag-radius: 1em;
-  --tag-weight: 300;
 }
 
 :root[saved-theme="dark"],

@@ -376,6 +376,23 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --green: rgb(var(--green_x));
   --purple_x: 180, 142, 173;
   --purple: rgb(var(--purple_x));
+
+  --accent-h: 354;
+  --accent-s: 42%;
+  --accent-l: 56%;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 0.5em;
+  --tab-font-weight: 600;
+  --bold-weight: 600;
+  --checkbox-radius: 0;
+  --embed-border-left: 6px double var(--interactive-accent);
 }
 
 body {
@@ -434,23 +451,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --accent-h: 354;
-  --accent-s: 42%;
-  --accent-l: 56%;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.2em;
-  --tag-radius: 0.5em;
-  --tab-font-weight: 600;
-  --bold-weight: 600;
-  --checkbox-radius: 0;
-  --embed-border-left: 6px double var(--interactive-accent);
 }
 
 :root[saved-theme="dark"],

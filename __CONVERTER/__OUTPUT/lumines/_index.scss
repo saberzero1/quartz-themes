@@ -370,6 +370,29 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-gray: rgb(206, 212, 218);
   --color-white: rgb(220, 220, 220);
   --color-purple: rgb(138, 92, 245);
+
+  --graph-controls-width: 240px;
+  --graph-node: var(--text-muted);
+  --graph-text: var(--text-normal);
+  --graph-node-tag: var(--color-accent);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-attachment: var(--color-yellow);
+  --graph-node-focused: var(--background-modifier-border-focus);
+  --graph-line: var(--color-base-45, var(--background-modifier-border-focus));
+  --nav-item-background-hover: transparent;
+  --nav-item-background-active: transparent;
+  --callout-radius: 8px;
+  --callout-padding: 24px;
+  --callout-title-size: 16px;
+  --callout-border-width: 1px;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --checklist-done-decoration: none;
+  --checklist-done-color: rgb(80, 80, 80);
+  --bold-color: var(--color-accent);
+  --italic-color: var(--color-accent);
 }
 
 body {
@@ -428,29 +451,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --graph-controls-width: 240px;
-  --graph-node: var(--text-muted);
-  --graph-text: var(--text-normal);
-  --graph-node-tag: var(--color-accent);
-  --graph-node-unresolved: var(--text-faint);
-  --graph-node-attachment: var(--color-yellow);
-  --graph-node-focused: var(--background-modifier-border-focus);
-  --graph-line: var(--color-base-45, var(--background-modifier-border-focus));
-  --nav-item-background-hover: transparent;
-  --nav-item-background-active: transparent;
-  --callout-radius: 8px;
-  --callout-padding: 24px;
-  --callout-title-size: 16px;
-  --callout-border-width: 1px;
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --checklist-done-decoration: none;
-  --checklist-done-color: rgb(80, 80, 80);
-  --bold-color: var(--color-accent);
-  --italic-color: var(--color-accent);
 }
 
 :root[saved-theme="dark"],

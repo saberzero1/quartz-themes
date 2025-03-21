@@ -343,6 +343,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --default-font: Cairo;
   --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+
+  --font-monospace: Fira Code, Source Code Pro, monospace;
 }
 
 body {
@@ -401,8 +403,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace: Fira Code, Source Code Pro, monospace;
 }
 
 :root[saved-theme="dark"],

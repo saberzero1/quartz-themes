@@ -339,6 +339,25 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --h1-size: 2rem;
+  --h2-size: 1.8rem;
+  --h3-size: 1.6rem;
+  --h4-size: 1.5rem;
+  --h5-size: 1.4rem;
+  --h6-size: 1.3rem;
+  --checkbox-radius: 50%;
+  --link-decoration: auto;
+  --link-external-decoration: auto;
+  --line-width: 40rem;
+  --line-height: 1.5;
+  --max-width: 90%;
+  --max-col-width: 18em;
+  --icon-muted: 0.5;
+  --nested-padding: 1.1em;
+  --folding-offset: 10px;
+  --line-width-adaptive: var(--line-width);
+  --line-width-wide: calc(var(--line-width) + 12.5%);
 }
 
 body {
@@ -397,25 +416,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --h1-size: 2rem;
-  --h2-size: 1.8rem;
-  --h3-size: 1.6rem;
-  --h4-size: 1.5rem;
-  --h5-size: 1.4rem;
-  --h6-size: 1.3rem;
-  --checkbox-radius: 50%;
-  --link-decoration: auto;
-  --link-external-decoration: auto;
-  --line-width: 40rem;
-  --line-height: 1.5;
-  --max-width: 90%;
-  --max-col-width: 18em;
-  --icon-muted: 0.5;
-  --nested-padding: 1.1em;
-  --folding-offset: 10px;
-  --line-width-adaptive: var(--line-width);
-  --line-width-wide: calc(var(--line-width) + 12.5%);
 }
 
 :root[saved-theme="dark"],

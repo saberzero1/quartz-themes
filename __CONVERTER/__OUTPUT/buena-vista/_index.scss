@@ -339,6 +339,26 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --background-semitransp: hsla(0, 0%, var(--color-00-l), 85%);
+  --background-semitransp-alt: hsla(0, 0%, var(--color-10-l), 85%);
+  --background-secondary: var(--color-base-30);
+  --background-secondary-alt: var(--color-base-50);
+  --blockquote-border-thickness: 0;
+  --prompt-border-width: 0;
+  --modal-border-width: 0;
+  --tab-outline-width: 0;
+  --embed-border-left: 1px solid var(--interactive-accent);
+  --embed-border-right: dashed white 1px;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
+  --titlebar-background: var(--color-base-20);
+  --tab-container-background: var(--color-base-20);
+  --titlebar-background-focused: var(--color-base-30-transp);
+  --file-header-font-weight: 600;
+  --embed-max-height: 80vh;
+  --background-blurred: var(--background-primary);
+  --background-blurred-alt: var(--background-primary-alt);
+  --blur-size: 4;
 }
 
 body {
@@ -397,26 +417,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --background-semitransp: hsla(0, 0%, var(--color-00-l), 85%);
-  --background-semitransp-alt: hsla(0, 0%, var(--color-10-l), 85%);
-  --background-secondary: var(--color-base-30);
-  --background-secondary-alt: var(--color-base-50);
-  --blockquote-border-thickness: 0;
-  --prompt-border-width: 0;
-  --modal-border-width: 0;
-  --tab-outline-width: 0;
-  --embed-border-left: 1px solid var(--interactive-accent);
-  --embed-border-right: dashed white 1px;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
-  --titlebar-background: var(--color-base-20);
-  --tab-container-background: var(--color-base-20);
-  --titlebar-background-focused: var(--color-base-30-transp);
-  --file-header-font-weight: 600;
-  --embed-max-height: 80vh;
-  --background-blurred: var(--background-primary);
-  --background-blurred-alt: var(--background-primary-alt);
-  --blur-size: 4;
 }
 
 :root[saved-theme="dark"],

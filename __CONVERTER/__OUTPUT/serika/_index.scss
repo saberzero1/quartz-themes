@@ -339,6 +339,26 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --font-monospace-theme: "Roboto Mono *", monospace;
+  --font-text-theme: "Roboto Mono *", monospace;
+  --font-interface-theme: "Roboto Mono *", monospace;
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --input-radius: 0px;
+  --tab-radius-active: 0px;
+  --checkbox-radius: 0px;
+  --toggle-radius: 0px;
+  --toggle-thumb-radius: 0px;
+  --slider-thumb-radius: 0px;
+  --ribbon-background: #323437;
+  --ribbon-background-collapsed: #323437;
+  --status-bar-background: #323437;
+  --icon-color: #e2b714;
+  --accent-h: 50;
+  --accent-s: 80%;
+  --accent-l: 55%;
 }
 
 body {
@@ -397,26 +417,6 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
-
-  --font-monospace-theme: "Roboto Mono *", monospace;
-  --font-text-theme: "Roboto Mono *", monospace;
-  --font-interface-theme: "Roboto Mono *", monospace;
-  --radius-s: 0px;
-  --radius-m: 0px;
-  --radius-l: 0px;
-  --input-radius: 0px;
-  --tab-radius-active: 0px;
-  --checkbox-radius: 0px;
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --ribbon-background: #323437;
-  --ribbon-background-collapsed: #323437;
-  --status-bar-background: #323437;
-  --icon-color: #e2b714;
-  --accent-h: 50;
-  --accent-s: 80%;
-  --accent-l: 55%;
 }
 
 :root[saved-theme="dark"],
