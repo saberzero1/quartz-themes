@@ -43,8 +43,12 @@ jobs:
         with:
           node-version: 22
       - name: Setup Quartz Themes
-        working-directory: ./runner_content/quartz-themes
-        run: npm install
+        uses: nick-fields/retry@v3
+        with:
+          timeout_seconds: 15
+          max_attempts: 3
+          retry_on: error
+          command: (./runner_content/quartz-themes ; npm install)
       - name: Set Theme
         working-directory: ./runner_content/quartz-themes
         run: npm run theme ${{ matrix.value }}
