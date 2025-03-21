@@ -46,6 +46,7 @@ jobs:
           retry_wait_seconds: 30
           max_attempts: 3
           retry_on: error
+          on_retry_command: (cd ./runner_content/quartz-themes ; npm cache clear --force)
           command: (cd ./runner_content/quartz-themes ; npm ci)
       - name: Set Theme
         working-directory: ./runner_content/quartz-themes
