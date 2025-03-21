@@ -42,7 +42,8 @@ jobs:
       - name: Setup Quartz Themes
         uses: nick-fields/retry@v3
         with:
-          timeout_seconds: 15
+          timeout_seconds: 300
+          retry_wait_seconds: 30
           max_attempts: 3
           retry_on: error
           command: (cd ./runner_content/quartz-themes ; npm install)
