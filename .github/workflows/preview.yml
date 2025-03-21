@@ -64,20 +64,25 @@ jobs:
           retry_wait_seconds: 30
           max_attempts: 3
           retry_on: error
+          on_retry_command: (cd ./runner_content/quartz ; npm cache clear --force)
           command: (cd ./runner_content/quartz ; npx quartz build -d docs)
       - name: Set light/dark mode
         working-directory: ./runner_content/quartz/public
         run: sed -ir 's/<html/<html saved-theme="${{matrix.color-scheme}}"/' index.html
       - name: Generate preview image
-        uses: saberzero1/github-actions-screenshot@main
+        uses: Wandalen/wretry.action@v3.8.0
         with:
-          url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
-          output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
-          viewportWidth: 1920
-          viewportHeight: 1080
-          waitForTimeout: 10000
-          deviceScaleFactor: 1
-          theme: "${{matrix.color-scheme}}"
+          attempt_limit: 3
+          attempt_delay: 10000
+          action: saberzero1/github-actions-screenshot@main
+          with: |
+            url: "file://${{github.workspace}}/runner_content/quartz/public/index.html"
+            output: "previews/${{matrix.value}}-${{matrix.color-scheme}}.png"
+            viewportWidth: 1920
+            viewportHeight: 1080
+            waitForTimeout: 10000
+            deviceScaleFactor: 1
+            theme: "${{matrix.color-scheme}}"
       - name: Upload image
         uses: actions/upload-artifact@v4
         with:
