@@ -1,0 +1,10 @@
+:root:root:root {
+  body {
+    --text-normal: rgba(255, 220, 255, 0.8);
+    --text-faint: rgba(255, 220, 255, 0.25);
+    --text-accent: var(--accent-2);
+    p {
+      color: var(--text-normal);
+    }
+  }
+}
