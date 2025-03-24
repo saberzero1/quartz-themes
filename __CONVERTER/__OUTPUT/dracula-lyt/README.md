@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh dracula-lyt
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme dracula-lyt
+npm run theme dracula-lyt
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh tomorrow-night-bright
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme tomorrow-night-bright
+npm run theme tomorrow-night-bright
 ```

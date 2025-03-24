@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh aura-dark
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme aura-dark
+npm run theme aura-dark
 ```

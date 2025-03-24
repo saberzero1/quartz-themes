@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh %OBSIDIAN_THEME_NAME_SANITIZED%
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme %OBSIDIAN_THEME_NAME_SANITIZED%
+npm run theme %OBSIDIAN_THEME_NAME_SANITIZED%
 ```

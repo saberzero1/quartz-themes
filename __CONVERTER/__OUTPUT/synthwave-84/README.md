@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh synthwave-84
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme synthwave-84
+npm run theme synthwave-84
 ```

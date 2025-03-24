@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh purple-aurora
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme purple-aurora
+npm run theme purple-aurora
 ```

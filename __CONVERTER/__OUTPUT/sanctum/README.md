@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh sanctum
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme sanctum
+npm run theme sanctum
 ```

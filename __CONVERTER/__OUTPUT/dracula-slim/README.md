@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh dracula-slim
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme dracula-slim
+npm run theme dracula-slim
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh ia-writer
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme ia-writer
+npm run theme ia-writer
 ```

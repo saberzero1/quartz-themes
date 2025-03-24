@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh light-bright
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme light-bright
+npm run theme light-bright
 ```

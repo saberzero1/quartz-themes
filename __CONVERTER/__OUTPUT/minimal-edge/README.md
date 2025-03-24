@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh minimal-edge
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme minimal-edge
+npm run theme minimal-edge
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh ayu-light-mirage
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme ayu-light-mirage
+npm run theme ayu-light-mirage
 ```

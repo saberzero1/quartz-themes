@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh nightingale
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme nightingale
+npm run theme nightingale
 ```

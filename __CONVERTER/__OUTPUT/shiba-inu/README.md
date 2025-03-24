@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh shiba-inu
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme shiba-inu
+npm run theme shiba-inu
 ```

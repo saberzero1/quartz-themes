@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh material-flat
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme material-flat
+npm run theme material-flat
 ```

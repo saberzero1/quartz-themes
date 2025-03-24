@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh sea-glass
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme sea-glass
+npm run theme sea-glass
 ```

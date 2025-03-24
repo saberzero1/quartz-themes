@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh vanilla-amoled-color
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme vanilla-amoled-color
+npm run theme vanilla-amoled-color
 ```

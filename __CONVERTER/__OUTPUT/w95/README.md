@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh w95
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme w95
+npm run theme w95
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh everforest-enchanted
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme everforest-enchanted
+npm run theme everforest-enchanted
 ```

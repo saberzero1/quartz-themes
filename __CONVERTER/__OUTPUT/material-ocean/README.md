@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh material-ocean
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme material-ocean
+npm run theme material-ocean
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh obsidian-nord
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme obsidian-nord
+npm run theme obsidian-nord
 ```

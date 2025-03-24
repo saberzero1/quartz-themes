@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh dracula-gemini
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme dracula-gemini
+npm run theme dracula-gemini
 ```

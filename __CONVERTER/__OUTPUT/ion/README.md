@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh ion
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme ion
+npm run theme ion
 ```

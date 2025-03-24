@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh notswift
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme notswift
+npm run theme notswift
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh ethereon
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme ethereon
+npm run theme ethereon
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh comfort-color-dark
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme comfort-color-dark
+npm run theme comfort-color-dark
 ```

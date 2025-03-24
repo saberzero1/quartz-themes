@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh notation-2
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme notation-2
+npm run theme notation-2
 ```

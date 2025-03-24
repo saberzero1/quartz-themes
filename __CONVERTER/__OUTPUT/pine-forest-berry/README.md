@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh pine-forest-berry
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme pine-forest-berry
+npm run theme pine-forest-berry
 ```

@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh red-graphite
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme red-graphite
+npm run theme red-graphite
 ```

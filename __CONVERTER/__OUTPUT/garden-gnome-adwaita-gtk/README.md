@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh garden-gnome-adwaita-gtk
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme garden-gnome-adwaita-gtk
+npm run theme garden-gnome-adwaita-gtk
 ```

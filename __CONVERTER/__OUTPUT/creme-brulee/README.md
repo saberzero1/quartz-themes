@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh creme-brulee
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme creme-brulee
+npm run theme creme-brulee
 ```

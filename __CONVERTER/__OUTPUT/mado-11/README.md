@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh mado-11
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme mado-11
+npm run theme mado-11
 ```

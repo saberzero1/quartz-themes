@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh dracula-for-obsidian
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme dracula-for-obsidian
+npm run theme dracula-for-obsidian
 ```

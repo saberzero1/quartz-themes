@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh mistymauve
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme mistymauve
+npm run theme mistymauve
 ```

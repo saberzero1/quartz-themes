@@ -23,6 +23,10 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh base2tone
 ```
 
+### Install script (Advanced)
+
+After installing:
+
 ```bash
-just theme base2tone
+npm run theme base2tone
 ```
