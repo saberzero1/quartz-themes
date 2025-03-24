@@ -2,18 +2,27 @@
 
 [Golden Topaz](#)
 
-## Usage
-
-```bash
-just theme Golden Topaz
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/golden-topaz/)
 
-![Preview of Golden Topaz Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Golden Topaz Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- golden-topaz
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh golden-topaz
+```
+
+```bash
+just theme golden-topaz
+```

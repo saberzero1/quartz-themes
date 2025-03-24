@@ -2,18 +2,27 @@
 
 [Ayu Light & Mirage](https://taronull.substack.com)
 
-## Usage
-
-```bash
-just theme Ayu Light & Mirage
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/ayu-light-mirage/)
 
-![Preview of Ayu Light & Mirage Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Ayu Light & Mirage Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ayu-light-mirage
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh ayu-light-mirage
+```
+
+```bash
+just theme ayu-light-mirage
+```

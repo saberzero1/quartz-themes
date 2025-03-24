@@ -2,18 +2,27 @@
 
 [Dracula for Obsidian](#)
 
-## Usage
-
-```bash
-just theme Dracula for Obsidian
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dracula-for-obsidian/)
 
-![Preview of Dracula for Obsidian Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dracula for Obsidian Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dracula-for-obsidian
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dracula-for-obsidian
+```
+
+```bash
+just theme dracula-for-obsidian
+```

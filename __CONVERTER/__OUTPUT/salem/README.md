@@ -2,18 +2,27 @@
 
 [SALEM](https://salemelatar.vercel.app)
 
-## Usage
-
-```bash
-just theme SALEM
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/salem/)
 
-![Preview of SALEM Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of SALEM Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- salem
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh salem
+```
+
+```bash
+just theme salem
+```

@@ -2,18 +2,27 @@
 
 [Panic Mode](#)
 
-## Usage
-
-```bash
-just theme Panic Mode
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/panic-mode/)
 
-![Preview of Panic Mode Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Panic Mode Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- panic-mode
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh panic-mode
+```
+
+```bash
+just theme panic-mode
+```

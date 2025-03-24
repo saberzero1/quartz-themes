@@ -2,18 +2,27 @@
 
 [Tiniri](https://tiniri.vlad.studio)
 
-## Usage
-
-```bash
-just theme Tiniri
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/tiniri/)
 
-![Preview of Tiniri Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Tiniri Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tiniri
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh tiniri
+```
+
+```bash
+just theme tiniri
+```

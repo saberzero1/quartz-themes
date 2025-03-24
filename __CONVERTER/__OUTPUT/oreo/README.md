@@ -2,18 +2,27 @@
 
 [Oreo](https://github.com/carols12352)
 
-## Usage
-
-```bash
-just theme Oreo
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/oreo/)
 
-![Preview of Oreo Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Oreo Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- oreo
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh oreo
+```
+
+```bash
+just theme oreo
+```

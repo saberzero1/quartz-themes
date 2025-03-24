@@ -2,18 +2,27 @@
 
 [Arcane](https://github.com/xRyul)
 
-## Usage
-
-```bash
-just theme Arcane
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/arcane/)
 
-![Preview of Arcane Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Arcane Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- arcane
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh arcane
+```
+
+```bash
+just theme arcane
+```

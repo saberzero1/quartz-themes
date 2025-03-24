@@ -2,18 +2,27 @@
 
 [Violet Evening](#)
 
-## Usage
-
-```bash
-just theme Violet Evening
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/violet-evening/)
 
-![Preview of Violet Evening Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Violet Evening Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- violet-evening
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh violet-evening
+```
+
+```bash
+just theme violet-evening
+```

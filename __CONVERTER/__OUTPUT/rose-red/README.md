@@ -2,18 +2,27 @@
 
 [Rose Red](https://github.com/tu2-atmanand)
 
-## Usage
-
-```bash
-just theme Rose Red
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/rose-red/)
 
-![Preview of Rose Red Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Rose Red Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- rose-red
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh rose-red
+```
+
+```bash
+just theme rose-red
+```

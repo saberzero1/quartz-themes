@@ -2,18 +2,27 @@
 
 [Muted-Blue](https://github.com/HasanTheSyrian)
 
-## Usage
-
-```bash
-just theme Muted-Blue
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/muted-blue/)
 
-![Preview of Muted-Blue Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Muted-Blue Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- muted-blue
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh muted-blue
+```
+
+```bash
+just theme muted-blue
+```

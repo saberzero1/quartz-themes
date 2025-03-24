@@ -2,18 +2,27 @@
 
 [80s Neon](#)
 
-## Usage
-
-```bash
-just theme 80s Neon
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/80s-neon/)
 
-![Preview of 80s Neon Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of 80s Neon Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- 80s-neon
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh 80s-neon
+```
+
+```bash
+just theme 80s-neon
+```

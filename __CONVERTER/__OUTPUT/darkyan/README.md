@@ -2,18 +2,27 @@
 
 [Darkyan](https://johackim.com)
 
-## Usage
-
-```bash
-just theme Darkyan
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/darkyan/)
 
-![Preview of Darkyan Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Darkyan Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- darkyan
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh darkyan
+```
+
+```bash
+just theme darkyan
+```

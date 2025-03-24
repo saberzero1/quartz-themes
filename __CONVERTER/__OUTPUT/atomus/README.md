@@ -2,18 +2,27 @@
 
 [Atomus](https://github.com/PedroHenrique17)
 
-## Usage
-
-```bash
-just theme Atomus
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/atomus/)
 
-![Preview of Atomus Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Atomus Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- atomus
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh atomus
+```
+
+```bash
+just theme atomus
+```

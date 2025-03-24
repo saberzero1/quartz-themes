@@ -2,18 +2,27 @@
 
 [Maple](https://github.com/subframe7536)
 
-## Usage
-
-```bash
-just theme Maple
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/maple/)
 
-![Preview of Maple Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Maple Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- maple
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh maple
+```
+
+```bash
+just theme maple
+```

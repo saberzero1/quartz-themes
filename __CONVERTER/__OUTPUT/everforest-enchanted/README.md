@@ -2,18 +2,27 @@
 
 [Everforest Enchanted](https://github.com/FireIsGood)
 
-## Usage
-
-```bash
-just theme Everforest Enchanted
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/everforest-enchanted/)
 
-![Preview of Everforest Enchanted Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Everforest Enchanted Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- everforest-enchanted
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh everforest-enchanted
+```
+
+```bash
+just theme everforest-enchanted
+```

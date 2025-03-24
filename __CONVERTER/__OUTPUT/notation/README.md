@@ -2,18 +2,27 @@
 
 [Notation](#)
 
-## Usage
-
-```bash
-just theme Notation
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/notation/)
 
-![Preview of Notation Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Notation Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- notation
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh notation
+```
+
+```bash
+just theme notation
+```

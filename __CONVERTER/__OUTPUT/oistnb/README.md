@@ -2,18 +2,27 @@
 
 [OISTNB](https://github.com/omsandippatil)
 
-## Usage
-
-```bash
-just theme OISTNB
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/oistnb/)
 
-![Preview of OISTNB Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of OISTNB Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- oistnb
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh oistnb
+```
+
+```bash
+just theme oistnb
+```

@@ -2,18 +2,27 @@
 
 [Creature](#)
 
-## Usage
-
-```bash
-just theme Creature
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/creature/)
 
-![Preview of Creature Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Creature Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- creature
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh creature
+```
+
+```bash
+just theme creature
+```

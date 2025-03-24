@@ -2,18 +2,27 @@
 
 [Nordic](https://github.com/natowb)
 
-## Usage
-
-```bash
-just theme Nordic
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/nordic/)
 
-![Preview of Nordic Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Nordic Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- nordic
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh nordic
+```
+
+```bash
+just theme nordic
+```

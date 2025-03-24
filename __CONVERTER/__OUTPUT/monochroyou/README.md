@@ -2,18 +2,27 @@
 
 [monochroYOU](https://github.com/GuiMar10)
 
-## Usage
-
-```bash
-just theme monochroYOU
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/monochroyou/)
 
-![Preview of monochroYOU Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of monochroYOU Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- monochroyou
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh monochroyou
+```
+
+```bash
+just theme monochroyou
+```

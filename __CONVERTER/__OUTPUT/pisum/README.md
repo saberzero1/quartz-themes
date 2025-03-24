@@ -2,18 +2,27 @@
 
 [Pisum](#)
 
-## Usage
-
-```bash
-just theme Pisum
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/pisum/)
 
-![Preview of Pisum Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Pisum Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- pisum
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh pisum
+```
+
+```bash
+just theme pisum
+```

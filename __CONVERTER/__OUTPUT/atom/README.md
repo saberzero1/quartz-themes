@@ -2,18 +2,27 @@
 
 [Atom](#)
 
-## Usage
-
-```bash
-just theme Atom
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/atom/)
 
-![Preview of Atom Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Atom Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- atom
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh atom
+```
+
+```bash
+just theme atom
+```

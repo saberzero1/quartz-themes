@@ -2,18 +2,27 @@
 
 [Sanctum](https://github.com/jdanielmourao/)
 
-## Usage
-
-```bash
-just theme Sanctum
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/sanctum/)
 
-![Preview of Sanctum Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Sanctum Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- sanctum
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh sanctum
+```
+
+```bash
+just theme sanctum
+```

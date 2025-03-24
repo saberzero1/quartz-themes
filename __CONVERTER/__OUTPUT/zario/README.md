@@ -2,18 +2,27 @@
 
 [Zario](https://gneiss.dev)
 
-## Usage
-
-```bash
-just theme Zario
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/zario/)
 
-![Preview of Zario Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Zario Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- zario
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh zario
+```
+
+```bash
+just theme zario
+```

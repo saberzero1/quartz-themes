@@ -2,18 +2,27 @@
 
 [GDCT](#)
 
-## Usage
-
-```bash
-just theme GDCT
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/gdct/)
 
-![Preview of GDCT Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of GDCT Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- gdct
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh gdct
+```
+
+```bash
+just theme gdct
+```

@@ -2,18 +2,27 @@
 
 [Buena Vista](https://github.com/oqipodev/)
 
-## Usage
-
-```bash
-just theme Buena Vista
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/buena-vista/)
 
-![Preview of Buena Vista Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Buena Vista Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- buena-vista
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh buena-vista
+```
+
+```bash
+just theme buena-vista
+```

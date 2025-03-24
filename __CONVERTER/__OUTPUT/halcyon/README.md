@@ -2,18 +2,27 @@
 
 [halcyon](https://github.com/dbarenholz)
 
+## Preview
+
+[Open live preview](https://quartz-themes.github.io/halcyon/)
+
 ## Usage
+
+### GitHub Actions
+
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- halcyon
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh halcyon
+```
 
 ```bash
 just theme halcyon
 ```
-
-## Preview
-
-### Light
-
-![Preview of halcyon Light](preview-light.png)
-
-### Dark
-
-![Preview of halcyon Dark](preview-dark.png)

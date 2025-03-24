@@ -2,18 +2,27 @@
 
 [Nightingale](#)
 
-## Usage
-
-```bash
-just theme Nightingale
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/nightingale/)
 
-![Preview of Nightingale Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Nightingale Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- nightingale
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh nightingale
+```
+
+```bash
+just theme nightingale
+```

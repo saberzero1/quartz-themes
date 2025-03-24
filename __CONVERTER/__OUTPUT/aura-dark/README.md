@@ -2,18 +2,27 @@
 
 [Aura Dark](https://github.com/Possibly-Matt/obsidian-aura-theme)
 
-## Usage
-
-```bash
-just theme Aura Dark
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/aura-dark/)
 
-![Preview of Aura Dark Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Aura Dark Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- aura-dark
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh aura-dark
+```
+
+```bash
+just theme aura-dark
+```

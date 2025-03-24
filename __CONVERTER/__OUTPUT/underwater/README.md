@@ -2,18 +2,27 @@
 
 [Underwater](https://github.com/Seniblue)
 
-## Usage
-
-```bash
-just theme Underwater
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/underwater/)
 
-![Preview of Underwater Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Underwater Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- underwater
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh underwater
+```
+
+```bash
+just theme underwater
+```

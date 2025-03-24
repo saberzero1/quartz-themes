@@ -2,18 +2,27 @@
 
 [Cobalt Peacock](#)
 
-## Usage
-
-```bash
-just theme Cobalt Peacock
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/cobalt-peacock/)
 
-![Preview of Cobalt Peacock Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Cobalt Peacock Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- cobalt-peacock
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh cobalt-peacock
+```
+
+```bash
+just theme cobalt-peacock
+```

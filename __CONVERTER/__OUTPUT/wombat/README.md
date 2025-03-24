@@ -2,18 +2,27 @@
 
 [Wombat](#)
 
-## Usage
-
-```bash
-just theme Wombat
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/wombat/)
 
-![Preview of Wombat Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Wombat Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- wombat
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh wombat
+```
+
+```bash
+just theme wombat
+```

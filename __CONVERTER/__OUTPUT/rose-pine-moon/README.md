@@ -2,18 +2,27 @@
 
 [Rosé Pine Moon](#)
 
-## Usage
-
-```bash
-just theme Rosé Pine Moon
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/rose-pine-moon/)
 
-![Preview of Rosé Pine Moon Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Rosé Pine Moon Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- rose-pine-moon
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh rose-pine-moon
+```
+
+```bash
+just theme rose-pine-moon
+```

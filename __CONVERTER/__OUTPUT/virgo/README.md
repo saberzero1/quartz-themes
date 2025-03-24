@@ -2,18 +2,27 @@
 
 [Virgo](https://aituyaa.com)
 
-## Usage
-
-```bash
-just theme Virgo
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/virgo/)
 
-![Preview of Virgo Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Virgo Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- virgo
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh virgo
+```
+
+```bash
+just theme virgo
+```

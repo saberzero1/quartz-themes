@@ -2,18 +2,27 @@
 
 [Prime](https://rivea0.github.io)
 
-## Usage
-
-```bash
-just theme Prime
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/prime/)
 
-![Preview of Prime Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Prime Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- prime
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh prime
+```
+
+```bash
+just theme prime
+```

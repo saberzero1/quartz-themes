@@ -2,18 +2,27 @@
 
 [Rosé Pine](https://ssp.sh)
 
-## Usage
-
-```bash
-just theme Rosé Pine
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/rose-pine/)
 
-![Preview of Rosé Pine Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Rosé Pine Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- rose-pine
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh rose-pine
+```
+
+```bash
+just theme rose-pine
+```

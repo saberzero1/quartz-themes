@@ -2,18 +2,27 @@
 
 [Obsidianotion](https://diegoeis.com)
 
-## Usage
-
-```bash
-just theme Obsidianotion
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/obsidianotion/)
 
-![Preview of Obsidianotion Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Obsidianotion Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- obsidianotion
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh obsidianotion
+```
+
+```bash
+just theme obsidianotion
+```

@@ -2,18 +2,27 @@
 
 [GitHub Theme](https://github.com/krios2146)
 
-## Usage
-
-```bash
-just theme GitHub Theme
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/github-theme/)
 
-![Preview of GitHub Theme Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of GitHub Theme Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- github-theme
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh github-theme
+```
+
+```bash
+just theme github-theme
+```

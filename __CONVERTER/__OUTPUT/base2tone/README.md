@@ -2,18 +2,27 @@
 
 [Base2Tone](#)
 
-## Usage
-
-```bash
-just theme Base2Tone
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/base2tone/)
 
-![Preview of Base2Tone Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Base2Tone Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- base2tone
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh base2tone
+```
+
+```bash
+just theme base2tone
+```

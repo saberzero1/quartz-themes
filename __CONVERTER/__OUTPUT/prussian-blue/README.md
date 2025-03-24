@@ -2,18 +2,27 @@
 
 [Prussian Blue](ed.toomwn.xyz)
 
-## Usage
-
-```bash
-just theme Prussian Blue
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/prussian-blue/)
 
-![Preview of Prussian Blue Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Prussian Blue Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- prussian-blue
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh prussian-blue
+```
+
+```bash
+just theme prussian-blue
+```

@@ -2,18 +2,27 @@
 
 [Origin](https://github.com/Bluemoondragon07)
 
-## Usage
-
-```bash
-just theme Origin
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/origin/)
 
-![Preview of Origin Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Origin Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- origin
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh origin
+```
+
+```bash
+just theme origin
+```

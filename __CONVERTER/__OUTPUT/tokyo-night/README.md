@@ -2,18 +2,27 @@
 
 [Tokyo Night](#)
 
-## Usage
-
-```bash
-just theme Tokyo Night
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/tokyo-night/)
 
-![Preview of Tokyo Night Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Tokyo Night Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh tokyo-night
+```
+
+```bash
+just theme tokyo-night
+```

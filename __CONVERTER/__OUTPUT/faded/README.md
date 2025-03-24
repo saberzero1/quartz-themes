@@ -2,18 +2,27 @@
 
 [Faded](#)
 
-## Usage
-
-```bash
-just theme Faded
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/faded/)
 
-![Preview of Faded Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Faded Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- faded
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh faded
+```
+
+```bash
+just theme faded
+```

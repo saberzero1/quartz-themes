@@ -2,18 +2,27 @@
 
 [Dracula Official](https://gitlab.com/chrismettal)
 
-## Usage
-
-```bash
-just theme Dracula Official
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dracula-official/)
 
-![Preview of Dracula Official Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dracula Official Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dracula-official
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dracula-official
+```
+
+```bash
+just theme dracula-official
+```

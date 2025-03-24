@@ -2,18 +2,27 @@
 
 [AbsoluteGruv](#)
 
-## Usage
-
-```bash
-just theme AbsoluteGruv
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/absolutegruv/)
 
-![Preview of AbsoluteGruv Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of AbsoluteGruv Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- absolutegruv
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh absolutegruv
+```
+
+```bash
+just theme absolutegruv
+```

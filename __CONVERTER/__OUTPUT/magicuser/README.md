@@ -2,18 +2,27 @@
 
 [MagicUser](https://www.github.com/drbap)
 
-## Usage
-
-```bash
-just theme MagicUser
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/magicuser/)
 
-![Preview of MagicUser Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of MagicUser Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- magicuser
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh magicuser
+```
+
+```bash
+just theme magicuser
+```

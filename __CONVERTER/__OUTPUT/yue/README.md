@@ -2,18 +2,27 @@
 
 [Yue](https://twitter.com/notgixo)
 
-## Usage
-
-```bash
-just theme Yue
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/yue/)
 
-![Preview of Yue Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Yue Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- yue
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh yue
+```
+
+```bash
+just theme yue
+```

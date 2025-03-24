@@ -2,18 +2,27 @@
 
 [Perso](https://blog.behrouze.com)
 
-## Usage
-
-```bash
-just theme Perso
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/perso/)
 
-![Preview of Perso Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Perso Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- perso
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh perso
+```
+
+```bash
+just theme perso
+```

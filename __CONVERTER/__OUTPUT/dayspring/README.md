@@ -2,18 +2,27 @@
 
 [Dayspring](https://github.com/erykwalder)
 
-## Usage
-
-```bash
-just theme Dayspring
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dayspring/)
 
-![Preview of Dayspring Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dayspring Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dayspring
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dayspring
+```
+
+```bash
+just theme dayspring
+```

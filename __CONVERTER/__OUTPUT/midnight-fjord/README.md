@@ -2,18 +2,27 @@
 
 [Midnight-Fjord](https://quinta0.github.io/)
 
-## Usage
-
-```bash
-just theme Midnight-Fjord
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/midnight-fjord/)
 
-![Preview of Midnight-Fjord Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Midnight-Fjord Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- midnight-fjord
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh midnight-fjord
+```
+
+```bash
+just theme midnight-fjord
+```

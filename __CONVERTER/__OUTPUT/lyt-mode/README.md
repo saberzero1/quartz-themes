@@ -2,18 +2,27 @@
 
 [LYT Mode](#)
 
-## Usage
-
-```bash
-just theme LYT Mode
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/lyt-mode/)
 
-![Preview of LYT Mode Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of LYT Mode Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- lyt-mode
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh lyt-mode
+```
+
+```bash
+just theme lyt-mode
+```

@@ -2,18 +2,27 @@
 
 [Red Graphite](https://github.com/seanwcom/Red-Graphite-for-Obsidian)
 
-## Usage
-
-```bash
-just theme Red Graphite
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/red-graphite/)
 
-![Preview of Red Graphite Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Red Graphite Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- red-graphite
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh red-graphite
+```
+
+```bash
+just theme red-graphite
+```

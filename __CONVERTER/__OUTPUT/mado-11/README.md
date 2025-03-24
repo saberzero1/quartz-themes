@@ -2,18 +2,27 @@
 
 [Mado 11](https://github.com/hydescarf/Obsidian-Theme-Mado-11)
 
-## Usage
-
-```bash
-just theme Mado 11
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/mado-11/)
 
-![Preview of Mado 11 Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Mado 11 Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- mado-11
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh mado-11
+```
+
+```bash
+just theme mado-11
+```

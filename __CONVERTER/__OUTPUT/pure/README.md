@@ -2,18 +2,27 @@
 
 [Pure](#)
 
-## Usage
-
-```bash
-just theme Pure
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/pure/)
 
-![Preview of Pure Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Pure Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- pure
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh pure
+```
+
+```bash
+just theme pure
+```

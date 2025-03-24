@@ -2,18 +2,27 @@
 
 [Dracula Slim](#)
 
-## Usage
-
-```bash
-just theme Dracula Slim
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dracula-slim/)
 
-![Preview of Dracula Slim Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dracula Slim Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dracula-slim
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dracula-slim
+```
+
+```bash
+just theme dracula-slim
+```

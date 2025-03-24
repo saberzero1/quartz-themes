@@ -2,18 +2,27 @@
 
 [Green Nightmare](https://github.com/prradox)
 
-## Usage
-
-```bash
-just theme Green Nightmare
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/green-nightmare/)
 
-![Preview of Green Nightmare Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Green Nightmare Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- green-nightmare
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh green-nightmare
+```
+
+```bash
+just theme green-nightmare
+```

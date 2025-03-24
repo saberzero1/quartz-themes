@@ -2,18 +2,27 @@
 
 [Vanilla AMOLED Color](https://github.Com/Sskki-exe)
 
-## Usage
-
-```bash
-just theme Vanilla AMOLED Color
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/vanilla-amoled-color/)
 
-![Preview of Vanilla AMOLED Color Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Vanilla AMOLED Color Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- vanilla-amoled-color
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh vanilla-amoled-color
+```
+
+```bash
+just theme vanilla-amoled-color
+```

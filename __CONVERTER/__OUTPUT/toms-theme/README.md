@@ -2,18 +2,27 @@
 
 [Tom's Theme](https://tomkay.dev)
 
-## Usage
-
-```bash
-just theme Tom's Theme
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/toms-theme/)
 
-![Preview of Tom's Theme Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Tom's Theme Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- toms-theme
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh toms-theme
+```
+
+```bash
+just theme toms-theme
+```

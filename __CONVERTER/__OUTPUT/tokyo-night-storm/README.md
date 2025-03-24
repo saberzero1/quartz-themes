@@ -2,18 +2,27 @@
 
 [Tokyo Night Storm](https://github.com/arozx)
 
-## Usage
-
-```bash
-just theme Tokyo Night Storm
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/tokyo-night-storm/)
 
-![Preview of Tokyo Night Storm Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Tokyo Night Storm Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night-storm
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh tokyo-night-storm
+```
+
+```bash
+just theme tokyo-night-storm
+```

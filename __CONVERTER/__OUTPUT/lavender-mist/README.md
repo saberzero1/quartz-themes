@@ -2,18 +2,27 @@
 
 [Lavender-Mist](https://quinta0.github.io/)
 
-## Usage
-
-```bash
-just theme Lavender-Mist
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/lavender-mist/)
 
-![Preview of Lavender-Mist Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Lavender-Mist Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- lavender-mist
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh lavender-mist
+```
+
+```bash
+just theme lavender-mist
+```

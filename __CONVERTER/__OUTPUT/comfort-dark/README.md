@@ -2,18 +2,27 @@
 
 [Comfort Dark](#)
 
-## Usage
-
-```bash
-just theme Comfort Dark
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/comfort-dark/)
 
-![Preview of Comfort Dark Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Comfort Dark Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- comfort-dark
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh comfort-dark
+```
+
+```bash
+just theme comfort-dark
+```

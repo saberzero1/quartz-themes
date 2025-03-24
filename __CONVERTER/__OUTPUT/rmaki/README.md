@@ -2,18 +2,27 @@
 
 [Rmaki](#)
 
-## Usage
-
-```bash
-just theme Rmaki
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/rmaki/)
 
-![Preview of Rmaki Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Rmaki Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- rmaki
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh rmaki
+```
+
+```bash
+just theme rmaki
+```

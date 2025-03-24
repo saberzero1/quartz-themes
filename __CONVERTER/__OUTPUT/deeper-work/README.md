@@ -2,18 +2,27 @@
 
 [deeper work](https://www.lfern.com/)
 
-## Usage
-
-```bash
-just theme deeper work
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/deeper-work/)
 
-![Preview of deeper work Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of deeper work Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- deeper-work
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh deeper-work
+```
+
+```bash
+just theme deeper-work
+```

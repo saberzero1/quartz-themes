@@ -2,18 +2,27 @@
 
 [Aura](https://github.com/ashwinjadhav818/)
 
-## Usage
-
-```bash
-just theme Aura
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/aura/)
 
-![Preview of Aura Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Aura Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- aura
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh aura
+```
+
+```bash
+just theme aura
+```

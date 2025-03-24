@@ -2,18 +2,27 @@
 
 [AnuPpuccin](https://github.com/AnubisNekhet)
 
-## Usage
-
-```bash
-just theme AnuPpuccin
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/anuppuccin/)
 
-![Preview of AnuPpuccin Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of AnuPpuccin Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- anuppuccin
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh anuppuccin
+```
+
+```bash
+just theme anuppuccin
+```

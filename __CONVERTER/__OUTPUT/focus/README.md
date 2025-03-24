@@ -2,18 +2,27 @@
 
 [Focus](https://www.moritzjung.dev)
 
-## Usage
-
-```bash
-just theme Focus
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/focus/)
 
-![Preview of Focus Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Focus Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- focus
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh focus
+```
+
+```bash
+just theme focus
+```

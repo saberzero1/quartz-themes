@@ -2,18 +2,27 @@
 
 [Obsidian Nord](https://insanum.com)
 
-## Usage
-
-```bash
-just theme Obsidian Nord
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/obsidian-nord/)
 
-![Preview of Obsidian Nord Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Obsidian Nord Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- obsidian-nord
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh obsidian-nord
+```
+
+```bash
+just theme obsidian-nord
+```

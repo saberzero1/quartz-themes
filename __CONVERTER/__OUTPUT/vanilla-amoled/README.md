@@ -2,18 +2,27 @@
 
 [Vanilla AMOLED](https//github.com/SakuraIsayeki)
 
-## Usage
-
-```bash
-just theme Vanilla AMOLED
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/vanilla-amoled/)
 
-![Preview of Vanilla AMOLED Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Vanilla AMOLED Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- vanilla-amoled
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh vanilla-amoled
+```
+
+```bash
+just theme vanilla-amoled
+```

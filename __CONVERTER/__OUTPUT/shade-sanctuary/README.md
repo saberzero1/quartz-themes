@@ -2,18 +2,27 @@
 
 [Shade Sanctuary](https//github.com/Elevict)
 
-## Usage
-
-```bash
-just theme Shade Sanctuary
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/shade-sanctuary/)
 
-![Preview of Shade Sanctuary Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Shade Sanctuary Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- shade-sanctuary
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh shade-sanctuary
+```
+
+```bash
+just theme shade-sanctuary
+```

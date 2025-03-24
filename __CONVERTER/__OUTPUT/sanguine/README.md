@@ -2,18 +2,27 @@
 
 [Sanguine](https://www.buymeacoffee.com/Satchelmouth)
 
-## Usage
-
-```bash
-just theme Sanguine
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/sanguine/)
 
-![Preview of Sanguine Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Sanguine Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- sanguine
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh sanguine
+```
+
+```bash
+just theme sanguine
+```

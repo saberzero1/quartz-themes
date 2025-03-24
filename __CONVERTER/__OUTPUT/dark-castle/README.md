@@ -2,18 +2,27 @@
 
 [Dark Castle](https://github.com/scottgriv)
 
-## Usage
-
-```bash
-just theme Dark Castle
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dark-castle/)
 
-![Preview of Dark Castle Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dark Castle Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dark-castle
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dark-castle
+```
+
+```bash
+just theme dark-castle
+```

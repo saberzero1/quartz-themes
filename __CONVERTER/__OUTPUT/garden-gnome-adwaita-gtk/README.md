@@ -2,18 +2,27 @@
 
 [Garden Gnome (Adwaita, GTK)](https://github.com/oqipodev/)
 
-## Usage
-
-```bash
-just theme Garden Gnome (Adwaita, GTK)
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/garden-gnome-adwaita-gtk/)
 
-![Preview of Garden Gnome (Adwaita, GTK) Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Garden Gnome (Adwaita, GTK) Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- garden-gnome-adwaita-gtk
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh garden-gnome-adwaita-gtk
+```
+
+```bash
+just theme garden-gnome-adwaita-gtk
+```

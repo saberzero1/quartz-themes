@@ -2,18 +2,27 @@
 
 [MistyMauve](https://github.com/RaveSplash)
 
-## Usage
-
-```bash
-just theme MistyMauve
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/mistymauve/)
 
-![Preview of MistyMauve Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of MistyMauve Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- mistymauve
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh mistymauve
+```
+
+```bash
+just theme mistymauve
+```

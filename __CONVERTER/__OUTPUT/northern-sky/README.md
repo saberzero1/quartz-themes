@@ -2,18 +2,27 @@
 
 [Northern-Sky](https://quinta0.github.io/)
 
-## Usage
-
-```bash
-just theme Northern-Sky
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/northern-sky/)
 
-![Preview of Northern-Sky Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Northern-Sky Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- northern-sky
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh northern-sky
+```
+
+```bash
+just theme northern-sky
+```
