@@ -67,6 +67,7 @@ CSS_FONT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_fonts.sc
 CSS_DARK_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_dark.scss"
 CSS_LIGHT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_light.scss"
 CSS_OVERRIDE_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}_index.scss"
+README_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}README.md"
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
 
@@ -97,6 +98,10 @@ curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
 curl -s -S -o ${THEME_DIR}/_dark.scss "${CSS_DARK_URL}"
 curl -s -S -o ${THEME_DIR}/_light.scss "${CSS_LIGHT_URL}"
 curl -s -S -o ${THEME_DIR}/overrides/_index.scss "${CSS_OVERRIDE_URL}"
+
+echo "Fetching README file..."
+
+curl -s -S -o ${THEME_DIR}/README.md "${README_URL}"
 
 echo "Checking theme files..."
 
@@ -133,6 +138,12 @@ if test -f ${THEME_DIR}/overrides/_index.scss; then
 else
   echo_err "overrides/_index.scss missing" 1>&2
   exit 1
+fi
+
+if test -f ${THEME_DIR}/README.md; then
+  echo_ok "README file exists"
+else
+  echo_warn "README file missing"
 fi
 
 echo "Verifying setup..."
