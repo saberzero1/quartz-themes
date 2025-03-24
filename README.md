@@ -242,6 +242,7 @@ Colors in GitHub markdown: https://gist.github.com/luigiMinardi/4574708d404cdf4f
 | ☀️🌙 | celestial-night                | CHECKING                   | [live preview](https://quartz-themes.github.io/celestial-night/)                |
 | ☀️🌙 | charcoal                       | CHECKING                   | [live preview](https://quartz-themes.github.io/charcoal/)                       |
 | ☀️🌙 | chiaroscuroflow                | CHECKING                   | [live preview](https://quartz-themes.github.io/chiaroscuroflow/)                |
+| ☀️🌙 | chime (🔔-chime)               | CHECKING                   | [live preview](https://quartz-themes.github.io/chime/)                          |
 | ☀️🌙 | christmas                      | CHECKING                   | [live preview](https://quartz-themes.github.io/christmas/)                      |
 | ☀️🌙 | cobalt-peacock                 | CHECKING                   | [live preview](https://quartz-themes.github.io/cobalt-peacock/)                 |
 | ☀️🌙 | colored-candy                  | CHECKING                   | [live preview](https://quartz-themes.github.io/colored-candy/)                  |
@@ -478,7 +479,6 @@ Colors in GitHub markdown: https://gist.github.com/luigiMinardi/4574708d404cdf4f
 | ☀️🌙 | yue                            | CHECKING                   | [live preview](https://quartz-themes.github.io/yue/)                            |
 | ☀️🌙 | zario                          | CHECKING                   | [live preview](https://quartz-themes.github.io/zario/)                          |
 | ☀️🌙 | zenburn                        | CHECKING                   | [live preview](https://quartz-themes.github.io/zenburn/)                        |
-| ☀️🌙 | --chime (🔔-chime)             | CHECKING                   | [live preview](https://quartz-themes.github.io/--chime/)                        |
 
 <!--
 ## Specification

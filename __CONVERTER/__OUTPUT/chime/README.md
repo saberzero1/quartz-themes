@@ -1,6 +1,6 @@
-# - Chime
+# Chime
 
-[- Chime](https://github.com/Bluemoondragon07)
+[Chime](https://github.com/Bluemoondragon07)
 
 ## Preview
 
