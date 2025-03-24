@@ -2,18 +2,31 @@
 
 [Apatheia](https://github.com/AmadeusWM)
 
-## Usage
-
-```bash
-just theme Apatheia
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/apatheia/)
 
-![Preview of Apatheia Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Apatheia Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- apatheia
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh apatheia
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme apatheia
+```

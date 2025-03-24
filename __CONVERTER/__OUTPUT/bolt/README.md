@@ -2,18 +2,31 @@
 
 [Bolt](https://github.com/Bluemoondragon07)
 
-## Usage
-
-```bash
-just theme Bolt
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/bolt/)
 
-![Preview of Bolt Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Bolt Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- bolt
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh bolt
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme bolt
+```

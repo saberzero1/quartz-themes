@@ -42,14 +42,6 @@
   --interactive: rgb(var(--color-accent-rgb));
   --highlight: rgba(var(--color-accent-rgb), 0.7);
   --overlay: rgba(var(--gray-100), 0.5);
-  --background: rgb(var(--white));
-  --layer-1: rgb(var(--gray-10));
-  --layer-2: rgb(var(--white));
-  --layer-hover-1: rgba(var(--gray-20), 0.5);
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-  --field-1: rgb(var(--gray-10));
-  --field-hover-1: rgb(var(--white));
-  --background-primary: rgb(var(--white));
   --color-red-rgb: 197, 65, 40;
   --color-green-rgb: 102, 153, 97;
   --color-yellow-rgb: 243, 189, 79;
@@ -94,12 +86,5 @@
   --code-important: var(--lavender);
   --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
   --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
-  --shadow-color: 60deg 5% 59%;
   --background-modifier-cover: var(--background-hover);
-  --shadow-color: 60deg 5% 59%;
-  --shadow-color: 60deg 5% 59%;
-  --shadow-color: 60deg 5% 59%;
-  --shadow-color: 60deg 5% 59%;
-  --shadow-color: 60deg 5% 59%;
-  --shadow-color: 60deg 5% 59%;
 }

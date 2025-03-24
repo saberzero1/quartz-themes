@@ -2,18 +2,31 @@
 
 [Minimal Edge](#)
 
-## Usage
-
-```bash
-just theme Minimal Edge
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/minimal-edge/)
 
-![Preview of Minimal Edge Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Minimal Edge Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- minimal-edge
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh minimal-edge
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme minimal-edge
+```

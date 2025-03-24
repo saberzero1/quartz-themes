@@ -2,18 +2,31 @@
 
 [Proper Dark](https://lukasbach.com)
 
-## Usage
-
-```bash
-just theme Proper Dark
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/proper-dark/)
 
-![Preview of Proper Dark Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Proper Dark Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- proper-dark
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh proper-dark
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme proper-dark
+```

@@ -2,18 +2,31 @@
 
 [Abecedarium](https://notes.zacklenza.com)
 
-## Usage
-
-```bash
-just theme Abecedarium
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/abecedarium/)
 
-![Preview of Abecedarium Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Abecedarium Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- abecedarium
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh abecedarium
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme abecedarium
+```

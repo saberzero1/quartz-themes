@@ -2,18 +2,31 @@
 
 [Allium](#)
 
-## Usage
-
-```bash
-just theme Allium
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/allium/)
 
-![Preview of Allium Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Allium Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- allium
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh allium
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme allium
+```

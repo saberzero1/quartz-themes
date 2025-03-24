@@ -2,18 +2,31 @@
 
 [obsidian_ia](#)
 
-## Usage
-
-```bash
-just theme obsidian_ia
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/obsidian_ia/)
 
-![Preview of obsidian_ia Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of obsidian_ia Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- obsidian_ia
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh obsidian_ia
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme obsidian_ia
+```

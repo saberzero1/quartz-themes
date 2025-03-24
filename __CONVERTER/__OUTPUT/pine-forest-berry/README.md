@@ -2,18 +2,31 @@
 
 [Pine Forest Berry](#)
 
-## Usage
-
-```bash
-just theme Pine Forest Berry
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/pine-forest-berry/)
 
-![Preview of Pine Forest Berry Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Pine Forest Berry Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- pine-forest-berry
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh pine-forest-berry
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme pine-forest-berry
+```

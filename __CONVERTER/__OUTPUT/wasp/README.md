@@ -2,18 +2,31 @@
 
 [Wasp](#)
 
-## Usage
-
-```bash
-just theme Wasp
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/wasp/)
 
-![Preview of Wasp Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Wasp Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- wasp
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh wasp
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme wasp
+```

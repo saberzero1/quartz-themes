@@ -2,18 +2,31 @@
 
 [Al Dente](#)
 
-## Usage
-
-```bash
-just theme Al Dente
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/al-dente/)
 
-![Preview of Al Dente Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Al Dente Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- al-dente
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh al-dente
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme al-dente
+```

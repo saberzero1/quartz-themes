@@ -2,18 +2,31 @@
 
 [Material Flat](https://github.com/Threethan/)
 
-## Usage
-
-```bash
-just theme Material Flat
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/material-flat/)
 
-![Preview of Material Flat Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Material Flat Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- material-flat
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh material-flat
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme material-flat
+```

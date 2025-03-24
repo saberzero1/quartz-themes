@@ -2,18 +2,31 @@
 
 [Transient](https://georgeazma.github.io)
 
-## Usage
-
-```bash
-just theme Transient
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/transient/)
 
-![Preview of Transient Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Transient Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- transient
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh transient
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme transient
+```

@@ -2,18 +2,31 @@
 
 [iB Writer](https://toablind.horse)
 
-## Usage
-
-```bash
-just theme iB Writer
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/ib-writer/)
 
-![Preview of iB Writer Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of iB Writer Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ib-writer
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh ib-writer
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme ib-writer
+```

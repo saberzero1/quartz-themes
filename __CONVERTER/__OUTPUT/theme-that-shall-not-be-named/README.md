@@ -2,18 +2,31 @@
 
 [Theme-That-Shall-Not-Be-Named](#)
 
-## Usage
-
-```bash
-just theme Theme-That-Shall-Not-Be-Named
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/theme-that-shall-not-be-named/)
 
-![Preview of Theme-That-Shall-Not-Be-Named Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Theme-That-Shall-Not-Be-Named Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- theme-that-shall-not-be-named
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh theme-that-shall-not-be-named
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme theme-that-shall-not-be-named
+```

@@ -2,18 +2,31 @@
 
 [Dark Moss](https://github.com/sergey900553)
 
-## Usage
-
-```bash
-just theme Dark Moss
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dark-moss/)
 
-![Preview of Dark Moss Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dark Moss Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dark-moss
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dark-moss
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme dark-moss
+```

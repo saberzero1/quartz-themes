@@ -2,18 +2,31 @@
 
 [Eldritch](https://github.com/eldritch-theme)
 
-## Usage
-
-```bash
-just theme Eldritch
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/eldritch/)
 
-![Preview of Eldritch Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Eldritch Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- eldritch
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh eldritch
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme eldritch
+```

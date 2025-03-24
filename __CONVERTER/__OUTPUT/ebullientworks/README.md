@@ -2,18 +2,31 @@
 
 [Ebullientworks](https://github.com/ebullient)
 
-## Usage
-
-```bash
-just theme Ebullientworks
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/ebullientworks/)
 
-![Preview of Ebullientworks Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Ebullientworks Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ebullientworks
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh ebullientworks
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme ebullientworks
+```

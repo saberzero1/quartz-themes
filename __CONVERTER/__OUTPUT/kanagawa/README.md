@@ -2,18 +2,31 @@
 
 [Kanagawa](https://ssp.sh)
 
-## Usage
-
-```bash
-just theme Kanagawa
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/kanagawa/)
 
-![Preview of Kanagawa Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Kanagawa Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- kanagawa
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh kanagawa
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme kanagawa
+```

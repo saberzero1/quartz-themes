@@ -2,18 +2,31 @@
 
 [Minimal-Resources](https://github.com/jonsnow231)
 
-## Usage
-
-```bash
-just theme Minimal-Resources
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/minimal-resources/)
 
-![Preview of Minimal-Resources Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Minimal-Resources Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- minimal-resources
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh minimal-resources
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme minimal-resources
+```

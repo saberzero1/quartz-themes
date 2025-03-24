@@ -2,18 +2,31 @@
 
 [Creme brulee](https://github.com/anareaty)
 
-## Usage
-
-```bash
-just theme Creme brulee
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/creme-brulee/)
 
-![Preview of Creme brulee Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Creme brulee Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- creme-brulee
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh creme-brulee
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme creme-brulee
+```

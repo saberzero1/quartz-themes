@@ -2,18 +2,31 @@
 
 [ion](https://github.com/zamsyt)
 
-## Usage
-
-```bash
-just theme ion
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/ion/)
 
-![Preview of ion Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of ion Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ion
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh ion
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme ion
+```

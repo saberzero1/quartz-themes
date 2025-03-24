@@ -2,18 +2,31 @@
 
 [Seamless View](https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View)
 
-## Usage
-
-```bash
-just theme Seamless View
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/seamless-view/)
 
-![Preview of Seamless View Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Seamless View Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- seamless-view
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh seamless-view
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme seamless-view
+```

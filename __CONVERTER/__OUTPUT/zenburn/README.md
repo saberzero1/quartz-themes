@@ -2,18 +2,31 @@
 
 [Zenburn](https://github.com/danyim)
 
-## Usage
-
-```bash
-just theme Zenburn
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/zenburn/)
 
-![Preview of Zenburn Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Zenburn Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- zenburn
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh zenburn
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme zenburn
+```

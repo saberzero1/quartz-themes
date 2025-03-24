@@ -2,18 +2,31 @@
 
 [Willemstad](https://notes.tingmelvin.com/ER-Resources/ER2PUB/ER2PUB-01-AboutMe)
 
-## Usage
-
-```bash
-just theme Willemstad
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/willemstad/)
 
-![Preview of Willemstad Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Willemstad Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- willemstad
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh willemstad
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme willemstad
+```

@@ -2,18 +2,31 @@
 
 [Cyber Glow](https://github.com/ArtexJay/Obsidian-CyberGlow)
 
-## Usage
-
-```bash
-just theme Cyber Glow
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/cyber-glow/)
 
-![Preview of Cyber Glow Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Cyber Glow Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- cyber-glow
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh cyber-glow
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme cyber-glow
+```

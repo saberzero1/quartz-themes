@@ -2,18 +2,31 @@
 
 [Tomorrow Night Bright](#)
 
-## Usage
-
-```bash
-just theme Tomorrow Night Bright
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/tomorrow-night-bright/)
 
-![Preview of Tomorrow Night Bright Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Tomorrow Night Bright Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tomorrow-night-bright
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh tomorrow-night-bright
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme tomorrow-night-bright
+```

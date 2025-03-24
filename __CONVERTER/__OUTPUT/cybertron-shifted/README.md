@@ -2,18 +2,31 @@
 
 [Cybertron Shifted](https://github.com/JorgEdmundo)
 
-## Usage
-
-```bash
-just theme Cybertron Shifted
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/cybertron-shifted/)
 
-![Preview of Cybertron Shifted Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Cybertron Shifted Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- cybertron-shifted
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh cybertron-shifted
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme cybertron-shifted
+```

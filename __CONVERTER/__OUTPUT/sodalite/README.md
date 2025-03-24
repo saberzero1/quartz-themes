@@ -2,18 +2,31 @@
 
 [Sodalite](https://twitter.com/tomzorz_)
 
-## Usage
-
-```bash
-just theme Sodalite
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/sodalite/)
 
-![Preview of Sodalite Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Sodalite Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- sodalite
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh sodalite
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme sodalite
+```

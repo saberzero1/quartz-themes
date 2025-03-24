@@ -2,18 +2,31 @@
 
 [Suddha](#)
 
-## Usage
-
-```bash
-just theme Suddha
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/suddha/)
 
-![Preview of Suddha Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Suddha Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- suddha
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh suddha
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme suddha
+```

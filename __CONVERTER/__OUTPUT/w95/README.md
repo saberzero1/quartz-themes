@@ -2,18 +2,31 @@
 
 [W95](https://github.com/phchang)
 
-## Usage
-
-```bash
-just theme W95
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/w95/)
 
-![Preview of W95 Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of W95 Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- w95
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh w95
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme w95
+```

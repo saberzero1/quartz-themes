@@ -2,18 +2,31 @@
 
 [Cybertron](#)
 
-## Usage
-
-```bash
-just theme Cybertron
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/cybertron/)
 
-![Preview of Cybertron Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Cybertron Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- cybertron
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh cybertron
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme cybertron
+```

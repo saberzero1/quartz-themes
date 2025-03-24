@@ -2,18 +2,31 @@
 
 [Obsidianite](https://github.com/bennyxguo)
 
-## Usage
-
-```bash
-just theme Obsidianite
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/obsidianite/)
 
-![Preview of Obsidianite Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Obsidianite Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- obsidianite
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh obsidianite
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme obsidianite
+```

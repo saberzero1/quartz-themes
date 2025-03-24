@@ -2,18 +2,31 @@
 
 [ProtocolBlue](https://cosmodiumcs.com)
 
-## Usage
-
-```bash
-just theme ProtocolBlue
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/protocolblue/)
 
-![Preview of ProtocolBlue Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of ProtocolBlue Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- protocolblue
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh protocolblue
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme protocolblue
+```

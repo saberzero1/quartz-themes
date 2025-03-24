@@ -2,18 +2,31 @@
 
 [Trace Labs](https://github.com/tracelabs)
 
-## Usage
-
-```bash
-just theme Trace Labs
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/trace-labs/)
 
-![Preview of Trace Labs Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Trace Labs Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- trace-labs
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh trace-labs
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme trace-labs
+```

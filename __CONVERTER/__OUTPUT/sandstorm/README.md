@@ -2,18 +2,31 @@
 
 [Sandstorm](https://github.com/jaysan0)
 
-## Usage
-
-```bash
-just theme Sandstorm
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/sandstorm/)
 
-![Preview of Sandstorm Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Sandstorm Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- sandstorm
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh sandstorm
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme sandstorm
+```

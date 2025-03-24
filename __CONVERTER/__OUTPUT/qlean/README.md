@@ -2,18 +2,31 @@
 
 [Qlean](https://github.com/Fro-Q)
 
-## Usage
-
-```bash
-just theme Qlean
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/qlean/)
 
-![Preview of Qlean Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Qlean Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- qlean
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh qlean
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme qlean
+```

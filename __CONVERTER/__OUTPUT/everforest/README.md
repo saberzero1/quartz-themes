@@ -2,18 +2,31 @@
 
 [Everforest](#)
 
-## Usage
-
-```bash
-just theme Everforest
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/everforest/)
 
-![Preview of Everforest Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Everforest Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- everforest
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh everforest
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme everforest
+```

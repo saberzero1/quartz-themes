@@ -2,18 +2,31 @@
 
 [Autotape](https://rmv.fyi/)
 
-## Usage
-
-```bash
-just theme Autotape
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/autotape/)
 
-![Preview of Autotape Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Autotape Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- autotape
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh autotape
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme autotape
+```

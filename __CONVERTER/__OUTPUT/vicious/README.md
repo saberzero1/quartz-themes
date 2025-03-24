@@ -2,18 +2,31 @@
 
 [Vicious](https://zaher.design)
 
-## Usage
-
-```bash
-just theme Vicious
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/vicious/)
 
-![Preview of Vicious Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Vicious Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- vicious
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh vicious
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme vicious
+```

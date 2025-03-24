@@ -2,18 +2,31 @@
 
 [Material Gruvbox](https://github.com/AllJavi)
 
-## Usage
-
-```bash
-just theme Material Gruvbox
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/material-gruvbox/)
 
-![Preview of Material Gruvbox Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Material Gruvbox Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- material-gruvbox
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh material-gruvbox
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme material-gruvbox
+```

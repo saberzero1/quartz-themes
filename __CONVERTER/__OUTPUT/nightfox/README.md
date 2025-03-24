@@ -2,18 +2,31 @@
 
 [Nightfox](https://github.com/mbromell)
 
-## Usage
-
-```bash
-just theme Nightfox
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/nightfox/)
 
-![Preview of Nightfox Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Nightfox Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- nightfox
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh nightfox
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme nightfox
+```

@@ -2,18 +2,31 @@
 
 [Simple](https://diegoeis.com/)
 
-## Usage
-
-```bash
-just theme Simple
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/simple/)
 
-![Preview of Simple Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Simple Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- simple
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh simple
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme simple
+```

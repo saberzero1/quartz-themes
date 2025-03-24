@@ -2,18 +2,31 @@
 
 [Obsidian Boom](#)
 
-## Usage
-
-```bash
-just theme Obsidian Boom
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/obsidian-boom/)
 
-![Preview of Obsidian Boom Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Obsidian Boom Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- obsidian-boom
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh obsidian-boom
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme obsidian-boom
+```

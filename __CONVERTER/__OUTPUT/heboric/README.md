@@ -2,18 +2,31 @@
 
 [Heboric](https://github.com/nhrrs)
 
-## Usage
-
-```bash
-just theme Heboric
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/heboric/)
 
-![Preview of Heboric Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Heboric Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- heboric
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh heboric
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme heboric
+```

@@ -2,18 +2,31 @@
 
 [Light & Bright](https://github.com/Bluemoondragon07)
 
-## Usage
-
-```bash
-just theme Light & Bright
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/light-bright/)
 
-![Preview of Light & Bright Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Light & Bright Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- light-bright
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh light-bright
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme light-bright
+```

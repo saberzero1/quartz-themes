@@ -2,18 +2,31 @@
 
 [Colored Candy](#)
 
-## Usage
-
-```bash
-just theme Colored Candy
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/colored-candy/)
 
-![Preview of Colored Candy Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Colored Candy Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- colored-candy
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh colored-candy
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme colored-candy
+```

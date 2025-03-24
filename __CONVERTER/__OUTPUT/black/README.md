@@ -2,18 +2,31 @@
 
 [Black](https://github.com/b3h3m0th)
 
-## Usage
-
-```bash
-just theme Black
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/black/)
 
-![Preview of Black Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Black Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- black
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh black
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme black
+```

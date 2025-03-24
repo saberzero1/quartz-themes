@@ -2,18 +2,31 @@
 
 [Lemons Theme](https://mprojectscode.github.io/)
 
-## Usage
-
-```bash
-just theme Lemons Theme
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/lemons-theme/)
 
-![Preview of Lemons Theme Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Lemons Theme Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- lemons-theme
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh lemons-theme
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme lemons-theme
+```

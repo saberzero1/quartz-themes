@@ -2,18 +2,31 @@
 
 [Celestial Night](https://github.com/Bluemoondragon07)
 
-## Usage
-
-```bash
-just theme Celestial Night
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/celestial-night/)
 
-![Preview of Celestial Night Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Celestial Night Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- celestial-night
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh celestial-night
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme celestial-night
+```

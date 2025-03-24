@@ -2,18 +2,31 @@
 
 [SynthWave](#)
 
-## Usage
-
-```bash
-just theme SynthWave
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/synthwave/)
 
-![Preview of SynthWave Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of SynthWave Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- synthwave
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh synthwave
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme synthwave
+```

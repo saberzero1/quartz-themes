@@ -2,18 +2,31 @@
 
 [nobb](#)
 
-## Usage
-
-```bash
-just theme nobb
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/nobb/)
 
-![Preview of nobb Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of nobb Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- nobb
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh nobb
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme nobb
+```

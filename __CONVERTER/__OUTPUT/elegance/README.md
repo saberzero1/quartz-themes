@@ -2,18 +2,31 @@
 
 [Elegance](https://github.com/Victologo/elegance-theme)
 
-## Usage
-
-```bash
-just theme Elegance
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/elegance/)
 
-![Preview of Elegance Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Elegance Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- elegance
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh elegance
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme elegance
+```

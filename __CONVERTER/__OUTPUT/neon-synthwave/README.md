@@ -2,18 +2,31 @@
 
 [Neon Synthwave](https://github.com/grjsmith)
 
-## Usage
-
-```bash
-just theme Neon Synthwave
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/neon-synthwave/)
 
-![Preview of Neon Synthwave Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Neon Synthwave Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- neon-synthwave
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh neon-synthwave
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme neon-synthwave
+```

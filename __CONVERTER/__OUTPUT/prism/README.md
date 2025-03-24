@@ -2,18 +2,31 @@
 
 [Prism](https://github.com/damiankorcz)
 
-## Usage
-
-```bash
-just theme Prism
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/prism/)
 
-![Preview of Prism Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Prism Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- prism
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh prism
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme prism
+```

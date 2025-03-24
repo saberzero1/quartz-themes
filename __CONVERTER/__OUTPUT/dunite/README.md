@@ -2,18 +2,31 @@
 
 [Dunite](https://ch0live.github.io/home)
 
-## Usage
-
-```bash
-just theme Dunite
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/dunite/)
 
-![Preview of Dunite Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Dunite Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- dunite
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh dunite
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme dunite
+```

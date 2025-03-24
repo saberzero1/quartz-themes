@@ -2,18 +2,31 @@
 
 [Strict](https://github.com/Nikolai2038)
 
-## Usage
-
-```bash
-just theme Strict
-```
-
 ## Preview
 
-### Light
+[Open live preview](https://quartz-themes.github.io/strict/)
 
-![Preview of Strict Light](preview-light.png)
+## Usage
 
-### Dark
+### GitHub Actions
 
-![Preview of Strict Dark](preview-dark.png)
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- strict
+```
+
+### Manual install
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+
+./action.sh strict
+```
+
+### Install script (Advanced)
+
+After installing:
+
+```bash
+npm run theme strict
+```
