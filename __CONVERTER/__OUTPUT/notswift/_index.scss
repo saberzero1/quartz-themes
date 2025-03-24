@@ -1041,6 +1041,9 @@ body {
   }
 
   /* CODE */
+  pre {
+    border: 1px solid var(--background-modifier-border, var(--border));
+  }
   code {
     color: var(--code-normal);
     font-family: var(--font-monospace);

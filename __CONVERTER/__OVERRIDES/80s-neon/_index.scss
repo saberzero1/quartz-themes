@@ -6,5 +6,8 @@
     p {
       color: var(--text-normal);
     }
+    a {
+      color: var(--text-a, var(--link-color));
+    }
   }
 }
