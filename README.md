@@ -478,7 +478,7 @@ Colors in GitHub markdown: https://gist.github.com/luigiMinardi/4574708d404cdf4f
 | ☀️🌙 | yue                            | CHECKING                   | [live preview](https://quartz-themes.github.io/yue/)                            |
 | ☀️🌙 | zario                          | CHECKING                   | [live preview](https://quartz-themes.github.io/zario/)                          |
 | ☀️🌙 | zenburn                        | CHECKING                   | [live preview](https://quartz-themes.github.io/zenburn/)                        |
-| ☀️🌙 | 🔔-chime                       | CHECKING                   | [live preview](https://quartz-themes.github.io/🔔-chime/)                       |
+| ☀️🌙 | --chime (🔔-chime)             | CHECKING                   | [live preview](https://quartz-themes.github.io/--chime/)                        |
 
 <!--
 ## Specification
