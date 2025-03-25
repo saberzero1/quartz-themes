@@ -6,8 +6,8 @@ A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jacky
   <img src="media/quartz-themes-400.png" alt="Quartz Themes logo"/>
 </p>
 
-![Last updated: 2024-10-05](https://img.shields.io/date/1728122400?style=for-the-badge&label=Last_Obsidian_themes_list_fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444)
-![Supported Quartz version v4.5.0](https://img.shields.io/badge/v4.5.0-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444)
+![Last updated: 2024-10-05](<https://img.shields.io/date/1728122400?style=for-the-badge&label=Last_Obsidian_themes_list_fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Supported Quartz version v4.5.0](<https://img.shields.io/badge/v4.5.0-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
 
 ## Installation
 
@@ -201,7 +201,7 @@ npm run update
 
 </details>
 
-| Mode                                   | Obsidian Theme Name              | Theme Compatibility Status                     | Live Preview                                                                    |
+| Supported Modes                        | Obsidian Theme Name              | Theme Compatibility Status                     | Live Preview                                                                    |
 | -------------------------------------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
 | <img src="media/dark.svg" alt="DARK"/> | `80s-neon`                       | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/80s-neon/)                       |
 | <img src="media/both.svg" alt="BOTH"/> | `abate`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/abate/)                          |
