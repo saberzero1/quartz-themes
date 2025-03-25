@@ -28,7 +28,7 @@ Add the following lines to your `deploy.yml` before the build step:
 >
 > ```yaml
 > - name: Fetch Quartz Theme
->   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- Tokyo Night
+>   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
 > ```
 
 The full script would look like this:
@@ -95,7 +95,7 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 
 ```bash
 # Example: installing Tokyo Night...
-./action.sh Tokyo Night
+./action.sh tokyo-night
 
 # ...should output:
 # Quartz root succesfully detected...
@@ -157,7 +157,7 @@ Your `custom.scss` should look something like this:
 Run the following from the Quartz Themes project root:
 
 ```bash
-npm run theme <theme-name>
+npm run theme <THEME-NAME>
 ```
 
 #### Updating
