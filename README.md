@@ -83,7 +83,10 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-### Manual install
+### Local install
+
+> [!TIP]
+> This installation method is recommended for users who want to install themes into their Quartz repository directly. This method is also recommended for user who cannot fetch dependencies during compilation.
 
 Download the latest version of the [action.sh](https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh) script or run the following to download it:
 
@@ -91,10 +94,10 @@ Download the latest version of the [action.sh](https://raw.githubusercontent.com
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 ```
 
-> [!INFO]
+> [!NOTE]
 > Windows users should use `action.bat` instead, unless they also access to the bash shell (git-bash, etc.) or WSL.
 >
-> ```sh
+> ```bash
 > curl -s -S -o action.bat https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.bat
 >
 > action.bat tokyo-night
@@ -128,13 +131,12 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 # Finished fetching and applying theme 'tokyo-night'.
 ```
 
-### Install script (Advanced)
+### Install script (Deprecated)
 
 <details>
-<summary>Advanced installation</summary>
+<summary>Install script</summary>
 
-> [!WARNING]
-> This setup method is only recommended if the recommended method is not feasible.
+> [!CAUTION] > **This setup method is the previous installation method and is not recommended for new users.**
 
 Clone the project next to your Quartz repository.
 
