@@ -43,7 +43,7 @@
     --text-accent: var(--brass-light); /* Text color for links and tags - includes links in the settings */
     --text-accent-hover: var(--brass-base); /* Text color when you mouseover/hover links and tags */
     --text-normal: var(--silver-light); /* The default text color in the editor/preview, and the text color of the selected file in the File Explorer */
-    --text-muted: var(-silver-dark); /* Text color for non-selected files in the File Explorer, text color for right panel, icon color for the top of each side panel, icon color for the stuff at the top of each window in the editor (class="tooltip"?), the default color for nodes in the graph view. */
+    --text-muted: var(--silver-dark); /* Text color for non-selected files in the File Explorer, text color for right panel, icon color for the top of each side panel, icon color for the stuff at the top of each window in the editor (class="tooltip"?), the default color for nodes in the graph view. */
     --text-muted-rgb: 153, 153, 153; /* Unknown */
     --text-faint: #666; /* Text color for items checked off of a todo list */
     --text-error: #ff3333; /* Error text color, as seen in Settings -> About -> Hardware Acceleration. Do not recommend changing. */
