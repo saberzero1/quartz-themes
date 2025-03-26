@@ -950,7 +950,7 @@ body {
     /* Graphs */
     --graph-controls-width: 240px;
     --graph-text: var(--gray-2);
-    ;
+
     --graph-line: var(--cyan-6);
     --graph-node: var(--text-muted);
     --graph-node-resolved: var(--yellow-4);
