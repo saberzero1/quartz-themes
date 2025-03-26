@@ -5539,10 +5539,10 @@ body {
   --text-highlight-bg-l-light: 80%;
   --text-highlight-bg-a-light: 0.847;
 
-  --cursor-color: var(var(--text-normal));
+  --cursor-color: var(--text-normal);
 
   --fancy-cursor-width: 2px;
-  --cursor-color-temp: var(var(--text-normal));
+  --cursor-color-temp: var(--text-normal);
 
   --print-strong-color: ;
   --print-em-color: var(--accent-em);
