@@ -91,6 +91,15 @@ Download the latest version of the [action.sh](https://raw.githubusercontent.com
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 ```
 
+> [!INFO]
+> Windows users should use `action.bat` instead, unless they also access to the bash shell (git-bash, etc.) or WSL.
+>
+> ```sh
+> curl -s -S -o action.bat https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.bat
+>
+> action.bat tokyo-night
+> ```
+
 Then run the `action.sh` script with the desired theme to install it into your Quartz repository:
 
 ```bash
