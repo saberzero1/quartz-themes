@@ -46,7 +46,7 @@ for param in "$@"; do
   result="$result$param"
 done
 
-if "$result" = ""; then
+if [ -z "$result" ]; then
   echo_warn "No theme provided, defaulting to Tokyo Night..."
   result="tokyo-night"
 fi
