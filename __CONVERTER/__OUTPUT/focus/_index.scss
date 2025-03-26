@@ -381,7 +381,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-tip: var(--color-cyan-rgb);
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --callout-quote: 158, 158, 158;
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
   --canvas-color-1: var(--color-red-rgb);
@@ -439,6 +438,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --embed-border-bottom: none;
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
   --file-line-width: 700px;
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
@@ -1022,23 +1023,13 @@ html[saved-theme="dark"] {
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
   --highlight-mix-blend-mode: lighten;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 245, 152, 143;
   --color-red: #f5988f;
-  --color-green-rgb: 165, 230, 147;
   --color-green: #a5e693;
-  --color-orange-rgb: 255, 200, 163;
   --color-orange: #ffc8a3;
-  --color-yellow-rgb: 240, 227, 149;
   --color-yellow: #f0e395;
-  --color-cyan-rgb: 139, 240, 219;
   --color-cyan: #8bf0db;
-  --color-blue-rgb: 151, 192, 243;
   --color-blue: #97c0f3;
-  --color-purple-rgb: 172, 157, 242;
   --color-purple: #ac9df2;
-  --color-pink-rgb: 234, 169, 255;
   --color-pink: #eaa9ff;
   --color-base-00: #1a1a1a;
   --color-base-05: #1a1a1a;
@@ -1055,14 +1046,20 @@ html[saved-theme="dark"] {
   --color-base-80: #c0c0c0;
   --color-base-90: #e0e0e0;
   --color-base-100: #ffffff;
-  --color-accent-rgb: 165, 230, 147;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
-  --color-complement-rgb: 234, 169, 255;
-  --color-complement-hsl: var(--complement-h), var(--complement-s), var(--complement-l);
   --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
+  --color-complement-1: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) - 10%)
+  );
+  --color-complement-2: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) + 10%)
+  );
   --background-modifier-form-field: var(--interactive-normal);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-base-30);
@@ -1148,23 +1145,13 @@ html[saved-theme="light"] {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
   --highlight-mix-blend-mode: lighten;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 245, 152, 143;
   --color-red: #f5988f;
-  --color-green-rgb: 165, 230, 147;
   --color-green: #a5e693;
-  --color-orange-rgb: 255, 200, 163;
   --color-orange: #ffc8a3;
-  --color-yellow-rgb: 240, 227, 149;
   --color-yellow: #f0e395;
-  --color-cyan-rgb: 139, 240, 219;
   --color-cyan: #8bf0db;
-  --color-blue-rgb: 151, 192, 243;
   --color-blue: #97c0f3;
-  --color-purple-rgb: 172, 157, 242;
   --color-purple: #ac9df2;
-  --color-pink-rgb: 234, 169, 255;
   --color-pink: #eaa9ff;
   --color-base-00: #1a1a1a;
   --color-base-05: #1a1a1a;
@@ -1181,14 +1168,20 @@ html[saved-theme="light"] {
   --color-base-80: #c0c0c0;
   --color-base-90: #e0e0e0;
   --color-base-100: #ffffff;
-  --color-accent-rgb: 165, 230, 147;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
-  --color-complement-rgb: 234, 169, 255;
-  --color-complement-hsl: var(--complement-h), var(--complement-s), var(--complement-l);
   --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
+  --color-complement-1: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) - 10%)
+  );
+  --color-complement-2: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) + 10%)
+  );
   --background-modifier-form-field: var(--interactive-normal);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-base-30);

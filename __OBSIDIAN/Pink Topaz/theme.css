@@ -9,6 +9,7 @@
 /*蓝色托帕石，适合Obsidian v0.12.2。[20210506] flying fly flies制作，欢迎使用及分享，借鉴（copy）了许多主题，在此一一感谢。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
 /*Blue Topaz for Obsidian v0.12.2, [20210506] created by flying fly flies. Feel free to use, share and modify. Thanks for all shared css themes which inspire me a lot. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
 
+
 /* 
 ===========================    TIPS   ===============================
 ====================================================================
@@ -293,57 +294,56 @@ to get a right-side note block
 
 */
 
-:root {
-  --font-size-obsidian-titlebar: 0.75em;
-  --font-size-vault-name: 0.875em; /*左侧库名字体大小*/
-  --font-size-file-header-title: 0.9375em; /*文件抬头标题，只在非Andy mode plugin时生效*/
-  --font-size-file-header-title-andy-plugin: 1em; /*文件抬头标题for Andy mode plugin*/
-  --font-size-embed-title-size: 1.125em;
-  --font-size-embed-file: 1.25em;
-  --font-size-folder-and-file: 0.8125em; /*左侧边栏文件字体大小*/
-  --font-size-edit-normal: 1em; /*编辑正文字体大小*/
-  --font-size-preview-normal: 1em; /*预览正文字体大小*/
-  --font-size-h1: 1.5625em;
-  --font-size-h2: 1.4375em;
-  --font-size-h3: 1.3125em;
-  --font-size-h4: 1.1875em;
-  --font-size-h5: 1.0625em;
-  --font-size-h6: 0.9375em;
-  --font-size-tag: 1em;
-  --font-size-list: 1em;
-  --font-size-preview-blockquote: 1em;
-  --font-size-edit-blockquote: 1em;
-  --font-size-code: 0.9375em;
-  --font-size-edit-code: 1em;
-  --font-size-latex: 1.25em;
-  --text-size-cloze: 0.9375em;
+:root{
+  --font-size-obsidian-titlebar:             0.75em;
+  --font-size-vault-name:                    0.875em;/*左侧库名字体大小*/
+  --font-size-file-header-title:             0.9375em;/*文件抬头标题，只在非Andy mode plugin时生效*/
+  --font-size-file-header-title-andy-plugin: 1em;/*文件抬头标题for Andy mode plugin*/
+  --font-size-embed-title-size:              1.125em;
+  --font-size-embed-file:                    1.25em;
+  --font-size-folder-and-file:               0.8125em;/*左侧边栏文件字体大小*/
+  --font-size-edit-normal:                   1em;/*编辑正文字体大小*/
+  --font-size-preview-normal:                1em;/*预览正文字体大小*/
+  --font-size-h1:                            1.5625em;
+  --font-size-h2:                            1.4375em;
+  --font-size-h3:                            1.3125em;
+  --font-size-h4:                            1.1875em;
+  --font-size-h5:                            1.0625em;
+  --font-size-h6:                            0.9375em;
+  --font-size-tag:                           1em;
+  --font-size-list:                          1em;
+  --font-size-preview-blockquote:            1em;
+  --font-size-edit-blockquote:               1em;
+  --font-size-code:                          0.9375em;
+  --font-size-edit-code:                     1em;
+  --font-size-latex:                         1.25em;
+  --text-size-cloze:                         0.9375em;
 
   /*font family*/
-  --font-family-list:                                                    ; /*列表字体*/
-  --font-family-major:                                                   ; /*主体（包括列表）字体，除代码框等少数部分*/
+  --font-family-list:                                                    ;/*列表字体*/
+  --font-family-major:                                                   ;/*主体（包括列表）字体，除代码框等少数部分*/
   --font-family-h1:                                                      ;
   --font-family-h2:                                                      ;
   --font-family-h3:                                                      ;
   --font-family-h4:                                                      ;
   --font-family-h5:                                                      ;
   --font-family-h6:                                                      ;
-  --font-family-title:                                                   ; /*文件抬头标题*/
-  --font-family-folder-file-title:                                       ; /*左侧边栏文件、文件夹字体*/
-  --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
-  --text-family-inline-code: "Consolas", "Monaco", monospace;
+  --font-family-title:                                                   ;/*文件抬头标题*/
+  --font-family-folder-file-title:                                       ;/*左侧边栏文件、文件夹字体*/
+  --font-family-preview-edit-code:        "Consolas", "Monaco", monospace;
+  --text-family-inline-code:              "Consolas", "Monaco", monospace;
   --font-family-tag:                                                     ;
-  --font-family-vault:                                                   ; /*左侧库名字体*/
-  --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina",
-    cursive;
-  --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-family-vault:                                                   ;/*左侧库名字体*/
+  --font-family-special-tag:       "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-family-YAML:              "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
-}
+} 
 
 .theme-dark {
-  --background-primary: #242424;
+  --background-primary: #242424; 
   --background-primary-alt: #444444;
   --background-secondary: #333333;
-  --background-secondary-alt: #000000;
+  --background-secondary-alt: #000000; 
   --background-accent: #000;
   --background-modifier-border: #565656;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
@@ -351,13 +351,13 @@ to get a right-side note block
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: #539126;
   --background-modifier-error: #9b4343;
-  --background-modifier-error-rgb: 155, 67, 67;
+  --background-modifier-error-rgb: 155,67,67;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --text-accent: #53aaf5;
-  --text-accent-hover: #3e8de7;
-  --text-normal: #d1d1d1;
-  --text-muted: #8a8a8a;
+  --text-accent-hover: #3e8de7; 
+  --text-normal: #d1d1d1; 
+  --text-muted: #8a8a8a;  
   --text-faint: rgb(121, 121, 121);
   --accent-strong: #ffffff;
   /*--text-em-color: #ff9b9b;*/
@@ -368,8 +368,8 @@ to get a right-side note block
   --text-on-accent: #dcddde;
   --interactive-normal: #20242b;
   --interactive-hover: #353b47;
-  --interactive-accent: #3187d3;
-  --interactive-accent-rgb: 45, 135, 211;
+  --interactive-accent: #3187d3; 
+  --interactive-accent-rgb: 45, 135, 211;     
   --interactive-accent-hover: #3e8de7;
   --panel-border-color: #18191e;
   --search-text: #e0e0e0;
@@ -377,7 +377,7 @@ to get a right-side note block
   --mark-highlight: #e481007c;
   --background-search-result: #444444;
 
-  --gray-1: #5c6370;
+  --gray-1: #5C6370;
   --gray-2: #abb2bf;
   --red: #e06c75;
   --red-1: #d05a63;
@@ -390,9 +390,9 @@ to get a right-side note block
   --darkblue: #4889df;
   --yellow: #e4ba6c;
   --light-yellow: #dfda91;
-
-  --embed-color: #5c67996c;
-  --search-result-file-title-color: #96b7e4;
+  
+  --embed-color: #5c67996c;   
+  --search-result-file-title-color: #96b7e4; 
   --theme-color: #3187d3;
   --theme-color-translucent: #3187d388;
   --theme-color-translucent-1: #1982dd2c;
@@ -442,7 +442,7 @@ to get a right-side note block
   */
 
   /*graph*/
-  --graph-text-color: #b5b5b5;
+  --graph-text-color: #B5B5B5; 
   /*--graphtag: #d1d43eb2;
   --graph-attach: #4ad43eb2;
   --graph-circle: #99b4d8b2;
@@ -488,9 +488,9 @@ to get a right-side note block
   --event-item-color7: #d84315bb;
   --event-item-color8: #c62828bb;
   --event-item-color9: #ad1457bb;
-  --event-item-color10: #6a1b9abb;
+  --event-item-color10:#6a1b9abb;
 
-  /*colourful notes*/
+/*colourful notes*/
   --text-gray: #acacac;
   --text-brown: #be9684;
   --text-orange: #ffa344;
@@ -513,7 +513,7 @@ to get a right-side note block
 
   --note-important: #d64545;
   --note-cloze: #ffffff;
-
+	
   /* stickies */
   --stickies-color-1: #84c584;
   --stickies-color-2: #c7a3cf;
@@ -533,10 +533,10 @@ to get a right-side note block
   --background-modifier-form-field: #fff;
   --background-modifier-form-field-highlighted: #fff;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-success: #a4e7c3;
+  --background-modifier-success: #A4E7C3;
   --background-modifier-error: #e68787;
   --background-modifier-error-rgb: 230, 135, 135;
-  --background-modifier-error-hover: #ff9494;
+  --background-modifier-error-hover: #FF9494;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
   --text-accent: #007de4;
   --text-accent-hover: #4ba8ff;
@@ -557,7 +557,7 @@ to get a right-side note block
   --panel-border-color: #dbdbdc;
   --search-text: #000000;
   --folder-title: #000000;
-  --mark-highlight: #ffd298d8;
+  --mark-highlight: #ffd298d8;  
   --background-search-result: #fdfdfd;
 
   --gray-1: #383a42;
@@ -575,6 +575,7 @@ to get a right-side note block
   --orange: #db9600;
   --light-purple: #b74ff3;
   --blue-green: #3bd4da;
+  
 
   --embed-color: #468eeb27;
   --search-result-file-title-color: #2f92e4;
@@ -591,7 +592,7 @@ to get a right-side note block
   --list-ol-block-color: #3573a5;
   --list-ol-number-color: #a3bee0;
   --list-ol-hover: #5c95e0;
-
+ 
   /*tags*/
   --stag1: #ff0000;
   --stag2: #ff9900;
@@ -620,8 +621,8 @@ to get a right-side note block
   --graph-attach: #afcfe0cc;
   --graph-circle: #1f78b4cc;
   --graph-line: #dadada;
-  --graph-unresolved: #db4e4ecc;
-  --graph-arrow: #e25300;
+  --graph-unresolved: #db4e4ecc; 
+  --graph-arrow: #e25300; 
 
   /*mermaid*/
   --mermaid-active-task-color: #44bbff;
@@ -656,7 +657,7 @@ to get a right-side note block
   --event-item-color7: #1652ac;
   --event-item-color8: #0c469c;
   --event-item-color9: #0a3c86;
-  --event-item-color10: #072f6b;
+  --event-item-color10:#072f6b;
 
   /*colourful notes*/
   --text-gray: #37352f99;
@@ -681,7 +682,7 @@ to get a right-side note block
 
   --note-important: #fd4141;
   --note-cloze: #000000;
-
+	
   /* stickies */
   --stickies-color-1: #b3e2b3;
   --stickies-color-2: #e9c6f1;
@@ -708,14 +709,12 @@ to get a right-side note block
 .tag[href^="#重要"] {
   background-color: var(--stag1) !important;
   font-weight: 600;
-  font-family:
-    Webdings,
-    Microsoft YaHei;
+  font-family: Webdings, Microsoft YaHei;
 }
 .tag[href^="#complete"] {
   background-color: var(--stag3) !important;
   font-weight: 600;
-  font-family: var(--font-family-special-tag);
+  font-family:  var(--font-family-special-tag);
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-complete:not(.cm-formatting-hashtag) {
   color: var(--stag3);
@@ -724,9 +723,7 @@ to get a right-side note block
 }
 .tag[href^="#完成"] {
   background-color: var(--stag3) !important;
-  font-family:
-    Origin,
-    Microsoft YaHei;
+  font-family: Origin, Microsoft YaHei;
   font-weight: 600;
 }
 .tag[href^="#inprogress"] {
@@ -735,16 +732,14 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
-  color: var(--stag2);
+  color:var(--stag2);
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
 .tag[href^="#进行中"] {
   background-color: var(--stag2) !important;
   font-weight: 600;
-  font-family:
-    Wingdings,
-    Microsoft YaHei;
+  font-family: Wingdings, Microsoft YaHei;
 }
 .tag[href^="#dailynote"] {
   background-color: #277cdd !important;
@@ -752,7 +747,7 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
 }
 .tag[href^="#dailynote"]::after {
-  content: " 🐈";
+  content:' 🐈';
   font-size: 25px;
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
@@ -766,7 +761,7 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
 }
 .tag[href^="#weeklynote"]::after {
-  content: " 🥑";
+  content:' 🥑';
   font-size: 25px;
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
@@ -780,7 +775,7 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
 }
 .tag[href^="#questions"]::after {
-  content: " ❓";
+  content:' ❓';
   font-size: 25px;
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-questions:not(.cm-formatting-hashtag) {
@@ -794,7 +789,7 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
 }
 .tag[href^="#ideas"]::after {
-  content: " 💡";
+  content:' 💡';
   font-size: 25px;
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
@@ -804,51 +799,51 @@ to get a right-side note block
 }
 
 /*colorful tags*/
-.tag:not(.token).tag:nth-child(9n + 1) {
-  background-color: var(--tag1); /*1*/
-}
-.tag:not(.token).tag:nth-child(9n + 2) {
-  background-color: var(--tag6); /*6*/
-}
-.tag:not(.token).tag:nth-child(9n + 3) {
-  background-color: var(--tag2); /*2*/
-}
-.tag:not(.token).tag:nth-child(9n + 4) {
-  background-color: var(--tag7); /*7*/
-}
-.tag:not(.token).tag:nth-child(9n + 5) {
-  background-color: var(--tag3); /*3*/
-}
-.tag:not(.token).tag:nth-child(9n + 6) {
-  background-color: var(--tag8); /*8*/
-}
-.tag:not(.token).tag:nth-child(9n + 7) {
-  background-color: var(--tag4); /*4*/
-}
-.tag:not(.token).tag:nth-child(9n + 8) {
-  background-color: var(--tag9); /*9*/
-}
+.tag:not(.token).tag:nth-child(9n+1) {
+  background-color: var(--tag1);/*1*/
+} 
+.tag:not(.token).tag:nth-child(9n+2) {
+  background-color: var(--tag6);/*6*/
+} 
+.tag:not(.token).tag:nth-child(9n+3) {
+  background-color: var(--tag2);/*2*/
+} 
+.tag:not(.token).tag:nth-child(9n+4) {
+  background-color: var(--tag7);/*7*/
+} 
+.tag:not(.token).tag:nth-child(9n+5) {
+  background-color: var(--tag3);/*3*/
+} 
+.tag:not(.token).tag:nth-child(9n+6) {
+  background-color: var(--tag8);/*8*/
+} 
+.tag:not(.token).tag:nth-child(9n+7) {
+  background-color: var(--tag4);/*4*/
+} 
+.tag:not(.token).tag:nth-child(9n+8) {
+  background-color: var(--tag9);/*9*/
+} 
 .tag:not(.token).tag:nth-child(9n) {
-  background-color: var(--tag5); /*5*/
-}
+  background-color: var(--tag5);/*5*/
+}   
 
 /* ====== Tag Pills ======== */
 .tag:not(.token) {
-  border: none;
-  color: #f1f1f1;
-  padding: 1px 8px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 0px;
-  cursor: pointer;
-  border-radius: 15px;
+	border: none;
+	color: #f1f1f1;
+	padding: 1px 8px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 15px;
 }
 .tag:not(.token):hover {
-  color: white;
-  background-color: var(--theme-color) !important;
+	color: white;
+	background-color: var(--theme-color) !important;
 }
 
-/*tag pane*/ /*
+/*tag pane*//*
 .pane-list-item-ending-flair{
   position: absolute;
   top: 6px;
@@ -929,10 +924,11 @@ code {
   font-size: var(--font-size-code) !important;
 }
 
+
 /* mark highlighting */
-mark {
-  background-color: var(--mark-highlight) !important;
-  padding: 1px 3px;
+mark { 
+  background-color: var(--mark-highlight)!important;
+  padding: 1px 3px; 
   border-radius: 3px;
 }
 
@@ -952,7 +948,7 @@ mark {
 
 /*标题后阴影*/
 .view-header-title-container:after {
-  display: none;
+display: none;
 }
 /*标题前阴影*/
 .view-header-title-container::before {
@@ -1001,10 +997,10 @@ mark {
   transform: scale(1.2);
 }
 
-.titlebar-button.mod-maximize:hover,
+.titlebar-button.mod-maximize:hover, 
 .titlebar-button.mod-minimize:hover,
 .workspace-ribbon-collapse-btn:hover,
-.workspace-tab-header.is-active:hover {
+.workspace-tab-header.is-active:hover{
   color: var(--theme-color);
 }
 
@@ -1046,8 +1042,8 @@ input.search-input {
 .nav-action-button {
   margin: 0px 2px 0px 2px !important;
 }
-.workspace-leaf-content[data-type="search"] .nav-action-button,
-.workspace-leaf-content[data-type="backlink"] .nav-action-button {
+.workspace-leaf-content[data-type='search'] .nav-action-button,
+.workspace-leaf-content[data-type='backlink'] .nav-action-button{
   padding: 3px 3px 3px 3px;
 }
 
@@ -1082,7 +1078,7 @@ input.search-input {
 .titlebar-text {
   flex-grow: 1;
   margin-right: 20px;
-  font-size: var(--font-size-obsidian-titlebar);
+  font-size: var( --font-size-obsidian-titlebar);
   text-align: center;
   letter-spacing: 0.05em;
   opacity: 1;
@@ -1115,7 +1111,7 @@ input.search-input {
   top: 0px;
 }
 */
-.side-dock-ribbon-action {
+.side-dock-ribbon-action{
   padding: 7px 0 2px 0;
 }
 
@@ -1129,7 +1125,7 @@ input.search-input {
   font-size: var(--font-size-vault-name);
   font-family: var(--font-family-vault);
   font-weight: bolder;
-  top: 0px;
+  top: 0px; 
   cursor: default;
   position: sticky;
   z-index: 900;
@@ -1181,7 +1177,7 @@ body {
 }
 
 .search-result-file-matched-text {
-  color: var(--text-muted);
+  color: var(--text-muted); 
 }
 
 .tree-item-self.is-clickable:hover {
@@ -1213,7 +1209,7 @@ span.search-result-file-matched-text {
   color: var(--search-text);
   background-color: var(--text-highlight-bg);
   opacity: 0.8;
-}
+  }
 
 /* background of search result */
 .search-result {
@@ -1269,7 +1265,7 @@ span.search-result-file-matched-text {
 
 /* the SVG check mark */
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   background-color: white;
   left: 3px;
@@ -1288,13 +1284,13 @@ span.search-result-file-matched-text {
 /*checkbox in edit mode*/
 /*thanks to Piotr and ishgunacar from forum*/
 span.cm-formatting-task {
-  display: inline !important;
+  display: inline !important; 
   font-family: "Andale Mono";
 }
 
 span.cm-formatting-task.cm-property {
   color: var(--text-accent);
-}
+} 
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-meta,
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property {
@@ -1323,17 +1319,17 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
 }
 
 .markdown-preview-view h1 {
-  font-size: var(--font-size-h1);
-  font-weight: 600;
+  font-size: var(--font-size-h1); 
+  font-weight:600;
   line-height: 1.3;
-  padding-bottom: 1px;
+  padding-bottom:1px;
   border-bottom: 2px solid var(--h1-color);
   font-family: var(--font-family-h1);
 }
 
 .markdown-preview-view h2 {
-  font-size: var(--font-size-h2);
-  font-weight: 600;
+  font-size: var(--font-size-h2); 
+  font-weight:600;
   line-height: 1.3;
   padding-bottom: 1px;
   border-bottom: 1px solid var(--h2-color);
@@ -1341,23 +1337,23 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
 }
 
 .markdown-preview-view h3 {
-  font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-size: var(--font-size-h3); 
+  font-weight:600; 
   font-family: var(--font-family-h3);
 }
 .markdown-preview-view h4 {
-  font-size: var(--font-size-h4);
-  font-weight: 600;
+  font-size: var(--font-size-h4); 
+  font-weight:600; 
   font-family: var(--font-family-h4);
 }
 .markdown-preview-view h5 {
-  font-size: var(--font-size-h5);
-  font-weight: 600;
+  font-size: var(--font-size-h5); 
+  font-weight:600; 
   font-family: var(--font-family-h5);
 }
 .markdown-preview-view h6 {
-  font-size: var(--font-size-h6);
-  font-weight: 600;
+  font-size: var(--font-size-h6); 
+  font-weight:600; 
   font-family: var(--font-family-h6);
 }
 
@@ -1379,47 +1375,47 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
 .markdown-preview-view h6 {
   color: var(--h6-color);
 }
-
+	
 .cm-header-1 {
-  font-size: var(--font-size-h1);
-  font-weight: 600;
-  position: relative;
+  font-size: var(--font-size-h1); 
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h1);
 }
 .cm-header-2 {
-  font-size: var(--font-size-h2);
-  font-weight: 600;
-  position: relative;
+  font-size: var(--font-size-h2); 
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h2);
 }
 .cm-header-3 {
-  font-size: var(--font-size-h3);
-  font-weight: 600;
-  position: relative;
+  font-size: var(--font-size-h3); 
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h3);
 }
 .cm-header-4 {
-  font-size: var(--font-size-h4);
-  font-weight: 600;
-  position: relative;
+  font-size: var(--font-size-h4); 
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h4);
 }
 .cm-header-5 {
-  font-size: var(--font-size-h5);
-  font-weight: 600;
-  position: relative;
+  font-size: var(--font-size-h5); 
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h5);
 }
 .cm-header-6 {
   font-size: var(--font-size-h6);
-  font-weight: 600;
-  position: relative;
+  font-weight:600; 
+  position: relative; 
   font-family: var(--font-family-h6);
 }
 
 .cm-s-obsidian .cm-header,
 .cm-s-obsidian .cm-strong {
-  font-weight: 600;
+  font-weight:600;
 }
 
 .cm-header-1 {
@@ -1444,7 +1440,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
 .nav-files-container {
   flex-grow: 1;
   overflow-y: auto;
-  padding-left: 0px; /* reduce to 0 for more space */
+  padding-left: 0px;  /* reduce to 0 for more space */
   padding-bottom: 15px;
   overflow-x: hidden;
 }
@@ -1456,7 +1452,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
   padding-right: 8px;
   margin-bottom: 0px;
   margin-top: 16px;
-  border-right-width: 0;
+  border-right-width:0; 
   border-top-width: 0px;
   border-bottom-width: 0px;
   border-left-width: 7px;
@@ -1467,6 +1463,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
 .theme-dark .markdown-preview-view blockquote {
   background-color: var(--background-blockquote-dark) !important;
 }
+
 
 .markdown-preview-view blockquote p {
   margin-left: 1px;
@@ -1497,7 +1494,7 @@ blockquote {
   margin: 20px 0;
 }*/
 
-mjx-container[jax="CHTML"] {
+mjx-container[jax='CHTML'] {
   text-align: left;
   outline: none;
   font-size: var(--font-size-latex);
@@ -1515,9 +1512,7 @@ mjx-container[jax="CHTML"] {
 
 .theme-light .cm-s-obsidian pre.HyperMD-codeblock,
 .theme-light .cm-s-obsidian span.cm-inline-code,
-.theme-light
-  .cm-s-obsidian
-  span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.theme-light .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .theme-light .markdown-preview-view code {
   color: #ee5f00;
   font-size: var(--font-size-edit-code) !important;
@@ -1526,7 +1521,7 @@ mjx-container[jax="CHTML"] {
 }
 
 /*bold code text except code language*/
-code:not([class*="language-"]) {
+code:not([class*='language-']) {
   font-weight: 600;
   font-family: var(--font-family-preview-edit-code) !important;
 }
@@ -1553,7 +1548,7 @@ ul ul::before,
 ol ul::before,
 ul ol::before,
 ol ol::before*/ {
-  content: "";
+  content: '';
   border-left: 2px solid var(--background-modifier-border);
   position: absolute;
   height: 100%;
@@ -1569,6 +1564,7 @@ ol ol::before {
   top: 0;
   bottom: 0;
 } */
+
 
 /*
 pre.HyperMD-list-line::before {
@@ -1678,15 +1674,15 @@ ol > li {
   margin-top: 4px;
   padding-right: 6px;
   transition: all 300ms ease-in-out;
-}
+} 
 
 .theme-dark ol > li {
   border-left: 2px solid var(--list-ol-block-color);
-}
+} 
 
 .theme-light ol > li {
   border-left: 2px solid var(--list-ol-block-color);
-}
+} 
 
 ol > li:hover {
   border-color: var(--list-ol-hover);
@@ -1698,12 +1694,12 @@ ol > li::marker {
   white-space: pre;
 }
 
-ul li,
-ol li {
+ul li, ol li {
   font-size: var(--font-size-list);
 }
 
 /*====================================*/
+
 
 .markdown-preview-view code {
   vertical-align: auto;
@@ -1718,41 +1714,40 @@ ol li {
 }
 
 .markdown-preview-section:not(:first-child) h6 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+strong, 
+b, 
 .view-header-title {
   font-weight: 600;
 }
 
-span.cm-strong,
-strong {
+span.cm-strong, strong {
   color: var(--accent-strong);
 }
 
-.theme-dark strong > em,
+.theme-dark strong > em, 
 .theme-dark .cm-strong.cm-em.cm-overlay {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #f55454;
   background-image: linear-gradient(120deg, #11a0ff 0%, #f0d040 100%) !important;
   /* adapted from Obsidianite*/
-
+  
   /*background-color: var(--background-secondary-alt);
   border-radius: 3px;
   padding: 0 3px;*/
 }
 
-.theme-light strong > em,
+.theme-light strong > em, 
 .theme-light .cm-strong.cm-em.cm-overlay {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1772,51 +1767,39 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   opacity: 0.2;
 }
 
-.theme-dark
-  div.CodeMirror-activeline
-  .CodeMirror-line
-  span.cm-formatting.cm-formatting-strong.cm-strong {
+.theme-dark div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong {
   opacity: 1;
-  color: var(--text-accent);
+  color:  var(--text-accent);
 }
 
 .theme-dark div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
   opacity: 1;
-  color: var(--text-orange);
+  color:  var(--text-orange);
 }
 
-.theme-dark
-  div.CodeMirror-activeline
-  .CodeMirror-line
-  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
+.theme-dark div.CodeMirror-activeline .CodeMirror-line  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   opacity: 1;
-  color: var(--green);
+  color:  var(--green);
 }
 
-.theme-light
-  div.CodeMirror-activeline
-  .CodeMirror-line
-  span.cm-formatting.cm-formatting-strong.cm-strong {
+.theme-light div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong {
   opacity: 1;
-  color: var(--orange);
+  color:  var(--orange);
 }
 
 .theme-light div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
   opacity: 1;
-  color: var(--orange);
+  color:  var(--orange);
 }
 
-.theme-light
-  div.CodeMirror-activeline
-  .CodeMirror-line
-  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
+.theme-light div.CodeMirror-activeline .CodeMirror-line  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   opacity: 1;
-  color: var(--orange);
+  color:  var(--orange);
 }
 
-.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {  
   border: none;
-}
+} 
 
 /*smaller header title*/
 .view-header-title {
@@ -1839,26 +1822,27 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   transform: scale(1); /* makes the content smaller */
   min-height: 50px;
   width: 500px; /* was 400 */
-  overflow: overlay;
+  overflow: overlay;      
   padding: 0;
   box-shadow: 0 0 6px 6px var(--theme-color-translucent-1);
 }
 
-.popover.hover-popover .markdown-embed {
+.popover.hover-popover .markdown-embed  {
   height: 400px;
 }
 
+
 /*table from https://snippets.cacher.io/snippet/018387c872dc39277996 by eluotao*/
-tbody > tr:nth-child(odd) {
+tbody>tr:nth-child(odd) {
   background-color: var(--table-background-color-odd);
 }
-
+ 
 tbody > tr {
   background-color: var(--table-background-color);
 }
-
+ 
 .markdown-preview-view th,
-.markdown-preview-view td {
+.markdown-preview-view td{
   padding: 4px 20px;
   border: 1px solid var(--table-border-color);
 }
@@ -1868,16 +1852,16 @@ tbody > tr {
 }
 
 /*table hover*/
-.markdown-preview-view td:hover {
+.markdown-preview-view td:hover{
   background-color: var(--table-hover-color);
 }
 
 /*table raw hover*/
-.markdown-preview-view tr:hover {
+.markdown-preview-view tr:hover{
   background-color: var(--table-hover-raw-color);
 }
 
-.markdown-preview-view th:hover {
+.markdown-preview-view th:hover{
   background-color: var(--table-hover-thead-color);
 }
 
@@ -1898,18 +1882,16 @@ tbody > tr {
 }*/
 
 .popover mark {
-  background-color: var(--text-highlight-bg);
-  color: var(--text-normal);
+  background-color: var(--text-highlight-bg);     
+  color: var(--text-normal);     
 }
 
 .workspace-leaf.mod-active .view-header {
   background-color: var(--background-primary);
-  border-bottom: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-color); 
 }
 
-.status-bar,
-.side-dock.mod-right,
-.side-dock.mod-left {
+.status-bar, .side-dock.mod-right, .side-dock.mod-left {
   border-color: var(--panel-border-color);
   border-width: 1px;
 }
@@ -1987,29 +1969,29 @@ a.external-link {
   opacity: 1;
 }
 
-.theme-dark :not(pre) > code[class*="language-"],
-.theme-dark pre[class*="language-"] {
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
   background: var(--background-secondary);
   border-radius: 7px;
 }
 
-.theme-light :not(pre) > code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-light :not(pre) > code[class*='language-'],
+.theme-light pre[class*='language-'] {
   background: var(--background-primary-alt);
   border-radius: 7px;
 }
 
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-light code[class*="language-"], 
+.theme-light pre[class*="language-"]{
   text-shadow: none;
 }
 
-.theme-light code[class*="language-"],
+.theme-light code[class*="language-"], 
 .theme-light pre[class*="language-"] {
   color: #000000;
 }
 
-.theme-dark code[class*="language-"],
+.theme-dark code[class*="language-"], 
 .theme-dark pre[class*="language-"] {
   color: #e7e7e7;
 }
@@ -2021,8 +2003,8 @@ cursor: pointer !important;
 */
 
 .markdown-preview-view .markdown-embed {
-  background-color: var(--embed-color);
-  border: 1px solid var(--embed-color);
+  background-color: var(--embed-color); 
+  border: 1px solid var(--embed-color);  
   border-radius: 4px;
   padding: 0px 8px 0px 8px;
   margin-bottom: -3px;
@@ -2030,17 +2012,18 @@ cursor: pointer !important;
 }
 
 .markdown-preview-view .file-embed {
-  border: 2px solid var(--embed-color);
+  border: 2px solid var(--embed-color);  
   border-radius: 10px;
   padding: 0px 8px 0px 8px;
 }
 
 .markdown-preview-view .file-embed:hover {
-  border: 2px solid var(--theme-color-translucent);
+  border: 2px solid var(--theme-color-translucent);  
   background-color: transparent;
   border-radius: 10px;
   padding: 0px 8px 0px 8px;
 }
+
 
 .markdown-embed {
   display: block;
@@ -2054,26 +2037,26 @@ cursor: pointer !important;
   max-width: 100%;
   /*margin: 0px 0px -15px -10px;
   padding: 20px 0px 0px 0px;*/
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .file-embed-icon {
   color: var(--theme-color);
-  vertical-align: middle;
+  vertical-align: middle;  
 }
 
 .markdown-embed-title {
-  font-weight: 600;
-  text-align: left;
-  font-size: var(--font-size-embed-title-size);
-  height: 35px;
+  font-weight: 600; 
+  text-align: left; 
+  font-size: var(--font-size-embed-title-size);  
+  height: 35px; 
   margin: 10px 0;
 }
 
 .file-embed-title {
-  font-weight: 600;
-  text-align: left;
-  font-size: var(--font-size-embed-file);
+  font-weight: 600; 
+  text-align: left; 
+  font-size: var(--font-size-embed-file);  
   margin: 5px 0;
   padding: 0 10px;
 }
@@ -2087,8 +2070,8 @@ cursor: pointer !important;
 }
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   text-align: left !important;
   word-spacing: normal !important;
   word-break: normal !important;
@@ -2105,9 +2088,9 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em !important;
-  border-radius: 0.3em !important;
+:not(pre) > code[class*='language-'] {
+  padding: .1em !important;
+  border-radius: .3em !important;
   white-space: normal !important;
 }
 
@@ -2116,6 +2099,7 @@ pre[class*="language-"] {
 .token.cdata {
   color: var(--gray-1) !important;
 }
+
 
 .token.comment {
   color: var(--darkgreen) !important;
@@ -2251,28 +2235,28 @@ pre.line-numbers > code {
 }
 
 /*unfold code*/
-pre > code > span {
-  word-wrap: break-word;
-  word-break: break-all;
+pre> code>span {
+  word-wrap:break-word;
+  word-break:break-all;
   white-space: pre-wrap;
 }
 
-code.language-yaml.is-loaded {
+code.language-yaml.is-loaded{
   word-wrap: break-word !important;
   word-break: break-word !important;
   white-space: pre-wrap !important;
 }
 
-code.language-md.is-loaded {
+code.language-md.is-loaded{
   word-wrap: break-word !important;
   word-break: break-word !important;
   white-space: break-spaces !important;
 }
 
-/*show language type in preview mode*/
+/*show language type in preview mode*/ 
 /*Thanks to elutao from https://snippets.cacher.io/snippet/018387c872dc39277996 */
 /* pre通用相对css */
-pre:before {
+pre:before{
   font-family: var(--default-font);
   color: #6b7f94;
   opacity: 0.7;
@@ -2282,89 +2266,89 @@ pre:before {
   right: 30px;
   top: 0.2em;
 }
-
+ 
 /* 显示当前代码块的语言类别 */
 pre {
   position: relative;
 }
-
-pre[class~="language-c"]:before {
+ 
+pre[class~='language-c']:before {
   content: "C";
 }
-
-pre[class~="language-python"]:before {
+ 
+pre[class~='language-python']:before {
   content: "PYTHON";
 }
-
-pre[class~="language-nginx"]:before {
+ 
+pre[class~='language-nginx']:before {
   content: "NGINX";
 }
-
-pre[class~="language-css"]:before {
+ 
+pre[class~='language-css']:before {
   content: "CSS";
 }
-
-pre[class~="language-javascript"]:before {
+ 
+pre[class~='language-javascript']:before {
   content: "JS";
 }
-
-pre[class~="language-js"]:before {
+ 
+pre[class~='language-js']:before {
   content: "JS";
 }
-
-pre[class~="language-php"]:before {
+ 
+pre[class~='language-php']:before {
   content: "PHP";
 }
-
-pre[class~="language-shell"]:before {
+ 
+pre[class~='language-shell']:before {
   content: "SHELL";
 }
-
-pre[class~="language-flow"]:before {
+ 
+pre[class~='language-flow']:before {
   content: "FLOW";
 }
-
-pre[class~="language-sequence"]:before {
+ 
+pre[class~='language-sequence']:before {
   content: "SEQUENCE";
 }
-
-pre[class~="language-sql"]:before {
+ 
+pre[class~='language-sql']:before {
   content: "SQL";
 }
-
-pre[class~="language-yaml"]:before {
+ 
+pre[class~='language-yaml']:before {
   content: "YAML";
 }
-
-pre[class~="language-ini"]:before {
+ 
+pre[class~='language-ini']:before {
   content: "INI";
 }
-
-pre[class~="language-xml"]:before {
+ 
+pre[class~='language-xml']:before {
   content: "XML";
 }
-
-pre[class~="language-git"]:before {
+ 
+pre[class~='language-git']:before {
   content: "GIT";
 }
-
-pre[class~="language-cs"]:before {
+ 
+pre[class~='language-cs']:before {
   content: "C#";
 }
-
-pre[class~="language-cpp"]:before {
+ 
+pre[class~='language-cpp']:before {
   content: "C++";
 }
-
-pre[class~="language-java"]:before {
+ 
+pre[class~='language-java']:before {
   content: "JAVA";
 }
-
-pre[class~="language-html"]:before {
+ 
+pre[class~='language-html']:before {
   content: "HTML";
 }
-
-pre[class~="language-txt"]:before {
+ 
+pre[class~='language-txt']:before {
   content: "TXT";
 }
 
@@ -2373,15 +2357,16 @@ pre[class~="language-txt"]:before {
   color: var(--text-normal);
 }
 
-/*-- wider folding zone--*/ /*
+/*-- wider folding zone--*//*
 .CodeMirror-foldgutter {
   width: 1em;
 }*/
 
+
 /*=============== DIRTY WYSIWYM HEADERS by _ph =====================*/
 /*=============== replace H1-H6 markup in edit mode ================*/
 
-/* Header folder icon */ /*
+/* Header folder icon *//*
 .CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded {
   padding-left: -10px;
 }
@@ -2408,7 +2393,7 @@ div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-head
   opacity: 1;
 }
 
-/*-- hide # markup--*/ /*
+/*-- hide # markup--*//*
 .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
 .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
 .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
@@ -2592,6 +2577,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link:not(.
   display: none; 
 } */
 
+
 /* except list markers span.cm-formatting-list,
 /*code block backticks  span.cm-formatting-code-block.cm-hmd-codeblock,
 /* optionally header hashes  span.cm-formatting-header { 
@@ -2606,9 +2592,9 @@ span.cm-formatting-task {
 */
 
 /* images : reduce displayed size of embedded files, zoom on hover */
-.markdown-preview-view img,
+.markdown-preview-view img, 
 .markdown-preview-view video {
-  max-width: min(100%, 800px);
+  max-width: min(100%,800px);
   margin-left: auto;
   margin-right: auto;
   outline: 0px solid var(--text-accent);
@@ -2632,19 +2618,19 @@ span.cm-formatting-task {
 }
 
 .view-content img:not([class="emoji"]):active {
-  cursor: zoom-out;
+  cursor: zoom-out;    
   position: fixed;
   object-fit: contain;
   height: 100%;
   width: 100%;
   padding: 0;
-  top: 50%;
+  top: 50%;  
   left: 0;
   right: 0;
   bottom: 0;
   transform: translateY(-50%);
   z-index: 200;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=")
 }
 
 /*file explorer columns view : slightly buggy ----*/
@@ -2673,7 +2659,7 @@ span.cm-formatting-task {
 }
 
 /* Cursor color in normal vim mode and opacity */
-.cm-fat-cursor .CodeMirror-cursor,
+.cm-fat-cursor .CodeMirror-cursor, 
 .cm-animate-fat-cursor {
   width: 0.6em;
   background: #db9a1f;
@@ -2743,7 +2729,7 @@ span.cm-formatting-task {
 
 .nav-folder-collapse-indicator::after {
   position: absolute;
-  content: "↓";
+  content : "↓";
   left: -3px;
   top: 0px;
   font-size: 15px;
@@ -2773,7 +2759,7 @@ span.cm-formatting-task {
 }
 
 .backlink-pane .search-result-container .collapse-icon::before {
-  content: "↓";
+  content : "↓";
   font-size: 14px;
   margin-left: -2px;
   font-weight: bold;
@@ -2783,9 +2769,9 @@ span.cm-formatting-task {
 
 .backlink-pane .search-result-container .collapse-icon svg {
   display: none;
-  color: var(--accent-strong);
-  height: 7px;
-  width: 7px;
+  color:var(--accent-strong);
+  height:7px;
+  width:7px;
 }
 
 .backlink-pane .search-result-container .tree-item.search-result.is-collapsed .collapse-icon {
@@ -2794,21 +2780,15 @@ span.cm-formatting-task {
 }
 
 /* search panel icons */
-.workspace-leaf
-  .search-result-container.mod-global-search
-  .tree-item-self.search-result-file-title.is-clickable
-  .collapse-icon {
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon {
   left: 0px;
   top: 7px;
   margin-top: 0px;
   transition: transform 20ms linear 0s;
 }
 
-.workspace-leaf
-  .search-result-container.mod-global-search
-  .tree-item-self.search-result-file-title.is-clickable
-  .collapse-icon::before {
-  content: "↓";
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon::before {
+  content : "↓";
   font-size: 14px;
   margin-left: -2px;
   font-weight: bold;
@@ -2816,21 +2796,14 @@ span.cm-formatting-task {
   transition: transform 10ms linear 0s;
 }
 
-.workspace-leaf
-  .search-result-container.mod-global-search
-  .tree-item-self.search-result-file-title.is-clickable
-  .collapse-icon
-  svg {
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon svg {
   display: none;
-  color: var(--accent-strong);
-  height: 7px;
-  width: 7px;
+  color:var(--accent-strong);
+  height:7px;
+  width:7px;
 }
 
-.workspace-leaf
-  .search-result-container.mod-global-search
-  .tree-item.search-result.is-collapsed
-  .collapse-icon {
+.workspace-leaf .search-result-container.mod-global-search .tree-item.search-result.is-collapsed .collapse-icon {
   transform: translateX(1px) translateY(1px) rotate(-90deg);
   opacity: 0.5;
 }
@@ -2852,7 +2825,7 @@ h2 div.heading-collapse-indicator.collapse-indicator {
 
 h1 div.heading-collapse-indicator.collapse-indicator::before,
 h2 div.heading-collapse-indicator.collapse-indicator::before {
-  content: "↓";
+  content : "↓";
   position: absolute;
   font-size: 17px;
   font-weight: bold;
@@ -2867,7 +2840,7 @@ h2 div.heading-collapse-indicator.collapse-indicator::before {
 }
 
 div.heading-collapse-indicator.collapse-indicator::before {
-  content: "↓";
+  content : "↓";
   position: absolute;
   font-size: 17px;
   font-weight: bold;
@@ -2896,7 +2869,7 @@ div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle {
 }
 
 div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
-  content: "↓";
+  content : "↓";
   position: absolute;
   font-size: 14px;
   font-weight: bold;
@@ -2906,13 +2879,13 @@ div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
   transition: transform 10ms linear 0s;
 }
 
-div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle {
+div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle { 
   position: absolute;
   transition: transform 20ms linear 0s;
 }
 
 div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle::after {
-  content: "→";
+  content : "→";
   position: absolute;
   font-size: 14px;
   font-weight: bold;
@@ -2930,7 +2903,7 @@ span.collapse-icon {
 }
 
 span.collapse-icon::before {
-  content: "↓";
+  content : "↓";
   margin-left: -3px;
   font-size: 16px;
   font-weight: bold;
@@ -2961,7 +2934,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 }
 
 .outline .tree-item .collapse-icon::before {
-  content: "↓";
+  content : "↓";
   margin-left: -7px;
   margin-top: 1px;
   font-size: 16px;
@@ -2987,7 +2960,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
   margin-left: 16px;
   border-left: 2px solid rgba(148, 148, 148, 0.2);
   border-radius: 0px;
-  transition: all 300ms ease-in-out;
+  transition:all 300ms ease-in-out;
 }
 .outline .tree-item-children:hover {
   border-left-color: rgba(45, 135, 211, 0.5);
@@ -3000,7 +2973,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 }
 
 .markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon::before {
-  content: "↓";
+  content : "↓";
   font-size: 14px;
   margin-left: -11px;
   font-weight: bold;
@@ -3015,15 +2988,13 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
   width: 7px;
 }
 
-.markdown-preview-view
-  li.is-collapsed
-  div.list-collapse-indicator.collapse-indicator.collapse-icon {
+.markdown-preview-view li.is-collapsed div.list-collapse-indicator.collapse-indicator.collapse-icon {
   transform: translateX(0px) translateY(-4px) rotate(-90deg);
   opacity: 0.5;
 }
 
 /*setting buttons*/
-.modal button:not(.mod-cta):not(.mod-warning):hover {
+.modal button:not(.mod-cta):not(.mod-warning):hover{
   background-color: var(--interactive-accent-hover);
   color: #fdfdfd;
 }
@@ -3042,7 +3013,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 }
 
 .graph-view.color-text {
-  color: var(--graph-text-color);
+  color: var(--graph-text-color); 
 }
 
 .graph-view.color-fill-highlight {
@@ -3107,7 +3078,7 @@ div.CodeMirror-activeline > .HyperMD-quote {
   border-left: 7px solid var(--theme-color);
 }
 
-/* thanks to Klaas from Discord */ /*
+/* thanks to Klaas from Discord *//*
 div:not(.CodeMirror-activeline) > .HyperMD-quote {
   background-color: var(--background-primary-alt);
 }
@@ -3135,14 +3106,15 @@ div > .HyperMD-quote:active {
 */
 
 /*change collapse icon position in left side*/
-.workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
+.workspace-ribbon.mod-left .workspace-ribbon-collapse-btn{
   margin-top: 0px;
   padding: 7px 6px 2px 6px;
 }
 
-.workspace-ribbon.is-collapsed .workspace-ribbon-collapse-btn:not(:hover) {
+.workspace-ribbon.is-collapsed .workspace-ribbon-collapse-btn:not(:hover){
   margin-left: 15px;
 }
+
 
 /* colourful notes */
 /* from Notation by death_au  https://github.com/deathau/Notation-for-Obsidian */
@@ -3178,7 +3150,7 @@ div > .HyperMD-quote:active {
 .app-container .markdown-preview-view pre.language-note-yellow-bg,
 .yellow-background,
 .yellow-bg {
-  background-color: var(--background-yellow);
+  background-color: var(--background-yellow)
 }
 
 .app-container .markdown-preview-view pre.language-note-green-background,
@@ -3221,8 +3193,7 @@ div > .HyperMD-quote:active {
   border: 4px dashed var(--note-important);
 }
 
-pre.language-note-important:before,
-pre.language-note-imp::before {
+pre.language-note-important:before, pre.language-note-imp::before{
   content: "Important";
   color: var(--note-important);
   font-weight: 800;
@@ -3259,7 +3230,7 @@ pre.language-note-imp::before {
 
 .app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
 .yellow {
-  color: var(--text-yellow);
+  color: var(--text-yellow)
 }
 
 .app-container .markdown-preview-view pre.language-note-green code.language-note-green,
@@ -3303,11 +3274,11 @@ pre.language-note-imp::before {
   background-color: transparent;
 }
 
-code.language-note-cloze.is-loaded:hover {
+code.language-note-cloze.is-loaded:hover{
   cursor: pointer;
 }
 
-code.language-note-cloze.is-loaded:active {
+code.language-note-cloze.is-loaded:active{
   background-color: transparent !important;
 }
 
@@ -3319,6 +3290,9 @@ pre.language-note-cloze::before {
   top: 0px;
 }
 
+
+
+
 /*===============================================*/
 /*                                    .__    .___*/
 /*  _____   ___________  _____ _____  |__| __| _/*/
@@ -3329,13 +3303,7 @@ pre.language-note-cloze::before {
 /*======== optionnal mermaid style below ========*/
 
 .label {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial,
-    Fira Code,
-    consolas,
+  font-family: Segoe UI, "trebuchet ms", verdana, arial, Fira Code, consolas,
     monospace !important;
   color: var(--text-normal) !important;
 }
@@ -3399,11 +3367,7 @@ div.mermaidTooltip {
   text-align: center !important;
   max-width: 200px !important;
   padding: 2px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
   font-size: 10px !important;
   background: var(--background-secondary) !important;
   border: 1px solid var(--text-faint) !important;
@@ -3518,11 +3482,7 @@ text.actor > tspan {
 /** Section styling */
 
 .mermaid-main-font {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .section {
@@ -3565,11 +3525,7 @@ text.actor > tspan {
   font-size: 15px !important;
   font-weight: bold;
   line-height: 14px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 /* Grid and axis */
@@ -3581,11 +3537,7 @@ text.actor > tspan {
 }
 
 .grid .tick text {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
   font-size: 13px;
 }
 
@@ -3622,11 +3574,7 @@ text.actor > tspan {
   fill: var(--text-normal) !important;
   text-anchor: start !important;
   font-size: 9px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .taskTextOutsideLeft {
@@ -3775,11 +3723,7 @@ text.actor > tspan {
   text-anchor: middle !important;
   font-size: 20px !important;
   fill: var(--text-normal) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.classGroup text {
@@ -3881,41 +3825,25 @@ g.classGroup line {
 .branch-label {
   fill: var(--text-muted) !important;
   color: var(--text-muted) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .pieTitleText {
   text-anchor: middle !important;
   font-size: 18px !important;
   fill: var(--text-normal) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .slice {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.stateGroup text {
   fill: var(--text-accent) !important;
   stroke: none !important;
   font-size: 10px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.stateGroup text {
@@ -3977,11 +3905,7 @@ g.stateGroup line {
   fill: black !important;
   font-size: 10px !important;
   font-weight: bold !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .node circle.state-start {
@@ -4108,30 +4032,24 @@ g rect{
   fill: var(--text-highlight-bg);
 }*/
 
-g text {
-  fill: var(--text-muted) !important;
+g text{
+  fill:var(--text-muted) !important;
 }
 
-#arrowhead,
-#sequencenumber,
-.cluster text,
-.label text,
-text,
-text.actor {
-  fill: var(--text-muted) !important;
+#arrowhead,  #sequencenumber,  .cluster text,  .label text,  text,  text.actor {
+  fill:var(--text-muted) !important;
 }
 
 /*emoji🙂*/
-g > g > circle,
-g > g > path {
+g > g > circle, g > g > path {
   stroke: #000000 !important;
 }
 
-line.task-line {
+line.task-line{
   stroke: #6e6e6e !important;
 }
 
-g > circle {
+g > circle{
   stroke: #000000 !important;
 }
 
@@ -4151,7 +4069,7 @@ g > circle {
 .workspace-split::-webkit-scrollbar:vertical {
   display: none;
 }
-
+  
 ::-webkit-scrollbar-thumb:horizontal {
   background-color: var(--theme-color-translucent);
 }
@@ -4177,10 +4095,10 @@ body.plugin-sliding-panes .view-header-title {
 }
 
 body.plugin-sliding-panes .view-header-icon {
-  margin-left: -1px !important;
+  margin-left: -1px!important;
 }
 
-body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header-title {
+body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header-title{
   color: var(--header-color);
   font-family: var(--font-family-title);
   padding-top: 4px;
@@ -4195,31 +4113,33 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   border-left: 1px solid var(--background-secondary-alt) !important;
 }
 
+
 /*==========================*/
 /* obsidian-calendar-plugin */
 /*==========================*/
 #calendar-container {
-  --color-background-heading: transparent;
-  --color-background-weeknum: transparent;
-  --color-background-day: transparent;
-  --color-background-weekend: transparent;
+--color-background-heading: transparent;
+--color-background-weeknum: transparent;
+--color-background-day: transparent;
+--color-background-weekend: transparent;
 
-  --color-dot: var(--text-accent);
-  --color-arrow: currentColor;
-  --color-button: var(--text-muted);
-  --color-text-weeknum: var(--calendar-week-color);
-
-  --color-text-title: var(--text-normal);
-  --color-text-heading: var(--text-normal);
-  --color-text-day: var(--text-normal);
-  --color-text-today: var(--text-accent);
-
-  /*===*/
-  padding: 0px 5px 0px 8px;
-  margin: -21px -8px 0px -8px;
-  line-height: 0.6;
+  
+--color-dot: var(--text-accent);
+--color-arrow: currentColor;
+--color-button: var(--text-muted);
+ --color-text-weeknum: var(--calendar-week-color);
+  
+--color-text-title: var(--text-normal);
+--color-text-heading: var(--text-normal);
+--color-text-day: var(--text-normal);
+--color-text-today: var(--text-accent);
+  
+/*===*/
+padding: 0px 5px 0px 8px;
+margin: -21px -8px 0px -8px;
+line-height: 0.6;
 }
-
+  
 /*表格调整*/
 /*星期*/
 #calendar-container th {
@@ -4228,8 +4148,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   background-color: var(--table-thead-background-color) !important;
 }
 
-#calendar-container .week-num,
-#calendar-container .day {
+#calendar-container .week-num, #calendar-container .day {
   border-radius: 0px !important;
 }
 
@@ -4246,11 +4165,11 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   border: 2px solid var(--background-secondary-alt);
 }
 
-#calendar-container .day:not(:empty):hover {
+#calendar-container .day:not(:empty):hover{
   background-color: var(--table-hover-color);
 }
 
-#calendar-container .calendar {
+#calendar-container .calendar{
   margin: -8px 0;
 }
 
@@ -4263,41 +4182,41 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   line-height: 1.2;
   text-align: center;
 }
-
+  
 /*悬停Today*/
 #calendar-container .reset-button:hover {
   color: var(--header-color);
   background-color: var(--table-hover-raw-color);
 }
-
+  
 /*悬停arrow*/
 #calendar-container .arrow:hover {
   color: var(--theme-color);
 }
-
+  
 /*今日笔记时红点去除 today's dot*/
 #calendar-container .dot {
   stroke: transparent;
 }
-
+  
 /*点调整 dot*/
 #calendar-container .dot-container {
   margin-top: -2px;
   margin-bottom: -1px;
 }
-
+  
 /*月份调整 month*/
 #calendar-container .month {
   font-size: 20px;
   line-height: 1;
 }
-
+  
 /*年份调整 year*/
 #calendar-container .year {
   font-size: 20px;
   line-height: 1;
 }
-
+  
 /*星期数 week*/
 #calendar-container .week-num {
   /*border-right: 2px solid var(--green) !important;*/
@@ -4310,7 +4229,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   background-color: var(--calendar-week-hover) !important;
 }
 
-/*星期数表头*/ /*不完善，等插件更新*/ /*
+/*星期数表头*//*不完善，等插件更新*//*
 #calendar-container th:not(.svelte-1lgyrog):first-child {
   background-color: var(--green) !important;
 }
@@ -4410,8 +4329,7 @@ pre.frontmatter.language-yaml:before {
   overflow: hidden !important;
 }
 
-#now-line,
-.timeline-time {
+#now-line, .timeline-time {
   background-color: var(--day-planner-timeline) !important;
 }
 
@@ -4457,7 +4375,7 @@ pre.frontmatter.language-yaml:before {
 }
 
 .event_item_color10 {
-  background-color: var(--event-item-color10) !important;
+  background-color: var(--event-item-color10)!important;
 }
 
 /* =========================================*/
@@ -4713,9 +4631,7 @@ div[alt="-sbq"] .markdown-preview-view p {
   height: 15px;
   width: 15px;
   border: 1px;
-  box-shadow:
-    inset -10px -10px 10px #f0b7a4,
-    inset 3px 3px 5px;
+  box-shadow: inset -10px -10px 10px #f0b7a4, inset 3px 3px 5px;
 }
 
 .to-recall {
@@ -4739,7 +4655,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 
 .to-recall:hover {
   cursor: pointer;
-}
+} 
 
 .to-recall:active {
   position: relative;
@@ -4774,6 +4690,7 @@ div[alt="-sbq"] .markdown-preview-view p {
   color: #858585;
   white-space: pre;
 }
+
 
 /* Image Flags Snippet by Lithou
 http://github.com/lithou/sandbox */
@@ -4988,6 +4905,7 @@ div[alt*="-nofloat"] {
 }
 */
 
+
 /* thanks to dcoales from obsidian member group on discord */
 /* https://discord.com/channels/686053708261228577/702656734631821413/794236352857374764 */
 aside {
@@ -4997,10 +4915,10 @@ aside {
   left: 5px;
 }
 
-aside > h1,
+aside > h1, 
 aside > h2 {
-  font-weight: normal !important;
-  font-size: 16px !important;
+  font-weight:normal !important;
+  font-size:16px !important;
   border: 1px solid;
   border-bottom: 1px solid !important;
   border-radius: 3%;
@@ -5066,6 +4984,8 @@ img[alt$="inlR"] {
   padding: 8px 0px 8px 8px;
 }
 
+
+
 /*===================================================*/
 /*===================================================*/
 /*==================   MOBILE   =====================*/
@@ -5079,7 +4999,7 @@ img[alt$="inlR"] {
   margin-bottom: 6px;
   margin-top: 4px;
   padding-right: 6px;
-}
+} 
 
 .is-mobile .markdown-preview-view ul > li:not(.task-list-item) {
   margin-left: -5px;
@@ -5097,122 +5017,122 @@ img[alt$="inlR"] {
 /*version: 1.0  */
 /*版本：1.0  */
 .theme-light {
-  --background-primary: #efe9d9;
-  --background-primary-alt: #ffdece;
-  --background-secondary: #efe9d9;
-  --background-secondary-alt: #efe9d9;
-  --background-accent: #fefcf9;
-  --background-modifier-border: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field: #ffdece;
-  --background-modifier-form-field-highlighted: #f5a7a2;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-success: #ffdece;
-  --background-modifier-error: #f5a7a2;
-  --background-modifier-error-rgb: 230, 135, 135;
-  --background-modifier-error-hover: #fefcf9;
-  --background-modifier-cover: rgba(0, 0, 0, 0.2);
-  --text-accent: #980000;
-  --text-accent-hover: #37291a;
-  --text-normal: #37291a;
-  --text-muted: #37291a;
-  --text-faint: #37291a;
-  --accent-strong: #37291a;
-  --text-error: #f5a7a2;
-  --text-error-hover: #fefcf9;
-  --text-highlight-bg: #f5a7a2;
-  --text-selection: #ffebec;
-  --text-on-accent: #37291a;
-  --interactive-normal: #f39ba0;
-  --interactive-hover: #ffdece;
-  --interactive-accent-rgb: #fd355a;
-  --interactive-accent: #f5a7a2;
-  --interactive-accent-hover: #fd355a;
-  --panel-border-color: #fd355a;
-  --search-text: #37291a;
-  --folder-title: #37291a;
-  --mark-highlight: #fd355a;
-  --background-search-result: #ffdece;
-  --gray-1: #c4c4c4;
-  --gray-2: #7c8595;
-  --red: #fd355a;
-  --red-1: #980000;
-  --green: #40916c;
-  --darkgreen: #004f2d;
-  --blue: #69a2ee;
-  --darkblue: #5981f0;
-  --purple: #8673b4;
-  --aqua: #4dd8ef;
-  --yellow: #ffc727;
-  --light-yellow: #e5e79c;
-  --orange: #f19c79;
-  --light-purple: #d3d6fe;
-  --blue-green: #16bcc0;
-  --embed-color: #fd355a1a;
-  --search-result-file-title-color: #980000;
-  --theme-color: #f5a7a2;
-  --theme-color-translucent: #f5a7a2;
-  --theme-color-translucent-1: #ffdece;
-  --color-specification: #fd355a;
-  --allow-1: #fd355a;
-  --list-ul-block-color: #f5a7a2;
-  --list-ul-disc-color: #fd355a;
-  --list-ul-hover: #980000;
-  --list-ol-block-color: #f5a7a2;
-  --list-ol-number-color: #f5a7a2;
-  --list-ol-hover: #980000;
-  --stag1: #fd355a;
-  --stag2: #fd355a;
-  --stag3: #fd355a;
-  --tag1: #e5c7a9;
-  --tag2: #fea2c2;
-  --tag3: #69a2ee;
-  --tag4: #40916c;
-  --tag5: #c47a5e;
-  --tag6: #f5a7a2;
-  --tag7: #ab4967;
-  --tag8: #dbb671;
-  --tag9: #f19c79;
-  --h1-color: #f39ba0;
-  --h2-color: #f39ba0;
-  --h3-color: #f39ba0;
-  --h4-color: #f39ba0;
-  --h5-color: #f39ba0;
-  --h6-color: #f39ba0;
-  --graph-text-color: #37291a;
-  --graphtag: #ffdece;
-  --graph-attach: #f5a7a2;
-  --graph-circle: #fd355c;
-  --graph-line: #fea2c2;
-  --graph-unresolved: #e87659;
-  --graph-arrow: #980000;
-  --mermaid-active-task-color: #f5a7a2;
-  --mermaid-seq-dia-color: #ffdece;
-  --table-background-color: #ffdece;
-  --table-background-color-odd: #ffdece;
-  --table-border-color: #fd355a;
-  --table-thead-background-color: #f5a7a2;
-  --table-hover-color: #f5a7a2;
-  --table-hover-thead-color: #f5a7a2;
-  --table-hover-raw-color: #ffdece;
-  --calendar-week-color: #f5a7a2;
-  --calendar-week-hover: #ffdece;
-  --calendar-week-background-color: #ffdece;
-  --day-planner-pie: #f5a7a2;
-  --day-planner-timeline: #ffdece;
-  --day-planner-line: #fd355a;
-  --day-planner-dot: #ffdece;
-  --day-planner-item-hover: #f5a7a2;
-  --event-item-color1: #f39ba063;
-  --event-item-color2: #f39ba091;
-  --event-item-color3: #f39ba0c4;
-  --event-item-color4: #f39ba0;
-  --event-item-color5: #d08489;
-  --event-item-color6: #b27175;
-  --event-item-color7: #d08489;
-  --event-item-color8: #f39ba0;
-  --event-item-color9: #f39ba0c4;
-  --event-item-color10: #f39ba091;
-  /* I am too noob to touch this part
+    --background-primary: #efe9d9;
+    --background-primary-alt: #ffdece;
+    --background-secondary: #efe9d9;
+    --background-secondary-alt: #efe9d9;
+    --background-accent: #fefcf9;
+    --background-modifier-border: rgba(0, 0, 0, 0.1);
+    --background-modifier-form-field: #ffdece;
+    --background-modifier-form-field-highlighted: #f5a7a2;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: #ffdece;
+    --background-modifier-error: #f5a7a2;
+    --background-modifier-error-rgb: 230, 135, 135;
+    --background-modifier-error-hover: #fefcf9;
+    --background-modifier-cover: rgba( 0, 0, 0, 0.2);
+    --text-accent: #980000;
+    --text-accent-hover: #37291a;
+    --text-normal: #37291a;
+    --text-muted: #37291a;
+    --text-faint: #37291a;
+    --accent-strong: #37291a;
+    --text-error: #f5a7a2;
+    --text-error-hover: #fefcf9;
+    --text-highlight-bg: #f5a7a2;
+    --text-selection: #ffebec;
+    --text-on-accent: #37291a;
+    --interactive-normal: #f39ba0;
+    --interactive-hover: #ffdece;
+    --interactive-accent-rgb: #fd355a;
+    --interactive-accent: #f5a7a2;
+    --interactive-accent-hover: #fd355a;
+    --panel-border-color: #fd355a;
+    --search-text: #37291a;
+    --folder-title: #37291a;
+    --mark-highlight: #fd355a;
+    --background-search-result: #ffdece;
+    --gray-1: #c4c4c4;
+    --gray-2: #7c8595;
+    --red: #fd355a;
+    --red-1: #980000;
+    --green: #40916c;
+    --darkgreen: #004f2d;
+    --blue: #69a2ee;
+    --darkblue: #5981f0; 
+    --purple: #8673b4;
+    --aqua: #4dd8ef;
+    --yellow: #ffc727;
+    --light-yellow: #e5e79c;
+    --orange: #f19c79;
+    --light-purple: #d3d6fe;
+    --blue-green: #16bcc0;
+    --embed-color: #fd355a1a;
+    --search-result-file-title-color: #980000;
+    --theme-color: #f5a7a2;
+    --theme-color-translucent: #f5a7a2;
+    --theme-color-translucent-1: #ffdece;
+    --color-specification: #fd355a;
+    --allow-1: #fd355a;
+    --list-ul-block-color: #f5a7a2;
+    --list-ul-disc-color: #fd355a;
+    --list-ul-hover: #980000;
+    --list-ol-block-color: #f5a7a2;
+    --list-ol-number-color: #f5a7a2;
+    --list-ol-hover: #980000;
+    --stag1: #fd355a;
+    --stag2: #fd355a;
+    --stag3: #fd355a;
+    --tag1: #e5c7a9;
+    --tag2: #fea2c2;
+    --tag3: #69a2ee;
+    --tag4: #40916c;
+    --tag5: #c47a5e;
+    --tag6: #f5a7a2;
+    --tag7: #ab4967;
+    --tag8: #dbb671;
+    --tag9: #f19c79;
+    --h1-color: #f39ba0;
+    --h2-color: #f39ba0;
+    --h3-color: #f39ba0;
+    --h4-color: #f39ba0;
+    --h5-color: #f39ba0;
+    --h6-color: #f39ba0;
+    --graph-text-color: #37291a;
+    --graphtag: #ffdece;
+    --graph-attach: #f5a7a2;
+    --graph-circle: #FD355C;
+    --graph-line: #fea2c2;
+    --graph-unresolved: #E87659;
+    --graph-arrow: #980000;
+    --mermaid-active-task-color: #f5a7a2;
+    --mermaid-seq-dia-color: #ffdece;
+    --table-background-color: #ffdece;
+    --table-background-color-odd: #ffdece;
+    --table-border-color: #fd355a;
+    --table-thead-background-color: #f5a7a2;
+    --table-hover-color: #f5a7a2;
+    --table-hover-thead-color: #f5a7a2;
+    --table-hover-raw-color: #ffdece;
+    --calendar-week-color: #f5a7a2;
+    --calendar-week-hover: #ffdece;
+    --calendar-week-background-color: #ffdece;
+    --day-planner-pie: #f5a7a2;
+    --day-planner-timeline: #ffdece;
+    --day-planner-line: #fd355a;
+    --day-planner-dot: #ffdece;
+    --day-planner-item-hover: #f5a7a2;
+    --event-item-color1: #f39ba063;
+    --event-item-color2: #f39ba091;
+    --event-item-color3: #f39ba0c4;
+    --event-item-color4: #f39ba0;
+    --event-item-color5: #D08489;
+    --event-item-color6: #B27175;
+    --event-item-color7: #D08489;
+    --event-item-color8: #f39ba0;
+    --event-item-color9: #f39ba0c4;
+    --event-item-color10: #f39ba091;
+     /* I am too noob to touch this part
     --text-gray: #f5a7a2;
     --text-brown: #f5a7a2;
     --text-orange: #f5a7a2;
@@ -5232,130 +5152,130 @@ img[alt$="inlR"] {
     --background-pink: #ffdece;
     --background-red: #ffdece;
     */
-  --note-important: #fd355a;
-  --note-cloze: #fd355a;
-  --stickies-color-1: #fd355a;
-  --stickies-color-2: #f5a7a2;
-  --tape-color: #acacac65;
-  --header-color: #f5a7a2;
+    --note-important: #fd355a;
+    --note-cloze: #fd355a;
+    --stickies-color-1: #fd355a;
+    --stickies-color-2: #f5a7a2;
+    --tape-color: #acacac65;
+    --header-color: #f5a7a2;
 }
 .theme-dark {
-  --background-primary: #212121;
-  --background-primary-alt: #f937590d;
-  --background-secondary: #242424;
-  --background-secondary-alt: #191919;
-  --background-accent: #e4ba6c;
-  --background-modifier-border: #191919;
-  --background-modifier-form-field: #f39ba0;
-  --background-modifier-form-field-highlighted: #e5c7a9;
-  --background-modifier-box-shadow: #292929;
-  --background-modifier-success: #f93759;
-  --background-modifier-error: #f93759;
-  --background-modifier-error-rgb: #f93759;
-  --background-modifier-error-hover: #f93758;
-  --background-modifier-cover: rgba(0, 0, 0, 0.3);
-  --text-accent: #ffccbc;
-  --text-accent-hover: #f93759;
-  --text-normal: #efe9d9;
-  --text-muted: #efe9d9;
-  --text-faint: #efe9d9;
-  --accent-strong: #efe9d9;
-  --text-em-color: #f93759;
-  --text-error: #f93759;
-  --text-error-hover: #f93759;
-  --text-highlight-bg: #f39ba0;
-  --text-selection: #e5c7a94a;
-  --text-on-accent: #ffffff;
-  --interactive-normal: #f39ba0;
-  --interactive-hover: #ffccbc;
-  --interactive-accent: #f39ba0;
-  --interactive-accent-rgb: 45, 135, 211;
-  --interactive-accent-hover: #f93759;
-  --panel-border-color: #f93759;
-  --search-text: #fff;
-  --folder-title: #fff;
-  --mark-highlight: #f93759;
-  --background-search-result: #292929;
-  --gray-1: #c9b0b0;
-  --gray-2: #b4b1c6;
-  --red: #ff9090;
-  --red-1: #f93759;
-  --orange: #f28d61;
-  --green: #00ffc7;
-  --darkgreen: #1bbc9b;
-  --aqua: #30daff;
-  --purple: #b073ff;
-  --blue: #00a3b9;
-  --darkblue: #0040ff;
-  --yellow: #fcdc00;
-  --light-yellow: #ffd26c;
-  --embed-color: #2929297d;
-  --search-result-file-title-color: #f39ba0;
-  --theme-color: #ffccbc;
-  --theme-color-translucent: #f39ba0;
-  --theme-color-translucent-1: #f39ba0;
-  --color-specification: #f93759;
-  --allow-1: #f93759;
-  --background-blockquote-dark: #292929;
-  --list-ul-block-color: #f39ba0;
-  --list-ul-disc-color: #f93759;
-  --list-ul-hover: #ffebec;
-  --list-ol-block-color: #f39ba0;
-  --list-ol-number-color: #ffccbc;
-  --list-ol-hover: #ffebec;
-  --stag1: #f39ba0;
-  --stag2: #ffccbc;
-  --stag3: #ffebec;
-  --tag1: #028588;
-  --tag2: #40916c;
-  --tag3: #69a2ee;
-  --tag4: #c47a5e;
-  --tag5: #004f2d;
-  --tag6: #f5a7a2;
-  --tag7: #f19c79;
-  --tag8: #02a588;
-  --tag9: #ab4967;
-  --h1-color: #ffccbc;
-  --h2-color: #ffccbc;
-  --h3-color: #ffccbc;
-  --h4-color: #ffccbc;
-  --h5-color: #ffccbc;
-  --h6-color: #ffccbc;
-  --graph-text-color: #efe9d9;
-  --graphtag: #f39ba0;
-  --graph-attach: #ffebec;
-  --graph-circle: #f39ba0;
-  --graph-line: #ffc3bc;
-  --graph-unresolved: #ffccbc;
-  --graph-arrow: #ffc3bc;
-  --mermaid-active-task-color: #f39ba4;
-  --mermaid-seq-dia-color: #ffebec;
-  --table-background-color: #212121;
-  --table-background-color-odd: transparent;
-  --table-border-color: #ffebec;
-  --table-thead-background-color: #f39ba0ad;
-  --table-hover-raw-color: #292929;
-  --table-hover-color: #ffccbc0a;
-  --table-hover-thead-color: #f39ba0;
-  --calendar-week-color: #ffccbc;
-  --calendar-week-hover: #f39ba0;
-  --calendar-week-background-color: transparent;
-  --day-planner-pie: #ffccbc;
-  --day-planner-timeline: #ff9b7c;
-  --day-planner-line: #f39ba0;
-  --day-planner-dot: #ffebec;
-  --day-planner-item-hover: #f39ba0;
-  --event-item-color9: #ffc3bc;
-  --event-item-color8: #ffbcbc;
-  --event-item-color10: #ffccbc;
-  --event-item-color7: #ffbcc4;
-  --event-item-color6: #ffbcbc;
-  --event-item-color5: #ffc3bc;
-  --event-item-color4: #ffccbc;
-  --event-item-color3: #ffd4bc;
-  --event-item-color2: #ffdcbc;
-  --event-item-color1: #ffe4bc;
-  /* I am too noob to touch this part
+    --background-primary: #212121;
+    --background-primary-alt: #f937590d;
+    --background-secondary: #242424;
+    --background-secondary-alt: #191919;
+    --background-accent: #e4ba6c;
+    --background-modifier-border: #191919;
+    --background-modifier-form-field: #f39ba0;
+    --background-modifier-form-field-highlighted: #e5c7a9;
+    --background-modifier-box-shadow: #292929;
+    --background-modifier-success: #f93759;
+    --background-modifier-error: #f93759;
+    --background-modifier-error-rgb: #f93759;
+    --background-modifier-error-hover: #F93758;
+    --background-modifier-cover: rgba(0, 0, 0, 0.3);
+    --text-accent: #ffccbc;
+    --text-accent-hover: #f93759;
+    --text-normal: #efe9d9;
+    --text-muted: #efe9d9;
+    --text-faint: #efe9d9;
+    --accent-strong: #efe9d9;
+    --text-em-color: #f93759;
+    --text-error: #f93759;
+    --text-error-hover: #f93759;
+    --text-highlight-bg: #f39ba0;
+    --text-selection:#e5c7a94a;
+    --text-on-accent: #ffffff;
+    --interactive-normal: #f39ba0;
+    --interactive-hover: #ffccbc;
+    --interactive-accent: #f39ba0;
+    --interactive-accent-rgb: 45, 135, 211;
+    --interactive-accent-hover: #f93759;
+    --panel-border-color: #f93759;
+    --search-text: #fff;
+    --folder-title: #fff;
+    --mark-highlight: #f93759;
+    --background-search-result: #292929;
+    --gray-1: #c9b0b0;
+    --gray-2: #b4b1c6;
+    --red: #ff9090;
+    --red-1: #f93759;
+    --orange: #f28d61;
+    --green: #00ffc7;
+    --darkgreen: #1bbc9b;
+    --aqua: #30daff;
+    --purple: #b073ff;
+    --blue: #00a3b9;
+    --darkblue: #0040ff;
+    --yellow: #fcdc00;
+    --light-yellow: #ffd26c;
+    --embed-color: #2929297d;
+    --search-result-file-title-color: #f39ba0;
+    --theme-color: #ffccbc;
+    --theme-color-translucent: #f39ba0;
+    --theme-color-translucent-1: #f39ba0;
+    --color-specification: #f93759;
+    --allow-1: #f93759;
+    --background-blockquote-dark: #292929;
+    --list-ul-block-color: #f39ba0;
+    --list-ul-disc-color: #f93759;
+    --list-ul-hover: #ffebec;
+    --list-ol-block-color: #f39ba0;
+    --list-ol-number-color: #ffccbc;
+    --list-ol-hover: #ffebec;
+    --stag1: #f39ba0;
+    --stag2: #ffccbc;
+    --stag3: #ffebec;
+    --tag1: #028588;
+    --tag2: #40916c;
+    --tag3: #69a2ee;
+    --tag4: #c47a5e;
+    --tag5: #004f2d;
+    --tag6: #f5a7a2;
+    --tag7: #f19c79;
+    --tag8: #02a588;
+    --tag9: #ab4967;
+    --h1-color: #ffccbc;
+    --h2-color: #ffccbc;
+    --h3-color: #ffccbc;
+    --h4-color: #ffccbc;
+    --h5-color: #ffccbc;
+    --h6-color: #ffccbc;
+    --graph-text-color: #efe9d9;
+    --graphtag: #f39ba0;
+    --graph-attach: #ffebec;
+    --graph-circle: #f39ba0;
+    --graph-line: #ffc3bc;
+    --graph-unresolved: #ffccbc;
+    --graph-arrow: #ffc3bc;
+    --mermaid-active-task-color: #F39BA4;
+    --mermaid-seq-dia-color: #ffebec;
+    --table-background-color: #212121;
+    --table-background-color-odd: transparent;
+    --table-border-color: #ffebec;
+    --table-thead-background-color: #f39ba0ad;
+    --table-hover-raw-color: #292929;
+    --table-hover-color: #ffccbc0a;
+    --table-hover-thead-color: #f39ba0;
+    --calendar-week-color: #ffccbc;
+    --calendar-week-hover: #f39ba0;
+    --calendar-week-background-color: transparent;
+    --day-planner-pie: #ffccbc;
+    --day-planner-timeline: #ff9b7c;
+    --day-planner-line: #f39ba0;
+    --day-planner-dot: #ffebec;
+    --day-planner-item-hover: #f39ba0;
+    --event-item-color9: #ffc3bc;
+    --event-item-color8: #ffbcbc;
+    --event-item-color10: #ffccbc;
+    --event-item-color7: #ffbcc4;
+    --event-item-color6: #ffbcbc;
+    --event-item-color5: #ffc3bc;
+    --event-item-color4: #ffccbc;
+    --event-item-color3: #ffd4bc;
+    --event-item-color2: #ffdcbc;
+    --event-item-color1: #ffe4bc;
+    /* I am too noob to touch this part
     --text-gray: #acacac;
     --text-brown: #be9684;
     --text-orange: #ffa344;
@@ -5374,30 +5294,27 @@ img[alt$="inlR"] {
     --background-purple: #443f57;
     --background-pink: #533b4a;
     --background-red: #683c3c;
-    */
-  --note-important: #f93759;
-  --note-cloze: #f93759;
-  --stickies-color-1: #f39ba0;
-  --stickies-color-2: #ffebec;
-  --tape-color: #ffccbc47;
-  --header-color: #f39ba0;
+    */ 
+    --note-important: #f93759;
+    --note-cloze: #f93759;
+    --stickies-color-1: #f39ba0;
+    --stickies-color-2: #ffebec;
+    --tape-color: #ffccbc47;
+    --header-color: #f39ba0;
 }
-.theme-dark .cm-s-obsidian pre.HyperMD-codeblock,
-.theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
-.theme-dark .markdown-preview-view code {
-  color: #fff;
-  font-size: var(--font-size-edit-code) !important;
-  font-family: var(--font-family-preview-edit-code);
-  text-align: start;
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock, .theme-dark .cm-s-obsidian span.cm-inline-code, .theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end), .theme-dark .markdown-preview-view code{
+    color: #fff;
+    font-size: var(--font-size-edit-code) !important;
+    font-family: var(--font-family-preview-edit-code);
+    text-align: start;
 }
 .outline .tree-item-children:hover {
   border-left-color: #f39ba0;
 }
 .cm-s-obsidian,
 .markdown-preview-view {
-  text-align: justify;
-  hyphens: auto;
+    text-align: justify;
+    hyphens: auto;
 }
 
 /*
@@ -5419,178 +5336,169 @@ Syntax: none | manual | auto
 以上内容参考自 https://developer.mozilla.org/zh-CN/docs/Web/CSS
 整理：蚕子 QQ：312815311
 */
-.markdown-preview-view img,
-.markdown-preview-view video {
-  max-width: min(100%, 800px) !important;
-  margin-left: auto;
-  margin-right: auto;
-  display: table-cell;
-  outline: 0px solid var(--text-accent);
-}
-.markdown-preview-view table {
-  border-collapse: collapse;
-  margin: auto;
-  margin-bottom: 20px;
+.markdown-preview-view img, .markdown-preview-view video {
+    max-width: min(100%,800px) !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    outline: 0px solid var(--text-accent);
+  }
+  .markdown-preview-view table {
+	border-collapse: collapse;
+	margin:auto;
+	margin-bottom: 20px;
 }
 .graph-view.color-line-highlight {
   color: #fea2c2;
-}
+} 
 /* 显示当前代码块的语言类别 */
 pre {
-  position: relative;
-  line-height: 20px !important;
+    position: relative;
+    line-height: 20px !important;
 }
 
 /* 每个语言单独写 C语言 要写在前面 否则出现覆盖C# C++的问题 */
-pre[class*="language-c"]:before {
-  content: "C";
+pre[class*='language-c']:before {
+    content: "C";
 }
 
-pre[class*="language-py"]:before {
-  content: "Python";
+pre[class*='language-py']:before {
+    content: "Python";
 }
 
-pre[class*="language-python"]:before {
-  content: "Python";
+pre[class*='language-python']:before {
+    content: "Python";
 }
 
-pre[class*="language-nginx"]:before {
-  content: "Nginx";
+pre[class*='language-nginx']:before {
+    content: "Nginx";
 }
 
-pre[class*="language-css"]:before {
-  content: "Css";
+pre[class*='language-css']:before {
+    content: "Css";
 }
 
-pre[class*="language-javascript"]:before {
-  content: "Js";
+pre[class*='language-javascript']:before {
+    content: "Js";
 }
 
-pre[class*="language-js"]:before {
-  content: "Js";
+pre[class*='language-js']:before {
+    content: "Js";
 }
 
-pre[class*="language-php"]:before {
-  content: "Php";
+
+pre[class*='language-php']:before {
+    content: "Php";
 }
 
-pre[class*="language-shell"]:before {
-  content: "Shell";
+pre[class*='language-shell']:before {
+    content: "Shell";
 }
 
-pre[class*="language-flow"]:before {
-  content: "Flow";
+pre[class*='language-flow']:before {
+    content: "Flow";
 }
 
-pre[class*="language-sequence"]:before {
-  content: "Sequence";
+pre[class*='language-sequence']:before {
+    content: "Sequence";
 }
 
-pre[class*="language-sql"]:before {
-  content: "Sql";
+pre[class*='language-sql']:before {
+    content: "Sql";
 }
 
-pre[class*="language-yaml"]:before {
-  content: "Yaml";
+pre[class*='language-yaml']:before {
+    content: "Yaml";
 }
 
-pre[class*="language-ini"]:before {
-  content: "ini";
+pre[class*='language-ini']:before {
+    content: "ini";
 }
 
-pre[class*="language-xml"]:before {
-  content: "Xml";
+pre[class*='language-xml']:before {
+    content: "Xml";
 }
 
-pre[class*="language-git"]:before {
-  content: "Git";
+pre[class*='language-git']:before {
+    content: "Git";
 }
 
-pre[class*="language-cs"]:before {
-  content: "C#";
+pre[class*='language-cs']:before {
+    content: "C#";
 }
 
-pre[class*="language-cpp"]:before {
-  content: "C++";
+pre[class*='language-cpp']:before {
+    content: "C++";
 }
 
-pre[class*="language-java"]:before {
-  content: "Java";
+pre[class*='language-java']:before {
+    content: "Java";
 }
 
-pre[class*="language-html"]:before {
-  content: "Html";
+pre[class*='language-html']:before {
+    content: "Html";
 }
 
-pre[class*="language-txt"]:before {
-  content: "txt";
+pre[class*='language-txt']:before {
+    content: "txt";
 }
 
 /* Code */
 .theme-light :not(pre) > code[class*="language-"],
 .theme-light pre[class*="language-"] {
-  background-color: var(--background-primary-alt);
-  /* 代码块 圆角 阴影 */
-  border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: rgb(0 0 0/15%) 0px 2px 10px;
+    background-color: var(--background-primary-alt);
+    /* 代码块 圆角 阴影 */
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgb(0 0 0/15%) 0px 2px 10px;
 }
 
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"] {
-  color: #37291a !important;
-  text-shadow: none;
-  font-family: var(--mono-font), var(--cjk-font);
+    color: #37291a !important;
+    text-shadow: none;
+    font-family: var(--mono-font), var(--cjk-font);
 }
 
-.theme-dark .token.keyword,
-.theme-light .token.keyword {
-  color: #3b78e7 !important;
-  font-weight: 600;
+.theme-dark .token.keyword, .theme-light .token.keyword {
+    color: #3b78e7 !important;
+    font-weight: 600;
 }
 
-.theme-dark .function,
-.theme-light .function {
-  color: #9c27b0 !important;
+.theme-dark .function, .theme-light .function {
+    color: #9c27b0 !important;
 }
 
-.theme-dark .number,
-.theme-light .number {
-  color: #d81b60 !important;
+.theme-dark .number, .theme-light .number {
+    color: #d81b60 !important;
 }
 
-.theme-dark .builtin,
-.theme-light .builtin {
-  color: #e36209 !important;
-  font-weight: bold;
+.theme-dark .builtin, .theme-light .builtin {
+    color: #e36209 !important;
+    font-weight: bold;
 }
 
-.theme-light .operator,
-.theme-light .punctuation {
-  color: #708090 !important;
+.theme-light .operator, .theme-light .punctuation {
+    color: #708090 !important;
 }
 
-.theme-dark .operator,
-.theme-dark .punctuation {
-  color: rgb(228, 220, 220) !important;
+.theme-dark .operator, .theme-dark .punctuation {
+    color: rgb(228, 220, 220) !important;
 }
 
-.theme-dark .comment,
-.theme-light .comment {
-  font-size: 0.9em !important;
-  font-weight: 450;
+.theme-dark .comment, .theme-light .comment {
+    font-size: 0.9em !important;
+    font-weight: 450;
 }
 /*嘴上云又改的深色主题代码注释色*/
 .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-comment {
-  color: #e5c7a78a;
+    color: #e5c7a78a;
 }
 
 .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-number {
-  color: #b49fc6;
+    color: #b49fc6;
 }
-.theme-dark .cm-s-obsidian span.cm-hmd-frontmatter.cm-variable-3,
-.theme-dark .cm-s-obsidian span.cm-math.cm-variable-3,
-.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-3 {
-  color: #ae6ce7;
+.theme-dark .cm-s-obsidian span.cm-hmd-frontmatter.cm-variable-3, .theme-dark .cm-s-obsidian span.cm-math.cm-variable-3, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-3 {
+    color: #ae6ce7;
 }

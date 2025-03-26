@@ -364,7 +364,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --orange: #e87d3e;
   --red: #e83e3e;
   --purple: #9e86c8;
-  --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
   --h1-size: 1.7rem;
   --h2-size: 1.5rem;
   --h3-size: 1.2rem;
@@ -414,8 +413,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --background-primary: rgb(255, 255, 255);
   --background-secondary: rgb(233, 234, 236);
   --background-modifier-hover: var(--background-primary);
@@ -433,11 +430,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-font-color-l: rgb(62, 129, 206);
   --tag-background-color-d: rgb(28, 39, 51);
   --tag-font-color-d: rgb(62, 129, 206);
-  --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
-  --text-faint: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 30%));
-  --text-formatted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 35%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --atom-gray-1: #383a42;
   --atom-gray-2: #383a42;
   --atom-red: #e75545;
@@ -478,8 +471,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-primary: rgb(18, 22, 28);
   --background-secondary: rgb(2, 4, 9);
   --background-modifier-hover: var(--background-primary);
@@ -501,9 +492,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-font-color-d: rgb(114, 158, 207);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
-  --text-formatted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 50%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --atom-gray-1: #5c6370;
   --atom-gray-2: #abb2bf;
   --atom-red: #e06c75;
@@ -661,8 +650,6 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-primary: rgb(18, 22, 28);
   --background-secondary: rgb(2, 4, 9);
   --background-modifier-hover: var(--background-primary);
@@ -684,9 +671,7 @@ html[saved-theme="dark"] {
   --tag-font-color-d: rgb(114, 158, 207);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
-  --text-formatted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 50%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --atom-gray-1: #5c6370;
   --atom-gray-2: #abb2bf;
   --atom-red: #e06c75;
@@ -797,8 +782,6 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --background-primary: rgb(255, 255, 255);
   --background-secondary: rgb(233, 234, 236);
   --background-modifier-hover: var(--background-primary);
@@ -816,11 +799,7 @@ html[saved-theme="light"] {
   --tag-font-color-l: rgb(62, 129, 206);
   --tag-background-color-d: rgb(28, 39, 51);
   --tag-font-color-d: rgb(62, 129, 206);
-  --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
-  --text-faint: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 30%));
-  --text-formatted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 35%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --atom-gray-1: #383a42;
   --atom-gray-2: #383a42;
   --atom-red: #e75545;

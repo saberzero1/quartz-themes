@@ -376,8 +376,7 @@ settings:
   background-color: transparent !important;
 }
 
-.workspace-tab-header::before,
-.workspace-tab-header::after {
+.workspace-tab-header::before, .workspace-tab-header::after {
   display: none;
 }
 
@@ -516,20 +515,11 @@ body.theme-light .mod-root .workspace-tab-container .workspace-leaf-content {
 body.theme-light .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper {
   background-color: transparent;
 }
-body.theme-light
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .canvas-background {
+body.theme-light .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 
-body.theme-light
-  .mod-root.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-header {
+body.theme-light .mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 
@@ -544,27 +534,13 @@ body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .vi
   background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
   backdrop-filter: var(--en-acrylic);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-content
-  > div
-  > div
-  > .cm-scroller {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-content > div > div > .cm-scroller {
   padding-top: calc(var(--header-height) + 32px);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-content
-  > iframe {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-content > iframe {
   padding-top: var(--header-height);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  .markdown-reading-view
-  > .markdown-preview-view {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .markdown-reading-view > .markdown-preview-view {
   padding-top: var(--header-height);
 }
 body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .graph-controls {
@@ -573,36 +549,19 @@ body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .grap
   border: none;
   box-shadow: none;
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .canvas-controls {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-controls {
   margin-top: var(--header-height);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .markdown-preview-view {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .canvas-wrapper .markdown-preview-view {
   padding-top: 0;
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content[data-type="image"]
-  > .view-content {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=image] > .view-content {
   padding-top: var(--header-height);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content[data-type="style-settings"]
-  > .view-content {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=style-settings] > .view-content {
   padding-top: var(--header-height);
 }
-body.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content[data-type="kanban"]
-  > .view-header {
+body.encore-fancy-headers .workspace-tab-container .workspace-leaf-content[data-type=kanban] > .view-header {
   position: relative !important;
 }
 
@@ -637,10 +596,7 @@ body.theme-light .mod-root .workspace-tab-header.is-active .workspace-tab-header
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 
-.is-translucent:not(.is-fullscreen)
-  .mod-root
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner {
+.is-translucent:not(.is-fullscreen) .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   --en-opacity: 0.5;
   background-color: rgba(var(--grey-500-rgb), var(--en-opacity));
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -669,86 +625,38 @@ body.theme-light .mod-root .workspace-tab-header.is-active .workspace-tab-header
   background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
   justify-content: space-around;
 }
-.mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner,
-.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner {
+.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner {
   padding: 0;
   margin: 0;
 }
-.mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner,
-.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner {
+.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner {
   flex-grow: 1;
   justify-content: space-evenly;
 }
-.mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header,
-.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header {
+.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header,
+.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
   flex-grow: 1;
   border-radius: var(--tab-radius);
 }
-.mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header.is-active,
-.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header.is-active {
+.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active,
+.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   background-color: rgba(var(--grey-700-rgb), var(--en-opacity));
 }
-.mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-spacer,
-.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-spacer {
+.mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-spacer,
+.mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-spacer {
   display: none;
 }
 
-.is-translucent:not(.is-fullscreen)
-  .mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen)
-  .mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container {
+.is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
+.is-translucent:not(.is-fullscreen) .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   --en-opacity: 0.66;
   background-color: rgba(var(--grey-700-rgb), var(--en-opacity)) !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.is-translucent:not(.is-fullscreen)
-  .mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header.is-active,
-.is-translucent:not(.is-fullscreen)
-  .mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header.is-active {
+.is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header.is-active,
+.is-translucent:not(.is-fullscreen) .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header.is-active {
   background-color: rgba(var(--grey-600-rgb), var(--en-opacity));
 }
 
@@ -856,15 +764,7 @@ body {
 body:not(.encore-disable-logo-on-hr) .markdown-rendered hr,
 body:not(.encore-disable-logo-on-hr) .cm-line.hr hr {
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    var(--hr-color) 46.2%,
-    transparent 46.2%,
-    transparent 54%,
-    var(--hr-color) 54%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, var(--hr-color) 46.2%, transparent 46.2%, transparent 54%, var(--hr-color) 54%, transparent);
   border: none;
   position: relative;
   overflow: visible;
@@ -886,41 +786,23 @@ body:not(.encore-disable-logo-on-hr) .cm-line.hr hr::after {
 body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr {
   position: relative;
 }
-body:not(.encore-disable-logo-on-hr)
-  .markdown-source-view:not(.is-live-preview)
-  .HyperMD-hr::before {
+body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 13px;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    transparent 10%,
-    var(--hr-color) 46.2%,
-    transparent 46.2%,
-    transparent 54%,
-    var(--hr-color) 54%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent 10%, var(--hr-color) 46.2%, transparent 46.2%, transparent 54%, var(--hr-color) 54%, transparent);
 }
-body:not(.encore-disable-logo-on-hr)
-  .markdown-source-view:not(.is-live-preview)
-  .HyperMD-hr::after {
+body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after {
   top: 2px;
 }
 
 body.encore-disable-logo-on-hr .markdown-rendered hr,
 body.encore-disable-logo-on-hr .cm-line.hr hr {
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    var(--hr-color) 30%,
-    var(--hr-color) 70%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, var(--hr-color) 30%, var(--hr-color) 70%, transparent);
   border: none;
 }
 
@@ -949,23 +831,7 @@ body.encore-translucency.encore-bg-frosty .app-container {
   animation: scroll-up infinite 120s linear;
 }
 body.encore-translucency.encore-bg-chromatic {
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgb(15, 245, 254),
-    rgb(111, 0, 255),
-    rgb(255, 0, 0),
-    rgb(255, 222, 0),
-    rgb(167, 255, 0),
-    rgb(0, 255, 136),
-    rgb(15, 245, 254),
-    rgb(111, 0, 255),
-    rgb(253, 0, 0),
-    rgb(255, 222, 0),
-    rgb(167, 255, 0),
-    rgb(0, 255, 136),
-    rgb(15, 245, 254),
-    rgb(111, 0, 255)
-  );
+  background-image: repeating-linear-gradient(45deg, rgb(15, 245, 254), rgb(111, 0, 255), rgb(255, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255), rgb(253, 0, 0), rgb(255, 222, 0), rgb(167, 255, 0), rgb(0, 255, 136), rgb(15, 245, 254), rgb(111, 0, 255));
   background-size: 100% 800vh;
   animation: scroll-up-down infinite 180s ease-in-out alternate-reverse;
 }
@@ -976,21 +842,7 @@ body.encore-translucency.encore-bg-chromatic::before {
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
 body.encore-translucency.encore-bg-prismatic {
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgb(0, 4, 255),
-    rgb(107, 15, 254),
-    rgb(153, 0, 255),
-    rgb(255, 0, 242),
-    rgb(255, 0, 170),
-    rgb(255, 0, 242),
-    rgb(153, 0, 255),
-    rgb(107, 15, 254),
-    rgb(0, 4, 255),
-    rgb(107, 15, 254),
-    rgb(153, 0, 255),
-    rgb(255, 0, 242)
-  );
+  background-image: repeating-linear-gradient(45deg, rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242), rgb(255, 0, 170), rgb(255, 0, 242), rgb(153, 0, 255), rgb(107, 15, 254), rgb(0, 4, 255), rgb(107, 15, 254), rgb(153, 0, 255), rgb(255, 0, 242));
   background-size: 100% 400vh;
   animation: scroll-up infinite 30s linear;
 }
@@ -1001,38 +853,30 @@ body.encore-translucency.encore-bg-prismatic::before {
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
 body.encore-translucency.encore-bg-dawn {
-  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)),
-    linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent),
-    linear-gradient(to bottom left, #0036e6, #400dcc);
+  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)), linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent), linear-gradient(to bottom left, #0036e6, #400dcc);
 }
 body.encore-translucency.encore-bg-dawn::before {
   position: fixed;
   inset: 0;
   content: "";
   animation: fade-in 60s linear infinite alternate;
-  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)),
-    linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent),
-    linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
+  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)), linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent), linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
 }
 body.encore-translucency.encore-bg-lava {
-  background-image: radial-gradient(transparent, #360700),
-    linear-gradient(to top, #d86800, transparent), linear-gradient(to bottom left, #b43900, #1a0101);
+  background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #d86800, transparent), linear-gradient(to bottom left, #b43900, #1a0101);
 }
 body.encore-translucency.encore-bg-lava::before {
   position: fixed;
   inset: 0;
   content: "";
   animation: fade-in 60s linear infinite alternate;
-  background-image: radial-gradient(transparent, #360700),
-    linear-gradient(to top, #f5e498, transparent), linear-gradient(to bottom left, #ff0000, #ff0000);
+  background-image: radial-gradient(transparent, #360700), linear-gradient(to top, #f5e498, transparent), linear-gradient(to bottom left, #ff0000, #ff0000);
 }
 body.encore-translucency.encore-bg-emerald {
-  background-image: radial-gradient(transparent, #071400),
-    linear-gradient(to top, #54f1d7, transparent), linear-gradient(to bottom left, #55df00, #1b4900);
+  background-image: radial-gradient(transparent, #071400), linear-gradient(to top, #54f1d7, transparent), linear-gradient(to bottom left, #55df00, #1b4900);
 }
 body.encore-translucency.encore-bg-sapphire {
-  background-image: radial-gradient(transparent, #000018),
-    linear-gradient(to top, #5871ff, transparent), linear-gradient(to bottom left, #0400ff, #0084ff);
+  background-image: radial-gradient(transparent, #000018), linear-gradient(to top, #5871ff, transparent), linear-gradient(to bottom left, #0400ff, #0084ff);
 }
 body.encore-translucency .horizontal-main-container {
   background-color: rgba(var(--grey-900-rgb), calc(1 - var(--encore-translucency-strength)));
@@ -1098,10 +942,7 @@ body.is-mobile .workspace-drawer-header {
   --color-base-10: rgb(var(--grey-850-rgb));
   --color-base-20: rgb(var(--grey-800-rgb));
 }
-.is-mobile.theme-dark.encore-mobile-oled-mode
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content {
+.is-mobile.theme-dark.encore-mobile-oled-mode .mod-root .workspace-tab-container .workspace-leaf-content {
   background-color: black;
 }
 
@@ -1198,21 +1039,17 @@ body:not(.encore-no-calendar) #calendar-container .day.active {
   color: var(--text-normal);
 }
 
-body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type="excalidraw"] {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] {
   border-top: none;
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .view-content.excalidraw-view {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .view-content.excalidraw-view {
   padding: 0;
 }
-body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type="excalidraw"] .view-header {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .view-header {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
-body:not(.encore-no-excalidraw).theme-dark
-  .workspace-leaf-content[data-type="excalidraw"]
-  .view-header {
+body:not(.encore-no-excalidraw).theme-dark .workspace-leaf-content[data-type=excalidraw] .view-header {
   background-color: rgba(18, 18, 18, 0.5) !important;
 }
 body:not(.encore-no-excalidraw) .excalidraw-wrapper {
@@ -1268,11 +1105,7 @@ body:not(.encore-no-excalidraw).theme-light .excalidraw:not(.theme--dark) {
   --input-border-color: var(--color-base-30);
   --input-bg-color: var(--color-base-20);
 }
-body:not(.encore-no-excalidraw)
-  .excalidraw
-  .layer-ui__wrapper
-  .layer-ui__wrapper__footer-right
-  .help-icon {
+body:not(.encore-no-excalidraw) .excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right .help-icon {
   display: none;
 }
 body:not(.encore-no-excalidraw) .help-icon {
@@ -1289,22 +1122,7 @@ body:not(.encore-no-excalidraw) .help-icon:hover {
 body:not(.encore-no-excalidraw) .help-icon > * {
   display: none;
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Press ESC to exit fullscreen mode"]
-  > svg,
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Open selected text as link\a(SHIFT+CLICK to open in a new pane)"]
-  > svg,
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Save (will also update transclusions)"]
-  > svg,
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Install or update Excalidraw Scripts"]
-  > svg {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Press ESC to exit fullscreen mode"] > svg, body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Open selected text as link\a(SHIFT+CLICK to open in a new pane)"] > svg, body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Save (will also update transclusions)"] > svg, body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Install or update Excalidraw Scripts"] > svg {
   -webkit-mask-image: unset;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -1312,28 +1130,16 @@ body:not(.encore-no-excalidraw)
   background-color: var(--color-base-70);
   border-radius: 0;
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Press ESC to exit fullscreen mode"]
-  > svg {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Press ESC to exit fullscreen mode"] > svg {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cpolyline points='9 21 3 21 3 15'%3E%3C/polyline%3E%3Cline x1='21' y1='3' x2='14' y2='10'%3E%3C/line%3E%3Cline x1='3' y1='21' x2='10' y2='14'%3E%3C/line%3E%3C/svg%3E");
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Open selected text as link\a(SHIFT+CLICK to open in a new pane)"]
-  > svg {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Open selected text as link\a(SHIFT+CLICK to open in a new pane)"] > svg {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E");
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Save (will also update transclusions)"]
-  > svg {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Save (will also update transclusions)"] > svg {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpath d='M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z'%3E%3C/path%3E%3Cpolyline points='17 21 17 13 7 13 7 21'%3E%3C/polyline%3E%3Cpolyline points='7 3 7 8 15 8'%3E%3C/polyline%3E%3C/svg%3E");
 }
-body:not(.encore-no-excalidraw)
-  .workspace-leaf-content[data-type="excalidraw"]
-  .clickable-icon.view-action[aria-label="Install or update Excalidraw Scripts"]
-  > svg {
+body:not(.encore-no-excalidraw) .workspace-leaf-content[data-type=excalidraw] .clickable-icon.view-action[aria-label="Install or update Excalidraw Scripts"] > svg {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpath d='M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4'%3E%3C/path%3E%3Cpolyline points='14 2 14 8 20 8'%3E%3C/polyline%3E%3Cpath d='m9 18 3-3-3-3'%3E%3C/path%3E%3Cpath d='m5 12-3 3 3 3'%3E%3C/path%3E%3C/svg%3E");
 }
 body:not(.encore-no-excalidraw) .workspace-leaf-content .excalidraw-view {
@@ -1342,9 +1148,9 @@ body:not(.encore-no-excalidraw) .workspace-leaf-content .excalidraw-view {
   padding-bottom: 4px;
 }
 
-body.encore-fancy-headers .workspace-leaf-content[data-type="excalidraw"] .layer-ui__wrapper,
-body.encore-fancy-headers .workspace-leaf-content[data-type="excalidraw"] .App-top-bar,
-body.encore-fancy-headers .workspace-leaf-content[data-type="excalidraw"] .layer-ui__sidebar {
+body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .layer-ui__wrapper,
+body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .App-top-bar,
+body.encore-fancy-headers .workspace-leaf-content[data-type=excalidraw] .layer-ui__sidebar {
   margin-top: var(--header-height);
 }
 body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-left,
@@ -1365,19 +1171,13 @@ body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__foo
   border: none;
   background-color: var(--background-secondary-alt);
 }
-.kanban-plugin
-  .kanban-plugin__lane
-  .kanban-plugin__item-button-wrapper:nth-child(2)
-  button.kanban-plugin__new-item-button:not(:hover) {
+.kanban-plugin .kanban-plugin__lane .kanban-plugin__item-button-wrapper:nth-child(2) button.kanban-plugin__new-item-button:not(:hover) {
   background-color: var(--background-secondary);
 }
 .kanban-plugin .kanban-plugin__lane .kanban-plugin__item {
   border: none;
 }
-.kanban-plugin
-  .kanban-plugin__lane
-  .kanban-plugin__item:not(:hover)
-  .kanban-plugin__item-postfix-button {
+.kanban-plugin .kanban-plugin__lane .kanban-plugin__item:not(:hover) .kanban-plugin__item-postfix-button {
   display: none;
 }
 .kanban-plugin .kanban-plugin__lane .kanban-plugin__item-content-wrapper {
@@ -1389,8 +1189,7 @@ body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__foo
 .kanban-plugin .kanban-plugin__lane > :last-child.kanban-plugin__item-button-wrapper {
   padding-top: 0;
 }
-.kanban-plugin .kanban-plugin__lane .kanban-plugin__grow-wrap > textarea,
-.kanban-plugin .kanban-plugin__lane .kanban-plugin__grow-wrap:after {
+.kanban-plugin .kanban-plugin__lane .kanban-plugin__grow-wrap > textarea, .kanban-plugin .kanban-plugin__lane .kanban-plugin__grow-wrap:after {
   background-color: transparent !important;
 }
 .kanban-plugin .kanban-plugin__lane button.kanban-plugin__new-item-button:not(:hover) {
@@ -1398,17 +1197,10 @@ body.encore-fancy-headers .excalidraw .layer-ui__wrapper .layer-ui__wrapper__foo
   box-shadow: unset;
 }
 
-.mod-root.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  .projects-container {
+.mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .projects-container {
   padding-top: var(--header-height);
 }
-.mod-root.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  .projects-container
-  .container {
+.mod-root.encore-fancy-headers .workspace-tab-container .workspace-leaf-content .projects-container .container {
   background-color: transparent;
   border-bottom: 1px solid rgba(var(--grey-700-rgb), var(--en-opacity));
 }
@@ -1487,8 +1279,7 @@ body:not(.encore-no-makemd) .mk-file-context-file {
 .dataview.table-view-table > tbody > tr:hover {
   background-color: var(--color-base-10) !important;
 }
-.dataview.table-view-table > tbody > tr:hover:nth-child(2n),
-.dataview.table-view-table > tbody > tr:nth-child(2n) {
+.dataview.table-view-table > tbody > tr:hover:nth-child(2n), .dataview.table-view-table > tbody > tr:nth-child(2n) {
   background-color: var(--color-base-05) !important;
 }
 .dataview.table-view-table > tbody > tr > td {
@@ -1590,14 +1381,7 @@ body:not(.encore-no-makemd) .mk-file-context-file {
   border: none;
   --stripe-a: var(--color-base-00);
   --stripe-b: var(--color-base-05);
-  background-image: radial-gradient(transparent, var(--color-base-00) 100%),
-    repeating-linear-gradient(
-      45deg,
-      var(--stripe-a) 0px,
-      var(--stripe-a) 10px,
-      var(--stripe-b) 10px,
-      var(--stripe-b) 20px
-    );
+  background-image: radial-gradient(transparent, var(--color-base-00) 100%), repeating-linear-gradient(45deg, var(--stripe-a) 0px, var(--stripe-a) 10px, var(--stripe-b) 10px, var(--stripe-b) 20px);
 }
 .dataview.dataview-error-box > .dataview-error-message {
   font-weight: bold;
@@ -1608,14 +1392,7 @@ body:not(.encore-no-makemd) .mk-file-context-file {
 .dataview.dataview-error {
   --stripe-a: var(--color-base-00);
   --stripe-b: var(--color-base-05);
-  background-image: linear-gradient(to right, var(--color-base-00) 40%, transparent 120%),
-    repeating-linear-gradient(
-      45deg,
-      var(--stripe-a) 0px,
-      var(--stripe-a) 10px,
-      var(--stripe-b) 10px,
-      var(--stripe-b) 20px
-    );
+  background-image: linear-gradient(to right, var(--color-base-00) 40%, transparent 120%), repeating-linear-gradient(45deg, var(--stripe-a) 0px, var(--stripe-a) 10px, var(--stripe-b) 10px, var(--stripe-b) 20px);
   background-color: var(--color-base-00);
   font-weight: bold;
   color: var(--color-red);
@@ -1644,7 +1421,9 @@ body.theme-dark {
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
-  --color-base-50: rgb(var(--grey-350-rgb));
+  --color-base-50: rgb(
+    var(--grey-350-rgb)
+  );
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -1685,7 +1464,9 @@ body.theme-light {
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
-  --color-base-50: rgb(var(--grey-350-rgb));
+  --color-base-50: rgb(
+    var(--grey-350-rgb)
+  );
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -1989,29 +1770,18 @@ body.encore-theme-dark-obsidian.theme-dark {
   --workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
   background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
 }
-body.encore-theme-dark-obsidian.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content {
+body.encore-theme-dark-obsidian.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 1;
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
-body.encore-theme-dark-obsidian.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .canvas-background {
+body.encore-theme-dark-obsidian.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 body.encore-theme-dark-obsidian.theme-dark .mk-note-header:after {
   --gradient-color: var(--color-base-10);
 }
 
-body.encore-theme-dark-obsidian.theme-dark.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-header {
+body.encore-theme-dark-obsidian.theme-dark.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
   --en-opacity: 0.66;
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
   backdrop-filter: var(--en-acrylic);
@@ -2032,16 +1802,7 @@ body.encore-theme-dark-rgb.theme-dark {
   --grey-875-rgb: 6, 6, 6;
   --grey-900-rgb: 3, 3, 3;
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
-  --rainbow-gradient: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 222, 0, 1) 15%,
-    rgba(167, 255, 0, 1) 26%,
-    rgba(0, 255, 136, 1) 39%,
-    rgba(15, 245, 254, 1) 55%,
-    rgba(111, 0, 255, 1) 80%,
-    rgba(253, 45, 45, 1) 100%
-  );
+  --rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,222,0,1) 15%, rgba(167,255,0,1) 26%, rgba(0,255,136,1) 39%, rgba(15,245,254,1) 55%, rgba(111,0,255,1) 80%, rgba(253,45,45,1) 100%);
 }
 body.encore-theme-dark-rgb.theme-dark.encore-colors-colorful {
   --bold-color: var(--color-red);
@@ -2080,10 +1841,7 @@ body.encore-theme-dark-rgb.theme-dark .prompt::after {
   animation: pan-right 5s linear infinite forwards;
   filter: blur(15px);
 }
-body.encore-theme-dark-rgb.theme-dark
-  .mod-root
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner {
+body.encore-theme-dark-rgb.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   --en-opacity: 0.2;
   background-color: rgba(var(--grey-100-rgb), var(--en-opacity));
 }
@@ -2206,28 +1964,17 @@ body.encore-theme-dark-flexoki.theme-dark.encore-colors-colorful {
   --h5-color: #9482c5;
   --h6-color: #9482c5;
 }
-body.encore-theme-dark-flexoki.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content {
+body.encore-theme-dark-flexoki.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 1;
   background-color: rgb(var(--grey-900-rgb));
 }
-body.encore-theme-dark-flexoki.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .canvas-background {
+body.encore-theme-dark-flexoki.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
   background-color: rgb(var(--grey-900-rgb));
 }
 body.encore-theme-dark-flexoki.theme-dark .mk-note-header:after {
   --gradient-color: var(--color-base-10);
 }
-body.encore-theme-dark-flexoki.theme-dark.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-header {
+body.encore-theme-dark-flexoki.theme-dark.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
   --en-opacity: 0.66;
   background-color: rgb(var(--grey-900-rgb));
   backdrop-filter: var(--en-acrylic);
@@ -2263,61 +2010,30 @@ body.encore-theme-dark-glass-royale.theme-dark.encore-colors-colorful {
   --h5-color: #9dee51;
   --h6-color: #8badec;
 }
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container,
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container {
+body.encore-theme-dark-glass-royale.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
+body.encore-theme-dark-glass-royale.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container {
   background-color: rgba(255, 255, 255, 0.062745098);
   backdrop-filter: blur(20px) saturate(1.8);
 }
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-left-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header.is-active,
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header.is-active {
+body.encore-theme-dark-glass-royale.theme-dark .mod-left-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active,
+body.encore-theme-dark-glass-royale.theme-dark .mod-right-split .workspace-tabs:not(.mod-top) .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   background-color: rgba(255, 255, 255, 0.1882352941);
 }
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-root
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner {
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   background-color: rgba(255, 255, 255, 0.1882352941);
   backdrop-filter: blur(50px) saturate(1.5);
 }
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content {
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 0.75;
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)),
-    linear-gradient(rgba(255, 255, 255, 0.031372549), rgba(255, 255, 255, 0.0078431373));
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)), linear-gradient(rgba(255, 255, 255, 0.031372549), rgba(255, 255, 255, 0.0078431373));
   backdrop-filter: blur(32px) saturate(2);
 }
-body.encore-theme-dark-glass-royale.theme-dark
-  .mod-root
-  .workspace-tab-container
-  .workspace-leaf-content
-  .canvas-wrapper
-  .canvas-background {
+body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background {
   background-color: transparent;
   --canvas-dot-pattern: #ffffff15;
 }
 
-body.encore-theme-dark-glass-royale.theme-dark.encore-fancy-headers
-  .workspace-tab-container
-  .workspace-leaf-content
-  > .view-header {
+body.encore-theme-dark-glass-royale.theme-dark.encore-fancy-headers .workspace-tab-container .workspace-leaf-content > .view-header {
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: var(--en-acrylic);
 }
@@ -2401,13 +2117,7 @@ body.encore-blur-off {
   --en-modal-backdrop: brightness(0.5);
 }
 
-body:not(.is-mobile):not(.encore-disable-clickability-fix)
-  .markdown-source-view.mod-cm6.is-readable-line-width
-  > .cm-editor
-  > .cm-scroller
-  > .cm-sizer
-  > .cm-contentContainer
-  > .cm-content {
+body:not(.is-mobile):not(.encore-disable-clickability-fix) .markdown-source-view.mod-cm6.is-readable-line-width > .cm-editor > .cm-scroller > .cm-sizer > .cm-contentContainer > .cm-content {
   max-width: unset;
   margin-left: -4rem;
   padding-left: 4rem;
@@ -2418,7 +2128,7 @@ body:not(.is-mobile):not(.encore-disable-clickability-fix) .cm-scroller {
   overflow-x: hidden;
 }
 
-.workspace-leaf-content[data-mode="preview"] .view-action:first-child {
+.workspace-leaf-content[data-mode=preview] .view-action:first-child {
   color: var(--interactive-accent);
 }
 

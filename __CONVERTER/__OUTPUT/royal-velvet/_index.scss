@@ -340,10 +340,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --default-font: "Fira Sans", "Inter", sans-serif;
-  --font-monospace: "Fira Code", "Source Code Pro", monospace;
-
-  --font-monospace-theme: "Fira Code", "Source Code Pro", monospace;
+  --font-interface-theme: "Fira Sans", sans-serif;
+  --font-text-theme: "Fira Sans", sans-serif;
+  --font-monospace-theme: "Fira Code", monospace;
 }
 
 body {
@@ -534,7 +533,6 @@ html[saved-theme="dark"] {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
   --text-normal: var(--on-layer);
-  --text-muted: var(--on-layer-600);
   --text-accent: var(--pink);
   --text-accent-hover: var(--pinkSecondary);
   --text-faint: var(--on-layer-600);
@@ -572,8 +570,9 @@ html[saved-theme="dark"] {
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
   --code-normal: var(--purple-pink);
-  --code-size: 100%;
+  --code-size: 1em;
   --hr-color: var(--orange);
+  --checkbox-color-hover: var(--list-marker-color);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -716,7 +715,6 @@ html[saved-theme="light"] {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
   --text-normal: var(--on-layer);
-  --text-muted: var(--on-layer-600);
   --text-accent: var(--pink);
   --text-accent-hover: var(--pinkSecondary);
   --text-faint: var(--on-layer-600);
@@ -754,8 +752,9 @@ html[saved-theme="light"] {
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
   --code-normal: var(--purple-pink);
-  --code-size: 100%;
+  --code-size: 1em;
   --hr-color: var(--orange);
+  --checkbox-color-hover: var(--list-marker-color);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

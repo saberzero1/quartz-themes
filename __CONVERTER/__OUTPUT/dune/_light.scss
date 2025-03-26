@@ -1,4 +1,59 @@
 :root[saved-theme="light"] {
+  --table-hdcol: rgb(150, 150, 150);
+  --table-bgcol: rgb(211, 211, 211);
+  --table-accent: rgba(255, 255, 255, 0.5);
+  --initial-col: #800000;
+  --text-accent-special: #0080ff;
+  --frame-color-a: #4a6cb0;
+  --frame-color-b: #4a6cb0;
+  --def-red: var(--dark-red);
+  --def-green: var(--dark-green);
+  --def-blue: var(--dark-blue);
+  --def-gray: var(--dark-gray);
+  --hl-mark-red: var(--light-red);
+  --hl-mark-green: var(--light-green);
+  --hl-mark-blue: var(--light-blue);
+  --hl-mark-gray: var(--light-gray);
+  --code-background: var(--background-primary);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--code-color);
+  --code-function: #154371;
+  --code-important: #cb6500;
+  --code-keyword: #cb6500;
+  --code-operator: var(--color-red);
+  --code-property: #60090a;
+  --code-punctuation: var(--text-muted);
+  --code-string: #17294e;
+  --code-tag: var(--color-red);
+  --code-value: #2f74ba;
+  --codebg-col: rgba(255, 255, 255, 0.3);
+  --intro-dune: linear-gradient(to left, #390058, #8b0000, #ff8c00, #ffe89e);
+  --logo-grad: linear-gradient(to bottom, #ff8c00 0%, #8b0000 100%);
+  --prefs-grad: linear-gradient(
+    180deg,
+    var(--background-secondary),
+    var(--background-primary),
+    var(--background-primary),
+    var(--background-secondary)
+  );
+  --prefs-title: var(--h1-color);
+  --link-unresolved-color: dimgray;
+  --input-bg: lightgray;
+  --text-selection: rgba(247, 224, 159, 0.7);
+  --rev-fontcol: var(--light-tone);
+  --var-bg-col: var(--background-primary);
+  --var-tone-sw: var(--dark-tone);
+  --shadow-tone: rgba(0, 0, 0, 0.04);
+  --callout-bg-r: var(--light-red);
+  --callout-bg-g: var(--light-green);
+  --callout-bg-b: var(--light-blue);
+  --callout-bg-m: var(--light-gray);
+  --callout-title-r: var(--dark-red);
+  --callout-title-g: var(--dark-green);
+  --callout-title-b: var(--dark-blue);
+  --callout-title-m: var(--dark-gray);
+  --stat-bar-hl: var(--background-primary);
+  --canvas-dot-pattern: var(--slant-blue);
   --graph-fill-tag: var(--interactive-accent);
   --graph-circle-fill-unresolved: dimgray;
   --graph-circle-fill: var(--def-red);

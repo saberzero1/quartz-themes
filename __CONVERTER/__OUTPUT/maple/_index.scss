@@ -375,6 +375,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-bullet-size: calc(calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.95);
   --list-marker-color: transparent;
   --list-bullet-border: var(--list-marker-color-alt) var(--size-2-1) solid;
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.9 - var(--size-2-1)
+  );
   --list-bullet-radius: 0;
   --list-marker-color: var(--list-marker-color-alt-render);
   --list-bullet-border: var(--setting-list-marker, var(--accent-active)) var(--size-2-1) solid;
@@ -383,6 +386,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-bullet-radius: 0;
   --list-marker-color: var(--list-marker-color-alt);
   --deg: 45deg;
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.9 - var(--size-2-1)
+  );
   --list-marker-color: var(--list-marker-color-alt-render);
   --list-bullet-radius: var(--radius-s);
   --list-marker-color: var(--setting-list-marker, var(--accent-active));
@@ -410,6 +416,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --table-header-bg: var(--setting-table-header-bg, var(--md-container-bg));
   --table-alt-line-bg: var(--setting-table-line-bg, var(--md-container-bg));
   --table-cell-vertical-alignment: middle;
+  --table-white-space: break-all;
   --table-header-color: var(--setting-table-header-text, var(--text-on-accent));
   --table-header-bg: var(--setting-table-header-bg, var(--accent-active));
   --tag-color: var(--accent-active);
@@ -510,7 +517,24 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --link-text-size: var(--h6-size);
   --cursor: pointer;
   --cursor: pointer;
-  --callout-padding: var(--size-4-3) var(--size-4-6);
+  --h1-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h1-size) * 1.2
+  );
+  --h2-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h2-size) * 1.2
+  );
+  --h3-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h3-size) * 1.2
+  );
+  --h4-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h4-size) * 1.2
+  );
+  --h5-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h5-size) * 1.2
+  );
+  --h6-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h6-size) * 1.2
+  );
   --metadata-border-width: var(--block-outline-width);
   --metadata-border-radius: var(--radius-l);
   --metadata-border-color: var(--accent-inactive);
@@ -550,11 +574,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-background-active: hsla(var(--background-primary-hsl), 0.5);
   --file-header-font-size: calc(var(--font-ui-smaller) - var(--size-2-1));
   --divider-color: #8883;
-  --frame-background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 18%));
-  --frame-outline-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%));
-  --frame-muted-color: hsl(var(--accent-h), calc(var(--accent-s) - 20%), ar(--accent-l));
   --frame-background-color: hsl(var(--accent-h), 12%, 38%);
-  --frame-outline-color: hsl(calc(var(--accent-h) - 6), calc(var(--accent-s) + 12%), 40%);
   --background-primary: transparent;
   --stauts-bar-background-opacity: 1;
   --status-bar-radius: var(--size-2-3);
@@ -571,7 +591,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --folder-color-rgb: 245, 180, 0;
   --folder-color: rgb(var(--setting-color-dirs, var(--folder-color-rgb)));
   --folder-hover-color: rgba(var(--setting-color-dirs, var(--folder-color-rgb)), 0.24);
-  --nav-item-size: 0.9rem;
+  --nav-item-size: calc(var(--size-4-4) * 0.9);
   --line-height-tight: 1.6;
   --nav-indentation-guide-color: hsla(var(--accent-h), 20%, 50%, 0.2);
   --nav-indentation-guide-width: 1.8px;
@@ -694,7 +714,6 @@ html[saved-theme="dark"] {
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
   --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 18%, 14%));
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 24%), 24%);
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23eee" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
   --folder-inactive: 70%;
 
@@ -767,7 +786,6 @@ html[saved-theme="light"] {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
   --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 24%, 92%));
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 24%), 24%);
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23222" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
   --folder-inactive: 85%;
 

@@ -1,10 +1,45 @@
 :root[saved-theme="dark"] {
+  --background-primary: #111;
+  --background-primary-alt: #222;
+  --text-normal: #aaa;
+  --text-muted: #777;
+  --text-faint: #555;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-shade-1: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 30%
+  );
+  --accent-shade-2: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 50%
+  );
+  --accent-shade-3: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 80%
+  );
+  --accent-shade-4: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 90%
+  );
   --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 20%);
   --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 40%);
   --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 80%);
   --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 90%);
-  --background-primary-alt: var(--background-primary);
-  --background-secondary: var(--background-primary);
-  --background-secondary-alt: var(--background-primary);
+  --code-background: #242936;
+  --code-background-inline: #242936;
+  --code-normal: #cccac2;
+  --code-comment: #b8cfe688;
+  --code-function: #ffd173;
+  --code-important: #ffdfb3;
+  --code-keyword: #ffad66;
+  --code-operator: #f29e74;
+  --code-property: #73d0ff;
+  --code-punctuation: #cccac2;
+  --code-string: #d5ff80;
+  --code-tag: #5ccfe6;
+  --code-value: #dfbfff;
 }

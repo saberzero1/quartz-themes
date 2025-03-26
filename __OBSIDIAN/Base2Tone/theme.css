@@ -12,7 +12,7 @@
   /* this is a hack workaround for now */
   /* go to https://convertacolor.com/ to convert the --baseD0 hsl to rgb */
   /* i.e. hsl(--duo, 58%, 55%) */
-  --D0-rgb: 207, 136, 74;
+  --D0-rgb: 207,136,74;
 
   /* then fiddle with the saturation and lightness values */
   --baseA0: hsl(var(--uno), 18%, 17%);
@@ -83,42 +83,30 @@
 
 /* now, the fun stuff */
 /* headers */
-.cm-s-obsidian .cm-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.cm-s-obsidian .cm-header, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  overflow: visible;
+  overflow:visible;
 }
 .cm-s-obsidian .cm-formatting-header {
   font-weight: 300;
 }
 
-.markdown-preview-view h1,
-.cm-s-obsidian span.cm-header-1 {
+.markdown-preview-view h1, .cm-s-obsidian span.cm-header-1 {
   color: var(--baseB0);
 }
-.markdown-preview-view h2,
-.cm-s-obsidian span.cm-header-2 {
+.markdown-preview-view h2, .cm-s-obsidian span.cm-header-2 {
   color: var(--baseB1);
 }
-.markdown-preview-view h3,
-.cm-s-obsidian span.cm-header-3 {
+.markdown-preview-view h3, .cm-s-obsidian span.cm-header-3 {
   color: var(--baseB2);
 }
-.markdown-preview-view h4,
-.cm-s-obsidian span.cm-header-4 {
+.markdown-preview-view h4, .cm-s-obsidian span.cm-header-4 {
   color: var(--baseB3);
 }
-.markdown-preview-view h5,
-.cm-s-obsidian span.cm-header-5 {
+.markdown-preview-view h5, .cm-s-obsidian span.cm-header-5 {
   color: var(--baseB4);
 }
-.markdown-preview-view h6,
-.cm-s-obsidian span.cm-header-6 {
+.markdown-preview-view h6, .cm-s-obsidian span.cm-header-6 {
   color: var(--baseB5);
 }
 
@@ -154,7 +142,7 @@ a.external-link:after {
   text-decoration: none;
   display: inline-block;
   opacity: 0.5;
-  font-size: 0.75em;
+  font-size: .75em;
   vertical-align: top;
 }
 
@@ -173,8 +161,7 @@ a.tag {
 code {
   color: var(--inline-code);
 }
-pre code,
-.cm-s-obsidian pre.HyperMD-codeblock {
+pre code, .cm-s-obsidian pre.HyperMD-codeblock {
   color: var(--text-normal);
 }
 
@@ -205,12 +192,10 @@ pre code,
 }
 
 /* stikethrough */
-.cm-strikethrough,
-s {
+.cm-strikethrough, s {
   text-decoration-color: var(--operators);
 }
-.cm-strikethrough:not(.cm-formatting),
-s {
+.cm-strikethrough:not(.cm-formatting), s {
   color: var(--operators);
 }
 
@@ -237,9 +222,7 @@ s {
 .cm-s-obsidian span.cm-formatting-list-ul {
   font-weight: bold;
 }
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
 li > p {
   display: inline-block;
@@ -253,21 +236,18 @@ ul li:not(.task-list-item)::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-  padding: 0;
+  padding:0;
   font-weight: bold;
 }
 ul ul li:not(.task-list-item)::before {
-  content: "◦";
+  content: "◦"
 }
 ul ul ul li:not(.task-list-item)::before {
-  content: "▪";
+  content: "▪"
 }
 
 /* numbered lists */
-ol {
-  list-style: none;
-  counter-reset: li;
-}
+ol {list-style: none; counter-reset: li}
 ol > li {
   counter-increment: li;
 }
@@ -277,7 +257,7 @@ ul ul ol > li:not(.task-list-item)::before,
 ul ul ul ol > li:not(.task-list-item)::before {
   content: "." counter(li);
   color: var(--bullet);
-  font-weight: normal;
+  font-weight:normal;
   display: inline-block;
   width: 1em;
   margin-left: -1.5em;

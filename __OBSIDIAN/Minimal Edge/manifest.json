@@ -1,8 +1,8 @@
 {
-  "name": "Minimal Edge",
-  "author": "Elhary",
-  "minAppVersion": "1.3.0",
-  "version": "1.5.0",
-  "screenshot": "minimal-edge.png",
-  "modes": ["dark", "light"]
+    "name": "Minimal Edge",
+    "author": "Elhary",
+    "minAppVersion": "1.6.0",
+    "version": "1.9.6",
+    "screenshot": "minimal-edge.png",
+    "modes": ["dark", "light"]
 }

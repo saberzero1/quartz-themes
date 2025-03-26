@@ -2,22 +2,22 @@
 /* by Ha'ani Whitlock */
 /* based on Obsidian 0.15.9 */
 
+
 /* basic variables --- the first certain design choices */
 body {
-  --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-  --text-on-accent: white !important;
-  --modal-border-color: var(--background-modifier-border) !important;
-  --collapse-icon-color-collapsed: var(--text-muted) !important;
-  --nav-collapse-icon-color: var(--text-muted);
-  --radius-s: 3px;
-  --radius-m: 5px;
-  --radius-l: 6px;
+    --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", 'Yu Gothic', "Microsoft YaHei Light", sans-serif;
+    --text-on-accent: white !important;
+    --modal-border-color: var(--background-modifier-border) !important;
+    --collapse-icon-color-collapsed: var(--text-muted) !important;
+    --nav-collapse-icon-color: var(--text-muted);
+    --radius-s: 3px;
+    --radius-m: 5px;
+    --radius-l: 6px;
 }
 body:not(.is-mobile) {
-  --header-height: 30px;
-  --ribbon-width: 30px;
-  --titlebar-height: 25px;
+    --header-height: 30px;
+    --ribbon-width: 30px;
+    --titlebar-height: 25px;
 }
 
 /* eliminate the hover effect for some elements */
@@ -28,12 +28,13 @@ body:not(.is-mobile) {
 
 /* ------- ** padding ** ----------- */
 body {
-  --size-2-1: 6px;
-  --size-2-2: 10px;
-  --size-2-3: 10px;
-  --size-4-1: 4px;
-  --size-4-2: 8px;
-  --ribbon-padding: 0px;
+    --size-2-1: 6px;
+    --size-2-2: 10px;
+    --size-2-3: 10px;
+    --size-4-1: 4px;
+    --size-4-2: 8px;
+    --ribbon-padding: 0px;
+
 }
 
 /* ----- ** changed icons ** -------- */
@@ -48,8 +49,8 @@ svg.svg-icon.lucide-file,
 svg.svg-icon.lucide-sort-asc,
 svg.svg-icon.lucide-edit-3,
 svg.svg-icon.lucide-book-open {
-  background-color: currentColor;
-  -webkit-mask-repeat: no-repeat;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
 }
 
 /* collapse/uncollapse */
@@ -57,10 +58,10 @@ svg.svg-icon.right-triangle {
   transition: none;
   width: 8px;
   height: 8px;
-  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 20 20"%3E%3Cg transform="rotate(180 10 10)"%3E%3Cg fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"%3E%3Cpath d="M9.134 4.501a1 1 0 0 1 1.732 0l5.769 10A1 1 0 0 1 15.769 16H4.23a1 1 0 0 1-.866-1.5l5.769-9.999Z"%2F%3E%3Cpath d="M16.635 14.5a1 1 0 0 1-.866 1.5H4.23a1 1 0 0 1-.866-1.5l5.769-9.999a1 1 0 0 1 1.732 0l5.769 10ZM10 9.003L7.694 13h4.612L10 9.003Z"%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+ -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 20 20"%3E%3Cg transform="rotate(180 10 10)"%3E%3Cg fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"%3E%3Cpath d="M9.134 4.501a1 1 0 0 1 1.732 0l5.769 10A1 1 0 0 1 15.769 16H4.23a1 1 0 0 1-.866-1.5l5.769-9.999Z"%2F%3E%3Cpath d="M16.635 14.5a1 1 0 0 1-.866 1.5H4.23a1 1 0 0 1-.866-1.5l5.769-9.999a1 1 0 0 1 1.732 0l5.769 10ZM10 9.003L7.694 13h4.612L10 9.003Z"%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
 
-/* toggle sidebar */
+/* toggle sidebar */ 
 svg.svg-icon.sidebar-left {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cg transform="rotate(-90 14 14)"%3E%3Cpath fill="currentColor" d="M23.78 18.53a.75.75 0 0 1-1.06 0L14 9.81l-8.72 8.72a.75.75 0 0 1-1.06-1.06l9.25-9.25a.75.75 0 0 1 1.06 0l9.25 9.25a.75.75 0 0 1 0 1.06Z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
@@ -76,7 +77,7 @@ svg.svg-icon.lucide-folder-closed,
 svg.svg-icon.lucide-folder-open {
   width: 19px;
   height: 19px;
-  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 16 16"%3E%3Cpath fill="currentColor" d="M14 6V4H7L6 2H2L1 4H0v11h14l2-9h-2zm.9 1l-1.6 7l-11.9-.1L3.7 7h11.2zM1 5h.6l1-2h2.6l1.2 2H13v1H3l-2 5.9V5z"%2F%3E%3C%2Fsvg%3E');
+  -webkit-mask-image:url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 16 16"%3E%3Cpath fill="currentColor" d="M14 6V4H7L6 2H2L1 4H0v11h14l2-9h-2zm.9 1l-1.6 7l-11.9-.1L3.7 7h11.2zM1 5h.6l1-2h2.6l1.2 2H13v1H3l-2 5.9V5z"%2F%3E%3C%2Fsvg%3E');
 }
 
 /* note/new note icon */
@@ -102,143 +103,126 @@ svg.svg-icon.lucide-book-open {
 /* --------- ****** Light and Dark themes ****** ---------- */
 
 /* ---- ***** Light Theme ***** ---- */
-.theme-light,
-.is-mobile.theme-light {
-  --color-base-00: #ffffff;
-  --color-base-10: #f5f6f8;
-  --color-base-20: #f2f3f5;
-  --color-base-05: #e3e5e8;
-  --color-base-30: #ddd;
-  --color-base-25: rgb(242, 242, 242);
-  --color-base-35: rgb(250, 250, 250);
-  --color-base-50: #999999;
-  --color-base-60: #919191;
-  --color-base-70: #888888;
-  --color-base-100: #2e3338;
-  --color-accent: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 25%),
-    calc(var(--accent-l) - 4%)
-  );
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 27%),
-    calc(var(--accent-l) - 6%)
-  );
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
-}
-.theme-dark,
-.is-mobile.theme-dark {
-  --color-base-00: #202020;
-  --color-base-05: #1a1a1a;
-  --color-base-10: #000000;
-  --color-base-20: #161616;
-  --interactive-normal: #0c0c0c;
-  --input-shadow: var(--background-modifier-border) 0 0 0px 1px;
-  --background-secondary-alt: var(--color-base-10);
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 30%),
-    calc(var(--accent-l) - 27%)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 8),
-    calc(var(--accent-s) + 7%),
-    calc(var(--accent-l) + 8%)
-  );
-  --color-accent: hsl(
-    calc(var(--accent-h) - 8),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) + 4%)
-  );
-}
+.theme-light, .is-mobile.theme-light {
+    --color-base-00: #ffffff;
+    --color-base-10: #f5f6f8;
+    --color-base-20: #f2f3f5;
+    --color-base-05: #e3e5e8;
+    --color-base-30: #ddd;
+    --color-base-25: rgb(242, 242, 242);
+    --color-base-35: rgb(250, 250, 250);
+    --color-base-50: #999999;
+    --color-base-60: #919191;
+    --color-base-70: #888888;
+    --color-base-100: #2e3338;
+    --color-accent: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 25%), calc(var(--accent-l) - 4%));
+    --color-accent-1: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 27%), calc(var(--accent-l) - 6%));
+    --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
 
-.theme-light,
-.theme-dark {
-  --color-blue-rgb: 68, 138, 255;
-  --color-blue: rgb(68, 138, 255);
-  --color-light-blue-rgb: 0, 176, 255;
-  --color-light-blue: rgb(0, 176, 255);
-  --color-cyan-rgb: 0, 184, 212;
-  --color-cyan: rgb(0, 184, 212);
-  --color-teal-rgb: 0, 191, 165;
-  --color-teal: rgb(0, 191, 165);
-  --color-dark-green-rgb: 0, 191, 165;
-  --color-dark-green: rgb(0, 191, 165);
-  --color-green-rgb: 100, 221, 23;
-  --color-green: rgb(100, 221, 23);
-  --color-orange-rgb: 255, 145, 0;
-  --color-orange: rgb(255, 145, 0);
-  --color-orange-red-rgb: 255, 82, 82;
-  --color-orange-red: rgb(255, 82, 82);
-  --color-red-rgb: 255, 23, 68;
-  --color-red: rgb(255, 23, 68);
-  --color-pink-rgb: 245, 0, 87;
-  --color-pink: rgb(245, 0, 87);
-  --color-purple-rgb: 124, 77, 255;
-  --color-purple: rgb(124, 77, 255);
-}
+  }
+  .theme-dark, .is-mobile.theme-dark {
+    --color-base-00: #202020;
+    --color-base-05: #1a1a1a;
+    --color-base-10: #000000;
+    --color-base-20: #161616;
+    --interactive-normal: #0c0c0c;
+    --input-shadow: var(--background-modifier-border) 0 0 0px 1px;
+    --background-secondary-alt: var(--color-base-10);
+    --color-accent-1: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 27%));
+    --color-accent-2: hsl(calc(var(--accent-h) - 8), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 8%));
+    --color-accent: hsl(calc(var(--accent-h) - 8), calc(var(--accent-s) + 5%), calc(var(--accent-l) + 4%));
+  }
 
-/* ------------ ****** Sidebar ****** ----------*/
+  .theme-light, .theme-dark {
+    --color-blue-rgb: 68, 138, 255;
+    --color-blue: rgb(68, 138, 255);
+    --color-light-blue-rgb: 0, 176, 255;
+    --color-light-blue: rgb(0, 176, 255);
+    --color-cyan-rgb: 0, 184, 212;
+    --color-cyan: rgb(0, 184, 212);
+    --color-teal-rgb: 0, 191, 165;
+    --color-teal: rgb(0, 191, 165);
+    --color-dark-green-rgb: 0, 191, 165;
+    --color-dark-green: rgb(0, 191, 165);
+    --color-green-rgb: 100, 221, 23;
+    --color-green: rgb(100, 221, 23);
+    --color-orange-rgb: 255, 145, 0;
+    --color-orange: rgb(255, 145, 0);
+    --color-orange-red-rgb: 255, 82, 82;
+    --color-orange-red: rgb(255, 82, 82);
+    --color-red-rgb: 255, 23, 68;
+    --color-red: rgb(255, 23, 68);
+    --color-pink-rgb: 245, 0, 87;
+    --color-pink: rgb(245, 0, 87);
+    --color-purple-rgb: 124, 77, 255;
+    --color-purple: rgb(124, 77, 255);
 
-/* --------***** Ribbon *****--------- */
+  }
+
+ 
+/* ------------ ****** Sidebar ****** ----------*/  
+
+  /* --------***** Ribbon *****--------- */
 body {
-  --ribbon-background: var(--background-secondary-alt);
-  --ribbon-background-collapsed: var(--background-secondary-alt);
+    --ribbon-background: var(--background-secondary-alt);
+    --ribbon-background-collapsed: var(--background-secondary-alt);
 }
 
 .workspace-ribbon.mod-left:before {
-  background-color: var(--ribbon-background);
-  border-bottom: var(--tab-outline-width) solid var(--background-secondary-alt);
-  border-right: var(--tab-outline-width) solid var(--ribbon-background);
-  width: var(--ribbon-width);
-}
-.workspace-ribbon.mod-left .sidebar-toggle-button {
-  width: calc(vaR(--ribbon-width) - 10px);
-  padding: 0px;
-  margin-right: 4px;
-  margin-left: 4px;
-  margin-top: 30px;
-}
+    background-color: var(--ribbon-background);
+    border-bottom: var(--tab-outline-width) solid var(--background-secondary-alt);
+    border-right: var(--tab-outline-width) solid var(--ribbon-background);
+    width: var(--ribbon-width);
+  }
+  .workspace-ribbon.mod-left .sidebar-toggle-button {
+    width: calc(vaR(--ribbon-width) - 10px);
+    padding: 0px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 30px;
+  }
+
 
 /* toggle animation for the 'expand ribbon' button */
-.workspace-ribbon.is-collapsed .sidebar-toggle-button {
-  transform: rotateY(180deg);
-}
+  .workspace-ribbon.is-collapsed .sidebar-toggle-button {
+    transform: rotateY(180deg);
+  }
+  
+  .workspace-ribbon {
+    border-left: none;
+    border-right: none;
+  }
+  /* position the settings a short distance above the bottom of the ribbon */
+  /* in the old version, it didn't touch the bottom completely */
+  .side-dock-settings {
+    margin-bottom: 2.75em; 
+  }
 
-.workspace-ribbon {
-  border-left: none;
-  border-right: none;
-}
-/* position the settings a short distance above the bottom of the ribbon */
-/* in the old version, it didn't touch the bottom completely */
-.side-dock-settings {
-  margin-bottom: 2.75em;
-}
+  /* increase top margin for the side dock actions */
+  .side-dock-actions {
+    margin-top: 40px;
+  }
+  .side-dock-ribbon {
+    flex: 0 0 var(--ribbon-width);
+  }
 
-/* increase top margin for the side dock actions */
-.side-dock-actions {
-  margin-top: 40px;
-}
-.side-dock-ribbon {
-  flex: 0 0 var(--ribbon-width);
-}
-
-.workspace-ribbon .clickable-icon {
-  padding-left: 6px;
-}
+  .workspace-ribbon .clickable-icon {
+    padding-left: 6px;
+  }
 
 /* --------- ***** Files and Folders ***** --------- */
 
 /* -- increase padding -- */
 .nav-files-container {
-  padding: 0.4em 0.5em;
+  padding:  0.4em 0.5em;
 }
+
 
 /*--- **** Folders **** -------- */
 body {
-  --nav-indentation-guide-width: 0px;
+--nav-indentation-guide-width: 0px;
 }
+
 
 /* --- **** Vault Name **** --- */
 
@@ -246,7 +230,7 @@ body {
   padding-left: 15px;
   font-size: 1.03em;
   font-weight: 400 !important;
-  font-family: var(--font-interface-override), "Avenir Next";
+  font-family: var(--font-interface-override), 'Avenir Next';
 }
 
 /* ----- ***** Files ***** ----- */
@@ -257,47 +241,48 @@ body {
   --background-modifier-hover: var(--background-secondary);
   --nav-item-background-selected: transparent;
 }
-.nav-file-title,
-.nav-folder-title {
+.nav-file-title, .nav-folder-title {
   border-radius: 2px;
 }
-.nav-file-title.is-selected,
-.nav-folder-title.is-selected {
+.nav-file-title.is-selected, .nav-folder-title.is-selected {
   border: 1px solid hsla(var(--color-accent-hsl), 0.45);
 }
+
+
 
 /* ------------------------------------------------------------- */
 
 /* ----------------- ****** Tabs ****** --------------- */
 body {
-  --titlebar-background-focused: var(--background-secondary-alt);
-  --titlebar-background: var(--background-secondary-alt);
-  --tab-curve: 0;
-  --tab-radius: 3px;
-  --tab-radius-active: 3px;
-  --tab-background-active: var(--background-primary-alt);
-  --tab-divider-color: transparent;
-  --tab-outline-color: transparent;
+    --titlebar-background-focused: var(--background-secondary-alt);
+    --titlebar-background: var(--background-secondary-alt);
+    --tab-curve: 0;
+    --tab-radius: 3px;
+    --tab-radius-active: 3px;
+    --tab-background-active: var(--background-primary-alt);
+    --tab-divider-color: transparent;
+    --tab-outline-color: transparent;
 }
 
 /* ----- ***** Tab Appearance ***** ----- */
 .workspace-tab-header {
-  margin-bottom: 4px;
+margin-bottom: 4px;
 }
 .workspace-tab-header-container-inner {
   margin-top: 3px;
 }
 
+
 /* remove background */
 
 /* ---> make the tabs above the notes "disappear", while leaving the file explorer tabs <----- */
 .workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
-  margin: 0;
-  height: 5px;
+margin: 0;
+height: 5px;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) > * {
-  opacity: 0;
-}
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) >* {
+ opacity: 0;
+  }
 
 /* transitions */
 .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
@@ -306,7 +291,7 @@ body {
 .workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
   transition-delay: 0.15s;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover > * {
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover >*  {
   transition: 0.3s;
 }
 
@@ -315,42 +300,45 @@ body {
 /* --- *** Hide Tabs *** --- */
 .hide-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   display: none;
-}
+ }
 
 /* --- *** Show Tabs *** --- */
 .show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   height: var(--header-height);
-}
-.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) > * {
+ }
+ .show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) >* {
   opacity: 1;
-}
+ }
+
 
 /* --> attempt to make the file explorer tabs look like real TAB-tabs */
 
 /* remove spacing between the file explorer and the tabs */
 .mod-left-split .workspace-tab-header-container-inner {
-  padding-bottom: 0px;
-  margin-top: 3px;
+    padding-bottom: 0px;
+    margin-top: 3px;
 }
 .workspace-tab-header-container {
-  background-color: var(--background-secondary-alt) !important;
+background-color: var(--background-secondary-alt) !important;
 }
 /* make the background lighter, like a tab.
 But only when the file explorer is not active, because
 the colorful border interferes with the tab look. */
 .mod-left-split .workspace-tab-header.is-active {
-  background-color: var(--background-secondary) !important;
+	background-color: var(--background-secondary) !important;
   border-radius: 4px 4px 0 0;
 }
+
 
 .mod-left-split .workspace-tab-header {
   /* make these tabs wider */
   width: 45px;
 }
 
+
 /* remove bottom border for tabs */
 .workspace-tab-header-container {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /* ------------ ****** Titlebar ****** ---------- */
@@ -366,13 +354,13 @@ body {
 /* show the note icon in the view header. */
 /* This button can be used to drag the note into another pane. */
 body:not(.is-mobile) .view-header .view-header-icon {
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-}
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
 body:not(.is-mobile) .view-header {
-  height: var(--header-height) !important;
-  background-color: var(--background-primary);
+    height: var(--header-height) !important;
+    background-color: var(--background-primary);
   border-bottom: var(--border-width) solid var(--background-modifier-border);
 }
 .view-header-title {
@@ -380,6 +368,7 @@ body:not(.is-mobile) .view-header {
   font-weight: 600;
   padding-left: 0;
 }
+
 
 /* remove breadcrumbs */
 .view-header-breadcrumb,
@@ -389,8 +378,8 @@ body:not(.is-mobile) .view-header {
 
 /* hide navigation arrows */
 .hide-arrows .view-header-nav-buttons .clickable-icon[aria-label="Navigate back"],
-.hide-arrows view-header-nav-buttons .clickable-icon[aria-label="Navigate forward"] {
-  display: none !important;
+.hide-arrows view-header-nav-buttons .clickable-icon[aria-label="Navigate forward"]  {
+display: none !important;
 }
 
 /* ------------ ******* Note Content and Markdown ****** ------------ */
@@ -404,7 +393,7 @@ body:not(.is-mobile) .view-header {
 
 /* now active panes have a colorful border just like in the older version! */
 body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="markdown"]),
-body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="empty"]) {
+body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="empty"])  {
   border-color: hsla(var(--color-accent-hsl), 0.45) !important;
 }
 
@@ -425,11 +414,11 @@ blockquote {
 
 /* -- Old Codeblock Metadata Look -- */
 .frontmatter.language-yaml {
-  display: block !important; /* show metadata code block */
-}
-.frontmatter-container {
+  display:block !important; /* show metadata code block */
+ }
+ .frontmatter-container {
   display: none !important; /* hide the new frontmatter container */
-}
+ }
 
 /* common "hide frontmatter" classes built in, just in case someone has any of these snippets */
 .hide-m .frontmatter.language-yaml,
@@ -447,6 +436,7 @@ blockquote {
 body:not(.frontmatter-properties) .metadata-container {
   display: none !important;
 }
+
 
 /* ----- ***** Callouts ***** ----- */
 body {
@@ -481,24 +471,24 @@ body {
   background-color: rgba(var(--callout-color), 0.14);
 }
 
+
 /* ----- ***** Code and Code Blocks ***** ----- */
 body {
-  --code-background: var(--background-secondary);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-operator: var(--color-red);
-  --code-property: var(--color-dark-green);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-teal);
-  --code-tag: var(--color-orange-red);
-  --code-value: var(--color-purple);
+--code-background: var(--background-secondary);
+--code-normal: var(--text-normal);
+--code-comment: var(--text-faint);
+--code-function: var(--color-yellow);
+--code-important: var(--color-orange);
+--code-keyword: var(--color-pink);
+--code-operator: var(--color-red);
+--code-property: var(--color-dark-green);
+--code-punctuation: var(--text-muted);
+--code-string: var(--color-teal);
+--code-tag: var(--color-orange-red);
+--code-value: var(--color-purple);
 }
 
-code[class*="language"],
-pre[class*="language"] {
+code[class*="language"], pre[class*="language"] {
   text-shadow: 0 1px var(--background-primary); /* metallic "inset" look */
   color: var(--text-normal) !important;
 }
@@ -527,9 +517,9 @@ body {
 
 /* settings sidebar headers */
 .vertical-tab-header-group-title {
-  font-size: var(--font-ui-small);
-  text-transform: uppercase;
-  padding: 1em 0em 0.9em 1.5em;
+font-size: var(--font-ui-small);
+text-transform: uppercase;
+padding: 1em 0em 0.9em 1.5em;
 }
 
 /* change background color and  essentially remove padding */
@@ -540,7 +530,7 @@ body {
 
 /* increase padding */
 .vertical-tab-nav-item {
-  padding: 0.8em 0 0.8em 2em;
+  padding: 0.8em 0 0.8em 2em; 
   border-radius: 0;
   margin: 2px 0 0 2px;
 }
@@ -560,8 +550,7 @@ body {
 }
 
 /* ---- **** main settings section **** ---- */
-.horizontal-tab-content,
-.vertical-tab-content {
+.horizontal-tab-content, .vertical-tab-content {
   background-color: var(--background-secondary);
 }
 
@@ -581,6 +570,7 @@ select.dropdown {
 /* buttons and inputs */
 body {
   --button-radius: 3px;
+
 }
 button {
   padding: 0 1.3em;
@@ -595,8 +585,8 @@ button {
 /* --------- ****** Scrollbars ****** --------- */
 
 ::-webkit-scrollbar {
-  width: 10px !important;
-}
+    width:10px !important;
+  }
 
 /* @settings
 name: Origin

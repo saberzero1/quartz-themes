@@ -10,6 +10,11 @@
   --background-secondary-s: calc(var(--background-s) * 0.875);
   --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
   --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: #000;
   --background-primary-alt: var(--background-dark);
@@ -26,6 +31,11 @@
   --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --text-selection: var(--accent-on-selection);
+  --ss-dark-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
   --text-highlight-bg: var(--ss-dark-highlight-bg);
   --ss-dark-text-main: 250, 247, 245;
   --text-normal: rgb(var(--ss-dark-text-main));
@@ -69,6 +79,11 @@
   --background-modifier-form-field: var(--background-dark);
   --background-modifier-border: var(--accent-soft-dark);
   --background-modifier-border-hover: var(--accent-soft-dark);
+  --background-modifier-border-focus: hsl(
+    var(--background-h),
+    var(--background-s),
+    calc(var(--background-l) - 4%)
+  );
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
   --search-result-bg-hover: var(--background-modifier-form-field);

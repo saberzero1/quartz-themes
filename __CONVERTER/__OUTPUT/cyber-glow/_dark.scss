@@ -10,10 +10,31 @@
   --background-settings-2: rgba(78, 75, 75, 0.2);
   --background-settings-3: rgba(30, 30, 30, 0.3);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.35);
-  --accent-h: 170;
-  --accent-s: 69%;
-  --accent-l: 42%;
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --accent-h: 198;
+  --accent-s: 63%;
+  --accent-l: 57%;
+  --color-accent-faint: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) - 10%)
+  );
+  --color-accent-active: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 25%),
+    calc(var(--accent-l) - 30%),
+    0.65
+  );
+  --color-accent-active2: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 25%),
+    calc(var(--accent-l) - 30%),
+    0.25
+  );
+  --color-glow: hsl(
+    calc(var(--accent-h) + 1),
+    calc(var(--accent-s) - 36%),
+    calc(var(--accent-l) - 25%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
@@ -22,4 +43,18 @@
   --background-close-hover: #e6647170;
   --background-close-active: #f2394c8a;
   --background-close: #b4000066;
+  --folder-rose: 245, 224, 220;
+  --folder-lightpink: 242, 205, 205;
+  --folder-pink: 245, 194, 231;
+  --folder-mauve: 203, 166, 247;
+  --folder-red: 243, 139, 168;
+  --folder-maroon: 235, 160, 172;
+  --folder-peach: 250, 179, 135;
+  --folder-yellow: 249, 226, 175;
+  --folder-green: 166, 227, 161;
+  --folder-teal: 148, 226, 213;
+  --folder-sky: 137, 220, 235;
+  --folder-sapphire: 116, 199, 236;
+  --folder-blue: 135, 176, 249;
+  --folder-lavender: 180, 190, 254;
 }

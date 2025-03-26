@@ -795,7 +795,10 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-background-active: var(--color-muted-purple);
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-faint);
+  --tab-text-color-focused-active: var(--text-faint);
   --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--color-light-blue);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-container-background: var(--background-secondary);
@@ -1067,9 +1070,19 @@ html[saved-theme="dark"] {
   --color-base-35: #3f3f3f;
   --color-base-40: var(--color-light-blue);
   --color-base-50: #666666;
+  --color-base-70: var(--text-faint);
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-20);
   --interactive-normal: var(--color-base-30);
@@ -1177,9 +1190,19 @@ html[saved-theme="light"] {
   --color-base-35: #3f3f3f;
   --color-base-40: var(--color-light-blue);
   --color-base-50: #666666;
+  --color-base-70: var(--text-faint);
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-20);
   --interactive-normal: var(--color-base-30);

@@ -370,7 +370,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --interactive-hover: var(--embed-bg);
   --interactive-accent: var(--bttn);
   --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(accent-l);
   --background-modifier-hover: var(--hvr-active);
   --background-modifier-success: var(--success-bg);
   --background-modifier-error: var(--failure-bg);
@@ -394,6 +394,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-color-4: var(--rainbow-4);
   --list-color-5: var(--rainbow-5);
   --list-color-6: var(--rainbow-6);
+  --font-default: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
+    sans-serif;
   --font-monospace: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
   --font-text: var(--font-text-override), var(--font-default);
   --font-monospace-default: var(--font-monospace-default-override), var(--font-monospace);
@@ -465,6 +468,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-font-weight-active: 900;
   --tab-width: 200px;
   --tab-max-width: 320px;
+  --tab-min-width: min-content;
   --tab-outline-width: 2px;
   --tab-top-outline-width: 0;
   --tab-outline-color: var(--accent);
@@ -566,7 +570,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h4-color: var(--headers);
   --h5-color: var(--headers);
   --h6-color: var(--headers);
-  --header-text-align: left;
+  --header-text-align: start;
   --h1-text-align: var(--header-text-align);
   --h2-text-align: var(--header-text-align);
   --h3-text-align: var(--header-text-align);
@@ -731,7 +735,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --hr-text-offset: 12px;
   --blockquote-border-thickness: 7px;
   --blockquote-border-color: var(--bg);
-  --blockquote-style: normal;
+  --blockquote-font-style: var(--font-default);
+  --blockquote-color: var(--text-normal);
   --blockquote-padding: var(--size-4-3) var(--size-4-6);
   --blockquote-padding-lp: 7px 0;
   --blockquote-background-color: var(--embed-bg);
@@ -890,7 +895,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --button-border: var(--button-background-hover);
   --initiative-xp: sandybrown;
   --initiative-tracker-border: var(--lines);
-  --vault-icon-image: "";
   --folder-icon: "";
   --folder-font: var(--its);
   --file-icon: "";
@@ -926,6 +930,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --bold-color: rgb(var(--callout-color));
   --tbl-td-h: 0;
   --tbl-td-w: 5px;
+  --callout-border-color: var(--callout-background);
   --callout-icon: "";
   --callout-color: var(--color-accent);
   --callout-padding: 20px 30px;
@@ -1102,7 +1107,7 @@ html[saved-theme="dark"] {
   --interactive-hover: var(--embed-bg);
   --interactive-accent: var(--bttn);
   --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(accent-l);
   --background-modifier-hover: var(--hvr-active);
   --background-modifier-success: var(--success-bg);
   --background-modifier-error: var(--failure-bg);
@@ -1281,8 +1286,11 @@ html[saved-theme="dark"] {
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: var(--indentation-guide-width);
   --indentation-guide-color-active: var(--accent);
+  --indentation-guide-source-indent: calc(
+    var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5)
+  );
   --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
-  --indentation-guide-reading-indent: calc(var(--checkbox-size) / 3 * -1 - 2px);
+  --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
   --list-color-1: var(--indentation-guide-color);
   --list-color-2: var(--indentation-guide-color);
   --list-color-3: var(--indentation-guide-color);
@@ -1436,7 +1444,7 @@ html[saved-theme="light"] {
   --interactive-hover: var(--embed-bg);
   --interactive-accent: var(--bttn);
   --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(accent-l);
   --background-modifier-hover: var(--hvr-active);
   --background-modifier-success: var(--success-bg);
   --background-modifier-error: var(--failure-bg);
@@ -1615,8 +1623,11 @@ html[saved-theme="light"] {
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: var(--indentation-guide-width);
   --indentation-guide-color-active: var(--accent);
+  --indentation-guide-source-indent: calc(
+    var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5)
+  );
   --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
-  --indentation-guide-reading-indent: calc(var(--checkbox-size) / 3 * -1 - 2px);
+  --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
   --list-color-1: var(--indentation-guide-color);
   --list-color-2: var(--indentation-guide-color);
   --list-color-3: var(--indentation-guide-color);

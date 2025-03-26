@@ -415,7 +415,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --button-radius: var(--input-radius);
   --callout-border-width: 0px;
   --callout-border-opacity: 0.2;
-  --callout-padding: var(--size-4-2) var(--size-4-5) var(--size-4-2) var(--size-4-5);
   --callout-radius: var(--radius-m);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-color: inherit;
@@ -664,7 +663,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   --popover-width: 450px;
@@ -677,7 +675,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --prompt-max-width: 62vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --radius-s: var(--scale-radius-1);
   --radius-m: var(--scale-radius-3);
   --radius-l: var(--scale-radius-4);
@@ -1065,8 +1062,6 @@ html[saved-theme="dark"] {
   --alpha-500: 0.5;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-primary: var(--color-base-10);
   --background-primary-low: var(--color-base-05);
   --background-primary-alt: var(--color-base-30);
@@ -1270,8 +1265,6 @@ html[saved-theme="light"] {
   --alpha-500: 0.5;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --background-primary: var(--color-ash-200);
   --background-primary-low: var(--color-ash-100);
   --background-primary-alt: var(--color-ash-500);

@@ -34,6 +34,18 @@
   --interactive-hover: var(--color-base-35);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-highlight-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 30%)
+  );
+  --text-highlight-bg-active: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 50%)
+  );
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --tag-background: var(--tag-background-color);
   --tag-color: var(--tag-font-color-d);

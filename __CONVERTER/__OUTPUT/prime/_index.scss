@@ -484,6 +484,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-accent: var(--color-purple);
   --interactive-normal: var(--color-base-20);
   --interactive-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.95
+  ) !important;
   --text-accent-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
   --h1-color: var(--color-purple);
   --h2-color: var(--color-blue);
@@ -617,72 +623,144 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-purple) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-purple);
   --link-external-color: var(--color-purple);
   --accent-h: 57.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-yellow) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-yellow);
   --link-external-color: var(--color-yellow);
   --accent-h: 327.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-pink) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-pink);
   --link-external-color: var(--color-pink);
   --accent-h: 147.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-green) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-green);
   --link-external-color: var(--color-green);
   --accent-h: 26.74;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-orange) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-orange);
   --link-external-color: var(--color-orange);
   --accent-h: 177.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-blue) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-blue);
   --link-external-color: var(--color-blue);
   --accent-h: 237.8;
   --accent-s: 90%;
   --accent-l: 76%;
   --interactive-accent: var(--color-purple) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-purple);
   --link-external-color: var(--color-purple);
   --accent-h: 57.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-yellow) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-yellow);
   --link-external-color: var(--color-yellow);
   --accent-h: 327.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-pink) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.45
+  ) !important;
   --link-color: var(--color-pink);
   --link-external-color: var(--color-pink);
   --accent-h: 147.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-green) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.8
+  ) !important;
   --link-color: var(--color-green);
   --link-external-color: var(--color-green);
   --accent-h: 26.74;
   --accent-s: 90%;
   --accent-l: 50%;
   --interactive-accent: var(--color-orange) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.8
+  ) !important;
   --link-color: var(--color-orange);
   --link-external-color: var(--color-orange);
   --accent-h: 177.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-blue) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
   --link-color: var(--color-blue);
   --link-external-color: var(--color-blue);
   --h1-color: var(--h1-color-custom);
@@ -898,6 +976,13 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --code-tag: var(--color-tokyo-night-light-red);
   --code-value: var(--color-tokyo-night-light-purple);
   --color-green: #a0fa9c;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
 }
 
 body {

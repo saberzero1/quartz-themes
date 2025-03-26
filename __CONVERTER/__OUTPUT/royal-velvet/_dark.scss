@@ -72,7 +72,6 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
   --text-normal: var(--on-layer);
-  --text-muted: var(--on-layer-600);
   --text-accent: var(--pink);
   --text-accent-hover: var(--pinkSecondary);
   --text-faint: var(--on-layer-600);
@@ -110,6 +109,7 @@
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
   --code-normal: var(--purple-pink);
-  --code-size: 100%;
+  --code-size: 1em;
   --hr-color: var(--orange);
+  --checkbox-color-hover: var(--list-marker-color);
 }

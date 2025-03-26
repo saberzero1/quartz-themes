@@ -4,8 +4,6 @@
   --background-secondary-alt: #000000;
   --background-modifier-border: #333;
   --background-modifier-border-hover: rgb(94, 94, 94);
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 60%));
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -14,8 +12,6 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d), 0.8);
-  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d));
   --text-normal: rgb(197, 184, 161);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));

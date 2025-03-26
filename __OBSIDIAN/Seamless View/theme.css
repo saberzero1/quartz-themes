@@ -1,22 +1,22 @@
 @charset "UTF-8";
 body {
-  --callout-padding: 8.2px 12px 8px calc(1em + 2px);
+  --callout-padding: 8.2px 12px 8px var(--list-indent);
   --callout-todo: var(--color-orange-rgb);
   --callout-important: var(--color-yellow-rgb);
   --callout-question: var(--color-green-alt-rgb);
   --canvas-space-x: 20px;
   --canvas-space-y: 16px;
   --checkbox-vertical-align: -2px;
-  --checkbox-indent-editing: 0.25em;
-  --checkbox-indent: calc(-1em - 2px);
-  --checkbox-end-margin-editing: calc(1.6px - 0.25em);
-  --checkbox-end-margin: 2px;
+  --checkbox-indent: calc(var(--checkbox-size) * 0.5 - 1px);
+  --checkbox-indent-editing: calc(var(--checkbox-size) * 0.25 + 1px);
+  --checkbox-end-margin: calc(var(--checkbox-size) * 0.5);
+  --checkbox-end-margin-editing: calc(var(--checkbox-size) * -0.25 + 0.5px);
   --embed-padding: 0;
   --embed-border-start: none;
   --file-margins: 0 var(--size-4-8) var(--size-4-8);
   --header-height: 37px;
-  --indentation-guide-reading-indent: -0.65em;
-  --indentation-guide-editing-indent: calc(0.25em + 2.8px);
+  --indentation-guide-reading-indent: calc(-1 * var(--list-indent) / 2);
+  --indentation-guide-editing-indent: calc(var(--list-indent) / 2 - 1px);
   --inline-title-margin-bottom: 4px;
   --inline-title-size: var(--h2-size);
   --inline-title-weight: var(--h2-weight);
@@ -24,8 +24,6 @@ body {
   --list-spacing: 0;
   --list-indent: calc(1em + 2px);
   --list-indent-editing: 0;
-  --list-bullet-size: 0.3125em;
-  --list-bullet-end-padding: 1.2rem;
   --metadata-background: var(--background-primary-alt);
   --metadata-padding: 0;
   --p-spacing: 0;
@@ -40,11 +38,12 @@ body {
   --h1-line-height: normal;
   --h2-line-height: normal;
   --h3-line-height: normal;
-  --lc-bg-left: 17px;
+  --lc-bg-left: 18px;
   --lc-bg-left-reading: 19px;
   --lc-bg-top-reading: 1px;
   --lc-bg-right-reading: 1px;
   --lc-bg-bottom-reading: 1px;
+  --lc-bg-opacity-dark: 0.1;
 }
 
 .theme-light {
@@ -114,6 +113,7 @@ body {
   --code-value: var(--color-orange);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📜";
 }
 
 .theme-dark {
@@ -169,6 +169,7 @@ body {
   --code-value: var(--color-orange-alt);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📄";
 }
 
 /* live preview text wraps in the same way and occupies the same space than read mode.
@@ -178,10 +179,7 @@ The downside is that spaces at the end of the lines are lost from view */
 }
 
 /* keep text color when is highlighting in both modes */
-.is-flashing,
-.markdown-rendered mark,
-.cm-s-obsidian span.cm-formatting-highlight,
-.cm-s-obsidian span.cm-highlight {
+.is-flashing, .markdown-rendered mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
   color: inherit;
 }
 
@@ -191,8 +189,7 @@ The downside is that spaces at the end of the lines are lost from view */
 }
 
 /* strikethrough color with new variable in both modes */
-.cm-strikethrough,
-del {
+.cm-strikethrough, del {
   color: var(--strike-color);
 }
 
@@ -201,11 +198,9 @@ del {
 div:has(> p):has(+ div > :is(p)),
 div:has(> pre:not(.frontmatter)):has(+ div > :is(pre, blockquote, .callout)),
 div:has(> :is(ul, ol)):has(+ div > :is(p, blockquote, .callout)),
-div:has(> :is(blockquote, .callout)):has(+ div > :is(p, .callout):not(.admonition)),
+div:has(> :is(blockquote, .callout)):has(+ div > :is(p, blockquote, .callout):not(.admonition)),
 div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(+ div > :is(h1, h2, h3, h4, h5, h6)),
-div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(
-    + .mod-footer
-  ) {
+div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(+ .mod-footer) {
   margin-bottom: 1.5em;
 }
 
@@ -226,8 +221,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 }
 
 /* add border-bottom at the start and end of the note in both modes */
-.inline-title,
-.markdown-preview-view .mod-footer,
+.inline-title, .markdown-preview-view .mod-footer,
 .view-content > .markdown-source-view .cm-line:last-child {
   border-bottom: var(--hr-thickness) solid var(--hr-color);
 }
@@ -268,11 +262,10 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 }
 
 /* reduce other panels padding  */
-.backlink-pane,
-.tag-container,
-.workspace-leaf-content[data-type="outline"] .view-content,
-.workspace-leaf-content[data-type="bookmarks"] .view-content,
-.workspace-leaf-content[data-type="all-properties"] .view-content {
+.backlink-pane, .tag-container,
+.workspace-leaf-content[data-type=outline] .view-content,
+.workspace-leaf-content[data-type=bookmarks] .view-content,
+.workspace-leaf-content[data-type=all-properties] .view-content {
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-8);
 }
 
@@ -297,7 +290,7 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 }
 .metadata-properties-title::before {
   align-items: center;
-  content: "📜";
+  content: var(--metadata-icon);
 }
 
 /* align metadata collapse indicator */
@@ -306,14 +299,13 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 }
 
 /* add frontmatter background in source mode */
-div:has(> .frontmatter),
-div:has(> .cm-hmd-frontmatter),
+div:has(> .frontmatter), div:has(> .cm-hmd-frontmatter),
 .cm-line:has(> .is-collapsed):not(:has(> .cm-header, .cm-list-1)):first-child {
   background-color: var(--metadata-background);
 }
 
 /* change tag padding y inside properties */
-.metadata-property[data-property-key="tags"] {
+.metadata-property[data-property-key=tags] {
   --tag-padding-y: 0.25em;
 }
 
@@ -344,12 +336,6 @@ div:has(> .cm-hmd-frontmatter),
   scrollbar-gutter: stable;
 }
 
-/* read mode canvas metadata space for cards and notes */
-.canvas-node-content .markdown-preview-pusher + div:has(pre),
-.canvas-node-content div:has(.inline-title) + div:has(pre) {
-  padding-bottom: 24px;
-}
-
 /* match live preview and read mode padding in canvas cards */
 .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view,
 .markdown-source-view.mod-inside-iframe > .cm-editor > .cm-scroller {
@@ -377,25 +363,15 @@ div:has(> .cm-hmd-frontmatter),
 }
 
 /* read mode table padding and margin bottom inside canvas */
-.canvas-node-content.markdown-embed
-  > .markdown-embed-content
-  > .markdown-preview-view
-  .markdown-preview-sizer
-  > div:last-child
-  > table:last-child {
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child > table:last-child {
   margin-bottom: var(--size-4-4);
 }
-.canvas-node-content.markdown-embed
-  > .markdown-embed-content
-  > .markdown-preview-view
-  .markdown-preview-sizer
-  > div:last-child:has(> table) {
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child:has(> table) {
   padding-bottom: 1.5em;
 }
 
 /* hr margins in read to match the height in live preview mode */
-hr,
-.markdown-rendered hr {
+hr, .markdown-rendered hr {
   margin: calc((var(--font-text-size) * var(--line-height-normal) - 0.125em) / 2) 0;
 }
 
@@ -442,40 +418,38 @@ hr,
   font-size: var(--tag-size) !important;
 }
 
+/* match live preview number list with read mode */
+.cm-formatting-list-ol {
+  display: inline-block;
+  text-align: right;
+  width: calc(var(--size-4-8) + var(--list-indent));
+  margin-inline-start: calc(var(--size-4-8) * -1);
+}
+
 /* center bullet point in read mode */
 .markdown-rendered .list-bullet {
-  margin-inline-start: -0.625em;
+  margin-inline-start: calc(-0.5em - 1px);
 }
 
 /* center bullet point in live preview */
 .markdown-source-view .list-bullet {
-  padding-inline-start: calc(var(--list-indent) - 0.83em);
-  padding-inline-end: 0.15em;
+  margin-inline-start: calc(0.3em + 1px);
+  margin-inline-end: calc(0.025em + 1.02px);
 }
 
 /* center checkbox in read mode */
-.markdown-preview-view .task-list-item .task-list-item-checkbox {
+ul > li.task-list-item .task-list-item-checkbox {
   vertical-align: middle;
-  font-size: var(--font-text-size);
   top: var(--checkbox-vertical-align);
-  margin-inline-start: var(--checkbox-indent);
+  left: var(--checkbox-indent);
   margin-inline-end: var(--checkbox-end-margin);
 }
 
-/* manage live preview space between checkbox and text with a new variable */
+/* match live preview checkbox with read mode */
 .markdown-source-view.mod-cm6 .task-list-item-checkbox {
-  font-size: var(--font-text-size);
   top: var(--checkbox-vertical-align);
   margin-inline-start: var(--checkbox-indent-editing);
   margin-inline-end: var(--checkbox-end-margin-editing);
-}
-
-/* align live preview number list to match read move */
-.cm-formatting-list-ol {
-  display: inline-block;
-  margin-inline-start: calc(-1.5em - 9px);
-  text-align: right;
-  width: 3.2em;
 }
 
 /* align read mode list collapse indicator */
@@ -484,27 +458,21 @@ hr,
 }
 
 /* align live preview list collapse indicator */
-.markdown-source-view.mod-cm6.is-live-preview
-  .cm-line.HyperMD-list-line
-  .cm-fold-indicator
-  .collapse-indicator {
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line .cm-fold-indicator .collapse-indicator {
   inset-inline-end: 4px;
 }
-.markdown-source-view.mod-cm6.is-live-preview
-  .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line)
-  .cm-fold-indicator
-  .collapse-indicator {
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator {
   inset-inline-end: calc(4px - var(--list-bullet-end-padding));
 }
 
-/* live preview blockquote's padding to see the cursor */
+/* live preview blockquote's padding to see the cursor and match with --list-indent */
 .cm-s-obsidian span.cm-formatting-quote:first-child {
-  padding-inline-start: 2.4px;
+  padding-inline-start: calc(0.04em + 2.03px);
 }
 
 /* read mode blockquote margin and padding to match live preview */
 .markdown-preview-view blockquote {
-  padding-inline-start: calc(1em + 0.4px);
+  padding-inline-start: calc(var(--list-indent) - 1.6px);
   margin: 0;
 }
 
@@ -536,11 +504,9 @@ hr,
   width: var(--list-bullet-size);
   height: var(--list-bullet-size);
   border: var(--list-bullet-border);
-  transform: translate(-0.8em, 0.6em);
+  transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
   background-color: var(--list-marker-color);
-  transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s;
   will-change: transform;
 }
 .markdown-source-view .callout .task-list-item-checkbox {
@@ -595,21 +561,19 @@ hr,
 }
 
 /* css/scss syntax colors */
-pre.language-css,
-pre.language-scss {
+pre.language-css, pre.language-scss {
   --code-string: var(--color-orange-alt);
   --code-function: var(--color-cyan);
   --code-normal: var(--color-red-alt);
 }
 
 /* js/jsx syntax colors */
-pre.language-js,
-pre.language-jsx {
+pre.language-js, pre.language-jsx {
   --code-normal: var(--color-yellow);
 }
 
 /* move mathjax to left and remove extra space in both modes */
-.math-block mjx-container[jax="CHTML"][display="true"] {
+.math-block mjx-container[jax=CHTML][display=true] {
   display: inline-block;
   line-height: normal;
   overflow-x: initial;
@@ -676,8 +640,8 @@ pre.language-jsx {
 }
 
 /* center embed images in both modes, needs to be !important for external images in live preview */
-.markdown-source-view.mod-cm6 img[alt*="center"],
-.markdown-reading-view img[alt*="center"] {
+.markdown-source-view.mod-cm6 img[alt*=center],
+.markdown-reading-view img[alt*=center] {
   margin-right: auto !important;
   margin-left: auto !important;
   display: block;
@@ -690,12 +654,10 @@ pre.language-jsx {
 }
 
 /* change bullet points style */
-.block-language-dataview ul > li::marker,
-.block-language-dataviewjs ul > li::marker {
+.block-language-dataview ul > li::marker, .block-language-dataviewjs ul > li::marker {
   color: transparent;
 }
-.block-language-dataview ul > li:not(.task-list-item)::before,
-.block-language-dataviewjs ul > li:not(.task-list-item)::before {
+.block-language-dataview ul > li:not(.task-list-item)::before, .block-language-dataviewjs ul > li:not(.task-list-item)::before {
   position: absolute;
   content: "​";
   pointer-events: none;
@@ -704,11 +666,9 @@ pre.language-jsx {
   width: var(--list-bullet-size);
   height: var(--list-bullet-size);
   border: var(--list-bullet-border);
-  transform: translate(-0.8em, 0.6em);
+  transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
   background-color: var(--list-marker-color);
-  transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s;
   will-change: transform;
 }
 
@@ -729,23 +689,16 @@ pre.language-jsx {
 }
 
 /* remove rounded edges */
-.lc-list-bg::after,
-.lc-li-wrapper::after {
+.lc-list-bg::after, .lc-li-wrapper::after {
   border-radius: 0;
 }
 
 /* change font weight inside list callouts */
-div.lc-list-callout,
-span.lc-li-wrapper {
+div.lc-list-callout, span.lc-li-wrapper {
   color: rgb(var(--lc-callout-color));
   font-weight: var(--font-semibold);
 }
-div.lc-list-callout .cm-hashtag,
-div.lc-list-callout .tag,
-div.lc-list-callout .inline-field,
-span.lc-li-wrapper .cm-hashtag,
-span.lc-li-wrapper .tag,
-span.lc-li-wrapper .inline-field {
+div.lc-list-callout .cm-hashtag, div.lc-list-callout .tag, div.lc-list-callout .inline-field, span.lc-li-wrapper .cm-hashtag, span.lc-li-wrapper .tag, span.lc-li-wrapper .inline-field {
   font-weight: var(--font-normal);
 }
 

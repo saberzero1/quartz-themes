@@ -348,7 +348,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-small: 0.9em;
   --font-ui-small: 14px;
   --font-ui-smaller: 13px;
-  --blockquote-border-thickness: 2px;
+  --blockquote-border-thickness: 0;
   --blockquote-border-color: var(--color-purple);
   --h1-size: 2.5em;
   --h2-size: 2em;
@@ -378,7 +378,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --table-header-size: var(--font-normal);
   --table-header-weight: var(--font-medium);
   --embed-border-left: 0;
-  --embed-padding: var(--size-4-4) var(--size-4-8) var(--size-4-4) var(--size-4-12);
+  --embed-border-start: 0;
+  --embed-border-end: 0;
   --footnote-size: var(--font-small);
 }
 
@@ -525,8 +526,6 @@ html[saved-theme="dark"] {
   --accent-h: 80;
   --accent-s: 45%;
   --accent-l: 45%;
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-60);
   --text-faint: var(--color-base-35);
@@ -657,8 +656,6 @@ html[saved-theme="light"] {
   --accent-h: 80;
   --accent-s: 45%;
   --accent-l: 45%;
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-60);
   --text-faint: var(--color-base-35);

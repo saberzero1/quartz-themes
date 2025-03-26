@@ -1,4 +1,58 @@
 :root[saved-theme="dark"] {
+  --table-hdcol: rgb(60, 60, 60);
+  --table-bgcol: rgb(90, 90, 90);
+  --table-accent: rgba(255, 255, 255, 0.5);
+  --initial-col: #b60000;
+  --text-accent-special: #378dff;
+  --frame-color-a: #ff7029;
+  --frame-color-b: #ff7029;
+  --def-red: var(--light-red);
+  --def-green: var(--light-green);
+  --def-blue: var(--light-blue);
+  --def-gray: var(--light-gray);
+  --hl-mark-red: var(--dark-red);
+  --hl-mark-green: var(--dark-green);
+  --hl-mark-blue: var(--dark-blue);
+  --hl-mark-gray: var(--dark-gray);
+  --code-background: var(--background-primary);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--code-color);
+  --code-function: #7ccccf;
+  --code-important: orange;
+  --code-keyword: orange;
+  --code-operator: var(--color-red);
+  --code-property: #af8657;
+  --code-punctuation: var(--text-muted);
+  --code-string: #d8c07f;
+  --code-tag: var(--color-red);
+  --code-value: #d86f42;
+  --codebg-col: rgba(0, 0, 0, 0.5);
+  --intro-dune: linear-gradient(to right, black, black, #390058, #8b0000);
+  --logo-grad: linear-gradient(to bottom, #f2e79c 0%, #11438a 100%);
+  --prefs-grad: linear-gradient(
+    180deg,
+    var(--background-primary),
+    var(--background-secondary),
+    var(--background-secondary),
+    var(--background-primary)
+  );
+  --prefs-title: var(--h1-color);
+  --link-unresolved-color: gray;
+  --text-selection: rgba(255, 110, 47, 0.3);
+  --rev-fontcol: #515151;
+  --var-bg-col: var(--light-shadow-l);
+  --var-tone-sw: var(--light-tone);
+  --shadow-tone: rgba(255, 255, 255, 0.06);
+  --callout-bg-r: hsl(0deg 69.87% 53.14% / 50%);
+  --callout-bg-g: hsl(111deg 42% 45% / 50%);
+  --callout-bg-b: hsl(214deg 100% 61% / 50%);
+  --callout-bg-m: var(--dark-gray);
+  --callout-title-r: var(--light-red);
+  --callout-title-g: var(--light-green);
+  --callout-title-b: var(--light-blue);
+  --callout-title-m: var(--light-gray);
+  --stat-bar-hl: var(--light-shadow-l);
+  --canvas-dot-pattern: darkgray;
   --graph-fill-tag: #ede4b7;
   --graph-circle-fill-unresolved: gray;
   --graph-circle-fill: var(--def-red);

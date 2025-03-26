@@ -1,7 +1,7 @@
 :root[saved-theme="light"] {
   --background-primary: var(--accent-color-bg);
-  --background-secondary: var(--accent-color-bg);
-  --background-secondary-alt: var(--accent-color-bg);
+  --background-secondary: var(--accent-color-bg2);
+  --background-secondary-alt: var(--accent-color-bg2);
   --accent-color-hsl: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -24,12 +24,46 @@
   --accent-color-light03: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.03);
   --accent-color-light02: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.02);
   --accent-color-light01: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.01);
-  --accent-color-bg: hsl(var(--accent-h), var(--accent-s), 98%, 1);
-  --accent-color-bg2: hsl(var(--accent-h), var(--accent-s), 85%, 1);
-  --accent-color-bg2c: hsl(var(--accent-h), var(--accent-s), 85%, 1);
-  --accent-color-bg_d: hsl(var(--accent-h), calc(0.15 * var(--accent-s)), 10%, 1);
-  --accent-color-bg_dc: hsl(var(--accent-h), calc(0.1 * var(--accent-s)), 15%, 1);
-  --tab-max-width: 35%;
+  --accent-color-bright: hsla(
+    var(--accent-h),
+    calc(1 * var(--accent-s)),
+    calc(1 * var(--accent-l)),
+    0.1
+  );
+  --accent-color-bright2: hsl(
+    var(--accent-h),
+    calc(1 * var(--accent-s)),
+    calc(1 * var(--accent-l)),
+    0.01
+  );
+  --accent-color-alt: hsl(
+    var(--accent-h),
+    calc(1 * var(--accent-s)),
+    calc(1.5 * var(--accent-l)),
+    1
+  );
+  --accent-color-alt2: hsl(
+    var(--accent-h),
+    calc(1 * var(--accent-s)),
+    calc(1.7 * var(--accent-l)),
+    1
+  );
+  --accent-color-bg: white;
+  --accent-color-bg2: white;
+  --accent-color-bg2c: white;
+  --accent-color-bg_d: #2e2e2e;
+  --accent-color-bg_dc: #252525;
+  --accent-color-inverse: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(calc(var(--accent-l) - 49%) * -100)
+  );
+  --accent-color-inverse2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(calc(var(--accent-l) - 67%) * -100)
+  );
+  --tab-max-width: 40%;
   --popover-width: 100%;
   --popover-height: 100%;
 }

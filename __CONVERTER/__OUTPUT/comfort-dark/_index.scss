@@ -340,6 +340,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --font-text-theme: "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter,
+    Ubuntu, sans-serif;
+  --font-monospace-theme: "Iosevka", "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
+    "Roboto Mono", monospace;
+  --font-interface-theme: "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter,
+    Ubuntu, sans-serif;
   --h1-size: 2rem;
   --h2-size: 1.8rem;
   --h3-size: 1.6rem;

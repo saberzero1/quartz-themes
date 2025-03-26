@@ -4,13 +4,12 @@
   --background-secondary: #fafafa;
   --table-background: #ffffff;
   --table-border-color: #222222;
-  --italic-color: #8a5cf5;
   --bold-color: #8a5cf5;
-  --link-color: #2c54f2;
-  --link-unresolved-color: #2c54f2;
-  --link-color-hover: #5c7bf5;
-  --link-external-color: #2c54f2;
-  --link-external-color-hover: #5c7bf5;
+  --link-color: #2C54F2;
+  --link-unresolved-color: #2C54F2;
+  --link-color-hover: #5C7BF5;
+  --link-external-color: #2C54F2;
+  --link-external-color-hover: #5C7BF5;
   --h4-color: #8a5cf5;
 }
 
@@ -20,7 +19,6 @@
   --background-secondary: #262626;
   --table-background: #1e1e1e;
   --table-border-color: #dadada;
-  --italic-color: #a68af9;
   --bold-color: #a68af9;
   --link-color: #5980f7;
   --link-unresolved-color: #5980f7;
@@ -31,37 +29,35 @@
 }
 
 /* Line under h2 */
-.theme-dark .HyperMD-header-2::after,
-h2 {
-  display: block;
-  content: "";
-  padding-bottom: 15px;
-  border-bottom: 2px solid #363636;
+.theme-dark .HyperMD-header-2::after, h2 {
+    display: block;
+    content: "";
+    padding-bottom: 15px;  
+    border-bottom: 2px solid #363636;
 }
 
 /* Line under h2 */
 .theme-dark h2 {
-  display: block;
-  content: "";
-  padding-bottom: 15px;
-  border-bottom: 2px solid #363636;
+    display: block;
+    content: "";
+    padding-bottom: 15px;  
+    border-bottom: 2px solid #363636;
 }
 
 /* Line under h2 */
-.theme-light .HyperMD-header-2::after,
-h2 {
-  display: block;
-  content: "";
-  padding-bottom: 15px;
-  border-bottom: 2px solid #e0e0e0;
+.theme-light .HyperMD-header-2::after, h2 {
+    display: block;
+    content: "";
+    padding-bottom: 15px;  
+    border-bottom: 2px solid #e0e0e0;
 }
 
 /* Line under h2 */
 .theme-light h2 {
-  display: block;
-  content: "";
-  padding-bottom: 15px;
-  border-bottom: 2px solid #e0e0e0;
+    display: block;
+    content: "";
+    padding-bottom: 15px;  
+    border-bottom: 2px solid #e0e0e0;
 }
 
 /* Centered tables */
@@ -74,8 +70,8 @@ table {
 }
 
 /* Centered embeds and images */
-:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered)
-  :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {
-  margin-inline: auto !important;
-  display: block;
+:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered) 
+:is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {
+    margin-inline: auto !important;
+    display: block;
 }

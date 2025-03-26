@@ -420,7 +420,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-modifier-border-hover: var(--dark-castle-accent);
   --background-modifier-border-focus: var(--dark-castle-palette-light-gray);
   --background-modifier-message: var(--dark-castle-palette-black-03-mix);
-  --interactive-normal: color-mix(in hsl shorter hue, var(--background-primary) 75%, transparent);
   --interactive-hover: var(--background-primary);
   --interactive-accent: var(--dark-castle-accent);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);

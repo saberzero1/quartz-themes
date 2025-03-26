@@ -350,7 +350,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-medium: 21px;
   --line-height-preview: 1.7em;
   --line-height-header-preview: 1em;
+  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next,
+    Times New Roman;
   --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
+  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next,
+    Times New Roman;
   --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
 }
 
@@ -528,7 +532,7 @@ html[saved-theme="dark"] {
   --text-title-h6: var(--text-title-h1);
   --ul-line-color: #777;
   --link-text: var(--text-accent);
-  --link-bg: var(--background-primary);
+  --link-bg: transparent;
   --link-text-hover: var(--background-primary);
   --link-bg-hover: var(--text-accent);
   --hashtag-color: var(--background-primary);
@@ -693,7 +697,7 @@ html[saved-theme="light"] {
   --text-title-h6: var(--text-title-h1);
   --ul-line-color: #777;
   --link-text: var(--text-accent);
-  --link-bg: var(--background-primary);
+  --link-bg: transparent;
   --link-text-hover: var(--background-primary);
   --link-bg-hover: var(--text-accent);
   --hashtag-color: var(--background-primary);

@@ -1,31 +1,3 @@
 :root[saved-theme="dark"] {
-  --background-primary: #011627;
-  --background-primary-alt: rgba(3, 36, 62, 0.5);
-  --background-secondary: #021d33;
-  --background-secondary-alt: rgba(5, 40, 70, 0.5);
-  --background-tertiary: #082632;
-  --background-modifier-border: #03243e;
-  --background-modifier-border-hover: #c792ea;
-  --background-modifier-border-focus: #ecc48d;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --text-normal: #abb2bf;
-  --text-muted: #c792ea;
-  --text-faint: rgba(199, 146, 234, 0.593);
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-d), 0);
-  --background-translucent: hsla(var(--base-h), var(--base-s), var(--base-d), 0.85);
-  --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) - 10%));
-  --text-accent: #ecc48d;
-  --text-accent-hover: #c792ea;
-  --text-code: #c792ea;
-  --text-on-accent: white;
-  --icon-hex: FFF;
-  --interactive-accent: #c792ea;
-  --interactive-accent-hover: rgba(141, 67, 190, 1);
-  --quote-opening-modifier: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
-  --interactive-accent-rgb: 66, 66, 66;
-  --text-selection: rgba(197, 146, 234, 0.651);
-  --text-highlight-bg: rgba(3, 36, 62, 0.5);
-  --text-highlight-bg-active: rgba(3, 36, 62, 0.1);
-  --background-modifier-cover: hsla(207, 95%, 8%, 0.678);
+  //DARK
 }

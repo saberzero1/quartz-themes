@@ -344,6 +344,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --dark1: #290202;
   --dark2: #3d0404;
   --dark3: #5c1818;
+  --dark-linear-gradient: linear-gradient(
+    45deg,
+    rgba(36, 10, 0, 1) 0%,
+    rgba(121, 9, 31, 1) 35%,
+    rgba(3, 3, 3, 1) 100%
+  );
   --light0: #ff8a8a;
   --light1: #fce6e4;
   --light2: #fdf8ec;
@@ -364,6 +370,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --input-disabled-border-color: transparent;
   --input-hover-border-color: black;
   --input-hover-border-color: red;
+
+  --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji;
+  --font-monospace-theme: "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+    SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
 body {
@@ -523,12 +534,22 @@ html[saved-theme="dark"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.5);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --background-primary: #282a36;
-  --background-primary-alt: #44475a;
-  --background-secondary: #1a1e24;
-  --background-secondary-alt: #282a36;
+  --background-primary: var(--dark-linear-gradient);
+  --background-primary-alt: #6e021a81;
+  --background-secondary: #560000;
+  --background-secondary-alt: #560000b7;
   --background-red: #6c0808;
   --text-normal: #f8f8f2;
   --text-on-accent: #282a36;
@@ -549,7 +570,7 @@ html[saved-theme="dark"] {
   --text-tag: #50fa7b;
   --text-a: #ff79c6;
   --text-a-hover: #ff79c0;
-  --text-mark: #f1fa8ce1;
+  --text-mark: #a1ad1dcf;
   --interactive-accent: #50fa7b;
   --blockquote-border: #b294bb;
   --interactive-accent-rgb: #f1fa8c;
@@ -677,12 +698,22 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.5);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --background-primary: #282a36;
-  --background-primary-alt: #44475a;
-  --background-secondary: #1a1e24;
-  --background-secondary-alt: #282a36;
+  --background-primary: var(--dark-linear-gradient);
+  --background-primary-alt: #6e021a81;
+  --background-secondary: #560000;
+  --background-secondary-alt: #560000b7;
   --background-red: #6c0808;
   --text-normal: #f8f8f2;
   --text-on-accent: #282a36;
@@ -703,7 +734,7 @@ html[saved-theme="light"] {
   --text-tag: #50fa7b;
   --text-a: #ff79c6;
   --text-a-hover: #ff79c0;
-  --text-mark: #f1fa8ce1;
+  --text-mark: #a1ad1dcf;
   --interactive-accent: #50fa7b;
   --blockquote-border: #b294bb;
   --interactive-accent-rgb: #f1fa8c;

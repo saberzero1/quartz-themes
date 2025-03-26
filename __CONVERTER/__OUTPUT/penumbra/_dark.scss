@@ -43,6 +43,12 @@
   --purple: #ac78bd;
   --blue: #6e8dd5;
   --yellow: #92963a;
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 35%),
+    var(--accent-l),
+    0.06
+  );
   --divider-color-hover: #636363;
   --ribbon-background: var(--background-primary);
   --drag-ghost-background: var(--background-secondary-alt);

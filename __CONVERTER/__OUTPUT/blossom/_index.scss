@@ -339,8 +339,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
-
-  --font-monospace: "Source Code Pro", monospace;
 }
 
 body {
@@ -458,34 +456,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: #10111b;
-  --background-primary-alt: #10111b;
-  --background-secondary: #090a0f;
-  --background-secondary-alt: #090a0f;
-  --text-normal: #f9f7f2;
-  --text-faint: #eeeeee;
-  --text-title-h1: #9200ff;
-  --text-title-h2: #9200ff;
-  --text-title-h3: #9200ff;
-  --text-title-h4: #9200ff;
-  --text-title-h5: #9200ff;
-  --text-title-h6: #9200ff;
-  --text-highlight-bg: #640211;
-  --text-link: #00ff7d;
-  --text-a-hover: #00ff7d;
-  --text-accent-hover: #26b3d2;
-  --inline-code: #00ff7d;
-  --code-block: #00ff7d;
-  --text-a: #ff058d;
-  --interactive-accent: #ff058d;
-  --text-accent: #ff058d;
-  --text-on-accent: #ffffff;
-  --interactive-accent-rgb: #ff058d;
-  --vim-cursor: #ff058d;
-  --interactive-before: #ea748f;
-  --background-modifier-border: #ff058d;
-  --text-selection: #b80034;
-
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
   --gray: var(--checkbox-border-color);
@@ -553,31 +523,6 @@ html[saved-theme="light"] {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: #ededed;
-  --background-secondary: #c4c4c4;
-  --background-secondary-alt: #707070;
-  --text-normal: #1a2023;
-  --text-faint: #dedede;
-  --text-title-h1: #26b3d2;
-  --text-title-h2: #26b3d2;
-  --text-title-h3: #26b3d2;
-  --text-title-h4: #26b3d2;
-  --text-title-h5: #26b3d2;
-  --text-link: #26b3d2;
-  --text-a-hover: #26b3d2;
-  --text-accent-hover: #26b3d2;
-  --inline-code: #f46e00;
-  --pre-code: #bebebe;
-  --interactive-before: #a89984;
-  --background-modifier-border: #26b3d2;
-  --text-a: #961327;
-  --interactive-accent: #ff058d;
-  --text-accent: #961327;
-  --interactive-accent-rgb: #961327;
-  --vim-cursor: #961327;
-  --text-selection: #edc180;
-  --text-white: #ffffff;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

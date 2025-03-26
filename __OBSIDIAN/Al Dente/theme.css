@@ -30,11 +30,13 @@
   --color-accent: #e9573f;
   --color-accent-faded: #fc6e51;
   --shadow: 1px 1px 2px #88888888;
-  --font-family-editor: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-family-editor: 'nunito sans', gotham, metropolis, prologue, manrope, inter, poppins,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-monospace: "courier prime code" !important;
-  --font-title: "moranga", "matchbook regular", bitter, prompt, var(--font-family-editor);
+  --font-title: "moranga", "matchbook regular", bitter, prompt,
+    var(--font-family-editor);
 }
 
 .theme-light {
@@ -116,7 +118,9 @@ html {
 body {
   font-family: var(--font-family-editor);
   font-weight: 400;
-  background-image: radial-gradient(circle at 12.17% 41.13%, #f7f6f0, transparent 100%),
+  background-image: radial-gradient(circle at 12.17% 41.13%,
+      #f7f6f0,
+      transparent 100%),
     radial-gradient(circle at 88.72% 61.69%, #ebe6de, transparent 100%),
     radial-gradient(circle at 50% 50%, #e1e0da, #e9e8e6 100%);
   background-attachment: fixed;
@@ -278,7 +282,7 @@ button {
 }
 
 /* style the nav folder title */
-.mod-root > .nav-folder-title {
+.mod-root>.nav-folder-title {
   padding: 10px 0;
 }
 
@@ -329,8 +333,8 @@ button {
 }
 
 /* Just above the folder tree, the name of the vault */
-.nav-folder.mod-root > .nav-file-title,
-.nav-folder.mod-root > .nav-folder-title {
+.nav-folder.mod-root>.nav-file-title,
+.nav-folder.mod-root>.nav-folder-title {
   color: var(--text-nav);
 }
 
@@ -401,24 +405,24 @@ button {
 }
 
 /* Background and text color of selected item in left nav tree */
-.nav-file.is-active > .nav-file-title,
-.nav-file.is-active > .nav-folder-title,
-.nav-file.is-active > .nav-folder-collapse-indicator,
-.nav-folder.is-active > .nav-file-title,
-.nav-folder.is-active > .nav-folder-title,
-.nav-folder.is-active > .nav-folder-collapse-indicator {
+.nav-file.is-active>.nav-file-title,
+.nav-file.is-active>.nav-folder-title,
+.nav-file.is-active>.nav-folder-collapse-indicator,
+.nav-folder.is-active>.nav-file-title,
+.nav-folder.is-active>.nav-folder-title,
+.nav-folder.is-active>.nav-folder-collapse-indicator {
   background-color: var(--color-accent-faded);
   color: var(--color-dark);
   border-radius: 4px;
 }
 
 /* Background and text color of selected item in left nav tree - when hovering */
-.nav-file.is-active > .nav-file-title:hover,
-.nav-file.is-active > .nav-folder-title:hover,
-.nav-file.is-active > .nav-folder-collapse-indicator:hover,
-.nav-folder.is-active > .nav-file-title:hover,
-.nav-folder.is-active > .nav-folder-title:hover,
-.nav-folder.is-active > .nav-folder-collapse-indicator:hover {
+.nav-file.is-active>.nav-file-title:hover,
+.nav-file.is-active>.nav-folder-title:hover,
+.nav-file.is-active>.nav-folder-collapse-indicator:hover,
+.nav-folder.is-active>.nav-file-title:hover,
+.nav-folder.is-active>.nav-folder-title:hover,
+.nav-folder.is-active>.nav-folder-collapse-indicator:hover {
   background-color: var(--color-accent);
   color: var(--color-light);
 }
@@ -728,10 +732,7 @@ div.markdown-preview-view {
 }
 
 .cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian
-  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian pre.HyperMD-codeblock {
   background-color: var(--code-block-background);
   color: var(--color-red);
@@ -886,7 +887,7 @@ input[type="text"] {
 
 /* workspace leafs and splits */
 .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
-.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical>.workspace-split,
 .workspace-leaf {
   padding-right: 0 !important;
 }
@@ -930,17 +931,13 @@ input[type="text"] {
 
 /* workspace headers */
 .workspace-tab-header-container,
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type:last-of-type.mod-active
-  .view-header-title-container:after {
+.workspace-split.mod-root>.workspace-leaf:first-of-type:last-of-type .view-header,
+.workspace-split.mod-root>.workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
   border-bottom: 1px solid var(--color-off);
   height: 2.25em;
 }
 
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type:last-of-type.mod-active
-  .view-header-title-container:after {
+.workspace-split.mod-root>.workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
   height: calc(2.25em - 2px);
   border-color: var(--color-off);
 }
@@ -988,9 +985,7 @@ input[type="text"] {
 .markdown-preview-view a {
   color: var(--color-accent) !important;
   background: transparent !important;
-  transition:
-    background 0.3s,
-    color 0.3s;
+  transition: background 0.3s, color 0.3s;
   padding: 0.2rem;
   border-radius: 0.3rem;
 }
@@ -1019,9 +1014,7 @@ input[type="text"] {
   padding-top: 0.1rem;
   display: inline-block;
   text-decoration: none !important;
-  transition:
-    color 0.4s,
-    background 0.4s;
+  transition: color 0.4s, background 0.4s;
   height: 1.6rem;
 }
 
@@ -1059,11 +1052,7 @@ a.tag {
   display: inline-block;
   text-decoration: none !important;
   line-height: normal;
-  transition:
-    color 0.3s,
-    background 0.3s,
-    box-shadow 0.3s,
-    transform 0.3s;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 a.tag:hover {
@@ -1114,7 +1103,7 @@ a.tag:hover {
   box-shadow: var(--shadow);
 }
 
-blockquote p > br {
+blockquote p>br {
   content: " " !important;
   display: block !important;
   margin-bottom: 1rem !important;
@@ -1173,8 +1162,8 @@ input[type="checkbox"]:checked {
 }
 
 /* bolder folder title on left sidebar */
-.nav-folder.mod-root > .nav-file-title,
-.nav-folder.mod-root > .nav-folder-title {
+.nav-folder.mod-root>.nav-file-title,
+.nav-folder.mod-root>.nav-folder-title {
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -1258,11 +1247,11 @@ input[type="checkbox"]:checked {
 
 /* turn --- to full line in editor */
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
   color: transparent;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr:after {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
   content: "";
   position: absolute;
   height: 1px;
@@ -1296,21 +1285,15 @@ span.cm-formatting-list-ul:before {
 }
 
 /* andy mode sliding panels tweaks and side panel shadows */
-.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
-  box-shadow:
-    0px 0px 1px rgba(0, 0, 0, 0.2),
-    0px 0px 2px rgba(0, 0, 0, 0.2),
-    0px 0px 4px rgba(0, 0, 0, 0.2),
-    0px 0px 8px rgba(0, 0, 0, 0.2),
+.plugin-sliding-panes-stacking .workspace>.mod-root>.workspace-leaf {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.2),
+    0px 0px 4px rgba(0, 0, 0, 0.2), 0px 0px 8px rgba(0, 0, 0, 0.2),
     0px 0px 16px rgba(0, 0, 0, 0.2) !important;
 }
 
 .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split {
-  box-shadow:
-    1px 0px 1px rgba(0, 0, 0, 0.05),
-    2px 0px 2px rgba(0, 0, 0, 0.05),
-    4px 0px 4px rgba(0, 0, 0, 0.05),
-    8px 0px 8px rgba(0, 0, 0, 0.05),
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.05), 2px 0px 2px rgba(0, 0, 0, 0.05),
+    4px 0px 4px rgba(0, 0, 0, 0.05), 8px 0px 8px rgba(0, 0, 0, 0.05),
     16px 0px 16px rgba(0, 0, 0, 0.05) !important;
   z-index: 50;
   border-right: 0.5px solid #888;
@@ -1321,22 +1304,14 @@ span.cm-formatting-list-ul:before {
 }
 
 .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split {
-  box-shadow:
-    -1px 0px 1px rgba(0, 0, 0, 0.05),
-    -2px 0px 2px rgba(0, 0, 0, 0.05),
-    -4px 0px 4px rgba(0, 0, 0, 0.05),
-    -8px 0px 8px rgba(0, 0, 0, 0.05),
+  box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.05), -2px 0px 2px rgba(0, 0, 0, 0.05),
+    -4px 0px 4px rgba(0, 0, 0, 0.05), -8px 0px 8px rgba(0, 0, 0, 0.05),
     -16px 0px 16px rgba(0, 0, 0, 0.05) !important;
   z-index: 50;
   border-left: 0.5px solid #888;
 }
 
-.plugin-sliding-panes-rotate-header
-  .workspace
-  > .mod-root
-  > .workspace-leaf
-  > .workspace-leaf-content
-  > .view-header {
+.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.workspace-leaf-content>.view-header {
   border-left: 0px solid transparent;
   border-right: 1px solid var(--color-front);
   border-left: 1px solid var(--color-front);
@@ -1347,8 +1322,7 @@ span.cm-formatting-list-ul:before {
 
 body.plugin-sliding-panes .view-header-title,
 .workspace-leaf.mod-active .view-header-title,
-.workspace-leaf.mod-active .view-header-icon {
-}
+.workspace-leaf.mod-active .view-header-icon {}
 
 /* iframe center and responsive */
 .iframeDiv {

@@ -1,6 +1,12 @@
 :root[saved-theme="dark"] {
-  --text-selection: hsl(var(--accent-h), var(--accent-s), 20%);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 20%);
+  --OT-text-selection-color: var(--text-normal);
   --color-red-rgb: 199, 56, 60;
   --color-red: #c7383c;
   --background-modifier-form-field: var(--color-base-00);
+  --floating-toc-font-color: var(--text-normal);
+  --floating-toc-hover-color: var(--OT-color-on-accent-1);
+  --floating-toc-highlight-color: var(--color-accent-2);
+  --floating-toc-highlight-color-rgb: 255, 128, 0;
+  --floating-toc-line-color: var(--OT-color-on-accent-2);
 }

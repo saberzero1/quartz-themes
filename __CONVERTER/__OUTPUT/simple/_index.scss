@@ -359,15 +359,15 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-ui-small: 12px;
   --font-ui-medium: 13px;
   --font-ui-large: 17px;
-  --size-h1: 1.75rem;
-  --size-h2: 1.45rem;
+  --size-h1: 1.45rem;
+  --size-h2: 1.3rem;
   --size-h3: 1.2rem;
   --size-h4: 1rem;
-  --size-h5: 0.9rem;
-  --size-h6: 0.8rem;
-  --font-paragraph: 0.95rem;
+  --size-h5: 0.95rem;
+  --size-h6: var(--font-paragraph);
+  --font-paragraph: 0.87rem;
   --frontmatter-font-size: 0.65rem;
-  --metadata-label-font-size: 0.8rem;
+  --metadata-label-font-size: 0.75rem;
   --metadata-input-font-size: var(--metadata-label-font-size);
   --list-spacing: 5px;
   --tab-radius-active: var(--default-border-radius);
@@ -380,6 +380,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-icon-color: #bababa;
   --nav-item: #bababa;
   --background-primary: #fefcf1;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
 }
 
 body {

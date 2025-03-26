@@ -471,10 +471,21 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --accent-h: 240;
+  --accent-s: 100%;
+  --accent-l: 24%;
+  --interactive-normal: var(--accent-1);
+  --interactive-hover: var(--accent-1);
+  --interactive-accent: var(--accent-6);
+  --interactive-accent-hover: var(--background-primary);
   --background-primary: #bdbebd;
   --background-secondary: #bdbebd;
   --nav-item-background-active: #00007b;
   --nav-item-color-active: var(--accent-1);
+  --scrollbar-track: var(--color-base-25);
+  --scrollbar-thumb: var(--color-base-20);
+  --border-highlight: var(--accent-1);
+  --border-shadow: var(--color-base-55);
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -509,6 +520,16 @@ html[saved-theme="dark"] {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -529,16 +550,7 @@ html[saved-theme="dark"] {
   --italic-color: #343b58;
   --text-highlight-bg: #485e3066;
   --text-faint: #4f5057;
-  --accent-h: 240;
-  --accent-s: 100%;
-  --accent-l: 24%;
-  --interactive-normal: var(--accent-1);
-  --interactive-hover: var(--accent-1);
-  --interactive-accent: var(--accent-6);
-  --interactive-accent-hover: var(--background-primary);
   --background-editor-primary: #ffffff;
-  --border-highlight: var(--accent-1);
-  --border-shadow: var(--color-base-55);
   --nav-files-background: var(--background-editor-primary);
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
   --background-modifier-border: var(--color-base-60);
@@ -625,10 +637,21 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
+  --accent-h: 240;
+  --accent-s: 100%;
+  --accent-l: 24%;
+  --interactive-normal: var(--accent-1);
+  --interactive-hover: var(--accent-1);
+  --interactive-accent: var(--accent-6);
+  --interactive-accent-hover: var(--background-primary);
   --background-primary: #bdbebd;
   --background-secondary: #bdbebd;
   --nav-item-background-active: #00007b;
   --nav-item-color-active: var(--accent-1);
+  --scrollbar-track: var(--color-base-25);
+  --scrollbar-thumb: var(--color-base-20);
+  --border-highlight: var(--accent-1);
+  --border-shadow: var(--color-base-55);
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -663,6 +686,16 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -683,16 +716,7 @@ html[saved-theme="light"] {
   --italic-color: #343b58;
   --text-highlight-bg: #485e3066;
   --text-faint: #4f5057;
-  --accent-h: 240;
-  --accent-s: 100%;
-  --accent-l: 24%;
-  --interactive-normal: var(--accent-1);
-  --interactive-hover: var(--accent-1);
-  --interactive-accent: var(--accent-6);
-  --interactive-accent-hover: var(--background-primary);
   --background-editor-primary: #ffffff;
-  --border-highlight: var(--accent-1);
-  --border-shadow: var(--color-base-55);
   --nav-files-background: var(--background-editor-primary);
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
   --background-modifier-border: var(--color-base-60);

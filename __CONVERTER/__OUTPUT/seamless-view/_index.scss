@@ -340,23 +340,23 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --callout-padding: 8.2px 12px 8px calc(1em + 2px);
+  --callout-padding: 8.2px 12px 8px var(--list-indent);
   --callout-todo: var(--color-orange-rgb);
   --callout-important: var(--color-yellow-rgb);
   --callout-question: var(--color-green-alt-rgb);
   --canvas-space-x: 20px;
   --canvas-space-y: 16px;
   --checkbox-vertical-align: -2px;
-  --checkbox-indent-editing: 0.25em;
-  --checkbox-indent: calc(-1em - 2px);
-  --checkbox-end-margin-editing: calc(1.6px - 0.25em);
-  --checkbox-end-margin: 2px;
+  --checkbox-indent: calc(var(--checkbox-size) * 0.5 - 1px);
+  --checkbox-indent-editing: calc(var(--checkbox-size) * 0.25 + 1px);
+  --checkbox-end-margin: calc(var(--checkbox-size) * 0.5);
+  --checkbox-end-margin-editing: calc(var(--checkbox-size) * -0.25 + 0.5px);
   --embed-padding: 0;
   --embed-border-start: none;
   --file-margins: 0 var(--size-4-8) var(--size-4-8);
   --header-height: 37px;
-  --indentation-guide-reading-indent: -0.65em;
-  --indentation-guide-editing-indent: calc(0.25em + 2.8px);
+  --indentation-guide-reading-indent: calc(-1 * var(--list-indent) / 2);
+  --indentation-guide-editing-indent: calc(var(--list-indent) / 2 - 1px);
   --inline-title-margin-bottom: 4px;
   --inline-title-size: var(--h2-size);
   --inline-title-weight: var(--h2-weight);
@@ -364,8 +364,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-spacing: 0;
   --list-indent: calc(1em + 2px);
   --list-indent-editing: 0;
-  --list-bullet-size: 0.3125em;
-  --list-bullet-end-padding: 1.2rem;
   --metadata-background: var(--background-primary-alt);
   --metadata-padding: 0;
   --p-spacing: 0;
@@ -380,11 +378,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h1-line-height: normal;
   --h2-line-height: normal;
   --h3-line-height: normal;
-  --lc-bg-left: 17px;
+  --lc-bg-left: 18px;
   --lc-bg-left-reading: 19px;
   --lc-bg-top-reading: 1px;
   --lc-bg-right-reading: 1px;
   --lc-bg-bottom-reading: 1px;
+  --lc-bg-opacity-dark: 0.1;
   --tab-container-background: var(--background-secondary);
 }
 
@@ -555,6 +554,7 @@ html[saved-theme="dark"] {
   --code-value: var(--color-orange-alt);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📄";
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -690,6 +690,7 @@ html[saved-theme="light"] {
   --code-value: var(--color-orange);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📜";
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

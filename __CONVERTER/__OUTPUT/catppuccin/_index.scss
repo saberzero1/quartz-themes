@@ -360,7 +360,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --button-radius: var(--input-radius);
   --callout-border-width: 0.25px;
   --callout-border-opacity: 0.2;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -391,7 +390,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --canvas-color-6: var(--color-purple-rgb);
   --canvas-dot-pattern: var(--color-base-30);
   --checkbox-radius: var(--radius-s);
-  --checkbox-size: 15px;
+  --checkbox-size: var(--font-text-size);
   --checkbox-marker-color: var(--background-primary);
   --checkbox-color: var(--interactive-accent);
   --checkbox-color-hover: var(--interactive-accent-hover);
@@ -461,7 +460,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node: var(--text-muted);
   --graph-node-unresolved: var(--text-faint);
   --graph-node-focused: var(--text-accent);
@@ -615,7 +613,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   --pdf-background: var(--background-primary);
@@ -633,7 +630,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
@@ -641,7 +637,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100), 20%);
   --scrollbar-bg: rgb(var(--mono-rgb-100), 5%);
   --scrollbar-thumb-bg: rgb(var(--mono-rgb-100), 10%);
@@ -664,10 +659,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --size-4-12: 48px;
   --size-4-16: 64px;
   --size-4-18: 72px;
-  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --slider-thumb-border-width: 1px;
-  --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-height: 18px;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
@@ -687,7 +680,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
-  --swatch-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 15%);
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
@@ -743,7 +735,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-background: transparent;
   --tag-background-hover: 0;
   --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
-  --tag-border-color-hover: hsl(var(--interactive-accent-hsl), 15%);
   --tag-border-width: 0;
   --tag-padding-x: 0;
   --tag-padding-y: 0;
@@ -1029,8 +1020,9 @@ html[saved-theme="dark"] {
   --text-error-hover: rgb(var(--ctp-red), 80%);
   --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
   --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
-  --text-selection: rgb(var(--ctp-rosewater), 100%);
-  --text-on-accent: rgb(var(--ctp-base));
+  --text-selection: rgb(var(--ctp-overlay2), 30%);
+  --text-on-accent: rgb(var(--ctp-mantle));
+  --text-on-accent-inverted: rgb(var(--ctp-mantle));
   --interactive-normal: rgb(var(--ctp-surface0));
   --interactive-hover: rgb(var(--ctp-surface1));
   --interactive-accent: rgb(var(--ctp-accent));
@@ -1214,8 +1206,9 @@ html[saved-theme="light"] {
   --text-error-hover: rgb(var(--ctp-red), 80%);
   --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
   --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
-  --text-selection: rgb(var(--ctp-rosewater), 100%);
-  --text-on-accent: rgb(var(--ctp-base));
+  --text-selection: rgb(var(--ctp-overlay2), 30%);
+  --text-on-accent: rgb(var(--ctp-mantle));
+  --text-on-accent-inverted: rgb(var(--ctp-mantle));
   --interactive-normal: rgb(var(--ctp-surface0));
   --interactive-hover: rgb(var(--ctp-surface1));
   --interactive-accent: rgb(var(--ctp-accent));

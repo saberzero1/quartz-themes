@@ -356,7 +356,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
   --file-line-width: 700px;
-  --metadata-input-height: 3em;
   --line-height-normal: var(--line-height-value);
   --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
   --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
@@ -483,6 +482,12 @@ html[saved-theme="dark"] {
 
   --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  --nav-item-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.03
+  ) !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -554,6 +559,12 @@ html[saved-theme="light"] {
 
   --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  --nav-item-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.03
+  ) !important;
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

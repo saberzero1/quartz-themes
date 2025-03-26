@@ -1,3 +1,9 @@
 :root[saved-theme="light"] {
-  --text-selection: hsl(var(--accent-h), var(--accent-s), 85%);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
+  --OT-text-selection-color: var(--text-normal);
+  --floating-toc-font-color: var(--text-normal);
+  --floating-toc-hover-color: var(--OT-color-on-accent-1);
+  --floating-toc-highlight-color: var(--color-accent-2);
+  --floating-toc-highlight-color-rgb: 255, 128, 0;
+  --floating-toc-line-color: var(--OT-color-on-accent-2);
 }

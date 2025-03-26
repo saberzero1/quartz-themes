@@ -81,7 +81,10 @@ body {
   /* Text */
   --text-on-accent: var(--color-tulip);
   --text-on-accent-inverted: var(--color-tulip);
-  --text-muted: color.mix(var(--color-light-carmine-pink), var(--color-bright-gray));
+  --text-muted: color.mix(
+    var(var(--color-light-carmine-pink)),
+    var(--color-bright-gray)
+  );
 
   /* Window frame */
   .workspace-tab-header-inner-title {
@@ -115,7 +118,10 @@ body {
   --link-color-hover: var(--color-light-carmine-pink);
   --link-decoration-hover: none; /*overwrite underline*/
 
-  --link-unresolved-color: color.mix(var(--color-timberwolf), var(--color-light-carmine-pink));
+  --link-unresolved-color: color.mix(
+    var(--color-timberwolf),
+    var(--color-light-carmine-pink)
+  );
   --link-unresolved-opacity: 0.6;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;

@@ -396,6 +396,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --colorful: var(--C009-RGB);
   --colorful: var(--C010-RGB);
   --colorful: var(--C011-RGB);
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  --checkbox-color: rgb(var(--600-RGB));
+  --checkbox-color-hover: rgb(var(--600-RGB));
+  --checkbox-color: rgb(var(--C001-RGB));
+  --checkbox-color-hover: rgb(var(--C001-RGB));
 }
 
 body {
@@ -566,7 +572,6 @@ html[saved-theme="dark"] {
   --link-color: var(--C001);
   --link-unresolved-color: var(--C008);
   --indentation-guide-width: 0px;
-  --vicious-indent-bg-size: calc(var(--vicious-color-count) * var(--vicious-indent-width)) 1px;
   --background-secondary-alt: var(--800);
   --background-primary: var(--800);
   --ribbon-background: var(--800);
@@ -790,7 +795,6 @@ html[saved-theme="light"] {
   --link-color: var(--C001);
   --link-unresolved-color: var(--C008);
   --indentation-guide-width: 0px;
-  --vicious-indent-bg-size: calc(var(--vicious-color-count) * var(--vicious-indent-width)) 1px;
   --background-secondary-alt: var(--000);
   --background-primary: var(--000);
   --ribbon-background: var(--000);

@@ -1,38 +1,159 @@
-:root {
-  --base03-rgb: 0, 43, 54;
-  --base03: rgb(var(--base03-rgb));
-  --base02-rgb: 7, 54, 66;
-  --base02: rgb(var(--base02-rgb));
-  --base01-rgb: 88, 110, 117;
-  --base01: rgb(var(--base01-rgb));
-  --base00-rgb: 101, 123, 131;
-  --base00: rgb(var(--base00-rgb));
-  --base0-rgb: 131, 148, 150;
-  --base0: rgb(var(--base0-rgb));
-  --base1-rgb: 147, 161, 161;
-  --base1: rgb(var(--base1-rgb));
-  --base2-rgb: 238, 232, 213;
-  --base2: rgb(var(--base2-rgb));
-  --base3-rgb: 253, 246, 227;
-  --base3: rgb(var(--base3-rgb));
-  --yellow-rgb: 181, 137, 0;
-  --yellow: rgb(var(--yellow-rgb));
-  --orange-rgb: 203, 75, 22;
-  --orange: rgb(var(--orange-rgb));
-  --red-rgb: 220, 50, 47;
-  --red: rgb(var(--red-rgb));
-  --magenta-rgb: 211, 54, 130;
-  --magenta: rgb(var(--magenta-rgb));
-  --violet-rgb: 108, 113, 196;
-  --violet: rgb(var(--violet-rgb));
-  --blue-rgb: 38, 139, 210;
-  --blue: rgb(var(--blue-rgb));
-  --cyan-rgb: 42, 161, 152;
-  --cyan: rgb(var(--cyan-rgb));
-  --green-rgb: 133, 153, 0;
-  --green: rgb(var(--green-rgb));
+.theme-dark,
+.theme-light {
+  /* Overwrite default theme colors */
+  --base03: rgb(0, 43, 54);
+  --base02: rgb(7, 54, 66);
+  --base01: rgb(88, 110, 117);
+  --base00: rgb(101, 123, 131);
+  --base0: rgb(131, 148, 150);
+  --base1: rgb(147, 161, 161);
+  --base2: rgb(238, 232, 213);
+  --base3: rgb(253, 246, 227);
+  --color-yellow: rgb(181, 137, 0);
+  --color-yellow-rgb: 181, 137, 0;
+  --color-orange: rgb(203, 75, 22);
+  --color-orange-rgb: 203, 75, 22;
+  --color-red: rgb(220, 50, 47);
+  --color-red-rgb: 220, 50, 47;
+  --color-pink: rgb(211, 54, 130);
+  --color-pink-rgb: 211, 54, 130;
+  --color-purple: rgb(108, 113, 196);
+  --color-purple-rgb: 108, 113, 196;
+  --color-blue: rgb(38, 139, 210);
+  --color-blue-rgb: 38, 139, 210;
+  --color-cyan: rgb(42, 161, 152);
+  --color-cyan-rgb: 42, 161, 152;
+  --color-green: rgb(133, 153, 0);
+  --color-green-rgb: 133, 153, 0;
+  --accent-h: 17.5690607735deg;
+  --accent-s: 80.4444444444%;
+  --accent-l: 44.1176470588%;
 }
 
+/*! @settings
+name: Solarized Theme Settings
+id: solarized-theme-settings
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 2
+  - id: tones
+    title: Base Tones
+    type: heading
+    level: 3
+    collapsed: true
+  - id: base03
+    title: base03
+    type: variable-color
+    format: rgb
+    default: rgb(0 43 54)
+  - id: base02
+    title: base02
+    type: variable-color
+    format: rgb
+    default: rgb(7 54 66)
+  - id: base01
+    title: base01
+    type: variable-color
+    format: rgb
+    default: rgb(88 110 117)
+  - id: base00
+    title: base00
+    type: variable-color
+    format: rgb
+    default: rgb(101 123 131)
+  - id: base0
+    title: base0
+    type: variable-color
+    format: rgb
+    default: rgb(131 148 150)
+  - id: base1
+    title: base1
+    type: variable-color
+    format: rgb
+    default: rgb(147 161 161)
+  - id: base2
+    title: base2
+    type: variable-color
+    format: rgb
+    default: rgb(238 232 213)
+  - id: base3
+    title: base3
+    type: variable-color
+    format: rgb
+    default: rgb(253 246 227)
+  - id: accents
+    description: "NB This does not override Obsidian's built-in accent color (see Appearance > Accent color)"
+    title: Accent Colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: color-yellow
+    title: yellow
+    type: variable-color
+    format: rgb
+    default: rgb(181 137 0)
+    alt-format:
+    - id: color-yellow-rgb
+      format: rgb-values
+  - id: color-orange
+    title: orange
+    type: variable-color
+    format: rgb
+    default: rgb(203 75 22)
+    alt-format:
+    - id: color-orange-rgb
+      format: rgb-values
+  - id: color-red
+    title: red
+    type: variable-color
+    format: rgb
+    default: rgb(220 50 47)
+    alt-format:
+    - id: color-red-rgb
+      format: rgb-values
+  - id: color-pink
+    title: pink
+    type: variable-color
+    format: rgb
+    default: rgb(211 54 130)
+    alt-format:
+    - id: color-pink-rgb
+      format: rgb-values
+  - id: color-purple
+    title: purple
+    type: variable-color
+    format: rgb
+    default: rgb(108 113 196)
+    alt-format:
+    - id: color-purple-rgb
+      format: rgb-values
+  - id: color-blue
+    title: blue
+    type: variable-color
+    format: rgb
+    default: rgb(38 139 210)
+    alt-format:
+    - id: color-blue-rgb
+      format: rgb-values
+  - id: color-cyan
+    title: cyan
+    type: variable-color
+    format: rgb
+    default: rgb(42 161 152)
+    alt-format:
+    - id: color-cyan-rgb
+      format: rgb-values
+  - id: color-green
+    title: green
+    type: variable-color
+    format: rgb
+    default: rgb(133 153 0)
+    alt-format:
+    - id: color-green-rgb
+      format: rgb-values
+*/
 .theme-dark {
   /* Overwrite default theme colors */
   --color-base-00: #1e1e1e;
@@ -55,6 +176,8 @@
   --text-faint: var(--base01);
   /* File explorer */
   --active-bg: var(--nav-item-background-active);
+  /* Hashtags */
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
 }
 
 .theme-light {
@@ -81,24 +204,12 @@
   /* File explorer */
   --active-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
   --nav-item-background-active: var(--active-bg);
+  /* Hashtags */
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
 }
 
 .theme-dark,
 .theme-light {
-  /* Overwrite default theme colors */
-  --color-red-rgb: var(--red-rgb);
-  --color-red: var(--red);
-  --color-green-rgb: var(--green-rgb);
-  --color-green: var(--green);
-  --color-orange: var(--orange);
-  --color-yellow: var(--yellow);
-  --color-cyan: var(--cyan);
-  --color-blue: var(--blue);
-  --color-purple: var(--violet);
-  --color-pink: var(--magenta);
-  --accent-h: 18;
-  --accent-s: 80%;
-  --accent-l: 44%;
   --interactive-accent: var(--color-accent);
   /* Background */
   --background-secondary: var(--background-primary);
@@ -106,7 +217,7 @@
   /* Text */
   --text-on-accent: var(--background-primary);
   /* Headings */
-  --text-title: var(--cyan);
+  --text-title: var(--color-cyan);
   --heading-formatting: var(--text-title);
   --h1-color: var(--text-title);
   --h2-color: var(--text-title);
@@ -115,30 +226,30 @@
   --h5-color: var(--text-title);
   --h6-color: var(--text-title);
   /* Links */
-  --link-color: var(--blue);
+  --link-color: var(--color-blue);
   --link-color-hover: var(--link-color);
   --link-decoration: none;
   --link-decoration-hover: underline;
-  --link-external-color: var(--violet);
+  --link-external-color: var(--color-purple);
   --link-external-color-hover: var(--link-external-color);
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
-  --link-unresolved-color: var(--red);
+  --link-unresolved-color: var(--color-red);
   --link-unresolved-color-hover: var(--link-unresolved-color);
   --link-unresolved-opacity: unset;
   --link-unresolved-decoration-color: var(--link-unresolved-color);
   /* Code */
   --code-normal: var(--text-normal);
-  --code-comment: var(--cyan);
-  --code-function: var(--blue);
-  --code-important: var(--orange);
-  --code-keyword: var(--green);
+  --code-comment: var(--color-cyan);
+  --code-function: var(--color-blue);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-green);
   --code-operator: var(--code-normal);
   --code-property: var(--code-normal);
   --code-punctuation: var(--code-normal);
-  --code-string: var(--cyan);
-  --code-tag: var(--red);
-  --code-value: var(--magenta);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-pink);
   /* Tables */
   --table-header-size: inherit;
   --table-header-weight: var(--font-bold);
@@ -151,6 +262,7 @@
   --checkbox-border-color-hover: var(--interactive-accent-hover);
   /* Hashtags */
   --tag-padding-x: var(--tag-padding-y);
+  --tag-color: var(--color-accent);
   /* Focus border */
   --background-modifier-border-focus: var(--interactive-accent);
 }
@@ -185,7 +297,7 @@
   box-shadow: unset;
   mix-blend-mode: unset;
   border-radius: unset;
-  background: var(--green);
+  background: var(--color-green);
   color: var(--text-on-accent);
   padding: 2px 0;
 }
@@ -218,6 +330,15 @@
 /* Search results */
 .is-flashing {
   border-radius: unset;
+  --code-normal: var(--text-highlight-bg);
+  --link-color: var(--text-on-accent);
+  --link-color-hover: var(--background-primary-alt);
+  --link-decoration: underline;
+  --link-decoration-hover: none;
+  --link-external-color: var(--text-on-accent);
+  --link-external-color-hover: var(--background-primary-alt);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: none;
 }
 
 .search-result-file-matched-text {
@@ -225,9 +346,16 @@
   padding: 2px 0;
 }
 
+.markdown-rendered {
+  /* Unresolved links in preview mode */
+  /* Highlights in preview mode */
+}
 .markdown-rendered .internal-link.is-unresolved:hover {
   color: var(--link-unresolved-color-hover);
   text-decoration-color: var(--link-unresolved-color-hover);
+}
+.markdown-rendered mark {
+  color: var(--text-on-accent);
 }
 
 /* Highlight current line */
@@ -239,8 +367,7 @@
 }
 
 /* Hashtags */
-.cm-hashtag.cm-hashtag-begin,
-.cm-hashtag.cm-hashtag-end {
+.cm-hashtag.cm-hashtag-begin, .cm-hashtag.cm-hashtag-end {
   border: unset;
   border-radius: unset;
 }
@@ -250,7 +377,7 @@
 .cm-matched-word,
 .cm-current-string,
 .cm-matched-string {
-  background: var(--yellow);
+  background: var(--color-yellow);
   color: var(--text-on-accent);
   text-decoration: none;
   padding: 2px 0;
@@ -264,6 +391,37 @@
 .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
 .workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
   box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Community theme and plugin browsers */
+.community-item:hover {
+  border-color: var(--color-accent);
+}
+.community-item .suggestion-highlight {
+  color: var(--text-on-accent);
+  font-weight: unset;
+}
+
+/* Vimrc Support Plugin */
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode {
+  color: var(--text-on-accent);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=normal] {
+  background-color: var(--color-blue);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=insert] {
+  background-color: var(--color-green);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=visual] {
+  background-color: var(--color-pink);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=replace] {
+  background-color: var(--red);
+}
+
+/* Mermaid */
+.mermaid tspan {
+  fill: var(--text-on-accent);
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -28,6 +28,11 @@
   --text-on-accent: #dcddde;
   --interactive-normal: #20242b;
   --interactive-hover: #353b47;
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) - 10%)
+  );
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
@@ -41,6 +46,12 @@
   --purple: #c678dd;
   --blue: #61afef;
   --yellow: #e5c07b;
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 35%),
+    var(--accent-l),
+    0.06
+  );
   --divider-color-hover: #404754;
   --ribbon-background: var(--background-primary);
   --drag-ghost-background: var(--background-secondary-alt);

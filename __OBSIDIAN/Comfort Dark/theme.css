@@ -4,17 +4,15 @@
 }
 
 body {
+
   /* 正文字体 */
-  --font-text-theme: "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter, Ubuntu,
-    sans-serif;
+  --font-text-theme: "Iosevka", 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Inter, Ubuntu, sans-serif;
 
   /* 代码字体 */
-  --font-monospace-theme: "Iosevka", "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
-    "Roboto Mono", monospace;
+  --font-monospace-theme: "Iosevka", 'JetBrains Mono', 'Fira Code', Menlo, SFMono-Regular, Consolas, 'Roboto Mono', monospace;
 
   /* 界面字体 */
-  --font-interface-theme: "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter,
-    Ubuntu, sans-serif;
+  --font-interface-theme: "Iosevka", 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Inter, Ubuntu, sans-serif;
 
   /* Heading 字体大小 */
   --h1-size: 2rem;
@@ -42,6 +40,7 @@ body {
 }
 
 .theme-dark {
+
   /* 主题色 */
   --accent-h: 40;
   --accent-s: 50%;
@@ -121,10 +120,10 @@ body {
 }
 
 /* 完成的 Check Box */
-.markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="M"] {
+.markdown-preview-view ul>li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='M'] {
   text-decoration: deleted;
   color: var(--text-faint);
 }
@@ -132,8 +131,7 @@ body {
 /* 图片展示 */
 img {
   border-radius: 4px;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
     0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -159,11 +157,11 @@ body:not(.default-font-color) span:not(.cm-highlight).cm-em {
 /* 正确设置预览模式 Tag 文字颜色 */
 .cm-hashtag.cm-hashtag-begin,
 .cm-hashtag.cm-hashtag-end {
-  color: var(--tag-font-color);
+  color: var(--tag-font-color)
 }
 
 .cm-hashtag:hover {
-  background-color: var(--tag-background-color-hover);
+  background-color: var(--tag-background-color-hover)
 }
 
 .cm-hashtag {
@@ -315,6 +313,7 @@ video {
   background-color: var(--background-primary-alt) !important;
 }
 
+
 /* 插件 */
 
 /* Kanban */
@@ -323,7 +322,7 @@ video {
   --lane-width: 300px;
 }
 
-.kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
+.kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
   filter: hue-rotate(0deg);
   width: 18px;
   height: 18px;

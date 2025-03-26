@@ -1,6 +1,6 @@
 # Neo
 
-[Neo](https://twitter.com/labdo_)
+[Neo](https://github.com/x0aa7i)
 
 ## Preview
 

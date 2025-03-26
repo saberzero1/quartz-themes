@@ -1,25 +1,26 @@
-:root {
-  --font-size-normal: 15px;
-  --font-size-code: 13.5px;
-  --font-size-side-dock: 13.5px;
-  --font-size-side-dock-title: 15px;
-  --font-size-status-bar: 12px;
-  --font-size-h1: 23px;
-  --font-size-h2: 22px;
-  --font-size-h3: 21px;
-  --font-size-h4: 20px;
-  --font-size-h5: 19px;
-  --font-size-h6: 18px;
-  --font-family-editor: Avenir, Avenir Next, sans-serif;
-  --font-family-preview: Avenir, Avenir Next, sans-serif;
-}
+:root
+{
+    --font-size-normal:              15px;
+    --font-size-code:                13.5px;
+    --font-size-side-dock:           13.5px;
+    --font-size-side-dock-title:     15px;
+    --font-size-status-bar:          12px;
+    --font-size-h1:                  23px;
+    --font-size-h2:                  22px;
+    --font-size-h3:                  21px;
+    --font-size-h4:                  20px;
+    --font-size-h5:                  19px;
+    --font-size-h6:                  18px;
+    --font-family-editor:            Avenir, Avenir Next, sans-serif;
+    --font-family-preview:           Avenir, Avenir Next, sans-serif;
+} 
 
 .theme-light,
 .theme-dark {
   --background-primary: #364549;
-  --background-primary-alt: #2c383a;
+  --background-primary-alt: #2C383A;
   --background-secondary: #415358;
-  --background-secondary-alt: #2c383a;
+  --background-secondary-alt: #2C383A;
   --background-accent: #fff;
   --background-modifier-border: #f2e5bc;
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
@@ -49,21 +50,22 @@
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
 
-  --text-title-h1: #d65d0e;
-  --text-title-h2: #d79921;
-  --text-title-h3: #98971a;
-  --text-title-h4: #689d6a;
-  --text-title-h5: #458588;
-  --text-title-h6: #b16286;
-  --inline-code: #b48ead;
-  --code-block: #b48ead;
-  --pre-code-bg: rgba(0, 0, 0, 0.2);
-  --blockquote-border: #b57614;
-  --vim-cursor: #d65d0e;
-  --border-color: #504945; /*also like transparent*/
-  --hover-bg: rgba(0, 0, 0, 0.5);
+  --text-title-h1:              #d65d0e;
+  --text-title-h2:              #d79921;
+  --text-title-h3:              #98971a;
+  --text-title-h4:              #689d6a;
+  --text-title-h5:              #458588;
+  --text-title-h6:              #b16286;
+  --inline-code:                #b48ead;
+  --code-block:                 #b48ead;
+  --pre-code-bg:                rgba(0, 0, 0, 0.2);
+  --blockquote-border:          #b57614;
+  --vim-cursor:                 #d65d0e;
+  --border-color:               #504945; /*also like transparent*/
+  --hover-bg:                   rgba(0, 0, 0, 0.5); 
 }
 /* better use rgba color for all color var ended with `bg`*/
+
 
 /*-------------------------------------*/
 /*      Search the following lines     */
@@ -101,14 +103,14 @@
 
 /*vertical resize-handle*/
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle{
   width: 1px !important;
   background-color: var(--border-color);
 }
 
 /*horizontal resize-handle*/
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
   height: 1px !important;
   background-color: var(--border-color);
 }
@@ -122,28 +124,28 @@
 .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
 .workspace-split.mod-vertical > .workspace-split,
 .workspace-split.mod-vertical > .workspace-leaf,
-.workspace-tabs {
+.workspace-tabs{
   padding-right: 0px;
 }
 
 /*status-bar*/
-.status-bar {
+.status-bar{
   font-size: var(--font-size-status-bar);
   background-color: var(--background-secondary-alt);
   border-top: 0px;
 }
 
-.document-search-container {
+.document-search-container{
   border-top: 0px;
   border-right: 0px;
   z-index: inherit;
 }
 
-.workspace-ribbon.mod-left.is-collapsed {
+.workspace-ribbon.mod-left.is-collapsed{
   border-right: 1px solid var(--border-color);
 }
 
-.workspace-ribbon.mod-right.is-collapsed {
+.workspace-ribbon.mod-right.is-collapsed{
   border-left: 1px solid var(--border-color);
 }
 
@@ -157,17 +159,16 @@ a.tag:hover {
 }
 
 /* Tag Color in editor and preview*/
-.cm-hashtag,
-a.tag {
+.cm-hashtag, a.tag {
   color: var(--text-accent-hover) !important;
   text-decoration: none !important;
   font-style: normal !important;
 }
 
 /* to customize tags */
-.tag[href="#obsidian"] {
-  /* .tag[href^="#obsidian"] match any tag started with "xxx"*/
-  /* .tag[href="#obsidian"] exact match with "xxx"*/
+.tag[href="#obsidian"] { 
+/* .tag[href^="#obsidian"] match any tag started with "xxx"*/
+/* .tag[href="#obsidian"] exact match with "xxx"*/
   background-color: black;
   border: none;
   color: white !important;
@@ -195,7 +196,7 @@ a,
 }
 
 /* the url string in editor */
-.cm-s-obsidian span.cm-string {
+.cm-s-obsidian span.cm-string{
   color: var(--text-accent-hover) !important;
 }
 
@@ -207,7 +208,7 @@ a:not(.internal-link) {
 /*footnote*/
 .cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
 .cm-s-obsidian span.cm-footref {
-  color: var(--text-accent) !important;
+  color: var(--text-accent) !important; 
 }
 
 /***************************************/
@@ -216,8 +217,8 @@ a:not(.internal-link) {
 
 /* Cursor color and opacity */
 
-.cm-fat-cursor .CodeMirror-cursor,
-.cm-animate-fat-cursor {
+.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor
+ {
   width: 0.5em;
   background: var(--vim-cursor);
   opacity: 60% !important;
@@ -235,11 +236,10 @@ a:not(.internal-link) {
 /* set the text selection color for preview mode */
 ::selection {
   background-color: var(--text-selection);
-}
+} 
 
 /* normal text outside of headings and code of editor */
-.cm-s-obsidian,
-.mod-single-child .cm-s-obsidian {
+.cm-s-obsidian, .mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
   padding-top: 5px;
@@ -248,8 +248,7 @@ a:not(.internal-link) {
 }
 
 /* normal text outside of headings and code of preview */
-.markdown-preview-view,
-.mod-single-child .markdown-preview-view {
+.markdown-preview-view, .mod-single-child .markdown-preview-view {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
   padding-top: 0px;
@@ -258,21 +257,18 @@ a:not(.internal-link) {
 }
 
 /* bold in preview and editor */
-strong,
-.cm-strong {
+strong, .cm-strong {
   font-weight: 600;
 }
 
 /* emphasis in preview and editor */
-em,
-.cm-em {
+em, .cm-em {
   color: var(--text-muted);
   font-style: italic;
 }
 
 /* strikethrough in preview and editor */
-s,
-.cm-strikethrough {
+s, .cm-strikethrough {
   color: var(--text-muted);
 }
 
@@ -299,7 +295,7 @@ img:hover {
 }
 
 /*disable image resize in setting pane*/
-.community-theme img:hover {
+.community-theme img:hover{
   transform: none;
 }
 
@@ -309,7 +305,7 @@ img:hover {
 }
 
 /*text between :: show same color as normal text*/
-.cm-formatting-emoji {
+.cm-formatting-emoji{
   color: var(--text-normal) !important;
 }
 
@@ -319,7 +315,7 @@ img:hover {
   height: 2em;
 }
 
-.CodeMirror-dialog input {
+.CodeMirror-dialog input{
   font-family: var(--font-family-editor);
   width: 90%;
   padding-left: 1px;
@@ -329,49 +325,50 @@ img:hover {
 /* Headings - EDITOR and PREVIEW */
 /*********************************/
 
+
 /* headings for editor and preview */
-.cm-header-1,
-.markdown-preview-view h1 {
+.cm-header-1, .markdown-preview-view h1
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h1);
   color: var(--text-title-h1);
 }
 
-.cm-header-2,
-.markdown-preview-view h2 {
+.cm-header-2, .markdown-preview-view h2
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h2);
   color: var(--text-title-h2);
 }
 
-.cm-header-3,
-.markdown-preview-view h3 {
+.cm-header-3, .markdown-preview-view h3
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h3);
   color: var(--text-title-h3);
 }
 
-.cm-header-4,
-.markdown-preview-view h4 {
+.cm-header-4, .markdown-preview-view h4
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h4);
   color: var(--text-title-h4);
 }
 
-.cm-header-5,
-.markdown-preview-view h5 {
+.cm-header-5, .markdown-preview-view h5
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h5);
   color: var(--text-title-h5);
 }
 
-.cm-header-6,
-.markdown-preview-view h6 {
+.cm-header-6, .markdown-preview-view h6
+{
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: var(--font-size-h6);
@@ -389,7 +386,7 @@ pre code {
   padding: 6px !important;
   line-height: normal;
   display: block;
-  color: var(--code-block) !important;
+  color: var(--code-block)  !important;
 }
 
 /* padding of code blocks in preview */
@@ -398,13 +395,14 @@ pre code {
 }
 
 /* font-size of in-line block for preview */
-.markdown-preview-view code {
+.markdown-preview-view code
+{
   font-size: 90%;
   line-height: 1.7;
 }
 
 /* in-line block for preview */
-code {
+code{
   color: var(--inline-code) !important;
   bottom: 0px !important;
 }
@@ -413,13 +411,15 @@ code {
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
-  text-shadow: none !important;
-  color: var(--text-faint) !important;
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    color: var(--text-faint) !important;
 }
 
 .theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-light pre[class*="language-"]
+{
   background-color: var(--background-primary-alt);
 }
 .theme-light .token.operator,
@@ -431,10 +431,10 @@ code {
 }
 
 .theme-dark .token.function,
-.theme-dark .token.class-name,
+.theme-dark .token.class-name, 
 .theme-light .token.function,
 .theme-light .token.class-name {
-  color: #dd4a68;
+  color: #DD4A68;
 }
 
 .theme-light .token.comment,
@@ -477,7 +477,7 @@ code {
   color: #f8f8f2;
 }
 .theme-light .token.atrule,
-.theme-light .token.attr-value {
+.theme-light .token.attr-value{
   color: #e6db74;
 }
 .theme-light .token.keyword {
@@ -505,13 +505,14 @@ code {
 /* in-line block for editor */
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code)
+{
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
 }
 
-/* Editor CodeBlock TEXT Appearance */
+ /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
   font-family: monaco !important;
   font-size: var(--font-size-code) !important;
@@ -522,7 +523,7 @@ code {
 }
 
 /*remove the border of codeblock in editor */
-.HyperMD-codeblock-bg {
+.HyperMD-codeblock-bg{
   border: 0px !important;
 }
 
@@ -532,7 +533,7 @@ code {
 } */
 
 /*if you want the highlight to present in both normal and insert mode of vim*/
-.CodeMirror-activeline .CodeMirror-linebackground {
+.CodeMirror-activeline .CodeMirror-linebackground{
   background-color: var(--text-selection) !important;
 }
 
@@ -576,8 +577,8 @@ th {
 }
 
 .markdown-preview-view th {
-  font-weight: 800;
-  background-color: var(--background-secondary) !important;
+    font-weight: 800;
+    background-color: var(--background-secondary) !important;
 }
 
 thead {
@@ -599,13 +600,13 @@ thead {
 /***************************************/
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   color: var(--text-accent);
-  font-size: 1em;
+  font-size:1em;
   line-height: 1.25em;
-  width: 1.2em;
-  text-align: center;
+  width:1.2em;
+  text-align:center;
   text-shadow: 0 0 0.1em var(--text-accent);
 }
 
@@ -614,7 +615,7 @@ thead {
   top: 0.2em !important;
   right: 4px;
   box-sizing: border-box;
-  border: 1px solid var(--text-muted);
+  border: 1px solid  var(--text-muted);
   position: relative;
   width: 1.25em;
   height: 1.25em;
@@ -623,7 +624,7 @@ thead {
 }
 
 .checkbox-container {
-  background-color: var(--background-primary);
+    background-color: var(--background-primary);
 }
 
 /***************************************/
@@ -649,10 +650,11 @@ thead {
 /*              popover                */
 /***************************************/
 
-.popover {
+.popover{
   border: 1px solid var(--border-color);
   background-color: var(--background-secondary);
 }
+
 
 /***************************************/
 /*            Side panel               */
@@ -665,12 +667,11 @@ thead {
 }
 
 /* search result in backlink or file search */
-.search-result-file-title {
-  font-size: var(--font-size-side-dock-title);
+.search-result-file-title {  
+  font-size: var(--font-size-side-dock-title) ;
 }
 
-.search-result-file-matches,
-.search-empty-state {
+.search-result-file-matches, .search-empty-state {
   font-size: var(--font-size-side-dock);
 }
 
@@ -680,8 +681,7 @@ thead {
   padding: 0px 10px;
 }
 
-.nav-file-title,
-.nav-folder-title {
+.nav-file-title, .nav-folder-title {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   border-top-left-radius: 0 !important;
@@ -689,19 +689,19 @@ thead {
 }
 
 .nav-file.is-active > .nav-file-title {
-  background-color: var(--hover-bg) !important;
+  background-color: var(--hover-bg) !important; 
 }
 /* .nav-file-title:hover, .nav-folder-title:hover {
   background-color: var(--hover-bg) !important;
 } */
 
 /*backlink pane*/
-.workspace-leaf-content[data-type="backlink"] .view-content {
+.workspace-leaf-content[data-type="backlink"] .view-content{
   background-color: var(--background-secondary);
 }
 
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
+.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {  
   font-size: var(--font-size-side-dock);
 }
 
@@ -713,35 +713,26 @@ thead {
 /***************************************/
 
 /* Naked Embeds */
-.markdown-embed-title {
-  display: none;
-}
-.markdown-preview-view .markdown-embed-content > :first-child {
-  margin-top: 0;
-}
-.markdown-preview-view .markdown-embed-content > :last-child {
-  margin-bottom: 0;
-}
+.markdown-embed-title { display: none; }
+.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0;}
+.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0;}
 /* remove the first heading
 .markdown-preview-view .markdown-embed-content>:first-child { display:none;}*/
 /*remove the following two line, you will get border and scroll*/
-.markdown-preview-view .markdown-embed {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-.markdown-preview-view .markdown-embed-content {
+.markdown-preview-view .markdown-embed { border:none; padding:0; margin:0; }
+.markdown-preview-view .markdown-embed-content 
+{ 
   max-height: unset;
   background-color: var(--background-secondary);
 }
 
 /* the link on the top right corner*/
 .markdown-embed-link {
-  color: var(--text-faint) !important;
+color: var(--text-faint) !important;
 }
 
 .markdown-embed-link:hover {
-  color: var(--text-accent) !important;
+color: var(--text-accent) !important;
 }
 
 /***************************************/
@@ -749,23 +740,25 @@ thead {
 /***************************************/
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
-.graph-view.color-line-highlight {
-  color: var(--text-accent) !important;
+.graph-view.color-line-highlight
+{
+    color: var(--text-accent) !important;    
 }
 
-.graph-view.color-text {
-  color: var(--text-normal) !important;
+.graph-view.color-text
+{
+    color: var(--text-normal) !important;
 }
 
 .graph-view.color-line {
-  color: var(--text-accent-hover);
+    color: var(--text-accent-hover);
 }
 
-.graph-view.color-fill {
-  color: var(--text-muted);
+.graph-view.color-fill{
+    color: var(--text-muted);
 }
 
-.workspace-leaf-content[data-type="graph"] .view-content {
+.workspace-leaf-content[data-type = "graph"] .view-content{
   background-color: var(--background-primary);
 }
 
@@ -802,7 +795,7 @@ thead {
 /*           width of content          */
 /***************************************/
 
-.markdown-source-view.is-readable-line-width .CodeMirror,
+.markdown-source-view.is-readable-line-width .CodeMirror, 
 .markdown-preview-view.is-readable-line-width .markdown-preview-section {
   max-width: 42vmax; /* 1vmax = 1% of the larger dimension*/
   margin-left: auto;
@@ -817,7 +810,7 @@ thead {
 /* header */
 
 .theme-dark .view-header {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;   
   border-top: 1px solid var(--border-color) !important;
   border-bottom: 1px solid var(--border-color) !important;
 }
@@ -827,7 +820,7 @@ thead {
 }
 
 .theme-dark .workspace-leaf.mod-active .view-header {
-  background-color: var(--background-secondary-alt) !important;
+  background-color: var(--background-secondary-alt) !important;  
   border-top: 0px !important;
   border-bottom: 3px solid var(--interactive-accent) !important;
 }
@@ -837,13 +830,12 @@ thead {
 }
 
 .workspace-leaf.mod-active .view-header-title,
-.workspace-leaf.mod-active .view-header-icon {
+.workspace-leaf.mod-active .view-header-icon
+{
   color: var(--background-modifier-border);
 }
 
-.view-header-title,
-.view-header-icon,
-.view-action {
+.view-header-title, .view-header-icon, .view-action{
   color: var(--text-faint);
 }
 
@@ -855,51 +847,30 @@ thead {
 
 /* everything under .mod-root now. Don't want Andy messing with sidebars */
 /* also, Andy only makes sense for vertical splits, at the root level, right? */
-.theme-light .mod-root.workspace-split.mod-vertical {
-  overflow-x: auto;
+.theme-light .mod-root.workspace-split.mod-vertical { 
+  overflow-x:auto; 
   --sticky-left: 25px; /* <- 36px is the header height in the default theme */
 }
-.theme-light .mod-root.workspace-split.mod-vertical > div {
-  min-width: calc(
-    700px + var(--sticky-left)
-  ); /* <-- 700px is the default theme's "readable" max-width */
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  left: 0;
+.theme-light .mod-root.workspace-split.mod-vertical > div { 
+  min-width: calc(700px + var(--sticky-left)); /* <-- 700px is the default theme's "readable" max-width */
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+  position:sticky;
+  left:0;
 }
+
 
 /* shift sticky position, so titles will stack up to the left */
 /* This will currently stack to a maximum of 10 before resetting */
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) {
-  left: calc(var(--sticky-left) * 0);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) {
-  left: calc(var(--sticky-left) * 1);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) {
-  left: calc(var(--sticky-left) * 2);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) {
-  left: calc(var(--sticky-left) * 3);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) {
-  left: calc(var(--sticky-left) * 4);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) {
-  left: calc(var(--sticky-left) * 5);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) {
-  left: calc(var(--sticky-left) * 6);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) {
-  left: calc(var(--sticky-left) * 7);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n + 0) {
-  left: calc(var(--sticky-left) * 8);
-}
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n + 1) {
-  left: calc(var(--sticky-left) * 9);
-}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) { left: calc(var(--sticky-left) * 0); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) { left: calc(var(--sticky-left) * 1); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) { left: calc(var(--sticky-left) * 2); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) { left: calc(var(--sticky-left) * 3); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) { left: calc(var(--sticky-left) * 4); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) { left: calc(var(--sticky-left) * 5); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) { left: calc(var(--sticky-left) * 6); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) { left: calc(var(--sticky-left) * 7); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+0) { left: calc(var(--sticky-left) * 8); }
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+1) { left: calc(var(--sticky-left) * 9); }
 
 /* now it's time for the fancy vertical titles */
 
@@ -919,9 +890,9 @@ thead {
   height: auto;
   width: 36px;
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  left:0;
+  top:0;
+  bottom:0;
   background-color: var(--background-primary) !important;
 }
 
@@ -929,9 +900,9 @@ thead {
 .theme-light .view-header-title-container:after {
   width: 100%;
   height: 30px;
-  top: unset;
+  top:unset;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(to bottom, transparent, var(--background-primary))!important;
 }
 
 /* unset the title container height and swap padding */
@@ -943,15 +914,14 @@ thead {
 
 /* active titles have different border colours */
 .theme-light .workspace-leaf.mod-active .view-header {
-  background-color: var(--background-secondary-alt) !important;
+  background-color: var(--background-secondary-alt) !important; 
   border-right: 3px solid var(--interactive-accent) !important;
   border-left: 0px;
   border-bottom: none;
 }
 
 /* swap the padding/margin around for the header and actions icons */
-.theme-light .view-header-icon,
-.theme-light .view-actions {
+.theme-light .view-header-icon, .theme-light .view-actions {
   padding: 10px 5px;
 }
 .theme-light .view-action {
@@ -970,8 +940,7 @@ thead {
 }
 
 /*preview padding too small*/
-.theme-light .markdown-preview-view,
-.theme-light .mod-single-child .markdown-preview-view {
+.theme-light .markdown-preview-view, .theme-light .mod-single-child .markdown-preview-view {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
   padding-top: 5px;
@@ -983,24 +952,17 @@ thead {
 /*    at a rule line before ul list    */
 /***************************************/
 
-ul ul {
-  position: relative;
-}
+ul ul { position: relative; }
 ul ul::before {
-  content: "";
+  content:'';
   border-left: 1px solid var(--border-color);
   position: absolute;
 }
-ul ul::before {
-  left: -1em;
-  top: 0;
-  bottom: 0;
-}
+ul ul::before { left: -1em; top: 0; bottom: 0; }
 
 /* rule line when there are checkboxes*/
-ul .task-list-item ul::before {
-  left: 0.15em !important;
-}
+ul .task-list-item ul::before {left: 0.15em !important}
+
 
 /* no good idea yet
 .cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
@@ -1013,24 +975,24 @@ ul .task-list-item ul::before {
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 */
 
-.cm-hmd-list-indent .cm-tab::before {
-  content: " ";
-  border-left: 1px solid var(--border-color);
-  position: absolute;
-  height: 100%;
+.cm-hmd-list-indent .cm-tab::before{
+    content: ' ';
+    border-left: 1px solid var(--border-color);
+    position: absolute;
+    height: 100%;
 }
 
 /***************************************/
 /*  Hide Scrollbar (recommend for mac)  */
 /***************************************/
 
-/* Hide scrollbar in preview, search, file, tag, back links */ /*
+/* Hide scrollbar in preview, search, file, tag, back links *//*
 .markdown-preview-view::-webkit-scrollbar, 
 .workspace-leaf-content::-webkit-scrollbar, 
 .workspace-leaf-content[data-type = "backlink"] .view-content::-webkit-scrollbar {
   display: none;
 }*/
-/* Hide scrollbar for editor*/ /*
+/* Hide scrollbar for editor*//*
 .CodeMirror-vscrollbar {
   display: none !important;
 }*/

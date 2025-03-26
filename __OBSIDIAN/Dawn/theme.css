@@ -110,7 +110,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.2;
-  --callout-padding: var(--size-4-2) var(--size-4-5) var(--size-4-2) var(--size-4-5);
+  --callout-padding: var(--size-4-2) var(--size-4-5) var(--size-4-2)
+    var(--size-4-5);
   --callout-radius: var(--radius-m);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-color: inherit;
@@ -421,7 +422,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
 
@@ -438,7 +442,10 @@ body {
   --prompt-max-width: 62vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
 
   /* Radiuses */
   --radius-s: var(--scale-radius-1);
@@ -757,9 +764,17 @@ body {
 
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2.5%)
+  );
 
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
 
   /* Background and UI Semantic Tokens in Notes */
   /* 백그라운드에 들어가는 시멘틱 토큰들 입니다. */
@@ -796,10 +811,10 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 .theme-dark {
@@ -913,8 +928,16 @@ body {
 
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.8%)
+  );
 
   /* Backgrounds */
   --background-primary: var(--color-base-10);
@@ -949,10 +972,10 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 /* -----------------------------------------------------
@@ -1054,7 +1077,8 @@ body {
 }
 
 .nav-folder.mod-root .nav-folder > .nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) dotted var(--nav-indentation-guide-color);
+  border-left: var(--nav-indentation-guide-width) dotted
+    var(--nav-indentation-guide-color);
 }
 
 .workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
@@ -1425,7 +1449,7 @@ blockquote {
 
 .callout-icon {
   align-self: baseline;
-  margin-top: var(--scale-dimension-size-0);
+  margin-top : var(--scale-dimension-size-0);
 }
 
 .callout-content > p {
@@ -1552,6 +1576,7 @@ iframe,
 } /*Live Preview Mode*/
 .markdown-source-view .markdown-embed:not(.mod-empty) {
 } /*Live Preview Mode*/
+
 
 .markdown-embed-link {
   border-radius: var(--radius-m);

@@ -55,8 +55,8 @@
   /* Usage of preferred monospace font */
   /* --font-monospace-theme: Menlo, SFMono-Regular, Consolas, "JetBrains Mono",
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace; */
-  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
-    SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
+  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
+    "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
   --scrollbar-bg: rgba(20, 20, 20, 0);
   --scrollbar-thumb-bg: #595959;
   --background-modifier-error: #36393f;
@@ -279,11 +279,8 @@ img {
   user-select: none;
   width: 42px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
-  transition:
-    background 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    border 0.15s ease-in-out,
-    opacity 0.15s ease-in-out,
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border 0.15s ease-in-out, opacity 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 
@@ -660,15 +657,11 @@ but font weight does. */
   border-radius: 0;
   padding-left: 0;
   background-color: var(--background-primary-alt);
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .internal-embed .markdown-embed:hover {
-  box-shadow:
-    0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transform: translate3d(0px, -3px, 0px);
 }
 br + .internal-embed {
@@ -844,7 +837,9 @@ li::marker {
 }
 
 /* Nick's Tiny Sliding Panes Tweaks */
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px; /*instead of 6px*/
 }
 
@@ -1089,19 +1084,33 @@ img.emoji {
   line-height: 18px; /* this works, which is good enough */
 }
 
-/* CALLOUTS, TRYING TO FIX USING PRISM'S SETTINGS WITH A SLOPPY COPY AND PASTE */
+
+
+
+
+/* CALLOUTS, TRYING TO FIX USING PRISM'S SETTINGS WITH A SLOPPY COPY AND PASTE */ 
+
+
+
+
+
 
 body:not(.pt-disable-callout-styling) {
   --callout-padding: 4px;
   --callout-radius: var(--radius-m);
   --callout-background-alpha: 20%;
-}
+} 
+
+
 
 body:not(.pt-disable-callout-styling) .callout {
   background-color: unset;
 }
 
-/* THIS IS THE ONE THAT FIXES CALLOUTS WITH HEADERS, THANKS DAMIAN OF THE PRISM THEME! */
+
+
+
+/* THIS IS THE ONE THAT FIXES CALLOUTS WITH HEADERS, THANKS DAMIAN OF THE PRISM THEME! */ 
 
 body:not(.pt-disable-callout-styling) .callout .callout-title {
   position: relative;
@@ -1135,6 +1144,7 @@ body:not(.pt-disable-callout-styling) .callout .callout-fold {
   margin-left: auto;
 }
 
+
 body:not(.pt-disable-callout-styling) .callout .callout-content {
   padding: var(--size-4-5) var(--size-4-3) var(--size-4-1) var(--size-4-3);
   margin-top: -16px;
@@ -1145,7 +1155,11 @@ body:not(.pt-disable-callout-styling) .callout .callout-content {
   border-bottom-left-radius: var(--radius-m);
 }
 
+
+
+
 /* PROPERTIES: SLOPPY COPY AND PASTE OF DAMIAN K.'S PRISM THEME */
+
 
 .metadata-properties-heading {
   display: inline-flex;
@@ -1222,17 +1236,17 @@ body:not(.pt-disable-callout-styling) .callout .callout-content {
   gap: var(--size-4-2);
 }
 
-.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
+.metadata-property:not([data-property-key=tags]) .multi-select-pill {
   line-height: unset;
 }
 
-.metadata-property[data-property-key="tags"] {
+.metadata-property[data-property-key=tags] {
   --pill-radius: var(--radius-s);
 }
 
-.workspace-leaf-content[data-type="all-properties"] .view-content,
-.workspace-leaf-content[data-type="file-properties"] .view-content,
-.workspace-leaf-content[data-type="properties"] .view-content {
+.workspace-leaf-content[data-type=all-properties] .view-content,
+.workspace-leaf-content[data-type=file-properties] .view-content,
+.workspace-leaf-content[data-type=properties] .view-content {
   padding: var(--size-4-1);
 }
 

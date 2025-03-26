@@ -29,6 +29,11 @@
   --interactive-normal: #eaeaeb;
   --interactive-hover: #dbdbdc;
   --interactive-accent-rgb: 21, 146, 255;
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) - 4%)
+  );
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -42,28 +47,4 @@
   --aqua: #0084bc;
   --yellow: #e35649;
   --orange: #986800;
-  --ribbon-background: var(--background-primary);
-  --drag-ghost-background: var(--background-secondary-alt);
-  --background-modifier-message: var(--background-secondary-alt);
-  --tab-outline-color: transparent;
-  --divider-color: transparent;
-  --prompt-border-color: var(--panel-border-color);
-  --modal-border-color: var(--panel-border-color);
-  --background-modifier-border-hover: var(--interactive-hover);
-  --background-modifier-border-focus: var(--interactive-hover);
-  --checkbox-color: var(--text-accent);
-  --checkbox-color-hover: var(--text-accent-hover);
-  --nav-item-background-active: var(--interactive-accent);
-  --nav-item-color-active: #ffffff;
-  --tag-color: var(--yellow);
-  --tag-background: var(--background-primary-alt);
-  --tag-color-hover: var(--yellow);
-  --tag-background-hover: var(--background-primary-alt);
-  --tag-padding-x: 4px;
-  --tag-padding-y: 2px;
-  --tag-radius: 4px;
-  --inline-title-weight: var(--bold-weight);
-  --link-decoration: none;
-  --link-external-decoration: none;
-  --embed-padding: 0 0 0 var(--size-4-4);
 }

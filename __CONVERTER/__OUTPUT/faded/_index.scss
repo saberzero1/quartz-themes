@@ -1250,7 +1250,6 @@ html[saved-theme="dark"] {
   --color-base-60: #999;
   --color-base-70: #bababa;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
   --color-accent: var(--custom-gold-950);
   --color-accent-1: var(--custom-gold-2-500);
@@ -1472,7 +1471,11 @@ html[saved-theme="dark"] {
   --text-on-accent: var(--background-primary-active);
   --color-accent: var(--custom-gold-950);
   --custom-code-border-color: var(--black);
+  --custom-global-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-800))
+    drop-shadow(0px 0px 2px var(--custom-black-800));
   --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px black) drop-shadow(0px 2px 6px black);
+  --custom-statusbar-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-900))
+    drop-shadow(0px 0px 2px var(--custom-black-900));
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--custom-black-850);
 
   /*--light: var(--background-primary);
@@ -1568,7 +1571,6 @@ html[saved-theme="light"] {
   --color-base-60: #707070;
   --color-base-70: #5a5a5a;
   --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
@@ -1717,6 +1719,12 @@ html[saved-theme="light"] {
   --text-on-accent: var(--background-primary-active);
   --color-accent: var(--custom-gold-950);
   --custom-code-border-color: var(--black);
+  --custom-global-drop-shadow: drop-shadow(2px 2px 1px var(--zinc-300))
+    drop-shadow(0px 0px 2px var(--zinc-300));
+  --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px var(--zinc-500))
+    drop-shadow(0px 2px 6px var(--zinc-500));
+  --custom-statusbar-drop-shadow: drop-shadow(2px 2px 1px var(--zinc-500))
+    drop-shadow(0px 0px 2px var(--zinc-500));
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--zinc-500);
   --divider-color: var(--custom-white-2-400);
 

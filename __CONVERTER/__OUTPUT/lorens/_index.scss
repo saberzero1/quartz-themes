@@ -380,6 +380,59 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
+  --background-underlying-CSS-light: radial-gradient(
+      100% 100% at 13% 50%,
+      rgb(90, 109, 237) 0%,
+      rgb(224, 218, 247) 100%
+    ),
+    linear-gradient(
+      6deg,
+      rgb(235, 242, 252) 0%,
+      rgb(90, 109, 237) 5%,
+      rgb(166, 126, 241) 7%,
+      rgb(224, 218, 247) 11%,
+      rgb(90, 109, 237) 16%
+    ),
+    radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%),
+    linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%),
+    linear-gradient(
+      351deg,
+      rgb(235, 242, 252) 0%,
+      rgb(219, 244, 255) 1%,
+      rgb(235, 242, 252) 6%,
+      rgb(224, 218, 247) 10%,
+      rgb(166, 126, 241) 13%,
+      rgb(235, 242, 252) 29%
+    ),
+    radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
+    radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
+  --background-underlying-CSS-dark: linear-gradient(
+      317deg,
+      rgb(112, 55, 205) 0%,
+      rgb(29, 12, 32) 19%,
+      rgb(101, 31, 113) 19%,
+      rgb(101, 31, 113) 33%
+    ),
+    radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
+    linear-gradient(
+      109deg,
+      rgb(104, 178, 248) 0%,
+      rgb(80, 110, 229) 15%,
+      rgb(112, 55, 205) 34%,
+      rgb(104, 178, 248) 54%,
+      rgb(104, 178, 248) 65%
+    ),
+    radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    linear-gradient(
+      339deg,
+      rgb(101, 31, 113) 0%,
+      rgb(104, 178, 248) 12%,
+      rgb(101, 31, 113) 14%,
+      rgb(80, 110, 229) 19%,
+      rgb(101, 31, 113) 20%,
+      rgb(29, 12, 32) 30%
+    );
   --background-underlying-CSS-blend-mode-light: overlay, color-burn;
   --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light;
   --tab-background-active: transparent;
@@ -417,6 +470,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --card-shadow-dark: transparent;
   --background-mod-root-split: var(--background-mod-root-split-light) !important;
   --background-mod-root-split: var(--background-mod-root-split-dark) !important;
+  --card-shadow-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
   --card-border-radius-dark: 8px;
@@ -433,6 +488,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
+  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --background-activated-tab-header-dark: var(--background-modifier-active-hover);
   --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
   --icon-opacity: 1;
@@ -551,7 +608,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --radius-s: 0px;
   --radius-m: 2px;
   --radius-l: 4px;
-  --color-accent-dark: #0ba360;
   --inline-title-text-transform: var(--h1-text-transform);
   --h1-text-transform: unset;
   --h2-text-transform: unset;
@@ -847,10 +903,47 @@ html[saved-theme="dark"] {
   --color-accent-1: var(--color-accent-1-dark);
   --color-accent-2: var(--color-accent-2-dark);
   --color-accent-3: var(--color-accent-3-dark);
-  --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-dark: #0ba360;
   --color-accent-1-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
   --color-accent-2-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-3-dark: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l))
+  );
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.25
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.3
+  );
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 3.9)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.9)
+  );
   --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -870,16 +963,32 @@ html[saved-theme="dark"] {
   --toggle-thumb-enabled-color-dark: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-dark);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-dark);
+  --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.6),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 6px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px #ffffff;
+  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 6px hsla(var(--interactive-accent-hsl), 0.5), inset 0px 4px 4px #ffffff;
   --toggle-track-color: var(--toggle-track-color-dark);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-dark);
   --toggle-track-color-dark: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-dark: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-dark);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-dark);
+  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
+  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
   --input-radius: var(--input-radius-dark);
   --input-shadow: var(--input-shadow-dark);
   --input-shadow-hover: var(--input-shadow-hover-dark);
   --input-radius-dark: 5px;
+  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+  --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --code-background: var(--code-background-dark);
   --code-border: var(--code-border-dark);
 
@@ -997,11 +1106,28 @@ html[saved-theme="light"] {
   --color-accent-1: var(--color-accent-1-light);
   --color-accent-2: var(--color-accent-2-light);
   --color-accent-3: var(--color-accent-3-light);
-  --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
   --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.25
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary-alt: var(--color-base-05);
@@ -1024,18 +1150,33 @@ html[saved-theme="light"] {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
+  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-track-color: var(--toggle-track-color-light);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-light);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
+  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
   --input-radius: var(--input-radius-light);
   --input-shadow: var(--input-shadow-light);
   --input-shadow-hover: var(--input-shadow-hover-light);
   --input-radius-light: 5px;
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --code-background: var(--code-background-light);
   --code-border: var(--code-border-light);
 

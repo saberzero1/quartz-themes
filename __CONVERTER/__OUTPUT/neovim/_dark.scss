@@ -2,6 +2,16 @@
   --accent-h: 132;
   --accent-s: 79%;
   --accent-l: 83%;
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.03),
+    calc(var(--accent-l) * 1.05)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-red-rgb: 255, 192, 185;
   --color-red: #ffc0b9;
   --color-yellow-rgb: 254, 224, 148;

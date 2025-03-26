@@ -29,7 +29,7 @@
   --interactive-hover: var(--embed-bg);
   --interactive-accent: var(--bttn);
   --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(accent-l);
   --background-modifier-hover: var(--hvr-active);
   --background-modifier-success: var(--success-bg);
   --background-modifier-error: var(--failure-bg);
@@ -208,8 +208,11 @@
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: var(--indentation-guide-width);
   --indentation-guide-color-active: var(--accent);
+  --indentation-guide-source-indent: calc(
+    var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5)
+  );
   --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
-  --indentation-guide-reading-indent: calc(var(--checkbox-size) / 3 * -1 - 2px);
+  --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
   --list-color-1: var(--indentation-guide-color);
   --list-color-2: var(--indentation-guide-color);
   --list-color-3: var(--indentation-guide-color);

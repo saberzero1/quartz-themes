@@ -4,6 +4,7 @@ https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/main/theme.css
 with a few modifications to make it work with the Tokyo Night Storm.
 */
 
+
 /*Fonts*/
 :root {
   --default-font: "JetBrains Mono", monospace;
@@ -12,6 +13,7 @@ with a few modifications to make it work with the Tokyo Night Storm.
 }
 
 .theme-dark {
+
   --accent-h: 202;
   --accent-s: 100%;
   --accent-l: 75%;
@@ -61,9 +63,10 @@ with a few modifications to make it work with the Tokyo Night Storm.
   --red1: rgb(var(--red1_x));
   --unknown: #ffffff;
 
-  --external-link-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%)
-    contrast(85%);
+  --external-link-filter: invert(35%) sepia(28%) saturate(681%)
+    hue-rotate(192deg) brightness(94%) contrast(85%);
 }
+
 
 .theme-dark {
   --color_red_rgb: var(--red_x);

@@ -357,7 +357,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --theme-accent-s: calc(var(--accent-s) - 48.1%);
   --font-text-theme: "iA Writer Quattro S";
   --font-interface-theme: var(--font-text-theme);
-  --font-editor-theme: "iA Writer Mono V", var(--font-text-theme), var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
   --metadata-input-font-size: var(--font-small);
   --font-normal-size: 1em;
@@ -528,8 +527,6 @@ html[saved-theme="dark"] {
   --background-secondary-alt: #000000;
   --background-modifier-border: #333;
   --background-modifier-border-hover: rgb(94, 94, 94);
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 60%));
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -538,8 +535,6 @@ html[saved-theme="dark"] {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d), 0.8);
-  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d));
   --text-normal: rgb(197, 184, 161);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
@@ -629,15 +624,7 @@ html[saved-theme="light"] {
 
   --background-primary-alt: #fcf5e4;
   --background-secondary-alt: #fcf5e4;
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
   --background-translucent: rgba(255, 255, 255, 0.85);
-  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
-  --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
-  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
-  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l), 0.8);
-  --text-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
   --text-normal: hsl(var(--base-h), var(--base-s), var(--base-d));
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));

@@ -344,6 +344,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
 
   --table-width: 88cqw;
+  --checkbox-marker-color: transparent;
 }
 
 body {
@@ -492,6 +493,9 @@ html[saved-theme="dark"] {
   --magent_hsl: 261 85% 79%;
   --magenta_x: 187, 154, 247;
   --magenta: rgb(var(--magenta_x));
+  --pink_hsl: 331 100% 43%;
+  --pink_x: 217, 0, 105;
+  --pink: rgb(var(--pink_x));
   --orange_x: 255, 158, 100;
   --orange: rgb(var(--orange_x));
   --yellow_x: 224, 175, 104;
@@ -505,6 +509,8 @@ html[saved-theme="dark"] {
   --red1_x: 219, 75, 75;
   --red1: rgb(var(--red1_x));
   --unknown: #ffffff;
+  --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%)
+    contrast(85%);
   --color_red_rgb: var(--red_x);
   --color-red: var(--red);
   --color_purple_rgb: var(--magenta_x);
@@ -548,7 +554,7 @@ html[saved-theme="dark"] {
   --text-error-hover: var(--red);
   --text-selection: var(--unknown);
   --text-on-accent: var(--bg);
-  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --text-highlight-bg: rgba(var(--orange_x), 0.25);
   --text-selection: rgba(var(--blue0_x), 0.6);
   --bold-color: var(--cyan);
   --italic-color: var(--cyan);
@@ -629,6 +635,9 @@ html[saved-theme="dark"] {
   --embed-padding: 1.5rem 1.5rem 0.5rem;
   --canvas-color: var(--bg_highlight_x);
   --toggle-thumb-color: var(--bg);
+  --image-radius: 0px;
+  --date-color: var(--blue);
+  --date-background-color: var(--bg_highlight);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);
@@ -728,6 +737,9 @@ html[saved-theme="light"] {
   --magent_hsl: 261 24% 38%;
   --magenta_x: 90, 74, 120;
   --magenta: rgb(var(--magenta_x));
+  --pink_hsl: 286 24% 38%;
+  --pink_x: 109, 74, 120;
+  --pink: rgb(var(--pink_x));
   --orange_x: 150, 80, 39;
   --orange: rgb(var(--orange_x));
   --yellow_x: 143, 94, 21;
@@ -741,6 +753,8 @@ html[saved-theme="light"] {
   --red1_x: 115, 42, 56;
   --red1: rgb(var(--red1_x));
   --unknown: #000000;
+  --link-external-filter: invert(62%) sepia(9%) saturate(266%) hue-rotate(189deg) brightness(97%)
+    contrast(88%);
   --color_red_rgb: var(--red_x);
   --color-red: var(--red);
   --color_purple_rgb: var(--magenta_x);
@@ -784,7 +798,7 @@ html[saved-theme="light"] {
   --text-error-hover: var(--red);
   --text-selection: var(--unknown);
   --text-on-accent: var(--bg);
-  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --text-highlight-bg: rgba(var(--orange_x), 0.25);
   --text-selection: rgba(var(--blue0_x), 0.6);
   --bold-color: var(--cyan);
   --italic-color: var(--cyan);
@@ -865,6 +879,9 @@ html[saved-theme="light"] {
   --embed-padding: 1.5rem 1.5rem 0.5rem;
   --canvas-color: var(--bg_highlight_x);
   --toggle-thumb-color: var(--bg);
+  --image-radius: 0px;
+  --date-color: var(--blue);
+  --date-background-color: var(--bg_highlight);
 
   /*--light: var(--background-primary);
   --lightgray: var(--background-modifier-border);

@@ -32,5 +32,22 @@
   --icon-dark: brightness(120%);
   --color-external: #389ebd;
   --color-accent: hsl(var(--main-accent-h), var(--main-accent-s), var(--main-accent-d));
+  --color-accent-hover: hsl(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 4%)
+  );
+  --color-accent-shadow: hsla(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 10%),
+    0.4
+  );
   --color-accent-hover-invert: var(--text-muted);
+  --color-accent-bright: hsla(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 5%),
+    1.9
+  );
 }

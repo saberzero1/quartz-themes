@@ -44,13 +44,6 @@
   --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--black));
   --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
   --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
-  --color-base-30: color-mix(in srgb, var(--vauxhall-bg) 90%, var(--vauxhall-fg));
-  --color-base-35: color-mix(in srgb, var(--vauxhall-bg) 95%, var(--vauxhall-fg));
-  --color-base-40: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--vauxhall-fg));
-  --color-base-50: color-mix(in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg));
-  --color-base-60: color-mix(in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg));
-  --color-base-70: color-mix(in srgb, var(--vauxhall-bg) 30%, var(--vauxhall-fg));
-  --color-base-100: color-mix(in srgb, var(--vauxhall-bg) 0%, var(--vauxhall-fg));
   --text-normal: color-mix(in srgb, var(--vauxhall-fg) 30%, var(--white));
   --background-modifier-form-field: var(--color-base-20);
   --background-modifier-hover: var(--color-base-35);
@@ -58,6 +51,5 @@
   --indentation-guide-color: var(--color-base-30);
   --indentation-guide-color-active: var(--color-base-35);
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
-  --text-highlight-bg-active: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --code-background: var(--color-base-25);
 }

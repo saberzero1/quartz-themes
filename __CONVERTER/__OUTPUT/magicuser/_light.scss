@@ -30,7 +30,7 @@
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: #a300cf;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-link: #a200ff;
   --mu-link-hover: #c300ff;
   --mu-external-link: #0033ff;
@@ -59,7 +59,7 @@
   --code-tag: #c300f1;
   --code-value: #f18f00;
   --tab-divider-color: #003364;
-  --mu-folder-icon-zoom: 82%;
+  --mu-folder-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
   --text-normal: #000;
   --text-muted: #353535;
@@ -73,7 +73,8 @@
   --background-secondary-alt: #ffffff;
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
-  --mu-menu-separator-color: #a3a3a338;
+  --mu-property-color: #0072d3;
+  --mu-property-title-color: #0072d3;
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;

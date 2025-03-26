@@ -26,16 +26,95 @@
   --modal-border-color: var(--divider-color);
   --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
   --interactive-accent: hsl(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer));
+  --interactive-accent-hover: hsl(
+    calc(var(--accent-plus-60) - 3),
+    calc(var(--accent-s-pastel) * 1.02),
+    calc(var(--accent-l-closer) * 1.15)
+  );
   --tag-background: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
+  --tag-background-hover: hsla(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-closer),
+    0.35
+  );
   --checkbox-color: var(--interactive-accent);
   --checkbox-color-hover: var(--interactive-accent-hover);
   --text-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
+  --text-highlight-bg: hsla(
+    var(--accent-plus-60),
+    var(--accent-s-pastel),
+    var(--accent-l-closer),
+    0.6
+  );
   --table-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.2);
+  --table-selection-border-color: hsl(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-readable)
+  );
+  --nav-item-background-selected: hsla(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-closer),
+    0.17
+  );
   --blockquote-border-color: var(--interactive-accent);
   --accent-l-readable: min(var(--accent-l), 35%);
   --accent-l-closer: max(var(--accent-l), 60%);
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 35%),
+    calc(var(--bg-l-modifier) + 75%)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 35%),
+    calc(var(--bg-l-modifier) + 70%)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 35%),
+    calc(var(--bg-l-modifier) + 65%)
+  );
+  --background-secondary-alt: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 35%),
+    calc(var(--bg-l-modifier) + 60%)
+  );
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 35%),
+    calc(var(--bg-l-modifier) + 50%),
+    0.5
+  );
   --background-modifier-form-field: var(--interactive-normal);
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 25%),
+    calc(var(--bg-l-modifier) + 85%)
+  );
   --text-normal: hsl(0, 0%, 13%);
   --text-muted: hsl(var(--accent-h), 15%, 33%);
   --text-faint: hsl(var(--accent-h), 20%, 47%);
+  --text-accent-hover: hsl(
+    calc(var(--accent-minus-60) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l-readable) * 1.15)
+  );
+  --interactive-normal: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 40%),
+    calc(var(--bg-l-modifier) + 87%)
+  );
+  --interactive-hover: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 40%),
+    calc(var(--bg-l-modifier) + 90%)
+  );
+  --hr-color: hsl(
+    var(--accent-h),
+    calc(var(--bg-s-modifier) + 25%),
+    calc(var(--bg-l-modifier) + 90%)
+  );
 }

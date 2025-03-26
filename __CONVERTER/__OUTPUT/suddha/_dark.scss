@@ -35,5 +35,28 @@
   --icon-dark: brightness(90%);
   --color-external: #4ed5ff;
   --color-accent: hsl(var(--main-accent-h), var(--main-accent-s), var(--main-accent-d));
+  --color-accent-hover: hsl(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 10%)
+  );
+  --color-accent-shadow: hsla(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 10%),
+    0.2
+  );
   --color-accent-hover-invert: var(--text-muted);
+  --color-accent-shadow-more: hsla(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 10%),
+    0.1
+  );
+  --color-accent-bright: hsla(
+    var(--main-accent-h),
+    var(--main-accent-s),
+    calc(var(--main-accent-d) + 20%),
+    0.9
+  );
 }

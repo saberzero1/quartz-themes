@@ -10,6 +10,11 @@
   --background-secondary-s: calc(var(--background-s) * 0.875);
   --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
   --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
   --background-dark: rgb(23, 35, 62);
   --background-extra-dark: #000;
   --background-primary-alt: var(--background-secondary);
@@ -26,6 +31,11 @@
   --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --text-selection: var(--accent-on-selection);
+  --ss-light-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
   --text-highlight-bg: var(--ss-light-highlight-bg);
   --ss-light-text-main: 0, 0, 0;
   --text-normal: rgb(var(--ss-light-text-main));

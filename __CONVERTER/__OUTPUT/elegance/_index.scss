@@ -368,8 +368,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-top: 2px;
   --checkbox-left: 0px;
   --checkbox-margin: 0px 6px 0px -1.35em;
-
-  --signature: "֎";
 }
 
 body {
@@ -534,12 +532,6 @@ html[saved-theme="dark"] {
   --file-margins: 8px;
   --fbold: rgb(255, 251, 200);
   --fitalic: rgb(255, 251, 200);
-  --bg-green2: rgb(32, 225, 180);
-  --bg-blue2: rgb(29, 173, 226);
-  --bg-purple2: rgb(180, 37, 252);
-  --bg-magenta2: rgb(249, 75, 142);
-  --bg-orange2: rgb(255, 145, 18);
-  --arrow1: rgba(99, 99, 99, 0.687);
   --tab-text-nofocus: rgba(255, 255, 255, 0.7);
   --bg-green: rgba(32, 225, 180, 0.4);
   --bg-blue: rgba(29, 174, 226, 0.4);
@@ -682,12 +674,6 @@ html[saved-theme="light"] {
   --file-margins: 4px;
   --fbold: rgb(55, 0, 0);
   --fitalic: rgb(55, 0, 0);
-  --bg-green2: rgba(0, 185, 142, 0.905);
-  --bg-blue2: rgba(1, 149, 203, 0.847);
-  --bg-purple2: rgba(150, 8, 220, 0.8);
-  --bg-magenta2: rgba(220, 10, 90, 0.85);
-  --bg-orange2: rgba(255, 132, 0, 0.85);
-  --arrow1: rgba(211, 211, 211, 0.852);
   --tab-text-nofocus: rgba(0, 0, 0, 0.6);
   --bg-green: rgba(1, 224, 172, 0.5);
   --bg-blue: rgba(9, 168, 225, 0.45);

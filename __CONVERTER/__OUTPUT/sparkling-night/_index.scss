@@ -537,6 +537,8 @@ html[saved-theme="dark"] {
   --link-url-text-color: var(--tropical-indigo);
   --folder-title-color: var(--white);
   --file-title-color: var(--white);
+  --folder-filter: invert(30%) sepia(99%) saturate(1210%) hue-rotate(51deg) brightness(120%)
+    contrast(100%);
   --progress-bar-color: var(--tropical-indigo);
   --highlight-background-color: var(--bright-green);
   --highlight-text-color: var(--dark-purple);
@@ -674,6 +676,8 @@ html[saved-theme="light"] {
   --link-url-text-color: var(--tropical-indigo);
   --folder-title-color: var(--white);
   --file-title-color: var(--white);
+  --folder-filter: invert(30%) sepia(99%) saturate(1210%) hue-rotate(51deg) brightness(120%)
+    contrast(100%);
   --progress-bar-color: var(--tropical-indigo);
   --highlight-background-color: var(--bright-green);
   --highlight-text-color: var(--dark-purple);
