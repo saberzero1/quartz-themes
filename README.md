@@ -133,10 +133,10 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 
 ### Install script (Deprecated)
 
+> [!CAUTION] > **This setup method is the previous installation method and is not recommended for new users.**
+
 <details>
 <summary>Install script</summary>
-
-> [!CAUTION] > **This setup method is the previous installation method and is not recommended for new users.**
 
 Clone the project next to your Quartz repository.
 
