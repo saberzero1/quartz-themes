@@ -1,0 +1,24 @@
+:root[saved-theme="light"] {
+  --background-primary: #ffffff;
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: #c6c6c6;
+  --text-normal: #262626;
+  --text-faint: #767676;
+  --text-selection: #da5c8133;
+  --code-normal: var(--text-normal);
+  --code-value: var(--text-normal);
+  --code-tag: #005f87;
+  --code-operator: var(--text-normal);
+  --code-keyword: #767676;
+  --code-function: var(--text-normal);
+  --code-string: #d75f87;
+  --code-constant: #d75f87;
+  --code-comment: #767676;
+  --code-url: #008ec4;
+  --code-background: #ecebeb;
+  --interactive-accent: #da5c81;
+  --interactive-before: #4e4e4e;
+  --scrollbar-bg: #eeeeee;
+  --nav-item-background-active: #e25f86;
+  --nav-item-color-active: #eeeeee;
+}

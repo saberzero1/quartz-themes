@@ -1,0 +1,33 @@
+:root[saved-theme="light"] {
+  --background-modifier-cover: rgba(170, 170, 170, 0.6);
+  --background-modifier-border-hover: var(--color-base-25);
+  --color-red-rgb: 255, 59, 48;
+  --color-red: #ff3b30;
+  --color-orange-rgb: 255, 149, 0;
+  --color-orange: #ff9500;
+  --color-yellow-rgb: 255, 204, 0;
+  --color-yellow: #ffcc00;
+  --color-green-rgb: 40, 205, 65;
+  --color-green: #28cd41;
+  --color-cyan-rgb: 85, 190, 240;
+  --color-cyan: #55bef0;
+  --color-blue-rgb: 0, 122, 255;
+  --color-blue: #007aff;
+  --color-purple-rgb: 175, 82, 222;
+  --color-purple: #af52de;
+  --color-pink-rgb: 255, 45, 85;
+  --color-pink: #ff2d55;
+  --divider-color: rgba(0, 0, 0, 0.05) !important;
+  --modal-border-color: rgba(0, 0, 0, 0.1);
+  --modal-background: rgb(from var(--background-secondary) r g b / 75%) !important;
+  --hr-color: var(--background-modifier-hover);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
+  --input-shadow: 0px 0px 0px 1px var(--background-modifier-border),
+    0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset !important;
+  --interactive-normal: var(--background-primary);
+  --modal-background: var(--background-secondary) !important;
+  --modal-border-color: rgba(0, 0, 0, 0.1);
+  --slider-thumb-border-color: var(--color-base-00);
+}

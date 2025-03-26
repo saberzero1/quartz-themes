@@ -1,0 +1,47 @@
+:root[saved-theme="dark"] {
+  --base-c-m: calc(var(--base-c) - 10%);
+  --c-00: var(--base-c-m);
+  --c-05: calc(var(--base-c-m) + 1%);
+  --c-10: calc(var(--base-c-m) + 5%);
+  --c-20: calc(var(--base-c-m) - 4%);
+  --c-25: calc(var(--base-c-m) + 3%);
+  --c-30: calc(var(--base-c-m) + 3%);
+  --c-35: calc(var(--base-c-m) + 19%);
+  --c-40: calc(var(--base-c-m) + 18%);
+  --c-50: calc(var(--base-c-m) + 60%);
+  --c-60: calc(var(--base-c-m) + 64%);
+  --c-70: calc(var(--base-c-m) + 66%);
+  --c-100: calc(var(--base-c-m) + 68%);
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 4),
+    calc(var(--accent-s) + 4%),
+    calc(var(--accent-l) + 5%)
+  );
+  --color-accent-1: hsl(
+    calc(var(--accent-h) + 4),
+    calc(var(--accent-s) + 4%),
+    calc(var(--accent-l) + 6%)
+  );
+  --color-base-00: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-00));
+  --color-base-05: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-05));
+  --color-base-10: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-10));
+  --color-base-20: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-20));
+  --color-base-25: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-25));
+  --color-base-30: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-30));
+  --color-base-35: hsl(var(--theme-tint-secondary), var(--theme-sat-secondary), var(--c-35));
+  --color-base-40: hsl(var(--theme-tint-secondary), var(--theme-sat-secondary), var(--c-40));
+  --color-base-50: hsl(var(--theme-tint-text), var(--theme-sat), var(--c-50));
+  --color-base-60: hsl(var(--theme-tint), var(--theme-sat), var(--c-60));
+  --color-base-70: hsl(var(--theme-tint), var(--theme-sat), var(--c-70));
+  --color-base-100: hsl(var(--theme-tint), var(--theme-sat), var(--c-100));
+  --text-muted: var(--color-base-50) !important;
+  --background-modifier-form-field: var(--color-base-10);
+  --background-modifier-message: var(--color-accent-1);
+  --background-modifier-border: var(--color-base-35);
+  --color-muted: #908caa;
+  --color-muted-rgb: 144, 140, 170;
+  --base-c: 15%;
+  --accent-h: 238;
+  --accent-s: 100%;
+  --accent-l: 70%;
+}

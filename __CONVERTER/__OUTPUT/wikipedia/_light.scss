@@ -1,0 +1,55 @@
+:root[saved-theme="light"] {
+  --color-red-rgb: 232, 51, 51;
+  --color-red: rgb(232, 41, 41);
+  --color-cyan-rgb: 0, 194, 97;
+  --color-cyan: rgb(0, 163, 81);
+  --color-orange-rgb: 230, 111, 0;
+  --color-orange: rgb(230, 111, 0);
+  --color-yellow-rgb: 204, 204, 0;
+  --color-yellow: rgb(163, 163, 0);
+  --color-green-rgb: 97, 194, 0;
+  --color-green: rgb(82, 163, 0);
+  --color-blue-rgb: 0, 105, 224;
+  --color-blue: rgb(0, 105, 224);
+  --color-purple-rgb: 81, 0, 194;
+  --color-purple: rgb(140, 63, 247);
+  --color-pink-rgb: 194, 0, 81;
+  --color-pink: rgb(194, 0, 81);
+  --callout-quote: 110, 110, 110;
+  --link-color: hsl(calc(var(--accent-h) + 5), var(--accent-s), calc(var(--accent-l) - 5%));
+  --link-unresolved-color: var(--color-accent-1);
+  --link-external-color: hsl(
+    calc(var(--accent-h) + 20),
+    var(--accent-s),
+    calc(var(--accent-l) - 5%)
+  );
+  --link-external-color-hover: hsl(
+    calc(var(--accent-h) + 10),
+    var(--accent-s),
+    calc(var(--accent-l) + 3%)
+  );
+  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 40%);
+  --tab-gradient: linear-gradient(
+    to top,
+    var(--color-accent-2) 0px,
+    var(--color-accent-3) 0px,
+    var(--background-primary) 100%
+  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 2.5%));
+  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) + 10%));
+  --color-accent-3: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
+  --h6-background: rgb(235, 235, 210);
+  --background-modifier-border: #a2a9b1;
+  --color-base-00: #ffffff;
+  --color-base-05: #f8f9fa;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #989898;
+  --color-base-60: #707070;
+  --color-base-70: #5a5a5a;
+  --color-base-100: #222222;
+}

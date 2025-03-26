@@ -1,0 +1,38 @@
+:root[saved-theme="dark"] {
+  --background-primary: var(--dragonBlack3);
+  --background-primary-alt: var(--dragonBlack3);
+  --background-secondary: var(--dragonBlack2);
+  --background-secondary-alt: var(--dragonBlack4);
+  --text-normal: var(--dragonWhite);
+  --text-faint: var(--dragonGray2);
+  --text-title-h1: var(--dragonRed);
+  --text-title-h2: var(--dragonOrange);
+  --text-title-h3: var(--dragonYellow);
+  --text-title-h4: var(--dragonGreen);
+  --text-title-h5: var(--dragonAqua);
+  --text-title-h6: var(--dragonBlue2);
+  --text-link: var(--dragonBlue2);
+  --text-a: var(--dragonTeal);
+  --text-a-hover: var(--dragonPink);
+  --text-a-url: var(--dragonTeal);
+  --text-mark: rgba(139, 164, 176, 0.4);
+  --pre-code: var(--dragonBlack0);
+  --text-highlight-bg: var(--dragonBlack5);
+  --interactive-accent: var(--dragonBlue2);
+  --interactive-before: var(--dragonBlack6);
+  --background-modifier-border: var(--dragonBlue2);
+  --text-accent: var(--dragonGreen);
+  --interactive-accent-rgb: var(--dragonGreen2);
+  --inline-code: var(--dragonGreen);
+  --code-block: var(--dragonGray2);
+  --vim-cursor-background: var(--dragonWhite);
+  --vim-cursor-color: var(--dragonBlack3);
+  --text-selection: rgba(139, 164, 176, 0.5);
+  --text-tag: var(--dragonViolet);
+  --task-checkbox: var(--dragonBlack6);
+  --table-header: var(--dragonBlack4);
+  --table-row-even: var(--dragonBlack2);
+  --table-row-odd: var(--dragonBlack3);
+  --table-hover: var(--dragonBlack4);
+  --bold-color: var(--dragonWhite);
+}

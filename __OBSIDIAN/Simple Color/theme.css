@@ -1,0 +1,19 @@
+body {
+	--font-text-theme: Georgia, serif;
+	--background-primary: black;
+	--background-secondary: black;	
+	--titlebar-background: black;
+	--titlebar-background-focused: black;
+	--h1-color: #bf616a;
+	--h2-color: #d08770;
+	--h3-color: #ebcb8b;
+	--h4-color:  #a3be8c;
+	--h5-color:  #b48ead;
+	--h6-color: #8fbcbb;
+	--text-color: #81a1c1;
+}
+
+.callout[data-callout="definition"] {
+  --callout-color: 255, 255, 255;
+  --callout-icon: lucide-book-a;
+}
