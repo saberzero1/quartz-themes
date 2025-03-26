@@ -586,7 +586,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --graph-line: var(--cyan-6);
   --graph-node: var(--text-muted);
   --graph-node-resolved: var(--yellow-4);
-  --graph-node-unresolved: var(var(--link-unresolved-color));
+  --graph-node-unresolved: var(--link-unresolved-color);
   --graph-node-focused: var(--pink-2);
   --graph-node-tag: var(--tag-color);
   --graph-node-attachment: var(--text-muted);
