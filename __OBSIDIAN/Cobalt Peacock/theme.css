@@ -34,7 +34,7 @@ svg * {
 }
 
 .theme-dark {
-	--color-yellow: #ffee80;	
+	--color-yellow: #ffee80;
 	--color-orange: #ff9d00;
 	--color-comment-blue: #0088ff;
 	--color-light-green: #9eff80;
@@ -112,7 +112,7 @@ svg * {
 	--status-bar-border-color: var(--color-dark-blue);
 	--status-bar-text-color: #FFFFFF;
 
-	--nav-item-color: var(#FFFFFF)	;
+	--nav-item-color: #FFFFFF	;
 	--nav-item-color-hover:	var(--color-yellow);
 	--nav-item-color-active:var(--color-orange)	;
 	--nav-item-color-selected:var(--color-deep-blue)	;
@@ -190,8 +190,8 @@ svg * {
 
 	--tag-color: var(--color-cyan);
 	--tag-color-hover: var(--color-selected-blue);
-	--tag-background: var(--background-secondary); 
-	--tag-background-hover: var(--color-pink); 
+	--tag-background: var(--background-secondary);
+	--tag-background-hover: var(--color-pink);
 	--tag-border-color: var(--color-dark-blue);
 	--tag-border-color-hover: var(--color-dark-blue);
 	--text-selection: var(--color-comment-blue);
@@ -202,7 +202,7 @@ svg * {
 	--text-on-accent: #FFFFFF;
 
 	--checkbox-marker-color: var(--background-primary);
-	--checkbox-color: var(--color-yellow);	
+	--checkbox-color: var(--color-yellow);
 	--checkbox-color-hover: var(--color-selected-blue);
 	--checkbox-border-color: #FFFFFF;
 	--checkbox-border-color-hover: var(--color-selected-blue);
@@ -212,11 +212,8 @@ svg * {
 
 	--indentation-guide-color: #ed9299;
   }
-  
+
   .theme-light {
 	--background-primary: #2240;
 	--background-secondary: #D9C9FF;
   }
-
-  
-  
