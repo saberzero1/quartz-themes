@@ -472,8 +472,8 @@ html[saved-theme="dark"] {
   --color-accent-h-2: 253;
   --color-accent-s-2: 92%;
   --color-accent-l-2: 85%;
-  --color-accent-1: hsl(var(--color-accent-h-1) var(--color-accent-s-1) var(--color-accent-l-1));
-  --color-accent-2: hsl(var(--color-accent-h-2) var(--color-accent-s-2) var(--color-accent-l-2));
+  --color-accent-1: hsl(var(--color-accent-h-1), var(--color-accent-s-1), var(--color-accent-l-1));
+  --color-accent-2: hsl(var(--color-accent-h-2), var(--color-accent-s-2), var(--color-accent-l-2));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --interactive-normal: var(--color-base-30);
@@ -608,8 +608,8 @@ html[saved-theme="light"] {
   --color-accent-h-2: 255;
   --color-accent-s-2: 90%;
   --color-accent-l-2: 75%;
-  --color-accent-1: hsl(var(--color-accent-h-1) var(--color-accent-s-1) var(--color-accent-l-1));
-  --color-accent-2: hsl(var(--color-accent-h-2) var(--color-accent-s-2) var(--color-accent-l-2));
+  --color-accent-1: hsl(var(--color-accent-h-1), var(--color-accent-s-1), var(--color-accent-l-1));
+  --color-accent-2: hsl(var(--color-accent-h-2), var(--color-accent-s-2), var(--color-accent-l-2));
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
