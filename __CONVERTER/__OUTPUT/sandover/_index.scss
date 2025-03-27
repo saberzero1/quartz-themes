@@ -648,7 +648,7 @@ html[saved-theme="light"] {
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: color-mix(var(--color-accent), var(--color-base-100) 7.5%);
+  --color-accent-1: color-mix(var(--color-accent), var(--color-base-100) 8%);
   --color-accent-2: color-mix(var(--color-accent), var(--color-base-100) 15%);
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
