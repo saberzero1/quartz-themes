@@ -1089,19 +1089,13 @@ body {
   --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
   --secondary: var(
     --graph-node-focused,
-    var(
-      --text-accent,
-      var(--link-color, var(--text-accent, var(--color-accent, hsl(258, 88%, 66%))))
-    )
+    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent, #8a5cf5))))
   ) !important;
   --tertiary: var(
     --graph-node-tag,
     var(
       --color-green,
-      var(
-        --link-color-hover,
-        var(--text-accent-hover, var(--color-accent-2, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
-      )
+      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
     )
   ) !important;
   --highlight: var(
@@ -1148,22 +1142,13 @@ body {
   --dark: var(--h1-color, var(--text-faint, #666666)) !important;
   --secondary: var(
     --graph-node-focused,
-    var(
-      --text-accent,
-      var(
-        --link-color,
-        var(--text-accent, var(--color-accent-1, hsl(258 - 3, 88% * 1.02, 66% * 1.15)))
-      )
-    )
+    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent-1, #a386f9))))
   ) !important;
   --tertiary: var(
     --graph-node-tag,
     var(
       --color-green,
-      var(
-        --link-color-hover,
-        var(--text-accent-hover, var(--color-accent-2, hsl(258 - 5, 88% * 1.05, 66% * 1.29)))
-      )
+      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
     )
   ) !important;
   --highlight: var(
