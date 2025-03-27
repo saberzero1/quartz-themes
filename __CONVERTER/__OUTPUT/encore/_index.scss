@@ -981,9 +981,19 @@ html[saved-theme="dark"] {
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
+  --color-accent-1-lighten: 15%;
+  --color-accent-2-lighten: 29%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
-  --color-accent-2: color-mix(in srgb, var(--color-accent) 71%, var(--color-base-100));
+  --color-accent-1: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-base-100) var(--color-accent-1-lighten)
+  );
+  --color-accent-2: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-base-100) var(--color-accent-2-lighten)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --interactive-normal: var(--color-base-30);
@@ -1050,9 +1060,19 @@ html[saved-theme="light"] {
   --color-base-60: #707070;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
+  --color-accent-1-lighten: 8%;
+  --color-accent-2-lighten: 15%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: color-mix(in srgb, var(--color-accent) 92%, var(--color-base-100));
-  --color-accent-2: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
+  --color-accent-1: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-base-100) var(--color-accent-1-lighten)
+  );
+  --color-accent-2: color-mix(
+    in srgb,
+    var(--color-accent),
+    var(--color-base-100) var(--color-accent-2-lighten)
+  );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
