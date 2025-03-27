@@ -448,16 +448,8 @@ html[saved-theme="dark"] {
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 102%),
-    calc(var(--accent-l) * 115%)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 105%),
-    calc(var(--accent-l) * 129%)
-  );
+  --color-accent-1: lch(from var(--color-accent) calc(l - 3) calc(c + 2) calc(h + 15));
+  --color-accent-2: lch(from var(--color-accent) calc(l - 5) calc(c + 5) calc(h + 29));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --interactive-normal: var(--color-base-30);
@@ -623,16 +615,8 @@ html[saved-theme="light"] {
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 101%),
-    calc(var(--accent-l) * 107.5%)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 102%),
-    calc(var(--accent-l) * 115%)
-  );
+  --color-accent-1: lch(from var(--color-accent) calc(l - 1) calc(c + 1) calc(h + 7.5));
+  --color-accent-2: lch(from var(--color-accent) calc(l - 3) calc(c + 2) calc(h + 15));
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
