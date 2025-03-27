@@ -895,13 +895,13 @@ html[saved-theme="dark"] {
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02 * 100%),
-    calc(var(--accent-l) * 1.15 * 100%)
+    calc(var(--accent-s) * 102%),
+    calc(var(--accent-l) * 115%)
   );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05 * 100%),
-    calc(var(--accent-l) * 1.29 * 100%)
+    calc(var(--accent-s) * 105%),
+    calc(var(--accent-l) * 129%)
   );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
@@ -997,13 +997,13 @@ html[saved-theme="light"] {
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01 * 100%),
-    calc(var(--accent-l) * 1.075 * 100%)
+    calc(var(--accent-s) * 101%),
+    calc(var(--accent-l) * 107.5%)
   );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02 * 100%),
-    calc(var(--accent-l) * 1.15 * 100%)
+    calc(var(--accent-s) * 102%),
+    calc(var(--accent-l) * 115%)
   );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
