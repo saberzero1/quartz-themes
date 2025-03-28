@@ -7,20 +7,6 @@
 
 @use "overrides";
 
-/* Get an option from a set. */
-@function get($collection, $value, $sub: false) {
-  @if $sub {
-    @return map-get(#{$collection}, #{$value});
-  } @else {
-    @return map-get(#{$collection}, #{$sub}, #{$value});
-  }
-}
-
-/* Color converter*/
-@function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
-}
-
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -1068,15 +1054,6 @@ html[saved-theme="dark"] {
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1182,15 +1159,6 @@ html[saved-theme="light"] {
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1228,7 +1196,7 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color_convert(var(--text-a, var(--link-color)), 15%);
+      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         --textHighlight-fallback: 255, 208, 0;

@@ -7,20 +7,6 @@
 
 @use "overrides";
 
-/* Get an option from a set. */
-@function get($collection, $value, $sub: false) {
-  @if $sub {
-    @return map-get(#{$collection}, #{$value});
-  } @else {
-    @return map-get(#{$collection}, #{$sub}, #{$value});
-  }
-}
-
-/* Color converter*/
-@function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
-}
-
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -709,15 +695,6 @@ html[saved-theme="dark"] {
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23eee" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
   --folder-inactive: 70%;
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -773,15 +750,6 @@ html[saved-theme="light"] {
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23222" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
   --folder-inactive: 85%;
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -819,7 +787,7 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color_convert(var(--text-a, var(--link-color)), 15%);
+      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         --textHighlight-fallback: 255, 208, 0;

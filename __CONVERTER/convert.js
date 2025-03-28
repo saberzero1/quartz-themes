@@ -1,5 +1,6 @@
-const fs = require("fs")
-const path = require("path")
+import convertCssColorsToRgbWithSass from "./color-convert.mjs"
+import * as fs from "fs"
+import * as path from "path"
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
@@ -292,8 +293,11 @@ function removeNonVariableLines(cssString) {
     // Join the filtered lines back into a single string
     const updatedContent = emptyColorLines.join("\n")
 
+    // Convert colors to rgb
+    const convertedContent = convertCssColorsToRgbWithSass(updatedContent)
+
     // Write the updated content back to the file
-    return updatedContent
+    return convertedContent
 
     //console.log(`Removed non-variable lines from '${filePath}'`);
   } catch (error) {
@@ -532,5 +536,22 @@ manifestCollection.forEach((manifest) => {
     `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
     `//LIGHT`,
     removeNonVariableLines(darkValue2),
+  )
+
+  // Remove remaining comments
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
+    "",
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
+    "",
+  )
+  replaceInFile(
+    `./__CONVERTER/__OUTPUT/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
+    "",
   )
 })

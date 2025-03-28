@@ -7,20 +7,6 @@
 
 //OVERRIDES
 
-/* Get an option from a set. */
-@function get($collection, $value, $sub: false) {
-  @if $sub {
-    @return map-get(#{$collection}, #{$value});
-  } @else {
-    @return map-get(#{$collection}, #{$sub}, #{$value});
-  }
-}
-
-/* Color converter*/
-@function color_convert($color, $opacity: 0%) {
-  @return color-mix(in srgb, #{$color}, #0000 calc(100% - #{$opacity}));
-}
-
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
@@ -455,15 +441,6 @@ html[saved-theme="dark"] {
 
 //DARK
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout=#{$type}] {
@@ -517,15 +494,6 @@ html[saved-theme="light"] {
 
 //LIGHT
 
-  /*--light: var(--background-primary);
-  --lightgray: var(--background-modifier-border);
-  --gray: var(--checkbox-border-color);
-  --darkgray: var(--text-normal);
-  --dark: var(--h1-color);
-  --secondary: var(--link-color);
-  --tertiary: var(--link-color-hover);
-  --highlight: var(--tag-background);
-  --textHighlight: var(--text-highlight-bg);*/
   .callout {
     @each $type in $callout-types {
       &[data-callout=#{$type}] {
@@ -539,7 +507,7 @@ html[saved-theme="light"] {
 
 body {
   background-color: var(--background-primary);
-  
+
   .callout {
     border: 1px solid var(--border);
     background-color: var(--bg);
@@ -563,7 +531,7 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color_convert(var(--text-a, var(--link-color)), 15%);
+      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         --textHighlight-fallback: 255, 208, 0;
@@ -596,7 +564,7 @@ body {
       }
     }
   }
-  
+
   /* TAGS */
   a.tag {
     background-color: var(--tag-background);
@@ -675,7 +643,7 @@ body {
     border-radius: 2px;
     background-color: var(--text-normal);
   }
-  
+
   /* HEADINGS */
   h1 {
     --font-weight: var(--h1-weight);
@@ -773,7 +741,7 @@ body {
   h6 a {
     --link-weight: var(--h6-weight);
   }
-  
+
   /* CODE */
   pre {
     border: 1px solid var(--background-modifier-border, var(--border));
@@ -786,7 +754,7 @@ body {
     color: var(--markup-code, var(--code-normal));
     background-color: var(--code-background);
   }
-  
+
   /* EXPLORER, TOC, BACKLINKS */
   .toc-content,
   .explorer-content,
@@ -856,7 +824,7 @@ body {
       }
     }
   }
-  
+
   /* SEARCH */
   .search .search-button {
     background-color: var(--background-modifier-form-field, var(--search-result-background, var(--background-primary, var(--lightgray))));
@@ -866,7 +834,7 @@ body {
       stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     }
   }
-  
+
   /* DARKMODE */
   .darkmode {
     & svg {
@@ -874,17 +842,17 @@ body {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     }
   }
-  
+
   /* PAGE TITLE */
   .page-title a {
     color: var(--h2-color, var(--link-color, var(--darkgray)))
   }
-  
+
   /* METADATA */
   .content-meta {
     color: var(--text-faint);
   }
-  
+
   /* GRAPH */
   .graph {
     & > .graph-outer {
@@ -904,14 +872,14 @@ body {
       }
     }
   }
-  
+
   /* MISC */
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
     border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   }
-  
+
   .clipboard-button {
     color: var(--text-muted);
     border-color: var(--checkbox-border-color, var(--text-faint));
@@ -924,17 +892,17 @@ body {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     }
   }
-  
+
   details.toc {
     & summary {
       cursor: pointer;
-  
+
       &::marker {
         color: var(--text-muted);
       }
     }
   }
-  
+
   /* POPOVER */
   .popover {
     & .popover-inner {
@@ -942,7 +910,7 @@ body {
       background-color: var(--background-primary);
     }
   }
-  
+
   /* BACKGROUNDS */
   section {
     background-color: var(--background-primary);
@@ -955,11 +923,11 @@ body {
       }
     }
   }
-  
+
   .search>.search-container>.search-space>* {
     background-color: var(--background-secondary, var(--background-primary));
   }
-  
+
   /* TEXT */
   strong {
     color: var(--bold-color);
