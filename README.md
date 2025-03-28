@@ -212,6 +212,9 @@ npm run update
 
 </details>
 
+> [!TIP]
+> If you find it cumbersome and boring to manually click through preview links one by one to see theme effects, you might want to check out this tool: [quartz-themes-preview-switcher](https://github.com/Tuscan-blue/quartz-themes-preview-switcher) .
+
 | Supported Modes                          | Obsidian Theme Name              | Theme Compatibility Status                     | Live Preview                                                                    |
 | ---------------------------------------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
 | <img src="media/dark.svg" alt="DARK"/>   | `80s-neon`                       | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/80s-neon/)                       |
