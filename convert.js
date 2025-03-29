@@ -338,6 +338,16 @@ function isFullTheme(theme) {
   return isDarkTheme(theme) && isLightTheme(theme)
 }
 
+/**
+ * Gets extras for a specific game
+ *
+ * @param {string} theme theme name
+ * @returns {string[]} Array of extras to install.
+ */
+function getExtras(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["extras"]
+}
+
 // STEPS:
 //
 // 1. Get current folder/working directory.
@@ -373,7 +383,7 @@ clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
   )
   // INIT ONLY
   if (args[0] === "INIT") {
@@ -435,6 +445,22 @@ manifestCollection.forEach((manifest) => {
   }
 })
 
+// extras
+manifestCollection.forEach((manifest) => {
+  const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
+  themeExtras.forEach((extra) => {
+    copyFileToDirectory(
+      `./extras/_${extra}.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
+    )
+  })
+  // Default override
+  copyFileToDirectory(
+    `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
+  )
+})
+
 // STEP 5
 // README.md
 manifestCollection.forEach((manifest) => {
@@ -471,10 +497,15 @@ const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}
 let hasDarkOptions = true
 let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
+  let extras = `@use "extras";`
+  const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
+  themeExtras.forEach((extra) => {
+    extras += `\n@use "extras/_${extra}.scss";`
+  })
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//EXTRAS`,
-    `@use "extras";`,
+    extras,
   )
 })
 manifestCollection.forEach((manifest) => {
@@ -554,6 +585,20 @@ manifestCollection.forEach((manifest) => {
       removeNonVariableLines(lightValue2),
     )
   }
+
+  // Unset color-scheme for single mode themes
+  // light only
+  replaceInFile(
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//DARK`,
+    `color-scheme: light;`,
+  )
+  // dark only
+  replaceInFile(
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `//LIGHT`,
+    `color-scheme: dark;`,
+  )
 
   // Remove remaining comments
   replaceInFile(
