@@ -103,7 +103,7 @@ curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
 
 echo "Fetching extras..."
 
-curl -s -S -o ${THEME_DIR}/extras/_mode-toggle.scss "${CSS_EXTRAS_URL}"
+curl -s -S -o ${THEME_DIR}/extras/_hide-toggle.scss "${CSS_EXTRAS_URL}"
 
 echo "Fetching README file..."
 
@@ -146,7 +146,7 @@ else
   exit 1
 fi
 
-if test -f ${THEME_DIR}/extras/_mode-toggle.scss; then
+if test -f ${THEME_DIR}/extras/_hide-toggle.scss; then
   echo_ok "extras/_index.scss exists"
 fi
 
