@@ -562,16 +562,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-tertiary: hsl(calc(0 + var(--accent-h)), 100%, 80%, 0.08);
-  --color-base-100: hsl(calc(0 + var(--accent-h)), 20%, 80%);
-  --color-base-00: hsl(calc(0 + var(--accent-h)), 11%, 25.5%);
-  --color-base-10: hsl(calc(0 + var(--accent-h)), 11.5%, 18.5%);
-  --color-base-20: hsl(calc(0 + var(--accent-h)), 10%, 20%);
-  --color-base-25: hsl(calc(0 + var(--accent-h)), 11.5%, 10%);
-  --color-base-30: hsl(calc(0 + var(--accent-h)), 12%, 33%);
-  --color-base-60: hsl(calc(0 + var(--accent-h)), 20%, 13%);
-  --color-base-70: hsl(calc(0 + var(--accent-h)), 50%, 73%);
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

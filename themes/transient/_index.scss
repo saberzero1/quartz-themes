@@ -493,14 +493,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --color-base-00: #0c0c11ee;
-  --color-base-30: #191926;
-  --color-base-40: #151520;
-  --background-primary: transparent;
-  --background-secondary: transparent;
-  --code-background: #22223333;
-  --modal-background: var(--color-base-00);
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

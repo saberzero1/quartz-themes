@@ -525,13 +525,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --color-base-00: #111111;
-  --header-color: var(--interactive-accent);
-  --bold-color: white;
-  --italic-color: white;
-  --text-highlight-bg: #9ece6a66;
-  --text-faint: #565f8988;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

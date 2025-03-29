@@ -514,35 +514,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-primary: #2f3136;
-  --background-primary-alt: #3b3f48;
-  --background-secondary: #202225;
-  --background-secondary-alt: #0c1018d1;
-  --text-normal: #bbc0c5;
-  --text-graph: #dde0e5;
-  --dot-graph: #bbc0c5;
-  --text-faint: #a09b80;
-  --text-title-h1: #939bd6;
-  --text-title-h2: #ba7390;
-  --text-title-h3: #b78b60;
-  --text-title-h4: #a79645;
-  --text-title-h5: #859676;
-  --text-title-h6: #799097;
-  --text-link: #59a2c5;
-  --text-a: #59a2c5;
-  --text-a-hover: #b3a14b;
-  --text-muted: #bbc0c5;
-  --text-mark: #686028;
-  --pre-code: #272524d9;
-  --text-highlight-bg: #686028;
-  --interactive-accent: #a79040;
-  --interactive-before: #5e6565;
-  --background-modifier-border: #92a1a17a;
-  --blockquote-border: #6a7070;
-  --text-accent: #ff9640ba;
-  --interactive-accent-rgb: #fe8019;
-  --text-selection: #406488;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

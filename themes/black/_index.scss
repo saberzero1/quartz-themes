@@ -489,10 +489,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-primary: #000;
-  --background-secondary: #000;
-  --titlebar-background-focused: #000;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

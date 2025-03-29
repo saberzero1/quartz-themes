@@ -506,29 +506,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --color-base-00: #ffffff;
-  --color-base-10: #f5f6f8;
-  --color-base-20: #f2f3f5;
-  --color-base-05: #e3e5e8;
-  --color-base-30: #ddd;
-  --color-base-25: rgb(242, 242, 242);
-  --color-base-35: rgb(250, 250, 250);
-  --color-base-50: #999999;
-  --color-base-60: #919191;
-  --color-base-70: #888888;
-  --color-base-100: #2e3338;
-  --color-accent: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 25%),
-    calc(var(--accent-l) - 4%)
-  );
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 27%),
-    calc(var(--accent-l) - 6%)
-  );
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

@@ -434,14 +434,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --code-font-family: "Hack";
-  --link-color: #106ba3;
-  --text-color: #202b33;
-  --brackets-color: #a7b6c2;
-  --side-dock-bg: #182026;
-  --side-dock-bg-hover: #202b33;
-  --side-dock-active: #202b33;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

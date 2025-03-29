@@ -494,15 +494,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-primary: #15141b;
-  --background-secondary: #110f18;
-  --ribbon-background: #15141b;
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary);
-  --code-background: var(--background-secondary);
-  --indentation-guide-color: #edecee;
-  --color-base-30: #61ffca;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

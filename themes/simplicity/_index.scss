@@ -458,15 +458,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
-  --nav-item-background-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.03
-  ) !important;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -517,15 +508,6 @@ html[saved-theme="light"] {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
-  --nav-item-background-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.03
-  ) !important;
 
   .callout {
     @each $type in $callout-types {

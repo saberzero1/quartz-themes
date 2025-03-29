@@ -305,6 +305,39 @@ function removeNonVariableLines(cssString) {
   }
 }
 
+const themeSettings = readJsonFileAsDictionary(getCurrentFolder(), "themes.json")
+const themes = getValueFromDictionary(themeSettings, "themes")
+
+/**
+ * Checks for dark mode
+ *
+ * @param {string} theme theme name
+ * @returns {bool} true if the theme has a dark mode. false otherwise.
+ */
+function isDarkTheme(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["modes"].includes("dark")
+}
+
+/**
+ * Checks for light mode
+ *
+ * @param {string} theme theme name
+ * @returns {bool} true if the theme has a light mode. false otherwise.
+ */
+function isLightTheme(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["modes"].includes("light")
+}
+
+/**
+ * Checks for both light and dark mode
+ *
+ * @param {string} theme theme name
+ * @returns {bool} true if theme has both a light and dark mode. false otherwise.
+ */
+function isFullTheme(theme) {
+  return isDarkTheme(theme) && isLightTheme(theme)
+}
+
 // STEPS:
 //
 // 1. Get current folder/working directory.
@@ -345,7 +378,7 @@ manifestCollection.forEach((manifest) => {
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(
-      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+      `./extras/themes/${sanitizeFilenamePreservingEmojis(gjsonlueFromDictionary(manifest, "name"))}`,
     )
   }
 })
@@ -384,18 +417,22 @@ manifestCollection.forEach((manifest) => {
 
 // _dark.scss
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(
-    `./templates/_dark.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
+  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+    copyFileToDirectory(
+      `./templates/_dark.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    )
+  }
 })
 
 // _light.scss
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(
-    `./templates/_light.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
+  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    copyFileToDirectory(
+      `./templates/_light.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    )
+  }
 })
 
 // STEP 5
@@ -493,7 +530,7 @@ manifestCollection.forEach((manifest) => {
   hasLightOptions = lightValue !== ""
   const darkValue2 = darkValue.replace(darkRegex, "$1")
   const lightValue2 = lightValue.replace(lightRegex, "$1")
-  if (hasDarkOptions) {
+  if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//DARK`,
@@ -505,7 +542,7 @@ manifestCollection.forEach((manifest) => {
       removeNonVariableLines(darkValue2),
     )
   }
-  if (hasLightOptions) {
+  if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//LIGHT`,
@@ -517,26 +554,6 @@ manifestCollection.forEach((manifest) => {
       removeNonVariableLines(lightValue2),
     )
   }
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//DARK`,
-    removeNonVariableLines(lightValue2),
-  )
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
-    `//DARK`,
-    removeNonVariableLines(lightValue2),
-  )
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//LIGHT`,
-    removeNonVariableLines(darkValue2),
-  )
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
-    `//LIGHT`,
-    removeNonVariableLines(darkValue2),
-  )
 
   // Remove remaining comments
   replaceInFile(
@@ -544,14 +561,18 @@ manifestCollection.forEach((manifest) => {
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
     "",
   )
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
-    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    "",
-  )
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
-    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    "",
-  )
+  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
+      "",
+    )
+  }
+  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
+      "",
+    )
+  }
 })

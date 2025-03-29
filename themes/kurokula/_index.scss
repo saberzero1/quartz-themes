@@ -951,10 +951,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --background-primary: var(--kuro-black-dark);
-  --background-secondary: var(--kuro-black-normal);
-  --background-secondary: #212121;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {

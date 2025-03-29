@@ -734,16 +734,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --title-gradient-top: var(--link-color);
-  --title-gradient-bottom: color-mix(in hsl, var(--link-color), black);
-  --code-normal: #4db95a;
-  --link-external-color: #2f9bb7;
-  --link-external-color-hover: rgb(72, 191, 224);
-  --tag-color: var(--text-normal);
-  --tag-color-hover: var(--text-normal);
-  --tag-background: #eeb662;
-  --tag-background-hover: #f7d865;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
