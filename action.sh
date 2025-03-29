@@ -59,8 +59,8 @@ echo -e "Theme ${BLUE}$*${NC} parsed to $(echo_info ${THEME})"
 echo "Validating theme..."
 
 GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/__CONVERTER/"
-GITHUB_OUTPUT_DIR="__OUTPUT/"
-GITHUB_OVERRIDE_DIR="__OVERRIDES/"
+GITHUB_OUTPUT_DIR="obsidian/"
+GITHUB_OVERRIDE_DIR="extras/themes/"
 GITHUB_THEME_DIR="${THEME}/"
 CSS_INDEX_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_index.scss"
 CSS_FONT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_fonts.scss"
@@ -89,7 +89,7 @@ rm -rf ${THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/overrides
+mkdir -p ${THEME_DIR}/extras
 
 echo "Fetching theme files..."
 
@@ -97,7 +97,7 @@ curl -s -S -o ${THEME_DIR}/_index.scss "${CSS_INDEX_URL}"
 curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
 curl -s -S -o ${THEME_DIR}/_dark.scss "${CSS_DARK_URL}"
 curl -s -S -o ${THEME_DIR}/_light.scss "${CSS_LIGHT_URL}"
-curl -s -S -o ${THEME_DIR}/overrides/_index.scss "${CSS_OVERRIDE_URL}"
+curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
 
 echo "Fetching README file..."
 
@@ -133,10 +133,10 @@ else
   exit 1
 fi
 
-if test -f ${THEME_DIR}/overrides/_index.scss; then
-  echo_ok "overrides/_index.scss exists"
-else
-  echo_err "overrides/_index.scss missing" 1>&2
+if test -f ${THEME_DIR}/extras/_index.scss; then
+  echo_ok "extras/_index.scss exists"
+extras
+  echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
