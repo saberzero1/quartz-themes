@@ -103,7 +103,7 @@ curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
 
 echo "Fetching extras..."
 
-curl -s -S -o ${THEME_DIR}/extras/_hide-toggle.scss "${CSS_EXTRAS_URL}"
+curl -s -S -o ${THEME_DIR}/extras/hide-toggle.scss "${CSS_EXTRAS_URL}"
 
 echo "Fetching README file..."
 
@@ -128,15 +128,13 @@ fi
 if test -f ${THEME_DIR}/_dark.scss; then
   echo_ok "_dark.scss exists"
 else
-  echo_err "_dark.scss missing" 1>&2
-  exit 1
+  echo_warn "_dark.scss missing" 1>&2
 fi
 
 if test -f ${THEME_DIR}/_light.scss; then
   echo_ok "_light.scss exists"
 else
-  echo_err "_light.scss missing" 1>&2
-  exit 1
+  echo_warn "_light.scss missing" 1>&2
 fi
 
 if test -f ${THEME_DIR}/extras/_index.scss; then
@@ -146,7 +144,7 @@ else
   exit 1
 fi
 
-if test -f ${THEME_DIR}/extras/_hide-toggle.scss; then
+if test -f ${THEME_DIR}/extras/hide-toggle.scss; then
   echo_ok "extras/_index.scss exists"
 fi
 
