@@ -450,7 +450,7 @@ manifestCollection.forEach((manifest) => {
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
     copyFileToDirectory(
-      `./extras/_${extra}.scss`,
+      `./extras/${extra}.scss`,
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
     )
   })
@@ -500,7 +500,7 @@ manifestCollection.forEach((manifest) => {
   let extras = `@use "extras";`
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
-    extras += `\n@use "extras/_${extra}.scss";`
+    extras += `\n@use "extras/${extra}";`
   })
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
