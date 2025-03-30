@@ -15,7 +15,13 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
-check_file() { echo [ -e "$1" ]; }
+function check_file() { 
+  if [ -e "$1" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
 
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
