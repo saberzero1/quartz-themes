@@ -348,6 +348,16 @@ function getExtras(theme) {
   return themes[sanitizeFilenamePreservingEmojis(theme)]["extras"]
 }
 
+/**
+ * Get the current theme name
+ *
+ * @param {Object} dict input dictionary
+ * @returns {string} Theme name
+ */
+function getTheme(dict) {
+  return sanitizeFilenamePreservingEmojis(getValueFromDictionary(dict, "name"))
+}
+
 // STEPS:
 //
 // 1. Get current folder/working directory.
@@ -382,66 +392,47 @@ folders.forEach((folder) => {
 clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
-  ensureDirectoryExists(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
-  )
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras`)
   // INIT ONLY
   if (args[0] === "INIT") {
-    ensureDirectoryExists(
-      `./extras/themes/${sanitizeFilenamePreservingEmojis(gjsonlueFromDictionary(manifest, "name"))}`,
-    )
+    ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
   }
 })
 
 // STEP 4
 // README.md
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(
-    `./templates/README.md`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
+  copyFileToDirectory(`./templates/README.md`, `./themes/${getTheme(manifest)}`)
 })
 
 // _index.scss
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_index.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
+    `./themes/${getTheme(manifest)}`,
     // INIT ONLY
   )
   if (args[0] === "INIT") {
-    copyFileToDirectory(
-      `./extras/_index.scss`,
-      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-    )
+    copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
   }
 })
 
 // _fonts.scss
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(
-    `./templates/_fonts.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
+  copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
 })
 
 // _dark.scss
 manifestCollection.forEach((manifest) => {
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    copyFileToDirectory(
-      `./templates/_dark.scss`,
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-    )
+    copyFileToDirectory(`./templates/_dark.scss`, `./themes/${getTheme(manifest)}`)
   }
 })
 
 // _light.scss
 manifestCollection.forEach((manifest) => {
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    copyFileToDirectory(
-      `./templates/_light.scss`,
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-    )
+    copyFileToDirectory(`./templates/_light.scss`, `./themes/${getTheme(manifest)}`)
   }
 })
 
@@ -449,15 +440,12 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
-    copyFileToDirectory(
-      `./extras/${extra}.scss`,
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
-    )
+    copyFileToDirectory(`./extras/${extra}.scss`, `./themes/${getTheme(manifest)}/extras`)
   })
   // Default override
   copyFileToDirectory(
-    `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/extras`,
+    `./extras/themes/${getTheme(manifest)}/_index.scss`,
+    `./themes/${getTheme(manifest)}/extras`,
   )
 })
 
@@ -465,21 +453,21 @@ manifestCollection.forEach((manifest) => {
 // README.md
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    `./themes/${getTheme(manifest)}/README.md`,
     "%OBSIDIAN_THEME_NAME%",
     getValueFromDictionary(manifest, "name"),
   )
 })
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    `./themes/${getTheme(manifest)}/README.md`,
     "%OBSIDIAN_THEME_NAME_SANITIZED%",
-    sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name")),
+    getTheme(manifest),
   )
 })
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    `./themes/${getTheme(manifest)}/README.md`,
     "%OBSIDIAN_THEME_URL%",
     getValueFromDictionary(manifest, "authorUrl") !== ""
       ? getValueFromDictionary(manifest, "authorUrl")
@@ -502,11 +490,7 @@ manifestCollection.forEach((manifest) => {
   themeExtras.forEach((extra) => {
     extras += `\n@use "extras/${extra}.scss";`
   })
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//EXTRAS`,
-    extras,
-  )
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
   const bodyValue = findAllMatchesAsString(
@@ -515,7 +499,7 @@ manifestCollection.forEach((manifest) => {
   )
   const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `./themes/${getTheme(manifest)}/_index.scss`,
     `//BODY`,
     removeNonVariableLines(bodyValue2),
   )
@@ -527,7 +511,7 @@ manifestCollection.forEach((manifest) => {
   )
   const rootValue2 = rootValue.replace(rootRegex, "$1")
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `./themes/${getTheme(manifest)}/_index.scss`,
     `//ROOT`,
     removeNonVariableLines(rootValue2),
   )
@@ -540,11 +524,7 @@ manifestCollection.forEach((manifest) => {
     fontRegex,
   )
   const fontValue2 = fontValue.replace(fontRegex, "$1")
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_fonts.scss`,
-    `//FONTS`,
-    fontValue2,
-  )
+  replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
 })
 
 // _dark.scss and _light.scss
@@ -563,24 +543,24 @@ manifestCollection.forEach((manifest) => {
   const lightValue2 = lightValue.replace(lightRegex, "$1")
   if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+      `./themes/${getTheme(manifest)}/_index.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
     )
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+      `./themes/${getTheme(manifest)}/_dark.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
     )
   }
   if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+      `./themes/${getTheme(manifest)}/_index.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
     )
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+      `./themes/${getTheme(manifest)}/_light.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
     )
@@ -591,12 +571,12 @@ manifestCollection.forEach((manifest) => {
     // light only
     if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
-        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+        `./themes/${getTheme(manifest)}/_index.scss`,
         /\/\* START DARK \*\/.*?\/\* END DARK \*\//gms,
         ``,
       )
       replaceInFile(
-        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+        `./themes/${getTheme(manifest)}/_light.scss`,
         `:root[saved-theme="light"]`,
         `:root:root`,
       )
@@ -604,42 +584,68 @@ manifestCollection.forEach((manifest) => {
     // dark only
     if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
-        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+        `./themes/${getTheme(manifest)}/_index.scss`,
         /\/\* START LIGHT \*\/.*?\/\* END LIGHT \*\//gms,
         ``,
       )
       replaceInFile(
-        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+        `./themes/${getTheme(manifest)}/_dark.scss`,
         `:root[saved-theme="dark"]`,
         `:root:root`,
       )
     }
     // generic
-    replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-      /\[saved-theme=\".*?\"\]/g,
-      "",
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\[saved-theme=\".*?\"\]/g, "")
   }
 
   // Remove remaining comments
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+    `./themes/${getTheme(manifest)}/_index.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
     "",
   )
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+      `./themes/${getTheme(manifest)}/_dark.scss`,
       /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
       "",
     )
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+      `./themes/${getTheme(manifest)}/_light.scss`,
       /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
       "",
     )
   }
 })
+
+// Rebuild README.md
+console.log("Updating compatibility table...")
+
+// Prepare README.md
+fs.unlinkSync("README.md")
+fs.copyFileSync("README-TEMPLATE.md", "README.md")
+
+// Build compatibility table
+const compatibilityTableLines = []
+const themeList = []
+manifestCollection.forEach((manifest) => {
+  themeList.push(getTheme(manifest, "name"))
+})
+themeList.sort()
+themeList.forEach((themeName) => {
+  const mode = isFullTheme(themeName) ? "both" : isDarkTheme(themeName) ? "dark" : "light"
+  compatibilityTableLines.push(
+    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | <img src="media/${themes[themeName]["compatibility"]}.svg" alt="${themes[themeName]["compatibility"].toUpperCase()}"/> | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
+  )
+})
+
+const compatibilityTable =
+  "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview |\n| --- | --- | --- | --- |".concat(
+    ...compatibilityTableLines,
+  )
+
+// Write result to README.md
+replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable)
+console.log("Finished updating compatibility table")
