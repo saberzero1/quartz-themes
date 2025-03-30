@@ -391,6 +391,7 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --highlight-mix-blend-mode: lighten;
@@ -497,7 +498,9 @@ html[saved-theme="dark"] {
     }
   }
 }
+/* END DARK */
 
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --highlight-mix-blend-mode: darken;
@@ -602,6 +605,7 @@ html[saved-theme="light"] {
     }
   }
 }
+/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
