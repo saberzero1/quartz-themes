@@ -592,8 +592,8 @@ manifestCollection.forEach((manifest) => {
     if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-        `//DARK`,
-        `color-scheme: light;`,
+        `START DARK */`,
+        ``,
       )
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
@@ -605,8 +605,8 @@ manifestCollection.forEach((manifest) => {
     if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-        `//LIGHT`,
-        `color-scheme: dark;`,
+        `START LIGHT */`,
+        ``,
       )
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,

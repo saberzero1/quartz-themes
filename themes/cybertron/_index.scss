@@ -386,6 +386,7 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --highlight-mix-blend-mode: lighten;
@@ -513,7 +514,9 @@ html[saved-theme="dark"] {
     }
   }
 }
+/* END DARK */
 
+/* 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --highlight-mix-blend-mode: darken;
@@ -554,11 +557,11 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  color-scheme: dark;
+
 
   .callout {
     @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
+      &[data-callout=#{$type}] {
         --color: rgb(var(#{"--callout-#{$type}"}));
         --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
         --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
@@ -566,6 +569,7 @@ html[saved-theme="light"] {
     }
   }
 }
+/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
