@@ -25,7 +25,7 @@ verify:
 
 [private]
 build:
-  node __CONVERTER/convert.js
+  node convert.js
 
 [private]
 format:
