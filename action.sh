@@ -23,6 +23,8 @@ check_file() {
   fi
 }
 
+file_exists() { (ls "$1" && echo "true") || echo "false" }
+
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
@@ -120,10 +122,10 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 
 echo "Checking theme files..."
 
-CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss"; echo $?)
+CHECK_INDEX=$(file_exists "$THEME_DIR/_index.scss")
 RESULT=$(echo $CHECK_INDEX)
 echo $RESULT
-if [ $RESULT == 0 ]; then
+if [ $RESULT = "yes" ]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
@@ -138,19 +140,19 @@ else
   exit 1
 fi
 
-CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss"; echo $?)
+CHECK_DARK=$(file_exists "$THEME_DIR/_dark.scss")
 RESULT=$(echo $CHECK_DARK)
 echo $RESULT
-if [ $RESULT == 0 ]; then
+if [ $RESULT = "yes" ]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing"
 fi
 
-CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss"; echo $?)
+CHECK_LIGHT=$(file_exists "$THEME_DIR/_light.scss")
 RESULT=$(echo $CHECK_LIGHT)
 echo $RESULT
-if [ $RESULT == 0 ]; then
+if [ $RESULT = "yes" ]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
