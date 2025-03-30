@@ -15,6 +15,8 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
+check_file() { echo ( -e "$1" -eq 0 ); }
+
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
@@ -132,7 +134,7 @@ else
   echo_warn "_dark.scss missing" 1>&2
 fi
 
-if [ -f "$THEME_DIR/_light.scss" ]; then
+if check_file "$THEME_DIR/_light.scss"; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing" 1>&2
