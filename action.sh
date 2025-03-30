@@ -123,7 +123,7 @@ echo "Checking theme files..."
 CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss" && echo $?)
 RESULT=$(echo $CHECK_INDEX)
 echo $RESULT
-if [ "${RESULT}" = "0" ]; then
+if [ $RESULT == 0 ]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
@@ -141,7 +141,7 @@ fi
 CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss" && echo $?)
 RESULT=$(echo $CHECK_DARK)
 echo $RESULT
-if [ "${RESULT}" = "0" ]; then
+if [ $RESULT == 0 ]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing"
@@ -150,7 +150,7 @@ fi
 CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss" && echo $?)
 RESULT=$(echo $CHECK_LIGHT)
 echo $RESULT
-if [ "${RESULT}" = "0" ]; then
+if [ $RESULT == 0 ]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
