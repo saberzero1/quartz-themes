@@ -121,7 +121,7 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 echo "Checking theme files..."
 
 CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss")
-echo $CHECK_INDEX
+echo $?
 if [ $CHECK_INDEX ]; then
   echo_ok "_index.scss exists"
 else
