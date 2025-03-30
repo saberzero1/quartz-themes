@@ -183,6 +183,7 @@ fi
 
 if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
   echo_ok "extras/hide-toggle.scss exists"
+  cat "$THEME_DIR/extras/hide-toggle.scss"
 fi
 
 if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
