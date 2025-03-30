@@ -587,18 +587,34 @@ manifestCollection.forEach((manifest) => {
   }
 
   // Unset color-scheme for single mode themes
-  // light only
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//DARK`,
-    `color-scheme: light;`,
-  )
-  // dark only
-  replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-    `//LIGHT`,
-    `color-scheme: dark;`,
-  )
+  if (!isFullTheme(getValueFromDictionary(manifest, "name"))) {
+    // light only
+    if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+      replaceInFile(
+        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+        `//DARK`,
+        `color-scheme: light;`,
+      )
+      replaceInFile(
+        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
+        `:root[saved-theme="light"]`,
+        `:root:root`,
+      )
+    }
+    // dark only
+    if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+      replaceInFile(
+        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+        `//LIGHT`,
+        `color-scheme: dark;`,
+      )
+      replaceInFile(
+        `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
+        `:root[saved-theme="dark"]`,
+        `:root:root`,
+      )
+    }
+  }
 
   // Remove remaining comments
   replaceInFile(
