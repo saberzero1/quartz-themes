@@ -134,7 +134,8 @@ else
   exit 1
 fi
 
-if [ -f "$THEME_DIR/_dark.scss" ]; then
+CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss")
+if [ $CHECK_DARK ]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing"
