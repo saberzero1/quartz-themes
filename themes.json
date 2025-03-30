@@ -5,13 +5,13 @@
     "partial": "partial",
     "blocked": "blocked",
     "checking": "checking",
-    "broken": "removed",
+    "removed": "removed",
     "unsupported": "unsupported"
   },
   "themes": {
     "80s-neon": { "compatibility": "full", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "abate": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "abecedarium": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
+    "abate": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
+    "abecedarium": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "absolutegruv": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "abyssal": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "adrenaline": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
