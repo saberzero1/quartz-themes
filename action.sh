@@ -16,7 +16,7 @@ echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
 check_file() { 
-  if [ -f "$1" ]; then
+  if [ -e "$1" ]; then
     return 0
   else
     return 1
@@ -140,8 +140,8 @@ else
   echo_warn "_dark.scss missing"
 fi
 
-check_file ${THEME_DIR}/_light.scss
-if [ $? -eq 0 ]; then
+check_file "$THEME_DIR/_light.scss"
+if [ $? ]; then
   echo ${THEME_DIR}/_light.scss
   echo check_file ${THEME_DIR}/_light.scss
   echo [ check_file ${THEME_DIR}/_light.scss ]
