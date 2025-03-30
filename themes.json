@@ -14,7 +14,7 @@
     "abecedarium": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "absolutegruv": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
     "abyssal": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "adrenaline": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
+    "adrenaline": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adwaita": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "agate": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "aged-whisky": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
