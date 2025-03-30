@@ -140,7 +140,7 @@ else
   echo_warn "_dark.scss missing"
 fi
 
-if check_file "$THEME_DIR/_light.scss"; then
+if [ check_file "$THEME_DIR/_light.scss" ]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
