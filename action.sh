@@ -28,22 +28,23 @@ try_curl() {
 
   local content="$(sed -n '1{/^404/p};q' $OUTPUT_FILE)"
   if [ ! -z "$content" ]; then
-    echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
+    # echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
     return 1  # Failure: HTTP error
   fi
 
   if [ "$http_code" = "200" ]; then
-    if [ -s "$OUTPUT_FILE" ]; then
-      echo "Download successful from $URL to $OUTPUT_FILE."
-      return 0  # Success
-    else
-      echo "Download from $URL to $OUTPUT_FILE succeeded, but file is empty."
-      rm -f "$OUTPUT_FILE"
-      return 1  # Failure: empty file
-    fi
+    return 0
+    # if [ -s "$OUTPUT_FILE" ]; then
+      # echo "Download successful from $URL to $OUTPUT_FILE."
+      # return 0  # Success
+    # else
+      # echo "Download from $URL to $OUTPUT_FILE succeeded, but file is empty."
+      # rm -f "$OUTPUT_FILE"
+      # return 1  # Failure: empty file
+    # fi
   else
-    echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: $http_code."
+    # echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: $http_code."
     rm -f "$OUTPUT_FILE"
     return 1  # Failure: HTTP error
   fi
