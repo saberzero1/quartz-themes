@@ -120,14 +120,16 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 
 echo "Checking theme files..."
 
-if [ -f "$THEME_DIR/_index.scss" ]; then
+CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss")
+if [ $CHECK_INDEX ]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
   exit 1
 fi
 
-if [ -f "$THEME_DIR/_fonts.scss" ]; then
+CHECK_FONTS=$(check_file "$THEME_DIR/_fonts.scss")
+if [ $CHECK_FONTS ]; then
   echo_ok "_fonts.scss exists"
 else
   echo_err "_fonts.scss missing" 1>&2
@@ -143,26 +145,26 @@ fi
 
 CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss")
 if [ $CHECK_LIGHT ]; then
-  echo ${THEME_DIR}/_light.scss
-  echo check_file ${THEME_DIR}/_light.scss
-  echo [ check_file ${THEME_DIR}/_light.scss ]
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
 fi
 
-if [ -f "$THEME_DIR/extras/_index.scss" ]; then
+CHECK_EXTRAS_INDEX=$(check_file "$THEME_DIR/extras/_index.scss")
+if [ $CHECK_EXTRAS_INDEX ]; then
   echo_ok "extras/_index.scss exists"
 else
   echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if [ -f "$THEME_DIR/extras/hide-toggle.scss" ]; then
+CHECK_EXTRAS_HIDE_TOGGLE=$(check_file "$THEME_DIR/extras/hide-toggle.scss")
+if [ $CHECK_EXTRAS_HIDE_TOGGLE ]; then
   echo_ok "extras/hide-toggle.scss exists"
 fi
 
-if [ -f "$THEME_DIR/README.md" ]; then
+CHECK_README=$(check_file "$THEME_DIR/README.md")
+if [ $CHECK_README ]; then
   echo_ok "README file exists"
 else
   echo_warn "README file missing"
