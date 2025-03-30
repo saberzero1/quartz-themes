@@ -91,6 +91,7 @@ GITHUB_EXTRAS_DIR="extras/themes"
 GITHUB_THEME_DIR="$THEME"
 THEME_ROOT="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}"
 THEME_EXTRAS_ROOT="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}/${GITHUB_THEME_DIR}"
+EXTRAS_ROOT="${GITHUB_URL_BASE}/extras"
 CSS_INDEX_URL="${THEME_ROOT}/_index.scss"
 CSS_FONT_URL="${THEME_ROOT}/_fonts.scss"
 CSS_DARK_URL="${THEME_ROOT}/_dark.scss"
@@ -128,10 +129,9 @@ try_curl "${CSS_DARK_URL}" "${THEME_DIR}/_dark.scss"
 try_curl "${CSS_LIGHT_URL}" "${THEME_DIR}/_light.scss"
 try_curl "${CSS_EXTRAS_INDEX_URL}" "${THEME_DIR}/extras/_index.scss"
 
-
 echo "Fetching extras..."
 
-try_curl "${THEME_EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
+try_curl "${EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
 
 echo "Fetching README file..."
 
