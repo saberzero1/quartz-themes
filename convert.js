@@ -500,7 +500,7 @@ manifestCollection.forEach((manifest) => {
   let extras = `@use "extras";`
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
-    extras += `\n@use "extras/${extra}";`
+    extras += `\n@use "extras/${extra}.scss";`
   })
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,

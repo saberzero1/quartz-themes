@@ -145,7 +145,7 @@ else
 fi
 
 if test -f ${THEME_DIR}/extras/hide-toggle.scss; then
-  echo_ok "extras/_index.scss exists"
+  echo_ok "extras/hide-toggle.scss exists"
 fi
 
 if test -f ${THEME_DIR}/README.md; then
