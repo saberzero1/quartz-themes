@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Only print echos
+set +x
+
 # To fetch and use this script in a GitHub action:
 #
 # curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME_NAME>
