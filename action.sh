@@ -18,13 +18,14 @@ echo_info() { echo -e "${BLUE}$1${NC}"; }
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
-if [[ -f ${QUARTZ_STYLES_DIR}/custom.scss ]]; then
+if [[ -f "./${QUARTZ_STYLES_DIR}/custom.scss" ]]; then
   echo_ok "Quartz root succesfully detected..."
-  THEME_DIR="${QUARTZ_STYLES_DIR}/${THEME_DIR}"
+  THEME_DIR="./${QUARTZ_STYLES_DIR}/${THEME_DIR}"
 else
   echo_warn "Quartz root not detected, checking if we are in the styles directory..."
-  if [[ -f custom.scss ]]; then
+  if [[ -f "./custom.scss" ]]; then
     echo_ok "Styles directory detected..."
+    THEME_DIR="./${THEME_DIR}"
   else
     echo_err "Cannot detect Quartz repository. Are you in the correct working directory?" 1>&2
     exit 1
