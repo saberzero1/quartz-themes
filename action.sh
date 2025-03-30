@@ -137,13 +137,13 @@ fi
 if [ -f "$THEME_DIR/_dark.scss" ]; then
   echo_ok "_dark.scss exists"
 else
-  echo_warn "_dark.scss missing" 1>&2
+  echo_warn "_dark.scss missing"
 fi
 
 if check_file "$THEME_DIR/_light.scss"; then
   echo_ok "_light.scss exists"
 else
-  echo_warn "_light.scss missing" 1>&2
+  echo_warn "_light.scss missing"
 fi
 
 if [ -f "$THEME_DIR/extras/_index.scss" ]; then
