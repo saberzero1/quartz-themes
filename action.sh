@@ -111,44 +111,44 @@ curl -s -S -o ${THEME_DIR}/README.md "${README_URL}"
 
 echo "Checking theme files..."
 
-if test -f ${THEME_DIR}/_index.scss; then
+if [ -f "${THEME_DIR}/_index.scss" ]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/_fonts.scss; then
+if [ -f "${THEME_DIR}/_fonts.scss" ]; then
   echo_ok "_fonts.scss exists"
 else
   echo_err "_fonts.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/_dark.scss; then
+if [ -f "${THEME_DIR}/_dark.scss" ]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing" 1>&2
 fi
 
-if test -f ${THEME_DIR}/_light.scss; then
+if [ -f "${THEME_DIR}/_light.scss" ]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing" 1>&2
 fi
 
-if test -f ${THEME_DIR}/extras/_index.scss; then
+if [ -f "${THEME_DIR}/extras/_index.scss" ]; then
   echo_ok "extras/_index.scss exists"
 else
   echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/extras/hide-toggle.scss; then
+if [ -f "${THEME_DIR}/extras/hide-toggle.scss" ]; then
   echo_ok "extras/hide-toggle.scss exists"
 fi
 
-if test -f ${THEME_DIR}/README.md; then
+if [ -f "${THEME_DIR}/README.md" ]; then
   echo_ok "README file exists"
 else
   echo_warn "README file missing"
@@ -165,15 +165,15 @@ else
   echo_info "Added import line to custom.scss..."
 fi
 
-if [ -f ${THEME_DIR}/_light.scss ]; then
-  if ! [ -f ${THEME_DIR}/_dark.scss ]; then
+if [ -f "${THEME_DIR}/_light.scss" ]; then
+  if [ -z "${THEME_DIR}/_dark.scss" ]; then
     echo_warn "Light-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="light"]#:root:root#' ${THEME_DIR}/_light.scss
   fi
 fi
 
-if [ -f ${THEME_DIR}/_dark.scss ]; then
-  if ! [ -f ${THEME_DIR}/_light.scss ]; then
+if [ -f "${THEME_DIR}/_dark.scss" ]; then
+  if [ -z "${THEME_DIR}/_light.scss" ]; then
     echo_warn "Dark-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="dark"]#:root:root#' ${THEME_DIR}/_dark.scss
   fi
