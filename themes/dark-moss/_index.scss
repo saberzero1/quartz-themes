@@ -436,8 +436,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  color-scheme: light;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -488,8 +486,6 @@ html[saved-theme="light"] {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  color-scheme: dark;
 
   .callout {
     @each $type in $callout-types {

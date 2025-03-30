@@ -543,8 +543,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  color-scheme: light;
-
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
