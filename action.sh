@@ -124,6 +124,7 @@ echo "Checking theme files..."
 
 CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss")
 RESULT=$(echo $?)
+ls $THEME_DIR/_index.scss
 if [ "$RESULT" == "0" ]; then
   echo_ok "_index.scss exists"
 else
