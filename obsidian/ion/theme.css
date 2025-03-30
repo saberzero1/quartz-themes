@@ -1,0 +1,492 @@
+/* @settings
+name: ion
+id: ion
+collapsed: false
+settings:
+  -
+    id: colors
+    title: Colors
+    type: heading
+    level: 2
+  -
+    id: base-d
+    title: Base color
+    type: variable-color
+    format: hsl-split-decimal
+    description: 'Requires Style Settings v1.0.3+'
+    default: '#ecd2c6'
+  -
+    id: code-base-l
+    title: Code base brightness
+    description: Brightness adjustment for syntax highlighting
+    type: variable-number-slider
+    default: 30
+    min: 0
+    max: 100
+    step: 1
+  -
+    id: bloom
+    title: Bloom
+    type: heading
+    level: 2
+  -
+    id: bloom-fct
+    title: Strength
+    type: variable-number-slider
+    default: .25
+    min: 0
+    max: 1
+    step: .05
+  -
+    id: ion-threshold
+    title: Threshold
+    type: variable-number-slider
+    default: 80
+    min: 0
+    max: 100
+    step: 1
+*/
+
+/*Reset*/
+.theme-dark {
+  --color-base-00: #000;
+  --color-base-10: #000;
+  --color-base-20: #000;
+  --color-base-25: #000;
+  --color-base-30: #000;
+
+  --color-base-50: #000;
+
+  --color-base-70: #000;
+  --color-base-100: #024;
+
+  --tab-divider-color: #000;
+
+  --background-modifier-border: transparent;
+}
+
+body {
+  --bloom-fct: .25;
+  --bloom-const: .1em;
+  --bloom: calc(var(--bloom-const) * var(--bloom-fct));
+  --ion-threshold: 80;
+
+  --base-d-h: 20;
+  --base-d-s: .5;
+  --base-d-l: .85;
+
+  --base-h: var(--base-d-h);
+  --base-s: calc(var(--base-d-s) * 100%);
+  --base-l-p: calc(var(--base-d-l) * 100);
+
+  --ion-h: var(--base-h);
+  --ion-s: var(--base-s);
+  --ion-l-p: var(--base-l-p);
+}
+
+body {
+  --text-normal: var(--ion-color);
+}
+
+*, ::-webkit-scrollbar-thumb {
+  --ion-hs: var(--ion-h), var(--ion-s);
+  --ion-l: calc(var(--ion-l-p) * 1%);
+  --ion-color: hsl(var(--ion-h), var(--ion-s), var(--ion-l));
+  --bloom-hsl: var(--ion-h), var(--ion-s), 50%;
+  --bloom-color: hsl(var(--bloom-hsl));
+  --bloom-size: calc(var(--bloom) * (var(--ion-l-p) - var(--ion-threshold)));
+  --bloom-size-s: calc(var(--bloom-size) / 3);
+  --bloom-size-m: calc(var(--bloom-size) * .75);
+  --bloom-drop: drop-shadow(0px 0px var(--bloom-size-s) var(--bloom-color));
+  --bloom-box: 0 0 var(--bloom-size-m) var(--bloom-size-m) hsla(var(--bloom-hsl), .3);
+  --icon-bloom: var(--bloom-drop) var(--bloom-drop);
+  --border-bloom: var(--bloom-box), var(--bloom-box) inset;
+}
+
+:root:root:root:root:root *,
+:root ::marker {
+  color: var(--ion-color);
+}
+
+* {
+  text-shadow: 0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+  caret-color: var(--ion-color);
+}
+
+/* Headings */
+h1, .cm-header-1 { --ion-h: calc(10 + 0 * 50); }
+h2, .cm-header-2 { --ion-h: calc(10 + 1 * 50); }
+h3, .cm-header-3 { --ion-h: calc(10 + 2 * 50); }
+h4, .cm-header-4 { --ion-h: calc(10 + 3 * 50); }
+h5, .cm-header-5 { --ion-h: calc(10 + 4 * 50); }
+h6, .cm-header-6 { --ion-h: calc(10 + 5 * 50); }
+
+.inline-title, .cm-header,
+h1, h2, h3, h4, h5, h6 {
+  --ion-s: 100%;
+  --ion-l-p: 90;
+}
+
+/* Scrollbars */
+:root body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--ion-hs), var(--ion-l));
+}
+
+::-webkit-scrollbar-thumb {
+  --ion-l-p: 15;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  --ion-l-p: 70;
+}
+
+
+:is(textarea, input:is([type='text'], [type='search'], [type='email'],
+  [type='password'], [type='number']))::placeholder {
+  color: hsl(var(--ion-hs), 40%);
+}
+
+
+/* Links */
+a, .cm-link, .cm-url, .cm-hmd-internal-link {
+  --ion-h: var(--accent-h);
+  --ion-s: var(--accent-s);
+}
+:hover:is(a, .cm-link, .cm-url, .cm-hmd-internal-link) {
+  --ion-l-p: 100;
+}
+
+/* Icons */
+.clickable-icon {
+  --ion-h: var(--base-h); --ion-s: var(--base-s); --ion-l-p: var(--base-l-p);
+}
+:hover.clickable-icon {
+  --ion-l-p: 150;
+}
+
+.callout-icon > .svg-icon {
+  color: var(--ion-color);
+  filter: var(--icon-bloom);
+}
+
+/* Text muted */
+.cm-hmd-frontmatter,
+.setting-item-description
+{
+  --ion-l-p: 60;
+}
+
+/* Text faint */
+.tree-item-self.is-collapsed, .search-empty-state, .tree-item-flair,
+.cm-formatting-link,
+.cm-comment,
+.cm-formatting-quote,
+.list-bullet
+{
+  --ion-l-p: 40;
+}
+
+/* Callouts */
+.callout { --callout-h: 217; --callout-s: 100%; --callout-l-p: 63; } .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) { --callout-h: 198; --callout-s: 100%; --callout-l-p: 50; } .callout:is([data-callout="info"], [data-callout="todo"]) { --callout-h: 187; --callout-s: 100%; --callout-l-p: 41; } .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --callout-h: 171; --callout-s: 100%; --callout-l-p: 37; } .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --callout-h: 144; --callout-s: 100%; --callout-l-p: 39; } .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) { --callout-h: 96; --callout-s: 81%; --callout-l-p: 47; } .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) { --callout-h: 34; --callout-s: 100%; --callout-l-p: 50; } .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) { --callout-h: 0; --callout-s: 100%; --callout-l-p: 66; } .callout:is([data-callout="danger"], [data-callout="error"]) { --callout-h: 348; --callout-s: 99%; --callout-l-p: 54; } .callout[data-callout="bug"] { --callout-h: 338; --callout-s: 100%; --callout-l-p: 48; } .callout[data-callout="example"] { --callout-h: 255; --callout-s: 100%; --callout-l-p: 65; } .callout:is([data-callout="quote"], [data-callout="cite"]) { --callout-h: 0; --callout-s: 0%; --callout-l-p: 61; }
+
+.callout {
+  background-color: transparent;
+  border-color: var(--ion-color);
+  border-width: var(--size-2-1);
+  box-shadow: var(--border-bloom);
+}
+
+.callout,
+.callout-title, .callout-title *,
+.callout-content, .callout-content p {
+  --ion-h: var(--callout-h);
+  --ion-s: var(--callout-s);
+  --ion-l-p: 95;
+}
+
+/*to make shadow visible..*/
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+  contain: none !important;
+}
+.cm-embed-block.markdown-rendered.cm-callout.show-indentation-guide {
+  overflow: visible;
+}
+
+/* Buttons */
+:root select.dropdown,
+:root:root button {
+  background-color: transparent;
+}
+
+:root select.dropdown,
+button:not(.clickable-icon) {
+  background-color: transparent;
+  border: 1px solid var(--ion-color);
+  box-shadow: var(--border-bloom);
+}
+
+:hover:is(button, .dropdown) {
+  --ion-l-p: 100;
+}
+
+button.mod-cta {
+  --ion-h: var(--accent-h);
+  --ion-s: var(--accent-s);
+  --ion-l-p: 90;
+}
+
+/* Slider */
+:root:root:root input[type='range'] {
+  background-color: var(--ion-color);
+
+  --ion-l-p: 60;
+
+  box-shadow: var(--bloom-box);
+}
+
+/* Warning */
+.mod-warning {
+  --ion-h: 0;
+  --ion-s: 100%;
+}
+
+/* Bold */
+strong, .cm-strong {
+  --ion-l-p: 95;
+}
+
+/* Modal */
+:root:root .modal,
+.prompt,
+.menu
+{
+  border-color: var(--ion-color);
+  box-shadow: var(--border-bloom);
+}
+
+input.prompt-input,
+.vertical-tab-header, .vertical-tab-content
+{
+  background-color: transparent;
+}
+
+:root input.prompt-input,
+.prompt-instructions
+{
+  border: none;
+}
+
+/* Community item */
+:root .community-item.is-selected {
+  background-color: transparent;
+  border-color: var(--ion-color);
+}
+
+.community-item.is-selected {
+  --ion-h: var(--accent-h);
+  --ion-s: var(--accent-s);
+  --ion-l-p: 100;
+  box-shadow: var(--border-bloom);
+}
+
+.community-item.is-selected:hover {
+  --ion-l-p: 110;
+}
+
+/*
+TODO
+- differentiate border-bloom
+*/
+
+/* Settings */
+
+:root:root :is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
+  background-color: transparent;
+}
+
+:is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
+  border: 1px solid transparent;
+}
+
+.is-active:is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
+  --ion-h: var(--accent-h);
+  --ion-s: var(--accent-s);
+  --ion-l-p: 90;
+  box-shadow: var(--border-bloom);
+  border-color: var(--ion-color);
+}
+
+:hover:is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
+  --ion-l-p: 100;
+}
+
+
+:root:root:root:root .cm-transparent {
+  color: transparent;
+  text-shadow: none; 
+}
+
+
+.list-bullet:after {
+  background-color: var(--ion-color);
+}
+
+
+.markdown-rendered hr, .cm-line hr {
+  border-color: var(--ion-color);
+  border-width: 1px;
+  box-shadow: var(--border-bloom);
+  border-radius: 100vmax;
+}
+
+/*Checkbox*/
+:root:root input[type=checkbox] {
+  border: 1px solid var(--ion-color);
+  box-shadow: var(--border-bloom);
+  background-color: transparent;
+}
+
+input[type=checkbox]:checked:after {
+  background-color: var(--ion-color);
+}
+
+input[type=checkbox] {
+  --ion-h: var(--accent-h);
+  --ion-s: var(--accent-s);
+  --ion-l-p: 60;
+}
+
+input[type=checkbox]:checked {
+  --ion-l-p: 100;
+}
+
+/*Code*/
+code, .cm-inline-code,
+.HyperMD-codeblock {
+  --ion-l-p: 80;
+}
+
+body {
+  --color-red-h: 352; --color-red-s: 80%; --color-red-l-p: 55;
+  --color-green-h: 143; --color-green-s: 91%; --color-green-l-p: 37;
+  --color-orange-h: 29; --color-orange-s: 100%; --color-orange-l-p: 46;
+  --color-yellow-h: 46; --color-yellow-s: 100%; --color-yellow-l-p: 43;
+  --color-cyan-h: 179; --color-cyan-s: 100%; --color-cyan-l-p: 37;
+  --color-blue-h: 211; --color-blue-s: 93%; --color-blue-l-p: 44;
+  --color-purple-h: 254; --color-purple-s: 82%; --color-purple-l-p: 62;
+  --color-pink-h: 331; --color-pink-s: 65%; --color-pink-l-p: 52;
+}
+
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  --token-h: var(--color-red-h); --token-s: var(--color-red-s); --token-l-p: var(--color-red-l-p);
+}
+.token.punctuation {
+  --token-h: var(--color-muted-h); --token-s: var(--color-muted-s); --token-l-p: var(--color-muted-l-p);
+}
+.token.boolean,
+.token.number {
+  --token-h: var(--color-purple-h); --token-s: var(--color-purple-s); --token-l-p: var(--color-purple-l-p);
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.inserted {
+  --token-h: var(--color-green-h); --token-s: var(--color-green-s); --token-l-p: var(--color-green-l-p);
+}
+.token.operator {
+  --token-h: var(--color-red-h); --token-s: var(--color-red-s); --token-l-p: var(--color-red-l-p);
+}
+.token.entity,
+.token.parameter,
+.token.property,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  --token-h: var(--color-cyan-h); --token-s: var(--color-cyan-s); --token-l-p: var(--color-cyan-l-p);
+}
+.token.atrule,
+.token.attr-value,
+.token.builtin,
+.token.function,
+.token.class-name,
+.token.property-access {
+  --token-h: var(--color-yellow-h); --token-s: var(--color-yellow-s); --token-l-p: var(--color-yellow-l-p);
+}
+.token.keyword {
+  --token-h: var(--color-pink-h); --token-s: var(--color-pink-s); --token-l-p: var(--color-pink-l-p);
+}
+.token.regex,
+.token.important {
+  --token-h: var(--color-orange-h); --token-s: var(--color-orange-s); --token-l-p: var(--color-orange-l-p);
+}
+.cm-inline-code,
+.cm-math,
+.cm-hmd-codeblock {
+  --token-h: var(--base-h);
+  --token-s: 20%;
+  --token-l-p: 50;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
+.cm-comment,
+.cm-meta {
+  --token-h: var(--base-h);
+  --token-s: var(--base-s);
+  --token-l-p: 20;
+}
+.cm-tag {
+  --token-h: var(--color-red-h); --token-s: var(--color-red-s); --token-l-p: var(--color-red-l-p);
+}
+.cm-punctuation,
+.cm-bracket,
+.cm-hr {
+  --token-h: var(--color-muted-h); --token-s: var(--color-muted-s); --token-l-p: var(--color-muted-l-p);
+}
+.cm-number {
+  --token-h: var(--color-purple-h); --token-s: var(--color-purple-s); --token-l-p: var(--color-purple-l-p);
+}
+.cm-qualifier,
+.cm-string,
+.cm-string-2 {
+  --token-h: var(--color-green-h); --token-s: var(--color-green-s); --token-l-p: var(--color-green-l-p);
+}
+.cm-operator {
+  --token-h: var(--color-red-h); --token-s: var(--color-red-s); --token-l-p: var(--color-red-l-p);
+}
+.cm-link,
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3 {
+  --token-h: var(--color-cyan-h); --token-s: var(--color-cyan-s); --token-l-p: var(--color-cyan-l-p);
+}
+.cm-builtin,
+.cm-property,
+.cm-attribute,
+.cm-type {
+  --token-h: var(--color-yellow-h); --token-s: var(--color-yellow-s); --token-l-p: var(--color-yellow-l-p);
+}
+.cm-keyword {
+  --token-h: var(--color-pink-h); --token-s: var(--color-pink-s); --token-l-p: var(--color-pink-l-p);
+}
+
+body {
+  --code-base-l: 30;
+}
+
+.token,
+.cm-attribute, .cm-bracket, .cm-builtin, .cm-comment, .cm-hr, .cm-inline-code, .cm-keyword, .cm-link, .cm-math, .cm-meta, .cm-number, .cm-operator, .cm-property, .cm-punctuation, .cm-qualifier, .cm-string, .cm-string-2, .cm-tag, .cm-type, .cm-variable, .cm-variable-2, .cm-variable-3,
+.cm-math .cm-comment, .cm-meta {
+  --ion-h: var(--token-h);
+  --ion-s: var(--token-s);
+  --ion-l-p: calc(var(--code-base-l) + var(--token-l-p));
+}

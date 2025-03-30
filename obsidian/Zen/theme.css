@@ -1,0 +1,2131 @@
+/* ---------------------------------------------------------------------------
+
+Zen Theme by @Laughmaker
+
+User interface replacement for Obsidian.
+
+Readme:
+https://github.com/laughmaker/zen
+
+-----------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2020-2023 Laughmaker
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+/* @settings
+
+name: Zen
+id: zen
+settings:
+	-
+		id: alt-heading-off
+		title: Hide the Heading prompt in the editor.
+		title.zh: 隐藏编辑器中标题提示
+		description: Hide the h1...h2... and other small title prompts in front of headings at all levels.
+		description.zh: 隐藏各级标题前面的 h1...h2...等小标题提示
+		type: class-toggle
+	-
+		id: heading-bottom-line-off
+		title: Hide the Heading bottom line in the editor.
+		title.zh: 隐藏编辑器中各级标题下的虚线
+		description: Hide the h1...h2... and other small title bottom line in headings at all levels.
+		description.zh: 隐藏各级标题前面的 h1...h2...等小标题下的线虚
+		type: class-toggle
+	-
+		id: window-font-size
+		title: Adjust the font of the Window.
+		title.zh: 调整窗体的字体
+		description: Adjust the font size of some parts, including the document directory on the left, the document title on the top, the outline directory on the right, the tag list, and so on.
+		description.zh: 调节部分字体大小，包含左侧文档目录、顶部文档标题、右侧大纲目录、标签列表等等。
+		type: variable-number-slider
+		default: 15
+		min: 8
+		max: 30
+		step: 1
+	-
+		id: text-justify
+		title: Close text justification.
+		title.zh: 关闭文本两端对齐
+		description: Default text is justified on both sides. If it is turned off, it is left-aligned.
+		description.zh: 默认文本两端对齐，关闭则左对齐。
+		type: class-toggle
+	-
+		id: editor-width
+		title: Adjust the width of the editor.
+		title.zh: 调整编辑器宽度
+		description: Adjust the editor width. The default is 800. The minimum is 500 and the maximum is 2000.
+		description.zh: 调整编辑器宽度，默认为 800，最小 500，最大 2000。
+		type: variable-number-slider
+		default: 800
+		min: 500
+		max: 2000
+		step: 10
+	-
+		id: windows-header
+		title: Windows/Linux
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: win-translucent-off
+		title: Close the translucent window.
+		title.zh: 关闭窗体半透明
+		description: Turn off the window translucency of Windows/Linux. It is only effective for Windows/Linux.
+		description.zh: 关闭Windows/Linux的窗口半透明，仅对Windows/Linux有效
+		type: class-toggle
+	-
+		id: win-window-opacity
+		title: Transparency of window background
+		title.zh: 窗体背景的透明度
+		description: Adjust the transparency of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：For dark colors：0.4. For light colors：0.2.
+		description.zh: 调整 Windows/Linux 平台的窗体背景的透明度。仅对 Windows/Linux 有效。推荐值：暗色：0.4 亮色：0.2
+		type: variable-number-slider
+		default: 0.2
+		min: 0
+		max: 1
+		step: 0.01
+	-
+		id: win-window-brightness
+		title: Brightness of form background.
+		title.zh: 窗体背景的亮度
+		description: Adjust the brightness of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：dark：0.3, light：0.6.
+		description.zh: 调整 Windows/Linux 平台的窗体背景的亮度。仅对 Windows/Linux 有效。推荐值：暗色：0.3 亮色：0.6
+		type: variable-number-slider
+		default: 0.4
+		min: 0
+		max: 1
+		step: 0.01
+	-
+		id: win-bg-image-url
+		title: the background picture of the window
+		title.zh: 窗体背景图片
+		description: Set the background picture of the window.
+		description.zh: 设置窗体背景图片；
+		type: variable-text
+		default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+	-
+		id: macos-header
+		title: MacOS
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: mac-window-opacity
+		title: MacOS：The transparency of the window background.
+		title.zh: MacOS：窗体背景的透明度
+		description: Adjust the transparency of the window background on the Mac platform. Only effective for macOS, and the translucent effect switch is turned on in Settings -> Appearance.
+		description.zh: 调整 mac 平台的窗体背景的透明度。仅对 macOS 有效，且在设置 -> 外观中打开了半透明效果开关
+		type: variable-number-slider
+		default: 0.15
+		min: 0
+		max: 1
+		step: 0.01
+
+
+*/
+
+
+@font-face {
+	font-family: 'number-font';
+	src: url('data:font/woff;charset=utf-8;base64,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') format('woff');
+	font-weight:100;
+	font-style: normal;
+}
+
+
+
+/*
+ * --------------------------------全局变量定义------------------------------------
+ */
+
+body {
+	--list-indent: 1.5em;
+	--tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 75%));
+	--tx2: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 50%));
+	--tx3: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 25%));
+	--ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 12%));
+	--ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
+	--ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+	--h1-color: rgb(231, 77, 71);
+	--h2-color: rgb(215, 148, 64);
+	--h3-color: rgb(7, 170, 246);
+	--h4-color: rgb(163, 110, 251);
+	--h5-color: rgb(109, 215, 215);
+	--h6-color: rgb(175, 191, 5);
+	--blockquote-border-thickness: 0.5px;
+	--table-header-background: rgba(0, 0, 0, 0.1);
+	--list-bullet-end-padding: 1.4rem;
+	--file-line-width: calc(var(--editor-width) * 1px);
+	--nav-item-children-padding-start: 1px;
+	--window-font-size: 15;
+	--mac-window-opacity: 0.15;
+	--win-bg-image-url: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+	--input-radius: 14px;
+	--callout-content-padding: 4px;
+}
+
+body.is-mobile {
+	--window-font-size: calc(var(--window-font-size) * 0.9);
+	--input-radius: 20px;
+	--safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+
+.theme-dark {
+	--base-d: 0%;
+	/* 顶部导航栏背景色 */
+	--titlebar-background: rgb(42, 42, 42);
+	/* 中间编辑器的背景色 */
+	--background-primary: rgb(28, 28, 28);
+	--background-secondary: rgb(42, 42, 42);
+	--background-secondary-alt: rgb(42, 42, 42);
+	/* --ribbon-background: rgba(36, 36, 36, 1); */
+	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+	--nav-item-background-active: rgba(245, 245, 245, 0.05);
+	--nav-item-color-active: var(--text-accent);
+	--nav-indentation-guide-color: rgba(245, 245, 245, 0.08);
+	--background-modifier-border: rgba(245, 245, 245, 0.09);
+	--background-modifier-hover: rgba(245, 245, 245, 0.1);
+	--floating-toc-background-color: transparent;
+	--blockquote-border-color: rgba(245, 245, 245, 0.2);
+	--indentation-guide-color: rgba(245, 245, 245, 0.08);
+	--block-border-color: rgba(245, 245, 245, 0.3);
+	--hr-color: rgba(245, 245, 245, 0.2);
+	--table-header-background: rgba(245, 245, 245, 0.2);
+	--indentation-guide-color-active: var(--indentation-guide-color);
+	--scrollbar-thumb-color: rgba(255, 255, 255, 0.2);
+	--workspace-background-translucent: hsla(0, 0%, 0%, 0.2);
+	--text-color: rgb(220, 220, 220);
+	--active-border-color: rgba(0, 157, 255, 0.8);
+	--statusbar-bg-color: rgba(28, 28, 28, 0.7);
+	--model-bg-color: rgba(28, 28, 28, 0.5);
+	--app-model-bg-color: rgba(28, 28, 28, 0.8);
+	--editor-bg-color: rgba(28, 28, 28, .65);
+	--suggestion-bg-color: rgba(28, 28, 28, 0.1);
+	--code-background: rgba(245, 245, 245, 0.15);
+	--background-modifier-form-field: rgba(245, 245, 245, 0.04);
+	--win-blur: 20px;
+	--win-window-brightness: 0.3;
+	--win-editor-bg-color: rgba(18, 18, 18, .65);
+	--win-window-opacity: 0.4;
+	--background-secondary-alt: rgba(18, 18, 18, 0.1);
+
+}
+
+.theme-light {
+	--base-d: 0%;
+	--titlebar-background: rgb(248, 248, 248);
+	--background-primary: rgb(248, 248, 248);
+	--background-secondary: rgb(230, 230, 230);
+	--background-secondary-alt: rgb(230, 230, 230);
+	/* --ribbon-background: rgb(245, 245, 245); */
+	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+	--nav-item-background-active: rgba(0, 0, 0, 0.05);
+	--nav-item-color-active: var(--text-accent);
+	--background-modifier-hover: rgba(28, 28, 28, 0.1);
+	--background-modifier-border: rgba(28, 28, 28, 0.09);
+	--nav-indentation-guide-color: rgba(28, 28, 28, 0.05);
+	--indentation-guide-color: rgba(28, 28, 28, 0.05);
+	--indentation-guide-color-active: var(--indentation-guide-color);
+	--block-border-color: rgba(28, 28, 28, 0.25);
+	--floating-toc-background-color: transparent;
+	--blockquote-border-color: rgba(28, 28, 28, 0.2);
+	--scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
+	--workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
+	--text-color: rgb(10, 10, 10);
+	--active-border-color: rgb(0, 121, 172);
+	--statusbar-bg-color: rgba(248, 248, 248, 0.7);
+	--model-bg-color: rgba(248, 248, 248, 0.5);
+	--app-model-bg-color: rgba(248, 248, 248, 0.8);
+	--editor-bg-color: rgba(255, 255, 255, 0.5);
+	--suggestion-bg-color: rgba(248, 248, 248, 0.1);
+	--divider-color: rgba(0, 0, 0, 0.01);
+  --code-background: rgba(28, 28, 28, 0.1);
+	--background-modifier-form-field: rgba(230, 230, 230, 0.5);
+	--win-blur: 40px;
+	--win-window-brightness: 0.6;
+	--win-editor-bg-color: rgba(240, 240, 240, .65);
+	--win-window-opacity: 0.2;
+	--background-secondary-alt: rgba(240, 240, 240, 0.1);
+}
+
+/* 设置 mac 平台背景透明度 */
+.is-translucent:not(.is-fullscreen) .titlebar,
+.is-translucent:not(.is-fullscreen) .app-container {
+	background-color: rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) !important;
+}
+
+/*
+* --------------------------------调整全局样式------------------------------------
+*/
+
+hr.workspace-leaf-resize-handle {
+	/* background-color: var(--scrollbar-thumb-color); */
+}
+
+/* 堆叠模式时，隐藏顶部栏 */
+.mod-stacked .workspace-tab-header-container {
+	display: none;
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
+	/* backdrop-filter: blur(25px); */
+	background-color: var(--background-primary) !important;
+}
+
+/* .mod-stacked .workspace-tab-container .workspace-leaf.mod-active,
+.mod-stacked .workspace-tab-container .workspace-tab-header.mod-active {
+	filter: blur(0px);
+}
+
+.mod-stacked .workspace-tab-container .workspace-leaf {
+	filter: blur(5px);
+} */
+
+.mod-root .mod-top .workspace-tab-header-container {
+	background-color: var(--background-primary) !important;
+}
+
+.mod-stacked .workspace-tab-container .workspace-tab-header.is-active {
+	border: none;
+}
+
+/* 移除左侧功能按钮区右分界线 */
+.workspace-ribbon {
+	border-right: unset;
+}
+
+/* 移除顶部的下分界线 */
+.mod-top-left-space .workspace-tab-header-container {
+	border-bottom: none !important;
+}
+
+.workspace-tab-header-container {
+	border-bottom: none;
+	border-top: solid 1px var(--indentation-guide-color);
+}
+
+/* 移除设置的分界线 */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	border-top: unset !important;
+}
+
+/* 移除最小划按钮的下分界线 */
+.workspace-ribbon.mod-left:before {
+	border-bottom: unset;
+}
+
+/* 隐藏文件导航栏上的新建等按钮 */
+.nav-header {
+	/* display: none; */
+}
+
+img {
+	max-width: 100%;
+}
+
+/* 隐藏顶部header 的底部分隔线 */
+body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspace-tab-header-container {
+	border: none;
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
+
+	/* Webkit浏览器的滚动条自定义 */
+	&::-webkit-scrollbar {
+		height: 4px;
+		/* 设置滚动条的高度 */
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+		/* 设置滚动条轨道的颜色 */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbar-thumb-color);
+		/* 设置滚动条滑块的颜色 */
+		border-radius: 6px;
+		/* 设置滚动条滑块的圆角 */
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: var(--scrollbar-thumb-color);
+		/* 设置鼠标悬停时滚动条滑块的颜色 */
+	}
+}
+
+/* 侧边栏按钮区样式 */
+.side-dock-settings .side-dock-ribbon-action,
+.side-dock-actions .side-dock-ribbon-action {
+	border-radius: 10px;
+	padding: 7px;
+	margin-bottom: 6px;
+}
+
+/* 设置大纳样式 */
+.nav-file {
+	margin-left: -14px;
+}
+
+.workspace-drawer-header-name-chevron {
+	display: none;
+}
+
+body.is-mobile .nav-file-title {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/* 调整目录字体 
+ * 左侧目标标题文字字体
+*/
+.nav-folder-title,
+.nav-file-title-content,
+.tree-item-inner,
+.view-header-title-container,
+.tree-item-inner.nav-file-title-content,
+.workspace .mod-root .workspace-tab-header-inner-title,
+.tree-item-inner-text {
+	font-size: calc(var(--window-font-size) * 1px) !important;
+	/* font-family: 'number-font' !important; */
+}
+
+/* 调整目录折叠按钮与标题对齐
+ * 受 foldernote影响，需要做调整，否则对不齐
+ */
+
+.fn-whitespace-stop-collapsing .collapse-icon {
+	padding-top: 0 !important;
+}
+
+.fn-whitespace-stop-collapsing .nav-files-container .collapse-icon {
+	margin-top: 3.5px;
+}
+
+.folder-note-underline .has-folder-note .nav-folder-title-content {
+	text-decoration-thickness: 0.5px;
+}
+
+/* 兼容iconic */
+.nav-file.iconic-item .iconic-icon {
+	transform: translateX(30px);
+}
+
+.nav-file.iconic-item:has(.iconic-icon) .tree-item-inner.nav-file-title-content::before {
+	padding-right: 20px;
+}
+
+/* 设置目录标题前缀•◦∘ */
+.tree-item-inner.nav-file-title-content::before {
+	content: "•";
+	font-weight: bolder;
+	padding-right: 5px;
+	color: var(--nav-collapse-icon-color);
+	margin-left: -0.5px;
+}
+
+.tree-item-inner.nav-folder-title-content {
+	margin-left: -3px;
+}
+
+.tree-item-inner:has(.tag-pane-tag-parent) {
+	margin-left: -3px;
+}
+
+.tree-item .tag-pane-tag:not(.mod-collapsible):before {
+	content: "•";
+	font-weight: bolder;
+	padding-right: 5px;
+	margin-left: -15px;
+	color: var(--nav-collapse-icon-color);
+}
+
+/* 设置大纲样式 */
+.workspace-leaf-content[data-type='outline'] .tree-item-self:not(.mod-collapsible) .tree-item-inner {
+	/* background-color: red; */
+	margin-left: -15px;
+}
+
+.workspace-leaf-content[data-type='outline'] .tree-item-self.mod-collapsible .tree-item-inner {
+	margin-left: -4px;
+}
+
+.workspace-leaf-content[data-type='outline'] .tree-item-self:not(.mod-collapsible) .tree-item-inner::before {
+	/* background-color: aqua; */
+	content: "•";
+	font-weight: bolder;
+	padding-right: 3px;
+	color: var(--nav-collapse-icon-color);
+}
+
+
+/* 目录折叠按钮填充为实体按钮 */
+.collapse-icon svg.svg-icon {
+	width: 12px;
+	height: 14px;
+	stroke: var(--nav-collapse-icon-color);
+	fill: var(--nav-collapse-icon-color);
+	stroke-width: 1px;
+	margin-top: -1px;
+}
+
+/* 底部状态栏样式 */
+.status-bar {
+	padding: 5px 8px;
+	border-radius: 18px;
+	border-top: 1px solid var(--background-modifier-border);
+	border-left: 1px solid var(--background-modifier-border);
+	gap: 15px;
+	backdrop-filter: blur(20px);
+	background-color: var(--statusbar-bg-color) !important;
+}
+
+.status-bar::before {
+	content: '';
+	z-index: -1;
+	filter: blur(20px);
+	background-color: var(--app-model-bg-color) !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* backdrop-filter: blur(10px); */
+}
+
+.popover {
+	background-color: var(--app-model-bg-color) !important;
+	backdrop-filter: blur(5px);
+}
+
+.popover::before{
+	content: '';
+	z-index: -1;
+	filter: blur(8px);
+	background-color: var(--app-model-bg-color) !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* 隐藏库名 */
+.nav-folder.mod-root>.nav-folder-title {
+	display: none;
+}
+
+/* 隐藏预览按钮 */
+.view-actions button:nth-child(2) {
+	display: none;
+}
+
+/* 暗色主题时的字体颜色 */
+.theme-dark .workspace-tabs .workspace-leaf .view-content {
+	color: var(--text-color);
+}
+
+.theme-dark .markdown-preview-view {
+	color: var(--text-color);
+	/* padding-bottom: 10px !important; */
+}
+
+/* 亮色主题时的字体颜色 */
+.theme-light .workspace-tabs .workspace-leaf .view-content {
+	color: var(--text-color);
+	color: var(--text-color);
+}
+
+.theme-light .markdown-preview-view {
+	color: var(--text-color);
+	/* padding-bottom: 10px !important; */
+}
+
+.cm-s-obsidian,
+.markdown-preview-view {
+	hyphens: auto;
+}
+
+.mod-cm6 .cm-editor .cm-line,
+p,
+li,
+ol {
+	line-height: 1.5em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+}
+
+body:not(.text-justify) .mod-cm6 .cm-editor .cm-line,
+body:not(.text-justify) p,
+body:not(.text-justify) li,
+body:not(.text-justify) ol {
+	text-align: justify;
+}
+
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+	border-radius: var(--radius-s);
+	box-shadow: 0 0 0 0.5px var(--background-modifier-border-focus);
+}
+
+/* 调整高亮颜色 */
+.cm-s-obsidian span.cm-highlight {
+	background-color: var(--text-accent);
+	color: white !important;
+	padding: 2px 5px;
+	border-radius: 8px;
+}
+
+strong,
+.cm-strong {
+	color: var(--text-accent) !important;
+}
+
+/* 调节文档内部标题大小 */
+.inline-title {
+	font-size: 1.3em;
+	color: var(--text-color);
+	padding-bottom: 5px;
+	margin-bottom: var(--inline-title-margin-bottom);
+}
+
+body:not(.heading-bottom-line-off) .inline-title {
+	border-bottom: dashed 0.5px;
+}
+
+/* 分割线样式 */
+hr {
+	border-width: 0.8px !important;
+	/* border-color: var(--indentation-guide-color); */
+}
+
+.cm-line hr {
+	margin-bottom: 15px !important;
+}
+
+
+/* 调整内部嵌入块的对齐 */
+.markdown-source-view.mod-cm6 .internal-embed:not(.image-embed),
+/* .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false], */
+.markdown-preview-view .markdown-embed:not(.image-embed) {
+	margin-left: 3px !important;
+	padding-left: 14px;
+}
+
+.embed-title {
+	border-bottom: solid 0.5px var(--text-accent);
+	color: var(--text-accent);
+	font-weight: bold;
+}
+
+/* 
+* 大纲栏样式 
+*/
+.workspace-leaf-content[data-type='out-line'] .node-insert-event .tree-item .tree-item-self>.tree-item-inner::before {
+	content: "&";
+}
+
+/* callout style */
+.callout {
+	padding-left: 8px;
+}
+
+/* 移除关系图中关闭按钮背景色 */
+.workspace-split:not(.mod-root) .graph-controls.is-close,
+.graph-controls.is-close {
+	background-color: transparent;
+}
+
+/* 
+* 调整标题的上下间距，以及颜色字体等样式
+*/
+.cm-s-obsidian .HyperMD-header {
+	padding-inline-start: 0 !important;
+	padding-top: 5px !important;
+	/* padding-bottom: 5px !important; */
+}
+
+body:not(.heading-bottom-line-off) .cm-s-obsidian .HyperMD-header {
+	border-bottom: dashed 0.5px;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+	/* margin-bottom: 10px !important; */
+	padding-bottom: 0;
+}
+/* 标题下空一行 */
+.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(>br:only-child)) {
+	padding-top: var(--p-spacing);
+}
+
+h1,
+.HyperMD-header-1 .cm-foldPlaceholder,
+.markdown-rendered h1,
+.HyperMD-header-1,
+.cm-header-1 {
+	color: var(--h1-color) !important;
+	font-size: 1.30em;
+}
+
+h2,
+.HyperMD-header-2 .cm-foldPlaceholder,
+.markdown-rendered h2,
+.HyperMD-header-2,
+.cm-header-2 {
+	color: var(--h2-color) !important;
+	font-size: 1.25em;
+}
+
+h3:not(.svelte-1vwr9dd),
+.HyperMD-header-3 .cm-foldPlaceholder,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.cm-header-3 {
+	color: var(--h3-color) !important;
+	font-size: 1.20em;
+}
+
+h4,
+.HyperMD-header-4 .cm-foldPlaceholder,
+.markdown-rendered h4,
+.HyperMD-header-4,
+.cm-header-4 {
+	color: var(--h4-color) !important;
+	font-size: 1.15em;
+}
+
+h5,
+.HyperMD-header-5 .cm-foldPlaceholder,
+.markdown-rendered h5,
+.HyperMD-header-5,
+.cm-header-5 {
+	color: var(--h5-color) !important;
+	font-size: 1.10em;
+}
+
+h6,
+.HyperMD-header-6 .cm-foldPlaceholder,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.cm-header-6 {
+	color: var(--h6-color) !important;
+	font-size: 1.05em;
+}
+
+
+/*-- display H1-h6 in gutter--*/
+
+body:not(.alt-heading-off) h1:before,
+body:not(.alt-heading-off) .HyperMD-header-1:before {
+	content: "H1";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h1-color);
+}
+
+body:not(.alt-heading-off) h2:before,
+body:not(.alt-heading-off) .HyperMD-header-2:before {
+	content: "H2";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h2-color);
+}
+
+body:not(.alt-heading-off) h3:not(.svelte-1vwr9dd):before,
+body:not(.alt-heading-off) .HyperMD-header-3:before {
+	content: "H3";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h3-color);
+}
+
+body:not(.alt-heading-off) h4:before,
+body:not(.alt-heading-off) .HyperMD-header-4:before {
+	content: "H4";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h4-color);
+}
+
+body:not(.alt-heading-off) h5:before,
+body:not(.alt-heading-off) .HyperMD-header-5:before {
+	content: "H5";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h5-color);
+}
+
+body:not(.alt-heading-off) h6:before,
+body:not(.alt-heading-off) .HyperMD-header-6:before {
+	content: "H6";
+	font-size: 10px;
+	margin-left: -13px;
+	margin-right: 1px;
+	color: var(--h6-color);
+}
+
+
+/*-- is active line, hide H[1-6] in gutter --*/
+.CodeMirror-activeline .cm-header.cm-header-1:after,
+.CodeMirror-activeline .cm-header.cm-header-2:after,
+.CodeMirror-activeline .cm-header.cm-header-3:after,
+.CodeMirror-activeline .cm-header.cm-header-4:after,
+.CodeMirror-activeline .cm-header.cm-header-5:after,
+.CodeMirror-activeline .cm-header.cm-header-6:after {
+	font-size: 0px;
+	display: none;
+}
+
+/* 设置左侧目录折叠箭头,往下移，与标题对齐 */
+.tree-item-self .tree-item-icon {
+	/* margin-top: -4px; */
+}
+
+
+/* 设置左边指示按钮 */
+.markdown-source-view .collapse-indicator {
+	margin-right: 7px;
+}
+
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+	margin-top: -4px;
+}
+
+.heading-collapse-indicator.collapse-indicator svg.svg-icon {
+	margin-left: -15px;
+}
+
+.HyperMD-header .collapse-indicator svg.svg-icon {
+	margin-top: 6px;
+}
+
+.heading-collapse-indicator.collapse-indicator svg.svg-icon {
+	transform: translate(5px, -18px);
+}
+
+.view-content .list-collapse-indicator svg.svg-icon,
+.view-content .collapse-indicator svg.svg-icon {
+	color: var(--text-accent);
+}
+
+h1 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-1 .collapse-indicator svg.svg-icon {
+	color: var(--h1-color);
+}
+
+h2 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-2 .collapse-indicator svg.svg-icon {
+	color: var(--h2-color);
+}
+
+h3 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-3 .collapse-indicator svg.svg-icon {
+	color: var(--h3-color);
+}
+
+h4 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-4 .collapse-indicator svg.svg-icon {
+	color: var(--h4-color);
+}
+
+h5 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-5 .collapse-indicator svg.svg-icon {
+	color: var(--h5-color);
+}
+
+h6 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.HyperMD-header.HyperMD-header-6 .collapse-indicator svg.svg-icon {
+	color: var(--h6-color);
+}
+
+.horizontal-tab-nav-item, .vertical-tab-nav-item {
+	border-radius: var(--radius-l);
+}
+
+.setting-hotkey {
+	border-radius: var(--radius-l);
+	padding: 4px 4px 4px 8px;
+}
+
+body.is-mobile .setting-hotkey {
+	border-radius: var(--radius-xl);
+}
+
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+	border-radius: var(--radius-l);
+}
+
+/*
+* --------------------------------编辑模式页面样式调整------------------------------------
+*/
+
+/* 调整源码模式下，列表缩进线的对齐 */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+	margin-inline-start: 5px !important;
+}
+
+/* 调整有序列表的缩进线 */
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
+	padding: 0;
+	display: inline-block;
+	width: 40px;
+	text-align: right;
+	font-size: 20px;
+	font-family: 'number-font' !important;
+	padding-right: 8.4px;
+}
+
+.list-number {
+	text-align: right;
+	width: 100%;
+}
+
+.list-bullet {
+	margin-left: 0.9px;
+}
+
+/* 有序列表后面的文字左移 */
+.cm-s-obsidian .cm-formatting-list {
+	margin-right: -5.5px;
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+	margin-left: -10px;
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul {
+	margin-left: -10.5px;
+	margin-right: 8px;
+	font-size: 14px;
+	display: inline-block;
+	width: 26px;
+	text-align: center;
+	font-family: 'number-font' !important;
+	transform: translateY(-3px);
+}
+
+.markdown-source-view.mod-cm6 .task-list-label {
+	margin-left: -10px;
+}
+
+.HyperMD-list-line.HyperMD-list-line-2.HyperMD-task-line.cm-line .task-list-label {
+	margin-left: -4px;
+}
+
+
+/* 调整引用的样式 */
+.HyperMD-quote {
+	border-left: var(--blockquote-border-color) solid 2px !important;
+	padding-inline-start: var(--size-4-6);
+	transform: translateX(3px);
+}
+
+/* 调整字数统计样式 */
+.nav-file-title, .nav-folder-title {
+	/* border-radius: var(--radius-l); */
+}
+
+.novel-word-count--note-right .nav-files-container .nav-file-title::after,
+.novel-word-count--note-right .nav-files-container .nav-folder-title::after {
+	font-size: x-small;
+}
+
+body:not(.mod-rtl).fn-whitespace-stop-collapsing .nav-folder-title  {
+	padding-right: 7px !important;
+}
+/* 光标所在行的颜色 */
+.cm-content .cm-line.cm-active {
+	/* border-bottom: dashed var(--active-border-color) 0.01px; */
+}
+
+.tree-item-self {
+	border-radius: var(--radius-l);
+}
+
+body.is-mobile .tree-item-self {
+	border-radius: var(--radius-xl);
+}
+
+/* 修改光标宽度和颜色 */
+.cm-s-obsidian .cm-cursor {
+	border-left: solid 2px var(--text-accent) !important;
+}
+
+
+
+/*
+* --------------------------------阅读模式页面样式调整------------------------------------
+*/
+.markdown-rendered ol {
+	padding: 0;
+	margin: 0 0 0 -5px !important;
+	/* background-color: rgba(0, 255, 255, 0.219); */
+}
+
+.markdown-rendered ul {
+	padding: 0;
+	margin: 0 0 0 -3px !important;
+}
+
+.markdown-rendered.show-indentation-guide ol::before {
+	margin-left: 7px;
+}
+
+.markdown-rendered.show-indentation-guide ul::before {
+	margin-left: 5px;
+}
+
+.markdown-rendered.show-indentation-guide ul>li>ol::before {
+	margin-left: 5px;
+}
+
+.markdown-rendered.show-indentation-guide ul>li>ul::before {
+	margin-left: 4px !important;
+}
+
+/* 调整阅读模式下，缩进对齐线的对齐 */
+/* 
+.markdown-rendered.show-indentation-guide ul.has-list-bullet::before {
+	margin-left: -3px;
+}
+
+.markdown-rendered ul.has-list-bullet {
+	margin-left: -4px;
+} */
+
+.markdown-rendered ul.contains-task-list {
+	padding-left: 5px;
+}
+
+.markdown-rendered .cm-line,
+ol,
+li {
+	padding-bottom: 0.15em !important;
+	padding-top: 0.15em !important;
+}
+
+.markdown-rendered p {
+	margin: 0;
+	padding-bottom: 0.4em !important;
+	padding-top: 0.4em !important;
+}
+
+.markdown-rendered mark {
+	background-color: var(--text-accent);
+	color: white !important;
+	padding: 2px 5px !important;
+	border-radius: 8px;
+}
+
+.markdown-rendered hr {
+	margin: 15px 0 15px 0;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+	margin: 5px 0 !important;
+	padding: 5px 0;
+}
+
+body:not(.heading-bottom-line-off) .markdown-rendered h1,
+body:not(.heading-bottom-line-off) .markdown-rendered h2,
+body:not(.heading-bottom-line-off) .markdown-rendered h3,
+body:not(.heading-bottom-line-off) .markdown-rendered h4,
+body:not(.heading-bottom-line-off) .markdown-rendered h5,
+body:not(.heading-bottom-line-off) .markdown-rendered h6 {
+	border-bottom: dashed 0.5px;
+}
+
+.markdown-rendered blockquote {
+	border-inline-start: 2px solid var(--blockquote-border-color);
+	padding-inline-start: var(--size-4-4);
+}
+
+
+
+/* 将tab活动指示器修改为下划线*/
+.view-header-title-container:not(.mod-at-end):after {
+	background: none;
+}
+
+.is-translucent .workspace-tab-header-container {
+	/* background-color: var(--editor-bg-color) !important; */
+}
+
+.workspace-tab-header.is-active {
+	box-shadow: none;
+	border-bottom-width: 1.5px;
+	border-bottom-color: var(--text-accent) !important;
+	border-bottom-style: solid;
+	background-color: transparent;
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+	box-shadow: none !important;
+}
+
+.workspace-drawer-active-tab-header {
+	border-radius: 20px;
+}
+
+
+/* 
+* 适配PC端样式 
+*/
+
+/* 左侧目录去除左边的空白 */
+body:is(.show-ribbon):not(.is-mobile) .nav-files-container {
+	padding-left: 1px;
+}
+
+
+body.is-mobile .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+	background-color: rgb(115 112 112 / 15%);
+	padding: 4px 6px;
+}
+
+body.is-mobile .cm-s-obsidian span.cm-inline-code {
+	background-color: rgb(115 112 112 / 15%);
+	padding: 4px 6px !important;
+}
+
+
+/* 适配手机端，以13Pro Max分辨率为限制 */
+
+.is-mobile .workspace-drawer .nav-buttons-container {
+	--icon-size: var(--icon-m);
+}
+
+/* 移动端底部tab样式 */
+.is-mobile.theme-light .mobile-navbar {
+	border-top: rgba(0, 0, 0, 0.05) solid 0.8px;
+	background-color: transparent;
+}
+
+.is-mobile.theme-dark .mobile-navbar {
+	border-top: rgba(255, 255, 255, 0.08) solid 0.5px;
+	background-color: transparent;
+}
+
+.is-mobile .workspace-leaf-resize-handle {
+	border: transparent;
+}
+
+/* 调整目录字体 */
+.is-mobile .nav-folder-title,
+.is-mobile .nav-file-title-content {
+	font-size: 0.93em;
+}
+
+/* 顶部导航栏样式 */
+.is-mobile .view-header {
+	height: 40px !important;
+	/* display: flex !important; */
+	align-items: center !important;
+	justify-content: center !important;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 0.8px;
+	/* -webkit-backdrop-filter: blur(8px); */
+	/* backdrop-filter: blur(8px); */
+}
+
+.is-mobile.theme-dark .view-header {
+	border-bottom: rgba(255, 255, 255, 0.08) solid 0.5px;
+} 
+
+.is-mobile .mobile-toolbar {
+	background-color: transparent;
+}
+
+.is-mobile .mobile-toolbar-options-list {
+	background-color: transparent;
+	box-shadow: none !important;
+}
+
+.is-mobile .mobile-toolbar-options-container {
+	box-shadow: none !important;
+	box-shadow: 10px 0 15px -5px rgba(0, 255, 0, 1.0);
+}
+
+.is-mobile .mobile-toolbar-floating-options {
+	background-color: transparent;
+	backdrop-filter: none;
+}
+
+.is-mobile .mobile-toolbar-option {
+	background-color: transparent;
+	backdrop-filter: none;
+	filter: none;
+}
+
+.is-mobile.theme-light .mobile-toolbar-options-container {
+	border-top: rgba(0, 0, 0, 0.05) solid 0.8px;
+	background-color: rgb(229, 229, 235);
+}
+
+.is-mobile.theme-dark .mobile-toolbar-options-container {
+	border-top: rgba(255, 255, 255, 0.08) solid 0.5px;
+	background-color: rgb(49, 49, 49);
+}
+
+/* 调整导航栏图标大小 */
+.is-mobile .view-header-nav-buttons, .is-mobile .view-header .view-action {
+	--icon-size:var(--icon-m);
+	/* --icon-l-stroke-width: 1.5px; */
+}
+
+.is-mobile .view-header-title-container {
+	height: 32px !important;
+	font-weight: bold;
+}
+
+.is-mobile .view-header-title {
+	font-weight: bold;
+}
+
+/* 调整有序列表的缩进线 */
+
+.is-mobile .markdown-rendered ol {
+	transform: translateX(5px);
+}
+
+.is-mobile .markdown-rendered.show-indentation-guide ul>li>ol {
+	margin-left: 5px !important;
+}
+
+.is-mobile .markdown-rendered.show-indentation-guide ol::before {
+	margin-left: -12px;
+}
+
+.is-mobile .markdown-rendered.show-indentation-guide ul::before {
+	margin-left: -3.5px;
+}
+
+.is-mobile .markdown-rendered.show-indentation-guide ul>li>ol::before {
+	margin-left: -9.5px;
+	/* background-color: aqua; */
+
+}
+
+.is-mobile .markdown-rendered.show-indentation-guide ol>li>ul::before {
+	margin-left: -7px !important;
+}
+
+.is-mobile .search-input-container {
+	border-radius: 8px;
+	/* overflow: hidden; */
+}
+
+.is-mobile .document-search input,
+.is-mobile .document-replace input,
+.is-mobile .document-search input:focus, 
+.is-mobile .document-replace input:focus {
+	margin: 1px;
+	box-shadow: 0 0 0 0.5px var(--background-modifier-border-focus) !important;
+}
+
+.is-mobile .global-search-input-container.search-input-container input,
+.is-mobile .global-search-input-container.search-input-container input:focus {
+	border: none !important;
+	border-bottom: solid 1px var(--background-modifier-border) !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	background-color: transparent;
+}
+
+/* 快速切换样式优化 */
+.is-mobile .prompt-input-container {
+	padding: 5px 0;
+	border-bottom: solid 0.9px var(--background-modifier-border) !important;
+}
+
+.is-mobile .omnisearch-input-container__buttons {
+	display: none;
+}
+
+/* 优化侧边栏样式，半透明 */
+.is-mobile .workspace-drawer.mod-left,
+.is-mobile .workspace-drawer.mod-right {
+	background-color: var(--background-primary) !important;
+	/* backdrop-filter: blur(10px); */
+}
+
+.is-mobile .workspace-drawer-inner,
+.is-mobile .workspace-drawer-tab-container,
+.is-mobile .workspace-drawer-active-tab-container {
+	background-color: var(--background-primary) !important;
+}
+
+.is-mobile .workspace-drawer .nav-header {
+	border-top: none;
+	height: 80px;
+}
+
+.is-mobile .workspace-drawer-header-info {
+	font-size: 10px;
+	margin-top: 0px !important;
+}
+
+
+
+	/* 内联标签样式 */
+.CodeMirror-line span.cm-hashtag {
+	background-color: var(--text-accent);
+	color: white;
+	display: inline-block;
+	text-decoration: none !important;
+}
+
+.CodeMirror-line span.cm-hashtag-begin {
+	border-top-left-radius: 15px;
+	/* change to 4px for rectangular pills */
+	border-bottom-left-radius: 15px;
+	/* change to 4px for rectangular pills */
+	padding-left: 8px;
+	border-right: none;
+}
+
+.CodeMirror-line span.cm-hashtag-end {
+	border-top-right-radius: 15px;
+	/* change to 4px for rectangular pills */
+	border-bottom-right-radius: 15px;
+	/* change to 4px for rectangular pills */
+	padding-right: 8px;
+	border-left: none;
+}
+
+
+/* 
+* 标签样式
+*/
+.tag-pane-tag-count {
+	/* background-color: var(--text-accent); */
+	border: none;
+	font-size: 11px;
+	padding: 1px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 14px;
+	/* change to 4px for rectangular pills */
+}
+
+.tag-pane-tag-text {
+	border: none;
+	font-size: 11px;
+	padding: 3px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 14px;
+	/* change to 4px for rectangular pills */
+}
+
+.theme-dark .tag-pane-tag-text {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.theme-light .tag-pane-tag-text {
+	background-color: rgba(0, 0, 0, 0.09);
+}
+
+/* Change color of tag count pill when hovering */
+.tag-pane-tag:hover .tag-pane-tag-count {
+	color: white;
+	background-color: var(--base2);
+}
+
+a.tag {
+	/* margin-left: 3px; */
+}
+
+.internal-embed img:not([width]),
+.internal-embed audio,
+.internal-embed video {
+	padding-top: 8px;
+}
+
+
+.markdown-source-view.mod-cm6 .edit-block-button {
+	/* background-color: #148b09; */
+	color: white;
+}
+
+.markdown-source-view.mod-cm6 .edit-block-button:hover {
+	/* background-color: #148b09 !important; */
+	color: white;
+}
+
+.theme-light .markdown-source-view.mod-cm6 .edit-block-button {
+	color: white;
+}
+
+.theme-light .markdown-source-view.mod-cm6 .edit-block-button:hover {
+	color: white;
+}
+
+
+/* table */
+
+/* 
+* 优化表格样式 
+*/
+.markdown-rendered thead tr {
+	background-color: var(--table-header-background);
+}
+
+.markdown-rendered thead>tr>th,
+.markdown-rendered tbody>tr>td {
+	padding: 10px;
+}
+
+/* 移除表格前面的空行  */
+.cm-line[dir="ltr"]:has(+ .cm-table-widget) {
+	display: none !important;
+}
+
+.markdown-rendered table,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table {
+	width: 100%;
+}
+
+thead:hover {
+	background-color: var(--table-header-background);
+}
+
+.markdown-rendered thead tr>th {
+	line-height: 22px;
+}
+
+.markdown-rendered tbody tr>td {
+	line-height: 22px;
+	height: 38px;
+	min-height: 38px;
+}
+
+thead>tr>th,
+tbody>tr>td,
+.table-cell-wrapper {
+	/* font-size: small !important; */
+	line-height: 36px;
+}
+
+
+/* 
+* Scrollbar 样式 
+*/
+::-webkit-scrollbar {
+	width: 4px !important;
+	overflow: hidden !important;
+	background-color: transparent !important;
+}
+
+.mod-windows ::-webkit-scrollbar { 
+	width: 9px !important;
+}
+
+.is-mobile ::-webkit-scrollbar {
+	width: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+	border-radius: 5px !important;
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+
+/* 
+* 去除输入框选中后的阴影 
+*/
+input:not(.prompt-input):focus {
+	border: 0 !important;
+	box-shadow: 0 0 0 0.5px var(--background-modifier-border-focus) !important;
+}
+
+/* 移除输入框的背景色 */
+.markdown-source-view.mod-cm6 .document-search-container {
+	background-color: transparent !important;
+}
+
+.mod-active .document-search-container {
+	background-color: transparent !important;
+}
+
+textarea, input.metadata-input-text, input[type='date'], input[type='datetime-local'], input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+	background-color: transparent;
+}
+
+.search-result-container {
+	padding-left: 0;
+}
+
+.mod-global-search .search-result-file-matches {
+	margin-left: 24px;
+}
+
+.search-result .tree-item-inner {
+	margin-left: -3px;
+	font-size: 0.78em;
+}
+
+input.document-search-input {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+/* 搜索页样式 */
+.search-result .search-result-file-title {
+	font-weight: bolder;
+	font-size: 17px;
+	margin-top: 5px;
+	color: unset !important;
+}
+
+.search-result-file-matched-text {
+	color: var(--text-accent);
+	background-color: unset;
+}
+
+.search-result-file-matches {
+	/* font-size: 14px; */
+	/* margin-left: 0; */
+}
+
+.search-result-file-match-destination-file-icon {
+	color: unset;
+	width: 10px;
+}
+
+.outgoing-link-pane .tree-item-inner {
+	/* font-size: 0.9em; */
+}
+
+.outgoing-link-item span.tree-item-icon {
+	width: 10px;
+	margin-left: -15px;
+}
+
+
+
+/* 隐藏tab 的控制按钮，鼠标移上去时，自动显示 */
+body:not(.is-mobile) .nav-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: var(--size-4-1);
+	padding-left: var(--size-4-3);
+}
+
+body:not(.is-mobile) .nav-buttons-container {
+	background-color: var(--nav-button-container-bg);
+	border-radius: var(--radius-m);
+	padding: 2px 4px;
+	width: fit-content;
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf-content .nav-header .nav-buttons-container {
+	background-color: transparent;
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf-content .nav-header:hover .nav-buttons-container {
+	background-color: var(--nav-button-container-bg);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf .workspace-leaf-content .nav-header .nav-action-button:hover {
+	background-color: var(--background-modifier-hover);
+	opacity: var(--icon-opacity);
+	border-radius: var(--clickable-icon-radius);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf-content .nav-header .nav-action-button {
+	flex-grow: 0;
+	max-width: 3px;
+	max-height: 3px;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 0px;
+	background-color: var(--text-faint);
+	transition: max-width 240ms cubic-bezier(0.4, 0, 0.2, 1),
+		max-height 240ms cubic-bezier(0.4, 0, 0.2, 1),
+		opacity 240ms cubic-bezier(0.4, 0, 0.2, 1),
+		padding 240ms cubic-bezier(0.4, 0, 0.2, 1), background-color 120ms linear;
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf-content .nav-header .nav-action-button.is-active {
+	background-color: var(--icon-color-active);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .workspace-leaf-content .nav-header:hover .nav-action-button {
+	max-width: 32px;
+	max-height: 64px;
+	opacity: 0.85;
+	flex-grow: 1;
+	background-color: transparent;
+	padding: var(--size-2-2) var(--size-2-3);
+}
+
+
+/*
+ * --------------------------------调整开启半透明效果的样式------------------------------------
+ */
+
+/* 顶部标签栏颜色与编辑器统一 */
+.is-translucent .mod-root .mod-top .workspace-tab-header-container {
+	/* background-color: var(--editor-bg-color) !important; */
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+	border-left: 1px solid var(--indentation-guide-color);
+}
+
+.is-translucent:not(.is-fullscreen) .mod-root .mod-top .workspace-tab-header-container {
+	background-color: var(--editor-bg-color) !important;
+}
+
+.is-translucent.theme-light td.svelte-egt0yd {
+	border-right: 1px solid rgba(105, 105, 105, 0.2);
+}
+
+.is-translucent.theme-light .status-bar {
+	background-color: rgba(245, 245, 245, 0.8);
+	-webkit-backdrop-filter: blur(100px);
+	backdrop-filter: blur(100px);
+}
+
+.is-translucent.theme-dark .status-bar {
+	background-color: rgba(28, 28, 28, 0.05);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.is-translucent .search-result-file-matches {
+	background-color: transparent !important;
+	/* box-shadow: 0 0 0 1px #c1c1c114 !important; */
+}
+
+.is-translucent .search-result-file-match {
+	/* border-bottom: 1px solid #c1c1c160 !important; */
+}
+
+.is-translucent.theme-light .search-result-file-matches {
+	background-color: transparent !important;
+	/* box-shadow: 0 0 0 1px #c1c1c1b3 !important; */
+}
+
+.is-translucent.theme-light .search-result-file-match-destination-file {
+	background-color: #ffffff7b;
+}
+
+.is-translucent.theme-dark .search-result-file-match-destination-file {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.theme-dark .search-result-file-matches {
+	background-color: transparent !important;
+	box-shadow: 0 0 0 1px #c1c1c114 !important;
+}
+
+.theme-dark .search-result-file-match {
+	border-bottom: 1px solid #c1c1c114 !important;
+}
+
+.is-translucent.theme-dark .menu {
+	background: rgba(30, 30, 30, 0.6);
+	backdrop-filter: blur(30px);
+	/* border: none; */
+}
+
+.is-translucent.theme-light .menu {
+	background: rgba(240, 240, 240, 0.6);
+	backdrop-filter: blur(30px);
+	/* border: none; */
+}
+
+
+/* 适配半透明背景 */
+/* .is-focused .workspace-leaf.mod-active .view-header, */
+.is-translucent .view-header {
+	background-color: var(--editor-bg-color) !important;
+}
+
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .view-header {
+	background-color: transparent !important;
+}
+
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+	background-color: var(--editor-bg-color) !important;
+	backdrop-filter: blur(20px) !important;
+}
+
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
+	backdrop-filter: blur(20px) !important;
+	background-color: var(--editor-bg-color) !important;
+}
+
+.is-translucent .workspace-split.mod-root .workspace-tabs .view-content {
+	background-color: var(--editor-bg-color);
+}
+
+.is-translucent .workspace-split.mod-root .workspace-tabs.mod-stacked .view-content {
+	background-color: transparent;
+}
+
+.is-translucent.theme-dark .markdown-source-view.mod-cm6 .cm-editor {
+	background-color: transparent;
+}
+
+.workspace-split.mod-root {
+	background-color: transparent;
+}
+
+.is-translucent.theme-dark .markdown-preview-view {
+	background-color: transparent !important;
+}
+
+
+
+
+/* 
+ * 适配PC端样式 
+ */
+body:not(.is-mobile)	.modal-container.mod-dim .prompt {
+	backdrop-filter: blur(15px);
+	background-color: var(--model-bg-color);
+}
+
+body:not(.is-mobile)	.modal-container.mod-dim .prompt .prompt-input-container {
+	background-color: transparent;
+}
+
+body:not(.is-mobile)	input.prompt-input {
+	background-color: transparent !important;
+}
+
+body:not(.is-mobile)	.modal.float-search-modal {
+	background-color: var(--model-bg-color);
+	backdrop-filter: blur(15px);
+}
+
+body:not(.is-mobile)	.modal-container.mod-dim .prompt::before,
+body:not(.is-mobile)	.modal.float-search-modal::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: inherit;
+	backdrop-filter: blur(15px);
+	z-index: -1;
+}
+
+body:not(.is-mobile)	.float-search-modal .float-search-modal-search-ctn .search-row,
+body:not(.is-mobile)	.global-search-input-container,
+body:not(.is-mobile)	.search-input-container input {
+	background-color: transparent !important;
+	border-radius: 14px;
+}
+
+body:not(.is-mobile)	.suggestion-container.mod-search-suggestion::before {	
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--app-model-bg-color) !important;
+	backdrop-filter: blur(5px);
+	z-index: -1;
+}
+
+body:not(.is-mobile)	.suggestion-container.mod-search-suggestion {
+	background-color: var(--suggestion-bg-color) !important;
+	backdrop-filter: blur(5px) !important;
+}
+
+body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
+	background-color: var(--suggestion-bg-color) !important;
+	backdrop-filter: blur(5px) !important;
+}
+
+
+
+.suggestion-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+
+/* 
+ * 调整 cMenu Toolbar Editor 样式 
+ */
+ #editingToolbarModalBar.editingToolbarFlex :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]) {
+	/* margin: 5px !important; */
+	background-color: transparent;
+}
+
+#editingToolbarModalBar.editingToolbarDefaultAesthetic,
+#editingToolbarModalBar.editingToolbarDefaultAesthetic~#editingToolbarPopoverBar {
+	backdrop-filter: blur(10px);
+	background-color: #171717de;
+}
+
+:is(#editingToolbarModalBar, #editingToolbarPopoverBar) button[class^=editingToolbarCommandsubItem]>.subitem button.menu-item {
+	padding: 10px 5px !important;
+}
+
+#editingToolbarModalBar.top :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]):not(.editingToolbar-Divider-Line) {
+	padding: 8px;
+	border-radius: 6px;
+}
+
+#editingToolbarModalBar.top {
+	border-bottom: solid 1px var(--background-modifier-border);
+	top: 0px !important;
+	backdrop-filter: none;
+	background-color: transparent !important;
+	border: none;
+	border-radius: 0 !important;
+}
+
+#editingToolbarModalBar.editingToolbarDefaultAesthetic.top {
+	backdrop-filter: unset;
+}
+
+#editingToolbarModalBar.top button.editingToolbar-Divider-Line {
+	background-color: transparent !important;
+}
+
+#editingToolbarModalBar.editingToolbarDefaultAesthetic {
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	background-color: var(--app-model-bg-color);
+	/* box-shadow: var(--input-shadow); */
+}
+
+#editingToolbarModalBar .editingToolbarCommandItem {
+	backdrop-filter: unset;
+	padding: 7px;
+}
+
+#editingToolbarModalBar.editingToolbarDefaultAesthetic,
+#editingToolbarModalBar.editingToolbarDefaultAesthetic~#editingToolbarPopoverBar {
+	backdrop-filter: blur(15px);
+}
+
+:is(#editingToolbarModalBar, #editingToolbarPopoverBar) button.editingToolbar-Divider-Line {
+	min-width: unset;
+	flex-shrink: 0;
+	display: inline-flex;
+	width: 0.6px !important;
+	height: 22px;
+	opacity: 0.8;
+	margin: 0;
+	min-width: 0.5px !important;
+}
+
+#editingToolbarModalBar .subitem {
+	border-radius: 18px !important;
+	backdrop-filter: blur(15px) !important;
+	margin-top: 10px;
+}
+
+#editingToolbarModalBar .subitem .menu-item {
+	padding: 17px 20px !important;
+}
+
+.theme-dark :is(#editingToolbarModalBar, #editingToolbarPopoverBar) button.editingToolbar-Divider-Line
+{
+	background-color: transparent !important;
+}
+
+
+
+/* dataview */
+.markdown-rendered thead tr>th {
+	border-bottom: none;
+}
+
+.dataview.table-view-table {
+	overflow: hidden;
+	border: dashed 0.5px var(--block-border-color);
+	/* border-radius: 10px; */
+
+}
+
+.dataview.table-view-table tr {
+	border: dashed 0.1px var(--block-border-color);
+
+}
+
+
+
+
+/* Export image 样式 */
+.modal-container.mod-dim .modal:has(.export-image-preview-root) {
+	width: 60% !important;
+}
+
+.modal-container.mod-dim .modal:has(.export-image-preview-root) .modal-title {
+	text-align: center;
+}
+
+.export-image-preview-left {
+	max-width: 400px;
+}
+
+.export-image-preview-right {
+	width: 100%;
+	border: solid 1px var(--nav-indentation-guide-color);
+	border-radius: 10px;
+}
+
+
+/* 适配手机端，以13Pro Max分辨率为限制 */
+.is-mobile .modal-container.mod-dim .modal:has(.export-image-preview-root) {
+	width: 100% !important;
+	margin-top: 50px;
+}
+
+.is-mobile	.export-image-preview-left {
+	padding: 0;
+}
+
+
+.modal-content:has(.export-image-preview-root) {
+	padding-top: 0;
+}
+
+.export-image-preview-root .export-image-preview-main {
+	margin: 0;
+}
+
+.export-image-preview-left {
+	padding: 0 15px 0 0;
+}
+
+.export-image-preview-left .setting-item {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between;
+	align-items: center !important;
+}
+
+.export-image-preview-left .setting-item .setting-item-info {
+	text-align: left;
+}
+
+.export-image-preview-left .setting-item .setting-item-control {
+	text-align: right;
+	margin: 0 !important;
+	width: auto !important;
+}
+
+.export-image-preview-left .setting-item .setting-item-control input[type="number"] {
+	width: 60px !important;
+	text-align: center;
+}
+
+.export-image-preview-actions {
+	padding-bottom: 20px !important;
+}
+
+
+
+
+/* Float Search 样式 */
+
+
+.float-search-modal-instructions {
+	display: none;
+}
+
+.float-search-modal-container.modal-container.mod-dim .modal {
+	margin-top: 60px;
+}
+
+.is-mobile .float-search-modal-container.modal-container.mod-dim .modal {
+	/* margin-top: 44px; */
+}
+
+
+.search-results-result-count {
+	width: 100px !important;
+	text-align: left !important;
+}
+
+.float-search-modal .modal-header {
+	display: none;
+}
+
+.float-search-modal .float-search-modal-search-ctn .search-row {
+	padding-right: 40px;
+	margin-top: 1px;
+}
+
+.float-search-modal .modal-close-button {
+	margin-top: 12px;
+}
+
+/* 适配手机端，以13Pro Max分辨率为限制 */
+.is-mobile	.float-search-modal .modal-close-button {
+	margin-top: 8px;
+}
+
+.is-mobile	.float-search-modal .float-search-modal-search-ctn .search-row {
+	margin-left: 0px;
+}
+
+
+
+/* markmap */
+.theme-dark :not(.markmap-fold).markmap-node>circle {
+	fill: black;
+}
+
+g.markmap-node[data-depth='0'] .markmap-foreign {
+	font-weight: bolder;
+}
+
+/* 调整白板样式 */
+.canvas,
+.canvas-wrapper,
+.canvas-background {
+	background-color: transparent;
+}
+
+.canvas-background {
+	display: none;
+}
+
+.canvas-card-menu .canvas-card-menu-button {
+	--icon-size: var(--icon-l);
+}
+
+.canvas-card-menu {
+	background-color: var(--model-bg-color) !important;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	backdrop-filter: blur(10px);
+}
+
+.canvas-control-group {
+	background-color: var(--model-bg-color) !important;
+	border-radius: 18px;
+	backdrop-filter: blur(10px);
+}
+
+.canvas-control-item {
+	background-color: unset;
+}
+
+/* 调整关系图谱样式 */
+.workspace-split:not(.mod-root) .graph-controls.is-close, .graph-controls.is-close {
+	background-color: transparent;
+	margin-top: -20px;
+	margin-right: -10px;
+}
+
+/* Windows | linux style */
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--win-bg-image-url) repeat;
+	background-size: cover;
+	filter: blur(var(--win-blur)) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity));
+	z-index: -1;
+}
+
+.workspace-ribbon.mod-left:before {
+	background-color: var(--background-secondary);
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root {
+	background: var(--win-editor-bg-color) !important;
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon.mod-left:before {
+	background-color: transparent;
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-horizontal,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-leaf,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .sidebar-toggle-button.mod-left,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .mod-root .mod-top .workspace-tab-header-container,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .titlebar-button-container.mod-right,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-header-container {
+	background-color: transparent !important;
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-root,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-root .view-content,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-root .view-header {
+	background: transparent !important;
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-title-container:after {
+	background: transparent !important;
+}
+
+
+/* web viewer */
+.webviewer-address input {
+	border-radius: 14px;
+}
+

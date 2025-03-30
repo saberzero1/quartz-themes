@@ -1,0 +1,95 @@
+body {
+  /* Backgrounds */
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-20);
+  --background-secondary: var(--color-base-00);
+  --background-modifier-border: var(--interactive-accent);
+  --background-modifier-border-hover: var(--interactive-accent);
+  --background-modifier-border-focus: var(--interactive-accent);
+  --interactive-hover: var(--color-base-00);
+  --radius-s: 0;
+  --radius-m: 0;
+  --radius-l: 0;
+  --nav-item-padding: 3px;
+
+  /* Normalize title bar colors */
+  --tab-container-background: var(--color-base-00);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-00);
+
+  /* Graph adjustements */
+  --graph-line: var(--color-base-40, var(--background-modifier-border-focus));
+
+  /* Font sizes */
+  --header-size: 1.25em;
+  --h1-size: var(--header-size);
+  --h2-size: var(--header-size);
+  --h3-size: var(--header-size);
+  --h4-size: var(--header-size);
+  --h5-size: var(--header-size);
+  --h6-size: var(--header-size);
+
+  /* UI font sizes */
+  --font-ui-smaller: 13px;
+  --font-ui-small: 14px;
+  --font-ui-medium: 16px;
+  --font-ui-large: 22px;
+
+  /* UI font colors */
+  --h1-color: var(--interactive-accent);
+  --h2-color: var(--interactive-accent);
+  --h3-color: var(--interactive-accent);
+  --h4-color: var(--interactive-accent);
+  --h5-color: var(--interactive-accent);
+  --h6-color: var(--interactive-accent);
+}
+
+.theme-dark {
+  --color-base-00: #111111;
+  --header-color: var(--interactive-accent); /* #0f4bef alternative*/
+  --bold-color: white;
+  --italic-color: white;
+  --text-highlight-bg: #9ece6a66;
+  --text-faint: #565f8988;
+}
+
+.theme-light  {
+  --color-base-00: #d5d5d5;
+  --header-color: ; /* #0f4bef alternative*/
+  --bold-color: black;
+  --italic-color: black;
+  --text-highlight-bg: #485e3066;
+  --text-faint: #9699a388;
+}
+
+/* Inline title fun */
+.inline-title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.cm-header, .inline-title, .border-right {
+    text-shadow: 0 0 20px var(--interactive-accent);
+}
+
+.cm-hmd-internal-link {
+    text-shadow: 0 0 8px var(--interactive-accent);
+    color: var(--link-color);
+}
+
+.view-header-breadcrumb {
+    color: var(--link-color);
+    opacity: 60%;
+}
+
+.view-header-title, .nav-file-title.is-active {
+    color: var(--link-color);
+    text-shadow: 0 0 8px var(--interactive-accent)
+}
+
+.nav-file-tag{
+    color: var(--interactive-accent);
+    opacity: 50%;
+}
+
+

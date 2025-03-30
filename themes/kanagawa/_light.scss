@@ -1,0 +1,38 @@
+:root[saved-theme="light"] {
+  --background-primary: var(--paper-like);
+  --background-primary-alt: var(--lotusWhite4);
+  --background-secondary: var(--soft-white);
+  --background-secondary-alt: var(--lotusWhite3);
+  --text-normal: var(--lotusInk1);
+  --text-faint: var(--lotusGray3);
+  --text-title-h1: var(--lotusRed);
+  --text-title-h2: var(--lotusOrange);
+  --text-title-h3: var(--lotusYellow);
+  --text-title-h4: var(--lotusGreen);
+  --text-title-h5: var(--lotusAqua);
+  --text-title-h6: var(--lotusBlue4);
+  --text-link: var(--lotusBlue5);
+  --text-a: var(--lotusTeal1);
+  --text-a-hover: var(--lotusRed);
+  --text-a-url: var(--lotusTeal2);
+  --text-mark: rgba(183, 208, 174, 0.4);
+  --pre-code: var(--lotusGray);
+  --text-highlight-bg: var(--lotusBlue2);
+  --interactive-accent: var(--lotusBlue3);
+  --interactive-before: var(--lotusGray2);
+  --background-modifier-border: var(--lotusBlue3);
+  --text-accent: var(--lotusGreen);
+  --interactive-accent-rgb: var(--lotusGreen);
+  --inline-code: var(--lotusGreen);
+  --code-block: var(--lotusGray3);
+  --vim-cursor-backgroung: var(--lotusGray);
+  --vim-cursor-color: var(--lotusInk1);
+  --text-selection: rgba(183, 208, 174, 0.5);
+  --text-tag: var(--lotusAqua);
+  --task-checkbox: var(--lotusGray2);
+  --table-header: hsl(42, 33%, 91%);
+  --table-row-even: hsl(42, 35%, 94%);
+  --table-row-odd: hsl(42, 37%, 97%);
+  --table-hover: var(--lotusWhite1);
+  --bold-color: var(--lotusInk1);
+}

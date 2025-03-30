@@ -1,0 +1,124 @@
+:root {
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+
+  --sakurajima-color-black-100: rgba(46, 46, 46, 1);
+  --sakurajima-color-black-200: rgba(28, 26, 25, 1);
+  --sakurajima-color-black-300: rgba(23, 22, 21, 1);
+
+  --sakurajima-color-light-black-100: rgba(46, 46, 46, 0.6);
+  --sakurajima-color-light-black-200: rgba(28, 26, 25, 0.6);
+  --sakurajima-color-light-black-300: rgba(23, 22, 21, 0.6);
+
+  --sakurajima-color-white-100: rgba(232, 222, 209, 1);
+  --sakurajima-color-white-200: rgba(181, 174, 165, 1);
+  --sakurajima-color-white-300: rgba(145, 140, 134, 1);
+
+  --sakurajima-color-gray-100: rgba(125, 119, 114, 1);
+  --sakurajima-color-gray-200: rgba(128, 125, 122, 1);
+  --sakurajima-color-gray-300: rgba(112, 112, 111, 1);
+
+  --sakurajima-color-rust-100: rgba(117, 101, 68, 1);
+  --sakurajima-color-rust-200: rgba(105, 84, 43, 1);
+  --sakurajima-color-rust-300: rgba(82, 62, 23, 1);
+
+  --sakurajima-color-red-100: rgba(156, 65, 54, 1);
+  --sakurajima-color-red-200: rgba(153, 53, 41, 1);
+  --sakurajima-color-red-300: rgba(133, 22, 9, 1);
+
+  --sakurajima-color-blue-100: rgba(58, 64, 145, 1);
+  --sakurajima-color-blue-200: rgba(31, 39, 143, 1);
+  --sakurajima-color-blue-300: rgba(16, 26, 158, 1);
+
+  --sakurajima-color-orange-100: rgba(191, 141, 84, 1);
+  --sakurajima-color-orange-200: rgba(194, 125, 47, 1);
+  --sakurajima-color-orange-300: rgba(196, 109, 10, 1);
+}
+
+body {
+  /* Interactive colors */
+  --interactive-normal: var(--sakurajima-color-black-100);
+  --interactive-hover: var(--sakurajima-color-black-200);
+
+  /* Text foreground colors */
+  --text-normal: var(--sakurajima-color-white-100);
+  --text-muted: var(--sakurajima-color-white-200);
+
+  /* Background colors */
+  --background-primary: var(--sakurajima-color-black-100);
+  --background-primary-alt: var(--sakurajima-color-black-200);
+
+  /* Component: Button */
+  --button-radius: var(--radius-m);
+
+  /* Component: Checkbox */
+  --checkbox-radius: var(--radius-m);
+
+  /* Component: Color input */
+  --swatch-radius: var(--radius-m);
+
+  /* Component: Dropdowns */
+  --dropdown-background-brend-mode: var(--sakurajima-color-gray-100);
+  --dropdown-background-hover: var(--sakurajima-color-orange-100);
+
+  /* Component: Modal */
+  --modal-radius: var(--radius-m);
+
+  /* Component: Navigation */
+  --nav-item-color: var(--sakurajima-color-orange-100);
+
+  /* Component: Slider */
+  --slider-thumb-radius: var(--radius-m);
+  --slider-track-background: var(--sakurajima-color-orange-100);
+
+  /* Component: Tabs */
+  --tab-text-color-focused: var(--sakurajima-color-white-300);
+  --tab-text-color-focused-active: var(--sakurajima-color-orange-100);
+  --tab-text-color-focused-active-current: var(--sakurajima-color-orange-100);
+  --tab-radius: var(--radius-m);
+  --tab-radius-active: var(--radius-m);
+
+  /* Component: Text input */
+  --input-radius: var(--radius-m);
+
+  /* Component: Toggle */
+  --toggle-radius: var(--radius-m);
+  --toggle-thumb-radius: var(--radius-m);
+  --toggle-thumb-color: var(--sakurajima-color-orange-100);
+  --toggle-s-border-width: 2px;
+
+  /* Window: Ribbon */
+  --ribbon-background: var(--sakurajima-color-black-200);
+
+  /* Editor: Blockquote */
+  --blockquote-background-color: var(--sakurajima-color-black-200);
+  --blockquote-border-thickness: 10px;
+  --blockquote-border-color: var(--sakurajima-color-orange-100);
+  --blockquote-font-style: bold;
+  --blockquote-color: var(--sakurajima-color-white-200);
+}
+
+.theme-dark {
+  /* rgba(167, 106, 37, 1) */
+  --accent-h: 30;
+  --accent-s: 64%;
+  --accent-l: 40%;
+}
+
+svg * {
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.menu {
+  padding: var(--size-2-1);
+}
+
+.menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}

@@ -1,0 +1,142 @@
+.theme-dark {
+    /********************************************/
+    /* General settings */
+    /********************************************/
+    --background-primary: #1a1b26;
+    --background-secondary: #171722;
+    --titlebar-background: #1a1b26;
+    --titlebar-background-focused: #171722;
+
+    --color-accent: #c23ba8;
+    --color-accent-hovered: #cc5fb6;
+
+    --link-color: var(--color-accent);
+    --link-color-hover: var(--color-accent-hovered);
+    --link-external-color: var(--color-accent);
+    --link-external-color-hover: var(--color-accent-hovered);
+    --text-accent: var(--color-accent);
+    --text-accent-hover: var(--color-accent-hovered);
+
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-hovered);
+
+    /********************************************/
+    /* Text related - Interface */
+    /********************************************/
+    /*  */
+    --text-muted: #999999;
+    /*  */
+    --text-faint: #999999;
+
+    /********************************************/
+    /* Text related - Non interface*/
+    /********************************************/
+    --text-error: rgb(244, 105, 188);
+    /* Basic text color */
+    --text-normal: #FFFFFF;
+    /* Bold text color */
+    --bold-color: #ff4fdc;
+    /* Bold text weight */
+    --bold-weight: 700;
+    /* Italic text color */
+    --italic-color: #f93fff;
+
+    /********************************************/
+    /* Header related */
+    /********************************************/
+    /* Header related color */
+    --h1-color: #c23ba8;
+    --h2-color: #cb5cb3;
+    --h3-color: #d379be;
+    --h4-color: #da94c9;
+    --h5-color: #e0aed4;
+    --h6-color: #e5c8de;
+    
+    /********************************************/
+    /* Inline Title related */
+    /* DISCLAIMER
+        You need to enable Inline Title.
+        Follow this path through Obsidian Settings Panel :
+        Settings > Appearance > Show Inline Title.
+    */
+    /********************************************/
+    /* Inline Title color */
+    --inline-title-color: var(--color-accent);
+    /* Inline Title font */
+        /* --inline-title-font: ; */
+    /* Inline Title line height */
+        /* --inline-title-line-height: ; */
+    /* Inline Title size */
+        /* --inline-title-size:	; */
+
+    /********************************************/
+    /* Code related */
+    /********************************************/
+    --code-background: #000000;
+    --code-normal: #FFFFFF;
+    --code-comment: #FFFFFF;
+
+    /********************************************/
+    /* Graph View */
+    /********************************************/
+    /* Colour used for the text under each node. */
+    --graph-text: rgb(204, 204, 204);
+    /* Colour used for a file node */
+    --graph-node: var(--color-accent-hovered);
+    /* Colour used for a tag node */
+    --graph-node-tag: #5dc1d2;
+    /* Colour used for an attachment node */
+    --graph-node-attachment: #d669bc;
+    /* Colour used for a node that the file it is pointing to isn't created. */
+    --graph-node-unresolved: #9e8aff;
+    /* Colour used for a connection between two nodes. */
+    --graph-line: #a54aa8;
+    /* Colour used as an outline for the node when it get hovered. */
+    --graph-node-focused: #a54aa8;
+}
+
+/* Light theme will be develop once the base features of it's dark equivalent are developed.  */
+/* Rappel à moi-même : ne pas oublier de changer les possibilités de modes d'affichage (light/dark). */
+/* .theme-light {
+    --background-primary: #c9e6da;
+    --background-secondary: #aecfc1;
+    --titlebar-background: #c9e6da;
+    --titlebar-background-focused: #aecfc1;
+
+    --link-color: #C04CFD;
+    --link-color-hover: #ae33f0;
+    --link-external-color: #C04CFD;
+    --link-external-color-hover: #ae33f0;
+    --text-accent: #C04CFD;
+    --text-accent-hover: #ae33f0;
+
+    --color-accent: #C04CFD;
+    --interactive-accent: #C04CFD;
+    --interactive-accent-hover: #ae33f0;
+
+    --text-normal: #000000;
+
+    --code-background: #000000;
+    --code-normal: white;
+
+    --graph-text: rgb(204, 204, 204);
+    --graph-node: #fcf601;
+    --graph-node-focused: #26798c;
+    --graph-node-unresolved: #9e8aff;
+    --graph-node-attachment: #d669bc;
+    --graph-node-tag: #5dbcd2;
+    --graph-line: #26798c;
+} */
+
+/* Justifying text */
+/* reading mode */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+	text-align: justify;
+	text-justify: inter-word;	
+}

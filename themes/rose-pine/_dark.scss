@@ -1,0 +1,24 @@
+:root[saved-theme="dark"] {
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --background-modifier-border: var(--overlay);
+  --text-normal: var(--text);
+  --text-muted: var(--muted);
+  --text-accent: var(--love);
+  --text-accent-hover: var(--foam);
+  --tag-color: var(--iris);
+  --tag-background: var(--overlay);
+  --h1-color: var(--love);
+  --h2-color: var(--gold);
+  --h3-color: var(--pine);
+  --h4-color: var(--foam);
+  --h5-color: var(--iris);
+  --h6-color: var(--rose);
+  --code-normal: var(--subtle);
+  --code-background: var(--highlight-low);
+  --text-selection: rgba(49, 116, 143, 0.6);
+  --flashing-background: rgba(235, 111, 146, 0.3);
+  --link-url: var(--pine);
+  --link-url-hover: var(--iris);
+  --bold-color: var(--subtle);
+}

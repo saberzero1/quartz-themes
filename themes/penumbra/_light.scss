@@ -1,0 +1,50 @@
+:root[saved-theme="light"] {
+  --accent-h: 36;
+  --accent-s: 53%;
+  --accent-l: 89%;
+  --background-primary: #fff7ed;
+  --background-primary-alt: #fff7ed;
+  --background-secondary: #f2e6d4;
+  --background-secondary-alt: #f2e6d4;
+  --background-accent: #636363;
+  --background-modifier-border: #f2e6d4;
+  --background-modifier-form-field: #fffdfb;
+  --background-modifier-form-field-highlighted: #fffdfb;
+  --background-modifier-box-shadow: #fffdfb;
+  --background-modifier-success: #539126;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #00a0ba;
+  --text-accent-hover: #00a0ba;
+  --text-normal: #8f8f8f;
+  --text-muted: #8f8f8f;
+  --text-faint: #bebebe;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-selection: #fffdfb;
+  --text-on-accent: #24272b;
+  --interactive-normal: #f2e6d4;
+  --interactive-hover: #bebebe;
+  --interactive-accent: #fffdfb;
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) - 4%)
+  );
+  --scrollbar-active-thumb-bg: #f2e6d4;
+  --scrollbar-bg: #f2e6d4;
+  --scrollbar-thumb-bg: #f2e6d4;
+  --panel-border-color: #bebebe;
+  --gray-1: #8f8f8f;
+  --gray-2: #636363;
+  --red: #ca7081;
+  --orange: #c27d40;
+  --green: #3ea57b;
+  --cyan: #00a0ba;
+  --purple: #ac78bd;
+  --blue: #6e8dd5;
+  --yellow: #92963a;
+}

@@ -1,0 +1,25 @@
+:root[saved-theme="light"] {
+  --accent-color: #0062c1;
+  --color-accent: #0062c1 !important;
+  --accent-h: 210 !important;
+  --accent-s: 100% !important;
+  --accent-l: 38% !important;
+  --background-primary: #ffffff;
+  --background-secondary: #f9fafb;
+  --titlebar-background-focused: #f9fafb;
+  --titlebar-background: #f9fafb;
+  --text-normal: #2d2e34;
+  --text-muted: #595959;
+  --text-on-accent: #ffffff !important;
+  --menu-background: #272d35;
+  --background-modifier-border: rgba(200, 200, 200, 0.1);
+  --text-extreme: #000000;
+  --div-color: rgba(200, 200, 200, 0.9);
+  --tag-color: #1e7d58;
+  --checklist-done-color: #82868a;
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 0),
+    calc(var(--accent-s) * 0.8),
+    calc(var(--accent-l) * 1.35)
+  ) !important;
+}

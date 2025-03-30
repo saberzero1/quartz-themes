@@ -1,0 +1,9 @@
+  {
+    "name": "OverCast",
+    "author": "IxBlazarxI",
+    "version": "0.1",
+   "minAppVersion": "0.16",
+    "repo": "IxBlazarxI/Obsidian-Theme-OverCast",
+    "screenshot": "Thumbnail.jpg",
+    "modes": ["dark"]
+  }

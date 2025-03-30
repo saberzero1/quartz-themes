@@ -1,0 +1,296 @@
+/*Purple Aurora - Dark Mode Only!*/
+
+/*TABLE OF CONTENTS
+    1. THEME DARK STANDARD COLORS
+    2. SPECIFIC TEXT FIXES
+    3. OBSIDIAN FIXES AND GRAPH FIXES
+    4. LIST ITEMS AND LIST LINES
+    5. HORIZONTAL LINE
+    6. BLOCKQUOTES
+    7. TAG PILLS
+    8. PLUGIN SPECIFICS
+*/
+
+/*------- 1. THEME DARK STANDARD COLORS -------*/
+
+.theme-dark {
+    --background-primary: #291c45;
+    --background-primary-alt: #2C0C46;
+    --background-secondary: #221439;
+    --background-secondary-alt: #15082b;
+    --background-modifier-border: #364ca7;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #197300;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: #1b0f29;
+    --text-accent: #588ec7;
+    --text-accent-hover: #5a92b2;
+    --text-normal: #8ff4dd;
+    --text-muted: #77cecf;
+    --text-muted-rgb: 153, 153, 153;
+    --text-faint: #5a9a76;
+    --text-error: #ff3333;
+    --text-error-hover: #990000;
+    --text-highlight-bg: rgba(101, 182, 126, 0.4);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgba(47, 68, 156, 0.99);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #2a2a2a;
+    --interactive-hover: #303030;
+    --interactive-accent: #430D82;
+    --interactive-accent-rgb: 72, 54, 153;
+    --interactive-accent-hover: #4d3ca6;
+    --interactive-success: #5a9a76;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --highlight-mix-blend-mode: lighten;
+}
+
+/*------- 2. SPECIFIC TEXT FIXES -------*/
+
+/* Different color for italic */
+.cm-em,
+.markdown-preview-section em {
+  color: #7690F9;
+  font-style: italic !important; 
+}
+
+/* Different color for bold*/
+.cm-strong,
+.markdown-preview-section strong {
+  color: #77F99B;
+  font-style: normal !important; 
+  font-weight: bold !important;
+}
+
+/*Color for internal link unresolved*/
+.markdown-preview-view .internal-link.is-unresolved{
+    opacity: 0.6;
+}
+
+/*Header gradient*/
+.cm-header-1,
+h1 {
+    color: #58EECB;
+    opacity: 1;
+}
+
+.cm-header-2,
+h2 {
+    color: #58EECB;
+    opacity: 0.9;
+}
+
+.cm-header-3,
+h3 {
+    color: #58EECB;
+    opacity: 0.8;
+}
+
+.cm-header-4,
+h4 {
+    color: #58EECB;
+    opacity: 0.7;
+}
+
+.cm-header-5,
+h5 {
+    color: #6AF0D1;
+    opacity: 0.6;
+}
+
+.cm-header-6,
+.markdown-preview-view h6 {
+    color: #7DF2D7;
+    opacity: 0.5;
+}
+
+/*------- 3. OBSIDIAN INTERFACE FIXES AND GRAPH FIXES -------*/
+
+/*view action item darker color*/
+.view-action {
+    color: #72AC8B;
+}
+
+.workspace-leaf-resize-handle {
+    background-color: #2B0A48;
+}
+
+.nav-action-button.is-active {
+    background-color: #422675;
+    color: var(--text-muted);
+}
+
+.graph-view.color-line{
+    color: #3d235d;
+}
+
+.graph-controls {
+    background-color: #2a0a46;
+}
+
+.workspace-leaf.mod-active .view-header-title {
+    color: #6ec394;
+}
+
+.cm-s-obsidian span.cm-builtin, .cm-s-obsidian span.cm-hr {
+	color: var(--background-modifier-border);
+}
+
+/*Border for preview popup window*/
+.popover.hover-popover {
+  border: 2px solid #430D82;
+}
+
+/*change color for checked line-through checklist items*/
+.markdown-preview-view ul > li.task-list-item.is-checked{
+	color: var(--text-muted);
+}
+
+/* hide fold icon */
+.CodeMirror-gutter-elt {
+  opacity: 0;
+}
+/* hover over line shows fold icon */
+.CodeMirror-code>div:hover .CodeMirror-gutter-elt {
+  opacity: 1;
+}
+
+.markdown-preview-view .collapse-indicator {
+    opacity: 0.1;
+}
+.markdown-preview-view .collapse-indicator:hover {
+    opacity: 1;
+}
+
+/*------- 4. LIST ITEMS AND LIST LINES -------*/
+/*list lines, only in preview mode*/
+ul ul { position: relative; }
+ul ul::before {
+	 content:'';
+	 border-left: 1px solid;
+	 /*border-image: linear-gradient(#390d5f, var(--interactive-accent), #390d5f); /*purple*/
+	 border-image: linear-gradient(rgba(6, 217, 63, 0.1), rgba(119, 249, 155,0.3), rgba(6, 217, 63, 0.1));
+	 border-image-slice: 1;
+	 position: absolute;
+     opacity: 0.6;
+}
+     ul ul::before { left: -15px; top: 0; bottom: 0; 
+} 
+
+ol ol { position: relative; }
+ol ol::before {
+	 content:'';
+	 border-left: 1px solid;
+	 border-image: linear-gradient(rgba(6, 217, 63, 0.1), rgba(119, 249, 155,0.3), rgba(6, 217, 63, 0.1));
+	 border-image-slice: 1;
+	 position: absolute;
+     opacity: 0.6;
+}
+     ol ol::before { left: -15px; top: 0; bottom: 0; 
+}
+
+/*increase margin in preview list*/
+li {
+	margin: 10px 0;
+}
+
+/*------- 5. HORIZONTAL LINE -------*/
+
+/*horizontal lines*/
+.markdown-preview-view hr {
+    border: none;
+    border-top: 1px solid;
+    /*border-color: var(--background-modifier-border);*/
+	/*border-image: linear-gradient(to right, var(--background-modifier-border), #4568f7, rgba(54, 76, 167, 0)); /*blue*/
+    border-image: linear-gradient(to right, #06D93F, #77F99B, rgba(6, 217, 63, 0.1));
+	border-image-slice: 1;
+    opacity: 0.5;
+}
+.cm-s-obsidian span.cm-builtin, .cm-s-obsidian span.cm-hr {
+    color: #06D93F;
+}
+
+/*------- 6. BLOCKQUOTES -------*/
+
+/*Different blockquote border*/
+.markdown-preview-view blockquote{
+	border: 1px solid;
+	border-image: linear-gradient(to right, #4568f7, rgba(54, 76, 167, 0.05));/*blue test*/
+    /*border-image: linear-gradient(to right, rgba(6, 217, 63, 0.5), rgba(6, 217, 63, 0)); /*green test*/
+	border-image-slice: 1;
+	border-left-width: 2px;
+}
+
+.checkbox-container:after{
+	background-color: var(--text-normal);
+}
+
+/* Add quotation character before quote */
+blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: "“";
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p { display: inline; }
+
+/* Remove blockquote left margin */
+blockquote {
+  margin-inline-start: 0;
+}
+
+/*------- 7. TAG PILLS -------*/
+
+/*Discrete tag pills*/
+.tag {
+  background-color: #352559;
+  border: none;
+  color: var(--text-normal);
+  /*font-size: 18px;*/
+  padding: 1px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.tag:hover {
+color: var(--text-normal);
+background-color: var(--text-faint);
+}
+
+/*------- 8. PLUGIN SPECIFICS -------*/
+
+/*For calendar plugin*/
+.svelte-pcimu8{
+	--color-text-today: #15d082;
+}
+
+#calendar-container .year {
+  color: #20E9BA;
+}
+
+#calendar-container .month{
+  color: #45EDC6;
+}
+
+#calendar-container .active{
+  color: #15d082;
+  background-color: #3C2965;
+}
+
+/*For Kanban*/
+
+.kanban-plugin__lane {
+    border: var(--interactive-accent);
+}
+
+

@@ -1,0 +1,180 @@
+/*
+Flexoki Warm
+MIT License
+Copyright (c) 2023 Steph Ango
+Copyright (c) 2024 Olivér Falvai
+https://stephango.com/flexoki
+*/
+
+/* @settings
+name: Flexoki Warm
+id: flexoki-warm-theme-settings
+settings:
+  -
+    id: flexoki-warm-light-theme-accent-override
+    title: Light Theme Accent Color
+    description: Select your preferred light theme accent color from the Flexoki palette. 'Native accent color' means the color from the Appearance settings.
+    type: variable-select
+    default: var(--accent-h), var(--accent-s), var(--accent-l)
+    options:
+      -
+        label: Native accent color
+        value: var(--accent-h), var(--accent-s), var(--accent-l)
+      - 
+        label: Red
+        value: 3, 62%, 42.4%
+      - 
+        label: Orange
+        value: 22, 80%, 41%
+      - 
+        label: Yellow
+        value: 45, 99%, 34%
+      - 
+        label: Green
+        value: 73, 84%, 27%
+      - 
+        label: Cyan
+        value: 175, 57%, 33%
+      - 
+        label: Blue
+        value: 212, 68%, 39%
+      - 
+        label: Purple
+        value: 259, 42%, 43%
+      - 
+        label: Magenta
+        value: 326, 55%, 41%
+  -
+    id: flexoki-warm-dark-theme-accent-override
+    title: Dark Theme Accent Color
+    description: Select your preferred dark theme accent color from the Flexoki palette. 'Native accent color' means the color from the Appearance settings.
+    type: variable-select
+    default: var(--accent-h), var(--accent-s), var(--accent-l)
+    options:
+      -
+        label: Native accent color
+        value: var(--accent-h), var(--accent-s), var(--accent-l)
+      - 
+        label: Red
+        value: 5, 61%, 54%
+      - 
+        label: Orange
+        value: 23, 70%, 51%
+      - 
+        label: Yellow
+        value: 45, 82%, 45%
+      - 
+        label: Green
+        value: 72, 46%, 41%
+      - 
+        label: Cyan
+        value: 175, 49%, 45%
+      - 
+        label: Blue
+        value: 208, 49%, 50%
+      - 
+        label: Purple
+        value: 251, 40%, 64%
+      - 
+        label: Magenta
+        value: 329, 54%, 59%
+
+*/
+
+
+.theme-light {
+  --color-red-rgb: 175, 48, 41;
+  --color-orange-rgb: 188, 82, 21;
+  --color-yellow-rgb: 173, 131, 1;
+  --color-green-rgb: 102, 128, 11;
+  --color-cyan-rgb: 36, 131, 123;
+  --color-blue-rgb: 32, 94, 166;
+  --color-purple-rgb: 94, 64, 157;
+  --color-pink-rgb: 160, 47, 111;
+
+  --color-red: #AF3029;
+  --color-orange: #BC5215;
+  --color-yellow: #AD8301;
+  --color-green: #66800B;
+  --color-cyan: #24837B;
+  --color-blue: #205EA6;
+  --color-purple: #5E409D;
+  --color-pink: #A02F6F;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+  /* BEGIN changes to original Flexoki theme */
+  /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
+  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl: var(--flexoki-warm-light-theme-accent-override, var(--color-accent-hsl-default)); /* Override of base theme variable */
+  --color-accent: hsl(var(--color-accent-hsl)); /* Override of base theme variable */
+  --color-accent-1: hsl(from var(--color-accent) calc(h - 3) calc(s * 1.02) calc(l * 1.15)); /* Override of base theme variable */
+  --color-accent-2: hsl(from var(--color-accent) calc(h - 5) calc(s * 1.05) calc(l * 1.29)); /* Override of base theme variable */
+  /* END changes to original Flexoki theme */
+
+  /* BEGIN changes to original Flexoki theme */
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #fcfaf8;
+  /* Make it a bit warmer than the default */
+  /* END changes to original Flexoki theme */
+  --color-base-25: #E6E4D9;
+
+  --color-base-30: #E6E4D9;
+  --color-base-35: #DAD8CE;
+  --color-base-40: #CECDC3;
+
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
+}
+
+.theme-dark {
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 218, 112, 44;
+  --color-yellow-rgb: 208, 162, 21;
+  --color-green-rgb: 135, 154, 57;
+  --color-cyan-rgb: 58, 169, 159;
+  --color-blue-rgb: 67, 133, 190;
+  --color-purple-rgb: 139, 126, 200;
+  --color-pink-rgb: 206, 93, 151;
+
+  --color-red: #D14D41;
+  --color-orange: #DA702C;
+  --color-yellow: #D0A215;
+  --color-green: #879A39;
+  --color-cyan: #3AA99F;
+  --color-blue: #4385BE;
+  --color-purple: #8B7EC8;
+  --color-pink: #CE5D97;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+  /* BEGIN changes to original Flexoki theme */
+  /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
+  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl: var(--flexoki-warm-dark-theme-accent-override, var(--color-accent-hsl-default)); /* Override of base theme variable */
+  --color-accent: hsl(var(--color-accent-hsl)); /* Override of base theme variable */
+  --color-accent-1: hsl(from var(--color-accent) calc(h - 3) calc(s * 1.02) calc(l * 1.15)); /* Override of base theme variable */
+  --color-accent-2: hsl(from var(--color-accent) calc(h - 5) calc(s * 1.05) calc(l * 1.29)); /* Override of base theme variable */
+  /* END changes to original Flexoki theme */
+
+  --color-base-00: #100F0F;
+  --color-base-05: #100F0F;
+  --color-base-10: #1C1B1A;
+  --color-base-20: #1C1B1A;
+  --color-base-25: #282726;
+
+  --color-base-30: #282726;
+  --color-base-35: #343331;
+  --color-base-40: #403E3C;
+
+  --color-base-50: #575653;
+  --color-base-60: #6F6E69;
+  --color-base-70: #878580;
+  --color-base-100: #CECDC3;
+}

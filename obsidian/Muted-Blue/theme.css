@@ -1,0 +1,203 @@
+.theme-dark{
+
+    --color-base-00: #0f111a;
+    --color-base-05: red;     /* unknown */
+    --color-base-10: #0f111a; /* "interactive hover", visible on the right when opening the command palette */
+    --color-base-20: #0f111a; /* "background secondary", includes the left panel and the title bar */
+    --color-base-25: #4b4f62;     /* unknown */
+    --color-base-30: #0f111a; /* when window is active, panel borders and interactable buttons */
+    --color-base-35: #393e50;
+    --color-base-40: #555555; /* border color when input field is active */
+    --color-base-50: #666666;
+    --color-base-60: #999999;
+    --color-base-70: #bababa;
+    --color-base-100: #a6accd;
+    --table-border-color: #a6accd;
+
+    --interactive-normal: #393e50;
+    --slider-track-background: #393e50;
+    --icon-color: #4b4f62;
+    --icon-color-hover: #a6accd;
+    --icon-color-focused: #a6accd;
+
+    --code-background: none;
+
+    --nav-item-color: #a6accd;
+    --nav-item-color-active: #2979ff;
+    --nav-item-color-hover: white;
+
+    --nav-item-background-active: none;
+    --nav-item-background-hover: none;
+}
+
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid #2978ffb9;
+}
+
+div.tree-item-children.nav-folder-children{
+  border-inline-start-color: #2977ff;
+}
+
+.suggestion-item.is-selected {
+  color: white;
+}
+
+textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number']{
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+@media (hover: hover) {
+  textarea:hover,
+  input[type='text']:hover,
+  input[type='search']:hover,
+  input[type='email']:hover,
+  input[type='password']:hover,
+  input[type='number']:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
+  }
+}
+
+textarea:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
+textarea:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus-visible,
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
+  box-shadow: none;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0px -1px 0 #2979ff;
+  color: white;
+}
+
+.vertical-tab-header-group-title {
+  color: #2979ff;
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: #2979ff;
+}
+
+.workspace-leaf.mod-active .tree-item-self.has-focus {
+  box-shadow: none;
+}
+
+@media print{
+  .theme-dark{
+
+    --color-base-00: #0f111a;
+    --color-base-05: red;     /* unknown */
+    --color-base-10: #0f111a; /* "interactive hover", visible on the right when opening the command palette */
+    --color-base-20: #0f111a; /* "background secondary", includes the left panel and the title bar */
+    --color-base-25: #4b4f62;     /* unknown */
+    --color-base-30: #0f111a; /* when window is active, panel borders and interactable buttons */
+    --color-base-35: #393e50;
+    --color-base-40: #555555; /* border color when input field is active */
+    --color-base-50: #666666;
+    --color-base-60: #999999;
+    --color-base-70: #bababa;
+    --color-base-100: #a6accd;
+    --table-border-color: #a6accd;
+
+    --interactive-normal: #393e50;
+    --slider-track-background: #393e50;
+    --icon-color: #4b4f62;
+    --icon-color-hover: #a6accd;
+    --icon-color-focused: #a6accd;
+
+    --code-background: none;
+
+    --nav-item-color: #a6accd;
+    --nav-item-color-active: #2979ff;
+    --nav-item-color-hover: white;
+
+    --nav-item-background-active: none;
+    --nav-item-background-hover: none;
+}
+
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid #2978ffb9;
+}
+
+div.tree-item-children.nav-folder-children{
+  border-inline-start-color: #4187ff;
+}
+
+.suggestion-item.is-selected {
+  color: white;
+}
+
+textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number']{
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+@media (hover: hover) {
+  textarea:hover,
+  input[type='text']:hover,
+  input[type='search']:hover,
+  input[type='email']:hover,
+  input[type='password']:hover,
+  input[type='number']:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
+  }
+}
+
+
+textarea:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
+textarea:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus-visible,
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
+  box-shadow: none;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0px -1px 0 #2979ff;
+  color: white;
+}
+
+.vertical-tab-header-group-title {
+  color: #2979ff;
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: #2979ff;
+}
+
+.workspace-leaf.mod-active .tree-item-self.has-focus {
+  box-shadow: none;
+}
+
+}

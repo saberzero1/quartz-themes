@@ -1,0 +1,81 @@
+.theme-dark,
+.theme-dark.aura-dark {
+    --background-primary: #15141b;
+    --background-secondary: #110f18;
+	--ribbon-background: #15141b;
+	--titlebar-background: var(--background-secondary);
+    --titlebar-background-focused: var(--background-secondary);
+    --code-background: var(--background-secondary);
+    --indentation-guide-color: #edecee;
+	--color-base-30: #61ffca;
+}
+
+.clickable-icon:hover, .clickable-icon:hover svg, .is-focused .titlebar-inner {
+	color: #61ffca;
+}
+
+/* File picker: Make current file purple! */
+body:not(.is-grabbing) .nav-file-title.is-active:hover, body:not(.is-grabbing) .nav-folder-title.is-active:hover, .nav-file-title.is-active, .nav-folder-title.is-active {
+	color: #a277ff;
+}
+
+select,
+.dropdown {
+  background-color: #3d375e7f;
+}
+
+select,
+.dropdown:hover {
+  background-color: #af8aff7f;
+}
+
+.theme-dark.aura-soft {
+    --background-primary: #21202e;
+    --background-secondary: #1c1b22;
+	--ribbon-background: #21202e;
+	--titlebar-background: var(--background-secondary);
+    --titlebar-background-focused: var(--background-secondary);
+    --code-background: var(--background-secondary);
+    --indentation-guide-color: #edecee;
+    --color-base-30: #61ffca;
+
+}
+
+.clickable-icon.aura-soft:hover, .clickable-icon.aura-soft:hover svg, .is-focused.aura-soft .titlebar-inner.aura-soft {
+	color: #61ffca;
+}
+
+/* File picker: Make current file purple! */
+body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover, body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover, .nav-file-title.is-active.aura-soft, .nav-folder-title.is-active.aura-soft {
+	color: #a277ff;
+}
+
+select,
+.dropdown.aura-soft {
+  background-color: #3d375e7f;
+}
+
+select,
+.dropdown.aura-soft:hover {
+  background-color: #af8aff7f;
+}
+
+/* @settings
+name: Aura Version
+id: aura-theme-settings
+settings:
+  -
+    id: aura-theme-dark
+    title: Softness
+    description: Select your preferred Aura variation
+    type: class-select
+    allowEmpty: false
+    default: aura-dark
+    options:
+      -
+        label: Aura Dark
+        value: aura-dark
+      -
+        label: Aura Soft Dark 
+        value: aura-soft
+*/

@@ -1,0 +1,37 @@
+:root[saved-theme="dark"] {
+  --background-primary: #100e17;
+  --background-primary-alt: #0d0b12;
+  --background-secondary: #191621;
+  --background-secondary-alt: #0d0b12;
+  --text-normal: #bebebe;
+  --text-accent: #0fb6d6;
+  --text-sub-accent: #f4569d;
+  --text-dim: #45aaff;
+  --text-faint: #7aa2f7;
+  --text-title-h1: var(--text-accent);
+  --text-title-h2: #cbdbe5;
+  --text-title-h3: #cbdbe5;
+  --text-title-h4: #cbdbe5;
+  --text-title-h5: #cbdbe5;
+  --text-link: #b4b4b4;
+  --text-a: #6bcafb;
+  --text-a-hover: #6bcafb;
+  --text-mark: #263d92;
+  --code-background: var(--background-secondary);
+  --interactive-accent: rgba(14, 210, 247, 0.5);
+  --interactive-accent-hover: rgba(14, 210, 247, 0.8);
+  --interactive-before: #5e6565;
+  --blockquote-border: #4aa8fb;
+  --tag-background: rgba(14, 210, 247, 0.15);
+  --interactive-accent-rgb: #3dd7fb;
+  --font-family-editor: "Rubik";
+  --font-family-preview: "Rubik";
+  --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
+  --bg-accent-55: rgba(14, 210, 247, 0.55);
+  --bg-accent-25: rgba(14, 210, 247, 0.25);
+  --text-highlight-bg: rgba(244, 86, 157, 0.25);
+  --background-modifier-border: rgba(14, 210, 247, 0.05);
+  --table-border-color: rgb(14, 210, 247, 0.15);
+  --test-color: rgb(122, 162, 247);
+  --editor-border-color: #101014;
+}

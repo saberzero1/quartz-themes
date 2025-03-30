@@ -1,0 +1,1098 @@
+:root {
+  /* Font Sizes */
+  --font-size-normal: 16px;
+  --font-size-code: 14px;
+  --font-size-side-dock: 14px;
+  --font-size-side-dock-title: 16px;
+  --font-size-status-bar: 14px;
+  --font-size-h1: 26px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-h4: 18px;
+  --font-size-h5: 17px;
+  --font-size-h6: 16px;
+  
+  /* Font Families */
+  --font-family-editor: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-preview: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; 
+
+  /* Vercel Color System - Grays */
+  --vercel-gray-100: #ffffff;
+  --vercel-gray-200: #eaeaea;
+  --vercel-gray-300: #999999;
+  --vercel-gray-400: #888888;
+  --vercel-gray-500: #666666;
+  --vercel-gray-600: #444444;
+  --vercel-gray-700: #333333;
+  --vercel-gray-800: #111111;
+  --vercel-gray-900: #000000;
+  
+  /* Vercel Color System - Blue (Accent) */
+  --vercel-blue-100: #ffffff;
+  --vercel-blue-200: #d6e4ff;
+  --vercel-blue-300: #adc8ff;
+  --vercel-blue-400: #84a9ff;
+  --vercel-blue-500: #4d8bf9;
+  --vercel-blue-600: #0070f3;
+  --vercel-blue-700: #0051cc;
+  --vercel-blue-800: #003585;
+  --vercel-blue-900: #00153d;
+}
+
+/* Light Theme */
+.theme-light {
+    /* Backgrounds */
+    --background-1: var(--vercel-gray-100); /* Default/primary background */
+    --background-2: var(--vercel-gray-200); /* Secondary background */
+    --background-3: var(--vercel-gray-300); /* Active background */
+    --pre-code-bg: var(--vercel-gray-200); /* Code block background */
+    --inline-code-bg: var(--vercel-gray-200); /* Inline code background */
+    
+    /* Borders */
+    --border-1: var(--vercel-gray-200); /* Default border */
+    --border-2: var(--vercel-gray-300); /* Hover border */
+    --border-3: var(--vercel-blue-600); /* Active border */
+    
+    /* Text */
+    --text-1: var(--vercel-gray-900); /* Primary text */
+    --text-2: var(--vercel-gray-600); /* Secondary text and icons */
+    --text-accent: var(--vercel-blue-600); /* Accent text */
+    --link-color: var(--vercel-blue-600);
+    --link-color-hover: var(--vercel-blue-700);
+    
+    /* Highlights */
+    --highlight-low: var(--vercel-gray-200);
+    --highlight-med: var(--vercel-gray-300);
+    --highlight-high: var(--vercel-blue-300);
+}
+
+/* Dark Theme (Default) */
+.theme-dark {
+    /* Backgrounds */
+    --background-1: var(--vercel-gray-900); /* Default/primary background */
+    --background-2: var(--vercel-gray-900); /* Secondary background */
+    --background-3: var(--vercel-gray-800); /* Active background */
+    --pre-code: var(--vercel-gray-500); /* Code block background */
+    --inline-code-bg: var(--vercel-gray-800); /* Inline code background */
+    
+    /* Borders */
+    --border-1: var(--vercel-gray-700); /* Default border */
+    --border-2: var(--vercel-gray-600); /* Hover border */
+    --border-3: var(--vercel-blue-600); /* Active border */
+    
+    /* Text */
+    --text-1: var(--vercel-gray-100); /* Primary text */
+    --text-2: var(--vercel-gray-400); /* Secondary text and icons */
+    --text-accent: var(--vercel-blue-500); /* Accent text */
+    --link-color: var(--vercel-blue-500);
+    --link-color-hover: var(--vercel-blue-600);
+    --link-external-color: var(--vercel-gray-400); /* External link color */
+    
+    /* Highlights */
+    --highlight-low: var(--vercel-gray-800);
+    --highlight-med: var(--vercel-gray-700);
+    --highlight-high: var(--vercel-gray-600);
+    
+    /* Accent Colors for UI elements like headings, links, etc. */
+    --accent-blue: var(--vercel-blue-500);
+}
+
+/* @settings
+name: Vercel Theme
+id: vercel-theme-settings
+settings:
+  -
+    id: vercel-theme
+    title: Theme variants
+    description: Select your preferred theme appearance
+    type: class-select
+    allowEmpty: false
+    default: vercel-dark
+    options:
+      -
+        label: 'Vercel Dark'
+        value: vercel-dark
+      -
+        label: 'Vercel Light'
+        value: vercel-light
+  -
+    id: vercel-theme-accent
+    title: Accent Color
+    description: Select your preferred accent color
+    type: class-select
+    allowEmpty: false
+    default: accent-blue
+    options:
+      -
+        label: Blue
+        value: accent-blue
+      -
+        label: Purple
+        value: accent-purple
+      -
+        label: Cyan
+        value: accent-cyan
+*/
+
+/* @settings
+name: "Vercel Header Colors"
+id: vercel-headers
+settings:
+  -
+    id: heading-color-h1
+    title: H1 color
+    description: Select your H1 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--vercel-blue-500)
+    options:
+    -
+      label: Blue
+      value: var(--vercel-blue-500)
+    -
+      label: Text Primary
+      value: var(--text-1)
+    -
+      label: Text Secondary
+      value: var(--text-2)
+  -
+    id: heading-color-h2
+    title: H2 color
+    description: Select your H2 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--vercel-blue-600)
+    options:
+    -
+      label: Blue
+      value: var(--vercel-blue-600)
+    -
+      label: Text Primary
+      value: var(--text-1)
+    -
+      label: Text Secondary
+      value: var(--text-2)
+  -
+    id: heading-color-h3
+    title: H3 color
+    description: Select your H3 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--text-1)
+    options:
+    -
+      label: Blue
+      value: var(--vercel-blue-500)
+    -
+      label: Text Primary
+      value: var(--text-1)
+    -
+      label: Text Secondary
+      value: var(--text-2)
+*/
+
+/* @settings
+name: "Vercel Misc Config"
+id: vercel-misc
+settings:
+  -
+    id: text-highlight-bg
+    title: Highlight Color
+    description: Select your text highlight color
+    type: variable-select
+    allowEmpty: false
+    default: rgba(77, 139, 249, 0.3)
+    options:
+    -
+      label: Blue (Light)
+      value: rgba(77, 139, 249, 0.3)
+    -
+      label: Blue (Medium)
+      value: rgba(77, 139, 249, 0.5)
+    -
+      label: Gray (Light)
+      value: rgba(136, 136, 136, 0.3)
+    -
+      label: Gray (Medium)
+      value: rgba(136, 136, 136, 0.5)
+*/
+
+.accent-blue {
+    --accent-blue: var(--vercel-blue-500);
+    --text-accent: var(--vercel-blue-500);
+    --text-accent-hover: var(--vercel-blue-600);
+    --interactive-accent: var(--vercel-blue-500);
+    --interactive-accent-hover: var(--vercel-blue-600);
+}
+
+.accent-purple {
+    --accent-blue: #8a63d2;
+    --text-accent: #8a63d2;
+    --text-accent-hover: #7a50c7;
+    --interactive-accent: #8a63d2;
+    --interactive-accent-hover: #7a50c7;
+}
+
+.accent-cyan {
+    --accent-blue: #00b8d9;
+    --text-accent: #00b8d9;
+    --text-accent-hover: #00a3c4;
+    --interactive-accent: #00b8d9;
+    --interactive-accent-hover: #00a3c4;
+}
+
+.vercel-light {
+    /* Explicitly set light theme variables */
+    --background-1: var(--vercel-gray-100);
+    --background-2: var(--vercel-gray-200);
+    --background-3: var(--vercel-gray-300);
+    --text-1: var(--vercel-gray-900);
+    --text-2: var(--vercel-gray-600);
+}
+
+.vercel-dark {
+    /* Explicitly set dark theme variables */
+    --background-1: var(--vercel-gray-900);
+    --background-2: var(--vercel-gray-900);
+    --background-3: var(--vercel-gray-700);
+    --text-1: var(--vercel-gray-100);
+    --text-2: var(--vercel-gray-400);
+}
+
+    button {
+		font-family: var(--font-family-editor);
+		font-weight: 500;
+		background-color: var(--background-2);
+		color: var(--text-1);
+		border: 1px solid var(--border-1);
+		border-radius: 4px;
+		padding: 4px 12px;
+		transition: all 0.2s ease;
+	}
+	
+	button:hover {
+		background-color: var(--background-3);
+		border-color: var(--border-2);
+	}
+	
+	button.mod-cta {
+		background-color: var(--vercel-blue-600);
+		color: white;
+		border: none;
+	}
+	
+	button.mod-cta:hover {
+		background-color: var(--vercel-blue-700);
+	}
+
+	.workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+	.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+	.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+	  width: 1px !important;
+	  background-color: var(--border-color);
+	}
+
+	.workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle {
+	  height: 1px !important;
+	  background-color: var(--border-color);
+	}
+
+
+	.workspace-ribbon.is-collapsed {
+	  background-color: var(--background-primary-alt);
+	}
+
+	.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+	.workspace-split.mod-vertical>.workspace-split,
+	.workspace-split.mod-vertical>.workspace-leaf,
+	.workspace-tabs {
+	  padding-right: 0px;
+	}
+
+	.status-bar {
+	  font-size: var(--font-size-status-bar);
+	  background-color: var(--background-secondary-alt);
+	  border-top: 0px;
+	}
+
+	.document-search-container {
+	  border-top: 0px;
+	  border-right: 0px;
+	  z-index: inherit;
+	}
+
+	.workspace-ribbon.mod-left.is-collapsed {
+	  border-right: 1px solid var(--border-color);
+	}
+
+	.workspace-ribbon.mod-right.is-collapsed {
+	  border-left: 1px solid var(--border-color);
+	}
+
+	a.tag:hover {
+	  color: var(--text-accent) !important;
+    }
+
+	.cm-hashtag,
+	a.tag {
+	  color: var(--text-accent-hover) !important;
+	  text-decoration: none !important;
+	  font-style: normal !important;
+	}
+
+	a,
+	.internal-link,
+	.cm-hmd-internal-link,
+	.cm-link,
+	.cm-formatting-link,
+	.cm-url {
+	  text-decoration: none !important;
+	}
+
+	.cm-s-obsidian span.cm-string {
+	  color: var(--text-accent-hover) !important;
+	}
+
+
+	.cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
+	.cm-s-obsidian span.cm-footref {
+	  color: var(--text-accent) !important;
+	}
+
+	.cm-fat-cursor .CodeMirror-cursor,
+	.cm-animate-fat-cursor {
+	  width: 0.5em;
+	  background: var(--vim-cursor);
+	  opacity: 60% !important;
+	}
+
+	.app-container {
+	  font-family: var(--font-family-preview);
+	}
+
+	::selection {
+	  background-color: var(--text-selection);
+	}
+
+    .cm-s-obsidian,
+	.mod-single-child .cm-s-obsidian {
+	  font-family: var(--font-family-editor);
+	  font-size: var(--font-size-normal);
+	}
+
+	.markdown-preview-view,
+	.mod-single-child .markdown-preview-view {
+	  font-family: var(--font-family-editor);
+	  font-size: var(--font-size-normal);
+	  padding-top: 2% !important;
+	  padding-left: 2% !important;
+	  padding-right: 1% !important;
+	}
+
+	.cm-em,
+	em {
+	  color: var(--text-accent) !important;
+	  font-family: var(--font-family-editor) !important;
+	  font-style: italic;
+	}
+
+	.cm-em.cm-formatting-em {
+	  display: inline-flex;
+	  width: 0.45rem;
+	  font-size: 0.6rem;
+	  vertical-align: text-top;
+	}
+
+	.cm-strong:not(.cm-formatting-strong),
+	strong {
+	  font-weight: 600;
+	  color: var(--text-1);
+	}
+
+	strong .math.math-inline .MathJax {
+	  position: inherit !important;
+	}
+
+	.cm-strong::selection,
+	strong::selection {
+	  background-color: var(--text-selection);
+	}
+
+	.cm-formatting.cm-formatting-strong.cm-strong,
+	.cm-formatting.cm-formatting-em.cm-em {
+	  color: var(--text-faint) !important;
+	  opacity: 0.6;
+	}
+
+	s,
+	.cm-strikethrough {
+	  color: var(--text-muted);
+	}
+
+
+	.cm-s-obsidian span.cm-formatting-list {
+	  color: var(--text-normal) !important;
+	}
+
+
+	.markdown-preview-view hr {
+		border-top: none !important;
+		border-color: none !important;
+	}
+
+
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+
+	img:hover {
+	  transform: scale(1.04);
+	  transition: transform 0.25s ease-in-out 0s;
+	}
+
+	.community-theme img:hover {
+	  transform: none;
+	}
+
+	.cm-header-1,
+	.markdown-preview-view h1 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h1);
+	  color: var(--heading-color-h1);
+	  margin-bottom: 20px;
+	  border-bottom: none;
+	}
+
+	.cm-header-2,
+	.markdown-preview-view h2 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h2);
+	  color: var(--heading-color-h2);
+	  margin-bottom: 16px;
+	  border-bottom: none;
+	}
+
+	.cm-header-3,
+	.markdown-preview-view h3 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h3);
+	  color: var(--heading-color-h3);
+	  margin-bottom: 12px;
+	}
+
+	.cm-header-4,
+	.markdown-preview-view h4 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h4);
+	  color: var(--heading-color-h4);
+	  margin-bottom: 8px;
+	}
+
+	.cm-header-5,
+	.markdown-preview-view h5 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h5);
+	  color: var(--heading-color-h5);
+	  margin-bottom: 4px;
+	}
+
+	.cm-header-6,
+	.markdown-preview-view h6 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 600;
+	  font-size: var(--font-size-h6);
+	  color: var(--heading-color-h6);
+	  margin-bottom: 4px;
+	  text-transform: uppercase;
+	  letter-spacing: 0.5px;
+	}
+
+	/* Editor CodeBlock TEXT Appearance */
+	.cm-s-obsidian pre.HyperMD-codeblock {
+	  font-size: var(--font-size-code) !important;
+	  padding: 1px !important;
+	  display: block;
+	  color: var(--code-block) !important;
+	  font-weight: 500;
+	  text-indent: 0px !important;
+	  background-color: var(--background-3);
+	  border-radius: 4px;
+	}
+
+	/* code blocks in preview */
+	pre code {
+	  font-size: var(--font-size-code) !important;
+	  padding: 12px !important;
+	  line-height: 1.5;
+	  display: block;
+	  color: var(--code-block) !important;
+	  border-radius: 4px;
+	  background-color: var(--background-3);
+	}
+
+	/* padding of code blocks in preview */
+	.markdown-preview-view pre {
+	  padding: 0 !important;
+	  background-color: var(--background-3);
+	  border-radius: 4px;
+	  border: 1px solid var(--border-1);
+	}
+
+	/* font-size of in-line block for preview */
+	.markdown-preview-view code {
+	  font-size: var(--font-size-code);
+	  background-color: var(--inline-code-bg);
+	  border-radius: 3px;
+	  padding: 2px 4px;
+	}
+
+	.theme-dark code[class*="language-"],
+	.theme-dark pre[class*="language-"],
+	.theme-light code[class*="language-"],
+	.theme-light pre[class*="language-"] {
+	  text-shadow: none !important;
+	  color: var(--text-faint) !important;
+	  background-color: var(--pre-code);
+	}
+
+	.cm-s-obsidian span.cm-formatting-link {
+	  color: var(--text-accent) !important;
+	}
+
+	.cm-quote {
+	  color: var(--text-normal) !important;
+	  font-style: italic;
+	}
+
+	.markdown-preview-view blockquote {
+	  background-color: var(--background-2);
+	  border: 0px solid;
+	  border-color: var(--blockquote-border) !important;
+	  border-left-width: 3px !important;
+	  border-radius: 0 4px 4px 0;
+	  line-height: 1.6;
+	  margin: 20px 0px;
+	  padding: 10px 15px;
+	  font-style: normal;
+	  color: var(--text-2);
+	}
+
+	th {
+	  font-weight: 800 !important;
+	}
+
+	.markdown-preview-view th {
+	  font-weight: 800;
+	  background-color: var(--background-secondary) !important;
+	}
+
+	thead {
+	  border-bottom: 3px solid var(--background-modifier-border);
+	}
+
+    .modal {
+        border: none;
+    }
+
+	.modal-bg {
+	    background-color: var(--vercel-gray-800) !important;
+	    opacity: 0.8;
+	}
+
+	.table {
+	  padding: 4px;
+	  line-height: normal;
+	  display: block;
+	  border-top-left-radius: 4px;
+	  border-top-right-radius: 4px;
+	  border-bottom-right-radius: 4px;
+	  border-bottom-left-radius: 4px;
+	}
+
+	.markdown-preview-view .task-list-item-checkbox:checked::before {
+	  content: '✓';
+	  position: absolute;
+	  color: var(--text-accent);
+	  font-size: 1em;
+	  line-height: 1.25em;
+	  width: 1.2em;
+	  text-align: center;
+	  text-shadow: 0 0 0.1em var(--text-accent);
+	}
+
+	.markdown-preview-view .task-list-item-checkbox {
+	  -webkit-appearance: none;
+	  top: 0.2em !important;
+	  right: 4px;
+	  box-sizing: border-box;
+	  border: 1px solid var(--text-muted);
+	  position: relative;
+	  width: 1.25em;
+	  height: 1.25em;
+	  margin: 0;
+	  box-shadow: 0 0 0.1em var(--text-muted);
+	}
+
+	.checkbox-container {
+	  background-color: var(--background-primary);
+	}
+
+	.checkbox-container.is-enabled {
+	  background-color: var(--text-accent);
+	}
+
+	.popover {
+	  border: 1px solid var(--border-color);
+	  background-color: var(--background-secondary);
+	}
+
+	.search-result-file-title {
+	  font-size: 15px;
+	}
+
+	.search-result-file-matches,
+	.search-empty-state {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.search-result-file-title,
+	.search-result-file-match {
+	  padding: 0px 10px;
+	}
+
+	.nav-file-title,
+	.nav-folder-title {
+	  border-bottom-left-radius: 0 !important;
+	  border-bottom-right-radius: 0 !important;
+	  border-top-left-radius: 0 !important;
+	  border-top-right-radius: 0 !important;
+	}
+
+	.workspace-leaf-content[data-type="backlink"] .view-content {
+	  background-color: var(--background-secondary);
+	}
+
+	.workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
+	.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.markdown-embed-title {
+	  display: none;
+	}
+
+	.markdown-preview-view .markdown-embed-content>:first-child {
+	  margin-top: 0;
+	}
+
+	.markdown-preview-view .markdown-embed-content>:last-child {
+	  margin-bottom: 0;
+	}
+
+	.markdown-preview-view .markdown-embed {
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.markdown-preview-view .markdown-embed-content {
+	  max-height: unset;
+	  background-color: var(--background-secondary);
+	}
+
+	.markdown-embed-link {
+	  color: var(--text-faint) !important;
+	}
+
+	.markdown-embed-link:hover {
+	  color: var(--text-accent) !important;
+	}
+
+	.graph-view.color-circle,
+	.graph-view.color-fill-highlight,
+	.graph-view.color-line-highlight {
+	  color: var(--text-accent) !important;
+	}
+
+	.graph-view.color-text {
+	  color: var(--text-normal) !important;
+	}
+
+	.graph-view.color-line {
+	  color: var(--border-1);
+	}
+
+	.graph-view.color-fill {
+	  color: var(--text-muted);
+    }
+
+	.workspace-leaf-content[data-type="graph"] .view-content {
+	  background-color: var(--background-primary);
+	}
+
+	.modal.mod-settings button:not(.mod-cta):hover {
+	  background-color: var(--interactive-accent-hover);
+	}
+
+	.markdown-source-view.is-readable-line-width .CodeMirror {
+	  max-width: 900px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.markdown-preview-view.is-readable-line-width .markdown-preview-section {
+	  max-width: 900px;
+	  margin-left: auto;
+	  margin-right: auto;
+    }
+
+	.view-header {
+	  background-color: var(--background-primary) !important;
+	  border-top: 1px solid var(--border-color) !important;
+	  border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.day.svelte-q3wqg9:active, .active.svelte-q3wqg9, .active.today.svelte-q3wqg9 {
+		background-color: var(--highlight-high) !important;
+		color: var(--text-1) !important;
+	}
+
+	.view-header-title-container:after {
+	  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header {
+	  background-color: var(--background-primary) !important;
+	  border-top: 0px !important;
+	  border-bottom: 3px solid var(--interactive-accent) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header-title-container:after {
+	  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header-title,
+	.workspace-leaf.mod-active .view-header-icon {
+	  color: var(--background-modifier-border);
+	}
+
+	.view-header-title,
+	.view-header-icon,
+	.view-action {
+	  color: var(--text-faint);
+	}
+
+	ul ul {
+	  position: relative;
+	}
+
+	ul ul::before {
+	  content: '';
+	  border-left: 1px solid var(--border-color);
+	  position: absolute;
+	}
+
+	ul ul::before {
+	  left: -1em;
+	  top: 0;
+	  bottom: 0;
+    }
+
+	ul .task-list-item ul::before {
+	  left: 0.15em !important
+	}
+
+	.cm-s-obsidian span.cm-inline-code,
+	.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
+	.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+	  background-color: var(--inline-code-bg);
+	  color: var(--inline-code) !important;
+	  padding: 0.1em 0.2em;
+	  border-radius: 3px;
+	}
+
+	.HyperMD-codeblock-bg {
+	  border: 0px !important;
+	}
+
+	an active line highlight in vim normal mode
+	.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+	  background-color: var(--text-selection) !important;
+	}
+
+	code {
+	  color: var(--inline-code) !important;
+	  bottom: 0px !important;
+	}
+
+	.graph-view.color-arrow {
+	  color: var(--vercel-blue-500);
+	}
+
+	.graph-view.color-fill-tag {
+	  color: var(--vercel-blue-400);
+	}
+
+	.graph-view.color-fill-attachment {
+	  color: var(--vercel-blue-300);
+	}
+
+	.graph-view.color-fill-unresolved {
+	  color: var(--vercel-gray-400);
+	}
+
+	.search-result-collapse-indicator {
+	  position: absolute;
+	  left: 0;
+	  top: -3px;
+	  color: var(--text-2);
+	  transition: transform 100ms ease-in-out;
+	  padding: 0px !important;
+	}
+
+	em,
+	.cm-em {
+	  font-family: var(--font-family-editor);
+	  font-style: italic;
+	  color: var(--text-accent);
+	}
+
+	.cm-s-obsidian span.cm-link,
+	.cm-s-obsidian span.cm-hmd-internal-link {
+	  color: var(--vercel-blue-500);
+	  text-decoration: none;
+	}
+
+	.cm-s-obsidian span.cm-link:hover,
+	.cm-s-obsidian span.cm-hmd-internal-link:hover {
+	  color: var(--vercel-blue-600);
+	}
+
+	.cm-s-obsidian span.cm-formatting-link {
+	  color: var(--text-2) !important;
+	  opacity: 0.6;
+	}
+
+	.internal-link {
+	  color: var(--text-accent);
+	  text-decoration: none;
+	  transition: all 200ms ease;
+	  border-bottom: 1px solid transparent;
+	}
+
+	.external-link {
+	  color: var(--vercel-blue-500);
+	  text-decoration: none;
+	  transition: all 200ms ease;
+	  border-bottom: 1px solid transparent;
+	}
+
+	.internal-link:hover {
+	  color: var(--text-accent-hover);
+	  border-bottom: 1px solid var(--text-accent-hover);
+	}
+
+	.external-link:hover {
+	  color: var(--vercel-blue-600);
+	  border-bottom: 1px solid var(--vercel-blue-600);
+	}
+
+	a,
+	.cm-hmd-internal-link,
+	.cm-link {
+	  text-decoration: none !important;
+	  color: var(--text-accent);
+	  position: relative;
+	  z-index: 1;
+	}
+
+	.cm-url {
+	  color: var(--text-2) !important;
+	  opacity: 0.6;
+	  font-weight: normal;
+	}
+
+	.cm-formatting-image {
+	  color: var(--text-accent) !important;
+	  opacity: 0.7;
+	}
+
+	a:hover,
+	.cm-hmd-internal-link:hover,
+	.cm-link:hover {
+	  text-decoration: none !important;
+	  color: var(--text-accent-hover);
+	}
+
+	.cm-formatting-list {
+	  color: var(--text-normal) !important;
+	}
+
+	.cm-formatting-quote {
+	  color: var(--text-accent) !important;
+	}
+
+input[type=checkbox], .markdown-preview-view .cm-formatting-task {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 3px;
+	border: 1px solid var(--border-2);
+	padding: 0;
+	vertical-align: middle;
+	margin-right: 6px;
+	transition: all 0.2s ease;
+}
+
+.markdown-preview-view .cm-s-obsidian span.cm-formatting-task {
+	width: 1em !important;
+	height: 1em;
+	display: inline-block;
+}
+
+input[type=checkbox]:focus{
+  outline: 0;
+  border-color: var(--text-accent);
+}
+
+input[type=checkbox]:checked, .cm-formatting-task.cm-property {
+	background-color: var(--text-accent);
+	border: 1px solid var(--text-accent);
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+	.graph-view.color-fill-unresolved {
+	  color: var(--vercel-gray-400) !important;
+	}
+
+	.graph-view.color-fill-attachment {
+	  color: var(--vercel-blue-300) !important;
+	}
+
+	.graph-view.color-fill-tag {
+	  color: var(--vercel-blue-500) !important;
+	}
+
+	.graph-view.color-fill {
+	  color: var(--text-accent) !important;
+	}
+
+	hr {
+	  border: 0;
+	  height: 1px;
+	  margin: 2em auto;
+	  display: block;
+	  background-color: var(--border-1);
+	  clear: both;
+	  width: 100%;
+	}
+
+body {
+  background: var(--background-1);
+  color: var(--text-1);
+}
+
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: #000000;
+  background-color: var(--tab-container-background);
+}
+
+.theme-light,
+.theme-dark {
+  /* Core UI components */
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: var(--background-3);
+  --background-accent: var(--accent-blue);
+  --background-modifier-border: var(--border-1);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: var(--vercel-blue-600);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  
+  /* Titlebar */
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
+  
+  /* Text colors */
+  --text-normal: var(--text-1);
+  --text-muted: var(--text-2);
+  --text-faint: var(--text-2);
+  --text-accent: var(--text-accent);
+  --text-accent-hover: var(--link-color-hover);
+  --text-on-accent: #ffffff;
+  --text-highlight-bg: var(--vercel-blue-300);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-selection: rgba(77, 139, 249, 0.3);
+  
+  /* Interactive elements */
+  --interactive-normal: var(--background-2);
+  --interactive-hover: var(--highlight-low);
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
+  
+  /* Scrollbars */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  
+  /* Headings */
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
+  
+  /* Code and quotes */
+  --inline-code: var(--vercel-blue-600);
+  --code-block: var(--text-1);
+  --pre-code: var(--background-2);
+  --blockquote-border: var(--vercel-blue-600);
+  --vim-cursor: var(--vercel-blue-600);
+  --border-color: var(--border-1);
+}
+
+body.is-focused .titlebar,
+body.is-focused .workspace-ribbon.mod-left {
+  --titlebar-background: var(--background-2);
+  background-color: var(--titlebar-background);
+}
+
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: var(--background-2);
+  background-color: var(--tab-container-background);
+}
+
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url {
+    color: var(--link-external-color) !important;
+    opacity: 0.8;
+}

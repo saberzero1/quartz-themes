@@ -1,0 +1,1360 @@
+
+/* === import special font that doesn't render hashtags (#) */
+@font-face {
+    font-family: 'Formular';
+    src: url('data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAXMAA4AAAAACOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAAFZAAAABYAAAAWABMABkdQT1MAAAV8AAAAIAAAACBEdkx1R1NVQgAABZwAAAAvAAAAMCN+JIxPUy8yAAACDAAAAEcAAABgII84HWNtYXAAAAJUAAAAMQAAADwAOwB9Z2FzcAAABVwAAAAIAAAACP//AANnbHlmAAABRAAAACgAAAAoKX11F2hlYWQAAAGcAAAANgAAADYW4dEnaGhlYQAAAewAAAAgAAAAJA/2Cc9obXR4AAAB1AAAABgAAAAYDeYAd2xvY2EAAAGMAAAADQAAAA4APAA8bWF4cAAAAWwAAAAeAAAAIABLAEVuYW1lAAACiAAAAq4AAAXocAf8uHBvc3QAAAU4AAAAJAAAADNVXVC5AAIAdwAAA8MFtgADAAcAADMRIRElIREhdwNM/T8CNf3LBbb6SoEEtHjaY2BkYGBgY3BiYGYAASYgZmQAiTmA+QwACZIAkQAAeNpjYGAQQUAAAt4AeQAAAAABAAAAAgCDDlp/b18PPPUACwgAAAAAAM8sf4QAAAAA4KMGkP+m/lgITAc7AAAACAACAAAAAAAABDkAdwAAAAACqgAAAAAAAAI5AAAEygAAeNpjYGRgYLP8Z8l4krv//zIGBg4fBqAICmADAH24BNx42mNgZrnJOIGBlYGB1ZjlLAMDwywIzXSWIY0pC0gzIAFGBnTgwKDAoMxm+c+S8ST7XcY3CgwM08EKfzCdAlIKDEwAU4UM+QB42mNgYGBiYGBgBmIRIMkIplkYNIA0G5BmBMoqMCj//w/kg+n/T/4/AqsCAgCI4wiyAAAAeNqtUrtu1EAUvfZu3g/RISGERqJJpMReVkFityKJlBSRUEgRiXJsjx+s12ONZ9dxw5/QUFJS8QF8AZ9CS8Px7CRrIJEosOWZc1/nnrkeInrmFOTQ4nmHb4EdWoe1wC6tEbe4Ry8ptbjfyVmhHfpo8WrHv0Zv6bPF67RHPy3e6ODNTt8teuw8t3i7g3dozxlbvEtPnQBKnP4GrC/OB4sdeuQOLHZp131tcY/eu28s7ndyVuiJ+9Xi1Y5/jT653y1ep8uetnijgzc7fbfI632zeLuDd5D/w+JdetU/OZVlo7Ik1Wwv3GfDwYujQywjFjTsnDe8EOyEJxGvuIJxwK4bHqaiyvmcXWQqy0UxkR47znNmSCqmRCXUXETemVTTWc7VlUjabUHW5VpS3TGN2W3VuJUyuhaqymTBht5gMLzMBa8EGsRCMS2ZTgVbqq9EqNvUWCoTiWWhmVY8ElOuJoxrrbJgZlIKqbNQVN6/ni/Vuhz7fl3XXqBkXcTyxpMqOS4aNoOgOtOpnGlWCjXNKqM3q1ipZJoFmRaRLe+W+jkEFKHw6ZQkldSQoowS3GJNDLcwpH3sQxrQCzqiQ4tG8AXIZXSOu9/gK0jAOgFKKMJa4VM2coDItcEheAViOfAc3gv0avvl8BY0gQIP3mPYOfalkspYbaXAPscaIfMM+YqmNDN8iq7gT+6srrKHdN2n6m9NY3T/s9f4biojsLSqKtRIVLR+D5EB9kvDwo3uxQlik8twJmnW1ETum31bEwLdssZGwbImNn5tPAo9IninRtsEPg6vNnwBNC9ZCuytFZoTe//9/6Wmb4n5+Hhr83rQoBCrkdOqvoGnPUuCP12YWzSzE6rB1Z5PGs0MPMJMPUN8Od/M3IfScKbmhG1Veyd+7/5QVx96FxMozOr/AnWqLjEAAHjaY2BiAIP/DAxpDNgAGxAzMjAxMjEwM7Cx+IX6+AAAP3gCvAAAAAH//wACAAEAAAAMAAAAAAAAAAIAAQADAAUAAQAAAAEAAAAKABwAHgABREZMVAAIAAQAAAAA//8AAAAAAAB42mNgZGBg4GLQYdBjYHZx8wlhEEmuLMphkMtJLMljkGNgAcoy/P/PAAcArlkHTgA=') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+
+/* =============== some quick design choices using variables ==================== */
+body {
+    --font-interface-theme:  Roboto, OpenSans, Inter, 'Noto Sans JP', 'UD Digi Kyokasho NK-R';
+    --border-width: 2px;
+    --inline-title-weight: 500;
+    --inline-title-size: 2.5em;
+    --inline-title-line-height: 1.3em;
+    --h1-weight: 300;
+    --h1-size: 2.3em;
+    --h2-weight: 300;
+    --h2-size: 2em;
+    --h3-size: 1.85em;
+    --h3-weight: 400;
+    --h4-size: 1.7em;
+    --h4-weight: 400;
+    --h5-size: 1.58em;
+    --h5-weight: 400;
+    --h6-size: 1.35em;
+    --h6-weight: 500;
+    --radius-s: 0.75em;
+    --radius-m: 1.1em;
+    --radius-l: 20px;
+    --divider-color: transparent;
+    --file-line-width: 750px;
+    --background-modifier-hover: hsla(var(--accent-h), 17%, 50%, 0.15) !important;
+    --background-modifier-border-focus: var(--primary-container) !important; 
+    --background-modifier-form-field: var(--surface-variant) !important;
+    --input-radius: var(--radius-l);
+    --input-border-width: 0;
+    --graph-node: var(--primary-lighter);
+    --graph-node-unresolved: var(--tertiary);
+    --graph-node-focused: var(--primary-container);
+    --graph-node-tag: var(--color-cyan);
+    --graph-line: vaR(--surface-variant);
+    --link-color: var(--primary);
+    --link-color-hover: var(--primary);
+    --link-external-color: var(--tertiary);
+    --link-decoration-thickness: 1.5px;
+    --link-external-decoration: none;
+}
+
+.is-phone {
+  --font-text-size: 16px !important;
+}
+
+.workspace-tab-header-container {
+    --icon-color: var(--primary-container);
+    --icon-color-focused: var(--on-primary);
+    --icon-color-active: var(--on-primary);
+    --icon-color-hover: var(--on-primary);
+}
+
+/* ========== Custom Icons ========== */
+svg.lucide-git-fork,
+svg.sidebar-left,
+svg.sidebar-right,
+.nav-files-container svg.svg-icon.right-triangle,
+svg.lucide-quote,
+svg.lucide-hash,
+svg.lucide-bookmark,
+svg.lucide-folder-closed,
+svg.lucide-search,
+svg.lucide-trash-2,
+svg.lucide-settings, 
+svg.lucide-folder-plus, 
+svg.lucide-edit,
+svg.lucide-edit-3,
+svg.lucide-book-open,
+svg.lucide-pencil,
+svg.lucide-check,
+svg.lucide-alert-triangle,
+svg.lucide-bug,
+.mobile-navbar svg.lucide-plus-circle,
+svg.lucide-flame,
+svg.lucide-zap,
+svg.lucide-info,
+svg.lucide-help-circle,
+svg.lucide-list,
+svg.lucide-clipboard-list {
+background-color: currentColor;
+-webkit-mask-repeat: no-repeat;
+}
+
+/* graph icon */
+svg.lucide-git-fork {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 230 230"%3E%3Cpath fill="currentColor" d="M200 152a31.84 31.84 0 0 0-19.53 6.68l-23.11-18A31.65 31.65 0 0 0 160 128c0-.74 0-1.48-.08-2.21l13.23-4.41A32 32 0 1 0 168 104c0 .74 0 1.48.08 2.21l-13.23 4.41A32 32 0 0 0 128 96a32.59 32.59 0 0 0-5.27.44L115.89 81A32 32 0 1 0 96 88a32.59 32.59 0 0 0 5.27-.44l6.84 15.4a31.92 31.92 0 0 0-8.57 39.64l-25.71 22.84a32.06 32.06 0 1 0 10.63 12l25.71-22.84a31.91 31.91 0 0 0 37.36-1.24l23.11 18A31.65 31.65 0 0 0 168 184a32 32 0 1 0 32-32Zm0-64a16 16 0 1 1-16 16a16 16 0 0 1 16-16ZM80 56a16 16 0 1 1 16 16a16 16 0 0 1-16-16ZM56 208a16 16 0 1 1 16-16a16 16 0 0 1-16 16Zm56-80a16 16 0 1 1 16 16a16 16 0 0 1-16-16Zm88 72a16 16 0 1 1 16-16a16 16 0 0 1-16 16Z"%2F%3E%3C%2Fsvg%3E');
+background-color: currentColor;
+}
+
+
+/* tags icon */
+svg.lucide-hash {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M6.5 10C7.3 10 8 9.3 8 8.5S7.3 7 6.5 7S5 7.7 5 8.5S5.7 10 6.5 10M9 6l7 7l-5 5l-7-7V6h5m0-2H4c-1.1 0-2 .9-2 2v5c0 .6.2 1.1.6 1.4l7 7c.3.4.8.6 1.4.6s1.1-.2 1.4-.6l5-5c.4-.4.6-.9.6-1.4c0-.6-.2-1.1-.6-1.4l-7-7C10.1 4.2 9.6 4 9 4m4.5 1.7l1-1l6.9 6.9c.4.4.6.9.6 1.4s-.2 1.1-.6 1.4L16 19.8l-1-1l5.7-5.8l-7.2-7.3Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* bookmarks */
+svg.lucide-bookmark {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M9 1h10a2 2 0 0 1 2 2v16l-2-.87V3H7a2 2 0 0 1 2-2m6 19V7H5v13l5-2.18L15 20m0-15a2 2 0 0 1 2 2v16l-7-3l-7 3V7a2 2 0 0 1 2-2h10Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* search */
+svg.lucide-search {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M16.5 12c2.5 0 4.5 2 4.5 4.5c0 .88-.25 1.71-.69 2.4l3.08 3.1L22 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 2.5 2.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5M19 8H3v10h7.17c.17.72.46 1.39.83 2H3a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v3.81c-.58-.55-1.25-1-2-1.31V8Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* trash (plugin) */
+svg.lucide-trash-2 {
+-webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3H9M7 6h10v13H7V6m2 2v9h2V8H9m4 0v9h2V8h-2Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* settings */
+svg.lucide-settings {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94c0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6s3.6 1.62 3.6 3.6s-1.62 3.6-3.6 3.6z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* new folder */
+svg.lucide-folder-plus {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"%2F%3E%3C%2Fsvg%3E');
+}
+
+
+/* edit */
+svg.lucide-edit,
+svg.lucide-edit-3,
+svg.lucide-pencil {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575t1.412.575l1.4 1.4q.575.575.6 1.388t-.55 1.387L19.3 8.925ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6l4.25 4.25Z"%2F%3E%3C%2Fsvg%3E');
+
+}
+
+/* mobile quick search */
+.mobile-navbar .lucide-plus-circle {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M3 6v16h18v2H3a2 2 0 0 1-2-2V6h2m13 3h5.5L16 3.5V9M7 2h10l6 6v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v14h14v-7h-7V4H7Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* reading mode */
+svg.lucide-book-open {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M21 5c-1.11-.35-2.33-.5-3.5-.5c-1.95 0-4.05.4-5.5 1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v15.5C2.45 20.4 4.55 20 6.5 20s4.05.4 5.5 1.5c1.45-1.1 3.55-1.5 5.5-1.5c1.17 0 2.39.15 3.5.5c.75.25 1.4.55 2 1V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5c-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5c1.2 0 2.4.15 3.5.5v11.5z"%2F%3E%3Cpath fill="currentColor" d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99c.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24c-1.7 0-3.24.3-4.5.83zm4.5 1.84c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99c.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"%2F%3E%3C%2Fsvg%3E');
+}
+
+
+/* ======= ribbon ===== */
+/* ribbon icon */
+svg.sidebar-left,
+svg.sidebar-right {
+-webkit-mask-image:url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+.restore-ribbon .workspace-ribbon {
+    background-color: var(--lower-accent) !important;
+}  .restore-ribbon .workspace-ribbon::before { background-color: var(--upper-accent) !important;}
+.restore-ribbon .workspace-ribbon * {
+    color: var(--on-upper-accent) !important;
+}
+
+/* == floating ribbon === */
+
+/* make ribbon 'float' */
+body:not(.restore-ribbon) .workspace-ribbon {
+  bottom: 20px;
+  left: 30px;
+  flex-direction: column-reverse;
+}
+
+/*...but not on mobile */
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon {
+    position: absolute;
+}
+
+/* fix appearance issues when not hovered */
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon:not(:hover){
+        padding: calc(var(--icon-size) + 1px);
+} 
+
+/* some styling for the floating ribbon */
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon {
+box-shadow: var(--shadow-s);
+border: none !important;
+background-color: var(--surface) !important;
+border-radius: var(--radius-s);
+width: calc(var(--ribbon-width) + 1px);
+transform: scale(1.5) translateY(-16%);
+transition: 0.25s padding-top !important;
+}
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon svg {
+ color: vaR(--primary) !important;
+}
+
+
+/* styling for the ribbon icon */
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon.mod-left:not(:hover):before {
+  border: none !important;
+}
+
+/* hide the other buttons when the ribbon is not hovered over */
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover) .side-dock-actions, 
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover) .side-dock-settings,
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon:not(.is-collapsed).side-dock-ribbon.mod-left .side-dock-actions,
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon:hover:before{
+    display: none;
+}
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon.mod-left:not(:hover) .side-dock-actions, 
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon.mod-left:not(:hover) .side-dock-settings { 
+    display: none;
+ }
+
+
+/* Make ribbon icon stay on the bottom when hovered */
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon.mod-left:hover .sidebar-toggle-button.mod-left {
+position: relative; /* this is the magic trick right here. */
+align-self: center;
+margin-bottom: -13px;
+}
+
+/* remove the help button (because for most people, it's useless) */
+.side-dock-ribbon-action[aria-label="Help"] {
+    display: none;
+}
+
+/* == folders == */
+.nav-files-container .tree-item-self .tree-item-icon svg {
+width: 15px;
+  height: 15px;
+}
+.nav-files-container svg.svg-icon.right-triangle,
+svg.lucide-folder-closed {
+-webkit-mask-image:url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"%2F%3E%3C%2Fsvg%3E');
+  transform: none !important;
+}
+.nav-files-container .collapse-icon:not(.is-collapsed) svg.svg-icon.right-triangle {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M6.1 10L4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5H6.1M19 18H6l1.6-6h13L19 18Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* attachments/gallery folders */
+.nav-files-container .nav-folder-title[data-path*="Attachments"] svg.svg-icon.right-triangle,
+.nav-files-container .nav-folder-title[data-path*="attachments"] svg.svg-icon.right-triangle,
+.nav-files-container .nav-folder-title[data-path*="Gallery"] svg.svg-icon.right-triangle,
+.nav-files-container .nav-folder-title[data-path*="gallery"] svg.svg-icon.right-triangle {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="m5 17l4.5-6l3.5 4.5l2.5-3L19 17m1-11h-8l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* == guides == */
+body {
+    --nav-indentation-guide-width: 2px;
+    --nav-indentation-guide-color: var(--interactive-accent);
+}
+.is-phone {
+    --nav-item-children-padding-left: 10px;
+}
+
+/* =========== callouts ========== */
+
+/* ======= changing up some icons ===== */
+
+/* === quote icon === */
+svg.lucide-quote {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 448 448"%3E%3Cpath fill="currentColor" d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8h-64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v136zm-256 0c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v136z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* === check icon === */
+svg.lucide-check {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19L21 7l-1.41-1.41z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* == alert === */
+svg.lucide-alert-triangle {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2z"%2F%3E%3Cpath fill="currentColor" d="M13 16h-2v2h2zm0-6h-2v5h2z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* === bug === */
+svg.lucide-bug {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M20 8h-2.81a5.985 5.985 0 0 0-1.82-1.96L17 4.41L15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3L7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-4 4v3c0 .22-.03.47-.07.7l-.1.65l-.37.65c-.72 1.24-2.04 2-3.46 2s-2.74-.77-3.46-2l-.37-.64l-.1-.65A4.27 4.27 0 0 1 8 15v-4c0-.23.03-.48.07-.7l.1-.65l.37-.65c.3-.52.72-.97 1.21-1.31l.57-.39l.74-.18a3.787 3.787 0 0 1 1.89 0l.68.16l.61.42c.5.34.91.78 1.21 1.31l.38.65l.1.65c.04.22.07.47.07.69v1zm-6 2h4v2h-4zm0-4h4v2h-4z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* === flame / "tip" === */
+
+svg.lucide-flame {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 23 23"%3E%3Cpath fill="currentColor" d="m19 1l-1.26 2.75L15 5l2.74 1.26L19 9l1.25-2.74L23 5l-2.75-1.25M9 4L6.5 9.5L1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5M19 15l-1.26 2.74L15 19l2.74 1.25L19 23l1.25-2.75L23 19l-2.75-1.26"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ==== info ===== */
+svg.lucide-info {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M11 17h2v-6h-2v6Zm1-8q.425 0 .713-.288T13 8q0-.425-.288-.713T12 7q-.425 0-.713.288T11 8q0 .425.288.713T12 9Zm0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ==== list ===== */
+svg.lucide-list {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 23 23"%3E%3Cpath fill="currentColor" d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5s1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5S5.5 6.83 5.5 6S4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5s1.5-.68 1.5-1.5s-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ====== question ========= */
+svg.lucide-help-circle {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 23 23"%3E%3Cpath fill="currentColor" d="M11.07 12.85c.77-1.39 2.25-2.21 3.11-3.44c.91-1.29.4-3.7-2.18-3.7c-1.69 0-2.52 1.28-2.87 2.34L6.54 6.96C7.25 4.83 9.18 3 11.99 3c2.35 0 3.96 1.07 4.78 2.41c.7 1.15 1.11 3.3.03 4.9c-1.2 1.77-2.35 2.31-2.97 3.45c-.25.46-.35.76-.35 2.24h-2.89c-.01-.78-.13-2.05.48-3.15zM14 20c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ====== error ====== */
+svg.lucide-zap {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2 22V2h20v16H6l-4 4Zm7.4-8l2.6-2.6l2.6 2.6l1.4-1.4l-2.6-2.6L16 7.4L14.6 6L12 8.6L9.4 6L8 7.4l2.6 2.6L8 12.6L9.4 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ===== clipboard ("absract") === */
+svg.lucide-clipboard-list {
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M15 5.1L9 3L3 5.02v16.2l6-2.33l6 2.1l6-2.02V2.77L15 5.1zm0 13.79l-6-2.11V5.11l6 2.11v11.67z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* change icon positioning */
+.callout {
+   background-color: var(--tertiary-container) !important;
+}
+.callout * {
+    color: var(--on-tertiary-container);
+}
+.callout:not(.is-collapsible) .callout-icon svg {
+    display: block !important;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.callout-icon svg {
+    color: var(--on-tertiary-container) !important;
+}
+.callout-content {
+    padding: 0.5em;
+}
+.callout:not(.is-collapsible) .callout-icon {
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+.callout-fold svg {
+    color: var(--on-tertiary-container);
+}
+.callout-fold {
+    margin-left: 10px;
+    display: block;
+}
+.callout-title {
+    padding: 0.25em;
+}
+.callout.is-collapsible .callout-icon {
+    margin-right: 5px;
+}
+.callout:not(.is-collapsible) .callout-title-inner {
+    padding: 0;
+    width: fit-content;
+    color: var(--on-tertiary-container);
+}
+.callout-fold {
+align-self: flex-start;
+}
+.callout:not(.is-collapsible) .callout-title {
+flex-wrap: wrap;
+}
+
+/* decrease some padding */
+.callout-content p:first-child {
+    margin-top: 7px;
+}
+
+/* change up some colors */
+.callout-title-inner {
+    color: var(--text-normal);
+}
+
+/* border for nested callouts and blockquotes  */
+.callout .callout, .callout blockquote, blockquote blockquote, blockquote .callout {
+    box-shadow: var(--shadow-s) !important;
+    margin: 1em 0.2em;
+    mix-blend-mode: normal !important;
+}
+.callout .callout {
+    background-color: var(--primary-container) !important;
+} .callout .callout .callout-title-inner, .callout .callout .callout-content, .callout .callout .callout-icon * {
+    color: var(--on-primary-container) !important;
+}
+
+
+/* ====================== small markdown elements ====================== */
+body {
+    --blockquote-border-thickness: 0px;
+    --blockquote-background-color: var(--secondary-container);
+    --blockquote-color: var(--on-secondary-container);
+
+}
+.markdown-rendered code {
+    padding: 0.1em 0.4em;
+    border-radius: 6px;
+}
+
+img {
+    border-radius: var(--radius-m);
+}
+
+.markdown-rendered blockquote {
+    padding: 1em;
+    border-radius: vaR(--radius-s);
+}
+.HyperMD-quote.cm-line {
+    background-color: transparent !important;
+    border-left: 3px solid var(--blockquote-border-color);
+}
+
+.dataview.inline-field,
+.dataview.inline-field-key,
+.dataview.inline-field-value,
+.dataview.inline-field-standalone-value {
+  background-color: transparent;
+  font-family: inherit;
+  padding-left: 0px;
+}
+.dataview.inline-field-value::before {
+  content: "-";
+  padding-right: 10px;
+}
+.dataview.inline-field-key {
+  font-weight: bold;
+}
+
+/* tags */
+body {
+    --tag-radius: 5px;
+    --tag-color: var(--on-tertiary-container);
+    --tag-background: var(--tertiary-container);
+    --tag-color-hover: var(--on-tertiary-container);
+    --tag-background-hover: var(--tertiary-container);
+}
+
+/* hide tag hashtags (#) */
+a.tag, .cm-line:not(.cm-active) .cm-hashtag-begin {
+    font-family: 'Formular', var(--font-text); /* Formular does not render hashtags */
+}
+/* show hashtag again on hover */
+a.tag:not(.basename-tag):hover, .cm-line:hover .cm-hashtag-begin {
+    font-family: var(--font-text);
+}
+
+a.tag:not(.basename-tag) {
+    padding: 5px 0.5em 5px 0 !important; 
+    text-align: center;
+    transition: 0.2s;
+}
+a.tag:not(.basename-tag):hover {
+    padding: 5px 7px 5px 7px !important;
+    text-align: center;
+}
+
+.cm-line:not(.cm-active) .cm-hashtag-begin {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* prevent overlapping on separate lines */
+p:has(a.tag) {
+    line-height: 2;
+}
+
+
+
+/* tables */
+
+/* === round the edges === */
+
+/* code by FireIsGood - 
+ https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 
+ */
+:root .markdown-rendered table {
+    --table-border-radius: var(--radius-s);
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  /* Add the radius */
+  th:first-child {border-top-left-radius: var(--table-border-radius)}
+  th:last-child {border-top-right-radius: var(--table-border-radius)}
+  tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
+  tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
+  
+  /* Redo the borders */
+  :root :is(td, th) {
+    border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+  }
+
+/* === colors === */
+body {
+    --table-header-background: var(--secondary);
+    --table-header-background-hover: var(--secondary);
+    --table-header-size: var(--font-smaller);
+    --table-header-align: center;
+}
+.markdown-rendered {
+    --table-header-color: var(--on-secondary);
+}
+
+th {
+    border: none !important;
+    text-align: center !important;
+    padding: 7px 15px !important;
+}
+
+/* ============= headings ========== */
+[data-heading] {
+    padding: 0.5em 0 0 0;
+}
+
+/* level indicators */
+ .HyperMD-header-1:not(.cm-active)::before,
+.HyperMD-header-2:not(.cm-active)::before,
+.HyperMD-header-3:not(.cm-active)::before,
+.HyperMD-header-4:not(.cm-active)::before,
+.HyperMD-header-5:not(.cm-active)::before,
+.HyperMD-header-6:not(.cm-active)::before {
+font-size: 0.7rem;
+font-weight: normal;
+font-family: inherit;
+text-transform: uppercase;
+padding-right: 5px;
+border-radius: var(--radius-s);
+}
+
+.HyperMD-header-1:not(.cm-active)::before {
+    content: "H1";
+ }
+.HyperMD-header-2:not(.cm-active)::before {
+    content: "H2";
+ }
+.HyperMD-header-3:not(.cm-active)::before {
+    content: "H3";
+ }
+.HyperMD-header-4:not(.cm-active)::before {
+    content: "H4";
+ }
+.HyperMD-header-5:not(.cm-active)::before {
+    content: "H5";
+ }
+.HyperMD-header-6:not(.cm-active)::before {
+    content: "H6";
+ }
+
+.inline-title {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+/* ========== Tabs ========== */
+
+
+/* ======== basic variables ======== */
+body {
+    --tab-radius-active: 0;
+    --tab-curve: 0;
+    --tab-background-active: transparent;
+    --tab-divider-color: transparent;
+    --tab-outline-width: 0;
+    --tab-width: 250px;
+}
+
+/* make window buttons blend into the tab bar */
+.titlebar-button-container {
+    background-color: transparent !important;
+    color: var(--on-upper-accent);
+}
+
+/* change text and icon colors in tabs for more contrast */
+.workspace-tabs:not(.mod-stacked) {
+    --tab-text-color: var(--secondary-container);
+    --tab-text-color-active: var(--on-upper-accent);
+    --tab-text-color-focused:var(--secondary-container);
+    --tab-text-color-focused-active: var(--on-upper-accent);
+    --tab-text-color-focused-highlighted:  var(--on-upper-accent);
+    --tab-text-color-focused-active-current: var(--on-upper-accent);
+}
+svg.sidebar-right,
+.is-mobile svg.sidebar-left {
+    color: var(--on-lower-accent);
+}
+
+.workspace-tabs.mod-stacked .workspace-tab-header {
+   background-color: var(--surface) !important;
+   margin: 0;
+   padding: 0;
+   border-right: 1px solid var(--background-modifier-border);
+}
+
+/* change colors of tab header */
+.workspace-tab-header-container {
+    background-color: var(--upper-accent) ;
+    border: none !important;
+}
+.workspace-tab-header-container-inner {
+    padding-bottom: 0 !important;
+}
+.workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+}
+.workspace-tab-header-inner {
+background-color: transparent !important;
+}
+
+.workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-close-button,
+.workspace-tabs .metadata-menu.fileclass-icon {
+    color: var(--on-upper-accent) !important;
+}
+.workspace-tab-header.is-active {
+    border-bottom: 2px solid var(--on-upper-accent);
+}
+
+
+/* ========== view header ========== */
+body {
+    --file-header-justify: left;
+}
+
+/* Material-like view header */
+
+.view-header,
+body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-header {
+    background-color: var(--lower-accent) !important;
+    color: var(--on-lower-accent);
+} .is-phone.view-header {
+    box-shadow: var(--shadow-bottom);
+}
+.view-header {
+  background-color:  var(--lower-accent);
+  --text-faint: var(--on-lower-accent);
+  --text-normal: var(--on-lower-accent);
+  --text-muted: var(--on-lower-accent);
+}
+body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-header * {
+    color: var(--on-lower-accent);
+}
+
+/* make view header taller on phones */
+.is-phone .view-header {
+  height: 58px;
+  align-items: center;
+}
+
+/* make nav header look the same */
+.workspace-leaf-content:not([data-type="markdown"]) .nav-header {
+    height: calc(var(--header-height) - 2px);
+}
+.is-phone .nav-header {
+    margin-bottom: 10px;
+}
+
+
+/* change the color of items in the view header for contrast */
+.view-header > *,
+body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-header *,
+.view-header .clickable-icon,
+.view-header .view-header-title,
+.view-header .view-header-title-parent {
+    color: var(--on-lower-accent) !important;
+    opacity: 1;
+}
+.view-header-title-container:not(.mod-at-end):after {
+    background: transparent;
+}
+
+/* on mobile, only show the file name, not the full path */
+.view-header-breadcrumb-separator {
+    color: var(--on-lower-accent) !important;
+}
+.is-mobile .view-header .view-header-breadcrumb,
+.is-mobile .view-header-breadcrumb-separator {
+   display: none;
+}
+.is-mobile .view-header-title {
+    font-size: 1em;
+}
+
+.is-mobile .view-header-title-container {
+    padding: 10px 4px;
+}
+
+
+/* ========== checklists and checkboxes ========== */
+body {
+    --checkbox-radius: 0.2rem;
+    --checklist-done-decoration: none;
+    --checklist-done-color: inherit;
+}
+
+input[type=checkbox]:checked:after {
+    -webkit-mask-size: 85%;
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 21 21"%3E%3Cpath fill="currentColor" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"%2F%3E%3C%2Fsvg%3E');
+}
+input[type=checkbox]:checked {
+    border: none;
+}
+input[type=checkbox]:not(:checked) {
+    border: 2px solid var(--outline);
+}
+
+/* ===================== edit mode ============== */
+.markdown-source-view .embedded-backlinks {
+display: none;
+}
+
+/* ========== Mobile ========== */
+
+/* ====== toolbar ====== */
+.mobile-navbar {
+   background-color: var(--surface);
+}
+
+.mobile-navbar .mobile-navbar-action {
+    color: var(--primary);
+}
+
+/* ======== prompts ======== */
+.is-phone .prompt {
+    top: 50px;
+}
+.is-phone .prompt-input-container {
+    border-bottom: none;
+}
+
+
+/* ======== workspace drawer / sidebar ========= */
+.workspace-drawer {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+
+.is-mobile .nav-files-container .tree-item-self .tree-item-icon svg {
+    width: 0.5em;
+    height: 0.5em;
+    padding: 0.65em;
+}
+.is-phone .nav-folder-title-content {
+    padding-left: 10px;
+}
+
+/* ====== drawer header ====== */
+body {
+--custom-drawer-header: "Bolt";
+}
+body:not(.is-phone) .workspace-drawer-header {
+    height: var(--header-height);
+}
+.is-phone .workspace-drawer-header {
+  height: 54px;
+}
+body:not(.is-phone) .workspace-drawer-active-tab-header {
+    height: calc(var(--header-height) + 10px);
+}
+
+.workspace-drawer-header-name-chevron {
+    display: none;
+}
+.workspace-drawer-header-name-text {
+    visibility: hidden;
+    font-size: 16px;
+    color: var(--on-upper-accent);
+}
+
+/* custom header text */
+.workspace-drawer-header-name-text:before {
+    content: var(--custom-drawer-header);
+    position: absolute;
+    visibility: visible;
+}
+.workspace-drawer-header-name::before {
+    content: "";
+    display: block;
+    margin-right: 5px;
+    background-color: currentColor;
+    color: var(--on-upper-accent);
+    height: 22px;
+    width: 22px;
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 48 48"%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m29.19 4.5l7.099 10.289l-3.82 24.622l-2.246 4.089l-10.739-3.684l-7.773-17.523l5.347-11.188L29.19 4.5z"%2F%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m29.19 4.5l-.405 5.706l7.504 4.583m-19.231-3.684l1.168 7.503l1.258 21.208m9.301-29.61l-10.559 8.402L30.223 43.5"%2F%3E%3C%2Fsvg%3E');
+}
+.workspace-drawer-header-left {
+    padding: 10px 0px;
+width: 100%;
+}
+
+.workspace-drawer-header {
+    background-color: var(--upper-accent);
+}
+
+.workspace-drawer-header-info {
+    display: none;
+}
+
+/* move settings button */
+.is-phone .workspace-drawer-header-icon.mod-settings {
+    position: absolute;
+    color: var(--on-primary);
+    top: 10px;
+    right: 20px;
+}
+
+.workspace-drawer-active-tab-header {
+    background-color: var(--surface);
+}
+
+.workspace-drawer-active-tab-header > * {
+    color: var(--on-surface) !important;
+}
+
+/* vault title */
+.nav-folder.mod-root > .nav-folder-title {
+margin-top: 2em;
+margin-bottom: 1.5em;
+text-transform: uppercase;
+padding: 0;
+}
+
+/* ======== nav buttons ======== */
+.is-mobile .workspace-drawer .clickable-icon.nav-action-button {
+    background-color: var(--tertiary-container);
+    color: var(--on-tertiary-container);
+    border-radius:5px;
+}
+.is-mobile .workspace-drawer .nav-buttons-container {
+    gap: 10px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.is-phone .workspace-drawer .nav-buttons-container {
+    height: 35px;
+}
+
+/* create more space for the buttons by decreasing padding of files container */
+.is-mobile .nav-files-container {
+    margin: 0 0 0 10px;
+    padding-bottom: 0;
+}
+
+/* == new note and new folder buttons == */
+.workspace-drawer .nav-action-button[aria-label="New note"],
+.workspace-drawer .nav-action-button[aria-label="New folder"] {
+    padding: 0px 7px;
+}
+.workspace-drawer .nav-action-button[aria-label="New note"]:after,
+.workspace-drawer .nav-action-button[aria-label="New folder"]:after {
+    text-transform: uppercase;
+    margin-left: 7px;
+    font-size: 13px;
+}
+.workspace-drawer .nav-action-button[aria-label="New note"]:after {
+    content: "Note";
+}
+.workspace-drawer .nav-action-button[aria-label="New folder"]:after {
+    content: "Folder";
+}
+
+/* ======= hide specific things ===== */
+
+/* hide commander + button in view header on mobile */
+.is-mobile .cmdr-adder {
+  display: none;
+}
+body {
+    --metadata-background: var(--surface);
+    --metadata-padding: 1em;
+    --metadata-border-radius: var(--radius-s);
+}
+.metadata-container {
+    --input-height: unset;
+}  .metadata-property {
+    height: unset;
+}
+.metadata-container.is-collapsed .metadata-properties-heading { padding: 0; margin: 0; }
+.metadata-container.is-collapsed .metadata-properties-title { color: var(--primary) ;  }
+.metadata-container   .collapse-indicator { display: none; }
+
+
+/* ========= files and folders ========= */
+
+/* ==== folders ==== */
+ .nav-folder-title {
+    font-size: 15px;
+    font-weight: 600 !important;
+}
+.nav-folder-title-content:before {
+    content: "";
+    margin-right: 5px;
+}
+
+.nav-folder-collapse-indicator svg {
+    color: var(--secondary) !important;
+}
+
+/* ==== files ==== */
+
+.is-mobile .nav-file-title {
+    font-size: 15px;
+    padding: 3px 0;
+}
+.nav-file-title-content:before {
+    content: "";
+    margin-right: 10px;
+}
+
+/* ======== FAB icon ========= */
+body.is-mobile .view-action:nth-last-of-type(2) {
+    color: var(--on-tertiary-container) !important;
+    background-color: var(--tertiary-container);
+    display: flex;
+    padding: 0px;
+    margin: 16px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: calc(100% - 60px - 30px);
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    box-shadow: var(--shadow-s);
+    top: calc(100vh - 60px - 64px - 16px);
+    z-index: 100 !important;
+}
+body.is-mobile .view-action:nth-last-of-type(2) svg {
+    width: 26px;
+    height: 26px;
+}
+.is-phone .view-header {
+    z-index: 100; /* this ensures that the FAB is on top */
+}
+/* ======== icon sizes ======= */
+.is-mobile {
+    --icon-s: 17px;
+    --icon-m: 18px;
+    --icon-l: 20px;
+}
+
+
+/* ========= ribbon ======== */
+.workspace-drawer-ribbon {
+    border-right: 1px solid var(--background-modifier-border);
+}
+
+/* ================= colors =================== */
+.theme-light,
+.is-mobile.theme-light {
+    --accent-h: 181 !important;
+    --accent-s: 100% !important;
+    --accent-l: 21% !important;
+
+    --primary: #00696b;
+    --on-primary:#ffffff;
+    --primary-container: #5fb9bb;
+    --on-primary-container: #002021;
+
+    --upper-accent: var(--primary);
+    --on-upper-accent: var(--on-primary);
+    --on-lower-accent: var(--on-primary);
+    --lower-accent: var(--primary-lighter);
+    --primary-lighter: hsl(var(--accent-h), calc(var(--accent-s) - 14%), calc(var(--accent-l) + 7%));
+
+    --secondary: #4a6363;
+    --on-secondary: #ffffff;
+    --secondary-container: #cce8e8;
+    --on-secondary-container: #041f20; 
+
+    --tertiary: #4c5f7c;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #d4e3ff;
+    --on-tertiary-container: #061c36;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --error-container: #ffdad6;
+    --on-error-container: #410002;
+
+    --background: #fdfcfa;
+    --on-background: #191c1c;
+    --surface: #eef5f3;
+    --on-surface: #191c1c;
+
+    --outline: #6f7979;
+    --surface-variant: #dbe8e8;
+    --on-surface-variant: #3f4949;
+}
+.theme-dark,
+.is-mobile.theme-dark {
+    --accent-h: 181 !important;
+    --accent-s: 80% !important;
+    --accent-l: 41% !important;
+
+    --primary: hsl(181, 80%, 41%);
+    --on-primary:#e2f0f0;
+    --primary-container: #2f8a8b;
+    --on-primary-container: #b4dcdd;
+
+    --upper-accent: var(--on-secondary);
+    --on-upper-accent: var(--secondary);
+    --lower-accent: var(--secondary-container);
+    --on-lower-accent: vaR(--on-secondary-container);
+
+    --primary-lighter: hsl(var(--accent-h), calc(var(--accent-s) - 2%), calc(var(--accent-l) + 5%));
+
+    --secondary: #b0cccc;
+    --on-secondary: #034747;
+    --secondary-container: #156f73;
+    --on-secondary-container: #cce8e8;
+
+    --tertiary: #b4c8e9;
+    --on-tertiary: #1d314c;
+    --tertiary-container: #354863;
+    --on-tertiary-container: #d4e3ff;
+
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --error-container: #93000a;
+    --on-error-container: #ffdad6;
+
+    --background: #0d1a1a;
+    --on-background:#e0e3e2;
+    --surface: #192e2e;
+    --on-surface: #e0e3e2;
+
+    --outline: #899392;
+    --surface-variant: #2f3f3f;
+    --on-surface-variant: #bec8c8;
+}
+
+
+.theme-light, .theme-dark, .is-mobile.theme-dark {
+--color-base-00: var(--background);
+  --color-base-05: var(--surface);
+  --color-base-10: var(--surface-variant);
+  --color-base-20: var(--surface);
+  --color-base-25: var(--surface-variant);
+  --color-base-30: var(--surface-variant);
+  --color-base-35:var(--surface-variant);
+  --color-base-40: var(--surface-variant);
+  --color-base-50: var(--outline);
+  --color-base-60: var(--secondary);
+  --color-base-70: var(--on-surface-variant);
+  --color-base-100: var(--on-background);
+  --color-accent-hsl: var(--accent-h),
+			var(--accent-s),
+			var(--accent-l);
+  --shadow-bottom: 0 10px 10px -10px rgba(0,0,0,0.19), 0 6px 6px -6px rgba(0,0,0,0.23);
+  --shadow-s:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-m: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  --color-accent-2: var(--secondary);
+}
+
+/* fix mobile color mappings */
+.theme-dark.is-mobile {
+    --background-modifier-form-field: var(--color-base-25);
+    --background-secondary-alt: var(--color-base-30);
+    --interactive-normal: var(--color-base-30);
+}
+
+/* ================== themes =============== */
+
+/* ========= garden theme ========== */
+.theme-light.theme-green {
+    --accent-h: 94 !important;
+    --accent-s: 100% !important;
+    --accent-l: 21% !important;
+
+    --primary: hsl(94, 100%, 21%);
+    --on-primary:#ffffff;
+    --primary-container: #a1e477;
+    --on-primary-container: #092100;
+
+    --secondary: #526600;
+    --on-secondary: #ffffff;
+    --secondary-container: #d2e98e;
+    --on-secondary-container: #171e00; 
+
+    --tertiary: #974813;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #ffdbca;
+    --on-tertiary-container: #331100;
+
+    --background: #fdfdf5;
+    --on-background: #1a1c18;
+    --surface: #f5f5e8;
+    --on-surface: #1a1c18;
+
+    --outline: #74796d;
+    --surface-variant: #e0e4d6;
+    --on-surface-variant: #43483e;
+}
+.theme-dark.theme-green {
+    --accent-h: 97 !important;
+    --accent-s: 61% !important;
+    --accent-l: 62% !important;
+
+    --primary: hsl(97, 61%, 62%);
+    --on-primary:#4d852d;
+    --primary-container: #40751c;
+    --on-primary-container: #acf67d;
+
+    --secondary: #b8d166;
+    --on-secondary: #293500;
+    --secondary-container: #3d4d00;
+    --on-secondary-container: #d3ee7f; 
+
+    --tertiary: #ffb68f;
+    --on-tertiary: #542100;
+    --tertiary-container: #773200;
+    --on-tertiary-container: #ffdbca;
+
+    --background: #1a1c18;
+    --on-background: #e3e3dc;
+    --surface: #1f231b;
+    --on-surface: #b6c0ad;
+
+    --outline: #74796d;
+    --surface-variant: #43483e;
+    --on-surface-variant: #e3e3dc;
+}
+
+/* =========== Classic Theme ========== */
+.theme-light.theme-classic {
+    --accent-h: 256 !important;
+    --accent-s: 34% !important;
+    --accent-l: 48% !important;
+
+    --primary: hsl(256, 34%, 48%);
+    --on-primary:#ffffff;
+    --primary-container: #EADDFF;
+    --on-primary-container: #21005D;
+
+    --secondary: #625B71;
+    --on-secondary: #ffffff;
+    --secondary-container: #E8DEF8;
+    --on-secondary-container: #1D192B; 
+
+    --tertiary: #7D5260;
+    --on-tertiary: #FFFFFF;
+    --tertiary-container: #FFD8E4;
+    --on-tertiary-container: #31111D;
+
+    --background: #FFFBFE;
+    --on-background: #1C1B1F;
+    --surface: #f7f1f6;
+    --on-surface: #1C1B1F;
+
+    --outline: #79747E;
+    --surface-variant: #E7E0EC;
+    --on-surface-variant: #49454F;
+}
+.theme-dark.theme-classic {
+    --accent-h: 258 !important;
+    --accent-s: 100% !important;
+    --accent-l: 87% !important;
+
+    --primary: hsl(258, 100%, 87%);
+    --on-primary:#D0BCFF;
+    --primary-container: #745eaa;
+    --on-primary-container: #EADDFF;
+
+    --secondary: #CCC2DC;
+    --on-secondary: #483a69;
+    --secondary-container: #6e5c99;
+    --on-secondary-container: #E8DEF8; 
+
+    --tertiary: #EFB8C8;
+    --on-tertiary: #492532;
+    --tertiary-container: #633B48;
+    --on-tertiary-container: #FFD8E4;
+
+    --background: #191720;
+    --on-background: #E6E1E5;
+    --surface: #2b2930;
+    --on-surface: #E6E1E5;
+
+    --outline: #938F99;
+    --surface-variant: #49454F;
+    --on-surface-variant: #CAC4D0;
+}
+
+/* ========== Lumen Theme ================= */
+.theme-light.theme-lumen {
+    --accent-h: 231 !important;
+    --accent-s: 49% !important;
+    --accent-l: 50% !important;
+
+    --primary: hsl(232, 43%, 65%);
+    --on-primary:#ffffff;
+    --primary-container: #dee0ff;
+    --on-primary-container: #000f5d;
+
+    --secondary: #006875;
+    --on-secondary: #ffffff;
+    --secondary-container: #beefe8;
+    --on-secondary-container: #001f24; 
+
+    --tertiary: #904d00;
+    --on-tertiary: #FFFFFF;
+    --tertiary-container: #fff0cb;
+    --on-tertiary-container: #2f1500;
+
+    --background: #fffefa;
+    --on-background: #32345d;
+    --surface: #f6f5f2;
+    --on-surface: #030865;
+
+    --outline: #767680;
+    --surface-variant: #e3e1ec;
+    --on-surface-variant: #46464f;
+}
+.theme-dark.theme-lumen {
+    --accent-h: 233 !important;
+    --accent-s: 100% !important;
+    --accent-l: 87% !important;
+
+    --primary: hsl(233, 100%, 87%);
+    --on-primary:#d8e2ee;
+    --primary-container: #abd0ed;
+    --on-primary-container: #dee0ff;
+
+    --secondary: hsl(189, 100%, 87%);
+    --on-secondary: #1e93a5;
+    --secondary-container: #0d596e;
+    --on-secondary-container: #e5f4f8; 
+
+    --tertiary: #7dffd6;
+    --on-tertiary: #004d2d;
+    --tertiary-container: #138462;
+    --on-tertiary-container: #c3ffdc;
+
+    --background: #18192a;
+    --on-background: #e0e0ff;
+    --surface: #232341;
+    --on-surface: #e0e0ff;
+
+    --outline: #90909a;
+    --surface-variant: #46464f;
+    --on-surface-variant: #c7c5d0;
+}
+
+/* make lower accent same as upper accent on mobile */
+.is-phone.theme-light, .is-phone.theme-dark {
+    --lower-accent: var(--upper-accent);
+}
+
+/* ========== scrollbars ================== */
+body {
+    --scrollbar-thumb-bg: var(--surface-variant);
+    --scrollbar-active-thumb-bg: var(--secondary-container);
+}
+
+.workspace-drawer ::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* =============== search modals ================ */
+
+
+
+/* ================ buttons ============== */
+.checkbox-container.is-enabled {
+   background-color: vaR(--primary-container);
+}
+.checkbox-container {
+    height: 20px;
+    width: 40px;
+ }
+.checkbox-container.is-enabled:after {
+    background-color: var(--primary);
+    left: unset;
+    right: 20px;
+}
+.checkbox-container:after {
+    margin-top: -2px;   
+    width: 24px;
+    height: 24px;  
+    right: unset;
+    left: 0;
+    margin-left: -5px;
+}
+body {
+    --interactive-normal: var(--surface);
+    --input-shadow: var(--shadow-s) !important;
+}
+
+button  {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+button.mod-warning {
+    background-color: var(--error);
+    color: var(--on-error);
+}
+
+/* empty state buttons */
+.empty-state-action {
+  background-color: var(--tertiary-container);
+  color: var(--on-tertiary-container);
+  margin: 1em auto;
+  border-radius: var(--radius-m);
+  padding: 0.1em 1em;
+}
+/* remove empty state title */
+.empty-state-title {
+  display: none;
+}
+
+/* ===================== Plugins and PDFS ================================= */
+
+/* ================== PDF viewer  and Web View (Surfing) ============= */
+.theme-dark .pdf-viewer-container {
+  filter: invert(100%);
+}
+
+/* =============== Metadata Menu ================ */
+a.metadata-menu.fileclass-icon svg  {
+    color: var(--primary) !important;
+}
+
+
+
+
+/* @settings
+
+name: Bolt
+id: bolt-theme
+settings:
+    -
+        id: theme-class-select
+        title: Theme
+        type: class-select
+        default: none
+        allowEmpty: false
+        options: 
+            -
+                label: Default
+                value: none
+            -
+                label: Garden
+                value: theme-green
+            -
+                label: Classic
+                value: theme-classic
+            -
+                label: Lumen
+                value: theme-lumen
+    -
+        id: restore-ribbon
+        title: Restore Default Ribbon
+        description: Replace the floating sidebar button with the default Obsidian ribbon on desktop.
+        type: class-toggle
+        default: false
+
+
+*/

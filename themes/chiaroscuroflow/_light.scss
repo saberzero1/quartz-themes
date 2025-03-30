@@ -1,0 +1,9 @@
+:root[saved-theme="light"] {
+  --background-primary: var(--background-primary-light, rgb(255, 255, 255));
+  --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
+  --text-normal: var(--text-normal-light, rgb(25, 15, 15));
+  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --math-background: var(--code-background-light, rgb(255, 255, 255));
+  --background-primary: rgb(255, 250, 205);
+  --text-normal: #0c0909;
+}

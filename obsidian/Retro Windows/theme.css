@@ -1,0 +1,586 @@
+/* Base variables and common elements */
+body {
+	/*--font-text-theme: "MS Sans Serif", Arial, sans-serif;*/
+	--window-border: 2px solid #000;
+    
+    /* Header colors - shared across themes */
+    --h1-color: #8470A6; /* purple */
+    --h2-color: #507A9E; /* blue */
+    --h3-color: #5A8D76; /* green */
+    --h4-color: #A67A5B; /* orange */
+    --h5-color: #A19C6C; /* yellow */
+    --h6-color: #6C8299; /* steel blue */
+    
+    /* Formatting colors - shared but overridden per theme */
+    --bold-color: #61a181; /* green */
+    --italic-color: #95c2f0; /* blue */
+    --text-highlight-bg: #746119; /* yellow */
+}
+
+/* Light theme variables */
+.theme-light {
+	--window-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    
+	/* Background colors */
+	--background-primary: #ffffff;          /* Note background - off-white */
+	--background-secondary: #ececec;        /* Sidebar background - light gray */
+	--background-secondary-alt: #d4d0c8;    /* Classic Win 3.1 gray for panels */
+	--background-tertiary: #c0c0c0;         /* Classic Win 3.1 gray for UI elements */
+	
+	/* Title bar */
+	--titlebar-background: #3c8000;         /* Classic Win 3.1 blue */
+	--titlebar-text: #ffffff;               /* White text on blue */
+	
+	/* Text colors */
+	--text-normal: #000000;                 /* Black text for good contrast */
+	--text-muted: #333333;                  /* Dark gray for secondary text */
+	--text-faint: #666666;                  /* Medium gray for tertiary text */
+	
+	/* Interactive elements */
+	--text-accent: #008015;                 /* Win 3.1 blue for accents */
+	--interactive-normal: #d4d0c8;          /* Folder/button background */
+	--interactive-hover: #e6e6e6;           /* Hover state */
+	--interactive-accent: #000080;          /* Selected state - Win 3.1 blue */
+	--interactive-accent-hover: #0000aa;    /* Hover on selected - darker blue */
+	
+	/* Buttons */
+	--button-background: #d4d0c8;           /* Classic Win 3.1 folder color */
+	--button-text: #000000;                 /* Black text on buttons */
+}
+
+/* Dark theme variables */
+.theme-dark {
+	--window-shadow: inset -1px -1px #3a3a3a, inset 1px 1px #888888, inset -2px -2px #555, inset 2px 2px #666;
+    
+	/* Background colors */
+	--background-primary: #1e1e1e;          /* Note background - dark gray */
+	--background-secondary: #2d2d2d;        /* Sidebar background - darker gray */
+	--background-secondary-alt: #3a3a3a;    /* Dark version of Win 3.1 gray for panels */
+	--background-tertiary: #444444;         /* Dark version of Win 3.1 gray for UI elements */
+	
+	/* Title bar */
+	--titlebar-background: #000080;         /* Classic Win 3.1 blue */
+	--titlebar-text: #ffffff;               /* White text on blue */
+	
+	/* Text colors */
+	--text-normal: #e0e0e0;                 /* Light gray text for good contrast */
+	--text-muted: #b0b0b0;                  /* Medium gray for secondary text */
+	--text-faint: #888888;                  /* Light gray for tertiary text */
+	
+	/* Interactive elements */
+	--text-accent: #8cb4ff;                 /* Lighter blue for accents */
+	--interactive-normal: #3a3a3a;          /* Folder/button background */
+	--interactive-hover: #505050;           /* Hover state */
+	--interactive-accent: #4f6fb0;          /* Selected state - darker Win 3.1 blue */
+	--interactive-accent-hover: #6989d0;    /* Hover on selected - lighter blue */
+	
+	/* Buttons */
+	--button-background: #3a3a3a;           /* Dark version of Win 3.1 folder color */
+	--button-text: #e0e0e0;                 /* Light text on buttons */
+    
+    /* Dark theme specific overrides */
+    --bold-color: #7fc9a0; /* green */
+    --italic-color: #7fb0e0; /* blue */
+    --text-highlight-bg: #5a4820; /* yellow */
+}
+
+/* Make windows look like Windows 3.1 windows - shared styling */
+.workspace-leaf {
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.workspace-leaf-header {
+	background-color: var(--titlebar-background);
+	color: var(--titlebar-text);
+	font-weight: bold;
+	height: 20px;
+	padding: 2px 4px;
+}
+
+/* Buttons with 3D effect - theme-specific styling */
+button,
+.clickable-icon {
+	background-color: var(--button-background);
+	color: var(--button-text);
+	border: 1px solid #000;
+	padding: 2px 6px;
+}
+
+/* Light theme button styling */
+.theme-light button,
+.theme-light .clickable-icon {
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+.theme-light button:active,
+.theme-light .clickable-icon:active {
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+
+/* Dark theme button styling */
+.theme-dark button,
+.theme-dark .clickable-icon {
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+}
+
+.theme-dark button:active,
+.theme-dark .clickable-icon:active {
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+}
+
+/* Ensure icons in buttons have good contrast - shared */
+button svg,
+.clickable-icon svg {
+	color: var(--button-text);
+}
+
+/* Improve contrast for hover states - shared */
+/*button:hover,
+.clickable-icon:hover {
+    background-color: var(--interactive-hover);
+    box-shadow: inset 1px 1px var(--window-shadow);
+}*/
+
+/* Hover States - Shared */
+button:hover {
+    background-color: var(--interactive-hover);
+}
+.cm-link:hover {
+    text-decoration: underline; /* For links */
+    color: var(--text-accent-hover); /* Optional: Add a hover color for links */
+}
+
+/* Light Theme Specific Hover */
+.theme-light button:hover {
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf;
+}
+
+/* Dark Theme Specific Hover */
+.theme-dark button:hover {
+    box-shadow: inset -1px -1px #3a3a3a, inset 1px 1px #888888;
+}
+
+
+/* Editor area styling - shared */
+.cm-s-obsidian {
+	font-family: "Courier New", monospace;
+	line-height: 1.5;
+	color: var(--text-normal);
+	background-color: var(--background-primary);
+}
+
+/* Headings - shared */
+/*.cm-header {
+	font-weight: bold;
+	color: var(--titlebar-background);
+}*/
+
+/* Headings - Shared (Reading and Editing Modes) */
+.cm-header, /* Editing Mode */
+h1, h2, h3, h4, h5, h6 { /* Reading Mode */
+    font-weight: bold;
+}
+
+/* Reading Mode Specific (HTML Headings) */
+h1 {
+    color: var(--h1-color);
+}
+h2 {
+    color: var(--h2-color);
+}
+h3 {
+    color: var(--h3-color);
+}
+h4 {
+    color: var(--h4-color);
+}
+h5 {
+    color: var(--h5-color);
+}
+h6 {
+    color: var(--h6-color);
+}
+
+/* Editing Mode Specific (CodeMirror Headings) */
+.cm-header-1 {
+    color: var(--h1-color);
+}
+.cm-header-2 {
+    color: var(--h2-color);
+}
+.cm-header-3 {
+    color: var(--h3-color);
+}
+.cm-header-4 {
+    color: var(--h4-color);
+}
+.cm-header-5 {
+    color: var(--h5-color);
+}
+.cm-header-6 {
+    color: var(--h6-color);
+}
+
+
+/* Links - theme specific */
+.theme-light .cm-link, 
+.theme-light .cm-hmd-internal-link {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+.theme-dark .cm-link, 
+.theme-dark .cm-hmd-internal-link {
+	color: #8cb4ff;
+	text-decoration: underline;
+}
+
+/* Dropdown menus - shared */
+.menu {
+	background-color: var(--background-tertiary);
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.menu-item {
+	color: var(--text-normal);
+	padding: 4px 8px;
+}
+
+.menu-item:hover {
+	background-color: var(--titlebar-background);
+	color: var(--titlebar-text);
+}
+
+/* Separator in menus - shared */
+.menu-separator {
+	border-bottom: 1px solid #808080;
+	margin: 4px 0;
+}
+
+/* Modal dialogs - shared */
+.is-phone .modal .modal-title {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 70vw;
+}
+
+.modal {
+	background-color: var(--background-tertiary);
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.modal-title {
+	color: var(--titlebar-text);
+	margin-left: auto;
+    margin-right: auto;
+	padding: 4px 8px;
+	font-weight: bold;
+}
+
+.modal-content {
+	padding: 8px;
+	color: var(--text-normal);
+}
+
+/* Dialog buttons at bottom - shared */
+.modal-button-container {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 8px;
+}
+
+/* Status bar at the bottom - shared */
+.status-bar {
+	background-color: var(--background-tertiary);
+	border-top: 1px solid #808080;
+	color: var(--text-normal);
+	height: 22px;
+	padding: 0 4px;
+}
+
+.status-bar-item {
+	padding: 0 4px;
+}
+
+/* Status bar buttons - shared */
+.status-bar-item button {
+	height: 18px;
+	padding: 0 4px;
+}
+
+/* Windows 3.1 style scrollbars - shared structure */
+::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--background-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--background-tertiary);
+	border: 1px solid #000;
+}
+
+::-webkit-scrollbar-button {
+	background-color: var(--background-tertiary);
+	border: 1px solid #000;
+	width: 16px;
+	height: 16px;
+}
+
+/* Theme-specific scrollbar styling */
+/* Light Scrollbars */
+
+
+
+.theme-light ::-webkit-scrollbar-thumb,
+.theme-light ::-webkit-scrollbar-button {
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+.theme-light ::-webkit-scrollbar-button:active {
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb,
+.theme-dark ::-webkit-scrollbar-button {
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+}
+
+.theme-dark ::-webkit-scrollbar-button:active {
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+}
+
+/* Light Tabs styling */
+.theme-light .workspace-tab-header {
+    background-color: var(--background-tertiary);
+    color: var(--text-normal);
+    border: 1px solid #000;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border-radius: 5px; /* Ensure all corners align */
+}
+
+.theme-light .workspace-tab-header.is-active {
+    background-color: var(--background-secondary);
+    box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+    border-radius: 5px;
+}
+
+/* Dark Tabs styling */
+.theme-dark .workspace-tab-header {
+    background-color: var(--background-tertiary);
+    color: var(--text-normal);
+    border: 1px solid #000;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+    border-radius: 5px;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+    background-color: var(--background-secondary);
+    box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+    border-radius: 5px;
+}
+
+/* fix bottom edge of active tabs https://github.com/codeisconfusing/retro-windows-obsidian/issues/1 
+& https://www.reddit.com/r/ObsidianMD/comments/1j2ulat/comment/mfzfqrt/
+thanks u/AccomplishedLife7782 / https://github.com/Gonzalo-D-Sales */
+.workspace-split.mod-root .workspace-tab-header::before,
+.workspace-split.mod-root .workspace-tab-header::after {
+display: none;
+}
+
+/* Code blocks - theme specific */
+/*.theme-light pre,
+.theme-light code {
+	background-color: #f0f0f0;
+	color: #0b6e4f;
+	border: 1px solid #c0c0c0;
+	font-family: "Courier New", monospace;
+}
+
+.theme-light .cm-inline-code {
+	background-color: #f0f0f0;
+	color: #0b6e4f;
+	padding: 0 4px;
+	border-radius: 3px;
+}
+
+.theme-dark pre,
+.theme-dark code {
+	background-color: #2a2a2a;
+	color: #6fcf9f;
+	border: 1px solid #555555;
+	font-family: "Courier New", monospace;
+}
+
+.theme-dark .cm-inline-code {
+	background-color: #2a2a2a;
+	color: #6fcf9f;
+	padding: 0 4px;
+	border-radius: 3px;
+}*/
+
+/* Code blocks - theme specific */
+.theme-light pre,
+.theme-light code {
+    background-color: #f0f0f0;
+    color: #0b6e4f;
+    border: 1px solid #c0c0c0;
+    font-family: "Courier New", monospace;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.theme-light .cm-inline-code {
+    background-color: #f0f0f0;
+    color: #0b6e4f;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.theme-dark pre,
+.theme-dark code {
+    background-color: #2a2a2a;
+    color: #6fcf9f;
+    border: 1px solid #555555;
+    font-family: "Courier New", monospace;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.theme-dark .cm-inline-code {
+    background-color: #2a2a2a;
+    color: #6fcf9f;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+
+/* Properties mods - theme specific */
+.theme-light .metadata-container {
+	border: 1px solid #000000;
+	padding: 1em 1em 0.5em 2em;
+	border-radius: 5px;
+	background: #d4d0c8
+}
+
+  /* Properties mods for dark theme */
+  .theme-dark .metadata-container {
+	border: 1px solid #666666;
+	padding: 1em 1em 0.5em 2em;
+	border-radius: 5px;
+	background: #3a3a3a;
+  }
+
+/* Dataview column wrapping and coloring - theme specific */
+.theme-light .table-view-table>tbody>tr>td { 
+    white-space: pre-wrap !important;
+    background-color: #ccccff1f !important; 
+    padding: 10px !important;
+}
+
+.theme-dark .table-view-table>tbody>tr>td { 
+    white-space: pre-wrap !important;
+    background-color: #33335f !important; 
+    padding: 10px !important;
+}
+
+/* Light theme folder colors */
+.theme-light {
+    --folder-color-1: #965D5D; /* red */
+    --folder-color-2: #8470A6; /* purple */
+    --folder-color-3: #507A9E; /* blue */
+    --folder-color-4: #5A8D76; /* green */
+    --folder-color-5: #A19C6C; /* yellow */
+    --folder-color-6: #A67A5B; /* orange */
+    --folder-color-7: #96707E; /* pink */
+    --folder-color-8: #5B8B9E; /* sky blue */
+    --folder-color-9: #6B8C6B; /* mint */
+    --folder-color-10: #8B7E6D; /* taupe */
+    --folder-color-11: #8D6B83; /* mauve */
+    --folder-color-12: #6C8299; /* steel blue */
+}
+
+/* Dark theme folder colors - brightened for better contrast */
+.theme-dark {
+    --folder-color-1: #c78080; /* red */
+    --folder-color-2: #a992d0; /* purple */
+    --folder-color-3: #7aa3c9; /* blue */
+    --folder-color-4: #7fb59a; /* green */
+    --folder-color-5: #c9c48e; /* yellow */
+    --folder-color-6: #d19e7d; /* orange */
+    --folder-color-7: #c093a6; /* pink */
+    --folder-color-8: #7db3c9; /* sky blue */
+    --folder-color-9: #8eb98e; /* mint */
+    --folder-color-10: #b3a68f; /* taupe */
+    --folder-color-11: #b38da8; /* mauve */
+    --folder-color-12: #8eabc0; /* steel blue */
+}
+
+/* Shared folder styling structure */
+.nav-files-container > div > .nav-folder:nth-child(6n + 1) { --folder-color: var(--folder-color-1); }
+.nav-files-container > div > .nav-folder:nth-child(6n + 2) { --folder-color: var(--folder-color-2); }
+.nav-files-container > div > .nav-folder:nth-child(6n + 3) { --folder-color: var(--folder-color-3); }
+.nav-files-container > div > .nav-folder:nth-child(6n + 4) { --folder-color: var(--folder-color-4); }
+.nav-files-container > div > .nav-folder:nth-child(6n + 5) { --folder-color: var(--folder-color-5); }
+.nav-files-container > div > .nav-folder:nth-child(6n + 6) { --folder-color: var(--folder-color-6); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 7) { --folder-color: var(--folder-color-7); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 8) { --folder-color: var(--folder-color-8); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 9) { --folder-color: var(--folder-color-9); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 10) { --folder-color: var(--folder-color-10); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 11) { --folder-color: var(--folder-color-11); }
+.nav-files-container > div > .nav-folder:nth-child(12n + 12) { --folder-color: var(--folder-color-12); }
+
+/* Theme-specific folder borders */
+.theme-light .nav-files-container > div > .nav-folder {
+   border: 1px solid #c0c0c0;
+   border-left: 4px solid var(--folder-color);
+   border-radius: var(--radius-s);
+}
+
+.theme-dark .nav-files-container > div > .nav-folder {
+   border: 1px solid #555555;
+   border-left: 4px solid var(--folder-color);
+   border-radius: var(--radius-s);
+}
+
+.nav-files-container > div > .nav-folder + .nav-folder {
+   margin-top: var(--size-2-2);
+}
+
+.nav-folder-title {
+   color: var(--folder-color);
+   font-weight: var(--font-bold);
+}
+
+/* TABLES */
+th {
+	border: 1px solid var(--background-tertiary) !important;
+  }
+  
+  td {
+	border: 1px solid var(--background-tertiary) !important;
+  }
+  
+  thead {
+	border-bottom: 4px solid var(--background-tertiary);
+  }
+
+/* Calendar Styling */
+#calendar-container .day:hover {
+    background-color: var(--interactive-hover);
+}
+#calendar-container .today {
+    font-weight: 700;
+    background-color: var(--interactive-accent);
+    color: var(--titlebar-text);
+}

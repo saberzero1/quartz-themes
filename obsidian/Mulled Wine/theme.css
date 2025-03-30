@@ -1,0 +1,357 @@
+span.view-header-breadcrumb,
+div.view-header-title {
+  font-family: 'yu gothic ui', sans-serif;
+}
+
+
+.markdown-source-view,
+.cm-scroller,
+.markdown-preview-view,
+.markdown-reading-view {
+  line-height: 1.7em !important;
+  letter-spacing: 0.1px;
+}
+
+
+
+a.tag,
+.cm-hashtag {
+  font-family: 'yu gothic ui', sans-serif;
+  text-transform: lowercase;
+  font-size: 12px;
+}
+
+.nav-file-title,
+.nav-folder-title {
+  font-family: 'yu gothic ui', sans-serif;
+  font-size: 14px;
+}
+
+
+body {
+  --inline-title-color: #beb4da;
+  --inline-title-font: 'yu gothic ui', sans-serif;
+  --inline-title-size: 1.5em;
+  --inline-title-margin-bottom: 0.5em;
+  --inline-title-weight: 400;
+
+  --font-text: 'yu gothic', yugothic, sans-serif;
+  --font-text-size: 14px !important;
+}
+
+
+
+
+
+
+* {
+  box-shadow: none !important;
+}
+
+
+
+
+.body {
+  font-family: 'yu gothic', yugothic, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.workspace-tab-header-inner-title {
+  font-family: 'yu gothic ui', sans-serif;
+  text-transform: uppercase;
+}
+
+
+body {
+  --divider-color: transparent;
+  --hr-thickness: 1px;
+  --hr-color: #736883;
+}
+
+.markdown-rendered blockquote {
+  padding-left: 15px;
+  font-style: normal;
+  border-left: 3px solid #afb7df;
+  background: transparent;
+  margin-left: 2em;
+}
+
+
+
+
+
+.theme-dark {
+
+  --text-highlight-bg: transparent;
+  --text-accent: #95bae8;
+
+  --color-base-00: #292d3e;
+  --color-base-05: #1d202c;
+  /* header */
+  --color-base-10: #5da6ca;
+  /* interactive hover*/
+  --color-base-20: #1d202c;
+  /* background secondary*/
+  --color-base-25: #fff;
+  --color-base-30: #fff;
+  --color-base-35: #b3b6de;
+  --color-base-40: #b3b6de;
+  --color-base-50: #95bae8;
+  /*sidebar symbols*/
+  --color-base-60: #fff;
+  --color-base-70: #d295d1;
+  /*tab font*/
+  --color-base-100: #e46872;
+  /*main font*/
+
+  --interactive-normal: #FFFFFF;
+  --slider-track-background: #FFFFFF;
+  --icon-color: #96bae8;
+  --icon-color-hover: #d295d1;
+  --icon-color-focused: #d295d1;
+
+  --code-background: #383c4e;
+
+  --nav-item-color: #95bae8;
+  --nav-item-color-active: #c2b4d9;
+  --nav-item-color-hover: #c2b4d9;
+
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+
+  --tab-text-color-active: #fff;
+  --tab-text-color-focused: #fff;
+
+  --tab-divider-color: transparent;
+
+  --callout-title-weight: 400;
+
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #714785;
+  --tag-color: #96bae8;
+}
+
+.theme-light {
+  --text-highlight-bg: transparent;
+
+  --text-accent: #95bae8;
+
+  --color-base-00: #fff;
+  --color-base-05: #e9ecf7;
+  /* header */
+  --color-base-10: #71799d;
+  /*interactive hover*/
+  --color-base-20: #e9ecf7;
+  /*background secondary*/
+  --color-base-25: #fff;
+  --color-base-30: #fff;
+  --color-base-35: #b3b6de;
+  --color-base-40: #b3b6de;
+  --color-base-50: #95bae8;
+  /*sidebar symbols*/
+  --color-base-60: #fff;
+  --color-base-70: #d295d1;
+  /*tab font*/
+  --color-base-100: #383c4e;
+  /*main font*/
+
+  --interactive-normal: #FFFFFF;
+  --slider-track-background: #FFFFFF;
+  --icon-color: #96bae8;
+  --icon-color-hover: #d295d1;
+  --icon-color-focused: #d295d1;
+
+  --code-background: #e9ecf7;
+
+  --nav-item-color: #634a75;
+  --nav-item-color-active: #9a73b4;
+  --nav-item-color-hover: #95bae8;
+
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+
+  --tab-text-color-active: #fff;
+  --tab-text-color-focused: #fff;
+
+  --tab-divider-color: transparent;
+
+  --callout-title-weight: 400;
+
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #714785;
+  --tag-color: #96bae8;
+}
+
+.callout {
+  border-left: 3px solid #e46872;
+  background-color: transparent;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+
+.callout-title {
+  color: #70c8d6;
+  font-size: 14px;
+  font-family: 'yu gothic ui', sans-serif;
+}
+
+.callout>.callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+body {
+  --h1-size: 2em;
+  --h2-size: 1.8em;
+  --h3-size: 1.6em;
+  --h4-size: 1.4em;
+  --h5-size: 1.2em;
+  --h6-size: 1em;
+}
+
+.markdown-preview-section>div h1,
+.markdown-preview-section>div h2,
+.markdown-preview-section>div h3,
+.markdown-preview-section>div h4,
+.markdown-preview-section>div h5,
+.markdown-preview-section>div h6 {
+  font-family: 'yu gothic ui', sans-serif;
+  margin-top: 40px;
+  font-weight: normal;
+  color: #ebaeca !important;
+}
+
+
+/*
+::-webkit-scrollbar-track{background:transparent !important;}
+::-webkit-scrollbar{width:5px;background:transparent !important;}
+::-webkit-scrollbar-thumb{background:#383c4e !important;width:5px !important; border-radius:3px !important;}
+*/
+
+body {
+  --radius-s: 8px;
+  --radius-m: 8px;
+  --radius-l: 8px;
+  --input-radius: 8px;
+  --tab-radius-active: 0px;
+  --checkbox-radius: 8px;
+  --toggle-radius: 8px;
+  --toggle-thumb-radius: 8px;
+  --slider-thumb-radius: 8px;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+svg * {
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
+}
+
+.menu {
+  padding: var(--size-2-1);
+}
+
+.menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+body {
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+}
+
+/* Define the background gradient */
+.workspace {
+  background: linear-gradient(to right, #503455, #dd9cc5);
+}
+
+/* Change the height of the divider bar to not overflow over the gradient background */
+.is-hidden-frameless {
+  --divider-vertical-height: calc(100% - var(--header-height))
+}
+
+/* Remove backgrounds of some specific elements */
+.workspace-split,
+.workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-split.mod-root {
+  background: transparent;
+}
+
+/* Remove border or some specific elements */
+.workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-ribbon.mod-left:before,
+.workspace-ribbon {
+  border: none;
+}
+
+/* Add a background to connect top tab headers together */
+.mod-left-split .mod-top .workspace-tab-header-container-inner,
+.mod-right-split .mod-top .workspace-tab-header-container-inner {
+  background: var(--background-secondary);
+  padding: 1px 15px 1px;
+  margin: 6px 0 6px 0;
+  border-radius: var(--radius-m);
+}
+
+/* Add a radius at the 4 corners */
+.mod-root .workspace-tabs.mod-top-left-space .workspace-leaf,
+.workspace-sidedock-vault-profile {
+  border-bottom-left-radius: var(--radius-l);
+}
+
+.workspace-tabs.mod-top-left-space .workspace-tab-container {
+  border-top-left-radius: var(--radius-l);
+}
+
+.mod-right-split .workspace-tabs:last-child,
+.mod-root .workspace-tabs.mod-top-right-space .workspace-leaf {
+  border-bottom-right-radius: var(--radius-l);
+}
+
+.workspace-tabs.mod-top-right-space .workspace-tab-container {
+  border-top-right-radius: var(--radius-l);
+}
+
+/* Reduce the height to create a 6px gap at the bottom */
+.workspace>.workspace-split {
+  height: calc(100% - 6px);
+}
+
+/* Add a 6px gap on the right */
+.workspace {
+  padding-right: 6px;
+}
+
+/* Change the color of icons that are dircetly over the linear gradient */
+.titlebar,
+.workspace-ribbon,
+.workspace-tab-header-container>*:not(.workspace-tab-header-container-inner) {
+  --icon-color: var(--color-base-50);
+  --icon-color-hover: var(--color-base-20);
+  --icon-color-active: var(--color-base-20);
+  --icon-color-focused: var(--color-base-20);
+  --background-modifier-hover: rgba(var(--mono-rgb-0), 0.1);
+  --titlebar-text-color: var(--color-base-50);
+  --titlebar-text-color-focused: var(--color-base-20);
+}

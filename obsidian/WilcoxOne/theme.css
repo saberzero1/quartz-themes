@@ -1,0 +1,739 @@
+/*
+	Note to self:
+	- https://publish.obsidian.md/hub/CONTRIBUTING 
+	- https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/for+Theme+Designers
+*/
+
+/* Configuration */
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+	:root {
+		--default-font  : 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+		--mermaid-font  : var(--default-font);
+		--reveal-font   : var(--default-font);
+		--font-monospace: 'Fira Code', 'Source Code Pro', 'Courier New',      Courier,    monospace;
+
+		--fast  : 0.1s;
+		--medium: 0.2s;
+		--slow  : 0.5s;
+
+		--color-1-1    : hsl(227, 66%, 9%);
+		--color-1-1-alt: hsl(227, 66%, 11%);
+		--color-1-2    : hsl(227, 56%, 13%);
+		--color-1-2-alt: hsl(227, 56%, 16%);
+		--color-2      : hsl(231, 49%, 39%);
+		--color-3      : hsl(109, 9%, 39%);
+		--color-3-alt  : hsl(109, 9%, 19%);
+		--color-4      : hsl(109, 19%, 92%);
+		--color-4-alt  : hsl(109, 9%, 82%);
+		--color-5      : hsl(176, 16%, 64%);
+		--color-5-alt  : hsl(176, 16%, 70%);
+	}
+	.theme-dark {
+		--background-primary                        : var(--color-1-1);
+		--background-primary-alt                    : var(--color-1-1-alt);
+		--background-secondary                      : var(--color-1-2);
+		--background-secondary-alt                  : var(--color-1-2-alt);
+		--background-modifier-border                : var(--color-2);
+		--background-modifier-form-field            : rgba(0, 0, 0, 0.3);
+		--background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+		--background-modifier-box-shadow            : rgba(0, 0, 0, 0.3);
+		--background-modifier-success               : #197300;
+		--background-modifier-error                 : #3d0000;
+		--background-modifier-error-rgb             : 61,  0,   0;
+		--background-modifier-error-hover           : #470000;
+		--background-modifier-cover                 : rgba(0, 0, 0, 0.8);
+		--text-accent                               : var(--color-5);
+		--text-accent-hover                         : var(--color-5-alt);
+		--text-normal                               : var(--color-4);
+		--text-muted                                : #999;
+		--text-muted-rgb                            : 153, 153, 153;
+		--text-faint                                : #999;
+		--text-error                                : #ff3333;
+		--text-error-hover                          : #990000;
+		--text-highlight-bg                         : var(--color-2);
+		--text-highlight-bg-active                  : rgba(255, 128, 0, 0.4);
+		--text-selection                            : rgba(23, 48, 77, 0.99);
+		--text-on-accent                            : var(--color-4);
+		--interactive-normal                        : #2a2a2a;
+		--interactive-hover                         : #303030;
+		--interactive-accent                        : #483699;
+		--interactive-accent-rgb                    : 72,  54,  153;
+		--interactive-accent-hover                  : #4d3ca6;
+		--interactive-success                       : #197300;
+		--scrollbar-active-thumb-bg                 : rgba(255, 255, 255, 0.2);
+		--scrollbar-bg                              : rgba(255, 255, 255, 0.05);
+		--scrollbar-thumb-bg                        : rgba(255, 255, 255, 0.1);
+		--highlight-mix-blend-mode                  : lighten;
+	}
+	.theme-light {
+		--background-primary                        : var(--color-4);
+		--background-primary-alt                    : var(--color-4-alt);
+		--background-secondary                      : var(--color-5);
+		--background-secondary-alt                  : var(--color-5-alt);
+		--background-modifier-border                : #ddd;
+		--background-modifier-form-field            : #fff;
+		--background-modifier-form-field-highlighted: #fff;
+		--background-modifier-box-shadow            : rgba(0, 0, 0, 0.1);
+		--background-modifier-success               : #A4E7C3;
+		--background-modifier-error                 : #990000;
+		--background-modifier-error-rgb             : 230, 135, 135;
+		--background-modifier-error-hover           : #bb0000;
+		--background-modifier-cover                 : rgba(0, 0, 0, 0.8);
+		--text-accent                               : var(--color-1-2);
+		--text-accent-hover                         : var(--color-1-2-alt);
+		--text-normal                               : var(--color-1-1);
+		--text-muted                                : #888888;
+		--text-muted-rgb                            : 136, 136, 136;
+		--text-faint                                : #999999;
+		--text-error                                : #800000;
+		--text-error-hover                          : #990000;
+		--text-highlight-bg                         : rgba(255, 255, 0, 0.4);
+		--text-highlight-bg-active                  : rgba(255, 128, 0, 0.4);
+		--text-selection                            : rgba(204, 230, 255, 0.99);
+		--text-on-accent                            : #f2f2f2;
+		--interactive-normal                        : #f2f3f5;
+		--interactive-hover                         : #e9e9e9;
+		--interactive-accent                        : #7b6cd9;
+		--interactive-accent-rgb                    : 123, 108, 217;
+		--interactive-accent-hover                  : #8273e6;
+		--interactive-success                       : #197300;
+		--scrollbar-active-thumb-bg                 : rgba(0, 0, 0, 0.2);
+		--scrollbar-bg                              : rgba(0, 0, 0, 0.05);
+		--scrollbar-thumb-bg                        : rgba(0, 0, 0, 0.1);
+		--highlight-mix-blend-mode                  : darken;
+	}
+
+/* Global styling */
+	html, body {
+		margin: 0; padding: 0;
+		font-family: 'Lato', sans-serif; font-weight: 300; letter-spacing: 0.05em; line-height: 2;
+		-webkit-font-smoothing: antialiased; /* Better font rendering on modern Apple screens */
+		scroll-behavior: smooth; /* Appears to have no effect */
+	}
+
+	/* I'm using a thin base font, so "bold" is better as regular weight */
+	strong, b {
+		font-weight: 400;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+	}
+
+	/* inline and inline-block are IMO poor defaults for img and svg elements */
+	img, svg {
+		display: block; margin: 0;
+	}
+
+	/* I'd prefer the vertical rhythm was done in a different way than app.css does it with its mixed margins, and it'll be a pain to negate it. Let's hack some consistent vertical spacing where it appears most important, in lieu of nicer base CSS */
+	li + li,
+	li > ul {
+		margin-top: 0.5em;
+	}
+
+	.mod-settings {
+		font-family: var(--default-font);
+	}
+
+/* My actual styles */
+	html {
+		accent-color: var(--color-5, auto); /* Apparently not supported by Electron yet? */
+	}
+
+	hr,
+	.markdown-preview-view hr {
+		border-top:7px double var(--color-1-2-alt);
+	}
+
+	.markdown-preview-sizer.markdown-preview-section {
+		padding-bottom: 0 !important; /* I don't know why Obsidian is forcing calculated padding here that results in a gulf of empty space */
+	}
+
+	ul, ol {
+		padding-left: 1em;
+	}
+	li::marker {
+		color: hsl(109, 19%, 32%);
+	}
+
+	.modal-close-button {
+		top: 0; line-height: 1.5;
+	}
+	.workspace-ribbon {
+		border: 0;
+	}
+	.workspace-ribbon-collapse-btn {
+		display: flex; align-items: center; justify-content: center;
+	}
+	.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+		border-radius: 0;
+	}
+
+	/* override some defaults */
+	.setting-item {
+		border-top-color: transparent;
+	}
+	.setting-hotkey {
+		display: flex;
+	}
+	.setting-hotkey-icon {
+		display: flex; align-items: center;
+		border-radius: 0; height: auto; width: auto;
+		position: relative; right: -10px;
+	}
+	.setting-hotkey-icon.setting-delete-hotkey {
+		background-color: var(--color-2);
+		padding: 0 0.5em;
+		border-radius: 0 0.25em 0.25em 0;
+	}
+	button {
+		color: var(--text-normal);
+		background-color: var(--interactive-normal);
+		border-radius: 0.25em;
+		border: 1px solid var(--color-2);
+		padding: 0.5em !important;
+		cursor: pointer;
+		margin-right: 0;
+		font-family: var(--default-font) !important;
+		outline: none;
+		user-select: none;
+	}
+	button + button {
+		margin-left: 0.5em;
+	}
+	.setting-item-control button {
+		font-size: 0.875rem !important;
+	}
+	.search-input-clear-button {
+		top: -25% !important; height: 100% !important;
+	}
+
+	.nav-file-title,
+	.nav-folder-title {
+		border-radius: 0;
+		border: 0; padding: 0 10px 0 26px;
+		font-size: 0.875rem; line-height: 1.5;
+	}
+	.nav-file-title-content,
+	.nav-folder-title-content {
+		border-radius: 0;
+		border: 0;
+		padding: 0.25rem;
+	}
+	/* Show indentation guides for deep lists */
+	.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-folder,
+	.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-file {
+		border-left: 1px solid var(--color-3-alt);
+	}
+
+	/* Show indentation guides for deep lists */
+	.markdown-preview-section ul,
+	.markdown-preview-section ol {
+		padding-left: 1.25em;
+	}
+	.markdown-preview-section li > ul,
+	.markdown-preview-section li > ol {
+		position: relative;
+	}
+	.markdown-preview-section li > ul:before,
+	.markdown-preview-section li > ol:before {
+		position: absolute; left: -1em;
+		content: "";
+		width: 1px; height: 100%;
+		background-color: var(--color-3-alt);
+	}
+
+	/* align fold indicators with the indentation guides */
+	.markdown-preview-view .list-collapse-indicator {
+		position: relative; z-index: 2;
+		margin-left: -3em;
+		background-color: var(--color-1-1);
+	}
+
+	.dropdown {
+		border-color: var(--color-2);
+	}
+	.checkbox-container {
+		border: 1px solid var(--color-2); border-radius: 6rem;
+		height: 1.6rem; width: 3rem;
+		box-shadow: none;
+	}
+	.checkbox-container:after {
+		border-radius: 50%;
+		width: 1rem; height: 1rem;
+		top: 0.05rem;
+	}
+	.checkbox-container.is-enabled {
+		border-color: transparent;
+	}
+	.checkbox-container.is-enabled:after {
+		transform: translate3d(1.4rem, 0, 0);
+	}
+
+	/* tooltip */
+	.tooltip {
+		padding: 0.5em 1em; border-radius: 0.25rem;
+		animation-duration: var(--fast);
+		font-size: 0.875rem;
+		line-height: inherit;
+		text-align: left;
+	}
+	.tooltip *:before {
+		content: attr(class)
+	}
+	.tooltip .tooltip-arrow {
+		margin-left: -0.5rem;
+		border-bottom: 0.5rem solid var(--color-4);
+		border-right: 0.5rem solid transparent;
+		border-left: 0.5rem solid transparent;
+	}
+	.tooltip.mod-right .tooltip-arrow {
+		top: calc(50% - 0.5rem);
+		left: -0.5rem;
+		border-right: 0.5rem solid var(--color-4);
+		border-top: 0.5rem solid transparent;
+		border-bottom: 0.5rem solid transparent;
+	}
+	.tooltip.mod-left .tooltip-arrow {
+		top: calc(50% - 0.5rem);
+		left: calc(100% + 0.5rem);
+		border-left: 0.5rem solid var(--color-4);
+		border-top: 0.5rem solid transparent;
+		border-bottom: 0.5rem solid transparent;
+	}
+	.tooltip.mod-top .tooltip-arrow {
+		top: calc(100%);
+		border-top: 0.5rem solid var(--color-4);
+		border-bottom: 0.5rem solid transparent;
+	}
+
+	.theme-dark .tooltip {
+		box-shadow: none;
+		background-color: var(--color-4); color: var(--color-1-1);
+	}
+	.theme-dark .tooltip .tooltip-arrow {
+		margin-left: -0.5rem;
+		border-bottom: 0.5rem solid var(--color-4);
+		border-right: 0.5rem solid transparent;
+		border-left: 0.5rem solid transparent;
+	}
+	.theme-dark .tooltip.mod-right .tooltip-arrow {
+		top: calc(50% - 0.5rem);
+		left: -0.5rem;
+		border-right: 0.5rem solid var(--color-4);
+		border-top: 0.5rem solid transparent;
+		border-bottom: 0.5rem solid transparent;
+	}
+	.theme-dark .tooltip.mod-left .tooltip-arrow {
+		top: calc(50% - 0.5rem);
+		left: calc(100% + 0.5rem);
+		border-left: 0.5rem solid var(--color-4);
+		border-top: 0.5rem solid transparent;
+		border-bottom: 0.5rem solid transparent;
+	}
+	.theme-dark .tooltip.mod-top .tooltip-arrow {
+		top: calc(100%);
+		border-top: 0.5rem solid var(--color-4);
+		border-bottom: 0.5rem solid transparent;
+	}
+
+	.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+		border-radius: 0 !important;
+	}
+
+	/* sidedock */
+		.side-dock-ribbon {
+			flex: 0 0 36px;
+		}
+		.side-dock-actions,
+		.side-dock-settings {
+			display: flex; flex-direction: column;
+		}
+		.side-dock-actions > div,
+		.side-dock-settings > div {
+			padding: 0.5em;
+		}
+		.side-dock-ribbon-action:hover {
+			background-color: var(--text-highlight-bg);
+		}
+		.workspace-ribbon-collapse-btn {
+			margin-top: 0;
+		}
+		.side-dock-settings {
+			margin-bottom: 0;
+		}
+		.side-dock-ribbon-tab,
+		.side-dock-ribbon-action {
+			color: var(--color-4-alt);
+		}
+		.side-dock-ribbon-tab:hover,
+		.side-dock-ribbon-action:hover {
+			color: var(--color-4);
+		}
+
+	/* side-dock-actions */
+		.view-actions {
+			display: flex; padding: 0;
+		}
+		.view-actions > .view-action {
+			padding: 0.5em; margin: 0; top: 0;
+		}
+		.view-actions > .view-action:hover {
+			background-color: var(--text-highlight-bg);
+		}
+
+	/* Left Sidebar */
+		.workspace-tab-header-container,
+		.workspace-tab-container-before,
+		.workspace-tab-container-after,
+		.is-before-active,
+		.is-after-active,
+		.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+		.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+		.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+		.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+			background-color: var(--background-primary) !important;
+		}
+
+		.workspace-tab-header-container {
+			height: auto;
+		}
+		.workspace-tab-header {
+			cursor: pointer;
+		}
+		.workspace-tab-header-inner {
+			padding: 0.5em 1em;
+		}
+		.workspace-tab-container-before,
+		.workspace-tab-container-after {
+			width: 0.5em;
+		}
+		.workspace-tabs {
+			background-color: transparent;
+		}
+
+	/* Right sidebar */
+		.tree-item-self .tree-item-icon {
+			align-self: flex-start;
+		}
+		.tree-item-self .tree-item-icon.collapse-icon {
+			align-self: center;
+		}
+
+
+		.nav-buttons-container {
+			justify-content: flex-start; gap: 2px;
+		}
+		.nav-buttons-container .nav-action-button {
+			padding: 0.5em; margin: 0; border-radius: 0.25em;
+		}
+		.workspace-leaf-content .nav-header {
+			padding-inline: 0.5em;
+		}
+		.nav-action-button:hover {
+			background-color: var(--text-highlight-bg) !important;
+			color: white;
+		}
+
+		.nav-file-title {
+			border-radius: 0;
+			transition: background-color var(--fast);
+			color: white;
+		}
+		.nav-file-title:hover {
+			background-color: var(--text-highlight-bg) !important;
+		}
+
+	/* The main pane with content in it */
+		.workspace-leaf .view-header {
+			padding: 0.25rem 0.25rem 0.25rem 0; height: auto;
+		}
+
+		.workspace-leaf-content a {
+			display: inline-block; border-radius: 0.25em;
+		}
+		.workspace-leaf-content a:hover {
+			background-color: var(--color-1-2-alt);
+		}
+
+		.view-content .collapse-icon {
+			display: flex;
+			height: 1.5em; /* which is also the line-height, so it appears visually centered */
+		}
+		.view-content .collapse-icon svg {
+			transform: scale(1.5);
+			transition: all var(--fast);
+			opacity: 0.3;
+		}
+		.view-content .is-collapsed .collapse-icon svg {
+			transform: scale(1.5) rotate(-90deg);
+			opacity: 1;
+		}
+		.collapse-icon svg path {
+			fill: hsl(109, 19%, 32%);
+		}
+
+		.search-input-container {
+			display: flex;
+		}
+		.search-input-clear-button {
+			top: auto;
+		}
+
+		.markdown-preview-view code {
+			border-radius: 0.25em;
+			font-size: 0.875rem;
+			padding: 0.125em 0.5em;
+		}
+		.markdown-preview-view .internal-link.is-unresolved {
+			opacity: 1;
+			text-decoration-style: dashed;
+		}
+
+		.markdown-preview-view .task-list-item-checkbox {
+			width: 1rem; height: 1rem; top: 0.15rem; margin-right: 0.5rem; opacity: 0.8;
+		}
+		.markdown-preview-view .task-list-item-checkbox:checked {
+			opacity: 0.6;
+		}
+		@supports not (accent-color: red) {
+			.markdown-preview-view .task-list-item-checkbox {
+				filter: hue-rotate(280deg);
+			}
+		}
+
+
+		.footnotes {
+			margin-top: 2rem;
+			background-color: hsl(227, 66%, 11%); padding: 1rem;
+		}
+		.footnotes:before {
+			content: "Footnotes";
+			display: block;
+			font-size: 1.5rem; margin-bottom: 1rem;
+		}
+		.footnotes hr {
+			display: none;
+		}
+		.footnotes > ol {
+			margin-top: 0; margin-bottom: 0;
+		}
+		.footnotes .footnote-backref {
+			display: block; width: 1rem;
+		}
+
+		.frontmatter-container {
+			padding: 0; border: 0; margin-bottom: 2rem;
+		}
+		.frontmatter-container .frontmatter-container-header {
+			font-size: 0.7rem;
+			padding: 0.7rem 1rem; margin-bottom: 0;
+			border: 0; border-radius: 0.25em 0.25em 0 0;
+			border-bottom: 1px solid var(--color-1-1);
+			background-color: var(--color-1-2);
+		}
+		.frontmatter-container .frontmatter-section {
+			padding-inline: 1rem; padding-block: 0.25rem; margin: 0;
+			background-color: var(--background-primary-alt);
+		}
+		.mod-tags {
+			background-color: var(--background-primary-alt);
+			margin: 0 !important; padding: 0.25rem 1rem;
+		}
+		.frontmatter-container .tag {
+			background-color: var(--color-1-2-alt);
+		}
+		.frontmatter-container .tag:hover {
+			background-color: var(--color-2); color: white;
+		}
+
+		.frontmatter.language-yaml + .frontmatter-container {
+			margin-top: 1rem;
+		}
+
+		.theme-dark pre[class*="language-"] {
+			padding: 3rem 1rem 1rem;
+		}
+		pre[class*="language-"]::before {
+			position: absolute; top: 0; left: 0; right: 0;
+			content: attr(class);
+			display: block;
+			font-size: 0.7rem;
+			padding: 0.7rem 1rem; margin-bottom: 1rem;
+			border-bottom: 1px solid var(--color-1-2);
+			background-color: var(--color-1-2);
+		}
+		/* If Obsidian mark-up was clean with proper whitespace we could get away with `content: attr(class);` as above - but it isn't */
+		pre[class*="frontmatter"]::before   { content: "frontmatter: YAML"; }
+		pre[class*="language-php"]::before  { content: "PHP"; }
+		pre[class*="language-html"]::before { content: "HTML"; }
+		pre[class*="language-js"]::before   { content: "JavaScript"; }
+		pre[class*="language-ts"]::before   { content: "TypeScript"; }
+		pre[class*="language-css"]::before  { content: "CSS"; }
+		pre[class*="language-scss"]::before { content: "SCSS"; }
+		pre[class*="language-bash"]::before { content: "BASH"; }
+		pre[class*="language-twig"]::before { content: "TWIG"; }
+
+	/* Link Styles */
+	.external-link,
+	.internal-link,
+	.markdown-preview-view a,
+	.markdown-preview-view .internal-link,
+	.markdown-preview-view .external-link,
+	.cm-s-obsidian span.cm-url,
+	.cm-s-obsidian span.cm-hashtag,
+	.setting-item-description a {
+		text-decoration-color: hsl(109, 19%, 32%);
+		text-underline-offset: 0.2em; text-decoration-thickness: 1px;
+	}
+	.external-link {
+		padding: 0 0 0 1.2em;
+		background-position: 0 0.35em;
+	}
+
+	/* Code Styles */
+	.theme-dark code[class*="language-"],
+	.theme-dark pre[class*="language-"],
+	.theme-light code[class*="language-"],
+	.theme-light pre[class*="language-"],
+	.cm-s-obsidian span.cm-inline-code,
+	code {
+		text-shadow: none;
+		font-family: var(--font-monospace);
+		font-size: 0.875rem; letter-spacing: 0; line-height: 1.5;
+		background-color: var(--background-primary-alt) !important;
+	}
+
+	/* frontmatter */
+	.frontmatter-container .tag,
+	.frontmatter-container .frontmatter-alias {
+		display: flex; align-items: center;
+		border-radius: 0.25em;
+	}
+	.frontmatter-container .frontmatter-section-label {
+		padding-top: 0.25em;
+	}
+
+	/* Popover */
+		.popover {
+			background-color: var(--background-secondary);
+			border: 1px solid var(--background-secondary-alt);
+			box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+			border-radius: 0.25rem;
+			padding: 0 1rem;
+			position: relative;
+		}
+		.components-container .popover {
+			width: 400px;
+			margin-top: 0px;
+		}
+		.components-container .popover .popover-content {
+			font-size: inherit;
+		}
+
+	/* embed */
+		.internal-embed.is-loaded:not(.image-embed) {
+			border-left: 0.5rem solid var(--background-secondary);
+		}
+
+	/* markdown */
+		.markdown-preview-view .markdown-embed,
+		.markdown-preview-view .file-embed {
+			margin: 1.5rem 0 1.5rem 1rem;
+			border: 0
+		}
+		.markdown-embed-content > .markdown-preview-view {
+			padding: 20px 0 0 0;
+		}
+		.markdown-embed-content > .markdown-preview-view > *:last-child {
+			margin-bottom: 0;
+		}
+		body > .popover .markdown-embed-content > .markdown-preview-view {
+			padding: 20px;
+		}
+
+		.markdown-preview-view blockquote {
+			border: 0; border-radius: 0; margin-left: 1rem;
+			border-left: 0.5rem solid var(--background-secondary);
+		}
+
+		.markdown-preview-view th,
+		.markdown-preview-view td {
+			padding: 0.25em 0; border: 0;
+		}
+		.markdown-preview-view th {
+			font-weight: bold; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+		}
+		.markdown-preview-view tbody tr:nth-child(even) {
+			background-color: hsl(227, 66%, 11%);
+		}
+
+	/* editor view */
+		.cm-s-obsidian .hmd-fold-html-stub, .cm-s-obsidian .hmd-fold-code-stub, .cm-s-obsidian.CodeMirror .HyperMD-hover > .HyperMD-hover-content code, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian .cm-inline-code, .cm-s-obsidian .HyperMD-codeblock, .cm-s-obsidian .HyperMD-hr, .cm-s-obsidian .cm-hmd-frontmatter, .cm-s-obsidian .cm-hmd-orgmode-markup, .cm-s-obsidian .cm-formatting-code, .cm-s-obsidian .cm-math, .cm-s-obsidian span.hmd-fold-math-placeholder, .cm-s-obsidian .CodeMirror-linewidget kbd, .cm-s-obsidian .hmd-fold-html kbd {
+			font-size: 0.875rem;
+		}
+
+/* Other plugin overrides */
+
+	/* DataView */
+		.dataview.inline-field {
+			display: inline-flex; align-items: stretch;
+		}
+		.dataview.inline-field-key {
+			display: flex; align-items: center; padding: 0.25em 0.5em 0 !important;
+			font-size: 0.7rem; border-radius: 0.25em 0 0 0.25em !important;
+			background-color: var(--color-1-2-alt) !important; letter-spacing: 0;
+		}
+		.dataview.inline-field-value {
+			display: flex; align-items: center; padding: 0.25em 0.5em 0.25em !important;
+			font-size: 0.875rem; border-radius: 0 0.25em 0.25em 0 !important;
+			background-color: var(--color-1-2) !important;
+		}
+		.dataview.inline-field-value a {
+			text-decoration: none !important;
+		}
+
+		table.table-view-table > thead > tr > th {
+			font-size: 0.875rem;
+			font-weight: bold;
+			border-bottom: 1px solid currentColor;
+		}
+
+	/* sliding panes */
+		html body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
+			width: 2.5em; border-right: 0; border-left: 0;
+			padding: 0 0.25rem !important;
+		}
+		html body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
+			background-color: var(--background-secondary-alt);
+			border-right: 0 !important;
+		}
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content {
+			padding-left: 2.5em !important;
+		}
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-actions {
+			gap: 2px !important;
+		}
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-action {
+			margin: 0 !important; display: inline-flex; align-items: center;
+		}
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container {
+			display: flex; align-items: center;
+			font-size: 1rem; line-height: 1.5; font-weight: normal;
+		}
+		body.plugin-sliding-panes-rotate-header .view-header-icon {
+			top: 0;
+			display: flex; align-items: center;
+		}
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before,
+		body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after {
+			opacity: 0;
+		}
+
+	/* Calendar */
+		#calendar-container .day:hover {
+			background-color: var(--color-2);
+		}
+		#calendar-container .day.today {
+			background-color: var(--color-3); color: var(--color-light);
+		}

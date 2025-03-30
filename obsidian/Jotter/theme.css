@@ -1,0 +1,1239 @@
+/* __________________________________________________ */
+/* Jotter */
+/* Obsidian Theme */
+/* Created by @lnbgc - (https://github.com/lnbgc/obsidian-jotter/) */
+/* __________________________________________________ */
+
+/* 
+Inspired by:
+
+THINGS - @colineckert - https://github.com/colineckert/obsidian-things
+FUSION - @zamsyt - https://github.com/zamsyt/obsidian-fusion  
+SANCTUM - @jdanielmourao - https://github.com/jdanielmourao/obsidian-sanctum
+YIN AND YANG - @chetachiezikeuzor - https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme
+GOLDEN TOPAZ - @shaggyfeng - https://github.com/shaggyfeng/obsidian-Golden-Topaz-theme
+MINIMAL - @kepano - https://github.com/kepano/obsidian-minimal
+*/
+
+body {
+    --h1-size: 1.3em;
+    --h2-size: 1.2em;
+    --h3-size: 1.1em;
+    --h4-size: 1em;
+    --h5-size: .85em;
+    --h6-size: .75em;
+
+    --h1-color: var(--text-normal);
+    --h2-color: var(--text-accent);
+    --h3-color: var(--text-normal);
+    --h4-color: var(--text-muted);
+    --h5-color: var(--text-muted);
+    --h6-color: var(--text-faint);
+
+    --icon-color: var(--text-faint);
+    --icon-color-hover: var(--text-muted);
+    --icon-color-focused: var(--text-muted);
+
+    --indentation-guide-width: 1.5px;
+
+    --yellow: #fcd86c;
+
+    --strong-color: var(--text-normal);
+    --em-color: var(--text-normal);
+
+    --bold-underline-color: var(--text-accent);
+    --italic-underline-color: var(--yellow);
+
+    --modal-border-width: 2px;
+    --modal-border-color: var(--background-modifier-border);
+
+    --link-color: var(--text-accent);
+    --link-external-color: var(--text-accent);
+}
+
+.theme-dark,
+.theme-light {
+    --background-secondary-alt: var(--background-secondary);
+    --indentation-guide-color: var(--background-modifier-border);
+    --background-modifier-hover: var(--background-primary-alt);
+    --background-modifier-form-field: var(--background-primary);
+    --background-modifier-border-focus: var(--background-modifier-border);
+
+    --input-shadow: none;
+    --input-shadow-hover: none;
+    --shadow-s: none;
+    --shadow-l: none;
+}
+
+/* THEMES */
+/* Default theme */
+.theme-light {
+    --background-primary: #f2f2f2;
+    --background-primary-alt: #e6e6e6;
+    --background-secondary: #f2f2f2;
+
+    --background-modifier-border: hsl(0, 0%, 84%);
+    --background-modifier-border-hover: hsl(0, 0%, 84%);
+
+    --indentation-guide-color-active: hsl(0, 0%, 70%);
+
+    --interactive-normal: #e6e6e6;
+    --interactive-hover: #efefef;
+
+    --text-normal: #353132;
+    --text-muted: #878586;
+    --text-faint: #ababab;
+}
+
+.theme-dark {
+    --background-primary: #322f30;
+    --background-primary-alt: #413e3e;
+    --background-secondary: #322f30;
+
+    --background-modifier-border: hsl(345, 3%, 28%);
+    --background-modifier-border-hover: hsl(345, 3%, 30%);
+
+    --indentation-guide-color-active: hsl(345, 3%, 45%);
+
+    --interactive-normal: #433F40;
+    --interactive-hover: #4a4546;
+
+    --text-normal: #e1e1e1;
+    --text-muted: #b7b2b2;
+    --text-faint: #807b7b;
+}
+
+/* Reporter theme */
+.theme-light.ct-reporter {
+    --background-primary: #fffdf8;
+    --background-primary-alt: #ebe4d6;
+    --background-secondary: #f5f0e5;
+
+    --code-background: #f3ede2;
+
+    --background-modifier-border: hsl(41, 18%, 82%);
+    --background-modifier-border-hover: hsl(41, 20%, 88%);
+
+    --indentation-guide-color-active: hsl(41, 5%, 65%);
+
+    --interactive-normal: var(--background-primary-alt);
+    --interactive-hover: #f2ede4;
+
+    --text-normal: #353132;
+    --text-muted: #7d7c7d;
+    --text-faint: #a7a7a7;
+}
+
+.theme-dark.ct-reporter {
+    --background-primary: #252423;
+    --background-primary-alt: #302e2c;
+    --background-secondary: #21201f;
+
+    --background-modifier-border: hsla(37, 5%, 20%);
+    --background-modifier-border-hover: hsla(37, 5%, 25%);
+
+    --indentation-guide-color-active: hsl(37, 5%, 35%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+
+    --text-normal: #d7cdc1;
+    --text-muted: #938d89;
+    --text-faint: #65615f;
+}
+
+/* Explorer theme */
+.theme-light.ct-explorer {
+    --background-primary: #e7e5d0;
+    --background-primary-alt: #dad7c3;
+    --background-secondary: #e7e5d0;
+
+    --code-background: #dedbc9;
+
+    --background-modifier-border: hsl(55, 20%, 75%);
+    --background-modifier-border-hover: hsl(55, 20%, 80%);
+
+    --indentation-guide-color-active: hsl(30, 1%, 63%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+
+    --text-normal: #191919;
+    --text-muted: #555864;
+    --text-faint: #999ba4;
+}
+
+.theme-dark.ct-explorer {
+    --background-primary: #161616;
+    --background-primary-alt: #242323;
+    --background-secondary: #161616;
+
+    --background-modifier-border: hsl(30, 1%, 23%);
+    --background-modifier-border-hover: hsl(30, 1%, 28%);
+
+    --indentation-guide-color-active: hsl(30, 1%, 43%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+
+    --text-normal: #f4f4f0;
+    --text-muted: #a6a4a1;
+    --text-faint: #555453;
+}
+
+/* Keeper theme */
+.theme-light.ct-keeper {
+    --background-primary: #d8dee9;
+    --background-primary-alt: #c5cdda;
+    --background-secondary: #d8dee9;
+
+    --code-background: #d0d8e4;
+
+    --background-modifier-border: hsl(222, 20%, 80%);
+    --background-modifier-border-hover: hsl(222, 20%, 83%);
+
+    --indentation-guide-color-active: hsl(220, 17%, 70%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+
+    --text-normal: #2e3440;
+    --text-muted: #6b7b97;
+    --text-faint: #8b9ab9;
+}
+
+.theme-dark.ct-keeper {
+    --background-primary: #2e3440;
+    --background-primary-alt: #3B4252;
+    --background-secondary: #2e3440;
+
+    --background-modifier-border: hsl(222, 16%, 28%);
+    --background-modifier-border-hover: hsl(222, 16%, 33%);
+
+    --indentation-guide-color-active: hsl(220, 17%, 40%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+
+    --text-normal: #eceff4;
+    --text-muted: #a3aab9;
+    --text-faint: #7a8191;
+}
+
+.theme-light.ct-undercover {
+    --background-primary: #FCFCFC;
+    --background-primary-alt: #dbe1eb;
+    --background-secondary: #EFF1F5;
+
+    --code-background: #eaf0f8;
+
+    --background-modifier-border: hsl(218, 11%, 86%);
+    --background-modifier-border-hover: hsl(218, 11%, 81%);
+
+    --indentation-guide-color-active: hsl(218, 11%, 70%);
+
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: hsl(218, 11%, 90%);
+
+    --text-normal: #212834;
+    --text-muted: #7787A9;
+    --text-faint: #A1ACC2;
+}
+
+.theme-dark.ct-undercover {
+    --background-primary: #08090D;
+    --background-primary-alt: #171c23;
+    --background-secondary: #090C10;
+
+    --code-background: #131820;
+
+    --background-modifier-border: hsl(219, 20%, 27%);
+    --background-modifier-border-hover: hsl(219, 20%, 37%);
+
+    --indentation-guide-color-active: hsl(221, 16%, 40%);
+
+    --interactive-normal: #1d232c;
+    --interactive-hover: #242c36;
+
+    --text-normal: #eff0f2;
+    --text-muted: #7b87a0;
+    --text-faint: #4b5870;
+}
+
+.ct-keeper,
+.ct-reporter,
+.theme-dark.ct-explorer,
+.theme-dark.ct-jotter {
+    --color-red: #bf616a;
+    --color-red-rgb: 191, 97, 106;
+
+    --color-green: #8fbcbb;
+    --color-green-rgb: 143, 188, 187;
+
+    --color-orange: #d08770;
+    --color-orange-rgb: 208, 135, 112;
+
+    --color-yellow: #ebc88b;
+    --color-yellow-rgb: 235, 200, 139;
+
+    --color-cyan: #88c0d0;
+    --color-cyan-rgb: 136, 192, 208;
+
+    --color-blue: #81a1c1;
+    --color-blue-rgb: 129, 161, 193;
+
+    --color-purple: #8b81c1;
+    --color-purple-rgb: 139, 129, 193;
+
+    --color-pink: #bd81c1;
+    --color-pink-rgb: 189, 129, 193;
+}
+
+.theme-light.ct-obsidian,
+.theme-dark.ct-obsidian {
+    --background-primary: var(--color-base-00);
+    --background-primary-alt: var(--color-base-10);
+    --background-secondary: var(--color-base-20);
+
+    --background-modifier-border: var(--color-base-30);
+    --background-modifier-border-hover: var(--color-base-35);
+
+    --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
+
+    --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+    --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+
+    --interactive-normal: var(--color-base-00);
+    --interactive-hover: var(--color-base-10);
+
+    --text-normal: var(--color-base-100);
+    --text-muted: var(--color-base-70);
+    --text-faint: var(--color-base-50);
+}
+
+/* ACCENT COLORS */
+.predefined-accent-color {
+    --text-accent: rgb(var(--accent));
+    --color-accent: rgb(var(--accent));
+    --interactive-accent: rgb(var(--accent));
+    --tag-background: rgb(var(--accent), .2);
+    --tag-background-hover: rgb(var(--accent), .3);
+
+    --text-accent-hover: rgb(var(--accent), 0.8);
+    --interactive-accent-hover: rgb(var(--accent), 0.8);
+
+    --rust: 188, 74, 60;
+    --vermilion: 243, 90, 55;
+    --pumpkin: 246, 141, 69;
+    --mustard: 255, 208, 113;
+    --jade: 0, 168, 107;
+    --forest: 77, 116, 53;
+    --turquoise: 120, 230, 232;
+    --ultramarine: 92, 124, 255;
+    --denim: 76, 80, 120;
+    --mauve: 122, 73, 136;
+    --bubblegum: 255, 179, 189;
+    --wine: 114, 47, 55;
+    --slate: 131, 142, 154;
+}
+
+.predefined-accent-color.accent-rust {
+    --accent: var(--rust);
+    --accent-h: 7;
+    --accent-s: 52%;
+    --accent-l: 49%;
+}
+
+.predefined-accent-color.accent-vermilion {
+    --accent: var(--vermilion);
+    --accent-h: 11;
+    --accent-s: 89%;
+    --accent-l: 58%;
+}
+
+.predefined-accent-color.accent-pumpkin {
+    --accent: var(--pumpkin);
+    --accent-h: 24;
+    --accent-s: 91%;
+    --accent-l: 62%;
+}
+
+.predefined-accent-color.accent-mustard {
+    --accent: var(--mustard);
+    --accent-h: 40;
+    --accent-s: 100%;
+    --accent-l: 72%;
+}
+
+.predefined-accent-color.accent-jade {
+    --accent: var(--jade);
+    --accent-h: 158;
+    --accent-s: 100%;
+    --accent-l: 33%;
+}
+
+.predefined-accent-color.accent-forest {
+    --accent: var(--forest);
+    --accent-h: 97;
+    --accent-s: 37%;
+    --accent-l: 33%;
+}
+
+.predefined-accent-color.accent-turquoise {
+    --accent: var(--turquoise);
+    --accent-h: 181;
+    --accent-s: 71%;
+    --accent-l: 69%;
+}
+
+.predefined-accent-color.accent-ultramarine {
+    --accent: var(--ultramarine);
+    --accent-h: 228;
+    --accent-s: 100%;
+    --accent-l: 68%;
+}
+
+.predefined-accent-color.accent-denim {
+    --accent: var(--denim);
+    --accent-h: 235;
+    --accent-s: 22%;
+    --accent-l: 38%;
+}
+
+.predefined-accent-color.accent-mauve {
+    --accent: var(--mauve);
+    --accent-h: 287;
+    --accent-s: 30%;
+    --accent-l: 41%;
+}
+
+.predefined-accent-color.accent-bubblegum {
+    --accent: var(--bubblegum);
+    --accent-h: 352;
+    --accent-s: 100%;
+    --accent-l: 85%;
+}
+
+.predefined-accent-color.accent-wine {
+    --accent: var(--wine);
+    --accent-h: 353;
+    --accent-s: 42%;
+    --accent-l: 32%;
+}
+
+.predefined-accent-color.accent-slate {
+    --accent: var(--slate);
+    --accent-h: 211;
+    --accent-s: 10%;
+    --accent-l: 56%;
+}
+
+/* Text on accent */
+.accent-mustard,
+.accent-turquoise,
+.accent-bubblegum {
+    --text-on-accent: #353132;
+}
+
+.colorful-tooltips.accent-turquoise .tooltip,
+.colorful-tooltips.accent-mustard .tooltip,
+.colorful-tooltips.accent-bubblegum .tooltip,
+.colorful-tooltips.accent-pumpkin .tooltip {
+    color: var(--text-on-accent);
+}
+
+/* Accent color + Style Settings - Message override */
+.predefined-accent-color .mod-settings .vertical-tab-content>.setting-item:nth-child(2)>.setting-item-control>input[type=color] {
+    visibility: hidden;
+    width: 12rem;
+}
+
+.predefined-accent-color .mod-settings .vertical-tab-content>.setting-item:nth-child(2)>.setting-item-control .lucide-rotate-ccw {
+    display: none;
+}
+
+.predefined-accent-color .mod-settings .vertical-tab-content>.setting-item:nth-child(2)>.setting-item-control>input[type=color]::before {
+    visibility: visible;
+    content: "Open the Style Settings plugin to pick your accent colors.";
+    color: var(--text-error);
+    font-size: var(--font-ui-smaller);
+}
+
+/* INTERFACE ---------------------*/
+/* Borders */
+.border-invisible {
+    --divider-color: transparent;
+}
+
+.border-invisible .workspace-ribbon.mod-left:before {
+    border-bottom-color: var(--background-secondary);
+}
+
+.border-visible .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+    border-right: 1px solid var(--divider-color);
+    box-shadow: var(--tab-stacked-shadow);
+}
+
+.border-invisible .setting-item {
+    border-top: none;
+}
+
+/* File Explorer */
+.nav-buttons-container {
+    justify-content: flex-start;
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+.nav-files-container {
+    margin-left: .2em;
+    margin-right: .5em;
+}
+
+.nav-file-title .nav-file-tag {
+    order: 1;
+    margin: 0;
+}
+
+.nav-file-title .nav-file-title-content {
+    order: 2;
+}
+
+.nav-file-title {
+    gap: .5em;
+}
+
+.nav-file-title-content {
+    color: var(--text-faint);
+}
+
+.nav-folder-title {
+    color: var(--text-muted);
+}
+
+.nav-file-title.is-active .nav-file-title-content,
+.nav-file-title:hover .nav-file-title-content {
+    color: var(--text-muted)
+}
+
+.nav-folder-collapse-indicator>svg {
+    stroke: var(--text-muted);
+}
+
+.collapse-icon svg.svg-icon {
+    stroke-width: 2px;
+}
+
+.nav-folder-children {
+    display: flex;
+    flex-direction: column;
+    gap: .1em;
+}
+
+/* File Explorer - Wrap titles */
+.wrap-titles {
+    --nav-item-white-space: wrap;
+}
+
+.wrap-titles .nav-file-title .nav-file-tag {
+    align-self: flex-start;
+    margin-top: .2em;
+}
+
+/* File Explorer - Vault name */
+.nav-folder.mod-root>.nav-folder-title {
+    text-transform: uppercase;
+    color: var(--text-faint);
+    font-size: .8em;
+    padding-bottom: 1em;
+    padding-top: .5em;
+}
+
+/* Vault name - Hider */
+.hider-vault .nav-folder.mod-root>.nav-folder-title {
+    padding: 0;
+}
+
+/* Header */
+.view-header-title-container {
+	opacity: 0;
+	transition: opacity .2s ease-in-out
+}
+
+.view-header-title-container:focus-within {
+	opacity: 1;
+	transition: opacity .2s ease-in-out
+}
+
+.view-header:hover .view-header-title-container,
+.workspace-tab-header-container:hover+.workspace-tab-container .view-header-title-container {
+	opacity: 1;
+	transition: opacity .2s ease-in-out
+}
+
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    padding-top: .2em;
+}
+
+.view-header-title-parent {
+    color: var(--text-faint);
+}
+
+.view-header-title {
+    color: var(--text-normal);
+}
+
+.workspace-tab-header-inner-close-button[aria-label="Close"]>svg {
+    stroke: var(--text-faint);
+}
+
+.workspace-tab-header-inner-close-button[aria-label="Close"]:hover>svg {
+    stroke: var(--text-muted);
+}
+
+/* Tooltips */
+.tooltip .tooltip-arrow,
+.tooltip.mod-right .tooltip-arrow,
+.tooltip.mod-left .tooltip-arrow,
+.tooltip.mod-top .tooltip-arrow {
+    border-color: transparent;
+}
+
+.colorful-tooltips .tooltip {
+    background-color: var(--color-accent);
+}
+
+/* Buttons */
+button:not(.clickable-icon) {
+    border: 1.5px solid var(--background-modifier-border);
+}
+
+select,
+.dropdown {
+    border: 2px solid var(--background-modifier-border);
+}
+
+/* Side dock */
+.side-dock-actions {
+    margin-top: .3em;
+    gap: .6em;
+}
+
+/* EDITOR --------------- */
+/* Hide note title */
+.hide-note-title .inline-title {
+    display: none;
+}
+
+.active-line-highlight .cm-active.cm-line {
+    background-color: rgb(var(--accent), .1);
+    border-radius: 3px;
+}
+
+/* Headings */
+.h2-underline h2,
+.h2-underline .markdown-rendered h2,
+.h2-underline .HyperMD-header-2.cm-line {
+    border-bottom: 2px solid var(--h2-color);
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.h3-italics h3,
+.h3-italics .markdown-rendered h3,
+.h3-italics .HyperMD-header-3,
+.h3-italics .cm-header-3 {
+    font-style: italic;
+}
+
+.h5-uppercase h5,
+.h5-uppercase .markdown-rendered h5,
+.h5-uppercase .HyperMD-header-5,
+.h5-uppercase .cm-header-5 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.h6-uppercase h6,
+.h6-uppercase .markdown-rendered h6,
+.h6-uppercase .HyperMD-header-6,
+.h6-uppercase .cm-header-6 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Checkboxes */
+.markdown-preview-view ul>li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+    text-decoration: none;
+    color: var(--text-faint);
+}
+
+/* Bold text */
+body strong,
+body span.cm-strong {
+    color: var(--strong-color);
+}
+
+body.bold-underline strong,
+body.bold-underline span.cm-strong {
+    border-bottom: 5.5px solid var(--bold-underline-color);
+}
+
+/* Italic text */
+body em,
+body span.cm-em {
+    color: var(--em-color);
+}
+
+body.em-underline em,
+body.em-underline span.cm-em {
+    border-bottom: 5.5px solid var(--italic-underline-color);
+}
+
+/* Highlight */
+.cm-highlight,
+mark {
+    border-radius: 5px;
+    padding: .1em .4em;
+}
+
+/* KANBAN */
+/* Kanban - Checkboxes */
+.kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
+    filter: none;
+}
+
+.kanban-plugin__lane-form-wrapper {
+    border-color: var(--text-accent);
+}
+
+.kanban-plugin__item-prefix-button-wrapper>input[type=checkbox]:checked:after {
+    -webkit-mask-position: 30% 40%;
+}
+
+/* Kanban - Board */
+.kanban-plugin {
+    --dot-color: hsl(0 0% 40% / 25%);
+    --dot-spacing: 15px;
+    --dot-size: .8px;
+}
+
+.kanban-plugin__board {
+    background-image: radial-gradient(circle,
+            var(--dot-color) var(--dot-size),
+            transparent var(--dot-size));
+    border-top: var(--thin-border);
+    background-size: var(--dot-spacing) var(--dot-spacing);
+    background-attachment: local;
+}
+
+/* Kanban - Lists */
+.kanban-plugin__item {
+    border: 1.5px solid var(--background-modifier-border);
+}
+
+.kanban-plugin__lane-items>div {
+    margin-top: .6em;
+}
+
+.kanban-plugin__item-button-wrapper button:not(.clickable-icon) {
+    box-shadow: none;
+    border: 1.5px solid var(--background-modifier-border);
+}
+
+.kanban-plugin__item-button-wrapper button:not(.clickable-icon):hover {
+    border: 1.5px solid var(--accent);
+}
+
+/* Kanban - Add list section */
+.kanban-plugin__lane-input-actions>button {
+    color: var(--text-normal);
+    background-color: var(--interactive-normal);
+}
+
+.kanban-plugin__lane-input-actions .kanban-plugin__lane-action-add:hover {
+    color: var(--text-on-accent);
+}
+
+.kanban-plugin__lane-input-actions .kanban-plugin__lane-action-cancel:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* CALENDAR */
+.calendar thead {
+    border-bottom: 2px solid var(--background-modifier-border);
+}
+
+.calendar thead>tr>th {
+    padding-bottom: 1.5em;
+}
+
+.calendar tbody>tr:first-child>td {
+    padding-top: .8em;
+}
+
+.day.has-note>.dot-container>svg {
+    fill: var(--text-accent);
+}
+
+.day.has-note.active {
+    background-color: var(--background-modifier-border-hover);
+    color: var(--text-normal);
+}
+
+.day.has-note.active:hover {
+    color: var(--text-on-accent);
+}
+
+.day.has-note.active:hover>.dot-container>svg {
+    fill: var(--text-on-accent);
+}
+
+.day.has-note.active.today>.dot-container>svg {
+    fill: var(--text-on-accent);
+}
+
+.day.today {
+    font-weight: 600;
+}
+
+/* DATAVIEW */
+table.dataview th>span,
+.dataview.small-text {
+    font-size: var(--h6-size);
+    color: var(--text-faint);
+    font-weight: 500;
+}
+
+.markdown-preview-view th, .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th, .table-view-table>thead>tr>th {
+    padding: .3em 0;
+    border-color: var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block:hover {
+    box-shadow: none;
+}
+
+.table-view-table > tbody > tr:hover {
+    background-color: transparent !important;
+}
+
+.markdown-preview-view img, .markdown-rendered img {
+    border-radius: 5px;
+}
+
+/* PDF EXPORT */
+@media print {
+
+    .markdown-rendered h1,
+    .markdown-rendered h3,
+    p,
+    li,
+    .markdown-rendered strong,
+    .markdown-rendered em,
+    .markdown-rendered th,
+    .markdown-rendered td {
+        color: #353132;
+    }
+
+    .markdown-rendered h4 {
+        color: #878586;
+    }
+
+    .markdown-rendered h5,
+    .markdown-rendered h6 {
+        color: #878586;
+    }
+
+    .markdown-rendered pre,
+    .markdown-rendered code {
+        background-color: var(--color-base-20);
+    }
+}
+
+/* @settings
+name: Jotter
+id: jotter
+settings:
+    -
+        id: interface
+        title: Interface
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: wrap-titles
+        title: Wrap titles
+        title.fr: Explorateur de fichiers
+        description: Show the full name of files in the explorer (no ellipsis)
+        description.fr: Montrer les noms complets des fichiers dans l'explorateur (pas d'ellipses)
+        type: class-toggle
+        default: false
+    -
+        id: border_style
+        title: Border style
+        title.fr: Bordures
+        type: class-select
+        allowEmpty: false
+        default: border-visible
+        options: 
+            - 
+                label: Invisible
+                value: border-invisible
+            - 
+                label: Visible
+                value: border-visible
+    -    
+        id: colorful-tooltips
+        title: Colorful tooltips
+        title.fr: Infobulles colorées
+        description: When enabled, tooltips will have the same background color as your accent color
+        description.fr: Activer pour que les infobulles soient de la même couleur que la couleur d'accentuation
+        type: class-toggle
+        default: true
+    -
+        id: color-scheme
+        title: Additional color themes
+        title.fr: Palettes de couleurs
+        type: class-select
+        allowEmpty: false
+        default: ct-jotter        
+        options:
+            -     
+                label: Jotter
+                value: ct-jotter
+            -
+                label: Reporter
+                value: ct-reporter
+            - 
+                label: Explorer
+                value: ct-explorer        
+            -
+                label: Keeper
+                value: ct-keeper
+            -
+                label: Undercover
+                value: ct-undercover
+            -
+                label: Obsidian
+                value: ct-obsidian
+    -
+        id: accent-colors
+        title: Accent Colors
+        title.fr: Couleurs d'accentuation
+        type: heading
+        level: 2
+        collapsed: true
+    -  
+        id: predefined-accent-color
+        title: Enable predefined accent colors
+        title.fr: Activer les couleurs d'accentuations prédéfinies
+        description: Enable to pick your accent color from the following list (when disabled, you'll be able to pick your accent color from the Appearance tab, as usual)
+        description.fr: Activer pour pouvoir choisir sa couleur d'accentuation depuis la liste ci-dessous (quand désactivé, vous pourrez choisir votre couleur dans la section Apparence, comme d'habitude)
+        type: class-toggle
+        default: true
+    -
+        id: predefined-accent-colors
+        title: Accent colors
+        title.fr: Couleurs prédéfinies
+        description: Handpicked accent colors you can choose from
+        description.fr: Une liste de couleurs que vous pouvez utiliser pour vos accentuations
+        type: class-select
+        allowEmpty: false
+        default: accent-ultramarine
+        options:
+            - 
+                label: Rust
+                value: accent-rust
+            - 
+                label: Vermilion
+                value: accent-vermilion
+            - 
+                label: Pumpkin
+                value: accent-pumpkin
+            - 
+                label: Mustard
+                value: accent-mustard
+            - 
+                label: Jade
+                value: accent-jade
+            - 
+                label: Forest
+                value: accent-forest
+            - 
+                label: Turquoise
+                value: accent-turquoise
+            - 
+                label: Ultramarine
+                value: accent-ultramarine
+            - 
+                label: Denim
+                value: accent-denim
+            - 
+                label: Mauve
+                value: accent-mauve
+            -  
+                label: Wine
+                value: accent-wine
+            -  
+                label: Bubblegum
+                value: accent-bubblegum
+            -
+                label: Slate
+                value: accent-slate
+    -
+        id: editor
+        title: Editor
+        title.fr: Editeur
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: active-line-highlight
+        title: Active line highlight
+        title.fr: Surligner la ligne active
+        type: class-toggle
+        default: false   
+    -
+        id: hide-note-title
+        title: Hide note title
+        title.fr: Cacher le titre du document dans l'éditeur
+        type: class-toggle
+        default: false
+    -
+        id: heading
+        title: Headings
+        title.fr: Titres
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: styling-headings
+        title: Styling
+        title.fr: Style
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: H2 underline
+        title.fr: Soulignement des H2
+        id: h2-underline
+        description: Toggle H2 underline
+        description.fr: Activer ou désactiver le soulignement
+        type: class-toggle
+        default: false
+    - 
+        title: H3 italics
+        title.fr: Italique des H3
+        id: h3-italics
+        description: Toggle H3 italics
+        description.fr: Activer ou désactiver l'italique
+        type: class-toggle
+        default: true
+    -         
+        title: H5 uppercase
+        title.fr: Majuscules des H5
+        id: h5-uppercase
+        description: Toggle H5 uppercase
+        description.fr: Activer ou désactiver les majuscules
+        type: class-toggle
+        default: true
+    -         
+        title: H6 uppercase
+        title.fr: Majuscules des H6
+        id: h6-uppercase
+        description: Toggle H6 uppercase
+        description.fr: Activer ou désactiver les majuscules
+        type: class-toggle
+        default: true
+    -
+        id: colors-headings
+        title: Colors
+        title.fr: Couleurs
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: H1 color
+        title.fr: Couleur H1
+        id: h1-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        title: H2 color
+        title.fr: Couleur H2
+        id: h2-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        title: H3 color
+        title.fr: Couleur H3
+        id: h3-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        title: H4 color
+        title.fr: Couleur H4
+        id: h4-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        title: H5 color
+        title.fr: Couleur H5
+        id: h5-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        title: H6 color
+        title.fr: Couleur H6
+        id: h6-color
+        type: variable-color
+        format: hex
+        default: '#'
+    -
+        id: sizes-headings
+        title: Size
+        title.fr: Taille
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: H1 size
+        title.fr: Taille H1
+        id: h1-size
+        type: variable-number
+        default: 1.3
+        format: em
+    -
+        title: H2 size
+        title.fr: Taille H2
+        id: h2-size
+        type: variable-number
+        default: 1.2
+        format: em
+    -
+        title: H3 size
+        title.fr: Taille H3
+        id: h3-size
+        type: variable-number
+        default: 1.1
+        format: em
+    -
+        title: H4 size
+        title.fr: Taille H4
+        id: h4-size
+        type: variable-number
+        default: 1
+        format: em
+    -
+        title: H5 size
+        title.fr: Taille H5
+        id: h5-size
+        type: variable-number
+        default: .85
+        format: em
+    -
+        title: H6 size
+        title.fr: Taille H6
+        id: h6-size
+        type: variable-number
+        default: .75
+        format: em
+    -
+        id: typography
+        title: Typography
+        title.fr: Typographie
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: italic-text-typography
+        title: Italic text
+        title.fr: Texte en italique
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: em-color
+        title: Italics color
+        title.fr: Couleur des italiques
+        type: variable-color
+        format: hex
+        default: '#' 
+    -
+        id: em-underline
+        title: Italics underline
+        title.fr: Soulignement des italiques
+        description: Toggle italics underline
+        description.fr: Activer ou désactiver le soulignement des textes en italiques
+        type: class-toggle
+        default: false
+    -
+        id: italic-underline-color
+        title: Italics underline color
+        title.fr: Couleur du soulignement
+        description: Change italics underline color
+        description.fr: Changer la couleur du soulignement
+        type: variable-color
+        format: hex
+        default: 'var(--yellow)' 
+    -
+        id: bold-text-typography
+        title: Bold text
+        title.fr: Texte en gras
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: strong-color
+        title: Bold font color
+        title.fr: Couleur texte gras
+        type: variable-color
+        format: hex
+        default: '#' 
+    -
+        id: bold-underline
+        title: Bold underline
+        title.fr: Soulignement texte gras
+        description: Toggle bold underline
+        description.fr: Activer ou désactiver le soulignement des texte en gras
+        type: class-toggle
+        default: true
+    -
+        id: bold-underline-color
+        title: Bold underline color
+        title.fr: Couleur du soulignement
+        description: Change bold underline color (dy default, it is set to be the same as your accent color)
+        description.fr: Changer la couleur du soulignement (par défaut, la couleur sera la même que celle de la couleur d'accentuation)
+        type: variable-color
+        format: hex
+        default: 'var(--text-accent)'
+    -
+        id: custom-links
+        title: Hyperlinks
+        title.fr: Hyperliens
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: Internal links
+        title.fr: Liens internes
+        id: link-color
+        type: variable-color
+        format: hex
+        default: 'var(--text-accent)'
+    -
+        title: External links
+        title.fr: Liens externes
+        id: link-external-color
+        type: variable-color
+        format: hex
+        default: 'var(--text-accent)'
+*/

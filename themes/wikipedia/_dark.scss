@@ -1,0 +1,42 @@
+:root[saved-theme="dark"] {
+  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
+  --tab-gradient: linear-gradient(
+    to top,
+    var(--color-accent-2) 0px,
+    var(--color-accent-3) 0px,
+    var(--background-primary) 100%
+  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.5%));
+  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) - 4%));
+  --color-accent-3: hsla(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
+  --color-base-00: #1e1f21;
+  --color-base-10: #242629;
+  --color-base-20: #27282b;
+  --color-base-25: #2f3135;
+  --color-base-30: #35383d;
+  --color-base-35: #313539;
+  --color-base-40: rgb(50, 52, 60);
+  --color-base-50: rgb(142, 148, 157);
+  --color-base-60: rgb(179, 181, 193);
+  --color-base-70: #d0d4d9;
+  --h6-background: hsla(var(--accent-h), 35%, calc(var(--accent-l) + 10%), 15%);
+  --color-base-100: #d8dce3;
+  --background-secondary-alt: var(--color-base-10);
+  --background-modifier-border: #dae1ea31;
+  --link-color: hsl(calc(var(--accent-h) + 5), var(--accent-s), calc(var(--accent-l) + 15%));
+  --link-unresolved-color: hsl(
+    calc(var(--accent-h) - 5),
+    var(--accent-s),
+    calc(var(--accent-l) + 15%)
+  );
+  --link-external-color: hsl(
+    calc(var(--accent-h) + 20),
+    var(--accent-s),
+    calc(var(--accent-l) + 20%)
+  );
+  --link-external-color-hover: hsl(
+    calc(var(--accent-h) + 10),
+    var(--accent-s),
+    calc(var(--accent-l) + 3%)
+  );
+}

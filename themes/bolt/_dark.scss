@@ -1,0 +1,33 @@
+:root[saved-theme="dark"] {
+  --accent-h: 181 !important;
+  --accent-s: 80% !important;
+  --accent-l: 41% !important;
+  --primary: hsl(181, 80%, 41%);
+  --on-primary: #e2f0f0;
+  --primary-container: #2f8a8b;
+  --on-primary-container: #b4dcdd;
+  --upper-accent: var(--on-secondary);
+  --on-upper-accent: var(--secondary);
+  --lower-accent: var(--secondary-container);
+  --on-lower-accent: vaR(--on-secondary-container);
+  --primary-lighter: hsl(var(--accent-h), calc(var(--accent-s) - 2%), calc(var(--accent-l) + 5%));
+  --secondary: #b0cccc;
+  --on-secondary: #034747;
+  --secondary-container: #156f73;
+  --on-secondary-container: #cce8e8;
+  --tertiary: #b4c8e9;
+  --on-tertiary: #1d314c;
+  --tertiary-container: #354863;
+  --on-tertiary-container: #d4e3ff;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-container: #ffdad6;
+  --background: #0d1a1a;
+  --on-background: #e0e3e2;
+  --surface: #192e2e;
+  --on-surface: #e0e3e2;
+  --outline: #899392;
+  --surface-variant: #2f3f3f;
+  --on-surface-variant: #bec8c8;
+}

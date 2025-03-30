@@ -1,0 +1,932 @@
+* {
+    /* Disable all animations */
+    transition: none !important;
+	/* Change highlight color */
+	--text-highlight-bg: #006600;
+}
+
+/* ======================================== */
+/* Remove box-shadow on focus, but keep it for tree list item */
+/* ======================================== */
+* {
+    box-shadow: none !important;
+}
+
+.workspace-leaf.mod-active .tree-item-self.has-focus {
+    border-radius: var(--radius-s);
+    box-shadow: 0 0 0 2px var(--background-modifier-border-focus) !important;
+}
+/* ======================================== */
+
+body {
+    /* Disable font ligatures */
+    font-variant-ligatures: none;
+
+    /* Making headings same size as text */
+    --h1-line-height: var(--line-height-normal);
+    --h2-line-height: var(--line-height-normal);
+    --h3-line-height: var(--line-height-normal);
+    --h4-line-height: var(--line-height-normal);
+    --h5-line-height: var(--line-height-normal);
+    --h6-line-height: var(--line-height-normal);
+    --h1-size: 1em;
+    --h2-size: 1em;
+    --h3-size: 1em;
+    --h4-size: 1em;
+    --h5-size: 1em;
+    --h6-size: 1em;
+    --h1-weight: 600;
+    --h2-weight: 600;
+    --h3-weight: 600;
+    --h4-weight: 600;
+    --h5-weight: 600;
+    --h6-weight: 600;
+
+    /* Template colors */
+    --strict-color-0: #000000;
+    --strict-color-1: #101010;
+    --strict-color-2: #202020;
+    --strict-color-3: #303030;
+    --strict-color-4: #404040;
+    --strict-color-5: #505050;
+    --strict-color-6: #606060;
+    --strict-color-7: #707070;
+    --strict-color-8: #808080;
+    --strict-color-9: #909090;
+
+    /* Tab color */
+    --tab-background-active: var(--strict-color-1);
+
+    /* ======================================== */
+    /* Separator */
+    /* ======================================== */
+    /* Separator color */
+    --strict-color-separator: #404040;
+
+    /* Separator */
+	--strict-separator: 1px solid var(--strict-color-separator);
+
+    --tab-outline-color: var(--strict-color-separator);
+    --divider-color: var(--strict-color-separator);
+    --background-modifier-border: var(--strict-color-separator);
+    /* ======================================== */
+
+    /* ======================================== */
+    /* Code colors */
+    /* (I tried to imitate the VS Code colors) */
+    /* ======================================== */
+    --code-background: var(--strict-color-0);
+
+    --code-normal: #d4d4d4;
+    --code-comment: #6a9955;
+    --code-function: #dcdcaa;
+    --code-keyword: #c586c0;
+    --code-operator: #569cd6;
+    --code-property: var(--code-keyword);
+    --code-punctuation: #efde62;
+    --code-string: #ce9178;
+    --code-tag: var(--code-normal);
+    --code-value: #b5cea8;
+    /* ======================================== */
+
+    /* Disable program header colors change on focus */
+    --titlebar-background-focused: var(--titlebar-background);
+    --tab-text-color: var(--text-normal);
+    --tab-text-color-focused: var(--tab-text-color);
+
+    /* Scroller colors */
+    --scrollbar-bg: var(--strict-color-1);
+    --scrollbar-thumb-bg: var(--strict-color-4);
+    --scrollbar-active-thumb-bg: var(--strict-color-6);
+
+    /* ======================================== */
+    /* Removing some rounding */
+    /* ======================================== */
+    /* Modal windows */
+    --modal-radius: 0;
+    --radius-m: 0;
+    --radius-l: 0;
+
+    /* Some buttons */
+    --clickable-icon-radius: 0;
+    --radius-s: 0;
+
+    /* Inputs */
+    --input-radius: 0;
+
+    /* Tabs */
+    --tab-radius-active: 0;
+    --tab-radius: 0;
+    --tab-curve: 0;
+
+    /* Status Bar */
+    --status-bar-radius: 0;
+
+    /* Properties */
+    --metadata-property-radius: 0;
+    /* ======================================== */
+
+    /* Paddings in editor */
+    --file-margins: 0;
+
+    /* Making app header compact */
+    --header-height: 32px;
+    --tab-width: 128px;
+
+	/* Decrease extra spacing from headers in reading view */
+	--heading-spacing: 16px;
+
+    /* Scrollbar width */
+    --sctric-scroller-width: 12px;
+
+    /* Make tags look like normal text */
+    --tag-size: var(--text-normal);
+    --tag-background: none;
+    --tag-padding-x: 0;
+    --tag-padding-y: 0;
+
+    /* Make code text same size as normal text */
+    --code-size: var(--font-text-size);
+
+    --ribbon-padding: 0;
+}
+
+/* ======================================== */
+/* Scroller */
+/* ======================================== */
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+    background-color: var(--scrollbar-bg);
+    width: var(--sctric-scroller-width);
+    border-left: var(--strict-separator);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+    /* Removing spaces around scroller */
+    border: 0;
+    /* Minimal height of scroller */
+    min-height: 16px;
+}
+
+/* Close button in modal windows */
+body:not(.native-scrollbars) .modal-close-button {
+    right: calc(var(--sctric-scroller-width) + 6px);
+}
+
+/* Hide scroller when don't needed */
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-preview-view {
+	scrollbar-gutter: auto;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Status Bar */
+/* ======================================== */
+.status-bar {
+    /* Remove padding in Status Bar */
+    padding: 0;
+    border-right: var(--strict-separator);
+    border-bottom: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Context Menu */
+/* ======================================== */
+.menu {
+    /* Remove padding in Context Menu */
+    padding: 0;
+    border: var(--strict-separator);
+}
+
+.menu-separator {
+    margin: 0;
+    border-bottom: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Some other settings for UI */
+/* ======================================== */
+input, textarea {
+    --background-modifier-form-field: var(--strict-color-1);
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+    border-bottom: var(--strict-separator);
+}
+
+.workspace-leaf-content .view-content {
+    padding: 4px;
+}
+
+.nav-header {
+    padding: 0;
+}
+
+.nav-files-container {
+    padding: 0;
+}
+
+.workspace-tab-header-container  {
+    padding-left: 0 !important;
+    padding-right: 0;
+}
+
+.mod-left-split .workspace-tab-header-container-inner, .mod-right-split .workspace-tab-header-container-inner {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.side-dock-settings .side-dock-ribbon-action, .side-dock-actions .side-dock-ribbon-action {
+    margin: 0;
+    height: var(--ribbon-width);
+}
+/* ======================================== */
+
+/* Make file tree more compact */
+.tree-item-self {
+    padding: 2px 0px 2px 20px !important;
+}
+
+/* ======================================== */
+/* App ribbon */
+/* ======================================== */
+/* Remove gap between ribbon buttons */
+.side-dock-settings, .side-dock-actions {
+    gap: 0;
+}
+
+.nav-buttons-container {
+    /* Remove gap between ribbon buttons */
+    gap: 0;
+
+    /* Align hight with file header */
+    /* height: var(--header-height); */
+    height: 31px;
+
+    border-bottom: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Inline title */
+/* ======================================== */
+.view-header {
+    /* Remove left and right paddings from inline header */
+    padding: 0;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Inline title - Left side buttons */
+/* ======================================== */
+.view-header-nav-buttons {
+    /* Remove extra paddings around buttons */
+    align-items: normal;
+    /* Makes buttons bigger */
+    --icon-size: var(--icon-m);
+}
+
+.view-header-left {
+    /* Remove extra paddings around buttons */
+    align-items: normal;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Inline title - Right side buttons */
+/* ======================================== */
+.view-actions {
+    /* Remove extra paddings around buttons */
+    align-items: normal;
+    /* Makes buttons bigger */
+    --icon-size: var(--icon-m);
+}
+
+.view-action:not(:last-child) {
+    /* Remove space between buttons */
+    margin-right: 0;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* YAML properties */
+/* ======================================== */
+.metadata-container {
+    /* Remove padding */
+    --metadata-padding: 0 !important;
+
+    /* Add all borders */
+    border: var(--strict-separator);
+
+    /* Add margin after YAML properties */
+    margin-bottom: var(--file-folding-offset) !important;
+}
+
+/* Remove padding */
+.markdown-source-view .metadata-container, .markdown-preview-view .metadata-container {
+    transform: none !important;
+}
+
+.mod-header > .inline-title {
+    /* Add margin after inline title */
+    margin-bottom: var(--file-folding-offset) !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Tabs */
+/* ======================================== */
+.workspace-tab-header-tab-list {
+    margin-inline-end: 0;
+    padding: 0;
+    /* Remove extra paddings around buttons */
+    align-items: normal;
+}
+
+.workspace-tab-header-tab-list > .clickable-icon,
+.workspace-tab-header-new-tab > .clickable-icon {
+    width: 30px;
+}
+
+.workspace-tab-header-tab-list > .clickable-icon {
+    border-left: var(--strict-separator);
+}
+
+.workspace-tab-header-new-tab {
+    padding: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    /* Remove extra paddings around buttons */
+    align-items: normal;
+}
+
+/* Remove right padding after last tab */
+.mod-root .workspace-tab-header-container-inner {
+    padding: 0 !important;
+}
+
+/* Contrast color for close tab button */
+.workspace-tab-header-inner-close-button:hover {
+    background-color: var(--strict-color-1);
+}
+
+.mod-top-left-space {
+    border-right: var(--strict-separator);
+}
+
+.mod-top-right-space {
+    border-left: var(--strict-separator);
+}
+
+.workspace-tab-header-container-inner {
+    margin: 0;
+    padding: 1px 15px 0 0;
+}
+
+/* Make separator between tabs full height */
+.workspace .mod-root .workspace-tab-header-inner::after {
+    background-color: var(--strict-color-separator);
+    height: 100%;
+}
+
+.workspace .mod-root .workspace-tab-header {
+    padding: 0;
+}
+
+.mod-root .workspace-tab-header-container-inner {
+    padding: 0 8px 0 0;
+}
+
+/* Border above the app header */
+.app-container {
+    border: var(--strict-separator);
+}
+
+.titlebar-button {
+    border-top: var(--strict-separator);
+    border-right: var(--strict-separator);
+}
+
+/* Buttons in the right upper corner */
+.titlebar-button-container.mod-right {
+    border-left: var(--strict-separator);
+}
+
+.titlebar-button {
+    padding: 0 12px !important;
+}
+
+.workspace .mod-root .workspace-tab-header {
+	/* Limit tab max width */
+	max-width: 256px;
+	/* This enables scrolling */
+	flex: none !important;
+}
+
+.workspace-tab-header-inner {
+	/* Remove gap between tab header and close button */
+	gap: 0;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* File header */
+/* ======================================== */
+.view-header {
+    background-color: var(--strict-color-1) !important;
+    border-bottom: var(--strict-separator);
+}
+
+/* Turning off the strange gradient */
+.view-header-title-container:not(.mod-at-end):after {
+    background: none;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Inline title */
+/* ======================================== */
+.inline-title {
+    margin: 0;
+    padding: 4px 0 4px 8px;
+    height: var(--header-height);
+    background-color: var(--strict-color-1);
+    border-bottom: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Line numbers */
+/* ======================================== */
+/* Column with line numbers */
+.cm-lineNumbers {
+    border-right: var(--strict-separator);
+    background-color: var(--strict-color-1);
+    padding-right: 4px;
+}
+
+/* Vertical align each line number */
+.cm-lineNumbers > .cm-gutterElement {
+    padding: 0 2px 0 6px !important;
+    line-height: 20px !important;
+}
+
+/* Last line number */
+.ͼ1 .cm-gutter {
+    height: 100%;
+    border-bottom: 1px double var(--color-base-30);
+}
+
+/* Keep left padding for content when line numbers are hidden */
+.markdown-source-view.mod-cm6 .cm-gutters {
+	margin-inline-end: 0;
+}
+.cm-content {
+	padding-left: var(--file-folding-offset) !important;
+}
+.cm-content .cm-lineWrapping {
+	padding-left: 0 !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Padding in main area in view mode */
+/* (Make it the same as in the edit mode) */
+/* ======================================== */
+.markdown-preview-sizer {
+    padding: 0 var(--file-folding-offset) !important;
+}
+
+.mod-header > .inline-title {
+    margin-left: calc(-1 * var(--file-folding-offset));
+    margin-right: calc(-1 * var(--file-folding-offset));
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Content */
+/* ======================================== */
+/* Main area line height in edit and view mode */
+.cm-contentContainer, .markdown-preview-section {
+    line-height: 1.3 !important;
+}
+
+/* Padding in main area in edit mode */
+.cm-contentContainer {
+    padding-right: var(--file-folding-offset);
+}
+
+/* Titles in edit mode and in view mode */
+.HyperMD-header, h1, h2, h3, h4, h5, h6, .setting-item-heading {
+    border: var(--strict-separator);
+	padding: 0 var(--size-2-2) !important;
+}
+
+.setting-item-heading {
+	border-top: var(--strict-separator) !important;
+	border-bottom: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header {
+	margin: 0 calc(-1 * var(--size-2-2)) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0 !important;
+	width: 100%;
+}
+
+/* Color for headings */
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header, h1,h2,h3,h4,h5,h6,
+.setting-item-heading > .setting-item-info > .setting-item-name {
+    color: #00bb00 !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Text align */
+/* ======================================== */
+/* Main area */
+.cm-contentContainer {
+    text-align: justify;
+}
+
+/* View mode */
+.markdown-preview-sizer {
+    text-align: justify;
+}
+
+/* Code block and list item in edit mode */
+.HyperMD-codeblock, .HyperMD-list-line {
+    text-align: left;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Code block in edit mode */
+/* ======================================== */
+.HyperMD-codeblock {
+    border-left: var(--strict-separator);
+    border-right: var(--strict-separator);
+}
+
+.HyperMD-codeblock-begin {
+    border-top: var(--strict-separator);
+}
+
+/* Remove round corners in the first line of block of code */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.HyperMD-codeblock-end {
+    border-bottom: var(--strict-separator);
+}
+
+/* Remove round corners in the last line of block of code */
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+	padding: 0 var(--size-2-2) !important;
+	margin: 0 calc(-1 * var(--size-2-2)) !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Code block in view mode */
+/* ======================================== */
+pre {
+    border: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Copy code button */
+/* ======================================== */
+/* Copy code button in edit mode and in view mode */
+.copy-code-button, .code-block-flair {
+    /* Add border */
+    border: var(--strict-separator);
+    /* Reduce padding */
+    padding: 0 4px !important;
+}
+
+/* Button position in view mode */
+.copy-code-button, .code-block-flair {
+    margin: 0 !important;
+}
+
+/* Button position in edit mode */
+.markdown-source-view.mod-cm6 .code-block-flair {
+    top: 0px;
+    right: 0px;
+}
+
+/* Make copy button always displayed in view mode */
+.markdown-rendered pre:hover > button.copy-code-button,
+.markdown-rendered pre:not(:hover) > button.copy-code-button {
+    display: block;
+}
+
+/* Remove copy icon from view mode (it is empty anyway, since we insert text) */
+.markdown-rendered pre:hover > button.copy-code-button > svg,
+.markdown-rendered pre:not(:hover) > button.copy-code-button > svg {
+    display: none;
+}
+
+/* Make copy button for usual text in edit mode same height as others */
+/* (I didn't find a way to replace it with "Text" label in edit mode) */
+.markdown-source-view.mod-cm6 .code-block-flair > svg {
+    display: block;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Copy button text in view mode is just "Copy", so we replace it with language name itself */
+/* ======================================== */
+pre {
+    --language: "Text";
+}
+
+.language-css {
+    --language: "CSS";
+}
+
+.language-html {
+    --language: "HTML";
+}
+
+.language-xml {
+    --language: "XML";
+}
+
+.language-java {
+    --language: "Java";
+}
+
+.language-powershell {
+    --language: "PowerShell";
+}
+
+.language-bash {
+    --language: "bash";
+}
+
+.language-sh {
+    --language: "sh";
+}
+
+.language-fortran {
+    --language: "Fortran";
+}
+
+.language-vim {
+    --language: ".vimrc";
+}
+
+.language-markdown {
+    --language: "Markdown";
+}
+
+.language-sql {
+    --language: "SQL";
+}
+
+.language-dockerfile {
+    --language: "Dockerfile";
+}
+
+.language-latex {
+    --language: "LaTeX";
+}
+
+.language-lua {
+    --language: "Lua";
+}
+
+.language-csharp {
+    --language: "C#";
+}
+
+.language-cpp {
+    --language: "C++";
+}
+
+.language-c {
+    --language: "C";
+}
+
+.language-python {
+    --language: "Python";
+}
+
+.language-php {
+    --language: "PHP";
+}
+
+.language-groovy {
+    --language: "Groovy";
+}
+
+.language-nginx {
+    --language: "Nginx";
+}
+
+.language-yaml, .language-yml {
+	--language: "YAML";
+}
+
+.language-toml {
+	--language: "TOML";
+}
+
+.language-ini {
+	--language: "INI";
+}
+
+/* Remove original text */
+.copy-code-button {
+    text-indent: -9999px;
+    line-height: 0;
+}
+
+/* Add new text */
+.copy-code-button::after {
+    content: var(--language);
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Embed containers: Images */
+/* ======================================== */
+.image-embed {
+    /* Allows you to fix a strange image offset to the right of the link to it when there is an indent in front of the link */
+    display: block !important;
+}
+
+.image-embed img {
+    /* Limit the height of images (both in editing mode and in viewing mode, BUT not in viewing mode of the image itself) */
+    max-height: 300px !important;
+    /* Border for images */
+    border: var(--strict-separator);
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Embed containers: PDFs (no page specified) */
+/* ======================================== */
+/* Limit the height for PDF containers */
+.pdf-embed {
+	max-height: 1000px !important;
+	max-width: 1000px !important;
+}
+
+/* Hide edit code block button, when viewing PDF */
+.pdf-embed > .edit-block-button {
+	display: none !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Embed containers: PDFs (page specified) */
+/* ======================================== */
+/* Disable scrollbar */
+.pdf-embed[src*="#page="] > .pdf-container > .pdf-content-container > .pdf-viewer-container {
+	overflow: hidden;
+	/* Disable scrolling when clicking on top or bottom of the page (this also disables text-selection) */
+	pointer-events: none;
+}
+.pdf-embed[src*="#page="] > .pdf-container > .pdf-content-container > .pdf-viewer-container > .pdf-viewer > .page > .textLayer > span {
+	/* Enable back text selection */
+	pointer-events: all;
+}
+
+/* Different toolbar color */
+.pdf-embed[src*="#page="] > .pdf-toolbar {
+	background-color: #000000;
+}
+
+/* TODO: Add ability to resize container (from code below only decrease size working right now) */
+/*.pdf-embed[src*="#page="] {*/
+/*	resize: both;*/
+/*}*/
+/*.pdf-embed[src*="#page="]::-webkit-resizer {*/
+/*	background-color: green;*/
+/*	text-indent: -9999px;*/
+/*	line-height: 0; !* Collapse the original line *!*/
+/*}*/
+/*.pdf-embed[src*="#page="]::after {*/
+/*	content: "Resize ->";*/
+/*	text-indent: 0;*/
+/*	display: block;*/
+/*	line-height: initial; !* New content takes up original line height *!*/
+/*	text-align: right;*/
+/*	padding-right: 24px;*/
+/*}*/
+/* ======================================== */
+
+/* ======================================== */
+/* Tables */
+/* ======================================== */
+.markdown-rendered table {
+	/* Remove top margin */
+	margin-block-start: 0;
+}
+
+/* Always show table buttons in edit mode */
+.table-row-drag-handle,
+.table-col-drag-handle,
+.table-col-btn,
+.table-row-btn {
+	opacity: 1.0 !important;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Search panel */
+/* ======================================== */
+.document-search-container {
+    border-bottom: var(--strict-separator);
+    margin: 0;
+}
+/* ======================================== */
+
+/* ======================================== */
+/* Properties */
+/* ======================================== */
+.metadata-container {
+    border-bottom: var(--strict-separator);
+
+    /* More clear paddings */
+    margin-block-end: 0;
+    --metadata-padding: 8px 32px;
+}
+
+.metadata-properties-heading {
+    /* Remove extra margins */
+    margin-bottom: 0;
+}
+
+.metadata-container .metadata-add-button {
+    /* Remove extra margins */
+    margin-top: 0;
+}
+/* ======================================== */
+
+/* Remove borders around focused document */
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+	box-shadow: none !important;
+}
+
+/* Hand as cursor when hovering clickable elements */
+.markdown-source-view.mod-cm6 .code-block-flair,
+.markdown-rendered button.copy-code-button,
+.table-col-btn,
+.table-row-btn,
+.view-header-breadcrumb,
+.clickable-icon[aria-disabled="false"],
+.clickable-icon:not([aria-disabled]),
+.workspace-tab-header-inner,
+.workspace-tab-header-status-icon,
+.workspace-tab-header-inner-close-button,
+.tree-item-self.is-clickable,
+.search-input-clear-button {
+    /* Hand cursor on hover */
+    cursor: var(--cursor-link) !important;
+}
+
+/* ======================================== */
+/* Math */
+/* ======================================== */
+.math {
+	background-color: var(--code-background);
+	border-radius: var(--code-radius);
+	/* Imitates inline code */
+	padding: 0.1em 0.25em;
+}
+
+.math-block {
+	border: var(--strict-separator) !important;
+	font-size: large;
+	padding: 0 !important;
+}
+
+.MathJax {
+	padding: 12px 0 !important;
+}
+
+/* Remove extra empty line for math blocks in preview edit mode */
+.cm-s-obsidian .HyperMD-list-line.HyperMD-list-line-nobullet:has(+ .math-block > mjx-container) {
+    display: none;
+}
+/* ======================================== */

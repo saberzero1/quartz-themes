@@ -1,0 +1,53 @@
+/* Minimal - Resource */
+
+.theme-dark {
+
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+
+  --text-normal: #c0c1a1;
+  --text-muted: #DADADA; 
+  --text-faint: #DADADA;
+  --text-accent: #ffdf22;
+  --text-on-accent: #cdcd43;
+  
+  --italic-color: #fff6dd;
+  --bold-color: #EEEEEE;
+  --tag-color: #24cf00;
+  --code-normal: #fb6666;
+  --link-external-color: #bbcdff;
+  --text-selection: #678ba6;
+	
+  --h1-color: #6694e2;
+  --h2-color: #77ca61;
+  --h3-color: #e0b73d;
+  --h4-color: #da6fd5;
+  --h5-color: #94c0bd;
+  --h6-color: #f34545;
+	
+  --inline-title-color: #FFFFFF;
+  --tab-text-color-focused-active-current: #6694e2;
+  --icon-color-focused: #6694e2;
+  --icon-color-hover: #6694e2;
+  --nav-item-color-hover: #6694e2;
+  --nav-item-background-active: #393939;
+  --nav-file-tag: #f4ec9e;
+  --nav-indentation-guide-color: #5f6148;
+  --interactive-accent: #6f6f6f;
+  --scrollbar-thumb-bg: #3f3e3e;
+  --indentation-guide-color: #5f6148;
+  --indentation-guide-color-active: #808261;
+	
+  --table-header-background: #2a2a2a;
+  --table-row-alt-background: #141414;
+  
+}
+
+
+/* For more css snippets: https://github.com/zamsyt/obsidian-snippets/blob/main/Note%20color%20scheme.css */ 
+
+
+	
+	

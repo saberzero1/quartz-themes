@@ -1,0 +1,1043 @@
+/*********************************************************************
+A THEME MADE BY A COMPLETE NEW COMER TO CODING.
+SO CONTAINS MINI MINI SEGMENTS OF LEARNING. 
+
+****** INDEX  *****
+1. DEFAULT STRINGS (FONT FAMILY- COLOR-ACCENT-SIZES)
+2. BOLD
+3. ITALICS 
+3.1 CODE BLOCK
+4. HEADINGS
+5. EXTERNAL LINKS
+6. INTERNAL LINKS
+7. BLOCKQUOTE
+8. TAGS FORMATTING
+9. HR STYLES
+10. LEFT PANE NAVIGATION Icons/Colors/Fonts
+11. OUTLINER
+12. LIST
+13. IMAGE SIZE LIMITER (COURTESY --> BLUE TOPAZ THEME DEVELOPER
+14. FINAL TOUCHES TO SIDEBARS
+15. Tables
+16. NAV CONTAINER WIDTH
+**********************************************************************/
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(public/fonts/94f2f163d4b698242fef.otf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(public/fonts/367685b2ca6303dc3853.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(public/fonts/746a677fc34469759ede.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(public/fonts/450beda71fb8564202a0.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url(public/fonts/c39581384bcfe728af02.woff2);
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(public/fonts/b0b9c035692f884e8635.woff2);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(public/fonts/856e8f46fd911d2040c3.woff2);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(public/fonts/bdbbdeddfdfff17b0879.woff2);
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: url(public/fonts/70cc7ff27245e82ad414.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: url(public/fonts/454577c22304619db035.ttf);
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: url(public/fonts/52ac8f3034507f1d9e53.ttf);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: url(public/fonts/05b618077343fbbd92b7.ttf);
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Flow Circular';
+    src: url(public/fonts/853ff76f08786ae44ca0.woff);
+    font-display: swap;
+  }
+  :root {
+    --default-font: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    --mermaid-font: var(--default-font);
+    --reveal-font: var(--default-font);
+    --font-monospace: 'Source Code Pro', monospace;
+  }
+  .theme-dark {
+    --background-primary: #202020;
+    --background-primary-alt: #1a1a1a;
+    --background-secondary: #000000;
+    --background-secondary-alt: #020519;
+    --background-modifier-border: #333;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #197300;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: #7f6df2;
+    --text-accent-hover: #8875ff;
+    --text-normal: #dcddde;
+    --text-muted: #999;
+    --text-muted-rgb: 153, 153, 153;
+    --text-faint: #666;
+    --text-error: #ff3333;
+    --text-error-hover: #990000;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgba(23, 48, 77, 0.99);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #2a2a2a;
+    --interactive-hover: #303030;
+    --interactive-accent: #483699;
+    --interactive-accent-rgb: 72, 54, 153;
+    --interactive-accent-hover: #4d3ca6;
+    --interactive-success: #197300;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --highlight-mix-blend-mode: lighten;
+  }
+  .theme-light {
+    --background-primary: #ffffff;
+    --background-primary-alt: #f5f6f8;
+    --background-secondary: #f2f3f5;
+    --background-secondary-alt: #e3e5e8;
+    --background-modifier-border: #ddd;
+    --background-modifier-form-field: #fff;
+    --background-modifier-form-field-highlighted: #fff;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: #A4E7C3;
+    --background-modifier-error: #990000;
+    --background-modifier-error-rgb: 230, 135, 135;
+    --background-modifier-error-hover: #bb0000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: #705dcf;
+    --text-accent-hover: #7a6ae6;
+    --text-normal: #2e3338;
+    --text-muted: #888888;
+    --text-muted-rgb: 136, 136, 136;
+    --text-faint: #999999;
+    --text-error: #800000;
+    --text-error-hover: #990000;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgba(204, 230, 255, 0.99);
+    --text-on-accent: #f2f2f2;
+    --interactive-normal: #f2f3f5;
+    --interactive-hover: #e9e9e9;
+    --interactive-accent: #7b6cd9;
+    --interactive-accent-rgb: 123, 108, 217;
+    --interactive-accent-hover: #8273e6;
+    --interactive-success: #197300;
+    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+    --highlight-mix-blend-mode: darken;
+  }
+
+  /*88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+  8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+  88888888888888888888888888888888 Additional Formattings  8888888888888888888888888888888888888888888888888
+  8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+  8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+  8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+/************* BOLD in preview and editor ********************/
+.theme-dark strong, .theme-dark .cm-strong {
+    font-weight: 700;
+    color: lightcoral;
+  }
+
+/************* Italics ********************/
+
+  .theme-dark em, .cm-em {
+    color: #cea338;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .theme-light em, .cm-em {
+    color: brown;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+
+/* CODE BLOCK */
+
+.theme-light .markdown-preview-view code {
+  color: #000;
+  background-color: transparent;
+}
+
+.theme-dark .markdown-preview-view code {
+  color: white;
+}
+
+.markdown-preview-view pre {
+  padding: 6px 10px;
+  border-radius: 15px;
+  white-space: pre-wrap;
+  border: 1px solid #000;
+}
+
+
+.theme-dark .markdown-preview-view pre {
+  padding: 6px 10px;
+  border-radius: 15px;
+  white-space: pre-wrap;
+  border: 1px solid lightgray;
+}
+  
+/********************** HEADINGS ****************************/
+
+
+.HyperMD-header-1, .markdown-preview-section h1 {
+	color:white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700 ;
+  margin: 0.8em 0 0.2em 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+	text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  
+}
+
+.cm-header-1.cm-header-1.cm-header-1,
+.markdown-preview-view h1 {
+	font-size: 20px;
+}
+
+
+/*-------------------*/
+
+
+.cm-header-2.cm-header-2.cm-header-2,
+.markdown-preview-view h2 {
+	font-size: 18px;
+}
+
+
+.HyperMD-header-2, .markdown-preview-view h2 {
+	color:white;
+  background: radial-gradient(circle, rgba(9,9,121,1) 50%, rgba(0,104,255,1) 100%);
+	text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  margin: 0.8em 0 0.2em 0 ;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+/*-----------------*/
+
+.cm-header-3.cm-header-3.cm-header-3,
+.markdown-preview-view h3 {
+	  color:palevioletred;
+    font-family: var(--font-sans-serif) ;
+	  text-decoration: none;
+    font-size: 16px;
+    font-weight: 500 ;
+    margin: 0.8em 0 0.2em 0 ;
+    padding-bottom: 5px;
+}
+
+
+.markdown-preview-section h3,
+.HyperMD-header-3 {
+  border-bottom: 4px solid palevioletred;
+	border-left: 3px solid palevioletred;
+	border-right: 2px solid palevioletred;
+	border-top: 0.1em solid palevioletred;
+	border-radius: 8px;
+	padding-right:25px;
+	padding-left:5px;
+}
+
+/*-----------------*/
+
+.cm-header-4.cm-header-4.cm-header-4,
+.markdown-preview-view h4 {
+	font-size: 16px;
+}
+
+.markdown-preview-section h4,
+.HyperMD-header-4,
+.cm-header-4 {
+	color:CadetBlue;
+	padding-left:4px;
+    font-family: var(--font-sans-serif) ;
+    font-size: 16px;
+    margin: 0.8em 0 0.2em 0 ;
+    padding-bottom: 5px;
+}
+
+.markdown-preview-section h4,
+.HyperMD-header-4 {
+    border-bottom: 2px solid CadetBlue;
+	border-left: 4px solid CadetBlue;
+  border-right: 2px solid CadetBlue;
+  border-top: 1px solid CadetBlue;  
+	border-radius: 8px;
+	padding-right:25px;
+}
+
+
+
+/************ External Links ***********/
+
+.theme-dark .external-link {
+  color:blanchedalmond ;
+  font-size: 1.01em;
+  font-weight:500;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/As68C4R.png);
+  background-size: 30px;
+  padding:10px 2px 10px 35px;
+  background-position-y: 6px;
+  cursor: pointer;
+}
+
+.theme-light .external-link {
+  color:chocolate ;
+  font-size: 1.01em;
+  font-weight:500;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/As68C4R.png);
+  background-size: 30px;
+  padding:10px 2px 10px 35px;
+  background-position-y: 7px;
+  cursor: pointer;
+}
+
+
+.titlebar-button {
+  color: white;
+  background-color: gray;
+}
+
+/************ Internal Links ***********/
+
+.theme-dark .internal-link {
+  color:lightpink ;
+  font-size: 1.01em;
+  font-weight:500;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/fiGt6Vn.png);
+  background-size: 20px;
+  padding:10px 2px 10px 21px;
+  background-position-y: 11px;
+  cursor: pointer;
+}
+
+
+.theme-light .internal-link {
+  color:darkorchid ;
+  font-size: 1.01em;
+  font-weight:500;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/GjcGnQJ.png);
+  background-size: 20px;
+  padding:10px 2px 10px 21px;
+  background-position-y: 11px;
+  cursor: pointer;
+}
+
+
+
+
+/********* BlockQuote ***************/
+
+.theme-dark .markdown-preview-view blockquote {
+  border-radius: 0 20px 20px 0;
+  font-weight: 600;
+  border-top: 3px solid lightseagreen;
+  border-right: 3px solid lightseagreen;
+  border-bottom: 3px solid lightseagreen;
+  border-left:10px dotted lightseagreen;
+  padding: 10px 20px;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+}
+
+.theme-dark .HyperMD-quote.CodeMirror-line,
+.theme-dark .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  border-radius: 0 20px 20px 0;
+  font-weight: 600;
+  border-top: 3px solid lightseagreen;
+  border-right: 3px solid lightseagreen;
+  border-bottom: 3px solid lightseagreen;
+  border-left:10px dotted lightseagreen;
+  padding: 10px 20px;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+  color:white;
+
+}
+
+
+
+.theme-light .HyperMD-quote.CodeMirror-line,
+.theme-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  border-radius: 0 20px 20px 0;
+  font-weight: 600;
+  border-top: 3px solid chocolate;
+  border-right: 3px solid chocolate;
+  border-bottom: 3px solid chocolate;
+  border-left:10px dotted chocolate;
+  padding: 10px 20px;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+
+}
+
+.theme-light .markdown-preview-view blockquote {
+  border-radius: 0 20px 20px 0;
+  font-weight: 600;
+  border-top: 3px solid chocolate;
+  border-right: 3px solid chocolate;
+  border-bottom: 3px solid chocolate;
+  border-left:10px dotted chocolate;
+  padding: 10px 20px;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+}
+
+.theme-light blockquote:before {
+  font: 14px/20px italic Times, serif;
+	color:#cc9933;
+  font-weight: 600;
+  content: "“";
+  font-size: 60px;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p { display: inline; }
+
+.theme-dark blockquote:before {
+  font: 14px/20px italic Times, serif;
+	color:lightseagreen;
+  font-weight: 600;
+  content: "“";
+  font-size: 60px;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p { display: inline; }
+
+
+  
+/***************************************************************************
+****************************************************************************
+****************************************************************************
+ Tags Formattings (SOME SERIOUS LEARNING STARTS BELOW!)
+ ***************************************************************************
+ ***************************************************************************  
+***************************************************************************/
+  
+  .theme-light .tag {
+    background-color:lavenderblush ;
+    color: darkred ;
+    border: solid ;
+    font-size: 0.85em ;
+    font-weight: 600 ;
+    padding: 1px 8px ;
+    text-align: center ;
+    text-decoration: none ;
+    display: inline-block ;
+    margin: 0px 0px ;
+    cursor: pointer ;
+    border-radius: 14px ;
+  }
+  
+  .theme-light .tag:hover {
+      background-color:lavenderblush ;
+      color: darkred ;
+      border: solid ;
+      font-size: 0.85em ;
+      font-weight: 600 ;
+      padding: 1px 8px ;
+      text-align: center ;
+      text-decoration: none ;
+      display: inline-block ;
+      margin: 0px 0px ;
+      cursor: pointer ;
+      border-radius: 14px ;
+  
+  }
+  
+  .theme-light .tag:before {
+      background: darkred;
+      width: 10px;
+      height: 10px;
+      content: "";
+      display: inline-block;
+      border-radius: 20px;
+      box-shadow: inset 0px 2px 5px rgba(0,0,0,0.2);
+      margin: 0 5px 0 0;
+      transition: background 0.5s ease-out 200ms;
+  }
+  
+  .theme-light .tag:after {
+      background: darkred;
+      width: 10px;
+      height: 10px;
+      content: "";
+      display: none;
+      border-radius: 20px;
+      box-shadow: inset 0px 2px 5px rgba(0,0,0,0.2);
+      margin: 0 5px;
+  } 
+  
+  
+  .theme-light .tag:hover:before { 
+      background: lavenderblush;
+      width: 0px;
+      height: 0px;
+      border-radius: 0px;
+  }
+  
+  .theme-light .tag:hover:after { 
+      display: inline-block;
+  }
+  
+  .theme-dark .tag {
+    background-color: PaleTurquoise ;
+    color:  black;
+    border:2px solid;
+    border-color:turquoise;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 14px;
+  }
+  
+  
+  .theme-dark .tag:before {
+      background: #000;
+      width: 10px;
+      height: 10px;
+      content: "";
+      display: inline-block;
+      border-radius: 20px;
+      box-shadow: inset 0px 2px 5px rgba(0,0,0,0.2);
+      margin: 0 5px 0 0;
+      transition: background 0.5s ease-out 200ms;
+  }
+  
+  .theme-dark .tag:after {
+      background: #000;
+      width: 10px;
+      height: 10px;
+      content: "";
+      display: none;
+      border-radius: 20px;
+      box-shadow: inset 0px 2px 5px rgba(0,0,0,0.2);
+      margin: 0 5px;
+  }
+  
+   
+  .theme-dark .tag:hover {
+    background-color: PaleTurquoise ;
+    color:  black;
+    border:2px solid;
+    border-color:turquoise;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 14px;
+  }
+  
+  .theme-dark .tag:hover:before { 
+      background: PaleTurquoise ;
+      width: 0px;
+      height: 0px;
+      border-radius: 0px;
+  }
+  
+  .theme-dark .tag:hover:after { 
+      display: inline-block;
+  }
+
+
+  
+/*********** hr styles -- PREVIEW MODE **********/
+.markdown-preview-view.markdown-preview-view hr {
+    margin-block-start: 3em;
+    margin-block-end: 2em;
+    border: none;
+    height: 0;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to right, transparent, #30D5C8 , transparent);
+  }
+  
+  .markdown-preview-view.markdown-preview-view hr::after {
+    content: '🔰 '; 
+    display: inline-block; 
+    font-size: 18px;
+    position: absolute;
+    color: var(--text-sub-accent);
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    transform-origin: 5% 50%;
+    padding: 0.3rem;
+    color: #30D5C8;
+    background-color: var(--background-primary);
+  }
+  
+
+/****Left Pane Navugation Tree Icons/Colors/Fonts*******/
+
+.theme-light .nav-folder-children .nav-file-title-content:first-child::before { 
+    background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/GjcGnQJ.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding:10px 2px 10px 28px;
+    background-position-y: 7px;
+    content:"";
+  }
+
+  .theme-dark .nav-folder-children .nav-file-title-content:first-child::before { 
+    background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/fiGt6Vn.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding:10px 2px 10px 28px;
+    background-position-y: 7px;
+    content:"";
+  }
+
+  .nav-folder-children .nav-folder-title-content::before { 
+    background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/43eblf9.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding:10px 0px 10px 28px;
+    background-position-y: 7px;
+    content:"";
+  }
+
+  .theme-dark .nav-folder-children .nav-folder-title-content {
+    font-size: 13px;
+    font-weight: 500;
+    color: lightblue;
+  }
+
+  .theme-light .nav-folder-children .nav-folder-title-content {
+    font-size: 13px;
+    font-weight: 500;
+    color: darkblue;
+  }
+
+  .theme-dark .nav-folder-children .nav-file-title-content:first-child {
+    font-size: 12px;
+    color: thistle;
+    
+  }
+
+  .theme-light .nav-folder-children .nav-file-title-content:first-child {
+    font-size: 12px;
+    color: darkslateblue;
+    
+  }
+
+  /**** outliner for the outline ****/
+  /*Thanks to Shamama on Obsidian forum Meta Hacks post! */
+
+/* outliner for the file and folders */
+
+.nav-folder-children .nav-folder-children {
+  margin-left: 0px;
+  padding-left: 0;;
+  border-left: 2px solid deepskyblue;
+  border-radius: 12px;
+  transition:all 0.5s ease-in-out;
+}
+.nav-folder-children .nav-folder-children:hover {
+  border-left-color: orchid;
+}
+
+
+
+/*****------------- LIST----------------*****/ 
+/* Reduce indentation in bullet lists */
+ol {
+  padding-inline-start: 28px;
+  font-weight: 300;
+}
+
+/**************** Unordered List *****************/
+
+.theme-light ul {
+  padding-inline-start: 28px;
+  list-style-type: disc;
+  font-weight: 400;
+  list-style-type: square !important;
+  
+  border-left: 5px solid darkgoldenrod;
+  background-color: rgba(255, 235, 205, 0.4);
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.theme-dark ul {
+  padding-inline-start: 28px;
+  list-style-type: disc;
+  font-weight: 400;
+  list-style-type: square !important;
+  
+  border-left: 5px solid darkorchid;
+  background-color: rgba(138, 44, 226, 0.15) ;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+/**************** Ordered List *****************/
+
+.theme-dark ol {
+  padding-inline-start: 28px;
+  list-style-type: disc;
+  font-weight: 400;
+  list-style-type: decimal !important;
+  
+  border-left: 5px solid rgba(178, 173, 250, 0.541);
+  background-color:rgba(93, 153, 243, 0.185);
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.theme-light ol {
+  padding-inline-start: 28px;
+  list-style-type: disc;
+  font-weight: 400;
+  list-style-type: decimal !important;
+  
+  border-left: 5px solid rgba(250, 173, 173, 0.979);
+  background-color:rgba(243, 93, 93, 0.336);
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+/*********** IMAGE Size Limiter*********
+************ From BLUE TOPAZ ***********/
+/* Images : reduce displayed size of embedded files, zoom on hover */
+.markdown-preview-view img, .markdown-preview-view video {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  max-height: 300px;
+  max-width: 550px;
+  outline: 0px solid var(--text-accent);
+}
+.markdown-preview-view img:hover , .markdown-preview-view video:hover {
+  width: 100%;
+  height:100%;
+  max-width: min(100%, 80vw);
+  max-height: min(100%, 80vh);
+  outline: none;
+  cursor: zoom-in;
+}
+
+
+
+/*Side Bar Ribbon  */
+.theme-light .workspace-ribbon svg {
+  Color:black;
+}
+
+.theme-dark .workspace-ribbon svg {
+  Color:white;
+}
+
+
+
+
+
+/* SideBars Editing */
+
+ .view-header-title {
+   border: none;
+   padding: 0px 0px 2px 0px;
+   font-size: 19px;
+   line-height: 1.0;
+   margin: 10px 0;
+  }
+
+
+.theme-dark .nav-header {
+  background:url(https://i.imgur.com/YwbxeYD.gif); 
+  background-size: cover;
+}
+
+.theme-dark .nav-action-button {
+  color: white !important;
+}
+
+.theme-light .nav-action-button {
+  color: black !important;
+}
+
+.theme-light .nav-header {
+  background:url(https://i.imgur.com/lD8EOg4.gif); 
+  background-size: cover;
+}
+
+
+
+
+
+.nav-folder-title {
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.theme-light .nav-file-title{
+  margin-left: -20px;
+  color: #000000;
+  font-size: 12px;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 100%;
+}
+
+.theme-light .nav-folder-children .nav-folder-children {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-top: none;
+  margin-right: 5px;;
+  border-radius: 0px;
+}
+
+.theme-dark .nav-file-tag {
+  color: white;
+}
+
+.nav-file-tag {
+  color: white;
+  font-weight: 600;
+  background-color: #009b81;
+}
+
+
+.theme-dark .nav-file-title{
+  margin-left: -20px;
+  color: white;
+  font-size: 12px;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 100%;
+}
+
+/* Don't display collapse indicators */
+.nav-folder-collapse-indicator.collapse-icon {
+  display: none;
+}
+
+
+/* ALL SVG COLORS CHANGE AT ONCE! */
+
+.theme-light svg {
+  color: #000;
+}
+
+
+.theme-dark svg {
+  color: rgb(255, 255, 255);
+}
+
+/* Tables */
+
+
+.theme-light div.el-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  border-radius: 22px 22px ;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .theme-dark div.el-table {
+    margin: 25px;
+  }
+
+
+  .theme-light thead tr {
+    background-color: lightgreen;
+    color: #000;
+    text-align: left;
+  }
+
+  .theme-light .markdown-preview-view th,
+  .theme-light .markdown-preview-view td {
+    padding: 9px 10px;
+  }
+
+  .theme-light .markdown-preview-view tbody,
+  .theme-light .markdown-preview-view tr {
+    border-bottom: 2px solid lightgreen;
+  }
+
+
+  .theme-light .markdown-preview-view tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #000;
+  }
+
+  .theme-light .markdown-preview-view tbody:nth-of-type(2n+1) {
+    background-color: white;
+    color: #000;
+  }
+
+  .theme-light .markdown-preview-view tbody tr:last-of-type {
+    border-bottom: 5px solid lightgreen;
+  }
+
+  .markdown-preview-view table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+/* DARK THEME TABLES */
+
+.theme-dark div.el-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  border-radius: 22px 22px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(155, 155, 155, 0.288);
+  }
+
+  .theme-dark div.el-table {
+    margin: 25px;
+  }
+
+
+  .theme-dark thead tr {
+    color: white;
+    background-color: rgb(61, 6, 40);
+    text-align: left;
+  }
+
+  .theme-dark .markdown-preview-view th,
+  .theme-dark .markdown-preview-view td {
+    padding: 9px 10px;
+  }
+
+  .theme-dark .markdown-preview-view tbody,
+  .theme-dark .markdown-preview-view tr {
+    border-bottom: 2px solid rgb(61, 6, 40);
+  }
+
+
+  .theme-dark .markdown-preview-view tr:nth-of-type(even) {
+    background-color: rgb(61, 6, 40);
+    color: #f3f3f3;
+  }
+
+  .theme-dark .markdown-preview-view tbody:nth-of-type(2n+1) {
+    background-color: rgb(22, 13, 0);
+    color: white;
+  }
+
+  .theme-dark .markdown-preview-view tbody tr:last-of-type {
+    border-bottom: 5px solid rgb(61, 6, 40);
+  }
+
+
+
+/* NAV CONTAINER WIDTH */
+.nav-files-container { 
+  flex-grow: 1;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-bottom: 20px !important;
+}
+
+
+/******************************* That's it! ***************/

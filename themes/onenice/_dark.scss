@@ -1,0 +1,86 @@
+:root[saved-theme="dark"] {
+  --accent-h: 75;
+  --accent-s: 26%;
+  --accent-l: 48%;
+  --background-primary: #1f2329;
+  --background-primary-alt: #181b20;
+  --background-secondary: #181b20;
+  --background-secondary-alt: #181b20;
+  --background-accent: #000;
+  --background-modifier-border: #7a818e;
+  --background-modifier-form-field: #0000004d;
+  --background-modifier-form-field-highlighted: #00000038;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-success: #8ebd6b;
+  --background-modifier-error: #e55561;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #e55561;
+  --background-modifier-cover: #00000099;
+  --text-title-h1: #e55561;
+  --text-title-h2: #8ebd6b;
+  --text-title-h3: #cc9057;
+  --text-title-h4: #48b0bd;
+  --text-title-h5: #bf68d9;
+  --text-title-h6: #7a818e;
+  --text-accent: #61afef;
+  --text-accent-hover: #e55561;
+  --text-normal: #dcddde;
+  --text-muted: #a9abac;
+  --text-faint: #535965;
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: #8a9a5b;
+  --text-selection: #ffffff1a;
+  --text-on-accent: #dcddde;
+  --interactive-normal: #1f2329;
+  --interactive-hover: #e5556197;
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) - 10%)
+  );
+  --scrollbar-active-thumb-bg: #4fa6ed;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #20242f;
+  --panel-border-color: #535965;
+  --gray-1: #7a818e;
+  --gray-2: #7a818e;
+  --red: #e55561;
+  --orange: #cc9057;
+  --green: #8ebd6b;
+  --aqua: #48b0bd;
+  --purple: #bf68d9;
+  --blue: #4fa6ed;
+  --yellow: #e5c07b;
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 35%),
+    var(--accent-l),
+    0.06
+  );
+  --divider-color-hover: #4fa6ed;
+  --ribbon-background: var(--background-secondary-alt);
+  --drag-ghost-background: var(--background-secondary-alt);
+  --background-modifier-message: #a0a1a7;
+  --tab-outline-color: transparent;
+  --divider-color: transparent;
+  --prompt-border-color: var(--green);
+  --modal-border-color: var(--green);
+  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: var(--interactive-hover);
+  --checkbox-color: var(--green);
+  --checkbox-color-hover: var(--purple);
+  --nav-item-background-active: #4fa6ed;
+  --nav-item-color-active: #ffffff;
+  --tag-color: var(--purple);
+  --tag-background: var(--background-primary-alt);
+  --tag-color-hover: var(--purple);
+  --tag-background-hover: #8ebd6b;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 5px;
+  --tag-radius: 40px;
+  --inline-title-weight: var(--bold-weight);
+  --link-decoration: none;
+  --link-external-decoration: none;
+  --embed-padding: 0 0 0 var(--size-4-4);
+}

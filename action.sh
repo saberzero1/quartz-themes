@@ -58,15 +58,17 @@ echo -e "Theme ${BLUE}$*${NC} parsed to $(echo_info ${THEME})"
 
 echo "Validating theme..."
 
-GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/__CONVERTER/"
-GITHUB_OUTPUT_DIR="__OUTPUT/"
-GITHUB_OVERRIDE_DIR="__OVERRIDES/"
+GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/restructure/"
+GITHUB_OUTPUT_DIR="themes/"
+GITHUB_OVERRIDE_DIR="extras/themes/"
+GITHUB_EXTRAS_DIR="extras/"
 GITHUB_THEME_DIR="${THEME}/"
 CSS_INDEX_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_index.scss"
 CSS_FONT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_fonts.scss"
 CSS_DARK_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_dark.scss"
 CSS_LIGHT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_light.scss"
 CSS_OVERRIDE_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}_index.scss"
+CSS_EXTRAS_URL="${GITHUB_URL_BASE}${GITHUB_EXTRAS_DIR}"
 README_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}README.md"
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
@@ -89,7 +91,7 @@ rm -rf ${THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/overrides
+mkdir -p ${THEME_DIR}/extras
 
 echo "Fetching theme files..."
 
@@ -97,7 +99,11 @@ curl -s -S -o ${THEME_DIR}/_index.scss "${CSS_INDEX_URL}"
 curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
 curl -s -S -o ${THEME_DIR}/_dark.scss "${CSS_DARK_URL}"
 curl -s -S -o ${THEME_DIR}/_light.scss "${CSS_LIGHT_URL}"
-curl -s -S -o ${THEME_DIR}/overrides/_index.scss "${CSS_OVERRIDE_URL}"
+curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
+
+echo "Fetching extras..."
+
+curl -s -S -o ${THEME_DIR}/extras/hide-toggle.scss "${CSS_EXTRAS_URL}hide-toggle.scss"
 
 echo "Fetching README file..."
 
@@ -122,22 +128,24 @@ fi
 if test -f ${THEME_DIR}/_dark.scss; then
   echo_ok "_dark.scss exists"
 else
-  echo_err "_dark.scss missing" 1>&2
-  exit 1
+  echo_warn "_dark.scss missing" 1>&2
 fi
 
 if test -f ${THEME_DIR}/_light.scss; then
   echo_ok "_light.scss exists"
 else
-  echo_err "_light.scss missing" 1>&2
+  echo_warn "_light.scss missing" 1>&2
+fi
+
+if test -f ${THEME_DIR}/extras/_index.scss; then
+  echo_ok "extras/_index.scss exists"
+else
+  echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/overrides/_index.scss; then
-  echo_ok "overrides/_index.scss exists"
-else
-  echo_err "overrides/_index.scss missing" 1>&2
-  exit 1
+if test -f ${THEME_DIR}/extras/hide-toggle.scss; then
+  echo_ok "extras/hide-toggle.scss exists"
 fi
 
 if test -f ${THEME_DIR}/README.md; then

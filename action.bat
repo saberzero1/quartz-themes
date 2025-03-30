@@ -53,14 +53,16 @@ REM --- Validate Theme ---
 echo Validating theme '%THEME%'...
 
 set "GITHUB_URL_BASE=https://raw.githubusercontent.com/saberzero1/quartz-themes/master/__CONVERTER/"
-set "GITHUB_OUTPUT_DIR=__OUTPUT/"
-set "GITHUB_OVERRIDE_DIR=__OVERRIDES/"
+set "GITHUB_OUTPUT_DIR=themes/"
+set "GITHUB_OVERRIDE_DIR=extras/themes/"
+set "GITHUB_EXTRAS_DIR=extras/"
 set "GITHUB_THEME_DIR=%THEME%/"
 set "CSS_INDEX_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_index.scss"
 set "CSS_FONT_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_fonts.scss"
 set "CSS_DARK_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_dark.scss"
 set "CSS_LIGHT_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_light.scss"
 set "CSS_OVERRIDE_URL=%GITHUB_URL_BASE%%GITHUB_OVERRIDE_DIR%%GITHUB_THEME_DIR%_index.scss"
+set "CSS_EXTRAS_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%"
 set "README_URL=%GITHUB_URL_BASE%%GITHUB_OVERRIDE_DIR%%GITHUB_THEME_DIR%README.md"
 
 REM Check if theme exists using curl to get HTTP status code
@@ -105,7 +107,11 @@ curl -s -S -o "%TARGET_THEME_DIR%\_index.scss" "%CSS_INDEX_URL%" || ( >&2 echo [
 curl -s -S -o "%TARGET_THEME_DIR%\_fonts.scss" "%CSS_FONT_URL%" || ( >&2 echo [ERROR] Failed to download _fonts.scss & exit /b 1 )
 curl -s -S -o "%TARGET_THEME_DIR%\_dark.scss" "%CSS_DARK_URL%" || ( >&2 echo [ERROR] Failed to download _dark.scss & exit /b 1 )
 curl -s -S -o "%TARGET_THEME_DIR%\_light.scss" "%CSS_LIGHT_URL%" || ( >&2 echo [ERROR] Failed to download _light.scss & exit /b 1 )
-curl -s -S -o "%TARGET_THEME_DIR%\overrides\_index.scss" "%CSS_OVERRIDE_URL%" || ( >&2 echo [ERROR] Failed to download overrides/_index.scss & exit /b 1 )
+curl -s -S -o "%TARGET_THEME_DIR%\extras\_index.scss" "%CSS_OVERRIDE_URL%" || ( >&2 echo [ERROR] Failed to download overrides/_index.scss & exit /b 1 )
+echo.
+
+echo Fetching extras...
+curl -s -S -o "%TARGET_THEME_DIR%\extras\_hide-toggle.scss" "%CSS_EXTRAS_URL%"
 echo.
 
 echo Fetching README file...
@@ -118,7 +124,7 @@ if not exist "%TARGET_THEME_DIR%\_index.scss" ( >&2 echo [ERROR] _index.scss mis
 if not exist "%TARGET_THEME_DIR%\_fonts.scss" ( >&2 echo [ERROR] _fonts.scss missing & exit /b 1 ) else ( echo [OK] _fonts.scss exists )
 if not exist "%TARGET_THEME_DIR%\_dark.scss" ( >&2 echo [ERROR] _dark.scss missing & exit /b 1 ) else ( echo [OK] _dark.scss exists )
 if not exist "%TARGET_THEME_DIR%\_light.scss" ( >&2 echo [ERROR] _light.scss missing & exit /b 1 ) else ( echo [OK] _light.scss exists )
-if not exist "%TARGET_THEME_DIR%\overrides\_index.scss" ( >&2 echo [ERROR] overrides/_index.scss missing & exit /b 1 ) else ( echo [OK] overrides/_index.scss exists )
+if not exist "%TARGET_THEME_DIR%\extras\_index.scss" ( >&2 echo [ERROR] extras/_index.scss missing & exit /b 1 ) else ( echo [OK] extras/_index.scss exists )
 if not exist "%TARGET_THEME_DIR%\README.md" ( echo [WARN] README.md missing ) else ( echo [OK] README file exists )
 echo.
 

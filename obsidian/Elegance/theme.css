@@ -1,0 +1,4716 @@
+/* ---------------------------------------------------------------------------
+
+Elegance theme by: 
+    - Víctor Alonso Arribas (main)
+        "@Victologo" in GitHub
+        "Victologo" in YouTube (https://www.youtube.com/c/Victólogo)
+        "victologoyt" in Instagram (https://www.instagram.com/victologoyt/)
+    - David Catalá Merino
+        "x.akira_71.x" in instagram (https://www.instagram.com/x.akira_71.x/)
+
+Aesthetic UI replacement for Obsidian.
+
+Readme: (poner url de mi tema enlace a github)
+
+GitHub Repository:
+https://github.com/Victologo/elegance-theme
+
+-----------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2023 Víctor Alonso Arribas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-----------------------------------------------------------------------------
+
+Thanks to:
+    - Obsidian inspired themes
+        - Dracula for Obsidian (https://github.com/jarodise/Dracula-for-Obsidian.md): base theme used
+        - Bubble Space (https://github.com/Emrie-Candera/Bubble-Space-Theme): structure, code and snippets
+        - Blue Topaz (https://github.com/whyt-byte/Blue-Topaz_Obsidian-css): code and snippets
+        - Minimal theme (https://github.com/kepano/obsidian-minimal): code
+        - Danny Hatcher theme (https://dannyhatcher.gumroad.com/l/Wxkmy): code
+        - Bryan Jenks theme (https://bryanjenkstech.ck.page/d4ec0713d5): code
+        - Other themes
+    - People:
+        - Jose (Snifer@L4b's)
+    - Obsidian community (in general)I. GENERAL
+
+ --------------------------------------------------------------------------- */
+
+
+/* *==========  Table of Content (TOC) ========== 
+    *I. GENERAL
+    *II. WORKSPACE
+    *III. MARKDOWN
+    *IV. ADDITIONAL SNIPPETS
+    *V. PLUGIN STYLING
+    *Part VI. Other stuff
+*==================================================
+
+
+===================================================
+===================================================
+
+*I. GENERAL VALUES
+    ~ FONTS
+    ~ GENERAL COLOR VALUES
+    ~ ICONS
+*II. WORKSPACE
+    ~ WS A: Panes
+        @ A1 File Explorer
+            # A1.1 Vault Name 
+            # A1.2 File and Folder Name
+        @ A2 Note Pane
+            # A2.1 Note Titlebar
+            # A2.2 Document Search
+            # A2.3 Empty Note Pane
+        @ A5 Outline Pane
+            # A5.1 Relationship Lines
+            # A5.2 Hover Glow
+            # A5.3 Icon Styling
+            # A5.7 Box Styling
+        @ A6 Search, Backlinks and Outgoing Links Pane
+            # A6.1 Search Results
+            # A6.2 Backlinks in Document
+        @ A7 Starred Pane
+        @ A8 Graph Pane 
+                # A8.1 Graph Controls
+                # A8.2 Graph Colors
+                * Arrow
+                * Tag
+                * Attachment
+                * Fill
+                * Unresolved
+                * Circle
+                * Line
+                * Text
+        @ A9 Bookmarks
+    ~ WS B: Window
+        @ B1: Side Dock Ribbon (+ Mobile toolbar)
+            # B1.1 Collapsed
+            # B1.2 Expanded
+            # B1.3 Ribbon Icons
+        @ B2: Title Bar
+        @ B3: Status Bar
+        @ B4: Tabs
+        @ B5: Rendered notes
+        @ B6: Headers
+        @ B7: Transition between notes
+    ~ WS C: Settings
+        @ C1: Settings Modal
+            # C1.1 Header Group
+            # C1.2 Items
+        @ C2: Theme Store
+            # C2.1 Modal
+            # C2.2 Theme Items
+                ! C2.2.1 Text and Border
+                ! C2.2.2 Buttons
+                ! C2.2.3 Hover
+                ! C2.2.4 Selected
+        @ C3: Plugin Store
+            # C3.1 Modal
+            # C3.2 Text
+            # C3.3 Flair
+            # C3.4 Hover
+    ~ WS D: Other Elements
+        @ D1: Buttons
+        @ D2: Scrollbars
+        @ D3: Modals
+        @ D4: Sliders
+        @ D5: Notices
+        @ D6: Toggles
+        @ D7: Tooltips
+        @ D8: Dropdown
+        @ D9: Prompt
+        @ D10: Menu
+        @ D11: Suggestion
+        @ D12: Embedded notes
+        @ D13: Suggestion
+    ~ WS E: Common Values
+* III. MARKDOWN
+    ~ MARKDOWN A: Text Formatting
+        @ A1 Headers
+        @ A2 Bold
+        @ A3 Italics
+        @ A4 Links
+        @ A5 Inline Code
+        @ A6 Highlight
+        @ A7 Footnotes
+        @ A8 Comments
+        @ A9 Tags
+        @ A10 Regular Text
+    ~ MARKDOWN B: Lists
+        @ B1 Bulleted
+        @ B2 Numbered List
+        @ B3 Checklist
+            # B3.1 Reading Mode
+            # B3.2 Source Mode
+    ~ MARKDOWN C: Text Blocks
+        @ C1 Block Quotes
+            # C1.1 Reading
+            # C1.2 Source
+        @ C2 Table
+            # C2.1 Source
+            # C2.2 Reading
+        @ C3 Code Blocks
+    ~ MARKDOWN D: Others
+        @ D1 HR
+        @ D2 HTML Progress Pars
+        @ D3 Cite
+    ~ SPACE B: Workspace
+        @ SPACE B1: Panes
+            # B1.1 File Explorer
+                ! Vault Title
+                ! File and Folder Name
+                !...
+            # B1.2 Note Pane
+                ! Active Note Titlebar
+                ! Metadata Container
+                ! Document Search
+                ! Empty Note
+        @ SPACE B2: Window and Settings
+            # Side Dock Ribbon
+            # Settings Modal
+            # Theme Store Items
+        @ SPACE B3: Settings
+            ! Modal
+            ! Mini Gradient Text
+            ! Store Items
+        @ SPACE B4: Other Elements
+            # Buttons
+            # Scrollbar
+            # Slider
+            # Notice
+            # Toggle
+    ~ SPACE C: Markdown
+        @ SPACE C1: Text Formatting
+            # Basic Markdown
+            # Header Colors
+            # Tags
+        @ SPACE C2: Lists
+            # Bullets/Numbers
+            # Checklist
+        @ SPACE C3: Text Blocks
+            # Blockquote
+            # Table
+        @ SPACE C4: Others
+            # HR
+            # Progress Bars
+            # Cite
+        @ SPACE C5: Themed Loading Page
+    ~ SPACE E: Plugins
+        @ SPACE E1: Admonitions
+        @ SPACE E2: Icon Folder
+        @ SPACE E3: Calendar
+        @ SPACE E4: Day Planner
+        @ SPACE E5: Checklist
+* IV. ADDITIONAL SNIPPETS
+    ~ Snippet - Zoom images
+    ~ Snippet - Image caption / Figure Caption
+    ~ Snippet - Center images + Left or right function
+    ~ Snippet - Cards
+    ~ Snippet - Checboxes (minimal)
+    ~ Snippet - Images
+    ~ Snippet - Popover
+    ~ Snippet - MathJax
+    ~ Snippet - Active Block - Active Line - Guide line in editor
+    ~ Snippet - Metadata Menu
+    ~ Snippet - compact_table_dataview (before: called "Library"
+*V. PLUGIN STYLING
+    ~ Plugin - Banners
+    ~ Plugin - Calendar
+    ~ Plugin - Kanban
+    ~ Plugin - Excalidraw
+*VI. Other stuff
+
+===================================================
+===================================================
+
+
+
+/* ============== PART I. GENERAL VALUES ============== */
+
+/* ~~~~~~~~~~~~~ FONTS - Google Fonts ~~~~~~~~~~~~~ */
+
+/* @ FONTS A1: Google Fonts*/
+
+/* Import the font "Source Sans 3" from a google URL */
+/* No more available because of the new developer policy on 2024 (https://docs.obsidian.md/Themes/App+themes/Embed+fonts+and+images+in+your+theme) */
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');*/
+
+/* @ FONTS A2: Font Assignments*/
+
+:root{
+    --font-size-normal:              16px;
+    --font-size-code:                15px;
+    --font-size-side-dock:           15px;
+    --font-size-side-dock-title:     16px;
+    --font-size-status-bar:          13.75px;
+    --font-size-h1:                  23px;
+    --font-size-h2:                  22px;
+    --font-size-h3:                  21px;
+    --font-size-h4:                  20px;
+    --font-size-h5:                  19px;
+    --font-size-h6:                  18px;
+}
+
+
+/* ~~~~~~~~~~~~~ B: GENERAL COLOR VALUES  ~~~~~~~~~~~~~ */
+
+.theme-dark {
+    --background-primary: rgb(53, 56, 67);
+    --background-primary-alt: rgb(73, 76, 95);
+    --background-secondary: rgb(39, 38, 47);
+    --background-secondary-alt: rgb(40, 42, 54);
+    --background-modifier-border: rgb(102, 102, 102);
+    --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #50fa7b; /*no sure*/
+    --background-modifier-error: rgba(255, 0, 0, 0.5);
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: rgba(171, 0, 0, 0.306);
+    --background-modifier-cover: rgba(0, 0, 0, 0.68);
+    --background-accent: rgb(234, 117, 0);
+    --text-accent: rgb(248, 173, 93);
+    --text-accent-hover: rgb(139, 233, 253);
+    --text-normal: white;
+    --text-antinormal: black;
+    --text-muted: rgb(255, 255, 255);
+    --text-muted2: rgb(255, 255, 255);
+    --text-faint: rgb(255, 62, 151);
+    --text-highlight-bg: rgba(255, 225, 0, 0.258);
+    --text-error: rgba(214, 0, 46, 0.925);
+    --text-error-hover: rgba(255, 0, 0, 0.466);
+    --text-highlight-bg: rgba(255, 255, 0, 0.699);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgb(78, 91, 154); /* Chromium precess this color with alpha channel */
+    --text-on-accent: rgb(0, 0, 0);
+    --interactive-normal: #ffb86c;
+    --interactive-hover: rgb(255, 85, 85);
+    --interactive-accent: rgb(255, 184, 108);
+    --interactive-accent-hover: rgb(255, 85, 85);
+    --interactive-success: rgb(25, 115, 0);
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.5);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.22);
+    --external-link: rgb(255, 231, 194);
+    --pre-code: rgba(255, 255, 255, 0.064);
+
+    --quote-bg: rgba(77, 74, 75, 0.7);
+
+    --font-ui-smaller: 13.5px;
+    --font-ui-small: 14px;
+    --font-ui-medium: 15px;
+    --font-ui-large: 20px;
+
+    --list-indent: 1.9em;
+    --file-margins: 8px;
+    
+    --fbold: rgb(255, 251, 200);
+    --fitalic: rgb(255, 251, 200);
+}
+
+.theme-light {
+    --background-primary: rgb(255, 255, 255);
+    --background-primary-alt: rgb(230, 229, 224);
+    --background-secondary: rgb(247 245 244);
+    --background-secondary-alt: rgb(242, 242, 242);
+    --background-modifier-border: rgb(67, 67, 67);
+    --background-modifier-form-field: rgba(255, 255, 255, 0.2);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: rgb(80, 250, 123); /*no sure*/
+    --background-modifier-error:  rgba(255, 0, 0, 0.45);
+    --background-modifier-error-rgb: rgb(255, 0, 0);
+    --background-modifier-error-hover: rgba(255, 0, 0, 0.616);
+    --background-modifier-cover: rgba(0, 0, 0, 0.307);
+    --background-accent: rgb(255, 128, 0);
+    --text-accent:rgb(235, 118, 0);
+    --text-accent-hover: rgb(0, 184, 225);
+    --text-normal: rgb(6, 6, 6);
+    --text-antinormal: white;
+    --text-muted: rgb(0, 0, 0);
+    --text-muted2: rgb(123, 123, 123);
+    --text-faint: rgb(227, 0, 106);
+    --text-highlight-bg: rgba(255, 226, 0, 0.3);
+    --text-error: rgb(255, 0, 55);
+    --text-error-hover: rgb(232, 0, 0);
+    --text-highlight-bg: rgba(117, 0, 0, 0.293);
+    --text-highlight-bg-active: rgba(255, 255, 50, 0.4);
+    --text-selection: rgba(44, 77, 188, 0.2); /* Chromium precess this color with alpha channel */
+    --text-on-accent: rgb(255, 255, 255);
+    --interactive-normal: rgb(240, 128, 0);
+    --interactive-hover: rgb(255, 85, 85);
+    --interactive-accent: rgb(255, 184, 108);
+    --interactive-accent-hover: rgb(255, 85, 85);
+    --interactive-success: rgb(25, 115, 0);
+    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.422);
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.287);
+    --external-link: rgb(96, 123, 4);
+    --pre-code: rgba(0, 0, 0, 0.044);
+
+    --quote-bg: rgba(164, 164, 160, 0.15);
+
+    --font-ui-smaller: 13.5px;
+    --font-ui-small: 14px;
+    --font-ui-medium: 15px;
+    --font-ui-large: 20px;
+
+    --list-indent: 1.9em;
+    --file-margins: 4px;
+
+    --fbold: rgb(55, 0, 0);
+    --fitalic: rgb(55, 0, 0);
+}
+
+
+/* ~~~~~~~~~~~~~ C: Others  ~~~~~~~~~~~~~ */
+
+/* Change theme color of the button selected */
+
+.flair.mod-pop {
+    background-color: var(--interactive-accent);
+    color: black;
+    font-weight: bold;
+}
+
+/* normal text outside of headings and code of editor */
+
+.cm-s-obsidian, .mod-single-child .cm-s-obsidian {
+    font-family: var(--font-family-editor);
+    font-size: var(--font-size-normal);
+}
+
+/* normal text outside of headings and code of preview */
+
+.markdown-preview-view, .mod-single-child .markdown-preview-view {
+    font-family: var(--font-family-editor);
+    font-size: var(--font-size-normal);
+    padding-top: 0px;
+    padding-left: 1.7% !important;
+    padding-right: 1.7% !important;
+}
+
+.markdown-source-view.mod-cm6{
+    position: relative;
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* quick switcher*/
+
+input.prompt-input {
+    padding-left: 25px;
+}
+
+/* =================== PART II. WORKSPACE =================== */
+/* ~~~~~~~~~~~~~~~~~~ WS A: PANES  ~~~~~~~~~~~~~~~~~~ */
+
+/* @ WS A1: File Explorer*/
+    /* # A1.1 Vault Name*/
+
+    .nav-folder.mod-root > .nav-folder-title {
+        padding-left: 10px;
+        font-size: 17px;
+        color: var(--text-accent);
+        cursor: default;
+        opacity: 0.75;
+        justify-content: center;
+        font-weight: 600;
+        font-style: oblique;
+        font-family: calibri;
+    }
+
+    .nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title:hover {
+        opacity: 1;
+        border: 1px solid transparent !important;
+        color: var(--text-accent);
+        font-weight: "" ;
+        font-style: oblique;
+        font-family: calibri;
+    }
+
+    .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title:not(.is-active) {
+        border-left: transparent;
+    }
+
+    .nav-file-title:not([data-path="/"]), .nav-folder-title:not([data-path="/"]) {
+        /*max-width: -webkit-fill-available;*/
+        padding: inherit;
+        line-height: 19px;
+        border: var(--border-size) solid transparent;
+    }
+    
+    /* Folder and file icons */
+
+    .nav-folder-title-content {
+        overflow: inherit;
+    }
+
+    .nav-folder-title-content::before {
+        content: '📂';
+        padding: 0px 0px 0px 8px;
+        animation: cambiarOpacidad 5s infinite;
+    }
+
+    @keyframes cambiarOpacidad {
+        0% {
+        opacity: 1;
+        }
+        50% {
+        opacity: 0.6;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+
+
+    /*
+    .side-dock-settings, .side-dock-actions {
+        gap: 0px;
+    }
+    */
+    
+
+/* # A1.2 Folder and File Names*/
+        
+    .nav-folder-title:hover {
+        border: 1.5px solid var(--text-accent) !important;
+        border-radius: 5px !important;
+        transform: scale(1.02);
+        min-width: 100% !important;
+        font-weight: 650 !important;
+    }
+
+    .nav-file-title {
+        white-space: nowrap;
+        width: max-content;
+        min-width: 100%;
+        font-size: 15px;
+        left: 3.5px;
+    }
+
+    .nav-file-title:hover {
+        border: 1.5px solid var(--text-accent) !important;
+        border-radius: 7px !important;
+        max-width: max-content;
+        min-width: max-content;
+        transform: scale(1.02);
+        transition: 35ms ease-out;
+        min-width: 99% !important;
+        max-width: 1000% !important;
+        font-weight: bold !important;
+        color: var(--text-accent) !important;
+    }
+
+    .nav-folder-title {
+        display: flex;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        cursor: pointer;
+        line-height: 20px;
+        padding: 1px 0px 0 26px;
+        white-space: nowrap;
+        width: max-content;
+        min-width: 100%;
+        font-size: 15px;
+        font-weight: 650;
+    }
+    .nav-folder-title:hover {
+        color: var(--text-accent) !important;
+    }
+    
+    .tree-item-self .tree-item-icon.nav-folder-collapse-indicator {
+        margin-left: -8px;
+    }
+
+    .workspace-leaf-content[data-type=file-explorer] .nav-folder.mod-root > div.nav-folder-children {
+    padding: 10px 0px 5px 10px;
+    border-radius: 20px;
+    margin: 2px
+    }
+
+    .workspace-leaf.mod-active .view-header {
+        background: linear-gradient(
+            90deg,
+            transparent 60px,
+            transparent 61px,
+            transparent 100%);
+    }
+
+    .nav-folder {
+        margin: 0 -4.5px;
+        margin-right: 0px;
+        border-left: none;
+    }
+
+    .nav-file-title.is-active {
+        color: var(--text-normal);
+        font-weight: bold;
+    }
+
+    .nav-folder.mod-root .nav-folder > .nav-folder-children {     
+        border-left: 1.8px solid rgba(255, 208, 0, 0.403) !important;
+        padding-left: 20px;
+        margin-left: -0.5px;
+    }
+
+    body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+        box-shadow: 0 0 0 2px var(--text-accent);
+    }
+
+
+/* @ WS A2: Note Pane*/
+
+    /* # A2.1 Note Titlebar */
+
+    /* Title of the note in preview mode, above note */
+
+.inline-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    margin: 20px 0px 40px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid ;
+    border-bottom-width: 3px ; 
+    border-bottom: double;   
+
+    animation-name: example11;
+    animation-duration: 3.5s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example11 {
+    100% { /*color: var(--text-accent);*/ opacity: 1;}
+    50% { /*color: var(--text-accent);*/ opacity: 0.55;}
+    100% { /*color: var(--text-accent); */ opacity: 1;}
+}
+
+    /* # A2.2 Document Search */
+
+    input.document-search-input.mod-no-match {
+        background-color: var(--background-modifier-error);
+    }
+
+    input.document-search-input.mod-no-match:hover {
+        background-color: var(--background-modifier-error-hover);
+    }
+
+    .document-search-container button {
+        padding-top: 0px !important;
+        color: #3c3c3c;
+        font-family: var(--font-reg);
+        background-color: var(--interactive-normal) !important;
+    }
+
+    .document-search-container button:hover {
+        color: black !important;
+        background-color: var(--interactive-hover) !important;
+    }
+
+    .document-search-button:hover {
+        color: var(--text-accent);
+        background-color: black;
+    }
+
+    .search-input-container input {
+        display: block;
+        width: 100%;
+        padding: 5px 10px 5px 25px;
+        text-align: center;
+    }
+
+    .search-input-container:before {
+        top: calc((var(--input-height) - var(--search-icon-size))/2);
+        left: 5px;
+    }
+
+    .search-results-info .dropdown {
+        color: var(--text-faint) !important;
+    }
+    
+
+    /* Cross clear button */
+
+    .search-input-clear-button:hover {
+        color: rgb(159, 0, 0)
+    }
+
+    /* Active icon workspace */
+
+    .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+        color: var(--text-accent) !important;
+    }
+
+    .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+        color: var(--text-accent);
+    }
+
+        /* # A2.3 Empty Note Pane*/
+
+    .theme-dark .empty-state {
+        font-size: 20px;
+        animation-name: title_dark;
+        animation-duration: 3.5s ;
+        animation-iteration-count: infinite;
+    }
+    
+    .theme-light .empty-state {
+        font-size: 20px;
+        animation-name: title_light;
+        animation-duration: 3.5s ;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes title_dark {
+        0% {color:rgb(255 255 255 / 100%); background-color: var(--background-secondary);}
+        50% {color:rgb(255 255 255 / 70%); background-color:  var(--background-primary);}
+        100% {color:rgb(255 255 255 / 100%); background-color: var(--background-secondary);}
+    }
+    
+    @keyframes title_light {
+        0% {color:rgb(50 50 50 / 100%); background-color: var(--background-secondary);}
+        50% {color:rgb(50 50 50 / 60%); background-color:  var(--background-primary);}
+        100% {color:rgb(50 50 50 / 100%); background-color: var(--background-secondary);}
+    }
+    
+    .empty-state-action{
+        font-size: 17px;
+        line-height: 46px;
+        color: var(--text-accent);
+    }
+    
+    .empty-state-title {
+        padding-bottom: 33px;
+    }
+    
+    left-split .workspace-tab-header.is-active{
+        background-color: var(--text-accent) !important;
+    }
+    
+    /*
+    Symbol in background
+    from Shimmering Focus (https://github.com/chrisgrieser/shimmering-focus)
+    */
+    
+    
+    body{
+        --signature:"֎"
+    }
+    
+    .mod-root .empty-state-title::before {
+        content: var(--signature);
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: var(--text-accent);
+        transition: 200ms;
+        margin: -33px 0px 0px -80px !important;
+        position: absolute;
+        animation-name: text_accent_flash;
+        animation-duration: 3.5s ;
+        animation-iteration-count: infinite;
+    }
+    
+    .mod-root .empty-state-title::after {
+        content: var(--signature);
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: var(--text-accent);
+        transition: 200ms;
+        margin: -33px 0px 0px 9.5px;
+        position: absolute;
+        animation-name: text_accent_flash;
+        animation-duration: 3.5s ;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes text_accent_flash {
+        0% {color: var(--text-accent);}
+        50% {color:rgba(248, 173, 93, 0.482);}
+        0% {color:var(--text-accent);}
+    }
+
+/* @ WS A5: Outline Pane*/
+
+/* It does not work in v +1.4, I do not know how to create the color lines from a better view of the Outline (depending of the category of the header)*/
+
+
+/* Code modified from the Obsidian theme "Bubble Space" (https://github.com/Emrie-Candera/Bubble-Space-Theme) */
+
+    /* # A5.1 Size of the text */
+        
+    .workspace-leaf-content[data-type=outline] .tree-item-self .tree-item-inner {
+        font-size: 15px;
+    }
+
+    /* # A5.2 Relationship Lines*/
+
+    .theme-dark {
+        --bg-green2: rgb(32, 225, 180);
+        --bg-blue2: rgb(29, 173, 226);
+        --bg-purple2: rgb(180, 37, 252);
+        --bg-magenta2: rgb(249, 75, 142);
+        --bg-orange2: rgb(255, 145, 18);
+    }
+    
+    .theme-light {
+        --bg-green2: rgba(0, 185, 142, 0.905);
+        --bg-blue2: rgba(1, 149, 203, 0.847);
+        --bg-purple2: rgba(150, 8, 220, 0.80);
+        --bg-magenta2: rgba(220, 10, 90, 0.85);
+        --bg-orange2: rgba(255, 132, 0, 0.85);
+    }
+
+/*    .outline .tree-item >.tree-item-children .tree-item {
+/*        border-left-width: 1.7px;
+/*        border-left-style: solid;
+/*        border-color: var(--text-normal);
+/*        margin-left: 5px;
+/*    }
+/*
+/*    .outline .tree-item-self {
+/*        font-size: 1.17em;
+/*        color: var(--text-normal);
+/*    }
+/*    
+/*    .outline {
+/*        padding: 5px 0px 0px 5px;
+/*    }
+/*
+/*    .outline .tree-item >.tree-item-children >.tree-item > .tree-item-children  .tree-item {
+/*        border-color: var(--text-accent);
+/*    }
+/*    
+/*    .outline .tree-item >.tree-item-children >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  .tree-item{
+/*        border-color: var(--bg-magenta2);
+/*    }
+/*    
+/*    .outline .tree-item >.tree-item-children >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  .tree-item{
+/*        border-color: var(--bg-purple2);
+/*    }
+/*    
+/*    .outline .tree-item >.tree-item-children >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  >.tree-item > .tree-item-children .tree-item {
+/*        border-color: var(--bg-blue2);
+/*        padding-left: 10px;
+/*    }
+/*        
+/*    .outline .tree-item >.tree-item-children >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  >.tree-item > .tree-item-children  >.tree-item > .tree-item-children .tree-item > .tree-item-children  >.tree-item {
+/*        border-color: var(--bg-green2);
+/*    }
+/*
+/*    .outline .tree-item .tree-item-children  .tree-item .tree-item-self {
+/*        font-size: 1.12em;
+/*        color: var(--text-normal);
+/*        padding-top: 2px;
+/*    }
+/*
+/*    .tree-item-children {
+/*        margin-left: 6px;
+/*        margin-bottom: 1px;
+/*        border-left: none !important;
+/*        border-left: transparent !important;
+/*    }
+/*
+/*    .workspace-leaf-content[data-type=outline] .tree-item-self {
+/*        padding: 0 0 0 8px;
+/*        white-space: nowrap;
+/*        min-width: 87%;
+/*    }
+/*    
+/*    .workspace-leaf-content[data-type=outline] .outline > .tree-item > .tree-item-children {
+/*        margin-left: -2.5px;
+/*    }
+/*    
+/*    .workspace-leaf-content[data-type=outline] .tree-item-self .tree-item-inner {
+/*        overflow: hidden;
+/*        text-overflow: ellipsis;
+/*    }
+/*
+/*    .workspace-split.mod-left-split .view-content{
+/*        height: 100%;
+/*        overflow: auto;
+/*        padding-left: -20px;
+/*    }
+/*    
+/*    .tree-item-self .tree-item-icon {
+/*        display: flex;
+/*        align-items: center;
+/*        align-self: center;
+/*        padding-inline-start: 0px;
+/*        padding-inline-end: 3.5px;
+/*        flex: 0 0 auto;
+/*        margin: -5px;
+/*    }
+/*
+/*    .search-result {
+/*        margin: 0px 0px 0px -12px;
+/*    }
+/*    
+/*    .search-results-children .tree-item-inner {
+/*        margin: 0px 0px 0px 15px;
+/*    }
+/*
+/*    .pdf-sidebar-container .pdf-thumbnail-view, .pdf-sidebar-container .pdf-outline-view .tree-item-icon {
+/*       margin: 0 0 0 -20px; 
+/*    }
+/*    
+/*    .outline .tree-item .tree-item-children .tree-item .tree-item-self {
+/*        font-size: 1.1em;
+/*        color: var(--text-normal);
+/*        padding-top: 0px;
+/*    }
+/*
+/*        /* # A5.3 Hover Glow*/
+/*
+/*    .outline .tree-item .tree-item-self:hover{
+/*        text-shadow: white;
+/*        background: var(--text-antinormal);
+/*        border: 1.75px solid var(--text-accent);
+/*        transition: transform 0.25s ease-out 0s;
+/*    }   
+
+    /* # A5.3 Icon Styling */
+        /* ! A5.3.1 Gradient Symbols*/
+
+    .outline .tree-item .tree-item-self .tree-item-inner::before {
+        content: "ᛜ" ;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 0px 5px 0px 10px;
+    }
+
+    .outline .tree-item >.tree-item-children .tree-item-self .tree-item-inner::before {
+        content: "ᛜ";
+        color: var(--text-accent);
+        margin-left: 1px;
+        font-size: 1.05em;
+    }
+
+    .outline .tree-item >.tree-item-children > .tree-item .tree-item-children .tree-item-self .tree-item-inner::before{
+        color: var(--bg-magenta2);
+    }     
+    
+    .outline .tree-item >.tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children .tree-item-self .tree-item-inner::before{
+    color: var(--bg-purple2);
+    } 
+    
+    .outline .tree-item >.tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children .tree-item-self .tree-item-inner::before{
+    color: var(--bg-blue2);
+    }     
+    
+    .outline .tree-item >.tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children > .tree-item .tree-item-children .tree-item-self .tree-item-inner::before{
+    color: var(--bg-green2);
+    }  
+
+/* @ WS A6: Search, Backlinks and Outgoing Links Pane*/
+
+    /* # A6.1 Search Results*/
+
+    .search-results-children .tree-item-inner,
+    .workspace-leaf-content[data-type="backlink"] .tree-item-inner,
+    .workspace-leaf-content[data-type="outgoing-link"] .tree-item-inner {
+        color: ;
+        font-size: 1em;
+        border-bottom: transparent 0px solid;
+    }
+
+    .search-results-children .search-result-file-match {
+        color: var(--text-normal);
+    }
+
+    .search-results-children .search-result-file-match:hover {
+        background-color: rgba(0, 0, 0, 0.267);
+    }
+
+    .search-results-children .tree-item-flair,
+    .workspace-leaf-content[data-type="backlink"] .tree-item-flair,
+    .workspace-leaf-content[data-type="outgoing-link"] .tree-item-flair {            font-size: 0.8em;
+        color: var(--text-accent);
+    }
+
+    /* # A6.2 Backlinks in Document 📆 */
+
+/* @ WS A7: Starred Pane*/
+
+.workspace-leaf-content[data-type="starred"] .nav-file-icon {
+    display: none;
+}    
+.workspace-leaf-content[data-type="starred"] .nav-file-title {
+    font-size: 0.975em;
+}
+
+.workspace-leaf-content[data-type="starred"] .nav-file-title::before {
+    content: "★";
+    margin-top: 1.5px;
+    margin-left: -15px;
+}
+
+/* @ WS A8: Graph Pane*/
+
+    /* # A8.1 Graph Controls*/
+
+    .graph-controls,
+    .graph-controls .setting-item-name {
+        background-color: "";
+        color: "";
+    }
+
+    .graph-controls svg.cross,
+    .graph-controls svg.reset {
+        width: 326px;
+        height: 33px;
+    }
+
+    .graph-controls.is-close {
+        background-color: var(--background-secondary);
+    }  
+
+    .search-result-collapse-indicator {
+        position: absolute;
+        left: 0;
+        top: -3px;
+        color: var(--text-faint);
+        transition: transform 100ms ease-in-out;
+        padding: 0px  !important;
+    }
+
+    body:not(.is-mobile) .workspace-split.mod-root .graph-controls {
+        top: 22px;
+        /* bottom: 5px; */
+    }
+
+    .graph-controls:not(.is-close) {
+        max-height: calc(100% - var(--size-4-4));
+        border: 1px solid var(--background-modifier-border);
+        box-shadow: var(--shadow-s);
+        bottom: 5px;
+    }
+
+    .graph-controls.is-close {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        padding: 4px 4px 4px 4px;
+        background-color: var(--background-primary-alt);
+        border: 1px solid var(--background-modifier-border);
+        border-radius: 7px;
+        max-height: calc(100% - 46px);
+        overflow: auto;
+        border-radius: 0 13px 13px 0;
+        border-top: 1px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+            160deg
+            #0000003d,
+            rgb(0 0 0 / 45%));
+        backdrop-filter: blur(6px) !important;
+        min-width: fit-content;
+        max-width: fit-content;
+    }
+
+    .graph-controls {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        padding: 6px 6px 6px 6px;
+        margin:  0px 0px 7.5px 0px;
+        width: 400px;
+        min-width: "";
+        border: 1px solid var(--background-modifier-border);
+        border-radius: 0 13px 13px 0;
+        border-top: 1px solid white;
+        border-right: 2px solid white !important;
+        border-bottom: 2px solid white !important;
+        top: 0;
+        left: 0;
+        background: linear-gradient(160deg,
+        #0000003d,
+        rgb(0 0 0 / 45%));
+        backdrop-filter: blur(5.5px) !important;
+    }
+
+    /* # A8.2 Graph Colors*/
+
+    .graph-view.color-arrow {
+        color: rgb(0, 195, 255) !important;
+    }
+    .theme-dark .graph-view.color-fill-tag {
+        color: #ffb86c;
+    }
+    
+    .theme-dark .graph-view.color-fill-attachment {
+        color: #ff5555;
+    }
+    
+    .theme-dark .graph-view.color-fill-unresolved {
+        color: #6272a4; 
+    }
+
+    .graph-view.color-fill {
+        color: "";
+    }
+
+    .graph-view.color-circle {
+        color: "";
+    }
+
+    .graph-view.color-line {
+        color: #6272a4;
+    }
+
+    .graph-view.color-text {
+        color: "";
+    }
+
+    .graph-view.color-fill-highlight {
+        color: "";
+    }
+
+    .graph-view.color-line-highlight {
+        color: "";
+    }
+
+/* @ WS A9: Bookmarks */
+
+.workspace-leaf-content[data-type=bookmarks] .view-content {
+    padding: 3px;
+}
+
+/* ~~~~~~~~~~~~~~~~ WS B: Window  ~~~~~~~~~~~~~~~~ */
+
+/* @ WS B1: Side Dock Ribbon (+ Mobile toolbar) */
+
+    /* # B1.1 Expanded/Collapsed */
+    .side-dock-ribbon-action {
+        color: var(--text-muted);
+    }
+
+    .side-dock-ribbon-action:not(:last-child) {
+        margin-bottom: calc(var(--cmdr-spacing) - 9px)
+    }
+
+
+    /* Arrows for collapse */
+
+    body:not(.no-svg-replace) svg.right-triangle {
+        color: var(--text-accent);
+        height: 13px;
+        width: 13px;
+        transition: transform 150ms linear 0s;;
+    }
+    
+    .view-content .collapse-indicator svg.svg-icon {
+            margin-left: 7.5px;
+    }
+
+
+    .markdown-source-view.mod-cm6 .cm-line:not(.cm-active):not(.HyperMD-header):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator {
+        padding-right: 0em;
+        right:-0.3em;
+    }
+
+    /* Metadata properties */
+
+    .metadata-properties-heading .collapse-indicator {
+        position: absolute;
+        left: -25px;
+    }
+
+    .markdown-preview-view.show-properties .metadata-container {
+        text-align: center;
+    }
+
+    .metadata-properties-heading:before {
+    }
+
+
+        /* # B1.1 Note title arrows */
+
+    .clickable-icon[aria-disabled='true'] {
+        color: var(--text-muted);
+        opacity: 0.6;
+    }
+
+    .clickable-icon[aria-disabled='false'] {
+        color: var(--text-muted);
+        opacity: 1;
+    }
+
+    .clickable-icon[aria-disabled='true']:hover {
+        color: var(--text-accent);
+        opacity: 0.7;
+    }
+
+    .clickable-icon[aria-disabled='false']:hover {
+        color: var(--text-accent) !important;
+        opacity: 1;
+    }
+
+    .theme-dark {
+        --arrow1: rgba(99, 99, 99, 0.687);
+    }
+
+    .theme-light {
+        --arrow1: rgba(211, 211, 211, 0.852);
+    }
+
+    .workspace button:not(.graph-controls button, .excalidraw button) {
+        background: var(--arrow1);
+        box-shadow: none;
+        margin: 2px;
+    }
+
+    /* # B1.2 Ribbon Icons */
+    .side-dock-ribbon svg {
+        width: "";
+        height: 20px;
+        transform: scale(1);
+    }
+
+/* @ WS B3: Status Bar */
+
+.status-bar {
+    font-size: var(--font-size-status-bar);
+    background-color: var(--background-secondary-alt);
+    color: var(--text-faint);
+    padding: 0px 1px;
+    border: 1px solid rgba(255, 255, 255, 0.715);
+    border-radius: 7.5px;
+    right: 1px;
+    bottom: 0.3px;
+    font-weight: 600;
+}
+
+.status-bar-item-segment {
+    margin-right: 4.75px;
+}
+
+.status-bar-item:not(:last-child), .titlebar-button:not(:last-child) {
+    margin-right: -4.5px;
+}
+
+.mod-windows .titlebar-button{
+    padding: 0 16px;
+}
+
+/* @ WS B4: Tabs */
+
+/* Padding of the text of a tab */
+
+.theme-light {
+    --tab-text-nofocus: rgba(0, 0, 0, 0.6);
+}
+.theme-dark {
+    --tab-text-nofocus: rgba(255, 255, 255, 0.7);
+}
+.mod-root .workspace-tab-header-inner {
+    padding: 0 3px 0 3.5px;
+}
+.view-header-title-container:not(.mod-at-end):after {
+    background: unset;
+}
+.is-focused .workspace-tab-header {
+    color: var(--tab-text-nofocus);
+}
+.workspace-tab-header {
+    color: var(--tab-text-nofocus);
+}
+
+/* Remove a bug */
+
+.workspace-tab-header::before {
+    left: calc(var(--tab-curve) * -2);
+    clip-path: inset(50% calc(var(--tab-curve) * -1) 0 50%);
+}
+.workspace-tab-header::before, .workspace-tab-header::after {
+    content: unset;
+    position: absolute;
+    bottom: 0;
+    width: calc(var(--tab-curve) * 2);
+    height: calc(var(--tab-curve) * 2);
+    border-radius: 80px; 
+}
+.workspace-tab-header.is-active {
+    background-color: var(--background-secondary-alt) !important;
+}
+
+.workspace .mod-root .workspace-tab-header-inner-title {
+    text-align: center;
+}
+
+/* White title of the note, focus, active or not, always */
+
+.workspace-leaf.mod-active .view-header-title, .workspace-leaf.mod-active .view-header-icon {
+    color: var(--text-normal) !important;
+}
+
+/*
+First tab bigger
+from Shimmering Focus (https://github.com/chrisgrieser/shimmering-focus)
+*/
+
+body:not(.normal-tab-bar) .mod-root .workspace-tab-header:only-child {
+    width: 999px;
+    max-width: 9999px;
+    font-size: 1.02em;
+    font-weight: 500;
+}
+
+/* Different color when Obsidian is active */
+
+body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Different color of title bar contair (minimize, fullscreen and close Obsidian) */
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+    background-color: var(--background-secondary-alt);
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+    background-color: var(--background-primary);
+}
+
+/* @ WS B5: Rendered notes */
+
+/* width of content */
+
+.markdown-source-view.is-readable-line-width .CodeMirror {
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-section {
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* @ WS B6: Note's header */
+
+/* Header of a note */
+
+.theme-dark .view-header {
+    background: linear-gradient(to left, #7c7c7c30, #808080);
+    border-top: 1px solid var(--border-color) !important;
+    border-bottom: 2px solid #737373 !important;
+    border-radius: 6px;
+}
+
+.theme-light .view-header {
+    border-radius: 6px;
+}
+
+.workspace-leaf.mod-active .view-header {
+    background-color: var(--background-secondary-alt) !important;  
+    border-top: 0px !important;
+    border-bottom: 3px solid var(--interactive-accent) !important;
+    text-align: center;
+}
+
+.view-header-title {
+    font-weight: 600;
+}
+
+/* Remove left paddding */
+
+.view-header{
+    padding: 0px;
+}
+
+.workspace-leaf.mod-active .view-header-title,
+.workspace-leaf.mod-active .view-header-icon {
+    color: var(--background-modifier-border);
+}
+
+.view-header-title, .view-header-icon, .view-action {
+    color: var(--text-faint);
+}
+
+
+/* @ WS B7: Transition between notes */
+
+/* Transition between notes, from the Obsidian Theme "Maple": https://github.com/subframe7536/obsidian-theme-maple */
+
+:is(body, body .print)   {
+    --animation: 200ms;
+}
+
+
+/* 切换标签动画，参考 https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow */
+body .workspace-split .workspace-tabs:not(.mod-stacked) .view-content {
+    animation: slide-up var(--animation) forwards;
+}
+
+@supports selector(:has(.view-content)) {
+    .workspace-leaf-content:not(:has(.view-content)) {
+        animation: slide-up var(--animation) forwards;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    15% {
+        transform: translateY(0.1rem);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(0.15rem);
+    }
+    45% {
+        opacity: 0.5;
+    }
+    65% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~ WS C: Settings Menu ~~~~~~~~~~~~~~~~~~ */
+
+.smalltalk .page header, .smalltalk input, .smalltalk button {
+    border: 1.5px solid var(--interactive-accent) !important;
+    border-radius: 3px;
+}
+
+.modal button:not(.mod-cta):not(.mod-warning):hover {
+    background-color: var(--text-antinormal);
+    color: var(--text-normal) ;
+}
+
+/* Color of the text and bin icon when deleting a note */
+
+.menu-item.is-warning:hover {
+    color: red;
+}
+
+.menu-item.is-warning.selected {
+    color: red;
+}
+
+.menu-item.is-warning.selected .menu-item-icon, .menu-item.is-warning:hover .menu-item-icon {
+    color: red;
+}
+
+.mod-warning {
+    color: red;
+}
+
+/**/
+
+.setting-item-control button {
+    font-size: 14px;
+    padding: 6px 20px;
+    font-weight: bold;
+}
+
+.setting-item-control:hover button:hover {
+    background-color: var(--text-antinormal);
+    color: var(--text-normal);
+}
+
+.modal-content {
+    flex: 1 1 auto;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.community-theme.is-selected button {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    font-weight: bold;
+}
+
+/* Border while hovering a community plugin */
+
+.community-item:hover{
+    border: 2px solid var(--text-accent)
+}
+
+/* Hotkeys */
+
+.setting-hotkey.mod-active {
+    color: black;
+}
+
+.theme-light .setting-hotkey.has-conflict {
+    background-color: var(--background-modifier-error);
+    color: black;
+}
+
+.theme-dark .setting-hotkey.has-conflict {
+    background-color: var(--background-modifier-error);
+    color: white;
+}
+
+/**/
+
+button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: black;
+    font-weight: bold;
+}
+
+button.mod-cta:hover {
+    background-color: var(--text-antinormal);
+    color: var(--text-normal) !important;
+}
+
+.setting-item-control select {
+    width: inherit;
+    max-width: 400px;
+    color: var(--text-normal) !important;
+    font-weight: bold;
+}
+
+.dropdown:focus{
+    box-shadow: 0px 0px 5px #ffb86c7a;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown:hover{
+    background-color: var(--text-antinormal) !important;
+    color: var(--text-normal) !important;
+}
+
+.dropdown{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    background-color: var(--background-accent);
+}
+
+.modal.mod-community-plugin, .modal.mod-publish, .modal.mod-settings, .modal.mod-sync-history, .modal.mod-sync-log {
+    width: 90vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 1000px;
+}
+
+.modal.mod-settings {
+    padding: 0;
+    width: 90vw;
+    height: 90vh;
+    max-width: 90vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal {
+    box-shadow: var(--shadow-l);
+    border: none;
+    background: var(--background-primary);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+}
+
+.modal.mod-settings .vertical-tab-content-container .vertical-tab-content {
+    padding-top: 30px;
+}
+
+.vertical-tab-content, .vertical-tab-header {
+    padding-bottom: 100px;
+}
+
+.vertical-tab-content {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.horizontal-tab-content, .vertical-tab-content {
+    background: var(--background-primary);
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.community-plugin-name, .modal.mod-settings .vertical-tab-content-container, .setting-item-name {
+    font-size: var(--font-settings);
+    line-height: 1.3;
+}
+
+.horizontal-tab-nav-item, .vertical-tab-nav-item {
+    cursor: default;
+    font-size: 16px;
+    padding: 4px 15px !important;
+    margin: auto !important;
+    text-align: center;
+}
+
+.vertical-tab-nav-item:hover {
+    font-weight: 650;
+    min-width: -webkit-fill-available;
+    text-align: center ;
+
+}
+
+.vertical-tab-nav-item.is-active {
+    font-weight: 650;
+    border-left-color: var(--interactive-accent);
+    min-width: -webkit-fill-available;
+    text-align: center;
+    color: black;
+}
+
+.vertical-tab-header-group-title {
+    font-size: 15px;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    padding: 6px 16px;
+    user-select: none;
+    text-align: center;
+}
+
+.modal.mod-settings .vertical-tab-content-container {
+    padding: 15px 0 10px 0;
+    height: 90vh;
+}
+
+.modal.mod-settings .vertical-tab-header {
+    padding: 8px 0;
+    flex: 0 0 250px;
+    height: 87vh;
+    overflow: auto;
+    max-width: 33vh !important;
+    text-align: center;
+}
+
+.modal.mod-settings{
+    height: 87vh;
+    width: 85vw;
+}
+
+.modal-close-button:before {
+    content: '\D7';
+    font-weight: bold;
+    transition: 440ms;
+}
+
+.modal-close-button:hover {
+    content: '\D7';
+    font-weight: bold;
+    color: red;
+    font-size: 1.85em;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid var(--background-modifier-border);
+    text-align: left;
+}
+
+.diff-view {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 10px;
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+.sync-history-list-item {
+    padding: 6px 14px 6px 20px;
+    cursor: var(--cursor);
+    font-size: 14px;
+    text-align: left;
+}
+
+.sync-history-list-item{
+    background-color: var(--background-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.sync-history-list-item.is-active {
+    background-color: rgba(255, 166, 0, 0.85);
+}
+
+
+.sync-history-list-item:hover {
+    background-color: var(--background-primary);
+}
+
+sync-history-content-container {
+    background-color: var(--background-secondary-alt);
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(90vw - 180px);
+    width: 0;
+    flex: 1 1 auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~ WS D: Other Elements  ~~~~~~~~~~~~~~~~~~ */
+
+/* @ WS D1: Buttons */
+
+    /* # D1.1 Regular Buttons */
+
+    button {
+        color: black;
+        font-weight: bold;
+    }
+
+    /* # D1.2 Warning Buttons */
+    
+    button.mod-warning {
+        background-color: var(--interactive-accent);
+        color: black;
+        font-weight: bold;
+    }
+
+    button.mod-warning:hover {
+        color: var(--interactive-accent);
+        background-color: rgba(0, 0, 0, 1);
+        font-weight: bold;
+        outline: 2px solid var(--interactive-accent);
+        outline-offset: -1.5px;
+    }
+
+/* @ WS D2: Scrollbars */
+
+body:not(.native-scrollbars) * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+}
+
+/* @ WS D3: Modal */
+
+.community-modal-readme {
+    font-size: 16px;
+    }
+
+.community-modal-button-container {
+    margin: 1.5em 0;
+    justify-content: center;
+}
+
+.community-modal-info {
+    padding: 7px 7px 10px 7px;
+}
+
+.community-modal-info-name {
+    color: var(--text-faint);
+    font-weight: 700;
+}
+
+
+/* @ WS D6: Toggles */
+
+/* @ WS D7: Tooltips */
+
+.theme-dark .tooltip {
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: var(--text-normal);
+}
+
+.theme-light .tooltip {
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--text-normal);
+}
+
+/*
+.tooltip .tooltip-arrow {
+    border: 4px solid white;
+    transform: rotate(180deg)
+    
+}
+*/
+
+/* @ D10: Menu */
+
+.menu {
+    max-width: 225px;
+    border: 1.5px solid white !important;
+    backdrop-filter: blur(13px) !important;
+    border-radius: 6px;
+    box-shadow: 0 0px 10px 0.2px rgba(0, 0, 0, 0.3);
+    max-height: calc(100% - 25px);
+    overflow: hidden;
+}
+
+.theme-light .menu {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+.theme-dark .menu {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.theme-dark .menu-item.selected:not(.is-disabled):not(.is-label) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--text-accent);
+    transition: transform 0.29s ease-out 0s;
+}
+
+.theme-light .menu-item.selected:not(.is-disabled):not(.is-label) {
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 2px solid var(--text-accent);
+    transition: transform 0.29s ease-out 0s;
+}
+
+select {
+    color: var(--text-antinormal);
+    font-weight: bold;
+}
+
+.menu-item-icon.selected{
+    background-color: black;
+    border: 2px solid var(--text-accent);
+}
+
+.suggestion-item.is-selected, .menu-item:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--text-accent);
+}
+
+.menu-item-title {
+    font-size: 14.75px;
+}
+
+.menu-item {
+    padding: 1.25px 0px;
+    white-space: break-spaces;
+}
+
+/* @ D11: Suggestion Container */
+
+/* @ D12: Embedded notes */
+
+.file-embed-title {
+    color: var(--text-faint);
+}
+
+.file-embed {
+    background-color: var(--background-secondary); 
+}
+
+.file-embed:hover {
+    background-color: var(--background-primary-alt) !important;
+}
+
+/* Naked Embeds - Hide name of file */
+
+.markdown-embed-title {
+    display: none;
+}
+
+.markdown-preview-view .markdown-embed-content>:first-child {
+    margin-top: 0;
+}
+
+.markdown-preview-view .markdown-embed-content>:last-child {
+    margin-bottom: 0;
+}
+
+/* Better embedded note padding */
+
+.markdown-preview-view .markdown-embed { 
+padding:0; margin:0;
+}
+
+/* Link symbol on the top right corner */
+
+.markdown-embed-link {
+    color: var(--text-faint);}
+
+.markdown-embed-link:hover {
+    color: white;
+    stroke-width: 8px;
+    text-shadow: 0px 0px 10px white;
+}
+
+/* Dimensions and color of the embedded note*/
+
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+    max-height: 445px;
+}
+
+.markdown-preview-view .markdown-embed-content {
+    background-color: var(--background-secondary) !important;
+    border-radius: 10px;
+}
+
+.markdown-embed {
+    border: 0px solid #f8f8f200;
+    border-left-width: 2.75px ;
+    border-right-width: 2.75px ;
+    border-bottom-width: 2.75px ;
+    border-top-width: 2.75px ;
+    transition: 150ms ease-in-out ;
+    border-radius: 10px ;
+}
+
+.markdown-embed:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,.25),0 5px 5px rgba(0,0,0,.22) !important;
+    transform: translate3d(0px,-3.5px,0px) !important;
+    transition: 150ms ease-in-out !important;
+    border-color: var(--interactive-accent) !important;
+    border-radius: 10px !important;
+}
+
+
+/* @ D13: Suggestion - obsidian autocomplete for notes */
+
+.suggestion-item.is-selected:hover {
+    cursor: pointer ;
+    background-color: var(--text-accent) ;
+    color: black ;
+}
+
+input.prompt-input {    background-color: var(--text-antinormal);
+}
+
+.prompt-input-container {
+    border-bottom: 1.25px solid gray;
+    background-color: var(--text-antinormal);
+}
+
+
+/*
+.templater-prompt-input:focus, .dropdown:focus, input:not(input[type="range"]):focus, .search-result-file-match:not(.search-info-more-matches):hover {
+    border: 2px solid var(--text-accent) !important;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #ffb86c7a;
+}
+*/
+
+.prompt-results {
+    padding: 1px 5px;
+}
+
+/* =================== PART III. MARKDOWN =================== */
+
+/* ~~~~~~~~~~~~~~~~~~ MARKDOWN A: Text Formatting   ~~~~~~~~~~~~~~~~~~ */
+
+/* @ MARKDOWN A0: Paragraphs/Text */
+
+p {
+    display: block;
+    margin-block-start: 1.15em;
+    /*margin-block-end: 1em;*/
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /*letter-spacing: 0pt;*/   /* para separar entre letras */
+    word-spacing: 0.8pt;     /* para separacion entre palabras */  
+    line-height: 16.5pt;     /* para la separacion entre lineas */ 
+}
+
+/* @ MARKDOWN A1: Headers */
+
+.theme-dark {
+    --bg-green: rgba(32, 225, 180, 0.4);
+    --bg-blue: rgba(29, 174, 226, 0.4);
+    --bg-purple: rgba(165, 26, 234, 0.4);
+    --bg-magenta: rgba(231, 60, 126, 0.45);
+    --bg-orange: rgba(255, 132, 0, 0.43);
+
+    --fcolor-header: white;
+}
+
+.theme-light {
+    --bg-green: rgba(1, 224, 172, 0.5);
+    --bg-blue: rgba(9, 168, 225, 0.45);
+    --bg-purple: rgba(150, 8, 220, 0.4);
+    --bg-magenta: rgba(220, 10, 90, 0.45);
+    --bg-orange: rgba(255, 132, 0, 0.5);
+
+    --fcolor-header: rgb(0, 0, 0);
+}
+
+.cm-header, h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.15px !important;
+    word-spacing: 1px;
+    text-align: center;
+    font-weight: 650;
+    color: var(--fcolor-header) !important;
+}
+
+/* Collapse arrow of headers */
+
+.markdown-preview-view .heading-collapse-indicator {
+    margin-left: -15px;
+    padding: 0 6px;
+}
+
+/**/
+
+.cm-s-obsidian .HyperMD-header {
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 0.35em !important;
+    padding-top: 0.3em;
+}
+
+.HyperMD-header-1, .markdown-preview-section h1, .cm-header-1 {
+    font-size: 18.5px !important;
+    font-weight: 700;
+    margin: 30px 0px 3px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    border-radius: 0px;
+    font-family: 'Inter';
+    background: linear-gradient( 
+        271deg,
+        transparent,
+        var(--bg-green),
+        var(--bg-blue),
+        var(--bg-purple),
+        var(--bg-magenta),
+        var(--bg-orange),
+        transparent
+        );
+}
+
+.HyperMD-header-2, .markdown-preview-section h2, .cm-header-2 {    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18.25px;
+    margin: 30px 0px 3px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Inter';
+    background: linear-gradient(
+        271deg,
+        transparent,
+        var(--bg-orange),
+        rgba(255, 140, 0, 0.51),
+        var(--bg-orange), 
+        transparent
+        );
+}
+
+.HyperMD-header-3, .markdown-preview-section h3, .cm-header-3 {    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17.85px;
+    margin: 28px 0px 5px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Inter';
+    background:
+        radial-gradient(
+            circle, 
+            var(--bg-magenta) 50%, 
+            transparent 100%
+            );
+}
+
+.HyperMD-header-4, .markdown-preview-section h4, .cm-header-4 {    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17.5px;
+    margin: 28px 0px 5px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Inter';
+    background: radial-gradient(
+        circle, 
+        var(--bg-purple) 50%,
+        transparent 100%
+        );
+}
+
+.HyperMD-header-5, .markdown-preview-section h5, .cm-header-5 {    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    margin: 28px 0px 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Inter';
+    background: radial-gradient(
+        circle,
+        var(--bg-blue) 50%, 
+        transparent 100%
+        );
+}
+
+.HyperMD-header-6, .markdown-preview-section h6, .cm-header-6 {    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    margin: 30px 0px 5px 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Inter';
+    background: radial-gradient(
+        circle,
+        var(--bg-green) 50%,
+        transparent 100%
+        );
+}
+
+/* @ MARKDOWN A2: Bold*/
+
+strong, .cm-strong {
+    color: var(--fbold);
+    font-weight: 650;
+}
+
+/* @ MARKDOWN A3: Italics*/
+
+.cm-em, em{
+    color: var(--fitalic);
+    font-style: italic;
+}
+
+/* @ MARKDOWN A4: Links*/
+
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link,
+.cm-url {
+    text-decoration: none !important;
+}
+
+.cm-hmd-internal-link:hover, a:hover {
+    text-decoration: underline !important;
+}
+
+.markdown-preview-view .internal-link.is-unresolved,
+.markdown-source-view.mod-cm6 .is-unresolved {
+    opacity: 0.7;
+}
+
+/* External links in preview mode */
+
+.external-link {
+    color: var(--external-link);
+    font-weight: 500;
+    background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/As68C4R.png);
+    background-size: 21px;
+    cursor: pointer;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 1px 2px 1px 26px;
+}
+
+/* External links in edit mode */
+
+.theme-dark .cm-s-obsidian span.cm-url {
+    color: rgb(255, 219, 180);
+    font-style: italic;
+    cursor: pointer;
+}
+
+.theme-light .cm-s-obsidian span.cm-url {
+    color: rgb(234, 148, 0);
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* @ MARKDOWN A5: Inline Code (for editor) */
+
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code)
+{
+    background-color: var(--pre-code-bg);
+    color: var(--inline-code) !important;
+    bottom: 0px !important;
+}
+
+
+/* @ MARKDOWN A6: Highlight*/
+
+span.cm-highlight {
+    padding: 0.1em 0;
+    border-radius: 0.2em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+span.cm-formatting-highlight {
+    padding-left: 0.15em;
+    padding-right: 0em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.markdown-preview-view mark {
+    margin: 0 -0.05em;
+    padding: 0.1em 0.3em;
+    border-radius: 0.2em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-color: var(--text-highlight-bg);
+    color: black;
+}
+
+/* @ MARKDOWN A7: Footnotes*/
+
+/* # Stop footnotes affecting line height*/
+
+sup { 
+    vertical-align: top; 
+    position: relative; 
+    top: -0.3em; 
+    font-size: 0.75em; 
+}
+
+/* Color of the footnote in preview mode*/
+
+.cm-s-obsidian span.cm-footref, .cm-s-obsidian span.cm-blockid {
+    color: var(--text-accent);
+}
+
+/**/
+
+.footnote-backref {
+    color: var(--text-accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal !important;
+    padding-left: 10px;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.footnote-backref:hover {
+    color: var(--fbold);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: 190ms ease-in-out;
+    text-shadow: 0px 0px 12px var(--fbold);
+	position: relative; 
+}
+
+.markdown-preview-view .tippy-content {
+    max-height: 22em;
+    overflow-x: auto;
+    font-size: var(--editor-font-size);
+    background-color: var(--background-secondary);
+}
+
+section.footnotes li[data-footnote-id] {
+    transition: background-color 0.5s ease-in-out;
+    font-size: var(--font-ui-medium);
+}
+
+.cm-s-obsidian .cm-line.HyperMD-footnote {
+    font-size: var(--footnote-size);
+    color: bisque;
+}
+
+.cm-s-obsidian span.cm-footref.cm-hmd-barelink, .cm-s-obsidian span.cm-blockid {
+    color: beige;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote {
+    color: beige;
+}
+
+/* @ MARKDOWN A8: Comments*/
+
+/* @ MARKDOWN A9: Tags*/
+
+    /* # A9.1 Edit*/
+    
+    .cm-hashtag {
+        font-size: var(--font-size-normal);
+        color: var(--text-accent-hover);
+        text-decoration: none;
+        font-style: normal;
+        background-color: var(--background-secondary);
+
+    } 
+
+    .cm-s-obsidian span.cm-hashtag-begin {
+        background-color: var(--background-secondary) !important;
+
+    }
+    
+    /* # A9.2 Preview*/
+    
+    .tag {
+        /*changed var to hex color */
+        font-size: 0.97em !important;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding: 6px 0px;
+        cursor: pointer;
+        /* border-radius: 14px; */
+        border-radius: 8px;
+        background-color: var(--background-secondary) !important;
+        color: var(--text-accent-hover) !important;
+        text-decoration: none !important;
+        font-style: normal !important;
+    }
+
+    /* # A9.3 Hover*/
+    .tag:hover,
+    .cm-hashtag:hover {
+        font-weight: bold;
+    }
+    
+    /* # A9.4 Tag Container*/
+
+    .tag-container {
+        padding: 0px;
+    }
+
+/* @ MARKDOWN A10: Brackets */
+
+/* Brackets color in edit mode */
+
+.cm-s-obsidian span.cm-formatting-link {
+    color: var(--text-accent) !important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~ MARKDOWN B: LISTS ~~~~~~~~~~~~~~~~~~ */
+
+/* @ MARKDOWN B1:  a rule line before ul list*/
+
+/* rule line when there are checkboxes*/
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    border-right: 1.5px solid var(--interactive-normal);
+}
+
+ul .task-list-item ul::before {
+left: 0em 
+}
+
+ol ol {
+    position: relative;
+    padding: 0px 0px 0px 25px;
+}
+
+ol ol::before {
+    content:'';
+    border-left: 2px solid var(--text-accent);
+    position: absolute;
+}
+
+ol ol::before {
+left: -0.75em; top: 0; bottom: 0;
+}
+
+ol ul {
+position: relative;
+}
+
+ul ol {
+position: relative;
+}
+
+ol ul::before {
+    content:'';
+    border-left: 2px solid var(--text-accent);
+    position: absolute;
+    left: -0.75em; top: 0; bottom: 0;
+}
+
+ul ol::before {
+    content:'';
+    border-left: 2px solid var(--text-accent);
+    position: absolute;
+}
+
+.outliner-plugin-bls .CodeMirror-line .cm-hmd-list-indent::before {
+    content: '' ;
+    display: block  !important;
+    position: absolute  !important;
+    background-image: linear-gradient(to right, var(--text-accent) 1px, #c81a1a00 2px)  !important;
+    background-size: 1.8ch 1px  !important;
+    background-position-x: 0px  !important; 
+    width: 100%  !important;
+    left: 0  !important;
+    top: -1.6em  !important;
+    padding-bottom: 999em  !important;
+}
+
+.markdown-rendered.show-indentation-guide li > ol::before {
+    left: -0.7em;
+}
+
+.markdown-rendered .list-collapse-indicator {
+    margin-left: -2.8em;
+}
+
+li {
+    padding: 5px 0px 5.7px 0px;
+}
+
+/* --- RAINBOW LIST COLORS --- */
+
+/*
+From the Obsidian theme: Big & Bold
+https://github.com/Bluemoondragon07/obsidian-big-and-bold
+*/
+
+.theme-dark {
+    --color-pink-list: rgb(255, 192, 227);
+    --color-pink-list2: rgb(255, 137, 202);
+    --color-pink-list3: rgb(255, 119, 194);
+}
+.theme-light {
+    --color-pink-list: rgb(255, 192, 227);
+    --color-pink-list2: rgb(255, 137, 202);
+    --color-pink-list3: rgb(255, 119, 194);
+}
+
+li {
+    --list-marker-color: var(--bg-orange2);
+}
+li li, .cm-list-2 {
+    --list-marker-color: var(--bg-magenta2);
+}
+li li li, .cm-list-3 {
+    --list-marker-color: var(--bg-purple2);
+}
+li li li li  {
+    --list-marker-color: var(--bg-blue2);
+}
+li li li li li  {
+    --list-marker-color: var(--bg-green2);
+}
+li li li li li li  {
+    --list-marker-color: var(--color-pink-list);
+}
+li li li li li li li  {
+    --list-marker-color: var(--color-pink-list2);
+}
+
+li li li li li li li li {
+    --list-marker-color: var(--color-pink-list3);
+}
+
+li .list-bullet:after {
+    width: 0.35em;
+    height: 0.35em;
+}
+
+li:hover .list-bullet:after {
+    width: 0.4em;
+    height: 0.4em;
+}
+
+.list-bullet:after {
+    transition: 225ms;
+}
+
+/* @ MARKDOWN B1: Bulleted List*/
+
+ul ul {
+    position: relative;
+    padding: 0px 0px 0px 25px;
+}
+
+ul ul::before {
+    content:'';
+    border-left: 2px solid var(--text-accent);
+    position: absolute;
+    left: -0.8em;
+    top: auto;
+    bottom: 0;
+}
+
+ul ol::before {
+    left: -1.1em !important;
+}
+
+
+ol ul::before {
+    left: -0.7em !important;
+
+}
+
+ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
+    color: var(--list-marker-color);
+    font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+    white-space: pre;
+    color: var(--list-marker-color) !important;
+}
+
+
+/* @ MARKDOWN B2: Numbered List */
+
+
+
+/* @ MARKDOWN B3: Checklist (Checkboxes) */
+
+.markdown-preview-view .task-list-item-checkbox {
+    top: 0.3em;
+    right: 0px;
+    border: 1px solid  var(--text-normal);
+    position: relative;
+    margin-left: 5.5px;
+    background-color: rgb(0 0 0 / 20%);
+    text-decoration: line-through ;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked:hover {
+    background-color: rgb(0, 234, 187);
+}
+
+.markdown-preview-view .task-list-item-checkbox:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.markdown-preview-view .list-collapse-indicator {
+    padding: 0px 7px 0px 7px;
+}
+
+ul > li.task-list-item .task-list-item-checkbox {
+    margin-left: -20px;
+}
+
+/* Notation checkboxes */
+
+*/
+.markdown-preview-view .task-list-item-checkbox:hover {
+    background-color: #6B8760;
+}
+
+*/
+  /* yellow background colour for question/more info task ('- [?]') */
+.markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked{
+    background-color: rgb(169, 148, 0);
+}
+
+*/
+  /* red background colour for important task ('- [!]') */
+.markdown-preview-view li[data-task="!"]>.task-list-item-checkbox:checked {
+    background-color: #a90000;
+}
+
+/* More compacted lists (indentation lines closer) */
+.markdown-rendered.show-indentation-guide li > ul, .markdown-rendered.show-indentation-guide li > ol {
+    left: -10px;
+}
+
+.markdown-rendered.show-indentation-guide li > ul::before {
+    left: -0.3em;
+}
+
+.markdown-rendered.show-indentation-guide li > ol::before {
+    left: -0.2em;
+}
+
+ul ol::before {
+    left: -0.435em !important;
+}
+
+.markdown-rendered.show-indentation-guide li.task-list-item > ul::before, .markdown-rendered.show-indentation-guide li.task-list-item > ol::before {
+    left: -0.2em !important;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~ MARKDOWN C: Text Blocks  ~~~~~~~~~~~~~~~~~~ */
+/* @ MARKDOWN C1: Block Quotes*/
+/* # C1.1 Edit Mode*/
+
+/* Left white line*/
+
+.HyperMD-quote {
+    border-left: 3px solid var(--text-muted2);
+    border-radius: 6px;
+}
+
+/*
+.cm-quote {
+}
+*/
+
+/* # Code*/
+
+.markdown-preview-view blockquote {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-right-width: 4px !important;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 4px !important;
+    background-color: var(--quote-bg);
+    border: 0px solid;
+    border-color: var(--text-muted2);
+    border-radius: 8px;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    text-align: center;
+    color: var(--text-normal);
+}
+
+/* Open animation */
+
+.markdown-preview-view blockquote:hover{
+    border-color: var(--text-accent);
+    border-radius: 8px;
+    box-shadow: 0 5px 9px rgba(0,0,0,.25),0 4px 5px rgba(0,0,0,.25);
+    transform: translate3d(0px,-2.5px,0px);
+    transition: transform 0.24s ease-in-out 0s;
+}
+
+/* Closing animation */
+
+.markdown-preview-view blockquote:not(:hover) {
+    transform:translate3d(0px,0px,0px);
+    transition: transform 0.31s ease-in-out 0s;
+}
+
+
+
+/* @ MARKDOWN C2: Table*/
+
+/* # C2.1 Source */
+
+
+/* # C2.2 Reading */ 
+
+:root {
+    --table-border-radius: 5px;
+}
+
+.cards table.dataview > tbody > tr:hover {
+    background-color: var(--background-secondary-alt) ;
+}
+
+.markdown-rendered tbody tr > td:nth-child(2n+1) {
+    background-color: var(--background-secondary-alt);
+}
+
+.markdown-rendered tbody tr > td:nth-child(2n+2) {
+    background-color: var(--background-secondary-alt);
+}
+
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table) {
+    border-collapse: collapse;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table):active,
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table):hover {
+    overflow: hidden;
+    resize: both !important;
+}
+
+body .markdown-preview-view th,
+body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+body .table-view-table>thead>tr>th {
+    background-image: none;
+}
+
+td{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: 450;
+}
+
+.markdown-rendered th {
+    font-size: 1.05em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.markdown-rendered thead tr > th {
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.markdown-rendered td, .markdown-rendered th {
+    border: 10px;
+}
+
+.row-lines .table-view-table>tbody>tr>td, .row-lines table:not(.calendar) tbody>tr>td {
+    border-bottom: 1 !important;
+}
+
+.markdown-rendered td {
+    font-size: var(--table-text-size);
+    color: var(--table-text-color);
+}
+
+is(.markdown-preview-view,.markdown-rendered) :is(.markdown-preview-section,.markdown-rendered) .block-language-itinerary.fc table {
+    overflow: unset;
+}
+
+
+/*modified from https://codepen.io/brettdewoody/pen/oBjbbB */
+body.no-wrapped-table-cell table:not([class*="table-view-table"]),
+body.no-wrapped-dvtable-cell .dataview.table-view-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+body.no-wrapped-table-cell table:not([class*="table-view-table"]) :is(th,td),
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th,td) {
+    white-space: nowrap;
+    overflow-x: auto;
+    text-overflow: ellipsis;
+}
+
+body.no-wrapped-table-cell table:not([class*="table-view-table"]) :is(th,td):hover,
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th,td):hover {
+    text-overflow: clip;
+}
+/*modified from https://forum.obsidian.md/t/custom-css-for-tables-5-new-styles-ready-to-use-in-your-notes/17084 */
+
+/****dataview table***/
+table.table-view-table > thead > tr > th {
+    font-size: 0.9em;
+}
+table.table-view-table > tbody > tr > td {
+    font-size: 0.95em;
+}
+
+body.wrapped-dvtable:not(.no-wrapped-dvtable-cell):not(.no-wrapped-dvtable) :is(.markdown-preview-view,.markdown-rendered) table.dataview.table-view-table>thead>tr,
+body.wrapped-dvtable:not(.no-wrapped-dvtable-cell):not(.no-wrapped-dvtable) :is(.markdown-preview-view,.markdown-rendered) .table.dataview.table-view-table>tbody>tr,
+body.wrapped-table:not(.no-wrapped-table-cell):not(.no-wrapped-table) :is(.markdown-preview-view,.markdown-rendered) table:not([class*="table-view-table"]) >thead>tr,
+body.wrapped-table:not(.no-wrapped-table-cell):not(.no-wrapped-table) :is(.markdown-preview-view,.markdown-rendered) table:not([class*="table-view-table"]) >tbody>tr {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+body.no-wrapped-dvtable .block-language-dataview,
+body.no-wrapped-table table:not([class*="table-view-table"]) {
+    width: 100%;
+    margin: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+body.no-wrapped-dvtable table.dataview th {
+    padding: 0 20px;
+    font-size: 1em;
+}
+
+body.no-wrapped-dvtable table.dataview tbody tr td:first-child {
+    font-size: 0.9em;
+}
+
+body.no-wrapped-dvtable table.dataview td:not(:first-child),
+body.no-wrapped-dvtable table.dataview tr > td:last-of-type {
+    font-size: 0.9em;
+    max-width: unset;
+}
+
+body.auto-serial-number-dvtable .markdown-source-view:not(.cards) .dataview.table-view-table {
+    counter-reset: sec;
+}
+body.auto-serial-number-dvtable .markdown-source-view:not(.cards) .dataview.table-view-table> tbody > tr> td:first-child::before {
+    counter-increment: sec;
+    content:counter(sec) ". ";
+}
+
+body.auto-serial-number-dvtable .markdown-preview-view:not(.cards) .dataview.table-view-table {
+    counter-reset: section;
+}
+body.auto-serial-number-dvtable .markdown-preview-view:not(.cards) .dataview.table-view-table> tbody > tr> td:first-child::before {
+    counter-increment: section;
+    content:counter(section) ". ";
+}
+
+body:not(.no-wrapped-dvtable) :is(.markdown-preview-view,.markdown-rendered) .table-view-table>tbody>tr>td,
+body:not(.no-wrapped-dvtable) .markdown-source-view.mod-cm6 .table-view-table>tbody>tr>td {
+    max-width: 18em;
+}
+
+:is(.markdown-preview-view,.markdown-rendered) table tbody>tr,
+.markdown-source-view table tbody>tr {
+    background-color: var(--table-background-color);
+}
+
+:is(.markdown-preview-view,.markdown-rendered) :is(th,td) {
+    padding: 4px 10px;
+    border: none;
+}
+
+:is(.markdown-preview-view,.markdown-rendered,.markdown-source-view) th,
+:is(.markdown-preview-view,.markdown-rendered,.markdown-source-view) thead tr > th:nth-child(2n+2) {
+    background-color: black;
+    font-family: var(--font-family-strong);
+}
+
+/* Table resize how you want in bottom right corner*/
+
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table) {
+    border-collapse: collapse;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table):active,
+:is(.markdown-preview-section,.markdown-rendered) table:not(.dataview.table-view-table):hover {
+    overflow: hidden;
+    resize: both !important;
+}
+
+body .markdown-preview-view th,
+body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+body .table-view-table>thead>tr>th {
+    background-image: none;
+}
+
+/* @ MARKDOWN C3 Code Blocks */
+
+
+/* Code blocks in preview */
+
+pre code {
+    font-family: monaco !important;
+    font-size: var(--font-size-code) !important;
+    padding: 6px !important;
+    line-height: normal;
+    display: block;
+    color: var(--code-block)  !important;
+}
+
+/* padding of code blocks in preview */
+
+.markdown-preview-view pre {
+    padding: 0px !important;
+}
+
+/* remove the shadow that typically affect light mode */
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
+    text-shadow: none !important;
+    color: var(--text-faint) !important;
+    background-color: var(--pre-code);
+}
+
+/* ~~~~~~~~~~~~~~~~~~  MARKDOWN D: Others ~~~~~~~~~~~~~~~~~~ */
+
+/* @ MARKDOWN D1: HR*/
+
+/* ..... https://github.com/TriDiamond/Obsidian-Obsidianite */
+
+.markdown-preview-view hr {
+    margin-block-start: 3.33em;
+    margin-block-end: 3.33em;
+    border: none;
+    height: 2.4px;
+    background-image: linear-gradient(to right, var(--background-primary), var(--text-accent), var(--background-primary));
+}
+
+.markdown-preview-view hr::after {
+    /* content: '§'; */
+    /* content: '֎'; */
+    content: 'ᛟ';
+
+    display: inline-block;
+    position: absolute;
+    left: 51%;
+    transform: translate(-100%, -50%) rotate(0deg);
+    transform-origin: 50% 50%;
+    padding: 0.4rem;
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+}
+
+/* ~~~~~~~~~~~~~~~~~~ Callouts ~~~~~~~~~~~~~~~~~~ */
+
+:root{
+    --callout-color: rgba(103, 161, 149, 0.459);
+}
+
+.callout-content {
+    overflow-x: auto;
+    padding: 0px 15px;
+    text-align: justify;
+    color: var(--text-normal) !important;
+}
+-5px 35px 33px 35px
+.callout-icon .svg-icon {
+    color: var(--text-normal);
+}
+
+.callout-title {
+    padding: 8px;
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    background-color: rgba(var(--callout-color), 0.1);
+    text-align: justify;
+    color: white;
+}
+
+.callout-title-inner {
+    color: var(--text-normal);
+}
+
+.callout.is-collapsible .callout-title {
+    color: var(--text-normal);
+}
+
+.callout-content {
+    overflow-x: auto;
+    padding: 0px 15px;
+    text-align: justify;
+    /* min-width: 222px; */
+    color: white;
+}
+
+.callout[data-callout="info"], .callout[data-callout="todo"] {
+    --callout-color: 0, 184, 212;
+}
+
+.callout {
+    background-color: rgba(var(--callout-color), 0.3);
+
+    padding: 0px;
+}
+
+/* Fold arrow when collapsable callouts */
+
+.callout-fold:hover {
+    color: var(--text-accent);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~ AS F: Themed Loading Page  ~~~~~~~~~~~~~~~~~~ */
+
+/* ─────────────── COMMON B6- Themed Loading Pages ────────────────── */
+
+/* https://github.com/Emrie-Candera/Bubble-Space-Theme/blob/main/Mini%20Snippet%20Store/Themed%20Loading%20Page.css */
+
+/*B6.1 Dark Mode (Space)*/
+
+
+
+.theme-dark .progress-bar-message::before {
+    content: ""; display: block;
+    background: center / contain no-repeat url("https://www.tumblr.com/guitar-slut/154962043348?raw=true");
+    width: 300px; height: 200px;
+    margin-left: 0; margin-right: 0;
+    margin-top: -50px; margin-bottom: 0px;
+    border-radius: none;
+}
+
+.theme-dark .progress-bar-message {
+    font-family: arial;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.theme-dark .progress-bar {
+background-color: #262639;
+}
+
+/*B6.2 Light Mode (Bubble)*/
+
+.theme-light .progress-bar-message::before {
+    content: ""; display: block;
+    background: center / contain no-repeat url("https://github.com/Emrie-Candera/Bubble-Space-Theme/blob/main/theme%20image/Astronaut.gif?raw=true");
+    width: 300px; height: 200px;
+    margin-left: 0; margin-right: 0;
+    margin-top: -50px; margin-bottom: 0px;
+    border-radius: none;
+}
+
+.theme-light .progress-bar-message {
+    font-family: arial;
+    font-size: 21px;
+    font-weight: bolder;
+    color: white;
+}
+
+.theme-light .progress-bar-line {
+    background-color:rgb(255, 255, 255)
+}
+
+.theme-light .proress-bar-subline {
+    background-color: rgb(255, 255, 255);
+}
+
+.theme-light .progress-bar {
+    background-color: rgb(75, 168, 231)    ;
+}
+
+
+
+/* ========= PART IV. ADDITIONAL SNIPPETS ========= */
+
+
+/*=========================*/
+/* Snippet -  Zoom images */
+/*=======================*/
+
+.markdown-preview-view img {
+    cursor: zoom-in;
+    border-radius: 7px;
+    transition: 90ms !important;
+}
+
+.markdown-preview-view img:active {
+    cursor:zoom-out;
+    display:block;
+    z-index:100;
+    position:fixed;
+    max-height:100%;
+    max-width:100%;
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    margin:0 auto;
+    text-align:center;
+    padding: 24px;
+    left:0;
+    right:0;
+    bottom:0;
+    background:var(--background-primary);
+    transition: 30ms !important;
+}
+
+/*-------------------------------*/
+/* End - Snippet -  Zoom images */
+/*-----------------------------*/
+
+/*===========================================*/
+/* Snippet - Image caption / Figure Caption */
+/*=========================================*/
+
+
+.callout[data-callout="imagen"] {
+    background-color: var(--background-primary-alt);
+    --callout-icon: image;
+    --callout-title-color: white;
+    --callout-color: white;
+    margin: 5px 35px 30px 35px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.callout[data-callout="imagen"] .callout-content {
+    border-top: 1.3px solid rgb(138, 138, 138);
+
+}
+
+/*-------------------------------------------------*/
+/* End - Snippet - Image caption / Figure Caption */
+/*-----------------------------------------------*/
+
+/*==============================================*/
+/* Snippet - Center images + Left or right function */
+/*==============================================*/
+
+img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transition: 150ms;
+}
+
+img[alt*="left"], .image-embed[src*="#left"], img[src*="#left"] span.left img {
+    float: left !important;
+    margin-right: 3.5% !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+img[alt*="right"], .image-embed[src*="#right"], img[src*="#right"], span.right img {
+    float: right !important;
+    margin-left: 2.5% !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/*---------------------------------------------------------*/
+/* End - Snippet - Center images + Left or right function */
+/*-------------------------------------------------------*/
+
+
+/*==================*/
+/* Snippet - Cards */
+/*================*/
+
+/* MIT License | Copyright (c) Stephan Ango (@kepano) 
+Cards snippet for Obsidian
+author: @kepano
+Support kepano's work:https://github.com/sponsors/kepano */
+
+:root {
+    --cards-min-width: 174px;
+    --cards-max-width: 1fr;
+    --cards-mobile-width: 150px;
+    --cards-image-height: 400px;
+    --cards-padding: 1.2em;
+    --cards-image-fit: contain;
+    --cards-background: transparent;
+    --cards-border-width: 1px;
+    --cards-min-width: var(--cards-mobile-width);
+}
+
+.cards.markdown-rendered tr {
+    height: auto;
+}
+
+    @media (max-width: 400pt) {
+}
+
+/* Make the grid and basic cards */
+
+.cards.table-100 table.dataview tbody,
+.table-100 .cards table.dataview tbody {
+    padding: 0.25rem 0.75rem;
+}
+
+.cards .el-pre + .el-lang-dataview .table-view-thead {
+    padding-top: 8px;
+}
+
+.cards table.dataview tbody {
+    clear: both;
+    padding: 0.3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+    grid-column-gap: 0.65rem;
+    grid-row-gap: 0.65rem;
+}
+
+.cards table.dataview > tbody > tr {
+    background-color: var(--background-secondary-alt) ;
+    border: 2px solid var(--text-normal);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 calc(var(--cards-padding)/3) 0;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.1s linear;
+}
+
+.cards table.dataview > tbody > tr:hover {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.21) !important;
+    transition: box-shadow 0.15s linear;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+    animation-name: cards_border;
+    color: 
+}
+
+@keyframes cards_border {
+0% { border: 2.15px solid var(--text-accent);}
+50% { border: 3.15px solid rgb(255, 228, 200);}
+100% {border: 2.15px solid var(--text-accent);}
+}
+
+
+/* Styling elements inside cards */
+
+.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.trim-cols .cards table.dataview tbody > tr > td {
+    white-space: normal;
+}
+
+.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.cards table.dataview tbody > tr > td {
+    border-bottom: none;
+    padding: 0px !important;
+    line-height: 1.05;
+    width: calc(100% - var(--cards-padding));
+    margin: 0 auto;
+    overflow: visible !important;
+    max-width: 100%;
+    display: flex; 
+    align-content: space-around;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.cards table.dataview tbody > tr > td .el-p {
+    display: block;
+    width: 100%;
+}
+
+.cards table.dataview tbody > tr > td:first-child {
+    font-weight: var(--bold-weight);
+}
+
+.cards table.dataview tbody > tr > td:first-child a {
+    padding: 0 0 calc(var(--cards-padding)/3);
+    display: block;
+    text-align: center;
+}
+
+.cards table.dataview tbody > tr > td:not(:first-child) {
+    font-size: 90%;
+    color: var(--text-muted);
+}
+
+/* Helpers */
+
+.cards-cover.cards table.dataview tbody > tr > td img {
+    object-fit: cover; }
+
+.cards-16-9.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 16/9; }
+
+.cards-1-1.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 1/1; }
+
+.cards-2-1.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 2/1; }
+
+.cards-2-3.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 2/3; }
+
+.cards-align-bottom.cards table.dataview tbody > tr > td:last-child {
+    align-items: flex-end;
+    flex-grow: 1; }
+
+.cards-cols-1 table.dataview tbody {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); }
+
+.cards-cols-2 table.dataview tbody {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (min-width: 400pt) {
+    .cards-cols-3 table.dataview tbody {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .cards-cols-4 table.dataview tbody {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .cards-cols-5 table.dataview tbody {
+        grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+    .cards-cols-6 table.dataview tbody {
+        grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+    .cards-cols-7 table.dataview tbody {
+        grid-template-columns: repeat(7, minmax(0, 1fr)); }
+
+    .cards-cols-8 table.dataview tbody {
+        grid-template-columns: repeat(8, minmax(0, 1fr)); } }
+
+
+/* Paragraphs */
+.cards table.dataview tbody > tr > td > *:not(.el-embed-image) {
+    padding: calc(var(--cards-padding)/4) 0;
+    text-align: center;
+}
+
+.cards table.dataview tbody > tr > td:not(:last-child):not(:first-child) > .el-p:not(.el-embed-image) {
+    border-bottom: 1px solid var(--background-modifier-border);
+    width: 100%;
+}
+
+/* Links */
+
+.cards table.dataview tbody > tr > td a {
+    text-decoration: none;
+}
+
+.links-int-on .cards table.dataview tbody > tr > td a {
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.cards table.dataview tbody > tr > td > button {
+    width: 100%;
+    margin: calc(var(--cards-padding)/2) 0;
+}
+
+.cards table.dataview tbody > tr > td:last-child > button {
+    margin-bottom: calc(var(--cards-padding)/6); }
+
+    /* Lists */
+
+.cards table.dataview tbody > tr > td > ul {
+    width: 100%;
+    padding: 0.1em 0 !important;
+    margin: 0 auto !important;
+}
+
+.cards table.dataview tbody > tr > td:not(:last-child) > ul {
+    border-bottom: 1px solid var(--background-modifier-border);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Images */
+
+.cards table.dataview tbody > tr > td img {
+    width: 100%;
+    object-fit: var(--cards-image-fit);
+}
+
+  /* Sorting */
+
+  .cards.table-100 table.dataview thead > tr,
+  .table-100 .cards table.dataview thead > tr {
+      right: 0.75rem;
+  }
+  
+  .table-100 .cards table.dataview thead:before,
+  .cards.table-100 table.dataview thead:before {
+      margin-right: 0.75rem;
+  }
+  
+  .cards table.dataview thead {
+      user-select: none;
+      width: 180px;
+      display: block;
+      float: right;
+      position: relative;
+      text-align: right;
+      height: 24px;
+      padding-bottom: 4px;
+  }
+  
+  .cards table.dataview thead:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: var(--icon-size);
+      background-repeat: no-repeat;
+      cursor: var(--cursor);
+      text-align: right;
+      padding: 4px 10px;
+      margin-bottom: 2px;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: var(--font-adaptive-small);
+  }
+  
+  .cards table.dataview thead:before {
+      opacity: 0.65;
+      background-position: center center;
+      background-size: var(--icon-size);
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  }
+  
+  .theme-light .cards table.dataview thead:before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  }
+  
+  .cards table.dataview thead:hover:before {
+      opacity: 0.9;
+  }
+  
+  .cards table.dataview thead > tr {
+      top: 0;
+      position: absolute;
+      display: none;
+      z-index: 9;
+      border: 1px solid var(--background-modifier-border);
+      background-color: var(--background-secondary);
+      box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+      padding: 6px;
+      border-radius: 6px;
+      flex-direction: column;
+      margin: 26px 0 0 0;
+      width: 100%; 
+  }
+  
+  .cards table.dataview thead:hover > tr {
+      display: flex; 
+  }
+  
+  .cards table.dataview thead > tr > th {
+      width: 100%;
+      font-weight: 400;
+      color: var(--text-muted);
+      cursor: var(--cursor-link);
+      border: none;
+      background-color: var(--background-secondary); 
+  }
+  
+  .cards table.dataview tbody > tr > td:first-child {
+      font-weight: var(--bold-weight);
+      justify-content: center;
+  }
+  
+  .cards.markdown-preview-view tbody tr:hover {
+      background-color: black;
+  }
+
+/*------------------------*/
+/* End - Snippet - Cards */
+/*----------------------*/
+
+/*======================*/
+/* Snippet - Checboxes */
+/*====================*/
+
+/*
+Minimal theme, by Kepano (https://github.com/kepano)
+https://minimal.guide/Block+types/Checklists
+*/
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid var(--text-faint);
+}
+
+.theme-dark {
+    --red-rgb: 255,85,85;
+    --orange-rgb: 255,184,108;
+    --yellow-rgb: 241,250,140;
+    --green-rgb: 80,250,123;
+    --cyan-rgb: 139,233,253;
+    --blue-rgb: 98,114,164;
+    --purple-rgb: 189,147,249;
+    --pink-rgb: 255,121,198;
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --yellow: #f1fa8c;
+    --green: #50fa7b;
+    --cyan: #8be9fd;
+    --blue: #6495ed;
+    --purple: #bd93f9;
+    --pink: #ff79c6;
+}
+
+.theme-light {
+    --red-rgb: 255,85,85;
+    --orange-rgb: 255,184,108;
+    --yellow-rgb: 241,250,140;
+    --green-rgb: 80,250,123;
+    --cyan-rgb: 139,233,253;
+    --blue-rgb: 98,114,164;
+    --purple-rgb: 189,147,249;
+    --pink-rgb: 255,121,198;
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --yellow: #f1fa8c;
+    --green: #50fa7b;
+    --cyan: #8be9fd;
+    --blue: #6495ed;
+    --purple: #bd93f9;
+    --pink: #ff79c6;
+}
+
+input[type=checkbox]:checked:after {
+    background-color: unset !important;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid var(--text-faint);
+}
+input[type=checkbox]:focus{
+    outline:0;
+}
+input[type=checkbox]:checked {
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>);
+}
+
+.markdown-preview-view .task-list-item-checkbox { margin-left:5px; } 
+.markdown-preview-view .task-list-item { padding-inline-start:0px; }
+
+
+/* Checklists, task lists, checkboxes */
+
+:root {
+    --checkbox-size2:17px;
+    --checkbox-icon:20px;
+    --checkbox-radius:50%;
+    --checkbox-top:2px;
+    --checkbox-left:0px;
+    --checkbox-margin:0px 6px 0px -1.35em; }
+
+.checkbox-square {
+    --checkbox-size2:15px;
+    --checkbox-icon:17px;
+    --checkbox-radius:4px;
+    --checkbox-top:1px;
+    --checkbox-left:0px;
+    --checkbox-margin:0px 8px 0px -1.35em;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--checkbox-radius);
+    border: 1px solid var(--text-faint);
+    padding: 0;
+    margin: 0 6px 0 0;
+    width: var(--checkbox-size2);
+    height: var(--checkbox-size2);
+}
+
+ul > li.task-list-item[data-task="x"], ul > li.task-list-item[data-task="X"] {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+input[type=checkbox]:hover,
+input[type=checkbox]:focus {
+    outline: 0;
+    border-color: var(--text-muted);
+}
+
+.checklist-plugin-main .group .compact > .toggle .checked,
+.is-flashing input[type=checkbox]:checked,
+input[type=checkbox]:checked {
+    background-color: var(--color-green);
+    border: 1px solid var(--background-modifier-accent);
+    background-position: 44% 55%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>'); }
+
+.markdown-preview-section > .contains-task-list {
+    padding-bottom: 0.5em;
+}
+
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
+body .markdown-preview-view ul > li.task-list-item.is-checked {
+    color: var(--text-normal);
+    opacity: ;
+}
+
+body.minimal-strike-lists .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="x"]),
+body.minimal-strike-lists .markdown-preview-view ul li[data-task="x"].task-list-item.is-checked,
+body.minimal-strike-lists li[data-task="x"].task-list-item.is-checked {
+    color: var(--text-faint);
+}
+
+/* Preview offset */
+
+ul > li.task-list-item .task-list-item-checkbox {
+    margin-left: -1.35em;
+}
+
+/* Editor */
+
+.mod-cm6 .HyperMD-task-line[data-task] .task-list-item-checkbox {
+    margin: -2px 1px 0 -0.6em;
+}
+
+.is-mobile .mod-cm6 .HyperMD-task-line[data-task] .task-list-item-checkbox {
+    margin-left: -0.4em;
+}
+
+.is-mobile .markdown-preview-view input[type=checkbox].task-list-item-checkbox {
+    top: 0.2em;
+}
+
+.task-list-item-checkbox,
+.markdown-preview-view .task-list-item-checkbox {
+    filter: none;
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    top: var(--checkbox-top);
+    left: var(--checkbox-left);
+    line-height: 0;
+}
+
+.markdown-preview-view ul > li.task-list-item {
+    text-indent: 0;
+    line-height: var(--line-height);
+}
+
+.markdown-preview-view .task-list-item {
+    padding-inline-start: 0;
+}
+
+.side-dock-plugin-panel-inner {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+/* Toggle switches */
+
+.checkbox-container {
+    background-color: var(--background-secondary);
+    box-shadow: inset 0 0px 1px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(114, 114, 114);
+    width: 40px;
+    height: 22px;
+    cursor: var(--cursor);
+}
+
+.checkbox-container.is-enabled {
+    border-color: var(--interactive-accent);
+}
+
+.checkbox-container.is-enabled:after {
+    transform: translate3d(20px, 0, 0);
+}
+
+.checkbox-container:after {
+    background: var(--text-normal);
+    border: none;
+    margin: 1px 0 0 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 26px;
+    transform: translate3d(2px, 0, 0);
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s linear;
+}
+
+.checkbox-container:hover:after {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s linear
+ }
+
+/* Checklist icons */
+
+.cm-formatting.cm-formatting-task.cm-property {
+    font-family: var(--font-monospace);
+    font-size: 90%; }
+
+input[data-task=">"]:checked,
+input[data-task="!"]:checked,
+input[data-task="-"]:checked,
+input[data-task="<"]:checked,
+input[data-task="l"]:checked,
+input[data-task="*"]:checked,
+input[data-task="I"]:checked,
+input[data-task="p"]:checked,
+input[data-task="f"]:checked,
+input[data-task="k"]:checked,
+input[data-task="u"]:checked,
+input[data-task="w"]:checked,
+input[data-task="c"]:checked,
+input[data-task="d"]:checked,
+input[data-task="b"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task="!"] > input:checked,
+li[data-task="-"] > input:checked,
+li[data-task="<"] > input:checked,
+li[data-task="l"] > input:checked,
+li[data-task="*"] > input:checked,
+li[data-task="I"] > input:checked,
+li[data-task="p"] > input:checked,
+li[data-task="f"] > input:checked,
+li[data-task="k"] > input:checked,
+li[data-task="u"] > input:checked,
+li[data-task="d"] > input:checked,
+li[data-task="w"] > input:checked,
+li[data-task="c"] > input:checked,
+li[data-task="b"] > input:checked,
+li[data-task=">"] > p > input:checked,
+li[data-task="!"] > p > input:checked,
+li[data-task="-"] > p > input:checked,
+li[data-task="<"] > p > input:checked,
+li[data-task="l"] > p > input:checked,
+li[data-task="*"] > p > input:checked,
+li[data-task="I"] > p > input:checked,
+li[data-task="p"] > p > input:checked,
+li[data-task="f"] > p > input:checked,
+li[data-task="k"] > p > input:checked,
+li[data-task="u"] > p > input:checked,
+li[data-task="d"] > p > input:checked,
+li[data-task="w"] > p > input:checked,
+li[data-task="c"] > p > input:checked,
+li[data-task="b"] > p > input:checked {
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: currentColor;
+    -webkit-mask-size: var(--checkbox-icon);
+    -webkit-mask-position: 50% 50%;
+}
+
+/* [>] Forwarded */
+
+input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+    color: var(--text-faint);
+    transform: rotate(90deg);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E"); }
+
+/* [<] Schedule */
+
+input[data-task="<"]:checked,
+li[data-task="<"] > input:checked,
+li[data-task="<"] > p > input:checked {
+    color: var(--text-faint);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [?] Question */
+
+input[data-task="?"]:checked,
+li[data-task="?"] > input:checked,
+l  i[data-task="?"] > p > input:checked {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    background-position: 50% 50%;
+    background-size: 200% 90%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E'); }
+.theme-dark input[data-task="?"]:checked,
+.theme-dark li[data-task="?"] > input:checked,
+.theme-dark li[data-task="?"] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E'); }
+
+/* [/] Incomplete */
+
+input[data-task="/"]:checked,
+li[data-task="/"] > input:checked,
+li[data-task="/"] > p > input:checked {
+    background-image: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden; }
+    input[data-task="/"]:checked:after,
+    li[data-task="/"] > input:checked:after,
+    li[data-task="/"] > p > input:checked:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background-color: var(--background-modifier-accent);
+    width: calc(50% - 0.5px);
+    height: 100%; }
+
+/* [!] Important */
+
+input[data-task="!"]:checked,
+li[data-task="!"] > input:checked,
+li[data-task="!"] > p > input:checked {
+    color: var(--orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* ["] Quote */
+
+input[data-task="“"]:checked,
+li[data-task="“"] > input:checked,
+li[data-task="“"] > p > input:checked,
+input[data-task="\""]:checked,
+li[data-task="\""] > input:checked,
+li[data-task="\""] > p > input:checked {
+    background-position: 50% 50%;
+    background-color: var(--cyan);
+    border-color: var(--cyan);
+    background-size: 75%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E'); }
+.theme-dark input[data-task="“"]:checked,
+.theme-dark li[data-task="“"] > input:checked,
+.theme-dark li[data-task="“"] > p > input:checked,
+.theme-dark input[data-task="\""]:checked,
+.theme-dark li[data-task="\""] > input:checked,
+.theme-dark li[data-task="\""] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E'); }
+
+/* [-] Canceled */
+
+input[data-task="-"]:checked,
+li[data-task="-"] > input:checked,
+li[data-task="-"] > p > input:checked {
+    color: var(--text-faint);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+
+/* [*] Star */
+
+input[data-task="*"]:checked,
+li[data-task="*"] > input:checked,
+li[data-task="*"] > p > input:checked {
+    color: var(--yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+/* [l] Location */
+input[data-task="l"]:checked,
+li[data-task="l"] > input:checked,
+li[data-task="l"] > p > input:checked {
+    color: var(--red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [i] Info */
+
+input[data-task="i"]:checked,
+li[data-task="i"] > input:checked,
+li[data-task="i"] > p > input:checked {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E'); }
+
+.theme-dark input[data-task="i"]:checked,
+.theme-dark li[data-task="i"] > input:checked,
+.theme-dark li[data-task="i"] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E'); }
+
+/* [S] Amount/savings/money */
+
+input[data-task="S"]:checked,
+li[data-task="S"] > input:checked,
+li[data-task="S"] > p > input:checked {
+    border-color: var(--green);
+    background-color: var(--green);
+    background-size: 100%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E'); }
+
+    .theme-dark input[data-task="S"]:checked,
+.theme-dark li[data-task="S"] > input:checked,
+.theme-dark li[data-task="S"] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E'); }
+
+/* [I] Idea/lightbulb */
+
+input[data-task="I"]:checked,
+li[data-task="I"] > input:checked,
+li[data-task="I"] > p > input:checked {
+    color: var(--yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E"); }
+
+/* [f] Fire */
+
+input[data-task="f"]:checked,
+li[data-task="f"] > input:checked,
+li[data-task="f"] > p > input:checked {
+    color: var(--red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+
+/* [k] Key */
+
+input[data-task="k"]:checked,
+li[data-task="k"] > input:checked,
+li[data-task="k"] > p > input:checked {
+    color: var(--yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [u] Up */
+
+input[data-task="u"]:checked,
+li[data-task="u"] > input:checked,
+li[data-task="u"] > p > input:checked {
+    color: var(--green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [d] Down */
+
+input[data-task="d"]:checked,
+li[data-task="d"] > input:checked,
+li[data-task="d"] > p > input:checked {
+    color: var(--red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [w] Win */
+
+input[data-task="w"]:checked,
+li[data-task="w"] > input:checked,
+li[data-task="w"] > p > input:checked {
+    color: var(--purple);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
+
+/* [p] Pros */
+
+input[data-task="p"]:checked,
+li[data-task="p"] > input:checked,
+li[data-task="p"] > p > input:checked {
+    color: var(--green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E"); }
+
+/* [c] Cons */
+input[data-task="c"]:checked,
+li[data-task="c"] > input:checked,
+li[data-task="c"] > p > input:checked {
+    color: var(--orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E"); }
+
+/* [b] Bookmark */
+
+input[data-task="b"]:checked,
+li[data-task="b"] > input:checked,
+li[data-task="b"] > p > input:checked {
+    color: var(--orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E"); }
+
+body:not(.minimal-icons-off) svg.checkbox-glyph {
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="black" d="M10.933 13.519l-2.226-2.226l-1.414 1.414l3.774 3.774l5.702-6.84l-1.538-1.282z"/><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z" fill="currentColor"></path></svg>'); }
+
+.is-mobile .checkbox-container {
+    flex: 1 0 40px;
+    max-width: 40px;
+}
+
+.mod-publish .file-tree-item-checkbox {
+    filter: hue-rotate(0);
+}
+
+.checklist-plugin-main .group .checkbox {
+    border: 1px solid var(--background-modifier-border-hover);
+    min-height: 18px;
+    min-width: 18px;
+    height: 18px;
+    width: 18px; }
+
+checklist-plugin-main .group .checkbox:hover {
+    border: 1px solid var(--background-modifier-border-focus); }
+
+body .kanban-plugin__checkbox-label {
+    font-size: var(--font-adaptive-small);
+    color: var(--text-muted); }
+
+
+/* Checkbox */
+
+.block-language-leaflet .leaflet-control-expandable-list .input-container .input-item > input {
+    appearance: none; }
+
+ul.todoist-task-list > li.task-list-item .task-list-item-checkbox {
+    margin: 0; }
+
+.is-live-preview .contains-task-list.todoist-task-list .task-metadata {
+    padding-left: calc(var(--checkbox-size2) + 0.6em); }
+
+body .todoist-p1 > input[type="checkbox"]:hover {
+    opacity: 0.8; }
+
+body .todoist-p2 > input[type="checkbox"] {
+    border: 1px solid var(--yellow); }
+
+body .todoist-p2 > input[type="checkbox"]:hover {
+    opacity: 0.8; }
+
+body .todoist-p3 > input[type="checkbox"] {
+    border: 1px solid var(--blue); }
+
+/*----------------------*/
+/* Snippet - Checboxes */
+/*--------------------*/
+    
+
+/*==================================*/
+/* Snippet - Customize tag colours */
+/*================================*/
+
+a.tag[href*='#ToDo'] {
+    color: white !important;
+    background-color: rgb(158, 0, 87) !important;
+}
+
+a.tag[href*='#ToDo']:hover {
+    color: rgb(158, 0, 87) !important;
+    background-color: white !important;
+    font-weight: bold;
+}
+
+span.cm-formatting cm-formatting-hashtag  cm-hashtag cm-hashtag-begin cm-meta cm-tag-ToDo{
+    background-color: rgb(173 0 0) !important;
+    color: white !important;
+}
+
+a.tag[href*='#Completed']{
+    background-color: green !important;
+    color: white !important;
+}
+
+a.tag[href*='#Completed']:hover{
+    background-color: white !important;
+    color: green !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-Completed{
+    background-color: green !important;
+    color: white !important;
+}
+
+a.tag[href*='#InProgress']{
+    background-color: rgb(166 104 0) !important;
+    color: white !important;
+}
+
+a.tag[href*='#InProgress']:hover{
+    color: rgb(166 104 0) !important;
+    background-color: white !important; 
+    font-weight: bold;
+}
+
+a.tag[href*='#regrabar']{
+    background-color: rgb(203 0 0) !important;
+    color: white !important;
+}
+
+a.tag[href*='#regrabar']:hover{
+    background-color:  white !important;
+    color: rgb(203 0 0) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-regrabar{
+    background-color: rgb(203 0 0) !important;
+    color: white !important;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-ToDo{
+    background-color: rgb(158, 0, 87) !important;
+    ;
+    color: white !important;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-InProgress {
+    background-color: rgb(166 104 0);
+    color: white !important;
+}
+
+
+a.tag[href*='#guion'] {
+    background-color: rgb(161, 20, 255) !important;
+    color: white !important;
+}
+
+a.tag[href*='#guion']:hover {
+    background-color:  white !important;
+    color: rgb(161, 20, 255) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-guion {
+    background-color: rgb(161, 20, 255) !important;
+    color: white !important;
+}
+
+a.tag[href*='#grabar'] {
+    background-color: rgb(141, 0, 206) !important;
+    color: white !important;
+}
+
+a.tag[href*='#grabar']:hover {
+    background-color:  white !important;
+    color: rgb(141, 0, 206) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-grabar {
+    background-color: rgb(141, 0, 206) !important;
+    color: white !important;
+}
+
+a.tag[href*='#editar'] {
+    background-color: rgb(114, 0, 163) !important;
+    color: white !important;
+}
+
+a.tag[href*='#editar']:hover {
+    background-color:  white !important;
+    color: rgb(114, 0, 163) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-editar {
+    background-color: rgb(114, 0, 163) !important;
+    color: white !important;
+}
+
+a.tag[href*='#miniatura'] {
+    background-color: rgb(98, 0, 109) !important;
+    color: white !important;
+}
+
+a.tag[href*='#miniatura']:hover {
+    background-color:  white !important;
+    color: rgb(98, 0, 109) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-miniatura {
+    background-color: rgb(98, 0, 109) !important;
+    color: white !important;
+}
+
+a.tag[href*='#publicar'] {
+    background-color: rgb(68, 0, 66) !important;
+    color: white !important;
+}
+
+a.tag[href*='#publicar']:hover {
+    background-color:  white !important;
+    color: rgb(68, 0, 66) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-publicar {
+    background-color: rgb(68, 0, 66) !important;
+    color: white !important;
+}
+
+a.tag[href*='#compartirRRSS'] {
+    background-color: rgb(56, 0, 31) !important;
+    color: white !important;
+}
+
+a.tag[href*='#compartirRRSS']:hover {
+    background-color:  white !important;
+    color: rgb(56, 0, 31) !important;
+    font-weight: bold;
+}
+
+span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-compartirRRSS {
+    background-color: rgb(56, 0, 31) !important;
+    color: white !important;
+}
+
+/*----------------------------------------*/
+/* End - Snippet - Customize tag colours */
+/*--------------------------------------*/
+
+
+/*===================*/
+/* Snippet - Images */
+/*=================*/
+
+/* Embedded images - Preview mode */
+
+img:not(.emoji) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+/* Image hover */
+
+.theme-dark img:hover {
+    transform: scale(1.02);
+    transition: transform 0.45s ease-in-out 0s;
+}
+
+.theme-light img:hover {
+    transform: scale(1.02);
+    transition: transform 0.45s ease-in-out 0s;
+}
+
+img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.45s ease-in-out 0s;
+}
+
+/*-------------------------*/
+/* End - Snippet - Images */
+/*-----------------------*/
+
+/*====================*/
+/* Snippet - Popover */
+/*==================*/
+
+.popover {
+    border: 1px solid var(--border-color);
+    background-color: var(--background-secondary);
+}
+
+
+/* Bigger link popup preview */
+
+.popover.hover-popover {
+    transform: scale(0.95); /* makes the content smaller */
+    max-width: 550px;     /* was 400 */
+    min-width: 500px;     /* was 400 */
+    border: 2px solid var(--text-accent);
+    border-radius: 23px;
+}
+
+/*--------------------------*/
+/* End - Snippet - Popover */
+/*------------------------*/
+
+/*====================*/
+/* Snippet - MathJax */
+/*==================*/
+
+mjx-math {
+    font-size: 120% !important;
+}
+
+/*--------------------------*/
+/* End - Snippet - MathJax */
+/*------------------------*/
+
+/* ============================================================ */
+/* Snippet - Active Block - Active Line - Guide line in editor */
+/* ========================================================== */
+
+.theme-dark .cm-active.cm-line {
+    border-radius: 3px;
+    animation-name: active_line_dark;
+    animation-duration: 2.5s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes active_line_dark {
+    0% {background-color: rgb(255 218 254 / 9%);}
+    15% {background-color: rgb(255 218 254 / 9%);}
+    50% {background-color:  rgb(255 218 254 / 4%);}
+    85% {background-color: rgb(255 218 254 / 9%);}
+    100% {background-color: rgb(255 218 254 / 9%);}
+}
+
+.theme-light .cm-active.cm-line {
+    border-radius: 3px;
+    animation-name: active_line_light;
+    animation-duration: 2.3s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes active_line_light {
+    0% {background-color: rgb(157 0 121 / 8.5%);}
+    15% {background-color: rgb(157 0 121 / 8.5%);}
+    50% {background-color:  rgb(157 0 121 / 4%);}
+    85% {background-color: rgb(157 0 121 / 8.5%);}
+    100% {background-color: rgb(157 0 121 / 8.5%);}
+}
+
+/* ------------------------------------------------------------------ */
+/* End - Snippet - Active Block - Active Line - Guide line in editor */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ======================================= */
+/* Snippet - Active Block - Metadata Menu */
+/* ===================================== */
+/*
+.nav-folder .metadata-menu.fileclass-icon {
+    color: var(--text-antinormal);
+    }
+*/
+.metadata-menu.modal-container.note-fields-modal button {
+    padding: 0.2em;
+}
+
+/* ------------------------------ */
+/* End - Snippet - Metadata Menu */
+/* ---------------------------- */
+
+
+/* ======================================= */
+/* Snippet - Active Block - compact_table_dataview */
+/* ===================================== */
+
+.compact_table_dataview .table-view-table tr {
+    border-bottom: 1px solid !important;
+}
+
+.compact_table_dataview img:not(.emoji) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* ------------------------------ */
+/* End - Snippet - compact_table_dataview */
+/* ---------------------------- */
+
+
+/* =========== PART V. PLUGIN STYLING =========== */
+
+/*===================*/
+/* Plugin - Banners */
+/*=================*/
+
+.obsidian-banner .banner-image.draggable {
+    cursor: grab;
+    border: none;
+    border-radius: 0px;
+}
+
+.obsidian-banner img:not(.emoji){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*-------------------------*/
+/* End - Plugin - Banners */
+/*-----------------------*/
+
+/*====================*/
+/* Plugin - Calendar */
+/*==================*/
+
+/* CSS by the theme Blue Topaz (https://github.com/whyt-byte/Blue-Topaz_Obsidian-css)*/
+
+#calendar-container {
+    --color-background-heading: transparent;
+    --color-background-weeknum: transparent;
+    --color-background-day: transparent;
+    --color-background-weekend: transparent;
+    
+    --color-dot: var(--text-accent);
+    --color-arrow: currentColor;
+    --color-button: var(--text-muted);
+    --color-text-weeknum: var(--calendar-week-color);
+    
+    --color-text-title: var(--text-normal);
+    --color-text-heading: var(--text-normal);
+    --color-text-day: var(--text-normal);
+    --color-text-today: var(--text-accent);
+
+    padding: 0px 0px 0px 0px;
+    margin: -25px -10px 0px -9px;
+    line-height: 1;
+    border-radius: 5px !important;
+}
+
+/*表格调整*/
+/*星期*/
+
+#calendar-container th {
+    padding: 6px 0;
+    border-radius: 0px !important;
+    background-color: var(--table-thead-background-color) !important;
+}
+
+#calendar-container .week-num,
+#calendar-container .day {
+    border-radius: 0px !important;
+}
+
+/*天*/
+
+#calendar-container td {
+width: 12.5%;
+padding: 0px !important;
+line-height: 17px;
+border-radius: 0px !important;
+}
+
+#calendar-container tr {
+    border: 3px solid var(--background-secondary-alt);
+}
+
+#calendar-container .day:not(:empty):hover{
+background-color: var(--table-hover-color);
+}
+
+#calendar-container .calendar{
+margin: -8px 0;
+}
+
+#calendar-container .day:active, 
+#calendar-container .active, 
+#calendar-container .active.today {
+    background-color: var(--theme-color-translucent) !important;
+    border-radius: 5px !important;
+}
+
+#calendar-container .today {
+    border-radius: 5px !important;
+    color: var(--text-normal);
+    background-color: rgba(155, 204, 208, 0.35) !important;
+}
+
+/*“Today”*/
+
+#calendar-container .reset-button {
+    font-size: 14px !important;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    line-height: 1.2;
+    text-align: center;
+}
+/*悬停Today*/
+
+#calendar-container .reset-button:hover {
+    color: var(--text-accent);
+}
+
+/*悬停arrow*/
+
+#calendar-container .arrow:hover {
+    color: var(--theme-color);
+}
+
+/*今日笔记时红点去除 today's dot*/
+
+#calendar-container .dot {
+    stroke: transparent;
+}
+
+/*点调整 dot*/
+
+#calendar-container .dot-container {
+    margin-top: -2px;
+    margin-bottom: -1px;
+}
+/*月份调整 month*/
+
+#calendar-container .month {
+    font-size: 19px;
+    line-height: 1;
+}
+/*年份调整 year*/
+
+#calendar-container .year {
+    font-size: 19px;
+    line-height: 1;
+}
+/*星期数 week*/
+
+.theme-light #calendar-container .week-num {
+    background-color: rgba(255, 184, 108, 0.4);
+    font-weight: 900;
+}
+
+.theme-dark #calendar-container .week-num {
+    background-color: rgba(255, 184, 108, 0.2);
+    font-weight: 900;
+}
+
+/*星期数悬停 week hover*/
+
+.theme-light #calendar-container .week-num:hover {
+    background-color: rgba(255, 184, 108, 0.75);
+}
+
+.theme-dark #calendar-container .week-num:hover {
+    background-color: rgba(255, 184, 108, 0.55);
+}
+
+#calendar-container .day:active,
+#calendar-container .active,
+#calendar-container .active.today {
+    border-radius: 5px !important;
+    color: white !important;
+    background-color: rgb(255 255 255 / 30%) !important;
+}
+
+#calendar-container .day:hover {
+    background-color: rgba(255, 0, 255, 0.3) !important;
+    border-radius: 5px !important;
+}
+
+#calendar-container tbody td:first-of-type {
+    border-right: 1.2px solid #8e8e8e;
+}
+
+thead tr th {
+    border-right: 2px solid var(--text-faint);
+    padding: 9px 20px 9px 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#calendar-container .active.today {
+    border-radius: 5px !important;
+    color: white !important;
+    background-color: rgba(155, 204, 208, 0.35) !important;
+}
+
+.arrow.svelte-156w7na svg.svelte-156w7na:hover{
+    color: var(--text-accent);
+    height: 18px;
+    transition-property: all;
+    transition-duration: 155ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.arrow.svelte-156w7na svg.svelte-156w7na{
+    transition-property: all;
+    transition-duration: 155ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+/*--------------------------*/
+/* End - Plugin - Calendar */
+/*------------------------*/
+
+/*==================*/
+/* Plugin - Kanban */
+/*================*/
+
+.kanban-plugin__markdown-preview-view ul, .kanban-plugin__markdown-preview-view ol {
+    padding-inline-start: 27px;
+}
+
+button.kanban-plugin__new-item-button{
+    color: white !important;
+    background-color: revert;
+}
+
+/*------------------------*/
+/* End - Plugin - Kanban */
+/*----------------------*/
+
+
+/*==================*/
+/* Plugin - Excalidraw */
+/*================*/
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked+.ToolIcon__icon, .excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked+.ToolIcon__icon {
+    background-color: transparent !important;
+}
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked+.ToolIcon__icon {
+    --icon-fill-color: none;
+}
+
+.excalidraw .ToolIcon .ToolIcon_type_radio:checked+.ToolIcon__icon {
+    background: transparent !important;
+}
+
+.excalidraw .buttonList label.active, .excalidraw .buttonList button.active, .excalidraw .buttonList .zIndexButton.active {
+    background-color: transparent !important;
+}
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked+.ToolIcon__icon, .excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked+.ToolIcon__icon {
+    background-color: var(--text-accent) !important;
+}
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked+.ToolIcon__icon svg, .excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked+.ToolIcon__icon svg {
+    fill: black;
+}
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked+.ToolIcon__icon {
+    --icon-fill-color: black;
+}
+
+/*------------------------*/
+/* End - Plugin - Excalidraw  */
+/*----------------------*/
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~ Part VI. Other stuff  ~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ·················· No sé función de este código  ·················· */
+
+/*
+    .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+        border-bottom: 2px solid var(--background-secondary-alt);
+        background-color: var(--background-secondary);
+    }
+    
+    
+*/
+
+
+/*
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
+    content: "•";
+    position: absolute;
+    margin-left: -3px;
+    margin-top: -8px !important;
+    font-size: 24px;
+    color: var(--text-muted);
+    visibility: visible !important;
+}
+*/
+
+/*
+.workspace-tab-header.is-active {
+    background-color: var(--background-secondary);
+    color: var(--text-accent);
+    transition: transform 100ms ease-out;
+    stroke-width: 4;
+
+
+/* -------------------- */
+/*     Foldmarker      */
+/* -------------------- */
+/* 
+.CodeMirror-foldmarker {
+    color: var(--text-accent);
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: large;
+}
+*/
+
+/*  Color of the bullet points and numbers of the lists*/
+
+
+/* Flecha colapsable en modo edición de listas */
+/* 
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+    padding-right: 0em;
+}
+*/
+
+
+/* Cosas que añade david (si están desactivadas no me interesan ahora */
+
+
+/* Elimina lineas laterales del workspace */
+/* 
+.workspace-ribbon {
+    border-right: transparent;
+
+}
+
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    border-right-style: unset;
+
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    border-left-style: unset;
+
+}
+
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+    border-bottom-style: unset;
+
+}
+
+
+/* -------------------------  */
+/*  Contenedor de metadatos  */
+/* ------------------------ */
+
+/*
+
+.frontmatter-container {
+    border: 1px solid #d9d9d9;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 10px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: var(--background-primary-alt);
+    position: relative;
+}
+
+*/
+
+/***************************************/
+/*            Hide side bar            */
+/***************************************/
+
+/*
+
+.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn, 
+.workspace-ribbon:not(:hover) .side-dock-actions, 
+.workspace-ribbon:not(:hover) .side-dock-settings {
+    display:none; 
+    transition: all 300ms ease-in-out;
+}
+
+.workspace-ribbon:not(:hover) {
+    width: 0px;
+    transition: all 300ms ease-in-out;
+}
+
+.workspace-split.mod-left-split {margin-left: 0px;
+}
+.workspace-split.mod-right-split {margin-right: 0px;
+}
+*/
+
+
+/* barra vertical que corta el work space arreglada */
+
+/*
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    height: 95.6%;
+}
+*/
+
+/*
+
+body:not(.pt-disable-animations) .workspace-tab-header,
+body:not(.pt-disable-animations) .view-header,
+body:not(.pt-disable-animations) .nav-file-title:not([data-path="/"]),
+body:not(.pt-disable-animations) .nav-folder-title:not([data-path="/"]) {
+    transition: all ease 90ms;
+}
+
+*/

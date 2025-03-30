@@ -1,0 +1,204 @@
+@charset "UTF-8";
+body.theme-dark {
+  --text-highlight-bg: rgba(244, 86, 157, 0.25);
+  /* Custom variables. */
+  --color-bossidian-primary: #2faae6;
+  --color-bossidian-secondary: #ff8800;
+  --color-bossidian-primary-background: #22292c;
+  --color-bossidian-secondary-background: #1b2124;
+  --color-bossidian-pink: #f4569d;
+  /* Obsidian default variable overrides. */
+  --tag-background: rgba(14, 210, 247, 0.15);
+  --text-normal: #bebebe;
+  --background-secondary-alt: #0d0b12;
+  --interactive-accent: rgba(14, 210, 247, 0.7);
+  --interactive-accent-hover: var(--color-bossidian-secondary);
+  --text-faint: #2e88b4;
+  --text-accent: var(--color-bossidian-primary);
+  --text-accent-hover: var(--color-bossidian-secondary);
+  --link-color-hover: var(--color-bossidian-secondary);
+  --link-external-color-hover: var(--color-bossidian-secondary);
+  --background-primary: var(--color-bossidian-primary-background);
+  --background-secondary: var(--color-bossidian-secondary-background);
+  --h1-color: var(--color-bossidian-primary);
+  --h2-color: var(--color-bossidian-primary);
+  --h3-color: var(--color-bossidian-primary);
+  --h4-color: var(--color-bossidian-primary);
+  --h5-color: var(--color-bossidian-primary);
+  --h6-color: var(--color-bossidian-primary);
+  --list-marker-color: var(--color-bossidian-primary);
+  --blockquote-border-thickness: 0.25rem;
+  --blockquote-border-color: var(--color-bossidian-secondary);
+  --code-normal: var(--color-bossidian-secondary);
+  --table-border-color: #868686;
+  --nav-item-color: var(--color-bossidian-primary);
+  --nav-item-color-active: var(--color-bossidian-primary);
+  --nav-item-weight-active: 800;
+  --code-background: var(--background-secondary);
+  --nav-item-color-hover: var(--color-bossidian-primary);
+  --vault-name-color: var(--color-bossidian-primary);
+  --nav-item-color-highlighted: var(--color-bossidian-secondary);
+}
+
+/* Separator (---). */
+.cm-line hr,
+.markdown-preview-view hr {
+  border: none;
+  border-bottom: 0.0625rem solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, transparent, var(--color-bossidian-primary), transparent);
+}
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: "§";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  color: var(--color-bossidian-secondary);
+}
+
+/* Tables. */
+.markdown-rendered thead tr > th {
+  font-weight: 900;
+}
+
+/* Inline code (``). */
+.cm-s-obsidian span.cm-inline-code {
+  padding: 0.25rem 0.5rem;
+}
+.cm-s-obsidian span.cm-inline-code.cm-formatting {
+  padding: 0.25em 0;
+}
+
+/* Code blocks (``` code ```). */
+.cm-s-obsidian span.code-block-flair:not(:empty) {
+  color: var(--text-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  background: rgba(16, 14, 23, 0.86);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--color-bossidian-pink);
+}
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: #191621;
+}
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border: none;
+}
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg::before {
+  position: absolute;
+  content: "";
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  margin-top: 1.5em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  background-color: #191621;
+}
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border: none;
+}
+
+pre {
+  position: relative;
+}
+
+pre[class*=language-]::before {
+  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: #fff;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  padding: 0;
+  color: var(--text-accent) !important;
+  content: "";
+  text-transform: uppercase;
+  background: rgba(16, 14, 23, 0.86);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  z-index: 10;
+}
+
+pre[class$=javascript]::before,
+pre[class$=js]::before {
+  content: "JavaScript";
+}
+
+pre[class$=typescript]::before,
+pre[class$=ts]::before {
+  content: "typescript";
+}
+
+pre[class$=html]::before {
+  content: "html";
+}
+
+pre[class$=css]::before {
+  content: "css";
+}
+
+pre[class$=ejs]::before {
+  content: "ejs";
+}
+
+pre[class$=vue]::before {
+  content: "vue";
+}
+
+pre[class$=react]::before {
+  content: "react";
+}
+
+pre[class$=shell]::before {
+  content: "Shell";
+}
+
+pre[class$=powershell]::before {
+  content: "PowerShell";
+}
+
+pre[class$=json]::before {
+  content: "Json";
+}
+
+pre[class$=python]::before {
+  content: "python";
+}
+
+.HyperMD-header > * {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--color-bossidian-primary);
+}
+a:hover {
+  color: var(--color-bossidian-secondary);
+}
+
+.block-language-tasks {
+  border: 0.0625rem solid var(--color-bossidian-primary);
+  border-radius: 0.625rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=theme.css.map */

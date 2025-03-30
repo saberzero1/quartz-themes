@@ -1,0 +1,26 @@
+:root[saved-theme="dark"] {
+  --background-primary: var(--s-bg-transparent);
+  --background-primary-alt: var(--s-bg-transparent);
+  --background-secondary: var(--s-bg-transparent);
+  --background-secondary-alt: var(--s-bg-transparent);
+  --interactive-before: var(--s-bg-transparent);
+  --background-modifier-border: var(--s-bg-transparent);
+  --color-accent: var(--s-green-primary-color);
+  --text-normal: var(--platinum);
+  --text-faint: var(--platinum-faint);
+  --text-highlight-bg: #5b5721;
+  --interactive-accent: var(--s-green-primary-color);
+  --text-accent: var(--s-green-secondary-color);
+  --text-accent-hover: var(--s-green-primary-color);
+  --text-on-accent: var(--s-bg-primary-color);
+  --interactive-accent-hover: var(--yellow-faint);
+  --text-selection: var(--s-hover-bg-color-green);
+  --background-modifier-hover: var(--s-hover-bg-color-green);
+  --nav-collapse-icon-color: var(--s-green-primary-color);
+  --inline-title-color: white;
+  --background-modifier-border-focus: var(--s-green-primary-color);
+  --modal-background: var(--s-bg-primary-color);
+  --caret-color: #ff0000;
+  --modal-background: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
+  --table-border-color: #4e4f4e42;
+}

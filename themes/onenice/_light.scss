@@ -1,0 +1,57 @@
+:root[saved-theme="light"] {
+  --accent-h: 75;
+  --accent-s: 26%;
+  --accent-l: 48%;
+  --background-primary: #e6e6e6;
+  --background-primary-alt: #e1e1e1;
+  --background-secondary: #dcdcdc;
+  --background-secondary-alt: #dcdcdc;
+  --background-accent: #fff;
+  --background-modifier-border: #a0a1a7;
+  --background-modifier-form-field: #a0a1a7;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-success: #50a14f;
+  --background-modifier-error: #e45649;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #e45649;
+  --background-modifier-cover: #000000cc;
+  --text-title-h1: #e45649;
+  --text-title-h2: #50a14f;
+  --text-title-h3: #c18401;
+  --text-title-h4: #0184bc;
+  --text-title-h5: #a626a4;
+  --text-title-h6: #818387;
+  --text-accent: #4078f2;
+  --text-accent-hover: #e45649;
+  --text-normal: #383a42;
+  --text-muted: #2d2f30;
+  --text-faint: #101012;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: #8a9a5b;
+  --text-selection: #00000050;
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #fafafa;
+  --interactive-hover: #e5556197;
+  --interactive-accent-rgb: 21, 146, 255;
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) - 4%)
+  );
+  --scrollbar-active-thumb-bg: #4fa6ed;
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: #686868;
+  --panel-border-color: #383a42;
+  --gray-1: #a0a1a7;
+  --gray-2: #a0a1a7;
+  --red: #e45649;
+  --green: #50a14f;
+  --blue: #4078f2;
+  --purple: #a626a4;
+  --aqua: #0184bc;
+  --yellow: #986801;
+  --orange: #c18401;
+  --divider-color-hover: #4fa6ed;
+}

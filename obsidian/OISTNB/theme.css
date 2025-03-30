@@ -1,0 +1,268 @@
+/* Detailed Retro Orange Theme for Obsidian with Black Titlebar */
+
+:root {
+    /* Enhanced Color Palette */
+    --orange-darkest: #802200;
+    --orange-darker: #AA4400;
+    --orange-dark: #CC5500;
+    --orange-medium: #FF6600;
+    --orange-light: #FF8533;
+    --orange-lighter: #FFA366;
+    --true-black: #000000;
+    --off-black: #0A0A0A;
+    --dark-gray: #1A1A1A;
+    --medium-gray: #333333;
+    --light-gray: #4D4D4D;
+    --off-white: #E5E5E5;
+    --white: #FFFFFF;
+}
+
+body {
+    --font-text-theme: 'Courier New', monospace;
+    --font-ui-theme: 'VT323', 'Courier New', monospace;
+    
+    --radius-xs: 2px;
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+    --input-radius: 5px;
+    --tab-radius-active: 5px 5px 0 0;
+    --checkbox-radius: 3px;
+    --toggle-radius: 15px;
+    --toggle-thumb-radius: 13px;
+    --slider-thumb-radius: 50%;
+
+    /* Additional Typography Variables */
+    --font-size-small: 12px;
+    --font-size-normal: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-size-huge: 24px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    --spacing-l: 16px;
+    --spacing-xl: 24px;
+}
+
+/* Black Titlebar Styling */
+.workspace-tab-header-container {
+    background-color: var(--true-black);
+    border-bottom: 2px solid var(--orange-dark);
+}
+
+.workspace-tab-header {
+    background-color: var(--true-black);
+    color: var(--orange-medium);
+    border: none;
+    margin-right: var(--spacing-xs);
+    padding: var(--spacing-s) var(--spacing-m);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: var(--font-ui-theme);
+    font-size: var(--font-size-small);
+}
+
+.workspace-tab-header.is-active {
+    background-color: var(--off-black);
+    color: var(--orange-light);
+    border-bottom: 2px solid var(--orange-medium);
+}
+
+.workspace-tab-header:hover:not(.is-active) {
+    background-color: var(--off-black);
+    color: var(--orange-light);
+}
+
+/* Window Control Buttons (Minimize, Maximize, Close) */
+.titlebar-button {
+    background-color: var(--true-black) !important;
+    color: var(--orange-medium);
+    transition: color 0.3s ease;
+}
+
+.titlebar-button:hover {
+    background-color: var(--true-black) !important;
+    color: var(--orange-light);
+}
+
+/* Enhanced Retro Look */
+.theme-dark {
+    --background-primary: var(--true-black);
+    --background-secondary: var(--off-black);
+    --background-tertiary: var(--dark-gray);
+    --text-normal: var(--orange-medium);
+    --text-muted: var(--orange-dark);
+    --text-faint: var(--orange-darker);
+    --interactive-normal: var(--orange-dark);
+    --interactive-hover: var(--orange-medium);
+    --interactive-accent: var(--orange-light);
+    --background-modifier-border: var(--orange-darker);
+}
+
+.theme-light {
+    --background-primary: var(--off-white);
+    --background-secondary: var(--white);
+    --background-tertiary: var(--light-gray);
+    --text-normal: var(--true-black);
+    --text-muted: var(--medium-gray);
+    --text-faint: var(--light-gray);
+    --interactive-normal: var(--orange-dark);
+    --interactive-hover: var(--orange-medium);
+    --interactive-accent: var(--orange-light);
+    --background-modifier-border: var(--orange-darker);
+}
+
+/* Retro Typography */
+body {
+    font-family: var(--font-text-theme);
+    font-size: var(--font-size-normal);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-ui-theme);
+    color: var(--orange-light);
+    border-bottom: 2px solid var(--orange-darker);
+    padding-bottom: var(--spacing-s);
+    margin: var(--spacing-l) 0 var(--spacing-m);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 { font-size: var(--font-size-huge); }
+h2 { font-size: var(--font-size-large); }
+h3 { font-size: var(--font-size-medium); }
+
+/* Enhanced Retro Workspace Styles */
+.workspace {
+    background-color: var(--background-primary);
+    background-image: 
+        radial-gradient(var(--orange-darker) 1px, transparent 1px),
+        radial-gradient(var(--orange-darker) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-attachment: fixed;
+}
+
+/* Retro Glow Effect */
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
+    text-shadow: 0 0 5px var(--orange-light);
+}
+
+.theme-dark .tag,
+.theme-dark button {
+    box-shadow: 0 0 5px var(--orange-dark);
+}
+
+/* Retro Button Styles */
+button {
+    background-color: var(--orange-medium);
+    color: var(--true-black);  /* Changed to black */
+    border: 2px solid var(--orange-darker);
+    border-radius: var(--radius-m);
+    padding: var(--spacing-s) var(--spacing-m);
+    font-family: var(--font-ui-theme);
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 0 var(--orange-darker);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+button:hover {
+    background-color: var(--orange-light);
+    color: var(--true-black);  /* Kept black for consistency */
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 0 var(--orange-darker);
+}
+
+/* Retro Input Styles */
+input, textarea {
+    background-color: var(--true-black);
+    border: 2px solid var(--orange-darker);
+    border-radius: var(--input-radius);
+    color: var(--orange-medium);
+    padding: var(--spacing-s);
+    font-family: var(--font-text-theme);
+    font-size: var(--font-size-normal);
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--orange-medium);
+    outline: none;
+    box-shadow: 0 0 5px var(--orange-light);
+}
+
+/* Enhanced CRT Screen Effect */
+.theme-dark .workspace::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: 
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+    z-index: 2;
+    animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.97; }
+    25% { opacity: 0.93; }
+    50% { opacity: 1; }
+    75% { opacity: 0.95; }
+    100% { opacity: 0.98; }
+}
+
+/* Retro Scrollbar */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--true-black);
+    border: 1px solid var(--orange-darker);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange-dark);
+    border: 2px solid var(--true-black);
+    border-radius: var(--radius-m);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--orange-medium);
+}
+
+/* File Explorer Styling */
+.nav-file-title, .nav-folder-title {
+    color: var(--orange-medium);
+    font-family: var(--font-ui-theme);
+    font-size: var(--font-size-small);
+    padding: var(--spacing-xs) var(--spacing-s);
+    border-radius: var(--radius-s);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+    background-color: var(--off-black);
+    color: var(--orange-light);
+}

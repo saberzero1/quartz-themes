@@ -1,0 +1,102 @@
+.theme-dark {
+  --background-primary: #1D1F21;
+  --background-secondary: #282A2E;
+  --text-normal: #C5C8C6;
+  --text-muted:  #969896;
+  --text-selection: #373B41;
+
+  --code-background: var(--background-secondary);
+  --divider-color: #181A1E;
+
+  --color-red:    #CC6666;
+  --color-orange: #DE935F;
+  --color-yellow: #F0C674;
+  --color-green:  #B5BD68;
+  --color-cyan:   #8ABEB7;
+  --color-blue:   #81A2BE;
+  --color-pink:   #B294BB;
+  --color-purple: #B777E0;
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--ribbon-background);
+}
+
+.theme-light {
+  --background-primary: #FFFFFF;
+  --background-secondary: #EFEFEF;
+  --text-normal: #4D4D4C;
+  --text-muted: #8E908C;
+
+  --divider-color: #CECECE;
+
+  --color-red:    #C82829;
+  --color-orange: #F5871F;
+  --color-yellow: #EAB700;
+  --color-green:  #718C00;
+  --color-cyan:   #3E999F;
+  --color-blue:   #4271AE;
+  --color-pink:   #B777E0;
+  --color-purple: #8959A8;
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--ribbon-background);
+
+  .markdown-rendered pre {
+    border: solid 1px;
+    border-color: var(--divider-color);
+  }
+  .cm-s-obsidian .HyperMD-codeblock-begin-bg {
+    border-top: solid 1px;
+    border-color: var(--divider-color);
+  }
+
+  .cm-s-obsidian .HyperMD-codeblock-end-bg {
+    border-bottom: solid 1px;
+    border-color: var(--divider-color);
+  }
+
+  .cm-s-obsidian .HyperMD-codeblock {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: var(--divider-color);
+  }
+}
+
+body {
+  --font-text-theme: "Fira Code";
+}
+
+svg * {
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
+}
+
+.menu {
+  padding: 3px;
+}
+
+.menu-item {
+  padding: 7px;
+}
+
+.menu-separator {
+  margin: 6px -3px;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    z-index: var(--layer-status-bar);
+    height: var(--divider-vertical-height);
+    top: var(--header-height);
+    bottom: 0;
+}
+
+

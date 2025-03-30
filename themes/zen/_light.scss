@@ -1,0 +1,35 @@
+:root[saved-theme="light"] {
+  --base-d: 0%;
+  --titlebar-background: rgb(248, 248, 248);
+  --background-primary: rgb(248, 248, 248);
+  --background-secondary: rgb(230, 230, 230);
+  --background-secondary-alt: rgb(230, 230, 230);
+  --background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+  --nav-item-background-active: rgba(0, 0, 0, 0.05);
+  --nav-item-color-active: var(--text-accent);
+  --background-modifier-hover: rgba(28, 28, 28, 0.1);
+  --background-modifier-border: rgba(28, 28, 28, 0.09);
+  --nav-indentation-guide-color: rgba(28, 28, 28, 0.05);
+  --indentation-guide-color: rgba(28, 28, 28, 0.05);
+  --indentation-guide-color-active: var(--indentation-guide-color);
+  --block-border-color: rgba(28, 28, 28, 0.25);
+  --floating-toc-background-color: transparent;
+  --blockquote-border-color: rgba(28, 28, 28, 0.2);
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
+  --workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
+  --text-color: rgb(10, 10, 10);
+  --active-border-color: rgb(0, 121, 172);
+  --statusbar-bg-color: rgba(248, 248, 248, 0.7);
+  --model-bg-color: rgba(248, 248, 248, 0.5);
+  --app-model-bg-color: rgba(248, 248, 248, 0.8);
+  --editor-bg-color: rgba(255, 255, 255, 0.5);
+  --suggestion-bg-color: rgba(248, 248, 248, 0.1);
+  --divider-color: rgba(0, 0, 0, 0.01);
+  --code-background: rgba(28, 28, 28, 0.1);
+  --background-modifier-form-field: rgba(230, 230, 230, 0.5);
+  --win-blur: 40px;
+  --win-window-brightness: 0.6;
+  --win-editor-bg-color: rgba(240, 240, 240, 0.65);
+  --win-window-opacity: 0.2;
+  --background-secondary-alt: rgba(240, 240, 240, 0.1);
+}

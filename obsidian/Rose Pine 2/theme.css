@@ -1,0 +1,1180 @@
+:root {
+	  --font-size-normal: 18px;
+	  --font-size-code: 15px;
+	  --font-size-side-dock: 15px;
+	  --font-size-side-dock-title: 18px;
+	  --font-size-status-bar: 15px;
+	  --font-size-h1: 26px;
+	  --font-size-h2: 25px;
+	  --font-size-h3: 21px;
+	  --font-size-h4: 20px;
+	  --font-size-h5: 19px;
+	  --font-size-h6: 18px;
+	  --font-family-editor: Avenir, Avenir Next, sans-serif;
+	  --font-family-preview: Avenir, Avenir Next, sans-serif;
+	}
+
+	.theme-light,
+    .theme-light.rose-dawn {
+        --rp-base: #faf4ed;
+        --rp-surface: #fffaf3;
+        --rp-overlay: #f2e9e1;
+        --rp-muted: #9893a5;
+        --rp-subtle: #797593;
+        --rp-text: #575279;
+        --rp-love: #b4637a;
+        --rp-gold: #ea9d34;
+        --rp-rose: #d7827e;
+        --rp-iris: #907aa9;
+        --rp-pine: #286983;
+        --rp-foam: #56949f;
+        --rp-highlightLow: #f4ede8;
+        --rp-highlightMed: #dfdad9;
+        --rp-highlightHigh: #cecacd;
+    }
+
+    .theme-dark.rose-moon {
+        --rp-base: #232136;
+        --rp-surface: #2a273f;
+        --rp-overlay: #393552;
+        --rp-muted: #6e6a86;
+        --rp-subtle: #908caa;
+        --rp-text: #e0def4;
+        --rp-love: #eb6f92;
+        --rp-gold: #f6c177;
+        --rp-rose: #ea9a97;
+        --rp-iris: #c4a7e7;
+        --rp-pine: #3e8fb0;
+        --rp-foam: #9ccfd8;
+        --rp-highlightLow: #2a283e;
+        --rp-highlightMed: #44415a;
+        --rp-highlightHigh: #56526e;
+    }
+
+    .theme-dark,
+    .theme-dark.rose-norm {
+        --rp-base: #191724;
+        --rp-surface: #1f1d2e;
+        --rp-overlay: #26233a;
+        --rp-muted: #6e6a86;
+        --rp-subtle: #908caa;
+        --rp-text: #e0def4;
+        --rp-love: #eb6f92;
+        --rp-gold: #f6c177;
+        --rp-rose: #ebbcba;
+        --rp-iris: #c4a7e7;
+        --rp-pine: #31748f;
+        --rp-foam: #9ccfd8;
+        --rp-highlightLow: #21202e;
+        --rp-highlightMed: #403d52;
+        --rp-highlightHigh: #524f67;
+    }
+
+    .theme-light,
+    .theme-dark {
+	  --background-primary: var(--rp-surface);
+	  --background-primary-alt: var(--rp-base);
+	  --background-secondary: var(--rp-base);
+	  --background-secondary-alt: var(--rp-base);
+	  --background-accent: var(--rp-base);
+	  --background-modifier-border: var(--rp-highlightMed);
+	  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+	  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+	  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+	  --background-modifier-success: var(--rp-pine);
+
+	  --background-modifier-error: var(--rp-love);
+	  --background-modifier-error-hover: var(--rp-love);
+	  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+	  --text-accent: var(--rp-accent);
+	  --text-accent-hover: var(--rp-accent);
+	  --text-normal: var(--rp-text);
+	  --text-muted: var(--rp-muted);
+	  --text-faint: var(--rp-accent);
+	  --text-highlight-bg: var(--rp-highlight);
+	  --text-error: var(--rp-love);
+	  --text-error-hover: var(--rp-love);
+	  --text-selection: var(--rp-highlightHigh);
+
+	  --text-on-accent: var(--rp-accent);
+	  --interactive-normal: var(--rp-overlay);
+	  --interactive-hover: var(--rp-highlightLow);
+	  --interactive-accent: var(--rp-highlightLow);
+      --interactive-accent-active: var(--rp-accent);
+	  --interactive-accent-hover: var(--rp-accent);
+	  --scrollbar-active-thumb-bg: var(--rp-overlay);
+	  --scrollbar-bg: var(--rp-overlay);
+	  --scrollbar-thumb-bg: var(--rp-overlay);
+
+      --rp-h1: var(--rp-love);
+      --rp-h2: var(--rp-iris);
+      --rp-h3: var(--rp-rose);
+      --rp-h4: var(--rp-gold);
+      --rp-h5: var(--rp-foam);
+      --rp-h6: var(--rp-pine);
+
+	  --inline-code: var(--rp-iris);
+	  --code-block: var(--rp-foam);
+	  --pre-code: var(--rp-highlightLow);
+	  --blockquote-border: var(--rp-love);
+	  --vim-cursor: var(--rp-rose);
+	  --border-color: var(--rp-highlightMed);
+    }
+
+/* @settings
+name: Rosé Pine Themes
+id: rosé-pine-theme-settings
+settings:
+  -
+    id: rosé-pine-theme
+    title: Theme variants
+    description: Select your preferred theme, Rosé Pine Moon is enabled by setting light mode on
+    type: class-select
+    allowEmpty: false
+    default: rose-norm
+    options:
+      -
+        label: 'Rosé Pine'
+        value: rose-norm
+      -
+        label: 'Rosé Pine Moon'
+        value: rose-moon
+  -
+    id: rosé-pine-theme-accents
+    title: Theme accent
+    description: Select your preferred accent
+    type: class-select
+    allowEmpty: false
+    default: rp-accent-full
+    options:
+      -
+        label: Full palette
+        value: rp-accent-full
+      -
+        label: Love
+        value: rp-accent-love
+      -
+        label: Rose
+        value: rp-accent-rose
+      -
+        label: Gold
+        value: rp-accent-gold
+      -
+        label: Iris
+        value: rp-accent-iris
+      -
+        label: Pine
+        value: rp-accent-pine
+      -
+        label: Foam
+        value: rp-accent-foam
+    */
+
+/* @settings
+name: "Rose Pine Header Colours"
+id: rose-pine-headers
+settings:
+  -
+    id: rp-h1
+    title: H1 colour
+    description: Select your H1 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-love)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+  -
+    id: rp-h2
+    title: H2 colour
+    description: Select your H2 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-iris)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+  -
+    id: rp-h3
+    title: H3 colour
+    description: Select your H3 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-rose)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+  -
+    id: rp-h4
+    title: H4 colour
+    description: Select your H4 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-gold)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+  -
+    id: rp-h5
+    title: H5 colour
+    description: Select your H5 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-foam)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+  -
+    id: rp-h6
+    title: H6 colour
+    description: Select your H6 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-pine)
+    options:
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+*/
+
+/* @settings
+name: "Rose Pine Misc Config"
+id: rose-pine-misc
+settings:
+  -
+    id: rp-highlight
+    title: Highlight Colour
+    description: Select your highlighted colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-highlightHigh)
+    options:
+    -
+      label: Low
+      value: var(--rp-highlightLow)
+    -
+      label: Med
+      value: var(--rp-highlightMed)
+    -
+      label: High
+      value: var(--rp-highlightHigh)
+    -
+      label: Love
+      value: var(--rp-love)
+    -
+      label: Rose
+      value: var(--rp-rose)
+    -
+      label: Gold
+      value: var(--rp-gold)
+    -
+      label: Iris
+      value: var(--rp-iris)
+    -
+      label: Pine
+      value: var(--rp-pine)
+    -
+      label: Foam
+      value: var(--rp-foam)
+*/
+
+.rp-accent-rose,
+.rp-accent-full {
+    --rp-accent: var(--rp-rose)
+}
+.rp-accent-iris {
+    --rp-accent: var(--rp-iris)
+}
+
+.rp-accent-pine {
+    --rp-accent: var(--rp-pine)
+}
+
+.rp-accent-foam {
+    --rp-accent: var(--rp-foam)
+}
+
+.rp-accent-gold {
+    --rp-accent: var(--rp-gold)
+}
+
+.rp-accent-love {
+    --rp-accent: var(--rp-love)
+}
+
+    button{
+		font-family: "Cartograph CF";
+		font-style: italic;
+		background-color: var(--rp-overlay);
+		color: var(--rp-foam);
+	}
+
+	.workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+	.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+	.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+	  width: 1px !important;
+	  background-color: var(--border-color);
+	}
+
+	.workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle {
+	  height: 1px !important;
+	  background-color: var(--border-color);
+	}
+
+
+	.workspace-ribbon.is-collapsed {
+	  background-color: var(--background-primary-alt);
+	}
+
+	.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+	.workspace-split.mod-vertical>.workspace-split,
+	.workspace-split.mod-vertical>.workspace-leaf,
+	.workspace-tabs {
+	  padding-right: 0px;
+	}
+
+	.status-bar {
+	  font-size: var(--font-size-status-bar);
+	  background-color: var(--background-secondary-alt);
+	  border-top: 0px;
+	}
+
+	.document-search-container {
+	  border-top: 0px;
+	  border-right: 0px;
+	  z-index: inherit;
+	}
+
+	.workspace-ribbon.mod-left.is-collapsed {
+	  border-right: 1px solid var(--border-color);
+	}
+
+	.workspace-ribbon.mod-right.is-collapsed {
+	  border-left: 1px solid var(--border-color);
+	}
+
+	a.tag:hover {
+	  color: var(--text-accent) !important;
+    }
+
+	.cm-hashtag,
+	a.tag {
+	  color: var(--text-accent-hover) !important;
+	  text-decoration: none !important;
+	  font-style: normal !important;
+	}
+
+	a,
+	.internal-link,
+	.cm-hmd-internal-link,
+	.cm-link,
+	.cm-formatting-link,
+	.cm-url {
+	  text-decoration: none !important;
+	}
+
+	.cm-s-obsidian span.cm-string {
+	  color: var(--text-accent-hover) !important;
+	}
+
+    a:not(.internal-link) {
+	  font-style: italic;
+	}
+
+
+	.cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
+	.cm-s-obsidian span.cm-footref {
+	  color: var(--text-accent) !important;
+	}
+
+	.cm-fat-cursor {
+ 	   background-color: var(--text-selection) !important;
+	   color: var(--rp-accent) !important;
+ 	   opacity: 0.5 !important;
+	}
+
+	.cm-animate-fat-cursor {
+	  background-color: var(--text-selection) !important;
+	  color: var(--rp-accent) !important;
+	  opacity: 0.5 !important;
+	}
+
+	.app-container {
+	  font-family: var(--font-family-preview);
+	}
+
+	::selection {
+	  background-color: var(--text-selection);
+	}
+
+    .cm-s-obsidian,
+	.mod-single-child .cm-s-obsidian {
+	  font-family: var(--font-family-editor);
+	  font-size: var(--font-size-normal);
+	}
+
+	.markdown-preview-view,
+	.mod-single-child .markdown-preview-view {
+	  font-family: var(--font-family-editor);
+	  font-size: var(--font-size-normal);
+	  padding-top: 0px;
+	  padding-left: 2% !important;
+	  padding-right: 1% !important;
+	}
+
+	.cm-em,
+	em {
+	  color: var(--rp-iris) !important;
+	  font-family: 'Cartograph CF' !important;
+	}
+
+	.cm-em.cm-formatting-em {
+	  display: inline-flex;
+	  width: 0.45rem;
+	  font-size: 0.6rem;
+	  vertical-align: text-top;
+	}
+
+	.cm-strong:not(.cm-formatting-strong),
+	strong {
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  padding: 0 0.1rem;
+	  color: var(--rp-love);
+	  background-color: var(--rp-love);
+	  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+	}
+
+	strong .math.math-inline .MathJax {
+	  position: inherit !important;
+	}
+
+	.cm-strong::selection,
+	strong::selection {
+	  -webkit-text-fill-color: var(--rp-love);
+	}
+
+	.cm-formatting.cm-formatting-strong.cm-strong,
+	.cm-formatting.cm-formatting-em.cm-em {
+	  color: var(--text-faint) !important;
+	  opacity: 0.25;
+	}
+
+	.cm-strong:not(.cm-formatting-strong),
+	strong {
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  padding: 0 0.1rem;
+	  color: var(--rp-love);
+	  background-color: var(--rp-love);
+	  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+	}
+
+	strong .math.math-inline .MathJax {
+	  position: inherit !important;
+	}
+
+	.cm-strong::selection,
+	strong::selection {
+	  -webkit-text-fill-color: var(--text-faint);
+	}
+
+	.cm-strong kbd,
+	strong kbd {
+	  -webkit-text-fill-color: initial;
+	}
+
+	s,
+	.cm-strikethrough {
+	  color: var(--text-muted);
+	}
+
+
+	.cm-s-obsidian span.cm-formatting-list {
+	  color: var(--text-normal) !important;
+	}
+
+
+	.markdown-preview-view hr {
+
+	  border-top: none !important;
+	  border-color: none !important;
+	}
+
+
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+
+	img:hover {
+	  transform: scale(1.04);
+	  transition: transform 0.25s ease-in-out 0s;
+	}
+
+	.community-theme img:hover {
+	  transform: none;
+	}
+
+	.cm-header-1,
+	.markdown-preview-view h1 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h1);
+	  color: var(--rp-h1);
+	}
+
+	.cm-header-2,
+	.markdown-preview-view h2 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h2);
+	  color: var(--rp-h2);
+	}
+
+	.cm-header-3,
+	.markdown-preview-view h3 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h3);
+	  color: var(--rp-h3);
+	}
+
+	.cm-header-4,
+	.markdown-preview-view h4 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h4);
+	  color: var(--rp-h4);
+	}
+
+	.cm-header-5,
+	.markdown-preview-view h5 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h5);
+	  color: var(--rp-h5);
+	}
+
+	.cm-header-6,
+	.markdown-preview-view h6 {
+	  font-family: var(--font-family-editor);
+	  font-weight: 500;
+	  font-size: var(--font-size-h6);
+	  color: var(--rp-h6);
+	}
+
+	/* code blocks in preview */
+	pre code {
+	  font-family: "Cartograph CF" !important;
+	  font-size: 14 !important;
+	  padding: 6px !important;
+	  line-height: normal;
+	  display: block;
+	  color: var(--code-block) !important;
+	}
+
+	/* padding of code blocks in preview */
+	.markdown-preview-view pre {
+	  padding: 0px !important;
+	}
+
+	/* font-size of in-line block for preview */
+	.markdown-preview-view code {
+	  font-size: var(--font-size-code);
+	}
+
+	.theme-dark code[class*="language-"],
+	.theme-dark pre[class*="language-"],
+	.theme-light code[class*="language-"],
+	.theme-light pre[class*="language-"] {
+	  text-shadow: none !important;
+	  color: var(--text-faint) !important;
+	  background-color: var(--pre-code);
+	}
+
+	.cm-s-obsidian span.cm-formatting-link {
+	  color: var(--text-accent) !important;
+	}
+
+	.cm-quote {
+	  color: var(--text-normal) !important;
+	  font-style: italic;
+	}
+
+	.markdown-preview-view blockquote {
+	  background-color: var(--pre-code);
+	  border: 0px solid;
+	  border-color: var(--blockquote-border) !important;
+	  border-left-width: 4px !important;
+	  border-radius: 0 8px 8px 0;
+	  line-height: 1.5em;
+	  margin: 30px 0px;
+	  font-style: italic;
+	}
+
+	th {
+	  font-weight: 800 !important;
+	}
+
+	.markdown-preview-view th {
+	  font-weight: 800;
+	  background-color: var(--background-secondary) !important;
+	}
+
+	thead {
+	  border-bottom: 3px solid var(--background-modifier-border);
+	}
+
+    .modal {
+        border: none
+    }
+
+	.table {
+	  padding: 4px;
+	  line-height: normal;
+	  display: block;
+	  border-top-left-radius: 4px;
+	  border-top-right-radius: 4px;
+	  border-bottom-right-radius: 4px;
+	  border-bottom-left-radius: 4px;
+	}
+
+	.markdown-preview-view .task-list-item-checkbox:checked::before {
+	  content: '✓';
+	  position: absolute;
+	  color: var(--text-accent);
+	  font-size: 1em;
+	  line-height: 1.25em;
+	  width: 1.2em;
+	  text-align: center;
+	  text-shadow: 0 0 0.1em var(--text-accent);
+	}
+
+	.markdown-preview-view .task-list-item-checkbox {
+	  -webkit-appearance: none;
+	  top: 0.2em !important;
+	  right: 4px;
+	  box-sizing: border-box;
+	  border: 1px solid var(--text-muted);
+	  position: relative;
+	  width: 1.25em;
+	  height: 1.25em;
+	  margin: 0;
+	  box-shadow: 0 0 0.1em var(--text-muted);
+	}
+
+	.checkbox-container {
+	  background-color: var(--background-primary);
+	}
+
+	.checkbox-container.is-enabled {
+	  background-color: var(--rp-accent);
+	}
+
+	.popover {
+	  border: 1px solid var(--border-color);
+	  background-color: var(--background-secondary);
+	}
+
+	.search-result-file-title {
+	  font-size: 15px;
+	}
+
+	.search-result-file-matches,
+	.search-empty-state {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.search-result-file-title,
+	.search-result-file-match {
+	  padding: 0px 10px;
+	}
+
+	.nav-file-title,
+	.nav-folder-title {
+	  border-bottom-left-radius: 0 !important;
+	  border-bottom-right-radius: 0 !important;
+	  border-top-left-radius: 0 !important;
+	  border-top-right-radius: 0 !important;
+	}
+
+	.workspace-leaf-content[data-type="backlink"] .view-content {
+	  background-color: var(--background-secondary);
+	}
+
+	.workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
+	.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
+	  font-size: var(--font-size-side-dock);
+	}
+
+	.markdown-embed-title {
+	  display: none;
+	}
+
+	.markdown-preview-view .markdown-embed-content>:first-child {
+	  margin-top: 0;
+	}
+
+	.markdown-preview-view .markdown-embed-content>:last-child {
+	  margin-bottom: 0;
+	}
+
+	.markdown-preview-view .markdown-embed {
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.markdown-preview-view .markdown-embed-content {
+	  max-height: unset;
+	  background-color: var(--background-secondary);
+	}
+
+	.markdown-embed-link {
+	  color: var(--text-faint) !important;
+	}
+
+	.markdown-embed-link:hover {
+	  color: var(--text-accent) !important;
+	}
+
+	.graph-view.color-circle,
+	.graph-view.color-fill-highlight,
+	.graph-view.color-line-highlight {
+	  color: var(--text-accent) !important;
+	}
+
+	.graph-view.color-text {
+	  color: var(--text-normal) !important;
+	}
+
+	.graph-view.color-line {
+	  color: var(--rp-highlightHigh);
+	}
+
+	.graph-view.color-fill {
+	  color: var(--text-muted);
+    }
+
+	.workspace-leaf-content[data-type="graph"] .view-content {
+	  background-color: var(--background-primary);
+	}
+
+	.modal.mod-settings button:not(.mod-cta):hover {
+	  background-color: var(--interactive-accent-hover);
+	}
+
+	.markdown-source-view.is-readable-line-width .CodeMirror {
+	  max-width: 900px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.markdown-preview-view.is-readable-line-width .markdown-preview-section {
+	  max-width: 900px;
+	  margin-left: auto;
+	  margin-right: auto;
+    }
+
+	.view-header {
+	  background-color: var(--background-primary) !important;
+	  border-top: 1px solid var(--border-color) !important;
+	  border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.day.svelte-q3wqg9:active, .active.svelte-q3wqg9, .active.today.svelte-q3wqg9 {
+		background-color: var(--rp-highlightHigh) !important;
+		color: var(--rp-foam) !important;
+	}
+
+	.view-header-title-container:after {
+	  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header {
+	  background-color: var(--background-primary) !important;
+	  border-top: 0px !important;
+	  border-bottom: 3px solid var(--interactive-accent) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header-title-container:after {
+	  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+	}
+
+	.workspace-leaf.mod-active .view-header-title,
+	.workspace-leaf.mod-active .view-header-icon {
+	  color: var(--background-modifier-border);
+	}
+
+	.view-header-title,
+	.view-header-icon,
+	.view-action {
+	  color: var(--text-faint);
+	}
+
+	ul ul {
+	  position: relative;
+	}
+
+	ul ul::before {
+	  content: '';
+	  border-left: 1px solid var(--border-color);
+	  position: absolute;
+	}
+
+	ul ul::before {
+	  left: -1em;
+	  top: 0;
+	  bottom: 0;
+    }
+
+	ul .task-list-item ul::before {
+	  left: 0.15em !important
+	}
+
+	.cm-s-obsidian span.cm-inline-code,
+	.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
+	.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+	  background-color: var(--pre-code-bg);
+	  color: var(--inline-code) !important;
+	  bottom: 0px !important;
+	}
+
+	/* Editor CodeBlock TEXT Appearance */
+	.cm-s-obsidian pre.HyperMD-codeblock {
+	  font-family: "Cartograph CF" !important;
+	  font-size: var(--font-size-code) !important;
+	  padding: 1px !important;
+	  display: block;
+	  color: var(--code-block) !important;
+	  font-weight: 500;
+	  text-indent: 0px !important;
+	}
+
+	.HyperMD-codeblock-bg {
+	  border: 0px !important;
+	}
+
+	an active line highlight in vim normal mode
+	.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+	  background-color: var(--text-selection) !important;
+	}
+
+	code {
+	  color: var(--inline-code) !important;
+	  bottom: 0px !important;
+	  color:
+	}
+
+	.graph-view.color-arrow {
+	  color: var(--rp-pine);
+	}
+
+	.graph-view.color-fill-tag {
+	  color: var(--rp-gold);
+	}
+
+	.graph-view.color-fill-attachment {
+	  color: var(--rp-rose);
+	}
+
+	.graph-view.color-fill-unresolved {
+	  color: var(--rp-highlightHigh);
+	}
+
+	.search-result-collapse-indicator {
+	  position: absolute;
+	  left: 0;
+	  top: -3px;
+	  color: var(--text-faint);
+	  transition: transform 100ms ease-in-out;
+	  padding: 0px !important;
+	}
+
+	em,
+	.cm-em {
+	  font-family: 'Cartograph CF';
+	  font-style: italic;
+	  color: var(--text-accent);
+	}
+
+	.cm-s-obsidian span.cm-link,
+	.cm-s-obsidian span.cm-hmd-internal-link {
+	  text-shadow: -1px -1px 2px var(--background-secondary), -1px 1px 2px var(--background-secondary),
+		1px -1px 2px var(--background-secondary), 1px 1px 2px var(--background-secondary);
+	  color: var(--text-normal);
+	  background-position: 0 100%;
+	  background-repeat: repeat-x;
+	  background-size: 5px 5px;
+	  text-decoration: none;
+	}
+
+	.cm-s-obsidian span.cm-link {
+	  background-image: linear-gradient(to bottom,
+		  var(--rp-iris) 0%,
+		  var(--rp-rose) 100%);
+	}
+
+	.cm-s-obsidian span.cm-hmd-internal-link {
+	  background-image: linear-gradient(to bottom, var(--rp-iris) 0%, var(--rp-rose) 100%);
+	}
+
+	.cm-s-obsidian span.cm-formatting-link {
+	  color: var(--rp-love) !important;
+	  opacity: 0.25;
+	}
+
+	.external-link {
+	  padding: 0;
+	}
+
+	.internal-link {
+	  text-shadow: -1px -1px 2px var(--background-primary), -1px 1px 2px var(--background-primary),
+		1px -1px 2px var(--background-primary), 1px 1px 2px var(--background-primary);
+	  -webkit-text-fill-color: var(--rp-foam);
+	  background-position: 0 100%;
+	  background-repeat: repeat-x;
+	  background-size: 5px 5px;
+	  text-decoration: none;
+	  transition: all 350ms ease;
+	}
+
+	.external-link {
+	  text-shadow: -1px -1px 2px var(--background-primary), -1px 1px 2px var(--background-primary),
+		1px -1px 2px var(--background-primary), 1px 1px 2px var(--background-primary);
+	  -webkit-text-fill-color: var(--rp-pine);
+	  background-position: 0 100%;
+	  background-repeat: repeat-x;
+	  background-size: 5px 5px;
+	  text-decoration: none;
+	  transition: all 350ms ease;
+	}
+
+	.internal-link {
+	  background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
+	}
+
+	.external-link {
+	  background-image: linear-gradient(to bottom,
+		  var(--bg-sub-accent-55) 0%,
+		  var(--bg-sub-accent-55) 100%);
+	}
+
+	.internal-link:hover {
+	  text-shadow: -1px -1px 2px var(--background-modifier-border),
+		-1px 1px 2px var(--background-modifier-border), 1px -1px 2px var(--background-modifier-border),
+		1px 1px 2px var(--background-modifier-border);
+	  -webkit-text-fill-color: var(--text-accent);
+	  background-size: 4px 50px;
+	}
+
+	.external-link:hover {
+	  text-shadow: -1px -1px 2px var(--background-modifier-border),
+		-1px 1px 2px var(--background-modifier-border), 1px -1px 2px var(--background-modifier-border),
+		1px 1px 2px var(--background-modifier-border);
+	  -webkit-text-fill-color: var(--text-sub-accent);
+	  background-size: 4px 50px;
+    }
+
+	a,
+	.internal-link,
+	.cm-hmd-internal-link,
+	.cm-link {
+	  text-decoration: none !important;
+	  color: var(--text-sub-accent);
+	  position: relative;
+	  z-index: 1;
+	}
+
+	.cm-url {
+	  color: var(--text-faint) !important;
+	  opacity: 0.4;
+	  font-weight: normal;
+	}
+
+	.cm-formatting-image {
+	  color: var(--text-accent) !important;
+	  opacity: 0.7;
+	}
+
+	a:hover,
+	.internal-link:hover {
+	  text-decoration: none !important;
+	  color: var(--text-accent);
+	}
+
+	.cm-formatting-list {
+	  color: var(--list) !important;
+	}
+
+	.cm-formatting-quote {
+	  color: var(--quote-opening-modifier) !important;
+	}
+
+input[type=checkbox], .markdown-preview-view .cm-formatting-task {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 50%;
+	border: 1px solid var(--text-faint);
+	padding: 0;
+	vertical-align: middle;
+}
+
+.markdown-preview-view .cm-s-obsidian span.cm-formatting-task {
+	width: 1em !important;
+	height: 1em;
+	display: inline-block;
+}
+
+input[type=checkbox]:focus{
+  outline:0;
+}
+input[type=checkbox]:checked, .cm-formatting-task.cm-property {
+	background-color: var(--text-accent-hover);
+	border: 1px solid var(--text-accent-hover);
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+	.graph-view.color-fill-unresolved {
+	  color: var(--rp-rose) !important;
+	}
+
+	.graph-view.color-fill-attachment {
+	  color: var(--rp-gold) !important;
+	}
+
+	.graph-view.color-fill-tag {
+	  color: var(--rp-foam) !important;
+	}
+
+	.graph-view.color-fill {
+	  color: var(--rp-iris) !important;
+	}
+
+	hr {
+		  border: 0;
+		  height: 0.35rem;
+		  margin: 3em auto;
+		  display: block;
+		  background-image: -webkit-linear-gradient(
+			0deg,
+			transparent,
+			var(--rp-gold),
+			var(--rp-love),
+			var(--rp-rose),
+			var(--rp-iris),
+			var(--rp-foam),
+			transparent
+		  );
+		  clear: both;
+		}
+
+		body {
+		  background: var(--rp-base);
+		  color: var(var(--rp-text));
+		}

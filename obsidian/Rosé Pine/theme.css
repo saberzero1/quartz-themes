@@ -1,0 +1,191 @@
+:root {
+    /* Rosé Pine Color Palette - Updated from .pinkrose class */
+    --base: #191724; /* sidebar-bg */
+    --surface: #1f1d2e; /* bg */
+    --overlay: #26233a; /* theme-popup-bg */
+    --muted: #6e6a86; /* theme-popup-border */
+    --subtle: #908caa; /* sidebar-fg */
+    --text: #e0def4; /* fg */
+    --love: #eb6f92; /* sidebar-active */
+    --gold: #f6c177; /* links */
+    --rose: #ebbcba; /* inline-code-color */
+    --pine: #31748f; /* icons */
+    --foam: #9ccfd8; /* icons-hover (no direct match, using closest) */
+    --iris: #c4a7e7; /* icons-hover */
+    --highlight-low: #21202e; /* theme-hover */
+    --highlight-med: #403d52; /* sidebar-spacer */
+    --highlight-high: #524f67; /* sidebar-non-existant */
+
+    /* Rosé Pine Dawn Color Palette */
+    --light-base: #faf4ed;
+    --light-surface: #fffaf3;
+    --light-overlay: #f2e9e1;
+    --light-muted: #9893a5;
+    --light-subtle: #797593;
+    --light-text: #575279;
+    --light-love: #b4637a;
+    --light-gold: #ea9d34;
+    --light-rose: #d7827e;
+    --light-pine: #286983;
+    --light-foam: #56949f;
+    --light-iris: #907aa9;
+    --light-highlight-low: #f4ede8;
+    --light-highlight-med: #dfdad9;
+    --light-highlight-high: #cecacd;
+}
+
+.theme-dark {
+    /* Adapted Theme Colors */
+    --background-primary: var(--base);
+    --background-secondary: var(--surface);
+    --background-modifier-border: var(--overlay);
+    --text-normal: var(--text);
+    --text-muted: var(--muted);
+    --text-accent: var(--love);
+    --text-accent-hover: var(--foam);
+    --tag-color: var(--iris);
+    --tag-background: var(--overlay);
+    --h1-color: var(--love);
+    --h2-color: var(--gold);
+    --h3-color: var(--pine);
+    --h4-color: var(--foam);
+    --h5-color: var(--iris);
+    --h6-color: var(--rose);
+    --code-normal: var(--subtle);
+    --code-background: var(--highlight-low);
+    --text-selection: rgba(49, 116, 143, 0.6); /* --pine */
+    --flashing-background: rgba(235, 111, 146, 0.3); /* --love */
+    --link-url: var(--pine);
+    --link-url-hover: var(--iris);
+    --bold-color: var(--subtle);
+}
+
+.theme-light {
+    /* Light Theme Colors */
+    --background-primary: var(--light-base);
+    --background-secondary: var(--light-surface);
+    --background-modifier-border: var(--light-overlay);
+    --text-normal: var(--light-text);
+    --text-muted: var(--light-muted);
+    --text-accent: var(--light-love);
+    --text-accent-hover: var(--light-foam);
+    --tag-color: var(--light-iris);
+    --tag-background: var(--light-overlay);
+    --h1-color: var(--light-love);
+    --h2-color: var(--light-gold);
+    --h3-color: var(--light-pine);
+    --h4-color: var(--light-foam);
+    --h5-color: var(--light-iris);
+    --h6-color: var(--light-rose);
+    --code-normal: var(--light-subtle);
+    --code-background: var(--light-highlight-low);
+    --text-selection: rgba(40, 105, 131, 0.6); /* --light-pine */
+    --flashing-background: rgba(180, 99, 122, 0.3); /* --light-love */
+    --link-url: var(--light-pine);
+    --link-url-hover: var(--light-iris);
+    --bold-color: var(--light-subtle);
+}
+
+body.theme-dark {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+body.theme-light {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+/* Headings */
+h1 { color: var(--h1-color); }
+h2 { color: var(--h2-color); }
+h3 { color: var(--h3-color); }
+h4 { color: var(--h4-color); }
+h5 { color: var(--h5-color); }
+h6 { color: var(--h6-color); }
+
+/* Links */
+a {
+    color: var(--link-url);
+    text-decoration: var(--link-decoration);
+}
+a:hover {
+    color: var(--link-url-hover);
+    text-decoration: var(--link-decoration-hover);
+}
+
+/* Tags */
+.tag {
+    color: var(--tag-color);
+    background-color: var(--tag-background);
+    padding: var(--tag-padding-y) var(--tag-padding-x);
+    border-radius: var(--tag-radius);
+}
+.tag:hover {
+    text-decoration: var(--tag-decoration-hover);
+}
+
+/* Tables */
+table {
+    border: 1px solid var(--background-secondary);
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: 2px solid var(--background-modifier-border);
+}
+th {
+    font-weight: var(--bold-weight);
+    border: 1px solid var(--background-secondary);
+}
+td {
+    border: 1px solid var(--background-secondary);
+}
+.markdown-rendered tbody tr:nth-child(even) {
+    background-color: var(--table-row-even-background);
+}
+.markdown-rendered tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd-background);
+}
+.markdown-rendered tbody tr:hover {
+    background-color: var(--table-row-background-hover);
+}
+
+/* Highlights */
+.markdown-rendered mark {
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
+}
+.markdown-rendered mark a {
+    color: var(--rose);
+    font-weight: var(--bold-weight);
+}
+
+/* Checkboxes */
+input[type=checkbox] {
+    border: 1px solid var(--checkbox-border-color);
+}
+input[type=checkbox]:checked {
+    background-color: var(--checkbox-color);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+input[type=checkbox]:checked:after {
+    display: none;
+}
+
+/* Code Blocks */
+code[class*="language-"], pre[class*="language-"] {
+    line-height: var(--line-height-tight);
+    background-color: var(--code-background);
+    color: var(--code-normal);
+}
+
+.cm-line .cm-strong {
+    color: var(--bold-color) !important;
+}
+
+/* ::selection */
+/* { */
+/*     background-color: var(--text-selection) !important; */
+/* } */
+
+/* .CodeMirror-selected {background:red !important;} */

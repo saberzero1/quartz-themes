@@ -1,0 +1,744 @@
+/* This file is generated; DO NOT EDIT. */
+/* @settings
+
+name: Adwaita
+id: com-github-birneee-obsidian-adwaita
+settings:
+    -
+        title: Window Buttons
+        description: Style of minimize, maximize and close window buttons
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: adwaita-mod
+        title: Enable
+        description: Whether to use the Adwaita style window buttons
+        type: class-select
+        default: adwaita-mod-linux-only
+        allowEmpty: false
+        options:
+            -
+                label: Always
+                value: adwaita-mod-always
+            -
+                label: Linux Only
+                value: adwaita-mod-linux-only
+            -
+                label: Never
+                value: adwaita-mod-never
+    -
+        id: adwaita-mod-scale
+        title: Scale
+        description:
+        type: variable-number
+        default: 1
+    -
+        id: adwaita-mod-right-margin
+        title: Right Margin
+        type: variable-number
+        default: 8
+        format: px
+    -
+        id: adwaita-window-button-minimize-hide
+        title: Hide minimize button
+        type: class-toggle
+    -
+        id: adwaita-window-button-maximize-hide
+        title: Hide maximize button
+        type: class-toggle
+    -
+        id: adwaita-window-button-close-hide
+        title: Hide close button
+        type: class-toggle
+
+    -
+        title: Tabs
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: adwaita-tabs
+        title: Enable
+        description: Whether to use the Adwaita style tabs
+        type: class-select
+        default: adwaita-tabs-linux-only
+        allowEmpty: false
+        options:
+            -
+                label: Always
+                value: adwaita-tabs-always
+            -
+                label: Linux Only
+                value: adwaita-tabs-linux-only
+            -
+                label: Never
+                value: adwaita-tabs-never
+    -
+        id: adwaita-tabs-short
+        title: Short
+        type: class-toggle
+
+    -
+        title: Colors
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: adwaita-colors
+        title: Enable
+        description: Whether to use the Adwaita colors
+        type: class-select
+        default: adwaita-colors-linux-only
+        allowEmpty: false
+        options:
+            -
+                label: Always
+                value: adwaita-colors-always
+            -
+                label: Linux Only
+                value: adwaita-colors-linux-only
+            -
+                label: Never
+                value: adwaita-colors-never
+
+    -
+        title: Font
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: adwaita-font
+        title: Enable
+        description: Whether to use the Cantarell font (must be installed on system)
+        type: class-select
+        default: adwaita-font-linux-only
+        allowEmpty: false
+        options:
+            -
+                label: Always
+                value: adwaita-font-always
+            -
+                label: Linux Only
+                value: adwaita-font-linux-only
+            -
+                label: Never
+                value: adwaita-font-never
+
+    -
+        title: Icons
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: adwaita-icon
+        title: Enable
+        description: Whether to use the Adwaita icons
+        type: class-select
+        default: adwaita-icons-linux-only
+        allowEmpty: false
+        options:
+            -
+                label: Always
+                value: adwaita-icons-always
+            -
+                label: Linux Only
+                value: adwaita-icons-linux-only
+            -
+                label: Never
+                value: adwaita-icons-never
+*/
+:root {
+  --adwaita-mod-scale: 1;
+  --adwaita-mod-right-margin: 8px;
+  /* TODO window radius */ }
+
+:root {
+  --adwaita-icon-folder-saved-search-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDYuNjA1NDY5IDAuMDU4NTkzOCBjIC0zLjU3ODEyNSAwIC02LjUgMi45MjE4NzUyIC02LjUgNi41MDAwMDAyIHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IGMgMS40Mjk2ODcgMCAyLjc1MzkwNiAtMC40NjQ4NDQgMy44MjgxMjUgLTEuMjUzOTA3IGwgMi45NzI2NTYgMi45NzI2NTcgYyAwLjk1NzAzMSAwLjk0MTQwNiAyLjM2MzI4MSAtMC40OTYwOTQgMS40MDYyNSAtMS40Mzc1IGwgLTIuOTU3MDMxIC0yLjk1NzAzMiBjIDAuNzgxMjUgLTEuMDc0MjE4IDEuMjUgLTIuMzk0NTMxIDEuMjUgLTMuODIwMzEyIGMgMCAtMy41NzgxMjUgLTIuOTI1NzgxIC02LjUwMDAwMDIgLTYuNSAtNi41MDAwMDAyIHogbSAwIDIuMDAwMDAwMiBjIDIuNDk2MDkzIDAgNC41IDIuMDAzOTA2IDQuNSA0LjUgcyAtMi4wMDM5MDcgNC40OTYwOTQgLTQuNSA0LjQ5NjA5NCBjIC0yLjUgMCAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMiAtNC41IDQuNSAtNC41IHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-folder-visiting-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMgMSBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA4IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgaCAtMy41ODU5MzggbCAtMS43MDcwMzEgLTEuNzA3MDMxIGMgLTAuMTg3NSAtMC4xODc1IC0wLjQ0MTQwNiAtMC4yOTI5NjkgLTAuNzA3MDMxIC0wLjI5Mjk2OSB6IG0gMCAyIGggMy41ODU5MzggbCAxLjcwNzAzMSAxLjcwNzAzMSBjIDAuMTg3NSAwLjE4NzUgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgMC4yOTI5NjkgaCA0IGMgMC41NjI1IDAgMSAwLjQzNzUgMSAxIHYgNiBjIDAgMC41NjY0MDYgLTAuNDM3NSAxIC0xIDEgaCAtMTAgYyAtMC41NjI1IDAgLTEgLTAuNDMzNTk0IC0xIC0xIHYgLTggYyAwIC0wLjU2MjUgMC40Mzc1IC0xIDEgLTEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-go-down-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEgNSBjIDAgLTAuMjY1NjI1IDAuMTA1NDY5IC0wLjUxOTUzMSAwLjI5Mjk2OSAtMC43MDcwMzEgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1LjI5Mjk2OSA1LjI5Mjk2OSBsIDUuMjkyOTY5IC01LjI5Mjk2OSBjIDAuMzkwNjI1IC0wLjM5MDYyNSAxLjAyMzQzNyAtMC4zOTA2MjUgMS40MTQwNjIgMCBjIDAuMTg3NSAwLjE4NzUgMC4yOTI5NjkgMC40NDE0MDYgMC4yOTI5NjkgMC43MDcwMzEgcyAtMC4xMDU0NjkgMC41MTk1MzEgLTAuMjkyOTY5IDAuNzA3MDMxIGwgLTYgNiBjIC0wLjM5MDYyNSAwLjM5MDYyNSAtMS4wMjM0MzcgMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNiAtNiBjIC0wLjE4NzUgLTAuMTg3NSAtMC4yOTI5NjkgLTAuNDQxNDA2IC0wLjI5Mjk2OSAtMC43MDcwMzEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-right-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDkuNSAxNCB2IC0xMiBoIDUgdiAxMiB6IG0gMCAwIiBmaWxsLW9wYWNpdHk9IjAuMzQ5MDIiLz4KICAgICAgICA8cGF0aCBkPSJtIDEzIDEgYyAxLjY0NDUzMSAwIDMgMS4zNTU0NjkgMyAzIHYgOCBjIDAgMS42NDQ1MzEgLTEuMzU1NDY5IDMgLTMgMyBoIC0xMCBjIC0xLjY0NDUzMSAwIC0zIC0xLjM1NTQ2OSAtMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgMS4zNTU0NjkgLTMgMyAtMyB6IG0gMCAyIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgMC40Mjk2ODggLTEgMSB2IDggYyAwIDAuNTcwMzEyIDAuNDI5Njg4IDEgMSAxIGggMTAgYyAwLjU3MDMxMiAwIDEgLTAuNDI5Njg4IDEgLTEgdiAtOCBjIDAgLTAuNTcwMzEyIC0wLjQyOTY4OCAtMSAtMSAtMSB6IG0gMCAwIi8+CiAgICAgICAgPHBhdGggZD0ibSAxMCAyIGggLTEgdiAxMiBoIDEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-sidebar-show-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDYuNSAxNCB2IC0xMiBoIC01IHYgMTIgeiBtIDAgMCIgZmlsbC1vcGFjaXR5PSIwLjM0OTAyIi8+CiAgICAgICAgPHBhdGggZD0ibSAzIDEgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgOCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC04IGMgMCAtMS42NDQ1MzEgLTEuMzU1NDY5IC0zIC0zIC0zIHogbSAwIDIgaCAxMCBjIDAuNTcwMzEyIDAgMSAwLjQyOTY4OCAxIDEgdiA4IGMgMCAwLjU3MDMxMiAtMC40Mjk2ODggMSAtMSAxIGggLTEwIGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI5Njg4IC0xIC0xIHYgLTggYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDYgMiBoIDEgdiAxMiBoIC0xIHogbSAwIDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==");
+  --adwaita-icon-tab-new-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDMgMCBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiAxMCBjIDAgMS42NDQ1MzEgMS4zNTU0NjkgMyAzIDMgaCAxMCBjIDEuNjQ0NTMxIDAgMyAtMS4zNTU0NjkgMyAtMyB2IC0xMCBjIDAgLTEuNjQ0NTMxIC0xLjM1NTQ2OSAtMyAtMyAtMyB6IG0gMCAyIGggMTAgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgMTAgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtMTAgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDQgNyBoIDggdiAyIGggLTggeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gOSA0IHYgOCBoIC0yIHYgLTggeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
+  --adwaita-icon-view-more-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDcuOTk2MDk0IDAgYyAtMS4xMDU0NjkgMCAtMiAwLjg5NDUzMSAtMiAyIHMgMC44OTQ1MzEgMiAyIDIgYyAxLjEwMTU2MiAwIDIgLTAuODk0NTMxIDIgLTIgcyAtMC44OTg0MzggLTIgLTIgLTIgeiBtIDAgNiBjIC0xLjEwNTQ2OSAwIC0yIDAuODk0NTMxIC0yIDIgcyAwLjg5NDUzMSAyIDIgMiBjIDEuMTAxNTYyIDAgMiAtMC44OTQ1MzEgMiAtMiBzIC0wLjg5ODQzOCAtMiAtMiAtMiB6IG0gMCA2IGMgLTEuMTA1NDY5IDAgLTIgMC44OTQ1MzEgLTIgMiBzIDAuODk0NTMxIDIgMiAyIGMgMS4xMDE1NjIgMCAyIC0wLjg5NDUzMSAyIC0yIHMgLTAuODk4NDM4IC0yIC0yIC0yIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+  --adwaita-icon-window-close-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-maximize-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=");
+  --adwaita-icon-window-minimize-symbolic: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K"); }
+
+body {
+  --adwaita-blue-1: #99c1f1;
+  --adwaita-blue-2: #62a0ea;
+  --adwaita-blue-3: #3584e4;
+  --adwaita-blue-4: #1c71d8;
+  --adwaita-blue-5: #1a5fb4;
+  --adwaita-green-1: #8ff0a4;
+  --adwaita-green-2: #57e389;
+  --adwaita-green-3: #33d17a;
+  --adwaita-green-4: #2ec27e;
+  --adwaita-green-5: #26a269;
+  --adwaita-yellow-1: #f9f06b;
+  --adwaita-yellow-2: #f8e45c;
+  --adwaita-yellow-3: #f6d32d;
+  --adwaita-yellow-4: #f5c211;
+  --adwaita-yellow-5: #e5a50a;
+  --adwaita-orange-1: #ffbe6f;
+  --adwaita-orange-2: #ffa348;
+  --adwaita-orange-3: #ff7800;
+  --adwaita-orange-4: #e66100;
+  --adwaita-orange-5: #c64600;
+  --adwaita-red-1: #f66151;
+  --adwaita-red-2: #ed333b;
+  --adwaita-red-3: #e01b24;
+  --adwaita-red-4: #c01c28;
+  --adwaita-red-5: #a51d2d;
+  --adwaita-purple-1: #dc8add;
+  --adwaita-purple-2: #c061cb;
+  --adwaita-purple-3: #9141ac;
+  --adwaita-purple-4: #813d9c;
+  --adwaita-purple-5: #613583;
+  --adwaita-brown-2: #b5835a;
+  --adwaita-brown-1: #cdab8f;
+  --adwaita-brown-3: #986a44;
+  --adwaita-brown-4: #865e3c;
+  --adwaita-brown-5: #63452c;
+  --adwaita-light-1: #ffffff;
+  --adwaita-light-2: #f6f5f4;
+  --adwaita-light-3: #deddda;
+  --adwaita-light-4: #c0bfbc;
+  --adwaita-light-5: #9a9996;
+  --adwaita-dark-1: #77767b;
+  --adwaita-dark-2: #5e5c64;
+  --adwaita-dark-3: #3d3846;
+  --adwaita-dark-4: #241f31;
+  --adwaita-dark-5: #000000; }
+  body.theme-dark {
+    --adwaita-accent-color: #78aeed;
+    --adwaita-accent-bg-color: #3584e4;
+    --adwaita-accent-fg-color: #ffffff;
+    --adwaita-destructive-color: #ff7b63;
+    --adwaita-destructive-bg-color: #c01c28;
+    --adwaita-destructive-fg-color: #ffffff;
+    --adwaita-success-color: #8ff0a4;
+    --adwaita-success-bg-color: #26a269;
+    --adwaita-success-fg-color: #ffffff;
+    --adwaita-warning-color: #f8e45c;
+    --adwaita-warning-bg-color: #cd9309;
+    --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-error-color: #ff7b63;
+    --adwaita-error-bg-color: #c01c28;
+    --adwaita-error-fg-color: #ffffff;
+    --adwaita-window-bg-color: #242424;
+    --adwaita-window-fg-color: #ffffff;
+    --adwaita-view-bg-color: #1e1e1e;
+    --adwaita-view-fg-color: #ffffff;
+    --adwaita-headerbar-bg-color: #303030;
+    --adwaita-headerbar-fg-color: #ffffff;
+    --adwaita-headerbar-border-color: #ffffff;
+    --adwaita-headerbar-backdrop-color: #242424;
+    --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.36);
+    --adwaita-card-bg-color: rgba(255, 255, 255, 0.08);
+    --adwaita-card-fg-color: #ffffff;
+    --adwaita-card-shade-color: rgba(0, 0, 0, 0.36);
+    --adwaita-dialog-bg-color: #383838;
+    --adwaita-dialog-fg-color: #ffffff;
+    --adwaita-popover-bg-color: #383838;
+    --adwaita-popover-fg-color: #ffffff;
+    --adwaita-popover-shader-color: rgba(0, 0, 0, 0.36);
+    --adwaita-shade-color: rgba(0, 0, 0, 0.36);
+    --adwaita-scrollbar-outline-color: rgba(0, 0, 0, 0.5); }
+  body.theme-light {
+    --adwaita-accent-color: #1c71d8;
+    --adwaita-accent-bg-color: #3584e4;
+    --adwaita-accent-fg-color: #ffffff;
+    --adwaita-destructive-color: #c01c28;
+    --adwaita-destructive-bg-color: #e01b24;
+    --adwaita-destructive-fg-color: #ffffff;
+    --adwaita-success-color: #1b8553;
+    --adwaita-success-bg-color: #2ec27e;
+    --adwaita-success-fg-color: #ffffff;
+    --adwaita-warning-color: #9c6e03;
+    --adwaita-warning-bg-color: #e5a50a;
+    --adwaita-warning-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-error-color: #c01c28;
+    --adwaita-error-bg-color: #e01b24;
+    --adwaita-error-fg-color: #ffffff;
+    --adwaita-window-bg-color: #fafafa;
+    --adwaita-window-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-view-bg-color: #ffffff;
+    --adwaita-view-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-headerbar-bg-color: #ffffff;
+    --adwaita-headerbar-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-headerbar-border-color: 	rgba(0, 0, 0, 0.8);
+    --adwaita-headerbar-backdrop-color: #fafafa;
+    --adwaita-headerbar-shade-color: 	rgba(0, 0, 0, 0.12);
+    --adwaita-card-bg-color: #ffffff;
+    --adwaita-card-fg-color: 	rgba(0, 0, 0, 0.8);
+    --adwaita-card-shade-color: rgba(0, 0, 0, 0.07);
+    --adwaita-dialog-bg-color: #ffffff;
+    --adwaita-dialog-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-popover-bg-color: #fafafa;
+    --adwaita-popover-fg-color: rgba(0, 0, 0, 0.8);
+    --adwaita-popover-shader-color: rgba(0, 0, 0, 0.07);
+    --adwaita-shade-color: 	rgba(0, 0, 0, 0.07);
+    --adwaita-scrollbar-outline-color: #ffffff; }
+
+body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux,
+body.adwaita-colors-always,
+body.adwaita-colors-linux-only.mod-linux {
+  --titlebar-background: var(--adwaita-headerbar-backdrop-color);
+  --titlebar-background-focused: var(--adwaita-headerbar-bg-color);
+  --titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
+  --text-normal: var(--adwaita-view-fg-color); }
+  body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+  body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.is-focused .sidebar-toggle-button,
+  body.adwaita-colors-always.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+  body.adwaita-colors-always.is-focused .sidebar-toggle-button,
+  body.adwaita-colors-linux-only.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+  body.adwaita-colors-linux-only.mod-linux.is-focused .sidebar-toggle-button {
+    --icon-color: var(--adwaita-headerbar-fg-color);
+    --icon-color-hover: var(--adwaita-headerbar-fg-color);
+    --icon-color-focused: var(--adwaita-headerbar-fg-color);
+    --tab-text-color-focused: var(--adwaita-headerbar-fg-color);
+    --tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color); }
+  body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-dark,
+  body.adwaita-colors-always.theme-dark,
+  body.adwaita-colors-linux-only.mod-linux.theme-dark {
+    --titlebar-text-color: #919191;
+    --icon-color: #929292;
+    --icon-color-hover: #929292;
+    --icon-color-focused: #929292;
+    --tab-text-color: #929292;
+    --tab-text-color-focused: #8a8a8a;
+    --tab-text-color-focused-active-current: #8a8a8a;
+    --background-modifier-hover: #323232; }
+    body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-dark.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-dark.is-focused .sidebar-toggle-button,
+    body.adwaita-colors-always.theme-dark.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body.adwaita-colors-always.theme-dark.is-focused .sidebar-toggle-button,
+    body.adwaita-colors-linux-only.mod-linux.theme-dark.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body.adwaita-colors-linux-only.mod-linux.theme-dark.is-focused .sidebar-toggle-button {
+      --background-modifier-hover: #464646; }
+  body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-light,
+  body.adwaita-colors-always.theme-light,
+  body.adwaita-colors-linux-only.mod-linux.theme-light {
+    --titlebar-text-color: #8c8c8c;
+    --icon-color: #939393;
+    --icon-color-hover: #939393;
+    --icon-color-focused: #939393;
+    --tab-text-color: #939393;
+    --tab-text-color-focused: #939393;
+    --tab-text-color-focused-active-current: #939393;
+    --background-modifier-hover: #f0f0f0; }
+    body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-light.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux.theme-light.is-focused .sidebar-toggle-button,
+    body.adwaita-colors-always.theme-light.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body.adwaita-colors-always.theme-light.is-focused .sidebar-toggle-button,
+    body.adwaita-colors-linux-only.mod-linux.theme-light.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+    body.adwaita-colors-linux-only.mod-linux.theme-light.is-focused .sidebar-toggle-button {
+      --background-modifier-hover: #d8d8d8; }
+  body:not(.adwaita-colors-always, .adwaita-colors-linux-only, .adwaita-colors-never).mod-linux .titlebar-button.mod-logo:hover,
+  body.adwaita-colors-always .titlebar-button.mod-logo:hover,
+  body.adwaita-colors-linux-only.mod-linux .titlebar-button.mod-logo:hover {
+    background-color: inherit; }
+
+body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux,
+body.adwaita-mod-always,
+body.adwaita-mod-linux-only.mod-linux {
+  --frame-right-space: calc(var(--adwaita-mod-scale) * 120px);
+  --adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color); }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.theme-dark,
+  body.adwaita-mod-always.theme-dark,
+  body.adwaita-mod-linux-only.mod-linux.theme-dark {
+    --adwaita-mod-background: #2e2e2e;
+    --adwaita-mod-background-focus: #444444;
+    --adwaita-mod-background-hover: #4f4f4f;
+    --adwaita-mod-background-active: #6e6e6e;
+    --adwaita-mod-foreground: #929292; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.theme-light,
+  body.adwaita-mod-always.theme-light,
+  body.adwaita-mod-linux-only.mod-linux.theme-light {
+    --adwaita-mod-background: #efefef;
+    --adwaita-mod-background-focus: #d8d8d8;
+    --adwaita-mod-background-hover: #cfcfcf;
+    --adwaita-mod-background-active: #b3b3b3;
+    --adwaita-mod-foreground: #949494; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize,
+  body.adwaita-mod-always.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize,
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+    display: none; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize,
+  body.adwaita-mod-always.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize,
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize {
+    display: none; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close,
+  body.adwaita-mod-always.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close,
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close {
+    display: none; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide),
+  body.adwaita-mod-always.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide),
+  body.adwaita-mod-always.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide),
+  body.adwaita-mod-always.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide) {
+    --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px)); }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide), body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide),
+  body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide),
+  body.adwaita-mod-always.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide),
+  body.adwaita-mod-always.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(.adwaita-window-button-close-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(.adwaita-window-button-minimize-hide),
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(.adwaita-window-button-maximize-hide) {
+    --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px)); }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
+  body.adwaita-mod-always.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
+  body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+    --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px)); }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right,
+  body.adwaita-mod-always .titlebar-button-container.mod-right,
+  body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right {
+    transform: scale(var(--adwaita-mod-scale));
+    margin-right: var(--adwaita-mod-right-margin);
+    transform-origin: right; }
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button,
+    body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button,
+    body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button {
+      height: 24px;
+      width: 24px;
+      border-radius: 12px;
+      padding: 0;
+      margin: auto 0 auto 14px;
+      background: var(--adwaita-mod-background);
+      color: var(--adwaita-mod-foreground); }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize svg, body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize svg, body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close svg,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-minimize svg,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-maximize svg,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-close svg,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize svg,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize svg,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close svg {
+        display: none; }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button::after,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button::after,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
+        content: '';
+        background-color: currentColor;
+        width: 16px;
+        height: 16px;
+        margin: auto; }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after {
+        -webkit-mask-image: var(--adwaita-icon-window-minimize-symbolic);
+        mask-image: var(--adwaita-icon-window-minimize-symbolic); }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after {
+        -webkit-mask-image: var(--adwaita-icon-window-maximize-symbolic);
+        mask-image: var(--adwaita-icon-window-maximize-symbolic); }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close::after,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button.mod-close::after,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button.mod-close::after {
+        -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+        mask-image: var(--adwaita-icon-window-close-symbolic); }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button:hover,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button:hover,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button:hover {
+        background: var(--adwaita-mod-background) !important; }
+      body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .titlebar-button-container.mod-right .titlebar-button svg,
+      body.adwaita-mod-always .titlebar-button-container.mod-right .titlebar-button svg,
+      body.adwaita-mod-linux-only.mod-linux .titlebar-button-container.mod-right .titlebar-button svg {
+        width: 12px;
+        height: 12px;
+        margin: auto; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button,
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .modal-close-button,
+  body.adwaita-mod-always.is-focused .titlebar-button-container.mod-right .titlebar-button,
+  body.adwaita-mod-always.is-focused .modal-close-button,
+  body.adwaita-mod-linux-only.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button,
+  body.adwaita-mod-linux-only.mod-linux.is-focused .modal-close-button {
+    background: var(--adwaita-mod-background-focus);
+    color: var(--adwaita-mod-foreground-focus); }
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:hover,
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .modal-close-button:hover,
+    body.adwaita-mod-always.is-focused .titlebar-button-container.mod-right .titlebar-button:hover,
+    body.adwaita-mod-always.is-focused .modal-close-button:hover,
+    body.adwaita-mod-linux-only.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:hover,
+    body.adwaita-mod-linux-only.mod-linux.is-focused .modal-close-button:hover {
+      background: var(--adwaita-mod-background-hover) !important; }
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:active,
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux.is-focused .modal-close-button:active,
+    body.adwaita-mod-always.is-focused .titlebar-button-container.mod-right .titlebar-button:active,
+    body.adwaita-mod-always.is-focused .modal-close-button:active,
+    body.adwaita-mod-linux-only.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button:active,
+    body.adwaita-mod-linux-only.mod-linux.is-focused .modal-close-button:active {
+      background: var(--adwaita-mod-background-active) !important; }
+  body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .modal-close-button,
+  body.adwaita-mod-always .modal-close-button,
+  body.adwaita-mod-linux-only.mod-linux .modal-close-button {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    color: var(--adwaita-mod-foreground);
+    background: var(--adwaita-mod-background);
+    transform: scale(var(--adwaita-mod-scale));
+    transform-origin: right; }
+    body:not(.adwaita-mod-always, .adwaita-mod-linux-only, .adwaita-mod-never).mod-linux .modal-close-button:before,
+    body.adwaita-mod-always .modal-close-button:before,
+    body.adwaita-mod-linux-only.mod-linux .modal-close-button:before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+      mask-image: var(--adwaita-icon-window-close-symbolic);
+      background-color: currentColor; }
+
+body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux,
+body.adwaita-tabs-always,
+body.adwaita-tabs-linux-only.mod-linux {
+  --tab-radius-active: 4px; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux:not(.adwaita-tabs-short),
+  body.adwaita-tabs-always:not(.adwaita-tabs-short),
+  body.adwaita-tabs-linux-only.mod-linux:not(.adwaita-tabs-short) {
+    --tab-width: 10000px;
+    /* infinite width */
+    --tab-max-width: none; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux.theme-dark,
+  body.adwaita-tabs-always.theme-dark,
+  body.adwaita-tabs-linux-only.mod-linux.theme-dark {
+    --tab-background-active: #323232; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux.theme-dark.is-focused,
+    body.adwaita-tabs-always.theme-dark.is-focused,
+    body.adwaita-tabs-linux-only.mod-linux.theme-dark.is-focused {
+      --tab-background-active: #464646; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux.theme-light,
+  body.adwaita-tabs-always.theme-light,
+  body.adwaita-tabs-linux-only.mod-linux.theme-light {
+    --tab-background-active: #f0f0f0; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux.theme-light.is-focused,
+    body.adwaita-tabs-always.theme-light.is-focused,
+    body.adwaita-tabs-linux-only.mod-linux.theme-light.is-focused {
+      --tab-background-active: #d8d8d8; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .workspace-tab-header-container .workspace-tab-header-container-inner,
+  body.adwaita-tabs-always .workspace-tab-header-container .workspace-tab-header-container-inner,
+  body.adwaita-tabs-linux-only.mod-linux .workspace-tab-header-container .workspace-tab-header-container-inner {
+    --tab-outline-width: 0; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .workspace-tab-header-container .workspace-tab-header-new-tab,
+  body.adwaita-tabs-always .workspace-tab-header-container .workspace-tab-header-new-tab,
+  body.adwaita-tabs-linux-only.mod-linux .workspace-tab-header-container .workspace-tab-header-new-tab {
+    margin-right: var(--size-4-1); }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .workspace-tab-header-new-tab,
+  body.adwaita-tabs-always .workspace-tab-header-new-tab,
+  body.adwaita-tabs-linux-only.mod-linux .workspace-tab-header-new-tab {
+    order: 1; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .workspace-tab-header-tab-list,
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .sidebar-toggle-button.mod-right,
+  body.adwaita-tabs-always .workspace-tab-header-tab-list,
+  body.adwaita-tabs-always .sidebar-toggle-button.mod-right,
+  body.adwaita-tabs-linux-only.mod-linux .workspace-tab-header-tab-list,
+  body.adwaita-tabs-linux-only.mod-linux .sidebar-toggle-button.mod-right {
+    order: 2; }
+  body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+  body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+  body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    padding: 0;
+    margin: 5px 3px 5px 2px; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+      color: var(--tab-text-color-focused); }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:before, body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:after,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:before,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:after,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:before,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:after {
+      content: none; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner::after,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner::after,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner::after {
+      right: -6px; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-title,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-title,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-title {
+      padding-left: 20px;
+      text-align: center; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:last-child .workspace-tab-header-inner::after,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:last-child .workspace-tab-header-inner::after,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:last-child .workspace-tab-header-inner::after {
+      content: none; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner-close-button {
+      opacity: 0;
+      display: flex; }
+    body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-always .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button,
+    body.adwaita-tabs-linux-only.mod-linux .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header :hover .workspace-tab-header-inner-close-button {
+      opacity: 1; }
+
+body:not(.adwaita-font-always, .adwaita-font-linux-only, .adwaita-font-never).mod-linux,
+body.adwaita-font-always,
+body.adwaita-font-linux-only.mod-linux {
+  --titlebar-height: 45px;
+  --font-interface-theme: Cantarell;
+  --font-ui-small: 15px;
+  --h1-weight: 900; }
+  body:not(.adwaita-font-always, .adwaita-font-linux-only, .adwaita-font-never).mod-linux .titlebar-text,
+  body.adwaita-font-always .titlebar-text,
+  body.adwaita-font-linux-only.mod-linux .titlebar-text {
+    top: 10px;
+    height: auto; }
+
+body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux,
+body.adwaita-icons-always,
+body.adwaita-icons-linux-only.mod-linux {
+  --titlebar-height: 45px;
+  --header-height: 46px; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux svg.logo-wireframe,
+  body.adwaita-icons-always svg.logo-wireframe,
+  body.adwaita-icons-linux-only.mod-linux svg.logo-wireframe {
+    stroke-width: 45; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux.is-frameless:not(.is-hidden-frameless) .app-container,
+  body.adwaita-icons-always.is-frameless:not(.is-hidden-frameless) .app-container,
+  body.adwaita-icons-linux-only.mod-linux.is-frameless:not(.is-hidden-frameless) .app-container {
+    margin-top: -9px;
+    height: calc(100% + 9px); }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-new-tab,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-tab-list,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .mod-left-split .workspace-tabs .workspace-tab-header-container-inner,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .mod-right-split .workspace-tabs .workspace-tab-header-container-inner,
+  body.adwaita-icons-always .sidebar-toggle-button,
+  body.adwaita-icons-always .workspace-tab-header-new-tab,
+  body.adwaita-icons-always .workspace-tab-header-tab-list,
+  body.adwaita-icons-always .mod-left-split .workspace-tabs .workspace-tab-header-container-inner,
+  body.adwaita-icons-always .mod-right-split .workspace-tabs .workspace-tab-header-container-inner,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-new-tab,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-tab-list,
+  body.adwaita-icons-linux-only.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header-container-inner,
+  body.adwaita-icons-linux-only.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header-container-inner {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .mod-left-split .workspace-tabs .workspace-tab-header,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .mod-right-split .workspace-tabs .workspace-tab-header,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button .clickable-icon,
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon,
+  body.adwaita-icons-always .mod-left-split .workspace-tabs .workspace-tab-header,
+  body.adwaita-icons-always .mod-right-split .workspace-tabs .workspace-tab-header,
+  body.adwaita-icons-always .sidebar-toggle-button .clickable-icon,
+  body.adwaita-icons-always .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon,
+  body.adwaita-icons-linux-only.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header,
+  body.adwaita-icons-linux-only.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button .clickable-icon,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon {
+    height: 34px;
+    min-width: 34px;
+    margin-top: auto;
+    margin-bottom: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-left .clickable-icon svg,
+  body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-left .clickable-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after,
+  body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+    mask-image: var(--adwaita-icon-sidebar-show-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-right .clickable-icon svg,
+  body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-right .clickable-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after,
+  body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+    mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-new-tab .clickable-icon svg,
+  body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-new-tab .clickable-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-new-tab .clickable-icon::after,
+  body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
+    mask-image: var(--adwaita-icon-tab-new-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-tab-list .clickable-icon svg,
+  body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-tab-list .clickable-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-tab-list .clickable-icon::after,
+  body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
+    mask-image: var(--adwaita-icon-go-down-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-inner-close-button svg,
+  body.adwaita-icons-always .workspace-tab-header-inner-close-button svg,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-inner-close-button svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header-inner-close-button::after,
+  body.adwaita-icons-always .workspace-tab-header-inner-close-button::after,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header-inner-close-button::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
+    mask-image: var(--adwaita-icon-window-close-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon svg,
+  body.adwaita-icons-always .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after,
+  body.adwaita-icons-always .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="file-explorer"] .workspace-tab-header-inner-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+    mask-image: var(--adwaita-icon-folder-visiting-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon svg,
+  body.adwaita-icons-always .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon svg,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon svg {
+    display: none; }
+  body:not(.adwaita-icons-always, .adwaita-icons-linux-only, .adwaita-icons-never).mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after,
+  body.adwaita-icons-always .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after,
+  body.adwaita-icons-linux-only.mod-linux .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon::after {
+    content: '';
+    background-color: currentColor !important;
+    -webkit-mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+    mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
+    width: 16px;
+    height: 16px;
+    margin: auto; }

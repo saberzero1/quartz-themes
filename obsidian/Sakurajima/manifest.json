@@ -1,0 +1,10 @@
+{
+  "name": "Sakurajima",
+  "author": "Daiki Nakashima",
+  "version": "1.1.0",
+  "minAppVersion": "1.0.0",
+  "repo": "Daiki48/sakurajima.obsidian",
+  "authorUrl": "https://dnfolio.dev",
+  "screenshot": "screenshots/cover.png",
+  "modes": ["dark"]
+}

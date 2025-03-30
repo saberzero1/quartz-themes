@@ -1,0 +1,5 @@
+.theme-dark {
+  --background-primary: #000;
+  --background-secondary: #000;
+  --titlebar-background-focused: #000;
+}

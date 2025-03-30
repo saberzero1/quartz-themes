@@ -1,0 +1,427 @@
+.theme-dark,
+.theme-light {
+  /* Overwrite default theme colors */
+  --base03: rgb(0, 43, 54);
+  --base02: rgb(7, 54, 66);
+  --base01: rgb(88, 110, 117);
+  --base00: rgb(101, 123, 131);
+  --base0: rgb(131, 148, 150);
+  --base1: rgb(147, 161, 161);
+  --base2: rgb(238, 232, 213);
+  --base3: rgb(253, 246, 227);
+  --color-yellow: rgb(181, 137, 0);
+  --color-yellow-rgb: 181, 137, 0;
+  --color-orange: rgb(203, 75, 22);
+  --color-orange-rgb: 203, 75, 22;
+  --color-red: rgb(220, 50, 47);
+  --color-red-rgb: 220, 50, 47;
+  --color-pink: rgb(211, 54, 130);
+  --color-pink-rgb: 211, 54, 130;
+  --color-purple: rgb(108, 113, 196);
+  --color-purple-rgb: 108, 113, 196;
+  --color-blue: rgb(38, 139, 210);
+  --color-blue-rgb: 38, 139, 210;
+  --color-cyan: rgb(42, 161, 152);
+  --color-cyan-rgb: 42, 161, 152;
+  --color-green: rgb(133, 153, 0);
+  --color-green-rgb: 133, 153, 0;
+  --accent-h: 17.5690607735deg;
+  --accent-s: 80.4444444444%;
+  --accent-l: 44.1176470588%;
+}
+
+/*! @settings
+name: Solarized Theme Settings
+id: solarized-theme-settings
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 2
+  - id: tones
+    title: Base Tones
+    type: heading
+    level: 3
+    collapsed: true
+  - id: base03
+    title: base03
+    type: variable-color
+    format: rgb
+    default: rgb(0 43 54)
+  - id: base02
+    title: base02
+    type: variable-color
+    format: rgb
+    default: rgb(7 54 66)
+  - id: base01
+    title: base01
+    type: variable-color
+    format: rgb
+    default: rgb(88 110 117)
+  - id: base00
+    title: base00
+    type: variable-color
+    format: rgb
+    default: rgb(101 123 131)
+  - id: base0
+    title: base0
+    type: variable-color
+    format: rgb
+    default: rgb(131 148 150)
+  - id: base1
+    title: base1
+    type: variable-color
+    format: rgb
+    default: rgb(147 161 161)
+  - id: base2
+    title: base2
+    type: variable-color
+    format: rgb
+    default: rgb(238 232 213)
+  - id: base3
+    title: base3
+    type: variable-color
+    format: rgb
+    default: rgb(253 246 227)
+  - id: accents
+    description: "NB This does not override Obsidian's built-in accent color (see Appearance > Accent color)"
+    title: Accent Colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: color-yellow
+    title: yellow
+    type: variable-color
+    format: rgb
+    default: rgb(181 137 0)
+    alt-format:
+    - id: color-yellow-rgb
+      format: rgb-values
+  - id: color-orange
+    title: orange
+    type: variable-color
+    format: rgb
+    default: rgb(203 75 22)
+    alt-format:
+    - id: color-orange-rgb
+      format: rgb-values
+  - id: color-red
+    title: red
+    type: variable-color
+    format: rgb
+    default: rgb(220 50 47)
+    alt-format:
+    - id: color-red-rgb
+      format: rgb-values
+  - id: color-pink
+    title: pink
+    type: variable-color
+    format: rgb
+    default: rgb(211 54 130)
+    alt-format:
+    - id: color-pink-rgb
+      format: rgb-values
+  - id: color-purple
+    title: purple
+    type: variable-color
+    format: rgb
+    default: rgb(108 113 196)
+    alt-format:
+    - id: color-purple-rgb
+      format: rgb-values
+  - id: color-blue
+    title: blue
+    type: variable-color
+    format: rgb
+    default: rgb(38 139 210)
+    alt-format:
+    - id: color-blue-rgb
+      format: rgb-values
+  - id: color-cyan
+    title: cyan
+    type: variable-color
+    format: rgb
+    default: rgb(42 161 152)
+    alt-format:
+    - id: color-cyan-rgb
+      format: rgb-values
+  - id: color-green
+    title: green
+    type: variable-color
+    format: rgb
+    default: rgb(133 153 0)
+    alt-format:
+    - id: color-green-rgb
+      format: rgb-values
+*/
+.theme-dark {
+  /* Overwrite default theme colors */
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-20: #262626;
+  --color-base-25: var(--base03);
+  --color-base-30: var(--base02);
+  --color-base-35: var(--base02);
+  --color-base-40: var(--base0);
+  --color-base-50: #666;
+  --color-base-60: #999;
+  --color-base-70: #bababa;
+  --color-base-100: #dadada;
+  /* Background */
+  --background-primary: var(--base03);
+  --background-primary-alt: var(--base02);
+  /* Text */
+  --text-normal: var(--base0);
+  --text-muted: var(--base00);
+  --text-faint: var(--base01);
+  /* File explorer */
+  --active-bg: var(--nav-item-background-active);
+  /* Hashtags */
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
+}
+
+.theme-light {
+  /* Overwrite default theme colors */
+  --color-base-00: var(--base2);
+  --color-base-05: #fcfcfc;
+  --color-base-10: var(--base2);
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: var(--base2);
+  --color-base-35: var(--base2);
+  --color-base-40: var(--base00);
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5a5a5a;
+  --color-base-100: #222222;
+  /* Background */
+  --background-primary: var(--base3);
+  --background-primary-alt: var(--base2);
+  /* Text */
+  --text-normal: var(--base00);
+  --text-muted: var(--base0);
+  --text-faint: var(--base1);
+  /* File explorer */
+  --active-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  --nav-item-background-active: var(--active-bg);
+  /* Hashtags */
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+}
+
+.theme-dark,
+.theme-light {
+  --interactive-accent: var(--color-accent);
+  /* Background */
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: var(--background-primary-alt);
+  /* Text */
+  --text-on-accent: var(--background-primary);
+  /* Headings */
+  --text-title: var(--color-cyan);
+  --heading-formatting: var(--text-title);
+  --h1-color: var(--text-title);
+  --h2-color: var(--text-title);
+  --h3-color: var(--text-title);
+  --h4-color: var(--text-title);
+  --h5-color: var(--text-title);
+  --h6-color: var(--text-title);
+  /* Links */
+  --link-color: var(--color-blue);
+  --link-color-hover: var(--link-color);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: var(--color-purple);
+  --link-external-color-hover: var(--link-external-color);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: var(--color-red);
+  --link-unresolved-color-hover: var(--link-unresolved-color);
+  --link-unresolved-opacity: unset;
+  --link-unresolved-decoration-color: var(--link-unresolved-color);
+  /* Code */
+  --code-normal: var(--text-normal);
+  --code-comment: var(--color-cyan);
+  --code-function: var(--color-blue);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-green);
+  --code-operator: var(--code-normal);
+  --code-property: var(--code-normal);
+  --code-punctuation: var(--code-normal);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-pink);
+  /* Tables */
+  --table-header-size: inherit;
+  --table-header-weight: var(--font-bold);
+  --table-header-color: inherit;
+  /* Highlights */
+  --text-highlight-bg: var(--color-accent);
+  --text-highlight-bg-active: var(--color-accent);
+  /* Checkboxes in reading view */
+  --checkbox-border-color: var(--interactive-accent);
+  --checkbox-border-color-hover: var(--interactive-accent-hover);
+  /* Hashtags */
+  --tag-padding-x: var(--tag-padding-y);
+  --tag-color: var(--color-accent);
+  /* Focus border */
+  --background-modifier-border-focus: var(--interactive-accent);
+}
+
+.cm-s-obsidian {
+  /* Checkboxes */
+  /* Links */
+  /* Tables */
+  /* Search results */
+  /* Code */
+  /* Highlights */
+}
+.cm-s-obsidian span.cm-formatting-task {
+  color: var(--checkbox-color);
+}
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--link-color);
+}
+.cm-s-obsidian span.cm-formatting-link.cm-strikethrough {
+  text-decoration-line: line-through;
+}
+.cm-s-obsidian span.cm-link {
+  color: var(--link-external-color) !important;
+}
+.cm-s-obsidian span.cm-url.cm-strikethrough {
+  text-decoration-line: line-through;
+}
+.cm-s-obsidian .HyperMD-table-row-0 {
+  font-weight: var(--font-bold);
+}
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  box-shadow: unset;
+  mix-blend-mode: unset;
+  border-radius: unset;
+  background: var(--color-green);
+  color: var(--text-on-accent);
+  padding: 2px 0;
+}
+.cm-s-obsidian span.cm-comment {
+  color: var(--code-comment);
+}
+.cm-s-obsidian span.cm-inline-code {
+  padding: 2px 0;
+}
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  color: var(--text-on-accent);
+  padding: 2px 0;
+}
+
+/* More code */
+.cm-def {
+  color: var(--code-function);
+}
+
+.cm-atom {
+  color: var(--code-value);
+}
+
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-atom,
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+  color: var(--interactive-accent);
+}
+
+/* Search results */
+.is-flashing {
+  border-radius: unset;
+  --code-normal: var(--text-highlight-bg);
+  --link-color: var(--text-on-accent);
+  --link-color-hover: var(--background-primary-alt);
+  --link-decoration: underline;
+  --link-decoration-hover: none;
+  --link-external-color: var(--text-on-accent);
+  --link-external-color-hover: var(--background-primary-alt);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: none;
+}
+
+.search-result-file-matched-text {
+  color: var(--text-on-accent);
+  padding: 2px 0;
+}
+
+.markdown-rendered {
+  /* Unresolved links in preview mode */
+  /* Highlights in preview mode */
+}
+.markdown-rendered .internal-link.is-unresolved:hover {
+  color: var(--link-unresolved-color-hover);
+  text-decoration-color: var(--link-unresolved-color-hover);
+}
+.markdown-rendered mark {
+  color: var(--text-on-accent);
+}
+
+/* Highlight current line */
+.cm-active {
+  background: var(--active-bg);
+}
+.cm-active.cm-gutterElement {
+  color: var(--color-accent);
+}
+
+/* Hashtags */
+.cm-hashtag.cm-hashtag-begin, .cm-hashtag.cm-hashtag-end {
+  border: unset;
+  border-radius: unset;
+}
+
+/* https://github.com/nothingislost/obsidian-dynamic-highlights */
+.cm-current-word,
+.cm-matched-word,
+.cm-current-string,
+.cm-matched-string {
+  background: var(--color-yellow);
+  color: var(--text-on-accent);
+  text-decoration: none;
+  padding: 2px 0;
+}
+
+/* File explorer */
+.is-flashing {
+  color: var(--text-on-accent) !important;
+}
+
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
+.workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Community theme and plugin browsers */
+.community-item:hover {
+  border-color: var(--color-accent);
+}
+.community-item .suggestion-highlight {
+  color: var(--text-on-accent);
+  font-weight: unset;
+}
+
+/* Vimrc Support Plugin */
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode {
+  color: var(--text-on-accent);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=normal] {
+  background-color: var(--color-blue);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=insert] {
+  background-color: var(--color-green);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=visual] {
+  background-color: var(--color-pink);
+}
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=replace] {
+  background-color: var(--red);
+}
+
+/* Mermaid */
+.mermaid tspan {
+  fill: var(--text-on-accent);
+}
+
+/*# sourceMappingURL=theme.css.map */
