@@ -25,7 +25,7 @@ try_curl() {
   curl -s -S -o "$OUTPUT_FILE" "$URL"
   local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
 
-  { content=$(cat "$OUTPUT_FILE"); } 2>/dev/null
+  { content="$(cat $OUTPUT_FILE)"; } 2>/dev/null
   if [ "$content" -eq "404: Not Found" ]; then
     echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
