@@ -1,6 +1,6 @@
 # Quartz Themes
 
-A collection of Obsidian.md themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
+A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 <p align="center" width="100%">
   <img src="media/quartz-themes-400.png" alt="Quartz Themes logo"/>
