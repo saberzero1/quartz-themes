@@ -18,12 +18,12 @@ echo_info() { echo -e "${BLUE}$1${NC}"; }
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
-if test -f ${QUARTZ_STYLES_DIR}/custom.scss; then
+if [[ -f ${QUARTZ_STYLES_DIR}/custom.scss ]]; then
   echo_ok "Quartz root succesfully detected..."
   THEME_DIR="${QUARTZ_STYLES_DIR}/${THEME_DIR}"
 else
   echo_warn "Quartz root not detected, checking if we are in the styles directory..."
-  if test -f custom.scss; then
+  if [[ -f custom.scss ]]; then
     echo_ok "Styles directory detected..."
   else
     echo_err "Cannot detect Quartz repository. Are you in the correct working directory?" 1>&2
@@ -39,14 +39,14 @@ echo "Parsing input theme..."
 result=""
 
 for param in "$@"; do
-  if [ -n "$result" ]; then
+  if [[ -n "$result" ]]; then
     result="$result-"
   fi
 
   result="$result$param"
 done
 
-if [ -z "$result" ]; then
+if [[ -z "$result" ]]; then
   echo_warn "No theme provided, defaulting to Tokyo Night..."
   result="tokyo-night"
 fi
@@ -73,10 +73,10 @@ README_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}README.md
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
 
-if [ "${PULSE}" = "200" ]; then
+if [[ "${PULSE}" = "200" ]]; then
   echo_ok "Theme '${THEME}' found. Preparing to fetch files..."
 else
-  if [ "${PULSE}" = "404" ]; then
+  if [[ "${PULSE}" = "404" ]]; then
     echo_err "Theme '${THEME}' not found. Please check the compatibility list." 1>&2
     exit 1
   else
@@ -111,44 +111,44 @@ curl -s -S -o ${THEME_DIR}/README.md "${README_URL}"
 
 echo "Checking theme files..."
 
-if [ -f "${THEME_DIR}/_index.scss" ]; then
+if [[ -f "${THEME_DIR}/_index.scss" ]]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
   exit 1
 fi
 
-if [ -f "${THEME_DIR}/_fonts.scss" ]; then
+if [[ -f "${THEME_DIR}/_fonts.scss" ]]; then
   echo_ok "_fonts.scss exists"
 else
   echo_err "_fonts.scss missing" 1>&2
   exit 1
 fi
 
-if [ -f "${THEME_DIR}/_dark.scss" ]; then
+if [[ -f "${THEME_DIR}/_dark.scss" ]]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing" 1>&2
 fi
 
-if [ -f "${THEME_DIR}/_light.scss" ]; then
+if [[ -f "${THEME_DIR}/_light.scss" ]]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing" 1>&2
 fi
 
-if [ -f "${THEME_DIR}/extras/_index.scss" ]; then
+if [[ -f "${THEME_DIR}/extras/_index.scss" ]]; then
   echo_ok "extras/_index.scss exists"
 else
   echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if [ -f "${THEME_DIR}/extras/hide-toggle.scss" ]; then
+if [[ -f "${THEME_DIR}/extras/hide-toggle.scss" ]]; then
   echo_ok "extras/hide-toggle.scss exists"
 fi
 
-if [ -f "${THEME_DIR}/README.md" ]; then
+if [[ -f "${THEME_DIR}/README.md" ]]; then
   echo_ok "README file exists"
 else
   echo_warn "README file missing"
@@ -165,15 +165,15 @@ else
   echo_info "Added import line to custom.scss..."
 fi
 
-if [ -f "${THEME_DIR}/_light.scss" ]; then
-  if [ -z "${THEME_DIR}/_dark.scss" ]; then
+if [[ -f "${THEME_DIR}/_light.scss" ]]; then
+  if [[ -z "${THEME_DIR}/_dark.scss" ]]; then
     echo_warn "Light-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="light"]#:root:root#' ${THEME_DIR}/_light.scss
   fi
 fi
 
-if [ -f "${THEME_DIR}/_dark.scss" ]; then
-  if [ -z "${THEME_DIR}/_light.scss" ]; then
+if [[ -f "${THEME_DIR}/_dark.scss" ]]; then
+  if [[ -z "${THEME_DIR}/_light.scss" ]]; then
     echo_warn "Dark-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="dark"]#:root:root#' ${THEME_DIR}/_dark.scss
   fi
