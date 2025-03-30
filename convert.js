@@ -592,7 +592,7 @@ manifestCollection.forEach((manifest) => {
     if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-        `START DARK */`,
+        /\/\* START DARK \*\/.*?\/\* END DARK \*\//gms,
         ``,
       )
       replaceInFile(
@@ -605,7 +605,7 @@ manifestCollection.forEach((manifest) => {
     if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
         `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
-        `START LIGHT */`,
+        /\/\* START LIGHT \*\/.*?\/\* END LIGHT \*\//gms,
         ``,
       )
       replaceInFile(
@@ -614,6 +614,12 @@ manifestCollection.forEach((manifest) => {
         `:root:root`,
       )
     }
+    // generic
+    replaceInFile(
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
+      /\[saved-theme=\".*?\"\]/g,
+      "",
+    )
   }
 
   // Remove remaining comments

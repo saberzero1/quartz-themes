@@ -417,8 +417,8 @@ body {
 }
 
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root,
+html {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -508,61 +508,6 @@ html[saved-theme="dark"] {
   }
 }
 /* END DARK */
-
-/* 
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout=#{$type}] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
@@ -1076,7 +1021,7 @@ body {
   ) !important;
 }
 
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
