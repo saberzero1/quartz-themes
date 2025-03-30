@@ -147,44 +147,44 @@ try_curl "${README_URL}" "${THEME_DIR}/README.md"
 
 echo "Checking theme files..."
 
-if ls "$THEME_DIR/_index.scss"; then
+if ls "$THEME_DIR/_index.scss" >/dev/null 2>&1; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
   exit 1
 fi
 
-if ls "$THEME_DIR/_fonts.scss"; then
+if ls "$THEME_DIR/_fonts.scss" >/dev/null 2>&1; then
   echo_ok "_fonts.scss exists"
 else
   echo_err "_fonts.scss missing" 1>&2
   exit 1
 fi
 
-if ls "$THEME_DIR/_dark.scss"; then
+if ls "$THEME_DIR/_dark.scss" >/dev/null 2>&1; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing"
 fi
 
-if ls "$THEME_DIR/_light.scss"; then
+if ls "$THEME_DIR/_light.scss" >/dev/null 2>&1; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
 fi
 
-if ls "$THEME_DIR/extras/_index.scss"; then
+if ls "$THEME_DIR/extras/_index.scss" >/dev/null 2>&1; then
   echo_ok "extras/_index.scss exists"
 else
   echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if ls "$THEME_DIR/extras/hide-toggle.scss"; then
+if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
   echo_ok "extras/hide-toggle.scss exists"
 fi
 
-if ls "$THEME_DIR/README.md"; then
+if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
   echo_ok "README file exists"
 else
   echo_warn "README file missing"
