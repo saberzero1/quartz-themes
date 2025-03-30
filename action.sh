@@ -23,7 +23,7 @@ check_file() {
   fi
 }
 
-file_exists() { (ls "$1" && echo "true") || echo "false" }
+file_exists() { (ls "$1" >> /dev/null 2>&1 && echo yes) || echo no }
 
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
