@@ -19,13 +19,11 @@ try_curl() {
   local URL="$1"
   local OUTPUT_FILE="$2"
   
-  local content=""
-
   # curl -I -w "%{http_code}" -s "$URL" -o "$OUTPUT_FILE" > /dev/null
   curl -s -S -o "$OUTPUT_FILE" "$URL"
   local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
 
-  { content="$(cat $OUTPUT_FILE)"; } 2>/dev/null
+  local content=$(<$OUTPUT_FILE)
   if [ "$content" -eq "404: Not Found" ]; then
     echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
