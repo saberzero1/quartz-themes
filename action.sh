@@ -168,14 +168,14 @@ fi
 if -f ${THEME_DIR}/_light.scss; then
   if ! -f ${THEME_DIR}/_dark.scss; then
     echo_warn "Light-only theme detected. Applying patches..."
-    sed -ir 's#:root[saved-theme="light"]#:root:root#' ${THEME_DIR}/../custom.scss
+    sed -ir 's#:root[saved-theme="light"]#:root:root#' ${THEME_DIR}/_light.scss
   fi
 fi
 
 if -f ${THEME_DIR}/_dark.scss; then
   if ! -f ${THEME_DIR}/_light.scss; then
     echo_warn "Dark-only theme detected. Applying patches..."
-    sed -ir 's#:root[saved-theme="dark"]#:root:root#' ${THEME_DIR}/../custom.scss
+    sed -ir 's#:root[saved-theme="dark"]#:root:root#' ${THEME_DIR}/_dark.scss
   fi
 fi
 
