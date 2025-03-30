@@ -17,9 +17,9 @@ echo_info() { echo -e "${BLUE}$1${NC}"; }
 
 check_file() { 
   if [ -f "$1" ]; then
-    return 0
+    echo 0
   else
-    return 1
+    echo 1
   fi
 }
 
