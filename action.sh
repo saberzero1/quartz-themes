@@ -101,7 +101,7 @@ CSS_DARK_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_dark.
 CSS_LIGHT_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_light.scss"
 CSS_OVERRIDE_URL="${GITHUB_URL_BASE}/${GITHUB_OVERRIDE_DIR}/${GITHUB_THEME_DIR}/_index.scss"
 CSS_EXTRAS_URL="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}"
-README_URL="${GITHUB_URL_BASE}/${GITHUB_OVERRIDE_DIR}/${GITHUB_THEME_DIR}/README.md"
+README_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/README.md"
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
 
@@ -140,7 +140,7 @@ try_curl "${CSS_EXTRAS_URL}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.s
 
 echo "Fetching README file..."
 
-try_curl "$README_URL" "${THEME_DIR}/README.md"
+try_curl "${README_URL}" "${THEME_DIR}/README.md"
 
 echo "Checking theme files..."
 
