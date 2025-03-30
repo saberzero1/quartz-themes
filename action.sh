@@ -26,24 +26,15 @@ try_curl() {
   curl -s -S -o "$OUTPUT_FILE" "$URL"
   local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
 
+  # curl on non-existent files return "404: Not found" from GitHub.
   local content="$(sed -n '1{/^404/p};q' $OUTPUT_FILE)"
   if [ ! -z "$content" ]; then
-    echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
     return 1  # Failure: HTTP error
   else 
     if [ "$http_code" = "200" ]; then
       return 0
-    # if [ -s "$OUTPUT_FILE" ]; then
-      # echo "Download successful from $URL to $OUTPUT_FILE."
-      # return 0  # Success
-    # else
-      # echo "Download from $URL to $OUTPUT_FILE succeeded, but file is empty."
-      # rm -f "$OUTPUT_FILE"
-      # return 1  # Failure: empty file
-    # fi
     else
-    # echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: $http_code."
       rm -f "$OUTPUT_FILE"
       return 1  # Failure: HTTP error
     fi
@@ -165,13 +156,13 @@ fi
 if ls "$THEME_DIR/_dark.scss" >/dev/null 2>&1; then
   echo_ok "_dark.scss exists"
 else
-  echo_warn "_dark.scss missing"
+  echo_warn "_dark.scss missing (expected with light-only themes)"
 fi
 
 if ls "$THEME_DIR/_light.scss" >/dev/null 2>&1; then
   echo_ok "_light.scss exists"
 else
-  echo_warn "_light.scss missing"
+  echo_warn "_light.scss missing (expected with dark-only themes)"
 fi
 
 if ls "$THEME_DIR/extras/_index.scss" >/dev/null 2>&1; then
