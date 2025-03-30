@@ -16,14 +16,12 @@ echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
 check_file() { 
-  if [ -f "$1" ]; then
+  if [ ls "$1" 1>$2 ]; then
     return 0
   else
     return 1
   fi
 }
-
-file_exists() { (ls "$1" >> /dev/null 2>&1 && echo yes) || echo no; }
 
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
@@ -122,7 +120,7 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 
 echo "Checking theme files..."
 
-CHECK_INDEX=$(file_exists "$THEME_DIR/_index.scss")
+CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss")
 RESULT=$(echo $CHECK_INDEX)
 echo $RESULT
 if [ $RESULT = "yes" ]; then
@@ -140,7 +138,7 @@ else
   exit 1
 fi
 
-CHECK_DARK=$(file_exists "$THEME_DIR/_dark.scss")
+CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss")
 RESULT=$(echo $CHECK_DARK)
 echo $RESULT
 if [ $RESULT = "yes" ]; then
@@ -149,7 +147,7 @@ else
   echo_warn "_dark.scss missing"
 fi
 
-CHECK_LIGHT=$(file_exists "$THEME_DIR/_light.scss")
+CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss")
 RESULT=$(echo $CHECK_LIGHT)
 echo $RESULT
 if [ $RESULT = "yes" ]; then
