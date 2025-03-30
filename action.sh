@@ -31,10 +31,9 @@ try_curl() {
     # echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
     return 1  # Failure: HTTP error
-  fi
-
-  if [ "$http_code" = "200" ]; then
-    return 0
+  else 
+    if [ "$http_code" = "200" ]; then
+      return 0
     # if [ -s "$OUTPUT_FILE" ]; then
       # echo "Download successful from $URL to $OUTPUT_FILE."
       # return 0  # Success
@@ -43,10 +42,11 @@ try_curl() {
       # rm -f "$OUTPUT_FILE"
       # return 1  # Failure: empty file
     # fi
-  else
+    else
     # echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: $http_code."
-    rm -f "$OUTPUT_FILE"
-    return 1  # Failure: HTTP error
+      rm -f "$OUTPUT_FILE"
+      return 1  # Failure: HTTP error
+    fi
   fi
 }
 
