@@ -165,15 +165,15 @@ else
   echo_info "Added import line to custom.scss..."
 fi
 
-if test -f ${THEME_DIR}/_light.scss; then
-  if ! test -f ${THEME_DIR}/_dark.scss; then
+if -f ${THEME_DIR}/_light.scss; then
+  if ! -f ${THEME_DIR}/_dark.scss; then
     echo_warn "Light-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="light"]#:root:root#' ${THEME_DIR}/../custom.scss
   fi
 fi
 
-if test -f ${THEME_DIR}/_dark.scss; then
-  if ! test -f ${THEME_DIR}/_light.scss; then
+if -f ${THEME_DIR}/_dark.scss; then
+  if ! -f ${THEME_DIR}/_light.scss; then
     echo_warn "Dark-only theme detected. Applying patches..."
     sed -ir 's#:root[saved-theme="dark"]#:root:root#' ${THEME_DIR}/../custom.scss
   fi
