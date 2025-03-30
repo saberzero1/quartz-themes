@@ -30,7 +30,7 @@ try_curl() {
     return 1  # Failure: HTTP error
   fi
 
-  if [ "$http_code" -eq 0 ]; then
+  if [ "$http_code" = "200" ]; then
     if [ -s "$OUTPUT_FILE" ]; then
       echo "Download successful from $URL to $OUTPUT_FILE."
       return 0  # Success
