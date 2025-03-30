@@ -141,6 +141,9 @@ else
 fi
 
 if [ check_file "$THEME_DIR/_light.scss" ]; then
+  echo "$THEME_DIR/_light.scss"
+  echo check_file "$THEME_DIR/_light.scss"
+  echo [ check_file "$THEME_DIR/_light.scss" ]
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
