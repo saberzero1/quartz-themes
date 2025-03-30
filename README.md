@@ -202,7 +202,7 @@ npm run update
 | <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                       |
 | <img src="media/todo.svg" alt="TODO"/>               | Not started                                      |
 | <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                    |
-| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                  |
+| <img src="media/removed.svg" alt="REMOVED"/>          | Broken or removed from Obsidian                  |
 
 | Theme Modes                              | Description               |
 | ---------------------------------------- | ------------------------- |
