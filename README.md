@@ -215,8 +215,8 @@ npm run update
 | Supported Modes                          | Obsidian Theme Name              | Theme Compatibility Status                     | Live Preview                                                                    |
 | ---------------------------------------- | -------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
 | <img src="media/dark.svg" alt="DARK"/>   | `80s-neon`                       | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/80s-neon/)                       |
-| <img src="media/both.svg" alt="BOTH"/>   | `abate`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/abate/)                          |
-| <img src="media/both.svg" alt="BOTH"/>   | `abecedarium`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/abecedarium/)                    |
+| <img src="media/both.svg" alt="BOTH"/>   | `abate`                          | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/abate/)                          |
+| <img src="media/both.svg" alt="BOTH"/>   | `abecedarium`                    | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/abecedarium/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `absolutegruv`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/absolutegruv/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `abyssal`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/abyssal/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `adrenaline`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/adrenaline/)                     |
