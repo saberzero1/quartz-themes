@@ -121,7 +121,8 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 echo "Checking theme files..."
 
 CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss")
-if [ $(echo $?) -eq 0 ]; then
+RESULT=$(echo $?)
+if [ $RESULT -eq 0 ]; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
@@ -137,14 +138,16 @@ else
 fi
 
 CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss")
-if [ $? -eq 0 ]; then
+RESULT=$(echo $?)
+if [ $RESULT -eq 0 ]; then
   echo_ok "_dark.scss exists"
 else
   echo_warn "_dark.scss missing"
 fi
 
 CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss")
-if [ $(echo $?) -eq 0 ]; then
+RESULT=$(echo $?)
+if [ $RESULT -eq 0 ]; then
   echo_ok "_light.scss exists"
 else
   echo_warn "_light.scss missing"
