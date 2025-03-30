@@ -140,7 +140,8 @@ else
   echo_warn "_dark.scss missing"
 fi
 
-if $(check_file ${THEME_DIR}/_light.scss); then
+check_file ${THEME_DIR}/_light.scss
+if [ $? -eq 0 ]; then
   echo ${THEME_DIR}/_light.scss
   echo check_file ${THEME_DIR}/_light.scss
   echo [ check_file ${THEME_DIR}/_light.scss ]
