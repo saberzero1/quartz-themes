@@ -16,7 +16,7 @@ echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
 check_file() { 
-  if [ -e "$1" ]; then
+  if [ -f "$1" ]; then
     return 0
   else
     return 1
@@ -120,7 +120,7 @@ curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
 
 echo "Checking theme files..."
 
-CHECK_INDEX=$(echo $(check_file "$THEME_DIR/_index.scss"; echo $?))
+CHECK_INDEX=$(check_file "$THEME_DIR/_index.scss"; echo $?)
 RESULT=$(echo $CHECK_INDEX)
 echo $RESULT
 if [ $RESULT == 0 ]; then
@@ -138,7 +138,7 @@ else
   exit 1
 fi
 
-CHECK_DARK=$(echo $(check_file "$THEME_DIR/_dark.scss"; echo $?))
+CHECK_DARK=$(check_file "$THEME_DIR/_dark.scss"; echo $?)
 RESULT=$(echo $CHECK_DARK)
 echo $RESULT
 if [ $RESULT == 0 ]; then
@@ -147,7 +147,7 @@ else
   echo_warn "_dark.scss missing"
 fi
 
-CHECK_LIGHT=$(echo $(check_file "$THEME_DIR/_light.scss"; echo $?))
+CHECK_LIGHT=$(check_file "$THEME_DIR/_light.scss"; echo $?)
 RESULT=$(echo $CHECK_LIGHT)
 echo $RESULT
 if [ $RESULT == 0 ]; then
