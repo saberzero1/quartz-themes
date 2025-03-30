@@ -15,8 +15,8 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
-function check_file() { 
-  if [ -e "$1" ]; then
+check_file() { 
+  if [ -f "$1" ]; then
     return 0
   else
     return 1
