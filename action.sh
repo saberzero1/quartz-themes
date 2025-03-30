@@ -16,6 +16,7 @@ echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
 check_file() { 
+  echo_info ls "$1"
   ls "$1"
   if [ $? -eq 0 ]; then
     return 0
