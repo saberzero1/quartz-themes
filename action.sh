@@ -96,16 +96,16 @@ echo "Validating theme..."
 
 GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master"
 GITHUB_OUTPUT_DIR="themes"
-GITHUB_OVERRIDE_DIR="extras/themes"
-GITHUB_EXTRAS_DIR="extras"
+GITHUB_EXTRAS_DIR="extras/themes"
 GITHUB_THEME_DIR="$THEME"
-CSS_INDEX_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_index.scss"
-CSS_FONT_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_fonts.scss"
-CSS_DARK_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_dark.scss"
-CSS_LIGHT_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/_light.scss"
-CSS_OVERRIDE_URL="${GITHUB_URL_BASE}/${GITHUB_OVERRIDE_DIR}/${GITHUB_THEME_DIR}/_index.scss"
-CSS_EXTRAS_URL="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}"
-README_URL="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}/README.md"
+THEME_ROOT="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}"
+THEME_EXTRAS_ROOT="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}/${GITHUB_THEME_DIR}"
+CSS_INDEX_URL="${THEME_ROOT}/_index.scss"
+CSS_FONT_URL="${THEME_ROOT}/_fonts.scss"
+CSS_DARK_URL="${THEME_ROOT}/_dark.scss"
+CSS_LIGHT_URL="${THEME_ROOT}/_light.scss"
+CSS_EXTRAS_INDEX_URL="${THEME_EXTRAS_ROOT}/_index.scss"
+README_URL="${THEME_ROOT}/README.md"
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
 
@@ -135,12 +135,12 @@ try_curl "${CSS_INDEX_URL}" "${THEME_DIR}/_index.scss"
 curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
 try_curl "${CSS_DARK_URL}" "${THEME_DIR}/_dark.scss"
 try_curl "${CSS_LIGHT_URL}" "${THEME_DIR}/_light.scss"
-try_curl "${CSS_OVERRIDE_URL}" "${THEME_DIR}/extras/_index.scss"
+try_curl "${CSS_EXTRAS_INDEX_URL}" "${THEME_DIR}/extras/_index.scss"
 
 
 echo "Fetching extras..."
 
-try_curl "${CSS_EXTRAS_URL}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
+try_curl "${THEME_EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
 
 echo "Fetching README file..."
 
@@ -183,7 +183,6 @@ fi
 
 if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
   echo_ok "extras/hide-toggle.scss exists"
-  cat "$THEME_DIR/extras/hide-toggle.scss"
 fi
 
 if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
