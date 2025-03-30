@@ -34,9 +34,9 @@ try_curl() {
   else 
     if [ "$http_code" = "200" ]; then
       return 0
-    else
-      rm -f "$OUTPUT_FILE"
-      return 1  # Failure: HTTP error
+    # else
+      # rm -f "$OUTPUT_FILE"
+      # return 1  # Failure: HTTP error
     fi
   fi
 }
