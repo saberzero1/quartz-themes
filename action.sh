@@ -27,7 +27,7 @@ try_curl() {
   local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
 
   local content="$(sed -n '1{/^404/p};q' $OUTPUT_FILE)"
-  if [ -z "$content" ]; then
+  if [ ! -z "$content" ]; then
     echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: 404"
     rm -f "$OUTPUT_FILE"
     return 1  # Failure: HTTP error
