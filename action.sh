@@ -15,6 +15,29 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
+try_curl() {
+  local URL="$1"
+  local OUTPUT_FILE="$2"
+
+  curl -I -w "%{http_code}" -s "$URL" -o "$OUTPUT_FILE" > /dev/null
+  local http_code=$?
+
+  if [ "$http_code" -eq 0 ]; then
+    if [ -s "$OUTPUT_FILE" ]; then
+      echo "Download successful from $URL to $OUTPUT_FILE."
+      return 0  # Success
+    else
+      echo "Download from $URL to $OUTPUT_FILE succeeded, but file is empty."
+      rm -f "$OUTPUT_FILE"
+      return 1  # Failure: empty file
+    fi
+  else
+    echo "Download from $URL to $OUTPUT_FILE failed with HTTP code: $http_code."
+    rm -f "$OUTPUT_FILE"
+    return 1  # Failure: HTTP error
+  fi
+}
+
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
@@ -96,19 +119,20 @@ mkdir -p ${THEME_DIR}/extras
 
 echo "Fetching theme files..."
 
-curl -s -S -o ${THEME_DIR}/_index.scss "${CSS_INDEX_URL}"
+try_curl "${CSS_INDEX_URL}" "${THEME_DIR}/_index.scss"
 curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
-curl -s -S -o ${THEME_DIR}/_dark.scss "${CSS_DARK_URL}"
-curl -s -S -o ${THEME_DIR}/_light.scss "${CSS_LIGHT_URL}"
-curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
+try_curl "${CSS_DARK_URL}" "${THEME_DIR}/_dark.scss"
+try_curl "${CSS_LIGHT_URL}" "${THEME_DIR}/_light.scss"
+try_curl "${CSS_OVERRIDE_URL}" "${THEME_DIR}/extras/_index.scss"
+
 
 echo "Fetching extras..."
 
-curl -s -S -o ${THEME_DIR}/extras/hide-toggle.scss "${CSS_EXTRAS_URL}/hide-toggle.scss"
+try_curl "${CSS_EXTRAS_URL}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
 
 echo "Fetching README file..."
 
-curl -s -S -o ${THEME_DIR}/README.md "$README_URL"
+try_curl "$README_URL" "${THEME_DIR}/README.md"
 
 echo "Checking theme files..."
 
