@@ -202,7 +202,7 @@ npm run update
 | <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                       |
 | <img src="media/todo.svg" alt="TODO"/>               | Not started                                      |
 | <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                    |
-| <img src="media/removed.svg" alt="REMOVED"/>          | Broken or removed from Obsidian                  |
+| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                  |
 
 | Theme Modes                              | Description               |
 | ---------------------------------------- | ------------------------- |
@@ -232,10 +232,10 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `arcane`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/arcane/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `atom`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/atom/)                           |
 | <img src="media/dark.svg" alt="DARK"/>   | `atomus`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/atomus/)                         |
-| <img src="media/dark.svg" alt="DARK"/>   | `aura-dark`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aura-dark/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `aura`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aura/)                           |
-| <img src="media/both.svg" alt="BOTH"/>   | `aurora-twilight`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aurora-twilight/)                |
+| <img src="media/dark.svg" alt="DARK"/>   | `aura-dark`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aura-dark/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `aurora`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aurora/)                         |
+| <img src="media/both.svg" alt="BOTH"/>   | `aurora-twilight`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/aurora-twilight/)                |
 | <img src="media/dark.svg" alt="DARK"/>   | `autotape`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/autotape/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `ayu-light-mirage`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/ayu-light-mirage/)               |
 | <img src="media/dark.svg" alt="DARK"/>   | `ayu-mirage`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/ayu-mirage/)                     |
@@ -259,14 +259,14 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `celestial-night`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/celestial-night/)                |
 | <img src="media/dark.svg" alt="DARK"/>   | `charcoal`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/charcoal/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `chiaroscuroflow`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/chiaroscuroflow/)                |
-| <img src="media/both.svg" alt="BOTH"/>   | `chime` (🔔-chime)               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/chime/)                          |
+| <img src="media/both.svg" alt="BOTH"/>   | `chime`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/chime/)                          |
 | <img src="media/dark.svg" alt="DARK"/>   | `christmas`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/christmas/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `cobalt-peacock`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cobalt-peacock/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `colored-candy`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/colored-candy/)                  |
+| <img src="media/both.svg" alt="BOTH"/>   | `comfort`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/comfort/)                        |
 | <img src="media/dark.svg" alt="DARK"/>   | `comfort-color-dark`             | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/comfort-color-dark/)             |
 | <img src="media/dark.svg" alt="DARK"/>   | `comfort-dark`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/comfort-dark/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `comfort-smooth`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/comfort-smooth/)                 |
-| <img src="media/both.svg" alt="BOTH"/>   | `comfort`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/comfort/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `composer`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/composer/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `consolas`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/consolas/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `covert`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/covert/)                         |
@@ -274,12 +274,12 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `creme-brulee`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/creme-brulee/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `cupertino`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cupertino/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `cyber-glow`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cyber-glow/)                     |
-| <img src="media/dark.svg" alt="DARK"/>   | `cybertron-shifted`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cybertron-shifted/)              |
 | <img src="media/dark.svg" alt="DARK"/>   | `cybertron`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cybertron/)                      |
+| <img src="media/dark.svg" alt="DARK"/>   | `cybertron-shifted`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/cybertron-shifted/)              |
 | <img src="media/dark.svg" alt="DARK"/>   | `dark-castle`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-castle/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `dark-clarity`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-clarity/)                   |
-| <img src="media/both.svg" alt="BOTH"/>   | `dark-graphite-pie`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-graphite-pie/)              |
 | <img src="media/dark.svg" alt="DARK"/>   | `dark-graphite`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-graphite/)                  |
+| <img src="media/both.svg" alt="BOTH"/>   | `dark-graphite-pie`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-graphite-pie/)              |
 | <img src="media/both.svg" alt="BOTH"/>   | `dark-moss`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/dark-moss/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `darkember`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/darkember/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `darkyan`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/darkyan/)                        |
@@ -306,8 +306,8 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `ethereon`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/ethereon/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `evangelion`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/evangelion/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `everblush`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/everblush/)                      |
-| <img src="media/light.svg" alt="LIGHT"/> | `everforest-enchanted`           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/everforest-enchanted/)           |
 | <img src="media/both.svg" alt="BOTH"/>   | `everforest`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/everforest/)                     |
+| <img src="media/light.svg" alt="LIGHT"/> | `everforest-enchanted`           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/everforest-enchanted/)           |
 | <img src="media/dark.svg" alt="DARK"/>   | `evergreen-shadow`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/evergreen-shadow/)               |
 | <img src="media/both.svg" alt="BOTH"/>   | `evilred`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/evilred/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `faded`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/faded/)                          |
@@ -316,14 +316,14 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `feather`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/feather/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `firefly`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/firefly/)                        |
 | <img src="media/dark.svg" alt="DARK"/>   | `flexcyon`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/flexcyon/)                       |
-| <img src="media/both.svg" alt="BOTH"/>   | `flexoki-warm`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/flexoki-warm/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `flexoki`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/flexoki/)                        |
+| <img src="media/both.svg" alt="BOTH"/>   | `flexoki-warm`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/flexoki-warm/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `focus`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/focus/)                          |
 | <img src="media/both.svg" alt="BOTH"/>   | `frost`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/frost/)                          |
 | <img src="media/light.svg" alt="LIGHT"/> | `fusion`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/fusion/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `garden-gnome-adwaita-gtk`       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/garden-gnome-adwaita-gtk/)       |
-| <img src="media/dark.svg" alt="DARK"/>   | `gdct-dark`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/gdct-dark/)                      |
 | <img src="media/light.svg" alt="LIGHT"/> | `gdct`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/gdct/)                           |
+| <img src="media/dark.svg" alt="DARK"/>   | `gdct-dark`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/gdct-dark/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `github-theme`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/github-theme/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `githubdhc`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/githubdhc/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `gitsidian`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/gitsidian/)                      |
@@ -345,8 +345,8 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `its-theme`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/its-theme/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `jotter`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/jotter/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `kakano`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kakano/)                         |
-| <img src="media/both.svg" alt="BOTH"/>   | `kanagawa-paper`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa-paper/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `kanagawa`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa/)                       |
+| <img src="media/both.svg" alt="BOTH"/>   | `kanagawa-paper`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa-paper/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `kiwi-mono`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kiwi-mono/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `kurokula`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kurokula/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `lagom`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/lagom/)                          |
@@ -369,14 +369,14 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `material-gruvbox`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/material-gruvbox/)               |
 | <img src="media/both.svg" alt="BOTH"/>   | `material-ocean`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/material-ocean/)                 |
 | <img src="media/dark.svg" alt="DARK"/>   | `micro-mike`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/micro-mike/)                     |
-| <img src="media/dark.svg" alt="DARK"/>   | `midnight-fjord`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/midnight-fjord/)                 |
 | <img src="media/dark.svg" alt="DARK"/>   | `midnight`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/midnight/)                       |
+| <img src="media/dark.svg" alt="DARK"/>   | `midnight-fjord`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/midnight-fjord/)                 |
+| <img src="media/both.svg" alt="BOTH"/>   | `minimal`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal/)                        |
 | <img src="media/dark.svg" alt="DARK"/>   | `minimal-dark-coder`             | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal-dark-coder/)             |
 | <img src="media/both.svg" alt="BOTH"/>   | `minimal-dracula`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal-dracula/)                |
 | <img src="media/light.svg" alt="LIGHT"/> | `minimal-edge`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal-edge/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `minimal-red`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal-red/)                    |
 | <img src="media/dark.svg" alt="DARK"/>   | `minimal-resources`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal-resources/)              |
-| <img src="media/both.svg" alt="BOTH"/>   | `minimal`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/minimal/)                        |
 | <img src="media/light.svg" alt="LIGHT"/> | `mint-breeze`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/mint-breeze/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `mistymauve`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/mistymauve/)                     |
 | <img src="media/dark.svg" alt="DARK"/>   | `mono-black-monochrome-charcoal` | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/mono-black-monochrome-charcoal/) |
@@ -397,8 +397,8 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `nobb`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/nobb/)                           |
 | <img src="media/both.svg" alt="BOTH"/>   | `nordic`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/nordic/)                         |
 | <img src="media/light.svg" alt="LIGHT"/> | `northern-sky`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/northern-sky/)                   |
-| <img src="media/both.svg" alt="BOTH"/>   | `notation-2`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/notation-2/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `notation`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/notation/)                       |
+| <img src="media/both.svg" alt="BOTH"/>   | `notation-2`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/notation-2/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `notswift`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/notswift/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `novadust`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/novadust/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `obsidian-boom`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/obsidian-boom/)                  |
@@ -454,16 +454,16 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `rezin`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rezin/)                          |
 | <img src="media/dark.svg" alt="DARK"/>   | `rift`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rift/)                           |
 | <img src="media/both.svg" alt="BOTH"/>   | `rmaki`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rmaki/)                          |
-| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-moon`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-moon/)                 |
-| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-2`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-2/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `rose-pine`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine/)                      |
+| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-2`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-2/)                    |
+| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-moon`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-moon/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `rose-red`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-red/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `royal-velvet`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/royal-velvet/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `sad-machine-druid`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sad-machine-druid/)              |
 | <img src="media/dark.svg" alt="DARK"/>   | `sakurajima`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sakurajima/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `salem`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/salem/)                          |
-| <img src="media/both.svg" alt="BOTH"/>   | `sanctum-reborn`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sanctum-reborn/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `sanctum`                        | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sanctum/)                        |
+| <img src="media/both.svg" alt="BOTH"/>   | `sanctum-reborn`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sanctum-reborn/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `sandover`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sandover/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `sandstorm`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sandstorm/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `sanguine`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sanguine/)                       |
@@ -477,8 +477,8 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `shadeflow`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/shadeflow/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `shiba-inu`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/shiba-inu/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `shimmering-focus`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/shimmering-focus/)               |
-| <img src="media/dark.svg" alt="DARK"/>   | `simple-color`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/simple-color/)                   |
 | <img src="media/light.svg" alt="LIGHT"/> | `simple`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/simple/)                         |
+| <img src="media/dark.svg" alt="DARK"/>   | `simple-color`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/simple-color/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `simplicity`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/simplicity/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `simply-colorful`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/simply-colorful/)                |
 | <img src="media/both.svg" alt="BOTH"/>   | `sodalite`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sodalite/)                       |
@@ -490,25 +490,25 @@ npm run update
 | <img src="media/light.svg" alt="LIGHT"/> | `sparkling-day`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sparkling-day/)                  |
 | <img src="media/dark.svg" alt="DARK"/>   | `sparkling-night`                | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sparkling-night/)                |
 | <img src="media/both.svg" alt="BOTH"/>   | `sparkling-wisdom`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sparkling-wisdom/)               |
-| <img src="media/dark.svg" alt="DARK"/>   | `spectrum-blue`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/spectrum-blue/)                  |
 | <img src="media/both.svg" alt="BOTH"/>   | `spectrum`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/spectrum/)                       |
+| <img src="media/dark.svg" alt="DARK"/>   | `spectrum-blue`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/spectrum-blue/)                  |
 | <img src="media/both.svg" alt="BOTH"/>   | `spring`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/spring/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `sqdthone`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sqdthone/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `strict`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/strict/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `subtlegold`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/subtlegold/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `suddha`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/suddha/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `sunbather`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/sunbather/)                      |
-| <img src="media/dark.svg" alt="DARK"/>   | `synthwave-84`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/synthwave-84/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `synthwave`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/synthwave/)                      |
+| <img src="media/dark.svg" alt="DARK"/>   | `synthwave-84`                   | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/synthwave-84/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `terminal`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/terminal/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `theme-that-shall-not-be-named`  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/theme-that-shall-not-be-named/)  |
-| <img src="media/both.svg" alt="BOTH"/>   | `things-3`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/things-3/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `things`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/things/)                         |
+| <img src="media/both.svg" alt="BOTH"/>   | `things-3`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/things-3/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `tiniri`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tiniri/)                         |
-| <img src="media/dark.svg" alt="DARK"/>   | `tokyo-night-storm`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tokyo-night-storm/)              |
 | <img src="media/both.svg" alt="BOTH"/>   | `tokyo-night`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tokyo-night/)                    |
-| <img src="media/both.svg" alt="BOTH"/>   | `tomorrow-night-bright`          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tomorrow-night-bright/)          |
+| <img src="media/dark.svg" alt="DARK"/>   | `tokyo-night-storm`              | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tokyo-night-storm/)              |
 | <img src="media/both.svg" alt="BOTH"/>   | `tomorrow`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tomorrow/)                       |
+| <img src="media/both.svg" alt="BOTH"/>   | `tomorrow-night-bright`          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/tomorrow-night-bright/)          |
 | <img src="media/both.svg" alt="BOTH"/>   | `toms-theme`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/toms-theme/)                     |
 | <img src="media/dark.svg" alt="DARK"/>   | `trace-labs`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/trace-labs/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `transient`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/transient/)                      |
@@ -520,8 +520,8 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `ultra-lobster`                  | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/ultra-lobster/)                  |
 | <img src="media/both.svg" alt="BOTH"/>   | `underwater`                     | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/underwater/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `ursa`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/ursa/)                           |
-| <img src="media/both.svg" alt="BOTH"/>   | `vanilla-amoled-color`           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/vanilla-amoled-color/)           |
 | <img src="media/dark.svg" alt="DARK"/>   | `vanilla-amoled`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/vanilla-amoled/)                 |
+| <img src="media/both.svg" alt="BOTH"/>   | `vanilla-amoled-color`           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/vanilla-amoled-color/)           |
 | <img src="media/both.svg" alt="BOTH"/>   | `vanilla-palettes`               | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/vanilla-palettes/)               |
 | <img src="media/both.svg" alt="BOTH"/>   | `vauxhall`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/vauxhall/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `velvet-moon`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/velvet-moon/)                    |

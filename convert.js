@@ -619,3 +619,33 @@ manifestCollection.forEach((manifest) => {
     )
   }
 })
+
+// Rebuild README.md
+console.log("Updating compatibility table...")
+
+// Prepare README.md
+fs.unlinkSync("README.md")
+fs.copyFileSync("README-TEMPLATE.md", "README.md")
+
+// Build compatibility table
+const compatibilityTableLines = []
+const themeList = []
+manifestCollection.forEach((manifest) => {
+  themeList.push(getTheme(manifest, "name"))
+})
+themeList.sort()
+themeList.forEach((themeName) => {
+  const mode = isFullTheme(themeName) ? "both" : isDarkTheme(themeName) ? "dark" : "light"
+  compatibilityTableLines.push(
+    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | <img src="media/${themes[themeName]["compatibility"]}.svg" alt="${themes[themeName]["compatibility"].toUpperCase()}"/> | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
+  )
+})
+
+const compatibilityTable =
+  "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview |\n| --- | --- | --- | --- |".concat(
+    ...compatibilityTableLines,
+  )
+
+// Write result to README.md
+replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable)
+console.log("Finished updating compatibility table")
