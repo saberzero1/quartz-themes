@@ -103,7 +103,7 @@ curl -s -S -o ${THEME_DIR}/extras/_index.scss "${CSS_OVERRIDE_URL}"
 
 echo "Fetching extras..."
 
-curl -s -S -o ${THEME_DIR}/extras/hide-toggle.scss "${CSS_EXTRAS_URL}"
+curl -s -S -o ${THEME_DIR}/extras/hide-toggle.scss "${CSS_EXTRAS_URL}hide-toggle.scss"
 
 echo "Fetching README file..."
 
