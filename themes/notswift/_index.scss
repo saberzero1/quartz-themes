@@ -1209,7 +1209,9 @@ body {
 }
 
 /* START CANVAS GRAPH WORKAROUND */
-:root:root {
+
+/* START LIGHT GRAPH */
+:root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
@@ -1261,7 +1263,9 @@ body {
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
 }
+/* END LIGHT GRAPH */
 
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1314,4 +1318,6 @@ body {
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
 }
+/* END DARK GRAPH */
+
 /* END CANVAS GRAPH WORKAROUND */

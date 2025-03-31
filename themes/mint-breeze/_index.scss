@@ -924,7 +924,10 @@ body {
 }
 
 /* START CANVAS GRAPH WORKAROUND */
-:root:root {
+
+/* START LIGHT GRAPH */
+:root:root[saved-theme="dark"],
+:root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
@@ -976,57 +979,6 @@ body {
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
 }
+/* END LIGHT GRAPH */
 
-:root:root[saved-theme="dark"] {
-  --highlight-fallback: 258, 88%, 66%;
-  --textHighlight-fallback: 255, 208, 0;
-  --light: var(
-    --graph-node,
-    var(--text-muted, var(--background-primary, var(--color-base-00, #1e1e1e)))
-  ) !important;
-  --lightgray: var(
-    --graph-line,
-    var(
-      --color-base-35,
-      var(
-        --background-modifier-border-focus,
-        var(--background-modifier-border, var(--color-base-30, #363636))
-      )
-    )
-  ) !important;
-  --gray: var(
-    --graph-node,
-    var(
-      --text-muted,
-      var(
-        --graph-text,
-        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #666666)))
-      )
-    )
-  ) !important;
-  --darkgray: var(
-    --graph-node-unresolved,
-    var(--text-faint, var(--text-normal, var(--color-base-100, #dadada)))
-  ) !important;
-  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
-  --secondary: var(
-    --graph-node-focused,
-    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent-1, #a386f9))))
-  ) !important;
-  --tertiary: var(
-    --graph-node-tag,
-    var(
-      --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
-    )
-  ) !important;
-  --highlight: var(
-    --tag-background,
-    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
-  ) !important;
-  --textHighlight: var(
-    --text-highlight-bg,
-    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
-  ) !important;
-}
 /* END CANVAS GRAPH WORKAROUND */
