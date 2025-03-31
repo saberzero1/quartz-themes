@@ -43,6 +43,12 @@
     hsla(var(--shadow-color-hsl), 5%) 0 2px 4px, hsla(var(--shadow-color-hsl), 5%) 0 4px 8px,
     hsla(var(--shadow-color-hsl), 5%) 0 6px 12px;
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }
