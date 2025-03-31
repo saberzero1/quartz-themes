@@ -196,7 +196,7 @@ echo "Applying patches..."
 
 CHECK_LINE=$(head -n 1 "${THEME_DIR}/_index.scss")
 
-if echo "$CHECK_LINE" | grep -q "-only"
+if echo "$CHECK_LINE" | grep -q "-only"; then
   sed -i "/Component\.Darkmode\(\)/d" "./quartz.layout.ts"
 fi
 
