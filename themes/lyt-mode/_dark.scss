@@ -131,11 +131,11 @@
   --comment-h6: hsl(223, 14%, 75%);
 
   code[data-theme*=" "] {
-    --shiki-light: var(--shiki-dark) !important;
-    --shiki-light-bg: var(--shiki-light-bg) !important;
-    * {
-      --shiki-light: var(--shiki-dark) !important;
-      --shiki-light-bg: var(--shiki-light-bg) !important;
-    }
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }

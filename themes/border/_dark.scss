@@ -135,11 +135,11 @@
   --code-border: var(--code-border-dark);
 
   code[data-theme*=" "] {
-    --shiki-light: var(--shiki-dark) !important;
-    --shiki-light-bg: var(--shiki-light-bg) !important;
-    * {
-      --shiki-light: var(--shiki-dark) !important;
-      --shiki-light-bg: var(--shiki-light-bg) !important;
-    }
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
