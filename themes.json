@@ -16,7 +16,7 @@
     "abyssal": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adrenaline": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adwaita": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "agate": { "compatibility": "full", "modes": ["light"], "extras": [] },
+    "agate": { "compatibility": "full", "modes": ["light"], "extras": ["hide-toggle"] },
     "aged-whisky": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "al-dente": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "allium": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
