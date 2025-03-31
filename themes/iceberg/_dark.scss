@@ -25,4 +25,7 @@
   --background-tag-hover: #81859c;
   --text-tag: var(--black);
   --background-block-cursor: var(--white);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

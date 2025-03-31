@@ -42,4 +42,7 @@
   --empty-line-height: 1em;
   --checkbox-color: #bd93f9;
   --hr-color: white;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

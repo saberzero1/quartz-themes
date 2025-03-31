@@ -30,4 +30,7 @@
   --text-selection: var(--dark3);
   --text-tag: var(--teal);
   --task-checkbox: var(--teal);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

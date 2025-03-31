@@ -52,4 +52,7 @@
   --graph-node-tag: #4f9c77;
   --code-comment: #738091;
   --code-inline-background: var(--color-base-00);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -72,4 +72,7 @@
   --blue: #6495ed;
   --purple: #bd93f9;
   --pink: #ff79c6;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

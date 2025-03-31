@@ -42,4 +42,7 @@
   --nav-collapse-icon-color: #a24d00;
   --list-marker-color-collapsed: #a24d00;
   --caret-color: #a24d00;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

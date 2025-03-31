@@ -81,4 +81,7 @@
   --graph-node-attachment: var(--color-yellow);
   --canvas-color: 53, 84, 100;
   --code-comment: #3f6a87;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

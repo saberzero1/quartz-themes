@@ -59,4 +59,7 @@
     calc(var(--main-accent-d) + 20%),
     0.9
   );
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

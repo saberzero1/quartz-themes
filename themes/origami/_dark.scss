@@ -45,4 +45,7 @@
   --shadow-lm-only: none;
   --text-on-button: var(--color-base-00);
   --background-transparent: #55555599;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

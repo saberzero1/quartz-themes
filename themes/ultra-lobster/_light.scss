@@ -65,4 +65,7 @@
   --gradient-bg-primary: linear-gradient(135deg, #fff 1.62%, #f5f5f5 50.72%) !important;
   --gradient-bg-secondary: linear-gradient(135deg, #f3f3f3 1.62%, #e6e6e6 50.72%) !important;
   --background-modifier-border-alt: #fff !important;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

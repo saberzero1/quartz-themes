@@ -1,4 +1,7 @@
 :root[saved-theme="light"] {
   --code-block-fg: #161616;
   --code-block-bg: #e4e3e0;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

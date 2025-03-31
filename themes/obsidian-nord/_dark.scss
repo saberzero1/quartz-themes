@@ -77,4 +77,7 @@
   --dataview-value-background: rgba(var(--red_x), 0.3);
   --tab-text-color-focused-active: var(--frost2);
   --tab-text-color-focused-active-current: var(--red);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

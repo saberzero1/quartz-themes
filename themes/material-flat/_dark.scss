@@ -88,4 +88,7 @@
   --text-on-accent: var(--background);
   --on-accent: var(--background);
   --hr-color: var(--surface-variant);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

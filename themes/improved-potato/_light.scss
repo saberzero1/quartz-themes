@@ -13,4 +13,7 @@
   --titlebar-background: var(--color-base-10);
   --titlebar-background-focused: var(--color-base-25);
   --line-number-color: var(--color-base-50);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

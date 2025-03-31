@@ -2,4 +2,7 @@
   --background-primary: #262626;
   --background-secondary: #262626;
   --background-secondary-alt: #262626;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

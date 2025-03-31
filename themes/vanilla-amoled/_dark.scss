@@ -13,4 +13,7 @@
   --background-secondary: var(--color-base-05);
   --titlebar-background: var(--color-base-00);
   --titlebar-background-focused: var(--color-base-10);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

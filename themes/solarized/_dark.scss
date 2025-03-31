@@ -89,4 +89,7 @@
   --tag-padding-x: var(--tag-padding-y);
   --tag-color: var(--color-accent);
   --background-modifier-border-focus: var(--interactive-accent);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

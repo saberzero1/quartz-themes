@@ -64,4 +64,7 @@
   --h6-size: 1.1rem;
   --heading-spacing: 1.5rem;
   --code-size: 1em;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -576,9 +576,24 @@ manifestCollection.forEach((manifest) => {
         ``,
       )
       replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        /\/\* START DARK GRAPH \*\/.*?\/\* END DARK GRAPH \*\//gms,
+        ``,
+      )
+      replaceInFile(
         `./themes/${getTheme(manifest)}/_light.scss`,
         `:root[saved-theme="light"]`,
         `:root:root`,
+      )
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START LIGHT */`,
+        `/* START LIGHT */\n:root[saved-theme="dark"],\nhtml[saved-theme="dark"],`,
+      )
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START LIGHT GRAPH */`,
+        `/* START LIGHT GRAPH */\n:root:root[saved-theme="dark"],`,
       )
     }
     // dark only
@@ -589,13 +604,26 @@ manifestCollection.forEach((manifest) => {
         ``,
       )
       replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        /\/\* START LIGHT GRAPH \*\/.*?\/\* END LIGHT GRAPH \*\//gms,
+        ``,
+      )
+      replaceInFile(
         `./themes/${getTheme(manifest)}/_dark.scss`,
         `:root[saved-theme="dark"]`,
         `:root:root`,
       )
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START DARK */`,
+        `/* START DARK */\n:root[saved-theme="light"],\nhtml[saved-theme="light"],`,
+      )
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START DARK GRAPH */`,
+        `/* START DARK GRAPH */\n:root:root[saved-theme="light"],`,
+      )
     }
-    // generic
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\[saved-theme=\".*?\"\]/g, "")
   }
 
   // Remove remaining comments

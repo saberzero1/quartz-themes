@@ -60,4 +60,7 @@
   --leather-contrast-color: var(--white-ink);
   --leather-contrast-color-muted: var(--white-ink-muted);
   --paper-color: rgba(12, 12, 12, 0.95);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

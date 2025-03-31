@@ -129,4 +129,7 @@
   --comment-h4: hsl(153, 35%, 75%);
   --comment-h5: hsl(224, 26%, 83%);
   --comment-h6: hsl(223, 14%, 75%);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

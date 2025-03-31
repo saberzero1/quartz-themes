@@ -129,4 +129,7 @@
   --tag-padding-x: 0.45em;
   --tag-padding-y: 0.25em;
   --tag-decoration-hover: underline;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

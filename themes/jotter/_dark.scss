@@ -19,4 +19,7 @@
   --text-normal: #e1e1e1;
   --text-muted: #b7b2b2;
   --text-faint: #807b7b;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

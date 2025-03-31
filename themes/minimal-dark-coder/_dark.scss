@@ -9,4 +9,7 @@
   --text-accent-hover: #ff5c8f;
   --text-selection: #29502e;
   --text-highlight-bg: #29502e;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

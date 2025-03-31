@@ -3,4 +3,7 @@
   --background-secondary: #fcfcfc;
   --text-normal: #1a1a1a;
   --text-muted: #b5b3b1;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

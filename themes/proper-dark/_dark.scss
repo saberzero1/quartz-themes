@@ -10,4 +10,7 @@
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.09);
   --inline-title-weight: normal;
   --inline-title-size: 3em;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

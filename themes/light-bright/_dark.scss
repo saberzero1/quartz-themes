@@ -8,4 +8,7 @@
   --color-base-30: hsl(calc(0 + var(--accent-h)), 12%, 33%);
   --color-base-60: hsl(calc(0 + var(--accent-h)), 20%, 13%);
   --color-base-70: hsl(calc(0 + var(--accent-h)), 50%, 73%);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

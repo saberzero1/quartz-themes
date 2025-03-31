@@ -44,4 +44,7 @@
   --table-header-weight: var(--font-bold);
   --table-header-color: inherit;
   --background-modifier-border-focus: var(--interactive-accent);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

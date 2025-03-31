@@ -39,4 +39,7 @@
   --color-blue-rgb: 104, 160, 160;
   --color-purple-rgb: 168, 144, 128;
   --color-pink-rgb: 168, 144, 128;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

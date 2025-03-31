@@ -81,4 +81,7 @@
   --eldritch-number: #04d1f9;
   --eldritch-function: #a48cf2;
   --eldritch-string: #f1fc79;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -34,4 +34,7 @@
   --text-error: #ff3333;
   --text-error-hover: #990000;
   --highlight-mix-blend-mode: lighten;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -17,4 +17,7 @@
   --accent-s: 61.5%;
   --accent-l: 20.4%;
   --text-selection: var(--my-accent-color-dark);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

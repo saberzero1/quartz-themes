@@ -155,4 +155,7 @@
   --embed-padding: 1.5rem 1.5rem 0.5rem;
   --canvas-color: var(--bg_highlight_dark);
   --toggle-thumb-color: var(--bg);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

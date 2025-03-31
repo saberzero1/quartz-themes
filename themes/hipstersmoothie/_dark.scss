@@ -81,4 +81,7 @@
   --text-error-hover: #990000;
   --text-highlight-bg-active: white;
   --interactive-normal: blue;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

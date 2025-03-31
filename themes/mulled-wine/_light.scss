@@ -32,4 +32,7 @@
   --tag-background-hover: transparent;
   --tag-color-hover: #714785;
   --tag-color: #96bae8;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

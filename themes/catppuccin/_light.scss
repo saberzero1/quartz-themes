@@ -116,4 +116,7 @@
   --color-base-70: rgb(var(--ctp-subtext0));
   --color-base-100: rgb(var(--ctp-text));
   --highlight-mix-blend-mode: darken;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

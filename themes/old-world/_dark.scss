@@ -89,4 +89,7 @@
   --text-highlight-bg: rgba(var(--color-yellow-rgb), 0.5);
   --caret-color: var(--color-yellow);
   --hr-thickness: 3px;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

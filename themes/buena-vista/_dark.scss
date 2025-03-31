@@ -22,4 +22,7 @@
   --accent-l-alt: max(var(--accent-l), 75%);
   --min-highlight: 35%;
   --max-highlight: 45%;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

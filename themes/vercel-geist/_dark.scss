@@ -62,4 +62,7 @@
   --blockquote-border: var(--vercel-blue-600);
   --vim-cursor: var(--vercel-blue-600);
   --border-color: var(--border-1);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }
