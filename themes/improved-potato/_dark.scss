@@ -28,4 +28,7 @@
   --color-base-100: #ccd2db;
   --titlebar-background: var(--color-base-25);
   --line-number-color: var(--color-base-50);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

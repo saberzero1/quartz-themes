@@ -197,4 +197,7 @@
   --popover-width: 1050px;
   --popover-height: 1250px;
   --tab-max-width: 35%;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

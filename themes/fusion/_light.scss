@@ -14,4 +14,7 @@
   --accent-l: 60%;
   --color-yellow-rgb: 190, 146, 0;
   --color-yellow: rgb(var(--color-yellow-rgb));
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

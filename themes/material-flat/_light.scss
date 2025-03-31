@@ -71,4 +71,7 @@
   --text-on-accent: var(--text-muted);
   --on-accent: var(--text-muted);
   --hr-color: var(--surface-variant);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

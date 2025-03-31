@@ -282,4 +282,7 @@
   --stickies-color-2: #e1b87f;
   --tape-color: #007672;
   --header-color: #f1a634d0;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

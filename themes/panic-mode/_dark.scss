@@ -94,4 +94,7 @@
   --checkbox-enabled: var(--tag-bg);
   --active-title-border: var(--interactive-accent);
   --hr-color: hsl(0, 0%, 39%);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -42,4 +42,7 @@
   --code-string: #d5ff80;
   --code-tag: #5ccfe6;
   --code-value: #dfbfff;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

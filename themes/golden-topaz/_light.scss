@@ -274,4 +274,7 @@
   --stickies-color-2: #007672;
   --tape-color: #786b54;
   --header-color: #e1b87f;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

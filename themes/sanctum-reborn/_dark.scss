@@ -1,2 +1,4 @@
 :root[saved-theme="dark"] {
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -43,4 +43,7 @@
   --indentation-guide-color-active: #39ff14;
   --table-header-background: #2a2a2a;
   --table-row-alt-background: #141414;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

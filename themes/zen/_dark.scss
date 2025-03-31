@@ -33,4 +33,7 @@
   --win-editor-bg-color: rgba(18, 18, 18, 0.65);
   --win-window-opacity: 0.4;
   --background-secondary-alt: rgba(18, 18, 18, 0.1);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

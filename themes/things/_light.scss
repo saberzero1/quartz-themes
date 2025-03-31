@@ -45,4 +45,7 @@
   --atom-aqua: #0084bc;
   --atom-yellow: #e35649;
   --atom-orange: #986800;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

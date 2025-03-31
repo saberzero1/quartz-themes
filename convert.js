@@ -580,6 +580,12 @@ manifestCollection.forEach((manifest) => {
         `:root[saved-theme="light"]`,
         `:root:root`,
       )
+
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START LIGHT */`,
+        `/* START LIGHT */\n:root[saved-theme="dark"],\nhtml[saved-theme="dark"],`,
+      )
     }
     // dark only
     if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
@@ -593,9 +599,13 @@ manifestCollection.forEach((manifest) => {
         `:root[saved-theme="dark"]`,
         `:root:root`,
       )
+
+      replaceInFile(
+        `./themes/${getTheme(manifest)}/_index.scss`,
+        `/* START DARK */`,
+        `/* START DARK */\n:root[saved-theme="light"],\nhtml[saved-theme="light"],`,
+      )
     }
-    // generic
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\[saved-theme=\".*?\"\]/g, "")
   }
 
   // Remove remaining comments

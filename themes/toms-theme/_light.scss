@@ -30,4 +30,7 @@
   --scrollbar-active-thumb-bg: var(--color-green);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: var(--color-darkgreen);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

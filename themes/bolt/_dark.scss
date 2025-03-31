@@ -30,4 +30,7 @@
   --outline: #899392;
   --surface-variant: #2f3f3f;
   --on-surface-variant: #bec8c8;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

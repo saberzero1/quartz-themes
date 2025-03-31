@@ -387,8 +387,10 @@ body {
 }
 
 /* START DARK */
-:root,
-html {
+:root[saved-theme="light"],
+html[saved-theme="light"],
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -988,7 +990,7 @@ body {
   ) !important;
 }
 
-:root:root {
+:root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(

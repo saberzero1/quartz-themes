@@ -69,4 +69,7 @@
   --tab-text-color-active: hsl(var(--color-hovered));
   --titlebar-background: hsl(var(--color-base-3));
   --titlebar-background-focused: hsl(var(--color-base-2));
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

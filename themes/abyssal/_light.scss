@@ -100,4 +100,7 @@
   --code-keyword: #4696f4;
   --code-important: #fd6434;
   --code-normal: #527eb2;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

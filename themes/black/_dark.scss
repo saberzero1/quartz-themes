@@ -2,4 +2,7 @@
   --background-primary: #000;
   --background-secondary: #000;
   --titlebar-background-focused: #000;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

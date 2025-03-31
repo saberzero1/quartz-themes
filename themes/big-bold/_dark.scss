@@ -2,4 +2,7 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
   --highlight-text: white;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

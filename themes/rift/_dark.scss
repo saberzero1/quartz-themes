@@ -37,4 +37,7 @@
   --graph-node-unresolved: #9e8aff;
   --graph-line: #a54aa8;
   --graph-node-focused: #a54aa8;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

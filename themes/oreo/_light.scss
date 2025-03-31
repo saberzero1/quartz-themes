@@ -158,4 +158,7 @@
   --workspace-background-translucent: rgba(240, 240, 240, 0.8);
   --bold-color: #000000;
   --italic-color: #000000;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

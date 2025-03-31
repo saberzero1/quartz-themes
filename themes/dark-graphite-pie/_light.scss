@@ -50,4 +50,7 @@
   --graph-attach: #83d4f4;
   --graph-unresolved: rgb(143, 147, 143);
   --checklist-done-decoration: none;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

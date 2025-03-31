@@ -37,4 +37,7 @@
   --icon-color: #274b27;
   --icon-color-focused: #128a12;
   --icon-color-hover: #128a12;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

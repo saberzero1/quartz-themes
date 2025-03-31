@@ -52,4 +52,7 @@
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
   --metadata-icon: "📄";
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -61,4 +61,7 @@
   --nav-item-background-hover: var(--color-accent);
   --nav-item-color-active: var(--color-base-20);
   --nav-item-background-active: var(--color-accent);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -27,4 +27,7 @@
   --text-accent: #ff9640ba;
   --interactive-accent-rgb: #fe8019;
   --text-selection: #406488;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }
