@@ -115,13 +115,4 @@
     66.3%
   );
   --premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

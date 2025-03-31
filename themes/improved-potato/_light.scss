@@ -13,13 +13,4 @@
   --titlebar-background: var(--color-base-10);
   --titlebar-background-focused: var(--color-base-25);
   --line-number-color: var(--color-base-50);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -485,8 +485,16 @@ const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}
 let hasDarkOptions = true
 let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
-  let extras = `@use "extras";`
-  const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
+  const themeNameLocal = getValueFromDictionary(manifest, "name")
+  let extras = ""
+  if (isDarkTheme(themeNameLocal)) {
+    extras += `\n@use "dark";`
+  }
+  if (isLightTheme(themeNameLocal)) {
+    extras += `\n@use "light";`
+  }
+  extras += `\n@use "extras";`
+  const themeExtras = getExtras(themeNameLocal)
   themeExtras.forEach((extra) => {
     extras += `\n@use "extras/${extra}.scss";`
   })

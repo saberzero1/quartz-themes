@@ -43,13 +43,4 @@
   --color-text-linkUrl: #00eaff;
   --color-text-note-indicator: #ff6f91;
   --color-text-hash-tag: #95ff6f;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

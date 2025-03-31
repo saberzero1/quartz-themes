@@ -10,13 +10,4 @@
   --link-external-color: #2c54f2;
   --link-external-color-hover: #5c7bf5;
   --h4-color: #8a5cf5;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

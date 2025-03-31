@@ -22,13 +22,4 @@
     calc(var(--accent-s) * 0.8),
     calc(var(--accent-l) * 1.35)
   ) !important;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

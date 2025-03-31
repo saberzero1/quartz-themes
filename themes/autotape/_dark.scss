@@ -5,13 +5,4 @@
   --italic-color: white;
   --text-highlight-bg: #9ece6a66;
   --text-faint: #565f8988;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

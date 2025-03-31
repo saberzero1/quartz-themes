@@ -9,13 +9,4 @@
   --interactive-hover: var(--orange-medium);
   --interactive-accent: var(--orange-light);
   --background-modifier-border: var(--orange-darker);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

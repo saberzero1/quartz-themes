@@ -48,13 +48,4 @@
   --atom-purple: #c678dd;
   --atom-blue: #61afef;
   --atom-yellow: #e5c07b;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

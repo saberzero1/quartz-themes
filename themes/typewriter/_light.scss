@@ -20,13 +20,4 @@
   --icon-color: var(--text-muted);
   --icon-hex: 000;
   --graph-line-color: #c0c9ce;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

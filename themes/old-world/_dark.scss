@@ -89,13 +89,4 @@
   --text-highlight-bg: rgba(var(--color-yellow-rgb), 0.5);
   --caret-color: var(--color-yellow);
   --hr-thickness: 3px;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

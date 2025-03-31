@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -556,6 +557,15 @@ html {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

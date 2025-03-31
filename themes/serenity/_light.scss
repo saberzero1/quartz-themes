@@ -23,13 +23,4 @@
   --accent-l: 66%;
   --color-red: #f45757;
   --color-red-rgb: 244, 87, 87;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

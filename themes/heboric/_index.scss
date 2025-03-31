@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -548,6 +550,15 @@ html[saved-theme="dark"] {
   --nav-item-color-active: var(--color-base-80);
   --nav-item-background-active: var(--color-accent);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -663,6 +674,15 @@ html[saved-theme="light"] {
   --nav-item-background-hover: var(--color-accent);
   --nav-item-color-active: var(--color-base-20);
   --nav-item-background-active: var(--color-accent);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

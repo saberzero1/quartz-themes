@@ -2,13 +2,4 @@
   --background-primary: #262626;
   --background-secondary: #262626;
   --background-secondary-alt: #262626;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

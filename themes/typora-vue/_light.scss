@@ -8,13 +8,4 @@
   --cus-table-gap-tr: #fafafa;
   --table-row-background-hover: #f2f2f2;
   --cus-highlight-cursor-line: rgba(245, 204, 142, 0.12);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

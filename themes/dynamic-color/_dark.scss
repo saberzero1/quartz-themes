@@ -59,13 +59,4 @@
   --md-sys-color-surface-container-low: var(--md-ref-palette-neutral-96);
   --md-sys-color-surface-container: var(--md-ref-palette-neutral-94);
   --md-sys-color-surface-container-high: var(--md-ref-palette-neutral-92);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

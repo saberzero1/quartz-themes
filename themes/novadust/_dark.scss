@@ -143,13 +143,4 @@
   --ribbon-background: var(--background-primary-alt);
   --nav-collapse-icon-color: var(--percy-blue);
   --slider-track-background: var(--ocean-blue);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

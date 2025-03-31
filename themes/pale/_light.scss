@@ -26,13 +26,4 @@
   --code-function: #dcbb59;
   --code-property: #d29a8c;
   --code-string: #05a3a3;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

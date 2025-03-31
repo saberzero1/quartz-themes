@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -465,6 +466,15 @@ html {
   --pdf-title-h4: #008181;
   --pdf-title-h5: #915e00;
   --pdf-title-h6: #6c00be;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

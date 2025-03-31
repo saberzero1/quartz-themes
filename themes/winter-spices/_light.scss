@@ -29,13 +29,4 @@
   --tag-color-hover: #e5dfd3;
   --text-accent: #527a98;
   --tab-divider-color: #fff;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

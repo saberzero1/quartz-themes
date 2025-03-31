@@ -39,13 +39,4 @@
   --link-color-hover: var(--coral);
   --link-decoration-hover: var(--code-function);
   --text-selection: var(--code-tag);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

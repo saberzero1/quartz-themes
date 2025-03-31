@@ -10,13 +10,4 @@
   --text-highlight-bg: var(--color-tulip);
   --text-selection: var(--color-tulip);
   --table-border-color: #000000;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

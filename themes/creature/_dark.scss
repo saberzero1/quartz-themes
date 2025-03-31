@@ -29,13 +29,4 @@
   --todoList-listItemBackground: $gray-base;
   --todoList-listItemBorderRadius: $border-radius-softer !important;
   --todoList-checkboxBorder: 2px solid $gray-lighter !important;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

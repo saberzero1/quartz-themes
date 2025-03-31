@@ -50,13 +50,4 @@
     calc(var(--main-accent-d) + 5%),
     1.9
   );
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

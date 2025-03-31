@@ -112,13 +112,4 @@
   --code-size: 1em;
   --hr-color: var(--orange);
   --checkbox-color-hover: var(--list-marker-color);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

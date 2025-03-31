@@ -123,13 +123,4 @@
   --graph-node-tag: var(--medium-grey-1);
   --graph-node-attachment: var(--medium-grey-2);
   --search-icon-color: var(--green-04);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -4,13 +4,4 @@
   --accent-l: 79%;
   --link-external-color: #7fcae6;
   --link-external-color-hover: #89ebe5;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

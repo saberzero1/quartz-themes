@@ -45,13 +45,4 @@
   --atom-aqua: #0084bc;
   --atom-yellow: #e35649;
   --atom-orange: #986800;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

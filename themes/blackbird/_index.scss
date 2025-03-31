@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -458,6 +459,15 @@ html {
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

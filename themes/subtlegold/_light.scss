@@ -16,13 +16,4 @@
   --text-normal: rgba(44, 44, 44, 255);
   --text-accent-hover: #d6ba7c;
   --interactive-accent-hover: #d6ba7c;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

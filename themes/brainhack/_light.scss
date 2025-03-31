@@ -197,13 +197,4 @@
   --popover-width: 1050px;
   --popover-height: 1250px;
   --tab-max-width: 35%;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

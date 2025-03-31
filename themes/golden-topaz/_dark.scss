@@ -282,13 +282,4 @@
   --stickies-color-2: #e1b87f;
   --tape-color: #007672;
   --header-color: #f1a634d0;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

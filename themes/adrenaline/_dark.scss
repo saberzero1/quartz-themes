@@ -2,13 +2,4 @@
   --background-primary: #2e2e2e;
   --background-secondary: var(--accent-color-bg_d);
   --background-secondary-alt: var(--accent-color-bg_d);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

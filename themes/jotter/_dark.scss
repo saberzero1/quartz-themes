@@ -19,13 +19,4 @@
   --text-normal: #e1e1e1;
   --text-muted: #b7b2b2;
   --text-faint: #807b7b;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

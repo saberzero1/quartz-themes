@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -585,6 +586,15 @@ html {
   --embed-background: var(--bg_dark);
   --embed-padding: 1.5rem 1.5rem 0.5rem;
   --canvas-color: var(--bg_highlight_x);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

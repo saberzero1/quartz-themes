@@ -9,13 +9,4 @@
   --text-stroke-color: var(--color-base-100);
   --muted-accent-rgb: 110 102 3;
   --muted-accent: rgb(var(--muted-accent-rgb));
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -7,13 +7,4 @@
   --lum-bg: 95%;
   --lum: 11%;
   --title-color: black;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

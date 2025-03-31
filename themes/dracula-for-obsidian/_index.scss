@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -526,6 +527,15 @@ html {
   --blockquote-border: #ffb86c;
   --vim-cursor: #ff5555;
   --border-color: #2b2727;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

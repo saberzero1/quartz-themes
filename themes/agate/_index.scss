@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -550,6 +551,15 @@ html {
   --color-base-100: rgb(20, 20, 20);
   --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
   --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

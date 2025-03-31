@@ -34,13 +34,4 @@
   --table-border-color: rgb(14, 210, 247, 0.15);
   --test-color: rgb(122, 162, 247);
   --editor-border-color: #101014;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

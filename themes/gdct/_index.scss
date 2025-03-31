@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -538,6 +539,15 @@ html {
   --blockquote-bg: var(--background-primary);
   --bracket-color: rgba(200, 200, 200, 1);
   --hr-color: hsl(0, 0%, 39%);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

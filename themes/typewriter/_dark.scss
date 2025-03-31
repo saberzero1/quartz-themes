@@ -30,13 +30,4 @@
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
   --graph-line-color: #6f7577;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

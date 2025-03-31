@@ -47,13 +47,4 @@
   --aqua: #0084bc;
   --yellow: #e35649;
   --orange: #986800;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

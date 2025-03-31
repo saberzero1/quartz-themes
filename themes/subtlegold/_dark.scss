@@ -23,13 +23,4 @@
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --text-nav-selected: #000000;
   --interactive-accent-rgb: #d6ba7c;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

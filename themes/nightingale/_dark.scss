@@ -31,13 +31,4 @@
   --interactive-before: #5e6565;
   --interactive-accent-rgb: #3dd7fb;
   --background-modifier-border: rgba(14, 210, 247, 0.05);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

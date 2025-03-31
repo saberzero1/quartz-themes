@@ -267,13 +267,4 @@
   --chbx-I: 82, 139, 212;
   --chbx-c: 149, 217, 238;
   --chbx-r: 249, 190, 123;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

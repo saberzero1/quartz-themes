@@ -44,13 +44,4 @@
   --background-modifier-border-focus: var(--color-base-40);
   --interactive-normal: var(--color-base-10);
   --interactive-hover: var(--color-base-20);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -36,13 +36,4 @@
   --accent-h: 35;
   --accent-s: 100%;
   --accent-l: 60%;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

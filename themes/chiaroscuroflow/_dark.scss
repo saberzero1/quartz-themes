@@ -6,13 +6,4 @@
   --math-background: var(--code-background-dark, rgb(33, 19, 19));
   --background-primary: rgb(25, 18, 63);
   --text-normal: #ffffff;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

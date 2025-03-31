@@ -34,13 +34,4 @@
   --indentation-guide-color-active: #808261;
   --table-header-background: #2a2a2a;
   --table-row-alt-background: #141414;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

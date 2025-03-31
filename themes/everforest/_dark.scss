@@ -26,13 +26,4 @@
   --code-block: var(--fg-dark);
   --vim-cursor: var(--faded-blue);
   --text-selection: var(--bg5-dark);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

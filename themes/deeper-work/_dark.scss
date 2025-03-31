@@ -64,13 +64,4 @@
   --h6-size: 1.1rem;
   --heading-spacing: 1.5rem;
   --code-size: 1em;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

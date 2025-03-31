@@ -89,13 +89,4 @@
   --tag-padding-x: var(--tag-padding-y);
   --tag-color: var(--color-accent);
   --background-modifier-border-focus: var(--interactive-accent);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

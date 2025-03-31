@@ -45,13 +45,4 @@
   --graph-node-fill-OP2: #91b8d7;
   --graph-node-fill-yellow: #ffcf00;
   --blockquote-background-color: var(--background-primary-alt);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

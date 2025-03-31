@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -1006,6 +1008,15 @@ html[saved-theme="dark"] {
   --gradient-bg-secondary: linear-gradient(135deg, #2b2b2b 1.62%, #262626 50.72%);
   --background-modifier-border-alt: #303030;
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1125,6 +1136,15 @@ html[saved-theme="light"] {
   --gradient-bg-primary: linear-gradient(135deg, #fff 1.62%, #f5f5f5 50.72%) !important;
   --gradient-bg-secondary: linear-gradient(135deg, #f3f3f3 1.62%, #e6e6e6 50.72%) !important;
   --background-modifier-border-alt: #fff !important;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

@@ -143,13 +143,4 @@
   --checklist-done-color: var(--color-comment-blue);
   --list-marker-color: var(--color-salmon);
   --indentation-guide-color: #ed9299;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

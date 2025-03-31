@@ -72,13 +72,4 @@
   --atom-purple: #a06fca;
   --atom-blue: #0e86ff;
   --atom-yellow: #e6db74;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

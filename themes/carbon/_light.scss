@@ -17,13 +17,4 @@
   --text-error: #da1e28;
   --table-borders: #c6c6c6;
   --table-headers: #e8e8e8;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

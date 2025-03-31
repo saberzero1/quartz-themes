@@ -9,13 +9,4 @@
   --text-stroke-color: hsl(45deg 100% 84%);
   --muted-accent-rgb: 198 193 135;
   --muted-accent: rgb(var(--muted-accent-rgb));
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

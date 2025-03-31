@@ -122,13 +122,4 @@
   --pill-color-remove: var(--theme-color-baseDarkened80);
   --pill-color-remove-hover: var(--theme-color-baseDarkened80);
   --pill-background-remove-hover: var(--theme-color-baseDarkened25);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -467,6 +469,15 @@ html[saved-theme="dark"] {
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -550,6 +561,15 @@ html[saved-theme="light"] {
   --text-on-accent-inverted: var(--color-base-10);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

@@ -40,13 +40,4 @@
   --h2-weight: 500;
   --he-weight: 500;
   --text-selection: #007bcf;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

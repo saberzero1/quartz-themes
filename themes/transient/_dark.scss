@@ -6,13 +6,4 @@
   --background-secondary: transparent;
   --code-background: #22223333;
   --modal-background: var(--color-base-00);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -14,13 +14,4 @@
   --italic-color: #474a4d;
   --interactive-accent: #92a1a1;
   --text-highlight-bg: #00000033;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

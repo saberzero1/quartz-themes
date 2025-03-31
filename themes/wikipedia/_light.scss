@@ -52,13 +52,4 @@
   --color-base-60: #707070;
   --color-base-70: #5a5a5a;
   --color-base-100: #222222;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

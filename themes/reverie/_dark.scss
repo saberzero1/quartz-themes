@@ -26,13 +26,4 @@
   --interactive-before: #7c6f64;
   --background-modifier-border: #95c1bb;
   --text-selection: #16304d;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

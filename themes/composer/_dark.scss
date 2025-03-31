@@ -60,13 +60,4 @@
   --callout-quote: 158, 158, 158;
   --nav-button-container-bg: rgba(255, 255, 255, 0.03);
   --header-active-bg: rgba(255, 255, 255, 0.05);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

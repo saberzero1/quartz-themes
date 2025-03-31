@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -477,6 +478,15 @@ html {
   --background-secondary-alt: var(--color-base-10);
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.3);
   --caret-color: var(--color-base-70);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

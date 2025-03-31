@@ -21,13 +21,4 @@
   --interactive-accent-rgb: #f1fa8c;
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

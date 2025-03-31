@@ -47,13 +47,4 @@
   --color-base-70: #8890a6;
   --color-base-100: #cdd1df;
   --glow-color: white;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

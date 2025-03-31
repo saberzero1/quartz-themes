@@ -108,13 +108,4 @@
   --fas-note-background-image-blend-mode: var(--fas-note-background-image-blend-mode-dark);
   --fas-note-background-image-brightness: var(--fas-note-background-image-brightness-dark);
   --art-deco-color-custom: #e3c24a;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

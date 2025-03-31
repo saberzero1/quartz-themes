@@ -2,13 +2,4 @@
   --background-primary: var(--kuro-black-dark);
   --background-secondary: var(--kuro-black-normal);
   --background-secondary: #212121;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

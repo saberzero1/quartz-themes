@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 @use "extras/minimal.scss";
@@ -448,6 +449,15 @@ html {
   --text-accent-hover: #ff5c8f;
   --text-selection: #29502e;
   --text-highlight-bg: #29502e;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

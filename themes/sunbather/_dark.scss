@@ -21,13 +21,4 @@
   --scrollbar-bg: #0c0c0c;
   --nav-item-background-active: #e25f86;
   --nav-item-color-active: #262626;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -4,13 +4,4 @@
   --background-secondary: #1a1a1a;
   --background-secondary-alt: #0d0b12;
   --alt-color: #ffffff;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

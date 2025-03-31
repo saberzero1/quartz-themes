@@ -2,13 +2,4 @@
   --background-primary: #000;
   --background-secondary: #000;
   --titlebar-background-focused: #000;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

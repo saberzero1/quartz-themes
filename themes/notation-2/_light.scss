@@ -46,13 +46,4 @@
   --tag-8-default: rgb(238, 224, 218);
   --tag-9-default: rgb(227, 226, 224);
   --tag-10-default: rgb(227, 226, 224, 0.5);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

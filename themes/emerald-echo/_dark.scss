@@ -41,13 +41,4 @@
   --icon-color: #529d52;
   --icon-color-focused: #39ff14;
   --icon-color-hover: #39ff14;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -60,13 +60,4 @@
   --blockquote-border: var(--vercel-blue-600);
   --vim-cursor: var(--vercel-blue-600);
   --border-color: var(--border-1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

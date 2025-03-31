@@ -81,13 +81,4 @@
   --graph-node-attachment: var(--color-yellow);
   --canvas-color: 53, 84, 100;
   --code-comment: #3f6a87;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

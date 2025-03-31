@@ -40,13 +40,4 @@
   --h4-weight: 300;
   --h5-weight: 300;
   --h6-weight: 300;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -22,13 +22,4 @@
   --accent-l-alt: min(var(--accent-l), 40%);
   --min-highlight: 45%;
   --max-highlight: 65%;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

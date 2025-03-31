@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -471,6 +472,15 @@ html {
   --tag-color-hover: #e5dfd3;
   --text-accent: #527a98;
   --tab-divider-color: #fff;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

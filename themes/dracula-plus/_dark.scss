@@ -42,13 +42,4 @@
   --empty-line-height: 1em;
   --checkbox-color: #bd93f9;
   --hr-color: white;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -27,13 +27,4 @@
   --font-text: "manrope", sans-serif !important;
   --font-text-size: 14px !important;
   --text-accent: #4b1b29;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

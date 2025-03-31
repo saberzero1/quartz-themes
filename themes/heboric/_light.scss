@@ -61,13 +61,4 @@
   --nav-item-background-hover: var(--color-accent);
   --nav-item-color-active: var(--color-base-20);
   --nav-item-background-active: var(--color-accent);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -34,13 +34,4 @@
   --green-light: #0a8c28;
   --green-pale: #a4e7c3;
   --brackets-color: #0a5519;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

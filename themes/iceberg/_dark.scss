@@ -25,13 +25,4 @@
   --background-tag-hover: #81859c;
   --text-tag: var(--black);
   --background-block-cursor: var(--white);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

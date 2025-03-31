@@ -39,13 +39,4 @@
   --callout-bg-darken-pct: 0%;
   --button-text-color: var(--background-secondary-alt);
   --graph-view-line-color: var(--dark1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -25,13 +25,4 @@
   --text-faint: var(--color-base-40);
   --text-highlight-bg: rgba(var(--wyrd-yellow-rgb), 0.7);
   --text-highlight-bg-active: rgba(var(--wyrd-yellow-light-rgb), 0.8);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }
