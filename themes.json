@@ -10,7 +10,7 @@
   },
   "themes": {
     "80s-neon": { "compatibility": "full", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "abate": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
+    "abate": { "compatibility": "partial", "modes": ["light"], "extras": ["hide-toggle"] },
     "abecedarium": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "absolutegruv": { "compatibility": "partial", "modes": ["dark"], "extras": ["hide-toggle"] },
     "abyssal": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
