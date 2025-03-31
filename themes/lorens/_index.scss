@@ -6,6 +6,7 @@
 @use "fonts";
 
 @use "extras";
+@use "extras/hide-toggle.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -788,8 +789,8 @@ body {
 }
 
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root,
+html {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -982,179 +983,6 @@ html[saved-theme="dark"] {
   }
 }
 /* END DARK */
-
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --text-normal: hsl(var(--accent-h), 12%, 12%);
-  --text-muted: hsl(var(--accent-h), 9%, 36%);
-  --text-faint: hsl(var(--accent-h), 6%, 64%);
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 221, 44, 56;
-  --color-red: rgb(var(--color-red-rgb));
-  --color-green-rgb: 29, 165, 29;
-  --color-green: rgb(var(--color-green-rgb));
-  --color-orange-rgb: 222, 116, 23;
-  --color-orange: rgb(var(--color-orange-rgb));
-  --color-yellow-rgb: 192, 156, 12;
-  --color-yellow: rgb(var(--color-yellow-rgb));
-  --color-cyan-rgb: 22, 166, 171;
-  --color-cyan: rgb(var(--color-cyan-rgb));
-  --color-blue-rgb: 23, 117, 217;
-  --color-blue: rgb(var(--color-blue-rgb));
-  --color-purple-rgb: 143, 71, 225;
-  --color-purple: rgb(var(--color-purple-rgb));
-  --color-pink-rgb: 221, 19, 153;
-  --color-pink: rgb(var(--color-pink-rgb));
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-15: #f7f7f7;
-  --color-base-20: #f0f0f0;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5a5a5a;
-  --color-base-100: #222222;
-  --accent-h: var(--accent-light-h);
-  --accent-s: var(--accent-light-s);
-  --accent-l: var(--accent-light-l);
-  --accent-light-h: 232;
-  --accent-light-s: 80%;
-  --accent-light-l: 64%;
-  --color-accent-hsl: var(--color-accent-hsl-light);
-  --color-accent: var(--color-accent-light);
-  --color-accent-1: var(--color-accent-1-light);
-  --color-accent-2: var(--color-accent-2-light);
-  --color-accent-3: var(--color-accent-3-light);
-  --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
-  --background-modifier-border: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(var(--accent-l)),
-    0.2
-  );
-  --background-modifier-border-hover: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(var(--accent-l)),
-    0.25
-  );
-  --background-modifier-border-focus: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(var(--accent-l)),
-    0.3
-  );
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary-alt: var(--color-base-05);
-  --workspace-background-translucent: rgba(246, 246, 246, 0.8);
-  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-modifier-form-field: transparent;
-  --search-result-background: transparent;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --border-radius-activated-file-light: var(--radius-s);
-  --color-activated-file-light: var(--nav-item-color-active);
-  --background-activated-file-light: var(--nav-item-background-active);
-  --shadow-activated-file-light: none;
-  --toggle-thumb-color: var(--toggle-thumb-color-light);
-  --toggle-thumb-enabled-color: var(--toggle-thumb-enabled-color-light);
-  --toggle-thumb-color-light: white;
-  --toggle-thumb-enabled-color-light: white;
-  --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
-  --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
-    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
-  --toggle-track-color: var(--toggle-track-color-light);
-  --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
-  --toggle-track-color-light: var(--background-modifier-border-hover);
-  --toggle-track-enabled-color-light: var(--interactive-accent);
-  --toggle-track-shadow: var(--toggle-track-shadow-light);
-  --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
-    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
-  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
-    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
-  --interactive-normal: var(--color-base-05);
-  --interactive-hover: var(--color-base-15);
-  --input-radius: var(--input-radius-light);
-  --input-shadow: var(--input-shadow-light);
-  --input-shadow-hover: var(--input-shadow-hover-light);
-  --input-radius-light: 5px;
-  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
-  --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
-  --code-background: var(--code-background-light);
-  --code-border: var(--code-border-light);
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
@@ -1668,7 +1496,7 @@ body {
   ) !important;
 }
 
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
