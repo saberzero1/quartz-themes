@@ -194,9 +194,7 @@ fi
 
 echo "Applying patches..."
 
-ls
-
-if grep -q 'quartz themes (dark|light)-only' "$THEME_DIR/_index.scss"; then
+if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$THEME_DIR/_index.scss"; then
   echo_warn "Single mode theme detected, applying patch..."
   sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
 fi
