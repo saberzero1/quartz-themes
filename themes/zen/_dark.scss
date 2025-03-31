@@ -33,13 +33,4 @@
   --win-editor-bg-color: rgba(18, 18, 18, 0.65);
   --win-window-opacity: 0.4;
   --background-secondary-alt: rgba(18, 18, 18, 0.1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -35,13 +35,4 @@
   --table-row-odd: hsl(42, 37%, 97%);
   --table-hover: var(--lotusWhite1);
   --bold-color: var(--lotusInk1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

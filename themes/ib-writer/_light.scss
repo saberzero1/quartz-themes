@@ -10,13 +10,4 @@
   --text-selection: var(--my-accent-color);
   --tab-background-active: var(--edit-view-background-color);
   --background-primary: var(--edit-view-background-color);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -549,6 +550,15 @@ html {
   --checkbox-enabled: var(--tag-bg);
   --active-title-border: var(--interactive-accent);
   --hr-color: hsl(0, 0%, 39%);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

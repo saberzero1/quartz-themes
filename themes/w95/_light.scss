@@ -96,13 +96,4 @@
   --h4-color: var(--header-color);
   --h5-color: var(--header-color);
   --h6-color: var(--header-color);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

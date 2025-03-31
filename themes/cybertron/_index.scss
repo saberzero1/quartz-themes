@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -504,6 +505,15 @@ html {
   --ribbon-background: rgb(20, 20, 20);
   --ribbon-background-collapsed: rgb(20, 20, 20);
   --tag-color: rgb(252, 246, 1);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

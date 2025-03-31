@@ -85,13 +85,4 @@
   --nav-indentation-guide-color: #28163b;
   --nav-collapse-icon-color: #d99145;
   --nav-collapse-icon-color-collapsed: #c88034;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

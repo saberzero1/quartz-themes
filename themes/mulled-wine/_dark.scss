@@ -32,13 +32,4 @@
   --tag-background-hover: transparent;
   --tag-color-hover: #714785;
   --tag-color: #96bae8;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

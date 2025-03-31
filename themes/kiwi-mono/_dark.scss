@@ -42,13 +42,4 @@
   --code-string: #d5ff80;
   --code-tag: #5ccfe6;
   --code-value: #dfbfff;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

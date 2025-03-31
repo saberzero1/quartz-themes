@@ -304,13 +304,4 @@
   --matrix-2: var(--p-kanban-color-3);
   --matrix-4: var(--p-kanban-color-5);
   --matrix-5: var(--p-kanban-color-6);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

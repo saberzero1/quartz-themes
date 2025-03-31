@@ -29,13 +29,4 @@
   --folder-color-10: #8b7e6d;
   --folder-color-11: #8d6b83;
   --folder-color-12: #6c8299;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

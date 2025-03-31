@@ -2,13 +2,4 @@
   --background-primary: #282c34;
   --background-secondary: #3b4251;
   --ribbon-background: #4c567a;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

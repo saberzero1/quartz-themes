@@ -29,13 +29,4 @@
   --text-on-accent-inverted: var(--color-base-10);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

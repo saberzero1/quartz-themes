@@ -58,13 +58,4 @@
   --kanban-lane-border: #d8dee4;
   --kanban-lane-count: #aeb8c133;
   --kanban-options-btn: var(--background-primary-alt);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

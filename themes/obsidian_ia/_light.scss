@@ -27,13 +27,4 @@
   --background-quick: #f7f7f7;
   --file-hr: #ecebea;
   --leaf-handle: #ecebea;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

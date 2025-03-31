@@ -44,13 +44,4 @@
   --color-purple2: #5252e0;
   --color-green2: #58aa31;
   --blockquote-background-color: var(--background-secondary);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

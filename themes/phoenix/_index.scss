@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -550,6 +552,15 @@ html[saved-theme="dark"] {
   --button-text-color: var(--background-secondary-alt);
   --graph-view-line-color: var(--dark1);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -644,6 +655,15 @@ html[saved-theme="light"] {
   --callout-bg-darken-pct: 5%;
   --button-text-color: var(--text-on-accent);
   --graph-view-line-color: var(--light4);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

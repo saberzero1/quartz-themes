@@ -61,13 +61,4 @@
   --icon-color-active: rgb(var(--hover-rgb));
   --background-modifier-active-hover: rgba(var(--hover-rgb), 0.1);
   --nav-item-color-hover: rgb(var(--hover-rgb));
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

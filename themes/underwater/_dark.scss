@@ -3,13 +3,4 @@
   --todoist-task-separator-color: var(--background-modifier-border);
   --todoist-p4-border: var(--checkbox-border-color);
   --todoist-p4-border-hover: var(--checkbox-border-color-hover);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

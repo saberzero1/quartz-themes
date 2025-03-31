@@ -78,13 +78,4 @@
   --syntax-teal: rgb(86, 182, 194);
   --syntax-purple: rgb(198, 120, 221);
   --syntax-grey: rgb(112, 128, 144);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

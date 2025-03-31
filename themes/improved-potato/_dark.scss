@@ -28,13 +28,4 @@
   --color-base-100: #ccd2db;
   --titlebar-background: var(--color-base-25);
   --line-number-color: var(--color-base-50);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

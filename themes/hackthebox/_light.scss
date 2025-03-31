@@ -6,13 +6,4 @@
   --htb-heading: #cad2e2;
   --htb-divider-color: #1a2332;
   --htb-border: #4a5466;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -88,13 +88,4 @@
   --kanban-button-text-hover: var(--text-white);
   --kanban-checkbox-border: var(--accent-soft-dark);
   --button-shadow-hover: rgba(0, 0, 0, 0.67);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

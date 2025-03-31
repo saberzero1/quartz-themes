@@ -71,13 +71,4 @@
   --text-on-accent: var(--text-muted);
   --on-accent: var(--text-muted);
   --hr-color: var(--surface-variant);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

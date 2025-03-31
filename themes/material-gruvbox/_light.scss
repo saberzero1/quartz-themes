@@ -78,13 +78,4 @@
   --dataview-value-background: rgba(var(--neutral-green-x), 0.2);
   --tab-text-color-focused-active: var(--neutral-yellow);
   --tab-text-color-focused-active-current: var(--neutral-red);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

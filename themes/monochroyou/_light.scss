@@ -6,13 +6,4 @@
   --colorOnPrimary: white;
   --colorBackgroundPrimary: hsl(var(--accent-h), 100%, 97%);
   --nav-item-color: black;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

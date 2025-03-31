@@ -45,13 +45,4 @@
   --graph-menutext: #898b85;
   --checkboxbg: -23deg;
   --opacity-translucency: 0.7;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

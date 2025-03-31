@@ -54,13 +54,4 @@
   --yellow: #986801;
   --orange: #c18401;
   --divider-color-hover: #4fa6ed;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

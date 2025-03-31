@@ -33,13 +33,4 @@
   --text-selection: #007bcf;
   --link-color: #000000;
   --link-external-color: #000000;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

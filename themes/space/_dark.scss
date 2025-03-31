@@ -26,13 +26,4 @@
   --interactive-accent-rgb: var(--yellow-faint);
   --text-selection: var(--red);
   --background-modifier-border: var(--space-light);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

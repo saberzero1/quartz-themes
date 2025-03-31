@@ -39,13 +39,4 @@
   --color-blue-rgb: 53, 107, 148;
   --color-purple-rgb: 128, 76, 110;
   --color-pink-rgb: 189, 113, 164;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

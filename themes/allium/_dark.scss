@@ -117,13 +117,4 @@
   --chbx-I: 243, 150, 122;
   --chbx-c: 163, 45, 127;
   --chbx-r: 243, 150, 122;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

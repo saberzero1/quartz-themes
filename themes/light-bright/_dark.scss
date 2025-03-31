@@ -8,13 +8,4 @@
   --color-base-30: hsl(calc(0 + var(--accent-h)), 12%, 33%);
   --color-base-60: hsl(calc(0 + var(--accent-h)), 20%, 13%);
   --color-base-70: hsl(calc(0 + var(--accent-h)), 50%, 73%);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

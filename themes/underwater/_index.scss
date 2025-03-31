@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -449,6 +451,15 @@ html[saved-theme="dark"] {
   --todoist-p4-border: var(--checkbox-border-color);
   --todoist-p4-border-hover: var(--checkbox-border-color-hover);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -700,6 +711,15 @@ html[saved-theme="light"] {
   --pomodoro-timer-dot-color: var(--love);
   --pomodoro-timer-elapsed-color: var(--foam);
   --pomodoro-timer-color: var(--text-selection);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

@@ -129,13 +129,4 @@
   --comment-h4: hsl(153, 35%, 75%);
   --comment-h5: hsl(224, 26%, 83%);
   --comment-h6: hsl(223, 14%, 75%);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

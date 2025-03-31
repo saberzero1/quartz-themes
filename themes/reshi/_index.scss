@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -949,6 +951,15 @@ html[saved-theme="dark"] {
   --graph-node-attachment: var(--medium-grey-1);
   --search-icon-color: var(--green-11);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1126,6 +1137,15 @@ html[saved-theme="light"] {
   --graph-node-tag: var(--medium-grey-1);
   --graph-node-attachment: var(--medium-grey-2);
   --search-icon-color: var(--green-04);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

@@ -74,13 +74,4 @@
   --color-muted: var(--color-base-70);
   --color-italic: hsla(215, 43%, 63%, 1);
   --color-highlight: var(--text-normal);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

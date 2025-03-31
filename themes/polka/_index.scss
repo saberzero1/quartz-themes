@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -612,6 +614,15 @@ html[saved-theme="dark"] {
   --kanban-checkbox-border: var(--background-primary);
   --button-shadow-hover: rgba(255, 255, 255, 0.67);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -754,6 +765,15 @@ html[saved-theme="light"] {
   --kanban-button-text-hover: var(--text-white);
   --kanban-checkbox-border: var(--accent-soft-dark);
   --button-shadow-hover: rgba(0, 0, 0, 0.67);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

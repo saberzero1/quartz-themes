@@ -1,13 +1,4 @@
 :root[saved-theme="dark"] {
   --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
   --color-base-05: var(--color-base-20);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

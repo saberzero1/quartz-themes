@@ -57,13 +57,4 @@
   --folder-sapphire: 32, 159, 181;
   --folder-blue: 42, 110, 245;
   --folder-lavender: 114, 135, 253;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

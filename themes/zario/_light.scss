@@ -58,13 +58,4 @@
   --icon-color-active: rgb(230, 153, 71);
   --background-modifier-active-hover: rgba(var(--hover-rgb), 0.1);
   --nav-item-color-hover: rgb(var(--hover-rgb));
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

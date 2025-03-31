@@ -14,13 +14,4 @@
   --h4-color: #f88773;
   --h5-color: #f88773;
   --h6-color: #f88773;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

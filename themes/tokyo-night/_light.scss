@@ -174,13 +174,4 @@
   --image-radius: 0px;
   --date-color: var(--blue);
   --date-background-color: var(--bg_highlight);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

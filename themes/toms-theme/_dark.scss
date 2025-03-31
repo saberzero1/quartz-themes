@@ -29,13 +29,4 @@
   --interactive-success: var(--color-green);
   --scrollbar-active-thumb-bg: var(--color-green);
   --scrollbar-thumb-bg: var(--color-darkgreen);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

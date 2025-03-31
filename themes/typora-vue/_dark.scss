@@ -7,13 +7,4 @@
   --cus-table-gap-tr: #1a1a1a;
   --table-row-background-hover: #171717;
   --cus-highlight-cursor-line: rgba(225, 225, 225, 0.12);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

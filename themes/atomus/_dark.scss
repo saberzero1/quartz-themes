@@ -48,13 +48,4 @@
   --table-header-background-hover: var(--background-secondary-alt);
   --table-row-alt-background: transparent;
   --table-border-color: var(--gray-1);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

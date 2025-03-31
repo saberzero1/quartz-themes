@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -567,6 +569,15 @@ html[saved-theme="dark"] {
   --tab-text-color-focused-active: var(--frost2);
   --tab-text-color-focused-active-current: var(--red);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -698,6 +709,15 @@ html[saved-theme="light"] {
   --dataview-value-background: rgba(var(--red_x), 0.3);
   --tab-text-color-focused-active: var(--frost2);
   --tab-text-color-focused-active-current: var(--red);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

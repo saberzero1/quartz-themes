@@ -28,13 +28,4 @@
   --orange: #c1a58c;
   --slider-track-background: #eff1e1;
   --toggle-radius: 4px;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

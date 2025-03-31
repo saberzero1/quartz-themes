@@ -81,13 +81,4 @@
   --eldritch-number: #04d1f9;
   --eldritch-function: #a48cf2;
   --eldritch-string: #f1fc79;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

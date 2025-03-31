@@ -30,13 +30,4 @@
   --modal-background: var(--background-secondary) !important;
   --modal-border-color: rgba(0, 0, 0, 0.1);
   --slider-thumb-border-color: var(--color-base-00);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -52,13 +52,4 @@
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
   --metadata-icon: "📄";
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

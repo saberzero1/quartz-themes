@@ -40,13 +40,4 @@
   --callout-bg-darken-pct: 5%;
   --button-text-color: var(--text-on-accent);
   --graph-view-line-color: var(--light4);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

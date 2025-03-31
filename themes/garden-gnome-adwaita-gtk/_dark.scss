@@ -46,13 +46,4 @@
   --color-invert-filter-b: invert();
   --color-invert-filter-w: none;
   --tab-scroll-mask-color: #3e3e3e;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

@@ -37,13 +37,4 @@
   --link-color: var(--dark-yellow);
   --link-unresolved-color: var(--code-keyword);
   --link-external-color: var(--dark-yellow);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

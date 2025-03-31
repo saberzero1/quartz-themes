@@ -155,13 +155,4 @@
   --input-shadow-hover-light: var(--shadow-hover);
   --toggle-track-color: var(--toggle-track-color-light);
   --toggle-track-shadow: var(--toggle-track-shadow-light);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

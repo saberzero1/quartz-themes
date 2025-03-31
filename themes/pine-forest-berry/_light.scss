@@ -66,13 +66,4 @@
   --blockquote-border: var(--forest-green-dark);
   --vim-cursor: var(--forest-green-dark);
   --border-color: var(--forest-green-dark);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

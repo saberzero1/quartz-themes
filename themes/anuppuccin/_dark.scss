@@ -100,13 +100,4 @@
   --background-modifier-border-focus: rgb(var(--ctp-surface2));
   --anp-speech-bubble-opacity: var(--anp-sp-op-dark, 0.9);
   --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

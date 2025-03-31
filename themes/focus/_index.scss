@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
 
@@ -1056,6 +1057,15 @@ html {
   --text-selection: rgba(255, 255, 255, 0.2);
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
 
   .callout {
     @each $type in $callout-types {

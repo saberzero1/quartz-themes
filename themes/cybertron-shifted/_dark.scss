@@ -47,13 +47,4 @@
   --background-modifier-form-field-highlighted: #2f3136;
   --custom-black: #000000;
   --nav-items-space: 4px 8px;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

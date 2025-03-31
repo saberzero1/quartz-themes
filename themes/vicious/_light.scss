@@ -153,13 +153,4 @@
   --icon-color: var(--800);
   --callout-RGB: var(--200-RGB);
   --nav-item-color: var(--800);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

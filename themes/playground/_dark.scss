@@ -134,13 +134,4 @@
   --pink-900: oklch(98% 0.011 324.98);
   --background-modifier-form-field: var(--gray-25);
   --background-modifier-border-hover: var(--gray-200);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

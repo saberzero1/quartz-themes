@@ -53,13 +53,4 @@
   --table-header-weight: var(--font-bold);
   --table-header-color: inherit;
   --background-modifier-border-focus: var(--interactive-accent);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

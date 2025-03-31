@@ -6,13 +6,4 @@
   --floating-toc-highlight-color: var(--color-accent-2);
   --floating-toc-highlight-color-rgb: 255, 128, 0;
   --floating-toc-line-color: var(--OT-color-on-accent-2);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

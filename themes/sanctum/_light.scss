@@ -84,13 +84,4 @@
   --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
   --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
   --background-modifier-cover: var(--background-hover);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

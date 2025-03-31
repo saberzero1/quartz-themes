@@ -26,13 +26,4 @@
   --text-nav: var(--color-dark);
   --text-normal: var(--color-dark);
   --text-selection: var(--color-purple-lightest);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

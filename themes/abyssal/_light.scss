@@ -100,13 +100,4 @@
   --code-keyword: #4696f4;
   --code-important: #fd6434;
   --code-normal: #527eb2;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -535,6 +537,15 @@ html[saved-theme="dark"] {
   --vim-cursor: var(--faded-blue);
   --text-selection: var(--bg5-dark);
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -615,6 +626,15 @@ html[saved-theme="light"] {
   --code-block: var(--fg-light);
   --vim-cursor: var(--light-blue);
   --text-selection: rgba(189, 174, 147, 0.5);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

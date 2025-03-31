@@ -69,13 +69,4 @@
   --code-comment: #837a72;
   --callout-warning: var(--color-yellow-rgb);
   --text-warning: var(--color-yellow);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

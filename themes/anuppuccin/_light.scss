@@ -31,13 +31,4 @@
   --background-modifier-border-focus: rgb(var(--ctp-overlay0));
   --anp-speech-bubble-opacity: var(--anp-sp-op-light, 0.5);
   --background-modifier-cover: #00000022;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

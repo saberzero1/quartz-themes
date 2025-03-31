@@ -134,13 +134,4 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

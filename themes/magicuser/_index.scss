@@ -6,6 +6,8 @@
 @use "sass:color";
 @use "fonts";
 
+@use "dark";
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -1382,6 +1384,15 @@ html[saved-theme="dark"] {
   --mu-scrollbar-thumb-bg-hover: #84848448;
   --mu-scrollbar-track-bg-hover: #00000021;
 
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
@@ -1516,6 +1527,15 @@ html[saved-theme="light"] {
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484848;
   --mu-scrollbar-track-bg-hover: #82828221;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

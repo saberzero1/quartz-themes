@@ -52,13 +52,4 @@
   --graph-node-tag: #4f9c77;
   --code-comment: #738091;
   --code-inline-background: var(--color-base-00);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
 }

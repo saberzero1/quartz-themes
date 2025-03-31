@@ -6,6 +6,7 @@
 @use "sass:color";
 @use "fonts";
 
+@use "light";
 @use "extras";
 
 /* Callouts */
@@ -472,6 +473,15 @@ html {
   --accent-l: 60%;
   --color-yellow-rgb: 190, 146, 0;
   --color-yellow: rgb(var(--color-yellow-rgb));
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
 
   .callout {
     @each $type in $callout-types {

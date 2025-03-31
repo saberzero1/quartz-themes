@@ -95,13 +95,4 @@
   --graph-node-tag: var(--accent-color-light);
   --graph-node-attachment: var(--accent-color-dark);
   --code-background: var(--background-secondary);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }

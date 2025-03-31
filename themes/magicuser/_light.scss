@@ -80,13 +80,4 @@
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484848;
   --mu-scrollbar-track-bg-hover: #82828221;
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
 }
