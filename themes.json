@@ -377,7 +377,7 @@
       "modes": ["dark"],
       "extras": ["hide-toggle"]
     },
-    "tokyo-night": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
+    "tokyo-night": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
     "tomorrow-night-bright": {
       "compatibility": "checking",
       "modes": ["dark", "light"],
