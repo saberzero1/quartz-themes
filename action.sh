@@ -194,12 +194,11 @@ fi
 
 echo "Applying patches..."
 
-CHECK_LINE=$(head -n 1 "${THEME_DIR}/_index.scss")
-
-echo $CHECK_LINE
+ls
 
 if grep -q 'quartz themes (dark|light)-only' "$THEME_DIR/_index.scss"; then
-  sed -i "/Component\.Darkmode\(\)/d" "$THEME_DIR/../../../quartz.layout.ts"
+  echo_warn "Single mode theme detected, applying patch..."
+  sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
 fi
 
 echo "Verifying setup..."
