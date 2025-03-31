@@ -17,7 +17,7 @@
     "adrenaline": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adwaita": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "agate": { "compatibility": "full", "modes": ["light"], "extras": ["hide-toggle"] },
-    "aged-whisky": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
+    "aged-whisky": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
     "al-dente": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "allium": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "amoled-serenity": {
