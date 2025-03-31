@@ -48,6 +48,12 @@
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

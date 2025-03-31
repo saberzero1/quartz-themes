@@ -65,6 +65,12 @@
   --base-2: #282a3a;
   --base-3: #3a3d4b;
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

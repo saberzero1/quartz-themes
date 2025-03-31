@@ -79,6 +79,12 @@
   --syntax-purple: rgb(198, 120, 221);
   --syntax-grey: rgb(112, 128, 144);
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

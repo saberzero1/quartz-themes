@@ -38,6 +38,12 @@
   --graph-line: #a54aa8;
   --graph-node-focused: #a54aa8;
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

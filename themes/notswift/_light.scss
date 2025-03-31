@@ -81,6 +81,12 @@
   --color-base-verylowlight: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 28%));
   --color-base-darklight: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%));
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

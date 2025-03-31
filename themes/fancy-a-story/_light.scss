@@ -109,6 +109,12 @@
   --fas-note-background-image-brightness: var(--fas-note-background-image-brightness-light);
   --art-deco-color-custom: #161547;
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

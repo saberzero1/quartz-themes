@@ -101,6 +101,12 @@
   --anp-speech-bubble-opacity: var(--anp-sp-op-dark, 0.9);
   --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

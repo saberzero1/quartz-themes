@@ -26,6 +26,12 @@
   --text-highlight-bg: rgba(var(--wyrd-yellow-rgb), 0.7);
   --text-highlight-bg-active: rgba(var(--wyrd-yellow-light-rgb), 0.8);
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

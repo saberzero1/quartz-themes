@@ -47,6 +47,12 @@
   --text-on-accent: var(--color-base-100);
   --background-scondary-alt: var(--color-base-60) !important;
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

@@ -35,6 +35,12 @@
   --color-base-70: #685a68;
   --color-base-100: #594f67;
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

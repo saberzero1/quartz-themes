@@ -47,6 +47,12 @@
   --scrollbar-thumb-bg: rgba(95, 94, 94, 0.1);
   --scrollbar-active-thumb-bg: rgba(95, 94, 94, 0.3);
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

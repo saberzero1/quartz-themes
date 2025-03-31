@@ -38,6 +38,12 @@
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
-  --shiki-light: var(--shiki-dark) !important;
-  --shiki-light-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-light: var(--shiki-dark) !important;
+    --shiki-light-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-light: var(--shiki-dark) !important;
+      --shiki-light-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }

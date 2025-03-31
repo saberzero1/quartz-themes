@@ -60,6 +60,12 @@
   --md-sys-color-surface-container: var(--md-ref-palette-neutral-94);
   --md-sys-color-surface-container-high: var(--md-ref-palette-neutral-92);
 
-  --shiki-dark: var(--shiki-light) !important;
-  --shiki-dark-bg: var(--shiki-light-bg) !important;
+  code[data-theme*=" "] {
+    --shiki-dark: var(--shiki-light) !important;
+    --shiki-dark-bg: var(--shiki-light-bg) !important;
+    * {
+      --shiki-dark: var(--shiki-light) !important;
+      --shiki-dark-bg: var(--shiki-light-bg) !important;
+    }
+  }
 }
