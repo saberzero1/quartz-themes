@@ -132,6 +132,8 @@ try_curl "${CSS_EXTRAS_INDEX_URL}" "${THEME_DIR}/extras/_index.scss"
 echo "Fetching extras..."
 
 try_curl "${EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
+try_curl "${EXTRAS_ROOT}/material.scss" "${THEME_DIR}/extras/material.scss"
+try_curl "${EXTRAS_ROOT}/minimal.scss" "${THEME_DIR}/extras/minimal.scss"
 
 echo "Fetching README file..."
 
@@ -174,6 +176,14 @@ fi
 
 if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
   echo_ok "extras/hide-toggle.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/material.scss" >/dev/null 2>&1; then
+  echo_ok "extras/material.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/minimal.scss" >/dev/null 2>&1; then
+  echo_ok "extras/minimal.scss exists"
 fi
 
 if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
