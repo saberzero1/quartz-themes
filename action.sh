@@ -192,6 +192,14 @@ else
   echo_warn "README file missing"
 fi
 
+echo "Applying patches..."
+
+CHECK_LINE=$(head -n 1 "${THEME_DIR}/_index.scss")
+
+if echo "$CHECK_LINE" | grep -q "-only"
+  sed -i "/Component\.Darkmode\(\)/d" "./quartz.layout.ts"
+fi
+
 echo "Verifying setup..."
 
 if grep -q '^@use "./themes";' "$THEME_DIR/../custom.scss"; then

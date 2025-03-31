@@ -1,3 +1,4 @@
+/* quartz themes light-only */
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
@@ -404,10 +405,8 @@ body {
 }
 
 /* START LIGHT */
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
+:root,
+html {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -986,8 +985,7 @@ body {
 /* START CANVAS GRAPH WORKAROUND */
 
 /* START LIGHT GRAPH */
-:root:root[saved-theme="dark"],
-:root:root[saved-theme="light"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
