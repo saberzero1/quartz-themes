@@ -587,13 +587,8 @@ manifestCollection.forEach((manifest) => {
       )
       replaceInFile(
         `./themes/${getTheme(manifest)}/_index.scss`,
-        `/* START LIGHT */`,
-        `/* START LIGHT */\n:root[saved-theme="dark"],\nhtml[saved-theme="dark"],`,
-      )
-      replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
-        `/* START LIGHT GRAPH */`,
-        `/* START LIGHT GRAPH */\n:root:root[saved-theme="dark"],`,
+        `/* quartz themes */`,
+        `/* quartz themes light-only */`,
       )
     }
     // dark only
@@ -615,15 +610,12 @@ manifestCollection.forEach((manifest) => {
       )
       replaceInFile(
         `./themes/${getTheme(manifest)}/_index.scss`,
-        `/* START DARK */`,
-        `/* START DARK */\n:root[saved-theme="light"],\nhtml[saved-theme="light"],`,
-      )
-      replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
-        `/* START DARK GRAPH */`,
-        `/* START DARK GRAPH */\n:root:root[saved-theme="light"],`,
+        `/* quartz themes */`,
+        `/* quartz themes dark-only */`,
       )
     }
+    // generic
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\[saved-theme\=\".*?\"\]/g, "")
   }
 
   // Remove remaining comments
