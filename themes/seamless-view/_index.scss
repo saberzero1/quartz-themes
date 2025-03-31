@@ -6,6 +6,7 @@
 @use "fonts";
 
 @use "extras";
+@use "extras/hide-toggle.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -432,8 +433,8 @@ body {
 }
 
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root,
+html {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -546,127 +547,6 @@ html[saved-theme="dark"] {
   }
 }
 /* END DARK */
-
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --accent-h: 180;
-  --accent-s: 100%;
-  --accent-l: 25%;
-  --color-base-00: hsl(40, 90%, 80%);
-  --color-base-10: hsl(36, 85%, 76%);
-  --color-base-20: hsl(35, 80%, 72%);
-  --color-base-25: hsl(32, 80%, 70%);
-  --color-base-30: hsl(32, 70%, 60%);
-  --color-base-35: hsl(30, 60%, 55%);
-  --color-base-40: hsl(30, 40%, 50%);
-  --color-base-50: hsl(20, 35%, 45%);
-  --color-base-70: hsl(20, 30%, 35%);
-  --color-base-100: hsl(10, 20%, 15%);
-  --color-accent: hsl(180, 100%, 25%);
-  --color-accent-rgb: 0, 128, 128;
-  --color-code-alt: rgb(194, 94, 0);
-  --color-code-alt-rgb: 194, 94, 0;
-  --color-red: hsl(353, 81%, 40%);
-  --color-red-rgb: 185, 19, 39;
-  --color-yellow: hsl(45, 40%, 40%);
-  --color-yellow-rgb: 143, 122, 61;
-  --color-orange: hsl(35, 100%, 40%);
-  --color-orange-rgb: 204, 119, 0;
-  --color-green: hsl(70, 100%, 25%);
-  --color-green-rgb: 106, 128, 0;
-  --color-cyan: hsl(180, 100%, 25%);
-  --color-cyan-rgb: 0, 128, 128;
-  --color-cyan-alt: hsl(185, 70%, 65%);
-  --color-cyan-alt-rgb: 103, 218, 228;
-  --color-blue: hsl(200, 90%, 30%);
-  --color-blue-rgb: 8, 99, 145;
-  --color-blue-alt: hsl(210, 90%, 45%);
-  --color-blue-alt-rgb: 11, 115, 218;
-  --color-purple: hsl(285, 65%, 50%);
-  --color-purple-rgb: 169, 45, 210;
-  --color-pink: hsl(331, 65%, 53%);
-  --color-pink-rgb: 213, 57, 133;
-  --background-primary: var(--color-base-10);
-  --background-secondary: var(--color-base-25);
-  --background-primary-alt: var(--color-base-20);
-  --background-secondary-alt: var(--color-base-20);
-  --titlebar-background: var(--background-secondary-alt);
-  --titlebar-background-focused: var(--background-secondary);
-  --hr-color: var(--color-base-40);
-  --strike-color: var(--text-muted);
-  --bold-color: var(--color-blue);
-  --italic-color: var(--color-red);
-  --table-border-color: var(--color-base-50);
-  --highlight-color: var(--color-cyan-alt-rgb);
-  --canvas-color: var(--color-orange-rgb);
-  --h1-color: var(--color-red);
-  --h2-color: var(--color-green);
-  --h3-color: var(--color-blue);
-  --h4-color: var(--color-purple);
-  --h5-color: var(--color-pink);
-  --h6-color: var(--color-orange);
-  --code-function: var(--color-blue-alt);
-  --code-keyword: var(--color-purple);
-  --code-operator: var(--color-cyan);
-  --code-property: var(--color-red);
-  --code-punctuation: var(--color-orange);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-orange);
-  --canvas-color-6: var(--color-accent-rgb);
-  --text-highlight-bg-rgb: var(--highlight-color);
-  --metadata-icon: "📜";
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
@@ -1180,7 +1060,7 @@ body {
   ) !important;
 }
 
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(

@@ -3,5 +3,13 @@
   "quoteProps": "as-needed",
   "trailingComma": "all",
   "tabWidth": 2,
-  "semi": false
+  "semi": false,
+  "overrides": [
+    {
+      "files": "**/*.json",
+      "options": {
+        "printWidth": 160
+      }
+    }
+  ]
 }

@@ -6,6 +6,7 @@
 @use "fonts";
 
 @use "extras";
+@use "extras/hide-toggle.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -425,76 +426,9 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
 }
 
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  --highlight-mix-blend-mode: lighten;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-05: #212121;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-
-  --tag-padding-x: 4px;
-  --tag-padding-y: 2px;
-  --tag-radius: 4px;
-  --embed-padding: 0 0 0 var(--size-4-4);
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-/* END DARK */
-
 /* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
+:root,
+html {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -1087,7 +1021,7 @@ body {
   ) !important;
 }
 
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
