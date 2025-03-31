@@ -12,7 +12,7 @@
     "80s-neon": { "compatibility": "full", "modes": ["dark"], "extras": ["hide-toggle"] },
     "abate": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
     "abecedarium": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "absolutegruv": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
+    "absolutegruv": { "compatibility": "partial", "modes": ["dark"], "extras": ["hide-toggle"] },
     "abyssal": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adrenaline": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
     "adwaita": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
