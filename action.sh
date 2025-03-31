@@ -198,8 +198,8 @@ CHECK_LINE=$(head -n 1 "${THEME_DIR}/_index.scss")
 
 echo $CHECK_LINE
 
-if grep -q 'quartz themes (dark|light)-only' "${THEME_DIR}/_index.scss"; then
-  sed -i "/Component\.Darkmode\(\)/d" "./quartz.layout.ts"
+if grep -q 'quartz themes (dark|light)-only' "$THEME_DIR/_index.scss"; then
+  sed -i "/Component\.Darkmode\(\)/d" "$THEME_DIR/../../../quartz.layout.ts"
 fi
 
 echo "Verifying setup..."
