@@ -35,7 +35,7 @@
     "aura": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "aurora-twilight": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "aurora": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "autotape": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
+    "autotape": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "ayu-light-mirage": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
     "ayu-mirage": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
     "base2tone": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
