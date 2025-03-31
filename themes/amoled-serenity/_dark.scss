@@ -117,4 +117,7 @@
   --code-string: var(--green);
   --code-tag: var(--red);
   --code-value: var(--purple);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -80,4 +80,7 @@
   --color-muted: var(--color-base-70);
   --color-italic: hsla(215, 43%, 63%, 1);
   --color-highlight: var(--text-normal);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

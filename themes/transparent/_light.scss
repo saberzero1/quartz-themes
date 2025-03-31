@@ -1,3 +1,6 @@
 :root[saved-theme="light"] {
   --brightness: 3;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -8,4 +8,7 @@
   --cus-table-gap-tr: #fafafa;
   --table-row-background-hover: #f2f2f2;
   --cus-highlight-cursor-line: rgba(245, 204, 142, 0.12);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

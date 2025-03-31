@@ -14,4 +14,7 @@
   --italic-color: #474a4d;
   --interactive-accent: #92a1a1;
   --text-highlight-bg: #00000033;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

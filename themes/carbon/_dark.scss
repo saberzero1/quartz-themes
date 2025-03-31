@@ -17,4 +17,7 @@
   --text-error: #d8343c;
   --table-borders: #8d8d8d;
   --table-headers: #333333;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

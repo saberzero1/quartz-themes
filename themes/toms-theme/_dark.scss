@@ -29,4 +29,7 @@
   --interactive-success: var(--color-green);
   --scrollbar-active-thumb-bg: var(--color-green);
   --scrollbar-thumb-bg: var(--color-darkgreen);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

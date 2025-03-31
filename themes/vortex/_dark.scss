@@ -4,4 +4,7 @@
   --background-secondary: #1a1a1a;
   --background-secondary-alt: #0d0b12;
   --alt-color: #ffffff;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

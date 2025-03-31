@@ -55,4 +55,7 @@
   --interactive-accent-hsl: var(--col-accent);
   --interactive-accent: var(--col-accent);
   --interactive-accent-hover: var(--col-important);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

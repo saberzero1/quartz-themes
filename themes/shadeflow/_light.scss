@@ -33,4 +33,7 @@
   --text-selection: #007bcf;
   --link-color: #000000;
   --link-external-color: #000000;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -21,4 +21,7 @@
   --scrollbar-bg: #0c0c0c;
   --nav-item-background-active: #e25f86;
   --nav-item-color-active: #262626;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

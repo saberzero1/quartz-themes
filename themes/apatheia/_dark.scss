@@ -107,4 +107,7 @@
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--ap-secondary);
   --graph-node-attachment: var(--color-yellow);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

@@ -44,4 +44,7 @@
   --color-purple2: #5252e0;
   --color-green2: #58aa31;
   --blockquote-background-color: var(--background-secondary);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

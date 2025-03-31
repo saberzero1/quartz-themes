@@ -47,4 +47,7 @@
   --background-modifier-form-field-highlighted: #2f3136;
   --custom-black: #000000;
   --nav-items-space: 4px 8px;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

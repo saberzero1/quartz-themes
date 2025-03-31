@@ -94,4 +94,7 @@
   --dracula-number: #bd93f9;
   --dracula-function: #8be9fd;
   --dracula-string: #f1fa8c;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

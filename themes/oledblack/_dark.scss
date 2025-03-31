@@ -6,4 +6,7 @@
   --text-normal: var(--white);
   --text-on-accent: var(--white);
   --text-selection: var(--darkslateblue);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

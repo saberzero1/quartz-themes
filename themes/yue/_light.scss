@@ -72,4 +72,7 @@
   --atom-purple: #a06fca;
   --atom-blue: #0e86ff;
   --atom-yellow: #e6db74;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

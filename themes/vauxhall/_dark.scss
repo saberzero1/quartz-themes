@@ -52,4 +52,7 @@
   --indentation-guide-color-active: var(--color-base-35);
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --code-background: var(--color-base-25);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

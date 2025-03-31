@@ -69,4 +69,7 @@
   --code-comment: #837a72;
   --callout-warning: var(--color-yellow-rgb);
   --text-warning: var(--color-yellow);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

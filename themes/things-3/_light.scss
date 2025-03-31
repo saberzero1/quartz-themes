@@ -22,4 +22,7 @@
     calc(var(--accent-s) * 0.8),
     calc(var(--accent-l) * 1.35)
   ) !important;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -89,4 +89,7 @@
   --interactive-normal: var(--base-45);
   --interactive-hover: var(--base-40);
   --mono-rgb-100: 255, 255, 255;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

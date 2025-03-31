@@ -78,4 +78,7 @@
   --black: #000000;
   --base-1: #fdf9f3;
   --base-2: #fdf9f3;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

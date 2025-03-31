@@ -29,4 +29,7 @@
   --tag-color-hover: #e5dfd3;
   --text-accent: #527a98;
   --tab-divider-color: #fff;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -113,4 +113,7 @@
     calc(var(--bg-s-modifier) + 25%),
     calc(var(--bg-l-modifier-inverted) + 15%)
   );
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

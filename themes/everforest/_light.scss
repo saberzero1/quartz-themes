@@ -26,4 +26,7 @@
   --code-block: var(--fg-light);
   --vim-cursor: var(--light-blue);
   --text-selection: rgba(189, 174, 147, 0.5);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

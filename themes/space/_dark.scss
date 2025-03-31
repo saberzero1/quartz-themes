@@ -26,4 +26,7 @@
   --interactive-accent-rgb: var(--yellow-faint);
   --text-selection: var(--red);
   --background-modifier-border: var(--space-light);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

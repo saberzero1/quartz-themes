@@ -25,4 +25,7 @@
   --statblock-heading-font-color: var(--frost3);
   --statblock-property-font-color: var(--statblock-font-color);
   --statblock-section-heading-border-color: var(--statblock-primary-color);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

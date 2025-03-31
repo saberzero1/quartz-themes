@@ -5,4 +5,7 @@
   --italic-color: white;
   --text-highlight-bg: #9ece6a66;
   --text-faint: #565f8988;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

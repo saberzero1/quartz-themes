@@ -36,4 +36,7 @@
   --accent-h: 35;
   --accent-s: 100%;
   --accent-l: 60%;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

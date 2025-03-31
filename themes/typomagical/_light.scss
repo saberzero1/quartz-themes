@@ -8,4 +8,7 @@
   --tag-color-hover: var(--text-normal);
   --tag-background: #eeb662;
   --tag-background-hover: #f7d865;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

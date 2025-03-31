@@ -26,4 +26,7 @@
   --text-nav: var(--color-dark);
   --text-normal: var(--color-dark);
   --text-selection: var(--color-purple-lightest);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

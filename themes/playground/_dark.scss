@@ -134,4 +134,7 @@
   --pink-900: oklch(98% 0.011 324.98);
   --background-modifier-form-field: var(--gray-25);
   --background-modifier-border-hover: var(--gray-200);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

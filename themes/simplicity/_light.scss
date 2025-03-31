@@ -7,4 +7,7 @@
     var(--accent-l),
     0.03
   ) !important;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -26,4 +26,7 @@
   --background-purple: rgb(234, 228, 242);
   --background-pink: rgb(244, 223, 235);
   --background-red: rgb(251, 228, 228);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

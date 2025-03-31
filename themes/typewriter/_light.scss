@@ -20,4 +20,7 @@
   --icon-color: var(--text-muted);
   --icon-hex: 000;
   --graph-line-color: #c0c9ce;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

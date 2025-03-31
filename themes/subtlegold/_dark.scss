@@ -23,4 +23,7 @@
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --text-nav-selected: #000000;
   --interactive-accent-rgb: #d6ba7c;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

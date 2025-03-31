@@ -80,4 +80,7 @@
   --dataview-value-background: rgba(var(--neutral-green_x), 0.3);
   --tab-text-color-focused-active: var(--neutral-yellow);
   --tab-text-color-focused-active-current: var(--bright-red);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

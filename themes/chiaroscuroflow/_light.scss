@@ -6,4 +6,7 @@
   --math-background: var(--code-background-light, rgb(255, 255, 255));
   --background-primary: rgb(255, 250, 205);
   --text-normal: #0c0909;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

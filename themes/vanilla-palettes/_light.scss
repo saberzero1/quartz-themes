@@ -95,4 +95,7 @@
   --graph-node-tag: var(--accent-color-light);
   --graph-node-attachment: var(--accent-color-dark);
   --code-background: var(--background-secondary);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

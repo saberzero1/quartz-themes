@@ -163,4 +163,7 @@
   --text-selection: #333333;
   --bold-color: #cccccc;
   --italic-color: #cccccc;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

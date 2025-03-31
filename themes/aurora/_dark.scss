@@ -43,4 +43,7 @@
   --Code--blue: #61d0ff;
   --Code--comment: #6c6d72;
   --indentation-guide-color: var(--interactive-accent);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

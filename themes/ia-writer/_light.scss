@@ -15,4 +15,7 @@
   --text-highlight-bg: #fcea95;
   --text-highlight-border: 4px solid #ffd700;
   --text-highlight-color: var(--text-normal);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

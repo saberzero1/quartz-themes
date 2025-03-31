@@ -133,4 +133,7 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

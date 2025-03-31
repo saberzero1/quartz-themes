@@ -34,4 +34,7 @@
   --table-border-color: rgb(14, 210, 247, 0.15);
   --test-color: rgb(122, 162, 247);
   --editor-border-color: #101014;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

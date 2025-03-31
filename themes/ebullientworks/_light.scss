@@ -130,4 +130,7 @@
   --table-header-weight: var(--font-semibold);
   --ebw-table-header-alt: rgba(var(--primary-accent-4-rgb), 0.4);
   --ebw-row-alt: rgba(0, 0, 0, 0.05);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

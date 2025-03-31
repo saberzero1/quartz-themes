@@ -26,4 +26,7 @@
   --interactive-before: #7c6f64;
   --background-modifier-border: #95c1bb;
   --text-selection: #16304d;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

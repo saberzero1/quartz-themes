@@ -96,4 +96,7 @@
   --h4-color: var(--header-color);
   --h5-color: var(--header-color);
   --h6-color: var(--header-color);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -21,4 +21,7 @@
   --link-url: var(--pine);
   --link-url-hover: var(--iris);
   --bold-color: var(--subtle);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

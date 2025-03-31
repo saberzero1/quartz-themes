@@ -46,4 +46,7 @@
   );
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   --highlight-text: var(--text-normal);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

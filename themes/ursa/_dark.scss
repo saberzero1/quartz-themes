@@ -23,4 +23,7 @@
   --interactive-accent-rgb: #6bcafb;
   --font-family-editor: Avenir, "Avenir Next";
   --font-family-preview: Avenir, "Avenir Next";
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

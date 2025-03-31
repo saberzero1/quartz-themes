@@ -10,4 +10,7 @@
   --text-selection: var(--my-accent-color);
   --tab-background-active: var(--edit-view-background-color);
   --background-primary: var(--edit-view-background-color);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

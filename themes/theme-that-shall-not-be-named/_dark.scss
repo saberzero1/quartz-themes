@@ -64,4 +64,7 @@
   --scrollbar-bg: rgba(238, 237, 237, 0.05);
   --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1);
   --highlight-mix-blend-mode: lighten;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

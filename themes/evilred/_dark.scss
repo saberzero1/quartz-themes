@@ -34,4 +34,7 @@
   --table-row-even: hsl(220, 16%, 20%);
   --table-row-odd: hsl(220, 16%, 24%);
   --table-hover: var(--dark3);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

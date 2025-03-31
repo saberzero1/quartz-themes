@@ -251,4 +251,7 @@
   --custom-statusbar-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-900))
     drop-shadow(0px 0px 2px var(--custom-black-900));
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--custom-black-850);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

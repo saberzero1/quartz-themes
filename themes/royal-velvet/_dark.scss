@@ -112,4 +112,7 @@
   --code-size: 1em;
   --hr-color: var(--orange);
   --checkbox-color-hover: var(--list-marker-color);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

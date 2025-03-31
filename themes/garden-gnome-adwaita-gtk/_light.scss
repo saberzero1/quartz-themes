@@ -46,4 +46,7 @@
   --color-invert-filter-b: none;
   --color-invert-filter-w: invert();
   --tab-scroll-mask-color: #dbdbdb;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

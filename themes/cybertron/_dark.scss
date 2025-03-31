@@ -66,4 +66,7 @@
   --ribbon-background: rgb(20, 20, 20);
   --ribbon-background-collapsed: rgb(20, 20, 20);
   --tag-color: rgb(252, 246, 1);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

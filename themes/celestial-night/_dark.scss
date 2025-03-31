@@ -47,4 +47,7 @@
   --color-base-70: #8890a6;
   --color-base-100: #cdd1df;
   --glow-color: white;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

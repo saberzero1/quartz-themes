@@ -23,4 +23,7 @@
   --accent-l: 66%;
   --color-red: #f45757;
   --color-red-rgb: 244, 87, 87;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

@@ -60,4 +60,7 @@
   --checkbox-color: var(--text-accent);
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --text-highlight-bg-active: color-mix(in srgb, var(--h1-color) 25%, transparent);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

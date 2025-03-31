@@ -35,4 +35,7 @@
   --table-row-odd: hsl(42, 37%, 97%);
   --table-hover: var(--lotusWhite1);
   --bold-color: var(--lotusInk1);
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }

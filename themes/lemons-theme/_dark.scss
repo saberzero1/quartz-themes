@@ -37,4 +37,7 @@
   --text-selection: rgba(255, 255, 255, 0.2);
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

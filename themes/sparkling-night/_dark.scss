@@ -69,4 +69,7 @@
   --highlight-text-shadow: var(--text-normal);
   --search-result-background: var(--tropical-indigo);
   --find-flashing: var(--bright-green);
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

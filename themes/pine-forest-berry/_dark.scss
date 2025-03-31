@@ -61,4 +61,7 @@
   --blockquote-border: #ffb86c;
   --vim-cursor: #ff5555;
   --border-color: #2b2727;
+
+  --shiki-light: var(--shiki-dark) !important;
+  --shiki-light-bg: var(--shiki-light-bg) !important;
 }

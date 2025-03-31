@@ -1,4 +1,7 @@
 :root[saved-theme="light"] {
   --font-weight-title: 700;
   --line-height-headers: 2;
+
+  --shiki-dark: var(--shiki-light) !important;
+  --shiki-dark-bg: var(--shiki-light-bg) !important;
 }
