@@ -62,11 +62,11 @@
   --code-keyword: var(--color-red);
 
   code[data-theme*=" "] {
-    --shiki-dark: var(--shiki-light) !important;
-    --shiki-dark-bg: var(--shiki-light-bg) !important;
-    * {
-      --shiki-dark: var(--shiki-light) !important;
-      --shiki-dark-bg: var(--shiki-light-bg) !important;
-    }
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
