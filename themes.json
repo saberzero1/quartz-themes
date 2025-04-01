@@ -29,8 +29,8 @@
     },
     "absolutegruv": {
       "compatibility": "partial",
-      "modes": ["dark"],
-      "extras": ["hide-toggle"],
+      "modes": ["dark", "light"],
+      "extras": [],
       "fonts": ["source-code-pro"]
     },
     "abyssal": {

@@ -1,4 +1,4 @@
-/* quartz themes dark-only */
+/* quartz themes */
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
@@ -7,8 +7,8 @@
 @use "fonts";
 
 @use "dark";
+@use "light";
 @use "extras";
-@use "extras/hide-toggle.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -455,8 +455,8 @@ body {
 }
 
 /* START DARK */
-:root,
-html {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -552,6 +552,96 @@ html {
   }
 }
 /* END DARK */
+
+/* START LIGHT */
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-base-100: #222222;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --background-primary: var(--bg-light);
+  --background-primary-alt: var(--bg-light);
+  --background-secondary: var(--bg-light);
+  --background-secondary-alt: var(--bg-light);
+  --text-normal: var(--fg-light);
+  --text-faint: var(--grey1-light);
+  --text-title-h1: var(--light-red);
+  --text-title-h2: var(--light-orange);
+  --text-title-h3: var(--light-yellow);
+  --text-title-h4: var(--light-green);
+  --text-title-h5: var(--light-aqua);
+  --text-title-h6: var(--light-purple);
+  --text-link: var(--light-blue);
+  --text-a: var(--light-dim-blue);
+  --text-a-hover: var(--light-blue);
+  --text-mark: rgba(215, 153, 33, 0.4);
+  --pre-code: var(--bg1-light);
+  --text-highlight-bg: var(--light-dim-green);
+  --interactive-accent: var(--bg5-light);
+  --interactive-before: var(--bg5-light);
+  --background-modifier-border: var(--bg5-light);
+  --text-accent: var(--bg5-light);
+  --interactive-accent-rgb: var(--light-dim-green);
+  --inline-code: var(--light-blue);
+  --code-block: var(--fg-light);
+  --vim-cursor: var(--light-blue);
+  --text-selection: rgba(189, 174, 147, 0.5);
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .callout {
+    @each $type in $callout-types {
+      &[data-callout="#{$type}"] {
+        --color: rgb(var(#{"--callout-#{$type}"}));
+        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+      }
+    }
+  }
+}
+/* END LIGHT */
 
 body {
   background-color: var(--background-primary);
@@ -1013,8 +1103,63 @@ body {
 
 /* START CANVAS GRAPH WORKAROUND */
 
+/* START LIGHT GRAPH */
+:root:root[saved-theme="light"] {
+  --highlight-fallback: 258, 88%, 66%;
+  --textHighlight-fallback: 255, 208, 0;
+  --light: var(
+    --graph-node,
+    var(--text-muted, var(--background-primary, var(--color-base-00, #ffffff)))
+  ) !important;
+  --lightgray: var(
+    --graph-line,
+    var(
+      --color-base-35,
+      var(
+        --background-modifier-border-focus,
+        var(--background-modifier-border, var(--color-base-30, #e0e0e0))
+      )
+    )
+  ) !important;
+  --gray: var(
+    --graph-node,
+    var(
+      --text-muted,
+      var(
+        --graph-text,
+        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #ababab)))
+      )
+    )
+  ) !important;
+  --darkgray: var(
+    --graph-node-unresolved,
+    var(--text-faint, var(--text-normal, var(--color-base-100, #222222)))
+  ) !important;
+  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
+  --secondary: var(
+    --graph-node-focused,
+    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent, #8a5cf5))))
+  ) !important;
+  --tertiary: var(
+    --graph-node-tag,
+    var(
+      --color-green,
+      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
+    )
+  ) !important;
+  --highlight: var(
+    --tag-background,
+    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
+  ) !important;
+  --textHighlight: var(
+    --text-highlight-bg,
+    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
+  ) !important;
+}
+/* END LIGHT GRAPH */
+
 /* START DARK GRAPH */
-:root:root {
+:root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(
