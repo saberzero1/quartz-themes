@@ -349,6 +349,16 @@ function getExtras(theme) {
 }
 
 /**
+ * Gets extra fonts for a specific game
+ *
+ * @param {string} theme theme name
+ * @returns {string[]} Array of extra fonts to install.
+ */
+function getFonts(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+}
+
+/**
  * Get the current theme name
  *
  * @param {Object} dict input dictionary
@@ -392,7 +402,7 @@ folders.forEach((folder) => {
 clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
-  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras`)
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -417,11 +427,6 @@ manifestCollection.forEach((manifest) => {
   }
 })
 
-// _fonts.scss
-manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
-})
-
 // _dark.scss
 manifestCollection.forEach((manifest) => {
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
@@ -434,6 +439,18 @@ manifestCollection.forEach((manifest) => {
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
     copyFileToDirectory(`./templates/_light.scss`, `./themes/${getTheme(manifest)}`)
   }
+})
+
+// fonts
+manifestCollection.forEach((manifest) => {
+  copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
+  const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
+  fontExtras.forEach((font) => {
+    copyFileToDirectory(
+      `./extras/fonts/${font}.scss`,
+      `./themes/${getTheme(manifest)}/extras/fonts`,
+    )
+  })
 })
 
 // extras
@@ -495,8 +512,12 @@ manifestCollection.forEach((manifest) => {
   }
   extras += `\n@use "extras";`
   const themeExtras = getExtras(themeNameLocal)
+  const fontExtras = getFonts(themeNameLocal)
   themeExtras.forEach((extra) => {
     extras += `\n@use "extras/${extra}.scss";`
+  })
+  fontExtras.forEach((font) => {
+    extras += `\n@use "extras/fonts/${font}.scss";`
   })
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
