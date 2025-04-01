@@ -727,7 +727,8 @@ body {
   }
 
   /* LINKS */
-  a {
+  a,
+  footer a {
     --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
