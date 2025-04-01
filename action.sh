@@ -119,7 +119,7 @@ rm -rf ${THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/extras
+mkdir -p ${THEME_DIR}/extras/fonts
 
 echo "Fetching theme files..."
 
@@ -134,6 +134,11 @@ echo "Fetching extras..."
 try_curl "${EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
 try_curl "${EXTRAS_ROOT}/material.scss" "${THEME_DIR}/extras/material.scss"
 try_curl "${EXTRAS_ROOT}/minimal.scss" "${THEME_DIR}/extras/minimal.scss"
+
+try_curl "${EXTRAS_ROOT}/fonts/inter.scss" "${THEME_DIR}/extras/fonts/inter.scss"
+try_curl "${EXTRAS_ROOT}/fonts/jetbrains-mono.scss" "${THEME_DIR}/extras/fonts/jetbrains-mono.scss"
+try_curl "${EXTRAS_ROOT}/fonts/noto-serif.scss" "${THEME_DIR}/extras/fonts/noto-serif.scss"
+try_curl "${EXTRAS_ROOT}/fonts/source-code-pro.scss" "${THEME_DIR}/extras/fonts/source-code-pro.scss"
 
 echo "Fetching README file..."
 
@@ -184,6 +189,22 @@ fi
 
 if ls "$THEME_DIR/extras/minimal.scss" >/dev/null 2>&1; then
   echo_ok "extras/minimal.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/fonts/inter.scss" >/dev/null 2>&1; then
+  echo_ok "extras/fonts/inter.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/fonts/jetbrains-mono.scss" >/dev/null 2>&1; then
+  echo_ok "extras/fonts/jetbrains-mono.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/fonts/noto-serif.scss" >/dev/null 2>&1; then
+  echo_ok "extras/fonts/noto-serif.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/fonts/source-code-pro.scss" >/dev/null 2>&1; then
+  echo_ok "extras/fonts/source-code-pro.scss exists"
 fi
 
 if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
