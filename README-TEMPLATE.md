@@ -3,14 +3,19 @@
 A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 <p align="center" width="100%">
-  <img src="media/quartz-themes-800-wide-rounded.png" alt="Quartz Themes logo"/>
+  <img src="media/quartz-themes-800-wide-rounded-text.png" alt="Quartz Themes logo"/>
 </p>
 <!--
 _<sub>left to right: `vauxhaul`, `tokyo-night`, `its-theme`, `absolutegruv`, `sandstorm`, `obsidian-nord`</sub>_
 -->
 ![Last updated: 2024-10-05](<https://img.shields.io/date/1742985000?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
 ![Supported Quartz version v4.5.0](<https://img.shields.io/badge/v4.5.0-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
-
+<!--
+Add goals:
+ - Support all Obsidian themes in Quartz
+ - Ease of use (auto-update, low maintenance)
+ - Match styling as closely as possible (within reason)
+-->
 ## Installation
 
 ### GitHub Actions (Recommended)
