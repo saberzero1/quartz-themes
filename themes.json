@@ -9,336 +9,1991 @@
     "unsupported": "unsupported"
   },
   "themes": {
-    "80s-neon": { "compatibility": "full", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "abate": { "compatibility": "partial", "modes": ["light"], "extras": ["hide-toggle"] },
-    "abecedarium": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "absolutegruv": { "compatibility": "partial", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "abyssal": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "adrenaline": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "adwaita": { "compatibility": "full", "modes": ["dark", "light"], "extras": [] },
-    "agate": { "compatibility": "full", "modes": ["light"], "extras": ["hide-toggle"] },
-    "aged-whisky": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "al-dente": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "allium": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "amoled-serenity": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "anuppuccin": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "apatheia": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "apex": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "arcane": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "atom": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "atomus": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "aura-dark": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "aura": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "aurora-twilight": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "aurora": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "autotape": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ayu-light-mirage": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ayu-mirage": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "base2tone": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "behave-dark": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "big-bold": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "black": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "blackbird": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "blossom": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "blue-topaz": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "bolt": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "border": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "borealis": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "bossidian": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "brainhack": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "brutalism": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "buena-vista": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "carbon": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "cardstock": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "catppuccin": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "celestial-night": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "charcoal": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "chiaroscuroflow": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "chime": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "christmas": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "cobalt-peacock": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "colored-candy": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "comfort-color-dark": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "comfort-dark": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "comfort-smooth": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "comfort": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "composer": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "consolas": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "covert": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "creature": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "creme-brulee": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "cupertino": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "cyber-glow": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "cybertron-shifted": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "cybertron": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dark-castle": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dark-clarity": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dark-graphite-pie": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dark-graphite": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dark-moss": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "darkember": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "darkyan": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dawn": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dayspring": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "deeper-work": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "default": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dekurai": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "discordian": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-for-obsidian": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-gemini": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-lyt": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-official": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-plus": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dracula-slim": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "dune": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dunite": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "dynamic-color": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ebullientworks": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "eldritch": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "elegance": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "emerald-echo": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "encore": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ethereon": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "evangelion": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "everblush": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "everforest-enchanted": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "everforest": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "evergreen-shadow": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "evilred": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "faded": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "fancy-a-story": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "fastppuccin": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "feather": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "firefly": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "flexcyon": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "flexoki-warm": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "flexoki": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "focus": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "frost": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "fusion": { "compatibility": "checking", "modes": ["light", "light"], "extras": [] },
-    "garden-gnome-adwaita-gtk": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "gdct-dark": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "gdct": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "github-theme": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "githubdhc": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "gitsidian": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "glass-robo": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "golden-topaz": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "green-nightmare": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "gummy-revived": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "hackthebox": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "halcyon": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "heboric": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "hipstersmoothie": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "hulk": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "ia-writer": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ib-writer": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "iceberg": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "improved-potato": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ink": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "ion": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "its-theme": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "jotter": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "kakano": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "kanagawa-paper": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "kanagawa": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "kiwi-mono": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "kurokula": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "lagom": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "latex": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "lavender-mist": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "lemons-theme": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "lesswrong": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "light-bright": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "listive": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "lorens": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "lumines": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "lyt-mode": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "mado-11": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "mado-miniflow": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "magicuser": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "mammoth": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "maple": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "material-3": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["material"] },
-    "material-flat": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["material"] },
-    "material-gruvbox": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["material"] },
-    "material-ocean": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle", "material"] },
-    "micro-mike": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "midnight-fjord": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "midnight": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "minimal-dark-coder": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle", "minimal"] },
-    "minimal-dracula": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["minimal"] },
-    "minimal-edge": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["minimal"] },
-    "minimal-red": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle", "minimal"] },
-    "minimal-resources": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle", "minimal"] },
-    "minimal": { "compatibility": "checking", "modes": ["dark", "light"], "extras": ["minimal"] },
-    "mint-breeze": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "mistymauve": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "mono-black-monochrome-charcoal": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "monochroyou": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "monokai": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "moonlight": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "mulled-wine": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "muted-blue": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "nebula": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "neo": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "neon-synthwave": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "neovim": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "neuborder": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "neutral-academia": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "nier": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "nightfox": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "nightingale": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "nobb": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "nordic": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "northern-sky": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "notation-2": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "notation": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "notswift": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "novadust": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "obsidian-boom": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "obsidian-gruvbox": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "obsidian-nord": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "obsidian_ia": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "obsidian_vibrant": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "obsidianite": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "obsidianotion": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "obuntu": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "oistnb": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "old-world": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "oldsidian-purple": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "oledblack": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "oliviers-theme": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "onenice": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ono-sendai": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "orange": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "oreo": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "origami": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "origin": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "overcast": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "pale": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "panic-mode": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "penumbra": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "perso": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "phoenix": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "pine-forest-berry": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "pink-topaz": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "pisum": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "playground": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "pln": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "poimandres": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "polka": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "primary": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "prime": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "prism": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "proper-dark": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "protocolblue": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "prussian-blue": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "pure": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "purple-aurora": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "purple-owl": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "pxld": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "qlean": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "red-graphite": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "red-shadow": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "refined-default": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "reshi": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "retro-windows": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "retronotes": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "reverie": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "rezin": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "rift": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "rmaki": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "rose-pine-moon": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "rose-pine-2": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "rose-pine": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "rose-red": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "royal-velvet": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sad-machine-druid": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sakurajima": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "salem": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sanctum-reborn": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sanctum": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sandover": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sandstorm": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sanguine": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "sea-glass": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "seamless-view": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "sei": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "serenity": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "serif": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "serika": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "shade-sanctuary": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "shadeflow": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "shiba-inu": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "shimmering-focus": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "simple-color": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "simple": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "simplicity": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "simply-colorful": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sodalite": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "solarized": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "solitude": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "soloing": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "soothe": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "space": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "sparkling-day": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "sparkling-night": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sparkling-wisdom": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "spectrum-blue": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "spectrum": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "spring": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sqdthone": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "strict": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "subtlegold": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "suddha": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "sunbather": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "synthwave-84": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "synthwave": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "terminal": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "theme-that-shall-not-be-named": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "things-3": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "things": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "tiniri": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "tokyo-night-storm": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "tokyo-night": { "compatibility": "partial", "modes": ["dark", "light"], "extras": [] },
-    "tomorrow-night-bright": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "tomorrow": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "toms-theme": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "trace-labs": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "transient": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "transparent": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "typewriter": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "typomagical": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "typora-vue": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ukiyo": { "compatibility": "removed", "modes": ["dark", "light"], "extras": [] },
-    "ultra-lobster": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "underwater": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "ursa": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "vanilla-amoled-color": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "vanilla-amoled": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "vanilla-palettes": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "vauxhall": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "velvet-moon": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "venom": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "vercel-geist": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "vicious": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "violet-evening": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "virgo": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "vortex": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "w95": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "wasp": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "wikipedia": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "wilcoxone": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "willemstad": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "winter-spices": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "wiselight": { "compatibility": "checking", "modes": ["light"], "extras": ["hide-toggle"] },
-    "wombat": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] },
-    "wy-console": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "wyrd": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "yue": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "zario": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "zen": { "compatibility": "checking", "modes": ["dark", "light"], "extras": [] },
-    "zenburn": { "compatibility": "checking", "modes": ["dark"], "extras": ["hide-toggle"] }
+    "80s-neon": {
+      "compatibility": "full",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "abate": {
+      "compatibility": "partial",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "abecedarium": {
+      "compatibility": "full",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "absolutegruv": {
+      "compatibility": "partial",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "abyssal": {
+      "compatibility": "full",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "adrenaline": {
+      "compatibility": "full",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "adwaita": {
+      "compatibility": "full",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "agate": {
+      "compatibility": "full",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": ["noto-serif"]
+    },
+    "aged-whisky": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "al-dente": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "allium": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "amoled-serenity": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "anuppuccin": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "apatheia": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "apex": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "arcane": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "atom": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "atomus": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "aura-dark": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "aura": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "aurora-twilight": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "aurora": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "autotape": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ayu-light-mirage": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ayu-mirage": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "base2tone": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "behave-dark": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "big-bold": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["noto-serif", "source-code-pro"]
+    },
+    "black": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "blackbird": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "blossom": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "blue-topaz": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "bolt": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "border": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "borealis": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono", "source-code-pro"]
+    },
+    "bossidian": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "brainhack": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "brutalism": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "buena-vista": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "carbon": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "cardstock": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "catppuccin": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "celestial-night": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "charcoal": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "chiaroscuroflow": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "chime": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["noto-serif"]
+    },
+    "christmas": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "cobalt-peacock": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "colored-candy": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "comfort-color-dark": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "comfort-dark": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "comfort-smooth": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "comfort": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "composer": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "consolas": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "covert": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "creature": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "creme-brulee": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "cupertino": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "cyber-glow": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "cybertron-shifted": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "cybertron": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "dark-castle": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dark-clarity": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "dark-graphite-pie": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "dark-graphite": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dark-moss": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "darkember": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "darkyan": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dawn": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "dayspring": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "deeper-work": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["jetbrains-mono"]
+    },
+    "default": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "dekurai": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "discordian": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "dracula-for-obsidian": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dracula-gemini": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dracula-lyt": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dracula-official": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dracula-plus": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dracula-slim": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "dune": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "dunite": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "dynamic-color": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ebullientworks": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "eldritch": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "elegance": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "emerald-echo": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "encore": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ethereon": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "evangelion": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "everblush": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "everforest-enchanted": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "everforest": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "evergreen-shadow": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["noto-serif"]
+    },
+    "evilred": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "faded": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "fancy-a-story": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["noto-serif"]
+    },
+    "fastppuccin": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "feather": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "firefly": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "flexcyon": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "flexoki-warm": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "flexoki": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "focus": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["jetbrains-mono", "source-code-pro"]
+    },
+    "frost": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "fusion": {
+      "compatibility": "checking",
+      "modes": ["light", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "garden-gnome-adwaita-gtk": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "gdct-dark": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "gdct": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "github-theme": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "githubdhc": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "gitsidian": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "glass-robo": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono"]
+    },
+    "golden-topaz": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "green-nightmare": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "gummy-revived": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "hackthebox": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "halcyon": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "heboric": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "hipstersmoothie": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "hulk": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "ia-writer": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ib-writer": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "iceberg": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "improved-potato": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ink": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "ion": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "its-theme": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "jotter": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "kakano": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "kanagawa-paper": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "kanagawa": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "kiwi-mono": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "kurokula": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "lagom": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "latex": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "lavender-mist": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": ["noto-serif"]
+    },
+    "lemons-theme": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "lesswrong": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "light-bright": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "listive": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "lorens": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "lumines": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "lyt-mode": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "mado-11": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "mado-miniflow": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "magicuser": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "mammoth": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "maple": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "material-3": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["material"],
+      "fonts": []
+    },
+    "material-flat": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["material"],
+      "fonts": []
+    },
+    "material-gruvbox": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["material"],
+      "fonts": []
+    },
+    "material-ocean": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle", "material"],
+      "fonts": []
+    },
+    "micro-mike": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "midnight-fjord": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "midnight": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "minimal-dark-coder": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle", "minimal"],
+      "fonts": []
+    },
+    "minimal-dracula": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["minimal"],
+      "fonts": []
+    },
+    "minimal-edge": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["minimal"],
+      "fonts": []
+    },
+    "minimal-red": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle", "minimal"],
+      "fonts": []
+    },
+    "minimal-resources": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle", "minimal"],
+      "fonts": []
+    },
+    "minimal": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": ["minimal"],
+      "fonts": []
+    },
+    "mint-breeze": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": ["noto-serif"]
+    },
+    "mistymauve": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "mono-black-monochrome-charcoal": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "monochroyou": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "monokai": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "moonlight": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "mulled-wine": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "muted-blue": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "nebula": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "neo": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "neon-synthwave": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "neovim": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "neuborder": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "neutral-academia": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "nier": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "nightfox": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "nightingale": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "nobb": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "nordic": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "northern-sky": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "notation-2": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "notation": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "notswift": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "novadust": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "obsidian-boom": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "obsidian-gruvbox": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "obsidian-nord": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "obsidian_ia": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "obsidian_vibrant": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "obsidianite": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "obsidianotion": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "obuntu": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "oistnb": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "old-world": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "oldsidian-purple": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "oledblack": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "oliviers-theme": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "onenice": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ono-sendai": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "orange": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "oreo": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "origami": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "origin": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "overcast": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "pale": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "panic-mode": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "penumbra": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "perso": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "phoenix": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "pine-forest-berry": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "pink-topaz": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "pisum": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "playground": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "pln": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "poimandres": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "polka": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "primary": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "prime": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "prism": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono"]
+    },
+    "proper-dark": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "protocolblue": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "prussian-blue": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "pure": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "purple-aurora": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "purple-owl": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "pxld": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "qlean": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "red-graphite": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "red-shadow": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "refined-default": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "reshi": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono", "noto-serif"]
+    },
+    "retro-windows": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "retronotes": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "reverie": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "rezin": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "rift": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "rmaki": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "rose-pine-moon": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "rose-pine-2": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "rose-pine": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "rose-red": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "royal-velvet": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sad-machine-druid": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "sakurajima": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "salem": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sanctum-reborn": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sanctum": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sandover": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sandstorm": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "sanguine": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "sea-glass": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "seamless-view": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "sei": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "serenity": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "serif": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "serika": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "shade-sanctuary": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono", "source-code-pro"]
+    },
+    "shadeflow": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "shiba-inu": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "shimmering-focus": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "simple-color": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "simple": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "simplicity": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "simply-colorful": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sodalite": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "solarized": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "solitude": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "soloing": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "soothe": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "space": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "sparkling-day": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "sparkling-night": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sparkling-wisdom": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "spectrum-blue": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["jetbrains-mono"]
+    },
+    "spectrum": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "spring": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "sqdthone": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "strict": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "subtlegold": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter", "source-code-pro"]
+    },
+    "suddha": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "sunbather": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "synthwave-84": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "synthwave": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "terminal": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "theme-that-shall-not-be-named": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "things-3": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "things": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "tiniri": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "tokyo-night-storm": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "tokyo-night": {
+      "compatibility": "partial",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "tomorrow-night-bright": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "tomorrow": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "toms-theme": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "trace-labs": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "transient": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "transparent": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "typewriter": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["jetbrains-mono"]
+    },
+    "typomagical": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "typora-vue": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ukiyo": {
+      "compatibility": "removed",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ultra-lobster": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "underwater": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "ursa": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "vanilla-amoled-color": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "vanilla-amoled": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "vanilla-palettes": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "vauxhall": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "velvet-moon": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "venom": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "vercel-geist": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "vicious": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "violet-evening": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "virgo": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "vortex": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "w95": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "wasp": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["source-code-pro"]
+    },
+    "wikipedia": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "wilcoxone": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "willemstad": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": ["inter"]
+    },
+    "winter-spices": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "wiselight": {
+      "compatibility": "checking",
+      "modes": ["light"],
+      "extras": ["hide-toggle"],
+      "fonts": ["source-code-pro"]
+    },
+    "wombat": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "wy-console": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "wyrd": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "yue": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "zario": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "zen": {
+      "compatibility": "checking",
+      "modes": ["dark", "light"],
+      "extras": [],
+      "fonts": []
+    },
+    "zenburn": {
+      "compatibility": "checking",
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
+      "fonts": ["inter", "source-code-pro"]
+    }
   }
 }
