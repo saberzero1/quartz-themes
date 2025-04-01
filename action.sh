@@ -119,7 +119,7 @@ rm -rf ${THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/extras
+mkdir -p ${THEME_DIR}/extras/fonts
 
 echo "Fetching theme files..."
 
