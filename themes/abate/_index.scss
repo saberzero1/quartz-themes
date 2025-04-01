@@ -936,39 +936,39 @@ body {
         }
         & > .search-layout {
           border: var(--modal-border-color, var(--background-modifier-border));
-        }
-        & > .highlight {
-          background: color-mix(
-            in srgb,
-            var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
-            rgba(255, 255, 255, 0)
-          );
-        }
-        & > .preview-container {
-          color: var(--text-normal);
-        }
-        & > .results-container {
-          & .result-card {
-            &:hover,
-            &:focus,
-            &.focus {
-              background: var(
-                --background-modifier-form-field,
-                var(
-                  --search-result-background,
-                  var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
-                )
-              );
-            }
-            & > ul > li > p {
-              background-color: var(
-                --text-highlight-bg,
-                var(--highlight-fallback, var(--highlight))
-              );
-              color: var(--text-normal);
+          & > .highlight {
+            background: color-mix(
+              in srgb,
+              var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
+              rgba(255, 255, 255, 0)
+            );
+          }
+          & > .preview-container {
+            color: var(--text-normal);
+          }
+          & > .results-container {
+            & .result-card {
+              &:hover,
+              &:focus,
+              &.focus {
+                background: var(
+                  --background-modifier-form-field,
+                  var(
+                    --search-result-background,
+                    var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
+                  )
+                );
+              }
+              & > ul > li > p {
+                background-color: var(
+                  --text-highlight-bg,
+                  var(--highlight-fallback, var(--highlight))
+                );
+                color: var(--text-normal);
 
-              &.match-tag {
-                color: var(--tag-color);
+                &.match-tag {
+                  color: var(--tag-color);
+                }
               }
             }
           }
