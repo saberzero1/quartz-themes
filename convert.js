@@ -697,4 +697,6 @@ const compatibilityTable =
 
 // Write result to README.md
 replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable)
+// Clean up comments
+replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, "")
 console.log("Finished updating compatibility table")
