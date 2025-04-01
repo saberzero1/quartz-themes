@@ -85,7 +85,7 @@ echo -e "Theme ${BLUE}$*${NC} parsed to $(echo_info ${THEME})"
 
 echo "Validating theme..."
 
-GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/search-component"
+GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master"
 GITHUB_OUTPUT_DIR="themes"
 GITHUB_EXTRAS_DIR="extras/themes"
 GITHUB_THEME_DIR="$THEME"
