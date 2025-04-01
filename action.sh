@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Only print echos
+set +x
+
 # To fetch and use this script in a GitHub action:
 #
 # curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME_NAME>
@@ -15,16 +18,40 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
+try_curl() {
+  local URL="$1"
+  local OUTPUT_FILE="$2"
+  
+  # curl -I -w "%{http_code}" -s "$URL" -o "$OUTPUT_FILE" > /dev/null
+  curl -s -S -o "$OUTPUT_FILE" "$URL"
+  local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
+
+  # curl on non-existent files return "404: Not found" from GitHub.
+  local content="$(sed -n '1{/^404/p};q' $OUTPUT_FILE)"
+  if [ ! -z "$content" ]; then
+    rm -f "$OUTPUT_FILE"
+    return 1  # Failure: HTTP error
+  else 
+    if [ "$http_code" = "200" ]; then
+      return 0
+    # else
+      # rm -f "$OUTPUT_FILE"
+      # return 1  # Failure: HTTP error
+    fi
+  fi
+}
+
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
 
-if test -f ${QUARTZ_STYLES_DIR}/custom.scss; then
+if [ -f "./$QUARTZ_STYLES_DIR/custom.scss" ]; then
   echo_ok "Quartz root succesfully detected..."
-  THEME_DIR="${QUARTZ_STYLES_DIR}/${THEME_DIR}"
+  THEME_DIR="./$QUARTZ_STYLES_DIR/$THEME_DIR"
 else
   echo_warn "Quartz root not detected, checking if we are in the styles directory..."
-  if test -f custom.scss; then
+  if [ -f "./custom.scss" ]; then
     echo_ok "Styles directory detected..."
+    THEME_DIR="./$THEME_DIR"
   else
     echo_err "Cannot detect Quartz repository. Are you in the correct working directory?" 1>&2
     exit 1
@@ -39,7 +66,7 @@ echo "Parsing input theme..."
 result=""
 
 for param in "$@"; do
-  if [ -n "$result" ]; then
+  if [[ -n "$result" ]]; then
     result="$result-"
   fi
 
@@ -58,16 +85,19 @@ echo -e "Theme ${BLUE}$*${NC} parsed to $(echo_info ${THEME})"
 
 echo "Validating theme..."
 
-GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master/__CONVERTER/"
-GITHUB_OUTPUT_DIR="__OUTPUT/"
-GITHUB_OVERRIDE_DIR="__OVERRIDES/"
-GITHUB_THEME_DIR="${THEME}/"
-CSS_INDEX_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_index.scss"
-CSS_FONT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_fonts.scss"
-CSS_DARK_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_dark.scss"
-CSS_LIGHT_URL="${GITHUB_URL_BASE}${GITHUB_OUTPUT_DIR}${GITHUB_THEME_DIR}_light.scss"
-CSS_OVERRIDE_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}_index.scss"
-README_URL="${GITHUB_URL_BASE}${GITHUB_OVERRIDE_DIR}${GITHUB_THEME_DIR}README.md"
+GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master"
+GITHUB_OUTPUT_DIR="themes"
+GITHUB_EXTRAS_DIR="extras/themes"
+GITHUB_THEME_DIR="$THEME"
+THEME_ROOT="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}"
+THEME_EXTRAS_ROOT="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}/${GITHUB_THEME_DIR}"
+EXTRAS_ROOT="${GITHUB_URL_BASE}/extras"
+CSS_INDEX_URL="${THEME_ROOT}/_index.scss"
+CSS_FONT_URL="${THEME_ROOT}/_fonts.scss"
+CSS_DARK_URL="${THEME_ROOT}/_dark.scss"
+CSS_LIGHT_URL="${THEME_ROOT}/_light.scss"
+CSS_EXTRAS_INDEX_URL="${THEME_EXTRAS_ROOT}/_index.scss"
+README_URL="${THEME_ROOT}/README.md"
 
 PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
 
@@ -89,71 +119,94 @@ rm -rf ${THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/overrides
+mkdir -p ${THEME_DIR}/extras
 
 echo "Fetching theme files..."
 
-curl -s -S -o ${THEME_DIR}/_index.scss "${CSS_INDEX_URL}"
+try_curl "${CSS_INDEX_URL}" "${THEME_DIR}/_index.scss"
 curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
-curl -s -S -o ${THEME_DIR}/_dark.scss "${CSS_DARK_URL}"
-curl -s -S -o ${THEME_DIR}/_light.scss "${CSS_LIGHT_URL}"
-curl -s -S -o ${THEME_DIR}/overrides/_index.scss "${CSS_OVERRIDE_URL}"
+try_curl "${CSS_DARK_URL}" "${THEME_DIR}/_dark.scss"
+try_curl "${CSS_LIGHT_URL}" "${THEME_DIR}/_light.scss"
+try_curl "${CSS_EXTRAS_INDEX_URL}" "${THEME_DIR}/extras/_index.scss"
+
+echo "Fetching extras..."
+
+try_curl "${EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
+try_curl "${EXTRAS_ROOT}/material.scss" "${THEME_DIR}/extras/material.scss"
+try_curl "${EXTRAS_ROOT}/minimal.scss" "${THEME_DIR}/extras/minimal.scss"
 
 echo "Fetching README file..."
 
-curl -s -S -o ${THEME_DIR}/README.md "${README_URL}"
+try_curl "${README_URL}" "${THEME_DIR}/README.md"
 
 echo "Checking theme files..."
 
-if test -f ${THEME_DIR}/_index.scss; then
+if ls "$THEME_DIR/_index.scss" >/dev/null 2>&1; then
   echo_ok "_index.scss exists"
 else
   echo_err "_index.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/_fonts.scss; then
+if ls "$THEME_DIR/_fonts.scss" >/dev/null 2>&1; then
   echo_ok "_fonts.scss exists"
 else
   echo_err "_fonts.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/_dark.scss; then
+if ls "$THEME_DIR/_dark.scss" >/dev/null 2>&1; then
   echo_ok "_dark.scss exists"
 else
-  echo_err "_dark.scss missing" 1>&2
-  exit 1
+  echo_warn "_dark.scss missing (expected with light-only themes)"
 fi
 
-if test -f ${THEME_DIR}/_light.scss; then
+if ls "$THEME_DIR/_light.scss" >/dev/null 2>&1; then
   echo_ok "_light.scss exists"
 else
-  echo_err "_light.scss missing" 1>&2
-  exit 1
+  echo_warn "_light.scss missing (expected with dark-only themes)"
 fi
 
-if test -f ${THEME_DIR}/overrides/_index.scss; then
-  echo_ok "overrides/_index.scss exists"
+if ls "$THEME_DIR/extras/_index.scss" >/dev/null 2>&1; then
+  echo_ok "extras/_index.scss exists"
 else
-  echo_err "overrides/_index.scss missing" 1>&2
+  echo_err "extras/_index.scss missing" 1>&2
   exit 1
 fi
 
-if test -f ${THEME_DIR}/README.md; then
+if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
+  echo_ok "extras/hide-toggle.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/material.scss" >/dev/null 2>&1; then
+  echo_ok "extras/material.scss exists"
+fi
+
+if ls "$THEME_DIR/extras/minimal.scss" >/dev/null 2>&1; then
+  echo_ok "extras/minimal.scss exists"
+fi
+
+if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
   echo_ok "README file exists"
 else
   echo_warn "README file missing"
 fi
 
+echo "Applying patches..."
+
+if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$THEME_DIR/_index.scss"; then
+  echo_warn "Single mode theme detected, applying patch..."
+  sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
+fi
+
 echo "Verifying setup..."
 
-if grep -q '^@use "./themes";' ${THEME_DIR}/../custom.scss; then
+if grep -q '^@use "./themes";' "$THEME_DIR/../custom.scss"; then
   # Import already present in custom.scss
   echo_warn "Theme import line already present in custom.scss. Skipping..."
 else
   # Add `@use "./themes";` import to custom.scss
-  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' ${THEME_DIR}/../custom.scss
+  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "$THEME_DIR/../custom.scss"
   echo_info "Added import line to custom.scss..."
 fi
 

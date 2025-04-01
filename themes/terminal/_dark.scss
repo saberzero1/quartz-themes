@@ -1,0 +1,37 @@
+:root:root {
+  --background-primary: var(--the-background-color);
+  --background-primary-alt: var(--the-background-color);
+  --background-secondary: var(--the-background-color);
+  --background-secondary-alt: var(--the-background-color);
+  --background-modifier-border: var(--the-color);
+  --background-modifier-form-field: rgba(0, 0, 0, 0);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0);
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--the-color);
+  --text-accent-hover: var(--the-color);
+  --text-normal: var(--the-color);
+  --text-muted: var(--the-color);
+  --text-muted-rgb: var(--the-color-rgb);
+  --text-faint: var(--the-color);
+  --text-on-accent: var(--the-color);
+  --interactive-normal: var(--the-background-color);
+  --interactive-hover: var(--the-background-color);
+  --interactive-accent: var(--the-background-color);
+  --interactive-accent-rgb: var(--the-color-rgb);
+  --interactive-accent-hover: var(--the-background-color);
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --scrollbar-active-thumb-bg: rgb(255, 255, 255);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --interactive-success: #197300;
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --highlight-mix-blend-mode: lighten;
+}

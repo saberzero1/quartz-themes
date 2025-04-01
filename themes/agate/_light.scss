@@ -1,0 +1,15 @@
+:root:root {
+  --color-base-00: #f7f7f730;
+  --color-base-05: #d5d0d034;
+  --color-base-10: #f7f7f7c1;
+  --color-base-20: #d5d0d034;
+  --color-base-25: #d5d0d034;
+  --color-base-30: rgba(20, 19, 19, 0.172);
+  --color-base-35: #d5d0d034;
+  --color-base-40: #d5d0d034;
+  --color-base-50: rgb(20, 20, 20);
+  --color-base-60: #d5d0d034;
+  --color-base-100: rgb(20, 20, 20);
+  --background-primary: linear-gradient(to left, #ffffff00 93%, var(--line-color));
+  --background-secondary: linear-gradient(to left, var(--bg-color) 100%, var(--line-color));
+}

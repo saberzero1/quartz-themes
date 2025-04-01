@@ -1,0 +1,36 @@
+:root:root {
+  --accent-1: #ff00ff;
+  --accent-2: #00ffff;
+  --accent-3: #00ff00;
+  --accent-4: #ffff00;
+  --accent-5: #ff0000;
+  --accent-6: #0000ff;
+  --accent-1-muted: #ff79c6;
+  --accent-2-muted: #8be9fd;
+  --accent-3-muted: #50fa7b;
+  --accent-4-muted: #ffb86c;
+  --accent-5-muted: #ff5555;
+  --accent-6-muted: #bd93f9;
+  --background-primary: #2b213a;
+  --background-primary-alt: #171520;
+  --background-secondary: #1a1836;
+  --background-secondary-alt: #242043;
+  --text-accent: #ff1690;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: var(--accent-1);
+  --text-muted: var(--accent-1-muted);
+  --text-faint: var(--accent-6-muted);
+  --interactive-normal: var(--accent-2);
+  --interactive-hover: var(--accent-2-muted);
+  --interactive-accent: var(--accent-2);
+  --interactive-accent-hover: var(--accent-2-muted);
+  --background-accent: #000;
+  --background-modifier-border: var(--accent-2);
+  --text-highlight-bg: #ffd319;
+  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --interactive-accent-rgb: 72, 54, 153;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,38 @@
+:root:root {
+  --background-primary: var(--sumiInk1);
+  --background-primary-alt: var(--sumiInk1);
+  --background-secondary: var(--sumiInk1b);
+  --background-secondary-alt: var(--sumiInk2);
+  --text-normal: var(--fujiWhite);
+  --text-faint: var(--fujiGray);
+  --text-title-h1: var(--neutral-red);
+  --text-title-h2: var(--neutral-orange);
+  --text-title-h3: var(--neutral-yellow);
+  --text-title-h4: var(--neutral-green);
+  --text-title-h5: var(--neutral-aqua);
+  --text-title-h6: var(--neutral-blue);
+  --text-link: var(--springBlue);
+  --text-a: var(--dragonBlue);
+  --text-a-hover: var(--peachRed);
+  --text-a-url: var(--dragonBlue);
+  --text-mark: rgba(34, 50, 73, 0.4);
+  --pre-code: var(--sumiInk0);
+  --text-highlight-bg: var(--waveBlue1);
+  --interactive-accent: var(--dragonBlue);
+  --interactive-before: var(--sumiInk4);
+  --background-modifier-border: var(--dragonBlue);
+  --text-accent: var(--autumnGreen);
+  --interactive-accent-rgb: var(--springGreen);
+  --inline-code: var(--springGreen);
+  --code-block: var(--fujiGray);
+  --vim-cursor-backgroung: var(--fujiWhite);
+  --vim-cursor-color: var(--sumiInk1);
+  --text-selection: rgba(34, 50, 73, 0.5);
+  --text-tag: var(--springViolet1);
+  --task-checkbox: var(--sumiInk4);
+  --table-header: hsl(0, 0%, 14%);
+  --table-row-even: hsl(0, 0%, 17%);
+  --table-row-odd: hsl(0, 0%, 20%);
+  --table-hover: var(--sumiInk2);
+  --bold-color: var(--light1);
+}

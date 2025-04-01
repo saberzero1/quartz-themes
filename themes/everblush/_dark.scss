@@ -1,0 +1,33 @@
+:root:root {
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark2);
+  --background-secondary: var(--darker);
+  --background-secondary-alt: var(--dark1);
+  --text-normal: var(--light2);
+  --text-faint: var(--light0);
+  --text-muted: var(--light1);
+  --text-title-h1: var(--red);
+  --text-title-h2: var(--blue);
+  --text-title-h3: var(--yellow);
+  --text-title-h4: var(--green);
+  --text-title-h5: var(--lavender);
+  --text-title-h6: var(--teal);
+  --text-link: var(--blue);
+  --text-a: var(--blue);
+  --text-a-hover: var(--dark3);
+  --text-mark: var(--lavender);
+  --pre-code: var(--dark3);
+  --text-highlight-bg: var(--lavender);
+  --text-highlight-bg-active: var(--green);
+  --interactive-accent: var(--lavender);
+  --interactive-before: var(--dark2);
+  --background-modifier-border: var(--dark0);
+  --text-accent: var(--teal);
+  --interactive-accent-rgb: var(--teal);
+  --inline-code: var(--yellow);
+  --code-block: var(--lavender);
+  --vim-cursor: var(--orange);
+  --text-selection: var(--dark3);
+  --text-tag: var(--teal);
+  --task-checkbox: var(--teal);
+}

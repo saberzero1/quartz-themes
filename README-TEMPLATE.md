@@ -1,0 +1,215 @@
+# Quartz Themes
+
+A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
+
+<p align="center" width="100%">
+  <img src="media/quartz-themes-400.png" alt="Quartz Themes logo"/>
+</p>
+
+![Last updated: 2024-10-05](<https://img.shields.io/date/1742985000?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Supported Quartz version v4.5.0](<https://img.shields.io/badge/v4.5.0-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
+
+## Installation
+
+### GitHub Actions (Recommended)
+
+Add the following lines to your `deploy.yml` before the build step:
+
+```yaml
+- name: Fetch Quartz Theme
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+```
+
+> [!IMPORTANT]
+> Replace `<THEME-NAME>` with your desired theme name. See [Compatibility List](#supported-themes)
+
+> [!TIP]
+> Example for Tokyo Night:
+>
+> ```yaml
+> - name: Fetch Quartz Theme
+>   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
+> ```
+
+The full script would look like this:
+
+```yaml
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - v4
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Dependencies
+        run: npm ci
+      - name: Fetch Quartz Theme
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+      - name: Build Quartz
+        run: npx quartz build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+### Local install
+
+> [!TIP]
+> This installation method is recommended for users who want to install themes into their Quartz repository directly. This method is also recommended for user who cannot fetch dependencies during compilation.
+
+Download the latest version of the [action.sh](https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh) script or run the following to download it:
+
+```bash
+curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+```
+
+> [!NOTE]
+> Windows users should use `action.bat` instead, unless they also access to the bash shell (git-bash, etc.) or WSL.
+>
+> ```bash
+> curl -s -S -o action.bat https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.bat
+>
+> action.bat tokyo-night
+> ```
+
+Then run the `action.sh` script with the desired theme to install it into your Quartz repository:
+
+```bash
+# Example: installing Tokyo Night...
+./action.sh tokyo-night
+
+# ...should output:
+# Quartz root succesfully detected...
+# Input theme: tokyo-night
+# Parsing input theme...
+# Theme tokyo-night parsed to tokyo-night
+# Validating theme...
+# Theme 'tokyo-night' found. Preparing to fetch files...
+# Cleaning theme directory...
+# Creating theme directory...
+# Fetching theme files...
+# Checking theme files...
+# _index.scss exists
+# _fonts.scss exists
+# _dark.scss exists
+# _light.scss exists
+# overrides/_index.scss exists
+# Verifying setup...
+# Added import line to custom.scss...
+# Finished fetching and applying theme 'tokyo-night'.
+```
+
+### Install script (Deprecated)
+
+> [!CAUTION]
+> This setup method is the previous installation method and is not recommended for new users.
+
+<details>
+<summary>Install script</summary>
+
+Clone the project next to your Quartz repository.
+
+```bash
+git clone https://github.com/saberzero1/quartz-themes.git
+cd quartz-themes
+npm ci
+```
+
+#### Configure Quartz
+
+Add the following line to your `custom.scss` file:
+
+```scss
+@use "./themes";
+```
+
+Your `custom.scss` should look something like this:
+
+```scss
+@use "./base.scss";
+@use "./themes";
+
+// put your custom CSS here!
+```
+
+#### Setting themes and layout
+
+Run the following from the Quartz Themes project root:
+
+```bash
+npm run theme <THEME-NAME>
+```
+
+#### Updating
+
+Run the following from the Quartz Themes project root to check for updates:
+
+```bash
+npm run check
+```
+
+Run the following from the Quartz Themes project root to update the themes:
+
+```bash
+npm run update
+```
+
+</details>
+
+## Supported Themes
+
+<details>
+  <summary>
+    Glossary
+  </summary>
+
+| Status                                               | Description                                      |
+| ---------------------------------------------------- | ------------------------------------------------ |
+| <img src="media/full.svg" alt="FULL"/>               | Fully supported                                  |
+| <img src="media/partial.svg" alt="PARTIAL"/>         | Partially supported (see theme page for details) |
+| <img src="media/checking.svg" alt="CHECKING"/>       | Testing compatibility                            |
+| <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                       |
+| <img src="media/todo.svg" alt="TODO"/>               | Not started                                      |
+| <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                    |
+| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                  |
+
+| Theme Modes                              | Description               |
+| ---------------------------------------- | ------------------------- |
+| <img src="media/both.svg" alt="BOTH"/>   | Both dark and light theme |
+| <img src="media/light.svg" alt="LIGHT"/> | Light theme only          |
+| <img src="media/dark.svg" alt="DARK"/>   | Dark theme only           |
+
+</details>
+
+//COMPATIBILITY_TABLE
