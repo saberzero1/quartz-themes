@@ -219,7 +219,7 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `80s-neon`                       | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/80s-neon/)                       |
 | <img src="media/light.svg" alt="LIGHT"/> | `abate`                          | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/abate/)                          |
 | <img src="media/both.svg" alt="BOTH"/>   | `abecedarium`                    | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/abecedarium/)                    |
-| <img src="media/dark.svg" alt="DARK"/>   | `absolutegruv`                   | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/absolutegruv/)                   |
+| <img src="media/both.svg" alt="BOTH"/>   | `absolutegruv`                   | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/absolutegruv/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `abyssal`                        | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/abyssal/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `adrenaline`                     | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/adrenaline/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `adwaita`                        | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/adwaita/)                        |
