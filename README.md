@@ -3,7 +3,7 @@
 A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](https://github.com/jackyzha0/quartz).
 
 <p align="center" width="100%">
-  <img src="media/quartz-themes-400.png" alt="Quartz Themes logo"/>
+  <img src="media/quartz-themes-800-wide-rounded-text.png" alt="Quartz Themes logo"/>
 </p>
 
 ![Last updated: 2024-10-05](<https://img.shields.io/date/1742985000?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
@@ -217,7 +217,7 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `80s-neon`                       | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/80s-neon/)                       |
 | <img src="media/light.svg" alt="LIGHT"/> | `abate`                          | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/abate/)                          |
 | <img src="media/both.svg" alt="BOTH"/>   | `abecedarium`                    | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/abecedarium/)                    |
-| <img src="media/dark.svg" alt="DARK"/>   | `absolutegruv`                   | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/absolutegruv/)                   |
+| <img src="media/both.svg" alt="BOTH"/>   | `absolutegruv`                   | <img src="media/partial.svg" alt="PARTIAL"/>   | [live preview](https://quartz-themes.github.io/absolutegruv/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `abyssal`                        | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/abyssal/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `adrenaline`                     | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/adrenaline/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `adwaita`                        | <img src="media/full.svg" alt="FULL"/>         | [live preview](https://quartz-themes.github.io/adwaita/)                        |
