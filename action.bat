@@ -40,7 +40,7 @@ set "input_theme=%*"
 REM Replace spaces with hyphens - Note: This is simpler than the bash loop
 set "THEME=%input_theme: =-%"
 
-if "%THEME%"=="" (
+if "%THEME%"==" =-" (
     echo [WARN] No theme provided, defaulting to tokyo-night...
     set "THEME=tokyo-night"
 )
@@ -57,6 +57,8 @@ set "GITHUB_OUTPUT_DIR=themes/"
 set "GITHUB_OVERRIDE_DIR=extras/themes/"
 set "GITHUB_EXTRAS_DIR=extras/"
 set "GITHUB_THEME_DIR=%THEME%/"
+set "GITHUB_EXTRAS_FONT_DIR=fonts/"
+
 set "CSS_INDEX_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_index.scss"
 set "CSS_FONT_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_fonts.scss"
 set "CSS_DARK_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%_dark.scss"
@@ -66,6 +68,12 @@ set "CSS_EXTRAS_INDEX_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%_index.scss"
 set "CSS_EXTRAS_HIDE_TOGGLE_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%hide-toggle.scss"
 set "CSS_EXTRAS_MATERIAL_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%material.scss"
 set "CSS_EXTRAS_MINIMAL_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%minimal.scss"
+
+set "CSS_EXTRAS_FONT_INTER_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%%GITHUB_EXTRAS_FONT_DIR%inter.scss"
+set "CSS_EXTRAS_FONT_MONO_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%%GITHUB_EXTRAS_FONT_DIR%jetbrains-mono.scss"
+set "CSS_EXTRAS_FONT_NOTO_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%%GITHUB_EXTRAS_FONT_DIR%noto-serif.scss"
+set "CSS_EXTRAS_FONT_SOURCE_CODE_URL=%GITHUB_URL_BASE%%GITHUB_EXTRAS_DIR%%GITHUB_EXTRAS_FONT_DIR%source-code-pro.scss"
+
 set "README_URL=%GITHUB_URL_BASE%%GITHUB_OUTPUT_DIR%%GITHUB_THEME_DIR%README.md"
 
 REM Check if theme exists using curl to get HTTP status code
@@ -112,6 +120,14 @@ if errorlevel 1 (
 )
 echo.
 
+echo Creating theme directory structure...
+mkdir "%TARGET_THEME_DIR%\extras\fonts" > nul
+if errorlevel 1 (
+    >&2 echo "[ERROR] Failed to create directory '%TARGET_THEME_DIR%\extras\fonts'. Check permissions."
+    exit /b 1
+)
+echo.
+
 REM --- Fetch Theme Files ---
 echo Fetching theme files...
 curl -s -S -o "%TARGET_THEME_DIR%\_index.scss" "%CSS_INDEX_URL%" || ( >&2 echo "[ERROR] Failed to download _index.scss" & exit /b 1 )
@@ -126,6 +142,11 @@ curl -s -S -o "%TARGET_THEME_DIR%\extras\_index.scss" "%CSS_EXTRAS_INDEX_URL%" |
 curl -s -S -o "%TARGET_THEME_DIR%\extras\hide-toggle.scss" "%CSS_EXTRAS_HIDE_TOGGLE_URL%" || ( >&2 echo "[ERROR] Failed to download extras/hide-toggle.scss" & exit /b 1 )
 curl -s -S -o "%TARGET_THEME_DIR%\extras\material.scss" "%CSS_EXTRAS_MATERIAL_URL%" || ( >&2 echo "[ERROR] Failed to download extras/material.scss" & exit /b 1 )
 curl -s -S -o "%TARGET_THEME_DIR%\extras\minimal.scss" "%CSS_EXTRAS_MINIMAL_URL%" || ( >&2 echo "[ERROR] Failed to download extras/minimal.scss" & exit /b 1 )
+
+curl -s -S -o "%TARGET_THEME_DIR%\extras\fonts\inter.scss" "%CSS_EXTRAS_FONT_INTER_URL%" || ( >&2 echo "[ERROR] Failed to download extras/fonts/inter.scss" & exit /b 1 )
+curl -s -S -o "%TARGET_THEME_DIR%\extras\fonts\jetbrains-mono.scss" "%CSS_EXTRAS_FONT_MONO_URL%" || ( >&2 echo "[ERROR] Failed to download extras/fonts/jetbrains-mono.scss" & exit /b 1 )
+curl -s -S -o "%TARGET_THEME_DIR%\extras\fonts\noto-serif.scss" "%CSS_EXTRAS_FONT_NOTO_URL%" || ( >&2 echo "[ERROR] Failed to download extras/fonts/noto-serif.scss" & exit /b 1 )
+curl -s -S -o "%TARGET_THEME_DIR%\extras\fonts\source-code-pro.scss" "%CSS_EXTRAS_FONT_SOURCE_CODE_URL%" || ( >&2 echo "[ERROR] Failed to download extras/fonts/source-code-pro.scss" & exit /b 1 )
 echo.
 
 echo Fetching README file...
@@ -141,6 +162,53 @@ if not exist "%TARGET_THEME_DIR%\_light.scss" ( >&2 echo "[ERROR] _light.scss mi
 if not exist "%TARGET_THEME_DIR%\overrides\_index.scss" ( >&2 echo "[ERROR] overrides/_index.scss missing" & exit /b 1 ) else ( echo "[OK] overrides/_index.scss exists" )
 if not exist "%TARGET_THEME_DIR%\README.md" ( echo "[WARN] README.md missing" ) else ( echo "[OK] README file exists" )
 echo.
+
+REM --- Apply Patches
+set "QUARTZ_LAYOUT_FILE=quartz.layout.ts"
+set "DARK_ONLY_LINE=quartz themes dark-only"
+set "LIGHT_ONLY_LINE=quartz themes light-only"
+set "TEMP_QUARTZ_LAYOUT_FILE=%QUARTZ_LAYOUT_FILE%.tmp"
+set "TARGET_SUB_STRING=//"
+
+if exist "%TEMP_QUARTZ_LAYOUT_FILE%" del "%TEMP_QUARTZ_LAYOUT_FILE%"
+findstr /C:"%DARK_ONLY_LINE%" /C:"%LIGHT_ONLY_LINE%" "%TARGET_THEME_DIR%\_index.scss" > nul
+if errorlevel 1 (
+    setlocal disabledelayedexpansion
+    (for /f "usebackq delims=" %%A in ("%QUARTZ_LAYOUT_FILE%") do (
+                echo %%A | findstr /R /C:"^//.*Component.Darkmode()" > nul && (
+                    setlocal enabledelayedexpansion
+                    set "line=%%A"
+                    echo !line:~2!
+                    setlocal disabledelayedexpansion
+                ) || echo %%A
+            )) > "%TEMP_QUARTZ_LAYOUT_FILE%"
+    setlocal enabledelayedexpansion
+) else (
+    echo "[WARN] Single mode theme detected, applying patch..."
+
+    setlocal disabledelayedexpansion
+    (for /f "usebackq delims=" %%A in ("%QUARTZ_LAYOUT_FILE%") do (
+        echo %%A | findstr /C:"Component.Darkmode()" > nul && echo //%%A || echo %%A
+    )) > "%TEMP_QUARTZ_LAYOUT_FILE%"
+    setlocal enabledelayedexpansion
+)
+REM Check if temp file was created successfully
+if not exist "%TEMP_QUARTZ_LAYOUT_FILE%" (
+    >&2 echo "[ERROR] Failed to create temporary file for updating %QUARTZ_LAYOUT_FILE%."
+    exit /b 1
+)
+
+del "%QUARTZ_LAYOUT_FILE%"
+ren "%TEMP_QUARTZ_LAYOUT_FILE%" "%QUARTZ_LAYOUT_FILE%"
+if errorlevel 1 (
+         >&2 echo "[ERROR] Failed to replace %QUARTZ_LAYOUT_FILE% with updated version. Check permissions."
+         REM Attempt to restore from temp if rename failed but temp exists
+         if exist "%%TEMP_QUARTZ_LAYOUT_FILE%%" echo "Original file deleted, updated content is in %TEMP_QUARTZ_LAYOUT_FILE%"
+         exit /b 1
+)
+del "page.fileData.slug"
+echo.
+
 
 REM --- Verify Setup (Add import to custom.scss if missing) ---
 echo Verifying setup in %CUSTOM_SCSS_PATH%...
