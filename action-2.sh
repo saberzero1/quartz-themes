@@ -92,12 +92,14 @@ fi
 
 echo "Verifying setup..."
 
-if grep -q '^@use "./themes";' "$FINAL_THEME_DIR/../custom.scss"; then
+cd ${FINAL_THEME_DIR}
+
+if grep -q '^@use "./themes";' "../custom.scss"; then
   # Import already present in custom.scss
   echo_warn "Theme import line already present in custom.scss. Skipping..."
 else
   # Add `@use "./themes";` import to custom.scss
-  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "$FINAL_THEME_DIR/../custom.scss"
+  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "../custom.scss"
   echo_info "Added import line to custom.scss..."
 fi
 
