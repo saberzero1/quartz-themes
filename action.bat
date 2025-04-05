@@ -170,7 +170,7 @@ if not errorlevel 1 (
 ) else (
   REM Add `@use "./themes";` import to custom.scss using PowerShell
   echo [INFO] Adding import line to %CUSTOM_SCSS_PATH%...
-  powershell -Command "(Get-Content '%CUSTOM_SCSS_PATH%' -Raw) -replace '@use \""./base.scss\"";', '@use \""./base.scss\"";`r`n@use \""./themes\"";' | Set-Content '%CUSTOM_SCSS_PATH%'"
+  powershell -Command "$content = Get-Content '%CUSTOM_SCSS_PATH%'; $newContent = @($content[0]) + '@use \"./themes\";' + ($content | Select-Object -Skip 1); $newContent | Set-Content '%CUSTOM_SCSS_PATH%'"
    if errorlevel 1 (
       echo [ERR] Failed to add import line to %CUSTOM_SCSS_PATH% using PowerShell. >&2
       exit /b 1
