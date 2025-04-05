@@ -85,19 +85,19 @@ rm -rf quartz-themes
 
 echo "Applying patches..."
 
-if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$THEME_DIR/_index.scss"; then
+if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$FINAL_THEME_DIR/_index.scss"; then
   echo_warn "Single mode theme detected, applying patch..."
   sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
 fi
 
 echo "Verifying setup..."
 
-if grep -q '^@use "./themes";' "$THEME_DIR/../custom.scss"; then
+if grep -q '^@use "./themes";' "$FINAL_THEME_DIR/../custom.scss"; then
   # Import already present in custom.scss
   echo_warn "Theme import line already present in custom.scss. Skipping..."
 else
   # Add `@use "./themes";` import to custom.scss
-  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "$THEME_DIR/../custom.scss"
+  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "$FINAL_THEME_DIR/../custom.scss"
   echo_info "Added import line to custom.scss..."
 fi
 
