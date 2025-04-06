@@ -803,8 +803,8 @@
     },
     "kanagawa": {
       "compatibility": "checking",
-      "modes": ["dark"],
-      "extras": ["hide-toggle"],
+      "modes": ["dark", "light"],
+      "extras": [],
       "fonts": ["source-code-pro"]
     },
     "kiwi-mono": {
@@ -1463,8 +1463,8 @@
     },
     "rose-pine": {
       "compatibility": "checking",
-      "modes": ["dark"],
-      "extras": ["hide-toggle"],
+      "modes": ["dark", "light"],
+      "extras": [],
       "fonts": []
     },
     "rose-red": {

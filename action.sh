@@ -18,40 +18,18 @@ echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
 
-try_curl() {
-  local URL="$1"
-  local OUTPUT_FILE="$2"
-  
-  # curl -I -w "%{http_code}" -s "$URL" -o "$OUTPUT_FILE" > /dev/null
-  curl -s -S -o "$OUTPUT_FILE" "$URL"
-  local http_code=$(curl -o /dev/null --silent -lw '%{http_code}' "$URL")
-
-  # curl on non-existent files return "404: Not found" from GitHub.
-  local content="$(sed -n '1{/^404/p};q' $OUTPUT_FILE)"
-  if [ ! -z "$content" ]; then
-    rm -f "$OUTPUT_FILE"
-    return 1  # Failure: HTTP error
-  else 
-    if [ "$http_code" = "200" ]; then
-      return 0
-    # else
-      # rm -f "$OUTPUT_FILE"
-      # return 1  # Failure: HTTP error
-    fi
-  fi
-}
-
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
+FINAL_THEME_DIR="./$QUARTZ_STYLES_DIR/$THEME_DIR"
 
 if [ -f "./$QUARTZ_STYLES_DIR/custom.scss" ]; then
   echo_ok "Quartz root succesfully detected..."
-  THEME_DIR="./$QUARTZ_STYLES_DIR/$THEME_DIR"
+  FINAL_THEME_DIR="./$QUARTZ_STYLES_DIR/$THEME_DIR"
 else
   echo_warn "Quartz root not detected, checking if we are in the styles directory..."
   if [ -f "./custom.scss" ]; then
     echo_ok "Styles directory detected..."
-    THEME_DIR="./$THEME_DIR"
+    FINAL_THEME_DIR="./$THEME_DIR"
   else
     echo_err "Cannot detect Quartz repository. Are you in the correct working directory?" 1>&2
     exit 1
@@ -85,149 +63,43 @@ echo -e "Theme ${BLUE}$*${NC} parsed to $(echo_info ${THEME})"
 
 echo "Validating theme..."
 
-GITHUB_URL_BASE="https://raw.githubusercontent.com/saberzero1/quartz-themes/master"
-GITHUB_OUTPUT_DIR="themes"
-GITHUB_EXTRAS_DIR="extras/themes"
-GITHUB_THEME_DIR="$THEME"
-THEME_ROOT="${GITHUB_URL_BASE}/${GITHUB_OUTPUT_DIR}/${GITHUB_THEME_DIR}"
-THEME_EXTRAS_ROOT="${GITHUB_URL_BASE}/${GITHUB_EXTRAS_DIR}/${GITHUB_THEME_DIR}"
-EXTRAS_ROOT="${GITHUB_URL_BASE}/extras"
-CSS_INDEX_URL="${THEME_ROOT}/_index.scss"
-CSS_FONT_URL="${THEME_ROOT}/_fonts.scss"
-CSS_DARK_URL="${THEME_ROOT}/_dark.scss"
-CSS_LIGHT_URL="${THEME_ROOT}/_light.scss"
-CSS_EXTRAS_INDEX_URL="${THEME_EXTRAS_ROOT}/_index.scss"
-README_URL="${THEME_ROOT}/README.md"
-
-PULSE=$(curl -o /dev/null --silent -lw '%{http_code}' "${CSS_INDEX_URL}")
-
-if [ "${PULSE}" = "200" ]; then
-  echo_ok "Theme '${THEME}' found. Preparing to fetch files..."
-else
-  if [ "${PULSE}" = "404" ]; then
-    echo_err "Theme '${THEME}' not found. Please check the compatibility list." 1>&2
-    exit 1
-  else
-    echo_err "Something weird happened. If this issue persists, please open an Issue on GitHub." !>&2
-    exit 1
-  fi
-fi
-
 echo "Cleaning theme directory..."
 
-rm -rf ${THEME_DIR}
+rm -rf ${FINAL_THEME_DIR}
 
 echo "Creating theme directory..."
 
-mkdir -p ${THEME_DIR}/extras/fonts
+mkdir -p ${FINAL_THEME_DIR}
 
 echo "Fetching theme files..."
 
-try_curl "${CSS_INDEX_URL}" "${THEME_DIR}/_index.scss"
-curl -s -S -o ${THEME_DIR}/_fonts.scss "${CSS_FONT_URL}"
-try_curl "${CSS_DARK_URL}" "${THEME_DIR}/_dark.scss"
-try_curl "${CSS_LIGHT_URL}" "${THEME_DIR}/_light.scss"
-try_curl "${CSS_EXTRAS_INDEX_URL}" "${THEME_DIR}/extras/_index.scss"
+# clone only the specified theme using sparse checkout to save bandwidth and time
+git clone -n --depth=1 --filter=tree:0 https://github.com/saberzero1/quartz-themes.git &> /dev/null
+git -C quartz-themes sparse-checkout set --no-cone /themes/${THEME} &> /dev/null
+git -C quartz-themes checkout &> /dev/null
 
-echo "Fetching extras..."
+echo "Installing theme files..."
 
-try_curl "${EXTRAS_ROOT}/hide-toggle.scss" "${THEME_DIR}/extras/hide-toggle.scss"
-try_curl "${EXTRAS_ROOT}/material.scss" "${THEME_DIR}/extras/material.scss"
-try_curl "${EXTRAS_ROOT}/minimal.scss" "${THEME_DIR}/extras/minimal.scss"
-
-try_curl "${EXTRAS_ROOT}/fonts/inter.scss" "${THEME_DIR}/extras/fonts/inter.scss"
-try_curl "${EXTRAS_ROOT}/fonts/jetbrains-mono.scss" "${THEME_DIR}/extras/fonts/jetbrains-mono.scss"
-try_curl "${EXTRAS_ROOT}/fonts/noto-serif.scss" "${THEME_DIR}/extras/fonts/noto-serif.scss"
-try_curl "${EXTRAS_ROOT}/fonts/source-code-pro.scss" "${THEME_DIR}/extras/fonts/source-code-pro.scss"
-
-echo "Fetching README file..."
-
-try_curl "${README_URL}" "${THEME_DIR}/README.md"
-
-echo "Checking theme files..."
-
-if ls "$THEME_DIR/_index.scss" >/dev/null 2>&1; then
-  echo_ok "_index.scss exists"
-else
-  echo_err "_index.scss missing" 1>&2
-  exit 1
-fi
-
-if ls "$THEME_DIR/_fonts.scss" >/dev/null 2>&1; then
-  echo_ok "_fonts.scss exists"
-else
-  echo_err "_fonts.scss missing" 1>&2
-  exit 1
-fi
-
-if ls "$THEME_DIR/_dark.scss" >/dev/null 2>&1; then
-  echo_ok "_dark.scss exists"
-else
-  echo_warn "_dark.scss missing (expected with light-only themes)"
-fi
-
-if ls "$THEME_DIR/_light.scss" >/dev/null 2>&1; then
-  echo_ok "_light.scss exists"
-else
-  echo_warn "_light.scss missing (expected with dark-only themes)"
-fi
-
-if ls "$THEME_DIR/extras/_index.scss" >/dev/null 2>&1; then
-  echo_ok "extras/_index.scss exists"
-else
-  echo_err "extras/_index.scss missing" 1>&2
-  exit 1
-fi
-
-if ls "$THEME_DIR/extras/hide-toggle.scss" >/dev/null 2>&1; then
-  echo_ok "extras/hide-toggle.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/material.scss" >/dev/null 2>&1; then
-  echo_ok "extras/material.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/minimal.scss" >/dev/null 2>&1; then
-  echo_ok "extras/minimal.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/fonts/inter.scss" >/dev/null 2>&1; then
-  echo_ok "extras/fonts/inter.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/fonts/jetbrains-mono.scss" >/dev/null 2>&1; then
-  echo_ok "extras/fonts/jetbrains-mono.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/fonts/noto-serif.scss" >/dev/null 2>&1; then
-  echo_ok "extras/fonts/noto-serif.scss exists"
-fi
-
-if ls "$THEME_DIR/extras/fonts/source-code-pro.scss" >/dev/null 2>&1; then
-  echo_ok "extras/fonts/source-code-pro.scss exists"
-fi
-
-if ls "$THEME_DIR/README.md" >/dev/null 2>&1; then
-  echo_ok "README file exists"
-else
-  echo_warn "README file missing"
-fi
+mv quartz-themes/themes/${THEME}/* ${FINAL_THEME_DIR}
+rm -rf quartz-themes
 
 echo "Applying patches..."
 
-if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$THEME_DIR/_index.scss"; then
+if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$FINAL_THEME_DIR/_index.scss"; then
   echo_warn "Single mode theme detected, applying patch..."
   sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
 fi
 
 echo "Verifying setup..."
 
-if grep -q '^@use "./themes";' "$THEME_DIR/../custom.scss"; then
+cd ${FINAL_THEME_DIR}
+
+if grep -q '^@use "./themes";' "../custom.scss"; then
   # Import already present in custom.scss
   echo_warn "Theme import line already present in custom.scss. Skipping..."
 else
   # Add `@use "./themes";` import to custom.scss
-  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "$THEME_DIR/../custom.scss"
+  sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "../custom.scss"
   echo_info "Added import line to custom.scss..."
 fi
 

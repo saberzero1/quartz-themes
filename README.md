@@ -115,16 +115,11 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 # Parsing input theme...
 # Theme tokyo-night parsed to tokyo-night
 # Validating theme...
-# Theme 'tokyo-night' found. Preparing to fetch files...
 # Cleaning theme directory...
 # Creating theme directory...
 # Fetching theme files...
-# Checking theme files...
-# _index.scss exists
-# _fonts.scss exists
-# _dark.scss exists
-# _light.scss exists
-# overrides/_index.scss exists
+# Installing theme files...
+# Applying patches...
 # Verifying setup...
 # Added import line to custom.scss...
 # Finished fetching and applying theme 'tokyo-night'.
@@ -345,7 +340,7 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `its-theme`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/its-theme/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `jotter`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/jotter/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `kakano`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kakano/)                         |
-| <img src="media/dark.svg" alt="DARK"/>   | `kanagawa`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa/)                       |
+| <img src="media/both.svg" alt="BOTH"/>   | `kanagawa`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `kanagawa-paper`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa-paper/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `kiwi-mono`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kiwi-mono/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `kurokula`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kurokula/)                       |
@@ -454,7 +449,7 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `rezin`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rezin/)                          |
 | <img src="media/dark.svg" alt="DARK"/>   | `rift`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rift/)                           |
 | <img src="media/dark.svg" alt="DARK"/>   | `rmaki`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rmaki/)                          |
-| <img src="media/dark.svg" alt="DARK"/>   | `rose-pine`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine/)                      |
+| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-2`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-2/)                    |
 | <img src="media/dark.svg" alt="DARK"/>   | `rose-pine-moon`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-moon/)                 |
 | <img src="media/dark.svg" alt="DARK"/>   | `rose-red`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-red/)                       |
