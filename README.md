@@ -340,7 +340,7 @@ npm run update
 | <img src="media/both.svg" alt="BOTH"/>   | `its-theme`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/its-theme/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `jotter`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/jotter/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `kakano`                         | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kakano/)                         |
-| <img src="media/dark.svg" alt="DARK"/>   | `kanagawa`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa/)                       |
+| <img src="media/both.svg" alt="BOTH"/>   | `kanagawa`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa/)                       |
 | <img src="media/both.svg" alt="BOTH"/>   | `kanagawa-paper`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kanagawa-paper/)                 |
 | <img src="media/both.svg" alt="BOTH"/>   | `kiwi-mono`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kiwi-mono/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `kurokula`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/kurokula/)                       |
@@ -449,7 +449,7 @@ npm run update
 | <img src="media/dark.svg" alt="DARK"/>   | `rezin`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rezin/)                          |
 | <img src="media/dark.svg" alt="DARK"/>   | `rift`                           | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rift/)                           |
 | <img src="media/dark.svg" alt="DARK"/>   | `rmaki`                          | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rmaki/)                          |
-| <img src="media/dark.svg" alt="DARK"/>   | `rose-pine`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine/)                      |
+| <img src="media/both.svg" alt="BOTH"/>   | `rose-pine`                      | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `rose-pine-2`                    | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-2/)                    |
 | <img src="media/dark.svg" alt="DARK"/>   | `rose-pine-moon`                 | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-pine-moon/)                 |
 | <img src="media/dark.svg" alt="DARK"/>   | `rose-red`                       | <img src="media/checking.svg" alt="CHECKING"/> | [live preview](https://quartz-themes.github.io/rose-red/)                       |
