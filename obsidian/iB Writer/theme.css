@@ -270,7 +270,7 @@ table th:nth-of-type(5) {
 }
 
 .markdown-preview-sizer {
-  font-family: "iA Writer Quattro V", sans-serif;
+  font-family: "iA Writer Quattro", "iA Writer Quattro V", sans-serif;
 }
 
 .modal-title {

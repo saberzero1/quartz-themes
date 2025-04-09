@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/manrope.scss";
+@use "extras/fonts/nunito-sans.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -329,8 +331,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --heading-font: "Nunito Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
+  --heading-font: "Nunito Sans", "Nunito Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
   --heading-color-light: #0c0909;
   --heading-color-dark: #dddddd;
 

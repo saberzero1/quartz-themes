@@ -59,7 +59,7 @@
 /***** *****/
 /** 1. Font */
 body {
-  --font-monospace: "Courier New", monospace;
+  --font-monospace: "Source Code Pro", "Courier New", monospace;
   --font-text: "Inter", sans-serif;
   -webkit-font-smoothing: auto;
 }
