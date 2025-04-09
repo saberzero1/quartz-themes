@@ -82,7 +82,7 @@ You can customized the theme using the variables below
     'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
 
   /** Font specially for codes **/
-  --code-mono-font: 'OperatorMonoSSmLig-Book';
+  --code-mono-font: "Source Code Pro", 'OperatorMonoSSmLig-Book';
 }
 
 /**-------------------**

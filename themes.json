@@ -127,7 +127,12 @@
       "compatibility": "checking",
       "modes": ["dark", "light"],
       "extras": [],
-      "fonts": ["source-code-pro", "ia-writer-mono", "ia-writer-duo", "ai-writer-quattro"]
+      "fonts": [
+        "source-code-pro",
+        "ia-writer-mono",
+        "ia-writer-duo",
+        "ia-writer-quattro-s"
+      ]
     },
     "aurora-twilight": {
       "compatibility": "checking",
@@ -157,7 +162,7 @@
       "compatibility": "checking",
       "modes": ["dark"],
       "extras": ["hide-toggle"],
-      "fonts": ["ai-writer-quattro-s", "source-sans-pro"]
+      "fonts": ["ia-writer-quattro-s", "source-sans-pro"]
     },
     "base2tone": {
       "compatibility": "checking",
@@ -175,7 +180,16 @@
       "compatibility": "checking",
       "modes": ["dark", "light"],
       "extras": [],
-      "fonts": ["eb-garamond", "fira-code", "merriweather-sans", "noto-serif", "noto-color-emoji", "noto-emoji", "nunito-sans", "source-code-pro"]
+      "fonts": [
+        "eb-garamond",
+        "fira-code",
+        "merriweather-sans",
+        "noto-serif",
+        "noto-color-emoji",
+        "noto-emoji",
+        "nunito-sans",
+        "source-code-pro"
+      ]
     },
     "black": {
       "compatibility": "checking",
@@ -199,7 +213,12 @@
       "compatibility": "checking",
       "modes": ["dark", "light"],
       "extras": [],
-      "fonts": ["inter", "lucida-handwriting", "source-code-pro", "icons/boxicons"]
+      "fonts": [
+        "inter",
+        "lucida-handwriting",
+        "source-code-pro",
+        "icons/boxicons"
+      ]
     },
     "bolt": {
       "compatibility": "checking",
