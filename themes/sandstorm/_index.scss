@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/avenir.scss";
+@use "extras/fonts/flow-circular.scss";
 @use "extras/fonts/inter.scss";
 @use "extras/fonts/source-code-pro.scss";
 
@@ -1481,7 +1483,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-default: ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+  --font-monospace-default: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";

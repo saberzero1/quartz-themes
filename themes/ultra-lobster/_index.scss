@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/nightingale.scss";
+@use "extras/fonts/monaspace-neon.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -793,12 +795,12 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --o-border: 1px solid var(--background-modifier-border);
   --font-interface-theme: "Satoshi", sans-serif;
   --font-text-theme: "Satoshi", sans-serif;
-  --ulu-font-title: "Monaspace";
+  --ulu-font-title: "Monaspace Neon", "Monaspace";
   --ulu-font-general: "Satoshi", sans-serif;
   --font-title: var(--ulu-font-title);
   --font-interface-theme: "Satoshi", sans-serif;
   --font-text-theme: var(--ulu-font-general);
-  --font-mono: "Monaspace", monospace;
+  --font-mono: "Monaspace Neon", "Monaspace", monospace;
   --link-color: var(--text-muted);
   --link-color-hover: var(--text-normal);
   --link-decoration: underline;

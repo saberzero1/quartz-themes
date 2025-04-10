@@ -196,15 +196,16 @@ npm run update
     Glossary
   </summary>
 
-| Status                                               | Description                                      |
-| ---------------------------------------------------- | ------------------------------------------------ |
-| <img src="media/full.svg" alt="FULL"/>               | Fully supported                                  |
-| <img src="media/partial.svg" alt="PARTIAL"/>         | Partially supported (see theme page for details) |
-| <img src="media/checking.svg" alt="CHECKING"/>       | Testing compatibility                            |
-| <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                       |
-| <img src="media/todo.svg" alt="TODO"/>               | Not started                                      |
-| <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                    |
-| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                  |
+| Status                                               | Description                                                                                                                                                        |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="media/full.svg" alt="FULL"/>               | Fully supported                                                                                                                                                    |
+| <img src="media/partial.svg" alt="PARTIAL"/>         | Partially supported (see theme page for details)                                                                                                                   |
+| <img src="media/collection.svg" alt="COLLECTION"/>   | This theme contains information for the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings). See the table for the configured sub-themes. |
+| <img src="media/checking.svg" alt="CHECKING"/>       | Testing compatibility                                                                                                                                              |
+| <img src="media/blocked.svg" alt="BLOCKED"/>         | Waiting for upstream fixes                                                                                                                                         |
+| <img src="media/todo.svg" alt="TODO"/>               | Not started                                                                                                                                                        |
+| <img src="media/unsupported.svg" alt="UNSUPPORTED"/> | Won't support                                                                                                                                                      |
+| <img src="media/removed.svg" alt="BROKEN"/>          | Broken or removed from Obsidian                                                                                                                                    |
 
 | Theme Modes                              | Description               |
 | ---------------------------------------- | ------------------------- |

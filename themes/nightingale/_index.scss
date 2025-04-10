@@ -9,6 +9,9 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/avenir.scss";
+@use "extras/fonts/inconsolata.scss";
+@use "extras/fonts/noto-sans.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -329,13 +332,13 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --default-font: "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik", Roboto, sans-serif,
-    sans-serif;
+  --default-font: "Avenir", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik", Roboto,
+    sans-serif, sans-serif;
   --default-font-size: 18px;
   --body-font-weight: 450;
   --tag-font-family: "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;
   --code-mono-font: "Incosolata", "Consolas";
-  --title-font: "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
+  --title-font: "Noto Sans", "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
   --h1-size: 44px;
   --h2-size: 36px;
   --h3-size: 30px;

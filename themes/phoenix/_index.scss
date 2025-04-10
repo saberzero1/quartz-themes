@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/jetbrains-mono.scss";
+@use "extras/fonts/sf-pro-display.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -390,9 +392,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --r-bg-highlight: color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
   --r-bg-selection: color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
   --r-pdf-highlight: var(--r-bright-orange);
-  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --font-monospace: JetBrains Mono, Liberation Mono, Monospace, Courier New;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
 

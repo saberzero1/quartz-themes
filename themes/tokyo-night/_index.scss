@@ -9,6 +9,7 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/jetbrains-mono.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -330,8 +331,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
+  --font-monospace: "JetBrains Mono", "Source Code Pro", monospace;
 
   --table-width: 88cqw;
   --checkbox-marker-color: transparent;

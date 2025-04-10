@@ -10,6 +10,9 @@
 @use "light";
 @use "extras";
 @use "extras/fonts/inter.scss";
+@use "extras/fonts/fira-code.scss";
+@use "extras/fonts/ia-writer-quattro.scss";
+@use "extras/fonts/ibm-plex-sans.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -349,8 +352,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-paragraph: 0.95rem;
   --frontmatter-font-size: 0.65rem;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-ibm: "IBM Plex Sans", "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
   --font-family-sans: var(--font-family-inter);
   --font-default: var(--font-family-sans);
   --table-cell-fontsize: 0.85rem;

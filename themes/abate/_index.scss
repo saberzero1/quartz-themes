@@ -9,6 +9,7 @@
 @use "light";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/noto-sans.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -363,7 +364,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
-  --font-text-theme: Open Sans serif;
+  --font-text-theme: "Noto Sans", Open Sans serif;
   --font-thin: 100;
   --font-extralight: 200;
   --font-light: 300;

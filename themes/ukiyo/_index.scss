@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/cmu-typewriter-text.scss";
+@use "extras/fonts/jetbrains-mono.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -328,6 +330,26 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --hover-faster-animation-duration: 75ms;
+  --hover-animation-duration: 100ms;
+  --default-animation-duration: 150ms;
+  --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
+  --default-border-radius: 4px;
+  --pop-callout-width: 20px;
+
+  --font-default: "CMU Typewriter Text";
+  --font-monospace-default: "JetBrains Mono";
+  --font-ui-smaller: 13px !important;
+  --font-ui-small: 14px !important;
+  --font-ui-medium: 16px !important;
+  --font-ui-large: 20px !important;
+  --header-height: 30px;
+  --file-line-width: 900px;
+  --tag-radius: 4px;
+  --ribbon-width: 40px;
+  --ribbon-padding: 0px;
+  --clickable-icon-radius: 0px;
 }
 
 body {
@@ -438,6 +460,28 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-accent-1: var(--color-accent);
+  --color-base-00: #372d29;
+  --color-base-05: #413632;
+  --color-base-10: #2b2723;
+  --color-base-20: #413632;
+  --color-base-25: #2b2723;
+  --color-base-30: #504431;
+  --color-base-35: #645743;
+  --color-base-40: #504431;
+  --color-base-50: #868074;
+  --color-base-70: #b2a699;
+  --color-base-100: #ccc2b7;
+  --background-modifier-message: #281f1b;
+  --color-accent: #ba945f;
+  --color-accent-2: #e0ba86;
+  --activeline: #51454140;
+  --text-selection: #6154508f;
+  --color-bold: var(--color-accent);
+  --color-italic: #e77a59;
+  --text-highlight-bg: #926b22e6;
+  --heading-formatting-color: #c72626;
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
@@ -499,6 +543,45 @@ html[saved-theme="light"] {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --color-accent-1: var(--color-accent);
+  --color-base-00: #e1c4a6;
+  --color-base-05: #cbaa87;
+  --code-background: var(--color-base-05);
+  --color-base-10: #daba97;
+  --color-base-20: #dabb9a;
+  --color-base-25: #4c4743;
+  --color-base-30: #c6a57f;
+  --color-base-35: #a8865f;
+  --color-base-40: #b4916a;
+  --color-base-50: #7a6d68;
+  --color-base-70: #5b4f4a;
+  --color-base-100: #5f4f49;
+  --background-modifier-message: #d7b38d;
+  --color-accent: #800000;
+  --color-accent-2: #a00000;
+  --activeline: #d4b4946a;
+  --text-selection: #c7a78683;
+  --color-bold: #bd5757;
+  --color-italic: #ae612b;
+  --text-highlight-bg: #eac357;
+  --heading-formatting-color: #d34747;
+  --in-between-background: #d4af88;
+  --color-red-rgb: 207, 30, 51;
+  --color-red: #cf1e33;
+  --color-orange-rgb: 193, 109, 24;
+  --color-orange: #c16d18;
+  --color-yellow-rgb: 151, 116, 0;
+  --color-yellow: #977400;
+  --color-green-rgb: 1, 144, 59;
+  --color-green: #01903b;
+  --color-cyan-rgb: 0, 158, 155;
+  --color-cyan: #009e9b;
+  --color-blue-rgb: 2, 95, 200;
+  --color-blue: #025fc8;
+  --color-purple-rgb: 95, 56, 214;
+  --color-purple: #5f38d6;
+  --color-pink-rgb: 191, 32, 109;
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

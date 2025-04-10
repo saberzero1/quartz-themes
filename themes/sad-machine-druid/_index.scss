@@ -9,6 +9,7 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/hack.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -393,7 +394,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --light-dim-blue: #6cb3c6;
   --light-dim-purple: #e092be;
 
-  --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+  --font-monospace: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
   --h1-color: var(--text-title-h1);
   --h2-color: var(--text-title-h2);
   --h3-color: var(--text-title-h3);

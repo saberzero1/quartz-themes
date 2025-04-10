@@ -9,6 +9,7 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/avenir.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -328,6 +329,42 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: var(--interactive-accent-hover);
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
+
+  --divider-color: var(--color-base-95);
+  --divider-color-hover: var(--interactive-accent);
+  --red-graphite-interface-font: "Avenir";
+  --red-graphite-text-font: "Avenir";
+  --red-graphite-monospace-font: "";
+  --font-interface-override: var(--red-graphite-interface-font);
+  --font-text-override: var(--red-graphite-text-font);
+  --metadata-background: transparent;
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-divider-color: var(--background-modifier-border);
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-color-focus: transparent;
+  --metadata-property-background: transparent;
+  --metadata-property-background-hover: transparent;
+  --metadata-property-background-active: var(--background-modifier-hover);
+  --metadata-label-background-hover: transparent;
+  --metadata-label-background-active: var(--background-modifier-hover);
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-muted);
+  --metadata-input-text-color: var(--text-normal);
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: transparent;
+  --status-bar-background: var(--divider-color);
+  --status-bar-border-color: var(--divider-color);
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-focused: var(--text-faint);
+  --tab-divider-color: var(--color-base-100);
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 15px;
+  --titlebar-background: var(--color-base-95);
+  --titlebar-background-focused: var(--color-base-95);
+  --titlebar-text-color: var(--text-faint);
+  --titlebar-text-color-focused: var(--text-faint);
 }
 
 body {
@@ -438,6 +475,256 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --red-graphite-accent-color-h: 41;
+  --red-graphite-accent-color-s: 88%;
+  --red-graphite-accent-color-l: 71%;
+  --accent-h: var(--red-graphite-accent-color-h);
+  --accent-s: var(--red-graphite-accent-color-s);
+  --accent-l: var(--red-graphite-accent-color-l);
+  --red-graphite-base-color-h: 222;
+  --red-graphite-base-color-s: 22%;
+  --red-graphite-base-color-l: 15%;
+  --theme-base-color-h: var(--red-graphite-base-color-h);
+  --theme-base-color-s: var(--red-graphite-base-color-s);
+  --theme-base-color-l: var(--red-graphite-base-color-l);
+  --color-base-200: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 100%)
+  );
+  --color-base-195: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 95%)
+  );
+  --color-base-190: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 90%)
+  );
+  --color-base-185: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 85%)
+  );
+  --color-base-180: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 80%)
+  );
+  --color-base-175: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 75%)
+  );
+  --color-base-170: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 70%)
+  );
+  --color-base-165: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 65%)
+  );
+  --color-base-160: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 60%)
+  );
+  --color-base-155: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 55%)
+  );
+  --color-base-150: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 50%)
+  );
+  --color-base-145: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 45%)
+  );
+  --color-base-140: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 40%)
+  );
+  --color-base-135: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 35%)
+  );
+  --color-base-130: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 30%)
+  );
+  --color-base-125: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 25%)
+  );
+  --color-base-120: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 20%)
+  );
+  --color-base-115: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 15%)
+  );
+  --color-base-110: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 10%)
+  );
+  --color-base-105: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 5%)
+  );
+  --color-base-100: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    var(--theme-base-color-l)
+  );
+  --color-base-95: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 5%)
+  );
+  --color-base-90: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 10%)
+  );
+  --color-base-85: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 15%)
+  );
+  --color-base-80: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 20%)
+  );
+  --color-base-75: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 25%)
+  );
+  --color-base-70: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 30%)
+  );
+  --color-base-65: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 35%)
+  );
+  --color-base-60: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 40%)
+  );
+  --color-base-55: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 45%)
+  );
+  --color-base-50: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 50%)
+  );
+  --color-base-45: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 55%)
+  );
+  --color-base-40: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 60%)
+  );
+  --color-base-35: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 65%)
+  );
+  --color-base-30: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 70%)
+  );
+  --color-base-25: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 75%)
+  );
+  --color-base-20: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 80%)
+  );
+  --color-base-15: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 85%)
+  );
+  --color-base-10: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 90%)
+  );
+  --color-base-05: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 95%)
+  );
+  --background-primary: var(--color-base-105);
+  --background-primary-alt: var(--color-base-100);
+  --background-secondary: var(--color-base-100);
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-border: var(--color-base-100);
+  --background-modifier-border-hover: var(--color-base-35);
+  --code-block-border-width: 1px;
+  --code-block-border-style: solid;
+  --nav-item-size: var(--font-ui-medium);
+  --nav-item-color: var(--color-base-160);
+  --nav-item-color-hover: var(--color-base-00);
+  --nav-item-color-active: var(--color-base-00);
+  --nav-item-color-selected: var(--color-base-00);
+  --nav-item-background-hover: var(--interactive-accent);
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-indentation-guide-color: var(--color-base-110);
+  --nav-collapse-icon-color: var(--color-accent);
+  --icon-color: var(--color-base-140);
+  --icon-color-hover: var(--color-accent);
+  --icon-color-active: var(--color-accent);
+  --ribbon-background: var(--color-base-95);
+  --table-border-color: var(--color-base-125);
+  --table-header-border-color: var(--color-base-125);
+  --table-header-background: var(--color-base-120);
+  --table-header-background-hover: var(--color-base-120);
+  --text-normal: var(--color-base-180);
+  --text-muted: var(--color-base-170);
+  --text-faint: var(--color-base-160);
+  --text-on-accent: var(--color-base-100);
+  --text-error: var(--color-red);
+  --text-success: var(--color-green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --interactive-normal: var(--color-base-95);
+  --vault-name-font-size: var(--font-ui-medium);
+  --vault-name-font-weight: var(--font-medium);
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
@@ -499,6 +786,260 @@ html[saved-theme="light"] {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --red-graphite-accent-color-h: 2;
+  --red-graphite-accent-color-s: 56%;
+  --red-graphite-accent-color-l: 54%;
+  --accent-h: var(--red-graphite-accent-color-h);
+  --accent-s: var(--red-graphite-accent-color-s);
+  --accent-l: var(--red-graphite-accent-color-l);
+  --red-graphite-base-color-h: 204;
+  --red-graphite-base-color-s: 6%;
+  --red-graphite-base-color-l: 17%;
+  --theme-base-color-h: var(--red-graphite-base-color-h);
+  --theme-base-color-s: var(--red-graphite-base-color-s);
+  --theme-base-color-l: var(--red-graphite-base-color-l);
+  --color-base-200: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 100%)
+  );
+  --color-base-195: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 95%)
+  );
+  --color-base-190: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 90%)
+  );
+  --color-base-185: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 85%)
+  );
+  --color-base-180: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 80%)
+  );
+  --color-base-175: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 75%)
+  );
+  --color-base-170: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 70%)
+  );
+  --color-base-165: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 65%)
+  );
+  --color-base-160: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 60%)
+  );
+  --color-base-155: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 55%)
+  );
+  --color-base-150: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 50%)
+  );
+  --color-base-145: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 45%)
+  );
+  --color-base-140: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 40%)
+  );
+  --color-base-135: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 35%)
+  );
+  --color-base-130: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 30%)
+  );
+  --color-base-125: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 25%)
+  );
+  --color-base-120: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 20%)
+  );
+  --color-base-115: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 15%)
+  );
+  --color-base-110: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 10%)
+  );
+  --color-base-105: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 5%)
+  );
+  --color-base-100: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    var(--theme-base-color-l)
+  );
+  --color-base-95: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 5%)
+  );
+  --color-base-90: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 10%)
+  );
+  --color-base-85: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 15%)
+  );
+  --color-base-80: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 20%)
+  );
+  --color-base-75: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 25%)
+  );
+  --color-base-70: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 30%)
+  );
+  --color-base-65: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 35%)
+  );
+  --color-base-60: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 40%)
+  );
+  --color-base-55: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 45%)
+  );
+  --color-base-50: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 50%)
+  );
+  --color-base-45: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 55%)
+  );
+  --color-base-40: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 60%)
+  );
+  --color-base-35: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 65%)
+  );
+  --color-base-30: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 70%)
+  );
+  --color-base-25: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 75%)
+  );
+  --color-base-20: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 80%)
+  );
+  --color-base-15: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 85%)
+  );
+  --color-base-10: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 90%)
+  );
+  --color-base-05: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 95%)
+  );
+  --background-primary: var(--color-base-20);
+  --background-primary-alt: var(--color-base-00);
+  --background-secondary: var(--color-base-100);
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --code-block-border-width: 1px;
+  --code-block-border-style: solid;
+  --nav-item-size: var(--font-small);
+  --nav-item-color: var(--color-base-40);
+  --nav-item-color-hover: var(--color-base-00);
+  --nav-item-color-active: var(--color-base-00);
+  --nav-item-color-selected: var(--color-base-00);
+  --nav-item-background-hover: var(--interactive-accent);
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-indentation-guide-color: var(--color-base-90);
+  --nav-collapse-icon-color: var(--color-accent);
+  --nav-collapse-icon-color-collapsed: var(--color-accent);
+  --icon-color: var(--color-base-60);
+  --icon-color-hover: var(--color-accent);
+  --icon-color-active: var(--color-accent);
+  --ribbon-background: var(--color-base-95);
+  --table-border-color: var(--color-base-50);
+  --table-header-border-color: var(--color-base-50);
+  --table-header-background: var(--color-base-30);
+  --table-header-background-hover: var(--color-base-30);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-60);
+  --text-on-accent: var(--color-base-00);
+  --text-error: var(--color-red);
+  --text-success: var(--color-green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --interactive-normal: var(--color-base-00);
+  --interactive-hover: var(--color-base-00);
+  --color-text-title: var(--nav-item-color);
+  --vault-name-font-size: var(--font-ui-medium);
+  --vault-name-font-weight: var(--font-medium);
+  --mk-ui-border: var(--color-base-90);
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

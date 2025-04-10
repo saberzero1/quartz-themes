@@ -31,8 +31,8 @@
 }
 
 :root {
-    --quattro-font: 'iA Writer Quattro V', sans-serif;
-    --font-monospace: 'iA Writer Mono V', monospace;
+    --quattro-font: "iA Writer Quattro", 'iA Writer Quattro V', sans-serif;
+    --font-monospace: "iA Writer Mono", 'iA Writer Mono V', monospace;
     --default-font: -apple-system, BlinkMacSystemFont, var(--font-monospace);
 }
 

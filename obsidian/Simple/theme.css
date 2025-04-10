@@ -193,8 +193,8 @@ body {
 
 
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-ibm: "IBM Plex Sans", "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
 
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
   --font-family-sans: var(--font-family-inter);

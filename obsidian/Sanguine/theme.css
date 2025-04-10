@@ -72,8 +72,8 @@ SOFTWARE.
     --oz-fta-file-font-size: 1em;
 	--folders-font-size: 1em;
 	--files-font-size: 1em;
-	--fnt-title: "Slasher Title";
-	--fnt-head-p: "Slasher Regular";
+	--fnt-title: "Slasher Film 3D", "Slasher Title";
+	--fnt-head-p: "Slasher Film", "Slasher Regular";
 }
 
 /* Choose colors for dark theme */
@@ -923,7 +923,8 @@ em {
 
 /* Tables */
 .markdown-preview-view table > * {
-	color: 	border-color: var(--col-pr-txt-table);
+	/* color: 	*/
+	border-color: var(--col-pr-txt-table);
 	font-size: var(--siz-pr-txt-table);
 	background-color: var(--col-pr-bckg-table);
 }

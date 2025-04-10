@@ -9,6 +9,10 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/avenir.scss";
+@use "extras/fonts/bookerly.scss";
+@use "extras/fonts/hatolie.scss";
+@use "extras/fonts/merienda.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -487,7 +491,7 @@ html {
   --text-on-accent: var(--background-primary) !important;
   --font-serif: "Bookerly";
   --font-cursive: "Merienda";
-  --font-sans: "Avenir Next";
+  --font-sans: "Avenir", "Avenir Next";
   --inline-title-font: "Hatolie", var(--font-text);
   --heading-font: var(--font-cursive);
   --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";

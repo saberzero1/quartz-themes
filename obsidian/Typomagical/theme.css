@@ -782,7 +782,7 @@ body.ss-links-spectral {
 }
 
 body.ss-links-sans {
-  --font-links: "Alegreya Sans SC", sans-serif;
+  --font-links: "Alegreya", "Alegreya Sans SC", sans-serif;
 }
 
 .markdown-source-view.mod-cm6 .cm-url {
@@ -1414,7 +1414,7 @@ body.coherence.theme-dark {
 #calendar-container .reset-button {
   color: var(--link-color);
   text-transform: initial;
-  font-family: "Alegreya SC";
+  font-family: "Alegreya", "Alegreya SC";
   font-size: 0.9em;
   font-weight: 500;
 }

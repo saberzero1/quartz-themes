@@ -333,7 +333,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-secondary: #080808;
   --text-normal: #f5f7fa;
   --ribbon-background: var(--background-primary);
-  --font-text: "pixel_squareregular";
+  --font-text: "Pixel Square", "pixel_squareregular";
   --code-background: #111112;
   --code-normal: var(--text-normal);
   --code-comment: #a4b9db;
@@ -354,7 +354,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-primary: #f5f7fa;
   --background-secondary: #f5f7fa;
   --text-normal: #080808;
-  --font-text: "pixel_squareregular";
+  --font-text: "Pixel Square", "pixel_squareregular";
   --code-string: #4682e3;
   --color-accent: var(--interactive-accent);
   --checkbox-color-hover: var(--text-accent-hover);

@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/archivo.scss";
+@use "extras/fonts/linux-libertine.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -329,7 +331,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --font-default: Arial, "Archivo", sans-serif;
+  --font-default: "Archivo", Arial, "Archivo", sans-serif;
   --h1-font: "Linux Libertine", "Georgia", "Times", serif;
   --h1-size: 1.7em;
   --h2-size: 1.25em;

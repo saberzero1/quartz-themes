@@ -4,9 +4,9 @@
 }
 
 body:is(.theme-light, .theme-dark) {
-  --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei",
+  --font-default: "Noto Sans JP", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei",
     "Helvetica", "Arial", sans-serif;
-  --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace-default: "iA Writer Mono", iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace: var(--font-monospace-default);
   --font-text: var(--font-default);
   --font-tag: var(--font-monospace);

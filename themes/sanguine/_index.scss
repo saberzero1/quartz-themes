@@ -9,6 +9,7 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/slasher-film.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -343,8 +344,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --oz-fta-file-font-size: 1em;
   --folders-font-size: 1em;
   --files-font-size: 1em;
-  --fnt-title: "Slasher Title";
-  --fnt-head-p: "Slasher Regular";
+  --fnt-title: "Slasher Film 3D", "Slasher Title";
+  --fnt-head-p: "Slasher Film", "Slasher Regular";
 
   --font-interface: var(--fnt-head-p);
   --col-ed-background: var(--col-base-background);

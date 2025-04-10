@@ -106,12 +106,12 @@
   --body-font-weight: 450;
 
   /** Font family for hash-tags **/
-  --tag-font-family: 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
+  --tag-font-family: "Space Mono", 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
     '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
     'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
 
   /** Font specially for codes **/
-  --code-mono-font: 'OperatorMonoSSmLig-Book';
+  --code-mono-font: "Space Mono", 'OperatorMonoSSmLig-Book';
 }
 
 /**-------------------**

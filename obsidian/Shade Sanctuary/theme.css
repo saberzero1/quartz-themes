@@ -144,10 +144,10 @@ body .markdown-rendered .markdown-preview-section > div:has(+ div > :is(h1, h2, 
 
 body {
   /* ============== Default Font Variables ============== */
-  --font-text: "Computer Modern", "Inter", Sans-Serif ;
+  --font-text: "Computer Modern Bright", "Computer Modern", "Inter", Sans-Serif ;
   --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
   --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
-  --font-callout-theme: "Computer Modern", "Sans-Serif";
+  --font-callout-theme: "Computer Modern Bright", "Computer Modern", "Sans-Serif";
   /* ============== Typography ============== */
   --unified-heading-space: 10px;
   --font-text-size: 10px;

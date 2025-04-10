@@ -9,6 +9,8 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/atkinson-hyperlegible.scss";
+@use "extras/fonts/jetbrains-mono.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -422,9 +424,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --kuro-code-comment: var(--kuro-yellow-light);
   --kuro-code-fg: var(--kuro-white-light);
   --kuro-code-bg: var(--kuro-black-dark);
-  --kuro-monospace-default: "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular,
-    "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-    "Consolas", "Source Code Pro", monospace;
+  --kuro-monospace-default: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace,
+    SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
+    Monaco, "Consolas", "Source Code Pro", monospace;
 
   --radius-s: 4px;
   --radius-m: 8px;

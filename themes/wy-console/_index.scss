@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/audiowide.scss";
+@use "extras/fonts/dotgothic16.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -356,8 +358,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --oz-fta-file-font-size: 1em;
   --folders-font-size: 1em;
   --files-font-size: 1em;
-  --fnt-title: "Scifi Title";
-  --fnt-head-p: "ModeSeven Regular";
+  --fnt-title: "Audiowide", "Scifi Title";
+  --fnt-head-p: "DotGothic16", "ModeSeven Regular";
   --text-selection: var(--col-base);
 
   --font-interface: var(--fnt-head-p);

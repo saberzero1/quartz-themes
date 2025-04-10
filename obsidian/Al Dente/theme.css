@@ -34,8 +34,8 @@
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
-  --font-monospace: "courier prime code" !important;
-  --font-title: "moranga", "matchbook regular", bitter, prompt,
+  --font-monospace: "courier prime", "courier prime code" !important;
+  --font-title: bitter, "moranga", "matchbook regular", prompt,
     var(--font-family-editor);
 }
 

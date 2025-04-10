@@ -53,7 +53,7 @@ body {
 	);*
 	
 	//* Font */
-		--font-text-theme: Open Sans serif;
+		--font-text-theme: "Noto Sans", Open Sans serif;
 
 	--font-thin: 100;
 	--font-extralight: 200;

@@ -115,7 +115,7 @@ settings:
 
 /* CSS Variables */
 :root {
-	--heading-font: 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--heading-font: 'Nunito Sans', 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--heading-color-light: #0c0909;
 	--heading-color-dark: #DDDDDD;
 }

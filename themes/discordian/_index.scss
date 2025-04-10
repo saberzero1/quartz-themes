@@ -9,6 +9,7 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/catamaran.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -331,7 +332,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-stroke: var(--icon-l-stroke-width);
 
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-editor: Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-editor: Catamaran, Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-monospace: Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S,
     Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier,

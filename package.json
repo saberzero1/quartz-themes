@@ -6,6 +6,7 @@
   "scripts": {
     "build": "just build",
     "compile": "just compile",
+    "compile-all": "just compile-all",
     "check": "just check",
     "format": "just format",
     "update": "just update",
