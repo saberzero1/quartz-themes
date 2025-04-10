@@ -929,7 +929,8 @@ em {
 
 /* Tables */
 .markdown-preview-view table {
-	color: 	border-color: var(--col-pr-txt-table);
+	/* color: 	*/
+	border-color: var(--col-pr-txt-table);
 	font-size: var(--siz-pr-txt-table);
 	background-color: var(--col-pr-bckg-table);
 }
