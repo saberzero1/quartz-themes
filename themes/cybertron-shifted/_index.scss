@@ -527,7 +527,7 @@ body {
   .highlight,
   ::selection,
   ::-moz-selection {
-    background: var(--quartz-text-highlight);
+    background: var(--quartz-text-highlight, var(--tertiary));
   }
 
   /* LINKS */
@@ -880,7 +880,14 @@ body {
         & > .search-layout {
           border: var(--modal-border-color, var(--background-modifier-border));
           & .highlight {
-            background: var(--quartz-text-highlight);
+            background: var(
+              --quartz-text-highlight,
+              color-mix(
+                in srgb,
+                var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
+                rgba(255, 255, 255, 0)
+              )
+            );
           }
           & > .preview-container {
             color: var(--text-normal);
