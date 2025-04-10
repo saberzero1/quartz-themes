@@ -827,6 +827,13 @@ body {
           color: var(--nav-item-color, var(--nav-heading-color-collapsed));
         }
       }
+      .folder-outer > ul {
+        border-left: 1px solid var(--nav-item-border-color, var(--background-modifier-border));
+        & > li:has(.active) {
+          border-left: 1px solid
+            var(--nav-item-border-color-active, var(--background-modifier-border-focus));
+        }
+      }
     }
   }
 
