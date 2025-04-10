@@ -402,7 +402,7 @@ folders.forEach((folder) => {
 clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
-  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts`)
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -449,7 +449,7 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,
-      `./themes/${getTheme(manifest)}/extras/fonts`,
+      `./themes/${getTheme(manifest)}/extras/fonts${font.includes("/") ? `/${font.replace(/\/[^/]+$/, "")}` : ""}`,
     )
   })
 })
