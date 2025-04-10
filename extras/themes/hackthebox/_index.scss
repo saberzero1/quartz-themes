@@ -22,9 +22,14 @@
         }
       }
 
-      &.collapsed .explorer-toggle.title-button {
-        .fold {
-          color: var(--collapse-icon-color-collapsed);
+      &.collapsed .explorer-toggle {
+        &.mobile-explorer > svg {
+          stroke: var(--htb-lime, #9fef00);
+        }
+        &.title-button {
+          .fold {
+            color: var(--collapse-icon-color-collapsed);
+          }
         }
       }
       .explorer-toggle {
