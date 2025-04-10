@@ -1,0 +1,12 @@
+:root:root:root {
+  body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    .highlight,
+    ::selection,
+    ::-moz-selection,
+    .search > .search-container > .search-space > .search-layout .highlight {
+      background: var(--quartz-text-highlight, var(--tertiary));
+    }
+  }
+}

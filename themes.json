@@ -746,10 +746,10 @@
       "fonts": ["inter", "peace-sans", "source-code-pro", "space-grotesk"]
     },
     "hackthebox": {
-      "compatibility": ["checking"],
+      "compatibility": ["full"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
-      "fonts": []
+      "fonts": ["open-sans"]
     },
     "halcyon": {
       "compatibility": ["checking"],
