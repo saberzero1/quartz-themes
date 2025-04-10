@@ -14,6 +14,7 @@
       .explorer-content {
         & > ul.explorer-ul {
           padding-left: 5px;
+          width: calc(100% - 5px);
         }
         li:has(> .active) {
           background-color: var(--htb-lime, #9fef00);
