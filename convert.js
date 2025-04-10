@@ -443,7 +443,7 @@ manifestCollection.forEach((manifest) => {
 
 // fonts
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
+  //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
   fontExtras.forEach((font) => {
     copyFileToDirectory(
@@ -547,6 +547,7 @@ manifestCollection.forEach((manifest) => {
 })
 
 // _fonts.scss
+/*
 manifestCollection.forEach((manifest) => {
   const fontValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
@@ -555,6 +556,7 @@ manifestCollection.forEach((manifest) => {
   const fontValue2 = fontValue.replace(fontRegex, "$1")
   replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
 })
+  */
 
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
