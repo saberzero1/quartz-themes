@@ -754,6 +754,15 @@ body {
     }
   }
 
+  .backlinks,
+  .explorer,
+  .graph,
+  .toc {
+    h3 {
+      color: var(--component-title-color, var(--h1-color, var(--nav-heading-color,)));
+    }
+  }
+
   .backlinks:after {
     background: unset;
   }
