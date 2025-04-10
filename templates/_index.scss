@@ -871,7 +871,7 @@ body {
       }
     }
     & > .search-container {
-      & >.search-space {
+      & > .search-space {
         & > * {
           background: var(--search-result-background, var(--background-primary, var(--background-secondary)));
         }
