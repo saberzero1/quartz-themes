@@ -54,12 +54,12 @@ body {
     --h5-line-height: var(--line-height-normal);
     --h6-line-height: var(--line-height-normal);
 
-	--h1-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif;
-    --h2-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
-    --h3-font: SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif;
-    --h4-font: SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif;
-    --h5-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
-    --h6-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
+	--h1-font: "SF Pro Display", SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif;
+    --h2-font: "SF Pro Display", SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
+    --h3-font: "SF Pro Display", SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif;
+    --h4-font: "SF Pro Display", SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif;
+    --h5-font: "SF Pro Display", SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
+    --h6-font: "SF Pro Display", SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif;
 
 	--h1-weight: 100;
     --h2-weight: 100;
@@ -72,8 +72,8 @@ body {
 /* 	Variables (Global) - Fonts - Typeface */
 /*  If you don't have these then get from https://developer.apple.com/fonts/ */
 
-	--font-monospace-default: SFMono-Regular, Menlo, Consolas, "Roboto Mono", 'Source Code Pro', monospace;
-	--font-text-theme: SFPro-Regular;
+	--font-monospace-default: "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono", 'Source Code Pro', monospace;
+	--font-text-theme: "SF Pro Display", SFPro-Regular;
 	--font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 
 /* ---------------------------------------------------------------------------------- */

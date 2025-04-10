@@ -36,7 +36,7 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
-	--font-text-theme: "Computer Modern";
+	--font-text-theme: "Computer Modern Bright", "Computer Modern";
 	--primary-color: #2875d9;
 }
 

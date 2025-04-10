@@ -9,6 +9,9 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/ia-writer-quattro.scss";
+@use "extras/fonts/fira-code.scss";
+@use "extras/fonts/ibm-plex-sans.scss";
 @use "extras/fonts/inter.scss";
 
 /* Callouts */
@@ -338,8 +341,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --heading-text-color: var(--color-base-90);
   --blockquote-background-color: var(--color-base-10);
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-iawriter-quattro: "iaWriterQuattro", mono;
+  --font-family-ibm: "IBM Plex Sans", "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
   --font-family-sans: var(--font-family-inter);
   --font-default: var(--font-family-sans);

@@ -1032,7 +1032,7 @@ input.prompt-input, input.prompt-input:hover {
 
 .horizontal-tab-content, .vertical-tab-content {
     background-color: var(--background-secondary);
-    padding: 5px 10px; */
+    padding: 5px 10px;
 }
 
 button.mod-cta {
@@ -1389,7 +1389,7 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 
 .cm-hmd-codeblock{
   font-size:70%;
-  margin:0
+  margin:0;
   color:var(--color-accent);
 }
 
@@ -2059,7 +2059,7 @@ body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder
     border-top: transparent;
     border-bottom: transparent;
     border-right: transparent;
-    margin-top:0px
+    margin-top:0px;
     margin-bottom:0px;
     line-height: 0.9em;
 }
@@ -2373,7 +2373,7 @@ body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder
 .search-result-container.is-loading:before {
   background-color:var(--color-accent);
   filter:opacity(0.5);
-  margin: 0px
+  margin: 0px;
   padding-bottom: 5px;
 }
 
@@ -3449,13 +3449,13 @@ input[type=range]::-webkit-slider-thumb:active {
     position: absolute;
     left: 0px;
     top: 0px;
-    padding: 8px 16px 8px 8px; */
-    background-color: var(--background-primary-alt); */
+    padding: 8px 16px 8px 8px;
+    background-color: var(--background-primary-alt);
     min-width: 240px;
-    max-width: 280px; */
-    border: 1px solid var(--background-modifier-border); */
+    max-width: 280px;
+    border: 1px solid var(--background-modifier-border);
     border-radius: 6px;
-     max-height: calc(100% - 16px); */
+     max-height: calc(100% - 16px);
     overflow: auto;
     transform: scale(0.);
 }
@@ -3859,12 +3859,12 @@ thead, .markdown-preview-view th
 /* https://github.com/liamcain/obsidian-calendar-plugin */
 
 #calendar-container {
-  --color-border: transparent !important!;
-  --color-hover: var(--background-primary) !important!;
-  --color-empty:   var(--background-secondary) !important!;
-  --color-dot: hsl(105, 70%, 60%) !important!;
-  --color-active: var(--background-primary) !important!;
-  --color-today: var(--color-accent) !important!;
+  --color-border: transparent !important;
+  --color-hover: var(--background-primary) !important;
+  --color-empty:   var(--background-secondary) !important;
+  --color-dot: hsl(105, 70%, 60%) !important;
+  --color-active: var(--background-primary) !important;
+  --color-today: var(--color-accent) !important;
   transform: scale(0.90);
 }
 
@@ -3879,11 +3879,11 @@ thead, .markdown-preview-view th
     --color-text-title: var(--text-normal);
     --color-text-heading: var(--text-muted);
     --color-text-day: var(--text-normal);
-    --color-text-today: var(--color-accent)!important!;
+    --color-text-today: var(--color-accent)!important;
 }
 
 .year.svelte-1elemso {
-    color: var(--text-editor) !important!;
+    color: var(--text-editor) !important;
 }
 
 .dot.svelte-762g9o.svelte-762g9o {

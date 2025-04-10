@@ -516,6 +516,12 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
+  --background-primary: #f4f7fb;
+  --background-primary-alt: #fff7;
+  --background-secondary: #f4f7fb;
+  --background-secondary-alt: #f4f7fb;
+  --background-modifier-hover: var(--color-jk-purple-33);
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);

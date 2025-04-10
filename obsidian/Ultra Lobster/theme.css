@@ -3662,12 +3662,12 @@ body {
     --font-text-theme: "Satoshi", sans-serif;
     --font-monospace: "Monaspace", monospace; */
 
-	--ulu-font-title: "Monaspace";
+	--ulu-font-title: "Monaspace Neon", "Monaspace";
 	--ulu-font-general:"Satoshi", sans-serif;
 	--font-title: var(--ulu-font-title);
 	--font-interface-theme: "Satoshi", sans-serif;
 	--font-text-theme: var(--ulu-font-general);
-	--font-mono: "Monaspace", monospace;
+	--font-mono: "Monaspace Neon", "Monaspace", monospace;
 
 
     /* Links

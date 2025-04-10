@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/ia-writer-mono.scss";
+@use "extras/fonts/noto-sans-jp.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -329,7 +331,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace-default: "iA Writer Mono", iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace: var(--font-monospace-default);
   --font-text: var(--font-default);
   --font-tag: var(--font-monospace);

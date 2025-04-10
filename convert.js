@@ -685,8 +685,13 @@ manifestCollection.forEach((manifest) => {
 themeList.sort()
 themeList.forEach((themeName) => {
   const mode = isFullTheme(themeName) ? "both" : isDarkTheme(themeName) ? "dark" : "light"
+  const compatibilityArray = themes[themeName]["compatibility"]
+  let compatibilityString = ""
+  compatibilityArray.forEach((compatibility) => {
+    compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `
+  })
   compatibilityTableLines.push(
-    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | <img src="media/${themes[themeName]["compatibility"]}.svg" alt="${themes[themeName]["compatibility"].toUpperCase()}"/> | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
+    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
   )
 })
 

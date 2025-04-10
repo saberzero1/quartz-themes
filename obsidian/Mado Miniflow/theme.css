@@ -2012,7 +2012,7 @@ body:is(:not(.css-settings-manager),.toggle-explorer-collapse) .workspace-tabs .
 	display:none;
 }
 
-.mado-timeline .markdown-preview-sizer>div>h1{\
+.mado-timeline .markdown-preview-sizer>div>h1{
 	margin-block:100px 11px;
 	color:var(--color-accent);
 	font-size:36px;
