@@ -774,6 +774,12 @@ body {
     background-color: var(--bg);
   }
 
+  .highlight,
+  ::selection,
+  ::-moz-selection {
+    background: var(--text-highlight-bg, var(--background-modifier-hover));
+  }
+
   /* LINKS */
   a,
   footer a {

@@ -747,8 +747,8 @@
     },
     "hackthebox": {
       "compatibility": ["checking"],
-      "modes": ["dark", "light"],
-      "extras": [],
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
       "fonts": []
     },
     "halcyon": {
