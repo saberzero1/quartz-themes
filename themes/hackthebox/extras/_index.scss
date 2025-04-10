@@ -8,5 +8,35 @@
     .search > .search-container > .search-space > .search-layout .highlight {
       background: var(--quartz-text-highlight, var(--tertiary));
     }
+
+    .explorer {
+      .explorer-content {
+        li:has(> .active) {
+          background-color: var(--htb-lime, #9fef00);
+          border-radius: 4px;
+          transform: translateX(-5px);
+          padding-left: 5px;
+          > a.active {
+            color: var(--text-on-accent);
+          }
+        }
+      }
+
+      &.collapsed .explorer-toggle.title-button {
+        .fold {
+          color: var(--collapse-icon-color-collapsed);
+        }
+      }
+      .explorer-toggle {
+        &.title-button {
+          > h2 {
+            color: var(--htb-lime, #9fef00);
+          }
+          .fold {
+            color: var(--collapse-icon-color);
+          }
+        }
+      }
+    }
   }
 }
