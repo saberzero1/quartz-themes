@@ -833,6 +833,8 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --headerFont: var(--font-text) !important;
   --bodyFont: var(--font-text) !important;
   --codeFont: var(--font-monospace) !important;
+
+  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 }
 
 body {
@@ -1308,7 +1310,7 @@ body {
   .highlight,
   ::selection,
   ::-moz-selection {
-    background: var(--text-highlight-bg, var(--background-modifier-hover));
+    background: var(--quartz-text-highlight);
   }
 
   /* LINKS */
@@ -1661,11 +1663,7 @@ body {
         & > .search-layout {
           border: var(--modal-border-color, var(--background-modifier-border));
           & > .highlight {
-            background: color-mix(
-              in srgb,
-              var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
-              rgba(255, 255, 255, 0)
-            );
+            background: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
