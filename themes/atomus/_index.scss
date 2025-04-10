@@ -341,6 +341,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-accent-hover: var(--text-accent-hover-color);
   --background-secondary-alt: transparent;
   --font-monospace: "Fira Code", "Source Code Pro", monospace;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -389,6 +389,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-color-blue: 50, 150, 255;
   --callout-color-purple: 150, 100, 250;
   --callout-color-orange: 255, 150, 50;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

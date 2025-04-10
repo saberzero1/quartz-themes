@@ -429,6 +429,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-size: var(--icon-xs);
   --icon-size: var(--icon-s);
   --icon-size: var(--icon-l);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

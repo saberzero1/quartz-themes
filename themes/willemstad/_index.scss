@@ -393,6 +393,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --shape-roundish: 0.4rem;
   --tab-container-background: var(--titlebar-background);
   --titlebar-background: var(--titlebar-background);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

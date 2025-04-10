@@ -895,6 +895,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mb-background-modifier-active: hsla(var(--interactive-accent-hsl), 0.05);
   --mb-background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1);
   --shiki-code-normal: var(--code-normal);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

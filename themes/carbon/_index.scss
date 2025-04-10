@@ -395,6 +395,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-radius-active: 0;
   --tab-width: 200px;
   --tab-max-width: 320px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

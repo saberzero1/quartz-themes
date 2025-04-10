@@ -629,6 +629,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
     var(--md-sys-color-on-surface, #1d1b20)
   );
   --md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

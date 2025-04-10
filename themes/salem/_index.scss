@@ -389,6 +389,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-h: 45;
   --accent-s: 41%;
   --accent-l: 60%;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

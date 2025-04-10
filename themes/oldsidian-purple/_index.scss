@@ -334,6 +334,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-radius: 5px;
   --callout-border-opacity: 1;
   --callout-blend-mode: normal;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

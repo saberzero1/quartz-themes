@@ -350,6 +350,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h4-weight: 550;
   --h5-weight: 500;
   --h6-weight: 500;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

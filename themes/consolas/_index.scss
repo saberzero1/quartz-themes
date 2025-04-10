@@ -364,6 +364,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --nav-item-color-hover: var(--color-ui-current);
   --tab-text-color-focused-active-current: var(--color-ui-current);
   --tab-text-color-focused-active: var(--color-ui-active);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

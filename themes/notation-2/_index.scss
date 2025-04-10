@@ -420,6 +420,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-on-accent: rgba(var(--text-rgb), 0.9);
   --interactive-accent: rgb(var(--interactive-accent-rgb));
   --interactive-accent-hover: rgba(var(--interactive-accent-rgb), 0.8);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -400,6 +400,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --inline-title-size: 2.5em;
   --inline-title-weight: var(--font-black);
   --inline-title-color: #000000;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

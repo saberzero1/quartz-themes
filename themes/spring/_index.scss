@@ -397,6 +397,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --table-header-background-hover: var(--background-secondary);
   --text-highlight-bg-active: var(--dark-yellow);
   --text-highlight-bg: var(--dark-yellow);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

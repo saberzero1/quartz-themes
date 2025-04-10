@@ -488,6 +488,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-normal: var(--highlight-text-color);
   --text-highlight-bg: var(--yellow-600);
   --highlight-text-color: var(--text-inverse);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

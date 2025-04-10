@@ -435,6 +435,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --on-tertiary-container: hsl(var(--accent-h), calc(var(--accent-s) * 0.2), 12%);
   --interactive-hover: hsl(var(--accent-h), 15%, 85%);
   --text-selection: hsl(var(--accent-h), calc(var(--accent-s) * 0.5), 80%);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -363,6 +363,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --buttons-fade-out-speed: filter 2000ms ease-in-out;
   --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
   --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

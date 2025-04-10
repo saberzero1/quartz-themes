@@ -788,6 +788,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --prompt-border-color: var(--background-modifier-border);
   --calendar-dot: var(--orange);
   --calendar-dot-hover: var(--red);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

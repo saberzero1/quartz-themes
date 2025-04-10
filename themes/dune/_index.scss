@@ -502,6 +502,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --violet-bg: transparent;
   --violet-border: #9b5dff;
   --border-rad: 0;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -497,6 +497,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-active: rgb(var(--hover-rgb));
   --background-modifier-active-hover: rgba(var(--hover-rgb), 0.1);
   --nav-item-color-hover: rgb(var(--hover-rgb));
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -466,6 +466,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --anim-duration-slow: calc(600ms / var(--anim-speed));
   --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
   --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

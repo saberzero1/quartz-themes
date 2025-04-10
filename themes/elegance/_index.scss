@@ -358,6 +358,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-top: 2px;
   --checkbox-left: 0px;
   --checkbox-margin: 0px 6px 0px -1.35em;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

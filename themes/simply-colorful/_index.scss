@@ -399,6 +399,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-padding-y: 0.3em;
   --live-heading-bg-top: calc((var(--p-spacing) * 9) / 16);
   --live-heading-bg-bottom: calc((var(--p-spacing) * 7) / 16);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

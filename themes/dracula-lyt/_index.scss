@@ -363,6 +363,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
 
   --gap: 0;
   --gap: 0;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

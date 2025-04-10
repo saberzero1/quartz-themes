@@ -487,6 +487,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --dot-color: hsl(0 0% 40% / 10%);
   --dot-spacing: 9px;
   --dot-size: 1px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -640,6 +640,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --table-row-alt-background: transparent;
   --table-column-alt-background: unset;
   --table-header-size: var(--font-small);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -347,6 +347,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-l: 52%;
   --link-decoration: none;
   --ribbon-background-collapsed: var(--background-secondary);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

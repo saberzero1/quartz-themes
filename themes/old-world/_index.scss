@@ -418,6 +418,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-highlight-bg: rgba(var(--color-yellow-rgb), 0.5);
   --caret-color: var(--color-yellow);
   --hr-thickness: 3px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

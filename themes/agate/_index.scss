@@ -440,6 +440,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --status-bar-border-color: var(--line-color);
   --status-bar-border-width: var(--border-width);
   --status-bar-radius: var(--radius-s);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

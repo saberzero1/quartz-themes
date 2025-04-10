@@ -358,6 +358,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-accent-faded: #fc6e51;
   --shadow: 1px 1px 2px #88888888;
   --font-monospace: "courier prime", "courier prime code" !important;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

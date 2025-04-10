@@ -360,6 +360,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --file-header-border: var(--border-width) dotted var(--background-modifier-border);
   --divider-color: transparent;
   --card-background-color: rgb(var(--cpt-crust));
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

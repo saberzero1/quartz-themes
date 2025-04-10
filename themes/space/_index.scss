@@ -364,6 +364,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h4-color: var(--text-title-h4);
   --h5-color: var(--text-title-h5);
   --h6-color: var(--text-title-h6);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

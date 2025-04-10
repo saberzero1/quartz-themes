@@ -792,6 +792,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-fail: var(--kuro-red-dark-rgb);
   --callout-error: var(--kuro-red-normal-rgb);
   --callout-quote: var(--kuro-brown-normal-rgb);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -331,6 +331,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-blend-mode: normal !important;
   --file-line-width: 1000px;
   --background-modifier-message: var(--background-primary) !important;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

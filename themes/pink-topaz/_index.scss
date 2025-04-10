@@ -480,6 +480,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --header-color: #f1a634d0;
   --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

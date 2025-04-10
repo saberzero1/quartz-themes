@@ -337,6 +337,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mk-ui-text-secondary: var(--text-normal);
   --color-background-weeknum: transparent;
   --color-background-weekend: var(--highlight-low);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -333,6 +333,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 
   --font-monospace: "Fira Code", "Source Code Pro", monospace;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

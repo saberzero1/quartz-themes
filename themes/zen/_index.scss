@@ -354,6 +354,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --window-font-size: calc(var(--window-font-size) * 0.9);
   --input-radius: 20px;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

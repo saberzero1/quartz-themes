@@ -488,6 +488,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-base-10: var(--color-background-4);
   --color-base-20: var(--color-background-3);
   --table-width: 88cqw;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

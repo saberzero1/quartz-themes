@@ -501,6 +501,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --canvas-background: transparent;
   --p-spacing: calc(1.5 * var(--font-text-size));
   --heading-spacing: calc(var(--p-spacing) * 1);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

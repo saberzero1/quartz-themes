@@ -399,6 +399,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --modal-border-width: 0px;
   --background-modifier-cover: rgba(0, 0, 0, 0.78) !important;
   --button-radius: 3px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

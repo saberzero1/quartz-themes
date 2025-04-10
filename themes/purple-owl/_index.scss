@@ -396,6 +396,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --interactive-accent: var(--text-selection);
   --interactive-accent-hover: var(--background-tertiary);
   --text-on-accent: var(--text-normal);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

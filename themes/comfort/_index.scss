@@ -367,6 +367,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --text-muted: #455445;
   --tab-curve: 6px;
   --toggle-radius: 4px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

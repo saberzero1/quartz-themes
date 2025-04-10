@@ -772,6 +772,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --interactive-accent-hover: var(--color-accent-2);
   --tab-container-background: transparent;
   --nav-item-padding: 8px 8px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

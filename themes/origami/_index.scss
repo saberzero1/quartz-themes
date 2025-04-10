@@ -945,6 +945,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --persistent-transform1: translateX(-34.5px);
   --persistent-transform1: ;
   --ancestor-editor-color: var(--text-normal);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

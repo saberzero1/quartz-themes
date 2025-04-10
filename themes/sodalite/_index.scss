@@ -351,6 +351,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --file-line-width: 100%;
   --callout-radius: 0;
   --callout-padding: 18px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

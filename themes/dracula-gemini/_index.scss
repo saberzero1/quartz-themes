@@ -430,6 +430,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-spacing: 0;
   --list-indent: calc(1.046875em + 4 * var(--list-indent-spacing));
   --table-header-background: var(--color-base-20);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

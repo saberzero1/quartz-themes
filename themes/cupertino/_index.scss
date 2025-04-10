@@ -574,6 +574,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --cards-image-height: 400px;
   --cards-padding: 16px;
   --cards-aspect-ratio: auto;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

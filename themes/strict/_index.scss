@@ -401,6 +401,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-padding-y: 0;
   --code-size: var(--font-text-size);
   --ribbon-padding: 0;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -428,6 +428,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --canvas-color-6: var(--color-green-rgb);
   --canvas-dot-pattern: var(--color-salmon-lighter);
   --color-base-00: black;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -838,6 +838,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --folder-theme-color14: hsl(34 100% 50% / var(--folder-alpha));
   --folder-theme-color15: hsl(27 100% 47% / var(--folder-alpha));
   --folder-theme-color16: hsl(14 82% 46% / var(--folder-alpha));
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

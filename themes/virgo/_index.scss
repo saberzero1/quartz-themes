@@ -339,6 +339,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-monospace-theme: var(--font-jk-mono);
   --divider-color: #f000;
   --table-border-color: #cccc;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

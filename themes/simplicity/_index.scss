@@ -352,6 +352,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-primary: #111 !important;
   --background-secondary: #111 !important;
   --tag-background: transparent;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

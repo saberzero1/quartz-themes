@@ -707,6 +707,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checklist-checkboxBorder: 2px solid var(--color-blue);
   --checklist-checkboxBorder: 2px solid var(--color-purple);
   --checklist-checkboxBorder: 2px solid var(--color-pink);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -454,6 +454,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tile-padding: 8px;
   --tile-field-padding: 5px;
   --custom-code-height: 1em;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -438,6 +438,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-8-bgcolor: rgba(253, 255, 188, 0.75);
   --tag-9-bgcolor: rgba(228, 228, 228, 0.75);
   --tag-10-bgcolor: rgba(255, 228, 111, 0.75);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

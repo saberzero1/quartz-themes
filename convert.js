@@ -445,6 +445,7 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
+  const defaultFontExtras = ["avenir", "inter", "source-sans-pro"]
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,

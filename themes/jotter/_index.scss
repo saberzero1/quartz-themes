@@ -353,6 +353,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --modal-border-color: var(--background-modifier-border);
   --link-color: var(--text-accent);
   --link-external-color: var(--text-accent);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

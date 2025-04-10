@@ -426,6 +426,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focused: var(--colorful-icon-color);
   --notion-kanban-card: rgb(var(--ctp-surface0));
   --notion-kanban-card-hover: rgb(var(--ctp-surface1));
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

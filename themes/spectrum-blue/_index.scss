@@ -390,6 +390,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --divider-color-hover: rgb(12, 99, 137);
   --ribbon-background: var(--background-elements-color);
   --table-background: rgb(31, 31, 31);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

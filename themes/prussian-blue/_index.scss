@@ -372,6 +372,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-radius: 0;
   --embed-border-left: 6px double var(--interactive-accent);
   --status-bar-text-color: var(--teal3) !important;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

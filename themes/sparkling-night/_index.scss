@@ -346,6 +346,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --folly: #ff3366;
   --gold: rgb(253, 233, 9);
   --line-width: 750px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

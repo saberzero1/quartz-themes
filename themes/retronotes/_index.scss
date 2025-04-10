@@ -516,6 +516,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h4-line-height: 1.2em;
   --h5-line-height: 1.2em;
   --h6-line-height: 1.2em;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {
