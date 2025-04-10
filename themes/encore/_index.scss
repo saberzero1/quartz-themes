@@ -881,8 +881,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --headerFont: var(--font-text) !important;
   --bodyFont: var(--font-text) !important;
   --codeFont: var(--font-monospace) !important;
-
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 }
 
 body {
@@ -1077,6 +1075,8 @@ html[saved-theme="light"] {
 /* END LIGHT */
 
 body {
+  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+
   background-color: var(--background-primary);
 
   .callout {
