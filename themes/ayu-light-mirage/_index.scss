@@ -335,6 +335,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-interface-theme: Inter, Heiti, Dotum;
   --font-monospace-theme: Monaspace Neon;
   --font-mermaid: var(--font-interface-theme);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -654,6 +654,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --vault-name-font-size: var(--font-ui-small);
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--color-tan);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

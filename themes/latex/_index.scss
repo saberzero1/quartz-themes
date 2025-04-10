@@ -340,6 +340,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --slider-thumb-radius: 0px;
   --font-text-theme: "Computer Modern Bright", "Computer Modern";
   --primary-color: #2875d9;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -342,6 +342,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tab-curve: 0px;
   --tab-font-size: 12px;
   --background-modifier-error: #9e5245;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

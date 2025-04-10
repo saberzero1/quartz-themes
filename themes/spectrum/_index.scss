@@ -431,6 +431,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --chart-color-3: var(--accent-3);
   --chart-color-4: var(--accent-4);
   --chart-color-5: var(--accent-5);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -357,6 +357,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --ribbon-background-collapsed: transparent;
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

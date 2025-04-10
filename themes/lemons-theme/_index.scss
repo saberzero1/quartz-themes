@@ -468,6 +468,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-monospace-theme: "??";
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

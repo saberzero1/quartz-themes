@@ -527,6 +527,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --atom-blue: #0e86ff;
   --atom-yellow: #e6db74;
   --color-base-00: black;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

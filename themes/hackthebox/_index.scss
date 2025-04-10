@@ -473,6 +473,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-base-40: transparent !important;
   --color-base-35: transparent !important;
   --color-base-50: var(--htb-heading) !important;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

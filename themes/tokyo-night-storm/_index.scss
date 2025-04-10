@@ -333,6 +333,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --default-font: "JetBrains Mono", monospace;
   --default-font: "JetBrains Mono Nerd Font", monospace;
   --font-monospace: "Anonymous Pro", "Anonymouse Pro for Powerline", monospace;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

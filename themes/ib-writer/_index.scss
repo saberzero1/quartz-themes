@@ -363,6 +363,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --line-height-normal: 1.6;
   --blockquote-border-color: clear;
   --file-line-width: 750px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

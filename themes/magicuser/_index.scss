@@ -1210,6 +1210,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --mu-indent-color-level-4: transparent;
   --mu-indent-color-level-5: transparent;
   --mu-indent-color-level-6: transparent;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

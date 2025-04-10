@@ -356,6 +356,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --frost3-raw: 94, 129, 172;
   --frost3: #5e81ac;
   --nordic-darken: 0%;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

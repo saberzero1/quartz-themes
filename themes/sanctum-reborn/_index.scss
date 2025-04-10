@@ -759,6 +759,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
   --calendar-dot: var(--orange);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

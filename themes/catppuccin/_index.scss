@@ -812,6 +812,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -428,6 +428,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-l: 63%;
   --frame-left-space: 80px;
   --icon-size: var(--icon-l);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -344,6 +344,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h4-size: 1.2em;
   --h5-size: 1em;
   --h6-size: 1em;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

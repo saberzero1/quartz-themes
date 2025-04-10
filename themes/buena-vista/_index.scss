@@ -347,6 +347,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --background-blurred: var(--background-primary);
   --background-blurred-alt: var(--background-primary-alt);
   --blur-size: 4;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

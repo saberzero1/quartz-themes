@@ -358,6 +358,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --light-highlight-low: #f4ede8;
   --light-highlight-med: #dfdad9;
   --light-highlight-high: #cecacd;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

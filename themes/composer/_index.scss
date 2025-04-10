@@ -395,6 +395,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --paragraph-indent: 0px;
   --paragraph-indent: 0px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

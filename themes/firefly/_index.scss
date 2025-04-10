@@ -344,6 +344,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-lineheight-large: 2em;
   --color-lineheight-xtra-large: 2.25em;
   --color-lineheight-max: 2.5em;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

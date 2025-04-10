@@ -354,6 +354,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --folding-offset: 10px;
   --line-width-adaptive: var(--line-width);
   --line-width-wide: calc(var(--line-width) + 12.5%);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

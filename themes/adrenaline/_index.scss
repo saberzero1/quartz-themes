@@ -339,6 +339,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --toggle-radius: 10px;
   --toggle-thumb-radius: 10px;
   --slider-thumb-radius: 10px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

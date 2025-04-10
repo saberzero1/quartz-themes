@@ -333,6 +333,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --quattro-font: "iA Writer Quattro", "iA Writer Quattro V", sans-serif;
   --font-monospace: "iA Writer Mono", "iA Writer Mono V", monospace;
   --default-font: -apple-system, BlinkMacSystemFont, var(--font-monospace);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

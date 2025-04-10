@@ -457,6 +457,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --vault-profile-color: var(--text-muted);
   --font-semibold: 700;
   --modal-border-color: var(--background-modifier-border);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

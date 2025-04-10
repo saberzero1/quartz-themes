@@ -414,6 +414,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --nav-indentation-guide-color: #28163b;
   --nav-collapse-icon-color: #d99145;
   --nav-collapse-icon-color-collapsed: #c88034;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -348,6 +348,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --hr-color: #2c242447;
   --table-border-color: #2c242447;
   --canvas-dot-pattern: #796e6e47;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

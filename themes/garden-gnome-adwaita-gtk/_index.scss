@@ -478,6 +478,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --only-tab-text: var(--tab-text-color-active);
   --only-tab-text-hover: var(--tab-text-color-active);
   --only-tab-close-button: transparent;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

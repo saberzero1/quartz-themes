@@ -513,6 +513,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --graph-node-focused: var(--wyrd-yellow);
   --graph-node-tag: var(--wyrd-green);
   --graph-node-attachment: var(--wyrd-orange);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

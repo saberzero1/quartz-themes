@@ -799,6 +799,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h5-weight: 00;
   --h6-weight: 00;
   --floating-toc-header-background: var(--background-secondary);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

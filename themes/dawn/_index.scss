@@ -828,6 +828,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --static-alpha-balck-100: rgba(0, 0, 0, 0.06);
   --static-alpha-white-200: rgba(255, 255, 255, 0.2);
   --static-alpha-white-500: rgba(255, 255, 255, 0.5);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

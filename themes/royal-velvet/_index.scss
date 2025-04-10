@@ -333,6 +333,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-interface-theme: "Fira Sans", sans-serif;
   --font-text-theme: "Fira Sans", sans-serif;
   --font-monospace-theme: "Fira Code", monospace;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

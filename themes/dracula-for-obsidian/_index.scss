@@ -373,6 +373,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --blockquote-border: #ffb86c;
   --vim-cursor: #ff5555;
   --border-color: #2b2727;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -717,6 +717,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --search-clear-button-color: var(--text-normal);
   --search-result-background: var(--background-primary);
   --background-modifier-form-field: var(--background-primary);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

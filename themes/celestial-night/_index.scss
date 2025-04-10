@@ -374,6 +374,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --tag-border-width: 1px;
   --tag-radius: 1em;
   --tag-weight: 300;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

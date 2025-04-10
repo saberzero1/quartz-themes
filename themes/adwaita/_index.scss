@@ -400,6 +400,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h1-weight: 900;
   --titlebar-height: 45px;
   --header-height: 46px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

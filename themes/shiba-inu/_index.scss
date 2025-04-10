@@ -377,6 +377,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --img-max-width-list: 300px;
   --callout-gallery-gap: 5px;
   --tab-container-background: var(--card-background-color);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

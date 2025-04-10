@@ -364,6 +364,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --nav-item-color-hover: var(--color-bossidian-primary);
   --vault-name-color: var(--color-bossidian-primary);
   --nav-item-color-highlighted: var(--color-bossidian-secondary);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

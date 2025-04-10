@@ -828,6 +828,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --callout-blend-mode: normal;
   --titlebar-background: var(--background-secondary);
   --floating-toc-header-background: var(--background-secondary);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

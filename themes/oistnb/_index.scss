@@ -364,6 +364,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --spacing-m: 12px;
   --spacing-l: 16px;
   --spacing-xl: 24px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

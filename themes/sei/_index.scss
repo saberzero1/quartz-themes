@@ -578,6 +578,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --theme-filter: invert(100%) hue-rotate(180deg) !important;
   --advanced-tables-helper-size: auto;
   --advanced-tables-helper-size: auto;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -415,6 +415,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-base-darklight: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%));
   --titlebar-background: var(--color-base-17);
   --tab-container-background: var(--color-base-17);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -925,6 +925,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --green-5: #50fa7b;
   --green-6: hsl(135, 65%, 65%);
   --green-7: rgba(101, 230, 168, 0.7);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -364,6 +364,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --inline-title-weight: 400;
   --text-on-accent: var(--color-tulip);
   --text-on-accent-inverted: var(--color-tulip);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

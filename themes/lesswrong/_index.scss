@@ -362,6 +362,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --accent-s: 23%;
   --accent-l: 59%;
   --cursor-link: default;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

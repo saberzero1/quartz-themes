@@ -390,6 +390,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-color-hover: rgb(var(--600-RGB));
   --checkbox-color: rgb(var(--C001-RGB));
   --checkbox-color-hover: rgb(var(--C001-RGB));
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

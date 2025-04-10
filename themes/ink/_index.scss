@@ -343,6 +343,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --checkbox-color-hover: var(--text-accent-hover);
   --checkbox-border-color: var(--text-accent);
   --checkbox-border-color-hover: var(--text-accent-hover);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

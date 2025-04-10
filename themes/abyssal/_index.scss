@@ -382,6 +382,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --list-marker-color: var(--text-accent);
   --list-marker-color-collapsed: var(--text-normal);
   --list-marker-color-hover: var(--text-muted);
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {

@@ -633,6 +633,11 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --h6-new-color: 155, 180, 196;
   --ribbon-width: 16px;
   --ribbon-width: 44px;
+
+  --titleFont: var(--font-text) !important;
+  --headerFont: var(--font-text) !important;
+  --bodyFont: var(--font-text) !important;
+  --codeFont: var(--font-monospace) !important;
 }
 
 body {
