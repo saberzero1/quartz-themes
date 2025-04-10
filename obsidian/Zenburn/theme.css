@@ -223,9 +223,9 @@
 }
 
 body {
-  --font-text-theme: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica,
+  --font-text-theme: "Inter", "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica,
     Arial, sans-serif;
-  --font-header-text-theme: "Inter Medium", -apple-system, BlinkMacSystemFont,
+  --font-header-text-theme: "Inter", "Inter Medium", -apple-system, BlinkMacSystemFont,
     Helvetica, Arial, sans-serif;
   --font-monospace-theme: "Inconsolata", "Source Code Pro", ui-monospace,
     monospace;

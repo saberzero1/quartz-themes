@@ -60,7 +60,7 @@ body {
 	--scrollbar-active-thumb-bg: rgba(62,147,216,0.8); /*rgba(255,255,255,0.2)*/
 	--scrollbar-bg: rgba(255,255,255,0);
 	--scrollbar-thumb-bg: rgb(20,20,20);	/*rgba(81,144,175,0.2)*/
-	--accent-strong: #EC5151; /*#EC7272*/ /*#ec0d0d*/ #EC5151
+	--accent-strong: #EC5151; /*#EC7272*/ /*#ec0d0d*/ /*#EC5151*/
 	--color-green: #4a8069; 
 	--color-orange: #de9d07; /*#f67c09*/
 	--color-H1: rgb(255,255,255);
@@ -100,7 +100,7 @@ body {
 	--text-accent: #269dff; 	/* link color */
 	--text-accent-hover: #66baff;	/*#2da4ff*/
 	--text-accent-hover-dark: #4e8ae4;	
-	--text-normal: #2e3338; #269DFF
+	--text-normal: #2e3338; /*#269DFF*/
 	--text-muted: #6e6e6e;
 	--text-faint: #999999;
 	--text-error: #ce2222;
@@ -891,7 +891,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 
 /*internal and external link underline*/
-}
+
 .theme-light.links-ext-on .external-link,
 .external-link {
   text-decoration:none;
@@ -1362,8 +1362,8 @@ body:not(.no-svg-replace) svg.right-triangle {
 }
 
 .embedded-backlinks .nav-buttons-container  {
-    position: ;
-    right: /*350px*/;
+    /*position: ;*/
+    /*right: 350px;*/
     top: -40px;
     z-index: 1;
     left: 0px;

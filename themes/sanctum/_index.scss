@@ -9,6 +9,8 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/inter.scss";
+@use "extras/fonts/sf-mono.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -387,9 +389,10 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --font-scale-9: 3.375rem;
   --font-scale-10: 3.75rem;
 
-  --font-editor-theme: ??;
+  --font-editor-theme: Inter, sans-serif;
   --font-editor: var(--font-editor-theme), var(--font-text);
   --font-text-theme: Inter, sans-serif;
+  --font-monospace-theme: "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --font-interface-theme: Inter, sans-serif;
   --cyan-10: hsl(90, 15.4%, 94.9%);
   --cyan-20: hsl(98.2, 15.9%, 86.5%);

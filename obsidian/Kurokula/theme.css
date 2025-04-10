@@ -92,7 +92,7 @@
 	--kuro-code-comment: var(--kuro-yellow-light);
 	--kuro-code-fg: var(--kuro-white-light);
 	--kuro-code-bg: var(--kuro-black-dark);
-	--kuro-monospace-default: "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+	--kuro-monospace-default: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
 }
 
 body {

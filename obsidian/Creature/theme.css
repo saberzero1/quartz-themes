@@ -41,7 +41,7 @@
   --success-hover: var(--green-light);
   /* Fonts */
   --default-font: -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu, cantarell, Open Sans, Helvetica Neue, sans-serif;
-  --font-monospace: SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
+  --font-monospace: "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
 }
 
 .theme-dark {

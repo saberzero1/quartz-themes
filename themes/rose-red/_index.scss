@@ -9,6 +9,7 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/hack.scss";
 @use "extras/fonts/source-code-pro.scss";
 
 /* Callouts */
@@ -363,7 +364,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
 
   --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji;
-  --font-monospace-theme: "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+  --font-monospace-theme: "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
     SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 

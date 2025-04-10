@@ -28,8 +28,19 @@ build:
   node convert.js
 
 [private]
+fonts:
+  node extract-font-list.js
+
+[private]
+clean-fonts:
+  rm -rf obsidian-fonts
+
+[private]
 format:
   npx prettier . --write
+
+[private]
+compile-all: build fonts format clean-fonts
 
 [private]
 compile: build format

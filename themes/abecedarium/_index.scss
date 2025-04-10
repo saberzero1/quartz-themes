@@ -10,6 +10,7 @@
 @use "light";
 @use "extras";
 @use "extras/fonts/source-code-pro.scss";
+@use "extras/fonts/inter.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -490,6 +491,7 @@ html[saved-theme="dark"] {
   --scrollbar-active-thumb-bg: rgba(62, 147, 216, 0.8);
   --scrollbar-bg: rgba(255, 255, 255, 0);
   --scrollbar-thumb-bg: rgb(20, 20, 20);
+  --accent-strong: #ec5151;
   --color-green: #4a8069;
   --color-orange: #de9d07;
   --color-H1: rgb(255, 255, 255);
@@ -587,6 +589,7 @@ html[saved-theme="light"] {
   --text-accent: #269dff;
   --text-accent-hover: #66baff;
   --text-accent-hover-dark: #4e8ae4;
+  --text-normal: #2e3338;
   --text-muted: #6e6e6e;
   --text-faint: #999999;
   --text-error: #ce2222;

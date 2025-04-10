@@ -238,9 +238,9 @@ ______  ___  ______ _   __
 } 
 
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
-  --font-monospace: JetBrains Mono, Liberation Mono, Monospace, Courier New;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
+  --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
 }

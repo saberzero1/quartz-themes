@@ -443,7 +443,7 @@ manifestCollection.forEach((manifest) => {
 
 // fonts
 manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
+  //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
   fontExtras.forEach((font) => {
     copyFileToDirectory(
@@ -547,6 +547,7 @@ manifestCollection.forEach((manifest) => {
 })
 
 // _fonts.scss
+/*
 manifestCollection.forEach((manifest) => {
   const fontValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
@@ -555,6 +556,7 @@ manifestCollection.forEach((manifest) => {
   const fontValue2 = fontValue.replace(fontRegex, "$1")
   replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
 })
+  */
 
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
@@ -685,8 +687,13 @@ manifestCollection.forEach((manifest) => {
 themeList.sort()
 themeList.forEach((themeName) => {
   const mode = isFullTheme(themeName) ? "both" : isDarkTheme(themeName) ? "dark" : "light"
+  const compatibilityArray = themes[themeName]["compatibility"]
+  let compatibilityString = ""
+  compatibilityArray.forEach((compatibility) => {
+    compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `
+  })
   compatibilityTableLines.push(
-    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | <img src="media/${themes[themeName]["compatibility"]}.svg" alt="${themes[themeName]["compatibility"].toUpperCase()}"/> | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
+    `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName}/) |`,
   )
 })
 

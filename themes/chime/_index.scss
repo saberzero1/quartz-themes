@@ -9,7 +9,11 @@
 @use "dark";
 @use "light";
 @use "extras";
-@use "extras/fonts/noto-serif.scss";
+@use "extras/fonts/archivo.scss";
+@use "extras/fonts/arima.scss";
+@use "extras/fonts/ibm-plex-sans.scss";
+@use "extras/fonts/linux-libertine.scss";
+@use "extras/fonts/icons/noto-sans-symbols-2.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",

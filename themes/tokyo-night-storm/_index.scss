@@ -9,6 +9,8 @@
 @use "dark";
 @use "extras";
 @use "extras/hide-toggle.scss";
+@use "extras/fonts/anonymous-pro.scss";
+@use "extras/fonts/jetbrains-mono.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -331,7 +333,7 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
 
   --default-font: "JetBrains Mono", monospace;
   --default-font: "JetBrains Mono Nerd Font", monospace;
-  --font-monospace: "Anonymouse Pro for Powerline", monospace;
+  --font-monospace: "Anonymous Pro", "Anonymouse Pro for Powerline", monospace;
 }
 
 body {

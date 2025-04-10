@@ -84,8 +84,8 @@ SOFTWARE.
     --oz-fta-file-font-size: 1em;
 	--folders-font-size: 1em;
 	--files-font-size: 1em;
-	--fnt-title: "Scifi Title";
-	--fnt-head-p: "ModeSeven Regular";
+	--fnt-title: "Audiowide", "Scifi Title";
+	--fnt-head-p: "DotGothic16", "ModeSeven Regular";
 	--text-selection: var(--col-base);
 }
 
@@ -929,7 +929,8 @@ em {
 
 /* Tables */
 .markdown-preview-view table {
-	color: 	border-color: var(--col-pr-txt-table);
+	/* color: 	*/
+	border-color: var(--col-pr-txt-table);
 	font-size: var(--siz-pr-txt-table);
 	background-color: var(--col-pr-bckg-table);
 }

@@ -34,7 +34,7 @@
 /* 1. Font */
 body {
     /* font stacks taken directly from Notion */
-    --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+    --font-monospace: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
     -webkit-font-smoothing: auto;
     --h1-color: var(--text-title-h1);
     --h2-color: var(--text-title-h2);

@@ -13,7 +13,7 @@ body.theme-dark {
   /*--text-accent: #5e0b11;*/
   --ribbon-background: var(--background-primary);
   /*--font-text: 'Pixel Square';*/
-  --font-text: 'pixel_squareregular';
+  --font-text: "Pixel Square", 'pixel_squareregular';
 
   background-color:var(--background-primary);
   color: var(--text-normal);
@@ -48,7 +48,7 @@ body.theme-light {
   --text-normal: #080808;
   /*--interactive-accent: #ff0000;*/
   /*--text-accent-hover: #5e0b11;*/
-  --font-text: 'pixel_squareregular';
+  --font-text: "Pixel Square", 'pixel_squareregular';
   --code-string: #4682e3;
   --color-accent: var(--interactive-accent);
   --checkbox-color-hover: var(--text-accent-hover);

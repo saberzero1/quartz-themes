@@ -9,6 +9,7 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/merriweather-sans.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -361,9 +362,9 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --link-decoration: none;
   --link-external-decoration: none;
   --link-formatting-color: hsla(var(--interactive-accent-hsl), 0.5);
-  --h1-font: Merriweather, Lucida Bright, Georgia, serif;
-  --h2-font: Merriweather, Lucida Bright, Georgia, serif;
-  --h3-font: Merriweather, Lucida Bright, Georgia, serif;
+  --h1-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
+  --h2-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
+  --h3-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
   --h1-size: 1.3em;
   --h2-size: 1.05em;
   --h3-size: 1em;

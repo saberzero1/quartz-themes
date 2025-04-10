@@ -9,6 +9,7 @@
 @use "dark";
 @use "light";
 @use "extras";
+@use "extras/fonts/special-elite.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -357,10 +358,10 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --color-light1: #fffcf4;
   --color-gray-rgb: 240, 240, 240;
 
-  --font-general: "TT2020 Base";
+  --font-general: "Special Elite", "TT2020 Base";
   --font-interface-theme: var(--font-general);
   --font-text-theme: var(--font-general), var(--font-text-override);
-  --font-monospace-theme: "TT2020 Base";
+  --font-monospace-theme: "Special Elite", "TT2020 Base";
   --normal-weight: 500;
   --bold-weight: 620;
   --icon-muted: 0.5;
