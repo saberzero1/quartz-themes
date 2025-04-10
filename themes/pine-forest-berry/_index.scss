@@ -1053,7 +1053,7 @@ body {
         }
         & > .search-layout {
           border: var(--modal-border-color, var(--background-modifier-border));
-          & > .highlight {
+          & .highlight {
             background: var(--quartz-text-highlight);
           }
           & > .preview-container {
