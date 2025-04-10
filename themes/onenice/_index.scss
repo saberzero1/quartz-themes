@@ -820,7 +820,7 @@ body {
     color: var(--text-title-h1, var(--h1-color));
     font-weight: var(--font-weight);
     font-style: var(--h1-style);
-    /* font-family: var(--h1-font); */
+    font-family: var(--h1-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
@@ -836,7 +836,7 @@ body {
     color: var(--text-title-h2, var(--h2-color));
     font-weight: var(--font-weight);
     font-style: var(--h2-style);
-    /* font-family: var(--h2-font); */
+    font-family: var(--h2-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
@@ -852,7 +852,7 @@ body {
     color: var(--text-title-h3, var(--h3-color));
     font-weight: var(--font-weight);
     font-style: var(--h3-style);
-    /* font-family: var(--h3-font); */
+    font-family: var(--h3-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
@@ -868,7 +868,7 @@ body {
     color: var(--text-title-h4, var(--h4-color));
     font-weight: var(--font-weight);
     font-style: var(--h4-style);
-    /* font-family: var(--h4-font); */
+    font-family: var(--h4-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
@@ -884,7 +884,7 @@ body {
     color: var(--text-title-h5, var(--h5-color));
     font-weight: var(--font-weight);
     font-style: var(--h5-style);
-    /* font-family: var(--h5-font); */
+    font-family: var(--h5-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
@@ -900,7 +900,7 @@ body {
     color: var(--text-title-h6, var(--h6-color));
     font-weight: var(--font-weight);
     font-style: var(--h6-style);
-    /* font-family: var(--h6-font); */
+    font-family: var(--h6-font, inherit);
     /* margin-block-start: var(--p-spacing); */
     /* margin-block-end: var(--p-spacing); */
   }
