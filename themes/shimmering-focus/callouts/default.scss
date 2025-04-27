@@ -11,6 +11,7 @@ html[saved-theme="light"] {
   .callout {
     @each $type in $callout-types {
       &[data-callout="#{$type}"] {
+        --color-rgb: var(#{"--callout-#{$type}"});
         --color: rgb(var(#{"--callout-#{$type}"}));
         --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
         --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
