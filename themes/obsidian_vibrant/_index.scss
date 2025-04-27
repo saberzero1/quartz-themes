@@ -11,11 +11,8 @@
 @use "extras/fonts/avenir.scss";
 @use "extras/fonts/inter.scss";
 @use "extras/fonts/source-code-pro.scss";
-@use "callouts.scss";
-
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
+@use "callouts/default.scss";
+@use "callouts/overrides.scss";
 
 :root {
   --anim-duration-none: 0;
@@ -483,16 +480,6 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
 }
 /* END DARK */
 
@@ -500,11 +487,6 @@ body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
   background-color: var(--background-primary);
-
-  .callout {
-    border: 1px solid var(--border);
-    background-color: var(--bg);
-  }
 
   .highlight,
   ::selection,

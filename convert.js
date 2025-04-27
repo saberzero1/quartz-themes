@@ -371,11 +371,18 @@ function setCallout(theme) {
   const callout =
     themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
       ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
-      : "default"
+      : "empty"
+
+  if (callout !== "") {
+    fs.copyFileSync(
+      `./extras/callouts/${callout}.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/overrides.scss`,
+    )
+  }
 
   fs.copyFileSync(
-    `./extras/callouts/${callout}.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts.scss`,
+    `./extras/callouts/default.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/callouts.scss`,
   )
 }
 
@@ -432,6 +439,7 @@ clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -555,7 +563,8 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
-  extras += `\n@use "callouts.scss";`
+  extras += `\n@use "callouts/default.scss";`
+  extras += `\n@use "callouts/overrides.scss";`
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
