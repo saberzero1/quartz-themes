@@ -357,7 +357,33 @@ function getExtras(theme) {
  * @returns {string[]} Array of extra fonts to install.
  */
 function getFonts(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  const defaultFonts = ["avenir", "inter", "source-code-pro"]
+  const result = themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  return result.length > 0 ? result : defaultFonts
+}
+
+/**
+ * Sets specified callouts styling
+ *
+ * @param {string} theme theme name
+ */
+function setCallout(theme) {
+  const callout =
+    themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
+      ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
+      : "empty"
+
+  if (callout !== "") {
+    fs.copyFileSync(
+      `./extras/callouts/${callout}.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/overrides.scss`,
+    )
+  }
+
+  fs.copyFileSync(
+    `./extras/callouts/default.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/default.scss`,
+  )
 }
 
 /**
@@ -413,6 +439,7 @@ clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -457,13 +484,17 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
-  const defaultFontExtras = ["avenir", "inter", "source-sans-pro"]
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,
       `./themes/${getTheme(manifest)}/extras/fonts${font.includes("/") ? `/${font.replace(/\/[^/]+$/, "")}` : ""}`,
     )
   })
+})
+
+// callouts
+manifestCollection.forEach((manifest) => {
+  setCallout(getValueFromDictionary(manifest, "name"))
 })
 
 // extras
@@ -532,6 +563,8 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
+  extras += `\n@use "callouts/default.scss";`
+  extras += `\n@use "callouts/overrides.scss";`
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
