@@ -382,7 +382,7 @@ function setCallout(theme) {
 
   fs.copyFileSync(
     `./extras/callouts/default.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/callouts.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/default.scss`,
   )
 }
 
