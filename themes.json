@@ -829,8 +829,8 @@
     },
     "glass-robo": {
       "compatibility": ["checking", "collection"],
-      "modes": ["dark", "light"],
-      "extras": [],
+      "modes": ["dark"],
+      "extras": ["hide-toggle"],
       "callouts": "glass",
       "fonts": ["figtree", "jetbrains-mono"]
     },
