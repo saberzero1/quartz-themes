@@ -1,0 +1,78 @@
+.callout {
+  --border: transparent !important;
+
+  padding: var(--size-4-3);
+
+  .callout-title {
+    padding-top: 0 !important;
+  }
+
+  .callout-title-inner {
+    font-weight: bold;
+    color: var(--text-normal);
+  }
+
+  .callout-content {
+    display: grid;
+    p {
+      margin: 0;
+    }
+  }
+
+  .callout-icon {
+    display: none;
+  }
+
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px rgba(var(--color-rgb), 0.5);
+  border-radius: 0px;
+
+  &::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(var(--color-rgb), 0.5) 0% transparent 53px,
+      transparent 53px transparent 100%
+    ) !important;
+    position: absolute;
+    left: -3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    border-radius: 0px;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    background: rgba(var(--color-rgb), 0.3) !important;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    border-left: 3px solid var(--color);
+    box-shadow: 0px 0px 34px 16px rgba(var(--color-rgb), 0.5);
+    border-radius: 0px;
+  }
+
+  &:has(> .callout-title .callout-title-inner:dir(rtl)) {
+    &::after {
+      right: -3px;
+      left: unset;
+    }
+
+    &::before {
+      right: 0px;
+      left: unset;
+    }
+  }
+}
+
+.callout.is-collapsible.is-collapsed {
+  margin-bottom: 0 !important;
+  .callout {
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
