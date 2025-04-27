@@ -45,6 +45,10 @@ compile-all: build fonts format clean-fonts
 [private]
 compile: build format
 
+[private]
+compile-single $theme:
+  node convert.js -- $theme
+
 [doc('Update themes')]
 update:
   git pull

@@ -2,6 +2,8 @@ import convertCssColorsToRgbWithSass from "./color-convert.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
+let singleThemeName = ""
+
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
  *
@@ -393,9 +395,17 @@ const folders = listFoldersInDirectory(obsidianFolder)
 
 // STEP 2
 let manifestCollection = []
-folders.forEach((folder) => {
-  manifestCollection.push(readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"))
-})
+if (singleThemeName === "") {
+  folders.forEach((folder) => {
+    manifestCollection.push(
+      readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"),
+    )
+  })
+} else if (singleThemeName !== "") {
+  manifestCollection.push(
+    readJsonFileAsDictionary(`${obsidianFolder}/${singleThemeName}`, "manifest.json"),
+  )
+}
 //console.log(manifestCollection)
 
 // STEP 3
@@ -406,6 +416,8 @@ manifestCollection.forEach((manifest) => {
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
+  } else if (args[0] !== "") {
+    singleThemeName = args[0]
   }
 })
 
