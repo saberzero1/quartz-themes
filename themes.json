@@ -831,7 +831,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
-      "callouts": "",
+      "callouts": "glass",
       "fonts": ["figtree", "jetbrains-mono"]
     },
     "golden-topaz": {
