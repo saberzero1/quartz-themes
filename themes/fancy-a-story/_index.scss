@@ -14,6 +14,7 @@
 @use "extras/fonts/orbitron.scss";
 @use "extras/fonts/playfair-display.scss";
 @use "extras/fonts/walter-turncoat.scss";
+@use "callouts.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",

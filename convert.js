@@ -363,6 +363,23 @@ function getFonts(theme) {
 }
 
 /**
+ * Sets specified callouts styling
+ *
+ * @param {string} theme theme name
+ */
+function setCallout(theme) {
+  const callout =
+    themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
+      ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
+      : "default"
+
+  fs.copyFileSync(
+    `./extras/callouts/${callout}.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts.scss`,
+  )
+}
+
+/**
  * Get the current theme name
  *
  * @param {Object} dict input dictionary
@@ -467,6 +484,11 @@ manifestCollection.forEach((manifest) => {
   })
 })
 
+// callouts
+manifestCollection.forEach((manifest) => {
+  setCallout(getValueFromDictionary(manifest, "name"))
+})
+
 // extras
 manifestCollection.forEach((manifest) => {
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
@@ -533,6 +555,7 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
+  extras += `\n@use "callouts.scss";`
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {

@@ -10,6 +10,7 @@
 @use "extras";
 @use "extras/fonts/cabin.scss";
 @use "extras/fonts/quicksand.scss";
+@use "callouts.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",

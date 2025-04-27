@@ -14,120 +14,140 @@
       "compatibility": ["full"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "abate": {
       "compatibility": ["partial"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["noto-sans"]
     },
     "abecedarium": {
       "compatibility": ["full"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "absolutegruv": {
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "abyssal": {
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "adrenaline": {
       "compatibility": ["full"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "adwaita": {
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cantarell"]
     },
     "agate": {
       "compatibility": ["full"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"]
     },
     "aged-whisky": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "al-dente": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["nunito-sans", "courier-prime", "bitter"]
     },
     "allium": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["icons/its"]
     },
     "amoled-serenity": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["bricolage-grotesque", "roboto", "montserrat"]
     },
     "anuppuccin": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["noto-serif"]
     },
     "apatheia": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "apex": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "arcane": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "atom": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "atomus": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "aura-dark": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "aura": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "ia-writer-mono",
         "ia-writer-duo",
@@ -139,48 +159,56 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cabin", "quicksand"]
     },
     "aurora": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "autotape": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ayu-light-mirage": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lora", "monaspace-neon"]
     },
     "ayu-mirage": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
     "base2tone": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "behave-dark": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "big-bold": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "eb-garamond",
         "fira-code",
@@ -195,108 +223,126 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "blackbird": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "blossom": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "blue-topaz": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lucida-handwriting", "icons/boxicons"]
     },
     "bolt": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["formular"]
     },
     "border": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "borealis": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "bossidian": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "brainhack": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cascadia-mono"]
     },
     "brutalism": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["archivo"]
     },
     "buena-vista": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "carbon": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ibm-plex-mono", "ibm-plex-sans"]
     },
     "cardstock": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "catppuccin": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["nunito-sans", "vollkorn"]
     },
     "celestial-night": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["bookerly", "hatolie", "merienda"]
     },
     "charcoal": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
     "chiaroscuroflow": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["manrope", "nunito-sans"]
     },
     "chime": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "archivo",
         "arima",
@@ -309,312 +355,364 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "cobalt-peacock": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "colored-candy": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "comfort-color-dark": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "comfort-dark": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["iosevka-web", "jetbrains-mono"]
     },
     "comfort-smooth": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "comfort": {
       "compatibility": ["partial", "collection"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "composer": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "consolas": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["inconsolata"]
     },
     "covert": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "creature": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["sf-mono"]
     },
     "creme-brulee": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["merriweather-sans"]
     },
     "cupertino": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["sf-pro-display"]
     },
     "cyber-glow": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ballet", "oxanium", "space-wham", "orbitron"]
     },
     "cybertron-shifted": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "cybertron": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "dark-castle": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dark-clarity": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["noto-sans", "jetbrains-mono"]
     },
     "dark-graphite-pie": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "dark-graphite": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "dark-moss": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "darkember": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "darkyan": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dawn": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "dayspring": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["crimson-pro", "figtree"]
     },
     "deeper-work": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "default": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["flow-circular"]
     },
     "dekurai": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "discordian": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["catamaran"]
     },
     "dracula-for-obsidian": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dracula-gemini": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dracula-lyt": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["monaco", "sf-mono"]
     },
     "dracula-official": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dracula-plus": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "monaco"]
     },
     "dracula-slim": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "dune": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "dunite": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "dynamic-color": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ebullientworks": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "eldritch": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "elegance": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["monaco"]
     },
     "emerald-echo": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "encore": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ethereon": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "evangelion": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "everblush": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "everforest-enchanted": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "everforest": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "evergreen-shadow": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
     "evilred": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "faded": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "fancy-a-story": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "chakra-petch",
         "limelight",
@@ -628,990 +726,1155 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["noto-serif"]
     },
     "feather": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "firefly": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "flexcyon": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "flexoki-warm": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "flexoki": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "focus": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "frost": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "fusion": {
       "compatibility": ["checking", "collection"],
       "modes": ["light", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "garden-gnome-adwaita-gtk": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "gdct-dark": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "gdct": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "github-theme": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "githubdhc": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["fira-code", "noto-sans"]
     },
     "gitsidian": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "glass-robo": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["figtree", "jetbrains-mono"]
     },
     "golden-topaz": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lucida-handwriting", "monaco"]
     },
     "green-nightmare": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "gummy-revived": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["peace-sans", "space-grotesk"]
     },
     "hackthebox": {
       "compatibility": ["full"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["open-sans"]
     },
     "halcyon": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "heboric": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "hipstersmoothie": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "hulk": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["monaco"]
     },
     "ia-writer": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-duo"]
     },
     "ib-writer": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-quattro"]
     },
     "iceberg": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "improved-potato": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ink": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "ion": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "its-theme": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["icons/its"]
     },
     "jotter": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "kakano": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["roboto", "sf-mono"]
     },
     "kanagawa-paper": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "kanagawa": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "kiwi-mono": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cascadia-mono"]
     },
     "kurokula": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["atkinson-hyperlegible", "jetbrains-mono"]
     },
     "lagom": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["formular"]
     },
     "latex": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["computer-modern-bright"]
     },
     "lavender-mist": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["noto-serif-kr"]
     },
     "lemons-theme": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "lesswrong": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "light-bright": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lato", "roboto", "work-sans"]
     },
     "listive": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["courgette", "karla", "open-sans"]
     },
     "lorens": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "lumines": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "lyt-mode": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["dm-mono", "dm-sans", "fira-code"]
     },
     "mado-11": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "mado-miniflow": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "magicuser": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "mammoth": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "maple": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["maple-mono"]
     },
     "material-3": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": ["material"],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "material-flat": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": ["material"],
+      "callouts": "",
       "fonts": ["roboto", "roboto-mono"]
     },
     "material-gruvbox": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": ["material"],
+      "callouts": "",
       "fonts": []
     },
     "material-ocean": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle", "material"],
+      "callouts": "",
       "fonts": []
     },
     "micro-mike": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "midnight-fjord": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["finlandica"]
     },
     "midnight": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "minimal-dark-coder": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle", "minimal"],
+      "callouts": "",
       "fonts": []
     },
     "minimal-dracula": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": ["minimal"],
+      "callouts": "",
       "fonts": []
     },
     "minimal-edge": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": ["minimal"],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "minimal-red": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle", "minimal"],
+      "callouts": "",
       "fonts": ["geist"]
     },
     "minimal-resources": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle", "minimal"],
+      "callouts": "",
       "fonts": []
     },
     "minimal": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": ["minimal"],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "mint-breeze": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
     "mistymauve": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["arvo", "permanent-marker"]
     },
     "mono-black-monochrome-charcoal": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "monochroyou": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "monokai": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "moonlight": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "mulled-wine": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "muted-blue": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "nebula": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["montserrat"]
     },
     "neo": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "neon-synthwave": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "neovim": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "neuborder": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "neutral-academia": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cormorant", "manrope"]
     },
     "nier": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "nightfox": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "nightingale": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["inconsolata", "noto-sans"]
     },
     "nobb": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "nordic": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["deadhead-script", "gentium-book-basic", "norwester"]
     },
     "northern-sky": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["finlandica"]
     },
     "notation-2": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lyons-serif", "ia-writer-duospace"]
     },
     "notation": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["sf-mono"]
     },
     "notswift": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["roboto", "sf-mono", "sf-pro-display"]
     },
     "novadust": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "obsidian-boom": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "obsidian-gruvbox": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "obsidian-nord": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "obsidian_ia": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-mono", "ia-writer-quattro"]
     },
     "obsidian_vibrant": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "obsidianite": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["rubik", "space-mono"]
     },
     "obsidianotion": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["fira-code", "ia-writer-quattro", "ibm-plex-sans"]
     },
     "obuntu": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "oistnb": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "old-world": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "oldsidian-purple": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "oledblack": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "oliviers-theme": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ibm-plex-mono"]
     },
     "onenice": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ono-sendai": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cairo", "fira-code"]
     },
     "orange": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "oreo": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "origami": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "origin": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "overcast": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "pale": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "panic-mode": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "penumbra": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "perso": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "phoenix": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "sf-pro-display"]
     },
     "pine-forest-berry": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["inconsolata"]
     },
     "pink-topaz": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lucida-handwriting", "monaco"]
     },
     "pisum": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["monaco"]
     },
     "playground": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["bricolage-grotesque"]
     },
     "pln": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "poimandres": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "polka": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["rubik", "ibm-plex-mono"]
     },
     "primary": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cascadia-code"]
     },
     "prime": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "prism": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "source-sans-3"]
     },
     "proper-dark": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "protocolblue": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "prussian-blue": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "pure": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "purple-aurora": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "purple-owl": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["monaspace-argon"]
     },
     "pxld": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "qlean": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-mono", "noto-sans-jp"]
     },
     "red-graphite": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "red-shadow": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["fira-code", "montserrat"]
     },
     "refined-default": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "reshi": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "noto-sans"]
     },
     "retro-windows": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "retronotes": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ibm-plex-mono"]
     },
     "reverie": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "rezin": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "rift": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "rmaki": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["fira-code"]
     },
     "rose-pine-moon": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "rose-pine-2": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "rose-pine": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "rose-red": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "royal-velvet": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["fira-sans", "fira-code"]
     },
     "sad-machine-druid": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["hack"]
     },
     "sakurajima": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "salem": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "sanctum-reborn": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["sf-mono"]
     },
     "sanctum": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["sf-mono"]
     },
     "sandover": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["special-elite"]
     },
     "sandstorm": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["flow-circular"]
     },
     "sanguine": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["slasher-film"]
     },
     "sea-glass": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["euclid-circular-a", "hack"]
     },
     "seamless-view": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "sei": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "serenity": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"]
     },
     "serif": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "serika": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "shade-sanctuary": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["computer-modern-bright", "jetbrains-mono"]
     },
     "shadeflow": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["geist", "geist-mono"]
     },
     "shiba-inu": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "shimmering-focus": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "ia-writer-quattro-s",
         "eb-garamond",
@@ -1624,354 +1887,413 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "simple": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-quattro", "fira-code", "ibm-plex-sans"]
     },
     "simplicity": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "simply-colorful": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "sodalite": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "solarized": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "solitude": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["fira-code"]
     },
     "soloing": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "soothe": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "space": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["bai-jamjuree", "orbitron", "unbounded"]
     },
     "sparkling-day": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "sparkling-night": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "sparkling-wisdom": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["flow-circular", "open-sans"]
     },
     "spectrum-blue": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "spectrum": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "spring": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["apercu-pro"]
     },
     "sqdthone": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cascadia-code", "source-sans-pro"]
     },
     "strict": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "subtlegold": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["flow-circular", "sf-mono"]
     },
     "suddha": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["monaco", "roboto"]
     },
     "sunbather": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["roboto"]
     },
     "synthwave-84": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "synthwave": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "terminal": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["fira-code"]
     },
     "theme-that-shall-not-be-named": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "things-3": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["formular"]
     },
     "things": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "tiniri": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "tokyo-night-storm": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["anonymous-pro", "jetbrains-mono"]
     },
     "tokyo-night": {
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono"]
     },
     "tomorrow-night-bright": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "tomorrow": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "toms-theme": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "trace-labs": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "transient": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "transparent": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "typewriter": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"]
     },
     "typomagical": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["alegreya", "amiri", "bitter", "playfair-display", "spectral"]
     },
     "typora-vue": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "ukiyo": {
       "compatibility": ["removed"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["cmu-typewriter-text", "jetbrains-mono"]
     },
     "ultra-lobster": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["nightingale", "monaspace-neon"]
     },
     "underwater": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["lexend"]
     },
     "ursa": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "vanilla-amoled-color": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "vanilla-amoled": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "vanilla-palettes": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "vauxhall": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "velvet-moon": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["finlandica"]
     },
     "venom": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "vercel-geist": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["geist", "geist-mono"]
     },
     "vicious": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "violet-evening": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "virgo": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "vortex": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["rubik"]
     },
     "w95": {
       "compatibility": ["checking", "collection"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "wasp": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "wikipedia": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["archivo", "linux-libertine"]
     },
     "wilcoxone": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["lato", "fira-code"]
     },
     "willemstad": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": [
         "crimson-pro",
         "dm-mono",
@@ -1984,54 +2306,63 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["myriad-apple"]
     },
     "wiselight": {
       "compatibility": ["checking"],
       "modes": ["light"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["karla", "open-sans"]
     },
     "wombat": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": []
     },
     "wy-console": {
       "compatibility": ["partial"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["audiowide", "dotgothic16"]
     },
     "wyrd": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["architects-daughter", "neucha", "space-mono"]
     },
     "yue": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "zario": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "zen": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "extras": [],
+      "callouts": "",
       "fonts": []
     },
     "zenburn": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "extras": ["hide-toggle"],
+      "callouts": "",
       "fonts": ["inconsolata"]
     }
   }
