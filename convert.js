@@ -357,7 +357,9 @@ function getExtras(theme) {
  * @returns {string[]} Array of extra fonts to install.
  */
 function getFonts(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  const defaultFonts = ["avenir", "inter", "source-code-pro"]
+  const result = themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  return result.length > 0 ? result : defaultFonts
 }
 
 /**
@@ -457,7 +459,6 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
-  const defaultFontExtras = ["avenir", "inter", "source-sans-pro"]
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,
