@@ -13,22 +13,29 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
 
 ### GitHub Actions (Recommended)
 
-Add the following lines to your `deploy.yml` before the build step:
+Add the following lines to your `deploy.yaml` before the jobs step:
+
+```yaml
+env:
+  THEME_NAME: tokyo-night # replace with theme of choice
+```
+
+Add the following lines to your `deploy.yaml` before the build step:
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 > [!IMPORTANT]
-> Replace `<THEME-NAME>` with your desired theme name. See [Compatibility List](#supported-themes)
+> Replace the `THEME-NAME` under `env` with your desired theme name. See [Compatibility List](#supported-themes)
 
 > [!TIP]
 > Example for Tokyo Night:
 >
 > ```yaml
-> - name: Fetch Quartz Theme
->   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
+> env:
+>   THEME_NAME: tokyo-night
 > ```
 
 The full script would look like this:
@@ -40,6 +47,9 @@ on:
   push:
     branches:
       - v4
+
+env:
+  THEME_NAME: tokyo-night
 
 permissions:
   contents: read
@@ -63,7 +73,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Fetch Quartz Theme
-        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
