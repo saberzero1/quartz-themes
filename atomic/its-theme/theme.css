@@ -15735,7 +15735,6 @@ iframe {
   --link-external-color-hover: var(--soft-text);
   --highlight: var(--td) !important;
   --text-highlight-bg: var(--highlight);
-  --hr-icon-symbol:                                 !important;
   --header-text-align: center;
   --h1-text-align: var(--header-text-align);
   --h2-text-align: var(--header-text-align);
