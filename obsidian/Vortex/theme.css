@@ -1104,34 +1104,6 @@ pre[class$='python']:before {
 
 /* +-------------------------------------------------+ */
 /* |                                                 | */
-/* |               BLOCK QUOTE STYLING               | */
-/* |                                                 | */
-/* +-------------------------------------------------+ */
-.HyperMD-quote,
-.el-blockquote {
-  color: var(--theme-color);
-  background-color: var(--accent-opacity-5) !important;
-  border: 2px solid var(--theme-color);
-  text-shadow: 0 0 0.5em var(--theme-color);
-  border-radius: 10px;
-  background-clip: padding-box;
-  font-weight: bold;
-  box-shadow: 0 0 10px var(--accent-opacity-30);
-}
-
-.HyperMD-quote.HyperMD-quote-1.cm-line,
-.el-blockquote{
-  padding: 1rem;
-  margin-bottom: 15px !important;
-}
-
-.HyperMD-quote .cm-transparent,
-.el-blockquote{
-  text-shadow: none;
-}
-
-/* +-------------------------------------------------+ */
-/* |                                                 | */
 /* |                 CALLOUT STYLING                 | */
 /* |                                                 | */
 /* +-------------------------------------------------+ */

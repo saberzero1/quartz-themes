@@ -215,6 +215,15 @@ a, .cm-link, .cm-url, .cm-hmd-internal-link {
   overflow: visible;
 }
 
+/* Tables */
+body { --table-border-color: var(--ion-color); }
+.markdown-rendered :is(td, th) {
+  box-shadow: var(--bloom-box) inset;
+}
+.markdown-rendered table {
+  box-shadow: var(--bloom-box);
+}
+
 /* Buttons */
 :root select.dropdown,
 :root:root button {
@@ -303,7 +312,7 @@ TODO
 
 /* Settings */
 
-:root:root :is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
+:root:root:root :is(.horizontal-tab-nav-item, .vertical-tab-nav-item) {
   background-color: transparent;
 }
 

@@ -1167,9 +1167,9 @@ body {
     --color-pink-hsl: 313, 95%, 68%;
 	--canvas-color: 20, 20, 20;
     --canvas-dot-pattern: var(--color-base-50);
-	--color-base-00: #fefefe;
-	--color-base-05: #FCFCFC;
-	--color-base-10: #e2e2e2;
+	--color-base-00: #f8f5f3;
+	--color-base-05: #f0ece9;
+	--color-base-10: #e4e1de;
     --color-base-20: #e9e9e9;
 	--color-base-25: #d3d3d3;
     --color-base-30: #d3d3d3;
@@ -2489,25 +2489,25 @@ body {
     --radius-s: 0px !important;
 }
 
-.o-hack-d .workspace-tab-header-container,
-.o-hack-d .workspace-split.mod-vertical .workspace-tab-header-container,
-.o-hack-d .workspace-tabs.mod-top-right-space .workspace-tab-header-container,
-.o-hack-d .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+.o-hack-d.workspace-tab-header-container,
+.o-hack-d.workspace-split.mod-vertical .workspace-tab-header-container,
+.o-hack-d.workspace-tabs.mod-top-right-space .workspace-tab-header-container,
+.o-hack-d.workspace-tabs.mod-top-left-space .workspace-tab-header-container {
     background: #ffffff !important;
     height: 41px
 }
 
-.o-hack-d .workspace-tab-header-inner .workspace-tab-header-inner-icon {
+.o-hack-d.workspace-tab-header-inner .workspace-tab-header-inner-icon {
     color: #000000;
 }
 
-.o-hack-d .workspace-tab-header-tab-list .clickable-icon,
-.o-hack-d .workspace-tab-header-new-tab .clickable-icon {
+.o-hack-d.workspace-tab-header-tab-list .clickable-icon,
+.o-hack-d.workspace-tab-header-new-tab .clickable-icon {
     color: #000000 !important;
 }
 
-.o-hack-d .sidebar-toggle-button:not(.workspace-ribbon.mod-left .sidebar-toggle-button) .clickable-icon,
-.o-hack-d .workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon {
+.o-hack-d.sidebar-toggle-button:not(.workspace-ribbon.mod-left .sidebar-toggle-button) .clickable-icon,
+.o-hack-d.workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon {
     color: #000000 !important;
 }
 
@@ -2515,7 +2515,7 @@ body {
     background-color: #ffffff !important;
 }
 
-.o-hack-d .titlebar-button {
+.o-hack-d.titlebar-button {
     color: #000000;
 }
 

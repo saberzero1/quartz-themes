@@ -1,7 +1,9 @@
 :root[saved-theme="light"] {
-  --text-normal: hsl(var(--accent-h), 12%, 12%);
+  --text-normal: hsl(var(--accent-h), 6%, 12%);
   --text-muted: hsl(var(--accent-h), 9%, 36%);
-  --text-faint: hsl(var(--accent-h), 6%, 64%);
+  --text-faint: hsl(var(--accent-h), 12%, 64%);
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--color-accent-2);
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -38,16 +40,24 @@
   --accent-s: var(--accent-light-s);
   --accent-l: var(--accent-light-l);
   --accent-light-h: 232;
-  --accent-light-s: 80%;
-  --accent-light-l: 64%;
+  --accent-light-s: 96%;
+  --accent-light-l: 60%;
   --color-accent-hsl: var(--color-accent-hsl-light);
   --color-accent: var(--color-accent-light);
   --color-accent-1: var(--color-accent-1-light);
   --color-accent-2: var(--color-accent-2-light);
   --color-accent-3: var(--color-accent-3-light);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-1-light: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2-light: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
   --background-modifier-border: hsla(
     var(--accent-h),
@@ -112,10 +122,10 @@
   --input-radius-light: 5px;
   --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
     inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
     inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --code-background: var(--code-background-light);
   --code-border: var(--code-border-light);
 }

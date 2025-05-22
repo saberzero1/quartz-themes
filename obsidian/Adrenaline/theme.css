@@ -72,7 +72,7 @@ svg * {
     --accent-color-hsl: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
     --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
     --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
-
+    
     --accent-color-light10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
     --accent-color-light9: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .9);
     --accent-color-light8: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .8);
@@ -217,7 +217,7 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-r
 }
 
 .workspace-tab-header {
-
+    
     transition: var(--anim-duration-none) !important;
 }
 
@@ -284,7 +284,7 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-r
 }
 
 .mod-root .workspace-tab-header.tappable {
-    padding: 0px !important;
+    padding: 0px !important;	
     overflow: hidden !important;
 }
 
@@ -390,12 +390,12 @@ button:not(.clickable-icon) {
     border-radius: 5px;
 }
 
-button.mod-cta, button {
+button.mod-cta {
     background-color: var(--accent-color-bg2);
     box-shadow: inset 0 10px 10px -10px rgba(255, 255, 255, 0.049), inset 0 -10px 10px -10px var(--accent-color-light1);
-    color: black;
     -webkit-transition: background-color .2s ease-out;
     padding-bottom: 1.5px;
+    color: black;
 }
 button.mod-cta:hover, button:hover{
     background-color: var(--accent-color-light10) !important;
@@ -570,8 +570,8 @@ button.mod-cta:hover, button:hover{
 
 
 /*HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used*/
-div[data-path$='000_attachments_000'],
-div[data-path$='000_attachments_000'] + div.nav-folder-children
+div[data-path$='000_attachments_000'], 
+div[data-path$='000_attachments_000'] + div.nav-folder-children 
 {
 	display: none;
 }
@@ -610,6 +610,11 @@ img {
 }
 
 
+img[alt="c"] {
+    mix-blend-mode: multiply !important;
+    filter: grayscale(100%) !important;
+}
+
 
 /*HIGHLIGHTING*/
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
@@ -627,7 +632,7 @@ img {
 
 /*ITALIC TEXT COLOR*/
 i, em, span.cm-em {
-    color: grey;
+    color: grey; 
 }
 /****************/
 
@@ -635,13 +640,13 @@ i, em, span.cm-em {
 
 /*decrease font weight*/
 .markdown-preview-view, .view-content>.cm-s-obsidian, .view-content>.markdown-source-view.mod-cm6.is-live-preview>.cm-scroller, body {
-    font-weight: 400;
+    font-weight: 300;
 }
 .cm-html-embed th, .markdown-rendered th {
-    font-weight: 400;
+    font-weight: 300;
 }
 table {
-    font-weight: 400;
+    font-weight: 300;
 }
 .view-content {
     border: 0px;
@@ -660,7 +665,7 @@ table {
 	margin-bottom: 0px !important;
     border-left: 3px solid var(--accent-color-light10);
     padding-top: 0px !important;
-    padding-left: 25px !important;
+    padding-left: 21px !important;
     box-shadow: var(--accent-color-light10);
 }
 
@@ -674,7 +679,7 @@ table {
     margin-bottom: 0px !important;
     border-left: 3px dashed var(--accent-color-light10);
     padding-top: 0px !important;
-    padding-left: 25px !important;
+    padding-left: 21px !important;
 }
 
 .markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-2 {
@@ -687,7 +692,7 @@ table {
     margin-bottom: 0px !important;
     border-left: 3px dotted var(--accent-color-light10);
     padding-top: 0px !important;
-    padding-left: 25px !important;
+    padding-left: 21px !important;
 }
 
 .markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-3 {
@@ -713,7 +718,7 @@ table {
 	margin-bottom: 0px !important;
     font-size: 1.5em;
     border-left: 3px solid var(--accent-color-light10);
-    padding-left: 25px;
+    padding-left: 21px;
     margin-left: -25px;
 }
 
@@ -723,7 +728,7 @@ table {
 	margin-bottom: 0px !important;
     font-size: 1.5em;
     border-left: 3px dashed var(--accent-color-light10);
-    padding-left: 25px;
+    padding-left: 21px;
     margin-left: -25px;
 }
 .markdown-rendered h3 {
@@ -732,7 +737,7 @@ table {
 	margin-bottom: 0px !important;
     font-size: 1.5em;
     border-left: 3px dotted var(--accent-color-light10);
-    padding-left: 25px;
+    padding-left: 21px;
     margin-left: -25px;
 }
 .markdown-rendered h4 {
@@ -765,16 +770,33 @@ sp {
 /****************/
 
 .el-p + .el-p {
-    margin-top: 20px !important;
+    margin-top: 1em !important;
 }
 
+p + p {
+    margin-top: 1em !important;
+}
+
+p {
+    margin-top: 0px !important;
+    margin-bottom: .1em !important;
+}
+
+p + ul {
+    margin-top: 0px !important;
+}
+
+ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
 
 p:has(+ ul.has-list-bullet) {
     margin-bottom: 0px;
 }
 
 .el-p:has(+ .el-ul) {
-    margin-block-end: -16px !important;
+    margin-block-end: -em !important;
 }
 
 /*LISTS*/
@@ -782,12 +804,21 @@ p:has(+ ul.has-list-bullet) {
 	margin: 0px;
 }
 
+.el-ul + .el-p {
+    margin-top: .5em !important;
+}
+
 li {
 	margin-left: 1.6em !important;
 }
 
 ::marker {
-	color: var(--accent-color-light10) !important;
+	color: var(--accent-color-light10) !important;	
+}
+
+
+.list-bullet::after {
+    background-color: var(--accent-color-light10);
 }
 /****************/
 
@@ -815,12 +846,12 @@ th:first-child {border-top-left-radius: var(--table-border-radius)}
 th:last-child {border-top-right-radius: var(--table-border-radius)}
 tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
 tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
-
+      
 /* Redo the borders */
 :root :is(td, th) {
     border-width: 0 var(--table-border-width) var(--table-border-width) 0;
 }
-
+      
 .cm-html-embed table, .markdown-rendered table {
     margin-top: 15px;
 }
@@ -882,6 +913,11 @@ mjx-math {
  {
     background: var(--accent-color-light05);
     border-left: 2px solid var(--accent-color-light10);
+    padding-left: 5px;
+}
+
+.list-bullet + blockquote {
+    margin-top: .05em !important;
 }
 /************************************************************************************/
 
@@ -892,14 +928,29 @@ mjx-math {
 
 /*CALLOUTS***********************************************************************************************/
 .callout {
-	padding: 12px;
-	padding-bottom: 5px !important;
-	padding-top: 8px;
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-	background-color: var(--accent-color-light08);
-    border: 1px solid var(--accent-color-light10);
+	padding: .7em;
+	padding-bottom: .2em !important; 
+	padding-top: .7em;
+	margin-top: .3em !important;
+	margin-bottom: .5em !important;
+	background-color: var(--accent-color-light08) !important;
+    border: solid 1px var(--accent-color-light10) !important;
+    box-shadow: inset 0px 0px 1000px 1px var(--accent-color-light1) !important;
 }
+
+.callout-title-inner {
+    margin-bottom: .5em;
+}
+.callout-content blockquote {
+    margin-bottom: .2em !important;
+    margin-top: .2em !important;
+}
+
+.callout-content ol {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
 
 .callout-content {
 	overflow: visible;
@@ -1000,3 +1051,12 @@ body {
 .kanban-plugin__item-title-wrapper {
     background: white;
 }
+
+
+
+
+
+
+
+
+

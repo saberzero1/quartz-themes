@@ -3,7 +3,7 @@
 name: ITS Theme Settings
 id: ITS
 settings:
-    -
+    - 
         id: info-text-SlRvb-ITS-Theme
         type: info-text
         title: "ITS Theme by SlRvb"
@@ -23,7 +23,7 @@ settings:
         id: ITS-Workspace
         type: heading
         level: 1
-        collapsed: true
+        collapsed: true    
     -
         title: Sizes
         id: ITS-Sizes
@@ -192,7 +192,7 @@ settings:
         format: px
         min: 10
         max: 50
-        step: 1
+        step: 1    
     -
         title: Popover
         id: ITS-Sizing-Popover
@@ -241,7 +241,7 @@ settings:
         min: 40
         max: 100
         step: 5
-    -
+    - 
         title: Titlebar
         id: ITS-Titlebar
         type: heading
@@ -290,13 +290,13 @@ settings:
             -
                 label: Wide
                 value: sidebar-tabs-wide
-            -
+            - 
                 label: Underline
                 value: sidebar-tabs-underline
-            -
+            - 
                 label: Overline
                 value: sidebar-tabs-overline
-            -
+            - 
                 label: Tabular
                 value: sidebar-tabs-tabular
     -
@@ -314,8 +314,8 @@ settings:
         type: class-select
         allowEmpty: true
         default: none
-        options:
-            -
+        options: 
+            - 
                 label: Plain
                 value: sidebar-ribbon-float
             -
@@ -326,14 +326,14 @@ settings:
         id: ITS-Sidebar-Ribbon-Float-Position
         type: class-select
         default: sidebar-float-bottom
-        options:
+        options: 
             -
                 label: Bottom
                 value: sidebar-float-bottom
             -
                 label: Center
                 value: sidebar-float-center
-            -
+            - 
                 label: Top
                 value: sidebar-float-top
 
@@ -343,7 +343,7 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: File Explorer Styling
         id: file-explorer-flat
         type: class-toggle
@@ -352,7 +352,7 @@ settings:
         id: ITS-folder-arrows
         type: class-select
         default: folder-arrow-hidden
-        options:
+        options: 
             -
                 label: Hidden
                 value: folder-arrow-hidden
@@ -362,12 +362,12 @@ settings:
             -
                 label: Display On Hover
                 value: folder-arrow
-    -
-        title: Disable Bold Folder & Hover
+    - 
+        title: Disable Bold Folder & Hover 
         description: Remove bold styling from folders & hovering on items
         id: file-explorer-boldless
         type: class-toggle
-    -
+    - 
         title: Disable Bold on Hover
         description: Remove bold styling from hovering on items
         id: file-explorer-boldless-hover
@@ -449,12 +449,12 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Background Image
         description: Toggle to apply background image to vault
         id: background-image
         type: class-toggle
-    -
+    - 
         title: Background Image
         id: background-image-url
         type: variable-text
@@ -597,7 +597,7 @@ settings:
         description: Minimalistic/distraction free layout design for notes.
         id: writing
         type: class-toggle
-    -
+    - 
         title: Disable Source View Styling
         description: Undo sizing/style fixes to make source view look more like plain text
         id: disable-source-styling
@@ -646,7 +646,7 @@ settings:
         collapsed: true
     -
         title: Text Font
-        description: Changes text font for preview and edit mode.
+        description: Changes text font for preview and edit mode. 
         id: default-font
         type: variable-text
         default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
@@ -716,7 +716,7 @@ settings:
         id: ITS-Image
         type: heading
         level: 2
-        collapsed: true
+        collapsed: true    
     -
         title: Live Preview Image Float
         id: lp-img-float
@@ -791,14 +791,14 @@ settings:
         type: class-select
         allowEmpty: true
         default: none
-        options:
+        options: 
             -
                 label: Note Title Gradient
                 value: file-header-gradient
             -
                 label: Note Title Underline
                 value: note-title-underline
-            -
+            - 
                 label: Note Title Overline
                 value: note-title-overline
     -
@@ -811,7 +811,7 @@ settings:
             -
                 label: Heading
                 value: inline-title-style-heading
-            -
+            - 
                 label: Text
                 value: inline-title-style-text
     -
@@ -830,10 +830,10 @@ settings:
             -
                 label: Small
                 value: inline-title-small
-            -
+            - 
                 label: Medium
                 value: inline-title-medium
-            -
+            - 
                 label: Large
                 value: inline-title-large
     -
@@ -859,10 +859,10 @@ settings:
             -
                 label: Left
                 value: inline-title-position-left
-            -
+            - 
                 label: Center
                 value: inline-title-position-center
-            -
+            - 
                 label: Right
                 value: inline-title-position-right
     -
@@ -1001,7 +1001,7 @@ settings:
         title: Heading 4
         id: h4-font
         type: variable-text
-        default: '"Calisto MT"'
+        default: '"Calisto MT"'      
     -
         title: Heading 5
         id: h5-font
@@ -1071,7 +1071,7 @@ settings:
         format: px
         min: 12
         max: 40
-        step: 2
+        step: 2	
     -
 		title: Header Colors
 		id: ITS-Header-Colors
@@ -1435,7 +1435,7 @@ settings:
         title: Links
         id: ITS-Links
         type: heading
-        level: 2
+        level: 2 
         collapsed: true
     -
         title: Link Style
@@ -1444,13 +1444,13 @@ settings:
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: Underline
                 value: link-underline
-            -
+            - 
                 label: Notion Style
                 value: link-notion
-            -
+            - 
                 label: All Caps
                 value: link-caps
     -
@@ -1477,7 +1477,7 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Default Bullet Disc Shape
         id: list-default-bullet
         type: class-toggle
@@ -1502,7 +1502,7 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    -
+    - 
         title: Bullet Shape
         description: Add quotes around your new bullet. For example "~"
         id: bullet
@@ -1542,16 +1542,16 @@ settings:
         min: 1
         max: 16
         step: 1
-    -
+    - 
         title: Original Bullet Lines
         description: Lines appear beside bullet
         id: list-bullet-side-lines
         type: class-toggle
-    -
+    - 
         title: Alternate Indentation Style
         id: alternate-indent
         type: class-toggle
-    -
+    - 
         title: Remove Spaced List Styling
         description: Remove spacing of all bullets if bullets are separated by a new line
         id: disable-spaced-lists
@@ -1562,23 +1562,23 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Disable Alternate Checkboxes
         id: alt-chkbx-off
         type: class-toggle
-    -
+    - 
         title: Colorful Task Text
         description: Add color to the text of the task.
         id: check-color
         type: class-toggle
         default: true
-    -
+    - 
         title: Colorful Task Backgrounds
         description: Add color to the background of the task.
         id: check-bg
         type: class-toggle
         default: true
-    -
+    - 
         title: Normal Task Text
         description: Reapply regular text color and font weight to the text of the task.
         id: check-text
@@ -1687,7 +1687,7 @@ settings:
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: Original Callout Styling
                 value: callout-original
             -
@@ -1706,7 +1706,7 @@ settings:
         title: Disable ITS Quote Callout Styling
         id: default-callout-quote
         type: class-toggle
-    -
+    - 
         title: Tags
         id: Tags
         type: heading
@@ -1724,10 +1724,10 @@ settings:
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: Bubble Tags
                 value: tag-bubble
-            -
+            - 
                 label: Notion Tags
                 value: tag-notion
     -
@@ -1780,7 +1780,7 @@ settings:
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: Add Table Borders
                 value: tables-borders
             -
@@ -1789,12 +1789,12 @@ settings:
             -
                 label: Wikipedia
                 value: tables-style-wikipedia
-    -
+    - 
         title: Center Tables
         description: Center tables to middle of page
         id: tables-center
         type: class-toggle
-    -
+    - 
         title: Wide Table
         description: Tables widened to touch ends of the page
         id: tables-wide
@@ -1804,7 +1804,7 @@ settings:
         description: Unwrap tables in source mode
         id: table-unwrap
         type: class-toggle
-    -
+    - 
         title: Disable Row Hover Highlight
         id: tables-no-hover
         type: class-toggle
@@ -1812,7 +1812,7 @@ settings:
         title: Table Header Adjustments
         id: ITS-Table-Header-Adj
         type: heading
-        level: 3
+        level: 3 
         collapsed: true
     -
         title: Table Header Height Padding
@@ -1853,7 +1853,7 @@ settings:
         title: Table Cell Adjustments
         id: ITS-Table-Cell-Adj
         type: heading
-        level: 3
+        level: 3 
         collapsed: true
     -
         title: Table Cell Height Padding
@@ -1894,7 +1894,7 @@ settings:
         title: Horizontal Line
         id: ITS-HR-Line
         type: heading
-        level: 2
+        level: 2 
         collapsed: true
     -
         title: Horizontal Line Centered Vertically
@@ -1928,12 +1928,12 @@ settings:
         id: hr-no-icon
         type: class-toggle
     -
-        title: Horizontal Line Symbol
+        title: Horizontal Line Symbol 
         id: ITS-HR-Line-Symbol
         type: heading
         level: 3
-        collapsed: true
-    -
+        collapsed: true        
+    - 
         title: Horizontal Line Symbol
         description: Add quotations around symbol ("⚡"). Use the codepoint for symbols from supported font icons ("\e800").
         id: hr-icon-symbol
@@ -1964,9 +1964,9 @@ settings:
         title: Embeds
         id: ITS-Embeds
         type: heading
-        level: 2
+        level: 2 
         collapsed: true
-    -
+    - 
         title: Clean Embeds
         description: Embeds that look like they're part of the note.
         id: embed-clean
@@ -1984,7 +1984,7 @@ settings:
         title: Canvas
         id: ITS-Canvas
         type: heading
-        level: 2
+        level: 2 
         collapsed: true
     -
         title: Canvas Cards Styling
@@ -2012,7 +2012,7 @@ settings:
         title: Properties / Metadata
         id: ITS-Metadata
         type: heading
-        level: 2
+        level: 2 
         collapsed: true
     -
         title: Metadata Key Font Size
@@ -2041,20 +2041,20 @@ settings:
         min: 8
         max: 15
         step: 1
-    -
+    - 
         title: Metadata Colorful Label Styling
         id: select
         type: class-select
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: Text Color
                 value: metadata-label-text-color
-            -
+            - 
                 label: Label Background
                 value: metadata-label-background
-    -
+    - 
         title: Metadata Value Background
         id: metadata-value-background
         type: class-toggle
@@ -2068,7 +2068,7 @@ settings:
             - left
             - center
             - right
-    -
+    - 
         title: Metadata Title No Icon
         id: metadata-title-no-icon
         type: class-toggle
@@ -2084,28 +2084,28 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Text
         id: text
         type: variable-themed-color
         format: hex
         default-dark: '#bccad8'
         default-light: '#697580'
-    -
+    - 
         title: Soft Text
         id: soft-text
         type: variable-themed-color
         format: hex
         default-dark: '#aab3ca'
         default-light: '#d04e4e'
-    -
+    - 
         title: Faint Text
         id: text-faint
         type: variable-themed-color
         format: hex
         default-dark: '#4e5b6f'
         default-light: '#4e5b6f'
-    -
+    - 
         title: File Explorer Titles
         description: File/Folder text color.
         id: nav-item-color
@@ -2136,7 +2136,7 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Note
         description: Note and sidebar colors.
         id: note
@@ -2144,14 +2144,14 @@ settings:
         format: hex
         default-dark: '#1a1e24'
         default-light: '#f8fbff'
-    -
+    - 
         title: Outer Sidebar
         id: outer-bar
         type: variable-themed-color
         format: hex
         default-dark: '#0e0f15'
         default-light: '#dfe7ef'
-    -
+    - 
         title: Sidebar
         description: Change only sidebar, right settings pane colors.
         id: side-bar
@@ -2159,7 +2159,7 @@ settings:
         format: hex
         default-dark: '#1a1e24'
         default-light: '#f8fbff'
-    -
+    - 
         title: Dark Sidebar
         description: Left settings bar, <i></i> background, graph background, and pane separator colors.
         id: dark-sidebar
@@ -2193,7 +2193,7 @@ settings:
         format: hex
         default-dark: '#7c2929'
         default-light: '#c24747'
-    -
+    - 
         title: File Icon
         description: File icon color.
         id: file-icon-color
@@ -2201,7 +2201,7 @@ settings:
         format: hex
         default-dark: '#586477'
         default-light: '#a6bbde'
-    -
+    - 
         title: Folder Icon
         description: Folder icon color.
         id: folder
@@ -2209,7 +2209,7 @@ settings:
         format: hex
         default-dark: '#883737'
         default-light: '#c14343'
-    -
+    - 
         title: Folder Icon Open
         description: Open folder icon color.
         id: folder-open
@@ -2252,7 +2252,7 @@ settings:
         id: ITS-Colors-Headings
         type: heading
         level: 3
-    -
+    - 
         title: Headings
         description: Heading (Vault, etc) Color
         id: headers
@@ -2265,14 +2265,14 @@ settings:
         id: ITS-Colors-Tags
         type: heading
         level: 3
-    -
+    - 
         title: Tag Background
         id: tag
         type: variable-themed-color
         format: hex
         default-dark: '#571a1a'
         default-light: '#c65656'
-    -
+    - 
         title: Tag Text Color
         id: tag-color
         type: variable-themed-color
@@ -2284,14 +2284,14 @@ settings:
         id: ITS-Colors-Lists
         type: heading
         level: 3
-    -
+    - 
         title: Bullet Color
         id: list-marker-color
         type: variable-themed-color
         format: hex
         default-dark: '#883737'
         default-light: '#c14343'
-    -
+    - 
         title: Number Color
         id: list-numbered-color
         type: variable-themed-color
@@ -2310,7 +2310,7 @@ settings:
         id: ITS-Colors-Blockquotes
         type: heading
         level: 3
-    -
+    - 
         title: Embed/Blockquote
         description: Embed/Blockquote color.
         id: embed-bg
@@ -2318,7 +2318,7 @@ settings:
         format: hex
         default-dark: '#10161d'
         default-light: '#f1f5ff'
-    -
+    - 
         title: Blockquote Border
         description: Blockquote Border color.
         id: blockquote-border-color
@@ -2331,14 +2331,14 @@ settings:
         id: ITS-Colors-Code
         type: heading
         level: 3
-    -
+    - 
         title: Code Background
         id: code-bg
         type: variable-themed-color
         format: hex
         default-dark: '#232831'
         default-light: '#eef6ff'
-    -
+    - 
         title: Code Text
         id: code-text
         type: variable-themed-color
@@ -2350,14 +2350,14 @@ settings:
         id: ITS-Colors-HR
         type: heading
         level: 3
-    -
+    - 
         title: HR Border Line
         id: hr
         type: variable-themed-color
         format: hex
         default-dark: '#3c5274'
         default-light: '#d6deea'
-    -
+    - 
         title: HR Icon
         id: hr-icon-color
         type: variable-themed-color
@@ -2410,7 +2410,7 @@ settings:
         type: variable-themed-color
 		format: hex
         default-dark: '#e06c75'
-        default-light: '#a35158'
+        default-light: '#a35158'	
     -
 		title: Table Alt Row Colors
 		description: Alternating row/column color for table.
@@ -2432,14 +2432,14 @@ settings:
         id: ITS-Colors-Others
         type: heading
         level: 3
-    -
+    - 
         title: Comments
         id: code-comment
         type: variable-themed-color
         format: hex
         default-dark: '#4e5b6f'
         default-light: '#4e5b6f'
-    -
+    - 
         title: Footnotes
         id: footnote
         type: variable-themed-color
@@ -2460,21 +2460,21 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Accent
         id: accent
         type: variable-themed-color
         format: hex
         default-dark: '#883737'
         default-light: '#c14343'
-    -
+    - 
         title: Lite Accent
         id: lite-accent
         type: variable-themed-color
         format: hex
         default-dark: '#e06c75'
         default-light: '#a35158'
-    -
+    - 
         title: Accent 2
         id: accent2
         type: variable-themed-color
@@ -2716,21 +2716,21 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    -
+    - 
         title: Graph Background
         id: graph-bg
         type: variable-themed-color
         format: hex
         default-dark: '#0b0f13'
         default-light: '#eef3fd'
-    -
+    - 
         title: Graph Lines
         id: graph-lines
         type: variable-themed-color
         format: hex
         default-dark: '#571a1a'
         default-light: '#e4e7f8'
-    -
+    - 
         title: Graph Node
         id: graph-node
         type: variable-themed-color
@@ -2772,6 +2772,10 @@ settings:
     -
         title: Breadcrumbs Box Style
         id: breadcrumbs-block
+        type: class-toggle
+    -
+        title: Meta Bind Auto Size Fields
+        id: metabind-auto
         type: class-toggle
     -
         title: Dataview
@@ -2824,7 +2828,7 @@ settings:
         title: SlRvb Gray
         id: slrvb-g
         type: class-toggle
-    -
+    - 
         title: School Days
         id: s-d
         type: class-toggle
@@ -2835,7 +2839,7 @@ settings:
         allowEmpty: true
         default: none
         options:
-            -
+            - 
                 label: SlRvb D&D
                 value: dnd
             -
@@ -2859,19 +2863,19 @@ settings:
         title: Nord
         id: nord
         type: class-toggle
-    -
+    -   
         title: Minimalist
         id: mini
         type: class-toggle
-    -
+    -   
         title: Notion
         id: notion
         type: class-toggle
-#    -
+#    -   
 #        title: Nebula
 #        id: nebula
 #        type: class-toggle
-#    -
+#    -   
 #        title: Adventure
 #        id: advt
 #        type: class-toggle
@@ -4475,7 +4479,6 @@ body,
   --link-external-color-hover: var(--text-accent-hover);
   --link-font: inherit;
   --link-external-font: var(--link-font);
-  --link-weight: inherit;
   --link-border: none;
   --link-transform: none;
   --link-background: transparent;
@@ -4528,6 +4531,11 @@ a[href^=https]:hover,
   opacity: 0.5;
   font-weight: 100 !important;
   font-style: normal !important;
+}
+
+.cm-s-obsidian .cm-hmd-internal-link.cm-strong,
+strong a:is(.internal-link, .external-link) {
+  font-weight: calc(var(--link-weight) + var(--bold-modifier));
 }
 
 .theme-dark,
@@ -6718,6 +6726,27 @@ ul.auto-class-settings__match-group-list {
   margin-bottom: -4px;
 }
 
+code.mb-input {
+  padding: 0;
+  --code-size: var(--font-text-size);
+}
+
+.mb-select-input-element {
+  min-width: 5ch;
+}
+
+.metabind-auto .mb-input select, .metabind-auto .mb-input input:is([type=text], [type=number], [type=date]) {
+  min-width: 5ch;
+  width: 100%;
+  max-width: 100%;
+}
+.metabind-auto input.mb-slider-input {
+  padding: 0;
+  min-width: 4ch;
+  max-width: 100%;
+  margin: 0;
+}
+
 .qe-popup-menu .menu-item {
   --interactive-accent-hover: var(--dark-accent);
 }
@@ -7186,7 +7215,7 @@ div:not(.image-embed) > img[alt][alt*=relative] {
 /*Image Locations*/
 /*Center Image*/
 .img-adj-center.img-adj-center img,
-img:is([alt*=ctr], [alt*=center]) {
+img:is([alt~=ctr], [alt~=center]) {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -7198,13 +7227,13 @@ img:is([alt*=ctr], [alt*=center]) {
 }
 
 /*Left & Right*/
-.markdown-rendered img:is([alt*=left], [alt*=locl]), .markdown-rendered img:is([src*="#left"], [src*="#locl"]), .markdown-rendered .image-embed:is([alt*=left], [alt*=locl]), .markdown-rendered .image-embed:is([src*="#left"], [src*="#locl"]) {
+.markdown-rendered img:is([alt~=left], [alt~=locl]), .markdown-rendered img:is([src*="#left"], [src*="#locl"]), .markdown-rendered .image-embed:is([alt~=left], [alt~=locl]), .markdown-rendered .image-embed:is([src*="#left"], [src*="#locl"]) {
   float: left;
   margin-right: 2%;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.markdown-rendered img:is([alt*=right], [alt*=locr]), .markdown-rendered img:is([src*="#right"], [src*="#locr"]), .markdown-rendered .image-embed:is([alt*=right], [alt*=locr]), .markdown-rendered .image-embed:is([src*="#right"], [src*="#locr"]) {
+.markdown-rendered img:is([alt~=right], [alt~=locr]), .markdown-rendered img:is([src*="#right"], [src*="#locr"]), .markdown-rendered .image-embed:is([alt~=right], [alt~=locr]), .markdown-rendered .image-embed:is([src*="#right"], [src*="#locr"]) {
   float: right;
   margin-left: 2%;
   margin-bottom: 0px;
@@ -7602,21 +7631,21 @@ img[alt~=border],
   width: 95%;
 }
 
-.internal-embed[alt*=right] {
+.internal-embed[alt~=right] {
   float: right;
   margin-left: 0.5em;
 }
 
-.internal-embed[alt*=left] {
+.internal-embed[alt~=left] {
   float: left;
   margin-right: 0.5em;
 }
 
-.internal-embed[alt*=center] {
+.internal-embed[alt~=center] {
   margin: auto;
 }
 
-:not(.lp-embed-float) .is-live-preview .internal-embed:is([alt*=right], [alt*=left]) {
+:not(.lp-embed-float) .is-live-preview .internal-embed:is([alt~=right], [alt~=left]) {
   float: unset;
 }
 

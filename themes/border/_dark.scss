@@ -1,7 +1,9 @@
 :root[saved-theme="dark"] {
-  --text-normal: hsl(var(--accent-h), 24%, 84%);
-  --text-muted: hsl(var(--accent-h), 18%, 72%);
-  --text-faint: hsl(var(--accent-h), 12%, 44%);
+  --text-normal: hsl(var(--accent-h), 15%, 85%);
+  --text-muted: hsl(var(--accent-h), 12%, 75%);
+  --text-faint: hsl(var(--accent-h), 9%, 50%);
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--color-accent-2);
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -37,16 +39,24 @@
   --accent-s: var(--accent-dark-s);
   --accent-l: var(--accent-dark-l);
   --accent-dark-h: 232;
-  --accent-dark-s: 64%;
-  --accent-dark-l: 72%;
+  --accent-dark-s: 40%;
+  --accent-dark-l: 60%;
   --color-accent-hsl: var(--color-accent-hsl-dark);
   --color-accent: var(--color-accent-dark);
   --color-accent-1: var(--color-accent-1-dark);
   --color-accent-2: var(--color-accent-2-dark);
   --color-accent-3: var(--color-accent-3-dark);
   --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-1-dark: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2-dark: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --color-accent-3-dark: hsla(
     var(--accent-h),
     calc(0.4 * var(--accent-s)),
@@ -93,7 +103,7 @@
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
   --border-radius-activated-file-dark: var(--radius-s);
   --color-activated-file-dark: var(--nav-item-color-active);
   --background-activated-file-dark: var(--nav-item-background-active);
@@ -127,10 +137,10 @@
   --input-radius-dark: 5px;
   --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
     0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
     0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --code-background: var(--code-background-dark);
   --code-border: var(--code-border-dark);
 }

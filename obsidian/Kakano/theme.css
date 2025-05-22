@@ -419,7 +419,7 @@ settings:
     default: 0.5
     min: 0
     max: 1
-    step: 0.5
+    step: 0.25
   -
     id: theme-setting-mobileCardsUI
     title: 'Mobile cards UI'
@@ -610,7 +610,8 @@ body {
   --tab-switcher-preview-background-shadow: var(--shadow-l);
   --tab-switcher-preview-shadow: none;
   --tab-switcher-preview-shadow-active: none;
-  --text-muted: color-mix(in srgb, var(--text-normal), transparent 60%);
+  --text-on-accent: var(--theme-color-baseLightened95);
+  --text-muted: color-mix(in srgb, var(--text-normal), transparent 30%);
   --titlebar-background-focused: transparent;
   --titlebar-background: transparent;
 
@@ -620,6 +621,10 @@ body {
   --theme-color-graphViewBg: transparent;
   --theme-color-tabBgInactiveHover: var(--theme-color-baseTransparent75);
   --theme-color-tableHeaderBg: var(--theme-color-baseTransparent12);
+  --theme-color-dataviewEmpty: light-dark(
+    var(--theme-color-baseLightened40),
+    var(--theme-color-baseDarkened40)
+  );
   --theme-color-cardBg: var(--background-primary);
   --theme-lineHeight-tight: 1.3rem;
   --theme-setting-lineWidth: 60;
@@ -843,10 +848,12 @@ body {
   --theme-color-baseTransparent06: hsl(
     from var(--theme-color-base) h s l / 0.06
   );
+  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75);
   --theme-color-lightenTransparent50: hsl(from white h s l / 0.5);
   --theme-color-lightenTransparent25: hsl(from white h s l / 0.25);
   --theme-color-lightenTransparent12: hsl(from white h s l / 0.12);
   --theme-color-lightenTransparent06: hsl(from white h s l / 0.06);
+  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75);
   --theme-color-darkenTransparent50: hsl(from black h s l / 0.5);
   --theme-color-darkenTransparent06: hsl(from black h s l / 0.25);
   --theme-color-darkenTransparent12: hsl(from black h s l / 0.12);
@@ -1031,7 +1038,7 @@ body {
   --theme-color-audioRecordingActive: var(--theme-color-redDarkened);
   --theme-color-blockId: var(--theme-color-baseLightened25);
   --theme-color-calendarBg: var(--theme-color-baseLightened80);
-  --theme-color-calendarDayBg: var(--theme-color-lightenTransparent50);
+  --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
   --theme-color-communityItemBgHover: var(--theme-color-baseLightened60);
@@ -1068,7 +1075,6 @@ body {
   --theme-color-navFileTagActive: var(--nav-item-color-active);
   --theme-color-navFileTagActiveBorder: var(--nav-item-color-active);
   --theme-color-navFileTagBorder: var(--theme-color-base);
-  --theme-color-navigationButtonBgHover: var(--theme-color-baseTransparent25);
   --theme-color-notice: var(--theme-color-baseLightened95);
   --theme-color-noticeBg: var(--theme-color-baseDarkened80);
   --theme-color-promptInstructions: var(--theme-color-baseDarkened40);
@@ -1128,7 +1134,6 @@ body {
     calc(var(--base-l) * 0.75)
   );
 
-  /* TODO: standardise these */
   --theme-shadow-control: 0 1px 2px
     hsl(
       var(--base-h),
@@ -1327,7 +1332,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-navFileTagActive: var(--nav-item-color-active);
   --theme-color-navFileTagActiveBorder: var(--nav-item-color-active);
   --theme-color-navFileTagBorder: var(--theme-color-baseDarkened25);
-  --theme-color-navigationButtonBgHover: var(--theme-color-baseTransparent25);
   --theme-color-notice: var(--theme-color-baseDarkened90);
   --theme-color-noticeBg: var(--theme-color-baseLightened95);
   --theme-color-promptInstructions: var(--theme-color-baseLightened40);
@@ -1491,6 +1495,8 @@ body {
     var(--theme-color-lightenTransparent50),
     var(--theme-color-darkenTransparent50)
   );
+  --theme-color-lineNumbers: light-dark(var(--theme-color-baseLightened60), var(--theme-color-baseDarkened60));
+  --theme-color-navigationButtonBgHover: light-dark(var(--theme-color-baseLightened70),var(--theme-color-baseDarkened70));
 }
 /* #endregion */
 /* #endregion */
@@ -1515,7 +1521,7 @@ body {
   /* Use the system font by default for both text and interface, unless user has chosen something else.  */
   --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace-default: ui-monospace, Menlo, "SF Mona", SFMono-Regular, Consolas,
+  --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace;
   --font-text-theme: var(--font-default);
   --font-interface-theme: var(--font-default);
@@ -1776,7 +1782,7 @@ li.is-collapsed .list-bullet:after,
 /* Appearance consistent with navigation controls */
 .collapse-indicator,
 .list-collapse-indicator {
-  background-color: transparent;
+  background-color: var(--background-primary);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -1802,20 +1808,42 @@ li.is-collapsed .list-bullet:after,
   padding: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line)
+  .cm-line:not(.HyperMD-task-line)
   .cm-fold-indicator
   .collapse-indicator {
   margin-right: 1.75rem;
   padding-right: 0;
-  transform: translateX(1.75rem);
+  transform: translateX(1.25rem);
 }
-.markdown-preview-view h2 {
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
   position: relative;
 }
 .markdown-preview-view .heading-collapse-indicator {
-  top: calc(var(--heading-spacing) + 0.5em * var(--h2-line-height));
-  margin-top: calc(-0.5 * var(--theme-length-collapseIndicatorSize));
   margin-left: -2rem;
+  top: auto;
+}
+.markdown-preview-view h1 .heading-collapse-indicator {
+  bottom: 0.5em;
+}
+.markdown-preview-view h2 .heading-collapse-indicator {
+  bottom: 0.45em;
+}
+.markdown-preview-view h3 .heading-collapse-indicator {
+  bottom: 0.4em;
+}
+.markdown-preview-view h4 .heading-collapse-indicator {
+  bottom: 0.3em;
+}
+.markdown-preview-view h5 .heading-collapse-indicator {
+  bottom: 0.2em;
+}
+.markdown-preview-view h6 .heading-collapse-indicator {
+  bottom: 0.1em;
 }
 .markdown-rendered .list-collapse-indicator {
   padding-inline-end: 0;
@@ -2278,11 +2306,6 @@ body.theme-setting-codeBlockLineNumbers {
   }
 }
 /* #endregion */
-.markdown-source-view.mod-cm6 {
-  .cm-gutters {
-    color: var(--theme-color-textMeta) !important;
-  }
-}
 body.theme-setting-highlightActiveLine {
   .markdown-source-view.mod-cm6 {
     .cm-active:not(.HyperMD-codeblock) {
@@ -2291,7 +2314,25 @@ body.theme-setting-highlightActiveLine {
     }
   }
 }
+/* #region     Line numbers */
+.markdown-source-view.mod-cm6 .cm-gutters {
+  color: var(--theme-color-lineNumbers) !important;
+}
 
+body:not(.is-mobile) {
+  .markdown-source-view {
+    .cm-gutters {
+      margin-inline-end: 0;
+    }
+    .cm-editor .cm-gutter {
+      margin-left: -3.5em;
+    }
+    .cm-editor .cm-lineNumbers .cm-gutterElement {
+      min-width: 2em;
+    }
+  }
+}
+/* #endregion */
 /* #endregion */
 /* #region   Source mode */
 .markdown-source-view:not(.is-live-preview) .cm-scroller {
@@ -3043,6 +3084,14 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
 /* #endregion */
 /* #region Workspace */
 /* #region   Overall workspace */
+* {
+  scrollbar-color: var(--theme-color-baseTransparent25) transparent;
+}
+@media (hover: hover) {
+  *:hover {
+    scrollbar-color: var(--theme-color-baseTransparent50) transparent;
+  }
+}
 body {
   position: relative;
 }
@@ -3245,7 +3294,7 @@ body.mod-macos.is-frameless.is-hidden-frameless:not(.is-popout-window) {
     /* This element also seems to be a handle for window dragging */
     .mod-sidedock .workspace-tabs.mod-top .workspace-tab-header-container {
       margin-top: 0;
-      height: calc(2 * var(--header-height) + 0.5rem);
+      height: calc(2 * var(--header-height));
       align-items: flex-end;
     }
     .mod-sidedock .workspace-tab-header-container-inner {
@@ -3423,7 +3472,6 @@ body.mod-windows {
 /* #endregion */
 /* #region   Linux window frame styles */
 .mod-linux {
-  /* TODO */
 }
 /* #endregion */
 
@@ -3551,6 +3599,12 @@ body.mod-windows {
 /* #endregion */
 /* #region     Sidebars */
 .mod-sidedock {
+  padding-bottom: 1em;
+
+  &:has(.workspace-sidedock-vault-profile) {
+    padding-bottom: 0;
+  }
+
   .workspace-tabs {
     gap: 0;
   }
@@ -4705,7 +4759,6 @@ select:focus,
   opacity: var(--icon-opacity);
   padding: 0;
   position: relative;
-  width: 1em;
   margin: 0;
   align-items: center;
   justify-content: center;
@@ -5184,16 +5237,31 @@ body:not(.is-phone) .modal.mod-sync-history {
     display: none;
   }
 }
-.community-item.is-selected,
-.community-item.is-selected .community-item-author,
-.community-item.is-selected .community-item-repo,
-.community-item.is-selected .community-item-downloads,
-.community-item.is-selected .community-item-updated {
+.community-item-name,
+.community-item-author,
+.community-item-repo,
+.community-item-downloads,
+.community-item-updated,
+.community-modal-info-downloads-text,
+.community-modal-info-author,
+.community-modal-info-repo {
+  color: var(--text-normal);
+}
+.community-item.is-selected {
   color: var(--text-on-accent);
+
+  .community-item-name,
+  .community-item-author,
+  .community-item-repo,
+  .community-item-downloads,
+  .community-item-updated {
+    color: var(--text-on-accent);
+  }
 }
 .community-item.mod-active {
   background: var(--theme-color-communityItemBgActive);
 }
+.community-item.mod-active .community-item-name,
 .community-item.mod-active .community-item-author,
 .community-item.mod-active .community-item-repo,
 .community-item.mod-active .community-item-downloads,
@@ -5205,6 +5273,7 @@ body:not(.is-phone) .modal.mod-sync-history {
   .community-item:hover {
     color: var(--text-on-accent);
   }
+  .community-item:hover .community-item-name,
   .community-item:hover .community-item-author,
   .community-item:hover .community-item-repo,
   .community-item:hover .community-item-downloads,
@@ -5216,12 +5285,14 @@ body:not(.is-phone) .modal.mod-sync-history {
     background: var(--theme-color-communityItemBgSelected);
   }
   .community-item.is-selected:hover,
+  .community-item.is-selected:hover .community-item-name,
   .community-item.is-selected:hover .community-item-author,
   .community-item.is-selected:hover .community-item-repo,
   .community-item.is-selected:hover .community-item-downloads,
   .community-item.is-selected:hover .community-item-updated {
     color: var(--text-on-accent);
   }
+  .community-item.mod-active:hover .community-item-name,
   .community-item.mod-active:hover .community-item-author,
   .community-item.mod-active:hover .community-item-repo,
   .community-item.mod-active:hover .community-item-downloads,
@@ -5287,6 +5358,9 @@ body:not(.is-phone) .modal.mod-sync-history {
 .markdown-source-view .cm-contentContainer {
   padding: 1rem 2rem;
 }
+.mod-sidedock .markdown-source-view .cm-contentContainer {
+  padding: 0 0;
+}
 .is-phone .markdown-source-view .cm-contentContainer {
   padding-top: 0;
   padding-bottom: 0;
@@ -5313,7 +5387,7 @@ body:not(.is-phone) .modal.mod-sync-history {
   > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
   max-width: calc(1ch * var(--theme-setting-lineWidthReadingView));
 }
-.markdown-source-view.mod-cm6 .cm-sizer .cm-contentContainer,
+.mod-root .markdown-source-view.mod-cm6 .cm-sizer .cm-contentContainer,
 .markdown-preview-view
   .markdown-preview-sizer
   > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
@@ -6075,6 +6149,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.outgoing-link-item:hover {
 .search-params,
 .search-results-info {
   margin: 0 0 0.5rem 0;
+  padding: 0;
 }
 
 .search-params .setting-item {
@@ -6118,7 +6193,7 @@ body {
   --r-code-font: var(--font-monospace-theme);
   --r-heading-color: var(--text-normal);
   --r-heading-font-weight: var(--h1-weight);
-  --r-heading-font: var(--font-text-theme);
+  --r-heading-font: var(--font-text-theme: );
   --r-heading-letter-spacing: normal;
   --r-heading-line-height: 1.2;
   --r-heading-margin: 0.67em 0 0 0;
@@ -6328,7 +6403,18 @@ body.theme-setting-overrideAdvancedTables {
 /* #endregion */
 /* #region   Community Plugin: Calendar */
 body.theme-setting-overrideCalendar {
+  .workspace-leaf-content[data-type="calendar"] {
+    .container {
+      border-radius: 1rem;
+    }
+    .container > .calendar {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
   .container:has(> .calendar) {
+    background-color: var(--theme-color-calendarBg);
     margin: 0;
     padding: 0 !important;
 
@@ -6345,15 +6431,23 @@ body.theme-setting-overrideCalendar {
         padding: 0;
       }
       .right-nav {
+        align-items: center;
         margin: 0;
         padding: 0;
       }
+      .arrow svg,
+      .reset-button {
+        color: var(--icon-color);
+      }
     }
   }
-  .mod-right-split .container:has(> .calendar) {
-    background-color: var(--theme-color-calendarBg);
-    border-radius: var(--radius-m);
-    padding: 0.5em !important;
+  .calendar .day {
+    padding: 0.5em 1em;
+    min-height: 10em;
+  }
+  .container > .calendar {
+    table-layout: fixed;
+    margin: 1rem;
   }
   .container > .calendar thead th {
     background: transparent;
@@ -6361,26 +6455,45 @@ body.theme-setting-overrideCalendar {
     text-transform: none;
     font-size: var(--font-ui-small);
     font-weight: normal;
+    color: var(--theme-color-control);
+    text-align: left;
+    padding: 0.25em 1em;
   }
   .container > .calendar tbody td {
+    display: table-cell;
+    max-width: 0;
     border: none;
     padding: 0;
     vertical-align: top;
   }
-  .container > .calendar tbody td:not(:has(.adjacent-month)) {
+
+  /* Days for current month */
+  .container > .calendar tbody td {
     .day {
       background-color: var(--theme-color-calendarDayBg);
-      border-radius: var(--radius-m);
-      margin: 1px;
+      border-radius: 0;
+      margin: 0;
     }
+
     .day.today {
       background-color: var(--theme-color-tabNavBg);
       color: var(--text-normal);
       font-weight: bold;
+      border-radius: 0.5em;
     }
     .day.active {
       background-color: var(--background-primary);
       color: var(--text-normal);
+    }
+  }
+  .container > .calendar tbody td:has(.day.today) {
+    background-color: var(--theme-color-calendarDayBg);
+  }
+  .container > .calendar tbody td:has(.adjacent-month) {
+    background-color: transparent;
+
+    .day {
+      background-color: transparent;
     }
   }
   @media (hover: hover) {
@@ -6391,6 +6504,34 @@ body.theme-setting-overrideCalendar {
       background-color: var(--theme-color-controlBgHover);
       color: var(--theme-color-controlHover);
     }
+  }
+  .calendar .day {
+    text-align: left;
+  }
+
+  .mod-sidedock .workspace-leaf-content[data-type="calendar"] {
+    .container {
+      border-radius: var(--radius-m);
+      overflow: hidden;
+
+      .calendar .day {
+        padding: 0.25em 0.25em;
+        min-height: 3em;
+      }
+
+    }
+    .container > .calendar {
+      table-layout: fixed;
+      width: 100%;
+      margin: 0.0;
+    }
+    .container > .calendar thead th {
+      padding: 0.25em;
+    }
+    .container > .calendar tbody td .day.today {
+      border-radius: 0.25em;
+    }
+
   }
 }
 /* #endregion */
@@ -6405,12 +6546,11 @@ body.theme-setting-overrideClearUnusedImages {
 body.theme-setting-overrideColumns {
   /* Callout format – this also works without the plugin */
 
-  :root {
-    --obsidian-columns-gap: 1em;
-    --obsidian-columns-padding: 0 0;
-    --obsidian-columns-min-width: 10em;
-    --obsidian-columns-def-span: 1;
-  }
+  --obsidian-columns-gap: 1em;
+  --obsidian-columns-padding: 0 0;
+  --obsidian-columns-min-width: 10em;
+  --obsidian-columns-def-span: 1;
+
   div[data-callout|="col"].callout {
     background-color: var(--background-primary); /* Override callout bg */
     padding: 0;
@@ -6624,7 +6764,6 @@ body.theme-setting-overrideDataview {
     user-select: none;
     width: 180px;
     display: block;
-    /* TODO: review appearance of thead – Minmal makes it a popup that presumably works with Sortable */
     display: none;
     float: right;
     position: relative;
@@ -6720,7 +6859,7 @@ body.theme-setting-overrideDataview {
   & div.dataview-error-box,
   .dataview.dataview-error {
     align-items: center;
-    border: 0.25rem dashed var(--theme-color-base);
+    border: 0.25rem dashed var(--theme-color-dataviewEmpty);
     display: flex;
     justify-content: center;
     min-height: 5em;
@@ -6729,9 +6868,9 @@ body.theme-setting-overrideDataview {
   }
   .dataview-error-message,
   .dataview-error {
-    color: var(--text-muted);
+    color: var(--theme-color-dataviewEmpty);
     text-align: center;
-    font-family: var(--font-text);
+    font-family: var(--font-interface);
   }
 
   /* Callouts with dataviews */
@@ -7981,4 +8120,13 @@ body.theme-setting-overrideTasks {
   }
 }
 /*   #endregion */
+/* #endregion */
+
+/* #region Dev stuff */
+
+/* Show border of content area clearly */
+/* .cm-contentContainer > .cm-content {
+  background-color: rgba(255, 0, 0, 0.1);
+} */
+
 /* #endregion */

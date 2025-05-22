@@ -412,7 +412,7 @@
   --font-size-preview-blockquote: 1em;
   --font-size-edit-blockquote: 1em;
   --font-size-outline: var(--nav-item-size);
-  --font-size-code: 1em;
+  --font-size-code: 0.825em;
   --font-size-latex: 1em;
   --font-size-cloze: 0.9375em;
   --font-size-better-footnote: 1.3em;
@@ -430,8 +430,8 @@
   --h3-font: var(--font-text), var(--font-default);
   --h4-font: var(--font-text), var(--font-default);
   --font-family-title: ;
-  --font-family-folder-file-title: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
-    "Segoe UI Emoji", sans-serif;
+  --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
+    "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-monospace-theme: "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
     "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
@@ -561,9 +561,9 @@
   --text-highlight-bg-s-light: 100%;
   --text-highlight-bg-l-light: 80%;
   --text-highlight-bg-a-light: 0.847;
-  --cursor-color: var(--text-normal);
+  --cursor-color: var(var(--text-normal));
   --fancy-cursor-width: 2px;
-  --cursor-color-temp: var(--text-normal);
+  --cursor-color-temp: var(var(--text-normal));
   --print-strong-color: ;
   --print-em-color: var(--accent-em);
   --tag-border-width: 1px;
@@ -619,6 +619,7 @@
   --thino-background-light-custom: url("https://");
   --thino-background-dark-custom: url("https://");
   --share-card-background-opacity-cp: 0.6;
+  --table-text-size: calc(var(--font-text-size) * 0.9375);
   --background-primary: var(--background-primary-bg-4-bt, #202020);
   --background-primary-alt: var(--background-primary-alt-bg-4-bt, #444444);
   --background-secondary: var(--background-secondary-bg-4-bt, #151515);
@@ -756,6 +757,7 @@
   --h4-color: var(--print-h4-color, hsl(216, 69%, 68%));
   --h5-color: var(--print-h5-color, hsl(258, 79%, 77%));
   --h6-color: var(--print-h6-color, hsl(290, 85%, 81%));
+  --hr-color: var(--color-base-10);
   --graph-text-color: #b5b5b5;
   --graph-tag: #88d842bb;
   --graph-attach: #b2cfe0bb;
@@ -1903,7 +1905,6 @@
   --color-text-day: var(--text-normal);
   --color-text-today: var(--text-accent);
   --font-family-vault: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important;
-  --font-family-folder-file-title: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important;
   --color1: #ffde89;
   --color2: #ffd876;
   --color3: #ffd362;
@@ -4337,6 +4338,7 @@ html[saved-theme="dark"] {
   --h4-color: var(--print-h4-color, hsl(216, 69%, 68%));
   --h5-color: var(--print-h5-color, hsl(258, 79%, 77%));
   --h6-color: var(--print-h6-color, hsl(290, 85%, 81%));
+  --hr-color: var(--color-base-10);
   --graph-text-color: #b5b5b5;
   --graph-tag: #88d842bb;
   --graph-attach: #b2cfe0bb;

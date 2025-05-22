@@ -6,36 +6,29 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
   <img src="media/quartz-themes-800-wide-rounded-text.png" alt="Quartz Themes logo"/>
 </p>
 
-![Last updated: 2025-05-22](<https://img.shields.io/date/1747916100?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Last updated: 2025-05-22](<https://img.shields.io/date/1747920600?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
 ![Supported Quartz version v4.5.0](<https://img.shields.io/badge/v4.5.0-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
 
 ## Installation
 
 ### GitHub Actions (Recommended)
 
-Add the following lines to your `deploy.yaml` before the jobs step:
-
-```yaml
-env:
-  THEME_NAME: tokyo-night # replace with theme of choice
-```
-
-Add the following lines to your `deploy.yaml` before the build step:
+Add the following lines to your `deploy.yml` before the build step:
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
 ```
 
 > [!IMPORTANT]
-> Replace the `THEME-NAME` under `env` with your desired theme name. See [Compatibility List](#supported-themes)
+> Replace `<THEME-NAME>` with your desired theme name. See [Compatibility List](#supported-themes)
 
 > [!TIP]
 > Example for Tokyo Night:
 >
 > ```yaml
-> env:
->   THEME_NAME: tokyo-night
+> - name: Fetch Quartz Theme
+>   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
 > ```
 
 The full script would look like this:
@@ -47,9 +40,6 @@ on:
   push:
     branches:
       - v4
-
-env:
-  THEME_NAME: tokyo-night
 
 permissions:
   contents: read
@@ -73,7 +63,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Fetch Quartz Theme
-        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact

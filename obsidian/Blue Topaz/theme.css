@@ -8,8 +8,8 @@ Partial style(s) is(are) sourced or adapted from Blue Topaz (https://github.com/
 
 */
 
-/*蓝色托帕石，适合Obsidian v1.5.0。uid [2024121101] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
-/*Blue Topaz for Obsidian v1.5.0, uid [2024121101] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
+/*蓝色托帕石，适合Obsidian v1.5.0。uid [2025051401] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
+/*Blue Topaz for Obsidian v1.5.0, uid [2025051401] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
 
 /*
 MIT License
@@ -1241,7 +1241,7 @@ settings:
     title: Codeblock
     title.zh: 代码框字体大小
     type: variable-text
-    default: 1em
+    default: 0.825em
   -
     id: font-size-latex
     title: Mathematical expressions
@@ -5374,7 +5374,7 @@ body {
   --font-size-preview-blockquote: 1em;
   --font-size-edit-blockquote: 1em;
   --font-size-outline:var(--nav-item-size);
-  --font-size-code: 1em;
+  --font-size-code: 0.825em;
   --font-size-latex: 1em;
   --font-size-cloze: 0.9375em;
   --font-size-better-footnote: 1.3em;
@@ -5393,7 +5393,7 @@ body {
   --h3-font: var(--font-text),var(--font-default);
   --h4-font: var(--font-text),var(--font-default);
   --font-family-title: ;/*文件抬头标题*/
-  --font-family-folder-file-title: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;/*左侧边栏文件、文件夹字体*/
+  --font-family-folder-file-title: var(--font-text-override),Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;/*左侧边栏文件、文件夹字体*/
   --font-monospace-theme: 'JetBrains Mono', Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
   --font-family-tag: Bookerly, 'Inter', "Segoe UI", "Microsoft YaHei", STzhongsong, STSong, "Segoe UI Emoji", Serif;
@@ -5539,10 +5539,10 @@ body {
   --text-highlight-bg-l-light: 80%;
   --text-highlight-bg-a-light: 0.847;
 
-  --cursor-color: var(--text-normal);
+  --cursor-color: var(var(--text-normal));
 
   --fancy-cursor-width: 2px;
-  --cursor-color-temp: var(--text-normal);
+  --cursor-color-temp: var(var(--text-normal));
 
   --print-strong-color: ;
   --print-em-color: var(--accent-em);
@@ -5614,6 +5614,10 @@ body {
   --thino-background-dark-custom:url("https://");
  
   --share-card-background-opacity-cp:0.6;
+
+
+   --table-text-size: calc(var(--font-text-size) * 0.9375);
+
 }
 
 
@@ -5755,6 +5759,7 @@ body.all-dark-pdf .print,
   --h5-color: var(--print-h5-color,hsl(258, 79%, 77%));
   --h6-color: var(--print-h6-color,hsl(290, 85%, 81%));
 
+   --hr-color:var(--color-base-10);
   --graph-text-color: #B5B5B5;
   --graph-tag: #88d842bb;
   --graph-attach: #b2cfe0bb;
@@ -7744,7 +7749,6 @@ body.color-scheme-options-flamingo.theme-light .admonition {
 
 body.color-scheme-options-flamingo.theme-light {
   --font-family-vault: Arlrdbd, 'Source Han Sans', 'Noto Sans CJK', 'Source Sans Pro' !important; /*左侧库名字体*/
-  --font-family-folder-file-title: Arlrdbd, 'Source Han Sans', 'Noto Sans CJK', 'Source Sans Pro' !important;/*左侧边栏文件、文件夹字体*/
 }
 
 body.color-scheme-options-flamingo.theme-light .tag[href^="#DailyNote"] {
@@ -9585,9 +9589,7 @@ body:not(.bt-bubble-layout).color-scheme-options-simplicity-topaz.background-ima
   --background-secondary-bg-4-bt: var(--simple-tran);
   --tab-outline-color: var(--background-secondary);
 }
-body.color-scheme-options-simplicity-topaz.background-image-settings-switch.background-image-settings-markdown-page-transparent:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color:var(--simple-white-2);
-}
+
 /*
 ---------------------------
 	Title Bar
@@ -14644,6 +14646,20 @@ body.naked-embed .markdown-source-view.mod-cm6 .markdown-embed {
 body.hide-embed-title .markdown-embed-title{
   display: none;
 }
+
+body.hide-embed-title.hover-popover .inline-title, .inline-embed .inline-title {
+  display: none;
+}
+
+body.hide-embed-title .hover-popover .markdown-embed[data-type="heading"] .inline-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed .markdown-preview-view,.markdown-embed .markdown-preview-view 
+  {
+  padding-top: 1em;
+}
+
 body.embed-hd .markdown-embed :is(.markdown-preview-view,.markdown-rendered) :is(h1,h2,h3,h4,h5,h6) {
   display: none;
 }
@@ -14772,6 +14788,12 @@ body.adjustable-embed-content-height :is(.markdown-preview-view,.markdown-render
   line-height: 1.5em;
   font-size: var(--font-size-embed-file);
 }
+
+.popover.hover-popover > .markdown-embed > .markdown-embed-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller,
+ .popover.hover-popover > .markdown-embed > .markdown-embed-content .markdown-preview-view {
+  padding: 1em 0 1em 0.5em;
+}
+
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
 body:not(.whole-code-wrap) code[class*='language-'],
@@ -14947,7 +14969,10 @@ body:not(.image-zoom) .markdown-reading-view button img,
 body:not(.image-zoom) .markdown-reading-view .callout-title-inner img {
   pointer-events: none;
 }
-
+body:not(.image-zoom).theme-dark .markdown-reading-view img:not([class*="emoji"]):active,
+body.theme-dark .workspace-leaf-content[data-type="image"] img:active {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><g fill="none" fill-rule="evenodd"><rect width="80" height="80" fill="%231A1A1A"/><g fill="%23333333"><rect width="2" height="79" x="78"/><rect width="1" height="19" x="19"/><rect width="1" height="19" x="39"/><rect width="1" height="19" x="59"/><rect width="1" height="19" x="19" y="20"/><rect width="1" height="19" x="39" y="20"/><rect width="1" height="19" x="59" y="20"/><rect width="1" height="19" x="19" y="40"/><rect width="1" height="19" x="39" y="40"/><rect width="1" height="19" x="59" y="40"/><rect width="1" height="19" x="19" y="60"/><rect width="1" height="19" x="39" y="60"/><rect width="1" height="19" x="59" y="60"/><rect width="79" height="1" y="19"/><rect width="79" height="1" y="39"/><rect width="79" height="1" y="59"/></g><rect width="80" height="2" y="78" fill="%23333333"/></g></svg>');
+}
 body:not(.image-zoom) .markdown-reading-view img:not([class*="emoji"]):active,
 .workspace-leaf-content[data-type="image"] img:active {
   cursor: zoom-out !important;
@@ -15883,7 +15908,7 @@ pre.language-note-cloze::before {
   color: transparent;
 }
 
-
+ 
 /*======== optionnal mermaid style below ========*/
 .markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
   overflow: auto;
@@ -15907,21 +15932,10 @@ body.resizable-mermaid .mermaid {
 
 .mermaid .label {
   font-family: var(--mermaid-font-family) !important;
-  color: var(--text-normal) !important;
 }
 
-.mermaid .label text {
-  fill: var(--background-primary-alt) !important;
-}
-
-.mermaid .node:not([class*="id"]) rect:not([style*="fill"]):not([style*="stroke"]),
-.mermaid .node:not([class$="id"]) circle:not([style*="fill"]):not([style*="stroke"]),
-.mermaid .node:not([class$="id"]) ellipse:not([style*="fill"]):not([style*="stroke"]),
-.mermaid .node:not([class$="id"]) polygon:not([style*="fill"]):not([style*="stroke"]),
-.mermaid .node:not([class$="id"]) path:not([style*="fill"]):not([style*="stroke"]) {
-  fill: var(--background-primary) !important;
-}
-
+ 
+ 
 .mermaid .node .label {
   text-align: center !important;
 }
@@ -15930,17 +15944,9 @@ body.resizable-mermaid .mermaid {
   cursor: pointer !important;
 }
 
-.mermaid .arrowheadPath {
-  fill: var(--text-faint) !important;
-}
-
-.mermaid .edgePath .path,
-.mermaid .flowchart-link {
-  stroke: var(--text-faint) !important;
-}
-
+ 
+ 
 .mermaid .edgeLabel {
-  background-color: var(--background-primary) !important;
   text-align: center !important;
 }
 
@@ -15948,14 +15954,7 @@ body.resizable-mermaid .mermaid {
   opacity: 0 !important;
 }
 
-.mermaid .cluster rect {
-  fill: var(--background-primary-alt) !important;
-  stroke: var(--text-faint) !important;
-}
-
-.mermaid .cluster text {
-  fill: var(--background-primary) !important;
-}
+ 
 
 /* Sequence Diagram variables */
 .mermaid .actor {
@@ -15982,9 +15981,6 @@ body.resizable-mermaid .mermaid {
   stroke: var(--text-muted) !important;
 }
 
-.mermaid .sequenceNumber {
-  fill: var(--background-primary) !important;
-}
 
 .mermaid #sequencenumber,
 .mermaid .messageText {
@@ -16011,13 +16007,11 @@ body.resizable-mermaid .mermaid {
 }
 
 .mermaid .note {
-  stroke: var(--text-normal) !important;
   fill: var(--mermaid-seq-dia-color) !important;
 }
 
 .mermaid .noteText,
 .mermaid .noteText>tspan {
-  fill: var(--text-normal) !important;
   stroke: none !important;
 }
 
@@ -16039,9 +16033,7 @@ body.resizable-mermaid .mermaid {
   opacity: 0.3 !important;
 }
 
-.mermaid .section0 {
-  fill: var(--text-faint) !important;
-}
+ 
 
 .mermaid .section2 {
   fill: var(--text-accent) !important;
@@ -16053,12 +16045,7 @@ body.resizable-mermaid .mermaid {
   opacity: 0.15 !important;
 }
 
-.mermaid .sectionTitle0,
-.mermaid .sectionTitle1,
-.mermaid .sectionTitle2,
-.mermaid .sectionTitle3 {
-  fill: var(--text-normal) !important;
-}
+
 
 .mermaid .sectionTitle {
   text-anchor: start !important;
@@ -16103,14 +16090,14 @@ body.resizable-mermaid .mermaid {
 }
 
 .taskTextOutsideRight {
-  fill: var(--text-normal) !important;
+
   text-anchor: start !important;
   font-size: 12px !important;
   font-family: var(--mermaid-font-family) !important;
 }
 
 .taskTextOutsideLeft {
-  fill: var(--text-normal) !important;
+
   text-anchor: end !important;
   font-size: 9px !important;
 }
@@ -16143,7 +16130,7 @@ body.resizable-mermaid .mermaid {
 .taskText1,
 .taskText2,
 .taskText3 {
-  fill: var(--text-normal) !important;
+
   font-size: 13px;
 }
 
@@ -16171,12 +16158,7 @@ body.resizable-mermaid .mermaid {
   stroke: var(--text-muted) !important;
 }
 
-.activeText0,
-.activeText1,
-.activeText2,
-.activeText3 {
-  fill: var(--text-normal) !important;
-}
+
 
 /* Completed task */
 .done0,
@@ -16187,12 +16169,7 @@ body.resizable-mermaid .mermaid {
   fill: var(--background-secondary) !important;
 }
 
-.doneText0,
-.doneText1,
-.doneText2,
-.doneText3 {
-  fill: var(--text-normal) !important;
-}
+
 
 /* Tasks on the critical line */
 .crit0,
@@ -16229,26 +16206,15 @@ body.resizable-mermaid .mermaid {
   font-style: italic !important;
 }
 
-.doneCritText0,
-.doneCritText1,
-.doneCritText2,
-.doneCritText3,
-.activeCritText0,
-.activeCritText1,
-.activeCritText2,
-.activeCritText3 {
-  fill: var(--text-normal) !important;
-}
+
 
 .titleText {
   text-anchor: middle !important;
   font-size: 20px !important;
-  fill: var(--text-normal) !important;
   font-family: var(--mermaid-font-family) !important;
 }
 
 g.classGroup text {
-  fill: var(--text-normal) !important;
   stroke: none !important;
   font-size: 8px !important;
 }
@@ -16319,7 +16285,6 @@ g.classGroup line {
 .pieTitleText {
   text-anchor: middle !important;
   font-size: 18px !important;
-  fill: var(--text-normal) !important;
   font-family: var(--mermaid-font-family) !important;
 }
 
@@ -16342,7 +16307,6 @@ g.stateGroup text {
 
 g.stateGroup .state-title {
   font-weight: bolder !important;
-  fill: var(--text-normal) !important;
 }
 
 g.stateGroup rect {
@@ -16361,12 +16325,11 @@ g.stateGroup line,
 }
 
 .stateGroup .alt-composit {
-  fill: var(--background-primary) !important;
   border-bottom: 1px !important;
 }
 
 .state-note {
-  stroke: var(--text-faint) !important;
+ 
   fill: var(--text-accent) !important;
 }
 
@@ -16391,12 +16354,11 @@ g.stateGroup line,
 }
 
 .node circle.state-start {
-  fill: var(--text-normal) !important;
   stroke: var(--text-normal) !important;
 }
 
 .node circle.state-end {
-  fill: var(--text-normal) !important;
+
   stroke: var(--text-normal) !important;
   stroke-width: 1.5 !important;
 }
@@ -16405,9 +16367,7 @@ g.stateGroup line,
   fill: var(--text-accent) !important;
 }
 
-.statediagram-cluster rect {
-  fill: var(--background-secondary-alt) !important;
-}
+ 
 
 .statediagram-cluster rect.outer,
 .statediagram-state .title-state,
@@ -16416,7 +16376,13 @@ g.stateGroup line,
   ry: 5px !important;
 }
 
-.statediagram-state .divider {
+.statediagram-state .divider,
+.statediagram-cluster rect,
+.node rect,
+.node path,
+.node ellipse,
+.node circle,
+.node polygon  {
   stroke: var(--text-accent) !important;
 }
 
@@ -16498,6 +16464,7 @@ g.stateGroup line,
 .mermaid line.task-line {
   stroke: #6e6e6e !important;
 }
+
 
 /* scrollbar*/
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {

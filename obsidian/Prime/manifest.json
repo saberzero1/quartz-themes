@@ -1,8 +1,7 @@
 {
 	"name": "Prime",
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"minAppVersion": "1.0.0",
 	"author": "Eda",
-	"authorUrl": "https://rivea0.github.io",
-	"fundingUrl": "https://buymeacoffee.com/rivea0"
+	"authorUrl": "https://rivea0.github.io"
 }
