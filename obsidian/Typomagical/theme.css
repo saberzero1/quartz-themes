@@ -729,7 +729,7 @@ Links
 [[]]
 */
 body {
-  --font-links: "Alegreya SC", "Spectral", serif;
+  --font-links: "Alegreya", "Alegreya SC", "Spectral", serif;
 }
 
 .cm-s-obsidian span.cm-link a,
