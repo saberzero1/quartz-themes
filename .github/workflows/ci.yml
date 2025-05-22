@@ -31,3 +31,8 @@ jobs:
       - run: npm i just-install
       - run: npm ci
       - run: npm run verify
+      - run: |
+          cp quartz-syncer-file-list.json quartz-syncer-file-list-old.json
+          node convert.js
+          npx prettier .quartz-syncer-file-list.json --write
+          cmp --silent quartz-syncer-file-list.json quartz-syncer-file-list-old.json && echo "Quartz Syncer file list up to date" || echo "Quartz Syncer file list mismatch" && exit 1

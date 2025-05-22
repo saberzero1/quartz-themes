@@ -396,6 +396,54 @@ function getTheme(dict) {
   return sanitizeFilenamePreservingEmojis(getValueFromDictionary(dict, "name"))
 }
 
+/**
+ * Get all files under a directory and return them as an array of strings.
+ * All file paths are relative to the provided directory path.
+ *
+ * @param {string} dirPath - The path of the directory to search.
+ * @param {string} [themeName] - Optional theme name to filter the files.
+ * @returns {string[]} An array of file names within the provided directory.
+ * @throws {Error} If the directory cannot be accessed or read.
+ */
+function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
+  try {
+    // Read the directory contents
+    const items = fs.readdirSync(dirPath)
+
+    // Initialize an array to hold the file paths
+    const files = []
+    // Iterate over each item in the directory
+    items.forEach((item) => {
+      const itemPath = path.join(dirPath, item)
+      const stats = fs.statSync(itemPath)
+
+      // Check if the item is a file
+      if (stats.isFile()) {
+        // Add the file path to the array
+        files.push(itemPath)
+      } else if (stats.isDirectory()) {
+        // If it's a directory, recursively get files from it
+        const subFiles = getFilesUnderDirectoryToStringArray(itemPath)
+        files.push(...subFiles)
+      }
+    })
+
+    if (themeName !== "") {
+      // Remove the directory path prefix from the file paths
+      for (let i = 0; i < files.length; i++) {
+        if (files[i].includes(themeName)) {
+          // Remove the directory path prefix
+          files[i] = files[i].split(themeName)[1]
+        }
+      }
+    }
+
+    return files
+  } catch (error) {
+    throw new Error(`Unable to access directory: ${error.message}`)
+  }
+}
+
 // STEPS:
 //
 // 1. Get current folder/working directory.
@@ -753,3 +801,30 @@ replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable)
 // Clean up comments
 replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, "")
 console.log("Finished updating compatibility table")
+
+console.log("Updating Quartz Syncer file list...")
+
+// Prepare Quartz Syncer file list
+if (fs.existsSync("quartz-syncer-file-list.json")) fs.unlinkSync("quartz-syncer-file-list.json")
+
+// Build Quartz Syncer file list as json
+const quartzSyncerFileList = {}
+
+// Get all directories under themes
+const themeFolders = listFoldersInDirectory(`./themes`)
+
+// Get a list of all files under each theme directory
+themeFolders.forEach((folder) => {
+  const files = getFilesUnderDirectoryToStringArray(`./themes/${folder}`, folder)
+  const themeName = folder.replace(/^\.\//, "")
+  quartzSyncerFileList[themeName] = files
+})
+
+// Write the file list to quartz-syncer-file-list.json
+fs.writeFileSync(
+  `./quartz-syncer-file-list.json`,
+  JSON.stringify(quartzSyncerFileList, null, 2),
+  "utf8",
+)
+
+console.log("Finished updating Quartz Syncer file list")
