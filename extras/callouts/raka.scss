@@ -1,0 +1,57 @@
+.callout {
+  --border: transparent !important;
+
+  padding: var(--size-4-3);
+
+  .callout-title {
+    padding-top: 0 !important;
+  }
+
+  .callout-title-inner {
+    font-weight: bold;
+    color: var(--text-normal);
+  }
+
+  .callout-content {
+    display: grid;
+    p {
+      margin: 0;
+    }
+  }
+
+  .callout-icon {
+    display: none;
+  }
+
+  border-radius: 3px;
+  box-sizing: content-box;
+  border-top: var(--size-4-3) solid transparent !important;
+  border-bottom: var(--size-4-3) solid transparent !important;
+  border-left: var(--size-4-6) solid transparent !important;
+  border-right: var(--size-4-6) solid transparent !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .callout-title {
+    background: rgba(var(--color-rgb), 0.1);
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .callout-content {
+    padding-top: 5px;
+  }
+}
+
+.callout.is-collapsible.is-collapsed {
+  margin-bottom: 0 !important;
+  .callout {
+    visibility: hidden;
+    overflow: hidden;
+  }
+}

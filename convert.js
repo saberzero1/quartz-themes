@@ -357,7 +357,33 @@ function getExtras(theme) {
  * @returns {string[]} Array of extra fonts to install.
  */
 function getFonts(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  const defaultFonts = ["avenir", "inter", "source-code-pro"]
+  const result = themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
+  return result.length > 0 ? result : defaultFonts
+}
+
+/**
+ * Sets specified callouts styling
+ *
+ * @param {string} theme theme name
+ */
+function setCallout(theme) {
+  const callout =
+    themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
+      ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
+      : "empty"
+
+  if (callout !== "") {
+    fs.copyFileSync(
+      `./extras/callouts/${callout}.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/overrides.scss`,
+    )
+  }
+
+  fs.copyFileSync(
+    `./extras/callouts/default.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/default.scss`,
+  )
 }
 
 /**
@@ -368,6 +394,54 @@ function getFonts(theme) {
  */
 function getTheme(dict) {
   return sanitizeFilenamePreservingEmojis(getValueFromDictionary(dict, "name"))
+}
+
+/**
+ * Get all files under a directory and return them as an array of strings.
+ * All file paths are relative to the provided directory path.
+ *
+ * @param {string} dirPath - The path of the directory to search.
+ * @param {string} [themeName] - Optional theme name to filter the files.
+ * @returns {string[]} An array of file names within the provided directory.
+ * @throws {Error} If the directory cannot be accessed or read.
+ */
+function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
+  try {
+    // Read the directory contents
+    const items = fs.readdirSync(dirPath)
+
+    // Initialize an array to hold the file paths
+    const files = []
+    // Iterate over each item in the directory
+    items.forEach((item) => {
+      const itemPath = path.join(dirPath, item)
+      const stats = fs.statSync(itemPath)
+
+      // Check if the item is a file
+      if (stats.isFile()) {
+        // Add the file path to the array
+        files.push(itemPath)
+      } else if (stats.isDirectory()) {
+        // If it's a directory, recursively get files from it
+        const subFiles = getFilesUnderDirectoryToStringArray(itemPath)
+        files.push(...subFiles)
+      }
+    })
+
+    if (themeName !== "") {
+      // Remove the directory path prefix from the file paths
+      for (let i = 0; i < files.length; i++) {
+        if (files[i].includes(themeName)) {
+          // Remove the directory path prefix
+          files[i] = files[i].split(themeName)[1]
+        }
+      }
+    }
+
+    return files
+  } catch (error) {
+    throw new Error(`Unable to access directory: ${error.message}`)
+  }
 }
 
 // STEPS:
@@ -413,6 +487,7 @@ clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -434,6 +509,12 @@ manifestCollection.forEach((manifest) => {
     `./themes/${getTheme(manifest)}`,
     // INIT ONLY
   )
+  // check if "./themes/${getTheme(manifest)}/_index.scss" exists
+  // if it does not exist, copy the file
+  if (!fs.existsSync(`./extras/themes/${getTheme(manifest)}`)) {
+    ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
+    copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
+  }
   if (args[0] === "INIT") {
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
   }
@@ -457,13 +538,17 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
   const fontExtras = getFonts(getValueFromDictionary(manifest, "name"))
-  const defaultFontExtras = ["avenir", "inter", "source-sans-pro"]
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,
       `./themes/${getTheme(manifest)}/extras/fonts${font.includes("/") ? `/${font.replace(/\/[^/]+$/, "")}` : ""}`,
     )
   })
+})
+
+// callouts
+manifestCollection.forEach((manifest) => {
+  setCallout(getValueFromDictionary(manifest, "name"))
 })
 
 // extras
@@ -532,6 +617,8 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
+  extras += `\n@use "callouts/default.scss";`
+  extras += `\n@use "callouts/overrides.scss";`
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
@@ -720,3 +807,36 @@ replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable)
 // Clean up comments
 replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, "")
 console.log("Finished updating compatibility table")
+
+console.log("Updating Quartz Syncer file list...")
+
+// Prepare Quartz Syncer file list
+if (fs.existsSync("quartz-syncer-file-list.json")) fs.unlinkSync("quartz-syncer-file-list.json")
+if (fs.existsSync("theme-list")) fs.unlinkSync("theme-list")
+
+// Build Quartz Syncer file list as json
+const quartzSyncerFileList = {}
+const themeListFileList = []
+
+// Get all directories under themes
+const themeFolders = listFoldersInDirectory(`./themes`)
+
+// Get a list of all files under each theme directory
+themeFolders.forEach((folder) => {
+  const files = getFilesUnderDirectoryToStringArray(`./themes/${folder}`, folder)
+  const themeName = folder.replace(/^\.\//, "")
+  quartzSyncerFileList[themeName] = files
+  themeListFileList.push(themeName)
+})
+
+// Write the file list to quartz-syncer-file-list.json
+fs.writeFileSync(
+  `./quartz-syncer-file-list.json`,
+  JSON.stringify(quartzSyncerFileList, null, 2),
+  "utf8",
+)
+
+// Write the theme list to theme-list
+fs.writeFileSync(`./theme-list`, themeListFileList.join("\n"), "utf8")
+
+console.log("Finished updating Quartz Syncer file list")

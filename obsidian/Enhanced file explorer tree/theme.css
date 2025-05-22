@@ -1,0 +1,67 @@
+:root {
+    color-scheme: light dark;
+    --bg-clr-opacity: 0.12;
+    --bg-color: light-dark(rgba(0, 0, 0, var(--bg-clr-opacity)), rgba(255,255,255,var(--bg-clr-opacity)));
+}
+
+.tree-item.nav-file,
+.tree-item.nav-folder,
+.tree-item-children.nav-folder-children {
+    position: relative;
+}
+
+.tree-item.nav-file:before,
+.tree-item.nav-folder:before,
+.tree-item-children.nav-folder-children:before {
+    content: '';
+    position: absolute;
+    background: var(--bg-color);
+}
+
+.tree-item.nav-file:before,
+.tree-item.nav-folder:before {
+    height: 1px;
+    width: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-inline-start: -3px;
+}
+
+.tree-item.nav-folder:before {
+    top: 13px;
+    width: 5px;
+}
+
+.tree-item-children.nav-folder-children {
+    border-left-width: 0;
+}
+
+.tree-item-children.nav-folder-children:before {
+    left: 0;
+    top: 0;
+    bottom: 12px;
+    width: 1px;
+}
+
+.nav-files-container > div > .tree-item.nav-file:before,
+.nav-files-container > div > .tree-item.nav-folder:before {
+    content: none;
+}
+
+/*mobile styling*/
+.is-mobile .tree-item-children.nav-folder-children:before {
+    bottom: 16px;
+}
+.is-mobile .tree-item.nav-folder:before {
+    top: 16px;
+}
+
+div.tree-item.nav-file:has( *[data-path*="_about_.md"]),
+.hide-folder-note .is-folder-note,
+.nav-files-container:not(.show-unsupported) .tree-item.nav-file:has(.is-unsupported):before {
+    display: none;
+}
+
+.nav-files-container:not(.show-unsupported) .is-unsupported {
+    display: flex;
+}

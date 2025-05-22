@@ -1,0 +1,47 @@
+:root[saved-theme="light"] {
+  --hr-thickness: var(--hr-height);
+  --checklist-done-decoration: none;
+  --blockquote-border-thickness: 5px;
+  --file-line-width: var(--line-width);
+  --background-primary: var(--grey-light);
+  --background-secondary: var(--grey-mid);
+  --background-primary-alt: var(--grey-mid);
+  --background-secondary-alt: var(--grey-mid);
+  --divider-color: var(--green-mid-mid);
+  --tab-divider-color: var(--green-mid-mid);
+  --tab-outline-color: var(--green-mid-mid);
+  --text-accent: var(--green-bright);
+  --interactive-accent: var(--green-bright);
+  --color-accent: var(--green-bright);
+  --bar-color: var(--green-mid-mid);
+  --h1-color: var(--green-forest);
+  --h2-color: var(--green-forest);
+  --h3-color: var(--green-forest);
+  --h4-color: var(--green-forest);
+  --h5-color: var(--green-forest);
+  --h6-color: var(--green-forest);
+  --text-normal: var(--black-light-light);
+  --bold-color: var(--green-forest);
+  --underline-line-color: var(--green-bright);
+  --highlight-color: var(--green-mid);
+  --links-color: var(--green-forest);
+  --checklist-done-color: var(--grey-dark);
+  --inline-code-background: var(--grey);
+  --inline-code-color: var(--green-forest);
+  --codeblock-background: var(--grey);
+  --codeblock-color: var(--black-light);
+  --code-variable-color: var(--black-light-light);
+  --code-function-color: var(--green-forest);
+  --code-builtin-color: var(--green-forest);
+  --code-string-color: var(--grey-dark);
+  --code-operator-color: var(--green-forest);
+  --code-comment-color: var(--grey-dark);
+  --quote-background: var(--grey);
+  --hashtag-color: var(--green-forest);
+  --hashtag-background: var(--grey);
+  --link-color: var(--green-forest);
+  --folder-title-color: var(--black-light-light);
+  --file-title-color: var(--black-light-light);
+  --folder-filter: invert(52%) sepia(95%) saturate(856%) hue-rotate(67deg) brightness(118%)
+    contrast(117%);
+}
