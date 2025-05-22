@@ -28,11 +28,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm i just-install
-      - run: npm ci
-      - run: npm run verify
-      - run: |
+      - name: "Install just"
+        run: npm i just-install
+      - name: "Install npm dependencies"
+        run: npm ci
+      - name: "Check style"
+        run: npm run --silent verify
+      - name: "Check Quartz Syncer file list"
+        run: |
           cp quartz-syncer-file-list.json quartz-syncer-file-list-old.json
-          node convert.js
+          npm run --silent build
           npx prettier quartz-syncer-file-list.json --write
           cmp --silent quartz-syncer-file-list.json quartz-syncer-file-list-old.json && echo "Quartz Syncer file list up to date" && exit 0 || echo "Quartz Syncer file list mismatch" && exit 1
