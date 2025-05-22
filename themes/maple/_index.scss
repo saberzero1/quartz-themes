@@ -344,6 +344,10 @@
   --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
   --link-color: var(--setting-link-internal-color-hover, var(--text-on-accent));
   --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
+  --link-color: var(--setting-link-internal-color-hover, var(--text-on-accent));
+  --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
+  --link-color: var(--setting-link-internal-color-hover, var(--text-on-accent));
+  --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
   --list-marker-color: var(--setting-list-marker, var(--accent-active));
   --list-marker-color-alt: var(--setting-list-marker-alt, var(--list-marker-color));
   --list-marker-color-alt-render: transparent;

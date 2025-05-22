@@ -542,11 +542,14 @@
   --frame-left-space: calc(80px - var(--ribbon-width));
   --interactive-normal: unset !important;
   --icon-size: 0px;
+  --icon-size: 0px;
   --font-ui-smaller: calc(var(--font-text-size) * 0.8 + 1px);
   --font-ui-small: calc(var(--font-text-size) * 0.937 + 1px);
   --font-ui-medium: calc(var(--font-text-size) + 1px);
   --font-ui-large: calc(var(--font-text-size) * 1.2 + 1px);
   --text-muted: var(--text-on-accent);
+  --text-muted: var(--text-on-accent);
+  --icon-size: var(--icon-m);
   --icon-size: var(--icon-m);
   --prompt-top: calc(var(--safe-area-inset-top) + 8px);
   --prompt-bottom: 0;

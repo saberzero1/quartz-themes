@@ -950,6 +950,8 @@
   --zoom-factor: 1;
   --titlebar-height: 30px;
   --titlebar-background: var(--titlebar-background-focused);
+  --titlebar-background: var(--titlebar-background-focused);
+  --tab-container-background: var(--titlebar-background-focused);
   --tab-container-background: var(--titlebar-background-focused);
   --ribbon-width: 0px;
   --direction: 1;
@@ -957,6 +959,8 @@
   --icon-stroke: var(--icon-s-stroke-width);
   --pill-focus-width: calc(100% + 6px);
   --pill-focus-left-adjust: -4px;
+  --background-modifier-hover: var(--interactive-accent);
+  --icon-color: var(--text-on-accent);
   --background-modifier-hover: var(--interactive-accent);
   --icon-color: var(--text-on-accent);
   --canvas-color: 192, 192, 192;

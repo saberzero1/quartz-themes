@@ -373,7 +373,10 @@
   --ribbon-padding: 0;
   --tab-outline-color: transparent;
   --tab-container-background: var(--card-background-color);
+  --tab-container-background: var(--card-background-color);
   --file-header-border: none;
+  --tab-container-background: var(--card-background-color);
+  --tab-container-background: var(--card-background-color);
   --tab-container-background: var(--card-background-color);
   --card-background-color: rgb(var(--ctp-crust));
   --card-foreground-color: var(--background-primary);
@@ -403,10 +406,16 @@
   --colorful-icon-color-alt: var(--background-secondary-alt);
   --colorful-icon-color: var(--text-normal);
   --colorful-icon-color-alt: var(--text-muted);
+  --colorful-icon-color: var(--text-normal);
+  --colorful-icon-color-alt: var(--text-muted);
   --titlebar-background: var(--colorful-frame-color);
   --ribbon-background: var(--colorful-frame-color);
   --ribbon-background-collapsed: var(--colorful-frame-color);
   --card-background-color: var(--colorful-frame-color);
+  --icon-color: var(--colorful-icon-color);
+  --icon-color-hover: var(--colorful-icon-color-alt);
+  --icon-color-active: var(--colorful-icon-color-alt);
+  --icon-color-focused: var(--colorful-icon-color);
   --icon-color: var(--colorful-icon-color);
   --icon-color-hover: var(--colorful-icon-color-alt);
   --icon-color-active: var(--colorful-icon-color-alt);

@@ -378,6 +378,13 @@
   --border-radius-lg: 8px;
   --input-shadow: none;
   --input-shadow-hover: none;
+  --color-primary: var(--color-accent);
+  --color-primary-darker: var(--color-accent-1);
+  --color-primary-darkest: var(--color-accent-2);
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --button-gray-1: var(--color-base-30);
   --button-gray-2: var(--color-base-40);
   --button-gray-3: var(--color-base-30);
@@ -860,6 +867,9 @@
   --en-acrylic: blur(4px);
   --en-acrylic-opacity: 0.9;
   --en-modal-backdrop: blur(5px);
+  --en-acrylic: brightness(0.5);
+  --en-acrylic-opacity: 0.9;
+  --en-modal-backdrop: brightness(0.5);
   --en-acrylic: brightness(0.5);
   --en-acrylic-opacity: 0.9;
   --en-modal-backdrop: brightness(0.5);
