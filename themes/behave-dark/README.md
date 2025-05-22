@@ -11,8 +11,13 @@
 ### GitHub Actions
 
 ```yaml
+env:
+  THEME_NAME: behave-dark
+```
+
+```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- behave-dark
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 ### Manual install

@@ -11,8 +11,13 @@
 ### GitHub Actions
 
 ```yaml
+env:
+  THEME_NAME: pine-forest-berry
+```
+
+```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- pine-forest-berry
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 ### Manual install
