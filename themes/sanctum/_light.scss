@@ -42,6 +42,9 @@
   --interactive: rgb(var(--color-accent-rgb));
   --highlight: rgba(var(--color-accent-rgb), 0.7);
   --overlay: rgba(var(--gray-100), 0.5);
+  --color-red-rgb: 197, 65, 40;
+  --color-green-rgb: 102, 153, 97;
+  --color-yellow-rgb: 243, 189, 79;
   --text-highlight-bg: var(--highlight);
   --text-highlight-bg-active: var(--highlight);
   --color-accent: var(--interactive);

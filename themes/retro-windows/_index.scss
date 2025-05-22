@@ -454,8 +454,6 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --window-shadow: inset -1px -1px #3a3a3a, inset 1px 1px #888888, inset -2px -2px #555,
-    inset 2px 2px #666;
   --background-primary: #1e1e1e;
   --background-secondary: #2d2d2d;
   --background-secondary-alt: #3a3a3a;
@@ -540,8 +538,6 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
-  --window-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey,
-    inset 2px 2px #fff;
   --background-primary: #ffffff;
   --background-secondary: #ececec;
   --background-secondary-alt: #d4d0c8;

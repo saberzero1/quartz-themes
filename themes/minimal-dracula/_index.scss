@@ -365,11 +365,6 @@
   --color-callout-pink: 255, 121, 198;
 
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-highlight: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 20%),
-    calc(var(--accent-l) + 10%)
-  );
   --h1-weight: 600;
   --h2-weight: 600;
   --h3-weight: 600;

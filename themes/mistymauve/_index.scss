@@ -362,6 +362,7 @@
   --inline-title-weight: 400;
   --text-on-accent: var(--color-tulip);
   --text-on-accent-inverted: var(--color-tulip);
+  --text-muted: color.mix(var(var(--color-light-carmine-pink)), var(--color-bright-gray));
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;

@@ -329,8 +329,6 @@
 
   --table-border-radius: var(--radius-s);
 
-  --mac-terminal-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   --nav-item-size: 15.8px;
   --radius-s: 11.5px;
   --nav-indentation-guide-width: unset;
@@ -346,7 +344,7 @@
   --icon-file-indicator: "·";
   --inline-title-align: center;
   --inline-title-size: 20px;
-  --code-size-edit-mode: 13.9px;
+  --inline-code-font-size: calc(var(--default-font-size) - 1.5 px) --code-size-edit-mode: 13.9px;
   --code-size: 14px;
   --macos-button-size: 16px;
   --quotes-align: justify;
@@ -361,7 +359,7 @@
   --callout-font-size-title: 16px;
   --properties-icon-size: unset;
   --separator-icon: "o0o";
-  --show-explorer-buttons: none;
+  --separator-icon-color: #6c6c6c6b --show-explorer-buttons: none;
   --icon-settings: none;
   --num-of-notes: none;
   --show-vault-name: none;

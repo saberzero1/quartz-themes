@@ -514,8 +514,10 @@ html {
   --text-muted-rgb: 112, 106, 105;
   --text-faint: var(--gray-500);
   --text-highlight-bg: var(--yellow-800);
+  --text-selection: rgba(var(--yellow-500-R), var(--yellow-500-G), var(--yellow-500-B), 0.5);
   --text-on-accent: var(--gray-100);
   --interactive-accent: var(--primary-500);
+  --interactive-accent-rgb: var(--primary-500-R) var(--primary-500-G) var(--primary-500-B);
   --interactive-hover: var(--primary-800);
   --interactive-accent-hover: var(--primary-400);
   --scrollbar-active-thumb-bg: var(--primary-700);

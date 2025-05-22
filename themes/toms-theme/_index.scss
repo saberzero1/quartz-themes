@@ -481,7 +481,7 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--color-light);
   --interactive-success: var(--color-green);
   --scrollbar-active-thumb-bg: var(--color-green);
-  --scrollbar-thumb-bg: var(--color-darkgreen);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05) --scrollbar-thumb-bg: var(--color-darkgreen);
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);

@@ -727,10 +727,10 @@ but font weight does. */
 .workspace-ribbon.is-collapsed:not(:hover) {
   width: 0;
 }
-.workspace-split.mod-left-split[style="width: 0px;"] {
+.workspace-split.mod-left-split[style*="width: 0px;"] {
   margin-left: 0;
 }
-.workspace-split.mod-right-split[style="width: 0px;"] {
+.workspace-split.mod-right-split[style*="width: 0px;"] {
   margin-right: 0;
 }
 .workspace-ribbon {
@@ -909,9 +909,9 @@ p:not(:last-child) {
 /* Clutter free edit mode，标记符号 #所见即所得*/
 /*-------------------------------------*/
 /* inline formatting, link targets and [[ ]] disappears if not active line*/
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-barelink,
-/*div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment*/ {
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-barelink,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-comment {
   display: none !important;
 }
 /* highlight (==) not visible anymore if not active line */

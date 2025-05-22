@@ -351,49 +351,15 @@
   --halcyon-code-operator: var(--halcyon-palette-orange);
   --halcyon-code-error: var(--halcyon-palette-salmon);
   --halcyon-code-keyword: var(--halcyon-palette-lilac);
-  --halcyon-base-blue-01-02-mix: color-mix(
-    in hsl,
-    var(--halcyon-base-blue-01),
-    var(--halcyon-base-blue-02)
-  );
-  --halcyon-base-blue-02-03-mix: color-mix(
-    in hsl,
-    var(--halcyon-base-blue-02),
-    var(--halcyon-base-blue-03)
-  );
-  --halcyon-base-blue-03-04-mix: color-mix(
-    in hsl,
-    var(--halcyon-base-blue-03),
-    var(--halcyon-base-blue-04)
-  );
-  --halcyon-base-blue-04-05-mix: color-mix(
-    in hsl,
-    var(--halcyon-base-blue-04),
-    var(--halcyon-base-blue-05)
-  );
-  --halcyon-base-grey-mix: color-mix(
-    in hsl,
-    var(--halcyon-base-grey-light),
-    var(--halcyon-base-grey-dark)
-  );
   --halcyon-text-normal: var(--halcyon-base-grey-light);
   --halcyon-text-muted: #8695b799;
   --halcyon-accent-hover: var(--halcyon-palette-yellow);
-  --halcyon-palette-lilac-hover: color-mix(
-    in hsl shorter hue,
-    var(--halcyon-palette-lilac),
-    var(--halcyon-base-grey-dark)
-  );
-  --halcyon-palette-cyan-hover: color-mix(
-    in hsl shorter hue,
-    var(--halcyon-palette-cyan),
-    var(--halcyon-base-grey-dark)
-  );
   --halcyon-palette-blue: #7099db;
   --halcyon-palette-pink: #f9cff2;
   --halcyon-base-grey-tab: #71777f;
   --halcyon-base-grey-token: #586582;
   --halcyon-base-grey-scroll: #3f495e;
+  --halcyon-base-grey-scroll-hover: #5c6782;
   --color-base-00: var(--halcyon-base-blue-01);
   --color-base-05: var(--halcyon-base-blue-01-02-mix);
   --color-base-10: var(--halcyon-base-blue-02);
@@ -449,25 +415,29 @@
   --text-success: var(--halcyon-palette-lime);
   --text-accent: var(--halcyon-accent);
   --text-accent-hover: var(--halcyon-accent-hover);
-  --text-selection: color-mix(
-    in hsl shorter hue,
-    var(--halcyon-base-blue-03-04-mix) 35%,
-    transparent
-  );
+  --text-highlight-bg: var(--halcyon-base-blue-03);
   --icon-stroke: 2px;
   --icon-color-active: var(--interactive-accent);
   --icon-color-focused: var(--interactive-accent);
+  --clickable-icon-radius: 0;
   --radius-s: 2px;
   --radius-m: 4px;
   --radius-l: 6px;
+  --radius-xl: 8px;
   --bold-color: var(--halcyon-palette-salmon);
+  --italic-color: var(--halcyon-palette-salmon);
   --checkbox-color: var(--halcyon-palette-lilac);
   --checkbox-color-hover: var(--halcyon-palette-lilac-hover);
   --checkbox-border-color: var(--halcyon-palette-lilac);
+  --checkbox-border-color-hover: var(--halcyon-palette-lilac-hover);
   --drag-ghost-background: var(--halcyon-base-blue-03);
+  --drag-ghost-text-color: var(--interactive-accent);
+  --modal-border-color: var(--halcyon-base-blue-02);
   --nav-item-color: var(--text-muted);
   --nav-item-color-active: var(--interactive-accent);
   --nav-item-color-selected: var(--halcyon-palette-orange);
+  --nav-item-background-selected: var(--halcyon-base-blue-03);
+  --prompt-border-color: var(--halcyon-base-blue-02-03-mix);
   --tab-text-color-active: var(--text-accent);
   --tab-text-color-focused-active: var(--text-accent);
   --tab-text-color-focused-active-current: var(--text-accent);
@@ -475,6 +445,10 @@
   --tab-outline-width: 0px;
   --tab-curve: 0px;
   --tab-radius: 0px;
+  --tab-radius-active: 0px;
+  --input-radius: 0px;
+  --toggle-thumb-color: var(--text-on-accent);
+  --callout-padding: var(--size-4-3) var(--size-4-6);
   --code-background: var(--halcyon-base-blue-01);
   --code-normal: var(--halcyon-palette-cyan);
   --code-comment: var(--text-faint);
@@ -485,6 +459,8 @@
   --code-operator: var(--halcyon-code-operator);
   --code-punctuation: var(--halcyon-palette-lilac);
   --code-string: var(--halcyon-palette-lime);
+  --code-tag: var(--halcyon-base-grey-dark);
+  --file-line-width: 50rem;
   --h1-color: var(--halcyon-palette-lime);
   --h2-color: var(--halcyon-palette-lime);
   --h3-color: var(--halcyon-palette-lime);
@@ -496,30 +472,43 @@
   --h3-weight: 650;
   --h4-weight: 625;
   --h5-weight: 600;
+  --h6-weight: 575;
   --link-color: var(--halcyon-palette-lilac);
   --link-color-hover: var(--halcyon-palette-lilac-hover);
   --link-unresolved-color: var(--halcyon-palette-lilac);
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-decoration-color: var(--halcyon-palette-lilac);
   --link-external-color: var(--halcyon-palette-lilac);
+  --link-external-color-hover: var(--halcyon-palette-lilac-hover);
   --list-marker-color: var(--halcyon-palette-lilac);
   --list-marker-color-hover: var(--halcyon-palette-lilac-hover);
+  --list-marker-color-collapsed: var(--halcyon-palette-lime);
   --metadata-label-text-color: var(--halcyon-palette-cyan);
+  --metadata-label-text-color-hover: var(--halcyon-palette-cyan-hover);
   --table-background: var(--background-primary);
   --table-header-background-hover: var(--table-background);
+  --table-header-size: larger;
   --tag-size: var(--code-size);
   --tag-color: var(--halcyon-palette-cyan);
   --tag-color-hover: var(--halcyon-palette-cyan);
   --tag-decoration-hover: underline;
   --tag-background: color-mix(in hsl shorter hue, var(--tag-color) 25%, transparent);
+  --tag-background-hover: color-mix(in hsl shorter hue, var(--tag-color-hover) 25%, transparent);
   --vault-name-font-size: 1em;
+  --vault-name-color: var(--interactive-accent);
   --graph-line: var(--halcyon-base-blue-03);
   --graph-node-unresolved: var(--halcyon-palette-salmon);
+  --graph-node-tag: var(--halcyon-palette-lilac);
   --search-clear-button-color: var(--halcyon-palette-salmon);
+  --search-icon-color: var(--halcyon-accent);
+  --ribbon-background-collapsed: var(--ribbon-background);
+  --scrollbar-bg: transparent;
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-faint);
+  --titlebar-text-color-focused: var(--text-muted);
+  --workspace-background-translucent: unset;
   --lowlight-background: var(--background-primary);
   --floating-background: var(--background-primary);
   --floating-size: 20%;

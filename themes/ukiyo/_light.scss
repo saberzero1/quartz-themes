@@ -1,5 +1,6 @@
 :root[saved-theme="light"] {
   --color-accent-1: var(--color-accent);
+  --titlebar-background-focused: var(--color-base-20);
   --color-base-00: #e1c4a6;
   --color-base-05: #cbaa87;
   --code-background: var(--color-base-05);
@@ -37,4 +38,5 @@
   --color-purple-rgb: 95, 56, 214;
   --color-purple: #5f38d6;
   --color-pink-rgb: 191, 32, 109;
+  --color-pink: #bf206d;
 }

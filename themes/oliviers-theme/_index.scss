@@ -370,7 +370,6 @@
   --OT-pill-background: var(--color-accent-2);
   --OT-ribbon-icon-color-sidebar-is-collapsed: var(--icon-color);
   --OT-ribbon-icon-color-sidebar-is-open: var(--icon-color);
-  --OT-search-result-file-title-expanded: var(--color-base-100);
   --OT-search-settings-item-name: var(--OT-setting-item-name);
   --OT-setting-item-description: var(--color-base-70);
   --OT-setting-item-name: var(--color-base-100);
@@ -434,11 +433,9 @@
   --floating-toc-header-background-color: var(--background-primary) !important;
   --graph-line: var(--color-base-100);
   --h1-color: var(--text-normal);
-  --h2-color: var(--h1-color);
   --h3-color: var(--text-normal);
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
-  --h6-color: var(--h5-color);
   --icon-color: var(--color-base-70);
   --icon-color-active: var(--color-base-20);
   --icon-color-hover: var(--OT-color-on-accent-1);
@@ -454,13 +451,10 @@
   --link-external-decoration-hover: none;
   --list-marker-color: var(--text-normal);
   --metadata-background: var(--color-base-00);
-  --metadata-border-color: var(--color-base-35);
   --metadata-border-width: 0;
   --metadata-divider-color: var(--color-base-35);
   --metadata-divider-width: 1;
   --metadata-label-text-color: var(--color-base-70);
-  --metadata-label-background-active: var(--background-modifier-form-field);
-  --metadata-input-background-active: var(--metadata-label-background-active);
   --nav-item-color: var(--OT-color-on-base-20);
   --nav-item-color-hover: var(--OT-color-on-accent-1);
   --nav-item-color-active: var(--OT-color-on-accent-2);
@@ -475,11 +469,13 @@
   --pill-background-hover: var(--color-accent-1);
   --pill-color-remove: var(--OT-pill-background);
   --pill-color-remove-hover: var(--OT-color-on-accent-1);
+  --sidebar-markdown-font-size: calc(var(--OT-readingMode-text-size) * 0.9);
   --status-bar-text-color: var(--OT-color-on-accent-2);
   --status-bar-background: var(--color-accent-2);
   --status-bar-border-color: red;
   --status-bar-font-size: var(--font-ui-small);
   --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-radius: 0 0 0 0;
   --tab-text-color: var(--color-base-50);
   --tab-text-color-active: var(--color-base-70);
   --tab-text-color-focused: var(--color-base-70);
@@ -500,9 +496,7 @@
   --text-accent-hover: var(--link-color);
   --text-accent: vat(--OT-color-on-accent-3);
   --text-error-hover: var(--color-red);
-  --text-muted: var(--color-base-50);
   --text-on-accent: var(--OT-color-on-accent-1);
-  --text-on-accent-inverted: var(--color-accent-1);
   --text-on-hover: var(--OT-color-on-accent-1);
   --titlebar-background: #333;
   --titlebar-background-focused: var(--color-base-05);
@@ -526,6 +520,7 @@
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%)) !important;
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 0%)) !important;
   --color-accent-3: var(--color-base-20);
+  --editor-font-family: var(--OT-editMode-font), "Comic Sans MS", var(--font-default);
   --border-width: 1.5px;
   --checkbox-radius: 0.3rem;
   --checkbox-size: 0.95rem;
@@ -610,7 +605,6 @@
   --OT-pill-background: var(--color-accent-2);
   --OT-ribbon-icon-color-sidebar-is-collapsed: var(--icon-color);
   --OT-ribbon-icon-color-sidebar-is-open: var(--icon-color);
-  --OT-search-result-file-title-expanded: var(--color-base-100);
   --OT-search-settings-item-name: var(--OT-setting-item-name);
   --OT-setting-item-description: var(--color-base-70);
   --OT-setting-item-name: var(--color-base-100);
@@ -674,11 +668,9 @@
   --floating-toc-header-background-color: var(--background-primary) !important;
   --graph-line: var(--color-base-100);
   --h1-color: var(--text-normal);
-  --h2-color: var(--h1-color);
   --h3-color: var(--text-normal);
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
-  --h6-color: var(--h5-color);
   --icon-color: var(--color-base-70);
   --icon-color-active: var(--color-base-20);
   --icon-color-hover: var(--OT-color-on-accent-1);
@@ -694,13 +686,10 @@
   --link-external-decoration-hover: none;
   --list-marker-color: var(--text-normal);
   --metadata-background: var(--color-base-00);
-  --metadata-border-color: var(--color-base-35);
   --metadata-border-width: 0;
   --metadata-divider-color: var(--color-base-35);
   --metadata-divider-width: 1;
   --metadata-label-text-color: var(--color-base-70);
-  --metadata-label-background-active: var(--background-modifier-form-field);
-  --metadata-input-background-active: var(--metadata-label-background-active);
   --nav-item-color: var(--OT-color-on-base-20);
   --nav-item-color-hover: var(--OT-color-on-accent-1);
   --nav-item-color-active: var(--OT-color-on-accent-2);
@@ -715,11 +704,13 @@
   --pill-background-hover: var(--color-accent-1);
   --pill-color-remove: var(--OT-pill-background);
   --pill-color-remove-hover: var(--OT-color-on-accent-1);
+  --sidebar-markdown-font-size: calc(var(--OT-readingMode-text-size) * 0.9);
   --status-bar-text-color: var(--OT-color-on-accent-2);
   --status-bar-background: var(--color-accent-2);
   --status-bar-border-color: red;
   --status-bar-font-size: var(--font-ui-small);
   --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-radius: 0 0 0 0;
   --tab-text-color: var(--color-base-50);
   --tab-text-color-active: var(--color-base-70);
   --tab-text-color-focused: var(--color-base-70);
@@ -740,9 +731,7 @@
   --text-accent-hover: var(--link-color);
   --text-accent: vat(--OT-color-on-accent-3);
   --text-error-hover: var(--color-red);
-  --text-muted: var(--color-base-50);
   --text-on-accent: var(--OT-color-on-accent-1);
-  --text-on-accent-inverted: var(--color-accent-1);
   --text-on-hover: var(--OT-color-on-accent-1);
   --titlebar-background: #333;
   --titlebar-background-focused: var(--color-base-05);
@@ -766,6 +755,7 @@
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%)) !important;
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 0%)) !important;
   --color-accent-3: var(--color-base-20);
+  --editor-font-family: var(--OT-editMode-font), "Comic Sans MS", var(--font-default);
   --border-width: 1.5px;
   --checkbox-radius: 0.3rem;
   --checkbox-size: 0.95rem;
@@ -993,14 +983,16 @@ html[saved-theme="dark"] {
   --color-red-rgb: 199, 56, 60;
   --color-red: #ef5547;
   --background-modifier-form-field: var(--color-base-00);
+  --floating-toc-font-color: var(--text-normal) !important;
   --floating-toc-hover-color: var(--OT-color-on-accent-1) !important;
   --floating-toc-font-size: var(--font-ui-small) !important;
   --floating-toc-background-color: var(--background-secondary) !important;
   --floating-toc-header-background-color: var(--background-secondary) !important;
-  --floating-toc-highlight-color: var(--color-accent-2) !important;
   --floating-toc-highlight-color-rgb: 255, 128, 0 !important;
   --floating-toc-line-color: var(--OT-color-on-accent-2) !important;
   --floating-toc-line-height: 1.2rem !important;
+  --floating-toc-line-width: 26rem !important;
+  --actual-toc-width: 26rem !important;
   --floating-toc-response-time: 0s !important;
 
   code[data-theme*=" "] {
@@ -1057,14 +1049,16 @@ html[saved-theme="light"] {
 
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
   --OT-text-selection-color: var(--text-normal);
+  --floating-toc-font-color: var(--text-normal) !important;
   --floating-toc-hover-color: var(--OT-color-on-accent-1) !important;
   --floating-toc-font-size: var(--font-ui-small) !important;
   --floating-toc-background-color: var(--background-secondary) !important;
   --floating-toc-header-background-color: var(--background-secondary) !important;
-  --floating-toc-highlight-color: var(--color-accent-2) !important;
   --floating-toc-highlight-color-rgb: 255, 128, 0 !important;
   --floating-toc-line-color: var(--OT-color-on-accent-2) !important;
   --floating-toc-line-height: 1.2rem !important;
+  --floating-toc-line-width: 26rem !important;
+  --actual-toc-width: 26rem !important;
   --floating-toc-response-time: 0s !important;
 
   code[data-theme*=" "] {

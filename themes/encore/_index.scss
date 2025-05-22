@@ -415,6 +415,7 @@
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
+  --color-base-50: rgb(var(--grey-350-rgb));
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -451,6 +452,7 @@
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
+  --color-base-50: rgb(var(--grey-350-rgb));
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -717,16 +719,6 @@
   --grey-875-rgb: 6, 6, 6;
   --grey-900-rgb: 3, 3, 3;
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
-  --rainbow-gradient: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 222, 0, 1) 15%,
-    rgba(167, 255, 0, 1) 26%,
-    rgba(0, 255, 136, 1) 39%,
-    rgba(15, 245, 254, 1) 55%,
-    rgba(111, 0, 255, 1) 80%,
-    rgba(253, 45, 45, 1) 100%
-  );
   --bold-color: var(--color-red);
   --italic-color: var(--color-green);
   --shadow-properties: 0 0 50px -25px;

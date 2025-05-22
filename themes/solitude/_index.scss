@@ -365,6 +365,7 @@
   --button-radius: var(--input-radius);
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -549,6 +550,7 @@
   --link-unresolved-opacity: 0.7;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
   --list-indent: 2em;
   --list-spacing: 0.075em;
   --list-marker-color: var(--text-faint);
@@ -564,6 +566,8 @@
   --nav-item-color-active: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
   --nav-item-color-highlighted: var(--text-accent-hover);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--color-accent);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
   --nav-item-padding: var(--size-4-1) var(--size-4-2);
   --nav-item-weight: inherit;
@@ -581,6 +585,7 @@
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
+  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   --popover-width: 450px;
@@ -593,6 +598,7 @@
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
+  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
@@ -635,6 +641,7 @@
   --slider-s-thumb-position: -5px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
+  --status-bar-background: var(--color-accent-1);
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: var(--font-ui-smaller);
@@ -732,7 +739,10 @@
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-accent-1);
+  --background-modifier-border-focus: var(--color-accent);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
@@ -904,8 +914,21 @@ html {
   --color-blue: #027aff;
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
+  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
+  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(3% + var(--color-base-l)));
+  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(4% + var(--color-base-l)));
+  --color-base-25: hsl(var(--color-base-h), var(--color-base-s), calc(7% + var(--color-base-l)));
+  --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
+  --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
+  --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
+  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
+  --color-base-60: hsl(var(--color-base-h), var(--color-base-s), calc(49% + var(--color-base-l)));
+  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
+  --color-base-100: hsl(var(--color-base-h), var(--color-base-s), calc(74% + var(--color-base-l)));
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 15%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-accent-1);

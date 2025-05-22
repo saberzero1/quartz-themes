@@ -381,9 +381,6 @@
   --list-color-4: var(--rainbow-4);
   --list-color-5: var(--rainbow-5);
   --list-color-6: var(--rainbow-6);
-  --font-default: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
   --font-monospace: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
   --font-text: var(--font-text-override), var(--font-default);
   --font-monospace-default: var(--font-monospace-default-override), var(--font-monospace);
@@ -1269,9 +1266,6 @@ html[saved-theme="dark"] {
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: var(--indentation-guide-width);
   --indentation-guide-color-active: var(--accent);
-  --indentation-guide-source-indent: calc(
-    var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5)
-  );
   --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
   --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
   --list-color-1: var(--indentation-guide-color);
@@ -1589,9 +1583,6 @@ html[saved-theme="light"] {
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: var(--indentation-guide-width);
   --indentation-guide-color-active: var(--accent);
-  --indentation-guide-source-indent: calc(
-    var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5)
-  );
   --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
   --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
   --list-color-1: var(--indentation-guide-color);

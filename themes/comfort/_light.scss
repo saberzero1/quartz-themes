@@ -1,4 +1,5 @@
 :root:root {
+  --color-red-rgb: 197, 65, 40;
   --background-primary: #fcfef3;
   --background-secondary: #f8f6ea;
   --background-secondary-alt: #a3d5aa;
@@ -28,4 +29,8 @@
   --orange: #c1a58c;
   --slider-track-background: #eff1e1;
   --toggle-radius: 4px;
+  --tag-padding-x: 4px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
+  --embed-padding: 0 0 0 var(--size-4-4);
 }

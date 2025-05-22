@@ -494,8 +494,6 @@ html[saved-theme="dark"] {
   --red1_x: 219, 75, 75;
   --red1: rgb(var(--red1_x));
   --unknown: #ffffff;
-  --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%)
-    contrast(85%);
   --color_red_rgb: var(--red_x);
   --color-red: var(--red);
   --color_purple_rgb: var(--magenta_x);
@@ -722,8 +720,6 @@ html[saved-theme="light"] {
   --red1_x: 115, 42, 56;
   --red1: rgb(var(--red1_x));
   --unknown: #000000;
-  --link-external-filter: invert(62%) sepia(9%) saturate(266%) hue-rotate(189deg) brightness(97%)
-    contrast(88%);
   --color_red_rgb: var(--red_x);
   --color-red: var(--red);
   --color_purple_rgb: var(--magenta_x);

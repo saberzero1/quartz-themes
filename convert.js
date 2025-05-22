@@ -1,4 +1,5 @@
 import convertCssColorsToRgbWithSass from "./color-convert.mjs"
+import splitCombinedRulesWithPostCSS from "./atomize-css-rules.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -622,6 +623,14 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
+  if (args[0] === "ATOMIZE") {
+    ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
+    const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
+    const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
+    const cssString = fs.readFileSync(cssFile, "utf8")
+    const splitCssString = splitCombinedRulesWithPostCSS(cssString)
+    fs.writeFileSync(atomicFile, splitCssString, "utf8")
+  }
   const bodyValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     bodyRegex,
