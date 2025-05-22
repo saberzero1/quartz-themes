@@ -106,7 +106,7 @@ svg * {
     --accent-color-bg2: white;
     --accent-color-bg2c: white;
     --accent-color-bg_d: #2e2e2e;
-    --accent-color-bg_dc: #252525);
+    --accent-color-bg_dc: #252525;
 
     --accent-color-inverse: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 49%)*-100));
     --accent-color-inverse2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 67%)*-100));

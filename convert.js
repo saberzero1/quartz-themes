@@ -509,6 +509,12 @@ manifestCollection.forEach((manifest) => {
     `./themes/${getTheme(manifest)}`,
     // INIT ONLY
   )
+  // check if "./themes/${getTheme(manifest)}/_index.scss" exists
+  // if it does not exist, copy the file
+  if (!fs.existsSync(`./extras/themes/${getTheme(manifest)}`)) {
+    ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
+    copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
+  }
   if (args[0] === "INIT") {
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
   }

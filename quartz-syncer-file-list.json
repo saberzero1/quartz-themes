@@ -450,6 +450,17 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss"
   ],
+  "camena": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/cascadia-code.scss"
+  ],
   "carbon": [
     "/README.md",
     "/_dark.scss",
@@ -556,6 +567,16 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
+  ],
+  "cocoa": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/palatino.scss"
   ],
   "colored-candy": [
     "/README.md",
@@ -818,6 +839,18 @@
     "/extras/fonts/figtree.scss",
     "/extras/hide-toggle.scss"
   ],
+  "deep-submerge": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
+  ],
   "deeper-work": [
     "/README.md",
     "/_dark.scss",
@@ -954,6 +987,17 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss"
   ],
+  "dust": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/fira-code.scss",
+    "/extras/fonts/icons/material-icons.scss",
+    "/extras/hide-toggle.scss"
+  ],
   "dynamic-color": [
     "/README.md",
     "/_dark.scss",
@@ -1013,6 +1057,18 @@
     "/extras/fonts/source-code-pro.scss"
   ],
   "encore": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
+  ],
+  "enhanced-file-explorer-tree": [
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
@@ -1366,6 +1422,17 @@
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
   ],
+  "handwriting-kalam": [
+    "/README.md",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/courier-prime.scss",
+    "/extras/fonts/kalam.scss",
+    "/extras/hide-toggle.scss"
+  ],
   "heboric": [
     "/README.md",
     "/_dark.scss",
@@ -1379,6 +1446,18 @@
     "/extras/fonts/source-code-pro.scss"
   ],
   "hipstersmoothie": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
+  ],
+  "hojicha": [
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
@@ -1712,6 +1791,16 @@
     "/extras/_index.scss",
     "/extras/fonts/"
   ],
+  "marathon": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/inter.scss"
+  ],
   "material-3": [
     "/README.md",
     "/_dark.scss",
@@ -1760,6 +1849,18 @@
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss",
     "/extras/material.scss"
+  ],
+  "meridian": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
   ],
   "micro-mike": [
     "/README.md",
@@ -1901,6 +2002,16 @@
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
   ],
+  "mono-high-contrast": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/fira-code.scss"
+  ],
   "monochroyou": [
     "/README.md",
     "/_dark.scss",
@@ -1961,6 +2072,17 @@
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
   ],
+  "myst": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/icons/material-symbols-outlined.scss",
+    "/extras/fonts/s-core-dream-3-light.scss"
+  ],
   "nebula": [
     "/README.md",
     "/_dark.scss",
@@ -2016,6 +2138,18 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
+  ],
+  "neumorphism": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
   ],
   "neutral-academia": [
     "/README.md",
@@ -2400,6 +2534,18 @@
     "/extras/fonts/monaco.scss",
     "/extras/hide-toggle.scss"
   ],
+  "parfait": [
+    "/README.md",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
+  ],
   "penumbra": [
     "/README.md",
     "/_dark.scss",
@@ -2466,6 +2612,16 @@
     "/extras/fonts/monaco.scss",
     "/extras/hide-toggle.scss"
   ],
+  "planetary": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/ibm-plex-sans.scss"
+  ],
   "playground": [
     "/README.md",
     "/_dark.scss",
@@ -2510,6 +2666,29 @@
     "/extras/_index.scss",
     "/extras/fonts/ibm-plex-mono.scss",
     "/extras/fonts/rubik.scss"
+  ],
+  "pomme-notes": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
+  ],
+  "powered-by-lancer": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/anonymous-pro.scss",
+    "/extras/fonts/arimo.scss"
   ],
   "primary": [
     "/README.md",
@@ -2580,6 +2759,16 @@
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
   ],
+  "publisher": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/lato.scss"
+  ],
   "pure": [
     "/README.md",
     "/_dark.scss",
@@ -2637,7 +2826,7 @@
     "/extras/fonts/ia-writer-mono.scss",
     "/extras/fonts/noto-sans-jp.scss"
   ],
-  "red-graphite": [
+  "quillcode": [
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
@@ -2648,6 +2837,16 @@
     "/extras/fonts/avenir.scss",
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss"
+  ],
+  "red-graphite": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/jetbrains-mono.scss"
   ],
   "red-shadow": [
     "/README.md",
@@ -2705,6 +2904,16 @@
     "/extras/_index.scss",
     "/extras/fonts/ibm-plex-mono.scss"
   ],
+  "retroos-98": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/libre-franklin.scss"
+  ],
   "reverie": [
     "/README.md",
     "/_dark.scss",
@@ -2728,6 +2937,16 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss",
     "/extras/hide-toggle.scss"
+  ],
+  "ribbons": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/icons/its.scss"
   ],
   "rift": [
     "/README.md",
@@ -3081,6 +3300,17 @@
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss"
   ],
+  "soli-deo-gloria": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/cormorant.scss",
+    "/extras/fonts/germania-one.scss"
+  ],
   "solitude": [
     "/README.md",
     "/_dark.scss",
@@ -3281,6 +3511,30 @@
     "/extras/_index.scss",
     "/extras/fonts/fira-code.scss",
     "/extras/hide-toggle.scss"
+  ],
+  "terminal2k": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
+  ],
+  "terraflow": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
   ],
   "theme-that-shall-not-be-named": [
     "/README.md",
@@ -3582,6 +3836,18 @@
     "/extras/_index.scss",
     "/extras/fonts/geist-mono.scss",
     "/extras/fonts/geist.scss"
+  ],
+  "vesper": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/_light.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss"
   ],
   "vicious": [
     "/README.md",
