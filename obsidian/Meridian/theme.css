@@ -1,0 +1,482 @@
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                     Monospace font                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-monospace * {
+  font-family: var(--font-monospace) !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Font weights                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text cases                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text align                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-left {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Image align                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-center .image-embed {
+  display: flex !important;
+  justify-content: center;
+}
+
+.image-left .image-embed {
+  display: flex !important;
+  justify-content: start;
+}
+
+.image-right .image-embed {
+  display: flex !important;
+  justify-content: end;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image filters                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-invert img,
+.image-grayscale img,
+.image-sepia img,
+.image-blur-sm img,
+.image-blur-md img,
+.image-blur-lg img {
+  transition: filter 0.3s ease;
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(var(--blur, 0));
+}
+
+.image-invert img:hover,
+.image-grayscale img:hover,
+.image-sepia img:hover,
+.image-blur-sm img:hover,
+.image-blur-md img:hover,
+.image-blur-lg img:hover {
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(0);
+}
+
+.image-invert img {
+  --invert: 1;
+}
+
+.image-grayscale img {
+  --grayscale: 1;
+}
+
+.image-sepia img {
+  --sepia: 1;
+}
+
+.image-blur-sm img {
+  --blur: 5px;
+}
+
+.image-blur-md img {
+  --blur: 10px;
+}
+
+.image-blur-lg img {
+  --blur: 15px;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Make images square (remove rounded corners)       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-square img {
+  border-radius: 0;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Scale images on hover                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
+  transition: transform 0.3s ease;
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xs
+  .image-embed:hover {
+  transform: scale(1.2);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-sm
+  .image-embed:hover {
+  transform: scale(1.4);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-md
+  .image-embed:hover {
+  transform: scale(1.6);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-lg
+  .image-embed:hover {
+  transform: scale(1.8);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xl
+  .image-embed:hover {
+  transform: scale(2);
+}
+/* Hide tabs when only one tab is open (with transition) */
+.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+  max-height: 3em;
+  opacity: 1;
+  overflow: hidden;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.mod-root
+  .workspace-tabs:not(.mod-stacked):not(
+    :has(.workspace-tab-header:nth-of-type(2))
+  )
+  .workspace-tab-header-container {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Hide sidebar buttons */
+.sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-left {
+  display: none;
+}
+
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .workspace
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  padding-right: 4px;
+}
+
+/* Hide meta */
+.markdown-reading-view .metadata-container {
+  display: none;
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide search count flair */
+.tree-item-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+/* Hide instructions */
+.prompt-instructions {
+  display: none;
+}
+
+/* Hide file nav header */
+.workspace-leaf-content[data-type="file-explorer"] .nav-header {
+  display: none;
+}
+
+/* Hide left panel header icons unless hovered */
+.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container-inner:hover {
+  opacity: 1;
+}
+
+/* Hide nav buttons */
+.view-header-nav-buttons {
+  display: none;
+}
+
+/* Hide tags, links, backlinks and outline nav headers unless hovered */
+.workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outline"] .nav-header {
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  transition:
+    opacity 0.3s ease,
+    height 0.3s ease,
+    padding 0.3s ease;
+}
+
+.workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outgoing-link"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="backlink"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outline"]
+  .nav-header {
+  opacity: 1;
+  height: 1.75em;
+}
+
+/* Hide vault switcher unless hovered */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
+.workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher.has-active-menu {
+  opacity: 1;
+}
+
+/* Hide vault actions (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+  display: none !important;
+}
+
+/* Hide local graph header unless hovered */
+.workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-header-container:hover
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 1;
+}
+
+/* Hide graph controls unless hovered */
+.workspace-tab-container .graph-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-container:hover .graph-controls {
+  opacity: 1;
+}
+/* Obsidian Variables */
+body {
+  /* Bigger headers */
+  --h1-size: calc(var(--font-text-size) * 2);
+  --h2-size: calc(var(--font-text-size) * 1.6);
+  --h3-size: calc(var(--font-text-size) * 1.4);
+  --h4-size: calc(var(--font-text-size) * 1.2);
+  --h5-size: calc(var(--font-text-size) * 1.1);
+  --h6-size: calc(var(--font-text-size) * 1);
+
+  /* Taller lines */
+  --h1-line-height: 1.6;
+  --h2-line-height: 1.6;
+  --h3-line-height: 1.6;
+  --h4-line-height: 1.6;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --line-height-normal: 1.6;
+
+  /* Link style */
+  --link-decoration: underline;
+  --link-unresolved-decoration-color: var(--text-muted);
+  --link-external-decoration-color: var(--text-muted);
+
+  /* Colors */
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --titlebar-background-focused: var(--background-primary);
+  --checkbox-marker-color: var(--background-secondary);
+  --modal-background: var(--background-secondary);
+  --divider-color: transparent !important;
+}
+
+/* Basic Theme Colours */
+.theme-light {
+  --background-primary: #f7f7f7;
+  --background-secondary: #fcfcfc;
+  --text-normal: #1a1a1a;
+  --text-muted: #b5b3b1;
+}
+
+.theme-dark {
+  --background-primary: #111111;
+  --background-secondary: #141414;
+  --text-normal: #ccc;
+  --text-muted: #707070;
+}
+
+.theme-dark.is-fullscreen {
+  --background-primary: #111111;
+}
+
+/* Transparency if not on Windows */
+/* I assume it works on Linux, might have to make macOS only if not */
+/* Right now it is anything that is not Windows */
+:not(.mod-windows).theme-dark {
+  --background-primary: transparent;
+}
+/* Desaturate and fade status bar */
+.status-bar {
+  filter: saturate(0);
+  opacity: 0.5;
+  border: none;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.status-bar:hover,
+.status-bar:focus-within {
+  filter: saturate(1);
+  opacity: 1;
+}
+
+/* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
+.embedded-backlinks,
+.metadata-container {
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.embedded-backlinks:hover,
+.embedded-backlinks:focus-within,
+.metadata-container:hover,
+.metadata-container:focus-within {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Link styling */
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.cm-s-obsidian span.cm-url,
+.cm-underline,
+.markdown-source-view.mod-cm6 .cm-underline,
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  text-decoration-style: dotted;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 0.3em;
+}
+
+/* Image rounded corners */
+img {
+  border-radius: var(--radius-m);
+}
+
+/* Transparent background fix */
+:not(.mod-windows) .prompt,
+:not(.mod-windows) .popover,
+:not(.mod-windows) .suggestion,
+:not(.mod-windows) .graph-controls,
+:not(.mod-windows) .lt-predictions-container,
+:not(.mod-windows) .vertical-tab-content {
+  background-color: var(--modal-background) !important;
+}
+
+/* Fix titlebar draggability */
+.view-header-title-container {
+  -webkit-app-region: drag;
+}
+
+/* Fix not being able to click on the elements inside the titlebar */
+.view-header-title-container div {
+  -webkit-app-region: no-drag;
+}
+
+/* Stacked tabs transparent background fix */
+.mod-stacked
+  .workspace-tab-container
+  > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
+  --background-primary: #111111;
+}
