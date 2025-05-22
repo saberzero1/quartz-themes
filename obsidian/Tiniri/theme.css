@@ -1,6 +1,6 @@
 .theme-light {
-	--background-primary: #FCFBFA;
-	--background-primary-alt: #FCFBFA;
+	--background-primary: #FDFCFC;
+	--background-primary-alt: #FDFCFC;
 	--background-secondary: #F7F3F0;
 	--background-secondary-alt: #F7F3F0;
 	--background-modifier-border: #33323118;
@@ -14,7 +14,7 @@
 	--text-normal: #333231;
 	--text-muted: #807974;
 	--text-faint: #80797499;
-	--text-on-accent: #FCFBFA;
+	--text-on-accent: #FDFCFC;
 	--text-on-accent-inverted: #333231;
 	--text-success: #538a8a;
 	--text-warning: #AD514C;
@@ -42,10 +42,10 @@
 
 }
 .theme-dark {
-	--background-primary: #252629;
-	--background-primary-alt: #252629;
-	--background-secondary: #222325;
-	--background-secondary-alt: #222325;
+	--background-primary: #1F2122;
+	--background-primary-alt: #1F2122;
+	--background-secondary: #1B1D1E;
+	--background-secondary-alt: #1B1D1E;
 	--background-modifier-border: #0003;
 	--accent-h: 0;
 	--accent-l: 50;
@@ -55,25 +55,25 @@
 	--interactive-accent: #314F52;
 	--interactive-accent-hover: #39595C;
 	--text-normal: #DBD3CA;
-	--text-muted: #9E8B8E;
-	--text-faint: #9E8B8E99;
+	--text-muted: #938A80;
+	--text-faint: #938A8099;
 	--text-on-accent: #DBD3CA;
-	--text-on-accent-inverted: #252629;
+	--text-on-accent-inverted: #1F2122;
 	--text-success: #AAC2AE;
-	--text-warning: #EB8042;
-	--text-error: #EB8042;
-	--text-accent: #C76363;
+	--text-warning: #F5A571;
+	--text-error: #F5A571;
+	--text-accent: #AD514C;
 	--text-accent-hover: #E07575;
 	--text-selection: #353A42;
-	--text-highlight-bg: #C7636344;
-	--color-red: #c66b67;
-	--color-orange: #EB9350;
-	--color-yellow: #EB9350;
-	--color-green: #AD8301;
-	--color-cyan: #78716C;
-	--color-blue: #68a0a0;
-	--color-purple: #A89080;
-	--color-pink: #A89080;
+	--text-highlight-bg: #AD514C44;
+	--color-red: #AD514C;
+	--color-orange: #F5A571;
+	--color-yellow: #F5A571;
+	--color-green: #F5A571;
+	--color-cyan: #938A80;
+	--color-blue: #5BA9B9;
+	--color-purple: #D67C7F;
+	--color-pink: #D67C7F;
 	--color-red-rgb: 198, 107, 103;
 	--color-orange-rgb: 235, 147, 80;
 	--color-yellow-rgb: 235, 147, 80;

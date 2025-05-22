@@ -729,7 +729,7 @@ Links
 [[]]
 */
 body {
-  --font-links: "Alegreya SC", "Spectral", serif;
+  --font-links: "Alegreya", "Alegreya SC", "Spectral", serif;
 }
 
 .cm-s-obsidian span.cm-link a,
@@ -782,13 +782,7 @@ body.ss-links-spectral {
 }
 
 body.ss-links-sans {
-  --font-links: "Alegreya", "Alegreya Sans SC", sans-serif;
-}
-
-.markdown-source-view.mod-cm6 .cm-url {
-  font-family: var(--font-monospace);
-  font-size: 0.8em;
-  color: var(--link-external-color);
+  --font-links: "Alegreya Sans SC", sans-serif;
 }
 
 .cm-s-obsidian .cm-formatting-hashtag {
@@ -1414,7 +1408,7 @@ body.coherence.theme-dark {
 #calendar-container .reset-button {
   color: var(--link-color);
   text-transform: initial;
-  font-family: "Alegreya", "Alegreya SC";
+  font-family: "Alegreya SC";
   font-size: 0.9em;
   font-weight: 500;
 }
