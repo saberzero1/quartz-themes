@@ -59,18 +59,18 @@ For reference, check the Obsidian style settings repo
   --ap-base0-l: 5%;
   --ap-base0-d: 13%;
   --ap-base1: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
-  --ap-red: #E97193;
-  --ap-green: #AAC5A0;
-  --ap-blue: #A8C5E6;
-  --ap-purple: #DFA7E7;
+  --ap-red: #e97193;
+  --ap-green: #aac5a0;
+  --ap-blue: #a8c5e6;
+  --ap-purple: #dfa7e7;
   --ap-aqua: #a8e5e6;
   --ap-yellow: #ece0a8;
-  --ap-orange: #D1A999;
-  --ap-color-strong: #E97193;
-  --ap-color-quote: #E97193;
-  --ap-color-italic: #E97193;
+  --ap-orange: #d1a999;
+  --ap-color-strong: #e97193;
+  --ap-color-quote: #e97193;
+  --ap-color-italic: #e97193;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -109,12 +109,15 @@ For reference, check the Obsidian style settings repo
   --ap-size-text-item: 1em;
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
-  --ap-font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-interface: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-monospace: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-title: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-header: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-hashtag: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    sans-serif;
+  --ap-font-monospace: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    sans-serif;
+  --ap-font-title: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-header: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-hashtag: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    sans-serif;
 }
 
 .theme-dark.a-theme-purple {
@@ -122,7 +125,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 64%;
   --ap-primary-l: 88%;
   --ap-primary-d: 80%;
-  --ap-primary: #EEEEEE;
+  --ap-primary: #eeeeee;
   --ap-secondary-h: 157;
   --ap-secondary-s: 32%;
   --ap-secondary-l: 58%;
@@ -138,18 +141,18 @@ For reference, check the Obsidian style settings repo
   --ap-base0-l: 5%;
   --ap-base0-d: 13%;
   --ap-base1: #370617;
-  --ap-red: #E97193;
-  --ap-green: #AAC5A0;
-  --ap-blue: #A8C5E6;
-  --ap-purple: #DFA7E7;
+  --ap-red: #e97193;
+  --ap-green: #aac5a0;
+  --ap-blue: #a8c5e6;
+  --ap-purple: #dfa7e7;
   --ap-aqua: #a8e5e6;
   --ap-yellow: #ece0a8;
-  --ap-orange: #D1A999;
-  --ap-color-strong: #E97193;
-  --ap-color-quote: #E97193;
-  --ap-color-italic: #E97193;
+  --ap-orange: #d1a999;
+  --ap-color-strong: #e97193;
+  --ap-color-quote: #e97193;
+  --ap-color-italic: #e97193;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -180,10 +183,10 @@ For reference, check the Obsidian style settings repo
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -216,10 +219,16 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
@@ -299,7 +308,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 63.9344262295%;
   --ap-primary-l: 88.0392156863%;
   --ap-primary-d: 80%;
-  --ap-primary: #F4D7CD;
+  --ap-primary: #f4d7cd;
   --ap-secondary-h: 157.0588235294deg;
   --ap-secondary-s: 31.7757009346%;
   --ap-secondary-l: 58.0392156863%;
@@ -327,7 +336,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -358,10 +367,10 @@ For reference, check the Obsidian style settings repo
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -394,10 +403,16 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
@@ -477,7 +492,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 63.9344262295%;
   --ap-primary-l: 88.0392156863%;
   --ap-primary-d: 80%;
-  --ap-primary: #F4D7CD;
+  --ap-primary: #f4d7cd;
   --ap-secondary-h: 157.0588235294deg;
   --ap-secondary-s: 31.7757009346%;
   --ap-secondary-l: 58.0392156863%;
@@ -487,12 +502,12 @@ For reference, check the Obsidian style settings repo
   --ap-base0-s: 33.3333333333%;
   --ap-base0-l: 7.6470588235%;
   --ap-base0-d: 20%;
-  --ap-base0: #0F0D1A;
+  --ap-base0: #0f0d1a;
   --ap-base1-h: 250deg;
   --ap-base1-s: 23.0769230769%;
   --ap-base1-l: 5.0980392157%;
   --ap-base1-d: 20%;
-  --ap-base1: #0B0A10;
+  --ap-base1: #0b0a10;
   --ap-red: #f38ba8;
   --ap-green: #a6e3a1;
   --ap-blue: #89b4fa;
@@ -505,7 +520,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -515,8 +530,8 @@ For reference, check the Obsidian style settings repo
   --ap-code-aqua: var(--ap-aqua);
   --ap-code-yellow: var(--ap-yellow);
   --ap-code-orange: var(--ap-orange);
-  --ap-color-dp0: #0B0A10;
-  --ap-color-dp1: #0F0D1A;
+  --ap-color-dp0: #0b0a10;
+  --ap-color-dp1: #0f0d1a;
   --ap-color-dp2: hsl(249.2307692308deg, 33.3333333333%, 12.6470588235%);
   --ap-color-dp3: hsl(249.2307692308deg, 33.3333333333%, 17.6470588235%);
   --ap-color-dp4: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
@@ -536,10 +551,10 @@ For reference, check the Obsidian style settings repo
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -572,10 +587,16 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
@@ -665,12 +686,12 @@ For reference, check the Obsidian style settings repo
   --ap-base0-s: 33.3333333333%;
   --ap-base0-l: 7.6470588235%;
   --ap-base0-d: 20%;
-  --ap-base0: #0F0D1A;
+  --ap-base0: #0f0d1a;
   --ap-base1-h: 250deg;
   --ap-base1-s: 23.0769230769%;
   --ap-base1-l: 5.0980392157%;
   --ap-base1-d: 20%;
-  --ap-base1: #0B0A10;
+  --ap-base1: #0b0a10;
   --ap-red: #f38ba8;
   --ap-green: #a6e3a1;
   --ap-blue: #89b4fa;
@@ -683,7 +704,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -693,8 +714,8 @@ For reference, check the Obsidian style settings repo
   --ap-code-aqua: var(--ap-aqua);
   --ap-code-yellow: var(--ap-yellow);
   --ap-code-orange: var(--ap-orange);
-  --ap-color-dp0: #0B0A10;
-  --ap-color-dp1: #0F0D1A;
+  --ap-color-dp0: #0b0a10;
+  --ap-color-dp1: #0f0d1a;
   --ap-color-dp2: hsl(249.2307692308deg, 33.3333333333%, 12.6470588235%);
   --ap-color-dp3: hsl(249.2307692308deg, 33.3333333333%, 17.6470588235%);
   --ap-color-dp4: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
@@ -714,10 +735,10 @@ For reference, check the Obsidian style settings repo
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -750,10 +771,16 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
@@ -836,7 +863,13 @@ For reference, check the Obsidian style settings repo
 .glassMorphism .nav-folder.mod-root,
 .glassMorphism .nav-header .nav-buttons-container,
 .glassMorphism .workspace-split.mod-root .view-content {
-  background: linear-gradient(120deg, var(--ap-color-dp1), var(--ap-color-dp2), 70%, var(--ap-color-dp1));
+  background: linear-gradient(
+    120deg,
+    var(--ap-color-dp1),
+    var(--ap-color-dp2),
+    70%,
+    var(--ap-color-dp1)
+  );
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
@@ -1012,8 +1045,8 @@ body:not(.default-font-color) .cm-strong {
 
 /* Completed checkboxes */
 .markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
   text-decoration: none;
   color: var(--text-faint);
 }
@@ -1021,7 +1054,9 @@ body:not(.default-font-color) .cm-strong {
 /* Image card */
 img {
   border-radius: var(--ap-radius-l);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* ###########################################
@@ -1040,7 +1075,7 @@ Code styling
   color: var(--ap-code-gray-2);
 }
 
-code[class*=language-],
+code[class*="language-"],
 .token.selector,
 .token.tag,
 .token.parameter,
@@ -1163,7 +1198,8 @@ Container styling
 
 .workspace-ribbon.mod-left {
   border-radius: var(--ap-radius-l);
-  margin: calc(var(--header-height) + var(--ap-container-padding)) var(--ap-container-padding) var(--ap-container-padding) var(--ap-container-padding);
+  margin: calc(var(--header-height) + var(--ap-container-padding)) var(--ap-container-padding)
+    var(--ap-container-padding) var(--ap-container-padding);
 }
 
 .workspace-ribbon.mod-left:before {
@@ -1299,10 +1335,10 @@ Plugins
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -1335,10 +1371,16 @@ Plugins
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
@@ -1407,10 +1449,10 @@ Plugins
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255,;
-  --color-red-rgb: 251, 70, 76,;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110,;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
   --color-yellow: #e0de71;
@@ -1443,10 +1485,16 @@ Plugins
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);

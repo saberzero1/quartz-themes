@@ -107,7 +107,7 @@ body {
   /* Prompts */
   --prompt-border-width: var(--size-2-1);
   /* Tabs */
-  --tab-divider-color:transparent;
+  --tab-divider-color: transparent;
   --tab-outline-color: transparent;
   --tab-curve: var(--size-2-1);
   --tab-radius: var(--radius-s);
@@ -137,7 +137,7 @@ body {
   --h3-size: 1.25rem;
   --h4-size: 1.125rem;
   --h5-size: 1rem;
-  --h6-size: .88rem;
+  --h6-size: 0.88rem;
   --h1-line-height: 1.5rem;
   --h2-line-height: 1.25rem;
   --h3-line-height: 1.2rem;
@@ -164,9 +164,9 @@ body {
   --border-width: var(--size-2-1);
   /* Fonts */
   --font-interface-theme: "Lato";
-  --font-text-theme:"Times New Roman", Times, serif;
+  --font-text-theme: "Times New Roman", Times, serif;
   /* Divider */
-  --divider-color:transparent;
+  --divider-color: transparent;
   /* Links */
   --link-decoration: none;
   --link-decoration-hover: none;
@@ -270,9 +270,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 
 .theme-light {
   /* Backgrounds */
-  --background-primary:var(--white-100);
+  --background-primary: var(--white-100);
   --background-primary-alt: var(--white-90);
-  --background-secondary:var(--white-90);
+  --background-secondary: var(--white-90);
   --background-secondary-alt: var(--white-100);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--white-90);
@@ -317,11 +317,11 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-item-color-active: var(--white-100);
   --nav-item-color-selected: var(--white-100);
   --nav-item-color-highlighted: var(--white-90);
-  --nav-heading-color:var(--white-80);
+  --nav-heading-color: var(--white-80);
   --nav-heading-color-hover: var(--white-90);
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
-  --nav-collapse-icon-color:var(--white-80);
+  --nav-collapse-icon-color: var(--white-80);
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Kanban */
@@ -340,7 +340,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --link-color: var(--orange-60);
   --link-color-hover: var(--orange-50);
   --link-unresolved-color: var(--black-80);
-  --link-unresolved-opacity:.5;
+  --link-unresolved-opacity: 0.5;
   --link-unresolved-decoration-color: var(--black-80);
   --link-external-color: var(--orange-50);
   --link-external-color-hover: var(--orange-40);
@@ -705,7 +705,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 
 .theme-dark {
   /* Backgrounds */
-  --background-primary:var(--black-80);
+  --background-primary: var(--black-80);
   --background-primary-alt: var(--black-80);
   --background-secondary: var(--black-90);
   --background-secondary-alt: var(--black-80);
@@ -720,7 +720,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --icon-color-active: var(--white-100);
   --clickable-icon-radius: var(--radius-s);
   /*Accent*/
-  --accent-h:11;
+  --accent-h: 11;
   --accent-s: 100%;
   --accent-l: 60%;
   /* Checkboxes */
@@ -732,9 +732,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --titlebar-text-color: var(--white-80);
   --titlebar-text-color-focused: var(--white-80);
   /* Swatch */
-  --swatch-shadow: var(--shadow)
-  /* Dragging */
-  --drag-ghost-background: var(--white-80);
+  --swatch-shadow: var(--shadow) /* Dragging */ --drag-ghost-background: var(--white-80);
   --drag-ghost-text-color: var(--white-80);
   /* Nav */
   --nav-item-color: var(--white-80);
@@ -742,11 +740,11 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-item-color-active: var(--white-100);
   --nav-item-color-selected: var(--white-100);
   --nav-item-color-highlighted: var(--white-90);
-  --nav-heading-color:var(--white-80);
+  --nav-heading-color: var(--white-80);
   --nav-heading-color-hover: var(--white-90);
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
-  --nav-collapse-icon-color:var(--white-80);
+  --nav-collapse-icon-color: var(--white-80);
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Tabs */
@@ -764,7 +762,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --link-color: var(--orange-60);
   --link-color-hover: var(--orange-50);
   --link-unresolved-color: var(--white-90);
-  --link-unresolved-opacity:.4;
+  --link-unresolved-opacity: 0.4;
   --link-external-color: var(--orange-60);
   --link-external-color-hover: var(--orange-50);
   /* Metadata */
@@ -773,7 +771,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --table-background-color: var(--black-60);
   --table-border-color: transparent;
   --table-header-background: var(--black-85);
-  --table-header-background-hover:var(--black-85);
+  --table-header-background-hover: var(--black-85);
   --table-header-font: "Lato";
   --table-header-color: var(--white-80);
   --table-line-height: 2rem;
@@ -846,7 +844,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark .setting-item-control {
   box-shadow: 0px;
 }
-.theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
+.theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover
+{
   color: var(--white-80);
 }
 .theme-dark .callout-title {
@@ -1032,10 +1031,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark svg.svg-icon.sidebar-left:focus {
   color: var(--white-90);
 }
-.theme-dark input[type=search] {
+.theme-dark input[type="search"] {
   background-color: var(--black-80);
 }
-.theme-dark input[type=search]:focus {
+.theme-dark input[type="search"]:focus {
   background-color: var(--black-80);
   color: var(--white-80);
 }

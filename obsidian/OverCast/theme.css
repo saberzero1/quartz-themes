@@ -7,34 +7,38 @@
 }
 
 /* Adding the theme to every background element */
-body, .titlebar-inner, .titlebar, .titlebar-button { 
+body,
+.titlebar-inner,
+.titlebar,
+.titlebar-button {
   --background-primary: semi-transparent;
   --background-secondary: semi-transparent;
   --divider-width: 0px;
 }
 
 /* Keeping the settings menu darker to make it easier to read */
-.settings-container, 
-.menu, .modal-sidebar, 
-.community-modal-controls, 
+.settings-container,
+.menu,
+.modal-sidebar,
+.community-modal-controls,
 .community-modal-search-results,
 .community-modal-info,
-.modal-setting-nav-bar, 
-.vertical-tab-header, 
-.vertical-tab-content, 
-.settings-panel, 
-.setting-item, 
-.setting-item-label, 
+.modal-setting-nav-bar,
+.vertical-tab-header,
+.vertical-tab-content,
+.settings-panel,
+.setting-item,
+.setting-item-label,
 .setting-item-description,
 .status-bar {
-  backdrop-filter: brightness(0.1); 
+  backdrop-filter: brightness(0.1);
   background-color: transparent;
   border-color: rgb(226, 226, 226);
 }
 
 /* Glowing effect for checkboxes */
 .markdown-preview-view input[type="checkbox"] {
-  appearance: none; 
+  appearance: none;
   width: 16px;
   height: 16px;
   border: 2px solid #ffffff;
@@ -43,7 +47,9 @@ body, .titlebar-inner, .titlebar, .titlebar-button {
   background: transparent;
   cursor: pointer;
   box-shadow: 0 0 5px #ffffff;
-  transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    background 0.3s ease-in-out;
 }
 
 .markdown-preview-view input[type="checkbox"]:checked {
@@ -51,22 +57,21 @@ body, .titlebar-inner, .titlebar, .titlebar-button {
   box-shadow: 0 0 8px #ffffff;
 }
 
-
 /* Additional text customization for glowing effect */
-.markdown-preview-view, 
-.modal-close-button, 
-.cm-content, 
-.markdown-source-view, 
+.markdown-preview-view,
+.modal-close-button,
+.cm-content,
+.markdown-source-view,
 .markdown-preview-view p {
   color: #ffffff !important;
   text-shadow: 0 0 3px #ffffff;
 }
 
-.markdown-preview-view h1, 
-.markdown-preview-view h2, 
-.markdown-preview-view h3, 
-.markdown-preview-view h4, 
-.markdown-preview-view h5, 
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
 .markdown-preview-view h6 {
   color: #ffffff !important;
   text-shadow: 0 0 3px #ffffff;
@@ -77,7 +82,8 @@ body, .titlebar-inner, .titlebar, .titlebar-button {
   text-shadow: 0 0 3px #ffffff;
 }
 
-.empty-state-container, .view-header-title {
+.empty-state-container,
+.view-header-title {
   display: none;
 }
 
@@ -86,7 +92,7 @@ body, .titlebar-inner, .titlebar, .titlebar-button {
   .workspace-split.mod-vertical,
   .workspace-leaf,
   .sidebar {
-    backdrop-filter: blur(6px) !important; 
-    background: rgba(0, 0, 0, 0.1) !important; 
+    backdrop-filter: blur(6px) !important;
+    background: rgba(0, 0, 0, 0.1) !important;
   }
 }

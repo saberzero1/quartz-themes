@@ -4,6 +4,6 @@
   "version": "0.3.0",
   "minAppVersion": "1.6.3",
   "author": "bladeacer",
-  "screenshot" : "./docs/dark.png",
+  "screenshot": "./docs/dark.png",
   "modes": ["dark"]
 }

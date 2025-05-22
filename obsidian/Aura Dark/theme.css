@@ -1,22 +1,27 @@
 .theme-dark,
 .theme-dark.aura-dark {
-    --background-primary: #15141b;
-    --background-secondary: #110f18;
-	--ribbon-background: #15141b;
-	--titlebar-background: var(--background-secondary);
-    --titlebar-background-focused: var(--background-secondary);
-    --code-background: var(--background-secondary);
-    --indentation-guide-color: #edecee;
-	--color-base-30: #61ffca;
+  --background-primary: #15141b;
+  --background-secondary: #110f18;
+  --ribbon-background: #15141b;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
 }
 
-.clickable-icon:hover, .clickable-icon:hover svg, .is-focused .titlebar-inner {
-	color: #61ffca;
+.clickable-icon:hover,
+.clickable-icon:hover svg,
+.is-focused .titlebar-inner {
+  color: #61ffca;
 }
 
 /* File picker: Make current file purple! */
-body:not(.is-grabbing) .nav-file-title.is-active:hover, body:not(.is-grabbing) .nav-folder-title.is-active:hover, .nav-file-title.is-active, .nav-folder-title.is-active {
-	color: #a277ff;
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover,
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: #a277ff;
 }
 
 select,
@@ -30,24 +35,28 @@ select,
 }
 
 .theme-dark.aura-soft {
-    --background-primary: #21202e;
-    --background-secondary: #1c1b22;
-	--ribbon-background: #21202e;
-	--titlebar-background: var(--background-secondary);
-    --titlebar-background-focused: var(--background-secondary);
-    --code-background: var(--background-secondary);
-    --indentation-guide-color: #edecee;
-    --color-base-30: #61ffca;
-
+  --background-primary: #21202e;
+  --background-secondary: #1c1b22;
+  --ribbon-background: #21202e;
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --code-background: var(--background-secondary);
+  --indentation-guide-color: #edecee;
+  --color-base-30: #61ffca;
 }
 
-.clickable-icon.aura-soft:hover, .clickable-icon.aura-soft:hover svg, .is-focused.aura-soft .titlebar-inner.aura-soft {
-	color: #61ffca;
+.clickable-icon.aura-soft:hover,
+.clickable-icon.aura-soft:hover svg,
+.is-focused.aura-soft .titlebar-inner.aura-soft {
+  color: #61ffca;
 }
 
 /* File picker: Make current file purple! */
-body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover, body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover, .nav-file-title.is-active.aura-soft, .nav-folder-title.is-active.aura-soft {
-	color: #a277ff;
+body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover,
+body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover,
+.nav-file-title.is-active.aura-soft,
+.nav-folder-title.is-active.aura-soft {
+  color: #a277ff;
 }
 
 select,

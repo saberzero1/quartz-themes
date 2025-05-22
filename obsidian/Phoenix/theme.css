@@ -3,85 +3,84 @@ Phoenix Theme for Obsidian by RyzenFromFire
 Adapted from the gruvbox and Atom themes.
 */
 
-:root
-{
-    /* Custom Config */
+:root {
+  /* Custom Config */
 
-    /* Maximum Height (px) for note embeds (probably applies to other embeds too) */
-    --max-embed-height: 1000px; /* Obsidian Default is 600px */
+  /* Maximum Height (px) for note embeds (probably applies to other embeds too) */
+  --max-embed-height: 1000px; /* Obsidian Default is 600px */
 
-    /* Gruvbox Colors */
-    --dark0-hard:         #1d2021;
-    --dark0:              #282828;
-    --dark0-soft:         #32302f;
-    --dark1:              #3c3836;
-    --dark2:              #504945;
-    --dark3:              #665c54;
-    --dark4:              #7c6f64;
+  /* Gruvbox Colors */
+  --dark0-hard: #1d2021;
+  --dark0: #282828;
+  --dark0-soft: #32302f;
+  --dark1: #3c3836;
+  --dark2: #504945;
+  --dark3: #665c54;
+  --dark4: #7c6f64;
 
-    --gray:               #928374;
+  --gray: #928374;
 
-    --light0-hard:        #f9f5d7;
-    --light0:             #fbf1c7;
-    --light0-soft:        #f2e5bc;
-    --light1:             #ebdbb2;
-    --light2:             #d5c4a1;
-    --light3:             #bdae93;
-    --light4:             #a89984;
+  --light0-hard: #f9f5d7;
+  --light0: #fbf1c7;
+  --light0-soft: #f2e5bc;
+  --light1: #ebdbb2;
+  --light2: #d5c4a1;
+  --light3: #bdae93;
+  --light4: #a89984;
 
-    --bright-red:         #fb4934;
-    --bright-orange-v:    #fe8019;
-    --bright-yellow-v:    #fabd2f;
+  --bright-red: #fb4934;
+  --bright-orange-v: #fe8019;
+  --bright-yellow-v: #fabd2f;
 
-    --neutral-red:        #cc241d;
-    --neutral-orange:     #d65d0e;
-    --neutral-yellow:     #d79921;
+  --neutral-red: #cc241d;
+  --neutral-orange: #d65d0e;
+  --neutral-yellow: #d79921;
 
-    --faded-red:          #9d0006;
-    --faded-orange:       #af3a03;
-    --faded-yellow:       #b57614;
+  --faded-red: #9d0006;
+  --faded-orange: #af3a03;
+  --faded-yellow: #b57614;
 
-    /* My Custom Colors */
-    --platinum:           #cccccc;
-    --r-dark0-accent:     #1e1e1e;
-    --r-gray:             #9d8f82;
-    --r-gray2:            #a89c90;
-    --r-gray3:            #b3ab9e;
-    --r-lightn1:          #f2e5d8;   
-    --r-light0:           #e7cfb8;
-    --r-light1:           #dbc5af;
-    --r-light2:           #d0baa6;
-    --r-light2-soft:      #c4b09c;
-    --r-light3:           #b9a693;
-    --r-light4:           #a79584;
+  /* My Custom Colors */
+  --platinum: #cccccc;
+  --r-dark0-accent: #1e1e1e;
+  --r-gray: #9d8f82;
+  --r-gray2: #a89c90;
+  --r-gray3: #b3ab9e;
+  --r-lightn1: #f2e5d8;
+  --r-light0: #e7cfb8;
+  --r-light1: #dbc5af;
+  --r-light2: #d0baa6;
+  --r-light2-soft: #c4b09c;
+  --r-light3: #b9a693;
+  --r-light4: #a79584;
 
-    /* Background Colors */
-    --r-dark0:            #212121;
-    --r-dark1:            #191717;
-    --r-dark2:            #161414;
+  /* Background Colors */
+  --r-dark0: #212121;
+  --r-dark1: #191717;
+  --r-dark2: #161414;
 
-    /* Text, Header, and Code Colors */
-    --r-standard-text:    #eadad9;
-    --r-dark-red:         #bc0104; /* H1 */
-    --r-red-orange:       #c52d0a; /* Old H2 */
-    --r-orange:           #ea4f0d; /* New H2 */
-    --r-deep-orange:      #ed5b0f; /* Old H3 */
-    --r-bright-orange:    #fe750e; /* New H3, Old H4 */
-    --r-yellow-orange:    #fe9109; /* Old H5 */
-    --r-bright-yellow:    #fea30f; /* New H4 */
-    --r-yellow-green:     #c0c90a; /* New H5 */
-    --r-mist-energy-blue: #27cac7; /* New H6 */ /* If you get this reference, o7 */
-    --r-dark-orange:      #d5520e; 
-    --r-meteor:           #72504b;
-    --r-gunmetal:         #534f4e;
-    --r-scorpion:         #625e5e; /* "scorpion" grey according to some color picker site */
-    --code-orange:        #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
-    --code-light-gray:    #cccccc; /* this is the standard text color in VSCode */
-    --obsidian-codeblock: #1a1a1a; /* Obsidian default codeblock color */
-    --test-green:         #00ff00; /* for testing purposes */
-    --r-bg-highlight:     color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
-    --r-bg-selection:     color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
-    --r-pdf-highlight:    var(--r-bright-orange);
+  /* Text, Header, and Code Colors */
+  --r-standard-text: #eadad9;
+  --r-dark-red: #bc0104; /* H1 */
+  --r-red-orange: #c52d0a; /* Old H2 */
+  --r-orange: #ea4f0d; /* New H2 */
+  --r-deep-orange: #ed5b0f; /* Old H3 */
+  --r-bright-orange: #fe750e; /* New H3, Old H4 */
+  --r-yellow-orange: #fe9109; /* Old H5 */
+  --r-bright-yellow: #fea30f; /* New H4 */
+  --r-yellow-green: #c0c90a; /* New H5 */
+  --r-mist-energy-blue: #27cac7; /* New H6 */ /* If you get this reference, o7 */
+  --r-dark-orange: #d5520e;
+  --r-meteor: #72504b;
+  --r-gunmetal: #534f4e;
+  --r-scorpion: #625e5e; /* "scorpion" grey according to some color picker site */
+  --code-orange: #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
+  --code-light-gray: #cccccc; /* this is the standard text color in VSCode */
+  --obsidian-codeblock: #1a1a1a; /* Obsidian default codeblock color */
+  --test-green: #00ff00; /* for testing purposes */
+  --r-bg-highlight: color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
+  --r-bg-selection: color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
+  --r-pdf-highlight: var(--r-bright-orange);
 }
 
 /*
@@ -93,48 +92,51 @@ ______  ___  ______ _   __
 |___/ \_| |_/\_| \_\_| \_/                 
 
 */
-.theme-dark
-{
-  --background-primary:         var(--r-dark0);
-  --background-primary-alt:     var(--dark0);
-  --background-secondary:       var(--r-dark1);
-  --background-secondary-alt:   var(--r-dark2);
-  --text-normal:                var(--r-standard-text);
-  --text-faint:                 var(--r-scorpion);
-  --text-muted:                 var(--color-base-70);
-  --text-platinum:              var(--platinum);
-  --text-title-h1:              var(--r-dark-red);
-  --text-title-h2:              var(--r-orange);
-  --text-title-h3:              var(--r-bright-orange);
-  --text-title-h4:              var(--r-bright-yellow);
-  --text-title-h5:              var(--r-yellow-green);
-  --text-title-h6:              var(--r-mist-energy-blue);
-  --text-link:                  var(--text-a); /* this is for external links */
-  --text-link-hover:            var(--text-a-hover);
-  --text-a:                     var(--r-bright-orange); /* this is for internal links */ /* also controls color of sidebar icons when hovered */
-  --text-a-hover:               var(--r-yellow-orange);
-  --text-mark:                  var(--r-bg-highlight);
-  --text-highlight-bg:          var(--r-bg-highlight);
-  --interactive-accent:         var(--r-deep-orange);
-  --interactive-before:         var(--dark4);
-  --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
-  --text-accent:                var(--r-bright-orange);
-  --text-accent-hover:          var(--r-yellow-orange);
-  --interactive-accent-rgb:     var(--r-bright-orange);
-  --inline-code:                var(--code-light-gray); /* text in inline code, edit and preview */
-  --code-block:                 var(--code-light-gray); /* text in preview mode from codeblock */
-  --code-normal:                var(--code-light-gray);
-  --default-codeblock:          var(--obsidian-codeblock); /* codeblock background color */
-  --pre-code:                   var(--default-codeblock); /* inline code background color */
-  --vim-cursor:                 var(--r-bright-orange);
-  --text-selection:             var(--r-bg-selection);
-  --text-tag:                   var(--r-bright-orange);
-  --text-card:                  var(--r-light2-soft);
-  --status-bar-background:      var(--background-secondary);
-  --interactive-normal:         var(--color-base-30);
-  --callout-bg-darken-pct:      0%;
-  --button-text-color:          var(--background-secondary-alt);
-  --graph-view-line-color:      var(--dark1);
+.theme-dark {
+  --background-primary: var(--r-dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--r-dark1);
+  --background-secondary-alt: var(--r-dark2);
+  --text-normal: var(--r-standard-text);
+  --text-faint: var(--r-scorpion);
+  --text-muted: var(--color-base-70);
+  --text-platinum: var(--platinum);
+  --text-title-h1: var(--r-dark-red);
+  --text-title-h2: var(--r-orange);
+  --text-title-h3: var(--r-bright-orange);
+  --text-title-h4: var(--r-bright-yellow);
+  --text-title-h5: var(--r-yellow-green);
+  --text-title-h6: var(--r-mist-energy-blue);
+  --text-link: var(--text-a); /* this is for external links */
+  --text-link-hover: var(--text-a-hover);
+  --text-a: var(
+    --r-bright-orange
+  ); /* this is for internal links */ /* also controls color of sidebar icons when hovered */
+  --text-a-hover: var(--r-yellow-orange);
+  --text-mark: var(--r-bg-highlight);
+  --text-highlight-bg: var(--r-bg-highlight);
+  --interactive-accent: var(--r-deep-orange);
+  --interactive-before: var(--dark4);
+  --background-modifier-border: var(
+    --r-gunmetal
+  ); /* very thin border around edge, and also file structure hierarchy */
+  --text-accent: var(--r-bright-orange);
+  --text-accent-hover: var(--r-yellow-orange);
+  --interactive-accent-rgb: var(--r-bright-orange);
+  --inline-code: var(--code-light-gray); /* text in inline code, edit and preview */
+  --code-block: var(--code-light-gray); /* text in preview mode from codeblock */
+  --code-normal: var(--code-light-gray);
+  --default-codeblock: var(--obsidian-codeblock); /* codeblock background color */
+  --pre-code: var(--default-codeblock); /* inline code background color */
+  --vim-cursor: var(--r-bright-orange);
+  --text-selection: var(--r-bg-selection);
+  --text-tag: var(--r-bright-orange);
+  --text-card: var(--r-light2-soft);
+  --status-bar-background: var(--background-secondary);
+  --interactive-normal: var(--color-base-30);
+  --callout-bg-darken-pct: 0%;
+  --button-text-color: var(--background-secondary-alt);
+  --graph-view-line-color: var(--dark1);
 }
 
 /*
@@ -147,47 +149,49 @@ ______  ___  ______ _   __
                                
 */
 .theme-light {
-  --background-primary:         var(--r-light1);
-  --background-primary-alt:     var(--r-light0);
-  --background-secondary:       var(--r-light2);
-  --background-secondary-alt:   var(--r-light3);
-  --text-normal:                var(--r-dark0-accent);
-  --text-faint:                 var(--r-gunmetal);
-  --text-muted:                 var(--r-gunmetal);
-  --text-platinum:              var(--platinum);
-  --text-title-h1:              var(--r-dark-red);
-  --text-title-h2:              var(--r-orange);
-  --text-title-h3:              var(--r-bright-orange);
-  --text-title-h4:              var(--r-bright-yellow);
-  --text-title-h5:              var(--r-yellow-green);
-  --text-title-h6:              var(--r-mist-energy-blue);
-  --text-link:                  var(--r-dark-orange);
-  --text-link-hover:            var(--r-deep-orange);
-  --text-a:                     var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
-  --text-a-hover:               var(--r-yellow-orange);
-  --text-mark:                  var(--r-bg-highlight);
-  --text-highlight-bg:          var(--r-bg-highlight);
-  --interactive-accent:         var(--r-deep-orange);
-  --interactive-before:         var(--r-light4);
-  --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
-  --text-accent:                var(--r-bright-orange);
-  --text-accent-hover:          var(--r-yellow-orange);
-  --interactive-accent-rgb:     var(--r-bright-orange);
-  --inline-code:                var(--r-dark2); /* text in inline code, edit and preview */
-  --code-block:                 var(--r-dark2); /* text in preview mode from codeblock */
-  --code-normal:                var(--r-dark2);
-  --default-codeblock:          var(--r-light3); /* codeblock background color */
-  --pre-code:                   var(--default-codeblock); /* inline code background color */
-  --vim-cursor:                 var(--r-bright-orange);
-  --text-selection:             var(--r-bg-selection);
-  --text-tag:                   var(--r-deep-orange);
-  --text-card:                  var(--r-dark2);
-  --status-bar-background:      var(--r-light2-soft);
-  --interactive-normal:         var(--r-light2);
-  --interactive-hover:          var(--r-light0);
-  --callout-bg-darken-pct:      5%;
-  --button-text-color:          var(--text-on-accent);
-  --graph-view-line-color:      var(--light4);
+  --background-primary: var(--r-light1);
+  --background-primary-alt: var(--r-light0);
+  --background-secondary: var(--r-light2);
+  --background-secondary-alt: var(--r-light3);
+  --text-normal: var(--r-dark0-accent);
+  --text-faint: var(--r-gunmetal);
+  --text-muted: var(--r-gunmetal);
+  --text-platinum: var(--platinum);
+  --text-title-h1: var(--r-dark-red);
+  --text-title-h2: var(--r-orange);
+  --text-title-h3: var(--r-bright-orange);
+  --text-title-h4: var(--r-bright-yellow);
+  --text-title-h5: var(--r-yellow-green);
+  --text-title-h6: var(--r-mist-energy-blue);
+  --text-link: var(--r-dark-orange);
+  --text-link-hover: var(--r-deep-orange);
+  --text-a: var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+  --text-a-hover: var(--r-yellow-orange);
+  --text-mark: var(--r-bg-highlight);
+  --text-highlight-bg: var(--r-bg-highlight);
+  --interactive-accent: var(--r-deep-orange);
+  --interactive-before: var(--r-light4);
+  --background-modifier-border: var(
+    --r-gunmetal
+  ); /* very thin border around edge, and also file structure hierarchy */
+  --text-accent: var(--r-bright-orange);
+  --text-accent-hover: var(--r-yellow-orange);
+  --interactive-accent-rgb: var(--r-bright-orange);
+  --inline-code: var(--r-dark2); /* text in inline code, edit and preview */
+  --code-block: var(--r-dark2); /* text in preview mode from codeblock */
+  --code-normal: var(--r-dark2);
+  --default-codeblock: var(--r-light3); /* codeblock background color */
+  --pre-code: var(--default-codeblock); /* inline code background color */
+  --vim-cursor: var(--r-bright-orange);
+  --text-selection: var(--r-bg-selection);
+  --text-tag: var(--r-deep-orange);
+  --text-card: var(--r-dark2);
+  --status-bar-background: var(--r-light2-soft);
+  --interactive-normal: var(--r-light2);
+  --interactive-hover: var(--r-light0);
+  --callout-bg-darken-pct: 5%;
+  --button-text-color: var(--text-on-accent);
+  --graph-view-line-color: var(--light4);
 }
 
 /* 
@@ -199,10 +203,11 @@ ______  ___  ______ _   __
  \____/\___/\_|  |_/\_|  |_/\___/\_| \_/
 
  */
-.theme-dark, .theme-light {
+.theme-dark,
+.theme-light {
   /* font size variables */
   --h1-size: 2.2em;
-  --h2-size: 2.0em;
+  --h2-size: 2em;
   --h3-size: 1.85em;
   --h4-size: 1.6em;
   --h5-size: 1.47em;
@@ -222,12 +227,36 @@ ______  ___  ______ _   __
   /* Heading Link Trickery */
   /* color-mix syntax: color-mix(in colorspace, color1 %-to-mix, color2)*/
   --hx-link-ul-transparency-pct: 33%;
-  --h1-link-ul-color: color-mix(in srgb, var(--text-title-h1) var(--hx-link-ul-transparency-pct), transparent);
-  --h2-link-ul-color: color-mix(in srgb, var(--text-title-h2) var(--hx-link-ul-transparency-pct), transparent);
-  --h3-link-ul-color: color-mix(in srgb, var(--text-title-h3) var(--hx-link-ul-transparency-pct), transparent);
-  --h4-link-ul-color: color-mix(in srgb, var(--text-title-h4) var(--hx-link-ul-transparency-pct), transparent);
-  --h5-link-ul-color: color-mix(in srgb, var(--text-title-h5) var(--hx-link-ul-transparency-pct), transparent);
-  --h6-link-ul-color: color-mix(in srgb, var(--text-title-h6) var(--hx-link-ul-transparency-pct), transparent);
+  --h1-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h2-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h3-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h4-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h5-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h6-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
 
   --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
   --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
@@ -235,11 +264,13 @@ ______  ___  ______ _   __
   --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
   --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
   --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
-} 
+}
 
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
   --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
@@ -247,7 +278,9 @@ ______  ___  ______ _   __
 
 /* Fix highlighting in PDF */
 .pdf-container {
-  --text-selection: var(--r-pdf-highlight); /* Yes, this has no transparency -- it does still appear translucent in the PDF viewer. */
+  --text-selection: var(
+    --r-pdf-highlight
+  ); /* Yes, this has no transparency -- it does still appear translucent in the PDF viewer. */
 }
 
 .markdown-source-view {
@@ -261,22 +294,19 @@ ______  ___  ______ _   __
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
-.theme-light pre[class*="language-"]
-{
-    text-shadow: none !important;
-    background-color: var(--pre-code) !important;
+.theme-light pre[class*="language-"] {
+  text-shadow: none !important;
+  background-color: var(--pre-code) !important;
 }
 
 /* Graph View */
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
-.graph-view.color-line-highlight
-{
-    color: var(--interactive-accent-rgb) !important;
+.graph-view.color-line-highlight {
+  color: var(--interactive-accent-rgb) !important;
 }
-.graph-view.color-text
-{
-    color: var(--text-a-hover) !important;
+.graph-view.color-text {
+  color: var(--text-a-hover) !important;
 }
 
 /* fix for graph view line colors */
@@ -284,10 +314,12 @@ ______  ___  ______ _   __
   color: var(--graph-view-line-color);
 }
 
-strong, .cm-strong, strong a, strong em a
-{
-    --font-weight: 700 !important;
-    font-weight: 700 !important;
+strong,
+.cm-strong,
+strong a,
+strong em a {
+  --font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 /* List Indentations */
@@ -302,8 +334,7 @@ ol {
 /* Remove link underlines */
 .markdown-preview-view a.internal-link,
 .markdown-preview-view a.external-link,
-.cm-s-obsidian span.cm-hmd-internal-link
-{
+.cm-s-obsidian span.cm-hmd-internal-link {
   text-decoration: none;
 }
 
@@ -336,8 +367,8 @@ a.internal-link:hover,
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover,
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: var(--text-a-hover);
-    text-decoration: none;
+  color: var(--text-a-hover);
+  text-decoration: none;
 }
 
 .cm-s-obsidian span.cm-url {
@@ -354,19 +385,18 @@ a.internal-link:hover,
   color: var(--text-link-hover);
 }
 
-a.tag, a.tag:hover {
+a.tag,
+a.tag:hover {
   color: var(--text-tag) !important;
   background-color: var(--background-secondary-alt);
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-mark
-{
+mark {
   color: var(--text-normal);
   background-color: var(--text-mark) !important;
 }
-
 
 .titlebar {
   background-color: var(--background-secondary-alt);
@@ -376,47 +406,41 @@ mark
   color: var(--text-normal);
 }
 
-.view-actions a
-{
-    color: var(--text-normal) !important;
+.view-actions a {
+  color: var(--text-normal) !important;
 }
 
-.view-actions a:hover
-{
-    color: var(--text-a) !important;
+.view-actions a:hover {
+  color: var(--text-a) !important;
 }
 
 /* codeblock background */
-.HyperMD-codeblock-bg
-{
-    background-color: var(--default-codeblock) !important;
+.HyperMD-codeblock-bg {
+  background-color: var(--default-codeblock) !important;
 }
 
-.HyperMD-codeblock
-{
-    line-height: 1.4em !important;
+.HyperMD-codeblock {
+  line-height: 1.4em !important;
 }
 
-.HyperMD-codeblock-begin
-{
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
+.HyperMD-codeblock-begin {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
 }
 
-.HyperMD-codeblock-end
-{
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
+.HyperMD-codeblock-end {
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
 }
 
 /* fix the background issue */
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-    border: 0;
+  border: 0;
 }
 
 /* fix the codeblock padding preview issue */
 .markdown-preview-view pre {
-    padding: 0px 0px;
+  padding: 0px 0px;
 }
 
 /* uniform formatting for codeblocks in callouts */
@@ -440,29 +464,24 @@ blockquote {
   margin-bottom: 0.25em !important;
 }
 
-
-
 /* changes dropdown color, somewhere in that url: color: deep-orange/h3/ed5b0f */
 .dropdown {
   cursor: pointer;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
 }
 
-th
-{
-    font-weight: 600 !important;
+th {
+  font-weight: 600 !important;
 }
 
-thead
-{
-    border-bottom: 2px solid var(--background-modifier-border) !important;
+thead {
+  border-bottom: 2px solid var(--background-modifier-border) !important;
 }
 
-.HyperMD-table-row
-{
-    line-height: normal !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+.HyperMD-table-row {
+  line-height: normal !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
 }
 
 table,
@@ -471,53 +490,45 @@ table,
 }
 
 .CodeMirror-foldgutter-folded,
-.is-collapsed .nav-folder-collapse-indicator
-{
-    color: var(--text-a) !important;
+.is-collapsed .nav-folder-collapse-indicator {
+  color: var(--text-a) !important;
 }
 
-.nav-file-tag
-{
-    color: var(--text-a) !important;
+.nav-file-tag {
+  color: var(--text-a) !important;
 }
 
-.is-active .nav-file-title
-{
-    color: var(--text-a) !important;
-    background-color: var(--background-primary-alt) !important;
+.is-active .nav-file-title {
+  color: var(--text-a) !important;
+  background-color: var(--background-primary-alt) !important;
 }
 
-.nav-file-title
-{
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+.nav-file-title {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
-.HyperMD-list-line
-{
-    padding-top: 0 !important;
+.HyperMD-list-line {
+  padding-top: 0 !important;
 }
 
-.cm-hashtag
-{
-    color: var(--text-tag) !important;
+.cm-hashtag {
+  color: var(--text-tag) !important;
 }
 
 .markdown-preview-section pre code,
-.markdown-preview-section code
-{
-    font-size: 0.9em !important;
-    background-color: var(--pre-code) !important;
+.markdown-preview-section code {
+  font-size: 0.9em !important;
+  background-color: var(--pre-code) !important;
 }
 
-.markdown-preview-section pre code
-{
-    padding: 4px !important;
-    line-height: 1.4em !important;
-    /* display: block !important; */ /* caused issue #2 (see github) */
-    /*color: var(--code-block) !important;*/
+.markdown-preview-section pre code {
+  padding: 4px !important;
+  line-height: 1.4em !important;
+  /* display: block !important; */ /* caused issue #2 (see github) */
+  /*color: var(--code-block) !important;*/
 }
 
 /*
@@ -527,31 +538,29 @@ table,
 }*/
 
 .cm-s-obsidian,
-.cm-inline-code
-{
-    -webkit-font-smoothing: auto !important;
+.cm-inline-code {
+  -webkit-font-smoothing: auto !important;
 }
 
-.cm-inline-code
-{
-    color: var(--inline-code) !important;
-    background-color: var(--pre-code) !important;
-    padding: 1px !important;
-    border-radius: 3px;
+.cm-inline-code {
+  color: var(--inline-code) !important;
+  background-color: var(--pre-code) !important;
+  padding: 1px !important;
+  border-radius: 3px;
 }
 
 .admonition code,
 div.admonition-content-holder code {
-    color: var(--inline-code) !important;
-    background-color: var(--pre-code) !important;
-    border-radius: 2px;
-    font-family: var(--font-monospace);
-    font-size: var(--size-code);
+  color: var(--inline-code) !important;
+  background-color: var(--pre-code) !important;
+  border-radius: 2px;
+  font-family: var(--font-monospace);
+  font-size: var(--size-code);
 }
 
 div.admonition-title-markdown code {
-    font-family: var(--font-monospace);
-    border-radius: 4px;
+  font-family: var(--font-monospace);
+  border-radius: 4px;
 }
 
 code {
@@ -559,70 +568,60 @@ code {
   border-radius: 3px;
 }
 
-.workspace-leaf-header-title
-{
-    font-weight: 600 !important;
+.workspace-leaf-header-title {
+  font-weight: 600 !important;
 }
 
-.side-dock-title
-{
-    padding-top: 15px !important;
-    font-size: 20px !important;
+.side-dock-title {
+  padding-top: 15px !important;
+  font-size: 20px !important;
 }
 
 .side-dock-ribbon-tab:hover,
 .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
-    color: var(--text-a);
+.side-dock-collapse-btn:hover {
+  color: var(--text-a);
 }
 
-.side-dock
-{
-    border-right: 0 !important;
+.side-dock {
+  border-right: 0 !important;
 }
 
 .cm-s-obsidian,
-.markdown-preview-view
-{
-    /* padding-left: 10px !important; */
-    padding-right: 10px !important;
+.markdown-preview-view {
+  /* padding-left: 10px !important; */
+  padding-right: 10px !important;
 }
 
 /* vertical resize-handle */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle
-{
-    width: 1px !important;
-    background-color: var(--background-secondary-alt);
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 1px !important;
+  background-color: var(--background-secondary-alt);
 }
 
 /* horizontal resize-handle */
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
-{
-    height: 1px !important;
-    background-color: var(--background-secondary-alt);
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  height: 1px !important;
+  background-color: var(--background-secondary-alt);
 }
 
 /* Remove vertical split padding */
 .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
 .workspace-split.mod-vertical > .workspace-split,
 .workspace-split.mod-vertical > .workspace-leaf,
-.workspace-tabs
-{
+.workspace-tabs {
   padding-right: 0px;
 }
 
-.markdown-embed-title
-{
+.markdown-embed-title {
   font-weight: 600 !important;
 }
 
-.markdown-embed
-{
+.markdown-embed {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-left: 10px !important;
@@ -634,8 +633,7 @@ code {
 .cm-header-1 .cm-underline,
 .markdown-preview-section h1,
 .markdown-preview-section h1 code,
-h1 a
-{
+h1 a {
   font-weight: 500 !important;
   /*font-size: 2.2em !important;*/
   color: var(--text-title-h1) !important;
@@ -645,8 +643,7 @@ h1 a
 .cm-header-2 .cm-underline,
 .markdown-preview-section h2,
 .markdown-preview-section h2 code,
-h2 a
-{
+h2 a {
   font-weight: 500 !important;
   color: var(--text-title-h2) !important;
 }
@@ -655,8 +652,7 @@ h2 a
 .cm-header-3 .cm-underline,
 .markdown-preview-section h3,
 .markdown-preview-section h3 code,
-h3 a
-{
+h3 a {
   font-weight: 500 !important;
   color: var(--text-title-h3) !important;
 }
@@ -665,8 +661,7 @@ h3 a
 .cm-header-4 .cm-underline,
 .markdown-preview-section h4,
 .markdown-preview-section h4 code,
-h4 a
-{
+h4 a {
   font-weight: 500 !important;
   color: var(--text-title-h4) !important;
 }
@@ -675,8 +670,7 @@ h4 a
 .cm-header-5 .cm-underline,
 .markdown-preview-section h5,
 .markdown-preview-section h5 code,
-h5 a
-{
+h5 a {
   font-weight: 500 !important;
   color: var(--text-title-h5) !important;
 }
@@ -685,58 +679,48 @@ h5 a
 .cm-header-6 .cm-underline,
 .markdown-preview-section h6,
 .markdown-preview-section h6 code,
-h6 a
-{
+h6 a {
   font-weight: 500 !important;
   color: var(--text-title-h6) !important;
 }
 
-.suggestion-item.is-selected
-{
+.suggestion-item.is-selected {
   background-color: var(--background-secondary);
 }
 
-.empty-state-action:hover
-{
+.empty-state-action:hover {
   color: var(--interactive-accent);
 }
 
-.empty-state-action:hover
-{
+.empty-state-action:hover {
   color: var(--interactive-accent);
 }
 
-.mod-cta
-{
+.mod-cta {
   color: var(--button-text-color) !important;
   font-weight: 600 !important;
 }
 
-.mod-cta a
-{
+.mod-cta a {
   color: var(--button-text-color) !important;
   font-weight: 600 !important;
 }
 
-.mod-cta:hover
-{
+.mod-cta:hover {
   background-color: var(--interactive-before) !important;
   font-weight: 600 !important;
 }
 
-.CodeMirror-cursor
-{
+.CodeMirror-cursor {
   background-color: var(--vim-cursor) !important;
   opacity: 60% !important;
 }
 
-::selection
-{
+::selection {
   background-color: var(--text-selection) !important;
 }
 
-.mermaid .note
-{
+.mermaid .note {
   fill: var(--dark3) !important;
 }
 
@@ -781,7 +765,7 @@ h6 a
 
 /* increase tex size */
 .MJX-TEX {
-	font-size: 115%;
+  font-size: 115%;
 }
 
 /* heading links */
@@ -793,8 +777,8 @@ h6 a
   background-repeat: repeat-x;
   background-size: 8px 2px;
   background-image: linear-gradient(
-    to right, 
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    to right,
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
   );
 }
@@ -846,22 +830,21 @@ h6 a
   background-size: 8px 2px;
   color: inherit !important;
   background-image: linear-gradient(
-    to right, 
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    to right,
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
   );
 }
 
-.markdown-preview-view h1, 
-.markdown-preview-view h2, 
-.markdown-preview-view h3, 
-.markdown-preview-view h4, 
-.markdown-preview-view h5, 
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
 .markdown-preview-view h6 {
-    margin: 0 0;
-    padding: 0px 2px 4px 4px;
+  margin: 0 0;
+  padding: 0px 2px 4px 4px;
 }
-
 
 /* admonition settings */
 
@@ -893,8 +876,8 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   text-decoration: none;
   color: inherit !important;
   background-image: linear-gradient(
-    to right, 
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    to right,
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
   );
   background-position: 0.5em 1.04em !important;
@@ -909,17 +892,20 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 .callout-title-inner a.external-link {
   text-decoration: none;
   color: inherit !important;
-  background-image: 
-    url(public/images/874d8b8e340f75575caa.svg),
+  background-image: url(public/images/874d8b8e340f75575caa.svg),
     linear-gradient(
-      to right, 
-      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+      to right,
+      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
       color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
     );
-  background-position:  center right, 0.5em 1.04em !important;
+  background-position:
+    center right,
+    0.5em 1.04em !important;
   background-position-y: 3px, 1.04em !important;
   background-repeat: no-repeat, repeat-x;
-  background-size: 13px, 4px 2px;
+  background-size:
+    13px,
+    4px 2px;
 }
 
 .admonition-title-markdown a.internal-link:hover,
@@ -941,14 +927,17 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 
 /* fix for light theme callout title backgrounds */
 .callout {
-  background-color: color-mix(in srgb, #000000 var(--callout-bg-darken-pct), rgba(var(--callout-color), 0.1))
+  background-color: color-mix(
+    in srgb,
+    #000000 var(--callout-bg-darken-pct),
+    rgba(var(--callout-color), 0.1)
+  );
 }
 
 /* add space between adm/callout title and body in preview mode */
 .markdown-preview-view .callout-title {
   margin-bottom: 0.3em;
 }
-
 
 /* format callout titles with a little more spacing */
 .callout-title {
@@ -1014,29 +1003,29 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* fix mathjax formatting */
-.is-live-preview .admonition-content .math-block>mjx-container {
+.is-live-preview .admonition-content .math-block > mjx-container {
   padding: 15px 0px 15px 0px !important;
 }
 
 /* fix header mathjax not colored when in header in live preview */
 .HyperMD-header-1 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h1)
-} 
+  color: var(--text-title-h1);
+}
 .HyperMD-header-2 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h2)
-} 
+  color: var(--text-title-h2);
+}
 .HyperMD-header-3 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h3)
-} 
+  color: var(--text-title-h3);
+}
 .HyperMD-header-4 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h4)
-} 
+  color: var(--text-title-h4);
+}
 .HyperMD-header-5 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h5)
-} 
+  color: var(--text-title-h5);
+}
 .HyperMD-header-6 span.math mjx-math.MJX-TEX {
-  color: var(--text-title-h6)
-} 
+  color: var(--text-title-h6);
+}
 
 /* Fixes embeds being like 2/3 length */
 .markdown-embed div.admonition-parent {
@@ -1073,7 +1062,6 @@ div.HyperMD-task-line span.cm-indent::before,
   transform: translateX(5px);
 }*/
 
-
 /* fix for annoying bright links when checked */
 li.task-list-item[data-task="x"] a.internal-link,
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] span.cm-underline,
@@ -1084,7 +1072,8 @@ li.task-list-item[data-task="x"] a.internal-link,
 
 /* various list fixes for preview view/export */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul,
-.markdown-rendered ul, .markdown-rendered ol {
+.markdown-rendered ul,
+.markdown-rendered ol {
   /*text-indent: 1em !important;*/
   padding-inline-start: 0.5em; /* formerly 1.5em */
 }
@@ -1092,7 +1081,6 @@ li.task-list-item[data-task="x"] a.internal-link,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
   padding-left: 15px;
 }
-
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer p {
   margin-top: 0.25em;
@@ -1116,7 +1104,8 @@ li.task-list-item[data-task="x"] a.internal-link,
 }
 
 /* fixes for strange embed padding */
-.markdown-source-view .markdown-embed, .markdown-preview-view .markdown-embed,
+.markdown-source-view .markdown-embed,
+.markdown-preview-view .markdown-embed,
 .markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide.allow-fold-headings.allow-fold-lists {
   /* padding-top: 5px; */
   padding-top: 0 !important;
@@ -1206,7 +1195,8 @@ body {
 /* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
 /* this kind of visual fix isn't feasible for checkboxes */
 /* this fix is unnecessary for and does not affect ordered/numbered lists */
-.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
+.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line
+  > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
   display: inline-block;
   padding-left: 3px;
   padding-right: 1px;

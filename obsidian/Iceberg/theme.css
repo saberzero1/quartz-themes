@@ -1,10 +1,6 @@
 :root {
-  --font-family-editor: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
+  --font-family-editor: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    Meiryo, sans-serif;
   --font-family-preview: var(--font-family-editor);
   --formating-scale-factor: 0.85;
 
@@ -62,11 +58,11 @@
 }
 
 div.markdown-source-view {
-	font-family: var(--font-family-editor);
+  font-family: var(--font-family-editor);
 }
 
 div.markdown-preview-view {
-	font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview);
 }
 
 /* headings */
@@ -79,15 +75,33 @@ div.markdown-preview-view {
 .markdown-preview-view h6 {
   color: var(--text);
 }
-.cm-header-1, .markdown-preview-view h1 { font-size: 1.6em; }
-.cm-header-1.cm-formatting-header { font-size: calc(var(--formating-scale-factor) * 1.6em); }
-.cm-header-2, .markdown-preview-view h2 { font-size: 1.4em; }
-.cm-header-2.cm-formatting-header { font-size: calc(var(--formating-scale-factor) * 1.4em); }
-.cm-header-3, .markdown-preview-view h3 { font-size: 1.2em; }
-.cm-header-3.cm-formatting-header { font-size: calc(var(--formating-scale-factor) * 1.2em); }
-.cm-header-4, .markdown-preview-view h4,
-.cm-header-5, .markdown-preview-view h5,
-.cm-header-6, .markdown-preview-view h6 {
+.cm-header-1,
+.markdown-preview-view h1 {
+  font-size: 1.6em;
+}
+.cm-header-1.cm-formatting-header {
+  font-size: calc(var(--formating-scale-factor) * 1.6em);
+}
+.cm-header-2,
+.markdown-preview-view h2 {
+  font-size: 1.4em;
+}
+.cm-header-2.cm-formatting-header {
+  font-size: calc(var(--formating-scale-factor) * 1.4em);
+}
+.cm-header-3,
+.markdown-preview-view h3 {
+  font-size: 1.2em;
+}
+.cm-header-3.cm-formatting-header {
+  font-size: calc(var(--formating-scale-factor) * 1.2em);
+}
+.cm-header-4,
+.markdown-preview-view h4,
+.cm-header-5,
+.markdown-preview-view h5,
+.cm-header-6,
+.markdown-preview-view h6 {
   font-size: 1em;
 }
 .cm-header-4.cm-formatting-header,
@@ -168,14 +182,14 @@ div.markdown-preview-view {
 .cm-s-obsidian pre.HyperMD-codeblock-begin {
   padding-top: 8px;
   padding-bottom: 8px;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .cm-s-obsidian pre.HyperMD-codeblock-end {
   padding-bottom: 8px;
   padding-top: 8px;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* inlinecode */

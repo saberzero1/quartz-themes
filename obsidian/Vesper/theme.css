@@ -14,41 +14,41 @@ https://github.com/raunofreiberg/vesper
   --titlebar-background: #101010;
   --titlebar-background-focused: #101010;
 
-  --text-normal: #FFFFFF;
-  --text-muted: #A0A0A0;
+  --text-normal: #ffffff;
+  --text-muted: #a0a0a0;
   --text-faint: #707070;
   --text-on-accent: #000000;
 
-  --interactive-accent: #FFC799;
-  --text-accent: #FFC799;
-  --color-accent: #FFC799;
-  --text-selection: #FFC79950;
+  --interactive-accent: #ffc799;
+  --text-accent: #ffc799;
+  --color-accent: #ffc799;
+  --text-selection: #ffc79950;
   --interactive-accent-hover: #e6a974;
 
-  --background-modifier-error: #FF8080;
-  --checklist-done-color: #99FFE4;
-  --checkbox-color: #99FFE4;
-  --link-external-color-hover: #99FFE4;
+  --background-modifier-error: #ff8080;
+  --checklist-done-color: #99ffe4;
+  --checkbox-color: #99ffe4;
+  --link-external-color-hover: #99ffe4;
 }
 
 .theme-light {
-  --background-primary: #FFFFFF;
-  --background-secondary: #FAFAFA;
-  --titlebar-background: #FFFFFF;
-  --titlebar-background-focused: #FFFFFF;
+  --background-primary: #ffffff;
+  --background-secondary: #fafafa;
+  --titlebar-background: #ffffff;
+  --titlebar-background-focused: #ffffff;
 
-  --text-normal: #1A1A1A;
+  --text-normal: #1a1a1a;
   --text-muted: #777777;
-  --text-faint: #AAAAAA;
+  --text-faint: #aaaaaa;
 
-  --interactive-accent: #FFB066;
-  --text-accent: #FFB066;
-  --color-accent: #FFB066;
-  --text-selection: #FFB06650;
-  --interactive-accent-hover: #E0A568;
+  --interactive-accent: #ffb066;
+  --text-accent: #ffb066;
+  --color-accent: #ffb066;
+  --text-selection: #ffb06650;
+  --interactive-accent-hover: #e0a568;
 
-  --background-modifier-error: #FF0000;
-  --checklist-done-color: #00D2B0;
-  --checkbox-color: #00D2B0;
-  --link-external-color-hover: #00D2B0;
+  --background-modifier-error: #ff0000;
+  --checklist-done-color: #00d2b0;
+  --checkbox-color: #00d2b0;
+  --link-external-color-hover: #00d2b0;
 }

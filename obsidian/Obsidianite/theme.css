@@ -69,8 +69,8 @@
   --blockquote-border: #4aa8fb;
   --tag-background: rgba(14, 210, 247, 0.15);
   --interactive-accent-rgb: #3dd7fb;
-  --font-family-editor: 'Rubik';
-  --font-family-preview: 'Rubik';
+  --font-family-editor: "Rubik";
+  --font-family-preview: "Rubik";
   --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
   --bg-accent-55: rgba(14, 210, 247, 0.55);
   --bg-accent-25: rgba(14, 210, 247, 0.25);
@@ -97,8 +97,8 @@
   /***************************************/
 
   /** Font Customization **/
-  --default-font: 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+  --default-font: "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
 
   --default-font-size: 18px;
 
@@ -106,12 +106,12 @@
   --body-font-weight: 450;
 
   /** Font family for hash-tags **/
-  --tag-font-family: "Space Mono", 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
-    '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
-    'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
+  --tag-font-family: "Space Mono", "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑", "STXihei",
+    "PingFang TC", "微软雅黑体", "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "宋体",
+    "SimSun", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
 
   /** Font specially for codes **/
-  --code-mono-font: "Space Mono", 'OperatorMonoSSmLig-Book';
+  --code-mono-font: "Space Mono", "OperatorMonoSSmLig-Book";
 }
 
 /**-------------------**
@@ -119,8 +119,8 @@
 **--------------------**/
 
 /* For preview mode */
-a.tag[href*='#todo'],
-a.tag[href*='#待完成'] {
+a.tag[href*="#todo"],
+a.tag[href*="#待完成"] {
   background-color: #be2e5e;
   color: #fff;
 }
@@ -129,8 +129,8 @@ a.tag[href*='#待完成'] {
   color: #ee6a96;
 }
 
-a.tag[href*='#working-draft'],
-a.tag[href*='#进行中'] {
+a.tag[href*="#working-draft"],
+a.tag[href*="#进行中"] {
   background-color: #4d3ca6;
   color: #fff;
 }
@@ -139,8 +139,8 @@ a.tag[href*='#进行中'] {
   color: #a897ff;
 }
 
-a.tag[href*='#notes'],
-a.tag[href*='#笔记'] {
+a.tag[href*="#notes"],
+a.tag[href*="#笔记"] {
   background-color: #17b978;
   color: #fff;
 }
@@ -149,8 +149,8 @@ a.tag[href*='#笔记'] {
   color: #45e0a2;
 }
 
-a.tag[href*='#knowledge'],
-a.tag[href*='#知识'] {
+a.tag[href*="#knowledge"],
+a.tag[href*="#知识"] {
   background-color: #005792;
   color: #fff;
 }
@@ -159,8 +159,8 @@ a.tag[href*='#知识'] {
   color: #6cbdf3;
 }
 
-a.tag[href*='#writing'],
-a.tag[href*='#文章'] {
+a.tag[href*="#writing"],
+a.tag[href*="#文章"] {
   background-color: #f95959;
   color: #fff;
 }
@@ -169,8 +169,8 @@ a.tag[href*='#文章'] {
   color: #ff7a7a;
 }
 
-a.tag[href*='#ideas'],
-a.tag[href*='#想法'] {
+a.tag[href*="#ideas"],
+a.tag[href*="#想法"] {
   background-color: #ffc93c;
   color: #000;
 }
@@ -384,7 +384,7 @@ span.cm-formatting-list,
   text-indent: -3em;
 }
 
-.contains-task-list .task-list-item input[type='checkbox'] {
+.contains-task-list .task-list-item input[type="checkbox"] {
   position: relative;
   top: 2px;
   left: -8px;
@@ -401,7 +401,7 @@ span.cm-formatting-list,
 }
 
 .contains-task-list .task-list-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: -25px;
@@ -423,7 +423,7 @@ span.cm-formatting-list,
 }
 
 .contains-task-list .is-checked.task-list-item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: -21px;
@@ -598,7 +598,7 @@ h6 {
 
 .cm-line hr::after,
 .markdown-preview-view hr::after {
-  content: '§';
+  content: "§";
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -903,7 +903,7 @@ h6 a.tag {
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
   position: absolute;
-  content: '';
+  content: "";
   top: -5%;
   left: 0;
   width: 100%;
@@ -924,8 +924,14 @@ pre {
   position: relative;
 }
 
-pre[class*='language-']:before {
-  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+pre[class*="language-"]:before {
+  font-family:
+    Rubik,
+    Lato,
+    Lucida Grande,
+    Lucida Sans Unicode,
+    Tahoma,
+    Sans-Serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.6rem;
@@ -935,7 +941,7 @@ pre[class*='language-']:before {
   right: 0.3rem;
   padding: 0;
   color: var(--text-accent) !important;
-  content: '';
+  content: "";
   text-transform: uppercase;
   background: rgba(16, 14, 23, 0.86);
   border-radius: 8px;
@@ -943,50 +949,50 @@ pre[class*='language-']:before {
   z-index: 10;
 }
 
-pre[class$='javascript']:before,
-pre[class$='js']:before {
-  content: 'JavaScript';
+pre[class$="javascript"]:before,
+pre[class$="js"]:before {
+  content: "JavaScript";
 }
 
-pre[class$='typescript']:before,
-pre[class$='ts']:before {
-  content: 'typescript';
+pre[class$="typescript"]:before,
+pre[class$="ts"]:before {
+  content: "typescript";
 }
 
-pre[class$='html']:before {
-  content: 'html';
+pre[class$="html"]:before {
+  content: "html";
 }
 
-pre[class$='css']:before {
-  content: 'css';
+pre[class$="css"]:before {
+  content: "css";
 }
 
-pre[class$='ejs']:before {
-  content: 'ejs';
+pre[class$="ejs"]:before {
+  content: "ejs";
 }
 
-pre[class$='vue']:before {
-  content: 'vue';
+pre[class$="vue"]:before {
+  content: "vue";
 }
 
-pre[class$='react']:before {
-  content: 'react';
+pre[class$="react"]:before {
+  content: "react";
 }
 
-pre[class$='shell']:before {
-  content: 'Shell';
+pre[class$="shell"]:before {
+  content: "Shell";
 }
 
-pre[class$='powershell']:before {
-  content: 'PowerShell';
+pre[class$="powershell"]:before {
+  content: "PowerShell";
 }
 
-pre[class$='json']:before {
-  content: 'Json';
+pre[class$="json"]:before {
+  content: "Json";
 }
 
-pre[class$='python']:before {
-  content: 'python';
+pre[class$="python"]:before {
+  content: "python";
 }
 
 /**-------------------**
@@ -1018,7 +1024,7 @@ blockquote {
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before,
 .markdown-preview-view blockquote::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0px;
@@ -1033,7 +1039,7 @@ blockquote {
 
 .HyperMD-quote::after,
 .markdown-preview-view blockquote::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0px;
@@ -1054,7 +1060,7 @@ blockquote {
 }
 
 .markdown-preview-view blockquote p:first-of-type::before {
-  content: '!!';
+  content: "!!";
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
@@ -1098,8 +1104,8 @@ blockquote {
   color: rgba(14, 210, 247, 0.9) !important;
 }
 
-.theme-dark :not(pre) > code[class*='language-'],
-.theme-dark pre[class*='language-'] {
+.theme-dark :not(pre) > code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   background-color: var(--background-secondary);
 }
 
@@ -1178,12 +1184,18 @@ pre::-webkit-scrollbar {
   width: 14px;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #ccc;
   background: rgb(40, 41, 54);
   text-shadow: none;
-  font-family: 'OperatorMonoSSmLig-Book', PT Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+  font-family:
+    "OperatorMonoSSmLig-Book",
+    PT Mono,
+    Consolas,
+    Monaco,
+    "Andale Mono",
+    "Ubuntu Mono",
     monospace !important;
   text-align: left;
   white-space: pre;
@@ -1202,37 +1214,37 @@ pre[class*='language-'] {
   hyphens: none;
 }
 
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background-color: #5a5f80;
 }
 
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   text-shadow: none;
   background-color: #5a5f80;
 }
 
 @media print {
-  code[class*='language-'],
-  pre[class*='language-'] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     text-shadow: none;
   }
 }
 
 /* Code blocks */
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: rgba(40, 41, 54, 1);
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 4px 7px;
   border-radius: 0.3em;
   white-space: normal;

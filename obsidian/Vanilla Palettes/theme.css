@@ -372,7 +372,9 @@
   --code-variable: var(--purple);
 }
 
-.theme-dark.color-scheme-gruvbox-soft, .theme-dark.color-scheme-gruvbox-medium, .theme-dark.color-scheme-gruvbox-hard {
+.theme-dark.color-scheme-gruvbox-soft,
+.theme-dark.color-scheme-gruvbox-medium,
+.theme-dark.color-scheme-gruvbox-hard {
   --dark0-hard: #1d2021;
   --dark0: #282828;
   --dark0-soft: #32302f;
@@ -1088,7 +1090,9 @@
   --code-variable: var(--text-color);
 }
 
-.theme-light.color-scheme-gruvbox-soft, .theme-light.color-scheme-gruvbox-medium, .theme-light.color-scheme-gruvbox-hard {
+.theme-light.color-scheme-gruvbox-soft,
+.theme-light.color-scheme-gruvbox-medium,
+.theme-light.color-scheme-gruvbox-hard {
   --dark0-hard: #1d2021;
   --dark0: #282828;
   --dark0-soft: #32302f;

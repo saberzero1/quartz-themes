@@ -184,7 +184,7 @@
   --line-height-tight: 1.2;
   --line-height-normal: 1.4;
   --line-height-relaxed: 1.6;
-  --line-height-huge: 2.0;
+  --line-height-huge: 2;
 
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -437,7 +437,9 @@
 .theme-dark,
 body,
 html {
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 /* === SECTION: Base UI Resets === */
@@ -471,8 +473,9 @@ html {
 .depth-effect {
   box-shadow: var(--shadow-sm);
   transform: translateZ(0);
-  transition: transform var(--duration-fast) var(--easing-standard), box-shadow var(--duration-fast)
-    var(--easing-standard);
+  transition:
+    transform var(--duration-fast) var(--easing-standard),
+    box-shadow var(--duration-fast) var(--easing-standard);
   contain: layout style;
 
   &:hover {
@@ -521,10 +524,14 @@ html {
   position: relative;
   font-weight: var(--font-weight-semibold);
   letter-spacing: -0.01em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 0 1px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
   background-blend-mode: overlay;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   margin: 0;
   transform: translateZ(0);
 }
@@ -603,7 +610,9 @@ html {
   ):hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.15),
+    0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 /* === Related Text Layout === */
@@ -615,19 +624,19 @@ html {
 
 /* Line height settings for better readability */
 :is(
-    .markdown-preview-view .markdown-preview-section,
-    .markdown-source-view.mod-cm6 .cm-line:not(.cm-active),
-    .markdown-preview-view p,
-    .markdown-source-view.mod-cm6 .cm-line
-  ) {
+  .markdown-preview-view .markdown-preview-section,
+  .markdown-source-view.mod-cm6 .cm-line:not(.cm-active),
+  .markdown-preview-view p,
+  .markdown-source-view.mod-cm6 .cm-line
+) {
   line-height: var(--line-height-relaxed);
 }
 
 /* === Heading Collapse Arrows Positioning === */
 :is(
-    .markdown-preview-view [class*="heading-"] .heading-collapse-indicator,
-    .markdown-source-view.mod-cm6 .HyperMD-header .collapse-indicator
-  ) {
+  .markdown-preview-view [class*="heading-"] .heading-collapse-indicator,
+  .markdown-source-view.mod-cm6 .HyperMD-header .collapse-indicator
+) {
   position: absolute;
   top: 15%;
   width: 16px;
@@ -640,17 +649,29 @@ html {
 
 /* Highlight styling for both themes */
 :is(.theme-light, .theme-dark)
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight) {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ) {
   /* Basic spacing and shape */
   padding: 3px 4px;
   border-radius: var(--radius-sm);
   display: inline;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Light theme specific properties */
 .theme-light
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight) {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ) {
   background-color: var(--highlight-bg-light);
   color: var(--highlight-text-light);
   box-shadow: var(--shadow-xs);
@@ -659,7 +680,12 @@ html {
 
 /* Dark theme specific properties */
 .theme-dark
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight) {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ) {
   background-color: var(--highlight-bg-dark);
   color: var(--highlight-text-dark);
   box-shadow: var(--shadow-xs);
@@ -669,19 +695,34 @@ html {
 
 /* Hover effects for both themes */
 :is(.theme-light, .theme-dark)
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight):hover {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ):hover {
   transform: translateY(-1px);
 }
 
 /* Theme-specific hover effects */
 .theme-light
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight):hover {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ):hover {
   background-color: var(--highlight-bg-light-hover);
   box-shadow: var(--shadow-sm);
 }
 
 .theme-dark
-  :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight):hover {
+  :is(
+    .markdown-rendered mark,
+    span.cm-highlight,
+    .markdown-preview-view mark,
+    .cm-s-obsidian span.cm-highlight
+  ):hover {
   background-color: var(--highlight-bg-dark-hover);
   box-shadow: var(--shadow-sm);
 }
@@ -704,21 +745,24 @@ html {
 
 /* Link styles */
 :is(
-    .markdown-rendered a,
-    .markdown-rendered .internal-link,
-    .markdown-rendered .external-link,
-    .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)
-  ) {
+  .markdown-rendered a,
+  .markdown-rendered .internal-link,
+  .markdown-rendered .external-link,
+  .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)
+) {
   text-decoration: none;
   color: var(--link-color);
   background: rgba(var(--link-bg-rgb), 0.08);
   border-radius: var(--radius-sm);
   padding: 0 4px;
   border-bottom: 1px solid transparent;
-  transition: background-color 0.2s ease, color 0.2s ease, border-bottom 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-bottom 0.2s ease;
 }
 
 /* Context-specific link styling (paragraphs and lists) */
@@ -771,10 +815,10 @@ html {
 
 /* Base unresolved link styling */
 :is(
-    .markdown-rendered .internal-link.is-unresolved,
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-hmd-unresolved
-  ) {
+  .markdown-rendered .internal-link.is-unresolved,
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-hmd-unresolved
+) {
   opacity: 1;
   background: rgba(var(--link-bg-rgb), 0.08);
   color: var(--accent-primary);
@@ -797,15 +841,15 @@ html {
 
 /* All tag selectors combined */
 :is(
-    .tag,
-    a.tag,
-    .cm-hashtag,
-    .token.hashtag,
-    .cm-s-obsidian span.cm-hashtag,
-    .markdown-source-view.mod-cm6 .cm-hashtag,
-    .cm-hashtag-begin,
-    .cm-hashtag-end
-  ) {
+  .tag,
+  a.tag,
+  .cm-hashtag,
+  .token.hashtag,
+  .cm-s-obsidian span.cm-hashtag,
+  .markdown-source-view.mod-cm6 .cm-hashtag,
+  .cm-hashtag-begin,
+  .cm-hashtag-end
+) {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -850,7 +894,9 @@ html {
 
   /* Effects */
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.06);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 /* Dark mode overrides */
@@ -874,11 +920,11 @@ html {
 
 /* Blockquote styling */
 :is(
-    .markdown-preview-view blockquote,
-    .markdown-rendered blockquote,
-    div:not(.CodeMirror-activeline) > .HyperMD-quote,
-    .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote
-  ) {
+  .markdown-preview-view blockquote,
+  .markdown-rendered blockquote,
+  div:not(.CodeMirror-activeline) > .HyperMD-quote,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote
+) {
   /* Shape and structure */
   border-radius: var(--radius-lg);
   border: none;
@@ -901,7 +947,9 @@ html {
   box-shadow: var(--shadow-sm);
 
   /* Simplified animation */
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Dark mode blockquote - Darker background */
@@ -950,12 +998,14 @@ html {
   height: auto;
   box-shadow: var(--shadow-sm);
   transform: scale(0.99);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
 .markdown-rendered img:hover,
 .markdown-source-view.mod-cm6 .cm-content img:hover {
-  transform: scale(1.0);
+  transform: scale(1);
   filter: brightness(1.05);
   box-shadow: var(--shadow-md);
 }
@@ -1021,13 +1071,13 @@ html {
 
 /* Note/Default/Attention callouts - Coral */
 :is(
-    .callout[data-callout="note"],
-    .callout[data-callout="default"],
-    .callout[data-callout="attention"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention
-  ) {
+  .callout[data-callout="note"],
+  .callout[data-callout="default"],
+  .callout[data-callout="attention"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-note,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-default,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-attention
+) {
   --callout-color: var(--color-coral);
   --callout-color-rgb: var(--color-coral-rgb);
   background-color: rgba(var(--color-coral-rgb), 0.12);
@@ -1036,15 +1086,15 @@ html {
 
 /* Info/Todo/Tip/Hint callouts - Blue */
 :is(
-    .callout[data-callout="info"],
-    .callout[data-callout="todo"],
-    .callout[data-callout="tip"],
-    .callout[data-callout="hint"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint
-  ) {
+  .callout[data-callout="info"],
+  .callout[data-callout="todo"],
+  .callout[data-callout="tip"],
+  .callout[data-callout="hint"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-info,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-todo,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tip,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-hint
+) {
   --callout-color: var(--color-sky);
   --callout-color-rgb: var(--color-sky-rgb);
   background-color: rgba(var(--color-sky-rgb), 0.12);
@@ -1053,17 +1103,17 @@ html {
 
 /* Warning/Caution/Question/Help/FAQ callouts - Lavender */
 :is(
-    .callout[data-callout="warning"],
-    .callout[data-callout="caution"],
-    .callout[data-callout="question"],
-    .callout[data-callout="help"],
-    .callout[data-callout="faq"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq
-  ) {
+  .callout[data-callout="warning"],
+  .callout[data-callout="caution"],
+  .callout[data-callout="question"],
+  .callout[data-callout="help"],
+  .callout[data-callout="faq"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-warning,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-caution,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-question,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-help,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-faq
+) {
   --callout-color: var(--color-lavender);
   --callout-color-rgb: var(--color-lavender-rgb);
   background-color: rgba(var(--color-lavender-rgb), 0.12);
@@ -1072,19 +1122,19 @@ html {
 
 /* Success/Check/Done/Summary/Abstract/TLDR callouts - Sage */
 :is(
-    .callout[data-callout="success"],
-    .callout[data-callout="check"],
-    .callout[data-callout="done"],
-    .callout[data-callout="summary"],
-    .callout[data-callout="abstract"],
-    .callout[data-callout="tldr"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr
-  ) {
+  .callout[data-callout="success"],
+  .callout[data-callout="check"],
+  .callout[data-callout="done"],
+  .callout[data-callout="summary"],
+  .callout[data-callout="abstract"],
+  .callout[data-callout="tldr"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-success,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-check,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-done,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-summary,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-abstract,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-tldr
+) {
   --callout-color: var(--color-sage);
   --callout-color-rgb: var(--color-sage-rgb);
   background-color: rgba(var(--color-sage-rgb), 0.12);
@@ -1093,19 +1143,19 @@ html {
 
 /* Danger/Error/Failure/Bug/Important/Video callouts - Rose */
 :is(
-    .callout[data-callout="danger"],
-    .callout[data-callout="error"],
-    .callout[data-callout="failure"],
-    .callout[data-callout="bug"],
-    .callout[data-callout="important"],
-    .callout[data-callout="video"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video
-  ) {
+  .callout[data-callout="danger"],
+  .callout[data-callout="error"],
+  .callout[data-callout="failure"],
+  .callout[data-callout="bug"],
+  .callout[data-callout="important"],
+  .callout[data-callout="video"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-danger,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-error,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-failure,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-bug,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-important,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-video
+) {
   --callout-color: var(--color-rose);
   --callout-color-rgb: var(--color-rose-rgb);
   background-color: rgba(var(--color-rose-rgb), 0.12);
@@ -1114,11 +1164,11 @@ html {
 
 /* Example/Quote callouts - Teal */
 :is(
-    .callout[data-callout="example"],
-    .callout[data-callout="quote"],
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example,
-    .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote
-  ) {
+  .callout[data-callout="example"],
+  .callout[data-callout="quote"],
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-example,
+  .markdown-source-view.mod-cm6 .cm-callout.cm-callout-quote
+) {
   --callout-color: var(--color-teal);
   --callout-color-rgb: var(--color-teal-rgb);
   background-color: rgba(var(--color-teal-rgb), 0.12);
@@ -1281,19 +1331,19 @@ html {
 
 /* Restore styled text within blockquotes */
 :is(
-    .markdown-preview-view blockquote strong,
-    .markdown-rendered blockquote strong,
-    .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote .cm-strong
-  ) {
+  .markdown-preview-view blockquote strong,
+  .markdown-rendered blockquote strong,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote .cm-strong
+) {
   color: var(--bold-color);
   font-weight: var(--font-weight-bold);
 }
 
 :is(
-    .markdown-preview-view blockquote em,
-    .markdown-rendered blockquote em,
-    .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote .cm-em
-  ) {
+  .markdown-preview-view blockquote em,
+  .markdown-rendered blockquote em,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote .cm-em
+) {
   color: var(--italic-color);
   font-style: italic;
 }
@@ -1309,13 +1359,17 @@ html {
 
 /* Hover for unresolved links - consolidate selectors */
 :is(.callout, .cm-callout) :is(.callout-content, .callout-title) .is-unresolved:hover,
-:is(.callout, .cm-callout) :is(.callout-content, .callout-title) .internal-link.is-unresolved:hover {
+:is(.callout, .cm-callout)
+  :is(.callout-content, .callout-title)
+  .internal-link.is-unresolved:hover {
   background: rgba(var(--callout-color-rgb), 0.15) !important;
   opacity: 0.9;
 }
 
 /* Content-specific unresolved link hover */
-:is(.callout, .cm-callout) .callout-content :is(.internal-link.is-unresolved, .is-unresolved):hover {
+:is(.callout, .cm-callout)
+  .callout-content
+  :is(.internal-link.is-unresolved, .is-unresolved):hover {
   color: var(--callout-color) !important;
   border-bottom: 1px dashed var(--callout-color) !important;
 }
@@ -1347,7 +1401,11 @@ html {
 /* === Highlighted Text in Callouts === */
 
 /* Base styles for highlighted text in callouts */
-:is(.callout .callout-content, .cm-callout .callout-content, .markdown-source-view.mod-cm6 .cm-callout .cm-content)
+:is(
+    .callout .callout-content,
+    .cm-callout .callout-content,
+    .markdown-source-view.mod-cm6 .cm-callout .cm-content
+  )
   :is(mark, span.cm-highlight, .cm-highlight) {
   /* Preserve existing highlight styling */
   padding: 3px 4px;
@@ -1363,7 +1421,11 @@ html {
 
 /* Dark theme adjustments for highlighted text */
 .theme-dark
-  :is(.callout .callout-content, .cm-callout .callout-content, .markdown-source-view.mod-cm6 .cm-callout .cm-content)
+  :is(
+    .callout .callout-content,
+    .cm-callout .callout-content,
+    .markdown-source-view.mod-cm6 .cm-callout .cm-content
+  )
   :is(mark, span.cm-highlight, .cm-highlight) {
   background-color: rgba(var(--callout-color-rgb), 0.25);
   color: hsl(from var(--callout-color) h s calc(l * 1.4));
@@ -1373,7 +1435,11 @@ html {
 }
 
 /* Hover effects for highlighted text */
-:is(.callout .callout-content, .cm-callout .callout-content, .markdown-source-view.mod-cm6 .cm-callout .cm-content)
+:is(
+    .callout .callout-content,
+    .cm-callout .callout-content,
+    .markdown-source-view.mod-cm6 .cm-callout .cm-content
+  )
   :is(mark, span.cm-highlight, .cm-highlight):hover {
   background-color: rgba(var(--callout-color-rgb), 0.3);
   transform: translateY(-1px);
@@ -1381,7 +1447,11 @@ html {
 
 /* Dark theme hover adjustments */
 .theme-dark
-  :is(.callout .callout-content, .cm-callout .callout-content, .markdown-source-view.mod-cm6 .cm-callout .cm-content)
+  :is(
+    .callout .callout-content,
+    .cm-callout .callout-content,
+    .markdown-source-view.mod-cm6 .cm-callout .cm-content
+  )
   :is(mark, span.cm-highlight, .cm-highlight):hover {
   background-color: rgba(var(--callout-color-rgb), 0.35);
 }
@@ -1421,7 +1491,9 @@ html {
   border-spacing: 0;
   box-shadow: var(--shadow-sm);
   position: relative;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .theme-dark .markdown-rendered table,
@@ -1497,7 +1569,9 @@ input[type="checkbox"] {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
   background-color: transparent;
   border-radius: 35% / 35%;
 }
@@ -1531,7 +1605,9 @@ input[type="checkbox"]:hover {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
   background-color: transparent;
   border-radius: 40% / 40%;
 }
@@ -1638,7 +1714,9 @@ input[type="checkbox"] {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
   background-color: transparent;
   border-radius: 35% / 35%;
 }
@@ -1676,7 +1754,9 @@ input[type="checkbox"]:hover {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
   background-color: transparent;
   border-radius: 40% / 40%;
 }
@@ -1708,9 +1788,9 @@ input[type="checkbox"]:hover {
 
 /* Custom colored strikethrough for completed tasks - both views */
 :is(
-    .markdown-rendered li.task-list-item[data-task="x"],
-    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"]
-  ) {
+  .markdown-rendered li.task-list-item[data-task="x"],
+  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"]
+) {
   text-decoration: line-through;
   text-decoration-color: var(--strikethrough-color);
   text-decoration-thickness: var(--strikethrough-thickness, 2px);
@@ -1727,7 +1807,9 @@ input[type="checkbox"]:hover {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   position: relative;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Hover effect */
@@ -1758,7 +1840,9 @@ input[type="checkbox"]:hover {
   border: 1px solid transparent;
   background-color: rgba(var(--accent-primary-rgb), 0.08);
   border-radius: var(--radius-sm);
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 /* Input hover states */
@@ -1815,7 +1899,9 @@ input[type="checkbox"]:hover {
   z-index: 1;
 
   /* Simplified transitions */
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 /* Hover state */
@@ -1877,7 +1963,10 @@ input[type="checkbox"]:hover {
   box-shadow: var(--shadow-sm);
 
   /* Transitions */
-  transition: box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease;
 
   /* Ensure proper z-index stacking */
   position: relative;
@@ -1928,7 +2017,9 @@ input[type="checkbox"]:hover {
 
 /* Title actions icon transitions */
 .theme-dark .view-header-icon {
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Hover state for action icons */
@@ -1950,7 +2041,10 @@ input[type="checkbox"]:hover {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .workspace-split.mod-left-split:hover,
@@ -2175,19 +2269,22 @@ input[type="checkbox"]:hover {
 
 /* Interactive elements */
 :is(
-    button,
-    .nav-action-button,
-    .workspace-tab-header,
-    .suggestion-item,
-    .menu-item,
-    .nav-file-title,
-    .setting-item-control button,
-    input[type="checkbox"],
-    .multi-select-pill-content,
-    .dropdown-item
-  ) {
+  button,
+  .nav-action-button,
+  .workspace-tab-header,
+  .suggestion-item,
+  .menu-item,
+  .nav-file-title,
+  .setting-item-control button,
+  input[type="checkbox"],
+  .multi-select-pill-content,
+  .dropdown-item
+) {
   /* Simplified transitions */
-  transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 /* Hover state */
@@ -2279,7 +2376,11 @@ select:focus {
 }
 
 /* Hide all folder collapse indicators */
-:is(.nav-folder-collapse-indicator, .tree-item-self .collapse-icon, .nav-folder .nav-folder-collapse-indicator) {
+:is(
+  .nav-folder-collapse-indicator,
+  .tree-item-self .collapse-icon,
+  .nav-folder .nav-folder-collapse-indicator
+) {
   display: none !important;
   opacity: 0 !important;
   width: 0 !important;
@@ -2381,49 +2482,49 @@ select:focus {
 
 /* Folder Color Definitions */
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 1),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 1)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 1),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 1)
+) {
   --folder-color: rgba(var(--color-coral-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-coral) h s calc(l * var(--theme-text-multiplier)));
 }
 
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 2),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 2)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 2),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 2)
+) {
   --folder-color: rgba(var(--color-sky-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-sky) h s calc(l * var(--theme-text-multiplier)));
 }
 
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 3),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 3)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 3),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 3)
+) {
   --folder-color: rgba(var(--color-lavender-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-lavender) h s calc(l * var(--theme-text-multiplier)));
 }
 
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 4),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 4)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 4),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 4)
+) {
   --folder-color: rgba(var(--color-sage-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-sage) h s calc(l * var(--theme-text-multiplier)));
 }
 
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 5),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 5)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 5),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 5)
+) {
   --folder-color: rgba(var(--color-rose-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-rose) h s calc(l * var(--theme-text-multiplier)));
 }
 
 :is(
-    .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 6),
-    .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 6)
-  ) {
+  .theme-light .nav-files-container > div > .nav-folder:nth-child(6n + 6),
+  .theme-dark .nav-files-container > div > .nav-folder:nth-child(6n + 6)
+) {
   --folder-color: rgba(var(--color-teal-rgb), var(--theme-folder-opacity));
   --folder-text-color: hsl(from var(--color-teal) h s calc(l * var(--theme-text-multiplier)));
 }
@@ -2461,7 +2562,13 @@ select:focus {
 /* Ensure subfolders inherit parent folder colors */
 .nav-folder .nav-folder-children .nav-folder,
 .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder,
-.nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder {
+.nav-folder
+  .nav-folder-children
+  .nav-folder
+  .nav-folder-children
+  .nav-folder
+  .nav-folder-children
+  .nav-folder {
   --folder-color: inherit;
   --folder-text-color: inherit;
   background-color: inherit;
@@ -2510,7 +2617,11 @@ select:focus {
 }
 
 /* Direct color targeting for active files */
-.nav-files-container > div > .nav-folder:nth-child(6n + 1) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 1)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-coral-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-coral) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2519,7 +2630,11 @@ select:focus {
   background-color: var(--color-coral) !important;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(6n + 2) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 2)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-sky-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-sky) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2528,7 +2643,11 @@ select:focus {
   background-color: var(--color-sky) !important;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(6n + 3) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 3)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-lavender-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-lavender) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2537,7 +2656,11 @@ select:focus {
   background-color: var(--color-lavender) !important;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(6n + 4) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 4)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-sage-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-sage) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2546,7 +2669,11 @@ select:focus {
   background-color: var(--color-sage) !important;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(6n + 5) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 5)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-rose-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-rose) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2555,7 +2682,11 @@ select:focus {
   background-color: var(--color-rose) !important;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(6n + 6) .nav-file-title.is-active .nav-file-title-content {
+.nav-files-container
+  > div
+  > .nav-folder:nth-child(6n + 6)
+  .nav-file-title.is-active
+  .nav-file-title-content {
   background-color: rgba(var(--color-teal-rgb), var(--active-bg-opacity)) !important;
   color: hsl(from var(--color-teal) h s calc(l * var(--theme-text-multiplier))) !important;
 }
@@ -2732,7 +2863,11 @@ select:focus {
   color: var(--heading-1-color);
 }
 
-.workspace-leaf-content[data-type="outline"] .view-content > div > .tree-item > .tree-item-self:is(:hover, .is-active) {
+.workspace-leaf-content[data-type="outline"]
+  .view-content
+  > div
+  > .tree-item
+  > .tree-item-self:is(:hover, .is-active) {
   background-color: rgba(var(--heading-1-color-rgb), 0.12);
 }
 
@@ -2741,12 +2876,19 @@ select:focus {
   color: var(--heading-2-color);
 }
 
-.workspace-leaf-content[data-type="outline"] .tree-item-children > .tree-item > .tree-item-self:is(:hover, .is-active) {
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-children
+  > .tree-item
+  > .tree-item-self:is(:hover, .is-active) {
   background-color: rgba(var(--heading-2-color-rgb), 0.12);
 }
 
 /* Level 3 */
-.workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children > .tree-item > .tree-item-self {
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-children
+  .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: var(--heading-3-color);
 }
 
@@ -2887,7 +3029,9 @@ textarea {
   border: 1px solid var(--divider-color);
   border-radius: var(--radius-md);
   box-shadow: none;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 input[type="text"]:focus,
@@ -2904,6 +3048,3 @@ textarea:focus {
 select:focus {
   outline: 0;
 }
-
-
-

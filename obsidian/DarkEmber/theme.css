@@ -381,8 +381,12 @@ settings:
 
 * {
   font-family: var(--text-normal, var(--base-font-face));
-  -webkit-font-feature-settings: "liga" on, "calt" on;
-  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-feature-settings:
+    "liga" on,
+    "calt" on;
+  font-feature-settings:
+    "liga" on,
+    "calt" on;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
