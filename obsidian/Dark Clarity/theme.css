@@ -129,6 +129,12 @@ settings:
       level: 1
       collapsed: false
   - 
+    id: left-highlight
+    title: 左边栏-高亮
+    description: 是否开启左边栏(文件列表)的选中文件引导线高亮功能
+    default: false
+    type: class-toggle
+  - 
     id: left-roll
     title: 左边栏-横向滚动
     description: 是否开启左边栏(文件列表)的横向滚动条功能，使长文本完全显示
@@ -240,7 +246,7 @@ body .modal {
   /* 默认字体 */
   /* font-family: '煮豆黑体', '微软雅黑', "Segoe UI", sans-serif; */
   /* font-family:'煮豆黑体', '微软雅黑', "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif; */
-  font-family: "Noto Sans", 'Zhudou Sans Normal SS02', '微软雅黑', "Segoe UI", "OpenSans-Medium", sans-serif;
+  font-family: 'Zhudou Sans Normal SS02', '微软雅黑', "Segoe UI", "OpenSans-Medium", sans-serif;
 
   /* 代码字体 */
   --font-monospace: 'JetBrains Mono NL', 'JetBrains Mono',Consolas, Monaco,"等距更纱黑体 SC", monospace ;
@@ -1044,52 +1050,6 @@ body.code-theme-testing.theme-light{
 
 
 
-/* 优化项  -----------------------------------------------------------------  */
-
-
-/* 图片边框：黑色边框、添加圆角边框、添加阴影效果、修改边框颜色为白色 */
-img {
-  border: 1px solid black;
-  /* border: 1px dashed black;     */
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
-  border-color: rgba(128, 128, 128, 0.8);
-}
-
-/* 预览粗体 优化 */
-.theme-light span.cm-strong,strong {
-  font-weight: 600 !important;
-  color: #000;
-}
-.theme-dark span.cm-strong,strong {
-  font-weight: 800 !important;
-  color: #fff;
-}
-
-/* 打印 pdf 白底优化 */
-.theme-light strong {
-  font-weight: 600 !important;
-  color: #000;
-}
-.theme-light {
-  --font-weight-title: 700;
-  --line-height-headers: 2;
-}
-
-/* 隐藏附件文件夹 */
-div[data-path$='_assets'], 
-div[data-path$='_assets'] + div.nav-folder-children 
-{
-	display: none;
-}
-
-/* 左边栏 */
-.nav-file-title, .nav-folder-title {
-  /* font-size: 15px; */
-  color: #757e8a;
-}
-
-
 /* ---------------------------------------------  可选项  ---------------------------------------------  */
 
 
@@ -1379,36 +1339,87 @@ body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .na
   
 
 
+/* 优化项  -----------------------------------------------------------------  */
+
+
+/* 图片边框：黑色边框、添加圆角边框、添加阴影效果、修改边框颜色为白色 */
+img {
+  border: 1px solid black;
+  /* border: 1px dashed black;     */
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
+  border-color: rgba(128, 128, 128, 0.8);
+}
+
+/* 预览粗体 优化 */
+.theme-light span.cm-strong,strong {
+  font-weight: 600 !important;
+  color: #000;
+}
+.theme-dark span.cm-strong,strong {
+  font-weight: 800 !important;
+  color: #fff;
+}
+
+/* 打印 pdf 白底优化 */
+.theme-light strong {
+  font-weight: 600 !important;
+  color: #000;
+}
+.theme-light {
+  --font-weight-title: 700;
+  --line-height-headers: 2;
+}
+
+/* 隐藏附件文件夹 */
+div[data-path$='_assets'], 
+div[data-path$='_assets'] + div.nav-folder-children 
+{
+	display: none;
+}
+
+/* 左边栏 */
+.nav-file-title, .nav-folder-title {
+  /* font-size: 15px; */
+  color: #757e8a;
+}
+
+
+
+/* 文件大纲引导线突出显示 */
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) .tree-item-inner,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) .tree-item-inner {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self.is-active .tree-item-inner {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active)+.tree-item-children,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active)+.tree-item-children {
+  border-left: 1px solid;
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) :is(.tree-item-icon, .file-tree-item-icon) svg,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) :is(.tree-item-icon, .file-tree-item-icon) svg {
+  color: var(--theme-color);
+}
+/* 添加的文件图标的颜色 */
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) :is(.tree-item-icon, .file-tree-item-icon) {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self.is-active::before {
+  color: var(--theme-color);
+}
 
 
 
 
+/* 新增样式  -----------------------------------------------------------------  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* A callout for a folder structure
+/* 
+标注：文件夹结构
+A callout for a folder structure
 from : https://forum.obsidian.md/t/a-callout-for-a-folder-structure/61366
  */
  .callout[data-callout=folder i] {
@@ -1480,19 +1491,6 @@ from : https://forum.obsidian.md/t/a-callout-for-a-folder-structure/61366
 .callout[data-callout=folder i] .callout-content {
   overflow-x: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

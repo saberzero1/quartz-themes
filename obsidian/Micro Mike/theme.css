@@ -61,6 +61,7 @@ settings:
 			- accentMicroMike
 			- classicMicroMike
 			- dtm08
+			- factorio
 	-
 		id: disableBevels
 		title: Disable Bevels 
@@ -731,11 +732,11 @@ body {
   width: 40px;
 }
 
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) {
   display: flex;
   flex-direction: column;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) {
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -743,16 +744,16 @@ body {
   order: -1;
   min-height: unset !important;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer):has(> .backlink-pane > .search-result-container > .search-empty-state) {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer):has(> .backlink-pane > .search-result-container > .search-empty-state) {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .nav-header {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .nav-header {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane > .tree-item-self {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane > .tree-item-self {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -760,43 +761,48 @@ body {
   border-bottom: 2px solid var(--hr-color);
   margin-bottom: 10px;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children {
   display: flex;
   flex-wrap: wrap;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result {
   display: flex;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-matches {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-matches {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable:hover {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+}
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable:hover {
   background-color: transparent;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-icon {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-icon {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-flair-outer {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-flair-outer {
   display: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner {
   line-height: 35px;
   font-size: var(--font-text-size);
   white-space: nowrap;
   color: var(--link-color);
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner:hover {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner:hover {
   color: var(--link-color-hover);
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner:hover::before {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner:hover::before {
   text-decoration-line: none;
   text-decoration: none;
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner::before {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner::before {
   content: "႟";
   color: var(--text-normal);
 }
-:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner::after {
+body:not(.disableToplinks) :is(.markdown-reading-view, .markdown-source-view) :is(.markdown-preview-sizer, .cm-sizer) :is(.embedded-backlinks, .mod-footer) .backlink-pane .search-result-container .search-results-children .search-result .search-result-file-title.tree-item-self.is-clickable .tree-item-inner::after {
   content: "";
   color: var(--text-normal);
 }
@@ -894,10 +900,10 @@ body {
   box-shadow: var(--bevelStyleTreeItem);
 }
 
-.tree-item-self .tree-item-icon {
+:is(.backlink-pane, .outgoing-link-pane .workspace-leaf-content[data-type=search], .workspace-leaf-content[data-type=tag]) .tree-item-self .tree-item-icon {
   order: 0;
 }
-.tree-item-self .tree-item-flair-outer {
+:is(.backlink-pane, .outgoing-link-pane .workspace-leaf-content[data-type=search], .workspace-leaf-content[data-type=tag]) .tree-item-self .tree-item-flair-outer {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -905,11 +911,11 @@ body {
   padding-right: 5px;
   padding-left: 5px;
 }
-.tree-item-self .tree-item-flair-outer .tree-item-flair {
+:is(.backlink-pane, .outgoing-link-pane .workspace-leaf-content[data-type=search], .workspace-leaf-content[data-type=tag]) .tree-item-self .tree-item-flair-outer .tree-item-flair {
   font-size: var(--outlineLevelFontSize);
   color: var(--text-normal);
 }
-.tree-item-self .tree-item-inner {
+:is(.backlink-pane, .outgoing-link-pane .workspace-leaf-content[data-type=search], .workspace-leaf-content[data-type=tag]) .tree-item-self .tree-item-inner {
   order: 2;
 }
 
@@ -954,6 +960,10 @@ body {
   animation: none !important;
 }
 
+.menu .menu-item .menu-item-icon.mod-checked {
+  bottom: 0px;
+}
+
 .blendDropdown .menu {
   word-wrap: none;
   white-space: nowrap;
@@ -975,6 +985,9 @@ body {
 .blendDropdown .menu .menu-item.selected:not(.is-disabled):not(.is-label) svg, .blendDropdown .menu .menu-item:hover:not(.is-disabled):not(.is-label) svg {
   color: #000;
 }
+.blendDropdown .menu .menu-item .menu-item-icon.mod-checked {
+  bottom: 0px;
+}
 .blendDropdown .menu .menu-separator {
   position: relative;
   width: 200%;
@@ -986,40 +999,43 @@ body {
   --header-height: var(--editorDashboardHeight);
 }
 
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header {
+.workspace-leaf-content .view-header {
   padding: 0px;
   margin: 0px;
   gap: 0px;
   height: var(--editorDashboardHeight);
   min-height: var(--editorDashboardHeight);
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header div {
+.workspace-leaf-content .view-header div {
   width: var(--editorDashboardButtonsWidth);
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header div > :is(button, a, div) {
+.workspace-leaf-content .view-header div > :is(button, a, div) {
   padding: 0px;
   margin: 0px;
   gap: 0px;
   flex-grow: 1;
   height: var(--editorDashboardHeight);
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header div .view-header-title-parent {
+.workspace-leaf-content .view-header div .view-header-title-parent {
   display: none;
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header div .view-header-title {
+.workspace-leaf-content .view-header div .view-header-title {
   display: inline-block;
   min-width: 100%;
   text-align: center;
   vertical-align: middle;
   font-size: 20px;
+  font-weight: 100;
+  position: relative;
+  top: 2px;
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header div .view-header-title::before {
+.workspace-leaf-content .view-header div .view-header-title::before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-:is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-header-title-container::after {
+.workspace-leaf-content .view-header .view-header-title-container::after {
   height: 0px;
   width: 0px;
   display: none;
@@ -1057,7 +1073,7 @@ body:not(.disableSimpleEditor) :is(.markdown-rendered:not(.community-modal-readm
 
 body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) div:is(.el-p, .el-pre, .el-table, .el-ul, .el-ol) + div > :is(h1, h2, h3, h4, h5, h6),
 body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) :is(p, pre, table, ul, ol) + :is(h1, h2, h3, h4, h5, h6),
-body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) .markdown-preview-section :is(p, h1, h2, h3, h4, h5, h6) {
+body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) .markdown-preview-section :not(:is(li, ul, ol)) > :is(p, h1, h2, h3, h4, h5, h6) {
   margin-top: var(--margin-scale);
 }
 body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) .markdown-preview-section blockquote :is(p, h1, h2, h3, h4, h5, h6):first-of-type {
@@ -1177,6 +1193,10 @@ body .workspace-leaf-content[data-type=file-explorer] .tree-item-children .tree-
   background-color: var(--levelLayer);
 }
 
+/* .nav-files-container
+ * overflow-y: visible
+ * min-height: fit-content
+ * */
 @media only screen and (max-width: 900px) {
   body:not(.disableMiniMode) .mod-right-split {
     display: none;
@@ -1654,7 +1674,7 @@ body:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .workspace-tab-header-cont
   gap: 0px;
   position: fixed;
   right: calc(var(--titlebarButtonWidth) * 3);
-  z-index: 20;
+  z-index: 30;
 }
 
 :is(.outsideSidebar_RBA, .insideSidebar_RBA) .workspace-tab-header-container .sidebar-toggle-button.mod-right {
@@ -1721,6 +1741,16 @@ html .mod-linux:not(.stackTabs) .mod-root {
 html .mod-windows.stackTabs .mod-root,
 html .mod-linux.stackTabs .mod-root {
   --frame-right-space: 0px;
+}
+
+html body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .mod-root {
+  --frame-right-space: var(--titlebarButtonWidth);
+}
+html body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .mod-top-right-space .workspace-tab-header-container-inner {
+  margin-right: var(--titlebarButtonWidth);
+}
+html body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA) .sidebar-toggle-button.mod-right {
+  right: 0px;
 }
 
 html .mod-windows:not(.stackTabs):not(.disableRightTitlebarOffset) .mod-root .mod-top-right-space,
@@ -1881,8 +1911,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.status-bar .status-bar-item .status-bar-item-segment:not(:last-of-type) {
+  padding-right: 5px;
+}
 .status-bar .status-bar-item.left-region {
   padding-left: 0px;
+  /* testing7 */
 }
 
 .workspace .mod-root .workspace-tabs.mod-top .workspace-tab-header-container {
@@ -2087,6 +2121,281 @@ body:not(.qe-title-center):not(.qe-title-hide) .titlebar-text.qe-replacement,
   app-region: no-drag;
 }
 
+/* Managing Obsidian Frame */
+body.is-frameless:not(.is-hidden-frameless, .is-fullscreen) .titlebar-button {
+  height: var(--titlebar-height);
+}
+body.is-frameless:not(.is-hidden-frameless, .is-fullscreen).titlebarAlign_RBA .sidebar-toggle-button.mod-right {
+  height: var(--titlebar-height);
+}
+body.is-frameless:not(.is-hidden-frameless, .is-fullscreen).titlebarAlign_RBA .sidebar-toggle-button.mod-right .clickable-icon {
+  height: var(--titlebar-height);
+}
+
+/*
+    Alternative Checkboxes Reference Set (Version: 1.0.0) 
+    Initiative created by Damian Korcz <https://github.com/damiankorcz>.
+
+    Initiative Repository: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set
+    Usage Guide: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md
+    Research Vault: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/tree/main/Research%20Vault
+
+    The following CSS Snippet is designed to serve as a Reference for how to implement the commonly used
+    Alternative Checkboxes feature in themes and CSS Snippets. The Checkbox syntax in conjunction with the
+    meaning are based on the same set as the Minimal theme, since that is the most common set among all themes
+    which implement the feature.
+
+    More on that here:
+    https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Research%20Vault/06%20Syntax%20and%20Meaning%20Review.md
+
+    The icon set used for this Reference Set is Lucide (same icon set as used in the Obsidian UI). Lucide icons are
+    distributed under the ISC License: https://lucide.dev/license
+
+    Each icon uses the `Copy Data URL` option on the website which provides a Base64 embeded SVG for the icon.
+    Properties for the Lucide icons used:
+    - Stroke width = 1.75px
+    - Size = 16px
+    - Absolute Stroke width = on
+
+    This snippet's code is distributed under the Unlicense License.
+    See https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE for more information.
+*/
+/*  --------------------------------------------------------------------------------------------
+    Section 1
+    Definining each Alternative Checkbox with a simple selectors and a set of CSS Variables.
+*/
+/* - [/] Incomplete */
+div.HyperMD-task-line[data-task="/"],
+ul > li[data-task="/"] {
+  /* Icon used: https://lucide.dev/icons/square-dashed */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNxdWFyZS1kYXNoZWQiPjxwYXRoIGQ9Ik01IDNhMiAyIDAgMCAwLTIgMiIvPjxwYXRoIGQ9Ik0xOSAzYTIgMiAwIDAgMSAyIDIiLz48cGF0aCBkPSJNMjEgMTlhMiAyIDAgMCAxLTIgMiIvPjxwYXRoIGQ9Ik01IDIxYTIgMiAwIDAgMS0yLTIiLz48cGF0aCBkPSJNOSAzaDEiLz48cGF0aCBkPSJNOSAyMWgxIi8+PHBhdGggZD0iTTE0IDNoMSIvPjxwYXRoIGQ9Ik0xNCAyMWgxIi8+PHBhdGggZD0iTTMgOXYxIi8+PHBhdGggZD0iTTIxIDl2MSIvPjxwYXRoIGQ9Ik0zIDE0djEiLz48cGF0aCBkPSJNMjEgMTR2MSIvPjwvc3ZnPg==");
+}
+
+/* - [-] Cancelled */
+div.HyperMD-task-line[data-task="-"],
+ul > li[data-task="-"] {
+  /* Icon used: https://lucide.dev/icons/ban */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0ibTQuOSA0LjkgMTQuMiAxNC4yIi8+PC9zdmc+");
+}
+
+/* - [>] Forwarded */
+div.HyperMD-task-line[data-task=">"],
+ul > li[data-task=">"] {
+  /* Icon used: https://lucide.dev/icons/send-horizontal */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZW5kLWhvcml6b250YWwiPjxwYXRoIGQ9Ik0zLjcxNCAzLjA0OGEuNDk4LjQ5OCAwIDAgMC0uNjgzLjYyN2wyLjg0MyA3LjYyN2EyIDIgMCAwIDEgMCAxLjM5NmwtMi44NDIgNy42MjdhLjQ5OC40OTggMCAwIDAgLjY4Mi42MjdsMTgtOC41YS41LjUgMCAwIDAgMC0uOTA0eiIvPjxwYXRoIGQ9Ik02IDEyaDE2Ii8+PC9zdmc+");
+}
+
+/* - [<] Scheduling */
+div.HyperMD-task-line[data-task="<"],
+ul > li[data-task="<"] {
+  /* Icon used: https://lucide.dev/icons/calendar */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhciI+PHBhdGggZD0iTTggMnY0Ii8+PHBhdGggZD0iTTE2IDJ2NCIvPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iNCIgcng9IjIiLz48cGF0aCBkPSJNMyAxMGgxOCIvPjwvc3ZnPg==");
+}
+
+/* - [?] Question */
+div.HyperMD-task-line[data-task="?"],
+ul > li[data-task="?"] {
+  /* Icon used: https://lucide.dev/icons/circle-help */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaXJjbGUtaGVscCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNOS4wOSA5YTMgMyAwIDAgMSA1LjgzIDFjMCAyLTMgMy0zIDMiLz48cGF0aCBkPSJNMTIgMTdoLjAxIi8+PC9zdmc+");
+}
+
+/* - [!] Important */
+div.HyperMD-task-line[data-task="!"],
+ul > li[data-task="!"] {
+  /* Icon used: https://lucide.dev/icons/triangle-alert */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmlhbmdsZS1hbGVydCI+PHBhdGggZD0ibTIxLjczIDE4LTgtMTRhMiAyIDAgMCAwLTMuNDggMGwtOCAxNEEyIDIgMCAwIDAgNCAyMWgxNmEyIDIgMCAwIDAgMS43My0zIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=");
+}
+
+/* - [*] Star */
+div.HyperMD-task-line[data-task="*"],
+ul > li[data-task="*"] {
+  /* Icon used: https://lucide.dev/icons/star */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zdGFyIj48cG9seWdvbiBwb2ludHM9IjEyIDIgMTUuMDkgOC4yNiAyMiA5LjI3IDE3IDE0LjE0IDE4LjE4IDIxLjAyIDEyIDE3Ljc3IDUuODIgMjEuMDIgNyAxNC4xNCAyIDkuMjcgOC45MSA4LjI2IDEyIDIiLz48L3N2Zz4=");
+}
+
+/* - ["] Quote */
+div.HyperMD-task-line[data-task='"'],
+ul > li[data-task='"'] {
+  /* Icon used: https://lucide.dev/icons/quote */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1xdW90ZSI+PHBhdGggZD0iTTE2IDNhMiAyIDAgMCAwLTIgMnY2YTIgMiAwIDAgMCAyIDIgMSAxIDAgMCAxIDEgMXYxYTIgMiAwIDAgMS0yIDIgMSAxIDAgMCAwLTEgMXYyYTEgMSAwIDAgMCAxIDEgNiA2IDAgMCAwIDYtNlY1YTIgMiAwIDAgMC0yLTJ6Ii8+PHBhdGggZD0iTTUgM2EyIDIgMCAwIDAtMiAydjZhMiAyIDAgMCAwIDIgMiAxIDEgMCAwIDEgMSAxdjFhMiAyIDAgMCAxLTIgMiAxIDEgMCAwIDAtMSAxdjJhMSAxIDAgMCAwIDEgMSA2IDYgMCAwIDAgNi02VjVhMiAyIDAgMCAwLTItMnoiLz48L3N2Zz4=");
+}
+
+/* - [l] Location */
+div.HyperMD-task-line[data-task=l],
+ul > li[data-task=l] {
+  /* Icon used: https://lucide.dev/icons/map-pin */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tYXAtcGluIj48cGF0aCBkPSJNMjAgMTBjMCA0Ljk5My01LjUzOSAxMC4xOTMtNy4zOTkgMTEuNzk5YTEgMSAwIDAgMS0xLjIwMiAwQzkuNTM5IDIwLjE5MyA0IDE0Ljk5MyA0IDEwYTggOCAwIDAgMSAxNiAwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMCIgcj0iMyIvPjwvc3ZnPg==");
+}
+
+/* - [b] Bookmark */
+div.HyperMD-task-line[data-task=b],
+ul > li[data-task=b] {
+  /* Icon used: https://lucide.dev/icons/bookmark */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rbWFyayI+PHBhdGggZD0ibTE5IDIxLTctNC03IDRWNWEyIDIgMCAwIDEgMi0yaDEwYTIgMiAwIDAgMSAyIDJ2MTZ6Ii8+PC9zdmc+");
+}
+
+/* - [i] Information */
+div.HyperMD-task-line[data-task=i],
+ul > li[data-task=i] {
+  /* Icon used: https://lucide.dev/icons/info */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbmZvIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik0xMiAxNnYtNCIvPjxwYXRoIGQ9Ik0xMiA4aC4wMSIvPjwvc3ZnPg==");
+}
+
+/* - [S] Savings */
+div.HyperMD-task-line[data-task=S],
+ul > li[data-task=S] {
+  /* Icon used: https://lucide.dev/icons/dollar-sign */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWRvbGxhci1zaWduIj48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjIiIHkyPSIyMiIvPjxwYXRoIGQ9Ik0xNyA1SDkuNWEzLjUgMy41IDAgMCAwIDAgN2g1YTMuNSAzLjUgMCAwIDEgMCA3SDYiLz48L3N2Zz4=");
+}
+
+/* - [I] Idea */
+div.HyperMD-task-line[data-task=I],
+ul > li[data-task=I] {
+  /* Icon used: https://lucide.dev/icons/lightbulb */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1saWdodGJ1bGIiPjxwYXRoIGQ9Ik0xNSAxNGMuMi0xIC43LTEuNyAxLjUtMi41IDEtLjkgMS41LTIuMiAxLjUtMy41QTYgNiAwIDAgMCA2IDhjMCAxIC4yIDIuMiAxLjUgMy41LjcuNyAxLjMgMS41IDEuNSAyLjUiLz48cGF0aCBkPSJNOSAxOGg2Ii8+PHBhdGggZD0iTTEwIDIyaDQiLz48L3N2Zz4=");
+}
+
+/* - [p] Pros */
+div.HyperMD-task-line[data-task=p],
+ul > li[data-task=p] {
+  /* Icon used: https://lucide.dev/icons/thumbs-up */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10aHVtYnMtdXAiPjxwYXRoIGQ9Ik03IDEwdjEyIi8+PHBhdGggZD0iTTE1IDUuODggMTQgMTBoNS44M2EyIDIgMCAwIDEgMS45MiAyLjU2bC0yLjMzIDhBMiAyIDAgMCAxIDE3LjUgMjJINGEyIDIgMCAwIDEtMi0ydi04YTIgMiAwIDAgMSAyLTJoMi43NmEyIDIgMCAwIDAgMS43OS0xLjExTDEyIDJhMy4xMyAzLjEzIDAgMCAxIDMgMy44OFoiLz48L3N2Zz4=");
+}
+
+/* - [c] Cons */
+div.HyperMD-task-line[data-task=c],
+ul > li[data-task=c] {
+  /* Icon used: https://lucide.dev/icons/thumbs-down */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10aHVtYnMtZG93biI+PHBhdGggZD0iTTE3IDE0VjIiLz48cGF0aCBkPSJNOSAxOC4xMiAxMCAxNEg0LjE3YTIgMiAwIDAgMS0xLjkyLTIuNTZsMi4zMy04QTIgMiAwIDAgMSA2LjUgMkgyMGEyIDIgMCAwIDEgMiAydjhhMiAyIDAgMCAxLTIgMmgtMi43NmEyIDIgMCAwIDAtMS43OSAxLjExTDEyIDIyYTMuMTMgMy4xMyAwIDAgMS0zLTMuODhaIi8+PC9zdmc+");
+}
+
+/* - [f] Fire */
+div.HyperMD-task-line[data-task=f],
+ul > li[data-task=f] {
+  /* Icon used: https://lucide.dev/icons/flame */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mbGFtZSI+PHBhdGggZD0iTTguNSAxNC41QTIuNSAyLjUgMCAwIDAgMTEgMTJjMC0xLjM4LS41LTItMS0zLTEuMDcyLTIuMTQzLS4yMjQtNC4wNTQgMi02IC41IDIuNSAyIDQuOSA0IDYuNSAyIDEuNiAzIDMuNSAzIDUuNWE3IDcgMCAxIDEtMTQgMGMwLTEuMTUzLjQzMy0yLjI5NCAxLTNhMi41IDIuNSAwIDAgMCAyLjUgMi41eiIvPjwvc3ZnPg==");
+}
+
+/* - [k] Key */
+div.HyperMD-task-line[data-task=k],
+ul > li[data-task=k] {
+  /* Icon used: https://lucide.dev/icons/key-round */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1rZXktcm91bmQiPjxwYXRoIGQ9Ik0yLjU4NiAxNy40MTRBMiAyIDAgMCAwIDIgMTguODI4VjIxYTEgMSAwIDAgMCAxIDFoM2ExIDEgMCAwIDAgMS0xdi0xYTEgMSAwIDAgMSAxLTFoMWExIDEgMCAwIDAgMS0xdi0xYTEgMSAwIDAgMSAxLTFoLjE3MmEyIDIgMCAwIDAgMS40MTQtLjU4NmwuODE0LS44MTRhNi41IDYuNSAwIDEgMC00LTR6Ii8+PGNpcmNsZSBjeD0iMTYuNSIgY3k9IjcuNSIgcj0iLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==");
+}
+
+/* - [w] Win */
+div.HyperMD-task-line[data-task=w],
+ul > li[data-task=w] {
+  /* Icon used: https://lucide.dev/icons/trophy */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cm9waHkiPjxwYXRoIGQ9Ik02IDlINC41YTIuNSAyLjUgMCAwIDEgMC01SDYiLz48cGF0aCBkPSJNMTggOWgxLjVhMi41IDIuNSAwIDAgMCAwLTVIMTgiLz48cGF0aCBkPSJNNCAyMmgxNiIvPjxwYXRoIGQ9Ik0xMCAxNC42NlYxN2MwIC41NS0uNDcuOTgtLjk3IDEuMjFDNy44NSAxOC43NSA3IDIwLjI0IDcgMjIiLz48cGF0aCBkPSJNMTQgMTQuNjZWMTdjMCAuNTUuNDcuOTguOTcgMS4yMUMxNi4xNSAxOC43NSAxNyAyMC4yNCAxNyAyMiIvPjxwYXRoIGQ9Ik0xOCAySDZ2N2E2IDYgMCAwIDAgMTIgMFYyWiIvPjwvc3ZnPg==");
+}
+
+/* - [u] Up */
+div.HyperMD-task-line[data-task=u],
+ul > li[data-task=u] {
+  /* Icon used: https://lucide.dev/icons/trending-up */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmVuZGluZy11cCI+PHBvbHlsaW5lIHBvaW50cz0iMjIgNyAxMy41IDE1LjUgOC41IDEwLjUgMiAxNyIvPjxwb2x5bGluZSBwb2ludHM9IjE2IDcgMjIgNyAyMiAxMyIvPjwvc3ZnPg==");
+}
+
+/* - [d] Down */
+div.HyperMD-task-line[data-task=d],
+ul > li[data-task=d] {
+  /* Icon used: https://lucide.dev/icons/trending-down */
+  --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmVuZGluZy1kb3duIj48cG9seWxpbmUgcG9pbnRzPSIyMiAxNyAxMy41IDguNSA4LjUgMTMuNSAyIDciLz48cG9seWxpbmUgcG9pbnRzPSIxNiAxNyAyMiAxNyAyMiAxMSIvPjwvc3ZnPg==");
+}
+
+/*  --------------------------------------------------------------------------------------------
+    Section 2
+    The following code should remain untouched. It serves as a template for checkbox definitions
+    above. It leaves the default unchecked and checked checkboxes untouched; those are styled 
+    according to the theme used.
+*/
+/*
+    Disables Theme's Alternative Checkboxes that don't use Style Settings and implemented
+    the `@container style()` query.
+*/
+body {
+  --theme-alternative-checkboxes: disable;
+}
+
+/*
+    Custom Default Variables - Reduces repetition and simplifies the implementation above.
+    If you want different defaults for all Alternative Checkboxes you can change them here. 
+*/
+.HyperMD-task-line:not([data-task=x], [data-task=" "]),
+li:not([data-task=x], [data-task=" "]) {
+  --icon-mask-image: unset;
+  --icon-mask-color: var(--text-normal);
+  --icon-content: "";
+  --icon-content-font: var(--font-monospace);
+  --icon-content-weight: var(--font-bold);
+  --icon-content-color: var(--text-normal);
+  --icon-background: transparent;
+  --icon-background-hover: transparent;
+  --icon-border: unset;
+  --icon-border-radius: unset;
+  --line-text-color: inherit;
+  --line-background: unset;
+  --line-border: unset;
+  --line-border-radius: unset;
+}
+
+.HyperMD-task-line:not([data-task=x], [data-task=" "]),
+li:not([data-task=x], [data-task=" "]).is-checked {
+  color: var(--line-text-color);
+  background: var(--line-background);
+  border: var(--line-border);
+  border-radius: var(--line-border-radius);
+}
+
+/* Swapping margin for padding to allow background color to apply in Reading view the same
+as in Live Preview */
+.task-list-item.is-checked {
+  margin-inline-start: unset;
+  padding-inline-start: var(--list-indent);
+}
+
+div.is-live-preview input[type=checkbox]:not([data-task=x], [data-task=" "]):checked,
+li:not([data-task=x], [data-task=" "]) > input[type=checkbox]:checked,
+li:not([data-task=x], [data-task=" "]) > p > input[type=checkbox]:checked {
+  --checkbox-marker-color: transparent;
+  border: var(--icon-border);
+  border-radius: var(--icon-border-radius);
+  background: var(--icon-background);
+}
+div.is-live-preview input[type=checkbox]:not([data-task=x], [data-task=" "]):checked:hover,
+li:not([data-task=x], [data-task=" "]) > input[type=checkbox]:checked:hover,
+li:not([data-task=x], [data-task=" "]) > p > input[type=checkbox]:checked:hover {
+  background: var(--icon-background-hover);
+}
+div.is-live-preview input[type=checkbox]:not([data-task=x], [data-task=" "]):checked::after,
+li:not([data-task=x], [data-task=" "]) > input[type=checkbox]:checked::after,
+li:not([data-task=x], [data-task=" "]) > p > input[type=checkbox]:checked::after {
+  background-color: var(--icon-mask-color);
+  -webkit-mask-image: var(--icon-mask-image);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  color: var(--icon-content-color);
+  background-image: var(--icon-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: var(--icon-content);
+  text-align: center;
+  font-weight: var(--icon-content-weight);
+  font-family: var(--icon-content-font);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Allows icons to remain scaled correctly within the checkbox when using a border */
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available; /* Fallback for Safari */
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available; /* Fallback for Safari */
+}
+
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   padding: 0px;
 }
@@ -2204,6 +2513,22 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 
 .n-input .n-input-wrapper {
   padding-left: 0px;
+}
+
+.workspace-leaf-content[data-type=recent-files] .tree-item-spacer {
+  display: none;
+}
+.workspace-leaf-content[data-type=recent-files] .recent-files-file-delete {
+  position: absolute;
+}
+
+.sg-mounted-collection-decoration {
+  order: 3;
+  padding-right: 5px;
+}
+
+.w-3.h-3.rounded-full.bg-brand {
+  height: 0.75rem !important;
 }
 
 .style-settings-heading[data-level="0"] + .style-settings-container {
@@ -3524,7 +3849,7 @@ body {
   --linkBrightnessAdditive: 1 ;
 }
 
-body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08) {
+body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
   /* Hierarchical palette */
   --bottom: #000000;
   --bottom_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 6% ));
@@ -3609,7 +3934,7 @@ body.classicMicroMike {
   --disabledOverlay: linear-gradient(90deg, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 100%) ;
 }
 
-body:not(.inherit):not(.oldAndroid):not(.dtm08) {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
   --background-primary: var(--level1_a);
   --background-primary-alt: var(--level1_b);
   --background-secondary: var(--level1);
@@ -3622,7 +3947,7 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08) {
   --text-on-accent-inverted: #ffffff;
 }
 
-body:not(.inherit):not(.oldAndroid):not(.dtm08) {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
   /* Button Component */
   /* Dashboard Component */
   /* Input Component */
@@ -3706,313 +4031,313 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08) {
   /* Theme Picker */
   /* Titlebar */
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08).theme-dark {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio).theme-dark {
   --interactive-normal: var(--level2);
   --interactive-hover: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .view-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .nav-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .nav-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .view-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .nav-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .nav-header {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) textarea, body:not(.inherit):not(.oldAndroid):not(.dtm08) input.metadata-input-text, body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=date], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=datetime-local], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=text], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=search], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=email], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=password], body:not(.inherit):not(.oldAndroid):not(.dtm08) input[type=number] {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) textarea, body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.metadata-input-text, body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=date], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=datetime-local], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=text], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=search], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=email], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=password], body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type=number] {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) input.slider {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.slider {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=file-explorer] .nav-files-container.node-insert-event,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .search-result-container.mod-global-search.node-insert-event,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=outline] .view-content,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=tag] .tag-container.node-insert-event,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=backlink] .backlink-pane.node-insert-event,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=outgoing-link] .outgoing-link-pane.node-insert-event,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=starred] .item-list,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=recent-files] {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=file-explorer] .nav-files-container.node-insert-event,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .search-result-container.mod-global-search.node-insert-event,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outline] .view-content,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=tag] .tag-container.node-insert-event,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=backlink] .backlink-pane.node-insert-event,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outgoing-link] .outgoing-link-pane.node-insert-event,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=starred] .item-list,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=recent-files] {
   background: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf.mod-active,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tabs .workspace-leaf {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf.mod-active,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tabs .workspace-leaf {
   background: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .clickable-icon.nav-action-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.nav-action-button {
   opacity: 1;
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .clickable-icon.nav-action-button:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.nav-action-button:hover {
   background-color: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .clickable-icon.nav-action-button.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.nav-action-button.is-active {
   background-color: var(--level2_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .tree-item-self {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .tree-item-self {
   color: var(--backgroundDeep);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-clickable .tree-item-icon.collapse-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-clickable .tree-item-icon.collapse-icon {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-clickable .tree-item-icon.collapse-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-clickable .tree-item-icon.collapse-icon:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=outline] .is-clickable .tree-item-icon.collapse-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outline] .is-clickable .tree-item-icon.collapse-icon:hover {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .tree-item-self:hover, body:not(.inherit):not(.oldAndroid):not(.dtm08) .tree-item-self.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .tree-item-self:hover, body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .tree-item-self.is-active {
   background-color: var(--levelHover);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=empty] .view-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-focused .workspace-leaf-content[data-type=empty] .view-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=markdown] .view-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-focused .workspace-leaf-content[data-type=markdown] .view-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=empty] .view-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-focused .workspace-leaf-content[data-type=empty] .view-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=markdown] .view-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-focused .workspace-leaf-content[data-type=markdown] .view-header {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .document-search-button,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .document-search-close-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .document-search-button,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .document-search-close-button {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-split.mod-root .workspace-tabs {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-split.mod-root .workspace-tabs {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-root .workspace-tab-header-container {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-root .workspace-tab-header-container {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace .mod-root .workspace-tab-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace .mod-root .workspace-tab-header {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace .mod-root .workspace-tab-header:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace .mod-root .workspace-tab-header:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace .mod-root .workspace-tab-header.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace .mod-root .workspace-tab-header.is-active {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-root .workspace-tab-header-new-tab .clickable-icon,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-root .workspace-tab-header-tab-list .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-root .workspace-tab-header-new-tab .clickable-icon,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-root .workspace-tab-header-tab-list .clickable-icon {
   background-color: var(--level1);
   opacity: 1;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-root .workspace-tab-header-new-tab .clickable-icon:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-root .workspace-tab-header-tab-list .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-root .workspace-tab-header-new-tab .clickable-icon:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-root .workspace-tab-header-tab-list .clickable-icon:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header-inner-close-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header-inner-close-button {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
   background-color: var(--level2_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .stackTabs .mod-root .workspace-tab-header-container-inner {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .stackTabs .mod-root .workspace-tab-header-container-inner {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-split.mod-root .view-content {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-split.mod-root .view-content {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-mode=preview] .view-content {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-mode=preview] .view-content {
   background: linear-gradient(90deg, var(--level1) 0px, #000000 30px);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .markdown-preview-view .markdown-embed:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .markdown-preview-view .markdown-embed:hover {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=file-explorer] .mod-root > .tree-item-self {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=file-explorer] .mod-root > .tree-item-self {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=outline] .tree-item-self.is-clickable:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outline] .tree-item-self.is-clickable:hover {
   background-color: var(--levelHover);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .explorable.titlebar-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .explorable.titlebar-button {
   box-shadow: var(--bevelStyleButton);
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .explorable.titlebar-button:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .explorable.titlebar-button:hover {
   background-color: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) #quick-explorer .explorable.selected, body:not(.inherit):not(.oldAndroid):not(.dtm08) #quick-explorer .explorable:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .qe-popup-menu .menu-item:not(.is-disabled):not(.is-label).selected {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) #quick-explorer .explorable.selected, body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) #quick-explorer .explorable:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .qe-popup-menu .menu-item:not(.is-disabled):not(.is-label).selected {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .prompt {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .prompt {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) input.prompt-input {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.prompt-input {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal-bg {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal-bg {
   background-color: unset;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-split.mod-horizontal.mod-right-split {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-split.mod-horizontal.mod-right-split {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-split.mod-horizontal.mod-left-split {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-split.mod-horizontal.mod-left-split {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tabs {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tabs {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tabs {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tabs {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-resize-handle {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-resize-handle {
   background-color: var(--level1);
   border-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-resize-handle:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-resize-handle:hover {
   background-color: var(--level1_a);
   border-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) body {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) body {
   --ribbon-background: var(--bottom);
   --ribbon-background-collapsed: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .clickable-icon.side-dock-ribbon-action {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.side-dock-ribbon-action {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .clickable-icon.side-dock-ribbon-action:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.side-dock-ribbon-action:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-ribbon.side-dock-ribbon.mod-left {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-ribbon.side-dock-ribbon.mod-left {
   border-right: var(--divider-width) solid var(--line-color);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal-bg {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal-bg {
   background-color: transparent;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal.mod-community-theme,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal.mod-community-plugin {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-community-theme,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-community-plugin {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal.mod-settings .vertical-tab-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-settings .vertical-tab-header {
   background-color: var(--bottom_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal.mod-settings .vertical-tab-content-container {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-settings .vertical-tab-content-container {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal.mod-settings .vertical-tab-content {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-settings .vertical-tab-content {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .dropdown,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .search-results-info .dropdown {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .dropdown,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .search-results-info .dropdown {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .dropdown:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .search-results-info .dropdown:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .dropdown:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .search-results-info .dropdown:hover {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .search-row {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .search-row {
   background-color: var(--level1);
   margin: 0px;
   padding: 6px;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .search-params {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .search-params {
   margin: 0px;
   padding: var(--size-4-1) var(--size-4-4);
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon:hover, body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon:hover, body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon.is-active {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon:hover {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .modal .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .vertical-tab-nav-item.is-active,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .vertical-tab-nav-item.is-active:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .vertical-tab-nav-item.is-active,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .vertical-tab-nav-item.is-active:hover {
   background-color: var(--background-modifier-hover);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header-container,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header-container {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header-container,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header-container {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header.is-active {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header.is-active:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header.mod-active.is-active:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header.is-active:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header.mod-active.is-active:hover {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header.has-active-menu,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header.has-active-menu,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header.is-active,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header.has-active-menu,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header.has-active-menu,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header.is-active,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header.is-active {
   background-color: var(--level1_b);
 }
 @media (hover: hover) {
-  body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header.has-active-menu:hover,
-  body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header.has-active-menu:hover,
-  body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-left-split .workspace-tab-header.is-active:hover,
-  body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-right-split .workspace-tab-header.is-active:hover {
+  body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header.has-active-menu:hover,
+  body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header.has-active-menu:hover,
+  body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header.is-active:hover,
+  body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header.is-active:hover {
     background-color: var(--level1_b);
   }
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   background-color: transparent;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .sidebar-toggle-button.mod-left .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .sidebar-toggle-button.mod-left .clickable-icon {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .sidebar-toggle-button.mod-left .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .sidebar-toggle-button.mod-left .clickable-icon:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-collapsed .sidebar-toggle-button.mod-left .clickable-icon:hover {
   background-color: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .sidebar-toggle-button.mod-right .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .sidebar-toggle-button.mod-right .clickable-icon {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .sidebar-toggle-button.mod-right .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .sidebar-toggle-button.mod-right .clickable-icon:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-top-right-space .sidebar-toggle-button.mod-right .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-top-right-space .sidebar-toggle-button.mod-right .clickable-icon {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .mod-top-right-space .sidebar-toggle-button.mod-right .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-top-right-space .sidebar-toggle-button.mod-right .clickable-icon:hover {
   background-color: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .community-item {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item {
   --background-modifier-border: var(--level3);
   --background-modifier-border-hover: var(--level3_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .community-item.is-selected,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .community-item.is-selected:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item.is-selected,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item.is-selected:hover {
   border-color: var(--level3_a);
   background-color: var(--level3);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .community-modal-details {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-modal-details {
   background-color: transparent;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .titlebar-button-container .titlebar-button:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .titlebar-button-container .titlebar-button:hover {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right,
-body:not(.inherit):not(.oldAndroid):not(.dtm08) .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
   background-color: var(--bottom);
 }
 
@@ -4028,7 +4353,7 @@ body {
   --bevelStyleTreeItem_invert: inset -1px -1px var(--separatorColor);
 }
 
-body:not(.disableBevels):not(.dtm08) {
+body:not(.disableBevels):not(.dtm08):not(.factorio) {
   --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2), inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
   --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2), inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
   --bevelStyleContainerOuter:
@@ -4042,7 +4367,7 @@ body:not(.disableBevels):not(.dtm08) {
   2px -2px var(--bevelBright2);
 }
 
-body:not(.disableBevels):not(.dtm08) {
+body:not(.disableBevels):not(.dtm08):not(.factorio) {
   /* Dashboard Component */
   /* Input Component */
   /* Sidebar Container Component*/
@@ -4087,145 +4412,145 @@ body:not(.disableBevels):not(.dtm08) {
   /* Theme Picker */
   /* Titlebar */
 }
-body:not(.disableBevels):not(.dtm08).theme-dark {
+body:not(.disableBevels):not(.dtm08):not(.factorio).theme-dark {
   --input-shadow: var(--bevelStyleButton);
   --input-shadow-hover: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .clickable-icon,
-body:not(.disableBevels):not(.dtm08) .clickable-icon:hover,
-body:not(.disableBevels):not(.dtm08) .workspace-tab-header-inner-close-button,
-body:not(.disableBevels):not(.dtm08) button {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .clickable-icon,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .clickable-icon:hover,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-tab-header-inner-close-button,
+body:not(.disableBevels):not(.dtm08):not(.factorio) button {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .view-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .view-header {
   box-shadow: var(--bevelStyleButton);
   border: 0px;
 }
-body:not(.disableBevels):not(.dtm08) .mod-left-split .nav-header,
-body:not(.disableBevels):not(.dtm08) .mod-right-split .nav-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split .nav-header,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split .nav-header {
   padding: 3px;
   box-shadow: var(--bevelStyleButton);
   border: 0px;
 }
-body:not(.disableBevels):not(.dtm08) textarea, body:not(.disableBevels):not(.dtm08) input[type=text], body:not(.disableBevels):not(.dtm08) input[type=search], body:not(.disableBevels):not(.dtm08) input[type=email], body:not(.disableBevels):not(.dtm08) input[type=password], body:not(.disableBevels):not(.dtm08) input[type=number] {
+body:not(.disableBevels):not(.dtm08):not(.factorio) textarea, body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=text], body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=search], body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=email], body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=password], body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=number] {
   box-shadow: var(--bevelStyleContainer);
 }
-body:not(.disableBevels):not(.dtm08) textarea:active,
-body:not(.disableBevels):not(.dtm08) input[type=text]:active,
-body:not(.disableBevels):not(.dtm08) input[type=search]:active,
-body:not(.disableBevels):not(.dtm08) input[type=email]:active,
-body:not(.disableBevels):not(.dtm08) input[type=password]:active,
-body:not(.disableBevels):not(.dtm08) input[type=number]:active,
-body:not(.disableBevels):not(.dtm08) textarea:focus,
-body:not(.disableBevels):not(.dtm08) input[type=text]:focus,
-body:not(.disableBevels):not(.dtm08) input[type=search]:focus,
-body:not(.disableBevels):not(.dtm08) input[type=email]:focus,
-body:not(.disableBevels):not(.dtm08) input[type=password]:focus,
-body:not(.disableBevels):not(.dtm08) input[type=number]:focus,
-body:not(.disableBevels):not(.dtm08) textarea:focus-visible,
-body:not(.disableBevels):not(.dtm08) input[type=text]:focus-visible,
-body:not(.disableBevels):not(.dtm08) input[type=search]:focus-visible,
-body:not(.disableBevels):not(.dtm08) input[type=email]:focus-visible,
-body:not(.disableBevels):not(.dtm08) input[type=password]:focus-visible,
-body:not(.disableBevels):not(.dtm08) input[type=number]:focus-visible {
+body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=text]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=search]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=email]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=password]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=number]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=text]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=search]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=email]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=password]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=number]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=text]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=search]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=email]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=password]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio) input[type=number]:focus-visible {
   box-shadow: var(--bevelStyleContainer);
 }
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=file-explorer] .nav-files-container.node-insert-event,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=search] .search-result-container.mod-global-search.node-insert-event,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=outline] .view-content,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=tag] .tag-container.node-insert-event,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=backlink] .backlink-pane.node-insert-event,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=outgoing-link] .outgoing-link-pane.node-insert-event,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=starred] .item-list,
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=recent-files] {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=file-explorer] .nav-files-container.node-insert-event,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .search-result-container.mod-global-search.node-insert-event,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outline] .view-content,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=tag] .tag-container.node-insert-event,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=backlink] .backlink-pane.node-insert-event,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=outgoing-link] .outgoing-link-pane.node-insert-event,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=starred] .item-list,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=recent-files] {
   box-shadow: var(--bevelStyleContainer);
   box-shadow: var(--bevelStyleContainerOuter);
 }
-body:not(.disableBevels):not(.dtm08) .is-clickable .tree-item-icon.collapse-icon {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .is-clickable .tree-item-icon.collapse-icon {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .document-search-container {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .document-search-container {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .document-search-close-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .document-search-close-button {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .workspace .mod-root .workspace-tab-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace .mod-root .workspace-tab-header {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .stackTabs .mod-root .workspace-tab-header-inner-close-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .stackTabs .mod-root .workspace-tab-header-inner-close-button {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-actions, body:not(.disableBevels):not(.dtm08) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-header-nav-buttons {
+body:not(.disableBevels):not(.dtm08):not(.factorio) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-actions, body:not(.disableBevels):not(.dtm08):not(.factorio) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-header-nav-buttons {
   margin: 3px;
   height: calc(100% - 6px);
 }
-body:not(.disableBevels):not(.dtm08) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-actions > *:is(a, button), body:not(.disableBevels):not(.dtm08) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-header-nav-buttons > *:is(a, button) {
+body:not(.disableBevels):not(.dtm08):not(.factorio) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-actions > *:is(a, button), body:not(.disableBevels):not(.dtm08):not(.factorio) :is(.workspace-leaf-content[data-type=markdown], .workspace-leaf-content[data-type=empty]) .view-header .view-header-nav-buttons > *:is(a, button) {
   height: 100%;
 }
-body:not(.disableBevels):not(.dtm08) .markdown-preview-view .markdown-embed,
-body:not(.disableBevels):not(.dtm08) .markdown-preview-view .file-embed {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .markdown-preview-view .markdown-embed,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .markdown-preview-view .file-embed {
   box-shadow: var(--bevelStyleContainer);
 }
-body:not(.disableBevels):not(.dtm08) .explorable.titlebar-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .explorable.titlebar-button {
   box-shadow: var(--bevelStyleButton);
   background-color: var(--level2);
 }
-body:not(.disableBevels):not(.dtm08) .prompt {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .prompt {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) input.prompt-input:hover, body:not(.disableBevels):not(.dtm08) input.prompt-input:focus, body:not(.disableBevels):not(.dtm08) input.prompt-input:focus-visible {
+body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:hover, body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:focus, body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:focus-visible {
   box-shadow: var(--bevelStyleContainer);
 }
-body:not(.disableBevels):not(.dtm08) .mod-left-split > hr,
-body:not(.disableBevels):not(.dtm08) .mod-right-split > hr {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split > hr,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split > hr {
   border-left: 1px solid var(--level2);
   border-right: 1px solid var(--level2);
 }
-body:not(.disableBevels):not(.dtm08) .mod-horizontal > div > hr:not(.mod-root hr) {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-horizontal > div > hr:not(.mod-root hr) {
   border-top: 1px solid var(--level2);
   border-bottom: 1px solid var(--level2);
 }
-body:not(.disableBevels):not(.dtm08) .modal-container.mod-dim .modal.mod-settings,
-body:not(.disableBevels):not(.dtm08) .modal-container.mod-dim .modal.mod-community-plugin,
-body:not(.disableBevels):not(.dtm08) .modal-container.mod-dim .modal.mod-community-theme,
-body:not(.disableBevels):not(.dtm08) .modal.mod-community-theme {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .modal-container.mod-dim .modal.mod-settings,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .modal-container.mod-dim .modal.mod-community-plugin,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .modal-container.mod-dim .modal.mod-community-theme,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .modal.mod-community-theme {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .modal.mod-settings .vertical-tab-content {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .modal.mod-settings .vertical-tab-content {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .dropdown:hover,
-body:not(.disableBevels):not(.dtm08) .search-results-info .dropdown:hover {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .dropdown:hover,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .search-results-info .dropdown:hover {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon:hover, body:not(.disableBevels):not(.dtm08) .workspace-leaf-content[data-type=search] .clickable-icon.is-active {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon:hover, body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-leaf-content[data-type=search] .clickable-icon.is-active {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) .mod-left-split .workspace-tab-header,
-body:not(.disableBevels):not(.dtm08) .mod-right-split .workspace-tab-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08) :is(.mod-left-split, .mod-right-split) .workspace-tab-container .nav-header .nav-buttons-container .clickable-icon {
+body:not(.disableBevels):not(.dtm08):not(.factorio) :is(.mod-left-split, .mod-right-split) .workspace-tab-container .nav-header .nav-buttons-container .clickable-icon {
   height: calc(var(--sidebarDashboardHeight) - 6px);
 }
-body:not(.disableBevels):not(.dtm08):not(.leftAlignedLeftSidebarButtonDisable) .mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner {
+body:not(.disableBevels):not(.dtm08):not(.factorio):not(.leftAlignedLeftSidebarButtonDisable) .mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner {
   margin-right: 1px;
 }
-body:not(.disableBevels):not(.dtm08) .mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
   margin-left: 1px;
 }
-body:not(.disableBevels):not(.dtm08) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
   margin-right: calc(var(--handleSize) + 1px);
 }
-body:not(.disableBevels):not(.dtm08) .community-item.is-selected,
-body:not(.disableBevels):not(.dtm08) .community-item.is-selected:hover {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .community-item.is-selected,
+body:not(.disableBevels):not(.dtm08):not(.factorio) .community-item.is-selected:hover {
   border-color: var(--level3_a);
 }
-body:not(.disableBevels):not(.dtm08) .titlebar-button-container .titlebar-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio) .titlebar-button-container .titlebar-button {
   box-shadow: var(--bevelStyleButton);
 }
 
@@ -4796,16 +5121,53 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
 }
 
 body.dtm08 {
+  --color-base-00: var(--d8dG);
+  --color-base-05: var(--d8dE);
+  --color-base-10: var(--d8dD);
+  --color-base-20: var(--d8dB);
+  --color-base-25: var(--d8dA);
+  --color-base-30: var(--d8d8);
+  --color-base-35: var(--d8d7);
+  --color-base-40: var(--d8d5);
+  --color-base-50: var(--d8d3);
+}
+
+body.dtm08 {
   --text-on-accent: var(--textBrighter) !important;
   --bgGradient1: linear-gradient(0deg, rgba(29,32,37,1) 0%, rgba(8,8,8,1) 100%);
   --bgGradient2: linear-gradient(180deg, rgba(29,32,37,1) 0%, rgba(8,8,8,1) 100%);
   --levelLayer: #D3E2FF18;
   --settingsHeaderGradient: linear-gradient(90deg, #D3E2FF16 0%, rgba(0,0,0,0) 80%);
-  --disabledOverlay: linear-gradient(90deg, rgba(0,0,0,0) 75%, #00000022 100%);
-  --enabledOverlay: linear-gradient(90deg, rgba(0,0,0,0) 75%, #D3E2FF12 100%);
+  --disabledOverlay: linear-gradient(90deg, rgba(0,0,0,0) 75%, #00000088 100%);
+  --enabledOverlay: linear-gradient(90deg, rgba(0,0,0,0) 75%, #D3E2FF18 100%);
   --settingHeaderBG: url(data:image/jpeg;base64,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);
 }
 
+.dtm08 {
+  /* This needs to be variabled before it goes to public 
+  .titlebar-inner
+  {
+  	justify-content: space-between;
+  	.titlebar-button-container.mod-right
+  	{
+  		position: fixed;
+  		right: 0px;
+  		top: 0px;
+  		align-self: flex-end;
+  		&::before
+  		{
+  			left:-40px;
+  			z-index: -1;
+  			content: "";
+  			position: absolute;
+  			height: 60px;
+  			width: 160px;
+  			background: var(--bgGradient2);
+  		}
+  	}
+  }
+  */
+}
 .dtm08 .workspace-split {
   background-color: none;
   background: var(--bgGradient1);
@@ -4818,7 +5180,8 @@ body.dtm08 {
 .dtm08 .workspace-tab-header-container,
 .dtm08 .mod-top-right-space,
 .dtm08 .mod-top {
-  background: var(--bgGradient2);
+  background: linear-gradient(var(--d8dA), var(--d8dD) 50%, var(--d8dE) 50%, var(--d8dF));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1333333333), inset 0 2px rgba(255, 255, 255, 0.0666666667);
 }
 .dtm08 .workspace-leaf-content[data-mode=preview] .view-content {
   background: transparent;
@@ -4832,10 +5195,7 @@ body.dtm08 {
 
 .dtm08 .modal-container .prompt {
   background: linear-gradient(rgba(63, 67, 75, 0.8666666667), rgba(32, 35, 41, 0.8666666667));
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
   border: solid 1px #000;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333), 0 2px 10px 5px rgba(0, 0, 0, 0.7333333333);
 }
 .dtm08 .modal-container .prompt .prompt-input {
   background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
@@ -4992,4 +5352,58 @@ body.dtm08 {
 }
 .dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button {
   width: 41px;
+}
+.dtm08:not(.win7bar).is-frameless:not(.is-hidden-frameless, .is-fullscreen) .titlebar-inner {
+  background: linear-gradient(var(--d8dE), var(--d8d9));
+  box-shadow: inset 0 -1px var(--d8dA), inset 0 -2px var(--d8d8);
+}
+
+.factorio .workspace-tab-header-container-inner {
+  overflow: visible;
+}
+.factorio .workspace-leaf-content {
+  background-color: #313031;
+  padding: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 4px solid #2e2623;
+  background-color: #414040;
+  -o-border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAGYktHRAD+AP4A+5tyIA0AAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMMDCIUc1k9AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAV1JREFUOMutk8Fu4zAMRN/I2nRzWOx+VoHe9v//IV4nbWJZJPcgO3bS5tCiAgxJBjkczlD6+/Icv37/4Wm/p+sykkDi4YogIjCrjOczx389eegPSAn34Mduh1ICaGDv8qPt7kyl8HY6MvQH8nHoUZcxN3Y/90jpMZuZRYRTLmdeTyeOQ08eS2U4HChlYvf0hlLX2EiIFSiIBuJOuFHGkcvribFUsgdMHnC5UM1R133MZsMizKhTYfLAA7IkJKGU2qd1vwchHBxIMce03MwCMldu5wTprh2BPIGCuMvJa6n151WPDRNFA1oKsSmQ+Ib1LSCbdpr6itlKtRbuLV5cgtiAXK3bBIQjT02DG4v9Jm455+XShsibmD4r+WhO5tglN1dzUMUJJrM2sRu7b97NtaDhbng1qjl5qpViRoxbS/Xo6axaRCCahrmYUT0wj0+70iWRk8iTOV/IB8C8tfcfVY4Z65JAVxwAAAAASUVORK5CYII=) 8/4px repeat;
+     border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAGYktHRAD+AP4A+5tyIA0AAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMMDCIUc1k9AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAV1JREFUOMutk8Fu4zAMRN/I2nRzWOx+VoHe9v//IV4nbWJZJPcgO3bS5tCiAgxJBjkczlD6+/Icv37/4Wm/p+sykkDi4YogIjCrjOczx389eegPSAn34Mduh1ICaGDv8qPt7kyl8HY6MvQH8nHoUZcxN3Y/90jpMZuZRYRTLmdeTyeOQ08eS2U4HChlYvf0hlLX2EiIFSiIBuJOuFHGkcvribFUsgdMHnC5UM1R133MZsMizKhTYfLAA7IkJKGU2qd1vwchHBxIMce03MwCMldu5wTprh2BPIGCuMvJa6n151WPDRNFA1oKsSmQ+Ib1LSCbdpr6itlKtRbuLV5cgtiAXK3bBIQjT02DG4v9Jm455+XShsibmD4r+WhO5tglN1dzUMUJJrM2sRu7b97NtaDhbng1qjl5qpViRoxbS/Xo6axaRCCahrmYUT0wj0+70iWRk8iTOV/IB8C8tfcfVY4Z65JAVxwAAAAASUVORK5CYII=) 8/4px repeat;
+}
+.factorio .workspace-tab-header {
+  z-index: 1;
+  display: block;
+  padding: 10px 18px 10px 18px;
+  border-radius: 4px 4px 0 0;
+  font-weight: 600;
+  background-color: #8e8e8e;
+  color: #1d1c1d;
+  box-shadow: inset 0px 4px 1px -2px #c5c5c5, inset 0px 4px 1px -2px #888888, inset 0px -4px 1px -2px #2d2d2d, inset 4px 0px 1px -2px #7a7a7a, inset -4px 0px 1px -2px #372f2a;
+}
+.factorio .workspace-tab-header.is-active {
+  background-color: #313031;
+  box-shadow: inset 0px 4px 1px -2px #686665, inset 4px 0px 1px -2px #201815, inset -4px 0px 1px -2px #262220, 0px 6px 4px #313031, 0px 0px 4px #101010;
+}
+.factorio .nav-buttons-container {
+  -o-border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMLNBNXffN5AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAQtQTFRFAAAAAAAAMTAAYQABMQABAAAA/9y6AAAAAAAA/7F+SjAAMRgAMQABGQABAAAA/9nH/9m0MQ8AIQ8AAAAAAAAA/8GqGQsAAAAAAAAAAAAAOxwAMRMAJwkAFAkAMQ8AKQ8AEQABAAAAAAAAAAAA/+/pBwYA//fq//HkAAAAJQsAAAAAIQoABQQA//nwIgkADwQAAAAA//XsAAAAAAAAAAAAHQsA//rzAAAAAAAAAAAACgIAAAAAAAAADAUABgIAAAAAAAAAAAAAGQcADwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAcAAAAACgMAAAAAAAAAAAAACgIAAAAAAAAAAwIAAAAAdNLDhQAAAFh0Uk5TAAIFBQUFBwgJCgoKCwsMDg4QEBASFRUVGBkaGhoaHx8gICEiIyQlJiYqLi8vMjQ0NDY2Nzo+P0BBTE5PUVNTVFpcXmNjZG9wcXJzdHh5fYCChIuMl5utu+r6V5gAAAABYktHRFmasvQYAAABUklEQVR4nLXUyU7DMBAG4PHEaewsbWihUg9IIPH+T4QEEodKhZa0Wew0jo2SLlD74BM+WZpP8nj5TcA3yGWCdkXfCsTIFq3WvwIRYGqLA8BoyAg4jx9t8dEIMZBBUJ7P5itbrHf7QqhRIE4XD0tmC7n53B60HgSF+er+jtpCfX+td6CAAPIoW2YpM1pp3RsAEiBSJLIqN2Ur9FVESnbKnAShIaOtLaiQUvdD84gBMsaVLUhTdY3uBhFiHKaxsYWu5EEK3QMEyNmUpWgLVddV0XVHgEkY5mmSUFscK1FUoh1WiXia83RiC1nX+7LqFQAN0myWJOw/hL8P/1785+E/U/+9+O/W/z7cKF0F0CzOg7UDnt9WfdGUahRJ9v7iCKpen8r6JKKFigNHGNI3dNuqMVEkUtwRxAjaGn1KZUJg4nYKRzD1n2Q79egcbeJULgPP38MP9ZBIMci5WIsAAAAASUVORK5CYII=) 16/8px repeat;
+     border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMLNBNXffN5AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAQtQTFRFAAAAAAAAMTAAYQABMQABAAAA/9y6AAAAAAAA/7F+SjAAMRgAMQABGQABAAAA/9nH/9m0MQ8AIQ8AAAAAAAAA/8GqGQsAAAAAAAAAAAAAOxwAMRMAJwkAFAkAMQ8AKQ8AEQABAAAAAAAAAAAA/+/pBwYA//fq//HkAAAAJQsAAAAAIQoABQQA//nwIgkADwQAAAAA//XsAAAAAAAAAAAAHQsA//rzAAAAAAAAAAAACgIAAAAAAAAADAUABgIAAAAAAAAAAAAAGQcADwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAcAAAAACgMAAAAAAAAAAAAACgIAAAAAAAAAAwIAAAAAdNLDhQAAAFh0Uk5TAAIFBQUFBwgJCgoKCwsMDg4QEBASFRUVGBkaGhoaHx8gICEiIyQlJiYqLi8vMjQ0NDY2Nzo+P0BBTE5PUVNTVFpcXmNjZG9wcXJzdHh5fYCChIuMl5utu+r6V5gAAAABYktHRFmasvQYAAABUklEQVR4nLXUyU7DMBAG4PHEaewsbWihUg9IIPH+T4QEEodKhZa0Wew0jo2SLlD74BM+WZpP8nj5TcA3yGWCdkXfCsTIFq3WvwIRYGqLA8BoyAg4jx9t8dEIMZBBUJ7P5itbrHf7QqhRIE4XD0tmC7n53B60HgSF+er+jtpCfX+td6CAAPIoW2YpM1pp3RsAEiBSJLIqN2Ur9FVESnbKnAShIaOtLaiQUvdD84gBMsaVLUhTdY3uBhFiHKaxsYWu5EEK3QMEyNmUpWgLVddV0XVHgEkY5mmSUFscK1FUoh1WiXia83RiC1nX+7LqFQAN0myWJOw/hL8P/1785+E/U/+9+O/W/z7cKF0F0CzOg7UDnt9WfdGUahRJ9v7iCKpen8r6JKKFigNHGNI3dNuqMVEkUtwRxAjaGn1KZUJg4nYKRzD1n2Q79egcbeJULgPP38MP9ZBIMci5WIsAAAAASUVORK5CYII=) 16/8px repeat;
+  border-image-outset: 4px;
+  background-color: #242324;
+  box-shadow: none;
+}
+.factorio .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  background-color: transparent;
+}
+.factorio .node-insert-event {
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 4px solid #2e2623;
+  -o-border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMLNBNXffN5AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAQtQTFRFAAAAAAAAMTAAYQABMQABAAAA/9y6AAAAAAAA/7F+SjAAMRgAMQABGQABAAAA/9nH/9m0MQ8AIQ8AAAAAAAAA/8GqGQsAAAAAAAAAAAAAOxwAMRMAJwkAFAkAMQ8AKQ8AEQABAAAAAAAAAAAA/+/pBwYA//fq//HkAAAAJQsAAAAAIQoABQQA//nwIgkADwQAAAAA//XsAAAAAAAAAAAAHQsA//rzAAAAAAAAAAAACgIAAAAAAAAADAUABgIAAAAAAAAAAAAAGQcADwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAcAAAAACgMAAAAAAAAAAAAACgIAAAAAAAAAAwIAAAAAdNLDhQAAAFh0Uk5TAAIFBQUFBwgJCgoKCwsMDg4QEBASFRUVGBkaGhoaHx8gICEiIyQlJiYqLi8vMjQ0NDY2Nzo+P0BBTE5PUVNTVFpcXmNjZG9wcXJzdHh5fYCChIuMl5utu+r6V5gAAAABYktHRFmasvQYAAABUklEQVR4nLXUyU7DMBAG4PHEaewsbWihUg9IIPH+T4QEEodKhZa0Wew0jo2SLlD74BM+WZpP8nj5TcA3yGWCdkXfCsTIFq3WvwIRYGqLA8BoyAg4jx9t8dEIMZBBUJ7P5itbrHf7QqhRIE4XD0tmC7n53B60HgSF+er+jtpCfX+td6CAAPIoW2YpM1pp3RsAEiBSJLIqN2Ur9FVESnbKnAShIaOtLaiQUvdD84gBMsaVLUhTdY3uBhFiHKaxsYWu5EEK3QMEyNmUpWgLVddV0XVHgEkY5mmSUFscK1FUoh1WiXia83RiC1nX+7LqFQAN0myWJOw/hL8P/1785+E/U/+9+O/W/z7cKF0F0CzOg7UDnt9WfdGUahRJ9v7iCKpen8r6JKKFigNHGNI3dNuqMVEkUtwRxAjaGn1KZUJg4nYKRzD1n2Q79egcbeJULgPP38MP9ZBIMci5WIsAAAAASUVORK5CYII=) 16/8px repeat;
+     border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMLNBNXffN5AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAQtQTFRFAAAAAAAAMTAAYQABMQABAAAA/9y6AAAAAAAA/7F+SjAAMRgAMQABGQABAAAA/9nH/9m0MQ8AIQ8AAAAAAAAA/8GqGQsAAAAAAAAAAAAAOxwAMRMAJwkAFAkAMQ8AKQ8AEQABAAAAAAAAAAAA/+/pBwYA//fq//HkAAAAJQsAAAAAIQoABQQA//nwIgkADwQAAAAA//XsAAAAAAAAAAAAHQsA//rzAAAAAAAAAAAACgIAAAAAAAAADAUABgIAAAAAAAAAAAAAGQcADwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAcAAAAACgMAAAAAAAAAAAAACgIAAAAAAAAAAwIAAAAAdNLDhQAAAFh0Uk5TAAIFBQUFBwgJCgoKCwsMDg4QEBASFRUVGBkaGhoaHx8gICEiIyQlJiYqLi8vMjQ0NDY2Nzo+P0BBTE5PUVNTVFpcXmNjZG9wcXJzdHh5fYCChIuMl5utu+r6V5gAAAABYktHRFmasvQYAAABUklEQVR4nLXUyU7DMBAG4PHEaewsbWihUg9IIPH+T4QEEodKhZa0Wew0jo2SLlD74BM+WZpP8nj5TcA3yGWCdkXfCsTIFq3WvwIRYGqLA8BoyAg4jx9t8dEIMZBBUJ7P5itbrHf7QqhRIE4XD0tmC7n53B60HgSF+er+jtpCfX+td6CAAPIoW2YpM1pp3RsAEiBSJLIqN2Ur9FVESnbKnAShIaOtLaiQUvdD84gBMsaVLUhTdY3uBhFiHKaxsYWu5EEK3QMEyNmUpWgLVddV0XVHgEkY5mmSUFscK1FUoh1WiXia83RiC1nX+7LqFQAN0myWJOw/hL8P/1785+E/U/+9+O/W/z7cKF0F0CzOg7UDnt9WfdGUahRJ9v7iCKpen8r6JKKFigNHGNI3dNuqMVEkUtwRxAjaGn1KZUJg4nYKRzD1n2Q79egcbeJULgPP38MP9ZBIMci5WIsAAAAASUVORK5CYII=) 16/8px repeat;
+  border-image-outset: 4px;
+  background-color: #242324;
+  box-shadow: none;
 }/*# sourceMappingURL=theme.css.map */
