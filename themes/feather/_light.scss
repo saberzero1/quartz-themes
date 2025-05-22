@@ -31,6 +31,8 @@
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --titlebar-background-focused: var(--l2);
   --background-modifier-hover: #e2e5e9;
   --background-secondary-alt: var(--color-base-05);
@@ -39,7 +41,11 @@
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-highlight-bg: var(--text-highlight-bg-l);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
+  --text-faint: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 30%));
+  --text-formatted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 35%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --atom-gray-1: #383a42;
   --atom-gray-2: #383a42;
   --atom-red: #e75545;

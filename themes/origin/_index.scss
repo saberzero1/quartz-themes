@@ -329,8 +329,6 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   --text-on-accent: white !important;
   --modal-border-color: var(--background-modifier-border) !important;
   --collapse-icon-color-collapsed: var(--text-muted) !important;
@@ -515,6 +513,36 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-base-00: #202020;
+  --color-base-05: #1a1a1a;
+  --color-base-10: #000000;
+  --color-base-20: #161616;
+  --interactive-normal: #0c0c0c;
+  --input-shadow: var(--background-modifier-border) 0 0 0px 1px;
+  --background-secondary-alt: var(--color-base-10);
+  --color-blue-rgb: 68, 138, 255;
+  --color-blue: rgb(68, 138, 255);
+  --color-light-blue-rgb: 0, 176, 255;
+  --color-light-blue: rgb(0, 176, 255);
+  --color-cyan-rgb: 0, 184, 212;
+  --color-cyan: rgb(0, 184, 212);
+  --color-teal-rgb: 0, 191, 165;
+  --color-teal: rgb(0, 191, 165);
+  --color-dark-green-rgb: 0, 191, 165;
+  --color-dark-green: rgb(0, 191, 165);
+  --color-green-rgb: 100, 221, 23;
+  --color-green: rgb(100, 221, 23);
+  --color-orange-rgb: 255, 145, 0;
+  --color-orange: rgb(255, 145, 0);
+  --color-orange-red-rgb: 255, 82, 82;
+  --color-orange-red: rgb(255, 82, 82);
+  --color-red-rgb: 255, 23, 68;
+  --color-red: rgb(255, 23, 68);
+  --color-pink-rgb: 245, 0, 87;
+  --color-pink: rgb(245, 0, 87);
+  --color-purple-rgb: 124, 77, 255;
+  --color-purple: rgb(124, 77, 255);
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
@@ -578,17 +606,29 @@ html[saved-theme="light"] {
   --color-base-60: #919191;
   --color-base-70: #888888;
   --color-base-100: #2e3338;
-  --color-accent: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 25%),
-    calc(var(--accent-l) - 4%)
-  );
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) - 27%),
-    calc(var(--accent-l) - 6%)
-  );
   --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
+  --color-blue-rgb: 68, 138, 255;
+  --color-blue: rgb(68, 138, 255);
+  --color-light-blue-rgb: 0, 176, 255;
+  --color-light-blue: rgb(0, 176, 255);
+  --color-cyan-rgb: 0, 184, 212;
+  --color-cyan: rgb(0, 184, 212);
+  --color-teal-rgb: 0, 191, 165;
+  --color-teal: rgb(0, 191, 165);
+  --color-dark-green-rgb: 0, 191, 165;
+  --color-dark-green: rgb(0, 191, 165);
+  --color-green-rgb: 100, 221, 23;
+  --color-green: rgb(100, 221, 23);
+  --color-orange-rgb: 255, 145, 0;
+  --color-orange: rgb(255, 145, 0);
+  --color-orange-red-rgb: 255, 82, 82;
+  --color-orange-red: rgb(255, 82, 82);
+  --color-red-rgb: 255, 23, 68;
+  --color-red: rgb(255, 23, 68);
+  --color-pink-rgb: 245, 0, 87;
+  --color-pink: rgb(245, 0, 87);
+  --color-purple-rgb: 124, 77, 255;
+  --color-purple: rgb(124, 77, 255);
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

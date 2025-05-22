@@ -1,13 +1,15 @@
 :root[saved-theme="light"] {
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
   --OT-text-selection-color: var(--text-normal);
+  --floating-toc-font-color: var(--text-normal) !important;
   --floating-toc-hover-color: var(--OT-color-on-accent-1) !important;
   --floating-toc-font-size: var(--font-ui-small) !important;
   --floating-toc-background-color: var(--background-secondary) !important;
   --floating-toc-header-background-color: var(--background-secondary) !important;
-  --floating-toc-highlight-color: var(--color-accent-2) !important;
   --floating-toc-highlight-color-rgb: 255, 128, 0 !important;
   --floating-toc-line-color: var(--OT-color-on-accent-2) !important;
   --floating-toc-line-height: 1.2rem !important;
+  --floating-toc-line-width: 26rem !important;
+  --actual-toc-width: 26rem !important;
   --floating-toc-response-time: 0s !important;
 }

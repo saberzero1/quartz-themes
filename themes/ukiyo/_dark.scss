@@ -1,5 +1,6 @@
 :root[saved-theme="dark"] {
   --color-accent-1: var(--color-accent);
+  --titlebar-background-focused: var(--color-base-20);
   --color-base-00: #372d29;
   --color-base-05: #413632;
   --color-base-10: #2b2723;
@@ -20,4 +21,5 @@
   --color-italic: #e77a59;
   --text-highlight-bg: #926b22e6;
   --heading-formatting-color: #c72626;
+  --in-between-background: #2e2420;
 }

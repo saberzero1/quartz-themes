@@ -59,14 +59,18 @@
   --interactive-normal: #1f2329;
   /*buttons colour on hover ( with cursor )*/
   --interactive-hover: #e5556197;
-  --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) + 5%), calc(var(--accent-l) - 10%));
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) - 10%)
+  );
 
   /*scrollbar colour on hover ( with cursor )*/
   --scrollbar-active-thumb-bg: #4fa6ed;
   --scrollbar-bg: #ffffff0d;
   /*scrollbar colour*/
   --scrollbar-thumb-bg: #20242f;
-  
+
   /*for things like border colour in status bar*/
   --panel-border-color: #535965;
 
@@ -84,7 +88,12 @@
   --blue: #4fa6ed;
   --yellow: #e5c07b;
 
-  --background-modifier-hover: hsla(var(--accent-h), calc(var(--accent-s) - 35%), var(--accent-l), 0.06);
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 35%),
+    var(--accent-l),
+    0.06
+  );
   /*borders dividing things like editor and file explorer*/
   --divider-color-hover: #4fa6ed;
 }
@@ -153,7 +162,11 @@
   /*buttons colour on hover ( with cursor )*/
   --interactive-hover: #e5556197;
   --interactive-accent-rgb: 21, 146, 255;
-  --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 4%));
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) - 4%)
+  );
 
   /*scrollbar colour on hover ( with cursor )*/
   --scrollbar-active-thumb-bg: #4fa6ed;
@@ -183,8 +196,9 @@
   --divider-color-hover: #4fa6ed;
 }
 
-.theme-dark, .theme-light {
-    /*left ribbon color*/
+.theme-dark,
+.theme-light {
+  /*left ribbon color*/
   --ribbon-background: var(--background-secondary-alt);
   --drag-ghost-background: var(--background-secondary-alt);
   /*background colour of message box ( updates and more )*/
@@ -265,14 +279,18 @@
   right: -0.5px;
   width: 1px;
   background-color: var(--tab-divider-color);
-  content: '';
+  content: "";
   height: 20px;
 }
 
-.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::after,
-.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::before,
-.workspace .mod-root  .workspace-tab-header:first-child .workspace-tab-header-inner::after,
-.workspace .mod-root  .workspace-tab-header.is-active + .workspace-tab-header .workspace-tab-header-inner::after {
+.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner::after,
+.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner::before,
+.workspace .mod-root .workspace-tab-header:first-child .workspace-tab-header-inner::after,
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  + .workspace-tab-header
+  .workspace-tab-header-inner::after {
   opacity: 0;
 }
 
@@ -301,7 +319,7 @@ mjx-container {
 }
 
 /*light theme code block*/
-.theme-light :not(pre)>code,
+.theme-light :not(pre) > code,
 .theme-light pre {
   /*background colour of code block in preview mode*/
   background: var(--background-primary);
@@ -345,7 +363,8 @@ mjx-container {
 }
 
 /*control the padding for folders in file explorer*/
-.nav-file, .nav-folder {
+.nav-file,
+.nav-folder {
   padding: 2px 2px;
 }
 
@@ -387,7 +406,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 }
 
 /*code related text formatting*/
-code[class*='language-'], pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left !important;
   white-space: pre !important;
   word-spacing: normal !important;
@@ -399,73 +419,110 @@ code[class*='language-'], pre[class*='language-'] {
 }
 
 /*Code blocks*/
-pre[class*='language-'] {
+pre[class*="language-"] {
   /*controls the padding for code blocks ( horizontally ) in preview mode*/
   padding: 1em !important;
   /*controls the margin for code blocks in preview mode*/
-  margin: .5em 0 !important;
+  margin: 0.5em 0 !important;
   /*shows scrollbar if the code "overflows"*/
   overflow: auto !important;
 }
 
 /* Inline code */
-:not(pre)>code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   /*controls the padding for code in preview mode*/
-  padding: .1em !important;
-  border-radius: .3em !important;
+  padding: 0.1em !important;
+  border-radius: 0.3em !important;
   white-space: normal !important;
 }
 
-.token.comment, .token.prolog, .token.doctype, .token.cdata,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
 .HyperMD-codeblock .cm-comment {
   color: var(--gray-1) !important;
 }
 
 .token.punctuation,
-.HyperMD-codeblock .cm-hmd-codeblock, .HyperMD-codeblock .cm-bracket {
+.HyperMD-codeblock .cm-hmd-codeblock,
+.HyperMD-codeblock .cm-bracket {
   color: var(--gray-2) !important;
 }
 
-.token.selector, .token.tag,
-.HyperMD-codeblock .cm-tag, .HyperMD-codeblock .cm-property, .HyperMD-codeblock .cm-meta, .HyperMD-codeblock .cm-qualifier, .HyperMD-codeblock .cm-header, .HyperMD-codeblock .cm-quote, .HyperMD-codeblock .cm-hr, .HyperMD-codeblock .cm-link {
+.token.selector,
+.token.tag,
+.HyperMD-codeblock .cm-tag,
+.HyperMD-codeblock .cm-property,
+.HyperMD-codeblock .cm-meta,
+.HyperMD-codeblock .cm-qualifier,
+.HyperMD-codeblock .cm-header,
+.HyperMD-codeblock .cm-quote,
+.HyperMD-codeblock .cm-hr,
+.HyperMD-codeblock .cm-link {
   color: var(--red) !important;
 }
 
-.token.property, .token.boolean, .token.number, .token.constant, .token.symbol, .token.attr-name, .token.deleted,
-.HyperMD-codeblock .cm-number, .HyperMD-codeblock .cm-atom, .HyperMD-codeblock .cm-attribute {
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted,
+.HyperMD-codeblock .cm-number,
+.HyperMD-codeblock .cm-atom,
+.HyperMD-codeblock .cm-attribute {
   color: var(--orange) !important;
 }
 
-.token.string, .token.char, .token.attr-value, .token.builtin, .token.inserted,
-.HyperMD-codeblock .cm-string, .HyperMD-codeblock .cm-builtin {
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted,
+.HyperMD-codeblock .cm-string,
+.HyperMD-codeblock .cm-builtin {
   color: var(--green) !important;
 }
 
-.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string,
-.HyperMD-codeblock .cm-string-2, .HyperMD-codeblock .cm-operator {
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.HyperMD-codeblock .cm-string-2,
+.HyperMD-codeblock .cm-operator {
   color: var(--aqua) !important;
 }
 
-.token.atrule, .token.keyword,
+.token.atrule,
+.token.keyword,
 .HyperMD-codeblock .cm-keyword {
   color: var(--purple) !important;
 }
 
-.token.function, .token.macro.property,
-.HyperMD-codeblock .cm-def, .HyperMD-codeblock .cm-variable {
+.token.function,
+.token.macro.property,
+.HyperMD-codeblock .cm-def,
+.HyperMD-codeblock .cm-variable {
   color: var(--blue) !important;
 }
 
 .token.class-name,
-.HyperMD-codeblock .cm-variable-2, .HyperMD-codeblock .cm-variable-3 {
+.HyperMD-codeblock .cm-variable-2,
+.HyperMD-codeblock .cm-variable-3 {
   color: var(--yellow) !important;
 }
 
-.token.regex, .token.important, .token.variable {
+.token.regex,
+.token.important,
+.token.variable {
   color: var(--purple) !important;
 }
 
-.token.important, .token.bold {
+.token.important,
+.token.bold {
   font-weight: bold !important;
 }
 
@@ -510,14 +567,18 @@ pre[class*='language-'] {
 
 /*change the color of bold*/
 /*remove `strong, ` to only work in source view*/
-strong, .cm-s-obsidian span.cm-formatting-strong, .cm-s-obsidian span.cm-strong {
+strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
   /* color: #4fa6ed; */
   color: #8ebd6b;
 }
 
 /*change the color of italicised text*/
 /*remove `em, ` to only work in source view*/
-em, .cm-s-obsidian span.cm-formatting-em, .cm-s-obsidian span.cm-em {
+em,
+.cm-s-obsidian span.cm-formatting-em,
+.cm-s-obsidian span.cm-em {
   color: #e55561;
 }
 
@@ -529,7 +590,7 @@ em, .cm-s-obsidian span.cm-formatting-em, .cm-s-obsidian span.cm-em {
 
 /*center all tables in preview mode... obviously*/
 .markdown-preview-view table {
-    margin: 0 auto;
-    /*create some spaces between other objects*/
-    padding: 15px;
+  margin: 0 auto;
+  /*create some spaces between other objects*/
+  padding: 15px;
 }

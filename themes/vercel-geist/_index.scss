@@ -339,12 +339,6 @@
   --font-size-h4: 18px;
   --font-size-h5: 17px;
   --font-size-h6: 16px;
-  --font-family-editor: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-preview: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono",
-    Menlo, Courier, monospace;
   --vercel-gray-100: #ffffff;
   --vercel-gray-200: #eaeaea;
   --vercel-gray-300: #999999;
@@ -365,7 +359,10 @@
   --vercel-blue-900: #00153d;
 
   --tab-container-background: #000000;
+  --tab-container-background: #000000;
   --titlebar-background: var(--background-2);
+  --titlebar-background: var(--background-2);
+  --tab-container-background: var(--background-2);
   --tab-container-background: var(--background-2);
 
   --titleFont: var(--font-text) !important;

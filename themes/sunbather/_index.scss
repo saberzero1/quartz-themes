@@ -444,6 +444,8 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --color-accent: #d75f87;
+  --text-accent: #d75f87;
   --background-primary: #050505;
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-secondary);
@@ -519,6 +521,8 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
+  --color-accent: #d75f87;
+  --text-accent: #d75f87;
   --background-primary: #ffffff;
   --background-secondary: var(--background-primary);
   --background-secondary-alt: #c6c6c6;

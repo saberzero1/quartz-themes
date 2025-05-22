@@ -1,2 +1,29 @@
 :root:root {
+  --background-primary: #262335;
+  --background-primary-alt: #241b2f;
+  --background-secondary: #241b2f;
+  --background-secondary-alt: #262335;
+  --background-modifier-border: #372b3d;
+  --background-modifier-form-field: #372b3d;
+  --background-modifier-box-shadow: none;
+  --background-modifier-success: #7ee787;
+  --background-modifier-error: #8b0000;
+  --background-modifier-error-hover: #580000;
+  --background-modifier-cover: #171520d2;
+  --text-accent: #f97e72;
+  --text-accent-hover: #ff7edb;
+  --text-normal: #fff;
+  --text-muted: #a7a4ac;
+  --text-faint: #706a76;
+  --text-error: red;
+  --text-error-hover: #ff0;
+  --text-highlight-bg: #d18616bb;
+  --text-highlight-bg-active: #d1861655;
+  --text-selection: #ffffff20;
+  --text-on-accent: #fff;
+  --interactive-normal: #614e83;
+  --interactive-hover: #745d9e;
+  --interactive-accent: #f97e72;
+  --interactive-accent-hover: #ff7edb;
+  --interactive-success: #7ee787;
 }

@@ -333,6 +333,7 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --google-font-color-notocoloremoji: colrv1;
   --font-main: "Nunito Sans";
   --font-emoji: "Noto Color Emoji";
   --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
@@ -341,6 +342,7 @@
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --file-line-width: 900px;
+  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
   --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
   --vault-name-font-size: var(--h3-size);
   --vault-name-font-weight: var(--h2-weight);
@@ -385,6 +387,7 @@
   --img-position-y: 50%;
   --img-position-x: 50%;
   --img-bg-size: cover;
+  --custom-line-height: 2em;
   --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
   --heading-font-2: var(--heading-font), var(--font-default);
   --h1-align: center;
@@ -427,11 +430,21 @@
   --h4-color-custom: var(--color-pink);
   --h5-color-custom: var(--color-red);
   --h6-color-custom: var(--color-orange);
+  --list-bullet-size: 0.45em;
+  --list-marker-color: var(--color-cyan);
+  --list-marker-color-hover: var(--color-yellow);
+  --checkbox-border-color: var(--color-red);
+  --indentation-guide-color: transparent;
   --checkbox-size: 18px;
   --checklist-done-decoration: none;
   --checkbox-color: transparent;
   --checkbox-radius: var(--radius-m);
   --checkbox-border-color: var(--color-red);
+  --inline-title-size: 2.5em;
+  --inline-title-color: var(--text-normal);
+  --icon-emoji: "Noto Color Emoji";
+  --icon-shadow: var(--shadow-ui) inset, var(--shadow-ui);
+  --icon-background: var(--background-secondary-alt);
   --callout-bug: var(--color-pink-rgb);
   --callout-summary: var(--color-green-rgb);
   --callout-tip: var(--color-yellow-rgb);
@@ -566,6 +579,57 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
+  --vault-icon: "💎";
+  --vault-font: "Noto Emoji";
+  --accent-h: 181 !important;
+  --accent-s: 100% !important;
+  --accent-l: 35% !important;
+  --panel-child: var(--background-primary-alt);
+  --doc-bg: hsl(207, 24%, 22%);
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 255, 77, 58;
+  --color-red: #ff4d3a;
+  --color-green-rgb: 125, 207, 43;
+  --color-green: #7dcf2b;
+  --color-orange-rgb: 246, 156, 0;
+  --color-orange: #f69c00;
+  --color-yellow-rgb: 232, 201, 0;
+  --color-yellow: #e8c900;
+  --color-cyan-rgb: 0, 206, 203;
+  --color-cyan: #00cecb;
+  --color-blue-rgb: 0, 155, 227;
+  --color-blue: #009be3;
+  --color-purple-rgb: 180, 90, 245;
+  --color-purple: #b45af5;
+  --color-pink-rgb: 230, 106, 180;
+  --color-pink: #e66ab4;
+  --color-base-00: hsla(216, 16%, 13%, var(--page-transparency));
+  --color-base-10: hsl(216, 17%, 14%);
+  --color-base-20: hsl(216, 19%, 16%);
+  --color-base-25: hsl(216, 20%, 20%);
+  --color-base-30: hsl(218, 18%, 15%);
+  --color-base-35: hsl(218, 19%, 27%);
+  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-50: hsl(219, 13%, 51%);
+  --color-base-60: hsl(219, 16%, 59%);
+  --color-base-70: hsl(220, 17%, 66%);
+  --color-base-100: #c8d4e6;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-3: hsl(calc(var(--accent-h) + 35), var(--accent-s), calc(var(--accent-l) + 12%));
+  --color-accent-1: hsl(calc(var(--accent-h) - 4), var(--accent-s), calc(var(--accent-l) - 2%));
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  --background-modifier-border: var(--color-base-25);
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
   --highlight-text: white;
@@ -662,11 +726,6 @@ html[saved-theme="light"] {
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --color-accent-3: hsl(calc(var(--accent-h) + 35), var(--accent-s), calc(var(--accent-l) + 12%));
   --color-accent-1: hsl(calc(var(--accent-h) - 4), var(--accent-s), calc(var(--accent-l) - 2%));
-  --color-accent-2: hsl(
-    calc(var(--accent-h) + 2),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) + 4%)
-  );
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   --highlight-text: var(--text-normal);
 

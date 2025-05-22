@@ -426,10 +426,7 @@
   --list-indent-spacing: 0.125em;
   --list-ul-bullet-spacing: 0.0805em;
   --list-ol-bullet-width: 1.75em;
-  --list-checkbox-margin-left: calc(var(--checkbox-size) * 0.385);
-  --list-checkbox-margin-right: calc(var(--checkbox-size) * 0.685);
   --list-spacing: 0;
-  --list-indent: calc(1.046875em + 4 * var(--list-indent-spacing));
   --table-header-background: var(--color-base-20);
 
   --titleFont: var(--font-text) !important;

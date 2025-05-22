@@ -334,6 +334,7 @@
   --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
   --default-border-radius: 4px;
   --pop-callout-width: 20px;
+  --pop-callout-slide-out-duration: 700ms;
 
   --font-default: "CMU Typewriter Text";
   --font-monospace-default: "JetBrains Mono";
@@ -347,6 +348,7 @@
   --ribbon-width: 40px;
   --ribbon-padding: 0px;
   --clickable-icon-radius: 0px;
+  --list-indent: 1.4em;
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
@@ -463,6 +465,7 @@ html[saved-theme="dark"] {
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
   --color-accent-1: var(--color-accent);
+  --titlebar-background-focused: var(--color-base-20);
   --color-base-00: #372d29;
   --color-base-05: #413632;
   --color-base-10: #2b2723;
@@ -483,6 +486,7 @@ html[saved-theme="dark"] {
   --color-italic: #e77a59;
   --text-highlight-bg: #926b22e6;
   --heading-formatting-color: #c72626;
+  --in-between-background: #2e2420;
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -537,6 +541,7 @@ html[saved-theme="light"] {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
   --color-accent-1: var(--color-accent);
+  --titlebar-background-focused: var(--color-base-20);
   --color-base-00: #e1c4a6;
   --color-base-05: #cbaa87;
   --code-background: var(--color-base-05);
@@ -574,6 +579,7 @@ html[saved-theme="light"] {
   --color-purple-rgb: 95, 56, 214;
   --color-purple: #5f38d6;
   --color-pink-rgb: 191, 32, 109;
+  --color-pink: #bf206d;
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

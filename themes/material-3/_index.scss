@@ -345,15 +345,18 @@
   --md-extended-purple-seed: rgb(120, 82, 238);
   --md-extended-purple-value: rgb(122, 81, 237);
   --md-extended-pink-seed: rgb(213, 57, 132);
+  --md-extended-pink-value: rgb(203, 59, 172);
   --md-sys-shape-corner-extra-large: 28px;
   --md-sys-shape-corner-extra-small: 4px;
   --md-sys-shape-corner-full: 9999px;
   --md-sys-shape-corner-large: 16px;
   --md-sys-shape-corner-medium: 12px;
   --md-sys-shape-corner-none: 0px;
+  --md-sys-shape-corner-small: 8px;
   --md-sys-state-dragged-state-layer-opacity: 0.16;
   --md-sys-state-focus-state-layer-opacity: 0.12;
   --md-sys-state-hover-state-layer-opacity: 0.08;
+  --md-sys-state-pressed-state-layer-opacity: 0.12;
   --md-sys-motion-duration-extra-long1: 700ms;
   --md-sys-motion-duration-extra-long2: 800ms;
   --md-sys-motion-duration-extra-long3: 900ms;
@@ -379,6 +382,7 @@
   --md-sys-motion-easing-linear: cubic-bezier(0, 0, 1, 1);
   --md-sys-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
   --md-sys-motion-easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --md-sys-motion-easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
 
   --checkbox-radius: 2px;
   --dropdown-background-position: right 16px top 50%, 0 0;
@@ -393,6 +397,7 @@
   --radius-l: 16px;
   --slider-thumb-border-width: 0px;
   --slider-thumb-radius: 9999px;
+  --tab-radius-active: 4px 4px 0px 0px;
   --color-accent: #cebdff;
   --color-accent-hsl: 255.4545454545deg, 100%, 87.0588235294%;
   --background-primary: #14121b;
@@ -432,9 +437,16 @@
   --text-on-accent: #390093;
   --text-faint: #cbc3d8;
   --text-muted: #cbc3d8;
+  --background-modifier-cover: rgba(from #000000 r g b / 0.32);
   --text-color: #cebdff;
   --text-color: #390093;
   --text-color: #690005;
+  --switch-track-height: 32px;
+  --switch-track-width: 52px;
+  --switch-track-outline-color: #948ea1;
+  --switch-track-outline-width: 2px;
+  --switch-track-selected-color: #cebdff;
+  --switch-track-unselected-color: #36333e;
   --switch-track-height: 32px;
   --switch-track-width: 52px;
   --switch-track-outline-color: #948ea1;
@@ -449,18 +461,21 @@
   --switch-handle-pressed-width: 28px;
   --switch-handle-unselected-color: #948ea1;
   --switch-handle-selected-color: #390093;
-  --switch-handle-unselected-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-unselected-width) / 2)
-  );
-  --switch-handle-selected-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-selected-width) / 2)
-  );
-  --switch-handle-pressed-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-pressed-width) / 2)
-  );
+  --switch-handle-unselected-height: 16px;
+  --switch-handle-selected-height: 24px;
+  --switch-handle-pressed-height: 28px;
+  --switch-handle-unselected-width: 16px;
+  --switch-handle-selected-width: 24px;
+  --switch-handle-pressed-width: 28px;
+  --switch-handle-unselected-color: #948ea1;
+  --switch-handle-selected-color: #390093;
+  --state-layer-color: rgba(from #e7e0ee r g b / 0.08);
   --state-layer-color: rgba(from #e7e0ee r g b / 0.08);
   --state-layer-color: rgba(from #e7e0ee r g b / 0.12);
+  --state-layer-color: rgba(from #e7e0ee r g b / 0.12);
   --state-layer-color: rgba(from #cebdff r g b / 0.08);
+  --state-layer-color: rgba(from #cebdff r g b / 0.08);
+  --state-layer-color: rgba(from #cebdff r g b / 0.12);
   --state-layer-color: rgba(from #cebdff r g b / 0.12);
   --state-layer-base-color: #cbc3d8;
   --state-layer-size: calc(40 * var(--icon-size) / 24);
@@ -470,46 +485,23 @@
   --md-ripple-pressed-color: #cbc3d8;
   --md-ripple-pressed-opacity: 0.12;
   --md-ripple-shape: var(--md-sys-shape-corner-full);
+  --md-ripple-width: 24px;
   --md-ripple-height: 32px;
   --md-ripple-hover-color: #cbc3d8;
   --md-ripple-hover-opacity: 0.08;
   --md-ripple-pressed-color: #cbc3d8;
   --md-ripple-pressed-opacity: 0.12;
+  --md-ripple-shape: var(--md-sys-shape-corner-small, 8px);
   --md-ripple-height: var(--md-icon-button-state-layer-height, 40px);
-  --md-ripple-hover-color: var(
-    --md-icon-button-hover-state-layer-color,
-    var(--md-sys-color-on-surface-variant, #49454f)
-  );
   --md-ripple-hover-opacity: var(--md-icon-button-hover-state-layer-opacity, 0.08);
-  --md-ripple-pressed-color: var(
-    --md-icon-button-pressed-state-layer-color,
-    var(--md-sys-color-on-surface-variant, #49454f)
-  );
   --md-ripple-pressed-opacity: var(--md-icon-button-pressed-state-layer-opacity, 0.12);
-  --md-ripple-shape: var(
-    --md-icon-button-state-layer-shape,
-    var(--md-sys-shape-corner-full, 9999px)
-  );
-  --md-ripple-hover-color: var(
-    --md-list-item-hover-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
+  --md-ripple-width: var(--md-icon-button-state-layer-width, 40px);
   --md-ripple-hover-opacity: 0;
-  --md-ripple-pressed-color: var(
-    --md-list-item-pressed-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
   --md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12);
-  --md-ripple-hover-color: var(
-    --md-list-item-hover-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
+  --md-ripple-shape: var(--md-sys-shape-corner-none);
   --md-ripple-hover-opacity: var(--md-list-item-hover-state-layer-opacity, 0.08);
-  --md-ripple-pressed-color: var(
-    --md-list-item-pressed-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
   --md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12);
+  --md-ripple-shape: var(--md-sys-shape-corner-none);
   --color-accent: #6b36e2;
   --color-accent-hsl: 258.488372093deg, 74.7826086957%, 54.9019607843%;
   --background-primary: #fdf7ff;
@@ -549,9 +541,16 @@
   --text-on-accent: #ffffff;
   --text-faint: #494455;
   --text-muted: #494455;
+  --background-modifier-cover: rgba(from #000000 r g b / 0.32);
   --text-color: #6b36e2;
   --text-color: #ffffff;
   --text-color: #ffffff;
+  --switch-track-height: 32px;
+  --switch-track-width: 52px;
+  --switch-track-outline-color: #7a7487;
+  --switch-track-outline-width: 2px;
+  --switch-track-selected-color: #6b36e2;
+  --switch-track-unselected-color: #e7e0ee;
   --switch-track-height: 32px;
   --switch-track-width: 52px;
   --switch-track-outline-color: #7a7487;
@@ -566,18 +565,21 @@
   --switch-handle-pressed-width: 28px;
   --switch-handle-unselected-color: #7a7487;
   --switch-handle-selected-color: #ffffff;
-  --switch-handle-unselected-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-unselected-width) / 2)
-  );
-  --switch-handle-selected-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-selected-width) / 2)
-  );
-  --switch-handle-pressed-outline-width: calc(
-    (40px / 2) - (var(--switch-handle-pressed-width) / 2)
-  );
+  --switch-handle-unselected-height: 16px;
+  --switch-handle-selected-height: 24px;
+  --switch-handle-pressed-height: 28px;
+  --switch-handle-unselected-width: 16px;
+  --switch-handle-selected-width: 24px;
+  --switch-handle-pressed-width: 28px;
+  --switch-handle-unselected-color: #7a7487;
+  --switch-handle-selected-color: #ffffff;
+  --state-layer-color: rgba(from #1d1a24 r g b / 0.08);
   --state-layer-color: rgba(from #1d1a24 r g b / 0.08);
   --state-layer-color: rgba(from #1d1a24 r g b / 0.12);
+  --state-layer-color: rgba(from #1d1a24 r g b / 0.12);
   --state-layer-color: rgba(from #6b36e2 r g b / 0.08);
+  --state-layer-color: rgba(from #6b36e2 r g b / 0.08);
+  --state-layer-color: rgba(from #6b36e2 r g b / 0.12);
   --state-layer-color: rgba(from #6b36e2 r g b / 0.12);
   --state-layer-base-color: #494455;
   --state-layer-size: calc(40 * var(--icon-size) / 24);
@@ -587,46 +589,23 @@
   --md-ripple-pressed-color: #494455;
   --md-ripple-pressed-opacity: 0.12;
   --md-ripple-shape: var(--md-sys-shape-corner-full);
+  --md-ripple-width: 24px;
   --md-ripple-height: 32px;
   --md-ripple-hover-color: #494455;
   --md-ripple-hover-opacity: 0.08;
   --md-ripple-pressed-color: #494455;
   --md-ripple-pressed-opacity: 0.12;
+  --md-ripple-shape: var(--md-sys-shape-corner-small, 8px);
   --md-ripple-height: var(--md-icon-button-state-layer-height, 40px);
-  --md-ripple-hover-color: var(
-    --md-icon-button-hover-state-layer-color,
-    var(--md-sys-color-on-surface-variant, #49454f)
-  );
   --md-ripple-hover-opacity: var(--md-icon-button-hover-state-layer-opacity, 0.08);
-  --md-ripple-pressed-color: var(
-    --md-icon-button-pressed-state-layer-color,
-    var(--md-sys-color-on-surface-variant, #49454f)
-  );
   --md-ripple-pressed-opacity: var(--md-icon-button-pressed-state-layer-opacity, 0.12);
-  --md-ripple-shape: var(
-    --md-icon-button-state-layer-shape,
-    var(--md-sys-shape-corner-full, 9999px)
-  );
-  --md-ripple-hover-color: var(
-    --md-list-item-hover-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
+  --md-ripple-width: var(--md-icon-button-state-layer-width, 40px);
   --md-ripple-hover-opacity: 0;
-  --md-ripple-pressed-color: var(
-    --md-list-item-pressed-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
   --md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12);
-  --md-ripple-hover-color: var(
-    --md-list-item-hover-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
+  --md-ripple-shape: var(--md-sys-shape-corner-none);
   --md-ripple-hover-opacity: var(--md-list-item-hover-state-layer-opacity, 0.08);
-  --md-ripple-pressed-color: var(
-    --md-list-item-pressed-state-layer-color,
-    var(--md-sys-color-on-surface, #1d1b20)
-  );
   --md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12);
+  --md-ripple-shape: var(--md-sys-shape-corner-none);
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
@@ -823,6 +802,7 @@ html[saved-theme="dark"] {
   --md-extended-pink-color: rgb(255, 173, 227);
   --md-extended-pink-on-color: rgb(95, 0, 79);
   --md-extended-pink-color-container: rgb(193, 49, 163);
+  --md-extended-pink-on-color-container: rgb(255, 255, 255);
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -957,6 +937,7 @@ html[saved-theme="light"] {
   --md-extended-pink-color: rgb(150, 0, 126);
   --md-extended-pink-on-color: rgb(255, 255, 255);
   --md-extended-pink-color-container: rgb(198, 55, 168);
+  --md-extended-pink-on-color-container: rgb(255, 255, 255);
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

@@ -106,6 +106,8 @@
   --alpha-500: 0.5;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --background-primary: var(--color-ash-200);
   --background-primary-low: var(--color-ash-100);
   --background-primary-alt: var(--color-ash-500);

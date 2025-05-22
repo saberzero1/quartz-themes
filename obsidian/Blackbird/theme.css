@@ -1,43 +1,43 @@
 /* 1. Colours! Overriding both themes */
 .theme-dark {
-    --color-1: #FDF7CD;
-    --color-2: #00ECD8;
-    --color-3: #E92741;
-    --color-4: #3EC840;
-    --color-5: #E1DC3F;
-    --color-6: #418FDD;
-    --color-7: #FF9900;
+  --color-1: #fdf7cd;
+  --color-2: #00ecd8;
+  --color-3: #e92741;
+  --color-4: #3ec840;
+  --color-5: #e1dc3f;
+  --color-6: #418fdd;
+  --color-7: #ff9900;
 
-    --background-primary: #000000;
-    --background-primary-alt: #000000;
-    --background-secondary: #000000;
-    --background-secondary-alt: #000000;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
 
-    --text-normal: var(--color-1);
-    --text-muted: var(--color-5);
-    --text-accent: var(--color-3);
-    --text-on-accent: var(--color-1);
+  --text-normal: var(--color-1);
+  --text-muted: var(--color-5);
+  --text-accent: var(--color-3);
+  --text-on-accent: var(--color-1);
 
-      /* obsidian dark defaults (overriding for light) */
-    --text-selection: rgba(0, 122, 255, 0.2);
-    --text-on-accent: rgba(0, 0, 0, 0.8);
-    --interactive-accent-rgb: 72, 54, 153;
-    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-    --scrollbar-bg: rgba(255, 255, 255, 0.05);
-    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  /* obsidian dark defaults (overriding for light) */
+  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --interactive-accent-rgb: 72, 54, 153;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
 }
 
 .theme-light {
-    --color-1: #020832;
-    --color-2: #0066ff;
-    --color-3: #020832;
-    --color-4: #c137bf;
-    --color-5: #020832;
-    --color-6: #be7022;
-    --color-7: #0066ff;
+  --color-1: #020832;
+  --color-2: #0066ff;
+  --color-3: #020832;
+  --color-4: #c137bf;
+  --color-5: #020832;
+  --color-6: #be7022;
+  --color-7: #0066ff;
 
-    --text-accent: var(--color-3);
-    --text-on-accent: var(--color-1);
+  --text-accent: var(--color-3);
+  --text-on-accent: var(--color-1);
 }
 
 /* 2. UI */
@@ -60,7 +60,6 @@
   color: var(--text-normal);
 }
 
-
 /* 3.1. Headers */
 .cm-s-obsidian .cm-header,
 h1,
@@ -79,19 +78,19 @@ h6 {
 }
 
 /* 3.3. External links */
-.cm-s-obsidian span.cm-link ,
+.cm-s-obsidian span.cm-link,
 a {
   color: var(--color-5);
 }
 
-.cm-s-obsidian .cm-formatting-link+.cm-formatting-link-string+.cm-url,
+.cm-s-obsidian .cm-formatting-link + .cm-formatting-link-string + .cm-url,
 .cm-s-obsidian .cm-string.cm-url,
 .cm-s-obsidian span.cm-url {
   color: var(--color-1);
 }
 
 .cm-s-obsidian .cm-string.cm-url.cm-hmd-footref2 {
-    color:var(--color-2);
+  color: var(--color-2);
 }
 
 /* 3.4. Internal links */
@@ -104,12 +103,12 @@ a.tag {
 
 /* 3.5. blockquotes, embeds, tables */
 .cm-s-obsidian span.cm-quote {
-    color: var(--color-1);
+  color: var(--color-1);
 }
 
-.cm-s-obsidian span.cm-builtin, 
+.cm-s-obsidian span.cm-builtin,
 .cm-s-obsidian span.cm-hr {
-    color: var(--color-2);
+  color: var(--color-2);
 }
 
 /* 3.6. Code */

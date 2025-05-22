@@ -1,0 +1,411 @@
+.theme-dark {
+  --color-base-00: #0f111a;
+  --color-base-05: red; /* unknown */
+  --color-base-10: #0f111a; /* "interactive hover", visible on the right when opening the command palette */
+  --color-base-20: #0f111a; /* "background secondary", includes the left panel and the title bar */
+  --color-base-25: #4b4f62; /* unknown */
+  --color-base-30: #0f111a; /* when window is active, panel borders and interactable buttons */
+  --color-base-35: #393e50;
+  --color-base-40: #555555; /* border color when input field is active */
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #bababa;
+  --color-base-100: #a6accd;
+  --table-border-color: #a6accd;
+
+  --interactive-normal: #393e50;
+  --slider-track-background: #393e50;
+  --icon-color: #4b4f62;
+  --icon-color-hover: #a6accd;
+  --icon-color-focused: #a6accd;
+
+  --code-background: none;
+
+  --nav-item-color: #a6accd;
+  --nav-item-color-active: #2979ff;
+  --nav-item-color-hover: white;
+
+  --nav-item-background-active: none;
+  --nav-item-background-hover: none;
+}
+
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid #2978ffb9;
+}
+
+div.tree-item-children.nav-folder-children {
+  border-inline-start-color: #2977ff;
+}
+
+.suggestion-item.is-selected {
+  color: white;
+}
+
+textarea {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+input[type="text"] {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+input[type="search"] {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+input[type="email"] {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+input[type="password"] {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+input[type="number"] {
+  background: #ffffff00;
+  border-color: var(--background-modifier-border-hover);
+}
+
+@media (hover: hover) {
+  textarea:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+  input[type="text"]:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+  input[type="search"]:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+  input[type="email"]:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+  input[type="password"]:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+  input[type="number"]:hover {
+    border-color: var(--background-modifier-border-hover);
+    transition:
+      box-shadow 0.15s ease-in-out,
+      border 0.15s ease-in-out;
+  }
+}
+
+textarea:active {
+  box-shadow: none;
+}
+
+input[type="text"]:active {
+  box-shadow: none;
+}
+
+input[type="search"]:active {
+  box-shadow: none;
+}
+
+input[type="email"]:active {
+  box-shadow: none;
+}
+
+input[type="password"]:active {
+  box-shadow: none;
+}
+
+input[type="number"]:active {
+  box-shadow: none;
+}
+
+textarea:focus {
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  box-shadow: none;
+}
+
+input[type="search"]:focus {
+  box-shadow: none;
+}
+
+input[type="email"]:focus {
+  box-shadow: none;
+}
+
+input[type="password"]:focus {
+  box-shadow: none;
+}
+
+input[type="number"]:focus {
+  box-shadow: none;
+}
+
+textarea:focus-visible {
+  box-shadow: none;
+}
+
+input[type="text"]:focus-visible {
+  box-shadow: none;
+}
+
+input[type="search"]:focus-visible {
+  box-shadow: none;
+}
+
+input[type="email"]:focus-visible {
+  box-shadow: none;
+}
+
+input[type="password"]:focus-visible {
+  box-shadow: none;
+}
+
+input[type="number"]:focus-visible {
+  box-shadow: none;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0px -1px 0 #2979ff;
+  color: white;
+}
+
+.vertical-tab-header-group-title {
+  color: #2979ff;
+}
+
+.nav-file-title.is-active {
+  color: #2979ff;
+}
+
+.nav-folder-title.is-active {
+  color: #2979ff;
+}
+
+.workspace-leaf.mod-active .tree-item-self.has-focus {
+  box-shadow: none;
+}
+
+@media print {
+  .theme-dark {
+    --color-base-00: #0f111a;
+    --color-base-05: red; /* unknown */
+    --color-base-10: #0f111a; /* "interactive hover", visible on the right when opening the command palette */
+    --color-base-20: #0f111a; /* "background secondary", includes the left panel and the title bar */
+    --color-base-25: #4b4f62; /* unknown */
+    --color-base-30: #0f111a; /* when window is active, panel borders and interactable buttons */
+    --color-base-35: #393e50;
+    --color-base-40: #555555; /* border color when input field is active */
+    --color-base-50: #666666;
+    --color-base-60: #999999;
+    --color-base-70: #bababa;
+    --color-base-100: #a6accd;
+    --table-border-color: #a6accd;
+
+    --interactive-normal: #393e50;
+    --slider-track-background: #393e50;
+    --icon-color: #4b4f62;
+    --icon-color-hover: #a6accd;
+    --icon-color-focused: #a6accd;
+
+    --code-background: none;
+
+    --nav-item-color: #a6accd;
+    --nav-item-color-active: #2979ff;
+    --nav-item-color-hover: white;
+
+    --nav-item-background-active: none;
+    --nav-item-background-hover: none;
+  }
+
+  .nav-folder.mod-root .nav-folder > .nav-folder-children {
+    border-left: var(--nav-indentation-guide-width) solid #2978ffb9;
+  }
+
+  div.tree-item-children.nav-folder-children {
+    border-inline-start-color: #4187ff;
+  }
+
+  .suggestion-item.is-selected {
+    color: white;
+  }
+
+  textarea {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  input[type="text"] {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  input[type="search"] {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  input[type="email"] {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  input[type="password"] {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  input[type="number"] {
+    background: #ffffff00;
+    border-color: var(--background-modifier-border-hover);
+  }
+
+  @media (hover: hover) {
+    textarea:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+    input[type="text"]:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+    input[type="search"]:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+    input[type="email"]:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+    input[type="password"]:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+    input[type="number"]:hover {
+      border-color: var(--background-modifier-border-hover);
+      transition:
+        box-shadow 0.15s ease-in-out,
+        border 0.15s ease-in-out;
+    }
+  }
+
+  textarea:active {
+    box-shadow: none;
+  }
+
+  input[type="text"]:active {
+    box-shadow: none;
+  }
+
+  input[type="search"]:active {
+    box-shadow: none;
+  }
+
+  input[type="email"]:active {
+    box-shadow: none;
+  }
+
+  input[type="password"]:active {
+    box-shadow: none;
+  }
+
+  input[type="number"]:active {
+    box-shadow: none;
+  }
+
+  textarea:focus {
+    box-shadow: none;
+  }
+
+  input[type="text"]:focus {
+    box-shadow: none;
+  }
+
+  input[type="search"]:focus {
+    box-shadow: none;
+  }
+
+  input[type="email"]:focus {
+    box-shadow: none;
+  }
+
+  input[type="password"]:focus {
+    box-shadow: none;
+  }
+
+  input[type="number"]:focus {
+    box-shadow: none;
+  }
+
+  textarea:focus-visible {
+    box-shadow: none;
+  }
+
+  input[type="text"]:focus-visible {
+    box-shadow: none;
+  }
+
+  input[type="search"]:focus-visible {
+    box-shadow: none;
+  }
+
+  input[type="email"]:focus-visible {
+    box-shadow: none;
+  }
+
+  input[type="password"]:focus-visible {
+    box-shadow: none;
+  }
+
+  input[type="number"]:focus-visible {
+    box-shadow: none;
+  }
+
+  .workspace-tab-header.is-active {
+    box-shadow: inset 0px -1px 0 #2979ff;
+    color: white;
+  }
+
+  .vertical-tab-header-group-title {
+    color: #2979ff;
+  }
+
+  .nav-file-title.is-active {
+    color: #2979ff;
+  }
+
+  .nav-folder-title.is-active {
+    color: #2979ff;
+  }
+
+  .workspace-leaf.mod-active .tree-item-self.has-focus {
+    box-shadow: none;
+  }
+}

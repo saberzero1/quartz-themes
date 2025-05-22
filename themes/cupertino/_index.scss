@@ -327,6 +327,8 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --image-mix: normal;
+
   --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1);
   --background-modifier-border: var(--divider-color);
   --background-modifier-border-focus: hsla(var(--interactive-accent-hsl), 0.5);
@@ -364,8 +366,6 @@
   --embed-block-shadow-hover: none;
   --embed-padding: 16px;
   --font-text-theme: "SF Pro Display", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  --font-interface-theme: "SF Pro Display", -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    sans-serif;
   --highlight-mix-blend-mode: none !important;
   --hr-color: var(--background-modifier-hover);
   --icon-opacity: 1;
@@ -420,6 +420,7 @@
   --toggle-thumb-width: 13px;
   --toggle-width: 26px;
   --view-header-height: 40px;
+  --workspace-background-translucent: rgb(from var(--background-primary) r g b / 75%);
   --background-modifier-cover: rgba(170, 170, 170, 0.6);
   --background-modifier-border-hover: var(--color-base-25);
   --color-red-rgb: 255, 59, 48;
@@ -440,8 +441,6 @@
   --color-pink: #ff2d55;
   --divider-color: rgba(0, 0, 0, 0.05) !important;
   --modal-background: rgb(from var(--background-secondary) r g b / 90%) !important;
-  --input-shadow: inset 0 -0.15px 0 0.5px rgba(0, 0, 0, 0.2), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 0.3px 0.5px 0 rgba(0, 0, 0, 0.1) !important;
   --code-normal: #383a42;
   --code-comment: #b6b9c5;
   --code-function: #b76b02;
@@ -451,6 +450,7 @@
   --code-punctuation: #383a42;
   --code-string: #0d97b3;
   --code-tag: #e45749;
+  --code-value: #a626a4;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --color-red-rgb: 255, 69, 58;
   --color-red: #ff453a;
@@ -471,8 +471,6 @@
   --divider-color: rgba(255, 255, 255, 0.05) !important;
   --modal-background: rgb(from var(--color-base-25) r g b / 90%) !important;
   --interactive-normal: var(--color-base-40);
-  --input-shadow: inset 0 0.5px 0px 0px rgba(255, 255, 255, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1) !important;
   --code-normal: #abb2bf;
   --code-comment: #5c6370;
   --code-function: #d19a66;
@@ -482,10 +480,11 @@
   --code-punctuation: #abb2bf;
   --code-string: #58b6c2;
   --code-tag: #e16d76;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --code-value: #c678de;
+  --icon-xl: 24px;
+  --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  --header-height: 48px;
   --background-modifier-form-field: var(--interactive-normal) !important;
   --border-width: 0.3px;
   --divider-color: rgba(var(--mono-rgb-100), 0.1) !important;
@@ -523,19 +522,40 @@
   --toggle-width: 51px;
   --toolbar-option-width: calc(16px + var(--mobile-toolbar-height));
   --view-header-height: 44px;
+  --interactive-normal: var(--background-primary);
+  --interactive-normal: var(--background-secondary);
   --file-header-justify: flex-start;
   --mobile-sidebar-max-width: 100%;
   --tab-outline-width: 1px;
+  --tab-outline-width: 1px;
   --dropdown-padding: 4px 32px 4px 16px;
+  --prompt-input-height: 56px;
+  --ribbon-width: 52px;
+  --workspace-background-translucent: var(--background-secondary);
+  --workspace-background-translucent: var(--background-secondary);
   --vault-profile-color: var(--text-muted);
+  --icon-color: var(--text-muted);
+  --view-header-height: 0px;
+  --nav-item-padding: 6px 8px 6px 24px;
+  --nav-item-padding: 12px 16px;
+  --frame-left-space: 0;
+  --frame-left-space: calc(80px - var(--ribbon-width));
   --interactive-normal: unset !important;
+  --icon-size: 0px;
+  --icon-size: 0px;
   --font-ui-smaller: calc(var(--font-text-size) * 0.8 + 1px);
   --font-ui-small: calc(var(--font-text-size) * 0.937 + 1px);
   --font-ui-medium: calc(var(--font-text-size) + 1px);
+  --font-ui-large: calc(var(--font-text-size) * 1.2 + 1px);
+  --text-muted: var(--text-on-accent);
+  --text-muted: var(--text-on-accent);
+  --icon-size: var(--icon-m);
   --icon-size: var(--icon-m);
   --prompt-top: calc(var(--safe-area-inset-top) + 8px);
   --prompt-bottom: 0;
   --advanced-tables-helper-size: auto;
+  --advanced-tables-helper-size: auto;
+  --reader-mobile-nav-bg: rgb(from var(--background-secondary) r g b/50%);
   --font-text-theme: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI", sans-serif;
   --font-interface-theme: "Segoe UI Variable", "Segoe UI Variable Display", "Segoe UI", sans-serif;
   --input-height: 32px;
@@ -549,21 +569,18 @@
   --toggle-border-width: 4px;
   --slider-thumb-border-width: 4px;
   --slider-track-background: var(--color-base-50);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --workspace-background-translucent: rgb(from var(--background-primary) r g b / 75%);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
-  --input-shadow: 0px 0px 0px 1px var(--background-modifier-border),
-    0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset !important;
   --interactive-normal: var(--background-primary);
   --modal-background: rgb(from var(--background-secondary) r g b / 90%) !important;
   --modal-border-color: rgba(0, 0, 0, 0.1);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --slider-thumb-border-color: var(--color-base-00);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
   --input-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 0.5px 0 0 rgba(255, 255, 255, 0.1) inset !important;
   --interactive-normal: var(--color-base-35);
   --modal-background: rgb(from var(--background-primary) r g b / 90%) !important;
   --modal-border-color: rgba(255, 255, 255, 0.1);
+  --slider-thumb-border-color: var(--color-base-35);
   --toggle-thumb-color: var(--text-muted);
   --toggle-thumb-color: var(--text-on-accent);
   --background-modifier-hover: unset;
@@ -572,6 +589,8 @@
   --cards-image-height: 400px;
   --cards-padding: 16px;
   --cards-aspect-ratio: auto;
+  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  --img-grid-gap: 4px;
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;

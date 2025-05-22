@@ -1,8 +1,7 @@
 span.view-header-breadcrumb,
 div.view-header-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
-
 
 .markdown-source-view,
 .cm-scroller,
@@ -12,63 +11,42 @@ div.view-header-title {
   letter-spacing: 0.1px;
 }
 
-
-
 a.tag,
 .cm-hashtag {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   text-transform: lowercase;
   font-size: 12px;
 }
 
 .nav-file-title,
 .nav-folder-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   font-size: 14px;
 }
 
-
 body {
   --inline-title-color: #beb4da;
-  --inline-title-font: 'yu gothic ui', sans-serif;
+  --inline-title-font: "yu gothic ui", sans-serif;
   --inline-title-size: 1.5em;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-weight: 400;
 
-  --font-text: 'yu gothic', yugothic, sans-serif;
+  --font-text: "yu gothic", yugothic, sans-serif;
   --font-text-size: 14px !important;
 }
-
-
-
-
-
 
 * {
   box-shadow: none !important;
 }
 
-
-
-
 .body {
-  font-family: 'yu gothic', yugothic, sans-serif;
+  font-family: "yu gothic", yugothic, sans-serif;
 }
-
-
-
-
-
-
-
-
-
 
 .workspace-tab-header-inner-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   text-transform: uppercase;
 }
-
 
 body {
   --divider-color: transparent;
@@ -84,12 +62,7 @@ body {
   margin-left: 2em;
 }
 
-
-
-
-
 .theme-dark {
-
   --text-highlight-bg: transparent;
   --text-accent: #95bae8;
 
@@ -112,8 +85,8 @@ body {
   --color-base-100: #e46872;
   /*main font*/
 
-  --interactive-normal: #FFFFFF;
-  --slider-track-background: #FFFFFF;
+  --interactive-normal: #ffffff;
+  --slider-track-background: #ffffff;
   --icon-color: #96bae8;
   --icon-color-hover: #d295d1;
   --icon-color-focused: #d295d1;
@@ -164,8 +137,8 @@ body {
   --color-base-100: #383c4e;
   /*main font*/
 
-  --interactive-normal: #FFFFFF;
-  --slider-track-background: #FFFFFF;
+  --interactive-normal: #ffffff;
+  --slider-track-background: #ffffff;
   --icon-color: #96bae8;
   --icon-color-hover: #d295d1;
   --icon-color-focused: #d295d1;
@@ -202,10 +175,10 @@ body {
 .callout-title {
   color: #70c8d6;
   font-size: 14px;
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
 
-.callout>.callout-content p:last-child {
+.callout > .callout-content p:last-child {
   margin-bottom: 0;
 }
 
@@ -218,18 +191,17 @@ body {
   --h6-size: 1em;
 }
 
-.markdown-preview-section>div h1,
-.markdown-preview-section>div h2,
-.markdown-preview-section>div h3,
-.markdown-preview-section>div h4,
-.markdown-preview-section>div h5,
-.markdown-preview-section>div h6 {
-  font-family: 'yu gothic ui', sans-serif;
+.markdown-preview-section > div h1,
+.markdown-preview-section > div h2,
+.markdown-preview-section > div h3,
+.markdown-preview-section > div h4,
+.markdown-preview-section > div h5,
+.markdown-preview-section > div h6 {
+  font-family: "yu gothic ui", sans-serif;
   margin-top: 40px;
   font-weight: normal;
   color: #ebaeca !important;
 }
-
 
 /*
 ::-webkit-scrollbar-track{background:transparent !important;}
@@ -273,7 +245,6 @@ svg * {
   margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
-
 body {
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
@@ -288,7 +259,7 @@ body {
 
 /* Change the height of the divider bar to not overflow over the gradient background */
 .is-hidden-frameless {
-  --divider-vertical-height: calc(100% - var(--header-height))
+  --divider-vertical-height: calc(100% - var(--header-height));
 }
 
 /* Remove backgrounds of some specific elements */
@@ -334,7 +305,7 @@ body {
 }
 
 /* Reduce the height to create a 6px gap at the bottom */
-.workspace>.workspace-split {
+.workspace > .workspace-split {
   height: calc(100% - 6px);
 }
 
@@ -346,7 +317,7 @@ body {
 /* Change the color of icons that are dircetly over the linear gradient */
 .titlebar,
 .workspace-ribbon,
-.workspace-tab-header-container>*:not(.workspace-tab-header-container-inner) {
+.workspace-tab-header-container > *:not(.workspace-tab-header-container-inner) {
   --icon-color: var(--color-base-50);
   --icon-color-hover: var(--color-base-20);
   --icon-color-active: var(--color-base-20);

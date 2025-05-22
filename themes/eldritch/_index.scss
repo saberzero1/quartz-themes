@@ -477,6 +477,8 @@ html {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);

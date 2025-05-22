@@ -361,8 +361,11 @@
   --modal-border-color: black;
   --modal-border-width: 0;
   --modal-height: 85vh;
+  --modal-max-width: calc(100vw - var(--safe-area-inset-left) - var(--safe-area-inset-right) - 2em);
   --modal-width: 65rem;
   --nav-item-background-hover: var(--theme-color-baseTransparent75);
+  --nav-item-children-margin-left: calc(1em - var(--nav-indentation-guide-width) / 2);
+  --nav-item-children-padding-left: calc(1em - var(--nav-indentation-guide-width) / 2);
   --nav-item-color-highlighted: var(--nav-item-hover);
   --nav-item-padding: 0.375em 0.75em 0.375em 0.75em;
   --nav-item-parent-padding: 0.25em 0 0.25em 0;
@@ -413,6 +416,7 @@
   --theme-length-cardImageHeight: 25em;
   --theme-cardImageFit: contain;
   --theme-cardAspectRatio: auto;
+  --theme-padding-block: var(--theme-padding-blockVertical) var(--theme-padding-blockHorizontal);
   --theme-padding-blockHorizontal: 1.5em;
   --theme-padding-blockVertical: 0.75em;
   --base-h: var(--accent-h);
@@ -455,6 +459,17 @@
   --base-h: 40;
   --base-s: 2%;
   --base-l: 50%;
+  --theme-color-baseDarkened40: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.4));
+  --theme-color-baseDarkened60: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.6));
+  --theme-color-baseDarkened70: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.7));
+  --theme-color-baseDarkened80: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.8));
+  --theme-color-baseDarkened90: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.9));
+  --theme-color-baseTransparent75: hsl(from var(--theme-color-base) h s l / 0.75);
+  --theme-color-baseTransparent50: hsl(from var(--theme-color-base) h s l / 0.5);
+  --theme-color-baseTransparent35: hsl(from var(--theme-color-base) h s l / 0.35);
+  --theme-color-baseTransparent25: hsl(from var(--theme-color-base) h s l / 0.25);
+  --theme-color-baseTransparent12: hsl(from var(--theme-color-base) h s l / 0.12);
+  --theme-color-baseTransparent06: hsl(from var(--theme-color-base) h s l / 0.06);
   --theme-color-lightenTransparent75: hsl(from white h s l / 0.75);
   --theme-color-lightenTransparent50: hsl(from white h s l / 0.5);
   --theme-color-lightenTransparent25: hsl(from white h s l / 0.25);
@@ -470,14 +485,6 @@
   --theme-color-jiraIssueStatus: var(--theme-color-baseLightened95);
   --theme-color-jiraIssueDangerBg: var(--theme-color-redTransparent25);
   --theme-color-jiraIssueDanger: white;
-  --theme-color-lineNumbers: light-dark(
-    var(--theme-color-baseLightened60),
-    var(--theme-color-baseDarkened60)
-  );
-  --theme-color-navigationButtonBgHover: light-dark(
-    var(--theme-color-baseLightened70),
-    var(--theme-color-baseDarkened70)
-  );
   --theme-value-headingScaleFactor: 1.2;
   --blockquote-border-thickness: 0.25em;
   --font-text-theme: var(--font-default);
@@ -518,6 +525,14 @@
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --titlebar-height: 40px;
+  --pill-padding-x: 1em;
+  --pill-padding-y: 0.25em;
+  --tag-padding-x: 1em;
+  --tag-padding-y: 0.25em;
+  --pill-padding-x: 1em;
+  --pill-padding-y: 0.25em;
+  --tag-padding-x: 1em;
+  --tag-padding-y: 0.25em;
   --pill-padding-x: 1em;
   --pill-padding-y: 0.25em;
   --tag-padding-x: 1em;
@@ -671,6 +686,22 @@ html[saved-theme="dark"] {
   --color-blue: hsl(from var(--theme-color-base) 219 s l);
   --color-purple: hsl(from var(--theme-color-base) 253 s l);
   --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --theme-color-redDarkened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-redLightened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-orangeDarkened: hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-orangeLightened: hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-yellowDarkened: hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-yellowLightened: hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-greenDarkened: hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-greenLightened: hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-cyanDarkened: hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-cyanLightened: hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-purpleDarkened: hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-purpleLightened: hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-pinkDarkened: hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-pinkLightened: hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5));
   --theme-color-redTransparent25: hsl(from var(--color-red) h s l / 0.25);
   --theme-color-redTransparent75: hsl(from var(--color-red) h s l / 0.75);
   --theme-color-orangeTransparent25: hsl(from var(--color-orange) h s l / 0.25);
@@ -690,6 +721,7 @@ html[saved-theme="dark"] {
   --collapse-icon-color-collapsed: var(--theme-color-base);
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --icon-color-focused: var(--theme-color-baseLightened80);
+  --icon-color-hover: hsl(var(--base-h), calc(var(--base-s) * 0.2), calc(var(--base-l) * 1.5));
   --icon-color-hover: var(--theme-color-baseLightened80);
   --icon-color: var(--theme-color-base);
   --modal-background: var(--theme-color-baseDarkened80);
@@ -703,6 +735,7 @@ html[saved-theme="dark"] {
   --nav-item-color-hover: black;
   --search-clear-button-color: var(--theme-color-base);
   --search-icon-color: var(--theme-color-base);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s) * 1.2), calc(var(--accent-l)));
   --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
   --tab-background-active: var(--background-primary);
   --tab-background-inactive: var(--theme-color-baseDarkened85);
@@ -722,6 +755,7 @@ html[saved-theme="dark"] {
   --metadata-property-background-hover: var(--theme-color-baseTransparent12);
   --metadata-label-background-active: var(--theme-color-baseDarkened90);
   --metadata-input-background-active: var(--theme-color-baseDarkened90);
+  --background-primary: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.95));
   --background-secondary: var(--theme-color-baseDarkened70);
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redLightened);
@@ -778,6 +812,9 @@ html[saved-theme="dark"] {
   --theme-color-warningBg: var(--theme-color-baseLightened95);
   --theme-color-gradientCardsetTop: var(--theme-color-baseTransparent06);
   --theme-color-gradientCardsetBottom: var(--theme-color-baseTransparent12);
+  --theme-color-gradientCardsetGeneratedTop: var(--theme-color-baseTransparent12);
+  --theme-color-gradientCardsetGeneratedBottom: var(--theme-color-baseTransparent25);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   --pill-background: var(--theme-color-baseTransparent75);
   --pill-background-hover: var(--theme-color-base);
   --pill-color: black;
@@ -846,6 +883,22 @@ html[saved-theme="light"] {
   --color-blue: hsl(from var(--theme-color-base) 219 s l);
   --color-purple: hsl(from var(--theme-color-base) 253 s l);
   --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --theme-color-redDarkened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-redLightened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-orangeDarkened: hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-orangeLightened: hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-yellowDarkened: hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-yellowLightened: hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-greenDarkened: hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-greenLightened: hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-cyanDarkened: hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-cyanLightened: hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-purpleDarkened: hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-purpleLightened: hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5));
+  --theme-color-pinkDarkened: hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5));
+  --theme-color-pinkLightened: hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5));
   --theme-color-redTransparent25: hsl(from var(--color-red) h s l / 0.25);
   --theme-color-redTransparent75: hsl(from var(--color-red) h s l / 0.75);
   --theme-color-orangeTransparent25: hsl(from var(--color-orange) h s l / 0.25);
@@ -865,6 +918,7 @@ html[saved-theme="light"] {
   --collapse-icon-color-collapsed: var(--theme-color-base);
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --icon-color-focused: white;
+  --icon-color-hover: hsl(var(--base-h), calc(var(--base-s) * 0.2), calc(var(--base-l) * 1.5));
   --icon-color-hover: white;
   --icon-color: var(--theme-color-base);
   --modal-background: var(--theme-color-baseLightened80);
@@ -887,6 +941,8 @@ html[saved-theme="light"] {
   --tab-text-color-focused-active: var(--theme-color-baseDarkened25);
   --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-text-color-focused-active-current: var(--text-normal);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l) * 0.9));
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
   --text-normal: var(--theme-color-baseDarkened90);
   --text-faint: var(--theme-color-baseDarkened70);
   --background-prompt: var(--theme-color-baseLightened95);
@@ -955,6 +1011,9 @@ html[saved-theme="light"] {
   --theme-color-warningBg: var(--theme-color-baseLightened95);
   --theme-color-gradientCardsetTop: var(--theme-color-baseTransparent12);
   --theme-color-gradientCardsetBottom: var(--theme-color-baseTransparent06);
+  --theme-color-gradientCardsetGeneratedTop: var(--theme-color-baseTransparent35);
+  --theme-color-gradientCardsetGeneratedBottom: var(--theme-color-baseTransparent12);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   --pill-background: var(--theme-color-baseTransparent75);
   --pill-background-hover: var(--theme-color-base);
   --pill-color: white;

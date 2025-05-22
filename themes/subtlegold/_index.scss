@@ -760,26 +760,20 @@
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-monospace-default: "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-    "Source Code Pro", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
   --font-text-override: "??";
   --font-text-theme: "??";
   --font-text: var(--font-text-override), var(--font-text-theme), var(--font-interface);
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
   --zoom-factor: 1;
   --titlebar-height: 30px;
   --titlebar-background: var(--titlebar-background-focused);
+  --titlebar-background: var(--titlebar-background-focused);
+  --tab-container-background: var(--titlebar-background-focused);
   --tab-container-background: var(--titlebar-background-focused);
   --icon-color: var(--interactive-accent);
   --icon-color-hover: var(--interactive-accent);

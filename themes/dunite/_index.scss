@@ -458,17 +458,8 @@ html[saved-theme="dark"] {
   --accent-h: 79;
   --accent-s: 25%;
   --accent-l: 40%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 0.85)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
   --text-on-accent: var(--color-base-100);
   --text-on-accent-inverted: var(--color-base-10);
   --interactive-accent: var(--color-accent);
@@ -541,17 +532,8 @@ html[saved-theme="light"] {
   --accent-h: 79;
   --accent-s: 25%;
   --accent-l: 67%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 0.85)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
   --text-on-accent: var(--color-base-100);
   --text-on-accent-inverted: var(--color-base-10);
   --interactive-accent: var(--color-accent);

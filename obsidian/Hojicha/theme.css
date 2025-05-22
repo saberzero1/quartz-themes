@@ -1,163 +1,165 @@
 .theme-dark {
+  --text: #adacac;
+  --text-faint: #696969;
+  --text-link: #808796;
 
-	--text: #adacac;
-	--text-faint: #696969;
-	--text-link: #808796;
+  /* dark gray */
+  --bg: #161616;
 
-	/* dark gray */
-	--bg: #161616;
+  /* medium gray */
+  --bg-light-accent: #1b1c1d;
 
-	/* medium gray */
-	--bg-light-accent: #1b1c1d;
+  /* light gray */
+  --bg-hard-accent: #333333;
 
-	/* light gray */
-	--bg-hard-accent: #333333;
+  /* black */
+  --bg-black: #111111;
 
-	/* black */
-	--bg-black: #111111;
+  /* --border: #8a968f7a; */
 
-	/* --border: #8a968f7a; */
+  /* --yellow: #b0b58a; */
+  --yellow: #c99b53;
+  --yellow-rgba: rgba(201, 155, 83, 0.2);
 
-	/* --yellow: #b0b58a; */
-	--yellow: #c99b53;
-	--yellow-rgba: rgba(201, 155, 83, 0.2);
+  --dark-yellow: #969375;
+  --dark-yellow-rgba: rgba(150, 147, 117, 0.4);
 
-	--dark-yellow: #969375;
-	--dark-yellow-rgba: rgba(150, 147, 117, 0.4);
+  --light-blue: #c5f2ef;
+  --light-blue-rgba: rgba(197, 242, 239, 0.4);
 
-	--light-blue: #c5f2ef;
-	--light-blue-rgba: rgba(197, 242, 239, 0.4);
+  --blue: #6e9bba;
+  --blue-rgba: rgba(110, 155, 186, 0.4);
 
-	--blue: #6e9bba;
-	--blue-rgba: rgba(110, 155, 186, 0.4);
+  --red: #804043;
+  --red-rgba: rgba(128, 64, 67, 0.4);
 
-	--red: #804043;
-	--red-rgba: rgba(128, 64, 67, 0.4);
+  --dark-red: #9c797d;
 
-	--dark-red: #9c797d;
+  --green: #859679;
+  --green-rgba: rgba(133, 150, 121, 0.4);
+  --faded-green: #8bab85;
 
-	--green: #859679;
-	--green-rgba: rgba(133, 150, 121, 0.4);
-	--faded-green: #8bab85;
+  --slate-green: #8a968f;
 
-	--slate-green: #8a968f;
+  --orange: #a18b7f;
+  /* --orange-rgba: rgba(133, 150, 121, 0.4); */
+  --orange-rgba: rgba(240, 140, 58, 0.4);
 
-	--orange: #a18b7f;
-	/* --orange-rgba: rgba(133, 150, 121, 0.4); */
-	--orange-rgba: rgba(240, 140, 58, 0.4);
+  --violet: #939bd5;
+  --violet-rgba: rgba(147, 155, 213, 0.4);
 
-	--violet: #939bd5;
-	--violet-rgba: rgba(147, 155, 213, 0.4);
+  --border: var(--faded-green);
+  --border: var(--orange-rgba);
 
-	--border: var(--faded-green);
-	--border: var(--orange-rgba);
+  --h1: var(--green);
+  --h2: var(--yellow);
+  --h3: var(--orange);
+  --h4: var(--red);
+  --h5: var(--blue);
+  --h6: var(--violet);
 
-	--h1: var(--green);
-	--h2: var(--yellow);
-	--h3: var(--orange);
-	--h4: var(--red);
-	--h5: var(--blue);
-	--h6: var(--violet);
+  --text-a: var(--violet);
+  --text-a-hover: var(--orange);
+  --text-mark: var(--dark-yellow);
+  --pre-code: var(--bg-black);
+  --interactive-accent: var(--faded-green);
 
-	--text-a: var(--violet);
-	--text-a-hover: var(--orange);
-	--text-mark: var(--dark-yellow);
-	--pre-code: var(--bg-black);
-	--interactive-accent: var(--faded-green);
+  /* --background-modifier-border: var(--border); */
+  --background-modifier-border: var(--border);
+  --blockquote-border: red;
 
-	/* --background-modifier-border: var(--border); */
-	--background-modifier-border: var(--border);
-	--blockquote-border: red;
+  --code-background: var(--bg);
+  --code-normal: var(--text);
+  --code-comment: var(--text-faint);
+  --code-function: var(--violet);
+  --code-keyword: var(--orange);
+  --code-operator: var(--dark-red);
+  --code-property: var(--dark-red);
 
-	--code-background: var(--bg);
-	--code-normal: var(--text);
-	--code-comment: var(--text-faint);
-	--code-function: var(--violet);
-	--code-keyword: var(--orange);
-	--code-operator: var(--dark-red);
-	--code-property: var(--dark-red);
-
-	--code-punctuation: #adacac;
-	--code-string: #8a968f;
-	--code-tag: #9e5560;
-	--code-value: #8a879c;
+  --code-punctuation: #adacac;
+  --code-string: #8a968f;
+  --code-tag: #9e5560;
+  --code-value: #8a879c;
 }
 
-.workspace-sidedock-vault-profile{ 
-	background-color: var(--bg-light-accent) !important;
+.workspace-sidedock-vault-profile {
+  background-color: var(--bg-light-accent) !important;
 }
 /* -------------- */
 /*    CODE BLOCK  */
 /* -------------- */
 
-.cm-keyword, .keyword {
-	color: var(--code-keyword) !important;
+.cm-keyword,
+.keyword {
+  color: var(--code-keyword) !important;
 }
 
 .cm-variable,
 .cm-type {
-	color: var(--code-value) !important;
+  color: var(--code-value) !important;
 }
 
 .cm-def {
-	color: var(--text) !important;
+  color: var(--text) !important;
 }
 .cm-string {
-	color: var(--code-string) !important;
+  color: var(--code-string) !important;
 }
 
 .cm-property {
-	color: var(--code-property) !important;
+  color: var(--code-property) !important;
 }
 
 .cm-active {
-	background-color: var(--bg-light-accent) !important;
+  background-color: var(--bg-light-accent) !important;
 }
 
 .cm-fold-indicator {
-	background-color: white !important;
-	color: white !important;
+  background-color: white !important;
+  color: white !important;
 }
 
 .cm-inline-code {
-	background-color: var(--bg-hard-accent) !important;
-	color: var(--interactive-accent) !important;
+  background-color: var(--bg-hard-accent) !important;
+  color: var(--interactive-accent) !important;
 }
 
 /* code blocks in preview */
 pre code {
-	padding: 1rem !important;
-	line-height: normal;
-	display: block;
-	background-color: var(--bg) !important;
+  padding: 1rem !important;
+  line-height: normal;
+  display: block;
+  background-color: var(--bg) !important;
 }
 
 .markdown-preview-view pre code {
-	background-color: var(--bg) !important;
-	color: var(--text);
-	border-radius: 8px;
-	padding: 1em;
-	font-size: 13px;
+  background-color: var(--bg) !important;
+  color: var(--text);
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 13px;
 }
 
 #graph-view-canvas .links {
-	stroke: var(--interactive-accent) !important;
+  stroke: var(--interactive-accent) !important;
 }
 
-strong, .cm-strong {
-	color: var(--light-blue) !important;
-	/* color: #b5c7c7; */
-	font-weight: 800;
+strong,
+.cm-strong {
+  color: var(--light-blue) !important;
+  /* color: #b5c7c7; */
+  font-weight: 800;
 }
 
-em, .cm-em{
-	color: #b8cece;
+em,
+.cm-em {
+  color: #b8cece;
 }
 
 mark {
-	background-color: var(--text-mark) !important;
-	padding-top: 4px;
-	padding-bottom: 1px;
+  background-color: var(--text-mark) !important;
+  padding-top: 4px;
+  padding-bottom: 1px;
 }
 
 /**********************/
@@ -170,104 +172,102 @@ a,
 .cm-hmd-internal-link,
 .cm-link,
 .cm-formatting-link {
-	color: var(--text-a) !important;
-	text-decoration: none !important;
+  color: var(--text-a) !important;
+  text-decoration: none !important;
 }
 
 /* link hover color */
 a:hover,
 .internal-link:hover {
-	color: var(--text-a-hover) !important;
-	text-decoration: none !important;
+  color: var(--text-a-hover) !important;
+  text-decoration: none !important;
 }
 
 /* make external links italics to differentiate */
 a:not(.internal-link) {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 /* blockquote */
 .cm-quote {
-	color: var(--text) !important;
+  color: var(--text) !important;
 }
 
 blockquote {
-	border-color: var(--blockquote-border) !important;
+  border-color: var(--blockquote-border) !important;
 }
 
 /* icons at top of panes*/
 .file-view-actions a {
-	color: var(--text-muted) !important;
+  color: var(--text-muted) !important;
 }
 
 .file-view-actions a:hover {
-	color: var(--text-a) !important;
+  color: var(--text-a) !important;
 }
 
 /* html tags in editor */
 .cm-tag {
-	color: var(--yellow) !important;
+  color: var(--yellow) !important;
 }
 
 .markdown-preview-view pre {
-	padding: 0px !important;
+  padding: 0px !important;
 }
-
 
 /* in-line code for editor and preview and code block for editor*/
 code,
 .cm-inline-code {
-	background-color: var(--pre-code) !important;
-	color: var(--text-muted) !important;
-	bottom: 0px !important;
+  background-color: var(--pre-code) !important;
+  color: var(--text-muted) !important;
+  bottom: 0px !important;
 }
 
 /* code and code blocks for preview */
 .markdown-preview-view code {
-	font-size: 13.5px;
+  font-size: 13.5px;
 }
 
 /* -------------- */
 /*        TABLES  */
 /* -------------- */
 th {
-	font-weight: 800 !important;
+  font-weight: 800 !important;
 }
 
 thead {
-	background-color: var(--text-faint);
-	border-bottom: 4px solid var(--border);
+  background-color: var(--text-faint);
+  border-bottom: 4px solid var(--border);
 }
 
 .table {
-	color: var(--text);
-	border: 1px solid var(--border);
-	padding: 4px;
-	line-height: normal;
-	display: block;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 4px;
+  line-height: normal;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 table tr:nth-child(even) {
-	background-color: var(--bg-hard-accent) !important;
+  background-color: var(--bg-hard-accent) !important;
 }
 
 /* table tr:nth-child(even) {
 } 
 */
 
-
 /* horizontal line in preview */
 .markdown-preview-view hr {
-	background-color: var(--text);
+  background-color: var(--text);
 }
 
 /* checkboxes */
 .markdown-preview-view .task-list-item-checkbox {
-	top: 0px;
+  top: 0px;
 }
 
 /*************/
@@ -276,14 +276,13 @@ table tr:nth-child(even) {
 
 /* side dock text, like file names and backlink context */
 .side-dock-panels-container * {
-	font-size: 13px !important;
+  font-size: 13px !important;
 }
 
 /* side dock titles at top */
 .side-dock-title {
-
-	font-size: 20px !important;
-	font-weight: 800 !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
 }
 
 /* hover actions on side dock navigation */
@@ -293,29 +292,29 @@ table tr:nth-child(even) {
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
 .side-dock-collapse-btn:hover {
-	color: var(--text-a);
+  color: var(--text-a);
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
 .nav-file-title-content,
 .search-result-file-title,
 .search-result-file-match {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-	line-height: normal !important;
-	word-break: keep-all;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: normal !important;
+  word-break: keep-all;
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
 .search-empty-state {
-	width: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	line-height: normal;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: normal;
 }
 
 .status-bar-item {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 /******************/
@@ -324,64 +323,64 @@ table tr:nth-child(even) {
 
 /* normal text outside of headings and code */
 .cm-s-obsidian {
-	font-size: 15px;
-	color: var(--text);
-	padding-left: 10% !important;
-	padding-right: 10% !important;
-	background-color: var(--bg-light-accent) !important;
+  font-size: 15px;
+  color: var(--text);
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  background-color: var(--bg-light-accent) !important;
 }
 
 .mod-single-child .cm-s-obsidian {
-	font-size: 15px;
-	color: var(--text);
-	padding-left: 20% !important;
-	padding-right: 20% !important;
+  font-size: 15px;
+  color: var(--text);
+  padding-left: 20% !important;
+  padding-right: 20% !important;
 }
 .workspace-leaf {
-	background-color: var(--bg) !important;
+  background-color: var(--bg) !important;
 }
 
 /* headings */
 .cm-header-1 {
-	font-weight: 500;
-	font-size: 28px;
-	font-weight: bold;
-	color: var(--h1);
+  font-weight: 500;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--h1);
 }
 
 .cm-header-2 {
-	font-weight: 500;
-	font-size: 26px;
-	font-weight: bold;
-	color: var(--h2);
+  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--h2);
 }
 
 .cm-header-3 {
-	font-weight: 500;
-	font-size: 22px;
-	font-weight: bold;
-	color: var(--h3);
+  font-weight: 500;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--h3);
 }
 
 .cm-header-4 {
-	font-weight: 500;
-	font-size: 20px;
-	font-weight: bold;
-	color: var(--h4);
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--h4);
 }
 
 .cm-header-5 {
-	font-weight: 500;
-	font-size: 18px;
-	font-weight: bold;
-	color: var(--h5);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--h5);
 }
 
 .cm-header-6 {
-	font-weight: 500;
-	font-size: 16px;
-	font-weight: bold;
-	color: var(--h6);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--h6);
 }
 
 /******************/
@@ -390,78 +389,77 @@ table tr:nth-child(even) {
 
 /* normal text outside of headings and code */
 .markdown-preview-view {
-	font-size: 15px;
-	color: var(--text);
-	padding-left: 10% !important;
-	padding-right: 10% !important;
+  font-size: 15px;
+  color: var(--text);
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .mod-single-child .markdown-preview-view {
-	font-size: 15px;
-	color: var(--text);
-	padding-left: 20% !important;
-	padding-right: 20% !important;
+  font-size: 15px;
+  color: var(--text);
+  padding-left: 20% !important;
+  padding-right: 20% !important;
 }
 
 /* headings */
 .markdown-preview-view h1 {
-	font-weight: 500;
-	font-size: 28px;
-	font-weight: bold;
-	color: var(--h1);
+  font-weight: 500;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--h1);
 }
 
 .markdown-preview-view h2 {
-	font-weight: 500;
-	font-size: 26px;
-	font-weight: bold;
-	color: var(--h2);
+  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--h2);
 }
 
 .markdown-preview-view h3 {
-	font-weight: 500;
-	font-size: 22px;
-	font-weight: bold;
-	color: var(--h3);
+  font-weight: 500;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--h3);
 }
 
 .markdown-preview-view h4 {
-	font-weight: 500;
-	font-size: 20px;
-	font-weight: bold;
-	color: var(--h4);
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--h4);
 }
 
 .markdown-preview-view h5 {
-	font-weight: 500;
-	font-size: 18px;
-	font-weight: bold;
-	color: var(--h5);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--h5);
 }
 
 .markdown-preview-view h6 {
-	font-weight: 500;
-	font-size: 16px;
-	font-weight: bold;
-	color: var(--h6);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--h6);
 }
-
 
 /* internal embedded link rendering in preview */
 .markdown-embed-title {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .markdown-embed {
-	padding-left: 10px !important;
-	padding-right: 10px !important;
-	margin-left: 10px !important;
-	margin-right: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
 /* remove secondary scroll bar in editor that comes from adding variable padding */
 .CodeMirror-scroll::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 /* to have sidebar hide and then reveal on hover
@@ -470,35 +468,33 @@ width: 0px !important;
 }
 */
 
-
 /* -------------- */
 /*        IMAGES  */
 /* -------------- */
 
 /* embedded images */
 img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .diagram-view svg {
-	background-color: #f1f1f1;
-	padding: 1rem;
-	border-radius: 2px;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 2px;
 }
 
 /* Icons : https://lucide.dev/icons/code-xml */
 
 /* Callouts: Apply uniform margins left and right. Center the icon vertically. */
 div.callout-icon {
-	margin: auto 1em auto 0;
+  margin: auto 1em auto 0;
 }
 
 /* remove redundant padding at the bottom */
 .callout:not(.is-collapsible):has(.callout-content) {
-	padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* -------------- */
@@ -506,24 +502,24 @@ div.callout-icon {
 /* -------------- */
 
 .callout {
-	color: white;
-	border-left: 4px solid inherit;
-	padding: 1em;
+  color: white;
+  border-left: 4px solid inherit;
+  padding: 1em;
 
-	.callout-title * {
-		color: white;
-	}
+  .callout-title * {
+    color: white;
+  }
 
-	.callout-content {
-		color: var(--text);
-	}
+  .callout-content {
+    color: var(--text);
+  }
 }
 
 .callout[data-callout="note"] {
-	background-color: var(--bg-hard-accent);
+  background-color: var(--bg-hard-accent);
 
-	/* --callout-icon: code-xml; */
-	/* .callout-icon {
+  /* --callout-icon: code-xml; */
+  /* .callout-icon {
 		display: none;
 		background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23a7ab93" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20h9"></path><path d="M12 4h9"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg>');
 	} */
@@ -542,10 +538,9 @@ div.callout-icon {
 	vertical-align: middle;
 } */
 
-
 [data-callout="info"] {
-	color: var(--text);
-	background-color: var(--orange-rgba);
+  color: var(--text);
+  background-color: var(--orange-rgba);
 }
 
 /* [data-callout="error"] {
@@ -553,31 +548,28 @@ div.callout-icon {
 } */
 
 [data-callout="success"] {
-	background-color: var(--green-rgba);
+  background-color: var(--green-rgba);
 }
 
 [data-callout="warning"] {
-	background-color: var(--yellow-rgba);
+  background-color: var(--yellow-rgba);
 }
 
 [data-callout="tip"] {
-	background-color: var(--blue-rgba);
+  background-color: var(--blue-rgba);
 }
 
-
-
 .mermaid .actor {
-	fill: var(--green) !important;
+  fill: var(--green) !important;
 }
 
 .mermaid .note {
-	fill: var(--blue-rgba) !important;
+  fill: var(--blue-rgba) !important;
 }
 
 .mermaid line {
-	fill: var(--blue-rgba) !important;
+  fill: var(--blue-rgba) !important;
 }
-
 
 /* .mermaid .loopLine {
 	stroke: var(--mermaid-loopline) !important;
@@ -613,7 +605,7 @@ div.callout-icon {
 	fill: var(--mermaid-seqnum) !important;
 } */
 .nav-folder-title {
-	/* background-color: var(--red) !important; */
-	color: var(--green) !important;
-	border-radius: 10px;;
+  /* background-color: var(--red) !important; */
+  color: var(--green) !important;
+  border-radius: 10px;
 }

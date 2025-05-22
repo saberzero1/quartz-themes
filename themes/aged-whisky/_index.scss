@@ -336,6 +336,18 @@
   --inline-title-weight: 200;
   --font-text: "yu gothic ui", sans-serif;
   --font-text-size: 12.5px !important;
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --input-radius: 0px;
+  --tab-radius-active: 4px;
+  --checkbox-radius: 0px;
+  --toggle-radius: 0px;
+  --toggle-thumb-radius: 0px;
+  --slider-thumb-radius: 0px;
+  --divider-color: transparent;
+  --hr-thickness: 1px;
+  --hr-color: #adadad35;
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
@@ -450,6 +462,41 @@ html {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --text-highlight-bg: transparent;
+  --text-accent: #8d6a50;
+  --text-accent-hover: #8e746d;
+  --color-base-00: #090909;
+  --color-base-05: #090909;
+  --color-base-10: #8d6a50;
+  --color-base-20: #090909;
+  --color-base-25: #090909;
+  --color-base-30: #090909;
+  --color-base-35: #8d6a50;
+  --color-base-40: #8d6a50;
+  --color-base-50: #54453a;
+  --color-base-60: #5b5556;
+  --color-base-70: #adadad;
+  --color-base-100: #adadad;
+  --interactive-normal: #8e746d3a;
+  --slider-track-background: #8e746d;
+  --icon-color: #54453a;
+  --icon-color-hover: #8e746d;
+  --icon-color-focused: #8e746d;
+  --code-background: #141414;
+  --nav-item-color: #645f5a;
+  --nav-item-color-active: #8e746d;
+  --nav-item-color-hover: #8e746d;
+  --nav-item-background-active: transparent;
+  --nav-item-background-hover: transparent;
+  --tab-text-color-active: #856255;
+  --tab-text-color-focused: #856255;
+  --tab-divider-color: transparent;
+  --callout-title-weight: 600;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #856255;
+  --tag-color: #abaeae;
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);

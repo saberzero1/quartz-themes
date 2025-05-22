@@ -69,6 +69,7 @@
   --interactive-normal: var(--bg_dark2);
   --interactive-hover: var(--bg);
   --interactive-success: var(--green);
+  --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --interactive-accent-hover: var(--fg);
   --scrollbar-bg: var(--bg_dark2);
   --scrollbar-thumb-bg: var(--bg_dark2);

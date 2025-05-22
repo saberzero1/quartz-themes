@@ -390,6 +390,7 @@
   --accent-h: 45;
   --accent-s: 41%;
   --accent-l: 60%;
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8.8%));
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;

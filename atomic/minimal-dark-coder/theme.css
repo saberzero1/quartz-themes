@@ -1,0 +1,98 @@
+.theme-dark {
+  --background-primary: #181a1b;
+  --background-secondary: #181a1b;
+  --background-secondary-alt: #181a1b;
+
+  --text-normal: #ccba8d;
+  --text-muted: #ccba8d;
+  --text-faint: #ff1493;
+
+  --text-accent: #32cd32;
+  --text-accent-hover: #ff5c8f;
+  --text-selection: #29502e;
+  --text-highlight-bg: #29502e;
+}
+
+.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: #ff1493;
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: #ff1493;
+}
+.markdown-preview-view a {
+  color: #32cd32;
+}
+
+.cm-header-1 {
+  color: #ffd700;
+}
+
+.cm-header-2 {
+  color: #ffd700;
+}
+
+.cm-header-3 {
+  color: #ffd700;
+}
+
+.cm-header-4 {
+  color: #ffd700;
+}
+
+.cm-header-5 {
+  color: #ffd700;
+}
+
+.cm-header-6 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h1 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h2 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h3 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h4 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h5 {
+  color: #ffd700;
+}
+
+.markdown-preview-view h6 {
+  color: #ffd700;
+}
+
+.graph-view.color-fill {
+  color: #ffd700;
+}
+
+.markdown-preview-view a:hover {
+  color: #ffd700;
+}
+
+.workspace-tab-header .workspace-tab-header-inner-title {
+  color: #ccba8d;
+}
+
+.graph-view.color-fill-unresolved {
+  color: #ccba8d;
+}
+
+.graph-view.color-arrow {
+  color: #ccba8d;
+}
+
+.graph-view.color-line {
+  opacity: 0.7;
+  color: #2b8b98;
+}

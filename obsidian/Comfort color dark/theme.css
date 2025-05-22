@@ -1,6 +1,4 @@
-
-.theme-dark
-{
+.theme-dark {
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
   --background-secondary: #202225;
@@ -18,18 +16,17 @@
   --text-mark: #d79921;
   --pre-code: #272524d9;
   --text-highlight-bg: rgba(255, 255, 0, 0.2);
-  --interactive-accent: #92A1A1;
+  --interactive-accent: #92a1a1;
   --interactive-before: #5e6565;
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: rgba(77, 60, 166, .6);
+  --blockquote-border: rgba(77, 60, 166, 0.6);
   --text-accent: #ff9640ba;
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: Avenir;
   --font-family-preview: Avenir;
 }
 
-#graph-view-canvas .links
-{
+#graph-view-canvas .links {
   stroke: var(--interactive-accent-rgb) !important;
 }
 
@@ -42,8 +39,7 @@ em {
   color: #b8cece;
 }
 
-mark
-{
+mark {
   background-color: var(--text-mark) !important;
   padding-top: 4px;
   padding-bottom: 1px;
@@ -58,8 +54,7 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link
-{
+.cm-formatting-link {
   color: var(--text-a) !important;
   text-decoration: none !important;
   font-family: Avenir !important;
@@ -67,8 +62,7 @@ a,
 
 /* link hover color */
 a:hover,
-.internal-link:hover
-{
+.internal-link:hover {
   color: var(--text-a-hover) !important;
   text-decoration: none !important;
 }
@@ -79,77 +73,65 @@ a:not(.internal-link) {
 }
 
 /* blockquote */
-.cm-quote /* for editor */
-{
+.cm-quote /* for editor */ {
   color: var(--text-normal) !important;
 }
 
-blockquote /* for preview */
-{
+blockquote /* for preview */ {
   border-color: var(--blockquote-border) !important;
 }
 
 /* icons at top of panes*/
-.file-view-actions a
-{
+.file-view-actions a {
   color: var(--text-muted) !important;
 }
 
-.file-view-actions a:hover
-{
+.file-view-actions a:hover {
   color: var(--text-a) !important;
 }
 
 /* html tags in editor */
-.cm-tag
-{
+.cm-tag {
   color: var(--text-accent) !important;
 }
 
 /* code blocks in preview */
-pre code
-{
+pre code {
   padding: 6px !important;
   line-height: normal;
   display: block;
   background-color: var(--pre-code) !important;
 }
 
-.markdown-preview-view pre
-{
+.markdown-preview-view pre {
   padding: 0px !important;
 }
 
 /* in-line code for editor and preview and code block for editor*/
 code,
-.cm-inline-code
-{
+.cm-inline-code {
   background-color: var(--pre-code) !important;
   color: var(--text-muted) !important;
   bottom: 0px !important;
 }
 
 /* code and code blocks for preview */
-.markdown-preview-view code
-{
+.markdown-preview-view code {
   font-size: 13.5px;
 }
 
 /**********/
 /* tables */
 /**********/
-th
-{
+th {
   font-weight: 800 !important;
 }
 
-thead
-{
+thead {
   border-bottom: 4px solid var(--background-modifier-border);
 }
 
-.table
-{
+.table {
   background-color: var(--background-secondary-alt);
   border: 1px solid var(--background-modifier-border);
   padding: 4px;
@@ -162,22 +144,19 @@ thead
 }
 
 /* embedded images */
-img
-{
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* horizontal line in preview */
-.markdown-preview-view hr
-{
+.markdown-preview-view hr {
   background-color: var(--text-normal);
 }
 
 /* checkboxes */
-.markdown-preview-view .task-list-item-checkbox
-{
+.markdown-preview-view .task-list-item-checkbox {
   top: 0px;
 }
 
@@ -186,15 +165,12 @@ img
 /*************/
 
 /* side dock text, like file names and backlink context */
-.side-dock-panels-container *
-{
+.side-dock-panels-container * {
   font-size: 13px !important;
 }
 
 /* side dock titles at top */
-.side-dock-title
-{
-
+.side-dock-title {
   font-size: 20px !important;
   font-weight: 800 !important;
 }
@@ -205,16 +181,14 @@ img
 .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
+.side-dock-collapse-btn:hover {
   color: var(--text-a);
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
 .nav-file-title-content,
 .search-result-file-title,
-.search-result-file-match
-{
+.search-result-file-match {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: normal !important;
@@ -222,8 +196,7 @@ img
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
+.search-empty-state {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -231,13 +204,11 @@ img
 }
 
 /* font for everything outside of editor/preview panes */
-.app-container
-{
+.app-container {
   font-family: var(--font-family-preview);
 }
 
-.status-bar-item
-{
+.status-bar-item {
   font-family: var(--font-family-preview);
   font-size: 12px;
 }
@@ -247,8 +218,7 @@ img
 /******************/
 
 /* normal text outside of headings and code */
-.cm-s-obsidian
-{
+.cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -256,8 +226,7 @@ img
   padding-right: 10% !important;
 }
 
-.mod-single-child .cm-s-obsidian
-{
+.mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -266,8 +235,7 @@ img
 }
 
 /* headings */
-.cm-header-1
-{
+.cm-header-1 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 28px;
@@ -275,8 +243,7 @@ img
   color: var(--text-title-h1);
 }
 
-.cm-header-2
-{
+.cm-header-2 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 26px;
@@ -284,8 +251,7 @@ img
   color: var(--text-title-h2);
 }
 
-.cm-header-3
-{
+.cm-header-3 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 22px;
@@ -293,8 +259,7 @@ img
   color: var(--text-title-h3);
 }
 
-.cm-header-4
-{
+.cm-header-4 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 20px;
@@ -302,8 +267,7 @@ img
   color: var(--text-title-h4);
 }
 
-.cm-header-5
-{
+.cm-header-5 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 18px;
@@ -311,8 +275,7 @@ img
   color: var(--text-title-h5);
 }
 
-.cm-header-6
-{
+.cm-header-6 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 16px;
@@ -325,8 +288,7 @@ img
 /******************/
 
 /* normal text outside of headings and code */
-.markdown-preview-view
-{
+.markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -334,8 +296,7 @@ img
   padding-right: 10% !important;
 }
 
-.mod-single-child .markdown-preview-view
-{
+.mod-single-child .markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -344,8 +305,7 @@ img
 }
 
 /* headings */
-.markdown-preview-view h1
-{
+.markdown-preview-view h1 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 28px;
@@ -353,8 +313,7 @@ img
   color: var(--text-title-h1);
 }
 
-.markdown-preview-view h2
-{
+.markdown-preview-view h2 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 26px;
@@ -362,8 +321,7 @@ img
   color: var(--text-title-h2);
 }
 
-.markdown-preview-view h3
-{
+.markdown-preview-view h3 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 22px;
@@ -371,8 +329,7 @@ img
   color: var(--text-title-h3);
 }
 
-.markdown-preview-view h4
-{
+.markdown-preview-view h4 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 20px;
@@ -380,8 +337,7 @@ img
   color: var(--text-title-h4);
 }
 
-.markdown-preview-view h5,
-{
+.markdown-preview-view h5 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 18px;
@@ -389,8 +345,7 @@ img
   color: var(--text-title-h5);
 }
 
-.markdown-preview-view h6
-{
+.markdown-preview-view h6 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 16px;
@@ -398,15 +353,12 @@ img
   color: var(--text-title-h5);
 }
 
-
 /* internal embedded link rendering in preview */
-.markdown-embed-title
-{
+.markdown-embed-title {
   font-weight: 600;
 }
 
-.markdown-embed
-{
+.markdown-embed {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-left: 10px !important;
@@ -415,7 +367,7 @@ img
 
 /* remove secondary scroll bar in editor that comes from adding variable padding */
 .CodeMirror-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* to have sidebar hide and then reveal on hover

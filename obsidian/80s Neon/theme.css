@@ -27,12 +27,12 @@
 /* 1. Colours! Overriding both themes */
 .theme-dark,
 .theme-light {
-  --accent-1: #FF00FF;
-  --accent-2: #00FFFF;
-  --accent-3: #00FF00;
-  --accent-4: #FFFF00;
-  --accent-5: #FF0000;
-  --accent-6: #0000FF;
+  --accent-1: #ff00ff;
+  --accent-2: #00ffff;
+  --accent-3: #00ff00;
+  --accent-4: #ffff00;
+  --accent-5: #ff0000;
+  --accent-6: #0000ff;
 
   --accent-1-muted: #ff79c6;
   --accent-2-muted: #8be9fd;
@@ -46,7 +46,7 @@
   --background-secondary: #1a1836;
   --background-secondary-alt: #242043;
 
-  --text-accent: #FF1690;
+  --text-accent: #ff1690;
   --text-accent-hover: #7a6ae6;
 
   --text-normal: var(--accent-1);
@@ -62,7 +62,6 @@
   --background-modifier-border: var(--accent-2);
 
   --text-highlight-bg: #ffd319;
-
 
   /* obsidian dark defaults (overriding for light) */
   --text-selection: rgba(0, 122, 255, 0.2);
@@ -177,12 +176,12 @@ h6 {
 .cm-s-obsidian span.cm-formatting-quote,
 .cm-s-obsidian span.cm-hr,
 .cm-s-obsidian pre.HyperMD-table-row span.cm-hmd-table-sep,
-.cm-s-obsidian pre.HyperMD-table-row-1>span {
+.cm-s-obsidian pre.HyperMD-table-row-1 > span {
   color: var(--accent-2);
 }
 
 /* 3.3. External links */
-.cm-s-obsidian .cm-formatting-link+.cm-formatting-link-string+.cm-url,
+.cm-s-obsidian .cm-formatting-link + .cm-formatting-link-string + .cm-url,
 .cm-s-obsidian .cm-string.cm-url,
 .cm-s-obsidian span.cm-link:not(.cm-formatting),
 .cm-s-obsidian span.cm-url,
@@ -204,7 +203,8 @@ a.tag {
 .markdown-preview-view .file-embed,
 .markdown-preview-view th,
 .markdown-preview-view td {
-  box-shadow: 0 0 0.25em var(--accent-2),
+  box-shadow:
+    0 0 0.25em var(--accent-2),
     inset 0 0 0.25em var(--accent-2);
 }
 
@@ -219,7 +219,7 @@ code {
 }
 
 .markdown-preview-view code {
-  color: var(--accent-1)
+  color: var(--accent-1);
 }
 
 .cm-s-obsidian pre.HyperMD-codeblock {
@@ -260,7 +260,7 @@ ul {
   list-style: none;
 }
 
-li>p {
+li > p {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
@@ -279,27 +279,27 @@ ul li:not(.task-list-item)::before {
 }
 
 ul ul li:not(.task-list-item)::before {
-  content: "◦"
+  content: "◦";
 }
 
 ul ul ul li:not(.task-list-item)::before {
-  content: "▪"
+  content: "▪";
 }
 
 /* 3.9.2. Numbered lists */
 ol {
   list-style: none;
-  counter-reset: li
+  counter-reset: li;
 }
 
-ol>li {
+ol > li {
   counter-increment: li;
 }
 
-ol>li:not(.task-list-item)::before,
-ul ol>li:not(.task-list-item)::before,
-ul ul ol>li:not(.task-list-item)::before,
-ul ul ul ol>li:not(.task-list-item)::before {
+ol > li:not(.task-list-item)::before,
+ul ol > li:not(.task-list-item)::before,
+ul ul ol > li:not(.task-list-item)::before,
+ul ul ul ol > li:not(.task-list-item)::before {
   content: counter(li) ".";
   color: var(--accent-2);
   font-weight: normal;
@@ -328,7 +328,7 @@ ul ul ul ol>li:not(.task-list-item)::before {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   color: var(--accent-2);
   font-size: 1em;
@@ -351,7 +351,7 @@ ul ul ul ol>li:not(.task-list-item)::before {
 .graph-view.color-line {
   /* color: var(--accent-2);
   opacity: 0.5; */
-  color: #2B8B98;
+  color: #2b8b98;
 }
 
 .graph-view.color-arrow {
