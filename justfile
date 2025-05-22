@@ -28,6 +28,11 @@ build:
   node convert.js
 
 [private]
+atomize:
+  node convert.js ATOMIZE
+  npx prettier . --write
+
+[private]
 fonts:
   node extract-font-list.js
 

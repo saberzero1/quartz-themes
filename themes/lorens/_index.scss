@@ -369,59 +369,6 @@
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
-  --background-underlying-CSS-light: radial-gradient(
-      100% 100% at 13% 50%,
-      rgb(90, 109, 237) 0%,
-      rgb(224, 218, 247) 100%
-    ),
-    linear-gradient(
-      6deg,
-      rgb(235, 242, 252) 0%,
-      rgb(90, 109, 237) 5%,
-      rgb(166, 126, 241) 7%,
-      rgb(224, 218, 247) 11%,
-      rgb(90, 109, 237) 16%
-    ),
-    radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%),
-    linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%),
-    linear-gradient(
-      351deg,
-      rgb(235, 242, 252) 0%,
-      rgb(219, 244, 255) 1%,
-      rgb(235, 242, 252) 6%,
-      rgb(224, 218, 247) 10%,
-      rgb(166, 126, 241) 13%,
-      rgb(235, 242, 252) 29%
-    ),
-    radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
-    radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
-  --background-underlying-CSS-dark: linear-gradient(
-      317deg,
-      rgb(112, 55, 205) 0%,
-      rgb(29, 12, 32) 19%,
-      rgb(101, 31, 113) 19%,
-      rgb(101, 31, 113) 33%
-    ),
-    radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
-    linear-gradient(
-      109deg,
-      rgb(104, 178, 248) 0%,
-      rgb(80, 110, 229) 15%,
-      rgb(112, 55, 205) 34%,
-      rgb(104, 178, 248) 54%,
-      rgb(104, 178, 248) 65%
-    ),
-    radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
-    radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
-    linear-gradient(
-      339deg,
-      rgb(101, 31, 113) 0%,
-      rgb(104, 178, 248) 12%,
-      rgb(101, 31, 113) 14%,
-      rgb(80, 110, 229) 19%,
-      rgb(101, 31, 113) 20%,
-      rgb(29, 12, 32) 30%
-    );
   --background-underlying-CSS-blend-mode-light: overlay, color-burn;
   --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light;
   --tab-background-active: transparent;
@@ -429,8 +376,12 @@
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --tab-container-background: transparent;
+  --tab-container-background: transparent;
+  --background-underlying: var(--background-primary) !important;
   --background-underlying: var(--background-primary) !important;
   --background-underlying: var(--background-secondary) !important;
+  --background-underlying: var(--background-secondary) !important;
+  --background-underlying: var(--background-tertiary) !important;
   --background-underlying: var(--background-tertiary) !important;
   --background-underlying: var(--background-underlying-light) !important;
   --background-underlying: var(--background-underlying-dark) !important;
@@ -439,28 +390,43 @@
   --mix-blend-mode-on-border-light: normal;
   --mix-blend-mode-on-border-dark: screen;
   --background-mod-left-split: var(--background-primary) !important;
+  --background-mod-left-split: var(--background-primary) !important;
+  --background-mod-left-split: var(--background-primary) !important;
+  --background-mod-left-split: var(--background-primary) !important;
   --background-mod-left-split: var(--background-secondary) !important;
+  --background-mod-left-split: var(--background-secondary) !important;
+  --background-mod-left-split: transparent !important;
   --background-mod-left-split: transparent !important;
   --card-shadow-light: transparent;
   --card-shadow-dark: transparent;
   --background-mod-left-split: var(--background-mod-left-split-light) !important;
   --background-mod-left-split: var(--background-mod-left-split-dark) !important;
   --background-mod-right-split: var(--background-primary) !important;
+  --background-mod-right-split: var(--background-primary) !important;
+  --background-mod-right-split: var(--background-primary) !important;
+  --background-mod-right-split: var(--background-primary) !important;
   --background-mod-right-split: var(--background-secondary) !important;
+  --background-mod-right-split: var(--background-secondary) !important;
+  --background-mod-right-split: transparent !important;
   --background-mod-right-split: transparent !important;
   --card-shadow-light: transparent;
   --card-shadow-dark: transparent;
   --background-mod-right-split: var(--background-mod-right-split-light) !important;
   --background-mod-right-split: var(--background-mod-right-split-dark) !important;
   --background-mod-root-split: var(--background-primary) !important;
+  --background-mod-root-split: var(--background-primary) !important;
+  --background-mod-root-split: var(--background-primary) !important;
+  --background-mod-root-split: var(--background-primary) !important;
+  --background-mod-root-split: var(--background-primary) !important;
+  --background-mod-root-split: var(--background-primary) !important;
   --background-mod-root-split: var(--background-secondary) !important;
+  --background-mod-root-split: var(--background-secondary) !important;
+  --background-mod-root-split: transparent !important;
   --background-mod-root-split: transparent !important;
   --card-shadow-light: transparent;
   --card-shadow-dark: transparent;
   --background-mod-root-split: var(--background-mod-root-split-light) !important;
   --background-mod-root-split: var(--background-mod-root-split-dark) !important;
-  --card-shadow-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
-    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
   --card-border-radius-dark: 8px;
@@ -477,13 +443,18 @@
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
-  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
-    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --background-activated-tab-header-dark: var(--background-modifier-active-hover);
   --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
   --icon-opacity: 1;
   --icon-opacity: 1;
+  --icon-opacity: 1;
+  --icon-opacity: 1;
+  --icon-opacity: 1;
+  --icon-opacity: 1;
   --workspace-divider-color: var(--divider-color);
+  --workspace-divider-color: transparent;
+  --workspace-divider-color: transparent;
+  --workspace-divider-color: transparent;
   --workspace-divider-color: transparent;
   --ribbon-width: 16px;
   --ribbon-width: 44px;
@@ -597,6 +568,7 @@
   --radius-s: 0px;
   --radius-m: 2px;
   --radius-l: 4px;
+  --color-accent-dark: #0ba360;
   --inline-title-text-transform: var(--h1-text-transform);
   --h1-text-transform: unset;
   --h2-text-transform: unset;
@@ -637,8 +609,26 @@
   --list-bullet-radius: 50%;
   --list-bullet-border: calc(var(--list-bullet-size) / 2) solid var(--list-marker-color);
   --list-bullet-radius: 50%;
+  --list-bullet-border: calc(var(--list-bullet-size) / 2) solid var(--list-marker-color);
+  --list-bullet-radius: 50%;
+  --list-bullet-border: calc(var(--list-bullet-size) / 2) solid var(--list-marker-color);
+  --list-bullet-radius: 50%;
+  --list-bullet-border: none;
+  --list-bullet-radius: 50%;
+  --list-bullet-border: none;
+  --list-bullet-radius: 50%;
   --list-bullet-border: none;
   --list-bullet-radius: 0;
+  --list-bullet-border: none;
+  --list-bullet-radius: 0;
+  --list-bullet-border: none;
+  --list-bullet-radius: 0;
+  --list-bullet-border: none;
+  --list-bullet-radius: 0;
+  --list-bullet-transform: rotate(45deg);
+  --list-bullet-border: none;
+  --list-bullet-radius: 0;
+  --list-bullet-transform: rotate(45deg);
   --list-bullet-border: none;
   --list-bullet-radius: 0;
   --list-bullet-transform: rotate(45deg);
@@ -713,7 +703,17 @@
   --background-primary: transparent;
   --background-secondary: transparent;
   --background-primary: transparent;
+  --background-secondary: transparent;
+  --background-primary: transparent;
   --background-secondary: rgba(var(--mono-rgb-100), 0.025);
+  --background-primary: transparent;
+  --background-secondary: rgba(var(--mono-rgb-100), 0.025);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.025);
+  --background-secondary: var(--background-modifier-hover);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.025);
+  --background-secondary: var(--background-modifier-hover);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.025);
+  --background-secondary: var(--background-modifier-hover);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.025);
   --background-secondary: var(--background-modifier-hover);
   --background-primary: transparent;
@@ -890,47 +890,10 @@ html {
   --color-accent-1: var(--color-accent-1-dark);
   --color-accent-2: var(--color-accent-2-dark);
   --color-accent-3: var(--color-accent-3-dark);
+  --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-dark: #0ba360;
   --color-accent-1-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
   --color-accent-2-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
-  --color-accent-3-dark: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(0.9 * var(--accent-l))
-  );
-  --background-modifier-border: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(0.9 * var(--accent-l)),
-    0.2
-  );
-  --background-modifier-border-hover: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(0.9 * var(--accent-l)),
-    0.25
-  );
-  --background-modifier-border-focus: hsla(
-    var(--accent-h),
-    calc(0.4 * var(--accent-s)),
-    calc(0.9 * var(--accent-l)),
-    0.3
-  );
-  --background-primary: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) / 5),
-    calc(1.25 * var(--accent-l) / 4.5)
-  );
-  --background-primary-alt: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) / 5),
-    calc(1.25 * var(--accent-l) / 3.9)
-  );
-  --background-secondary: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) / 5),
-    calc(1.25 * var(--accent-l) / 4.9)
-  );
   --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -950,32 +913,16 @@ html {
   --toggle-thumb-enabled-color-dark: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-dark);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-dark);
-  --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.6),
-    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 6px rgba(0, 0, 0, 0.25),
-    inset 0px 4px 4px #ffffff;
-  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 6px hsla(var(--interactive-accent-hsl), 0.5), inset 0px 4px 4px #ffffff;
   --toggle-track-color: var(--toggle-track-color-dark);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-dark);
   --toggle-track-color-dark: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-dark: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-dark);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-dark);
-  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
-    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
-  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
-    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
   --input-radius: var(--input-radius-dark);
   --input-shadow: var(--input-shadow-dark);
   --input-shadow-hover: var(--input-shadow-hover-dark);
   --input-radius-dark: 5px;
-  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
-    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
-  --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
-    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --code-background: var(--code-background-dark);
   --code-border: var(--code-border-dark);
 

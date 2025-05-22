@@ -106,8 +106,8 @@
 .image-blur-md img,
 .image-blur-lg img {
   transition: filter 0.3s ease;
-  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
-    invert(var(--invert, 0)) blur(var(--blur, 0));
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0)) invert(var(--invert, 0))
+    blur(var(--blur, 0));
 }
 
 .image-invert img:hover,
@@ -116,8 +116,7 @@
 .image-blur-sm img:hover,
 .image-blur-md img:hover,
 .image-blur-lg img:hover {
-  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
-    invert(var(--invert, 0)) blur(0);
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0)) invert(var(--invert, 0)) blur(0);
 }
 
 .image-invert img {
@@ -172,37 +171,27 @@
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
-.workspace-leaf-content[data-mode="source"]
-  .image-hover-scale-xs
-  .image-embed:hover {
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed:hover {
   transform: scale(1.2);
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
-.workspace-leaf-content[data-mode="source"]
-  .image-hover-scale-sm
-  .image-embed:hover {
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed:hover {
   transform: scale(1.4);
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
-.workspace-leaf-content[data-mode="source"]
-  .image-hover-scale-md
-  .image-embed:hover {
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed:hover {
   transform: scale(1.6);
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
-.workspace-leaf-content[data-mode="source"]
-  .image-hover-scale-lg
-  .image-embed:hover {
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed:hover {
   transform: scale(1.8);
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
-.workspace-leaf-content[data-mode="source"]
-  .image-hover-scale-xl
-  .image-embed:hover {
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed:hover {
   transform: scale(2);
 }
 /* Hide tabs when only one tab is open (with transition) */
@@ -216,9 +205,7 @@
 }
 
 .mod-root
-  .workspace-tabs:not(.mod-stacked):not(
-    :has(.workspace-tab-header:nth-of-type(2))
-  )
+  .workspace-tabs:not(.mod-stacked):not(:has(.workspace-tab-header:nth-of-type(2)))
   .workspace-tab-header-container {
   max-height: 0;
   opacity: 0;
@@ -268,9 +255,7 @@
   transition: opacity 0.25s ease;
 }
 
-.mod-left-split
-  .mod-top-left-space
-  .workspace-tab-header-container-inner:hover {
+.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner:hover {
   opacity: 1;
 }
 
@@ -294,15 +279,9 @@
 }
 
 .workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
-.workspace-split:hover
-  .workspace-leaf-content[data-type="outgoing-link"]
-  .nav-header,
-.workspace-split:hover
-  .workspace-leaf-content[data-type="backlink"]
-  .nav-header,
-.workspace-split:hover
-  .workspace-leaf-content[data-type="outline"]
-  .nav-header {
+.workspace-split:hover .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split:hover .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split:hover .workspace-leaf-content[data-type="outline"] .nav-header {
   opacity: 1;
   height: 1.75em;
 }
@@ -314,8 +293,7 @@
 }
 
 .workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
-.workspace-sidedock-vault-profile
-  .workspace-drawer-vault-switcher.has-active-menu {
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher.has-active-menu {
   opacity: 1;
 }
 
@@ -325,9 +303,7 @@
 }
 
 /* Hide local graph header unless hovered */
-.workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  [data-type="localgraph"] {
+.workspace-tab-header-container .workspace-tab-header-container-inner [data-type="localgraph"] {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -475,8 +451,6 @@ img {
 }
 
 /* Stacked tabs transparent background fix */
-.mod-stacked
-  .workspace-tab-container
-  > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
+.mod-stacked .workspace-tab-container > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
   --background-primary: #111111;
 }

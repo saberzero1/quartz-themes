@@ -1,4 +1,5 @@
 import convertCssColorsToRgbWithSass from "./color-convert.mjs"
+import splitCombinedRulesWithPostCSS from "./atomize-css-rules.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -464,6 +465,7 @@ const args = getCommandLineArgs()
 //console.log("Command line arguments:", args)
 
 const obsidianFolder = "./obsidian"
+const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
 //console.log(folders.length)
 
@@ -622,8 +624,16 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
 })
 manifestCollection.forEach((manifest) => {
+  if (args[0] === "ATOMIZE") {
+    ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
+    const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
+    const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
+    const cssString = fs.readFileSync(cssFile, "utf8")
+    const splitCssString = splitCombinedRulesWithPostCSS(cssString)
+    fs.writeFileSync(atomicFile, splitCssString, "utf8")
+  }
   const bodyValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
     bodyRegex,
   )
   const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
@@ -635,7 +645,7 @@ manifestCollection.forEach((manifest) => {
 })
 manifestCollection.forEach((manifest) => {
   const rootValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
     rootRegex,
   )
   const rootValue2 = rootValue.replace(rootRegex, "$1")
@@ -661,11 +671,11 @@ manifestCollection.forEach((manifest) => {
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
   const darkValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
     darkRegex,
   )
   const lightValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
+    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
     lightRegex,
   )
   hasDarkOptions = darkValue !== ""

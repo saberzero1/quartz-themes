@@ -17,6 +17,7 @@
   --checklist-orange-color: var(--orange-200);
   --checklist-green-color: var(--green-300);
   --checklist-red-color: var(--red-300);
+  --checklist-yellow-color: color-mix(in oklch, var(--yellow-100), var(--orange-200) 20%);
   --gray-25: oklch(98% 0.001 279.29);
   --gray-50: oklch(96.5% 0.002 279.29);
   --gray-75: oklch(92% 0.004 279.29);

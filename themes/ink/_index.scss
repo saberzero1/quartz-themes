@@ -474,6 +474,7 @@ html {
   --accent-h: 0deg;
   --accent-s: 0%;
   --accent-l: 40%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--color-accent-hsl));
   --color-accent-1: var(--color-base-70);
   --color-accent-2: var(--color-base-80);

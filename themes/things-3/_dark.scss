@@ -15,9 +15,4 @@
   --background-modifier-border: rgba(0, 0, 0, 0.2);
   --tag-color: #f1f1f1;
   --checklist-done-color: #8a919b;
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 0),
-    calc(var(--accent-s) * 0.8),
-    calc(var(--accent-l) * 0.85)
-  ) !important;
 }

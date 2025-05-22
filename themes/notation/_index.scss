@@ -327,13 +327,30 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --font-monospace: "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
-    monospace;
   --hue: 203;
   --sat: 8%;
   --interactive-accent-rgb: 46, 170, 220;
   --code: #eb5757;
   --opacity-translucency: 0.7;
+  --hue: 203;
+  --sat: 8%;
+  --interactive-accent-rgb: 46, 170, 220;
+  --code: #eb5757;
+  --opacity-translucency: 0.7;
+  --background-primary: hsl(var(--hue), var(--sat), var(--L1));
+  --background-primary-alt: hsl(var(--hue), var(--sat), var(--L3));
+  --background-secondary: hsl(var(--hue), var(--sat), var(--L2));
+  --background-secondary-alt: hsl(var(--hue), var(--sat), var(--L3));
+  --background-accent: hsl(var(--hue), var(--sat), var(--L0));
+  --background-modifier-border: rgba(var(--text-rgb), 0.14);
+  --text-accent: rgba(var(--text-rgb), 0.45);
+  --text-accent-hover: rgba(var(--text-rgb), 0.45);
+  --text-normal: rgba(var(--text-rgb), 0.9);
+  --text-muted: rgba(var(--text-rgb), 0.45);
+  --text-faint: rgba(var(--text-rgb), 0.25);
+  --text-on-accent: rgba(var(--text-rgb), 0.9);
+  --interactive-accent: rgb(var(--interactive-accent-rgb));
+  --interactive-accent-hover: rgba(var(--interactive-accent-rgb), 0.8);
   --background-primary: hsl(var(--hue), var(--sat), var(--L1));
   --background-primary-alt: hsl(var(--hue), var(--sat), var(--L3));
   --background-secondary: hsl(var(--hue), var(--sat), var(--L2));

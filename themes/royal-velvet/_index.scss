@@ -519,6 +519,7 @@ html[saved-theme="dark"] {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
   --text-normal: var(--on-layer);
+  --text-muted: var(--on-layer-600);
   --text-accent: var(--pink);
   --text-accent-hover: var(--pinkSecondary);
   --text-faint: var(--on-layer-600);
@@ -685,6 +686,7 @@ html[saved-theme="light"] {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--red);
   --text-normal: var(--on-layer);
+  --text-muted: var(--on-layer-600);
   --text-accent: var(--pink);
   --text-accent-hover: var(--pinkSecondary);
   --text-faint: var(--on-layer-600);

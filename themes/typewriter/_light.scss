@@ -1,7 +1,15 @@
 :root[saved-theme="light"] {
   --background-primary-alt: #fcf5e4;
   --background-secondary-alt: #fcf5e4;
+  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
   --background-translucent: rgba(255, 255, 255, 0.85);
+  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
+  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
+  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l), 0.8);
+  --text-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
   --text-normal: hsl(var(--base-h), var(--base-s), var(--base-d));
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));

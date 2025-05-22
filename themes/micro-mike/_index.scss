@@ -749,13 +749,6 @@
   --bevelBright2: #8b8d9199;
   --bevelDark1: #5a5a5a99;
   --bevelDark2: #7a767299;
-  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
-    inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
-    inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
-  --bevelStyleContainerOuter: 1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
-    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1),
-    0px -2px var(--bevelDark1), -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
   --link-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --settingsHeaderGradient: linear-gradient(90deg, #ffffff16 0%, rgba(0, 0, 0, 0) 80%);
   --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.16) 100%);
@@ -831,20 +824,11 @@
   --frame-right-space: var(--titlebarButtonWidth);
   --brightKeyboardGTop: #bbb7bd;
   --brightKeyboardGBottom: #88878a;
-  --brightKeyboardGradient: linear-gradient(
-    183deg,
-    var(--brightKeyboardGTop) 0%,
-    var(--brightKeyboardGBottom) 100%
-  );
   --brightKeyboardHighlight: #d9e5f5;
   --darkKeyboardGTop: #84868a;
   --darkKeyboardGBottom: #67696b;
-  --darkKeyboardGradient: linear-gradient(
-    183deg,
-    var(--darkKeyboardGTop) 0%,
-    var(--darkKeyboardGBottom) 100%
-  );
   --keyboardButtonInsetShadow: inset 0px 1px 0px 0px var(--brightKeyboardHighlight);
+  --keyboardButtonOutsideShadow: 0px 0px 0px 1px #000000, 0px 3px 4px 1px #000000;
   --keyboardButtonBoxShadow: var(--keyboardButtonInsetShadow), var(--keyboardButtonOutsideShadow);
   --keyboardButtonBorderRadius: 6px;
   --keyboardButtonIconColor: #000;
@@ -915,37 +899,8 @@
   --level2_b: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 33%));
   --level3: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 33%));
   --level3_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 36%));
-  --bevelBright1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensityBevel) * 35% + 40%),
-    50%
-  );
-  --bevelBright2: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensityBevel) * 25% + 40%),
-    50%
-  );
-  --bevelDark1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensityBevel) * 20% + 25%),
-    50%
-  );
-  --bevelDark2: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensityBevel) * 20% + 35%),
-    50%
-  );
   --lineColor: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 40% + 20%), 50%);
   --link-color: hsl(var(--accent-h), var(--accent-s), calc(var(--linkBrightnessAdditive) * 50%));
-  --link-color-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--linkBrightnessAdditive) * 50% + 10%)
-  );
   --bevelBright1: red;
   --bevelBright2: green;
   --bevelDark1: yellow;
@@ -955,12 +910,6 @@
   --levelLayer: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 12%);
   --levelHover: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 24%);
   --buttonLayer: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 24%);
-  --buttonLayerHover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensity) * 45%),
-    36%
-  );
   --separatorColor: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 40%);
   --nav-item-background-hover: var(--levelHover);
   --nav-item-background-active: var(--levelHover);
@@ -969,35 +918,10 @@
   --icon-color-active: hsl(var(--accent-h), var(--accent-s), 75%);
   --icon-color-focused: hsl(var(--accent-h), var(--accent-s), 60%);
   --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 30% + 30%));
-  --icon-color-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensity) * 30% + 35%)
-  );
-  --icon-color-active: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensity) * 30% + 50%)
-  );
-  --icon-color-focused: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--colorIntensity) * 30% + 35%)
-  );
   --tab-text-color-focused-active-current: var(--icon-color-focused);
   --collapse-icon-color: var(--icon-color);
   --nav-indentation-guide-color: var(--separatorColor);
   --text-faint: var(--icon-color);
-  --settingsHeaderGradient: linear-gradient(
-    90deg,
-    hsla(var(--accent-h), var(--accent-s), 50%, 20%) 0%,
-    rgba(0, 0, 0, 0) 80%
-  );
-  --enabledOverlay: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 75%,
-    hsla(var(--accent-h), var(--accent-s), 50%, 20%) 100%
-  );
   --code-background: var(--bottom_a);
   --bottom: #000000;
   --bottom_a: #111111;
@@ -1047,10 +971,6 @@
   --bevelStyleTreeItem: inset 1px 1px var(--separatorColor);
   --bevelStyleTop: inset 0px 1px var(--separatorColor);
   --bevelStyleTreeItem_invert: inset -1px -1px var(--separatorColor);
-  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
-    inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
-    inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
   --input-shadow: var(--bevelStyleButton);
   --input-shadow-hover: var(--bevelStyleButton);
   --topBackgroundFocusAbstraction: var(--background-secondary-alt);
@@ -1218,66 +1138,79 @@ html {
   --dtm-08-dm-list-tab-icon-color: inherit;
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#0003, #0006);
-  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
-    0 0 0 1px #0008, 0 1px 4px #0004;
   --dtm-08-tabs-bg: linear-gradient(var(--d8dB), var(--d8dA) 50%, var(--d8d8) 50%, var(--d8d7));
   --dtm-08-tabs-bs: inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
-  --dtm-08-tab-hover-bg: linear-gradient(
-    var(--d8d8),
-    var(--d8d9) 50%,
-    var(--d8dA) 50%,
-    var(--d8dB)
-  );
   --dtm-08-tab-hover-bs: inset 0 1px #fff3, 0 0 0 1px #000b, 0 1px 2px #0008;
-  --dtm-08-tab-active-bg: linear-gradient(
-    var(--d8dC),
-    var(--d8dD) 50%,
-    var(--d8dB) 50%,
-    var(--d8dA)
-  );
   --dtm-08-tab-active-bs: inset 0 1px 3px #0008, 0 0 0 1px #000b;
-  --dtm-08-tab-selected-bg: linear-gradient(
-    var(--d8d5),
-    var(--d8d7) 50%,
-    var(--d8d9) 50%,
-    var(--d8dA)
-  );
   --dtm-08-tab-selected-bs: inset 0 1px #fff2, 0 0 0 1px #000b;
-  --dtm-08-card-style1-bg: linear-gradient(
-    var(--d8d9),
-    var(--d8dA) 50%,
-    var(--d8dB) 50%,
-    var(--d8dA)
-  );
-  --dtm-08-card-style1-bs: 0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
-    inset 0 1px #fff3;
-  --dtm-08-card-style1h-bg: linear-gradient(
-    var(--d8d8),
-    var(--d8d9) 50%,
-    var(--d8dA) 50%,
-    var(--d8d9)
-  );
-  --dtm-08-card-style1h-bs: 0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
-    inset 0 1px #fff3;
-  --dtm-08-card-style1a-bg: linear-gradient(
-    var(--d8dA),
-    var(--d8dB) 50%,
-    var(--d8dC) 50%,
-    var(--d8dB)
-  );
-  --dtm-08-card-style1a-bs: inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2,
-    inset 0 1px 1px #0006;
-  --dtm-08-card-style1i-bg: linear-gradient(
-    var(--d8dB),
-    var(--d8dA) 50%,
-    var(--d8d9) 50%,
-    var(--d8d8)
-  );
   --dtm-08-card-style1i-bs: inset 0 1px 4px #0008, 0 0 0 1px #0004, 0 2px #fff2;
-  --dtm-08-card-style2i-bs: 0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
-    inset 0 0 0 1px rgba(0 0 0/0.25);
   --dtm-08-message-hover-bg: linear-gradient(#0002, #0001 50%, #0003 50%, #0002);
   --dtm-08-right-sidebar-separator-line: linear-gradient(to right, #0000, #000b);
+  --blurple: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
+  --blurple-st: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5);
+  --blurple-hover: hsl(227.1, calc(var(--saturation-factor, 1) * 44.1%), 58.6%);
+  --blurple-active: hsl(226.3, calc(var(--saturation-factor, 1) * 33.9%), 52%);
+  --blurple-inverted: hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%);
+  --blurple-inverted-active: hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%);
+  --red: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --red-hover: hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%);
+  --red-active: hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%);
+  --red-inverted: hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%);
+  --red-inverted-active: hsl(0, calc(var(--saturation-factor, 1) * 85%), 92.2%);
+  --yellow: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-hover: hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%);
+  --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
+  --yellow-inverted-active: hsl(37.3, calc(var(--saturation-factor, 1) * 95.7%), 90.8%);
+  --green: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+  --green-hover: hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%);
+  --green-active: hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%);
+  --green-inverted: hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%);
+  --green-inverted-active: hsl(153.9, calc(var(--saturation-factor, 1) * 43.4%), 89.6%);
+  --brand-experiment-100: hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%);
+  --brand-experiment-130: hsl(228, calc(var(--saturation-factor, 1) * 62.5%), 96.9%);
+  --brand-experiment-160: hsl(228, calc(var(--saturation-factor, 1) * 60%), 95.1%);
+  --brand-experiment-200: hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%);
+  --brand-experiment-230: hsl(226.7, calc(var(--saturation-factor, 1) * 57.4%), 90.8%);
+  --brand-experiment-260: hsl(225.9, calc(var(--saturation-factor, 1) * 58.6%), 88.6%);
+  --brand-experiment-300: hsl(226.8, calc(var(--saturation-factor, 1) * 57.7%), 86.1%);
+  --brand-experiment-330: hsl(226.9, calc(var(--saturation-factor, 1) * 59.1%), 81.8%);
+  --brand-experiment-360: hsl(227.3, calc(var(--saturation-factor, 1) * 57.9%), 77.6%);
+  --brand-experiment-400: hsl(226.3, calc(var(--saturation-factor, 1) * 58%), 72%);
+  --brand-experiment-430: hsl(226.5, calc(var(--saturation-factor, 1) * 58.2%), 70%);
+  --brand-experiment-460: hsl(226.9, calc(var(--saturation-factor, 1) * 58.5%), 67.8%);
+  --brand-experiment: var(--blurple);
+  --brand-experiment-500: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
+  --brand-experiment-530: hsl(226.6, calc(var(--saturation-factor, 1) * 45.2%), 59.2%);
+  --brand-experiment-560: hsl(226.6, calc(var(--saturation-factor, 1) * 35.3%), 52.7%);
+  --brand-experiment-600: hsl(227.1, calc(var(--saturation-factor, 1) * 31%), 44.3%);
+  --brand-experiment-630: hsl(226.2, calc(var(--saturation-factor, 1) * 31.3%), 38.2%);
+  --brand-experiment-660: hsl(226.4, calc(var(--saturation-factor, 1) * 31%), 33.5%);
+  --brand-experiment-700: hsl(226.8, calc(var(--saturation-factor, 1) * 30.8%), 26.1%);
+  --brand-experiment-730: hsl(227.7, calc(var(--saturation-factor, 1) * 31.2%), 24.5%);
+  --brand-experiment-760: hsl(226.7, calc(var(--saturation-factor, 1) * 31.6%), 22.4%);
+  --brand-experiment-800: hsl(226.5, calc(var(--saturation-factor, 1) * 31.3%), 19.4%);
+  --brand-experiment-830: hsl(225, calc(var(--saturation-factor, 1) * 31.6%), 14.9%);
+  --brand-experiment-860: hsl(225, calc(var(--saturation-factor, 1) * 32%), 9.8%);
+  --brand-experiment-900: hsl(228, calc(var(--saturation-factor, 1) * 29.4%), 3.3%);
+  --brand-experiment-05a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05);
+  --brand-experiment-10a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.1);
+  --brand-experiment-15a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.15);
+  --brand-experiment-20a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.2);
+  --brand-experiment-25a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.25);
+  --brand-experiment-30a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.3);
+  --brand-experiment-35a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.35);
+  --brand-experiment-40a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.4);
+  --brand-experiment-45a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.45);
+  --brand-experiment-50a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5);
+  --brand-experiment-55a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.55);
+  --brand-experiment-60a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.6);
+  --brand-experiment-65a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.65);
+  --brand-experiment-70a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.7);
+  --brand-experiment-75a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.75);
+  --brand-experiment-80a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.8);
+  --brand-experiment-85a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.85);
+  --brand-experiment-90a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.9);
+  --brand-experiment-95a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.95);
   --status-red-500: var(--red);
   --status-yellow-500: var(--yellow);
   --status-green-600: var(--green);
@@ -1288,20 +1221,8 @@ html {
   --brand-500: var(--blurple);
   --premium-tier-2-purple-for-gradients: hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%);
   --premium-tier-2-purple-for-gradients-hsl: 342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
-  --premium-tier-2-purple-for-gradients-2: hsl(
-    296.8,
-    calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%
-  );
-  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%;
   --premium-tier-2-pink-for-gradients: hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%);
   --premium-tier-2-pink-for-gradients-hsl: 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
-  --premium-tier-2-pink-for-gradients-2: hsl(
-    296.8,
-    calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%
-  );
   --premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
 
   code[data-theme*=" "] {

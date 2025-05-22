@@ -521,12 +521,6 @@ html[saved-theme="light"] {
 
   --text-normal: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.4)) !important;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
-  --nav-item-background-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.03
-  ) !important;
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

@@ -287,9 +287,7 @@ body {
   /*
   Window
   */
-  &.is-focused
-    .workspace-tab-header.mod-active
-    .workspace-tab-header-inner-icon {
+  &.is-focused .workspace-tab-header.mod-active .workspace-tab-header-inner-icon {
     color: var(--color-accent);
   }
   &:not(.is-focused) .workspace-tab-header .workspace-tab-header-inner-icon {
@@ -341,8 +339,8 @@ strong em,
 }
 
 code {
-  font-feature-settings: "calt", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06",
-    "ss07", "ss08", "ss09", "liga";
+  font-feature-settings: "calt", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08",
+    "ss09", "liga";
 }
 
 .markdown-rendered code:not(pre > code),

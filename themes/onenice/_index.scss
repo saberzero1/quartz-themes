@@ -478,11 +478,6 @@ html[saved-theme="dark"] {
   --text-on-accent: #dcddde;
   --interactive-normal: #1f2329;
   --interactive-hover: #e5556197;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) - 10%)
-  );
   --scrollbar-active-thumb-bg: #4fa6ed;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #20242f;
@@ -496,12 +491,6 @@ html[saved-theme="dark"] {
   --purple: #bf68d9;
   --blue: #4fa6ed;
   --yellow: #e5c07b;
-  --background-modifier-hover: hsla(
-    var(--accent-h),
-    calc(var(--accent-s) - 35%),
-    var(--accent-l),
-    0.06
-  );
   --divider-color-hover: #4fa6ed;
   --ribbon-background: var(--background-secondary-alt);
   --drag-ghost-background: var(--background-secondary-alt);
@@ -616,11 +605,6 @@ html[saved-theme="light"] {
   --interactive-normal: #fafafa;
   --interactive-hover: #e5556197;
   --interactive-accent-rgb: 21, 146, 255;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) - 4%)
-  );
   --scrollbar-active-thumb-bg: #4fa6ed;
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: #686868;
@@ -635,6 +619,30 @@ html[saved-theme="light"] {
   --yellow: #986801;
   --orange: #c18401;
   --divider-color-hover: #4fa6ed;
+  --ribbon-background: var(--background-secondary-alt);
+  --drag-ghost-background: var(--background-secondary-alt);
+  --background-modifier-message: #a0a1a7;
+  --tab-outline-color: transparent;
+  --divider-color: transparent;
+  --prompt-border-color: var(--green);
+  --modal-border-color: var(--green);
+  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: var(--interactive-hover);
+  --checkbox-color: var(--green);
+  --checkbox-color-hover: var(--purple);
+  --nav-item-background-active: #4fa6ed;
+  --nav-item-color-active: #ffffff;
+  --tag-color: var(--purple);
+  --tag-background: var(--background-primary-alt);
+  --tag-color-hover: var(--purple);
+  --tag-background-hover: #8ebd6b;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 5px;
+  --tag-radius: 40px;
+  --inline-title-weight: var(--bold-weight);
+  --link-decoration: none;
+  --link-external-decoration: none;
+  --embed-padding: 0 0 0 var(--size-4-4);
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

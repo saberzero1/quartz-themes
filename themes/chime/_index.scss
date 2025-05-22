@@ -363,6 +363,8 @@
   --radius-l: 10px;
   --radius-xl: 16px;
   --ribbon-background-collapsed: transparent;
+  --ribbon-background-collapsed: transparent;
+  --ribbon-background-collapsed: transparent;
   --ribbon-background-collapsed: var(--background-primary);
   --prompt-width: 450px;
   --tab-text-color-focused-active-current: var(--color-accent-2);
@@ -376,6 +378,20 @@
   --border-width: 0px !important;
   --table-border-width: 0px;
   --table-row-alt-background: var(--color-base-05);
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-width: 0px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --link-decoration: none;
+  --link-external-decoration: none;
   --blockquote-border-thickness: 2.5px;
   --blockquote-color: var(--text-normal);
   --blockquote-background-color: var(--background-secondary-alt);
@@ -514,6 +530,37 @@ html[saved-theme="dark"] {
 
   --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
   --color-base-05: var(--color-base-20);
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 225, 120, 132;
+  --color-red: #e17884;
+  --color-green-rgb: 117, 194, 151;
+  --color-green: #75c297;
+  --color-orange-rgb: 241, 144, 112;
+  --color-orange: #f19070;
+  --color-yellow-rgb: 255, 168, 46;
+  --color-yellow: #dcb46f;
+  --color-cyan-rgb: 111, 210, 194;
+  --color-cyan: #6fd2c2;
+  --color-blue-rgb: 136, 198, 227;
+  --color-blue: #88c6e3;
+  --color-purple-rgb: 181, 132, 199;
+  --color-purple: #b584c7;
+  --color-pink-rgb: 220, 118, 167;
+  --color-pink: #dc76a7;
+  --color-base-00: #3b3347;
+  --color-base-10: #413b4e;
+  --color-base-20: #2f2837;
+  --color-base-25: #55546e;
+  --color-base-30: #4e4560;
+  --color-base-35: #545e76;
+  --color-base-40: rgb(98, 111, 134);
+  --color-base-50: rgb(125, 127, 149);
+  --color-base-60: rgb(103, 129, 148);
+  --color-base-70: #7f83a1;
+  --color-base-100: #a0a7c4;
+  --background-secondary-alt: var(--color-base-20);
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);

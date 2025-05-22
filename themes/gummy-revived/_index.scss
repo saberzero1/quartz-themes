@@ -328,6 +328,40 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --file-line-width: 74ch;
+  --transition-05: all 0.3s cubic-bezier(0.25, 0.46, 0.46, 0.95);
+  --transition-03: all 0.2s cubic-bezier(0.25, 0.47, 0.45, 0.94);
+  --o-border: 1px solid var(--background-modifier-border);
+  --font-title: "Peace Sans", sans-serif;
+  --font-interface-theme: "Inter", sans-serif;
+  --font-text-theme: "Space Grotesk", sans-serif;
+  --font-monospace: "Source Code Pro", monospace;
+  --link-color: var(--text-muted);
+  --link-color-hover: var(--text-normal);
+  --link-decoration: underline;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: 13%;
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-external-filter: none;
+  --link-unresolved-color: var(--text-muted);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: transparent;
+  --text-normal: var(--color-base-70);
+  --text-muted: var(--color-base-50);
+  --text-faint: var(--color-base-60);
+  --text-selection: var(--background-modifier-border);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --callout-radius: var(--radius-m);
+  --callout-blend-mode: normal;
   --h1-font: "Peace Sans";
   --h2-font: "Peace Sans";
   --h3-font: "Peace Sans";
@@ -455,6 +489,18 @@ html[saved-theme="dark"] {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  --color-base-00: #090909;
+  --color-base-10: #1f1f1f;
+  --color-base-20: #000000;
+  --color-base-25: #1f1f1f;
+  --color-base-30: #1f1f1f;
+  --color-base-35: #383838;
+  --color-base-40: #1f1f1f;
+  --color-base-50: #808080;
+  --color-base-60: #5f5f5f;
+  --color-base-70: #bdbdbd;
+  --color-base-100: #c6c6c6;
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);

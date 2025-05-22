@@ -27,6 +27,8 @@
   --accent-h: 80;
   --accent-s: 45%;
   --accent-l: 45%;
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-60);
   --text-faint: var(--color-base-35);

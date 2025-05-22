@@ -327,6 +327,10 @@
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
+  --callout-padding: 4px;
+  --callout-radius: var(--radius-m);
+  --callout-background-alpha: 20%;
+
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
   --bodyFont: var(--font-text) !important;

@@ -94,11 +94,7 @@ body {
   --accent-s: 41%;
   --accent-l: 60%;
 
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 8.8%)
-  );
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8.8%));
 }
 
 .theme-light {
@@ -198,8 +194,7 @@ ul > li.task-list-item[data-task="x"] a.internal-link {
 }
 
 .metadata-property[data-property-key="cssclasses"] .multi-select-pill {
-  border: var(--pill-border-width) var(--pill-border-style)
-    var(--pill-border-color);
+  border: var(--pill-border-width) var(--pill-border-style) var(--pill-border-color);
   cursor: crosshair;
 }
 
@@ -294,9 +289,7 @@ ul > li.task-list-item[data-task="X"] {
   background-color: transparent !important;
 }
 
-.tree-item-children.nav-folder-children
-  .tree-item.nav-folder
-  .nav-folder-title {
+.tree-item-children.nav-folder-children .tree-item.nav-folder .nav-folder-title {
   background: var(--active-bg);
 }
 
@@ -308,15 +301,7 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 .HyperMD-header
-  :is(
-    .cm-header-1,
-    .cm-header-2,
-    .cm-header-3,
-    .cm-header-4,
-    .cm-header-5,
-    .cm-header-6,
-
-  ),
+  :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6, ),
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
   text-transform: capitalize;
 }
@@ -436,8 +421,7 @@ a[href="#article"] {
 
 .callout[data-callout="center"] .callout-content blockquote,
 .callout[data-callout="cent"] .callout-content blockquote {
-  border-right: var(--blockquote-border-thickness) solid
-    var(--blockquote-border-color);
+  border-right: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
 }
 
 /* transparent Callouts */
@@ -460,7 +444,8 @@ a[href="#article"] {
   padding: 10px;
   margin-bottom: 15px;
   margin-left: 2%;
-  box-shadow: 0 0.5rem 1rem rgb(167 182 35 / 10%),
+  box-shadow:
+    0 0.5rem 1rem rgb(167 182 35 / 10%),
     inset 0 -1px 0 rgb(0 0 0 / 17%);
 }
 
@@ -570,10 +555,7 @@ a[href="#article"] {
 }
 
 /* Folders Icons */
-.nav-folder
-  .nav-folder-title-content:not(
-    div[data-path="/"] .nav-folder-title-content
-  )::before {
+.nav-folder .nav-folder-title-content:not(div[data-path="/"] .nav-folder-title-content)::before {
   content: "";
   position: relative;
   display: inline-block;
@@ -670,7 +652,8 @@ div.dataview-error-box {
   padding: 10px;
   margin-bottom: 15px;
   margin-right: 2%;
-  box-shadow: 0 0.5rem 1rem rgb(167 182 35 / 10%),
+  box-shadow:
+    0 0.5rem 1rem rgb(167 182 35 / 10%),
     inset 0 -1px 0 rgb(0 0 0 / 17%);
 }
 

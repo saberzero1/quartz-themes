@@ -37,6 +37,7 @@
     "sass": "^1.79.3"
   },
   "dependencies": {
-    "just-install": "^2.0.2"
+    "just-install": "^2.0.2",
+    "postcss": "^8.5.3"
   }
 }

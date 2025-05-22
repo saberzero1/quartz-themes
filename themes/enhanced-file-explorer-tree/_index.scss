@@ -330,10 +330,6 @@
   --icon-stroke: var(--icon-l-stroke-width);
 
   --bg-clr-opacity: 0.12;
-  --bg-color: light-dark(
-    rgba(0, 0, 0, var(--bg-clr-opacity)),
-    rgba(255, 255, 255, var(--bg-clr-opacity))
-  );
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;

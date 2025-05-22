@@ -357,6 +357,7 @@
   --max-width-text: 750px;
   --spectrum-side-docks: 0 0 40px;
   --spectrum-hue: 20;
+  --monochrome-color: hsl(var(--spectrum-hue), 100%, 50%);
   --main-node-rgb: 255, 190, 0;
   --main-node: rgb(var(--main-node-rgb));
   --main-node-hover-rgb: 254, 106, 38;
@@ -400,6 +401,7 @@
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
   --ribbon-width: 40px;
+  --header-height: 42px;
   --main-background: #f5f5f5;
   --secondary-background: #e2e2e2;
   --secondary-background-low-opacity: #e2e2e254;
@@ -421,14 +423,17 @@
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
   --ribbon-width: 40px;
+  --header-height: 42px;
   --list-padding-num: 2.5;
   --list-padding: var(--size-6);
   --list-marker-num: 1.5;
+  --list-marker: 1.5rem;
   --chart-color-1: var(--accent-1);
   --chart-color-2: var(--accent-2);
   --chart-color-3: var(--accent-3);
   --chart-color-4: var(--accent-4);
   --chart-color-5: var(--accent-5);
+  --chart-color-6: var(--accent-6);
 
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
@@ -587,6 +592,7 @@ html[saved-theme="dark"] {
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
   --ribbon-width: 40px;
+  --header-height: 42px;
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -661,6 +667,7 @@ html[saved-theme="light"] {
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
   --ribbon-width: 40px;
+  --header-height: 42px;
 
   code[data-theme*=" "] {
     color: var(--shiki-light);

@@ -52,6 +52,7 @@
   --link-color: var(--C001);
   --link-unresolved-color: var(--C008);
   --indentation-guide-width: 0px;
+  --vicious-indent-bg-size: calc(var(--vicious-color-count) * var(--vicious-indent-width)) 1px;
   --background-secondary-alt: var(--800);
   --background-primary: var(--800);
   --ribbon-background: var(--800);

@@ -1,68 +1,63 @@
-.theme-light
-{
-  --background-primary: #FBFBFB;
-  --background-primary-alt: #FBFBFB;
-  --background-secondary: #FBFBFB;
-  --background-secondary-alt: #2E3236;
+.theme-light {
+  --background-primary: #fbfbfb;
+  --background-primary-alt: #fbfbfb;
+  --background-secondary: #fbfbfb;
+  --background-secondary-alt: #2e3236;
   --text-normal: #333;
-  --text-faint: #B2B2B2;
+  --text-faint: #b2b2b2;
   --text-title-h1: #333;
   --text-title-h2: #333;
   --text-title-h3: #333;
   --text-title-h4: #333;
   --text-title-h5: #333;
-  --text-link: #B4B4B4;
+  --text-link: #b4b4b4;
   --text-a: #db4d52;
   --text-a-hover: #db4d52;
-  --text-mark: #D3FFA4;
-  --pre-code: #FFFFFF;
-  --interactive-accent: #92A1A1;
+  --text-mark: #d3ffa4;
+  --pre-code: #ffffff;
+  --interactive-accent: #92a1a1;
   --interactive-before: #5e6565;
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: #D6555F;
-  --tag-background: #A7B0B3;
+  --blockquote-border: #d6555f;
+  --tag-background: #a7b0b3;
   --interactive-accent-rgb: #db4d52;
   --font-family-editor: Avenir, "Avenir Next";
   --font-family-preview: Avenir, "Avenir Next";
 }
 
-.theme-dark
-{
-  --background-primary: #1E2022;
-  --background-primary-alt: #1E2022;
-  --background-secondary: #1E2022;
-  --background-secondary-alt: #2E3236;
-  --text-normal: #DDDDDD;
-  --text-faint: #B2B2B2;
-  --text-title-h1: #CBDBE5;
-  --text-title-h2: #CBDBE5;
-  --text-title-h3: #CBDBE5;
-  --text-title-h4: #CBDBE5;
-  --text-title-h5: #CBDBE5;
-  --text-link: #B4B4B4;
-  --text-a: #6BCAFB;
-  --text-a-hover: #6BCAFB;
-  --text-mark: #263D92;
+.theme-dark {
+  --background-primary: #1e2022;
+  --background-primary-alt: #1e2022;
+  --background-secondary: #1e2022;
+  --background-secondary-alt: #2e3236;
+  --text-normal: #dddddd;
+  --text-faint: #b2b2b2;
+  --text-title-h1: #cbdbe5;
+  --text-title-h2: #cbdbe5;
+  --text-title-h3: #cbdbe5;
+  --text-title-h4: #cbdbe5;
+  --text-title-h5: #cbdbe5;
+  --text-link: #b4b4b4;
+  --text-a: #6bcafb;
+  --text-a-hover: #6bcafb;
+  --text-mark: #263d92;
   --pre-code: #252525;
-  --interactive-accent: #92A1A1;
+  --interactive-accent: #92a1a1;
   --interactive-before: #5e6565;
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: #4AA8FB;
-  --tag-background: #A7B0B3;
-  --interactive-accent-rgb: #6BCAFB;
+  --blockquote-border: #4aa8fb;
+  --tag-background: #a7b0b3;
+  --interactive-accent-rgb: #6bcafb;
   --font-family-editor: Avenir, "Avenir Next";
   --font-family-preview: Avenir, "Avenir Next";
 }
 
-
-#graph-view-canvas .links
-{
+#graph-view-canvas .links {
   stroke: var(--interactive-accent-rgb) !important;
 }
 
 strong,
-.cm-strong
-{
+.cm-strong {
   color: var(--tax-normal);
   font-weight: 900 !important;
 }
@@ -75,8 +70,7 @@ s {
   color: var(--tag-background);
 }
 
-mark
-{
+mark {
   background-color: var(--text-mark) !important;
   color: var(--text-normal);
   padding: 2px 3px 2px 3px;
@@ -91,22 +85,19 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link
-{
+.cm-formatting-link {
   color: var(--text-a) !important;
   text-decoration: none !important;
   font-family: var(--font-family-preview) !important;
 }
 
-a.view-action
-{
+a.view-action {
   color: var(--text-faint) !important;
 }
 
 /* link hover color */
 a:hover,
-.internal-link:hover
-{
+.internal-link:hover {
   color: var(--text-a-hover) !important;
   text-decoration: none !important;
 }
@@ -117,13 +108,11 @@ a:not(.internal-link) {
 }
 
 /* blockquote */
-.cm-quote /* for editor */
-{
+.cm-quote /* for editor */ {
   color: var(--text-normal) !important;
 }
 
-blockquote /* for preview */
-{
+blockquote /* for preview */ {
   border-color: var(--blockquote-border) !important;
   border-top-width: 0px !important;
   border-bottom-width: 0px !important;
@@ -132,19 +121,16 @@ blockquote /* for preview */
 }
 
 /* icons at top of panes*/
-.file-view-actions a
-{
+.file-view-actions a {
   color: var(--text-faint) !important;
 }
 
-.file-view-actions a:hover
-{
+.file-view-actions a:hover {
   color: var(--text-normal) !important;
 }
 
 /* make it clear when a pane is pinned */
-.view-action.mod-pin-leaf.is-active
-{
+.view-action.mod-pin-leaf.is-active {
   color: var(--text-a) !important;
 }
 
@@ -153,14 +139,12 @@ blockquote /* for preview */
 .cm-strikethrough,
 .cm-formatting-strong,
 .cm-formatting-em,
-.cm-formatting-code
-{
+.cm-formatting-code {
   color: var(--text-faint) !important;
 }
 
 /* editor list characters */
-.cm-formatting-list
-{
+.cm-formatting-list {
   color: var(--blockquote-border) !important;
 }
 
@@ -169,7 +153,9 @@ blockquote /* for preview */
 /************************************/
 
 /* bullet lists */
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 li > p {
   display: inline-block;
   margin-top: 0;
@@ -177,73 +163,75 @@ li > p {
 }
 
 ul li:not(.task-list-item)::before {
-    content: "•";
-    color: var(--blockquote-border);
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    padding:0;
-    font-weight: bold;
-    text-shadow: 0 0 0.5em var(--accent-2);
+  content: "•";
+  color: var(--blockquote-border);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 0 0 0.5em var(--accent-2);
 }
 ul ul li:not(.task-list-item)::before {
-    content: "•"
+  content: "•";
 }
 ul ul ul li:not(.task-list-item)::before {
-    content: "•"
+  content: "•";
 }
 
 /* numbered lists */
-ol {list-style: none; counter-reset: li}
+ol {
+  list-style: none;
+  counter-reset: li;
+}
 ol > li {
-    counter-increment: li;
+  counter-increment: li;
 }
 ol > li:not(.task-list-item)::before,
 ul ol > li:not(.task-list-item)::before,
 ul ul ol > li:not(.task-list-item)::before,
 ul ul ul ol > li:not(.task-list-item)::before {
-    content: "." counter(li);
-    color:  var(--blockquote-border);
-    font-weight:normal;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1.5em;
-    margin-right: 0.5em;
-    text-align: right;
-    direction: rtl;
-    word-wrap: none;
-    overflow: visible;
-    word-break: keep-all;
+  content: "." counter(li);
+  color: var(--blockquote-border);
+  font-weight: normal;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  word-wrap: none;
+  overflow: visible;
+  word-break: keep-all;
 }
 
 /* task lists! (I'm proud of this, but could use improvement) */
 .markdown-preview-view .task-list-item-checkbox {
-    -webkit-appearance: none;
-    box-sizing: border-box;
-    border: 1px solid  var(--tag-background);
-    border-radius: 3px;
-    position: relative;
-    width: 1.25em;
-    height: 1.25em;
-    margin: 0;
-    cursor: pointer;
-    color: var(--text-normal);
-    font-weight: 600;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--tag-background);
+  border-radius: 3px;
+  position: relative;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0;
+  cursor: pointer;
+  color: var(--text-normal);
+  font-weight: 600;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-    content: '✓';
-    position: absolute;
-    font-size:1em;
-    line-height: 1em;
-    width:1.1em;
-    text-align:center;
-    border-radius: 2px;
-    cursor: pointer;
+  content: "✓";
+  position: absolute;
+  font-size: 1em;
+  line-height: 1em;
+  width: 1.1em;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 /* code blocks in preview */
-pre code
-{
+pre code {
   padding: 20px !important;
   line-height: normal;
   display: block;
@@ -251,15 +239,13 @@ pre code
   color: var(--text-normal) !important;
 }
 
-.markdown-preview-view pre
-{
+.markdown-preview-view pre {
   padding: 0px !important;
 }
 
 /* in-line code for editor and preview and code block for editor*/
 code,
-.cm-inline-code
-{
+.cm-inline-code {
   background-color: var(--pre-code) !important;
   color: var(--text-normal) !important;
   bottom: 0px !important;
@@ -267,26 +253,22 @@ code,
 }
 
 /* code and code blocks for preview */
-.markdown-preview-view code
-{
+.markdown-preview-view code {
   font-size: 13.5px;
 }
 
 /**********/
 /* tables */
 /**********/
-th
-{
+th {
   font-weight: 800 !important;
 }
 
-thead
-{
+thead {
   border-bottom: 3px solid var(--background-modifier-border);
 }
 
-.table
-{
+.table {
   background-color: var(--background-secondary-alt);
   border: 1px solid var(--background-modifier-border);
   padding: 4px;
@@ -299,28 +281,24 @@ thead
 }
 
 /* embedded images */
-img
-{
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* horizontal line in preview */
-.markdown-preview-view hr
-{
+.markdown-preview-view hr {
   background-color: var(--text-link);
 }
 
 /* checkboxes */
-.markdown-preview-view .task-list-item-checkbox
-{
+.markdown-preview-view .task-list-item-checkbox {
   top: 0px;
 }
 
 /* match cursor color to theme */
-.CodeMirror-cursor
-{
+.CodeMirror-cursor {
   border-left: 2px solid var(--blockquote-border);
 }
 
@@ -347,8 +325,7 @@ img
 }
 
 /* entire tag in preview */
-a.tag
-{
+a.tag {
   font-style: normal;
   color: var(--pre-code) !important;
   background-color: var(--tag-background);
@@ -362,15 +339,12 @@ a.tag
 /*************/
 
 /* side dock text, like file names and backlink context */
-.side-dock-panels-container *
-{
+.side-dock-panels-container * {
   font-size: 13px !important;
 }
 
 /* side dock titles at top */
-.side-dock-title
-{
-
+.side-dock-title {
   font-size: 20px !important;
   font-weight: 800 !important;
 }
@@ -381,8 +355,7 @@ a.tag
 .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
+.side-dock-collapse-btn:hover {
   color: var(--text-a);
 }
 
@@ -392,22 +365,19 @@ a.tag
 .side-dock-ribbon-action,
 .side-dock-ribbon-action.is-active,
 .nav-action-button,
-.side-dock-collapse-btn
-{
+.side-dock-collapse-btn {
   color: var(--text-faint);
 }
 
 /* quick switcher item currently selected */
-.suggestion-item.is-selected
-{
+.suggestion-item.is-selected {
   background-color: var(--pre-code);
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
 .nav-file-title-content,
 .search-result-file-title,
-.search-result-file-match
-{
+.search-result-file-match {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: normal !important;
@@ -415,8 +385,7 @@ a.tag
 }
 
 /* styling for title that is selected in filer explorer */
-.nav-file.is-active > .nav-file-title
-{
+.nav-file.is-active > .nav-file-title {
   background-color: var(--pre-code);
   color: var(--text-a);
   border-color: var(--blockquote-border);
@@ -426,13 +395,11 @@ a.tag
 
 /* text color of non-selected files in sidebar */
 .nav-file-title,
-.search-result-file-match
-{
+.search-result-file-match {
   color: var(--text-faint);
 }
 
-.search-result-file-title
-{
+.search-result-file-title {
   color: var(--text-muted);
 }
 
@@ -442,15 +409,13 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .search-result-file-match:hover,
 .search-result-file-title:hover,
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
-body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
-{
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   background-color: var(--pre-code);
   color: var(--text-normal);
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
+.search-empty-state {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -459,19 +424,16 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 
 /* to have sidebar hide and then reveal on hover */
 .app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover),
-.app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover)
-{
+.app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
   width: 0px !important;
 }
 
 /* font for everything outside of editor/preview panes */
-.app-container
-{
+.app-container {
   font-family: var(--font-family-preview);
 }
 
-.status-bar-item
-{
+.status-bar-item {
   font-family: var(--font-family-preview);
   font-size: 12px;
 }
@@ -482,24 +444,21 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 
 /* left hand side section non-selected section */
 .vertical-tab-header,
-.vertical-tab-nav-item
-{
+.vertical-tab-nav-item {
   background-color: var(--background-primary);
   border-color: var(--text-faint);
   border-width: 2px;
 }
 
 /* left hand side section selected section */
-.vertical-tab-nav-item.is-active
-{
+.vertical-tab-nav-item.is-active {
   background-color: var(--pre-code);
   border-color: var(--blockquote-border);
   border-width: 5px;
 }
 
 /* in settings menu to show hot key mapping */
-.setting-hotkey
-{
+.setting-hotkey {
   background-color: var(--pre-code);
 }
 
@@ -508,8 +467,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 /******************/
 
 /* normal text outside of headings and code */
-.cm-s-obsidian
-{
+.cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -517,8 +475,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   padding-right: 10% !important;
 }
 
-.mod-single-child .cm-s-obsidian
-{
+.mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -527,8 +484,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 }
 
 /* headings */
-.cm-header-1
-{
+.cm-header-1 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 28px;
@@ -536,8 +492,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h1);
 }
 
-.cm-header-2
-{
+.cm-header-2 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 26px;
@@ -545,8 +500,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h2);
 }
 
-.cm-header-3
-{
+.cm-header-3 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 22px;
@@ -554,8 +508,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h3);
 }
 
-.cm-header-4
-{
+.cm-header-4 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 20px;
@@ -563,8 +516,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h4);
 }
 
-.cm-header-5
-{
+.cm-header-5 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 18px;
@@ -572,8 +524,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h5);
 }
 
-.cm-header-6
-{
+.cm-header-6 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 16px;
@@ -583,15 +534,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 
 .cm-string,
 .cm-formatting-task,
-.CodeMirror-guttermarker-subtle
-{
+.CodeMirror-guttermarker-subtle {
   color: var(--text-link) !important;
 }
 
-
 /* remote secondary scroll bar in editor that comes from adding variable padding */
 .CodeMirror-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /******************/
@@ -599,8 +548,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 /******************/
 
 /* normal text outside of headings and code */
-.markdown-preview-view
-{
+.markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -608,8 +556,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   padding-right: 10% !important;
 }
 
-.mod-single-child .markdown-preview-view
-{
+.mod-single-child .markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -618,8 +565,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 }
 
 /* headings */
-.markdown-preview-view h1
-{
+.markdown-preview-view h1 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 28px;
@@ -627,8 +573,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h1);
 }
 
-.markdown-preview-view h2
-{
+.markdown-preview-view h2 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 26px;
@@ -636,8 +581,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h2);
 }
 
-.markdown-preview-view h3
-{
+.markdown-preview-view h3 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 22px;
@@ -645,8 +589,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h3);
 }
 
-.markdown-preview-view h4
-{
+.markdown-preview-view h4 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 20px;
@@ -654,8 +597,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h4);
 }
 
-.markdown-preview-view h5
-{
+.markdown-preview-view h5 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 18px;
@@ -663,8 +605,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
   color: var(--text-title-h5);
 }
 
-.markdown-preview-view h6
-{
+.markdown-preview-view h6 {
   font-family: var(--font-family-preview);
   font-weight: 600 !important;
   font-size: 16px;
@@ -673,56 +614,48 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
 }
 
 /* add some header prefix in preview */
-h1::before
-{
-  content: 'H1 ';
+h1::before {
+  content: "H1 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
-h2::before
-{
-  content: 'H2 ';
+h2::before {
+  content: "H2 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
-h3::before
-{
-  content: 'H3 ';
+h3::before {
+  content: "H3 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
-h4::before
-{
-  content: 'H4 ';
+h4::before {
+  content: "H4 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
-h5::before
-{
-  content: 'H5 ';
+h5::before {
+  content: "H5 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
-h6::before
-{
-  content: 'H6 ';
+h6::before {
+  content: "H6 ";
   font-size: 12px;
-  color: var(--text-faint)
+  color: var(--text-faint);
 }
 
 /* internal embedded link rendering in preview */
-.markdown-embed-title
-{
+.markdown-embed-title {
   font-weight: 600;
 }
 
-.markdown-embed
-{
+.markdown-embed {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-left: 10px !important;

@@ -32,9 +32,14 @@
   --color-base-60: #141f28;
   --color-base-70: #141f25;
   --color-base-100: #070b0d;
+  --color-accent-alt: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%));
   --text-normal: var(--color-base-70);
   --text-completed-checkboxes: #3e657c;
   --text-completed-checkboxes-embed: #3f6b88;
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --text-accent-hover-embed: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --text-accent-emphasis: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%));
   --inline-title-border: var(--color-base-25);
   --inline-title-color: #7c93a4;
   --heading-color: var(--color-base-40);
@@ -80,6 +85,7 @@
   --text-highlight-rendered: #252525;
   --text-highlight-editing: #000;
   --graph-text: var(--text-normal);
+  --graph-line: var(--color-base-30, var(--background-modifier-border-focus));
   --graph-node: var(--color-accent-alt);
   --graph-node-focused: var(--text-accent);
   --graph-node-unresolved: var(--color-base-30);

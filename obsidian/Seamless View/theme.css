@@ -179,7 +179,10 @@ The downside is that spaces at the end of the lines are lost from view */
 }
 
 /* keep text color when is highlighting in both modes */
-.is-flashing, .markdown-rendered mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+.is-flashing,
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
   color: inherit;
 }
 
@@ -189,7 +192,8 @@ The downside is that spaces at the end of the lines are lost from view */
 }
 
 /* strikethrough color with new variable in both modes */
-.cm-strikethrough, del {
+.cm-strikethrough,
+del {
   color: var(--strike-color);
 }
 
@@ -200,7 +204,9 @@ div:has(> pre:not(.frontmatter)):has(+ div > :is(pre, blockquote, .callout)),
 div:has(> :is(ul, ol)):has(+ div > :is(p, blockquote, .callout)),
 div:has(> :is(blockquote, .callout)):has(+ div > :is(p, blockquote, .callout):not(.admonition)),
 div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(+ div > :is(h1, h2, h3, h4, h5, h6)),
-div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(+ .mod-footer) {
+div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(
+    + .mod-footer
+  ) {
   margin-bottom: 1.5em;
 }
 
@@ -221,7 +227,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 }
 
 /* add border-bottom at the start and end of the note in both modes */
-.inline-title, .markdown-preview-view .mod-footer,
+.inline-title,
+.markdown-preview-view .mod-footer,
 .view-content > .markdown-source-view .cm-line:last-child {
   border-bottom: var(--hr-thickness) solid var(--hr-color);
 }
@@ -262,10 +269,11 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 }
 
 /* reduce other panels padding  */
-.backlink-pane, .tag-container,
-.workspace-leaf-content[data-type=outline] .view-content,
-.workspace-leaf-content[data-type=bookmarks] .view-content,
-.workspace-leaf-content[data-type=all-properties] .view-content {
+.backlink-pane,
+.tag-container,
+.workspace-leaf-content[data-type="outline"] .view-content,
+.workspace-leaf-content[data-type="bookmarks"] .view-content,
+.workspace-leaf-content[data-type="all-properties"] .view-content {
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-8);
 }
 
@@ -299,13 +307,14 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 }
 
 /* add frontmatter background in source mode */
-div:has(> .frontmatter), div:has(> .cm-hmd-frontmatter),
+div:has(> .frontmatter),
+div:has(> .cm-hmd-frontmatter),
 .cm-line:has(> .is-collapsed):not(:has(> .cm-header, .cm-list-1)):first-child {
   background-color: var(--metadata-background);
 }
 
 /* change tag padding y inside properties */
-.metadata-property[data-property-key=tags] {
+.metadata-property[data-property-key="tags"] {
   --tag-padding-y: 0.25em;
 }
 
@@ -363,15 +372,25 @@ div:has(> .frontmatter), div:has(> .cm-hmd-frontmatter),
 }
 
 /* read mode table padding and margin bottom inside canvas */
-.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child > table:last-child {
+.canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view
+  .markdown-preview-sizer
+  > div:last-child
+  > table:last-child {
   margin-bottom: var(--size-4-4);
 }
-.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child:has(> table) {
+.canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view
+  .markdown-preview-sizer
+  > div:last-child:has(> table) {
   padding-bottom: 1.5em;
 }
 
 /* hr margins in read to match the height in live preview mode */
-hr, .markdown-rendered hr {
+hr,
+.markdown-rendered hr {
   margin: calc((var(--font-text-size) * var(--line-height-normal) - 0.125em) / 2) 0;
 }
 
@@ -458,10 +477,16 @@ ul > li.task-list-item .task-list-item-checkbox {
 }
 
 /* align live preview list collapse indicator */
-.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line .cm-fold-indicator .collapse-indicator {
+.markdown-source-view.mod-cm6.is-live-preview
+  .cm-line.HyperMD-list-line
+  .cm-fold-indicator
+  .collapse-indicator {
   inset-inline-end: 4px;
 }
-.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator {
+.markdown-source-view.mod-cm6.is-live-preview
+  .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line)
+  .cm-fold-indicator
+  .collapse-indicator {
   inset-inline-end: calc(4px - var(--list-bullet-end-padding));
 }
 
@@ -506,7 +531,9 @@ ul > li.task-list-item .task-list-item-checkbox {
   border: var(--list-bullet-border);
   transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
   background-color: var(--list-marker-color);
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
   will-change: transform;
 }
 .markdown-source-view .callout .task-list-item-checkbox {
@@ -561,19 +588,21 @@ ul > li.task-list-item .task-list-item-checkbox {
 }
 
 /* css/scss syntax colors */
-pre.language-css, pre.language-scss {
+pre.language-css,
+pre.language-scss {
   --code-string: var(--color-orange-alt);
   --code-function: var(--color-cyan);
   --code-normal: var(--color-red-alt);
 }
 
 /* js/jsx syntax colors */
-pre.language-js, pre.language-jsx {
+pre.language-js,
+pre.language-jsx {
   --code-normal: var(--color-yellow);
 }
 
 /* move mathjax to left and remove extra space in both modes */
-.math-block mjx-container[jax=CHTML][display=true] {
+.math-block mjx-container[jax="CHTML"][display="true"] {
   display: inline-block;
   line-height: normal;
   overflow-x: initial;
@@ -640,8 +669,8 @@ pre.language-js, pre.language-jsx {
 }
 
 /* center embed images in both modes, needs to be !important for external images in live preview */
-.markdown-source-view.mod-cm6 img[alt*=center],
-.markdown-reading-view img[alt*=center] {
+.markdown-source-view.mod-cm6 img[alt*="center"],
+.markdown-reading-view img[alt*="center"] {
   margin-right: auto !important;
   margin-left: auto !important;
   display: block;
@@ -654,10 +683,12 @@ pre.language-js, pre.language-jsx {
 }
 
 /* change bullet points style */
-.block-language-dataview ul > li::marker, .block-language-dataviewjs ul > li::marker {
+.block-language-dataview ul > li::marker,
+.block-language-dataviewjs ul > li::marker {
   color: transparent;
 }
-.block-language-dataview ul > li:not(.task-list-item)::before, .block-language-dataviewjs ul > li:not(.task-list-item)::before {
+.block-language-dataview ul > li:not(.task-list-item)::before,
+.block-language-dataviewjs ul > li:not(.task-list-item)::before {
   position: absolute;
   content: "​";
   pointer-events: none;
@@ -668,7 +699,9 @@ pre.language-js, pre.language-jsx {
   border: var(--list-bullet-border);
   transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
   background-color: var(--list-marker-color);
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
   will-change: transform;
 }
 
@@ -689,16 +722,23 @@ pre.language-js, pre.language-jsx {
 }
 
 /* remove rounded edges */
-.lc-list-bg::after, .lc-li-wrapper::after {
+.lc-list-bg::after,
+.lc-li-wrapper::after {
   border-radius: 0;
 }
 
 /* change font weight inside list callouts */
-div.lc-list-callout, span.lc-li-wrapper {
+div.lc-list-callout,
+span.lc-li-wrapper {
   color: rgb(var(--lc-callout-color));
   font-weight: var(--font-semibold);
 }
-div.lc-list-callout .cm-hashtag, div.lc-list-callout .tag, div.lc-list-callout .inline-field, span.lc-li-wrapper .cm-hashtag, span.lc-li-wrapper .tag, span.lc-li-wrapper .inline-field {
+div.lc-list-callout .cm-hashtag,
+div.lc-list-callout .tag,
+div.lc-list-callout .inline-field,
+span.lc-li-wrapper .cm-hashtag,
+span.lc-li-wrapper .tag,
+span.lc-li-wrapper .inline-field {
   font-weight: var(--font-normal);
 }
 

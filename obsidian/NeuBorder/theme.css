@@ -36,8 +36,59 @@ body {
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
-  --background-underlying-CSS-light: radial-gradient(100% 100% at 13% 50%, #5a6ded 0%, #e0daf7 100%), linear-gradient(6deg, rgb(235, 242, 252) 0%, rgb(90, 109, 237) 5%, rgb(166, 126, 241) 7%, rgb(224, 218, 247) 11%, rgb(90, 109, 237) 16%), radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%), linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%), linear-gradient(351deg, rgb(235, 242, 252) 0%, rgb(219, 244, 255) 1%, rgb(235, 242, 252) 6%, rgb(224, 218, 247) 10%, rgb(166, 126, 241) 13%, rgb(235, 242, 252) 29%), radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%), radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
-  --background-underlying-CSS-dark: linear-gradient(317deg, #7037cd 0%, #1d0c20 19%, #651f71 19%, #651f71 33%), radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%), linear-gradient(109deg, rgb(104, 178, 248) 0%, rgb(80, 110, 229) 15%, rgb(112, 55, 205) 34%, rgb(104, 178, 248) 54%, rgb(104, 178, 248) 65%), radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), linear-gradient(339deg, rgb(101, 31, 113) 0%, rgb(104, 178, 248) 12%, rgb(101, 31, 113) 14%, rgb(80, 110, 229) 19%, rgb(101, 31, 113) 20%, rgb(29, 12, 32) 30%);
+  --background-underlying-CSS-light: radial-gradient(
+      100% 100% at 13% 50%,
+      #5a6ded 0%,
+      #e0daf7 100%
+    ),
+    linear-gradient(
+      6deg,
+      rgb(235, 242, 252) 0%,
+      rgb(90, 109, 237) 5%,
+      rgb(166, 126, 241) 7%,
+      rgb(224, 218, 247) 11%,
+      rgb(90, 109, 237) 16%
+    ),
+    radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%),
+    linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%),
+    linear-gradient(
+      351deg,
+      rgb(235, 242, 252) 0%,
+      rgb(219, 244, 255) 1%,
+      rgb(235, 242, 252) 6%,
+      rgb(224, 218, 247) 10%,
+      rgb(166, 126, 241) 13%,
+      rgb(235, 242, 252) 29%
+    ),
+    radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
+    radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
+  --background-underlying-CSS-dark: linear-gradient(
+      317deg,
+      #7037cd 0%,
+      #1d0c20 19%,
+      #651f71 19%,
+      #651f71 33%
+    ),
+    radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
+    linear-gradient(
+      109deg,
+      rgb(104, 178, 248) 0%,
+      rgb(80, 110, 229) 15%,
+      rgb(112, 55, 205) 34%,
+      rgb(104, 178, 248) 54%,
+      rgb(104, 178, 248) 65%
+    ),
+    radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    linear-gradient(
+      339deg,
+      rgb(101, 31, 113) 0%,
+      rgb(104, 178, 248) 12%,
+      rgb(101, 31, 113) 14%,
+      rgb(80, 110, 229) 19%,
+      rgb(101, 31, 113) 20%,
+      rgb(29, 12, 32) 30%
+    );
   --background-underlying-CSS-blend-mode-light: overlay, color-burn;
   --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light;
 }
@@ -45,9 +96,11 @@ body {
 :root {
   --shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
   --shadow-hover: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.7);
-  --shadow-active: inset 3px 3px 3px rgba(0, 0, 0, 0.5), inset -3px -3px 3px rgba(255, 255, 255, 0.2);
+  --shadow-active: inset 3px 3px 3px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.2);
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
-  --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.7);
   --background: #f0f0f0;
 }
 /* ======= LIGHT ==============*/
@@ -79,7 +132,7 @@ body {
   --color-base-05: #fcfcfc;
   --color-base-10: #fafafa;
   --color-base-15: #f7f7f7;
-  --color-base-20: #F0F0F0;
+  --color-base-20: #f0f0f0;
   --color-base-25: #e3e3e3;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
@@ -99,20 +152,36 @@ body {
   --color-accent-1: var(--color-accent-1-light);
   --color-accent-2: var(--color-accent-2-light);
   --color-accent-3: var(--color-accent-3-light);
-  --color-accent-hsl-light: var(--accent-h),
-        var(--accent-s),
-        var(--accent-l);
+  --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
   --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --color-accent-3-light: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(var(--accent-l)));
-  --background-modifier-border: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(var(--accent-l)), 0.2);
-  --background-modifier-border-focus: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(var(--accent-l)), 0.3);
+  --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
-  --background-secondary: hsl(var(--accent-h), calc((var(--accent-s) - 12%) / 6), calc(100% - (100% - var(--accent-l)) / 16));
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc((var(--accent-s) - 12%) / 6),
+    calc(100% - (100% - var(--accent-l)) / 16)
+  );
   --background-secondary-alt: var(--color-base-05);
-  --background-tertiary: hsl(calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%), calc(100% - (100% - var(--accent-l)) / 8));
+  --background-tertiary: hsl(
+    calc(var(--accent-h) - 18),
+    calc(var(--accent-s) - 4%),
+    calc(100% - (100% - var(--accent-l)) / 8)
+  );
   --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -121,12 +190,10 @@ body {
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
-        0px 3.4px 6.7px rgba(0, 0, 0, .042),
-        0px 15px 30px rgba(0, 0, 0, .07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-        0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-        0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --color: 0, 0%;
   /*两个值一样*/
   --l: 100%;
@@ -155,8 +222,8 @@ body {
   --button-hover-1: var(--text-muted);
   --button-color-1: #f0f0f0;
   --background-primary: var(--color-primary-lightest);
-  --background-modifier-border: #EAEAEA;
-  --background-secondary: #F6F6F6;
+  --background-modifier-border: #eaeaea;
+  --background-secondary: #f6f6f6;
   --background-secondary-alt: var(--color-primary-lightest);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
   --text-normal: #000000;
@@ -179,14 +246,19 @@ body {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
+  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
-  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
   --input-radius: var(--input-radius-light);
@@ -194,7 +266,9 @@ body {
   --input-shadow-hover: var(--input-shadow-hover-light);
   --input-radius-light: 5px;
   /* defines the radius for  search boxes */
-  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --input-shadow: var(--shadow);
   --input-shadow-hover-light: var(--shadow-hover);
   --toggle-track-color: var(--toggle-track-color-light);
@@ -669,9 +743,9 @@ p {
 }
 .theme-light code,
 .theme-light pre {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   /* Makes code blocks a bit darker*/
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   /* Adds a darker border to code blocks*/
   white-space: pre;
   /* Makes code blocks scrollable */
@@ -706,7 +780,7 @@ h1 {
   /* Adjust the space between the header text and the bar */
 }
 h1::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -724,7 +798,7 @@ h2 {
   /* Adjust the space between the header text and the bar */
 }
 h2::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -800,21 +874,21 @@ h2::after {
   box-shadow: var(--shadow-active);
 }
 /* Adds Neumorphic styling to sliders*/
-input[type='range'] {
+input[type="range"] {
   background-color: var(--color-primary);
 }
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   box-shadow: var(--toggle-thumb-shadow);
   transition: none;
 }
-input[type=range]::-webkit-slider-thumb:is(:hover, :active) {
+input[type="range"]::-webkit-slider-thumb:is(:hover, :active) {
   box-shadow: var(--toggle-thumb-shadow);
   outline-offset: 2px;
   outline: 2px solid var(--background-modifier-border-hover);
   transition: none;
   border-color: var(--slider-thumb-border-color);
 }
-body:not(.is-mobile) input[type=range]:is(:focus, :focus-visible)::-webkit-slider-thumb {
+body:not(.is-mobile) input[type="range"]:is(:focus, :focus-visible)::-webkit-slider-thumb {
   box-shadow: var(--toggle-thumb-shadow);
   outline-offset: 2px;
   outline: 2px solid var(--background-modifier-border-focus);
@@ -962,14 +1036,21 @@ body:not(.is-mobile) input[type=range]:is(:focus, :focus-visible)::-webkit-slide
 .modal-setting-nav-bar div.clickable-icon:active {
   box-shadow: var(--shadow-active);
 }
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-right-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-right-split .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-right-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-right-split) !important;
 }
 body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-leaf,
 body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-leaf-content,
 body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .view-header:not(.animate),
-body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate),
+body:not(.is-mobile)
+  .workspace-tabs:not(.mod-stacked)
+  .view-content:not(.vignette-radial, .vignette-linear, .animate),
 .sidebar-toggle-button,
 .mod-left-split .workspace-tab-header.has-active-menu,
 .mod-right-split .workspace-tab-header.has-active-menu,
@@ -1009,7 +1090,8 @@ body.theme-light:not(.is-mobile).background-underlying-CSS-light .app-container 
 /* ====== Layout ===== */
 /* default Layout*/
 body {
-  --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4), 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
+  --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
   --card-border-radius-dark: 8px;
@@ -1030,7 +1112,9 @@ body {
 .theme-light:not(.is-mobile) .status-bar,
 .theme-light:not(.is-mobile) .workspace-ribbon,
 .theme-light:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container,
-.theme-light:not(.is-mobile).card-layout-open-light .workspace-tabs .workspace-tab-header-container {
+.theme-light:not(.is-mobile).card-layout-open-light
+  .workspace-tabs
+  .workspace-tab-header-container {
   --text-muted: var(--on-border-light);
   --text-faint: var(--on-border-light);
   --titlebar-text-color: var(--text-muted);
@@ -1050,39 +1134,83 @@ body.theme-light.mod-left-split-background-primary-light {
 body.theme-light.mod-right-split-background-primary-light {
   --background-mod-left-split: var(--background-primary) !important;
 }
-body.theme-dark:not(.is-mobile).card-layout-open-dark.mod-left-split-background-transparent-dark .mod-left-split .workspace-tab-container {
+body.theme-dark:not(.is-mobile).card-layout-open-dark.mod-left-split-background-transparent-dark
+  .mod-left-split
+  .workspace-tab-container {
   --card-shadow-dark: transparent;
 }
 body.theme-light.mod-left-split-background-customize-light {
   --background-mod-left-split: var(--background-mod-left-split-light) !important;
 }
-body:not(.is-mobile).card-layout-open-light.theme-light .workspace-split.mod-left-split .workspace-tab-container,
-body:not(.is-mobile).card-layout-open-dark.theme-dark .workspace-split.mod-left-split .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-left-split .workspace-tabs:not(.mod-top),
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-left-split .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile).card-layout-open-light.theme-light
+  .workspace-split.mod-left-split
+  .workspace-tab-container,
+body:not(.is-mobile).card-layout-open-dark.theme-dark
+  .workspace-split.mod-left-split
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top),
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-split) !important;
 }
-body:not(.is-mobile).card-layout-open-light.theme-light .workspace-split.mod-right-split .workspace-tab-container,
-body:not(.is-mobile).card-layout-open-dark.theme-dark .workspace-split.mod-right-split .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-right-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-right-split .workspace-tabs:not(.mod-top),
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-right-split .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile).card-layout-open-light.theme-light
+  .workspace-split.mod-right-split
+  .workspace-tab-container,
+body:not(.is-mobile).card-layout-open-dark.theme-dark
+  .workspace-split.mod-right-split
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-right-split
+  .workspace-tabs:not(.mod-top),
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-right-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-split) !important;
 }
-body:not(.is-mobile).theme-light.card-layout-open-light.mod-left-split-background-CSS-light .workspace-split.mod-left-split .workspace-tab-container,
-body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light .workspace-split.mod-left-split .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile).theme-light.card-layout-open-light.mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-CSS-light) !important;
   background-blend-mode: var(--background-mod-left-CSS-blend-mode-light);
   backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
   -webkit-backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
 }
-body:not(.is-mobile).theme-dark.card-layout-open-dark.mod-left-split-background-CSS-dark .workspace-split.mod-left-split .workspace-tab-container,
-body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark .workspace-split.mod-left-split .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile).theme-dark.card-layout-open-dark.mod-left-split-background-CSS-dark
+  .workspace-split.mod-left-split
+  .workspace-tab-container,
+body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark
+  .workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-CSS-dark) !important;
   background-blend-mode: var(--background-mod-left-CSS-blend-mode-dark);
   backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-dark);
@@ -1093,8 +1221,13 @@ body.theme-light.mod-root-split-background-primary-light,
 body.theme-dark.mod-root-split-background-primary-dark,
 body.theme-light.mod-root-split-background-transparent-light:not(.card-layout-open-light),
 body.theme-dark.mod-root-split-background-transparent-dark:not(.card-layout-open-dark),
-body.theme-light:is(.mod-root-split-background-transparent-light, .mod-root-split-background-CSS-light) .mod-stacked,
-body.theme-dark:is(.mod-root-split-background-transparent-dark, .mod-root-split-background-CSS-dark) .mod-stacked {
+body.theme-light:is(
+    .mod-root-split-background-transparent-light,
+    .mod-root-split-background-CSS-light
+  )
+  .mod-stacked,
+body.theme-dark:is(.mod-root-split-background-transparent-dark, .mod-root-split-background-CSS-dark)
+  .mod-stacked {
   --background-mod-root-split: var(--background-primary) !important;
 }
 body.theme-light.mod-root-split-background-secondary-light,
@@ -1105,12 +1238,26 @@ body.theme-light.mod-root-split-background-transparent-light.card-layout-open-li
 body.theme-dark.mod-root-split-background-transparent-dark.card-layout-open-dark {
   --background-mod-root-split: transparent !important;
 }
-body:not(.is-mobile).card-layout-open-light.theme-light .workspace-split.mod-root .workspace-tab-container,
-body:not(.is-mobile).card-layout-open-dark.theme-dark .workspace-split.mod-root .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-root .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-root .workspace-tabs.mod-top .workspace-tab-container,
-body:not(.is-mobile):not(.card-layout-open-light).theme-light .workspace-split.mod-root .workspace-tabs:not(.mod-top),
-body:not(.is-mobile):not(.card-layout-open-dark).theme-dark .workspace-split.mod-root .workspace-tabs:not(.mod-top) {
+body:not(.is-mobile).card-layout-open-light.theme-light
+  .workspace-split.mod-root
+  .workspace-tab-container,
+body:not(.is-mobile).card-layout-open-dark.theme-dark
+  .workspace-split.mod-root
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile):not(.card-layout-open-light).theme-light
+  .workspace-split.mod-root
+  .workspace-tabs:not(.mod-top),
+body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
+  .workspace-split.mod-root
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-root-split) !important;
 }
 body:not(.is-mobile) .workspace-split.mod-left-split,
@@ -1172,8 +1319,14 @@ body:not(.is-mobile) .workspace-ribbon {
 .workspace-tabs:not(.mod-top) .workspace-tab-container > .workspace-leaf {
   box-shadow: inset 0px 1px 0px var(--workspace-divider-color);
 }
-body.theme-light.card-layout-open-light .workspace-tabs:not(.mod-top) .workspace-tab-container > .workspace-leaf,
-body.theme-dark.card-layout-open-dark .workspace-tabs:not(.mod-top) .workspace-tab-container > .workspace-leaf {
+body.theme-light.card-layout-open-light
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.theme-dark.card-layout-open-dark
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf {
   box-shadow: inset 0px 1px 0px transparent;
 }
 /* scrollbar */
@@ -1209,7 +1362,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
   border: 2px solid transparent;
   border-width: 0px 0px 0px 0px;
 }
-body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
+body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree > div > div) {
   overflow-y: overlay !important;
 }
 /* ====== titlebar ===== */
@@ -1252,7 +1405,7 @@ body.is-hidden-frameless .titlebar-button-container.mod-right {
   display: none;
 }
 .titlebar-button-container.mod-right .titlebar-button::after {
-  content: '';
+  content: "";
   background-color: var(--on-border-light);
   width: 16px;
   height: 16px;
@@ -1322,18 +1475,25 @@ body {
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
-  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4), 0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
+  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --background-activated-tab-header-dark: var(--background-modifier-active-hover);
   --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
 }
 body.theme-light.color-to-tab-icon-light .mod-root .workspace-tab-header.is-active svg,
-body.theme-light :is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+body.theme-light
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
 body.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--color-activated-tab-header-light) !important;
   --icon-opacity: 1;
 }
 body.theme-dark.color-to-tab-icon-dark .mod-root .workspace-tab-header.is-active svg,
-body.theme-dark :is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+body.theme-dark
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
 body.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--color-activated-tab-header-dark) !important;
   --icon-opacity: 1;
@@ -1406,7 +1566,11 @@ body:not(.is-mobile) .workspace::before {
   height: calc(100% - 44px);
   border-radius: var(--card-shadow-border-radius-light, 7px);
   background-color: transparent;
-  box-shadow: var(--card-shadow-light, 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4), 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2));
+  box-shadow: var(
+    --card-shadow-light,
+    0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2)
+  );
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -1466,7 +1630,11 @@ body:not(.is-phone, .extra-anim-remove) .modal.mod-community-modal {
   animation: var(--anim-duration-fast) fadeIn both;
 }
 /*from https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow */
-body:not(.extra-anim-remove) .workspace-split .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not(:has(.surfing-settings-icon)) .view-content:not(.vignette-radial, .vignette-linear, .animate),
+body:not(.extra-anim-remove)
+  .workspace-split
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-leaf-content:not(:has(.surfing-settings-icon))
+  .view-content:not(.vignette-radial, .vignette-linear, .animate),
 body:not(.extra-anim-remove) .workspace-leaf-content:not(:has(.view-content)) {
   -webkit-animation: slide-up var(--anim-duration-fast) forwards;
   animation: slide-up var(--anim-duration-fast) forwards;

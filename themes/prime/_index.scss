@@ -473,12 +473,6 @@
   --color-accent: var(--color-purple);
   --interactive-normal: var(--color-base-20);
   --interactive-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.95
-  ) !important;
   --text-accent-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
   --h1-color: var(--color-purple);
   --h2-color: var(--color-blue);
@@ -612,144 +606,72 @@
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-purple) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-purple);
   --link-external-color: var(--color-purple);
   --accent-h: 57.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-yellow) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-yellow);
   --link-external-color: var(--color-yellow);
   --accent-h: 327.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-pink) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-pink);
   --link-external-color: var(--color-pink);
   --accent-h: 147.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-green) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-green);
   --link-external-color: var(--color-green);
   --accent-h: 26.74;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-orange) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-orange);
   --link-external-color: var(--color-orange);
   --accent-h: 177.45;
   --accent-s: 90%;
   --accent-l: 80%;
   --interactive-accent: var(--color-blue) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-blue);
   --link-external-color: var(--color-blue);
   --accent-h: 237.8;
   --accent-s: 90%;
   --accent-l: 76%;
   --interactive-accent: var(--color-purple) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-purple);
   --link-external-color: var(--color-purple);
   --accent-h: 57.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-yellow) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-yellow);
   --link-external-color: var(--color-yellow);
   --accent-h: 327.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-pink) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.45
-  ) !important;
   --link-color: var(--color-pink);
   --link-external-color: var(--color-pink);
   --accent-h: 147.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-green) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.8
-  ) !important;
   --link-color: var(--color-green);
   --link-external-color: var(--color-green);
   --accent-h: 26.74;
   --accent-s: 90%;
   --accent-l: 50%;
   --interactive-accent: var(--color-orange) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.8
-  ) !important;
   --link-color: var(--color-orange);
   --link-external-color: var(--color-orange);
   --accent-h: 177.45;
   --accent-s: 90%;
   --accent-l: 40%;
   --interactive-accent: var(--color-blue) !important;
-  --interactive-accent-hover: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.85
-  ) !important;
   --link-color: var(--color-blue);
   --link-external-color: var(--color-blue);
   --h1-color: var(--h1-color-custom);
@@ -809,10 +731,16 @@
   --italic-color: var(--color-orange);
   --italic-color: var(--color-pink);
   --text-highlight-bg: var(--highlight-bg-purple);
+  --text-highlight-bg: var(--highlight-bg-purple);
+  --text-highlight-bg: var(--highlight-bg-blue);
   --text-highlight-bg: var(--highlight-bg-blue);
   --text-highlight-bg: var(--highlight-bg-green);
+  --text-highlight-bg: var(--highlight-bg-green);
+  --text-highlight-bg: var(--highlight-bg-yellow);
   --text-highlight-bg: var(--highlight-bg-yellow);
   --text-highlight-bg: var(--highlight-bg-orange);
+  --text-highlight-bg: var(--highlight-bg-orange);
+  --text-highlight-bg: var(--highlight-bg-pink);
   --text-highlight-bg: var(--highlight-bg-pink);
   --blockquote-style: italic;
   --code-background: var(--color-dracula-background);
@@ -838,6 +766,17 @@
   --code-string: var(--color-dark-one-dark-green);
   --code-tag: var(--color-dark-one-dark-yellow);
   --code-value: var(--color-dark-one-dark-blue);
+  --code-background: var(--color-ctp-frappe-background);
+  --code-normal: var(--color-ctp-frappe-foreground);
+  --code-comment: var(--color-ctp-frappe-faint);
+  --code-function: var(--color-ctp-frappe-yellow);
+  --code-important: var(--color-ctp-frappe-orange);
+  --code-keyword: var(--color-ctp-frappe-pink);
+  --code-property: var(--color-ctp-frappe-cyan);
+  --code-punctuation: var(--color-ctp-frappe-muted);
+  --code-string: var(--color-ctp-frappe-green);
+  --code-tag: var(--color-ctp-frappe-red);
+  --code-value: var(--color-ctp-frappe-purple);
   --code-background: var(--color-ctp-frappe-background);
   --code-normal: var(--color-ctp-frappe-foreground);
   --code-comment: var(--color-ctp-frappe-faint);
@@ -965,6 +904,104 @@
   --code-tag: var(--color-tokyo-night-light-red);
   --code-value: var(--color-tokyo-night-light-purple);
   --color-green: #a0fa9c;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
+  --checkbox-marker-color: transparent;
   --checkbox-marker-color: transparent;
   --checkbox-marker-color: transparent;
   --checkbox-marker-color: transparent;

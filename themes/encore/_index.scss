@@ -378,6 +378,13 @@
   --border-radius-lg: 8px;
   --input-shadow: none;
   --input-shadow-hover: none;
+  --color-primary: var(--color-accent);
+  --color-primary-darker: var(--color-accent-1);
+  --color-primary-darkest: var(--color-accent-2);
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --button-gray-1: var(--color-base-30);
   --button-gray-2: var(--color-base-40);
   --button-gray-3: var(--color-base-30);
@@ -415,6 +422,7 @@
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
+  --color-base-50: rgb(var(--grey-350-rgb));
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -451,6 +459,7 @@
   --color-base-30: rgb(var(--grey-600-rgb));
   --color-base-35: rgb(var(--grey-500-rgb));
   --color-base-40: rgb(var(--grey-400-rgb));
+  --color-base-50: rgb(var(--grey-350-rgb));
   --color-base-60: rgb(var(--grey-300-rgb));
   --color-base-70: rgb(var(--grey-200-rgb));
   --color-base-100: rgb(var(--grey-100-rgb));
@@ -717,16 +726,6 @@
   --grey-875-rgb: 6, 6, 6;
   --grey-900-rgb: 3, 3, 3;
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
-  --rainbow-gradient: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 222, 0, 1) 15%,
-    rgba(167, 255, 0, 1) 26%,
-    rgba(0, 255, 136, 1) 39%,
-    rgba(15, 245, 254, 1) 55%,
-    rgba(111, 0, 255, 1) 80%,
-    rgba(253, 45, 45, 1) 100%
-  );
   --bold-color: var(--color-red);
   --italic-color: var(--color-green);
   --shadow-properties: 0 0 50px -25px;
@@ -868,6 +867,9 @@
   --en-acrylic: blur(4px);
   --en-acrylic-opacity: 0.9;
   --en-modal-backdrop: blur(5px);
+  --en-acrylic: brightness(0.5);
+  --en-acrylic-opacity: 0.9;
+  --en-modal-backdrop: brightness(0.5);
   --en-acrylic: brightness(0.5);
   --en-acrylic-opacity: 0.9;
   --en-modal-backdrop: brightness(0.5);

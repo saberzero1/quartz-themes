@@ -1,7 +1,7 @@
 /* content-window.css */
 .markdown-source-view.mod-cm6 {
   & {
-    --font-monospace-theme: 'Cascadia Mono';
+    --font-monospace-theme: "Cascadia Mono";
     font-feature-settings: "ss01";
     --font-text: var(--font-monospace);
     --font-text-size: 1em;
@@ -50,7 +50,7 @@
 
 .markdown-reading-view {
   & {
-    --font-text-theme: 'CMU Serif';
+    --font-text-theme: "CMU Serif";
     --font-text-size: 1em;
     --line-height-normal: 1.8em;
     --line-height-tight: 1.4em;
@@ -159,10 +159,26 @@ body {
   --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 50%);
   --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 80%);
   --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 90%);
-  --accent-shade-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 20%);
-  --accent-shade-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 40%);
-  --accent-shade-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 80%);
-  --accent-shade-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 90%);
+  --accent-shade-1: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 20%
+  );
+  --accent-shade-2: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 40%
+  );
+  --accent-shade-3: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 80%
+  );
+  --accent-shade-4: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 90%
+  );
 }
 
 .theme-dark {
@@ -173,10 +189,26 @@ body {
   --text-faint: #555;
 
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --accent-shade-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 30%);
-  --accent-shade-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 50%);
-  --accent-shade-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 80%);
-  --accent-shade-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 90%);
+  --accent-shade-1: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 30%
+  );
+  --accent-shade-2: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 50%
+  );
+  --accent-shade-3: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 80%
+  );
+  --accent-shade-4: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 90%
+  );
   --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 20%);
   --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 40%);
   --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 80%);
@@ -203,7 +235,8 @@ body {
       color: var(--text-accent);
     }
 
-    &.cm-code, &.cm-inline-code {
+    &.cm-code,
+    &.cm-inline-code {
       font-style: normal;
     }
   }
@@ -260,11 +293,11 @@ body {
       font-weight: var(--font-normal);
       overflow-wrap: break-word;
 
-      &>* {
+      & > * {
         margin: var(--line-height-normal) 0;
       }
 
-      &>*:last-child {
+      & > *:last-child {
         margin-bottom: 0;
       }
 
@@ -279,13 +312,14 @@ body {
         padding: 0;
       }
 
-      ul, ol {
+      ul,
+      ol {
         li::marker {
           color: inherit;
         }
       }
 
-      ul>li {
+      ul > li {
         --list-indent: 2ch;
 
         &::marker {
@@ -294,7 +328,7 @@ body {
           font-weight: var(--font-bold);
         }
 
-        &>ul>li {
+        & > ul > li {
           --list-indent: 4ch;
         }
       }
@@ -305,7 +339,7 @@ body {
         li {
           --list-indent: 0;
 
-          &>ol>li {
+          & > ol > li {
             --list-indent: 4ch;
           }
         }
@@ -346,7 +380,7 @@ body {
     background-color: transparent;
     color: rgb(var(--callout-color));
 
-    .callout-content>*:last-child {
+    .callout-content > *:last-child {
       margin-bottom: 0;
     }
 
@@ -418,7 +452,7 @@ body {
       padding: 0;
     }
   }
-  
+
   .cm-line:has(> .cm-hmd-indented-code) {
     background-color: var(--code-background);
 
@@ -572,7 +606,12 @@ body {
     --heading-spacing: 1em;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-variation-settings: "wght" var(--h1-weight);
     font-weight: var(--h1-weight);
     padding: 0;
@@ -753,7 +792,7 @@ body {
   li::marker {
     color: inherit;
   }
-}/* contents/paragraph.css */
+} /* contents/paragraph.css */
 .markdown-source-view {
   .cm-line {
     font-variation-settings: "wght" var(--font-normal);
@@ -821,4 +860,3 @@ body {
 .pwc-reference-list .csl-entry-wrapper:not(:last-child) {
   border-bottom: none;
 }
-

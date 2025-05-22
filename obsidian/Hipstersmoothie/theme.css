@@ -72,16 +72,10 @@
   --text-muted-rgb: 112, 106, 105;
   --text-faint: var(--gray-500);
   --text-highlight-bg: var(--yellow-800);
-  --text-selection: rgba(
-    var(--yellow-500-R),
-    var(--yellow-500-G),
-    var(--yellow-500-B),
-    0.5
-  );
+  --text-selection: rgba(var(--yellow-500-R), var(--yellow-500-G), var(--yellow-500-B), 0.5);
   --text-on-accent: var(--gray-100);
   --interactive-accent: var(--primary-500);
-  --interactive-accent-rgb: var(--primary-500-R) var(--primary-500-G)
-    var(--primary-500-B);
+  --interactive-accent-rgb: var(--primary-500-R) var(--primary-500-G) var(--primary-500-B);
   --interactive-hover: var(--primary-800);
   --interactive-accent-hover: var(--primary-400);
   --scrollbar-active-thumb-bg: var(--primary-700);
@@ -176,12 +170,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .tag:not(.token) {
   --lighten-by: 70;
 
-  background-color: rgba(
-    var(--primary-500-R),
-    var(--primary-500-G),
-    var(--primary-500-B),
-    0.18
-  );
+  background-color: rgba(var(--primary-500-R), var(--primary-500-G), var(--primary-500-B), 0.18);
   border: 2px solid
     hsla(
       var(--primary-500-H),
@@ -206,12 +195,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 .tag:not(.token):hover {
   color: white;
-  background-color: rgba(
-    var(--primary-500-R),
-    var(--primary-500-G),
-    var(--primary-500-B),
-    0.4
-  );
+  background-color: rgba(var(--primary-500-R), var(--primary-500-G), var(--primary-500-B), 0.4);
 }
 
 .tag[href^="#obsidian"] {
