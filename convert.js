@@ -812,9 +812,11 @@ console.log("Updating Quartz Syncer file list...")
 
 // Prepare Quartz Syncer file list
 if (fs.existsSync("quartz-syncer-file-list.json")) fs.unlinkSync("quartz-syncer-file-list.json")
+if (fs.existsSync("theme-list")) fs.unlinkSync("theme-list")
 
 // Build Quartz Syncer file list as json
 const quartzSyncerFileList = {}
+const themeListFileList = []
 
 // Get all directories under themes
 const themeFolders = listFoldersInDirectory(`./themes`)
@@ -824,6 +826,7 @@ themeFolders.forEach((folder) => {
   const files = getFilesUnderDirectoryToStringArray(`./themes/${folder}`, folder)
   const themeName = folder.replace(/^\.\//, "")
   quartzSyncerFileList[themeName] = files
+  themeListFileList.push(themeName)
 })
 
 // Write the file list to quartz-syncer-file-list.json
@@ -832,5 +835,8 @@ fs.writeFileSync(
   JSON.stringify(quartzSyncerFileList, null, 2),
   "utf8",
 )
+
+// Write the theme list to theme-list
+fs.writeFileSync(`./theme-list`, themeListFileList.join("\n"), "utf8")
 
 console.log("Finished updating Quartz Syncer file list")
