@@ -35,8 +35,8 @@
   --text-faint: var(--muted);
   --bold-color: var(--love);
   --italic-color: var(--foam);
-  --titlebar-background: transparent !important;
-  --titlebar-background-focused: transparent !important;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
   --titlebar-border-width: 0px;
   --icon-color: var(--text);
   --clickable-icon-radius: 8px;
@@ -194,7 +194,4 @@
   --color-base-70: var(--subtle);
   --color-base-100: var(--text);
   --latex-color: var(--pine);
-  --pomodoro-timer-dot-color: var(--love);
-  --pomodoro-timer-elapsed-color: var(--foam);
-  --pomodoro-timer-color: var(--text-selection);
 }
