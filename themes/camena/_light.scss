@@ -1,0 +1,34 @@
+:root[saved-theme="light"] {
+  --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-rgb: from var(--accent-color) r g b;
+  --color-red: hsl(var(--red-h), var(--accent-s), var(--accent-l));
+  --color-red-rgb: from var(--color-red) r g b;
+  --color-orange: hsl(var(--orange-h), var(--accent-s), var(--accent-l));
+  --color-orange-rgb: from var(--color-orange) r g b;
+  --color-yellow: hsl(var(--yellow-h), var(--accent-s), var(--accent-l));
+  --color-yellow-rgb: from var(--color-yellow) r g b;
+  --color-green: hsl(var(--green-h), var(--accent-s), var(--accent-l));
+  --color-green-rgb: from var(--color-green) r g b;
+  --color-cyan: hsl(var(--cyan-h), var(--accent-s), var(--accent-l));
+  --color-cyan-rgb: from var(--color-cyan) r g b;
+  --color-blue: hsl(var(--blue-h), var(--accent-s), var(--accent-l));
+  --color-blue-rgb: from var(--color-blue) r g b;
+  --color-purple: hsl(var(--purple-h), var(--accent-s), var(--accent-l));
+  --color-purple-rgb: from var(--color-purple) r g b;
+  --color-pink: hsl(var(--pink-h), var(--accent-s), var(--accent-l));
+  --color-pink-rgb: from var(--color-pink) r g b;
+  --color-grey: hsl(0, 0, var(--accent-l));
+  --color-grey-rgb: from var(--color-grey) r g b;
+  --color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 98%);
+  --color-base-05: hsl(var(--accent-h), calc(var(--accent-s) / 3), 95%);
+  --color-base-10: hsl(var(--accent-h), calc(var(--accent-s) / 3), 90%);
+  --color-base-20: hsl(var(--accent-h), calc(var(--accent-s) / 3), 85%);
+  --color-base-25: hsl(var(--accent-h), calc(var(--accent-s) / 3), 80%);
+  --color-base-30: hsl(var(--accent-h), calc(var(--accent-s) / 3), 75%);
+  --color-base-35: hsl(var(--accent-h), calc(var(--accent-s) / 3), 70%);
+  --color-base-40: hsl(var(--accent-h), calc(var(--accent-s) / 3), 65%);
+  --color-base-50: hsl(var(--accent-h), calc(var(--accent-s) / 3), 60%);
+  --color-base-60: hsl(var(--accent-h), calc(var(--accent-s) / 3), 40%);
+  --color-base-70: hsl(var(--accent-h), calc(var(--accent-s) / 3), 30%);
+  --color-base-100: hsl(var(--accent-h), calc(var(--accent-s) / 3), 20%);
+}

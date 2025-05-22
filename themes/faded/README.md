@@ -11,8 +11,13 @@
 ### GitHub Actions
 
 ```yaml
+env:
+  THEME_NAME: faded
+```
+
+```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- faded
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 ### Manual install

@@ -11,8 +11,13 @@
 ### GitHub Actions
 
 ```yaml
+env:
+  THEME_NAME: feather
+```
+
+```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- feather
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 ### Manual install

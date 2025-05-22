@@ -1,0 +1,276 @@
+/* page width */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    max-width: 600px;
+}
+
+
+/* add a background to the whole sidebar */
+.mod-sidedock {
+    background: radial-gradient(circle at top, transparent 9%, #151515 10%, #151515 15%, transparent 16%), radial-gradient(circle at bottom, transparent 19%, #151515 20%, #151515 25%, transparent 26%), radial-gradient(circle at right, transparent 19%, #151515 20%, #151515 25%, transparent 26%), radial-gradient(circle at left, transparent 9%, #151515 10%, #151515 15%, transparent 16%);
+    background-size: 1em 1em;
+    background-color: #070707;
+    opacity: 1;
+}
+
+
+.mod-sidedock .workspace-leaf,
+.mod-sidedock .workspace-tab-header-container {
+    background: transparent;
+}
+
+
+
+a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #4c5e7597;
+}
+
+
+span.view-header-breadcrumb,
+div.view-header-title {
+    font-family: 'georgia', serif;
+    letter-spacing: 1px;
+
+
+}
+
+
+.markdown-source-view,
+.cm-scroller,
+.markdown-preview-view,
+.markdown-reading-view {
+
+    line-height: 1.1em !important;
+    letter-spacing: 0.1px;
+}
+
+
+
+a.tag,
+.cm-hashtag {
+    font-family: 'georgia', serif;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+
+}
+
+.nav-file-title,
+.nav-folder-title {
+    font-family: 'segoe ui', sans-serif;
+    font-size: 12px;
+}
+
+
+body {
+    --inline-title-color: #4C5E75;
+    --inline-title-font: 'georgia', serif;
+    --inline-title-size: 2em;
+    --inline-title-margin-bottom: 0.5em;
+    --inline-title-weight: 200;
+
+    --font-text: 'segoe ui', sans-serif;
+    --font-text-size: 14px !important;
+
+
+
+
+
+}
+
+
+
+
+body {
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 4px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+    display: none;
+}
+
+svg * {
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    rx: 0;
+    ry: 0;
+}
+
+.menu {
+    padding: var(--size-2-1);
+}
+
+.menu-item {
+    padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+    margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+
+
+
+
+
+.body {
+    font-family: 'segoe ui', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+
+.workspace-tab-header-inner-title {
+    font-family: 'Georgia', serif;
+    text-transform: lowercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+body {
+    --divider-color: transparent;
+    --hr-thickness: 1px;
+    --hr-color: #3d424180;
+}
+
+.markdown-rendered blockquote {
+
+    padding-left: 15px;
+    font-style: normal;
+    border-left: 1px dotted #4C5E75;
+    background-color: #070707;
+    margin-left: 2em;
+}
+
+
+
+
+
+.theme-dark,
+.theme-light {
+
+
+    --text-highlight-bg: transparent;
+
+    --text-accent: #4C5E75;
+    --text-accent-hover: #4e698d;
+
+
+
+    --color-base-00: #000000;
+    --color-base-05: #070707;
+    --color-base-10: #070707;
+    --color-base-20: #070707;
+    --color-base-25: #070707;
+    --color-base-30: #070707;
+    --color-base-35: #030303;
+    --color-base-40: #4C5E75;
+    --color-base-50: #4C5E75;
+    --color-base-60: #4C5E75;
+    --color-base-70: #49504E;
+    --color-base-100: #49504E;
+
+    --interactive-normal: #0a0c14;
+    --slider-track-background: #4C5E75;
+    --icon-color: #4C5E75;
+    --icon-color-hover: #4b74a9;
+    --icon-color-focused: #405876;
+
+    --code-background: #070707;
+
+    --nav-item-color: #49504E;
+    --nav-item-color-active: #4C5E75;
+    --nav-item-color-hover: #3D4241;
+
+    --nav-item-background-active: transparent;
+    --nav-item-background-hover: transparent;
+
+    --tab-text-color-active: #4C5E75;
+    --tab-text-color-focused: #4C5E75;
+
+    --tab-divider-color: transparent;
+
+
+
+    --callout-title-weight: 200;
+
+    --tag-background: transparent;
+    --tag-background-hover: transparent;
+    --tag-color-hover: #3D4241;
+    --tag-color: #4C5E75;
+
+
+}
+
+
+
+.callout {
+    border: 1px dotted #4c5e755b;
+    background-color: #030303;
+    border-radius: 0px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.callout-title {
+    color: #4C5E75;
+    font-size: 15px;
+    font-family: 'georgia', serif;
+}
+
+
+
+
+
+
+.markdown-preview-section>div h1,
+.markdown-preview-section>div h2,
+.markdown-preview-section>div h3,
+.markdown-preview-section>div h4,
+.markdown-preview-section>div h5,
+.markdown-preview-section>div h6 {
+    font-family: 'georgia', serif;
+    margin-top: 40px;
+    font-weight: normal;
+    color: #4C5E75 !important;
+
+
+}
+
+
+
+
+::-webkit-scrollbar-track {
+    background: #000000 !important;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    background: #000000 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4C5E75 !important;
+    width: 1px !important;
+    border: 3px solid #000000 !important;
+    border-radius: 0px !important;
+}

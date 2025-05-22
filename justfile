@@ -40,6 +40,9 @@ format:
   npx prettier . --write
 
 [private]
+lint: format
+
+[private]
 compile-all: build fonts format clean-fonts
 
 [private]

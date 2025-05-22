@@ -1,0 +1,25 @@
+:root[saved-theme="dark"] {
+  --background-primary: #1c1c1e;
+  --background-primary-rgb: 28, 28, 30;
+  --background-secondary: #2c2c2e;
+  --background-secondary-alt: #222222;
+  --text-normal: #dcdcdc;
+  --background-modifier-border: rgba(0, 0, 0, 0.2);
+  --background-modifier-hover: rgba(255, 255, 255, 0.12);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.15);
+  --div-color: #191919;
+  --hr-color: #363636;
+  --text-extreme: #fff;
+  --tab-background: rgba(255, 255, 255, 0.05);
+  --tab-background-active: rgba(255, 255, 255, 0.1);
+  --code-comment: #a0a0a0;
+  --code-tag: #ff6188;
+  --code-value: #0a84ff;
+  --code-string: #50fa7b;
+  --code-property: #ffd60a;
+  --code-function: #5ac8fa;
+  --code-keyword: #ff9f0a;
+  --code-important: #ff453a;
+  --code-text: #fafafa;
+  --code-background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,55 @@
+.callout {
+  --border: transparent !important;
+
+  padding: var(--size-4-3);
+
+  .callout-title {
+    padding-top: 0 !important;
+  }
+
+  .callout-title-inner {
+    font-weight: bold;
+    color: var(--text-normal);
+  }
+
+  .callout-content {
+    display: grid;
+    p {
+      margin: 0;
+    }
+  }
+
+  .callout-icon {
+    display: none;
+  }
+
+  --s: 10px;
+  /* control the size*/
+  --c1: rgba(var(--color-rgb), 0.1);
+  --c2: #cd8b5200;
+
+  --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+  --_s: calc(var(--s) / 2) / calc(2 * var(--s)) calc(2 * var(--s));
+  background:
+    linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s),
+    linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s),
+    radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0 / var(--s) var(--s);
+
+  .callout-title-inner {
+    background-color: rgba(var(--color-rgb), 0.3);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  .callout-content p {
+    font-weight: bold;
+  }
+}
+
+.callout.is-collapsible.is-collapsed {
+  margin-bottom: 0 !important;
+  .callout {
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
