@@ -37,13 +37,13 @@
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
-    "/_light.scss",
     "/callouts/default.scss",
     "/callouts/overrides.scss",
     "/extras/_index.scss",
     "/extras/fonts/avenir.scss",
     "/extras/fonts/inter.scss",
-    "/extras/fonts/source-code-pro.scss"
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
   ],
   "abyssal": [
     "/README.md",
@@ -572,11 +572,11 @@
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
-    "/_light.scss",
     "/callouts/default.scss",
     "/callouts/overrides.scss",
     "/extras/_index.scss",
-    "/extras/fonts/palatino.scss"
+    "/extras/fonts/palatino.scss",
+    "/extras/hide-toggle.scss"
   ],
   "colored-candy": [
     "/README.md",
@@ -784,13 +784,13 @@
     "/README.md",
     "/_dark.scss",
     "/_index.scss",
-    "/_light.scss",
     "/callouts/default.scss",
     "/callouts/overrides.scss",
     "/extras/_index.scss",
     "/extras/fonts/avenir.scss",
     "/extras/fonts/inter.scss",
-    "/extras/fonts/source-code-pro.scss"
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
   ],
   "darkember": [
     "/README.md",
@@ -3848,6 +3848,18 @@
     "/extras/fonts/avenir.scss",
     "/extras/fonts/inter.scss",
     "/extras/fonts/source-code-pro.scss"
+  ],
+  "vibrant": [
+    "/README.md",
+    "/_dark.scss",
+    "/_index.scss",
+    "/callouts/default.scss",
+    "/callouts/overrides.scss",
+    "/extras/_index.scss",
+    "/extras/fonts/avenir.scss",
+    "/extras/fonts/inter.scss",
+    "/extras/fonts/source-code-pro.scss",
+    "/extras/hide-toggle.scss"
   ],
   "vicious": [
     "/README.md",
