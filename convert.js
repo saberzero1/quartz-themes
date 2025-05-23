@@ -1,5 +1,5 @@
 import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import * as postcss from "./postcss.mjs"
+import { splitCombinedRules, combineIdenticalSelectors, removeEmptyRules } from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -624,13 +624,20 @@ manifestCollection.forEach((manifest) => {
 })
 manifestCollection.forEach((manifest) => {
   if (args[0] === "ATOMIZE") {
+    if (!fs.existsSync(`./converted_app.css`)) {
+      const obsidianCSS = fs.readFileSync("./app.css", "utf8")
+      let result = splitCombinedRules(obsidianCSS)
+      result = combineIdenticalSelectors(result)
+      fs.writeFileSync(`./converted_app.css`, result, "utf8")
+    }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
-    const obsidianCSS = fs.readFileSync("./app.css", "utf8")
-    let result = `${obsidianCSS}\n${postcss.splitCombinedRules(cssString)}`
-    result = postcss.combineIdenticalSelectors(result)
+    const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
+    let result = `${obsidianCSS}\n${splitCombinedRules(cssString)}`
+    result = combineIdenticalSelectors(result)
+    result = removeEmptyRules(result)
     fs.writeFileSync(atomicFile, result, "utf8")
   }
   const bodyValue = findAllMatchesAsString(

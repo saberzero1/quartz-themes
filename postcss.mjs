@@ -6,7 +6,7 @@ import * as postcss from "postcss"
  * @param {string} cssString - The CSS string to process.
  * @returns {string} The transformed CSS string with split rules.
  */
-function splitCombinedRules(cssString) {
+export function splitCombinedRules(cssString) {
   // Parse the CSS string into an AST
   const root = postcss.parse(cssString)
 
@@ -53,7 +53,7 @@ function splitCombinedRules(cssString) {
  * @param {string} cssString - The CSS string to process.
  * @returns {string} The transformed CSS string with combined rules.
  */
-function combineIdenticalSelectors(cssString) {
+export function combineIdenticalSelectors(cssString) {
   const root = postcss.parse(cssString)
 
   // This map will store:
@@ -124,7 +124,30 @@ function combineIdenticalSelectors(cssString) {
   return root.toString()
 }
 
-export default {
-  splitCombinedRules,
-  combineIdenticalSelectors,
+/**
+ * Removes empty CSS rules (rules with no declarations) using PostCSS.
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @returns {string} The transformed CSS string with empty rules removed.
+ */
+export function removeEmptyRules(cssString) {
+  // Parse the CSS string into an AST
+  const root = postcss.parse(cssString)
+
+  // Walk through each rule in the AST
+  root.walkRules((rule) => {
+    // rule.nodes contains the declarations (and possibly comments) within the rule.
+    // We are interested if there are any actual declaration nodes.
+    // A simple check is rule.nodes.length === 0.
+    // A more robust check for only declarations would be:
+    // !rule.some(node => node.type === 'decl')
+    // However, for "empty" as in "no content between braces", .nodes.length is fine.
+    // PostCSS also cleans up whitespace-only nodes during parsing.
+    if (rule.nodes.length === 0) {
+      rule.remove() // Remove the empty rule
+    }
+  })
+
+  // Convert the modified AST back to a CSS string
+  return root.toString()
 }
