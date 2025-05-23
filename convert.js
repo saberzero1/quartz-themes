@@ -599,9 +599,6 @@ manifestCollection.forEach((manifest) => {
 
 // STEP 6
 // _index.scss
-const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
-const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
 let hasDarkOptions = true
 let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
@@ -666,40 +663,33 @@ manifestCollection.forEach((manifest) => {
 
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
-  const darkValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    darkRegex,
-  )
-  const lightValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    lightRegex,
-  )
+  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
   hasDarkOptions = darkValue !== ""
   hasLightOptions = lightValue !== ""
-  const darkValue2 = darkValue.replace(darkRegex, "$1")
-  const lightValue2 = lightValue.replace(lightRegex, "$1")
+  const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
+  const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
   if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${getTheme(manifest)}/_index.scss`,
       `//DARK`,
-      removeNonVariableLines(darkValue2),
+      removeNonVariableLines(darkValue),
     )
     replaceInFile(
       `./themes/${getTheme(manifest)}/_dark.scss`,
       `//DARK`,
-      removeNonVariableLines(darkValue2),
+      removeNonVariableLines(darkValue),
     )
   }
   if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${getTheme(manifest)}/_index.scss`,
       `//LIGHT`,
-      removeNonVariableLines(lightValue2),
+      removeNonVariableLines(lightValue),
     )
     replaceInFile(
       `./themes/${getTheme(manifest)}/_light.scss`,
       `//LIGHT`,
-      removeNonVariableLines(lightValue2),
+      removeNonVariableLines(lightValue),
     )
   }
 
