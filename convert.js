@@ -1,5 +1,10 @@
 import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import { splitCombinedRules, combineIdenticalSelectors, removeEmptyRules } from "./postcss.mjs"
+import {
+  splitCombinedRules,
+  combineIdenticalSelectors,
+  removeEmptyRules,
+  getRuleDeclarations,
+} from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
 

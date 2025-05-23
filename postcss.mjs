@@ -179,3 +179,59 @@ export function removeEmptyRules(cssString) {
 
   return root.toString()
 }
+
+/**
+ * Retrieves the string content of declarations within a specific CSS rule.
+ * Assumes selectors are unique in the provided CSS string.
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @param {string} targetSelector - The selector of the rule to inspect (e.g., "h1", ".my-class").
+ * @param {string} [propertyName] - Optional. The specific property (or CSS variable)
+ *                                  to retrieve. If provided, only this declaration is returned.
+ * @returns {string|null} A string containing the formatted declaration(s),
+ *                        an empty string if the rule exists but has no declarations (and no specific
+ *                        property was requested), or null if the selector or specific property
+ *                        is not found.
+ */
+export function getRuleDeclarations(cssString, targetSelector, propertyName = null) {
+  const root = postcss.parse(cssString)
+  let foundRuleNode = null
+
+  // Find the rule that matches the targetSelector
+  root.walkRules((rule) => {
+    if (rule.selector === targetSelector) {
+      foundRuleNode = rule
+      return false // Stop walking once the rule is found
+    }
+  })
+
+  if (!foundRuleNode) {
+    return null // Rule with the given selector not found
+  }
+
+  if (propertyName) {
+    // User wants a specific property
+    let specificDeclString = null
+    foundRuleNode.walkDecls((decl) => {
+      if (decl.prop === propertyName) {
+        // Format as "  property: value;"
+        specificDeclString = `  ${decl.prop}: ${decl.value};`
+        return false // Stop walking declarations once the property is found
+      }
+    })
+    return specificDeclString // null if the property was not found in this rule
+  } else {
+    // User wants all declarations in the rule
+    const declarations = []
+    foundRuleNode.walkDecls((decl) => {
+      // Format as "  property: value;"
+      declarations.push(`  ${decl.prop}: ${decl.value};`)
+    })
+
+    if (declarations.length === 0) {
+      // Rule exists but has no declarations (e.g., h1 {})
+      return ""
+    }
+    return declarations.join("\n")
+  }
+}
