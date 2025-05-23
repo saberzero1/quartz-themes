@@ -1,5 +1,5 @@
 import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import splitCombinedRulesWithPostCSS from "./atomize-css-rules.mjs"
+import * as postcss from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -596,7 +596,6 @@ manifestCollection.forEach((manifest) => {
 // _index.scss
 const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
 const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
 const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
 const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
 let hasDarkOptions = true
@@ -629,8 +628,10 @@ manifestCollection.forEach((manifest) => {
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
-    const splitCssString = splitCombinedRulesWithPostCSS(cssString)
-    fs.writeFileSync(atomicFile, splitCssString, "utf8")
+    const obsidianCSS = fs.readFileSync("./app.css", "utf8")
+    let result = `${obsidianCSS}\n${postcss.splitCombinedRules(cssString)}`
+    result = postcss.combineIdenticalSelectors(result)
+    fs.writeFileSync(atomicFile, result, "utf8")
   }
   const bodyValue = findAllMatchesAsString(
     `${atomicFolder}/${getTheme(manifest)}/theme.css`,
