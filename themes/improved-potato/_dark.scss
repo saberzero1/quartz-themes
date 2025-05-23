@@ -1,4 +1,7 @@
 :root[saved-theme="dark"] {
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 192, 60, 64;
   --color-red: #c03c40;
   --color-orange-rgb: 168, 111, 50;
@@ -16,6 +19,7 @@
   --color-pink-rgb: 175, 96, 138;
   --color-pink: #af608a;
   --color-base-00: #171b21;
+  --color-base-05: #212121;
   --color-base-10: #262c36;
   --color-base-20: #262c36;
   --color-base-25: #303845;
@@ -26,6 +30,20 @@
   --color-base-60: #939fb4;
   --color-base-70: #aeb7c7;
   --color-base-100: #ccd2db;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --titlebar-background: var(--color-base-25);
   --line-number-color: var(--color-base-50);
 }

@@ -1,17 +1,15 @@
 :root[saved-theme="dark"] {
-  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
-  --color-base-05: var(--color-base-20);
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 225, 120, 132;
   --color-red: #e17884;
-  --color-green-rgb: 117, 194, 151;
-  --color-green: #75c297;
   --color-orange-rgb: 241, 144, 112;
   --color-orange: #f19070;
   --color-yellow-rgb: 255, 168, 46;
   --color-yellow: #dcb46f;
+  --color-green-rgb: 117, 194, 151;
+  --color-green: #75c297;
   --color-cyan-rgb: 111, 210, 194;
   --color-cyan: #6fd2c2;
   --color-blue-rgb: 136, 198, 227;
@@ -21,6 +19,7 @@
   --color-pink-rgb: 220, 118, 167;
   --color-pink: #dc76a7;
   --color-base-00: #3b3347;
+  --color-base-05: var(--color-base-20);
   --color-base-10: #413b4e;
   --color-base-20: #2f2837;
   --color-base-25: #55546e;
@@ -31,5 +30,19 @@
   --color-base-60: rgb(103, 129, 148);
   --color-base-70: #7f83a1;
   --color-base-100: #a0a7c4;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-20);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
 }

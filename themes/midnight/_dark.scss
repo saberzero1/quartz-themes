@@ -16,8 +16,10 @@
   --color-blue: #0064d7;
   --color-purple-rgb: 168, 130, 255;
   --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
   --color-pink: #fa99cd;
   --color-base-00: var(--color-main-dark);
+  --color-base-05: #212121;
   --color-base-10: var(--color-secondary-dark);
   --color-base-20: var(--color-secondary-dark);
   --color-base-25: #3c3c3c;
@@ -25,6 +27,7 @@
   --color-base-35: #3f3f3f;
   --color-base-40: var(--color-light-blue);
   --color-base-50: #666666;
+  --color-base-60: #999999;
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));

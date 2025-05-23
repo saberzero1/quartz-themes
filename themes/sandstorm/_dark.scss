@@ -1,5 +1,5 @@
 :root[saved-theme="dark"] {
-  --highlight-mix-blend-mode: lighten;
+  --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 251, 70, 76;
@@ -43,8 +43,8 @@
   --interactive-accent-hover: var(--color-accent-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --hr-color: #782a1d;
   --text-selection: #782b1d52;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --hr-color: #782a1d;
 }

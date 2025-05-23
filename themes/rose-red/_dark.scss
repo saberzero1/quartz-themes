@@ -1,5 +1,4 @@
 :root:root {
-  --color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -36,17 +35,21 @@
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: #560000b7;
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: #50fa7b;
+  --interactive-accent-hover: var(--color-accent-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.5);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --color-scheme: dark;
   --background-primary: var(--dark-linear-gradient);
   --background-primary-alt: #6e021a81;
   --background-secondary: #560000;
-  --background-secondary-alt: #560000b7;
   --background-red: #6c0808;
   --text-normal: #f8f8f2;
   --text-on-accent: #282a36;
@@ -68,7 +71,6 @@
   --text-a: #ff79c6;
   --text-a-hover: #ff79c0;
   --text-mark: #a1ad1dcf;
-  --interactive-accent: #50fa7b;
   --blockquote-border: #b294bb;
   --interactive-accent-rgb: #f1fa8c;
   --accent-h: 135;

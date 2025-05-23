@@ -628,6 +628,7 @@ manifestCollection.forEach((manifest) => {
       const obsidianCSS = fs.readFileSync("./app.css", "utf8")
       let result = splitCombinedRules(obsidianCSS)
       result = combineIdenticalSelectors(result)
+      result = removeEmptyRules(result)
       fs.writeFileSync(`./converted_app.css`, result, "utf8")
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)

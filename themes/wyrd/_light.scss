@@ -1,13 +1,22 @@
 :root[saved-theme="light"] {
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: var(--wyrd-red-rgb);
   --color-red: var(--wyrd-red);
+  --color-orange-rgb: 236, 117, 0;
   --color-orange: var(--wyrd-orange);
+  --color-yellow-rgb: 224, 172, 0;
   --color-yellow: var(--wyrd-yellow);
   --color-green-rgb: var(--wyrd-green-rgb);
   --color-green: var(--wyrd-green);
+  --color-cyan-rgb: 0, 191, 188;
   --color-cyan: var(--wyrd-cyan);
+  --color-blue-rgb: 8, 109, 221;
   --color-blue: var(--wyrd-blue);
+  --color-purple-rgb: 120, 82, 238;
   --color-purple: var(--wyrd-purple);
+  --color-pink-rgb: 213, 57, 132;
   --color-pink: var(--wyrd-pink);
   --color-base-00: var(--wyrd-base-100);
   --color-base-05: var(--wyrd-base-95);
@@ -21,6 +30,11 @@
   --color-base-60: var(--wyrd-base-20);
   --color-base-70: var(--wyrd-base-10);
   --color-base-100: var(--wyrd-base-00);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --text-normal: var(--color-base-40);
   --text-muted: var(--color-base-50);
   --text-faint: var(--color-base-60);

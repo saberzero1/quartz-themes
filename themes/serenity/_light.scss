@@ -1,6 +1,23 @@
 :root[saved-theme="light"] {
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.05);
-  --interactive-accent: vaR(--color-accent-1);
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 244, 87, 87;
+  --color-red: #f45757;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
   --color-base-00: hsl(var(--theme-tint), var(--theme-sat), var(--c-00));
   --color-base-05: hsl(var(--theme-tint), var(--theme-sat-secondary), var(--c-05));
   --color-base-10: hsl(var(--theme-tint), var(--theme-sat-secondary), var(--c-10));
@@ -13,6 +30,13 @@
   --color-base-60: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-60));
   --color-base-70: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-70));
   --color-base-100: hsl(var(--theme-tint-text), var(--theme-sat-text), var(--c-100));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.05);
+  --interactive-accent: vaR(--color-accent-1);
   --background-modifier-message: var(--color-accent-1);
   --text-base: 15%;
   --color-muted: #797593;
@@ -21,6 +45,4 @@
   --accent-h: 228;
   --accent-s: 70%;
   --accent-l: 66%;
-  --color-red: #f45757;
-  --color-red-rgb: 244, 87, 87;
 }

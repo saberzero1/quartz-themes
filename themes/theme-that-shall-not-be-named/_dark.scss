@@ -1,4 +1,40 @@
 :root:root {
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-base-100: #dadada;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-selection: rgba(63, 54, 36, 0.99);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --green-base: #00503b;
   --green-bright: #227e67;
   --green-light: #0f6751;
@@ -32,7 +68,6 @@
   --text-error-hover: #990000;
   --text-highlight-bg: rgba(139, 128, 108, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: rgba(63, 54, 36, 0.99);
   --text-title-h1: var(--brass-deep);
   --text-title-h2: var(--brass-dark);
   --text-title-h3: var(--brass-base);
@@ -45,5 +80,4 @@
   --interactive-accent-rgb: 97, 97, 97;
   --interactive-success: #197300;
   --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1);
-  --highlight-mix-blend-mode: lighten;
 }

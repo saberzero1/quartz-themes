@@ -1,19 +1,15 @@
 :root[saved-theme="light"] {
-  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
-  --accent-h: 323;
-  --accent-s: 30%;
-  --accent-l: 65%;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: 225, 120, 132;
   --color-red: #e17884;
-  --color-green-rgb: 117, 194, 151;
-  --color-green: #75c297;
   --color-orange-rgb: 241, 144, 112;
   --color-orange: #f19070;
   --color-yellow-rgb: 255, 168, 46;
   --color-yellow: #dcb46f;
+  --color-green-rgb: 117, 194, 151;
+  --color-green: #75c297;
   --color-cyan-rgb: 111, 210, 194;
   --color-cyan: #6fd2c2;
   --color-blue-rgb: 136, 198, 227;
@@ -34,4 +30,13 @@
   --color-base-60: #867786;
   --color-base-70: #685a68;
   --color-base-100: #594f67;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --accent-h: 323;
+  --accent-s: 30%;
+  --accent-l: 65%;
 }
