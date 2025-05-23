@@ -125,29 +125,57 @@ export function combineIdenticalSelectors(cssString) {
 }
 
 /**
- * Removes empty CSS rules (rules with no declarations) using PostCSS.
+ * Removes empty CSS rules (rules with no declarations) and empty at-rules
+ * (at-rules with no child rules, declarations, or other functional at-rules
+ * in their block) using PostCSS.
+ * This process is repeated until no more empty items are found,
+ * to handle nested structures becoming empty.
  *
  * @param {string} cssString - The CSS string to process.
- * @returns {string} The transformed CSS string with empty rules removed.
+ * @returns {string} The transformed CSS string with empty rules and at-rules removed.
  */
 export function removeEmptyRules(cssString) {
-  // Parse the CSS string into an AST
   const root = postcss.parse(cssString)
+  let changedInPass
 
-  // Walk through each rule in the AST
-  root.walkRules((rule) => {
-    // rule.nodes contains the declarations (and possibly comments) within the rule.
-    // We are interested if there are any actual declaration nodes.
-    // A simple check is rule.nodes.length === 0.
-    // A more robust check for only declarations would be:
-    // !rule.some(node => node.type === 'decl')
-    // However, for "empty" as in "no content between braces", .nodes.length is fine.
-    // PostCSS also cleans up whitespace-only nodes during parsing.
-    if (rule.nodes.length === 0) {
-      rule.remove() // Remove the empty rule
-    }
-  })
+  do {
+    changedInPass = false
 
-  // Convert the modified AST back to a CSS string
+    // 1. Remove empty regular style rules
+    // A rule is considered empty if it contains no declaration nodes.
+    // Rules containing only comments will also be removed.
+    root.walkRules((rule) => {
+      const hasDeclarations = rule.some((node) => node.type === "decl")
+      if (!hasDeclarations) {
+        rule.remove()
+        changedInPass = true
+      }
+    })
+
+    // 2. Remove empty at-rules (those that form a block)
+    // An at-rule is considered empty if its block contains no style rules,
+    // no declarations (e.g., for @font-face), and no other at-rules.
+    // At-rules containing only comments in their block will be removed.
+    root.walkAtRules((atRule) => {
+      // Check if the at-rule is of a type that has a 'nodes' property
+      // (i.e., it's a block-containing at-rule like @media, @supports,
+      // @keyframes, @font-face, @layer).
+      // At-rules like @import or @charset don't have atRule.nodes in the same way.
+      if (atRule.nodes) {
+        const hasFunctionalContent = atRule.nodes.some(
+          (node) =>
+            node.type === "rule" || // Contains a style rule
+            node.type === "decl" || // Contains a declaration (e.g., in @font-face)
+            node.type === "atrule", // Contains a nested at-rule
+        )
+
+        if (!hasFunctionalContent) {
+          atRule.remove()
+          changedInPass = true
+        }
+      }
+    })
+  } while (changedInPass) // Repeat if any changes were made in this pass
+
   return root.toString()
 }
