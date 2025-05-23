@@ -190,8 +190,6 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
 
     // Copy the file to the target directory
     fs.copyFileSync(sourceFilePath, targetFilePath)
-
-    //console.log(`File successfully copied to '${targetFilePath}'`);
   } catch (error) {
     throw new Error(`Unable to copy file: ${error.message}`)
   }
@@ -215,8 +213,6 @@ function replaceInFile(filePath, targetString, replacementString) {
 
     // Write the modified content back to the file
     fs.writeFileSync(filePath, modifiedContent, "utf8")
-
-    //console.log(`Replaced all occurrences of "${targetString}" with "${replacementString}" in '${filePath}'`);
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`)
   }
@@ -237,8 +233,6 @@ function findAllMatchesInFile(filePath, regexString) {
 
     // Use match to find all matches in the file content
     const matches = fileContent.matchAll(regexString)
-
-    console.log([matches].length)
 
     // Return the matches or an empty array if no matches are found
     return matches !== undefined && matches.length > 0 ? [...matches][0] : []
@@ -306,8 +300,6 @@ function removeNonVariableLines(cssString) {
 
     // Write the updated content back to the file
     return convertedContent
-
-    //console.log(`Removed non-variable lines from '${filePath}'`);
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`)
   }
@@ -463,16 +455,11 @@ function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
 
 // Actual script
 // STEP 1
-const currentFolder = getCurrentFolder()
-//console.log("Current working directory:", currentFolder)
-
 const args = getCommandLineArgs()
-//console.log("Command line arguments:", args)
 
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
-//console.log(folders.length)
 
 // STEP 2
 let manifestCollection = []
@@ -487,7 +474,6 @@ if (singleThemeName === "") {
     readJsonFileAsDictionary(`${obsidianFolder}/${singleThemeName}`, "manifest.json"),
   )
 }
-//console.log(manifestCollection)
 
 // STEP 3
 clearDirectoryContents(`./themes`)
