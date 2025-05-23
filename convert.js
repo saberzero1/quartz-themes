@@ -599,8 +599,6 @@ manifestCollection.forEach((manifest) => {
 
 // STEP 6
 // _index.scss
-let hasDarkOptions = true
-let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
   let extras = ""
@@ -649,26 +647,13 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//BODY`, bodyValue)
 })
 
-// _fonts.scss
-/*
-manifestCollection.forEach((manifest) => {
-  const fontValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
-    fontRegex,
-  )
-  const fontValue2 = fontValue.replace(fontRegex, "$1")
-  replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
-})
-  */
-
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
   const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
-  hasDarkOptions = darkValue !== ""
-  hasLightOptions = lightValue !== ""
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
-  if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+  // TODO: get from themes.json
+  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${getTheme(manifest)}/_index.scss`,
       `//DARK`,
@@ -680,7 +665,7 @@ manifestCollection.forEach((manifest) => {
       removeNonVariableLines(darkValue),
     )
   }
-  if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
+  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${getTheme(manifest)}/_index.scss`,
       `//LIGHT`,
