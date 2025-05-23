@@ -113,10 +113,4 @@
   --PComm001-col-today: var(--color-accent-1);
   --PComm001-col-year: var(--color-accent-1);
   --PComm001-col-dot: var(--color-accent-1);
-  --callout-svg-dimensions: max(
-    var(--callout-svg-dimensions-clamp),
-    var(--callout-svg-dimensions-min)
-  );
-  --callout-svg-dimensions-min: 18px;
-  --callout-svg-dimensions-clamp: 1em;
 }

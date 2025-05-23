@@ -652,7 +652,6 @@ manifestCollection.forEach((manifest) => {
   const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
-  // TODO: get from themes.json
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(
       `./themes/${getTheme(manifest)}/_index.scss`,
