@@ -826,6 +826,7 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  color-scheme: dark;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -859,6 +860,16 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--bg1);
   --background-secondary-alt: var(--bg1);
   --interactive-normal: var(--bg3);
@@ -869,6 +880,16 @@ html[saved-theme="dark"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 12%), 0.5);
   --text-selection: var(--hl1);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6);
   --pdf-thumbnail-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6);
   --accent-l: 60%;
@@ -963,6 +984,17 @@ html[saved-theme="dark"] {
   --frame-background-h: var(--accent-h);
   --frame-background-s: var(--accent-s);
   --frame-background-l: calc(var(--accent-l) - 25%);
+  --frame-outline-color: hsla(
+    var(--frame-background-h),
+    calc(var(--frame-background-s) - 2%),
+    calc(var(--frame-background-l) + 6.5%),
+    1
+  );
+  --frame-muted-color: hsl(
+    var(--frame-background-h),
+    calc(var(--frame-background-s) - 10%),
+    calc(var(--frame-background-l) + 25%)
+  );
   --minimal-tab-text-color: var(--tx2);
   --minimal-tab-text-color-active: var(--tx1);
   --h1l: var(--ui1);
@@ -986,6 +1018,8 @@ html[saved-theme="dark"] {
   --he-title-bar-inactive-fg: var(--text-muted);
   --he-title-bar-active-fg: var(--text-normal);
   --he-title-bar-font-size: 14px;
+  --popover-shadow: 0px 2.7px 3.1px rgba(0, 0, 0, 0.081), 0px 5.9px 8.7px rgba(0, 0, 0, 0.131),
+    0px 10.4px 18.1px rgba(0, 0, 0, 0.18), 0px 20px 40px rgba(0, 0, 0, 0.28);
   --leaflet-buttons: var(--bg2);
   --leaflet-borders: rgba(255, 255, 255, 0.1);
 
@@ -1003,6 +1037,7 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -1036,8 +1071,32 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--bg1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: hsla(
+    var(--base-h),
+    calc(var(--base-s) - 70%),
+    calc(var(--base-l) - 20%),
+    0.5
+  );
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --bg1: white;
   --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
   --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
@@ -1134,6 +1193,17 @@ html[saved-theme="light"] {
   --frame-background-h: var(--accent-h);
   --frame-background-s: var(--accent-s);
   --frame-background-l: calc(var(--accent-l) + 30%);
+  --frame-outline-color: hsla(
+    var(--frame-background-h),
+    var(--frame-background-s),
+    calc(var(--frame-background-l) - 6.5%),
+    1
+  );
+  --frame-muted-color: hsl(
+    var(--frame-background-h),
+    calc(var(--frame-background-s) - 10%),
+    calc(var(--frame-background-l) - 35%)
+  );
   --minimal-tab-text-color: var(--tx2);
   --minimal-tab-text-color-active: var(--tx1);
   --h1l: var(--ui1);
@@ -1157,6 +1227,8 @@ html[saved-theme="light"] {
   --he-title-bar-inactive-fg: var(--text-muted);
   --he-title-bar-active-fg: var(--text-normal);
   --he-title-bar-font-size: 14px;
+  --popover-shadow: 0px 2.7px 3.1px rgba(0, 0, 0, 0.032), 0px 5.9px 8.7px rgba(0, 0, 0, 0.052),
+    0px 10.4px 18.1px rgba(0, 0, 0, 0.071), 0px 20px 40px rgba(0, 0, 0, 0.11);
   --leaflet-buttons: var(--bg1);
   --leaflet-borders: rgba(0, 0, 0, 0.1);
 

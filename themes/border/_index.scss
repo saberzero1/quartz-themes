@@ -880,6 +880,7 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -916,6 +917,21 @@ html[saved-theme="dark"] {
   --color-accent-1: var(--color-accent-1-dark);
   --color-accent-2: var(--color-accent-2-dark);
   --background-modifier-form-field: transparent;
+  --background-secondary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3)
+  );
+  --interactive-normal: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(1.25 * var(--accent-l) / 3)
+  );
+  --interactive-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(1.25 * var(--accent-l) / 2.7)
+  );
   --text-accent: var(--color-accent-1);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
@@ -924,6 +940,10 @@ html[saved-theme="dark"] {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
   --input-shadow: var(--input-shadow-dark);
   --input-shadow-hover: var(--input-shadow-hover-dark);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3), 0 -1px 0 0 var(--background-modifier-border-focus);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2), 0 -1px 0 0 var(--background-modifier-border-focus);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --text-normal: hsl(var(--accent-h), 15%, 85%);
@@ -940,6 +960,65 @@ html[saved-theme="dark"] {
   --color-accent-3: var(--color-accent-3-dark);
   --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-dark: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2-dark: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-3-dark: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l))
+  );
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.25
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.3
+  );
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 3.9)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.9)
+  );
+  --background-tertiary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6)
+  );
+  --workspace-background-translucent: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6),
+    0.6
+  );
   --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --search-result-background: transparent;
@@ -955,14 +1034,31 @@ html[saved-theme="dark"] {
   --toggle-thumb-enabled-color-dark: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-dark);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-dark);
+  --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(0, 0, 0, 0.2),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.4);
+  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3),
+    inset 0px -4px 6px hsla(var(--interactive-accent-hsl), 0.4),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.4);
   --toggle-track-color: var(--toggle-track-color-dark);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-dark);
   --toggle-track-color-dark: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-dark: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-dark);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-dark);
+  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
+  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
   --input-radius: var(--input-radius-dark);
   --input-radius-dark: 5px;
+  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+  --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --code-background: var(--code-background-dark);
   --code-border: var(--code-border-dark);
 
@@ -980,6 +1076,7 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -1020,6 +1117,10 @@ html[saved-theme="light"] {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --input-shadow: var(--input-shadow-light);
   --input-shadow-hover: var(--input-shadow-hover-light);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --text-normal: hsl(var(--accent-h), 6%, 12%);
   --text-muted: hsl(var(--accent-h), 9%, 36%);
   --text-faint: hsl(var(--accent-h), 12%, 64%);
@@ -1035,9 +1136,47 @@ html[saved-theme="light"] {
   --color-accent-3: var(--color-accent-3-light);
   --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-light: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2-light: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.25
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc((var(--accent-s)) / 6),
+    calc(100% - (100% - var(--accent-l)) / 16)
+  );
+  --background-tertiary: hsl(
+    var(--accent-h),
+    calc((var(--accent-s)) / 2),
+    calc(100% - (100% - var(--accent-l)) / 12)
+  );
   --workspace-background-translucent: rgba(246, 246, 246, 0.8);
   --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
@@ -1055,16 +1194,31 @@ html[saved-theme="light"] {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
+  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.05);
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.15);
   --toggle-track-color: var(--toggle-track-color-light);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-light);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
+  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
   --input-radius: var(--input-radius-light);
   --input-radius-light: 5px;
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --code-background: var(--code-background-light);
   --code-border: var(--code-border-light);
 

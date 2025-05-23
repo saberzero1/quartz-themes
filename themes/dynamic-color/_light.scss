@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -32,9 +33,27 @@
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--md-sys-color-surface-container-highest);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --hue: var(--accent-h, 278);
   --saturation: var(--accent-s, 34%);
   --primary-hue: var(--hue);
@@ -157,6 +176,87 @@
   --md-ref-palette-neutral-98: hsl(var(--neutral-hue) var(--neutral-saturation) 98%);
   --md-ref-palette-neutral-99: hsl(var(--neutral-hue) var(--neutral-saturation) 99%);
   --md-ref-palette-neutral-100: hsl(var(--neutral-hue) var(--neutral-saturation) 100%);
+  --md-ref-palette-neutral-variant-0: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 0%
+  );
+  --md-ref-palette-neutral-variant-4: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 4%
+  );
+  --md-ref-palette-neutral-variant-5: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 5%
+  );
+  --md-ref-palette-neutral-variant-6: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 6%
+  );
+  --md-ref-palette-neutral-variant-10: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 10%
+  );
+  --md-ref-palette-neutral-variant-12: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 12%
+  );
+  --md-ref-palette-neutral-variant-17: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 17%
+  );
+  --md-ref-palette-neutral-variant-20: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 20%
+  );
+  --md-ref-palette-neutral-variant-22: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 22%
+  );
+  --md-ref-palette-neutral-variant-24: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 24%
+  );
+  --md-ref-palette-neutral-variant-25: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 25%
+  );
+  --md-ref-palette-neutral-variant-30: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 30%
+  );
+  --md-ref-palette-neutral-variant-35: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 35%
+  );
+  --md-ref-palette-neutral-variant-40: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 40%
+  );
+  --md-ref-palette-neutral-variant-50: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 50%
+  );
+  --md-ref-palette-neutral-variant-60: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 60%
+  );
+  --md-ref-palette-neutral-variant-70: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 70%
+  );
+  --md-ref-palette-neutral-variant-80: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 80%
+  );
+  --md-ref-palette-neutral-variant-87: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 87%
+  );
+  --md-ref-palette-neutral-variant-90: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 90%
+  );
+  --md-ref-palette-neutral-variant-92: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 92%
+  );
+  --md-ref-palette-neutral-variant-94: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 94%
+  );
+  --md-ref-palette-neutral-variant-95: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 95%
+  );
+  --md-ref-palette-neutral-variant-96: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 96%
+  );
+  --md-ref-palette-neutral-variant-98: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 98%
+  );
+  --md-ref-palette-neutral-variant-99: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 99%
+  );
+  --md-ref-palette-neutral-variant-100: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 100%
+  );
   --md-ref-palette-error-0: hsl(var(--error-hue) var(--error-saturation) 0%);
   --md-ref-palette-error-4: hsl(var(--error-hue) var(--error-saturation) 4%);
   --md-ref-palette-error-5: hsl(var(--error-hue) var(--error-saturation) 5%);

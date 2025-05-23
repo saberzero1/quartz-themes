@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -32,9 +33,27 @@
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --theme-color-redDarkened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5));
   --theme-color-redLightened: hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5));
   --theme-color-orangeDarkened: hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5));
@@ -157,6 +176,39 @@
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
   --theme-color-tabNavBg: var(--theme-color-baseLightened70);
+  --theme-color-tagHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.035)
+  );
+  --theme-color-tagBgHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.035),
+    0.1
+  );
+  --theme-color-tagBgSidebar: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.2),
+    calc(var(--accent-l) * 1),
+    0.15
+  );
+  --theme-color-tagBgSidebarHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.22),
+    calc(var(--accent-l) * 1.15),
+    0.15
+  );
+  --theme-color-tagSidebar: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1),
+    calc(var(--accent-l) * 0.4)
+  );
+  --theme-color-tagSidebarHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 0.46)
+  );
   --theme-color-textMeta: var(--theme-color-base);
   --theme-color-textSelected: var(--theme-color-baseLightened80);
   --theme-color-warningBg: var(--theme-color-baseLightened95);
@@ -165,6 +217,32 @@
   --theme-color-gradientCardsetGeneratedTop: var(--theme-color-baseTransparent35);
   --theme-color-gradientCardsetGeneratedBottom: var(--theme-color-baseTransparent12);
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
+  --theme-shadow-control: 0 1px 2px
+    hsl(var(--base-h), calc(var(--base-s) * 1.5), calc(var(--base-l) * 0.75), 0.5);
+  --theme-shadow-input: 0 1px 2px
+      hsl(var(--base-h), calc(var(--base-s) * 1.5), calc(var(--base-l) * 0.5), 0.2),
+    0 3.4px 6.7px hsl(var(--base-h), calc(var(--base-s) * 1), calc(var(--base-l) * 0.5), 0.15),
+    0 15px 30px hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.5), 0.05);
+  --theme-color-gradientTop: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * (0.5 + 0.5 * var(--theme-value-gradientContrast)))
+  );
+  --theme-color-gradientBottom: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * (0.5 - 0.5 * var(--theme-value-gradientContrast)))
+  );
+  --theme-color-gradientDarkenedTop: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * (0.5 - 0.25 * var(--theme-value-gradientContrast)))
+  );
+  --theme-color-gradientDarkenedBottom: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * (0.5 - 1.25 * var(--theme-value-gradientContrast)))
+  );
   --pill-background: var(--theme-color-baseTransparent75);
   --pill-background-hover: var(--theme-color-base);
   --pill-color: white;

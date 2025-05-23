@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: var(--000-RGB);
   --mono-rgb-100: var(--800-RGB);
@@ -32,9 +33,27 @@
   --color-base-100: var(--800);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--000);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(var(--000-RGB), 1);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --text-on-accent: var(--800);
   --tab-outline-width: 0px;
   --radius-xl: 16px;
@@ -88,6 +107,51 @@
   --link-unresolved-color: var(--C008);
   --indentation-guide-width: 0px;
   --vicious-indent-bg-size: calc(var(--vicious-color-count) * var(--vicious-indent-width)) 1px;
+  --vicious-indent-colorful-bg: linear-gradient(
+    to right,
+    var(--vicious-indent-1) 0 var(--vicious-line-width),
+    transparent var(--vicious-line-width) calc(1 * var(--vicious-indent-width)),
+    var(--vicious-indent-2) calc(1 * var(--vicious-indent-width))
+      calc(1 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(1 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(2 * var(--vicious-indent-width)),
+    var(--vicious-indent-3) calc(2 * var(--vicious-indent-width))
+      calc(2 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(2 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(3 * var(--vicious-indent-width)),
+    var(--vicious-indent-4) calc(3 * var(--vicious-indent-width))
+      calc(3 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(3 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(4 * var(--vicious-indent-width)),
+    var(--vicious-indent-5) calc(4 * var(--vicious-indent-width))
+      calc(4 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(4 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(5 * var(--vicious-indent-width)),
+    var(--vicious-indent-6) calc(5 * var(--vicious-indent-width))
+      calc(5 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(5 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(6 * var(--vicious-indent-width)),
+    var(--vicious-indent-7) calc(6 * var(--vicious-indent-width))
+      calc(6 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(6 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(7 * var(--vicious-indent-width)),
+    var(--vicious-indent-8) calc(7 * var(--vicious-indent-width))
+      calc(7 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(7 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(8 * var(--vicious-indent-width)),
+    var(--vicious-indent-9) calc(8 * var(--vicious-indent-width))
+      calc(8 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(8 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(9 * var(--vicious-indent-width)),
+    var(--vicious-indent-10) calc(9 * var(--vicious-indent-width))
+      calc(9 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(9 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(10 * var(--vicious-indent-width)),
+    var(--vicious-indent-11) calc(10 * var(--vicious-indent-width))
+      calc(10 * var(--vicious-indent-width) + var(--vicious-line-width)),
+    transparent calc(7 * var(--vicious-indent-width) + var(--vicious-line-width))
+      calc(8 * var(--vicious-indent-width))
+  );
   --background-primary: var(--000);
   --ribbon-background: var(--000);
   --background-secondary: var(--000);

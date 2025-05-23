@@ -843,6 +843,7 @@ body {
 /* START LIGHT */
 :root,
 html {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -883,6 +884,10 @@ html {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --input-shadow: var(--shadow);
   --input-shadow-hover: var(--input-shadow-hover-light);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --text-normal: #000000;
   --text-muted: #232323;
   --text-faint: hsl(var(--accent-h), 6%, 64%);
@@ -900,9 +905,20 @@ html {
   --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
   --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
   --background-modifier-border: #eaeaea;
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
   --background-primary: var(--color-primary-lightest);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: #f6f6f6;
+  --background-tertiary: hsl(
+    calc(var(--accent-h) - 18),
+    calc(var(--accent-s) - 4%),
+    calc(100% - (100% - var(--accent-l)) / 8)
+  );
   --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-form-field: transparent;
@@ -949,14 +965,26 @@ html {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
+  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
+  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
   --input-radius: var(--input-radius-light);
   --input-radius-light: 5px;
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --input-shadow-hover-light: var(--shadow-hover);
   --toggle-track-color: var(--toggle-track-color-light);
   --toggle-track-shadow: var(--toggle-track-shadow-light);

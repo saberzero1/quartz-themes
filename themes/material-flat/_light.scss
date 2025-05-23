@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -32,9 +33,27 @@
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--surface3);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --primary: #5f4bbd;
   --primary-r: 95;
   --primary-g: 75;
@@ -67,6 +86,31 @@
   --inverse-on-surface: #f4eff4;
   --inverse-surface: #313033;
   --primaryInverse: #cabeff;
+  --surface1: rgb(
+    calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
+    calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
+    calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
+  );
+  --surface2: rgb(
+    calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
+    calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
+    calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
+  );
+  --surface3: rgb(
+    calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
+    calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
+    calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
+  );
+  --surface4: rgb(
+    calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
+    calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
+    calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
+  );
+  --surface5: rgb(
+    calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
+    calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
+    calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
+  );
   --background-primary: var(--background);
   --background-primary-alt: var(--surface1);
   --background-secondary: var(--surface-variant);

@@ -797,6 +797,7 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  color-scheme: dark;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -830,6 +831,16 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--r-dark2);
   --interactive-normal: var(--color-base-30);
@@ -840,6 +851,16 @@ html[saved-theme="dark"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: var(--r-bg-selection);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --background-primary: var(--r-dark0);
@@ -857,10 +878,12 @@ html[saved-theme="dark"] {
   --text-title-h6: var(--r-mist-energy-blue);
   --text-link: var(--text-a);
   --text-link-hover: var(--text-a-hover);
+  --text-a: var(--r-bright-orange);
   --text-a-hover: var(--r-yellow-orange);
   --text-mark: var(--r-bg-highlight);
   --text-highlight-bg: var(--r-bg-highlight);
   --interactive-before: var(--dark4);
+  --background-modifier-border: var(--r-gunmetal);
   --text-accent-hover: var(--r-yellow-orange);
   --interactive-accent-rgb: var(--r-bright-orange);
   --inline-code: var(--code-light-gray);
@@ -890,6 +913,36 @@ html[saved-theme="dark"] {
   --link-unresolved-decoration: none;
   --link-unresolved-decoration-hover: none;
   --hx-link-ul-transparency-pct: 33%;
+  --h1-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h2-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h3-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h4-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h5-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h6-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
   --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
   --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
   --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
@@ -911,6 +964,7 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -944,9 +998,27 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--r-light3);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --background-primary: var(--r-light1);
   --background-primary-alt: var(--r-light0);
   --background-secondary: var(--r-light2);
@@ -968,6 +1040,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--r-bg-highlight);
   --interactive-accent: var(--r-deep-orange);
   --interactive-before: var(--r-light4);
+  --background-modifier-border: var(--r-gunmetal);
   --text-accent: var(--r-bright-orange);
   --text-accent-hover: var(--r-yellow-orange);
   --interactive-accent-rgb: var(--r-bright-orange);
@@ -1001,6 +1074,36 @@ html[saved-theme="light"] {
   --link-unresolved-decoration: none;
   --link-unresolved-decoration-hover: none;
   --hx-link-ul-transparency-pct: 33%;
+  --h1-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h2-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h3-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h4-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h5-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h6-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
   --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
   --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
   --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));

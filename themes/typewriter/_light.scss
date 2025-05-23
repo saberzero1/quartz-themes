@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -32,18 +33,61 @@
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: #fcf5e4;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --background-primary: hsl(
+    calc(var(--base-h) + 44),
+    calc(var(--base-s) + 79%),
+    calc(var(--base-l) - 2%)
+  );
   --background-primary-alt: #fcf5e4;
+  --background-secondary: hsl(
+    calc(var(--base-h) + 42),
+    calc(var(--base-s) + 34%),
+    calc(var(--base-l) - 12%)
+  );
   --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
   --background-translucent: rgba(255, 255, 255, 0.85);
   --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
   --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
   --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
   --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+  --background-modifier-form-field-highlighted: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 8%)
+  );
+  --background-modifier-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-l) + 10%)
+  );
   --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l), 0.8);
   --text-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --text-accent-hover: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-l) - 10%)
+  );
   --text-normal: hsl(var(--base-h), var(--base-s), var(--base-d));
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
@@ -53,6 +97,16 @@
   --text-on-accent: #f2f2f2;
   --interactive-normal: #f2f3f5;
   --interactive-hover: #e9e9e9;
+  --interactive-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-l) + 10%)
+  );
+  --interactive-accent-hover: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-l) - 0%)
+  );
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-success: #197300;
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);

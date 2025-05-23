@@ -1,4 +1,5 @@
 :root:root {
+  color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -79,6 +80,9 @@
   --shadow-700: rgba(0, 0, 0, 0.95);
   --shadow-small: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
   --shadow-medium: 0px 3px 3.1px -20px rgba(0, 0, 0, 0.2), 0px 24px 25px -20px rgba(0, 0, 0, 0.35);
+  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448),
+    0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6), 0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852),
+    0px 45px 50px -52px rgba(0, 0, 0, 1);
   --color-cyan-300: hsl(183, 29%, 62%);
   --color-cyan-500: hsl(192, 46%, 68%);
   --color-cyan-510: hsl(191, 65%, 59%);
@@ -90,6 +94,28 @@
   --color-cyan-577: hsl(13, 52%, 80%);
   --color-cyan-700: hsl(194, 50%, 47%);
   --color-cyan-900: hsl(196, 27%, 41%);
+  --color-cyan-gradient-1: linear-gradient(
+    180deg,
+    #82b7ba,
+    #77aeb3,
+    #6da5ac,
+    #629ca5,
+    #5a919c,
+    #558590,
+    #4f7984,
+    #496d79
+  );
+  --color-cyan-gradient-2: linear-gradient(
+    180deg,
+    #6de0fd,
+    #5dd6f5,
+    #56d3f2,
+    #4fcfef,
+    #48cceb,
+    #40c8e8,
+    #37c5e5,
+    #2dc1e2
+  );
   --color-magenta-300: hsl(334, 37%, 65%);
   --color-magenta-310: hsl(338, 100%, 87%);
   --color-magenta-500: hsl(338, 100%, 80%);
@@ -98,6 +124,28 @@
   --color-magenta-900: hsl(317, 62%, 65%);
   --color-magenta-910: hsl(342, 96%, 68%);
   --color-magenta-920: hsl(342, 31%, 34%);
+  --color-magenta-gradient-1: linear-gradient(
+    180deg,
+    #ffb1ce,
+    #ffa3ca,
+    #f897c4,
+    #f88cc4,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  );
+  --color-magenta-gradient-2: linear-gradient(
+    180deg,
+    #ff99be,
+    #fc91bd,
+    #f88abd,
+    #f483bd,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  );
   --color-orange-300: hsl(28, 93%, 66%);
   --color-orange-310: hsl(28, 63%, 66%);
   --color-orange-500: hsl(28, 43%, 47%);
@@ -111,6 +159,28 @@
   --color-yellow-510: hsl(59, 51%, 68%);
   --color-yellow-700: hsl(58, 86%, 66%);
   --color-yellow-900: hsl(59, 81%, 47%);
+  --color-yellow-gradient-1: linear-gradient(
+    180deg,
+    #fcff80,
+    #fafd6b,
+    #f9fb57,
+    #f6f843,
+    #f4f430,
+    #f0ef1e,
+    #e4e213,
+    #ccc914
+  );
+  --color-yellow-gradient-2: linear-gradient(
+    -90deg,
+    #f3ee5e,
+    #f1ec50,
+    #f0eb41,
+    #eee933,
+    #ece725,
+    #eae516,
+    #dbd815,
+    #ccc914
+  );
   --color-h3-orange: hsl(38, 60%, 63%);
   --color-h3-green: hsl(148, 47%, 51%);
   --color-h3-alt: hsl(226, 95%, 76%);
@@ -122,7 +192,30 @@
   --color-green-900: hsl(166, 74%, 45%);
   --color-green-910: hsl(158, 85%, 45%);
   --color-green-920: hsl(167, 83%, 31%);
+  --color-green-gradient-1: linear-gradient(
+    180deg,
+    #9effd0,
+    #8bfcc9,
+    #79f9c4,
+    #67f4bf,
+    #57efbb,
+    #48e8b7,
+    #39e0b4,
+    #2cd8b0
+  );
+  --color-green-gradient-2: linear-gradient(
+    180deg,
+    #a2f49a,
+    #89f18d,
+    #79ee8b,
+    #69ea8d,
+    #59e692,
+    #4ae299,
+    #3bdda3,
+    #2cd8b0
+  );
   --color-purple-300: hsl(255, 49%, 76%);
+  --color-purple-333: hsl(245, 37%, 80%);
   --color-purple-500: hsl(255, 100%, 86%);
   --color-purple-555: hsl(255, 100%, 86%);
   --color-purple-577: hsl(255, 100%, 86%);
@@ -130,10 +223,54 @@
   --color-purple-900: hsl(263, 46%, 61%);
   --color-purple-910: hsl(263, 37%, 69%);
   --color-purple-920: hsl(263, 39%, 46%);
+  --color-purple-gradient-1: linear-gradient(
+    180deg,
+    #d9ccff,
+    #d2c4ff,
+    #cbbcff,
+    #c4b4ff,
+    #bdabff,
+    #b5a3ff,
+    #ad9bff,
+    #a593ff
+  );
+  --color-purple-gradient-2: linear-gradient(
+    180deg,
+    #d9ccff,
+    #ccbafc,
+    #c0a9f8,
+    #b59af2,
+    #ab8cea,
+    #a281e1,
+    #9977d6,
+    #916ec9
+  );
   --color-slate-300: hsl(220, 23%, 90%);
   --color-slate-500: hsl(224, 37%, 80%);
   --color-slate-700: hsl(223, 18%, 68%);
   --color-slate-900: hsl(225, 14%, 40%);
+  --color-slate-gradient-1: linear-gradient(
+    180deg,
+    #eff1f5,
+    #e3e6ed,
+    #d7dce5,
+    #ccd1dd,
+    #c0c7d5,
+    #b5bccd,
+    #aab2c5,
+    #9fa7bc
+  );
+  --color-slate-gradient-2: linear-gradient(
+    180deg,
+    #b9c3df,
+    #aab4cf,
+    #9ca5bf,
+    #8e97b0,
+    #8c96b1,
+    #828ba5,
+    #70778f,
+    #656d85
+  );
   --color-highlight-text: var(--color-cyan-530);
   --color-highlight-bg: rgba(255, 252, 59, 0.08);
   --color-highlight-border: rgba(255, 252, 59, 0.4);

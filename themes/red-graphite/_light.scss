@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -18,11 +19,89 @@
   --color-purple: #7852ee;
   --color-pink-rgb: 213, 57, 132;
   --color-pink: #d53984;
+  --color-base-00: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 100%)
+  );
+  --color-base-05: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 95%)
+  );
+  --color-base-10: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 90%)
+  );
+  --color-base-20: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 80%)
+  );
+  --color-base-25: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 75%)
+  );
+  --color-base-30: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 70%)
+  );
+  --color-base-35: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 65%)
+  );
+  --color-base-40: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 60%)
+  );
+  --color-base-50: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 50%)
+  );
+  --color-base-60: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 40%)
+  );
+  --color-base-70: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 30%)
+  );
+  --color-base-100: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    var(--theme-base-color-l)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --red-graphite-accent-color-h: 2;
   --red-graphite-accent-color-s: 56%;
   --red-graphite-accent-color-l: 54%;
@@ -35,6 +114,151 @@
   --theme-base-color-h: var(--red-graphite-base-color-h);
   --theme-base-color-s: var(--red-graphite-base-color-s);
   --theme-base-color-l: var(--red-graphite-base-color-l);
+  --color-base-200: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 100%)
+  );
+  --color-base-195: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 95%)
+  );
+  --color-base-190: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 90%)
+  );
+  --color-base-185: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 85%)
+  );
+  --color-base-180: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 80%)
+  );
+  --color-base-175: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 75%)
+  );
+  --color-base-170: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 70%)
+  );
+  --color-base-165: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 65%)
+  );
+  --color-base-160: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 60%)
+  );
+  --color-base-155: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 55%)
+  );
+  --color-base-150: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 50%)
+  );
+  --color-base-145: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 45%)
+  );
+  --color-base-140: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 40%)
+  );
+  --color-base-135: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 35%)
+  );
+  --color-base-130: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 30%)
+  );
+  --color-base-125: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 25%)
+  );
+  --color-base-120: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 20%)
+  );
+  --color-base-115: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 15%)
+  );
+  --color-base-110: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 10%)
+  );
+  --color-base-105: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 5%)
+  );
+  --color-base-95: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 5%)
+  );
+  --color-base-90: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 10%)
+  );
+  --color-base-85: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 15%)
+  );
+  --color-base-80: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 20%)
+  );
+  --color-base-75: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 25%)
+  );
+  --color-base-65: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 35%)
+  );
+  --color-base-55: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 45%)
+  );
+  --color-base-45: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 55%)
+  );
+  --color-base-15: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 85%)
+  );
   --background-primary: var(--color-base-20);
   --background-primary-alt: var(--color-base-00);
   --background-secondary: var(--color-base-100);

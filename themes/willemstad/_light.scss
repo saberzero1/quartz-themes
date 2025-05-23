@@ -1,4 +1,5 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -46,6 +47,7 @@
   --accent-l: 28%;
   --color-accent-00: hsl(155, 100%, 37%);
   --color-accent-05: hsl(158, 96%, 33%);
+  --color-accent-10: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-15: hsl(170, 83%, 24%);
   --color-accent-20: hsl(184, 74%, 20%);
   --color-red-2: hsl(0, 100%, 40%);
@@ -104,6 +106,9 @@
   --tab-padding: calc(var(--header-padding) + 0.5 * var(--icon-diff));
   --ribbon-padding: var(--header-margin);
   --ribbon-width: var(--header-height);
+  --header-height: calc(
+    var(--header-icon-size) + var(--header-padding) * 2 + var(--header-margin) * 2
+  );
   --header-margin: var(--size-4-1);
   --header-margin-half: calc(0.5 * var(--header-margin));
   --tab-outline-width: 0px;

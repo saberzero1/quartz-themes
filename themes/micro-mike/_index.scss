@@ -1278,6 +1278,7 @@ body {
 /* START DARK */
 :root,
 html {
+  color-scheme: dark;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -1311,6 +1312,16 @@ html {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --interactive-normal: var(--color-base-30);
@@ -1321,6 +1332,16 @@ html {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --ribbonWidth: 40px;
@@ -1354,12 +1375,64 @@ html {
   --dtm-08-dm-list-tab-icon-color: inherit;
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#0003, #0006);
+  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
+    0 0 0 1px #0008, 0 1px 4px #0004;
   --dtm-08-tabs-bg: linear-gradient(var(--d8dB), var(--d8dA) 50%, var(--d8d8) 50%, var(--d8d7));
   --dtm-08-tabs-bs: inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
+  --dtm-08-tab-hover-bg: linear-gradient(
+    var(--d8d8),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8dB)
+  );
   --dtm-08-tab-hover-bs: inset 0 1px #fff3, 0 0 0 1px #000b, 0 1px 2px #0008;
+  --dtm-08-tab-active-bg: linear-gradient(
+    var(--d8dC),
+    var(--d8dD) 50%,
+    var(--d8dB) 50%,
+    var(--d8dA)
+  );
   --dtm-08-tab-active-bs: inset 0 1px 3px #0008, 0 0 0 1px #000b;
+  --dtm-08-tab-selected-bg: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d9) 50%,
+    var(--d8dA)
+  );
   --dtm-08-tab-selected-bs: inset 0 1px #fff2, 0 0 0 1px #000b;
+  --dtm-08-card-style1-bg: linear-gradient(
+    var(--d8d9),
+    var(--d8dA) 50%,
+    var(--d8dB) 50%,
+    var(--d8dA)
+  );
+  --dtm-08-card-style1-bs: 0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
+    inset 0 1px #fff3;
+  --dtm-08-card-style1h-bg: linear-gradient(
+    var(--d8d8),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8d9)
+  );
+  --dtm-08-card-style1h-bs: 0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
+    inset 0 1px #fff3;
+  --dtm-08-card-style1a-bg: linear-gradient(
+    var(--d8dA),
+    var(--d8dB) 50%,
+    var(--d8dC) 50%,
+    var(--d8dB)
+  );
+  --dtm-08-card-style1a-bs: inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2,
+    inset 0 1px 1px #0006;
+  --dtm-08-card-style1i-bg: linear-gradient(
+    var(--d8dB),
+    var(--d8dA) 50%,
+    var(--d8d9) 50%,
+    var(--d8d8)
+  );
   --dtm-08-card-style1i-bs: inset 0 1px 4px #0008, 0 0 0 1px #0004, 0 2px #fff2;
+  --dtm-08-card-style2i-bs: 0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
+    inset 0 0 0 1px rgba(0 0 0/0.25);
   --dtm-08-message-hover-bg: linear-gradient(#0002, #0001 50%, #0003 50%, #0002);
   --dtm-08-right-sidebar-separator-line: linear-gradient(to right, #0000, #000b);
   --blurple: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
@@ -1437,8 +1510,20 @@ html {
   --brand-500: var(--blurple);
   --premium-tier-2-purple-for-gradients: hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%);
   --premium-tier-2-purple-for-gradients-hsl: 342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
+  --premium-tier-2-purple-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%;
   --premium-tier-2-pink-for-gradients: hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%);
   --premium-tier-2-pink-for-gradients-hsl: 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+  --premium-tier-2-pink-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
   --premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
 
   code[data-theme*=" "] {

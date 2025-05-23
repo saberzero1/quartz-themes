@@ -1,4 +1,5 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
   --highlight-mix-blend-mode: none;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: var(--text);
@@ -32,6 +33,16 @@
   --color-base-100: rgb(var(--text));
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: rgba(var(--exterior), 0.3);
   --background-secondary-alt: rgb(var(--exterior));
   --interactive-normal: rgb(var(--surface0));
@@ -42,6 +53,16 @@
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(var(--side), 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
+    0 2px 4px 0 rgba(var(--exterior), 0.15), 0 1px 1.5px 0 rgba(var(--exterior), 0.1),
+    0 1px 2px 0 rgba(var(--exterior), 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
+    0 2px 3px 0 rgba(var(--exterior), 0.3), 0 1px 1.5px 0 rgba(var(--exterior), 0.2),
+    0 1px 2px 0 rgba(var(--exterior), 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(var(--exterior), 0.121),
+    0px 3.4px 6.7px rgba(var(--exterior), 0.179), 0px 15px 30px rgba(var(--exterior), 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--exterior), 0.071),
+    0px 6.3px 24.7px rgba(var(--exterior), 0.112), 0px 30px 90px rgba(var(--exterior), 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --text: 198, 206, 239;

@@ -811,6 +811,7 @@ body {
 /* START DARK */
 :root,
 html {
+  color-scheme: dark;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -844,6 +845,16 @@ html {
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: var(--color-black);
   --background-secondary-alt: var(--color-black);
   --interactive-normal: var(--color-blacker);
@@ -854,6 +865,16 @@ html {
   --background-modifier-box-shadow: var(--sheer-dark);
   --background-modifier-cover: var(--sheer-medium);
   --text-selection: rgba(134, 169, 209, 0.233);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
+    0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --background-primary: var(--color-gray-90);
@@ -910,6 +931,39 @@ html {
   --color-cyan-530: hsl(191, 54%, 64%);
   --color-cyan-700: hsl(194, 50%, 47%);
   --color-cyan-900: hsl(196, 27%, 41%);
+  --color-cyan-gradient-1: linear-gradient(
+    180deg,
+    #82b7ba,
+    #77aeb3,
+    #6da5ac,
+    #629ca5,
+    #5a919c,
+    #558590,
+    #4f7984,
+    #496d79
+  );
+  --color-cyan-gradient-2: linear-gradient(
+    180deg,
+    #55a6be,
+    #509fb7,
+    #4d98af,
+    #4d8fa4,
+    #4c8698,
+    #4c7e8e,
+    #4a7583,
+    #496d79
+  );
+  --color-cyan-gradient-3: linear-gradient(
+    180deg,
+    #6de0fd,
+    #5dd6f5,
+    #56d3f2,
+    #4fcfef,
+    #48cceb,
+    #40c8e8,
+    #37c5e5,
+    #2dc1e2
+  );
   --color-magenta: var(--color-magenta-500);
   --color-magenta-300: hsl(334, 37%, 65%);
   --color-magenta-310: hsl(338, 100%, 87%);
@@ -918,29 +972,161 @@ html {
   --color-magenta-900: hsl(317, 62%, 65%);
   --color-magenta-910: hsl(342, 96%, 68%);
   --color-magenta-920: hsl(342, 100%, 74%);
+  --color-magenta-gradient-1: linear-gradient(
+    180deg,
+    #ffb1ce,
+    #ffa3ca,
+    #f897c4,
+    #f88cc4,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  );
+  --color-magenta-gradient-2: linear-gradient(
+    180deg,
+    #ff99be,
+    #fc91bd,
+    #f88abd,
+    #f483bd,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  );
   --color-yellow-300: hsl(61, 100%, 75%);
   --color-yellow-310: hsl(61, 46%, 69%);
   --color-yellow-500: hsl(59, 71%, 68%);
   --color-yellow-700: hsl(58, 86%, 66%);
   --color-yellow-900: hsl(59, 82%, 44%);
+  --color-yellow-gradient-1: linear-gradient(
+    180deg,
+    #fcff80,
+    #fafd6b,
+    #f9fb57,
+    #f6f843,
+    #f4f430,
+    #f0ef1e,
+    #e4e213,
+    #ccc914
+  );
+  --color-yellow-gradient-2: linear-gradient(
+    -90deg,
+    #f3ee5e,
+    #f1ec50,
+    #f0eb41,
+    #eee933,
+    #ece725,
+    #eae516,
+    #dbd815,
+    #ccc914
+  );
   --color-green-300: hsl(151, 100%, 81%);
   --color-green-500: hsl(124, 54%, 75%);
   --color-green-700: hsl(151, 72%, 65%);
   --color-green-900: hsl(166, 74%, 45%);
   --color-green-910: hsl(158, 85%, 45%);
   --color-green-920: hsl(167, 83%, 31%);
+  --color-green-gradient-1: linear-gradient(
+    180deg,
+    #9effd0,
+    #8bfcc9,
+    #79f9c4,
+    #67f4bf,
+    #57efbb,
+    #48e8b7,
+    #39e0b4,
+    #2cd8b0
+  );
+  --color-green-gradient-2: linear-gradient(
+    180deg,
+    #a2f49a,
+    #89f18d,
+    #79ee8b,
+    #69ea8d,
+    #59e692,
+    #4ae299,
+    #3bdda3,
+    #2cd8b0
+  );
   --color-purple-300: hsl(255, 49%, 76%);
   --color-purple-500: hsl(255, 100%, 86%);
   --color-purple-700: hsl(260, 100%, 79%);
   --color-purple-900: hsl(263, 46%, 61%);
   --color-purple-910: hsl(263, 37%, 69%);
+  --color-purple-gradient-1: linear-gradient(
+    180deg,
+    #d9ccff,
+    #d2c4ff,
+    #cbbcff,
+    #c4b4ff,
+    #bdabff,
+    #b5a3ff,
+    #ad9bff,
+    #a593ff
+  );
+  --color-purple-gradient-2: linear-gradient(
+    180deg,
+    #d9ccff,
+    #ccbafc,
+    #c0a9f8,
+    #b59af2,
+    #ab8cea,
+    #a281e1,
+    #9977d6,
+    #916ec9
+  );
   --color-slate: var(--color-slate-500);
   --color-slate-300: hsl(220, 23%, 90%);
   --color-slate-500: hsl(224, 37%, 80%);
   --color-slate-700: hsl(223, 18%, 68%);
   --color-slate-900: hsl(225, 14%, 40%);
+  --color-slate-gradient-1: linear-gradient(
+    180deg,
+    #eff1f5,
+    #e3e6ed,
+    #d7dce5,
+    #ccd1dd,
+    #c0c7d5,
+    #b5bccd,
+    #aab2c5,
+    #9fa7bc
+  );
+  --color-slate-gradient-2: linear-gradient(
+    180deg,
+    #b9c3df,
+    #aab4cf,
+    #9ca5bf,
+    #8e97b0,
+    #8c96b1,
+    #828ba5,
+    #70778f,
+    #656d85
+  );
+  --color-slate-gradient-3: linear-gradient(
+    180deg,
+    #9fa7bc,
+    #97a0b6,
+    #9099b1,
+    #8892ab,
+    #818aa6,
+    #7983a0,
+    #727c9b,
+    #6a7595
+  );
   --color-highlight-text: hsl(225, 12%, 20%);
   --color-highlight-bg: hsla(192, 100%, 92%, 0.596);
+  --color-highlight-gradient: linear-gradient(
+    60deg,
+    #d7f8ff,
+    #d4f0fe,
+    #d1e6fe,
+    #cedcfd,
+    #cbd2fc,
+    #c3c1fc,
+    #c7b9f8,
+    #c7a3ff
+  );
   --color-highlight-shadow: 0px 0px 2px #a8a47881;
   --color-caret: var(--color-slate-500);
   --md-color-text: var(--color-cyan-530);

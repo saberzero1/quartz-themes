@@ -1,4 +1,5 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -32,18 +33,53 @@
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-secondary-alt: #000000;
   --interactive-normal: #2a2a2a;
   --interactive-hover: #303030;
   --text-accent: var(--color-accent-1);
+  --interactive-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-d) + 10%)
+  );
+  --interactive-accent-hover: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-l) - 0%)
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
   --text-selection: rgba(23, 48, 77, 0.99);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --background-primary: hsl(var(--base-h), var(--base-s), var(--base-d));
   --background-primary-alt: #202020;
+  --background-secondary: hsl(
+    calc(var(--base-h) + 30),
+    calc(var(--base-s) + 11.5%),
+    calc(var(--base-l) - 75.6%)
+  );
   --background-modifier-border: #333;
   --background-modifier-border-hover: rgb(94, 94, 94);
   --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 60%));
@@ -54,6 +90,11 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d), 0.8);
+  --text-accent-hover: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    calc(var(--theme-accent-d) - 10%)
+  );
   --text-normal: rgb(197, 184, 161);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));

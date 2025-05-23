@@ -1,4 +1,5 @@
 :root:root {
+  color-scheme: dark;
   --highlight-mix-blend-mode: normal;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -44,6 +45,16 @@
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--custom-red-500-hsl), 0.25);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --Minimum-Page-Width: 700px;
@@ -238,6 +249,10 @@
   --text-faint: var(--color-base-50);
   --text-on-accent: var(--background-primary-active);
   --custom-code-border-color: var(--black);
+  --custom-global-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-800))
+    drop-shadow(0px 0px 2px var(--custom-black-800));
   --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px black) drop-shadow(0px 2px 6px black);
+  --custom-statusbar-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-900))
+    drop-shadow(0px 0px 2px var(--custom-black-900));
   --custom-active-page-shadow: inset 0px 0px 15px 8px var(--custom-black-850);
 }
