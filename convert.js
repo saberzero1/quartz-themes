@@ -599,7 +599,6 @@ manifestCollection.forEach((manifest) => {
 
 // STEP 6
 // _index.scss
-const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
 const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
 const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
 const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
@@ -646,28 +645,11 @@ manifestCollection.forEach((manifest) => {
     result = removeEmptyRules(result)
     fs.writeFileSync(atomicFile, result, "utf8")
   }
-  const bodyValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    bodyRegex,
-  )
-  const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//BODY`,
-    removeNonVariableLines(bodyValue2),
-  )
-})
-manifestCollection.forEach((manifest) => {
-  const rootValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    rootRegex,
-  )
-  const rootValue2 = rootValue.replace(rootRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//ROOT`,
-    removeNonVariableLines(rootValue2),
-  )
+  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
+  const rootValue = getRuleDeclarations(themeCSS, ":root")
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//ROOT`, rootValue)
+  const bodyValue = getRuleDeclarations(themeCSS, "body")
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//BODY`, bodyValue)
 })
 
 // _fonts.scss
