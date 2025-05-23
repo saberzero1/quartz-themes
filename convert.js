@@ -1,4 +1,3 @@
-import convertCssColorsToRgbWithSass from "./color-convert.mjs"
 import {
   splitCombinedRules,
   combineIdenticalSelectors,
@@ -263,43 +262,6 @@ function findAllMatchesAsString(filePath, regexString) {
 
     // Convert the matches array to a newline-separated string (or return an empty string if no matches)
     return matches ? matches.join("\n") : ""
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-/**
- * Removes all lines from a CSS file that are not CSS variable definitions.
- * A CSS variable is defined as a line containing '--[variable-name]: [value];'.
- *
- * @param {string} cssString - The string content of the CSS file.
- * @returns {string} Custom properties only.
- * @throws {Error} If the file cannot be read or written.
- */
-function removeNonVariableLines(cssString) {
-  try {
-    // Read the string as an array of lines
-    const lines = cssString.split("\n")
-
-    // Remove comments
-    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
-
-    // Filter lines to include only those that match the CSS variable pattern
-    const variableLines = linesCleared.filter(
-      (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
-    )
-
-    // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
-
-    // Join the filtered lines back into a single string
-    const updatedContent = emptyColorLines.join("\n")
-
-    // Convert colors to rgb
-    const convertedContent = convertCssColorsToRgbWithSass(updatedContent)
-
-    // Write the updated content back to the file
-    return convertedContent
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`)
   }
@@ -639,28 +601,12 @@ manifestCollection.forEach((manifest) => {
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_dark.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue),
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//DARK`, darkValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//DARK`, darkValue)
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_light.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue),
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//LIGHT`, lightValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//LIGHT`, lightValue)
   }
 
   // Unset color-scheme for single mode themes
