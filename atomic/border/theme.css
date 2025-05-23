@@ -40,12 +40,6 @@
   color: var(--message-bar-fg-color);
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .messageBar > div {
   display: flex;
   align-items: flex-start;
@@ -157,12 +151,6 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 #editorUndoBar button {
   cursor: pointer;
 }
@@ -234,12 +222,6 @@
   background: var(--dialog-bg-color);
   color: var(--text-primary-color);
   box-shadow: var(--dialog-shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .dialog .mainContainer *:focus-visible {
@@ -405,12 +387,6 @@
   align-self: stretch;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .dialog .mainContainer .messageBar > div::before {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -518,9 +494,6 @@
   -webkit-backdrop-filter: var(--highlight-backdrop-filter);
   backdrop-filter: var(--highlight-backdrop-filter);
   border-radius: 4px;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .textLayer .highlight.appended {
@@ -1418,13 +1391,7 @@
 .xfaReadOnly textarea {
   background: initial;
 }
-
-@media print {
-}
 /* @obsidian TODO: bring this in when we enable annotation editing */
-
-@media screen and (forced-colors: active) {
-}
 
 [data-main-rotation="90"] {
   transform: rotate(90deg) translateY(-100%);
@@ -1460,9 +1427,6 @@
   padding-bottom: var(--pdfViewer-padding-bottom);
   --hcm-highlight-filter: invert(100%);
   --hcm-highlight-selected-filter: none;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .pdfViewer.copyAll {
@@ -2825,8 +2789,6 @@ iframe {
   display: none;
   border: 0;
 }
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -3207,10 +3169,6 @@ body:not(.is-mobile) .app-container {
     width: 100%;
     right: 0;
   }
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
 }
 .cm-tab {
   display: inline-block;
@@ -4158,8 +4116,6 @@ body.is-frameless .modal {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
   }
-}
-@keyframes sk-cubeGridScaleDelay {
 }
 .is-loading {
   position: relative;
@@ -5890,8 +5846,6 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
     stroke: white;
   }
 }
-@media screen and (max-width: 300px) {
-}
 .is-translucent:not(.is-fullscreen) {
   --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
   --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
@@ -6559,8 +6513,6 @@ body.is-phone .view-header-nav-buttons {
 }
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   color: var(--tab-text-color-focused-active);
-}
-@media (hover: hover) {
 }
 .workspace-sidedock-empty-state {
   font-size: var(--font-ui-small);
@@ -9111,8 +9063,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   color: var(--input-placeholder-color);
   pointer-events: none;
 }
-@keyframes multi-select-highlight {
-}
 .multi-select-duplicate {
   animation: multi-select-highlight 2000ms ease-in;
 }
@@ -9419,10 +9369,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 .progress-bar .progress-bar-subline {
   transition: width 150ms ease-in-out;
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 .progress-bar-context-button {
   margin-top: var(--size-4-3);
@@ -9963,8 +9909,6 @@ body:not(.is-phone) .vertical-tab-header-group-items {
     opacity: 1;
     transform: translateY(-50%) scale(1.05);
   }
-}
-@keyframes pop-right {
 }
 .tree-item-self {
   align-items: baseline;
@@ -10568,8 +10512,6 @@ kbd {
 }
 .is-phone .pdf-findbar .pdf-search-wrapper {
   gap: var(--size-4-2);
-}
-@keyframes rotation {
 }
 .pdf-find-results-count {
   color: var(--text-muted);
@@ -11307,8 +11249,6 @@ code[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   text-shadow: none;
-}
-@media print {
 }
 .token.important {
   font-weight: bold;
@@ -13808,8 +13748,6 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-list-indent {
   border-right: 0;
 }
-@keyframes hmd-file-uploading-ani {
-}
 @media (hover: hover) {
   .cm-s-obsidian div.HyperMD-goback-button:hover {
     color: transparent;
@@ -14164,8 +14102,6 @@ a.tag {
     color: var(--tag-color-hover);
     text-decoration: var(--tag-decoration-hover);
   }
-}
-@media (hover: hover) {
 }
 .cm-hashtag {
   color: var(--tag-color);
@@ -16681,10 +16617,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
   animation-timing-function: linear;
   animation: none;
 }
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
 .sync-history-list-container {
   display: flex;
   flex-direction: column;
@@ -16734,8 +16666,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item-header.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 @media (hover: hover) {
   .sync-history-list-item-header.is-active .tree-item-flair:hover {
@@ -16849,8 +16779,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item .version-group-container .version-group-item.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 .sync-history-content-container {
   background-color: var(--background-primary);
@@ -18752,10 +18680,6 @@ body.is-mobile.keyboard-animating .app-container {
 body.is-phone .suggestion-bg {
   display: block;
   z-index: var(--layer-modal);
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .mobile-image-viewer {
   position: absolute;
@@ -25257,20 +25181,6 @@ body:not(.is-mobile, .extra-anim-remove) .document-search-container {
   animation: unset;
 }
 
-@media (prefers-reduced-motion) {
-  /*body:not(.is-phone, .extra-anim-remove) .graph-controls:not(.is-close),
-    body:not(.is-phone, .extra-anim-remove) .popover:not(.svelte-1xg3ic1),
-    body:not(.is-phone, .extra-anim-remove) .modal:not(:has(.checkbox-container)),
-    body:not(.is-phone, .extra-anim-remove) .menu:not(.mk-style-menu, .svelte-1xg3ic1),
-    body:not(.is-phone, .extra-anim-remove) .suggestion-container:not([data-popper-placement="bottom-start"]),*/
-}
-
-@-webkit-keyframes scale-up {
-}
-
-@keyframes scale-up {
-}
-
 body:not(.is-phone, .extra-anim-remove) .modal:has(.checkbox-container) {
   -webkit-animation: var(--anim-duration-fast) fadeIn both;
   animation: var(--anim-duration-fast) fadeIn both;
@@ -26507,9 +26417,6 @@ body:not(.is-translucent) .titlebar-text {
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-width='2' d='M4 11h8'/%3e%3c/svg%3e");
 }
 
-@media (hover: hover) {
-}
-
 /* ====== status bar====== */
 
 body.is-frameless.is-hidden-frameless:not(.qe-hide-breadcrumbs) .status-bar {
@@ -27675,9 +27582,6 @@ body:not(.is-mobile).theme-dark
   .workspace-leaf-content[data-type="markdown"]
   .document-search-container {
   box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.6);
-}
-
-@container (max-width: 600px) {
 }
 
 /*webviewer*/
@@ -28860,9 +28764,6 @@ body:not(.is-mobile) input[type="range"]:is(:focus, :focus-visible)::-webkit-sli
 
 /* input */
 
-@media (hover: hover) {
-}
-
 .theme-light input[type="checkbox"] {
   box-shadow: 0 1px 2px 0 hsla(var(--accent-h), 18%, 80%, 0.2);
 }
@@ -28976,9 +28877,6 @@ body:not(.is-phone) div:has(> input.prompt-input) {
 /*toggle switch*/
 
 /*track*/
-
-@media (hover: hover) {
-}
 
 /*thumb*/
 
@@ -30454,13 +30352,7 @@ body:not(.ul-marker-restore)
   background-color: var(--list-marker-color);
 }
 
-@media (hover: hover) {
-}
-
 /* ======checkboxes ====== */
-
-@media (hover: hover) {
-}
 
 /* Alternate Checkboxes */
 

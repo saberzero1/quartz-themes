@@ -40,12 +40,6 @@
   color: var(--message-bar-fg-color);
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .messageBar > div {
   display: flex;
   align-items: flex-start;
@@ -157,12 +151,6 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 #editorUndoBar button {
   cursor: pointer;
 }
@@ -234,12 +222,6 @@
   background: var(--dialog-bg-color);
   color: var(--text-primary-color);
   box-shadow: var(--dialog-shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .dialog .mainContainer *:focus-visible {
@@ -405,12 +387,6 @@
   align-self: stretch;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .dialog .mainContainer .messageBar > div::before {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -520,9 +496,6 @@
   -webkit-backdrop-filter: var(--highlight-backdrop-filter);
   backdrop-filter: var(--highlight-backdrop-filter);
   border-radius: var(--radius-s);
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .textLayer .highlight.appended {
@@ -1435,13 +1408,7 @@
 .xfaReadOnly textarea {
   background: initial;
 }
-
-@media print {
-}
 /* @obsidian TODO: bring this in when we enable annotation editing */
-
-@media screen and (forced-colors: active) {
-}
 
 [data-main-rotation="90"] {
   transform: rotate(90deg) translateY(-100%);
@@ -1477,9 +1444,6 @@
   padding-bottom: var(--pdfViewer-padding-bottom);
   --hcm-highlight-filter: invert(100%);
   --hcm-highlight-selected-filter: none;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .pdfViewer.copyAll {
@@ -2482,8 +2446,6 @@ iframe {
   display: none;
   border: 0;
 }
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -2867,10 +2829,6 @@ body:not(.is-mobile) .app-container {
     width: 100%;
     right: 0;
   }
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
 }
 .cm-tab {
   display: inline-block;
@@ -3842,8 +3800,6 @@ body.is-frameless .modal {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
   }
-}
-@keyframes sk-cubeGridScaleDelay {
 }
 .is-loading {
   position: relative;
@@ -5608,8 +5564,6 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
     stroke: white;
   }
 }
-@media screen and (max-width: 300px) {
-}
 .is-translucent:not(.is-fullscreen) {
   --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
   --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
@@ -6279,8 +6233,6 @@ body.is-phone .view-header-nav-buttons {
 }
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   color: var(--tab-text-color-focused);
-}
-@media (hover: hover) {
 }
 .workspace-sidedock-empty-state {
   font-size: var(--font-ui-small);
@@ -8855,8 +8807,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   color: var(--text-faint);
   pointer-events: none;
 }
-@keyframes multi-select-highlight {
-}
 .multi-select-duplicate {
   animation: multi-select-highlight 2000ms ease-in;
 }
@@ -9174,10 +9124,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 .progress-bar .progress-bar-subline {
   transition: width 150ms ease-in-out;
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 .progress-bar-context-button {
   margin-top: var(--size-4-3);
@@ -9730,8 +9676,6 @@ body:not(.is-phone) .vertical-tab-header-group-items {
     opacity: 1;
     transform: translateY(-50%) scale(1.05);
   }
-}
-@keyframes pop-right {
 }
 .tree-item-self {
   align-items: baseline;
@@ -10354,8 +10298,6 @@ kbd {
 }
 .is-phone .pdf-findbar .pdf-search-wrapper {
   gap: var(--size-4-2);
-}
-@keyframes rotation {
 }
 .pdf-find-results-count {
   color: var(--text-muted);
@@ -11100,8 +11042,6 @@ code[class*="language-"] {
   display: block;
   padding: 1em;
   overflow: auto;
-}
-@media print {
 }
 .token.important {
   font-weight: bold;
@@ -13651,8 +13591,6 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-list-indent {
   border-right: 0;
 }
-@keyframes hmd-file-uploading-ani {
-}
 @media (hover: hover) {
   .cm-s-obsidian div.HyperMD-goback-button:hover {
     color: transparent;
@@ -14007,8 +13945,6 @@ a.tag {
     color: var(--tag-color-hover);
     text-decoration: var(--tag-decoration-hover);
   }
-}
-@media (hover: hover) {
 }
 .cm-hashtag {
   color: var(--tag-color);
@@ -16568,10 +16504,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
   animation-timing-function: linear;
   animation: none;
 }
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
 .sync-history-list-container {
   display: flex;
   flex-direction: column;
@@ -16622,8 +16554,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item-header.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 @media (hover: hover) {
   .sync-history-list-item-header.is-active .tree-item-flair:hover {
@@ -16739,8 +16669,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item .version-group-container .version-group-item.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 .sync-history-content-container {
   background-color: var(--background-primary);
@@ -18653,10 +18581,6 @@ body.is-mobile.keyboard-animating .app-container {
 body.is-phone .suggestion-bg {
   display: block;
   z-index: var(--layer-modal);
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .mobile-image-viewer {
   position: absolute;
@@ -20739,9 +20663,6 @@ input.mobile-vault-chooser-field-input {
  *           Either edit the CSS there, or override in pdf-view.less
  */
 
-@media screen and (forced-colors: active) {
-}
-
 p .textLayer span {
   color: transparent;
   position: absolute;
@@ -20777,9 +20698,6 @@ p .textLayer span {
 
 .textLayer .endOfContent.active {
   top: 0;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .annotationLayer canvas {
@@ -20898,17 +20816,8 @@ p .textLayer span {
   cursor: pointer;
 }
 
-@media screen and (forced-colors: active) {
-}
-
-@media print {
-}
-
 /* @obsidian TODO: bring this in when we enable annotation editing */
 /* @import url(annotation_editor_layer_builder.css); */
-
-@media screen and (forced-colors: active) {
-}
 
 /* @obsidian this was changed from an id to a class */
 
@@ -21065,8 +20974,6 @@ p .textLayer span {
 .theme-dark .cm-active {
   background-color: #212121;
 }
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -21160,17 +21067,7 @@ p .textLayer span {
   font-family: "??";
   unicode-range: U+0;
 }
-@media print {
-}
-@keyframes node-inserted {
-}
 /* CURSOR */
-@-moz-keyframes blink {
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
-}
 /* Used to force a border model for a node */
 /* See issue #2901 */
 .markdown-source-view.mod-cm6 .cm-table-widget .table-drag-target {
@@ -21274,10 +21171,6 @@ p .textLayer span {
 .markdown-source-view.mod-cm6.is-rtl .cm-table-widget td.is-selected.bottom.start::after {
   border-bottom-right-radius: var(--table-selection-border-radius);
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Can be removed since it is redundant with Close link */
 .empty-state-close-button {
   display: none;
@@ -21315,12 +21208,6 @@ body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .titlebar {
 body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen):not(.is-maximized) .titlebar {
   padding-top: 2px;
 }
-@keyframes spin {
-}
-@-webkit-keyframes sk-cubeGridScaleDelay {
-}
-@keyframes sk-cubeGridScaleDelay {
-}
 body.is-phone .view-header {
   display: flex;
 }
@@ -21338,70 +21225,26 @@ body.is-phone .view-header {
 .view-header .view-header-icon:active {
   cursor: grabbing;
 }
-@media (hover: hover) {
-}
 /* Ribbon */
 /* Add background to top left corner space above ribbon */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .setting-editor-extra-setting-button {
   line-height: 0;
-}
-@media (hover: hover) {
 }
 .login-field {
   max-width: 500px;
   margin: 1em auto;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Hidden titlebar interferes with mouse */
 body.is-frameless.is-hidden-frameless {
   padding-top: 0;
-}
-@media (hover: hover) {
-}
-@media screen and (max-width: 300px) {
 }
 .is-translucent:not(.is-fullscreen) .workspace-split.mod-root {
   background-color: transparent;
 }
 /* Resize handles */
-@media (hover: hover) {
-}
 /* Hide tab icon if it's a note */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Remove tab titles in sidebar */
 /* Sidebar tabs */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Stacked tabs */
 .workspace
   .mod-root
@@ -21411,21 +21254,7 @@ body.is-frameless.is-hidden-frameless {
   .workspace-tab-header-inner {
   background-color: transparent;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Smoother animation for right sidebar button positioning during close */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Only used in Format Converter so far */
 .list-item-desc .list-item-part {
   color: var(--text-muted);
@@ -21502,8 +21331,6 @@ input.document-replace-input.mod-no-match {
   padding: 0.6em 0.8em 0.5em 1.4em;
 }
 /* class applies to select element itself, not a wrapper element */
-@media (hover: hover) {
-}
 /* Set options to normal weight */
 /* #todo Reduce specificity here */
 /*
@@ -21517,12 +21344,6 @@ input.document-replace-input.mod-no-match {
 /* Parent container of button rows */
 /* Use horizontal more actions "..." on macOS/iOS per OS guidelines */
 /* Parent button containers for SVG button icons */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .text-icon-button .text-button-icon svg.svg-icon {
   height: var(--icon-size);
   width: var(--icon-size);
@@ -21532,24 +21353,16 @@ input.document-replace-input.mod-no-match {
   box-shadow: 0 0 0px 2px var(--background-modifier-border-focus);
   outline: none;
 }
-@media (hover: hover) {
-}
 .input-label {
   display: inline-block;
   width: 150px;
   text-align: right;
   margin-right: var(--size-4-2);
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Textarea */
 /* Date input */
 /* Range slider */
 /* Color inputs */
-@media (hover: hover) {
-}
 .menu-item.is-warning {
   color: var(--text-error);
 }
@@ -21558,8 +21371,6 @@ input.document-replace-input.mod-no-match {
 }
 body:not(.native-scrollbars) .modal-close-button {
   right: 12px;
-}
-@media (hover: hover) {
 }
 .mod-sidebar-layout .modal-title {
   display: none;
@@ -21571,10 +21382,6 @@ body:not(.native-scrollbars) .modal-close-button {
   margin-top: 0;
   border-top: 1px solid var(--background-modifier-border);
   padding: var(--size-4-4);
-}
-@media (hover: hover) {
-}
-@keyframes multi-select-highlight {
 }
 .popover.hover-popover > .media-embed {
   min-height: 0;
@@ -21591,12 +21398,6 @@ body:not(.native-scrollbars) .modal-close-button {
 }
 .popover.hover-popover > .markdown-embed .mod-header + div > *:first-child {
   margin-top: 0;
-}
-@media (hover: hover) {
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 body:not(.native-scrollbars) ::-webkit-scrollbar {
   background-color: transparent;
@@ -21672,24 +21473,8 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
     background-color: var(--interactive-accent);
   }
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Add this attribute to the element that needs a tooltip */
 /* Triangle hack to make tooltip look like a speech bubble */
-@keyframes pop-down {
-}
-@keyframes pop-right {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes rotation {
-}
 .pdf-viewer:is(.scrollHorizontal, .scrollWrapped) .page {
   border: var(--size-4-1) solid transparent;
 }
@@ -21715,10 +21500,6 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
 .is-phone .pdf-annotation-modal .modal .modal-title {
   display: none;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 pre[class*="language-"] {
   color: var(--code-normal);
   background: var(--code-background);
@@ -21736,8 +21517,6 @@ pre[class*="language-"] {
   text-shadow: none;
   overflow: hidden;
 }
-@media print {
-}
 :not(pre) > code[class*="language-"] {
   background: var(--code-background);
   padding: 0.1em;
@@ -21747,12 +21526,6 @@ pre[class*="language-"] {
 /* Code blocks */
 /* Inline code */
 /* Syntax highlighting */
-@media print {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .inline-embed .markdown-embed-content p:first-child {
   margin-top: 0;
 }
@@ -21775,10 +21548,6 @@ pre[class*="language-"] {
 .markdown-source-view.mod-cm6 .cm-embed-block pre {
   margin: 0;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .is-mobile.is-ios .metadata-input-text.mod-datetime {
   padding-right: 0;
   width: auto;
@@ -21786,14 +21555,6 @@ pre[class*="language-"] {
 .is-mobile.is-ios .metadata-input-text.mod-date {
   padding-right: 0;
   width: auto;
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .metadata-property button {
   margin-top: var(--size-4-2);
@@ -21864,19 +21625,9 @@ pre[class*="language-"] {
 .metadata-property:not([data-property-key="tags"]) .multi-select-pill {
   line-height: var(--line-height-tight);
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Edit mode */
 .cm-hmd-frontmatter .error-marker .is-invalid {
   color: var(--text-on-accent);
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .markdown-source-view.is-live-preview.show-properties .metadata-container {
   display: var(--metadata-display-editing);
@@ -21968,8 +21719,6 @@ pre[class*="language-"] {
 .inline-title[data-level="6"] a {
   font-weight: inherit;
 }
-@media (hover: hover) {
-}
 /* Default markers */
 /* Indent depth
    Consistency in horizontal positioning of lists
@@ -21981,16 +21730,8 @@ pre[class*="language-"] {
 /* Allow clicking on the bullet to collapse */
 /* #todo move this into folding.less */
 /* Remove default bullets so we can replace them */
-@media (hover: hover) {
-}
 /* Allow clicking on the bullet to collapse */
 /* #todo move this into folding.less */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .metadata-container .internal-link {
   cursor: var(--cursor-link);
   text-decoration-line: var(--link-decoration);
@@ -22017,40 +21758,10 @@ pre[class*="language-"] {
     text-decoration-line: var(--link-decoration-hover);
   }
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes hmd-file-uploading-ani {
-}
-@media (hover: hover) {
-}
 /* Tables */
 .markdown-reading-view table {
   margin-block-start: var(--p-spacing);
   margin-block-end: var(--p-spacing);
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 ul > li.task-list-item .task-list-item-checkbox {
   margin-inline-start: calc(var(--checkbox-size) * -1.5);
@@ -22098,8 +21809,6 @@ ul > li.task-list-item .task-list-item-checkbox {
 }
 /* LEGACY Styles for plugin backwards compatibility */
 /* Vault name */
-@media (hover: hover) {
-}
 /* Style children
  The first level of folders and files
  needs slightly different styling */
@@ -22112,8 +21821,6 @@ ul > li.task-list-item .task-list-item-checkbox {
   border-radius: var(--radius-s);
 }
 /* Folders and files */
-@media (hover: hover) {
-}
 body:not(.is-grabbing) .nav-file-title.is-being-dragged .nav-folder-collapse-indicator {
   color: var(--text-on-accent);
 }
@@ -22127,16 +21834,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
   color: var(--text-on-accent);
 }
 /* 2022-07 Only used for Publish AFAIK */
-@media (hover: hover) {
-}
-@container (width < 250px) {
-}
 .modal.mod-publish .modal-title {
   padding: 0 var(--size-4-4);
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .is-rtl .search-input-container:before {
   left: auto;
@@ -22144,28 +21843,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
 }
 .global-search-input-container.search-input-container input {
   padding-right: 56px;
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes progress-bar {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .vault-list-item-container {
   display: flex;
@@ -22182,20 +21859,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
 .vault-list-item-faint {
   color: var(--text-faint);
   font-size: var(--font-ui-small);
-}
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .sync-history-text {
   flex: 1 0 0;
@@ -22239,18 +21902,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
   }
 }
 /* Sync log */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: none) {
-}
 .canvas-node-content.markdown-embed
   > .markdown-embed-content
   > .markdown-preview-view
@@ -22274,10 +21925,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
   > div:last-child
   > *:last-child {
   margin-bottom: 0;
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .browser-favicon-container {
   display: flex;
@@ -22411,12 +22058,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-folder-collapse-i
 textarea.browser-adblock-lists {
   flex-grow: 1;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .is-mobile .markdown-source-view.mod-cm6 .cm-content {
   caret-color: var(--caret-color);
 }
@@ -22483,10 +22124,6 @@ textarea.browser-adblock-lists {
 }
 .is-phone .vault-list-item-button {
   margin-right: 0;
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .mod-tappable {
   transition: opacity 0.15s ease-in-out;

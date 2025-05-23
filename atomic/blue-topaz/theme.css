@@ -40,12 +40,6 @@
   color: var(--message-bar-fg-color);
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .messageBar > div {
   display: flex;
   align-items: flex-start;
@@ -157,12 +151,6 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 #editorUndoBar button {
   cursor: pointer;
 }
@@ -234,12 +222,6 @@
   background: var(--dialog-bg-color);
   color: var(--text-primary-color);
   box-shadow: var(--dialog-shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .dialog .mainContainer *:focus-visible {
@@ -405,12 +387,6 @@
   align-self: stretch;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .dialog .mainContainer .messageBar > div::before {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -518,9 +494,6 @@
   -webkit-backdrop-filter: var(--highlight-backdrop-filter);
   backdrop-filter: var(--highlight-backdrop-filter);
   border-radius: 4px;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .textLayer .highlight.appended {
@@ -1480,13 +1453,7 @@
 .xfaReadOnly textarea {
   background: initial;
 }
-
-@media print {
-}
 /* @obsidian TODO: bring this in when we enable annotation editing */
-
-@media screen and (forced-colors: active) {
-}
 
 [data-main-rotation="90"] {
   transform: rotate(90deg) translateY(-100%);
@@ -1522,9 +1489,6 @@
   padding-bottom: var(--pdfViewer-padding-bottom);
   --hcm-highlight-filter: invert(100%);
   --hcm-highlight-selected-filter: none;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .pdfViewer.copyAll {
@@ -3339,8 +3303,6 @@ iframe {
   display: none;
   border: 0;
 }
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -4245,10 +4207,6 @@ body:not(.is-mobile) .app-container {
     visibility: visible;
     box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
   }
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
 }
 .cm-tab {
   display: inline-block;
@@ -5215,8 +5173,6 @@ body.is-frameless .modal {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale(102%);
   }
-}
-@keyframes sk-cubeGridScaleDelay {
 }
 .is-loading {
   position: relative;
@@ -6954,8 +6910,6 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
     stroke: white;
   }
 }
-@media screen and (max-width: 300px) {
-}
 .is-translucent:not(.is-fullscreen) {
   --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
   --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
@@ -7609,8 +7563,6 @@ body.is-phone .view-header-nav-buttons {
 }
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   color: var(--tab-text-color-focused-active);
-}
-@media (hover: hover) {
 }
 .workspace-sidedock-empty-state {
   font-size: var(--font-ui-small);
@@ -10135,8 +10087,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   color: var(--input-placeholder-color);
   pointer-events: none;
 }
-@keyframes multi-select-highlight {
-}
 .multi-select-duplicate {
   animation: multi-select-highlight 2000ms ease-in;
 }
@@ -10445,10 +10395,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 .progress-bar .progress-bar-subline {
   transition: width 150ms ease-in-out;
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 .progress-bar-context-button {
   margin-top: var(--size-4-3);
@@ -11000,8 +10946,6 @@ body:not(.is-phone) .vertical-tab-header-group-items {
     --colorB: #007cf015;
     --colorC: #6400f015;
   }
-}
-@keyframes pop-right {
 }
 .tree-item-self {
   align-items: center;
@@ -11606,8 +11550,6 @@ kbd {
 }
 .is-phone .pdf-findbar .pdf-search-wrapper {
   gap: var(--size-4-2);
-}
-@keyframes rotation {
 }
 .pdf-find-results-count {
   color: var(--text-muted);
@@ -12350,8 +12292,6 @@ code[class*="language-"] {
   hyphens: none;
   text-shadow: none;
   padding: 1em 0.5em;
-}
-@media print {
 }
 .token.important {
   font-weight: bold;
@@ -14849,8 +14789,6 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-list-indent {
   border-right: 0;
 }
-@keyframes hmd-file-uploading-ani {
-}
 @media (hover: hover) {
   .cm-s-obsidian div.HyperMD-goback-button:hover {
     color: transparent;
@@ -15207,8 +15145,6 @@ a.tag {
     color: var(--tag-color-hover);
     text-decoration: var(--tag-decoration-hover);
   }
-}
-@media (hover: hover) {
 }
 .cm-hashtag {
   color: var(--tag-color);
@@ -17718,10 +17654,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
   animation-timing-function: linear;
   animation: none;
 }
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
 .sync-history-list-container {
   display: flex;
   flex-direction: column;
@@ -17771,8 +17703,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item-header.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 @media (hover: hover) {
   .sync-history-list-item-header.is-active .tree-item-flair:hover {
@@ -17886,8 +17816,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item .version-group-container .version-group-item.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 .sync-history-content-container {
   background-color: var(--background-primary);
@@ -19786,10 +19714,6 @@ body.is-mobile.keyboard-animating .app-container {
 body.is-phone .suggestion-bg {
   display: block;
   z-index: var(--layer-modal);
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .mobile-image-viewer {
   position: absolute;
@@ -40289,9 +40213,6 @@ body.file-name-animation .nav-folder-title-content:not(.is-being-renamed):hover 
   animation: filemove 1.5s 1 normal linear;
 }
 
-@keyframes filemove {
-}
-
 body.file-bg-rounded-rectangle .nav-file-title.is-active {
   border-radius: var(--radius-m);
 }
@@ -40531,9 +40452,6 @@ a.internal-link {
 
 body.colorful-link-animation :is(.markdown-preview-view, .markdown-rendered) a:hover {
   animation: 2s colorful-link infinite;
-}
-
-@keyframes colorful-link {
 }
 
 a.external-link {
@@ -44393,9 +44311,6 @@ body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapp
   box-shadow: 0px 0px 5px 1px var(--kanban-shadow);
 }
 
-@keyframes rotate {
-}
-
 body.style-options-for-kanban-plugin-dynamic-neon-one
   .kanban-plugin__lane-wrapper:nth-child(n):hover
   body.style-options-for-kanban-plugin-dynamic-neon-two
@@ -44488,9 +44403,6 @@ body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wra
   filter: hue-rotate(360deg);
 }
 
-@keyframes huerotate-1 {
-}
-
 body.style-options-for-kanban-plugin-dynamic-neon-three
   .kanban-plugin__lane-wrapper:nth-child(n)::before {
   content: "";
@@ -44544,16 +44456,10 @@ body.style-options-for-kanban-plugin-dynamic-neon-three
   filter: hue-rotate(410deg);
 }
 
-@keyframes huerotate-2 {
-}
-
 body.style-options-for-kanban-plugin-dynamic-neon-three
   .kanban-plugin__lane-wrapper:nth-child(7n + 3) {
   animation: huerotate-3 6s infinite linear;
   filter: hue-rotate(500deg);
-}
-
-@keyframes huerotate-3 {
 }
 
 body.style-options-for-kanban-plugin-dynamic-neon-three
@@ -44562,16 +44468,10 @@ body.style-options-for-kanban-plugin-dynamic-neon-three
   animation: huerotate-4 6s infinite linear;
 }
 
-@keyframes huerotate-4 {
-}
-
 body.style-options-for-kanban-plugin-dynamic-neon-three
   .kanban-plugin__lane-wrapper:nth-child(7n + 5) {
   filter: hue-rotate(580deg);
   animation: huerotate-5 6s infinite linear;
-}
-
-@keyframes huerotate-5 {
 }
 
 body.style-options-for-kanban-plugin-dynamic-neon-three
@@ -44580,16 +44480,10 @@ body.style-options-for-kanban-plugin-dynamic-neon-three
   animation: huerotate-6 6s infinite linear;
 }
 
-@keyframes huerotate-6 {
-}
-
 body.style-options-for-kanban-plugin-dynamic-neon-three
   .kanban-plugin__lane-wrapper:nth-child(7n + 0) {
   filter: hue-rotate(690deg);
   animation: huerotate-7 6s infinite linear;
-}
-
-@keyframes huerotate-7 {
 }
 
 /* =========================================*/
@@ -49820,9 +49714,6 @@ body:not(.image-zoom).is-mobile .markdown-reading-view img:not([class*="emoji"])
 ===custom buttons by cuman====
 ========================*/
 /*便签动画效果*/
-@keyframes shake {
-  /* 水平抖动，核心代码 */
-}
 :is(.markdown-preview-view, .markdown-rendered) .stickies:hover {
   animation: shake 800ms ease-in-out;
 }
@@ -57392,9 +57283,6 @@ body:not(.default-loading-page).theme-dark .progress-bar {
   background-color: #222222;
 }
 
-@keyframes shape {
-}
-
 /* the gif animation was created by @Jake Fleming https://dribbble.com/shots/9948351-kitty-wiggle */
 body:not(.default-loading-page).loading-animation-cat .progress-bar-message::before {
   content: "GIF creator: Jake Fleming";
@@ -57741,9 +57629,6 @@ body:not(
   }
 }
 
-@keyframes shape-gif-dark {
-}
-
 body:not(.default-loading-page).loading-add-icons .progress-bar-message {
   all: initial;
   font-size: var(--font-size-loading-add);
@@ -57772,11 +57657,6 @@ body:not(.default-loading-page).loading-add-icons .progress-bar-message::after {
   will-change: transform;
 }
 
-@keyframes gradientChange {
-}
-@keyframes moving {
-}
-
 body:not(.default-loading-page).loading-custom-text .progress-bar-message::before {
   all: initial;
   content: var(--loading-diy-text);
@@ -57801,21 +57681,12 @@ body:not(.default-loading-page).loading-custom-text.loading-text-typing-style
   will-change: transform;
 }
 
-@keyframes cursor-blink {
-}
-
-@keyframes typing-style {
-}
-
 body:not(.default-loading-page).loading-custom-text.loading-text-moving-style
   .progress-bar-message::before {
   animation: moving-style 3s ease-in-out infinite alternate;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   will-change: transform;
-}
-
-@keyframes moving-style {
 }
 
 body:not(.default-loading-page).loading-custom-text.loading-text-shinning-style
@@ -57826,18 +57697,12 @@ body:not(.default-loading-page).loading-custom-text.loading-text-shinning-style
   will-change: transform;
 }
 
-@keyframes shinning-style {
-}
-
 body:not(.default-loading-page).loading-custom-text.loading-text-color-changing-style
   .progress-bar-message::before {
   animation: color-changing-style 3s infinite;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   will-change: transform;
-}
-
-@keyframes color-changing-style {
 }
 
 body:not(
@@ -57975,9 +57840,6 @@ body:not(.default-loading-page).loading-page-style-mario .progress-bar-message:b
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   will-change: transform;
-}
-
-@keyframes jump {
 }
 
 @keyframes sprite {
@@ -59139,15 +59001,6 @@ body.admonition-bg-color-same .callout-title {
 }
 
 /*cards 视图*/
-
-@media (max-width: 450px) {
-}
-
-@media (max-width: 375px) {
-}
-
-@media (max-width: 350px) {
-}
 .callout.callout[data-callout*="cards"] .callout-content {
   padding: 0;
 }
@@ -59185,15 +59038,6 @@ body.admonition-bg-color-same .callout-title {
   padding: 0px;
 }
 
-@media (max-width: 1120px) {
-}
-
-@media (max-width: 960px) {
-}
-
-@media (max-width: 460px) {
-}
-
 .callout.callout[data-callout*="cards"] table.dataview > tbody > tr {
   display: block;
   width: var(--cards-width);
@@ -59201,15 +59045,6 @@ body.admonition-bg-color-same .callout-title {
   margin-left: 20px;
   margin-bottom: 20px;
   background-color: transparent;
-}
-
-@media (max-width: 1120px) {
-}
-
-@media (max-width: 960px) {
-}
-
-@media (max-width: 460px) {
 }
 
 .callout.callout[data-callout*="cards"] table.dataview tbody > tr > td:first-child {
@@ -60097,8 +59932,6 @@ body.colorful-p-kanban .callout.callout[data-callout*="kanban"] .task-list-item-
   display: table-cell;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-}
 /******callout timeline*****/
 .callout.callout[data-callout="timeline"] {
   --callout-color: 31, 172, 139;
@@ -60642,9 +60475,6 @@ body.funny-header-anim .is-live-preview .cm-active .cm-header:first-of-type {
 body.funny-header-anim.clutter-free-headings .cm-active .cm-header:first-of-type {
   transform: translateX(0ch);
   animation: opac 333ms;
-}
-
-@keyframes opac {
 }
 
 /* head-tag-style*/
@@ -61897,9 +61727,6 @@ body.enable-icon-anima div.nav-header:hover {
   animation: rainbow-change 8s infinite linear;
 }
 
-@keyframes rainbow-change {
-}
-
 body.enable-icon-anima :is(.workspace-ribbon, .nav-header) .clickable-icon:before {
   content: "";
   background-color: var(--theme-color-translucent-01);
@@ -61928,12 +61755,6 @@ body.enable-icon-anima :is(.workspace-ribbon, .nav-header) .clickable-icon:hover
   animation: bead-2 1s;
 }
 
-@keyframes bead-1 {
-}
-
-@keyframes bead-2 {
-}
-
 /**ob 1.0 **/
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right:hover {
   background-color: var(--titlebar-background-focused);
@@ -61958,30 +61779,6 @@ body.title-justify-start .view-header-title-container {
 
 .nav-folder .nav-folder-children[style="height: 0px;"] {
   height: auto;
-}
-
-@keyframes fancy-prompt-1 {
-}
-
-@keyframes slideUpLarge {
-}
-
-@keyframes quickScaleDown {
-}
-
-@keyframes blowUpModal {
-}
-
-@keyframes roadRunnerIn {
-}
-
-@keyframes roadRunnerOut {
-}
-
-@keyframes pop-swirl {
-}
-
-@keyframes unfoldIn {
 }
 
 [class="prompt"] {

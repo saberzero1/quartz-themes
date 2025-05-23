@@ -40,12 +40,6 @@
   color: var(--message-bar-fg-color);
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .messageBar > div {
   display: flex;
   align-items: flex-start;
@@ -157,12 +151,6 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 #editorUndoBar button {
   cursor: pointer;
 }
@@ -234,12 +222,6 @@
   background: var(--dialog-bg-color);
   color: var(--text-primary-color);
   box-shadow: var(--dialog-shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .dialog .mainContainer *:focus-visible {
@@ -405,12 +387,6 @@
   align-self: stretch;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
-@media screen and (forced-colors: active) {
-}
-
 .dialog .mainContainer .messageBar > div::before {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -520,9 +496,6 @@
   -webkit-backdrop-filter: var(--highlight-backdrop-filter);
   backdrop-filter: var(--highlight-backdrop-filter);
   border-radius: var(--radius-s);
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .textLayer .highlight.appended {
@@ -1434,13 +1407,7 @@
 .xfaReadOnly textarea {
   background: initial;
 }
-
-@media print {
-}
 /* @obsidian TODO: bring this in when we enable annotation editing */
-
-@media screen and (forced-colors: active) {
-}
 
 [data-main-rotation="90"] {
   transform: rotate(90deg) translateY(-100%);
@@ -1476,9 +1443,6 @@
   padding-bottom: var(--pdfViewer-padding-bottom);
   --hcm-highlight-filter: invert(100%);
   --hcm-highlight-selected-filter: none;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .pdfViewer.copyAll {
@@ -2486,8 +2450,6 @@ iframe {
   display: none;
   border: 0;
 }
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -2862,10 +2824,6 @@ body:not(.is-mobile) .app-container {
     width: 100%;
     right: 0;
   }
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
 }
 .cm-tab {
   display: inline-block;
@@ -3812,8 +3770,6 @@ body.is-frameless .modal {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
   }
-}
-@keyframes sk-cubeGridScaleDelay {
 }
 .is-loading {
   position: relative;
@@ -5550,8 +5506,6 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
     stroke: white;
   }
 }
-@media screen and (max-width: 300px) {
-}
 .is-translucent:not(.is-fullscreen) {
   --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
   --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
@@ -6203,8 +6157,6 @@ body.is-phone .view-header-nav-buttons {
 }
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
   color: var(--tab-text-color-focused-active);
-}
-@media (hover: hover) {
 }
 .workspace-sidedock-empty-state {
   font-size: var(--font-ui-small);
@@ -8730,8 +8682,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   color: var(--text-faint);
   pointer-events: none;
 }
-@keyframes multi-select-highlight {
-}
 .multi-select-duplicate {
   animation: multi-select-highlight 2000ms ease-in;
 }
@@ -9038,10 +8988,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 .progress-bar .progress-bar-subline {
   transition: width 150ms ease-in-out;
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 .progress-bar-context-button {
   margin-top: var(--size-4-3);
@@ -9582,8 +9528,6 @@ body:not(.is-phone) .vertical-tab-header-group-items {
     opacity: 1;
     transform: translateY(-50%) scale(1.05);
   }
-}
-@keyframes pop-right {
 }
 .tree-item-self {
   align-items: baseline;
@@ -10185,8 +10129,6 @@ kbd {
 }
 .is-phone .pdf-findbar .pdf-search-wrapper {
   gap: var(--size-4-2);
-}
-@keyframes rotation {
 }
 .pdf-find-results-count {
   color: var(--text-muted);
@@ -10916,8 +10858,6 @@ code[class*="language-"] {
   display: block;
   padding: 1em;
   overflow: auto;
-}
-@media print {
 }
 .token.important {
   font-weight: bold;
@@ -13412,8 +13352,6 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-list-indent {
   border-right: 0;
 }
-@keyframes hmd-file-uploading-ani {
-}
 @media (hover: hover) {
   .cm-s-obsidian div.HyperMD-goback-button:hover {
     color: transparent;
@@ -13768,8 +13706,6 @@ a.tag {
     color: var(--tag-color-hover);
     text-decoration: var(--tag-decoration-hover);
   }
-}
-@media (hover: hover) {
 }
 .cm-hashtag {
   color: var(--tag-color);
@@ -16270,10 +16206,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
   animation-timing-function: linear;
   animation: none;
 }
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
 .sync-history-list-container {
   display: flex;
   flex-direction: column;
@@ -16323,8 +16255,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item-header.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 @media (hover: hover) {
   .sync-history-list-item-header.is-active .tree-item-flair:hover {
@@ -16438,8 +16368,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .search-result-file-match.has-foc
 .sync-history-list-item .version-group-container .version-group-item.is-active:hover .u-muted {
   color: var(--text-on-accent);
   opacity: 0.8;
-}
-@media (hover: hover) {
 }
 .sync-history-content-container {
   background-color: var(--background-primary);
@@ -18342,10 +18270,6 @@ body.is-mobile.keyboard-animating .app-container {
 body.is-phone .suggestion-bg {
   display: block;
   z-index: var(--layer-modal);
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .mobile-image-viewer {
   position: absolute;
@@ -20386,9 +20310,6 @@ input.mobile-vault-chooser-field-input {
  *      Either edit the CSS there, or override in pdf-view.less
  */
 
-@media screen and (forced-colors: active) {
-}
-
 /* Only necessary in Google Chrome, see issue 14205, and most unfortunately
  * the problem doesn't show up in "text" reference tests. */
 
@@ -20416,9 +20337,6 @@ input.mobile-vault-chooser-field-input {
 
 .textLayer .endOfContent.active {
   top: 0;
-}
-
-@media screen and (forced-colors: active) {
 }
 
 .annotationLayer canvas {
@@ -20537,17 +20455,8 @@ input.mobile-vault-chooser-field-input {
   cursor: pointer;
 }
 
-@media screen and (forced-colors: active) {
-}
-
-@media print {
-}
-
 /* @obsidian TODO: bring this in when we enable annotation editing */
 /* @import url(annotation_editor_layer_builder.css); */
-
-@media screen and (forced-colors: active) {
-}
 
 /* @obsidian this was changed from an id to a class */
 
@@ -20694,8 +20603,6 @@ input.mobile-vault-chooser-field-input {
 
 /* Obsidian theme variables */
 /* ------------------------ */
-@media print {
-}
 @font-face {
   font-family: "Avenir Next";
   font-weight: normal;
@@ -20789,17 +20696,7 @@ input.mobile-vault-chooser-field-input {
   font-family: "??";
   unicode-range: U+0;
 }
-@media print {
-}
-@keyframes node-inserted {
-}
 /* CURSOR */
-@-moz-keyframes blink {
-}
-@-webkit-keyframes blink {
-}
-@keyframes blink {
-}
 /* Used to force a border model for a node */
 /* See issue #2901 */
 .markdown-source-view.mod-cm6 .cm-table-widget .table-drag-target {
@@ -20814,10 +20711,6 @@ input.mobile-vault-chooser-field-input {
 .markdown-source-view.mod-cm6 .cm-table-widget .table-drag-target.mod-col {
   width: 3px;
   transform: translateX(-2px);
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 /* Can be removed since it is redundant with Close link */
 .empty-state-close-button {
@@ -20861,12 +20754,6 @@ body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .titlebar {
 body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen):not(.is-maximized) .titlebar {
   padding-top: 2px;
 }
-@-webkit-keyframes sk-cubeGridScaleDelay {
-}
-@keyframes sk-cubeGridScaleDelay {
-}
-@media (hover: hover) {
-}
 .markdown-rendered
   > .markdown-preview-section
   > .markdown-preview-pusher
@@ -20896,89 +20783,21 @@ body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen):not(.is-maximize
    but start/end values are not available, e.g. transforms used
    for folding indicators
 */
-@supports selector(:dir(rtl)) {
-}
-@supports selector(:has(*)) {
-}
 /* Callouts
    Remember that callouts can be nested, so text direction can
    change within a nested set of callouts
 */
-@supports selector(:has(*)) {
-}
 /* When Obsidian interface language is set to RTL language, mirror the UI */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Hidden titlebar interferes with mouse */
 body.is-frameless.is-hidden-frameless {
   padding-top: 0;
 }
-@media (hover: hover) {
-}
-@media screen and (max-width: 300px) {
-}
-@media (hover: hover) {
-}
 /* Resize handles */
-@media (hover: hover) {
-}
 /* Hide tab icon if it's a note */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Remove tab titles in sidebar */
 /* Sidebar tabs */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Stacked tabs */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Smoother animation for right sidebar button positioning during close */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Only used in Format Converter so far */
 /* In file recovery, sync version history, and publish diff */
 /* Document search and replace */
@@ -21009,8 +20828,6 @@ input.document-replace-input.mod-no-match {
 /* Read */
 /* Edit */
 /* class applies to select element itself, not a wrapper element */
-@media (hover: hover) {
-}
 /* Set options to normal weight */
 /* #todo Reduce specificity here */
 /*
@@ -21021,12 +20838,6 @@ input.document-replace-input.mod-no-match {
 /* Parent container of button rows */
 /* Use horizontal more actions "..." on macOS/iOS per OS guidelines */
 /* Parent button containers for SVG button icons */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .text-icon-button .text-button-icon svg.svg-icon {
   height: var(--icon-size);
   width: var(--icon-size);
@@ -21036,18 +20847,10 @@ input.document-replace-input.mod-no-match {
   box-shadow: 0 0 0px 2px var(--background-modifier-border-focus);
   outline: none;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Textarea */
 /* Date input */
 /* Range slider */
 /* Color inputs */
-@media (hover: hover) {
-}
 .notice.mod-action {
   display: flex;
   align-items: center;
@@ -21057,22 +20860,10 @@ input.document-replace-input.mod-no-match {
 body:not(.native-scrollbars) .modal-close-button {
   inset-inline-end: 12px;
 }
-@media (hover: hover) {
-}
 .modal.mod-scrollable-content > .modal-button-container {
   margin-top: 0;
   border-top: 1px solid var(--background-modifier-border);
   padding: var(--size-4-4);
-}
-@media (hover: hover) {
-}
-@keyframes multi-select-highlight {
-}
-@media (hover: hover) {
-}
-@keyframes increase {
-}
-@keyframes decrease {
 }
 body:not(.native-scrollbars) ::-webkit-scrollbar {
   background-color: transparent;
@@ -21132,24 +20923,8 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
 	}
 }
  */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Add this attribute to the element that needs a tooltip */
 /* Triangle hack to make tooltip look like a speech bubble */
-@keyframes pop-down {
-}
-@keyframes pop-right {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes rotation {
-}
 .pdf-viewer:is(.scrollHorizontal, .scrollWrapped) .page {
   border: var(--size-4-1) solid transparent;
 }
@@ -21172,10 +20947,6 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
   box-shadow: 0 0 0 2px rgb(var(--color-yellow-rgb));
   background-color: rgb(var(--color-yellow-rgb));
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 pre[class*="language-"] {
   color: var(--code-normal);
   background: var(--code-background);
@@ -21194,8 +20965,6 @@ pre[class*="language-"] {
   text-shadow: none;
   overflow: hidden;
 }
-@media print {
-}
 :not(pre) > code[class*="language-"] {
   background: var(--code-background);
   padding: 0.1em;
@@ -21205,12 +20974,6 @@ pre[class*="language-"] {
 /* Code blocks */
 /* Inline code */
 /* Syntax highlighting */
-@media print {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .inline-embed .markdown-embed-content p:first-child {
   margin-top: 0;
 }
@@ -21232,16 +20995,6 @@ pre[class*="language-"] {
 }
 .markdown-source-view.mod-cm6 .cm-embed-block pre {
   margin: 0;
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .metadata-property button {
   margin-top: var(--size-4-2);
@@ -21312,17 +21065,7 @@ pre[class*="language-"] {
 .metadata-property:not([data-property-key="tags"]) .multi-select-pill {
   line-height: var(--line-height-tight);
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Edit mode */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .markdown-source-view.is-live-preview.show-properties .metadata-container {
   display: var(--metadata-display-editing);
 }
@@ -21432,8 +21175,6 @@ pre[class*="language-"] {
 .inline-title[data-level="6"] .cm-hmd-internal-link {
   --link-weight: var(--h6-weight);
 }
-@media (hover: hover) {
-}
 /* Default markers */
 /* Indent depth
    Consistency in horizontal positioning of lists
@@ -21447,14 +21188,6 @@ pre[class*="language-"] {
 /* Remove default bullets so we can replace them */
 /* Allow clicking on the bullet to collapse */
 /* #todo move this into folding.less */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@supports selector(:dir(rtl)) {
-}
 .metadata-container .internal-link {
   cursor: var(--cursor-link);
   text-decoration-line: var(--link-decoration);
@@ -21485,37 +21218,7 @@ pre[class*="language-"] {
     text-decoration-line: var(--link-decoration-hover);
   }
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes hmd-file-uploading-ani {
-}
-@media (hover: hover) {
-}
 /* Tables */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 ul > li.task-list-item .task-list-item-checkbox {
   margin-inline-start: calc(var(--checkbox-size) * -1.5);
 }
@@ -21525,58 +21228,12 @@ ul > li.task-list-item .task-list-item-checkbox {
   margin-inline-start: var(--checkbox-margin-inline-start);
   margin-inline-end: 0.25em;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 /* Backlinks in Preview */
 /* Only browser shows the bookmark icon if not bookmarked */
 /* Folders and files */
-@media (hover: hover) {
-}
 /* 2022-07 Only used for Publish AFAIK */
-@media (hover: hover) {
-}
-@container (width < 250px) {
-}
 .modal.mod-publish .modal-title {
   padding: 0 var(--size-4-4);
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@keyframes progress-bar {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (prefers-reduced-motion: reduce) {
-}
-@keyframes spin {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
 }
 .sync-history-text {
   flex: 1 0 0;
@@ -21618,24 +21275,6 @@ button.sync-history-load-more-button {
   }
 }
 /* Sync log */
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: none) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
 .browser-favicon-container {
   display: flex;
   align-items: center;
@@ -21768,14 +21407,6 @@ button.sync-history-load-more-button {
 textarea.browser-adblock-lists {
   flex-grow: 1;
 }
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (hover: hover) {
-}
-@media (max-width: 380px) {
-}
 .is-phone .vault-list-item {
   padding: 5px 0;
 }
@@ -21784,10 +21415,6 @@ textarea.browser-adblock-lists {
 }
 .is-phone .vault-list-item-button {
   margin-right: 0;
-}
-@keyframes fadeIn {
-}
-@keyframes fadeOut {
 }
 .is-mobile .horizontal-main-container {
   position: relative;
