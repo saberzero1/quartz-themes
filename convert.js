@@ -630,6 +630,40 @@ manifestCollection.forEach((manifest) => {
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4", "//H4", themeCSS)
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5", "//H5", themeCSS)
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6", "//H6", themeCSS)
+
+  // Code blocks
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered pre",
+    "//PRE",
+    themeCSS,
+  )
+  // inline code
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered code",
+    "//CODE INLINE",
+    themeCSS,
+  )
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered pre code",
+    "//CODE",
+    themeCSS,
+  )
+  // Code copy button
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered button.copy-code-button:hover",
+    "//CLIPBOARD BUTTON HOVER",
+    themeCSS,
+  )
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered button.copy-code-button",
+    "//CLIPBOARD BUTTON",
+    themeCSS,
+  )
 })
 
 // _dark.scss and _light.scss
