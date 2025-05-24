@@ -42,7 +42,7 @@ clean-fonts:
 
 [private]
 format:
-  npx prettier . --write
+  npx prettier . --write --ignore-path "./.prettiercompileignore"
 
 [private]
 lint: format
