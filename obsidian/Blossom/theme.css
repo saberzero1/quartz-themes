@@ -131,7 +131,7 @@ button.mod-cta {
 
 .cm-header-6 {
   font-size: 18px;
-  color: --text-normal;
+  color: var(--text-normal);
   color: var(--text-title-h6) !important;
 }
 
@@ -168,7 +168,7 @@ button.mod-cta {
 .markdown-preview-view h6 {
   font-size: 20px;
   line-height: 24px;
-  color: --text-normal;
+  color: var(--text-normal);
   color: var(--text-title-h6) !important;
 }
 /*-----------------------------------------*/

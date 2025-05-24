@@ -20933,8 +20933,7 @@ body.theme-light.eclipse-theme {
   --code-function: #dcbb59;
   --code-property: #d29a8c;
   --code-string: #05a36e;
-  --nav-item-background-active: --background-modifier-border: var(--border-size) var(--border-style)
-    #9b9b9b84;
+  --nav-item-background-active: var(--background-modifier-border);
   --hr-color: #b9979747;
   --table-border-color: #9b9b9b84;
   --canvas-dot-pattern: #4949498b;

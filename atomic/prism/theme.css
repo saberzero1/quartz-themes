@@ -28913,11 +28913,11 @@ body:not(.is-frameless):not(.qe-hide-breadcrumbs) .status-bar {
 }
 .workspace-leaf-content[data-type="dictionary-view"] .main.svelte-1ufvm6z.svelte-1ufvm6z audio {
   padding: 0 var(--size-4-2);
-  margin: --size-4-2 0;
+  margin: var(--size-4-2) 0;
 }
 .workspace-leaf-content[data-type="dictionary-view"] .main.svelte-5jhpts.svelte-5jhpts audio {
   padding: 0 var(--size-4-2);
-  margin: --size-4-2 0;
+  margin: var(--size-4-2) 0;
 }
 .theme-light
   .workspace-leaf-content[data-type="dictionary-view"]
