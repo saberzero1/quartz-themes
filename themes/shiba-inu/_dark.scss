@@ -1,4 +1,70 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: none;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: var(--text);
+  --color-red-rgb: var(--red);
+  --color-red: rgb(var(--red));
+  --color-orange-rgb: var(--orange);
+  --color-orange: rgb(var(--orange));
+  --color-yellow-rgb: var(--yellow);
+  --color-yellow: rgb(var(--yellow));
+  --color-green-rgb: var(--green);
+  --color-green: rgb(var(--green));
+  --color-cyan-rgb: var(--sea);
+  --color-cyan: rgb(var(--sea));
+  --color-blue-rgb: var(--blue);
+  --color-blue: rgb(var(--blue));
+  --color-purple-rgb: var(--violet);
+  --color-purple: rgb(var(--violet));
+  --color-pink-rgb: var(--rose);
+  --color-pink: rgb(var(--rose));
+  --color-base-00: rgb(var(--exterior));
+  --color-base-05: #212121;
+  --color-base-10: rgb(var(--side));
+  --color-base-20: rgb(var(--base));
+  --color-base-25: rgb(var(--surface0));
+  --color-base-30: rgb(var(--surface1));
+  --color-base-35: rgb(var(--surface2));
+  --color-base-40: rgb(var(--overlay0));
+  --color-base-50: rgb(var(--overlay1));
+  --color-base-60: rgb(var(--overlay2));
+  --color-base-70: rgb(var(--subtext0));
+  --color-base-100: rgb(var(--text));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --background-modifier-form-field: rgba(var(--exterior), 0.3);
+  --background-secondary-alt: rgb(var(--exterior));
+  --interactive-normal: rgb(var(--surface0));
+  --interactive-hover: rgb(var(--surface1));
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(var(--side), 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
+    0 2px 4px 0 rgba(var(--exterior), 0.15), 0 1px 1.5px 0 rgba(var(--exterior), 0.1),
+    0 1px 2px 0 rgba(var(--exterior), 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
+    0 2px 3px 0 rgba(var(--exterior), 0.3), 0 1px 1.5px 0 rgba(var(--exterior), 0.2),
+    0 1px 2px 0 rgba(var(--exterior), 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(var(--exterior), 0.121),
+    0px 3.4px 6.7px rgba(var(--exterior), 0.179), 0px 15px 30px rgba(var(--exterior), 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--exterior), 0.071),
+    0px 6.3px 24.7px rgba(var(--exterior), 0.112), 0px 30px 90px rgba(var(--exterior), 0.2);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --text: 198, 206, 239;
   --subtext1: 181, 189, 220;
   --subtext0: 165, 172, 201;
@@ -16,7 +82,6 @@
   --background-modifier-border-focus: rgb(var(--surface2));
   --cards-background-modifier-border: rgb(var(--surface0));
   --shib-speech-bubble-opacity: var(--shib-sp-op-dark, 0.9);
-  --background-modifier-cover: rgba(var(--side), 0.4);
   --bg-color-settings-0: #07070747;
   --bg-color-settings-0-1: #ffffff00;
   --bg-color-settings-5: #424242aa;
@@ -25,7 +90,6 @@
   --graph-fill-attachment: rgb(var(--blue));
   --graph-circle-fill-unresolved: #ffa6e5;
   --graph-arrow: rgb(var(--rose));
-  --highlight-mix-blend-mode: none;
   --bg-color-settings-1: #rgba(var(--base), 0.15);
   --bg-color-settings-2: rgba(var(--base), 0.3);
   --bg-color-settings-3: rgba(var(--base), 0.8);
@@ -41,36 +105,8 @@
   --color-black: hsl(27, 15%, 12%);
   --color-lightpink-rgb: var(--lily);
   --color-lightpink: rgb(var(--lily));
-  --color-red-rgb: var(--red);
-  --color-red: rgb(var(--red));
-  --color-pink-rgb: var(--rose);
-  --color-pink: rgb(var(--rose));
-  --color-purple-rgb: var(--violet);
-  --color-purple: rgb(var(--violet));
-  --color-blue-rgb: var(--blue);
-  --color-blue: rgb(var(--blue));
-  --color-cyan-rgb: var(--sea);
-  --color-cyan: rgb(var(--sea));
-  --color-green-rgb: var(--green);
-  --color-green: rgb(var(--green));
-  --color-yellow-rgb: var(--yellow);
-  --color-yellow: rgb(var(--yellow));
   --color-lightorange-rgb: var(--lemon);
   --color-lightorange: rgb(var(--lemon));
-  --color-orange-rgb: var(--orange);
-  --color-orange: rgb(var(--orange));
-  --mono-rgb-100: var(--text);
-  --color-base-00: rgb(var(--exterior));
-  --color-base-10: rgb(var(--side));
-  --color-base-20: rgb(var(--base));
-  --color-base-25: rgb(var(--surface0));
-  --color-base-30: rgb(var(--surface1));
-  --color-base-35: rgb(var(--surface2));
-  --color-base-40: rgb(var(--overlay0));
-  --color-base-50: rgb(var(--overlay1));
-  --color-base-60: rgb(var(--overlay2));
-  --color-base-70: rgb(var(--subtext0));
-  --color-base-100: rgb(var(--text));
   --color-accent-translucent-06: hsla(var(--interactive-accent-hsl), 0.6);
   --color-accent-translucent-04: hsla(var(--interactive-accent-hsl), 0.4);
   --color-accent-translucent-02: hsla(var(--interactive-accent-hsl), 0.2);
@@ -81,9 +117,7 @@
   --background-primary: rgb(var(--base));
   --background-primary-alt: rgb(var(--side));
   --background-secondary: rgb(var(--side));
-  --background-secondary-alt: rgb(var(--exterior));
   --background-modifier-hover: rgba(var(--text), 0.075);
-  --background-modifier-form-field: rgba(var(--exterior), 0.3);
   --background-modifier-success: rgba(var(--green), 1);
   --background-modifier-success-hover: rgba(var(--green), 0.9);
   --background-modifier-success-rgb: var(--green);
@@ -102,8 +136,6 @@
   --text-on-accent: rgb(var(--base));
   --text-highlight-bg: rgba(var(--orange), 0.2);
   --text-highlight-bg-active: rgba(var(--orange), 0.4);
-  --interactive-normal: rgb(var(--surface0));
-  --interactive-hover: rgb(var(--surface1));
   --interactive-success: rgb(var(--green));
   --workspace-background-translucent: rgba(var(--exterior), 0.6);
   --blockquote-background-color: rgba(var(--exterior), 0.5);

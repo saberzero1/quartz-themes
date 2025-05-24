@@ -1,14 +1,26 @@
 :root[saved-theme="light"] {
-  --bg-sat: 25%;
-  --bg-hue: var(--bg-hue-light);
-  --color-accent-hsl: 184, 79%, 35%;
-  --color-accent: #1396a0;
-  --interactive-accent: #108189;
-  --alt-heading-color: #5460ab;
-  --secondary-accent: #c67e3f;
-  --hover-accent: #dc388f;
-  --link-unresolved-color: #6fb74e;
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
   --color-base-00: hsl(var(--bg-hue) calc(var(--bg-sat) * 1.5) 99%);
+  --color-base-05: #fcfcfc;
   --color-base-10: hsl(var(--bg-hue) var(--bg-sat) 97%);
   --color-base-20: hsl(var(--bg-hue) var(--bg-sat) 95%);
   --color-base-25: hsl(var(--bg-hue) var(--bg-sat) 92%);
@@ -18,8 +30,38 @@
   --color-base-50: hsl(var(--bg-hue) var(--bg-sat) 67%);
   --color-base-60: hsl(var(--bg-hue) var(--bg-sat) 44%);
   --color-base-70: hsl(var(--bg-hue) var(--bg-sat) 35%);
-  --color-base-85s: hsl(var(--bg-hue) calc(var(--bg-sat) * 2) 24%);
   --color-base-100: hsl(var(--bg-hue) var(--bg-sat) 13%);
+  --color-accent-hsl: 184, 79%, 35%;
+  --color-accent: #1396a0;
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --bg-sat: 25%;
+  --bg-hue: var(--bg-hue-light);
+  --interactive-accent: #108189;
+  --alt-heading-color: #5460ab;
+  --secondary-accent: #c67e3f;
+  --hover-accent: #dc388f;
+  --link-unresolved-color: #6fb74e;
+  --color-base-85s: hsl(var(--bg-hue) calc(var(--bg-sat) * 2) 24%);
   --hotkey-color: var(--secondary-accent);
   --bold-color: var(--text-accent-hover);
   --italic-color: var(--text-accent-hover);

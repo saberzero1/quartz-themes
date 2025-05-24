@@ -39,7 +39,8 @@ body {
   --callout-font-size-title: 16px;
   --properties-icon-size: unset;
   --separator-icon: "o0o";
-  --separator-icon-color: #6c6c6c6b --show-explorer-buttons: none;
+  --separator-icon-color: #6c6c6c6b;
+  --show-explorer-buttons: none;
   --icon-settings: none;
   --num-of-notes: none;
   --show-vault-name: none;

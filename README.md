@@ -13,11 +13,18 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
 
 ### GitHub Actions (Recommended)
 
-Add the following lines to your `deploy.yml` before the build step:
+Add the following linte to your `deploy.yml` before the `permissions` section:
+
+```yaml
+env:
+  THEME_NAME: <THEME-NAME>
+```
+
+And add the following lines to your `deploy.yml` before the `build` step:
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
 > [!IMPORTANT]
@@ -27,8 +34,8 @@ Add the following lines to your `deploy.yml` before the build step:
 > Example for Tokyo Night:
 >
 > ```yaml
-> - name: Fetch Quartz Theme
->   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- tokyo-night
+> env:
+>   THEME_NAME: tokyo-night
 > ```
 
 The full script would look like this:
@@ -40,6 +47,9 @@ on:
   push:
     branches:
       - v4
+
+env:
+  THEME_NAME: <THEME-NAME>
 
 permissions:
   contents: read
@@ -63,7 +73,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Fetch Quartz Theme
-        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME-NAME>
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
@@ -125,62 +135,10 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 # Finished fetching and applying theme 'tokyo-night'.
 ```
 
-### Install script (Deprecated)
+### Quartz Syncer
 
-> [!CAUTION]
-> This setup method is the previous installation method and is not recommended for new users.
-
-<details>
-<summary>Install script</summary>
-
-Clone the project next to your Quartz repository.
-
-```bash
-git clone https://github.com/saberzero1/quartz-themes.git
-cd quartz-themes
-npm ci
-```
-
-#### Configure Quartz
-
-Add the following line to your `custom.scss` file:
-
-```scss
-@use "./themes";
-```
-
-Your `custom.scss` should look something like this:
-
-```scss
-@use "./base.scss";
-@use "./themes";
-
-// put your custom CSS here!
-```
-
-#### Setting themes and layout
-
-Run the following from the Quartz Themes project root:
-
-```bash
-npm run theme <THEME-NAME>
-```
-
-#### Updating
-
-Run the following from the Quartz Themes project root to check for updates:
-
-```bash
-npm run check
-```
-
-Run the following from the Quartz Themes project root to update the themes:
-
-```bash
-npm run update
-```
-
-</details>
+> [!IMPORTANT]
+> This setup method is not yet available. It is currently being tested and will be released in the future.
 
 ## Supported Themes
 

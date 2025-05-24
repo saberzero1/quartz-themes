@@ -1,21 +1,23 @@
 :root[saved-theme="light"] {
-  --icon-color: var(--d1);
-  --icon-color-hover: var(--d2);
-  --icon-color-active: var(--d2);
-  --icon-color-focused: var(--d1);
-  --code-background: var(--l2);
+  color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: 228, 55, 75;
   --color-red: #e4374b;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #d96c00;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #bd8e37;
   --color-green-rgb: 12, 181, 79;
   --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-yellow: #bd8e37;
+  --color-cyan-rgb: 0, 191, 188;
   --color-cyan: #2db7b5;
+  --color-blue-rgb: 8, 109, 221;
   --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
   --color-purple: #876be0;
+  --color-pink-rgb: 213, 57, 132;
   --color-pink: #c32b74;
   --color-base-00: var(--l1);
   --color-base-05: #fcfcfc;
@@ -33,11 +35,24 @@
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --titlebar-background-focused: var(--l2);
-  --background-modifier-hover: #e2e5e9;
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --icon-color: var(--d1);
+  --icon-color-hover: var(--d2);
+  --icon-color-active: var(--d2);
+  --icon-color-focused: var(--d1);
+  --code-background: var(--l2);
+  --titlebar-background-focused: var(--l2);
+  --background-modifier-hover: #e2e5e9;
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-highlight-bg: var(--text-highlight-bg-l);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);

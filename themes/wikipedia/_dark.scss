@@ -1,26 +1,26 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 232, 51, 51;
   --color-red: rgb(232, 41, 41);
-  --color-cyan-rgb: 0, 194, 97;
-  --color-cyan: rgb(0, 163, 81);
   --color-orange-rgb: 230, 111, 0;
   --color-orange: rgb(230, 111, 0);
   --color-yellow-rgb: 204, 204, 0;
   --color-yellow: rgb(163, 163, 0);
   --color-green-rgb: 97, 194, 0;
   --color-green: rgb(82, 163, 0);
+  --color-cyan-rgb: 0, 194, 97;
+  --color-cyan: rgb(0, 163, 81);
   --color-blue-rgb: 0, 105, 224;
   --color-blue: rgb(0, 105, 224);
   --color-purple-rgb: 81, 0, 194;
   --color-purple: rgb(140, 63, 247);
   --color-pink-rgb: 194, 0, 81;
   --color-pink: rgb(194, 0, 81);
-  --callout-quote: 110, 110, 110;
-  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.5%));
-  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) - 4%));
-  --color-accent-3: hsla(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
   --color-base-00: #1e1f21;
+  --color-base-05: #212121;
   --color-base-10: #242629;
   --color-base-20: #27282b;
   --color-base-25: #2f3135;
@@ -30,9 +30,58 @@
   --color-base-50: rgb(142, 148, 157);
   --color-base-60: rgb(179, 181, 193);
   --color-base-70: #d0d4d9;
-  --h6-background: hsla(var(--accent-h), 35%, calc(var(--accent-l) + 10%), 15%);
   --color-base-100: #d8dce3;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.5%));
+  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) - 4%));
+  --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-10);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --callout-quote: 110, 110, 110;
+  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
+  --tab-gradient: linear-gradient(
+    to top,
+    var(--color-accent-2) 0px,
+    var(--color-accent-3) 0px,
+    var(--background-primary) 100%
+  );
+  --color-accent-3: hsla(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
+  --h6-background: hsla(var(--accent-h), 35%, calc(var(--accent-l) + 10%), 15%);
   --background-modifier-border: #dae1ea31;
   --link-color: hsl(calc(var(--accent-h) + 5), var(--accent-s), calc(var(--accent-l) + 15%));
+  --link-unresolved-color: hsl(
+    calc(var(--accent-h) - 5),
+    var(--accent-s),
+    calc(var(--accent-l) + 15%)
+  );
+  --link-external-color: hsl(
+    calc(var(--accent-h) + 20),
+    var(--accent-s),
+    calc(var(--accent-l) + 20%)
+  );
+  --link-external-color-hover: hsl(
+    calc(var(--accent-h) + 10),
+    var(--accent-s),
+    calc(var(--accent-l) + 3%)
+  );
 }

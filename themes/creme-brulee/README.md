@@ -28,10 +28,7 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh creme-brulee
 ```
 
-### Install script (Advanced)
+### Quartz Syncer
 
-After installing:
-
-```bash
-npm run theme creme-brulee
-```
+> [!IMPORTANT]
+> This setup method is not yet available. It is currently being tested and will be released in the future.
