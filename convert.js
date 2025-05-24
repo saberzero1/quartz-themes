@@ -362,12 +362,16 @@ function getTheme(dict) {
  * @param {string} ruleSelector - The CSS selector for the rule to be replaced.
  * @param {string} targetText - The text to be replaced in the file.
  * @param {string} inputCSS - The CSS string containing the rule declarations.
+ * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
  * @throws {Error} If the file cannot be read or written.
  */
-function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS) {
+function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
   try {
     // Find the rule declarations for the specified selector
-    const ruleDeclarations = getRuleDeclarations(inputCSS, ruleSelector)
+    const ruleDeclarations =
+      ruleToExtract === ""
+        ? getRuleDeclarations(inputCSS, ruleSelector)
+        : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
     if (ruleDeclarations) {
       // Apply the rule declarations to the specified file
       replaceInFile(filePath, targetText, ruleDeclarations)
@@ -663,6 +667,15 @@ manifestCollection.forEach((manifest) => {
     ".markdown-rendered button.copy-code-button",
     "//CLIPBOARD BUTTON",
     themeCSS,
+  )
+
+  // Content Meta
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".metadata-input-longtext",
+    "//CONTENT META",
+    themeCSS,
+    "color",
   )
 })
 

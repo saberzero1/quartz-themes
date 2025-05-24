@@ -1430,15 +1430,53 @@ body {
 
   /* CODE */
   pre {
-    border: 1px solid var(--background-modifier-border, var(--border));
+    position: relative;
+    padding: var(--size-4-3) var(--size-4-4);
+    min-height: 38px;
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    white-space: var(--code-white-space);
+    border: var(--code-border-width) solid var(--code-border-color);
+    overflow-x: auto;
+    & > code {
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
   }
   code {
     color: var(--code-normal);
     font-family: var(--font-monospace);
-  }
-  *:is(:not(pre)) > code {
-    color: var(--markup-code, var(--code-normal));
     background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    font-size: var(--code-size);
+    padding: 0.15em 0.3em;
+    border: var(--code-border-width) solid var(--code-border-color);
+    -webkit-box-decoration-break: clone;
+  }
+  .clipboard-button {
+    margin: 6px;
+    padding: 6px 8px;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    font-family: var(--font-interface);
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    &:hover {
+      background-color: var(--background-modifier-hover);
+    }
+    & > svg {
+      fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+    }
+  }
+
+  /* METADATA */
+  .content-meta {
+    color: var(--metadata-input-text-color);
   }
 
   /* EXPLORER, TOC, BACKLINKS */
@@ -1613,11 +1651,6 @@ body {
     font-family: var(--inline-title-font, var(--h2-font, var(--font-text, inherit)));
   }
 
-  /* METADATA */
-  .content-meta {
-    color: var(--text-faint);
-  }
-
   /* GRAPH */
   .graph {
     & > .graph-outer {
@@ -1643,19 +1676,6 @@ body {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
     border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
-  }
-
-  .clipboard-button {
-    color: var(--text-muted);
-    border-color: var(--checkbox-border-color, var(--text-faint));
-    background-color: transparent;
-    &:hover {
-      border-color: var(--checkbox-border-color-hover, var(--text-muted));
-      background-color: var(--background-modifier-hover);
-    }
-    & > svg {
-      fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
-    }
   }
 
   details.toc {

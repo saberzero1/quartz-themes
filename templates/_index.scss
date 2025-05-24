@@ -257,6 +257,10 @@ body {
     }
   }
 
+  /* METADATA */
+  .content-meta {
+    //CONTENT META
+  }
 
   /* EXPLORER, TOC, BACKLINKS */
   .toc-content,
@@ -428,11 +432,6 @@ body {
   .page-title a {
     color: var(--h2-color, var(--link-color, var(--darkgray)));
     font-family: var(--inline-title-font, var(--h2-font, var(--font-text, inherit)));
-  }
-
-  /* METADATA */
-  .content-meta {
-    color: var(--text-faint);
   }
 
   /* GRAPH */
