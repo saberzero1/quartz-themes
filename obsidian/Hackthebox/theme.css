@@ -537,7 +537,7 @@ body {
 
   /* i mean for real i was expectine padding property but it does not exist	 */
   --table-row-alt-background: var(--background-secondary);
-  --table-column-alt-background: var(var(--background-secondary));
+  --table-column-alt-background: var(--background-secondary);
 }
 
 /* Fix the borders and add a radius variable */

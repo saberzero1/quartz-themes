@@ -433,7 +433,7 @@ border-radius: 0px 10px 0px 10px;
 .markdown-preview-view h6 {
   font-size: 20px;
   line-height: 24px;
-  color: --text-normal;
+  color: var(--text-normal);
   color: var(--text-title-h6) !important;
   font-family: var(--font-headers);
 }
