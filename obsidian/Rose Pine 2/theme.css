@@ -1195,5 +1195,5 @@ hr {
 
 body {
   background: var(--rp-base);
-  color: var(var(--rp-text));
+  color: var(--rp-text);
 }

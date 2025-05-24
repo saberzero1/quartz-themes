@@ -13420,7 +13420,6 @@ body:not(.font-family-change-to-default) .markdown-source-view {
 .cm-s-obsidian.is-folding.is-readable-line-width .markdown-reading-view {
   line-height: var(--line-height-main);
   letter-spacing: calc(var(--letter-space-main) * 0.03em);
-  /*text-align: var();*/
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
