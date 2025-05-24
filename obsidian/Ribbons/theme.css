@@ -733,7 +733,7 @@ p:has(> .math-inline) strong {
 .embed-note-statblock .block-language-dataviewjs .HyperMD-header.HyperMD-header-1 .cm-hashtag-begin,
 .embed-note-statblock .block-language-dataviewjs h1 .cm-hashtag-begin {
   /* padding-top: 0px !important; */
-  position-anchor: --anchor-cr-text;
+  position-anchor: var(--anchor-cr-text);
   position: absolute;
   right: anchor(left);
   padding: inherit;
@@ -747,7 +747,7 @@ p:has(> .math-inline) strong {
 .embed-note-statblock .block-language-dataviewjs .HyperMD-header.HyperMD-header-1 a.tag,
 .embed-note-statblock .block-language-dataviewjs h1 .cm-hashtag-end,
 .embed-note-statblock .block-language-dataviewjs h1 a.tag {
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -1191,12 +1191,12 @@ body {
 }
 
 .callout[data-callout-metadata~="ref-y-skills"] {
-  anchor-name: --match-skills;
+  anchor-name: var(--match-skills);
 }
 
 .callout[data-callout-metadata~="match-y-skills"],
 .callout[data-callout-metadata~="match-iy-skills"] {
-  position-anchor: --match-skills;
+  position-anchor: var(--match-skills);
 }
 
 .callout:is([data-callout-metadata~="cmb-4"]) > .callout-content > .callout {

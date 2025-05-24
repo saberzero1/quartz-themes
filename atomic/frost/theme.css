@@ -16630,7 +16630,8 @@ body.theme-dark {
   --color-text-primary: #edf2f7;
   --color-text-secondary: #a0aec0;
   --color-border: #4a5568;
-  --color-code-bg: #1e2937 --color-link: #edf2f7;
+  --color-code-bg: #1e2937;
+  --color-link: #edf2f7;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }

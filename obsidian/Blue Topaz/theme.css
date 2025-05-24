@@ -857,7 +857,7 @@ settings:
     id: accent-strong
     title: Bold type color
     title.zh: 加粗颜色
-    description: --accent-strong
+    description: accent-strong
     type: variable-themed-color
     opacity: true
     format: hex
@@ -867,7 +867,7 @@ settings:
     id: accent-em
     title: Italic type color
     title.zh: 斜体颜色
-    description: --accent-em
+    description: accent-em
     type: variable-themed-color
     opacity: true
     format: hex
@@ -877,7 +877,7 @@ settings:
     id: strong-em-color-1
     title: Bold italic color 1
     title.zh: 加粗斜体颜色 1
-    description: --strong-em-color-1
+    description: strong-em-color-1
     type: variable-themed-color
     opacity: true
     format: hex
@@ -887,7 +887,7 @@ settings:
     id: strong-em-color-2
     title: Bold italic color 2
     title.zh: 加粗斜体颜色 2
-    description: --strong-em-color-2
+    description: strong-em-color-2
     type: variable-themed-color
     opacity: true
     format: hex
@@ -898,7 +898,7 @@ settings:
     title: Color of mathematical expressions (inline $x=0$)
     title.zh: 数学表达式颜色(行内 $x=0$)
     type: variable-themed-color
-    description: --mjx-inline-math-color
+    description: mjx-inline-math-color
     opacity: true
     format: hex
     default-light: "#"
@@ -907,7 +907,7 @@ settings:
     id: mjx-math-color
     title: Color of mathematical expressions ($$x=0$$)
     title.zh: 数学表达式颜色($$x=0$$)
-    description: --mjx-math-color
+    description: mjx-math-color
     type: variable-themed-color
     opacity: true
     format: hex
@@ -917,7 +917,7 @@ settings:
     id: background-leaf-resize-handle
     title: Color of leaf resize handle
     title.zh: 页面大小调整条颜色
-    description: --background-leaf-resize-handle
+    description: background-leaf-resize-handle
     type: variable-themed-color
     opacity: true
     format: hex
@@ -927,7 +927,7 @@ settings:
     id: search-result-file-matched-bg
     title: File search result highlight color
     title.zh: 文件搜索结果高亮
-    description: --search-result-file-matched-bg
+    description: search-result-file-matched-bg
     type: variable-themed-color
     opacity: true
     format: hex
@@ -937,7 +937,7 @@ settings:
     id: text-search-highlight-bg
     title: Text search result highlight color
     title.zh: 文本搜索结果高亮
-    description: --text-search-highlight-bg
+    description: text-search-highlight-bg
     type: variable-themed-color
     opacity: true
     format: hex
@@ -947,7 +947,7 @@ settings:
     id: text-selection
     title: Text selection background
     title.zh: 鼠标划选文字背景
-    description: --text-selection
+    description: text-selection
     type: variable-themed-color
     opacity: true
     format: hex
@@ -963,7 +963,7 @@ settings:
     id: status-bar-bg
     title: Status bar background
     title.zh: 状态栏颜色
-    description: --status-bar-bg
+    description: status-bar-bg
     type: variable-themed-color
     opacity: true
     format: hex
@@ -973,7 +973,7 @@ settings:
     id: status-bar-text-color
     title: Status bar text color
     title.zh: 状态栏文字颜色
-    description: --status-bar-text-color
+    description: status-bar-text-color
     type: variable-themed-color
     opacity: true
     format: hex
@@ -983,7 +983,7 @@ settings:
     id: icon-color-focused
     title: Focused icon color
     title.zh: 激活按钮的图标颜色
-    description: --icon-color-focused
+    description: icon-color-focused
     type: variable-themed-color
     opacity: true
     format: hex
@@ -4303,7 +4303,7 @@ settings:
     id: background-popover
     title: Hover popover background color
     title.zh: 悬浮弹窗背景色
-    description: --background-popover
+    description: background-popover
     type: variable-themed-color
     opacity: true
     format: hex
@@ -18209,7 +18209,7 @@ pre.language-note-cloze::before {
     transparent var(--hibox),
     transparent 0
   );
-  transition: --hibox 0.4s linear;
+  transition: var(--hibox) 0.4s linear;
   color: var(--background-code);
   color: transparent;
 }
@@ -21078,7 +21078,7 @@ body.style-options-for-admonition-plugin .admonition-hibox {
     transparent var(--hibox),
     transparent 0
   );
-  transition: --hibox 0.6s linear;
+  transition: var(--hibox) 0.6s linear;
   border-left: none !important;
 }
 
@@ -32923,7 +32923,7 @@ body.colorful-p-kanban .callout.callout[data-callout*="kanban"] .task-list-item-
     transparent var(--hibox),
     transparent 0
   );
-  transition: --hibox 0.6s linear;
+  transition: var(--hibox) 0.6s linear;
 }
 
 .callout.callout[data-callout*="hibox"] .callout-content:hover {

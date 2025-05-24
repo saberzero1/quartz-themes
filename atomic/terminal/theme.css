@@ -20463,12 +20463,12 @@ settings:
         type: variable-text
         default: "^"
     -
-        id: --collapse-right
+        id: collapse-right
         title: Collapsed
         type: variable-text
         default: ">"
     -
-        id: --collapse-down
+        id: collapse-down
         title: Not Collapsed
         type: variable-text
         default: "v"
