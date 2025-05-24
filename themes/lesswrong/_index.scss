@@ -278,7 +278,7 @@ body {
   --icon-m-stroke-width: 1.75px;
   --icon-l-stroke-width: 1.75px;
   --icon-xl-stroke-width: 1.25px;
-  --icon-color: var(--text-muted);
+  --icon-color: #a8a8a8;
   --icon-color-hover: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
@@ -332,7 +332,7 @@ body {
   --link-external-color: #2b7801;
   --link-external-color-hover: var(--text-accent-hover);
   --link-external-decoration: none;
-  --link-external-decoration-hover: none --icon-color: #a8a8a8;
+  --link-external-decoration-hover: none;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
   --link-unresolved-opacity: 0.7;
