@@ -1,4 +1,70 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+  --color-base-00: var(--EBgnd);
+  --color-base-05: var(--EBgnd);
+  --color-base-10: var(--EBgnd);
+  --color-base-20: var(--Bgnd);
+  --color-base-25: #252429;
+  --color-base-30: var(--Axt);
+  --color-base-35: #a540a55f;
+  --color-base-40: var(--Axt);
+  --color-base-50: var(--txi);
+  --color-base-60: #d8bcd8;
+  --color-base-70: #d8bcd8;
+  --color-base-100: #d8bcd8;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --background-modifier-form-field: var(--EBgnd);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--Axt);
+  --text-accent: var(--AccentA2);
+  --interactive-accent: var(--AccentA1);
+  --interactive-accent-hover: var(--AccentA2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: var(--txi);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --nav-item-background-selected: var(--Axt);
   --background-primary: var(--EBgnd);
   --color-scheme: dark;
@@ -12,7 +78,6 @@
   --background-secondary: var(--Bgnd);
   --EBgnd: #211f23;
   --background-modifier-form-field-highlighted: var(--EBgnd);
-  --background-modifier-form-field: var(--EBgnd);
   --Bgcl: #a32d7f52;
   --background-modifier-hover: var(--Bgcl);
   --background-modifier-active-hover: var(--Bgcl);
@@ -24,10 +89,8 @@
   --checkbox-color: var(--AccentA1);
   --prompt-border-color: var(--AccentA1);
   --scrollbar-active-thumb-bg: var(--AccentA1);
-  --interactive-accent: var(--AccentA1);
   --Axt: #a32d7f36;
   --divider-color: var(--Axt);
-  --interactive-hover: var(--Axt);
   --modal-border-color: var(--Axt);
   --background-modifier-border: var(--Axt);
   --frame-divider-color: var(--Axt);
@@ -36,9 +99,7 @@
   --tab-outline-color: var(--Axt);
   --AccentA2: #d560b1;
   --background-modifier-accent: var(--AccentA2);
-  --interactive-accent-hover: var(--AccentA2);
   --text-accent-hover: var(--AccentA2);
-  --text-accent: var(--AccentA2);
   --txt: #d8bcd8;
   --nav-item-color: var(--txt);
   --nav-item-color-active: var(--txt);
@@ -55,12 +116,11 @@
   --titlebar-text-color-focused: var(--txt);
   --txi: #e499e4a2;
   --icon-color-hover: var(--txi);
-  --icon-color: var(--txi);
+  --icon-color: #d8bcd8;
   --nav-collapse-icon-color: var(--txi);
   --nav-collapse-icon-color-collapsed: var(--txi);
   --list-marker-color: var(--txi);
-  --text-selection: var(--txi);
-  --text-formatting: var(--txi);
+  --text-formatting: #9c4296;
   --text-muted: #e499e4a2;
   --text-faint: #e499e4a2;
   --text-error: #f1637d;
@@ -70,8 +130,6 @@
   --quote-opening-modifier: var(--Axt2);
   --bold-color: #9c4296;
   --italic-color: #f3967a;
-  --text-formatting: #9c4296;
-  --icon-color: #d8bcd8;
   --h1-color: #d8bcd8;
   --h2-color: #c4a5c4;
   --h3-color: #ac81ac;
@@ -79,18 +137,6 @@
   --h5-color: #835783;
   --h6-color: #805380;
   --scrollbar-bg: transparent;
-  --color-base-00: var(--EBgnd);
-  --color-base-05: var(--EBgnd);
-  --color-base-10: var(--EBgnd);
-  --color-base-20: var(--Bgnd);
-  --color-base-25: #252429;
-  --color-base-30: var(--Axt);
-  --color-base-35: #a540a55f;
-  --color-base-40: var(--Axt);
-  --color-base-50: var(--txi);
-  --color-base-60: #d8bcd8;
-  --color-base-70: #d8bcd8;
-  --color-base-100: #d8bcd8;
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));

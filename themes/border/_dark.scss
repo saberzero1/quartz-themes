@@ -1,20 +1,16 @@
 :root[saved-theme="dark"] {
-  --text-normal: hsl(var(--accent-h), 15%, 85%);
-  --text-muted: hsl(var(--accent-h), 12%, 75%);
-  --text-faint: hsl(var(--accent-h), 9%, 50%);
-  --text-accent: var(--color-accent-1);
-  --text-accent-hover: var(--color-accent-2);
+  color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 255, 120, 129;
   --color-red: rgb(var(--color-red-rgb));
-  --color-green-rgb: 124, 211, 124;
-  --color-green: rgb(var(--color-green-rgb));
   --color-orange-rgb: 251, 187, 131;
   --color-orange: rgb(var(--color-orange-rgb));
   --color-yellow-rgb: 255, 232, 139;
   --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-green-rgb: 124, 211, 124;
+  --color-green: rgb(var(--color-green-rgb));
   --color-cyan-rgb: 134, 223, 226;
   --color-cyan: rgb(var(--color-cyan-rgb));
   --color-blue-rgb: 137, 189, 244;
@@ -24,8 +20,8 @@
   --color-pink-rgb: 242, 182, 222;
   --color-pink: rgb(var(--color-pink-rgb));
   --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
   --color-base-10: #242424;
-  --color-base-15: #252525;
   --color-base-20: #262626;
   --color-base-25: #2a2a2a;
   --color-base-30: #363636;
@@ -35,28 +31,118 @@
   --color-base-60: #999;
   --color-base-70: #bababa;
   --color-base-100: #dadada;
+  --color-accent-hsl: var(--color-accent-hsl-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-accent-1: var(--color-accent-1-dark);
+  --color-accent-2: var(--color-accent-2-dark);
+  --background-modifier-form-field: transparent;
+  --background-secondary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3)
+  );
+  --interactive-normal: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(1.25 * var(--accent-l) / 3)
+  );
+  --interactive-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(1.25 * var(--accent-l) / 2.7)
+  );
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
+  --input-shadow: var(--input-shadow-dark);
+  --input-shadow-hover: var(--input-shadow-hover-dark);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3), 0 -1px 0 0 var(--background-modifier-border-focus);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2), 0 -1px 0 0 var(--background-modifier-border-focus);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --text-normal: hsl(var(--accent-h), 15%, 85%);
+  --text-muted: hsl(var(--accent-h), 12%, 75%);
+  --text-faint: hsl(var(--accent-h), 9%, 50%);
+  --text-accent-hover: var(--color-accent-2);
+  --color-base-15: #252525;
   --accent-h: var(--accent-dark-h);
   --accent-s: var(--accent-dark-s);
   --accent-l: var(--accent-dark-l);
   --accent-dark-h: 232;
   --accent-dark-s: 40%;
   --accent-dark-l: 60%;
-  --color-accent-hsl: var(--color-accent-hsl-dark);
-  --color-accent: var(--color-accent-dark);
-  --color-accent-1: var(--color-accent-1-dark);
-  --color-accent-2: var(--color-accent-2-dark);
   --color-accent-3: var(--color-accent-3-dark);
   --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-dark: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2-dark: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-3-dark: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l))
+  );
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.25
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.3
+  );
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 3.9)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.9)
+  );
+  --background-tertiary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6)
+  );
+  --workspace-background-translucent: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6),
+    0.6
+  );
   --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: transparent;
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
   --border-radius-activated-file-dark: var(--radius-s);
   --color-activated-file-dark: var(--nav-item-color-active);
   --background-activated-file-dark: var(--nav-item-background-active);
@@ -67,16 +153,31 @@
   --toggle-thumb-enabled-color-dark: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-dark);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-dark);
+  --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(0, 0, 0, 0.2),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.4);
+  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3),
+    inset 0px -4px 6px hsla(var(--interactive-accent-hsl), 0.4),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.4);
   --toggle-track-color: var(--toggle-track-color-dark);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-dark);
   --toggle-track-color-dark: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-dark: var(--interactive-accent);
   --toggle-track-shadow: var(--toggle-track-shadow-dark);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-dark);
+  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
+  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
   --input-radius: var(--input-radius-dark);
-  --input-shadow: var(--input-shadow-dark);
-  --input-shadow-hover: var(--input-shadow-hover-dark);
   --input-radius-dark: 5px;
+  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+  --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
   --code-background: var(--code-background-dark);
   --code-border: var(--code-border-dark);
 }

@@ -1,5 +1,9 @@
-import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import splitCombinedRulesWithPostCSS from "./atomize-css-rules.mjs"
+import {
+  splitCombinedRules,
+  combineIdenticalSelectors,
+  removeEmptyRules,
+  getRuleDeclarations,
+} from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -185,8 +189,6 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
 
     // Copy the file to the target directory
     fs.copyFileSync(sourceFilePath, targetFilePath)
-
-    //console.log(`File successfully copied to '${targetFilePath}'`);
   } catch (error) {
     throw new Error(`Unable to copy file: ${error.message}`)
   }
@@ -210,8 +212,6 @@ function replaceInFile(filePath, targetString, replacementString) {
 
     // Write the modified content back to the file
     fs.writeFileSync(filePath, modifiedContent, "utf8")
-
-    //console.log(`Replaced all occurrences of "${targetString}" with "${replacementString}" in '${filePath}'`);
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`)
   }
@@ -232,8 +232,6 @@ function findAllMatchesInFile(filePath, regexString) {
 
     // Use match to find all matches in the file content
     const matches = fileContent.matchAll(regexString)
-
-    console.log([matches].length)
 
     // Return the matches or an empty array if no matches are found
     return matches !== undefined && matches.length > 0 ? [...matches][0] : []
@@ -264,45 +262,6 @@ function findAllMatchesAsString(filePath, regexString) {
 
     // Convert the matches array to a newline-separated string (or return an empty string if no matches)
     return matches ? matches.join("\n") : ""
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-/**
- * Removes all lines from a CSS file that are not CSS variable definitions.
- * A CSS variable is defined as a line containing '--[variable-name]: [value];'.
- *
- * @param {string} cssString - The string content of the CSS file.
- * @returns {string} Custom properties only.
- * @throws {Error} If the file cannot be read or written.
- */
-function removeNonVariableLines(cssString) {
-  try {
-    // Read the string as an array of lines
-    const lines = cssString.split("\n")
-
-    // Remove comments
-    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
-
-    // Filter lines to include only those that match the CSS variable pattern
-    const variableLines = linesCleared.filter(
-      (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
-    )
-
-    // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
-
-    // Join the filtered lines back into a single string
-    const updatedContent = emptyColorLines.join("\n")
-
-    // Convert colors to rgb
-    const convertedContent = convertCssColorsToRgbWithSass(updatedContent)
-
-    // Write the updated content back to the file
-    return convertedContent
-
-    //console.log(`Removed non-variable lines from '${filePath}'`);
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`)
   }
@@ -398,6 +357,33 @@ function getTheme(dict) {
 }
 
 /**
+ * Fetch CSS rule and replace in the specified file.
+ * @param {string} filePath - The path to the file where the rule should be replaced.
+ * @param {string} ruleSelector - The CSS selector for the rule to be replaced.
+ * @param {string} targetText - The text to be replaced in the file.
+ * @param {string} inputCSS - The CSS string containing the rule declarations.
+ * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
+ * @throws {Error} If the file cannot be read or written.
+ */
+function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
+  try {
+    // Find the rule declarations for the specified selector
+    const ruleDeclarations =
+      ruleToExtract === ""
+        ? getRuleDeclarations(inputCSS, ruleSelector)
+        : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
+    if (ruleDeclarations) {
+      // Apply the rule declarations to the specified file
+      replaceInFile(filePath, targetText, ruleDeclarations)
+    } else {
+      throw new Error(`No declarations found for selector: ${ruleSelector}`)
+    }
+  } catch (error) {
+    throw new Error(`Unable to apply rule to file: ${error.message}`)
+  }
+}
+
+/**
  * Get all files under a directory and return them as an array of strings.
  * All file paths are relative to the provided directory path.
  *
@@ -458,16 +444,11 @@ function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
 
 // Actual script
 // STEP 1
-const currentFolder = getCurrentFolder()
-//console.log("Current working directory:", currentFolder)
-
 const args = getCommandLineArgs()
-//console.log("Command line arguments:", args)
 
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
-//console.log(folders.length)
 
 // STEP 2
 let manifestCollection = []
@@ -482,7 +463,6 @@ if (singleThemeName === "") {
     readJsonFileAsDictionary(`${obsidianFolder}/${singleThemeName}`, "manifest.json"),
   )
 }
-//console.log(manifestCollection)
 
 // STEP 3
 clearDirectoryContents(`./themes`)
@@ -594,13 +574,6 @@ manifestCollection.forEach((manifest) => {
 
 // STEP 6
 // _index.scss
-const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
-const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
-const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
-const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
-let hasDarkOptions = true
-let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
   let extras = ""
@@ -625,86 +598,99 @@ manifestCollection.forEach((manifest) => {
 })
 manifestCollection.forEach((manifest) => {
   if (args[0] === "ATOMIZE") {
+    if (!fs.existsSync(`./converted_app.css`)) {
+      const obsidianCSS = fs.readFileSync("./app.css", "utf8")
+      let result = splitCombinedRules(obsidianCSS)
+      result = combineIdenticalSelectors(result)
+      result = removeEmptyRules(result)
+      fs.writeFileSync(`./converted_app.css`, result, "utf8")
+    }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
-    const splitCssString = splitCombinedRulesWithPostCSS(cssString)
-    fs.writeFileSync(atomicFile, splitCssString, "utf8")
+    const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
+    let result = `${obsidianCSS}\n${splitCombinedRules(cssString)}`
+    result = combineIdenticalSelectors(result)
+    result = removeEmptyRules(result)
+    fs.writeFileSync(atomicFile, result, "utf8")
   }
-  const bodyValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    bodyRegex,
-  )
-  const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//BODY`,
-    removeNonVariableLines(bodyValue2),
-  )
-})
-manifestCollection.forEach((manifest) => {
-  const rootValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    rootRegex,
-  )
-  const rootValue2 = rootValue.replace(rootRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//ROOT`,
-    removeNonVariableLines(rootValue2),
-  )
-})
+  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, ":root", "//ROOT", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "body", "//BODY", themeCSS)
 
-// _fonts.scss
-/*
-manifestCollection.forEach((manifest) => {
-  const fontValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
-    fontRegex,
+  // Heading links
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1 a", "//H1 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2 a", "//H2 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3 a", "//H3 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4 a", "//H4 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5 a", "//H5 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6 a", "//H6 A", themeCSS)
+
+  // Headings
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1", "//H1", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2", "//H2", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3", "//H3", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4", "//H4", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5", "//H5", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6", "//H6", themeCSS)
+
+  // Code blocks
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered pre",
+    "//PRE",
+    themeCSS,
   )
-  const fontValue2 = fontValue.replace(fontRegex, "$1")
-  replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
+  // inline code
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered code",
+    "//CODE INLINE",
+    themeCSS,
+  )
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered pre code",
+    "//CODE",
+    themeCSS,
+  )
+  // Code copy button
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered button.copy-code-button:hover",
+    "//CLIPBOARD BUTTON HOVER",
+    themeCSS,
+  )
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".markdown-rendered button.copy-code-button",
+    "//CLIPBOARD BUTTON",
+    themeCSS,
+  )
+
+  // Content Meta
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".metadata-input-longtext",
+    "//CONTENT META",
+    themeCSS,
+    "color",
+  )
 })
-  */
 
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
-  const darkValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    darkRegex,
-  )
-  const lightValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    lightRegex,
-  )
-  hasDarkOptions = darkValue !== ""
-  hasLightOptions = lightValue !== ""
-  const darkValue2 = darkValue.replace(darkRegex, "$1")
-  const lightValue2 = lightValue.replace(lightRegex, "$1")
-  if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue2),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_dark.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue2),
-    )
+  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
+  const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
+  const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
+  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//DARK`, darkValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//DARK`, darkValue)
   }
-  if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue2),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_light.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue2),
-    )
+  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//LIGHT`, lightValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//LIGHT`, lightValue)
   }
 
   // Unset color-scheme for single mode themes

@@ -1,4 +1,59 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: var(--red-3-rgb);
+  --color-red: var(--red-3);
+  --color-orange-rgb: var(--orange-3-rgb);
+  --color-orange: var(--orange-3);
+  --color-yellow-rgb: var(--yellow-5-rgb);
+  --color-yellow: var(--yellow-5);
+  --color-green-rgb: var(--green-3-rgb);
+  --color-green: var(--green-3);
+  --color-cyan-rgb: var(--cyan-3-rgb);
+  --color-cyan: var(--cyan-3);
+  --color-blue-rgb: var(--blue-3-rgb);
+  --color-blue: var(--blue-3);
+  --color-purple-rgb: var(--purple-3-rgb);
+  --color-purple: var(--purple-3);
+  --color-pink-rgb: var(--pink-3-rgb);
+  --color-pink: var(--pink-3);
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-base-100: #222222;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --background-primary: hsl(0, 0%, 98%);
   --background-primary-alt: hsl(0, 0%, 95%);
   --background-secondary: hsl(0, 0%, 92%);
@@ -25,22 +80,6 @@
   --callout-fail: var(--red-3-rgb);
   --callout-example: var(--purple-3-rgb);
   --callout-quote: var(--brown-3-rgb);
-  --color-red-rgb: var(--red-3-rgb);
-  --color-orange-rgb: var(--orange-3-rgb);
-  --color-yellow-rgb: var(--yellow-5-rgb);
-  --color-green-rgb: var(--green-3-rgb);
-  --color-cyan-rgb: var(--cyan-3-rgb);
-  --color-blue-rgb: var(--blue-3-rgb);
-  --color-purple-rgb: var(--purple-3-rgb);
-  --color-pink-rgb: var(--pink-3-rgb);
-  --color-red: var(--red-3);
-  --color-orange: var(--orange-3);
-  --color-yellow: var(--yellow-5);
-  --color-green: var(--green-3);
-  --color-cyan: var(--cyan-3);
-  --color-blue: var(--blue-3);
-  --color-purple: var(--purple-3);
-  --color-pink: var(--pink-3);
   --invert-filter-b: none;
   --invert-filter-w: invert() hue-rotate(180deg);
   --color-invert-filter-b: none;

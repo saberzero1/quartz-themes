@@ -28,10 +28,7 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh pine-forest-berry
 ```
 
-### Install script (Advanced)
+### Quartz Syncer
 
-After installing:
-
-```bash
-npm run theme pine-forest-berry
-```
+> [!IMPORTANT]
+> This setup method is not yet available. It is currently being tested and will be released in the future.

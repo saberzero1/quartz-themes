@@ -1,46 +1,8 @@
 :root[saved-theme="light"] {
-  --background-primary: var(--gray-light-7);
-  --background-primary-alt: var(--gray-light-5);
-  --background-secondary: var(--gray-light-3);
-  --background-secondary-alt: var(--gray-light-4);
-  --background-modifier-hover: rgba(0, 0, 0, 0.075);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--gray-light-1);
-  --background-modifier-border-hover: var(--gray-light-2);
-  --background-modifier-border-focus: var(--gray);
-  --background-modifier-error-rgb: var(--red-4-rgb);
-  --background-modifier-error: var(--red-4);
-  --background-modifier-error-hover: var(--red-3);
-  --background-modifier-success-rgb: var(--green-4-rgb);
-  --background-modifier-success: var(--green-4);
-  --background-modifier-warning: var(--yellow-3);
-  --background-modifier-warning-hover: var(--yellow-4);
-  --background-modifier-info: var(--blue-4);
-  --modifier-text: white;
-  --modifier-text-accent: var(--gray-light-7);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-form-field: var(--background-primary);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --text-normal: var(--gray-dark-5);
-  --text-muted: var(--gray-dark-4);
-  --text-faint: var(--gray-dark-1);
-  --text-accent: var(--primary-accent-4);
-  --text-accent-hover: var(--primary-accent-5);
-  --text-success: var(--green-4);
-  --text-error: var(--red-4);
-  --text-highlight-fg: var(--gray-dark-7);
-  --text-highlight-bg-rgb: var(--primary-accent-4-rgb);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.2);
-  --text-selection: rgba(var(--secondary-accent-4-rgb), 0.2);
-  --interactive-hover: var(--primary-accent-1);
-  --interactive-normal: var(--background-primary-alt);
-  --text-on-accent: var(--gray-light-8);
-  --interactive-accent: var(--primary-accent-4);
-  --interactive-accent-hover: var(--primary-accent-3);
-  --interactive-toggle: var(--secondary-accent-3);
-  --interactive-disabled: var(--gray-light-3);
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: var(--red-4-rgb);
   --color-red: var(--red-4);
   --color-orange-rgb: var(--orange-4-rgb);
@@ -69,6 +31,68 @@
   --color-base-60: var(--gray-dark-3);
   --color-base-70: var(--gray-dark-4);
   --color-base-100: var(--gray-dark-8);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--gray-light-4);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --background-primary: var(--gray-light-7);
+  --background-primary-alt: var(--gray-light-5);
+  --background-secondary: var(--gray-light-3);
+  --background-modifier-hover: rgba(0, 0, 0, 0.075);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-border: var(--gray-light-1);
+  --background-modifier-border-hover: var(--gray-light-2);
+  --background-modifier-border-focus: var(--gray);
+  --background-modifier-error-rgb: var(--red-4-rgb);
+  --background-modifier-error: var(--red-4);
+  --background-modifier-error-hover: var(--red-3);
+  --background-modifier-success-rgb: var(--green-4-rgb);
+  --background-modifier-success: var(--green-4);
+  --background-modifier-warning: var(--yellow-3);
+  --background-modifier-warning-hover: var(--yellow-4);
+  --background-modifier-info: var(--blue-4);
+  --modifier-text: white;
+  --modifier-text-accent: var(--gray-light-7);
+  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-form-field: var(--background-primary);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --text-normal: var(--gray-dark-5);
+  --text-muted: var(--gray-dark-4);
+  --text-faint: var(--gray-dark-1);
+  --text-accent: var(--primary-accent-4);
+  --text-accent-hover: var(--primary-accent-5);
+  --text-success: var(--green-4);
+  --text-error: var(--red-4);
+  --text-highlight-fg: var(--gray-dark-7);
+  --text-highlight-bg-rgb: var(--primary-accent-4-rgb);
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.2);
+  --text-selection: rgba(var(--secondary-accent-4-rgb), 0.2);
+  --interactive-hover: var(--primary-accent-1);
+  --interactive-normal: var(--background-primary-alt);
+  --text-on-accent: var(--gray-light-8);
+  --interactive-accent: var(--primary-accent-4);
+  --interactive-accent-hover: var(--primary-accent-3);
+  --interactive-toggle: var(--secondary-accent-3);
+  --interactive-disabled: var(--gray-light-3);
   --ebw-tab-title-active-fg: white;
   --ebw-tab-title-active-bg: var(--secondary-accent-4);
   --ebw-tab-title-inactive-bg: var(--gray-dark-3);
