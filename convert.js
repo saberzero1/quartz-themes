@@ -615,6 +615,14 @@ manifestCollection.forEach((manifest) => {
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, ":root", "//ROOT", themeCSS)
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "body", "//BODY", themeCSS)
 
+  // Heading links
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1 a", "//H1 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2 a", "//H2 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3 a", "//H3 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4 a", "//H4 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5 a", "//H5 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6 a", "//H6 A", themeCSS)
+
   // Headings
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1", "//H1", themeCSS)
   applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2", "//H2", themeCSS)
