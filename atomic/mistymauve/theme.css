@@ -2249,7 +2249,7 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-form-field: var(--color-base-00);
   --text-normal: var(--color-base-100);
-  --text-muted: color.mix(var(var(--color-light-carmine-pink)), var(--color-bright-gray));
+  --text-muted: color.mix(var(--color-light-carmine-pink), var(--color-bright-gray));
   --text-faint: var(--color-base-50);
   --text-on-accent: var(--color-tulip);
   --text-on-accent-inverted: var(--color-tulip);

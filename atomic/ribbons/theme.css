@@ -22367,7 +22367,7 @@ p:has(> .math-inline) strong {
   p:has(+ ul)
   + ul {
   margin-top: 0px;
-  --el-margin-top: var(0px);
+  --el-margin-top: 0px;
 }
 .callout[data-callout]:has(.callout[data-callout])
   .callout[data-callout="l/section"]

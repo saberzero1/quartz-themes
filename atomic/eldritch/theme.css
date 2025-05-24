@@ -20557,7 +20557,7 @@ thead {
 
 .side-dock-panels-container {
   background-color: var(--background-secondary-alt);
-  color: var(background-secondary-alt);
+  color: var(--background-secondary-alt);
 }
 
 /* icons at top of panes*/
