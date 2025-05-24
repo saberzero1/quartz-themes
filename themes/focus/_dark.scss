@@ -1,15 +1,16 @@
 :root:root {
+  color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 245, 152, 143;
   --color-red: #f5988f;
-  --color-green-rgb: 165, 230, 147;
-  --color-green: #a5e693;
   --color-orange-rgb: 255, 200, 163;
   --color-orange: #ffc8a3;
   --color-yellow-rgb: 240, 227, 149;
   --color-yellow: #f0e395;
+  --color-green-rgb: 165, 230, 147;
+  --color-green: #a5e693;
   --color-cyan-rgb: 139, 240, 219;
   --color-cyan: #8bf0db;
   --color-blue-rgb: 151, 192, 243;
@@ -21,7 +22,6 @@
   --color-base-00: #1a1a1a;
   --color-base-05: #1a1a1a;
   --color-base-10: #1a1a1a;
-  --color-base-15: #1a1a1a;
   --color-base-20: #121212;
   --color-base-25: #121212;
   --color-base-30: #222222;
@@ -30,25 +30,16 @@
   --color-base-50: #707070;
   --color-base-60: #909090;
   --color-base-70: #a0a0a0;
-  --color-base-80: #c0c0c0;
-  --color-base-90: #e0e0e0;
   --color-base-100: #ffffff;
-  --color-accent-rgb: 165, 230, 147;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
-  --color-complement-rgb: 234, 169, 255;
-  --color-complement-hsl: var(--complement-h), var(--complement-s), var(--complement-l);
-  --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
   --background-modifier-form-field: var(--interactive-normal);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
   --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --text-complement: var(--color-complement);
-  --text-complement-hover: var(--color-complement-2);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-2);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -56,4 +47,30 @@
   --text-selection: rgba(255, 255, 255, 0.2);
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
+    0px 30px 90px rgba(0, 0, 0, 0.15);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --color-base-15: #1a1a1a;
+  --color-base-80: #c0c0c0;
+  --color-base-90: #e0e0e0;
+  --color-accent-rgb: 165, 230, 147;
+  --color-complement-rgb: 234, 169, 255;
+  --color-complement-hsl: var(--complement-h), var(--complement-s), var(--complement-l);
+  --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
+  --color-complement-1: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) - 10%)
+  );
+  --color-complement-2: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) + 10%)
+  );
+  --text-accent-hover: var(--color-accent-2);
+  --text-complement: var(--color-complement);
+  --text-complement-hover: var(--color-complement-2);
 }

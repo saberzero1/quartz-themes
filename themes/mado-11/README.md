@@ -28,10 +28,7 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 ./action.sh mado-11
 ```
 
-### Install script (Advanced)
+### Quartz Syncer
 
-After installing:
-
-```bash
-npm run theme mado-11
-```
+> [!IMPORTANT]
+> This setup method is not yet available. It is currently being tested and will be released in the future.
