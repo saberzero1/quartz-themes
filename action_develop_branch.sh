@@ -5,7 +5,7 @@ set +x
 
 # To fetch and use this script in a GitHub action:
 #
-# curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- <THEME_NAME>
+# curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/develop/action.sh | bash -s -- <THEME_NAME>
 
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
@@ -17,6 +17,12 @@ echo_err() { echo -e "${RED}$1${NC}"; }
 echo_warn() { echo -e "${YELLOW}$1${NC}"; }
 echo_ok() { echo -e "${GREEN}$1${NC}"; }
 echo_info() { echo -e "${BLUE}$1${NC}"; }
+
+echo_warn "###############################################################################"
+echo_warn "#                           DEVELOP BRANCH SCRIPT                             #"
+echo_warn "#                DO NOT USE THIS IN YOUR OWN QUARTZ REPOSITORY!               #"
+echo_warn "#                   THIS IS FOR DEVELOP BRANCH TESTING ONLY!                  #"
+echo_warn "###############################################################################"
 
 THEME_DIR="themes"
 QUARTZ_STYLES_DIR="quartz/styles"
