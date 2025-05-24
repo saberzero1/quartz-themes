@@ -1,20 +1,24 @@
 :root[saved-theme="light"] {
-  --color-red: #9c1a21;
-  --color-orange: #e8733d;
-  --color-yellow: #f18700;
-  --color-green: #004d20;
-  --color-cyan: #008acf;
-  --color-blue: var(--darkblue-ink);
-  --color-purple: #6c00cf;
-  --color-pink: #d53984;
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: 156, 26, 33;
+  --color-red: #9c1a21;
   --color-orange-rgb: 232, 115, 61;
+  --color-orange: #e8733d;
   --color-yellow-rgb: 241, 135, 0;
+  --color-yellow: #f18700;
   --color-green-rgb: 0, 77, 32;
+  --color-green: #004d20;
   --color-cyan-rgb: 0, 138, 207;
+  --color-cyan: #008acf;
   --color-blue-rgb: 22, 50, 89;
+  --color-blue: var(--darkblue-ink);
   --color-purple-rgb: 108, 0, 207;
+  --color-purple: #6c00cf;
   --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
   --color-base-00: #f9f6ee;
   --color-base-05: #f4eee0;
   --color-base-10: #efe7d1;
@@ -27,9 +31,32 @@
   --color-base-60: #9d8137;
   --color-base-70: #80692d;
   --color-base-100: #29220e;
-  --accent-h: 43.5 !important;
-  --accent-s: 47.6% !important;
-  --accent-l: 49.4% !important;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --accent-h: 43.5;
+  --accent-s: 47.6%;
+  --accent-l: 49.4%;
   --main-ink: var(--darkblue-ink);
   --main-ink-muted: var(--darkblue-ink-muted);
   --main-ink-fainted: var(--darkblue-ink-fainted);

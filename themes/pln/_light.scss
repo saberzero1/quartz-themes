@@ -1,14 +1,63 @@
 :root[saved-theme="light"] {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 191, 97, 106;
   --color-red: #bf616a;
+  --color-orange-rgb: 208, 135, 112;
   --color-orange: #d08770;
+  --color-yellow-rgb: var(--color-yellow-dark-rgb);
+  --color-yellow: var(--color-yellow-dark);
+  --color-green-rgb: 163, 190, 140;
+  --color-green: #a3be8c;
+  --color-cyan-rgb: 136, 192, 208;
+  --color-cyan: #88c0d0;
+  --color-blue-rgb: 94, 129, 172;
+  --color-blue: #5e81ac;
+  --color-purple-rgb: 180, 142, 173;
+  --color-purple: #b48ead;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+  --color-base-00: var(--w2);
+  --color-base-05: var(--w2);
+  --color-base-10: var(--w1);
+  --color-base-20: var(--w0);
+  --color-base-25: var(--b3);
+  --color-base-30: var(--w0);
+  --color-base-35: var(--w0);
+  --color-base-40: var(--w2);
+  --color-base-50: var(--b1);
+  --color-base-60: var(--b0);
+  --color-base-70: var(--b0);
+  --color-base-100: var(--b0);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --background-secondary-alt: var(--w1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --color-yellow-light: #ebcb8b;
   --color-yellow-dark: #e4b860;
-  --color-green: #a3be8c;
-  --color-purple: #b48ead;
   --color-sea-green: #8fbcbb;
-  --color-cyan: #88c0d0;
   --color-frost: #81a1c1;
-  --color-blue: #5e81ac;
   --color-salmon: #fc6e68;
   --accent-light-hsl-h: 213;
   --accent-light-hsl-s: 32%;
@@ -16,16 +65,10 @@
   --accent-dark-hsl-h: 210;
   --accent-dark-hsl-s: 34%;
   --accent-dark-hsl-l: 63%;
-  --color-red-rgb: 191, 97, 106;
-  --color-orange-rgb: 208, 135, 112;
   --color-yellow-light-rgb: 235, 203, 139;
   --color-yellow-dark-rgb: 228, 184, 96;
-  --color-green-rgb: 163, 190, 140;
-  --color-purple-rgb: 180, 142, 173;
   --color-sea-green-rgb: 143, 188, 187;
-  --color-cyan-rgb: 136, 192, 208;
   --color-frost-rgb: 129, 161, 193;
-  --color-blue-rgb: 94, 129, 172;
   --color-salmon-rgb: 252, 110, 104;
   --b0: #2e3440;
   --b1: #3b4252;
@@ -42,26 +85,11 @@
   --text-highlight-bg: rgba(180, 142, 173, 0.4);
   --text-highlight-bg-active: rgba(180, 142, 173, 0.4);
   --bold-weight: var(--font-bold);
-  --color-yellow: var(--color-yellow-dark);
-  --color-yellow-rgb: var(--color-yellow-dark-rgb);
   --accent-h: var(--accent-light-hsl-h);
   --accent-s: var(--accent-light-hsl-s);
   --accent-l: var(--accent-light-hsl-l);
   --background-primary: var(--w3);
   --background-primary-alt: var(--w2);
   --background-secondary: var(--w2);
-  --background-secondary-alt: var(--w1);
   --background-modifier-border: var(--w0);
-  --color-base-100: var(--b0);
-  --color-base-70: var(--b0);
-  --color-base-60: var(--b0);
-  --color-base-50: var(--b1);
-  --color-base-40: var(--w2);
-  --color-base-35: var(--w0);
-  --color-base-30: var(--w0);
-  --color-base-25: var(--b3);
-  --color-base-20: var(--w0);
-  --color-base-10: var(--w1);
-  --color-base-05: var(--w2);
-  --color-base-00: var(--w2);
 }

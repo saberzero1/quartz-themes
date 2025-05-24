@@ -1,19 +1,19 @@
 :root[saved-theme="dark"] {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 29, 31, 33;
   --mono-rgb-100: 226, 224, 226;
-  --color-red_rgb: 182, 94, 103;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #b65e67;
-  --color-orange_rgb: 188, 135, 98;
+  --color-orange-rgb: 233, 151, 63;
   --color-orange: #bc8762;
   --color-yellow-rgb: 188, 156, 98;
   --color-yellow: #bcab62;
   --color-green-rgb: 136, 188, 125;
   --color-green: #88bc7d;
-  --color-teal-rgb: 94, 141, 135;
-  --color-teal: #5e8d87;
-  --color-cyan: var(--color-teal);
   --color-cyan-rgb: var(--color-teal-rgb);
-  --color-blue_rgb: 196, 202, 214;
+  --color-cyan: var(--color-teal);
+  --color-blue-rgb: 2, 122, 255;
   --color-blue: #c4cad6;
   --color-purple-rgb: 156, 151, 183;
   --color-purple: #9c97b7;
@@ -31,7 +31,45 @@
   --color-base-60: #939395;
   --color-base-70: #a7a6a8;
   --color-base-100: #e2e0d2;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-20);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --color-red_rgb: 182, 94, 103;
+  --color-orange_rgb: 188, 135, 98;
+  --color-teal-rgb: 94, 141, 135;
+  --color-teal: #5e8d87;
+  --color-blue_rgb: 196, 202, 214;
   --checkbox-border-color-unchecked: var(--color-base-50);
   --checkbox-border-color-hover: var(--checkbox-color);
   --h1-weight: 300;

@@ -1,27 +1,74 @@
 :root[saved-theme="dark"] {
-  --color-red: #8e4646;
-  --color-orange: #cf844f;
-  --color-yellow: #dfbf74;
-  --color-green: var(--green-09);
-  --color-cyan: #7fbbb8;
-  --color-blue: #7babd4;
-  --color-purple: #9b7ad1;
-  --color-pink: #b96b88;
+  color-scheme: dark;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: rgb(142, 70, 70);
+  --color-red: #8e4646;
   --color-orange-rgb: rgb(207, 132, 79);
+  --color-orange: #cf844f;
   --color-yellow-rgb: rgb(223, 191, 116);
+  --color-yellow: #dfbf74;
   --color-green-rgb: rgb(145, 168, 110);
+  --color-green: var(--green-09);
   --color-cyan-rgb: rgb(127, 187, 184);
+  --color-cyan: #7fbbb8;
   --color-blue-rgb: rgb(123, 171, 212);
+  --color-blue: #7babd4;
   --color-purple-rgb: rgb(155, 122, 209);
+  --color-purple: #9b7ad1;
   --color-pink-rgb: rgb(185, 107, 136);
+  --color-pink: #b96b88;
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-base-100: #dadada;
+  --color-accent-hsl: var(--green-11);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--dark-grey-3);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--green-11);
+  --interactive-accent: var(--green-11);
+  --interactive-accent-hover: var(--green-10);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: var(--medium-grey-4);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --background-primary: var(--medium-dark-grey);
   --background-primary-alt: var(--dark-grey-2);
   --background-secondary: var(--dark-grey-1);
-  --background-secondary-alt: var(--dark-grey-3);
-  --interactive-accent: var(--green-11);
   --interactive-accent-hsl: var(--green-11);
-  --interactive-accent-hover: var(--green-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
   --background-modifier-active-hover: ((var(--green-10)), 0.15);
   --background-modifier-border: var(--dark-white);
@@ -97,8 +144,6 @@
   --accent-h: 84;
   --accent-s: 25%;
   --accent-1: 45%;
-  --color-accent-hsl: var(--green-11);
-  --interactive-accent-hsl: var(--green-11);
   --text-normal: var(--dark-white);
   --text-muted: var(--medium-grey-1);
   --text-faint: var(--medium-grey-2);
@@ -107,9 +152,7 @@
   --text-success: var(--green-11);
   --text-warning: var(--color-red);
   --text-error: var(--color-red);
-  --text-accent: var(--green-11);
   --text-accent-hover: var(--green-08);
-  --text-selection: var(--medium-grey-4);
   --text-highlight-bg: var(--medium-grey-4);
   --table-header-color: var(--green-11);
   --table-header-background: var(--dark-grey-2);
