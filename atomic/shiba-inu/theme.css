@@ -28328,7 +28328,7 @@ body:not(.shiba-remove-file-icons)
   -webkit-mask-repeat: no-repeat;
   background-color: currentColor;
   height: auto;
-  width: var((--font-size-folder-and-file), 1.0625em);
+  width: var(--font-size-folder-and-file, 1.0625em);
   margin-right: 4px;
 }
 
@@ -28345,7 +28345,7 @@ body:not(.shiba-remove-file-icons)
   -webkit-mask-repeat: no-repeat;
   background-color: currentColor;
   height: auto;
-  width: var((--font-size-folder-and-file), 1.0625em);
+  width: var(--font-size-folder-and-file, 1.0625em);
   margin-right: 4px;
 }
 
@@ -28362,7 +28362,7 @@ body:not(.shiba-remove-file-icons)
   -webkit-mask-repeat: no-repeat;
   background-color: currentColor;
   height: auto;
-  width: var((--font-size-folder-and-file), 1.0625em);
+  width: var(--font-size-folder-and-file, 1.0625em);
   margin-right: 4px;
 }
 

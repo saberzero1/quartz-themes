@@ -21535,7 +21535,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  position-anchor: --anchor-cr-text;
+  position-anchor: var(--anchor-cr-text);
   position: absolute;
   right: anchor(left);
   padding: inherit;
@@ -21546,7 +21546,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21558,7 +21558,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21570,7 +21570,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  position-anchor: --anchor-cr-text;
+  position-anchor: var(--anchor-cr-text);
   position: absolute;
   right: anchor(left);
   padding: inherit;
@@ -21581,7 +21581,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21593,7 +21593,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21608,7 +21608,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  position-anchor: --anchor-cr-text;
+  position-anchor: var(--anchor-cr-text);
   position: absolute;
   right: anchor(left);
   padding: inherit;
@@ -21619,7 +21619,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21631,7 +21631,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21643,7 +21643,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  position-anchor: --anchor-cr-text;
+  position-anchor: var(--anchor-cr-text);
   position: absolute;
   right: anchor(left);
   padding: inherit;
@@ -21654,7 +21654,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -21666,7 +21666,7 @@ p:has(> .math-inline) strong {
   font-family: "My Table font", "SF Compact Rounded";
   color: var(--background-primary);
   background: none;
-  anchor-name: --anchor-cr-text;
+  anchor-name: var(--anchor-cr-text);
   float: right;
   text-align: end;
   vertical-align: middle;
@@ -22289,15 +22289,15 @@ p:has(> .math-inline) strong {
 }
 
 .callout[data-callout-metadata~="ref-y-skills"] {
-  anchor-name: --match-skills;
+  anchor-name: var(--match-skills);
 }
 
 .callout[data-callout-metadata~="match-y-skills"] {
-  position-anchor: --match-skills;
+  position-anchor: var(--match-skills);
 }
 
 .callout[data-callout-metadata~="match-iy-skills"] {
-  position-anchor: --match-skills;
+  position-anchor: var(--match-skills);
 }
 
 .callout:is([data-callout-metadata~="cmb-4"]) > .callout-content > .callout {
@@ -22367,7 +22367,7 @@ p:has(> .math-inline) strong {
   p:has(+ ul)
   + ul {
   margin-top: 0px;
-  --el-margin-top: var(0px);
+  --el-margin-top: 0px;
 }
 .callout[data-callout]:has(.callout[data-callout])
   .callout[data-callout="l/section"]
