@@ -357,6 +357,29 @@ function getTheme(dict) {
 }
 
 /**
+ * Fetch CSS rule and replace in the specified file.
+ * @param {string} filePath - The path to the file where the rule should be replaced.
+ * @param {string} ruleSelector - The CSS selector for the rule to be replaced.
+ * @param {string} targetText - The text to be replaced in the file.
+ * @param {string} inputCSS - The CSS string containing the rule declarations.
+ * @throws {Error} If the file cannot be read or written.
+ */
+function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS) {
+  try {
+    // Find the rule declarations for the specified selector
+    const ruleDeclarations = getRuleDeclarations(inputCSS, ruleSelector)
+    if (ruleDeclarations) {
+      // Apply the rule declarations to the specified file
+      replaceInFile(filePath, targetText, ruleDeclarations)
+    } else {
+      throw new Error(`No declarations found for selector: ${ruleSelector}`)
+    }
+  } catch (error) {
+    throw new Error(`Unable to apply rule to file: ${error.message}`)
+  }
+}
+
+/**
  * Get all files under a directory and return them as an array of strings.
  * All file paths are relative to the provided directory path.
  *
@@ -589,10 +612,16 @@ manifestCollection.forEach((manifest) => {
     fs.writeFileSync(atomicFile, result, "utf8")
   }
   const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
-  const rootValue = getRuleDeclarations(themeCSS, ":root")
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//ROOT`, rootValue)
-  const bodyValue = getRuleDeclarations(themeCSS, "body")
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//BODY`, bodyValue)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, ":root", "//ROOT", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "body", "//BODY", themeCSS)
+
+  // Headings
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1", "//H1", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2", "//H2", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3", "//H3", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4", "//H4", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5", "//H5", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6", "//H6", themeCSS)
 })
 
 // _dark.scss and _light.scss
