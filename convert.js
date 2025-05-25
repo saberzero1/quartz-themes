@@ -3,7 +3,8 @@ import {
   combineIdenticalSelectors,
   removeEmptyRules,
   getRuleDeclarations,
-} from "./postcss.mjs"
+} from "./util/postcss.mjs"
+import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -777,6 +778,26 @@ const themeListFileList = []
 
 // Get all directories under themes
 const themeFolders = listFoldersInDirectory(`./themes`)
+
+// Embet @use rules in each theme's _index.scss
+themeFolders.forEach((folder) => {
+  const themePath = `./themes/${folder}/_index.scss`
+  if (fs.existsSync(themePath)) {
+    // Combine all @use rules in the _index.scss file
+    const scssContent = fs.readFileSync(themePath, "utf8")
+    const processedScss = inlineScssUseRulesAndClean(scssContent, themePath)
+    fs.writeFileSync(themePath, processedScss, "utf8")
+    // Remove all directories under themes/${folder}
+    const themeDir = `./themes/${folder}`
+    const items = fs.readdirSync(themeDir)
+    items.forEach((item) => {
+      const itemPath = path.join(themeDir, item)
+      if (fs.statSync(itemPath).isDirectory()) {
+        fs.rmSync(itemPath, { recursive: true })
+      }
+    })
+  }
+})
 
 // Get a list of all files under each theme directory
 themeFolders.forEach((folder) => {
