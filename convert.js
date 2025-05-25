@@ -240,33 +240,6 @@ function findAllMatchesInFile(filePath, regexString) {
   }
 }
 
-/**
- * Finds all occurrences of a pattern in a file using a specified regex string
- * and returns them as a single newline-separated string.
- *
- * @param {string} filePath - The path to the file to search.
- * @param {RegExp} regexString - The regex pattern string to match.
- * @returns {string} A newline-separated string containing all matches found in the file.
- * @throws {Error} If the file cannot be read or if the regex pattern is invalid.
- */
-function findAllMatchesAsString(filePath, regexString) {
-  try {
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    // Create a regular expression object with the global flag to find all matches
-    //const regex = new RegExp(regexString, 'gmsv');
-
-    // Use match to find all matches in the file content
-    const matches = fileContent.match(regexString)
-
-    // Convert the matches array to a newline-separated string (or return an empty string if no matches)
-    return matches ? matches.join("\n") : ""
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
 const themeSettings = readJsonFileAsDictionary(getCurrentFolder(), "themes.json")
 const themes = getValueFromDictionary(themeSettings, "themes")
 
@@ -594,7 +567,7 @@ manifestCollection.forEach((manifest) => {
   })
   extras += `\n@use "callouts/default.scss";`
   extras += `\n@use "callouts/overrides.scss";`
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%EXTRAS%%`, extras)
 })
 manifestCollection.forEach((manifest) => {
   if (args[0] === "ATOMIZE") {
@@ -616,56 +589,56 @@ manifestCollection.forEach((manifest) => {
     fs.writeFileSync(atomicFile, result, "utf8")
   }
   const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, ":root", "//ROOT", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "body", "//BODY", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, ":root", "//%%ROOT%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "body", "//%%BODY%%", themeCSS)
 
   // Heading links
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1 a", "//H1 A", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2 a", "//H2 A", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3 a", "//H3 A", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4 a", "//H4 A", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5 a", "//H5 A", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6 a", "//H6 A", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1 a", "//%%H1 A%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2 a", "//%%H2 A%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3 a", "//%%H3 A%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4 a", "//%%H4 A%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5 a", "//%%H5 A%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6 a", "//%%H6 A%%", themeCSS)
 
   // Headings
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1", "//H1", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2", "//H2", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3", "//H3", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4", "//H4", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5", "//H5", themeCSS)
-  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6", "//H6", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h1", "//%%H1%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h2", "//%%H2%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h3", "//%%H3%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h4", "//%%H4%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h5", "//%%H5%%", themeCSS)
+  applyRuleToFile(`./themes/${getTheme(manifest)}/_index.scss`, "h6", "//%%H6%%", themeCSS)
 
   // Code blocks
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".markdown-rendered pre",
-    "//PRE",
+    "//%%PRE%%",
     themeCSS,
   )
   // inline code
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".markdown-rendered code",
-    "//CODE INLINE",
+    "//%%CODE INLINE%%",
     themeCSS,
   )
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".markdown-rendered pre code",
-    "//CODE",
+    "//%%CODE%%",
     themeCSS,
   )
   // Code copy button
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".markdown-rendered button.copy-code-button:hover",
-    "//CLIPBOARD BUTTON HOVER",
+    "//%%CLIPBOARD BUTTON HOVER%%",
     themeCSS,
   )
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".markdown-rendered button.copy-code-button",
-    "//CLIPBOARD BUTTON",
+    "//%%CLIPBOARD BUTTON%%",
     themeCSS,
   )
 
@@ -673,7 +646,7 @@ manifestCollection.forEach((manifest) => {
   applyRuleToFile(
     `./themes/${getTheme(manifest)}/_index.scss`,
     ".metadata-input-longtext",
-    "//CONTENT META",
+    "//%%CONTENT META%%",
     themeCSS,
     "color",
   )
@@ -685,12 +658,12 @@ manifestCollection.forEach((manifest) => {
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//DARK`, darkValue)
-    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//DARK`, darkValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%DARK%%`, darkValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//%%DARK%%`, darkValue)
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//LIGHT`, lightValue)
-    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//LIGHT`, lightValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%LIGHT%%`, lightValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//%%LIGHT%%`, lightValue)
   }
 
   // Unset color-scheme for single mode themes
@@ -746,24 +719,12 @@ manifestCollection.forEach((manifest) => {
   }
 
   // Remove remaining comments
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    "",
-  )
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\/\/%%[^%]+%%/g, "")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_dark.scss`,
-      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-      "",
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, /\/\/%%[^%]+%%/g, "")
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_light.scss`,
-      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-      "",
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, /\/\/%%[^%]+%%/g, "")
   }
 })
 
