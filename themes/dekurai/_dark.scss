@@ -1,37 +1,21 @@
 :root:root {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: hsl(205, 23%, 10%);
-  --color-base-05: #212121;
-  --color-base-10: hsl(205, 23%, 8%);
-  --color-base-20: hsl(205, 20%, 9%);
-  --color-base-25: hsl(205, 23%, 13%);
-  --color-base-30: hsl(197, 20%, 7%);
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: hsl(210, 5%, 67%);
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --accent-h: 160;
+  --accent-l: 26%;
+  --accent-s: 73%;
+  --background-modifier-border: hsl(240, 5%, 25%);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: hsla(200, 70%, 45%, 0.173);
+  --background-secondary-alt: var(--color-base-30);
+  --blockquote-background-color: unset;
+  --blockquote-border-color: rgb(0, 162, 255);
+  --blockquote-border-thickness: 5px;
+  --blockquote-color: #3eb4bf;
+  --blockquote-font-style: italic;
+  --bold-color: white;
+  --bold-weight: 600;
+  --code-normal: #7095c2;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,55 +27,36 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: hsl(160, 88%, 40%);
-  --interactive-accent: hsl(165, 65%, 25%);
-  --interactive-accent-hover: hsl(165, 65%, 35%);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsl(205, 53%, 17%);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(205, 23%, 10%);
+  --color-base-05: #212121;
+  --color-base-10: hsl(205, 23%, 8%);
+  --color-base-100: #dadada;
+  --color-base-20: hsl(205, 20%, 9%);
+  --color-base-25: hsl(205, 23%, 13%);
+  --color-base-30: hsl(197, 20%, 7%);
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: hsl(210, 5%, 67%);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
   --file-line-width: 100%;
-  --background-modifier-hover: hsla(200, 70%, 45%, 0.173);
-  --titlebar-background: hsl(197, 20%, 7%);
-  --titlebar-background-focused: hsl(197, 20%, 7%);
-  --background-modifier-border: hsl(240, 5%, 25%);
-  --tab-text-color-focused-active-current: hsl(160, 84%, 49%);
-  --link-color: hsl(171, 88%, 38%);
-  --link-color-hover: hsl(171, 95%, 48%);
-  --link-unresolved-color: hsl(171, 88%, 38%);
-  --link-external-color: hsl(171, 88%, 38%);
-  --link-external-color-hover: hsl(171, 95%, 48%);
-  --code-normal: #7095c2;
-  --bold-weight: 600;
-  --bold-color: white;
-  --tag-color: hsl(187, 92%, 48%);
-  --tag-color-hover: hsl(187, 92%, 58%);
-  --tag-background: #228ec31a;
-  --tag-background-hover: #228ec333;
-  --tag-border-color: #228ec326;
-  --tag-border-color-hover: #228ec326;
-  --tag-padding-x: 0.55em;
-  --tag-padding-y: 0.25em;
-  --radius-s: 4px;
-  --radius-m: 8px;
-  --radius-l: 10px;
-  --radius-xl: 16px;
-  --inline-title-color: unset;
   --h1-color: hsl(205, 75%, 60%);
   --h2-color: #34daa5;
   --h3-color: hsl(180, 75%, 55%);
@@ -99,20 +64,55 @@
   --h5-color: hsl(0, 75%, 65%);
   --h6-color: hsl(313, 65%, 65%);
   --heading-formatting: unset;
-  --text-on-accent: rgb(250, 250, 250);
-  --text-accent-hover: hsl(160, 88%, 55%);
-  --accent-h: 160;
-  --accent-s: 73%;
-  --accent-l: 26%;
-  --text-highlight-bg: #075dc7;
+  --highlight-mix-blend-mode: darken;
+  --inline-title-color: unset;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(165, 65%, 25%);
+  --interactive-accent-hover: hsl(165, 65%, 35%);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
+  --link-color: hsl(171, 88%, 38%);
+  --link-color-hover: hsl(171, 95%, 48%);
+  --link-external-color: hsl(171, 88%, 38%);
+  --link-external-color-hover: hsl(171, 95%, 48%);
+  --link-unresolved-color: hsl(171, 88%, 38%);
   --modal-border-color: unset;
-  --blockquote-color: #3eb4bf;
-  --blockquote-background-color: unset;
-  --blockquote-border-thickness: 5px;
-  --blockquote-border-color: rgb(0, 162, 255);
-  --blockquote-font-style: italic;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-collapse-icon-color: #61afef;
+  --nav-collapse-icon-color-collapsed: #61afef;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --radius-l: 10px;
+  --radius-m: 8px;
+  --radius-s: 4px;
+  --radius-xl: 16px;
   --search-match-color: #ffff00;
   --search-match-color-other: #ffff00;
-  --nav-collapse-icon-color-collapsed: #61afef;
-  --nav-collapse-icon-color: #61afef;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-text-color-focused-active-current: hsl(160, 84%, 49%);
+  --tag-background: #228ec31a;
+  --tag-background-hover: #228ec333;
+  --tag-border-color: #228ec326;
+  --tag-border-color-hover: #228ec326;
+  --tag-color: hsl(187, 92%, 48%);
+  --tag-color-hover: hsl(187, 92%, 58%);
+  --tag-padding-x: 0.55em;
+  --tag-padding-y: 0.25em;
+  --text-accent: hsl(160, 88%, 40%);
+  --text-accent-hover: hsl(160, 88%, 55%);
+  --text-highlight-bg: #075dc7;
+  --text-on-accent: rgb(250, 250, 250);
+  --text-selection: hsl(205, 53%, 17%);
+  --titlebar-background: hsl(197, 20%, 7%);
+  --titlebar-background-focused: hsl(197, 20%, 7%);
+  color-scheme: dark;
 }

@@ -1,37 +1,17 @@
 :root[saved-theme="dark"] {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 224, 48, 53;
-  --color-red: #e03035;
-  --color-orange-rgb: 224, 131, 48;
-  --color-orange: #e08330;
-  --color-yellow-rgb: 206, 201, 42;
-  --color-yellow: #cec92a;
-  --color-green-rgb: 47, 206, 42;
-  --color-green: #32ce2d;
-  --color-cyan-rgb: 42, 206, 201;
-  --color-cyan: #2dcec9;
-  --color-blue-rgb: 36, 113, 212;
-  --color-blue: #2471d4;
-  --color-purple-rgb: 131, 48, 224;
-  --color-purple: #9149e4;
-  --color-pink-rgb: 224, 48, 141;
-  --color-pink: #e0308d;
-  --color-base-00: #191919;
-  --color-base-05: #1e1e1e;
-  --color-base-10: #222222;
-  --color-base-20: #313131;
-  --color-base-25: #363636;
-  --color-base-30: #414141;
-  --color-base-35: #4c4c4c;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-active-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-border-focus: var(--color-base-35);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-05);
+  --background-modifier-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-05);
+  --background-secondary-alt: var(--color-base-05);
+  --collapse-icon-color-collapsed: var(--text-faint);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,53 +23,73 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-05);
-  --background-secondary-alt: var(--color-base-05);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: #8a5cf5;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --text-accent-hover: rgba(138, 92, 245, 0.825);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #191919;
+  --color-base-05: #1e1e1e;
+  --color-base-10: #222222;
+  --color-base-100: #dadada;
+  --color-base-20: #313131;
+  --color-base-25: #363636;
+  --color-base-30: #414141;
+  --color-base-35: #4c4c4c;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #2471d4;
+  --color-blue-rgb: 36, 113, 212;
+  --color-cyan: #2dcec9;
+  --color-cyan-rgb: 42, 206, 201;
+  --color-green: #32ce2d;
+  --color-green-rgb: 47, 206, 42;
+  --color-orange: #e08330;
+  --color-orange-rgb: 224, 131, 48;
+  --color-pink: #e0308d;
+  --color-pink-rgb: 224, 48, 141;
+  --color-purple: #9149e4;
+  --color-purple-rgb: 131, 48, 224;
+  --color-red: #e03035;
+  --color-red-rgb: 224, 48, 53;
+  --color-yellow: #cec92a;
+  --color-yellow-rgb: 206, 201, 42;
   --dataview-table-even-bg-color: var(--color-base-10);
   --dataview-table-odd-bg-color: var(--color-base-05);
   --dataview-table-row-hover: var(--color-accent-hsl);
-  --tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.075);
-  --tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
-  --h-transparency: 7%;
   --h-hover-transparency: 20%;
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-05);
-  --background-modifier-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
-  --background-modifier-active-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
-  --background-modifier-border: var(--color-base-25);
-  --background-modifier-border-hover: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-35);
-  --text-highlight-bg-rgb: 236, 235, 0;
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --h-transparency: 7%;
   --h1-color: var(--color-blue);
   --h2-color: var(--color-purple);
   --h3-color: var(--color-pink);
   --h4-color: var(--color-red);
   --h5-color: var(--color-orange);
   --h6-color: var(--color-yellow);
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --link-external-color: #0071e3;
   --link-external-color-hover: #0764c1;
-  --collapse-icon-color-collapsed: var(--text-faint);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.075);
+  --tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+  --text-accent: #8a5cf5;
+  --text-accent-hover: rgba(138, 92, 245, 0.825);
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-highlight-bg-rgb: 236, 235, 0;
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  color-scheme: dark;
 }

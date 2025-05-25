@@ -1,37 +1,24 @@
 :root[saved-theme="dark"] {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-05: #212121;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: var(--black);
+  --background-primary-alt: var(--black-mid);
+  --background-secondary: var(--black-mid);
+  --background-secondary-alt: var(--black-mid);
+  --bar-color: var(--green-darker);
+  --blockquote-border-thickness: 5px;
+  --bold-color: var(--green-forest);
+  --checklist-done-color: var(--grey-dark);
+  --checklist-done-decoration: none;
+  --code-builtin-color: var(--green-bright);
+  --code-comment-color: var(--green-dark);
+  --code-function-color: var(--green-forest);
+  --code-operator-color: var(--green-bright);
+  --code-string-color: var(--green-forest);
+  --code-variable-color: var(--white);
+  --codeblock-background: var(--black-light);
+  --codeblock-color: var(--grey-mid);
   --color-accent: var(--green-bright-bright);
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,67 +30,80 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--black-mid);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--green-bright);
-  --interactive-accent: var(--green-bright);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --hr-thickness: var(--hr-height);
-  --checklist-done-decoration: none;
-  --blockquote-border-thickness: 5px;
-  --file-line-width: var(--line-width);
-  --background-primary: var(--black);
-  --background-secondary: var(--black-mid);
-  --background-primary-alt: var(--black-mid);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
   --divider-color: var(--green-darker);
-  --tab-divider-color: var(--green-darker);
-  --tab-outline-color: var(--green-darker);
-  --bar-color: var(--green-darker);
+  --file-line-width: var(--line-width);
+  --file-title-color: var(--grey);
+  --folder-filter: invert(52%) sepia(95%) saturate(856%) hue-rotate(67deg) brightness(118%)
+    contrast(117%);
+  --folder-title-color: var(--grey);
   --h1-color: var(--green-forest);
   --h2-color: var(--green-forest);
   --h3-color: var(--green-forest);
   --h4-color: var(--green-forest);
   --h5-color: var(--green-forest);
   --h6-color: var(--green-forest);
-  --text-normal: var(--white);
-  --bold-color: var(--green-forest);
-  --underline-line-color: var(--green-bright);
+  --hashtag-background: var(--green-darker);
+  --hashtag-color: var(--green-bright);
   --highlight-color: var(--green-forest);
-  --links-color: var(--green-bright);
-  --checklist-done-color: var(--grey-dark);
+  --highlight-mix-blend-mode: darken;
+  --hr-thickness: var(--hr-height);
   --inline-code-background: #131a16;
   --inline-code-color: var(--green-bright);
-  --codeblock-background: var(--black-light);
-  --codeblock-color: var(--grey-mid);
-  --code-variable-color: var(--white);
-  --code-function-color: var(--green-forest);
-  --code-builtin-color: var(--green-bright);
-  --code-string-color: var(--green-forest);
-  --code-operator-color: var(--green-bright);
-  --code-comment-color: var(--green-dark);
-  --quote-background: var(--black-light);
-  --hashtag-color: var(--green-bright);
-  --hashtag-background: var(--green-darker);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: var(--green-bright);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --link-color: var(--green-bright);
-  --folder-title-color: var(--grey);
-  --file-title-color: var(--grey);
-  --folder-filter: invert(52%) sepia(95%) saturate(856%) hue-rotate(67deg) brightness(118%)
-    contrast(117%);
+  --links-color: var(--green-bright);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --quote-background: var(--black-light);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-divider-color: var(--green-darker);
+  --tab-outline-color: var(--green-darker);
+  --text-accent: var(--green-bright);
+  --text-normal: var(--white);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --underline-line-color: var(--green-bright);
+  color-scheme: dark;
 }
