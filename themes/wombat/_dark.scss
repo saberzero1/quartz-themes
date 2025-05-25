@@ -1,37 +1,20 @@
 :root:root {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-05: #212121;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-border: var(--dark-grey);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: var(--almost-black);
+  --background-primary-alt: var(--almost-black);
+  --background-secondary: var(--dark-grey);
+  --background-secondary-alt: var(--dark-grey);
+  --bold-color: var(--peach-pale);
+  --checkbox-border-color: var(--peach-pale);
+  --checkbox-border-color-hover: var(--peach-pale);
+  --checkbox-color: var(--peach-pale);
+  --checkbox-color-hover: var(--peach-pale);
+  --checklist-done-color: var(--silver);
+  --code-background: var(--dark-grey);
+  --code-normal: var(--peach-pale);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,72 +26,89 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--dark-grey);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--clay);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: var(--peach-pale_30);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --background-primary: var(--almost-black);
-  --background-primary-alt: var(--almost-black);
-  --background-secondary: var(--dark-grey);
-  --background-modifier-border: var(--dark-grey);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
   --cursor-line-background: var(--charcoal-grey);
-  --text-normal: var(--silver);
-  --text-faint: var(--carolina-blue);
-  --text-muted: var(--putty);
+  --graph-line: var(--charcoal-grey);
+  --graph-node: var(--peach-pale);
+  --graph-node-attachment: var(--carolina-blue);
+  --graph-node-tag: var(--light-maroon);
   --h1-color: var(--eggshell);
   --h2-color: var(--eggshell);
   --h3-color: var(--eggshell);
   --h4-color: var(--eggshell);
   --h5-color: var(--eggshell);
   --h6-color: var(--eggshell);
-  --text-highlight-bg: var(--peach-pale_30);
-  --text-highlight-fg: var(--eggshell);
-  --text-accent-hover: var(--eggshell);
-  --tag-color: var(--eggshell);
-  --tag-background: var(--dark-grey);
-  --tag-background-hover: var(--dark-grey);
-  --titlebar-text-color-focused: var(--light-maroon);
+  --highlight-mix-blend-mode: darken;
+  --icon-color-focused: var(--eggshell);
+  --icon-color-hover: var(--light-maroon);
   --inline-title-color: var(--peach-pale);
-  --bold-color: var(--peach-pale);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --italic-color: var(--peach-pale);
-  --checkbox-color: var(--peach-pale);
-  --checkbox-color-hover: var(--peach-pale);
-  --checkbox-border-color: var(--peach-pale);
-  --checkbox-border-color-hover: var(--peach-pale);
-  --checklist-done-color: var(--silver);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-file-tag: var(--peach-pale);
+  --nav-item-color-active: var(--eggshell);
+  --nav-item-color-hover: var(--light-maroon);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-text-color-focused-active: var(--eggshell);
+  --tab-text-color-focused-active-current: var(--light-maroon);
   --table-header-background: var(--peach-pale_10);
   --table-header-background-hover: var(--peach-pale_30);
   --table-row-background: var(--dark-grey);
   --table-row-background-hover: var(--peach-pale_30);
-  --code-normal: var(--peach-pale);
-  --code-background: var(--dark-grey);
-  --icon-color-hover: var(--light-maroon);
-  --icon-color-focused: var(--eggshell);
-  --nav-item-color-hover: var(--light-maroon);
-  --nav-item-color-active: var(--eggshell);
-  --nav-file-tag: var(--peach-pale);
-  --graph-line: var(--charcoal-grey);
-  --graph-node: var(--peach-pale);
-  --graph-node-tag: var(--light-maroon);
-  --graph-node-attachment: var(--carolina-blue);
-  --tab-text-color-focused-active: var(--eggshell);
-  --tab-text-color-focused-active-current: var(--light-maroon);
+  --tag-background: var(--dark-grey);
+  --tag-background-hover: var(--dark-grey);
+  --tag-color: var(--eggshell);
+  --text-accent: var(--clay);
+  --text-accent-hover: var(--eggshell);
+  --text-faint: var(--carolina-blue);
+  --text-highlight-bg: var(--peach-pale_30);
+  --text-highlight-fg: var(--eggshell);
+  --text-muted: var(--putty);
+  --text-normal: var(--silver);
+  --text-selection: var(--peach-pale_30);
+  --titlebar-text-color-focused: var(--light-maroon);
+  color-scheme: dark;
 }

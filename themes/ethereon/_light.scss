@@ -1,37 +1,9 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 226, 224, 226;
-  --mono-rgb-100: 29, 31, 33;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #933942;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #98623b;
-  --color-yellow-rgb: 152, 119, 59;
-  --color-yellow: #98863b;
-  --color-green-rgb: 63, 127, 49;
-  --color-green: #3f7f31;
-  --color-cyan-rgb: var(--color-teal-rgb);
-  --color-cyan: var(--color-teal);
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #687995;
-  --color-purple-rgb: 59, 49, 105;
-  --color-purple: #3b3169;
-  --color-pink-rgb: 117, 46, 92;
-  --color-pink: #752e5c;
-  --color-base-00: #d8d6d8;
-  --color-base-05: #cecdcf;
-  --color-base-10: #c4c3c5;
-  --color-base-20: #b1b0b2;
-  --color-base-25: #a7a6a8;
-  --color-base-30: #9d9c9e;
-  --color-base-35: #939395;
-  --color-base-40: #89898b;
-  --color-base-50: #767678;
-  --color-base-60: #626365;
-  --color-base-70: #4e4f51;
-  --color-base-100: #1d1f21;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-20);
+  --checkbox-border-color-hover: var(--checkbox-color);
+  --checkbox-border-color-unchecked: var(--color-base-50);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -43,28 +15,56 @@
     calc(var(--accent-s) * 1.02),
     calc(var(--accent-l) * 1.15)
   );
-  --background-secondary-alt: var(--color-base-20);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --color-red_rgb: 147, 57, 66;
-  --color-orange_rgb: 152, 98, 59;
-  --color-teal-rgb: 94, 141, 135;
-  --color-teal: #5e8d87;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #d8d6d8;
+  --color-base-05: #cecdcf;
+  --color-base-10: #c4c3c5;
+  --color-base-100: #1d1f21;
+  --color-base-20: #b1b0b2;
+  --color-base-25: #a7a6a8;
+  --color-base-30: #9d9c9e;
+  --color-base-35: #939395;
+  --color-base-40: #89898b;
+  --color-base-50: #767678;
+  --color-base-60: #626365;
+  --color-base-70: #4e4f51;
+  --color-blue: #687995;
   --color-blue_rgb: 104, 121, 149;
-  --checkbox-border-color-unchecked: var(--color-base-50);
-  --checkbox-border-color-hover: var(--checkbox-color);
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: var(--color-teal);
+  --color-cyan-rgb: var(--color-teal-rgb);
+  --color-green: #3f7f31;
+  --color-green-rgb: 63, 127, 49;
+  --color-orange: #98623b;
+  --color-orange_rgb: 152, 98, 59;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #752e5c;
+  --color-pink-rgb: 117, 46, 92;
+  --color-purple: #3b3169;
+  --color-purple-rgb: 59, 49, 105;
+  --color-red: #933942;
+  --color-red_rgb: 147, 57, 66;
+  --color-red-rgb: 233, 49, 71;
+  --color-teal: #5e8d87;
+  --color-teal-rgb: 94, 141, 135;
+  --color-yellow: #98863b;
+  --color-yellow-rgb: 152, 119, 59;
   --h1-weight: 500;
   --h2-weight: 400;
   --h3-weight: 400;
   --h4-weight: 400;
   --h5-weight: 400;
   --h6-weight: 400;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --mono-rgb-0: 226, 224, 226;
+  --mono-rgb-100: 29, 31, 33;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  color-scheme: light;
 }

@@ -1,37 +1,15 @@
 :root[saved-theme="dark"] {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: #000000;
-  --color-base-05: rgb(64, 64, 64);
-  --color-base-10: #050505;
-  --color-base-20: rgb(64, 64, 64);
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --accent-h: 222;
+  --accent-l: 19%;
+  --accent-s: 94%;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(43, 41, 41, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: transparent;
+  --background-secondary-alt: var(--color-base-05);
+  --bg-button-light: rgb(128, 128, 128);
+  --bg-button-shadow: black;
+  --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -43,26 +21,26 @@
     calc(var(--accent-s) * 1.52),
     calc(var(--accent-l) * 1.55)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-05);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(43, 41, 41, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #000000;
+  --color-base-05: rgb(64, 64, 64);
+  --color-base-10: #050505;
+  --color-base-100: #dadada;
+  --color-base-20: rgb(64, 64, 64);
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-opposite-100: #dddddd;
   --color-opposite-25: #1c1c1c;
   --color-opposite-30: #1f1f1f;
   --color-opposite-35: #2b2b2b;
@@ -70,18 +48,40 @@
   --color-opposite-50: #545454;
   --color-opposite-60: #8f8f8f;
   --color-opposite-70: #a3a3a3;
-  --color-opposite-100: #dddddd;
-  --accent-h: 222;
-  --accent-s: 94%;
-  --accent-l: 19%;
-  --bg-button-light: rgb(128, 128, 128);
-  --bg-button-shadow: black;
-  --tooltip-border: rgb(128, 128, 128);
-  --background-modifier-hover: transparent;
-  --system-status-background: var(--background-secondary);
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
   --downicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='4.5' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVQImXXNsRFAUAAE0dOHQAlCgeCHQqUKFSAQasGMPp70G2x4O3PbQP45gw6XNzvaJAkGHJVc0T%2b%2bMGHDgvEziBml3m6nPUz9aFAG8wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
-  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
-  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.062' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQImU3MoRHCQBQE0PdvztEYAolIGQgKoBAEkrJi4yggMxuTY%2b7Lt7u/TJfkg7VN8MUd2gRXXKCfk9uA0Vyxz79bVb3wxjawQ1U9k3QsfzyDR5IdvwPUnB2IEQfd7wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
-  --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --system-status-background: var(--background-secondary);
+  --text-accent: var(--color-accent-1);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --tooltip-border: rgb(128, 128, 128);
+  --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
+  color-scheme: dark;
 }

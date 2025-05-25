@@ -1,37 +1,18 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --active-border-color: rgb(0, 121, 172);
+  --app-model-bg-color: rgba(248, 248, 248, 0.8);
+  --background-modifier-border: rgba(28, 28, 28, 0.09);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-modifier-form-field: rgba(230, 230, 230, 0.5);
+  --background-modifier-hover: rgba(28, 28, 28, 0.1);
+  --background-primary: rgb(248, 248, 248);
+  --background-secondary: rgb(230, 230, 230);
+  --background-secondary-alt: rgba(240, 240, 240, 0.1);
+  --base-d: 0%;
+  --block-border-color: rgba(28, 28, 28, 0.25);
+  --blockquote-border-color: rgba(28, 28, 28, 0.2);
+  --code-background: rgba(28, 28, 28, 0.1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -43,45 +24,64 @@
     calc(var(--accent-s) * 1.02),
     calc(var(--accent-l) * 1.15)
   );
-  --background-secondary-alt: rgba(240, 240, 240, 0.1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-pink-rgb: 213, 57, 132;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --color-yellow-rgb: 224, 172, 0;
+  --divider-color: rgba(0, 0, 0, 0.01);
+  --editor-bg-color: rgba(255, 255, 255, 0.5);
+  --floating-toc-background-color: transparent;
+  --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: rgba(28, 28, 28, 0.05);
+  --indentation-guide-color-active: var(--indentation-guide-color);
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --base-d: 0%;
-  --titlebar-background: rgb(248, 248, 248);
-  --background-primary: rgb(248, 248, 248);
-  --background-secondary: rgb(230, 230, 230);
-  --background-modifier-hover: rgba(28, 28, 28, 0.1);
+  --model-bg-color: rgba(248, 248, 248, 0.5);
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-indentation-guide-color: rgba(28, 28, 28, 0.05);
   --nav-item-background-active: rgba(0, 0, 0, 0.05);
   --nav-item-color-active: var(--text-accent);
-  --background-modifier-border: rgba(28, 28, 28, 0.09);
-  --nav-indentation-guide-color: rgba(28, 28, 28, 0.05);
-  --indentation-guide-color: rgba(28, 28, 28, 0.05);
-  --indentation-guide-color-active: var(--indentation-guide-color);
-  --block-border-color: rgba(28, 28, 28, 0.25);
-  --floating-toc-background-color: transparent;
-  --blockquote-border-color: rgba(28, 28, 28, 0.2);
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
-  --workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
-  --text-color: rgb(10, 10, 10);
-  --active-border-color: rgb(0, 121, 172);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
   --statusbar-bg-color: rgba(248, 248, 248, 0.7);
-  --model-bg-color: rgba(248, 248, 248, 0.5);
-  --app-model-bg-color: rgba(248, 248, 248, 0.8);
-  --editor-bg-color: rgba(255, 255, 255, 0.5);
   --suggestion-bg-color: rgba(248, 248, 248, 0.1);
-  --divider-color: rgba(0, 0, 0, 0.01);
-  --code-background: rgba(28, 28, 28, 0.1);
-  --background-modifier-form-field: rgba(230, 230, 230, 0.5);
+  --text-color: rgb(10, 10, 10);
+  --titlebar-background: rgb(248, 248, 248);
   --win-blur: 40px;
-  --win-window-brightness: 0.6;
   --win-editor-bg-color: rgba(240, 240, 240, 0.65);
+  --win-window-brightness: 0.6;
   --win-window-opacity: 0.2;
+  --workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
+  color-scheme: light;
 }

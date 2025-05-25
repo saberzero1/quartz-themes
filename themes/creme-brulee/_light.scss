@@ -1,37 +1,7 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 194, 87, 87;
-  --color-red: #c25757;
-  --color-orange-rgb: 207, 134, 74;
-  --color-orange: #cf864a;
-  --color-yellow-rgb: 225, 177, 81;
-  --color-yellow: #e1b151;
-  --color-green-rgb: 138, 172, 108;
-  --color-green: #8aac6c;
-  --color-cyan-rgb: 91, 168, 190;
-  --color-cyan: #5ba8be;
-  --color-blue-rgb: 102, 140, 179;
-  --color-blue: #668cb3;
-  --color-purple-rgb: 135, 125, 181;
-  --color-purple: #877db5;
-  --color-pink-rgb: 187, 119, 175;
-  --color-pink: #bb77af;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -43,17 +13,21 @@
     calc(var(--accent-s) * 1.02),
     calc(var(--accent-l) * 1.15)
   );
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-blue: #668cb3;
+  --color-blue-rgb: 102, 140, 179;
   --color-creme-0: white;
   --color-creme-1: hsl(34, 33%, 98%);
   --color-creme-2: hsl(35, 36%, 95%);
@@ -63,8 +37,34 @@
   --color-creme-6: hsl(31, 30%, 50%);
   --color-creme-7: hsl(31, 35%, 40%);
   --color-creme-8: hsl(31, 45%, 20%);
+  --color-creme-fade: hsla(32, 8%, 67%, 0.5);
   --color-creme-gray-1: hsl(35, 20%, 94%);
   --color-creme-gray-2: hsl(35, 20%, 90%);
-  --color-creme-fade: hsla(32, 8%, 67%, 0.5);
+  --color-cyan: #5ba8be;
+  --color-cyan-rgb: 91, 168, 190;
+  --color-green: #8aac6c;
+  --color-green-rgb: 138, 172, 108;
+  --color-orange: #cf864a;
+  --color-orange-rgb: 207, 134, 74;
+  --color-pink: #bb77af;
+  --color-pink-rgb: 187, 119, 175;
+  --color-purple: #877db5;
+  --color-purple-rgb: 135, 125, 181;
+  --color-red: #c25757;
+  --color-red-rgb: 194, 87, 87;
   --color-shadow: hsla(0, 0%, 0%, 0.4);
+  --color-yellow: #e1b151;
+  --color-yellow-rgb: 225, 177, 81;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  color-scheme: light;
 }
