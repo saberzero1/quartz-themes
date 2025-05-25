@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "just-install": "^2.0.2",
-    "postcss": "^8.5.3"
+    "postcss": "^8.5.3",
+    "postcss-scss": "^4.0.9"
   }
 }
