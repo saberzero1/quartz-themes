@@ -1,37 +1,8 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 253, 235, 236;
-  --color-red: rgb(212, 76, 71);
-  --color-orange-rgb: 251, 236, 221;
-  --color-orange: rgb(217, 115, 13);
-  --color-yellow-rgb: 251, 243, 219;
-  --color-yellow: rgb(203, 145, 47);
-  --color-green-rgb: 237, 243, 236;
-  --color-green: rgb(68, 131, 97);
-  --color-cyan-rgb: 231, 243, 248;
-  --color-cyan: rgb(51, 126, 169);
-  --color-blue-rgb: 231, 243, 248;
-  --color-blue: rgb(51, 126, 169);
-  --color-purple-rgb: 244, 240, 247, 0.8;
-  --color-purple: rgb(144, 101, 176);
-  --color-pink-rgb: 249, 238, 243, 0.8;
-  --color-pink: rgb(193, 76, 138);
-  --color-base-00: hsl(0, 0%, 100%);
-  --color-base-05: #fbfbfa;
-  --color-base-10: #fbfbfa;
-  --color-base-20: #fbfbfa;
-  --color-base-25: #e1e1e1;
-  --color-base-30: #dfdfdf;
-  --color-base-35: #f1f1f0;
-  --color-base-40: #afafaf;
-  --color-base-50: #a3a29e;
-  --color-base-60: #7b7b7b;
-  --color-base-70: #737272;
-  --color-base-100: #37352f;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-modifier-hover: hsl(60, 3%, 0%, 4%);
+  --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -43,31 +14,60 @@
     calc(var(--accent-s) * 1.02),
     calc(var(--accent-l) * 1.15)
   );
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(0, 0%, 100%);
+  --color-base-05: #fbfbfa;
+  --color-base-10: #fbfbfa;
+  --color-base-100: #37352f;
+  --color-base-20: #fbfbfa;
+  --color-base-25: #e1e1e1;
+  --color-base-30: #dfdfdf;
+  --color-base-35: #f1f1f0;
+  --color-base-40: #afafaf;
+  --color-base-50: #a3a29e;
+  --color-base-60: #7b7b7b;
+  --color-base-70: #737272;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 231, 243, 248;
+  --color-brown: rgb(159, 107, 83);
+  --color-brown-rgb: 244, 238, 238;
+  --color-cyan: rgb(51, 126, 169);
+  --color-cyan-rgb: 231, 243, 248;
+  --color-gray: rgb(120, 119, 116);
+  --color-gray-rgb: 241, 241, 239;
+  --color-green: rgb(68, 131, 97);
+  --color-green-rgb: 237, 243, 236;
+  --color-orange: rgb(217, 115, 13);
+  --color-orange-rgb: 251, 236, 221;
+  --color-pink: rgb(193, 76, 138);
+  --color-pink-rgb: 249, 238, 243, 0.8;
+  --color-purple: rgb(144, 101, 176);
+  --color-purple-rgb: 244, 240, 247, 0.8;
+  --color-red: rgb(212, 76, 71);
+  --color-red-rgb: 253, 235, 236;
+  --color-yellow: rgb(203, 145, 47);
+  --color-yellow-rgb: 251, 243, 219;
+  --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --color-gray-rgb: 241, 241, 239;
-  --color-gray: rgb(120, 119, 116);
-  --color-brown-rgb: 244, 238, 238;
-  --color-brown: rgb(159, 107, 83);
-  --background-modifier-hover: hsl(60, 3%, 0%, 4%);
-  --text-highlight-bg: var(--tag-1-default);
-  --tag-6-default: rgb(255, 226, 221);
-  --tag-7-default: rgb(250, 222, 201);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
   --tag-1-default: rgb(253, 236, 200);
+  --tag-10-default: rgb(227, 226, 224, 0.5);
   --tag-2-default: rgb(219, 237, 219);
   --tag-3-default: rgb(211, 229, 239);
   --tag-4-default: rgb(232, 222, 238);
   --tag-5-default: rgb(245, 224, 233);
+  --tag-6-default: rgb(255, 226, 221);
+  --tag-7-default: rgb(250, 222, 201);
   --tag-8-default: rgb(238, 224, 218);
   --tag-9-default: rgb(227, 226, 224);
-  --tag-10-default: rgb(227, 226, 224, 0.5);
+  --text-highlight-bg: var(--tag-1-default);
+  color-scheme: light;
 }

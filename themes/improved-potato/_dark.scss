@@ -1,37 +1,8 @@
 :root[saved-theme="dark"] {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 192, 60, 64;
-  --color-red: #c03c40;
-  --color-orange-rgb: 168, 111, 50;
-  --color-orange: #a86f32;
-  --color-yellow-rgb: 141, 139, 29;
-  --color-yellow: #8d8b1d;
-  --color-green-rgb: 51, 165, 85;
-  --color-green: #33a555;
-  --color-cyan-rgb: 51, 150, 148;
-  --color-cyan: rgb(51, 150, 148);
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 16135, 110, 196;
-  --color-purple: #876ec4;
-  --color-pink-rgb: 175, 96, 138;
-  --color-pink: #af608a;
-  --color-base-00: #171b21;
-  --color-base-05: #212121;
-  --color-base-10: #262c36;
-  --color-base-20: #262c36;
-  --color-base-25: #303845;
-  --color-base-30: #455063;
-  --color-base-35: #546178;
-  --color-base-40: #647590;
-  --color-base-50: #7b89a3;
-  --color-base-60: #939fb4;
-  --color-base-70: #aeb7c7;
-  --color-base-100: #ccd2db;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,28 +14,57 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #171b21;
+  --color-base-05: #212121;
+  --color-base-10: #262c36;
+  --color-base-100: #ccd2db;
+  --color-base-20: #262c36;
+  --color-base-25: #303845;
+  --color-base-30: #455063;
+  --color-base-35: #546178;
+  --color-base-40: #647590;
+  --color-base-50: #7b89a3;
+  --color-base-60: #939fb4;
+  --color-base-70: #aeb7c7;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: rgb(51, 150, 148);
+  --color-cyan-rgb: 51, 150, 148;
+  --color-green: #33a555;
+  --color-green-rgb: 51, 165, 85;
+  --color-orange: #a86f32;
+  --color-orange-rgb: 168, 111, 50;
+  --color-pink: #af608a;
+  --color-pink-rgb: 175, 96, 138;
+  --color-purple: #876ec4;
+  --color-purple-rgb: 16135, 110, 196;
+  --color-red: #c03c40;
+  --color-red-rgb: 192, 60, 64;
+  --color-yellow: #8d8b1d;
+  --color-yellow-rgb: 141, 139, 29;
+  --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
+  --line-number-color: var(--color-base-50);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: var(--color-base-25);
-  --line-number-color: var(--color-base-50);
+  color-scheme: dark;
 }
