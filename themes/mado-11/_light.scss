@@ -1,29 +1,48 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: hsla(365, 85%, 55%, 1);
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-05);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 0),
+    calc(var(--accent-s) - 0%),
+    calc(var(--accent-l) + 10%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 0),
+    calc(var(--accent-s) - 0%),
+    calc(var(--accent-l) - 5%)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: hsla(
     calc(var(--bgcolor-h) - 0),
     calc(var(--bgcolor-s) - 0%),
     calc(var(--bgcolor-l) - 0%),
     1
+  );
+  --color-base-00-0: hsla(
+    calc(var(--bgcolor-h) - 27),
+    calc(var(--bgcolor-s) - 12%),
+    calc(var(--bgcolor-l) + 2%),
+    1
+  );
+  --color-base-00-0-trans: hsla(
+    calc(var(--bgcolor-h) - 20),
+    calc(var(--bgcolor-s) - 12%),
+    calc(var(--bgcolor-l) + 2%),
+    0.5
+  );
+  --color-base-00-trans: hsla(
+    calc(var(--bgcolor-h) - 0),
+    calc(var(--bgcolor-s) - 0%),
+    calc(var(--bgcolor-l) - 0%),
+    0.5
+  );
+  --color-base-00-trans-alt: hsla(
+    calc(var(--bgcolor-h) - 0),
+    calc(var(--bgcolor-s) - 35%),
+    calc(var(--bgcolor-l) - 7%),
+    0.8
   );
   --color-base-05: hsla(
     calc(var(--bgcolor-h) + 3),
@@ -37,65 +56,11 @@
     calc(var(--bgcolor-l) - 4%),
     1
   );
+  --color-base-100: hsla(0, 0%, 13%, 1);
   --color-base-20: hsla(
     calc(var(--bgcolor-h) + 9),
     calc(var(--bgcolor-s) - 0%),
     calc(var(--bgcolor-l) - 2%),
-    1
-  );
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: hsla(210, 15%, 73%, 1);
-  --color-base-40: #bdbdbd;
-  --color-base-50: hsla(217, 15%, 73%, 1);
-  --color-base-60: #707070;
-  --color-base-70: hsla(218, 19%, 39%, 1);
-  --color-base-100: hsla(0, 0%, 13%, 1);
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 0),
-    calc(var(--accent-s) - 0%),
-    calc(var(--accent-l) + 10%)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 0),
-    calc(var(--accent-s) - 0%),
-    calc(var(--accent-l) - 5%)
-  );
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --color-base-00-trans: hsla(
-    calc(var(--bgcolor-h) - 0),
-    calc(var(--bgcolor-s) - 0%),
-    calc(var(--bgcolor-l) - 0%),
-    0.5
-  );
-  --color-base-00-trans-alt: hsla(
-    calc(var(--bgcolor-h) - 0),
-    calc(var(--bgcolor-s) - 35%),
-    calc(var(--bgcolor-l) - 7%),
-    0.8
-  );
-  --color-base-20-trans: hsla(
-    calc(var(--bgcolor-h) + 6),
-    calc(var(--bgcolor-s) - 8%),
-    calc(var(--bgcolor-l) - 2%),
-    0.5
-  );
-  --color-base-00-0: hsla(
-    calc(var(--bgcolor-h) - 27),
-    calc(var(--bgcolor-s) - 12%),
-    calc(var(--bgcolor-l) + 2%),
     1
   );
   --color-base-20-0: hsla(
@@ -104,16 +69,51 @@
     calc(var(--bgcolor-l) - 7%),
     0.1
   );
-  --color-base-00-0-trans: hsla(
-    calc(var(--bgcolor-h) - 20),
-    calc(var(--bgcolor-s) - 12%),
-    calc(var(--bgcolor-l) + 2%),
+  --color-base-20-trans: hsla(
+    calc(var(--bgcolor-h) + 6),
+    calc(var(--bgcolor-s) - 8%),
+    calc(var(--bgcolor-l) - 2%),
     0.5
   );
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: hsla(210, 15%, 73%, 1);
+  --color-base-40: #bdbdbd;
+  --color-base-50: hsla(217, 15%, 73%, 1);
+  --color-base-60: #707070;
+  --color-base-70: hsla(218, 19%, 39%, 1);
+  --color-base-hover: var(--color-base-shadow-hover);
   --color-base-shadow: hsla(212, 17%, 80%, 0.2);
   --color-base-shadow-hover: hsla(212, 17%, 80%, 0.3);
-  --color-base-hover: var(--color-base-shadow-hover);
-  --color-muted: var(--color-base-70);
-  --color-italic: hsla(215, 43%, 63%, 1);
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
   --color-highlight: var(--text-normal);
+  --color-italic: hsla(215, 43%, 63%, 1);
+  --color-muted: var(--color-base-70);
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-pink-rgb: 213, 57, 132;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: hsla(365, 85%, 55%, 1);
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --color-yellow-rgb: 224, 172, 0;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  color-scheme: light;
 }

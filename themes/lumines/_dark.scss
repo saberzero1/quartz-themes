@@ -1,37 +1,12 @@
 :root[saved-theme="dark"] {
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow-rgb: 224, 222, 113;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink-rgb: 250, 153, 205;
-  --color-pink: #fa99cd;
-  --color-base-00: rgb(10, 10, 10);
-  --color-base-05: #212121;
-  --color-base-10: rgb(13, 13, 13);
-  --color-base-20: rgb(16, 16, 16);
-  --color-base-25: rgb(19, 19, 19);
-  --color-base-30: rgb(22, 22, 22);
-  --color-base-35: rgb(25, 25, 25);
-  --color-base-40: rgb(28, 28, 28);
-  --color-base-50: rgb(64, 64, 64);
-  --color-base-60: rgb(130, 130, 130);
-  --color-base-70: rgb(220, 220, 220);
-  --color-base-100: rgb(220, 220, 220);
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --active-bg: var(--nav-item-background-active);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: rgb(10, 10, 10);
+  --background-primary-alt: rgb(30, 30, 30);
+  --background-secondary: rgb(30, 30, 30);
+  --background-secondary-alt: rgb(22, 22, 22);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -43,37 +18,62 @@
     calc(var(--accent-s) * 1.05),
     calc(var(--accent-l) * 1.29)
   );
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: rgb(22, 22, 22);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --background-secondary: rgb(30, 30, 30);
-  --background-primary: rgb(10, 10, 10);
-  --background-primary-alt: rgb(30, 30, 30);
-  --active-bg: var(--nav-item-background-active);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: rgb(10, 10, 10);
+  --color-base-05: #212121;
+  --color-base-10: rgb(13, 13, 13);
+  --color-base-100: rgb(220, 220, 220);
+  --color-base-20: rgb(16, 16, 16);
+  --color-base-25: rgb(19, 19, 19);
+  --color-base-30: rgb(22, 22, 22);
+  --color-base-35: rgb(25, 25, 25);
+  --color-base-40: rgb(28, 28, 28);
+  --color-base-45: rgb(61, 61, 61);
+  --color-base-50: rgb(64, 64, 64);
+  --color-base-60: rgb(130, 130, 130);
+  --color-base-70: rgb(220, 220, 220);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
   --h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--color-000) 0%);
   --h2-color: color-mix(in srgb, var(--color-accent) 80%, var(--color-000) 20%);
   --h3-color: color-mix(in srgb, var(--color-accent) 60%, var(--color-000) 40%);
   --h4-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-000) 60%);
   --h5-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-000) 80%);
   --h6-color: color-mix(in srgb, var(--color-accent) 0%, var(--color-000) 100%);
-  --color-base-45: rgb(61, 61, 61);
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  color-scheme: dark;
 }

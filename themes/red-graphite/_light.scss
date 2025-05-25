@@ -1,24 +1,31 @@
 :root[saved-theme="light"] {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
+  --accent-h: var(--red-graphite-accent-color-h);
+  --accent-l: var(--red-graphite-accent-color-l);
+  --accent-s: var(--red-graphite-accent-color-s);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-25);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-primary: var(--color-base-20);
+  --background-primary-alt: var(--color-base-00);
+  --background-secondary: var(--color-base-100);
+  --background-secondary-alt: var(--color-base-05);
+  --code-block-border-color: var(--color-base-40);
+  --code-block-border-style: solid;
+  --code-block-border-width: 1px;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
@@ -34,10 +41,120 @@
     var(--theme-base-color-s),
     calc(var(--theme-base-color-l) + 90%)
   );
+  --color-base-100: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    var(--theme-base-color-l)
+  );
+  --color-base-105: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 5%)
+  );
+  --color-base-110: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 10%)
+  );
+  --color-base-115: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 15%)
+  );
+  --color-base-120: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 20%)
+  );
+  --color-base-125: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 25%)
+  );
+  --color-base-130: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 30%)
+  );
+  --color-base-135: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 35%)
+  );
+  --color-base-140: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 40%)
+  );
+  --color-base-145: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 45%)
+  );
+  --color-base-15: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 85%)
+  );
+  --color-base-150: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 50%)
+  );
+  --color-base-155: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 55%)
+  );
+  --color-base-160: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 60%)
+  );
+  --color-base-165: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 65%)
+  );
+  --color-base-170: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 70%)
+  );
+  --color-base-175: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 75%)
+  );
+  --color-base-180: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 80%)
+  );
+  --color-base-185: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 85%)
+  );
+  --color-base-190: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 90%)
+  );
+  --color-base-195: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 95%)
+  );
   --color-base-20: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
     calc(var(--theme-base-color-l) + 80%)
+  );
+  --color-base-200: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) - 100%)
   );
   --color-base-25: hsl(
     var(--theme-base-color-h),
@@ -59,256 +176,139 @@
     var(--theme-base-color-s),
     calc(var(--theme-base-color-l) + 60%)
   );
+  --color-base-45: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 55%)
+  );
   --color-base-50: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
     calc(var(--theme-base-color-l) + 50%)
-  );
-  --color-base-60: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 40%)
-  );
-  --color-base-70: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 30%)
-  );
-  --color-base-100: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    var(--theme-base-color-l)
-  );
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --red-graphite-accent-color-h: 2;
-  --red-graphite-accent-color-s: 56%;
-  --red-graphite-accent-color-l: 54%;
-  --accent-h: var(--red-graphite-accent-color-h);
-  --accent-s: var(--red-graphite-accent-color-s);
-  --accent-l: var(--red-graphite-accent-color-l);
-  --red-graphite-base-color-h: 204;
-  --red-graphite-base-color-s: 6%;
-  --red-graphite-base-color-l: 17%;
-  --theme-base-color-h: var(--red-graphite-base-color-h);
-  --theme-base-color-s: var(--red-graphite-base-color-s);
-  --theme-base-color-l: var(--red-graphite-base-color-l);
-  --color-base-200: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 100%)
-  );
-  --color-base-195: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 95%)
-  );
-  --color-base-190: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 90%)
-  );
-  --color-base-185: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 85%)
-  );
-  --color-base-180: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 80%)
-  );
-  --color-base-175: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 75%)
-  );
-  --color-base-170: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 70%)
-  );
-  --color-base-165: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 65%)
-  );
-  --color-base-160: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 60%)
-  );
-  --color-base-155: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 55%)
-  );
-  --color-base-150: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 50%)
-  );
-  --color-base-145: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 45%)
-  );
-  --color-base-140: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 40%)
-  );
-  --color-base-135: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 35%)
-  );
-  --color-base-130: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 30%)
-  );
-  --color-base-125: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 25%)
-  );
-  --color-base-120: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 20%)
-  );
-  --color-base-115: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 15%)
-  );
-  --color-base-110: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 10%)
-  );
-  --color-base-105: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) - 5%)
-  );
-  --color-base-95: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 5%)
-  );
-  --color-base-90: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 10%)
-  );
-  --color-base-85: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 15%)
-  );
-  --color-base-80: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 20%)
-  );
-  --color-base-75: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 25%)
-  );
-  --color-base-65: hsl(
-    var(--theme-base-color-h),
-    var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 35%)
   );
   --color-base-55: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
     calc(var(--theme-base-color-l) + 45%)
   );
-  --color-base-45: hsl(
+  --color-base-60: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 55%)
+    calc(var(--theme-base-color-l) + 40%)
   );
-  --color-base-15: hsl(
+  --color-base-65: hsl(
     var(--theme-base-color-h),
     var(--theme-base-color-s),
-    calc(var(--theme-base-color-l) + 85%)
+    calc(var(--theme-base-color-l) + 35%)
   );
-  --background-primary: var(--color-base-20);
-  --background-primary-alt: var(--color-base-00);
-  --background-secondary: var(--color-base-100);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-25);
-  --code-block-border-width: 1px;
-  --code-block-border-style: solid;
-  --code-block-border-color: var(--color-base-40);
-  --nav-item-size: var(--font-small);
-  --nav-item-color: var(--color-base-40);
-  --nav-item-color-hover: var(--color-base-00);
-  --nav-item-color-active: var(--color-base-00);
-  --nav-item-color-selected: var(--color-base-00);
-  --nav-item-background-hover: var(--interactive-accent);
-  --nav-item-background-active: var(--interactive-accent);
-  --nav-indentation-guide-color: var(--color-base-90);
-  --nav-collapse-icon-color: var(--color-accent);
-  --nav-collapse-icon-color-collapsed: var(--color-accent);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --color-base-70: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 30%)
+  );
+  --color-base-75: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 25%)
+  );
+  --color-base-80: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 20%)
+  );
+  --color-base-85: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 15%)
+  );
+  --color-base-90: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 10%)
+  );
+  --color-base-95: hsl(
+    var(--theme-base-color-h),
+    var(--theme-base-color-s),
+    calc(var(--theme-base-color-l) + 5%)
+  );
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-pink-rgb: 213, 57, 132;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-text-heading: var(--nav-item-color);
+  --color-text-title: var(--nav-item-color);
+  --color-yellow: #e0ac00;
+  --color-yellow-rgb: 224, 172, 0;
+  --highlight-mix-blend-mode: darken;
   --icon-color: var(--color-base-60);
-  --icon-color-hover: var(--color-accent);
   --icon-color-active: var(--color-accent);
   --icon-color-focused: var(--color-accent);
-  --list-marker-color: var(--color-accent);
-  --vault-profile-color: var(--nav-item-color);
-  --ribbon-background: var(--color-base-95);
-  --ribbon-background-collapsed: var(--color-base-95);
-  --table-border-color: var(--color-base-50);
-  --table-header-border-color: var(--color-base-50);
-  --table-header-background: var(--color-base-30);
-  --table-header-background-hover: var(--color-base-30);
-  --table-header-color: var(--color-base-100);
-  --tab-outline-color: var(--color-base-60);
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-60);
-  --text-on-accent: var(--color-base-00);
-  --text-error: var(--color-red);
-  --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --interactive-normal: var(--color-base-00);
+  --icon-color-hover: var(--color-accent);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --interactive-hover: var(--color-base-00);
-  --color-text-title: var(--nav-item-color);
-  --color-text-heading: var(--nav-item-color);
-  --vault-name-font-size: var(--font-ui-medium);
-  --vault-name-font-weight: var(--font-medium);
-  --vault-name-color: var(--color-accent);
+  --interactive-normal: var(--color-base-00);
+  --list-marker-color: var(--color-accent);
   --mk-ui-border: var(--color-base-90);
   --mk-ui-text-secondary: var(--color-base-40);
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-collapse-icon-color: var(--color-accent);
+  --nav-collapse-icon-color-collapsed: var(--color-accent);
+  --nav-indentation-guide-color: var(--color-base-90);
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-background-hover: var(--interactive-accent);
+  --nav-item-color: var(--color-base-40);
+  --nav-item-color-active: var(--color-base-00);
+  --nav-item-color-hover: var(--color-base-00);
+  --nav-item-color-selected: var(--color-base-00);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-size: var(--font-small);
+  --red-graphite-accent-color-h: 2;
+  --red-graphite-accent-color-l: 54%;
+  --red-graphite-accent-color-s: 56%;
+  --red-graphite-base-color-h: 204;
+  --red-graphite-base-color-l: 17%;
+  --red-graphite-base-color-s: 6%;
+  --ribbon-background: var(--color-base-95);
+  --ribbon-background-collapsed: var(--color-base-95);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tab-outline-color: var(--color-base-60);
+  --table-border-color: var(--color-base-50);
+  --table-header-background: var(--color-base-30);
+  --table-header-background-hover: var(--color-base-30);
+  --table-header-border-color: var(--color-base-50);
+  --table-header-color: var(--color-base-100);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --text-error: var(--color-red);
+  --text-faint: var(--color-base-60);
+  --text-muted: var(--color-base-70);
+  --text-normal: var(--color-base-100);
+  --text-on-accent: var(--color-base-00);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-success: var(--color-green);
+  --theme-base-color-h: var(--red-graphite-base-color-h);
+  --theme-base-color-l: var(--red-graphite-base-color-l);
+  --theme-base-color-s: var(--red-graphite-base-color-s);
+  --vault-name-color: var(--color-accent);
+  --vault-name-font-size: var(--font-ui-medium);
+  --vault-name-font-weight: var(--font-medium);
+  --vault-profile-color: var(--nav-item-color);
+  color-scheme: light;
 }
