@@ -7,38 +7,39 @@ import * as postcss from "postcss"
  * @returns {string} The transformed CSS string with split rules.
  */
 export function splitCombinedRules(cssString) {
-  // Parse the CSS string into an AST
   const root = postcss.parse(cssString)
 
-  // Walk through each rule in the AST
-  root.walkRules((rule) => {
-    // rule.selectors is an array of selectors for this rule.
-    // e.g., for "h1, h2 { color: red; }", rule.selectors would be ["h1", "h2"]
-    if (rule.selectors && rule.selectors.length > 1) {
-      const originalRule = rule
-      const parent = originalRule.parent // The parent node (root or an at-rule)
+  root.walkRules((originalRule) => {
+    if (originalRule.selectors && originalRule.selectors.length > 1) {
+      const parent = originalRule.parent
       const newRules = []
 
-      // For each individual selector, create a new rule
+      // 1. Extract all declaration nodes from the original rule and clone them.
+      const declarationsToUse = []
+      originalRule.walkDecls((decl) => {
+        declarationsToUse.push(decl.clone())
+      })
+
+      // 2. Sort these cloned declarations.
+      declarationsToUse.sort(compareDeclarations)
+
+      // 3. For each individual selector, create a new rule
+      //    and append the sorted, cloned declarations.
       originalRule.selectors.forEach((selector) => {
         const newRule = postcss.rule({ selector: selector.trim() })
-
-        // Clone the declarations from the original rule to the new rule
-        originalRule.nodes.forEach((decl) => {
-          newRule.append(decl.clone()) // Essential to clone nodes
+        declarationsToUse.forEach((sortedDecl) => {
+          newRule.append(sortedDecl.clone()) // Clone again for each new rule
         })
         newRules.push(newRule)
       })
 
-      // Replace the original combined rule with the new individual rules
       newRules.forEach((newRule) => {
         parent.insertBefore(originalRule, newRule)
       })
-      originalRule.remove() // Remove the original combined rule
+      originalRule.remove()
     }
   })
 
-  // Convert the modified AST back to a CSS string
   return root.toString()
 }
 
@@ -55,72 +56,51 @@ export function splitCombinedRules(cssString) {
  */
 export function combineIdenticalSelectors(cssString) {
   const root = postcss.parse(cssString)
-
-  // This map will store:
-  // selectorString -> {
-  //   declarations: Map<property, value>,
-  //   firstRuleNode: postcss.Rule (the first AST node encountered for this selector)
-  // }
   const mergedRulesData = new Map()
-
-  // This array will store rule nodes that are duplicates and should be removed later.
   const rulesToRemove = []
 
-  // First pass: Walk through all rules to collect declarations and identify duplicates.
   root.walkRules((currentRule) => {
-    const selector = currentRule.selector // e.g., "h1", "p .class"
+    const selector = currentRule.selector
 
     if (mergedRulesData.has(selector)) {
-      // This selector has been seen before. Merge its declarations.
       const existingData = mergedRulesData.get(selector)
-
-      // Add/update declarations from the currentRule into the existingData.declarations.
-      // The Map.set method naturally handles the "last one wins" for conflicting properties.
       currentRule.walkDecls((decl) => {
-        existingData.declarations.set(decl.prop, decl.value)
+        existingData.declarations.set(decl.prop, decl.value) // Last one wins
       })
-
-      // Mark this currentRule for removal, as its content is being merged
-      // into the firstRuleNode associated with this selector.
       rulesToRemove.push(currentRule)
     } else {
-      // This is the first time we're seeing this selector.
-      // Store its declarations and a reference to its AST node.
       const declarations = new Map()
       currentRule.walkDecls((decl) => {
         declarations.set(decl.prop, decl.value)
       })
-
       mergedRulesData.set(selector, {
         declarations,
-        firstRuleNode: currentRule, // This is the rule node we'll keep and modify
+        firstRuleNode: currentRule,
       })
     }
   })
 
-  // Second pass: Modify the AST.
-  // Update the 'firstRuleNode' for each selector with the final merged declarations.
   mergedRulesData.forEach(({ declarations, firstRuleNode }) => {
-    // Remove all existing declarations from the rule node we're keeping.
-    // This is to ensure a clean slate before adding the merged declarations.
-    firstRuleNode.removeAll()
+    firstRuleNode.removeAll() // Clear existing content
 
-    // Add the merged declarations back to the firstRuleNode.
-    // The order of declarations will be based on the insertion order into the Map.
+    const declObjectsArray = []
     declarations.forEach((value, prop) => {
-      firstRuleNode.append(postcss.decl({ prop, value }))
+      declObjectsArray.push(postcss.decl({ prop, value }))
+    })
+
+    declObjectsArray.sort(compareDeclarations) // Sort the final declarations
+
+    declObjectsArray.forEach((decl) => {
+      firstRuleNode.append(decl)
     })
   })
 
-  // Remove all the rule nodes that were marked as duplicates.
   rulesToRemove.forEach((rule) => {
     if (rule.parent) {
-      // Ensure the rule still has a parent before trying to remove
       rule.remove()
     }
   })
 
-  // Convert the modified AST back to a CSS string.
   return root.toString()
 }
 
@@ -197,41 +177,67 @@ export function getRuleDeclarations(cssString, targetSelector, propertyName = nu
   const root = postcss.parse(cssString)
   let foundRuleNode = null
 
-  // Find the rule that matches the targetSelector
   root.walkRules((rule) => {
     if (rule.selector === targetSelector) {
       foundRuleNode = rule
-      return false // Stop walking once the rule is found
+      return false
     }
   })
 
   if (!foundRuleNode) {
-    return null // Rule with the given selector not found
+    return null
   }
 
   if (propertyName) {
-    // User wants a specific property
     let specificDeclString = null
     foundRuleNode.walkDecls((decl) => {
       if (decl.prop === propertyName) {
-        // Format as "  property: value;"
         specificDeclString = `  ${decl.prop}: ${decl.value};`
-        return false // Stop walking declarations once the property is found
+        return false
       }
     })
-    return specificDeclString // null if the property was not found in this rule
+    return specificDeclString
   } else {
-    // User wants all declarations in the rule
-    const declarations = []
+    const declObjects = []
     foundRuleNode.walkDecls((decl) => {
-      // Format as "  property: value;"
-      declarations.push(`  ${decl.prop}: ${decl.value};`)
+      declObjects.push(decl) // Store actual declaration objects
     })
 
-    if (declarations.length === 0) {
-      // Rule exists but has no declarations (e.g., h1 {})
-      return ""
+    if (declObjects.length === 0) {
+      return "" // Rule exists but has no declarations
     }
-    return declarations.join("\n")
+
+    declObjects.sort(compareDeclarations) // Sort the declaration objects
+
+    const formattedDeclarations = declObjects.map((decl) => `  ${decl.prop}: ${decl.value};`)
+    return formattedDeclarations.join("\n")
   }
+}
+
+/**
+ * Comparator function for sorting PostCSS declaration objects.
+ * - Custom properties (starting with '--') come before standard properties.
+ * - Within each group, properties are sorted alphabetically.
+ *
+ * @param {postcss.Declaration} declA - The first declaration object.
+ * @param {postcss.Declaration} declB - The second declaration object.
+ * @returns {number} - A negative value if declA comes before declB,
+ *                   a positive value if declA comes after declB, or 0 if equal.
+ */
+function compareDeclarations(declA, declB) {
+  const propA = declA.prop
+  const propB = declB.prop
+
+  const isCustomA = propA.startsWith("--")
+  const isCustomB = propB.startsWith("--")
+
+  if (isCustomA && !isCustomB) {
+    return -1 // Custom properties come first
+  }
+  if (!isCustomA && isCustomB) {
+    return 1 // Standard properties come after custom
+  }
+
+  // If both are custom or both are standard, sort alphabetically
+  return propA.localeCompare(propB)
 }

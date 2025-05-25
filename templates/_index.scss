@@ -5,20 +5,20 @@
 @use "sass:list";
 @use "sass:color";
 
-//EXTRAS
+//%%EXTRAS%%
 
 :root {
-  //ROOT
+  //%%ROOT%%
 }
 
 body {
-  //BODY
+  //%%BODY%%
 }
 
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  //DARK
+  //%%DARK%%
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -34,7 +34,7 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  //LIGHT
+  //%%LIGHT%%
 
   code[data-theme*=" "] {
     color: var(--shiki-light);
@@ -201,56 +201,56 @@ body {
 
   /* HEADINGS */
   h1 {
-    //H1
+    //%%H1%%
   }
   h1 a {
-    //H1 A
+    //%%H1 A%%
   }
   h2 {
-    //H2
+    //%%H2%%
   }
   h2 a {
-    //H2 A
+    //%%H2 A%%
   }
   h3 {
-    //H3
+    //%%H3%%
   }
   h3 a {
-    //H3 A
+    //%%H3 A%%
   }
   h4 {
-    //H4
+    //%%H4%%
   }
   h4 a {
-    //H4 A
+    //%%H4 A%%
   }
   h5 {
-    //H5
+    //%%H5%%
   }
   h5 a {
-    //H5 A
+    //%%H5 A%%
   }
   h6 {
-    //H6
+    //%%H6%%
   }
   h6 a {
-    //H6 A
+    //%%H6 A%%
   }
 
   /* CODE */
   pre {
-    //PRE
+    //%%PRE%%
     & > code {
-      //CODE
+      //%%CODE%%
     }
   }
   code {
-    //CODE INLINE
+    //%%CODE INLINE%%
   }
   .clipboard-button {
-    //CLIPBOARD BUTTON
+    //%%CLIPBOARD BUTTON%%
     &:hover {
-      //CLIPBOARD BUTTON HOVER
+      //%%CLIPBOARD BUTTON HOVER%%
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -259,7 +259,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    //CONTENT META
+    //%%CONTENT META%%
   }
 
   /* EXPLORER, TOC, BACKLINKS */
