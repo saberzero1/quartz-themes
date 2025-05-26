@@ -524,18 +524,104 @@
     url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --default-font: var(--font-sans-2);
+  --duration-fast-1: 120ms;
+  --duration-fast-2: 180ms;
+  --duration-moderate-1: 250ms;
+  --duration-moderate-2: 340ms;
+  --duration-none: 0;
+  --duration-slow-1: 500ms;
+  --duration-slow-2: 640ms;
+  --font-bold: 800;
+  --font-code: var(--font-monospace-2);
+  --font-editor: var(--font-sans-2);
+  --font-extra-bold: 900;
+  --font-extra-light: 200;
+  --font-header: var(--font-sans-2);
+  --font-light: 300;
+  --font-medium: 500;
+  --font-monospace: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+  --font-monospace-1: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+  --font-monospace-2: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+  --font-preview: var(--font-sans-2);
+  --font-regular: 400;
+  --font-sans-2: "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
+    Helvetica, Arial, sans-serif;
+  --font-scale-0: 0.875rem;
+  --font-scale-00: 0.75rem;
+  --font-scale-000: 0.625rem;
+  --font-scale-1: 1rem;
+  --font-scale-10: 3rem;
+  --font-scale-2: 1.125rem;
+  --font-scale-3: 1.375rem;
+  --font-scale-4: 1.625rem;
+  --font-scale-5: 1.75rem;
+  --font-scale-6: 2rem;
+  --font-scale-7: 2.25rem;
+  --font-scale-8: 2.5rem;
+  --font-scale-9: 2.625rem;
+  --font-semi-bold: 600;
+  --font-thin: 100;
+  --h1-size: 1.75rem;
+  --h2-size: 1.688rem;
+  --h3-size: 1.563rem;
+  --h4-size: 1.438rem;
+  --h5-size: 1.313rem;
+  --h6-size: 1.188rem;
+  --header-line-height: calc(0.8 * var(--line-height));
+  --header-shadow-color: rgb(31, 31, 31);
+  --header-shadow-size: 0px 4px 3px;
+  --keyboard-height: 0px;
+  --line-height: 1.58em;
+  --line-width: 42em;
+  --loading-icon-delay: 400ms;
+  --mermaid-font: var(--font-sans-2);
+  --motion-delay: cubic-bezier(0.86, 0, 0.07, 1);
+  --motion-heavy: cubic-bezier(0.18, 0.89, 0.32, 1.27);
+  --motion-smooth: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --reveal-font: var(--font-sans-2);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --scale-0-0: 0px;
+  --scale-2-1: 2px;
+  --scale-2-10: 20px;
+  --scale-2-18: 36px;
+  --scale-2-2: 4px;
+  --scale-2-3: 6px;
+  --scale-2-4: 8px;
+  --scale-2-5: 10px;
+  --scale-2-6: 12px;
+  --scale-2-8: 16px;
+  --scale-2-9: 18px;
+  --scale-8-1: 8px;
+  --scale-8-10: 80px;
+  --scale-8-12: 96px;
+  --scale-8-18: 144px;
+  --scale-8-2: 16px;
+  --scale-8-3: 24px;
+  --scale-8-36: 288px;
+  --scale-8-4: 32px;
+  --scale-8-5: 40px;
+  --scale-8-6: 48px;
+  --scale-8-7: 54px;
+  --scale-8-8: 64px;
+  --scale-8-9: 72px;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --tracking-0: 0px;
+  --tracking-1: 0.16px;
+  --tracking-2: 0.32px;
+  --tracking-3: 0.64px;
+  --tracking-4: 1.28px;
+  --tracking-5: 2.56px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1227,11 +1313,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1283,106 +1369,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --default-font: var(--font-sans-2);
-  --duration-fast-1: 120ms;
-  --duration-fast-2: 180ms;
-  --duration-moderate-1: 250ms;
-  --duration-moderate-2: 340ms;
-  --duration-none: 0;
-  --duration-slow-1: 500ms;
-  --duration-slow-2: 640ms;
-  --font-bold: 800;
-  --font-code: var(--font-monospace-2);
-  --font-editor: var(--font-sans-2);
-  --font-extra-bold: 900;
-  --font-extra-light: 200;
-  --font-header: var(--font-sans-2);
-  --font-light: 300;
-  --font-medium: 500;
-  --font-monospace: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
-  --font-monospace-1: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
-  --font-monospace-2: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
-  --font-preview: var(--font-sans-2);
-  --font-regular: 400;
-  --font-sans-2: "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
-    Helvetica, Arial, sans-serif;
-  --font-scale-0: 0.875rem;
-  --font-scale-00: 0.75rem;
-  --font-scale-000: 0.625rem;
-  --font-scale-1: 1rem;
-  --font-scale-10: 3rem;
-  --font-scale-2: 1.125rem;
-  --font-scale-3: 1.375rem;
-  --font-scale-4: 1.625rem;
-  --font-scale-5: 1.75rem;
-  --font-scale-6: 2rem;
-  --font-scale-7: 2.25rem;
-  --font-scale-8: 2.5rem;
-  --font-scale-9: 2.625rem;
-  --font-semi-bold: 600;
-  --font-thin: 100;
-  --h1-size: 1.75rem;
-  --h2-size: 1.688rem;
-  --h3-size: 1.563rem;
-  --h4-size: 1.438rem;
-  --h5-size: 1.313rem;
-  --h6-size: 1.188rem;
-  --header-line-height: calc(0.8 * var(--line-height));
-  --header-shadow-color: rgb(31, 31, 31);
-  --header-shadow-size: 0px 4px 3px;
-  --keyboard-height: 0px;
-  --line-height: 1.58em;
-  --line-width: 42em;
-  --loading-icon-delay: 400ms;
-  --mermaid-font: var(--font-sans-2);
-  --motion-delay: cubic-bezier(0.86, 0, 0.07, 1);
-  --motion-heavy: cubic-bezier(0.18, 0.89, 0.32, 1.27);
-  --motion-smooth: cubic-bezier(0.65, 0.05, 0.36, 1);
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --reveal-font: var(--font-sans-2);
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --scale-0-0: 0px;
-  --scale-2-1: 2px;
-  --scale-2-10: 20px;
-  --scale-2-18: 36px;
-  --scale-2-2: 4px;
-  --scale-2-3: 6px;
-  --scale-2-4: 8px;
-  --scale-2-5: 10px;
-  --scale-2-6: 12px;
-  --scale-2-8: 16px;
-  --scale-2-9: 18px;
-  --scale-8-1: 8px;
-  --scale-8-10: 80px;
-  --scale-8-12: 96px;
-  --scale-8-18: 144px;
-  --scale-8-2: 16px;
-  --scale-8-3: 24px;
-  --scale-8-36: 288px;
-  --scale-8-4: 32px;
-  --scale-8-5: 40px;
-  --scale-8-6: 48px;
-  --scale-8-7: 54px;
-  --scale-8-8: 64px;
-  --scale-8-9: 72px;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --tracking-0: 0px;
-  --tracking-1: 0.16px;
-  --tracking-2: 0.32px;
-  --tracking-3: 0.64px;
-  --tracking-4: 1.28px;
-  --tracking-5: 2.56px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1754,3 +1740,17 @@ html {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root,
+html,
+:root,
+html {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

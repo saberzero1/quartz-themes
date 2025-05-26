@@ -440,18 +440,88 @@
     url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --bright-orange-v: #fe8019;
+  --bright-red: #fb4934;
+  --bright-yellow-v: #fabd2f;
+  --code-light-gray: #cccccc;
+  --code-orange: #b46629;
+  --dark0: #282828;
+  --dark0-hard: #1d2021;
+  --dark0-soft: #32302f;
+  --dark1: #3c3836;
+  --dark2: #504945;
+  --dark3: #665c54;
+  --dark4: #7c6f64;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --faded-orange: #af3a03;
+  --faded-red: #9d0006;
+  --faded-yellow: #b57614;
+  --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
+  --gray: #928374;
+  --keyboard-height: 0px;
+  --light0: #fbf1c7;
+  --light0-hard: #f9f5d7;
+  --light0-soft: #f2e5bc;
+  --light1: #ebdbb2;
+  --light2: #d5c4a1;
+  --light3: #bdae93;
+  --light4: #a89984;
+  --loading-icon-delay: 400ms;
+  --max-embed-height: 1000px;
+  --neutral-orange: #d65d0e;
+  --neutral-red: #cc241d;
+  --neutral-yellow: #d79921;
+  --obsidian-codeblock: #1a1a1a;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --platinum: #cccccc;
+  --r-bg-highlight: color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
+  --r-bg-selection: color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
+  --r-bright-orange: #fe750e;
+  --r-bright-yellow: #fea30f;
+  --r-dark-orange: #d5520e;
+  --r-dark-red: #bc0104;
+  --r-dark0: #212121;
+  --r-dark0-accent: #1e1e1e;
+  --r-dark1: #191717;
+  --r-dark2: #161414;
+  --r-deep-orange: #ed5b0f;
+  --r-gray: #9d8f82;
+  --r-gray2: #a89c90;
+  --r-gray3: #b3ab9e;
+  --r-gunmetal: #534f4e;
+  --r-light0: #e7cfb8;
+  --r-light1: #dbc5af;
+  --r-light2: #d0baa6;
+  --r-light2-soft: #c4b09c;
+  --r-light3: #b9a693;
+  --r-light4: #a79584;
+  --r-lightn1: #f2e5d8;
+  --r-meteor: #72504b;
+  --r-mist-energy-blue: #27cac7;
+  --r-orange: #ea4f0d;
+  --r-pdf-highlight: var(--r-bright-orange);
+  --r-red-orange: #c52d0a;
+  --r-scorpion: #625e5e;
+  --r-standard-text: #eadad9;
+  --r-yellow-green: #c0c90a;
+  --r-yellow-orange: #fe9109;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --size-code: 14.4px;
+  --size-normal: 16px;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --test-green: #00ff00;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1145,11 +1215,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1201,90 +1271,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --bright-orange-v: #fe8019;
-  --bright-red: #fb4934;
-  --bright-yellow-v: #fabd2f;
-  --code-light-gray: #cccccc;
-  --code-orange: #b46629;
-  --dark0: #282828;
-  --dark0-hard: #1d2021;
-  --dark0-soft: #32302f;
-  --dark1: #3c3836;
-  --dark2: #504945;
-  --dark3: #665c54;
-  --dark4: #7c6f64;
-  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
-    Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
-    Inter;
-  --faded-orange: #af3a03;
-  --faded-red: #9d0006;
-  --faded-yellow: #b57614;
-  --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
-  --gray: #928374;
-  --keyboard-height: 0px;
-  --light0: #fbf1c7;
-  --light0-hard: #f9f5d7;
-  --light0-soft: #f2e5bc;
-  --light1: #ebdbb2;
-  --light2: #d5c4a1;
-  --light3: #bdae93;
-  --light4: #a89984;
-  --loading-icon-delay: 400ms;
-  --max-embed-height: 1000px;
-  --neutral-orange: #d65d0e;
-  --neutral-red: #cc241d;
-  --neutral-yellow: #d79921;
-  --obsidian-codeblock: #1a1a1a;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --platinum: #cccccc;
-  --r-bg-highlight: color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
-  --r-bg-selection: color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
-  --r-bright-orange: #fe750e;
-  --r-bright-yellow: #fea30f;
-  --r-dark-orange: #d5520e;
-  --r-dark-red: #bc0104;
-  --r-dark0: #212121;
-  --r-dark0-accent: #1e1e1e;
-  --r-dark1: #191717;
-  --r-dark2: #161414;
-  --r-deep-orange: #ed5b0f;
-  --r-gray: #9d8f82;
-  --r-gray2: #a89c90;
-  --r-gray3: #b3ab9e;
-  --r-gunmetal: #534f4e;
-  --r-light0: #e7cfb8;
-  --r-light1: #dbc5af;
-  --r-light2: #d0baa6;
-  --r-light2-soft: #c4b09c;
-  --r-light3: #b9a693;
-  --r-light4: #a79584;
-  --r-lightn1: #f2e5d8;
-  --r-meteor: #72504b;
-  --r-mist-energy-blue: #27cac7;
-  --r-orange: #ea4f0d;
-  --r-pdf-highlight: var(--r-bright-orange);
-  --r-red-orange: #c52d0a;
-  --r-scorpion: #625e5e;
-  --r-standard-text: #eadad9;
-  --r-yellow-green: #c0c90a;
-  --r-yellow-orange: #fe9109;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --size-code: 14.4px;
-  --size-normal: 16px;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --test-green: #00ff00;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1714,3 +1700,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

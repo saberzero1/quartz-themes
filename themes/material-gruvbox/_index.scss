@@ -400,18 +400,82 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --dark-text: rgb(var(--dark-text-x));
+  --dark-text-faint: rgb(var(--dark-text-faint-x));
+  --dark-text-faint-x: 179, 126, 93;
+  --dark-text-muted: rgb(var(--dark-text-muted-x));
+  --dark-text-muted-x: 115, 81, 69;
+  --dark-text-x: 101, 71, 53;
+  --dark0: rgb(var(--dark0-x));
+  --dark0-hard: rgb(var(--dark0-hard-x));
+  --dark0-hard-x: 29, 32, 33;
+  --dark0-soft: rgb(var(--dark0-soft-x));
+  --dark0-soft-x: 50, 48, 47;
+  --dark0-x: 40, 40, 40;
+  --dark1: rgb(var(--dark1-x));
+  --dark1-x: 60, 56, 54;
+  --dark2: rgb(var(--dark2-x));
+  --dark2-x: 80, 73, 69;
+  --dark3: rgb(var(--dark3-x));
+  --dark3-x: 102, 92, 84;
+  --dark4: rgb(var(--dark4-x));
+  --dark4-x: 124, 111, 100;
+  --faded-aqua: rgb(var(--faded-aqua-x));
+  --faded-aqua-x: 76, 122, 93;
+  --faded-blue: rgb(var(--faded-blue-x));
+  --faded-blue-x: 69, 112, 122;
+  --faded-green: rgb(var(--faded-green-x));
+  --faded-green-x: 108, 120, 46;
+  --faded-purple: rgb(var(--faded-purple-x));
+  --faded-purple-x: 148, 94, 128;
+  --faded-red: rgb(var(--faded-red-x));
+  --faded-red-x: 193, 74, 74;
+  --faded-yellow: rgb(var(--faded-yellow-x));
+  --faded-yellow-x: 195, 94, 10;
+  --gray: rgb(var(--gray-x));
+  --gray-x: 146, 131, 116;
+  --keyboard-height: 0px;
+  --light-text: rgb(var(--light-text-x));
+  --light-text-x: 212, 190, 152;
+  --light0: rgb(var(--light0-x));
+  --light0-hard: rgb(var(--light0-hard-x));
+  --light0-hard-x: 249, 245, 215;
+  --light0-soft: rgb(var(--light0-soft-x));
+  --light0-soft-x: 242, 229, 188;
+  --light0-x: 251, 241, 199;
+  --light1: rgb(var(--light1-x));
+  --light1-x: 235, 219, 178;
+  --light2: rgb(var(--light2-x));
+  --light2-x: 213, 196, 161;
+  --light3: rgb(var(--light3-x));
+  --light3-x: 189, 174, 147;
+  --light4: rgb(var(--light4-x));
+  --light4-x: 168, 153, 132;
+  --loading-icon-delay: 400ms;
+  --neutral-aqua: rgb(var(--neutral-aqua-x));
+  --neutral-aqua-x: 137, 180, 130;
+  --neutral-blue: rgb(var(--neutral-blue-x));
+  --neutral-blue-x: 125, 174, 163;
+  --neutral-green: rgb(var(--neutral-green-x));
+  --neutral-green-x: 169, 182, 101;
+  --neutral-purple: rgb(var(--neutral-purple-x));
+  --neutral-purple-x: 211, 134, 155;
+  --neutral-red: rgb(var(--neutral-red-x));
+  --neutral-red-x: 234, 105, 98;
+  --neutral-yellow: rgb(var(--neutral-yellow-x));
+  --neutral-yellow-x: 231, 138, 78;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1104,11 +1168,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1160,84 +1224,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --dark-text: rgb(var(--dark-text-x));
-  --dark-text-faint: rgb(var(--dark-text-faint-x));
-  --dark-text-faint-x: 179, 126, 93;
-  --dark-text-muted: rgb(var(--dark-text-muted-x));
-  --dark-text-muted-x: 115, 81, 69;
-  --dark-text-x: 101, 71, 53;
-  --dark0: rgb(var(--dark0-x));
-  --dark0-hard: rgb(var(--dark0-hard-x));
-  --dark0-hard-x: 29, 32, 33;
-  --dark0-soft: rgb(var(--dark0-soft-x));
-  --dark0-soft-x: 50, 48, 47;
-  --dark0-x: 40, 40, 40;
-  --dark1: rgb(var(--dark1-x));
-  --dark1-x: 60, 56, 54;
-  --dark2: rgb(var(--dark2-x));
-  --dark2-x: 80, 73, 69;
-  --dark3: rgb(var(--dark3-x));
-  --dark3-x: 102, 92, 84;
-  --dark4: rgb(var(--dark4-x));
-  --dark4-x: 124, 111, 100;
-  --faded-aqua: rgb(var(--faded-aqua-x));
-  --faded-aqua-x: 76, 122, 93;
-  --faded-blue: rgb(var(--faded-blue-x));
-  --faded-blue-x: 69, 112, 122;
-  --faded-green: rgb(var(--faded-green-x));
-  --faded-green-x: 108, 120, 46;
-  --faded-purple: rgb(var(--faded-purple-x));
-  --faded-purple-x: 148, 94, 128;
-  --faded-red: rgb(var(--faded-red-x));
-  --faded-red-x: 193, 74, 74;
-  --faded-yellow: rgb(var(--faded-yellow-x));
-  --faded-yellow-x: 195, 94, 10;
-  --gray: rgb(var(--gray-x));
-  --gray-x: 146, 131, 116;
-  --keyboard-height: 0px;
-  --light-text: rgb(var(--light-text-x));
-  --light-text-x: 212, 190, 152;
-  --light0: rgb(var(--light0-x));
-  --light0-hard: rgb(var(--light0-hard-x));
-  --light0-hard-x: 249, 245, 215;
-  --light0-soft: rgb(var(--light0-soft-x));
-  --light0-soft-x: 242, 229, 188;
-  --light0-x: 251, 241, 199;
-  --light1: rgb(var(--light1-x));
-  --light1-x: 235, 219, 178;
-  --light2: rgb(var(--light2-x));
-  --light2-x: 213, 196, 161;
-  --light3: rgb(var(--light3-x));
-  --light3-x: 189, 174, 147;
-  --light4: rgb(var(--light4-x));
-  --light4-x: 168, 153, 132;
-  --loading-icon-delay: 400ms;
-  --neutral-aqua: rgb(var(--neutral-aqua-x));
-  --neutral-aqua-x: 137, 180, 130;
-  --neutral-blue: rgb(var(--neutral-blue-x));
-  --neutral-blue-x: 125, 174, 163;
-  --neutral-green: rgb(var(--neutral-green-x));
-  --neutral-green-x: 169, 182, 101;
-  --neutral-purple: rgb(var(--neutral-purple-x));
-  --neutral-purple-x: 211, 134, 155;
-  --neutral-red: rgb(var(--neutral-red-x));
-  --neutral-red-x: 234, 105, 98;
-  --neutral-yellow: rgb(var(--neutral-yellow-x));
-  --neutral-yellow-x: 231, 138, 78;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1612,3 +1598,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

@@ -243,18 +243,45 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --active-contrast-amount: 10%;
+  --bg-contrast-amount: 15%;
+  --blue: #4c86a8;
+  --blue-faint: #6b9ab6;
+  --brown: #806443;
+  --contrast-color: var(--highlight);
+  --default-text-color: #d0d0d0;
+  --fg-contrast-amount: 40%;
+  --grey: #c9cad9;
+  --highlight: #fff;
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --medium-contrast-amount: 20%;
+  --nav-item-weight-hover: bold;
+  --orange: #ff4f00;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --periwinkle: #beb7df;
+  --platinum: #d8d7df;
+  --platinum-faint: #b2b2b8;
+  --red: #db5461;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --space-dark: #0f1218;
+  --space-light: #242b3a;
+  --space-new: #181d27;
+  --space-old: #2b3242;
+  --space-old-dark: #212531;
+  --space-old-light: #3a4358;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --yellow: #ffd85e;
+  --yellow-faint: #ffe699;
 }
 
 body {
@@ -946,11 +973,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1002,47 +1029,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --active-contrast-amount: 10%;
-  --bg-contrast-amount: 15%;
-  --blue: #4c86a8;
-  --blue-faint: #6b9ab6;
-  --brown: #806443;
-  --contrast-color: var(--highlight);
-  --default-text-color: #d0d0d0;
-  --fg-contrast-amount: 40%;
-  --grey: #c9cad9;
-  --highlight: #fff;
-  --keyboard-height: 0px;
-  --loading-icon-delay: 400ms;
-  --medium-contrast-amount: 20%;
-  --nav-item-weight-hover: bold;
-  --orange: #ff4f00;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --periwinkle: #beb7df;
-  --platinum: #d8d7df;
-  --platinum-faint: #b2b2b8;
-  --red: #db5461;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --space-dark: #0f1218;
-  --space-light: #242b3a;
-  --space-new: #181d27;
-  --space-old: #2b3242;
-  --space-old-dark: #212531;
-  --space-old-light: #3a4358;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow: #ffd85e;
-  --yellow-faint: #ffe699;
 }
 
 /* START DARK */
@@ -1148,3 +1134,17 @@ html {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root,
+html,
+:root,
+html {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

@@ -319,18 +319,45 @@
     url("https://fonts.cdnfonts.com/s/20990/norwester.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --dark0: #2e3440;
+  --dark0-raw: 46, 52, 64;
+  --dark1: #3b4252;
+  --dark1-raw: 59, 66, 82;
+  --dark2: #434c5e;
+  --dark2-raw: 67, 76, 94;
+  --dark3: #4c566a;
+  --dark3-raw: 76, 86, 106;
+  --frost0: #8fbcbb;
+  --frost0-raw: 143, 188, 187;
+  --frost1: #88c0d0;
+  --frost1-raw: 136, 192, 208;
+  --frost2: #81a1c1;
+  --frost2-raw: 129, 161, 193;
+  --frost3: #5e81ac;
+  --frost3-raw: 94, 129, 172;
+  --keyboard-height: 0px;
+  --light0: #d8dee9;
+  --light0-raw: 216, 222, 233;
+  --light1: #e5e9f0;
+  --light1-raw: 229, 233, 240;
+  --light2: #eceff4;
+  --light2-raw: 236, 239, 244;
+  --light3: #ffffff;
+  --light3-raw: 255, 255, 255;
+  --loading-icon-delay: 400ms;
+  --nordic-darken: 0%;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1022,11 +1049,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1078,47 +1105,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --dark0: #2e3440;
-  --dark0-raw: 46, 52, 64;
-  --dark1: #3b4252;
-  --dark1-raw: 59, 66, 82;
-  --dark2: #434c5e;
-  --dark2-raw: 67, 76, 94;
-  --dark3: #4c566a;
-  --dark3-raw: 76, 86, 106;
-  --frost0: #8fbcbb;
-  --frost0-raw: 143, 188, 187;
-  --frost1: #88c0d0;
-  --frost1-raw: 136, 192, 208;
-  --frost2: #81a1c1;
-  --frost2-raw: 129, 161, 193;
-  --frost3: #5e81ac;
-  --frost3-raw: 94, 129, 172;
-  --keyboard-height: 0px;
-  --light0: #d8dee9;
-  --light0-raw: 216, 222, 233;
-  --light1: #e5e9f0;
-  --light1-raw: 229, 233, 240;
-  --light2: #eceff4;
-  --light2-raw: 236, 239, 244;
-  --light3: #ffffff;
-  --light3-raw: 255, 255, 255;
-  --loading-icon-delay: 400ms;
-  --nordic-darken: 0%;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1495,3 +1481,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}
