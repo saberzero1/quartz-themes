@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes */
+@use "sass:string";
+/* quartz themes */
+
 :root[saved-theme="dark"] {
   --background-modifier-border: var(--bg5-dark);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -94,6 +96,7 @@
   --vim-cursor: var(--faded-blue);
   color-scheme: dark;
 }
+
 :root[saved-theme="light"] {
   --background-modifier-border: var(--bg5-light);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -176,12 +179,15 @@
   --text-title-h6: var(--light-purple);
   --vim-cursor: var(--light-blue);
   color-scheme: light;
-} /**
+}
+
+/**
  * Minified by jsDelivr using clean-css v5.3.2.
  * Original file: /npm/hack-font@3.3.0/build/web/hack.css
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */ /*!
+ */
+/*!
  *  Hack typeface https://github.com/source-foundry/Hack
  *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
  */
@@ -224,7 +230,10 @@
       format("woff");
   font-weight: 700;
   font-style: italic;
-} /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */ /* Callouts */
+}
+/*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -248,6 +257,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --bg_blue: #394f5a;
   --bg_blue_light: #e9f0e9;
@@ -1018,7 +1028,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --background-modifier-border: var(--bg5-dark);
@@ -1119,7 +1130,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */ /* START LIGHT */
+}
+/* END DARK */
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --background-modifier-border: var(--bg5-light);
@@ -1212,7 +1225,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-} /* END LIGHT */
+}
+/* END LIGHT */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1767,7 +1781,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START LIGHT GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1819,7 +1835,9 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END LIGHT GRAPH */ /* START DARK GRAPH */
+}
+/* END LIGHT GRAPH */
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1871,4 +1889,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

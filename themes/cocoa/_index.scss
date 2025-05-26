@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes dark-only */
+@use "sass:string";
+/* quartz themes dark-only */
+
 :root:root {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
@@ -90,9 +92,11 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
+
 .darkmode {
   display: none;
 }
+
 @font-face {
   font-family: "Palatino";
   font-style: normal;
@@ -100,7 +104,9 @@
   src:
     local("Palatino"),
     url("https://fonts.cdnfonts.com/s/56559/palr45w.woff") format("woff");
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -124,6 +130,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -832,7 +839,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root,
 html {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -929,7 +937,8 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */
+}
+/* END DARK */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1484,7 +1493,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START DARK GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START DARK GRAPH */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1536,4 +1547,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */
