@@ -348,7 +348,7 @@ function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ruleToExt
         : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
     if (ruleDeclarations) {
       // Apply the rule declarations to the specified file
-      replaceInFile(filePath, targetText, ruleDeclarations)
+      replaceInFile(filePath, targetText, `${ruleDeclarations}\n\n`)
     } else {
       throw new Error(`No declarations found for selector: ${ruleSelector}`)
     }
@@ -552,19 +552,19 @@ manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
   let extras = ""
   if (isDarkTheme(themeNameLocal)) {
-    extras += `\n@use "dark";\n`
+    extras += `\n@use "dark";`
   }
   if (isLightTheme(themeNameLocal)) {
-    extras += `\n@use "light";\n`
+    extras += `\n@use "light";`
   }
-  extras += `\n@use "extras";\n`
+  extras += `\n@use "extras";`
   const themeExtras = getExtras(themeNameLocal)
   const fontExtras = getFonts(themeNameLocal)
   themeExtras.forEach((extra) => {
-    extras += `\n@use "extras/${extra}.scss";\n`
+    extras += `\n@use "extras/${extra}.scss";`
   })
   fontExtras.forEach((font) => {
-    extras += `\n@use "extras/fonts/${font}.scss";\n`
+    extras += `\n@use "extras/fonts/${font}.scss";`
   })
   extras += `\n@use "callouts/default.scss";`
   extras += `\n@use "callouts/overrides.scss";`
