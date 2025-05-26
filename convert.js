@@ -552,19 +552,19 @@ manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
   let extras = ""
   if (isDarkTheme(themeNameLocal)) {
-    extras += `\n@use "dark";`
+    extras += `\n@use "dark";\n`
   }
   if (isLightTheme(themeNameLocal)) {
-    extras += `\n@use "light";`
+    extras += `\n@use "light";\n`
   }
-  extras += `\n@use "extras";`
+  extras += `\n@use "extras";\n`
   const themeExtras = getExtras(themeNameLocal)
   const fontExtras = getFonts(themeNameLocal)
   themeExtras.forEach((extra) => {
-    extras += `\n@use "extras/${extra}.scss";`
+    extras += `\n@use "extras/${extra}.scss";\n`
   })
   fontExtras.forEach((font) => {
-    extras += `\n@use "extras/fonts/${font}.scss";`
+    extras += `\n@use "extras/fonts/${font}.scss";\n`
   })
   extras += `\n@use "callouts/default.scss";`
   extras += `\n@use "callouts/overrides.scss";`
