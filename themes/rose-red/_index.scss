@@ -213,18 +213,49 @@
 }
 /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --dark-linear-gradient: linear-gradient(
+    45deg,
+    rgba(36, 10, 0, 1) 0%,
+    rgba(121, 9, 31, 1) 35%,
+    rgba(3, 3, 3, 1) 100%
+  );
+  --dark0: #390000;
+  --dark1: #290202;
+  --dark2: #3d0404;
+  --dark3: #5c1818;
+  --frost0: #b50505;
+  --frost1: #cc0d0d;
+  --frost2: #81a1c1;
+  --frost3: #ff9cfa;
+  --green: #b0f078;
+  --input-disabled-border-color: transparent;
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-hover-border-color: red;
+  --input-unfocused-border-color: transparent;
+  --keyboard-height: 0px;
+  --light0: #ff8a8a;
+  --light1: #fce6e4;
+  --light2: #fdf8ec;
+  --light3: #5fa57a;
+  --loading-icon-delay: 400ms;
+  --orange: #f3ad6b;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --purple: #f899e7;
+  --red: #d63f4e;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --sideRed: #910b0bcc;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --yellow: #ebcb8b;
 }
 
 body {
@@ -918,11 +949,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -974,51 +1005,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --dark-linear-gradient: linear-gradient(
-    45deg,
-    rgba(36, 10, 0, 1) 0%,
-    rgba(121, 9, 31, 1) 35%,
-    rgba(3, 3, 3, 1) 100%
-  );
-  --dark0: #390000;
-  --dark1: #290202;
-  --dark2: #3d0404;
-  --dark3: #5c1818;
-  --frost0: #b50505;
-  --frost1: #cc0d0d;
-  --frost2: #81a1c1;
-  --frost3: #ff9cfa;
-  --green: #b0f078;
-  --input-disabled-border-color: transparent;
-  --input-focus-border-color: Highlight;
-  --input-focus-outline: 1px solid Canvas;
-  --input-hover-border-color: red;
-  --input-unfocused-border-color: transparent;
-  --keyboard-height: 0px;
-  --light0: #ff8a8a;
-  --light1: #fce6e4;
-  --light2: #fdf8ec;
-  --light3: #5fa57a;
-  --loading-icon-delay: 400ms;
-  --orange: #f3ad6b;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --purple: #f899e7;
-  --red: #d63f4e;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --sideRed: #910b0bcc;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow: #ebcb8b;
 }
 
 /* START DARK */
@@ -1133,3 +1119,17 @@ html {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root,
+html,
+:root,
+html {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

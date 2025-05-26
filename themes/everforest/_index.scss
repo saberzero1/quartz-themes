@@ -232,18 +232,82 @@
 }
 /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --bg_blue: #394f5a;
+  --bg_blue_light: #e9f0e9;
+  --bg_green: #404d44;
+  --bg_green_light: #f0f1d2;
+  --bg_red: #4e3e43;
+  --bg_red_light: #fbe3da;
+  --bg_visual: #503946;
+  --bg_visual_light: #eaedc8;
+  --bg_yellow: #4a4940;
+  --bg_yellow_light: #faedcd;
+  --bg-dark: #2f383e;
+  --bg-light: #fdf6e3;
+  --bg0-dark: #22282c;
+  --bg0-light: #f0edd8;
+  --bg1-dark: #272f34;
+  --bg1-light: #f6f1dd;
+  --bg2-dark: #374247;
+  --bg2-light: #f3efda;
+  --bg3-dark: #404c51;
+  --bg3-light: #edead5;
+  --bg4-dark: #4a555b;
+  --bg4-light: #e4e1cd;
+  --bg5-dark: #525c62;
+  --bg5-light: #dfdbc8;
+  --dim-aqua: #569d79;
+  --dim-blue: #5a93a2;
+  --dim-green: #899c40;
+  --dim-orange: #d77f48;
+  --dim-purple: #b87b9d;
+  --dim-red: #da6362;
+  --dim-yellow: #bf983d;
+  --faded-aqua: #83c092;
+  --faded-blue: #7fbbb3;
+  --faded-green: #a7c080;
+  --faded-orange: #e69875;
+  --faded-purple: #d699b6;
+  --faded-red: #e67e80;
+  --faded-yellow: #dbbc7f;
+  --fg-dark: #d3c6aa;
+  --fg-light: #5c6a72;
+  --grey0-dark: #7f897d;
+  --grey0-light: #a4ad9e;
+  --grey1-dark: #859289;
+  --grey1-light: #939f91;
+  --grey2-dark: #9aa79d;
+  --grey2-light: #879686;
+  --keyboard-height: 0px;
+  --light-aqua: #569d79;
+  --light-blue: #5a93a2;
+  --light-dim-aqua: #6ec398;
+  --light-dim-blue: #6cb3c6;
+  --light-dim-green: #a4bb4a;
+  --light-dim-orange: #f39459;
+  --light-dim-purple: #e092be;
+  --light-dim-red: #f1706f;
+  --light-dim-yellow: #e4b649;
+  --light-green: #899c40;
+  --light-orange: #f57d26;
+  --light-purple: #b87b9d;
+  --light-red: #f85552;
+  --light-yellow: #bf983d;
+  --loading-icon-delay: 400ms;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --shadow: #00000070;
+  --shadow-light: #3c474d20;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -935,11 +999,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -991,84 +1055,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --bg_blue: #394f5a;
-  --bg_blue_light: #e9f0e9;
-  --bg_green: #404d44;
-  --bg_green_light: #f0f1d2;
-  --bg_red: #4e3e43;
-  --bg_red_light: #fbe3da;
-  --bg_visual: #503946;
-  --bg_visual_light: #eaedc8;
-  --bg_yellow: #4a4940;
-  --bg_yellow_light: #faedcd;
-  --bg-dark: #2f383e;
-  --bg-light: #fdf6e3;
-  --bg0-dark: #22282c;
-  --bg0-light: #f0edd8;
-  --bg1-dark: #272f34;
-  --bg1-light: #f6f1dd;
-  --bg2-dark: #374247;
-  --bg2-light: #f3efda;
-  --bg3-dark: #404c51;
-  --bg3-light: #edead5;
-  --bg4-dark: #4a555b;
-  --bg4-light: #e4e1cd;
-  --bg5-dark: #525c62;
-  --bg5-light: #dfdbc8;
-  --dim-aqua: #569d79;
-  --dim-blue: #5a93a2;
-  --dim-green: #899c40;
-  --dim-orange: #d77f48;
-  --dim-purple: #b87b9d;
-  --dim-red: #da6362;
-  --dim-yellow: #bf983d;
-  --faded-aqua: #83c092;
-  --faded-blue: #7fbbb3;
-  --faded-green: #a7c080;
-  --faded-orange: #e69875;
-  --faded-purple: #d699b6;
-  --faded-red: #e67e80;
-  --faded-yellow: #dbbc7f;
-  --fg-dark: #d3c6aa;
-  --fg-light: #5c6a72;
-  --grey0-dark: #7f897d;
-  --grey0-light: #a4ad9e;
-  --grey1-dark: #859289;
-  --grey1-light: #939f91;
-  --grey2-dark: #9aa79d;
-  --grey2-light: #879686;
-  --keyboard-height: 0px;
-  --light-aqua: #569d79;
-  --light-blue: #5a93a2;
-  --light-dim-aqua: #6ec398;
-  --light-dim-blue: #6cb3c6;
-  --light-dim-green: #a4bb4a;
-  --light-dim-orange: #f39459;
-  --light-dim-purple: #e092be;
-  --light-dim-red: #f1706f;
-  --light-dim-yellow: #e4b649;
-  --light-green: #899c40;
-  --light-orange: #f57d26;
-  --light-purple: #b87b9d;
-  --light-red: #f85552;
-  --light-yellow: #bf983d;
-  --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow: #00000070;
-  --shadow-light: #3c474d20;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1370,3 +1356,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

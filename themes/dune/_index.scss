@@ -398,18 +398,91 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --banner-ah: 240px;
+  --banner-bh: 200px;
+  --button-background: #91aadd;
+  --bwidth-a: 10px;
+  --bwidth-b: 10px;
+  --bwidth-s1: 6px;
+  --bwidth-s2: 6px;
+  --callout-gap: 0.5rem;
+  --callout-margin: 4px;
+  --callout-min-width: 200px;
+  --checkm-btn: 1.4em;
+  --code-color: var(--text-muted);
+  --col-rule-color: #b3b3b3;
+  --col-rule-width: 1px;
+  --contacts-alh: 50px;
+  --contacts-font: Helvetica, sans-serif;
+  --custom-font-c: var(--custom-font-h);
+  --custom-font-h: Helvetica;
+  --custom-fsz-1: 16px;
+  --custom-fsz-2: 16px;
+  --custom-fsz-3: 16px;
+  --dark-blue: #378dff;
+  --dark-gray: dimgray;
+  --dark-green: #52a543;
+  --dark-red: #db3434;
+  --dark-shadow-l: rgba(0, 0, 0, 0.1);
+  --dark-tone: black;
+  --deco-scale: 0.5;
+  --h1-color: var(--header-col);
+  --h2-color: var(--header-col);
+  --h3-color: var(--header-col);
+  --h4-color: var(--header-col);
+  --h5-color: var(--h4-color);
+  --h6-color: var(--h4-color);
+  --header-col: #c66102;
+  --hr-color: #808080;
+  --hr-stars: rgb(237, 188, 52);
+  --indent-l: 4em;
+  --initial-font: var(--poetry-font-h);
+  --initial-sz: 110px;
+  --keyboard-height: 0px;
+  --light-blue: #99ccff;
+  --light-gray: #bfbfbf;
+  --light-green: #ace573;
+  --light-red: #ff8080;
+  --light-shadow-l: rgba(255, 255, 255, 0.2);
+  --light-tone: white;
+  --light-yellow: #eed57a;
+  --link-external-color: var(--link-color-dune);
+  --list-min-width: 200px;
+  --loading-icon-delay: 400ms;
+  --med-shadow-l: rgba(127, 127, 127, 0.2);
+  --min-boxwidth: 230px;
+  --modern-font-c: var(--modern-font-h);
+  --modern-font-h: "Louis George Cafe";
+  --movies-font: "AbadiMT-CondensedLight", Helvetica, sans-serif;
+  --nav-item-background-selected: rgba(244, 155, 31, 0.4);
+  --nav-item-color: var(--text-normal);
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --poetry-font-c: var(--poetry-font-h);
+  --poetry-font-h: "Manuskript Gothisch";
+  --property-height: 32px;
+  --recipes-font: "Mumsies", "cursive", Helvetica, sans-serif;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --scale-larger-f: 20px;
+  --scale-smaller-f: 12px;
+  --slant-blue: #566370;
+  --slim-bar: 32px;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --svg-scale: 60;
+  --svg-zoom: 80;
+  --table-highl-col: rgba(255, 166, 0, 0.5);
+  --text-highlight-bg: rgba(255, 243, 163, 0.8);
+  --toolbar-bg-sw: var(--background-primary);
+  --viewer-container-height: 0;
+  --wave-sz: 150px;
+  --wm-b-col: var(--background-secondary);
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1171,11 +1244,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1228,93 +1301,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --banner-ah: 240px;
-  --banner-bh: 200px;
-  --button-background: #91aadd;
-  --bwidth-a: 10px;
-  --bwidth-b: 10px;
-  --bwidth-s1: 6px;
-  --bwidth-s2: 6px;
-  --callout-gap: 0.5rem;
-  --callout-margin: 4px;
-  --callout-min-width: 200px;
-  --checkm-btn: 1.4em;
-  --code-color: var(--text-muted);
-  --col-rule-color: #b3b3b3;
-  --col-rule-width: 1px;
-  --contacts-alh: 50px;
-  --contacts-font: Helvetica, sans-serif;
-  --custom-font-c: var(--custom-font-h);
-  --custom-font-h: Helvetica;
-  --custom-fsz-1: 16px;
-  --custom-fsz-2: 16px;
-  --custom-fsz-3: 16px;
-  --dark-blue: #378dff;
-  --dark-gray: dimgray;
-  --dark-green: #52a543;
-  --dark-red: #db3434;
-  --dark-shadow-l: rgba(0, 0, 0, 0.1);
-  --dark-tone: black;
-  --deco-scale: 0.5;
-  --h1-color: var(--header-col);
-  --h2-color: var(--header-col);
-  --h3-color: var(--header-col);
-  --h4-color: var(--header-col);
-  --h5-color: var(--h4-color);
-  --h6-color: var(--h4-color);
-  --header-col: #c66102;
-  --hr-color: #808080;
-  --hr-stars: rgb(237, 188, 52);
-  --indent-l: 4em;
-  --initial-font: var(--poetry-font-h);
-  --initial-sz: 110px;
-  --keyboard-height: 0px;
-  --light-blue: #99ccff;
-  --light-gray: #bfbfbf;
-  --light-green: #ace573;
-  --light-red: #ff8080;
-  --light-shadow-l: rgba(255, 255, 255, 0.2);
-  --light-tone: white;
-  --light-yellow: #eed57a;
-  --link-external-color: var(--link-color-dune);
-  --list-min-width: 200px;
-  --loading-icon-delay: 400ms;
-  --med-shadow-l: rgba(127, 127, 127, 0.2);
-  --min-boxwidth: 230px;
-  --modern-font-c: var(--modern-font-h);
-  --modern-font-h: "Louis George Cafe";
-  --movies-font: "AbadiMT-CondensedLight", Helvetica, sans-serif;
-  --nav-item-background-selected: rgba(244, 155, 31, 0.4);
-  --nav-item-color: var(--text-normal);
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --poetry-font-c: var(--poetry-font-h);
-  --poetry-font-h: "Manuskript Gothisch";
-  --property-height: 32px;
-  --recipes-font: "Mumsies", "cursive", Helvetica, sans-serif;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --scale-larger-f: 20px;
-  --scale-smaller-f: 12px;
-  --slant-blue: #566370;
-  --slim-bar: 32px;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --svg-scale: 60;
-  --svg-zoom: 80;
-  --table-highl-col: rgba(255, 166, 0, 0.5);
-  --text-highlight-bg: rgba(255, 243, 163, 0.8);
-  --toolbar-bg-sw: var(--background-primary);
-  --viewer-container-height: 0;
-  --wave-sz: 150px;
-  --wm-b-col: var(--background-secondary);
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1689,3 +1675,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

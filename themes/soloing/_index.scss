@@ -347,18 +347,68 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --anti-flash-white: #ebebeb;
+  --background-1st-dark: #1a1c25;
+  --background-1st-light: #fcfcff;
+  --background-2nd-dark: #20212b;
+  --background-2nd-light: #eceff5;
+  --bittersweet: #f05d5e;
+  --bright-green: #5aff15;
+  --cool-gray: #7c809b;
+  --cool-gray-light: #cbcdd3;
+  --dark-accent: var(--bright-green);
+  --dark-background-primary: var(--background-1st-dark);
+  --dark-background-secondary: var(--background-2nd-dark);
+  --dark-code: var(--lime);
+  --dark-code-background: #292c3a;
+  --dark-divider-color: var(--divider);
+  --dark-link: var(--mint);
+  --dark-mint: #2f9b56;
+  --dark-purple: #242032;
+  --divider: #202f4e;
+  --floral-white: #fff8f0;
+  --folly: #ff3366;
+  --folly-dark: #c7204a;
+  --french-gray: #d1d2dc;
+  --gold: rgb(253, 233, 9);
+  --gold-light: rgb(232, 224, 139);
+  --keyboard-height: 0px;
+  --light-accent: var(--light-mint);
+  --light-background-primary: var(--background-1st-light);
+  --light-background-secondary: var(--background-2nd-light);
+  --light-code: var(--dark-mint);
+  --light-code-background: #f3f6fc;
+  --light-divider: #d7e4ff;
+  --light-divider-color: var(--light-divider);
+  --light-link: var(--light-mint);
+  --light-mint: #3fc570;
+  --light-sea-green: #00bfb3;
+  --lime: #c3f73a;
+  --lime-dark: #92cb00;
+  --line-width: 850px;
+  --loading-icon-delay: 400ms;
+  --mint: #13c4a3;
+  --mint-light: #9af6e5;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --raisin-black: #1b1825;
+  --rich-black: #121019;
+  --robin-egg-blue: #19d8d5;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --tropical-indigo: #685fce;
+  --tropical-indigo-light: #a69efa;
+  --viewer-container-height: 0;
+  --white: #fcfcfc;
+  --white-smoke: #f5f5f5;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --ylmn-blue: #375ba9;
 }
 
 body {
@@ -1050,11 +1100,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1106,70 +1156,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --anti-flash-white: #ebebeb;
-  --background-1st-dark: #1a1c25;
-  --background-1st-light: #fcfcff;
-  --background-2nd-dark: #20212b;
-  --background-2nd-light: #eceff5;
-  --bittersweet: #f05d5e;
-  --bright-green: #5aff15;
-  --cool-gray: #7c809b;
-  --cool-gray-light: #cbcdd3;
-  --dark-accent: var(--bright-green);
-  --dark-background-primary: var(--background-1st-dark);
-  --dark-background-secondary: var(--background-2nd-dark);
-  --dark-code: var(--lime);
-  --dark-code-background: #292c3a;
-  --dark-divider-color: var(--divider);
-  --dark-link: var(--mint);
-  --dark-mint: #2f9b56;
-  --dark-purple: #242032;
-  --divider: #202f4e;
-  --floral-white: #fff8f0;
-  --folly: #ff3366;
-  --folly-dark: #c7204a;
-  --french-gray: #d1d2dc;
-  --gold: rgb(253, 233, 9);
-  --gold-light: rgb(232, 224, 139);
-  --keyboard-height: 0px;
-  --light-accent: var(--light-mint);
-  --light-background-primary: var(--background-1st-light);
-  --light-background-secondary: var(--background-2nd-light);
-  --light-code: var(--dark-mint);
-  --light-code-background: #f3f6fc;
-  --light-divider: #d7e4ff;
-  --light-divider-color: var(--light-divider);
-  --light-link: var(--light-mint);
-  --light-mint: #3fc570;
-  --light-sea-green: #00bfb3;
-  --lime: #c3f73a;
-  --lime-dark: #92cb00;
-  --line-width: 850px;
-  --loading-icon-delay: 400ms;
-  --mint: #13c4a3;
-  --mint-light: #9af6e5;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --raisin-black: #1b1825;
-  --rich-black: #121019;
-  --robin-egg-blue: #19d8d5;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --tropical-indigo: #685fce;
-  --tropical-indigo-light: #a69efa;
-  --viewer-container-height: 0;
-  --white: #fcfcfc;
-  --white-smoke: #f5f5f5;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --ylmn-blue: #375ba9;
 }
 
 /* START DARK */
@@ -1491,3 +1477,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

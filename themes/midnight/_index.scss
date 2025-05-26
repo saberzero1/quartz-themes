@@ -274,18 +274,61 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --color-dark-magenta: rgb(213, 26, 126);
+  --color-graph-node: rgb(140, 140, 140);
+  --color-graph-node-unresolved: rgb(95, 95, 100);
+  --color-light-blue: #849dff;
+  --color-light-purple: #aa8fd1;
+  --color-main-dark: #040812;
+  --color-muted-purple: #1e1e32;
+  --color-outline: #282828;
+  --color-secondary-dark: #0f1116;
+  --color-thistle: #d8bfd8;
+  --input-disabled-border-color: transparent;
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-hover-border-color: black;
+  --input-unfocused-border-color: transparent;
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  background-color: rgba(var(--callout-color), 0.12);
+  border: var(--footnote-border-width);
+  border-bottom: 1px solid var(--color-outline);
+  border-bottom-left-radius: var(--footnote-radius);
+  border-bottom-right-radius: var(--footnote-radius);
+  border-left: none;
+  border-right: 1px solid var(--color-outline);
+  border-top: 1px solid var(--color-outline);
+  border-top-left-radius: var(--footnote-radius);
+  border-top-right-radius: var(--footnote-radius);
+  box-shadow: none;
+  caret-color: var(--color-accent);
+  color: lightblue;
+  content: "\26AC";
+  display: block;
+  font-size: var(--h4-size);
+  font-weight: var(--footnote-weight);
+  height: unset;
+  letter-spacing: 0.008em;
+  padding-bottom: var(--p-spacing);
+  padding-left: var(--footnote-padding-x);
+  padding-right: var(--footnote-padding-x);
+  padding-top: var(--footnote-padding-y);
+  text-decoration: var(--footnote-decoration);
+  vertical-align: baseline;
+  width: unset;
 }
 
 body {
@@ -993,11 +1036,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1049,63 +1092,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --color-dark-magenta: rgb(213, 26, 126);
-  --color-graph-node: rgb(140, 140, 140);
-  --color-graph-node-unresolved: rgb(95, 95, 100);
-  --color-light-blue: #849dff;
-  --color-light-purple: #aa8fd1;
-  --color-main-dark: #040812;
-  --color-muted-purple: #1e1e32;
-  --color-outline: #282828;
-  --color-secondary-dark: #0f1116;
-  --color-thistle: #d8bfd8;
-  --input-disabled-border-color: transparent;
-  --input-focus-border-color: Highlight;
-  --input-focus-outline: 1px solid Canvas;
-  --input-hover-border-color: black;
-  --input-unfocused-border-color: transparent;
-  --keyboard-height: 0px;
-  --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  background-color: rgba(var(--callout-color), 0.12);
-  border: var(--footnote-border-width);
-  border-bottom: 1px solid var(--color-outline);
-  border-bottom-left-radius: var(--footnote-radius);
-  border-bottom-right-radius: var(--footnote-radius);
-  border-left: none;
-  border-right: 1px solid var(--color-outline);
-  border-top: 1px solid var(--color-outline);
-  border-top-left-radius: var(--footnote-radius);
-  border-top-right-radius: var(--footnote-radius);
-  box-shadow: none;
-  caret-color: var(--color-accent);
-  color: lightblue;
-  content: "\26AC";
-  display: block;
-  font-size: var(--h4-size);
-  font-weight: var(--footnote-weight);
-  height: unset;
-  letter-spacing: 0.008em;
-  padding-bottom: var(--p-spacing);
-  padding-left: var(--footnote-padding-x);
-  padding-right: var(--footnote-padding-x);
-  padding-top: var(--footnote-padding-y);
-  text-decoration: var(--footnote-decoration);
-  vertical-align: baseline;
-  width: unset;
 }
 
 /* START DARK */
@@ -1188,3 +1174,17 @@ html {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root,
+html,
+:root,
+html {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

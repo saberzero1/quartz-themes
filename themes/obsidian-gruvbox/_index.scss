@@ -402,18 +402,92 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --bright-aqua: rgb(var(--bright-aqua_x));
+  --bright-aqua_x: 142, 192, 124;
+  --bright-blue: rgb(var(--bright-blue_x));
+  --bright-blue_x: 131, 165, 152;
+  --bright-green: rgb(var(--bright-green_x));
+  --bright-green_x: 184, 187, 38;
+  --bright-orange: rgb(var(--bright-orange_x));
+  --bright-orange_x: 254, 128, 25;
+  --bright-purple: rgb(var(--bright-purple_x));
+  --bright-purple_x: 211, 134, 155;
+  --bright-red: rgb(var(--bright-red_x));
+  --bright-red_x: 251, 73, 52;
+  --bright-yellow: rgb(var(--bright-yellow_x));
+  --bright-yellow_x: 250, 189, 47;
+  --dark0: rgb(var(--dark0_x));
+  --dark0_x: 40, 40, 40;
+  --dark0-hard: rgb(var(--dark0-hard_x));
+  --dark0-hard_x: 29, 32, 33;
+  --dark0-soft: rgb(var(--dark0-soft_x));
+  --dark0-soft_x: 50, 48, 47;
+  --dark1: rgb(var(--dark1_x));
+  --dark1_x: 60, 56, 54;
+  --dark2: rgb(var(--dark2_x));
+  --dark2_x: 80, 73, 69;
+  --dark3: rgb(var(--dark3_x));
+  --dark3_x: 102, 92, 84;
+  --dark4: rgb(var(--dark4_x));
+  --dark4_x: 124, 111, 100;
+  --faded-aqua: rgb(var(--faded-aqua_x));
+  --faded-aqua_x: 66, 123, 88;
+  --faded-blue: rgb(var(--faded-blue_x));
+  --faded-blue_x: 7, 102, 120;
+  --faded-green: rgb(var(--faded-green_x));
+  --faded-green_x: 121, 116, 14;
+  --faded-orange: rgb(var(--faded-orange_x));
+  --faded-orange_x: 175, 58, 3;
+  --faded-purple: rgb(var(--faded-purple_x));
+  --faded-purple_x: 143, 63, 113;
+  --faded-red: rgb(var(--faded-red_x));
+  --faded-red_x: 157, 0, 6;
+  --faded-yellow: rgb(var(--faded-yellow_x));
+  --faded-yellow_x: 181, 118, 20;
+  --gray: rgb(var(--gray_x));
+  --gray_x: 146, 131, 116;
+  --keyboard-height: 0px;
+  --light0: rgb(var(--light0_x));
+  --light0_x: 251, 241, 199;
+  --light0-hard: rgb(var(--light0-hard_x));
+  --light0-hard_x: 249, 245, 215;
+  --light0-soft: rgb(var(--light0-soft_x));
+  --light0-soft_x: 242, 229, 188;
+  --light1: rgb(var(--light1_x));
+  --light1_x: 235, 219, 178;
+  --light2: rgb(var(--light2_x));
+  --light2_x: 213, 196, 161;
+  --light3: rgb(var(--light3_x));
+  --light3_x: 189, 174, 147;
+  --light4: rgb(var(--light4_x));
+  --light4_x: 168, 153, 132;
+  --loading-icon-delay: 400ms;
+  --neutral-aqua: rgb(var(--neutral-aqua_x));
+  --neutral-aqua_x: 104, 157, 106;
+  --neutral-blue: rgb(var(--neutral-blue_x));
+  --neutral-blue_x: 69, 133, 136;
+  --neutral-green: rgb(var(--neutral-green_x));
+  --neutral-green_x: 152, 151, 26;
+  --neutral-orange: rgb(var(--neutral-orange_x));
+  --neutral-orange_x: 214, 93, 14;
+  --neutral-purple: rgb(var(--neutral-purple_x));
+  --neutral-purple_x: 177, 98, 134;
+  --neutral-red: rgb(var(--neutral-red_x));
+  --neutral-red_x: 204, 36, 29;
+  --neutral-yellow: rgb(var(--neutral-yellow_x));
+  --neutral-yellow_x: 215, 153, 33;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1107,11 +1181,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1163,94 +1237,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --bright-aqua: rgb(var(--bright-aqua_x));
-  --bright-aqua_x: 142, 192, 124;
-  --bright-blue: rgb(var(--bright-blue_x));
-  --bright-blue_x: 131, 165, 152;
-  --bright-green: rgb(var(--bright-green_x));
-  --bright-green_x: 184, 187, 38;
-  --bright-orange: rgb(var(--bright-orange_x));
-  --bright-orange_x: 254, 128, 25;
-  --bright-purple: rgb(var(--bright-purple_x));
-  --bright-purple_x: 211, 134, 155;
-  --bright-red: rgb(var(--bright-red_x));
-  --bright-red_x: 251, 73, 52;
-  --bright-yellow: rgb(var(--bright-yellow_x));
-  --bright-yellow_x: 250, 189, 47;
-  --dark0: rgb(var(--dark0_x));
-  --dark0_x: 40, 40, 40;
-  --dark0-hard: rgb(var(--dark0-hard_x));
-  --dark0-hard_x: 29, 32, 33;
-  --dark0-soft: rgb(var(--dark0-soft_x));
-  --dark0-soft_x: 50, 48, 47;
-  --dark1: rgb(var(--dark1_x));
-  --dark1_x: 60, 56, 54;
-  --dark2: rgb(var(--dark2_x));
-  --dark2_x: 80, 73, 69;
-  --dark3: rgb(var(--dark3_x));
-  --dark3_x: 102, 92, 84;
-  --dark4: rgb(var(--dark4_x));
-  --dark4_x: 124, 111, 100;
-  --faded-aqua: rgb(var(--faded-aqua_x));
-  --faded-aqua_x: 66, 123, 88;
-  --faded-blue: rgb(var(--faded-blue_x));
-  --faded-blue_x: 7, 102, 120;
-  --faded-green: rgb(var(--faded-green_x));
-  --faded-green_x: 121, 116, 14;
-  --faded-orange: rgb(var(--faded-orange_x));
-  --faded-orange_x: 175, 58, 3;
-  --faded-purple: rgb(var(--faded-purple_x));
-  --faded-purple_x: 143, 63, 113;
-  --faded-red: rgb(var(--faded-red_x));
-  --faded-red_x: 157, 0, 6;
-  --faded-yellow: rgb(var(--faded-yellow_x));
-  --faded-yellow_x: 181, 118, 20;
-  --gray: rgb(var(--gray_x));
-  --gray_x: 146, 131, 116;
-  --keyboard-height: 0px;
-  --light0: rgb(var(--light0_x));
-  --light0_x: 251, 241, 199;
-  --light0-hard: rgb(var(--light0-hard_x));
-  --light0-hard_x: 249, 245, 215;
-  --light0-soft: rgb(var(--light0-soft_x));
-  --light0-soft_x: 242, 229, 188;
-  --light1: rgb(var(--light1_x));
-  --light1_x: 235, 219, 178;
-  --light2: rgb(var(--light2_x));
-  --light2_x: 213, 196, 161;
-  --light3: rgb(var(--light3_x));
-  --light3_x: 189, 174, 147;
-  --light4: rgb(var(--light4_x));
-  --light4_x: 168, 153, 132;
-  --loading-icon-delay: 400ms;
-  --neutral-aqua: rgb(var(--neutral-aqua_x));
-  --neutral-aqua_x: 104, 157, 106;
-  --neutral-blue: rgb(var(--neutral-blue_x));
-  --neutral-blue_x: 69, 133, 136;
-  --neutral-green: rgb(var(--neutral-green_x));
-  --neutral-green_x: 152, 151, 26;
-  --neutral-orange: rgb(var(--neutral-orange_x));
-  --neutral-orange_x: 214, 93, 14;
-  --neutral-purple: rgb(var(--neutral-purple_x));
-  --neutral-purple_x: 177, 98, 134;
-  --neutral-red: rgb(var(--neutral-red_x));
-  --neutral-red_x: 204, 36, 29;
-  --neutral-yellow: rgb(var(--neutral-yellow_x));
-  --neutral-yellow_x: 215, 153, 33;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1629,3 +1615,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

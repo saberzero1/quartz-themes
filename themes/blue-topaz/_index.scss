@@ -5911,18 +5911,82 @@
   content: "\ef0b";
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --background-code: #292d3e;
+  --button-radius: 4px;
+  --cards-width: 87.04px;
+  --code-atom: #f78c6c;
+  --code-attribute: #c792ea;
+  --code-attribute-in-comment: #c792ea;
+  --code-bracket: #ff5370;
+  --code-builtin: #ffcb6b;
+  --code-callee: #89ddff;
+  --code-comment: #676e95;
+  --code-def: #82aaff;
+  --code-definition: #82aaff;
+  --code-error-bg: #ff5370;
+  --code-header: #da7dae;
+  --code-hr: #98e342;
+  --code-keyword: #c792ea;
+  --code-link: #696d70;
+  --code-matching-bracket: #ffffff;
+  --code-meta: #ffcb6b;
+  --code-normal: #d4d4d4;
+  --code-number: #ff5370;
+  --code-operator: #89ddff;
+  --code-property: #c792ea;
+  --code-qualifier: #decb6b;
+  --code-string: #c3e88d;
+  --code-string-2: #f07178;
+  --code-tag: #ff5370;
+  --code-tag-in-comment: #ff5370;
+  --code-type: #decb6b;
+  --code-variable: #f07178;
+  --code-variable-2: #53ada3;
+  --code-variable-3: #e7852fe7;
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --matrix-1: var(--p-kanban-color-2);
+  --matrix-2: var(--p-kanban-color-3);
+  --matrix-4: var(--p-kanban-color-5);
+  --matrix-5: var(--p-kanban-color-6);
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --simple-black-1: hsla(0, 0%, 13%, 1);
+  --simple-black-2: hsla(220, 20%, 35%, 1);
+  --simple-blue-1: hsla(209, 95%, 62%, 1);
+  --simple-blue-2: hsla(209, 85%, 72%, 0.5);
+  --simple-blue-3: hsla(245, 60%, 67%, 1);
+  --simple-blue-4: hsla(209, 20%, 66%, 0.62);
+  --simple-gray-1: hsla(0, 0%, 33%, 1);
+  --simple-gray-2: hsla(210, 15%, 70%, 0.2);
+  --simple-gray-3: hsla(210, 15%, 20%, 0.2);
+  --simple-gray-4: hsla(210, 6%, 38%, 0.5);
+  --simple-gray-5: hsla(207, 17%, 90%, 1);
+  --simple-gray-6: hsla(217, 15%, 83%, 1);
+  --simple-gray-7: hsla(217, 15%, 83%, 0.7);
+  --simple-orange: hsla(25, 75%, 65%, 1);
+  --simple-red-1: hsla(365, 90%, 62%, 1);
+  --simple-red-2: hsl(365, 95%, 85%, 1);
+  --simple-red-3: hsl(365, 85%, 45%, 1);
+  --simple-tran: hsla(204, 45%, 97%, 0);
+  --simple-white-1: hsla(204, 45%, 97%, 1);
+  --simple-white-2: hsla(210, 45%, 95%, 1);
+  --simple-white-3: hsla(212, 17%, 80%, 0.2);
+  --simple-white-4: hsla(180, 33%, 99%, 1);
+  --simple-white-5: hsla(207, 10%, 90%, 0.1);
+  --simple-white-6: hsla(212, 17%, 80%, 0.3);
+  --simple-yellow: hsla(60, 100%, 50%, 0.4);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --window-radius: 8px;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -6825,11 +6889,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -6883,84 +6947,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --background-code: #292d3e;
-  --button-radius: 4px;
-  --cards-width: 87.04px;
-  --code-atom: #f78c6c;
-  --code-attribute: #c792ea;
-  --code-attribute-in-comment: #c792ea;
-  --code-bracket: #ff5370;
-  --code-builtin: #ffcb6b;
-  --code-callee: #89ddff;
-  --code-comment: #676e95;
-  --code-def: #82aaff;
-  --code-definition: #82aaff;
-  --code-error-bg: #ff5370;
-  --code-header: #da7dae;
-  --code-hr: #98e342;
-  --code-keyword: #c792ea;
-  --code-link: #696d70;
-  --code-matching-bracket: #ffffff;
-  --code-meta: #ffcb6b;
-  --code-normal: #d4d4d4;
-  --code-number: #ff5370;
-  --code-operator: #89ddff;
-  --code-property: #c792ea;
-  --code-qualifier: #decb6b;
-  --code-string: #c3e88d;
-  --code-string-2: #f07178;
-  --code-tag: #ff5370;
-  --code-tag-in-comment: #ff5370;
-  --code-type: #decb6b;
-  --code-variable: #f07178;
-  --code-variable-2: #53ada3;
-  --code-variable-3: #e7852fe7;
-  --keyboard-height: 0px;
-  --loading-icon-delay: 400ms;
-  --matrix-1: var(--p-kanban-color-2);
-  --matrix-2: var(--p-kanban-color-3);
-  --matrix-4: var(--p-kanban-color-5);
-  --matrix-5: var(--p-kanban-color-6);
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --simple-black-1: hsla(0, 0%, 13%, 1);
-  --simple-black-2: hsla(220, 20%, 35%, 1);
-  --simple-blue-1: hsla(209, 95%, 62%, 1);
-  --simple-blue-2: hsla(209, 85%, 72%, 0.5);
-  --simple-blue-3: hsla(245, 60%, 67%, 1);
-  --simple-blue-4: hsla(209, 20%, 66%, 0.62);
-  --simple-gray-1: hsla(0, 0%, 33%, 1);
-  --simple-gray-2: hsla(210, 15%, 70%, 0.2);
-  --simple-gray-3: hsla(210, 15%, 20%, 0.2);
-  --simple-gray-4: hsla(210, 6%, 38%, 0.5);
-  --simple-gray-5: hsla(207, 17%, 90%, 1);
-  --simple-gray-6: hsla(217, 15%, 83%, 1);
-  --simple-gray-7: hsla(217, 15%, 83%, 0.7);
-  --simple-orange: hsla(25, 75%, 65%, 1);
-  --simple-red-1: hsla(365, 90%, 62%, 1);
-  --simple-red-2: hsl(365, 95%, 85%, 1);
-  --simple-red-3: hsl(365, 85%, 45%, 1);
-  --simple-tran: hsla(204, 45%, 97%, 0);
-  --simple-white-1: hsla(204, 45%, 97%, 1);
-  --simple-white-2: hsla(210, 45%, 95%, 1);
-  --simple-white-3: hsla(212, 17%, 80%, 0.2);
-  --simple-white-4: hsla(180, 33%, 99%, 1);
-  --simple-white-5: hsla(207, 10%, 90%, 0.1);
-  --simple-white-6: hsla(212, 17%, 80%, 0.3);
-  --simple-yellow: hsla(60, 100%, 50%, 0.4);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --window-radius: 8px;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -7811,3 +7797,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}
