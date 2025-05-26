@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes */
+@use "sass:string";
+/* quartz themes */
+
 :root[saved-theme="dark"] {
   --accent-h: 163;
   --accent-l: 28%;
@@ -130,6 +132,7 @@
   --width-vll: 700px;
   color-scheme: dark;
 }
+
 :root[saved-theme="light"] {
   --accent-h: 163;
   --accent-l: 28%;
@@ -250,7 +253,9 @@
   --toggle-border-width: 0;
   --width-vll: 700px;
   color-scheme: light;
-} /* vietnamese */
+}
+
+/* vietnamese */
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
@@ -259,7 +264,8 @@
     format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0,
     U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-} /* latin-ext */
+}
+/* latin-ext */
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
@@ -269,7 +275,8 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
     U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
     U+2C60-2C7F, U+A720-A7FF;
-} /* latin */
+}
+/* latin */
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
@@ -278,7 +285,9 @@
     format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-} /* latin-ext */
+}
+
+/* latin-ext */
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
@@ -288,7 +297,8 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
     U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
     U+2C60-2C7F, U+A720-A7FF;
-} /* latin */
+}
+/* latin */
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
@@ -296,7 +306,9 @@
   src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-} /* latin-ext */
+}
+
+/* latin-ext */
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -306,7 +318,8 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
     U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
     U+2C60-2C7F, U+A720-A7FF;
-} /* latin */
+}
+/* latin */
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -315,7 +328,9 @@
     format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-} /* cyrillic-ext */
+}
+
+/* cyrillic-ext */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -323,7 +338,8 @@
   src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnTfc7AGraJwA.woff2)
     format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-} /* cyrillic */
+}
+/* cyrillic */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -331,7 +347,8 @@
   src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_G-bnTfc7AGraJwA.woff2)
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-} /* greek */
+}
+/* greek */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -339,7 +356,8 @@
   src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_B-bnTfc7AGraJwA.woff2)
     format("woff2");
   unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-} /* vietnamese */
+}
+/* vietnamese */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -348,7 +366,8 @@
     format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0,
     U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-} /* latin-ext */
+}
+/* latin-ext */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -358,7 +377,8 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
     U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
     U+2C60-2C7F, U+A720-A7FF;
-} /* latin */
+}
+/* latin */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -367,7 +387,9 @@
     format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-} /*
+}
+
+/*
 * Remix Icon v4.5.0
 * https://remixicon.com
 * https://github.com/Remix-Design/RemixIcon
@@ -9514,7 +9536,9 @@
 }
 .ri-safe-3-line:before {
   content: "\f5cc";
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -9538,6 +9562,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -10247,7 +10272,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --accent-h: 163;
@@ -10384,7 +10410,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */ /* START LIGHT */
+}
+/* END DARK */
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --accent-h: 163;
@@ -10515,7 +10543,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-} /* END LIGHT */
+}
+/* END LIGHT */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -11076,7 +11105,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START LIGHT GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -11128,7 +11159,9 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END LIGHT GRAPH */ /* START DARK GRAPH */
+}
+/* END LIGHT GRAPH */
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -11180,4 +11213,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

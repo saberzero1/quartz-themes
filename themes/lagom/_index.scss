@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes */
+@use "sass:string";
+/* quartz themes */
+
 :root[saved-theme="dark"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
@@ -71,6 +73,7 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
+
 :root[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -127,7 +130,9 @@
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   color-scheme: light;
-} /* === import special font that doesn't render hashtags (#) */
+}
+
+/* === import special font that doesn't render hashtags (#) */
 @font-face {
   font-family: "Formular";
   src: url("data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAXMAA4AAAAACOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAAFZAAAABYAAAAWABMABkdQT1MAAAV8AAAAIAAAACBEdkx1R1NVQgAABZwAAAAvAAAAMCN+JIxPUy8yAAACDAAAAEcAAABgII84HWNtYXAAAAJUAAAAMQAAADwAOwB9Z2FzcAAABVwAAAAIAAAACP//AANnbHlmAAABRAAAACgAAAAoKX11F2hlYWQAAAGcAAAANgAAADYW4dEnaGhlYQAAAewAAAAgAAAAJA/2Cc9obXR4AAAB1AAAABgAAAAYDeYAd2xvY2EAAAGMAAAADQAAAA4APAA8bWF4cAAAAWwAAAAeAAAAIABLAEVuYW1lAAACiAAAAq4AAAXocAf8uHBvc3QAAAU4AAAAJAAAADNVXVC5AAIAdwAAA8MFtgADAAcAADMRIRElIREhdwNM/T8CNf3LBbb6SoEEtHjaY2BkYGBgY3BiYGYAASYgZmQAiTmA+QwACZIAkQAAeNpjYGAQQUAAAt4AeQAAAAABAAAAAgCDDlp/b18PPPUACwgAAAAAAM8sf4QAAAAA4KMGkP+m/lgITAc7AAAACAACAAAAAAAABDkAdwAAAAACqgAAAAAAAAI5AAAEygAAeNpjYGRgYLP8Z8l4krv//zIGBg4fBqAICmADAH24BNx42mNgZrnJOIGBlYGB1ZjlLAMDwywIzXSWIY0pC0gzIAFGBnTgwKDAoMxm+c+S8ST7XcY3CgwM08EKfzCdAlIKDEwAU4UM+QB42mNgYGBiYGBgBmIRIMkIplkYNIA0G5BmBMoqMCj//w/kg+n/T/4/AqsCAgCI4wiyAAAAeNqtUrtu1EAUvfZu3g/RISGERqJJpMReVkFityKJlBSRUEgRiXJsjx+s12ONZ9dxw5/QUFJS8QF8AZ9CS8Px7CRrIJEosOWZc1/nnrkeInrmFOTQ4nmHb4EdWoe1wC6tEbe4Ry8ptbjfyVmhHfpo8WrHv0Zv6bPF67RHPy3e6ODNTt8teuw8t3i7g3dozxlbvEtPnQBKnP4GrC/OB4sdeuQOLHZp131tcY/eu28s7ndyVuiJ+9Xi1Y5/jT653y1ep8uetnijgzc7fbfI632zeLuDd5D/w+JdetU/OZVlo7Ik1Wwv3GfDwYujQywjFjTsnDe8EOyEJxGvuIJxwK4bHqaiyvmcXWQqy0UxkR47znNmSCqmRCXUXETemVTTWc7VlUjabUHW5VpS3TGN2W3VuJUyuhaqymTBht5gMLzMBa8EGsRCMS2ZTgVbqq9EqNvUWCoTiWWhmVY8ElOuJoxrrbJgZlIKqbNQVN6/ni/Vuhz7fl3XXqBkXcTyxpMqOS4aNoOgOtOpnGlWCjXNKqM3q1ipZJoFmRaRLe+W+jkEFKHw6ZQkldSQoowS3GJNDLcwpH3sQxrQCzqiQ4tG8AXIZXSOu9/gK0jAOgFKKMJa4VM2coDItcEheAViOfAc3gv0avvl8BY0gQIP3mPYOfalkspYbaXAPscaIfMM+YqmNDN8iq7gT+6srrKHdN2n6m9NY3T/s9f4biojsLSqKtRIVLR+D5EB9kvDwo3uxQlik8twJmnW1ETum31bEwLdssZGwbImNn5tPAo9IninRtsEPg6vNnwBNC9ZCuytFZoTe//9/6Wmb4n5+Hhr83rQoBCrkdOqvoGnPUuCP12YWzSzE6rB1Z5PGs0MPMJMPUN8Od/M3IfScKbmhG1Veyd+7/5QVx96FxMozOr/AnWqLjEAAHjaY2BiAIP/DAxpDNgAGxAzMjAxMjEwM7Cx+IX6+AAAP3gCvAAAAAH//wACAAEAAAAMAAAAAAAAAAIAAQADAAUAAQAAAAEAAAAKABwAHgABREZMVAAIAAQAAAAA//8AAAAAAAB42mNgZGBg4GLQYdBjYHZx8wlhEEmuLMphkMtJLMljkGNgAcoy/P/PAAcArlkHTgA=")
@@ -135,7 +140,9 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -159,6 +166,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -926,7 +934,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -1004,7 +1013,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */ /* START LIGHT */
+}
+/* END DARK */
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -1071,7 +1082,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-} /* END LIGHT */
+}
+/* END LIGHT */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1632,7 +1644,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START LIGHT GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1684,7 +1698,9 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END LIGHT GRAPH */ /* START DARK GRAPH */
+}
+/* END LIGHT GRAPH */
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1736,4 +1752,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

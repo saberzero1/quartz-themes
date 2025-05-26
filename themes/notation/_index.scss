@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes */
+@use "sass:string";
+/* quartz themes */
+
 :root[saved-theme="dark"] {
   --background-blue: rgb(54, 73, 84);
   --background-brown: rgb(67, 64, 64);
@@ -95,6 +97,7 @@
   --text-yellow: rgb(255, 220, 73);
   color-scheme: dark;
 }
+
 :root[saved-theme="light"] {
   --background-blue: rgb(221, 235, 241);
   --background-brown: rgb(233, 229, 227);
@@ -179,6 +182,7 @@
   --text-yellow: rgb(223, 171, 1);
   color-scheme: light;
 }
+
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
@@ -274,7 +278,9 @@
   src:
     local("SF Mono"),
     url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -298,6 +304,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -1008,7 +1015,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --background-blue: rgb(54, 73, 84);
@@ -1110,7 +1118,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */ /* START LIGHT */
+}
+/* END DARK */
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --background-blue: rgb(221, 235, 241);
@@ -1204,7 +1214,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-} /* END LIGHT */
+}
+/* END LIGHT */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1759,7 +1770,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START LIGHT GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1811,7 +1824,9 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END LIGHT GRAPH */ /* START DARK GRAPH */
+}
+/* END LIGHT GRAPH */
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1863,4 +1878,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

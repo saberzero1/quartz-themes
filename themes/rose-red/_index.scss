@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes dark-only */
+@use "sass:string";
+/* quartz themes dark-only */
+
 :root:root {
   --accent-h: 135;
   --accent-l: 65%;
@@ -103,14 +105,18 @@
   --text-title-h6: #3ca4e0;
   color-scheme: dark;
 }
+
 .darkmode {
   display: none;
-} /**
+}
+
+/**
  * Minified by jsDelivr using clean-css v5.3.2.
  * Original file: /npm/hack-font@3.3.0/build/web/hack.css
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */ /*!
+ */
+/*!
  *  Hack typeface https://github.com/source-foundry/Hack
  *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
  */
@@ -153,7 +159,10 @@
       format("woff");
   font-weight: 700;
   font-style: italic;
-} /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */ /* Callouts */
+}
+/*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -177,6 +186,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --dark-linear-gradient: linear-gradient(
     45deg,
@@ -916,7 +926,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root,
 html {
   --accent-h: 135;
@@ -1026,7 +1037,8 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */
+}
+/* END DARK */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1581,7 +1593,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START DARK GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START DARK GRAPH */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1633,4 +1647,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

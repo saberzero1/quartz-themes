@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes dark-only */
+@use "sass:string";
+/* quartz themes dark-only */
+
 :root:root {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
@@ -71,9 +73,11 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
+
 .darkmode {
   display: none;
 }
+
 @font-face {
   font-family: "Euclid Circular A";
   font-style: normal;
@@ -153,12 +157,15 @@
   src:
     local("Euclid Circular A"),
     url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff") format("woff");
-} /**
+}
+
+/**
  * Minified by jsDelivr using clean-css v5.3.2.
  * Original file: /npm/hack-font@3.3.0/build/web/hack.css
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */ /*!
+ */
+/*!
  *  Hack typeface https://github.com/source-foundry/Hack
  *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
  */
@@ -201,7 +208,10 @@
       format("woff");
   font-weight: 700;
   font-style: italic;
-} /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */ /* Callouts */
+}
+/*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -225,6 +235,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --color-aquamarine: #b7f3db;
   --color-aquamarine-rgb: 183, 243, 219;
@@ -960,7 +971,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root,
 html {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -1038,7 +1050,8 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */
+}
+/* END DARK */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1593,7 +1606,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START DARK GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START DARK GRAPH */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1645,4 +1660,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */
