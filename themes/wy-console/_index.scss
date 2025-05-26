@@ -2203,18 +2203,50 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --col-accent: #3fff8c;
+  --col-accent-plus: #99e5b5;
+  --col-base: #318c54;
+  --col-base-background: #0b1510;
+  --col-danger: #230d0d;
+  --col-important: #ffd303;
+  --col-important-muted: #3f3401;
+  --col-important-plus: #fff2bf;
+  --col-muted: #163f26;
+  --col-muted-plus: #020704;
+  --col-safety: #122127;
+  --col-text-selection: #437254;
+  --col-txt-titlebars: black;
+  --files-font-size: 1em;
+  --fnt-head-p: "DotGothic16", "ModeSeven Regular";
+  --fnt-title: "Audiowide", "Scifi Title";
+  --folders-font-size: 1em;
+  --keyboard-height: 0px;
+  --letterspacing-txt-headers: 1.5px;
+  --letterspacing-txt-p: 0.5px;
+  --loading-icon-delay: 400ms;
+  --oz-fta-file-font-size: 1em;
+  --oz-fta-folder-font-size: 1em;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --siz-txt-h1: 1.75em;
+  --siz-txt-h2: 1.6em;
+  --siz-txt-h3: 1.45em;
+  --siz-txt-h4: 1.3em;
+  --siz-txt-h5: 1.15em;
+  --siz-txt-h6: 1em;
+  --siz-txt-p: 1em;
+  --siz-txt-title: 2em;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --text-selection: var(--col-base);
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -3027,11 +3059,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -3083,52 +3115,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --col-accent: #3fff8c;
-  --col-accent-plus: #99e5b5;
-  --col-base: #318c54;
-  --col-base-background: #0b1510;
-  --col-danger: #230d0d;
-  --col-important: #ffd303;
-  --col-important-muted: #3f3401;
-  --col-important-plus: #fff2bf;
-  --col-muted: #163f26;
-  --col-muted-plus: #020704;
-  --col-safety: #122127;
-  --col-text-selection: #437254;
-  --col-txt-titlebars: black;
-  --files-font-size: 1em;
-  --fnt-head-p: "DotGothic16", "ModeSeven Regular";
-  --fnt-title: "Audiowide", "Scifi Title";
-  --folders-font-size: 1em;
-  --keyboard-height: 0px;
-  --letterspacing-txt-headers: 1.5px;
-  --letterspacing-txt-p: 0.5px;
-  --loading-icon-delay: 400ms;
-  --oz-fta-file-font-size: 1em;
-  --oz-fta-folder-font-size: 1em;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --siz-txt-h1: 1.75em;
-  --siz-txt-h2: 1.6em;
-  --siz-txt-h3: 1.45em;
-  --siz-txt-h4: 1.3em;
-  --siz-txt-h5: 1.15em;
-  --siz-txt-h6: 1em;
-  --siz-txt-p: 1em;
-  --siz-txt-title: 2em;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --text-selection: var(--col-base);
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -3478,3 +3464,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

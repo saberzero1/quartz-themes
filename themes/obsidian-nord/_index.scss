@@ -400,18 +400,54 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --dark0: rgb(var(--dark0_x));
+  --dark0_x: 46, 52, 64;
+  --dark1: rgb(var(--dark1_x));
+  --dark1_x: 59, 66, 82;
+  --dark2: rgb(var(--dark2_x));
+  --dark2_x: 67, 76, 94;
+  --dark3: rgb(var(--dark3_x));
+  --dark3_x: 76, 86, 106;
+  --frost0: rgb(var(--frost0_x));
+  --frost0_x: 143, 188, 187;
+  --frost1: rgb(var(--frost1_x));
+  --frost1_x: 136, 192, 208;
+  --frost2: rgb(var(--frost2_x));
+  --frost2_x: 129, 161, 193;
+  --frost3: rgb(var(--frost3_x));
+  --frost3_x: 94, 129, 172;
+  --green: rgb(var(--green_x));
+  --green_x: 163, 190, 140;
+  --keyboard-height: 0px;
+  --light0: rgb(var(--light0_x));
+  --light0_x: 216, 222, 233;
+  --light1: rgb(var(--light1_x));
+  --light1_x: 229, 233, 240;
+  --light2: rgb(var(--light2_x));
+  --light2_x: 236, 239, 244;
+  --light3: rgb(var(--light3_x));
+  --light3_x: 255, 255, 255;
+  --loading-icon-delay: 400ms;
+  --orange: rgb(var(--orange_x));
+  --orange_x: 208, 135, 112;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --purple: rgb(var(--purple_x));
+  --purple_x: 180, 142, 173;
+  --red: rgb(var(--red_x));
+  --red_x: 191, 97, 106;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --yellow: rgb(var(--yellow_x));
+  --yellow_x: 235, 203, 139;
 }
 
 body {
@@ -1104,11 +1140,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1160,56 +1196,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --dark0: rgb(var(--dark0_x));
-  --dark0_x: 46, 52, 64;
-  --dark1: rgb(var(--dark1_x));
-  --dark1_x: 59, 66, 82;
-  --dark2: rgb(var(--dark2_x));
-  --dark2_x: 67, 76, 94;
-  --dark3: rgb(var(--dark3_x));
-  --dark3_x: 76, 86, 106;
-  --frost0: rgb(var(--frost0_x));
-  --frost0_x: 143, 188, 187;
-  --frost1: rgb(var(--frost1_x));
-  --frost1_x: 136, 192, 208;
-  --frost2: rgb(var(--frost2_x));
-  --frost2_x: 129, 161, 193;
-  --frost3: rgb(var(--frost3_x));
-  --frost3_x: 94, 129, 172;
-  --green: rgb(var(--green_x));
-  --green_x: 163, 190, 140;
-  --keyboard-height: 0px;
-  --light0: rgb(var(--light0_x));
-  --light0_x: 216, 222, 233;
-  --light1: rgb(var(--light1_x));
-  --light1_x: 229, 233, 240;
-  --light2: rgb(var(--light2_x));
-  --light2_x: 236, 239, 244;
-  --light3: rgb(var(--light3_x));
-  --light3_x: 255, 255, 255;
-  --loading-icon-delay: 400ms;
-  --orange: rgb(var(--orange_x));
-  --orange_x: 208, 135, 112;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --purple: rgb(var(--purple_x));
-  --purple_x: 180, 142, 173;
-  --red: rgb(var(--red_x));
-  --red_x: 191, 97, 106;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow: rgb(var(--yellow_x));
-  --yellow_x: 235, 203, 139;
 }
 
 /* START DARK */
@@ -1586,3 +1572,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}
