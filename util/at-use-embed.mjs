@@ -43,6 +43,7 @@ function resolveScssPath(usePathString, currentFileDir) {
 
 /**
  * Recursively processes an SCSS string, inlining @use rules.
+ * This version minimizes internal cloning and raw manipulation to prioritize structure.
  *
  * @param {string} scssString - The SCSS content string.
  * @param {string} currentFilePath - Absolute path of the current SCSS file.
@@ -70,9 +71,9 @@ function processAndInline(
   }
   visitedForCircularCheck.add(absoluteCurrentFilePath);
 
-  let root;
+  let currentFileAst;
   try {
-    root = postcss.parse(scssString, { syntax: scssSyntax });
+    currentFileAst = postcss.parse(scssString, { syntax: scssSyntax });
   } catch (parseError) {
     console.error(
       `Error parsing SCSS in ${absoluteCurrentFilePath}: ${parseError.message}`,
@@ -86,11 +87,12 @@ function processAndInline(
   }
 
   const currentFileDir = path.dirname(absoluteCurrentFilePath);
-  const newNodes = [];
+  const nodesToKeepOrReplace = []; // Will hold original nodes or inlined content
   const localCollectedSassUseParams = new Set();
   const localSuccessfullyInlinedPaths = new Set();
 
-  for (const node of root.nodes) {
+  // Iterate over nodes of the *current* file being processed
+  for (const node of currentFileAst.nodes) {
     if (node.type === "atrule" && node.name === "use") {
       const useParamOriginal = node.params.trim();
       let modulePath;
@@ -102,15 +104,16 @@ function processAndInline(
         console.warn(
           `Skipping complex/malformed @use: ${node.toString()} in ${absoluteCurrentFilePath}`,
         );
-        newNodes.push(node.clone());
+        nodesToKeepOrReplace.push(node); // Keep the original node
         continue;
       }
 
       if (modulePath.startsWith("sass:")) {
         if (!isMainFile) {
           localCollectedSassUseParams.add(useParamOriginal);
+          // Don't add the "sass:" @use node itself to nodesToKeepOrReplace if it's from an inlined file
         } else {
-          newNodes.push(node.clone());
+          nodesToKeepOrReplace.push(node); // Keep "sass:" @use if in main file
         }
         continue;
       }
@@ -120,79 +123,63 @@ function processAndInline(
       if (resolvedPath) {
         try {
           const usedFileContent = fs.readFileSync(resolvedPath, "utf8");
-          // Add resolvedPath here, as we've successfully read it.
-          localSuccessfullyInlinedPaths.add(resolvedPath);
+          localSuccessfullyInlinedPaths.add(resolvedPath); // Mark as successfully read
 
-          const result = processAndInline(
+          const inlinedResult = processAndInline( // Recursive call
             usedFileContent,
             resolvedPath,
-            new Set(visitedForCircularCheck),
-            false,
+            new Set(visitedForCircularCheck), // Pass a copy for this branch's cycle check
+            false, // Inlined files are not the main file
           );
 
-          // START: Add newlines around inlined content
-          if (result.root.nodes.length > 0) {
-            result.root.nodes.forEach((inlinedNodeOriginal, index) => {
-              const clonedNode = inlinedNodeOriginal.clone();
+          // Add all nodes from the inlined file's processed AST.
+          // These nodes are moved from inlinedResult.root.
+          inlinedResult.root.nodes.forEach(inlinedNode => {
+            nodesToKeepOrReplace.push(inlinedNode);
+          });
 
-              // Ensure the first node of the inlined block starts with a newline
-              if (index === 0) {
-                let currentBefore = clonedNode.raws.before || "";
-                if (!currentBefore.startsWith("\n\n")) {
-                  currentBefore = "\n\n" + currentBefore;
-                }
-                clonedNode.raws.before = currentBefore;
-              }
-
-              // Ensure the last node of the inlined block ends with a newline
-              if (index === result.root.nodes.length - 1) {
-                let currentAfter = clonedNode.raws.after || "";
-                if (!currentAfter.endsWith("\n\n")) {
-                  currentAfter = currentAfter + "\n\n";
-                }
-                clonedNode.raws.after = currentAfter;
-              }
-              newNodes.push(clonedNode);
-            });
-          }
-          // END: Add newlines around inlined content
-
-          result.collectedSassUseParams.forEach((param) =>
+          inlinedResult.collectedSassUseParams.forEach(param =>
             localCollectedSassUseParams.add(param),
           );
-          result.successfullyInlinedPaths.forEach((p) =>
+          inlinedResult.successfullyInlinedPaths.forEach(p =>
             localSuccessfullyInlinedPaths.add(p),
           );
+
         } catch (error) {
           console.error(
             `Error reading/processing @use ${resolvedPath} from ${absoluteCurrentFilePath}: ${error.message}`,
           );
-          newNodes.push(node.clone());
+          nodesToKeepOrReplace.push(node); // Keep the original @use node if inlining fails
         }
       } else {
         console.warn(
           `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
         );
-        newNodes.push(node.clone());
+        nodesToKeepOrReplace.push(node); // Keep the original @use node if path resolution fails
       }
     } else {
-      newNodes.push(node.clone());
+      // This is a non-@use node from the current file (e.g., a rule, a comment, a variable).
+      nodesToKeepOrReplace.push(node); // Keep the original node
     }
   }
 
-  const resultRoot = postcss.root();
-  resultRoot.nodes = newNodes;
-  visitedForCircularCheck.delete(absoluteCurrentFilePath);
+  // Construct the resulting AST for *this* file's processing.
+  // The nodes in nodesToKeepOrReplace are moved here.
+  const resultRootForThisCall = postcss.root();
+  resultRootForThisCall.nodes = nodesToKeepOrReplace;
+
+  visitedForCircularCheck.delete(absoluteCurrentFilePath); // Clean up for current path
 
   return {
-    root: resultRoot,
+    root: resultRootForThisCall,
     collectedSassUseParams: localCollectedSassUseParams,
     successfullyInlinedPaths: localSuccessfullyInlinedPaths,
   };
 }
 
 /**
- * Main function to inline SCSS @use rules, handle "sass:" modules, and delete inlined files.
+ * Main function to inline SCSS @use rules, handle "sass:" modules,
+ * preserve main file content, and delete inlined files.
  *
  * @param {string} mainScssString - The content of the main SCSS file.
  * @param {string} mainFilePath - The absolute path to the main SCSS file.
@@ -201,9 +188,12 @@ function processAndInline(
 export function inlineScssUseRulesAndClean(mainScssString, mainFilePath) {
   const absoluteMainFilePath = path.resolve(mainFilePath);
 
+  // processAndInline is expected to:
+  // - For the main file: replace file-based @use with inlined content,
+  //   keep its own sass:use rules, and keep its other original nodes.
   const {
-    root: processedMainRoot,
-    collectedSassUseParams: sassParamsFromInlined,
+    root: processedMainAst, // AST of the main file after its file-based @uses are inlined
+    collectedSassUseParams: sassParamsFromInlinedFiles, // sass:uses from files that were inlined
     successfullyInlinedPaths,
   } = processAndInline(
     mainScssString,
@@ -212,33 +202,44 @@ export function inlineScssUseRulesAndClean(mainScssString, mainFilePath) {
     true, // This is the main file
   );
 
-  // Consolidate all "sass:" uses at the top and deduplicate
-  const finalSassUseParams = new Set(sassParamsFromInlined);
-  const finalNodes = [];
+  const finalRoot = postcss.root();
+  const mainFileSassUseParams = new Set();
 
-  // Extract existing "sass:" uses from the main processed root and collect other nodes
-  processedMainRoot.each((node) => {
+  // Iterate over the nodes of the processed main file's AST.
+  // These nodes include original content from _index.scss and content inlined from other files.
+  processedMainAst.nodes.forEach((node) => {
+    // It's crucial to clone nodes when moving them to a new parent or if they might be reused.
+    const clonedNode = node.clone();
+
     if (
-      node.type === "atrule" &&
-      node.name === "use" &&
-      node.params.trim().match(/^(['"])sass:.+?\1/)
+      clonedNode.type === "atrule" &&
+      clonedNode.name === "use" &&
+      clonedNode.params.trim().match(/^(['"])sass:.+?\1/)
     ) {
-      finalSassUseParams.add(node.params.trim());
+      // This is a "sass:" use rule found in the main file's processed content.
+      // Collect its parameter. We will re-add all sass: uses at the top later.
+      mainFileSassUseParams.add(clonedNode.params.trim());
     } else {
-      finalNodes.push(node); // Keep non-sass @use or other nodes
+      // This is either inlined content or original content from _index.scss (not a sass:use).
+      // Add it to our final AST.
+      finalRoot.append(clonedNode);
     }
   });
 
-  // Prepend all unique "sass:" uses
-  Array.from(finalSassUseParams)
-    .sort() // Optional: sort them for consistent output
+  // Combine all "sass:" uses: those originally in _index.scss and those hoisted from inlined files.
+  const allSassUseParams = new Set([
+    ...sassParamsFromInlinedFiles,
+    ...mainFileSassUseParams,
+  ]);
+
+  // Prepend all unique "sass:" uses to the final AST, sorted for consistency.
+  Array.from(allSassUseParams)
+    .sort() // Optional: sort them for consistent output order
     .reverse() // Prepend adds to the beginning, so reverse to maintain sorted order at top
     .forEach((param) => {
-      finalNodes.unshift(postcss.atRule({ name: "use", params: param }));
+      finalRoot.prepend(postcss.atRule({ name: "use", params: param }));
     });
 
-  const finalRoot = postcss.root();
-  finalRoot.nodes = finalNodes;
   const outputScss = finalRoot.toString(scssSyntax);
 
   // Delete inlined files (excluding the main file itself)
@@ -250,10 +251,8 @@ export function inlineScssUseRulesAndClean(mainScssString, mainFilePath) {
       } catch (err) {
         console.error(`Error deleting file ${filePath}: ${err.message}`);
       }
-    }
-  });
+    }}
+  );
 
-  const combineOutputScss = combineIdenticalSelectors(outputScss);
-
-  return combineOutputScss;
+  return outputScss;
 }
