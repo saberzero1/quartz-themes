@@ -329,18 +329,117 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --anim-duration-fast: 150ms;
+  --anim-duration-moderate: 250ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 500ms;
+  --anim-duration-superfast: 75ms;
+  --crimson0: 346, 50%, 40%;
+  --crimson1: 346, 50%, 36%;
+  --crimson2: 346, 50%, 32%;
+  --crimson3: 346, 50%, 28%;
+  --crimson4: 346, 50%, 24%;
+  --crimson5: 346, 50%, 20%;
+  --day0: 15, 20%, 96%;
+  --day1: 15, 20%, 92%;
+  --day2: 15, 20%, 88%;
+  --day3: 15, 20%, 84%;
+  --day4: 15, 20%, 80%;
+  --day5: 15, 20%, 76%;
+  --default-font: var(--font-default);
+  --font-default: "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
+  --font-headings: "Tahoma", serif;
+  --font-interface: var(--font-default);
+  --font-monospace: var(--font-monospace);
+  --font-title: "Jomhuria", "Source Sans Pro", sans-serif;
+  --frost0: 226, 40%, 44%;
+  --frost1: 226, 40%, 48%;
+  --frost2: 226, 40%, 52%;
+  --frost3: 226, 40%, 56%;
+  --frost4: 226, 40%, 60%;
+  --frost5: 226, 40%, 64%;
+  --green0: 108, 40%, 34%;
+  --green1: 108, 40%, 38%;
+  --green2: 108, 40%, 42%;
+  --green3: 108, 40%, 46%;
+  --green4: 108, 40%, 50%;
+  --green5: 108, 40%, 54%;
+  --indigo0: 270, 40%, 30%;
+  --indigo1: 270, 40%, 34%;
+  --indigo2: 270, 40%, 38%;
+  --indigo3: 270, 40%, 42%;
+  --indigo4: 270, 40%, 46%;
+  --indigo5: 270, 40%, 50%;
+  --keyboard-height: 0px;
+  --letterspacing-text-headers: 1.2px;
+  --letterspacing-text-p: 1px;
+  --loading-icon-delay: 400ms;
+  --moonstone0: 189, 40%, 34%;
+  --moonstone1: 189, 40%, 38%;
+  --moonstone2: 189, 40%, 42%;
+  --moonstone3: 189, 40%, 46%;
+  --moonstone4: 189, 40%, 50%;
+  --moonstone5: 189, 40%, 54%;
+  --night0: 300, 6%, 10%;
+  --night1: 300, 6%, 14%;
+  --night2: 300, 6%, 18%;
+  --night3: 300, 6%, 22%;
+  --night4: 300, 6%, 26%;
+  --night5: 300, 6%, 30%;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --peach0: 22, 50%, 40%;
+  --peach1: 22, 50%, 44%;
+  --peach2: 21, 50%, 48%;
+  --peach3: 21, 50%, 52%;
+  --peach4: 21, 50%, 56%;
+  --peach5: 22, 50%, 60%;
+  --pink0: 316, 50%, 60%;
+  --pink1: 316, 50%, 64%;
+  --pink2: 316, 50%, 68%;
+  --pink3: 316, 50%, 72%;
+  --pink4: 315, 50%, 76%;
+  --pink5: 316, 50%, 80%;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --size-icon: 15px;
+  --size-text-h1: 3em;
+  --size-text-h2: 30px;
+  --size-text-h3: 27px;
+  --size-text-h4: 24px;
+  --size-text-h5: 21px;
+  --size-text-h6: 18px;
+  --size-text-p: 15px;
+  --size-text-title: 5em;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --teal0: 160, 50%, 34%;
+  --teal1: 160, 50%, 38%;
+  --teal2: 160, 50%, 42%;
+  --teal3: 160, 50%, 46%;
+  --teal4: 160, 50%, 50%;
+  --teal5: 168, 50%, 54%;
+  --viewer-container-height: 0;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-maxbold: 900;
+  --weight-medium: 500;
+  --weight-normal: 400;
+  --weight-semibold: 600;
+  --weight-thin: 100;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --yellow0: 45, 50%, 44%;
+  --yellow1: 45, 50%, 48%;
+  --yellow2: 45, 50%, 52%;
+  --yellow3: 45, 50%, 56%;
+  --yellow4: 45, 50%, 60%;
+  --yellow5: 45, 50%, 64%;
 }
 
 body {
@@ -1035,11 +1134,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1102,119 +1201,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --anim-duration-fast: 150ms;
-  --anim-duration-moderate: 250ms;
-  --anim-duration-none: 0;
-  --anim-duration-slow: 500ms;
-  --anim-duration-superfast: 75ms;
-  --crimson0: 346, 50%, 40%;
-  --crimson1: 346, 50%, 36%;
-  --crimson2: 346, 50%, 32%;
-  --crimson3: 346, 50%, 28%;
-  --crimson4: 346, 50%, 24%;
-  --crimson5: 346, 50%, 20%;
-  --day0: 15, 20%, 96%;
-  --day1: 15, 20%, 92%;
-  --day2: 15, 20%, 88%;
-  --day3: 15, 20%, 84%;
-  --day4: 15, 20%, 80%;
-  --day5: 15, 20%, 76%;
-  --default-font: var(--font-default);
-  --font-default: "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
-  --font-headings: "Tahoma", serif;
-  --font-interface: var(--font-default);
-  --font-monospace: var(--font-monospace);
-  --font-title: "Jomhuria", "Source Sans Pro", sans-serif;
-  --frost0: 226, 40%, 44%;
-  --frost1: 226, 40%, 48%;
-  --frost2: 226, 40%, 52%;
-  --frost3: 226, 40%, 56%;
-  --frost4: 226, 40%, 60%;
-  --frost5: 226, 40%, 64%;
-  --green0: 108, 40%, 34%;
-  --green1: 108, 40%, 38%;
-  --green2: 108, 40%, 42%;
-  --green3: 108, 40%, 46%;
-  --green4: 108, 40%, 50%;
-  --green5: 108, 40%, 54%;
-  --indigo0: 270, 40%, 30%;
-  --indigo1: 270, 40%, 34%;
-  --indigo2: 270, 40%, 38%;
-  --indigo3: 270, 40%, 42%;
-  --indigo4: 270, 40%, 46%;
-  --indigo5: 270, 40%, 50%;
-  --keyboard-height: 0px;
-  --letterspacing-text-headers: 1.2px;
-  --letterspacing-text-p: 1px;
-  --loading-icon-delay: 400ms;
-  --moonstone0: 189, 40%, 34%;
-  --moonstone1: 189, 40%, 38%;
-  --moonstone2: 189, 40%, 42%;
-  --moonstone3: 189, 40%, 46%;
-  --moonstone4: 189, 40%, 50%;
-  --moonstone5: 189, 40%, 54%;
-  --night0: 300, 6%, 10%;
-  --night1: 300, 6%, 14%;
-  --night2: 300, 6%, 18%;
-  --night3: 300, 6%, 22%;
-  --night4: 300, 6%, 26%;
-  --night5: 300, 6%, 30%;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --peach0: 22, 50%, 40%;
-  --peach1: 22, 50%, 44%;
-  --peach2: 21, 50%, 48%;
-  --peach3: 21, 50%, 52%;
-  --peach4: 21, 50%, 56%;
-  --peach5: 22, 50%, 60%;
-  --pink0: 316, 50%, 60%;
-  --pink1: 316, 50%, 64%;
-  --pink2: 316, 50%, 68%;
-  --pink3: 316, 50%, 72%;
-  --pink4: 315, 50%, 76%;
-  --pink5: 316, 50%, 80%;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --size-icon: 15px;
-  --size-text-h1: 3em;
-  --size-text-h2: 30px;
-  --size-text-h3: 27px;
-  --size-text-h4: 24px;
-  --size-text-h5: 21px;
-  --size-text-h6: 18px;
-  --size-text-p: 15px;
-  --size-text-title: 5em;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --teal0: 160, 50%, 34%;
-  --teal1: 160, 50%, 38%;
-  --teal2: 160, 50%, 42%;
-  --teal3: 160, 50%, 46%;
-  --teal4: 160, 50%, 50%;
-  --teal5: 168, 50%, 54%;
-  --viewer-container-height: 0;
-  --weight-bold: 700;
-  --weight-extrabold: 800;
-  --weight-extralight: 200;
-  --weight-light: 300;
-  --weight-maxbold: 900;
-  --weight-medium: 500;
-  --weight-normal: 400;
-  --weight-semibold: 600;
-  --weight-thin: 100;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow0: 45, 50%, 44%;
-  --yellow1: 45, 50%, 48%;
-  --yellow2: 45, 50%, 52%;
-  --yellow3: 45, 50%, 56%;
-  --yellow4: 45, 50%, 60%;
-  --yellow5: 45, 50%, 64%;
 }
 
 /* START DARK */
@@ -1588,3 +1574,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

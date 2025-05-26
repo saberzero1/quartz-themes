@@ -446,18 +446,62 @@
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --font-family-folder-file-title:                                          ;
+  --font-family-h1:                                                         ;
+  --font-family-h2:                                                         ;
+  --font-family-h3:                                                         ;
+  --font-family-h4:                                                         ;
+  --font-family-h5:                                                         ;
+  --font-family-h6:                                                         ;
+  --font-family-list:                                                       ;
+  --font-family-major:                                                      ;
+  --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
+  --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina",
+    cursive;
+  --font-family-tag:                                                        ;
+  --font-family-title:                                                      ;
+  --font-family-vault:                                                      ;
+  --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
+  --font-size-code: 0.9375em;
+  --font-size-edit-blockquote: 1em;
+  --font-size-edit-code: 1em;
+  --font-size-edit-normal: 1em;
+  --font-size-embed-file: 1.25em;
+  --font-size-embed-title-size: 1.125em;
+  --font-size-file-header-title: 0.9375em;
+  --font-size-file-header-title-andy-plugin: 1em;
+  --font-size-folder-and-file: 0.8125em;
+  --font-size-h1: 1.5625em;
+  --font-size-h2: 1.4375em;
+  --font-size-h3: 1.3125em;
+  --font-size-h4: 1.1875em;
+  --font-size-h5: 1.0625em;
+  --font-size-h6: 0.9375em;
+  --font-size-latex: 1.25em;
+  --font-size-list: 1em;
+  --font-size-obsidian-titlebar: 0.75em;
+  --font-size-preview-blockquote: 1em;
+  --font-size-preview-normal: 1em;
+  --font-size-tag: 1em;
+  --font-size-vault-name: 0.875em;
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --text-family-inline-code: "Consolas", "Monaco", monospace;
+  --text-size-cloze: 0.9375em;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1150,11 +1194,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1206,64 +1250,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --font-family-folder-file-title:                                          ;
-  --font-family-h1:                                                         ;
-  --font-family-h2:                                                         ;
-  --font-family-h3:                                                         ;
-  --font-family-h4:                                                         ;
-  --font-family-h5:                                                         ;
-  --font-family-h6:                                                         ;
-  --font-family-list:                                                       ;
-  --font-family-major:                                                      ;
-  --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
-  --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina",
-    cursive;
-  --font-family-tag:                                                        ;
-  --font-family-title:                                                      ;
-  --font-family-vault:                                                      ;
-  --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
-  --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
-  --font-size-code: 0.9375em;
-  --font-size-edit-blockquote: 1em;
-  --font-size-edit-code: 1em;
-  --font-size-edit-normal: 1em;
-  --font-size-embed-file: 1.25em;
-  --font-size-embed-title-size: 1.125em;
-  --font-size-file-header-title: 0.9375em;
-  --font-size-file-header-title-andy-plugin: 1em;
-  --font-size-folder-and-file: 0.8125em;
-  --font-size-h1: 1.5625em;
-  --font-size-h2: 1.4375em;
-  --font-size-h3: 1.3125em;
-  --font-size-h4: 1.1875em;
-  --font-size-h5: 1.0625em;
-  --font-size-h6: 0.9375em;
-  --font-size-latex: 1.25em;
-  --font-size-list: 1em;
-  --font-size-obsidian-titlebar: 0.75em;
-  --font-size-preview-blockquote: 1em;
-  --font-size-preview-normal: 1em;
-  --font-size-tag: 1em;
-  --font-size-vault-name: 0.875em;
-  --keyboard-height: 0px;
-  --loading-icon-delay: 400ms;
-  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --text-family-inline-code: "Consolas", "Monaco", monospace;
-  --text-size-cloze: 0.9375em;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1781,3 +1767,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

@@ -297,18 +297,47 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --color-blue: #537791;
+  --color-blue-rgb: 83, 119, 145;
+  --color-cyan: #a6e6e3;
+  --color-cyan-rgb: 166, 230, 227;
+  --color-dark1: #282828;
+  --color-dark1-rgb: 40, 40, 40;
+  --color-darker-purple: 153, 119, 181;
+  --color-gray-rgb: 240, 240, 240;
+  --color-green: #ace099;
+  --color-green-rgb: 172, 224, 153;
+  --color-light1: #fffcf4;
+  --color-light1-rgb: 255, 252, 244;
+  --color-orange: #ff5400;
+  --color-orange-rgb: 255, 84, 0;
+  --color-pink: #fc62a2;
+  --color-red: #ff394d;
+  --color-red-rgb: 255, 57, 77;
+  --color-salmon: #ff8671;
+  --color-salmon-lighter: #ffa99a;
+  --color-salmon-lighter-rgb: 255, 169, 154;
+  --color-salmon-rgb: 255, 134, 113;
+  --color-yellow: #ffd77d;
+  --color-yellow-light: #ffe5a7;
+  --color-yellow-light-rgb: 255, 229, 167;
+  --color-yellow-rgb: 255, 215, 125;
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --sandover-purple: #c585cc;
+  --sandover-purple-rgb: 197, 133, 204;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1011,11 +1040,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1067,49 +1096,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --color-blue: #537791;
-  --color-blue-rgb: 83, 119, 145;
-  --color-cyan: #a6e6e3;
-  --color-cyan-rgb: 166, 230, 227;
-  --color-dark1: #282828;
-  --color-dark1-rgb: 40, 40, 40;
-  --color-darker-purple: 153, 119, 181;
-  --color-gray-rgb: 240, 240, 240;
-  --color-green: #ace099;
-  --color-green-rgb: 172, 224, 153;
-  --color-light1: #fffcf4;
-  --color-light1-rgb: 255, 252, 244;
-  --color-orange: #ff5400;
-  --color-orange-rgb: 255, 84, 0;
-  --color-pink: #fc62a2;
-  --color-red: #ff394d;
-  --color-red-rgb: 255, 57, 77;
-  --color-salmon: #ff8671;
-  --color-salmon-lighter: #ffa99a;
-  --color-salmon-lighter-rgb: 255, 169, 154;
-  --color-salmon-rgb: 255, 134, 113;
-  --color-yellow: #ffd77d;
-  --color-yellow-light: #ffe5a7;
-  --color-yellow-light-rgb: 255, 229, 167;
-  --color-yellow-rgb: 255, 215, 125;
-  --keyboard-height: 0px;
-  --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --sandover-purple: #c585cc;
-  --sandover-purple-rgb: 197, 133, 204;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1503,3 +1489,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

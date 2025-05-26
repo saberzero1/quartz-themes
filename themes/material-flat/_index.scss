@@ -494,18 +494,43 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --big-radius: 24px;
+  --bold: 650;
+  --elevation1: 0.05;
+  --elevation2: 0.08;
+  --elevation3: 0.11;
+  --elevation4: 0.12;
+  --elevation5: 0.14;
+  --h1: 2.25em;
+  --h2: 2em;
+  --h3: 1.75em;
+  --h4: 1.5em;
+  --h5: 1.375em;
+  --h6: 1em;
+  --keyboard-height: 0px;
+  --light: 350;
+  --link-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%);
+  --link-external-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%);
+  --loading-icon-delay: 400ms;
+  --medium: 500;
+  --medium-radius: 16px;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --regular: 400;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --small-radius: 8px;
+  --smaller: 0.875em;
+  --smallest: 0.75em;
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --titlebar-text-color-focused: var(--text-normal);
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -1206,11 +1231,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -1262,45 +1287,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --big-radius: 24px;
-  --bold: 650;
-  --elevation1: 0.05;
-  --elevation2: 0.08;
-  --elevation3: 0.11;
-  --elevation4: 0.12;
-  --elevation5: 0.14;
-  --h1: 2.25em;
-  --h2: 2em;
-  --h3: 1.75em;
-  --h4: 1.5em;
-  --h5: 1.375em;
-  --h6: 1em;
-  --keyboard-height: 0px;
-  --light: 350;
-  --link-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%);
-  --link-external-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%);
-  --loading-icon-delay: 400ms;
-  --medium: 500;
-  --medium-radius: 16px;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --regular: 400;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --small-radius: 8px;
-  --smaller: 0.875em;
-  --smallest: 0.75em;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --titlebar-text-color-focused: var(--text-normal);
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1734,3 +1720,17 @@ html[saved-theme="light"] {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}

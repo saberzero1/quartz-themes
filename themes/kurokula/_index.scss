@@ -212,18 +212,114 @@
     U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-  --color: rgb(var(#{"--callout-#{$type}"}));
-  --color-rgb: var(#{"--callout-#{$type}"});
+:root {
+  --keyboard-height: 0px;
+  --kuro-black-dark: #141515;
+  --kuro-black-dark-rgb: 20, 21, 21;
+  --kuro-black-light: #515151;
+  --kuro-black-light-rgb: 81, 81, 81;
+  --kuro-black-normal: #333333;
+  --kuro-black-normal-rgb: 51, 51, 51;
+  --kuro-blue-dark: #6890d7;
+  --kuro-blue-dark-rgb: 104, 144, 215;
+  --kuro-blue-light: #a1d9ff;
+  --kuro-blue-light-rgb: 161, 217, 255;
+  --kuro-blue-normal: #2ab9ff;
+  --kuro-blue-normal-rgb: 42, 185, 255;
+  --kuro-brown-dark: #837369;
+  --kuro-brown-dark-rgb: 131, 115, 105;
+  --kuro-brown-light: #f9cfb9;
+  --kuro-brown-light-rgb: 249, 207, 185;
+  --kuro-brown-normal: #9d5918;
+  --kuro-brown-normal-rgb: 157, 89, 24;
+  --kuro-code-attribute: var(--kuro-yellow-normal);
+  --kuro-code-bg: var(--kuro-black-dark);
+  --kuro-code-comment: var(--kuro-yellow-light);
+  --kuro-code-constant: var(--kuro-blue-normal);
+  --kuro-code-constant-builtin: var(--kuro-blue-normal);
+  --kuro-code-constant-builtin-bg: var(--kuro-blue-dark);
+  --kuro-code-constant-character-escape: var(--kuro-brown-light);
+  --kuro-code-constant-numeric: var(--kuro-cyan-dark);
+  --kuro-code-constructor: var(--kuro-cyan-normal);
+  --kuro-code-fg: var(--kuro-white-light);
+  --kuro-code-function: var(--kuro-yellow-dark);
+  --kuro-code-function-macro: var(--kuro-purple-light);
+  --kuro-code-keyword: var(--kuro-blue-dark);
+  --kuro-code-label: var(--kuro-yellow-light);
+  --kuro-code-namespace: var(--kuro-cyan-normal);
+  --kuro-code-operator: var(--kuro-white-dark);
+  --kuro-code-punctuation: var(--kuro-white-dark);
+  --kuro-code-special: var(--kuro-green-light);
+  --kuro-code-string: var(--kuro-green-dark);
+  --kuro-code-type: var(--kuro-orange-normal);
+  --kuro-code-type-builtin: var(--kuro-blue-light);
+  --kuro-code-type-enum-variant: var(--kuro-yellow-light);
+  --kuro-code-variable: var(--kuro-magenta-dark);
+  --kuro-code-variable-other: var(--kuro-brown-normal);
+  --kuro-code-variable-other-member: var(--kuro-orange-dark);
+  --kuro-cyan-dark: #60bebe;
+  --kuro-cyan-dark-rgb: 96, 190, 190;
+  --kuro-cyan-light: #8efff3;
+  --kuro-cyan-light-rgb: 142, 255, 243;
+  --kuro-cyan-normal: #1ef9f5;
+  --kuro-cyan-normal-rgb: 30, 249, 245;
+  --kuro-green-dark: #85b1a9;
+  --kuro-green-dark-rgb: 133, 177, 169;
+  --kuro-green-light: #c1ffae;
+  --kuro-green-light-rgb: 193, 255, 174;
+  --kuro-green-normal: #54ca74;
+  --kuro-green-normal-rgb: 84, 202, 116;
+  --kuro-magenta-dark: #cc83bd;
+  --kuro-magenta-dark-rgb: 204, 131, 189;
+  --kuro-magenta-light: #ffa2ed;
+  --kuro-magenta-light-rgb: 255, 162, 237;
+  --kuro-magenta-normal: #ff50da;
+  --kuro-magenta-normal-rgb: 255, 80, 218;
+  --kuro-monospace-default: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace,
+    SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
+    Monaco, "Consolas", "Source Code Pro", monospace;
+  --kuro-orange-dark: #ab7b4e;
+  --kuro-orange-dark-rgb: 171, 123, 78;
+  --kuro-orange-light: #ffc663;
+  --kuro-orange-light-rgb: 255, 198, 99;
+  --kuro-orange-normal: #e59605;
+  --kuro-orange-normal-rgb: 229, 150, 5;
+  --kuro-purple-dark: #887aa3;
+  --kuro-purple-dark-rgb: 136, 122, 163;
+  --kuro-purple-light: #a994ff;
+  --kuro-purple-light-rgb: 169, 148, 255;
+  --kuro-purple-normal: #9e60ec;
+  --kuro-purple-normal-rgb: 158, 96, 236;
+  --kuro-red-dark: #b66056;
+  --kuro-red-dark-rgb: 182, 96, 86;
+  --kuro-red-light: #ffb7b7;
+  --kuro-red-light-rgb: 255, 183, 183;
+  --kuro-red-normal: #d23e08;
+  --kuro-red-normal-rgb: 210, 62, 8;
+  --kuro-white-dark: #94959b;
+  --kuro-white-dark-rgb: 148, 149, 155;
+  --kuro-white-light: #ffffff;
+  --kuro-white-light-rgb: 255, 255, 255;
+  --kuro-white-normal: #ddd0c4;
+  --kuro-white-normal-rgb: 221, 208, 196;
+  --kuro-yellow-dark: #dbbb43;
+  --kuro-yellow-dark-rgb: 219, 187, 67;
+  --kuro-yellow-light: #fcffb8;
+  --kuro-yellow-light-rgb: 252, 255, 184;
+  --kuro-yellow-normal: #fff700;
+  --kuro-yellow-normal-rgb: 255, 247, 0;
+  --loading-icon-delay: 400ms;
+  --page-border: 1px solid CanvasText;
+  --page-margin: 8px auto -1px;
+  --pdfViewer-padding-bottom: 9px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --viewer-container-height: 0;
+  --xfa-focus-outline: 2px solid CanvasText;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 body {
@@ -924,11 +1020,11 @@ body {
       var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
     )
   );
-  background-color: var(--background-primary);
+  background-color: var(--bg);
   background-image: linear-gradient(transparent, transparent);
   background-position: center right;
   background-repeat: no-repeat;
-  border: var(--background-modifier-border, var(--color-base-30));
+  border: 1px solid var(--border);
   border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
   border-left: 1px solid
     var(--nav-item-border-color-active, var(--background-modifier-border-focus));
@@ -980,116 +1076,6 @@ body {
   user-select: none;
   white-space: var(--code-white-space);
   width: calc(var(--checkbox-size) - 6px);
-}
-
-:root {
-  --keyboard-height: 0px;
-  --kuro-black-dark: #141515;
-  --kuro-black-dark-rgb: 20, 21, 21;
-  --kuro-black-light: #515151;
-  --kuro-black-light-rgb: 81, 81, 81;
-  --kuro-black-normal: #333333;
-  --kuro-black-normal-rgb: 51, 51, 51;
-  --kuro-blue-dark: #6890d7;
-  --kuro-blue-dark-rgb: 104, 144, 215;
-  --kuro-blue-light: #a1d9ff;
-  --kuro-blue-light-rgb: 161, 217, 255;
-  --kuro-blue-normal: #2ab9ff;
-  --kuro-blue-normal-rgb: 42, 185, 255;
-  --kuro-brown-dark: #837369;
-  --kuro-brown-dark-rgb: 131, 115, 105;
-  --kuro-brown-light: #f9cfb9;
-  --kuro-brown-light-rgb: 249, 207, 185;
-  --kuro-brown-normal: #9d5918;
-  --kuro-brown-normal-rgb: 157, 89, 24;
-  --kuro-code-attribute: var(--kuro-yellow-normal);
-  --kuro-code-bg: var(--kuro-black-dark);
-  --kuro-code-comment: var(--kuro-yellow-light);
-  --kuro-code-constant: var(--kuro-blue-normal);
-  --kuro-code-constant-builtin: var(--kuro-blue-normal);
-  --kuro-code-constant-builtin-bg: var(--kuro-blue-dark);
-  --kuro-code-constant-character-escape: var(--kuro-brown-light);
-  --kuro-code-constant-numeric: var(--kuro-cyan-dark);
-  --kuro-code-constructor: var(--kuro-cyan-normal);
-  --kuro-code-fg: var(--kuro-white-light);
-  --kuro-code-function: var(--kuro-yellow-dark);
-  --kuro-code-function-macro: var(--kuro-purple-light);
-  --kuro-code-keyword: var(--kuro-blue-dark);
-  --kuro-code-label: var(--kuro-yellow-light);
-  --kuro-code-namespace: var(--kuro-cyan-normal);
-  --kuro-code-operator: var(--kuro-white-dark);
-  --kuro-code-punctuation: var(--kuro-white-dark);
-  --kuro-code-special: var(--kuro-green-light);
-  --kuro-code-string: var(--kuro-green-dark);
-  --kuro-code-type: var(--kuro-orange-normal);
-  --kuro-code-type-builtin: var(--kuro-blue-light);
-  --kuro-code-type-enum-variant: var(--kuro-yellow-light);
-  --kuro-code-variable: var(--kuro-magenta-dark);
-  --kuro-code-variable-other: var(--kuro-brown-normal);
-  --kuro-code-variable-other-member: var(--kuro-orange-dark);
-  --kuro-cyan-dark: #60bebe;
-  --kuro-cyan-dark-rgb: 96, 190, 190;
-  --kuro-cyan-light: #8efff3;
-  --kuro-cyan-light-rgb: 142, 255, 243;
-  --kuro-cyan-normal: #1ef9f5;
-  --kuro-cyan-normal-rgb: 30, 249, 245;
-  --kuro-green-dark: #85b1a9;
-  --kuro-green-dark-rgb: 133, 177, 169;
-  --kuro-green-light: #c1ffae;
-  --kuro-green-light-rgb: 193, 255, 174;
-  --kuro-green-normal: #54ca74;
-  --kuro-green-normal-rgb: 84, 202, 116;
-  --kuro-magenta-dark: #cc83bd;
-  --kuro-magenta-dark-rgb: 204, 131, 189;
-  --kuro-magenta-light: #ffa2ed;
-  --kuro-magenta-light-rgb: 255, 162, 237;
-  --kuro-magenta-normal: #ff50da;
-  --kuro-magenta-normal-rgb: 255, 80, 218;
-  --kuro-monospace-default: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace,
-    SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-    Monaco, "Consolas", "Source Code Pro", monospace;
-  --kuro-orange-dark: #ab7b4e;
-  --kuro-orange-dark-rgb: 171, 123, 78;
-  --kuro-orange-light: #ffc663;
-  --kuro-orange-light-rgb: 255, 198, 99;
-  --kuro-orange-normal: #e59605;
-  --kuro-orange-normal-rgb: 229, 150, 5;
-  --kuro-purple-dark: #887aa3;
-  --kuro-purple-dark-rgb: 136, 122, 163;
-  --kuro-purple-light: #a994ff;
-  --kuro-purple-light-rgb: 169, 148, 255;
-  --kuro-purple-normal: #9e60ec;
-  --kuro-purple-normal-rgb: 158, 96, 236;
-  --kuro-red-dark: #b66056;
-  --kuro-red-dark-rgb: 182, 96, 86;
-  --kuro-red-light: #ffb7b7;
-  --kuro-red-light-rgb: 255, 183, 183;
-  --kuro-red-normal: #d23e08;
-  --kuro-red-normal-rgb: 210, 62, 8;
-  --kuro-white-dark: #94959b;
-  --kuro-white-dark-rgb: 148, 149, 155;
-  --kuro-white-light: #ffffff;
-  --kuro-white-light-rgb: 255, 255, 255;
-  --kuro-white-normal: #ddd0c4;
-  --kuro-white-normal-rgb: 221, 208, 196;
-  --kuro-yellow-dark: #dbbb43;
-  --kuro-yellow-dark-rgb: 219, 187, 67;
-  --kuro-yellow-light: #fcffb8;
-  --kuro-yellow-light-rgb: 252, 255, 184;
-  --kuro-yellow-normal: #fff700;
-  --kuro-yellow-normal-rgb: 255, 247, 0;
-  --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --safe-area-inset-left: env(safe-area-inset-left);
-  --safe-area-inset-right: env(safe-area-inset-right);
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
 
 /* START DARK */
@@ -1174,3 +1160,17 @@ html {
 /* END DARK GRAPH */
 
 /* END CANVAS GRAPH WORKAROUND */
+
+/* Callouts */
+$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
+
+:root,
+html,
+:root,
+html {
+  --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+  --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+  --color: rgb(var(#{"--callout-#{$type}"}));
+  --color-rgb: var(#{"--callout-#{$type}"});
+}
