@@ -43,7 +43,7 @@ function resolveScssPath(usePathString, currentFileDir) {
 
 /**
  * Recursively processes an SCSS string, inlining @use rules.
- * This version minimizes internal cloning and raw manipulation to prioritize structure.
+ * Adds newlines around inlined content blocks using comment nodes.
  *
  * @param {string} scssString - The SCSS content string.
  * @param {string} currentFilePath - Absolute path of the current SCSS file.
@@ -87,11 +87,10 @@ function processAndInline(
   }
 
   const currentFileDir = path.dirname(absoluteCurrentFilePath);
-  const nodesToKeepOrReplace = []; // Will hold original nodes or inlined content
+  const nodesToKeepOrReplace = [];
   const localCollectedSassUseParams = new Set();
   const localSuccessfullyInlinedPaths = new Set();
 
-  // Iterate over nodes of the *current* file being processed
   for (const node of currentFileAst.nodes) {
     if (node.type === "atrule" && node.name === "use") {
       const useParamOriginal = node.params.trim();
@@ -104,16 +103,15 @@ function processAndInline(
         console.warn(
           `Skipping complex/malformed @use: ${node.toString()} in ${absoluteCurrentFilePath}`,
         );
-        nodesToKeepOrReplace.push(node); // Keep the original node
+        nodesToKeepOrReplace.push(node);
         continue;
       }
 
       if (modulePath.startsWith("sass:")) {
         if (!isMainFile) {
           localCollectedSassUseParams.add(useParamOriginal);
-          // Don't add the "sass:" @use node itself to nodesToKeepOrReplace if it's from an inlined file
         } else {
-          nodesToKeepOrReplace.push(node); // Keep "sass:" @use if in main file
+          nodesToKeepOrReplace.push(node);
         }
         continue;
       }
@@ -123,52 +121,62 @@ function processAndInline(
       if (resolvedPath) {
         try {
           const usedFileContent = fs.readFileSync(resolvedPath, "utf8");
-          localSuccessfullyInlinedPaths.add(resolvedPath); // Mark as successfully read
+          localSuccessfullyInlinedPaths.add(resolvedPath);
 
-          const inlinedResult = processAndInline( // Recursive call
+          const inlinedResult = processAndInline(
             usedFileContent,
             resolvedPath,
-            new Set(visitedForCircularCheck), // Pass a copy for this branch's cycle check
-            false, // Inlined files are not the main file
+            new Set(visitedForCircularCheck),
+            false,
           );
 
-          // Add all nodes from the inlined file's processed AST.
-          // These nodes are moved from inlinedResult.root.
-          inlinedResult.root.nodes.forEach(inlinedNode => {
-            nodesToKeepOrReplace.push(inlinedNode);
-          });
+          if (inlinedResult.root.nodes.length > 0) {
+            // Add an empty comment with a newline *before* the inlined block.
+            // This helps separate it from any preceding content.
+            const beforeMarker = postcss.comment({ text: "" }); // Empty comment
+            // Ensure its 'before' raw includes a newline if it's not the very first thing.
+            // If nodesToKeepOrReplace is not empty, it means there was content before this block.
+            beforeMarker.raws.before = nodesToKeepOrReplace.length > 0 ? "\n" : "";
+            nodesToKeepOrReplace.push(beforeMarker);
 
-          inlinedResult.collectedSassUseParams.forEach(param =>
+            inlinedResult.root.nodes.forEach((inlinedNode) => {
+              nodesToKeepOrReplace.push(inlinedNode);
+            });
+
+            // Add an empty comment with a newline *after* the inlined block.
+            // This helps ensure content following this block starts on a new line.
+            const afterMarker = postcss.comment({ text: "" });
+            afterMarker.raws.before = "\n"; // This comment itself should start on a new line.
+            // The stringifier should then place subsequent content after this.
+            nodesToKeepOrReplace.push(afterMarker);
+          }
+
+          inlinedResult.collectedSassUseParams.forEach((param) =>
             localCollectedSassUseParams.add(param),
           );
-          inlinedResult.successfullyInlinedPaths.forEach(p =>
+          inlinedResult.successfullyInlinedPaths.forEach((p) =>
             localSuccessfullyInlinedPaths.add(p),
           );
-
         } catch (error) {
           console.error(
             `Error reading/processing @use ${resolvedPath} from ${absoluteCurrentFilePath}: ${error.message}`,
           );
-          nodesToKeepOrReplace.push(node); // Keep the original @use node if inlining fails
+          nodesToKeepOrReplace.push(node);
         }
       } else {
         console.warn(
           `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
         );
-        nodesToKeepOrReplace.push(node); // Keep the original @use node if path resolution fails
+        nodesToKeepOrReplace.push(node);
       }
     } else {
-      // This is a non-@use node from the current file (e.g., a rule, a comment, a variable).
-      nodesToKeepOrReplace.push(node); // Keep the original node
+      nodesToKeepOrReplace.push(node);
     }
   }
 
-  // Construct the resulting AST for *this* file's processing.
-  // The nodes in nodesToKeepOrReplace are moved here.
   const resultRootForThisCall = postcss.root();
   resultRootForThisCall.nodes = nodesToKeepOrReplace;
-
-  visitedForCircularCheck.delete(absoluteCurrentFilePath); // Clean up for current path
+  visitedForCircularCheck.delete(absoluteCurrentFilePath);
 
   return {
     root: resultRootForThisCall,
@@ -254,5 +262,8 @@ export function inlineScssUseRulesAndClean(mainScssString, mainFilePath) {
     }}
   );
 
-  return outputScss;
+  // Remove empty comments that were used as markers
+  const outputScssWithMarkersRemoved = outputScss.replace(/\/\*\s*\*\//g, "").trim();
+
+  return outputScssWithMarkersRemoved;
 }
