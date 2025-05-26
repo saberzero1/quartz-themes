@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes */
+@use "sass:string";
+/* quartz themes */
+
 :root[saved-theme="dark"] {
   --arrow1: rgba(99, 99, 99, 0.687);
   --background-accent: rgb(234, 117, 0);
@@ -139,6 +141,7 @@
   --yellow-rgb: 241, 250, 140;
   color-scheme: dark;
 }
+
 :root[saved-theme="light"] {
   --arrow1: rgba(211, 211, 211, 0.852);
   --background-accent: rgb(255, 128, 0);
@@ -271,6 +274,7 @@
   --yellow-rgb: 241, 250, 140;
   color-scheme: light;
 }
+
 @font-face {
   font-family: "Monaco";
   font-style: normal;
@@ -278,7 +282,9 @@
   src:
     local("Monaco"),
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -302,6 +308,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --callout-color: rgba(103, 161, 149, 0.459);
   --cards-background: transparent;
@@ -1038,7 +1045,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --arrow1: rgba(99, 99, 99, 0.687);
@@ -1184,7 +1192,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */ /* START LIGHT */
+}
+/* END DARK */
+/* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   --arrow1: rgba(211, 211, 211, 0.852);
@@ -1326,7 +1336,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-} /* END LIGHT */
+}
+/* END LIGHT */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1893,7 +1904,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START LIGHT GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1945,7 +1958,9 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END LIGHT GRAPH */ /* START DARK GRAPH */
+}
+/* END LIGHT GRAPH */
+/* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1997,4 +2012,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

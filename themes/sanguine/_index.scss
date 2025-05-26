@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes dark-only */
+@use "sass:string";
+/* quartz themes dark-only */
+
 :root:root {
   --background-modifier-active-hover: var(--col-important);
   --background-modifier-border: var(--col-muted-plus);
@@ -118,9 +120,11 @@
   --text-success: var(--col-accent);
   color-scheme: dark;
 }
+
 .darkmode {
   display: none;
 }
+
 @font-face {
   font-family: "Slasher Film";
   font-style: normal;
@@ -344,7 +348,9 @@
   src:
     local("Slasher Film Semi-Leftalic"),
     url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff") format("woff");
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -368,6 +374,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --files-font-size: 1em;
   --fnt-head-p: "Slasher Film", "Slasher Regular";
@@ -1213,7 +1220,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root,
 html {
   --background-modifier-active-hover: var(--col-important);
@@ -1338,7 +1346,8 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */
+}
+/* END DARK */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -1895,7 +1904,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START DARK GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START DARK GRAPH */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -1947,4 +1958,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */
