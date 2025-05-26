@@ -2,7 +2,9 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string"; /* quartz themes dark-only */
+@use "sass:string";
+/* quartz themes dark-only */
+
 :root:root {
   --background-modifier-border: var(--color-gray-80);
   --background-modifier-box-shadow: var(--sheer-dark);
@@ -360,9 +362,11 @@
   --text-selection: rgba(134, 169, 209, 0.233);
   color-scheme: dark;
 }
+
 .darkmode {
   display: none;
 }
+
 @font-face {
   font-family: "Monaco";
   font-style: normal;
@@ -371,6 +375,7 @@
     local("Monaco"),
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
+
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
@@ -466,7 +471,9 @@
   src:
     local("SF Mono"),
     url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
-} /* Callouts */
+}
+
+/* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
   "failure", "danger", "bug", "example", "quote";
 :root[saved-theme="dark"],
@@ -490,6 +497,7 @@ body {
     background-color: var(--bg);
   }
 }
+
 :root {
   --default-font: var(--font-sans-2);
   --duration-fast-1: 120ms;
@@ -1282,7 +1290,8 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
-} /* START DARK */
+}
+/* START DARK */
 :root,
 html {
   --background-modifier-border: var(--color-gray-80);
@@ -1649,7 +1658,8 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-} /* END DARK */
+}
+/* END DARK */
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -2204,7 +2214,9 @@ body {
   .math {
     color: var(--text-normal);
   }
-} /* START CANVAS GRAPH WORKAROUND */ /* START DARK GRAPH */
+}
+/* START CANVAS GRAPH WORKAROUND */
+/* START DARK GRAPH */
 :root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
@@ -2256,4 +2268,6 @@ body {
     --text-highlight-bg,
     rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
-} /* END DARK GRAPH */ /* END CANVAS GRAPH WORKAROUND */
+}
+/* END DARK GRAPH */
+/* END CANVAS GRAPH WORKAROUND */

@@ -103,7 +103,7 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-### Local install
+### Automatic install into Quartz repository
 
 > [!TIP]
 > This installation method is recommended for users who want to install themes into their Quartz repository directly. This method is also recommended for user who cannot fetch dependencies during compilation.
@@ -144,6 +144,18 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 # Added import line to custom.scss...
 # Finished fetching and applying theme 'tokyo-night'.
 ```
+
+### Manual install
+
+Manually download the `_index.scss` file from the [themes directory of your choice](./themes/) in this repository, and place it in your Quartz repository's at `quartz/styles/themes/_index.scss`. (Create the `themes` directory if it doesn't exist.)
+
+Then, add the following line to your `src/styles/custom.scss` file after the `@use "base";` line:
+
+```scss
+@use "themes";
+```
+
+> [!IMPORTANT] For dark-only or light-only themes, remember to remove `Component.Darkmode()` from your `quartz.config.ts` file.
 
 ### Quartz Syncer
 
