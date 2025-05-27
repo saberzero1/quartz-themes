@@ -651,6 +651,30 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "color",
   )
+
+  // Popovers
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".popover",
+    "//%%POPOVER%%",
+    themeCSS,
+  )
+
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".popover",
+    "//%%POPOVER BORDER%%",
+    themeCSS,
+    "border",
+  )
+
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".popover",
+    "//%%POPOVER BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
 })
 
 // _dark.scss and _light.scss
