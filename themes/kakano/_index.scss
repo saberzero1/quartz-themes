@@ -2725,9 +2725,27 @@ body {
 
   /* POPOVER */
   .popover {
+    background-color: var(--background-primary);
+    border: none;
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-l);
+    display: flex;
+    max-height: var(--popover-max-height);
+    padding: 0.5rem;
+    position: absolute;
+    z-index: var(--layer-popover);
+
+    display: block;
+    position: fixed;
+    z-index: 999;
+    background-color: unset;
+    border: unset;
     & .popover-inner {
-      border: var(--background-modifier-border, var(--color-base-30));
+      border: none;
+
       background-color: var(--background-primary);
+
+      border-radius: var(--radius-m);
     }
   }
 

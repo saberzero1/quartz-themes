@@ -1556,9 +1556,27 @@ body {
 
   /* POPOVER */
   .popover {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-secondary-alt);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+    display: flex;
+    max-height: var(--popover-max-height);
+    padding: 0 1rem;
+    position: relative;
+    z-index: var(--layer-popover);
+
+    display: block;
+    position: fixed;
+    z-index: 999;
+    background-color: unset;
+    border: unset;
     & .popover-inner {
-      border: var(--background-modifier-border, var(--color-base-30));
-      background-color: var(--background-primary);
+      border: 1px solid var(--background-secondary-alt);
+
+      background-color: var(--background-secondary);
+
+      border-radius: 0.25rem;
     }
   }
 
