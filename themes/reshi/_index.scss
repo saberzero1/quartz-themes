@@ -2198,9 +2198,27 @@ body {
 
   /* POPOVER */
   .popover {
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    border-radius: 6px;
+    box-shadow: var(--shadow-s);
+    display: flex;
+    max-height: 95vh;
+    padding: 20px;
+    position: relative;
+    z-index: var(--layer-popover);
+
+    display: block;
+    position: fixed;
+    z-index: 999;
+    background-color: unset;
+    border: unset;
     & .popover-inner {
-      border: var(--background-modifier-border, var(--color-base-30));
+      border: 1px solid var(--text-normal);
+
       background-color: var(--background-primary);
+
+      border-radius: 6px;
     }
   }
 

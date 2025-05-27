@@ -1816,9 +1816,32 @@ body {
 
   /* POPOVER */
   .popover {
+    -webkit-font-smoothing: none;
+    -webkit-text-stroke: 0px;
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--text-accent);
+    border-radius: 0px;
+    box-shadow: 3px 3px 1px var(--text-accent);
+    color: var(--text-normal);
+    display: flex;
+    font-weight: 400;
+    max-height: var(--popover-max-height);
+    overflow-y: scroll;
+    padding: 15px 20px 10px 20px;
+    position: relative;
+    z-index: var(--layer-popover);
+
+    display: block;
+    position: fixed;
+    z-index: 999;
+    background-color: unset;
+    border: unset;
     & .popover-inner {
-      border: var(--background-modifier-border, var(--color-base-30));
-      background-color: var(--background-primary);
+      border: 1px solid var(--text-accent);
+
+      background-color: var(--background-secondary-alt);
+
+      border-radius: 0px;
     }
   }
 
