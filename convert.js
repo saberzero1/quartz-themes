@@ -675,6 +675,14 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "background-color",
   )
+
+  applyRuleToFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    ".popover",
+    "//%%POPOVER BORDER RADIUS%%",
+    themeCSS,
+    "border-radius",
+  )
 })
 
 // _dark.scss and _light.scss
