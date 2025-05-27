@@ -517,9 +517,21 @@ body {
 
   /* POPOVER */
   .popover {
+    
+    //%%POPOVER%%
+
+    display: block;
+    position: fixed;
+    z-index: 999;
+    background-color: unset;
+    border: unset;
     & .popover-inner {
-      border: var(--background-modifier-border, var(--color-base-30));
-      background-color: var(--background-primary);
+
+      //%%POPOVER BORDER%%
+      
+
+      //%%POPOVER BACKGROUND%%
+
     }
   }
 
