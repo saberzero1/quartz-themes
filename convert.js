@@ -574,7 +574,8 @@ manifestCollection.forEach((manifest) => {
   if (args[0] === "ATOMIZE") {
     if (!fs.existsSync(`./converted_app.css`)) {
       const obsidianCSS = fs.readFileSync("./app.css", "utf8")
-      let result = splitCombinedRules(obsidianCSS)
+      const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8")
+      let result = splitCombinedRules(`${obsidianCSS}\n${overridesCSS}`)
       result = combineIdenticalSelectors(result)
       result = removeEmptyRules(result)
       fs.writeFileSync(`./converted_app.css`, result, "utf8")
