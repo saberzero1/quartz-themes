@@ -395,11 +395,7 @@ body {
   /* SEARCH */
   .search {
     & > .search-button {
-      background-color: var(
-        --background-modifier-form-field,
-        var(--search-result-background, var(--background-primary, var(--lightgray)))
-      );
-      color: var(--search-clear-button-color, var(--text-muted, var(--darkgray)));
+      //%%SEARCH BUTTON%%
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -408,17 +404,19 @@ body {
     & > .search-container {
       & > .search-space {
         & > * {
-          background: var(
-            --search-result-background,
-            var(--background-primary, var(--background-secondary))
-          );
+
+          //%%SEARCH BACKGROUND COLOR%%
+
         }
         & > input {
           color: var(--metadata-input-text-color, var(--text-normal));
           border: 1px solid var(--modal-border-color, var(--background-modifier-border));
+          margin-bottom: 0;
         }
         & > .search-layout {
-          border: var(--modal-border-color, var(--background-modifier-border));
+          //%%SEARCH SHADOW%%
+          //%%SEARCH BORDER%%
+          //%%SEARCH BORDER RADIUS%%
           & .highlight {
             background: var(
               --quartz-text-highlight,
