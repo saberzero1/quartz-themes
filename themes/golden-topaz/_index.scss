@@ -2030,11 +2030,17 @@ body {
   /* SEARCH */
   .search {
     & > .search-button {
-      background-color: var(
-        --background-modifier-form-field,
-        var(--search-result-background, var(--background-primary, var(--lightgray)))
-      );
-      color: var(--search-clear-button-color, var(--text-muted, var(--darkgray)));
+      -webkit-app-region: no-drag;
+      background: var(--background-modifier-form-field);
+      border: var(--input-border-width) solid var(--background-modifier-border);
+      border-radius: var(--input-radius);
+      color: var(--text-normal);
+      font-family: inherit;
+      font-size: var(--font-ui-small);
+      height: var(--input-height);
+      outline: none;
+      padding: var(--size-4-1) var(--size-4-2);
+
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -2043,17 +2049,20 @@ body {
     & > .search-container {
       & > .search-space {
         & > * {
-          background: var(
-            --search-result-background,
-            var(--background-primary, var(--background-secondary))
-          );
+          background-color: var(--background-primary);
         }
         & > input {
           color: var(--metadata-input-text-color, var(--text-normal));
           border: 1px solid var(--modal-border-color, var(--background-modifier-border));
+          margin-bottom: 0;
         }
         & > .search-layout {
-          border: var(--modal-border-color, var(--background-modifier-border));
+          box-shadow: var(--shadow-l);
+
+          border: var(--prompt-border-width) solid var(--prompt-border-color);
+
+          border-radius: var(--radius-l);
+
           & .highlight {
             background: var(
               --quartz-text-highlight,
