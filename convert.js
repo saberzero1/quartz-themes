@@ -287,13 +287,31 @@ manifestCollection.forEach((manifest) => {
     "border-radius",
   )
 
+  // Search
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".prompt",
+    "//%%SEARCH BACKGROUND COLOR%%",
+    themeCSS,
+    "background-color",
+  )
+  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH SHADOW%%", themeCSS, "box-shadow")
+  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH BORDER%%", themeCSS, "border")
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".prompt",
+    "//%%SEARCH BORDER RADIUS%%",
+    themeCSS,
+    "border-radius",
+  )
+
+  // Search button
+  resultCSS = applyRuleToString(resultCSS, 'input[type="search"]', "//%%SEARCH BUTTON%%", themeCSS)
+
   // Write the result to the _index.scss file
   fs.writeFileSync(`./themes/${getTheme(manifest)}/_index.scss`, resultCSS, "utf8")
-})
 
-// _dark.scss and _light.scss
-manifestCollection.forEach((manifest) => {
-  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
+  // _dark.scss and _light.scss
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
