@@ -415,6 +415,7 @@ body {
         }
         & > * {
           //%%SEARCH RESULT ITEM%%
+          //%%SEARCH RESULT ITEM COLOR%%
         }
         & > .search-layout {
           & .highlight {
@@ -426,20 +427,17 @@ body {
           }
           & > .results-container {
             & .result-card {
+              display: flex;
               &:hover,
               &:focus,
               &.focus {
                 //%%SEARCH RESULT HOVER BACKGROUND%%
               }
               & > ul > li > p {
-                background-color: var(
-                  --text-highlight-bg,
-                  var(--highlight-fallback, var(--highlight))
-                );
-                color: var(--text-normal);
-
+                background-color: transparent;
+                //%%SEARCH RESULT ITEM COLOR%%
                 &.match-tag {
-                  color: var(--tag-color);
+                  //%%SEARCH RESULT TAG COLOR%%
                 }
               }
             }
