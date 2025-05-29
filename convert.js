@@ -317,7 +317,7 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "background-color",
   )
-
+  resultCSS = applyRuleToString(resultCSS, ".suggestion-item", "//%%SEARCH RESULT ITEM%%", themeCSS)
   resultCSS = applyRuleToString(
     resultCSS,
     ".suggestion-highlight",
