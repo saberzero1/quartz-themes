@@ -1860,6 +1860,17 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border-radius: 0;
+          cursor: var(--cursor);
+          font-family: var(--font-interface-theme);
+          font-size: var(--font-ui-medium);
+          margin-bottom: 1px;
+          padding: var(--size-2-1) var(--size-4-5);
+          padding-inline-start: 12px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {
