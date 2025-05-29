@@ -1863,16 +1863,9 @@ body {
           background: transparent;
         }
         & > * {
-          border-radius: 0;
-          cursor: var(--cursor);
-          font-family: var(--font-interface-theme);
-          font-size: var(--font-ui-medium);
-          margin-bottom: 1px;
-          padding: var(--size-2-1) var(--size-4-5);
-          padding-inline-start: 12px;
-          white-space: pre-wrap;
-
           color: var(--text-normal);
+
+          background: transparent;
         }
         & > .search-layout {
           & .highlight {
@@ -1886,7 +1879,9 @@ body {
           }
           & > .results-container {
             & .result-card {
-              display: flex;
+              @media all and not ($mobile) {
+                display: flex;
+              }
               &:hover,
               &:focus,
               &.focus {

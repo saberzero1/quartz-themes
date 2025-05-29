@@ -227,6 +227,9 @@ manifestCollection.forEach((manifest) => {
   resultCSS = applyRuleToString(resultCSS, ":root", "//%%ROOT%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY%%", themeCSS)
 
+  // Reusables
+  resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY COLOR%%", themeCSS, "color")
+
   // Heading links
   resultCSS = applyRuleToString(resultCSS, "h1 a", "//%%H1 A%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, "h2 a", "//%%H2 A%%", themeCSS)
@@ -317,14 +320,8 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "background-color",
   )
-  resultCSS = applyRuleToString(resultCSS, ".suggestion-item", "//%%SEARCH RESULT ITEM%%", themeCSS)
-  resultCSS = applyRuleToString(
-    resultCSS,
-    "body",
-    "//%%SEARCH RESULT ITEM COLOR%%",
-    themeCSS,
-    "color",
-  )
+  //resultCSS = applyRuleToString(resultCSS, ".suggestion-item", "//%%SEARCH RESULT ITEM%%", themeCSS)
+
   resultCSS = applyRuleToString(
     resultCSS,
     ".suggestion-highlight",

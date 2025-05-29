@@ -1820,17 +1820,9 @@ body {
           background: transparent;
         }
         & > * {
-          border-radius: var(--radius-s);
-          cursor: inherit;
-          filter: opacity(0.5);
-          font-size: 90%;
-          line-height: 1.2em;
-          margin-bottom: 1px;
-          padding: 8px 20px;
-          padding-inline-start: 12px;
-          white-space: pre-wrap;
-
           color: var(--text-normal);
+
+          background: transparent;
         }
         & > .search-layout {
           & .highlight {
@@ -1844,7 +1836,9 @@ body {
           }
           & > .results-container {
             & .result-card {
-              display: flex;
+              @media all and not ($mobile) {
+                display: flex;
+              }
               &:hover,
               &:focus,
               &.focus {
