@@ -1817,6 +1817,18 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border-radius: var(--radius-s);
+          cursor: inherit;
+          filter: opacity(0.5);
+          font-size: 90%;
+          line-height: 1.2em;
+          margin-bottom: 1px;
+          padding: 8px 20px;
+          padding-inline-start: 12px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {

@@ -1467,6 +1467,17 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border-radius: var(--radius-s);
+          cursor: var(--cursor);
+          font-size: var(--font-adaptive-normal);
+          margin-bottom: 1px;
+          padding: var(--size-2-3) var(--size-4-3);
+          padding-inline-start: 12px;
+          padding-left: 10px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {

@@ -1462,6 +1462,18 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border-radius: var(--radius-s);
+          border-width: 0;
+          cursor: var(--cursor);
+          font-size: var(--the-font-size);
+          height: calc(var(--editor-line-height) * 1em);
+          margin-bottom: 1px;
+          padding: 0 0 0 15px;
+          padding-inline-start: 12px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {

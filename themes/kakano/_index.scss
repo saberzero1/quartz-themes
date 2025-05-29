@@ -2642,6 +2642,17 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border: none;
+          border-radius: var(--radius-m);
+          cursor: var(--cursor);
+          font-size: var(--font-ui-medium);
+          margin-bottom: 1px;
+          padding: 0.5em 1em;
+          padding-inline-start: 12px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {
