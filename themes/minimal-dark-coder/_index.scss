@@ -1333,40 +1333,40 @@ body {
 
     code[data-theme*=" "] span {
       &[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-        color: var(--code-value);
+        color: var(--code-value) !important;
       }
       &[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-        color: var(--code-function);
+        color: var(--code-function) !important;
       }
       &[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-        color: var(--code-string);
+        color: var(--code-string) !important;
       }
       &[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-        color: var(--code-property);
+        color: var(--code-property) !important;
       }
       &[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-        color: var(--code-normal);
+        color: var(--code-normal) !important;
       }
       &[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-        color: var(--code-punctuation);
+        color: var(--code-punctuation) !important;
       }
       &[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-        color: var(--code-comment);
+        color: var(--code-comment) !important;
       }
       &[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-        color: var(--code-comment);
+        color: var(--code-comment) !important;
       }
       &[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-        color: var(--code-tag);
+        color: var(--code-tag) !important;
       }
       &[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-        color: var(--code-important);
+        color: var(--code-important) !important;
       }
       &[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-        color: var(--text-operator);
+        color: var(--text-operator) !important;
       }
       &[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-        color: var(--code-keyword);
+        color: var(--code-keyword) !important;
       }
     }
   }
