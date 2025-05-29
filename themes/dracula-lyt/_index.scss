@@ -2092,6 +2092,17 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          background: transparent;
+        }
+        & > * {
+          border-radius: var(--scale-0-0);
+          cursor: var(--cursor);
+          font-family: var(--default-font);
+          font-size: var(--font-ui-medium);
+          margin-bottom: 1px;
+          padding: var(--scale-2-1) var(--scale-2-10) var(--scale-2-1) calc(var(--scale-2-10) + 7px);
+          padding-inline-start: 12px;
+          white-space: pre-wrap;
         }
         & > .search-layout {
           & .highlight {
