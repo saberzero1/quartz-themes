@@ -253,6 +253,22 @@ manifestCollection.forEach((manifest) => {
   resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
 
+  // Syntax highlighting
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".token.keyword",
+    "//%%CODE KEYWORD%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".token.builtin",
+    "//%%CODE CONSTANT%%",
+    themeCSS,
+    "color",
+  )
+
   // Code copy button
   resultCSS = applyRuleToString(
     resultCSS,
