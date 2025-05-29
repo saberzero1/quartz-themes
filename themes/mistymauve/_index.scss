@@ -1542,6 +1542,8 @@ body {
           padding: var(--size-2-3) var(--size-4-3);
           padding-inline-start: 12px;
           white-space: pre-wrap;
+
+          color: red;
         }
         & > .search-layout {
           & .highlight {
@@ -1555,17 +1557,15 @@ body {
           }
           & > .results-container {
             & .result-card {
+              display: flex;
               &:hover,
               &:focus,
               &.focus {
                 background-color: var(--background-modifier-hover);
               }
               & > ul > li > p {
-                background-color: var(
-                  --text-highlight-bg,
-                  var(--highlight-fallback, var(--highlight))
-                );
-                color: var(--text-normal);
+                background-color: transparent;
+                color: red;
 
                 &.match-tag {
                   color: var(--tag-color);

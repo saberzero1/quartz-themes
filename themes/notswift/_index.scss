@@ -1996,6 +1996,8 @@ body {
           padding-left: 8px;
           padding-right: 8px;
           white-space: pre-wrap;
+
+          color: var(--text-normal);
         }
         & > .search-layout {
           & .highlight {
@@ -2009,16 +2011,14 @@ body {
           }
           & > .results-container {
             & .result-card {
+              display: flex;
               &:hover,
               &:focus,
               &.focus {
                 background-color: var(--color-base-30);
               }
               & > ul > li > p {
-                background-color: var(
-                  --text-highlight-bg,
-                  var(--highlight-fallback, var(--highlight))
-                );
+                background-color: transparent;
                 color: var(--text-normal);
 
                 &.match-tag {

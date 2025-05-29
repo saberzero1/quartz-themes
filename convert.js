@@ -320,6 +320,13 @@ manifestCollection.forEach((manifest) => {
   resultCSS = applyRuleToString(resultCSS, ".suggestion-item", "//%%SEARCH RESULT ITEM%%", themeCSS)
   resultCSS = applyRuleToString(
     resultCSS,
+    "body",
+    "//%%SEARCH RESULT ITEM COLOR%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
     ".suggestion-highlight",
     "//%%SEARCH HIGHLIGHT%%",
     themeCSS,
@@ -329,6 +336,13 @@ manifestCollection.forEach((manifest) => {
     ".markdown-rendered mark",
     "//%%SEARCH HIGHLIGHT BACKGROUND%%",
     themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    "a.tag",
+    "//%%SEARCH RESULT TAG COLOR%%",
+    themeCSS,
+    "color",
   )
 
   // Search button
