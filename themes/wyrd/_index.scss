@@ -1603,30 +1603,30 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        & > * {
-          background-color: var(--background-primary);
-        }
+        background-color: var(--background-primary);
+
+        border: var(--prompt-border-width) solid var(--prompt-border-color);
+
+        border-radius: var(--radius-l);
+
+        box-shadow: var(--shadow-l);
+
         & > input {
-          color: var(--metadata-input-text-color, var(--text-normal));
-          border: 1px solid var(--modal-border-color, var(--background-modifier-border));
+          background-color: var(--background-primary);
+          border: none;
+          border-bottom: 1px solid var(--background-secondary);
+          border-radius: 0;
+          font-size: var(--font-ui-medium);
+          height: var(--prompt-input-height);
+          padding: var(--size-4-6);
+          padding-inline-end: var(--size-4-12);
+          width: 100%;
+
           margin-bottom: 0;
         }
         & > .search-layout {
-          box-shadow: var(--shadow-l);
-
-          border: var(--prompt-border-width) solid var(--prompt-border-color);
-
-          border-radius: var(--radius-l);
-
           & .highlight {
-            background: var(
-              --quartz-text-highlight,
-              color-mix(
-                in srgb,
-                var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
-                rgba(255, 255, 255, 0)
-              )
-            );
+            font-weight: bold;
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1636,13 +1636,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background: var(
-                  --background-modifier-form-field,
-                  var(
-                    --search-result-background,
-                    var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
-                  )
-                );
+                background-color: var(--background-modifier-hover);
               }
               & > ul > li > p {
                 background-color: var(

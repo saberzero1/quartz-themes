@@ -403,29 +403,19 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        & > * {
-
           //%%SEARCH BACKGROUND COLOR%%
-
-        }
+          //%%SEARCH BORDER%%
+          //%%SEARCH BORDER RADIUS%%
+          //%%SEARCH SHADOW%%
         & > input {
-          color: var(--metadata-input-text-color, var(--text-normal));
-          border: 1px solid var(--modal-border-color, var(--background-modifier-border));
+          //%%SEARCH INPUT%%
+
           margin-bottom: 0;
         }
         & > .search-layout {
-          //%%SEARCH SHADOW%%
-          //%%SEARCH BORDER%%
-          //%%SEARCH BORDER RADIUS%%
           & .highlight {
-            background: var(
-              --quartz-text-highlight,
-              color-mix(
-                in srgb,
-                var(--text-highlight-bg, var(--highlight-fallback, var(--highlight))) 60%,
-                rgba(255, 255, 255, 0)
-              )
-            );
+            //%%SEARCH HIGHLIGHT%%
+            //%%SEARCH HIGHLIGHT BACKGROUND%%
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -435,13 +425,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background: var(
-                  --background-modifier-form-field,
-                  var(
-                    --search-result-background,
-                    var(--background-primary, var(--background-modifier-hover, var(--lightgray)))
-                  )
-                );
+                //%%SEARCH RESULT HOVER BACKGROUND%%
               }
               & > ul > li > p {
                 background-color: var(
