@@ -226,12 +226,8 @@ export function replaceInFile(filePath, targetString, replacementString) {
  */
 export function replaceInString(source, targetString, replacementString) {
   try {
-    let result = source
     // Replace all occurrences of the target string with the replacement string ane return the modified result
-    while (result.includes(targetString)) {
-      result = result.split(targetString).join(replacementString)
-    }
-    return result
+    return source.split(targetString).join(replacementString)
   } catch (error) {
     throw new Error(`Unable to process string: ${error.message}`)
   }
