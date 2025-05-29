@@ -1992,6 +1992,13 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            -webkit-box-decoration-break: clone;
+            background-color: rgba(255, 243, 163, 1.4);
+            border-radius: 16px 2px;
+            box-decoration-break: clone;
+            color: var(--dark-tone);
+            padding: 0 4px 0 4px;
           }
           & > .preview-container {
             color: var(--text-normal);

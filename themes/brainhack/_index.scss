@@ -2253,6 +2253,24 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            animation: animated-mark 5s linear infinite;
+            background: linear-gradient(
+              -90deg,
+              var(--accent-color-light3),
+              var(--accent-color-light10),
+              var(--accent-color-light3)
+            );
+            background-color: var(--text-highlight-bg);
+            background-size: 200% 200%;
+            border-radius: 3px;
+            color: var(--accent-color-inverse2);
+            padding-bottom: 0px;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-top: 0px;
+            pointer-events: none;
+            transition: all 0.2s;
           }
           & > .preview-container {
             color: var(--text-normal);

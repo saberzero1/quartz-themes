@@ -1742,6 +1742,10 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: rgb(var(--vcs-added) / 0.2);
+            border-radius: 0.5ex;
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);

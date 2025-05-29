@@ -1695,6 +1695,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: rgba(var(--color-accent-rgb), 0.2);
+            border-radius: var(--radius-m);
+            color: var(--text-accent);
+            padding: 2px 6px;
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1652,6 +1652,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background: none;
+            background-color: var(--text-highlight-bg);
+            color: var(--color-green);
+            font-weight: 500;
           }
           & > .preview-container {
             color: var(--text-normal);

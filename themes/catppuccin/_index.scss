@@ -1823,6 +1823,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: rgb(var(--ctp-rosewater));
+            color: var(--text-on-accent);
           }
           & > .preview-container {
             color: var(--text-normal);

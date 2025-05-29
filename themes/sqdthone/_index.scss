@@ -1879,6 +1879,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: hsl(var(--color-text-highlight-active-background));
+            color: hsl(var(--color-text-highlight));
           }
           & > .preview-container {
             color: var(--text-normal);

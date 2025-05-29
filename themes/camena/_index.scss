@@ -1502,6 +1502,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            border-radius: 0.2rem;
+            color: var(--text-normal);
+            padding: 0.1rem 0.05rem;
           }
           & > .preview-container {
             color: var(--text-normal);

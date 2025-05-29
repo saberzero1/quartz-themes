@@ -1973,6 +1973,13 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            --bold-color: rgb(var(--text));
+            --italic-color: rgb(var(--text));
+            background-color: var(--text-highlight-bg);
+            border-radius: 4px;
+            color: var(--text-normal);
+            padding: 2px;
           }
           & > .preview-container {
             color: var(--text-normal);

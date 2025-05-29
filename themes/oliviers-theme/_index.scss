@@ -1687,6 +1687,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--OT-stabilo-mark);
+            color: var(--OT-stabilo-text);
           }
           & > .preview-container {
             color: var(--text-normal);

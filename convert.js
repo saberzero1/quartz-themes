@@ -32,6 +32,8 @@ import * as path from "path"
 
 let singleThemeName = ""
 
+const start = Date.now()
+
 // STEPS:
 //
 // 1. Get current folder/working directory.
@@ -325,7 +327,7 @@ manifestCollection.forEach((manifest) => {
   resultCSS = applyRuleToString(
     resultCSS,
     ".markdown-rendered mark",
-    "//%%SEARCH HIGHLIGHT TEXT%%",
+    "//%%SEARCH HIGHLIGHT BACKGROUND%%",
     themeCSS,
   )
 
@@ -502,3 +504,9 @@ fs.writeFileSync(
 fs.writeFileSync(`./theme-list`, themeListFileList.join("\n"), "utf8")
 
 console.log("Finished updating Quartz Syncer file list")
+// Log the time taken to run the script in minutes and seconds
+const end = Date.now()
+const timeTaken = ((end - start) / 1000).toFixed(2)
+console.log(
+  `Script completed in ${Math.floor(timeTaken / 60)} minutes and ${Math.floor(timeTaken % 60)} seconds.`,
+)

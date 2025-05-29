@@ -1684,6 +1684,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);
