@@ -1546,6 +1546,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background: var(--text-highlight-bg);
+            background-color: var(--text-highlight-bg);
+            border-radius: calc(var(--setting-text-highlight-radius, 4) * 1px);
+            color: var(--setting-text-highlight-color);
           }
           & > .preview-container {
             color: var(--text-normal);

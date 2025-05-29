@@ -1816,6 +1816,9 @@ body {
           & .highlight {
             color: var(--suggesttion-highlight-color);
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);

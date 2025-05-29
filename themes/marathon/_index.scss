@@ -1776,6 +1776,15 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--accent-color-light10);
+            border-radius: 3px;
+            color: var(--accent-color-inverse);
+            padding-bottom: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-top: 0px;
+            pointer-events: none;
           }
           & > .preview-container {
             color: var(--text-normal);

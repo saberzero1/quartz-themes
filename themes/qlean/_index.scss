@@ -3426,6 +3426,23 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            -webkit-text-decoration: var(--font-highlight-decoration-line)
+              var(--font-highlight-decoration-style) var(--font-highlight-decoration-color)
+              var(--font-highlight-decoration-width);
+            background-color: var(--font-highlight-bg-color);
+            border-radius: 0.125em;
+            color: var(--font-highlight-color);
+            font-family: var(--font-text);
+            font-size: var(--font-highlight-size);
+            font-style: var(--font-highlight-style);
+            font-weight: var(--font-highlight-weight);
+            margin: 0.125em;
+            padding: 0.125em 0.25em;
+            text-decoration: var(--font-highlight-decoration-line)
+              var(--font-highlight-decoration-style) var(--font-highlight-decoration-color)
+              var(--font-highlight-decoration-width);
+            text-underline-offset: var(--font-highlight-decoration-offset);
           }
           & > .preview-container {
             color: var(--text-normal);

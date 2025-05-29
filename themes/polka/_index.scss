@@ -1916,6 +1916,11 @@ body {
             background: var(--text-highlight-bg);
             color: var(--text-highlight-fg);
             font-weight: bold;
+
+            background: var(--text-highlight-bg);
+            background-color: var(--text-highlight-bg);
+            border-radius: 0.5px;
+            color: var(--text-highlight-fg);
           }
           & > .preview-container {
             color: var(--text-normal);

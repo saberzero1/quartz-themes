@@ -1609,6 +1609,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: hsla(var(--highlight-hue), 100%, 30%, 0.5);
+            border-bottom: 1px solid hsla(var(--highlight-hue), 100%, 20%, 1);
+            border-top: 1px solid hsla(var(--highlight-hue), 100%, 60%, 0.15);
+            color: hsla(var(--highlight-hue), 100%, 92%, 1);
           }
           & > .preview-container {
             color: var(--text-normal);

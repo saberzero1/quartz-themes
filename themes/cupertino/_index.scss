@@ -1539,6 +1539,13 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            -webkit-box-decoration-break: clone;
+            background-color: var(--text-highlight-bg);
+            border-radius: var(--radius-s);
+            box-decoration-break: clone;
+            color: var(--text-normal);
+            padding: 1px 4px;
           }
           & > .preview-container {
             color: var(--text-normal);

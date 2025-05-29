@@ -1853,6 +1853,15 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--accent-color-light5);
+            border-radius: 3px;
+            color: var(--accent-color-inverse2);
+            padding-bottom: 0px;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-top: 0px;
+            pointer-events: none;
           }
           & > .preview-container {
             color: var(--text-normal);
