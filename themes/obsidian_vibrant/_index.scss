@@ -1535,6 +1535,10 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: transparent;
+            color: var(--pdf-highlight);
+            text-decoration: underline;
           }
           & > .preview-container {
             color: var(--text-normal);

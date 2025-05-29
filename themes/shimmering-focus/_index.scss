@@ -1829,6 +1829,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--highlight-color-1);
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1726,6 +1726,16 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background: linear-gradient(
+              0deg,
+              var(--highlight-background-color-underline) 0,
+              var(--highlight-background-color-underline) 2px,
+              var(--highlight-background-color--active) 2px,
+              var(--highlight-background-color--active) 100%
+            );
+            background-color: var(--text-highlight-bg);
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);

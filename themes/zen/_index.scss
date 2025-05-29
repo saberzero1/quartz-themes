@@ -1724,6 +1724,11 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-accent);
+            border-radius: 8px;
+            color: white;
+            padding: 2px 5px;
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1503,6 +1503,12 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            border-radius: var(--radius-s);
+            color: var(--text-normal);
+            padding-left: 2px;
+            padding-right: 2px;
           }
           & > .preview-container {
             color: var(--text-normal);

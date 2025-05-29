@@ -1599,6 +1599,9 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--venom_purple);
+            color: var(--text-normal);
           }
           & > .preview-container {
             color: var(--text-normal);
