@@ -1725,15 +1725,9 @@ body {
           background: transparent;
         }
         & > * {
-          border-radius: var(--radius-s);
-          cursor: var(--cursor);
-          font-size: var(--font-ui-medium);
-          margin-bottom: 1px;
-          padding: var(--size-2-3) var(--size-4-3);
-          padding-inline-start: 12px;
-          white-space: pre-wrap;
-
           color: var(--text-normal);
+
+          background: transparent;
         }
         & > .search-layout {
           & .highlight {
@@ -1754,7 +1748,9 @@ body {
           }
           & > .results-container {
             & .result-card {
-              display: flex;
+              @media all and not ($mobile) {
+                display: flex;
+              }
               &:hover,
               &:focus,
               &.focus {

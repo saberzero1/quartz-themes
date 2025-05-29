@@ -414,8 +414,8 @@ body {
           background: transparent;
         }
         & > * {
-          //%%SEARCH RESULT ITEM%%
-          //%%SEARCH RESULT ITEM COLOR%%
+          //%%BODY COLOR%%
+          background: transparent;
         }
         & > .search-layout {
           & .highlight {
@@ -427,7 +427,9 @@ body {
           }
           & > .results-container {
             & .result-card {
-              display: flex;
+              @media all and not ($mobile) {
+                display: flex;
+              }
               &:hover,
               &:focus,
               &.focus {
@@ -435,7 +437,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                //%%SEARCH RESULT ITEM COLOR%%
+                //%%BODY COLOR%%
                 &.match-tag {
                   //%%SEARCH RESULT TAG COLOR%%
                 }
