@@ -199,6 +199,8 @@ manifestCollection.forEach((manifest) => {
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%EXTRAS%%`, extras)
 })
 manifestCollection.forEach((manifest) => {
+  const themeNameLocal = getValueFromDictionary(manifest, "name")
+  console.log(`Processing theme: ${themeNameLocal}`)
   if (args[0] === "ATOMIZE") {
     if (!fs.existsSync(`./converted_app.css`)) {
       const obsidianCSS = fs.readFileSync("./app.css", "utf8")
@@ -304,6 +306,28 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "border-radius",
   )
+  resultCSS = applyRuleToString(resultCSS, "input.prompt-input", "//%%SEARCH INPUT%%", themeCSS)
+
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".suggestion-item.is-selected",
+    "//%%SEARCH RESULT HOVER BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
+
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".suggestion-highlight",
+    "//%%SEARCH HIGHLIGHT%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".markdown-rendered mark",
+    "//%%SEARCH HIGHLIGHT TEXT%%",
+    themeCSS,
+  )
 
   // Search button
   resultCSS = applyRuleToString(resultCSS, 'input[type="search"]', "//%%SEARCH BUTTON%%", themeCSS)
@@ -383,7 +407,11 @@ manifestCollection.forEach((manifest) => {
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
     replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, /\/\/%%[^%]+%%/g, "")
   }
+
+  console.log(`Finished processing theme: ${themeNameLocal}`)
 })
+
+console.info("All themes processed successfully.")
 
 // Rebuild README.md
 console.log("Updating compatibility table...")
