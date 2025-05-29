@@ -1728,6 +1728,13 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            border-bottom: 2px var(--color-accent-2) var(--line-style);
+            border-radius: 5px;
+            color: var(--text-normal);
+            padding-left: 5px;
+            padding-right: 5px;
           }
           & > .preview-container {
             color: var(--text-normal);

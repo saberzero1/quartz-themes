@@ -1620,6 +1620,12 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--highlight-background-color);
+            border-radius: 0.2rem;
+            color: var(--highlight-text-color);
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
           }
           & > .preview-container {
             color: var(--text-normal);

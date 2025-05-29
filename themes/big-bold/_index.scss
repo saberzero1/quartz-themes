@@ -2168,6 +2168,12 @@ body {
             background-color: transparent;
             color: var(--color-accent);
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            border-radius: 6px;
+            color: var(--highlight-text);
+            font-family: var(--h1-font);
+            padding: 3px 0.4em;
           }
           & > .preview-container {
             color: var(--text-normal);

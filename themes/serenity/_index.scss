@@ -1677,6 +1677,12 @@ body {
             text-decoration: underline 2px;
             text-decoration-color: var(--text-accent);
             text-underline-offset: auto;
+
+            background-color: var(--text-highlight-bg);
+            border-radius: 0.35em 0.8em;
+            color: var(--text-normal);
+            font-family: var(--font-secondary);
+            padding: 0 0.35em 0 0.5em;
           }
           & > .preview-container {
             color: var(--text-normal);

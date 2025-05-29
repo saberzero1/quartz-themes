@@ -1424,6 +1424,9 @@ body {
           & .highlight {
             color: var(--text-accent);
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            color: var(--text-important);
           }
           & > .preview-container {
             color: var(--text-normal);

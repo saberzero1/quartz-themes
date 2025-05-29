@@ -2092,6 +2092,19 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background: linear-gradient(to right, var(--highlight-color), var(--highlight-color));
+            background-color: var(--text-highlight-bg);
+            background-position:
+              100% 100%,
+              0 100%;
+            background-repeat: no-repeat;
+            background-size:
+              100% 5px,
+              0 5px;
+            color: var(--text-normal);
+            padding: 2px 4px;
+            transition: background-size, 400ms;
           }
           & > .preview-container {
             color: var(--text-normal);

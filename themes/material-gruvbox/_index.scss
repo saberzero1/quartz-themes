@@ -1904,6 +1904,9 @@ body {
           & .highlight {
             color: var(--bright-red);
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            color: var(--text-highlight-fg);
           }
           & > .preview-container {
             color: var(--text-normal);

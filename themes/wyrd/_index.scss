@@ -1627,6 +1627,15 @@ body {
         & > .search-layout {
           & .highlight {
             font-weight: bold;
+
+            background-color: var(--text-highlight-bg);
+            border-bottom-left-radius: 0.3rem;
+            border-bottom-right-radius: 0.6rem;
+            border-top-left-radius: 0.6rem;
+            border-top-right-radius: 0.3rem;
+            color: var(--text-normal);
+            padding: 0 0.15rem;
+            transition: ease-in-out background-color 0.25s;
           }
           & > .preview-container {
             color: var(--text-normal);
