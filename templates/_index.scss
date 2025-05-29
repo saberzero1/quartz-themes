@@ -468,8 +468,13 @@ html[saved-theme="light"] {
         & > * {
           //%%BODY COLOR%%
           background: transparent;
+          margin-bottom: 0;
+          box-shadow: none;
         }
         & > .search-layout {
+          &.display-results {
+            border-radius: 0;
+          }
           & .highlight {
             //%%SEARCH HIGHLIGHT%%
             //%%SEARCH HIGHLIGHT BACKGROUND%%
