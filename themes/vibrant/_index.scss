@@ -1604,6 +1604,9 @@ body {
             & .result-card {
               @media all and not ($mobile) {
                 display: flex;
+                &.no-match {
+                  display: block;
+                }
               }
               &:hover,
               &:focus,
