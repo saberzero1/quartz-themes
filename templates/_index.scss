@@ -124,7 +124,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-todo);
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="todo"] {
       //%%CALLOUT TODO%%
@@ -132,7 +132,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-info);
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="important"] {
       //%%CALLOUT IMPORTANT%%
