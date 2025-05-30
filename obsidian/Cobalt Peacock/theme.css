@@ -139,7 +139,7 @@ svg * {
   --code-normal: #ffffff;
   --code-comment: var(--color-comment-blue);
   --code-function: var(--color-light-blue);
-  --code-important: ;
+  --code-important: var(--color-orange);
   --code-keyword: var(--color-orange);
   --code-operator: #ffffff;
   --code-property: var(--color-purple);
