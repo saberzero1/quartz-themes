@@ -233,31 +233,6 @@
     url("https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-BoldItalic.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color-rgb: var(#{"--callout-#{$type}"});
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-body {
-  .callout {
-    border: 1px solid var(--border);
-    background-color: var(--bg);
-  }
-}
-
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -1158,6 +1133,250 @@ html[saved-theme="light"] {
   }
 }
 /* END LIGHT */
+/* CALLOUTS */
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  .callout {
+    --callout-color: var(--callout-default);
+    --callout-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" viewBox="0 0 36 36"%3E%3Cpath fill="%23D99E82" d="M35.222 33.598c-.647-2.101-1.705-6.059-2.325-7.566c-.501-1.216-.969-2.438-1.544-3.014c-.575-.575-1.553-.53-2.143.058c0 0-2.469 1.675-3.354 2.783c-1.108.882-2.785 3.357-2.785 3.357c-.59.59-.635 1.567-.06 2.143c.576.575 1.798 1.043 3.015 1.544c1.506.62 5.465 1.676 7.566 2.325c.359.11 1.74-1.271 1.63-1.63z"%2F%3E%3Cpath fill="%23EA596E" d="M13.643 5.308a2.946 2.946 0 0 1 0 4.167l-4.167 4.168a2.948 2.948 0 0 1-4.167 0L1.141 9.475a2.948 2.948 0 0 1 0-4.167l4.167-4.167a2.946 2.946 0 0 1 4.167 0l4.168 4.167z"%2F%3E%3Cpath fill="%23FFCC4D" d="m31.353 23.018l-4.17 4.17l-4.163 4.165L7.392 15.726l8.335-8.334l15.626 15.626z"%2F%3E%3Cpath fill="%23292F33" d="M32.078 34.763s2.709 1.489 3.441.757c.732-.732-.765-3.435-.765-3.435s-2.566.048-2.676 2.678z"%2F%3E%3Cpath fill="%23CCD6DD" d="m2.183 10.517l8.335-8.335l5.208 5.209l-8.334 8.335z"%2F%3E%3Cpath fill="%2399AAB5" d="m3.225 11.558l8.334-8.334l1.042 1.042L4.267 12.6zm2.083 2.086l8.335-8.335l1.042 1.042l-8.335 8.334z"%2F%3E%3C%2Fsvg%3E');
+    background-color: transparent;
+    border: 1px var(--background-modifier-border) solid;
+    border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+    border-radius: var(--callout-radius);
+    border-style: solid;
+    border-width: var(--callout-border-width);
+    margin: 0.6em 0px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    padding: 1em;
+
+    background-color: transparent;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &[data-callout] {
+      --callout-color: var(--callout-default);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="abstract"] {
+      --callout-color: var(--callout-summary);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="summary"] {
+      --callout-color: var(--callout-summary);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tldr"] {
+      --callout-color: var(--callout-summary);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="info"] {
+      --callout-color: var(--callout-info);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="todo"] {
+      --callout-color: var(--callout-todo);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="important"] {
+      --callout-color: var(--callout-important);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tip"] {
+      --callout-color: var(--callout-tip);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="hint"] {
+      --callout-color: var(--callout-tip);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="success"] {
+      --callout-color: var(--callout-success);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="check"] {
+      --callout-color: var(--callout-success);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="done"] {
+      --callout-color: var(--callout-success);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="question"] {
+      --callout-color: var(--callout-question);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="help"] {
+      --callout-color: var(--callout-question);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="faq"] {
+      --callout-color: var(--callout-question);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="warning"] {
+      --callout-color: var(--callout-warning);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="caution"] {
+      --callout-color: var(--callout-warning);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="attention"] {
+      --callout-color: var(--callout-warning);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="failure"] {
+      --callout-color: var(--callout-fail);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="fail"] {
+      --callout-color: var(--callout-fail);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="missing"] {
+      --callout-color: var(--callout-fail);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="danger"] {
+      --callout-color: var(--callout-error);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="error"] {
+      --callout-color: var(--callout-error);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="bug"] {
+      --callout-color: var(--callout-bug);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="example"] {
+      --callout-color: var(--callout-example);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="quote"] {
+      --callout-color: var(--callout-quote);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="cite"] {
+      --callout-color: var(--callout-quote);
+
+      background-color: transparent;
+
+      --color: var(--callout-color);
+    }
+  }
+
+  .callout-title {
+    align-items: flex-start;
+    color: var(--text-normal);
+    display: flex;
+    font-size: var(--callout-title-size);
+    gap: var(--size-4-1);
+    line-height: 1.5em;
+    margin: 0px;
+    padding: var(--callout-title-padding);
+
+    & > .callout-title-inner > p {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
+      overflow: hidden;
+      overflow-wrap: break-word;
+    }
+
+    .callout-title-inner {
+    }
+  }
+
+  & > .callout-content {
+    background-color: var(--callout-content-background);
+    overflow-x: auto;
+    padding: var(--callout-content-padding);
+    padding-left: 2.3em;
+  }
+}
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
