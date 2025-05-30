@@ -100,6 +100,10 @@
   --text-title-h5: #ffa500;
   --text-title-h6: #ff00aa;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 .darkmode {
@@ -1269,20 +1273,6 @@ html {
     color: var(--pdf-text);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

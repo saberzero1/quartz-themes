@@ -103,6 +103,10 @@
   --titlebar-background: var(--background-primary-alt);
   --titlebar-background-focused: var(--background-secondary);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -192,6 +196,10 @@
   --titlebar-background: var(--light-1);
   --titlebar-background-focused: var(--light-1);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -1572,20 +1580,6 @@ html {
     overflow-x: auto;
     padding: var(--callout-padding);
     padding-top: 0;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

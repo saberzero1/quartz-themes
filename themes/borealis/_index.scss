@@ -111,6 +111,10 @@
   --transparent-secondary: rgba(231, 143, 249, 0.6);
   --yellow: #f9e78f;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -213,6 +217,10 @@
   --transparent-secondary: rgba(176, 33, 142, 0.6);
   --yellow: #8eb021;
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* cyrillic-ext */
@@ -1399,20 +1407,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--size-4-2);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

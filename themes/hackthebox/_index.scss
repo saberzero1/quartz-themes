@@ -82,6 +82,10 @@
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color: #a4b1cd;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root:root:root {
@@ -1285,20 +1289,6 @@ html {
     border-radius: 7px;
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

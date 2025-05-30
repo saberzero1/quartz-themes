@@ -109,6 +109,10 @@
   --vim-cursor-outline: #e6e6e6;
   --vim-cursor-outline-width: 1px;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -208,6 +212,10 @@
   --vim-cursor-outline: #b0b5bf;
   --vim-cursor-outline-width: 1.3px;
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -1565,20 +1573,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: 2px 8px;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {
