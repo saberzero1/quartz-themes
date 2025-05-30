@@ -1752,31 +1752,6 @@
     url("https://fonts.cdnfonts.com/s/29131/Cascadia.woff") format("woff");
 }
 
-/* Callouts */
-$callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
-:root[saved-theme="dark"],
-html[saved-theme="dark"],
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color-rgb: var(#{"--callout-#{$type}"});
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-body {
-  .callout {
-    border: 1px solid var(--border);
-    background-color: var(--bg);
-  }
-}
-
 :root {
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -4475,6 +4450,368 @@ html[saved-theme="light"] {
   }
 }
 /* END LIGHT */
+/* CALLOUTS */
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  .callout {
+    --callout-color: var(--callout-rgb-general);
+    --callout-icon: var(--callout-icon-general);
+    background-color: color-mix(
+      in srgb,
+      rgba(var(--callout-color)) var(--callout-color-opacity),
+      var(--editor-bg-color)
+    );
+    border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+    border-radius: var(--callout-radius);
+    border-style: solid;
+    border-width: var(--callout-border-width);
+    box-shadow: var(--callout-container-shadow);
+    margin: 1em 0;
+    mix-blend-mode: var(--callout-blend-mode);
+    overflow: hidden;
+    padding: 0;
+
+    background-color: color-mix(
+      in srgb,
+      rgba(var(--callout-color)) var(--callout-color-opacity),
+      var(--editor-bg-color)
+    );
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &[data-callout] {
+      --callout-color: var(--callout-rgb-general);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="abstract"] {
+      --callout-color: var(--callout-rgb-abstract);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="summary"] {
+      --callout-color: var(--callout-rgb-summary);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tldr"] {
+      --callout-color: var(--callout-rgb-tldr);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="info"] {
+      --callout-color: var(--callout-rgb-info);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="todo"] {
+      --callout-color: var(--callout-rgb-todo);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="important"] {
+      --callout-color: var(--callout-rgb-important);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tip"] {
+      --callout-color: var(--callout-rgb-tip);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="hint"] {
+      --callout-color: var(--callout-rgb-hint);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="success"] {
+      --callout-color: var(--callout-rgb-success);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="check"] {
+      --callout-color: var(--callout-rgb-check);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="done"] {
+      --callout-color: var(--callout-rgb-done);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="question"] {
+      --callout-color: var(--callout-rgb-question);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="help"] {
+      --callout-color: var(--callout-rgb-help);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="faq"] {
+      --callout-color: var(--callout-rgb-faq);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="warning"] {
+      --callout-color: var(--callout-rgb-warning);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="caution"] {
+      --callout-color: var(--callout-rgb-caution);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="attention"] {
+      --callout-color: var(--callout-rgb-attention);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="failure"] {
+      --callout-color: var(--callout-rgb-fail);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="fail"] {
+      --callout-color: var(--callout-rgb-fail);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="missing"] {
+      --callout-color: var(--callout-rgb-missing);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="danger"] {
+      --callout-color: var(--callout-rgb-danger);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="error"] {
+      --callout-color: var(--callout-rgb-error);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="bug"] {
+      --callout-color: var(--callout-rgb-bug);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="example"] {
+      --callout-color: var(--callout-rgb-example);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="quote"] {
+      --callout-color: var(--callout-rgb-quote);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="cite"] {
+      --callout-color: var(--callout-rgb-cite);
+
+      background-color: color-mix(
+        in srgb,
+        rgba(var(--callout-color)) var(--callout-color-opacity),
+        var(--editor-bg-color)
+      );
+
+      --color: var(--callout-color);
+    }
+  }
+
+  .callout-title {
+    align-items: flex-start;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: var(--callout-title-shadow);
+    color: rgb(var(--callout-color));
+    display: flex;
+    font-size: var(--callout-title-size);
+    gap: var(--size-4-2);
+    line-height: var(--line-height-tight);
+    padding: var(--callout-title-padding);
+
+    & > .callout-title-inner > p {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: var(--font-semibold);
+    }
+
+    .callout-title-inner {
+    }
+  }
+
+  & > .callout-content {
+    background-color: var(--callout-content-background);
+    border-bottom-left-radius: var(--callout-radius);
+    border-bottom-right-radius: var(--callout-radius);
+    box-shadow: var(--callout-content-shadow);
+    overflow-x: auto;
+    padding: var(--callout-content-padding);
+  }
+}
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 

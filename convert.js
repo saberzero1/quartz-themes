@@ -15,7 +15,6 @@ import {
   isFullTheme,
   getExtras,
   getFonts,
-  setCallout,
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
   clearDirectoryContents,
@@ -73,7 +72,7 @@ clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
-  ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
+  //ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -133,9 +132,9 @@ manifestCollection.forEach((manifest) => {
 })
 
 // callouts
-manifestCollection.forEach((manifest) => {
-  setCallout(getValueFromDictionary(manifest, "name"))
-})
+//manifestCollection.forEach((manifest) => {
+//  setCallout(getValueFromDictionary(manifest, "name"))
+//})
 
 // extras
 manifestCollection.forEach((manifest) => {
@@ -196,8 +195,8 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
-  extras += `\n@use "callouts/default.scss";`
-  extras += `\n@use "callouts/overrides.scss";`
+  //extras += `\n@use "callouts/default.scss";`
+  //extras += `\n@use "callouts/overrides.scss";`
   replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%EXTRAS%%`, extras)
 })
 manifestCollection.forEach((manifest) => {
@@ -281,6 +280,219 @@ manifestCollection.forEach((manifest) => {
     ".markdown-rendered button.copy-code-button:hover",
     "//%%CLIPBOARD BUTTON HOVER%%",
     themeCSS,
+  )
+
+  // Callouts
+  resultCSS = applyRuleToString(resultCSS, ".callout", "//%%CALLOUT%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout",
+    "//%%CALLOUT BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
+
+  // Callout title
+  resultCSS = applyRuleToString(resultCSS, ".callout-title", "//%%CALLOUT TITLE%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout-title-inner",
+    "//%%CALLOUT TITLE INNER%%",
+    themeCSS,
+  )
+
+  // Callout content
+  resultCSS = applyRuleToString(resultCSS, ".callout-content", "//%%CALLOUT CONTENT%%", themeCSS)
+
+  // Callout variations
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout",
+    "//%%CALLOUT NOTE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="tip"]',
+    "//%%CALLOUT TIP%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="warning"]',
+    "//%%CALLOUT WARNING%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="danger"]',
+    "//%%CALLOUT DANGER%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="abstract"]',
+    "//%%CALLOUT ABSTRACT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="todo"]',
+    "//%%CALLOUT TODO%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="question"]',
+    "//%%CALLOUT QUESTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="info"]',
+    "//%%CALLOUT INFO%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="success"]',
+    "//%%CALLOUT SUCCESS%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="quote"]',
+    "//%%CALLOUT QUOTE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="example"]',
+    "//%%CALLOUT EXAMPLE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="bug"]',
+    "//%%CALLOUT BUG%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="summary"]',
+    "//%%CALLOUT SUMMARY%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="tldr"]',
+    "//%%CALLOUT TLDR%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="important"]',
+    "//%%CALLOUT IMPORTANT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="hint"]',
+    "//%%CALLOUT HINT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="check"]',
+    "//%%CALLOUT CHECK%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="done"]',
+    "//%%CALLOUT DONE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="help"]',
+    "//%%CALLOUT HELP%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="faq"]',
+    "//%%CALLOUT FAQ%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="caution"]',
+    "//%%CALLOUT CAUTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="attention"]',
+    "//%%CALLOUT ATTENTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="failure"]',
+    "//%%CALLOUT FAILURE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="error"]',
+    "//%%CALLOUT ERROR%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="fail"]',
+    "//%%CALLOUT FAIL%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="missing"]',
+    "//%%CALLOUT MISSING%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="cite"]',
+    "//%%CALLOUT CITE%%",
+    themeCSS,
+    "--callout-color",
   )
 
   // Content Meta
