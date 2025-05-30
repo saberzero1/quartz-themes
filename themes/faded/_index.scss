@@ -1807,13 +1807,13 @@ html {
       --callout-color: #00b8d4;
       background-color: var(--custom-callout-background-color);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-todo);
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="todo"] {
       --callout-color: #00b8d4;
       background-color: var(--custom-callout-background-color);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-info);
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="important"] {
       --callout-color: #00bfa5;
