@@ -25,7 +25,7 @@ import {
   applyRuleToFile,
   applyRuleToString,
 } from "./util/util.mjs"
-import { themes } from "./config.mjs"
+import { themes, usedRules } from "./config.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -209,19 +209,55 @@ manifestCollection.forEach((manifest) => {
       let result = splitCombinedRules(`${obsidianCSS}\n${overridesCSS}`)
       result = combineIdenticalSelectors(result)
       result = removeEmptyRules(result)
+      result = result.replace(/\n+/g, "\n") // Remove extra newlines
+      result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
       fs.writeFileSync(`./converted_app.css`, result, "utf8")
+      // Write extracted version to speed up later processing
+      const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8")
+      let extractResult = ""
+      for (const rule of usedRules) {
+        const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
+        extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+      }
+      extractResult = combineIdenticalSelectors(extractResult)
+      extractResult = removeEmptyRules(extractResult)
+      extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
+      extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+      fs.writeFileSync(`./converted_app_extracted.css`, extractResult, "utf8")
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
+    const atomicExctractedFile = `./atomic/${getTheme(manifest)}/theme_extracted.css`
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
+    const obsidianExtractedCSS = fs.readFileSync("./converted_app_extracted.css", "utf8")
     let result = `${obsidianCSS}\n${splitCombinedRules(cssString)}`
     result = combineIdenticalSelectors(result)
     result = removeEmptyRules(result)
+    result = result.replace(/\n+/g, "\n") // Remove extra newlines
+    result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
     fs.writeFileSync(atomicFile, result, "utf8")
+    // Write extracted version to speed up later processing
+    const cssAtomicString = fs.readFileSync(atomicFile, "utf8")
+    let extractResult = `${obsidianExtractedCSS}\n`
+    for (const rule of usedRules) {
+      const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
+      extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+    }
+    extractResult = combineIdenticalSelectors(extractResult)
+    extractResult = removeEmptyRules(extractResult)
+    extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
+    extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+    fs.writeFileSync(atomicExctractedFile, extractResult, "utf8")
   }
-  const themeCSS = fs.readFileSync(`${atomicFolder}/${getTheme(manifest)}/theme.css`, "utf8")
+  const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
+    ? "theme_extracted"
+    : "theme"
+  const themeCSS = fs.readFileSync(
+    `${atomicFolder}/${getTheme(manifest)}/${useExtendedSyntax}.css`,
+    "utf8",
+  )
   let resultCSS = fs.readFileSync(`./themes/${getTheme(manifest)}/_index.scss`, "utf8")
   resultCSS = applyRuleToString(resultCSS, ":root", "//%%ROOT%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY%%", themeCSS)
@@ -251,22 +287,6 @@ manifestCollection.forEach((manifest) => {
   // inline code
   resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
-
-  // Syntax highlighting
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".token.keyword",
-    "//%%CODE KEYWORD%%",
-    themeCSS,
-    "color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".token.builtin",
-    "//%%CODE CONSTANT%%",
-    themeCSS,
-    "color",
-  )
 
   // Code copy button
   resultCSS = applyRuleToString(
@@ -548,7 +568,6 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "background-color",
   )
-  //resultCSS = applyRuleToString(resultCSS, ".suggestion-item", "//%%SEARCH RESULT ITEM%%", themeCSS)
 
   resultCSS = applyRuleToString(
     resultCSS,
