@@ -206,6 +206,10 @@
   --yellow-800: oklch(96.5% 0.049 97.11);
   --yellow-900: oklch(98% 0.026 97.11);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -391,6 +395,10 @@
   --yellow-800: oklch(13.5% 0.027 97.11);
   --yellow-900: oklch(12% 0.024 97.11);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* vietnamese */
@@ -1753,20 +1761,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

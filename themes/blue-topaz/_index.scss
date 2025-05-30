@@ -373,6 +373,10 @@
   --window-shadow2: 0 0 9px hsla(212, 17%, 0%, 0.3);
   --yellow: #d6b87f;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -730,6 +734,10 @@
   --window-shadow2: 0 0 9px hsla(217, 15%, 83%, 0.7);
   --yellow: #e48100;
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -7969,20 +7977,6 @@ html {
     padding: 5px 15px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

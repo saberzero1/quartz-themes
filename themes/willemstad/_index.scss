@@ -133,6 +133,10 @@
   --toggle-border-width: 0;
   --width-vll: 700px;
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -255,6 +259,10 @@
   --toggle-border-width: 0;
   --width-vll: 700px;
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* vietnamese */
@@ -10711,20 +10719,6 @@ html {
     overflow-x: auto;
     padding: var(--callout-content-padding);
     page-break-inside: avoid;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {
