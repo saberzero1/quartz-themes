@@ -70,7 +70,7 @@ body {
   --folder-border-color: #50505088;
   --list-indent: 17px;
   --tabs-height: 300px;
-  --bg-url: ;
+  /* --bg-url: ; */
   --filename-line-thickness: 1.8px;
   --filename-separator-style: dotted;
 }

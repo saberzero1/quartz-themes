@@ -89,7 +89,7 @@ body {
   --callout-color-light-purple: 233, 182, 245;
   --callout-color-grey: 158, 158, 158;
 
-  --callout-icon-mt: ;
+  --callout-icon-mt: "";
 }
 
 .theme-light {
