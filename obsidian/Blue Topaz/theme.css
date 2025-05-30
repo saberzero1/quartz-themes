@@ -5387,13 +5387,13 @@ body {
   /*font family*/
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-family-list: ; /*列表字体*/
+  --font-family-list: var(--font-default); /*列表字体*/
   --font-text-theme: Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei"; /*主体（包括列表）字体，除代码框等少数部分*/
   --h1-font: var(--font-text), var(--font-default);
   --h2-font: var(--font-text), var(--font-default);
   --h3-font: var(--font-text), var(--font-default);
   --h4-font: var(--font-text), var(--font-default);
-  --font-family-title: ; /*文件抬头标题*/
+  --font-family-title: var(--font-text, var(--font-default)); /*文件抬头标题*/
   --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
     "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
   --font-monospace-theme: "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
@@ -5408,7 +5408,7 @@ body {
   --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
   --font-family-strong: Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
     "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
-  --font-family-em: ;
+  --font-family-em: var(--font-family-strong, var(--font-monospace-theme));
   --font-loading-text: var(--font-monospace-theme);
 
   /*radius*/
@@ -5550,7 +5550,7 @@ body {
   --fancy-cursor-width: 2px;
   --cursor-color-temp: var(--text-normal);
 
-  --print-strong-color: ;
+  --print-strong-color: var(--accent-strong);
   --print-em-color: var(--accent-em);
 
   --tag-border-width: 1px;
