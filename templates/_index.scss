@@ -92,6 +92,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-note);
     }
     &[data-callout="abstract"] {
       //%%CALLOUT ABSTRACT%%
@@ -99,6 +100,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="summary"] {
       //%%CALLOUT SUMMARY%%
@@ -106,6 +108,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="tldr"] {
       //%%CALLOUT TLDR%%
@@ -113,6 +116,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="info"] {
       //%%CALLOUT INFO%%
@@ -120,6 +124,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="todo"] {
       //%%CALLOUT TODO%%
@@ -127,6 +132,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="important"] {
       //%%CALLOUT IMPORTANT%%
@@ -134,6 +140,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="tip"] {
       //%%CALLOUT TIP%%
@@ -141,6 +148,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="hint"] {
       //%%CALLOUT HINT%%
@@ -148,6 +156,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="success"] {
       //%%CALLOUT SUCCESS%%
@@ -155,6 +164,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="check"] {
       //%%CALLOUT CHECK%%
@@ -162,6 +172,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="done"] {
       //%%CALLOUT DONE%%
@@ -169,6 +180,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="question"] {
       //%%CALLOUT QUESTION%%
@@ -176,6 +188,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="help"] {
       //%%CALLOUT HELP%%
@@ -183,6 +196,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="faq"] {
       //%%CALLOUT FAQ%%
@@ -190,6 +204,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="warning"] {
       //%%CALLOUT WARNING%%
@@ -197,6 +212,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="caution"] {
       //%%CALLOUT CAUTION%%
@@ -204,6 +220,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="attention"] {
       //%%CALLOUT ATTENTION%%
@@ -211,6 +228,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="failure"] {
       //%%CALLOUT FAILURE%%
@@ -218,6 +236,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="fail"] {
       //%%CALLOUT FAIL%%
@@ -225,6 +244,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="missing"] {
       //%%CALLOUT MISSING%%
@@ -232,6 +252,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="danger"] {
       //%%CALLOUT DANGER%%
@@ -239,6 +260,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="error"] {
       //%%CALLOUT ERROR%%
@@ -246,6 +268,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="bug"] {
       //%%CALLOUT BUG%%
@@ -253,6 +276,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-bug);
     }
     &[data-callout="example"] {
       //%%CALLOUT EXAMPLE%%
@@ -260,6 +284,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-example);
     }
     &[data-callout="quote"] {
       //%%CALLOUT QUOTE%%
@@ -267,6 +292,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
     &[data-callout="cite"] {
       //%%CALLOUT CITE%%
@@ -274,6 +300,7 @@ html {
       //%%CALLOUT BACKGROUND%%
 
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
   }
 

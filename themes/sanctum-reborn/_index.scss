@@ -1665,136 +1665,163 @@ html {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-note);
     }
     &[data-callout="abstract"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="summary"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="tldr"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="info"] {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="todo"] {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="important"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="tip"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="hint"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="success"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="check"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="done"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="question"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="help"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="faq"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="warning"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="caution"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="attention"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="failure"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="fail"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="missing"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="danger"] {
       --callout-color: 243, 90, 55;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="error"] {
       --callout-color: 243, 90, 55;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="bug"] {
       --callout-color: 236, 90, 118;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-bug);
     }
     &[data-callout="example"] {
       --callout-color: 165, 119, 218;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-example);
     }
     &[data-callout="quote"] {
       --callout-color: var(--gray-50);
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
     &[data-callout="cite"] {
       --callout-color: var(--gray-50);
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
   }
   .callout-title {

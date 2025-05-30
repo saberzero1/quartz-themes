@@ -4491,6 +4491,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-note);
     }
     &[data-callout="abstract"] {
       --callout-color: var(--callout-rgb-abstract);
@@ -4500,6 +4501,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="summary"] {
       --callout-color: var(--callout-rgb-summary);
@@ -4509,6 +4511,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="tldr"] {
       --callout-color: var(--callout-rgb-tldr);
@@ -4518,6 +4521,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-abstract);
     }
     &[data-callout="info"] {
       --callout-color: var(--callout-rgb-info);
@@ -4527,6 +4531,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="todo"] {
       --callout-color: var(--callout-rgb-todo);
@@ -4536,6 +4541,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="important"] {
       --callout-color: var(--callout-rgb-important);
@@ -4545,6 +4551,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="tip"] {
       --callout-color: var(--callout-rgb-tip);
@@ -4554,6 +4561,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="hint"] {
       --callout-color: var(--callout-rgb-hint);
@@ -4563,6 +4571,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-tip);
     }
     &[data-callout="success"] {
       --callout-color: var(--callout-rgb-success);
@@ -4572,6 +4581,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="check"] {
       --callout-color: var(--callout-rgb-check);
@@ -4581,6 +4591,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="done"] {
       --callout-color: var(--callout-rgb-done);
@@ -4590,6 +4601,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-success);
     }
     &[data-callout="question"] {
       --callout-color: var(--callout-rgb-question);
@@ -4599,6 +4611,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="help"] {
       --callout-color: var(--callout-rgb-help);
@@ -4608,6 +4621,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="faq"] {
       --callout-color: var(--callout-rgb-faq);
@@ -4617,6 +4631,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-question);
     }
     &[data-callout="warning"] {
       --callout-color: var(--callout-rgb-warning);
@@ -4626,6 +4641,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="caution"] {
       --callout-color: var(--callout-rgb-caution);
@@ -4635,6 +4651,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="attention"] {
       --callout-color: var(--callout-rgb-attention);
@@ -4644,6 +4661,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-warning);
     }
     &[data-callout="failure"] {
       --callout-color: var(--callout-rgb-fail);
@@ -4653,6 +4671,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="fail"] {
       --callout-color: var(--callout-rgb-fail);
@@ -4662,6 +4681,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="missing"] {
       --callout-color: var(--callout-rgb-missing);
@@ -4671,6 +4691,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-failure);
     }
     &[data-callout="danger"] {
       --callout-color: var(--callout-rgb-danger);
@@ -4680,6 +4701,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="error"] {
       --callout-color: var(--callout-rgb-error);
@@ -4689,6 +4711,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-danger);
     }
     &[data-callout="bug"] {
       --callout-color: var(--callout-rgb-bug);
@@ -4698,6 +4721,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-bug);
     }
     &[data-callout="example"] {
       --callout-color: var(--callout-rgb-example);
@@ -4707,6 +4731,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-example);
     }
     &[data-callout="quote"] {
       --callout-color: var(--callout-rgb-quote);
@@ -4716,6 +4741,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
     &[data-callout="cite"] {
       --callout-color: var(--callout-rgb-cite);
@@ -4725,6 +4751,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
+      --callout-icon: var(--callout-icon-quote);
     }
   }
   .callout-title {
