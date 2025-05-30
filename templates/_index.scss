@@ -448,10 +448,13 @@ body {
           //%%SEARCH BORDER%%
           //%%SEARCH BORDER RADIUS%%
           //%%SEARCH SHADOW%%
+
+          margin: 12vh auto;
         & > input {
           //%%SEARCH INPUT%%
 
           margin-bottom: 0;
+          border-bottom: none;
           background: transparent;
         }
         & > * {

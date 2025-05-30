@@ -1599,6 +1599,7 @@ body {
           inset -2px -2px var(--bg-button-shadow),
           inset 2px 2px var(--bg-button-light);
 
+        margin: 12vh auto;
         & > input {
           background-color: var(--background-primary);
           border: none;
@@ -1611,6 +1612,7 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          border-bottom: none;
           background: transparent;
         }
         & > * {

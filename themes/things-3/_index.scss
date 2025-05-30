@@ -1568,6 +1568,7 @@ body {
 
         box-shadow: var(--shadow-l);
 
+        margin: 12vh auto;
         & > input {
           background-color: var(--background-primary);
           border: none;
@@ -1582,6 +1583,7 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          border-bottom: none;
           background: transparent;
         }
         & > * {
