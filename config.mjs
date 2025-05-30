@@ -6,8 +6,10 @@ export const themes = getValueFromDictionary(
 )
 
 export const usedRules = [
+  // General
   ":root",
   "body",
+  // Headings
   "h1 a",
   "h2 a",
   "h3 a",
@@ -20,11 +22,13 @@ export const usedRules = [
   "h4",
   "h5",
   "h6",
+  // Code blocks
   ".markdown-rendered pre",
   ".markdown-rendered code",
   ".markdown-rendered pre code",
   ".markdown-rendered button.copy-code-button",
   ".markdown-rendered button.copy-code-button:hover",
+  // Callouts
   ".callout",
   ".callout-title",
   ".callout-title-inner",
@@ -55,8 +59,18 @@ export const usedRules = [
   '.callout[data-callout="fail"]',
   '.callout[data-callout="missing"]',
   '.callout[data-callout="cite"]',
+  ".callout-content .callout",
+  ".callout-icon",
+  ".callout-icon .svg-icon",
+  ".callout-icon::after",
+  ".callout-fold",
+  ".callout-fold::after",
+  ".callout-fold .svg-icon",
+  ".callout-fold.is-collapsed .svg-icon",
+  // Popovers
   ".metadata-input-longtext",
   ".popover",
+  // Search
   ".prompt",
   "input.prompt-input",
   ".suggestion-item.is-selected",
@@ -64,6 +78,46 @@ export const usedRules = [
   ".markdown-rendered mark",
   "a.tag",
   'input[type="search"]',
+  // Explorer
+  ".nav-files-container",
+  ".nav-file-tag",
+  ".nav-file-icon",
+  ".nav-folder-title",
+  ".nav-file-title",
+  ".nav-file-title.is-active",
+  ".nav-folder-title.is-active",
+  ".nav-file-title.is-selected",
+  ".nav-folder-title.is-selected",
+  ".tree-item-self",
+  ".tree-item-self:before",
+  ".tree-item-self.mod-collapsible",
+  ".tree-item-self.is-clickable",
+  ".is-mobile .tree-item-self.is-clickable",
+  ".tree-item-self.is-clickable.mobile-tap",
+  ".tree-item-self.is-active",
+  ".tree-item-self.is-selected",
+  ".tree-item-self.is-being-dragged",
+  ".tree-item-self .tree-item-icon",
+  ".tree-item-self .tree-item-icon:before",
+  ".tree-item-self .tree-item-icon .svg-icon:not(.right-triangle)",
+  ".tree-item-flair-outer",
+  ".tree-item-flair",
+  ".tree-item-inner-text",
+  ".tree-item-inner-subtext",
+  ".tree-item-children",
+  // Inline code(?)
+  "kbd",
+  // Icons
+  "svg.svg-icon",
+  ".clickable-icon.mod-warning",
+  ".clickable-icon.mod-filled svg",
+  ".setting-item-control .clickable-icon",
+  '.clickable-icon[aria-disabled="true"]',
+  ".clickable-icon.mobile-tap",
+  ".is-mobile .clickable-icon",
+  ".clickable-icon.is-active",
+  ".clickable-icon",
+  // Themes
   ".theme-dark",
   ".theme-light",
 ]

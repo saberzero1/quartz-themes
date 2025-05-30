@@ -252,8 +252,8 @@ manifestCollection.forEach((manifest) => {
     fs.writeFileSync(atomicExctractedFile, extractResult, "utf8")
   }
   const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
-    ? "theme_extracted"
-    : "theme"
+    ? "theme"
+    : "theme_extracted"
   const themeCSS = fs.readFileSync(
     `${atomicFolder}/${getTheme(manifest)}/${useExtendedSyntax}.css`,
     "utf8",
