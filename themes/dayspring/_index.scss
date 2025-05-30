@@ -993,189 +993,189 @@ html {
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="abstract"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="summary"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="tldr"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="info"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="todo"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="important"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="tip"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="hint"] {
       --callout-color: var(--color-blue-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="success"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="check"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="done"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="question"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="help"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="faq"] {
       --callout-color: var(--color-green-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="warning"] {
       --callout-color: var(--color-orange-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="caution"] {
       --callout-color: var(--color-orange-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="attention"] {
       --callout-color: var(--color-orange-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="failure"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="fail"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="missing"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="danger"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="error"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="bug"] {
       --callout-color: var(--color-red-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="example"] {
       --callout-color: var(--color-purple-rgb);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="quote"] {
       --callout-color: var(--callout-quote);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
     &[data-callout="cite"] {
       --callout-color: var(--callout-quote);
 
       background-color: rgba(var(--callout-color), 0.1);
 
-      --color: var(--callout-color);
+      --color: rgb(var(--callout-color));
     }
   }
 
