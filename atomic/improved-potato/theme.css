@@ -1695,7 +1695,7 @@ body {
   --callout-icon-c2: lucide-scan;
   --callout-icon-c3: lucide-scan;
   --callout-icon-c4: lucide-scan;
-  --callout-icon-mt:  ;
+  --callout-icon-mt: "";
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
