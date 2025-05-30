@@ -1573,6 +1573,7 @@ body {
 
         box-shadow: var(--shadow-l);
 
+        margin: 12vh auto;
         & > input {
           -ms-flex: 0 0 auto;
           -webkit-box-flex: 0;
@@ -1595,6 +1596,7 @@ body {
           z-index: 1;
 
           margin-bottom: 0;
+          border-bottom: none;
           background: transparent;
         }
         & > * {
