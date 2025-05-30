@@ -48,6 +48,14 @@ const start = Date.now()
 // STEP 1
 const args = getCommandLineArgs()
 
+if (args[0] === "ATOMIZE") {
+  if (fs.existsSync(`./converted_app.css`) || fs.existsSync(`./converted_app_extracted.css`)) {
+    throw new Error(
+      "Converted app.css already exists. Please remove it before running the script again.",
+    )
+  }
+}
+
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)

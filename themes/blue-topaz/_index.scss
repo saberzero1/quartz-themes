@@ -6358,17 +6358,17 @@ body {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
-  --font-family-em:   ;
+  --font-family-em: var(--font-family-strong, var(--font-monospace-theme));
   --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
     "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
-  --font-family-list:   ;
+  --font-family-list: var(--font-default);
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-strong: Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
     "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
   --font-family-tag: Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif;
-  --font-family-title:   ;
+  --font-family-title: var(--font-text, var(--font-default));
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
@@ -6802,7 +6802,7 @@ body {
   --popover-width: 450px;
   --popover-width-factor: 1;
   --print-em-color: var(--accent-em);
-  --print-strong-color:   ;
+  --print-strong-color: var(--accent-strong);
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
