@@ -1560,6 +1560,7 @@ body {
           0 16px 16px rgba(0, 0, 0, 0.11),
           0 32px 32px rgba(0, 0, 0, 0.11);
 
+        margin: 12vh auto;
         & > input {
           background-color: var(--background-primary);
           border: none;
@@ -1572,6 +1573,7 @@ body {
           width: 100%;
 
           margin-bottom: 0;
+          border-bottom: none;
           background: transparent;
         }
         & > * {
