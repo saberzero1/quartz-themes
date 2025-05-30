@@ -255,6 +255,10 @@
   --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
   --yellow-inverted-active: hsl(37.3, calc(var(--saturation-factor, 1) * 95.7%), 90.8%);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 .darkmode {
@@ -2112,20 +2116,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {
