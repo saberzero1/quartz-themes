@@ -58,6 +58,236 @@ html[saved-theme="light"] {
 }
 /* END LIGHT */
 
+/* CALLOUTS */
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  .callout {
+
+    //%%CALLOUT%%
+
+    //%%CALLOUT BACKGROUND%%
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &[data-callout] {
+      //%%CALLOUT NOTE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="abstract"] {
+      //%%CALLOUT ABSTRACT%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="summary"] {
+      //%%CALLOUT SUMMARY%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tldr"] {
+      //%%CALLOUT TLDR%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="info"] {
+      //%%CALLOUT INFO%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="todo"] {
+      //%%CALLOUT TODO%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="important"] {
+      //%%CALLOUT IMPORTANT%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="tip"] {
+      //%%CALLOUT TIP%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="hint"] {
+      //%%CALLOUT HINT%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="success"] {
+      //%%CALLOUT SUCCESS%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="check"] {
+      //%%CALLOUT CHECK%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="done"] {
+      //%%CALLOUT DONE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="question"] {
+      //%%CALLOUT QUESTION%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="help"] {
+      //%%CALLOUT HELP%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="faq"] {
+      //%%CALLOUT FAQ%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="warning"] {
+      //%%CALLOUT WARNING%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="caution"] {
+      //%%CALLOUT CAUTION%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="attention"] {
+      //%%CALLOUT ATTENTION%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="failure"] {
+      //%%CALLOUT FAILURE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="fail"] {
+      //%%CALLOUT FAIL%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="missing"] {
+      //%%CALLOUT MISSING%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="danger"] {
+      //%%CALLOUT DANGER%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="error"] {
+      //%%CALLOUT ERROR%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="bug"] {
+      //%%CALLOUT BUG%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="example"] {
+      //%%CALLOUT EXAMPLE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="quote"] {
+      //%%CALLOUT QUOTE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+    &[data-callout="cite"] {
+      //%%CALLOUT CITE%%
+
+      //%%CALLOUT BACKGROUND%%
+
+      --color: var(--callout-color);
+    }
+  }
+
+  .callout-title {
+    
+    //%%CALLOUT TITLE%%
+
+    & > .callout-title-inner > p {
+
+      //%%CALLOUT TITLE INNER%%
+
+    }
+
+    .callout-title-inner {
+
+      //%%CALLOUT TITLE INNER FONT WEIGHT%%
+
+    }
+
+  }
+
+  & > .callout-content {
+    
+    //%%CALLOUT CONTENT%%
+
+  }
+}
+
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
