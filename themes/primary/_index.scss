@@ -4531,7 +4531,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-todo);
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="todo"] {
       --callout-color: var(--callout-rgb-todo);
@@ -4541,7 +4541,7 @@ html {
         var(--editor-bg-color)
       );
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-info);
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="important"] {
       --callout-color: var(--callout-rgb-important);

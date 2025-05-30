@@ -1240,13 +1240,13 @@ html {
       --callout-color: var(--callout-info);
       background-color: var(--background-secondary);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-todo);
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="todo"] {
       --callout-color: var(--callout-todo);
       background-color: var(--background-secondary);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-info);
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="important"] {
       --callout-color: var(--callout-important);

@@ -1689,13 +1689,13 @@ html {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-todo);
+      --callout-icon: var(--callout-icon-info);
     }
     &[data-callout="todo"] {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
       --color: rgb(var(--callout-color));
-      --callout-icon: var(--callout-icon-info);
+      --callout-icon: var(--callout-icon-todo);
     }
     &[data-callout="important"] {
       --callout-color: 92, 153, 124;
