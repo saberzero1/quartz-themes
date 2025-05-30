@@ -601,6 +601,8 @@ manifestCollection.forEach((manifest) => {
   resultCSS = applyRuleToString(resultCSS, 'input[type="search"]', "//%%SEARCH BUTTON%%", themeCSS)
 
   // Write the result to the _index.scss file
+  resultCSS = resultCSS.replace(/\n+/g, "\n") // Remove extra newlines
+  resultCSS = resultCSS.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
   fs.writeFileSync(`./themes/${getTheme(manifest)}/_index.scss`, resultCSS, "utf8")
 
   // _dark.scss and _light.scss
