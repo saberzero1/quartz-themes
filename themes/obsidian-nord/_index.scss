@@ -135,6 +135,10 @@
   --text-selection: rgba(var(--red_x), 0.6);
   --titlebar-text-color-focused: var(--red);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -256,6 +260,10 @@
   --text-selection: rgba(var(--red_x), 0.6);
   --titlebar-text-color-focused: var(--red);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -1604,20 +1612,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

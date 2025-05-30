@@ -873,6 +873,10 @@
   --yaml-number-color: var(--color-d-red-20);
   --yaml-string-color: var(--color-d-yellow-30);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -1741,6 +1745,10 @@
   --yaml-number-color: var(--color-l-red-10);
   --yaml-string-color: var(--color-l-yellow-30);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -4745,20 +4753,6 @@ html {
     box-shadow: var(--callout-content-shadow);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

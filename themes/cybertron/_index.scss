@@ -135,6 +135,10 @@
   --window-border: 1px solid var(--window-border-color);
   --window-border-color: var(--background-secondary-alt);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 .darkmode {
@@ -1236,20 +1240,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

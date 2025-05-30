@@ -138,6 +138,10 @@
   --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -261,6 +265,10 @@
   --tab-max-width: 50%;
   --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* cyrillic-ext */
@@ -1515,20 +1523,6 @@ html {
     overflow: visible;
     overflow-x: auto;
     padding: 0.5em;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

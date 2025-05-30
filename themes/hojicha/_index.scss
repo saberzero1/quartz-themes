@@ -124,6 +124,10 @@
   --yellow: #c99b53;
   --yellow-rgba: rgba(201, 155, 83, 0.2);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 .darkmode {
@@ -1303,20 +1307,6 @@ html {
     color: var(--text);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

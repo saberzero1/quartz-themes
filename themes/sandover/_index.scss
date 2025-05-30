@@ -146,6 +146,10 @@
   background-color: var(--color-salmon);
   color: var(--color-light1);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -276,6 +280,10 @@
   --vault-name-font-weight: 700;
   background-color: var(--color-salmon-lighter);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* latin-ext */
@@ -1524,20 +1532,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

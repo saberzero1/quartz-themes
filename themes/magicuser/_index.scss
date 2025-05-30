@@ -134,6 +134,10 @@
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -271,6 +275,10 @@
   --text-muted: #353535;
   --text-normal: #000;
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* cyrillic-ext */
@@ -1689,20 +1697,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

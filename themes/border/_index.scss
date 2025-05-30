@@ -189,6 +189,10 @@
     0.6
   );
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -337,6 +341,10 @@
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --workspace-background-translucent: rgba(246, 246, 246, 0.8);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 @font-face {
@@ -1884,20 +1892,6 @@ html {
     border-radius: var(--callout-content-radius);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

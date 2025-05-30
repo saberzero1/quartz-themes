@@ -121,6 +121,10 @@
   --text-close-color: #ff909b;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.35);
   color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
 }
 
 :root[saved-theme="light"] {
@@ -227,6 +231,10 @@
   --text-close-color: #791d26;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.35);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 /* vietnamese */
@@ -1480,20 +1488,6 @@ html {
     overflow-x: auto;
     padding: 2%;
     transition: background-color 0.3s;
-  }
-}
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {

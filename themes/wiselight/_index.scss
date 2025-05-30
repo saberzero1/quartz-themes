@@ -94,6 +94,10 @@
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(204, 230, 255, 0.99);
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
 
 .darkmode {
@@ -1256,20 +1260,6 @@ html {
     background-color: var(--callout-content-background);
     overflow-x: auto;
     padding: var(--callout-content-padding);
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: lighten;
-    //mix-blend-mode: lighten;
-  }
-}
-:root,
-html {
-  .callout {
-    --callout-blend-mode: darken;
-    //mix-blend-mode: darken;
   }
 }
 body {
