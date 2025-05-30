@@ -1889,21 +1889,11 @@ body {
   --flair-count-padding: 2px 4px;
   --flair-count-radius: calc(var(--radius-s) + 1px);
   --font-black: 900;
-  --font-blockid-size:  ;
-  --font-blockquote-size:  ;
   --font-bold: 750;
-  --font-callout-size:  ;
-  --font-callout-title-size:  ;
-  --font-codeblock-btn-size:  ;
-  --font-codeblock-size:  ;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-extrabold: 850;
   --font-extralight: 250;
-  --font-footnotes-flag-size:  ;
-  --font-footnotes-size:  ;
-  --font-footnotes-title-size:  ;
-  --font-inlinecode-size:  ;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
@@ -1917,7 +1907,6 @@ body {
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "Cascadia Code";
-  --font-nav-item-size:  ;
   --font-normal: 450;
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
@@ -1931,7 +1920,6 @@ body {
   --font-text-size: 16px;
   --font-text-theme: "Inter";
   --font-thin: 150;
-  --font-tree-item-size:  ;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
   --font-ui-small: 13px;

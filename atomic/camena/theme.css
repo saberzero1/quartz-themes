@@ -1665,7 +1665,7 @@ body {
   --blockquote-background-color: transparent;
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
-  --blockquote-color:  ;
+  --blockquote-color: rgba(var(--accent-rgb) / 0.2);
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
