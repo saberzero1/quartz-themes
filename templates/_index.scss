@@ -306,6 +306,7 @@ html {
 html[saved-theme="dark"] {
   .callout: {
     --callout-blend-mode: lighten;
+    mix-blend-mode: lighten;
   }
 }
 
@@ -313,6 +314,7 @@ html[saved-theme="dark"] {
 html[saved-theme="light"] {
   .callout: {
     --callout-blend-mode: darken;
+    mix-blend-mode: darken;
   }
 }
 
