@@ -1254,12 +1254,14 @@ html {
 html {
   .callout: {
     --callout-blend-mode: lighten;
+    mix-blend-mode: lighten;
   }
 }
 :root,
 html {
   .callout: {
     --callout-blend-mode: darken;
+    mix-blend-mode: darken;
   }
 }
 body {
