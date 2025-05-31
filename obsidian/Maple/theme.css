@@ -6390,7 +6390,7 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .kanban-plugin__lane-items,
     .kanban-plugin__autocomplete
   ) {
-  transition: --scrollbar-color var(--animation);
+  transition: var(--scrollbar-color) var(--animation);
 }
 body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
   :is(

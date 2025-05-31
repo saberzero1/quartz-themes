@@ -1,0 +1,8 @@
+:root:root {
+  .callout-title {
+    color: rgb(var(--callout-color));
+  }
+  .callout-content {
+    background-color: rgba(var(--callout-color), 0.15);
+  }
+}

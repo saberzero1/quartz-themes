@@ -6141,7 +6141,7 @@ body {
   --kanban-card-margin: 2px 0;
   --kanban-link-color: var(--accent2-lite);
   --kanban-link-font-weight: inherit;
-  --kanban-link-symbol: ;
+  --kanban-link-symbol: "";
   --kanban-tag-background: var(--tag-background);
   --tag-background-color: var(--tag-background);
   --kanban-button-background: var(--code-bg);

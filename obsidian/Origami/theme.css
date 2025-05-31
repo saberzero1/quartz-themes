@@ -2016,7 +2016,8 @@ body {
   --color-cyan: #94fdff;
   --color-cyan-hsl: 187, 26%, 63%;
   --color-blue-rgb: 0, 132, 255;
-  --color-blue: #0084ff --color-blue-hsl: 209, 100%, 50%;
+  --color-blue: #0084ff;
+  --color-blue-hsl: 209, 100%, 50%;
   --color-purple-rgb: 77, 65, 89;
   --color-purple-hsl: 270, 16%, 30%;
   --color-purple: #93388f;

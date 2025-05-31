@@ -289,7 +289,7 @@ body {
 /** 4.7. Code blocks */
 /** 4.7.1. Fix code block font size */
 body {
-  --code-size: --font-normal;
+  --code-size: var(--font-normal);
 }
 /** 4.7.2. Fix code block alignment and background */
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {

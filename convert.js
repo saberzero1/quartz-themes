@@ -1,449 +1,37 @@
-import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import splitCombinedRulesWithPostCSS from "./atomize-css-rules.mjs"
+import {
+  splitCombinedRules,
+  combineIdenticalSelectors,
+  removeEmptyRules,
+  getRuleDeclarations,
+} from "./util/postcss.mjs"
+import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs"
+import {
+  readJsonFileAsDictionary,
+  getValueFromDictionary,
+  getCommandLineArgs,
+  getTheme,
+  isDarkTheme,
+  isLightTheme,
+  isFullTheme,
+  getExtras,
+  getFonts,
+  getFilesUnderDirectoryToStringArray,
+  listFoldersInDirectory,
+  clearDirectoryContents,
+  ensureDirectoryExists,
+  copyFileToDirectory,
+  replaceInFile,
+  replaceInString,
+  applyRuleToFile,
+  applyRuleToString,
+} from "./util/util.mjs"
+import { themes, usedRules } from "./config.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
 let singleThemeName = ""
 
-/**
- * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
- *
- * @param {string} folderPath - The path of the folder where the JSON file is located.
- * @param {string} fileName - The name of the JSON file.
- * @returns {Object} The content of the JSON file as a JavaScript object.
- * @throws {Error} If the file cannot be read or the content is not valid JSON.
- */
-function readJsonFileAsDictionary(folderPath, fileName) {
-  try {
-    // Construct the full path to the JSON file
-    const filePath = path.join(folderPath, fileName)
-
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    // Parse the JSON content into a JavaScript object
-    const jsonObject = JSON.parse(fileContent)
-
-    return jsonObject
-  } catch (error) {
-    throw new Error(`Unable to read or parse JSON file: ${error.message}`)
-  }
-}
-
-/**
- * Lists all folders within a specified directory.
- *
- * @param {string} dirPath - The path of the directory to search.
- * @returns {string[]} An array of folder names within the provided directory.
- * @throws {Error} If the directory cannot be accessed or read.
- */
-function listFoldersInDirectory(dirPath) {
-  try {
-    // Read the directory contents
-    const items = fs.readdirSync(dirPath)
-
-    // Filter out the items that are directories
-    const folders = items.filter((item) => {
-      const itemPath = path.join(dirPath, item)
-      return fs.statSync(itemPath).isDirectory()
-    })
-
-    return folders
-  } catch (error) {
-    throw new Error(`Unable to access directory: ${error.message}`)
-  }
-}
-
-/**
- * Retrieves the command line arguments passed to the Node.js script.
- *
- * @returns {string[]} An array containing the command line arguments.
- */
-function getCommandLineArgs() {
-  // Remove the first two elements, which are the Node executable and the script file path
-  const args = process.argv.slice(2)
-  return args
-}
-
-/**
- * Retrieves the current working directory of the Node.js process.
- *
- * @returns {string} The current working directory.
- */
-function getCurrentFolder() {
-  return process.cwd()
-}
-
-/**
- * Retrieves the value associated with a given key in a dictionary.
- *
- * @param {Object} dictionary - The dictionary (JavaScript object) to search.
- * @param {string} key - The key whose value is to be retrieved.
- * @returns {*} The value associated with the key, or an empty string if the key does not exist.
- */
-function getValueFromDictionary(dictionary, key) {
-  // Check if the key exists using the `in` operator and return the value or an empty string
-  return key in dictionary ? dictionary[key] : ""
-}
-
-/**
- * Ensures that a directory exists. If the directory structure does not exist, it is created.
- *
- * @param {string} folderPath - The path of the folder to ensure exists.
- * @throws {Error} If the directory cannot be created due to an error.
- */
-function ensureDirectoryExists(folderPath) {
-  try {
-    // Create the directory if it does not exist, including parent directories if necessary
-    fs.mkdirSync(folderPath, { recursive: true })
-  } catch (error) {
-    throw new Error(`Unable to create directory: ${error.message}`)
-  }
-}
-
-/**
- * Converts a string to lowercase, replaces spaces with hyphens, and removes invalid filename characters,
- * while preserving emojis.
- *
- * @param {string} input - The input string to transform.
- * @returns {string} The transformed string, suitable for use as a filename.
- */
-function sanitizeFilenamePreservingEmojis(input) {
-  // Convert the string to lowercase
-  let sanitized = input.toLowerCase()
-
-  // Replace spaces with hyphens
-  sanitized = sanitized.replace(/\s+/g, "-")
-
-  // Replace accents
-  sanitized = sanitized.normalize("NFD")
-
-  // Remove invalid filename characters, preserving emojis and some valid characters
-  sanitized = sanitized.replace(/[^a-z0-9-_\p{Emoji}]/gu, "")
-
-  // Remove duplicate hyphens
-  sanitized = sanitized.replace(/-+/gu, "-")
-
-  // Remove hyphens from start and end
-  sanitized = sanitized.replace(/^-+/gu, "")
-  sanitized = sanitized.replace(/-+$/gu, "")
-
-  return sanitized
-}
-
-/**
- * Removes all contents of a specified directory.
- *
- * @param {string} dirPath - The path of the directory to clear.
- * @throws {Error} If the directory cannot be accessed or if an error occurs during deletion.
- */
-function clearDirectoryContents(dirPath) {
-  try {
-    // Read all items in the directory
-    const items = fs.readdirSync(dirPath)
-
-    // Iterate over each item and remove it
-    items.forEach((item) => {
-      const itemPath = path.join(dirPath, item)
-      const stats = fs.statSync(itemPath)
-
-      // Check if it's a directory
-      if (stats.isDirectory()) {
-        // Recursively remove directory content
-        clearDirectoryContents(itemPath)
-        // Remove the directory itself
-        fs.rmdirSync(itemPath)
-      } else {
-        // Remove file
-        fs.unlinkSync(itemPath)
-      }
-    })
-  } catch (error) {
-    throw new Error(`Unable to clear directory: ${error.message}`)
-  }
-}
-
-/**
- * Copies a file to a specified directory.
- *
- * @param {string} sourceFilePath - The path to the file to be copied.
- * @param {string} targetDirectoryPath - The path to the directory where the file should be copied.
- * @throws {Error} If the file cannot be copied due to an error.
- */
-function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
-  try {
-    // Ensure the target directory exists
-    if (!fs.existsSync(targetDirectoryPath)) {
-      throw new Error(`Target directory does not exist: ${targetDirectoryPath}`)
-    }
-
-    // Get the filename from the source path
-    const fileName = path.basename(sourceFilePath)
-
-    // Construct the target file path
-    const targetFilePath = path.join(targetDirectoryPath, fileName)
-
-    // Copy the file to the target directory
-    fs.copyFileSync(sourceFilePath, targetFilePath)
-
-    //console.log(`File successfully copied to '${targetFilePath}'`);
-  } catch (error) {
-    throw new Error(`Unable to copy file: ${error.message}`)
-  }
-}
-
-/**
- * Replaces all occurrences of a target string with a replacement string in a given file.
- *
- * @param {string} filePath - The path to the file in which replacements should be made.
- * @param {string} targetString - The string to be replaced.
- * @param {string} replacementString - The string to replace the target string.
- * @throws {Error} If the file cannot be read or written.
- */
-function replaceInFile(filePath, targetString, replacementString) {
-  try {
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    // Replace all occurrences of the target string with the replacement string
-    const modifiedContent = fileContent.split(targetString).join(replacementString)
-
-    // Write the modified content back to the file
-    fs.writeFileSync(filePath, modifiedContent, "utf8")
-
-    //console.log(`Replaced all occurrences of "${targetString}" with "${replacementString}" in '${filePath}'`);
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-/**
- * Finds all occurrences of a pattern in a file using a specified regex string.
- *
- * @param {string} filePath - The path to the file to search.
- * @param {RegExp} regexString - The regex pattern string to match.
- * @returns {string} An array of strings containing all matches found in the file.
- * @throws {Error} If the file cannot be read or if the regex pattern is invalid.
- */
-function findAllMatchesInFile(filePath, regexString) {
-  try {
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    // Use match to find all matches in the file content
-    const matches = fileContent.matchAll(regexString)
-
-    console.log([matches].length)
-
-    // Return the matches or an empty array if no matches are found
-    return matches !== undefined && matches.length > 0 ? [...matches][0] : []
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-/**
- * Finds all occurrences of a pattern in a file using a specified regex string
- * and returns them as a single newline-separated string.
- *
- * @param {string} filePath - The path to the file to search.
- * @param {RegExp} regexString - The regex pattern string to match.
- * @returns {string} A newline-separated string containing all matches found in the file.
- * @throws {Error} If the file cannot be read or if the regex pattern is invalid.
- */
-function findAllMatchesAsString(filePath, regexString) {
-  try {
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    // Create a regular expression object with the global flag to find all matches
-    //const regex = new RegExp(regexString, 'gmsv');
-
-    // Use match to find all matches in the file content
-    const matches = fileContent.match(regexString)
-
-    // Convert the matches array to a newline-separated string (or return an empty string if no matches)
-    return matches ? matches.join("\n") : ""
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-/**
- * Removes all lines from a CSS file that are not CSS variable definitions.
- * A CSS variable is defined as a line containing '--[variable-name]: [value];'.
- *
- * @param {string} cssString - The string content of the CSS file.
- * @returns {string} Custom properties only.
- * @throws {Error} If the file cannot be read or written.
- */
-function removeNonVariableLines(cssString) {
-  try {
-    // Read the string as an array of lines
-    const lines = cssString.split("\n")
-
-    // Remove comments
-    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
-
-    // Filter lines to include only those that match the CSS variable pattern
-    const variableLines = linesCleared.filter(
-      (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
-    )
-
-    // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
-
-    // Join the filtered lines back into a single string
-    const updatedContent = emptyColorLines.join("\n")
-
-    // Convert colors to rgb
-    const convertedContent = convertCssColorsToRgbWithSass(updatedContent)
-
-    // Write the updated content back to the file
-    return convertedContent
-
-    //console.log(`Removed non-variable lines from '${filePath}'`);
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
-
-const themeSettings = readJsonFileAsDictionary(getCurrentFolder(), "themes.json")
-const themes = getValueFromDictionary(themeSettings, "themes")
-
-/**
- * Checks for dark mode
- *
- * @param {string} theme theme name
- * @returns {bool} true if the theme has a dark mode. false otherwise.
- */
-function isDarkTheme(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["modes"].includes("dark")
-}
-
-/**
- * Checks for light mode
- *
- * @param {string} theme theme name
- * @returns {bool} true if the theme has a light mode. false otherwise.
- */
-function isLightTheme(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["modes"].includes("light")
-}
-
-/**
- * Checks for both light and dark mode
- *
- * @param {string} theme theme name
- * @returns {bool} true if theme has both a light and dark mode. false otherwise.
- */
-function isFullTheme(theme) {
-  return isDarkTheme(theme) && isLightTheme(theme)
-}
-
-/**
- * Gets extras for a specific game
- *
- * @param {string} theme theme name
- * @returns {string[]} Array of extras to install.
- */
-function getExtras(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["extras"]
-}
-
-/**
- * Gets extra fonts for a specific game
- *
- * @param {string} theme theme name
- * @returns {string[]} Array of extra fonts to install.
- */
-function getFonts(theme) {
-  const defaultFonts = ["avenir", "inter", "source-code-pro"]
-  const result = themes[sanitizeFilenamePreservingEmojis(theme)]["fonts"]
-  return result.length > 0 ? result : defaultFonts
-}
-
-/**
- * Sets specified callouts styling
- *
- * @param {string} theme theme name
- */
-function setCallout(theme) {
-  const callout =
-    themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
-      ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
-      : "empty"
-
-  if (callout !== "") {
-    fs.copyFileSync(
-      `./extras/callouts/${callout}.scss`,
-      `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/overrides.scss`,
-    )
-  }
-
-  fs.copyFileSync(
-    `./extras/callouts/default.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/default.scss`,
-  )
-}
-
-/**
- * Get the current theme name
- *
- * @param {Object} dict input dictionary
- * @returns {string} Theme name
- */
-function getTheme(dict) {
-  return sanitizeFilenamePreservingEmojis(getValueFromDictionary(dict, "name"))
-}
-
-/**
- * Get all files under a directory and return them as an array of strings.
- * All file paths are relative to the provided directory path.
- *
- * @param {string} dirPath - The path of the directory to search.
- * @param {string} [themeName] - Optional theme name to filter the files.
- * @returns {string[]} An array of file names within the provided directory.
- * @throws {Error} If the directory cannot be accessed or read.
- */
-function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
-  try {
-    // Read the directory contents
-    const items = fs.readdirSync(dirPath)
-
-    // Initialize an array to hold the file paths
-    const files = []
-    // Iterate over each item in the directory
-    items.forEach((item) => {
-      const itemPath = path.join(dirPath, item)
-      const stats = fs.statSync(itemPath)
-
-      // Check if the item is a file
-      if (stats.isFile()) {
-        // Add the file path to the array
-        files.push(itemPath)
-      } else if (stats.isDirectory()) {
-        // If it's a directory, recursively get files from it
-        const subFiles = getFilesUnderDirectoryToStringArray(itemPath)
-        files.push(...subFiles)
-      }
-    })
-
-    if (themeName !== "") {
-      // Remove the directory path prefix from the file paths
-      for (let i = 0; i < files.length; i++) {
-        if (files[i].includes(themeName)) {
-          // Remove the directory path prefix
-          files[i] = files[i].split(themeName)[1]
-        }
-      }
-    }
-
-    return files
-  } catch (error) {
-    throw new Error(`Unable to access directory: ${error.message}`)
-  }
-}
+const start = Date.now()
 
 // STEPS:
 //
@@ -458,19 +46,23 @@ function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
 
 // Actual script
 // STEP 1
-const currentFolder = getCurrentFolder()
-//console.log("Current working directory:", currentFolder)
-
 const args = getCommandLineArgs()
-//console.log("Command line arguments:", args)
+
+if (args[0] === "ATOMIZE") {
+  if (fs.existsSync(`./converted_app.css`) || fs.existsSync(`./converted_app_extracted.css`)) {
+    throw new Error(
+      "Converted app.css already exists. Please remove it before running the script again.",
+    )
+  }
+}
 
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
-//console.log(folders.length)
+
+const manifestCollection = []
 
 // STEP 2
-let manifestCollection = []
 if (singleThemeName === "") {
   folders.forEach((folder) => {
     manifestCollection.push(
@@ -482,14 +74,13 @@ if (singleThemeName === "") {
     readJsonFileAsDictionary(`${obsidianFolder}/${singleThemeName}`, "manifest.json"),
   )
 }
-//console.log(manifestCollection)
 
 // STEP 3
 clearDirectoryContents(`./themes`)
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`)
-  ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
+  //ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
@@ -549,9 +140,9 @@ manifestCollection.forEach((manifest) => {
 })
 
 // callouts
-manifestCollection.forEach((manifest) => {
-  setCallout(getValueFromDictionary(manifest, "name"))
-})
+//manifestCollection.forEach((manifest) => {
+//  setCallout(getValueFromDictionary(manifest, "name"))
+//})
 
 // extras
 manifestCollection.forEach((manifest) => {
@@ -594,13 +185,6 @@ manifestCollection.forEach((manifest) => {
 
 // STEP 6
 // _index.scss
-const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
-const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
-const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
-const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
-let hasDarkOptions = true
-let hasLightOptions = true
 manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
   let extras = ""
@@ -619,92 +203,521 @@ manifestCollection.forEach((manifest) => {
   fontExtras.forEach((font) => {
     extras += `\n@use "extras/fonts/${font}.scss";`
   })
-  extras += `\n@use "callouts/default.scss";`
-  extras += `\n@use "callouts/overrides.scss";`
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//EXTRAS`, extras)
+  //extras += `\n@use "callouts/default.scss";`
+  //extras += `\n@use "callouts/overrides.scss";`
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%EXTRAS%%`, extras)
 })
 manifestCollection.forEach((manifest) => {
+  const themeNameLocal = getValueFromDictionary(manifest, "name")
+  console.log(`Processing theme: ${themeNameLocal}`)
   if (args[0] === "ATOMIZE") {
+    if (!fs.existsSync(`./converted_app.css`)) {
+      const obsidianCSS = fs.readFileSync("./app.css", "utf8")
+      const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8")
+      let result = splitCombinedRules(`${obsidianCSS}\n${overridesCSS}`)
+      result = combineIdenticalSelectors(result)
+      result = removeEmptyRules(result)
+      result = result.replace(/\n+/g, "\n") // Remove extra newlines
+      result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+      fs.writeFileSync(`./converted_app.css`, result, "utf8")
+      // Write extracted version to speed up later processing
+      const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8")
+      let extractResult = ""
+      for (const rule of usedRules) {
+        const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
+        extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+      }
+      extractResult = combineIdenticalSelectors(extractResult)
+      extractResult = removeEmptyRules(extractResult)
+      extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
+      extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+      fs.writeFileSync(`./converted_app_extracted.css`, extractResult, "utf8")
+    }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
+    const atomicExctractedFile = `./atomic/${getTheme(manifest)}/theme_extracted.css`
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
-    const splitCssString = splitCombinedRulesWithPostCSS(cssString)
-    fs.writeFileSync(atomicFile, splitCssString, "utf8")
+    const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
+    const obsidianExtractedCSS = fs.readFileSync("./converted_app_extracted.css", "utf8")
+    let result = `${obsidianCSS}\n${splitCombinedRules(cssString)}`
+    result = combineIdenticalSelectors(result)
+    result = removeEmptyRules(result)
+    result = result.replace(/\n+/g, "\n") // Remove extra newlines
+    result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+    fs.writeFileSync(atomicFile, result, "utf8")
+    // Write extracted version to speed up later processing
+    const cssAtomicString = fs.readFileSync(atomicFile, "utf8")
+    let extractResult = `${obsidianExtractedCSS}\n`
+    for (const rule of usedRules) {
+      const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
+      extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+    }
+    extractResult = combineIdenticalSelectors(extractResult)
+    extractResult = removeEmptyRules(extractResult)
+    extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
+    extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+    fs.writeFileSync(atomicExctractedFile, extractResult, "utf8")
   }
-  const bodyValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    bodyRegex,
+  const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
+    ? "theme"
+    : "theme_extracted"
+  const themeCSS = fs.readFileSync(
+    `${atomicFolder}/${getTheme(manifest)}/${useExtendedSyntax}.css`,
+    "utf8",
   )
-  const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//BODY`,
-    removeNonVariableLines(bodyValue2),
-  )
-})
-manifestCollection.forEach((manifest) => {
-  const rootValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    rootRegex,
-  )
-  const rootValue2 = rootValue.replace(rootRegex, "$1")
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    `//ROOT`,
-    removeNonVariableLines(rootValue2),
-  )
-})
+  let resultCSS = fs.readFileSync(`./themes/${getTheme(manifest)}/_index.scss`, "utf8")
+  resultCSS = applyRuleToString(resultCSS, ":root", "//%%ROOT%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY%%", themeCSS)
 
-// _fonts.scss
-/*
-manifestCollection.forEach((manifest) => {
-  const fontValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
-    fontRegex,
-  )
-  const fontValue2 = fontValue.replace(fontRegex, "$1")
-  replaceInFile(`./themes/${getTheme(manifest)}/_fonts.scss`, `//FONTS`, fontValue2)
-})
-  */
+  // Reusables
+  resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY COLOR%%", themeCSS, "color")
 
-// _dark.scss and _light.scss
-manifestCollection.forEach((manifest) => {
-  const darkValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    darkRegex,
+  // Layout
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-split.mod-root",
+    "//%%WORKSPACE BACKGROUND ROOT%%",
+    themeCSS,
+    "background-color",
   )
-  const lightValue = findAllMatchesAsString(
-    `${atomicFolder}/${getTheme(manifest)}/theme.css`,
-    lightRegex,
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-split",
+    "//%%WORKSPACE BACKGROUND SIDEBARS%%",
+    //".workspace-tabs .workspace-leaf",
+    themeCSS,
+    "background-color",
   )
-  hasDarkOptions = darkValue !== ""
-  hasLightOptions = lightValue !== ""
-  const darkValue2 = darkValue.replace(darkRegex, "$1")
-  const lightValue2 = lightValue.replace(lightRegex, "$1")
-  if (hasDarkOptions && isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue2),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_dark.scss`,
-      `//DARK`,
-      removeNonVariableLines(darkValue2),
-    )
+
+  // Separator borders
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-leaf-resize-handle",
+    "//%%WORKSPACE SEPARATOR BORDER COLOR%%",
+    themeCSS,
+    "border-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-leaf-resize-handle",
+    "//%%WORKSPACE SEPARATOR BORDER WIDTH%%",
+    themeCSS,
+    "border-width",
+  )
+
+  // Heading links
+  resultCSS = applyRuleToString(resultCSS, "h1 a", "//%%H1 A%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h2 a", "//%%H2 A%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h3 a", "//%%H3 A%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h4 a", "//%%H4 A%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h5 a", "//%%H5 A%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h6 a", "//%%H6 A%%", themeCSS)
+
+  // Headings
+  resultCSS = applyRuleToString(resultCSS, "h1", "//%%H1%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h2", "//%%H2%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h3", "//%%H3%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h4", "//%%H4%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h5", "//%%H5%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "h6", "//%%H6%%", themeCSS)
+
+  // Code blocks
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre", "//%%PRE%%", themeCSS)
+
+  // inline code
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
+
+  // Code copy button
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".markdown-rendered button.copy-code-button",
+    "//%%CLIPBOARD BUTTON%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".markdown-rendered button.copy-code-button:hover",
+    "//%%CLIPBOARD BUTTON HOVER%%",
+    themeCSS,
+  )
+
+  // Breadcrumbs
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".view-header-title-parent .view-header-breadcrumb-separator",
+    "//%%BREADCRUMB SEPARATOR COLOR%%",
+    themeCSS,
+    "color",
+  )
+
+  // Explorer
+  resultCSS = applyRuleToString(resultCSS, ".nav-file-title", "//%%EXPLORER FILE TITLE%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".nav-file-title.is-active",
+    "//%%EXPLORER FILE TITLE ACTIVE%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-children",
+    "//%%EXPLORER FOLDER CONTENT%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self .tree-item-icon",
+    "//%%EXPLORER FOLDER ICON COLOR%%",
+    themeCSS,
+    "color",
+  )
+
+  // TOC
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM COLOR%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM FONT WEIGHT%%",
+    themeCSS,
+    "font-weight",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM FONT SIZE%%",
+    themeCSS,
+    "font-size",
+  )
+
+  // Backlinks
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".backlink-pane > .tree-item-self",
+    "//%%BACKLINK COLOR%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".backlink-pane > .tree-item-self .tree-item-inner",
+    "//%%BACKLINK WEIGHT%%",
+    themeCSS,
+    "font-weight",
+  )
+
+  // Callouts
+  resultCSS = applyRuleToString(resultCSS, ".callout", "//%%CALLOUT%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout",
+    "//%%CALLOUT BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
+
+  // Callout title
+  resultCSS = applyRuleToString(resultCSS, ".callout-title", "//%%CALLOUT TITLE%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout-title-inner",
+    "//%%CALLOUT TITLE INNER%%",
+    themeCSS,
+  )
+
+  // Callout content
+  resultCSS = applyRuleToString(resultCSS, ".callout-content", "//%%CALLOUT CONTENT%%", themeCSS)
+
+  // Callout variations
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".callout",
+    "//%%CALLOUT NOTE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="tip"]',
+    "//%%CALLOUT TIP%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="warning"]',
+    "//%%CALLOUT WARNING%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="danger"]',
+    "//%%CALLOUT DANGER%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="abstract"]',
+    "//%%CALLOUT ABSTRACT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="todo"]',
+    "//%%CALLOUT TODO%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="question"]',
+    "//%%CALLOUT QUESTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="info"]',
+    "//%%CALLOUT INFO%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="success"]',
+    "//%%CALLOUT SUCCESS%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="quote"]',
+    "//%%CALLOUT QUOTE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="example"]',
+    "//%%CALLOUT EXAMPLE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="bug"]',
+    "//%%CALLOUT BUG%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="summary"]',
+    "//%%CALLOUT SUMMARY%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="tldr"]',
+    "//%%CALLOUT TLDR%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="important"]',
+    "//%%CALLOUT IMPORTANT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="hint"]',
+    "//%%CALLOUT HINT%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="check"]',
+    "//%%CALLOUT CHECK%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="done"]',
+    "//%%CALLOUT DONE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="help"]',
+    "//%%CALLOUT HELP%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="faq"]',
+    "//%%CALLOUT FAQ%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="caution"]',
+    "//%%CALLOUT CAUTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="attention"]',
+    "//%%CALLOUT ATTENTION%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="failure"]',
+    "//%%CALLOUT FAILURE%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="error"]',
+    "//%%CALLOUT ERROR%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="fail"]',
+    "//%%CALLOUT FAIL%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="missing"]',
+    "//%%CALLOUT MISSING%%",
+    themeCSS,
+    "--callout-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    '.callout[data-callout="cite"]',
+    "//%%CALLOUT CITE%%",
+    themeCSS,
+    "--callout-color",
+  )
+
+  // Content Meta
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".metadata-input-longtext",
+    "//%%CONTENT META%%",
+    themeCSS,
+    "color",
+  )
+
+  // Popovers
+  resultCSS = applyRuleToString(resultCSS, ".popover", "//%%POPOVER%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, ".popover", "//%%POPOVER BORDER%%", themeCSS, "border")
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".popover",
+    "//%%POPOVER BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".popover",
+    "//%%POPOVER BORDER RADIUS%%",
+    themeCSS,
+    "border-radius",
+  )
+
+  // Search
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".prompt",
+    "//%%SEARCH BACKGROUND COLOR%%",
+    themeCSS,
+    "background-color",
+  )
+  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH SHADOW%%", themeCSS, "box-shadow")
+  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH BORDER%%", themeCSS, "border")
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".prompt",
+    "//%%SEARCH BORDER RADIUS%%",
+    themeCSS,
+    "border-radius",
+  )
+  resultCSS = applyRuleToString(resultCSS, "input.prompt-input", "//%%SEARCH INPUT%%", themeCSS)
+
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".suggestion-item.is-selected",
+    "//%%SEARCH RESULT HOVER BACKGROUND%%",
+    themeCSS,
+    "background-color",
+  )
+
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".suggestion-highlight",
+    "//%%SEARCH HIGHLIGHT%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".markdown-rendered mark",
+    "//%%SEARCH HIGHLIGHT BACKGROUND%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    "a.tag",
+    "//%%SEARCH RESULT TAG COLOR%%",
+    themeCSS,
+    "color",
+  )
+
+  // Search button
+  resultCSS = applyRuleToString(resultCSS, 'input[type="search"]', "//%%SEARCH BUTTON%%", themeCSS)
+
+  // Write the result to the _index.scss file
+  resultCSS = resultCSS.replace(/\n+/g, "\n") // Remove extra newlines
+  resultCSS = resultCSS.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+  fs.writeFileSync(`./themes/${getTheme(manifest)}/_index.scss`, resultCSS, "utf8")
+
+  // _dark.scss and _light.scss
+  const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
+  const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
+  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%DARK%%`, darkValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//%%DARK%%`, darkValue)
   }
-  if (hasLightOptions && isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_index.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue2),
-    )
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_light.scss`,
-      `//LIGHT`,
-      removeNonVariableLines(lightValue2),
-    )
+  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%LIGHT%%`, lightValue)
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//%%LIGHT%%`, lightValue)
   }
 
   // Unset color-scheme for single mode themes
@@ -760,26 +773,18 @@ manifestCollection.forEach((manifest) => {
   }
 
   // Remove remaining comments
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/_index.scss`,
-    /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    "",
-  )
+  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\/\/%%[^%]+%%/g, "")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_dark.scss`,
-      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-      "",
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, /\/\/%%[^%]+%%/g, "")
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${getTheme(manifest)}/_light.scss`,
-      /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-      "",
-    )
+    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, /\/\/%%[^%]+%%/g, "")
   }
+
+  console.log(`Finished processing theme: ${themeNameLocal}`)
 })
+
+console.info("All themes processed successfully.")
 
 // Rebuild README.md
 console.log("Updating compatibility table...")
@@ -831,6 +836,26 @@ const themeListFileList = []
 // Get all directories under themes
 const themeFolders = listFoldersInDirectory(`./themes`)
 
+// Embet @use rules in each theme's _index.scss
+themeFolders.forEach((folder) => {
+  const themePath = `./themes/${folder}/_index.scss`
+  if (fs.existsSync(themePath)) {
+    // Combine all @use rules in the _index.scss file
+    const scssContent = fs.readFileSync(themePath, "utf8")
+    const processedScss = inlineScssUseRulesAndClean(scssContent, themePath)
+    fs.writeFileSync(themePath, processedScss, "utf8")
+    // Remove all directories under themes/${folder}
+    const themeDir = `./themes/${folder}`
+    const items = fs.readdirSync(themeDir)
+    items.forEach((item) => {
+      const itemPath = path.join(themeDir, item)
+      if (fs.statSync(itemPath).isDirectory()) {
+        fs.rmSync(itemPath, { recursive: true })
+      }
+    })
+  }
+})
+
 // Get a list of all files under each theme directory
 themeFolders.forEach((folder) => {
   const files = getFilesUnderDirectoryToStringArray(`./themes/${folder}`, folder)
@@ -850,3 +875,9 @@ fs.writeFileSync(
 fs.writeFileSync(`./theme-list`, themeListFileList.join("\n"), "utf8")
 
 console.log("Finished updating Quartz Syncer file list")
+// Log the time taken to run the script in minutes and seconds
+const end = Date.now()
+const timeTaken = ((end - start) / 1000).toFixed(2)
+console.log(
+  `Script completed in ${Math.floor(timeTaken / 60)} minutes and ${Math.floor(timeTaken % 60)} seconds.`,
+)

@@ -7,7 +7,8 @@ body {
   --link-decoration: none;
   --link-decoration-hover: none;
   --link-external-decoration: none;
-  --link-external-decoration-hover: none --icon-color: #a8a8a8;
+  --link-external-decoration-hover: none;
+  --icon-color: #a8a8a8;
 
   --font-text-theme: "Charter", Georgia, serif;
   --font-interface-theme: sans-serif;

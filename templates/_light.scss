@@ -1,3 +1,9 @@
 :root[saved-theme="light"] {
-//LIGHT
+
+  //%%LIGHT%%
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 }
+

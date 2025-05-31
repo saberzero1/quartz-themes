@@ -919,18 +919,18 @@ body {
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
-  --font-nav-item-size: ;
-  --font-tree-item-size: ;
-  --font-blockquote-size: ;
-  --font-callout-title-size: ;
-  --font-callout-size: ;
-  --font-inlinecode-size: ;
-  --font-codeblock-size: ;
-  --font-codeblock-btn-size: ;
-  --font-footnotes-title-size: ;
-  --font-footnotes-flag-size: ;
-  --font-footnotes-size: ;
-  --font-blockid-size: ;
+  /* --font-nav-item-size: ; */
+  /* --font-tree-item-size: ; */
+  /* --font-blockquote-size: ; */
+  /* --font-callout-title-size: ; */
+  /* --font-callout-size: ; */
+  /* --font-inlinecode-size: ; */
+  /* --font-codeblock-size: ; */
+  /* --font-codeblock-btn-size: ; */
+  /* --font-footnotes-title-size: ; */
+  /* --font-footnotes-flag-size: ; */
+  /* --font-footnotes-size: ; */
+  /* --font-blockid-size: ; */
   font-weight: var(--font-normal);
   --font-thin: 150;
   --font-extralight: 250;

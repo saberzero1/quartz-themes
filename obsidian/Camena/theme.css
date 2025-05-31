@@ -93,7 +93,7 @@ body {
   --background-modifier-message: var(--accent-color);
   --background-secondary: var(--background-secondary-alt);
 
-  --blockquote-color: ;
+  --blockquote-color: rgba(var(--accent-rgb) / 0.2);
 
   --callout-quote: var(--accent-rgb);
   --callout-color: var(--accent-rgb);
