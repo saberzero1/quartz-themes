@@ -1548,6 +1548,7 @@ body {
     position: relative;
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.46, 0.95);
     white-space: var(--code-white-space);
+    white-space: pre;
     & > code {
       background-color: transparent;
       border: none;
@@ -1663,6 +1664,12 @@ body {
   }
   /* EXPLORER */
   .explorer {
+    @media all and ($mobile) {
+      &:not(.collapsed) > .explorer-content {
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+      }
+    }
     .explorer-content {
       @media all and ($mobile) {
         background-color: var(--tab-container-background);
@@ -1694,7 +1701,8 @@ body {
         margin-bottom: var(--size-2-1);
         padding: 4px 0 4px 8px;
         padding-left: 1.5em;
-        &.active {
+        &.active,
+        &:hover {
           background: transparent;
           background-color: var(--nav-item-background-active);
           border-left: none;
@@ -1720,10 +1728,13 @@ body {
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
     }
-    ul.toc-content.overflow li {
-      color: var(--nav-item-color);
-      font-weight: var(--nav-item-weight);
-      font-size: var(--nav-item-size);
+    ul.toc-content.overflow {
+      li,
+      li > a {
+        color: var(--nav-item-color);
+        font-weight: var(--nav-item-weight);
+        font-size: var(--nav-item-size);
+      }
     }
   }
   .backlinks,
@@ -1742,6 +1753,7 @@ body {
       line-height: var(--h3-line-height);
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
+      min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
   /* ICONS */
@@ -1781,12 +1793,12 @@ body {
     width: 24px;
     height: 24px;
   }
-  svg,
-  .global-graph-icon:after,
-  .readermode:after,
-  .darkmode svg {
+  .explorer svg,
+  button.toc-header .fold,
+  .global-graph-icon,
+  .readermode,
+  .darkmode {
     color: var(--icon-color);
-    fill: var(--icon-color);
     stroke: var(--icon-color);
   }
   /* SEARCH */
@@ -1973,6 +1985,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    work-break: auto-phrase;
   }
 }
 :root[saved-theme="light"] {

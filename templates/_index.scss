@@ -573,6 +573,7 @@ body {
 
     //%%PRE%%
 
+    white-space: pre;
     & > code {
 
       //%%CODE%%
@@ -683,6 +684,12 @@ body {
 
   /* EXPLORER */
   .explorer {
+    @media all and ($mobile) {
+      &:not(.collapsed) > .explorer-content {
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+      }
+    }
     .explorer-content {
       @media all and ($mobile) {
 
@@ -704,7 +711,8 @@ body {
 
         //%%EXPLORER FILE TITLE%%
 
-        &.active {
+        &.active,
+        &:hover {
 
           //%%EXPLORER FILE TITLE ACTIVE%%
 
@@ -720,14 +728,17 @@ body {
       //%%H3%%
 
     }
-    ul.toc-content.overflow li {
+    ul.toc-content.overflow {
+      li,
+      li > a {
       
-      //%%TOC ITEM COLOR%%
+        //%%TOC ITEM COLOR%%
 
-      //%%TOC ITEM FONT WEIGHT%%
+        //%%TOC ITEM FONT WEIGHT%%
 
-      //%%TOC ITEM FONT SIZE%%
+        //%%TOC ITEM FONT SIZE%%
 
+      }
     }
   }
 
@@ -739,6 +750,7 @@ body {
 
       //%%H3%%
 
+      min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
 
@@ -782,12 +794,12 @@ body {
     height: 24px;
   }
 
-  svg,
-  .global-graph-icon:after,
-  .readermode:after,
-  .darkmode svg {
+  .explorer svg,
+  button.toc-header .fold,
+  .global-graph-icon,
+  .readermode,
+  .darkmode {
     color: var(--icon-color);
-    fill: var(--icon-color);
     stroke: var(--icon-color);
   }
 
@@ -958,6 +970,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    work-break: auto-phrase;
   }
 }
 
