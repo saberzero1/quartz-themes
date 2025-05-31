@@ -1350,6 +1350,11 @@ html {
       overflow-wrap: break-word;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
+      overflow: hidden;
+      overflow-wrap: break-word;
     }
   }
   & > .callout-content {

@@ -4771,6 +4771,9 @@ html {
       font-weight: var(--font-semibold);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: var(--font-semibold);
     }
   }
   & > .callout-content {

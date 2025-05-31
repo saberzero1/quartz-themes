@@ -1366,6 +1366,10 @@ html {
       font-weight: var(--font-weight);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: color-mix(in srgb, rgb(var(--callout-color)) 70%, var(--color-base-100));
+      filter: contrast(2);
+      font-weight: var(--font-weight);
     }
   }
   & > .callout-content {

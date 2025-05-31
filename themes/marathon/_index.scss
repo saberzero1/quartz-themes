@@ -1543,6 +1543,14 @@ html {
       padding: 0.5em;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--accent-color-inverse);
+      font-family:
+        cascadia code,
+        inter,
+        verdana;
+      font-weight: var(--font-weight);
+      padding: 0.5em;
     }
   }
   & > .callout-content {

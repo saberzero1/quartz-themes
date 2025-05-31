@@ -2040,6 +2040,9 @@ html {
       font-weight: var(--font-weight);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--800);
+      font-weight: var(--font-weight);
     }
   }
   & > .callout-content {
