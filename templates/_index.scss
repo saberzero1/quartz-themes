@@ -339,6 +339,7 @@ body {
   section,
   .page > #quartz-body .sidebar {
     &.left,
+    &.left:has(.explorer),
     &.right {
 
       //%%WORKSPACE BACKGROUND SIDEBARS%%
@@ -347,6 +348,14 @@ body {
 
       //%%WORKSPACE SEPARATOR BORDER COLOR%%
 
+    }
+
+    @media all and not ($desktop) {
+      &.right {
+
+        //%%WORKSPACE BACKGROUND ROOT%%
+
+      }
     }
   }
 
@@ -675,6 +684,12 @@ body {
   /* EXPLORER */
   .explorer {
     .explorer-content {
+      @media all and ($mobile) {
+
+        //%%WORKSPACE BACKGROUND SIDEBARS%%
+
+      }
+
       .folder-container {
 
         //%%EXPLORER FOLDER ICON COLOR%%
