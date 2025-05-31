@@ -1376,6 +1376,16 @@ input[type="search"] {
   padding: 2px 4px;
 }
 
+.tree-item-inner {
+  color: var(--text-normal);
+  font-size: 70%;
+  margin: 1px -2px -10px 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  unicode-bidi: plaintext;
+  white-space: pre-wrap;
+}
+
 .tree-item-inner-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1456,6 +1466,125 @@ svg.svg-icon {
   opacity: var(--icon-opacity);
   padding: var(--size-2-2) var(--size-2-3);
   transition: opacity 0.15s ease-in-out;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: var(--text-faint);
+  padding: 2px 1px;
+}
+
+.backlink-pane {
+  flex: 1 0 0;
+  overflow-y: auto;
+  padding-bottom: 30px;
+  padding-inline-end: var(--size-4-3);
+  padding-inline-start: var(--size-4-3);
+  padding-top: var(--size-4-1);
+}
+
+.backlink-pane .search-result-container {
+  margin-left: 0;
+  padding: 5px 0px 5px 10px;
+}
+
+.backlink-pane > .tree-item-self {
+  color: var(--nav-heading-color);
+  padding-inline-start: var(--size-4-2);
+}
+
+.backlink-pane > .tree-item-self .tree-item-inner {
+  font-weight: var(--nav-heading-weight);
+}
+
+.backlink-pane > .tree-item-self.is-clickable.is-collapsed {
+  color: var(--nav-heading-color-collapsed);
+}
+
+.graph-view.color-fill {
+  color: var(--color-accent);
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--color-accent-hover-invert);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved);
+  opacity: 0.5;
+}
+
+.graph-view.color-fill-1 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-2 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-3 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-4 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-5 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-6 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-arrow {
+  color: var(--text-normal);
+  opacity: 0.5;
+}
+
+.graph-view.color-circle {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.graph-view.color-text {
+  color: var(--graph-text);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--color-accent-hover);
+}
+
+.graph-view.color-line-highlight {
+  color: var(--color-accent-hover);
+}
+
+.graph-controls {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  inset-inline-end: var(--size-4-3);
+  left: 0px;
+  max-height: calc(100% - 16px);
+  max-width: 280px;
+  min-width: 240px;
+  overflow: auto;
+  padding: 8px 16px 8px 8px;
+  position: absolute;
+  top: 0px;
+  transform: scale(0);
+  width: var(--graph-controls-width);
 }
 
 .theme-dark {
@@ -1685,4 +1814,47 @@ svg.svg-icon {
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%));
   --translucency: 0.85;
   color-scheme: light;
+}
+
+.mod-sidedock {
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.workspace-split {
+  background-color: var(--tab-container-background);
+  display: flex;
+  position: relative;
+}
+
+.workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background);
+}
+
+.workspace-tabs .workspace-leaf {
+  background-color: var(--background-secondary);
+  height: 100%;
+  width: 100%;
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .view-content {
+  background-color: var(--background-primary);
+}
+
+.workspace-leaf-resize-handle {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: var(--divider-color);
+  border-top: 0;
+  border-width: var(--divider-width);
+  margin: 0;
+  position: absolute;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+  z-index: var(--layer-cover);
 }

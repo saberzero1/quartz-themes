@@ -1394,6 +1394,13 @@ input[type="search"] {
   right: 0;
 }
 
+.tree-item-inner {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  unicode-bidi: plaintext;
+  white-space: nowrap;
+}
+
 .tree-item-inner-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1475,6 +1482,132 @@ svg.svg-icon {
   opacity: var(--icon-opacity);
   padding: var(--size-2-2) var(--size-2-3);
   transition: opacity 0.15s ease-in-out;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: var(--text-faint);
+  padding: 2px 1px;
+}
+
+.backlink-pane {
+  flex: 1 0 0;
+  overflow-y: auto;
+  padding-bottom: 30px;
+  padding-inline-end: var(--size-4-3);
+  padding-inline-start: var(--size-4-3);
+  padding-top: var(--size-4-1);
+}
+
+.backlink-pane .search-result-container {
+  margin-left: 0;
+  padding: 5px 5px 5px 5px;
+}
+
+.backlink-pane > .tree-item-self {
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--font-adaptive-smallest);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 5px 7px 5px 10px;
+  padding-inline-start: var(--size-4-2);
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.backlink-pane > .tree-item-self .tree-item-inner {
+  font-weight: var(--nav-heading-weight);
+}
+
+.backlink-pane > .tree-item-self.is-clickable.is-collapsed {
+  color: var(--nav-heading-color-collapsed);
+}
+
+.graph-view.color-fill {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--text-faint);
+  opacity: 0.5;
+}
+
+.graph-view.color-fill-1 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-2 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-3 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-4 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-5 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-6 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-arrow {
+  color: var(--text-normal);
+  opacity: 0.5;
+}
+
+.graph-view.color-circle {
+  color: var(--text-accent);
+}
+
+.graph-view.color-line {
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+  color: var(--text-normal);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--text-accent);
+}
+
+.graph-view.color-line-highlight {
+  border: 0;
+  color: var(--text-accent);
+}
+
+.graph-controls {
+  background: var(--background-primary);
+  background-color: var(--background-primary);
+  border: none;
+  border-radius: 0;
+  inset-inline-end: var(--size-4-3);
+  left: 0;
+  margin-bottom: 0;
+  min-width: 240px;
+  overflow: auto;
+  padding: 10px 20px 10px 10px;
+  position: absolute;
+  top: 10px;
+  width: var(--graph-controls-width);
 }
 
 .theme-dark {
@@ -1655,4 +1788,46 @@ svg.svg-icon {
   --text-on-accent: white;
   --text-selection: hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%);
   color-scheme: light;
+}
+
+.mod-sidedock {
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.workspace-split {
+  background-color: var(--tab-container-background);
+  display: flex;
+  position: relative;
+}
+
+.workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background);
+}
+
+.workspace-tabs .workspace-leaf {
+  background-color: var(--background-secondary);
+  height: 100%;
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .view-content {
+  background-color: var(--background-primary);
+}
+
+.workspace-leaf-resize-handle {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: var(--divider-color);
+  border-top: 0;
+  border-width: var(--divider-width);
+  margin: 0;
+  position: absolute;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+  z-index: var(--layer-cover);
 }

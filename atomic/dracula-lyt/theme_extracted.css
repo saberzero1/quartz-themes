@@ -1436,6 +1436,12 @@ input[type="search"] {
   vertical-align: -1px;
 }
 
+.tree-item-inner {
+  overflow: hidden;
+  unicode-bidi: plaintext;
+  white-space: pre-wrap;
+}
+
 .tree-item-inner-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1517,6 +1523,128 @@ svg.svg-icon {
   opacity: var(--icon-opacity);
   padding: var(--size-2-2) var(--size-2-3);
   transition: opacity 0.15s ease-in-out;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: var(--text-faint);
+  padding: 2px 1px;
+}
+
+.backlink-pane {
+  flex: 1 0 0;
+  overflow-y: auto;
+  padding-bottom: var(--size-4-8);
+  padding-inline-end: var(--size-4-3);
+  padding-inline-start: var(--size-4-3);
+  padding-top: var(--size-4-1);
+}
+
+.backlink-pane .search-result-container {
+  border-left: 1px solid var(--background-modifier-border);
+  margin-left: var(--scale-8-2);
+  padding: var(--size-4-1) 1px var(--size-4-4);
+}
+
+.backlink-pane > .tree-item-self {
+  color: var(--nav-heading-color);
+  padding-inline-start: var(--size-4-2);
+}
+
+.backlink-pane > .tree-item-self .tree-item-inner {
+  font-weight: var(--nav-heading-weight);
+}
+
+.backlink-pane > .tree-item-self.is-clickable.is-collapsed {
+  color: var(--nav-heading-color-collapsed);
+}
+
+.graph-view.color-fill {
+  color: var(--graph-color-node-resolved);
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-color-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-color-node-unresolved);
+  opacity: 1;
+}
+
+.graph-view.color-fill-1 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-2 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-3 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-4 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-5 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-6 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-color-arrow);
+  opacity: 1;
+}
+
+.graph-view.color-circle {
+  color: var(--graph-color-node-border-hover);
+  opacity: 1;
+}
+
+.graph-view.color-line {
+  color: var(--graph-color-line);
+  opacity: 1;
+}
+
+.graph-view.color-text {
+  color: var(--graph-color-text);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: var(--graph-color-line-hover);
+}
+
+.graph-controls {
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-80);
+  border-radius: var(--scale-2-1);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-gray-30);
+  inset-inline-end: var(--size-4-3);
+  margin-left: var(--scale-2-2);
+  margin-top: var(--scale-2-2);
+  overflow: auto;
+  padding: var(--scale-2-3) var(--scale-2-8) var(--scale-2-3) var(--scale-2-3);
+  position: absolute;
+  top: var(--size-4-3);
+  transition: var(--duration-moderate-2) var(--motion-heavy);
+  width: var(--graph-controls-width);
 }
 
 .theme-dark {
@@ -2227,4 +2355,46 @@ svg.svg-icon {
   --text-on-accent: var(--color-white);
   --text-selection: rgba(134, 169, 209, 0.233);
   color-scheme: light;
+}
+
+.mod-sidedock {
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.workspace-split {
+  background-color: var(--tab-container-background);
+  display: flex;
+  position: relative;
+}
+
+.workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background);
+}
+
+.workspace-tabs .workspace-leaf {
+  background-color: var(--background-secondary);
+  height: 100%;
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .view-content {
+  background-color: var(--background-primary);
+}
+
+.workspace-leaf-resize-handle {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: var(--divider-color);
+  border-top: 0;
+  border-width: var(--divider-width);
+  margin: 0;
+  position: absolute;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+  z-index: var(--layer-cover);
 }
