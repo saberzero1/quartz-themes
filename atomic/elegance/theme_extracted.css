@@ -1377,6 +1377,12 @@ input[type="search"] {
   line-height: 1;
 }
 
+.tree-item-inner {
+  overflow: hidden;
+  unicode-bidi: plaintext;
+  white-space: pre-wrap;
+}
+
 .tree-item-inner-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1457,6 +1463,128 @@ svg.svg-icon {
   opacity: var(--icon-opacity);
   padding: var(--size-2-2) var(--size-2-3);
   transition: opacity 0.15s ease-in-out;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: var(--text-faint);
+  padding: 2px 1px;
+}
+
+.backlink-pane {
+  flex: 1 0 0;
+  overflow-y: auto;
+  padding-bottom: var(--size-4-8);
+  padding-inline-end: var(--size-4-3);
+  padding-inline-start: var(--size-4-3);
+  padding-top: var(--size-4-1);
+}
+
+.backlink-pane .search-result-container {
+  padding: var(--size-4-1) 1px var(--size-4-4);
+}
+
+.backlink-pane > .tree-item-self {
+  color: var(--nav-heading-color);
+  padding-inline-start: var(--size-4-2);
+}
+
+.backlink-pane > .tree-item-self .tree-item-inner {
+  font-weight: var(--nav-heading-weight);
+}
+
+.backlink-pane > .tree-item-self.is-clickable.is-collapsed {
+  color: var(--nav-heading-color-collapsed);
+}
+
+.graph-view.color-fill {
+  color: "";
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved);
+  opacity: 0.5;
+}
+
+.graph-view.color-fill-1 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-2 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-3 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-4 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-5 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-6 {
+  color: var(--text-muted);
+}
+
+.graph-view.color-arrow {
+  color: rgb(0, 195, 255);
+  opacity: 0.5;
+}
+
+.graph-view.color-circle {
+  color: "";
+}
+
+.graph-view.color-line {
+  color: #6272a4;
+}
+
+.graph-view.color-text {
+  color: "";
+}
+
+.graph-view.color-fill-highlight {
+  color: "";
+}
+
+.graph-view.color-line-highlight {
+  color: "";
+}
+
+.graph-controls {
+  backdrop-filter: blur(5.5px);
+  background: linear-gradient(160deg, #0000003d, rgb(0 0 0 / 45%));
+  background-color: "";
+  border: 1px solid var(--background-modifier-border);
+  border-bottom: 2px solid white;
+  border-radius: 0 13px 13px 0;
+  border-right: 2px solid white;
+  border-top: 1px solid white;
+  color: "";
+  inset-inline-end: var(--size-4-3);
+  left: 0;
+  margin: 0px 0px 7.5px 0px;
+  min-width: "";
+  overflow: auto;
+  padding: 6px 6px 6px 6px;
+  position: absolute;
+  top: 0;
+  width: 400px;
 }
 
 .theme-dark {
@@ -1727,4 +1855,46 @@ svg.svg-icon {
   --yellow: #f1fa8c;
   --yellow-rgb: 241, 250, 140;
   color-scheme: light;
+}
+
+.mod-sidedock {
+  --bases-table-header-background: var(--background-secondary);
+}
+
+.workspace-split {
+  background-color: var(--tab-container-background);
+  display: flex;
+  position: relative;
+}
+
+.workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background);
+}
+
+.workspace-tabs .workspace-leaf {
+  background-color: var(--background-secondary);
+  height: 100%;
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .view-content {
+  background-color: var(--background-primary);
+}
+
+.workspace-leaf-resize-handle {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: var(--divider-color);
+  border-top: 0;
+  border-width: var(--divider-width);
+  margin: 0;
+  position: absolute;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+  z-index: var(--layer-cover);
 }
