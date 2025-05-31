@@ -1887,6 +1887,7 @@ body {
     padding: var(--size-4-3) var(--size-4-4);
     position: relative;
     white-space: var(--code-white-space);
+    white-space: pre;
     & > code {
       background-color: transparent;
       border: none;
@@ -2003,6 +2004,12 @@ body {
   }
   /* EXPLORER */
   .explorer {
+    @media all and ($mobile) {
+      &:not(.collapsed) > .explorer-content {
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+      }
+    }
     .explorer-content {
       @media all and ($mobile) {
         background-color: var(--tab-container-background);
@@ -2033,7 +2040,8 @@ body {
         line-height: var(--line-height-tight);
         margin-bottom: var(--size-2-1);
         padding: var(--nav-item-padding);
-        &.active {
+        &.active,
+        &:hover {
           background-color: var(--nav-item-background-active);
           color: var(--nav-item-color-active);
           font-weight: var(--nav-item-weight-active);
@@ -2057,10 +2065,13 @@ body {
       margin-block-start: var(--p-spacing);
       text-transform: var(--h3-text-transform);
     }
-    ul.toc-content.overflow li {
-      color: var(--nav-item-color);
-      font-weight: var(--nav-item-weight);
-      font-size: var(--nav-item-size);
+    ul.toc-content.overflow {
+      li,
+      li > a {
+        color: var(--nav-item-color);
+        font-weight: var(--nav-item-weight);
+        font-size: var(--nav-item-size);
+      }
     }
   }
   .backlinks,
@@ -2080,6 +2091,7 @@ body {
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       text-transform: var(--h3-text-transform);
+      min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
   /* ICONS */
@@ -2119,12 +2131,12 @@ body {
     width: 24px;
     height: 24px;
   }
-  svg,
-  .global-graph-icon:after,
-  .readermode:after,
-  .darkmode svg {
+  .explorer svg,
+  button.toc-header .fold,
+  .global-graph-icon,
+  .readermode,
+  .darkmode {
     color: var(--icon-color);
-    fill: var(--icon-color);
     stroke: var(--icon-color);
   }
   /* SEARCH */
@@ -2306,6 +2318,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    work-break: auto-phrase;
   }
 }
 :root {
