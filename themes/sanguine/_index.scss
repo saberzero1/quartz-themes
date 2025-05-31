@@ -1960,12 +1960,12 @@ body {
           height: 16px;
           position: absolute;
           background: var(--icon-color);
-          top: 50%;
+          top: 4px;
           left: 0;
           content: "";
           mask-image: var(--folder-closed-icon);
           -webkit-mask-image: var(--folder-closed-icon);
-          &:has(+ .folder-outer.open) {
+          &:has(> .folder-outer.open) {
             mask-image: var(--folder-open-icon);
             -webkit-mask-image: var(--folder-open-icon);
           }
@@ -1987,7 +1987,7 @@ body {
       ul.explorer-ul li {
         text-overflow: ellipsis;
         position: relative;
-        &:before {
+        &:has(> a):before {
           --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
           display: inline-block;
           width: 16px;
@@ -1995,7 +1995,7 @@ body {
           content: "";
           position: absolute;
           background: var(--icon-color);
-          top: 50%;
+          top: 4px;
           left: 0;
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
