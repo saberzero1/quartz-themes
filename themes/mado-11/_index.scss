@@ -1657,10 +1657,16 @@ body {
   section,
   .page > #quartz-body .sidebar {
     &.left,
+    &.left:has(.explorer),
     &.right {
       background-color: initial;
       border-width: var(--divider-width);
       border-color: transparent;
+    }
+    @media all and not ($desktop) {
+      &.right {
+        background-color: initial;
+      }
     }
   }
   .highlight,
@@ -2030,6 +2036,9 @@ body {
   /* EXPLORER */
   .explorer {
     .explorer-content {
+      @media all and ($mobile) {
+        background-color: initial;
+      }
       .folder-container {
         color: var(--icon-color);
       }

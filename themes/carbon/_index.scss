@@ -1412,10 +1412,16 @@ body {
   section,
   .page > #quartz-body .sidebar {
     &.left,
+    &.left:has(.explorer),
     &.right {
       background-color: var(--tab-container-background);
       border-width: var(--divider-width);
       border-color: var(--divider-color);
+    }
+    @media all and not ($desktop) {
+      &.right {
+        background-color: var(--background-primary);
+      }
     }
   }
   .highlight,
@@ -1785,6 +1791,9 @@ body {
   /* EXPLORER */
   .explorer {
     .explorer-content {
+      @media all and ($mobile) {
+        background-color: var(--tab-container-background);
+      }
       .folder-container {
         color: var(--icon-color);
       }
