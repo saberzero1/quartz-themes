@@ -1335,6 +1335,11 @@ html {
       margin-right: auto;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--text-normal);
+      font-weight: var(--bold-weight);
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   & > .callout-content {

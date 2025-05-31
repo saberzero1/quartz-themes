@@ -1442,6 +1442,12 @@ html {
       transition: all 750ms;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-size: 1.2em;
+      font-variation-settings: "WGHT" 900;
+      font-weight: bold;
+      transition: all 750ms;
     }
   }
   & > .callout-content {
