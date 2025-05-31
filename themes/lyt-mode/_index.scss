@@ -1615,6 +1615,10 @@ html {
       font-weight: var(--font-weight);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      filter: brightness(1.2);
+      font-weight: var(--font-weight);
     }
   }
   & > .callout-content {

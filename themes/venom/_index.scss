@@ -1352,6 +1352,9 @@ html {
       font-weight: var(--font-weight);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: var(--font-weight);
     }
   }
   & > .callout-content {

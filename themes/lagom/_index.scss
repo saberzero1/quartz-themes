@@ -1281,6 +1281,16 @@ html {
       white-space: norma;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      border-bottom: 0.7px solid;
+      color: var(--callout-title-color);
+      display: var(--hide-callout-title);
+      font-size: var(--callout-font-size-title);
+      font-weight: var(--font-weight);
+      margin: 7px auto 7px auto;
+      padding-bottom: 3.8px;
+      text-align: center;
+      white-space: norma;
     }
   }
   & > .callout-content {

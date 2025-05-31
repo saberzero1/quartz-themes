@@ -1391,6 +1391,10 @@ html {
       margin-left: 0.4em;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-weight: bold;
+      margin-left: 0.4em;
     }
   }
   & > .callout-content {

@@ -2018,6 +2018,14 @@ html {
       top: -0.7em;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color-danger, var(--callout-title-color, white));
+      filter: drop-shadow(0 0 1px var(--accent-color-light1));
+      font-size: 1.4em;
+      font-weight: var(--font-weight);
+      left: -0.1em;
+      position: relative;
+      top: -0.7em;
     }
   }
   & > .callout-content {

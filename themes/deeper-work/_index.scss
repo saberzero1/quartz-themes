@@ -1335,6 +1335,12 @@ html {
       vertical-align: bottom;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-size: 120%;
+      font-weight: var(--font-weight);
+      line-height: 1.4em;
+      vertical-align: bottom;
     }
   }
   & > .callout-content {
