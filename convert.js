@@ -273,6 +273,39 @@ manifestCollection.forEach((manifest) => {
   // Reusables
   resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY COLOR%%", themeCSS, "color")
 
+  // Layout
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-split.mod-root",
+    "//%%WORKSPACE BACKGROUND ROOT%%",
+    themeCSS,
+    "background-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-split",
+    "//%%WORKSPACE BACKGROUND SIDEBARS%%",
+    //".workspace-tabs .workspace-leaf",
+    themeCSS,
+    "background-color",
+  )
+
+  // Separator borders
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-leaf-resize-handle",
+    "//%%WORKSPACE SEPARATOR BORDER COLOR%%",
+    themeCSS,
+    "border-color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".workspace-leaf-resize-handle",
+    "//%%WORKSPACE SEPARATOR BORDER WIDTH%%",
+    themeCSS,
+    "border-width",
+  )
+
   // Heading links
   resultCSS = applyRuleToString(resultCSS, "h1 a", "//%%H1 A%%", themeCSS)
   resultCSS = applyRuleToString(resultCSS, "h2 a", "//%%H2 A%%", themeCSS)
@@ -308,6 +341,76 @@ manifestCollection.forEach((manifest) => {
     ".markdown-rendered button.copy-code-button:hover",
     "//%%CLIPBOARD BUTTON HOVER%%",
     themeCSS,
+  )
+
+  // Breadcrumbs
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".view-header-title-parent .view-header-breadcrumb-separator",
+    "//%%BREADCRUMB SEPARATOR COLOR%%",
+    themeCSS,
+    "color",
+  )
+
+  // Explorer
+  resultCSS = applyRuleToString(resultCSS, ".nav-file-title", "//%%EXPLORER FILE TITLE%%", themeCSS)
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".nav-file-title.is-active",
+    "//%%EXPLORER FILE TITLE ACTIVE%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-children",
+    "//%%EXPLORER FOLDER CONTENT%%",
+    themeCSS,
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self .tree-item-icon",
+    "//%%EXPLORER FOLDER ICON COLOR%%",
+    themeCSS,
+    "color",
+  )
+
+  // TOC
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM COLOR%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM FONT WEIGHT%%",
+    themeCSS,
+    "font-weight",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".tree-item-self",
+    "//%%TOC ITEM FONT SIZE%%",
+    themeCSS,
+    "font-size",
+  )
+
+  // Backlinks
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".backlink-pane > .tree-item-self",
+    "//%%BACKLINK COLOR%%",
+    themeCSS,
+    "color",
+  )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    ".backlink-pane > .tree-item-self .tree-item-inner",
+    "//%%BACKLINK WEIGHT%%",
+    themeCSS,
+    "font-weight",
   )
 
   // Callouts
