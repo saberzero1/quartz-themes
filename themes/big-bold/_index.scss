@@ -1930,6 +1930,13 @@ html {
       width: fit-content;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      display: block;
+      font-size: var(--h6-size);
+      font-weight: var(--font-normal);
+      margin: auto;
+      width: fit-content;
     }
   }
   & > .callout-content {

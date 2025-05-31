@@ -1497,6 +1497,9 @@ html {
       font-weight: var(--font-weight);
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: currentColor;
+      font-weight: var(--font-weight);
     }
   }
   & > .callout-content {

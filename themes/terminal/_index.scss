@@ -1222,6 +1222,11 @@ html {
       margin-top: 5px;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
+      font-size: var(--the-font-size);
+      font-weight: var(--font-weight);
+      margin-top: 5px;
     }
   }
   & > .callout-content {

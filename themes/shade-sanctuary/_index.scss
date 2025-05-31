@@ -1421,6 +1421,9 @@ html {
       font-weight: revert;
     }
     .callout-title-inner {
+      --font-weight: var(--callout-title-weight);
+      color: rgb(var(--callout-color));
+      font-weight: revert;
     }
   }
   & > .callout-content {
