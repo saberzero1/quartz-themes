@@ -1772,8 +1772,35 @@ body {
     }
   }
   /* ICONS */
-  svg {
-    color: var(--icon-color) !important;
+  .readermode {
+    & > svg {
+      display: none;
+    }
+    &:after {
+      /* lucide book-open icon */
+      content: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>';
+      color: var(--icon-color);
+      stroke: var(--icon-color);
+    }
+  }
+  .global-graph-icon {
+    & > svg {
+      display: none;
+    }
+    &:after {
+      /* lucide git-fork icon */
+      content: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-fork-icon lucide-git-fork"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/></svg>';
+      color: var(--icon-color);
+      stroke: var(--icon-color);
+    }
+  }
+  svg,
+  .global-graph-icon:after,
+  .readermode:after,
+  .darkmode svg {
+    color: var(--icon-color);
+    fill: var(--icon-color);
+    stroke: var(--icon-color);
   }
   /* SEARCH */
   .search {
