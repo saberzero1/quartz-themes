@@ -175,6 +175,7 @@ body {
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
   --bold-modifier: 200;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
   --brighter-graph-line: hsl(var(--accent-h), var(--accent-s), 65%);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -1345,12 +1346,14 @@ body {
   .page article p > strong,
   strong {
     color: var(--bold-color);
+    font-weight: var(--bold-weight);
   }
   .page article p > i,
   .page article p > em,
   i,
   em {
     color: var(--italic-color);
+    font-style: italic;
   }
   .page article p,
   .page article ul,
@@ -1375,6 +1378,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
 }
