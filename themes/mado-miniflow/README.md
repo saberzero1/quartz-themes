@@ -1,6 +1,6 @@
 # Mado Miniflow
 
-- Theme: [Mado Miniflow](OBSIDIAN_THEME_URL%)
+- Theme: Mado Miniflow
 - Author: <a href="https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow" target="_blank" rel="noopener noreferrer">hydescarf</a>
 
 ## Preview

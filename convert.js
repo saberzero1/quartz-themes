@@ -176,15 +176,6 @@ manifestCollection.forEach((manifest) => {
   )
 })
 manifestCollection.forEach((manifest) => {
-  replaceInFile(
-    `./themes/${getTheme(manifest)}/README.md`,
-    "%OBSIDIAN_THEME_URL%",
-    getValueFromDictionary(manifest, "authorUrl") !== ""
-      ? getValueFromDictionary(manifest, "authorUrl")
-      : "#",
-  )
-})
-manifestCollection.forEach((manifest) => {
   const authorValue =
     getValueFromDictionary(manifest, "author") !== ""
       ? getValueFromDictionary(manifest, "author")

@@ -1,6 +1,6 @@
 # ProtocolBlue
 
-- Theme: [ProtocolBlue](OBSIDIAN_THEME_URL%)
+- Theme: ProtocolBlue
 - Author: <a href="https://cosmodiumcs.com" target="_blank" rel="noopener noreferrer">bluecosmo</a>
 
 ## Preview

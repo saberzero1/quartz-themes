@@ -1,6 +1,6 @@
 # Emerald Echo
 
-- Theme: [Emerald Echo](OBSIDIAN_THEME_URL%)
+- Theme: Emerald Echo
 - Author: <a href="https://codeberg.org/MalcolmMielle" target="_blank" rel="noopener noreferrer">Malcolm Mielle</a>
 
 ## Preview

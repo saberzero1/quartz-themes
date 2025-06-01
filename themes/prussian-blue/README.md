@@ -1,6 +1,6 @@
 # Prussian Blue
 
-- Theme: [Prussian Blue](OBSIDIAN_THEME_URL%)
+- Theme: Prussian Blue
 - Author: <a href="ed.toomwn.xyz" target="_blank" rel="noopener noreferrer">EddieTheEd</a>
 
 ## Preview

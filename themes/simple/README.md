@@ -1,6 +1,6 @@
 # Simple
 
-- Theme: [Simple](OBSIDIAN_THEME_URL%)
+- Theme: Simple
 - Author: <a href="https://diegoeis.com/" target="_blank" rel="noopener noreferrer">Diego Eis</a>
 
 ## Preview

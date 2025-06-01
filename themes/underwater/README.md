@@ -1,6 +1,6 @@
 # Underwater
 
-- Theme: [Underwater](OBSIDIAN_THEME_URL%)
+- Theme: Underwater
 - Author: <a href="https://github.com/Seniblue" target="_blank" rel="noopener noreferrer">Seniblue</a>
 
 ## Preview

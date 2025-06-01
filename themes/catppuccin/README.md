@@ -1,6 +1,6 @@
 # Catppuccin
 
-- Theme: [Catppuccin](OBSIDIAN_THEME_URL%)
+- Theme: Catppuccin
 - Author: <a href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener noreferrer">Marshall Beckrich</a>
 
 ## Preview

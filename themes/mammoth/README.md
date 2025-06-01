@@ -1,6 +1,6 @@
 # Mammoth
 
-- Theme: [Mammoth](OBSIDIAN_THEME_URL%)
+- Theme: Mammoth
 - Author: <a href="https://github.com/wittionary" target="_blank" rel="noopener noreferrer">Witt Allen</a>
 
 ## Preview

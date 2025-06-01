@@ -1,6 +1,6 @@
 # Dark Graphite
 
-- Theme: [Dark Graphite](OBSIDIAN_THEME_URL%)
+- Theme: Dark Graphite
 - Author: bernardo_v
 
 ## Preview

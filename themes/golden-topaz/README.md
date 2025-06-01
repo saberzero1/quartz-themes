@@ -1,6 +1,6 @@
 # Golden Topaz
 
-- Theme: [Golden Topaz](OBSIDIAN_THEME_URL%)
+- Theme: Golden Topaz
 - Author: Mouth on Cloud
 
 ## Preview

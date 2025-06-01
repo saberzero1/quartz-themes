@@ -1,6 +1,6 @@
 # Synthwave '84
 
-- Theme: [Synthwave '84](OBSIDIAN_THEME_URL%)
+- Theme: Synthwave '84
 - Author: George Jose
 
 ## Preview

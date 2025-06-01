@@ -1,6 +1,6 @@
 # WilcoxOne
 
-- Theme: [WilcoxOne](OBSIDIAN_THEME_URL%)
+- Theme: WilcoxOne
 - Author: MattWilcox
 
 ## Preview

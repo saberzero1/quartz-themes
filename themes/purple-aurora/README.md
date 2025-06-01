@@ -1,6 +1,6 @@
 # Purple Aurora
 
-- Theme: [Purple Aurora](OBSIDIAN_THEME_URL%)
+- Theme: Purple Aurora
 - Author: <Serice
 
 ## Preview

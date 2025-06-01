@@ -1,6 +1,6 @@
 # Origami
 
-- Theme: [Origami](OBSIDIAN_THEME_URL%)
+- Theme: Origami
 - Author: kneecaps
 
 ## Preview

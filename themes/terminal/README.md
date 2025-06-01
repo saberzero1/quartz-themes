@@ -1,6 +1,6 @@
 # Terminal
 
-- Theme: [Terminal](OBSIDIAN_THEME_URL%)
+- Theme: Terminal
 - Author: <a href="https://github.com/zcysxy" target="_blank" rel="noopener noreferrer">@Atlas</a>
 
 ## Preview

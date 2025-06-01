@@ -1,6 +1,6 @@
 # Adwaita
 
-- Theme: [Adwaita](OBSIDIAN_THEME_URL%)
+- Theme: Adwaita
 - Author: <a href="https://github.com/birneee" target="_blank" rel="noopener noreferrer">@birneee</a>
 
 ## Preview

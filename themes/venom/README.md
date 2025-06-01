@@ -1,6 +1,6 @@
 # Venom
 
-- Theme: [Venom](OBSIDIAN_THEME_URL%)
+- Theme: Venom
 - Author: Fatiger
 
 ## Preview

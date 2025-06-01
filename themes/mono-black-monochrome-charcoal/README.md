@@ -1,6 +1,6 @@
 # mono black (monochrome, charcoal)
 
-- Theme: [mono black (monochrome, charcoal)](OBSIDIAN_THEME_URL%)
+- Theme: mono black (monochrome, charcoal)
 - Author: <a href="https://github.com/ZeChArtiahSaher" target="_blank" rel="noopener noreferrer">zc</a>
 
 ## Preview

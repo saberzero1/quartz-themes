@@ -1,6 +1,6 @@
 # GDCT
 
-- Theme: [GDCT](OBSIDIAN_THEME_URL%)
+- Theme: GDCT
 - Author: bernardo_v
 
 ## Preview

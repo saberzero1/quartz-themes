@@ -1,6 +1,6 @@
 # Iceberg
 
-- Theme: [Iceberg](OBSIDIAN_THEME_URL%)
+- Theme: Iceberg
 - Author: izumin5210
 
 ## Preview

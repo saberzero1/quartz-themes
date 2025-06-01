@@ -1,6 +1,6 @@
 # Al Dente
 
-- Theme: [Al Dente](OBSIDIAN_THEME_URL%)
+- Theme: Al Dente
 - Author: chad-bennett
 
 ## Preview

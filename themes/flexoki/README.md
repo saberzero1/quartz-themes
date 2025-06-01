@@ -1,6 +1,6 @@
 # Flexoki
 
-- Theme: [Flexoki](OBSIDIAN_THEME_URL%)
+- Theme: Flexoki
 - Author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
 
 ## Preview

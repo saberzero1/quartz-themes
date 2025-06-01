@@ -1,6 +1,6 @@
 # Wasp
 
-- Theme: [Wasp](OBSIDIAN_THEME_URL%)
+- Theme: Wasp
 - Author: Santi Younger
 
 ## Preview

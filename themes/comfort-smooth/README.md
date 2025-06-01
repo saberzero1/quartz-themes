@@ -1,6 +1,6 @@
 # Comfort Smooth
 
-- Theme: [Comfort Smooth](OBSIDIAN_THEME_URL%)
+- Theme: Comfort Smooth
 - Author: Spark
 
 ## Preview

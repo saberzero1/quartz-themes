@@ -1,6 +1,6 @@
 # Vercel Geist
 
-- Theme: [Vercel Geist](OBSIDIAN_THEME_URL%)
+- Theme: Vercel Geist
 - Author: <a href="https://github.com/en3sis" target="_blank" rel="noopener noreferrer">en3sis</a>
 
 ## Preview

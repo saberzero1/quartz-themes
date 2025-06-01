@@ -1,6 +1,6 @@
 # Feather
 
-- Theme: [Feather](OBSIDIAN_THEME_URL%)
+- Theme: Feather
 - Author: MFdev
 
 ## Preview

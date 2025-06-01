@@ -1,6 +1,6 @@
 # Polka
 
-- Theme: [Polka](OBSIDIAN_THEME_URL%)
+- Theme: Polka
 - Author: callumhackett
 
 ## Preview

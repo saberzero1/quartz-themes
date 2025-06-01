@@ -1,6 +1,6 @@
 # Enhanced file explorer tree
 
-- Theme: [Enhanced file explorer tree](OBSIDIAN_THEME_URL%)
+- Theme: Enhanced file explorer tree
 - Author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
 
 ## Preview

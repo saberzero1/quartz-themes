@@ -1,6 +1,6 @@
 # Dark Moss
 
-- Theme: [Dark Moss](OBSIDIAN_THEME_URL%)
+- Theme: Dark Moss
 - Author: <a href="https://github.com/sergey900553" target="_blank" rel="noopener noreferrer">sergey</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # OISTNB
 
-- Theme: [OISTNB](OBSIDIAN_THEME_URL%)
+- Theme: OISTNB
 - Author: <a href="https://github.com/omsandippatil" target="_blank" rel="noopener noreferrer">omsandeeppatil</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Meridian
 
-- Theme: [Meridian](OBSIDIAN_THEME_URL%)
+- Theme: Meridian
 - Author: <a href="https://github.com/mvahaste" target="_blank" rel="noopener noreferrer">mvahaste</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Blue Topaz
 
-- Theme: [Blue Topaz](OBSIDIAN_THEME_URL%)
+- Theme: Blue Topaz
 - Author: <a href="https://github.com/whyt-byte" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
 
 ## Preview

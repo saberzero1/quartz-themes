@@ -1,6 +1,6 @@
 # SynthWave
 
-- Theme: [SynthWave](OBSIDIAN_THEME_URL%)
+- Theme: SynthWave
 - Author: Marco Luzi
 
 ## Preview

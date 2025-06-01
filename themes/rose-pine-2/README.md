@@ -1,6 +1,6 @@
 # Rose Pine 2
 
-- Theme: [Rose Pine 2](OBSIDIAN_THEME_URL%)
+- Theme: Rose Pine 2
 - Author: <a href="https://github.com/JTrenerry" target="_blank" rel="noopener noreferrer">rose-pine</a>
 
 ## Preview

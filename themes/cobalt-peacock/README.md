@@ -1,6 +1,6 @@
 # Cobalt Peacock
 
-- Theme: [Cobalt Peacock](OBSIDIAN_THEME_URL%)
+- Theme: Cobalt Peacock
 - Author: dpavaoman
 
 ## Preview

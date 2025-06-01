@@ -1,6 +1,6 @@
 # Dark Graphite Pie
 
-- Theme: [Dark Graphite Pie](OBSIDIAN_THEME_URL%)
+- Theme: Dark Graphite Pie
 - Author: kitchenrunner
 
 ## Preview

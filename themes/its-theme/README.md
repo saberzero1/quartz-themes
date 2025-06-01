@@ -1,6 +1,6 @@
 # ITS Theme
 
-- Theme: [ITS Theme](OBSIDIAN_THEME_URL%)
+- Theme: ITS Theme
 - Author: <a href="https://github.com/SlRvb" target="_blank" rel="noopener noreferrer">SlRvb</a>
 
 ## Preview

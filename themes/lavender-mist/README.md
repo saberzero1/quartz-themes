@@ -1,6 +1,6 @@
 # Lavender-Mist
 
-- Theme: [Lavender-Mist](OBSIDIAN_THEME_URL%)
+- Theme: Lavender-Mist
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

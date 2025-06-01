@@ -1,6 +1,6 @@
 # Firefly
 
-- Theme: [Firefly](OBSIDIAN_THEME_URL%)
+- Theme: Firefly
 - Author: Ali Soueidan
 
 ## Preview

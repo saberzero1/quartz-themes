@@ -1,6 +1,6 @@
 # Reverie
 
-- Theme: [Reverie](OBSIDIAN_THEME_URL%)
+- Theme: Reverie
 - Author: Santi Younger
 
 ## Preview

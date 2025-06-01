@@ -1,6 +1,6 @@
 # Typomagical
 
-- Theme: [Typomagical](OBSIDIAN_THEME_URL%)
+- Theme: Typomagical
 - Author: <a href="https://github.com/hungsu/" target="_blank" rel="noopener noreferrer">Hung-Su</a>
 
 ## Preview

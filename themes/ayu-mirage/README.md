@@ -1,6 +1,6 @@
 # Ayu Mirage
 
-- Theme: [Ayu Mirage](OBSIDIAN_THEME_URL%)
+- Theme: Ayu Mirage
 - Author: bernardo_v
 
 ## Preview

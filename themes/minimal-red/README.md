@@ -1,6 +1,6 @@
 # Minimal Red
 
-- Theme: [Minimal Red](OBSIDIAN_THEME_URL%)
+- Theme: Minimal Red
 - Author: <a href="https://github.com/AfonsoMiranda02" target="_blank" rel="noopener noreferrer">AfonsoMiranda02</a>
 
 ## Preview

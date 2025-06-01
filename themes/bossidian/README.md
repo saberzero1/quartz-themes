@@ -1,6 +1,6 @@
 # Bossidian
 
-- Theme: [Bossidian](OBSIDIAN_THEME_URL%)
+- Theme: Bossidian
 - Author: <a href="https://BossELijah.github.io" target="_blank" rel="noopener noreferrer">BossElijah</a>
 
 ## Preview

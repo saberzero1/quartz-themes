@@ -1,6 +1,6 @@
 # Minimal-Dark-Coder
 
-- Theme: [Minimal-Dark-Coder](OBSIDIAN_THEME_URL%)
+- Theme: Minimal-Dark-Coder
 - Author: Krishna Sen
 
 ## Preview
