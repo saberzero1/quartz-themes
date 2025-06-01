@@ -1,6 +1,6 @@
 # Yue
 
-- Theme: [Yue](OBSIDIAN_THEME_URL%)
+- Theme: Yue
 - Author: <a href="https://twitter.com/notgixo" target="_blank" rel="noopener noreferrer">Gixo</a>
 
 ## Preview

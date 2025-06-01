@@ -1,6 +1,6 @@
 # Sanctum reborn
 
-- Theme: [Sanctum reborn](OBSIDIAN_THEME_URL%)
+- Theme: Sanctum reborn
 - Author: <a href="https://github.com/antoKeinanen/" target="_blank" rel="noopener noreferrer">@antoKeinanen</a>
 
 ## Preview

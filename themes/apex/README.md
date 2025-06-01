@@ -1,6 +1,6 @@
 # Apex
 
-- Theme: [Apex](OBSIDIAN_THEME_URL%)
+- Theme: Apex
 - Author: <a href="https://www.twitter.com/clearlysid" target="_blank" rel="noopener noreferrer">clearlysid</a>
 
 ## Preview

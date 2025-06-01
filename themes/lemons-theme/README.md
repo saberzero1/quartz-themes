@@ -1,6 +1,6 @@
 # Lemons Theme
 
-- Theme: [Lemons Theme](OBSIDIAN_THEME_URL%)
+- Theme: Lemons Theme
 - Author: <a href="https://mprojectscode.github.io/" target="_blank" rel="noopener noreferrer">Moritz Jung</a>
 
 ## Preview

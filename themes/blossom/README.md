@@ -1,6 +1,6 @@
 # Blossom
 
-- Theme: [Blossom](OBSIDIAN_THEME_URL%)
+- Theme: Blossom
 - Author: <a href="https://blossomtheme.github.io" target="_blank" rel="noopener noreferrer">BlossomTheme</a>
 
 ## Preview

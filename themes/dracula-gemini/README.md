@@ -1,6 +1,6 @@
 # Dracula Gemini
 
-- Theme: [Dracula Gemini](OBSIDIAN_THEME_URL%)
+- Theme: Dracula Gemini
 - Author: <a href="https://github.com/clbn" target="_blank" rel="noopener noreferrer">Alex Olshansky</a>
 
 ## Preview

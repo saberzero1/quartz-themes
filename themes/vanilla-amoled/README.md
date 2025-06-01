@@ -1,6 +1,6 @@
 # Vanilla AMOLED
 
-- Theme: [Vanilla AMOLED](OBSIDIAN_THEME_URL%)
+- Theme: Vanilla AMOLED
 - Author: <a href="https//github.com/SakuraIsayeki" target="_blank" rel="noopener noreferrer">Sakura Akeno Isayeki</a>
 
 ## Preview

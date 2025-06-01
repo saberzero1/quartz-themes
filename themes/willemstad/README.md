@@ -1,6 +1,6 @@
 # Willemstad
 
-- Theme: [Willemstad](OBSIDIAN_THEME_URL%)
+- Theme: Willemstad
 - Author: <a href="https://notes.tingmelvin.com/ER-Resources/ER2PUB/ER2PUB-01-AboutMe" target="_blank" rel="noopener noreferrer">tingmelvin</a>
 
 ## Preview

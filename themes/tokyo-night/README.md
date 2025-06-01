@@ -1,6 +1,6 @@
 # Tokyo Night
 
-- Theme: [Tokyo Night](OBSIDIAN_THEME_URL%)
+- Theme: Tokyo Night
 - Author: tcmmichaelb139
 
 ## Preview

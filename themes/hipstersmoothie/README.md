@@ -1,6 +1,6 @@
 # Hipstersmoothie
 
-- Theme: [Hipstersmoothie](OBSIDIAN_THEME_URL%)
+- Theme: Hipstersmoothie
 - Author: Andrew Lisowski
 
 ## Preview

@@ -1,6 +1,6 @@
 # Marathon
 
-- Theme: [Marathon](OBSIDIAN_THEME_URL%)
+- Theme: Marathon
 - Author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
 
 ## Preview

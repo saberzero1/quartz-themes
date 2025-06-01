@@ -1,6 +1,6 @@
 # Base2Tone
 
-- Theme: [Base2Tone](OBSIDIAN_THEME_URL%)
+- Theme: Base2Tone
 - Author: deathau
 
 ## Preview

@@ -1,6 +1,6 @@
 # Abate
 
-- Theme: [Abate](OBSIDIAN_THEME_URL%)
+- Theme: Abate
 - Author: <a href="https://github.com/ricedev10" target="_blank" rel="noopener noreferrer">ricedev10</a>
 
 ## Preview

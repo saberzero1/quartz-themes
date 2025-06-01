@@ -1,6 +1,6 @@
 # Obsidian gruvbox
 
-- Theme: [Obsidian gruvbox](OBSIDIAN_THEME_URL%)
+- Theme: Obsidian gruvbox
 - Author: <a href="https://insanum.com" target="_blank" rel="noopener noreferrer">insanum</a>
 
 ## Preview

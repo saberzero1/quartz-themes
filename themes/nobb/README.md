@@ -1,6 +1,6 @@
 # nobb
 
-- Theme: [nobb](OBSIDIAN_THEME_URL%)
+- Theme: nobb
 - Author: buluw
 
 ## Preview

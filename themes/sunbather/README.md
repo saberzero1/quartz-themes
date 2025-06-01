@@ -1,6 +1,6 @@
 # Sunbather
 
-- Theme: [Sunbather](OBSIDIAN_THEME_URL%)
+- Theme: Sunbather
 - Author: <a href="https://github.com/babidisrc" target="_blank" rel="noopener noreferrer">babidisrc</a>
 
 ## Preview

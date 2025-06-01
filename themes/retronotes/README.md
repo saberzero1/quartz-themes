@@ -1,6 +1,6 @@
 # RetroNotes
 
-- Theme: [RetroNotes](OBSIDIAN_THEME_URL%)
+- Theme: RetroNotes
 - Author: <a href="https://rubencampelo.com" target="_blank" rel="noopener noreferrer">Sr.Campelo</a>
 
 ## Preview

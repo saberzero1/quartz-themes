@@ -1,6 +1,6 @@
 # Typora-Vue
 
-- Theme: [Typora-Vue](OBSIDIAN_THEME_URL%)
+- Theme: Typora-Vue
 - Author: <a href="https://github.com/ZekunC" target="_blank" rel="noopener noreferrer">ZekunC</a>
 
 ## Preview

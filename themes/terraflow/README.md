@@ -1,6 +1,6 @@
 # TerraFlow
 
-- Theme: [TerraFlow](OBSIDIAN_THEME_URL%)
+- Theme: TerraFlow
 - Author: fabdub
 
 ## Preview

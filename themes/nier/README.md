@@ -1,6 +1,6 @@
 # Nier
 
-- Theme: [Nier](OBSIDIAN_THEME_URL%)
+- Theme: Nier
 - Author: exloseur3d
 
 ## Preview

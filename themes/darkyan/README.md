@@ -1,6 +1,6 @@
 # Darkyan
 
-- Theme: [Darkyan](OBSIDIAN_THEME_URL%)
+- Theme: Darkyan
 - Author: <a href="https://johackim.com" target="_blank" rel="noopener noreferrer">johackim</a>
 
 ## Preview

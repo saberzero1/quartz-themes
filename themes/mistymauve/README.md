@@ -1,6 +1,6 @@
 # MistyMauve
 
-- Theme: [MistyMauve](OBSIDIAN_THEME_URL%)
+- Theme: MistyMauve
 - Author: <a href="https://github.com/RaveSplash" target="_blank" rel="noopener noreferrer">RaveSplash</a>
 
 ## Preview

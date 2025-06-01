@@ -1,6 +1,6 @@
 # Soothe
 
-- Theme: [Soothe](OBSIDIAN_THEME_URL%)
+- Theme: Soothe
 - Author: <a href="https://github.com/AwesomeDog" target="_blank" rel="noopener noreferrer">AwesomeDog</a>
 
 ## Preview

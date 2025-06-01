@@ -1,6 +1,6 @@
 # Colored Candy
 
-- Theme: [Colored Candy](OBSIDIAN_THEME_URL%)
+- Theme: Colored Candy
 - Author: Erika Gozar
 
 ## Preview

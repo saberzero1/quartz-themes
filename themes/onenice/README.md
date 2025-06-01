@@ -1,6 +1,6 @@
 # OneNice
 
-- Theme: [OneNice](OBSIDIAN_THEME_URL%)
+- Theme: OneNice
 - Author: S.Sunhaloo - P.Roy
 
 ## Preview

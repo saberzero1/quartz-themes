@@ -1,6 +1,6 @@
 # Material Flat
 
-- Theme: [Material Flat](OBSIDIAN_THEME_URL%)
+- Theme: Material Flat
 - Author: <a href="https://github.com/Threethan/" target="_blank" rel="noopener noreferrer">Threethan, Joschua</a>
 
 ## Preview

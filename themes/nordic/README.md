@@ -1,6 +1,6 @@
 # Nordic
 
-- Theme: [Nordic](OBSIDIAN_THEME_URL%)
+- Theme: Nordic
 - Author: <a href="https://github.com/natowb" target="_blank" rel="noopener noreferrer">Nato</a>
 
 ## Preview

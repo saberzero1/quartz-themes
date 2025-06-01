@@ -1,6 +1,6 @@
 # Terminal2K
 
-- Theme: [Terminal2K](OBSIDIAN_THEME_URL%)
+- Theme: Terminal2K
 - Author: <a href="https://github.com/isax785" target="_blank" rel="noopener noreferrer">isax785</a>
 
 ## Preview

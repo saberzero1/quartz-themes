@@ -1,6 +1,6 @@
 # obsidian_vibrant
 
-- Theme: [obsidian_vibrant](OBSIDIAN_THEME_URL%)
+- Theme: obsidian_vibrant
 - Author: <a href="https://github.com/JamesLemony" target="_blank" rel="noopener noreferrer">JamesLemony</a>
 
 ## Preview

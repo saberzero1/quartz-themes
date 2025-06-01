@@ -1,6 +1,6 @@
 # Soli Deo Gloria
 
-- Theme: [Soli Deo Gloria](OBSIDIAN_THEME_URL%)
+- Theme: Soli Deo Gloria
 - Author: <a href="https://github.com/GodlyMan-bit" target="_blank" rel="noopener noreferrer">agodlyman</a>
 
 ## Preview

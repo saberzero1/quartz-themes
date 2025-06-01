@@ -1,6 +1,6 @@
 # Evergreen-Shadow
 
-- Theme: [Evergreen-Shadow](OBSIDIAN_THEME_URL%)
+- Theme: Evergreen-Shadow
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

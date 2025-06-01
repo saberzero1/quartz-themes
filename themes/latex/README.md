@@ -1,6 +1,6 @@
 # LaTeX
 
-- Theme: [LaTeX](OBSIDIAN_THEME_URL%)
+- Theme: LaTeX
 - Author: <a href="https://phooey.foo" target="_blank" rel="noopener noreferrer">Ben Finch</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # iB Writer
 
-- Theme: [iB Writer](OBSIDIAN_THEME_URL%)
+- Theme: iB Writer
 - Author: <a href="https://toablind.horse" target="_blank" rel="noopener noreferrer">whereiswhere</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Dynamic Color
 
-- Theme: [Dynamic Color](OBSIDIAN_THEME_URL%)
+- Theme: Dynamic Color
 - Author: <a href="https://rodydavis.com" target="_blank" rel="noopener noreferrer">Rody Davis</a>
 
 ## Preview
