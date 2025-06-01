@@ -1953,7 +1953,7 @@ body {
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
-      .folder-outer.open > ul.content {
+      .folder-outer > ul.content {
         --nav-indentation-guide-width: 3px;
         border-bottom-left-radius: 5px;
         border-inline-start: var(--nav-indentation-guide-width) solid

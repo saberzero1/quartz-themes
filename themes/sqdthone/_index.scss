@@ -2066,7 +2066,7 @@ body {
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
-      .folder-outer.open > ul.content {
+      .folder-outer > ul.content {
         border-bottom-left-radius: 1%;
         border-color: hsl(var(--color-text-faint));
         border-inline-start: var(--nav-indentation-guide-width) solid
