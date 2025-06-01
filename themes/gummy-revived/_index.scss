@@ -12,6 +12,8 @@
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
+  --chalk-grey: #dddddd;
+  --chalk-grey-accent: #cbcbcb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -52,6 +54,18 @@
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #bec4ff;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #9ac0ff;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #b999e8;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #f088ca;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #8e91eb;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #e990eb;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -84,6 +98,8 @@
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-secondary-alt: var(--color-base-05);
+  --chalk-grey: #686868;
+  --chalk-grey-accent: #636363;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -124,6 +140,18 @@
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #5968fb;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #3372ca;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #6f33ca;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #ca3393;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #262cda;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #f21bf6;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
@@ -903,6 +931,8 @@ html[saved-theme="dark"] {
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
+  --chalk-grey: #dddddd;
+  --chalk-grey-accent: #cbcbcb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -943,6 +973,18 @@ html[saved-theme="dark"] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #bec4ff;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #9ac0ff;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #b999e8;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #f088ca;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #8e91eb;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #e990eb;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -980,6 +1022,8 @@ html[saved-theme="light"] {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-secondary-alt: var(--color-base-05);
+  --chalk-grey: #686868;
+  --chalk-grey-accent: #636363;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1020,6 +1064,18 @@ html[saved-theme="light"] {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #5968fb;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #3372ca;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #6f33ca;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #ca3393;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #262cda;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #f21bf6;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
@@ -1431,6 +1487,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: var(--h1-weight);
+    --gradient-header: var(--h1-color), var(--chalk-grey-accent), var(--h1-gradient-accent);
     color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
@@ -1447,6 +1504,7 @@ body {
   }
   h2 {
     --font-weight: var(--h2-weight);
+    --gradient-header: var(--h2-color), var(--chalk-grey-accent), var(--h2-gradient-accent);
     color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
@@ -1463,6 +1521,7 @@ body {
   }
   h3 {
     --font-weight: var(--h3-weight);
+    --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
     color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
@@ -1479,6 +1538,7 @@ body {
   }
   h4 {
     --font-weight: var(--h4-weight);
+    --gradient-header: var(--h4-color), var(--chalk-grey-accent), var(--h4-gradient-accent);
     color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
@@ -1495,6 +1555,7 @@ body {
   }
   h5 {
     --font-weight: var(--h5-weight);
+    --gradient-header: var(--h5-color), var(--chalk-grey-accent), var(--h5-gradient-accent);
     color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
@@ -1511,6 +1572,7 @@ body {
   }
   h6 {
     --font-weight: var(--h6-weight);
+    --gradient-header: var(--h6-color), var(--chalk-grey-accent), var(--h6-gradient-accent);
     color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
@@ -1638,6 +1700,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: var(--h3-weight);
+      --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
       color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
@@ -1674,15 +1737,14 @@ body {
         position: relative;
         & > svg {
           opacity: 0.001;
+          position: absolute;
         }
         &:before {
-          display: inline-block;
           width: 16px;
           height: 16px;
-          position: absolute;
+          display: flex;
+          align-self: anchor-center;
           background: var(--icon-color);
-          top: 4px;
-          left: 0;
           content: "";
         }
         & > div {
@@ -1690,10 +1752,12 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
+        background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
+        background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
@@ -1739,14 +1803,12 @@ body {
         }
         > a:before {
           --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
-          display: inline-block;
           width: 16px;
           height: 16px;
           content: "";
-          position: absolute;
+          display: flex;
+          align-self: anchor-center;
           background: var(--icon-color);
-          top: 4px;
-          left: 0;
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
         }
@@ -1757,6 +1819,7 @@ body {
   .toc {
     h3 {
       --font-weight: var(--h3-weight);
+      --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
       color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
@@ -1783,6 +1846,7 @@ body {
   .toc {
     h3 {
       --font-weight: var(--h3-weight);
+      --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
       color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
