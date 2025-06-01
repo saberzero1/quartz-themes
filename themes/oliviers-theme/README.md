@@ -1,6 +1,7 @@
 # Olivier’s Theme
 
-[Olivier’s Theme](https://github.com/OlivierPS)
+- Theme: [Olivier’s Theme](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/OlivierPS" target="_blank" rel="noopener noreferrer">Olivier Spinnler</a>
 
 ## Preview
 

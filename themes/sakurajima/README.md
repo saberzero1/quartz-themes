@@ -1,6 +1,7 @@
 # Sakurajima
 
-[Sakurajima](https://dnfolio.dev)
+- Theme: [Sakurajima](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://dnfolio.dev" target="_blank" rel="noopener noreferrer">Daiki Nakashima</a>
 
 ## Preview
 

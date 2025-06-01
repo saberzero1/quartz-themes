@@ -1,6 +1,7 @@
 # Pisum
 
-[Pisum](#)
+- Theme: [Pisum](OBSIDIAN_THEME_URL%)
+- Author: MooddooM
 
 ## Preview
 

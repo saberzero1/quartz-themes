@@ -1,6 +1,7 @@
 # Refined Default
 
-[Refined Default](https://github.com/faisaltamanojr)
+- Theme: [Refined Default](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/faisaltamanojr" target="_blank" rel="noopener noreferrer">Faisal Tamano Jr.</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Material 3
 
-[Material 3](https://github.com/HarmfulBreeze)
+- Theme: [Material 3](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/HarmfulBreeze" target="_blank" rel="noopener noreferrer">HarmfulBreeze</a>
 
 ## Preview
 

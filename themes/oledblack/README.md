@@ -1,6 +1,7 @@
 # OLED.Black
 
-[OLED.Black](https://github.com/Inc44)
+- Theme: [OLED.Black](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Inc44" target="_blank" rel="noopener noreferrer">Inc44</a>
 
 ## Preview
 

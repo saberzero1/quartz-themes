@@ -1,6 +1,7 @@
 # Nier
 
-[Nier](#)
+- Theme: [Nier](OBSIDIAN_THEME_URL%)
+- Author: exloseur3d
 
 ## Preview
 

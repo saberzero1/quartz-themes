@@ -1,6 +1,8 @@
 # Lorens
 
-[Lorens](https://twitter.com/lorans_othman)
+- Theme: [Lorens](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://twitter.com/lorans_othman" target="_blank" rel="noopener noreferrer">Lorens Osman</a>
+- Support the author: <a href="https://www.buymeacoffee.com/lorens" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

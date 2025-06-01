@@ -1,6 +1,8 @@
 # Space
 
-[Space](https://bhappen.com)
+- Theme: [Space](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://bhappen.com" target="_blank" rel="noopener noreferrer">BHappen</a>
+- Support the author: <a href="https://buymeacoffee.com/bhappen" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

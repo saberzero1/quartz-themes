@@ -1,6 +1,7 @@
 # Shiba Inu
 
-[Shiba Inu](https://github.com/faroukx)
+- Theme: [Shiba Inu](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/faroukx" target="_blank" rel="noopener noreferrer">Farouk</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Blackbird
 
-[Blackbird](#)
+- Theme: [Blackbird](OBSIDIAN_THEME_URL%)
+- Author: Ivan Chernov
 
 ## Preview
 

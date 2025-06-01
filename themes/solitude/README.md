@@ -1,6 +1,7 @@
 # Solitude
 
-[Solitude](https://majorenkidu.github.io/)
+- Theme: [Solitude](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://majorenkidu.github.io/" target="_blank" rel="noopener noreferrer">MajorEnkidu</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Rezin
 
-[Rezin](https://github.com/NicolasGHS)
+- Theme: [Rezin](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/NicolasGHS" target="_blank" rel="noopener noreferrer">NicolasGHS</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Comfort color dark
 
-[Comfort color dark](#)
+- Theme: [Comfort color dark](OBSIDIAN_THEME_URL%)
+- Author: ezs
 
 ## Preview
 

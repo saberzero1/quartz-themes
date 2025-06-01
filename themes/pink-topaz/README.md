@@ -1,6 +1,7 @@
 # Pink Topaz
 
-[Pink Topaz](#)
+- Theme: [Pink Topaz](OBSIDIAN_THEME_URL%)
+- Author: Mouth on Cloud
 
 ## Preview
 

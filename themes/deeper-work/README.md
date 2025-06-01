@@ -1,6 +1,7 @@
 # deeper work
 
-[deeper work](https://www.lfern.com/)
+- Theme: [deeper work](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.lfern.com/" target="_blank" rel="noopener noreferrer">lucas</a>
 
 ## Preview
 

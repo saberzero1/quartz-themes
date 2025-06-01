@@ -1,6 +1,7 @@
 # Subtlegold
 
-[Subtlegold](#)
+- Theme: [Subtlegold](OBSIDIAN_THEME_URL%)
+- Author: karz
 
 ## Preview
 

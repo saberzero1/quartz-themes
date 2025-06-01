@@ -1,6 +1,7 @@
 # Everblush
 
-[Everblush](#)
+- Theme: [Everblush](OBSIDIAN_THEME_URL%)
+- Author: Mangeshrex
 
 ## Preview
 

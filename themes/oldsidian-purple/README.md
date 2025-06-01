@@ -1,6 +1,7 @@
 # Oldsidian Purple
 
-[Oldsidian Purple](https://github.com/ltctceplrm)
+- Theme: [Oldsidian Purple](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ltctceplrm" target="_blank" rel="noopener noreferrer">@ltctceplrm</a>
 
 ## Preview
 

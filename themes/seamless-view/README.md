@@ -1,6 +1,7 @@
 # Seamless View
 
-[Seamless View](https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View)
+- Theme: [Seamless View](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View" target="_blank" rel="noopener noreferrer">Gustavo Salgado</a>
 
 ## Preview
 

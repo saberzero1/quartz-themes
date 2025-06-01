@@ -1,6 +1,7 @@
 # Dracula + LYT
 
-[Dracula + LYT](#)
+- Theme: [Dracula + LYT](OBSIDIAN_THEME_URL%)
+- Author: xRyul
 
 ## Preview
 

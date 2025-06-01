@@ -1,6 +1,7 @@
 # Jotter
 
-[Jotter](https://github.com/lnbgc)
+- Theme: [Jotter](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/lnbgc" target="_blank" rel="noopener noreferrer">lnbgc</a>
 
 ## Preview
 

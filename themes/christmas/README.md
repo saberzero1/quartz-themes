@@ -1,6 +1,7 @@
 # Christmas
 
-[Christmas](#)
+- Theme: [Christmas](OBSIDIAN_THEME_URL%)
+- Author: deathau
 
 ## Preview
 

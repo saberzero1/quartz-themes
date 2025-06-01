@@ -1,6 +1,7 @@
 # Kiwi Mono
 
-[Kiwi Mono](https://www.kiwisflight.com)
+- Theme: [Kiwi Mono](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.kiwisflight.com" target="_blank" rel="noopener noreferrer">Sooyoung Cheong</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Nebula
 
-[Nebula](https://github.com/dlccyes)
+- Theme: [Nebula](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/dlccyes" target="_blank" rel="noopener noreferrer">dlccyes</a>
 
 ## Preview
 

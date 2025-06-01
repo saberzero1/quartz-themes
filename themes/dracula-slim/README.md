@@ -1,6 +1,7 @@
 # Dracula Slim
 
-[Dracula Slim](#)
+- Theme: [Dracula Slim](OBSIDIAN_THEME_URL%)
+- Author: bLaCkwEw
 
 ## Preview
 

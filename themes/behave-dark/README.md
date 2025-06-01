@@ -1,6 +1,7 @@
 # Behave dark
 
-[Behave dark](https://gitlab.com/chrismettal)
+- Theme: [Behave dark](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://gitlab.com/chrismettal" target="_blank" rel="noopener noreferrer">Chrismettal</a>
 
 ## Preview
 

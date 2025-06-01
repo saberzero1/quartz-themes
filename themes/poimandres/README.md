@@ -1,6 +1,7 @@
 # Poimandres
 
-[Poimandres](https://github.com/yoGhastly)
+- Theme: [Poimandres](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/yoGhastly" target="_blank" rel="noopener noreferrer">Diego Espinosa</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Composer
 
-[Composer](https://github.com/vran-dev)
+- Theme: [Composer](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/vran-dev" target="_blank" rel="noopener noreferrer">vran</a>
 
 ## Preview
 

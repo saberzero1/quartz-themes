@@ -1,6 +1,7 @@
 # Trace Labs
 
-[Trace Labs](https://github.com/tracelabs)
+- Theme: [Trace Labs](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/tracelabs" target="_blank" rel="noopener noreferrer">Trace Labs</a>
 
 ## Preview
 

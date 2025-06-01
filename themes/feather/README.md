@@ -1,6 +1,7 @@
 # Feather
 
-[Feather](#)
+- Theme: [Feather](OBSIDIAN_THEME_URL%)
+- Author: MFdev
 
 ## Preview
 

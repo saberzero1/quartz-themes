@@ -1,6 +1,7 @@
 # 80s Neon
 
-[80s Neon](#)
+- Theme: [80s Neon](OBSIDIAN_THEME_URL%)
+- Author: deathau
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Quillcode
 
-[Quillcode](https://github.com/theaayushpatel)
+- Theme: [Quillcode](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/theaayushpatel" target="_blank" rel="noopener noreferrer">Aayush Patel</a>
 
 ## Preview
 

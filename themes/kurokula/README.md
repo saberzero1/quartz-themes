@@ -1,6 +1,7 @@
 # Kurokula
 
-[Kurokula](https://github.com/Indyandie)
+- Theme: [Kurokula](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Indyandie" target="_blank" rel="noopener noreferrer">indyandie</a>
 
 ## Preview
 

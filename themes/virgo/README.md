@@ -1,6 +1,7 @@
 # Virgo
 
-[Virgo](https://aituyaa.com)
+- Theme: [Virgo](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://aituyaa.com" target="_blank" rel="noopener noreferrer">Jack Liu</a>
 
 ## Preview
 

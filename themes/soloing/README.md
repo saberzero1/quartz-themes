@@ -1,6 +1,7 @@
 # Soloing
 
-[Soloing](https://github.com/isax785)
+- Theme: [Soloing](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/isax785" target="_blank" rel="noopener noreferrer">isax785</a>
 
 ## Preview
 

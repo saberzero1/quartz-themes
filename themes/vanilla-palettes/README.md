@@ -1,6 +1,7 @@
 # Vanilla Palettes
 
-[Vanilla Palettes](https://github.com/GnRlLeclerc)
+- Theme: [Vanilla Palettes](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/GnRlLeclerc" target="_blank" rel="noopener noreferrer">Thibaut de Saivre</a>
 
 ## Preview
 

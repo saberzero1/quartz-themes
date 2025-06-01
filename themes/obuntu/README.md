@@ -1,6 +1,7 @@
 # Obuntu
 
-[Obuntu](#)
+- Theme: [Obuntu](OBSIDIAN_THEME_URL%)
+- Author: Dubinin Dmitry
 
 ## Preview
 

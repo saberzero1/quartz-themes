@@ -1,6 +1,7 @@
 # Reshi
 
-[Reshi](https://github.com/contrapasso3)
+- Theme: [Reshi](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/contrapasso3" target="_blank" rel="noopener noreferrer">Laney Elizabeth</a>
 
 ## Preview
 

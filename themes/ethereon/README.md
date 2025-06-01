@@ -1,6 +1,8 @@
 # Ethereon
 
-[Ethereon](https://www.rohit04saluja.com)
+- Theme: [Ethereon](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Rohit Saluja</a>
+- Support the author: <a href="https://buymecoffee.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

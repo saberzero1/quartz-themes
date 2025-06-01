@@ -1,6 +1,7 @@
 # Obsidian Nord
 
-[Obsidian Nord](https://insanum.com)
+- Theme: [Obsidian Nord](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://insanum.com" target="_blank" rel="noopener noreferrer">insanum</a>
 
 ## Preview
 

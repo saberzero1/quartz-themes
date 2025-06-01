@@ -1,6 +1,7 @@
 # Comfort Dark
 
-[Comfort Dark](#)
+- Theme: [Comfort Dark](OBSIDIAN_THEME_URL%)
+- Author: Ooopz
 
 ## Preview
 

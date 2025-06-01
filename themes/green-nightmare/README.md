@@ -1,6 +1,7 @@
 # Green Nightmare
 
-[Green Nightmare](https://github.com/prradox)
+- Theme: [Green Nightmare](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/prradox" target="_blank" rel="noopener noreferrer">prradox</a>
 
 ## Preview
 
