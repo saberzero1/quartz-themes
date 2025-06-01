@@ -25,6 +25,7 @@
   --background-primary: var(--b1);
   --background-primary-alt: var(--b0);
   --background-secondary: var(--b0);
+  --bold-weight: var(--font-bold);
   --code-background: var(--w2);
   --code-normal: var(--b0);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -106,6 +107,7 @@
   --background-primary: var(--w3);
   --background-primary-alt: var(--w2);
   --background-secondary: var(--w2);
+  --bold-weight: var(--font-bold);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -326,6 +328,7 @@ body {
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
   --bold-modifier: 200;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
@@ -369,6 +372,7 @@ body {
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor: default;
   --cursor-link: pointer;
+  --font-bold: 700;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
@@ -550,6 +554,7 @@ html[saved-theme="dark"] {
   --background-primary: var(--b1);
   --background-primary-alt: var(--b0);
   --background-secondary: var(--b0);
+  --bold-weight: var(--font-bold);
   --code-background: var(--w2);
   --code-normal: var(--b0);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -636,6 +641,7 @@ html[saved-theme="light"] {
   --background-primary: var(--w3);
   --background-primary-alt: var(--w2);
   --background-secondary: var(--w2);
+  --bold-weight: var(--font-bold);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1573,12 +1579,14 @@ body {
   .page article p > strong,
   strong {
     color: var(--bold-color);
+    font-weight: var(--bold-weight);
   }
   .page article p > i,
   .page article p > em,
   i,
   em {
     color: var(--italic-color);
+    font-style: italic;
   }
   .page article p,
   .page article ul,
@@ -1603,6 +1611,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
 }

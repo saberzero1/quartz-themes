@@ -137,6 +137,7 @@ body {
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
   --bold-modifier: 200;
+  --bold-weight: var(--font-semibold);
   --border-width: 1px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
@@ -208,6 +209,7 @@ body {
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
   --font-print-override: "??";
+  --font-semibold: 600;
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
   --font-text-override: "??";
@@ -1281,12 +1283,14 @@ body {
   .page article p > strong,
   strong {
     color: var(--bold-color);
+    font-weight: var(--bold-weight);
   }
   .page article p > i,
   .page article p > em,
   i,
   em {
     color: var(--italic-color);
+    font-style: italic;
   }
   .page article p,
   .page article ul,
@@ -1311,6 +1315,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
 }
