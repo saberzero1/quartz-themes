@@ -1,85 +1,125 @@
-import * as minimatch from "minimatch";
-import * as path from "path";
+import * as postcss from "postcss"
+import * as scssSyntax from "postcss-scss"; // To parse SCSS files that contain CSS Custom Properties
 
 /**
- * @typedef {object} UseRecord
- * @property {number} uses
- * @property {Set<any>} declarations
- * @property {Set<string>} dependencies
+ * @typedef {object} CssVarRecord
+ * @property {number} uses - How many times this CSS Custom Property (or its dependents) is used.
+ * @property {Set<postcss.Declaration>} declarations - AST nodes where this property is declared.
+ * @property {Set<string>} dependencies - Other CSS Custom Properties this property's value depends on.
  */
 
-module.exports = (options = {}) => {
-	return {
-		postcssPlugin: 'postcss-prune-unused',
-		Once(root) {
-			const {skip = []} = options;
-			if (skip.some((s) => minimatch(path.relative(path.join(process.cwd(), "themes"), root.source.input.from), s, {dot: true}))) {
-				return;
-			}
-			/** @type Map<string, UseRecord> */
-			const records = new Map();
-			/** @type Set<string> */
-			const usedVars = new Set();
+/**
+ * Removes unused CSS Custom Properties (e.g., --my-var) from an SCSS string.
+ * @param {string} scssString - The input SCSS string.
+ * @returns {string} The SCSS string with unused CSS Custom Properties removed.
+ */
+export function prune(scssString) {
+  const root = postcss.parse(scssString, { syntax: scssSyntax });
 
-			/** @type {(variable: string) => UseRecord} */
-			const getRecord = (variable) => {
-				let record = records.get(variable);
-				if (!record) {
-					record = {uses: 0, dependencies: new Set(), declarations: new Set()};
-					records.set(variable, record);
-				}
-				return record;
-			};
+  /** @type {Map<string, CssVarRecord>} */
+  const records = new Map();
+  /** @type {Set<string>} */
+  const directlyUsedCssVars = new Set(); // CSS Vars used directly by non-custom-property decls
 
-			/** @type {(variable: string, ignoreList?: Set<any>) => void} */
-			const registerUse = (variable, ignoreList = new Set()) => {
-				const record = getRecord(variable);
-				record.uses++;
-				ignoreList.add(variable);
-				for (const dependency of record.dependencies) {
-					if (!ignoreList.has(dependency)) registerUse(dependency, ignoreList);
-				}
-			};
+  /**
+   * Gets or creates a record for a CSS Custom Property.
+   * @param {string} variable - The CSS Custom Property name (e.g., "--myVar").
+   * @returns {CssVarRecord}
+   */
+  const getRecord = (variable) => {
+    let record = records.get(variable);
+    if (!record) {
+      record = {
+        uses: 0,
+        dependencies: new Set(),
+        declarations: new Set(),
+      };
+      records.set(variable, record);
+    }
+    return record;
+  };
 
-			/** @type {(variable: string, dependency: string) => void} */
-			const registerDependency = (variable, dependency) => {
-				const record = getRecord(variable);
-				record.dependencies.add(dependency);
-			};
+  /**
+   * Registers that a CSS Custom Property's declaration depends on another.
+   * @param {string} variable - The property being declared (e.g., "--varA").
+   * @param {string} dependency - The property used in --varA's value (e.g., "--varB").
+   */
+  const registerDependency = (variable, dependency) => {
+    if (variable === dependency) return; // Avoid self-dependency
+    getRecord(variable).dependencies.add(dependency);
+  };
 
-			// Detect variable uses
-			root.walkDecls((decl) => {
-				const isVar = decl.prop.startsWith('--');
+  // Phase 1: Collect all CSS Custom Property declarations, their dependencies, and direct uses.
+  root.walkDecls((decl) => {
+    const isCssVarDeclaration = decl.prop.startsWith("--");
 
-				// Initiate record
-				if (isVar) getRecord(decl.prop).declarations.add(decl);
+    if (isCssVarDeclaration) {
+      getRecord(decl.prop).declarations.add(decl);
+    }
 
-				if (!decl.value.includes('var(')) return;
+    // Scan the value for var() usages, regardless of whether decl.prop is a custom prop or not.
+    if (decl.value && decl.value.includes("var(")) {
+      // Regex from the original plugin to find var(--name)
+      const varRegex = /var\(\s*(?<name>--[^ ,\);]+)/g;
+      let match;
+      while ((match = varRegex.exec(decl.value)) !== null) {
+        if (match.groups && match.groups.name) {
+          const usedVarName = match.groups.name.trim();
+          if (isCssVarDeclaration) {
+            // If --current-prop: var(--another-prop), then --current-prop depends on --another-prop
+            registerDependency(decl.prop, usedVarName);
+          } else {
+            // If color: var(--some-prop), then --some-prop is directly used
+            directlyUsedCssVars.add(usedVarName);
+          }
+        }
+      }
+    }
+  });
 
-				for (const match of decl.value.matchAll(/var\(\s*(?<name>--[^ ,\);]+)/g)) {
-					const variable = match.groups.name.trim();
-					if (isVar) {
-						registerDependency(decl.prop, variable);
-					} else {
-						usedVars.add(variable);
-					}
-				}
-			});
+  /**
+   * Recursively marks a CSS Custom Property and its dependencies as used.
+   * @param {string} variable - The CSS Custom Property name to mark as used.
+   * @param {Set<string>} processingStack - Used to detect circular dependencies for this use chain.
+   */
+  const registerUse = (variable, processingStack = new Set()) => {
+    if (!records.has(variable)) {
+      // This variable is used but not declared in the analyzed scope.
+      return;
+    }
+    if (processingStack.has(variable)) {
+      // Circular dependency detected in this path.
+      return;
+    }
 
-			// We register variable uses only after all variables have been entered into the graph,
-			// otherwise we remove variables that were defined in CSS file after some property used them.
-			for (const variable of usedVars) {
-				registerUse(variable);
-			}
+    const record = getRecord(variable);
+    record.uses++; // Increment use count
 
-			// Remove unused variables
-			for (const {uses, declarations} of records.values()) {
-				if (uses === 0) {
-					for (let decl of declarations) decl.remove();
-				}
-			}
-		},
-	};
-};
+    // Only recurse if this is the first time this use path marks this variable.
+    // This is an optimization; the processingStack handles correctness for cycles.
+    if (record.uses === 1) {
+      processingStack.add(variable);
+      for (const dependency of record.dependencies) {
+        registerUse(dependency, processingStack);
+      }
+      processingStack.delete(variable); // Backtrack
+    }
+  };
 
-module.exports.postcss = true
+  // Phase 2: Propagate uses through the dependency graph.
+  // This loop is crucial, as the original plugin had it.
+  for (const variable of directlyUsedCssVars) {
+    registerUse(variable);
+  }
+
+  // Phase 3: Remove unused CSS Custom Property declarations.
+  for (const record of records.values()) {
+    if (record.uses === 0) {
+      for (const declNode of record.declarations) {
+        declNode.remove();
+      }
+    }
+  }
+
+  return root.toString(scssSyntax);
+}

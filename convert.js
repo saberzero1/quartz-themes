@@ -26,8 +26,7 @@ import {
   applyRuleToString,
 } from "./util/util.mjs"
 import { themes, usedRules } from "./config.mjs"
-import * as prune from "./util/prune-unused.mjs"
-import * as postcss from "postcss"
+import { prune } from "./util/prune-unused.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -788,12 +787,6 @@ manifestCollection.forEach((manifest) => {
 
 console.info("All themes processed successfully.")
 
-console.info("Removing unused CSS variables...")
-// Use PostCSS to call prune to remove unused CSS variables
-postcss([prune()])
-
-console.info("Finding unused CSS variables...")
-
 // Rebuild README.md
 console.log("Updating compatibility table...")
 
@@ -851,7 +844,8 @@ themeFolders.forEach((folder) => {
     // Combine all @use rules in the _index.scss file
     const scssContent = fs.readFileSync(themePath, "utf8")
     const processedScss = inlineScssUseRulesAndClean(scssContent, themePath)
-    fs.writeFileSync(themePath, processedScss, "utf8")
+    const prunedScss = prune(processedScss)
+    fs.writeFileSync(themePath, prunedScss, "utf8")
     // Remove all directories under themes/${folder}
     const themeDir = `./themes/${folder}`
     const items = fs.readdirSync(themeDir)
