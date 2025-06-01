@@ -1,6 +1,7 @@
 # Shade Sanctuary
 
-[Shade Sanctuary](https//github.com/Elevict)
+- Theme: [Shade Sanctuary](OBSIDIAN_THEME_URL%)
+- Author: <a href="https//github.com/Elevict" target="_blank" rel="noopener noreferrer">Elevict</a>
 
 ## Preview
 

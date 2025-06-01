@@ -1,6 +1,7 @@
 # Dark Graphite
 
-[Dark Graphite](#)
+- Theme: [Dark Graphite](OBSIDIAN_THEME_URL%)
+- Author: bernardo_v
 
 ## Preview
 

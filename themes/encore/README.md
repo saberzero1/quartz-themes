@@ -1,6 +1,7 @@
 # Encore
 
-[Encore](https://lucaschampagne.dev/)
+- Theme: [Encore](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://lucaschampagne.dev/" target="_blank" rel="noopener noreferrer">Carbonateb</a>
 
 ## Preview
 

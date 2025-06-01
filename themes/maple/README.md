@@ -1,6 +1,7 @@
 # Maple
 
-[Maple](https://github.com/subframe7536)
+- Theme: [Maple](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/subframe7536" target="_blank" rel="noopener noreferrer">subframe7536</a>
 
 ## Preview
 

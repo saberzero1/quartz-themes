@@ -1,6 +1,7 @@
 # Dayspring
 
-[Dayspring](https://github.com/erykwalder)
+- Theme: [Dayspring](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/erykwalder" target="_blank" rel="noopener noreferrer">Eric Rykwalder</a>
 
 ## Preview
 

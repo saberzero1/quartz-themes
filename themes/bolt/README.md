@@ -1,6 +1,7 @@
 # Bolt
 
-[Bolt](https://github.com/Bluemoondragon07)
+- Theme: [Bolt](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview
 

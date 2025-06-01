@@ -1,6 +1,7 @@
 # Cardstock
 
-[Cardstock](https://github.com/cassidoo)
+- Theme: [Cardstock](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/cassidoo" target="_blank" rel="noopener noreferrer">cassidoo</a>
 
 ## Preview
 

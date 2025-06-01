@@ -1,6 +1,7 @@
 # Dracula for Obsidian
 
-[Dracula for Obsidian](#)
+- Theme: [Dracula for Obsidian](OBSIDIAN_THEME_URL%)
+- Author: jarodise
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Sparkling Wisdom
 
-[Sparkling Wisdom](#)
+- Theme: [Sparkling Wisdom](OBSIDIAN_THEME_URL%)
+- Author: Learner fvs
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Border
 
-[Border](https://github.com/Akifyss)
+- Theme: [Border](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Akifyss" target="_blank" rel="noopener noreferrer">Akifyss</a>
 
 ## Preview
 

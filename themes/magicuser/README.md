@@ -1,6 +1,7 @@
 # MagicUser
 
-[MagicUser](https://www.github.com/drbap)
+- Theme: [MagicUser](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.github.com/drbap" target="_blank" rel="noopener noreferrer">Bernardo Pires</a>
 
 ## Preview
 

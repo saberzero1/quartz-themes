@@ -1,6 +1,7 @@
 # Vanilla AMOLED Color
 
-[Vanilla AMOLED Color](https://github.Com/Sskki-exe)
+- Theme: [Vanilla AMOLED Color](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.Com/Sskki-exe" target="_blank" rel="noopener noreferrer">sskki</a>
 
 ## Preview
 

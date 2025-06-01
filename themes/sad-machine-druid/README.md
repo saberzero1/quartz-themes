@@ -1,6 +1,7 @@
 # Sad Machine Druid
 
-[Sad Machine Druid](#)
+- Theme: [Sad Machine Druid](OBSIDIAN_THEME_URL%)
+- Author: Halftroll
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Eldritch
 
-[Eldritch](https://github.com/eldritch-theme)
+- Theme: [Eldritch](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/eldritch-theme" target="_blank" rel="noopener noreferrer">Eldritch</a>
 
 ## Preview
 

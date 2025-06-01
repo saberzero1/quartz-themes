@@ -1,6 +1,7 @@
 # Aura
 
-[Aura](https://github.com/ashwinjadhav818/)
+- Theme: [Aura](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ashwinjadhav818/" target="_blank" rel="noopener noreferrer">Ashwin Jadhav</a>
 
 ## Preview
 

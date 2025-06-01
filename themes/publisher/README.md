@@ -1,6 +1,7 @@
 # Publisher
 
-[Publisher](https://github.com/aidanastridge)
+- Theme: [Publisher](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/aidanastridge" target="_blank" rel="noopener noreferrer">aidanastridge</a>
 
 ## Preview
 

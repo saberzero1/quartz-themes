@@ -1,6 +1,7 @@
 # obsidian_ia
 
-[obsidian_ia](#)
+- Theme: [obsidian_ia](OBSIDIAN_THEME_URL%)
+- Author: rcvd
 
 ## Preview
 

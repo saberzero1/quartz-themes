@@ -1,6 +1,7 @@
 # EvilRed
 
-[EvilRed](https://github.com/tu2-atmanand)
+- Theme: [EvilRed](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/tu2-atmanand" target="_blank" rel="noopener noreferrer">Atmanand Gauns</a>
 
 ## Preview
 

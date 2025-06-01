@@ -1,6 +1,7 @@
 # Autotape
 
-[Autotape](https://rmv.fyi/)
+- Theme: [Autotape](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://rmv.fyi/" target="_blank" rel="noopener noreferrer">Delphi</a>
 
 ## Preview
 

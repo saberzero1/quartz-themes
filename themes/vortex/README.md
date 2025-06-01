@@ -1,6 +1,7 @@
 # Vortex
 
-[Vortex](https://github.com/abhimangs)
+- Theme: [Vortex](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/abhimangs" target="_blank" rel="noopener noreferrer">Abhiman G S</a>
 
 ## Preview
 

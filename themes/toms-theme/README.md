@@ -1,6 +1,7 @@
 # Tom's Theme
 
-[Tom's Theme](https://tomkay.dev)
+- Theme: [Tom's Theme](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://tomkay.dev" target="_blank" rel="noopener noreferrer">Tom Kay</a>
 
 ## Preview
 

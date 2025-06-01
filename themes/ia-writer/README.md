@@ -1,6 +1,8 @@
 # iA Writer
 
-[iA Writer](http://github.com/mrowa44)
+- Theme: [iA Writer](OBSIDIAN_THEME_URL%)
+- Author: <a href="http://github.com/mrowa44" target="_blank" rel="noopener noreferrer">mrowa44</a>
+- Support the author: <a href="https://www.buymeacoffee.com/mrowa44" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

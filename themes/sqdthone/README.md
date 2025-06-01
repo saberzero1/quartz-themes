@@ -1,6 +1,7 @@
 # sQdthOne
 
-[sQdthOne](KeithLerner.net)
+- Theme: [sQdthOne](OBSIDIAN_THEME_URL%)
+- Author: <a href="KeithLerner.net" target="_blank" rel="noopener noreferrer">Keith 'Sqdth' Lerner</a>
 
 ## Preview
 

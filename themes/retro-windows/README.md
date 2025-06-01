@@ -1,6 +1,7 @@
 # Retro Windows
 
-[Retro Windows](https://github.com/codeisconfusing)
+- Theme: [Retro Windows](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/codeisconfusing" target="_blank" rel="noopener noreferrer">codeisconfusing</a>
 
 ## Preview
 

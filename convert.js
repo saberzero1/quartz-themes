@@ -24,6 +24,7 @@ import {
   replaceInString,
   applyRuleToFile,
   applyRuleToString,
+  generateFundingLinks,
 } from "./util/util.mjs"
 import { themes, usedRules } from "./config.mjs"
 import { prune } from "./util/prune-unused.mjs"
@@ -181,6 +182,29 @@ manifestCollection.forEach((manifest) => {
     getValueFromDictionary(manifest, "authorUrl") !== ""
       ? getValueFromDictionary(manifest, "authorUrl")
       : "#",
+  )
+})
+manifestCollection.forEach((manifest) => {
+  const authorValue =
+    getValueFromDictionary(manifest, "author") !== ""
+      ? getValueFromDictionary(manifest, "author")
+      : "No author provided"
+  const authorUrlValue =
+    getValueFromDictionary(manifest, "authorUrl") !== ""
+      ? getValueFromDictionary(manifest, "authorUrl")
+      : ""
+  const authorString =
+    authorUrlValue !== ""
+      ? `<a href="${authorUrlValue}" target="_blank" rel="noopener noreferrer">${authorValue}</a>`
+      : authorValue
+  replaceInFile(`./themes/${getTheme(manifest)}/README.md`, "%OBSIDIAN_THEME_AUTHOR%", authorString)
+})
+manifestCollection.forEach((manifest) => {
+  const result = generateFundingLinks(manifest)
+  replaceInFile(
+    `./themes/${getTheme(manifest)}/README.md`,
+    "%OBSIDIAN_THEME_AUTHOR_DONATE_URL%",
+    result,
   )
 })
 

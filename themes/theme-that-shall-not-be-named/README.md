@@ -1,6 +1,7 @@
 # Theme-That-Shall-Not-Be-Named
 
-[Theme-That-Shall-Not-Be-Named](#)
+- Theme: [Theme-That-Shall-Not-Be-Named](OBSIDIAN_THEME_URL%)
+- Author: Chop the Viking
 
 ## Preview
 

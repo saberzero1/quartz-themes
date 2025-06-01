@@ -1,6 +1,7 @@
 # Vibrant
 
-[Vibrant](https://github.com/JamesLemony)
+- Theme: [Vibrant](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/JamesLemony" target="_blank" rel="noopener noreferrer">James Lemony</a>
 
 ## Preview
 

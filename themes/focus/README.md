@@ -1,6 +1,7 @@
 # Focus
 
-[Focus](https://www.moritzjung.dev)
+- Theme: [Focus](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.moritzjung.dev" target="_blank" rel="noopener noreferrer">Moritz Jung</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Notation 2
 
-[Notation 2](https://github.com/Bluemoondragon07)
+- Theme: [Notation 2](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview
 

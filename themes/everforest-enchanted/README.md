@@ -1,6 +1,7 @@
 # Everforest Enchanted
 
-[Everforest Enchanted](https://github.com/FireIsGood)
+- Theme: [Everforest Enchanted](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/FireIsGood" target="_blank" rel="noopener noreferrer">FireIsGood</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Phoenix
 
-[Phoenix](https://github.com/RyzenFromFire)
+- Theme: [Phoenix](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/RyzenFromFire" target="_blank" rel="noopener noreferrer">RyzenFromFire</a>
 
 ## Preview
 

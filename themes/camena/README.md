@@ -1,6 +1,7 @@
 # Camena
 
-[Camena](https://splendide-mendax.com)
+- Theme: [Camena](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://splendide-mendax.com" target="_blank" rel="noopener noreferrer">Bee</a>
 
 ## Preview
 

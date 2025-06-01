@@ -1,6 +1,7 @@
 # Spectrum
 
-[Spectrum](#)
+- Theme: [Spectrum](OBSIDIAN_THEME_URL%)
+- Author: Wiktoria Mielcarek
 
 ## Preview
 

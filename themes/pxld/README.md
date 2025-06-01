@@ -1,6 +1,7 @@
 # Pxld
 
-[Pxld](https://github.com/Lina674)
+- Theme: [Pxld](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Lina674" target="_blank" rel="noopener noreferrer">Lina674</a>
 
 ## Preview
 

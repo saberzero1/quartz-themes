@@ -1,6 +1,7 @@
 # Atom
 
-[Atom](#)
+- Theme: [Atom](OBSIDIAN_THEME_URL%)
+- Author: kognise
 
 ## Preview
 

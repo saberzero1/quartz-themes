@@ -1,6 +1,7 @@
 # Dark Clarity
 
-[Dark Clarity](https://github.com/chenbihao)
+- Theme: [Dark Clarity](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/chenbihao" target="_blank" rel="noopener noreferrer">chenbihao</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # parfait
 
-[parfait](https://github.com/incantatem2)
+- Theme: [parfait](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview
 

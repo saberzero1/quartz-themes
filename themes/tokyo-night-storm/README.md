@@ -1,6 +1,7 @@
 # Tokyo Night Storm
 
-[Tokyo Night Storm](https://github.com/arozx)
+- Theme: [Tokyo Night Storm](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/arozx" target="_blank" rel="noopener noreferrer">arozx</a>
 
 ## Preview
 

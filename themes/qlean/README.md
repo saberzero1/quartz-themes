@@ -1,6 +1,7 @@
 # Qlean
 
-[Qlean](https://github.com/Fro-Q)
+- Theme: [Qlean](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Fro-Q" target="_blank" rel="noopener noreferrer">Fro-Q</a>
 
 ## Preview
 

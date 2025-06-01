@@ -1,6 +1,7 @@
 # Dark Graphite Pie
 
-[Dark Graphite Pie](#)
+- Theme: [Dark Graphite Pie](OBSIDIAN_THEME_URL%)
+- Author: kitchenrunner
 
 ## Preview
 

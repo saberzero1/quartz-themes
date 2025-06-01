@@ -1,6 +1,7 @@
 # Garden Gnome (Adwaita, GTK)
 
-[Garden Gnome (Adwaita, GTK)](https://github.com/oqipodev/)
+- Theme: [Garden Gnome (Adwaita, GTK)](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/oqipodev/" target="_blank" rel="noopener noreferrer">oqipo</a>
 
 ## Preview
 

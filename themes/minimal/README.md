@@ -1,6 +1,8 @@
 # Minimal
 
-[Minimal](https://twitter.com/kepano)
+- Theme: [Minimal](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
+- Support the author: <a href="https://www.buymeacoffee.com/kepano" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

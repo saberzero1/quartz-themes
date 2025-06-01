@@ -1,6 +1,7 @@
 # Pale - 淡
 
-[Pale - 淡](#)
+- Theme: [Pale - 淡](OBSIDIAN_THEME_URL%)
+- Author: Elhary
 
 ## Preview
 

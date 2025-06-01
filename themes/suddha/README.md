@@ -1,6 +1,7 @@
 # Suddha
 
-[Suddha](#)
+- Theme: [Suddha](OBSIDIAN_THEME_URL%)
+- Author: dxcore35
 
 ## Preview
 

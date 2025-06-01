@@ -1,6 +1,7 @@
 # GDCT Dark
 
-[GDCT Dark](#)
+- Theme: [GDCT Dark](OBSIDIAN_THEME_URL%)
+- Author: bernardo_v
 
 ## Preview
 
