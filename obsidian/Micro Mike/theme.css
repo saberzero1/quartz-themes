@@ -264,6 +264,10 @@ settings:
 		title: Disable Simple Editor Callout
 		description: This switch disables the modified, line-height aligned callout.
 		type: class-toggle
+	-
+		id: enablePreviewCulling
+		title: Re-Enable Dynamic Unloading in Text Preview
+		type: class-toggle
 	- 
 		id: this-is-a-heading------------------------------------------------------------------------------------------------------
 		title: Tabs & Sidebars
@@ -454,6 +458,10 @@ settings:
 		description: Enable layered background in file browser. This helps perceive depth.
 		type: class-toggle
 		default: true
+	-
+		id: enableSidebarCulling
+		title: Re-Enable Dynamic Unloading for Sidebars
+		type: class-toggle
 	- 
 		id: this-is-a-heading------------------------------------------------------------------------------------------------------
 		title: Prompt Window
@@ -1035,7 +1043,8 @@ body {
 
 :is(
     .backlink-pane,
-    .outgoing-link-pane .workspace-leaf-content[data-type="search"],
+    .outgoing-link-pane,
+    .workspace-leaf-content[data-type="search"],
     .workspace-leaf-content[data-type="tag"]
   )
   .tree-item-self
@@ -1044,7 +1053,8 @@ body {
 }
 :is(
     .backlink-pane,
-    .outgoing-link-pane .workspace-leaf-content[data-type="search"],
+    .outgoing-link-pane,
+    .workspace-leaf-content[data-type="search"],
     .workspace-leaf-content[data-type="tag"]
   )
   .tree-item-self
@@ -1058,7 +1068,8 @@ body {
 }
 :is(
     .backlink-pane,
-    .outgoing-link-pane .workspace-leaf-content[data-type="search"],
+    .outgoing-link-pane,
+    .workspace-leaf-content[data-type="search"],
     .workspace-leaf-content[data-type="tag"]
   )
   .tree-item-self
@@ -1069,7 +1080,8 @@ body {
 }
 :is(
     .backlink-pane,
-    .outgoing-link-pane .workspace-leaf-content[data-type="search"],
+    .outgoing-link-pane,
+    .workspace-leaf-content[data-type="search"],
     .workspace-leaf-content[data-type="tag"]
   )
   .tree-item-self
@@ -1124,6 +1136,34 @@ body {
   /*CSS transforms*/
   /*CSS animations*/
   animation: none !important;
+}
+
+body:not(.enableTreeViewCulling)
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content:has(> .nav-header) {
+  margin-top: var(--sidebarDashboardHeight);
+  position: static;
+}
+body:not(.enableTreeViewCulling)
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content:has(> .nav-header)
+  .nav-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  margin-right: calc(0px - var(--scrollBarSize));
+}
+body:not(.enableTreeViewCulling) :is(.mod-left-split, .mod-right-split) .workspace-leaf-content {
+  overflow-y: scroll;
+}
+body:not(.enableTreeViewCulling)
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content
+  .node-insert-event {
+  overflow-y: visible;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .menu .menu-item .menu-item-icon.mod-checked {
@@ -1342,9 +1382,31 @@ body:not(.disableSECallout):not(.disableSimpleEditor)
   margin-top: 0px;
 }
 
-.cm-sizer,
 .markdown-preview-sizer {
   max-width: var(--file-line-width);
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  min-width: 100%;
+  padding-right: calc(100% - var(--file-line-width));
+}
+
+body:not(.enablePreviewCulling) .markdown-reading-view {
+  overflow-y: scroll;
+}
+body:not(.enablePreviewCulling) .markdown-preview-view {
+  overflow-y: visible;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+body:not(.enablePreviewCulling)
+  :not(.markdown-embed-content)
+  > .markdown-preview-view
+  > .markdown-preview-sizer {
+  padding-bottom: 500px !important;
+}
+body:not(.enablePreviewCulling) .markdown-preview-view > .markdown-preview-sizer {
+  min-height: 0px !important;
 }
 
 .workspace-leaf-content[data-mode="preview"] .view-content {
@@ -1407,10 +1469,6 @@ body .workspace-leaf-content[data-type="file-explorer"] .tree-item-children .tre
   background-color: var(--levelLayer);
 }
 
-/* .nav-files-container
- * overflow-y: visible
- * min-height: fit-content
- * */
 @media only screen and (max-width: 900px) {
   body:not(.disableMiniMode) .mod-right-split {
     display: none;
@@ -2044,6 +2102,10 @@ html .mod-linux.stackTabs .mod-root {
   --frame-right-space: 0px;
 }
 
+html body.is-fullscreen:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) {
+  --rightFrameSetTo: var(--titlebarButtonWidth);
+}
+
 html
   body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
   .mod-root {
@@ -2051,6 +2113,14 @@ html
 }
 html
   body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  .mod-root
+  .mod-top-right-space
+  .workspace-tab-header-new-tab {
+  margin-right: var(--titlebarButtonWidth);
+}
+html
+  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  .workspace-split:not(.mod-root)
   .mod-top-right-space
   .workspace-tab-header-container-inner {
   margin-right: var(--titlebarButtonWidth);
@@ -2913,16 +2983,24 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 }
 
 #quick-explorer {
+  height: 100%;
   padding: 0px;
   margin: 0px;
   gap: 0px;
 }
 #quick-explorer span {
-  font-size: 24px;
+  height: 100%;
   padding-bottom: 3px;
   padding-top: 3px;
   padding-left: 3px;
   padding-right: 3px;
+  vertical-align: middle;
+}
+#quick-explorer span::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 #quick-explorer span:not(.explorable-separator) {
   min-width: 50px;
@@ -3018,8 +3096,15 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 .workspace-leaf-content[data-type="recent-files"] .tree-item-spacer {
   display: none;
 }
+.workspace-leaf-content[data-type="recent-files"] .tree-item-inner {
+  order: 2;
+}
+.workspace-leaf-content[data-type="recent-files"] .nav-file-tag {
+  order: 1;
+}
 .workspace-leaf-content[data-type="recent-files"] .recent-files-file-delete {
   position: absolute;
+  order: 0;
 }
 
 .sg-mounted-collection-decoration {
@@ -3029,6 +3114,14 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 
 .w-3.h-3.rounded-full.bg-brand {
   height: 0.75rem !important;
+}
+
+.workspace-leaf-content
+  #smtcmp-apply-view
+  .view-header
+  .view-header-title-container
+  .view-header-title {
+  min-width: 50%;
 }
 
 .style-settings-heading[data-level="0"] + .style-settings-container {
@@ -5972,10 +6065,6 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
 }
 
 .dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button,
-.dtm08.stackTabs
-  .workspace-tab-header-container
-  .workspace-tab-header-container-inner
-  .workspace-tab-header,
 .dtm08
   :not(.is-mobile)
   .workspace-split.mod-left-split
@@ -6027,6 +6116,33 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
 }
+.dtm08:not(.win7bar) .titlebar-button-container.mod-right .is-active.titlebar-button,
+.dtm08
+  :not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .is-active.workspace-drawer-vault-switcher,
+.dtm08
+  :not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions
+  .is-active.clickable-icon,
+.dtm08 .is-active.sidebar-toggle-button,
+.dtm08
+  :is(.view-header, .nav-header)
+  :is(.view-header-nav-buttons, .nav-buttons-container, .view-actions)
+  .is-active.clickable-icon,
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header,
+.dtm08 .workspace-tab-header-new-tab .is-active.clickable-icon {
+  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d8) 50%, var(--d8d7));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
 .dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button:not(:last-of-type),
 .dtm08
   :not(.is-mobile)
@@ -6050,6 +6166,45 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header:not(:last-of-type),
 .dtm08 .workspace-tab-header-new-tab .clickable-icon:not(:last-of-type) {
   border-right: 0px;
+}
+
+.dtm08.stackTabs
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  border: solid 1px #000;
+  background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8d9));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08.stackTabs
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover {
+  background: linear-gradient(var(--d8d6), var(--d8d8) 50%, var(--d8d9) 50%, var(--d8d8));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08.stackTabs
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header {
+  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d8) 50%, var(--d8d7));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08.stackTabs
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:not(:last-of-type) {
+  border-bottom: 0px;
 }
 
 .dtm08 .modal.mod-settings .modal-content button {
@@ -6158,6 +6313,27 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
     0 0 0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover,
+.dtm08 .workspace-tab-header-new-tab .clickable-icon:hover {
+  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dB));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
+    0 0 0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header,
+.dtm08 .workspace-tab-header-new-tab .is-active.clickable-icon {
+  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dB));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
+    0 0 0 1px rgba(255, 255, 255, 0.0666666667);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9333333333);
 }
 
 :root {
@@ -6931,7 +7107,6 @@ body.dtm08 {
 }
 .dtm08 .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
   border-right: 0px;
-  border-bottom-width: 1px;
 }
 
 .dtm08 :not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
@@ -7059,3 +7234,4 @@ body.dtm08 {
   background-color: #242324;
   box-shadow: none;
 } /*# sourceMappingURL=theme.css.map */
+
