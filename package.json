@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "just-install": "^2.0.2",
-    "minimatch": "^10.0.1",
     "postcss": "^8.5.3",
     "postcss-prune-var": "^1.1.2",
     "postcss-scss": "^4.0.9"
