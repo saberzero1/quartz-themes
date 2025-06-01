@@ -1,6 +1,7 @@
 # Spring
 
-[Spring](https://github.com/MateusHenriquegringo)
+- Theme: [Spring](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/MateusHenriquegringo" target="_blank" rel="noopener noreferrer">Mateus Derossi</a>
 
 ## Preview
 

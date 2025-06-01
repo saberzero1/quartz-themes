@@ -1,6 +1,7 @@
 # NotSwift
 
-[NotSwift](https://github.com/davidjroos)
+- Theme: [NotSwift](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/davidjroos" target="_blank" rel="noopener noreferrer">David Roos</a>
 
 ## Preview
 

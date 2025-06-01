@@ -1,6 +1,7 @@
 # Dracula Official
 
-[Dracula Official](https://gitlab.com/chrismettal)
+- Theme: [Dracula Official](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://gitlab.com/chrismettal" target="_blank" rel="noopener noreferrer">Dracula</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Sodalite
 
-[Sodalite](https://twitter.com/tomzorz_)
+- Theme: [Sodalite](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://twitter.com/tomzorz_" target="_blank" rel="noopener noreferrer">tomzorz</a>
 
 ## Preview
 

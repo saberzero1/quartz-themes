@@ -1,6 +1,7 @@
 # Kanagawa
 
-[Kanagawa](https://ssp.sh)
+- Theme: [Kanagawa](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview
 

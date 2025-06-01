@@ -1,6 +1,7 @@
 # Zenburn
 
-[Zenburn](https://github.com/danyim)
+- Theme: [Zenburn](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/danyim" target="_blank" rel="noopener noreferrer">@danyim</a>
 
 ## Preview
 

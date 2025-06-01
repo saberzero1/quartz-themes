@@ -1,6 +1,7 @@
 # Kakano
 
-[Kakano](https://isaac.freeman.org.nz)
+- Theme: [Kakano](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://isaac.freeman.org.nz" target="_blank" rel="noopener noreferrer">Isaac Freeman</a>
 
 ## Preview
 

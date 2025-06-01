@@ -1,6 +1,7 @@
 # Old World
 
-[Old World](https://github.com/double-tilde)
+- Theme: [Old World](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/double-tilde" target="_blank" rel="noopener noreferrer">Double Tilde</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # RetroOS 98
 
-[RetroOS 98](https://github.com/ThePharaohArt/)
+- Theme: [RetroOS 98](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ThePharaohArt/" target="_blank" rel="noopener noreferrer">ThePharaohArt</a>
 
 ## Preview
 

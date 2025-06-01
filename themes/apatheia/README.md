@@ -1,6 +1,7 @@
 # Apatheia
 
-[Apatheia](https://github.com/AmadeusWM)
+- Theme: [Apatheia](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/AmadeusWM" target="_blank" rel="noopener noreferrer">@AmadeusWM, @Zenneh</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # halcyon
 
-[halcyon](https://github.com/dbarenholz)
+- Theme: [halcyon](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/dbarenholz" target="_blank" rel="noopener noreferrer">dbarenholz</a>
 
 ## Preview
 

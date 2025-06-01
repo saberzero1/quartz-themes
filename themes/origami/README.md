@@ -1,6 +1,7 @@
 # Origami
 
-[Origami](#)
+- Theme: [Origami](OBSIDIAN_THEME_URL%)
+- Author: kneecaps
 
 ## Preview
 

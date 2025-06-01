@@ -1,6 +1,7 @@
 # Creature
 
-[Creature](#)
+- Theme: [Creature](OBSIDIAN_THEME_URL%)
+- Author: Marcus Olsson
 
 ## Preview
 

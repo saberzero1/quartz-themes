@@ -1,6 +1,7 @@
 # WY Console
 
-[WY Console](https://www.buymeacoffee.com/Satchelmouth)
+- Theme: [WY Console](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.buymeacoffee.com/Satchelmouth" target="_blank" rel="noopener noreferrer">Satchelmouth</a>
 
 ## Preview
 

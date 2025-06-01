@@ -1,6 +1,7 @@
 # Ink
 
-[Ink](https://github.com/harmtemolder)
+- Theme: [Ink](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/harmtemolder" target="_blank" rel="noopener noreferrer">harmtemolder</a>
 
 ## Preview
 

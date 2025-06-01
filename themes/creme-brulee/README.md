@@ -1,6 +1,7 @@
 # Creme brulee
 
-[Creme brulee](https://github.com/anareaty)
+- Theme: [Creme brulee](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/anareaty" target="_blank" rel="noopener noreferrer">anareaty</a>
 
 ## Preview
 

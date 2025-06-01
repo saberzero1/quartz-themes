@@ -1,6 +1,7 @@
 # Vauxhall
 
-[Vauxhall](https//github.com/CyanVoxel)
+- Theme: [Vauxhall](OBSIDIAN_THEME_URL%)
+- Author: <a href="https//github.com/CyanVoxel" target="_blank" rel="noopener noreferrer">CyanVoxel</a>
 
 ## Preview
 

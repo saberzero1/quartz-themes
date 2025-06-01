@@ -1,6 +1,7 @@
 # Spectrum Blue
 
-[Spectrum Blue](https://github.com/ryanjrman)
+- Theme: [Spectrum Blue](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ryanjrman" target="_blank" rel="noopener noreferrer">ryanjrman</a>
 
 ## Preview
 

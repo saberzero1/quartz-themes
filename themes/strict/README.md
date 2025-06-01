@@ -1,6 +1,7 @@
 # Strict
 
-[Strict](https://github.com/Nikolai2038)
+- Theme: [Strict](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Nikolai2038" target="_blank" rel="noopener noreferrer">Nikolai2038</a>
 
 ## Preview
 

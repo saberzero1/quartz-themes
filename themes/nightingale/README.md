@@ -1,6 +1,7 @@
 # Nightingale
 
-[Nightingale](#)
+- Theme: [Nightingale](OBSIDIAN_THEME_URL%)
+- Author: frank0713
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # AbsoluteGruv
 
-[AbsoluteGruv](#)
+- Theme: [AbsoluteGruv](OBSIDIAN_THEME_URL%)
+- Author: kkY
 
 ## Preview
 

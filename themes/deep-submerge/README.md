@@ -1,6 +1,7 @@
 # deep submerge
 
-[deep submerge](https://github.com/incantatem2)
+- Theme: [deep submerge](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview
 

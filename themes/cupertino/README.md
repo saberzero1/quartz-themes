@@ -1,6 +1,8 @@
 # Cupertino
 
-[Cupertino](https://github.com/aaaaalexis)
+- Theme: [Cupertino](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/aaaaalexis" target="_blank" rel="noopener noreferrer">Alexis C</a>
+- Support the author: <a href="https://www.buymeacoffee.com/sevenaxis" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # evangelion
 
-[evangelion](https://github.com/xero)
+- Theme: [evangelion](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/xero" target="_blank" rel="noopener noreferrer">xero</a>
 
 ## Preview
 

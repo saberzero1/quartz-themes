@@ -1,6 +1,7 @@
 # Nightfox
 
-[Nightfox](https://github.com/mbromell)
+- Theme: [Nightfox](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/mbromell" target="_blank" rel="noopener noreferrer">mbromell</a>
 
 ## Preview
 

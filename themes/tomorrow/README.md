@@ -1,6 +1,7 @@
 # Tomorrow
 
-[Tomorrow](https://github.com/deudz/)
+- Theme: [Tomorrow](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/deudz/" target="_blank" rel="noopener noreferrer">deudz</a>
 
 ## Preview
 

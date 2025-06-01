@@ -1,6 +1,7 @@
 # LYT Mode
 
-[LYT Mode](#)
+- Theme: [LYT Mode](OBSIDIAN_THEME_URL%)
+- Author: Nick Milo
 
 ## Preview
 

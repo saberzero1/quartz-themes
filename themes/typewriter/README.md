@@ -1,6 +1,7 @@
 # Typewriter
 
-[Typewriter](https://github.com/crashmoney)
+- Theme: [Typewriter](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/crashmoney" target="_blank" rel="noopener noreferrer">crashmoney</a>
 
 ## Preview
 

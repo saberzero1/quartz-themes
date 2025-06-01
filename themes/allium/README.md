@@ -1,6 +1,7 @@
 # Allium
 
-[Allium](#)
+- Theme: [Allium](OBSIDIAN_THEME_URL%)
+- Author: Xainapse
 
 ## Preview
 

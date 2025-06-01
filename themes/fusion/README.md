@@ -1,6 +1,7 @@
 # Fusion
 
-[Fusion](https://github.com/zamsyt)
+- Theme: [Fusion](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/zamsyt" target="_blank" rel="noopener noreferrer">zamsyt</a>
 
 ## Preview
 

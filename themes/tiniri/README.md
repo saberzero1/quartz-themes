@@ -1,6 +1,8 @@
 # Tiniri
 
-[Tiniri](https://tiniri.vlad.studio)
+- Theme: [Tiniri](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://tiniri.vlad.studio" target="_blank" rel="noopener noreferrer">Vlad Gerasimov</a>
+- Support the author: <a href="https://vlad.studio/signup" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

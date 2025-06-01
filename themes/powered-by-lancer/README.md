@@ -1,6 +1,7 @@
 # Powered by Lancer
 
-[Powered by Lancer](#)
+- Theme: [Powered by Lancer](OBSIDIAN_THEME_URL%)
+- Author: Dion McMillan
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Everforest
 
-[Everforest](#)
+- Theme: [Everforest](OBSIDIAN_THEME_URL%)
+- Author: MrGlitchByte
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Simple Color
 
-[Simple Color](https://nayasinghania.com)
+- Theme: [Simple Color](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://nayasinghania.com" target="_blank" rel="noopener noreferrer">Naya Singhania</a>
 
 ## Preview
 

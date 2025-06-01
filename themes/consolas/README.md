@@ -1,6 +1,7 @@
 # Consolas
 
-[Consolas](https://github.com/pinei)
+- Theme: [Consolas](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/pinei" target="_blank" rel="noopener noreferrer">Pinei</a>
 
 ## Preview
 

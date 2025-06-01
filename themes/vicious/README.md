@@ -1,6 +1,7 @@
 # Vicious
 
-[Vicious](https://zaher.design)
+- Theme: [Vicious](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://zaher.design" target="_blank" rel="noopener noreferrer">Zaher Al Majed</a>
 
 ## Preview
 

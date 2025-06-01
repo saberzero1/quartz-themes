@@ -1,6 +1,7 @@
 # Simply Colorful
 
-[Simply Colorful](https://github.com/LorenzoPegorari)
+- Theme: [Simply Colorful](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/LorenzoPegorari" target="_blank" rel="noopener noreferrer">Lorenzo Pegorari</a>
 
 ## Preview
 

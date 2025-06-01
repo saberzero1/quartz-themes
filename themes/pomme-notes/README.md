@@ -1,6 +1,7 @@
 # Pomme Notes
 
-[Pomme Notes](https://medium.com/@paralloid)
+- Theme: [Pomme Notes](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://medium.com/@paralloid" target="_blank" rel="noopener noreferrer">Denis Volkov</a>
 
 ## Preview
 

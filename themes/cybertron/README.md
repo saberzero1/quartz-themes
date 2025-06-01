@@ -1,6 +1,7 @@
 # Cybertron
 
-[Cybertron](#)
+- Theme: [Cybertron](OBSIDIAN_THEME_URL%)
+- Author: nickmilo
 
 ## Preview
 

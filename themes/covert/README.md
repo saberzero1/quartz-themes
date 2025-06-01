@@ -1,6 +1,7 @@
 # Covert
 
-[Covert](https://github.com/schrunchee)
+- Theme: [Covert](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/schrunchee" target="_blank" rel="noopener noreferrer">schrunchee</a>
 
 ## Preview
 

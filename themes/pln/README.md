@@ -1,6 +1,7 @@
 # PLN
 
-[PLN](https://docs.dev0.sh)
+- Theme: [PLN](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://docs.dev0.sh" target="_blank" rel="noopener noreferrer">PipeItToDevNull</a>
 
 ## Preview
 

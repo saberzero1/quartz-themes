@@ -1,6 +1,7 @@
 # Wyrd
 
-[Wyrd](https://github.com/curio-heart)
+- Theme: [Wyrd](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/curio-heart" target="_blank" rel="noopener noreferrer">Curio Heart</a>
 
 ## Preview
 

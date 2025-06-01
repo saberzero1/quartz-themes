@@ -1,6 +1,7 @@
 # DarkEmber
 
-[DarkEmber](https://github.com/miz-i)
+- Theme: [DarkEmber](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/miz-i" target="_blank" rel="noopener noreferrer">miz</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Material Gruvbox
 
-[Material Gruvbox](https://github.com/AllJavi)
+- Theme: [Material Gruvbox](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/AllJavi" target="_blank" rel="noopener noreferrer">AllJavi</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Gummy-Revived
 
-[Gummy-Revived](#)
+- Theme: [Gummy-Revived](OBSIDIAN_THEME_URL%)
+- Author: kneecaps & WinnerWind
 
 ## Preview
 

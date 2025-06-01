@@ -1,6 +1,7 @@
 # Ribbons
 
-[Ribbons](https://github.com/ddspog)
+- Theme: [Ribbons](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ddspog" target="_blank" rel="noopener noreferrer">ddspog</a>
 
 ## Preview
 

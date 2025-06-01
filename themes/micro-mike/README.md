@@ -1,6 +1,7 @@
 # Micro Mike
 
-[Micro Mike](https://github.com/ThisTheThe)
+- Theme: [Micro Mike](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ThisTheThe" target="_blank" rel="noopener noreferrer">ThisTheThe</a>
 
 ## Preview
 

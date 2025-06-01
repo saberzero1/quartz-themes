@@ -1,6 +1,7 @@
 # OverCast
 
-[OverCast](#)
+- Theme: [OverCast](OBSIDIAN_THEME_URL%)
+- Author: IxBlazarxI
 
 ## Preview
 

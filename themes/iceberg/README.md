@@ -1,6 +1,7 @@
 # Iceberg
 
-[Iceberg](#)
+- Theme: [Iceberg](OBSIDIAN_THEME_URL%)
+- Author: izumin5210
 
 ## Preview
 

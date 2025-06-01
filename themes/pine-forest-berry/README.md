@@ -1,6 +1,7 @@
 # Pine Forest Berry
 
-[Pine Forest Berry](#)
+- Theme: [Pine Forest Berry](OBSIDIAN_THEME_URL%)
+- Author: Nilahn
 
 ## Preview
 

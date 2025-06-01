@@ -1,6 +1,7 @@
 # Dekurai
 
-[Dekurai](https://github.com/sergey900553)
+- Theme: [Dekurai](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/sergey900553" target="_blank" rel="noopener noreferrer">sergey</a>
 
 ## Preview
 

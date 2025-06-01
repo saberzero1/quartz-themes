@@ -1,6 +1,7 @@
 # Hojicha
 
-[Hojicha](https://github.com/pr0methevs)
+- Theme: [Hojicha](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/pr0methevs" target="_blank" rel="noopener noreferrer">pr0methevs</a>
 
 ## Preview
 

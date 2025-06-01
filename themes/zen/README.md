@@ -1,6 +1,7 @@
 # Zen
 
-[Zen](https://github.com/laughmaker)
+- Theme: [Zen](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/laughmaker" target="_blank" rel="noopener noreferrer">laughmaker</a>
 
 ## Preview
 
