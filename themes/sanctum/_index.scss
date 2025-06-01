@@ -2260,7 +2260,7 @@ body {
           width: 16px;
           height: 16px;
           display: flex;
-          align-self: anchor-center;
+          align-self: center;
           background: var(--icon-color);
           content: "";
         }
@@ -2320,10 +2320,11 @@ body {
           height: 16px;
           content: "";
           display: flex;
-          align-self: anchor-center;
+          align-self: center;
           background: var(--icon-color);
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
+          margin-inline-end: 8px;
         }
       }
     }
