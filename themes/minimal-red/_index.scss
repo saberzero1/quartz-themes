@@ -1310,13 +1310,27 @@ body {
     }
   }
   /* TEXT */
+  .page article p > strong,
   strong {
     color: var(--bold-color);
   }
+  .page article p > i,
+  .page article p > em,
   i,
   em {
     color: var(--italic-color);
   }
+  .page article p,
+  .page article ul,
+  .page article text,
+  .page article a,
+  .page article tr,
+  .page article td,
+  .page article li,
+  .page article ol,
+  .page article ul,
+  .page article .katex,
+  .page article .math,
   p,
   ul,
   text,
