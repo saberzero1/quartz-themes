@@ -238,6 +238,7 @@ body {
   --background-secondary: var(--mu-background-color-2);
   --bold-color: var(--mu-text-bold);
   --bold-modifier: 200;
+  --bold-weight: var(--font-bold);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -291,6 +292,7 @@ body {
   --collapse-icon-color-collapsed: #0072d3;
   --cursor: default;
   --cursor-link: pointer;
+  --font-bold: 700;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
@@ -1501,12 +1503,14 @@ body {
   .page article p > strong,
   strong {
     color: var(--bold-color);
+    font-weight: var(--bold-weight);
   }
   .page article p > i,
   .page article p > em,
   i,
   em {
     color: var(--italic-color);
+    font-style: italic;
   }
   .page article p,
   .page article ul,
@@ -1531,6 +1535,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
 }
