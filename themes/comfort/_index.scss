@@ -1385,7 +1385,6 @@ body {
   .page article p,
   .page article ul,
   .page article text,
-  .page article a,
   .page article tr,
   .page article td,
   .page article li,
@@ -1396,7 +1395,6 @@ body {
   p,
   ul,
   text,
-  a,
   tr,
   td,
   li,
@@ -1405,6 +1403,11 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
+    font-family: var(--font-text, var(--font-default));
+    hyphens: none;
+  }
+  .page article a,
+  a {
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
