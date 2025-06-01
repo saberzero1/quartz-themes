@@ -1,6 +1,6 @@
 # Serika
 
-- Theme: [Serika](OBSIDIAN_THEME_URL%)
+- Theme: Serika
 - Author: <a href="https://github.com/Warrobot10" target="_blank" rel="noopener noreferrer">Warrobot10</a>
 
 ## Preview

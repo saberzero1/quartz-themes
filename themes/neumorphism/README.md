@@ -1,6 +1,6 @@
 # Neumorphism
 
-- Theme: [Neumorphism](OBSIDIAN_THEME_URL%)
+- Theme: Neumorphism
 - Author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
 
 ## Preview

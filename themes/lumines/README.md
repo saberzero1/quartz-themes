@@ -1,6 +1,6 @@
 # Lumines
 
-- Theme: [Lumines](OBSIDIAN_THEME_URL%)
+- Theme: Lumines
 - Author: <a href="https://github.com/Avesend" target="_blank" rel="noopener noreferrer">Avesend</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Gitsidian
 
-- Theme: [Gitsidian](OBSIDIAN_THEME_URL%)
+- Theme: Gitsidian
 - Author: Ish Gunacar
 
 ## Preview

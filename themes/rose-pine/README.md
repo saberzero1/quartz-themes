@@ -1,6 +1,6 @@
 # Rosé Pine
 
-- Theme: [Rosé Pine](OBSIDIAN_THEME_URL%)
+- Theme: Rosé Pine
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

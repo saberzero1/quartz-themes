@@ -1,6 +1,6 @@
 # Tomorrow Night Bright
 
-- Theme: [Tomorrow Night Bright](OBSIDIAN_THEME_URL%)
+- Theme: Tomorrow Night Bright
 - Author: Gerard Braad
 
 ## Preview

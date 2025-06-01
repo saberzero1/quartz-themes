@@ -1,6 +1,6 @@
 # Ursa
 
-- Theme: [Ursa](OBSIDIAN_THEME_URL%)
+- Theme: Ursa
 - Author: ezs
 
 ## Preview

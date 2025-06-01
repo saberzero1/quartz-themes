@@ -1,6 +1,6 @@
 # Faded
 
-- Theme: [Faded](OBSIDIAN_THEME_URL%)
+- Theme: Faded
 - Author: Josh Kasap
 
 ## Preview

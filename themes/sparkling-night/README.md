@@ -1,6 +1,6 @@
 # Sparkling Night
 
-- Theme: [Sparkling Night](OBSIDIAN_THEME_URL%)
+- Theme: Sparkling Night
 - Author: <a href="https://github.com/isax785/obsidian-sparkling-night" target="_blank" rel="noopener noreferrer">isax785</a>
 
 ## Preview

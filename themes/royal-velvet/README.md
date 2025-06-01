@@ -1,6 +1,6 @@
 # Royal Velvet
 
-- Theme: [Royal Velvet](OBSIDIAN_THEME_URL%)
+- Theme: Royal Velvet
 - Author: <a href="https://github.com/caro401" target="_blank" rel="noopener noreferrer">@caro401</a>
 
 ## Preview

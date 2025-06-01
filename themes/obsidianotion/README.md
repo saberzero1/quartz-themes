@@ -1,6 +1,6 @@
 # Obsidianotion
 
-- Theme: [Obsidianotion](OBSIDIAN_THEME_URL%)
+- Theme: Obsidianotion
 - Author: <a href="https://diegoeis.com" target="_blank" rel="noopener noreferrer">Diego Eis</a>
 
 ## Preview

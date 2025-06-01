@@ -1,6 +1,6 @@
 # Panic Mode
 
-- Theme: [Panic Mode](OBSIDIAN_THEME_URL%)
+- Theme: Panic Mode
 - Author: bernardo_v
 
 ## Preview

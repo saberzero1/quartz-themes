@@ -1,6 +1,6 @@
 # Hulk
 
-- Theme: [Hulk](OBSIDIAN_THEME_URL%)
+- Theme: Hulk
 - Author: Reggie
 
 ## Preview

@@ -1,6 +1,6 @@
 # Planetary
 
-- Theme: [Planetary](OBSIDIAN_THEME_URL%)
+- Theme: Planetary
 - Author: <a href="https://andoerfer.io" target="_blank" rel="noopener noreferrer">ninetyfive666</a>
 
 ## Preview

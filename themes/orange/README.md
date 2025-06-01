@@ -1,6 +1,6 @@
 # Orange
 
-- Theme: [Orange](OBSIDIAN_THEME_URL%)
+- Theme: Orange
 - Author: Alex Frangiamore
 
 ## Preview

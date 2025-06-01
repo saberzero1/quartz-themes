@@ -1,6 +1,6 @@
 # Dune
 
-- Theme: [Dune](OBSIDIAN_THEME_URL%)
+- Theme: Dune
 - Author: ValCode
 
 ## Preview

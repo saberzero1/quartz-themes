@@ -1,6 +1,6 @@
 # Aurora-Twilight
 
-- Theme: [Aurora-Twilight](OBSIDIAN_THEME_URL%)
+- Theme: Aurora-Twilight
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

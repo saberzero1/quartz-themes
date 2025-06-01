@@ -1,6 +1,6 @@
 # Violet Evening
 
-- Theme: [Violet Evening](OBSIDIAN_THEME_URL%)
+- Theme: Violet Evening
 - Author: aitaDev
 
 ## Preview

@@ -1,6 +1,6 @@
 # aged whisky
 
-- Theme: [aged whisky](OBSIDIAN_THEME_URL%)
+- Theme: aged whisky
 - Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview

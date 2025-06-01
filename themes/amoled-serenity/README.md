@@ -1,6 +1,6 @@
 # AMOLED Serenity
 
-- Theme: [AMOLED Serenity](OBSIDIAN_THEME_URL%)
+- Theme: AMOLED Serenity
 - Author: <a href="https://darthdemono.rf.gd/" target="_blank" rel="noopener noreferrer">Darth Demono</a>
 
 ## Preview

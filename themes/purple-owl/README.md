@@ -1,6 +1,6 @@
 # Purple Owl
 
-- Theme: [Purple Owl](OBSIDIAN_THEME_URL%)
+- Theme: Purple Owl
 - Author: <a href="https://zacharyc.com" target="_blank" rel="noopener noreferrer">zacharyc</a>
 
 ## Preview

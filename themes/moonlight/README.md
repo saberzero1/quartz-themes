@@ -1,6 +1,6 @@
 # Moonlight
 
-- Theme: [Moonlight](OBSIDIAN_THEME_URL%)
+- Theme: Moonlight
 - Author: karz
 
 ## Preview

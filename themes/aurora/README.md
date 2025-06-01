@@ -1,6 +1,6 @@
 # Aurora
 
-- Theme: [Aurora](OBSIDIAN_THEME_URL%)
+- Theme: Aurora
 - Author: Benny Guo
 
 ## Preview

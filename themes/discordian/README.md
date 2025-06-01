@@ -1,6 +1,6 @@
 # Discordian
 
-- Theme: [Discordian](OBSIDIAN_THEME_URL%)
+- Theme: Discordian
 - Author: radekkozak
 
 ## Preview

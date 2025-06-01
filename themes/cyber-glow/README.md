@@ -1,6 +1,6 @@
 # Cyber Glow
 
-- Theme: [Cyber Glow](OBSIDIAN_THEME_URL%)
+- Theme: Cyber Glow
 - Author: <a href="https://github.com/ArtexJay/Obsidian-CyberGlow" target="_blank" rel="noopener noreferrer">TheEmperorArt</a>
 
 ## Preview

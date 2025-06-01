@@ -1,6 +1,6 @@
 # Modern GenZ Vibedose
 
-- Theme: [Modern GenZ Vibedose](OBSIDIAN_THEME_URL%)
+- Theme: Modern GenZ Vibedose
 - Author: <a href="https://github.com/omkar-4" target="_blank" rel="noopener noreferrer">Omkar Iyer</a>
 
 ## Preview

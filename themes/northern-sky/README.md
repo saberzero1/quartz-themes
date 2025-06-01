@@ -1,6 +1,6 @@
 # Northern-Sky
 
-- Theme: [Northern-Sky](OBSIDIAN_THEME_URL%)
+- Theme: Northern-Sky
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

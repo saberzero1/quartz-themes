@@ -1,6 +1,6 @@
 # Velvet-Moon
 
-- Theme: [Velvet-Moon](OBSIDIAN_THEME_URL%)
+- Theme: Velvet-Moon
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Listive
 
-- Theme: [Listive](OBSIDIAN_THEME_URL%)
+- Theme: Listive
 - Author: <a href="https://efemkay.github.io/" target="_blank" rel="noopener noreferrer">efemkay</a>
 
 ## Preview

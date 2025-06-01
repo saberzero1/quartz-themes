@@ -1,6 +1,6 @@
 # Simplicity
 
-- Theme: [Simplicity](OBSIDIAN_THEME_URL%)
+- Theme: Simplicity
 - Author: <a href="https://github.com/Thiews" target="_blank" rel="noopener noreferrer">Thiews</a>
 - Support the author: <a href="https://www.buymeacoffee.com/thiews" target="_blank" rel="noopener noreferrer">Donate</a>
 

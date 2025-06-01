@@ -1,6 +1,6 @@
 # Origin
 
-- Theme: [Origin](OBSIDIAN_THEME_URL%)
+- Theme: Origin
 - Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # monochroYOU
 
-- Theme: [monochroYOU](OBSIDIAN_THEME_URL%)
+- Theme: monochroYOU
 - Author: <a href="https://github.com/GuiMar10" target="_blank" rel="noopener noreferrer">GuiMar10</a>
 
 ## Preview

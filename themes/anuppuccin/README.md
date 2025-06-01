@@ -1,6 +1,6 @@
 # AnuPpuccin
 
-- Theme: [AnuPpuccin](OBSIDIAN_THEME_URL%)
+- Theme: AnuPpuccin
 - Author: <a href="https://github.com/AnubisNekhet" target="_blank" rel="noopener noreferrer">Anubis</a>
 
 ## Preview

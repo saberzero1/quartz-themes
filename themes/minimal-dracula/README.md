@@ -1,6 +1,6 @@
 # Minimal Dracula
 
-- Theme: [Minimal Dracula](OBSIDIAN_THEME_URL%)
+- Theme: Minimal Dracula
 - Author: <a href="https://github.com/druxorey" target="_blank" rel="noopener noreferrer">Druxorey</a>
 
 ## Preview

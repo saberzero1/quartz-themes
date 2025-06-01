@@ -1,6 +1,6 @@
 # Ukiyo
 
-- Theme: [Ukiyo](OBSIDIAN_THEME_URL%)
+- Theme: Ukiyo
 - Author: kinmury
 
 ## Preview
