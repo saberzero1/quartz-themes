@@ -149,7 +149,7 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 
 Manually download the `_index.scss` file from the [themes directory of your choice](./themes/) in this repository, and place it in your Quartz repository's at `quartz/styles/themes/_index.scss`. (Create the `themes` directory if it doesn't exist.)
 
-Then, add the following line to your `src/styles/custom.scss` file after the `@use "base";` line:
+Then, add the following line to your `src/styles/custom.scss` file **after** the `@use "base";` line:
 
 ```scss
 @use "themes";
