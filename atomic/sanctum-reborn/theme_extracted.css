@@ -231,6 +231,7 @@ body {
   --color-accent-rgb-l: 246, 141, 69;
   --cursor: default;
   --cursor-link: pointer;
+  --custom-accent-color: 102, 153, 97;
   --cyan: var(--cyan-50);
   --cyan-10: hsl(90deg, 15.4%, 94.9%);
   --cyan-100: hsl(214.8deg, 100%, 9.8%);
@@ -702,9 +703,9 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: var(--layer-hover-1);
-  --scrollbar-bg: rgb(var(--mono-rgb-100));
-  --scrollbar-thumb-bg: var(--layer-1);
+  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) 0.2);
+  --scrollbar-bg: rgb(var(--mono-rgb-100) 0.05);
+  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100) 0.1);
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -1821,7 +1822,7 @@ svg.svg-icon {
   --color-accent-1: var(--interactive);
   --color-accent-2: var(--interactive);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-rgb: var(--color-accent-rgb-d);
+  --color-accent-rgb: var(--custom-accent-color);
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
   --color-base-10: #242424;
@@ -1966,7 +1967,7 @@ svg.svg-icon {
   --color-accent-1: var(--interactive);
   --color-accent-2: var(--interactive);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-rgb: var(--color-accent-rgb-l);
+  --color-accent-rgb: var(--custom-accent-color);
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
   --color-base-10: #fafafa;

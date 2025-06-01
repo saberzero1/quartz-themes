@@ -2108,7 +2108,7 @@ body {
   --r-block-margin: 20px;
   --r-code-font: var(--font-monospace-theme);
   --r-heading-color: var(--text-normal);
-  --r-heading-font: var(--font-text-theme);
+  --r-heading-font: var(--font-text-theme: );
   --r-heading-font-weight: var(--h1-weight);
   --r-heading-letter-spacing: normal;
   --r-heading-line-height: 1.2;
@@ -2356,6 +2356,10 @@ body {
   --theme-color-baseTransparent35: hsl(from var(--theme-color-base) h s l / 0.35);
   --theme-color-baseTransparent50: hsl(from var(--theme-color-base) h s l / 0.5);
   --theme-color-baseTransparent75: hsl(from var(--theme-color-base) h s l / 0.75);
+  --theme-color-calendarBg: light-dark(
+    var(--theme-color-baseLightened85),
+    var(--theme-color-baseDarkened80)
+  );
   --theme-color-cardBg: var(--background-primary);
   --theme-color-control: light-dark(
     var(--theme-color-baseDarkened70),
@@ -2411,6 +2415,14 @@ body {
   );
   --theme-color-tabBgInactiveHover: var(--theme-color-baseTransparent75);
   --theme-color-tableHeaderBg: var(--theme-color-baseTransparent12);
+  --theme-color-tabNavActiveBg: light-dark(
+    var(--theme-color-baseLightened70),
+    var(--theme-color-baseDarkened70)
+  );
+  --theme-color-tabNavBg: light-dark(
+    var(--theme-color-baseLightened60),
+    var(--theme-color-baseDarkened60)
+  );
   --theme-gradient-bottomToTop: linear-gradient(
     0deg,
     var(--theme-color-gradientBottom) 0%,
@@ -2629,7 +2641,6 @@ body {
   --theme-color-blockId: var(--theme-color-baseLightened25);
   --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
   --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
-  --theme-color-calendarBg: var(--theme-color-baseLightened80);
   --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -2718,7 +2729,6 @@ body {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseLightened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.02),
@@ -2891,7 +2901,6 @@ body {
   --theme-color-blockId: var(--theme-color-baseDarkened25);
   --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
   --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
-  --theme-color-calendarBg: var(--theme-color-baseDarkened80);
   --theme-color-calendarDayBg: var(--theme-color-darkenTransparent50);
   --theme-color-communityItemBg: var(--theme-color-baseDarkened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -2970,7 +2979,6 @@ body {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   --theme-color-suggestionBg: var(--theme-color-baseDarkened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseDarkened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.05),
@@ -4785,7 +4793,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .is-focused .workspace-leaf.mod-active .view-header-title {
-  color: var(--text-normal);
+  color: var(--tab-text-color-focused-active-current);
 }
 
 .view-header-title::-webkit-scrollbar {
@@ -4793,6 +4801,8 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .view-content {
+  background-color: var(--theme-color-tabNavActiveBg);
+  display: none;
   height: calc(100% - var(--header-height));
   padding: 0.5rem 1rem 2rem 1rem;
   padding-left: 0.5rem;
@@ -17418,6 +17428,7 @@ em {
 
 .bases-header {
   align-items: center;
+  background-color: var(--theme-color-tabNavActiveBg);
   border-color: var(--bases-table-border-color);
   border-style: solid;
   border-width: var(--bases-header-border-width);
@@ -17426,6 +17437,7 @@ em {
   display: flex;
   height: var(--bases-header-height);
   min-height: var(--bases-header-height);
+  overflow: visible;
   padding-bottom: 0;
   padding-inline-end: var(--bases-header-padding-end);
   padding-inline-start: var(--bases-header-padding-start);
@@ -17767,6 +17779,9 @@ em {
   --bases-table-cell-edge-padding: var(--size-4-1);
   --bases-table-container-border-radius: 0;
   --bases-table-container-border-width: 0;
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
 }
 
 .workspace-leaf-content[data-type="bases"] .bases-header {
@@ -17937,12 +17952,19 @@ em {
 .query-toolbar .query-toolbar-item.mod-views {
   display: flex;
   margin-inline-end: auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button {
   --icon-color-hover: var(--text-normal);
-  color: var(--text-normal);
+  background-color: var(--theme-color-controlBgLowWeight);
+  border: none;
+  box-shadow: var(--theme-shadow-control);
+  color: var(--theme-color-controlText);
+  font-size: var(--font-ui-smaller);
+  line-height: var(--line-height-tight);
+  min-height: 0;
+  padding: 0.25em 0.5em;
 }
 
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button .mod-aux {
@@ -25709,7 +25731,9 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
 }
 
 /* #endregion */
-/* Hues derived from base color */
+/* #region   Base colour variants */
+/* #endregion */
+/* #region   Hues derived from base color */
 /* #endregion */
 /* #region   Light mode */
 .theme-light .theme-dark {
@@ -25764,7 +25788,6 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redDarkened);
   --theme-color-blockId: var(--theme-color-baseLightened25);
-  --theme-color-calendarBg: var(--theme-color-baseLightened80);
   --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -25835,7 +25858,6 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseLightened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.02),
@@ -25959,7 +25981,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redLightened);
   --theme-color-blockId: var(--theme-color-baseDarkened25);
-  --theme-color-calendarBg: var(--theme-color-baseDarkened80);
   --theme-color-calendarDayBg: var(--theme-color-darkenTransparent50);
   --theme-color-communityItemBg: var(--theme-color-baseDarkened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -26020,7 +26041,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   --theme-color-suggestionBg: var(--theme-color-baseDarkened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseDarkened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.05),
@@ -27299,9 +27319,127 @@ body.mod-windows {
   --tab-container-background: transparent;
 }
 
-/* Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
+/* #endregion */
+/* #region   Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
 .theme-setting-distinguishNonContentTabs {
-  background-color: var(--theme-color-tabNavBg);
+  background-color: var(--theme-color-tabNavActiveBg);
+  box-shadow:
+    inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color),
+    0 0 0 calc(var(--tab-curve) * 4) var(--theme-color-tabNavActiveBg);
+}
+
+.workspace-leaf-content[data-type="calendar"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  border-radius: 1rem;
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+.workspace-leaf-content[data-type="graph"] {
+  background: transparent;
+  background-color: var(--theme-color-graphViewBg);
+  border-bottom: none;
+  border-radius: var(--tab-radius);
+  bottom: -1rem;
+  box-shadow: var(--theme-shadow-indent);
+  content: "";
+  display: block;
+  height: 1rem;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 120%;
+}
+
+.workspace-leaf-content[data-type="localgraph"] {
+  background: transparent;
+  background-color: var(--theme-color-graphViewBg);
+  border-bottom: none;
+  border-radius: var(--tab-radius);
+  bottom: -1rem;
+  box-shadow: var(--theme-shadow-indent);
+  content: "";
+  display: block;
+  height: 1rem;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 120%;
+}
+
+.workspace-leaf-content[data-type="map"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.workspace-leaf-content[data-type="webviewer"] {
+  background: transparent;
+  background-color: var(--tab-background-active);
+  border-bottom: none;
+  border-radius: var(--tab-radius);
+  bottom: -1rem;
+  box-shadow: var(--theme-shadow-indent);
+  content: "";
+  display: block;
+  height: 1rem;
+  left: 0;
+  padding: 0 1rem;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 120%;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="bases"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="calendar"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="graph"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="localgraph"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="map"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="webviewer"] {
+  background-color: var(--theme-color-tabNavActiveBg);
+  border-bottom: none;
+  display: none;
+}
+
+/* #endregion */
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--tab-text-color-active);
+  display: block;
 }
 
 .is-mobile .mod-root .workspace-tab-header-container {
@@ -28127,7 +28265,17 @@ button.search-result-file-match-replace-button {
   outline: none;
 }
 
+.query-toolbar .query-toolbar-item.mod-views .text-icon-button:focus {
+  box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
+  outline: none;
+}
+
 @media (hover: hover) {
+  .query-toolbar .query-toolbar-item.mod-views .text-icon-button:hover {
+    background: var(--theme-color-controlBgHover);
+    border: none;
+    color: var(--theme-color-controlTextHover);
+  }
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover
     .search-result-file-match-destination-file-icon {
@@ -29365,6 +29513,8 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
 }
 
 /* #endregion */
+/* #region   Core Plugin: Bases */
+/* #endregion */
 /* #region   Core Plugin: Bookmarks */
 .view-action.mod-bookmark {
   --icon-color: transparent;
@@ -29416,44 +29566,6 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
 
 .graph-controls .tree-item-self .tree-item-icon {
   margin: 0;
-}
-
-.workspace-leaf-content[data-type="graph"] {
-  background: transparent;
-  background-color: var(--theme-color-graphViewBg);
-  border-bottom: none;
-  border-radius: var(--tab-radius);
-  bottom: -1rem;
-  box-shadow: var(--theme-shadow-indent);
-  content: "";
-  display: block;
-  height: 1rem;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: -1rem;
-  width: 120%;
-}
-
-.workspace-leaf-content[data-type="localgraph"] {
-  background: transparent;
-  background-color: var(--theme-color-graphViewBg);
-  border-bottom: none;
-  border-radius: var(--tab-radius);
-  bottom: -1rem;
-  box-shadow: var(--theme-shadow-indent);
-  content: "";
-  display: block;
-  height: 1rem;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: -1rem;
-  width: 120%;
 }
 
 .mod-sidedock .workspace-leaf-content[data-type="graph"] {

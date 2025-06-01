@@ -739,6 +739,7 @@ h6 a {
 
 h1 {
   --font-weight: var(--h1-weight);
+  --gradient-header: var(--h1-color), var(--chalk-grey-accent), var(--h1-gradient-accent);
   color: var(--h1-color);
   font-family: var(--h1-font);
   font-size: var(--h1-size);
@@ -753,6 +754,7 @@ h1 {
 
 h2 {
   --font-weight: var(--h2-weight);
+  --gradient-header: var(--h2-color), var(--chalk-grey-accent), var(--h2-gradient-accent);
   color: var(--h2-color);
   font-family: var(--h2-font);
   font-size: var(--h2-size);
@@ -767,6 +769,7 @@ h2 {
 
 h3 {
   --font-weight: var(--h3-weight);
+  --gradient-header: var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
   color: var(--h3-color);
   font-family: var(--h3-font);
   font-size: var(--h3-size);
@@ -781,6 +784,7 @@ h3 {
 
 h4 {
   --font-weight: var(--h4-weight);
+  --gradient-header: var(--h4-color), var(--chalk-grey-accent), var(--h4-gradient-accent);
   color: var(--h4-color);
   font-family: var(--h4-font);
   font-size: var(--h4-size);
@@ -795,6 +799,7 @@ h4 {
 
 h5 {
   --font-weight: var(--h5-weight);
+  --gradient-header: var(--h5-color), var(--chalk-grey-accent), var(--h5-gradient-accent);
   color: var(--h5-color);
   font-family: var(--h5-font);
   font-size: var(--h5-size);
@@ -809,6 +814,7 @@ h5 {
 
 h6 {
   --font-weight: var(--h6-weight);
+  --gradient-header: var(--h6-color), var(--chalk-grey-accent), var(--h6-gradient-accent);
   color: var(--h6-color);
   font-family: var(--h6-font);
   font-size: var(--h6-size);
@@ -1566,6 +1572,8 @@ svg.svg-icon {
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
+  --chalk-grey: #dddddd;
+  --chalk-grey-accent: #cbcbcb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1606,6 +1614,18 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #bec4ff;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #9ac0ff;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #b999e8;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #f088ca;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #8e91eb;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #e990eb;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1634,6 +1654,8 @@ svg.svg-icon {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-secondary-alt: var(--color-base-05);
+  --chalk-grey: #686868;
+  --chalk-grey-accent: #636363;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1674,6 +1696,18 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --h1-color: var(--chalk-grey);
+  --h1-gradient-accent: #5968fb;
+  --h2-color: var(--chalk-grey);
+  --h2-gradient-accent: #3372ca;
+  --h3-color: var(--chalk-grey);
+  --h3-gradient-accent: #6f33ca;
+  --h4-color: var(--chalk-grey);
+  --h4-gradient-accent: #ca3393;
+  --h5-color: var(--chalk-grey);
+  --h5-gradient-accent: #262cda;
+  --h6-color: var(--chalk-grey);
+  --h6-gradient-accent: #f21bf6;
   --highlight-mix-blend-mode: darken;
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;

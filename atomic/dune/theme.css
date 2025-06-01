@@ -15736,6 +15736,7 @@ mjx-container {
   line-height: var(--table-line-height);
   margin-block-end: var(--p-spacing);
   margin-block-start: var(--p-spacing);
+  margin-top: 0px;
   word-break: normal;
 }
 
@@ -24958,6 +24959,14 @@ settings:
     type: class-toggle
     default: true
   -
+    id: codeblock-dev
+    title: Codeblocks full length
+    title.de: Befehlszeilen ganze Länge
+    description: for developers
+    description.de: Für Entwickler
+    type: class-toggle
+    default: false
+  -
     id: show-textHL
     title: Line highlight
     title.de: Zeilenmarkierung
@@ -28840,7 +28849,7 @@ blockquote p {
 }
 
 /* formatting codeblocks */
-body:not(.is-phone).HyperMD-codeblock {
+.codeblock-dev:not(.is-phone).HyperMD-codeblock {
   white-space: nowrap;
 }
 
@@ -29017,6 +29026,8 @@ div[data-callout="multi-column"].callout > .callout-content > *:is(div, ul) {
 /* Special Adjustment -- for theme with negative margin & box shadow. (e.g. Prism) */
 div[data-callout="mehrspaltig"].callout:not(.is-collapsed) {
   box-shadow: unset;
+  margin-bottom: 0;
+  margin-top: 0;
   mix-blend-mode: normal;
 }
 
@@ -29031,6 +29042,11 @@ div[data-callout="mehrspaltig"] .callout {
 
 div[data-callout="multi-column"] .callout {
   width: auto;
+}
+
+div[data-callout="multi-column"] .callout-content p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* === Blank Container "DIV"'s - can be used with Main Multi-Column layout above === */
@@ -29388,20 +29404,16 @@ body:not(.is-phone)
 body:not(.is-phone) .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6) {
   margin-bottom: auto;
   margin-top: 0;
+  max-width: 16vw;
   padding-top: 0;
   scale: 0.6;
   text-align: center;
 }
 
-.is-phone .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6) {
-  margin: 0;
-  padding-bottom: 0.5em;
-  scale: 0.6;
-}
-
 .markdown-preview-view .callout[data-callout="infobox"] p {
+  margin-top: 0;
+  max-width: 16vw;
   padding-bottom: 6px;
-  text-align: center;
   width: initial;
 }
 
@@ -29427,16 +29439,6 @@ body:not(.is-phone) .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6)
   font-size: 12px;
 }
 
-.is-phone .callout[data-callout="infobox"] thead th {
-  font-size: 14px;
-}
-
-.is-phone .callout[data-callout="infobox"] .callout-content tbody td {
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
 /* no xy or bold in other tables */
 .callout[data-callout="infobox"] tbody tr > td:first-child {
   background: revert;
@@ -29446,7 +29448,9 @@ body:not(.is-phone) .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6)
 /* img */
 .callout[data-callout="infobox"] :is(.internal-embed, img) {
   margin: auto;
-  max-width: 140px;
+  margin-bottom: 10px;
+  max-height: max-content;
+  max-width: 10vw;
   opacity: 1;
   padding: 0;
   pointer-events: none;
@@ -29463,7 +29467,17 @@ body:not(.is-phone) .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6)
 
 /* phone */
 .is-phone .callout[data-callout="infobox"] {
-  width: 240px;
+  max-width: 12vw;
+}
+
+.is-phone .callout[data-callout="infobox"] thead th {
+  font-size: 14px;
+}
+
+.is-phone .callout[data-callout="infobox"] .callout-content tbody td {
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .is-phone .markdown-preview-view .callout[data-callout="infobox"][data-callout-metadata~="r"] {
@@ -29474,6 +29488,13 @@ body:not(.is-phone) .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6)
 .is-phone .markdown-preview-view .callout[data-callout="infobox"][data-callout-metadata~="l"] {
   padding: 8px;
   transform: translateX(-0.6em);
+}
+
+.is-phone .callout[data-callout="infobox"] :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  max-width: 12vw;
+  padding-bottom: 0.5em;
+  scale: 0.6;
 }
 
 /*----------------------------------------------------------------
@@ -30833,7 +30854,6 @@ body:not(.show-ls-marker) :is(.is-phone) ol li::marker {
 table hr {
   margin: 0;
   position: relative;
-  top: 10px;
 }
 
 .cm-active.cm-line table {
@@ -31310,10 +31330,6 @@ body:not(.is-phone) .recipes table {
 /* remove superflous top space */
 .markdown-source-view .el-table {
   margin-top: -1em;
-}
-
-.markdown-preview-view div.el-table {
-  margin-top: 0px;
 }
 
 .table-r :is(thead th, thead tr > th:nth-child(2n + 2), thead th:hover) {
@@ -31993,6 +32009,10 @@ img[alt~="frame-b"] {
   z-index: 2;
 }
 
+.markdown-source-view .image-embed[src*="#cap"]::before {
+  display: none;
+}
+
 .image-embed[src*="#cap"] {
   display: inline-block;
   position: relative;
@@ -32278,7 +32298,12 @@ body:not(.show-canvas-ui) .canvas-card-menu:hover {
 }
 
 body:not(.show-canvas-nl) .canvas-wrapper:not(.mod-readonly) .canvas-node-label {
+  background: gray;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
   opacity: 0;
+  padding: 0 4px;
   transition: opacity 1s ease-out;
 }
 
@@ -32893,6 +32918,10 @@ body:not(.show-graph-btns) .graph-controls.is-close .graph-controls-button.mod-o
     background-color: transparent;
     margin-top: 0;
   }
+  /* break code to fit on pdf */
+  .print .markdown-preview-view pre code {
+    white-space: pre-line;
+  }
   /* break code to fit into pdf */
   /* normal source code spacing */
   .print .markdown-source-view.mod-cm6 .cm-embed-block pre {
@@ -33483,4 +33512,8 @@ body:not(.is-phone) .tree-item.nav-file.recent-files-file {
 
 ul.dataview.list-view-ul {
   margin-top: 0;
+}
+
+.dataview.dataview-container li.task-list-item:not(.is-checked) {
+  text-indent: revert;
 }

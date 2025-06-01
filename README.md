@@ -139,7 +139,7 @@ Then run the `action.sh` script with the desired theme to install it into your Q
 
 Manually download the `_index.scss` file from the [themes directory of your choice](./themes/) in this repository, and place it in your Quartz repository's at `quartz/styles/themes/_index.scss`. (Create the `themes` directory if it doesn't exist.)
 
-Then, add the following line to your `src/styles/custom.scss` file after the `@use "base";` line:
+Then, add the following line to your `src/styles/custom.scss` file **after** the `@use "base";` line:
 
 ```scss
 @use "themes";
@@ -354,6 +354,7 @@ Then, add the following line to your `src/styles/custom.scss` file after the `@u
 | <img src="media/dark.svg" alt="DARK"/>   | `minimal-resources`              | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/minimal-resources/)              |
 | <img src="media/light.svg" alt="LIGHT"/> | `mint-breeze`                    | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mint-breeze/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `mistymauve`                     | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mistymauve/)                     |
+| <img src="media/both.svg" alt="BOTH"/>   | `modern-genz-vibedose`           | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/modern-genz-vibedose/)           |
 | <img src="media/dark.svg" alt="DARK"/>   | `mono-black-monochrome-charcoal` | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mono-black-monochrome-charcoal/) |
 | <img src="media/both.svg" alt="BOTH"/>   | `mono-high-contrast`             | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mono-high-contrast/)             |
 | <img src="media/both.svg" alt="BOTH"/>   | `monochroyou`                    | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/monochroyou/)                    |

@@ -52,14 +52,14 @@ body {
   --base-s: 0%;
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
-  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-border-width: 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: var(--table-border-color);
   --bases-table-cell-background-active: var(--background-modifier-hover);
   --bases-table-cell-background-disabled: var(--background-modifier-cover);
-  --bases-table-column-border-width: 1px;
+  --bases-table-column-border-width: 0px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: var(--radius-s);
@@ -75,7 +75,7 @@ body {
   --bases-table-header-weight: var(--font-weight);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
-  --bases-table-text-size: var(--font-smaller);
+  --bases-table-text-size: calc(var(--font-adaptive-normal) * 0.875);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
   --blockquote-border-color: var(--quote-opening-modifier);
@@ -1729,13 +1729,6 @@ svg.svg-icon {
   --h4l: var(--ui1);
   --h5l: var(--ui1);
   --h6l: var(--ui1);
-  --he-title-bar-active-bg: var(--background-secondary);
-  --he-title-bar-active-fg: var(--text-normal);
-  --he-title-bar-active-pinned-bg: var(--background-secondary);
-  --he-title-bar-font-size: 14px;
-  --he-title-bar-inactive-bg: var(--background-secondary);
-  --he-title-bar-inactive-fg: var(--text-muted);
-  --he-title-bar-inactive-pinned-bg: var(--background-secondary);
   --highlight-mix-blend-mode: darken;
   --hl1: hsla(var(--accent-h), 50%, 40%, 30%);
   --hl2: rgba(255, 177, 80, 0.3);
@@ -1777,8 +1770,6 @@ svg.svg-icon {
   --nav-item-color-selected: var(--tx1);
   --pdf-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6);
   --pdf-thumbnail-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6);
-  --popover-shadow: 0px 2.7px 3.1px rgba(0, 0, 0, 0.081), 0px 5.9px 8.7px rgba(0, 0, 0, 0.131),
-    0px 10.4px 18.1px rgba(0, 0, 0, 0.18), 0px 20px 40px rgba(0, 0, 0, 0.28);
   --prompt-border-color: var(--ui3);
   --quote-opening-modifier: var(--ui2);
   --ribbon-background: var(--bg2);
@@ -1931,13 +1922,6 @@ svg.svg-icon {
   --h4l: var(--ui1);
   --h5l: var(--ui1);
   --h6l: var(--ui1);
-  --he-title-bar-active-bg: var(--background-secondary);
-  --he-title-bar-active-fg: var(--text-normal);
-  --he-title-bar-active-pinned-bg: var(--background-secondary);
-  --he-title-bar-font-size: 14px;
-  --he-title-bar-inactive-bg: var(--background-secondary);
-  --he-title-bar-inactive-fg: var(--text-muted);
-  --he-title-bar-inactive-pinned-bg: var(--background-secondary);
   --highlight-mix-blend-mode: darken;
   --hl1: hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%);
   --hl2: rgba(255, 225, 0, 0.5);
@@ -1974,8 +1958,6 @@ svg.svg-icon {
   --nav-item-color-active: var(--tx1);
   --nav-item-color-hover: var(--tx1);
   --nav-item-color-selected: var(--tx1);
-  --popover-shadow: 0px 2.7px 3.1px rgba(0, 0, 0, 0.032), 0px 5.9px 8.7px rgba(0, 0, 0, 0.052),
-    0px 10.4px 18.1px rgba(0, 0, 0, 0.071), 0px 20px 40px rgba(0, 0, 0, 0.11);
   --prompt-border-color: var(--ui3);
   --quote-opening-modifier: var(--ui2);
   --ribbon-background: var(--bg2);
