@@ -1254,6 +1254,13 @@
       "extras": [],
       "fonts": ["arvo", "permanent-marker"]
     },
+    "modern-genz-vibedose": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "extras": [],
+      "fonts": ["jost", "satoshi", "syne", "jetbrains-mono"]
+    },
     "mono-high-contrast": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
