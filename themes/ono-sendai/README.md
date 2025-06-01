@@ -1,6 +1,7 @@
 # Ono Sendai
 
-[Ono Sendai](#)
+- Theme: [Ono Sendai](OBSIDIAN_THEME_URL%)
+- Author: \_ph
 
 ## Preview
 

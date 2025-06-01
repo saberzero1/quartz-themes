@@ -1,6 +1,7 @@
 # Dust
 
-[Dust](https://github.com/PedroHenrique17)
+- Theme: [Dust](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/PedroHenrique17" target="_blank" rel="noopener noreferrer">PedroHenrique17</a>
 
 ## Preview
 

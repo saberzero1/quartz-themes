@@ -1,6 +1,7 @@
 # Rosé Pine Moon
 
-[Rosé Pine Moon](#)
+- Theme: [Rosé Pine Moon](OBSIDIAN_THEME_URL%)
+- Author: mimishahzad
 
 ## Preview
 

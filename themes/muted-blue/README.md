@@ -1,6 +1,7 @@
 # Muted-Blue
 
-[Muted-Blue](https://github.com/HasanTheSyrian)
+- Theme: [Muted-Blue](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/HasanTheSyrian" target="_blank" rel="noopener noreferrer">HasanTheSyrian</a>
 
 ## Preview
 

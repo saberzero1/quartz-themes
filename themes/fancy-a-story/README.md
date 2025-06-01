@@ -1,6 +1,7 @@
 # Fancy-a-Story
 
-[Fancy-a-Story](https://github.com/ElsaTam)
+- Theme: [Fancy-a-Story](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ElsaTam" target="_blank" rel="noopener noreferrer">Kapirklaa</a>
 
 ## Preview
 

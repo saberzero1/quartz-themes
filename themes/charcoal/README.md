@@ -1,6 +1,7 @@
 # Charcoal
 
-[Charcoal](#)
+- Theme: [Charcoal](OBSIDIAN_THEME_URL%)
+- Author: bernardo_v
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Obsidianite
 
-[Obsidianite](https://github.com/bennyxguo)
+- Theme: [Obsidianite](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/bennyxguo" target="_blank" rel="noopener noreferrer">@bennyxguo</a>
 
 ## Preview
 

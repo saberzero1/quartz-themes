@@ -1,6 +1,7 @@
 # Midnight-Fjord
 
-[Midnight-Fjord](https://quinta0.github.io/)
+- Theme: [Midnight-Fjord](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview
 

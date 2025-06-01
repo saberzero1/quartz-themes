@@ -1,6 +1,7 @@
 # GitHub Theme
 
-[GitHub Theme](https://github.com/krios2146)
+- Theme: [GitHub Theme](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/krios2146" target="_blank" rel="noopener noreferrer">@krios2146</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Buena Vista
 
-[Buena Vista](https://github.com/oqipodev/)
+- Theme: [Buena Vista](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/oqipodev/" target="_blank" rel="noopener noreferrer">oqipo</a>
 
 ## Preview
 

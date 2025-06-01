@@ -1,6 +1,7 @@
 # Sanctum reborn
 
-[Sanctum reborn](https://github.com/antoKeinanen/)
+- Theme: [Sanctum reborn](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/antoKeinanen/" target="_blank" rel="noopener noreferrer">@antoKeinanen</a>
 
 ## Preview
 

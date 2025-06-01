@@ -1,6 +1,7 @@
 # Minimal Edge
 
-[Minimal Edge](#)
+- Theme: [Minimal Edge](OBSIDIAN_THEME_URL%)
+- Author: Elhary
 
 ## Preview
 

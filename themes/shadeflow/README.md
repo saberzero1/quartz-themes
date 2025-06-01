@@ -1,6 +1,7 @@
 # Shadeflow
 
-[Shadeflow](https://artorias305.github.io/)
+- Theme: [Shadeflow](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://artorias305.github.io/" target="_blank" rel="noopener noreferrer">Artorias</a>
 
 ## Preview
 

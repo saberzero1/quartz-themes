@@ -445,3 +445,32 @@ export function getFilesUnderDirectoryToStringArray(dirPath, themeName = "") {
   }
 }
 
+/**
+ * Generates a string of HTML links for funding URLs.
+ *
+ * @param {object} manifest - The manifest object containing funding information.
+ * @param {string|object} manifest.fundingUrl - The funding URL(s), which can be a string or an object.
+ * @returns {string} A string of HTML links separated by '|'.
+ */
+export function generateFundingLinks(manifest) {
+  const {
+    fundingUrl
+  } = manifest;
+
+  if (!fundingUrl) {
+    return "";
+  }
+
+  if (typeof fundingUrl === "string") {
+    return `- Support the author: <a href="${fundingUrl}" target="_blank" rel="noopener noreferrer">Donate</a>`;
+  }
+
+  if (typeof fundingUrl === "object") {
+    return `- Support the author: ${Object.entries(fundingUrl)
+      .sort(([key]) => key.toLowerCase())
+      .map(([key, value]) => `<a href="${value}" target="_blank" rel="noopener noreferrer">${key}</a>`)
+      .join(" | ")}`;
+  }
+
+  return "";
+}

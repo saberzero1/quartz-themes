@@ -1,6 +1,7 @@
 # Mulled Wine
 
-[Mulled Wine](https://github.com/incantatem2)
+- Theme: [Mulled Wine](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview
 

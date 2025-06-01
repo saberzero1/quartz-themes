@@ -1,6 +1,7 @@
 # Dracula Plus
 
-[Dracula Plus](#)
+- Theme: [Dracula Plus](OBSIDIAN_THEME_URL%)
+- Author: saket
 
 ## Preview
 

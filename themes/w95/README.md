@@ -1,6 +1,8 @@
 # W95
 
-[W95](https://github.com/phchang)
+- Theme: [W95](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/phchang" target="_blank" rel="noopener noreferrer">@phchang</a>
+- Support the author: <a href="https://buymeacoffee.com/phchang" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

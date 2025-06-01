@@ -1,6 +1,7 @@
 # Vesper
 
-[Vesper](https://github.com/omarrashad)
+- Theme: [Vesper](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/omarrashad" target="_blank" rel="noopener noreferrer">@omarrashad</a>
 
 ## Preview
 

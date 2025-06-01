@@ -1,6 +1,7 @@
 # Serif
 
-[Serif](https://github.com/GodlyMan-bit)
+- Theme: [Serif](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/GodlyMan-bit" target="_blank" rel="noopener noreferrer">agodlyman</a>
 
 ## Preview
 

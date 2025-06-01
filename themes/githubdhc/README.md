@@ -1,6 +1,7 @@
 # GitHubDHC
 
-[GitHubDHC](https://github.com/ScottKirvan)
+- Theme: [GitHubDHC](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/ScottKirvan" target="_blank" rel="noopener noreferrer">Scott Kirvan</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Sanctum
 
-[Sanctum](https://github.com/jdanielmourao/)
+- Theme: [Sanctum](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/jdanielmourao/" target="_blank" rel="noopener noreferrer">@jdanielmourao</a>
 
 ## Preview
 

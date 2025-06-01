@@ -1,6 +1,7 @@
 # Minimal-Resources
 
-[Minimal-Resources](https://github.com/jonsnow231)
+- Theme: [Minimal-Resources](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/jonsnow231" target="_blank" rel="noopener noreferrer">jonsnow231</a>
 
 ## Preview
 

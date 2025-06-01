@@ -1,6 +1,7 @@
 # Handwriting (Kalam)
 
-[Handwriting (Kalam)](#)
+- Theme: [Handwriting (Kalam)](OBSIDIAN_THEME_URL%)
+- Author: Kumar Anurag
 
 ## Preview
 

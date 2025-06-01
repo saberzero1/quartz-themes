@@ -1,6 +1,7 @@
 # Playground
 
-[Playground](https://www.benjaminezequiel.com/)
+- Theme: [Playground](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.benjaminezequiel.com/" target="_blank" rel="noopener noreferrer">Ezben</a>
 
 ## Preview
 

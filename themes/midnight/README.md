@@ -1,6 +1,7 @@
 # Midnight
 
-[Midnight](https://github.com/SemiCirkle)
+- Theme: [Midnight](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/SemiCirkle" target="_blank" rel="noopener noreferrer">SemiCirkle</a>
 
 ## Preview
 

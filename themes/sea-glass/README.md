@@ -1,6 +1,7 @@
 # Sea Glass
 
-[Sea Glass](https://github.com/KStew1017)
+- Theme: [Sea Glass](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/KStew1017" target="_blank" rel="noopener noreferrer">Kyle Stewart</a>
 
 ## Preview
 

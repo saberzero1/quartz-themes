@@ -1,6 +1,7 @@
 # Frost
 
-[Frost](https://www.drkpxl.com)
+- Theme: [Frost](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://www.drkpxl.com" target="_blank" rel="noopener noreferrer">Steven Hubert</a>
 
 ## Preview
 

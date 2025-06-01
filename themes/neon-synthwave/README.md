@@ -1,6 +1,7 @@
 # Neon Synthwave
 
-[Neon Synthwave](https://github.com/grjsmith)
+- Theme: [Neon Synthwave](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/grjsmith" target="_blank" rel="noopener noreferrer">Grant Smith</a>
 
 ## Preview
 

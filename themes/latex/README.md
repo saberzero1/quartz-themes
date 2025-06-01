@@ -1,6 +1,7 @@
 # LaTeX
 
-[LaTeX](https://phooey.foo)
+- Theme: [LaTeX](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://phooey.foo" target="_blank" rel="noopener noreferrer">Ben Finch</a>
 
 ## Preview
 

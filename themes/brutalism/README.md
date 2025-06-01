@@ -1,6 +1,7 @@
 # Brutalism
 
-[Brutalism](https://github.com/abrahambahez)
+- Theme: [Brutalism](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/abrahambahez" target="_blank" rel="noopener noreferrer">@abrahambahez</a>
 
 ## Preview
 

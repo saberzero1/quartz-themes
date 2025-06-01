@@ -1489,7 +1489,7 @@ body {
   .katex,
   .math {
     color: var(--text-normal);
-    work-break: auto-phrase;
+    hyphens: none;
   }
 }
 :root[saved-theme="light"] {

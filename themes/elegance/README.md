@@ -1,6 +1,7 @@
 # Elegance
 
-[Elegance](https://github.com/Victologo/elegance-theme)
+- Theme: [Elegance](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/Victologo/elegance-theme" target="_blank" rel="noopener noreferrer">Victologo</a>
 
 ## Preview
 

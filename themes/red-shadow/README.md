@@ -1,6 +1,8 @@
 # Red-Shadow
 
-[Red-Shadow](https://github.com/DKLiberty)
+- Theme: [Red-Shadow](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/DKLiberty" target="_blank" rel="noopener noreferrer">@dkliberty</a>
+- Support the author: <a href="https://www.buymeacoffee.com/dkliberty" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

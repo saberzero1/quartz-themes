@@ -1,6 +1,7 @@
 # Neovim
 
-[Neovim](https://slavamak.com)
+- Theme: [Neovim](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://slavamak.com" target="_blank" rel="noopener noreferrer">slavamak</a>
 
 ## Preview
 

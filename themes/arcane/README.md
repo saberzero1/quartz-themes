@@ -1,6 +1,7 @@
 # Arcane
 
-[Arcane](https://github.com/xRyul)
+- Theme: [Arcane](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/xRyul" target="_blank" rel="noopener noreferrer">xRyul</a>
 
 ## Preview
 

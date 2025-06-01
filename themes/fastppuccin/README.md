@@ -1,6 +1,7 @@
 # FastPpuccin
 
-[FastPpuccin](https://github.com/LostViking09/)
+- Theme: [FastPpuccin](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/LostViking09/" target="_blank" rel="noopener noreferrer">LostViking09</a>
 
 ## Preview
 

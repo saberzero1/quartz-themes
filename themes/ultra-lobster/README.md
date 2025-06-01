@@ -1,6 +1,7 @@
 # Ultra Lobster
 
-[Ultra Lobster](#)
+- Theme: [Ultra Lobster](OBSIDIAN_THEME_URL%)
+- Author: kneecaps
 
 ## Preview
 

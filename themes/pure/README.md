@@ -1,6 +1,7 @@
 # Pure
 
-[Pure](#)
+- Theme: [Pure](OBSIDIAN_THEME_URL%)
+- Author: Lychi
 
 ## Preview
 

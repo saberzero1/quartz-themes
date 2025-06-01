@@ -1,6 +1,7 @@
 # Rift
 
-[Rift](https://github.com/NoahBoos)
+- Theme: [Rift](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/NoahBoos" target="_blank" rel="noopener noreferrer">Noah Boos</a>
 
 ## Preview
 

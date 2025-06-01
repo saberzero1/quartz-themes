@@ -1,6 +1,7 @@
 # Cybertron Shifted
 
-[Cybertron Shifted](https://github.com/JorgEdmundo)
+- Theme: [Cybertron Shifted](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/JorgEdmundo" target="_blank" rel="noopener noreferrer">JorgEdmundo</a>
 
 ## Preview
 

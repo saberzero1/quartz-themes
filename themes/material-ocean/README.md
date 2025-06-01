@@ -1,6 +1,7 @@
 # Material Ocean
 
-[Material Ocean](https://dragonwocky.me)
+- Theme: [Material Ocean](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://dragonwocky.me" target="_blank" rel="noopener noreferrer">dragonwocky</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Zario
 
-[Zario](https://gneiss.dev)
+- Theme: [Zario](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://gneiss.dev" target="_blank" rel="noopener noreferrer">Ricardo Nazario</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Rmaki
 
-[Rmaki](#)
+- Theme: [Rmaki](OBSIDIAN_THEME_URL%)
+- Author: Luke Ruokaismaki
 
 ## Preview
 

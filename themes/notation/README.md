@@ -1,6 +1,7 @@
 # Notation
 
-[Notation](#)
+- Theme: [Notation](OBSIDIAN_THEME_URL%)
+- Author: deathau
 
 ## Preview
 

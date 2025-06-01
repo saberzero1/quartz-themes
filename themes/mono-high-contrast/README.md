@@ -1,6 +1,7 @@
 # Mono High Contrast
 
-[Mono High Contrast](https://github.com/manuelcoca)
+- Theme: [Mono High Contrast](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/manuelcoca" target="_blank" rel="noopener noreferrer">Manuel Coca</a>
 
 ## Preview
 

@@ -1,6 +1,7 @@
 # Default
 
-[Default](https://obsidian.md)
+- Theme: [Default](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer">Obsidian Core Team</a>
 
 ## Preview
 

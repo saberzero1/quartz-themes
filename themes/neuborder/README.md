@@ -1,6 +1,7 @@
 # NeuBorder
 
-[NeuBorder](https://github.com/sq1000000)
+- Theme: [NeuBorder](OBSIDIAN_THEME_URL%)
+- Author: <a href="https://github.com/sq1000000" target="_blank" rel="noopener noreferrer">sq1000000</a>
 
 ## Preview
 

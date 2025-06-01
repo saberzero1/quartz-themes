@@ -1,6 +1,7 @@
 # Wombat
 
-[Wombat](#)
+- Theme: [Wombat](OBSIDIAN_THEME_URL%)
+- Author: hush-hush
 
 ## Preview
 
