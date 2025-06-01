@@ -1,9 +1,9 @@
 {
-	"name": "Modern GenZ Vibedose",
-	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "Omkar Iyer",
-	"authorUrl": "https://github.com/omkar-4",
-	"theme": true,
-	"repo": "https://github.com/omkar-4/Modern-GenZ-Vibedose"
+  "name": "Modern GenZ Vibedose",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "author": "Omkar Iyer",
+  "authorUrl": "https://github.com/omkar-4",
+  "theme": true,
+  "repo": "https://github.com/omkar-4/Modern-GenZ-Vibedose"
 }

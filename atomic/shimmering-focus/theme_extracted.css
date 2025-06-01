@@ -1113,7 +1113,6 @@ h6 {
   font-size: var(--metadata-input-font-size);
   max-height: 300px;
   padding: var(--size-4-1) var(--size-4-2);
-  padding-left: 2px;
   unicode-bidi: plaintext;
   white-space: pre-wrap;
 }

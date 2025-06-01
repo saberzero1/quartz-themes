@@ -972,8 +972,8 @@
 }
 
 :root {
-  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
-  --font-monospace: "JetBrains Mono", "Source Code Pro", monospace;
+  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
+  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 1px solid CanvasText;
@@ -3209,7 +3209,6 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: var(--list-indent-source);
-  container-type: inline-size;
   font-family: var(--font-text);
   font-size: var(--font-text-size);
 }
@@ -4567,7 +4566,6 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 }
 
 .markdown-reading-view {
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
 }
@@ -23939,7 +23937,9 @@ input.mobile-vault-chooser-field-input {
 }
 
 /*Fonts*/
+
 /* Headings (credit: https://github.com/Akifyss/obsidian-border)*/
+
 body:not(.heading-indicator-off) .markdown-rendered > :is(h1, h2, h3, h4, h5, h6) {
   position: relative;
 }
@@ -24026,12 +24026,15 @@ body.h6-divider-on
 }
 
 /* scrollbars */
+
 ::-webkit-scrollbar:horizontal {
   height: var(--scrollbar-width);
 }
 
 /* tooltip */
+
 /* links */
+
 .cm-url {
   filter: none;
 }
@@ -24055,11 +24058,13 @@ a.external-link::after {
 }
 
 /* Images  */
+
 .image-embed {
   border-radius: var(--image-radius);
 }
 
 /* tables credit: Akifyss/border */
+
 .theme-light .markdown-rendered thead tr {
   background: var(--table-header-background);
 }
@@ -24093,8 +24098,11 @@ body:not(.table-width-obsidian-default)
 }
 
 /* notice */
+
 /* callouts */
+
 /* the following callouts are from Border (https://github.com/Akifyss/obsidian-border/blob/18607ee208d56e1d4faff7419efb9cf7c9cc726e/theme.css#L7710C1-L7799C2) */
+
 .callout-style-1.theme-light {
   --callout-border-opacity: 0.25;
   --callout-border-width: 1px;
@@ -24238,6 +24246,7 @@ span.cm-hmd-frontmatter.cm-meta {
 }
 
 /* checkboxes (credit: border) */
+
 body:not(.disable-alternative-checkboxes) input[data-task="<"]:checked {
   --checkbox-color-hover: var(--color-blue);
   --checkbox-marker-color: transparent;
@@ -25028,6 +25037,7 @@ body:not(.disable-alternative-checkboxes)
 }
 
 /* style settings */
+
 .style-settings-container .themed-color-wrapper {
   display: flex;
   gap: var(--size-4-2);
@@ -25044,7 +25054,9 @@ body:not(.disable-alternative-checkboxes)
 }
 
 /* printing */
+
 /* @settings
+
 name: Appearance 
 id: Appearance 
 settings: 
@@ -25327,10 +25339,34 @@ settings:
     default-dark: '#'
   -
 */
+
 /* @settings
+
 name: Editor
 id: Editor
 settings: 
+  - 
+    id: headings 
+    title: Tabs 
+    type: heading 
+    level: 1 
+    collapsed: true 
+  - 
+    id: tab-text-color-focused-active 
+    title: Tab Focus Color 
+    type: variable-themed-color 
+    format: rgb 
+    opacity: false 
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: tab-text-color-focused-active-current
+    title: Current Tab Focus Color 
+    type: variable-themed-color 
+    format: rgb 
+    opacity: false 
+    default-light: '#'
+    default-dark: '#'
   - 
     id: headings 
     title: Headings

@@ -523,7 +523,7 @@ body {
   --r-block-margin: 20px;
   --r-code-font: var(--font-monospace-theme);
   --r-heading-color: var(--text-normal);
-  --r-heading-font: var(--font-text-theme);
+  --r-heading-font: var(--font-text-theme: );
   --r-heading-font-weight: var(--h1-weight);
   --r-heading-letter-spacing: normal;
   --r-heading-line-height: 1.2;
@@ -771,6 +771,10 @@ body {
   --theme-color-baseTransparent35: hsl(from var(--theme-color-base) h s l / 0.35);
   --theme-color-baseTransparent50: hsl(from var(--theme-color-base) h s l / 0.5);
   --theme-color-baseTransparent75: hsl(from var(--theme-color-base) h s l / 0.75);
+  --theme-color-calendarBg: light-dark(
+    var(--theme-color-baseLightened85),
+    var(--theme-color-baseDarkened80)
+  );
   --theme-color-cardBg: var(--background-primary);
   --theme-color-control: light-dark(
     var(--theme-color-baseDarkened70),
@@ -826,6 +830,14 @@ body {
   );
   --theme-color-tabBgInactiveHover: var(--theme-color-baseTransparent75);
   --theme-color-tableHeaderBg: var(--theme-color-baseTransparent12);
+  --theme-color-tabNavActiveBg: light-dark(
+    var(--theme-color-baseLightened70),
+    var(--theme-color-baseDarkened70)
+  );
+  --theme-color-tabNavBg: light-dark(
+    var(--theme-color-baseLightened60),
+    var(--theme-color-baseDarkened60)
+  );
   --theme-gradient-bottomToTop: linear-gradient(
     0deg,
     var(--theme-color-gradientBottom) 0%,
@@ -1927,7 +1939,6 @@ svg.svg-icon {
   --theme-color-blockId: var(--theme-color-baseDarkened25);
   --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
   --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
-  --theme-color-calendarBg: var(--theme-color-baseDarkened80);
   --theme-color-calendarDayBg: var(--theme-color-darkenTransparent50);
   --theme-color-communityItemBg: var(--theme-color-baseDarkened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -2006,7 +2017,6 @@ svg.svg-icon {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   --theme-color-suggestionBg: var(--theme-color-baseDarkened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseDarkened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.05),
@@ -2171,7 +2181,6 @@ svg.svg-icon {
   --theme-color-blockId: var(--theme-color-baseLightened25);
   --theme-color-blueDarkened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5));
   --theme-color-blueLightened: hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5));
-  --theme-color-calendarBg: var(--theme-color-baseLightened80);
   --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -2260,7 +2269,6 @@ svg.svg-icon {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseLightened70);
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.02),

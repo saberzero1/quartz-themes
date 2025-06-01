@@ -1,6 +1,6 @@
 :root {
-  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
-  --font-monospace: "JetBrains Mono", "Source Code Pro", monospace;
+  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
+  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 1px solid CanvasText;
