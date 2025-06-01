@@ -332,8 +332,6 @@ html {
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
-  //background-color: var(--background-primary);
-
   //%%WORKSPACE BACKGROUND ROOT%%
 
   section,
@@ -342,20 +340,8 @@ body {
     &.left:has(.explorer),
     &.right {
 
-      //%%WORKSPACE BACKGROUND SIDEBARS%%
+      //%%WORKSPACE BACKGROUND ROOT%%
 
-      //%%WORKSPACE SEPARATOR BORDER WIDTH%%
-
-      //%%WORKSPACE SEPARATOR BORDER COLOR%%
-
-    }
-
-    @media all and not ($desktop) {
-      &.right {
-
-        //%%WORKSPACE BACKGROUND ROOT%%
-
-      }
     }
   }
 
@@ -708,7 +694,7 @@ body {
         & > svg {
           opacity: 0.001;
         }
-        &:before {
+        &:before:not(:has(> .folder-outer.open)) {
           display: inline-block;
           width: 16px;
           height: 16px;
@@ -719,7 +705,7 @@ body {
           content: '';
           mask-image: var(--folder-closed-icon);
           -webkit-mask-image: var(--folder-closed-icon);
-          &:has(> .folder-outer.open) {
+          &:before:has(> .folder-outer.open) {
             mask-image: var(--folder-open-icon);
             -webkit-mask-image: var(--folder-open-icon);
           }
@@ -756,6 +742,9 @@ body {
 
             //%%EXPLORER FILE TITLE ACTIVE%%
 
+          }
+          &[data-for$="/index"] {
+            padding-left: 8px;
           }
         }
       }
