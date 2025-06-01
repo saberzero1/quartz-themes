@@ -1,6 +1,6 @@
 # Myst
 
-- Theme: [Myst](OBSIDIAN_THEME_URL%)
+- Theme: Myst
 - Author: <a href="https://github.com/mulder3062" target="_blank" rel="noopener noreferrer">mulder3062</a>
 
 ## Preview

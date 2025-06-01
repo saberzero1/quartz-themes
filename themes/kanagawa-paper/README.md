@@ -1,6 +1,6 @@
 # Kanagawa Paper
 
-- Theme: [Kanagawa Paper](OBSIDIAN_THEME_URL%)
+- Theme: Kanagawa Paper
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

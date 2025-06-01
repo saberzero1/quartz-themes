@@ -1,6 +1,6 @@
 # Mint-Breeze
 
-- Theme: [Mint-Breeze](OBSIDIAN_THEME_URL%)
+- Theme: Mint-Breeze
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

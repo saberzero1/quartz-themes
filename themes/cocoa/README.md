@@ -1,6 +1,6 @@
 # cocoa
 
-- Theme: [cocoa](OBSIDIAN_THEME_URL%)
+- Theme: cocoa
 - Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview

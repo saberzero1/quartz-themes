@@ -1,6 +1,6 @@
 # Big & Bold
 
-- Theme: [Big & Bold](OBSIDIAN_THEME_URL%)
+- Theme: Big & Bold
 - Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview

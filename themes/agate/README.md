@@ -1,6 +1,6 @@
 # Agate
 
-- Theme: [Agate](OBSIDIAN_THEME_URL%)
+- Theme: Agate
 - Author: solmi
 
 ## Preview

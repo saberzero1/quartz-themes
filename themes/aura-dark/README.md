@@ -1,6 +1,6 @@
 # Aura Dark
 
-- Theme: [Aura Dark](OBSIDIAN_THEME_URL%)
+- Theme: Aura Dark
 - Author: <a href="https://github.com/Possibly-Matt/obsidian-aura-theme" target="_blank" rel="noopener noreferrer">ProbablyNot</a>
 
 ## Preview

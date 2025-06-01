@@ -1,6 +1,6 @@
 # Flexoki Warm
 
-- Theme: [Flexoki Warm](OBSIDIAN_THEME_URL%)
+- Theme: Flexoki Warm
 - Author: @ofalvai
 
 ## Preview

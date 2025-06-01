@@ -1,6 +1,6 @@
 # WiseLight
 
-- Theme: [WiseLight](OBSIDIAN_THEME_URL%)
+- Theme: WiseLight
 - Author: Learnerfvs
 
 ## Preview

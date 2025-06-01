@@ -1,6 +1,6 @@
 # Transparent
 
-- Theme: [Transparent](OBSIDIAN_THEME_URL%)
+- Theme: Transparent
 - Author: <a href="https://github.com/Oczko24" target="_blank" rel="noopener noreferrer">Oczko24</a>
 
 ## Preview

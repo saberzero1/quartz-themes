@@ -1,6 +1,6 @@
 # Dawn
 
-- Theme: [Dawn](OBSIDIAN_THEME_URL%)
+- Theme: Dawn
 - Author: min
 
 ## Preview

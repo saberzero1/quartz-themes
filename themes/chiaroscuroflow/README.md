@@ -1,6 +1,6 @@
 # chiaroscuroflow
 
-- Theme: [chiaroscuroflow](OBSIDIAN_THEME_URL%)
+- Theme: chiaroscuroflow
 - Author: <a href="https://github.com/Quinta0" target="_blank" rel="noopener noreferrer">Quinta0</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # flexcyon
 
-- Theme: [flexcyon](OBSIDIAN_THEME_URL%)
+- Theme: flexcyon
 - Author: bladeacer
 
 ## Preview

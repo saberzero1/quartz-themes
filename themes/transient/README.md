@@ -1,6 +1,6 @@
 # Transient
 
-- Theme: [Transient](OBSIDIAN_THEME_URL%)
+- Theme: Transient
 - Author: <a href="https://georgeazma.github.io" target="_blank" rel="noopener noreferrer">GeorgeAzma</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Obsidian Boom
 
-- Theme: [Obsidian Boom](OBSIDIAN_THEME_URL%)
+- Theme: Obsidian Boom
 - Author: Sainadh
 
 ## Preview

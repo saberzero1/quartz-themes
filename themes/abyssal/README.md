@@ -1,6 +1,6 @@
 # Abyssal
 
-- Theme: [Abyssal](OBSIDIAN_THEME_URL%)
+- Theme: Abyssal
 - Author: tazpellegrini
 
 ## Preview

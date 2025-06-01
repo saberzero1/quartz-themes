@@ -1,6 +1,6 @@
 # Sodalite
 
-- Theme: [Sodalite](OBSIDIAN_THEME_URL%)
+- Theme: Sodalite
 - Author: <a href="https://twitter.com/tomzorz_" target="_blank" rel="noopener noreferrer">tomzorz</a>
 
 ## Preview

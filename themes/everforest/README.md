@@ -1,6 +1,6 @@
 # Everforest
 
-- Theme: [Everforest](OBSIDIAN_THEME_URL%)
+- Theme: Everforest
 - Author: MrGlitchByte
 
 ## Preview

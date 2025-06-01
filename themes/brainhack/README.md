@@ -1,6 +1,6 @@
 # Brainhack
 
-- Theme: [Brainhack](OBSIDIAN_THEME_URL%)
+- Theme: Brainhack
 - Author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
 
 ## Preview

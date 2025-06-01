@@ -1,6 +1,6 @@
 # Comfort Dark
 
-- Theme: [Comfort Dark](OBSIDIAN_THEME_URL%)
+- Theme: Comfort Dark
 - Author: Ooopz
 
 ## Preview

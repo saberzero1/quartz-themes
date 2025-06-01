@@ -1,6 +1,6 @@
 # Sandover
 
-- Theme: [Sandover](OBSIDIAN_THEME_URL%)
+- Theme: Sandover
 - Author: <a href="https://github.com/eliz-abeth" target="_blank" rel="noopener noreferrer">eliz-abeth</a>
 - Support the author: <a href="http://ko-fi.com/eliz0beth" target="_blank" rel="noopener noreferrer">Donate</a>
 

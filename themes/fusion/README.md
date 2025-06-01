@@ -1,6 +1,6 @@
 # Fusion
 
-- Theme: [Fusion](OBSIDIAN_THEME_URL%)
+- Theme: Fusion
 - Author: <a href="https://github.com/zamsyt" target="_blank" rel="noopener noreferrer">zamsyt</a>
 
 ## Preview

@@ -1,6 +1,6 @@
 # Things 3
 
-- Theme: [Things 3](OBSIDIAN_THEME_URL%)
+- Theme: Things 3
 - Author: <a href="https://medium.com/@paralloid" target="_blank" rel="noopener noreferrer">Denis Volkov</a>
 
 ## Preview

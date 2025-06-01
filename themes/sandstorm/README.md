@@ -1,6 +1,6 @@
 # Sandstorm
 
-- Theme: [Sandstorm](OBSIDIAN_THEME_URL%)
+- Theme: Sandstorm
 - Author: <a href="https://github.com/jaysan0" target="_blank" rel="noopener noreferrer">jaysan0</a>
 
 ## Preview

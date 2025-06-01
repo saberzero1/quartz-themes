@@ -1,6 +1,6 @@
 # Solarized
 
-- Theme: [Solarized](OBSIDIAN_THEME_URL%)
+- Theme: Solarized
 - Author: <a href="https://github.com/harmtemolder" target="_blank" rel="noopener noreferrer">harmtemolder</a>
 
 ## Preview

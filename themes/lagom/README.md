@@ -1,6 +1,6 @@
 # Lagom
 
-- Theme: [Lagom](OBSIDIAN_THEME_URL%)
+- Theme: Lagom
 - Author: Leslyecream
 
 ## Preview

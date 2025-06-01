@@ -1,6 +1,6 @@
 # Borealis
 
-- Theme: [Borealis](OBSIDIAN_THEME_URL%)
+- Theme: Borealis
 - Author: <a href="https://github.com/juanchiparra" target="_blank" rel="noopener noreferrer">@juanchiparra</a>
 
 ## Preview

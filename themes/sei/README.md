@@ -1,6 +1,6 @@
 # Sei
 
-- Theme: [Sei](OBSIDIAN_THEME_URL%)
+- Theme: Sei
 - Author: <a href="https://github.com/iwa" target="_blank" rel="noopener noreferrer">iwa</a>
 
 ## Preview

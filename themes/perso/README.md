@@ -1,6 +1,6 @@
 # Perso
 
-- Theme: [Perso](OBSIDIAN_THEME_URL%)
+- Theme: Perso
 - Author: <a href="https://blog.behrouze.com" target="_blank" rel="noopener noreferrer">Behrouze</a>
 
 ## Preview

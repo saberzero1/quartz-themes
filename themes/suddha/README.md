@@ -1,6 +1,6 @@
 # Suddha
 
-- Theme: [Suddha](OBSIDIAN_THEME_URL%)
+- Theme: Suddha
 - Author: dxcore35
 
 ## Preview

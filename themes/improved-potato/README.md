@@ -1,6 +1,6 @@
 # Improved Potato
 
-- Theme: [Improved Potato](OBSIDIAN_THEME_URL%)
+- Theme: Improved Potato
 - Author: <a href="https://dmeurer.github.io/" target="_blank" rel="noopener noreferrer">Dominik Meurer</a>
 
 ## Preview

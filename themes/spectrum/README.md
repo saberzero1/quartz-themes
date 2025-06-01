@@ -1,6 +1,6 @@
 # Spectrum
 
-- Theme: [Spectrum](OBSIDIAN_THEME_URL%)
+- Theme: Spectrum
 - Author: Wiktoria Mielcarek
 
 ## Preview

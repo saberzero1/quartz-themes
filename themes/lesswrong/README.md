@@ -1,6 +1,6 @@
 # LessWrong
 
-- Theme: [LessWrong](OBSIDIAN_THEME_URL%)
+- Theme: LessWrong
 - Author: <a href="https://x.com/arithmoquine" target="_blank" rel="noopener noreferrer">henry</a>
 
 ## Preview

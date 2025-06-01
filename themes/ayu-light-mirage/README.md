@@ -1,6 +1,6 @@
 # Ayu Light & Mirage
 
-- Theme: [Ayu Light & Mirage](OBSIDIAN_THEME_URL%)
+- Theme: Ayu Light & Mirage
 - Author: <a href="https://taronull.substack.com" target="_blank" rel="noopener noreferrer">Taro</a>
 - Support the author: <a href="https://buymeacoffee.com/taronull" target="_blank" rel="noopener noreferrer">Donate</a>
 

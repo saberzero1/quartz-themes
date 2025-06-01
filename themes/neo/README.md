@@ -1,6 +1,6 @@
 # Neo
 
-- Theme: [Neo](OBSIDIAN_THEME_URL%)
+- Theme: Neo
 - Author: <a href="https://github.com/x0aa7i" target="_blank" rel="noopener noreferrer">ABDO</a>
 
 ## Preview
