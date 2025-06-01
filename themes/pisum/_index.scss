@@ -1579,7 +1579,7 @@ body {
         & > svg {
           opacity: 0.001;
         }
-        &:before:not(:has(> .folder-outer.open)) {
+        &:not(:has(> .folder-outer.open)):before {
           display: inline-block;
           width: 16px;
           height: 16px;
@@ -1590,7 +1590,7 @@ body {
           content: "";
           mask-image: var(--folder-closed-icon);
           -webkit-mask-image: var(--folder-closed-icon);
-          &:before:has(> .folder-outer.open) {
+          &:has(> .folder-outer.open):before {
             mask-image: var(--folder-open-icon);
             -webkit-mask-image: var(--folder-open-icon);
           }
