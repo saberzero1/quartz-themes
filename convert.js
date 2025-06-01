@@ -281,30 +281,30 @@ manifestCollection.forEach((manifest) => {
     themeCSS,
     "background-color",
   )
-  resultCSS = applyRuleToString(
+  /*resultCSS = applyRuleToString(
     resultCSS,
     ".workspace-split",
     "//%%WORKSPACE BACKGROUND SIDEBARS%%",
     //".workspace-tabs .workspace-leaf",
     themeCSS,
     "background-color",
-  )
+  )*/
 
   // Separator borders
-  resultCSS = applyRuleToString(
+  /*resultCSS = applyRuleToString(
     resultCSS,
     ".workspace-leaf-resize-handle",
     "//%%WORKSPACE SEPARATOR BORDER COLOR%%",
     themeCSS,
     "border-color",
-  )
-  resultCSS = applyRuleToString(
+  )*/
+  /*resultCSS = applyRuleToString(
     resultCSS,
     ".workspace-leaf-resize-handle",
     "//%%WORKSPACE SEPARATOR BORDER WIDTH%%",
     themeCSS,
     "border-width",
-  )
+  )*/
 
   // Heading links
   resultCSS = applyRuleToString(resultCSS, "h1 a", "//%%H1 A%%", themeCSS)
