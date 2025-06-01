@@ -26,6 +26,8 @@ import {
   applyRuleToString,
 } from "./util/util.mjs"
 import { themes, usedRules } from "./config.mjs"
+import * as prune from "./util/prune-unused.mjs"
+import * as postcss from "postcss"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -785,6 +787,12 @@ manifestCollection.forEach((manifest) => {
 })
 
 console.info("All themes processed successfully.")
+
+console.info("Removing unused CSS variables...")
+// Use PostCSS to call prune to remove unused CSS variables
+postcss([prune()])
+
+console.info("Finding unused CSS variables...")
 
 // Rebuild README.md
 console.log("Updating compatibility table...")
