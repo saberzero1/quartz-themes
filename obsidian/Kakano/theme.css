@@ -739,9 +739,9 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
   --base-l: 50%;
 }
 /* #endregion */
+/* #region   Base colour variants */
 
 body {
-  /*  Base colour variants */
   --theme-color-baseLightened95: color-mix(
     in srgb,
     var(--theme-color-base),
@@ -811,8 +811,8 @@ body {
   --theme-color-darkenTransparent06: hsl(from black h s l / 0.25);
   --theme-color-darkenTransparent12: hsl(from black h s l / 0.12);
   --theme-color-darkenTransparent06: hsl(from black h s l / 0.06);
-
-  /* Gradients */
+  /* #endregion */
+  /* #region   Gradients */
   --theme-gradient-topToBottom: linear-gradient(
     0deg,
     var(--theme-color-gradientTop) 0%,
@@ -841,8 +841,8 @@ body {
   /* 0 for flat colour with no gradient. 1 for extreme gradient. Default to 0.2, */
   --theme-value-gradientContrast: 0.2;
 }
-
-/* Hues derived from base color */
+/* #endregion */
+/* #region   Hues derived from base color */
 .theme-light,
 .theme-dark {
   --color-red: hsl(from var(--theme-color-base) 356 s l);
@@ -945,7 +945,6 @@ body {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redDarkened);
   --theme-color-blockId: var(--theme-color-baseLightened25);
-  --theme-color-calendarBg: var(--theme-color-baseLightened80);
   --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -991,7 +990,6 @@ body {
   --theme-color-settingsGroupBg: var(--theme-color-lightenTransparent50);
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseLightened70);
   --theme-color-tagHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.02),
@@ -1156,7 +1154,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redLightened);
   --theme-color-blockId: var(--theme-color-baseDarkened25);
-  --theme-color-calendarBg: var(--theme-color-baseDarkened80);
   --theme-color-calendarDayBg: var(--theme-color-darkenTransparent50);
   --theme-color-communityItemBg: var(--theme-color-baseDarkened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -1202,7 +1199,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-settingsGroupBg: var(--theme-color-darkenTransparent50);
   --theme-color-suggestionBg: var(--theme-color-baseDarkened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
-  --theme-color-tabNavBg: var(--theme-color-baseDarkened70);
   --theme-color-tagHover: hsl(
     var(--accent-h),
     calc(var(--accent-s) * 1.05),
@@ -1299,6 +1295,11 @@ body.theme-dark.theme-setting-customGradient {
 /* #endregion */
 /* #region   Light/dark modes */
 body {
+  --theme-color-calendarBg: light-dark(
+    var(--theme-color-baseLightened85),
+    var(--theme-color-baseDarkened80)
+  );
+
   --theme-color-control: light-dark(
     var(--theme-color-baseDarkened70),
     var(--theme-color-baseLightened60)
@@ -1332,6 +1333,14 @@ body {
     var(--theme-color-baseDarkened60)
   );
   --theme-color-navigationButtonBgHover: light-dark(
+    var(--theme-color-baseLightened70),
+    var(--theme-color-baseDarkened70)
+  );
+  --theme-color-tabNavBg: light-dark(
+    var(--theme-color-baseLightened60),
+    var(--theme-color-baseDarkened60)
+  );
+  --theme-color-tabNavActiveBg: light-dark(
     var(--theme-color-baseLightened70),
     var(--theme-color-baseDarkened70)
   );
@@ -3189,7 +3198,6 @@ body.mod-windows {
 .mod-linux {
 }
 /* #endregion */
-
 /* #region   Tabs */
 .workspace-tabs .workspace-leaf {
   background: transparent;
@@ -3229,16 +3237,73 @@ body.mod-windows {
     opacity: var(--icon-opacity);
   }
 }
-/* Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
+/* #endregion */
+/* #region   Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
 .theme-setting-distinguishNonContentTabs {
-  .workspace-tab-header[data-type="calendar"]:not(.is-active),
-  .workspace-tab-header[data-type="webviewer"]:not(.is-active),
-  .workspace-tab-header[data-type="graph"]:not(.is-active),
-  .workspace-tab-header[data-type="localgraph"]:not(.is-active),
-  .workspace-tab-header[data-type="map"]:not(.is-active) {
+  .workspace-tab-header[data-type="bases"],
+  .workspace-tab-header[data-type="calendar"],
+  .workspace-tab-header[data-type="graph"],
+  .workspace-tab-header[data-type="localgraph"],
+  .workspace-tab-header[data-type="map"],
+  .workspace-tab-header[data-type="webviewer"] {
     background-color: var(--theme-color-tabNavBg);
+
+    &:before,
+    &:after {
+      background-color: var(--theme-color-tabNavBg);
+      box-shadow:
+        inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color),
+        0 0 0 calc(var(--tab-curve) * 4) var(--theme-color-tabNavBg);
+    }
+  }
+  .workspace-tab-header[data-type="bases"].is-active,
+  .workspace-tab-header[data-type="calendar"].is-active,
+  .workspace-tab-header[data-type="graph"].is-active,
+  .workspace-tab-header[data-type="localgraph"].is-active,
+  .workspace-tab-header[data-type="map"].is-active,
+  .workspace-tab-header[data-type="webviewer"].is-active {
+    background-color: var(--theme-color-tabNavActiveBg);
+
+    &:before,
+    &:after {
+      background-color: var(--theme-color-tabNavActiveBg);
+      box-shadow:
+        inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color),
+        0 0 0 calc(var(--tab-curve) * 4) var(--theme-color-tabNavActiveBg);
+    }
   }
 }
+.workspace-leaf-content[data-type="bases"],
+.workspace-leaf-content[data-type="calendar"],
+.workspace-leaf-content[data-type="graph"],
+.workspace-leaf-content[data-type="localgraph"],
+.workspace-leaf-content[data-type="map"],
+.workspace-leaf-content[data-type="webviewer"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="bases"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="calendar"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="graph"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="localgraph"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="map"],
+.is-focused .workspace-leaf.mod-active .workspace-leaf-content[data-type="webviewer"] {
+  .view-header {
+    background-color: var(--theme-color-tabNavActiveBg);
+    border-bottom: none;
+
+    .mod-fade:after {
+      display: none;
+    }
+  }
+}
+/* #endregion */
+
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--tab-text-color-active);
+  display: block;
+}
+.is-focused .workspace-leaf.mod-active .view-header-title {
+  color: var(--tab-text-color-focused-active-current);
+}
+
 .is-mobile .mod-root .workspace-tab-header-container {
   min-height: 44px;
 }
@@ -4136,7 +4201,8 @@ button.search-result-file-match-replace-button {
 /* #endregion */
 /* #region     Lightweight buttons */
 .search-result-file-match-destination-file,
-.text-icon-button {
+.text-icon-button,
+.query-toolbar .query-toolbar-item.mod-views .text-icon-button {
   border: none;
   box-shadow: var(--theme-shadow-control);
   background-color: var(--theme-color-controlBgLowWeight);
@@ -4147,16 +4213,22 @@ button.search-result-file-match-replace-button {
   padding: 0.25em 0.5em;
 }
 .search-result-file-match-destination-file:focus,
-.text-icon-button:focus {
+.text-icon-button:focus,
+.query-toolbar .query-toolbar-item.mod-views .text-icon-button:focus {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
   outline: none;
 }
 @media (hover: hover) {
   .search-result-file-match:hover .search-result-file-match-destination-file:hover,
-  .text-icon-button:hover {
+  .text-icon-button:hover,
+  .query-toolbar .query-toolbar-item.mod-views .text-icon-button:hover {
     border: none;
     background: var(--theme-color-controlBgHover);
     color: var(--theme-color-controlTextHover);
+
+    .text-button-icon {
+      color: var(--theme-color-controlTextHover);
+    }
   }
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover
@@ -5478,6 +5550,15 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
   overflow-y: visible;
 }
 /* #endregion */
+/* #region   Core Plugin: Bases */
+.bases-header {
+  background-color: var(--theme-color-tabNavActiveBg);
+
+  .query-toolbar .query-toolbar-item.mod-views {
+    overflow: visible;
+  }
+}
+/* #endregion */
 /* #region   Core Plugin: Bookmarks */
 
 .view-action.mod-bookmark {
@@ -5837,7 +5918,7 @@ body {
   --r-code-font: var(--font-monospace-theme);
   --r-heading-color: var(--text-normal);
   --r-heading-font-weight: var(--h1-weight);
-  --r-heading-font: var(--font-text-theme);
+  --r-heading-font: var(--font-text-theme: );
   --r-heading-letter-spacing: normal;
   --r-heading-line-height: 1.2;
   --r-heading-margin: 0.67em 0 0 0;
@@ -6043,6 +6124,13 @@ body.theme-setting-overrideAdvancedTables {
 /* #region   Community Plugin: Calendar */
 body.theme-setting-overrideCalendar {
   .workspace-leaf-content[data-type="calendar"] {
+    .view-content {
+      background-color: var(--theme-color-tabNavActiveBg);
+
+      .mod-fade:after {
+        display: none;
+      }
+    }
     .container {
       border-radius: 1rem;
     }
