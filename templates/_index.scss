@@ -1032,6 +1032,10 @@ body {
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
+
+  /* override user-select */
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 :root[saved-theme="light"] {
