@@ -130,8 +130,9 @@
 
 /* --------- fonts ---------- */
 body {
-  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
-    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-default:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
+    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-text: var(--font-default);
   --font-monospace-default: "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-bold: 500;
@@ -663,7 +664,8 @@ div.nav-header {
 }
 .sans,
 .sans .cm-sizer {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
     sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
 .mono,

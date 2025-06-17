@@ -23,8 +23,8 @@ body {
   --background-modifier-hover: var(--color-user-request);
   --indentation-guide-color: #ffffff30;
   /*Fonts*/
-  --font-monospace-theme: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
-    "Roboto Mono", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
 
   /*Headings*/
   --text-title-h1: #ff79c6;

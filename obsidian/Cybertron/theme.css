@@ -55,8 +55,9 @@
   /* Usage of preferred monospace font */
   /* --font-monospace-theme: Menlo, SFMono-Regular, Consolas, "JetBrains Mono",
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace; */
-  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
-    SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda", SFMono-Regular, "Roboto Mono",
+    "Source Code Pro", monospace;
   --scrollbar-bg: rgba(20, 20, 20, 0);
   --scrollbar-thumb-bg: #595959;
   --background-modifier-error: #36393f;

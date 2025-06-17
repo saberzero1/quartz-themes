@@ -71,8 +71,9 @@ __Github repo: https://github.com/frank0713/nightingale-obsidian
 /* Font variables and settings */
 body {
   /* font family */
-  --default-font: "Avenir", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik", Roboto,
-    sans-serif, sans-serif;
+  --default-font:
+    "Avenir", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik", Roboto, sans-serif,
+    sans-serif;
   --default-font-size: 18px;
   --body-font-weight: 450;
   --tag-font-family: "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;

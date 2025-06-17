@@ -4,8 +4,9 @@
 
 /* basic variables --- the first certain design choices */
 body {
-  --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+  --font-default:
+    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   --text-on-accent: white !important;
   --modal-border-color: var(--background-modifier-border) !important;
   --collapse-icon-color-collapsed: var(--text-muted) !important;

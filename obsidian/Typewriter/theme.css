@@ -240,8 +240,8 @@ body {
 body {
   --font-text-theme: "iA Writer Quattro S";
   --font-interface-theme: var(--font-text-theme);
-  --font-editor-theme: "iA Writer Mono", "iA Writer Mono V", var(--font-text-theme),
-    var(--font-text-override);
+  --font-editor-theme:
+    "iA Writer Mono", "iA Writer Mono V", var(--font-text-theme), var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
 
   --metadata-input-font-size: var(--font-small);

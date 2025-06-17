@@ -239,16 +239,19 @@
 
 body {
   /* Polka Dots */
-  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  --polka-dots:
+    radial-gradient(var(--color-accent) 15%, transparent 25%),
     radial-gradient(var(--color-accent) 17.5%, transparent 25%);
   --ribbon-border: none;
 
   /* Font Defaults */
-  --font-default: "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif, -apple-system,
+  --font-default:
+    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-interface-theme: var(--font-default);
-  --font-monospace-default: "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
-    SFMono-Regular, Consolas, "Source Code Pro", monospace;
+  --font-monospace-default:
+    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas,
+    "Source Code Pro", monospace;
   --inline-title-size: 1.625em;
   --h1-size: 1.5em;
   --h2-size: 1.375em;

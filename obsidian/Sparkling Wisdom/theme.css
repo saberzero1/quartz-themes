@@ -112,9 +112,10 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
   font-display: swap;
 }
 :root {
-  --default-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+  --default-font:
+    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
+    sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Source Code Pro", monospace;

@@ -174,8 +174,8 @@ html,
 body {
   font-size: 20px !important;
   color: var(--text-normal);
-  --font-headings: "Source Serif Pro", "Source Serif 4", "Source Serif", "Rockwell", "New York",
-    serif;
+  --font-headings:
+    "Source Serif Pro", "Source Serif 4", "Source Serif", "Rockwell", "New York", serif;
   --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
   --font-monospace: MonoLisa, "Source Code Pro", monospace;
 

@@ -501,8 +501,8 @@
 }
 
 body {
-  --embed-block-shadow-hover: 0 0 0 0 var(--background-modifier-border),
-    inset 0 0 0 0 var(--background-modifier-border);
+  --embed-block-shadow-hover:
+    0 0 0 0 var(--background-modifier-border), inset 0 0 0 0 var(--background-modifier-border);
 }
 
 body {

@@ -442,9 +442,11 @@ body {
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
@@ -614,9 +616,11 @@ body {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
@@ -800,11 +804,8 @@ body {
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
-  --background-underlying-CSS-light: radial-gradient(
-      100% 100% at 13% 50%,
-      rgb(90, 109, 237) 0%,
-      rgb(224, 218, 247) 100%
-    ),
+  --background-underlying-CSS-light:
+    radial-gradient(100% 100% at 13% 50%, rgb(90, 109, 237) 0%, rgb(224, 218, 247) 100%),
     linear-gradient(
       6deg,
       rgb(235, 242, 252) 0%,
@@ -826,7 +827,8 @@ body {
     ),
     radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
     radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
-  --background-underlying-CSS-dark: linear-gradient(
+  --background-underlying-CSS-dark:
+    linear-gradient(
       317deg,
       rgb(112, 55, 205) 0%,
       rgb(29, 12, 32) 19%,
@@ -1330,7 +1332,8 @@ body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-root-split-backg
 /* ====== Layout ===== */
 /* default Layout*/
 body {
-  --card-shadow-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --card-shadow-light:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
@@ -1866,7 +1869,8 @@ body {
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
-  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --shadow-activated-tab-header-light:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --background-activated-tab-header-dark: var(--background-modifier-active-hover);
   --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
@@ -3888,10 +3892,12 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+  --toggle-thumb-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
     inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+  --toggle-thumb-enabled-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
     inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
 
   --toggle-track-color: var(--toggle-track-color-light);
@@ -3901,10 +3907,12 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
   --toggle-track-shadow: var(--toggle-track-shadow-light);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
-    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
-  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
-    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary),
+    0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary),
+    0px 2px 4px rgba(0, 0, 0, 0.04);
 
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
@@ -3914,12 +3922,14 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
   --input-shadow-hover: var(--input-shadow-hover-light);
 
   --input-radius-light: 5px;
-  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
-  --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-light:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.24),
+    inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-hover-light:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.24),
+    inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
 }
 
 .theme-dark {
@@ -3930,11 +3940,13 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-dark);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-dark);
-  --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.6),
+  --toggle-thumb-shadow-dark:
+    0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.6),
     inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 6px rgba(0, 0, 0, 0.25),
     inset 0px 4px 4px #ffffff;
-  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+  --toggle-thumb-enabled-shadow-dark:
+    0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
     inset 0px -4px 6px hsla(var(--interactive-accent-hsl), 0.5), inset 0px 4px 4px #ffffff;
 
   --toggle-track-color: var(--toggle-track-color-dark);
@@ -3944,10 +3956,12 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
   --toggle-track-shadow: var(--toggle-track-shadow-dark);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-dark);
-  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
-    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
-  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2),
-    inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px var(--background-modifier-border);
+  --toggle-track-shadow-dark:
+    inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4),
+    0px 0px 0px 1px var(--background-modifier-border);
+  --toggle-track-hovered-shadow-dark:
+    inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4),
+    0px 0px 0px 1px var(--background-modifier-border);
 
   --interactive-normal: hsl(
     var(--accent-h),
@@ -3965,10 +3979,12 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
   --input-shadow-hover: var(--input-shadow-hover-dark);
 
   --input-radius-dark: 5px;
-  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+  --input-shadow-dark:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
     0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
     inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
-  --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
+  --input-shadow-hover-dark:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32),
     0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12),
     inset 0px 1px 0.75px rgba(255, 255, 255, 0.16), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
 }

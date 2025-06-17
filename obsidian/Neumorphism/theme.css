@@ -20,7 +20,8 @@ body {
   --background: light-dark(var(--light-background), var(--dark-background));
 
   --floating-background: var(--background);
-  --box-shadow: calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
+  --box-shadow:
+    calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
     calc(var(--gap) / 2 * -1) calc(var(--gap) / 2 * -1) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-second), var(--dark-shadow-second));

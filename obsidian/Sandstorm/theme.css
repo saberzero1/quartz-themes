@@ -1166,8 +1166,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
@@ -1723,13 +1723,17 @@ body {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --hr-color: #b53f2a;
   --tag-background: #ebca97;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 .theme-dark {
@@ -1780,15 +1784,17 @@ body {
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --hr-color: #782a1d;
   --text-selection: #782b1d52;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -1905,25 +1911,27 @@ iframe {
   --default-font: "Source Code Pro";
 }
 body {
-  --font-default: ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --font-monospace-default: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-default:
+    ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace-default:
+    ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono",
+    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme), var(--default-font, "??"),
+    var(--font-default);
   --font-text-override: "??";
   --font-text-theme: "??";
   --font-text: var(--font-text-override), var(--font-text-theme), var(--font-interface);
   --font-print-override: "??";
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override), var(--font-text-theme), "Arial";
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default);
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
 }
@@ -9595,8 +9603,8 @@ a {
   text-decoration-line: var(--link-external-decoration);
   background-position: center right;
   background-repeat: no-repeat;
-  background-image: linear-gradient(transparent, transparent),
-    url(public/images/874d8b8e340f75575caa.svg);
+  background-image:
+    linear-gradient(transparent, transparent), url(public/images/874d8b8e340f75575caa.svg);
   background-size: 13px;
   padding-right: 16px;
   background-position-y: 4px;
