@@ -33,7 +33,7 @@ jobs:
       - name: "Install npm dependencies"
         run: npm ci
       - name: "Check style"
-        run: npm run --silent verify
+        run: npm run --silent verify --ignore-path "./.prettiercompileignore"
       - name: "Copy current lists"
         run: |
           cp quartz-syncer-file-list.json quartz-syncer-file-list-old.json
