@@ -13,7 +13,7 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
 
 ### GitHub Actions (Recommended)
 
-Add the following linte to your `deploy.yml` before the `permissions` section:
+Add the following lines to your `deploy.yml` before the `permissions` section:
 
 ```yaml
 env:
