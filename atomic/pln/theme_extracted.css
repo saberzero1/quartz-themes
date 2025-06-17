@@ -44,13 +44,16 @@ body {
   --background-secondary: var(--color-base-20);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
+  --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: var(--table-border-color);
-  --bases-table-cell-background-active: var(--background-modifier-hover);
+  --bases-table-cell-background-active: var(--background-primary);
   --bases-table-cell-background-disabled: var(--background-modifier-cover);
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--interactive-accent);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -59,12 +62,14 @@ body {
   --bases-table-header-background: var(--background-primary);
   --bases-table-header-background-hover: var(--background-modifier-hover);
   --bases-table-header-color: var(--text-muted);
+  --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
     black var(--size-4-6)
   );
   --bases-table-header-weight: var(--font-weight);
+  --bases-table-row-background-hover: var(--table-row-background-hover);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
   --bases-table-text-size: var(--font-smaller);
@@ -192,7 +197,7 @@ body {
   --file-header-font-weight: 400;
   --file-header-justify: center;
   --file-line-width: 700px;
-  --file-margins: 20px;
+  --file-margins: 2px;
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
   --font-black: 900;
@@ -590,7 +595,7 @@ body {
   --tab-stacked-font-size: var(--font-ui-small);
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 20px;
-  --tab-stacked-pane-width: 700px;
+  --tab-stacked-pane-width: 100%;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
   --tab-stacked-text-align: right;
   --tab-stacked-text-transform: rotate(180deg);
@@ -702,17 +707,25 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: var(--background-primary);
+  border-left: 2px solid rgb(var(--pln-cards-color-rgb));
+  border-right: 2px solid rgb(var(--pln-cards-color-rgb));
+  border-top: 4px solid rgb(var(--pln-cards-color-rgb));
   caret-color: var(--caret-color);
   color: var(--text-normal);
   contain: initial;
+  display: none;
   font-family: var(--font-interface);
   font-size: var(--font-ui-medium);
   height: 100%;
+  letter-spacing: 1px;
   line-height: var(--line-height-tight);
   margin: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
   overflow: initial;
   overscroll-behavior: none;
   padding: 0;
+  padding-left: 2px;
   padding-top: 0;
   text-rendering: optimizeLegibility;
   user-select: none;
@@ -1078,11 +1091,9 @@ h6 {
 }
 
 .metadata-input-longtext {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--metadata-input-longtext-lines);
   color: var(--metadata-input-text-color);
   cursor: text;
-  flex: 1 0 auto;
+  flex-grow: 1;
   font-size: var(--metadata-input-font-size);
   max-height: 300px;
   padding: var(--size-4-1) var(--size-4-2);
@@ -1168,10 +1179,17 @@ input[type="search"] {
 }
 
 .nav-files-container {
+  --nav-collapse-icon-color: var(--b0);
+  --nav-indentation-guide-color: var(--color-purple);
+  --nav-item-color: var(--b0);
+  --nav-item-color-hover: var(--b0);
+  background-color: var(--color-purple);
+  border-left: 3px solid var(--color-frost);
   flex-grow: 1;
   overflow-x: hidden;
   overflow-y: auto;
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-6) var(--size-4-3);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-6));
   scroll-padding-block: var(--size-4-2);
 }
 
@@ -1430,7 +1448,7 @@ svg.svg-icon {
 .backlink-pane {
   flex: 1 0 0;
   overflow-y: auto;
-  padding-bottom: var(--size-4-8);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
   padding-top: var(--size-4-1);

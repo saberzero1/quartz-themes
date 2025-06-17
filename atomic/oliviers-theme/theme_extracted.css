@@ -79,13 +79,16 @@ body {
   --background-secondary: var(--color-base-20);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
+  --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: var(--table-border-color);
-  --bases-table-cell-background-active: var(--background-modifier-hover);
+  --bases-table-cell-background-active: var(--background-primary);
   --bases-table-cell-background-disabled: var(--background-modifier-cover);
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--interactive-accent);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -94,12 +97,14 @@ body {
   --bases-table-header-background: var(--background-primary);
   --bases-table-header-background-hover: var(--background-modifier-hover);
   --bases-table-header-color: var(--text-muted);
+  --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
     black var(--size-4-6)
   );
   --bases-table-header-weight: var(--font-weight);
+  --bases-table-row-background-hover: var(--table-row-background-hover);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
   --bases-table-text-size: var(--font-smaller);
@@ -202,6 +207,12 @@ body {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
+  --dynamic-outline-h1-text-color: var(--OT-menu-text-color);
+  --dynamic-outline-h2-text-color: var(--OT-menu-text-color);
+  --dynamic-outline-h3-text-color: var(--OT-menu-text-color);
+  --dynamic-outline-h4-text-color: var(--OT-menu-text-color);
+  --dynamic-outline-h5-text-color: var(--OT-menu-text-color);
+  --dynamic-outline-h6-text-color: var(--OT-menu-text-color);
   --editor-font-family: var(--OT-editMode-font), "Comic Sans MS", var(--font-default);
   --embed-background: inherit;
   --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
@@ -389,10 +400,10 @@ body {
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
   --interactive-accent: var(--color-accent-2);
-  --interactive-accent-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.7);
+  --interactive-accent-hover: var(--color-accent-1);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-accent-1);
-  --interactive-normal: var(--color-base-00);
+  --interactive-normal: var(--color-accent-3);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -413,11 +424,11 @@ body {
   --link-decoration-hover: none;
   --link-decoration-thickness: auto;
   --link-external-color: var(--link-color);
-  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-color-hover: var(--color-accent-1) --link-unresolved-color: var(--color-red);
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
   --link-external-filter: none;
-  --link-unresolved-color: var(--color-red);
+  --link-unresolved-color: var(--text-accent);
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -773,18 +784,16 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: vat(--OT-color-on-accent-3);
-  --text-accent-hover: var(--link-color);
+  --text-accent: var(--color-accent-2);
+  --text-accent-hover: var(--OT-color-on-accent-1);
   --text-error: var(--color-red);
-  --text-error-hover: var(--color-red);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-50);
+  --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
   --text-on-accent: var(--OT-color-on-accent-1);
   --text-on-accent-inverted: var(--color-accent-1);
-  --text-on-hover: var(--OT-color-on-accent-1);
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
@@ -1194,11 +1203,9 @@ h6 {
 }
 
 .metadata-input-longtext {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--metadata-input-longtext-lines);
   color: var(--metadata-input-text-color);
   cursor: text;
-  flex: 1 0 auto;
+  flex-grow: 1;
   font-size: var(--metadata-input-font-size);
   max-height: 300px;
   padding: var(--size-4-1) var(--size-4-2);
@@ -1218,12 +1225,11 @@ h6 {
 }
 
 .prompt {
-  --text-muted: var(--OT-color-muted-on-base-20);
-  background-color: var(--background-secondary);
+  background-color: var(--OT-menu-background);
   border: var(--prompt-border-width) solid var(--prompt-border-color);
   border-radius: var(--radius-l);
   box-shadow: var(--shadow-l);
-  color: var(--OT-color-on-base-20);
+  color: var(--OT-menu-text-color);
   display: flex;
   flex-direction: column;
   max-height: var(--prompt-max-height);
@@ -1236,7 +1242,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: var(--background-modifier-form-field);
+  background-color: var(--background-primary);
   border: none;
   border-bottom: 1px solid var(--background-secondary);
   border-radius: 0;
@@ -1248,8 +1254,7 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  --text-muted: var(--OT-color-muted-on-accent-1);
-  background-color: var(--color-accent-1);
+  background-color: var(--background-modifier-hover);
   color: var(--OT-color-on-accent-1);
 }
 
@@ -1292,6 +1297,7 @@ input[type="search"] {
   overflow-x: hidden;
   overflow-y: auto;
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-6) var(--size-4-3);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-6));
   scroll-padding-block: var(--size-4-2);
 }
 
@@ -1558,7 +1564,7 @@ svg.svg-icon {
 .backlink-pane {
   flex: 1 0 0;
   overflow-y: auto;
-  padding-bottom: var(--size-4-8);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
   padding-top: var(--size-4-1);

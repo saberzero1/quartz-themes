@@ -9,7 +9,7 @@ GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
 
 MIT License
-Copyright (c) 2023-2024 Bernardo Pires (@drbap)
+Copyright (c) 2023-2025 Bernardo Pires (@drbap)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -559,7 +559,7 @@ body {
   --tag-decoration-hover: none;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-border-color: #0072d3;
+  --tag-border-color: #0072d33f;
   --tag-border-color-hover: #00bfff;
   --tag-border-width: 1px;
   --tag-padding-x: 8px;
@@ -1115,7 +1115,7 @@ input[type="search"] {
   color: var(--mu-caret-color);
 }
 
-.inline-title {
+.inline-title:not([data-level]) {
   font-family: var(--mu-font-mono);
   font-size: var(--mu-inline-title-font-size);
   font-weight: bold;
@@ -1140,6 +1140,11 @@ input[type="search"] {
 ::placeholder {
   color: #a3a3a3 !important;
   opacity: 1;
+}
+
+.status-bar-item.plugin-editor-status::after {
+  content: attr(aria-label);
+  margin-left: var(--size-4-1);
 }
 
 .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
@@ -4069,7 +4074,7 @@ input[type="date"] {
 
 /* UI */
 body:not(.is-mobile).mu-distraction-free-mode {
-  --ribbon-width: 8px;
+  --ribbon-width: 1px;
   --ui-distraction-free-toggle-button: none;
   --ribbon-background: var(--mu-background-color-1);
   --mu-header-title-drag: drag;
@@ -9964,8 +9969,8 @@ settings:
         description: Select tags border color
         format: hex
         opacity: true
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
+        default-light: '#0072d33f'
+        default-dark: '#0072d33f'
     -
         id: tag-border-color-hover
         title: Tags border hover color

@@ -103,7 +103,7 @@
 			25.07.2024	Increased the size of the interface	fonts								1.26.0
 						Corrected the size of the table text in Source Edit mode				1.26.1
 						Small correction														1.26.2
-			28.07.2024	Started verification of the text selection [backgrond]; light themes: done	1.27.0
+			28.07.2024	Started verification of the text selection [background]; light themes: done	1.27.0
 						Revised the Yellow palette in Light mode								1.27.1
 			29.07.2024	Small adjustments in the Violet, Light palette							1.27.2
 						Finished the revision of the selection in all variants of the Dark mode palettes	1.27.3
@@ -194,6 +194,23 @@
 						Status icons in the Note Status” pane									1.54.3
 			18.05.2025	Some tweaks in the light Orange theme									1.54.4
 			25.05.2025	Added “Maison Neue” and “Maison Neue Mono” as choices for editing		1.54.5
+			10.06.2025	Slightly increased the space between external links and the symbol		1.54.6
+						Changed the symbol for an SVG one, aligning better, vertically			1.54.7
+						Added a light version for the dark mode									1.54.8
+						Added compatibility with the Dynamic Outline plugin						1.55.0
+						I forgot the button…													1.55.1
+			12.06.2025	Small tweaks															1.55.2
+						Improved colors and thightened the vertical spacing of the Dynamic Outline
+						plugin																	1.55.3
+			13.06.2025	I hope I have now completely addressed the problem of hovering headers
+						in the modal of the Dynamic Outline plugin								1.55.4
+						completed the task														1.55.5
+			14.06.2025	Small tweaks. Among them: the default interface font size is bigger		1.55.6
+						Small tweak																1.55.7
+			15.06.2025	Worked on the suggestion lists, including those of the following
+						plugins: Another Quick Search, Omnisearch, Better Command Palette		1.56.0
+			         	Small tweaks															1.56.1
+			16.06.2025	Small tweaks															1.56.2
 
 
 --------------------------------------------------------------------------------------------------------
@@ -227,8 +244,8 @@ Bookmarks:	OpSpl01:	Définition des couleurs
 							les petits boutons sur la feuille de publication
 							l’édition des fichiers dans la “nav bar”
 			OpSpl21:	Les sidebars
-			OpSpl22:		Adaptations pour les panneaux de suggestions
-			OpSpl23:		Adaptations pour le plugin “File Info”
+			OpSpl22:	Suggestions pannels and prompts
+			OpSpl23:	Adaptations pour le plugin “File Info”
 							autres adaptations
 			OpSpl24:	Reading Mode
 							paper background
@@ -258,7 +275,7 @@ Bookmarks:	OpSpl01:	Définition des couleurs
 			OpSpl46		<kbd>
 			OpSpl47		Calendar plugin
 			OpSpl48		Other interface elements
-			OpSpl49		Prompts
+			OpSpl49		Empty pane
 			OpSpl50		Mise en évidence du texte trouvé (“search match”) dans les panneaux d’édition
 			OpSpl51		Vertical Tabs plugin
 			OpSpl52		Floating TOC plugin
@@ -266,9 +283,11 @@ Bookmarks:	OpSpl01:	Définition des couleurs
 			OpSpl54		Recent notes plugin
 			OpSpl55		QuickAdd plugin
 			OpSpl56		Another Quick Switcher plugin
+						Omnisearch plugin
 			OpSpl57		Highlight active folder section plugin
 			OpSpl58		Related Notes plugin
 			OpSpl59		Note Status plugin
+			OpSpl60		Dynamic Outline plugin
 
 			OpSpl90		Some useful CSSCLASSES
 
@@ -412,12 +431,6 @@ body {
   --background-modifier-form-field: var(--color-base-00);
   --blockquote-background-color: var(--code-background);
 
-  /*	----- Interactive colors -----
-		------------------------------	*/
-  --interactive-accent-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.7);
-  --interactive-accent: var(--color-accent-2);
-  --interactive-hover: var(--color-accent-1);
-
   /*	----- Functional colors -----
 		-----------------------------	*/
 
@@ -484,7 +497,7 @@ body {
 
   --link-color: var(--obsidian-violet);
   --link-external-color: var(--link-color);
-  --link-unresolved-color: var(--color-red);
+  --link-external-color-hover: var(--color-accent-1) --link-unresolved-color: var(--color-red);
   --link-decoration: none;
   --link-decoration-hover: none;
   --link-external-decoration: none;
@@ -524,14 +537,14 @@ body {
   --pill-color-remove: var(--OT-pill-background);
   --pill-color-remove-hover: var(--OT-color-on-accent-1);
 
-  /* 	--sidebar-markdown-font-size:	calc(var(--OT-readingMode-text-size) * 0.9); */
+  /*	--sidebar-markdown-font-size:	calc(var(--OT-readingMode-text-size) * 0.9); */
 
   --status-bar-text-color: var(--OT-color-on-accent-2);
   --status-bar-background: var(--color-accent-2);
   --status-bar-border-color: red;
   --status-bar-font-size: var(--font-ui-small);
   --status-bar-border-width: 1px 0 0 1px; /*	un fin bord en haut de la status bar pour la faire ressortir du fond, quand elle a la même couleur (c’était un problème, parfois, quand le sidepannel de droite était ouvert) */
-  /* 	--status-bar-radius:		0 0 0 0; */
+  /*	--status-bar-radius:		0 0 0 0; */
 
   --tab-text-color: var(--color-base-50);
   --tab-text-color-active: var(--color-base-70);
@@ -555,17 +568,20 @@ body {
 
   --tab-container-background: var(--color-base-05);
 
-  --text-accent-hover: var(--link-color);
-  --text-accent: vat(--OT-color-on-accent-3);
-  --text-error-hover: var(--color-red);
-  --text-muted: var(
-    --color-base-50
-  ); /*	c’est ce qui, chez moi, peut être considéré comme du texte “muted”	*/
+  /*	--text-muted:				var(--color-base-50);			je me suis quelque peu égaré, le jour où j’avais décidé de rendre encore plus faible le texte “muted”. */
   --text-on-accent: var(--OT-color-on-accent-1);
   --text-on-accent-inverted: var(
     --color-accent-1
   ); /*	dans "app.css" il est défini comme “black”. Utilisé dans le canvas	*/
-  --text-on-hover: var(--OT-color-on-accent-1);
+  --text-accent: var(--color-accent-2);
+  --text-accent-hover: var(--OT-color-on-accent-1);
+  --interactive-normal: var(--color-accent-3);
+  --interactive-hover: var(--color-accent-1);
+  --interactive-accent: var(--color-accent-2);
+  --interactive-accent-hover: var(--color-accent-1); /*	hsla(var(--color-accent-hsl), 0.7);	*/
+
+  /*	--text-error-hover:			var(--color-red);				15.06.2025 ne se trouve plus dans “app.css”	*/
+  /*	--text-on-hover:			var(--OT-color-on-accent-1);	15.06.2025 ne se trouve plus dans “app.css”	*/
 
   --titlebar-background: #333;
   --titlebar-background-focused: var(--color-base-05);
@@ -704,9 +720,9 @@ body {
 
   --color-base-100: #332b00;
   --link-color: #00bdc0;
-  /* 	--h1-color:			#2C686E; */
-  /* 	--h3-color:			#357F86; */
-  /* 	--h5-color:			#4FB0B9; */
+  /*	--h1-color:			#2C686E; */
+  /*	--h3-color:			#357F86; */
+  /*	--h5-color:			#4FB0B9; */
 
   --OT-clickable-icon-in-header: var(--color-base-100);
   --OT-color-muted-on-base-20: #3c9199;
@@ -714,7 +730,7 @@ body {
 
   --OT-stabilo-mark: var(--stabilo-bleu-clair);
 
-  /* 	--OT-table-background:			var(--blockquote-background-color); */
+  /*	--OT-table-background:			var(--blockquote-background-color); */
   --OT-table-header-background: var(--metadata-background);
   --OT-table-alt-background: var(--blockquote-background-color);
 
@@ -746,9 +762,9 @@ body {
   --color-base-100: #71573e;
   --link-color: #698bac;
 
-  /* 	--h1-color:				#9D7956; */
-  /* 	--h3-color:				#6B523B; */
-  /* 	--h5-color:				#44607C; */
+  /*	--h1-color:				#9D7956; */
+  /*	--h3-color:				#6B523B; */
+  /*	--h5-color:				#44607C; */
 
   --OT-color-muted-on-base-20: var(--color-base-40);
   --OT-color-on-base-20: #7d6754;
@@ -769,9 +785,9 @@ body {
 
   --color-base-100: #0761bb;
   --link-color: #4e9706;
-  /* 	--h1-color:			#053F79; */
-  /* 	--h3-color:			#06509A; */
-  /* 	--h5-color:			#1083F6; */
+  /*	--h1-color:			#053F79; */
+  /*	--h3-color:			#06509A; */
+  /*	--h5-color:			#1083F6; */
 
   --code-background: #c0daff;
   --OT-button-OFF-bg: #b1d1ff;
@@ -800,14 +816,14 @@ body {
   --checklist-done-color: #096a2a;
   --OT-color-on-base-20: #085c27;
 
-  /* 	--h1-color:						#202770; */
-  /* 	--h3-color:						#252C73; */
-  /* 	--h5-color:						#797B9D; */
+  /*	--h1-color:						#202770; */
+  /*	--h3-color:						#252C73; */
+  /*	--h5-color:						#797B9D; */
 
   --OT-table-alt-background: #e8f9ee;
   --OT-table-background: #e7fdef;
   --OT-table-header-background: #ddfce8;
-  /* 	--OT-view-header-title-focus-color:		var(--OT-theme-reference-color); */
+  /*	--OT-view-header-title-focus-color:		var(--OT-theme-reference-color); */
   --OT-view-header-title-no-focus-color: var(--color-base-50);
   --OT-stabilo-mark: #2ba727;
   --OT-stabilo-text: #ccfbdc;
@@ -825,9 +841,9 @@ body {
 
   --color-base-100: #0761bb;
   --link-color: #57a706;
-  /* 	--h1-color:			#06509A; */
-  /* 	--h3-color:			#0872DC; */
-  /* 	--h5-color:			#3194F7; */
+  /*	--h1-color:			#06509A; */
+  /*	--h3-color:			#0872DC; */
+  /*	--h5-color:			#3194F7; */
 
   --code-background: #eef4ff;
   --OT-button-OFF-bg: #d6e8ff;
@@ -858,9 +874,9 @@ body {
   --link-color: #58a8a5;
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 81%);
   --checklist-done-color: #c7ad96;
-  /* 	--h1-color:				#96704F; */
-  /* 	--h3-color:				#9F7653; */
-  /* 	--h5-color:				#BEA18D; */
+  /*	--h1-color:				#96704F; */
+  /*	--h3-color:				#9F7653; */
+  /*	--h5-color:				#BEA18D; */
   --OT-table-background: #f8f5f1;
   --OT-table-header-background: #e6ddd5;
   --OT-table-alt-background: #f2ece6;
@@ -887,9 +903,9 @@ body {
 
   --color-base-100: #255c84;
   --link-color: #3f9de1;
-  /* 	--h1-color:				var(--text-normal); */
-  /* 	--h3-color:				var(--text-normal); */
-  /* 	--h5-color:				var(--text-normal); */
+  /*	--h1-color:				var(--text-normal); */
+  /*	--h3-color:				var(--text-normal); */
+  /*	--h5-color:				var(--text-normal); */
 
   --code-background: #eaf3f9;
   --OT-button-OFF-bg: #f0f5ea;
@@ -927,9 +943,9 @@ body {
 
   --color-base-100: #2f4858;
   --link-color: #849f86;
-  /* 	--h1-color:			#9D7956; */
-  /* 	--h3-color:			#6B523B; */
-  /* 	--h5-color:			#44607C; */
+  /*	--h1-color:			#9D7956; */
+  /*	--h3-color:			#6B523B; */
+  /*	--h5-color:			#44607C; */
   --code-background: #fbe9d3;
   --OT-button-OFF-bg: #ffd8b8;
 
@@ -958,9 +974,9 @@ body {
 
   --color-base-100: #4c4d25;
   --link-color: #5351a9;
-  /* 	--h1-color:			#484923; */
-  /* 	--h3-color:			#35361A; */
-  /* 	--h5-color:			#A7A951; */
+  /*	--h1-color:			#484923; */
+  /*	--h3-color:			#35361A; */
+  /*	--h5-color:			#A7A951; */
 
   --OT-color-on-base-20: #636430;
   --OT-setting-item-description: #6e6f36;
@@ -983,9 +999,9 @@ body {
 
   --color-base-100: #6f5b3e;
   --link-color: #6089d6;
-  /* 	--h1-color:			#B68D40; */
-  /* 	--h3-color:			#B68D40; */
-  /* 	--h5-color:			#AEA188; */
+  /*	--h1-color:			#B68D40; */
+  /*	--h3-color:			#B68D40; */
+  /*	--h5-color:			#AEA188; */
 
   --tab-text-color-focused: var(--OT-color-on-base-20);
 
@@ -995,7 +1011,7 @@ body {
   --OT-table-background: #fff4e2;
   --OT-menu-text-color: var(--color-base-100);
   --icon-color: var(--color-base-100);
-  /* 	--status-bar-text-color:		var(--color-base-100); */
+  /*	--status-bar-text-color:		var(--color-base-100); */
 }
 /*	----------------------------------------------	*/
 .theme-light.lightPalette-pistachio {
@@ -1013,9 +1029,9 @@ body {
 
   --color-base-100: #288045;
   --link-color: #712880;
-  /* 	--h1-color:			#2C6620	; */
-  /* 	--h3-color:			#007759	; */
-  /* 	--h5-color:			#4DB438	; */
+  /*	--h1-color:			#2C6620	; */
+  /*	--h3-color:			#007759	; */
+  /*	--h5-color:			#4DB438	; */
 
   --OT-color-on-base-20: #309a53;
   --OT-table-header-background: #d3ebda;
@@ -1041,9 +1057,9 @@ body {
 
   --color-base-100: #bb1616;
   --link-color: #1668bb;
-  /* 	--h1-color:				#6A0804; */
-  /* 	--h3-color:				#823B3B; */
-  /* 	--h5-color:				#AE8F8F; */
+  /*	--h1-color:				#6A0804; */
+  /*	--h3-color:				#823B3B; */
+  /*	--h5-color:				#AE8F8F; */
   --checklist-done-color: #f38b8b;
 
   --OT-color-muted-on-base-20: #f16868;
@@ -1069,9 +1085,9 @@ body {
 
   --color-base-100: var(--solarized-base00);
   --link-color: var(--solarized-blue);
-  /* 	--h1-color:			var(--solarized-base02); */
-  /* 	--h3-color:			var(--solarized-violet); */
-  /* 	--h5-color:			var(--solarized-base1); */
+  /*	--h1-color:			var(--solarized-base02); */
+  /*	--h3-color:			var(--solarized-violet); */
+  /*	--h5-color:			var(--solarized-base1); */
 
   --OT-color-on-base-20: var(--solarized-violet);
   --OT-table-header-background: var(--solarized-base3);
@@ -1094,9 +1110,9 @@ body {
 
   --color-base-100: #47413e;
   --link-color: #297622;
-  /* 	--h1-color:		#1E256A; */
-  /* 	--h3-color:		#2D379E; */
-  /* 	--h5-color:		#9293AD; */
+  /*	--h1-color:		#1E256A; */
+  /*	--h3-color:		#2D379E; */
+  /*	--h5-color:		#9293AD; */
 
   --OT-table-background: #e2e0df;
   --OT-table-header-background: #cfccca;
@@ -1153,9 +1169,9 @@ body {
 
   --color-base-100: #4b0b8b;
   --link-color: var(--obsidian-violet);
-  /* 	--h1-color:			#470A84; */
-  /* 	--h3-color:			#5E3B93; */
-  /* 	--h5-color:			#9283B1; */
+  /*	--h1-color:			#470A84; */
+  /*	--h3-color:			#5E3B93; */
+  /*	--h5-color:			#9283B1; */
 
   --OT-color-on-base-20: #7111d2;
   --OT-metadata-background: #f9deff;
@@ -1175,7 +1191,7 @@ body {
 
   --color-base-100: #d97706;
   --link-color: #537622;
-  /* 	--h1-color:			#6F5902; */
+  /*	--h1-color:			#6F5902; */
 
   --code-background: #fef3c7;
   --OT-button-OFF-bg: #feefb6;
@@ -1228,9 +1244,9 @@ body {
 
   --color-base-100: #f39b0a;
   --link-color: #0a62f3;
-  /* 	--h1-color:			#F5AF66; */
-  /* 	--h3-color:			#F7AF39; */
-  /* 	--h5-color:			#05794D; */
+  /*	--h1-color:			#F5AF66; */
+  /*	--h3-color:			#F7AF39; */
+  /*	--h5-color:			#05794D; */
   --OT-stabilo-mark: #f39539;
   --OT-stabilo-text: var(--color-base-00) !important;
 
@@ -1281,9 +1297,9 @@ body {
   --color-base-100: #0c82f9;
   --link-color: #069406;
   --checklist-done-color: #033669;
-  /* 	--h1-color:				#6385C6	!important; */
-  /* 	--h3-color:				#0656A6	!important; */
-  /* 	--h5-color:				#44607C	!important; */
+  /*	--h1-color:				#6385C6	!important; */
+  /*	--h3-color:				#0656A6	!important; */
+  /*	--h5-color:				#44607C	!important; */
 
   --OT-color-on-base-20: #0868ca; /*	#0760BA;	*/
 
@@ -1314,9 +1330,9 @@ body {
 
   --color-base-100: #e6a571;
   --link-color: #1d67a1;
-  /* 	--h1-color:					var(--text-normal); */
-  /* 	--h3-color:					var(--text-normal); */
-  /* 	--h5-color:					var(--text-normal); */
+  /*	--h1-color:					var(--text-normal); */
+  /*	--h3-color:					var(--text-normal); */
+  /*	--h5-color:					var(--text-normal); */
   --OT-stabilo-text: var(--color-base-00) !important;
   --OT-stabilo-mark: #916847;
   --OT-color-on-base-20: #b76320;
@@ -1338,7 +1354,7 @@ body {
   --color-base-05: #0b3b1c;
 
   --code-background: #082d16;
-  /* 	--code-background:					#0B3E1D; */
+  /*	--code-background:					#0B3E1D; */
   --background-modifier-form-field: #082b14;
   --OT-button-OFF-bg: #105829;
 
@@ -1375,9 +1391,9 @@ body {
 
   --color-base-100: #92c1ff;
   --link-color: #00da0f;
-  /* 	--h1-color:			#036FFF; */
-  /* 	--h3-color:			#69AAFF; */
-  /* 	--h5-color:			#004CB1; */
+  /*	--h1-color:			#036FFF; */
+  /*	--h3-color:			#69AAFF; */
+  /*	--h5-color:			#004CB1; */
 
   --OT-color-on-base-20: #036fff;
 
@@ -1439,9 +1455,9 @@ body {
 
   --color-base-100: #b8bbbe;
   --link-color: #dc7fb5;
-  /* 	--h1-color:			white; */
-  /* 	--h3-color:			#C9CBCE; */
-  /* 	--h5-color:			#757C85; */
+  /*	--h1-color:			white; */
+  /*	--h3-color:			#C9CBCE; */
+  /*	--h5-color:			#757C85; */
 
   --OT-color-on-base-20: #dedfe1;
 
@@ -1535,9 +1551,9 @@ body {
   --color-base-100: #c00827;
   --link-color: #0772a7;
   --OT-color-on-base-20: #c09b9c;
-  /* 	--h1-color:						var(--text-normal); */
-  /* 	--h3-color:						var(--text-normal); */
-  /* 	--h5-color:						var(--text-normal); */
+  /*	--h1-color:						var(--text-normal); */
+  /*	--h3-color:						var(--text-normal); */
+  /*	--h5-color:						var(--text-normal); */
   --code-normal: #fbaab7;
 
   --OT-setting-item-name: #fcbac5;
@@ -1545,7 +1561,7 @@ body {
   --OT-stabilo-text: var(--color-base-00) !important;
   --OT-stabilo-mark: #f84f6d;
 
-  /* 	--OT-table-header-background:	#34030C; */
+  /*	--OT-table-header-background:	#34030C; */
   --OT-table-background: #36010c;
 } /*	↑	darkPalette-red	↑	*/
 
@@ -1605,7 +1621,7 @@ body {
   --OT-stabilo-mark: var(--stabilo-orange-foncé);
   --OT-stabilo-text: #734000;
   --OT-table-background: #2f1a00;
-  /* 	--OT-table-header-background:	#1E1100; */
+  /*	--OT-table-header-background:	#1E1100; */
   --OT-table-alt-background: #402400;
   --OT-color-on-accent-1: var(--color-base-100);
   --OT-view-header-title-focus-color: #fb8b00;
@@ -1639,7 +1655,7 @@ body {
   --OT-table-alt-background: #322f2c;
 
   --OT-color-on-base-20: #a8a29e;
-  /* 	--OT-tooltip-text-color:var(--OT-color-on-base-20); */
+  /*	--OT-tooltip-text-color:var(--OT-color-on-base-20); */
 } /*	↑	darkPalette-stone	↑	*/
 
 /*	----------------------------------------------	*/
@@ -1662,9 +1678,9 @@ body {
 
   --color-base-100: #e6f2cc;
   --link-color: #ccd3f2;
-  /* 	--h1-color:			#F2B630; */
-  /* 	--h3-color:			#C8E28F; */
-  /* 	--h5-color:			#E5AC2D; */
+  /*	--h1-color:			#F2B630; */
+  /*	--h3-color:			#C8E28F; */
+  /*	--h5-color:			#E5AC2D; */
 
   --OT-stabilo-text: var(--color-base-20);
 
@@ -1672,7 +1688,7 @@ body {
   --code-normal: #001f99;
   --OT-setting-item-name: var(--color-base-50);
 
-  /* 	--OT-view-header-title-focus-color:	#E6F2CC; */
+  /*	--OT-view-header-title-focus-color:	#E6F2CC; */
 
   --metadata-background: #005511;
   --OT-setting-item-name: white;
@@ -1697,7 +1713,7 @@ body {
 
   --code-background: #200c40;
   --code-background: #311262;
-  /* 	--background-modifier-border:	#2B1155; */
+  /*	--background-modifier-border:	#2B1155; */
   --OT-button-OFF-bg: #441988;
 
   --code-normal: #c1a4ee;
@@ -1806,7 +1822,7 @@ body {
   --accent-s: 53% !important;
   --accent-l: 53% !important;
   --color-accent-1: #278160 !important;
-  /* 	--OT-color-on-accent-1:				#F0FBF7	!important; */
+  /*	--OT-color-on-accent-1:				#F0FBF7	!important; */
   --OT-color-muted-on-accent-1: #6ed3ae !important;
   --color-accent-2: #47c798 !important;
   --OT-color-on-accent-2: var(--color-base-20) !important;
@@ -1830,7 +1846,7 @@ body {
   --accent-s: 100% !important;
   --accent-l: 37% !important;
   --color-accent-1: hsl(125, 100%, 47%) !important;
-  /* 	--color-accent-2:				#24CC32	!important; */
+  /*	--color-accent-2:				#24CC32	!important; */
   --color-accent-3: #ccffd0 !important;
   --OT-color-on-accent-1: #255229 !important;
   --OT-color-muted-on-accent-1: #408c46 !important;
@@ -1844,7 +1860,7 @@ body {
   --accent-s: 100% !important;
   --accent-l: 30% !important;
   --color-accent-1: #cc00bb !important;
-  /* 	--color-accent-2:				#FF77F3	!important; */
+  /*	--color-accent-2:				#FF77F3	!important; */
   --color-accent-3: #ffccfb !important;
   --OT-color-on-accent-1: #ffeefe !important;
   --OT-color-muted-on-accent-1: #ffccfb !important;
@@ -1872,7 +1888,7 @@ body {
   --accent-s: 60% !important;
   --accent-l: 40% !important;
   --color-accent-1: #1f7a34 !important;
-  /* 	--color-accent-2:				#999	!important; */
+  /*	--color-accent-2:				#999	!important; */
   --color-accent-3: #d6f5dd !important;
   --OT-color-on-accent-1: #f1fcf4 !important;
   --OT-color-muted-on-accent-1: #d6f5dd !important;
@@ -1892,7 +1908,7 @@ body {
   --OT-color-on-accent-2: #fefcf6 !important;
   --OT-color-muted-on-accent-2: #fdfaf0 !important;
   --OT-color-on-accent-3: #624b0b !important;
-  /* 	--status-bar-text-color:		#DDA818; */
+  /*	--status-bar-text-color:		#DDA818; */
   --icon-color: #dda818;
   --OT-view-header-title-focus-color: #e6af19;
 }
@@ -1903,7 +1919,7 @@ body {
   --color-accent-1: #14d65b !important;
   --OT-color-on-accent-1: #085a26 !important;
   --OT-color-muted-on-accent-1: #0b7934 !important;
-  /* 	--color-accent-2:				#60F095	!important; */
+  /*	--color-accent-2:				#60F095	!important; */
   --OT-color-on-accent-2: #085a26 !important;
   --OT-color-muted-on-accent-2: #0a692d !important;
   --color-accent-3: #cdfadd !important;
@@ -1914,14 +1930,14 @@ body {
   --accent-s: 83% !important;
   --accent-l: 63% !important;
   --color-accent-1: #0e219a !important;
-  /* 	--color-accent-2:				#5267EF	!important; */
+  /*	--color-accent-2:				#5267EF	!important; */
   --color-accent-3: #ced4fb !important;
   --OT-color-on-accent-1: #eef0fd !important;
   --OT-color-muted-on-accent-1: #bfc7f9 !important;
   --OT-color-on-accent-2: #eef0fd !important;
   --OT-color-muted-on-accent-2: #dee2fc !important;
   --OT-color-on-accent-3: #0b1a7b !important;
-  /* 	--toggle-thumb-color:			var(--color-accent-3); */
+  /*	--toggle-thumb-color:			var(--color-accent-3); */
 }
 .theme-light.lightPalette-green.accentColor-lightMode-alternative-2 {
   --accent-h: 322 !important;
@@ -1930,7 +1946,7 @@ body {
   --color-accent-1: hsl(322, 83%, 89%) !important;
   --OT-color-on-accent-1: #d6138e !important;
   --OT-color-muted-on-accent-1: #ec30a6 !important;
-  /* 	--color-accent-2:				#F26FC1	!important; */
+  /*	--color-accent-2:				#F26FC1	!important; */
   --OT-color-on-accent-2: #fffafd !important;
   --OT-color-muted-on-accent-2: #fcdbf0 !important;
   --color-accent-3: #fcdef1 !important;
@@ -1949,8 +1965,8 @@ body {
   --OT-color-muted-on-accent-1: #97cbff;
   --OT-color-on-accent-2: #0058cc;
   --OT-color-muted-on-accent-2: #4495ff;
-  /* 	--OT-view-header-title-focus-color:		#005FDD; */
-  /* 	--OT-view-header-title-no-focus-color:	var(--color-accent-1); */
+  /*	--OT-view-header-title-focus-color:		#005FDD; */
+  /*	--OT-view-header-title-no-focus-color:	var(--color-accent-1); */
   --OT-button-ON-bg: #0049aa;
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 93%);
 }
@@ -1961,7 +1977,7 @@ body {
   --color-accent-1: #51bb00 !important;
   --color-accent-2: #c5ff99 !important;
   --color-accent-3: #ecffdd !important;
-  /* 	--OT-color-on-accent-1:				#163300	!important; */
+  /*	--OT-color-on-accent-1:				#163300	!important; */
   --OT-color-muted-on-accent-1: #79ff11 !important;
   --OT-color-on-accent-2: #2c6600 !important;
   --OT-color-muted-on-accent-2: #429700 !important;
@@ -1972,7 +1988,7 @@ body {
   --accent-h: 334 !important;
   --accent-s: 100% !important;
   --accent-l: 90% !important;
-  /* 	--color-accent-1:					#99008F	!important; */
+  /*	--color-accent-1:					#99008F	!important; */
   --color-accent-2: #ffcce2 !important;
   --color-accent-3: #ffddec !important;
   --OT-color-on-accent-1: white !important;
@@ -1991,9 +2007,9 @@ body {
   --color-accent-2: #a87d58 !important;
   --color-accent-3: #e8ddd3 !important;
   --OT-color-on-accent-1: #faf7f4 !important;
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
 }
 .theme-light.lightPalette-lightBeige.accentColor-lightMode-alternative-1 {
   --accent-h: 239 !important;
@@ -2032,7 +2048,7 @@ body {
   --color-accent-1: hsl(325, 81%, 53%) !important;
   --color-accent-2: hsl(325, 81%, 33%) !important;
   --color-accent-3: #fdf0f8 !important;
-  /* 	--OT-color-on-accent-1:				var(--color-base-20)	!important; */
+  /*	--OT-color-on-accent-1:				var(--color-base-20)	!important; */
   --OT-color-muted-on-accent-1: #3c0625 !important;
   --OT-color-on-accent-2: var(--color-base-00) !important;
   --OT-color-muted-on-accent-2: #fad1e9 !important;
@@ -2050,7 +2066,7 @@ body {
   --OT-color-on-accent-2: var(--color-base-00) !important;
   --OT-color-muted-on-accent-2: var(--color-base-20) !important;
   --OT-color-on-accent-3: #314e08 !important;
-  /* 	--OT-view-header-title-focus-color:	var(--color-accent-1); */
+  /*	--OT-view-header-title-focus-color:	var(--color-accent-1); */
 }
 .theme-light.lightPalette-Orange.accentColor-lightMode-shade {
   --accent-h: 39 !important;
@@ -2083,7 +2099,7 @@ body {
   --color-accent-1: #1e00cc !important;
   --color-accent-2: #6e55ff !important;
   --color-accent-3: #d3ccff !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #ffc355 !important;
   --OT-color-on-accent-2: #fff !important;
   --OT-color-on-accent-3: #0b00e6 !important;
@@ -2094,10 +2110,10 @@ body {
   --accent-h: 37 !important;
   --accent-s: 53% !important;
   --accent-l: 61% !important;
-  /* 	--color-accent-1:				#999	!important; */
+  /*	--color-accent-1:				#999	!important; */
   --color-accent-2: #d0a866 !important;
   --color-accent-3: #f2e7d5 !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #e0c69a !important;
   --OT-color-on-accent-2: var(--color-base-00) !important;
   --OT-color-on-accent-3: var(--color-accent-1) !important;
@@ -2110,8 +2126,8 @@ body {
   --color-accent-1: #234687 !important;
   --color-accent-2: #2a54a2 !important;
   --color-accent-3: #c9d7f1 !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
   --OT-color-on-accent-2: #e4ecf8 !important;
   --OT-color-on-accent-3: #1f3f7a !important;
 }
@@ -2119,11 +2135,11 @@ body {
   --accent-h: 307 !important;
   --accent-s: 58% !important;
   --accent-l: 47% !important;
-  /* 	--color-accent-1:				#999	!important; */
+  /*	--color-accent-1:				#999	!important; */
   --color-accent-2: #bc32ad !important;
   --color-accent-3: #f1c9ec !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
   --OT-color-on-accent-2: #f8e4f6 !important;
   --OT-color-on-accent-3: #7a1f6f !important;
 }
@@ -2141,10 +2157,10 @@ body {
   --accent-h: 212 !important;
   --accent-s: 36% !important;
   --accent-l: 50% !important;
-  /* 	--color-accent-1:				#999	!important; */
-  /* 	--color-accent-2:				#999	!important; */
+  /*	--color-accent-1:				#999	!important; */
+  /*	--color-accent-2:				#999	!important; */
   --color-accent-3: #dce5ef !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #bacbde !important;
   --OT-color-on-accent-2: #f3f6fa !important;
   --OT-color-on-accent-3: #527cad !important;
@@ -2202,7 +2218,7 @@ body {
   --OT-color-on-accent-1: white !important;
   --OT-color-muted-on-accent-1: #f5a1af;
   --OT-color-on-accent-2: white;
-  /* 	--OT-view-header-title-no-focus-color:	var(--color-accent-2); */
+  /*	--OT-view-header-title-no-focus-color:	var(--color-accent-2); */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 90%);
 }
 .theme-light.lightPalette-red.accentColor-lightMode-alternative-1 {
@@ -2248,7 +2264,7 @@ body {
   --color-accent-1: var(--solarized-violet) !important;
   --color-accent-2: var(--solarized-blue) !important;
   --color-accent-3: var(--solarized-base2) !important;
-  /* 	--OT-color-on-accent-1:			var(--solarized-base02)	!important; */
+  /*	--OT-color-on-accent-1:			var(--solarized-base02)	!important; */
   --OT-color-muted-on-accent-1: var(--solarized-base03) !important;
   --OT-color-on-accent-2: var(--solarized-base3) !important;
   --OT-color-on-accent-3: var(--solarized-base03) !important;
@@ -2272,7 +2288,7 @@ body {
   --accent-h: 24 !important;
   --accent-s: 5% !important;
   --accent-l: 61% !important;
-  /* 	--color-accent-1:					#534E4A	!important; */
+  /*	--color-accent-1:					#534E4A	!important; */
   --color-accent-2: #a19b97 !important;
   --color-accent-3: #d9d7d5 !important;
   --OT-color-on-accent-1: #fff !important;
@@ -2324,7 +2340,7 @@ body {
   --color-accent-2: #62eaad !important;
   --color-accent-3: #adf4d4 !important;
   --OT-color-on-accent-2: #09442a !important;
-  /* 	--OT-color-on-accent-3:	#000;	!important; */
+  /*	--OT-color-on-accent-3:	#000;	!important; */
   --OT-color-muted-on-accent-1: #cbf8e4;
   --OT-view-header-title-focus-color: #11804e;
 }
@@ -2333,10 +2349,10 @@ body {
   --accent-h: 272 !important;
   --accent-s: 87% !important;
   --accent-l: 58% !important;
-  /* 	--color-accent-1:					#6E16C7	!important; */
+  /*	--color-accent-1:					#6E16C7	!important; */
   --color-accent-2: #9835f1 !important;
   --color-accent-3: #e9d4fc !important;
-  /* 	--OT-color-on-accent-1:				#fff	!important; */
+  /*	--OT-color-on-accent-1:				#fff	!important; */
   --OT-color-on-accent-2: var(--color-base-00);
   --OT-color-muted-on-accent-1: #d9b4fa !important;
   --OT-color-on-accent-3: #6d0ec3;
@@ -2346,7 +2362,7 @@ body {
   --accent-h: 152 !important;
   --accent-s: 87% !important;
   --accent-l: 58% !important;
-  /* 	--color-accent-1:				#15C0C0	!important; */
+  /*	--color-accent-1:				#15C0C0	!important; */
   --color-accent-2: #35f198 !important;
   --color-accent-3: #d4fce9 !important;
   --OT-color-on-accent-1: white !important;
@@ -2362,7 +2378,7 @@ body {
   --color-accent-1: #ef8815 !important;
   --color-accent-2: #f2a247 !important;
   --color-accent-3: #fbe1c4 !important;
-  /* 	--OT-color-on-accent-1:			#2F540A	!important; */
+  /*	--OT-color-on-accent-1:			#2F540A	!important; */
   --OT-color-muted-on-accent-1: #94530a !important;
   --OT-color-on-accent-2: #fdf1e4 !important;
   --OT-color-on-accent-3: #c36d0e !important;
@@ -2447,7 +2463,7 @@ body {
   --OT-color-on-accent-1: #e1ccee !important;
   --OT-color-muted-on-accent-1: var(--color-base-100) !important;
   --OT-color-on-accent-2: var(--color-base-100) !important;
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 25%);
 }
 .theme-dark.lightPalette-blue.darkPalette-default.accentColor-darkMode-shade,
@@ -2462,7 +2478,7 @@ body {
   --OT-color-on-accent-1: #e5f1fe !important;
   --OT-color-on-accent-2: #e5f1fe !important;
   --OT-color-on-accent-3: #b4d8fc !important;
-  /* 	--OT-view-header-title-no-focus-color:	#0761BB; */
+  /*	--OT-view-header-title-no-focus-color:	#0761BB; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 18%);
 }
 
@@ -2488,8 +2504,8 @@ body {
   --color-accent-1: #80f708 !important;
   --color-accent-2: #5eb506 !important;
   --color-accent-3: #336303 !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
   --OT-color-on-accent-2: var(--color-base-00) !important;
   --OT-color-on-accent-3: #ddfdbd !important;
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 15%);
@@ -2502,10 +2518,10 @@ body {
   --color-accent-1: #e67819 !important;
   --color-accent-2: #8a480f !important;
   --color-accent-3: #5c300a !important;
-  /* 	--OT-color-on-accent-1:			#E39451	!important; */
+  /*	--OT-color-on-accent-1:			#E39451	!important; */
   --OT-color-muted-on-accent-1: #5c300a !important;
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
 }
 .theme-dark.lightPalette-Brown.darkPalette-default.accentColor-darkMode-alternative-1,
 .theme-dark.darkPalette-brown.accentColor-darkMode-alternative-1 {
@@ -2516,7 +2532,7 @@ body {
   --color-accent-2: #0d7b40 !important;
   --color-accent-3: #084d28 !important;
   --OT-color-on-accent-1: #084d28 !important;
-  /* 	--OT-color-muted-on-accent-1:		#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:		#fff	!important; */
   --OT-color-on-accent-2: #b2f7d2 !important;
   --OT-color-on-accent-3: #b2f7d2 !important;
   --OT-button-ON-bg: var(--color-accent-1);
@@ -2579,7 +2595,7 @@ body {
   --color-accent-3: #7b270d !important;
   --OT-color-on-accent-1: #fff !important;
   --OT-color-muted-on-accent-1: #9a3110 !important;
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
   --OT-color-on-accent-3: #f09275 !important;
   --OT-button-ON-bg: var(--color-accent-1);
 }
@@ -2614,13 +2630,13 @@ body {
   --accent-h: 321 !important;
   --accent-s: 70% !important;
   --accent-l: 30% !important;
-  /* 	--color-accent-1:				#999	!important; */
+  /*	--color-accent-1:				#999	!important; */
   --color-accent-2: #9f1c72 !important;
   --color-accent-3: #651248 !important;
   --OT-color-on-accent-1: #f7d4eb !important;
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
 }
 .theme-dark.lightPalette-icy.darkPalette-default.accentColor-darkMode-shade,
 .theme-dark.darkPalette-icy.accentColor-darkMode-shade {
@@ -2632,7 +2648,7 @@ body {
   --color-accent-3: #0f448a !important;
   --OT-color-on-accent-1: white;
   --OT-color-muted-on-accent-1: #a3c6f5 !important;
-  /* 	--OT-view-header-title-focus-color:	#85B4F1; */
+  /*	--OT-view-header-title-focus-color:	#85B4F1; */
   --OT-view-header-title-no-focus-color: #297be7;
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-button-cta-background-normal: #5697ed;
@@ -2648,9 +2664,9 @@ body {
   --color-accent-2: #ec5797 !important;
   --color-accent-3: #6b0c35 !important;
   --OT-color-on-accent-1: #d6e8ff !important;
-  /* 	--OT-color-muted-on-accent-1:	#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:	#fff	!important; */
   --OT-color-on-accent-2: #d6e8ff !important;
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
 }
 .theme-dark.lightPalette-icy.darkPalette-default.accentColor-darkMode-alternative-2,
@@ -2726,7 +2742,7 @@ body {
   --color-accent-1: #a1d35f !important;
   --color-accent-2: #5c8525 !important;
   --color-accent-3: #375016 !important;
-  /* 	--OT-color-on-accent-1:				#fff	!important; */
+  /*	--OT-color-on-accent-1:				#fff	!important; */
   --OT-color-muted-on-accent-1: #537821 !important;
   --OT-color-on-accent-2: #e8f4d7 !important;
   --OT-color-on-accent-3: #d0e9af !important;
@@ -2740,10 +2756,10 @@ body {
   --color-accent-1: #d76ca9 !important;
   --color-accent-2: #a02c6e !important;
   --color-accent-3: #782152 !important;
-  /* 	--OT-color-on-accent-1:				#fff	!important; */
+  /*	--OT-color-on-accent-1:				#fff	!important; */
   --OT-color-muted-on-accent-1: #932865 !important;
-  /* 	--OT-color-on-accent-2:				#fff	!important; */
-  /* 	--OT-color-on-accent-3:				#fff	!important; */
+  /*	--OT-color-on-accent-2:				#fff	!important; */
+  /*	--OT-color-on-accent-3:				#fff	!important; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
 }
 .theme-dark.lightPalette-paradiso.darkPalette-default.accentColor-darkMode-shade,
@@ -2758,7 +2774,7 @@ body {
   --OT-color-on-accent-1: #1e1f0f !important;
   --OT-color-muted-on-accent-1: #57582b !important;
   --OT-color-on-accent-2: #f8f9ec !important;
-  /* 	--OT-color-on-accent-3:					#fff	!important; */
+  /*	--OT-color-on-accent-3:					#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-button-cta-background-normal: #adb05b;
   --OT-view-header-title-no-focus-color: #9c9f36;
@@ -2787,10 +2803,10 @@ body {
   --color-accent-1: #d4ac7f !important;
   --color-accent-2: #c38b4c !important;
   --color-accent-3: #8c602f !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #8c602f !important;
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
 }
 .theme-dark.lightPalette-parchment.darkPalette-default.accentColor-darkMode-shade,
@@ -2804,7 +2820,7 @@ body {
   --OT-color-on-accent-1: #f8e6d3;
   --OT-color-muted-on-accent-1: #57340f !important;
   --OT-color-on-accent-2: #faeee2 !important;
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 10%);
 }
@@ -2818,8 +2834,8 @@ body {
   --color-accent-3: #07192c !important;
   --OT-color-on-accent-1: var(--color-base-100) !important;
   --OT-color-muted-on-accent-1: #144274 !important;
-  /* 	--OT-color-on-accent-2:				#fff	!important; */
-  /* 	--OT-color-on-accent-3:				#fff	!important; */
+  /*	--OT-color-on-accent-2:				#fff	!important; */
+  /*	--OT-color-on-accent-3:				#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
 }
 .theme-dark.lightPalette-parchment.darkPalette-default.accentColor-darkMode-alternative-2,
@@ -2872,8 +2888,8 @@ body {
   --color-accent-1: #2ee109 !important;
   --color-accent-2: #21a006 !important;
   --color-accent-3: #0d3e02 !important;
-  /* 	--OT-color-on-accent-1:				#fff	!important; */
-  /* 	--OT-color-muted-on-accent-1:		#D6C6F4	!important; */
+  /*	--OT-color-on-accent-1:				#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:		#D6C6F4	!important; */
   --OT-color-on-accent-2: #fedae0 !important;
   --OT-color-on-accent-3: #d6c6f4 !important;
   --OT-button-ON-bg: var(--color-accent-1);
@@ -2908,7 +2924,7 @@ body {
   --OT-color-muted-on-accent-1: var(--solarized-base01) !important;
   --OT-color-on-accent-2: var(--solarized-base02) !important;
   --OT-color-on-accent-3: var(--solarized-base2) !important;
-  /* 	--OT-view-header-title-focus-color:		var(--solarized-blue); */
+  /*	--OT-view-header-title-focus-color:		var(--solarized-blue); */
   --OT-button-cta-background-normal: var(--solarized-cyan);
 }
 .theme-dark.lightPalette-solarized.darkPalette-default.accentColor-darkMode-alternative-2,
@@ -2923,7 +2939,7 @@ body {
   --OT-color-muted-on-accent-1: var(--solarized-base01) !important;
   --OT-color-on-accent-2: var(--solarized-base02) !important;
   --OT-color-on-accent-3: var(--solarized-base2) !important;
-  /* 	--OT-view-header-title-focus-color:		var(--solarized-yellow); */
+  /*	--OT-view-header-title-focus-color:		var(--solarized-yellow); */
   --OT-button-cta-background-normal: var(--solarized-orange);
 }
 
@@ -2950,7 +2966,7 @@ body {
   --color-accent-1: #a6bbd0 !important;
   --color-accent-2: #597fa6 !important;
   --color-accent-3: #2f4459 !important;
-  /* 	--OT-color-on-accent-1:				#fff	!important; */
+  /*	--OT-color-on-accent-1:				#fff	!important; */
   --OT-color-muted-on-accent-1: #597fa6 !important;
   --OT-color-on-accent-2: #d3dde7 !important;
   --OT-color-on-accent-3: #d3dde7 !important;
@@ -2967,7 +2983,7 @@ body {
   --color-accent-1: #b2d5b2 !important;
   --color-accent-2: #59a659 !important;
   --color-accent-3: #2f592f !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #3b6f3b !important;
   --OT-color-on-accent-2: #e9eef3 !important;
   --OT-color-on-accent-3: #bddbbd !important;
@@ -2981,9 +2997,9 @@ body {
   --color-accent-2: #006d73 !important;
   --color-accent-3: #00adb7 !important;
   --OT-color-on-accent-1: #40f5ff !important;
-  /* 	--OT-color-on-accent-2:	#000	!important; */
+  /*	--OT-color-on-accent-2:	#000	!important; */
   --OT-color-on-accent-3: #734000 !important;
-  /* 	--OT-color-muted-on-accent-1:	grey; */
+  /*	--OT-color-muted-on-accent-1:	grey; */
 }
 .theme-dark.lightPalette-sunnyMemos.accentColor-darkMode-alternative-2 {
   --accent-h: 243 !important; /*	c’est pour la sélection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2	*/
@@ -3004,8 +3020,8 @@ body {
   --color-accent-3: #00881c !important;
   --OT-color-on-accent-1: #00330a !important;
   --OT-color-muted-on-accent-1: #007718 !important;
-  /* 	--OT-color-on-accent-2:				#fff	!important; */
-  /* 	--OT-color-on-accent-3:				#fff	!important; */
+  /*	--OT-color-on-accent-2:				#fff	!important; */
+  /*	--OT-color-on-accent-3:				#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-button-cta-background-normal: #00bb26;
 }
@@ -3018,9 +3034,9 @@ body {
   --color-accent-2: #0022aa !important;
   --color-accent-3: #001c88 !important;
   --OT-color-on-accent-1: var(--color-base-100) !important;
-  /* 	--OT-color-muted-on-accent-1:		#fff	!important; */
-  /* 	--OT-color-on-accent-2:				#fff	!important; */
-  /* 	--OT-color-on-accent-3:				#fff	!important; */
+  /*	--OT-color-muted-on-accent-1:		#fff	!important; */
+  /*	--OT-color-on-accent-2:				#fff	!important; */
+  /*	--OT-color-on-accent-3:				#fff	!important; */
   --OT-button-ON-bg: #88a0ff;
   --OT-button-cta-background-normal: #1141ff;
 }
@@ -3035,7 +3051,7 @@ body {
   --OT-color-on-accent-1: var(--color-base-20) !important;
   --OT-color-muted-on-accent-1: #c2880c !important;
   --OT-color-on-accent-2: var(--color-base-20) !important;
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 45%);
 }
 
@@ -3054,8 +3070,8 @@ body {
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-button-cta-background-normal: #9a7cc7;
   --OT-button-cta-text-normal: #27193c;
-  /* 	--OT-view-header-title-focus-color:		#AC94D1; */
-  /* 	--OT-view-header-title-no-focus-color:	#8864BD; */
+  /*	--OT-view-header-title-focus-color:		#AC94D1; */
+  /*	--OT-view-header-title-no-focus-color:	#8864BD; */
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
 }
 .theme-dark.lightPalette-violet.darkPalette-default.accentColor-darkMode-alternative-1,
@@ -3066,7 +3082,7 @@ body {
   --color-accent-1: #9bc859 !important;
   --color-accent-2: #5d802a !important;
   --color-accent-3: #41591e !important;
-  /* 	--OT-color-on-accent-1:			#D9EABF	!important; */
+  /*	--OT-color-on-accent-1:			#D9EABF	!important; */
   --OT-color-muted-on-accent-1: #4b6622 !important;
   --OT-color-on-accent-2: #e0eecc !important;
   --OT-color-on-accent-3: #d9eabf !important;
@@ -3081,7 +3097,7 @@ body {
   --color-accent-1: #99ddd6 !important;
   --color-accent-2: #40bfb3 !important;
   --color-accent-3: #26736b !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #2a7f77 !important;
   --OT-color-on-accent-2: #d9f2f0 !important;
   --OT-color-on-accent-3: #d9f2f0 !important;
@@ -3096,11 +3112,11 @@ body {
   --color-accent-1: #fbcb0c !important;
   --color-accent-2: #c09a03 !important;
   --color-accent-3: #6d5802 !important;
-  /* 	--OT-color-on-accent-1:					#fff	!important; */
+  /*	--OT-color-on-accent-1:					#fff	!important; */
   --OT-color-muted-on-accent-1: #7e6502 !important;
   --OT-color-on-accent-2: #fffae5 !important;
-  /* 	--OT-color-on-accent-3:					#fff	!important; */
-  /* 	--OT-view-header-title-no-focus-color:	#9E7F02; */
+  /*	--OT-color-on-accent-3:					#fff	!important; */
+  /*	--OT-view-header-title-no-focus-color:	#9E7F02; */
 }
 .theme-dark.lightPalette-yellow.darkPalette-default.accentColor-darkMode-alternative-1,
 .theme-dark.darkPalette-yellow.accentColor-darkMode-alternative-1 {
@@ -3112,8 +3128,8 @@ body {
   --color-accent-3: #0329c1 !important;
   --OT-color-on-accent-1: #var(--color-base-100) !important;
   --OT-color-muted-on-accent-1: #a4b5fd !important;
-  /* 	--OT-color-on-accent-2:				#fff	!important; */
-  /* 	--OT-color-on-accent-3:				#fff	!important; */
+  /*	--OT-color-on-accent-2:				#fff	!important; */
+  /*	--OT-color-on-accent-3:				#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
   --OT-button-cta-background-normal: #5072fc;
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
@@ -3126,10 +3142,10 @@ body {
   --color-accent-1: #fd71d3 !important;
   --color-accent-2: #c10388 !important;
   --color-accent-3: #7e0259 !important;
-  /* 	--OT-color-on-accent-1:			#fff	!important; */
+  /*	--OT-color-on-accent-1:			#fff	!important; */
   --OT-color-muted-on-accent-1: #8f0264 !important;
-  /* 	--OT-color-on-accent-2:			#fff	!important; */
-  /* 	--OT-color-on-accent-3:			#fff	!important; */
+  /*	--OT-color-on-accent-2:			#fff	!important; */
+  /*	--OT-color-on-accent-3:			#fff	!important; */
   --OT-button-ON-bg: var(--color-accent-1);
 }
 /* -------------------- ↑ OpSpl Accent Colors -------------------- ↑ */
@@ -3141,9 +3157,9 @@ body {
 .theme-light.textColor-lightMode-amber {
   --text-normal: #d97706;
   --link-color: #0769d9;
-  /* 	--h1-color:		#D97706; */
-  /* 	--h3-color:		#B45309; */
-  /* 	--h5-color:		#F59E0B; */
+  /*	--h1-color:		#D97706; */
+  /*	--h3-color:		#B45309; */
+  /*	--h5-color:		#F59E0B; */
 }
 .theme-light.textColor-lightMode-black {
   --text-normal: black;
@@ -3152,156 +3168,156 @@ body {
 .theme-light.textColor-lightMode-blue {
   --text-normal: var(--blue);
   --link-color: #646d10;
-  /* 	--h1-color:		#231697	; */
-  /* 	--h3-color:		#4433e1	; */
-  /* 	--h5-color:		#5b4ce5	; */
+  /*	--h1-color:		#231697	; */
+  /*	--h3-color:		#4433e1	; */
+  /*	--h5-color:		#5b4ce5	; */
 }
 .theme-light.textColor-lightMode-brown {
   --text-normal: #542200;
   --link-color: #005087;
-  /* 	--h1-color:		#763000; */
-  /* 	--h3-color:		#542200; */
-  /* 	--h5-color:		#8C706A; */
+  /*	--h1-color:		#763000; */
+  /*	--h3-color:		#542200; */
+  /*	--h5-color:		#8C706A; */
 }
 .theme-light.textColor-lightMode-cyan {
   --text-normal: #2d9ec6;
   --link-color: #c62d9e;
-  /* 	--h1-color:		#20728F; */
-  /* 	--h3-color:		#2788AA; */
-  /* 	--h5-color:		#79C5E0; */
+  /*	--h1-color:		#20728F; */
+  /*	--h3-color:		#2788AA; */
+  /*	--h5-color:		#79C5E0; */
 }
 .theme-light.textColor-lightMode-egg {
   --text-normal: #fce69f;
   --link-color: #6068ef;
-  /* 	--h1-color:		#FCE69F; */
-  /* 	--h3-color:		#FCE69F; */
-  /* 	--h5-color:		#FCE69F; */
+  /*	--h1-color:		#FCE69F; */
+  /*	--h3-color:		#FCE69F; */
+  /*	--h5-color:		#FCE69F; */
 }
 .theme-light.textColor-lightMode-emerald {
   --text-normal: #009b77;
   --link-color: #9b0071;
-  /* 	--h1-color:		#00795D; */
-  /* 	--h3-color:		#005743; */
-  /* 	--h5-color:		#004636; */
+  /*	--h1-color:		#00795D; */
+  /*	--h3-color:		#005743; */
+  /*	--h5-color:		#004636; */
 }
 .theme-light.textColor-lightMode-favoriteBlue {
   --text-normal: var(--favorite-blue);
   --link-color: #527522;
-  /* 	--h1-color:		#202770; */
-  /* 	--h3-color:		#202770; */
-  /* 	--h5-color:		#8182A2; */
+  /*	--h1-color:		#202770; */
+  /*	--h3-color:		#202770; */
+  /*	--h5-color:		#8182A2; */
 }
 .theme-light.textColor-lightMode-darkBlue {
   --text-normal: var(--dark-blue);
   --link-color: #527522;
-  /* 	--h1-color:		#202770; */
-  /* 	--h3-color:		#202770; */
-  /* 	--h5-color:		#8182A2; */
+  /*	--h1-color:		#202770; */
+  /*	--h3-color:		#202770; */
+  /*	--h5-color:		#8182A2; */
 }
 .theme-light.textColor-lightMode-fuchsia {
   --text-normal: #f400a0;
   --link-color: #00a0f4;
-  /* 	--h1-color:		#D2008A; */
-  /* 	--h3-color:		#FF06A9; */
-  /* 	--h5-color:		#9F0068; */
+  /*	--h1-color:		#D2008A; */
+  /*	--h3-color:		#FF06A9; */
+  /*	--h5-color:		#9F0068; */
 }
 .theme-light.textColor-lightMode-green {
   --text-normal: #0f7635;
   --link-color: #c11983;
-  /* 	--h1-color:		#0B5827; */
-  /* 	--h3-color:		#11853C; */
-  /* 	--h5-color:		#073A1A; */
+  /*	--h1-color:		#0B5827; */
+  /*	--h3-color:		#11853C; */
+  /*	--h5-color:		#073A1A; */
 }
 .theme-light.textColor-lightMode-indigo {
   --text-normal: #4b0082;
   --link-color: #378200;
-  /* 	--h1-color:		#5F00A4; */
-  /* 	--h3-color:		#410071; */
-  /* 	--h5-color:		#2E004F; */
+  /*	--h1-color:		#5F00A4; */
+  /*	--h3-color:		#410071; */
+  /*	--h5-color:		#2E004F; */
 }
 .theme-light.textColor-lightMode-lightBlue {
   --text-normal: var(--light-blue);
   --link-color: #a6e1a6;
-  /* 	--h1-color:		#8DB2D8; */
-  /* 	--h3-color:		#99BADD; */
-  /* 	--h5-color:		#B3CCE5; */
+  /*	--h1-color:		#8DB2D8; */
+  /*	--h3-color:		#99BADD; */
+  /*	--h5-color:		#B3CCE5; */
 }
 .theme-light.textColor-lightMode-lime {
   --text-normal: #00ee00;
   --link-color: #ee00ee;
-  /* 	--h1-color:		#00CC00; */
-  /* 	--h3-color:		#00DD00; */
-  /* 	--h5-color:		#008800; */
+  /*	--h1-color:		#00CC00; */
+  /*	--h3-color:		#00DD00; */
+  /*	--h5-color:		#008800; */
 }
 .theme-light.textColor-lightMode-orange {
   --text-normal: #e65c1c;
   --link-color: #1ca6e6;
-  /* 	--h1-color:		#D95518; */
-  /* 	--h3-color:		#E8672B; */
-  /* 	--h5-color:		#9C3D11; */
+  /*	--h1-color:		#D95518; */
+  /*	--h3-color:		#E8672B; */
+  /*	--h5-color:		#9C3D11; */
 }
 .theme-light.textColor-lightMode-pink {
   --text-normal: #f953a7;
   --link-color: #53a7f9;
-  /* 	--h1-color:		#F71185; */
-  /* 	--h3-color:		#F9429E; */
-  /* 	--h5-color:		#AD065A; */
+  /*	--h1-color:		#F71185; */
+  /*	--h3-color:		#F9429E; */
+  /*	--h5-color:		#AD065A; */
 }
 .theme-light.textColor-lightMode-purple {
   --text-normal: #5300a4;
   --link-color: #408200;
-  /* 	--h1-color:		#5300A4; */
-  /* 	--h3-color:		#4B0093; */
-  /* 	--h5-color:		#988EB2; */
+  /*	--h1-color:		#5300A4; */
+  /*	--h3-color:		#4B0093; */
+  /*	--h5-color:		#988EB2; */
 }
 .theme-light.textColor-lightMode-red {
   --text-normal: #da032a;
   --link-color: #0395da;
-  /* 	--h1-color:		#C90327; */
-  /* 	--h3-color:		#F20D36; */
-  /* 	--h5-color:		#A80220; */
+  /*	--h1-color:		#C90327; */
+  /*	--h3-color:		#F20D36; */
+  /*	--h5-color:		#A80220; */
 }
 .theme-light.textColor-lightMode-darkRed {
   --text-normal: #a33e16;
   --link-color: #167ba3;
-  /* 	--h1-color:		#C90327; */
-  /* 	--h3-color:		#F20D36; */
-  /* 	--h5-color:		#A80220; */
+  /*	--h1-color:		#C90327; */
+  /*	--h3-color:		#F20D36; */
+  /*	--h5-color:		#A80220; */
 }
 .theme-light.textColor-lightMode-rose {
   --text-normal: #fa74b8;
   --link-color: #53a7f9;
-  /* 	--h1-color:		#F964B0; */
-  /* 	--h3-color:		#F953A7; */
-  /* 	--h5-color:		#BD0763; */
+  /*	--h1-color:		#F964B0; */
+  /*	--h3-color:		#F953A7; */
+  /*	--h5-color:		#BD0763; */
 }
 .theme-light.textColor-lightMode-royalBlue {
   --text-normal: var(--royal-blue);
   --link-color: #51a300;
-  /* 	--h1-color:		#0000B4; */
-  /* 	--h3-color:		#000081; */
-  /* 	--h5-color:		#38386A; */
+  /*	--h1-color:		#0000B4; */
+  /*	--h3-color:		#000081; */
+  /*	--h5-color:		#38386A; */
 }
 .theme-light.textColor-lightMode-silver {
   --text-normal: silver;
   --link-color: #baa8f5;
-  /* 	--h1-color:		#C5C5C5; */
-  /* 	--h3-color:		#D6D6D6; */
-  /* 	--h5-color:		#8A8A8A; */
+  /*	--h1-color:		#C5C5C5; */
+  /*	--h3-color:		#D6D6D6; */
+  /*	--h5-color:		#8A8A8A; */
 }
 .theme-light.textColor-lightMode-skyBlue {
   --text-normal: var(--sky-blue);
   --link-color: #ff5024;
-  /* 	--h1-color:		#02CCFF; */
-  /* 	--h3-color:		#35D6FF; */
-  /* 	--h5-color:		#00A5CE; */
+  /*	--h1-color:		#02CCFF; */
+  /*	--h3-color:		#35D6FF; */
+  /*	--h5-color:		#00A5CE; */
 }
 .theme-light.textColor-lightMode-solarized-base00 {
   --text-normal: var(--solarized-base00);
   --link-color: var(--solarized-blue);
-  /* 	--h1-color:		var(--solarized-yellow); */
-  /* 	--h3-color:		var(--solarized-cyan); */
-  /* 	--h5-color:		var(--solarized-base1); */
+  /*	--h1-color:		var(--solarized-yellow); */
+  /*	--h3-color:		var(--solarized-cyan); */
+  /*	--h5-color:		var(--solarized-base1); */
 }
 .theme-light.textColor-lightMode-solarized-base01 {
   --text-normal: var(--solarized-base01);
@@ -3318,44 +3334,44 @@ body {
 .theme-light.textColor-lightMode-teal {
   --text-normal: #0c8c81;
   --link-color: #880d94;
-  /* 	--h1-color:		#0B7D73; */
-  /* 	--h3-color:		#11877D; */
-  /* 	--h5-color:		#75ABA4; */
+  /*	--h1-color:		#0B7D73; */
+  /*	--h3-color:		#11877D; */
+  /*	--h5-color:		#75ABA4; */
 }
 .theme-light.textColor-lightMode-terminalGreen {
   --text-normal: #22c55e;
   --link-color: #c52289;
-  /* 	--h1-color:		#22C55E; */
-  /* 	--h3-color:		#1DA850; */
-  /* 	--h5-color:		#136D34; */
+  /*	--h1-color:		#22C55E; */
+  /*	--h3-color:		#1DA850; */
+  /*	--h5-color:		#136D34; */
 }
 .theme-light.textColor-lightMode-violet {
   --text-normal: #7f00ff;
   --link-color: #4d9900;
-  /* 	--h1-color:		#6E00DD	; */
-  /* 	--h3-color:		#7700EE	; */
-  /* 	--h5-color:		#806A96	; */
+  /*	--h1-color:		#6E00DD	; */
+  /*	--h3-color:		#7700EE	; */
+  /*	--h5-color:		#806A96	; */
 }
 .theme-light.textColor-lightMode-yellow {
   --text-normal: #fbcd15;
   --link-color: #1441fa;
-  /* 	--h1-color:		#CA8A04; */
-  /* 	--h3-color:		#CA8A04; */
-  /* 	--h5-color:		#FECF86; */
+  /*	--h1-color:		#CA8A04; */
+  /*	--h3-color:		#CA8A04; */
+  /*	--h5-color:		#FECF86; */
 }
 .theme-light.textColor-lightMode-white {
   --text-normal: white;
   --link-color: #baa8f5;
-  /* 	--h1-color:		#C5C5C5; */
-  /* 	--h3-color:		#D6D6D6; */
-  /* 	--h5-color:		#8A8A8A; */
+  /*	--h1-color:		#C5C5C5; */
+  /*	--h3-color:		#D6D6D6; */
+  /*	--h5-color:		#8A8A8A; */
 }
 .theme-light.textColor-lightMode-zinc {
   --text-normal: #909096;
   --link-color: var(--obsidian-violet);
-  /* 	--h1-color:		#88888E; */
-  /* 	--h3-color:		#88888E; */
-  /* 	--h5-color:		#9F9FA4; */
+  /*	--h1-color:		#88888E; */
+  /*	--h3-color:		#88888E; */
+  /*	--h5-color:		#9F9FA4; */
 }
 
 /*	--------------------------------------------------	*/
@@ -3364,9 +3380,9 @@ body {
 .theme-dark.textColor-darkMode-amber {
   --text-normal: #d97706 !important;
   --link-color: #0769d9 !important;
-  /* 	--h1-color:		#D97706 !important; */
-  /* 	--h3-color:		#B45309 !important; */
-  /* 	--h5-color:		#F59E0B !important; */
+  /*	--h1-color:		#D97706 !important; */
+  /*	--h3-color:		#B45309 !important; */
+  /*	--h5-color:		#F59E0B !important; */
 }
 .theme-dark.textColor-darkMode-black {
   --text-normal: black !important;
@@ -3375,142 +3391,142 @@ body {
 .theme-dark.textColor-darkMode-blue {
   --text-normal: var(--blue) !important;
   --link-color: #646d10 !important;
-  /* 	--h1-color:		#231697	 !important; */
-  /* 	--h3-color:		#4433e1	 !important; */
-  /* 	--h5-color:		#5b4ce5	 !important; */
+  /*	--h1-color:		#231697	 !important; */
+  /*	--h3-color:		#4433e1	 !important; */
+  /*	--h5-color:		#5b4ce5	 !important; */
 }
 .theme-dark.textColor-darkMode-brown {
   --text-normal: #542200 !important;
   --link-color: #005087 !important;
-  /* 	--h1-color:		#763000 !important; */
-  /* 	--h3-color:		#542200 !important; */
-  /* 	--h5-color:		#8C706A !important; */
+  /*	--h1-color:		#763000 !important; */
+  /*	--h3-color:		#542200 !important; */
+  /*	--h5-color:		#8C706A !important; */
 }
 .theme-dark.textColor-darkMode-cyan {
   --text-normal: #2d9ec6 !important;
   --link-color: #c62d9e !important;
-  /* 	--h1-color:		#20728F !important; */
-  /* 	--h3-color:		#2788AA !important; */
-  /* 	--h5-color:		#79C5E0 !important; */
+  /*	--h1-color:		#20728F !important; */
+  /*	--h3-color:		#2788AA !important; */
+  /*	--h5-color:		#79C5E0 !important; */
 }
 .theme-dark.textColor-darkMode-egg {
   --text-normal: #fce69f !important;
   --link-color: #6068ef !important;
-  /* 	--h1-color:		#FCE69F !important; */
-  /* 	--h3-color:		#FCE69F !important; */
-  /* 	--h5-color:		#FCE69F !important; */
+  /*	--h1-color:		#FCE69F !important; */
+  /*	--h3-color:		#FCE69F !important; */
+  /*	--h5-color:		#FCE69F !important; */
 }
 .theme-dark.textColor-darkMode-emerald {
   --text-normal: #009b77 !important;
   --link-color: #9b0071 !important;
-  /* 	--h1-color:		#00795D !important; */
-  /* 	--h3-color:		#005743 !important; */
-  /* 	--h5-color:		#004636 !important; */
+  /*	--h1-color:		#00795D !important; */
+  /*	--h3-color:		#005743 !important; */
+  /*	--h5-color:		#004636 !important; */
 }
 .theme-dark.textColor-darkMode-favoriteBlue {
   --text-normal: var(--favorite-blue) !important;
   --link-color: #527522 !important;
-  /* 	--h1-color:		#202770 !important; */
-  /* 	--h3-color:		#202770 !important; */
-  /* 	--h5-color:		#8182A2 !important; */
+  /*	--h1-color:		#202770 !important; */
+  /*	--h3-color:		#202770 !important; */
+  /*	--h5-color:		#8182A2 !important; */
 }
 .theme-dark.textColor-darkMode-fuchsia {
   --text-normal: #f400a0 !important;
   --link-color: #00a0f4 !important;
-  /* 	--h1-color:		#D2008A !important; */
-  /* 	--h3-color:		#FF06A9 !important; */
-  /* 	--h5-color:		#9F0068 !important; */
+  /*	--h1-color:		#D2008A !important; */
+  /*	--h3-color:		#FF06A9 !important; */
+  /*	--h5-color:		#9F0068 !important; */
 }
 .theme-dark.textColor-darkMode-green {
   --text-normal: #0f7635 !important;
   --link-color: #c11983 !important;
-  /* 	--h1-color:		#0B5827 !important; */
-  /* 	--h3-color:		#11853C !important; */
-  /* 	--h5-color:		#073A1A !important; */
+  /*	--h1-color:		#0B5827 !important; */
+  /*	--h3-color:		#11853C !important; */
+  /*	--h5-color:		#073A1A !important; */
 }
 .theme-dark.textColor-darkMode-indigo {
   --text-normal: #4b0082 !important;
   --link-color: #378200 !important;
-  /* 	--h1-color:		#5F00A4 !important; */
-  /* 	--h3-color:		#410071 !important; */
-  /* 	--h5-color:		#2E004F !important; */
+  /*	--h1-color:		#5F00A4 !important; */
+  /*	--h3-color:		#410071 !important; */
+  /*	--h5-color:		#2E004F !important; */
 }
 .theme-dark.textColor-darkMode-lightBlue {
   --text-normal: #00ccff !important;
   --link-color: #ffb300 !important;
-  /* 	--h1-color:		#00B1DD !important; */
-  /* 	--h3-color:		#11CFFF !important; */
-  /* 	--h5-color:		#007A99 !important; */
+  /*	--h1-color:		#00B1DD !important; */
+  /*	--h3-color:		#11CFFF !important; */
+  /*	--h5-color:		#007A99 !important; */
 }
 .theme-dark.textColor-darkMode-lime {
   --text-normal: #00ee00 !important;
   --link-color: #ee00ee !important;
-  /* 	--h1-color:		#00CC00 !important; */
-  /* 	--h3-color:		#00DD00 !important; */
-  /* 	--h5-color:		#008800 !important; */
+  /*	--h1-color:		#00CC00 !important; */
+  /*	--h3-color:		#00DD00 !important; */
+  /*	--h5-color:		#008800 !important; */
 }
 .theme-dark.textColor-darkMode-orange {
   --text-normal: #e65c1c !important;
   --link-color: #1ca6e6 !important;
-  /* 	--h1-color:		#D95518 !important; */
-  /* 	--h3-color:		#E8672B !important; */
-  /* 	--h5-color:		#9C3D11 !important; */
+  /*	--h1-color:		#D95518 !important; */
+  /*	--h3-color:		#E8672B !important; */
+  /*	--h5-color:		#9C3D11 !important; */
 }
 .theme-dark.textColor-darkMode-pink {
   --text-normal: #f953a7 !important;
   --link-color: #53a7f9 !important;
-  /* 	--h1-color:		#F71185 !important; */
-  /* 	--h3-color:		#F9429E !important; */
-  /* 	--h5-color:		#AD065A !important; */
+  /*	--h1-color:		#F71185 !important; */
+  /*	--h3-color:		#F9429E !important; */
+  /*	--h5-color:		#AD065A !important; */
 }
 .theme-dark.textColor-darkMode-purple {
   --text-normal: #5300a4 !important;
   --link-color: #408200 !important;
-  /* 	--h1-color:		#5300A4 !important; */
-  /* 	--h3-color:		#4B0093 !important; */
-  /* 	--h5-color:		#988EB2 !important; */
+  /*	--h1-color:		#5300A4 !important; */
+  /*	--h3-color:		#4B0093 !important; */
+  /*	--h5-color:		#988EB2 !important; */
 }
 .theme-dark.textColor-darkMode-red {
   --text-normal: #da032a !important;
   --link-color: #0395da !important;
-  /* 	--h1-color:		#C90327 !important; */
-  /* 	--h3-color:		#F20D36 !important; */
-  /* 	--h5-color:		#A80220 !important; */
+  /*	--h1-color:		#C90327 !important; */
+  /*	--h3-color:		#F20D36 !important; */
+  /*	--h5-color:		#A80220 !important; */
 }
 .theme-dark.textColor-darkMode-rose {
   --text-normal: #fa74b8 !important;
   --link-color: #53a7f9 !important;
-  /* 	--h1-color:		#F964B0 !important; */
-  /* 	--h3-color:		#F953A7 !important; */
-  /* 	--h5-color:		#BD0763 !important; */
+  /*	--h1-color:		#F964B0 !important; */
+  /*	--h3-color:		#F953A7 !important; */
+  /*	--h5-color:		#BD0763 !important; */
 }
 .theme-dark.textColor-darkMode-royalBlue {
   --text-normal: var(--royal-blue) !important;
   --link-color: #51a300 !important;
-  /* 	--h1-color:		#0000B4 !important; */
-  /* 	--h3-color:		#000081 !important; */
-  /* 	--h5-color:		#38386A !important; */
+  /*	--h1-color:		#0000B4 !important; */
+  /*	--h3-color:		#000081 !important; */
+  /*	--h5-color:		#38386A !important; */
 }
 .theme-dark.textColor-darkMode-silver {
   --text-normal: silver !important;
   --link-color: #baa8f5 !important;
-  /* 	--h1-color:		#C5C5C5 !important; */
-  /* 	--h3-color:		#D6D6D6 !important; */
-  /* 	--h5-color:		#8A8A8A !important; */
+  /*	--h1-color:		#C5C5C5 !important; */
+  /*	--h3-color:		#D6D6D6 !important; */
+  /*	--h5-color:		#8A8A8A !important; */
 }
 .theme-dark.textColor-darkMode-sky {
   --text-normal: var(--sky-blue) !important;
   --link-color: #ff5024 !important;
-  /* 	--h1-color:		#02CCFF !important; */
-  /* 	--h3-color:		#35D6FF !important; */
-  /* 	--h5-color:		#00A5CE !important; */
+  /*	--h1-color:		#02CCFF !important; */
+  /*	--h3-color:		#35D6FF !important; */
+  /*	--h5-color:		#00A5CE !important; */
 }
 .theme-dark.textColor-darkMode-solarized-base0 {
   --text-normal: var(--solarized-base0) !important;
   --link-color: var(--solarized-blue) !important;
-  /* 	--h1-color:		var(--solarized-yellow) !important; */
-  /* 	--h3-color:		var(--solarized-cyan) !important; */
-  /* 	--h5-color:		var(--solarized-base1) !important; */
+  /*	--h1-color:		var(--solarized-yellow) !important; */
+  /*	--h3-color:		var(--solarized-cyan) !important; */
+  /*	--h5-color:		var(--solarized-base1) !important; */
 }
 .theme-dark.textColor-darkMode-solarized-base1 {
   --text-normal: var(--solarized-base1) !important;
@@ -3523,30 +3539,30 @@ body {
 .theme-dark.textColor-darkMode-teal {
   --text-normal: #0c8c81 !important;
   --link-color: #880d94 !important;
-  /* 	--h1-color:		#0B7D73 !important; */
-  /* 	--h3-color:		#11877D !important; */
-  /* 	--h5-color:		#75ABA4 !important; */
+  /*	--h1-color:		#0B7D73 !important; */
+  /*	--h3-color:		#11877D !important; */
+  /*	--h5-color:		#75ABA4 !important; */
 }
 .theme-dark.textColor-darkMode-terminalGreen {
   --text-normal: #22c55e !important;
   --link-color: #c52289 !important;
-  /* 	--h1-color:		#22C55E !important; */
-  /* 	--h3-color:		#1DA850 !important; */
-  /* 	--h5-color:		#136D34 !important; */
+  /*	--h1-color:		#22C55E !important; */
+  /*	--h3-color:		#1DA850 !important; */
+  /*	--h5-color:		#136D34 !important; */
 }
 .theme-dark.textColor-darkMode-violet {
   --text-normal: #7f00ff !important;
   --link-color: #4d9900 !important;
-  /* 	--h1-color:		#6E00DD	 !important; */
-  /* 	--h3-color:		#7700EE	 !important; */
-  /* 	--h5-color:		#806A96	 !important; */
+  /*	--h1-color:		#6E00DD	 !important; */
+  /*	--h3-color:		#7700EE	 !important; */
+  /*	--h5-color:		#806A96	 !important; */
 }
 .theme-dark.textColor-darkMode-yellow {
   --text-normal: #fbcd15 !important;
   --link-color: #1441fa !important;
-  /* 	--h1-color:		#CA8A04 !important; */
-  /* 	--h3-color:		#CA8A04 !important; */
-  /* 	--h5-color:		#FECF86 !important; */
+  /*	--h1-color:		#CA8A04 !important; */
+  /*	--h3-color:		#CA8A04 !important; */
+  /*	--h5-color:		#FECF86 !important; */
 }
 .theme-dark.textColor-darkMode-white {
   --text-normal: white !important;
@@ -3554,9 +3570,9 @@ body {
 .theme-dark.textColor-darkMode-zinc {
   --text-normal: #909096 !important;
   --link-color: var(--obsidian-violet) !important;
-  /* 	--h1-color:		#88888E !important; */
-  /* 	--h3-color:		#88888E !important; */
-  /* 	--h5-color:		#9F9FA4 !important; */
+  /*	--h1-color:		#88888E !important; */
+  /*	--h3-color:		#88888E !important; */
+  /*	--h5-color:		#9F9FA4 !important; */
 }
 /* -------------------- ↑ Text Color Themes ↑ -------------------- ↑ */
 
@@ -5304,6 +5320,11 @@ input[type="checkbox"] {
   color: var(--OT-color-on-accent-2);
   background-color: var(--color-accent-2);
 }
+/*	je ne sais pas pourquoi le plugin “Note Status” rend invisible ce bouton ⭢ je le rétablis	*/
+.search-input-clear-button,
+.note-status-search-clear-button {
+  opacity: 1;
+}
 
 /*	Bookmark	OpSpl21	*/
 /* —————————————————————————————— OpSpl Sidebars —————————————————————————————— */
@@ -5374,25 +5395,29 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 /*	Bookmark	OpSpl22	*/
-/*	panneaux de suggestions pour les recherches	*/
-.search-suggest-info-text {
-  color: var(--OT-color-muted-on-base-20);
-}
+/*	panneaux de suggestions et prompts	*/
 .suggestion-container {
   /*	le texte général des container de sélection	*/
   color: var(--OT-menu-text-color);
   background-color: var(--OT-menu-background);
 }
+.suggestion-item.is-selected {
+  color: var(--OT-color-on-accent-1);
+}
 .suggestion-item.mod-complex .suggestion-note {
   /*	le texte complémentaire dans les containers de sélection	*/
-  color: var(--OT-color-muted-on-base-20);
+  /*	color:	cyan;	*/ /*	var(--OT-color-muted-on-base-20);	*/
 }
-.suggestion-item.mod-complex.is-selected .suggestion-note {
-  /*	le texte complémentaire dans la sélection	*/
+.suggestion-item.mod-complex.is-selected .suggestion-note,
+.suggestion-item.mod-complex.is-selected .search-suggest-info-text,
+.suggestion-item.mod-complex.is-selected .suggestion-flair {
   color: var(--OT-color-muted-on-accent-1);
 }
 .suggestion-empty-suggestion {
   color: var(--OT-color-muted-on-accent-1);
+}
+.search-suggest-info-text {
+  color: var(--OT-color-muted-on-base-20);
 }
 .search-suggest-item:hover {
   &.is-selected {
@@ -5405,6 +5430,21 @@ input[type="range"]::-webkit-slider-thumb:hover {
     color: var(--OT-color-muted-on-accent-1);
   }
 }
+/*	panneau de réglage des résultats de la recherche	*/
+.search-params .setting-item-name {
+  color: var(--OT-search-settings-item-name);
+}
+
+/*	———————————————————— Prompts	———————————————————— */
+.prompt {
+  color: var(--OT-menu-text-color);
+  background-color: var(--OT-menu-background);
+}
+input.prompt-input {
+  /*	background-color:	var(--background-modifier-form-field); */
+}
+/*	-------------------- ↑ Prompts ↑	-------------------- */
+
 .tree-item.search-result:hover {
   & .is-clickable {
     color: var(--OT-color-on-accent-1) !important;
@@ -5491,7 +5531,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 }
 
 .nav-file-title {
-  /* 	border-bottom:	1px dotted var(--OT-color-on-base-20); */
+  /*	border-bottom:	1px dotted var(--OT-color-on-base-20); */
 }
 /* ------------------------------ ↑ OpSpl Sidebars ↑ ------------------------------ */
 
@@ -6076,7 +6116,7 @@ button.mod-muted {
   color: var(--OT-color-on-accent-3);
   background-color: var(--color-accent-3);
 }
-media (hover: hover) {
+@media (hover: hover) {
   .document-search-close-button:hover {
     color: var(--OT-button-text-hover);
     background-color: var(--OT-button-background-hover);
@@ -6169,7 +6209,8 @@ media (hover: hover) {
 .view-header .clickable-icon {
   color: var(--OT-clickable-icon-in-header);
 }
-.clickable-icon.is-active {
+.clickable-icon.is-active,
+.view-header .clickable-icon.button-active {
   color: var(--OT-color-on-accent-2);
   background-color: var(--color-accent-2);
 }
@@ -6185,7 +6226,8 @@ media (hover: hover) {
   }
 }
 @media (hover: hover) {
-  .clickable-icon.is-active:hover {
+  .clickable-icon.is-active:hover,
+  .view-header .clickable-icon.button-active:hover {
     color: var(--OT-color-on-accent-1);
     background-color: var(--color-accent-1);
   }
@@ -6799,14 +6841,14 @@ body.headings-scaling-major-third {
 */
 .cm-header-1,
 .markdown-preview-section h1,
-markdown-rendered h1 {
+.markdown-rendered h1 {
   letter-spacing: 0.01em; /* à cause de la graisse et des petites capitales, pour améliorer la lisibilité */
   margin-bottom: 1em;
 }
 
 .cm-header-2,
 .markdown-preview-section h2,
-markdown-rendered h2 {
+.markdown-rendered h2 {
   letter-spacing: 0.02em; /* à cause de la graisse et des petites capitales, pour améliorer la lisibilité */
   line-height: 1em; /* vu qu’on est en petites capitales, cela n’a pas de sens que les lignes soient plus écartées que tant */
   --heading-spacing: 1.618em;
@@ -6815,21 +6857,21 @@ markdown-rendered h2 {
 
 .cm-header-3,
 .markdown-preview-section h3,
-markdown-rendered h3 {
+.markdown-rendered h3 {
   --heading-spacing: 1.618em;
   margin-bottom: 0.4rem;
 }
 
 .cm-header-4,
 .markdown-preview-section h4,
-markdown-rendered h4 {
+.markdown-rendered h4 {
   --heading-spacing: 1em;
   margin-bottom: 0.2rem;
 }
 
 .cm-header-5,
 .markdown-preview-section h5,
-markdown-rendered h5 {
+.markdown-rendered h5 {
   --heading-spacing: 1em;
   margin-bottom: 0.2rem;
 }
@@ -6933,7 +6975,18 @@ body:not(.is-mobile) .kanban-plugin__grow-wrap > textarea:focus {
 
 /*	Bookmark	OpSpl39	*/
 /* —————————————————————————————— Links —————————————————————————————— */
-
+.external-link {
+  /*	an alternative symbol, in SVG format, in order to better allign vertically	*/
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 128 128"><path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path></svg>');
+  padding-inline-end: 1.03em; /*	to push slightly to the right the symbol marking external links	*/
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 0.825em;
+}
+/*	dark mode version	*/
+.theme-dark .external-link {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,255.99902,255.99902"><g fill="%23eeeeee" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(2,2)"><path d="M84,11c-1.7,0 -3,1.3 -3,3c0,1.7 1.3,3 3,3h22.80078l-46.40039,46.40039c-1.2,1.2 -1.2,3.09922 0,4.19922c0.6,0.6 1.39961,0.90039 2.09961,0.90039c0.7,0 1.49961,-0.30039 2.09961,-0.90039l46.40039,-46.40039v22.80078c0,1.7 1.3,3 3,3c1.7,0 3,-1.3 3,-3v-30c0,-1.7 -1.3,-3 -3,-3zM24,31c-7.2,0 -13,5.8 -13,13v60c0,7.2 5.8,13 13,13h60c7.2,0 13,-5.8 13,-13v-45c0,-1.7 -1.3,-3 -3,-3c-1.7,0 -3,1.3 -3,3v45c0,3.9 -3.1,7 -7,7h-60c-3.9,0 -7,-3.1 -7,-7v-60c0,-3.9 3.1,-7 7,-7h45c1.7,0 3,-1.3 3,-3c0,-1.7 -1.3,-3 -3,-3z"></path></g></g></svg>');
+}
 /* ---------- Lien vers une image inexistante  */
 .file-embed.mod-empty-attachment,
 .file-embed.mod-generic,
@@ -6946,7 +6999,8 @@ a:hover,
 .external-link:hover,
 .markdown-rendered .internal-link:hover,
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
-.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover,
+.cm-s-obsidian span.cm-link:hover {
   color: var(--OT-color-on-accent-1);
   background-color: var(--color-accent-1);
 }
@@ -7327,18 +7381,7 @@ kbd {
 }
 
 /*	Bookmark	OpSpl49	*/
-/*	———————————————————— Prompts	———————————————————— */
-.prompt {
-  --text-muted: var(--OT-color-muted-on-base-20);
-  color: var(--OT-color-on-base-20);
-  background-color: var(--background-secondary);
-}
-input.prompt-input {
-  background-color: var(--background-modifier-form-field);
-}
-/*	-------------------- ↑ Prompts ↑	-------------------- */
-
-/*	———————————————————— Empty pannel	———————————————————— */
+/*	———————————————————— Empty pane	———————————————————— */
 .empty-state-action-list {
   font-size: var(--font-text-size);
   line-height: var(--line-height-tight);
@@ -7347,7 +7390,7 @@ input.prompt-input {
 }
 .empty-state-action {
   cursor: var(--cursor);
-  /* 	line-height: 		2rem; */
+  /*	line-height: 		2rem; */
   color: var(--OT-menu-text-color);
   background-color: var(--OT-menu-background);
   padding: 0.1em 0.5em;
@@ -7360,11 +7403,6 @@ input.prompt-input {
   }
 }
 /*	-------------------- ↑ Empty pannel ↑	-------------------- */
-
-/*	panneau de réglage des résultats de la recherche	*/
-.search-params .setting-item-name {
-  color: var(--OT-search-settings-item-name);
-}
 
 /*	Bookmark	OpSpl50	*/
 /*	———————————————————— Mise en évidence du texte trouvé (“search match”) dans les panneaux d’édition	———————————————————— */
@@ -7421,7 +7459,7 @@ input.prompt-input {
 /*	———————————————————— Floating TOC plugin ————————————————————	*/
 .theme-light,
 .theme-dark {
-  /* 	--floating-toc-font-color:				var(--text-normal)	!important; */
+  /*	--floating-toc-font-color:				var(--text-normal)	!important; */
   --floating-toc-hover-color: var(--OT-color-on-accent-1) !important;
   --floating-toc-font-size: var(--font-ui-small) !important;
   --floating-toc-background-color: var(--background-secondary) !important;
@@ -7432,8 +7470,8 @@ input.prompt-input {
   --floating-toc-highlight-color-rgb: 255, 128, 0 !important;
   --floating-toc-line-color: var(--OT-color-on-accent-2) !important;
   --floating-toc-line-height: 1.2rem !important;
-  /* 	--floating-toc-line-width:				26rem	!important; */
-  /* 	--actual-toc-width:						26rem	!important; */
+  /*	--floating-toc-line-width:				26rem	!important; */
+  /*	--actual-toc-width:						26rem	!important; */
   --floating-toc-response-time: 0s !important;
 }
 
@@ -7597,10 +7635,13 @@ body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-act
 
 /*	Bookmark	OpSpl55	*/
 /*	———————————————————— QuickAdd plugin  ————————————————————	*/
+.wideInputPromptInputEl {
+  font-family: var(--editor-font-family);
+}
 /*	pour afficher plus grand le texte dans la boite de dialogue de saisie, quand l’écran est suffisamment grand	*/
 @media screen and (min-width: 781px) {
   .wideInputPromptInputEl {
-    font-size: var(--font-ui-large);
+    /*		font-size:		var(--font-ui-large); */
   }
 }
 /*	---------- ↑ QuickAdd plugin ↑ ----------	*/
@@ -7610,7 +7651,40 @@ body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-act
 .another-quick-switcher__custom__item__title {
   font-weight: 600; /*	700 (plugin’s default) is too much for my taste	*/
 }
+.suggestion-item.is-selected .another-quick-switcher__item {
+  color: var(--OT-color-on-accent-1);
+}
+.suggestion-item.is-selected .another-quick-switcher__item__description,
+.suggestion-item.is-selected .another-quick-switcher__item__directory {
+  color: var(--OT-color-muted-on-accent-1);
+}
+.another-quick-switcher__item__directory {
+  /*	color:	var(--OT-color-muted-on-base-20); */
+}
+.another-quick-switcher__item__extension {
+  color: var(--OT-color-on-accent-1);
+  background-color: var(--color-accent-1);
+}
 /*	---------- ↑ Another Quick Switcher plugin ↑ ----------	*/
+
+/*	———————————————————— Omnisearch plugin  ————————————————————	*/
+.omnisearch-result.is-selected .omnisearch-result__counter,
+.omnisearch-result.is-selected .omnisearch-result__folder-path,
+.omnisearch-result.is-selected .omnisearch-result__icon,
+.omnisearch-result.is-selected .omnisearch-result__body {
+  color: var(--OT-color-muted-on-accent-1);
+}
+.omnisearch-default-highlight {
+  color: var(--OT-stabilo-text);
+  background-color: var(--OT-stabilo-mark);
+}
+/*	séparons visuellement les résultats, fiche par fiche	*/
+.svelte-lazy {
+  border-top: 1px dotted var(--color-base-100);
+  border-bottom: 1px dotted var(--color-base-100);
+}
+
+/*	---------- ↑ Omnisearch plugin ↑ ----------	*/
 
 /*	Bookmark	OpSpl57	*/
 /*	———————————————————— Highlight active folder section plugin  ————————————————————	*/
@@ -7637,7 +7711,7 @@ body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-act
 .highlighted-folder .nav-file-title {
   /*	tous les noms de fichiers	*/
   color: var(--highlighted-folder-text-color);
-  /* 	background-color:	pink !important; */
+  /*	background-color:	pink !important; */
 }
 .highlighted-folder .nav-file-title.is-active {
   /*	le fichier courant	*/
@@ -7775,10 +7849,10 @@ body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-act
   border-radius: var(--radius-s);
   color: var(--OT-button-text-normal);
   background-color: var(--OT-button-background-normal);
-  /* 	margin:				var(--size-2-1); */
-  /* 	border:				none; */
-  /* 	cursor:				pointer; */
-  /* 	transition:			background-color 0.15s ease; */
+  /*	margin:				var(--size-2-1); */
+  /*	border:				none; */
+  /*	cursor:				pointer; */
+  /*	transition:			background-color 0.15s ease; */
 }
 .related-note-link-button:hover {
   color: var(--OT-button-background-normal);
@@ -7831,6 +7905,88 @@ body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-act
   background: transparent;
 }
 /*	---------- ↑ Note Status plugin ↑ ----------	*/
+
+/*	Bookmark	OpSpl60	*/
+/*	———————————————————— Dynamic Outline plugin  ————————————————————	*/
+body {
+  /*	for now (13.06.2025), I’m deliberately inhibiting the change of colors inside the modal, because it ruins the logic of the whole theme, especially in “inverted” themes, like “metallic blue”, where modals have a dark background	*/
+  --dynamic-outline-h1-text-color: var(--OT-menu-text-color) !important;
+  --dynamic-outline-h2-text-color: var(--OT-menu-text-color) !important;
+  --dynamic-outline-h3-text-color: var(--OT-menu-text-color) !important;
+  --dynamic-outline-h4-text-color: var(--OT-menu-text-color) !important;
+  --dynamic-outline-h5-text-color: var(--OT-menu-text-color) !important;
+  --dynamic-outline-h6-text-color: var(--OT-menu-text-color) !important;
+}
+#dynamic-outline {
+  background-color: var(--OT-menu-background);
+  color: var(--OT-menu-text-color);
+}
+#dynamic-outline li {
+  padding: 1px 0;
+}
+.dynamic-outline-collapse-icon {
+  color: var(--OT-menu-text-color);
+}
+#dynamic-outline li.collapsed > .dynamic-outline-collapse-icon {
+  color: var(--OT-color-on-accent-3);
+}
+.dynamic-outline-collapse-icon:hover {
+  color: var(--OT-color-on-accent-1) !important;
+  background: var(--color-accent-1);
+}
+#dynamic-outline li:hover *,
+#dynamic-outline li.highlight:hover,
+#dynamic-outline li.hovered,
+#dynamic-outline li.highlight.hovered {
+  background-color: var(--color-accent-1) !important;
+  color: var(--OT-color-on-accent-1) !important;
+}
+#dynamic-outline li:hover::before,
+#dynamic-outline li:has(.dynamic-outline-collapse-icon:hover)::before,
+#dynamic-outline li:has(a:hover)::before {
+  color: var(--OT-color-on-accent-1) !important;
+  background: var(--color-accent-1) !important;
+}
+#dynamic-outline li.highlight {
+  background-color: var(--color-accent-3);
+  color: var(--OT-color-on-accent-3) !important;
+}
+#dynamic-outline li.highlight::before,
+#dynamic-outline li.highlight::after {
+  color: var(--color-accent-2) !important;
+}
+.heading-level-styling-1 #dynamic-outline li::before,
+.heading-level-styling-2 #dynamic-outline li::before {
+  color: var(--OT-color-muted-on-base-20);
+}
+#dynamic-outline li a {
+  color: var(--OT-menu-text-color);
+}
+.heading-level-styling-1 #dynamic-outline li.hovered::before,
+.heading-level-styling-2 #dynamic-outline li.hovered::before {
+  color: var(--OT-color-muted-on-accent-1);
+}
+#dynamic-outline li a.heading-level-1,
+#dynamic-outline li a.heading-level-2,
+#dynamic-outline li a.heading-level-3,
+#dynamic-outline li a.heading-level-4,
+#dynamic-outline li a.heading-level-5,
+#dynamic-outline li a.heading-level-6 {
+  color: var(--OT-menu-text-color);
+}
+.dynamic-outline-button.button-active,
+.dynamic-outline-button.button-active.pinned {
+  color: var(--OT-color-on-accent-2);
+  background-color: var(--color-accent-2);
+}
+.dynamic-outline-button.button-active:hover {
+  color: var(--OT-color-on-accent-1) !important;
+  background-color: var(--color-accent-1) !important;
+}
+.dynamic-outline-button.pinned {
+  color: var(--OT-menu-text-color);
+}
+/*	---------- ↑ Dynamic Outline plugin ↑ ----------	*/
 
 /*	Bookmark	OpSpl90	*/
 /*	———————————————————— Some useful CSSCLASSES ————————————————————	*/
@@ -7927,40 +8083,8 @@ input[type="number"]::placeholder {
 .workspace-split.mod-horizontal.mod-right-split .empty-state-container {
   color: var(--OT-color-on-base-20);
 }
+
 /* ———————————————————————————————————————————————————————————————————————————————————————————————	*/
-
-/*	Pour les plugins “OmniSearch” et “Another Quick Switcher”	*/
-.another-quick-switcher__item__directory,
-.omnisearch-result__body {
-  color: var(--OT-color-muted-on-base-20);
-}
-
-.another-quick-switcher__item__extension {
-  color: var(--OT-color-on-accent-1);
-  background-color: var(--color-accent-1);
-}
-
-.suggestion-item.is-selected,
-.suggestion-item.is-selected .another-quick-switcher__item__description__link,
-.suggestion-item.is-selected .another-quick-switcher__item__description__tag,
-.suggestion-item.is-selected .another-quick-switcher__item__directory,
-.suggestion-item.is-selected .omnisearch-result__body {
-  --text-muted: var(--OT-color-muted-on-accent-1);
-  color: var(--OT-color-on-accent-1);
-  background-color: var(--color-accent-1);
-}
-.suggestion-item.is-selected .omnisearch-result__title {
-  color: var(--OT-color-on-accent-1);
-  background-color: var(--color-accent-1);
-}
-
-/*	----- Pour le plugin “Better Command Palette” -----	*/
-.better-command-palette {
-  --text-faint: var(--color-base-70);
-}
-.better-command-palette .better-command-palette-title {
-  color: var(--color-base-100);
-}
 
 /*	pour que l’indicateur de la recherche “case sensitive” soit visible quand ce mode est actif	*/
 .input-right-decorator.clickable-icon.is-active {
@@ -8003,7 +8127,7 @@ settings:
 			title:		Base size for the interface texts [px]
 			title.fr:	Taille de base pour les caractères de l’interface [px]
 			type:		variable-number
-			default:	15
+			default:	18
 			format:		px
 	-
 			id:			OT-filesNavigator-spacing

@@ -27,6 +27,10 @@ body {
   --background-modifier-hover: var(--background-secondary);
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
   --nav-item-parent-padding: 0em 0.5em 0.15em 0.5em; /*var(--nav-item-padding)*/
+  --p-spacing: 0.75em;
+  --link-decoration-hover: none;
+  --embed-padding: 0 0 0 var(--size-4-6);
+  --heading-spacing: calc(var(--p-spacing));
 }
 
 /* ======= DARK ============== */
@@ -60,7 +64,7 @@ body {
   --scrollbar-active-thumb-bg: rgba(62, 147, 216, 0.8); /*rgba(255,255,255,0.2)*/
   --scrollbar-bg: rgba(255, 255, 255, 0);
   --scrollbar-thumb-bg: rgb(20, 20, 20); /*rgba(81,144,175,0.2)*/
-  --accent-strong: #ec5151; /*#EC7272*/ /*#ec0d0d*/ /*#EC5151*/
+  --accent-strong: #ec5151; /*#EC7272*/ /*#ec0d0d*/
   --color-green: #4a8069;
   --color-orange: #de9d07; /*#f67c09*/
   --color-H1: rgb(255, 255, 255);
@@ -99,7 +103,7 @@ body {
   --text-accent: #269dff; /* link color */
   --text-accent-hover: #66baff; /*#2da4ff*/
   --text-accent-hover-dark: #4e8ae4;
-  --text-normal: #2e3338; /*#269DFF*/
+  --text-normal: #2e3338; /* #269DFF */
   --text-muted: #6e6e6e;
   --text-faint: #999999;
   --text-error: #ce2222;
@@ -139,8 +143,20 @@ body {
   font-size: 17px !important;
 }
 
-.markdown-source-view.mod-cm6 .cm-scroller {
-  padding: 20px 20px 20px 50px;
+/*styling the different modes - editor, source, live preview - to look the same*/
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+  padding: 30px 10px 30px 45px;
+}
+.markdown-rendered p {
+  margin-block-start: var(--p-spacing); /*var(--p-spacing)*/
+  margin-block-end: var(--p-spacing); /*var(--p-spacing)*/
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+  padding-top: var(--p-spacing);
+}
+.cm-s-obsidian .cm-line.HyperMD-header {
+  padding-top: 0px;
 }
 
 /* =============== Dark mode images =======================  */
@@ -229,79 +245,59 @@ body {
 }
 
 /*==============TRANSCLUSION TWEAKS=============*/
+
 .markdown-embed-title {
-  font-family: sans-serif;
-  font-size: 10px;
-  color: var(--text-accent); /*rgb(150,200,255)*/
-  line-height: 10px;
-  width: 100%;
-  text-align: left;
-  font-weight: 100;
-  margin: -4px 0px;
+  display: none;
 }
+.markdown-embed-link,
+.file-embed-link {
+  /*left: 0px; */
+  color: var(--text-muted);
+  cursor: pointer;
+  background-color: var(--background-primary);
+  /*position: absolute;*/
+  /*margin: 0px 0px 0px -8px;*/
+  /*display: flex; */
+  opacity: 100%;
+  position: absolute;
+  width: 20px;
+  --icon-size: 12px;
+}
+
 .markdown-preview-view .markdown-embed {
   background-color: var(--background-primary);
   border-radius: 0px;
-  border: 0;
-  border-left: 1px solid var(--text-selection);
-  margin: 0px -20px;
+  border: 0px;
+  border-left: 2px solid var(--background-secondary);
+  margin: 10px 0px 0px -25px;
 }
-.markdown-embed {
-  display: block;
+.markdown-preview-view .markdown-embed-link {
   top: 0px;
+  margin: 0px 0px 0px -5px; /*this controls placement of link icon*/
 }
-.markdown-embed > .markdown-embed-content {
-  display: inline;
-  max-height: 100%;
-  max-width: 100%;
-  /*margin: -25px 0px -15px 0px;*/
-  /*padding: 0px 0px 5px 0px;*/
-}
-.markdown-embed .markdown-preview-view {
-  padding: 0px 10px 0px 10px;
-}
-.markdown-embed-content > * {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 10px 0px 0px 0px;
-}
-.markdown-embed-link {
-  top: -3px;
-  left: -20px;
-  color: var(--accent-strong);
-  cursor: pointer;
+.markdown-source-view .markdown-embed-link {
   position: absolute;
+  top: 0px;
+  left: 1px;
+  /*margin: 0px 0px 0px 0px;*/ /*this controls placement of link icon*/
+}
+.markdown-embed-link:hover {
+  color: var(--text-accent);
+}
+.markdown-source-view .markdown-embed {
+  padding: 0px 0px 0px 25px;
+  border: 0px;
+  border-left: 2px solid var(--background-secondary);
+}
+/*placement of the link icon for live preview view*/
+.markdown-preview-view .markdown-embed-link,
+.file-embed-link {
+  left: -6px;
 }
 
-.file-embed-link {
-  top: 10px;
-  left: -10px;
-  color: var(--accent-strong);
-  cursor: pointer;
-  position: relative;
-}
-.internal-embed,
-.internal-embed > .markdown-embed > .markdown-embed-content {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  left: 0px;
-}
-.markdown-preview-view .file-embed {
-  background-color: var(--background-primary);
-  border-radius: 4px;
-  /*border: 2px solid var(--text-selection);*/
-  padding: 5px 20px 5px 20px;
-  margin: 10px 0px 10px 0px;
-}
-.file-embed-title {
-  font-size: 12px;
-  height: 40px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
+/*.markdown-rendered > .markdown-preview-section > div:last-child > :last-child {
+    margin-bottom: 1em; } /*if you want to add a space below the transclusion*/
+
 /* ===========================*/
 /* ====== GUI tweaks =========*/
 /* ===========================*/
@@ -363,11 +359,11 @@ body {
   justify-content: center;
 }
 
-.is-mobile .nav-action-button > svg {
-  width: 24px;
-  height: 24px;
-  margin: 5px;
-}
+/*.is-mobile .nav-action-button > svg {
+    width : 24px;
+    height : 24px;
+    margin: 5px;
+}*/
 
 /*file explorer and tag pane icons - global, not positioning*/
 .nav-action-button > svg {
@@ -411,8 +407,10 @@ body {
 	border-radius: 0px;*/
 }
 .tree-item-self:hover .tree-item-flair {
-  background-color: var(--text-accent);
+  background-color: var(--interactive-accent-hover-dark);
   color: var(--text-normal);
+  padding: 0.25em;
+  border-radius: 2px;
 }
 
 /* Left Nav menu item / file explorer - hover background color, highlight */
@@ -459,6 +457,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   padding-left: 0;
   padding-right: var(--size-4-2);
   position: relative;
+}
+
+.callout {
+  border-radius: 0px;
 }
 
 /* ==== file explorer smaller fonts & line height ==== */
@@ -514,7 +516,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 /* ===== selection highlight in quick switcher ==== */
 .suggestion-item.is-selected {
-  background-color: var(--text-accent);
+  background-color: var(--text-accent-hover-dark);
 }
 
 /* ====== scrollbars:no rounded corners =========*/
@@ -536,7 +538,24 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   width: 0px;
   height: 100%;
 }
-/* ====== font size headers =========*/
+
+/* ====== HEADERS =========*/
+
+/*fixing spacing below header*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: var(--p-spacing);
+  margin-block-end: var(--p-spacing);
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+  padding-top: var(--p-spacing); /*var(--p-spacing)*/
+}
+
 .view-header-title {
   font-size: 14px;
   font-weight: 600;
@@ -579,19 +598,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .is-mobile .markdown-preview-view {
   padding: 30px 10px 30px 45px;
 }
-/* a bit more padding on the left side in edit mode*/
-.CodeMirror-lines {
-  padding: 30px 10px 30px 45px;
-}
-
-/*fixing edit to look like preview*/
-.cm-s-obsidian .HyperMD-list-line {
-  padding-top: 0em;
-}
-
-/*p {
-	margin: 0em;
-}*/
 
 /*===== backlink pane smaller fonts=======*/
 .side-dock-collapsible-section-header {
@@ -744,6 +750,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 /*==== add mods below =====*/
 
 /*==== CODE BLOCK MODIFICATIONS ====*/
+.markdown-source-view.mod-cm6 .code-block-flair {
+  display: none;
+}
 .theme-light pre {
   background: #f0f2f5;
   text-shadow: 0 0px white;
@@ -850,24 +859,43 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 /*internal and external link underline*/
-
 .theme-light.links-ext-on .external-link,
 .external-link {
   text-decoration: none;
 }
 
-.links-int-on .markdown-preview-view .internal-link,
+/*.links-int-on .markdown-preview-view .internal-link,
 .markdown-preview-view .internal-link {
-  text-decoration: none;
-}
+  text-decoration:none;
+}*/
 
 /*color of internal links, unresolved or uncreated links*/
 .markdown-preview-view .internal-link.is-unresolved {
   opacity: 0.5;
 }
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  text-decoration-line: var(--link-decoration);
+  text-decoration-style: var(--link-unresolved-decoration-style);
+  text-decoration-color: var(--link-unresolved-decoration-color);
+  color: var(--link-unresolved-color);
+}
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover {
+  text-decoration-line: var(--link-decoration-hover);
+}
 
 .markdown-source-view.mod-cm6 .cm-underline {
   text-decoration: none;
+}
+
+/*changing link color preview view*/
+.metadata-property-value .internal-link,
+.markdown-rendered .internal-link {
+  /*cursor: var(--cursor-link);*/
+  /*text-decoration-line: var(--link-decoration);*/
+  color: var(--text-accent);
+  transition: opacity 0.15s ease-in-out;
+  /*opacity: 100%;*/
+  /*filter: none !important;*/
 }
 
 aside {
@@ -1293,16 +1321,12 @@ body:not(.no-svg-replace) svg.right-triangle {
 /*=================================================*/
 
 /*change Dataview lists to align within tables*/
-.dataview-result-list-ul {
-  margin-block-start: 0em !important;
-  margin-block-end: 0em !important;
-}
-
 .table-view-table ul,
 .table-view-table ol {
-  margin-block-start: 0.2em !important;
-  margin-block-end: 0.2em !important;
-  padding-left: 0px;
+  /*    margin-block-start: 0.2em !important;
+    margin-block-end: 0.2em !important;
+    padding-left: 0px !important;*/
+  margin-left: -2em;
 }
 
 /*this also affects the buttons in the file browser sidebar*/
@@ -1318,8 +1342,8 @@ body:not(.no-svg-replace) svg.right-triangle {
 }
 
 .embedded-backlinks .nav-buttons-container {
-  /*position: ;*/
-  /*right: 350px;*/
+  position:;
+  right: /*350px*/;
   top: -40px;
   z-index: 1;
   left: 0px;

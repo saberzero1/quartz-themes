@@ -12,7 +12,8 @@
     "format": "just format",
     "update": "just update",
     "theme": "just theme",
-    "verify": "just verify"
+    "verify": "just verify",
+    "verify-ci": "just verify-ci"
   },
   "repository": {
     "type": "git",

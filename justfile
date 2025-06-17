@@ -24,6 +24,10 @@ verify:
   npx prettier . --check
 
 [private]
+verify-ci:
+  npx prettier . --check --ignore-path "./.prettiercompileignore"
+
+[private]
 build:
   node convert.js
 
@@ -43,6 +47,10 @@ clean-fonts:
 [private]
 format:
   npx prettier . --write --ignore-path "./.prettiercompileignore"
+
+[private]
+format-all:
+  npx prettier . --check --write
 
 [private]
 lint: format
