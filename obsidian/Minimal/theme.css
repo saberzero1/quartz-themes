@@ -375,18 +375,19 @@ body {
 .bases-view {
   --bases-table-text-size: var(--table-text-size);
 }
-.bases-embed .bases-header {
-  height: auto;
-  min-height: 0;
-}
-.bases-embed .bases-header .query-toolbar {
+.bases-embed .bases-header .query-toolbar,
+.block-language-base .bases-header .query-toolbar {
   padding-bottom: 2px;
   opacity: var(--bases-toolbar-opacity);
   transition: 0.15s 0.15s opacity;
 }
-.bases-embed .bases-header .query-toolbar:hover {
+.bases-embed .bases-header .query-toolbar:hover,
+.block-language-base .bases-header .query-toolbar:hover {
   opacity: 1;
   transition: 0s opacity;
+}
+.base-plain .bases-header {
+  display: none;
 }
 .bases-table-header-icon {
   display: var(--bases-table-header-icon-display);
@@ -1906,6 +1907,8 @@ body {
   > div:has(table) {
   width: var(--container-table-width);
   max-width: var(--container-table-max-width);
+  margin-inline: var(--container-table-margin) !important;
+  padding-inline-start: var(--table-drag-padding);
 }
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer .el-table,
 .markdown-source-view.mod-cm6.is-readable-line-width
@@ -1930,6 +1933,9 @@ body {
   .markdown-preview-sizer
   > :has(> .block-language-dataviewjs table),
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:has(.bases-embed),
+.markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer
+  > div:has(.block-language-base),
 .markdown-source-view.mod-cm6.is-readable-line-width
   .cm-contentContainer.cm-contentContainer
   > .cm-content
@@ -1945,7 +1951,11 @@ body {
 .markdown-source-view.mod-cm6.is-readable-line-width
   .cm-contentContainer.cm-contentContainer
   > .cm-content
-  > div:has(.bases-embed) {
+  > div:has(.bases-embed),
+.markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer.cm-contentContainer
+  > .cm-content
+  > div:has(.block-language-base) {
   width: var(--container-dataview-table-width);
   max-width: var(--container-table-max-width);
 }
@@ -6927,14 +6937,20 @@ settings:
 		title: Table header icons
 		type: variable-select
 		allowEmpty: false
-		default: none
+		default: flex
 		options:
-			-
-				label: Hidden
-				value: none
 			-
 				label: Visible
 				value: flex
+			-
+				label: Hidden
+				value: none
+	-
+		id: bases-table-row-height
+		title: Table row height
+		type: variable-number
+		default: 30
+		format: px
 	-
 		id: blockquotes
 		title: Blockquotes
