@@ -689,16 +689,13 @@ body {
   --bevelBright2: #8b8d9199;
   --bevelDark1: #5a5a5a99;
   --bevelDark2: #7a767299;
-  --bevelStyleButton:
-    inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
+  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
     inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer:
-    inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
+  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
     inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
-  --bevelStyleContainerOuter:
-    1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2), -2px -2px var(--bevelDark1),
-    2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1), 0px -2px var(--bevelDark1),
-    -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
+  --bevelStyleContainerOuter: 1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
+    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1),
+    0px -2px var(--bevelDark1), -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
   --link-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --settingsHeaderGradient: linear-gradient(90deg, #ffffff16 0%, rgba(0, 0, 0, 0) 80%);
   --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.16) 100%);
@@ -3147,8 +3144,7 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   --window-border-radius: 6px;
   --window-border-color: rgba(0, 0, 0, 0.7);
   --window-background-color: #4580c4;
-  --window-background-glass-stripes:
-    linear-gradient(135deg, #fff5 70px, transparent 100px),
+  --window-background-glass-stripes: linear-gradient(135deg, #fff5 70px, transparent 100px),
     linear-gradient(225deg, #fff5 70px, transparent 100px),
     linear-gradient(
         54deg,
@@ -3188,8 +3184,8 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
         #bbb1 90%
       )
       left center/100vw 100vh no-repeat fixed;
-  --window-background:
-    linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), var(--window-background-color);
+  --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33),
+    var(--window-background-color);
   --control-border-color: rgba(0, 0, 0, 0.3);
   --control-border-radius: 5px;
   --control-inset-shadow: inset 0 0 0 1px #fffa;
@@ -3201,27 +3197,30 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     rgba(255, 255, 255, 0.5)
   );
   /* Colors for minimize, maximize, and restore buttons when hovered */
-  --control-background-hovered:
-    radial-gradient(circle at bottom, #2aceda, transparent 65%),
+  --control-background-hovered: radial-gradient(circle at bottom, #2aceda, transparent 65%),
     linear-gradient(#b6d9ee 50%, #1a6ca1 50%);
   /* Colors for minimize, maximize, and restore buttons when clicked */
-  --control-background-active:
-    radial-gradient(circle at bottom, #0bfdfa, transparent 65%),
+  --control-background-active: radial-gradient(circle at bottom, #0bfdfa, transparent 65%),
     linear-gradient(#86a7bc 50%, #092747 50%);
   /* Colors for the close button at normal state */
-  --control-background-close:
-    radial-gradient(circle at -60% 50%, #0007 5% 10%, #0000 50%),
+  --control-background-close: radial-gradient(circle at -60% 50%, #0007 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #0007 5% 10%, #0000 50%),
     linear-gradient(#e0a197e5, #cf796a 25% 50%, #d54f36 50%);
   /* Colors for the close button when hovered */
-  --control-background-close-hovered:
-    radial-gradient(circle at 50% 170%, #f4e676 10% 20%, #0000 60%),
+  --control-background-close-hovered: radial-gradient(
+      circle at 50% 170%,
+      #f4e676 10% 20%,
+      #0000 60%
+    ),
     radial-gradient(circle at -60% 50%, #000a 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #000a 5% 10%, #0000 50%),
     linear-gradient(#fb9d8b, #ee6d56 25% 50%, #d42809 50%);
   /* Colors for the close button when clicked */
-  --control-background-close-active:
-    radial-gradient(circle at 50% 170%, #dcc03f 10% 20%, #0000 60%),
+  --control-background-close-active: radial-gradient(
+      circle at 50% 170%,
+      #dcc03f 10% 20%,
+      #0000 60%
+    ),
     radial-gradient(circle at -60% 50%, #000 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #000 5% 10%, #0000 50%),
     linear-gradient(#d1a894, #b67562 25% 50%, #7d0d01 50%);
@@ -3246,8 +3245,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   width: 100%;
   height: 100%;
   border-radius: var(--window-border-radius);
-  background:
-    linear-gradient(transparent 20%, rgba(255, 255, 255, 0.7019607843) 40%, transparent 41%),
+  background: linear-gradient(
+      transparent 20%,
+      rgba(255, 255, 255, 0.7019607843) 40%,
+      transparent 41%
+    ),
     var(--window-background);
   background-color: var(--window-background-color);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8666666667);
@@ -4005,8 +4007,11 @@ html:has(> .win7bar) body.obsidian-app::before {
   width: 100%;
   height: 100%;
   border-radius: var(--window-border-radius);
-  background:
-    linear-gradient(transparent 20%, rgba(255, 255, 255, 0.7019607843) 40%, transparent 41%),
+  background: linear-gradient(
+      transparent 20%,
+      rgba(255, 255, 255, 0.7019607843) 40%,
+      transparent 41%
+    ),
     var(--window-background);
   background-color: var(--window-background-color);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8666666667);
@@ -4445,8 +4450,8 @@ body.oldAndroid {
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header,
 .oldAndroid .titlebar-button-container .titlebar-button {
   border-radius: 0px;
-  box-shadow:
-    var(--keyboardButtonInsetShadow), var(--buttonSheetLeftSide), var(--buttonSheetRightSide);
+  box-shadow: var(--keyboardButtonInsetShadow), var(--buttonSheetLeftSide),
+    var(--buttonSheetRightSide);
 }
 .oldAndroid .nav-buttons-container .clickable-icon:first-of-type,
 .oldAndroid
@@ -5702,16 +5707,13 @@ body {
 }
 
 body:not(.disableBevels):not(.dtm08):not(.factorio) {
-  --bevelStyleButton:
-    inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
+  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
     inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer:
-    inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
+  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
     inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
-  --bevelStyleContainerOuter:
-    1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2), -2px -2px var(--bevelDark1),
-    2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1), 0px -2px var(--bevelDark1),
-    -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
+  --bevelStyleContainerOuter: 1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
+    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1),
+    0px -2px var(--bevelDark1), -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
 }
 
 body:not(.disableBevels):not(.dtm08):not(.factorio) {
@@ -6655,8 +6657,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   --dtm-08-dm-list-tab-icon-color: inherit;
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#0003, #0006);
-  --dtm-08-worse-profile-popout-custom-status-box-shadow:
-    inset 0 0 0 1px #fff1, inset 0 1px #fff2, 0 0 0 1px #0008, 0 1px 4px #0004;
+  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
+    0 0 0 1px #0008, 0 1px 4px #0004;
   --dtm-08-tabs-bg: linear-gradient(var(--d8dB), var(--d8dA) 50%, var(--d8d8) 50%, var(--d8d7));
   --dtm-08-tabs-bs: inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
   --dtm-08-tab-hover-bg: linear-gradient(
@@ -6686,24 +6688,24 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8dB) 50%,
     var(--d8dA)
   );
-  --dtm-08-card-style1-bs:
-    0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
+  --dtm-08-card-style1-bs: 0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
+    inset 0 1px #fff3;
   --dtm-08-card-style1h-bg: linear-gradient(
     var(--d8d8),
     var(--d8d9) 50%,
     var(--d8dA) 50%,
     var(--d8d9)
   );
-  --dtm-08-card-style1h-bs:
-    0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
+  --dtm-08-card-style1h-bs: 0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
+    inset 0 1px #fff3;
   --dtm-08-card-style1a-bg: linear-gradient(
     var(--d8dA),
     var(--d8dB) 50%,
     var(--d8dC) 50%,
     var(--d8dB)
   );
-  --dtm-08-card-style1a-bs:
-    inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2, inset 0 1px 1px #0006;
+  --dtm-08-card-style1a-bs: inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2,
+    inset 0 1px 1px #0006;
   --dtm-08-card-style1i-bg: linear-gradient(
     var(--d8dB),
     var(--d8dA) 50%,
@@ -6711,8 +6713,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8d8)
   );
   --dtm-08-card-style1i-bs: inset 0 1px 4px #0008, 0 0 0 1px #0004, 0 2px #fff2;
-  --dtm-08-card-style2i-bs:
-    0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5), inset 0 0 0 1px rgba(0 0 0/0.25);
+  --dtm-08-card-style2i-bs: 0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
+    inset 0 0 0 1px rgba(0 0 0/0.25);
   --dtm-08-message-hover-bg: linear-gradient(#0002, #0001 50%, #0003 50%, #0002);
   --dtm-08-right-sidebar-separator-line: linear-gradient(to right, #0000, #000b);
 }
@@ -6729,8 +6731,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   --dtm-08-dm-list-tab-icon-color: var(--d8l2);
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 1px rgb(255 255 255);
   --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#fff4, #fff6);
-  --dtm-08-worse-profile-popout-custom-status-box-shadow:
-    inset 0 0 0 1px #fff1, inset 0 1px #fff2, 0 0 0 1px #0002, 0 1px 4px #0006;
+  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
+    0 0 0 1px #0002, 0 1px 4px #0006;
   --dtm-08-tabs-bg: linear-gradient(var(--d8lA), var(--d8l9) 50%, var(--d8l8) 50%, var(--d8l7));
   --dtm-08-tabs-bs: inset 0 1px 4px #0004, 0 0 0 1px var(--d8lD), 0 2px #fff6, 0 0 0 2px #fff4;
   --dtm-08-tab-hover-bg: linear-gradient(
@@ -6760,24 +6762,24 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8l1) 50%,
     var(--d8l2)
   );
-  --dtm-08-card-style1-bs:
-    0 1px 3px #0004, inset 0 0 0 1px var(--d8lA), inset 0 0 0 2px #fffb, inset 0 2px #fff;
+  --dtm-08-card-style1-bs: 0 1px 3px #0004, inset 0 0 0 1px var(--d8lA), inset 0 0 0 2px #fffb,
+    inset 0 2px #fff;
   --dtm-08-card-style1h-bg: linear-gradient(
     var(--d8l0),
     var(--d8l0) 50%,
     var(--d8l1) 50%,
     var(--d8l0)
   );
-  --dtm-08-card-style1h-bs:
-    0 1px 5px #0004, inset 0 0 0 1px var(--d8lE), inset 0 0 0 2px #fff, inset 0 2px #fff;
+  --dtm-08-card-style1h-bs: 0 1px 5px #0004, inset 0 0 0 1px var(--d8lE), inset 0 0 0 2px #fff,
+    inset 0 2px #fff;
   --dtm-08-card-style1a-bg: linear-gradient(
     var(--d8l3),
     var(--d8l5) 50%,
     var(--d8l3) 50%,
     var(--d8l2)
   );
-  --dtm-08-card-style1a-bs:
-    inset 0 1px 8px #0009, inset 0 0 0 1px var(--d8l5), 0 0 0 1px #fff6, 0 1px #fff;
+  --dtm-08-card-style1a-bs: inset 0 1px 8px #0009, inset 0 0 0 1px var(--d8l5), 0 0 0 1px #fff6,
+    0 1px #fff;
   --dtm-08-card-style1i-bg: linear-gradient(
     var(--d8l2),
     var(--d8l3) 50%,
@@ -6876,8 +6878,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     calc(var(--saturation-factor, 1) * 44.2%),
     66.3%
   );
-  --premium-tier-2-purple-for-gradients-2-hsl:
-    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%;
   --premium-tier-2-pink-for-gradients: hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%);
   --premium-tier-2-pink-for-gradients-hsl: 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
   --premium-tier-2-pink-for-gradients-2: hsl(
@@ -6885,8 +6887,7 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     calc(var(--saturation-factor, 1) * 44.2%),
     66.3%
   );
-  --premium-tier-2-pink-for-gradients-2-hsl:
-    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
 }
 
 body.dtm08 {

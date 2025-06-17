@@ -7,8 +7,8 @@
 
 /* ::::: LAGOM SETTINGS ::::: */
 body {
-  --mac-terminal-shadow:
-    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  --mac-terminal-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   --nav-item-size: 15.8px; /* files */
   --radius-s: 11.5px;
   --nav-indentation-guide-width: unset;

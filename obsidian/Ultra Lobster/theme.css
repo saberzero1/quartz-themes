@@ -1072,8 +1072,8 @@ body {
 
   /* Blocks 
 	*/
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout 
 	*/
@@ -1620,12 +1620,10 @@ body {
   --background-modifier-cover: rgb(220 220 220 / 40%);
   --text-highlight-bg: rgb(255 208 0 / 40%);
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --input-shadow:
-    inset 0 0 0 1px rgb(0 0 0 / 12%), 0 2px 3px 0 rgb(0 0 0 / 5%), 0 1px 1.5px 0 rgb(0 0 0 / 3%),
-    0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgb(0 0 0 / 17%), 0 2px 3px 0 rgb(0 0 0 / 10%), 0 1px 1.5px 0 rgb(0 0 0 / 3%),
-    0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0 0 1px rgb(0 0 0 / 12%), 0 2px 3px 0 rgb(0 0 0 / 5%),
+    0 1px 1.5px 0 rgb(0 0 0 / 3%), 0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgb(0 0 0 / 17%), 0 2px 3px 0 rgb(0 0 0 / 10%),
+    0 1px 1.5px 0 rgb(0 0 0 / 3%), 0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent;
   --shadow-s: rgb(0 0 0 / 4%) 0px 3px 5px;
   --shadow-l: rgb(149 157 165 / 20%) 0px 8px 24px;
   --shadow-lm-only: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
@@ -1696,12 +1694,11 @@ body {
   --background-modifier-cover: rgb(10 10 10 / 40%);
   --text-highlight-bg: rgb(255 208 0 / 40%);
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%), 0 2px 4px 0 rgb(0 0 0 / 15%),
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%), 0 2px 4px 0 rgb(0 0 0 / 15%),
     0 1px 1.5px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 20%), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%), 0 2px 3px 0 rgb(0 0 0 / 30%),
-    0 1px 1.5px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 40%), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%),
+    0 2px 3px 0 rgb(0 0 0 / 30%), 0 1px 1.5px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 40%),
+    0 0 0 0 transparent;
   --shadow-s: rgb(0 0 0 / 16%) 0px 1px 4px;
   --shadow-l: rgb(0 0 0 / 20%) 0px 8px 24px;
   --shadow-lm-only: none;
@@ -1792,15 +1789,14 @@ body {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --shadow-s: none;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --gradient-bg-primary: linear-gradient(135deg, #262d3b 1.62%, #212733 50.72%);
   --gradient-bg-secondary: linear-gradient(135deg, #1e242e 1.62%, #1a1f28 50.72%);

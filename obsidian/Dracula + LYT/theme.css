@@ -502,8 +502,7 @@ p > code,
 li code,
 ul code,
 ol code {
-  font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -521,8 +520,7 @@ ol code {
 
 /* Inline Code in Source Mode */
 .cm-inline-code {
-  font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -541,18 +539,13 @@ table > tbody {
 }
 
 :root {
-  --default-font:
-    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif !important;
-  --font-monospace:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-code:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-monospace-1:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-monospace-2:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif !important;
+  --font-monospace: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-code: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-1: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-2: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
 }
 
 /*Bullet list line height in Live Mode*/
@@ -615,9 +608,8 @@ Icons: Boxicons
     'JetBrains Mono', 'Fira Code', Courier, monospace; */
 
   /* Square-y Proportion */
-  --font-sans-2:
-    "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu", Helvetica, Arial,
-    sans-serif;
+  --font-sans-2: "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
+    Helvetica, Arial, sans-serif;
   /* --font-monospace-2:
     'DM Mono', 'Fira Code', Courier, monospace; */
 
@@ -815,8 +807,7 @@ Icons: Boxicons
 
   --shadow-sm: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
   --shadow-m: 0px 3px 3.1px -20px rgba(0, 0, 0, 0.2), 0px 24px 25px -20px rgba(0, 0, 0, 0.35);
-  --shadow-l:
-    0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
+  --shadow-l: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
     0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
 
   --sheer-light: rgba(0, 0, 0, 0.35);

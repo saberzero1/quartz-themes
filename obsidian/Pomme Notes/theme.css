@@ -28,8 +28,8 @@ settings:
 */
 
 body {
-  --font-family-system:
-    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
   --accent-color: var(--color-accent);

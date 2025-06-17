@@ -72,11 +72,10 @@ body {
   /* 	Variables (Global) - Fonts - Typeface */
   /*  If you don't have these then get from https://developer.apple.com/fonts/ */
 
-  --font-monospace-default:
-    "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  --font-monospace-default: "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --font-text-theme: "SF Pro Display", SFPro-Regular;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 
   /* ---------------------------------------------------------------------------------- */

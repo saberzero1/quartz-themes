@@ -5,10 +5,10 @@ DISCORDIAN THEME version 0.8.6
 :root {
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-editor: Catamaran, Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-monospace:
-    Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S, Jetbrains Mono, Menlo,
-    SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-    Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+  --font-monospace: Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S,
+    Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier,
+    monospace;
 
   /* discord palette */
   --discord-green: hsla(153, 46%, 49%, 1);
@@ -29,8 +29,7 @@ DISCORDIAN THEME version 0.8.6
   --discord-dark-hover: hsla(216, 7%, 14%, 0.7);
 
   --elevation-stroke: 0 1px 0 1px hsla(240, 11%, 2%, 0.1);
-  --elevation-low:
-    0 1px 0 hsla(240, 11%, 2%, 0.2), 0 1.5px 0 hsla(240, 8%, 3%, 0.05),
+  --elevation-low: 0 1px 0 hsla(240, 11%, 2%, 0.2), 0 1.5px 0 hsla(240, 8%, 3%, 0.05),
     0 2px 0 hsla(240, 11%, 2%, 0.05);
   --elevation-medium: 0 4px 4px hsla(0, 0%, 0%, 0.16);
   --elevation-high: 0 8px 16px hsla(0, 0%, 0%, 0.24);

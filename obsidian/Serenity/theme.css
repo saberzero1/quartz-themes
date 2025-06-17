@@ -118,9 +118,8 @@
 /* font bundles */
 body,
 .ia-font {
-  --font-text-theme:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", "蘋方", "蘋方 SC",
-    "Microsoft YaHei Light", ui-sans-serif, sans-serif;
+  --font-text-theme: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
+    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-interface-theme: var(--font-text-theme);
   --font-secondary: "iA Writer Duo", "iA Writer Duo S";
   --font-monospace: "iA Writer Mono", "iA Writer Mono S";

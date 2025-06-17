@@ -137,18 +137,16 @@ body {
 */
 
 :root {
-  --default-font:
-    "Poppins", "Oswald", "Montserrat", "Roboto", "Glow Sans SC", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  --default-font: "Poppins", "Oswald", "Montserrat", "Roboto", "Glow Sans SC", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", sans-serif;
   --default-font-size: 16px;
   --body-font-weight: 400;
-  --tag-font-family:
-    "Fira Sans", "Operator Mono", "OperatorMonoSSmLig-Book", "Montserrat", "Glow Sans SC",
-    "PingFang TC", "微软雅黑", "STXihei", "华文细黑", "Microsoft YaHei", "Helvetica Neue",
-    "Helvetica", Arial, sans-serif !important;
-  --code-mono-font:
-    "Fira Code", "Operator Mono", "JetBrains Mono", "Source Code Pro", "OperatorMonoSSmLig-Book",
-    monospace;
+  --tag-font-family: "Fira Sans", "Operator Mono", "OperatorMonoSSmLig-Book", "Montserrat",
+    "Glow Sans SC", "PingFang TC", "微软雅黑", "STXihei", "华文细黑", "Microsoft YaHei",
+    "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+  --code-mono-font: "Fira Code", "Operator Mono", "JetBrains Mono", "Source Code Pro",
+    "OperatorMonoSSmLig-Book", monospace;
 }
 
 /* --------------------------------------------------------------- */

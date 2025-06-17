@@ -14,11 +14,11 @@
   --font-medium: 21px;
   --line-height-preview: 1.7em;
   --line-height-header-preview: 1em;
-  --font-family-mdpreview:
-    Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next, Times New Roman;
+  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next,
+    Times New Roman;
   --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
-  --font-family-preview:
-    Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next, Times New Roman;
+  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next,
+    Times New Roman;
   --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
 }
 

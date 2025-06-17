@@ -1462,13 +1462,12 @@ body,
 
 /* ----- novelist theme + novel css class ----- */
 .theme-novelist {
-  --font-default:
-    Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face", "Book Antiqua", sans-serif;
+  --font-default: Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face",
+    "Book Antiqua", sans-serif;
 }
 .novel {
-  --font-text:
-    Merriweather, "Libre Baskerville", Georgia, "Baskerville Old Face", "Book Antiqua", Alice,
-    "EB Garamond", sans-serif !important;
+  --font-text: Merriweather, "Libre Baskerville", Georgia, "Baskerville Old Face", "Book Antiqua",
+    Alice, "EB Garamond", sans-serif !important;
   --inline-title-color: var(--text-normal);
 }
 .novel img {
@@ -2526,9 +2525,8 @@ body,
   --accent-s: 77% !important;
   --accent-l: 51% !important;
   --callout-quote: 120, 119, 116;
-  --font-default:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
-    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* - alternate colorful headings - */

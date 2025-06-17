@@ -573,8 +573,7 @@ body {
 
   --root-workspace-padding-bottom: 28px;
   --root-workspace-radius: var(--radius-m);
-  --root-workspace-shadow:
-    var(--background-modifier-border) 0px 0px 3px 0px,
+  --root-workspace-shadow: var(--background-modifier-border) 0px 0px 3px 0px,
     var(--background-modifier-border) 0px 1px 2px 0px;
   --root-workspace-background: transparent;
   --root-workspace-margin-spacing: 16px;
@@ -1102,8 +1101,7 @@ body {
   left: 8px;
   width: 42%;
   height: 88%;
-  background:
-    repeating-linear-gradient(
+  background: repeating-linear-gradient(
       to right,
       transparent 0,
       transparent 19px,
@@ -1115,8 +1113,7 @@ body {
       transparent 19px,
       rgba(var(--callout-color), 0.6) 20px
     );
-  mask:
-    linear-gradient(to right, var(--background-primary), transparent 80%),
+  mask: linear-gradient(to right, var(--background-primary), transparent 80%),
     linear-gradient(to bottom, var(--background-primary), transparent 80%);
   mask-composite: intersect;
 }
@@ -1378,8 +1375,7 @@ body:not(.composer--HideStripedTableBackground) {
 
 /* link/external */
 .external-link {
-  background-image:
-    linear-gradient(transparent, transparent),
+  background-image: linear-gradient(transparent, transparent),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(136, 136, 136)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7 7 17 7 17 17'%3E%3C/polyline%3E%3C/svg%3E");
   background-size: calc(var(--font-text-size) + 0.2em), 1em;
   background-position: right center;

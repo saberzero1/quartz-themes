@@ -39,8 +39,7 @@ p > code,
 li code,
 ul code,
 ol code {
-  font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: var(--dark-10) !important;
   color: var(--red-3) !important;
@@ -63,8 +62,7 @@ ol code {
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
     .obsidian-search-match-highlight
   ) {
-  font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal !important;
   background: #87837826 !important;
   color: var(--red-4) !important;
@@ -888,8 +886,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
   /* Canvas */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
@@ -1371,8 +1369,7 @@ body {
 }
 
 :root {
-  --default-font:
-    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif !important;
+  --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif !important;
 }

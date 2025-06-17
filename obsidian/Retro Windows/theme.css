@@ -19,8 +19,8 @@ body {
 
 /* Light theme variables */
 .theme-light {
-  --window-shadow:
-    inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  --window-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey,
+    inset 2px 2px #fff;
 
   /* Background colors */
   --background-primary: #ffffff; /* Note background - off-white */
@@ -51,8 +51,8 @@ body {
 
 /* Dark theme variables */
 .theme-dark {
-  --window-shadow:
-    inset -1px -1px #3a3a3a, inset 1px 1px #888888, inset -2px -2px #555, inset 2px 2px #666;
+  --window-shadow: inset -1px -1px #3a3a3a, inset 1px 1px #888888, inset -2px -2px #555,
+    inset 2px 2px #666;
 
   /* Background colors */
   --background-primary: #1e1e1e; /* Note background - dark gray */

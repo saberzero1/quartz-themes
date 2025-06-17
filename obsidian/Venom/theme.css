@@ -79,8 +79,8 @@ body .modal {
   --text-title-h6: var(--purple);
 
   --font-weight-title: 600px;
-  --font-monospace:
-    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid", "Arial", sans-serif;
+  --font-monospace: "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
   --line-height-headers: 1;
   --file-line-width: 1200px;
 

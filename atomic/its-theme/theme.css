@@ -39753,7 +39753,7 @@ body.canvas-milanote.canvas-milanote {
   --header-border-line-height: 0;
   --header-text-align: center;
   --highlight: var(--td);
-  --hr-icon-symbol:        ;
+  --hr-icon-symbol:          ;
   --link-background-hover: var(--highlight);
   --link-color: var(--text);
   --link-color-hover: var(--soft-text);

@@ -138,9 +138,9 @@ Icons
 
   --shadow-small: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
   --shadow-medium: 0px 3px 3.1px -20px rgba(0, 0, 0, 0.2), 0px 24px 25px -20px rgba(0, 0, 0, 0.35);
-  --shadow-large:
-    0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
-    0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
+  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448),
+    0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6), 0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852),
+    0px 45px 50px -52px rgba(0, 0, 0, 1);
 
   --color-cyan-300: hsl(183, 29%, 62%);
   --color-cyan-500: hsl(192, 46%, 68%);
@@ -352,9 +352,8 @@ body.theme-dark {
   --window-border: 1px solid var(--window-border-color); /* Thanks Damian K from the Prism theme! */
   --window-border-color: var(--color-gray-70);
   /*───────── Obsidian - provided Variables ──────────*/
-  --font-sans:
-    "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu", Helvetica, Arial,
-    sans-serif;
+  --font-sans: "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
+    Helvetica, Arial, sans-serif;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace;
 
   --font-interface-theme: var(--font-sans);
@@ -457,8 +456,8 @@ body.theme-dark {
   --embed-font-style: inherit;
 
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout */
   --file-line-width: 700px;
