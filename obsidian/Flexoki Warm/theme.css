@@ -105,7 +105,8 @@ settings:
   --accent-l: 33%;
   /* BEGIN changes to original Flexoki theme */
   /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
-  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl-default:
+    var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
   --color-accent-hsl: var(
     --flexoki-warm-light-theme-accent-override,
     var(--color-accent-hsl-default)
@@ -162,7 +163,8 @@ settings:
   --accent-l: 33%;
   /* BEGIN changes to original Flexoki theme */
   /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
-  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl-default:
+    var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
   --color-accent-hsl: var(
     --flexoki-warm-dark-theme-accent-override,
     var(--color-accent-hsl-default)

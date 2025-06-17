@@ -5,16 +5,19 @@
 
 body {
   /* 正文字体 */
-  --font-text-theme: "Iosevka Web", "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont,
-    Roboto, Inter, Ubuntu, sans-serif;
+  --font-text-theme:
+    "Iosevka Web", "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter, Ubuntu,
+    sans-serif;
 
   /* 代码字体 */
-  --font-monospace-theme: "Iosevka Web", "Iosevka", "JetBrains Mono", "Fira Code", Menlo,
-    SFMono-Regular, Consolas, "Roboto Mono", monospace;
+  --font-monospace-theme:
+    "Iosevka Web", "Iosevka", "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
+    "Roboto Mono", monospace;
 
   /* 界面字体 */
-  --font-interface-theme: "Iosevka Web", "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont,
-    Roboto, Inter, Ubuntu, sans-serif;
+  --font-interface-theme:
+    "Iosevka Web", "Iosevka", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Inter, Ubuntu,
+    sans-serif;
 
   /* Heading 字体大小 */
   --h1-size: 2rem;

@@ -3088,16 +3088,20 @@ settings:
   --color-base-100: rgb(var(--ctp-text));
   --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
   --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(var(--ctp-crust), 0.15), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
-    0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(var(--ctp-crust), 0.3), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
-    0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1), 0 1px 2px 0 rgba(var(--ctp-crust), 0.2),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2), 0 1px 2px 0 rgba(var(--ctp-crust), 0.4),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(var(--ctp-crust), 0.121), 0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
+    0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071), 0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
+    0px 30px 90px rgba(var(--ctp-crust), 0.2);
   --background-primary: rgb(var(--ctp-base));
   --background-primary-alt: rgb(var(--ctp-mantle));
   --background-secondary: rgb(var(--ctp-mantle));
@@ -3233,7 +3237,8 @@ body.theme-dark {
 
 /*-Custom editor font-*/
 .markdown-source-view:not(.is-live-preview) {
-  --font-text: var(--anp-editor-font-source, var(--font-text-override)), var(--font-text-theme),
+  --font-text:
+    var(--anp-editor-font-source, var(--font-text-override)), var(--font-text-theme),
     var(--font-interface);
   --h1-font: var(--font-text, inherit);
   --h2-font: var(--font-text, inherit);
@@ -3244,7 +3249,8 @@ body.theme-dark {
 }
 
 .markdown-source-view.is-live-preview {
-  --font-text: var(--anp-editor-font-lp, var(--font-text-override)), var(--font-text-theme),
+  --font-text:
+    var(--anp-editor-font-lp, var(--font-text-override)), var(--font-text-theme),
     var(--font-interface);
 }
 
@@ -8982,7 +8988,8 @@ None of the original code was used and the feature was implemented from scratch.
 }
 .setting-item:is([data-id^="anuppuccin-url-"]) .setting-item-name::before {
   display: inline-flex;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   height: fit-content;
   padding-right: var(--size-4-2);
@@ -8993,7 +9000,8 @@ None of the original code was used and the feature was implemented from scratch.
   > .setting-item-info
   > .setting-item-name
   > .style-settings-collapse-indicator::after {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   height: fit-content;
   margin-left: var(--size-4-3);

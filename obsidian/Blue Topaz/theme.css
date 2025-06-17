@@ -5385,29 +5385,34 @@ body {
   --table-header-size: inherit;
 
   /*font family*/
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-family-list: var(--font-default); /*列表字体*/
-  --font-text-theme: Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei"; /*主体（包括列表）字体，除代码框等少数部分*/
+  --font-text-theme:
+    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei"; /*主体（包括列表）字体，除代码框等少数部分*/
   --h1-font: var(--font-text), var(--font-default);
   --h2-font: var(--font-text), var(--font-default);
   --h3-font: var(--font-text), var(--font-default);
   --h4-font: var(--font-text), var(--font-default);
   --font-family-title: var(--font-text, var(--font-default)); /*文件抬头标题*/
-  --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
-    "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
-  --font-monospace-theme: "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
+  --font-family-folder-file-title:
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
+    "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
+  --font-monospace-theme:
+    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
     "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
-  --font-family-tag: Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
-    "Segoe UI Emoji", Serif;
+  --font-family-tag:
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong, "Segoe UI Emoji", Serif;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji"; /*左侧库名字体*/
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
-  --mermaid-font-family: Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
-    Arial, cursive;
+  --mermaid-font-family:
+    Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana, Arial, cursive;
   --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
-  --font-family-strong: Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
+  --font-family-strong:
+    Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB",
+    "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
   --font-family-em: var(--font-family-strong, var(--font-monospace-theme));
   --font-loading-text: var(--font-monospace-theme);
 
@@ -7779,7 +7784,8 @@ body.color-scheme-options-flamingo.theme-light .admonition {
 }
 
 body.color-scheme-options-flamingo.theme-light {
-  --font-family-vault: Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important; /*左侧库名字体*/
+  --font-family-vault:
+    Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important; /*左侧库名字体*/
 }
 
 body.color-scheme-options-flamingo.theme-light .tag[href^="#DailyNote"] {
@@ -7983,7 +7989,8 @@ body.color-scheme-options-honey-milk-topaz.theme-dark {
   --accent-h: 43;
   --accent-s: 69%;
   --accent-l: 50%;
-  --interactive-accent-rgb: 216, 166, 39; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
+  --interactive-accent-rgb:
+    216, 166, 39; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
 
   --panel-border-color: #18191e; /*侧边栏、下部状态栏线条颜色，改了没有，线条被我取消了 :p*/
   --search-text: var(--color1); /*搜索结果文字颜色*/
@@ -8299,7 +8306,8 @@ body.color-scheme-options-chocolate-topaz.theme-dark {
   --accent-s: 44%;
   --accent-l: 32%;
   --interactive-accent: var(--main-color); /*主题强调色*/
-  --interactive-accent-rgb: 116, 65, 45; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
+  --interactive-accent-rgb:
+    116, 65, 45; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
 
   --panel-border-color: #18191e; /*侧边栏、下部状态栏线条颜色，改了没有，线条被我取消了 :p*/
   --search-text: #e0e0e0; /*搜索结果文字颜色*/
@@ -8608,7 +8616,8 @@ body.color-scheme-options-autumn-topaz.theme-dark {
   --text-selection: #47a5914d; /*鼠标选择 文字背景颜色*/
 
   --interactive-accent: var(--main-color); /*主题强调色*/
-  --interactive-accent-rgb: 104, 56, 39; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
+  --interactive-accent-rgb:
+    104, 56, 39; /*主题强调色 rgb , 需与主题色一致（把上面的值转成rgb放下面）*/
 
   --strong-em-highlight-color: var(--color11);
 
@@ -25857,7 +25866,8 @@ body.background-notebook-liked-switch.notebook-liked-markdown-page-grid-notebook
   .cm-s-obsidian
   .cm-scroller {
   background: var(--bg-color-notebook);
-  background-image: linear-gradient(90deg, var(--grid-notebook-line-color-1) 3%, transparent 0),
+  background-image:
+    linear-gradient(90deg, var(--grid-notebook-line-color-1) 3%, transparent 0),
     linear-gradient(var(--grid-notebook-line-color-1) 3%, transparent 0);
   background-size: 20px 20px;
 }
@@ -25885,7 +25895,8 @@ body.background-notebook-liked-switch.notebook-liked-markdown-page-dotted-notebo
   .cm-s-obsidian
   .cm-scroller {
   background: var(--bg-color-notebook);
-  background-image: radial-gradient(var(--dotted-notebook-dot-color) 10%, transparent 0),
+  background-image:
+    radial-gradient(var(--dotted-notebook-dot-color) 10%, transparent 0),
     radial-gradient(var(--dotted-notebook-dot-color) 10%, transparent 0);
   background-size: 30px 30px;
   background-position:
@@ -25900,7 +25911,8 @@ body.background-notebook-liked-switch.notebook-liked-markdown-page-grid-notebook
   .cm-s-obsidian
   .cm-scroller {
   background: var(--bg-color-notebook);
-  background-image: linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0),
+  background-image:
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0),
     linear-gradient(90deg, var(--grid-notebook-line-color-2) 1px, transparent 0),
     linear-gradient(var(--grid-notebook-line-color-1) 1px, transparent 0),
     linear-gradient(90deg, var(--grid-notebook-line-color-1) 1px, transparent 0);
@@ -25944,7 +25956,8 @@ body.background-notebook-liked-switch.notebook-liked-markdown-page-stripe-notebo
   .cm-s-obsidian
   .cm-scroller {
   background: var(--stripe-notebook-stripe-color);
-  background-image: repeating-linear-gradient(
+  background-image:
+    repeating-linear-gradient(
       45deg,
       hsla(0, 0%, 100%, 0.025),
       hsla(0, 0%, 100%, 0.025) 20px,
@@ -25965,7 +25978,8 @@ body.background-notebook-liked-switch.notebook-liked-markdown-page-stripe-notebo
   .cm-s-obsidian
   .cm-scroller {
   background: var(--stripe-notebook-stripe-color);
-  background-image: repeating-linear-gradient(
+  background-image:
+    repeating-linear-gradient(
       45deg,
       hsla(0, 0%, 100%, 0.3),
       hsla(0, 0%, 100%, 0.3) 20px,

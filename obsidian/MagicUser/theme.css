@@ -647,10 +647,12 @@ body {
   --text-accent-hover: var(--color-accent-2);
 
   /* Font Settings */
-  --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mu-font-headings:
+    -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
-  --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+  --mu-font-mono:
+    "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
   --mu-global-font-stylistic-set: normal;
   --mu-global-font-letter-spacing: normal;
@@ -5171,7 +5173,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-dreams-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5183,7 +5186,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-slide-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5195,7 +5199,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-synth-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5209,7 +5214,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-night-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5221,7 +5227,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-classic-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))

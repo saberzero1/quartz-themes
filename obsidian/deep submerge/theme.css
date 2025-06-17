@@ -5,13 +5,8 @@
 
 /* add a background to the whole sidebar */
 .mod-sidedock {
-  background: radial-gradient(
-      circle at top,
-      transparent 9%,
-      #151515 10%,
-      #151515 15%,
-      transparent 16%
-    ),
+  background:
+    radial-gradient(circle at top, transparent 9%, #151515 10%, #151515 15%, transparent 16%),
     radial-gradient(circle at bottom, transparent 19%, #151515 20%, #151515 25%, transparent 26%),
     radial-gradient(circle at right, transparent 19%, #151515 20%, #151515 25%, transparent 26%),
     radial-gradient(circle at left, transparent 9%, #151515 10%, #151515 15%, transparent 16%);

@@ -722,8 +722,8 @@ body {
   /* Font families */
   --font-text-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-editor-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-monospace-theme: "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas,
-    "Roboto Mono", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --font-interface-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
 

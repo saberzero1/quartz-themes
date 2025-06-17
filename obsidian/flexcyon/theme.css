@@ -878,7 +878,8 @@ body:is(.theme-dark) {
 
 .editor-grid,
 body.flexcyon-editor-grid .view-content [class*="markdown-"] {
-  background-image: repeating-linear-gradient(
+  background-image:
+    repeating-linear-gradient(
       to right,
       var(--color-base-00),
       transparent 1px,

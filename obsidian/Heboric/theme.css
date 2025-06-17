@@ -1,7 +1,8 @@
 body {
   --sans-serif: "SF Pro", ui-sans-serif, sans-serif;
   --serif: "New York", "Georgia", ui-serif, serif;
-  --mono: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --mono:
+    "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
 
   --font-interface: var(--font-interface-override), var(--font-interface-theme), var(--sans-serif);

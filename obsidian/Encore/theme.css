@@ -1001,7 +1001,8 @@ body.encore-translucency.encore-bg-prismatic::before {
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
 body.encore-translucency.encore-bg-dawn {
-  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)),
+  background-image:
+    radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)),
     linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent),
     linear-gradient(to bottom left, #0036e6, #400dcc);
 }
@@ -1010,29 +1011,34 @@ body.encore-translucency.encore-bg-dawn::before {
   inset: 0;
   content: "";
   animation: fade-in 60s linear infinite alternate;
-  background-image: radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)),
+  background-image:
+    radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)),
     linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent),
     linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
 }
 body.encore-translucency.encore-bg-lava {
-  background-image: radial-gradient(transparent, #360700),
-    linear-gradient(to top, #d86800, transparent), linear-gradient(to bottom left, #b43900, #1a0101);
+  background-image:
+    radial-gradient(transparent, #360700), linear-gradient(to top, #d86800, transparent),
+    linear-gradient(to bottom left, #b43900, #1a0101);
 }
 body.encore-translucency.encore-bg-lava::before {
   position: fixed;
   inset: 0;
   content: "";
   animation: fade-in 60s linear infinite alternate;
-  background-image: radial-gradient(transparent, #360700),
-    linear-gradient(to top, #f5e498, transparent), linear-gradient(to bottom left, #ff0000, #ff0000);
+  background-image:
+    radial-gradient(transparent, #360700), linear-gradient(to top, #f5e498, transparent),
+    linear-gradient(to bottom left, #ff0000, #ff0000);
 }
 body.encore-translucency.encore-bg-emerald {
-  background-image: radial-gradient(transparent, #071400),
-    linear-gradient(to top, #54f1d7, transparent), linear-gradient(to bottom left, #55df00, #1b4900);
+  background-image:
+    radial-gradient(transparent, #071400), linear-gradient(to top, #54f1d7, transparent),
+    linear-gradient(to bottom left, #55df00, #1b4900);
 }
 body.encore-translucency.encore-bg-sapphire {
-  background-image: radial-gradient(transparent, #000018),
-    linear-gradient(to top, #5871ff, transparent), linear-gradient(to bottom left, #0400ff, #0084ff);
+  background-image:
+    radial-gradient(transparent, #000018), linear-gradient(to top, #5871ff, transparent),
+    linear-gradient(to bottom left, #0400ff, #0084ff);
 }
 body.encore-translucency .horizontal-main-container {
   background-color: rgba(var(--grey-900-rgb), calc(1 - var(--encore-translucency-strength)));
@@ -1590,7 +1596,8 @@ body:not(.encore-no-makemd) .mk-file-context-file {
   border: none;
   --stripe-a: var(--color-base-00);
   --stripe-b: var(--color-base-05);
-  background-image: radial-gradient(transparent, var(--color-base-00) 100%),
+  background-image:
+    radial-gradient(transparent, var(--color-base-00) 100%),
     repeating-linear-gradient(
       45deg,
       var(--stripe-a) 0px,
@@ -1608,7 +1615,8 @@ body:not(.encore-no-makemd) .mk-file-context-file {
 .dataview.dataview-error {
   --stripe-a: var(--color-base-00);
   --stripe-b: var(--color-base-05);
-  background-image: linear-gradient(to right, var(--color-base-00) 40%, transparent 120%),
+  background-image:
+    linear-gradient(to right, var(--color-base-00) 40%, transparent 120%),
     repeating-linear-gradient(
       45deg,
       var(--stripe-a) 0px,
@@ -2300,7 +2308,8 @@ body.encore-theme-dark-glass-royale.theme-dark
   .workspace-tab-container
   .workspace-leaf-content {
   --en-opacity: 0.75;
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)),
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)),
     linear-gradient(rgba(255, 255, 255, 0.031372549), rgba(255, 255, 255, 0.0078431373));
   backdrop-filter: blur(32px) saturate(2);
 }

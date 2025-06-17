@@ -319,12 +319,13 @@ to get a right-side note block
   --text-size-cloze: 0.9375em;
 
   /*font family*/
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-family-list: var(--font-default); /*列表字体*/
-  --font-family-major: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
+  --font-family-major:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-family-h1: var(--font-text), var(--font-default);
   --font-family-h2: var(--font-text), var(--font-default);
   --font-family-h3: var(--font-text), var(--font-default);
@@ -332,15 +333,16 @@ to get a right-side note block
   --font-family-h5: var(--font-text), var(--font-default);
   --font-family-h6: var(--font-text), var(--font-default);
   --font-family-title: var(--font-text, var(--font-default)); /*文件抬头标题*/
-  --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
-    "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
+  --font-family-folder-file-title:
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
+    "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
   --text-family-inline-code: "Consolas", "Monaco", monospace;
-  --font-family-tag: Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
-    "Segoe UI Emoji", Serif;
+  --font-family-tag:
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong, "Segoe UI Emoji", Serif;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji"; /*左侧库名字体*/
-  --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina",
-    cursive;
+  --font-family-special-tag:
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
 }

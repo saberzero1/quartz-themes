@@ -1366,7 +1366,8 @@ body:not(.no-button) button {
 
 /*notebook*/
 .mod-root .workspace-tabs .workspace-leaf .notebook {
-  background-image: linear-gradient(rgba(var(--iris-rgb), 0.05) 2px, transparent 2px),
+  background-image:
+    linear-gradient(rgba(var(--iris-rgb), 0.05) 2px, transparent 2px),
     linear-gradient(to right, rgba(var(--iris-rgb), 0.05) 2px, transparent 2px);
   background-size: 20px 20px;
 }

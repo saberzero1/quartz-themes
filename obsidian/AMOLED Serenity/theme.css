@@ -146,16 +146,16 @@
 
   /* Buttons */
   --style-settings-section-buttons: "Buttons";
-  --style-settings-var-button-background: [color, Button Background Color,
-    var(--background-primary)];
+  --style-settings-var-button-background:
+    [color, Button Background Color, var(--background-primary)];
   --style-settings-var-button-text: [color, Button Text Color, var(--color-base-80)];
   --style-settings-var-button-border: [color, Button Border Color, var(--background-primary)];
 
   /* Selections and Focus */
   --style-settings-section-selection-focus: "Selections and Focus";
   --style-settings-var-focus-border: [color, Focus Border Color, var(--purple)];
-  --style-settings-var-selection-background: [color, Selection Background Color,
-    rgba(var(--green_x), 0.25)];
+  --style-settings-var-selection-background:
+    [color, Selection Background Color, rgba(var(--green_x), 0.25)];
 
   /* Status Bar */
   --style-settings-section-status-bar: "Status Bar";

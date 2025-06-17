@@ -2,9 +2,9 @@
 /* I used an early version of Dark Remix as a starting point: obsdn dark rmx - v202007102000 */
 
 :root {
-  --default-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
+  --default-font:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Source Code Pro", monospace;
