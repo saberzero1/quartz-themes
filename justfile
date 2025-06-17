@@ -24,6 +24,10 @@ verify:
   npx prettier . --check
 
 [private]
+verify-ci:
+  npx prettier . --check --ignore-path "./.prettiercompileignore"
+
+[private]
 build:
   node convert.js
 
