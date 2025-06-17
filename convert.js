@@ -21,8 +21,6 @@ import {
   ensureDirectoryExists,
   copyFileToDirectory,
   replaceInFile,
-  replaceInString,
-  applyRuleToFile,
   applyRuleToString,
   generateFundingLinks,
 } from "./util/util.mjs"

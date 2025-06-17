@@ -526,6 +526,13 @@
       "extras": ["hide-toggle"],
       "fonts": []
     },
+    "dashboard": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["light"],
+      "use_extended_syntax": false,
+      "extras": ["hide-toggle"],
+      "fonts": []
+    },
     "dawn": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
@@ -615,6 +622,13 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "extras": ["hide-toggle"],
+      "fonts": []
+    },
+    "duality": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "extras": [],
       "fonts": []
     },
     "dune": {
@@ -1239,6 +1253,13 @@
       "use_extended_syntax": false,
       "extras": ["minimal"],
       "fonts": ["roboto"]
+    },
+    "minimalists-paradise": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "extras": [],
+      "fonts": ["fira-code"]
     },
     "mint-breeze": {
       "compatibility": ["checking"],
@@ -2134,6 +2155,13 @@
       "use_extended_syntax": false,
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono", "roboto"]
+    },
+    "spectrumplus": {
+      "compatibility": ["checking"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "extras": ["hide-toggle"],
+      "fonts": ["jetbrains-mono"]
     },
     "spectrum": {
       "compatibility": ["checking"],

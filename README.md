@@ -6,14 +6,14 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
   <img src="media/quartz-themes-800-wide-rounded-text.png" alt="Quartz Themes logo"/>
 </p>
 
-![Last updated: 2025-06-01](<https://img.shields.io/date/1748780100?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Last updated: 2025-06-01](<https://img.shields.io/date/1750159800?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
 ![Supported Quartz version v4.5.1](<https://img.shields.io/badge/v4.5.1-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
 
 ## Installation
 
 ### GitHub Actions (Recommended)
 
-Add the following linte to your `deploy.yml` before the `permissions` section:
+Add the following lines to your `deploy.yml` before the `permissions` section:
 
 ```yaml
 env:
@@ -251,6 +251,7 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 | <img src="media/dark.svg" alt="DARK"/>   | `dark-moss`                      | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dark-moss/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `darkember`                      | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/darkember/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `darkyan`                        | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/darkyan/)                        |
+| <img src="media/light.svg" alt="LIGHT"/> | `dashboard`                      | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/dashboard/)                      |
 | <img src="media/both.svg" alt="BOTH"/>   | `dawn`                           | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dawn/)                           |
 | <img src="media/light.svg" alt="LIGHT"/> | `dayspring`                      | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dayspring/)                      |
 | <img src="media/dark.svg" alt="DARK"/>   | `deep-submerge`                  | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/deep-submerge/)                  |
@@ -264,6 +265,7 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 | <img src="media/dark.svg" alt="DARK"/>   | `dracula-official`               | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dracula-official/)               |
 | <img src="media/dark.svg" alt="DARK"/>   | `dracula-plus`                   | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/dracula-plus/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `dracula-slim`                   | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dracula-slim/)                   |
+| <img src="media/both.svg" alt="BOTH"/>   | `duality`                        | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/duality/)                        |
 | <img src="media/both.svg" alt="BOTH"/>   | `dune`                           | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/dune/)                           |
 | <img src="media/both.svg" alt="BOTH"/>   | `dunite`                         | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dunite/)                         |
 | <img src="media/dark.svg" alt="DARK"/>   | `dust`                           | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/dust/)                           |
@@ -352,6 +354,7 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 | <img src="media/both.svg" alt="BOTH"/>   | `minimal-edge`                   | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/minimal-edge/)                   |
 | <img src="media/dark.svg" alt="DARK"/>   | `minimal-red`                    | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/minimal-red/)                    |
 | <img src="media/dark.svg" alt="DARK"/>   | `minimal-resources`              | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/minimal-resources/)              |
+| <img src="media/both.svg" alt="BOTH"/>   | `minimalists-paradise`           | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/minimalists-paradise/)           |
 | <img src="media/light.svg" alt="LIGHT"/> | `mint-breeze`                    | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mint-breeze/)                    |
 | <img src="media/both.svg" alt="BOTH"/>   | `mistymauve`                     | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/mistymauve/)                     |
 | <img src="media/both.svg" alt="BOTH"/>   | `modern-genz-vibedose`           | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/modern-genz-vibedose/)           |
@@ -480,6 +483,7 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 | <img src="media/both.svg" alt="BOTH"/>   | `sparkling-wisdom`               | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/sparkling-wisdom/)               |
 | <img src="media/both.svg" alt="BOTH"/>   | `spectrum`                       | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/spectrum/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `spectrum-blue`                  | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/spectrum-blue/)                  |
+| <img src="media/dark.svg" alt="DARK"/>   | `spectrumplus`                   | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/spectrumplus/)                   |
 | <img src="media/both.svg" alt="BOTH"/>   | `spring`                         | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/spring/)                         |
 | <img src="media/both.svg" alt="BOTH"/>   | `sqdthone`                       | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | [live preview](https://quartz-themes.github.io/sqdthone/)                       |
 | <img src="media/dark.svg" alt="DARK"/>   | `strict`                         | <img src="media/checking.svg" alt="CHECKING"/>                                                    | [live preview](https://quartz-themes.github.io/strict/)                         |
