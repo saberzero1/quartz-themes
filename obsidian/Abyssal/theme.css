@@ -229,9 +229,8 @@ body {
   --graph-node-attachment: var(--color-yellow);
 
   /* 2.h —— Shadows                             */
-  --box-shadow-layered:
-    0px 3px 10px -100px rgba(26, 40, 51, 0.15), 0px 11px 35px -100px rgba(26, 40, 51, 0.25),
-    0px 52px 150px -100px rgba(26, 40, 51, 0.35);
+  --box-shadow-layered: 0px 3px 10px -100px rgba(26, 40, 51, 0.15),
+    0px 11px 35px -100px rgba(26, 40, 51, 0.25), 0px 52px 150px -100px rgba(26, 40, 51, 0.35);
 
   --background-modifier-border-focus: var(--color-base-30);
 
@@ -383,9 +382,9 @@ body {
   --graph-node-attachment: var(--color-yellow);
 
   /* 3.h —— Shadows                             */
-  --box-shadow-layered:
-    1.5px 0px 5px rgba(10, 17, 20, 0.015), 3.5px 0px 15px rgba(10, 17, 20, 0.025),
-    8px 0px 35px rgba(10, 17, 20, 0.035), 27px 0px 125px rgba(10, 17, 20, 0.05);
+  --box-shadow-layered: 1.5px 0px 5px rgba(10, 17, 20, 0.015),
+    3.5px 0px 15px rgba(10, 17, 20, 0.025), 8px 0px 35px rgba(10, 17, 20, 0.035),
+    27px 0px 125px rgba(10, 17, 20, 0.05);
 
   /* 3.i —— Canvas                             */
   --canvas-color: 53, 84, 100;

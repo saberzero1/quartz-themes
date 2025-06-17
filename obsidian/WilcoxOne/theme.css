@@ -8,9 +8,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 
 :root {
-  --default-font:
-    "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --default-font: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
+    sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;

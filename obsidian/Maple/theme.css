@@ -2192,8 +2192,7 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
   --color-purple-rgb: 134, 112, 178 !important;
   --background-primary-hsl: var(--accent-h), calc(var(--accent-s) - 12%), 97%;
   --background-primary: hsl(var(--background-primary-hsl));
-  --background-secondary-hsl:
-    calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%),
+  --background-secondary-hsl: calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%),
     calc(100% - (100% - var(--accent-l)) / 8);
   --background-secondary: hsl(var(--background-secondary-hsl));
   --background-modifier-hover: hsl(
@@ -2241,8 +2240,8 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
   --background-primary: hsl(var(--background-primary-hsl));
   --background-primary-hsl: var(--accent-h), 5%, 5%;
   --background-secondary: hsl(var(--background-secondary-hsl));
-  --background-secondary-hsl:
-    calc(var(--accent-h) + 8), calc(var(--accent-s) / 6), calc(var(--accent-l) / 5);
+  --background-secondary-hsl: calc(var(--accent-h) + 8), calc(var(--accent-s) / 6),
+    calc(var(--accent-l) / 5);
   --background-modifier-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) / 3));
   --accent-active: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 16%));
   --accent-inactive: hsl(var(--accent-h), calc(var(--accent-s) + 24%), calc(var(--accent-l) - 32%));
@@ -7747,8 +7746,7 @@ body.explorer-title-wrap :is(.nav-file-title-content, .nav-folder-title-content)
 /* #region [mobile] */
 .is-mobile {
   --input-border-width: 1px;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
 }
 .is-mobile:is(.bg-static, .bg-live) {

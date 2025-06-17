@@ -68,9 +68,8 @@ You can customized the theme using the variables below
   /***************************************/
 
   /** Font Customization **/
-  --default-font:
-    "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  --default-font: "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
 
   --default-font-size: 1.05rem;
 
@@ -78,10 +77,9 @@ You can customized the theme using the variables below
   --body-font-weight: normal;
 
   /** Font family for hash-tags **/
-  --tag-font-family:
-    "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑", "STXihei", "PingFang TC", "微软雅黑体",
-    "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "宋体", "SimSun", "Helvetica Neue",
-    "Helvetica", Arial, sans-serif !important;
+  --tag-font-family: "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑", "STXihei",
+    "PingFang TC", "微软雅黑体", "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "宋体",
+    "SimSun", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
 
   /** Font specially for codes **/
   --code-mono-font: "Source Code Pro", "OperatorMonoSSmLig-Book";

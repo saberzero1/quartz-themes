@@ -115,13 +115,11 @@
 }
 
 body {
-  --font-text-theme:
-    -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji;
+  --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji;
 
-  --font-monospace-theme:
-    "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular, SF Mono, Menlo,
-    Consolas, Liberation Mono, monospace;
+  --font-monospace-theme: "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+    SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
 .workspace-tab-header-container {

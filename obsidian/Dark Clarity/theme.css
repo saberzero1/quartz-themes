@@ -246,8 +246,8 @@ body .modal {
   font-family: "Zhudou Sans Normal SS02", "微软雅黑", "Segoe UI", "OpenSans-Medium", sans-serif;
 
   /* 代码字体 */
-  --font-monospace:
-    "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
+  --font-monospace: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
+    monospace;
 
   /* --left-roll-min-width: 250px; */
   /* 文件夹配色 */

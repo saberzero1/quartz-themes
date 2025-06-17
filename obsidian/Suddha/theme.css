@@ -74,12 +74,11 @@
   FONTS */
 
   /* Preview mode and UI */
-  --text:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "m1+ 1p";
+  --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "m1+ 1p";
   /* Editor mode */
-  --text-editor:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-    "Helvetica Neue", "m1+ 1p";
+  --text-editor: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", "m1+ 1p";
   /* Code */
   --font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 

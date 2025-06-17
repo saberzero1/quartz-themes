@@ -1,6 +1,6 @@
 :root {
-  --font-family-editor:
-    "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-family-editor: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    Meiryo, sans-serif;
   --font-family-preview: var(--font-family-editor);
   --formating-scale-factor: 0.85;
 

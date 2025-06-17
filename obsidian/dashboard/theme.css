@@ -253,8 +253,7 @@ body.dreamscape {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background:
-      radial-gradient(
+    background: radial-gradient(
         circle at top left,
         transparent 25%,
         #f6f1ff 25.5%,
@@ -329,8 +328,7 @@ body.peach {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background:
-      radial-gradient(
+    background: radial-gradient(
         circle at top left,
         transparent 9%,
         #fde1cb 10%,
@@ -419,8 +417,7 @@ body.pool {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background:
-      linear-gradient(-45deg, #dbf5fa99 20%, transparent 20% 80%, #dbf5fa99 80% 100%),
+    background: linear-gradient(-45deg, #dbf5fa99 20%, transparent 20% 80%, #dbf5fa99 80% 100%),
       linear-gradient(45deg, #dbf5fa99 20%, transparent 20% 80%, #dbf5fa99 80% 100%),
       linear-gradient(-45deg, #fafafa 33%, transparent 33% 66%, #fafafa 66%),
       linear-gradient(45deg, transparent 33%, #dbf5fa 33% 66%, transparent 66%);
@@ -482,8 +479,7 @@ body.strawberry {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background:
-      linear-gradient(25deg, #fafafa 40%, transparent 41%, transparent 59%, #fafafa 60%),
+    background: linear-gradient(25deg, #fafafa 40%, transparent 41%, transparent 59%, #fafafa 60%),
       linear-gradient(
         90deg,
         transparent 45%,

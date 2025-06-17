@@ -36,8 +36,11 @@ body {
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
-  --background-underlying-CSS-light:
-    radial-gradient(100% 100% at 13% 50%, #5a6ded 0%, #e0daf7 100%),
+  --background-underlying-CSS-light: radial-gradient(
+      100% 100% at 13% 50%,
+      #5a6ded 0%,
+      #e0daf7 100%
+    ),
     linear-gradient(
       6deg,
       rgb(235, 242, 252) 0%,
@@ -59,8 +62,13 @@ body {
     ),
     radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
     radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
-  --background-underlying-CSS-dark:
-    linear-gradient(317deg, #7037cd 0%, #1d0c20 19%, #651f71 19%, #651f71 33%),
+  --background-underlying-CSS-dark: linear-gradient(
+      317deg,
+      #7037cd 0%,
+      #1d0c20 19%,
+      #651f71 19%,
+      #651f71 33%
+    ),
     radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
     linear-gradient(
       109deg,
@@ -87,13 +95,12 @@ body {
 /* Define variables for shadow and color */
 :root {
   --shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
-  --shadow-hover:
-    inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.7);
-  --shadow-active:
-    inset 3px 3px 3px rgba(0, 0, 0, 0.5), inset -3px -3px 3px rgba(255, 255, 255, 0.2);
+  --shadow-hover: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.7);
+  --shadow-active: inset 3px 3px 3px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.2);
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
-  --shadow-scrollbar:
-    inset 4px 4px 8px rgba(0, 0, 0, 0.15), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.7);
   --background: #f0f0f0;
 }
 /* ======= LIGHT ==============*/
@@ -183,11 +190,9 @@ body {
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --color: 0, 0%;
   /*两个值一样*/
@@ -241,23 +246,19 @@ body {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-shadow-light:
-    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
     inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
-  --toggle-thumb-enabled-shadow-light:
-    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
-    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
     inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-shadow-light:
-    inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary),
-    0px 2px 4px rgba(0, 0, 0, 0.04);
-  --toggle-track-hovered-shadow-light:
-    inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px var(--background-primary),
-    0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
+  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
   --input-radius: var(--input-radius-light);
@@ -265,10 +266,9 @@ body {
   --input-shadow-hover: var(--input-shadow-hover-light);
   --input-radius-light: 5px;
   /* defines the radius for  search boxes */
-  --input-shadow-light:
-    0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04),
-    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.24),
-    inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --input-shadow: var(--shadow);
   --input-shadow-hover-light: var(--shadow-hover);
   --toggle-track-color: var(--toggle-track-color-light);
@@ -1090,8 +1090,7 @@ body.theme-light:not(.is-mobile).background-underlying-CSS-light .app-container 
 /* ====== Layout ===== */
 /* default Layout*/
 body {
-  --card-shadow-light:
-    0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
@@ -1476,8 +1475,7 @@ body {
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
-  --shadow-activated-tab-header-light:
-    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
   --background-activated-tab-header-dark: var(--background-modifier-active-hover);
   --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);

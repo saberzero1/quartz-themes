@@ -3112,9 +3112,9 @@ body,
 
 body.theme-dark,
 body.theme-light {
-  --font-default:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-default: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
+    sans-serif;
   --font-monospace: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
   --font-text: var(--font-text-override), var(--font-default);
   --font-monospace-default: var(--font-monospace-default-override), var(--font-monospace);
@@ -13009,7 +13009,7 @@ iframe {
   --link-external-color-hover: var(--soft-text);
   --highlight: var(--td) !important;
   --text-highlight-bg: var(--highlight);
-  --hr-icon-symbol:         !important;
+  --hr-icon-symbol:          !important;
   --header-text-align: center;
   --h1-text-align: var(--header-text-align);
   --h2-text-align: var(--header-text-align);
@@ -14865,8 +14865,8 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
 
 .dnd.dnd {
   --font: "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter;
-  --font-monospace:
-    "Fira Code Medium", "Recursive Mono Linear Static Medium", "Source Code Pro", Inter;
+  --font-monospace: "Fira Code Medium", "Recursive Mono Linear Static Medium", "Source Code Pro",
+    Inter;
   --hr-icon-symbol: "";
   --hr-icon-font: var(--mdi);
   --embed-h: #c93c3c;
@@ -15615,8 +15615,8 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
 /*----Theme: School Days----*/
 .s-d.s-d {
   /*FONTS*/
-  --font: /*'Recursive Sans Casual Static',*/
-    "Recursive Sans Linear Static Black", "RocknRoll One Regular", var(--font-default);
+  --font: /*'Recursive Sans Casual Static',*/ "Recursive Sans Linear Static Black",
+    "RocknRoll One Regular", var(--font-default);
   --vault-font: "CollegiateBlackFLF", "Jersey M54", var(--font-default);
   --vault-name-font-weight: 100;
   --font-monospace: "Recursive Mono Linear Static Medium", var(--font-default);
@@ -16150,9 +16150,9 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
 }
 
 .its.its {
-  --font-default:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-default: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
+    sans-serif;
   --font-monospace: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
   --hr-icon-symbol: "";
   --hr-icon-font: var(--its);

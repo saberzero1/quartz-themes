@@ -93,8 +93,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
@@ -643,23 +643,21 @@ iframe {
   unicode-range: U+0;
 }
 body {
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-monospace-default:
-    "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  --font-monospace-default: "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";
-  --font-interface:
-    var(--font-interface-override), var(--font-interface-theme), var(--default-font, "??"),
-    var(--font-default);
+  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default);
   --font-text-override: "??";
   --font-text-theme: "??";
   --font-text: var(--font-text-override), var(--font-text-theme), var(--font-interface);
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
-  --font-monospace:
-    var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default);
+  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default);
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
 }
@@ -6919,8 +6917,8 @@ a {
   text-decoration-line: var(--link-external-decoration);
   background-position: center right;
   background-repeat: no-repeat;
-  background-image:
-    linear-gradient(transparent, transparent), url(public/images/874d8b8e340f75575caa.svg);
+  background-image: linear-gradient(transparent, transparent),
+    url(public/images/874d8b8e340f75575caa.svg);
   background-size: 13px;
   padding-right: 16px;
   background-position-y: 4px;

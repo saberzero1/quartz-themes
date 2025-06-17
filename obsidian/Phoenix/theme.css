@@ -267,10 +267,10 @@ ______  ___  ______ _   __
 }
 
 :root {
-  --default-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
-  --editor-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans, Inter;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
+    Inter;
   --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
@@ -892,8 +892,7 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 .callout-title-inner a.external-link {
   text-decoration: none;
   color: inherit !important;
-  background-image:
-    url(public/images/874d8b8e340f75575caa.svg),
+  background-image: url(public/images/874d8b8e340f75575caa.svg),
     linear-gradient(
       to right,
       color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,

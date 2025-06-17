@@ -70,8 +70,8 @@ body .modal {
   --text-title-h6: #ff3cd5;
 
   --font-weight-title: 600;
-  --font-monospace:
-    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid", "Arial", sans-serif;
+  --font-monospace: "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
   --line-height-headers: 1;
   --file-line-width: 1000px;
 

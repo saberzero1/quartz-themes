@@ -468,8 +468,8 @@ body {
 
   /* Blocks 
 	*/
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout 
 	*/
@@ -1100,8 +1100,7 @@ body {
   --bb-border-dashed: 1px dashed var(--color-base-30);
   --bb-border-transparent: 1px solid transparent;
   --bb-border-high-contrast: 1px solid var(--color-base-60);
-  --bb-shadow:
-    -33px 24px 64px -8px hsla(var(--color-accent-hsl), 0.1),
+  --bb-shadow: -33px 24px 64px -8px hsla(var(--color-accent-hsl), 0.1),
     33px 12px 64px -8px
       hsla(
         calc(var(--accent-h) - 175),
@@ -1130,8 +1129,7 @@ body {
   --transition-duration: 700ms;
   --transition-duration-short: 350ms;
   --transition-ease: ease;
-  --transition-props:
-    background var(--transition-duration), border var(--transition-duration),
+  --transition-props: background var(--transition-duration), border var(--transition-duration),
     color var(--transition-duration);
 }
 
@@ -4221,8 +4219,8 @@ cm-s-obsidian .HyperMD-codeblock,
     "slnt" 0,
     "wdth" 100,
     "wght" 500;
-  font-feature-settings:
-    "calt", "liga", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09";
+  font-feature-settings: "calt", "liga", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07",
+    "ss08", "ss09";
 }
 
 .cm-s-obsidian span.cm-inline-code {

@@ -114,8 +114,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;

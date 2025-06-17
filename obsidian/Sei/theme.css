@@ -57,12 +57,11 @@ settings:
   --modal-border-color: rgba(0, 0, 0, 0.1);
   --modal-background: rgb(from var(--background-secondary) r g b / 75%) !important;
   --hr-color: var(--background-modifier-hover);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
-  --input-shadow:
-    0px 0px 0px 1px var(--background-modifier-border), 0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset !important;
+  --input-shadow: 0px 0px 0px 1px var(--background-modifier-border),
+    0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset !important;
   --interactive-normal: var(--background-primary);
   --modal-background: var(--background-secondary) !important;
   --modal-border-color: rgba(0, 0, 0, 0.1);
@@ -98,8 +97,7 @@ settings:
   --bold-color: rgb(227, 223, 161);
   --modal-background: var(--background-secondary) !important;
   --modal-border-color: rgba(255, 255, 255, 0.1);
-  --input-shadow:
-    0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 0.5px 0 0 rgba(255, 255, 255, 0.1) inset !important;
+  --input-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 0.5px 0 0 rgba(255, 255, 255, 0.1) inset !important;
   --interactive-normal: var(--color-base-35);
   --slider-thumb-border-color: var(--color-base-35);
   --nav-item-color: var(--text-muted);
@@ -107,8 +105,7 @@ settings:
   --nav-item-color-active: var(--text-muted);
   --nav-item-color-selected: var(--text-muted);
   --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -1798,8 +1795,7 @@ body:not(.is-mobile) .checkbox-container:not(.is-enabled) {
 }
 body:not(.is-mobile) .checkbox-container.is-enabled {
   --toggle-thumb-color: var(--text-on-accent);
-  background:
-    linear-gradient(180deg, rgba(102, 102, 102, 0.75) 0%, rgba(102, 102, 102, 0) 67.71%),
+  background: linear-gradient(180deg, rgba(102, 102, 102, 0.75) 0%, rgba(102, 102, 102, 0) 67.71%),
     var(--interactive-accent);
   background-blend-mode: overlay, normal;
 }
@@ -3736,8 +3732,7 @@ body.is-mobile .mobile-image-viewer img {
 }
 
 .canvas-wrapper {
-  --shadow-stationary:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-stationary: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
 }
 

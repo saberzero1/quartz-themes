@@ -647,20 +647,17 @@ body {
   --theme-padding-blockHorizontal: 1.5em;
   --theme-padding-blockVertical: 0.75em;
 
-  --shadow-l:
-    0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
+  --shadow-l: 0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
     0 0.2rem 0.4rem color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
     0 0.4rem 1.2rem color-mix(in srgb, var(--theme-color-shadow) 6%, transparent),
     0 1.2rem 2rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
     0 2rem 4rem color-mix(in srgb, var(--theme-color-shadow) 10%, transparent);
-  --shadow-s:
-    0 0 0.05rem color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
+  --shadow-s: 0 0 0.05rem color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
     0 0.05rem 0.1rem color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
     0 0.1rem 0.3rem color-mix(in srgb, var(--theme-color-shadow) 6%, transparent),
     0 0.3rem 0.5rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
     0 0.5rem 1rem color-mix(in srgb, var(--theme-color-shadow) 10%, transparent);
-  --theme-shadow-indent:
-    0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
+  --theme-shadow-indent: 0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
     0 0 0.4rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
     0 0 1.2rem color-mix(in srgb, var(--theme-color-shadow) 12%, transparent),
     0 0 2rem color-mix(in srgb, var(--theme-color-shadow) 16%, transparent),
@@ -1037,8 +1034,8 @@ body {
 
   --theme-shadow-control: 0 1px 2px
     hsl(var(--base-h), calc(var(--base-s) * 1.5), calc(var(--base-l) * 0.75), 0.5);
-  --theme-shadow-input:
-    0 1px 2px hsl(var(--base-h), calc(var(--base-s) * 1.5), calc(var(--base-l) * 0.5), 0.2),
+  --theme-shadow-input: 0 1px 2px
+      hsl(var(--base-h), calc(var(--base-s) * 1.5), calc(var(--base-l) * 0.5), 0.2),
     0 3.4px 6.7px hsl(var(--base-h), calc(var(--base-s) * 1), calc(var(--base-l) * 0.5), 0.15),
     0 15px 30px hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.5), 0.05);
 
@@ -1246,8 +1243,8 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   --theme-shadow-control: 0px 1px 2px
     hsl(var(--base-h), calc(var(--base-s) * 0.1), calc(var(--base-l) * 0.75), 0.1);
-  --theme-shadow-input:
-    0px 1px 2px hsl(var(--base-h), calc(var(--base-s) * 0.5), calc(var(--base-l) * 0.1), 0.5),
+  --theme-shadow-input: 0px 1px 2px
+      hsl(var(--base-h), calc(var(--base-s) * 0.5), calc(var(--base-l) * 0.1), 0.5),
     0px 3.4px 6.7px hsl(var(--base-h), calc(var(--base-s) * 1), calc(var(--base-l) * 0.1), 0.25),
     0px 15px 30px hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1), 0.15);
   /*
@@ -1369,11 +1366,10 @@ body {
   --theme-value-headingScaleFactor: 1.2;
   --blockquote-border-thickness: 0.25em;
   /* Use the system font by default for both text and interface, unless user has chosen something else.  */
-  --font-default:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace-default:
-    ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+  --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --font-text-theme: var(--font-default);
   --font-interface-theme: var(--font-default);
   --font-monospace-theme: var(--font-monospace-default);
