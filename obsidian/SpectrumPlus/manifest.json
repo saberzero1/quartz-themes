@@ -1,7 +1,7 @@
 {
-    "name": "SpectrumPlus",
-    "version": "1.0.0",
-    "minAppVersion": "1.0.0",
-    "author": "João Ribeiro",
-    "authorUrl": "https://github.com/anotherlusitano"
+  "name": "SpectrumPlus",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "author": "João Ribeiro",
+  "authorUrl": "https://github.com/anotherlusitano"
 }

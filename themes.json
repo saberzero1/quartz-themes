@@ -1254,7 +1254,7 @@
       "extras": ["minimal"],
       "fonts": ["roboto"]
     },
-    "minimalist-paradise": {
+    "minimalists-paradise": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
@@ -2156,7 +2156,7 @@
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono", "roboto"]
     },
-    "spectrum-plus": {
+    "spectrumplus": {
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,

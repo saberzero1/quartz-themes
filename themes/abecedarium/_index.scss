@@ -59,6 +59,7 @@
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: #3e93d8;
   --text-accent-hover: #3378e0;
+  --text-accent-hover-dark: #1052b5;
   --text-faint: #5d5f67;
   --text-highlight-bg: #ec0d0d;
   --text-muted: #8b959a;
@@ -122,6 +123,7 @@
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: #269dff;
   --text-accent-hover: #66baff;
+  --text-accent-hover-dark: #4e8ae4;
   --text-faint: #999999;
   --text-highlight-bg: #ff3737;
   --text-muted: #6e6e6e;
@@ -315,7 +317,6 @@ body {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
-  --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
@@ -458,7 +459,7 @@ body {
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
   --nav-item-weight-active: inherit;
-  --p-spacing: 1rem;
+  --p-spacing: 0.75em;
   --popover-max-height: 95vh;
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --prompt-border-width: var(--border-width);
@@ -566,6 +567,7 @@ html[saved-theme="dark"] {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: #3e93d8;
   --text-accent-hover: #3378e0;
+  --text-accent-hover-dark: #1052b5;
   --text-faint: #5d5f67;
   --text-highlight-bg: #ec0d0d;
   --text-muted: #8b959a;
@@ -634,6 +636,7 @@ html[saved-theme="light"] {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: #269dff;
   --text-accent-hover: #66baff;
+  --text-accent-hover-dark: #4e8ae4;
   --text-faint: #999999;
   --text-highlight-bg: #ff3737;
   --text-muted: #6e6e6e;
@@ -655,7 +658,7 @@ html {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     border-color: rgba(var(--callout-color), var(--callout-border-opacity));
-    border-radius: var(--callout-radius);
+    border-radius: 0px;
     border-style: solid;
     border-width: var(--callout-border-width);
     margin: 1em 0;
@@ -1432,7 +1435,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: var(--text-accent);
+                background-color: var(--text-accent-hover-dark);
               }
               & > ul > li > p {
                 background-color: transparent;
