@@ -253,7 +253,7 @@ settings:
         default: '180, 142, 173, 0.4'
     -
         id: pln-head-fonts
-        title: Font sizes
+        title: Font modifications
         type: heading
         level: 2
         collapsed: true
@@ -297,6 +297,12 @@ settings:
         max: 30
         step: 1
         format: px
+    -
+        id: pln-italics
+        title: More italic italics
+        description: Make italics more pronounced
+        type: class-toggle
+        default: true
     -
         id: pln-head-gen
         title: General modifications
@@ -364,15 +370,33 @@ settings:
         type: class-toggle
         default: false
     -
-        id: pln-pin-protect
-        title: Protect the Pin icon
-        description: Blocks the click event on the Pin icon so it cannot be removed accidently
+        id: pln-boxed-tags
+        title: Box tags
+        description: Make tags more boxy with a solid border
         type: class-toggle
         default: true
     -
+        id: pln-head-tabs
+        title: Tab modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-tab-rows
+        title: Multiple tab rows
+        description: When hovering, the tabs area will be expanded into multiple rows to make viewing tab titles easier.
+        type: class-toggle
+        default: false
+    -
         id: pln-pretty-pinned
         title: Prettier pinned tabs
-        description: Shrink down pinned tabs to only the note icon. I recommend making prettier note icons as well if you do this.
+        description: Shrink down pinned tabs to only the note icon. I recommend making custom note icons as well if you do this.
+        type: class-toggle
+        default: false
+    -
+        id: pln-pin-protect
+        title: Protect the Pin icon
+        description: Blocks the click event on the Pin icon so it cannot be removed accidently
         type: class-toggle
         default: false
     -
@@ -382,14 +406,8 @@ settings:
         type: class-toggle
         default: false
     -
-        id: pln-boxed-tags
-        title: Box tags
-        description: Make tags more boxy with a solid border
-        type: class-toggle
-        default: true
-    -
         id: pln-head-attachments
-        title: Attachment options
+        title: Attachment modifications
         type: heading
         level: 2
         collapsed: true
@@ -497,6 +515,12 @@ settings:
         type: class-toggle
         default: true
     -
+        id: pln-props-emptyval
+        title: Hide placeholder text
+        description: Hide the "Empty" text that is a placeholder for empty keys
+        type: class-toggle
+        default: true
+    -
         id: pln-props-list
         title: List 'list' properties
         description: Put every property on its own line instead of a long single line list.
@@ -574,6 +598,12 @@ settings:
         type: heading
         level: 2
         collapsed: true
+    -
+        id: pln-rm-mods
+        title: Removals toggle
+        description: Globally toggle my various removals
+        type: class-toggle
+        default: true
     -
         id: pln-rm-folder-nav
         title: Remove folder nav
@@ -991,17 +1021,19 @@ hr {
 
 /* change margins, default is 32 */
 body {
-  --file-margins: 20px;
-}
-.mod-stacked {
-  --file-margins: 10px;
-}
-.mod-stacked:has(.cm-gutter) {
-  --file-margins: 2px;
+  & {
+    --file-margins: 20px;
+  }
+  & .mod-stacked {
+    --file-margins: 10px;
+  }
+  & .mod-stacked:has(.cm-gutter) {
+    --file-margins: 2px;
+  }
 }
 
 /* header colors */
-body.pln-hdcl {
+.pln-hdcl {
   --pln-hdcl-1: #bf616a;
   --pln-hdcl-2: #d08770;
   --pln-hdcl-3: #ebcb8b;
@@ -1023,39 +1055,46 @@ body.pln-hdcl {
 
 /* properties container*/
 body {
-  --metadata-border-color: rgb(var(--pln-cards-color-rgb));
-  --metadata-border-radius: 5px;
-  --metadata-background: rgba(var(--pln-cards-color-rgb), 0.4);
-  --metadata-property-radius: 5px;
-}
-.metadata-container {
-  border-top: 4px solid rgb(var(--pln-cards-color-rgb));
-  border-left: 2px solid rgb(var(--pln-cards-color-rgb));
-  /* 1.3.7 adding --p-spacing but I remove it, this fixes the header being to oclose to the box*/
-  margin-bottom: 10px;
-}
-.metadata-property-key {
-  border-right: 2px solid rgb(var(--pln-cards-color-rgb));
+  & {
+    --metadata-border-color: rgb(var(--pln-cards-color-rgb));
+    --metadata-border-radius: 5px;
+    --metadata-background: rgba(var(--pln-cards-color-rgb), 0.4);
+    --metadata-property-radius: 5px;
+  }
+  & .metadata-container {
+    border-top: 4px solid rgb(var(--pln-cards-color-rgb));
+    border-left: 2px solid rgb(var(--pln-cards-color-rgb));
+    /* 1.3.7 adding --p-spacing but I remove it, this fixes the header being to oclose to the box*/
+    margin-bottom: 10px;
+  }
+  & .metadata-property-key {
+    border-right: 2px solid rgb(var(--pln-cards-color-rgb));
+  }
+  /* hide the placeholder values in metadata*/
+  &.pln-props-emptyval .metadata-input-longtext:empty:before,
+  &.pln-props-emptyval .multi-select-input:before {
+    display: none;
+  }
+  &.pln-props-heading .metadata-properties-heading {
+    display: none;
+  }
+  &.pln-props-list
+    .metadata-property:not([data-property-key="tags"])
+    .metadata-property-value
+    .multi-select-container {
+    display: block;
+  }
+  /* improve meta data container in sidebar */
+  & .workspace > .workspace-split:not(.mod-root) .metadata-container {
+    margin-left: 5px;
+    padding-left: 2px;
+  }
 }
 .hide-properties {
   --metadata-display-reading: none;
 }
-.pln-props-heading .metadata-properties-heading {
-  display: none;
-}
 
-.pln-props-list
-  .metadata-property:not([data-property-key="tags"])
-  .metadata-property-value
-  .multi-select-container {
-  display: block;
-}
-/* improve meta data container in sidebar */
-.workspace > .workspace-split:not(.mod-root) .metadata-container {
-  margin-left: 5px;
-  padding-left: 2px;
-}
-
+/* unknown */
 .markdown-source-view.mod-cm6 .cm-table-widget {
   padding-top: 0;
 }
@@ -1087,64 +1126,85 @@ body {
 }
 
 /* pretty pinned tabs */
-.pln-pretty-pinned:not(:has(.mod-stacked)) .workspace-tab-header:has(.mod-pinned) {
-  max-width: 30px !important;
-  /* also hide the title of pinned tabs */
-  & .workspace-tab-header-inner-title {
-    display: none;
+.pln-pretty-pinned:not(:has(.mod-stacked)) {
+  & .workspace-tab-header:has(.mod-pinned) {
+    --tab-max-width: 30px;
+    & .workspace-tab-header-inner-title {
+      display: none;
+    }
+    & .workspace-tab-header-inner-icon {
+      display: flex;
+    }
+    & .mod-pinned {
+      display: none;
+    }
   }
-  & .workspace-tab-header-inner-icon {
-    display: flex !important;
-  }
-  & .mod-pinned {
-    display: none;
+  &.pln-tab-rows
+    .mod-root
+    .workspace-tabs
+    .workspace-tab-header-container:hover
+    .workspace-tab-header:has(.mod-pinned) {
+    --tab-max-width: unset;
+    & .workspace-tab-header-inner-title {
+      display: contents;
+    }
+    & .workspace-tab-header-inner-icon {
+      display: none;
+    }
+    & .mod-pinned {
+      display: contents;
+    }
   }
 }
 
 /* flip and thin stacked titles */
 body {
-  --tab-stacked-text-transform: rotate(180deg);
-  --tab-stacked-text-align: right;
-  --tab-stacked-header-width: 20px;
-}
-.mod-stacked .workspace-tab-header-inner-title {
-  letter-spacing: 1px;
-}
-.pln-stacked-100 {
-  --tab-stacked-pane-width: 100%;
-}
-
-/* hide the top bar when stacked on macos */
-.mod-macos.pln-rm-mac-tside.is-hidden-frameless
-  .mod-vertical
-  .mod-stacked
-  .workspace-tab-header-container {
-  display: none;
+  & {
+    --tab-stacked-text-transform: rotate(180deg);
+    --tab-stacked-text-align: right;
+    --tab-stacked-header-width: 20px;
+  }
+  & .mod-stacked .workspace-tab-header-inner-title {
+    letter-spacing: 1px;
+  }
+  &.pln-stacked-100 {
+    --tab-stacked-pane-width: 100%;
+  }
+  /* hide the top bar when stacked on macos */
+  &
+    .mod-macos.pln-rm-mac-tside.is-hidden-frameless
+    .mod-vertical
+    .mod-stacked
+    .workspace-tab-header-container {
+    display: none;
+  }
 }
 
 /* invert reading icons to make more sense visually */
-.pln-view-invert
-  .workspace-leaf-content:has(.is-live-preview)
-  .clickable-icon.view-action[aria-label^="Current view: editing"] {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20h9'%3E%3C/path%3E%3Cpath d='M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z'%3E%3C/path%3E%3C/svg%3E");
-  background-color: var(--icon-color);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-}
-.pln-view-invert .clickable-icon.view-action[aria-label^="Current view: reading"] {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'%3E%3C/path%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'%3E%3C/path%3E%3C/svg%3E");
-  background-color: var(--icon-color);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-}
-/* add an icon specifc for source view */
-.pln-view-invert
-  .workspace-leaf-content:not(:has(.is-live-preview))
-  .clickable-icon.view-action[aria-label^="Current view: editing"] {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-pencil-line'%3E%3Cpath d='M12 20h9'/%3E%3Cpath d='M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z'/%3E%3Cpath d='m15 5 3 3'/%3E%3C/svg%3E");
-  background-color: var(--icon-color);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+.pln-view-invert {
+  &
+    .workspace-leaf-content:has(.is-live-preview)
+    .clickable-icon.view-action[aria-label^="Current view: editing"] {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20h9'%3E%3C/path%3E%3Cpath d='M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: var(--icon-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+  & .clickable-icon.view-action[aria-label^="Current view: reading"] {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'%3E%3C/path%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: var(--icon-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+  /* add an icon specifc for source view */
+  &
+    .workspace-leaf-content:not(:has(.is-live-preview))
+    .clickable-icon.view-action[aria-label^="Current view: editing"] {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-pencil-line'%3E%3Cpath d='M12 20h9'/%3E%3Cpath d='M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z'/%3E%3Cpath d='m15 5 3 3'/%3E%3C/svg%3E");
+    background-color: var(--icon-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
 }
 
 /* table stuff */
@@ -1177,54 +1237,57 @@ body {
 }
 
 /* REMOVE THINGS */
-/* hide attachments */
-.pln-attachments .nav-file:has(.nav-file-tag),
-/* folder navigation buttons */
-.pln-rm-folder-nav .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container,
-/* settings pane */
-body:not(.is-mobile).pln-rm-settings .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
-/* sidebars */
-.pln-rm-rside .sidebar-toggle-button.mod-right,
-.pln-rm-rside .sidebar-toggle-button,
-/* statusbar */
-.pln-rm-status .status-bar,
-/* tab chevron */
-.pln-rm-tablist .workspace-tab-header-tab-list .clickable-icon,
-/* new tab */
-.pln-rm-nt .mod-root .workspace-tab-header-new-tab,
-/* tab close button */
-.pln-rm-clstab .workspace-tab-header-inner-close-button,
-/* nav buttons */
-.pln-rm-nav .view-header-nav-buttons,
-/* action bottons, top right of note */
-.pln-rm-act .view-actions,
-/* suggestion pop up box */
-.pln-rm-srchSug .suggestion-container.mod-search-suggestion,
-/* note icon for stacked tabs */
-.pln-rm-noteic .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon,
-/* remove top left sidebar container in hidden*/
-.mod-windows.pln-rm-win-lside-tl.is-hidden-frameless .mod-left-split .mod-top-left-space .workspace-tab-header-container,
-/* hide the placeholder values in metadata*/
-.metadata-input-longtext:empty:before,
-.multi-select-input:before {
-  display: none;
+.pln-rm-mods {
+  /* hide attachments */
+  &.pln-attachments .nav-file:has(.nav-file-tag),
+    /* folder navigation buttons */
+    &.pln-rm-folder-nav .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container,
+    /* settings pane */
+    &:not(.is-mobile).pln-rm-settings .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+    /* sidebars */
+    &.pln-rm-rside .sidebar-toggle-button.mod-right,
+    &.pln-rm-rside .sidebar-toggle-button,
+    /* statusbar */
+    &.pln-rm-status .status-bar,
+    /* tab chevron */
+    &.pln-rm-tablist .workspace-tab-header-tab-list .clickable-icon,
+    /* new tab */
+    &.pln-rm-nt .mod-root .workspace-tab-header-new-tab,
+    /* tab close button */
+    &.pln-rm-clstab .workspace-tab-header-inner-close-button,
+    /* nav buttons */
+    &.pln-rm-nav .view-header-nav-buttons,
+    /* action bottons, top right of note */
+    &.pln-rm-act .view-actions,
+    /* suggestion pop up box */
+    &.pln-rm-srchSug .suggestion-container.mod-search-suggestion,
+    /* note icon for stacked tabs */
+    &.pln-rm-noteic .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon,
+    /* remove top left sidebar container in hidden*/
+    &.mod-windows.pln-rm-win-lside-tl.is-hidden-frameless .mod-left-split .mod-top-left-space .workspace-tab-header-container {
+    display: none;
+  }
 }
 
 /* selectively show certain attachments */
-.pln-attachments.pln-attachments-canvas .nav-file:has([data-path$=".canvas"]),
-.pln-attachments.pln-attachments-pdf .nav-file:has([data-path$=".pdf"]),
-.pln-attachments.pln-attachments-docx .nav-file:has([data-path$=".docx"]),
-.pln-attachments.pln-attachments-xlsx .nav-file:has([data-path$=".xlsx"]),
-.pln-attachments.pln-attachments-images .nav-file:has([data-path$=".jpg"]),
-.pln-attachments.pln-attachments-images .nav-file:has([data-path$=".jpeg"]),
-.pln-attachments.pln-attachments-images .nav-file:has([data-path$=".png"]) {
-  display: contents !important;
+.pln-attachments {
+  &.pln-attachments-canvas .nav-file:has([data-path$=".canvas"]),
+  &.pln-attachments-pdf .nav-file:has([data-path$=".pdf"]),
+  &.pln-attachments-docx .nav-file:has([data-path$=".docx"]),
+  &.pln-attachments-xlsx .nav-file:has([data-path$=".xlsx"]),
+  &.pln-attachments-images .nav-file:has([data-path$=".jpg"]),
+  &.pln-attachments-images .nav-file:has([data-path$=".jpeg"]),
+  &.pln-attachments-images .nav-file:has([data-path$=".png"]) {
+    display: contents !important;
+  }
 }
 
 /* Hide files and dirs starting with _ */
-.pln-hide-files div[data-path^="_"],
-.pln-hide-files div[data-path*="/_"] {
-  display: none;
+.pln-hide-files {
+  & div[data-path^="_"],
+  & div[data-path*="/_"] {
+    display: none;
+  }
 }
 
 /* bullet fix */
@@ -1262,36 +1325,42 @@ body {
 }
 
 /* scrollbars */
-.pln-rm-scroll ::-webkit-scrollbar {
-  visibility: hidden;
-  background-color: transparent;
-  width: 10px;
-}
-.pln-rm-scroll ::-webkit-scrollbar-thumb {
-  visibility: hidden;
-}
-.pln-rm-scroll ::-webkit-scrollbar:hover {
-  visibility: initial;
-}
-.pln-rm-scroll ::-webkit-scrollbar-thumb:hover {
-  visibility: initial;
+.pln-rm-scroll {
+  & ::-webkit-scrollbar {
+    visibility: hidden;
+    background-color: transparent;
+    width: 10px;
+  }
+  & ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+  & ::-webkit-scrollbar:hover {
+    visibility: initial;
+  }
+  & ::-webkit-scrollbar-thumb:hover {
+    visibility: initial;
+  }
 }
 
 /* more italic */
-em,
-.cm-em {
-  display: inline-block;
-  transform: skew(-10deg);
+.pln-italics {
+  em,
+  .cm-em {
+    display: inline-block;
+    transform: skew(-10deg);
+  }
 }
 
 /* this unifies spacing in LP and reading (DV in LP is viewed as if it was reading) */
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
-  margin: 0 0 0 0;
+.markdown-rendered {
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin: 0 0 0 0;
+  }
 }
 
 /*
@@ -1333,64 +1402,65 @@ em,
 /*
  * Embeds
 */
-body.pln-embd-mods {
-  --embed-background: inherit;
-  --embed-border-left: none;
-  --embed-border-right: none;
-  --embed-border-top: none;
-  --embed-border-bottom: none;
-  --embed-padding: 0 0 0 0;
-  --embed-font-style: inherit;
-}
+.pln-embd-mods {
+  & {
+    --embed-background: inherit;
+    --embed-border-left: none;
+    --embed-border-right: none;
+    --embed-border-top: none;
+    --embed-border-bottom: none;
+    --embed-padding: 0 0 0 0;
+    --embed-font-style: inherit;
+  }
+  /* hide headers */
+  &.pln-embd-h1 .markdown-embed h1,
+  &.pln-embd-h2 .markdown-embed h2,
+  &.pln-embd-h3 .markdown-embed h3,
+  &.pln-embd-h4 .markdown-embed h4,
+  &.pln-embd-h5 .markdown-embed h5,
+  &.pln-embd-h6 .markdown-embed h6 {
+    display: none;
+  }
+  /* a better way to hide the first header only */
+  &.pln-embd-first .markdown-embed .mod-header + div > :is(h1, h2, h3, h4, h5, h6) {
+    display: none;
+  }
 
-/* hide headers */
-.pln-embd-mods.pln-embd-h1 .markdown-embed h1,
-.pln-embd-mods.pln-embd-h2 .markdown-embed h2,
-.pln-embd-mods.pln-embd-h3 .markdown-embed h3,
-.pln-embd-mods.pln-embd-h4 .markdown-embed h4,
-.pln-embd-mods.pln-embd-h5 .markdown-embed h5,
-.pln-embd-mods.pln-embd-h6 .markdown-embed h6 {
-  display: none;
-}
-/* a better way to hide the first header only */
-.pln-embd-mods.pln-embd-first .markdown-embed .mod-header + div > :is(h1, h2, h3, h4, h5, h6) {
-  display: none;
-}
+  /* hide titles in emebds */
+  &.pln-embd-title .embed-title {
+    display: none;
+  }
 
-/* hide titles in emebds */
-.pln-embd-mods.pln-embd-title .embed-title {
-  display: none;
-}
+  /* hide the link icon for embeds */
+  &.pln-embd-link .markdown-embed-link {
+    display: none;
+  }
 
-/* hide the link icon for embeds */
-.pln-embd-mods.pln-embd-link .markdown-embed-link {
-  display: none;
-}
+  /* hide the new 1.6 left border */
+  /* also moves them over from 0.85em */
+  & .markdown-embed {
+    border-inline-start: none;
+    --checkbox-margin-inline-start: 0.4em;
+  }
 
-/* hide the new 1.6 left border */
-/* also moves them over from 0.85em */
-.pln-embd-mods .markdown-embed {
-  border-inline-start: none;
-  --checkbox-margin-inline-start: 0.4em;
-}
+  /* this is to move embededlists over in 1.1 */
+  & .cm-embed-block .contains-task-list,
+  & .inline-embed .contains-task-list {
+    padding: 0 0 0 0px;
+  }
 
-/* this is to move embededlists over in 1.1 */
-.pln-embd-mods .cm-embed-block .contains-task-list,
-.pln-embd-mods .inline-embed .contains-task-list {
-  padding: 0 0 0 0px;
-}
-
-/* 1.6 fix to move lists back over in embeds
-2024-08-08 - this is seen breacking a basic embeded list in DFS migration which used:
-    class="internal-embed markdown-embed inline-embed is-loaded"
-.pln-embd-mods .is-live-preview .markdown-embed {
-    --list-indent: 0;
-}
-*/
-/* this includes an OR to make basic list items also move over */
-.pln-embd-mods .is-live-preview .task-list-item .task-list-item,
-.task-list-basic-item {
-  --list-indent: 2.25em;
+  /* 1.6 fix to move lists back over in embeds
+    2024-08-08 - this is seen breacking a basic embeded list in DFS migration which used:
+        class="internal-embed markdown-embed inline-embed is-loaded"
+    & .is-live-preview .markdown-embed {
+        --list-indent: 0;
+    }
+    */
+  /* this includes an OR to make basic list items also move over */
+  & .is-live-preview .task-list-item .task-list-item,
+  .task-list-basic-item {
+    --list-indent: 2.25em;
+  }
 }
 
 /*
@@ -1410,166 +1480,198 @@ body.pln-embd-mods {
  * Links
 */
 body.pln-link-mods {
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline !important;
-  --link-unresolved-opacity: 100;
-}
-
-/* remove the icon from external links */
-body.pln-link-mods .external-link {
-  background-image: none;
-  padding-right: 0px;
+  & {
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-decoration: underline;
+    --link-external-decoration-hover: underline !important;
+    --link-unresolved-opacity: 100;
+  }
+  /* remove the icon from external links */
+  & .external-link {
+    background-image: none;
+    padding-right: 0px;
+  }
 }
 
 /*
  * Multi-row tabs
+ * https://discord.com/channels/686053708261228577/702656734631821413/1355022160397078599
 */
-/* Primary wrapping functions */
-.mod-root .workspace-tab-header-container {
-  flex-wrap: wrap;
-  min-height: var(--header-height);
-  height: unset;
-}
-.mod-root .workspace-tab-header-container-inner {
-  flex-wrap: wrap;
-}
+.pln-tab-rows:not(:has(.mod-stacked)) {
+  /* Primary wrapping functions */
+  & .mod-root .workspace-tab-header-container:hover {
+    --tab-width: unset; /* Kapirklaa */
+    flex-wrap: wrap;
+    min-height: var(--header-height);
+    height: unset;
 
-/* Remove the shoulders on tabs so the bubbles work */
-.mod-root .workspace-tabs .workspace-tab-header::before,
-.mod-root .workspace-tabs .workspace-tab-header::after {
-  display: none;
-}
+    /* primary bubble creation */
+    /* here be dragons */
+    & .workspace-tab-header {
+      width: unset; /* Kapirklaa */
+      container-type: normal; /* Kapirklaa */
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin-bottom: 4px;
+      border-radius: 5px;
+    }
 
-/* Make tabs into bubbles */
-.mod-root .workspace-tabs .workspace-tab-header {
-  --tab-max-width: 200px;
-  --tab-min-width: 120px;
-  min-width: var(--tab-min-width);
-  flex-shrink: 0;
-  margin-bottom: 4px;
-  border-radius: 5px;
-  margin-right: 5px;
-}
+    /* Remove the shoulders on tabs so the bubbles work */
+    & .workspace-tab-header::before,
+    .workspace-tab-header::after {
+      display: none;
+    }
+  }
 
-/* Prevent hovering over tabs from making them larger and twitching the display */
-.mod-root
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header
-  .workspace-tab-header-inner-close-button
-  svg {
-  height: calc(var(--icon-size) / 2);
-  width: calc(var(--icon-size) / 2);
-}
+  /* Remove drag, this is required for hover to work. It does not break the ability to drag tabs */
+  & .workspace-tab-header-container-inner {
+    flex-wrap: wrap;
+    -webkit-app-region: no-drag;
+  }
 
-/* Make all close buttons light up */
-.workspace-tab-header .workspace-tab-header-inner-close-button:hover {
-  background-color: var(--background-modifier-hover);
-}
+  /* Prevent hovering over tabs from making them larger and twitching the display */
+  & .mod-root .workspace-tabs {
+    & .workspace-tab-header {
+      & .workspace-tab-header-inner-close-button svg {
+        height: calc(var(--icon-size) / 2);
+        width: calc(var(--icon-size) / 2);
+      }
+      /* Make all close buttons light up */
+      & .workspace-tab-header-inner-close-button:hover {
+        background-color: var(--background-modifier-hover);
+      }
+    }
+    /* make the close icons work better by always taking up space and only showing the x on hover
+           also does not overlap the words (absolute positioning causes overlap) */
+    &
+      .workspace-tab-header-container:hover
+      .workspace-tab-header
+      .workspace-tab-header-inner-close-button {
+      display: flex;
+      width: 12px;
+    }
+    & .workspace-tab-header:not(:hover) .workspace-tab-header-inner-close-button svg {
+      display: none;
+    }
+  }
 
-/* Shrink pinned tabs */
-.mod-root .workspace-tabs .workspace-tab-header:has(.mod-pinned) {
-  --tab-width: 30px;
-  --tab-min-width: 30px;
-}
+  /* Corrects spacing below tabs */
+  & .workspace-tab-header-tab-list {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
 
-/* Corrects spacing below tabs */
-.mod-root .workspace-tab-header-tab-list {
-  position: absolute;
-  right: 0;
-  top: 30px;
-}
+  /* Move the tabs over with padding to make room for new tab icon */
+  & .mod-root .workspace-tab-header-container-inner {
+    padding-right: 53px;
+  }
+  /* Move new tab icon */
+  &.mod-macos .mod-root .workspace-tab-header-new-tab {
+    position: absolute;
+    right: 0;
+    top: -5px;
+  }
+  &.mod-windows {
+    & .workspace-tab-header-new-tab {
+      position: absolute;
+      right: 138px;
+      top: -5px;
+    }
+    & .is-right-sidedock-open .workspace-tab-header-new-tab {
+      right: 0;
+    }
+  }
 
-/* Move new tab icon */
-.mod-macos .mod-root .workspace-tab-header-new-tab {
-  position: absolute;
-  right: 0;
-  top: -5px;
-}
-.mod-windows .mod-root .workspace-tab-header-new-tab {
-  position: absolute;
-  left: 0px;
-  top: -5px;
-}
+  /* Move sidebar toggle */
+  & .sidebar-toggle-button {
+    display: none;
+    /* position: absolute;
+        right: 60px;
+        top: 30px; */
+  }
 
-/* Move sidebar toggle */
-.mod-root .sidebar-toggle-button {
-  display: none;
-  /* position: absolute;
-    right: 60px;
-    top: 30px; */
-}
+  /* shorten the separator between tabs */
+  & .workspace .mod-root .workspace-tab-header-inner::after {
+    height: 10px;
+  }
 
-/* Original code */
-.is-hidden-frameless:not(.is-fullscreen):not(.mod-macos)
-  .workspace-tabs.mod-top-right-space
-  .workspace-tab-header-container:after {
-  height: 40px;
-}
-.mod-root .workspace-tab-header-spacer {
-  display: none;
+  /* Original code */
+  &
+    .is-hidden-frameless:not(.is-fullscreen):not(.mod-macos)
+    .workspace-tabs.mod-top-right-space
+    .workspace-tab-header-container:after {
+    height: 40px;
+  }
+  & .workspace-tab-header-spacer {
+    display: none;
+  }
 }
 
 /*
  * Dataview
 */
-.pln-dv-mods .markdown-source-view.mod-cm6 .edit-block-button {
-  display: none;
-}
-/* move dataview results over 2px to align with embeds in reading mode */
-.pln-dv-mods .markdown-reading-view .dataview.result-group {
-  padding-left: 2px;
-}
-/* do not move dataview results over in live preview mode */
-.pln-dv-mods .is-live-preview .dataview.result-group {
-  padding-left: 0px;
-}
-/* if you offset embeds, this can be 0 otherwise 2px */
-.pln-dv-mods .cm-preview-code-block.cm-embed-block.markdown-rendered {
-  padding-left: 0;
-}
-/* move the checkbox container over pixels in reading mode */
-/* this was an issue on my daily notes when embedding all PTIs */
-.pln-dv-mods .markdown-reading-view .dataview-container .contains-task-list {
-  padding-left: 20px;
-}
-/* hides the item count on a list */
-.pln-dv-count .dataview.small-text {
-  display: none;
-}
-/* 1.6 fix to move lists back over in embeds */
-.pln-dv-mods .dataview-container {
-  --list-indent: 0;
-}
-/* 1.6 fix to move list items over in DV queries in LP unless it is in an embed */
-/* This is not exact but it is a better fix than margin-left: -6px */
-.pln-dv-mods .is-live-preview:not(:has(.markdown-embed-content)) .dataview.task-list-item {
-  margin-inline-start: var(--list-indent);
-}
+.pln-dv-mods {
+  & .markdown-source-view.mod-cm6 .edit-block-button {
+    display: none;
+  }
+  /* move dataview results over 2px to align with embeds in reading mode */
+  & .markdown-reading-view .dataview.result-group {
+    padding-left: 2px;
+  }
+  /* do not move dataview results over in live preview mode */
+  & .is-live-preview .dataview.result-group {
+    padding-left: 0px;
+  }
+  /* if you offset embeds, this can be 0 otherwise 2px */
+  & .cm-preview-code-block.cm-embed-block.markdown-rendered {
+    padding-left: 0;
+  }
+  /* move the checkbox container over pixels in reading mode */
+  /* this was an issue on my daily notes when embedding all PTIs */
+  & .markdown-reading-view .dataview-container .contains-task-list {
+    padding-left: 20px;
+  }
+  /* hides the item count on a list */
+  &.pln-dv-count .dataview.small-text {
+    display: none;
+  }
+  /* 1.6 fix to move lists back over in embeds */
+  & .dataview-container {
+    --list-indent: 0;
+  }
+  /* 1.6 fix to move list items over in DV queries in LP unless it is in an embed */
+  /* This is not exact but it is a better fix than margin-left: -6px */
+  & .is-live-preview:not(:has(.markdown-embed-content)) .dataview.task-list-item {
+    margin-inline-start: var(--list-indent);
+  }
 
-/* commented out to fix daily not in 1.6.1
-/* 1.6 for child items in LP 
-.pln-dv-mods .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-item-checkbox {
-    --checkbox-margin-inline-start: 3em;
-}
-/* 1.6 for bullet items in LP 
-.pln-dv-mods .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-basic-item {
-    margin-inline-start: 3em;
-}
-*/
-/* 1.6 fix non-checkbox list under a dataview task in LP */
-.pln-dv-mods
-  .is-live-preview
-  .dataview.result-group
-  .contains-task-list
-  .task-list-item
-  ul:not(:has(.task-list-item-checkbox)) {
-  padding-inline-start: 2em;
-}
-/* 1.6 fix non-checkbox list under a dataview task in Reading */
-.pln-dv-mods .markdown-reading-view .dataview.result-group .task-list-item ul {
-  padding-inline-start: 2em;
+  /* commented out to fix daily note in 1.6.1
+    /* 1.6 for child items in LP 
+    & .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-item-checkbox {
+        --checkbox-margin-inline-start: 3em;
+    }
+    /* 1.6 for bullet items in LP 
+    & .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-basic-item {
+        margin-inline-start: 3em;
+    }
+    */
+
+  /* 1.6 fix non-checkbox list under a dataview task in LP */
+  &
+    .is-live-preview
+    .dataview.result-group
+    .contains-task-list
+    .task-list-item
+    ul:not(:has(.task-list-item-checkbox)) {
+    padding-inline-start: 2em;
+  }
+  /* 1.6 fix non-checkbox list under a dataview task in Reading */
+  & .markdown-reading-view .dataview.result-group .task-list-item ul {
+    padding-inline-start: 2em;
+  }
 }
 
 /*
@@ -1676,19 +1778,21 @@ body.pln-checkboxes {
  * Tags
 */
 .pln-boxed-tags {
-  --tag-radius: 5px;
-  --tag-border-width: 2px;
-}
-.pln-boxed-tags .cm-hashtag-begin {
-  display: none;
-}
-.pln-boxed-tags a.tag,
-.pln-boxed-tags .cm-hashtag.cm-hashtag-end {
-  border-right: var(--tag-border-width) solid var(--tag-border-color);
-  border-left: var(--tag-border-width) solid var(--tag-border-color);
-  border-radius: var(--tag-radius);
-  padding-left: var(--tag-padding-x);
-  padding-right: var(--tag-padding-x);
+  & {
+    --tag-radius: 5px;
+    --tag-border-width: 2px;
+  }
+  & .cm-hashtag-begin {
+    display: none;
+  }
+  & a.tag,
+  & .cm-hashtag.cm-hashtag-end {
+    border-right: var(--tag-border-width) solid var(--tag-border-color);
+    border-left: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    padding-left: var(--tag-padding-x);
+    padding-right: var(--tag-padding-x);
+  }
 }
 
 /*
@@ -1723,7 +1827,7 @@ body {
   padding: 0 0 0 var(--size-4-3);
 }
 
-/* make unique callouts */
+/* make unique callout icons */
 .callout[data-callout="danger"] {
   --callout-icon: lucide-alert-octagon;
   --callout-color: var(--color-salmon-rgb);
@@ -1736,6 +1840,52 @@ body {
 }
 .callout[data-callout="meta"] {
   --callout-icon: lucide-database;
+}
+
+/* callouts to make special tables */
+div[data-callout^="table-"].callout {
+  border: 0;
+  padding: 0;
+  background: unset;
+  box-shadow: unset;
+  & > .callout-content {
+    display: contents;
+  }
+  & > .callout-title {
+    display: none;
+  }
+}
+/* make the first row vertical and bold */
+div[data-callout*="vertical_row"] {
+  & thead tr th:first-child {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    height: auto;
+    min-width: 0 !important;
+  }
+  & tbody tr td:first-child {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    height: auto;
+    min-width: 0 !important;
+    letter-spacing: 1px;
+    font-weight: var(--table-header-weight);
+  }
+}
+/* bold the first row of a table */
+div[data-callout*="bold_row"] {
+  & tbody tr td:first-child {
+    font-weight: var(--table-header-weight);
+  }
+}
+/* make the top row standard text unless bold_row is also specified */
+div[data-callout*="plain_columns"] {
+  & thead tr th {
+    font-weight: normal;
+  }
+  &[data-callout*="bold_row"] thead tr th:first-child {
+    font-weight: var(--table-header-weight);
+  }
 }
 
 /* remove meta callouts in reading mode and when embeded*/
@@ -1820,146 +1970,148 @@ body {
  * Original by soggymuse, modified by Pipe
 */
 /* removes the default css */
-.pln-hilite-mods mark,
-.pln-hilite-mods .markdown-rendered mark,
-.pln-hilite-mods .cm-s-obsidian span.cm-highlight {
-  color: inherit;
-  background: rgba(var(--color-yellow-rgb), 0.2);
-  border-radius: 5px;
-  border: 2px solid;
-  border-color: var(--color-yellow);
-}
+.pln-hilite-mods {
+  & mark,
+  & .markdown-rendered mark,
+  & .cm-s-obsidian span.cm-highlight {
+    color: inherit;
+    background: rgba(var(--color-yellow-rgb), 0.2);
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: var(--color-yellow);
+  }
 
-/*Add highlighter's label before highlighted text*/
-.pln-hilite-mods mark::before,
-.pln-hilite-mods .cm-s-obsidian span.cm-highlight::before {
-  padding: 0 5px;
-  text-transform: lowercase;
-  font-style: italic;
-  font-family: Palatino;
-}
+  /*Add highlighter's label before highlighted text*/
+  & mark::before,
+  & .cm-s-obsidian span.cm-highlight::before {
+    padding: 0 5px;
+    text-transform: lowercase;
+    font-style: italic;
+    font-family: Palatino;
+  }
 
-/*Red highlighter (edit)*/
-.pln-hilite-mods mark.edit {
-  border-color: var(--color-red);
-  background: rgba(var(--color-red-rgb), 0.2);
-}
-.pln-hilite-mods mark.edit::before {
-  color: var(--color-red);
-  content: "Edit:";
-}
+  /*Red highlighter (edit)*/
+  & mark.edit {
+    border-color: var(--color-red);
+    background: rgba(var(--color-red-rgb), 0.2);
+  }
+  & mark.edit::before {
+    color: var(--color-red);
+    content: "Edit:";
+  }
 
-/*Orange highlighter (unfinished)*/
-.pln-hilite-mods mark.unfinished {
-  border-color: var(--color-orange);
-  background: rgba(var(--color-orange-rgb), 0.2);
-}
-.pln-hilite-mods mark.unfinished::before {
-  color: var(--color-orange);
-  content: "Unfinished:";
-}
+  /*Orange highlighter (unfinished)*/
+  & mark.unfinished {
+    border-color: var(--color-orange);
+    background: rgba(var(--color-orange-rgb), 0.2);
+  }
+  & mark.unfinished::before {
+    color: var(--color-orange);
+    content: "Unfinished:";
+  }
 
-/*Pink highlighter (verify)*/
-.pln-hilite-mods mark.verify {
-  border-color: var(--color-purple);
-  background: rgba(var(--color-purple-rgb), 0.2);
-}
-.pln-hilite-mods mark.verify::before {
-  color: var(--color-purple);
-  content: "Verify:";
-}
+  /*Pink highlighter (verify)*/
+  & mark.verify {
+    border-color: var(--color-purple);
+    background: rgba(var(--color-purple-rgb), 0.2);
+  }
+  & mark.verify::before {
+    color: var(--color-purple);
+    content: "Verify:";
+  }
 
-/* Green highlighter (important)*/
-.pln-hilite-mods mark.important {
-  border-color: var(--color-green);
-  background: rgba(var(--color-green-rgb), 0.2);
-}
-.pln-hilite-mods mark.important::before {
-  color: var(--color-green);
-  content: "Important:";
-}
+  /* Green highlighter (important)*/
+  & mark.important {
+    border-color: var(--color-green);
+    background: rgba(var(--color-green-rgb), 0.2);
+  }
+  & mark.important::before {
+    color: var(--color-green);
+    content: "Important:";
+  }
 
-/*
- * Text colours using mark
-*/
-.pln-hilite-mods mark.red {
-  color: var(--color-red);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.orange {
-  color: var(--color-orange);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.yellow {
-  color: var(--color-yellow);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.green {
-  color: var(--color-green);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.purple {
-  color: var(--color-purple);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.sea-green {
-  color: var(--color-sea-green);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.cyan {
-  color: var(--color-cyan);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.frost {
-  color: var(--color-frost);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.blue {
-  color: var(--color-blue);
-  background: none;
-  border: 0px;
-}
-.pln-hilite-mods mark.salmon {
-  color: var(--color-salmon);
-  background: none;
-  border: 0px;
-}
-/*underlined text*/
-.pln-hilite-mods mark.underline {
-  text-decoration: underline;
-  background: none;
-  border: 0px;
-}
-/* paths */
-.pln-hilite-mods mark.path {
-  font-family: var(--font-monospace);
-  color: var(--text-faint);
-  background: none;
-  border: 0px;
-}
-/* borders */
-.pln-hilite-mods mark.borders {
-  border: 1px solid;
-  border-radius: 0px;
-  padding-left: 2px;
-  padding-right: 2px;
-  background: none;
-}
-/* spoiler */
-.pln-hilite-mods mark.spoiler {
-  border: 0px;
-  background-color: var(--text-normal);
-}
-.pln-hilite-mods mark.spoiler:hover {
-  background-color: inherit;
+  /*
+    * Text colours using mark
+    */
+  & mark.red {
+    color: var(--color-red);
+    background: none;
+    border: 0px;
+  }
+  & mark.orange {
+    color: var(--color-orange);
+    background: none;
+    border: 0px;
+  }
+  & mark.yellow {
+    color: var(--color-yellow);
+    background: none;
+    border: 0px;
+  }
+  & mark.green {
+    color: var(--color-green);
+    background: none;
+    border: 0px;
+  }
+  & mark.purple {
+    color: var(--color-purple);
+    background: none;
+    border: 0px;
+  }
+  & mark.sea-green {
+    color: var(--color-sea-green);
+    background: none;
+    border: 0px;
+  }
+  & mark.cyan {
+    color: var(--color-cyan);
+    background: none;
+    border: 0px;
+  }
+  & mark.frost {
+    color: var(--color-frost);
+    background: none;
+    border: 0px;
+  }
+  & mark.blue {
+    color: var(--color-blue);
+    background: none;
+    border: 0px;
+  }
+  & mark.salmon {
+    color: var(--color-salmon);
+    background: none;
+    border: 0px;
+  }
+  /*underlined text*/
+  & mark.underline {
+    text-decoration: underline;
+    background: none;
+    border: 0px;
+  }
+  /* paths */
+  & mark.path {
+    font-family: var(--font-monospace);
+    color: var(--text-faint);
+    background: none;
+    border: 0px;
+  }
+  /* borders */
+  & mark.borders {
+    border: 1px solid;
+    border-radius: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background: none;
+  }
+  /* spoiler */
+  & mark.spoiler {
+    border: 0px;
+    background-color: var(--text-normal);
+  }
+  & mark.spoiler:hover {
+    background-color: inherit;
+  }
 }
 
 /*
@@ -1971,29 +2123,30 @@ body {
 
 /* colors */
 #calendar-container {
-  --color-dot: var(--color-accent);
-  --color-arrow: var(--color-salmon);
-  --color-background-weekend: var(--background-primary);
-  --color-text-weeknum: var(--color-yellow);
+  & {
+    --color-dot: var(--color-accent);
+    --color-arrow: var(--color-salmon);
+    --color-background-weekend: var(--background-primary);
+    --color-text-weeknum: var(--color-yellow);
+  }
+  & .year {
+    color: var(--color-cyan);
+  }
+  & .active {
+    --color-dot: var(--text-on-accent);
+  }
+  &,
+  & .day,
+  & .week-num {
+    padding: 0;
+  }
+  & .nav {
+    margin: 0.2em 0 0.6em;
+  }
 }
-#calendar-container .year {
-  color: var(--color-cyan);
-}
-#calendar-container .active {
-  --color-dot: var(--text-on-accent);
-}
-
 /* padding fixes for calendar */
 .workspace-leaf-content .view-content {
   padding: var(--size-2-2);
-}
-#calendar-container,
-#calendar-container .day,
-#calendar-container .week-num {
-  padding: 0;
-}
-#calendar-container .nav {
-  margin: 0.2em 0 0.6em;
 }
 
 /*
@@ -2007,131 +2160,126 @@ body {
   --nav-indentation-guide-width: 3px;
   border-bottom-left-radius: 5px;
 }
-/* changes the top level folders to darker text so they can be read on the coloured folder background*/
-.nav-files-container > div > .nav-folder > .nav-folder-title,
-.nav-files-container > div > .nav-folder > .nav-folder-title:hover,
-.nav-files-container > div > .nav-folder > .nav-folder-title > .collapse-icon svg.svg-icon {
-  --nav-item-color: var(--b0);
-  --nav-item-color-hover: var(--b0);
-  --nav-collapse-icon-color: var(--b0);
+
+.pln-folder-icons {
+  /* optionally make the collapse icons folders instead */
+  & .nav-files-container .collapse-icon.is-collapsed svg.svg-icon {
+    transform: none;
+  }
+
+  /* Make all folder chevrons into icons, and make them all white */
+  & .nav-files-container > div > .nav-folder .collapse-icon svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+    color: var(--icon-color);
+    background-color: var(--icon-color);
+  }
+  /* Change top level to grey */
+  & .nav-files-container > div > .nav-folder > .nav-folder-title > .collapse-icon svg {
+    color: var(--b0);
+    background-color: var(--b0);
+  }
+
+  /* Make all folder chevrons into icons, and make them all white */
+  & .nav-files-container > div > .nav-folder .collapse-icon.is-collapsed svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    color: var(--icon-color);
+    background-color: var(--icon-color);
+  }
+  /* Change top level to grey */
+  & .nav-files-container > div > .nav-folder > .nav-folder-title > .collapse-icon.is-collapsed svg {
+    color: var(--b0);
+    background-color: var(--b0);
+  }
 }
 
-/* optionally make the collapse icons folders instead */
-.pln-folder-icons .nav-files-container .collapse-icon.is-collapsed svg.svg-icon {
-  transform: none;
-}
+.nav-files-container {
+  /* changes the top level folders to darker text so they can be read on the coloured folder background*/
+  & > div > .nav-folder > .nav-folder-title,
+  & > div > .nav-folder > .nav-folder-title:hover,
+  & > div > .nav-folder > .nav-folder-title > .collapse-icon svg.svg-icon {
+    --nav-item-color: var(--b0);
+    --nav-item-color-hover: var(--b0);
+    --nav-collapse-icon-color: var(--b0);
+  }
 
-/* Make all folder chevrons into icons, and make them all white */
-.pln-folder-icons .nav-files-container > div > .nav-folder .collapse-icon svg {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
-  color: var(--icon-color);
-  background-color: var(--icon-color);
-}
-/* Change top level to grey */
-.pln-folder-icons
-  .nav-files-container
-  > div
-  > .nav-folder
-  > .nav-folder-title
-  > .collapse-icon
-  svg {
-  color: var(--b0);
-  background-color: var(--b0);
-}
+  /* Make items focused via arrow keys highlighted */
+  & .tree-item-self.has-focus {
+    background-color: var(--background-modifier-hover);
+  }
 
-/* Make all folder chevrons into icons, and make them all white */
-.pln-folder-icons .nav-files-container > div > .nav-folder .collapse-icon.is-collapsed svg {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
-  color: var(--icon-color);
-  background-color: var(--icon-color);
-}
-/* Change top level to grey */
-.pln-folder-icons
-  .nav-files-container
-  > div
-  > .nav-folder
-  > .nav-folder-title
-  > .collapse-icon.is-collapsed
-  svg {
-  color: var(--b0);
-  background-color: var(--b0);
-}
+  /* Coloursssssss */
+  & > div > .nav-folder:nth-child(9n + 2) > .tree-item-self {
+    background-color: var(--color-red);
+  }
+  & > div > .nav-folder:nth-child(9n + 2) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-red);
+  }
 
-/* Make items focused via arrow keys highlighted */
-.nav-files-container .tree-item-self.has-focus {
-  background-color: var(--background-modifier-hover);
-}
+  & > div > .nav-folder:nth-child(9n + 3) > .tree-item-self {
+    background-color: var(--color-orange);
+  }
+  & > div > .nav-folder:nth-child(9n + 3) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-orange);
+  }
 
-/* Coloursssssss */
-.nav-files-container > div > .nav-folder:nth-child(9n + 2) > .tree-item-self {
-  background-color: var(--color-red);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 2) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-red);
-}
+  & > div > .nav-folder:nth-child(9n + 4) > .tree-item-self {
+    background-color: var(--color-yellow-light);
+  }
+  & > div > .nav-folder:nth-child(9n + 4) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-yellow-light);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 3) > .tree-item-self {
-  background-color: var(--color-orange);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 3) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-orange);
-}
+  & > div > .nav-folder:nth-child(9n + 5) > .tree-item-self {
+    background-color: var(--color-green);
+  }
+  & > div > .nav-folder:nth-child(9n + 5) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-green);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 4) > .tree-item-self {
-  background-color: var(--color-yellow-light);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 4) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-yellow-light);
-}
+  & > div > .nav-folder:nth-child(9n + 6) > .tree-item-self {
+    background-color: var(--color-sea-green);
+  }
+  & > div > .nav-folder:nth-child(9n + 6) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-sea-green);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 5) > .tree-item-self {
-  background-color: var(--color-green);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 5) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-green);
-}
+  & > div > .nav-folder:nth-child(9n + 7) > .tree-item-self {
+    background-color: var(--color-cyan);
+  }
+  & > div > .nav-folder:nth-child(9n + 7) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-cyan);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 6) > .tree-item-self {
-  background-color: var(--color-sea-green);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 6) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-sea-green);
-}
+  & > div > .nav-folder:nth-child(9n + 8) > .tree-item-self {
+    background-color: var(--color-frost);
+  }
+  & > div > .nav-folder:nth-child(9n + 8) .tree-item-children {
+    border-left: 3px solid var(--color-frost);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 7) > .tree-item-self {
-  background-color: var(--color-cyan);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 7) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-cyan);
-}
+  & > div > .nav-folder:nth-child(9n + 9) > .tree-item-self {
+    background-color: var(--color-blue);
+  }
+  & > div > .nav-folder:nth-child(9n + 9) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-blue);
+  }
 
-.nav-files-container > div > .nav-folder:nth-child(9n + 8) > .tree-item-self {
-  background-color: var(--color-frost);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 8) .tree-item-children {
-  border-left: 3px solid var(--color-frost);
-}
-
-.nav-files-container > div > .nav-folder:nth-child(9n + 9) > .tree-item-self {
-  background-color: var(--color-blue);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 9) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-blue);
-}
-
-.nav-files-container > div > .nav-folder:nth-child(9n + 10) > .tree-item-self {
-  background-color: var(--color-purple);
-}
-.nav-files-container > div > .nav-folder:nth-child(9n + 10) .tree-item-children {
-  --nav-indentation-guide-color: var(--color-purple);
+  & > div > .nav-folder:nth-child(9n + 10) > .tree-item-self {
+    background-color: var(--color-purple);
+  }
+  & > div > .nav-folder:nth-child(9n + 10) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-purple);
+  }
 }
 
 /* lock functionality */
-.lock * {
-  -webkit-user-modify: read-only !important;
-}
-.lock .metadata-content {
-  pointer-events: none;
+.lock {
+  & * {
+    -webkit-user-modify: read-only !important;
+  }
+  & .metadata-content {
+    pointer-events: none;
+  }
 }
 .workspace-leaf:has(.lock) .clickable-icon.view-action[aria-label^="Current view:"] {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-lock'%3E%3Crect width='18' height='11' x='3' y='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'/%3E%3C/svg%3E");
@@ -2513,3 +2661,4 @@ body {
     --cards-columns: repeat(8, minmax(0, 1fr));
   }
 }
+
