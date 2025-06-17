@@ -45,6 +45,10 @@ format:
   npx prettier . --write --ignore-path "./.prettiercompileignore"
 
 [private]
+format-all:
+  npx prettier . --check --write
+
+[private]
 lint: format
 
 [private]
