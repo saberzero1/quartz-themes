@@ -13526,6 +13526,7 @@ input.metadata-property-key-input:focus {
   --pill-radius: var(--tag-radius);
   --pill-weight: var(--tag-weight);
   cursor: var(--cursor-link);
+  font-family: var(--font-links);
   line-height: 1;
 }
 
@@ -25093,10 +25094,6 @@ body.ss-links-sans {
 .ss-hide-external-link-icon .is-live-preview .external-link {
   background-image: none;
   padding-right: 0;
-}
-
-.metadata-property[data-property-key="tags"] .multi-select-pill {
-  font-family: var(--font-links);
 }
 
 /* Lists START */

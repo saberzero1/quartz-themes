@@ -23861,7 +23861,6 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* @settings
-
 name: Dashboard theme
 id: dashboard-theme
 settings:
@@ -23878,9 +23877,7 @@ settings:
             - pool
             - strawberry
             - vanilla
-
 */
-
 body.theme-light {
   --color-base-00: #fafafa;
   --color-base-05: #acb7a7;
