@@ -50,13 +50,16 @@ body {
   --background-secondary: var(--color-base-20);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
+  --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: var(--table-border-color);
-  --bases-table-cell-background-active: var(--background-modifier-hover);
+  --bases-table-cell-background-active: var(--background-primary);
   --bases-table-cell-background-disabled: var(--background-modifier-cover);
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--interactive-accent);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -65,12 +68,14 @@ body {
   --bases-table-header-background: var(--background-primary);
   --bases-table-header-background-hover: var(--background-modifier-hover);
   --bases-table-header-color: var(--text-muted);
+  --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent var(--size-4-6),
     black var(--size-4-6)
   );
   --bases-table-header-weight: var(--font-weight);
+  --bases-table-row-background-hover: var(--table-row-background-hover);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
   --bases-table-text-size: var(--font-smaller);
@@ -1074,11 +1079,9 @@ h6 {
 }
 
 .metadata-input-longtext {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--metadata-input-longtext-lines);
   color: var(--metadata-input-text-color);
   cursor: text;
-  flex: 1 0 auto;
+  flex-grow: 1;
   font-size: var(--metadata-input-font-size);
   max-height: 300px;
   padding: var(--size-4-1) var(--size-4-2);
@@ -1168,6 +1171,7 @@ input[type="search"] {
   overflow-x: hidden;
   overflow-y: auto;
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-6) var(--size-4-3);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-6));
   scroll-padding-block: var(--size-4-2);
 }
 
@@ -1424,7 +1428,7 @@ svg.svg-icon {
 .backlink-pane {
   flex: 1 0 0;
   overflow-y: auto;
-  padding-bottom: var(--size-4-8);
+  padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
   padding-top: var(--size-4-1);

@@ -21,6 +21,7 @@
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -68,6 +69,7 @@
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -304,7 +306,7 @@ body {
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
-  --interactive-accent-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.7);
+  --interactive-accent-hover: var(--color-accent-1);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --italic-color: inherit;
   --layer-popover: 30;
@@ -313,7 +315,7 @@ body {
   --link-color: var(--obsidian-violet);
   --link-color-hover: var(--text-accent-hover);
   --link-external-color: var(--link-color);
-  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-color-hover: var(--color-accent-1) --link-unresolved-color: var(--color-red);
   --link-external-filter: none;
   --link-weight: var(--font-weight);
   --metadata-input-text-color: var(--text-normal);
@@ -339,6 +341,7 @@ body {
   --OT-color-on-accent-2: var(--color-base-100);
   --OT-color-on-accent-3: var(--color-base-100);
   --OT-color-on-base-20: var(--color-base-100);
+  --OT-menu-background: var(--color-base-05);
   --OT-nav-item-vertical-padding: var(--size-4-1);
   --OT-pill-background: var(--color-accent-2);
   --OT-pill-color: var(--OT-color-on-accent-2);
@@ -375,12 +378,12 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: vat(--OT-color-on-accent-3);
-  --text-accent-hover: var(--link-color);
+  --text-accent: var(--color-accent-2);
+  --text-accent-hover: var(--OT-color-on-accent-1);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-50);
+  --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
@@ -417,6 +420,7 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -469,6 +473,7 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -1235,13 +1240,13 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-secondary);
+        background-color: var(--OT-menu-background);
         border: var(--prompt-border-width) solid var(--prompt-border-color);
         border-radius: var(--radius-l);
         box-shadow: var(--shadow-l);
         margin: 12vh auto;
         & > input {
-          background-color: var(--background-modifier-form-field);
+          background-color: var(--background-primary);
           border: none;
           border-bottom: 1px solid var(--background-secondary);
           border-radius: 0;
@@ -1284,7 +1289,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: var(--color-accent-1);
+                background-color: var(--background-modifier-hover);
               }
               & > ul > li > p {
                 background-color: transparent;
