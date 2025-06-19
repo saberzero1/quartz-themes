@@ -1,4 +1,5 @@
 import yaml from "js-yaml"
+import postcss from "postcss"
 
 /**
  * Extracts all /* @settings ... *\/ YAML blocks from a CSS string.
@@ -80,4 +81,132 @@ export function styleSettingToCss(setting, value) {
     default:
       return ''
   }
+}
+
+/**
+ * Extracts and rewrites all CSS rules that are gated by a specific class-toggle.
+ * For each rule with `body.<class>`, removes the class from the selector and outputs the rule.
+ * Only rules that had the class in their selector are included in the result.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} classToggleId - The class-toggle id (e.g. "my-css-class")
+ * @returns {string} - The rewritten CSS string
+ */
+export function extractClassToggleCss(cssString, classToggleId) {
+  const root = postcss.parse(cssString)
+  const classSelector = `.${classToggleId}`
+  const bodyClassSelector = `body${classSelector}`
+  let output = ""
+  root.walkRules(rule => {
+    // For each selector in the rule (can be comma-separated)
+    const selectors = (rule.selectors || rule.selector.split(",").map(s => s.trim()))
+    const matchingSelectors = selectors.filter(sel => sel.includes(bodyClassSelector))
+    if (matchingSelectors.length > 0) {
+      // Remove the .class from the selector
+      const newSelectors = matchingSelectors.map(sel => sel.replace(bodyClassSelector, "body").replace(/\s+/g, " ").trim())
+      // Build the rule string
+      output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString()).join("\n")}\n}\n\n`
+    }
+  })
+  return output.trim()
+}
+
+/**
+ * Extracts and rewrites all CSS rules that are gated by a specific class-select value.
+ * For each rule with `body.<selectedClass>`, removes the class from the selector and outputs the rule.
+ * Only rules that had the class in their selector are included in the result.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} selectedClass - The class-select value (e.g. "theme-variant-dark")
+ * @returns {string} - The rewritten CSS string
+ */
+export function extractClassSelectCss(cssString, selectedClass) {
+  const root = postcss.parse(cssString)
+  const classSelector = `.${selectedClass}`
+  const bodyClassSelector = `body${classSelector}`
+  let output = ""
+  root.walkRules(rule => {
+    const selectors = (rule.selectors || rule.selector.split(",").map(s => s.trim()))
+    const matchingSelectors = selectors.filter(sel => sel.includes(bodyClassSelector))
+    if (matchingSelectors.length > 0) {
+      const newSelectors = matchingSelectors.map(sel => sel.replace(bodyClassSelector, "body").replace(/\s+/g, " ").trim())
+      output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString()).join("\n")}\n}\n\n`
+    }
+  })
+  return output.trim()
+}
+
+/**
+ * Replaces all occurrences of a CSS variable (e.g. --accent) with a new value in the CSS string.
+ * Only replaces the value, not the selector or property name.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} variableId - The variable id (e.g. "accent")
+ * @param {string} value - The new value (e.g. "#ff0000")
+ * @returns {string} - The CSS string with the variable replaced
+ */
+export function replaceVariableColor(cssString, variableId, value) {
+  // Regex to match --variableId: ...;
+  const regex = new RegExp(`(--${variableId}\s*:\s*)([^;]+)(;)`, 'g')
+  return cssString.replace(regex, `$1${value}$3`)
+}
+
+/**
+ * Replaces all occurrences of a CSS variable (e.g. --accent) with new values for light and dark themes.
+ * Only replaces the value, not the selector or property name.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} variableId - The variable id (e.g. "accent")
+ * @param {string} valueLight - The value for light theme
+ * @param {string} valueDark - The value for dark theme
+ * @returns {string} - The CSS string with the variable replaced in light/dark theme blocks
+ */
+export function replaceVariableThemedColor(cssString, variableId, valueLight, valueDark) {
+  // Replace in .theme-light
+  let result = cssString.replace(
+    new RegExp(`(\.theme-light[^{]*\{[^}]*)(--${variableId}\s*:\s*)([^;]+)(;)`, 'g'),
+    (match, pre, varDecl, oldVal, semi) => {
+      return pre + varDecl + valueLight + semi
+    }
+  )
+  // Replace in .theme-dark
+  result = result.replace(
+    new RegExp(`(\.theme-dark[^{]*\{[^}]*)(--${variableId}\s*:\s*)([^;]+)(;)`, 'g'),
+    (match, pre, varDecl, oldVal, semi) => {
+      return pre + varDecl + valueDark + semi
+    }
+  )
+  return result
+}
+
+/**
+ * Replaces all occurrences of a CSS variable (e.g. --id) with a new value in the CSS string.
+ * Works for variable-text, variable-number, variable-number-slider, variable-select.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} variableId - The variable id (e.g. "text" or "line-width")
+ * @param {string|number} value - The new value
+ * @returns {string} - The CSS string with the variable replaced
+ */
+export function replaceVariableValue(cssString, variableId, value) {
+  const regex = new RegExp(`(--${variableId}\s*:\s*)([^;]+)(;)`, 'g')
+  return cssString.replace(regex, `$1${value}$3`)
+}
+
+/**
+ * Replaces a set of gradient variables (e.g. --color-base-00, --color-base-05, ...) with new values.
+ *
+ * @param {string} cssString - The full CSS source
+ * @param {string} baseId - The base variable id (e.g. "color-base")
+ * @param {Object} valueMap - Map of suffix (e.g. "00", "05") to value (e.g. { "00": "#fff", "05": "#eee" })
+ * @returns {string} - The CSS string with the gradient variables replaced
+ */
+export function replaceGradientVariables(cssString, baseId, valueMap) {
+  let result = cssString
+  for (const [suffix, value] of Object.entries(valueMap)) {
+    const varName = `--${baseId}-${suffix}`
+    const regex = new RegExp(`(${varName}\s*:\s*)([^;]+)(;)`, 'g')
+    result = result.replace(regex, `$1${value}$3`)
+  }
+  return result
 }
