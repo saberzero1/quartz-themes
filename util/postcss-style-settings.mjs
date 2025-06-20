@@ -95,19 +95,20 @@ export function styleSettingToCss(setting, value) {
 export function extractClassToggleCss(cssString, classToggleId) {
   const root = postcss.parse(cssString)
   const classSelector = `.${classToggleId}`
-  const bodyClassSelector = `body${classSelector}`
   let output = ""
   root.walkRules(rule => {
     // For each selector in the rule (can be comma-separated)
     const selectors = (rule.selectors || rule.selector.split(",").map(s => s.trim()))
-    const matchingSelectors = selectors.filter(sel => sel.includes(bodyClassSelector))
+    const matchingSelectors = selectors.filter(sel => sel.includes(classSelector))
     if (matchingSelectors.length > 0) {
+      console.log("Matching selectors for class-toggle:", matchingSelectors)
       // Remove the .class from the selector
-      const newSelectors = matchingSelectors.map(sel => sel.replace(bodyClassSelector, "body").replace(/\s+/g, " ").trim())
+      const newSelectors = matchingSelectors.map(sel => sel.replaceAll(classSelector, "").replace(/\s+/g, " ").trim())
       // Build the rule string
       output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString()).join("\n")}\n}\n\n`
     }
   })
+  console.log(output.trim())
   return output.trim()
 }
 
