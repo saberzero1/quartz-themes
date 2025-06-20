@@ -37,6 +37,13 @@ atomize:
   npx prettier . --write
 
 [private]
+force-atomize:
+  rm converted_app.css
+  rm converted_app_extracted.css
+  node convert.js ATOMIZE
+  # npx prettier . --write
+
+[private]
 fonts:
   node extract-font-list.js
 

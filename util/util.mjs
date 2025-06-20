@@ -78,6 +78,30 @@ export function getCurrentFolder() {
 }
 
 /**
+ * Retrieves the variations of a theme from the themes configuration.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {Object[]} An array of variations for the specified theme.
+ */
+export function getVariationsFromTheme(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["variations"]
+}
+
+/**
+ * Retrieves the names of variations for a specified theme.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {string[]} An array of variation names for the specified theme.
+ */
+export function getVariationNamesFromTheme(theme) {
+  // Get the variations for the specified theme
+  const variations = getVariationsFromTheme(theme)
+
+  // Map the variations to their names
+  return variations.map((variation) => variation.name)
+}
+
+/**
  * Retrieves the value associated with a given key in a dictionary.
  *
  * @param {Object} dictionary - The dictionary (JavaScript object) to search.
