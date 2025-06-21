@@ -9,6 +9,18 @@
 
 :root:root,
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-primary: var(--color-light);
   --background-primary-alt: var(--color-light);
   --background-secondary: var(--color-light);
@@ -122,18 +134,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--color-green-lightest);
   --text-nav: var(--color-dark);
   --text-normal: var(--color-dark);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 .darkmode {
@@ -540,6 +541,18 @@ body {
 /* START LIGHT */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-primary: var(--color-light);
   --background-primary-alt: var(--color-light);
   --background-secondary: var(--color-light);
@@ -653,18 +666,7 @@ html {
   --text-highlight-bg: var(--color-green-lightest);
   --text-nav: var(--color-dark);
   --text-normal: var(--color-dark);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */

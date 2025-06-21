@@ -9,6 +9,18 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--md-sys-color-outline-variant);
   --background-modifier-border-focus: var(--md-sys-color-primary);
   --background-modifier-border-hover: var(--md-sys-color-outline);
@@ -288,22 +300,23 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--md-sys-color-tertiary-container);
   --text-muted: var(--md-sys-color-outline);
   --text-normal: var(--md-sys-color-on-surface);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--md-sys-color-outline-variant);
   --background-modifier-border-focus: var(--md-sys-color-primary);
   --background-modifier-border-hover: var(--md-sys-color-outline);
@@ -581,18 +594,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--md-sys-color-tertiary-container);
   --text-muted: var(--md-sys-color-outline);
   --text-normal: var(--md-sys-color-on-surface);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 @font-face {
@@ -1003,6 +1005,18 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--md-sys-color-outline-variant);
   --background-modifier-border-focus: var(--md-sys-color-primary);
   --background-modifier-border-hover: var(--md-sys-color-outline);
@@ -1282,23 +1296,24 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--md-sys-color-tertiary-container);
   --text-muted: var(--md-sys-color-outline);
   --text-normal: var(--md-sys-color-on-surface);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--md-sys-color-outline-variant);
   --background-modifier-border-focus: var(--md-sys-color-primary);
   --background-modifier-border-hover: var(--md-sys-color-outline);
@@ -1576,18 +1591,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--md-sys-color-tertiary-container);
   --text-muted: var(--md-sys-color-outline);
   --text-normal: var(--md-sys-color-on-surface);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */
