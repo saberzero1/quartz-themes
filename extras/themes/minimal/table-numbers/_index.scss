@@ -1,0 +1,96 @@
+.table-numbers {
+  --table-numbers-padding-right: 0.5em;
+}
+
+.table-numbers table:not(.calendar) {
+  counter-reset: section;
+}
+
+.table-numbers table:not(.calendar) > thead > tr > th:first-child {
+  white-space: nowrap;
+}
+
+.table-numbers table:not(.calendar) > thead > tr > th:first-child::before {
+  content: " ";
+  padding-right: var(--table-numbers-padding-right);
+  display: inline-block;
+  min-width: 2em;
+}
+
+.table-numbers table:not(.calendar) > thead > tr > th:first-child .cm-s-obsidian,
+.table-numbers table:not(.calendar) > thead > tr > th:first-child .table-cell-wrapper {
+  display: inline-block;
+  min-width: 10px;
+}
+
+.table-numbers table:not(.calendar).table-editor > tbody > tr > td:first-child .table-cell-wrapper,
+.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child {
+  white-space: nowrap;
+}
+
+.table-numbers
+  table:not(.calendar).table-editor
+  > tbody
+  > tr
+  > td:first-child
+  .table-cell-wrapper::before,
+.table-numbers table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child::before {
+  counter-increment: section;
+  content: counter(section) " ";
+  text-align: center;
+  padding-right: var(--table-numbers-padding-right);
+  display: inline-block;
+  min-width: 2em;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.table-numbers
+  table:not(.calendar).table-editor
+  > tbody
+  > tr
+  > td:first-child
+  .table-cell-wrapper
+  .cm-s-obsidian,
+.table-numbers
+  table:not(.calendar):not(.table-editor)
+  > tbody
+  > tr
+  > td:first-child
+  .cm-s-obsidian {
+  display: inline-block;
+  min-width: 10px;
+}
+
+.table-numbers .bases-table {
+  counter-reset: section;
+}
+
+.table-numbers .bases-table .bases-tr > .bases-td:first-child {
+  white-space: nowrap;
+}
+
+.table-numbers .bases-table .bases-tr > .bases-td:first-child .bases-table-header-label,
+.table-numbers .bases-table .bases-tr > .bases-td:first-child .bases-table-header-name {
+  padding-inline-start: 0;
+}
+
+.table-numbers .bases-table .bases-tr > .bases-td:first-child::before {
+  content: " ";
+  padding-right: var(--table-numbers-padding-right);
+  display: inline-block;
+  min-width: 2em;
+}
+
+.table-numbers .bases-table .bases-tbody .bases-tr > .bases-td:first-child::before {
+  counter-increment: section;
+  content: counter(section) " ";
+  text-align: center;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--bases-table-text-size);
+}
+
+.table-numbers .table-editor {
+  --table-numbers-padding-right: 0;
+}

@@ -1,0 +1,24 @@
+body:not(.mu-hide-folders) .nav-folder-title-content:not(:nth-child(1))::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: var(--size-4-2);
+  vertical-align: middle;
+  background-position: center;
+  background-color: currentColor;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mask-image: var(--mu-folder-icon-opened-selected);
+  -webkit-mask-image: var(--mu-folder-icon-opened-selected);
+  color: var(--mu-folder-icon-color-active);
+}
+
+body:not(.mu-hide-folders) .is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
+  mask-image: var(--mu-folder-icon-closed-selected);
+  -webkit-mask-image: var(--mu-folder-icon-closed-selected);
+  color: var(--mu-folder-icon-color);
+}

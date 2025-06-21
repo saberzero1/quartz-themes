@@ -1,0 +1,13 @@
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-collapse-icon-toggle
+  .tree-item-self
+  .tree-item-icon {
+  --icon-color: rgba(var(--rainbow-folder-color), var(--anp-simple-rainbow-opacity, 1));
+  --nav-collapse-icon-color: rgba(
+    var(--rainbow-folder-color),
+    var(--anp-simple-rainbow-opacity, 1)
+  );
+  --nav-collapse-icon-color-collapsed: rgba(
+    var(--rainbow-folder-color),
+    var(--anp-simple-rainbow-opacity, 1)
+  );
+}

@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
@@ -69,13 +70,82 @@
   );
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1c1c1c;
+  --color-base-10: #272727;
+  --color-base-100: #dadada;
+  --color-base-20: #1c1c1c;
+  --color-base-25: #1c1c1c;
+  --color-base-30: #ebedf0;
+  --color-base-35: #272727;
+  --color-base-40: #555;
+  --color-base-50: #666;
+  --color-base-70: #bababa;
+  --color-blue: #0e86ff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #6ea82c;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #f39b35;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a06fca;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #ffda34;
+  --h1-color: var(--color-base-00);
+  --h2-color: var(--h2-text-color-dt);
+  --h2-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h3-color: var(--h3-text-color-dt);
+  --h3-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h4-color: var(--h4-text-color-dt);
+  --h4-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h5-color: var(--h5-text-color-dt);
+  --h5-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h6-color: var(--h6-text-color-dt);
+  --h6-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: var(--tag-background-color);
+  --tag-color: var(--tag-font-color-d);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 20%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 40%));
+  --text-highlight-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 30%)
+  );
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --background-modifier-hover: #e2e5e9;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
@@ -136,9 +206,76 @@
   );
   --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
   color-scheme: light;
-
-  .callout {
+  --background-modifier-hover: #e2e5e9;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #f6f7f8;
+  --color-base-100: #222222;
+  --color-base-20: #f6f7f8;
+  --color-base-25: #f0f0f0;
+  --color-base-30: #ebedf0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5a5a5a;
+  --color-blue: #0e86ff;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #6ea82c;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #f39b35;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #ec7db9;
+  --color-purple: #a06fca;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #fb464c;
+  --color-red-rgb: 228, 55, 75;
+  --color-yellow: #ffda34;
+  --h1-color: var(--h1-text-color-lt);
+  --h1-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h2-color: var(--h2-text-color-lt);
+  --h2-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h3-color: var(--h3-text-color-lt);
+  --h3-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h4-color: var(--h4-text-color-lt);
+  --h4-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h5-color: var(--h5-text-color-lt);
+  --h5-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h6-color: var(--h6-text-color-lt);
+  --h6-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-background: var(--tag-background-color);
+  --tag-color: var(--tag-font-color-l);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%));
+  --text-faint: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 40%));
+  --text-highlight-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 30%)
+  );
+  --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -635,10 +772,75 @@ html[saved-theme="dark"] {
   );
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1c1c1c;
+  --color-base-10: #272727;
+  --color-base-100: #dadada;
+  --color-base-20: #1c1c1c;
+  --color-base-25: #1c1c1c;
+  --color-base-30: #ebedf0;
+  --color-base-35: #272727;
+  --color-base-40: #555;
+  --color-base-50: #666;
+  --color-base-70: #bababa;
+  --color-blue: #0e86ff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #6ea82c;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #f39b35;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a06fca;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #ffda34;
+  --h1-color: var(--color-base-00);
+  --h2-color: var(--h2-text-color-dt);
+  --h2-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h3-color: var(--h3-text-color-dt);
+  --h3-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h4-color: var(--h4-text-color-dt);
+  --h4-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h5-color: var(--h5-text-color-dt);
+  --h5-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h6-color: var(--h6-text-color-dt);
+  --h6-text-color-dt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: var(--tag-background-color);
+  --tag-color: var(--tag-font-color-d);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 20%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 40%));
+  --text-highlight-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 30%)
+  );
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -707,10 +909,74 @@ html[saved-theme="light"] {
   );
   --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
   color-scheme: light;
+  --background-modifier-hover: #e2e5e9;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #f6f7f8;
+  --color-base-100: #222222;
+  --color-base-20: #f6f7f8;
+  --color-base-25: #f0f0f0;
+  --color-base-30: #ebedf0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5a5a5a;
+  --color-blue: #0e86ff;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #6ea82c;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #f39b35;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #ec7db9;
+  --color-purple: #a06fca;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #fb464c;
+  --color-red-rgb: 228, 55, 75;
+  --color-yellow: #ffda34;
+  --h1-color: var(--h1-text-color-lt);
+  --h1-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h2-color: var(--h2-text-color-lt);
+  --h2-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h3-color: var(--h3-text-color-lt);
+  --h3-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h4-color: var(--h4-text-color-lt);
+  --h4-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h5-color: var(--h5-text-color-lt);
+  --h5-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --h6-color: var(--h6-text-color-lt);
+  --h6-text-color-lt: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-background: var(--tag-background-color);
+  --tag-color: var(--tag-font-color-l);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%));
+  --text-faint: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 40%));
+  --text-highlight-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    calc(var(--accent-alpha) + 30%)
+  );
+  --text-muted: hsl(var(--base-h), calc(var(--base-s) - 5%), calc(var(--base-l) - 60%));
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

@@ -1,0 +1,64 @@
+.notation-titlebar .view-header {
+  max-width: unset;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: auto;
+  padding-top: 2.5em;
+}
+
+.notation-titlebar .view-header-title-container {
+  margin-top: auto;
+  height: auto;
+  padding: 1em;
+}
+
+.notation-titlebar .view-header-title {
+  font-size: 2.8em;
+  color: var(--text-normal);
+  white-space: normal;
+  font-weight: 700;
+}
+
+.notation-titlebar .view-actions {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.notation-titlebar .view-header .view-action {
+  color: var(--text-normal);
+  margin: 0;
+  padding: 0 8px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px;
+  transition: background-color 20ms ease-in 0s;
+}
+
+.notation-titlebar .view-action > svg {
+  max-width: 14px;
+  max-height: 14px;
+}
+
+.notation-titlebar .view-action:hover,
+.notation-titlebar .view-action.is-active {
+  color: var(--text-normal);
+  background-color: var(--background-primary-alt);
+}
+
+.notation-titlebar .view-header-title-parent .view-header-breadcrumb {
+  color: var(--text-faint);
+}
+
+.notation-titlebar .inline-title {
+  opacity: 0;
+  margin: 1px;
+  padding: 10px;
+  font-size: 0;
+}

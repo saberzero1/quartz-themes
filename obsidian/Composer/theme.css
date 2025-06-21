@@ -584,16 +584,16 @@ body {
 }
 
 /* body {
-	--ribbon-background-collapsed: transparent;
-	--mod-left-ribbon-background: transparent;
-	--mod-left-ribbon-background-collapsed: var(--background-primary);
-	--mod-root-header-background: var(--background-primary);
-	--mod-root-header-margin: 0px;
-	--root-workspace-padding-bottom: 0px;
-	--root-workspace-radius: 0px;
-	--root-workspace-shadow: none;
-	--root-workspace-margin-spacing: 0px;
-	--side-dock-actions-border-color: transparent;
+    --ribbon-background-collapsed: transparent;
+    --mod-left-ribbon-background: transparent;
+    --mod-left-ribbon-background-collapsed: var(--background-primary);
+    --mod-root-header-background: var(--background-primary);
+    --mod-root-header-margin: 0px;
+    --root-workspace-padding-bottom: 0px;
+    --root-workspace-radius: 0px;
+    --root-workspace-shadow: none;
+    --root-workspace-margin-spacing: 0px;
+    --side-dock-actions-border-color: transparent;
 } */
 
 .theme-light {
@@ -1216,14 +1216,14 @@ body {
 }
 
 /* .markdown-source-view .HyperMD-codeblock.HyperMD-codeblock-begin::before {
-	content: "";
-	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIj4KICAgICAgICA8Y2lyY2xlIGN4PSI2IiBjeT0iNiIgcj0iNiIgZmlsbD0iI0ZGNUY1NiIgc3Ryb2tlPSIjRTA0NDNFIiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgICAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRkJEMkUiIHN0cm9rZT0iI0RFQTEyMyIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNDYiIGN5PSI2IiByPSI2IiBmaWxsPSIjMjdDOTNGIiBzdHJva2U9IiMxQUFCMjkiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICA8L2c+CiAgICA8L3N2Zz4=");
-	background-repeat: no-repeat;
-	display: inline-block;
-	position: absolute;
-	top: 6px;
-	height: 26px;
-	width: 100px;
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIj4KICAgICAgICA8Y2lyY2xlIGN4PSI2IiBjeT0iNiIgcj0iNiIgZmlsbD0iI0ZGNUY1NiIgc3Ryb2tlPSIjRTA0NDNFIiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgICAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRkJEMkUiIHN0cm9rZT0iI0RFQTEyMyIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNDYiIGN5PSI2IiByPSI2IiBmaWxsPSIjMjdDOTNGIiBzdHJva2U9IiMxQUFCMjkiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICA8L2c+CiAgICA8L3N2Zz4=");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    height: 26px;
+    width: 100px;
 } */
 
 .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg {
@@ -2408,7 +2408,7 @@ input[data-task="-"]:checked,
 li[data-task="-"] > input:checked,
 li[data-task="-"] > p > input:checked {
   /* color: var(--text-faint);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); */
   --checkbox-marker-color: transparent;
   background-color: var(--text-faint);
   border-color: var(--text-faint);

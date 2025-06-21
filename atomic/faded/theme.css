@@ -8702,7 +8702,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -11014,27 +11014,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -28585,38 +28585,38 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-track:hover {
 /* SECTION ------------------------------- CSS DB Folder END ------------------------------- */
 /* SECTION ------------------------------- MCL MULTI COLUMN CSS SNIPPET START ------------------------------- */
 /* === README ===
-	Snippet: MCL Multi Column / Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
-	Version 0.7.0 (updated 2022-11-18)
-	- feature: list column, list grid and list card using tags (need Contextual Typography plugin)
-	- feature: float in live preview using float-right
-	- refine: [!blank] callout as alternative to [!blank-container]
-	Version 0.6.2 (updated 2022-10-22)
-	- rollover main branch to support Obsidian 1.0.0
-	Version 0.6.1 (updated 2022-10-02). Version number follow overall MCL
-	- fix for footnote with -column-list-block created a <br> tag
-	What is this snippet for?
-	- to allow Obsidian users to change the layout with preset css by just specifying
-	  the cssClass in the frontmatter (YAML) or naming the Callout block
-	- available cssClass
-		- cssClass: two-column-list
-		- cssClass: {.two-column-list-block}
-		- cssClass: three-column-list
-		- cssClass: {.three-column-list-block}
-		- cssClass: multi-column-list
-	- available Callout format
-		- [!multi-column]
-		- [!blank] / [!blank-container]
-	Compatibility
-	- tested to work fine with the following Community Theme
-		- Default Theme
-		- Big Sur / Blue Topaz / California Cost / Notation / Pisum / Prism / Things / Typewriter (with minor issue on title color)
-	- known to be not working
-		- Primary (due to the theme heaving theming, box-shadow and so on)
-	Credits
-	- Kevin Powell Youtube channel
-	- https://css-tricks.com/
-	- discord OMG members @Cáo thoát tục (Cáo thoát tục#6993), @mulfok (mulfok#6931) and @Rainbell (Rainbell#3617)
-	- kepano for accomodating my snippets adjustment
+    Snippet: MCL Multi Column / Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
+    Version 0.7.0 (updated 2022-11-18)
+    - feature: list column, list grid and list card using tags (need Contextual Typography plugin)
+    - feature: float in live preview using float-right
+    - refine: [!blank] callout as alternative to [!blank-container]
+    Version 0.6.2 (updated 2022-10-22)
+    - rollover main branch to support Obsidian 1.0.0
+    Version 0.6.1 (updated 2022-10-02). Version number follow overall MCL
+    - fix for footnote with -column-list-block created a <br> tag
+    What is this snippet for?
+    - to allow Obsidian users to change the layout with preset css by just specifying
+      the cssClass in the frontmatter (YAML) or naming the Callout block
+    - available cssClass
+        - cssClass: two-column-list
+        - cssClass: {.two-column-list-block}
+        - cssClass: three-column-list
+        - cssClass: {.three-column-list-block}
+        - cssClass: multi-column-list
+    - available Callout format
+        - [!multi-column]
+        - [!blank] / [!blank-container]
+    Compatibility
+    - tested to work fine with the following Community Theme
+        - Default Theme
+        - Big Sur / Blue Topaz / California Cost / Notation / Pisum / Prism / Things / Typewriter (with minor issue on title color)
+    - known to be not working
+        - Primary (due to the theme heaving theming, box-shadow and so on)
+    Credits
+    - Kevin Powell Youtube channel
+    - https://css-tricks.com/
+    - discord OMG members @Cáo thoát tục (Cáo thoát tục#6993), @mulfok (mulfok#6931) and @Rainbell (Rainbell#3617)
+    - kepano for accomodating my snippets adjustment
 */
 /* @settings
 name: Modular CSS Layout - Multi Column
@@ -28627,7 +28627,7 @@ settings:
         title: Callout Column Settings
         type: heading
         level: 2
-		collapsed: true
+        collapsed: true
     -
         id: callout-min-width
         title: Minimum Sub-Callout Width
@@ -28637,19 +28637,19 @@ settings:
         min: 100
         max: 500
         step: 50
-		format: px
+        format: px
     -
         id: callout-gap
         title: Sub-Callout Gap (any unit)
         description: NO spacing between figure and unit
         type: variable-text
         default: 0.5rem
-	-
-		id: callout-margin
-		title: Sub-Callout Margin (any unit)
-		description: to allow some spacing for box-shadow
-		type: variable-text
-		default: 5px
+    -
+        id: callout-margin
+        title: Sub-Callout Margin (any unit)
+        description: to allow some spacing for box-shadow
+        type: variable-text
+        default: 5px
     -
         id: float-small-width
         title: Floating Callout Width - Small (in px)
@@ -28658,7 +28658,7 @@ settings:
         min: 200
         max: 450
         step: 50
-		format: px
+        format: px
     -
         id: float-medium-width
         title: Floating Callout Width - Medium (in px)
@@ -28667,7 +28667,7 @@ settings:
         min: 300
         max: 550
         step: 50
-		format: px
+        format: px
     -
         id: float-large-width
         title: Floating Callout Width - Large (in px)
@@ -28676,14 +28676,14 @@ settings:
         min: 500
         max: 750
         step: 50
-		format: px
+        format: px
     -
         id: mc-list-column-title
         title: List Column Settings
-		description: using `{.xxx-column-list-xxx}` and `#mcl/list-column`
+        description: using `{.xxx-column-list-xxx}` and `#mcl/list-column`
         type: heading
         level: 2
-		collapsed: true
+        collapsed: true
     -
         id: list-min-width
         title: Minimum Column Width (in px)
@@ -28692,15 +28692,15 @@ settings:
         min: 100
         max: 500
         step: 50
-		format: px
+        format: px
     -
         id: col-rule-color
         title: Column Ruler Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
     -
         id: col-rule-width
         title: Column Ruler Width (in px)
@@ -28709,55 +28709,55 @@ settings:
         min: 0
         max: 4
         step: 1
-		format: px
-	-
+        format: px
+    -
         id: mc-list-grid-title
         title: List Grid and List Card
-		description: using `#mcl/list-grid` and `#mcl/list-card`
+        description: using `#mcl/list-grid` and `#mcl/list-card`
         type: heading
         level: 2
-		collapsed: true
-	-
+        collapsed: true
+    -
         id: list-grid-min-width
         title: Minimum Grid/Card Width (in px/em or similar)
-		type: variable-text
-		default: 250px
-	-
-		id: mcl-card-bg-color
-		title: List Card Background Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-	-
+        type: variable-text
+        default: 250px
+    -
+        id: mcl-card-bg-color
+        title: List Card Background Color
+        type: variable-themed-color
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
+    -
         id: mcl-card-header-border-width
         title: Bottom Border for List Card Header (in px/em or similar)
-		description: set to 0 to disable the border
-		type: variable-text
-		default: 1px
-	-
+        description: set to 0 to disable the border
+        type: variable-text
+        default: 1px
+    -
         id: mcl-card-gap
         title: List Card Border Width (in px/em or similar)
-		type: variable-text
-		default: 0.2em
-	-
+        type: variable-text
+        default: 0.2em
+    -
         id: mcl-card-border-width
         title: List Card Border Width (in px/em or similar)
-		type: variable-text
-		default: 1px
-	-
-		id: mcl-card-border-color
-		title: List Card Border Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
+        type: variable-text
+        default: 1px
+    -
+        id: mcl-card-border-color
+        title: List Card Border Color
+        type: variable-themed-color
+        format: hsl
+        opacity: true
+        default-light: '#'
+        default-dark: '#'
 */
 /* === Multi Column "DIV"'s Using Callout === */
-/* 	some issues still persists
-	(2) some theme uses transparency to affect .callout-title */
+/*     some issues still persists
+    (2) some theme uses transparency to affect .callout-title */
 /* -- Main multi-column snippet using Callout */
 /* remove callout-title and make callout-content as part of main callout for box formatting */
 div[data-callout="multi-column"].callout > .callout-title {
@@ -28846,9 +28846,9 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
 }
 
 /* Special Adjustment -- for minimal left margin */ /*
-	.markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > div[data-callout="multi-column"].callout
-		{ width: 100%; max-width: 100%; margin-inline: 0 !important; }
-	/* Special Adjustment -- for Minimal .dataview.list-view-ul width - Minimal set the width with --line-width-adaptive (40rem by default) */
+    .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > div[data-callout="multi-column"].callout
+        { width: 100%; max-width: 100%; margin-inline: 0 !important; }
+    /* Special Adjustment -- for Minimal .dataview.list-view-ul width - Minimal set the width with --line-width-adaptive (40rem by default) */
 body:not(.table-100):not(.table-max):not(.table-wide)
   .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
   div[data-callout="multi-column"].callout
@@ -28926,9 +28926,9 @@ div[data-callout*="blank"].callout > .callout-content {
 
 /* -- No Margin -- */
 /* issues still persists
-	   - headers font size not same
-	   - "no-margin" not fully workable in editing view due to wide-page override for Minimal theme
-	*/
+       - headers font size not same
+       - "no-margin" not fully workable in editing view due to wide-page override for Minimal theme
+    */
 div[data-callout-metadata*="no-margin"]:is(
     .cm-callout,
     .callout.callout,

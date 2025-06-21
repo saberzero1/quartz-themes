@@ -1,0 +1,4 @@
+body:not(.sei-remove-divider-h1) h1,
+body:not(.sei-remove-divider-h1) .HyperMD-header-1 {
+  border-bottom: var(--hr-thickness) solid var(--hr-color);
+}

@@ -1,0 +1,59 @@
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container {
+  height: auto;
+  margin-bottom: 5px;
+}
+
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header {
+  padding-block: 5px;
+}
+
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 4px 11px;
+  margin-top: 2px;
+}
+
+body.toggle-tab-height
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 1px 11px;
+}
+
+body.toggle-tab-height
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 1px 11px;
+}
+
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button)
+  .clickable-icon,
+body:not(.toggle-tab-design)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container
+  :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button)
+  .clickable-icon {
+  margin-top: 4px;
+}
+
+body.toggle-tab-design:not(.toggle-tag-height)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button)
+  .clickable-icon:before {
+  height: calc(var(--ribbon-width) + 6px);
+  margin-top: -6px;
+}

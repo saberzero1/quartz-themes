@@ -1,0 +1,7 @@
+.pln-embd-mods.pln-embd-first .markdown-embed :is(h1, h2, h3, h4, h5, h6):first-child {
+  display: none;
+}
+
+&.pln-embd-first .markdown-embed .mod-header + div > :is(h1, h2, h3, h4, h5, h6) {
+  display: none;
+}

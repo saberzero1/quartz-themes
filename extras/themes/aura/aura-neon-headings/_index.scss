@@ -1,0 +1,36 @@
+.aura-heading-color .cm-header-1:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-1,
+.aura-heading-color .inline-title,
+.aura-heading-color h1 {
+  text-shadow: 0 0 0.5em var(--h1-color);
+}
+
+.aura-heading-color .cm-header-2:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-2,
+.aura-heading-color h2 {
+  text-shadow: 0 0 0.5em var(--h2-color);
+}
+
+.aura-heading-color .cm-header-3:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-3,
+.aura-heading-color h3 {
+  text-shadow: 0 0 0.5em var(--h3-color);
+}
+
+.aura-heading-color .cm-header-4:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-4,
+.aura-heading-color h4 {
+  text-shadow: 0 0 0.5em var(--h4-color);
+}
+
+.aura-heading-color .cm-header-5:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-5,
+.aura-heading-color h5 {
+  text-shadow: 0 0 0.5em var(--h5-color);
+}
+
+.aura-heading-color .cm-header-6:not(.cm-formatting),
+.aura-heading-color .HyperMD-header-6,
+.aura-heading-color h6 {
+  text-shadow: 0 0 0.5em var(--h6-color);
+}

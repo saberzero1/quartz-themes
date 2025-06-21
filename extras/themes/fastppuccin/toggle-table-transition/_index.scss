@@ -1,0 +1,12 @@
+body.toggle-table-transition
+  :is(.markdown-preview-view, .markdown-rendered, .markdown-source-view)
+  tbody
+  tr:hover,
+body.toggle-table-transition
+  :is(.markdown-preview-view, .markdown-rendered, .markdown-source-view)
+  thead
+  tr:hover {
+  background: var(--background-modifier-border);
+  /* transform: scale(1.02); */
+  transition: 0.1s cubic-bezier(0.11, 0.33, 0.23, 0.33);
+}

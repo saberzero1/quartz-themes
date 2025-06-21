@@ -1,0 +1,3 @@
+body.is-tablet:not(.tablet-menu-off).theme-dark .menu-item:not(.is-label[data-section="title"]) {
+  background-color: rgb(from var(--background-secondary-alt) r g b/25%);
+}

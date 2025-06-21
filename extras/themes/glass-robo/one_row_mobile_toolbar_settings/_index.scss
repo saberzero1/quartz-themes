@@ -1,0 +1,10 @@
+.is-mobile.one_row_mobile_toolbar_settings .mobile-toolbar {
+  height: auto;
+}
+
+.is-mobile.one_row_mobile_toolbar_settings
+  .mobile-toolbar
+  .mobile-toolbar-options-container
+  .mobile-toolbar-options-list {
+  display: flex !important;
+}

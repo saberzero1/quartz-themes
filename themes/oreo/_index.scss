@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: black;
   --background-secondary: #1a1a1a;
@@ -106,13 +107,119 @@
   --tag-color-hover: #cccccc;
   --text-accent: var(--color-accent-1);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: black;
+  --background-secondary: #1a1a1a;
+  --bold-color: #cccccc;
+  --callout-title-color: #ffffff;
+  --checkbox-border-color: #666666;
+  --checkbox-border-color-hover: #999999;
+  --checkbox-color: #333333;
+  --checkbox-color-hover: #4d4d4d;
+  --checkbox-marker-color: black;
+  --code-background: #2d2d2d;
+  --code-comment: #999988;
+  --code-function: #a6e22e;
+  --code-important: #f92672;
+  --code-keyword: #f92672;
+  --code-normal: #ffffff;
+  --code-property: #66d9ef;
+  --code-punctuation: #ffffff;
+  --code-string: #e6db74;
+  --code-tag: #a6e22e;
+  --code-value: #ae81ff;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --h1-color: #cccccc;
+  --h2-color: #bbbbbb;
+  --h3-color: #aaaaaa;
+  --h4-color: #999999;
+  --h5-color: #888888;
+  --h6-color: #777777;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #ffffff;
+  --hr-thickness: 2px;
+  --icon-color: #ffffff;
+  --indentation-guide-color: #444444;
+  --inline-title-color: #ffffff;
+  --interactive-accent: #666666;
+  --interactive-accent-hover: #808080;
+  --interactive-accent-hsl: hsl(0, 0%, 40%);
+  --italic-color: #cccccc;
+  --link-color: #87cefa;
+  --link-color-hover: #4682b4;
+  --link-external-color: #98fb98;
+  --link-external-color-hover: #32cd32;
+  --link-weight: normal;
+  --metadata-input-text-color: #ffffff;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-heading-color: #ffffff;
+  --nav-indentation-guide-color: #666666;
+  --nav-item-background-active: #666666;
+  --nav-item-color: #ffffff;
+  --nav-item-color-active: #00ffff;
+  --prompt-border-color: #444444;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: #444444;
+  --tag-background-hover: #555555;
+  --tag-border-color: #666666;
+  --tag-border-color-hover: #888888;
+  --tag-color: #ffffff;
+  --tag-color-hover: #cccccc;
+  --text-accent: var(--color-accent-1);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --bold-color: #000000;
   --callout-title-color: #000000;
   --checkbox-border-color: #999999;
@@ -207,9 +314,110 @@
   --tag-color: #000000;
   --tag-color-hover: #333333;
   color-scheme: light;
-
-  .callout {
+  --bold-color: #000000;
+  --callout-title-color: #000000;
+  --checkbox-border-color: #999999;
+  --checkbox-border-color-hover: #666666;
+  --checkbox-color: #e6e6e6;
+  --checkbox-color-hover: #cccccc;
+  --checkbox-marker-color: white;
+  --code-background: #f5f5f5;
+  --code-comment: #6a737d;
+  --code-function: #6f42c1;
+  --code-important: #d73a49;
+  --code-keyword: #d73a49;
+  --code-normal: #000000;
+  --code-property: #005cc5;
+  --code-punctuation: #24292e;
+  --code-string: #032f62;
+  --code-tag: #22863a;
+  --code-value: #b31d28;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --h1-color: #333333;
+  --h2-color: #444444;
+  --h3-color: #555555;
+  --h4-color: #666666;
+  --h5-color: #777777;
+  --h6-color: #888888;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #000000;
+  --hr-thickness: 2px;
+  --icon-color: #000000;
+  --indentation-guide-color: #cccccc;
+  --inline-title-color: #000000;
+  --interactive-accent: #999999;
+  --interactive-accent-hover: #666666;
+  --interactive-accent-hsl: hsl(0, 0%, 60%);
+  --italic-color: #000000;
+  --link-color: #1e90ff;
+  --link-color-hover: #1c86ee;
+  --link-external-color: #32cd32;
+  --link-external-color-hover: #2eb82e;
+  --link-weight: normal;
+  --metadata-input-text-color: #000000;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-heading-color: #000000;
+  --nav-indentation-guide-color: #cccccc;
+  --nav-item-background-active: #d0d0d0;
+  --nav-item-color: #000000;
+  --nav-item-color-active: #7c7cff;
+  --prompt-border-color: #cccccc;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-background: #f0f0f0;
+  --tag-background-hover: #e0e0e0;
+  --tag-border-color: #cccccc;
+  --tag-border-color-hover: #999999;
+  --tag-color: #000000;
+  --tag-color-hover: #333333;
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -763,10 +971,112 @@ html[saved-theme="dark"] {
   --tag-color-hover: #cccccc;
   --text-accent: var(--color-accent-1);
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: black;
+  --background-secondary: #1a1a1a;
+  --bold-color: #cccccc;
+  --callout-title-color: #ffffff;
+  --checkbox-border-color: #666666;
+  --checkbox-border-color-hover: #999999;
+  --checkbox-color: #333333;
+  --checkbox-color-hover: #4d4d4d;
+  --checkbox-marker-color: black;
+  --code-background: #2d2d2d;
+  --code-comment: #999988;
+  --code-function: #a6e22e;
+  --code-important: #f92672;
+  --code-keyword: #f92672;
+  --code-normal: #ffffff;
+  --code-property: #66d9ef;
+  --code-punctuation: #ffffff;
+  --code-string: #e6db74;
+  --code-tag: #a6e22e;
+  --code-value: #ae81ff;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --h1-color: #cccccc;
+  --h2-color: #bbbbbb;
+  --h3-color: #aaaaaa;
+  --h4-color: #999999;
+  --h5-color: #888888;
+  --h6-color: #777777;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #ffffff;
+  --hr-thickness: 2px;
+  --icon-color: #ffffff;
+  --indentation-guide-color: #444444;
+  --inline-title-color: #ffffff;
+  --interactive-accent: #666666;
+  --interactive-accent-hover: #808080;
+  --interactive-accent-hsl: hsl(0, 0%, 40%);
+  --italic-color: #cccccc;
+  --link-color: #87cefa;
+  --link-color-hover: #4682b4;
+  --link-external-color: #98fb98;
+  --link-external-color-hover: #32cd32;
+  --link-weight: normal;
+  --metadata-input-text-color: #ffffff;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-heading-color: #ffffff;
+  --nav-indentation-guide-color: #666666;
+  --nav-item-background-active: #666666;
+  --nav-item-color: #ffffff;
+  --nav-item-color-active: #00ffff;
+  --prompt-border-color: #444444;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: #444444;
+  --tag-background-hover: #555555;
+  --tag-border-color: #666666;
+  --tag-border-color-hover: #888888;
+  --tag-color: #ffffff;
+  --tag-color-hover: #cccccc;
+  --text-accent: var(--color-accent-1);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -869,10 +1179,108 @@ html[saved-theme="light"] {
   --tag-color: #000000;
   --tag-color-hover: #333333;
   color-scheme: light;
+  --bold-color: #000000;
+  --callout-title-color: #000000;
+  --checkbox-border-color: #999999;
+  --checkbox-border-color-hover: #666666;
+  --checkbox-color: #e6e6e6;
+  --checkbox-color-hover: #cccccc;
+  --checkbox-marker-color: white;
+  --code-background: #f5f5f5;
+  --code-comment: #6a737d;
+  --code-function: #6f42c1;
+  --code-important: #d73a49;
+  --code-keyword: #d73a49;
+  --code-normal: #000000;
+  --code-property: #005cc5;
+  --code-punctuation: #24292e;
+  --code-string: #032f62;
+  --code-tag: #22863a;
+  --code-value: #b31d28;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --h1-color: #333333;
+  --h2-color: #444444;
+  --h3-color: #555555;
+  --h4-color: #666666;
+  --h5-color: #777777;
+  --h6-color: #888888;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #000000;
+  --hr-thickness: 2px;
+  --icon-color: #000000;
+  --indentation-guide-color: #cccccc;
+  --inline-title-color: #000000;
+  --interactive-accent: #999999;
+  --interactive-accent-hover: #666666;
+  --interactive-accent-hsl: hsl(0, 0%, 60%);
+  --italic-color: #000000;
+  --link-color: #1e90ff;
+  --link-color-hover: #1c86ee;
+  --link-external-color: #32cd32;
+  --link-external-color-hover: #2eb82e;
+  --link-weight: normal;
+  --metadata-input-text-color: #000000;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-heading-color: #000000;
+  --nav-indentation-guide-color: #cccccc;
+  --nav-item-background-active: #d0d0d0;
+  --nav-item-color: #000000;
+  --nav-item-color-active: #7c7cff;
+  --prompt-border-color: #cccccc;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-background: #f0f0f0;
+  --tag-background-hover: #e0e0e0;
+  --tag-border-color: #cccccc;
+  --tag-border-color-hover: #999999;
+  --tag-color: #000000;
+  --tag-color-hover: #333333;
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

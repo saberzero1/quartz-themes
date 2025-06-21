@@ -1,0 +1,67 @@
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf-content
+  .nav-header
+  .nav-buttons-container {
+  background-color: transparent;
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf-content
+  .nav-header:hover
+  .nav-buttons-container {
+  background-color: var(--nav-button-container-bg);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf
+  .workspace-leaf-content
+  .nav-header
+  .nav-action-button:hover {
+  background-color: var(--background-modifier-hover);
+  opacity: var(--icon-opacity);
+  border-radius: var(--clickable-icon-radius);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf-content
+  .nav-header
+  .nav-action-button {
+  flex-grow: 0;
+  max-width: 5px;
+  max-height: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0px;
+  background-color: var(--text-faint);
+  transition:
+    max-width 240ms cubic-bezier(0.4, 0, 0.2, 1),
+    max-height 240ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 240ms cubic-bezier(0.4, 0, 0.2, 1),
+    padding 240ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 120ms linear;
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf-content
+  .nav-header
+  .nav-action-button.is-active {
+  background-color: var(--icon-color-active);
+}
+
+body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+  .mod-sidedock
+  .workspace-leaf-content
+  .nav-header:hover
+  .nav-action-button {
+  max-width: 32px;
+  max-height: 64px;
+  opacity: 0.85;
+  flex-grow: 1;
+  background-color: transparent;
+  padding: var(--size-2-2) var(--size-2-3);
+}

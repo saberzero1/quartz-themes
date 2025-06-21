@@ -1,0 +1,74 @@
+body:not(.encore-disable-logo-on-hr) .markdown-rendered hr,
+body:not(.encore-disable-logo-on-hr) .cm-line.hr hr {
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--hr-color) 46.2%,
+    transparent 46.2%,
+    transparent 54%,
+    var(--hr-color) 54%,
+    transparent
+  );
+  border: none;
+  position: relative;
+  overflow: visible;
+}
+
+body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after,
+body:not(.encore-disable-logo-on-hr) .markdown-rendered hr::after,
+body:not(.encore-disable-logo-on-hr) .cm-line.hr hr::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--obsidian-logo-small);
+}
+
+body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr {
+  position: relative;
+}
+
+body:not(.encore-disable-logo-on-hr)
+  .markdown-source-view:not(.is-live-preview)
+  .HyperMD-hr::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 13px;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent 10%,
+    var(--hr-color) 46.2%,
+    transparent 46.2%,
+    transparent 54%,
+    var(--hr-color) 54%,
+    transparent
+  );
+}
+
+body:not(.encore-disable-logo-on-hr)
+  .markdown-source-view:not(.is-live-preview)
+  .HyperMD-hr::after {
+  top: 2px;
+}
+
+body.encore-disable-logo-on-hr .markdown-rendered hr,
+body.encore-disable-logo-on-hr .cm-line.hr hr {
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--hr-color) 30%,
+    var(--hr-color) 70%,
+    transparent
+  );
+  border: none;
+}

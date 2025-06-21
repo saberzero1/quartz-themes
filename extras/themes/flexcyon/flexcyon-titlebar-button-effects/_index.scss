@@ -1,0 +1,20 @@
+body.flexcyon-titlebar-button-effects .titlebar-button.mod-minimize:hover {
+  color: var(--color-cyan);
+}
+
+body.flexcyon-titlebar-button-effects .titlebar-button.mod-maximize:hover {
+  color: var(--color-blue);
+}
+
+body.flexcyon-titlebar-button-effects .titlebar-button.mod-close:hover {
+  color: var(--text-normal);
+}
+
+body.flexcyon-titlebar-button-effects .titlebar-button {
+  opacity: var(--dimmed);
+}
+
+body.flexcyon-titlebar-button-effects .titlebar-button:hover {
+  opacity: unset;
+  scale: var(--expand);
+}

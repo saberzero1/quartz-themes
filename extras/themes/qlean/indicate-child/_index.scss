@@ -1,0 +1,7 @@
+body.indicate-child
+  .workspace
+  .tree-item-self:not(.is-acitve, .tree-item-self.mod-root > .tree-item-self):hover
+  ~ .tree-item-children {
+  background-color: var(--nav-item-background-hover);
+  border-radius: 0.125em;
+}

@@ -1,0 +1,64 @@
+.is-tablet .workspace-drawer {
+  padding-top: 0;
+}
+
+.is-tablet .workspace-drawer-ribbon {
+  border-right: 1px solid var(--divider-color);
+}
+
+.is-tablet {
+  --titlebar-background: var(--background-underlying);
+  --titlebar-background-focused: var(--background-underlying);
+}
+
+.is-tablet,
+.is-tablet .app-container,
+.is-tablet .workspace,
+.is-tablet .horizontal-main-container {
+  background-color: var(--background-underlying) !important;
+}
+
+.is-tablet .workspace {
+  gap: 16px;
+  padding: 16px;
+  padding-bottom: 24px;
+  padding-top: 8px;
+}
+
+.is-tablet .app-container:has(.mobile-toolbar) .workspace {
+  padding-bottom: 8px;
+}
+
+.is-tablet .workspace-drawer {
+  background-color: var(--background-primary);
+  border-radius: var(--card-border-radius-light, 8px) !important;
+  overflow: hidden !important;
+  margin: 16px;
+  margin-bottom: 24px;
+  margin-top: 32px;
+}
+
+.is-tablet .workspace-split.mod-root {
+  border-radius: var(--card-border-radius-light, 8px) !important;
+  overflow: hidden !important;
+  background-color: var(--background-primary) !important;
+  box-shadow:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2),
+    0 0 0 1px var(--background-modifier-border);
+}
+
+.is-tablet .workspace-drawer.is-pinned {
+  border-right: none;
+  border-left: none;
+  border-radius: var(--card-border-radius-light, 8px) !important;
+  margin: 0px;
+  box-shadow:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2),
+    0 0 0 1px var(--background-modifier-border);
+}
+
+.is-tablet .workspace-drawer-inner {
+  padding-top: 8px;
+}

@@ -1,5 +1,22 @@
 import fs from "fs";
 import { applyRuleToString } from "./util.mjs";
+import { combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
+
+/**
+ * Splits combined CSS rules into individual rules.
+ * @param {string} base - The CSS string to process.
+ * @param {string} inject - The CSS string to inject.
+ * @return {string} The processed CSS string with combined rules split.
+ */
+export function cleanCSS(base, inject) {
+let result = `${base}\n${inject}`
+  result = splitCombinedRules(result)
+    result = combineIdenticalSelectors(result)
+    result = removeEmptyRules(result)
+    result = result.replace(/\n+/g, "\n") // Remove extra newlines
+    result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+    return result;
+}
 
 export function writeIndex(themeName, themeCSS) {
   let resultCSS = fs.readFileSync(`./themes/${themeName}/_index.scss`, "utf8")

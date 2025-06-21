@@ -67,16 +67,16 @@
 body {
   /* -----------------------------------------------------
 
-	List of variables is placed in body rather than :root so 
-	that we can	combine all property types including colors
-	and sort alphabetically to maximize readability in
-	the compiled app.css file.
+    List of variables is placed in body rather than :root so 
+    that we can    combine all property types including colors
+    and sort alphabetically to maximize readability in
+    the compiled app.css file.
     
   kr:변수 목록은 다음과 같이 본문에 배치됩니다:root so
   색상을 포함한 모든 속성 유형을 결합할 수 있습니다
   가독성을 극대화하기 위해 알파벳 순으로 정렬합니다
   
-	----------------------------------------------------- */
+    ----------------------------------------------------- */
 
   /* Animations */
   --anim-duration-none: 0;
@@ -959,7 +959,7 @@ body {
 
  ✼ Note UI Detail Style ✼
 
-	----------------------------------------------------- */
+    ----------------------------------------------------- */
 
 /*----Startup Progress Bar Screen----*/
 /*Startup Progress Bar Window*/

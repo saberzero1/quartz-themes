@@ -1,0 +1,84 @@
+body:not(:not(.flat-mode)) {
+  --titlebar-background: var(--background-primary);
+  --ribbon-background: var(--background-primary);
+}
+
+body:not(.hide-ribbon):not(:not(.flat-mode)) .workspace-ribbon:not(.is-collapsed) {
+  border-right: var(--divider-width) solid var(--divider-color) !important;
+}
+
+body:not(.hide-ribbon):not(:not(.flat-mode)):not(.hide-file-tabs)
+  .workspace-ribbon:not(.is-collapsed):before {
+  border-right: var(--divider-width) solid var(--divider-color);
+}
+
+body:not(:not(.flat-mode)) .workspace-ribbon.mod-left:before {
+  border-bottom: 2px var(--background-primary) solid !important;
+  background-color: var(--background-primary) !important;
+}
+
+body:not(.flat-mode) .workspace-ribbon.mod-left:hover:before,
+body:not(.flat-mode) .workspace-ribbon.mod-left:hover:before:hover,
+body:not(.flat-mode) .workspace-ribbon.mod-left:not(.is-collapsed):before {
+  border-bottom: 2px var(--background-secondary) solid;
+}
+
+body:not(:not(.flat-mode)) .workspace-ribbon:not(.is-collapsed).mod-left:before {
+  border-bottom: 2px var(--background-primary) solid !important;
+  background-color: var(--background-primary) !important;
+}
+
+body:not(.flat-mode).hide-tabs:has(.workspace-tab-header-container:hover)
+  .workspace-ribbon.mod-left:before,
+body:not(.flat-mode):not(.hide-tabs):not(.hide-ribbon) .workspace-ribbon.mod-left:before,
+body:not(.flat-mode):not(.hide-tabs).hide-ribbon .workspace-ribbon.mod-left:hover:before,
+body:not(.flat-mode):not(.hide-file-tabs).hide-ribbon .workspace-ribbon.mod-left:hover:before {
+  opacity: 1;
+  background-color: var(--titlebar-background-focused) !important;
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+
+body:not(:not(.flat-mode))
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  border-left: 0.5px solid var(--background-modifier-border);
+  border-bottom-left-radius: var(--tab-curve);
+  margin-left: 2em;
+}
+
+body:not(.flat-mode)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  margin-left: 2em;
+}
+
+body:not(.hide-file-tabs):not(.flat-mode)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  background-color: var(--titlebar-background-focused) !important;
+}
+
+.hide-tabs:not(.flat-mode)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  --titlebar-background-focused: var(--background-primary) !important;
+}
+
+.hide-tabs:not(.flat-mode) .workspace-ribbon.side-dock-ribbon.mod-left::before {
+  border-bottom: 1px solid var(--background-secondary);
+}
+
+body:not(.flat-mode)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  background-color: var(--background-primary);
+}
+
+.hide-file-tabs:not(.flat-mode) .workspace-tab-header-container {
+  background-color: var(--background-primary) !important;
+}
+
+body:not(:not(.flat-mode)) .workspace-tab-header-container {
+  background-color: var(--background-primary);
+}

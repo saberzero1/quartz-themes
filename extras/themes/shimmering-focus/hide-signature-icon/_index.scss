@@ -1,0 +1,11 @@
+body:not(.hide-signature-icon) .status-bar:after {
+  content: var(--signature);
+  margin-top: -1px;
+  padding-left: 4px;
+  padding-right: 6px;
+  font-family:
+    Recursive S,
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+}

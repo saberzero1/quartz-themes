@@ -1,0 +1,52 @@
+.floating-doc.enable-bg-img .workspace,
+.floating-doc.enable-bg-img .workspace > .workspace-split,
+.floating-doc.enable-bg-img .workspace-ribbon::before {
+  background: transparent;
+}
+
+.floating-doc.enable-bg-img .workspace-leaf-content {
+  background-color: var(--background-primary) !important;
+}
+
+.enable-bg-img:not(.floating-doc) .workspace-split.mod-horizontal.mod-left-split,
+.enable-bg-img:not(.floating-doc) .workspace-ribbon,
+.enable-bg-img:not(.floating-doc) .workspace-ribbon.is-collapsed,
+.enable-bg-img:not(.floating-doc) .workspace-ribbon::before {
+  background-color: var(--background-primary) !important;
+}
+
+.enable-bg-img .workspace-ribbon.is-collapsed {
+  padding-right: 0px !important;
+  padding-left: 0.1px !important;
+  z-index: 500;
+}
+
+.enable-bg-img .horizontal-main-container {
+  background: var(--img-bg);
+  background-repeat: no-repeat;
+  background-size: var(--img-bg-size);
+  background-position-y: var(--img-position-y);
+  background-position-x: var(--img-position-x);
+}
+
+.enable-bg-img .workspace {
+  background-color: transparent !important;
+  backdrop-filter: blur(var(--img-blur)) saturate(var(--img-sat)) !important;
+}
+
+.enable-bg-img .workspace-leaf {
+  background-color: transparent !important;
+}
+
+.enable-bg-img .view-content,
+.enable-bg-img .view-header {
+  background-color: transparent !important;
+}
+
+.enable-bg-img {
+  --page-transparency-custom: 75%;
+}
+
+.enable-bg-img {
+  --page-transparency: var(--page-transparency-custom);
+}

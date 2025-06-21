@@ -1,0 +1,39 @@
+body:not(.is-mobile).vault-profile-autohide
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  height: 16px;
+  border-top: 0 solid transparent;
+  opacity: 0;
+  transition:
+    height var(--anim-out),
+    border-top var(--anim-out),
+    opacity var(--anim-out);
+}
+
+body:not(.is-mobile).vault-profile-autohide
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile:hover {
+  height: 44px;
+  border-top: var(--tab-outline-width) solid var(--tab-outline-color);
+  opacity: 1;
+  transition:
+    height var(--anim-in),
+    border-top var(--anim-in),
+    opacity var(--anim-in);
+}
+
+body:not(.is-mobile).vault-profile-autohide
+  .workspace-split.mod-left-split
+  .workspace-tabs:last-of-type
+  .workspace-tab-container {
+  padding-bottom: 0px;
+  transition: padding-bottom var(--anim-out);
+}
+
+body:not(.is-mobile).vault-profile-autohide:has(.workspace-sidedock-vault-profile:hover)
+  .workspace-split.mod-left-split
+  .workspace-tabs:last-of-type
+  .workspace-tab-container {
+  padding-bottom: 44px;
+  transition: padding-bottom var(--anim-in);
+}

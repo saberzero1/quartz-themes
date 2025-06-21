@@ -1,0 +1,55 @@
+body.pen-mode .view-content.excalidraw-view {
+  --excalidraw-button-size: 25px;
+}
+
+body.pen-mode .view-content.excalidraw-view {
+  --excalidraw-button-size: 20px;
+}
+
+body.pen-mode .view-content.excalidraw-view {
+  --excalidraw-button-size: 15px;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-top-bar {
+  flex-direction: row !important;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-top-bar .Stack_horizontal {
+  grid-auto-flow: row;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-top-bar .Stack_vertical {
+  margin-bottom: 170px;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container {
+  right: inherit;
+  top: inherit;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-top-bar .App-toolbar__divider {
+  height: 1px;
+  width: auto;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-bottom-bar {
+  padding-left: calc(var(--excalidraw-button-size) + 12px);
+}
+
+body.pen-mode .view-content.excalidraw-view .excalidraw--mobile .HintViewer span {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  opacity: 0.2;
+}
+
+body.pen-mode .view-content.excalidraw-view .excalidraw--mobile .welcome-screen-center {
+  display: none !important;
+}
+
+body.pen-mode .view-content.excalidraw-view .App-toolbar__extra-tools-dropdown {
+  left: 0 !important;
+}

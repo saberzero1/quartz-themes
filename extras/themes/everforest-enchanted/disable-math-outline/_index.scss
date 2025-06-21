@@ -1,0 +1,5 @@
+body:not(.disable-math-outline)
+  :is(div.math-block, span.math-block > mjx-container, .math.math-block.cm-embed-block) {
+  border: 1px solid var(--bg5);
+  border-radius: 5px;
+}

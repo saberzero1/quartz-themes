@@ -1,0 +1,22 @@
+.vim-active-visual-line .cm-sizer:not(:has(.cm-table-widget.has-focus)) + .cm-vimCursorLayer {
+  animation: none !important;
+}
+
+.vim-active-visual-line
+  .cm-sizer:not(:has(.cm-table-widget.has-focus))
+  + .cm-vimCursorLayer
+  .cm-fat-cursor.cm-cursor-primary {
+  --cursorline-bg: hsl(var(--color-accent-hsl), 12.5%);
+  border-image: conic-gradient(var(--cursorline-bg) 0 0) fill 0/0/0 100vw;
+  mix-blend-mode: hard-light;
+}
+
+.cm-focused
+  :is(
+    .vim-active-visual-line
+      .cm-sizer:not(:has(.cm-table-widget.has-focus))
+      + .cm-vimCursorLayer
+      .cm-fat-cursor.cm-cursor-primary
+  ) {
+  animation: vim-blink var(--vim-cursor-blink-rate) linear infinite !important;
+}

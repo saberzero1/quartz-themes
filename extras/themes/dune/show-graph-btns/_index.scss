@@ -1,0 +1,10 @@
+body:not(.show-graph-btns) .graph-controls.is-close .graph-controls-button.mod-animate,
+body:not(.show-graph-btns) .graph-controls.is-close .graph-controls-button.mod-open {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+body:not(.show-graph-btns) .graph-controls.is-close .graph-controls-button.mod-animate:hover,
+body:not(.show-graph-btns) .graph-controls.is-close .graph-controls-button.mod-open:hover {
+  opacity: 1;
+}

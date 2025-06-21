@@ -1,0 +1,9 @@
+body:not(.adwaita-tabs-always, .adwaita-tabs-linux-only, .adwaita-tabs-never).mod-linux:not(
+    .adwaita-tabs-short
+  ),
+body.adwaita-tabs-always:not(.adwaita-tabs-short),
+body.adwaita-tabs-linux-only.mod-linux:not(.adwaita-tabs-short) {
+  --tab-width: 10000px;
+  /* infinite width */
+  --tab-max-width: none;
+}

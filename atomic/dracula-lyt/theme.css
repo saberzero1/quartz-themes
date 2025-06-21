@@ -8770,7 +8770,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -11085,27 +11085,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -25120,7 +25120,7 @@ pre[class*="language-"] {
 /* In BASH: color of the pipe | */
 /* In css color of = : ! * </> */
 /* .theme-dark .token.operator {
-	color: red;
+    color: red;
 } */
 /* In html: attribute within e.g. <div=attribute></div> */
 .theme-dark .token.attr-name {
@@ -25164,7 +25164,7 @@ pre[class*="language-"] {
 
 /* Unknown */
 /* .theme-dark .token.constant {
-	color: red;
+    color: red;
 } */
 /* Number */
 .theme-dark .token.number {
@@ -25199,7 +25199,7 @@ pre[class*="language-"] {
 
 /* In HTML allows to change color of brackets  */
 /* .theme-dark .token.tag .punctuation {
-	color: #ff80bf;
+    color: #ff80bf;
 } */
 /* !important in css*/
 .theme-dark .token.important {
@@ -25251,7 +25251,7 @@ pre[class*="language-"] {
 /* If you'd like your theme to have overrides for specific languages, here's an example, you can remove it and/or add more overrides */
 /* For Instance change -css to -javasript, for highlighting to work only on those languages */
 /* .theme-dark .language-css .token.important {
-	color: red;
+    color: red;
 } */
 /* Inline Code in Reading Mode */
 p > code {

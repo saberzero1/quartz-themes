@@ -1,0 +1,11 @@
+body.mu-tags-hide-hashtag .cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta {
+  border-right: 0;
+  padding-right: var(--mu-tags-hashtag-padding);
+  padding-left: var(--mu-tags-hashtag-padding);
+  color: transparent !important;
+}
+
+body.mu-tags-hide-hashtag .cm-hashtag.cm-hashtag-end {
+  border-left: 0;
+  padding-right: 0.7em;
+}

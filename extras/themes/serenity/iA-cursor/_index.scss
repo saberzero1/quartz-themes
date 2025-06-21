@@ -1,0 +1,45 @@
+body:not(:not(.iA-cursor)) .cursorWrapper .x-cursor {
+  opacity: 1;
+  background: var(--cursor-color);
+  width: var(--cursor-width);
+  left: -1px;
+  position: relative;
+  top: calc(calc(var(--font-text-size) * -0.01) - var(--header-height));
+  height: calc(var(--cursor-height) + 1px);
+  transition: opacity;
+}
+
+body:not(:not(.iA-cursor)) .cursorWrapper .x-cursor::after {
+  display: none;
+}
+
+body:not(:not(.iA-cursor)) .cm-cursorLayer {
+  animation: none !important;
+  visibility: hidden !important;
+}
+
+body:not(:not(.iA-cursor)) .cursorWrapper .x-cursor1 {
+  animation: step-end cursorblink-alt 0.95s 0s both infinite;
+}
+
+body:not(:not(.iA-cursor)) .cursorWrapper .x-cursor0 {
+  animation: step-end cursorblink 0.95s 0s both infinite;
+}
+
+.cursor-tween:not(:not(.iA-cursor)) .cursorWrapper .x-cursor0 {
+  animation: cursorblink2 0.9s 0s both infinite;
+}
+
+.cursor-tween:not(:not(.iA-cursor)) .cursorWrapper .x-cursor1 {
+  animation: cursorblink-alt 0.9s 0s both infinite;
+}
+
+body:not(:not(.iA-cursor)):has(.x-cursor) .cm-editor * {
+  caret-color: transparent;
+}
+
+body:not(.iA-cursor) .setting-item[data-id="cursor-color"],
+body:not(.iA-cursor) .setting-item[data-id="cursor-tween"],
+body:not(.iA-cursor) .setting-item[data-id="cursor-width"] {
+  display: none;
+}

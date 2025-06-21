@@ -1,0 +1,19 @@
+body:not(.no-animations) {
+  --quicker-transition: var(--anim-duration-superfast) ease-in-out;
+  --quick-transition: var(--anim-duration-fast) ease-in-out;
+  --medium-transition: var(--anim-duration-moderate) ease-in-out;
+  --slow-transition: var(--anim-duration-slow) ease-in-out;
+}
+
+body:not(.callout-standard):not(.no-animations)
+  .callout:is([data-callout="success"])
+  :is(.callout-title) {
+  animation: CalloutSuccess 10s infinite;
+}
+
+body:not(.callout-standard):not(.no-animations)
+  .callout:is([data-callout="important"])
+  .callout-title-inner {
+  animation: CalloutImpt 3s infinite;
+  animation-fill-mode: forwards;
+}

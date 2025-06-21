@@ -762,12 +762,12 @@ font-size: var(--font-size-blockquote);
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  /* 	margin-right: 0.25em; */
+  /*     margin-right: 0.25em; */
   vertical-align: -0.4em;
 }
 
 .markdown-preview-view blockquote p {
-  /* 	color: #23384d; */
+  /*     color: #23384d; */
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   display: inline;
@@ -780,7 +780,7 @@ font-size: var(--font-size-blockquote);
 
 /*
 .markdown-preview-view blockquote::after {
-	content: "\201D"
+    content: "\201D"
 }
 
  */
@@ -1800,14 +1800,14 @@ background: white!important;
 .internal-embed > .markdown-embed,
 .internal-embed > .markdown-embed > .markdown-embed-content,
 .markdown-embed-content > * {
-	display: inline;
-	padding:10px;
+    display: inline;
+    padding:10px;
 }
  */
 /*
 .markdown-embed-link {
-	position: static;
-	display: inline;
+    position: static;
+    display: inline;
 }
  */
 
@@ -1964,7 +1964,7 @@ ol.footnotes-list {
 sub,
 sup {
   font-size: 0.7em;
-  /* 	color: #666; */
+  /*     color: #666; */
   position: middle;
   line-height: 0;
   vertical-align: super;

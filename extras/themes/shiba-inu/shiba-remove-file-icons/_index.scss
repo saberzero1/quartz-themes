@@ -1,0 +1,153 @@
+body:not(.shiba-remove-file-icons)
+  .workspace-leaf-content[data-type="starred"]
+  .nav-file-title-content::before {
+  display: none;
+}
+
+body.dark-background-file:not(.shiba-remove-file-icons):not(.folder-style-change-options-colorful)
+  .nav-file-title.is-active[data-path$=".md"]
+  > .nav-file-title-content::before {
+  background-color: var(--color-white);
+}
+
+body:not(.shiba-remove-file-icons) [data-type="starred"] .nav-file-icon .svg-icon {
+  padding: 4px 0 0;
+}
+
+body:not(.shiba-remove-file-icons) .nav-file-title .nav-file-title-content::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  opacity: 0.9;
+  top: 0.15rem;
+  height: 16px;
+  margin-right: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--interactive-accent);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".pdf"]
+  .nav-file-title-content::before {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 16H8V8h4a4 4 0 1 1 0 8zm-2-6v4h2a2 2 0 1 0 0-4h-2zm5-6H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992z"/></svg>');
+  filter: hue-rotate(-45deg);
+}
+
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".pdf"] .nav-file-tag {
+  background-color: var(--color-accent-translucent-01);
+  color: var(--color-accent);
+  filter: hue-rotate(-45deg);
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".bmp"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".gif"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".jpeg"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".jpg"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".png"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".svg"]
+  .nav-file-title-content::before {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M6 22h12a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zm7-18 5 5h-5V4zm-4.5 7a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 8.5 11zm.5 5 1.597 1.363L13 13l4 6H7l2-3z"></path></svg>');
+  filter: hue-rotate(45deg);
+}
+
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".bmp"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".gif"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".jpeg"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".jpg"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".png"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".svg"] .nav-file-tag {
+  background-color: var(--color-accent-translucent-01);
+  color: var(--color-accent);
+  filter: hue-rotate(45deg);
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mkv"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mov"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mp4"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".ogv"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".webm"]
+  .nav-file-title-content::before {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m10 11 5 3-5 3v-6Z"></path></svg>');
+  filter: hue-rotate(90deg);
+}
+
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mkv"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mov"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mp4"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".ogv"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".webm"] .nav-file-tag {
+  background-color: var(--color-accent-translucent-01);
+  color: var(--color-accent);
+  filter: hue-rotate(90deg);
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".3gp"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".flac"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".m4a"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mp3"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".ogg"]
+  .nav-file-title-content::before,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".wav"]
+  .nav-file-title-content::before {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 22h.5c.5 0 1-.2 1.4-.6.4-.4.6-.9.6-1.4V7.5L14.5 2H6c-.5 0-1 .2-1.4.6C4.2 3 4 3.5 4 4v3"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M10 20v-1a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0Z"></path><path d="M6 20v-1a2 2 0 1 0-4 0v1a2 2 0 1 0 4 0Z"></path><path d="M2 19v-3a6 6 0 0 1 12 0v3"></path></svg>');
+  filter: hue-rotate(-90deg);
+}
+
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".3gp"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".flac"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".m4a"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mp3"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".ogg"] .nav-file-tag,
+body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".wav"] .nav-file-tag {
+  background-color: var(--color-accent-translucent-01);
+  color: var(--color-accent);
+  filter: hue-rotate(-90deg);
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".excalidraw.md"]
+  .nav-file-title-content::before {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.404 2.998c-.757-.754-2.077-.751-2.828.005l-1.784 1.791L11.586 7H7a.998.998 0 0 0-.939.658l-4 11c-.133.365-.042.774.232 1.049l2 2a.997.997 0 0 0 1.049.232l11-4A.998.998 0 0 0 17 17v-4.586l2.207-2.207v-.001h.001L21 8.409c.378-.378.586-.881.585-1.415 0-.535-.209-1.038-.588-1.415l-2.593-2.581zm-3.111 8.295A.996.996 0 0 0 15 12v4.3l-9.249 3.363 4.671-4.671c.026.001.052.008.078.008A1.5 1.5 0 1 0 9 13.5c0 .026.007.052.008.078l-4.671 4.671L7.7 9H12c.266 0 .52-.105.707-.293L14.5 6.914 17.086 9.5l-1.793 1.793zm3.206-3.208-2.586-2.586 1.079-1.084 2.593 2.581-1.086 1.089z"></path></svg>');
+  filter: hue-rotate(135deg);
+}
+
+body:not(.shiba-remove-file-icons)
+  .nav-file-title.is-active[data-path$=".md"]
+  > .nav-file-title-content::before {
+  background-color: var(--interactive-accent);
+  opacity: 1;
+}

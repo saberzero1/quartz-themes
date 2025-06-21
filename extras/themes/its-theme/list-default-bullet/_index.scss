@@ -1,0 +1,44 @@
+body:not(.list-default-bullet) .list-bullet::after,
+body:not(.list-default-bullet) .list-bullet::before {
+  display: none;
+}
+
+body:not(.list-default-bullet) ul > li:not(.task-list-item)::marker {
+  margin-right: -10px;
+}
+
+body:not(.list-default-bullet) .is-live-preview .cm-formatting-list-ul::before,
+body:not(.list-default-bullet) ul > li:not(.task-list-item)::before {
+  content: var(--bullet);
+  font-family: var(--bullet-font);
+  font-size: var(--font-text-size);
+  font-weight: 100;
+  color: var(--list-marker-color);
+  background-color: transparent;
+  transform: unset;
+  position: unset;
+  height: unset;
+}
+
+body:not(.list-default-bullet) ul > li:not(.task-list-item)::marker,
+body:not(.list-default-bullet) .is-live-preview .cm-formatting-list-ul {
+  color: transparent;
+}
+
+body:not(.list-default-bullet) .dataview.dataview div div > ul {
+  padding-inline-start: 0;
+}
+
+body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
+  padding-inline-start: 0;
+}
+
+.list-default-bullet {
+  --list-marker-color: var(--text-faint);
+  --list-marker-color-hover: var(--text-muted);
+  --list-marker-color-collapsed: var(--inactive);
+  --list-bullet-border: none;
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.4em;
+  --list-bullet-transform: none;
+}

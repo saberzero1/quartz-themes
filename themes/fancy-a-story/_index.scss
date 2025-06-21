@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -89,13 +90,102 @@
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1f1f1f;
+  --color-base-10: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 10%
+  );
+  --color-base-100: #d9d9d9;
+  --color-base-20: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 15%
+  );
+  --color-base-25: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 25%
+  );
+  --color-base-30: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 20%
+  );
+  --color-base-35: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 35%
+  );
+  --color-base-40: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 40%
+  );
+  --color-base-50: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 50%
+  );
+  --color-base-70: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 70%
+  );
+  --color-blue: #6795e9;
+  --color-blue-rgb: 103, 149, 233;
+  --color-cyan: #7be2e2;
+  --color-cyan-rgb: 123, 226, 226;
+  --color-gray-rgb: 189, 189, 189;
+  --color-green: #60db60;
+  --color-green-rgb: 96, 219, 96;
+  --color-orange: #eea444;
+  --color-orange-rgb: 238, 164, 68;
+  --color-pink: #f7bdf8;
+  --color-purple: #c48bf3;
+  --color-purple-rgb: 196, 139, 243;
+  --color-red: #f06565;
+  --color-red-rgb: 240, 101, 101;
+  --color-space: srgb-linear;
+  --color-yellow: yellow;
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -173,9 +263,93 @@
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   color-scheme: light;
-
-  .callout {
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #e7e7e7;
+  --color-base-10: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 10%
+  );
+  --color-base-100: #000000;
+  --color-base-20: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 15%
+  );
+  --color-base-25: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 25%
+  );
+  --color-base-30: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 20%
+  );
+  --color-base-35: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 35%
+  );
+  --color-base-40: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 40%
+  );
+  --color-base-50: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 50%
+  );
+  --color-base-70: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 70%
+  );
+  --color-blue: #323296;
+  --color-blue-rgb: 50, 50, 150;
+  --color-cyan: #319191;
+  --color-cyan-rgb: 49, 145, 145;
+  --color-gray-rgb: 77, 77, 77;
+  --color-green: #0d610d;
+  --color-green-rgb: 13, 97, 13;
+  --color-orange: #be6900;
+  --color-orange-rgb: 190, 105, 0;
+  --color-pink: #e43eba;
+  --color-purple: #641c7a;
+  --color-purple-rgb: 100, 28, 122;
+  --color-red: #b13030;
+  --color-red-rgb: 177, 48, 48;
+  --color-space: srgb-linear;
+  --color-yellow: #d4b815;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -688,10 +862,95 @@ html[saved-theme="dark"] {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1f1f1f;
+  --color-base-10: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 10%
+  );
+  --color-base-100: #d9d9d9;
+  --color-base-20: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 15%
+  );
+  --color-base-25: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 25%
+  );
+  --color-base-30: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 20%
+  );
+  --color-base-35: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 35%
+  );
+  --color-base-40: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 40%
+  );
+  --color-base-50: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 50%
+  );
+  --color-base-70: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 70%
+  );
+  --color-blue: #6795e9;
+  --color-blue-rgb: 103, 149, 233;
+  --color-cyan: #7be2e2;
+  --color-cyan-rgb: 123, 226, 226;
+  --color-gray-rgb: 189, 189, 189;
+  --color-green: #60db60;
+  --color-green-rgb: 96, 219, 96;
+  --color-orange: #eea444;
+  --color-orange-rgb: 238, 164, 68;
+  --color-pink: #f7bdf8;
+  --color-purple: #c48bf3;
+  --color-purple-rgb: 196, 139, 243;
+  --color-red: #f06565;
+  --color-red-rgb: 240, 101, 101;
+  --color-space: srgb-linear;
+  --color-yellow: yellow;
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -777,10 +1036,91 @@ html[saved-theme="light"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   color-scheme: light;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #e7e7e7;
+  --color-base-10: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 10%
+  );
+  --color-base-100: #000000;
+  --color-base-20: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 15%
+  );
+  --color-base-25: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 25%
+  );
+  --color-base-30: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 20%
+  );
+  --color-base-35: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 35%
+  );
+  --color-base-40: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 40%
+  );
+  --color-base-50: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 50%
+  );
+  --color-base-70: color-mix(
+    in var(--color-space),
+    var(--color-base-00),
+    var(--color-base-100) 70%
+  );
+  --color-blue: #323296;
+  --color-blue-rgb: 50, 50, 150;
+  --color-cyan: #319191;
+  --color-cyan-rgb: 49, 145, 145;
+  --color-gray-rgb: 77, 77, 77;
+  --color-green: #0d610d;
+  --color-green-rgb: 13, 97, 13;
+  --color-orange: #be6900;
+  --color-orange-rgb: 190, 105, 0;
+  --color-pink: #e43eba;
+  --color-purple: #641c7a;
+  --color-purple-rgb: 100, 28, 122;
+  --color-red: #b13030;
+  --color-red-rgb: 177, 48, 48;
+  --color-space: srgb-linear;
+  --color-yellow: #d4b815;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

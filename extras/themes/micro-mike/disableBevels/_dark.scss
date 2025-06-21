@@ -1,0 +1,4 @@
+body:not(.disableBevels):not(.dtm08):not(.factorio).theme-dark {
+  --input-shadow: var(--bevelStyleButton);
+  --input-shadow-hover: var(--bevelStyleButton);
+}

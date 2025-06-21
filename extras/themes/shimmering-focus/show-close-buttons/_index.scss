@@ -1,0 +1,33 @@
+body:not(.show-close-buttons, .is-mobile) .search-input-clear-button {
+  display: none;
+}
+
+body:not(.show-close-buttons, .is-mobile) .document-search-close-button,
+body:not(.show-close-buttons, .is-mobile) .modal-close-button {
+  display: none;
+}
+
+body:not(.show-close-buttons, .is-mobile)
+  .workspace-tab-header:only-child
+  .workspace-tab-header-inner-close-button,
+body:not(.show-close-buttons, .is-mobile)
+  .mod-stacked
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button,
+body:not(.show-close-buttons, .is-mobile)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:not(:hover)
+  .workspace-tab-header-inner-close-button {
+  display: none;
+}
+
+body:not(.show-close-buttons, .is-mobile) .search-input-container input:not(:placeholder-shown) {
+  padding-inline-end: 28px;
+}
+
+body:not(.show-close-buttons, .is-mobile)
+  .search-input-container
+  input:not(:placeholder-shown)
+  ~ .input-right-decorator {
+  inset-inline-end: 4px;
+}

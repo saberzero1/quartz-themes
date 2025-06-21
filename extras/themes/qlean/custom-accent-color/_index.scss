@@ -1,0 +1,8 @@
+body:not(.custom-accent-color)
+  .setting-item:is(
+    [data-id^="custom-accent-color-"],
+    [data-id^="accent-color-light-"],
+    [data-id^="accent-color-dark-"]
+  ) {
+  display: none;
+}

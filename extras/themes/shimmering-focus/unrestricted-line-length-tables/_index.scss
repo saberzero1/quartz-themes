@@ -1,0 +1,4 @@
+.unrestricted-line-length-tables:not(.is-mobile)
+  :is(.markdown-source-view, .markdown-preview-view):has(table, .HyperMD-table-2) {
+  --file-line-width: 100%;
+}

@@ -1,0 +1,19 @@
+body:not(:not(.link-file)) .nav-file-title-content {
+  text-decoration-line: underline;
+  color: var(--link-color);
+  text-decoration-color: var(--link-decoration-color);
+  text-decoration-thickness: var(--link-decoration-thickness);
+}
+
+body:not(:not(.link-file)) .nav-folder.alx-folder-with-note > .nav-folder .nav-folder-title:hover,
+body:not(:not(.link-file)) .nav-file:hover .nav-file-title,
+body:not(:not(.link-file)).nav-folder-title:hover {
+  background-color: transparent !important;
+}
+
+body:not(:not(.link-file))
+  .nav-folder.alx-folder-with-note
+  > .nav-folder-title:hover
+  > .nav-folder-title-content {
+  color: var(--link-color-hover) !important;
+}

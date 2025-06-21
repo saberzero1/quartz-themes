@@ -1,0 +1,33 @@
+.CG-workspace-background {
+  --background-primary: rgba(
+    var(--bg-primary),
+    var(--CG-workspace-background-workspace-slider, 0.45)
+  );
+  --background-secondary: rgba(
+    var(--bg-secondary),
+    var(--CG-workspace-background-workspace-slider, 0.45)
+  );
+}
+
+.obsidian-app.CG-workspace-background {
+  --Obsidianbg: var(--bgimage);
+  --CGworkspace-background-image: var(--Obsidianbg);
+}
+
+.obsidian-app.CG-workspace-background-image-custom {
+  --CGworkspace-background-image: var(--CG-workspace-background-image-custom-option);
+}
+
+.CG-workspace-background .workspace,
+.CG-workspace-background .status-bar,
+body:not(.is-hidden-frameless).CG-workspace-background .titlebar-inner {
+  background-color: var(--background-secondary);
+  backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15))
+    blur(var(--CG-workspace-background-blur, 15px))
+    saturate(var(--CG-workspace-background-saturation, 2))
+    contrast(var(--CG-workspace-background-contrast, 100%));
+}
+
+.CG-workspace-background .workspace-ribbon.mod-left.is-collapsed {
+  background-color: transparent;
+}

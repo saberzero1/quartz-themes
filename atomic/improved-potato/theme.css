@@ -8030,7 +8030,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10293,27 +10293,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24522,7 +24522,7 @@ div.day.has-note.today.svelte-q3wqg9 {
 name: Improved Potato Theme
 id: things-style
 settings:
-	-
+    -
         id: features
         title: Features
         type: heading
@@ -24696,7 +24696,7 @@ settings:
         description: Toggle H6 underline (border-bottom)
         type: class-toggle
         default: false
-	-
+    -
         id: colors
         title: Other colors
         type: heading
@@ -24727,7 +24727,7 @@ settings:
         type: variable-color
         format: hex
         default: '#ff3c7f'
-	-
+    -
         id: color-bases
         title: Color bases
         type: heading
@@ -24827,7 +24827,7 @@ settings:
         opacity: true
         default-light: '#485465'
         default-dark: '#ccd2db'
-	-
+    -
         id: callouts
         title: Callouts
         type: heading

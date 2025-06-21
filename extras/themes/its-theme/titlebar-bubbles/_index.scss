@@ -1,0 +1,102 @@
+.titlebar-bubbles {
+  --tab-outline-width: 0;
+  --titlebar-bubble-colors: #0b0f13;
+  --titlebar-bubble-colors-inactive: var(--td);
+  --tab-text-color-focused-active: var(--text);
+  --tab-text-color-hover: var(--text);
+  --sidebar-tab-color-hover: var(--text-dl);
+  --tab-divider-color: transparent;
+  --vault-profile-color-hover: var(--text-dl);
+}
+
+.titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) {
+  --tab-radius: var(--radius-m);
+  --tab-radius-active: var(--radius-m);
+  --tab-text-padding: 3px 5px;
+  --tab-text-padding-inner: 1px 3px;
+  --tab-gap: 0 10px;
+  --tab-text-color-hover: var(--text-on-accent);
+  --tab-text-color-focused-active-current: var(--text);
+  --tab-curve: 0;
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header-container-inner,
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header-container {
+  align-items: center;
+  align-content: center;
+  gap: var(--size-2-3);
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner,
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header-container-inner,
+.titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) .workspace-tab-header-inner {
+  margin: unset;
+  padding: var(--tab-text-padding);
+}
+
+.titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) .workspace-tab-header {
+  box-shadow: 2px 2px 0 var(--titlebar-bubble-colors);
+  border: 2px solid var(--titlebar-bubble-colors);
+  padding: var(--tab-text-padding-inner);
+  --sidebar-tab-background-color-hover: transparent;
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header:not(.is-active) {
+  --titlebar-bubble-colors: var(--titlebar-bubble-colors-inactive);
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .mod-stacked
+  .workspace-tab-header {
+  border: none;
+}
+
+.titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) .workspace-tab-header-new-tab {
+  padding: 0;
+}
+
+.titlebar-bubbles :is(.mod-left-split, .mod-right-split, .mod-root) .workspace-tab-header:hover {
+  background-color: var(--bttn);
+  --titlebar-bubble-colors: unset;
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header:hover
+  .workspace-tab-header-status-container:hover {
+  background: var(--td);
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .view-header-title-parent
+  .view-header-breadcrumb:hover {
+  background-color: var(--td);
+}
+
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header-status-icon:hover,
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-close-button,
+.titlebar-bubbles
+  :is(.mod-left-split, .mod-right-split, .mod-root)
+  .workspace-tab:not(.mod-stacked)
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner {
+  color: var(--text-on-accent);
+}

@@ -1,0 +1,14 @@
+body:not(.source-mode-headings-regular) .markdown-source-view:not(.is-live-preview) {
+  --h1-size: var(--font-text-size);
+  --h2-size: var(--font-text-size);
+  --h3-size: var(--font-text-size);
+  --h4-size: var(--font-text-size);
+  --h5-size: var(--font-text-size);
+  --h6-size: var(--font-text-size);
+}
+
+body:not(.source-mode-headings-regular)
+  .markdown-source-view:not(.is-live-preview)
+  .HyperMD-header-1.HyperMD-header-1 {
+  text-align: left;
+}

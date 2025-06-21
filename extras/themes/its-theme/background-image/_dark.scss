@@ -1,0 +1,6 @@
+body.background-image:is(.theme-dark, .theme-light) .workspace {
+  background: var(--background-image-url);
+  background-repeat: no-repeat;
+  background-position: var(--background-image-width) var(--background-image-height);
+  background-size: cover;
+}

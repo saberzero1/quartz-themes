@@ -8054,7 +8054,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10325,27 +10325,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23941,8 +23941,8 @@ button svg {
 /* Editor area styling - shared */
 /* Headings - shared */
 /*.cm-header {
-	font-weight: bold;
-	color: var(--titlebar-background);
+    font-weight: bold;
+    color: var(--titlebar-background);
 }*/
 /* Headings - Shared (Reading and Editing Modes) */
 .cm-header {
@@ -24139,32 +24139,32 @@ thanks u/AccomplishedLife7782 / https://github.com/Gonzalo-D-Sales */
 /* Code blocks - theme specific */
 /*.theme-light pre,
 .theme-light code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	border: 1px solid #c0c0c0;
-	font-family: "Courier New", monospace;
+    background-color: #f0f0f0;
+    color: #0b6e4f;
+    border: 1px solid #c0c0c0;
+    font-family: "Courier New", monospace;
 }
 
 .theme-light .cm-inline-code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	padding: 0 4px;
-	border-radius: 3px;
+    background-color: #f0f0f0;
+    color: #0b6e4f;
+    padding: 0 4px;
+    border-radius: 3px;
 }
 
 .theme-dark pre,
 .theme-dark code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
-	border: 1px solid #555555;
-	font-family: "Courier New", monospace;
+    background-color: #2a2a2a;
+    color: #6fcf9f;
+    border: 1px solid #555555;
+    font-family: "Courier New", monospace;
 }
 
 .theme-dark .cm-inline-code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
-	padding: 0 4px;
-	border-radius: 3px;
+    background-color: #2a2a2a;
+    color: #6fcf9f;
+    padding: 0 4px;
+    border-radius: 3px;
 }*/
 /* Code blocks - theme specific */
 .theme-light pre {

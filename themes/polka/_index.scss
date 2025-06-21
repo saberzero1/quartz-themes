@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --accent-h: 189;
   --accent-l: 49%;
   --accent-s: 100%;
@@ -116,13 +117,129 @@
   --text-normal: rgb(var(--ss-dark-text-main));
   --text-white: rgb(250, 247, 245);
   color-scheme: dark;
-
-  .callout {
+  --accent-h: 189;
+  --accent-l: 49%;
+  --accent-s: 100%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 85%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-dark-contrast) * 4.8);
+  --background-dark: rgb(10, 18, 30);
+  --background-extra-dark: #000;
+  --background-h: var(--ss-dark-h);
+  --background-l: calc(var(--ss-dark-l) * 5);
+  --background-modifier-border: var(--accent-soft-dark);
+  --background-modifier-border-focus: hsl(
+    var(--background-h),
+    var(--background-s),
+    calc(var(--background-l) - 4%)
+  );
+  --background-modifier-border-hover: var(--accent-soft-dark);
+  --background-modifier-form-field: var(--background-dark);
+  --background-modifier-hover: var(--accent-soft-light);
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-s: calc(var(--ss-dark-s) * 10);
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --callout-bug: rgb(245, 0, 170);
+  --callout-default: var(--text-normal);
+  --callout-error: rgb(250, 30, 0);
+  --callout-example: var(--text-normal);
+  --callout-fail: rgb(250, 30, 0);
+  --callout-important: var(--color-accent);
+  --callout-info: var(--text-normal);
+  --callout-question: var(--text-normal);
+  --callout-quote: var(--text-normal);
+  --callout-success: rgb(0, 190, 0);
+  --callout-summary: var(--text-normal);
+  --callout-tip: rgb(255, 220, 120);
+  --callout-todo: rgb(0, 130, 255);
+  --callout-warning: rgb(220, 210, 0);
+  --code-comment: rgba(var(--code-peripheral), 0.7);
+  --code-peripheral: 175, 191, 255;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: rgba(var(--ss-dark-text-main), 0.1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent);
+  --mono-rgb-100: 255, 255, 255;
+  --prompt-border-color: var(--accent-soft-dark);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --ss-dark-contrast: 0.73%;
+  --ss-dark-h: 221;
+  --ss-dark-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
+  --ss-dark-l: 2.58%;
+  --ss-dark-s: 3.33%;
+  --ss-dark-text-main: 250, 247, 245;
+  --tag-background: var(--color-accent-background);
+  --tag-background-hover: var(--color-accent-background-hover);
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--text-white);
+  --text-faint: var(--text-normal);
+  --text-highlight-bg: var(--ss-dark-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-muted: var(--text-normal);
+  --text-normal: rgb(var(--ss-dark-text-main));
+  --text-white: rgb(250, 247, 245);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --accent-h: 0;
   --accent-l: 52%;
   --accent-s: 75%;
@@ -225,9 +342,118 @@
   --text-normal: rgb(var(--ss-light-text-main));
   --text-white: rgb(254, 252, 252);
   color-scheme: light;
-
-  .callout {
+  --accent-h: 0;
+  --accent-l: 52%;
+  --accent-s: 75%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 15%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-light-contrast) * 4.8);
+  --background-dark: rgb(23, 35, 62);
+  --background-extra-dark: #000;
+  --background-h: var(--ss-light-h);
+  --background-l: calc(var(--ss-light-l) * 5 + 50%);
+  --background-modifier-border: var(--accent-soft-dark);
+  --background-modifier-border-focus: var(--accent-soft-dark);
+  --background-modifier-border-hover: var(--accent-soft-dark);
+  --background-modifier-form-field: var(--accent-soft-light);
+  --background-modifier-hover: var(--accent-soft-light);
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-s: calc(var(--ss-light-s) * 10);
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --callout-bug: rgb(245, 0, 165);
+  --callout-default: var(--text-normal);
+  --callout-error: rgb(235, 0, 0);
+  --callout-example: var(--text-normal);
+  --callout-fail: rgb(235, 0, 0);
+  --callout-important: var(--color-accent);
+  --callout-info: var(--text-normal);
+  --callout-question: var(--text-normal);
+  --callout-quote: var(--text-normal);
+  --callout-success: rgb(0, 180, 0);
+  --callout-summary: var(--text-normal);
+  --callout-tip: rgb(240, 195, 0);
+  --callout-todo: rgb(0, 130, 235);
+  --callout-warning: rgb(240, 150, 0);
+  --code-comment: rgba(var(--code-peripheral));
+  --code-peripheral: 159, 157, 190;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: rgba(var(--ss-light-text-main), 0.4);
+  --interactive-accent-hover: var(--color-accent);
+  --mono-rgb-100: 0, 0, 0;
+  --prompt-border-color: var(--accent-soft-dark);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --ss-light-contrast: 0%;
+  --ss-light-h: 0;
+  --ss-light-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
+  --ss-light-l: 9.86%;
+  --ss-light-s: 3.92%;
+  --ss-light-text-main: 0, 0, 0;
+  --tag-background: var(--color-accent-background);
+  --tag-background-hover: var(--color-accent-background-hover);
+  --text-accent-hover: #000;
+  --text-faint: var(--text-normal);
+  --text-highlight-bg: var(--ss-light-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-muted: var(--text-normal);
+  --text-normal: rgb(var(--ss-light-text-main));
+  --text-white: rgb(254, 252, 252);
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -692,10 +918,122 @@ html[saved-theme="dark"] {
   --text-normal: rgb(var(--ss-dark-text-main));
   --text-white: rgb(250, 247, 245);
   color-scheme: dark;
+  --accent-h: 189;
+  --accent-l: 49%;
+  --accent-s: 100%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 85%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-dark-contrast) * 4.8);
+  --background-dark: rgb(10, 18, 30);
+  --background-extra-dark: #000;
+  --background-h: var(--ss-dark-h);
+  --background-l: calc(var(--ss-dark-l) * 5);
+  --background-modifier-border: var(--accent-soft-dark);
+  --background-modifier-border-focus: hsl(
+    var(--background-h),
+    var(--background-s),
+    calc(var(--background-l) - 4%)
+  );
+  --background-modifier-border-hover: var(--accent-soft-dark);
+  --background-modifier-form-field: var(--background-dark);
+  --background-modifier-hover: var(--accent-soft-light);
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-s: calc(var(--ss-dark-s) * 10);
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --callout-bug: rgb(245, 0, 170);
+  --callout-default: var(--text-normal);
+  --callout-error: rgb(250, 30, 0);
+  --callout-example: var(--text-normal);
+  --callout-fail: rgb(250, 30, 0);
+  --callout-important: var(--color-accent);
+  --callout-info: var(--text-normal);
+  --callout-question: var(--text-normal);
+  --callout-quote: var(--text-normal);
+  --callout-success: rgb(0, 190, 0);
+  --callout-summary: var(--text-normal);
+  --callout-tip: rgb(255, 220, 120);
+  --callout-todo: rgb(0, 130, 255);
+  --callout-warning: rgb(220, 210, 0);
+  --code-comment: rgba(var(--code-peripheral), 0.7);
+  --code-peripheral: 175, 191, 255;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: rgba(var(--ss-dark-text-main), 0.1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent);
+  --mono-rgb-100: 255, 255, 255;
+  --prompt-border-color: var(--accent-soft-dark);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --ss-dark-contrast: 0.73%;
+  --ss-dark-h: 221;
+  --ss-dark-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
+  --ss-dark-l: 2.58%;
+  --ss-dark-s: 3.33%;
+  --ss-dark-text-main: 250, 247, 245;
+  --tag-background: var(--color-accent-background);
+  --tag-background-hover: var(--color-accent-background-hover);
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--text-white);
+  --text-faint: var(--text-normal);
+  --text-highlight-bg: var(--ss-dark-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-muted: var(--text-normal);
+  --text-normal: rgb(var(--ss-dark-text-main));
+  --text-white: rgb(250, 247, 245);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -806,10 +1144,116 @@ html[saved-theme="light"] {
   --text-normal: rgb(var(--ss-light-text-main));
   --text-white: rgb(254, 252, 252);
   color-scheme: light;
+  --accent-h: 0;
+  --accent-l: 52%;
+  --accent-s: 75%;
+  --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 15%;
+  --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
+  --background-contrast: calc(var(--ss-light-contrast) * 4.8);
+  --background-dark: rgb(23, 35, 62);
+  --background-extra-dark: #000;
+  --background-h: var(--ss-light-h);
+  --background-l: calc(var(--ss-light-l) * 5 + 50%);
+  --background-modifier-border: var(--accent-soft-dark);
+  --background-modifier-border-focus: var(--accent-soft-dark);
+  --background-modifier-border-hover: var(--accent-soft-dark);
+  --background-modifier-form-field: var(--accent-soft-light);
+  --background-modifier-hover: var(--accent-soft-light);
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-s: calc(var(--ss-light-s) * 10);
+  --background-secondary: hsl(
+    var(--background-h),
+    var(--background-secondary-s),
+    var(--background-secondary-l)
+  );
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --callout-bug: rgb(245, 0, 165);
+  --callout-default: var(--text-normal);
+  --callout-error: rgb(235, 0, 0);
+  --callout-example: var(--text-normal);
+  --callout-fail: rgb(235, 0, 0);
+  --callout-important: var(--color-accent);
+  --callout-info: var(--text-normal);
+  --callout-question: var(--text-normal);
+  --callout-quote: var(--text-normal);
+  --callout-success: rgb(0, 180, 0);
+  --callout-summary: var(--text-normal);
+  --callout-tip: rgb(240, 195, 0);
+  --callout-todo: rgb(0, 130, 235);
+  --callout-warning: rgb(240, 150, 0);
+  --code-comment: rgba(var(--code-peripheral));
+  --code-peripheral: 159, 157, 190;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: rgba(var(--ss-light-text-main), 0.4);
+  --interactive-accent-hover: var(--color-accent);
+  --mono-rgb-100: 0, 0, 0;
+  --prompt-border-color: var(--accent-soft-dark);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --ss-light-contrast: 0%;
+  --ss-light-h: 0;
+  --ss-light-highlight-bg: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.1 + 10%)
+  );
+  --ss-light-l: 9.86%;
+  --ss-light-s: 3.92%;
+  --ss-light-text-main: 0, 0, 0;
+  --tag-background: var(--color-accent-background);
+  --tag-background-hover: var(--color-accent-background-hover);
+  --text-accent-hover: #000;
+  --text-faint: var(--text-normal);
+  --text-highlight-bg: var(--ss-light-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-muted: var(--text-normal);
+  --text-normal: rgb(var(--ss-light-text-main));
+  --text-white: rgb(254, 252, 252);
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

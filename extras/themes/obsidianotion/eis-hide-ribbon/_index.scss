@@ -1,0 +1,7 @@
+body.eis-hide-ribbon {
+  --frame-left-space: 70px !important;
+}
+
+.eis-hide-ribbon .workspace-ribbon.mod-left {
+  display: none;
+}

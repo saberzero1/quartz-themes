@@ -8397,7 +8397,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10841,27 +10841,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -25993,7 +25993,7 @@ settings:
         max: 70
         step: 1
         default: 35
-        format: px	
+        format: px    
    - 
       id: CG-Note
       title: 🆕 Note Controls
@@ -26008,15 +26008,15 @@ settings:
       default: true
       type: class-toggle
    -
-		id: CG-line-width
-		title: Readable line width
-		description: The maximum line width in rem (unit relative to Appearance -> Font Size)
-		type: variable-number-slider
-		default: 40
-		min: 30
-		max: 70
-		step: 1
-		format: 'rem'
+        id: CG-line-width
+        title: Readable line width
+        description: The maximum line width in rem (unit relative to Appearance -> Font Size)
+        type: variable-number-slider
+        default: 40
+        min: 30
+        max: 70
+        step: 1
+        format: 'rem'
    -
         title: Disable Codeblocks Gutter
         description: Remove line numbers and additional styling to code blocks
@@ -26024,11 +26024,11 @@ settings:
         type: class-toggle
         default: false
    -
-		id: CG-cite-font
-		title: Cite/Signature Font (Used in blockquotes and quote callouts)
-		description: Get Font from Cyber Glow's Github page. Recommend using a cursive font style
-		type: variable-text
-		default: 'Edwardian Script ITC'
+        id: CG-cite-font
+        title: Cite/Signature Font (Used in blockquotes and quote callouts)
+        description: Get Font from Cyber Glow's Github page. Recommend using a cursive font style
+        type: variable-text
+        default: 'Edwardian Script ITC'
    -
       id: CG-bullet-style
       title: 🆕 Bullet Style
@@ -26058,12 +26058,12 @@ settings:
         type: class-toggle
         default: false
    -
-		id: headings
-		title: Heading Controls
-		type: heading
-		description: Header Dividing Line Controls
-		level: 1
-		collapsed: true
+        id: headings
+        title: Heading Controls
+        type: heading
+        description: Header Dividing Line Controls
+        level: 1
+        collapsed: true
    -
       id: CG-hr
       title: Heading Dividing Line (---)
@@ -26082,7 +26082,7 @@ settings:
         value: CG-None-hr
       -
         label: Classic Obsidian Outline
-        value: CG-ClassicObsidian-hr	
+        value: CG-ClassicObsidian-hr    
       -
         label: Windows
         value: CG-Windows-hr
@@ -26097,11 +26097,11 @@ settings:
       default: url("app://local/")
       value: CG-Custom-sbt
    -
-		id: mini-header-hide
-		title: Show Header Indication
-		description: Enabling this will show the small header indicator next to headers, such as H1, H2, etc.
-		type: class-toggle
-		default: true
+        id: mini-header-hide
+        title: Show Header Indication
+        description: Enabling this will show the small header indicator next to headers, such as H1, H2, etc.
+        type: class-toggle
+        default: true
    -
       id: CG-Color
       title: Color Picker
@@ -26213,65 +26213,65 @@ settings:
       level: 1
       collapsed: true
    -
-		id: default-font
-		title: Base font (UI and notes font)
-		description: Change the base font by typing the name of the desired font in the textbox, For System Default type Inter.
-		type: variable-text
-		default: 'Quantico'
+        id: default-font
+        title: Base font (UI and notes font)
+        description: Change the base font by typing the name of the desired font in the textbox, For System Default type Inter.
+        type: variable-text
+        default: 'Quantico'
    -
-		id: title-heading
-		title: Title Heading (H1)
-		description: Change the Heading 1 font by typing the name of the desired font in the textbox, For System Default type Inter.
-		type: variable-text
-		default: 'Space Wham'
+        id: title-heading
+        title: Title Heading (H1)
+        description: Change the Heading 1 font by typing the name of the desired font in the textbox, For System Default type Inter.
+        type: variable-text
+        default: 'Space Wham'
    -
-		id: major-heading
-		title: Major Heading font (H2-3)
-		description: Change the Heading 2 and 3 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
-		type: variable-text
-		default: 'Quantico'
+        id: major-heading
+        title: Major Heading font (H2-3)
+        description: Change the Heading 2 and 3 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
+        type: variable-text
+        default: 'Quantico'
    -
-		id: minor-heading 
-		title: Minor Headings font (H4-6)
-		description: Change the Heading 4-6 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
-		type: variable-text
-		default: 'Oxanium'
+        id: minor-heading 
+        title: Minor Headings font (H4-6)
+        description: Change the Heading 4-6 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
+        type: variable-text
+        default: 'Oxanium'
    -
-		id: h1-size
-		title: H1 font size
-		description: Enter Header 1 Font size
-		type: variable-text
-		default: 2.1em
+        id: h1-size
+        title: H1 font size
+        description: Enter Header 1 Font size
+        type: variable-text
+        default: 2.1em
    -
-		id: h2-size
-		title: H2 font size
-		description:  Enter Header 2 Font size
-		type: variable-text
-		default: 1.85em
+        id: h2-size
+        title: H2 font size
+        description:  Enter Header 2 Font size
+        type: variable-text
+        default: 1.85em
    -
-		id: h3-size
-		title: H3 font size
-		description:  Enter Header 3 Font size
-		type: variable-text
-		default: 1.65em
+        id: h3-size
+        title: H3 font size
+        description:  Enter Header 3 Font size
+        type: variable-text
+        default: 1.65em
    -
-		id: h4-size
-		title: H4 font size
-		description:  Enter Header 4 Font size
-		type: variable-text
-		default: 1.45em
+        id: h4-size
+        title: H4 font size
+        description:  Enter Header 4 Font size
+        type: variable-text
+        default: 1.45em
    -
-		id: h5-size
-		title: H5 font size
-		description:  Enter Header 5 Font size
-		type: variable-text
-		default: 1.25em		
+        id: h5-size
+        title: H5 font size
+        description:  Enter Header 5 Font size
+        type: variable-text
+        default: 1.25em        
    -
-		id: h6-size
-		title: H6 font size
-		description:  Enter Header 6 Font size
-		type: variable-text
-		default: 1.25em		
+        id: h6-size
+        title: H6 font size
+        description:  Enter Header 6 Font size
+        type: variable-text
+        default: 1.25em        
    - 
       id: CG-other
       title: ⚠️ In Progress Controls ⚠️

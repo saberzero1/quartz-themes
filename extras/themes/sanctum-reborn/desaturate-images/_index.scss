@@ -1,0 +1,8 @@
+body.desaturate-images .image-embed {
+  opacity: 0.7;
+  transition: opacity var(--duration-slow-2) var(--motion-entrance-expressive);
+}
+
+body.desaturate-images .image-embed:hover {
+  opacity: 1;
+}

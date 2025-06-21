@@ -8180,7 +8180,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10450,27 +10450,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24465,16 +24465,16 @@ settings:
 }
 
 /* body {
-	--ribbon-background-collapsed: transparent;
-	--mod-left-ribbon-background: transparent;
-	--mod-left-ribbon-background-collapsed: var(--background-primary);
-	--mod-root-header-background: var(--background-primary);
-	--mod-root-header-margin: 0px;
-	--root-workspace-padding-bottom: 0px;
-	--root-workspace-radius: 0px;
-	--root-workspace-shadow: none;
-	--root-workspace-margin-spacing: 0px;
-	--side-dock-actions-border-color: transparent;
+    --ribbon-background-collapsed: transparent;
+    --mod-left-ribbon-background: transparent;
+    --mod-left-ribbon-background-collapsed: var(--background-primary);
+    --mod-root-header-background: var(--background-primary);
+    --mod-root-header-margin: 0px;
+    --root-workspace-padding-bottom: 0px;
+    --root-workspace-radius: 0px;
+    --root-workspace-shadow: none;
+    --root-workspace-margin-spacing: 0px;
+    --side-dock-actions-border-color: transparent;
 } */
 /* ---- Su ---- */
 .composer--SuScheme.theme-light {
@@ -24930,14 +24930,14 @@ settings:
 }
 
 /* .markdown-source-view .HyperMD-codeblock.HyperMD-codeblock-begin::before {
-	content: "";
-	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIj4KICAgICAgICA8Y2lyY2xlIGN4PSI2IiBjeT0iNiIgcj0iNiIgZmlsbD0iI0ZGNUY1NiIgc3Ryb2tlPSIjRTA0NDNFIiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgICAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRkJEMkUiIHN0cm9rZT0iI0RFQTEyMyIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNDYiIGN5PSI2IiByPSI2IiBmaWxsPSIjMjdDOTNGIiBzdHJva2U9IiMxQUFCMjkiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICA8L2c+CiAgICA8L3N2Zz4=");
-	background-repeat: no-repeat;
-	display: inline-block;
-	position: absolute;
-	top: 6px;
-	height: 26px;
-	width: 100px;
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIj4KICAgICAgICA8Y2lyY2xlIGN4PSI2IiBjeT0iNiIgcj0iNiIgZmlsbD0iI0ZGNUY1NiIgc3Ryb2tlPSIjRTA0NDNFIiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgICAgICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRkJEMkUiIHN0cm9rZT0iI0RFQTEyMyIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNDYiIGN5PSI2IiByPSI2IiBmaWxsPSIjMjdDOTNGIiBzdHJva2U9IiMxQUFCMjkiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICA8L2c+CiAgICA8L3N2Zz4=");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    height: 26px;
+    width: 100px;
 } */
 .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg {
   border-top-left-radius: var(--codeblock-border-radius);

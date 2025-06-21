@@ -1,0 +1,27 @@
+body:not(.is-mobile).show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left {
+  --ribbon-width: 16px;
+  transition: all var(--anim-out);
+}
+
+body:not(.is-mobile).show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left:hover {
+  --ribbon-width: 44px;
+  transition: all var(--anim-in);
+}
+
+body:not(.is-mobile).show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left > * {
+  opacity: 0;
+  transition: all var(--anim-out);
+}
+
+body:not(.is-mobile).show-ribbon .workspace-ribbon.side-dock-ribbon.mod-left:hover > * {
+  opacity: 1;
+  transition: all var(--anim-in);
+}
+
+body:not(.is-mobile).show-ribbon .workspace::before {
+  width: calc(100% - 16px);
+}
+
+body:not(.is-mobile).show-ribbon:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+  width: calc(100% - 44px);
+}

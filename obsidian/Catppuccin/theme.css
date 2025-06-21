@@ -7,7 +7,7 @@ body {
    * cmd/ctrl+f to see if the variable is being defined elsewhere.
    * -- Original theme author's notes:
   * List of variables is placed in body rather than :root so
-  * that we can	combine all property types including colors
+  * that we can    combine all property types including colors
   * and sort alphabetically to maximize readability in
   * the compiled app.css file.
   */
@@ -871,7 +871,6 @@ settings:
       -
         label: Gray
         value: var(--ctp-subtext0)
-  -
   */
 /* @settings
 name: "Catppuccin: File Name and Headings"

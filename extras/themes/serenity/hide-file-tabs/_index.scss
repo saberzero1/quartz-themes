@@ -1,0 +1,38 @@
+body:not(.hide-ribbon):not(:not(.flat-mode)):not(.hide-file-tabs)
+  .workspace-ribbon:not(.is-collapsed):before {
+  border-right: var(--divider-width) solid var(--divider-color);
+}
+
+.hide-file-tabs .workspace-ribbon.mod-left:before {
+  background-color: var(--background-primary) !important;
+}
+
+body:not(.flat-mode):not(.hide-file-tabs).hide-ribbon .workspace-ribbon.mod-left:hover:before {
+  opacity: 1;
+  background-color: var(--titlebar-background-focused) !important;
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+
+body:not(.hide-file-tabs):not(.flat-mode)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  background-color: var(--titlebar-background-focused) !important;
+}
+
+body:not(:not(.hide-file-tabs))
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container {
+  border: none;
+  margin: 2px auto;
+  transition: all 0.25s;
+}
+
+body:not(:not(.hide-file-tabs))
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container:not(:hover) {
+  opacity: 0;
+}
+
+.hide-file-tabs:not(.flat-mode) .workspace-tab-header-container {
+  background-color: var(--background-primary) !important;
+}

@@ -1,0 +1,16 @@
+body:not(.encore-no-excalidraw).theme-dark
+  .workspace-leaf-content[data-type="excalidraw"]
+  .view-header {
+  background-color: rgba(18, 18, 18, 0.5) !important;
+}
+
+body:not(.encore-no-excalidraw).theme-dark .excalidraw.theme--dark {
+  --button-gray-1: var(--color-base-30);
+  --button-gray-2: var(--color-base-40);
+  --button-gray-3: var(--color-base-30);
+  --dialog-border-color: var(--color-base-40);
+  --default-bg-color: var(--color-base-00);
+  --island-bg-color: var(--color-base-25);
+  --input-border-color: var(--color-base-30);
+  --input-bg-color: var(--color-base-20);
+}

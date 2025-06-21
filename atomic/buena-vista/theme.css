@@ -8069,7 +8069,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10336,27 +10336,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23880,52 +23880,52 @@ input.mobile-vault-chooser-field-input {
 name: Buena Vista
 id: buenavista
 settings:
-	-
-		id: highlight-mode
-		title: Colour scheme mode
-		type: class-select
-		allowEmpty: false
-		default: 'color-scheme-complementary'
-		options:
-		-
-			label: None
-			value: 'color-scheme-none'
-		-
-			label: Monochromatic
-			value: 'color-scheme-monochrome'
-		-
-			label: Complementary
-			value: 'color-scheme-complementary'
-		-
-			label: Even triad
-			value: 'color-scheme-even-triad'
-		-
-			label: Complementary triad
-			value: 'color-scheme-comp-triad'
-		-
-			label: Analogous
-			value: 'color-scheme-analogous'
-		-
-			label: Tetradic (experimental)
-			value: 'color-scheme-tetradic'
-	-
-		id: title-effects
-		title: Effects
-		type: heading
-		level: 1
-	-
-		id: blur-enabled
-		title: Blur
-		type: class-toggle
-		default: false
-	-
-		id: blur-size
-		title: Blur size
-		type: variable-number-slider
-		default: 4
-		min: 1
-		max: 8
-		step: 1
+    -
+        id: highlight-mode
+        title: Colour scheme mode
+        type: class-select
+        allowEmpty: false
+        default: 'color-scheme-complementary'
+        options:
+        -
+            label: None
+            value: 'color-scheme-none'
+        -
+            label: Monochromatic
+            value: 'color-scheme-monochrome'
+        -
+            label: Complementary
+            value: 'color-scheme-complementary'
+        -
+            label: Even triad
+            value: 'color-scheme-even-triad'
+        -
+            label: Complementary triad
+            value: 'color-scheme-comp-triad'
+        -
+            label: Analogous
+            value: 'color-scheme-analogous'
+        -
+            label: Tetradic (experimental)
+            value: 'color-scheme-tetradic'
+    -
+        id: title-effects
+        title: Effects
+        type: heading
+        level: 1
+    -
+        id: blur-enabled
+        title: Blur
+        type: class-toggle
+        default: false
+    -
+        id: blur-size
+        title: Blur size
+        type: variable-number-slider
+        default: 4
+        min: 1
+        max: 8
+        step: 1
 */
 /*====-------- SETTINGS*/
 .blur-enabled {

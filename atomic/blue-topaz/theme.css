@@ -9432,7 +9432,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -11702,27 +11702,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -26414,19 +26414,19 @@ settings:
     description: Fonts except from the code texts
     description.zh: 除代码框外字体
     type: variable-text
-    default: "Bookerly,"Inter", "Segoe UI","霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji",var(--font-interface)"
+    default: "Bookerly, Inter, 'Segoe UI', '霞鹜文楷 GB', 'LXGW WenKai', 'Segoe UI Emoji', var(--font-interface)"
   -
     id: font-family-folder-file-title
     title: Folder & file title
     title.zh: 文件栏字体
     type: variable-text
-    default: "Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif"
+    default: "Arlrdbd, 'Source Han Sans', 'Noto Sans CJK', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif"
   -
     id: font-monospace-theme
     title: Codebox
     title.zh: 代码框字体
     type: variable-text
-    default: ""JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace"
+    default: "'JetBrains Mono', Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono', 'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei', 'Source Code Pro', monospace"
   -
     id: font-family-inline-code
     title: Inline code
@@ -26438,13 +26438,13 @@ settings:
     title: Tag
     title.zh: 标签字体
     type: variable-text
-    default: "Bookerly, "Microsoft YaHei", STzhongsong, STSong, "Segoe UI Emoji", Serif"
+    default: "Bookerly, 'Microsoft YaHei', STzhongsong, STSong, 'Segoe UI Emoji', Serif"
   -
     id: font-family-strong
     title: Bold text
     title.zh: 加粗文字字体
     type: variable-text
-    default: "Bookerly,"Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R", "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface)"
+    default: "Bookerly, Inter, 'Segoe UI', 'LXGW WenKai Screen', 'LXGW WenKai Screen R', '霞鹜文楷 GB', 'LXGW WenKai', 'Segoe UI Emoji', var(--font-interface)"
   -
     id: font-weight-strong
     title: Bold text font weight
@@ -26470,7 +26470,7 @@ settings:
     title: Vault name
     title.zh: 库名字体
     type: variable-text
-    default: ""Lucida Handwriting", "Segoe UI Emoji""
+    default: "'Lucida Handwriting', 'Segoe UI Emoji'"
   -
     id: font-size-settings
     title: 2.2.2 Font size
@@ -29328,18 +29328,18 @@ settings:
     type: heading
     level: 3
     collapsed: true
-	-
-		id: tab-stacked-pane-width
-		title: Tag stacked pane with
-		type: variable-number
-		default: 700
-		format: px
-	-
-		id: tab-stacked-header-width
-		title: Spine width
-		type: variable-number
-		default: 40
-		format: px
+    -
+        id: tab-stacked-pane-width
+        title: Tag stacked pane with
+        type: variable-number
+        default: 700
+        format: px
+    -
+        id: tab-stacked-header-width
+        title: Spine width
+        type: variable-number
+        default: 40
+        format: px
   -
     id: highlight-bg-color-folder
     title: 2.3.25 Highlights (==xx==)
@@ -34874,7 +34874,7 @@ body:not(
 
 /*
 ---------------------------
-	Title Bar
+    Title Bar
 ---------------------------
 */
 @media screen and (max-width: 960px) {
@@ -35095,7 +35095,7 @@ body.color-scheme-options-simplicity-topaz .workspace {
 
 /*
 ---------------------------
-	Note Title
+    Note Title
 ---------------------------
 */
 body.color-scheme-options-simplicity-topaz
@@ -35358,7 +35358,7 @@ body.color-scheme-options-simplicity-topaz
 
 /*
 ---------------------------
-	Main Pane Border Styling
+    Main Pane Border Styling
 ---------------------------
 */
 body.color-scheme-options-simplicity-topaz
@@ -43375,7 +43375,7 @@ body.table-style-three .markdown-source-view table tbody > tr {
   width: 100%;
 }
 
-/*	Editing View -- set all divs back to normal width (ensuring specificity rule over some theme), then	expand to full-width for each selected css class */
+/*    Editing View -- set all divs back to normal width (ensuring specificity rule over some theme), then    expand to full-width for each selected css class */
 :is(
     body.full-width-table,
     body.full-width-dvtable,
@@ -43463,8 +43463,8 @@ body.full-width-dvtable
   max-width: var(--file-line-width);
 }
 
-/*	Reading View -- similar to Editing View, set all divs to normal-width and then selected divs to full-width,
-		however, for Reading View, wide-dataview and wide-table will require Contextual Typography plugin */
+/*    Reading View -- similar to Editing View, set all divs to normal-width and then selected divs to full-width,
+        however, for Reading View, wide-dataview and wide-table will require Contextual Typography plugin */
 :is(
     body.full-width-table,
     body.full-width-dvtable,
@@ -43529,7 +43529,7 @@ body.full-width-backlinks
 
 /*Full-width table dvtable callout backlinks layout*/
 /*modified from https://github.com/efemkay */
-/*	Editing View -- set Readable Line Length (RLL) to wide (100%) for any css class with "wide" word in it. / "width:100%" added for Blue Topaz / div.cm-content added to override Mado 11 */
+/*    Editing View -- set Readable Line Length (RLL) to wide (100%) for any css class with "wide" word in it. / "width:100%" added for Blue Topaz / div.cm-content added to override Mado 11 */
 div[class*="wide-"].markdown-source-view.mod-cm6.is-readable-line-width .cm-contentContainer {
   max-width: 100%;
 }
@@ -43551,7 +43551,7 @@ div[class*="wide-"].markdown-source-view.mod-cm6.is-readable-line-width
   max-width: 100%;
 }
 
-/*	Reading View -- similar to Editing View, set the RLL to 100% for any css class with "wide" word in it. "width:100%" added for Blue Topaz */
+/*    Reading View -- similar to Editing View, set the RLL to 100% for any css class with "wide" word in it. "width:100%" added for Blue Topaz */
 div[class*="wide-"].markdown-preview-view .markdown-preview-sizer.markdown-preview-sizer {
   margin-inline: auto;
   max-width: 100%;
@@ -43565,7 +43565,7 @@ div[class*="wide-"].markdown-preview-view .markdown-preview-sizer.markdown-previ
 }
 
 /* === Wide Dataview, Table & Backlink === */
-/*	Editing View -- set all divs back to normal width (ensuring specificity rule over some theme), then expand to full-width for each selected css class (i.e. wide-dataview, wide-table and wide-backlinks) */
+/*    Editing View -- set all divs back to normal width (ensuring specificity rule over some theme), then expand to full-width for each selected css class (i.e. wide-dataview, wide-table and wide-backlinks) */
 div.markdown-source-view.mod-cm6.is-readable-line-width:is(
     .wide-dataview,
     .wide-table,
@@ -43628,7 +43628,7 @@ div[class*="-dataview"].markdown-source-view.mod-cm6.is-readable-line-width
   max-width: var(--file-line-width);
 }
 
-/*	Reading View -- similar to Editing View, set all divs to normal-width and then selected divs to full-width, however, for Reading View, wide-dataview and wide-table will require Contextual Typography plugin */
+/*    Reading View -- similar to Editing View, set all divs to normal-width and then selected divs to full-width, however, for Reading View, wide-dataview and wide-table will require Contextual Typography plugin */
 div.markdown-preview-view:is(.wide-dataview, .wide-table, .wide-backlinks, .wide-callout)
   .markdown-preview-sizer.markdown-preview-sizer
   > div {

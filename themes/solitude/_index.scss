@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
@@ -53,9 +54,61 @@
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 15%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
+  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(3% + var(--color-base-l)));
+  --color-base-100: hsl(var(--color-base-h), var(--color-base-s), calc(74% + var(--color-base-l)));
+  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(4% + var(--color-base-l)));
+  --color-base-25: hsl(var(--color-base-h), var(--color-base-s), calc(7% + var(--color-base-l)));
+  --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
+  --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
+  --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
+  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
+  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
+  --color-base-h: 196;
+  --color-base-l: 6%;
+  --color-base-s: 11%;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    2px 2px 1px 0 rgba(0, 0, 0, 0.6);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -401,10 +454,59 @@ html {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 15%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
+  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(3% + var(--color-base-l)));
+  --color-base-100: hsl(var(--color-base-h), var(--color-base-s), calc(74% + var(--color-base-l)));
+  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(4% + var(--color-base-l)));
+  --color-base-25: hsl(var(--color-base-h), var(--color-base-s), calc(7% + var(--color-base-l)));
+  --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
+  --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
+  --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
+  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
+  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
+  --color-base-h: 196;
+  --color-base-l: 6%;
+  --color-base-s: 11%;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    2px 2px 1px 0 rgba(0, 0, 0, 0.6);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

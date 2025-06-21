@@ -1,0 +1,13 @@
+body:is(:not(.css-settings-manager), .toggle-explorer-indent) .nav-folder > .nav-folder-children {
+  border-inline-start: none;
+  padding-left: 33px;
+  margin-left: 0;
+}
+
+body.css-settings-manager:not(.toggle-explorer-indent)
+  .workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  ul {
+  border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+}

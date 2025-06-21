@@ -25,37 +25,15 @@ body {
 }
 
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
 
-  //%%DARK%%
+//%%DARK%%
 
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-}
 /* END DARK */
 
 /* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
 
-  //%%LIGHT%%
+//%%LIGHT%%
 
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-}
 /* END LIGHT */
 
 /* CALLOUTS */

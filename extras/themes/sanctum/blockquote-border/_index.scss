@@ -1,0 +1,13 @@
+.blockquote-border .markdown-rendered blockquote {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-bottom: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: none;
+}
+
+.blockquote-border .markdown-rendered blockquote::before {
+  content: none;
+  width: 0;
+  background: none;
+}

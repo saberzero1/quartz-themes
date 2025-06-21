@@ -1,0 +1,15 @@
+.CG-bulletcallout .callout-content li:not(.is-collapsed) .list-bullet:after,
+.CG-bulletcallout .callout-content .cm-formatting-list .list-bullet:after,
+.CG-bulletcallout .callout-content.markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.CG-bulletcallout .callout-content .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  color: transparent;
+  text-shadow: none;
+}
+
+.CG-bulletcallout li.is-collapsed .list-bullet:after,
+.CG-bulletcallout .is-collapsed ~ .cm-formatting-list .list-bullet:after,
+.CG-bulletcallout .markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.CG-bulletcallout .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  color: transparent;
+  text-shadow: none;
+}

@@ -1,0 +1,7 @@
+body:not(.is-mobile):not(:not(.hide-view-header)) .view-header:not(:hover) {
+  opacity: 0;
+}
+
+body:not(.is-mobile):not(:not(.hide-view-header)):not(.opacity-hide) .view-header:not(:hover) {
+  height: 1em;
+}

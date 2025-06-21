@@ -8092,7 +8092,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10367,27 +10367,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23979,109 +23979,109 @@ SOFTWARE.
 name: Zen
 id: zen
 settings:
-	-
-		id: alt-heading-off
-		title: Hide the Heading prompt in the editor.
-		title.zh: 隐藏编辑器中标题提示
-		description: Hide the h1...h2... and other small title prompts in front of headings at all levels.
-		description.zh: 隐藏各级标题前面的 h1...h2...等小标题提示
-		type: class-toggle
-	-
-		id: heading-bottom-line-off
-		title: Hide the Heading bottom line in the editor.
-		title.zh: 隐藏编辑器中各级标题下的虚线
-		description: Hide the h1...h2... and other small title bottom line in headings at all levels.
-		description.zh: 隐藏各级标题前面的 h1...h2...等小标题下的线虚
-		type: class-toggle
-	-
-		id: window-font-size
-		title: Adjust the font of the Window.
-		title.zh: 调整窗体的字体
-		description: Adjust the font size of some parts, including the document directory on the left, the document title on the top, the outline directory on the right, the tag list, and so on.
-		description.zh: 调节部分字体大小，包含左侧文档目录、顶部文档标题、右侧大纲目录、标签列表等等。
-		type: variable-number-slider
-		default: 15
-		min: 8
-		max: 30
-		step: 1
-	-
-		id: text-justify
-		title: Close text justification.
-		title.zh: 关闭文本两端对齐
-		description: Default text is justified on both sides. If it is turned off, it is left-aligned.
-		description.zh: 默认文本两端对齐，关闭则左对齐。
-		type: class-toggle
-	-
-		id: editor-width
-		title: Adjust the width of the editor.
-		title.zh: 调整编辑器宽度
-		description: Adjust the editor width. The default is 800. The minimum is 500 and the maximum is 2000.
-		description.zh: 调整编辑器宽度，默认为 800，最小 500，最大 2000。
-		type: variable-number-slider
-		default: 800
-		min: 500
-		max: 2000
-		step: 10
-	-
-		id: windows-header
-		title: Windows/Linux
-		type: heading
-		level: 1
-		collapsed: true
-	-
-		id: win-translucent-off
-		title: Close the translucent window.
-		title.zh: 关闭窗体半透明
-		description: Turn off the window translucency of Windows/Linux. It is only effective for Windows/Linux.
-		description.zh: 关闭Windows/Linux的窗口半透明，仅对Windows/Linux有效
-		type: class-toggle
-	-
-		id: win-window-opacity
-		title: Transparency of window background
-		title.zh: 窗体背景的透明度
-		description: Adjust the transparency of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：For dark colors：0.4. For light colors：0.2.
-		description.zh: 调整 Windows/Linux 平台的窗体背景的透明度。仅对 Windows/Linux 有效。推荐值：暗色：0.4 亮色：0.2
-		type: variable-number-slider
-		default: 0.2
-		min: 0
-		max: 1
-		step: 0.01
-	-
-		id: win-window-brightness
-		title: Brightness of form background.
-		title.zh: 窗体背景的亮度
-		description: Adjust the brightness of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：dark：0.3, light：0.6.
-		description.zh: 调整 Windows/Linux 平台的窗体背景的亮度。仅对 Windows/Linux 有效。推荐值：暗色：0.3 亮色：0.6
-		type: variable-number-slider
-		default: 0.4
-		min: 0
-		max: 1
-		step: 0.01
-	-
-		id: win-bg-image-url
-		title: the background picture of the window
-		title.zh: 窗体背景图片
-		description: Set the background picture of the window.
-		description.zh: 设置窗体背景图片；
-		type: variable-text
-		default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
-	-
-		id: macos-header
-		title: MacOS
-		type: heading
-		level: 1
-		collapsed: true
-	-
-		id: mac-window-opacity
-		title: MacOS：The transparency of the window background.
-		title.zh: MacOS：窗体背景的透明度
-		description: Adjust the transparency of the window background on the Mac platform. Only effective for macOS, and the translucent effect switch is turned on in Settings -> Appearance.
-		description.zh: 调整 mac 平台的窗体背景的透明度。仅对 macOS 有效，且在设置 -> 外观中打开了半透明效果开关
-		type: variable-number-slider
-		default: 0.15
-		min: 0
-		max: 1
-		step: 0.01
+    -
+        id: alt-heading-off
+        title: Hide the Heading prompt in the editor.
+        title.zh: 隐藏编辑器中标题提示
+        description: Hide the h1...h2... and other small title prompts in front of headings at all levels.
+        description.zh: 隐藏各级标题前面的 h1...h2...等小标题提示
+        type: class-toggle
+    -
+        id: heading-bottom-line-off
+        title: Hide the Heading bottom line in the editor.
+        title.zh: 隐藏编辑器中各级标题下的虚线
+        description: Hide the h1...h2... and other small title bottom line in headings at all levels.
+        description.zh: 隐藏各级标题前面的 h1...h2...等小标题下的线虚
+        type: class-toggle
+    -
+        id: window-font-size
+        title: Adjust the font of the Window.
+        title.zh: 调整窗体的字体
+        description: Adjust the font size of some parts, including the document directory on the left, the document title on the top, the outline directory on the right, the tag list, and so on.
+        description.zh: 调节部分字体大小，包含左侧文档目录、顶部文档标题、右侧大纲目录、标签列表等等。
+        type: variable-number-slider
+        default: 15
+        min: 8
+        max: 30
+        step: 1
+    -
+        id: text-justify
+        title: Close text justification.
+        title.zh: 关闭文本两端对齐
+        description: Default text is justified on both sides. If it is turned off, it is left-aligned.
+        description.zh: 默认文本两端对齐，关闭则左对齐。
+        type: class-toggle
+    -
+        id: editor-width
+        title: Adjust the width of the editor.
+        title.zh: 调整编辑器宽度
+        description: Adjust the editor width. The default is 800. The minimum is 500 and the maximum is 2000.
+        description.zh: 调整编辑器宽度，默认为 800，最小 500，最大 2000。
+        type: variable-number-slider
+        default: 800
+        min: 500
+        max: 2000
+        step: 10
+    -
+        id: windows-header
+        title: Windows/Linux
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: win-translucent-off
+        title: Close the translucent window.
+        title.zh: 关闭窗体半透明
+        description: Turn off the window translucency of Windows/Linux. It is only effective for Windows/Linux.
+        description.zh: 关闭Windows/Linux的窗口半透明，仅对Windows/Linux有效
+        type: class-toggle
+    -
+        id: win-window-opacity
+        title: Transparency of window background
+        title.zh: 窗体背景的透明度
+        description: Adjust the transparency of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：For dark colors：0.4. For light colors：0.2.
+        description.zh: 调整 Windows/Linux 平台的窗体背景的透明度。仅对 Windows/Linux 有效。推荐值：暗色：0.4 亮色：0.2
+        type: variable-number-slider
+        default: 0.2
+        min: 0
+        max: 1
+        step: 0.01
+    -
+        id: win-window-brightness
+        title: Brightness of form background.
+        title.zh: 窗体背景的亮度
+        description: Adjust the brightness of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：dark：0.3, light：0.6.
+        description.zh: 调整 Windows/Linux 平台的窗体背景的亮度。仅对 Windows/Linux 有效。推荐值：暗色：0.3 亮色：0.6
+        type: variable-number-slider
+        default: 0.4
+        min: 0
+        max: 1
+        step: 0.01
+    -
+        id: win-bg-image-url
+        title: the background picture of the window
+        title.zh: 窗体背景图片
+        description: Set the background picture of the window.
+        description.zh: 设置窗体背景图片；
+        type: variable-text
+        default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+    -
+        id: macos-header
+        title: MacOS
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mac-window-opacity
+        title: MacOS：The transparency of the window background.
+        title.zh: MacOS：窗体背景的透明度
+        description: Adjust the transparency of the window background on the Mac platform. Only effective for macOS, and the translucent effect switch is turned on in Settings -> Appearance.
+        description.zh: 调整 mac 平台的窗体背景的透明度。仅对 macOS 有效，且在设置 -> 外观中打开了半透明效果开关
+        type: variable-number-slider
+        default: 0.15
+        min: 0
+        max: 1
+        step: 0.01
 */
 @font-face {
   font-family: "number-font";
@@ -24105,11 +24105,11 @@ settings:
 
 /* .mod-stacked .workspace-tab-container .workspace-leaf.mod-active,
 .mod-stacked .workspace-tab-container .workspace-tab-header.mod-active {
-	filter: blur(0px);
+    filter: blur(0px);
 }
 
 .mod-stacked .workspace-tab-container .workspace-leaf {
-	filter: blur(5px);
+    filter: blur(5px);
 } */
 .mod-root .mod-top .workspace-tab-header-container {
   background-color: var(--background-primary);
@@ -24691,11 +24691,11 @@ body.is-mobile .tree-item-self {
 /* 调整阅读模式下，缩进对齐线的对齐 */
 /* 
 .markdown-rendered.show-indentation-guide ul.has-list-bullet::before {
-	margin-left: -3px;
+    margin-left: -3px;
 }
 
 .markdown-rendered ul.has-list-bullet {
-	margin-left: -4px;
+    margin-left: -4px;
 } */
 .markdown-rendered ul.contains-task-list {
   padding-left: 5px;

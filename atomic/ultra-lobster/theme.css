@@ -8131,7 +8131,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10442,27 +10442,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -26856,9 +26856,9 @@ settings:
 }
 
 /* Usually, I delete the following and then write my own CSS here.
-	However, if this is helpful, feel free to leave it and edit it!
-	Otherwise, proceed/delete to the next code block for custom CSS below
-	*/
+    However, if this is helpful, feel free to leave it and edit it!
+    Otherwise, proceed/delete to the next code block for custom CSS below
+    */
 /* CUSTOM CSS
 */
 /* BASE
@@ -26973,13 +26973,13 @@ body:not(.is-mobile) .modal-bg {
 
 /* .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-	border-right: var(--o-border);
-	border-right-width: var(--divider-width);
+    border-right: var(--o-border);
+    border-right-width: var(--divider-width);
 }
 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-	border-left: var(--o-border);
-	border-left-width: var(--divider-width);
+    border-left: var(--o-border);
+    border-left-width: var(--divider-width);
 } */
 /* ???
 */
@@ -27711,8 +27711,8 @@ p {
 /* Disable external link icon
 */
 /* .external-link {
-	background-image: none;
-	padding-right: 0;
+    background-image: none;
+    padding-right: 0;
 } */
 .external-link::after {
   background: var(--color-accent);
@@ -29087,7 +29087,7 @@ th.svelte-pcimu8 {
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 .ulu-gummy-canvas1.theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p {
   color: white;
@@ -29633,11 +29633,11 @@ th.svelte-pcimu8 {
 }
 
 /* .theme-dark .empty-state-container::before {
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
 .theme-light .empty-state-container::before {
-	opacity: 0.5;
+    opacity: 0.5;
 } */
 .we1 .empty-state-action-list {
   margin-top: 80px;
@@ -30435,7 +30435,7 @@ th.svelte-pcimu8 {
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 .ulu-gradient-canvas1 .theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p {
   color: var(--text-on-accent);

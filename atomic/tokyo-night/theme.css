@@ -8313,7 +8313,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10577,27 +10577,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -25462,7 +25462,6 @@ settings:
     opacity: false 
     default-light: '#'
     default-dark: '#'
-  -
 */
 /* @settings
 name: Editor
@@ -25503,10 +25502,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h1-divider-on
-		title: disable H1 divider
-		type: class-toggle
-		default: false
+    id: h1-divider-on
+    title: disable H1 divider
+    type: class-toggle
+    default: false
   - 
     id: h1-font
     title: H1 Font 
@@ -25524,7 +25523,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 700
-	-  
+  - 
     id: h1-color 
     title: H1 Color 
     type: variable-themed-color 
@@ -25539,10 +25538,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h2-divider-on
-		title: disable H2 divider
-		type: class-toggle
-		default: false
+    id: h2-divider-on
+    title: disable H2 divider
+    type: class-toggle
+    default: false
   - 
     id: h2-font
     title: H2 Font 
@@ -25560,7 +25559,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 600
-	-  
+  - 
     id: h2-color 
     title: H2 Color 
     type: variable-themed-color 
@@ -25575,10 +25574,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h3-divider-on
-		title: disable H3 divider
-		type: class-toggle
-		default: false
+    id: h3-divider-on
+    title: disable H3 divider
+    type: class-toggle
+    default: false
   - 
     id: h3-font
     title: H3 Font 
@@ -25596,7 +25595,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 600
-	-  
+  - 
     id: h3-color 
     title: H3 Color 
     type: variable-themed-color 
@@ -25611,10 +25610,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h4-divider-on
-		title: disable H4 divider
-		type: class-toggle
-		default: false
+    id: h4-divider-on
+    title: disable H4 divider
+    type: class-toggle
+    default: false
   - 
     id: h4-font
     title: H4 Font 
@@ -25632,7 +25631,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 600
-	-  
+  - 
     id: h4-color 
     title: H4 Color 
     type: variable-themed-color 
@@ -25647,10 +25646,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h5-divider-on
-		title: disable H5 divider
-		type: class-toggle
-		default: false
+    id: h5-divider-on
+    title: disable H5 divider
+    type: class-toggle
+    default: false
   - 
     id: h5-font
     title: H5 Font 
@@ -25668,7 +25667,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 600
-	-  
+  - 
     id: h5-color 
     title: H5 Color 
     type: variable-themed-color 
@@ -25683,10 +25682,10 @@ settings:
     level: 2 
     collapsed: true 
   - 
-		id: h6-divider-on
-		title: disable H6 divider
-		type: class-toggle
-		default: false
+    id: h6-divider-on
+    title: disable H6 divider
+    type: class-toggle
+    default: false
   - 
     id: h6-font
     title: H6 Font 
@@ -25704,7 +25703,7 @@ settings:
     description: Value from 100 - 900
     type: variable-text 
     default: 600
-	-  
+  - 
     id: h6-color 
     title: H6 Color 
     type: variable-themed-color 
@@ -25758,10 +25757,10 @@ settings:
     default-dark: '#'
   - 
     id: link-decoration
-		title: Link decoration
+    title: Link decoration
     description: Any CSS text-decoration-line value
-		type: variable-text
-		default: underline
+    type: variable-text
+    default: underline
   - 
     id: link-decoration-hover 
     title: Link Hover decoration
@@ -25829,13 +25828,13 @@ settings:
     default-light: '#'
     default-dark: '#'
   - 
-		id: link-unresolved-opacity
-		title: Unresolved link opacity
-		type: variable-number-slider
-		default: 0.7
-		min: 0.25
-		max: 1
-		step: 0.05
+    id: link-unresolved-opacity
+    title: Unresolved link opacity
+    type: variable-number-slider
+    default: 0.7
+    min: 0.25
+    max: 1
+    step: 0.05
   - 
     id: link-unresolved-filter 
     title: Unresolved Link Filter 
@@ -25868,36 +25867,36 @@ settings:
     type: variable-text
     default: 2.25em
   - 
-		id: list-spacing
-		title: list spacing
-		type: variable-text
-		default: 0.075em
+    id: list-spacing
+    title: list spacing
+    type: variable-text
+    default: 0.075em
   - 
-		id: list-bullet-size
-		title: list marker size
-		type: variable-text
-		default: 0.3em
-	- 
-		id: list-marker-color
-		title: list marker color
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: list-bullet-size
+    title: list marker size
+    type: variable-text
+    default: 0.3em
   - 
-		id: list-marker-color-hover
-		title: list marker color (hover)
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: list-marker-color
+    title: list marker color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
-		id: list-marker-color-collapsed
-		title: list marker color (collapsed)
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: list-marker-color-hover
+    title: list marker color (hover)
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: list-marker-color-collapsed
+    title: list marker color (collapsed)
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: Tags
     title: Tags
@@ -25905,29 +25904,29 @@ settings:
     collapsed: true
     level: 2
   - 
-		id: tag-color
-		title: Tag text color
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: tag-background
-		title: Tag background color
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: tag-background-hover
-		title: Tag background color (hover)
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: tag-color
+    title: Tag text color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: tag-background
+    title: Tag background color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: tag-background-hover
+    title: Tag background color (hover)
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: Dates 
     title: Dates 
@@ -25936,18 +25935,18 @@ settings:
     level: 2
   - 
     id: date-color 
-		title: Tag text color
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Tag text color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
-		id: date-background-color
-		title: Date background color
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: date-background-color
+    title: Date background color
+    type: variable-themed-color
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: table-heading 
     title: Tables 
@@ -25986,93 +25985,93 @@ settings:
     default-light: '#'
     default-dark: '#'
   - 
-		id: code-normal
-		title: Code Normal
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: code-normal
+    title: Code Normal
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
-		id: code-comment
-		title: Code Comment
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: code-comment
+    title: Code Comment
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-function
-		title: Code Function
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Function
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-important
-		title: Code Important
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Important
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-keyword
-		title: Code Keyword
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Keyword
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-operator
-		title: Code Operator
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Operator
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-property
-		title: Code Property
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Property
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-punctuation
-		title: Code Punctuation
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Punctuation
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-string
-		title: Code String
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code String
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-tag
-		title: Code Tag
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Tag
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: code-value
-		title: Code Value
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    title: Code Value
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: blockquote-heading 
     title: Blockquote 
@@ -26192,8 +26191,8 @@ settings:
         -   label: style 4
             value: callout-style-4
   - 
-		id: callout-border-width
-		title: Callout Border Width
+    id: callout-border-width
+    title: Callout Border Width
     type: variable-text
     description: Any CSS border-width value
     default: 0px
@@ -26206,51 +26205,51 @@ settings:
     max: 1
     step: 0.05
   - 
-		id: callout-padding
-		title: Callout Padding
+    id: callout-padding
+    title: Callout Padding
     description: Accepts any CSS padding value
-		type: variable-text
-		default: ''
+    type: variable-text
+    default: ''
   - 
     id: callout-radius
     title: Callout Radius
     description: Input your border-radius value here
     type: variable-text
     default: ''
-	- 
-		id: callout-title-color
-		title: Callout Title Color
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
   - 
-		id: callout-title-padding
-		title: Callout Title Padding
+    id: callout-title-color
+    title: Callout Title Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: callout-title-padding
+    title: Callout Title Padding
     description: Any CSS font-size value
-		type: variable-text
-		default: ''
+    type: variable-text
+    default: ''
   - 
-		id: callout-title-size
-		title: Callout Title Size
+    id: callout-title-size
+    title: Callout Title Size
     description: Any CSS font-size value
-		type: variable-text
-		default: ''
+    type: variable-text
+    default: ''
   - 
-		id: callout-content-padding
-		title: Callout Content Padding
+    id: callout-content-padding
+    title: Callout Content Padding
     description: Any CSS font-size value
-		type: variable-text
-		default: ''
+    type: variable-text
+    default: ''
   - 
-		id: callout-content-background
-		title: Callout Content Background
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+    id: callout-content-background
+    title: Callout Content Background
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: '#'
+    default-dark: '#'
   - 
     id: callout-content-radius
     title: Callout Content Radius
@@ -26419,5 +26418,4 @@ settings:
     description: Any CSS border-radius value 
     type: variable-text 
     default: ''
-  -
 */

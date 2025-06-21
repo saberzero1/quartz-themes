@@ -1,0 +1,10 @@
+.background-image .workspace-ribbon.mod-left:before,
+.background-image .side-dock-actions,
+.background-image .side-dock-settings {
+  backdrop-filter: brightness(107%) blur(var(--bg-blur));
+}
+
+.background-image .workspace-split {
+  background: transparent !important;
+  backdrop-filter: brightness(107%) blur(var(--bg-blur));
+}

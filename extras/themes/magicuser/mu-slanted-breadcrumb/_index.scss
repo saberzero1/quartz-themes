@@ -1,0 +1,12 @@
+.mu-slanted-breadcrumb:has(.view-header-breadcrumb) .view-header-title-parent {
+  padding-left: 4px;
+}
+
+.mu-slanted-breadcrumb .view-header-breadcrumb {
+  transform: skew(-12deg);
+}
+
+.mu-slanted-breadcrumb .view-header-breadcrumb-separator {
+  margin: 0;
+  visibility: hidden;
+}

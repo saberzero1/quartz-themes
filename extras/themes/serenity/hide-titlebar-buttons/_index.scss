@@ -1,0 +1,4 @@
+body:not(:not(.hide-titlebar-buttons)) .titlebar-button-container:not(:hover) {
+  transition-delay: all 1s !important;
+  opacity: 0;
+}

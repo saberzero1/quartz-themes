@@ -1,0 +1,9 @@
+body.flexcyon-settings-scrollbar-removed {
+  --scrollbar-bg: transparent;
+}
+
+body.flexcyon-settings-scrollbar-removed
+  div.modal-content.vertical-tabs-container
+  ::-webkit-scrollbar-thumb {
+  display: none;
+}

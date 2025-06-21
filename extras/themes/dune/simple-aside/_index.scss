@@ -1,0 +1,10 @@
+.simple-aside .callout:is([data-callout="aside"], [data-callout="seite"]) {
+  box-shadow: none;
+  background: transparent;
+  display: flex;
+}
+
+.print
+  :is(.simple-aside .callout[data-callout="aside"], .simple-aside .callout[data-callout="seite"]) {
+  background: var(--light-tone) !important;
+}

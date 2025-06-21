@@ -1,0 +1,6 @@
+.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  display: none;
+}

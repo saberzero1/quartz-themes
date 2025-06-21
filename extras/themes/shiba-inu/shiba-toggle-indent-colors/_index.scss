@@ -1,0 +1,9 @@
+.shiba-toggle-indent-colors .nav-folder.mod-root .nav-folder > .nav-folder-children {
+  transition: color 0.4s;
+  border-color: rgba(var(--rainbow-folder-color), 0.5);
+}
+
+.shiba-toggle-indent-colors-accent .nav-folder.mod-root .nav-folder > .nav-folder-children {
+  transition: color 0.4s;
+  border-color: rgba(var(--accent), 0.7);
+}

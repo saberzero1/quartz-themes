@@ -1,0 +1,13 @@
+.ulu-shark-d.theme-dark.ulu-prop-card
+  .markdown-source-view.is-live-preview.show-properties
+  .metadata-container,
+.ulu-shark-l.ulu-prop-card
+  .markdown-source-view.is-live-preview.show-properties
+  .metadata-container {
+  display: var(--metadata-display-editing);
+  border: 1px solid var(--background-modifier-border-alt);
+  background: var(--gradient-bg-tertiary);
+  margin-bottom: 3em;
+  border-radius: 8px;
+  padding: 8px;
+}

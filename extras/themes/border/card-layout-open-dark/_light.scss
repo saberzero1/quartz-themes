@@ -1,0 +1,10 @@
+:is(
+    .theme-dark.mod-root-split-background-transparent-dark,
+    .card-layout-open-light.mod-root-split-background-transparent-light
+  )
+  .is-sidedock-collapsed,
+:is(.theme-dark.card-layout-open-dark, .card-layout-open-light)
+  .is-sidedock-collapsed
+  :is(.mod-top-left-space .workspace-tab-header-container, .workspace-sidedock-vault-profile) {
+  visibility: hidden;
+}

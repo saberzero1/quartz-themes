@@ -1,0 +1,7 @@
+.theme-dark
+  body.enable-alternative-checkboxes
+  li[data-task="<"]
+  input[type="checkbox"]:checked::after,
+.theme-dark body.enable-alternative-checkboxes input[type="checkbox"][data-task="<"]::after {
+  background-color: var(--lavender);
+}

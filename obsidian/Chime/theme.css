@@ -3389,7 +3389,7 @@ settings:
     -
         id: border-radius-average
         title: Border Radius (Roundness)
-	    description: Adjust the roundness of the panes and other small elements (overriden with classic mode turned on)
+        description: Adjust the roundness of the panes and other small elements (overriden with classic mode turned on)
         type: variable-number-slider
         default: 11
         min: 0

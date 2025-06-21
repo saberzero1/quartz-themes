@@ -1,0 +1,3 @@
+body:not(.normal-out-back-links) :is(.backlink-pane, .outgoing-link-pane) > .tree-item-self {
+  display: none;
+}

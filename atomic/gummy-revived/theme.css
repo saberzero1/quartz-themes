@@ -8079,7 +8079,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10367,27 +10367,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24151,9 +24151,9 @@ settings:
 }
 
 /* Usually, I delete the following and then write my own CSS here.
-	However, if this is helpful, feel free to leave it and edit it!
-	Otherwise, proceed/delete to the next code block for custom CSS below
-	*/
+    However, if this is helpful, feel free to leave it and edit it!
+    Otherwise, proceed/delete to the next code block for custom CSS below
+    */
 /** Gradient Headers **/
 /* Fix formatting symbol colors */
 /* Add text-clipped background gradients */
@@ -24239,17 +24239,17 @@ settings:
 }
 
 /* .workspace {
-	background: transparent;
+    background: transparent;
 } */
 /* .workspace::before {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	content: "";
-	background: url("https://media0.giphy.com/media/5vidmSHUsyoybSYNN0/giphy.gif?cid=ecf05e47x9zpzexjmpwcmczcrejccexj37mmfan5zwptjn3r&ep=v1_gifs_related&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-color: var(--color-accent);
-	opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background: url("https://media0.giphy.com/media/5vidmSHUsyoybSYNN0/giphy.gif?cid=ecf05e47x9zpzexjmpwcmczcrejccexj37mmfan5zwptjn3r&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-color: var(--color-accent);
+    opacity: 0.3;
 } */
 .workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
   background: var(--background-primary);
@@ -24281,7 +24281,7 @@ settings:
 }
 
 /* .frontmatter-container:hover .frontmatter-container-header {
-	border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
 } */
 .frontmatter-container:hover {
   background: var(--background-primary-alt);
@@ -24451,9 +24451,9 @@ div[aria-label="Help"]:hover {
 }
 
 /* .nav-folder.mod-root .nav-folder > .nav-folder-children {
-	background: var(--background-primary);
-	margin: 0;
-	border-radius: var(--radius-m);
+    background: var(--background-primary);
+    margin: 0;
+    border-radius: var(--radius-m);
 } */
 .nav-file-title:hover {
   background: transparent;
@@ -24485,7 +24485,7 @@ div[aria-label="Help"]:hover {
 }
 
 /* .nav-file-title-content {
-	padding-bottom: 4px;
+    padding-bottom: 4px;
 } */
 .nav-file::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-file-text' width='20' height='20' viewBox='0 0 24 24' stroke-width='1.5' stroke='%232c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M14 3v4a1 1 0 0 0 1 1h4' /%3E%3Cpath d='M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z' /%3E%3Cline x1='9' y1='9' x2='10' y2='9' /%3E%3Cline x1='9' y1='13' x2='15' y2='13' /%3E%3Cline x1='9' y1='17' x2='15' y2='17' /%3E%3C/svg%3E");
@@ -24757,7 +24757,7 @@ div[aria-label="Help"]:hover {
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 .theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p {
   color: white;
@@ -25003,7 +25003,7 @@ li.is-checked:where(
 }
 
 /* .markdown-source-view.mod-cm6 input[type="checkbox"][data-task] {
-	top: -3px;
+    top: -3px;
 } */
 li[data-task="!"] input[type="checkbox"]:checked::after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-urgent' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M8 16v-4a4 4 0 0 1 8 0v4'%3E%3C/path%3E%3Cpath d='M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7'%3E%3C/path%3E%3Crect x='6' y='16' width='12' height='4' rx='1'%3E%3C/rect%3E%3C/svg%3E");

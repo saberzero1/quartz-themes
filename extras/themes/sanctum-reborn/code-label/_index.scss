@@ -1,0 +1,24 @@
+.code-label
+  .markdown-rendered
+  pre[class*="language-"]:not(pre.frontmatter)
+  button.copy-code-button {
+  top: 24px;
+}
+
+.code-label .markdown-rendered pre[class*="language-"]:not(pre.frontmatter) {
+  padding-top: 32px;
+}
+
+.code-label .markdown-rendered pre[class*="language-"]:not(pre.frontmatter)::before {
+  content: attr(class);
+  font-size: 0.75em;
+  color: var(--text-muted);
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  clip-path: polygon(9ch 0, 100% 0, 100% 100%, 9ch 100%);
+}
+
+.code-lines.code-label .markdown-rendered :not(pre.frontmatter) code[class*="language-"]::before {
+  clip-path: polygon(0 0, 4ch 0, 4ch calc(100% - 40px), 0 calc(100% - 40px));
+}

@@ -1,0 +1,230 @@
+body:not(.modal-header) .setting-item[data-id="setting-modal-header-title"] {
+  display: none;
+}
+
+body:not(.modal-header)
+  .setting-item[data-id="setting-modal-header-title"]
+  + .style-settings-container {
+  display: none;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile) .modal-container {
+  --modal-header-height: var(--size-4-12);
+  --top-search-right: var(--size-4-12);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile) .modal-container .mod-settings {
+  container-type: inline-size;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings::before {
+  content: var(--setting-header-title, "maple 0.8.30");
+  position: absolute;
+  left: 50%;
+  top: var(--size-4-6);
+  transform: translate(-50%, -50%);
+  font-size: calc(1.4 * var(--size-4-4));
+  font-weight: bold;
+  color: var(--setting-color-logo, var(--text-accent));
+  transition: var(--animation);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings::before {
+  opacity: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content {
+  background-color: var(--frame-background-color);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-header {
+  background-color: hsl(var(--background-secondary-hsl));
+  border-top: 1px solid var(--divider-color);
+  margin-top: var(--modal-header-height);
+  padding-top: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-content-container {
+  padding-top: var(--modal-header-height);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-content-container
+  .vertical-tab-content {
+  background-color: hsl(var(--background-primary-hsl));
+  border-top: 1px solid var(--divider-color);
+  padding-top: var(--size-4-6);
+  padding-right: var(--size-4-8);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-content-container
+  .vertical-tab-content
+  h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .settings-search-container {
+  padding: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .settings-search-container
+  .settings-search-input {
+  position: absolute;
+  top: calc(var(--size-2-1) * -1);
+  left: var(--size-4-2);
+  transform: translateY(
+    calc((var(--modal-header-height) - var(--input-height)) / 2 - var(--size-2-1))
+  );
+  width: calc(clamp(180px, var(--modal-width) / 4, 250px) - var(--size-4-3) * 1);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item-heading {
+  margin-top: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item:has(.search-input-container.mod-hotkey) {
+  padding-bottom: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item:has(.search-input-container.mod-hotkey)
+  .setting-item-info {
+  display: none;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item:has(.search-input-container.mod-hotkey)
+  .setting-item-control {
+  top: calc(var(--size-2-1) * -1);
+  transform: translateY(
+    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+  );
+  right: var(--top-search-right);
+  position: absolute;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item:has(.search-input-container.mod-hotkey)
+  + .setting-filter-container {
+  display: none;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .plugin-list-plugins
+  > .setting-item {
+  padding: 0;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .plugin-list-plugins
+  > .setting-item
+  .setting-item-info {
+  display: none;
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .plugin-list-plugins
+  > .setting-item
+  .setting-item-control {
+  display: block;
+  position: absolute;
+  top: calc(var(--size-2-1) * -1);
+  transform: translateY(
+    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+  );
+  right: var(--top-search-right);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .setting-item-name:has(.search-input-container) {
+  position: absolute;
+  top: calc(var(--size-2-1) * -1);
+  transform: translateY(
+    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+  );
+  right: var(--top-search-right);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-content
+  > :nth-child(5):not(.style-settings-container):has(input[type="search"]) {
+  position: absolute;
+  top: calc(var(--size-2-1) * -1);
+  transform: translateY(
+    calc(var(--modal-header-height) / 2 - var(--input-height) + var(--size-4-1))
+  );
+  right: var(--top-search-right);
+}
+
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-content
+  > :nth-child(5):not(.style-settings-container):has(input[type="search"])
+  .setting-item-info {
+  display: none;
+}

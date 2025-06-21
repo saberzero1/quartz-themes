@@ -1,0 +1,11 @@
+.markdown-rendered:not(.cards):not(.table-disable) table,
+.markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+  width: var(--anp-table-width-pct);
+}
+
+.anp-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table,
+.anp-table-toggle .markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+  width: var(--anp-table-width-pct);
+  margin-left: calc(50% - var(--anp-table-width-pct) / 2);
+  margin-right: calc(50% - var(--anp-table-width-pct) / 2);
+}

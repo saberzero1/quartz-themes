@@ -1,0 +1,38 @@
+body:not(:not(.hide-ribbon)):not(.opacity-hide) .workspace-ribbon:not(:hover) {
+  width: 0.55m;
+  max-width: 0.55em;
+  min-width: 0px;
+  padding: 0.5px;
+  margin-right: 0px;
+}
+
+body:not(:not(.hide-ribbon)) .workspace-ribbon:not(:hover) {
+  opacity: 0;
+}
+
+body:not(.hide-ribbon):not(.hide-tabs) .workspace-ribbon.is-collapsed,
+body:not(.hide-ribbon):not(:not(.flat-mode)) .workspace-ribbon:not(.is-collapsed) {
+  border-right: var(--divider-width) solid var(--divider-color) !important;
+}
+
+body:not(.hide-ribbon):not(:not(.flat-mode)):not(.hide-file-tabs)
+  .workspace-ribbon:not(.is-collapsed):before {
+  border-right: var(--divider-width) solid var(--divider-color);
+}
+
+body:not(.flat-mode):not(.hide-tabs):not(.hide-ribbon) .workspace-ribbon.mod-left:before,
+body:not(.flat-mode):not(.hide-tabs).hide-ribbon .workspace-ribbon.mod-left:hover:before,
+body:not(.flat-mode):not(.hide-file-tabs).hide-ribbon .workspace-ribbon.mod-left:hover:before {
+  opacity: 1;
+  background-color: var(--titlebar-background-focused) !important;
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+
+.hide-ribbon:not(.hide-tabs) .workspace-ribbon.mod-left.is-collapsed:hover:before {
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+
+.hide-ribbon .view-header-nav-buttons {
+  padding-left: 1.5em;
+  margin-left: 1.5em;
+}

@@ -1,0 +1,26 @@
+body:not(.show-tab-name)
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner-icon {
+  opacity: 0.3;
+}
+
+body:not(.show-tab-name)
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner-icon:hover {
+  opacity: 1;
+}
+
+body:not(.show-tab-name)
+  .workspace-tab-header:not(.is-active, :hover)
+  .workspace-tab-header-inner-title:not(.is-active) {
+  opacity: 0.3;
+}
+
+body:not(.show-tab-name)
+  .workspace-tab-header:not(.is-active, :hover)
+  .workspace-tab-header-inner-title:not(.is-active):hover {
+  opacity: 1;
+  font-weight: bold;
+}

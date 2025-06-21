@@ -1,0 +1,4 @@
+body:not(.show-tooltips) .tooltip,
+body:not(.show-tooltips) .follow-link-popover {
+  visibility: hidden;
+}

@@ -1,0 +1,8 @@
+body:not(.composer--HideStripedTableBackground) {
+  .el-table table,
+  .table-wrapper table {
+    background-color: var(--background-primary-alt);
+    --table-row-alt-background: var(--background-primary);
+    --table-row-alt-background-hover: var(--background-primary);
+  }
+}

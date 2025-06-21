@@ -1,0 +1,29 @@
+body:not(.leftAlignedLeftSidebarButtonDisable) .sidebar-toggle-button.mod-left {
+  order: -1;
+}
+
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation
+  .mod-left-split
+  .workspace-tab-header-container-inner {
+  margin-left: 0px;
+}
+
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation .sidebar-toggle-button.mod-left {
+  order: -1;
+  margin-left: 40px;
+}
+
+body:not(.disableBevels):not(.dtm08):not(.factorio):not(.leftAlignedLeftSidebarButtonDisable)
+  .mod-left-split
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  margin-right: 1px;
+}
+
+.dtm08.leftAlignedLeftSidebarButtonDisable .sidebar-toggle-button.mod-left {
+  border-left: 0px;
+}
+
+.dtm08:not(.leftAlignedLeftSidebarButtonDisable) .sidebar-toggle-button.mod-left {
+  border-right: 0px;
+}

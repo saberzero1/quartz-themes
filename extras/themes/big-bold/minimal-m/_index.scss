@@ -1,0 +1,85 @@
+.minimal-m .frontmatter-container {
+  background-color: var(--background-secondary-alt);
+  clear: right !important;
+  float: right !important;
+  margin: 0px 0px 0.5em 0.5em !important;
+}
+
+.minimal-m .frontmatter-container.is-collapsed {
+  max-width: 120px;
+  background-color: transparent;
+}
+
+.minimal-m .frontmatter-container .frontmatter-container-header {
+  border-radius: var(--radius-l);
+  margin: 0px auto;
+  width: fit-content;
+  font-size: var(--font-ui-small);
+}
+
+.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header:hover {
+  color: var(--interactive-accent);
+  background-color: var(--interactive-hover) !important;
+  border-color: var(--background-modifier-border-hover);
+}
+
+.minimal-m .frontmatter-container.is-collapsed .frontmatter-container-header {
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {
+  color: transparent;
+  max-height: 1px;
+  min-height: 1px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header::before {
+  color: var(--text-faint);
+  content: "❌";
+  font-family: "Noto Emoji";
+  font-size: 0.5em;
+  opacity: 0;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) .frontmatter-container-header:hover::before {
+  color: var(--color-red);
+  content: "❌";
+  opacity: 1;
+}
+
+.minimal-m .frontmatter-container:not(.is-collapsed) {
+  max-width: 30%;
+  font-size: var(--font-ui-medium);
+  float: left;
+  margin: 0px 2em 1.5em 0px;
+}
+
+.minimal-m .frontmatter-section-label::after {
+  content: none;
+}
+
+.minimal-m .frontmatter-section-label,
+.minimal-m .frontmatter-section {
+  font-size: var(--font-ui-small);
+  display: block;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.minimal-m .frontmatter-section-label {
+  font-weight: var(--h1-weight);
+  font-family: var(--h1-font);
+  font-size: var(--font-ui-small);
+}
+
+.minimal-m .frontmatter-section {
+  margin: 5px 0px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}

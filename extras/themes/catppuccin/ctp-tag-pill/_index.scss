@@ -1,0 +1,30 @@
+body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end {
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: var(--transition-text-decoration-color);
+}
+
+body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  text-underline-offset: 1px;
+}
+
+body:not(.ctp-tag-pill) .cm-hashtag::selection {
+  text-shadow: 0.4px 0 0 rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+}
+
+.ctp-tag-pill {
+  --tag-size: var(--font-smaller);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-width: 0px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --tag-weight: inherit;
+}

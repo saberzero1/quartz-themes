@@ -8054,7 +8054,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10317,27 +10317,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24328,128 +24328,128 @@ div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
 name: Simply Colorful theme settings
 id: simply-colorful-theme
 settings:
-	-
-		id: bold-color
-		title: Bold color
-		description: Defines the color of bold text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: italic-color
-		title: Italic color
-		description: Defines the color of italic text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-accent
-		title: Internal link color
-		description: Defines the color of internal links
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-accent-hover
-		title: Internal link hover color
-		description: Defines the color of internal links while hovered
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: link-external-color
-		title: External link color
-		description: Defines the color of external links
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: link-external-color-hover
-		title: External link hover color
-		description: Defines the color of external links while hovered
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-highlight-bg
-		title: Highlight color
-		description: Defines the color of highlighted text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: sc-headings
-		title: Interface colors
-		description: Defines the colors of all the headings
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h1-color
-		title: Heading 1 color
-		description: Defines the color of heading 1
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h2-color
-		title: Heading 2 color
-		description: Defines the color of heading 2
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h3-color
-		title: Heading 3 color
-		description: Defines the color of heading 3
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h4-color
-		title: Heading 4 color
-		description: Defines the color of heading 4
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h5-color
-		title: Heading 5 color
-		description: Defines the color of heading 5
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h6-color
-		title: Heading 6 color
-		description: Defines the color of heading 6
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: bold-color
+        title: Bold color
+        description: Defines the color of bold text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: italic-color
+        title: Italic color
+        description: Defines the color of italic text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-accent
+        title: Internal link color
+        description: Defines the color of internal links
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-accent-hover
+        title: Internal link hover color
+        description: Defines the color of internal links while hovered
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: link-external-color
+        title: External link color
+        description: Defines the color of external links
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: link-external-color-hover
+        title: External link hover color
+        description: Defines the color of external links while hovered
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-highlight-bg
+        title: Highlight color
+        description: Defines the color of highlighted text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: sc-headings
+        title: Interface colors
+        description: Defines the colors of all the headings
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h1-color
+        title: Heading 1 color
+        description: Defines the color of heading 1
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h2-color
+        title: Heading 2 color
+        description: Defines the color of heading 2
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h3-color
+        title: Heading 3 color
+        description: Defines the color of heading 3
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h4-color
+        title: Heading 4 color
+        description: Defines the color of heading 4
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h5-color
+        title: Heading 5 color
+        description: Defines the color of heading 5
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h6-color
+        title: Heading 6 color
+        description: Defines the color of heading 6
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
 */

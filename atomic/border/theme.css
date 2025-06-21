@@ -8403,7 +8403,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10677,27 +10677,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24405,61 +24405,61 @@ settings:
         collapsed: true
         level: 3
     - 
-		id: graph-text
-		title: graph-text color
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-    - 
-		id: graph-line
-		title: graph-line color
-		type: variable-themed-color
-		opacity: true
+        id: graph-text
+        title: graph-text color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: graph-node
-		title: graph-node color
-		type: variable-themed-color
-		opacity: true
+        id: graph-line
+        title: graph-line color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: graph-node-unresolved
-		title: graph-node-unresolved color
-		type: variable-themed-color
-		opacity: true
+        id: graph-node
+        title: graph-node color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: graph-node-focused
-		title: graph-node-focused color
-		type: variable-themed-color
-		opacity: true
+        id: graph-node-unresolved
+        title: graph-node-unresolved color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: graph-node-tag
-		title: graph-node-tag color
-		type: variable-themed-color
-		opacity: true
+        id: graph-node-focused
+        title: graph-node-focused color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: graph-node-attachment
-		title: graph-node-attachment color
-		type: variable-themed-color
-		opacity: true
+        id: graph-node-tag
+        title: graph-node-tag color
+        type: variable-themed-color
+        opacity: true
         format: hex
-		default-light: '#'
-		default-dark: '#'
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: graph-node-attachment
+        title: graph-node-attachment color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Canvas
         title: Canvas
@@ -24478,25 +24478,25 @@ settings:
         title.zh: 移除媒体卡片的边框效果
         type: class-toggle
     - 
-		id: canvas-background
-		title: Customize canvas background color
+        id: canvas-background
+        title: Customize canvas background color
         title.zh: 自定义 canvas 背景色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: canvas-card-border-width
-		title: canvas card border width
+        id: canvas-card-border-width
+        title: canvas card border width
         title.zh: canvas 卡片边框大小
         type: variable-text
         description: Input any CSS border-width value
         description.zh: 输入任意 CSS border-width 值
         default: 2px
     - 
-		id: canvas-card-border-style
-		title: canvas card border style
+        id: canvas-card-border-style
+        title: canvas card border style
         title.zh: canvas 卡片边框风格
         type: variable-text
         description: Input any CSS border-style value
@@ -24626,43 +24626,43 @@ settings:
         collapsed: true
         level: 5
     - 
-		id: color-accent-hsl-light
-		title: color-accent-hsl
+        id: color-accent-hsl-light
+        title: color-accent-hsl
         title.zh: color-accent-hsl
         type: variable-color
-		format: hsl-values
+        format: hsl-values
         opacity: false
         default: '#'
     - 
-		id: color-accent-light
-		title: color-accent
+        id: color-accent-light
+        title: color-accent
         title.zh: color-accent
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-1-light
-		title: color-accent-1
+        id: color-accent-1-light
+        title: color-accent-1
         title.zh: color-accent-1
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-2-light
-		title: color-accent-2
+        id: color-accent-2-light
+        title: color-accent-2
         title.zh: color-accent-2
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-3-light
-		title: color-accent-3
+        id: color-accent-3-light
+        title: color-accent-3
         title.zh: color-accent-3
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
@@ -24672,62 +24672,62 @@ settings:
         type: heading
         collapsed: true
         level: 4
-	- 
-		id: color-red-rgb
-		title: Red
-		type: variable-themed-color
+    - 
+        id: color-red-rgb
+        title: Red
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#dd2c38'
-		default-dark: '#ff7881'
-	- 
-		id: color-orange-rgb
-		title: Orange
-		type: variable-themed-color
+        default-light: '#dd2c38'
+        default-dark: '#ff7881'
+    - 
+        id: color-orange-rgb
+        title: Orange
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#de7417'
-		default-dark: '#fbbb83'
-	- 
-		id: color-yellow-rgb
-		title: Yellow
-		type: variable-themed-color
+        default-light: '#de7417'
+        default-dark: '#fbbb83'
+    - 
+        id: color-yellow-rgb
+        title: Yellow
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#c09c0c'
-		default-dark: '#ffe88b'
-	- 
-		id: color-green-rgb
-		title: Green
-		type: variable-themed-color
+        default-light: '#c09c0c'
+        default-dark: '#ffe88b'
+    - 
+        id: color-green-rgb
+        title: Green
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#1da51d'
-		default-dark: '#7cd37c'
-	- 
-		id: color-cyan-rgb
-		title: Cyan
-		type: variable-themed-color
+        default-light: '#1da51d'
+        default-dark: '#7cd37c'
+    - 
+        id: color-cyan-rgb
+        title: Cyan
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#16a6ab'
-		default-dark: '#86dfe2'
-	- 
-		id: color-blue-rgb
-		title: Blue
-		type: variable-themed-color
+        default-light: '#16a6ab'
+        default-dark: '#86dfe2'
+    - 
+        id: color-blue-rgb
+        title: Blue
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#1775d9'
-		default-dark: '#89bdf4'
-	- 
-		id: color-purple-rgb
-		title: Purple
-		type: variable-themed-color
+        default-light: '#1775d9'
+        default-dark: '#89bdf4'
+    - 
+        id: color-purple-rgb
+        title: Purple
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#8f47e1'
-		default-dark: '#cb9eff'
-	- 
-		id: color-pink-rgb
-		title: Pink
-		type: variable-themed-color
+        default-light: '#8f47e1'
+        default-dark: '#cb9eff'
+    - 
+        id: color-pink-rgb
+        title: Pink
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#dd1399'
-		default-dark: '#f2b6de'
+        default-light: '#dd1399'
+        default-dark: '#f2b6de'
     - 
         id: Background-light
         title: Background
@@ -24761,10 +24761,10 @@ settings:
             -   label: customize CSS
                 value: mod-left-split-background-CSS-light
     - 
-		id: background-mod-left-split-light
-		title: Customize left sidepane background color (light mode)
+        id: background-mod-left-split-light
+        title: Customize left sidepane background color (light mode)
         title.zh: 自定义 左侧面板 背景色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -24822,10 +24822,10 @@ settings:
             -   label: customize CSS
                 value: mod-right-split-background-CSS-light
     - 
-		id: background-mod-right-split-light
-		title: Customize right sidepane background color(light mode)
+        id: background-mod-right-split-light
+        title: Customize right sidepane background color(light mode)
         title.zh: 自定义 右侧面板 背景色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -24883,10 +24883,10 @@ settings:
             -   label: customize CSS
                 value: mod-root-split-background-CSS-light
     - 
-		id: background-mod-root-split-light
-		title: Customize Middle pane background color(light mode)
+        id: background-mod-root-split-light
+        title: Customize Middle pane background color(light mode)
         title.zh: 自定义 中间面板 背景色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -24944,10 +24944,10 @@ settings:
             -   label: customize CSS
                 value: background-underlying-CSS-light
     - 
-		id: background-underlying-light
-		title: Customize underlying background color(light mode)
+        id: background-underlying-light
+        title: Customize underlying background color(light mode)
         title.zh: 自定义 底层背景色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -24981,12 +24981,12 @@ settings:
         collapsed: ture
         level: 5
     - 
-		id: on-border-light
+        id: on-border-light
         title: underlying foreground color(light mode)
         title.zh: 底层前景色（亮色模式）
         description: Color of elements (text&icon) displayed on underlying background, including top tab bar, ribbon menu, and status bar
         description.zh: 显示在底层背景上的元素(text&icon)颜色，包括顶部标签栏、功能区菜单和状态栏
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25010,104 +25010,104 @@ settings:
         collapsed: ture
         level: 4
     - 
-		id: background-primary
-		title: background-primary(light mode)
+        id: background-primary
+        title: background-primary(light mode)
         title.zh: background-primary（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-primary-alt
-		title: background-primary-alt(light mode)
+        id: background-primary-alt
+        title: background-primary-alt(light mode)
         title.zh: background-primary-alt（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-secondary
-		title: background-secondary(light mode)
+        id: background-secondary
+        title: background-secondary(light mode)
         title.zh: background-secondary（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-secondary-alt
-		title: background-secondary-alt(light mode)
+        id: background-secondary-alt
+        title: background-secondary-alt(light mode)
         title.zh: background-secondary-alt（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-tertiary
-		title: background-tertiary(light mode)
+        id: background-tertiary
+        title: background-tertiary(light mode)
         title.zh: background-tertiary（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: workspace-background-translucent
-		title: workspace-background-translucent(light mode)
+        id: workspace-background-translucent
+        title: workspace-background-translucent(light mode)
         title.zh: workspace-background-translucent（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-hover
-		title: background-modifier-hover(light mode)
+        id: background-modifier-hover
+        title: background-modifier-hover(light mode)
         title.zh: background-modifier-hover（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-active-hover
-		title: background-modifier-active-hover(light mode)
+        id: background-modifier-active-hover
+        title: background-modifier-active-hover(light mode)
         title.zh: background-modifier-active-hover（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border
-		title: background-modifier-border(light mode)
+        id: background-modifier-border
+        title: background-modifier-border(light mode)
         title.zh: background-modifier-border（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border-hover
-		title: background-modifier-border-hover(light mode)
+        id: background-modifier-border-hover
+        title: background-modifier-border-hover(light mode)
         title.zh: background-modifier-border-hover（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border-focus
-		title: background-modifier-border-focus(light mode)
+        id: background-modifier-border-focus
+        title: background-modifier-border-focus(light mode)
         title.zh: background-modifier-border-focus（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Foreground-header-light
         title: Foreground
@@ -25124,60 +25124,60 @@ settings:
         level: 4
     - 
         id: text-normal
-		title: text-normal(light mode)
+        title: text-normal(light mode)
         title.zh: text-normal（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-muted
-		title: text-muted(light mode)
+        title: text-muted(light mode)
         title.zh: text-muted（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-faint
-		title: text-faint(light mode)
+        title: text-faint(light mode)
         title.zh: text-faint（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-accent
-		title: text-accent(light mode)
+        title: text-accent(light mode)
         title.zh: text-accent（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-accent-hover
-		title: text-accent-hover(light mode)
+        title: text-accent-hover(light mode)
         title.zh: text-accent-hover（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-on-accent
-		title: text-on-accent(light mode)
+        title: text-on-accent(light mode)
         title.zh: text-on-accent（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-on-accent-inverted
-		title: text-on-accent-inverted(light mode)
+        title: text-on-accent-inverted(light mode)
         title.zh: text-on-accent-inverted（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-color-light
         title: Interactive color
@@ -25189,42 +25189,42 @@ settings:
         id: interactive-normal
         title: interactive-normal(light mode)
         title.zh: interactive-normal（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-hover
         title: interactive-hover(light mode)
         title.zh: interactive-hover（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent
-		title: interactive-accent(light mode)
-		title.zh: interactive-accent（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent(light mode)
+        title.zh: interactive-accent（亮色模式）
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent-hsl
-		title: interactive-accent-hsl(light mode)
-		title.zh: interactive-accent-hsl（亮色模式）
-		type: variable-themed-color
-		format: hsl-values
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent-hsl(light mode)
+        title.zh: interactive-accent-hsl（亮色模式）
+        type: variable-themed-color
+        format: hsl-values
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent-hover
-		title: interactive-accent-hover(light mode)
-		title.zh: interactive-accent-hover（亮色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent-hover(light mode)
+        title.zh: interactive-accent-hover（亮色模式）
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Card-light
         title: Card
@@ -25263,10 +25263,10 @@ settings:
         collapsed: true
         level: 4
     - 
-		id: color-activated-tab-header-light
-		title: activated Tab header color(light mode)
+        id: color-activated-tab-header-light
+        title: activated Tab header color(light mode)
         title.zh: 已激活Tab的标头颜色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25304,8 +25304,8 @@ settings:
         type: variable-text
         default: ''
     - 
-		id: color-activated-tab-header-underline-light
-		title: activated Tab header underline color(light mode)
+        id: color-activated-tab-header-underline-light
+        title: activated Tab header underline color(light mode)
         title.zh: 已激活Tab的标头下划线颜色（亮色模式）
         description: Input any CSS background value
         description.zh: 输入任意 CSS background 值
@@ -25335,10 +25335,10 @@ settings:
             -   label: customize
                 value: activated-file-customize-light
     - 
-		id: color-activated-file-light
-		title: Activated file color(light mode)
+        id: color-activated-file-light
+        title: Activated file color(light mode)
         title.zh: 已激活文件的颜色（亮色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25494,22 +25494,22 @@ settings:
         description: For default layout
         description.zh: 针对默认布局
         type: class-toggle
-	- 
-		id: link-external-color
-		title: External link color
+    - 
+        id: link-external-color
+        title: External link color
         title.zh: 外部链接颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: link-external-color-hover
-		title: External link color (hover)
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-external-color-hover
+        title: External link color (hover)
         title.zh: 外部链接颜色（鼠标悬停时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
 */
 /* @settings
 name: Appearance (dark mode)
@@ -25579,43 +25579,43 @@ settings:
         collapsed: true
         level: 5
     - 
-		id: color-accent-hsl-dark
-		title: color-accent-hsl
+        id: color-accent-hsl-dark
+        title: color-accent-hsl
         title.zh: color-accent-hsl
         type: variable-color
-		format: hsl-values
+        format: hsl-values
         opacity: false
         default: '#'
     - 
-		id: color-accent-dark
-		title: color-accent
+        id: color-accent-dark
+        title: color-accent
         title.zh: color-accent
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-1-dark
-		title: color-accent-1
+        id: color-accent-1-dark
+        title: color-accent-1
         title.zh: color-accent-1
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-2-dark
-		title: color-accent-2
+        id: color-accent-2-dark
+        title: color-accent-2
         title.zh: color-accent-2
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
-		id: color-accent-3-dark
-		title: color-accent-3
+        id: color-accent-3-dark
+        title: color-accent-3
         title.zh: color-accent-3
         type: variable-color
-		format: hsl
+        format: hsl
         opacity: false
         default: '#'
     - 
@@ -25625,62 +25625,62 @@ settings:
         type: heading
         collapsed: true
         level: 4
-	- 
-		id: color-red-rgb
-		title: Red
-		type: variable-themed-color
+    - 
+        id: color-red-rgb
+        title: Red
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#dd2c38'
-		default-dark: '#ff7881'
-	- 
-		id: color-orange-rgb
-		title: Orange
-		type: variable-themed-color
+        default-light: '#dd2c38'
+        default-dark: '#ff7881'
+    - 
+        id: color-orange-rgb
+        title: Orange
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#de7417'
-		default-dark: '#fbbb83'
-	- 
-		id: color-yellow-rgb
-		title: Yellow
-		type: variable-themed-color
+        default-light: '#de7417'
+        default-dark: '#fbbb83'
+    - 
+        id: color-yellow-rgb
+        title: Yellow
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#c09c0c'
-		default-dark: '#ffe88b'
-	- 
-		id: color-green-rgb
-		title: Green
-		type: variable-themed-color
+        default-light: '#c09c0c'
+        default-dark: '#ffe88b'
+    - 
+        id: color-green-rgb
+        title: Green
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#1da51d'
-		default-dark: '#7cd37c'
-	- 
-		id: color-cyan-rgb
-		title: Cyan
-		type: variable-themed-color
+        default-light: '#1da51d'
+        default-dark: '#7cd37c'
+    - 
+        id: color-cyan-rgb
+        title: Cyan
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#16a6ab'
-		default-dark: '#86dfe2'
-	- 
-		id: color-blue-rgb
-		title: Blue
-		type: variable-themed-color
+        default-light: '#16a6ab'
+        default-dark: '#86dfe2'
+    - 
+        id: color-blue-rgb
+        title: Blue
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#1775d9'
-		default-dark: '#89bdf4'
-	- 
-		id: color-purple-rgb
-		title: Purple
-		type: variable-themed-color
+        default-light: '#1775d9'
+        default-dark: '#89bdf4'
+    - 
+        id: color-purple-rgb
+        title: Purple
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#8f47e1'
-		default-dark: '#cb9eff'
-	- 
-		id: color-pink-rgb
-		title: Pink
-		type: variable-themed-color
+        default-light: '#8f47e1'
+        default-dark: '#cb9eff'
+    - 
+        id: color-pink-rgb
+        title: Pink
+        type: variable-themed-color
         format: 'rgb-values'
-		default-light: '#dd1399'
-		default-dark: '#f2b6de'
+        default-light: '#dd1399'
+        default-dark: '#f2b6de'
     - 
         id: Background-dark
         title: Background
@@ -25714,10 +25714,10 @@ settings:
             -   label: customize CSS
                 value: mod-left-split-background-CSS-dark
     - 
-		id: background-mod-left-split-dark
-		title: Customize left sidepane background color (dark mode)
+        id: background-mod-left-split-dark
+        title: Customize left sidepane background color (dark mode)
         title.zh: 自定义 左侧面板 背景色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25775,10 +25775,10 @@ settings:
             -   label: customize CSS
                 value: mod-right-split-background-CSS-dark
     - 
-		id: background-mod-right-split-dark
-		title: Customize right sidepane background color(dark mode)
+        id: background-mod-right-split-dark
+        title: Customize right sidepane background color(dark mode)
         title.zh: 自定义 右侧面板 背景色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25836,10 +25836,10 @@ settings:
             -   label: customize CSS
                 value: mod-root-split-background-CSS-dark
     - 
-		id: background-mod-root-split-dark
-		title: Customize Middle pane background color (dark mode)
+        id: background-mod-root-split-dark
+        title: Customize Middle pane background color (dark mode)
         title.zh: 自定义 中间面板 背景色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25897,10 +25897,10 @@ settings:
             -   label: customize CSS
                 value: background-underlying-CSS-dark
     - 
-		id: background-underlying-dark
-		title: Customize underlying background color(dark mode)
+        id: background-underlying-dark
+        title: Customize underlying background color(dark mode)
         title.zh: 自定义 底层背景色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25934,12 +25934,12 @@ settings:
         collapsed: ture
         level: 5
     - 
-		id: on-border-dark
+        id: on-border-dark
         title: underlying foreground color(dark mode)
         title.zh: 底层前景色（暗色模式）
         description: Color of elements (text&icon) displayed on underlying background, including top tab bar, ribbon menu, and status bar
         description.zh: 显示在底层背景上的元素(text&icon)颜色，包括顶部标签栏、功能区菜单和状态栏
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -25963,104 +25963,104 @@ settings:
         collapsed: ture
         level: 4
     - 
-		id: background-primary
-		title: background-primary(dark mode)
+        id: background-primary
+        title: background-primary(dark mode)
         title.zh: background-primary（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-primary-alt
-		title: background-primary-alt(dark mode)
+        id: background-primary-alt
+        title: background-primary-alt(dark mode)
         title.zh: background-primary-alt（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-secondary
-		title: background-secondary(dark mode)
+        id: background-secondary
+        title: background-secondary(dark mode)
         title.zh: background-secondary（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-secondary-alt
-		title: background-secondary-alt(dark mode)
+        id: background-secondary-alt
+        title: background-secondary-alt(dark mode)
         title.zh: background-secondary-alt（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-tertiary
-		title: background-tertiary(dark mode)
+        id: background-tertiary
+        title: background-tertiary(dark mode)
         title.zh: background-tertiary（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: workspace-background-translucent
-		title: workspace-background-translucent(dark mode)
+        id: workspace-background-translucent
+        title: workspace-background-translucent(dark mode)
         title.zh: workspace-background-translucent（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-hover
-		title: background-modifier-hover(dark mode)
+        id: background-modifier-hover
+        title: background-modifier-hover(dark mode)
         title.zh: background-modifier-hover（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-active-hover
-		title: background-modifier-active-hover(dark mode)
+        id: background-modifier-active-hover
+        title: background-modifier-active-hover(dark mode)
         title.zh: background-modifier-active-hover（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border
-		title: background-modifier-border(dark mode)
+        id: background-modifier-border
+        title: background-modifier-border(dark mode)
         title.zh: background-modifier-border（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border-hover
-		title: background-modifier-border-hover(dark mode)
+        id: background-modifier-border-hover
+        title: background-modifier-border-hover(dark mode)
         title.zh: background-modifier-border-hover（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: background-modifier-border-focus
-		title: background-modifier-border-focus(dark mode)
+        id: background-modifier-border-focus
+        title: background-modifier-border-focus(dark mode)
         title.zh: background-modifier-border-focus（暗色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Foreground-header-dark
         title: Foreground
@@ -26077,60 +26077,60 @@ settings:
         level: 4
     - 
         id: text-normal
-		title: text-normal(dark mode)
+        title: text-normal(dark mode)
         title.zh: text-normal（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-muted
-		title: text-muted(dark mode)
+        title: text-muted(dark mode)
         title.zh: text-muted（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-faint
-		title: text-faint(dark mode)
+        title: text-faint(dark mode)
         title.zh: text-faint（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-accent
-		title: text-accent(dark mode)
+        title: text-accent(dark mode)
         title.zh: text-accent（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-accent-hover
-		title: text-accent-hover(dark mode)
+        title: text-accent-hover(dark mode)
         title.zh: text-accent-hover（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-on-accent
-		title: text-on-accent(dark mode)
+        title: text-on-accent(dark mode)
         title.zh: text-on-accent（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-on-accent-inverted
-		title: text-on-accent-inverted(dark mode)
+        title: text-on-accent-inverted(dark mode)
         title.zh: text-on-accent-inverted（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-color-dark
         title: Interactive color
@@ -26142,42 +26142,42 @@ settings:
         id: interactive-normal
         title: interactive-normal(dark mode)
         title.zh: interactive-normal（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-hover
         title: interactive-hover(dark mode)
         title.zh: interactive-hover（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent
-		title: interactive-accent(dark mode)
-		title.zh: interactive-accent（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent(dark mode)
+        title.zh: interactive-accent（暗色模式）
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent-hsl
-		title: interactive-accent-hsl(dark mode)
-		title.zh: interactive-accent-hsl（暗色模式）
-		type: variable-themed-color
-		format: hsl-values
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent-hsl(dark mode)
+        title.zh: interactive-accent-hsl（暗色模式）
+        type: variable-themed-color
+        format: hsl-values
+        default-light: '#'
+        default-dark: '#'
     - 
         id: interactive-accent-hover
-		title: interactive-accent-hover(dark mode)
-		title.zh: interactive-accent-hover（暗色模式）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        title: interactive-accent-hover(dark mode)
+        title.zh: interactive-accent-hover（暗色模式）
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Card-dark
         title: Card
@@ -26216,10 +26216,10 @@ settings:
         collapsed: true
         level: 4
     - 
-		id: color-activated-tab-header-dark
-		title: activated Tab header color(dark mode)
+        id: color-activated-tab-header-dark
+        title: activated Tab header color(dark mode)
         title.zh: 已激活Tab的标头颜色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -26257,8 +26257,8 @@ settings:
         type: variable-text
         default: ''
     - 
-		id: color-activated-tab-header-underline-dark
-		title: activated Tab header underline color(dark mode)
+        id: color-activated-tab-header-underline-dark
+        title: activated Tab header underline color(dark mode)
         title.zh: 已激活Tab的标头下划线颜色（暗色模式）
         description: Input any CSS background value
         description.zh: 输入任意 CSS background 值
@@ -26288,10 +26288,10 @@ settings:
             -   label: customize
                 value: activated-file-customize-dark
     - 
-		id: color-activated-file-dark
-		title: Activated file color(dark mode)
+        id: color-activated-file-dark
+        title: Activated file color(dark mode)
         title.zh: 已激活文件的颜色（暗色模式）
-		type: variable-color
+        type: variable-color
         opacity: ture
         format: hex
         alt-format:
@@ -26447,22 +26447,22 @@ settings:
         description: For default layout
         description.zh: 针对默认布局
         type: class-toggle
-	- 
-		id: link-external-color
-		title: External link color
+    - 
+        id: link-external-color
+        title: External link color
         title.zh: 外部链接颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: link-external-color-hover
-		title: External link color (hover)
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-external-color-hover
+        title: External link color (hover)
         title.zh: 外部链接颜色（鼠标悬停时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
 */
 /* @settings
 name: Editor
@@ -26497,14 +26497,14 @@ settings:
         title.zh: 指示代码块行号
         type: class-toggle
     - 
-		id: hover-indicator-color
-		title: Customize indicator color
+        id: hover-indicator-color
+        title: Customize indicator color
         title.zh: 自定义指示器的颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: border-focus-mode-heading
         title: Focus mode
@@ -26524,14 +26524,14 @@ settings:
         title.zh: 启用 专注模式
         type: class-toggle
     - 
-		id: line-active-bg
-		title: Active line background color
+        id: line-active-bg
+        title: Active line background color
         title.zh: 活动行背景色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: line-normal-opacity
         title: Normal line opacity
@@ -26554,14 +26554,14 @@ settings:
         title.zh: 启用 网格背景图案
         type: class-toggle
     - 
-		id: grid-background-pattern-color
-		title: Customize grid background pattern color
+        id: grid-background-pattern-color
+        title: Customize grid background pattern color
         title.zh: 自定义 网格背景图案颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: grid-background-pattern-size
         title: Custom grid background pattern size
@@ -26583,38 +26583,38 @@ settings:
         title.zh: 还原标题前的折叠图标
         type: class-toggle
     - 
-		id: heading-indicator-off
-		title: Remove headings indicator
-		title.zh: 移除标题左侧的指示器
-		type: class-toggle
-		default: false
+        id: heading-indicator-off
+        title: Remove headings indicator
+        title.zh: 移除标题左侧的指示器
+        type: class-toggle
+        default: false
     - 
-		id: Inline-title
-		title: Inline Title
+        id: Inline-title
+        title: Inline Title
         title.zh: 页内标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
         id: inline-title-divider-remove
         title: Remove inline title divider
         title.zh: 移除页内标题分隔线
         type: class-toggle
     - 
-		id: inline-title-font
-		title: inline title font
+        id: inline-title-font
+        title: inline title font
         title.zh: 页内标题 字体
-		type: variable-text
-		default: ''
-	- 
-		id: inline-title-size
-		title: inline title size
+        type: variable-text
+        default: ''
+    - 
+        id: inline-title-size
+        title: inline title size
         title.zh: 页内标题 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.5em
-	- 
+        type: variable-text
+        default: 1.5em
+    - 
         id: inline-title-weight
         title: inline title weight
         title.zh: 页内标题 字重
@@ -26623,13 +26623,13 @@ settings:
         type: variable-number
         default: 700
     - 
-		id: inline-title-text-transform
-		title: inline title text-transform
-		title.zh: 页内标题 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: inline-title-text-transform
+        title: inline title text-transform
+        title.zh: 页内标题 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: inline-title-color-select
         title: inline title text color
@@ -26642,42 +26642,42 @@ settings:
                 value: inline-title-color-default
             -   label: Customized color
                 value: inline-title-color-customized
-	- 
-		id: inline-title-color
-		title: Customize inline title text color
+    - 
+        id: inline-title-color
+        title: Customize inline title text color
         title.zh: 自定义 页内标题 文本颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: level-1-headings
-		title: Level 1 Headings
+        id: level-1-headings
+        title: Level 1 Headings
         title.zh: 一级标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: h1-divider-on
-		title: Enable H1 divider
-		title.zh: 启用H1分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h1-font
-		title: H1 font
+        id: h1-divider-on
+        title: Enable H1 divider
+        title.zh: 启用H1分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h1-font
+        title: H1 font
         title.zh: H1 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h1-size
-		title: H1 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h1-size
+        title: H1 font size
         title.zh: H1 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.5em
-	- 
+        type: variable-text
+        default: 1.5em
+    - 
         id: h1-weight
         title: H1 font weight
         title.zh: H1 字重
@@ -26686,21 +26686,21 @@ settings:
         type: variable-number
         default: 700
     - 
-		id: h1-text-transform
-		title: H1 text-transform
-		title.zh: H1 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h1-text-transform
+        title: H1 text-transform
+        title.zh: H1 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
-		id: h1-accent-color
-		title: Customize H1 accent color
+        id: h1-accent-color
+        title: Customize H1 accent color
         title.zh: 自定义 H1 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h1-color-select
         title: H1 text color
@@ -26714,33 +26714,33 @@ settings:
             -   label: Accent color
                 value: h1-color-designated
     - 
-		id: level-2-headings
-		title: Level 2 Headings
+        id: level-2-headings
+        title: Level 2 Headings
         title.zh: 二级标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: h2-divider-on
-		title: Enable H2 divider
-		title.zh: 启用H2分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h2-font
-		title: H2 font
+        id: h2-divider-on
+        title: Enable H2 divider
+        title.zh: 启用H2分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h2-font
+        title: H2 font
         title.zh: H2 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h2-size
-		title: H2 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h2-size
+        title: H2 font size
         title.zh: H2 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.425em
-	- 
+        type: variable-text
+        default: 1.425em
+    - 
         id: h2-weight
         title: H2 font weight
         title.zh: H2 字重
@@ -26749,21 +26749,21 @@ settings:
         type: variable-number
         default: 675
     - 
-		id: h2-text-transform
-		title: H2 text-transform
-		title.zh: H2 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h2-text-transform
+        title: H2 text-transform
+        title.zh: H2 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: h2-accent-color
-		title: Customize H2 accent color
+        title: Customize H2 accent color
         title.zh: 自定义 H2 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h2-color-select
         title: H2 text color
@@ -26777,33 +26777,33 @@ settings:
             -   label: Accent color
                 value: h2-color-designated
     - 
-		id: level-3-headings
-		title: Level 3 Headings
+        id: level-3-headings
+        title: Level 3 Headings
         title.zh: 三级标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: h3-divider-on
-		title: Enable H3 divider
-		title.zh: 启用H3分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h3-font
-		title: H3 font
+        id: h3-divider-on
+        title: Enable H3 divider
+        title.zh: 启用H3分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h3-font
+        title: H3 font
         title.zh: H3 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h3-size
-		title: H3 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h3-size
+        title: H3 font size
         title.zh: H3 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.35em
-	- 
+        type: variable-text
+        default: 1.35em
+    - 
         id: h3-weight
         title: H3 font weight
         title.zh: H3 字重
@@ -26812,21 +26812,21 @@ settings:
         type: variable-number
         default: 650
     - 
-		id: h3-text-transform
-		title: H3 text-transform
-		title.zh: H3 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h3-text-transform
+        title: H3 text-transform
+        title.zh: H3 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: h3-accent-color
-		title: Customize H3 accent color
+        title: Customize H3 accent color
         title.zh: 自定义 H3 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h3-color-select
         title: H3 text color
@@ -26840,33 +26840,33 @@ settings:
             -   label: Accent color
                 value: h3-color-designated
     - 
-		id: level-4-headings
-		title: Level 4 Headings
+        id: level-4-headings
+        title: Level 4 Headings
         title.zh: 四级标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: h4-divider-on
-		title: Enable H4 divider
-		title.zh: 启用H4分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h4-font
-		title: H4 font
+        id: h4-divider-on
+        title: Enable H4 divider
+        title.zh: 启用H4分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h4-font
+        title: H4 font
         title.zh: H4 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h4-size
-		title: H4 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h4-size
+        title: H4 font size
         title.zh: H4 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.275em
-	- 
+        type: variable-text
+        default: 1.275em
+    - 
         id: h4-weight
         title: H4 font weight
         title.zh: H4 字重
@@ -26875,21 +26875,21 @@ settings:
         type: variable-number
         default: 625
     - 
-		id: h4-text-transform
-		title: H4 text-transform
-    	title.zh: H4 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h4-text-transform
+        title: H4 text-transform
+        title.zh: H4 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: h4-accent-color
-		title: Customize H4 accent color
+        title: Customize H4 accent color
         title.zh: 自定义 H4 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h4-color-select
         title: H4 text color
@@ -26903,33 +26903,33 @@ settings:
             -   label: Accent color
                 value: h4-color-designated
     - 
-		id: level-5-headings
-		title: Level 5 Headings
+        id: level-5-headings
+        title: Level 5 Headings
         title.zh: 五级标题
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: h5-divider-on
-		title: Enable H5 divider
-		title.zh: 启用H5分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h5-font
-		title: H5 font
+        id: h5-divider-on
+        title: Enable H5 divider
+        title.zh: 启用H5分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h5-font
+        title: H5 font
         title.zh: H5 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h5-size
-		title: H5 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h5-size
+        title: H5 font size
         title.zh: H5 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.2em
-	- 
+        type: variable-text
+        default: 1.2em
+    - 
         id: h5-weight
         title: H5 font weight
         title.zh: H5 字重
@@ -26938,21 +26938,21 @@ settings:
         type: variable-number
         default: 600
     - 
-		id: h5-text-transform
-		title: H5 text-transform
-		title.zh: H5 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h5-text-transform
+        title: H5 text-transform
+        title.zh: H5 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: h5-accent-color
-		title: Customize H5 accent color
+        title: Customize H5 accent color
         title.zh: 自定义 H5 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h5-color-select
         title: H5 text color
@@ -26965,34 +26965,34 @@ settings:
                 value: h5-color-default
             -   label: Accent color
                 value: h5-color-designated
-	- 
-		id: level-6-headings
-		title: Level 6 Headings
-        title.zh: 六级标题
-		type: heading
-		level: 4
-		collapsed: true
     - 
-		id: h6-divider-on
-		title: Enable H6 divider
-		title.zh: 启用H6分隔线
-		type: class-toggle
-		default: false
-	- 
-		id: h6-font
-		title: H6 font
+        id: level-6-headings
+        title: Level 6 Headings
+        title.zh: 六级标题
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h6-divider-on
+        title: Enable H6 divider
+        title.zh: 启用H6分隔线
+        type: class-toggle
+        default: false
+    - 
+        id: h6-font
+        title: H6 font
         title.zh: H6 字体
-		type: variable-text
-		default: ''
-	- 
-		id: h6-size
-		title: H6 font size
+        type: variable-text
+        default: ''
+    - 
+        id: h6-size
+        title: H6 font size
         title.zh: H6 字体大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: 1.125em
-	- 
+        type: variable-text
+        default: 1.125em
+    - 
         id: h6-weight
         title: H6 font weight
         title.zh: H6 字重
@@ -27001,21 +27001,21 @@ settings:
         type: variable-number
         default: 575
     - 
-		id: h6-text-transform
-		title: H6 text-transform
-		title.zh: H6 text-transform
-		description: Accepts any CSS text-transform value
-		description.zh: 接受任何 CSS text-transform 值
-		type: variable-text
-		default: ''
+        id: h6-text-transform
+        title: H6 text-transform
+        title.zh: H6 text-transform
+        description: Accepts any CSS text-transform value
+        description.zh: 接受任何 CSS text-transform 值
+        type: variable-text
+        default: ''
     - 
         id: h6-accent-color
-		title: Customize H6 accent color
+        title: Customize H6 accent color
         title.zh: 自定义 H6 强调色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: h6-color-select
         title: H6 text color
@@ -27036,35 +27036,35 @@ settings:
         collapsed: true
         level: 3
     - 
-		id: text-align-justify
-		title: Justify paragraph text
-		title.zh: 段落两端对齐
-		type: class-toggle
-		default: false
-	- 
+        id: text-align-justify
+        title: Justify paragraph text
+        title.zh: 段落两端对齐
+        type: class-toggle
+        default: false
+    - 
         id: line-height-customize
         title: Paragraph line height
         title.zh: 段落行高
         type: variable-number
         default: 1.5
-	- 
-		id: file-line-width
-		title: Paragraph line width （Need to turn on “Readable line length”）
+    - 
+        id: file-line-width
+        title: Paragraph line width （Need to turn on “Readable line length”）
         title.zh:  段落行宽（需开启“缩减栏宽”）
-		type: variable-text
-		default: 700px
+        type: variable-text
+        default: 700px
     - 
-		id: p-spacing
-		title: Paragraph spacing (Reading mode)
+        id: p-spacing
+        title: Paragraph spacing (Reading mode)
         title.zh:  段落间距（阅读模式）
-		type: variable-text
-		default: 1em
+        type: variable-text
+        default: 1em
     - 
-		id: p-spacing-br
-		title: Paragraph spacing also takes effect after a line break (Reading mode)
-		title.zh: 段间距也对换行后的内容生效（阅读模式）
-		type: class-toggle
-		default: false
+        id: p-spacing-br
+        title: Paragraph spacing also takes effect after a line break (Reading mode)
+        title.zh: 段间距也对换行后的内容生效（阅读模式）
+        type: class-toggle
+        default: false
     - 
         id: Text
         title: Text
@@ -27074,36 +27074,36 @@ settings:
         level: 3
     - 
         id: bold-color
-		title: Bold text color
+        title: Bold text color
         title.zh: 粗体颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: italic-color
-		title: Italic text color
+        title: Italic text color
         title.zh: 斜体颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: text-highlight-bg
-		title: text highlight bg color
+        title: text highlight bg color
         title.zh: 文本高亮背景颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: inline-code-normal
-		title: inline code text color
+        id: inline-code-normal
+        title: inline code text color
         title.zh: 内联代码颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: inline-code-background-light
         title: Customize inline code background (light mode)
@@ -27127,143 +27127,143 @@ settings:
         type: heading
         collapsed: true
         level: 3
-	- 
-		id: link-color
-		title: Link color
+    - 
+        id: link-color
+        title: Link color
         title.zh: 链接颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: link-color-hover
-		title: Link color (hover)
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-color-hover
+        title: Link color (hover)
         title.zh: 链接颜色（鼠标悬停时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: link-decoration
-		title: Link decoration
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-decoration
+        title: Link decoration
         title.zh: 链接装饰
         description: Accepts any CSS text-decoration-line value
         description.zh: 接受任何 CSS text-decoration-line 值
-		type: variable-text
-		default: underline
-	- 
-		id: link-decoration-hover
-		title: Link decoration (hover)
+        type: variable-text
+        default: underline
+    - 
+        id: link-decoration-hover
+        title: Link decoration (hover)
         title.zh: 链接装饰（鼠标悬停时）
         description: Accepts any CSS text-decoration-line value
         description.zh: 接受任何 CSS text-decoration-line 值
-		type: variable-text
-		default: underline
-	- 
-		id: link-decoration-thickness
-		title: Link decoration thickness
+        type: variable-text
+        default: underline
+    - 
+        id: link-decoration-thickness
+        title: Link decoration thickness
         title.zh: 链接装饰厚度
         description: Accepts any CSS text-decoration-thickness value
         description.zh: 接受任何 CSS text-decoration-thickness 值
-		type: variable-text
-		default: auto
+        type: variable-text
+        default: auto
     - 
-		id: link-unresolved
-		title: Unresolved link
+        id: link-unresolved
+        title: Unresolved link
         title.zh: 未创建链接
-		type: heading
-		level: 4
-		collapsed: true
-	- 
-		id: link-unresolved-color
-		title: Unresolved link color
-        title.zh: 未创建链接颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: link-unresolved-opacity
-		title: Unresolved link opacity
+        id: link-unresolved-color
+        title: Unresolved link color
+        title.zh: 未创建链接颜色
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-unresolved-opacity
+        title: Unresolved link opacity
         title.zh: 未创建链接透明度
-		type: variable-number-slider
-		default: 0.7
-		min: 0.25
-		max: 1
-		step: 0.05
-	- 
-		id: link-unresolved-filter
-		title: Unresolved link filter
+        type: variable-number-slider
+        default: 0.7
+        min: 0.25
+        max: 1
+        step: 0.05
+    - 
+        id: link-unresolved-filter
+        title: Unresolved link filter
         title.zh: 未创建链接 filter
         description: Accepts any CSS filter value
         description.zh: 接受任何 CSS filter 值
-		type: variable-text
-		default: none
-	- 
-		id: link-unresolved-decoration-style
-		title: Unresolved link decoration style
+        type: variable-text
+        default: none
+    - 
+        id: link-unresolved-decoration-style
+        title: Unresolved link decoration style
         title.zh: 未创建链接装饰风格
         description: Accepts any CSS text-decoration-style value
         description.zh: 接受任何 CSS text-decoration-style 值
-		type: variable-text
-		default: solid
-	- 
-		id: link-unresolved-decoration-color
-		title: Unresolved link decoration color
+        type: variable-text
+        default: solid
+    - 
+        id: link-unresolved-decoration-color
+        title: Unresolved link decoration color
         title.zh: 未创建链接装饰颜色
-		type: variable-themed-color
-		format: hex
-		opacity:  true
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        opacity:  true
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: links-external
-		title: External links
+        id: links-external
+        title: External links
         title.zh: 外部链接
-		type: heading
-		level: 4
-		collapsed: true
-	- 
-		id: link-external-color
-		title: External link color
-        title.zh: 外部链接颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: link-external-color-hover
-		title: External link color (hover)
-        title.zh: 外部链接颜色（鼠标悬停时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: heading
+        level: 4
+        collapsed: true
     - 
-		id: link-external-decoration
-		title: External link decoration
+        id: link-external-color
+        title: External link color
+        title.zh: 外部链接颜色
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-external-color-hover
+        title: External link color (hover)
+        title.zh: 外部链接颜色（鼠标悬停时）
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: link-external-decoration
+        title: External link decoration
         title.zh: 外部链接装饰
         description: Accepts any CSS text-decoration-line value
         description.zh: 接受任何 CSS text-decoration-line 值
-		type: variable-text
-		default: underline
-	- 
-		id: link-external-decoration-hover
-		title: External link decoration (hover)
+        type: variable-text
+        default: underline
+    - 
+        id: link-external-decoration-hover
+        title: External link decoration (hover)
         title.zh: 外部链接装饰（鼠标悬停时）
         description: Accepts any CSS text-decoration-line value
         description.zh: 接受任何 CSS text-decoration-line 值
-		type: variable-text
-		default: underline
-	- 
-		id: link-external-filter
-		title: External link filter
+        type: variable-text
+        default: underline
+    - 
+        id: link-external-filter
+        title: External link filter
         title.zh: 外部链接 filter
         description: Accepts any CSS filter value
         description.zh: 接受任何 CSS filter 值
-		type: variable-text
-		default: none
-	- 
+        type: variable-text
+        default: none
+    - 
         id: Lists
         title: Lists
         title.zh: 列表
@@ -27271,53 +27271,53 @@ settings:
         collapsed: true
         level: 3
     - 
-		id: list-indent
-		title: list indent
+        id: list-indent
+        title: list indent
         title.zh:  列表缩进
-		type: variable-text
-		default: 2.25em
+        type: variable-text
+        default: 2.25em
     - 
-		id: list-spacing
-		title: list spacing
+        id: list-spacing
+        title: list spacing
         title.zh:  列表间距
-		type: variable-text
-		default: 0.075em
+        type: variable-text
+        default: 0.075em
     - 
-		id: list-bullet-size
-		title: list marker size
+        id: list-bullet-size
+        title: list marker size
         title.zh: 列表标记大小
-		type: variable-text
-		default: 0.3em
-	- 
-		id: list-marker-color
-		title: list marker color
+        type: variable-text
+        default: 0.3em
+    - 
+        id: list-marker-color
+        title: list marker color
         title.zh: 列表标记颜色
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: list-marker-color-hover
-		title: list marker color (hover)
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: list-marker-color-hover
+        title: list marker color (hover)
         title.zh: 列表标记颜色（鼠标悬停时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: list-marker-color-collapsed
-		title: list marker color (collapsed)
+        id: list-marker-color-collapsed
+        title: list marker color (collapsed)
         title.zh: 列表标记颜色（折叠时）
-		type: variable-themed-color
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: ul-marker-restore
-		title: Restore default style of unordered list
+        id: ul-marker-restore
+        title: Restore default style of unordered list
         title.zh: 恢复无序列表的默认样式
-		type: class-toggle
-		default: false
+        type: class-toggle
+        default: false
     - 
         id: Tags
         title: Tags
@@ -27326,32 +27326,32 @@ settings:
         collapsed: true
         level: 3
     - 
-		id: tag-color
-		title: Tag text color
+        id: tag-color
+        title: Tag text color
         title.zh: 标签文本颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: tag-background
-		title: Tag background color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: tag-background
+        title: Tag background color
         title.zh: 标签背景颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: tag-background-hover
-		title: Tag background color (hover)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: tag-background-hover
+        title: Tag background color (hover)
         title.zh: 标签背景颜色（鼠标悬停时）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Table
         title: Table
@@ -27359,15 +27359,15 @@ settings:
         type: heading
         collapsed: true
         level: 3
-	- 
-		id: table-header-color
-		title: Customize table header color
+    - 
+        id: table-header-color
+        title: Customize table header color
         title.zh: 自定义 表头颜色（亮色模式）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: table-header-background-light
         title: Customize table header background (light mode)
@@ -27493,104 +27493,104 @@ settings:
         type: variable-text
         default: ''
     - 
-		id: code-normal
-		title: code-normal
+        id: code-normal
+        title: code-normal
         title.zh: code-normal
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: code-comment
-		title: code-comment
+        id: code-comment
+        title: code-comment
         title.zh: code-comment
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-function
-		title: code-function
+        title: code-function
         title.zh: code-function
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-important
-		title: code-important
+        title: code-important
         title.zh: code-important
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-keyword
-		title: code-keyword
+        title: code-keyword
         title.zh: code-keyword
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-operator
-		title: code-operator
+        title: code-operator
         title.zh: code-operator
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-property
-		title: code-property
+        title: code-property
         title.zh: code-property
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-punctuation
-		title: code-punctuation
+        title: code-punctuation
         title.zh: code-punctuation
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-string
-		title: code-string
+        title: code-string
         title.zh: code-string
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-tag
-		title: code-tag
+        title: code-tag
         title.zh: code-tag
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: code-value
-		title: code-value
+        title: code-value
         title.zh: code-value
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: Blockquote-heading
         title: Blockquote
@@ -27640,8 +27640,8 @@ settings:
             -   label: style 4
                 value: callout-style-4
     - 
-		id: callout-border-width
-		title: callout border width
+        id: callout-border-width
+        title: callout border width
         title.zh: 标注边框大小
         type: variable-text
         description: Input any CSS border-width value
@@ -27657,13 +27657,13 @@ settings:
         max: 1
         step: 0.05
     - 
-		id: callout-padding
-		title: callout padding
+        id: callout-padding
+        title: callout padding
         title.zh: 标注边距
         description: Accepts any CSS padding value
         description.zh: 接受任何 CSS padding 值
-		type: variable-text
-		default: ''
+        type: variable-text
+        default: ''
     - 
         id: callout-radius
         title: callout radius
@@ -27672,48 +27672,48 @@ settings:
         description.zh: 在这里输入你的 border-radius 值
         type: variable-text
         default: ''
-	- 
-		id: callout-title-color
-		title: callout title color
-        title.zh: 标注标题颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
     - 
-		id: callout-title-padding
-		title: callout title padding
+        id: callout-title-color
+        title: callout title color
+        title.zh: 标注标题颜色
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: callout-title-padding
+        title: callout title padding
         title.zh: 标注标题边距
         description: Accepts any CSS padding value
         description.zh: 接受任何 CSS padding 值
-		type: variable-text
-		default: ''
+        type: variable-text
+        default: ''
     - 
-		id: callout-title-size
-		title: callout title size
+        id: callout-title-size
+        title: callout title size
         title.zh: 标注标题大小
         description: Accepts any CSS font-size value
         description.zh: 接受任何 CSS font-size 值
-		type: variable-text
-		default: ''
+        type: variable-text
+        default: ''
     - 
-		id: callout-content-padding
-		title: callout content padding
+        id: callout-content-padding
+        title: callout content padding
         title.zh: 标注内容边距
         description: Accepts any CSS padding value
         description.zh: 接受任何 CSS padding 值
-		type: variable-text
-		default: ''
+        type: variable-text
+        default: ''
     - 
-		id: callout-content-background
-		title: callout content background
+        id: callout-content-background
+        title: callout content background
         title.zh: 标注内容背景
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: callout-content-radius
         title: callout content radius
@@ -27738,11 +27738,11 @@ settings:
         id: embed-background
         title: embed background
         title.zh: 内嵌文档 背景
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
         id: embed-padding
         title: embed padding
@@ -27797,50 +27797,50 @@ settings:
         type: variable-text
         default: '6px'
     - 
-		id: checkbox-marker-color
-		title: checkbox marker color
+        id: checkbox-marker-color
+        title: checkbox marker color
         title.zh: 复选框标记颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: checkbox-color
-		title: checkbox color
+        id: checkbox-color
+        title: checkbox color
         title.zh: 复选框颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: checkbox-color-hover
-		title: checkbox color (hover)
+        id: checkbox-color-hover
+        title: checkbox color (hover)
         title.zh: 复选框颜色（鼠标悬停时）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: checkbox-border-color
-		title: checkbox border color
+        id: checkbox-border-color
+        title: checkbox border color
         title.zh: 复选框边框颜色
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
     - 
-		id: checkbox-border-color-hover
-		title: checkbox border color (hover)
+        id: checkbox-border-color-hover
+        title: checkbox border color (hover)
         title.zh: 复选框边框颜色（鼠标悬停时）
-		type: variable-themed-color
-		opacity: true
-		format: hex
-		default-light: '#'
-		default-dark: '#'
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#'
+        default-dark: '#'
 */
 /* @settings
 name: Mobile

@@ -1,0 +1,304 @@
+body:not(.sQdthOne-disable-alternative-checkboxes) input.task-list-item-checkbox {
+  border-style: solid;
+  border-color: hsl(var(--color-alternate));
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: var(--anim-duration-moderate);
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input.task-list-item-checkbox:hover {
+  border-style: solid;
+  border-color: hsl(var(--color-hovered));
+  border-width: 5px;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: var(--anim-duration-moderate);
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input.task-list-item-checkbox:checked:hover {
+  border-style: double;
+  border-color: hsl(var(--color-hovered));
+  border-width: 9px;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: var(--anim-duration-moderate);
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input.task-list-item-checkbox:checked {
+  border-style: double;
+  border-color: hsl(var(--color-confirmed));
+  border-width: 9px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: var(--anim-duration-moderate);
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input.task-list-item-checkbox::after {
+  background-color: transparent !important;
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task=">"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="<"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="u"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="d"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="/"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="?"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="!"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="i"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="*"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="+"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="-"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="p"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="c"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="b"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="l"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="s"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="f"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > p > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="k"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: calc(var(--size-icon) * 1.1);
+  -webkit-mask-position: 50% 50%;
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task=">"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="<"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="u"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="d"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="/"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="?"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="!"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="i"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="*"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="+"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="-"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="p"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="c"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="b"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="l"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="s"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="f"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > p > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="k"]:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > input:checked:hover,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > p > input:checked:hover {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: hsl(var(--color-hovered));
+  -webkit-mask-size: calc(var(--size-icon) * 1.1);
+  -webkit-mask-position: 50% 50%;
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task=">"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task=">"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.71 12.71a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-3-3a1 1 0 0 0-1.42 1.42l1.3 1.29H9a1 1 0 0 0 0 2h3.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0ZM22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10M4 12a8 8 0 1 1 8 8a8 8 0 0 1-8-8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="<"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="<"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8.29 11.29a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l3 3a1 1 0 0 0 1.42-1.42L11.41 13H15a1 1 0 0 0 0-2h-3.59l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0ZM2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12m18 0a8 8 0 1 1-8-8a8 8 0 0 1 8 8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="u"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="u"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.71 8.29a1 1 0 0 0-.33-.21a1 1 0 0 0-.76 0a1 1 0 0 0-.33.21l-3 3a1 1 0 0 0 1.42 1.42l1.29-1.3V15a1 1 0 0 0 2 0v-3.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="d"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="d"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.71a1 1 0 0 0 .33.21a1 1 0 0 0 .76 0a1 1 0 0 0 .33-.21l3-3a1 1 0 0 0-1.42-1.42L13 12.59V9a1 1 0 0 0-2 0v3.59l-1.29-1.3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42ZM12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10m0-18a8 8 0 1 1-8 8a8 8 0 0 1 8-8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="/"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="/"] > p > input:checked {
+  background-color: hsl(var(--color-red));
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8 19a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3a1 1 0 0 0 0-2a5 5 0 0 0-5 5v8a5 5 0 0 0 5 5a1 1 0 0 0 0-2m7.71-3.29a1 1 0 0 0 0-1.42L13.41 12l2.3-2.29a1 1 0 0 0-1.42-1.42L12 10.59l-2.29-2.3a1 1 0 0 0-1.42 1.42l2.3 2.29l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l2.29-2.3l2.29 2.3a1 1 0 0 0 1.42 0M16 3a1 1 0 0 0 0 2a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3a1 1 0 0 0 0 2a5 5 0 0 0 5-5V8a5 5 0 0 0-5-5'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="?"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="?"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.29a1.58 1.58 0 0 0-.12.15a.76.76 0 0 0-.09.18a.64.64 0 0 0-.06.18a1.36 1.36 0 0 0 0 .2a.84.84 0 0 0 .08.38a.9.9 0 0 0 .54.54a.94.94 0 0 0 .76 0a.9.9 0 0 0 .54-.54A1 1 0 0 0 13 16a1 1 0 0 0-.29-.71a1 1 0 0 0-1.42 0M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m0-13a3 3 0 0 0-2.6 1.5a1 1 0 1 0 1.73 1A1 1 0 0 1 12 9a1 1 0 0 1 0 2a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-.18A3 3 0 0 0 12 7'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="!"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="!"] > p > input:checked {
+  background-color: hsl(var(--color-orange));
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 14a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 14m0-1.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="i"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="i"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8m0-8.5a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0v-3a1 1 0 0 0-1-1m0-4a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 7.5'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="*"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="*"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 9.67a1 1 0 0 0-.86-.67l-5.69-.83L12.9 3a1 1 0 0 0-1.8 0L8.55 8.16L2.86 9a1 1 0 0 0-.81.68a1 1 0 0 0 .25 1l4.13 4l-1 5.68a1 1 0 0 0 1.47 1.08l5.1-2.67l5.1 2.67a.93.93 0 0 0 .46.12a1 1 0 0 0 .59-.19a1 1 0 0 0 .4-1l-1-5.68l4.13-4A1 1 0 0 0 22 9.67m-6.15 4a1 1 0 0 0-.29.88l.72 4.2l-3.76-2a1.06 1.06 0 0 0-.94 0l-3.76 2l.72-4.2a1 1 0 0 0-.29-.88l-3-3l4.21-.61a1 1 0 0 0 .76-.55L12 5.7l1.88 3.82a1 1 0 0 0 .76.55l4.21.61Z'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="+"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="+"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9h-3V8a1 1 0 0 0-2 0v3H8a1 1 0 0 0 0 2h3v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="-"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="-"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes):not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.sQdthOne-disable-alternative-checkboxes):not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.sQdthOne-disable-alternative-checkboxes):not(.tasks)
+  li[data-task="-"].task-list-item.is-checked {
+  color: var(--text-faint);
+  text-decoration: line-through solid var(--text-faint) 1px;
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="p"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="p"] > p > input:checked {
+  background-color: hsl(var(--color-green));
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21.3 10.08A3 3 0 0 0 19 9h-4.56L15 7.57A4.13 4.13 0 0 0 11.11 2a1 1 0 0 0-.91.59L7.35 9H5a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12.73a3 3 0 0 0 2.95-2.46l1.27-7a3 3 0 0 0-.65-2.46M7 20H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h2Zm13-7.82l-1.27 7a1 1 0 0 1-1 .82H9v-9.79l2.72-6.12a2.11 2.11 0 0 1 1.38 2.78l-.53 1.43a2 2 0 0 0 1.87 2.7H19a1 1 0 0 1 .77.36a1 1 0 0 1 .23.82'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="c"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="c"] > p > input:checked {
+  background-color: hsl(var(--color-red));
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 2H6.27a3 3 0 0 0-2.95 2.46l-1.27 7A3 3 0 0 0 5 15h4.56L9 16.43A4.13 4.13 0 0 0 12.89 22a1 1 0 0 0 .91-.59L16.65 15H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-4 11.79l-2.72 6.12a2.13 2.13 0 0 1-1.38-2.78l.53-1.43A2 2 0 0 0 9.56 13H5a1 1 0 0 1-.77-.36a1 1 0 0 1-.23-.82l1.27-7a1 1 0 0 1 1-.82H15ZM20 12a1 1 0 0 1-1 1h-2V4h2a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="b"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="b"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16 2H8a3 3 0 0 0-3 3v16a1 1 0 0 0 .5.87a1 1 0 0 0 1 0l5.5-3.18l5.5 3.18a1 1 0 0 0 .5.13a1 1 0 0 0 .5-.13A1 1 0 0 0 19 21V5a3 3 0 0 0-3-3m1 17.27l-4.5-2.6a1 1 0 0 0-1 0L7 19.27V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="l"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="l"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.46 9.63A8.5 8.5 0 0 0 7.3 3.36a8.56 8.56 0 0 0-3.76 6.27A8.46 8.46 0 0 0 6 16.46l5.3 5.31a1 1 0 0 0 1.42 0L18 16.46a8.46 8.46 0 0 0 2.46-6.83m-3.86 5.42l-4.6 4.6l-4.6-4.6a6.49 6.49 0 0 1-1.87-5.22A6.57 6.57 0 0 1 8.42 5a6.47 6.47 0 0 1 7.16 0a6.57 6.57 0 0 1 2.89 4.81a6.49 6.49 0 0 1-1.87 5.24M12 6a4.5 4.5 0 1 0 4.5 4.5A4.51 4.51 0 0 0 12 6m0 7a2.5 2.5 0 1 1 2.5-2.5A2.5 2.5 0 0 1 12 13'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="s"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="s"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14.36 14.23a3.76 3.76 0 0 1-4.72 0a1 1 0 0 0-1.28 1.54a5.68 5.68 0 0 0 7.28 0a1 1 0 1 0-1.28-1.54M9 11a1 1 0 1 0-1-1a1 1 0 0 0 1 1m6-2a1 1 0 1 0 1 1a1 1 0 0 0-1-1m-3-7a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="k"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="k"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m21 4.41l.71-.7a1 1 0 1 0-1.42-1.42l-1.4 1.41l-2.83 2.83l-6.31 6.3a5 5 0 1 0 1.42 1.42l5.59-5.6l2.12 2.13a1 1 0 1 0 1.41-1.42l-2.12-2.12l1.42-1.41l.7.7a1 1 0 1 0 1.42-1.41ZM7 20a3 3 0 1 1 3-3a3 3 0 0 1-3 3'/%3E%3C/svg%3E");
+}
+
+body:not(.sQdthOne-disable-alternative-checkboxes) input[data-task="f"]:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > input:checked,
+body:not(.sQdthOne-disable-alternative-checkboxes) li[data-task="f"] > p > input:checked {
+  background-color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m8.468 8.395l-.002.001l-.003.002Zm9.954-.187a1.237 1.237 0 0 0-.23-.175a1 1 0 0 0-1.4.411a5.782 5.782 0 0 1-1.398 1.778a8.664 8.664 0 0 0 .134-1.51a8.714 8.714 0 0 0-4.4-7.582a1 1 0 0 0-1.492.806a7.017 7.017 0 0 1-2.471 4.942l-.23.187a8.513 8.513 0 0 0-1.988 1.863a8.983 8.983 0 0 0 3.656 13.908a1 1 0 0 0 1.377-.926a1.05 1.05 0 0 0-.05-.312a6.977 6.977 0 0 1-.19-2.581a9.004 9.004 0 0 0 4.313 4.016a.997.997 0 0 0 .715.038a8.995 8.995 0 0 0 3.654-14.863m-3.905 12.831a6.964 6.964 0 0 1-3.577-4.402a8.908 8.908 0 0 1-.18-.964a1 1 0 0 0-.799-.845a.982.982 0 0 0-.191-.018a1 1 0 0 0-.867.5a8.959 8.959 0 0 0-1.205 4.718a6.985 6.985 0 0 1-1.176-9.868a6.555 6.555 0 0 1 1.562-1.458a.745.745 0 0 0 .075-.055s.296-.245.306-.25a8.968 8.968 0 0 0 2.9-4.633a6.736 6.736 0 0 1 1.385 8.088a1 1 0 0 0 1.184 1.418a7.856 7.856 0 0 0 3.862-2.688a7 7 0 0 1-3.279 10.457'/%3E%3C/svg%3E");
+}

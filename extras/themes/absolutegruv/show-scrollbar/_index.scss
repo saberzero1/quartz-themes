@@ -1,0 +1,10 @@
+body:not(.show-scrollbar) ::-webkit-scrollbar {
+  display: none;
+}
+
+body:not(.show-scrollbar)
+  .workspace-split.mod-root
+  .workspace-leaf-content[data-type="style-settings"]
+  ::-webkit-scrollbar {
+  display: none;
+}

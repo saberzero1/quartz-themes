@@ -1,0 +1,82 @@
+body:not(.aura-workspace-background) .prompt .prompt-input {
+  background: rgb(var(--cpt-crust));
+}
+
+body:not(.aura-workspace-background) .prompt {
+  background: rgba(var(--cpt-mantle));
+}
+
+.aura-card-layout:not(.aura-workspace-background) .mod-root .workspace-tabs .workspace-leaf {
+  background-color: rgb(var(--cpt-mantle));
+}
+
+.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) .workspace-tabs.mod-top,
+body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) {
+  --titlebar-background-focused: rgb(var(--cpt-mantle));
+  --file-header-border: var(--border-width) dotted var(--background-modifier-border);
+}
+
+.aura-card-layout:not(.aura-workspace-background)
+  .workspace-split
+  .workspace-leaf-content[data-type="file-explorer"] {
+  background-color: var(--tab-container-background);
+  box-shadow: none;
+  border-width: 0;
+}
+
+body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
+  --divider-color: transparent;
+}
+
+.aura-card-layout {
+  --card-background-color: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+}
+
+.aura-workspace-background .popover {
+  background-color: rgba(var(--cpt-core), var(--aura-workspace-background-workspace-slider-dark));
+}
+
+.aura-workspace-background .horizontal-main-container {
+  background: var(--workspace-background-image);
+  background-color: transparent;
+  background-size: cover;
+}
+
+.aura-workspace-background
+  .workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
+  --background-primary: rgba(var(--cpt-crust), 0.7);
+}
+
+.aura-workspace-background .workspace-leaf.is-hidden {
+  --background-primary: transparent !important;
+}
+
+.aura-workspace-background
+  .workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
+.aura-workspace-background .mod-root .workspace-tabs .workspace-leaf {
+  --background-primary: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+}
+
+.aura-workspace-background {
+  --background-primary: rgba(var(--cpt-crust), 0.7);
+  --background-primary-alt: rgba(var(--cpt-core-alt), 0.7);
+  --background-secondary: rgba(var(--cpt-mantle), 0.5);
+  --background-secondary-alt: rgba(var(--cpt-mantle-alt), 0.5);
+  --modal-background: rgba(var(--cpt-mantle), 0.9);
+}
+
+.aura-workspace-background .prompt {
+  background-color: var(--background-secondary);
+}

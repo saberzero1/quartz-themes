@@ -1,0 +1,17 @@
+:not(.is-mobile).settingsHoverPreview .modal-container.mod-dim .modal.mod-settings {
+  background-color: transparent;
+  box-shadow: var(--bevelStyleButton);
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings:hover {
+  opacity: 1;
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings .modal-content {
+  opacity: 0;
+}
+
+:not(.is-mobile).settingsHoverPreview .modal.mod-settings .modal-content:hover {
+  background-color: var(--background);
+  opacity: 1;
+}

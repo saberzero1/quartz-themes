@@ -1033,14 +1033,14 @@ input[type="text"] {
 .cm-s-obsidian span.cm-hashtag-begin {
   display: none;
   /*
-	border-radius: .3rem 0 0 .3rem;
-	font-size: 1rem;
-	padding: .4rem;
-	padding-top: .1rem;
-	padding-right: .1rem;
-	position: relative;
-	top: 1px;
-	*/
+    border-radius: .3rem 0 0 .3rem;
+    font-size: 1rem;
+    padding: .4rem;
+    padding-top: .1rem;
+    padding-right: .1rem;
+    position: relative;
+    top: 1px;
+    */
 }
 
 /* fixes spacing on multi-line links */

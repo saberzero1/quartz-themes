@@ -8243,7 +8243,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10518,27 +10518,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24065,45 +24065,44 @@ input.mobile-vault-chooser-field-input {
 name: Garden Gnome
 id: garden-gnome
 settings:
-	-
-		id: tweaks
-		title: Tweaks
-		type: heading
-		level: 1
-	-
-		id: hide-window-buttons
-		title: Hide minimize and maximize buttons
-		type: class-toggle
-		default: true
-	-
-		id: hide-only-tab
-		title: Hide single tab
-		title.es: Esconder pestaña única
-		description: Hides the tab when there is a single one
-		description.es: Esconde la pestaña cuando sólo hay una
-		type: class-select
-		allowEmpty: false
-		default: 'hide-only-tab_interactive'
-		options:
-		-
-			label: Full
-			value: 'hide-only-tab_full'
-		-
-			label: Interactive
-			value: 'hide-only-tab_interactive'
-		-
-			label: No
-			value: 'hide-only-tab_none'
-	-
+    -
+        id: tweaks
+        title: Tweaks
+        type: heading
+        level: 1
+    -
+        id: hide-window-buttons
+        title: Hide minimize and maximize buttons
+        type: class-toggle
+        default: true
+    -
+        id: hide-only-tab
+        title: Hide single tab
+        title.es: Esconder pestaña única
+        description: Hides the tab when there is a single one
+        description.es: Esconde la pestaña cuando sólo hay una
+        type: class-select
+        allowEmpty: false
+        default: 'hide-only-tab_interactive'
+        options:
+        -
+            label: Full
+            value: 'hide-only-tab_full'
+        -
+            label: Interactive
+            value: 'hide-only-tab_interactive'
+        -
+            label: No
+            value: 'hide-only-tab_none'
 */
 /*
 ################################################################################################################################################################################################
-			COMMON CODE
+            COMMON CODE
 ################################################################################################################################################################################################
 Code common to all of oqipo's themes
 */
 /*
-			MARKDOWN
+            MARKDOWN
 */
 /* Header */
 .mod-header {
@@ -24186,7 +24185,7 @@ Code common to all of oqipo's themes
 
 /* Tables */
 /*
-			UI
+            UI
 --------------------------------------------------------------------------------------------------------------------------------
 */
 /* NAVIGATION */
@@ -24213,7 +24212,7 @@ Code common to all of oqipo's themes
 }
 
 /*
-			PLUGINS
+            PLUGINS
 --------------------------------------------------------------------------------------------------------------------------------
 */
 /* SLIDES PLUGIN */
@@ -24511,7 +24510,7 @@ h6.BC-Matrix-header {
 }
 
 /*
-			CUSTOM
+            CUSTOM
 --------------------------------------------------------------------------------------------------------------------------------
 */
 /* Custom image attributes */
@@ -24547,11 +24546,11 @@ span[alt$="center"] {
 
 /*
 ################################################################################################################################################################################################
-			UNIQUE CODE
+            UNIQUE CODE
 ################################################################################################################################################################################################
 */
 /*
-			SETTINGS
+            SETTINGS
 --------------------------------------------------------------------------------------------------------------------------------
 */
 .hide-window-buttons {
@@ -24573,7 +24572,7 @@ span[alt$="center"] {
 }
 
 /*
-			MARKDOWN
+            MARKDOWN
 --------------------------------------------------------------------------------------------------------------------------------
 */
 /* LINKS */
@@ -24642,7 +24641,7 @@ span[alt$="center"] {
 }
 
 /*
-			UI
+            UI
 --------------------------------------------------------------------------------------------------------------------------------
 */
 /* WINDOW BUTTONS */

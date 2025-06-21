@@ -1,0 +1,146 @@
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  margin-bottom: 1em;
+}
+
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  tr:not(:last-child)
+  > td {
+  border-bottom: transparent;
+}
+
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  table
+  th:first-of-type {
+  border-top-left-radius: 6px;
+}
+
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  table
+  th:last-of-type {
+  border-top-right-radius: 6px;
+}
+
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  table
+  tr:last-child
+  td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+body:not(.edgy-tables)
+  :is(
+    .table-r,
+    .table-g,
+    .table-b,
+    .table-m,
+    .table-xyr,
+    .table-xyg,
+    .table-xyb,
+    .table-xym,
+    .tabelle-r,
+    .tabelle-g,
+    .tabelle-b,
+    .tabelle-m,
+    .tabelle-xyr,
+    .tabelle-xyg,
+    .tabelle-xyb,
+    .tabelle-xym
+  )
+  table
+  tr:last-child
+  td:last-child {
+  border-bottom-right-radius: 6px;
+}

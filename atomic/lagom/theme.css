@@ -8078,7 +8078,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10349,27 +10349,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24715,12 +24715,12 @@ span.cm-meta.cm-hmd-frontmatter {
 
 /*
 .workspace-drawer-backdrop, .modal-container, .is-phone, .suggestion-bg{
-	background: #00000097;
+    background: #00000097;
   box-shadow: var(--input-shadow)
 }
 
 .nav-files-container>div>.nav-folder>.nav-folder-title>.nav-folder-title-content{
-	font-weight:600;
+    font-weight:600;
 }
 
 .nav-folder:nth-child(odd).nav-folder-title, .nav-file:nth-child(odd){}
@@ -24809,7 +24809,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 /* SECONDARY MENU 
 .menu-separator:not(.is-mobile, .menu-item) {
-	border-bottom: 1.5px dashed var(--background-modifier-border);
+    border-bottom: 1.5px dashed var(--background-modifier-border);
 }
 
 /*  :::::  UI ICONS  :::::  */
@@ -25478,7 +25478,6 @@ settings:
           - 
               label: Right
               value: right
-  - 
       
   - 
       id: embed-section
@@ -25538,7 +25537,6 @@ settings:
           - 
               label: Solid
               value: solid
-  - 
 */
 /* @settings
 name: Properties & YAML

@@ -8180,7 +8180,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10447,27 +10447,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24156,8 +24156,8 @@ input.mobile-vault-chooser-field-input {
 /*
 --------------------------- --------------------------- --------------------------- 
 --------------------------- --------------------------- --------------------------- 
-	Mado 11 - Obsidian Theme by hydescarf
-	https://github.com/hydescarf/Obsidian-Theme-Mado-11
+    Mado 11 - Obsidian Theme by hydescarf
+    https://github.com/hydescarf/Obsidian-Theme-Mado-11
 --------------------------- --------------------------- --------------------------- 
 --------------------------- --------------------------- --------------------------- 
 */
@@ -24445,7 +24445,7 @@ body.mod-macos {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Mado Layout Basic Styling
+    Mado Layout Basic Styling
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -24704,7 +24704,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-drawer-vault-swi
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Slide-down Toggle Design
+    Slide-down Toggle Design
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -25205,7 +25205,7 @@ body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal)
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Main Note Pane Desgin
+    Main Note Pane Desgin
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -25564,7 +25564,7 @@ body.is-translucent .modal {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Animation
+    Animation
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -25608,7 +25608,7 @@ body:is(:not(.css-settings-manager), .toggle-note-animation)
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Icon Button Style
+    Icon Button Style
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -25714,7 +25714,7 @@ body:not(.native-scrollbars) .modal-close-button {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Long Button Style
+    Long Button Style
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -25777,7 +25777,7 @@ body:is(:not(.css-settings-manager), .toggle-explorer-indent) .nav-folder > .nav
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Markdown Stying
+    Markdown Stying
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -26070,7 +26070,7 @@ ul > li.task-list-item.is-checked * {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Mado Theme Special Classes
+    Mado Theme Special Classes
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -27680,7 +27680,7 @@ div.callout[data-callout*="mado-panel-task"]
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Plugin Supports
+    Plugin Supports
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -27995,162 +27995,162 @@ div.kanban-plugin__lane-title-count {
 name: Mado 11
 id: mado-11
 settings:
-	- 
-		id: intro-section
-		title: Introduction
-		description: "The setting here covers only the very basic to avoid complexity fatigue. That being said, feel free to suggest anything by submitting a Github issue on: https://github.com/hydescarf/Obsidian-Theme-Mado-11"
-		type: heading
-		collapsed: true
-		level: 3
-		
-		
-		
-		
-	-
-		id: theme-section
-		title: Theme Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-		id: theme-color
-		title: Theme Color
-		type: class-select
-		allowEmpty: false
-		default: theme-daisy-blue
-		options:
-			-
-				label: Daisy Blue
-				value: theme-daisy-blue
-			-
-				label: Red Sky
-				value: theme-red-sky
-			-
-				label: Violette
-				value: theme-violette
-			-
-				label: Greenery
-				value: theme-greenery
-			-
-				label: Yellowish
-				value: theme-yellowish
-			-
-				label: Orange Jist
-				value: theme-orange-jist
-			-
-				label: Deep Blue
-				value: theme-deep-blue
-			-
-				label: Tea Teal
-				value: theme-tea-teal
-			-
-				label: Magenta Pink
-				value: theme-magenta-pink
-			-
-				label: Grayscale
-				value: theme-grayscale
-	- 
-		id: accent
-		title: Accent Color
-		type: variable-themed-color
-		opacity: false
-		format: hsl-split
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: bgcolor
-		title: Background Color
-		description: "*Background color is not dynamically coded. You may see off-colors if you wish to change this setting."
-		type: variable-themed-color
-		opacity: false
-		format: hsl-split
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: toggle-wave-background
-		title: Enable background wave design on left sidebar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-sidebar-right-color
-		title: Enable alternative background color for right sidebar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-topleft-radius
-		title: Enable rounded top-left corner of the main pane
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-note-animation
-		title: Enable sliding animation on main pane
-		description: Animation is noticable when you switch to a new tab
-		type: class-toggle
-		default: true
-	- 
-	
-	
-	
-		id: layout-section
-		title: Layout Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-	
-	
-		id: toggle-scrollbar-overlay
-		title: Enable Overlay Scrollbar
-		type: class-toggle
-		description: Overlay will provide you wider field of contents, but in return, scrollbar will have to overlap onto it.
-		default: true
-	- 
-		id: toggle-easy-toggle
-		title: Enable Easy Toggle
-		type: class-toggle
-		description: Enabling Easy Toggle gives you more triggerable area to reveal the hidden buttons.
-		default: true
-	- 
-		id: toggle-topright-opacity
-		title: Enable Alternative Toggle Style (Top-right)
-		description: Enabling this will switch the toggle style from "sliding" to "fading".
-		type: class-toggle
-		default: false
-	- 
-	
-	
-		id: hiding-section
-		title: Hiding Elements
-		type: heading
-		description: Hide/Unhide the surrounding elements. Most can be hovered to reveal them.
-		level: 4
-		collapsed: true
-	- 
-		id: toggle-titlebar-buttons
-		title: Hide Window Titlebar Buttons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-side-ribbons
-		title: Hide Sidedock Ribbons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sidebar-toggle
-		title: Hide Sidebar Toggle Button 
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sidebar-buttons
-		title: Hide Sidebar Tab Buttons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-buttons
-		title: Hide File Explorer Buttons
-		description: If they are hidden, you may reveal the buttons by hovering at the "Tab Header Buttons" above it.
-		type: class-select
-		allowEmpty: false
+    - 
+        id: intro-section
+        title: Introduction
+        description: "The setting here covers only the very basic to avoid complexity fatigue. That being said, feel free to suggest anything by submitting a Github issue on: https://github.com/hydescarf/Obsidian-Theme-Mado-11"
+        type: heading
+        collapsed: true
+        level: 3
+        
+        
+        
+        
+    -
+        id: theme-section
+        title: Theme Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+        id: theme-color
+        title: Theme Color
+        type: class-select
+        allowEmpty: false
+        default: theme-daisy-blue
+        options:
+            -
+                label: Daisy Blue
+                value: theme-daisy-blue
+            -
+                label: Red Sky
+                value: theme-red-sky
+            -
+                label: Violette
+                value: theme-violette
+            -
+                label: Greenery
+                value: theme-greenery
+            -
+                label: Yellowish
+                value: theme-yellowish
+            -
+                label: Orange Jist
+                value: theme-orange-jist
+            -
+                label: Deep Blue
+                value: theme-deep-blue
+            -
+                label: Tea Teal
+                value: theme-tea-teal
+            -
+                label: Magenta Pink
+                value: theme-magenta-pink
+            -
+                label: Grayscale
+                value: theme-grayscale
+    - 
+        id: accent
+        title: Accent Color
+        type: variable-themed-color
+        opacity: false
+        format: hsl-split
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: bgcolor
+        title: Background Color
+        description: "*Background color is not dynamically coded. You may see off-colors if you wish to change this setting."
+        type: variable-themed-color
+        opacity: false
+        format: hsl-split
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: toggle-wave-background
+        title: Enable background wave design on left sidebar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-sidebar-right-color
+        title: Enable alternative background color for right sidebar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-topleft-radius
+        title: Enable rounded top-left corner of the main pane
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-note-animation
+        title: Enable sliding animation on main pane
+        description: Animation is noticable when you switch to a new tab
+        type: class-toggle
+        default: true
+    - 
+    
+    
+    
+        id: layout-section
+        title: Layout Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+    
+    
+        id: toggle-scrollbar-overlay
+        title: Enable Overlay Scrollbar
+        type: class-toggle
+        description: Overlay will provide you wider field of contents, but in return, scrollbar will have to overlap onto it.
+        default: true
+    - 
+        id: toggle-easy-toggle
+        title: Enable Easy Toggle
+        type: class-toggle
+        description: Enabling Easy Toggle gives you more triggerable area to reveal the hidden buttons.
+        default: true
+    - 
+        id: toggle-topright-opacity
+        title: Enable Alternative Toggle Style (Top-right)
+        description: Enabling this will switch the toggle style from "sliding" to "fading".
+        type: class-toggle
+        default: false
+    - 
+    
+    
+        id: hiding-section
+        title: Hiding Elements
+        type: heading
+        description: Hide/Unhide the surrounding elements. Most can be hovered to reveal them.
+        level: 4
+        collapsed: true
+    - 
+        id: toggle-titlebar-buttons
+        title: Hide Window Titlebar Buttons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-side-ribbons
+        title: Hide Sidedock Ribbons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sidebar-toggle
+        title: Hide Sidebar Toggle Button 
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sidebar-buttons
+        title: Hide Sidebar Tab Buttons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-buttons
+        title: Hide File Explorer Buttons
+        description: If they are hidden, you may reveal the buttons by hovering at the "Tab Header Buttons" above it.
+        type: class-select
+        allowEmpty: false
         default: TEB-hide-vertical
         options:
             - 
@@ -28168,126 +28168,126 @@ settings:
             - 
                 label: Show (Horizontal)
                 value: TEB-show-horizontal
-	- 
-		id: toggle-vault-title
-		title: Hide File Explorer Vault Title (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-indent
-		title: Hide File Explorer Indentation Guide (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-collapse
-		title: Hide File Explorer Collapse Indicator (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-tab-section
-		title: Hide Note Tab Section
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-note-header
-		title: Hide Note Title Bar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-status-bar
-		title: Hide Status Bar (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sync-button
-		title: Show Sync Button Independently
-		type: class-toggle
-		description: Available when Status Bar is hidden.
-		default: false
-	- 
-		id: toggle-scrollbar
-		title: Hide Scrollbar
-		type: class-toggle
-		default: true
-	- 
-	
-	
-	
-	
-	
-	
-		id: markdown-section
-		title: Markdown Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-		id: file-line-width
-		title: Readable Line Length
-		type: variable-number-slider
-		default: 700
-		format: px
+    - 
+        id: toggle-vault-title
+        title: Hide File Explorer Vault Title (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-indent
+        title: Hide File Explorer Indentation Guide (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-collapse
+        title: Hide File Explorer Collapse Indicator (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-tab-section
+        title: Hide Note Tab Section
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-note-header
+        title: Hide Note Title Bar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-status-bar
+        title: Hide Status Bar (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sync-button
+        title: Show Sync Button Independently
+        type: class-toggle
+        description: Available when Status Bar is hidden.
+        default: false
+    - 
+        id: toggle-scrollbar
+        title: Hide Scrollbar
+        type: class-toggle
+        default: true
+    - 
+    
+    
+    
+    
+    
+    
+        id: markdown-section
+        title: Markdown Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+        id: file-line-width
+        title: Readable Line Length
+        type: variable-number-slider
+        default: 700
+        format: px
         min: 400
         max: 1200
         step: 10
-	-
-		id: text-normal
-		title: Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-muted
-		title: Muted Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-faint
-		title: Faint Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-	
-	
-		id: typography-section
-		title: Typography Section
-		type: heading
-		collapsed: true
-		level: 4
-	- 
-	
-	
-		id: bold-color
-		title: Bold Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: bold-weight
-		title: Bold Weight
-		type: variable-number-slider
-		default: 700
+    -
+        id: text-normal
+        title: Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-muted
+        title: Muted Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-faint
+        title: Faint Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+    
+    
+        id: typography-section
+        title: Typography Section
+        type: heading
+        collapsed: true
+        level: 4
+    - 
+    
+    
+        id: bold-color
+        title: Bold Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: bold-weight
+        title: Bold Weight
+        type: variable-number-slider
+        default: 700
         min: 100
         max: 1000
         step: 100
-	-
-		id: italic-color
-		title: Italic Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: toggle-highlight-type
-		title: Highlight Type
-		type: class-select
-		allowEmpty: false
+    -
+        id: italic-color
+        title: Italic Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: toggle-highlight-type
+        title: Highlight Type
+        type: class-select
+        allowEmpty: false
         default: THT-underline-dark
         options:
             - 
@@ -28302,136 +28302,135 @@ settings:
             - 
                 label: Underlined (Dark-mode only)
                 value: THT-underline-dark
-	- 
-		id: color-highlight
-		title: Highlight Color (Text)
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-highlight-bg
-		title: Highlight Color (Background/Underline)
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: color-strikethrough
-		title: Strikethrough Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: inline-code-color
-		title: Inline Code Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: list-marker-color
-		title: Listing Bullet/Marker Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-	
-	
-		id: heading-section
-		title: Heading Section
-		description: "Not applicable to cssclass: mado-heading."
-		type: heading
-		collapsed: true
-		level: 4
-	- 
-	
-	
-	- 
-		id: toggle-h1-margin-top
-		title: Enable H1 Spacious Separator
-		description: When an H1 is uncollapsed, it will create a big wide space below to distinguish from the next H1. Downside, however, is the first H1 will always have the wide space above it.
-		type: class-toggle
-		default: true
-	-
-		id: h1-size
-		title: H1 Size
-		type: variable-number
-		format: em
-		default: 2
-	-
-		id: h2-size
-		title: H2 Size
-		type: variable-number
-		format: em
-		default: 1.6
-	-
-		id: h3-size
-		title: H3 Size
-		type: variable-number
-		format: em
-		default: 1.37
-	-
-		id: h4-size
-		title: H4 Size
-		type: variable-number
-		format: em
-		default: 1.25
-	-
-		id: h5-size
-		title: H5 Size
-		type: variable-number
-		format: em
-		default: 1.12
-	-
-		id: h6-size
-		title: H6 Size
-		type: variable-number
-		format: em
-		default: 1.12
-	-
-		
-		id: h1-color
-		title: H1 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h2-color
-		title: H2 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h3-color
-		title: H3 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h4-color
-		title: H4 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h5-color
-		title: H5 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h6-color
-		title: H6 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    - 
+        id: color-highlight
+        title: Highlight Color (Text)
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-highlight-bg
+        title: Highlight Color (Background/Underline)
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: color-strikethrough
+        title: Strikethrough Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: inline-code-color
+        title: Inline Code Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: list-marker-color
+        title: Listing Bullet/Marker Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+    
+    
+        id: heading-section
+        title: Heading Section
+        description: "Not applicable to cssclass: mado-heading."
+        type: heading
+        collapsed: true
+        level: 4
+    
+    
+    - 
+        id: toggle-h1-margin-top
+        title: Enable H1 Spacious Separator
+        description: When an H1 is uncollapsed, it will create a big wide space below to distinguish from the next H1. Downside, however, is the first H1 will always have the wide space above it.
+        type: class-toggle
+        default: true
+    -
+        id: h1-size
+        title: H1 Size
+        type: variable-number
+        format: em
+        default: 2
+    -
+        id: h2-size
+        title: H2 Size
+        type: variable-number
+        format: em
+        default: 1.6
+    -
+        id: h3-size
+        title: H3 Size
+        type: variable-number
+        format: em
+        default: 1.37
+    -
+        id: h4-size
+        title: H4 Size
+        type: variable-number
+        format: em
+        default: 1.25
+    -
+        id: h5-size
+        title: H5 Size
+        type: variable-number
+        format: em
+        default: 1.12
+    -
+        id: h6-size
+        title: H6 Size
+        type: variable-number
+        format: em
+        default: 1.12
+    -
+        
+        id: h1-color
+        title: H1 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h2-color
+        title: H2 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h3-color
+        title: H3 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h4-color
+        title: H4 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h5-color
+        title: H5 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h6-color
+        title: H6 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 */

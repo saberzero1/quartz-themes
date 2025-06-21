@@ -1222,27 +1222,26 @@ settings:
     allowEmpty: false
     default: sh1
     options:
-    	-
-				label: Aurora
-				value: sh1
-    	-
-				label: GitHub Dark Default
-				value: sh2
-    	-
-				label: a11y Dark
-				value: sh3
-    	-
-				label: Atom One Dark
-				value: sh4
-    	-
-				label: Monokai Sublime
-				value: sh5
-    	-
-				label: Tokyo Night Dark
-				value: sh6
-    	-
-				label: Tomorrow Night Bright
-				value: sh7
-  - 
+      -
+        label: Aurora
+        value: sh1
+      -
+        label: GitHub Dark Default
+        value: sh2
+      -
+        label: a11y Dark
+        value: sh3
+      -
+        label: Atom One Dark
+        value: sh4
+      -
+        label: Monokai Sublime
+        value: sh5
+      -
+        label: Tokyo Night Dark
+        value: sh6
+      -
+        label: Tomorrow Night Bright
+        value: sh7
 
 */

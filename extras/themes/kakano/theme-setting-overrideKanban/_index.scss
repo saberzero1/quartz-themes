@@ -1,0 +1,158 @@
+body.theme-setting-overrideKanban {
+  .kanban-plugin {
+    gap: 0.5rem;
+    background: var(--theme-gradient-cardSetGenerated);
+  }
+  .kanban-plugin__lane {
+    background-color: var(--theme-color-kanbanLaneBg);
+    border: none;
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+  }
+  .kanban-plugin__lane-header-wrapper {
+    border-bottom: none;
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+  .kanban-plugin__lane-grip {
+    margin-right: 0;
+    color: var(--theme-color-control);
+  }
+  .kanban-plugin__lane-setting-wrapper > div {
+    padding: 0.5em 1em;
+  }
+  .kanban-plugin__lane-setting-wrapper > div:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+  .kanban-plugin__grow-wrap > textarea {
+    /* Style as regular text field */
+    background: var(--background-input);
+    border-radius: var(--input-radius);
+    border: none;
+    box-shadow: 0 0 0 var(--input-border-width) var(--theme-color-base);
+    font-size: var(--font-ui-small);
+    line-height: normal;
+    padding: var(--size-4-1) var(--size-4-2);
+  }
+  .kanban-plugin__grow-wrap > textarea:focus {
+    box-shadow: 0 0 0 var(--input-border-width) var(--theme-color-base);
+  }
+  .kanban-plugin__item-button-wrapper {
+    border-top: none;
+  }
+  .kanban-plugin__lane-items {
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+  }
+  .kanban-plugin__lane-items > .kanban-plugin__item-wrapper {
+    margin: 0;
+  }
+  .kanban-plugin__item {
+    border: none;
+    box-shadow: var(--shadow-s);
+
+    &.is-search-hit {
+      box-shadow: inherit;
+    }
+  }
+  .kanban-plugin__item:has(.markdown-source-view) {
+    border: var(--input-border-width) solid var(--background-modifier-border-focus);
+    background-color: var(--background-input);
+
+    .kanban-plugin__item-content-wrapper {
+      background: transparent;
+    }
+    .kanban-plugin__item-title-wrapper {
+      background: transparent;
+    }
+    .cm-contentContainer {
+      padding: 0;
+    }
+    .kanban-plugin__item-postfix-button {
+      /* Style as search input clear button */
+      border-radius: 100%;
+      background-color: var(--search-clear-button-color);
+      color: var(--background-secondary);
+      cursor: var(--cursor);
+      line-height: 0;
+      height: var(--search-clear-button-size);
+      width: var(--search-clear-button-size);
+      min-height: var(--search-clear-button-size);
+      min-width: var(--search-clear-button-size);
+      margin: auto;
+      padding: 0 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.15s ease-in-out;
+
+      .kanban-plugin__icon svg {
+        height: calc(0.8 * var(--search-clear-button-size));
+        width: calc(0.8 * var(--search-clear-button-size));
+        display: block;
+        color: inherit;
+      }
+    }
+    @media (hover: hover) {
+      .kanban-plugin__item-postfix-button:hover {
+        background-color: var(--text-normal);
+        transition: color 0.15s ease-in-out;
+      }
+    }
+  }
+  .kanban-plugin__drag-container > .kanban-plugin__item-wrapper .kanban-plugin__item {
+    border-color: none;
+    box-shadow: var(--theme-shadow-draggingItem);
+  }
+  .kanban-plugin__item-title-wrapper:not(:only-child) {
+    border-bottom: none;
+  }
+  .kanban-plugin__item-form {
+    border: none;
+  }
+  .kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
+    padding: var(--input-border-width);
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    min-height: var(--input-height);
+  }
+  /* Autocomplete menu when [[ is entered */
+  .kanban-plugin__autocomplete {
+    font-size: inherit;
+    min-width: 20ch;
+    max-width: 40ch;
+    max-height: 12rem;
+  }
+  .kanban-plugin__lane-form-wrapper {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+    box-shadow: var(--shadow-s);
+    border-radius: var(--radius-m);
+    top: 0.5em;
+    right: 0.5em;
+    width: auto;
+
+    .kanban-plugin__lane-input-wrapper {
+      padding: 0;
+    }
+
+    .kanban-plugin__checkbox-wrapper {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .kanban-plugin__lane-input-actions {
+      padding: 0;
+      justify-content: flex-end;
+    }
+  }
+}

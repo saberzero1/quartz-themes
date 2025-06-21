@@ -1,0 +1,234 @@
+.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) .workspace-tabs.mod-top,
+body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) {
+  --titlebar-background-focused: rgb(var(--cpt-mantle));
+  --file-header-border: var(--border-width) dotted var(--background-modifier-border);
+}
+
+.aura-origin-layout:not(.aura-colorful-frame) .workspace-ribbon.mod-left:before {
+  background-color: var(--ribbon-background);
+  border-right: var(--tab-outline-width) solid var(--ribbon-background);
+  border-bottom: var(--tab-outline-width) solid var(--background-secondary-alt);
+}
+
+.aura-origin-layout:not(.aura-colorful-frame) .workspace-tab-header-container {
+  background-color: var(--ribbon-background) !important;
+}
+
+.aura-origin-layout:not(.aura-colorful-frame) .mod-left-split .workspace-tab-header.is-active {
+  background-color: var(--background-secondary) !important;
+}
+
+.aura-origin-layout:not(.aura-colorful-frame) .titlebar {
+  background-color: var(--ribbon-background) !important;
+}
+
+.aura-colorful-frame:not(.aura-translucent-window) {
+  --titlebar-background: rgba(var(--cpt-accent), var(--aura-colorful-frame-opacity, 1));
+  --titlebar-background-focused: rgba(var(--cpt-accent), var(--aura-colorful-frame-opacity, 1));
+  --tab-container-background: rgba(var(--cpt-accent), 0.7);
+}
+
+.aura-card-layout:not(.aura-translucent-window) .horizontal-main-container,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tabs
+  .workspace-tab-header-container,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tabs
+  .workspace-tab-header-container,
+.aura-card-layout:not(.aura-translucent-window) .mod-root .workspace-tabs .workspace-leaf,
+.aura-card-layout:not(.aura-translucent-window) .mod-vertical,
+.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tab-container,
+.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tabs,
+.aura-card-layout:not(.aura-translucent-window)
+  .workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
+.aura-card-layout:not(.aura-translucent-window) .workspace-split.mod-vertical,
+.aura-card-layout:not(.aura-translucent-window) .workspace {
+  --tab-container-background: rgba(var(--cpt-accent), var(--aura-colorful-frame-opacity));
+  --tab-container-background-focused: rgba(var(--cpt-accent), var(--aura-colorful-frame-opacity));
+  background-color: rgba(var(--cpt-accent), var(--aura-colorful-frame-opacity));
+}
+
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header-inner-icon,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-left-split
+  .workspace-tab-header
+  .workspace-tab-header-inner-icon,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header
+  .workspace-tab-header-inner-icon,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header
+  .workspace-tab-header-inner-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header-inner-icon,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-right-split
+  .workspace-tab-header
+  .workspace-tab-header-inner-icon,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-right-split
+  .workspace-tab-header
+  .workspace-tab-header-inner-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header-inner-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner-icon,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-vertical
+  .workspace-tab-header:not(.is-active),
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-vertical
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner:hover,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .mod-vertical
+  .workspace-tab-header-inner-icon:hover,
+.aura-card-layout:not(.aura-translucent-window)
+  .workspace-tabs.mod-top
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner-icon,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .workspace-split.mod-vertical
+  .mod-top
+  .workspace-tab-header:not(.is-active):hover,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-top
+  .workspace-tab-header:not(.is-active):hover,
+.aura-card-layout:not(.aura-translucent-window)
+  .mod-vertical
+  .workspace-tab-header:not(.is-active):hover,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-tab-list,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .workspace-tab-header-tab-list
+  .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-new-tab,
+.aura-colorful-frame:not(.aura-translucent-window)
+  .workspace-tab-header-new-tab
+  .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions).aura-card-layout
+  .workspace-ribbon
+  .side-dock-actions
+  > .clickable-icon,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions).aura-card-layout
+  .workspace-ribbon
+  .side-dock-settings
+  > .clickable-icon,
+.aura-card-layout:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer)
+  .mod-left-split
+  .workspace-tabs.mod-top
+  .tree-item
+  > .tree-item-self,
+.aura-card-layout:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer)
+  .workspace-tabs.mod-top
+  .nav-header
+  > .nav-buttons-container,
+.aura-card-layout:not(.aura-translucent-window)
+  .workspace-split
+  .workspace-sidedock-vault-profile
+  > .workspace-drawer-vault-switcher,
+.aura-card-layout:not(.aura-translucent-window)
+  .workspace-split
+  .workspace-sidedock-vault-profile
+  > .workspace-drawer-vault-switcher
+  > .workspace-drawer-vault-switcher-icon,
+.aura-card-layout:not(.aura-translucent-window)
+  .workspace-split
+  .workspace-sidedock-vault-profile
+  > .workspace-drawer-vault-actions,
+.aura-colorful-frame:not(.aura-translucent-window) .titlebar > .titlebar-inner > .titlebar-text,
+.aura-colorful-frame
+  .workspace-tabs
+  .workspace-tab-header-inner
+  .workspace-tab-header-status-container
+  > .workspace-tab-header-status-icon {
+  color: rgb(var(--cpt-black)) !important;
+  --icon-color: rgb(var(--cpt-black)) !important;
+  --icon-color-hover: rgb(var(--cpt-black)) !important;
+  --icon-color-focused: rgb(var(--cpt-black)) !important;
+  --tab-text-color-focused: rgb(var(--cpt-black)) !important;
+  --tab-text-color-focused-active-current: rgb(var(--cpt-black)) !important;
+}
+
+.aura-colorful-frame .mod-top .workspace-tab-header.is-active,
+.aura-colorful-frame .mod-top .workspace-tab-header:hover,
+.aura-card-layout .workspace-tabs .workspace-tab-header.is-active,
+.aura-card-layout .workspace-tabs .workspace-tab-header:hover,
+.aura-colorful-frame .workspace-tab-header-tab-list .clickable-icon:hover,
+.aura-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover,
+.aura-card-layout
+  .workspace-split
+  .workspace-sidedock-vault-profile
+  > .workspace-drawer-vault-switcher,
+.aura-card-layout .clickable-icon:hover {
+  --background-modifier-hover: rgba(var(--cpt-crust), 0.1);
+}
+
+.aura-colorful-frame:not(.aura-card-layout)
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container {
+  --tab-container-background: rgb(var(--cpt-crust));
+}
+
+.aura-card-layout .workspace-tabs .workspace-leaf {
+  background-color: transparent !important;
+}
+
+.aura-colorful-frame .titlebar-button-container {
+  color: rgb(var(--cpt-black));
+}
+
+.aura-colorful-frame .sidebar-toggle-button {
+  background-color: var(--background-primary);
+  height: 35px;
+  width: 44px;
+  border-radius: 7px;
+}
+
+.aura-colorful-frame .sidebar-toggle-button.mod-left {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.aura-colorful-frame .sidebar-toggle-button.mod-right {
+  margin-top: 2px;
+}
+
+.aura-colorful-frame .workspace-split.mod-vertical .workspace-tab-header-new-tab {
+  margin-left: auto;
+}
+
+.aura-colorful-frame .workspace-split.mod-vertical .workspace-tab-header-spacer {
+  display: none;
+}
+
+.aura-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border: none;
+}
+
+.aura-rainbow-folders.aura-card-layout:not(.aura-card-layout-fileexplorer)
+  .mod-left-split
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: 1px solid rgb(var(--cpt-crust));
+}
