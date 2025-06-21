@@ -1,7 +1,0 @@
-.indent-p .markdown-rendered p {
-  text-indent: var(--p-indent);
-}
-
-body:not(.indent-p) .setting-item[data-id="p-indent"] {
-  display: none;
-}

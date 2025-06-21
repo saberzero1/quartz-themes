@@ -105,7 +105,7 @@ html[saved-theme="dark"] {
   );
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
-  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-text-main: #FAF7F5rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent: var(--color-accent-1);
@@ -213,7 +213,7 @@ html[saved-theme="dark"] {
   );
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
-  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-text-main: #FAF7F5rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent: var(--color-accent-1);
@@ -331,7 +331,7 @@ html[saved-theme="light"] {
   );
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
-  --ss-light-text-main: 0, 0, 0;
+  --ss-light-text-main: #000000rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent-hover: #000;
@@ -433,7 +433,7 @@ html[saved-theme="light"] {
   );
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
-  --ss-light-text-main: 0, 0, 0;
+  --ss-light-text-main: #000000rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent-hover: #000;
@@ -906,7 +906,7 @@ html[saved-theme="dark"] {
   );
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
-  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-text-main: #FAF7F5rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent: var(--color-accent-1);
@@ -1014,7 +1014,7 @@ html[saved-theme="dark"] {
   );
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
-  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-text-main: #FAF7F5rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent: var(--color-accent-1);
@@ -1133,7 +1133,7 @@ html[saved-theme="light"] {
   );
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
-  --ss-light-text-main: 0, 0, 0;
+  --ss-light-text-main: #000000rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent-hover: #000;
@@ -1235,7 +1235,7 @@ html[saved-theme="light"] {
   );
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
-  --ss-light-text-main: 0, 0, 0;
+  --ss-light-text-main: #000000rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent-hover: #000;

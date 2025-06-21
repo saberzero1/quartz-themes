@@ -1,7 +1,0 @@
-body.enable-modal-blur .modal-bg {
-  backdrop-filter: blur(var(--modal-blur-amount)) !important;
-}
-
-body.enable-modal-blur .modal-bg {
-  backdrop-filter: blur(var(--modal-blur-amount));
-}

@@ -1,5 +1,5 @@
 import fs from "fs";
-import { applyRuleToString } from "./util.mjs";
+import { applyRuleToString, ensureDirectoryExists } from "./util.mjs";
 import { combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
 
 /**
@@ -460,4 +460,28 @@ export function writeIndex(themeName, themeCSS) {
   resultCSS = resultCSS.replace(/\n+/g, "\n") // Remove extra newlines
   resultCSS = resultCSS.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
   fs.writeFileSync(`./themes/${themeName}/_index.scss`, resultCSS, "utf8")
+}
+
+export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPath = "") {
+  if (styleRulesCSS[0] !== "" || styleRulesCSS[1] !== "" || styleRulesCSS[2] !== "") return
+  subPath = subPath.endsWith("/") ? subPath.slice(0, -1) : subPath
+  subPath = subPath.startsWith("/") ? subPath.slice(1) : subPath
+
+  ensureDirectoryExists(`./extras/themes/${themeName}/${settingName}/${subPath}`)
+  // Write the style setting to the extras file
+  fs.writeFileSync(
+    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
+    styleRulesCSS[0],
+    "utf8",
+  )
+  fs.writeFileSync(
+    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
+    styleRulesCSS[1],
+    "utf8",
+  )
+  fs.writeFileSync(
+    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
+    styleRulesCSS[2],
+    "utf8",
+  )
 }

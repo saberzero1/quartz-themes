@@ -10,8 +10,8 @@
 :root:root,
 html[saved-theme="light"] {
   --background-modifier-hover: #a3d5aa;
-  --background-primary: #fcfef3;
-  --background-secondary: #f8f6ea;
+  --background-primary: light-dark(#fcfef3, #000000);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -27,7 +27,6 @@ html[saved-theme="light"] {
   --color-base-00: #ffffff;
   --color-base-10: #fafafa;
   --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
@@ -58,8 +57,8 @@ html[saved-theme="light"] {
   --text-normal: #6f6e6a;
   color-scheme: light;
   --background-modifier-hover: #a3d5aa;
-  --background-primary: #fcfef3;
-  --background-secondary: #f8f6ea;
+  --background-primary: light-dark(#fcfef3, #000000);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -75,7 +74,6 @@ html[saved-theme="light"] {
   --color-base-00: #ffffff;
   --color-base-10: #fafafa;
   --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
@@ -278,9 +276,9 @@ body {
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#fcfef3, #000000);
   --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
@@ -498,8 +496,8 @@ body {
 :root,
 html {
   --background-modifier-hover: #a3d5aa;
-  --background-primary: #fcfef3;
-  --background-secondary: #f8f6ea;
+  --background-primary: light-dark(#fcfef3, #000000);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -515,7 +513,6 @@ html {
   --color-base-00: #ffffff;
   --color-base-10: #fafafa;
   --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
@@ -546,8 +543,8 @@ html {
   --text-normal: #6f6e6a;
   color-scheme: light;
   --background-modifier-hover: #a3d5aa;
-  --background-primary: #fcfef3;
-  --background-secondary: #f8f6ea;
+  --background-primary: light-dark(#fcfef3, #000000);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -563,7 +560,6 @@ html {
   --color-base-00: #ffffff;
   --color-base-10: #fafafa;
   --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;

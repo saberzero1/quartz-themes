@@ -21329,10 +21329,10 @@ body.is-screenshotting *::-webkit-scrollbar {
   --checkbox-size: 17px;
   --cursor: pointer;
   --file-margins: var(--size-4-2) var(--size-4-6);
-  --font-ui-large: calc(var(--font-text-size) * 1.2);
-  --font-ui-medium: var(--font-text-size);
-  --font-ui-small: calc(var(--font-text-size) * 0.937);
-  --font-ui-smaller: calc(var(--font-text-size) * 0.8);
+  --font-ui-large: 20px;
+  --font-ui-medium: 14px;
+  --font-ui-small: 12px;
+  --font-ui-smaller: 11px;
   --icon-l: 24px;
   --icon-m: 20px;
   --icon-opacity: 1;

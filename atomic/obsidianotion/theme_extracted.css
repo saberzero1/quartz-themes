@@ -192,7 +192,7 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: var(--font-family-sans);
+  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
@@ -707,7 +707,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
-  --width-body-content: 800px;
+  --width-body-content: 700px;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -moz-osx-font-smoothing: grayscale;

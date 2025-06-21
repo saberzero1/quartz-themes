@@ -1921,7 +1921,7 @@ body {
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: var(--h1-size);
+  --inline-title-size: 2.2em;
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
@@ -2148,8 +2148,8 @@ body {
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
   --status-bar-background: var(--background-secondary);
-  --status-bar-background-color-dt: #2b2b2b;
-  --status-bar-background-color-lt: #ebecef;
+  --status-bar-background-color-dt: #2B2B2Bhsl;
+  --status-bar-background-color-lt: #EBECEFhsl;
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: var(--font-ui-small);
@@ -24768,13 +24768,13 @@ body:is(.theme-light, .theme-dark) {
   --color-accent: var(--interactive-accent-text);
   --color-accent-1: var(--interactive-accent-tint);
   --color-accent-2: var(--interactive-accent-base);
-  --color-accent-base-dt: var(--color-red-base-hsl);
-  --color-accent-base-lt: var(--color-red-base-hsl);
+  --color-accent-base-dt: #FF0000hsl-values;
+  --color-accent-base-lt: #FF0000hsl-values;
   --color-accent-hsl: var(--interactive-accent-text-hsl);
-  --color-accent-text-dt: var(--color-red-text-hsl);
-  --color-accent-text-lt: var(--color-red-text-hsl);
-  --color-accent-tint-dt: var(--color-red-tint-hsl);
-  --color-accent-tint-lt: var(--color-red-tint-hsl);
+  --color-accent-text-dt: #FF0000hsl-values;
+  --color-accent-text-lt: #FF0000hsl-values;
+  --color-accent-tint-dt: #FF0000hsl-values;
+  --color-accent-tint-lt: #FF0000hsl-values;
   --color-blue: var(--color-blue-text);
   --color-blue-base: hsl(var(--color-blue-base-hsl));
   --color-blue-text: hsl(var(--color-blue-text-hsl));
@@ -35323,7 +35323,7 @@ settings:
         id: custom-vault-banner-icon-url
         title: Vault Banner Icon (URL)
         description: Customise the Vault Banner Icon. Insert a URL to an image in between the brackets of 'url()'.
-        type: variable-text
+        type: info-text
         default: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000;'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E)
     -
         id: focused-mode
@@ -35359,7 +35359,7 @@ settings:
     -
         id: fade-away-opacity
         title: Fade Away Opacity
-        description: Set the opacity value you'd like the UI to fade to.
+        description: Set the opacity value you would like the UI to fade to.
         type: variable-number-slider
         level: 2
         min: 0
@@ -35369,7 +35369,7 @@ settings:
     -
         id: fade-away-delay
         title: Fade Away Delay
-        description: Set the delay value (ms) you'd like the UI to stay active after being hovered over.
+        description: Set the delay value (ms) you would like the UI to stay active after being hovered over.
         type: variable-number-slider
         level: 2
         min: 0
@@ -36911,7 +36911,7 @@ settings:
         type: heading
         level: 1
         collapsed: true
-    -   
+    -
         id: sidebar-and-main-workspace
         title: Sidebar and Main Workspace
         description: Settings for positioning, alignment, etc. of different UI elements within the Sidebars and the Main Workspace.
@@ -37401,7 +37401,7 @@ settings:
     -
         id: pt-disable-callout-styling
         title: Disable Prism Callout Styling
-        description: This option removes the custom Callout Styling introduced with Prism and reverts to a completely default look. This should be used if you prefer the default callout styling or have CSS Snippets that use it's customisation options.
+        description: This option removes the custom Callout Styling introduced with Prism and reverts to a completely default look. This should be used if you prefer the default callout styling or have CSS Snippets that use its customisation options.
         default: false
         type: class-toggle
     -
@@ -37419,7 +37419,7 @@ settings:
     -
         id: pt-pdf-dark-theme
         title: Enable PDF Dark Theme
-        description: This option adds styling to the PDF pages by blending in with the colour scheme in Dark mode; making it more eye friendly. This isn't a perfect solution. Note that some images might look inverted and colours be a different shade compared to the original file.
+        description: This option adds styling to the PDF pages by blending in with the colour scheme in Dark mode; making it more eye friendly. This is not a perfect solution. Note that some images might look inverted and colours be a different shade compared to the original file.
         default: false
         type: class-toggle
     -

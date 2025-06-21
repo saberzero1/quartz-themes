@@ -1,6 +1,0 @@
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-toggle)
-  .workspace-split
-  .sidebar-toggle-button {
-  opacity: 0;
-  transition: opacity 0.1s;
-}

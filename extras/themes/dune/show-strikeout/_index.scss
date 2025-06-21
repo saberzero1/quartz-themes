@@ -1,7 +1,0 @@
-body:not(.show-strikeout)
-  .task-list-item.is-checked[data-task]:is([data-task="x"], [data-task="X"]),
-body:not(.show-strikeout) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-body:not(.show-strikeout) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
-  text-decoration: none;
-  color: revert;
-}

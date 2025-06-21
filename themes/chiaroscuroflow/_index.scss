@@ -12,7 +12,7 @@ html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: rgb(25, 18, 63);
   --background-secondary: var(--background-secondary-dark, rgb(45, 45, 45));
-  --code-background: var(--code-background-dark, rgb(33, 19, 19));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -26,7 +26,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-25: #2a2a2a;
@@ -63,7 +62,7 @@ html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: rgb(25, 18, 63);
   --background-secondary: var(--background-secondary-dark, rgb(45, 45, 45));
-  --code-background: var(--code-background-dark, rgb(33, 19, 19));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -77,7 +76,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-25: #2a2a2a;
@@ -128,7 +126,7 @@ html[saved-theme="dark"] {
 html[saved-theme="light"] {
   --background-primary: rgb(255, 250, 205);
   --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
-  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -142,7 +140,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-25: #e3e3e3;
@@ -175,7 +172,7 @@ html[saved-theme="light"] {
   color-scheme: light;
   --background-primary: rgb(255, 250, 205);
   --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
-  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -189,7 +186,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-25: #e3e3e3;
@@ -359,7 +355,6 @@ body {
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
   --bold-modifier: 200;
@@ -398,7 +393,7 @@ body {
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
-  --code-background: var(--background-primary-alt);
+  --code-background: #F0F0F0rgb;
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -583,7 +578,7 @@ html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: rgb(25, 18, 63);
   --background-secondary: var(--background-secondary-dark, rgb(45, 45, 45));
-  --code-background: var(--code-background-dark, rgb(33, 19, 19));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -597,7 +592,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-25: #2a2a2a;
@@ -634,7 +628,7 @@ html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: rgb(25, 18, 63);
   --background-secondary: var(--background-secondary-dark, rgb(45, 45, 45));
-  --code-background: var(--code-background-dark, rgb(33, 19, 19));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -648,7 +642,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-25: #2a2a2a;
@@ -700,7 +693,7 @@ html[saved-theme="dark"] {
 html[saved-theme="light"] {
   --background-primary: rgb(255, 250, 205);
   --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
-  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -714,7 +707,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-25: #e3e3e3;
@@ -747,7 +739,7 @@ html[saved-theme="light"] {
   color-scheme: light;
   --background-primary: rgb(255, 250, 205);
   --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
-  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -761,7 +753,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-25: #e3e3e3;

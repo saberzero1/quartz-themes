@@ -9,10 +9,10 @@
 
 :root:root,
 html[saved-theme="dark"] {
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-primary: #020517;
+  --background-modifier-form-field: light-dark(#00000033, #ffffff33);
+  --background-primary: light-dark(#00000033, #ffffff33);
   --background-primary-alt: #44475a;
-  --background-secondary: #020517;
+  --background-secondary: light-dark(#00000033, #ffffff33);
   --border-color: #2b2727;
   --checkbox-color: #bd93f9;
   --code-background: #1d1c39;
@@ -28,10 +28,8 @@ html[saved-theme="dark"] {
     calc(var(--accent-l) * 1.29)
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-base-00: #1e1e1e;
   --color-base-10: #242424;
   --color-base-100: #dadada;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
@@ -55,7 +53,7 @@ html[saved-theme="dark"] {
   --hr-color: white;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --pre-code: #1d1c39;
+  --pre-code: light-dark(#00000033, #ffffff33);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
@@ -67,10 +65,10 @@ html[saved-theme="dark"] {
   --text-muted: #f8f8f2;
   --text-normal: #f8f8f2;
   color-scheme: dark;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-primary: #020517;
+  --background-modifier-form-field: light-dark(#00000033, #ffffff33);
+  --background-primary: light-dark(#00000033, #ffffff33);
   --background-primary-alt: #44475a;
-  --background-secondary: #020517;
+  --background-secondary: light-dark(#00000033, #ffffff33);
   --border-color: #2b2727;
   --checkbox-color: #bd93f9;
   --code-background: #1d1c39;
@@ -86,10 +84,8 @@ html[saved-theme="dark"] {
     calc(var(--accent-l) * 1.29)
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-base-00: #1e1e1e;
   --color-base-10: #242424;
   --color-base-100: #dadada;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
@@ -113,7 +109,7 @@ html[saved-theme="dark"] {
   --hr-color: white;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --pre-code: #1d1c39;
+  --pre-code: light-dark(#00000033, #ffffff33);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
@@ -219,11 +215,11 @@ body {
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-form-field: var(--color-base-00);
+  --background-modifier-form-field: light-dark(#00000033, #ffffff33);
   --background-modifier-hover: var(--color-user-request);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#00000033, #ffffff33);
   --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-secondary: light-dark(#00000033, #ffffff33);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
@@ -279,7 +275,7 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
-  --color-user-request: #ffffff13;
+  --color-user-request: light-dark(#00000033, #ffffff33);
   --cursor: default;
   --cursor-link: pointer;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
@@ -357,7 +353,7 @@ body {
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
-  --indentation-guide-color: #ffffff30;
+  --indentation-guide-color: light-dark(#00000033, #ffffff33);
   --indentation-guide-width: 1px;
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -447,10 +443,10 @@ body {
 /* START DARK */
 :root,
 html {
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-primary: #020517;
+  --background-modifier-form-field: light-dark(#00000033, #ffffff33);
+  --background-primary: light-dark(#00000033, #ffffff33);
   --background-primary-alt: #44475a;
-  --background-secondary: #020517;
+  --background-secondary: light-dark(#00000033, #ffffff33);
   --border-color: #2b2727;
   --checkbox-color: #bd93f9;
   --code-background: #1d1c39;
@@ -466,10 +462,8 @@ html {
     calc(var(--accent-l) * 1.29)
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-base-00: #1e1e1e;
   --color-base-10: #242424;
   --color-base-100: #dadada;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
@@ -493,7 +487,7 @@ html {
   --hr-color: white;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --pre-code: #1d1c39;
+  --pre-code: light-dark(#00000033, #ffffff33);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
@@ -505,10 +499,10 @@ html {
   --text-muted: #f8f8f2;
   --text-normal: #f8f8f2;
   color-scheme: dark;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-primary: #020517;
+  --background-modifier-form-field: light-dark(#00000033, #ffffff33);
+  --background-primary: light-dark(#00000033, #ffffff33);
   --background-primary-alt: #44475a;
-  --background-secondary: #020517;
+  --background-secondary: light-dark(#00000033, #ffffff33);
   --border-color: #2b2727;
   --checkbox-color: #bd93f9;
   --code-background: #1d1c39;
@@ -524,10 +518,8 @@ html {
     calc(var(--accent-l) * 1.29)
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-base-00: #1e1e1e;
   --color-base-10: #242424;
   --color-base-100: #dadada;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
@@ -551,7 +543,7 @@ html {
   --hr-color: white;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --pre-code: #1d1c39;
+  --pre-code: light-dark(#00000033, #ffffff33);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),

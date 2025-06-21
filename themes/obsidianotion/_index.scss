@@ -436,9 +436,7 @@ body {
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor: default;
   --cursor-link: pointer;
-  --font-default: var(--font-family-sans);
-  --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-sans: var(--font-family-inter);
+  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";

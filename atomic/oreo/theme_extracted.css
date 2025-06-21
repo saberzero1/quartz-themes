@@ -529,42 +529,42 @@ body {
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h1-color: inherit;
-  --h1-font: "Arial", sans-serif;
+  --h1-font: Arial, sans-serif;
   --h1-line-height: 1.5;
   --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: bold;
   --h2-color: inherit;
-  --h2-font: "Arial", sans-serif;
+  --h2-font: Arial, sans-serif;
   --h2-line-height: 1.5;
   --h2-size: 1.75em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: bold;
   --h3-color: inherit;
-  --h3-font: "Arial", sans-serif;
+  --h3-font: Arial, sans-serif;
   --h3-line-height: 1.5;
   --h3-size: 1.5em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: bold;
   --h4-color: inherit;
-  --h4-font: "Arial", sans-serif;
+  --h4-font: Arial, sans-serif;
   --h4-line-height: 1.5;
   --h4-size: 1.25em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: bold;
   --h5-color: inherit;
-  --h5-font: "Arial", sans-serif;
+  --h5-font: Arial, sans-serif;
   --h5-line-height: 1.5;
   --h5-size: 1em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: bold;
   --h6-color: inherit;
-  --h6-font: "Arial", sans-serif;
+  --h6-font: Arial, sans-serif;
   --h6-line-height: 1.5;
   --h6-size: 0.875em;
   --h6-style: normal;
@@ -604,7 +604,7 @@ body {
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
   --inline-title-color: #000000;
-  --inline-title-font: "Arial", sans-serif;
+  --inline-title-font: Arial, sans-serif;
   --inline-title-line-height: 1.5;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 1.2em;
@@ -994,27 +994,27 @@ body {
 }
 
 h1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 h2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 h3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 h4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 h5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 h6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 h1 {
@@ -1900,7 +1900,7 @@ svg.svg-icon {
   --icon-opacity-hover: 0.8;
   --indentation-guide-color: #444444;
   --indentation-guide-color-active: #ffcc00;
-  --inline-title-color: #ffffff;
+  --inline-title-color: #000000;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
@@ -1913,17 +1913,17 @@ svg.svg-icon {
   --interactive-hover: #4d4d4d;
   --interactive-normal: #333333;
   --italic-color: #cccccc;
-  --link-color: #87cefa;
-  --link-color-hover: #4682b4;
+  --link-color: #1e90ff;
+  --link-color-hover: #1c86ee;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 1px;
-  --link-external-color: #98fb98;
-  --link-external-color-hover: #32cd32;
+  --link-external-color: #32cd32;
+  --link-external-color-hover: #2eb82e;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
-  --link-unresolved-color: #ff6347;
-  --link-unresolved-decoration-color: #ff6347;
+  --link-unresolved-color: #ff4500;
+  --link-unresolved-decoration-color: #ff4500;
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-filter: brightness(0.8);
   --link-unresolved-opacity: 0.7;

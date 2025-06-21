@@ -122,7 +122,7 @@ settings:
         title.zh: 窗体背景图片
         description: Set the background picture of the window.
         description.zh: 设置窗体背景图片；
-        type: variable-text
+        type: info-text
         default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
     -
         id: macos-header

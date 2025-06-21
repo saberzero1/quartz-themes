@@ -2114,42 +2114,42 @@ body {
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h1-color: inherit;
-  --h1-font: "Arial", sans-serif;
+  --h1-font: Arial, sans-serif;
   --h1-line-height: 1.5;
   --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: bold;
   --h2-color: inherit;
-  --h2-font: "Arial", sans-serif;
+  --h2-font: Arial, sans-serif;
   --h2-line-height: 1.5;
   --h2-size: 1.75em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: bold;
   --h3-color: inherit;
-  --h3-font: "Arial", sans-serif;
+  --h3-font: Arial, sans-serif;
   --h3-line-height: 1.5;
   --h3-size: 1.5em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: bold;
   --h4-color: inherit;
-  --h4-font: "Arial", sans-serif;
+  --h4-font: Arial, sans-serif;
   --h4-line-height: 1.5;
   --h4-size: 1.25em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: bold;
   --h5-color: inherit;
-  --h5-font: "Arial", sans-serif;
+  --h5-font: Arial, sans-serif;
   --h5-line-height: 1.5;
   --h5-size: 1em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: bold;
   --h6-color: inherit;
-  --h6-font: "Arial", sans-serif;
+  --h6-font: Arial, sans-serif;
   --h6-line-height: 1.5;
   --h6-size: 0.875em;
   --h6-style: normal;
@@ -2189,7 +2189,7 @@ body {
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
   --inline-title-color: #000000;
-  --inline-title-font: "Arial", sans-serif;
+  --inline-title-font: Arial, sans-serif;
   --inline-title-line-height: 1.5;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 1.2em;
@@ -2892,7 +2892,7 @@ body {
   --icon-opacity-hover: 0.8;
   --indentation-guide-color: #444444;
   --indentation-guide-color-active: #ffcc00;
-  --inline-title-color: #ffffff;
+  --inline-title-color: #000000;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
@@ -2905,17 +2905,17 @@ body {
   --interactive-hover: #4d4d4d;
   --interactive-normal: #333333;
   --italic-color: #cccccc;
-  --link-color: #87cefa;
-  --link-color-hover: #4682b4;
+  --link-color: #1e90ff;
+  --link-color-hover: #1c86ee;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 1px;
-  --link-external-color: #98fb98;
-  --link-external-color-hover: #32cd32;
+  --link-external-color: #32cd32;
+  --link-external-color-hover: #2eb82e;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
-  --link-unresolved-color: #ff6347;
-  --link-unresolved-decoration-color: #ff6347;
+  --link-unresolved-color: #ff4500;
+  --link-unresolved-decoration-color: #ff4500;
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-filter: brightness(0.8);
   --link-unresolved-opacity: 0.7;
@@ -3268,7 +3268,7 @@ body.is-translucent {
 
 @keyframes node-inserted {
   from {
-    --link-color: var(--text-warning);
+    --link-color: #1e90ff;
     color: var(--text-warning);
     inset-inline-start: -80%;
     outline-color: #fff;
@@ -3361,7 +3361,7 @@ body:not(.is-mobile) .app-container {
 
 .download-attachments .download-attachment-item {
   --checkbox-marker-color: var(--text-on-accent);
-  --checkbox-size: 1.15rem;
+  --checkbox-size: 16px;
   align-items: center;
   aspect-ratio: 1/1;
   background-color: var(--background-secondary);
@@ -9967,7 +9967,7 @@ select.mod-hidden {
 }
 
 .modal {
-  --checkbox-size: var(--font-ui-medium);
+  --checkbox-size: 16px;
   background-color: var(--modal-background);
   border: var(--modal-border-width) solid var(--modal-border-color);
   border-radius: var(--modal-radius);
@@ -10494,7 +10494,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"]:not(.mod-empty) {
-  --popover-font-size: var(--footnote-size);
+  --popover-font-size: 14px;
 }
 
 .popover.hover-popover
@@ -14491,11 +14491,11 @@ h6 {
 }
 
 h1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h2 {
@@ -14511,11 +14511,11 @@ h1 a {
 }
 
 h2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h3 {
@@ -14531,11 +14531,11 @@ h2 a {
 }
 
 h3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h4 {
@@ -14551,11 +14551,11 @@ h3 a {
 }
 
 h4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h5 {
@@ -14571,11 +14571,11 @@ h4 a {
 }
 
 h5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h6 {
@@ -14591,11 +14591,11 @@ h5 a {
 }
 
 h6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .markdown-rendered h6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .cm-formatting-header {
@@ -14642,27 +14642,27 @@ h6 a {
 }
 
 .HyperMD-header-1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .inline-title h1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-1 a {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-1 .cm-hmd-internal-link {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .inline-title h1 .cm-hmd-internal-link {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-1 .cm-hmd-internal-link {
-  --link-weight: var(--h1-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-2 {
@@ -14690,27 +14690,27 @@ h6 a {
 }
 
 .HyperMD-header-2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .inline-title h2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-2 a {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-2 .cm-hmd-internal-link {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .inline-title h2 .cm-hmd-internal-link {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-2 .cm-hmd-internal-link {
-  --link-weight: var(--h2-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-3 {
@@ -14738,27 +14738,27 @@ h6 a {
 }
 
 .HyperMD-header-3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .inline-title h3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-3 a {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-3 .cm-hmd-internal-link {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .inline-title h3 .cm-hmd-internal-link {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-3 .cm-hmd-internal-link {
-  --link-weight: var(--h3-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-4 {
@@ -14784,27 +14784,27 @@ h6 a {
 }
 
 .HyperMD-header-4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .inline-title h4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-4 a {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-4 .cm-hmd-internal-link {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .inline-title h4 .cm-hmd-internal-link {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-4 .cm-hmd-internal-link {
-  --link-weight: var(--h4-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-5 {
@@ -14830,27 +14830,27 @@ h6 a {
 }
 
 .HyperMD-header-5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .inline-title h5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-5 a {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-5 .cm-hmd-internal-link {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .inline-title h5 .cm-hmd-internal-link {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-5 .cm-hmd-internal-link {
-  --link-weight: var(--h5-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-6 {
@@ -14878,27 +14878,27 @@ h6 a {
 }
 
 .HyperMD-header-6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .inline-title h6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-6 a {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header-6 .cm-hmd-internal-link {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .inline-title h6 .cm-hmd-internal-link {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-list-line .cm-header-6 .cm-hmd-internal-link {
-  --link-weight: var(--h6-weight);
+  --link-weight: normal;
 }
 
 .HyperMD-header .cm-header-1 {
@@ -21768,7 +21768,7 @@ body.is-screenshotting *::-webkit-scrollbar {
   --background-modifier-form-field: var(--background-secondary);
   --bases-header-height: 50px;
   --caret-color: var(--text-accent);
-  --checkbox-size: 17px;
+  --checkbox-size: 16px;
   --cursor: pointer;
   --file-margins: var(--size-4-2) var(--size-4-6);
   --font-ui-large: calc(var(--font-text-size) * 1.2);

@@ -2390,7 +2390,7 @@ body {
   --titlebar-background: rgb(248, 248, 248);
   --win-blur: 40px;
   --win-editor-bg-color: rgba(240, 240, 240, 0.65);
-  --win-window-brightness: 0.6;
+  --win-window-brightness: 0.4;
   --win-window-opacity: 0.2;
   --workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
   color-scheme: light;
@@ -2489,8 +2489,8 @@ body {
   --titlebar-background: rgb(42, 42, 42);
   --win-blur: 20px;
   --win-editor-bg-color: rgba(18, 18, 18, 0.65);
-  --win-window-brightness: 0.3;
-  --win-window-opacity: 0.4;
+  --win-window-brightness: 0.4;
+  --win-window-opacity: 0.2;
   --workspace-background-translucent: hsla(0, 0%, 0%, 0.2);
   color-scheme: dark;
 }
@@ -21444,7 +21444,7 @@ body.is-screenshotting *::-webkit-scrollbar {
 body.is-mobile {
   --input-radius: 20px;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
-  --window-font-size: calc(var(--window-font-size) * 0.9);
+  --window-font-size: 15;
   -webkit-text-size-adjust: 100%;
   height: 100vh;
   position: relative;
@@ -24063,7 +24063,7 @@ settings:
         title.zh: 窗体背景图片
         description: Set the background picture of the window.
         description.zh: 设置窗体背景图片；
-        type: variable-text
+        type: info-text
         default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
     -
         id: macos-header

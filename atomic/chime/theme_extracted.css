@@ -91,7 +91,7 @@ body {
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-radius-average: 11px;
-  --border-width: 1px;
+  --border-width: 1.2px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
@@ -147,7 +147,7 @@ body {
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
+  --code-normal: var(--text-muted);
   --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
@@ -263,7 +263,7 @@ body {
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
-  --h1-weight: 700;
+  --h1-weight: 600;
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
@@ -297,7 +297,7 @@ body {
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
   --h6-style: normal;
-  --h6-variant: small-caps;
+  --h6-variant: petite-caps;
   --h6-weight: 600;
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
@@ -609,7 +609,7 @@ body {
   --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-muted);
-  --tab-text-color-focused-active-current: var(--color-accent-2);
+  --tab-text-color-focused-active-current: var(--text-accent);
   --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-width: 240px;
   --table-add-button-background: transparent;

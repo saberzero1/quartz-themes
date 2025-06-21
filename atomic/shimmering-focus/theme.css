@@ -983,7 +983,7 @@
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: 3.5px;
   --viewer-container-height: 0;
-  --vim-cursor-blink-rate: 1.2s;
+  --vim-cursor-blink-rate: 1200ms;
   --xfa-focus-outline: 2px solid CanvasText;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
@@ -1739,7 +1739,7 @@ body {
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
+  --code-size: 0.875em;
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
@@ -1990,7 +1990,7 @@ body {
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --longform-base-line-height: 1;
-  --longform-font-size: 1.3rem;
+  --longform-font-size: 1.2rem;
   --longform-font-text-theme: "Garamond", "Times New Roman", serif;
   --longform-letter-spacing: 0px;
   --menu-backdrop-filter: none;
@@ -2213,7 +2213,7 @@ body {
   --tab-text-color-focused-active: var(--text-muted);
   --tab-text-color-focused-active-current: var(--text-normal);
   --tab-text-color-focused-highlighted: var(--text-accent);
-  --tab-width: 200px;
+  --tab-width: 250px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: var(--background-modifier-border);
   --table-add-button-border-width: var(--table-border-width);
@@ -2380,7 +2380,7 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --highlight-hue-1: 50;
+  --highlight-hue-1: 40;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 70%/40%;
   --hotkey-color: var(--secondary-accent);
@@ -2480,7 +2480,7 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --highlight-hue-1: 50;
+  --highlight-hue-1: 40;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 40%/40%;
   --hotkey-color: var(--secondary-accent);
@@ -15895,7 +15895,7 @@ mjx-container {
 }
 
 .cm-s-obsidian .HyperMD-table-row span.cm-inline-code {
-  --code-size: 1em;
+  --code-size: 0.875em;
 }
 
 .cm-s-obsidian .HyperMD-table-rtl {
@@ -24439,7 +24439,7 @@ body .markdown-rendered tbody tr:nth-child(odd):hover {
 
 .unrestricted-line-length-tables:not(.is-mobile)
   :is(.markdown-source-view, .markdown-preview-view):has(table, .HyperMD-table-2) {
-  --file-line-width: 100%;
+  --file-line-width: 700px;
 }
 
 .table-cell-wrapper:has(.cm-s-obsidian) {
@@ -25891,7 +25891,7 @@ body:not(.no-active-line-highlight) .is-live-preview .cm-active .list-bullet:aft
 }
 
 .readable-line-length-toggle {
-  --file-line-width: 100%;
+  --file-line-width: 700px;
 }
 
 .suggestion-container .suggestion {

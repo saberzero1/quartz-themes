@@ -17,7 +17,7 @@ html[saved-theme="dark"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -94,7 +94,7 @@ html[saved-theme="dark"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -186,7 +186,7 @@ html[saved-theme="light"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -260,7 +260,7 @@ html[saved-theme="light"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -430,14 +430,14 @@ body {
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
   --bold-modifier: 200;
-  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --bold-weight: 600;
   --border-width: 1px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
-  --callout-content-padding: var(--size-4-2);
+  --callout-content-padding: 8px;
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
   --callout-example: var(--color-purple-rgb);
@@ -447,12 +447,12 @@ body {
   --callout-padding: 0;
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
-  --callout-radius: var(--radius-s);
+  --callout-radius: 4px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-color: inherit;
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --callout-title-size: inherit;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
@@ -515,44 +515,44 @@ body {
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
   --h1-color: inherit;
-  --h1-font: inherit;
+  --h1-font: Noto Serif;
   --h1-line-height: 1.2;
-  --h1-size: 1.802em;
+  --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
-  --h2-font: inherit;
+  --h2-font: Noto Serif;
   --h2-line-height: 1.2;
-  --h2-size: 1.602em;
+  --h2-size: 1.6em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
-  --h3-font: inherit;
+  --h3-font: Noto Serif;
   --h3-line-height: 1.3;
-  --h3-size: 1.424em;
+  --h3-size: 1.37em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
-  --h4-font: inherit;
+  --h4-font: Noto Serif;
   --h4-line-height: 1.4;
-  --h4-size: 1.266em;
+  --h4-size: 1.25em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
-  --h5-font: inherit;
-  --h5-line-height: var(--line-height-normal);
-  --h5-size: 1.125em;
+  --h5-font: Noto Serif;
+  --h5-line-height: 1.5;
+  --h5-size: 1.12em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
-  --h6-font: inherit;
-  --h6-line-height: var(--line-height-normal);
-  --h6-size: 1em;
+  --h6-font: Noto Serif;
+  --h6-line-height: 1.5;
+  --h6-size: 1.12em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
@@ -571,7 +571,6 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --italic-color: inherit;
   --layer-popover: 30;
-  --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
@@ -658,7 +657,7 @@ html[saved-theme="dark"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -735,7 +734,7 @@ html[saved-theme="dark"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -828,7 +827,7 @@ html[saved-theme="light"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -902,7 +901,7 @@ html[saved-theme="light"] {
   --background-primary: rgb(var(--ctp-base));
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),

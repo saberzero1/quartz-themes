@@ -1720,7 +1720,7 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: var(--background-primary-alt);
+  --code-background: #F0F0F0rgb;
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -2313,7 +2313,7 @@ body {
   --background-primary: rgb(255, 250, 205);
   --background-secondary: var(--background-secondary-light, rgb(240, 240, 240));
   --background-secondary-alt: var(--color-base-05);
-  --code-background: var(--code-background-light, rgb(255, 255, 255));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2359,7 +2359,7 @@ body {
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --math-background: var(--code-background-light, rgb(255, 255, 255));
+  --math-background: #F0F0F0rgb;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -2377,7 +2377,7 @@ body {
   --background-primary: rgb(25, 18, 63);
   --background-secondary: var(--background-secondary-dark, rgb(45, 45, 45));
   --background-secondary-alt: var(--color-base-30);
-  --code-background: var(--code-background-dark, rgb(33, 19, 19));
+  --code-background: #F0F0F0rgb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2429,7 +2429,7 @@ body {
   --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: var(--color-base-35);
   --interactive-normal: var(--color-base-30);
-  --math-background: var(--code-background-dark, rgb(33, 19, 19));
+  --math-background: #F0F0F0rgb;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);

@@ -22,8 +22,6 @@ html[saved-theme="dark"] {
   --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
   --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
   --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
   --color-base-h: 196;
   --color-base-l: 6%;
   --color-base-s: 11%;
@@ -67,8 +65,6 @@ html[saved-theme="dark"] {
   --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
   --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
   --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
   --color-base-h: 196;
   --color-base-l: 6%;
   --color-base-s: 11%;
@@ -382,11 +378,11 @@ body {
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
-  --text-faint: var(--color-base-50);
+  --text-faint: #hex;
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-muted: #hex;
+  --text-normal: #hex;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: var(--background-primary);
@@ -422,8 +418,6 @@ html {
   --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
   --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
   --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
   --color-base-h: 196;
   --color-base-l: 6%;
   --color-base-s: 11%;
@@ -467,8 +461,6 @@ html {
   --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
   --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
   --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
   --color-base-h: 196;
   --color-base-l: 6%;
   --color-base-s: 11%;

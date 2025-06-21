@@ -1,9 +1,0 @@
-body:not(.show-status-bar) .status-bar {
-  font-size: 12px;
-  opacity: 0;
-}
-
-body:not(.show-status-bar) .status-bar:hover {
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}

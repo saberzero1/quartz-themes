@@ -14,7 +14,7 @@ html[saved-theme="dark"] {
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: var(--color-dark1-rgb);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-secondary: var(--color-dark1-rgb);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
@@ -82,7 +82,7 @@ html[saved-theme="dark"] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--color-light1-rgb);
   --indentation-guide-color: var(--color-base-25);
@@ -96,9 +96,9 @@ html[saved-theme="dark"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: rgba(var(--color-light1-rgb), 0.5);
-  --text-highlight-bg: rgba(var(--color-yellow-light-rgb), 0.3);
+  --text-highlight-bg: nullhex;
   --text-muted: rgba(var(--color-light1-rgb), 0.8);
   --text-normal: var(--color-light1);
   background-color: var(--color-salmon);
@@ -109,7 +109,7 @@ html[saved-theme="dark"] {
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: var(--color-dark1-rgb);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-secondary: var(--color-dark1-rgb);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
@@ -177,7 +177,7 @@ html[saved-theme="dark"] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--color-light1-rgb);
   --indentation-guide-color: var(--color-base-25);
@@ -191,9 +191,9 @@ html[saved-theme="dark"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: rgba(var(--color-light1-rgb), 0.5);
-  --text-highlight-bg: rgba(var(--color-yellow-light-rgb), 0.3);
+  --text-highlight-bg: nullhex;
   --text-muted: rgba(var(--color-light1-rgb), 0.8);
   --text-normal: var(--color-light1);
   background-color: var(--color-salmon);
@@ -218,7 +218,7 @@ html[saved-theme="light"] {
   --accent-l: 66%;
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
-  --background-primary: var(--color-light1);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: var(--color-light1);
   --background-secondary: var(--color-light1);
   --callout-border-opacity: 0.4;
@@ -285,7 +285,7 @@ html[saved-theme="light"] {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: #141300;
   --indentation-guide-color: var(--color-base-25);
@@ -298,9 +298,9 @@ html[saved-theme="light"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: #000000;
-  --text-highlight-bg: var(--color-yellow-light);
+  --text-highlight-bg: nullhex;
   --text-muted: #000000;
   --text-normal: #000000;
   background-color: var(--color-salmon-lighter);
@@ -309,7 +309,7 @@ html[saved-theme="light"] {
   --accent-l: 66%;
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
-  --background-primary: var(--color-light1);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: var(--color-light1);
   --background-secondary: var(--color-light1);
   --callout-border-opacity: 0.4;
@@ -376,7 +376,7 @@ html[saved-theme="light"] {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: #141300;
   --indentation-guide-color: var(--color-base-25);
@@ -389,9 +389,9 @@ html[saved-theme="light"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: #000000;
-  --text-highlight-bg: var(--color-yellow-light);
+  --text-highlight-bg: nullhex;
   --text-muted: #000000;
   --text-normal: #000000;
   background-color: var(--color-salmon-lighter);
@@ -452,8 +452,6 @@ html[saved-theme="light"] {
   --color-salmon-lighter: #ffa99a;
   --color-salmon-lighter-rgb: 255, 169, 154;
   --color-yellow: #ffd77d;
-  --color-yellow-light: #ffe5a7;
-  --color-yellow-light-rgb: 255, 229, 167;
   --color-yellow-rgb: 255, 215, 125;
   --sandover-purple: #c585cc;
   --sandover-purple-rgb: 197, 133, 204;
@@ -467,7 +465,7 @@ body {
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --bold-color: inherit;
@@ -557,7 +555,7 @@ body {
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
-  --h1-color: inherit;
+  --h1-color: nullhex;
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.5em;
@@ -665,11 +663,10 @@ body {
   --tag-decoration-hover: underline;
   --tag-radius: 0.3em;
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
+  --text-accent: nullhex;
   --text-accent-hover: var(--color-accent-2);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
-  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-highlight-bg: nullhex;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -699,7 +696,7 @@ html[saved-theme="dark"] {
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: var(--color-dark1-rgb);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-secondary: var(--color-dark1-rgb);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
@@ -767,7 +764,7 @@ html[saved-theme="dark"] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--color-light1-rgb);
   --indentation-guide-color: var(--color-base-25);
@@ -781,9 +778,9 @@ html[saved-theme="dark"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: rgba(var(--color-light1-rgb), 0.5);
-  --text-highlight-bg: rgba(var(--color-yellow-light-rgb), 0.3);
+  --text-highlight-bg: nullhex;
   --text-muted: rgba(var(--color-light1-rgb), 0.8);
   --text-normal: var(--color-light1);
   background-color: var(--color-salmon);
@@ -794,7 +791,7 @@ html[saved-theme="dark"] {
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: var(--color-dark1-rgb);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-secondary: var(--color-dark1-rgb);
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
@@ -862,7 +859,7 @@ html[saved-theme="dark"] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--color-light1-rgb);
   --indentation-guide-color: var(--color-base-25);
@@ -876,9 +873,9 @@ html[saved-theme="dark"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: rgba(var(--color-light1-rgb), 0.5);
-  --text-highlight-bg: rgba(var(--color-yellow-light-rgb), 0.3);
+  --text-highlight-bg: nullhex;
   --text-muted: rgba(var(--color-light1-rgb), 0.8);
   --text-normal: var(--color-light1);
   background-color: var(--color-salmon);
@@ -904,7 +901,7 @@ html[saved-theme="light"] {
   --accent-l: 66%;
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
-  --background-primary: var(--color-light1);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: var(--color-light1);
   --background-secondary: var(--color-light1);
   --callout-border-opacity: 0.4;
@@ -971,7 +968,7 @@ html[saved-theme="light"] {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: #141300;
   --indentation-guide-color: var(--color-base-25);
@@ -984,9 +981,9 @@ html[saved-theme="light"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: #000000;
-  --text-highlight-bg: var(--color-yellow-light);
+  --text-highlight-bg: nullhex;
   --text-muted: #000000;
   --text-normal: #000000;
   background-color: var(--color-salmon-lighter);
@@ -995,7 +992,7 @@ html[saved-theme="light"] {
   --accent-l: 66%;
   --accent-s: 89%;
   --background-modifier-border-focus: var(--interactive-accent);
-  --background-primary: var(--color-light1);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: var(--color-light1);
   --background-secondary: var(--color-light1);
   --callout-border-opacity: 0.4;
@@ -1062,7 +1059,7 @@ html[saved-theme="light"] {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: var(--sandover-purple);
+  --h1-color: nullhex;
   --highlight-mix-blend-mode: darken;
   --icon-color: #141300;
   --indentation-guide-color: var(--color-base-25);
@@ -1075,9 +1072,9 @@ html[saved-theme="light"] {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tag-color: var(--color-salmon);
-  --text-accent: var(--color-salmon);
+  --text-accent: nullhex;
   --text-faint: #000000;
-  --text-highlight-bg: var(--color-yellow-light);
+  --text-highlight-bg: nullhex;
   --text-muted: #000000;
   --text-normal: #000000;
   background-color: var(--color-salmon-lighter);

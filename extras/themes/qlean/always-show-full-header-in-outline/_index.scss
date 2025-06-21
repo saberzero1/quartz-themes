@@ -1,9 +1,0 @@
-body:not(.always-show-full-header-in-outline) .workspace .tree-item-inner {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-body.always-show-full-header-in-outline .workspace .tree-item-inner {
-  min-height: 1.2em;
-}

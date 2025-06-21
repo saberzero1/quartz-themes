@@ -19,6 +19,7 @@ import {
   getFonts,
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
+  clearDirectories,
   clearDirectoryContents,
   ensureDirectoryExists,
   copyFileToDirectory,
@@ -26,10 +27,14 @@ import {
   applyRuleToString,
   generateFundingLinks,
 } from "./util/util.mjs"
-import { extractStyleSettings, extractClassToggleCss } from "./util/postcss-style-settings.mjs"
+import {
+  extractStyleSettings,
+  extractClassToggleCss,
+  replaceVariableValue,
+} from "./util/postcss-style-settings.mjs"
 import { themes, usedRules } from "./config.mjs"
 import { prune } from "./util/prune-unused.mjs"
-import { writeIndex, cleanCSS } from "./util/writer.mjs"
+import { writeIndex, cleanCSS, writeStyleSettings } from "./util/writer.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -63,7 +68,7 @@ if (args[0] === "ATOMIZE") {
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
-//const folders = ["sQdthOne"]
+//const folders = ["Zen"]
 
 const manifestCollection = []
 
@@ -112,6 +117,10 @@ manifestCollection.forEach((manifest) => {
   if (!fs.existsSync(`./extras/themes/${getTheme(manifest)}`)) {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
+  }
+  if (args[0] === "ATOMIZE") {
+    // Clear the style settings directories.
+    clearDirectories(`./extras/themes/${getTheme(manifest)}`)
   }
   if (args[0] === "INIT") {
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
@@ -256,7 +265,102 @@ manifestCollection.forEach((manifest) => {
     const cssString = fs.readFileSync(cssFile, "utf8")
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
     const obsidianExtractedCSS = fs.readFileSync("./converted_app_extracted.css", "utf8")
-    const result = cleanCSS(obsidianCSS, splitCombinedRules(cssString))
+    let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString))
+
+    // Theme variations (for style settings)
+    const styleSettings = extractStyleSettings(cssString)
+    if (styleSettings && styleSettings.length > 0) {
+      // Extract style settings from the main theme
+      styleSettings.forEach((styleSettingsSet) => {
+        const styleSets = styleSettingsSet["settings"]
+        styleSets.forEach((style) => {
+          let styleRulesCSS = ["", "", ""]
+          const ignoreStyleTypes = ["heading", "info-text"]
+
+          if (ignoreStyleTypes.includes(style["type"])) {
+            // Skip styles that are not relevant for CSS generation
+            console.warn(`Skipping style setting: ${style["id"]} of type ${style["type"]}`)
+            return
+          }
+
+          console.log(`Processing style setting: ${style["id"]} of type ${style["type"]}`)
+
+          // Write the style setting to the CSS string
+          if (style["type"] === "variable-text") {
+            // Use the default text
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              (style["quotes"] ?? false) ? `'${style["default"]}'` : style["default"],
+            )
+          } else if (style["type"] === "variable-number") {
+            // Use the default number
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-number-slider") {
+            // Use the default number
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-select") {
+            // Use the default select value
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-color") {
+            // Use the default color
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-themed-color") {
+            // Use the default themed colors
+            // This is a special case where we need to handle both light and dark themes
+            // for this, we use the `light-dark()` function in the CSS
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+            )
+          } else if (style["type"] === "class-toggle") {
+            // Extract the class toggle CSS
+            styleRulesCSS = extractClassToggleCss(cssString, style["id"])
+            writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"])
+          } else if (style["type"] === "class-select") {
+            // Extract the class for every option in the select
+            const classSelectOptions = style["options"]
+            classSelectOptions.forEach((option) => {
+              const className = option["value"]
+              if (className) {
+                styleRulesCSS = extractClassToggleCss(cssString, className)
+                writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"], className)
+              } else {
+                console.warn(`No class name specified for option: ${JSON.stringify(option)}`)
+              }
+            })
+          } else {
+            console.warn(
+              `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
+            )
+          }
+        })
+      })
+    }
+
+    // Write the main theme CSS to the atomic file
     fs.writeFileSync(atomicFile, result, "utf8")
     // Write extracted version to speed up later processing
     const cssAtomicString = fs.readFileSync(atomicFile, "utf8")
@@ -270,79 +374,6 @@ manifestCollection.forEach((manifest) => {
     extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
     extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
     fs.writeFileSync(atomicExctractedFile, extractResult, "utf8")
-
-    // Theme variations (for style settings)
-    const styleSettings = extractStyleSettings(cssString)
-    if (styleSettings && styleSettings.length > 0) {
-      // Extract style settings from the main theme
-      styleSettings.forEach((styleSettingsSet) => {
-        const styleSets = styleSettingsSet["settings"]
-        styleSets.forEach((style) => {
-          console.log(`Processing style setting: ${style["id"]}`)
-          ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}/${style["id"]}`)
-
-          let styleRulesCSS = ["", "", ""]
-          const ignoreStyleTypes = ["heading", "info-text"]
-
-          if (ignoreStyleTypes.includes(style["type"])) {
-            // Skip styles that are not relevant for CSS generation
-            return
-          }
-
-          // Write the style setting to the CSS string
-          if (style["type"] === "variable-text") {
-            // TODO: Implement
-            // styleRulesCSS = styleSettingToCss(style, variationRules[style["id"]])
-          } else if (style["type"] === "variable-number") {
-            // TODO: Implement
-            // styleRulesCSS = styleSettingToCss(style, variationRules[style["id"]])
-          } else if (style["type"] === "variable-number-slider") {
-            // TODO: Implement
-            // styleRulesCSS = styleSettingToCss(style, variationRules[style["id"]])
-          } else if (style["type"] === "variable-select") {
-            // TODO: Implement
-            // styleRulesCSS = styleSettingToCss(style, variationRules[style["id"]])
-          } else if (style["type"] === "variable-color") {
-            // TODO: Implement
-            // styleRulesCSS = replaceVariableColor(cssString, style, variationRules[style["id"]])
-          } else if (style["type"] === "variable-themed-color") {
-            // TODO: Implement
-            /*styleRulesCSS = replaceVariableThemedColor(
-              cssString,
-              style,
-              variationRules[style["id"]],
-            )*/
-          } else if (style["type"] === "class-toggle") {
-            styleRulesCSS = extractClassToggleCss(cssString, style["id"])
-          } else if (style["type"] === "class-select") {
-            // TODO: Implement
-            // styleRulesCSS = extractClassSelectCss(cssString, variationRules[style["id"]]["value"])
-          } else {
-            console.warn(
-              `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
-            )
-          }
-          if (styleRulesCSS[0] !== "" || styleRulesCSS[1] !== "" || styleRulesCSS[2] !== "") {
-            // Write the style setting to the extras file
-            fs.writeFileSync(
-              `./extras/themes/${getTheme(manifest)}/${style["id"]}/_index.scss`,
-              styleRulesCSS[0],
-              "utf8",
-            )
-            fs.writeFileSync(
-              `./extras/themes/${getTheme(manifest)}/${style["id"]}/_dark.scss`,
-              styleRulesCSS[1],
-              "utf8",
-            )
-            fs.writeFileSync(
-              `./extras/themes/${getTheme(manifest)}/${style["id"]}/_light.scss`,
-              styleRulesCSS[2],
-              "utf8",
-            )
-          }
-        })
-      })
-    }
   }
   const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
     ? "theme"

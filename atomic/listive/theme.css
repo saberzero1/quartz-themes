@@ -1839,7 +1839,7 @@ body {
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h1-border-width: 1px;
-  --h1-color: inherit;
+  --h1-color: light-dark(#, #);
   --h1-font: Courgette;
   --h1-line-height: 1.2;
   --h1-size: 1.6em;
@@ -1849,7 +1849,7 @@ body {
   --h2-border-width: 1px;
   --h2-bottom-spacing: 0.3rem;
   --h2-bottom-spacing-edit: var(--h2-bottom-spacing);
-  --h2-color: inherit;
+  --h2-color: light-dark(#, #);
   --h2-font: Courgette;
   --h2-line-height: 1.1em;
   --h2-size: 1.48em;
@@ -1861,30 +1861,30 @@ body {
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-border-width: 0px;
-  --h3-color: inherit;
-  --h3-font: "Karla", "Inter";
+  --h3-color: light-dark(#, #);
+  --h3-font: Karla;
   --h3-line-height: 1.2em;
   --h3-size: 1.36em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-bottom-spacing: 0.1rem;
-  --h4-color: inherit;
-  --h4-font: "Karla", "Inter";
+  --h4-color: light-dark(#, #);
+  --h4-font: Karla;
   --h4-line-height: 1.25em;
   --h4-size: 1.12em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
-  --h5-font: inherit;
+  --h5-color: light-dark(#, #);
+  --h5-font: Inter;
   --h5-line-height: 1.25em;
   --h5-size: 1em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
-  --h6-font: inherit;
+  --h6-color: light-dark(#, #);
+  --h6-font: Inter;
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
   --h6-style: normal;
@@ -2011,7 +2011,7 @@ body {
   --menu-padding: var(--size-2-3);
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
-  --metadata-background: var(--background-secondary-alt);
+  --metadata-background: light-dark(#, #);
   --metadata-border-color: var(--background-modifier-border);
   --metadata-border-radius: var(--size-4-2);
   --metadata-border-width: 0;
@@ -2020,7 +2020,7 @@ body {
   --metadata-divider-color: var(--background-modifier-border);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
-  --metadata-divider-width: 0;
+  --metadata-divider-width: 0px;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
   --metadata-input-background-active: var(--background-modifier-hover);
@@ -2260,7 +2260,7 @@ body {
   --table-white-space: break-spaces;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-bg-accent-hsl: 15, 72%, 70%;
+  --tag-bg-accent-hsl: #hsl-values;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
@@ -2384,12 +2384,12 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: hsl(217, 22%, 30%);
-  --h2-color: hsl(217, 22%, 40%);
-  --h3-color: hsl(217, 22%, 50%);
-  --h4-color: hsl(45, 45%, 40%);
-  --h5-color: hsl(45, 45%, 30%);
-  --h6-color: hsl(45, 45%, 20%);
+  --h1-color: light-dark(#, #);
+  --h2-color: light-dark(#, #);
+  --h3-color: light-dark(#, #);
+  --h4-color: light-dark(#, #);
+  --h5-color: light-dark(#, #);
+  --h6-color: light-dark(#, #);
   --he-title-bar-active-bg: #eaa4a4;
   --he-title-bar-active-pinned-bg: #a7b3a1;
   --he-title-bar-inactive-bg: #eaa4a4;
@@ -2465,12 +2465,12 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: hsl(217, 22%, 90%);
-  --h2-color: hsl(217, 22%, 80%);
-  --h3-color: hsl(217, 22%, 70%);
-  --h4-color: hsl(45, 45%, 85%);
-  --h5-color: hsl(45, 45%, 75%);
-  --h6-color: hsl(45, 45%, 65%);
+  --h1-color: light-dark(#, #);
+  --h2-color: light-dark(#, #);
+  --h3-color: light-dark(#, #);
+  --h4-color: light-dark(#, #);
+  --h5-color: light-dark(#, #);
+  --h6-color: light-dark(#, #);
   --he-title-bar-active-bg: #3d373a;
   --he-title-bar-active-pinned-bg: #735050;
   --he-title-bar-inactive-bg: #3d373a;
@@ -16862,7 +16862,7 @@ em {
   --icon-stroke: var(--icon-s-stroke-width);
   --input-shadow: none;
   --metadata-divider-width: 0px;
-  --metadata-label-width: 7em;
+  --metadata-label-width: 8em;
   --metadata-property-box-shadow: 0 0 0 1px var(--background-modifier-border-hover);
   align-items: center;
   background-color: var(--interactive-normal);
@@ -18049,9 +18049,9 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   --border-width: 0.5pt;
   --divider-width: 0.5pt;
   --metadata-divider-color-hover: var(--metadata-divider-color);
-  --metadata-divider-width: 1px;
+  --metadata-divider-width: 0px;
   --metadata-input-height: calc(var(--font-text-size) * 2.25);
-  --metadata-label-width: 7.5em;
+  --metadata-label-width: 8em;
   --metadata-padding: 0;
   --metadata-property-radius: 0px;
   --metadata-property-radius-hover: 0px;
@@ -18064,7 +18064,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .workspace-drawer {
   --metadata-divider-color-hover: var(--metadata-divider-color);
-  --metadata-divider-width: 1px;
+  --metadata-divider-width: 0px;
   --metadata-input-height: calc(var(--font-text-size) * 2.25);
   --metadata-padding: 0;
   --metadata-property-radius: 0px;
@@ -18105,7 +18105,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   --icon-size: var(--icon-xs);
   --icon-stroke: var(--icon-xs-stroke-width);
   --metadata-divider-color-hover: var(--metadata-divider-color);
-  --metadata-divider-width: 1px;
+  --metadata-divider-width: 0px;
   --metadata-input-font-size: var(--metadata-sidebar-label-font-size);
   --metadata-label-font-size: var(--metadata-sidebar-label-font-size);
   --metadata-padding: 0;
@@ -21317,7 +21317,7 @@ body.is-screenshotting *::-webkit-scrollbar {
   --cursor: pointer;
   --file-margins: var(--size-4-2) var(--size-4-6);
   --font-ui-large: calc(var(--font-text-size) * 1.2);
-  --font-ui-medium: var(--font-text-size);
+  --font-ui-medium: 14px;
   --font-ui-small: calc(var(--font-text-size) * 0.937);
   --font-ui-smaller: calc(var(--font-text-size) * 0.8);
   --icon-l: 24px;
@@ -24827,7 +24827,7 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
 
 /* === Custom CSS Class to control page width using `cssClass: wide-page` */
 .wide-page:is(.markdown-source-view, .markdown-preview-view) {
-  --file-line-width: 1400px;
+  --file-line-width: 700px;
 }
 
 /* === Status bar === */
@@ -26302,7 +26302,7 @@ body .metadata-container:has(.is-collapsed) {
 }
 
 body :is(.mod-left-split, .mod-right-split) {
-  --metadata-background: none;
+  --metadata-background: light-dark(#, #);
 }
 
 /* attempt for compact v2 */
@@ -26525,7 +26525,7 @@ span.selection {
 /* .internal-embed.image-embed.is-loaded::after {content: attr(alt); font-family: Courgette;} */
 /* === Mod for Dataview Card and List Nav === */
 .callout[data-callout-metadata*="dv-list-nav"] ul {
-  --list-indent: 0;
+  --list-indent: 1.6em;
   display: flex;
   padding-inline-start: var(--list-indent);
 }
@@ -26546,7 +26546,7 @@ span.selection {
 
 /* === Mod for Dataview Card and List Button === */
 .callout[data-callout-metadata*="dv-list-button"] ul {
-  --list-indent: 0;
+  --list-indent: 1.6em;
   display: flex;
   padding-inline-start: var(--list-indent);
 }
@@ -26809,7 +26809,7 @@ body.markdown-preview-view ul ul::before {
 
 /* -- site title -- */
 body.markdown-preview-view :is(.navbar-inner, .filetree-sidebar) h1 {
-  --h1-border-width: 0px;
+  --h1-border-width: 1px;
   --h2-bottom-spacing: 0.8rem;
 }
 

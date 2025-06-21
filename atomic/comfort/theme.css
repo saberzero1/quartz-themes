@@ -1624,9 +1624,9 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#fcfef3, #000000);
   --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-secondary: light-dark(#f8f6ea, #000000);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -2099,7 +2099,7 @@ body {
   --radius-m: 6px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: var(--ribbon-background);
+  --ribbon-background: #a3d5aahex;
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
@@ -2159,7 +2159,7 @@ body {
   --sync-avatar-color-8: var(--color-pink);
   --sync-avatar-color-current-user: transparent;
   --tab-background-active: var(--background-primary);
-  --tab-container-background: #a3d5aa;
+  --tab-container-background: light-dark(#a3d5aa, #000000);
   --tab-curve: 6px;
   --tab-divider-color: #b4d8b4;
   --tab-font-size: var(--font-ui-small);
@@ -2309,9 +2309,9 @@ body {
   --background-modifier-error: #f1d4d9;
   --background-modifier-error-hover: #e5bec5;
   --background-modifier-hover: #a3d5aa;
-  --background-primary: #fcfef3;
-  --background-secondary: #f8f6ea;
-  --background-secondary-alt: #a3d5aa;
+  --background-primary: light-dark(#fcfef3, #000000);
+  --background-secondary: light-dark(#f8f6ea, #000000);
+  --background-secondary-alt: light-dark(#a3d5aa, #000000);
   --blue: #3d74f6;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -2375,7 +2375,7 @@ body {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --slider-track-background: #eff1e1;
-  --tab-container-background: #a3d5aa;
+  --tab-container-background: light-dark(#a3d5aa, #000000);
   --tag-padding-x: 4px;
   --tag-padding-y: 2px;
   --tag-radius: 4px;
@@ -2390,7 +2390,7 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-secondary-alt: light-dark(#a3d5aa, #000000);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -3783,7 +3783,7 @@ body.is-frameless.is-hidden-frameless.starter .titlebar {
 .sidebar-toggle-button {
   --icon-size: var(--icon-l);
   --icon-stroke: var(--icon-l-stroke-width);
-  --tab-container-background: var(--titlebar-background);
+  --tab-container-background: light-dark(#a3d5aa, #000000);
   -webkit-app-region: no-drag;
   display: flex;
   height: calc(var(--header-height) - 1px);
@@ -3793,7 +3793,7 @@ body.is-frameless.is-hidden-frameless.starter .titlebar {
 }
 
 .workspace-tabs.mod-top {
-  --tab-container-background: var(--titlebar-background);
+  --tab-container-background: light-dark(#a3d5aa, #000000);
 }
 
 body.is-focused .titlebar {
@@ -3805,11 +3805,11 @@ body.is-focused .workspace-ribbon.mod-left {
 }
 
 body.is-focused .sidebar-toggle-button {
-  --tab-container-background: var(--titlebar-background-focused);
+  --tab-container-background: light-dark(#a3d5aa, #000000);
 }
 
 body.is-focused .workspace-tabs.mod-top {
-  --tab-container-background: var(--titlebar-background-focused);
+  --tab-container-background: light-dark(#a3d5aa, #000000);
 }
 
 .is-hidden-frameless {

@@ -10,12 +10,12 @@
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #000000;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #4d4d4f;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #000000;
-  --card-border-color: #4d4d4f84;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -67,12 +67,12 @@ html[saved-theme="dark"] {
   --text-color: #ffffff;
   color-scheme: dark;
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #000000;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #4d4d4f;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #000000;
-  --card-border-color: #4d4d4f84;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -138,12 +138,12 @@ html[saved-theme="dark"] {
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  --background-primary: #9096a4;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #252525c3;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #9096a4;
-  --card-border-color: #25252586;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -191,12 +191,12 @@ html[saved-theme="light"] {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-color: #000000;
   color-scheme: light;
-  --background-primary: #9096a4;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #252525c3;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #9096a4;
-  --card-border-color: #25252586;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -317,7 +317,7 @@ html[saved-theme="light"] {
 
 :root {
   --default-font: "Times New Roman", Times, serif;
-  --syntax-border: #a0a6a7;
+  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
   align-content: center;
   align-items: center;
   align-self: auto;
@@ -384,10 +384,10 @@ body {
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
@@ -567,7 +567,7 @@ body {
   --size-4-3: 12px;
   --size-4-4: 16px;
   --size-4-6: 24px;
-  --syntax-border: #a0a6a7;
+  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
@@ -609,12 +609,12 @@ body {
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #000000;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #4d4d4f;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #000000;
-  --card-border-color: #4d4d4f84;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -666,12 +666,12 @@ html[saved-theme="dark"] {
   --text-color: #ffffff;
   color-scheme: dark;
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #000000;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #4d4d4f;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #000000;
-  --card-border-color: #4d4d4f84;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -738,12 +738,12 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  --background-primary: #9096a4;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #252525c3;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #9096a4;
-  --card-border-color: #25252586;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -791,12 +791,12 @@ html[saved-theme="light"] {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-color: #000000;
   color-scheme: light;
-  --background-primary: #9096a4;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
-  --blockquote-border-color: #252525c3;
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --card-bg: #9096a4;
-  --card-border-color: #25252586;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --caret-color: var(--text-color);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(

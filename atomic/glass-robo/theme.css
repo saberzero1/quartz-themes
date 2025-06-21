@@ -24568,7 +24568,7 @@ body.theme-light {
 ▝▚▄▞▘▐▙▄▄▖▐▌  ▐▌▐▙▄▄▖▐▌ ▐▌▐▌ ▐▌▐▙▄▄▖
 */
 body.gruvbox {
-  --glass-background-color-settings: #282828;
+  --glass-background-color-settings: light-dark(#fafafa, #141414);
   --s-color-blue: 69, 133, 136;
   --s-color-bright-blue: 104, 157, 106;
   --s-color-gray: 168, 153, 132;
@@ -24582,7 +24582,7 @@ body.gruvbox {
 }
 
 body.catppuccin {
-  --glass-background-color-settings: #232634;
+  --glass-background-color-settings: light-dark(#fafafa, #141414);
   --s-color-blue: 140, 170, 238;
   --s-color-bright-blue: 153, 209, 219;
   --s-color-gray: 98, 104, 128;
@@ -24595,7 +24595,7 @@ body.catppuccin {
 }
 
 body.dracula {
-  --glass-background-color-settings: #282a36;
+  --glass-background-color-settings: light-dark(#fafafa, #141414);
   --s-color-blue: 98, 114, 164;
   --s-color-bright-blue: 139, 233, 253;
   --s-color-gray: 98, 104, 128;
@@ -24609,7 +24609,7 @@ body.dracula {
 }
 
 body.oneDark {
-  --glass-background-color-settings: #282d33;
+  --glass-background-color-settings: light-dark(#fafafa, #141414);
   --s-color-blue: 99, 174, 239;
   --s-color-bright-blue: 85, 181, 193;
   --s-color-gray: 170, 178, 191;
@@ -24623,7 +24623,7 @@ body.oneDark {
 }
 
 body.lorens {
-  --glass-background-color-settings: #0d161d;
+  --glass-background-color-settings: light-dark(#fafafa, #141414);
   --s-color-blue: 118, 133, 245;
   --s-color-bright-blue: 202, 252, 191;
   --s-color-gray: 178, 166, 189;

@@ -534,7 +534,7 @@ body {
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
+  --code-size: 0.875em;
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
@@ -561,7 +561,6 @@ body {
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
   --font-print-override: "??";
-  --font-smaller: 0.875em;
   --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-theme: "iA Writer Quattro S";

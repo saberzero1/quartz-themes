@@ -10,29 +10,21 @@
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --accent-l: 60%;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --base-l: 15%;
-  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -40,7 +32,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -48,24 +39,22 @@ html[saved-theme="dark"] {
   --color-base-40: #555555;
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 177, 80, 0.3);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 255, 255, 255;
   --nav-indentation-guide-color: var(--ui1);
@@ -83,37 +72,29 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: dark;
   --accent-l: 60%;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --base-l: 15%;
-  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -121,7 +102,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -129,24 +109,22 @@ html[saved-theme="dark"] {
   --color-base-40: #555555;
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 177, 80, 0.3);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 255, 255, 255;
   --nav-indentation-guide-color: var(--ui1);
@@ -164,12 +142,12 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: dark .callout {
     --callout-blend-mode: lighten;
   }
@@ -186,28 +164,21 @@ html[saved-theme="dark"] {
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --bg1: white;
-  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -215,7 +186,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -223,24 +193,22 @@ html[saved-theme="light"] {
   --color-base-40: #bdbdbd;
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 225, 0, 0.5);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 0, 0, 0;
   --nav-indentation-guide-color: var(--ui1);
@@ -258,35 +226,28 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: light;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --bg1: white;
-  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -294,7 +255,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -302,24 +262,22 @@ html[saved-theme="light"] {
   --color-base-40: #bdbdbd;
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 225, 0, 0.5);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 0, 0, 0;
   --nav-indentation-guide-color: var(--ui1);
@@ -337,12 +295,12 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: light .callout {
     --callout-blend-mode: darken;
   }
@@ -492,12 +450,8 @@ body {
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --base-h: 0;
-  --base-l: 96%;
-  --base-s: 0%;
-  --bold-color: inherit;
+  --bold-color: light-dark(#, #);
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -529,26 +483,26 @@ body {
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
+  --checkbox-color: light-dark(#, #);
   --checkbox-color-hover: var(--interactive-accent-hover);
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 50%;
   --checkbox-size: var(--font-text-size);
-  --code-background: var(--background-primary-alt);
+  --code-background: light-dark(#, #);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
+  --code-comment: light-dark(#, #);
+  --code-function: light-dark(#, #);
+  --code-important: light-dark(#, #);
+  --code-keyword: light-dark(#, #);
+  --code-normal: light-dark(#, #);
+  --code-property: light-dark(#, #);
+  --code-punctuation: light-dark(#, #);
   --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
+  --code-size: 0.8em;
+  --code-string: light-dark(#, #);
+  --code-tag: light-dark(#, #);
+  --code-value: light-dark(#, #);
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -572,7 +526,6 @@ body {
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
   --font-print-override: "??";
-  --font-smaller: 0.875em;
   --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
@@ -581,46 +534,46 @@ body {
   --font-ui-small: 13px;
   --font-ui-smaller: 11px;
   --font-weight: var(--font-normal);
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
-  --graph-node-tag: var(--color-green);
-  --graph-node-unresolved: var(--text-faint);
-  --h1-color: inherit;
-  --h1-font: inherit;
+  --graph-line: light-dark(#, #);
+  --graph-node-tag: light-dark(#, #);
+  --graph-node-unresolved: light-dark(#, #);
+  --h1-color: light-dark(#, #);
+  --h1-font:   ;
   --h1-line-height: 1.2;
   --h1-size: 1.125em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 600;
-  --h2-color: inherit;
-  --h2-font: inherit;
+  --h2-color: light-dark(#, #);
+  --h2-font:   ;
   --h2-line-height: 1.2;
-  --h2-size: 1.05em;
+  --h2-size: 1em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
-  --h3-font: inherit;
+  --h3-color: light-dark(#, #);
+  --h3-font:   ;
   --h3-line-height: 1.3;
   --h3-size: 1em;
   --h3-style: normal;
   --h3-variant: normal;
-  --h3-weight: 500;
-  --h4-color: inherit;
-  --h4-font: inherit;
+  --h3-weight: 600;
+  --h4-color: light-dark(#, #);
+  --h4-font:   ;
   --h4-line-height: 1.4;
   --h4-size: 0.9em;
   --h4-style: normal;
-  --h4-variant: normal;
+  --h4-variant: small-caps;
   --h4-weight: 500;
-  --h5-color: inherit;
-  --h5-font: inherit;
+  --h5-color: light-dark(#, #);
+  --h5-font:   ;
   --h5-line-height: var(--line-height-normal);
   --h5-size: 0.85em;
   --h5-style: normal;
   --h5-variant: small-caps;
   --h5-weight: 500;
-  --h6-color: inherit;
-  --h6-font: inherit;
+  --h6-color: light-dark(#, #);
+  --h6-font:   ;
   --h6-line-height: var(--line-height-normal);
   --h6-size: 0.85em;
   --h6-style: normal;
@@ -628,26 +581,25 @@ body {
   --h6-weight: 400;
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
-  --icon-color: var(--text-muted);
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --icon-color: light-dark(#, #);
+  --indentation-guide-color: light-dark(#, #);
   --indentation-guide-width: 1px;
-  --inline-title-color: var(--h1-color);
-  --inline-title-font: var(--h1-font);
+  --inline-title-color: light-dark(#, #);
+  --inline-title-font:   ;
   --input-border-width: 1px;
   --input-height: 32px;
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --italic-color: inherit;
+  --italic-color: light-dark(#, #);
   --layer-popover: 30;
   --line-height: 1.5;
   --line-height-normal: var(--line-height);
   --line-height-tight: 1.3;
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
+  --link-color: light-dark(#, #);
+  --link-color-hover: light-dark(#, #);
+  --link-external-color: light-dark(#, #);
+  --link-external-color-hover: light-dark(#, #);
   --link-external-filter: none;
   --link-weight: var(--font-weight);
   --metadata-input-text-color: var(--text-normal);
@@ -681,16 +633,16 @@ body {
   --size-4-3: 12px;
   --size-4-4: 16px;
   --size-4-6: 24px;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-background: light-dark(#, #);
+  --tag-background-hover: light-dark(#, #);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
+  --tag-border-width: 1px;
+  --tag-color: light-dark(#, #);
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 2em;
+  --tag-radius: 14px;
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -723,29 +675,21 @@ body {
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --accent-l: 60%;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --base-l: 15%;
-  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -753,7 +697,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -761,24 +704,22 @@ html[saved-theme="dark"] {
   --color-base-40: #555555;
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 177, 80, 0.3);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 255, 255, 255;
   --nav-indentation-guide-color: var(--ui1);
@@ -796,37 +737,29 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: dark;
   --accent-l: 60%;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --base-l: 15%;
-  --bg1: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -834,7 +767,6 @@ html[saved-theme="dark"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
   --color-base-30: #363636;
@@ -842,24 +774,22 @@ html[saved-theme="dark"] {
   --color-base-40: #555555;
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 177, 80, 0.3);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 255, 255, 255;
   --nav-indentation-guide-color: var(--ui1);
@@ -877,12 +807,12 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: dark .callout {
     --callout-blend-mode: lighten;
   }
@@ -900,28 +830,21 @@ html[saved-theme="dark"] {
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --bg1: white;
-  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -929,7 +852,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -937,24 +859,22 @@ html[saved-theme="light"] {
   --color-base-40: #bdbdbd;
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 225, 0, 0.5);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 0, 0, 0;
   --nav-indentation-guide-color: var(--ui1);
@@ -972,35 +892,28 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: light;
-  --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --ax2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%));
-  --ax3: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%));
+  --ax1: light-dark(#, #);
+  --ax2: light-dark(#, #);
   --background-modifier-border: var(--ui1);
   --background-modifier-border-focus: var(--ui3);
   --background-modifier-border-hover: var(--ui2);
   --background-modifier-form-field: var(--bg1);
   --background-modifier-hover: var(--bg3);
   --background-primary: var(--bg1);
-  --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg2);
-  --bg1: white;
-  --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
-  --checkbox-color: var(--ax3);
-  --code-normal: var(--tx1);
+  --bg1: light-dark(#, #);
+  --bg2: light-dark(#, #);
+  --bg3: light-dark(#, #);
+  --checkbox-color: light-dark(#, #);
+  --code-normal: light-dark(#, #);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -1008,7 +921,6 @@ html[saved-theme="light"] {
   );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
   --color-base-100: #222222;
   --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
@@ -1016,24 +928,22 @@ html[saved-theme="light"] {
   --color-base-40: #bdbdbd;
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
-  --color-blue: #6c99bb;
+  --color-blue: light-dark(#, #);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: #73bbb2;
+  --color-cyan: light-dark(#, #);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: #a8c373;
+  --color-green: light-dark(#, #);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: #d5763f;
+  --color-orange: light-dark(#, #);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: #b05279;
-  --color-purple: #9e86c8;
+  --color-pink: light-dark(#, #);
+  --color-purple: light-dark(#, #);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: #d04255;
+  --color-red: light-dark(#, #);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: #e5b567;
   --highlight-mix-blend-mode: darken;
-  --hl2: rgba(255, 225, 0, 0.5);
-  --icon-color: var(--tx2);
-  --interactive-accent: var(--ax3);
+  --hl2: light-dark(#, #);
+  --icon-color: light-dark(#, #);
   --interactive-accent-hover: var(--ax1);
   --mono-rgb-100: 0, 0, 0;
   --nav-indentation-guide-color: var(--ui1);
@@ -1051,12 +961,12 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--hl2);
   --text-muted: var(--tx2);
   --text-normal: var(--tx1);
-  --tx1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%));
-  --tx2: hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%));
-  --tx3: hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%));
-  --ui1: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --ui2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --ui3: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
+  --tx1: light-dark(#, #);
+  --tx2: light-dark(#, #);
+  --tx3: light-dark(#, #);
+  --ui1: light-dark(#, #);
+  --ui2: light-dark(#, #);
+  --ui3: light-dark(#, #);
   color-scheme: light .callout {
     --callout-blend-mode: darken;
   }

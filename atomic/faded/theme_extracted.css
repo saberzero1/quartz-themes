@@ -181,7 +181,7 @@ body {
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
   --code-white-space: pre-wrap;
-  --col-rule-color: var(--background-modifier-border);
+  --col-rule-color: light-dark(#, #);
   --col-rule-width: 1px;
   --collapse-icon-color: var(--text-normal);
   --collapse-icon-color-collapsed: var(--white);
@@ -577,8 +577,8 @@ body {
   --list-min-width: 200px;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
-  --mcl-card-bg-color: var(--background-secondary);
-  --mcl-card-border-color: var(--background-modifier-border);
+  --mcl-card-bg-color: light-dark(#, #);
+  --mcl-card-border-color: light-dark(#, #);
   --mcl-card-border-width: 1px;
   --mcl-card-gap: 0.2em;
   --mcl-card-header-border-width: 1px;
