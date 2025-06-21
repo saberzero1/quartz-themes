@@ -49,13 +49,20 @@ body.theme-dark {
 .view-header,
 .workspace-leaf.mod-active .view-header,
 .workspace-leaf-resize-handle,
-.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace
+  > .workspace-split
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   background-color: var(--background-secondary-alt);
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after,
 .view-header-title-container:after {
-  background: linear-gradient(to right, transparent, var(--background-secondary-alt));
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-secondary-alt)
+  );
 }
 
 /* Falling snow! (If it bothers you, remove everything below this comment) */

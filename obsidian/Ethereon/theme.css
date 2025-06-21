@@ -154,7 +154,10 @@ body {
   --background-modifier-hover: rgba(var(--mono-rgb-0), 0.5);
   --text-highlight-bg-rgb: var(--color-yellow-rgb);
   --background-modifier-border: var(--color-base-20);
-  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-30,
+    var(--background-modifier-border-focus)
+  );
 }
 .canvas-node.is-themed .canvas-node-content {
   background-color: rgba(var(--canvas-color), 0);
@@ -297,11 +300,15 @@ body {
   padding-bottom: 0.04em;
   vertical-align: bottom;
 }
-.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian
+  .cm-inline-code.cm-formatting
+  ~ .cm-inline-code:not(.cm-formatting) {
   padding: 0em;
   vertical-align: bottom;
 }
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+.cm-s-obsidian
+  .cm-inline-code:not(.cm-formatting)
+  + .cm-inline-code.cm-formatting {
   padding: 0em;
   vertical-align: bottom;
 }
@@ -312,12 +319,16 @@ body {
 .cm-highlight.cm-inline-code:not(.cm-formatting) {
   border-radius: 0px;
 }
-.cm-s-obsidian .cm-highlight.cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian
+  .cm-highlight.cm-inline-code.cm-formatting
+  ~ .cm-inline-code:not(.cm-formatting) {
   vertical-align: bottom;
   padding-top: 0.04em;
   padding-bottom: 0.04em;
 }
-.cm-s-obsidian .cm-highlight.cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+.cm-s-obsidian
+  .cm-highlight.cm-inline-code:not(.cm-formatting)
+  + .cm-inline-code.cm-formatting {
   vertical-align: bottom;
   border-radius: 0px;
   padding-top: 0.04em;

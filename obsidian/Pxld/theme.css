@@ -141,7 +141,9 @@ button:not(.clickable-icon) {
 .sidebar-toggle-button {
   background-color: var(--background-primary);
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--background-primary);
 }
 .nav-header {

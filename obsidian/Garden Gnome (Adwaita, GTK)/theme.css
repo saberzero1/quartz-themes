@@ -283,7 +283,10 @@ h6 {
 /* SLIDES PLUGIN */
 
 .reveal {
-  background: radial-gradient(var(--background-primary) 60%, var(--background-primary-alt));
+  background: radial-gradient(
+    var(--background-primary) 60%,
+    var(--background-primary-alt)
+  );
   --r-background-color: var(--background-primary); /*TODO make an option*/
   --r-main-color: var(--text-normal);
   --r-heading-color: var(--text);
@@ -359,10 +362,13 @@ button.kanban-plugin__new-item-button:hover {
   box-shadow: var(--input-shadow-hover);
 }
 
-.kanban-plugin__drag-container > .kanban-plugin__item-wrapper > .kanban-plugin__item {
+.kanban-plugin__drag-container
+  > .kanban-plugin__item-wrapper
+  > .kanban-plugin__item {
   border: none;
 }
-.kanban-plugin__item-metadata > .kanban-plugin__item-metadata-date-wrapper.has-background {
+.kanban-plugin__item-metadata
+  > .kanban-plugin__item-metadata-date-wrapper.has-background {
   margin: 0;
 }
 .kanban-plugin__item-tags:not(:empty) {
@@ -916,7 +922,8 @@ a {
   padding-top: var(--padding-frame-v);
 }
 .markdown-source-view.is-live-preview .HyperMD-quote:last-of-type,
-.markdown-source-view.is-live-preview .HyperMD-quote:has(+ :not(.HyperMD-quote)) {
+.markdown-source-view.is-live-preview
+  .HyperMD-quote:has(+ :not(.HyperMD-quote)) {
   border-end-start-radius: var(--rounded-corner-frame);
   border-end-end-radius: var(--rounded-corner-frame);
   padding-bottom: var(--padding-frame-v);
@@ -961,7 +968,10 @@ a {
 
 .HyperMD-callout {
   /* Make callout shiny in edit mode*/
-  background: linear-gradient(var(--interactive-accent) -300%, var(--background-secondary) 1.5em);
+  background: linear-gradient(
+    var(--interactive-accent) -300%,
+    var(--background-secondary) 1.5em
+  );
 }
 /*
             UI
@@ -1089,7 +1099,8 @@ a {
   background:
     /* Shadow covers */
     linear-gradient(to right, var(--tab-scroll-mask-color) 40%, transparent),
-    linear-gradient(to left, var(--tab-scroll-mask-color) 40%, transparent) 100% 0,
+    linear-gradient(to left, var(--tab-scroll-mask-color) 40%, transparent) 100%
+      0,
     /* Shadows */ linear-gradient(to right, var(--text-faint), transparent),
     linear-gradient(to left, var(--text-faint), transparent) 100% 0;
   background-color: var(--background-hover);
@@ -1126,7 +1137,9 @@ a {
   padding: 0;
   border-bottom-width: 1px;
 }
-.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+.mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
   /* Fullwidth tabs */
   width: 100%;
   margin: 0;
@@ -1236,9 +1249,17 @@ a {
   text-align: center;
 }
 /*Text disappears near x symbol, only on non-stacked */
-.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-title {
-  background: linear-gradient(to left, transparent 4ch, var(--tab-text-color-active) 6ch);
+.workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:hover
+  .workspace-tab-header-inner-title {
+  background: linear-gradient(
+    to left,
+    transparent 4ch,
+    var(--tab-text-color-active) 6ch
+  );
   background-clip: text; /* Stops VSCode from throwing warnings */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1368,7 +1389,9 @@ body:not(.native-scrollbars) .modal-close-button {
 }
 .vertical-tab-content > .setting-item:not(.setting-item-heading):last-of-type,
 .vertical-tab-content
-  > .setting-item:not(.setting-item-heading):has(+ :not(.setting-item:not(.setting-item-heading))) {
+  > .setting-item:not(.setting-item-heading):has(
+    + :not(.setting-item:not(.setting-item-heading))
+  ) {
   border-end-start-radius: var(--rounded-corner-frame);
   border-end-end-radius: var(--rounded-corner-frame);
 }

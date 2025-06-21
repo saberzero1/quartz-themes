@@ -25,7 +25,11 @@
 /* background */
 
 body {
-  background: linear-gradient(135deg, var(--mica-base-bg-start), var(--mica-base-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-base-bg-start),
+    var(--mica-base-bg-end)
+  );
 
   --file-header-justify: left;
   --file-line-width: 100%;
@@ -110,7 +114,11 @@ body {
 }
 
 .workspace-split {
-  background: linear-gradient(135deg, var(--mica-content-bg-start), var(--mica-content-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-content-bg-start),
+    var(--mica-content-bg-end)
+  );
   background-attachment: fixed;
 }
 
@@ -187,7 +195,11 @@ body {
   margin-top: 4px;
 }
 
-body:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .view-actions .view-action svg {
+body:not(.is-mobile)
+  .workspace-leaf-content[data-type="markdown"]
+  .view-actions
+  .view-action
+  svg {
   margin-top: 8px;
 }
 
@@ -253,7 +265,8 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
   top: 28px;
 }
 
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   position: relative;
   background-color: auto;
 }
@@ -264,8 +277,10 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
 
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right,
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-left,
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right,
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-left {
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right,
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-left {
   background-color: transparent;
 }
 
@@ -292,7 +307,10 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.workspace .mod-root .workspace-tab-header-container-inner .workspace-tab-header {
+.workspace
+  .mod-root
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
   padding-left: 8px;
 }
 
@@ -475,7 +493,11 @@ body:not(.plugin-sliding-panes):not(.is-mobile)
 /* sliding panes fix */
 
 .plugin-sliding-panes .workspace-leaf-content[data-type="markdown"] {
-  background: linear-gradient(135deg, var(--mica-content-bg-start), var(--mica-content-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-content-bg-start),
+    var(--mica-content-bg-end)
+  );
   background-attachment: fixed;
 }
 
@@ -559,7 +581,8 @@ button.mod-cta:hover {
 .menu {
   margin-top: 6px;
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.3) linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02));
+  background: rgba(0, 0, 0, 0.3)
+    linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02));
   border: 2px solid var(--mica-border);
   backdrop-filter: blur(12px);
   box-shadow:
@@ -575,7 +598,11 @@ body:not(.is-mobile) .modal-container .modal-bg {
 }
 
 .modal-container .modal {
-  background: linear-gradient(135deg, var(--mica-base-bg-start), var(--mica-base-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-base-bg-start),
+    var(--mica-base-bg-end)
+  );
   box-shadow:
     0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132),
     0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
@@ -611,7 +638,11 @@ body:not(.is-mobile) .modal-container .modal-bg {
 }
 
 .modal-container .modal .vertical-tab-content-container {
-  background: linear-gradient(135deg, var(--mica-content-bg-start), var(--mica-content-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-content-bg-start),
+    var(--mica-content-bg-end)
+  );
   padding: 0;
   border-left: 2px solid var(--mica-border);
 }
@@ -644,7 +675,8 @@ body:not(.is-mobile) .modal-container .modal-bg {
 /* tooltips */
 
 .tooltip {
-  background: rgba(0, 0, 0, 0.4) linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.05));
+  background: rgba(0, 0, 0, 0.4)
+    linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(18px);
   font-size: 1em;
   padding: 6px 12px;
@@ -696,7 +728,9 @@ body:not(.is-mobile) .modal-container .modal-bg {
 /* scroll-below */
 
 body:not(.is-mobile) .workspace-leaf-content > .nav-header,
-body:not(.plugin-sliding-panes):not(.is-mobile) .workspace-leaf-content > .view-header {
+body:not(.plugin-sliding-panes):not(.is-mobile)
+  .workspace-leaf-content
+  > .view-header {
   position: absolute;
   z-index: 90;
   width: 100%;
@@ -713,13 +747,20 @@ body:not(.is-mobile) .workspace-leaf-content > .nav-header + * {
   padding-top: calc(48px + 6px);
 }
 
-body:not(.is-mobile) .workspace-leaf-content > .nav-header + *::-webkit-scrollbar-track {
+body:not(.is-mobile)
+  .workspace-leaf-content
+  > .nav-header
+  + *::-webkit-scrollbar-track {
   margin-top: 48px;
 }
 
-body:not(.is-mobile) .workspace-leaf-content[data-type="bookmarks"] .view-content,
+body:not(.is-mobile)
+  .workspace-leaf-content[data-type="bookmarks"]
+  .view-content,
 body:not(.is-mobile) .workspace-leaf-content[data-type="outline"] .view-content,
-body:not(.is-mobile) .workspace-leaf-content[data-type="all-properties"] .view-content {
+body:not(.is-mobile)
+  .workspace-leaf-content[data-type="all-properties"]
+  .view-content {
   padding-top: 56px;
 }
 
@@ -812,7 +853,11 @@ body:not(.is-mobile) .workspace-split.mod-root .graph-controls {
 }
 
 body.is-mobile .graph-controls {
-  background: linear-gradient(135deg, var(--mica-content-bg-start), var(--mica-content-bg-end));
+  background: linear-gradient(
+    135deg,
+    var(--mica-content-bg-start),
+    var(--mica-content-bg-end)
+  );
   background-attachment: fixed;
   backdrop-filter: none;
 }
@@ -960,7 +1005,9 @@ body.is-mobile .graph-controls {
   content: "🏠 ";
 }
 
-.workspace-leaf-content[data-type="file-explorer"] .nav-file .nav-file-title-content::before {
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-file
+  .nav-file-title-content::before {
   content: "📝 ";
 }
 

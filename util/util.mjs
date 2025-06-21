@@ -1,12 +1,10 @@
 import { themes } from "./../config.mjs"
 import {
-  splitCombinedRules,
-  combineIdenticalSelectors,
-  removeEmptyRules,
   getRuleDeclarations,
 } from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
+import { writePrettier } from "./writer.mjs"
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.

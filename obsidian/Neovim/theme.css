@@ -3,8 +3,14 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-80);
   --text-on-accent: var(--color-base-20);
-  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
-  --prompt-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-30,
+    var(--background-modifier-border-focus)
+  );
+  --prompt-border-color: var(
+    --color-base-30,
+    var(--background-modifier-border-focus)
+  );
 
   --radius-s: 3px;
   --radius-m: 6px;

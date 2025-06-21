@@ -552,7 +552,12 @@ body {
   --tag-border-width: 1px;
   --tag-size: 0.8em;
 
-  --background-modifier-form-field: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  --background-modifier-form-field: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.1
+  );
   --background-modifier-message: var(--background-secondary);
   --ribbon-background-collapsed: transparent;
 
@@ -573,7 +578,8 @@ body {
 
   --root-workspace-padding-bottom: 28px;
   --root-workspace-radius: var(--radius-m);
-  --root-workspace-shadow: var(--background-modifier-border) 0px 0px 3px 0px,
+  --root-workspace-shadow:
+    var(--background-modifier-border) 0px 0px 3px 0px,
     var(--background-modifier-border) 0px 1px 2px 0px;
   --root-workspace-background: transparent;
   --root-workspace-margin-spacing: 16px;
@@ -606,7 +612,10 @@ body {
   --background-secondary: rgb(232, 223, 217);
   --background-secondary-alt: rgb(225, 215, 208);
 
-  --background-gradient: linear-gradient(rgb(217, 224, 227), rgb(235, 215, 210));
+  --background-gradient: linear-gradient(
+    rgb(217, 224, 227),
+    rgb(235, 215, 210)
+  );
   --background-modifier-border: hsla(25, 20%, 70%, 0.4);
 
   /* text */
@@ -866,7 +875,11 @@ body {
   --background-primary-alt: #ecf2f4;
   --background-secondary: #e0e8eb;
   --background-secondary-alt: #d4dfe2;
-  --background-gradient: linear-gradient(160deg, hsl(190, 30%, 95%) 0%, hsl(190, 20%, 90%) 100%);
+  --background-gradient: linear-gradient(
+    160deg,
+    hsl(190, 30%, 95%) 0%,
+    hsl(190, 20%, 90%) 100%
+  );
 
   --background-modifier-border: #dce3e5;
 
@@ -937,7 +950,11 @@ body {
 }
 
 /* reduce spacing between metadata-container and first cm-line */
-.metadata-container ~ .cm-contentContainer .cm-content > div[contenteditable="false"] + .cm-line {
+.metadata-container
+  ~ .cm-contentContainer
+  .cm-content
+  > div[contenteditable="false"]
+  + .cm-line {
   padding-top: 0.5rem;
 }
 
@@ -1101,7 +1118,8 @@ body {
   left: 8px;
   width: 42%;
   height: 88%;
-  background: repeating-linear-gradient(
+  background:
+    repeating-linear-gradient(
       to right,
       transparent 0,
       transparent 19px,
@@ -1113,7 +1131,8 @@ body {
       transparent 19px,
       rgba(var(--callout-color), 0.6) 20px
     );
-  mask: linear-gradient(to right, var(--background-primary), transparent 80%),
+  mask:
+    linear-gradient(to right, var(--background-primary), transparent 80%),
     linear-gradient(to bottom, var(--background-primary), transparent 80%);
   mask-composite: intersect;
 }
@@ -1322,8 +1341,10 @@ body .markdown-rendered mark {
     --table-row-last-border-width: 0px;
 
     box-shadow:
-      hsl(var(--accent-h), var(--accent-l), var(--accent-s), 0.25) 0px 0px 5px -1px,
-      hsl(var(--accent-h), var(--accent-l), var(--accent-s), 0.3) 0px 1px 0px -1px;
+      hsl(var(--accent-h), var(--accent-l), var(--accent-s), 0.25) 0px 0px
+        5px -1px,
+      hsl(var(--accent-h), var(--accent-l), var(--accent-s), 0.3) 0px 1px
+        0px -1px;
   }
 }
 
@@ -1375,7 +1396,8 @@ body:not(.composer--HideStripedTableBackground) {
 
 /* link/external */
 .external-link {
-  background-image: linear-gradient(transparent, transparent),
+  background-image:
+    linear-gradient(transparent, transparent),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(136, 136, 136)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7 7 17 7 17 17'%3E%3C/polyline%3E%3C/svg%3E");
   background-size: calc(var(--font-text-size) + 0.2em), 1em;
   background-position: right center;
@@ -1529,11 +1551,15 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
   opacity: 1;
 }
 
-body:not(.is-phone) .workspace:not(.is-left-sidedock-open) .sidebar-toggle-button.mod-left {
+body:not(.is-phone)
+  .workspace:not(.is-left-sidedock-open)
+  .sidebar-toggle-button.mod-left {
   margin-top: 2px;
 }
 
-body:not(.is-phone) .workspace:not(.is-right-sidedock-open) .sidebar-toggle-button.mod-right {
+body:not(.is-phone)
+  .workspace:not(.is-right-sidedock-open)
+  .sidebar-toggle-button.mod-right {
   margin-top: 2px;
 }
 
@@ -1625,7 +1651,10 @@ body:not(.is-phone) .workspace-tab-container {
   padding: 1px 12px 0px 6px;
 }
 
-.workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+.workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
   border: none;
   background-color: transparent;
 }
@@ -1636,7 +1665,8 @@ body:not(.is-phone) .workspace-tab-container {
   display: none;
 }
 
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   background-color: transparent;
 }
 
@@ -1745,7 +1775,9 @@ body:not(.is-phone)
 }
 
 /* vault profile */
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   border: none;
   background-color: transparent;
 }
@@ -1766,7 +1798,9 @@ body:not(.is-phone) .view-header-title-parent {
 }
 
 @media (hover: hover) {
-  body:not(.is-phone) .view-header-title-container:hover .view-header-title-parent {
+  body:not(.is-phone)
+    .view-header-title-container:hover
+    .view-header-title-parent {
     width: auto;
     opacity: 1;
     transition: opacity 0.5s;
@@ -1790,8 +1824,12 @@ body:not(.is-phone) .view-header-title-parent {
   color: var(--text-accent);
 }
 
-.workspace-leaf-content[data-type="outline"] .tree-item-self:hover .tree-item-icon,
-.workspace-leaf-content[data-type="outline"] .tree-item-self .tree-item-icon.is-collapsed {
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-self:hover
+  .tree-item-icon,
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-self
+  .tree-item-icon.is-collapsed {
   opacity: 1;
 }
 
@@ -1824,7 +1862,9 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 * Source: https://github.com/subframe7536/obsidian-theme-maple
 * Licensed under MIT License (https://github.com/subframe7536/obsidian-theme-maple/blob/main/LICENSE)
 */
-.composer--NodeOutlineStyle .workspace-leaf-content[data-type="outline"] .view-content {
+.composer--NodeOutlineStyle
+  .workspace-leaf-content[data-type="outline"]
+  .view-content {
   /* Base styles for outline container */
   .collapse-icon {
     padding-inline-end: var(--size-2-3);
@@ -1935,7 +1975,9 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
       position: absolute;
       top: calc(var(--nav-item-size) * 1.8 / 2 * -1);
       left: -9px;
-      bottom: calc(100% - (var(--nav-item-size) * 1.8 + var(--size-4-2)) / 2 - 1px);
+      bottom: calc(
+        100% - (var(--nav-item-size) * 1.8 + var(--size-4-2)) / 2 - 1px
+      );
       width: 16px;
       border-bottom-left-radius: var(--radius-m);
       border-bottom: 2px solid var(--color-accent);
@@ -1952,7 +1994,8 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 }
 
 /* windows titlebar button */
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right,
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right,
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
   background-color: transparent;
 }
@@ -2102,7 +2145,9 @@ body:not(.composer--DisableFileFolderIcon)
 .composer--ParagraphIndent
   .markdown-reading-view
   :is([class="cm-line"], [class="cm-active cm-line"], p),
-.composer--ParagraphIndent .is-live-preview :is([class="cm-line"], [class="cm-active cm-line"], p) {
+.composer--ParagraphIndent
+  .is-live-preview
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
   text-indent: var(--paragraph-indent);
 }
 
@@ -2200,7 +2245,8 @@ body.composer--ParagraphIndent .components--ComponentEl {
   border: 0px;
 }
 
-.composer--ComponentsFilledGallaryCover .components--DynamicDataView-PageCardCover,
+.composer--ComponentsFilledGallaryCover
+  .components--DynamicDataView-PageCardCover,
 .components--DynamicDataView-PageCardCover .components--Picture {
   border-radius: initial;
 }
@@ -2423,8 +2469,13 @@ li[data-task="-"] > p > input:checked {
   background-image: url('data:image/svg+xml,%3Csvg t="1741245385807" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16595" width="20" height="20"%3E%3Cpath d="M295.232 205.44l6.016 5.312L512 421.44l210.752-210.688a64 64 0 0 1 95.808 84.48l-5.312 6.016L602.56 512l210.688 210.752a64 64 0 0 1-84.48 95.808l-6.016-5.312L512 602.56l-210.752 210.688a64 64 0 0 1-95.808-84.48l5.312-6.016L421.44 512 210.752 301.248a64 64 0 0 1 84.48-95.808z" fill="%232c2c2c" p-id="16596"%3E%3C/path%3E%3C/svg%3E');
 }
 
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;

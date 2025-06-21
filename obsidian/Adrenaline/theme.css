@@ -66,25 +66,120 @@ svg * {
   --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
 
-  --accent-color-light10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
-  --accent-color-light9: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
-  --accent-color-light8: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
-  --accent-color-light7: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.7);
-  --accent-color-light6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.6);
-  --accent-color-light5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
-  --accent-color-light4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
-  --accent-color-light3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
-  --accent-color-light2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
-  --accent-color-light1: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
-  --accent-color-light09: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.09);
-  --accent-color-light08: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
-  --accent-color-light07: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.07);
-  --accent-color-light06: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06);
-  --accent-color-light05: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
-  --accent-color-light04: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.04);
-  --accent-color-light03: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.03);
-  --accent-color-light02: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.02);
-  --accent-color-light01: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.01);
+  --accent-color-light10: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    1
+  );
+  --accent-color-light9: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.9
+  );
+  --accent-color-light8: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.8
+  );
+  --accent-color-light7: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.7
+  );
+  --accent-color-light6: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.6
+  );
+  --accent-color-light5: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
+  --accent-color-light4: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.4
+  );
+  --accent-color-light3: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.3
+  );
+  --accent-color-light2: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.2
+  );
+  --accent-color-light1: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.1
+  );
+  --accent-color-light09: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.09
+  );
+  --accent-color-light08: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.08
+  );
+  --accent-color-light07: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.07
+  );
+  --accent-color-light06: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.06
+  );
+  --accent-color-light05: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  );
+  --accent-color-light04: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.04
+  );
+  --accent-color-light03: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.03
+  );
+  --accent-color-light02: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.02
+  );
+  --accent-color-light01: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.01
+  );
 
   --accent-color-bright: hsla(
     var(--accent-h),

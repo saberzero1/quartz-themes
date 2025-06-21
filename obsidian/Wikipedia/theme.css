@@ -218,7 +218,9 @@ body:not(.frontmatter-blockquote) .frontmatter-container {
 }
 
 /* style labels */
-body:not(.frontmatter-blockquote) .frontmatter-container .frontmatter-section-label,
+body:not(.frontmatter-blockquote)
+  .frontmatter-container
+  .frontmatter-section-label,
 .callout-content .dataview.inline-field-key {
   font-size: var(--h6-size);
   color: var(--text-normal);
@@ -230,7 +232,9 @@ body:not(.frontmatter-blockquote) .frontmatter-container .frontmatter-section-la
   display: block;
 }
 /* style section data */
-body:not(.frontmatter-blockquote) .frontmatter-container .frontmatter-section-data {
+body:not(.frontmatter-blockquote)
+  .frontmatter-container
+  .frontmatter-section-data {
   font-size: var(--font-text-size);
   align-items: center;
   text-align: center;
@@ -238,14 +242,18 @@ body:not(.frontmatter-blockquote) .frontmatter-container .frontmatter-section-da
 }
 
 /* style label-data pairs */
-body:not(.frontmatter-blockquote) .frontmatter-container:not(.is-collapsed) .frontmatter-section {
+body:not(.frontmatter-blockquote)
+  .frontmatter-container:not(.is-collapsed)
+  .frontmatter-section {
   text-align: center;
   margin-bottom: 0.5em;
   display: block;
 }
 
 /* --- Blockquote Style Frontmatter --- */
-.frontmatter-blockquote .frontmatter-container.is-collapsed .frontmatter-container-header {
+.frontmatter-blockquote
+  .frontmatter-container.is-collapsed
+  .frontmatter-container-header {
   width: fit-content;
   color: var(--text-faint);
 }
@@ -257,7 +265,9 @@ body:not(.frontmatter-blockquote) .frontmatter-container:not(.is-collapsed) .fro
   padding-right: 0.5em;
   padding-left: 2em;
 }
-.frontmatter-blockquote .frontmatter-container .frontmatter-section-label:after {
+.frontmatter-blockquote
+  .frontmatter-container
+  .frontmatter-section-label:after {
   content: ":";
 }
 
@@ -320,7 +330,8 @@ body {
 }
 
 /* Style Info Callouts as infoboxes */
-body:not(.info-normal) .callout[data-callout="info"]:not([data-callout-metadata~="normal"]),
+body:not(.info-normal)
+  .callout[data-callout="info"]:not([data-callout-metadata~="normal"]),
 .callout[data-callout-metadata~="info"] {
   float: var(--infobox-position);
   clear: var(--infobox-position);
@@ -352,7 +363,10 @@ body:not(.info-normal)
 }
 
 /* callout classes */
-.hide-callout-title .callout[data-callout="info"] .callout-content p:first-of-type {
+.hide-callout-title
+  .callout[data-callout="info"]
+  .callout-content
+  p:first-of-type {
   margin: 0px; /* close gaps in infobox when info callout title is hidden */
 }
 .hide-callout-title .callout[data-callout="info"] .callout-title {
@@ -389,7 +403,10 @@ body:not(.info-normal)
 
 .callout:not([data-callout="info"]),
 .info-normal .callout[data-callout="info"] {
-  --h6-background: rgba(var(--callout-color), 20%); /* make header 6 match callout color */
+  --h6-background: rgba(
+    var(--callout-color),
+    20%
+  ); /* make header 6 match callout color */
 }
 
 .callout-title,
@@ -782,7 +799,12 @@ body {
 /* Dark Theme */
 .theme-dark {
   /* Tab colors */
-  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
+  --tab-outline-color: hsl(
+    calc(var(--accent-h) - 10),
+    var(--accent-s),
+    var(--accent-l),
+    55%
+  );
   --tab-gradient: linear-gradient(
     to top,
     var(--color-accent-2) 0px,
@@ -791,9 +813,22 @@ body {
   );
 
   /* Accents */
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.5%));
-  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) - 4%));
-  --color-accent-3: hsla(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.5%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 2),
+    var(--accent-s),
+    calc(var(--accent-l) - 4%)
+  );
+  --color-accent-3: hsla(
+    calc(var(--accent-h) - 10),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
 
   /* Main Colors */
   --color-base-00: #1e1f21;
@@ -812,7 +847,11 @@ body {
   --background-modifier-border: #dae1ea31;
 
   /* links */
-  --link-color: hsl(calc(var(--accent-h) + 5), var(--accent-s), calc(var(--accent-l) + 15%));
+  --link-color: hsl(
+    calc(var(--accent-h) + 5),
+    var(--accent-s),
+    calc(var(--accent-l) + 15%)
+  );
   --link-unresolved-color: hsl(
     calc(var(--accent-h) - 5),
     var(--accent-s),
@@ -833,7 +872,11 @@ body {
 /* Light Theme */
 .theme-light {
   /* links */
-  --link-color: hsl(calc(var(--accent-h) + 5), var(--accent-s), calc(var(--accent-l) - 5%));
+  --link-color: hsl(
+    calc(var(--accent-h) + 5),
+    var(--accent-s),
+    calc(var(--accent-l) - 5%)
+  );
   --link-unresolved-color: var(--color-accent-1);
   --link-external-color: hsl(
     calc(var(--accent-h) + 20),
@@ -847,7 +890,12 @@ body {
   );
 
   /* tabs */
-  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 40%);
+  --tab-outline-color: hsl(
+    calc(var(--accent-h) - 10),
+    var(--accent-s),
+    var(--accent-l),
+    40%
+  );
   --tab-gradient: linear-gradient(
     to top,
     var(--color-accent-2) 0px,
@@ -856,9 +904,22 @@ body {
   );
 
   /* accent colors */
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 2.5%));
-  --color-accent-2: hsl(calc(var(--accent-h) - 2), var(--accent-s), calc(var(--accent-l) + 10%));
-  --color-accent-3: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 20%);
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 2.5%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 2),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  );
+  --color-accent-3: hsl(
+    calc(var(--accent-h) - 10),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
 
   /* Main colors */
   --h6-background: rgb(235, 235, 210);

@@ -213,18 +213,42 @@ body {
 .color-scheme-analogous {
   --italic-color: hsl(var(--italic-h), var(--accent-s), var(--color-80-l));
   --bold-color: hsl(var(--bold-h), var(--accent-s), var(--color-80-l));
-  --text-highlight-bg: hsla(var(--text-highlight-h), var(--accent-s), var(--accent-l), 50%);
-  --callout-background-hsla: var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --text-highlight-bg: hsla(
+    var(--text-highlight-h),
+    var(--accent-s),
+    var(--accent-l),
+    50%
+  );
+  --callout-background-hsla:
+    var(--callout-h), var(--accent-s), var(--accent-l), 20%;
 
-  --background-modifier-hover: hsl(var(--button-h), var(--accent-s), var(--color-50-l), 25%);
+  --background-modifier-hover: hsl(
+    var(--button-h),
+    var(--accent-s),
+    var(--color-50-l),
+    25%
+  );
   /*Titlebar and ribbon*/
   --icon-color-hover: hsl(var(--button-h), var(--accent-s), var(--color-90-l));
-  --nav-item-background-hover: hsla(var(--button-h), var(--accent-s), var(--color-40-l), 33%);
+  --nav-item-background-hover: hsla(
+    var(--button-h),
+    var(--accent-s),
+    var(--color-40-l),
+    33%
+  );
   --nav-item-background-active: var(--interactive-accent);
   --nav-item-color-hover: var(--icon-color-hover);
   --nav-item-color-active: var(--text-on-accent);
-  --checkbox-color: hsl(var(--button-alt-h), calc(var(--accent-s) * 0.8), var(--color-70-l));
-  --checkbox-color-hover: hsl(var(--button-alt-h), var(--accent-s), var(--color-80-l));
+  --checkbox-color: hsl(
+    var(--button-alt-h),
+    calc(var(--accent-s) * 0.8),
+    var(--color-70-l)
+  );
+  --checkbox-color-hover: hsl(
+    var(--button-alt-h),
+    var(--accent-s),
+    var(--color-80-l)
+  );
   --background-modifier-form-field: var(--color-base-15);
 
   --color-base-00: hsl(0, 0%, var(--color-00-l));
@@ -537,7 +561,9 @@ body.is-frameless:not(.is-hidden-frameless) .titlebar {
   gap: initial;
   width: 100%;
 }
-.mod-root .workspace-tab-header-container-inner > .workspace-tab-header:not(.is-active):hover,
+.mod-root
+  .workspace-tab-header-container-inner
+  > .workspace-tab-header:not(.is-active):hover,
 .workspace-tab-header:not(.is-active):hover {
   /*Hover effect*/
   background-color: var(--background-modifier-hover);
@@ -585,7 +611,10 @@ body.is-frameless:not(.is-hidden-frameless) .titlebar {
 /*-------- SLIDES PLUGIN */
 
 .reveal {
-  background: radial-gradient(var(--background-primary) 60%, var(--background-primary-alt));
+  background: radial-gradient(
+    var(--background-primary) 60%,
+    var(--background-primary-alt)
+  );
   --r-background-color: var(--background-primary); /*TODO make an option*/
   --r-main-color: var(--text-normal);
   --r-heading-color: var(--text);
@@ -665,10 +694,13 @@ button.kanban-plugin__new-item-button:hover {
   box-shadow: var(--input-shadow-hover);
 }
 
-.kanban-plugin__drag-container > .kanban-plugin__item-wrapper > .kanban-plugin__item {
+.kanban-plugin__drag-container
+  > .kanban-plugin__item-wrapper
+  > .kanban-plugin__item {
   border: none;
 }
-.kanban-plugin__item-metadata > .kanban-plugin__item-metadata-date-wrapper.has-background {
+.kanban-plugin__item-metadata
+  > .kanban-plugin__item-metadata-date-wrapper.has-background {
   margin: 0;
 }
 .kanban-plugin__item-tags:not(:empty) {
@@ -795,7 +827,9 @@ li.svelte-1p44ezg.svelte-1p44ezg::marker {
 .style-settings-container {
   padding-left: 2ch;
 }
-.setting-item-heading[data-id="buenavista"] > .setting-item-info > .setting-item-name::after {
+.setting-item-heading[data-id="buenavista"]
+  > .setting-item-info
+  > .setting-item-name::after {
   margin-left: 1.5ch;
   font-size: 0.75rem;
   font-weight: normal;

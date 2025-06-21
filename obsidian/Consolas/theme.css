@@ -212,7 +212,9 @@ div.markdown-preview-view {
   --line-height-normal: 1.5 /* same as --line-height-normal */;
 }
 
-.kanban-plugin__lane-title-text .kanban-plugin__markdown-preview-wrapper .markdown-preview-view,
+.kanban-plugin__lane-title-text
+  .kanban-plugin__markdown-preview-wrapper
+  .markdown-preview-view,
 .kanban-plugin__lane-title-count {
   /* color: var(--color-alt-1); */
   color: var(--color-default);
@@ -452,8 +454,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;

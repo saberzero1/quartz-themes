@@ -203,7 +203,9 @@ function replaceInFile(filePath, targetString, replacementString) {
     const fileContent = fs.readFileSync(filePath, "utf8")
 
     // Replace all occurrences of the target string with the replacement string
-    const modifiedContent = fileContent.split(targetString).join(replacementString)
+    const modifiedContent = fileContent
+      .split(targetString)
+      .join(replacementString)
 
     // Write the modified content back to the file
     fs.writeFileSync(filePath, modifiedContent, "utf8")
@@ -280,7 +282,9 @@ function removeNonVariableLines(cssString) {
     const lines = cssString.split("\n")
 
     // Remove comments
-    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
+    const linesCleared = lines.map((line) =>
+      line.replaceAll(/\/\*.*?\*\//g, ""),
+    )
 
     // Filter lines to include only those that match the CSS variable pattern
     const variableLines = linesCleared.filter(
@@ -288,7 +292,9 @@ function removeNonVariableLines(cssString) {
     )
 
     // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
+    const emptyColorLines = variableLines.filter(
+      (line) => !line.trim().endsWith("#;"),
+    )
 
     // Join the filtered lines back into a single string
     const updatedContent = emptyColorLines.join("\n")
@@ -331,7 +337,9 @@ const folders = listFoldersInDirectory(obsidianFolder)
 // STEP 2
 let manifestCollection = []
 folders.forEach((folder) => {
-  manifestCollection.push(readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"))
+  manifestCollection.push(
+    readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"),
+  )
 })
 //console.log(manifestCollection)
 
@@ -429,8 +437,14 @@ manifestCollection.forEach((manifest) => {
 const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
 const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
 const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
-const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
-const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
+const darkRegex = new RegExp(
+  /^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/,
+  "gmsv",
+)
+const lightRegex = new RegExp(
+  /^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/,
+  "gmsv",
+)
 let hasDarkOptions = true
 let hasLightOptions = true
 manifestCollection.forEach((manifest) => {

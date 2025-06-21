@@ -143,7 +143,8 @@ span.cm-url:hover,
 }
 
 /* Source Mode URL color */
-.HyperMD-header.HyperMD-header-3.cm-line .cm-header.cm-header-3.cm-string.cm-url {
+.HyperMD-header.HyperMD-header-3.cm-line
+  .cm-header.cm-header-3.cm-string.cm-url {
   background: #50fa7b !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
@@ -502,7 +503,8 @@ p > code,
 li code,
 ul code,
 ol code {
-  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -520,7 +522,8 @@ ol code {
 
 /* Inline Code in Source Mode */
 .cm-inline-code {
-  font-family: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  font-family:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -539,13 +542,18 @@ table > tbody {
 }
 
 :root {
-  --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
-  --font-monospace: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-code: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-monospace-1: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
-  --font-monospace-2: "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --default-font:
+    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-monospace:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-code:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-1:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+  --font-monospace-2:
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
 }
 
 /*Bullet list line height in Live Mode*/
@@ -608,8 +616,9 @@ Icons: Boxicons
     'JetBrains Mono', 'Fira Code', Courier, monospace; */
 
   /* Square-y Proportion */
-  --font-sans-2: "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
-    Helvetica, Arial, sans-serif;
+  --font-sans-2:
+    "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Helvetica, Arial, sans-serif;
   /* --font-monospace-2:
     'DM Mono', 'Fira Code', Courier, monospace; */
 
@@ -806,9 +815,14 @@ Icons: Boxicons
   --shadow-xsm: rgba(0, 0, 0, 0.15);
 
   --shadow-sm: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
-  --shadow-m: 0px 3px 3.1px -20px rgba(0, 0, 0, 0.2), 0px 24px 25px -20px rgba(0, 0, 0, 0.35);
-  --shadow-l: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
-    0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
+  --shadow-m:
+    0px 3px 3.1px -20px rgba(0, 0, 0, 0.2),
+    0px 24px 25px -20px rgba(0, 0, 0, 0.35);
+  --shadow-l:
+    0px 2px 2.3px -52px rgba(0, 0, 0, 0.448),
+    0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
+    0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852),
+    0px 45px 50px -52px rgba(0, 0, 0, 1);
 
   --sheer-light: rgba(0, 0, 0, 0.35);
   --sheer-medium: rgba(0, 0, 0, 0.65);
@@ -1409,7 +1423,8 @@ body .workspace-tab-header .workspace-tab-header-inner-icon svg {
   font-size: var(--font-scale-0);
   line-height: calc(var(--line-height) - 0.3rem);
   border-radius: var(--scale-2-1);
-  padding: var(--scale-2-1) var(--scale-0-0) var(--scale-0-0) calc(1px + var(--scale-2-5));
+  padding: var(--scale-2-1) var(--scale-0-0) var(--scale-0-0)
+    calc(1px + var(--scale-2-5));
 }
 
 .tree-item-flair {
@@ -1473,13 +1488,15 @@ body .workspace-tab-header .workspace-tab-header-inner-icon svg {
 
 /* Tree Items Relationship Lines
     except Graph View */
-div.search-result-container .tree-item-self:not(.search-result-file-title.tree-item-self),
+div.search-result-container
+  .tree-item-self:not(.search-result-file-title.tree-item-self),
 .tree-item-children .tag-pane-tag,
 .view-content .outline .tree-item-children {
   border-left: 1px solid var(--background-modifier-border);
 }
 
-div.search-result-container .tree-item-self:not(graph-controls .tree-item-children):hover {
+div.search-result-container
+  .tree-item-self:not(graph-controls .tree-item-children):hover {
   border-left: 1px solid var(--color-cyan-500);
 }
 
@@ -1664,8 +1681,12 @@ Content / Active Note / Opened Notes
 ──────────────────────────────────────*/
 
 /* Curved Top Corners in Active Note Pane Fix */
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-radius: 0;
 }
 
@@ -1687,7 +1708,9 @@ Content / Active Note / Opened Notes
 
 .view-header,
 .workspace-leaf.mod-active .view-header,
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   height: calc(4px + var(--scale-2-18));
 }
 
@@ -1728,13 +1751,21 @@ Content / Active Note / Opened Notes
   color: var(--text-muted);
 }
 
-.workspace-leaf:not(.workspace-leaf.mod-active) .view-header .view-header-icon:hover,
-.workspace-leaf:not(.workspace-leaf.mod-active) .view-header .view-action:hover {
+.workspace-leaf:not(.workspace-leaf.mod-active)
+  .view-header
+  .view-header-icon:hover,
+.workspace-leaf:not(.workspace-leaf.mod-active)
+  .view-header
+  .view-action:hover {
   color: var(--text-normal);
 }
 
-.workspace-leaf:not(.workspace-leaf.mod-active) .view-header .view-header-icon:active,
-.workspace-leaf:not(.workspace-leaf.mod-active) .view-header .view-action:active {
+.workspace-leaf:not(.workspace-leaf.mod-active)
+  .view-header
+  .view-header-icon:active,
+.workspace-leaf:not(.workspace-leaf.mod-active)
+  .view-header
+  .view-action:active {
   color: var(--text-faint);
 }
 
@@ -2506,8 +2537,10 @@ ul.contains-task-list {
 
 /*──────────Markdown Embed──────────*/
 
-.markdown-source-view .markdown-embed:not(.popover.hover-popover.is-loaded .markdown-embed),
-.markdown-preview-view .markdown-embed:not(.popover.hover-popover.is-loaded .markdown-embed) {
+.markdown-source-view
+  .markdown-embed:not(.popover.hover-popover.is-loaded .markdown-embed),
+.markdown-preview-view
+  .markdown-embed:not(.popover.hover-popover.is-loaded .markdown-embed) {
   border-radius: 0;
   border-top: none;
   border-right: none;
@@ -2527,7 +2560,9 @@ ul.contains-task-list {
   padding: 0 0;
 }
 
-.popover.hover-popover.is-loaded .markdown-embed .markdown-embed-content.markdown-embed-page {
+.popover.hover-popover.is-loaded
+  .markdown-embed
+  .markdown-embed-content.markdown-embed-page {
   padding: 0 0;
 }
 
@@ -3145,7 +3180,8 @@ input.prompt-input {
 .suggestion .suggestion-item {
   font-family: var(--default-font);
   border-radius: var(--scale-0-0);
-  padding: var(--scale-2-1) var(--scale-2-10) var(--scale-2-1) calc(var(--scale-2-10) + 7px);
+  padding: var(--scale-2-1) var(--scale-2-10) var(--scale-2-1)
+    calc(var(--scale-2-10) + 7px);
 }
 
 .suggestion-flair {
@@ -3463,11 +3499,15 @@ pre button.copy-code-button {
 .theme-light .modal button:not(.mod-cta):not(.mod-warning):focus,
 .theme-light .workspace button:not(.graph-controls button):focus,
 .theme-light .modal button:not(.mod-cta):not(.mod-warning):hover,
-.theme-light .workspace button:not(.graph-controls button, .excalidraw button):hover,
+.theme-light
+  .workspace
+  button:not(.graph-controls button, .excalidraw button):hover,
 .theme-dark .modal button:not(.mod-cta):not(.mod-warning):focus,
 .theme-dark .workspace button:not(.graph-controls button):focus,
 .theme-dark .modal button:not(.mod-cta):not(.mod-warning):hover,
-.theme-dark .workspace button:not(.graph-controls button, .excalidraw button):hover,
+.theme-dark
+  .workspace
+  button:not(.graph-controls button, .excalidraw button):hover,
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
   background: var(--color-purple-700);
 }
@@ -3482,11 +3522,15 @@ pre button.copy-code-button {
 
 .theme-light .modal button:active,
 .theme-light .modal button:not(.mod-cta):not(.mod-warning):active,
-.theme-light .workspace button:not(.graph-controls button, .excalidraw button):active,
+.theme-light
+  .workspace
+  button:not(.graph-controls button, .excalidraw button):active,
 .theme-light .graph-controls button:active,
 .theme-dark .modal button:active,
 .theme-dark .modal button:not(.mod-cta):not(.mod-warning):active,
-.theme-dark .workspace button:not(.graph-controls button, .excalidraw button):active,
+.theme-dark
+  .workspace
+  button:not(.graph-controls button, .excalidraw button):active,
 .theme-dark .graph-controls button:active,
 .markdown-source-view.mod-cm6 .edit-block-button:active {
   box-shadow:
@@ -3935,8 +3979,8 @@ code::-webkit-scrollbar-thumb {
 .is-loading:before,
 .search-result-container.is-loading:before {
   background-color: var(--background-primary);
-  animation: var(--duration-slow-2) var(--motion-smooth) var(--duration-slow-2) infinite
-    progress-bar;
+  animation: var(--duration-slow-2) var(--motion-smooth) var(--duration-slow-2)
+    infinite progress-bar;
 }
 
 .progress-bar {
@@ -4206,7 +4250,10 @@ are many tab options on drawers + sizing fix */
 
 .is-mobile .view-header,
 .is-mobile .workspace-leaf.mod-active .view-header,
-.is-mobile .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.is-mobile
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   height: var(--scale-2-24);
 }
 
@@ -4529,7 +4576,9 @@ are many tab options on drawers + sizing fix */
     flex-direction: unset;
   }
 
-  .is-mobile .setting-item:not(.mod-toggle):not(.setting-item-heading) .setting-item-control {
+  .is-mobile
+    .setting-item:not(.mod-toggle):not(.setting-item-heading)
+    .setting-item-control {
     width: 300px;
   }
 
@@ -4752,8 +4801,10 @@ body.plugin-sliding-panes-rotate-header
   margin-left: var(--scale-2-1) !important;
 }
 
-.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-mixed .view-header-icon,
-.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-mixed .view-action {
+.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-mixed
+  .view-header-icon,
+.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-mixed
+  .view-action {
   margin-left: calc(1px + var(--scale-2-2)) !important;
 }
 
@@ -4842,7 +4893,9 @@ body.plugin-sliding-panes-rotate-header
   border-top: 1px solid var(--shadow-xsm);
 }
 
-.view-content .kanban-plugin__lane-items > .kanban-plugin__placeholder:only-child {
+.view-content
+  .kanban-plugin__lane-items
+  > .kanban-plugin__placeholder:only-child {
   border-radius: var(--scale-2-1);
   border: 1px dashed var(--interactive-accent);
 }
@@ -4880,7 +4933,9 @@ body.plugin-sliding-panes-rotate-header
   margin-left: var(--scale-2-4);
 }
 
-.view-content .kanban-plugin .kanban-plugin__lane-settings-button.is-enabled:hover {
+.view-content
+  .kanban-plugin
+  .kanban-plugin__lane-settings-button.is-enabled:hover {
   background: var(--color-magenta-700);
 }
 
@@ -4923,7 +4978,10 @@ body.plugin-sliding-panes-rotate-header
   padding-top: 0;
 }
 
-.view-content .kanban-plugin .kanban-plugin__item-tags .kanban-plugin__item-tag {
+.view-content
+  .kanban-plugin
+  .kanban-plugin__item-tags
+  .kanban-plugin__item-tag {
   background: var(--background-secondary);
   margin-top: 0;
   margin-bottom: var(--scale-2-1);
@@ -5067,7 +5125,10 @@ body .excalidraw.theme--dark .Island label.control-label {
   background: rgba(100, 100, 100, 1);
 }
 
-.workspace .excalidraw.theme--dark .undo-redo-buttons button[type="button"]:focus {
+.workspace
+  .excalidraw.theme--dark
+  .undo-redo-buttons
+  button[type="button"]:focus {
   background: rgba(100, 100, 100, 1);
 }
 
@@ -5146,7 +5207,11 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   margin: 0;
 }
 
-.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th {
   font-size: var(--font-scale-1);
   border-bottom: none;
   color: var(--md-color-code-white);
@@ -5157,12 +5222,18 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   background: var(--background-primary);
 }
 
-.markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody tr:nth-child(even) {
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  .table-view-tbody
+  tr:nth-child(even) {
   background: hsl(225, 13%, 18%);
   /* Derived from Color Picking MD Tables rendered in Preview, Alpha colors don't work as should */
 }
 
-.markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody td:not(td:last-of-type) {
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  .table-view-tbody
+  td:not(td:last-of-type) {
   padding: 4px 10px;
 }
 
@@ -5200,7 +5271,10 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   margin: 15px 0;
 }
 
-.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview h4:first-of-type {
+.markdown-source-view.mod-cm6
+  .cm-embed-block
+  .block-language-dataview
+  h4:first-of-type {
   margin-top: 0;
 }
 
@@ -5213,7 +5287,10 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
 }
 
 /* Dataview List */
-.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview ul.dataview.list-view-ul {
+.markdown-source-view.mod-cm6
+  .cm-embed-block
+  .block-language-dataview
+  ul.dataview.list-view-ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -5798,7 +5875,9 @@ body:not(.no-custom-icons)
 }
 
 /* Folder, File Explorer -> Add Folder */
-body:not(.no-custom-icons) .nav-action-button[aria-label="New folder"] svg.folder {
+body:not(.no-custom-icons)
+  .nav-action-button[aria-label="New folder"]
+  svg.folder {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M13 9h-2v3H8v2h3v3h2v-3h3v-2h-3z'%3E%3C/path%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.996.996 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
 }
 

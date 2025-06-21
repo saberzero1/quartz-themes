@@ -34,7 +34,12 @@ import {
 } from "./util/postcss-style-settings.mjs"
 import { themes, usedRules } from "./config.mjs"
 import { prune } from "./util/prune-unused.mjs"
-import { writeIndex, cleanCSS, writeStyleSettings } from "./util/writer.mjs"
+import {
+  writeIndex,
+  cleanCSS,
+  writeStyleSettings,
+  writePrettier,
+} from "./util/writer.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -58,7 +63,10 @@ const start = Date.now()
 const args = getCommandLineArgs()
 
 if (args[0] === "ATOMIZE") {
-  if (fs.existsSync(`./converted_app.css`) || fs.existsSync(`./converted_app_extracted.css`)) {
+  if (
+    fs.existsSync(`./converted_app.css`) ||
+    fs.existsSync(`./converted_app_extracted.css`)
+  ) {
     throw new Error(
       "Converted app.css already exists. Please remove it before running the script again.",
     )
@@ -81,7 +89,10 @@ if (singleThemeName === "") {
   })
 } else if (singleThemeName !== "") {
   manifestCollection.push(
-    readJsonFileAsDictionary(`${obsidianFolder}/${singleThemeName}`, "manifest.json"),
+    readJsonFileAsDictionary(
+      `${obsidianFolder}/${singleThemeName}`,
+      "manifest.json",
+    ),
   )
 }
 
@@ -116,28 +127,40 @@ manifestCollection.forEach((manifest) => {
   // if it does not exist, copy the file
   if (!fs.existsSync(`./extras/themes/${getTheme(manifest)}`)) {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
-    copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
+    copyFileToDirectory(
+      `./extras/_index.scss`,
+      `./extras/themes/${getTheme(manifest)}`,
+    )
   }
   if (args[0] === "ATOMIZE") {
     // Clear the style settings directories.
     clearDirectories(`./extras/themes/${getTheme(manifest)}`)
   }
   if (args[0] === "INIT") {
-    copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
+    copyFileToDirectory(
+      `./extras/_index.scss`,
+      `./extras/themes/${getTheme(manifest)}`,
+    )
   }
 })
 
 // _dark.scss
 manifestCollection.forEach((manifest) => {
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    copyFileToDirectory(`./templates/_dark.scss`, `./themes/${getTheme(manifest)}`)
+    copyFileToDirectory(
+      `./templates/_dark.scss`,
+      `./themes/${getTheme(manifest)}`,
+    )
   }
 })
 
 // _light.scss
 manifestCollection.forEach((manifest) => {
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    copyFileToDirectory(`./templates/_light.scss`, `./themes/${getTheme(manifest)}`)
+    copyFileToDirectory(
+      `./templates/_light.scss`,
+      `./themes/${getTheme(manifest)}`,
+    )
   }
 })
 
@@ -162,7 +185,10 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
-    copyFileToDirectory(`./extras/${extra}.scss`, `./themes/${getTheme(manifest)}/extras`)
+    copyFileToDirectory(
+      `./extras/${extra}.scss`,
+      `./themes/${getTheme(manifest)}/extras`,
+    )
     // TODO: Implement style settings here
   })
   // Default override
@@ -201,7 +227,11 @@ manifestCollection.forEach((manifest) => {
     authorUrlValue !== ""
       ? `<a href="${authorUrlValue}" target="_blank" rel="noopener noreferrer">${authorValue}</a>`
       : authorValue
-  replaceInFile(`./themes/${getTheme(manifest)}/README.md`, "%OBSIDIAN_THEME_AUTHOR%", authorString)
+  replaceInFile(
+    `./themes/${getTheme(manifest)}/README.md`,
+    "%OBSIDIAN_THEME_AUTHOR%",
+    authorString,
+  )
 })
 manifestCollection.forEach((manifest) => {
   const result = generateFundingLinks(manifest)
@@ -234,7 +264,11 @@ manifestCollection.forEach((manifest) => {
   })
   //extras += `\n@use "callouts/default.scss";`
   //extras += `\n@use "callouts/overrides.scss";`
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%EXTRAS%%`, extras)
+  replaceInFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    `//%%EXTRAS%%`,
+    extras,
+  )
 })
 manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name")
@@ -244,19 +278,24 @@ manifestCollection.forEach((manifest) => {
       const obsidianCSS = fs.readFileSync("./app.css", "utf8")
       const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8")
       const result = cleanCSS(obsidianCSS, overridesCSS)
-      fs.writeFileSync(`./converted_app.css`, result, "utf8")
+      writePrettier(`./converted_app.css`, result, "utf8")
       // Write extracted version to speed up later processing
       const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8")
       let extractResult = ""
       for (const rule of usedRules) {
         const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
-        extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+        extractResult += applyRuleToString(
+          target,
+          rule,
+          `//%%NEXTEXTRACTRULE%%`,
+          cssAtomicString,
+        )
       }
       extractResult = combineIdenticalSelectors(extractResult)
       extractResult = removeEmptyRules(extractResult)
       extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
       extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
-      fs.writeFileSync(`./converted_app_extracted.css`, extractResult, "utf8")
+      writePrettier(`./converted_app_extracted.css`, extractResult, "utf8")
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`)
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`
@@ -264,7 +303,10 @@ manifestCollection.forEach((manifest) => {
     const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`
     const cssString = fs.readFileSync(cssFile, "utf8")
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
-    const obsidianExtractedCSS = fs.readFileSync("./converted_app_extracted.css", "utf8")
+    const obsidianExtractedCSS = fs.readFileSync(
+      "./converted_app_extracted.css",
+      "utf8",
+    )
     let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString))
 
     // Theme variations (for style settings)
@@ -279,11 +321,15 @@ manifestCollection.forEach((manifest) => {
 
           if (ignoreStyleTypes.includes(style["type"])) {
             // Skip styles that are not relevant for CSS generation
-            console.warn(`Skipping style setting: ${style["id"]} of type ${style["type"]}`)
+            console.warn(
+              `Skipping style setting: ${style["id"]} of type ${style["type"]}`,
+            )
             return
           }
 
-          console.log(`Processing style setting: ${style["id"]} of type ${style["type"]}`)
+          console.log(
+            `Processing style setting: ${style["id"]} of type ${style["type"]}`,
+          )
 
           // Write the style setting to the CSS string
           if (style["type"] === "variable-text") {
@@ -292,7 +338,9 @@ manifestCollection.forEach((manifest) => {
             result = replaceVariableValue(
               result,
               style["id"],
-              (style["quotes"] ?? false) ? `'${style["default"]}'` : style["default"],
+              (style["quotes"] ?? false)
+                ? `'${style["default"]}'`
+                : style["default"],
             )
           } else if (style["type"] === "variable-number") {
             // Use the default number
@@ -346,9 +394,16 @@ manifestCollection.forEach((manifest) => {
               const className = option["value"]
               if (className) {
                 styleRulesCSS = extractClassToggleCss(cssString, className)
-                writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"], className)
+                writeStyleSettings(
+                  styleRulesCSS,
+                  getTheme(manifest),
+                  style["id"],
+                  className,
+                )
               } else {
-                console.warn(`No class name specified for option: ${JSON.stringify(option)}`)
+                console.warn(
+                  `No class name specified for option: ${JSON.stringify(option)}`,
+                )
               }
             })
           } else {
@@ -361,25 +416,36 @@ manifestCollection.forEach((manifest) => {
     }
 
     // Write the main theme CSS to the atomic file
-    fs.writeFileSync(atomicFile, result, "utf8")
+    writePrettier(atomicFile, result, "utf8")
     // Write extracted version to speed up later processing
     const cssAtomicString = fs.readFileSync(atomicFile, "utf8")
     let extractResult = `${obsidianExtractedCSS}\n`
     for (const rule of usedRules) {
       const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`
-      extractResult += applyRuleToString(target, rule, `//%%NEXTEXTRACTRULE%%`, cssAtomicString)
+      extractResult += applyRuleToString(
+        target,
+        rule,
+        `//%%NEXTEXTRACTRULE%%`,
+        cssAtomicString,
+      )
     }
     extractResult = combineIdenticalSelectors(extractResult)
     extractResult = removeEmptyRules(extractResult)
     extractResult = extractResult.replace(/\n+/g, "\n") // Remove extra newlines
     extractResult = extractResult.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
-    fs.writeFileSync(atomicExctractedFile, extractResult, "utf8")
+    writePrettier(atomicExctractedFile, extractResult, "utf8")
   }
-  const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
+  const useExtendedSyntax = getValueFromDictionary(
+    manifest,
+    "use_extended_syntax",
+  )
     ? "theme"
     : "theme_extracted"
   let themeName = getTheme(manifest)
-  let themeCSS = fs.readFileSync(`${atomicFolder}/${themeName}/${useExtendedSyntax}.css`, "utf8")
+  let themeCSS = fs.readFileSync(
+    `${atomicFolder}/${themeName}/${useExtendedSyntax}.css`,
+    "utf8",
+  )
   writeIndex(themeName, themeCSS)
   // _dark.scss and _light.scss
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
@@ -387,8 +453,15 @@ manifestCollection.forEach((manifest) => {
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
   const lightRules = getAllLightThemeRules(themeCSS).join("\n")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${themeName}/_dark.scss`, `//%%DARK%%`, `${darkValue}\n${darkRules}`)
-    const darkInject = fs.readFileSync(`./themes/${themeName}/_dark.scss`, "utf8")
+    replaceInFile(
+      `./themes/${themeName}/_dark.scss`,
+      `//%%DARK%%`,
+      `${darkValue}\n${darkRules}`,
+    )
+    const darkInject = fs.readFileSync(
+      `./themes/${themeName}/_dark.scss`,
+      "utf8",
+    )
     replaceInFile(`./themes/${themeName}/_index.scss`, `//%%DARK%%`, darkInject)
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
@@ -397,8 +470,15 @@ manifestCollection.forEach((manifest) => {
       `//%%LIGHT%%`,
       `${lightValue}\n${lightRules}`,
     )
-    const lightInject = fs.readFileSync(`./themes/${themeName}/_light.scss`, "utf8")
-    replaceInFile(`./themes/${themeName}/_index.scss`, `//%%LIGHT%%`, lightInject)
+    const lightInject = fs.readFileSync(
+      `./themes/${themeName}/_light.scss`,
+      "utf8",
+    )
+    replaceInFile(
+      `./themes/${themeName}/_index.scss`,
+      `//%%LIGHT%%`,
+      lightInject,
+    )
   }
 
   // Unset color-scheme for single mode themes
@@ -415,7 +495,11 @@ manifestCollection.forEach((manifest) => {
         /\/\* START DARK GRAPH \*\/.*?\/\* END DARK GRAPH \*\//gms,
         ``,
       )
-      replaceInFile(`./themes/${themeName}/_light.scss`, `:root[saved-theme="light"]`, `:root:root`)
+      replaceInFile(
+        `./themes/${themeName}/_light.scss`,
+        `:root[saved-theme="light"]`,
+        `:root:root`,
+      )
       replaceInFile(
         `./themes/${themeName}/_index.scss`,
         `/* quartz themes */`,
@@ -434,7 +518,11 @@ manifestCollection.forEach((manifest) => {
         /\/\* START LIGHT GRAPH \*\/.*?\/\* END LIGHT GRAPH \*\//gms,
         ``,
       )
-      replaceInFile(`./themes/${themeName}/_dark.scss`, `:root[saved-theme="dark"]`, `:root:root`)
+      replaceInFile(
+        `./themes/${themeName}/_dark.scss`,
+        `:root[saved-theme="dark"]`,
+        `:root:root`,
+      )
       replaceInFile(
         `./themes/${themeName}/_index.scss`,
         `/* quartz themes */`,
@@ -442,7 +530,11 @@ manifestCollection.forEach((manifest) => {
       )
     }
     // generic
-    replaceInFile(`./themes/${themeName}/_index.scss`, /\[saved-theme\=\".*?\"\]/g, "")
+    replaceInFile(
+      `./themes/${themeName}/_index.scss`,
+      /\[saved-theme\=\".*?\"\]/g,
+      "",
+    )
   }
 
   // Remove remaining comments
@@ -474,7 +566,11 @@ manifestCollection.forEach((manifest) => {
 })
 themeList.sort()
 themeList.forEach((themeName) => {
-  const mode = isFullTheme(themeName) ? "both" : isDarkTheme(themeName) ? "dark" : "light"
+  const mode = isFullTheme(themeName)
+    ? "both"
+    : isDarkTheme(themeName)
+      ? "dark"
+      : "light"
   const compatibilityArray = themes[themeName]["compatibility"]
   let compatibilityString = ""
   compatibilityArray.forEach((compatibility) => {
@@ -499,7 +595,8 @@ console.log("Finished updating compatibility table")
 console.log("Updating Quartz Syncer file list...")
 
 // Prepare Quartz Syncer file list
-if (fs.existsSync("quartz-syncer-file-list.json")) fs.unlinkSync("quartz-syncer-file-list.json")
+if (fs.existsSync("quartz-syncer-file-list.json"))
+  fs.unlinkSync("quartz-syncer-file-list.json")
 if (fs.existsSync("theme-list")) fs.unlinkSync("theme-list")
 
 // Build Quartz Syncer file list as json
@@ -517,7 +614,7 @@ themeFolders.forEach((folder) => {
     const scssContent = fs.readFileSync(themePath, "utf8")
     const processedScss = inlineScssUseRulesAndClean(scssContent, themePath)
     const prunedScss = prune(processedScss)
-    fs.writeFileSync(themePath, prunedScss, "utf8")
+    writePrettier(themePath, prunedScss, "utf8")
     // Remove all directories under themes/${folder}
     const themeDir = `./themes/${folder}`
     const items = fs.readdirSync(themeDir)
@@ -532,21 +629,24 @@ themeFolders.forEach((folder) => {
 
 // Get a list of all files under each theme directory
 themeFolders.forEach((folder) => {
-  const files = getFilesUnderDirectoryToStringArray(`./themes/${folder}`, folder)
+  const files = getFilesUnderDirectoryToStringArray(
+    `./themes/${folder}`,
+    folder,
+  )
   const themeName = folder.replace(/^\.\//, "")
   quartzSyncerFileList[themeName] = files
   themeListFileList.push(themeName)
 })
 
 // Write the file list to quartz-syncer-file-list.json
-fs.writeFileSync(
+writePrettier(
   `./quartz-syncer-file-list.json`,
   JSON.stringify(quartzSyncerFileList, null, 2),
   "utf8",
 )
 
 // Write the theme list to theme-list
-fs.writeFileSync(`./theme-list`, themeListFileList.join("\n"), "utf8")
+writePrettier(`./theme-list`, themeListFileList.join("\n"), "utf8")
 
 console.log("Finished updating Quartz Syncer file list")
 // Log the time taken to run the script in minutes and seconds

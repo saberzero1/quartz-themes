@@ -266,7 +266,9 @@ body.fancy-mermaid .edgeLabel:not(:empty) {
 /* Fancy code blocks */
 .cm-inline-code,
 .cm-s-obsidian .HyperMD-codeblock,
-.markdown-reading-view .markdown-preview-view.markdown-preview-view :is(pre, code) {
+.markdown-reading-view
+  .markdown-preview-view.markdown-preview-view
+  :is(pre, code) {
   --codeblock-border: var(--color-base-30);
   --codeblock-roundness: var(--radius-s);
   --code-block-alt-bg: var(--color-base-30);
@@ -281,7 +283,11 @@ body.fancy-code .HyperMD-codeblock-begin {
   counter-reset: codeblock-line-numbers;
 }
 
-body.fancy-code .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
+body.fancy-code
+  .HyperMD-codeblock:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  )::before {
   counter-increment: codeblock-line-numbers;
   content: counter(codeblock-line-numbers);
   font-size: 0.75em;
@@ -297,7 +303,11 @@ body.fancy-code .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codebl
   padding-right: 1.4em;
 }
 
-body.fancy-code .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+body.fancy-code
+  .HyperMD-codeblock.cm-line:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  ) {
   padding-left: 2.8em;
 }
 

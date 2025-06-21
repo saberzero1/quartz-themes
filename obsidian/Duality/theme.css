@@ -327,7 +327,12 @@
   --background-primary-alt: #2a2a2a; /* Slightly lighter gray */
   --background-secondary: #151515; /* Darker gray for contrast */
   --background-secondary-alt: #151515;
-  --background-modifier-hover: rgba(255, 255, 255, 0.05); /* Subtle hover effect */
+  --background-modifier-hover: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Subtle hover effect */
   --background-modifier-active-hover: rgba(255, 255, 255, 0.1);
   --background-modifier-border: #4a2c2a; /* Dark red-brown border */
   --background-modifier-border-hover: #663b38;

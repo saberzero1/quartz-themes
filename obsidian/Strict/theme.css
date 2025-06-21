@@ -829,7 +829,10 @@ pre {
 /* Embed containers: PDFs (page specified) */
 /* ======================================== */
 /* Disable scrollbar */
-.pdf-embed[src*="#page="] > .pdf-container > .pdf-content-container > .pdf-viewer-container {
+.pdf-embed[src*="#page="]
+  > .pdf-container
+  > .pdf-content-container
+  > .pdf-viewer-container {
   overflow: hidden;
   /* Disable scrolling when clicking on top or bottom of the page (this also disables text-selection) */
   pointer-events: none;
@@ -961,7 +964,10 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 /* Remove extra empty line for math blocks in preview edit mode */
-.cm-s-obsidian .HyperMD-list-line.HyperMD-list-line-nobullet:has(+ .math-block > mjx-container) {
+.cm-s-obsidian
+  .HyperMD-list-line.HyperMD-list-line-nobullet:has(
+    + .math-block > mjx-container
+  ) {
   display: none;
 }
 /* ======================================== */

@@ -439,7 +439,9 @@
 .markdown-preview-view .task-list-item input.task-list-item-checkbox:checked {
   background-color: var(--color-primary-100) !important;
 }
-.markdown-preview-view .task-list-item input.task-list-item-checkbox:checked:before {
+.markdown-preview-view
+  .task-list-item
+  input.task-list-item-checkbox:checked:before {
   content: "✓";
   color: var(--color-element-unordered-list-indicator);
   font-weight: 900;
@@ -448,7 +450,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.markdown-preview-view .task-list-item input.task-list-item-checkbox:checked:after {
+.markdown-preview-view
+  .task-list-item
+  input.task-list-item-checkbox:checked:after {
   content: none;
 }
 .markdown-preview-view .task-list-item.is-checked {
@@ -705,9 +709,15 @@ svg {
 .workspace-tab-header-container .workspace-tab-header-inner {
   background-color: transparent;
 }
-.workspace-tab-header-container .workspace-tab-header.is-before-active .workspace-tab-header-inner,
-.workspace-tab-header-container .workspace-tab-header.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header-container .workspace-tab-header-inner .workspace-tab-header-inner {
+.workspace-tab-header-container
+  .workspace-tab-header.is-before-active
+  .workspace-tab-header-inner,
+.workspace-tab-header-container
+  .workspace-tab-header.is-after-active
+  .workspace-tab-header-inner,
+.workspace-tab-header-container
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner {
   background-color: transparent;
 }
 

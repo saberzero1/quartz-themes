@@ -331,7 +331,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -389,7 +390,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
@@ -593,7 +595,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Popovers - file previews */
@@ -608,7 +613,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -1161,8 +1169,16 @@ body {
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
 
   /* Backgrounds */
   --background-primary: var(--custom-white-2-100);
@@ -1176,13 +1192,19 @@ body {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 
   /* Interactive Accents */
@@ -1294,10 +1316,14 @@ body {
 
   --custom-checkbox-border-image-gradient-degree-unchecked: 45deg;
   --custom-checkbox-border-image-gradient-color-1-unchecked: var(--transparent);
-  --custom-checkbox-border-image-gradient-color-2-unchecked: var(--custom-red-600);
+  --custom-checkbox-border-image-gradient-color-2-unchecked: var(
+    --custom-red-600
+  );
   --custom-checkbox-border-image-gradient-degree-checked: 45deg;
   --custom-checkbox-border-image-gradient-color-1-checked: var(--transparent);
-  --custom-checkbox-border-image-gradient-color-2-checked: var(--custom-red-600);
+  --custom-checkbox-border-image-gradient-color-2-checked: var(
+    --custom-red-600
+  );
   --custom-checkbox-background-gradient-degree-checked: 45deg;
   --custom-checkbox-background-gradient-color-1-checked: var(--white);
   --custom-checkbox-background-gradient-color-2-checked: var(--custom-gold-950);
@@ -1338,7 +1364,9 @@ body {
   /* Tabs */
   --tab-text-color: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
-  --tab-text-color-focused-active: var(--text-normal); /*Not sure what this is used for*/
+  --tab-text-color-focused-active: var(
+    --text-normal
+  ); /*Not sure what this is used for*/
   --tab-text-color-focused-active-current: var(--text-normal);
 
   /* Admonition/Callouts */
@@ -1440,15 +1468,19 @@ body {
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --text-selection: hsla(var(--custom-red-500-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --interactive-normal: var(--color-base-00);
   --interactive-hover: var(--color-base-10);
@@ -1631,10 +1663,14 @@ body {
 
   --custom-checkbox-border-image-gradient-degree-unchecked: 45deg;
   --custom-checkbox-border-image-gradient-color-1-unchecked: var(--transparent);
-  --custom-checkbox-border-image-gradient-color-2-unchecked: var(--custom-red-600);
+  --custom-checkbox-border-image-gradient-color-2-unchecked: var(
+    --custom-red-600
+  );
   --custom-checkbox-border-image-gradient-degree-checked: 45deg;
   --custom-checkbox-border-image-gradient-color-1-checked: var(--transparent);
-  --custom-checkbox-border-image-gradient-color-2-checked: var(--custom-red-600);
+  --custom-checkbox-border-image-gradient-color-2-checked: var(
+    --custom-red-600
+  );
   --custom-checkbox-background-gradient-degree-checked: 45deg;
   --custom-checkbox-background-gradient-color-1-checked: var(--white);
   --custom-checkbox-background-gradient-color-2-checked: var(--custom-gold-950);
@@ -1675,7 +1711,9 @@ body {
   /* Tabs */
   --tab-text-color: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
-  --tab-text-color-focused-active: var(--text-normal); /*Not sure what this is used for*/
+  --tab-text-color-focused-active: var(
+    --text-normal
+  ); /*Not sure what this is used for*/
   --tab-text-color-focused-active-current: var(--text-normal);
 
   /* Admonition/Callouts */
@@ -1711,8 +1749,11 @@ body {
   /* Dropshadows */
   --custom-global-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-800))
     drop-shadow(0px 0px 2px var(--custom-black-800));
-  --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px black) drop-shadow(0px 2px 6px black);
-  --custom-statusbar-drop-shadow: drop-shadow(2px 2px 1px var(--custom-black-900))
+  --custom-titlebar-drop-shadow: drop-shadow(0px 2px 3px black)
+    drop-shadow(0px 2px 6px black);
+  --custom-statusbar-drop-shadow: drop-shadow(
+      2px 2px 1px var(--custom-black-900)
+    )
     drop-shadow(0px 0px 2px var(--custom-black-900));
 
   /* Box-Shadows */
@@ -1921,7 +1962,8 @@ body {
 
 /* NOTE BlockQuote/Callout Edit Mode Style Left Side Accent */
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
-  border-left: var(--blockquote-border-thickness) solid var(--custom-blockquote-border-accent-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--custom-blockquote-border-accent-color);
   /* border-right: var(--blockquote-border-thickness) solid var(--custom-blockquote-border-accent-color); */
 }
 
@@ -2659,7 +2701,10 @@ input.document-replace-input.mod-no-match:hover {
 }
 
 /* NOTE Folder Icon Open*/
-.folderIcons .nav-folder-children .nav-folder .nav-folder-title-content::before {
+.folderIcons
+  .nav-folder-children
+  .nav-folder
+  .nav-folder-title-content::before {
   content: "\e801";
   color: var(--custom-folder-icon-open);
 }
@@ -2670,12 +2715,18 @@ input.document-replace-input.mod-no-match:hover {
 }
 
 /* NOTE Folder Hover Color */
-.folderIcons .nav-folder > .nav-folder-title:hover > .nav-folder-title-content::before {
+.folderIcons
+  .nav-folder
+  > .nav-folder-title:hover
+  > .nav-folder-title-content::before {
   color: var(--custom-folder-icon-hover);
 }
 
 /* NOTE File Icon */
-.fileIcons .nav-folder-children .nav-file-title > .nav-file-title-content::before {
+.fileIcons
+  .nav-folder-children
+  .nav-file-title
+  > .nav-file-title-content::before {
   content: "\e800";
   text-align: center;
   color: var(--custom-file-icon);
@@ -2860,7 +2911,8 @@ input.document-replace-input.mod-no-match:hover {
 
 /* NOTE Style Of Files When Hovered Or Active */
 .tree-item-inner.nav-file-title-content:hover,
-.tree-item-self.is-clickable.nav-file-title.is-active .tree-item-inner.nav-file-title-content {
+.tree-item-self.is-clickable.nav-file-title.is-active
+  .tree-item-inner.nav-file-title-content {
   color: var(--nav-item-color-hover);
   background-color: var(--nav-item-background-hover);
   font-weight: var(--nav-item-weight-hover);
@@ -2871,7 +2923,8 @@ input.document-replace-input.mod-no-match:hover {
 }
 
 /* NOTE Position Of Files In Nav */
-.tree-item-self.is-clickable.nav-file-title .tree-item-inner.nav-file-title-content {
+.tree-item-self.is-clickable.nav-file-title
+  .tree-item-inner.nav-file-title-content {
   padding-left: 11px;
   margin-left: -11px;
 }
@@ -2927,19 +2980,28 @@ input.document-replace-input.mod-no-match:hover {
 } */
 
 /* NOTE Folder Hover Color */
-.folderIcons .file-tree-plugin-view .oz-folder-element:hover .oz-icon-div::before {
+.folderIcons
+  .file-tree-plugin-view
+  .oz-folder-element:hover
+  .oz-icon-div::before {
   color: var(--custom-folder-icon-hover);
 }
 
 /* NOTE File Icon */
-.fileIcons .file-tree-plugin-view .oz-nav-file-title .oz-nav-file-title-content::before {
+.fileIcons
+  .file-tree-plugin-view
+  .oz-nav-file-title
+  .oz-nav-file-title-content::before {
   content: "\e800";
   text-align: center;
   color: var(--custom-file-icon);
 }
 
 /* NOTE File Icon Hover */
-.fileIcons .file-tree-plugin-view .oz-nav-file-title:hover .oz-nav-file-title-content::before {
+.fileIcons
+  .file-tree-plugin-view
+  .oz-nav-file-title:hover
+  .oz-nav-file-title-content::before {
   color: var(--custom-file-icon-hover);
 }
 
@@ -3015,7 +3077,8 @@ li.is-collapsed .list-bullet:after,
 /* SECTION ------------------------------- Links AND Tags START ------------------------------- */
 /* TODO Finish Commenting This Section */
 :not(h1, h2, h3, h4, h5, h6) > .internal-link,
-.markdown-source-view.is-live-preview span.cm-hmd-internal-link:not(.cm-header) {
+.markdown-source-view.is-live-preview
+  span.cm-hmd-internal-link:not(.cm-header) {
   display: inline-block;
   border: 1px solid var(--text-a);
   border-radius: var(--custom-link-radius);
@@ -3036,7 +3099,9 @@ li.is-collapsed .list-bullet:after,
 
 /* NOTE allow internal links inside tables to span their full width */
 table :not(h1, h2, h3, h4, h5, h6) > .internal-link,
-.markdown-source-view.is-live-preview table span.cm-hmd-internal-link:not(.cm-header) {
+.markdown-source-view.is-live-preview
+  table
+  span.cm-hmd-internal-link:not(.cm-header) {
   max-width: 100%;
 }
 
@@ -3109,7 +3174,8 @@ h6 > a.tag:hover::before {
 
 a.internal-link:hover,
 .markdown-source-view.is-live-preview span.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-hmd-internal-link:hover:after {
+.markdown-source-view.is-live-preview
+  .cm-header.cm-hmd-internal-link:hover:after {
   color: #ffffff !important;
   animation-name: text-shadow_color_change_V2;
   animation-duration: 2s;
@@ -3150,21 +3216,27 @@ a.tag:hover {
 }
 
 /* NOTE Tag Edit View Left Side # */
-.markdown-source-view.is-live-preview .cm-line [class*="cm-hashtag"]:not(.cm-hashtag-begin) {
+.markdown-source-view.is-live-preview
+  .cm-line
+  [class*="cm-hashtag"]:not(.cm-hashtag-begin) {
   /* box-shadow: inset 0px 0px 0px 1px var(--custom-tag-box-shadow-color); */
   border: 1px solid var(--custom-tag-box-shadow-color);
   border-left: 0px;
 }
 
 /* NOTE Tag Edit View Right Side Tag Name */
-.markdown-source-view.is-live-preview .cm-line [class*="cm-hashtag"].cm-hashtag-begin {
+.markdown-source-view.is-live-preview
+  .cm-line
+  [class*="cm-hashtag"].cm-hashtag-begin {
   /* box-shadow: inset 0px 0px 0px 1px var(--custom-tag-box-shadow-color); */
   border: 1px solid var(--custom-tag-box-shadow-color);
   border-right: 0px;
 }
 
 /* NOTE Tag Edit View On Hover */
-.markdown-source-view.is-live-preview .cm-line .cm-hashtag:not(.cm-hashtag-begin):hover {
+.markdown-source-view.is-live-preview
+  .cm-line
+  .cm-hashtag:not(.cm-hashtag-begin):hover {
   color: var(--tag-color-hover);
   animation-name: text-shadow_color_change_V3;
   animation-duration: 2s;
@@ -3231,22 +3303,28 @@ a.tag:hover {
 /* NOTE Base Header Style - Preview Mode & Edit Mode*/
 .markdown-preview-view h1,
 .cm-header-1,
-.markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-1.cm-hmd-internal-link,
 .markdown-preview-view h2,
 .cm-header-2,
-.markdown-source-view.is-live-preview .cm-header.cm-header-2.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-2.cm-hmd-internal-link,
 .markdown-preview-view h3,
 .cm-header-3,
-.markdown-source-view.is-live-preview .cm-header.cm-header-3.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-3.cm-hmd-internal-link,
 .markdown-preview-view h4,
 .cm-header-4,
-.markdown-source-view.is-live-preview .cm-header.cm-header-4.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-4.cm-hmd-internal-link,
 .markdown-preview-view h5,
 .cm-header-5,
-.markdown-source-view.is-live-preview .cm-header.cm-header-5.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-5.cm-hmd-internal-link,
 .markdown-preview-view h6,
 .cm-header-6,
-.markdown-source-view.is-live-preview .cm-header.cm-header-6.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-6.cm-hmd-internal-link,
 .markdown-preview-view h1 > a.internal-link,
 .markdown-preview-view h2 > a.internal-link,
 .markdown-preview-view h3 > a.internal-link,
@@ -3258,7 +3336,8 @@ a.tag:hover {
   background-clip: text;
   -webkit-background-clip: text;
   filter: brightness(var(--custom-heading-filter-brightness))
-    contrast(var(--custom-heading-filter-contrast)) saturate(var(--custom-heading-filter-saturate))
+    contrast(var(--custom-heading-filter-contrast))
+    saturate(var(--custom-heading-filter-saturate))
     /* drop-shadow(
         2px
         4px
@@ -3319,7 +3398,9 @@ a.tag:hover {
 .markdown-source-view .cm-header-6.cm-inline-code {
   -webkit-text-fill-color: initial;
   color: var(--custom-inline-heading-color);
-  background: var(--white); /*Color doesn't matter as long as a solid background is chosen*/
+  background: var(
+    --white
+  ); /*Color doesn't matter as long as a solid background is chosen*/
   border-radius: var(--radius-s);
   /* border:1px solid var(--custom-inline-heading-border-color); */
   box-shadow:
@@ -3333,12 +3414,18 @@ a.tag:hover {
 }
 
 /* Note Header As Link Color Edit Mode */
-.markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-2.cm-hmd-internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-3.cm-hmd-internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-4.cm-hmd-internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-5.cm-hmd-internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-6.cm-hmd-internal-link {
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-1.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-2.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-3.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-4.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-5.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-6.cm-hmd-internal-link {
   text-decoration: underline;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.5);
   filter: opacity(1) brightness(2.25) saturate(2.15) contrast(1.1);
@@ -3359,12 +3446,18 @@ a.tag:hover {
 }
 
 /* Note Header As Link Hover Color*/
-.markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-header-2.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-header-3.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-header-4.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-header-5.cm-hmd-internal-link:hover,
-.markdown-source-view.is-live-preview .cm-header.cm-header-6.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-1.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-2.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-3.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-4.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-5.cm-hmd-internal-link:hover,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-6.cm-hmd-internal-link:hover,
 .markdown-preview-view h1 > a.internal-link:hover,
 .markdown-preview-view h2 > a.internal-link:hover,
 .markdown-preview-view h3 > a.internal-link:hover,
@@ -3380,7 +3473,8 @@ a.tag:hover {
 .markdown-preview-view h1,
 .cm-header-1,
 .markdown-preview-view h1 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-1.cm-hmd-internal-link,
 .markdown-preview-view h1 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3431,7 +3525,8 @@ div.HyperMD-header.HyperMD-header-1.cm-line:after {
 
 /* NOTE Header 1 Icon */
 .headerIcons .markdown-preview-view h1:before,
-.headerIcons .cm-header.cm-header-1:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-1:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2c7\ ";
 }
@@ -3440,7 +3535,8 @@ div.HyperMD-header.HyperMD-header-1.cm-line:after {
 .markdown-preview-view h2,
 .cm-header-2,
 .markdown-preview-view h2 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-2.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-2.cm-hmd-internal-link,
 .markdown-preview-view h2 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3473,7 +3569,8 @@ div.HyperMD-header.HyperMD-header-2.cm-line:after {
 
 /* NOTE Header 2 Icon */
 .headerIcons .markdown-preview-view h2:before,
-.headerIcons .cm-header.cm-header-2:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-2:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2c8\ ";
 }
@@ -3482,7 +3579,8 @@ div.HyperMD-header.HyperMD-header-2.cm-line:after {
 .markdown-preview-view h3,
 .cm-header-3,
 .markdown-preview-view h3 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-3.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-3.cm-hmd-internal-link,
 .markdown-preview-view h3 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3515,7 +3613,8 @@ div.HyperMD-header.HyperMD-header-3.cm-line:after {
 
 /* NOTE Header 3 Icon */
 .headerIcons .markdown-preview-view h3:before,
-.headerIcons .cm-header.cm-header-3:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-3:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2c9\ ";
 }
@@ -3524,7 +3623,8 @@ div.HyperMD-header.HyperMD-header-3.cm-line:after {
 .markdown-preview-view h4,
 .cm-header-4,
 .markdown-preview-view h4 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-4.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-4.cm-hmd-internal-link,
 .markdown-preview-view h4 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3557,7 +3657,8 @@ div.HyperMD-header.HyperMD-header-4.cm-line:after {
 
 /* NOTE Header 4 Icon */
 .headerIcons .markdown-preview-view h4:before,
-.headerIcons .cm-header.cm-header-4:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-4:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2ca\ ";
 }
@@ -3566,7 +3667,8 @@ div.HyperMD-header.HyperMD-header-4.cm-line:after {
 .markdown-preview-view h5,
 .cm-header-5,
 .markdown-preview-view h5 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-5.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-5.cm-hmd-internal-link,
 .markdown-preview-view h5 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3599,7 +3701,8 @@ div.HyperMD-header.HyperMD-header-5.cm-line:after {
 
 /* NOTE Header 5 Icon */
 .headerIcons .markdown-preview-view h5:before,
-.headerIcons .cm-header.cm-header-5:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-5:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2ca\ ";
 }
@@ -3608,7 +3711,8 @@ div.HyperMD-header.HyperMD-header-5.cm-line:after {
 .markdown-preview-view h6,
 .cm-header-6,
 .markdown-preview-view h6 > a.internal-link,
-.markdown-source-view.is-live-preview .cm-header.cm-header-6.cm-hmd-internal-link,
+.markdown-source-view.is-live-preview
+  .cm-header.cm-header-6.cm-hmd-internal-link,
 .markdown-preview-view h6 > a.tag {
   background-image: linear-gradient(
     var(--custom-gradientDegree),
@@ -3641,7 +3745,8 @@ div.HyperMD-header.HyperMD-header-6.cm-line:after {
 
 /* NOTE Header 6 Icon */
 .headerIcons .markdown-preview-view h6:before,
-.headerIcons .cm-header.cm-header-6:not(.cm-formatting-header):not(.cm-formatting):before {
+.headerIcons
+  .cm-header.cm-header-6:not(.cm-formatting-header):not(.cm-formatting):before {
   font-family: var(--FA6Solid);
   content: "\f2cb\ ";
 }
@@ -3774,17 +3879,28 @@ div.HyperMD-header.HyperMD-header-6.cm-line:after {
   }
 
   /* NOTE Obsidian Offical Stacked Titlebar Style */
-  .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+  .workspace
+    .mod-root
+    .workspace-tabs.mod-stacked
+    .workspace-tab-container
+    .workspace-tab-header {
     background-color: var(--custom-background-tertiary);
   }
 
   /* NOTE Set Header Width For Obsidian Offical Stacked Panes */
-  .stackedPanes .mod-root.workspace-split.mod-vertical .mod-stacked > .workspace-tab-container {
+  .stackedPanes
+    .mod-root.workspace-split.mod-vertical
+    .mod-stacked
+    > .workspace-tab-container {
     --unstacked-tabs-header-width: 6px; /* <- 36px is the header height in the default theme */
   }
 
   /* NOTE Allows Windows In Stacked Pane Mode to Stretch To Fill Space If Available */
-  .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
+  .workspace
+    .mod-root
+    .workspace-tabs.mod-stacked
+    .workspace-tab-container
+    .workspace-leaf {
     flex: inherit;
   }
 
@@ -3953,10 +4069,14 @@ div.HyperMD-header.HyperMD-header-6.cm-line:after {
   .stackedPanes .mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) {
     left: calc(var(--unstacked-tabs-header-width) * 7);
   }
-  .stackedPanes .mod-root.workspace-split.mod-vertical > div:nth-child(10n + 0) {
+  .stackedPanes
+    .mod-root.workspace-split.mod-vertical
+    > div:nth-child(10n + 0) {
     left: calc(var(--unstacked-tabs-header-width) * 8);
   }
-  .stackedPanes .mod-root.workspace-split.mod-vertical > div:nth-child(10n + 1) {
+  .stackedPanes
+    .mod-root.workspace-split.mod-vertical
+    > div:nth-child(10n + 1) {
     left: calc(var(--unstacked-tabs-header-width) * 9);
   }
 
@@ -3967,7 +4087,9 @@ div.HyperMD-header.HyperMD-header-6.cm-line:after {
     .workspace-split.mod-horizontal
     .workspace-split.mod-vertical
     > div {
-    min-width: calc(var(--Minimum-Page-Width) + var(--unstacked-tabs-header-width));
+    min-width: calc(
+      var(--Minimum-Page-Width) + var(--unstacked-tabs-header-width)
+    );
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.25);
     position: sticky;
     left: 0;
@@ -4075,7 +4197,10 @@ div.HyperMD-header.HyperMD-header-6.cm-line:after {
   /* SECTION ------------------------------- MatteCrystal's More Page Layouts And Other Fixes END -------------------------------*/
 
   /* NOTE Add Border To Left Of Sliding Pane (In Tab Mode Only) */
-  .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf-content {
+  .workspace
+    .mod-root
+    .workspace-tabs:not(.mod-stacked)
+    .workspace-leaf-content {
     border-left: 1px solid var(--divider-color);
   }
 
@@ -4198,12 +4323,14 @@ ul li > p {
 /* NOTE Preview Mode List Line */
 li {
   padding-left: 5px;
-  border-left: var(--custom-list-line-width) solid var(--custom-list-line-color-odd);
+  border-left: var(--custom-list-line-width) solid
+    var(--custom-list-line-color-odd);
 }
 
 /* NOTE Preview Mode List Line Even*/
 li:nth-child(even) {
-  border-left: var(--custom-list-line-width) solid var(--custom-list-line-color-even);
+  border-left: var(--custom-list-line-width) solid
+    var(--custom-list-line-color-even);
 }
 
 /* SECTION ------------------------------- Gradient Bullet Points START -------------------------------*/
@@ -4502,7 +4629,10 @@ ul li:nth-child(even)::before {
   > div:last-child
   > div.workspace-tabs.mod-top
   > .workspace-tab-header-container,
-.workspace .mod-root > div:last-child.workspace-tabs.mod-top > .workspace-tab-header-container {
+.workspace
+  .mod-root
+  > div:last-child.workspace-tabs.mod-top
+  > .workspace-tab-header-container {
   /* margin-right: 24px; */
   /* padding-right: 24px; */
   padding-right: calc(30px + var(--frame-right-space));
@@ -4706,7 +4836,9 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-track:hover {
 }
 
 /* NOTE Tab Close Button Hover */
-.workspace .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+.workspace
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button:hover {
   color: var(--interactive-accent);
 }
 /* SECTION ------------------------------- Tabs END ------------------------------- */
@@ -4874,12 +5006,15 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-track:hover {
 }
 
 /* NOTE Table Leftmost Index Row */
-.database-plugin__container .database-plugin__td.database-plugin__row-context-menu {
+.database-plugin__container
+  .database-plugin__td.database-plugin__row-context-menu {
   background: var(--custom-background-tertiary) !important;
 }
 
 /* Note Color Of Content Inside Leftmost Index Row */
-.database-plugin__container .database-plugin__row-context-menu .database-plugin__relationship {
+.database-plugin__container
+  .database-plugin__row-context-menu
+  .database-plugin__relationship {
   background: var(--transparent) !important;
   color: var(--text-normal);
 }
@@ -5174,26 +5309,38 @@ div[data-callout="multi-column"].callout > .callout-content > *:is(div, ul) {
 }
 
 /* metadata "wide-x" to control subcallout flexible max width. only discrete 2,4,8,16 */
-div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="min-0"] {
+div[data-callout="multi-column"].callout
+  > .callout-content
+  > div[data-callout-metadata*="min-0"] {
   flex-basis: 0;
 }
-div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-2"] {
+div[data-callout="multi-column"].callout
+  > .callout-content
+  > div[data-callout-metadata*="wide-2"] {
   flex-grow: 2;
 }
-div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-3"] {
+div[data-callout="multi-column"].callout
+  > .callout-content
+  > div[data-callout-metadata*="wide-3"] {
   flex-grow: 3;
 }
-div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-4"] {
+div[data-callout="multi-column"].callout
+  > .callout-content
+  > div[data-callout-metadata*="wide-4"] {
   flex-grow: 4;
 }
-div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-5"] {
+div[data-callout="multi-column"].callout
+  > .callout-content
+  > div[data-callout-metadata*="wide-5"] {
   flex-grow: 5;
 }
 
 @media (min-width: 500px) {
   /* .is-collapsed is used to draw the border-left only when it's collapsed */
   /* adjusted for Obsidian 0.16.x, removed a number of previous adjustment as no longer required */
-  div[data-callout="multi-column"].callout > div.callout-content .callout.is-collapsed {
+  div[data-callout="multi-column"].callout
+    > div.callout-content
+    .callout.is-collapsed {
     box-shadow: unset;
     height: min-content;
   }
@@ -5220,7 +5367,9 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
         { width: 100%; max-width: 100%; margin-inline: 0 !important; }
     /* Special Adjustment -- for Minimal .dataview.list-view-ul width - Minimal set the width with --line-width-adaptive (40rem by default) */
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   div[data-callout="multi-column"].callout
   .dataview.list-view-ul {
   width: auto;
@@ -5247,7 +5396,9 @@ div[data-callout="multi-column-flex-height"].callout {
   clear: both;
 }
 
-div[data-callout="multi-column-flex-height"].callout > .callout-content > *:is(div, ul) {
+div[data-callout="multi-column-flex-height"].callout
+  > .callout-content
+  > *:is(div, ul) {
   flex: 1 1 var(--callout-min-width);
   margin: 0;
 }
@@ -5256,10 +5407,16 @@ div[data-callout="multi-column-flex-height"].callout .callout {
   box-shadow: unset;
 }
 /* need to reintroduce border-left as original callout put border on the parent callout */
-div[data-callout="multi-column-flex-height"].callout > .callout-content .callout .callout-title {
+div[data-callout="multi-column-flex-height"].callout
+  > .callout-content
+  .callout
+  .callout-title {
   border-top-left-radius: 3px;
 }
-div[data-callout="multi-column-flex-height"].callout > .callout-content .callout .callout-content {
+div[data-callout="multi-column-flex-height"].callout
+  > .callout-content
+  .callout
+  .callout-content {
   margin: 0;
   border-bottom-left-radius: 3px;
   height: min-height;
@@ -5439,7 +5596,8 @@ div[data-callout*="blank"] .callout-content :is(li) {
 /* === Multi Column List using Tags (require Contextual Typography) === */
 
 /* hide tag in rendered view, dim it in edit mode */
-:is(div[class*="mcl"].markdown-rendered, .markdown-rendered div[class*="mcl"]) a[href*="#mcl"] {
+:is(div[class*="mcl"].markdown-rendered, .markdown-rendered div[class*="mcl"])
+  a[href*="#mcl"] {
   display: none;
 }
 span[class*="mcl"] {
@@ -5468,7 +5626,10 @@ span[class*="mcl"] {
 /* -- MCL Grid, alpha */
 .tag-mcllist-grid ul:first-child {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-min-width), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--list-grid-min-width), 1fr)
+  );
 }
 .tag-mcllist-grid ul:first-child > li {
   border: px solid Gray;
@@ -5481,7 +5642,10 @@ span[class*="mcl"] {
 /* -- MCL Grid, alpha */
 .tag-mcllist-card ul:first-child {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-min-width), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--list-grid-min-width), 1fr)
+  );
 }
 .tag-mcllist-card ul ul:not(ul ul ul) {
   padding-left: 0.1em;
@@ -5489,14 +5653,19 @@ span[class*="mcl"] {
 :is(.tag-mcllist-card, .tag-mcllist-card .callout-content) > ul {
   padding-left: 0;
 }
-:is(.is-mobile .markdown-rendered) .tag-mcllist-card :is(ol:not(ol ol ol), ul:not(ul ul ul)) {
+:is(.is-mobile .markdown-rendered)
+  .tag-mcllist-card
+  :is(ol:not(ol ol ol), ul:not(ul ul ul)) {
   padding-left: 0;
 }
 /* reposition the collapse indicator and hover behaviour */
 :is(.tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li {
   position: relative;
 }
-:is(.tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li:hover > .collapse-indicator,
+:is(.tag-mcllist-card, .tag-mcllist-card .callout-content)
+  > ul
+  > li:hover
+  > .collapse-indicator,
 :is(.tag-mcllist-card, .tag-mcllist-card .callout-content)
   > ul
   > li
@@ -5505,7 +5674,10 @@ span[class*="mcl"] {
   > .collapse-indicator {
   opacity: 1;
 }
-:is(.tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > .collapse-indicator,
+:is(.tag-mcllist-card, .tag-mcllist-card .callout-content)
+  > ul
+  > li
+  > .collapse-indicator,
 :is(.tag-mcllist-card, .tag-mcllist-card .callout-content)
   > ul
   > li
@@ -5523,7 +5695,8 @@ span[class*="mcl"] {
   > ul
   > li:not(.is-collapsed)
   > [data-heading] {
-  border-bottom: var(--mcl-card-header-border-width) solid var(--mcl-card-border-color);
+  border-bottom: var(--mcl-card-header-border-width) solid
+    var(--mcl-card-border-color);
   margin-bottom: 0.2em;
 }
 /* hide the list bullet for list-card for first and second level */

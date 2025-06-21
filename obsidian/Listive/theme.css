@@ -138,7 +138,9 @@ body:not(.is-focused) .clickable-icon {
 /* === Refine Certain UI Elements === */
 
 /* reintroduce resize handle divider width, only for sidebar tabs */
-:is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-leaf-resize-handle {
+:is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-leaf-resize-handle {
   --divider-width: 4px;
 }
 .mod-root .workspace-tabs .workspace-leaf-resize-handle:not(:hover),
@@ -180,7 +182,10 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 /* === Introduce Distinct Tabs === */
 
 /* rounded square for tab stack with drop shadow */
-.mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner {
+.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner {
   border-radius: 0px;
 }
 .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
@@ -189,10 +194,17 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 body {
   --tab-stacked-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
   border-top-left-radius: var(--size-4-2);
 } /* box-shadow: 0 0 var(--size-4-2) var(--background-modifier-cover); */
-body:not(.is-focused) .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
+body:not(.is-focused)
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container {
   background-color: var(--background-secondary);
 }
 .mod-root .workspace-tabs.mod-stacked .workspace-tab-header {
@@ -354,7 +366,11 @@ body {
   --text-faint: #808080;
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(0, 0%, 90%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    0,
+    0%,
+    90%
+  ); /* for backlinks, 2% darker than primary */
 }
 
 .color-scheme-base.theme-dark,
@@ -388,7 +404,11 @@ body {
     0%,
     16%
   ); /* 4% darker shade of background-primary, active line and backlinks */
-  --background-modifier-border: hsl(20, 5%, 33%); /* #595350;     /* for horizontal line & border */
+  --background-modifier-border: hsl(
+    20,
+    5%,
+    33%
+  ); /* #595350;     /* for horizontal line & border */
   --background-modifier-cover: #262626; /* for title bar / #332E33 */
   --background-modifier-cover: hsl(0, 0%, 16%); /* for title bar / #332E33 */
   /*  --interactive-accent: #4682B4;                    /* for interactive buttons */
@@ -400,7 +420,11 @@ body {
     5%,
     53%
   ); /* for border active, lighter for dark mode */
-  --background-modifier-backlinks: hsl(0, 0%, 18%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    0,
+    0%,
+    18%
+  ); /* for backlinks, 2% darker than primary */
 
   /* plugins variables */
   /* color variables for Hover Editor plugin, #735050 is monochromatic of #262626 */
@@ -439,7 +463,11 @@ body {
   ); /* 4% darker shade of background-primary, active line and backlinks */
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(220, 8%, 21%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    220,
+    8%,
+    21%
+  ); /* for backlinks, 2% darker than primary */
 }
 .color-scheme-discord.theme-light {
   /*
@@ -462,7 +490,11 @@ body {
   ); /* 4% darker shade of background-primary, active line and backlinks */
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(220, 16%, 90%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    220,
+    16%,
+    90%
+  ); /* for backlinks, 2% darker than primary */
 }
 
 /* === OLED Black Color Scheme === */
@@ -612,7 +644,9 @@ body {
 body {
   --h2-top-spacing: 1.4rem;
   --h2-bottom-spacing: 0.3rem;
-  --heading-spacing: var(--h2-top-spacing); /* override obsidian 1.3.7 introduction of top margin */
+  --heading-spacing: var(
+    --h2-top-spacing
+  ); /* override obsidian 1.3.7 introduction of top margin */
   --h2-top-spacing-edit: calc(
     var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing) / 2
   );
@@ -621,7 +655,8 @@ body {
   --h4-bottom-spacing: 0.1rem;
 }
 /* -- margin/padding for normal header (not for header in list) - Editing View only */
-.cm-s-obsidian :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3).cm-line {
+.cm-s-obsidian
+  :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3).cm-line {
   padding-block: 0.6em var(--h2-bottom-spacing);
 }
 /* -- margin/padding for normal header (not for header in list) - Reading View only */
@@ -720,7 +755,10 @@ div:has(> h1, > h2) + div:has(p) > p {
 }
 
 .markdown-rendered :is(h3, h4, h5, h6) + p,
-.markdown-rendered div:has(> h3, > h4, > h5, > h6) + div:has(p, pre) > :is(p, pre) {
+.markdown-rendered
+  div:has(> h3, > h4, > h5, > h6)
+  + div:has(p, pre)
+  > :is(p, pre) {
   margin-block-start: 0.6em;
 }
 
@@ -984,10 +1022,14 @@ body {
   --indent-dash-spacing9: 0.7em; /* 0.55rem / 0.52rem */
 
   /* this can be deleted later, it's for Indentation Guide community plugin */
-  .ig-lists .HyperMD-list-line.ig-indent-group .ig-tab.ig-indent-group-level::before {
+  .ig-lists
+    .HyperMD-list-line.ig-indent-group
+    .ig-tab.ig-indent-group-level::before {
     width: 2px !important;
   }
-  .cm-active .cm-formatting-list-ul .list-bullet.list-bullet.list-bullet::after {
+  .cm-active
+    .cm-formatting-list-ul
+    .list-bullet.list-bullet.list-bullet::after {
     contain: strict;
     width: var(--list-bullet-size);
     height: var(--list-bullet-size);
@@ -998,7 +1040,9 @@ body {
     contain: strict;
     content: "";
     position: absolute;
-    top: var(--indent-dash-top); /* subtract half of the height of the pseudo-element */
+    top: var(
+      --indent-dash-top
+    ); /* subtract half of the height of the pseudo-element */
     width: var(--indent-dash-width);
     height: 2px;
     background-color: var(--indentation-guide-active-color);
@@ -1093,9 +1137,14 @@ body {
       ~ .HyperMD-list-line-5.cm-active
     )
     .cm-indent:nth-child(4 of .cm-indent)::before,
-  :is(.HyperMD-list-line-6, .HyperMD-list-line-7, .HyperMD-list-line-8, .HyperMD-list-line-9):not(
-      :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)
-    ):has(~ .HyperMD-list-line-6.cm-active)
+  :is(
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-6.cm-active
+    )
     .cm-indent:nth-child(5 of .cm-indent)::before,
   :is(.HyperMD-list-line-7, .HyperMD-list-line-8, .HyperMD-list-line-9):not(
       :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line.cm-active)
@@ -1105,9 +1154,9 @@ body {
       :has(~ .HyperMD-list-line-7 ~ .HyperMD-list-line.cm-active)
     ):has(~ .HyperMD-list-line-8.cm-active)
     .cm-indent:nth-child(7 of .cm-indent)::before,
-  :is(.HyperMD-list-line-9):not(:has(~ .HyperMD-list-line-8 ~ .HyperMD-list-line.cm-active)):has(
-      ~ .HyperMD-list-line-9.cm-active
-    )
+  :is(.HyperMD-list-line-9):not(
+      :has(~ .HyperMD-list-line-8 ~ .HyperMD-list-line.cm-active)
+    ):has(~ .HyperMD-list-line-9.cm-active)
     .cm-indent:nth-child(8 of .cm-indent)::before {
     contain: strict;
     --indentation-guide-color: var(--background-modifier-border-active);
@@ -1123,7 +1172,9 @@ body {
   .cm-active.HyperMD-list-line:has(.cm-header-3) {
     --last-ig-height: calc(0.85em + var(--h3-top-spacing-edit));
   }
-  .HyperMD-list-line.cm-active > .cm-hmd-list-indent > .cm-indent:last-child::before {
+  .HyperMD-list-line.cm-active
+    > .cm-hmd-list-indent
+    > .cm-indent:last-child::before {
     contain: strict;
     --indentation-guide-color: var(--background-modifier-border-active);
     border-width: 2px;
@@ -1216,12 +1267,17 @@ body {
 } /* previously have !important here */
 
 /* adjust the padding for popover */
-.popover.hover-popover > .markdown-embed > .markdown-embed-content > .markdown-preview-view {
+.popover.hover-popover
+  > .markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view {
   --file-margins: var(--size-4-2) var(--size-4-6);
 }
 
 /* adjustment needed post v1.1.x, only for markdown-embed */
-.markdown-source-view.mod-cm6 .internal-embed.markdown-embed.inline-embed .task-list-item-checkbox {
+.markdown-source-view.mod-cm6
+  .internal-embed.markdown-embed.inline-embed
+  .task-list-item-checkbox {
   margin-left: calc(var(--checkbox-size) * -1.5);
 }
 .markdown-source-view.mod-cm6
@@ -1288,7 +1344,9 @@ body .markdown-source-view {
   border: none;
   top: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="list-embed"].internal-embed.markdown-embed ul:first-of-type {
+:is(.HyperMD-list-line, li)
+  [alt*="list-embed"].internal-embed.markdown-embed
+  ul:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
@@ -1297,7 +1355,9 @@ body .markdown-source-view {
   display: none;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]) {
+  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
+    [alt*=".excalidraw"]
+  ) {
   width: calc(100% - 1px);
 }
 li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
@@ -1308,13 +1368,16 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
 }
 
 /* --- Clean Inline Embed in Lists (specify in alias/alt) --- */
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].internal-embed.markdown-embed {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].internal-embed.markdown-embed {
   margin: 0 0 0 0;
   padding: 0;
   border: none;
   top: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].internal-embed.markdown-embed p:first-of-type {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].internal-embed.markdown-embed
+  p:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
@@ -1322,13 +1385,17 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   .markdown-embed-title {
   display: none;
 }
-.HyperMD-list-line [alt*="inline-embed"].internal-embed.is-loaded.markdown-embed {
+.HyperMD-list-line
+  [alt*="inline-embed"].internal-embed.is-loaded.markdown-embed {
   max-width: 99%;
 }
 .HyperMD-list-line [alt*="inline-embed"].markdown-embed .markdown-preview-view {
   padding: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].markdown-embed .markdown-preview-view p {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].markdown-embed
+  .markdown-preview-view
+  p {
   text-decoration: underline dotted var(--text-muted);
 }
 
@@ -1341,7 +1408,10 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   opacity: 0.2;
 }
 :is(.list-embed-global, [alt*="list-embed"], [alt*="inline-embed"])
-  :is(.markdown-embed:hover .file-embed-link svg, .markdown-embed:hover .markdown-embed-link)
+  :is(
+    .markdown-embed:hover .file-embed-link svg,
+    .markdown-embed:hover .markdown-embed-link
+  )
   svg {
   opacity: 1;
 }
@@ -1350,8 +1420,12 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   :is(.markdown-embed, .file-embed) {
   background-color: var(--background-primary);
 }
-:is(.list-embed-global :not(.popover)) :is(.markdown-embed:hover, .file-embed:hover),
-:is([alt*="list-embed"].internal-embed):is(.markdown-embed:hover, .file-embed:hover) {
+:is(.list-embed-global :not(.popover))
+  :is(.markdown-embed:hover, .file-embed:hover),
+:is([alt*="list-embed"].internal-embed):is(
+    .markdown-embed:hover,
+    .file-embed:hover
+  ) {
   background-color: var(--background-secondary);
 }
 
@@ -1430,7 +1504,9 @@ ol ol {
   top: 0;
   bottom: 0;
 }
-.is-mobile.is-css-guide .markdown-rendered :is(ul ul, ol ul, ul ol, ol ol)::before {
+.is-mobile.is-css-guide
+  .markdown-rendered
+  :is(ul ul, ol ul, ul ol, ol ol)::before {
   left: calc(-16px + 2px + var(--list-guide-adj-mobile));
 }
 /* -- Guide adjustment for reading view for Obsidian "Show Indentation Guide" */
@@ -1525,7 +1601,8 @@ body {
            - define callout content padding, initially 0 */
 body .callout {
   --callout-content-padding: var(--size-4-2) 0 var(--size-4-1) 0; /* i remove first, */
-  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-3) var(--size-4-4); /* give additional padding on the right side */
+  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-3)
+    var(--size-4-4); /* give additional padding on the right side */
 }
 .callout .callout-content > *:first-child {
   margin-top: 0;
@@ -1588,7 +1665,9 @@ body:not(.callout-style-original) .callout > .callout-title > .callout-icon {
   top: -10px;
   right: -8px;
 }
-.callout[data-callout-metadata*="no-title"] > .callout-title > .callout-title-inner {
+.callout[data-callout-metadata*="no-title"]
+  > .callout-title
+  > .callout-title-inner {
   display: none;
 }
 .callout[data-callout-metadata*="no-title"] > .callout-content {
@@ -1620,7 +1699,10 @@ li > .callout {
 
 /* === (Normal) Checkboxes === */
 /* no strikethrough for children node of checked parent */
-ul > li.task-list-item:is([data-task="x"], [data-task="X"]) > ul > li.task-list-item {
+ul
+  > li.task-list-item:is([data-task="x"], [data-task="X"])
+  > ul
+  > li.task-list-item {
   /* display: inline-block; */ /* comment out because it makes subtasks overlap in reading view */
   color: var(--text-normal);
 }
@@ -1710,8 +1792,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
@@ -1993,7 +2080,9 @@ li[data-task="*"]::after {
 
 /* === Frontmatter/YAML Metadata === */
 /* for Obsidian up to 1.3.7 only. V1.4.0 already introduce Properties */
-:is(.lst-fm-compact, .lst-fm-std) .frontmatter-container .frontmatter-container-header:hover {
+:is(.lst-fm-compact, .lst-fm-std)
+  .frontmatter-container
+  .frontmatter-container-header:hover {
   color: var(--text-muted);
 }
 
@@ -2009,7 +2098,9 @@ body:is(.lst-fm-compact, *) .frontmatter-container {
 body:is(.lst-fm-compact, *) .frontmatter-container.is-collapsed {
   padding: 0;
 }
-body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-container-header {
+body:is(.lst-fm-compact, *)
+  .frontmatter-container
+  .frontmatter-container-header {
   position: absolute;
   right: 3px;
   top: -0.2rem;
@@ -2019,7 +2110,9 @@ body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-container-header
   padding: 0;
 }
 body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-section,
-body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-section:last-child {
+body:is(.lst-fm-compact, *)
+  .frontmatter-container
+  .frontmatter-section:last-child {
   margin-bottom: 0;
   margin-right: 12px;
 }
@@ -2055,7 +2148,9 @@ body.lst-fm-std .frontmatter-container .frontmatter-section-label {
   flex: 0 1 4em;
   color: var(--text-faint);
 }
-body.lst-fm-std .frontmatter-container.is-collapsed .frontmatter-container-header {
+body.lst-fm-std
+  .frontmatter-container.is-collapsed
+  .frontmatter-container-header {
   border-bottom-width: 0px;
 }
 
@@ -2217,7 +2312,12 @@ body {
 .list-d-c-d .HyperMD-list-line-1 .cm-formatting-list-ul .list-bullet::after {
 }
 .list-d-c-d
-  :is(.HyperMD-list-line-2, .HyperMD-list-line-4, .HyperMD-list-line-6, .HyperMD-list-line-8)
+  :is(
+    .HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8
+  )
   .cm-formatting-list-ul
   .list-bullet::after {
   width: calc(0.3rem - 1px);
@@ -2397,13 +2497,18 @@ body.lst-prop-super-compact .metadata-properties {
     visibility: collapse;
   }
   /* remove the remove button special for tags property */
-  & .metadata-property[data-property-key="tags"] .multi-select-pill-remove-button {
+  &
+    .metadata-property[data-property-key="tags"]
+    .multi-select-pill-remove-button {
     display: none;
   }
   & .metadata-property[data-property-key="tags"] .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   } /* adding "padding to the right after 1.5.1 update "*/
-  & .markdown-reading-view .metadata-property[data-property-key="tags"] .multi-select-pill-content {
+  &
+    .markdown-reading-view
+    .metadata-property[data-property-key="tags"]
+    .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   }
 }
@@ -2480,7 +2585,9 @@ div:has(> [data-heading] > [href*="#lst/clear-float"]),
 .workspace-leaf-content :is(.HyperMD-list-line, li) img:not([width]) {
   max-width: 300px;
 }
-.workspace-leaf-content :is(.HyperMD-list-line, li):has(img[src] ~ img[src]) img:not([width]) {
+.workspace-leaf-content
+  :is(.HyperMD-list-line, li):has(img[src] ~ img[src])
+  img:not([width]) {
   max-width: 270px;
 }
 /* to ensure image with transparency have some background color, specify "bgcolor" in alt text */
@@ -2532,7 +2639,9 @@ span.selection {
 .callout[data-callout="caption"] .callout-content p .snw-reference {
   display: none;
 }
-.callout[data-callout="caption"] .callout-content span.internal-embed.image-embed.is-loaded {
+.callout[data-callout="caption"]
+  .callout-content
+  span.internal-embed.image-embed.is-loaded {
   display: block;
 }
 
@@ -2622,8 +2731,12 @@ body.is-mobile:not(.lst-disable-fab-view)
 }
 
 /* make the 1st added commander button as FAB as well. change 1 to 2 for 2nd commander button */
-body.is-mobile.lst-fab-b2-1 div.view-actions > .view-action:nth-child(1 of .cmdr-page-header),
-body.is-mobile.lst-fab-b2-2 div.view-actions > .view-action:nth-child(2 of .cmdr-page-header) {
+body.is-mobile.lst-fab-b2-1
+  div.view-actions
+  > .view-action:nth-child(1 of .cmdr-page-header),
+body.is-mobile.lst-fab-b2-2
+  div.view-actions
+  > .view-action:nth-child(2 of .cmdr-page-header) {
   position: absolute;
   top: calc(88vh - var(--lst-fab-b2-y));
   right: calc(0vw + var(--lst-fab-view-x));
@@ -2643,7 +2756,9 @@ body.is-mobile.lst-fab-b2-2 div.view-actions > .view-action:nth-child(2 of .cmdr
   z-index: 60;
 }
 /* change background-color when hover */
-body.is-mobile:not(.custom-page-header) div.view-actions > .view-action.clickable-icon:hover {
+body.is-mobile:not(.custom-page-header)
+  div.view-actions
+  > .view-action.clickable-icon:hover {
   background-color: var(--background-accent);
 }
 
@@ -2976,7 +3091,9 @@ body.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) + ul {
 /* === Plugin: Indentation Guide (mgmeyer) === */
 
 /* adjustment for relationship width */
-.ig-uncategorized .cm-line[style*="text-indent"]:not(.HyperMD-list-line) .ig-tab::before,
+.ig-uncategorized
+  .cm-line[style*="text-indent"]:not(.HyperMD-list-line)
+  .ig-tab::before,
 .ig-lists .HyperMD-list-line .ig-tab::before,
 .ig-code .HyperMD-codeblock .ig-tab::before {
   width: 1px !important;
@@ -3074,7 +3191,12 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) p {
   margin-block: 0.4em 0;
 }
 /* remove top margin for ul for the answers */
-div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div .callout ul:first-child {
+div:has([href*="#flashcards"])
+  ~ div:has(h5, h6)
+  + div:has(p)
+  + div
+  .callout
+  ul:first-child {
   margin-top: 0.2em;
 }
 div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
@@ -3095,7 +3217,10 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
 .snw-reference {
   font-family: var(--font-text);
 }
-:is(.snw-ref-title-side-pane, .snw-ref-title-popover).tree-item-self:is(*, :hover) {
+:is(.snw-ref-title-side-pane, .snw-ref-title-popover).tree-item-self:is(
+    *,
+    :hover
+  ) {
   border: none;
   font-weight: bold;
   font-family: var(--h1-font);
@@ -3134,14 +3259,19 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
     :has(.markdown-preview-section > div > ul)
   ),
 :is(.HyperMD-list-line, li):has(.snw-reference)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):not(
-    :has(.markdown-preview-section > div > ul)
-  ) {
+  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
+    [alt*=".excalidraw"]
+  ):not(:has(.markdown-preview-section > div > ul)) {
   width: calc(100% - 25px);
 }
 
 /* -- hide SNW reference counter inside embedded notes (that maybe recursive in nature) */
-[alt*="list-embed"] .markdown-preview-section > div > ul > li > .snw-reference.snw-block-preview,
+[alt*="list-embed"]
+  .markdown-preview-section
+  > div
+  > ul
+  > li
+  > .snw-reference.snw-block-preview,
 .list-embed-global
   :is(.HyperMD-list-line, ul)
   .internal-embed.is-loaded
@@ -3171,7 +3301,8 @@ li:has(> [data-heading]:is(h1, h2)) > .snw-reference {
 li:has(> [data-heading]:not(h1, h2)) > .snw-reference {
   --lst-snw-top: calc(var(--h3-top-spacing) * 1.5);
 }
-li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-preview {
+li:has(> [data-heading]):has(> .snw-block-preview)
+  > .snw-reference.snw-block-preview {
   position: absolute;
   top: var(--lst-snw-top);
   right: 0;
@@ -3204,7 +3335,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 
 /* === Plugin: Style Settings === */
 /* make the input box on same row as the title/description */
-.view-content .style-settings-container .setting-item:not(.setting-item-heading) {
+.view-content
+  .style-settings-container
+  .setting-item:not(.setting-item-heading) {
   flex-direction: row;
 }
 .view-content .style-settings-container {
@@ -3244,7 +3377,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
   margin-left: -1.15em;
 }
 /* color - font title/item */
-.style-settings-container[data-level="0"] > .style-settings-heading .setting-item-name {
+.style-settings-container[data-level="0"]
+  > .style-settings-heading
+  .setting-item-name {
   color: var(--h3-color);
 }
 .style-settings-container[data-level="0"]
@@ -3281,7 +3416,10 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 }
 
 /* - Adjustment for Mobile */
-.is-phone .style-settings-heading[data-level="0"] > .setting-item-info > .setting-item-name {
+.is-phone
+  .style-settings-heading[data-level="0"]
+  > .setting-item-info
+  > .setting-item-name {
   padding-left: 1em;
   position: relative;
 }
@@ -3311,7 +3449,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 body {
   --math-block-list-align: left;
 }
-:is(.HyperMD-list-line, li) .math-block mjx-container[jax="CHTML"][display="true"] {
+:is(.HyperMD-list-line, li)
+  .math-block
+  mjx-container[jax="CHTML"][display="true"] {
   text-align: var(--math-block-list-align);
 }
 

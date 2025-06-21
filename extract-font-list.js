@@ -70,7 +70,11 @@ function extractFontFamilies() {
     //const filePath = path.join(obsidianFolder, file)
     const content = fs.readFileSync(file, "utf8")
     const fileName =
-      path.dirname(file).replace("obsidian/", "").replace(" ", "-").toLowerCase() + ".css"
+      path
+        .dirname(file)
+        .replace("obsidian/", "")
+        .replace(" ", "-")
+        .toLowerCase() + ".css"
     const filePath = path.join(obsidianFontsDir, fileName)
     console.log(`Extracting font-face declarations from ${fileName}`)
     const matches = [...content.matchAll(fontFaceRegex)]
@@ -104,7 +108,9 @@ function extractFontFamilies() {
         console.log(`Font-Face Declaration written to ${filePath}`)
       }
     })
-    console.log(`Font-Face Declarations for ${file} written to obsidian-fonts folder`)
+    console.log(
+      `Font-Face Declarations for ${file} written to obsidian-fonts folder`,
+    )
   })
 
   // Move every font file to the extras/themes/{{themename}} folder and rename it to fonts.scss
@@ -117,7 +123,9 @@ function extractFontFamilies() {
       const filePath = path.join(obsidianFontsDir, file)
       const newFilePath = path.join(
         extrasFontsDir,
-        sanitizeFilenamePreservingEmojis(path.basename(file).replace(".css", "")),
+        sanitizeFilenamePreservingEmojis(
+          path.basename(file).replace(".css", ""),
+        ),
         "_fonts.scss",
       )
       fs.copyFileSync(filePath, newFilePath)

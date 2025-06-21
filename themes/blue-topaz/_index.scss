@@ -66,7 +66,8 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 255, 255, 255;
   --prompt-box-shadow: #555555;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -140,7 +141,8 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 255, 255, 255;
   --prompt-box-shadow: #555555;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -227,7 +229,8 @@ html[saved-theme="light"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 0, 0, 0;
   --prompt-box-shadow: #bebebe;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -299,7 +302,8 @@ html[saved-theme="light"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 0, 0, 0;
   --prompt-box-shadow: #bebebe;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -344,7 +348,8 @@ html[saved-theme="light"] {
   font-weight: 400;
   src:
     local("Lucida Handwriting"),
-    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdRg.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdRg.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Lucida Handwriting";
@@ -352,7 +357,8 @@ html[saved-theme="light"] {
   font-weight: 250;
   src:
     local("Lucida Handwriting"),
-    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdThin.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdThin.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Lucida Handwriting";
@@ -360,7 +366,8 @@ html[saved-theme="light"] {
   font-weight: 300;
   src:
     local("Lucida Handwriting"),
-    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdLight.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdLight.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Lucida Handwriting";
@@ -368,7 +375,8 @@ html[saved-theme="light"] {
   font-weight: 600;
   src:
     local("Lucida Handwriting"),
-    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdBold.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdBold.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Lucida Handwriting";
@@ -376,7 +384,8 @@ html[saved-theme="light"] {
   font-weight: 800;
   src:
     local("Lucida Handwriting"),
-    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdBlack.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdBlack.woff")
+      format("woff");
 }
 
 @font-face {
@@ -385,11 +394,13 @@ html[saved-theme="light"] {
   font-style: normal;
   src: url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot);
   src:
-    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot) format("embedded-opentype"),
+    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot)
+      format("embedded-opentype"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2) format("woff2"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff) format("woff"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.ttf) format("truetype"),
-    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.svg?#boxicons) format("svg");
+    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.svg?#boxicons)
+      format("svg");
 }
 .bx {
   font-family: boxicons !important;
@@ -5729,28 +5740,39 @@ body {
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor: default;
   --cursor-link: pointer;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
-  --font-monospace-theme: "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
+    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
+    "Source Code Pro", monospace;
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-size-code: 0.825em;
   --font-text: var(--font-print);
   --font-text-override: "??";
-  --font-text-theme: Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei";
+  --font-text-theme:
+    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei";
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -5832,7 +5854,8 @@ body {
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
   --nav-item-color-active: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
   --nav-item-weight-active: inherit;
@@ -5956,7 +5979,8 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 255, 255, 255;
   --prompt-box-shadow: #555555;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -6030,7 +6054,8 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 255, 255, 255;
   --prompt-box-shadow: #555555;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -6118,7 +6143,8 @@ html[saved-theme="light"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 0, 0, 0;
   --prompt-box-shadow: #bebebe;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -6190,7 +6216,8 @@ html[saved-theme="light"] {
   --interactive-accent-hover: var(--color-accent-2);
   --mono-rgb-100: 0, 0, 0;
   --prompt-box-shadow: #bebebe;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -6376,7 +6403,10 @@ html {
   }
 }
 body {
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+  --quartz-text-highlight: var(
+    --text-highlight-bg,
+    var(--background-modifier-hover)
+  ) !important;
   background-color: var(--background-primary);
   section,
   .page > #quartz-body .sidebar {
@@ -6410,7 +6440,11 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      background-color: color-mix(
+        in srgb,
+        var(--text-a, var(--link-color)),
+        #0000 85%
+      );
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -6418,7 +6452,10 @@ body {
         background-color: var(
           --tag-background,
           hsla(
-            var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))),
+            var(
+              --interactive-accent-hsl,
+              var(--color-accent-hsl, var(--highlight-fallback))
+            ),
             0.1
           )
         );
@@ -7034,13 +7071,20 @@ body {
   /* PAGE TITLE */
   .page-title,
   .page-title a {
-    color: var(--inline-title-color, var(--h1-color, var(--link-color, var(--darkgray))));
-    font-family: var(--inline-title-font, var(--h1-font, var(--font-text, inherit)));
+    color: var(
+      --inline-title-color,
+      var(--h1-color, var(--link-color, var(--darkgray)))
+    );
+    font-family: var(
+      --inline-title-font,
+      var(--h1-font, var(--font-text, inherit))
+    );
   }
   /* GRAPH */
   .graph {
     & > .graph-outer {
-      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      border: 1px solid
+        var(--background-modifier-border-hover, var(--color-base-35));
       --background-modifier-border-focus: var(--color-base-40);
       & > .global-graph-icon {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -7051,7 +7095,8 @@ body {
     }
     & > .global-graph-outer {
       & > .global-graph-container {
-        border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+        border: 1px solid
+          var(--background-modifier-border-hover, var(--color-base-35));
         background-color: var(--background-primary);
       }
     }
@@ -7060,7 +7105,10 @@ body {
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
-    border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
+    border-color: var(
+      --hr-color,
+      var(--background-modifier-border, var(--lightgray))
+    );
   }
   details.toc {
     & summary {
@@ -7187,7 +7235,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #a386f9))
+      )
     )
   ) !important;
 }
@@ -7213,7 +7264,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #c5b6fc))
+      )
     )
   ) !important;
 }

@@ -535,7 +535,11 @@ strong {
   padding: 0 0.1rem;
   color: var(--rp-love);
   background-color: var(--rp-love);
-  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+  background-image: linear-gradient(
+    62deg,
+    var(--rp-love) 0%,
+    var(--rp-iris) 100%
+  ) !important;
 }
 
 strong .math.math-inline .MathJax {
@@ -560,7 +564,11 @@ strong {
   padding: 0 0.1rem;
   color: var(--rp-love);
   background-color: var(--rp-love);
-  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+  background-image: linear-gradient(
+    62deg,
+    var(--rp-love) 0%,
+    var(--rp-iris) 100%
+  ) !important;
 }
 
 strong .math.math-inline .MathJax {
@@ -885,7 +893,11 @@ thead {
 }
 
 .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header {
@@ -895,7 +907,11 @@ thead {
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title,
@@ -931,7 +947,8 @@ ul .task-list-item ul::before {
 
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -1019,11 +1036,19 @@ em,
 }
 
 .cm-s-obsidian span.cm-link {
-  background-image: linear-gradient(to bottom, var(--rp-iris) 0%, var(--rp-rose) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--rp-iris) 0%,
+    var(--rp-rose) 100%
+  );
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link {
-  background-image: linear-gradient(to bottom, var(--rp-iris) 0%, var(--rp-rose) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--rp-iris) 0%,
+    var(--rp-rose) 100%
+  );
 }
 
 .cm-s-obsidian span.cm-formatting-link {
@@ -1064,7 +1089,11 @@ em,
 }
 
 .internal-link {
-  background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-accent-55) 0%,
+    var(--bg-accent-55) 100%
+  );
 }
 
 .external-link {

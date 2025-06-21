@@ -227,7 +227,10 @@
   left: -0.5px;
 }
 
-.workspace .mod-root .workspace-tab-header:last-child .workspace-tab-header-inner::before {
+.workspace
+  .mod-root
+  .workspace-tab-header:last-child
+  .workspace-tab-header-inner::before {
   position: absolute;
   right: -0.5px;
   width: 1px;
@@ -236,9 +239,18 @@
   height: 20px;
 }
 
-.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner::after,
-.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner::before,
-.workspace .mod-root .workspace-tab-header:first-child .workspace-tab-header-inner::after,
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner::after,
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner::before,
+.workspace
+  .mod-root
+  .workspace-tab-header:first-child
+  .workspace-tab-header-inner::after,
 .workspace
   .mod-root
   .workspace-tab-header.is-active
@@ -484,15 +496,29 @@ pre[class*="language-"] {
   opacity: var(--icon-opacity);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--background-primary);
 }
 
-.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.mod-left-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-left-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
   opacity: var(--icon-opacity-active);
   color: var(--background-primary);
 }
@@ -785,7 +811,10 @@ select,
 }
 
 /*workspace tab header colors*/
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: rgb(0, 0, 0);
 }
 
