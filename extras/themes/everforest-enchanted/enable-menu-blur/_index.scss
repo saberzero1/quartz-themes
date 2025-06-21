@@ -1,8 +1,0 @@
-body:not(.disable-menu-animations, .enable-menu-blur) .modal-bg {
-  animation: fade-in var(--anim-duration-superfast) linear;
-}
-
-body:not(.is-translucent).enable-menu-blur .modal-bg {
-  backdrop-filter: blur(var(--menu-blur-radius, 5px));
-  opacity: 1 !important;
-}

@@ -1,6 +1,0 @@
-body:not(.show-ls-marker) ol li::marker,
-body:not(.show-ls-marker) :is(.is-phone) ol li::marker {
-  list-style-type: decimal;
-  content: counter(list-item) ") ";
-  display: list-item;
-}

@@ -1,6 +1,0 @@
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-explorer-buttons)
-  .workspace-leaf-content[data-type="file-explorer"]
-  .nav-buttons-container {
-  opacity: 0;
-  transition: opacity 0.15s;
-}

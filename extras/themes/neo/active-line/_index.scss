@@ -1,7 +1,0 @@
-body:is(.active-line)
-  .markdown-source-view
-  .cm-scroller
-  .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
-  background-color: hsla(var(--accent-h), 6%, 25%, 0.2);
-  border-radius: var(--radius-s);
-}

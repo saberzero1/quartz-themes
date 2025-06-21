@@ -2266,24 +2266,15 @@ body {
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
+  --font-interface-override:   ;
   --font-interface-theme: "??";
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
-  --font-print-override: "??";
   --font-smaller: 0.875em;
-  --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
+    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-text-size: 16px;
-  --font-text-theme: "??";
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -2390,7 +2381,7 @@ body {
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 2em;
+  --tag-radius: 0em;
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);

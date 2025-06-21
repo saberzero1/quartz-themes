@@ -1,3 +1,0 @@
-body:not(.disable-spaced-lists) :is(ul, ol) li:not(:first-of-type) p:first-of-type {
-  margin-block-start: var(--p-spacing);
-}

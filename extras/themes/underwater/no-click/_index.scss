@@ -1,9 +1,0 @@
-.no-click input[data-task]:not(input[data-task=" "], .no-click input[data-task="x"]):checked,
-.no-click li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"]) > input:checked,
-.no-click li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"]) > p > input:checked,
-.no-click
-  label.task-list-label:has(
-    > input[data-task]:not(input[data-task=" "], .no-click input[data-task="x"]):checked
-  ) {
-  pointer-events: none;
-}

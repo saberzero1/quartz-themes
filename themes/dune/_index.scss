@@ -418,7 +418,7 @@ html[saved-theme="light"] {
   --h3-color: var(--header-col);
   --h4-color: var(--header-col);
   --header-col: #c66102;
-  --hr-color: #808080;
+  --hr-color: light-dark(#808080, #808080);
   --link-external-color: var(--link-color-dune);
   --nav-item-color: var(--text-normal);
   --text-highlight-bg: rgba(255, 243, 163, 0.8);
@@ -562,7 +562,7 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-col: #c66102;
-  --hr-color: #808080;
+  --hr-color: light-dark(#808080, #808080);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
   --inline-title-color: var(--h1-color);

@@ -1,6 +1,0 @@
-.theme-light:not(.show-sidebar-header-buttons)
-  :is(.mod-left-split, .mod-right-split)
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container:not(:hover) {
-  background-color: var(--bg2);
-}

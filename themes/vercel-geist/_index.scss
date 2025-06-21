@@ -70,7 +70,7 @@ html[saved-theme="dark"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: dark;
@@ -135,7 +135,7 @@ html[saved-theme="dark"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: dark .callout {
@@ -213,7 +213,7 @@ html[saved-theme="light"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: light;
@@ -276,7 +276,7 @@ html[saved-theme="light"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: light .callout {
@@ -338,7 +338,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --vercel-blue-300: #adc8ff;
   --vercel-blue-500: #4d8bf9;
   --vercel-blue-600: #0070f3;
   --vercel-blue-700: #0051cc;
@@ -557,8 +556,7 @@ body {
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
-  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -645,7 +643,7 @@ html[saved-theme="dark"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: dark;
@@ -710,7 +708,7 @@ html[saved-theme="dark"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: dark .callout {
@@ -789,7 +787,7 @@ html[saved-theme="light"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: light;
@@ -852,7 +850,7 @@ html[saved-theme="light"] {
   --text-accent: var(--text-accent);
   --text-accent-hover: var(--link-color-hover);
   --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-highlight-bg: rgba(77, 139, 249, 0.3);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   color-scheme: light .callout {

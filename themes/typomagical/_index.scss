@@ -481,7 +481,7 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --font-title: "Playfair Display";
+  --font-title: Playfair Display;
   --h1-size: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
   --h2-size: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
   --h3-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
@@ -559,8 +559,7 @@ body {
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor: default;
   --cursor-link: pointer;
-  --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  --font-default: Spectral;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";

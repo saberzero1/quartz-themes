@@ -1,9 +1,0 @@
-body:not(.disable-menu-animations, .enable-menu-blur) .modal-bg {
-  animation: fade-in var(--anim-duration-superfast) linear;
-}
-
-body:not(.disable-menu-animations) :is(.modal, .prompt) {
-  animation:
-    fade-in var(--anim-duration-superfast),
-    slide-in var(--anim-duration-superfast) ease-out;
-}

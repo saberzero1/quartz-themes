@@ -54,7 +54,7 @@ html[saved-theme="dark"] {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
+  --font-text-theme: var(--font-serif);
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --inline-title-font: "Hatolie", var(--font-text);
@@ -110,7 +110,7 @@ html[saved-theme="dark"] {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
+  --font-text-theme: var(--font-serif);
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --inline-title-font: "Hatolie", var(--font-text);
@@ -361,7 +361,7 @@ body {
   --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: "??";
+  --font-text-theme: var(--font-serif);
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -548,7 +548,7 @@ html {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
+  --font-text-theme: var(--font-serif);
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --inline-title-font: "Hatolie", var(--font-text);
@@ -604,7 +604,7 @@ html {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
+  --font-text-theme: var(--font-serif);
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --inline-title-font: "Hatolie", var(--font-text);

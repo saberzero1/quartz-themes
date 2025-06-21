@@ -1,7 +1,0 @@
-body:not(.is-mobile):not(:not(.hide-status-bar)) .status-bar:not(:hover) {
-  opacity: 0;
-}
-
-body:not(.is-mobile):not(:not(.hide-status-bar)):not(.opacity-hide) .status-bar:not(:hover) {
-  height: 1em;
-}

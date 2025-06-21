@@ -1,8 +1,0 @@
-body.minimal-strike-lists {
-  --checklist-done-decoration: line-through;
-}
-
-body:not(.minimal-strike-lists) {
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-normal);
-}

@@ -1,5 +1,0 @@
-body:not(.no-alternating-header-colors)
-  :is(.cm-header-1, .cm-header-3, .cm-header-5):not(.cm-formatting-header),
-body:not(.no-alternating-header-colors) .view-content :is(h1, h3, h5) {
-  color: var(--alt-heading-color);
-}

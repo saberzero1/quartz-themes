@@ -937,13 +937,13 @@ body {
   --custom-code-height: 1em;
   --custom-line-height: 2em;
   --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
-  --font-emoji: "Noto Color Emoji";
+  --font-emoji: Noto Color Emoji;
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
-  --font-main: "Nunito Sans";
+  --font-main: Nunito Sans;
   --font-medium: 500;
   --font-monospace: "DM Mono", monospace;
   --font-normal: 400;
@@ -1003,7 +1003,7 @@ body {
   --h6-style: var(--heading-style);
   --h6-variant: var(--heading-variant);
   --h6-weight: var(--heading-weight);
-  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
+  --heading-font: Merriweather Sans;
   --heading-font-2: var(--heading-font), var(--font-default);
   --heading-style: normal;
   --heading-variant: normal;
@@ -1013,7 +1013,7 @@ body {
   --icon-color: var(--text-muted);
   --indentation-guide-color: transparent;
   --inline-title-color: var(--text-normal);
-  --inline-title-font: var(--h1-font);
+  --inline-title-font: var(--heading-font);
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
