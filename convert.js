@@ -25,21 +25,8 @@ import {
   replaceInFile,
   applyRuleToString,
   generateFundingLinks,
-  getVariationsFromTheme,
-  getVariationNamesFromTheme,
 } from "./util/util.mjs"
-import {
-  extractSettingsBlocks,
-  parseSettingsYaml,
-  extractStyleSettings,
-  styleSettingToCss,
-  extractClassToggleCss,
-  extractClassSelectCss,
-  replaceVariableColor,
-  replaceVariableThemedColor,
-  replaceVariableValue,
-  replaceGradientVariables,
-} from "./util/postcss-style-settings.mjs"
+import { extractStyleSettings, extractClassToggleCss } from "./util/postcss-style-settings.mjs"
 import { themes, usedRules } from "./config.mjs"
 import { prune } from "./util/prune-unused.mjs"
 import { writeIndex, cleanCSS } from "./util/writer.mjs"
