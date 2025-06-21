@@ -35,12 +35,14 @@ build:
 atomize:
   node convert.js ATOMIZE
   prettier . --write --cache
+  prettier . --write --cache
 
 [private]
 force-atomize:
   rm converted_app.css || true
   rm converted_app_extracted.css || true
   node convert.js ATOMIZE
+  prettier . --write --cache
   prettier . --write --cache
 
 [private]
@@ -54,9 +56,11 @@ clean-fonts:
 [private]
 format:
   prettier . --write --cache --ignore-path "./.prettiercompileignore"
+  prettier . --write --cache --ignore-path "./.prettiercompileignore"
 
 [private]
 format-all:
+  prettier . --check --cache --write
   prettier . --check --cache --write
 
 [private]
