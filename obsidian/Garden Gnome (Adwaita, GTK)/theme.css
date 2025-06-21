@@ -2,41 +2,40 @@
 name: Garden Gnome
 id: garden-gnome
 settings:
-	-
-		id: tweaks
-		title: Tweaks
-		type: heading
-		level: 1
-	-
-		id: hide-window-buttons
-		title: Hide minimize and maximize buttons
-		type: class-toggle
-		default: true
-	-
-		id: hide-only-tab
-		title: Hide single tab
-		title.es: Esconder pestaña única
-		description: Hides the tab when there is a single one
-		description.es: Esconde la pestaña cuando sólo hay una
-		type: class-select
-		allowEmpty: false
-		default: 'hide-only-tab_interactive'
-		options:
-		-
-			label: Full
-			value: 'hide-only-tab_full'
-		-
-			label: Interactive
-			value: 'hide-only-tab_interactive'
-		-
-			label: No
-			value: 'hide-only-tab_none'
-	-
+    -
+        id: tweaks
+        title: Tweaks
+        type: heading
+        level: 1
+    -
+        id: hide-window-buttons
+        title: Hide minimize and maximize buttons
+        type: class-toggle
+        default: true
+    -
+        id: hide-only-tab
+        title: Hide single tab
+        title.es: Esconder pestaña única
+        description: Hides the tab when there is a single one
+        description.es: Esconde la pestaña cuando sólo hay una
+        type: class-select
+        allowEmpty: false
+        default: 'hide-only-tab_interactive'
+        options:
+        -
+            label: Full
+            value: 'hide-only-tab_full'
+        -
+            label: Interactive
+            value: 'hide-only-tab_interactive'
+        -
+            label: No
+            value: 'hide-only-tab_none'
 */
 
 /*
 ################################################################################################################################################################################################
-			COMMON CODE
+            COMMON CODE
 ################################################################################################################################################################################################
 Code common to all of oqipo's themes
 */
@@ -54,7 +53,7 @@ body {
 }
 
 /*
-			MARKDOWN
+            MARKDOWN
 */
 
 /* Header */
@@ -217,7 +216,7 @@ h6 {
 }
 
 /*
-			UI
+            UI
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -277,7 +276,7 @@ h6 {
 }
 
 /*
-			PLUGINS
+            PLUGINS
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -540,7 +539,7 @@ h6.BC-Matrix-header {
 }
 
 /*
-			CUSTOM
+            CUSTOM
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -568,7 +567,7 @@ span[alt$="center"] {
 
 /*
 ################################################################################################################################################################################################
-			UNIQUE CODE
+            UNIQUE CODE
 ################################################################################################################################################################################################
 */
 
@@ -851,7 +850,7 @@ body {
 }
 
 /*
-			SETTINGS
+            SETTINGS
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -873,7 +872,7 @@ body {
 }
 
 /*
-			MARKDOWN
+            MARKDOWN
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -965,7 +964,7 @@ a {
   background: linear-gradient(var(--interactive-accent) -300%, var(--background-secondary) 1.5em);
 }
 /*
-			UI
+            UI
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -1088,7 +1087,7 @@ a {
 
   /* Background scroll fade, from https://stackoverflow.com/questions/9333379/ */
   background:
-	/* Shadow covers */
+    /* Shadow covers */
     linear-gradient(to right, var(--tab-scroll-mask-color) 40%, transparent),
     linear-gradient(to left, var(--tab-scroll-mask-color) 40%, transparent) 100% 0,
     /* Shadows */ linear-gradient(to right, var(--text-faint), transparent),
@@ -1382,7 +1381,7 @@ body:not(.native-scrollbars) .modal-close-button {
 .setting-item-control > button,
 button {
   padding: var(--size-4-4) var(--size-4-6);
-  /* 	background-color: var(--background-active); */
+  /*     background-color: var(--background-active); */
 
   transition: var(--button-transition);
 }

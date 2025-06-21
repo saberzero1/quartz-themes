@@ -2729,7 +2729,7 @@ settings:
         id: tab-img
         title: New tab image
         description: Looks better with a small image
-        type: variable-text
+        type: info-text
         default: url("")
     -
         id: vault-icon
@@ -2874,7 +2874,7 @@ settings:
     - 
         id: bg-url
         title: Background image url
-        type: variable-text
+        type: info-text
         default: url("")
     - 
         id: bg-opacity

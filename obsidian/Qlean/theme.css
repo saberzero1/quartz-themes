@@ -8693,7 +8693,6 @@ settings:
     step: 1
     format: px
     default: 2
-  -
 
 */
 /* @settings
@@ -8903,7 +8902,6 @@ settings:
     -
       label: Right
       value: embed-alt-right
-  -
 */
 /* @settings
 name: Tree
@@ -8967,7 +8965,6 @@ settings:
     description.zh: 如果开启，展开的文件夹将会更不透明。
     type: class-toggle
     default: true
-  -
 */
 /*
 @settings

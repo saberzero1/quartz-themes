@@ -336,7 +336,7 @@ body {
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: var(--h1-size);
+  --inline-title-size: 2.2em;
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
@@ -563,8 +563,8 @@ body {
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
   --status-bar-background: var(--background-secondary);
-  --status-bar-background-color-dt: #2b2b2b;
-  --status-bar-background-color-lt: #ebecef;
+  --status-bar-background-color-dt: #2B2B2Bhsl;
+  --status-bar-background-color-lt: #EBECEFhsl;
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: var(--font-ui-small);

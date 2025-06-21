@@ -1008,8 +1008,8 @@
   --show-more-top: "+\\";
   --spreadHorizontalWrapped-margin-LR: 3.5px;
   --status-bar-height: 21px;
-  --the-background-color: #000000;
-  --the-color: #15d00d;
+  --the-background-color: #000000hex;
+  --the-color: #15d00dhex;
   --the-color-rgb: 35, 255, 24;
   --the-font: Fira Code;
   --the-font-size: 14px;
@@ -8098,7 +8098,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10386,27 +10386,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */

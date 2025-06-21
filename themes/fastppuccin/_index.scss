@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-border-focus: rgb(var(--ctp-surface2));
   --background-modifier-border-hover: rgb(var(--ctp-surface1));
@@ -74,13 +75,87 @@
   --text-normal: rgb(var(--ctp-text));
   caret-color: var(--text-normal);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-border: rgb(var(--ctp-surface0));
+  --background-modifier-border-focus: rgb(var(--ctp-surface2));
+  --background-modifier-border-hover: rgb(var(--ctp-surface1));
+  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
+  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+  --background-primary: rgb(var(--ctp-base));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --callout-title-padding: var(--size-4-2);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent) !important);
+  --color-accent-2: rgb(var(--ctp-accent) !important);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-green: rgb(var(--ctp-green));
+  --color-orange: rgb(var(--ctp-peach));
+  --color-pink: rgb(var(--ctp-pink));
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-red: rgb(var(--ctp-red));
+  --color-yellow: rgb(var(--ctp-yellow));
+  --ctp-accent: var(--ctp-rosewater);
+  --ctp-base: var(--ctp-ext-base, 30, 30, 46);
+  --ctp-blue: var(--ctp-ext-blue, 135, 176, 249);
+  --ctp-crust: var(--ctp-ext-crust, 17, 17, 27);
+  --ctp-green: var(--ctp-ext-green, 166, 227, 161);
+  --ctp-lavender: var(--ctp-ext-lavender, 180, 190, 254);
+  --ctp-mantle: var(--ctp-ext-mantle, 24, 24, 37);
+  --ctp-overlay0: var(--ctp-ext-overlay0, 105, 109, 134);
+  --ctp-overlay1: var(--ctp-ext-overlay1, 123, 129, 157);
+  --ctp-overlay2: var(--ctp-ext-overlay2, 142, 149, 179);
+  --ctp-peach: var(--ctp-ext-peach, 250, 179, 135);
+  --ctp-pink: var(--ctp-ext-pink, 245, 194, 231);
+  --ctp-red: var(--ctp-ext-red, 243, 139, 168);
+  --ctp-rosewater: var(--ctp-ext-rosewater, 245, 224, 220);
+  --ctp-sky: var(--ctp-ext-sky, 137, 220, 235);
+  --ctp-subtext0: var(--ctp-ext-subtext0, 161, 168, 201);
+  --ctp-surface0: var(--ctp-ext-surface0, 49, 50, 68);
+  --ctp-surface1: var(--ctp-ext-surface1, 67, 70, 90);
+  --ctp-surface2: var(--ctp-ext-surface2, 86, 89, 112);
+  --ctp-text: var(--ctp-ext-text, 198, 208, 245);
+  --ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175);
+  --highlight-mix-blend-mode: none;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: var(--ctp-text);
+  --nav-indentation-guide-color: var(--background-primary);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-faint: rgb(var(--ctp-subtext0));
+  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
+  --text-muted: rgb(var(--ctp-overlay2));
+  --text-normal: rgb(var(--ctp-text));
+  caret-color: var(--text-normal);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --background-modifier-border: rgb(var(--ctp-surface1));
   --background-modifier-border-focus: rgb(var(--ctp-overlay0));
   --background-modifier-border-hover: rgb(var(--ctp-surface2));
@@ -146,9 +221,81 @@
   --text-normal: rgb(var(--ctp-text));
   caret-color: var(--text-normal);
   color-scheme: light;
-
-  .callout {
+  --background-modifier-border: rgb(var(--ctp-surface1));
+  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
+  --background-modifier-border-hover: rgb(var(--ctp-surface2));
+  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
+  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+  --background-primary: rgb(var(--ctp-base));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --callout-title-padding: var(--size-4-2);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent) !important);
+  --color-accent-2: rgb(var(--ctp-accent) !important);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-green: rgb(var(--ctp-green));
+  --color-orange: rgb(var(--ctp-peach));
+  --color-pink: rgb(var(--ctp-pink));
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-red: rgb(var(--ctp-red));
+  --color-yellow: rgb(var(--ctp-yellow));
+  --ctp-accent: var(--ctp-rosewater);
+  --ctp-base: var(--ctp-ext-base, 239, 241, 245);
+  --ctp-blue: var(--ctp-ext-blue, 42, 110, 245);
+  --ctp-crust: var(--ctp-ext-crust, 220, 224, 232);
+  --ctp-green: var(--ctp-ext-green, 64, 160, 43);
+  --ctp-lavender: var(--ctp-ext-lavender, 114, 135, 253);
+  --ctp-mantle: var(--ctp-ext-mantle, 230, 233, 239);
+  --ctp-overlay0: var(--ctp-ext-overlay0, 156, 160, 176);
+  --ctp-overlay1: var(--ctp-ext-overlay1, 140, 143, 161);
+  --ctp-overlay2: var(--ctp-ext-overlay2, 124, 127, 147);
+  --ctp-peach: var(--ctp-ext-peach, 254, 100, 11);
+  --ctp-pink: var(--ctp-ext-pink, 236, 131, 208);
+  --ctp-red: var(--ctp-ext-red, 210, 15, 57);
+  --ctp-rosewater: var(--ctp-ext-rosewater, 222, 149, 132);
+  --ctp-sky: var(--ctp-ext-sky, 4, 165, 229);
+  --ctp-subtext0: var(--ctp-ext-subtext0, 108, 111, 133);
+  --ctp-surface0: var(--ctp-ext-surface0, 204, 208, 218);
+  --ctp-surface1: var(--ctp-ext-surface1, 188, 192, 204);
+  --ctp-surface2: var(--ctp-ext-surface2, 172, 176, 190);
+  --ctp-text: var(--ctp-ext-text, 76, 79, 105);
+  --ctp-yellow: var(--ctp-ext-yellow, 228, 147, 32);
+  --highlight-mix-blend-mode: none;
+  --interactive-accent: var(--color-accent);
+  --mono-rgb-100: var(--ctp-text);
+  --nav-indentation-guide-color: var(--background-primary);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-faint: rgb(var(--ctp-subtext0));
+  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
+  --text-muted: rgb(var(--ctp-overlay2));
+  --text-normal: rgb(var(--ctp-text));
+  caret-color: var(--text-normal);
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -517,10 +664,80 @@ html[saved-theme="dark"] {
   --text-normal: rgb(var(--ctp-text));
   caret-color: var(--text-normal);
   color-scheme: dark;
+  --background-modifier-border: rgb(var(--ctp-surface0));
+  --background-modifier-border-focus: rgb(var(--ctp-surface2));
+  --background-modifier-border-hover: rgb(var(--ctp-surface1));
+  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
+  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+  --background-primary: rgb(var(--ctp-base));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --callout-title-padding: var(--size-4-2);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent) !important);
+  --color-accent-2: rgb(var(--ctp-accent) !important);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-green: rgb(var(--ctp-green));
+  --color-orange: rgb(var(--ctp-peach));
+  --color-pink: rgb(var(--ctp-pink));
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-red: rgb(var(--ctp-red));
+  --color-yellow: rgb(var(--ctp-yellow));
+  --ctp-accent: var(--ctp-rosewater);
+  --ctp-base: var(--ctp-ext-base, 30, 30, 46);
+  --ctp-blue: var(--ctp-ext-blue, 135, 176, 249);
+  --ctp-crust: var(--ctp-ext-crust, 17, 17, 27);
+  --ctp-green: var(--ctp-ext-green, 166, 227, 161);
+  --ctp-lavender: var(--ctp-ext-lavender, 180, 190, 254);
+  --ctp-mantle: var(--ctp-ext-mantle, 24, 24, 37);
+  --ctp-overlay0: var(--ctp-ext-overlay0, 105, 109, 134);
+  --ctp-overlay1: var(--ctp-ext-overlay1, 123, 129, 157);
+  --ctp-overlay2: var(--ctp-ext-overlay2, 142, 149, 179);
+  --ctp-peach: var(--ctp-ext-peach, 250, 179, 135);
+  --ctp-pink: var(--ctp-ext-pink, 245, 194, 231);
+  --ctp-red: var(--ctp-ext-red, 243, 139, 168);
+  --ctp-rosewater: var(--ctp-ext-rosewater, 245, 224, 220);
+  --ctp-sky: var(--ctp-ext-sky, 137, 220, 235);
+  --ctp-subtext0: var(--ctp-ext-subtext0, 161, 168, 201);
+  --ctp-surface0: var(--ctp-ext-surface0, 49, 50, 68);
+  --ctp-surface1: var(--ctp-ext-surface1, 67, 70, 90);
+  --ctp-surface2: var(--ctp-ext-surface2, 86, 89, 112);
+  --ctp-text: var(--ctp-ext-text, 198, 208, 245);
+  --ctp-yellow: var(--ctp-ext-yellow, 249, 226, 175);
+  --highlight-mix-blend-mode: none;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: var(--ctp-text);
+  --nav-indentation-guide-color: var(--background-primary);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-faint: rgb(var(--ctp-subtext0));
+  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
+  --text-muted: rgb(var(--ctp-overlay2));
+  --text-normal: rgb(var(--ctp-text));
+  caret-color: var(--text-normal);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -594,10 +811,79 @@ html[saved-theme="light"] {
   --text-normal: rgb(var(--ctp-text));
   caret-color: var(--text-normal);
   color-scheme: light;
+  --background-modifier-border: rgb(var(--ctp-surface1));
+  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
+  --background-modifier-border-hover: rgb(var(--ctp-surface2));
+  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
+  --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+  --background-primary: rgb(var(--ctp-base));
+  --background-secondary: rgb(var(--ctp-mantle));
+  --background-secondary-alt: rgb(var(--ctp-crust));
+  --callout-title-padding: var(--size-4-2);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent) !important);
+  --color-accent-2: rgb(var(--ctp-accent) !important);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-100: rgb(var(--ctp-text));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-blue-rgb: var(--ctp-blue);
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-green: rgb(var(--ctp-green));
+  --color-orange: rgb(var(--ctp-peach));
+  --color-pink: rgb(var(--ctp-pink));
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-red: rgb(var(--ctp-red));
+  --color-yellow: rgb(var(--ctp-yellow));
+  --ctp-accent: var(--ctp-rosewater);
+  --ctp-base: var(--ctp-ext-base, 239, 241, 245);
+  --ctp-blue: var(--ctp-ext-blue, 42, 110, 245);
+  --ctp-crust: var(--ctp-ext-crust, 220, 224, 232);
+  --ctp-green: var(--ctp-ext-green, 64, 160, 43);
+  --ctp-lavender: var(--ctp-ext-lavender, 114, 135, 253);
+  --ctp-mantle: var(--ctp-ext-mantle, 230, 233, 239);
+  --ctp-overlay0: var(--ctp-ext-overlay0, 156, 160, 176);
+  --ctp-overlay1: var(--ctp-ext-overlay1, 140, 143, 161);
+  --ctp-overlay2: var(--ctp-ext-overlay2, 124, 127, 147);
+  --ctp-peach: var(--ctp-ext-peach, 254, 100, 11);
+  --ctp-pink: var(--ctp-ext-pink, 236, 131, 208);
+  --ctp-red: var(--ctp-ext-red, 210, 15, 57);
+  --ctp-rosewater: var(--ctp-ext-rosewater, 222, 149, 132);
+  --ctp-sky: var(--ctp-ext-sky, 4, 165, 229);
+  --ctp-subtext0: var(--ctp-ext-subtext0, 108, 111, 133);
+  --ctp-surface0: var(--ctp-ext-surface0, 204, 208, 218);
+  --ctp-surface1: var(--ctp-ext-surface1, 188, 192, 204);
+  --ctp-surface2: var(--ctp-ext-surface2, 172, 176, 190);
+  --ctp-text: var(--ctp-ext-text, 76, 79, 105);
+  --ctp-yellow: var(--ctp-ext-yellow, 228, 147, 32);
+  --highlight-mix-blend-mode: none;
+  --interactive-accent: var(--color-accent);
+  --mono-rgb-100: var(--ctp-text);
+  --nav-indentation-guide-color: var(--background-primary);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-faint: rgb(var(--ctp-subtext0));
+  --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
+  --text-muted: rgb(var(--ctp-overlay2));
+  --text-normal: rgb(var(--ctp-text));
+  caret-color: var(--text-normal);
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

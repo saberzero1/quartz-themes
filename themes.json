@@ -14,6 +14,7 @@
       "compatibility": ["full"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -21,6 +22,7 @@
       "compatibility": ["partial"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["noto-sans"]
     },
@@ -28,6 +30,7 @@
       "compatibility": ["full"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -35,6 +38,7 @@
       "compatibility": ["partial", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -42,6 +46,12 @@
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [
+        {
+          "name": "colorful-headings",
+          "injects": ["at-colorful-headings"]
+        }
+      ],
       "extras": [],
       "fonts": []
     },
@@ -49,6 +59,7 @@
       "compatibility": ["full"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -56,6 +67,7 @@
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cantarell"]
     },
@@ -63,6 +75,7 @@
       "compatibility": ["full"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"]
     },
@@ -70,6 +83,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -77,6 +91,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["nunito-sans", "courier-prime", "bitter"]
     },
@@ -84,6 +99,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["icons/its"]
     },
@@ -91,6 +107,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["bricolage-grotesque", "roboto", "montserrat"]
     },
@@ -98,6 +115,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["noto-serif"]
     },
@@ -105,6 +123,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["roboto"]
     },
@@ -112,6 +131,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -119,6 +139,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["roboto"]
     },
@@ -126,6 +147,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -133,6 +155,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -140,6 +163,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -147,6 +171,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "ia-writer-mono",
@@ -159,6 +184,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cabin", "quicksand"]
     },
@@ -166,6 +192,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -173,6 +200,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -180,6 +208,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lora", "monaspace-neon"]
     },
@@ -187,6 +216,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
@@ -194,6 +224,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -201,6 +232,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -208,6 +240,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "eb-garamond",
@@ -223,6 +256,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -230,6 +264,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -237,6 +272,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -244,6 +280,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lucida-handwriting", "icons/boxicons"]
     },
@@ -251,6 +288,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["formular"]
     },
@@ -258,6 +296,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -265,6 +304,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -272,6 +312,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -279,6 +320,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cascadia-mono"]
     },
@@ -286,6 +328,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["archivo"]
     },
@@ -293,6 +336,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -300,6 +344,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["avenir", "cascadia-code"]
     },
@@ -307,6 +352,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ibm-plex-mono", "ibm-plex-sans"]
     },
@@ -314,6 +360,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -321,6 +368,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["nunito-sans", "vollkorn"]
     },
@@ -328,6 +376,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["bookerly", "hatolie", "merienda"]
     },
@@ -335,6 +384,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
@@ -342,6 +392,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["manrope", "nunito-sans"]
     },
@@ -349,6 +400,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "archivo",
@@ -362,6 +414,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -369,6 +422,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -376,6 +430,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["palatino"]
     },
@@ -383,6 +438,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -390,6 +446,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -397,6 +454,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["iosevka-web", "jetbrains-mono"]
     },
@@ -404,6 +462,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -411,6 +470,7 @@
       "compatibility": ["partial", "collection"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -418,6 +478,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -425,6 +486,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["inconsolata"]
     },
@@ -432,6 +494,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -439,6 +502,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["sf-mono"]
     },
@@ -446,6 +510,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["merriweather-sans"]
     },
@@ -453,6 +518,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["sf-pro-display"]
     },
@@ -460,6 +526,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ballet", "oxanium", "space-wham", "orbitron"]
     },
@@ -467,6 +534,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono"]
     },
@@ -474,6 +542,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono"]
     },
@@ -481,6 +550,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -488,6 +558,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["noto-sans", "jetbrains-mono"]
     },
@@ -495,6 +566,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -502,6 +574,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
@@ -509,6 +582,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -516,6 +590,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -523,6 +598,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -530,6 +606,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -537,6 +614,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -544,6 +622,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["crimson-pro", "figtree"]
     },
@@ -551,6 +630,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -558,6 +638,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono"]
     },
@@ -565,6 +646,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["flow-circular"]
     },
@@ -572,6 +654,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -579,6 +662,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["catamaran"]
     },
@@ -586,6 +670,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -593,6 +678,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -600,6 +686,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["monaco", "sf-mono"]
     },
@@ -607,6 +694,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -614,6 +702,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono", "monaco"]
     },
@@ -621,6 +710,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -628,6 +718,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -635,6 +726,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -642,6 +734,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -649,6 +742,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["icons/material-icons", "fira-code"]
     },
@@ -656,6 +750,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -663,6 +758,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -670,6 +766,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -677,6 +774,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["monaco"]
     },
@@ -684,6 +782,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -691,6 +790,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -698,6 +798,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -705,6 +806,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -712,6 +814,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -719,6 +822,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -726,6 +830,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -733,6 +838,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["hack"]
     },
@@ -740,6 +846,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
@@ -747,6 +854,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["hack"]
     },
@@ -754,6 +862,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -761,6 +870,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "chakra-petch",
@@ -775,6 +885,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["noto-serif"]
     },
@@ -782,6 +893,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -789,6 +901,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -796,6 +909,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -803,6 +917,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -810,6 +925,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -817,6 +933,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono"]
     },
@@ -824,6 +941,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
@@ -831,6 +949,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["light", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -838,6 +957,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -845,6 +965,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
@@ -852,6 +973,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
@@ -859,6 +981,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -866,6 +989,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["fira-code", "noto-sans"]
     },
@@ -873,6 +997,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -880,6 +1005,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["figtree", "jetbrains-mono"]
     },
@@ -887,6 +1013,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lucida-handwriting", "monaco"]
     },
@@ -894,6 +1021,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -901,6 +1029,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["peace-sans", "space-grotesk"]
     },
@@ -908,6 +1037,7 @@
       "compatibility": ["full"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["open-sans"]
     },
@@ -915,6 +1045,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["courier-prime", "kalam"]
     },
@@ -922,6 +1053,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -929,6 +1061,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -936,6 +1069,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -943,6 +1077,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -950,6 +1085,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["monaco"]
     },
@@ -957,6 +1093,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-duo"]
     },
@@ -964,6 +1101,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-quattro"]
     },
@@ -971,6 +1109,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -978,6 +1117,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -985,6 +1125,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -992,6 +1133,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -999,6 +1141,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["icons/its"]
     },
@@ -1006,6 +1149,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1013,6 +1157,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["roboto", "sf-mono"]
     },
@@ -1020,6 +1165,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["hack"]
     },
@@ -1027,6 +1173,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["hack"]
     },
@@ -1034,6 +1181,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cascadia-mono"]
     },
@@ -1041,6 +1189,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["atkinson-hyperlegible", "jetbrains-mono"]
     },
@@ -1048,6 +1197,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["formular"]
     },
@@ -1055,6 +1205,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["computer-modern-bright"]
     },
@@ -1062,6 +1213,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["noto-serif-kr"]
     },
@@ -1069,6 +1221,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1076,6 +1229,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1083,6 +1237,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lato", "roboto", "work-sans"]
     },
@@ -1090,6 +1245,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["courgette", "karla", "open-sans"]
     },
@@ -1097,6 +1253,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1104,6 +1261,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1111,6 +1269,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["dm-mono", "dm-sans", "fira-code"]
     },
@@ -1118,6 +1277,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1125,6 +1285,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1132,6 +1293,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -1139,6 +1301,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1146,6 +1309,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["maple-mono"]
     },
@@ -1153,6 +1317,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["inter"]
     },
@@ -1160,6 +1325,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["material"],
       "fonts": ["roboto"]
     },
@@ -1167,6 +1333,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["material"],
       "fonts": ["roboto", "roboto-mono"]
     },
@@ -1174,6 +1341,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["material"],
       "fonts": []
     },
@@ -1181,6 +1349,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle", "material"],
       "fonts": []
     },
@@ -1188,6 +1357,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1195,6 +1365,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1202,6 +1373,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["finlandica"]
     },
@@ -1209,6 +1381,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1216,6 +1389,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fonts": []
     },
@@ -1223,6 +1397,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["minimal"],
       "fonts": []
     },
@@ -1230,6 +1405,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["minimal"],
       "fonts": ["roboto"]
     },
@@ -1237,6 +1413,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fonts": ["geist"]
     },
@@ -1244,6 +1421,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fonts": []
     },
@@ -1251,6 +1429,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["minimal"],
       "fonts": ["roboto"]
     },
@@ -1258,6 +1437,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["fira-code"]
     },
@@ -1265,6 +1445,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
@@ -1272,6 +1453,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["arvo", "permanent-marker"]
     },
@@ -1279,6 +1461,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jost", "satoshi", "syne", "jetbrains-mono"]
     },
@@ -1286,6 +1469,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["fira-code"]
     },
@@ -1293,6 +1477,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1300,6 +1485,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1307,6 +1493,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1314,6 +1501,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1321,6 +1509,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1328,6 +1517,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1335,6 +1525,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["icons/material-symbols-outlined", "s-core-dream-3-light"]
     },
@@ -1342,6 +1533,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["montserrat"]
     },
@@ -1349,6 +1541,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -1356,6 +1549,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1363,6 +1557,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1370,6 +1565,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1377,6 +1573,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1384,6 +1581,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cormorant", "manrope"]
     },
@@ -1391,6 +1589,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1398,6 +1597,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1405,6 +1605,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["inconsolata", "noto-sans"]
     },
@@ -1412,6 +1613,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1419,6 +1621,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["deadhead-script", "gentium-book-basic", "norwester"]
     },
@@ -1426,6 +1629,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["finlandica"]
     },
@@ -1433,6 +1637,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lyons-serif", "ia-writer-duospace"]
     },
@@ -1440,6 +1645,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["sf-mono"]
     },
@@ -1447,6 +1653,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["roboto", "sf-mono", "sf-pro-display"]
     },
@@ -1454,6 +1661,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1461,6 +1669,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1468,6 +1677,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1475,6 +1685,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1482,6 +1693,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-mono", "ia-writer-quattro"]
     },
@@ -1489,6 +1701,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1496,6 +1709,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["rubik", "space-mono"]
     },
@@ -1503,6 +1717,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["fira-code", "ia-writer-quattro", "ibm-plex-sans"]
     },
@@ -1510,6 +1725,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1517,6 +1733,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1524,6 +1741,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1531,6 +1749,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1538,6 +1757,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1545,6 +1765,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ibm-plex-mono"]
     },
@@ -1552,6 +1773,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1559,6 +1781,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cairo", "fira-code"]
     },
@@ -1566,6 +1789,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1573,6 +1797,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1580,6 +1805,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1587,6 +1813,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1594,6 +1821,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1601,6 +1829,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1608,6 +1837,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
@@ -1615,6 +1845,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1622,6 +1853,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1629,6 +1861,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1636,6 +1869,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "sf-pro-display"]
     },
@@ -1643,6 +1877,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["inconsolata"]
     },
@@ -1650,6 +1885,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lucida-handwriting", "monaco"]
     },
@@ -1657,6 +1893,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["monaco"]
     },
@@ -1664,6 +1901,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ibm-plex-sans"]
     },
@@ -1671,6 +1909,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["bricolage-grotesque"]
     },
@@ -1678,6 +1917,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1685,6 +1925,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1692,6 +1933,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["rubik", "ibm-plex-mono"]
     },
@@ -1699,6 +1941,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1706,6 +1949,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["arimo", "anonymous-pro"]
     },
@@ -1713,6 +1957,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cascadia-code"]
     },
@@ -1720,6 +1965,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1727,6 +1973,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "source-sans-3"]
     },
@@ -1734,6 +1981,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1741,6 +1989,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1748,6 +1997,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1755,6 +2005,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lato"]
     },
@@ -1762,6 +2013,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1769,6 +2021,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1776,6 +2029,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["monaspace-argon"]
     },
@@ -1783,6 +2037,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1790,6 +2045,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-mono", "noto-sans-jp"]
     },
@@ -1797,6 +2053,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1804,6 +2061,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -1811,6 +2069,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["fira-code", "montserrat"]
     },
@@ -1818,6 +2077,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1825,6 +2085,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "noto-sans"]
     },
@@ -1832,6 +2093,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1839,6 +2101,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ibm-plex-mono"]
     },
@@ -1846,6 +2109,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["libre-franklin"]
     },
@@ -1853,6 +2117,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1860,6 +2125,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1867,6 +2133,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["icons/its"]
     },
@@ -1874,6 +2141,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1881,6 +2149,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["fira-code"]
     },
@@ -1888,6 +2157,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1895,6 +2165,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1902,6 +2173,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1909,6 +2181,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["hack"]
     },
@@ -1916,6 +2189,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["fira-sans", "fira-code"]
     },
@@ -1923,6 +2197,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["hack"]
     },
@@ -1930,6 +2205,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1937,6 +2213,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -1944,6 +2221,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["sf-mono"]
     },
@@ -1951,6 +2229,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["sf-mono"]
     },
@@ -1958,6 +2237,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["special-elite"]
     },
@@ -1965,6 +2245,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["flow-circular"]
     },
@@ -1972,6 +2253,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["slasher-film"]
     },
@@ -1979,6 +2261,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["euclid-circular-a", "hack"]
     },
@@ -1986,6 +2269,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -1993,6 +2277,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2000,6 +2285,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"]
     },
@@ -2007,6 +2293,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2014,6 +2301,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2021,6 +2309,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["computer-modern-bright", "jetbrains-mono"]
     },
@@ -2028,6 +2317,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["geist", "geist-mono"]
     },
@@ -2035,6 +2325,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2042,6 +2333,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "ia-writer-quattro-s",
@@ -2055,6 +2347,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2062,6 +2355,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-quattro", "fira-code", "ibm-plex-sans"]
     },
@@ -2069,6 +2363,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2076,6 +2371,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["roboto"]
     },
@@ -2083,6 +2379,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2090,6 +2387,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2097,6 +2395,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cormorant", "germania-one"]
     },
@@ -2104,6 +2403,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["fira-code"]
     },
@@ -2111,6 +2411,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2118,6 +2419,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2125,6 +2427,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["bai-jamjuree", "orbitron", "unbounded"]
     },
@@ -2132,6 +2435,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2139,6 +2443,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2146,6 +2451,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["flow-circular", "open-sans"]
     },
@@ -2153,6 +2459,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono", "roboto"]
     },
@@ -2160,6 +2467,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["jetbrains-mono"]
     },
@@ -2167,6 +2475,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -2174,6 +2483,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["apercu-pro"]
     },
@@ -2181,6 +2491,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cascadia-code", "source-sans-pro"]
     },
@@ -2188,6 +2499,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2195,6 +2507,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["flow-circular", "sf-mono"]
     },
@@ -2202,6 +2515,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["monaco", "roboto"]
     },
@@ -2209,6 +2523,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["roboto"]
     },
@@ -2216,6 +2531,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2223,6 +2539,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2230,6 +2547,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["fira-code"]
     },
@@ -2237,6 +2555,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2244,6 +2563,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2251,6 +2571,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2258,6 +2579,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["formular"]
     },
@@ -2265,6 +2587,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
@@ -2272,6 +2595,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2279,6 +2603,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["anonymous-pro", "jetbrains-mono"]
     },
@@ -2286,6 +2611,7 @@
       "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono"]
     },
@@ -2293,6 +2619,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2300,6 +2627,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2307,6 +2635,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2314,6 +2643,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2321,6 +2651,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2328,6 +2659,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2335,6 +2667,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"]
     },
@@ -2342,6 +2675,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["alegreya", "amiri", "bitter", "playfair-display", "spectral"]
     },
@@ -2349,6 +2683,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2356,6 +2691,7 @@
       "compatibility": ["removed"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["cmu-typewriter-text", "jetbrains-mono"]
     },
@@ -2363,6 +2699,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["nightingale", "monaspace-neon"]
     },
@@ -2370,6 +2707,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["lexend"]
     },
@@ -2377,6 +2715,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2384,6 +2723,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2391,6 +2731,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2398,6 +2739,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2405,6 +2747,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2412,6 +2755,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["finlandica"]
     },
@@ -2419,6 +2763,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2426,6 +2771,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["geist", "geist-mono"]
     },
@@ -2433,6 +2779,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2440,6 +2787,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2447,6 +2795,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2454,6 +2803,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2461,6 +2811,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2468,6 +2819,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["rubik"]
     },
@@ -2475,6 +2827,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2482,6 +2835,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2489,6 +2843,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["archivo", "linux-libertine"]
     },
@@ -2496,6 +2851,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["lato", "fira-code"]
     },
@@ -2503,6 +2859,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": [
         "crimson-pro",
@@ -2516,6 +2873,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["myriad-apple"]
     },
@@ -2523,6 +2881,7 @@
       "compatibility": ["checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["karla", "open-sans"]
     },
@@ -2530,6 +2889,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": []
     },
@@ -2537,6 +2897,7 @@
       "compatibility": ["partial"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["audiowide", "dotgothic16"]
     },
@@ -2544,6 +2905,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["architects-daughter", "neucha", "space-mono"]
     },
@@ -2551,6 +2913,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
@@ -2558,6 +2921,7 @@
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
@@ -2565,6 +2929,7 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": [],
       "fonts": []
     },
@@ -2572,6 +2937,7 @@
       "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
+      "variations": [],
       "extras": ["hide-toggle"],
       "fonts": ["inconsolata"]
     }

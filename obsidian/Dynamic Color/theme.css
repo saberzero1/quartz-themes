@@ -337,30 +337,30 @@
 
   /* Theme to Tokens */
   /* --radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px; */
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px; */
 
   /* ## Foundations */
 
   /* ### Colors */
   /* --color-base-00: var(--md-ref-palette-primary-0);
-	--color-base-05: var(--md-ref-palette-primary-5);
-	--color-base-10: var(--md-ref-palette-primary-10);
-	--color-base-20: var(--md-ref-palette-primary-20);
-	--color-base-25: var(--md-ref-palette-primary-25);
-	--color-base-30: var(--md-ref-palette-primary-30);
-	--color-base-35: var(--md-ref-palette-primary-35);
-	--color-base-40: var(--md-ref-palette-primary-40);
-	--color-base-50: var(--md-ref-palette-primary-50);
-	--color-base-60: var(--md-ref-palette-primary-60);
-	--color-base-70: var(--md-ref-palette-primary-70);
-	--color-base-100: var(--md-ref-palette-primary-100); */
+    --color-base-05: var(--md-ref-palette-primary-5);
+    --color-base-10: var(--md-ref-palette-primary-10);
+    --color-base-20: var(--md-ref-palette-primary-20);
+    --color-base-25: var(--md-ref-palette-primary-25);
+    --color-base-30: var(--md-ref-palette-primary-30);
+    --color-base-35: var(--md-ref-palette-primary-35);
+    --color-base-40: var(--md-ref-palette-primary-40);
+    --color-base-50: var(--md-ref-palette-primary-50);
+    --color-base-60: var(--md-ref-palette-primary-60);
+    --color-base-70: var(--md-ref-palette-primary-70);
+    --color-base-100: var(--md-ref-palette-primary-100); */
 
   /* ### Surface colors */
   --background-primary: var(--md-sys-color-surface-container-lowest);
@@ -402,9 +402,9 @@
 
   /* ### Icons */
   /* --icon-color: var(--md-sys-color-primary);
-	--icon-color-hover: var(--md-sys-color-primary);
-	--icon-color-active: var(--md-sys-color-primary);
-	--icon-color-focused: var(--md-sys-color-primary); */
+    --icon-color-hover: var(--md-sys-color-primary);
+    --icon-color-active: var(--md-sys-color-primary);
+    --icon-color-focused: var(--md-sys-color-primary); */
 
   /* ## Editor */
 
@@ -487,12 +487,12 @@
   --canvas-card-label-color: var(--md-sys-color-on-background);
   --canvas-dot-pattern: var(--md-sys-color-outline-variant);
   /* Cannot set, rgb only:
-	--canvas-color-1: var(--md-sys-color-primary);
-	--canvas-color-2: var(--md-sys-color-secondary);
-	--canvas-color-3: var(--md-sys-color-tertiary);
-	--canvas-color-4: var(--md-sys-color-primary);
-	--canvas-color-5: var(--md-sys-color-secondary);
-	--canvas-color-6: var(--md-sys-color-tertiary); */
+    --canvas-color-1: var(--md-sys-color-primary);
+    --canvas-color-2: var(--md-sys-color-secondary);
+    --canvas-color-3: var(--md-sys-color-tertiary);
+    --canvas-color-4: var(--md-sys-color-primary);
+    --canvas-color-5: var(--md-sys-color-secondary);
+    --canvas-color-6: var(--md-sys-color-tertiary); */
 
   /* ### File explorer */
   --vault-name-color: var(--md-sys-color-on-background);

@@ -861,7 +861,7 @@ div.day.has-note.today.svelte-q3wqg9 {
 name: Improved Potato Theme
 id: things-style
 settings:
-	-
+    -
         id: features
         title: Features
         type: heading
@@ -1035,7 +1035,7 @@ settings:
         description: Toggle H6 underline (border-bottom)
         type: class-toggle
         default: false
-	-
+    -
         id: colors
         title: Other colors
         type: heading
@@ -1066,7 +1066,7 @@ settings:
         type: variable-color
         format: hex
         default: '#ff3c7f'
-	-
+    -
         id: color-bases
         title: Color bases
         type: heading
@@ -1166,7 +1166,7 @@ settings:
         opacity: true
         default-light: '#485465'
         default-dark: '#ccd2db'
-	-
+    -
         id: callouts
         title: Callouts
         type: heading

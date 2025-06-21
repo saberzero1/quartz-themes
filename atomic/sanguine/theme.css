@@ -8187,7 +8187,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10450,27 +10450,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24421,20 +24421,20 @@ button:not(.clickable-icon):hover {
 
 /* Checkbox checked */
 /*.cm-editor input[type=checkbox]:checked {
-	color: var(--col-ed-bckg-checkbox-full);
-	background-color: var(--col-ed-bckg-checkbox-full);
-	border-color:  var(--col-accent-plus);
+    color: var(--col-ed-bckg-checkbox-full);
+    background-color: var(--col-ed-bckg-checkbox-full);
+    border-color:  var(--col-accent-plus);
 }*/
 /* Checkbox unchecked */
 /*cm-editor input[type=checkbox] {
-	color: blue;
-	background-color: blue;
-	border-color: blue;
+    color: blue;
+    background-color: blue;
+    border-color: blue;
 }*/
 /*
-	--col-ed-bckg-checkbox-empty: var(--col-accent-plus);
-	--col-ed-bckg-checkbox-full: var(--col-muted);
-	--col-ed-txt-checkbox-full: var(--col-important-muted);
+    --col-ed-bckg-checkbox-empty: var(--col-accent-plus);
+    --col-ed-bckg-checkbox-full: var(--col-muted);
+    --col-ed-txt-checkbox-full: var(--col-important-muted);
 */
 /* Checkbox unchecked */
 .cm-editor input[type="checkbox"] {

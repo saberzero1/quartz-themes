@@ -8019,7 +8019,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10282,27 +10282,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23848,11 +23848,11 @@ svg * {
 /* --------------------------- golam old css-------------------------- */
 /* blockquote */
 /* body {
-	--blockquote-background-color: var(--background-secondary);
-	--blockquote-border-thickness: 2px;
-	--blockquote-border-color: var(--htb-lime);
-	--blockquote-font-style: normal;
-	--blockquote-color: inherit;
+    --blockquote-background-color: var(--background-secondary);
+    --blockquote-border-thickness: 2px;
+    --blockquote-border-color: var(--htb-lime);
+    --blockquote-font-style: normal;
+    --blockquote-color: inherit;
 } */
 .mod-empty-attachment {
   background-color: var(--background-secondary);
@@ -23952,10 +23952,10 @@ span.cm-inline-code {
 }
 
 /*.metadata-properties-title {
-	color:var(--htb-lime); not sure  if i do lime or not 
-	color: var(--htb-lime);
-	this is the property text  
-	did not combine them 3 for readability 
+    color:var(--htb-lime); not sure  if i do lime or not 
+    color: var(--htb-lime);
+    this is the property text  
+    did not combine them 3 for readability 
 } */
 /* table  */
 /* Fix the borders and add a radius variable */
@@ -24059,9 +24059,9 @@ div.search-result-hover-button > svg {
 /* todo later */
 /*
 .workspace .tappable.is-active.mod-active svg{
-	fill:var(--htb-text-color);
+    fill:var(--htb-text-color);
 }
 
 div.workspace-tab-header-inner-close-button svg{
-	stroke:var(--htb-text-color) !important;
+    stroke:var(--htb-text-color) !important;
 }*/

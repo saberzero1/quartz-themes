@@ -127,7 +127,7 @@ body,
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
 
-  /* table colors	 */
+  /* table colors     */
   --table-background: rgba(var(--primary-alt-rgb), 0.3);
   --table-header-background: rgba(var(--primary-alt-rgb), 0.8);
 

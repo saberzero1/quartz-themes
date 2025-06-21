@@ -1777,7 +1777,7 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-callout-theme: "Computer Modern Bright", "Computer Modern", "Sans-Serif";
+  --font-callout-theme: Computer Modern;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-extrabold: 800;
@@ -1785,7 +1785,7 @@ body {
   --font-interface: var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
-  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
+  --font-interface-theme: Jetbrains Mono;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -1794,7 +1794,7 @@ body {
   --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-override: "??";
-  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
+  --font-monospace-theme: Jetbrains Mono;
   --font-normal: 400;
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
@@ -1803,7 +1803,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "Computer Modern Bright", "Computer Modern", "Inter", Sans-Serif;
+  --font-text: Computer Modern;
   --font-text-override: "??";
   --font-text-size: 10px;
   --font-text-theme: "??";
@@ -8102,7 +8102,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10367,27 +10367,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */

@@ -351,7 +351,7 @@ pre[class*="language-"] {
 /* In BASH: color of the pipe | */
 /* In css color of = : ! * </> */
 /* .theme-dark .token.operator {
-	color: red;
+    color: red;
 } */
 
 /* In html: attribute within e.g. <div=attribute></div> */
@@ -396,7 +396,7 @@ pre[class*="language-"] {
 
 /* Unknown */
 /* .theme-dark .token.constant {
-	color: red;
+    color: red;
 } */
 
 /* Number */
@@ -433,7 +433,7 @@ pre[class*="language-"] {
 
 /* In HTML allows to change color of brackets  */
 /* .theme-dark .token.tag .punctuation {
-	color: #ff80bf;
+    color: #ff80bf;
 } */
 
 /* !important in css*/
@@ -494,7 +494,7 @@ pre[class*="language-"] {
 /* If you'd like your theme to have overrides for specific languages, here's an example, you can remove it and/or add more overrides */
 /* For Instance change -css to -javasript, for highlighting to work only on those languages */
 /* .theme-dark .language-css .token.important {
-	color: red;
+    color: red;
 } */
 
 /* Inline Code in Reading Mode */

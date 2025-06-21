@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-border-hover: var(--gray-200);
   --background-modifier-form-field: var(--gray-25);
   --blue-200: oklch(35.5% 0.127 260.58);
@@ -82,13 +83,95 @@
   --yellow-100: oklch(25.5% 0.052 97.11);
   --yellow-300: oklch(48.5% 0.1 97.11);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-border-hover: var(--gray-200);
+  --background-modifier-form-field: var(--gray-25);
+  --blue-200: oklch(35.5% 0.127 260.58);
+  --blue-300: oklch(48.5% 0.173 260.58);
+  --blue-400: oklch(61.5% 0.176 260.58);
+  --blue-600: oklch(84.5% 0.06 260.58);
+  --checkbox-border-color: var(--gray-300);
+  --checkbox-color: var(--sea-green-500);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-blue: #027aff;
+  --color-cyan: #53dfdd;
+  --color-green: #44cf6e;
+  --color-orange: #e9973f;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-red: #fb464c;
+  --color-yellow: #e0de71;
+  --gray-100: oklch(25.5% 0.021 279.29);
+  --gray-200: oklch(35.5% 0.029 279.29);
+  --gray-25: oklch(12% 0.009 279.29);
+  --gray-300: oklch(48.5% 0.039 279.29);
+  --gray-400: oklch(61.5% 0.028 279.29);
+  --gray-50: oklch(13.5% 0.01 279.29);
+  --gray-500: oklch(74.5% 0.018 279.29);
+  --gray-600: oklch(84.5% 0.01 279.29);
+  --gray-700: oklch(92% 0.004 279.29);
+  --gray-75: oklch(18% 0.014 279.29);
+  --green-300: oklch(48.5% 0.145 140.09);
+  --h1-color: var(--purple-400);
+  --h1-weight: 550;
+  --h2-color: var(--pink);
+  --h2-weight: 500;
+  --h3-color: var(--orange);
+  --h3-weight: 550;
+  --h4-color: var(--red);
+  --h4-weight: 650;
+  --h5-color: var(--gray-600);
+  --h5-weight: 600;
+  --h6-color: var(--gray-600);
+  --h6-weight: 650;
+  --interactive-accent: var(--color-accent);
+  --mono-rgb-100: 255, 255, 255;
+  --nav-item-background-active: var(--gray-100);
+  --nav-item-color-active: var(--gray-700);
+  --orange-300: oklch(48.5% 0.134 46.85);
+  --pink-300: oklch(48.5% 0.227 324.98);
+  --purple-400: oklch(61.5% 0.17 288);
+  --red-300: oklch(48.5% 0.193 13.65);
+  --sea-green-300: oklch(48.5% 0.106 161.65);
+  --sea-green-500: oklch(74.5% 0.164 161.65);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --yellow-100: oklch(25.5% 0.052 97.11);
+  --yellow-300: oklch(48.5% 0.1 97.11);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --blue-200: oklch(74.5% 0.111 260.58);
   --blue-300: oklch(61.5% 0.176 260.58);
   --blue-400: oklch(48.5% 0.173 260.58);
@@ -156,9 +239,83 @@
   --yellow-100: oklch(84.5% 0.174 97.11);
   --yellow-300: oklch(61.5% 0.126 97.11);
   color-scheme: light;
-
-  .callout {
+  --blue-200: oklch(74.5% 0.111 260.58);
+  --blue-300: oklch(61.5% 0.176 260.58);
+  --blue-400: oklch(48.5% 0.173 260.58);
+  --blue-600: oklch(25.5% 0.091 260.58);
+  --checkbox-color: var(--sea-green-300);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-blue: #086ddd;
+  --color-cyan: #00bfbc;
+  --color-green: #08b94e;
+  --color-orange: #ec7500;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-red: #e93147;
+  --color-yellow: #e0ac00;
+  --gray-100: oklch(84.5% 0.01 279.29);
+  --gray-200: oklch(74.5% 0.018 279.29);
+  --gray-25: oklch(98% 0.001 279.29);
+  --gray-300: oklch(61.5% 0.028 279.29);
+  --gray-400: oklch(48.5% 0.039 279.29);
+  --gray-50: oklch(96.5% 0.002 279.29);
+  --gray-500: oklch(35.5% 0.029 279.29);
+  --gray-600: oklch(25.5% 0.021 279.29);
+  --gray-700: oklch(18% 0.014 279.29);
+  --gray-75: oklch(92% 0.004 279.29);
+  --green-300: oklch(61.5% 0.183 140.09);
+  --h1-color: var(--purple-400);
+  --h1-weight: 550;
+  --h2-color: var(--pink-300);
+  --h2-weight: 550;
+  --h3-color: var(--orange);
+  --h3-weight: 600;
+  --h4-color: var(--red);
+  --h4-weight: 650;
+  --h5-color: var(--gray-400);
+  --h5-weight: 500;
+  --h6-color: var(--gray-400);
+  --h6-weight: 600;
+  --mono-rgb-100: 0, 0, 0;
+  --orange-300: oklch(61.5% 0.17 46.85);
+  --pink-300: oklch(61.5% 0.287 324.98);
+  --purple-400: oklch(48.5% 0.213 288);
+  --red-300: oklch(61.5% 0.245 13.65);
+  --sea-green-300: oklch(61.5% 0.135 161.65);
+  --sea-green-500: oklch(35.5% 0.078 161.65);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --yellow-100: oklch(84.5% 0.174 97.11);
+  --yellow-300: oklch(61.5% 0.126 97.11);
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -509,10 +666,88 @@ html[saved-theme="dark"] {
   --yellow-100: oklch(25.5% 0.052 97.11);
   --yellow-300: oklch(48.5% 0.1 97.11);
   color-scheme: dark;
+  --background-modifier-border-hover: var(--gray-200);
+  --background-modifier-form-field: var(--gray-25);
+  --blue-200: oklch(35.5% 0.127 260.58);
+  --blue-300: oklch(48.5% 0.173 260.58);
+  --blue-400: oklch(61.5% 0.176 260.58);
+  --blue-600: oklch(84.5% 0.06 260.58);
+  --checkbox-border-color: var(--gray-300);
+  --checkbox-color: var(--sea-green-500);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-blue: #027aff;
+  --color-cyan: #53dfdd;
+  --color-green: #44cf6e;
+  --color-orange: #e9973f;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-red: #fb464c;
+  --color-yellow: #e0de71;
+  --gray-100: oklch(25.5% 0.021 279.29);
+  --gray-200: oklch(35.5% 0.029 279.29);
+  --gray-25: oklch(12% 0.009 279.29);
+  --gray-300: oklch(48.5% 0.039 279.29);
+  --gray-400: oklch(61.5% 0.028 279.29);
+  --gray-50: oklch(13.5% 0.01 279.29);
+  --gray-500: oklch(74.5% 0.018 279.29);
+  --gray-600: oklch(84.5% 0.01 279.29);
+  --gray-700: oklch(92% 0.004 279.29);
+  --gray-75: oklch(18% 0.014 279.29);
+  --green-300: oklch(48.5% 0.145 140.09);
+  --h1-color: var(--purple-400);
+  --h1-weight: 550;
+  --h2-color: var(--pink);
+  --h2-weight: 500;
+  --h3-color: var(--orange);
+  --h3-weight: 550;
+  --h4-color: var(--red);
+  --h4-weight: 650;
+  --h5-color: var(--gray-600);
+  --h5-weight: 600;
+  --h6-color: var(--gray-600);
+  --h6-weight: 650;
+  --interactive-accent: var(--color-accent);
+  --mono-rgb-100: 255, 255, 255;
+  --nav-item-background-active: var(--gray-100);
+  --nav-item-color-active: var(--gray-700);
+  --orange-300: oklch(48.5% 0.134 46.85);
+  --pink-300: oklch(48.5% 0.227 324.98);
+  --purple-400: oklch(61.5% 0.17 288);
+  --red-300: oklch(48.5% 0.193 13.65);
+  --sea-green-300: oklch(48.5% 0.106 161.65);
+  --sea-green-500: oklch(74.5% 0.164 161.65);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --yellow-100: oklch(25.5% 0.052 97.11);
+  --yellow-300: oklch(48.5% 0.1 97.11);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -588,10 +823,81 @@ html[saved-theme="light"] {
   --yellow-100: oklch(84.5% 0.174 97.11);
   --yellow-300: oklch(61.5% 0.126 97.11);
   color-scheme: light;
+  --blue-200: oklch(74.5% 0.111 260.58);
+  --blue-300: oklch(61.5% 0.176 260.58);
+  --blue-400: oklch(48.5% 0.173 260.58);
+  --blue-600: oklch(25.5% 0.091 260.58);
+  --checkbox-color: var(--sea-green-300);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-blue: #086ddd;
+  --color-cyan: #00bfbc;
+  --color-green: #08b94e;
+  --color-orange: #ec7500;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-red: #e93147;
+  --color-yellow: #e0ac00;
+  --gray-100: oklch(84.5% 0.01 279.29);
+  --gray-200: oklch(74.5% 0.018 279.29);
+  --gray-25: oklch(98% 0.001 279.29);
+  --gray-300: oklch(61.5% 0.028 279.29);
+  --gray-400: oklch(48.5% 0.039 279.29);
+  --gray-50: oklch(96.5% 0.002 279.29);
+  --gray-500: oklch(35.5% 0.029 279.29);
+  --gray-600: oklch(25.5% 0.021 279.29);
+  --gray-700: oklch(18% 0.014 279.29);
+  --gray-75: oklch(92% 0.004 279.29);
+  --green-300: oklch(61.5% 0.183 140.09);
+  --h1-color: var(--purple-400);
+  --h1-weight: 550;
+  --h2-color: var(--pink-300);
+  --h2-weight: 550;
+  --h3-color: var(--orange);
+  --h3-weight: 600;
+  --h4-color: var(--red);
+  --h4-weight: 650;
+  --h5-color: var(--gray-400);
+  --h5-weight: 500;
+  --h6-color: var(--gray-400);
+  --h6-weight: 600;
+  --mono-rgb-100: 0, 0, 0;
+  --orange-300: oklch(61.5% 0.17 46.85);
+  --pink-300: oklch(61.5% 0.287 324.98);
+  --purple-400: oklch(48.5% 0.213 288);
+  --red-300: oklch(61.5% 0.245 13.65);
+  --sea-green-300: oklch(61.5% 0.135 161.65);
+  --sea-green-500: oklch(35.5% 0.078 161.65);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --yellow-100: oklch(84.5% 0.174 97.11);
+  --yellow-300: oklch(61.5% 0.126 97.11);
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

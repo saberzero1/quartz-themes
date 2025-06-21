@@ -8052,7 +8052,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10315,27 +10315,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24179,16 +24179,16 @@ div.callout-icon {
 }
 
 /* .callout-icon {
-	display: none;
-	content: '';
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-right: 8px;
-	background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23a7ab93" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20h9"></path><path d="M12 4h9"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg>');
-	background-size: contain;
-	background-repeat: no-repeat;
-	vertical-align: middle;
+    display: none;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23a7ab93" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20h9"></path><path d="M12 4h9"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
 } */
 [data-callout="info"] {
   background-color: var(--orange-rgba);
@@ -24196,7 +24196,7 @@ div.callout-icon {
 }
 
 /* [data-callout="error"] {
-	background-color: var(--red-rgba);
+    background-color: var(--red-rgba);
 } */
 [data-callout="success"] {
   background-color: var(--green-rgba);
@@ -24223,35 +24223,35 @@ div.callout-icon {
 }
 
 /* .mermaid .loopLine {
-	stroke: var(--mermaid-loopline) !important;
+    stroke: var(--mermaid-loopline) !important;
 }
 
 .mermaid .loopText>tspan,
 .mermaid .entityLabel {
-	fill: var(--red) !important;
+    fill: var(--red) !important;
 }
 
 .mermaid .exclude-range {
-	fill: var(--mermaid-exclude) !important;
+    fill: var(--mermaid-exclude) !important;
 }
 
 .mermaid .sequenceNumber {
-	fill: var(--mermaid-seqnum) !important;
+    fill: var(--mermaid-seqnum) !important;
 }
 
 .mermaid .loopLine {
-	stroke: var(--mermaid-loopline) !important;
+    stroke: var(--mermaid-loopline) !important;
 }
 
 .mermaid .loopText>tspan,
 .mermaid .entityLabel {
-	fill: var(--red) !important;
+    fill: var(--red) !important;
 }
 
 .mermaid .exclude-range {
-	fill: var(--mermaid-exclude) !important;
+    fill: var(--mermaid-exclude) !important;
 }
 
 .mermaid .sequenceNumber {
-	fill: var(--mermaid-seqnum) !important;
+    fill: var(--mermaid-seqnum) !important;
 } */

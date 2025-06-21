@@ -424,12 +424,12 @@ settings:
         max: 900
         step: 100
     -
-		title: Vault Title Color
-		id: vault-name-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
+        title: Vault Title Color
+        id: vault-name-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
     -
         title: Hide Vault Title
         id: vault-title-none
@@ -930,12 +930,12 @@ settings:
         id: heading-indicator
         type: class-toggle
     -
-		title: Heading Styles
-		description: Heading styling.
-		id: ITS-Header-Styles
-		type: heading
-		level: 3
-		collapsed: false
+        title: Heading Styles
+        description: Heading styling.
+        id: ITS-Header-Styles
+        type: heading
+        level: 3
+        collapsed: false
     -
         title: Center Header With Lines
         description: Center ALL headings with lines on either side
@@ -951,11 +951,11 @@ settings:
         id: illusion
         type: class-toggle
     -
-		title: Advanced Heading Options
-		id: ITS-Advanced-Header
-		type: heading
-		level: 3
-		collapsed: true
+        title: Advanced Heading Options
+        id: ITS-Advanced-Header
+        type: heading
+        level: 3
+        collapsed: true
     -
         title: Heading Top Spacing
         description: Adjust header spacing above the header. (Will not apply in LP)
@@ -977,11 +977,11 @@ settings:
         max: 50
         step: 10
     -
-		title: Header Font
-		id: ITS-Header-Fonts
-		type: heading
-		level: 4
-		collapsed: true
+        title: Header Font
+        id: ITS-Header-Fonts
+        type: heading
+        level: 4
+        collapsed: true
     -
         title: Heading 1
         id: h1-font
@@ -1013,119 +1013,119 @@ settings:
         type: variable-text
         default: '"Calisto MT"'
     -
-		title: Header Font Size
-		id: ITS-Header-Font-Size
-		type: heading
-		level: 4
-		collapsed: true
-	-
-		title: Heading 1
-		id: h1-size
-		type: variable-number-slider
+        title: Header Font Size
+        id: ITS-Header-Font-Size
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        title: Heading 1
+        id: h1-size
+        type: variable-number-slider
         default: 34
         format: px
         min: 12
         max: 40
         step: 2
-	-
-		title: Heading 2
-		id: h2-size
-		type: variable-number-slider
+    -
+        title: Heading 2
+        id: h2-size
+        type: variable-number-slider
         default: 30
         format: px
         min: 12
         max: 40
         step: 2
-	-
-		title: Heading 3
-		id: h3-size
-		type: variable-number-slider
+    -
+        title: Heading 3
+        id: h3-size
+        type: variable-number-slider
         default: 26
         format: px
         min: 12
         max: 40
         step: 2
-	-
-		title: Heading 4
-		id: h4-size
-		type: variable-number-slider
+    -
+        title: Heading 4
+        id: h4-size
+        type: variable-number-slider
         default: 24
         format: px
         min: 12
         max: 40
         step: 2
-	-
-		title: Heading 5
-		id: h5-size
-		type: variable-number-slider
+    -
+        title: Heading 5
+        id: h5-size
+        type: variable-number-slider
         default: 20
         format: px
         min: 12
         max: 40
         step: 2
-	-
-		title: Heading 6
-		id: h6-size
-		type: variable-number-slider
+    -
+        title: Heading 6
+        id: h6-size
+        type: variable-number-slider
         default: 18
         format: px
         min: 12
         max: 40
-        step: 2	
+        step: 2    
     -
-		title: Header Colors
-		id: ITS-Header-Colors
-		type: heading
-		level: 4
-		collapsed: true
-	-
-		title: Heading 1 Color
-		id: h1-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 2 Color
-		id: h2-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 3 Color
-		id: h3-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 4 Color
-		id: h4-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 5 Color
-		id: h5-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 6 Color
-		id: h6-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
+        title: Header Colors
+        id: ITS-Header-Colors
+        type: heading
+        level: 4
+        collapsed: true
     -
-		title: Header Alignment
-		id: ITS-Header-Alignment
-		type: heading
-		level: 4
-		collapsed: true
+        title: Heading 1 Color
+        id: h1-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 2 Color
+        id: h2-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 3 Color
+        id: h3-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 4 Color
+        id: h4-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 5 Color
+        id: h5-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 6 Color
+        id: h6-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Header Alignment
+        id: ITS-Header-Alignment
+        type: heading
+        level: 4
+        collapsed: true
     -
         title: Heading 1
         id: h1-text-align
@@ -1189,9 +1189,9 @@ settings:
     -
         title: Illusion Headings Specifics
         id: ITS-illusion-headers
-		type: heading
-		level: 4
-		collapsed: true
+        type: heading
+        level: 4
+        collapsed: true
     -
         title: Illusion Heading 1
         id: illusion-h1
@@ -1217,19 +1217,19 @@ settings:
         id: illusion-h6
         type: class-toggle
     -
-		title: Advanced Heading Underlines
-		description: Specific adjustments to heading underlines.
-		id: ITS-Advanced-Header-Underlines
-		type: heading
-		level: 3
-		collapsed: true
+        title: Advanced Heading Underlines
+        description: Specific adjustments to heading underlines.
+        id: ITS-Advanced-Header-Underlines
+        type: heading
+        level: 3
+        collapsed: true
     -
-		title: Underline Height
-		description: Resize specific heading underlines heights.
-		id: ITS-Header-Underlines-Height-Specific
-		type: heading
-		level: 5
-		collapsed: true
+        title: Underline Height
+        description: Resize specific heading underlines heights.
+        id: ITS-Header-Underlines-Height-Specific
+        type: heading
+        level: 5
+        collapsed: true
     -
         title: H1 Underline Height
         id: h1-border-line-height
@@ -1285,12 +1285,12 @@ settings:
         max: 6
         step: 1
     -
-		title: Underline Width
-		description: Resize specific heading underlines widths.
-		id: ITS-Header-Underlines-Width-Specific
-		type: heading
-		level: 5
-		collapsed: true
+        title: Underline Width
+        description: Resize specific heading underlines widths.
+        id: ITS-Header-Underlines-Width-Specific
+        type: heading
+        level: 5
+        collapsed: true
     -
         title: H1 Underline Width
         id: h1-border-line-width
@@ -1346,91 +1346,91 @@ settings:
         max: 100
         step: 10
     -
-		title: Hide Underlines
-		description: Remove specific heading underlines.
-		id: ITS-Header-Underlines-Hide-Specific
-		type: heading
-		level: 5
-		collapsed: true
-	-
-		title: Hide H1 Underline
-		id: hide-header-underline-1
-		type: class-toggle
-		default: false
-	-
-		title: Hide H2 Underline
-		id: hide-header-underline-2
-		type: class-toggle
-		default: false
-	-
-		title: Hide H3 Underline
-		id: hide-header-underline-3
-		type: class-toggle
-		default: false
-	-
-		title: Hide H4 Underline
-		id: hide-header-underline-4
-		type: class-toggle
-		default: false
-	-
-		title: Hide H5 Underline
-		id: hide-header-underline-5
-		type: class-toggle
-		default: false
-	-
-		title: Hide H6 Underline
-		id: hide-header-underline-6
-		type: class-toggle
-		default: false
+        title: Hide Underlines
+        description: Remove specific heading underlines.
+        id: ITS-Header-Underlines-Hide-Specific
+        type: heading
+        level: 5
+        collapsed: true
     -
-		title: Underline Colors
-		description: Change colors for specific heading underlines.
-		id: ITS-Header-Underlines-Colors-Specific
-		type: heading
-		level: 5
-		collapsed: true
+        title: Hide H1 Underline
+        id: hide-header-underline-1
+        type: class-toggle
+        default: false
     -
-		title: Heading 1 Line Color
-		id: h1-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#912e2e'
-		default-light: '#bb5555'
-	-
-		title: Heading 2 Line Color
-		id: h2-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#c14343'
-		default-light: '#c14343'
-	-
-		title: Heading 3 Line Color
-		id: h3-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#bf5e5e'
-		default-light: '#ce6d6d'
-	-
-		title: Heading 4 Line Color
-		id: h4-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#61afef'
-		default-light: '#5599d0'
-	-
-		title: Heading 5 Line Color
-		id: h5-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#2f3b4d'
-		default-light: '#b5c2d8'
-	-
-		title: Heading 6 Line Color
-		id: h6-border-line-color
-		type: variable-themed-color
-		format: hex
-		default-dark: '#2a2e35'
-		default-light: '#ccd6eb'
+        title: Hide H2 Underline
+        id: hide-header-underline-2
+        type: class-toggle
+        default: false
+    -
+        title: Hide H3 Underline
+        id: hide-header-underline-3
+        type: class-toggle
+        default: false
+    -
+        title: Hide H4 Underline
+        id: hide-header-underline-4
+        type: class-toggle
+        default: false
+    -
+        title: Hide H5 Underline
+        id: hide-header-underline-5
+        type: class-toggle
+        default: false
+    -
+        title: Hide H6 Underline
+        id: hide-header-underline-6
+        type: class-toggle
+        default: false
+    -
+        title: Underline Colors
+        description: Change colors for specific heading underlines.
+        id: ITS-Header-Underlines-Colors-Specific
+        type: heading
+        level: 5
+        collapsed: true
+    -
+        title: Heading 1 Line Color
+        id: h1-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#912e2e'
+        default-light: '#bb5555'
+    -
+        title: Heading 2 Line Color
+        id: h2-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#c14343'
+        default-light: '#c14343'
+    -
+        title: Heading 3 Line Color
+        id: h3-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#bf5e5e'
+        default-light: '#ce6d6d'
+    -
+        title: Heading 4 Line Color
+        id: h4-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#61afef'
+        default-light: '#5599d0'
+    -
+        title: Heading 5 Line Color
+        id: h5-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#2f3b4d'
+        default-light: '#b5c2d8'
+    -
+        title: Heading 6 Line Color
+        id: h6-border-line-color
+        type: variable-themed-color
+        format: hex
+        default-dark: '#2a2e35'
+        default-light: '#ccd6eb'
     -
         title: Links
         id: ITS-Links
@@ -1513,30 +1513,30 @@ settings:
         id: bullet-font
         type: variable-text
         default: '"ITS"'
-	-
-		title: List Line Thickness
-		id: indentation-guide-width
-		type: variable-number-slider
+    -
+        title: List Line Thickness
+        id: indentation-guide-width
+        type: variable-number-slider
         default: 2
         format: px
         min: 0
         max: 3
         step: 1
-	-
-		title: List Root Spacing
-		id: root-list-spacing
+    -
+        title: List Root Spacing
+        id: root-list-spacing
         description: Adjust list margins (ul, ol)
-		type: variable-number-slider
+        type: variable-number-slider
         default: 10
         format: px
         min: 1
         max: 16
         step: 1
-	-
-		title: List Spacing
+    -
+        title: List Spacing
         description: Adjust list item spacing (li)
-		id: list-spacing
-		type: variable-number-slider
+        id: list-spacing
+        type: variable-number-slider
         default: 1
         format: px
         min: 1
@@ -2374,17 +2374,17 @@ settings:
         description: HTML <progress> value color
         id: progress
         type: variable-themed-color
-		format: hex
-		default-dark: '#863737'
-		default-light: '#912e2e'
+        format: hex
+        default-dark: '#863737'
+        default-light: '#912e2e'
     -
         title: Progress Bar Background Color
         description: HTML <progress> value color
         id: progress
         type: variable-themed-color
-		format: hex
-		default-dark: '#252c36'
-		default-light: '#e1e9f6'
+        format: hex
+        default-dark: '#252c36'
+        default-light: '#e1e9f6'
     -
         title: Tables
         id: ITS-Colors-Tables
@@ -2394,37 +2394,37 @@ settings:
         title: Table Header BG Color
         id: th
         type: variable-themed-color
-		format: hex
-		default-dark: '#652121'
-		default-light: '#c14343'
+        format: hex
+        default-dark: '#652121'
+        default-light: '#c14343'
     -
         title: Table Header Text Color
         id: th-text
         type: variable-themed-color
-		format: hex
-		default-dark: '#e5ebee'
-		default-light: '#e5ebee'
+        format: hex
+        default-dark: '#e5ebee'
+        default-light: '#e5ebee'
     -
         title: Table Header Text Edit Color
         id: table-header-text-color
         type: variable-themed-color
-		format: hex
+        format: hex
         default-dark: '#e06c75'
-        default-light: '#a35158'	
+        default-light: '#a35158'    
     -
-		title: Table Alt Row Colors
-		description: Alternating row/column color for table.
-		id: td
-		type: variable-themed-color
+        title: Table Alt Row Colors
+        description: Alternating row/column color for table.
+        id: td
+        type: variable-themed-color
         format: rgb
         opacity: true
         default-dark: '#06080c60'
-		default-light: '#d0ddef62'
+        default-light: '#d0ddef62'
     -
         title: Table Border Line Colors
         id: table-border-color
         type: variable-themed-color
-		format: hex
+        format: hex
         default-dark: '#3c5274'
         default-light: '#d6deea'
     -
@@ -2447,13 +2447,13 @@ settings:
         default-dark: '#6e7e89'
         default-light: '#8996a0'
     -
-		title: Aside Background Color
-		id: aside-bg
-		description: Aside background color and dark theme setting alternating setting item color.
-		type: variable-themed-color
-		format: hex
-		default-dark: '#11151d'
-		default-light: '#f1f5ff'
+        title: Aside Background Color
+        id: aside-bg
+        description: Aside background color and dark theme setting alternating setting item color.
+        type: variable-themed-color
+        format: hex
+        default-dark: '#11151d'
+        default-light: '#f1f5ff'
     -
         title: Other
         id: Other-Colors
@@ -2528,122 +2528,122 @@ settings:
         default-dark: '#283846'
         default-light: '#ccd6eb'
     -
-		title: Outline
-		id: outline
-		type: variable-themed-color
-		format: hex
-		default-dark: '#cfd7dd'
-		default-light: '#912e2e'
+        title: Outline
+        id: outline
+        type: variable-themed-color
+        format: hex
+        default-dark: '#cfd7dd'
+        default-light: '#912e2e'
     -
-		title: Foreground
-		description: Active file selected title color, Graph Node Color, Kanban Plugin Button color.
-		id: fg
-		type: variable-themed-color
-		format: hex
-		default-dark: '#cfd7dd'
-		default-light: '#912e2e'
+        title: Foreground
+        description: Active file selected title color, Graph Node Color, Kanban Plugin Button color.
+        id: fg
+        type: variable-themed-color
+        format: hex
+        default-dark: '#cfd7dd'
+        default-light: '#912e2e'
     -
-		title: Rainbows
-		id: ITS-Rainbows
-		type: heading
-		level: 2
-		collapsed: true
+        title: Rainbows
+        id: ITS-Rainbows
+        type: heading
+        level: 2
+        collapsed: true
     -
-		title: Theme Rainbows
+        title: Theme Rainbows
         description: Illusion Header BG, Style Settings Colors, List Lines
-		id: ITS-Rainbows-Theme
-		type: heading
-		level: 3
-		collapsed: true
-	-
-		title: Theme Rainbow 1
-		id: theme-rainbow-1
-		type: variable-themed-color
-		format: hex
-		default-dark: '#7c2929'
-		default-light: '#bb5555'
-	-
-		title: Theme Rainbow 2
-		id: theme-rainbow-2
-		type: variable-themed-color
-		format: hex
-		default-dark: '#652121'
-		default-light: '#a53f3f'
-	-
-		title: Theme Rainbow 3
-		id: theme-rainbow-3
-		type: variable-themed-color
-		format: hex
-		default-dark: '#471d1d'
-		default-light: '#862c2c'
-	-
-		title: Theme Rainbow 4
-		id: theme-rainbow-4
-		type: variable-themed-color
-		format: hex
-		default-dark: '#381919'
-		default-light: '#662828'
-	-
-		title: Theme Rainbow 5
-		id: theme-rainbow-5
-		type: variable-themed-color
-		format: hex
-		default-dark: '#424c61'
-		default-light: '#697795'
-	-
-		title: Theme Rainbow 6
-		id: theme-rainbow-6
-		type: variable-themed-color
-		format: hex
-		default-dark: '#2e333d'
-		default-light: '#a4aec2'
+        id: ITS-Rainbows-Theme
+        type: heading
+        level: 3
+        collapsed: true
     -
-		title: Rainbow
-		id: ITS-Rainbows-Rainbow
-		type: heading
-		level: 3
-	-
-		title: Rainbow 1
-		id: theme-rainbow-1
-		type: variable-themed-color
-		format: hex
-		default-dark: '#b03a3a'
-		default-light: '#dd3c3c'
-	-
-		title: Rainbow 2
-		id: theme-rainbow-2
-		type: variable-themed-color
-		format: hex
-		default-dark: '#d59929'
-		default-light: '#f1ab27'
-	-
-		title: Rainbow 3
-		id: theme-rainbow-3
-		type: variable-themed-color
-		format: hex
-		default-dark: '#207a20'
-		default-light: '#118811'
-	-
-		title: Rainbow 4
-		id: theme-rainbow-4
-		type: variable-themed-color
-		format: hex
-		default-dark: '#3232c5'
-		default-light: '#3333cc'
-	-
-		title: Rainbow 5
-		id: theme-rainbow-5
-		type: variable-themed-color
-		format: hex
-		default-dark: '#7f307f'
-		default-light: '#a824a8'
-	-
-		title: Rainbow 6
-		id: theme-rainbow-6
-		type: variable-themed-color
-		format: hex
-		default-dark: '#dd4794'
-		default-light: '#e83b94'
+        title: Theme Rainbow 1
+        id: theme-rainbow-1
+        type: variable-themed-color
+        format: hex
+        default-dark: '#7c2929'
+        default-light: '#bb5555'
+    -
+        title: Theme Rainbow 2
+        id: theme-rainbow-2
+        type: variable-themed-color
+        format: hex
+        default-dark: '#652121'
+        default-light: '#a53f3f'
+    -
+        title: Theme Rainbow 3
+        id: theme-rainbow-3
+        type: variable-themed-color
+        format: hex
+        default-dark: '#471d1d'
+        default-light: '#862c2c'
+    -
+        title: Theme Rainbow 4
+        id: theme-rainbow-4
+        type: variable-themed-color
+        format: hex
+        default-dark: '#381919'
+        default-light: '#662828'
+    -
+        title: Theme Rainbow 5
+        id: theme-rainbow-5
+        type: variable-themed-color
+        format: hex
+        default-dark: '#424c61'
+        default-light: '#697795'
+    -
+        title: Theme Rainbow 6
+        id: theme-rainbow-6
+        type: variable-themed-color
+        format: hex
+        default-dark: '#2e333d'
+        default-light: '#a4aec2'
+    -
+        title: Rainbow
+        id: ITS-Rainbows-Rainbow
+        type: heading
+        level: 3
+    -
+        title: Rainbow 1
+        id: theme-rainbow-1
+        type: variable-themed-color
+        format: hex
+        default-dark: '#b03a3a'
+        default-light: '#dd3c3c'
+    -
+        title: Rainbow 2
+        id: theme-rainbow-2
+        type: variable-themed-color
+        format: hex
+        default-dark: '#d59929'
+        default-light: '#f1ab27'
+    -
+        title: Rainbow 3
+        id: theme-rainbow-3
+        type: variable-themed-color
+        format: hex
+        default-dark: '#207a20'
+        default-light: '#118811'
+    -
+        title: Rainbow 4
+        id: theme-rainbow-4
+        type: variable-themed-color
+        format: hex
+        default-dark: '#3232c5'
+        default-light: '#3333cc'
+    -
+        title: Rainbow 5
+        id: theme-rainbow-5
+        type: variable-themed-color
+        format: hex
+        default-dark: '#7f307f'
+        default-light: '#a824a8'
+    -
+        title: Rainbow 6
+        id: theme-rainbow-6
+        type: variable-themed-color
+        format: hex
+        default-dark: '#dd4794'
+        default-light: '#e83b94'
     -
         title: Highlights
         id: RGBA
@@ -6113,8 +6113,8 @@ body:is(.theme-dark, .theme-light) {
 .obsidian-icon-folder-icon + .nav-file-title-content,
 .iconize-icon.iconize-icon.iconize-icon + .nav-folder-title-content,
 .iconize-icon.iconize-icon.iconize-icon + .nav-file-title-content {
-  --folder-icon: ;
-  --file-icon: ;
+  --folder-icon: "";
+  --file-icon: "";
 }
 .obsidian-icon-folder-icon + .nav-folder-title-content::before,
 .obsidian-icon-folder-icon + .nav-file-title-content::before,
@@ -13009,7 +13009,7 @@ iframe {
   --link-external-color-hover: var(--soft-text);
   --highlight: var(--td) !important;
   --text-highlight-bg: var(--highlight);
-  --hr-icon-symbol:             !important;
+  --hr-icon-symbol: "" !important;
   --header-text-align: center;
   --h1-text-align: var(--header-text-align);
   --h2-text-align: var(--header-text-align);
@@ -14210,8 +14210,8 @@ body {
 
 .hr-no-icon.hr-no-icon div,
 .hr-tog.hr-tog div {
-  --hr-icon-symbol: ;
-  --hr-image: ;
+  --hr-icon-symbol: "";
+  --hr-image: "";
 }
 
 .hr-center-vertically .hr {
@@ -14723,7 +14723,6 @@ body.background-image .popover.popover .markdown-preview-section {
   --vault-name-font-size: 25px;
   --hr-icon-symbol: "";
   --hr-icon-font: var(--its);
-  --hr-icon-symbol: ;
   --hr-image-height: 5px;
   --hr-image-width: 100%;
   --hr-thickness: 0;
@@ -15015,7 +15014,6 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
   --hr-image: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1000 204' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,1.7053e-13,-398.169)'%3E%3Crect id='Artboard1' x='-0' y='398.169' width='1000' height='203.661' style='fill:none;'/%3E%3CclipPath id='_clip1'%3E%3Crect id='Artboard11' serif:id='Artboard1' x='-0' y='398.169' width='1000' height='203.661'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cg transform='matrix(4.31034,0,0,4.31034,-267.917,-1094.41)'%3E%3Cpath d='M178.389,380.983C175.751,387.924 169.433,393.494 159,393.565C127.289,393.78 136.335,361.89 118,362C108.448,361.996 110.806,374.866 115,377C114.833,377.167 100.762,372.819 105,357C76.617,370.354 62.389,358 62.389,358C62.389,358 80.399,363.885 90.791,357.333C109.271,345.683 133.119,337.401 142,364C147.001,347.144 172.305,357.468 163,370.565C163.721,364.587 151.808,358.708 151,370.565C150.447,378.68 162.397,385.825 170.144,377.076C176.411,369.999 170.344,356.114 162,354C170.327,353.643 175.921,358.556 178.389,365.031C180.857,358.556 186.45,353.643 194.777,354C186.434,356.114 180.367,369.999 186.634,377.076C194.38,385.825 206.33,378.68 205.777,370.565C204.97,358.708 193.056,364.587 193.777,370.565C184.472,357.468 209.776,347.144 214.777,364C223.658,337.401 247.507,345.683 265.986,357.333C276.379,363.885 294.389,358 294.389,358C294.389,358 280.16,370.354 251.777,357C256.015,372.819 241.944,377.167 241.777,377C245.971,374.866 248.329,361.996 238.777,362C220.443,361.89 229.488,393.78 197.777,393.565C187.344,393.494 181.027,387.924 178.389,380.983Z' style='fill:rgb(139,38,45);'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   --hr-image-height: 16px;
   --hr-thickness: 2px;
-  --hr-icon-symbol: ;
   --highlight: rgba(191, 0, 0, 0.2);
   --hvr: rgba(191, 0, 0, 0.2);
   --hvr-active: #e5800040;
@@ -15189,9 +15187,9 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
   --font: var(--font-default);
   --background-modifier-hover: var(--td);
   --tag-color: var(--accent2-lite);
-  --hr-icon-symbol: ;
-  --file-icon: ;
-  --folder-icon: ;
+  --hr-icon-symbol: "";
+  --file-icon: "";
+  --folder-icon: "";
   --header-border-line-height: 0;
   --nav-item-border-width: 2px;
   --nav-item-border-color: var(--text);
@@ -15213,7 +15211,7 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
   --side-bar: var(--note);
   --note: #1a1e24;
   --note-rgb: 26, 30, 36;
-  --accent-color: ;
+  --accent-color: "";
   --accent: #546078;
   --lite-accent: #aab3ca;
   --dark-accent: #394151;
@@ -15468,10 +15466,10 @@ body:not(.wotc-beyond) .wotc-beyond:is(.markdown-source-view, .markdown-preview-
   --folder-open: var(--text);
   --theme-rainbow-1: var(--headers);
   --theme-rainbow-2: var(--code-text);
-  --theme-rainbow-3: ;
-  --theme-rainbow-4: ;
-  --theme-rainbow-5: ;
-  --theme-rainbow-6: ;
+  --theme-rainbow-3: "";
+  --theme-rainbow-4: "";
+  --theme-rainbow-5: "";
+  --theme-rainbow-6: "";
 }
 
 .notion.notion {

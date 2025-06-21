@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --border-900: hsl(219, 10%, 29%);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -48,9 +49,56 @@
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: var(--color-highlight-bg);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --border-900: hsl(219, 10%, 29%);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(230, 8%, 10%);
+  --color-base-10: hsl(230, 9%, 13%);
+  --color-base-100: hsl(224, 37%, 80%);
+  --color-base-20: hsl(231, 9%, 15%);
+  --color-base-25: hsl(225, 12%, 20%);
+  --color-base-30: hsl(225, 18%, 25%);
+  --color-base-35: hsl(225, 11%, 36%);
+  --color-base-40: hsl(225, 14%, 55%);
+  --color-base-50: hsl(226, 10%, 47%);
+  --color-base-70: hsl(224, 26%, 70%);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-gray-40: hsl(224, 17%, 68%);
+  --color-green: #44cf6e;
+  --color-highlight-bg: rgba(255, 252, 59, 0.08);
+  --color-orange: #e9973f;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-red: #fb464c;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-300: rgba(0, 0, 0, 0.15);
+  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448),
+    0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6), 0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852),
+    0px 45px 50px -52px rgba(0, 0, 0, 1);
+  --shadow-s: var(--shadow-small);
+  --shadow-small: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: var(--color-highlight-bg);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -421,10 +469,54 @@ html {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: var(--color-highlight-bg);
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --border-900: hsl(219, 10%, 29%);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(230, 8%, 10%);
+  --color-base-10: hsl(230, 9%, 13%);
+  --color-base-100: hsl(224, 37%, 80%);
+  --color-base-20: hsl(231, 9%, 15%);
+  --color-base-25: hsl(225, 12%, 20%);
+  --color-base-30: hsl(225, 18%, 25%);
+  --color-base-35: hsl(225, 11%, 36%);
+  --color-base-40: hsl(225, 14%, 55%);
+  --color-base-50: hsl(226, 10%, 47%);
+  --color-base-70: hsl(224, 26%, 70%);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-gray-40: hsl(224, 17%, 68%);
+  --color-green: #44cf6e;
+  --color-highlight-bg: rgba(255, 252, 59, 0.08);
+  --color-orange: #e9973f;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-red: #fb464c;
+  --color-yellow: #e0de71;
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-300: rgba(0, 0, 0, 0.15);
+  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448),
+    0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6), 0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852),
+    0px 45px 50px -52px rgba(0, 0, 0, 1);
+  --shadow-s: var(--shadow-small);
+  --shadow-small: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: var(--color-highlight-bg);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

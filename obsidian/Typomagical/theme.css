@@ -4,57 +4,57 @@
 name: Announcements
 id: typomagical-title
 settings:
-	-
-		id: ann-font-weight-removal
-		title: "2025 June 6: Font weights removed"
-		description: "Most extra weights for Spectral and Alegreya Sans have been removed, leaving 400 and 700 for Spectral, 400 and 800 for Alegreya Sans. The slider setting remains for advanced users who are able to install the fonts manually."
-		type: info-text
-		markdown: true
-	-
-		id: ann-blockquotes-live-preview
-		title: "2025 February 2: Blockquotes now work in Live Preview"
-		description: "The 'big with top border' and 'neuomorphic soft shadows' options now work in Live Preview"
-		type: info-text
-		markdown: true
-	-
-		id: ann-source-mode-heading-size
-		title: "2024 July 4: Source mode text size"
-		description: "In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset"
-		type: info-text
-		markdown: true
-	-
-		id: body-weights
-		title: "2024 March 6: Body weights"
-		description: "Since Obsidian allows Google fonts, I've reintroduced all font weights for Spectral and Alegreya Sans. I've also expanded the weight slider from 200–800 to 200–900, so that Alegreya Sans users can use the **Black** 900 weight available."
-		type: info-text
-		markdown: true
-	-
-		id: amiri-returned
-		title: "2024 March 4: Amiri returned"
-		description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
-		type: info-text
-		markdown: true
-	-
-		id: no-network-update
-		title: "2024 February 25 : Typomagical now works 100% offline"
-		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
+    -
+        id: ann-font-weight-removal
+        title: "2025 June 6: Font weights removed"
+        description: "Most extra weights for Spectral and Alegreya Sans have been removed, leaving 400 and 700 for Spectral, 400 and 800 for Alegreya Sans. The slider setting remains for advanced users who are able to install the fonts manually."
+        type: info-text
+        markdown: true
+    -
+        id: ann-blockquotes-live-preview
+        title: "2025 February 2: Blockquotes now work in Live Preview"
+        description: "The 'big with top border' and 'neuomorphic soft shadows' options now work in Live Preview"
+        type: info-text
+        markdown: true
+    -
+        id: ann-source-mode-heading-size
+        title: "2024 July 4: Source mode text size"
+        description: "In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset"
+        type: info-text
+        markdown: true
+    -
+        id: body-weights
+        title: "2024 March 6: Body weights"
+        description: "Since Obsidian allows Google fonts, I've reintroduced all font weights for Spectral and Alegreya Sans. I've also expanded the weight slider from 200–800 to 200–900, so that Alegreya Sans users can use the **Black** 900 weight available."
+        type: info-text
+        markdown: true
+    -
+        id: amiri-returned
+        title: "2024 March 4: Amiri returned"
+        description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
+        type: info-text
+        markdown: true
+    -
+        id: no-network-update
+        title: "2024 February 25 : Typomagical now works 100% offline"
+        description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
 
-		- Amiri font for titles
+        - Amiri font for titles
 
-		- Body text weight setting, only 400 and 700 will work
+        - Body text weight setting, only 400 and 700 will work
 
 
-		If you dearly miss these, please contact me by filing a Github issue.
-		"
-		type: info-text
-		markdown: true
+        If you dearly miss these, please contact me by filing a Github issue.
+        "
+        type: info-text
+        markdown: true
 */
 :root {
   /*
-  	Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
-  	Major Second scale of 1.125 seems comfortable on my phone
-  	Minor Third scale of 1.2 seems good on desktop
-  	window width where things start to wrap when Readable line length setting is turned on seems to be around 782px
+      Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
+      Major Second scale of 1.125 seems comfortable on my phone
+      Minor Third scale of 1.2 seems good on desktop
+      window width where things start to wrap when Readable line length setting is turned on seems to be around 782px
   */
   --h6-size: clamp(1.125em, calc(1rem + 3vw), 1.2em);
   --h5-size: clamp(1.266em, calc(1rem + 3vw), 1.44em);
@@ -708,105 +708,105 @@ h6 {
 name: Typomagical Headings
 id: typomagical-title
 settings:
-	-
-		id: font-title
-		title: Title font
-		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
-		type: variable-select
-		default: Playfair Display
-		options:
-				- Amiri
-				- Bitter
-				- Playfair Display
-	-
-		id: title-weight
-		title: Title weight
-		description: The boldness of H1 text. Amiri only has 400 and 700 available as I don't personally use it. Please file a Github issue if you require more weights.
-		type: variable-number-slider
-		default: 650
-		min: 100
-		max: 900
-		step: 25
-	-
-		id: alignment-title
-		title: Title alignment
-		description: The horizontal alignment
-		type: class-select
-		default: align-title-center
-		options:
-			-
-				label: Left
-				value: align-title-left
-			-
-				label: Centered
-				value: align-title-center
-	-
-		id: title-gradient
-		title: Title gradient
-		description: Apply a vertical gradient to titles
-		type: class-select
-		allowEmpty: false
-		default: ss-title-solid
-		options:
-			-
-				label: No gradient
-				value: ss-title-solid
-			-
-				label: Vertical gradient
-				value: ss-title-gradient
-	-
-		id: heading-weight
-		title: Heading weight
-		description: The boldness of headings. I recommend choosing something different from your Title weight, and Body weight
-		type: variable-number-slider
-		default: 600
-		min: 200
-		max: 800
-		step: 100
-	-
-		id: text-scale
-		title: Heading scale
-		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: 1.00 No scaling
-				value: type-scale-none
-			-
-				label: 1.067 Minor Second
-				value: type-scale-minor-second
-			-
-				label: 1.125 Major Second
-				value: type-scale-major-second
-			-
-				label: 1.20 Minor Third
-				value: type-scale-minor-third
-			-
-				label: 1.25 Major Third
-				value: type-scale-major-third
-	-
-		id: source-mode-headings-regular
-		title: Source mode heading size reset
-		description: In source mode, by default Typomagical will set headings to be the same size as other text. Turn this on to go back to Obsidian's default behaviour.
-		type: class-toggle
-	-
-		id: line-height-headings
-		title: Heading line height
-		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
-		type: variable-number-slider
-		default: 1.2
-		min: 1.00
-		max: 2.00
-		step: 0.05
-	-
-		id: heading-ligatures
-		title: Heading ligatures
-		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-		type: class-toggle
-		default: true
-	*/
+    -
+        id: font-title
+        title: Title font
+        description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
+        type: variable-select
+        default: Playfair Display
+        options:
+                - Amiri
+                - Bitter
+                - Playfair Display
+    -
+        id: title-weight
+        title: Title weight
+        description: The boldness of H1 text. Amiri only has 400 and 700 available as I don't personally use it. Please file a Github issue if you require more weights.
+        type: variable-number-slider
+        default: 650
+        min: 100
+        max: 900
+        step: 25
+    -
+        id: alignment-title
+        title: Title alignment
+        description: The horizontal alignment
+        type: class-select
+        default: align-title-center
+        options:
+            -
+                label: Left
+                value: align-title-left
+            -
+                label: Centered
+                value: align-title-center
+    -
+        id: title-gradient
+        title: Title gradient
+        description: Apply a vertical gradient to titles
+        type: class-select
+        allowEmpty: false
+        default: ss-title-solid
+        options:
+            -
+                label: No gradient
+                value: ss-title-solid
+            -
+                label: Vertical gradient
+                value: ss-title-gradient
+    -
+        id: heading-weight
+        title: Heading weight
+        description: The boldness of headings. I recommend choosing something different from your Title weight, and Body weight
+        type: variable-number-slider
+        default: 600
+        min: 200
+        max: 800
+        step: 100
+    -
+        id: text-scale
+        title: Heading scale
+        description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
+        type: class-select
+        allowEmpty: true
+        default: none
+        options:
+            -
+                label: 1.00 No scaling
+                value: type-scale-none
+            -
+                label: 1.067 Minor Second
+                value: type-scale-minor-second
+            -
+                label: 1.125 Major Second
+                value: type-scale-major-second
+            -
+                label: 1.20 Minor Third
+                value: type-scale-minor-third
+            -
+                label: 1.25 Major Third
+                value: type-scale-major-third
+    -
+        id: source-mode-headings-regular
+        title: Source mode heading size reset
+        description: In source mode, by default Typomagical will set headings to be the same size as other text. Turn this on to go back to Obsidian's default behaviour.
+        type: class-toggle
+    -
+        id: line-height-headings
+        title: Heading line height
+        description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
+        type: variable-number-slider
+        default: 1.2
+        min: 1.00
+        max: 2.00
+        step: 0.05
+    -
+        id: heading-ligatures
+        title: Heading ligatures
+        description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+        type: class-toggle
+        default: true
+    */
 .theme-light {
   --title-gradient-top: var(--link-color);
   --title-gradient-bottom: color-mix(in hsl, var(--link-color), black);
@@ -926,16 +926,16 @@ body:not(.source-mode-headings-regular)
 name: Typomagical Images
 id: typomagical-images
 settings:
-	-
-		id: ss-image-caption
-		title: Image captions
-		description: Show captions underneath images using ![filename.jpg|caption]. Does not work for ![](url.jpg).
-		type: class-toggle
-	-
-		id: ss-zoom-off
-		title: Disable image zoom
-		description: Disable click+hold to zoom on images
-		type: class-toggle
+    -
+        id: ss-image-caption
+        title: Image captions
+        description: Show captions underneath images using ![filename.jpg|caption]. Does not work for ![](url.jpg).
+        type: class-toggle
+    -
+        id: ss-zoom-off
+        title: Disable image zoom
+        description: Disable click+hold to zoom on images
+        type: class-toggle
 */
 .ss-image-caption
   .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after,
@@ -1125,12 +1125,12 @@ body {
 }
 
 /*
-	Blockquotes
-	>
-	Official variables from app.css:
-	--blockquote-font-style: normal;
-	--blockquote-color: inherit;
-	--blockquote-background-color: transparent;
+    Blockquotes
+    >
+    Official variables from app.css:
+    --blockquote-font-style: normal;
+    --blockquote-color: inherit;
+    --blockquote-background-color: transparent;
 */
 body {
   --blockquote-border-thickness: 1px;
@@ -1804,156 +1804,156 @@ b,
 name: Typomagical Text
 id: typomagical-text
 settings:
-	-
-		id: body-ligatures
-		title: Text Ligatures
-		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-		type: class-toggle
-	-
-		id: mjx-font
-		title: MathJax font
-		description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
-		type: class-select
-		default: mathjax-font-default
-		options:
-			-
-				label: MJXZERO, MJXTEX (Obsidian Default)
-				value: mathjax-font-default
-			-
-				label: Spectral
-				value: mathjax-font-typomagical
-	-
-		id: ordered-lists
-		title: List numbers
-		description: Whether numerical lists should have circled, or ordinary numbers
-		type: class-select
-		default: circled-ol
-		options:
-			-
-				label: Circled
-				value: circled-ol
-			-
-				label: Ordinary
-				value: ordinary-ol
-	-
-		id: font-default
-		title: Body font
-		description: The font for body
-		type: variable-select
-		default: Spectral
-		options:
-			-
-				label: Spectral
-				value: Spectral
-			-
-				label: Alegreya Sans
-				value: 'Alegreya Sans'
-	-
-		id: body-weight
-		title: Body text weight
-		description: "The boldness of body text. 900 is only available for Alegreya Sans."
-		type: variable-number-slider
-		default: 400
-		min: 200
-		max: 900
-		step: 100
-	-
-		id: bold-weight
-		title: Bold text weight
-		description: The boldness of **bold** text. 900 is only available for Alegreya Sans.
-		type: variable-number-slider
-		default: 600
-		min: 200
-		max: 900
-		step: 100
-	-
-		id: line-height-body
-		title: Body line height
-		description: Height of each line in a multi-line passage. Obsidian default is 1.5.
-		type: variable-number-slider
-		default: 1.45
-		min: 1.00
-		max: 2.00
-		step: 0.05
-	-
-		id: link-font
-		title: Link font
-		description: The font for links
-		type: class-select
-		default: ss-links-sc
-		options:
-			-
-				label: Alegreya SC
-				value: ss-links-sc
-			-
-				label: Spectral (Serif)
-				value: ss-links-spectral
-			-
-				label: Alegreya Sans SC
-				value: ss-links-sans
-	-
-		id: blockquote
-		title: Blockquotes
-		description: How blockquotes (not callouts) should look
-		type: class-select
-		default: blockquote-plain
-		options:
-			-
-				label: Obsidian default
-				value: blockquote-plain
-			-
-				label: Big with top border
-				value: blockquote-bustle
-			-
-				label: Neuomorphic soft shadows
-				value: blockquote-neuomorphic
-	-
-		id: callout-style
-		title: Callout style
-		type: class-select
-		default: callout-border-gradient
-		options:
-			-
-				label: Obsidian default
-				value: callout-default
-			-
-				label: Icon only
-				value: callout-icon-only
-			-
-				label: Icon and gradient border
-				value: callout-border-gradient
-	-
-		id: callout-quote-style
-		title: Quote Callout style
-		description: "Change [!quote] callouts to magazine style. To use, place the name after: `> [!quote] Arnold Schwarzenegger`. Does not work well with collapsible quote callouts."
-		type: class-toggle
+    -
+        id: body-ligatures
+        title: Text Ligatures
+        description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+        type: class-toggle
+    -
+        id: mjx-font
+        title: MathJax font
+        description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
+        type: class-select
+        default: mathjax-font-default
+        options:
+            -
+                label: MJXZERO, MJXTEX (Obsidian Default)
+                value: mathjax-font-default
+            -
+                label: Spectral
+                value: mathjax-font-typomagical
+    -
+        id: ordered-lists
+        title: List numbers
+        description: Whether numerical lists should have circled, or ordinary numbers
+        type: class-select
+        default: circled-ol
+        options:
+            -
+                label: Circled
+                value: circled-ol
+            -
+                label: Ordinary
+                value: ordinary-ol
+    -
+        id: font-default
+        title: Body font
+        description: The font for body
+        type: variable-select
+        default: Spectral
+        options:
+            -
+                label: Spectral
+                value: Spectral
+            -
+                label: Alegreya Sans
+                value: 'Alegreya Sans'
+    -
+        id: body-weight
+        title: Body text weight
+        description: "The boldness of body text. 900 is only available for Alegreya Sans."
+        type: variable-number-slider
+        default: 400
+        min: 200
+        max: 900
+        step: 100
+    -
+        id: bold-weight
+        title: Bold text weight
+        description: The boldness of **bold** text. 900 is only available for Alegreya Sans.
+        type: variable-number-slider
+        default: 600
+        min: 200
+        max: 900
+        step: 100
+    -
+        id: line-height-body
+        title: Body line height
+        description: Height of each line in a multi-line passage. Obsidian default is 1.5.
+        type: variable-number-slider
+        default: 1.45
+        min: 1.00
+        max: 2.00
+        step: 0.05
+    -
+        id: link-font
+        title: Link font
+        description: The font for links
+        type: class-select
+        default: ss-links-sc
+        options:
+            -
+                label: Alegreya SC
+                value: ss-links-sc
+            -
+                label: Spectral (Serif)
+                value: ss-links-spectral
+            -
+                label: Alegreya Sans SC
+                value: ss-links-sans
+    -
+        id: blockquote
+        title: Blockquotes
+        description: How blockquotes (not callouts) should look
+        type: class-select
+        default: blockquote-plain
+        options:
+            -
+                label: Obsidian default
+                value: blockquote-plain
+            -
+                label: Big with top border
+                value: blockquote-bustle
+            -
+                label: Neuomorphic soft shadows
+                value: blockquote-neuomorphic
+    -
+        id: callout-style
+        title: Callout style
+        type: class-select
+        default: callout-border-gradient
+        options:
+            -
+                label: Obsidian default
+                value: callout-default
+            -
+                label: Icon only
+                value: callout-icon-only
+            -
+                label: Icon and gradient border
+                value: callout-border-gradient
+    -
+        id: callout-quote-style
+        title: Quote Callout style
+        description: "Change [!quote] callouts to magazine style. To use, place the name after: `> [!quote] Arnold Schwarzenegger`. Does not work well with collapsible quote callouts."
+        type: class-toggle
         markdown: true
-	-
-		id: alignment
-		title: Alignment
-		description: How all text is aligned
-		type: class-select
-		default: align-left
-		options:
-			-
-				label: Left
-				value: align-left
-			-
-				label: Justified
-				value: align-justified
-	-
-		id: ss-hide-external-link-icon
-		title: Hide external link icons
-		type: class-toggle
-	*/
+    -
+        id: alignment
+        title: Alignment
+        description: How all text is aligned
+        type: class-select
+        default: align-left
+        options:
+            -
+                label: Left
+                value: align-left
+            -
+                label: Justified
+                value: align-justified
+    -
+        id: ss-hide-external-link-icon
+        title: Hide external link icons
+        type: class-toggle
+    */
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
   font-family: var(--default-font);
 }
 
 /*
-	Ligatures
-	No class is needed for all-ligatures, because ligatures are enabled by default.
+    Ligatures
+    No class is needed for all-ligatures, because ligatures are enabled by default.
 */
 body {
   font-variant-ligatures: none;
@@ -1988,43 +1988,43 @@ body.css-settings-manager.body-ligatures {
 name: Typomagical Colour
 id: typomagical-colour
 settings:
-	-
-		id: theme-variant
-		title: Theme variant
-		description: Palette swaps. Don't see one you like? Let me know on https://github.com/hungsu/typomagical-obsidian/issues
-		type: class-select
-		allowEmpty: false
-		default: obsidian
-		options:
-			-
-				label: Obsidian
-				value: obsidian
-			-
-				label: Coherence (dark only)
-				value: coherence
-			-
-				label: Ficus Ruby
-				value: ficus-ruby
-			-
-				label: Vileplume
-				value: vileplume
-			-
-				label: Obsidian High Contrast
-				value: obsidian-high-contrast
-	-
-		id: background-color-enable
-		title: Allow Background color override
-		description: The next setting will work when this is on
-		type: class-toggle
-	-
-		id: ss-background-color
-		title: Background color
-		description: Overwrite background color with one of your choice
-		type: variable-color
-		opacity: false
-		format: hex
-		default: '#000000'
-	*/
+    -
+        id: theme-variant
+        title: Theme variant
+        description: Palette swaps. Don't see one you like? Let me know on https://github.com/hungsu/typomagical-obsidian/issues
+        type: class-select
+        allowEmpty: false
+        default: obsidian
+        options:
+            -
+                label: Obsidian
+                value: obsidian
+            -
+                label: Coherence (dark only)
+                value: coherence
+            -
+                label: Ficus Ruby
+                value: ficus-ruby
+            -
+                label: Vileplume
+                value: vileplume
+            -
+                label: Obsidian High Contrast
+                value: obsidian-high-contrast
+    -
+        id: background-color-enable
+        title: Allow Background color override
+        description: The next setting will work when this is on
+        type: class-toggle
+    -
+        id: ss-background-color
+        title: Background color
+        description: Overwrite background color with one of your choice
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#000000'
+    */
 .background-color-enable {
   --ss-background-color: #000000;
 }

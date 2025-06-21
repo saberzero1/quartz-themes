@@ -8240,7 +8240,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10543,27 +10543,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24259,17 +24259,17 @@ input.mobile-vault-chooser-field-input {
   transition: all 0.25s ease-in-out;
 } /*end body*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Variables (theme-light) */
+/*     Variables (theme-light) */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Variables (theme-dark) */
+/*     Variables (theme-dark) */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Editor Frame */
+/*     Editor Frame */
 /* ================================================================================================= */
-/* 	Editor Frame - Styling */
+/*     Editor Frame - Styling */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Styling  - Sizing */
+/*     Editor Frame - Styling  - Sizing */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Styling  - Colour and Layout */
+/*     Editor Frame - Styling  - Colour and Layout */
 .workspace-split.mod-vertical.mod-root .view-header-title-container {
   justify-content: left;
 }
@@ -24298,9 +24298,9 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Editor Frame - Breadcrumbs */
+/*     Editor Frame - Breadcrumbs */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Divider */
+/*     Editor Frame - Breadcrumbs  - Divider */
 .view-header-breadcrumb-separator {
   font-size: 0px;
   visibility: hidden;
@@ -24323,7 +24323,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs - normal folder */
+/*     Editor Frame - Breadcrumbs - normal folder */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent
@@ -24353,7 +24353,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - folder notes */
+/*     Editor Frame - Breadcrumbs  - folder notes */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent
@@ -24369,7 +24369,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - files */
+/*     Editor Frame - Breadcrumbs  - files */
 .view-header .view-header-title-container .view-header-title {
   background-color: var(--color-base-lowlight);
   border-radius: 4px;
@@ -24381,7 +24381,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Template Folder */
+/*     Editor Frame - Breadcrumbs  - Template Folder */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent
@@ -24397,7 +24397,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Template files */
+/*     Editor Frame - Breadcrumbs  - Template files */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent[data-path*="template"]
@@ -24413,7 +24413,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Attachments Folder */
+/*     Editor Frame - Breadcrumbs  - Attachments Folder */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent
@@ -24429,12 +24429,12 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Attachment files */
+/*     Editor Frame - Breadcrumbs  - Attachment files */
 /* Not possible :( */
 /* ================================================================================================= */
-/* 	Editor Frame - Search and Replace */
+/*     Editor Frame - Search and Replace */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Search and Replace  - Search/Replace Pane */
+/*     Editor Frame - Search and Replace  - Search/Replace Pane */
 .cm-s-obsidian .document-search-container {
   background-color: var(--color-base-verylowlight);
   margin-left: 0px;
@@ -24458,7 +24458,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Search and Replace  - Inline Highliting */
+/*     Editor Frame - Search and Replace  - Inline Highliting */
 .cm-s-obsidian span.obsidian-search-match-highlight .cm-inline-code {
   background-color: var(--color-base-highlight);
   border-radius: var(--radius-xs);
@@ -24474,19 +24474,19 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Editor Content */
+/*     Editor Content */
 /* ================================================================================================= */
-/* 	Editor Content - Blank Page */
+/*     Editor Content - Blank Page */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Blank Page - General Styling */
+/*     Editor Content - Blank Page - General Styling */
 /* ================================================================================================= */
-/* 	Editor Content - Inline-Title */
+/*     Editor Content - Inline-Title */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Inline-Title - General */
+/*     Editor Content - Inline-Title - General */
 /* ================================================================================================= */
-/* 	Editor Content - YAML */
+/*     Editor Content - YAML */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - YAML - opening/closing lines (cm-def) */
+/*     Editor Content - YAML - opening/closing lines (cm-def) */
 .cm-line .cm-def.cm-hmd-frontmatter {
   color: var(--color-base-highlight);
   font-size: 12px;
@@ -24503,7 +24503,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - YAML - key (cm-atom) */
+/*     Editor Content - YAML - key (cm-atom) */
 .cm-atom.cm-hmd-frontmatter {
   padding-left: 0px;
 }
@@ -24533,9 +24533,9 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Embed (General) */
+/*     Editor Content - Embed (General) */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (General) - Remove ugly border shadow */
+/*     Editor Content - Embed (General) - Remove ugly border shadow */
 .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
   border: none;
   border-radius: var(--radius-none);
@@ -24543,11 +24543,11 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (General) - Move edit button to left margin and stretch content to full (remaining) width*/
+/*     Editor Content - Embed (General) - Move edit button to left margin and stretch content to full (remaining) width*/
 /* ================================================================================================= */
-/* 	Editor Content - Embed (Callouts/Admonitions) */
+/*     Editor Content - Embed (Callouts/Admonitions) */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Standard Callouts */
+/*     Editor Content - Embed (Callouts/Admonitions) - Standard Callouts */
 .callout[data-callout="note"] {
   --callout-color: var(--color-blue-rgb);
   background-color: rgb(var(--color-blue-rgb-light));
@@ -24923,14 +24923,14 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Custom Metadata Callout */
+/*     Editor Content - Embed (Callouts/Admonitions) - Custom Metadata Callout */
 .callout[data-callout="metadata"] {
   --callout-color: 200, 200, 200;
   --callout-icon: package;
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Size */
+/*     Editor Content - Embed (Callouts/Admonitions) - Size */
 .cm-embed-block.cm-callout {
   color: inherit;
   width: calc(100%);
@@ -24942,7 +24942,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Styling */
+/*     Editor Content - Embed (Callouts/Admonitions) - Styling */
 .callout-icon svg.svg-icon {
   height: 16px;
   width: 16px;
@@ -24974,7 +24974,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Collapsed Size */
+/*     Editor Content - Embed (Callouts/Admonitions) - Collapsed Size */
 .callout.is-collapsible.is-collapsed {
   font-size: var(--font-ui-smaller);
   padding: 6px;
@@ -24990,36 +24990,36 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) -  Animation */
+/*     Editor Content - Embed (Callouts/Admonitions) -  Animation */
 /* ================================================================================================= */
-/* 	Editor Content - Embed (Tables) */
+/*     Editor Content - Embed (Tables) */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Tables) - Source Spacing */
+/*     Editor Content - Embed (Tables) - Source Spacing */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Tables) - Rendered Spacing */
+/*     Editor Content - Embed (Tables) - Rendered Spacing */
 .cm-embed-block.cm-table-widget.markdown-rendered {
   left: 0px;
   width: 100%;
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed -  */
+/*     Editor Content - Embed -  */
 /* ================================================================================================= */
-/* 	Editor Content - Codeblocks */
+/*     Editor Content - Codeblocks */
 .el-pre > pre {
   border: var(--divider-width) solid var(--color-base-30);
   border-radius: var(--codeblock-radius);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - sizing */
+/*     Editor Content - Codeblocks - sizing */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Scroll text in reader mode */
+/*     Editor Content - Codeblocks - Scroll text in reader mode */
 /*.HyperMD-codeblock {
-	white-space: nowrap;
+    white-space: nowrap;
 }*/
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Code Styling */
+/*     Editor Content - Codeblocks - Code Styling */
 .cm-comment.cm-hmd-codeblock {
   color: var(--code-comment);
   font-size: 0.9em;
@@ -25031,7 +25031,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - highlight opening/closing block */
+/*     Editor Content - Codeblocks - highlight opening/closing block */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin .cm-hmd-codeblock {
   color: var(--color-base-highlight);
 }
@@ -25041,7 +25041,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Borders */
+/*     Editor Content - Codeblocks - Borders */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
   border-top-color: var(--color-base-30);
   border-top-left-radius: var(--codeblock-radius);
@@ -25059,7 +25059,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Language Flair/Copy block */
+/*     Editor Content - Codeblocks - Language Flair/Copy block */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .code-block-flair {
   color: var(--color-base-highlight);
   font-size: 8px;
@@ -25073,7 +25073,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Checkbox */
+/*     Editor Content - Checkbox */
 .theme-light .checkbox-container {
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
@@ -25099,34 +25099,34 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Checkbox - Styling */
+/*     Editor Content - Checkbox - Styling */
 /* ================================================================================================= */
-/* 	Editor Content - lists */
+/*     Editor Content - lists */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - lists - General */
+/*     Editor Content - lists - General */
 .cm-indent::before {
   border-right: var(--divider-width) solid var(--color-base-verylowlight);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - lists - Bullets/list-ul */
+/*     Editor Content - lists - Bullets/list-ul */
 /* ================================================================================================= */
-/* 	Editor Content - Number list/list-ol */
+/*     Editor Content - Number list/list-ol */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Number list/list-ol - Styling */
+/*     Editor Content - Number list/list-ol - Styling */
 /* ================================================================================================= */
-/* 	Editor Content - Inline Code */
+/*     Editor Content - Inline Code */
 /* ================================================================================================= */
-/* 	Editor Content - Headings */
+/*     Editor Content - Headings */
 /* */
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Headings - Collapse */
+/*     Editor Content - Headings - Collapse */
 .cm-formatting.cm-formatting-header {
   color: var(--color-base-highlight);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Headings - Specific Headings */
+/*     Editor Content - Headings - Specific Headings */
 .HyperMD-header.HyperMD-header-1.cm-line {
   padding-top: 10px;
 }
@@ -25151,14 +25151,14 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Outgoing links  - Missing top border */
+/*     Outgoing links  - Missing top border */
 .mod-root .workspace-leaf-content[data-type="outgoing-link"] .view-content {
   border-top: none;
   top: 0px;
 }
 
 /* ================================================================================================= */
-/* 	Backlinks - Missing top border */
+/*     Backlinks - Missing top border */
 .mod-root .workspace-leaf-content[data-type="backlink"] .nav-header {
   border-top: none;
   margin-top: 0px;
@@ -25169,11 +25169,11 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Graph */
+/*     Graph */
 /* ================================================================================================= */
-/* 	Graph - Controls */
+/*     Graph - Controls */
 /* ---------------------------------------------------------------------------------- */
-/* 	Graph - Controls - Styling */
+/*     Graph - Controls - Styling */
 .workspace-leaf-content[data-type="localgraph"] .view-content {
   background-color: var(--color-base-05);
   border-top: var(--divider-width) solid var(--divider-color);
@@ -25189,15 +25189,15 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Graph - Lines */
+/*     Graph - Lines */
 /* ---------------------------------------------------------------------------------- */
-/* 	Graph - Lines - Styling */
+/*     Graph - Lines - Styling */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Scrollbars */
+/*     Scrollbars */
 /* ================================================================================================= */
-/* 	Scrollbars - Editor Panes */
+/*     Scrollbars - Editor Panes */
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Styling */
+/*     Scrollbars - Editor Panes - Styling */
 ::-webkit-scrollbar:horizontal {
   display: none;
 }
@@ -25216,7 +25216,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Inactive styling */
+/*     Scrollbars - Editor Panes - Inactive styling */
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs
   .workspace-leaf
@@ -25228,7 +25228,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Active styling */
+/*     Scrollbars - Editor Panes - Active styling */
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-active
   .workspace-leaf
@@ -25260,35 +25260,35 @@ input.mobile-vault-chooser-field-input {
 }
 
 /* ================================================================================================= */
-/* 	Scrollbars - Sidebar Leafs */
+/*     Scrollbars - Sidebar Leafs */
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Sidebar Leafs - Styling */
+/*     Scrollbars - Sidebar Leafs - Styling */
 .nav-files-container::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar-2);
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	GUI Elements */
+/*     GUI Elements */
 /* ================================================================================================= */
-/* 	GUI Elements - Ribbon */
+/*     GUI Elements - Ribbon */
 .workspace-ribbon.mod-left.is-collapsed:before {
   background-color: var(--color-base-15);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Ribbon - Icon Colours*/
+/*     GUI Elements - Ribbon - Icon Colours*/
 .workspace-ribbon .clickable-icon {
   color: var(--color-base-highlight);
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Status Bar */
+/*     GUI Elements - Status Bar */
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Status Bar - Hide */
+/*     GUI Elements - Status Bar - Hide */
 /* ================================================================================================= */
-/* 	GUI Elements - Command Pallete/Quick Switcher */
+/*     GUI Elements - Command Pallete/Quick Switcher */
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Command Pallete/Quick Switcher - Styling */
+/*     GUI Elements - Command Pallete/Quick Switcher - Styling */
 input.prompt-input:active {
   background-color: var(--color-base-15);
   border-bottom: var(--divider-width) solid var(--divider-color);
@@ -25298,18 +25298,18 @@ input.prompt-input:active {
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Input (text) */
+/*     GUI Elements - Input (text) */
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Input (text) - Styling */
+/*     GUI Elements - Input (text) - Styling */
 .cm-s-obsidian input[type="text"] {
   border: 0.5px solid var(--color-base-00);
   height: 24px;
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Button */
+/*     GUI Elements - Button */
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Button - Styling */
+/*     GUI Elements - Button - Styling */
 .cm-s-obsidian button:not(.clickable-icon) {
   background-color: var(--color-base-00);
   border: 0.5px solid var(--color-base-00);
@@ -25359,17 +25359,17 @@ button.clickable-icon {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Interface Leafs */
+/*     Interface Leafs */
 /* ================================================================================================= */
-/* 	Interface Leafs - Search */
+/*     Interface Leafs - Search */
 /* ---------------------------------------------------------------------------------- */
-/* 	Interface Leafs - Search - Search Pop out */
+/*     Interface Leafs - Search - Search Pop out */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Plugins */
+/*     Plugins */
 /* ================================================================================================= */
-/* 	Plugins - Dataview */
+/*     Plugins - Dataview */
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - Embeds */
+/*     Plugins - Dataview - Embeds */
 .block-language-dataview.node-insert-event:has(.dataview.list-view-ul) {
   background-color: rgb(255 255 255 / 1%);
   border: 1px dashed var(--color-base-verylowlight);
@@ -25393,7 +25393,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - Tables  */
+/*     Plugins - Dataview - Tables  */
 .dataview .table-view-table {
   margin: 0px;
 }
@@ -25411,16 +25411,16 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - List  */
+/*     Plugins - Dataview - List  */
 .dataview.list-view-ul {
   margin: 0px;
   padding-left: 16px;
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Templater */
+/*     Plugins - Templater */
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Templater - Remove ugly background highlights*/
+/*     Plugins - Templater - Remove ugly background highlights*/
 .cm-s-obsidian .templater-inline .cm-templater-command {
   background: var(--code-background);
 }
@@ -25430,9 +25430,9 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Folder Notes */
+/*     Plugins - Folder Notes */
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - Embeds */
+/*     Plugins - Folder Notes - Embeds */
 .markdown-source-view.mod-cm6 .cm-embed-block .block-language-folder-overview .folder-overview {
   background-color: rgb(255 255 255 / 1%);
   border: 1px dashed var(--color-base-verylowlight);
@@ -25462,7 +25462,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - File Browser Styling */
+/*     Plugins - Folder Notes - File Browser Styling */
 .tree-item.nav-folder .nav-folder-title.has-folder-note .tree-item-inner.nav-folder-title-content {
   text-decoration-color: var(--color-base-highlight);
   text-decoration-thickness: 1px;
@@ -25484,7 +25484,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - File Browser Folder Icons */
+/*     Plugins - Folder Notes - File Browser Folder Icons */
 .theme-dark
   .tree-item.nav-folder
   .nav-folder-title.has-folder-note
@@ -25500,7 +25500,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - Draw the selection box for Folders with Folder Notes */
+/*     Plugins - Folder Notes - Draw the selection box for Folders with Folder Notes */
 .nav-folder-title.has-folder-note.is-active .tree-item-inner.nav-folder-title-content {
   background-color: var(--color-base-30);
   border-radius: var(--radius-m);
@@ -25509,7 +25509,7 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Advanced Tables */
+/*     Plugins - Advanced Tables */
 .advanced-tables-buttons .nav-buttons-container {
   margin: 0px;
   padding-left: 0px;
@@ -25535,7 +25535,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Advanced Tables - Missing top border */
+/*     Plugins - Advanced Tables - Missing top border */
 .view-content:has(.advanced-tables-buttons) {
   border-top: var(--divider-width) solid var(--divider-color);
   position: relative;
@@ -25548,14 +25548,14 @@ button.clickable-icon {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Workspace Splits */
+/*     Workspace Splits */
 /* ================================================================================================= */
-/* 	Workspace Splits - Resize Handlers */
+/*     Workspace Splits - Resize Handlers */
 /* ================================================================================================= */
-/* 	Workspace Splits - General */
-/* Workspace Splits - General - Size and Position	*/
+/*     Workspace Splits - General */
+/* Workspace Splits - General - Size and Position    */
 /* ---------------------------------------------------------------------------------- */
-/* Workspace Splits - General - Colours	*/
+/* Workspace Splits - General - Colours    */
 /* override some stupid focus colour changing */
 .mod-left-split .workspace-tab-header-container {
   background-color: var(--color-base-17);
@@ -25566,7 +25566,7 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits - Left Specific */
+/*     Workspace Splits - Left Specific */
 .is-fullscreen .sidebar-toggle-button.mod-left {
   height: 31px;
   left: 0px;
@@ -25653,7 +25653,7 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits -  Middle Specific */
+/*     Workspace Splits -  Middle Specific */
 .mod-horizontal .workspace-tab-header-container {
   border-bottom: 0px;
 }
@@ -25663,7 +25663,7 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits - Right Specific */
+/*     Workspace Splits - Right Specific */
 .workspace.is-right-sidedock-open
   .workspace-split.mod-horizontal.mod-right-split
   .mod-top-right-space
@@ -25721,11 +25721,11 @@ button.clickable-icon {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Workspace Leafs */
+/*     Workspace Leafs */
 /* ================================================================================================= */
-/* 	Workspace Leafs - Files */
+/*     Workspace Leafs - Files */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Vault Name */
+/*     Workspace Leafs - Files - Vault Name */
 .tree-item.nav-folder .nav-folder-title[data-path$="/"] {
   padding-left: 8px;
 }
@@ -25747,7 +25747,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - General */
+/*     Workspace Leafs - Files - General */
 body:not(.is-grabbing) .nav-file-title {
   background: none;
   padding-bottom: 2px;
@@ -25798,9 +25798,9 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Folders specifically */
+/*     Workspace Leafs - Files - Folders specifically */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Files  specifically */
+/*     Workspace Leafs - Files - Files  specifically */
 /* Highlight active note */
 .nav-file-title.is-active .tree-item-inner.nav-file-title-content {
   background-color: var(--color-base-30);
@@ -25813,7 +25813,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Folders) */
+/*     Workspace Leafs - Files - Icons (Folders) */
 .theme-light .nav-folder .nav-folder-title-content:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-closed'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/%3E%3Cpath d='M2 10h20'/%3E%3C/svg%3E");
 }
@@ -25857,7 +25857,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Template Folder) */
+/*     Workspace Leafs - Files - Icons (Template Folder) */
 .theme-light .nav-folder .nav-folder-title[data-path*="template"] .nav-folder-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-plus'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/%3E%3Cline x1='12' x2='12' y1='10' y2='16'/%3E%3Cline x1='9' x2='15' y1='13' y2='13'/%3E%3C/svg%3E");
 }
@@ -25867,7 +25867,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Template File) */
+/*     Workspace Leafs - Files - Icons (Template File) */
 .theme-light .nav-folder .nav-file-title[data-path*="template"] .nav-file-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file-plus'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='12' x2='12' y1='18' y2='12'/%3E%3Cline x1='9' x2='15' y1='15' y2='15'/%3E%3C/svg%3E");
 }
@@ -25877,7 +25877,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Attachment Folder) */
+/*     Workspace Leafs - Files - Icons (Attachment Folder) */
 .theme-light
   .nav-folder
   .nav-folder-title[data-path*="attachment"]
@@ -25893,7 +25893,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Files) */
+/*     Workspace Leafs - Files - Icons (Files) */
 .theme-light .nav-file-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
 }
@@ -25916,7 +25916,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (non md files) */
+/*     Workspace Leafs - Files - Icons (non md files) */
 .theme-light .nav-file-title[data-path$="png"] .nav-file-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file-image'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Ccircle cx='10' cy='13' r='2'/%3E%3Cpath d='m20 17-1.09-1.09a2 2 0 0 0-2.82 0L10 22'/%3E%3C/svg%3E");
 }
@@ -26044,11 +26044,11 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Little labels for non md files */
+/*     Workspace Leafs - Files - Little labels for non md files */
 /* ================================================================================================= */
-/* 	Workspace Leafs - Search */
+/*     Workspace Leafs - Search */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Search - Missing top border */
+/*     Workspace Leafs - Search - Missing top border */
 .workspace-leaf-content:has(.search-row) {
   border-top: var(--divider-width) solid var(--divider-color);
   position: relative;
@@ -26057,9 +26057,9 @@ body:not(.is-grabbing) .nav-folder-title {
 
 /* ↑↑↑↑↑↑↑↑↑↑ Workspace Leafs: Search [ALL] */
 /* ================================================================================================= */
-/* 	Workspace Leafs - Outline */
+/*     Workspace Leafs - Outline */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Outline - Missing top border */
+/*     Workspace Leafs - Outline - Missing top border */
 .view-content:has(.outline) {
   border-top: var(--divider-width) solid var(--divider-color);
   position: relative;
@@ -26072,11 +26072,11 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ================================================================================================= */
-/* 	Workspace Leafs - Navigation Pane (Common) */
+/*     Workspace Leafs - Navigation Pane (Common) */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Navigation Pane (Common) - General */
+/*     Workspace Leafs - Navigation Pane (Common) - General */
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Navigation Pane (Common) - Icons */
+/*     Workspace Leafs - Navigation Pane (Common) - Icons */
 .clickable-icon.nav-action-button.is-active {
   background-color: var(--background-modifier-hover);
   color: var(--color-base-highlight);
@@ -26098,11 +26098,11 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	File Tabs */
+/*     File Tabs */
 /* ================================================================================================= */
-/* 	File Tabs - When at Top */
+/*     File Tabs - When at Top */
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - When at Top - Size and Position*/
+/*     File Tabs - When at Top - Size and Position*/
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner {
   flex-grow: 1;
 }
@@ -26225,13 +26225,13 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ================================================================================================= */
-/* 	File Tabs - All tabs */
+/*     File Tabs - All tabs */
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Tab Sizing */
+/*     File Tabs - All tabs - Tab Sizing */
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - get rid of after/before spacers */
+/*     File Tabs - All tabs - get rid of after/before spacers */
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - General Styling*/
+/*     File Tabs - All tabs - General Styling*/
 .mod-root .workspace-tab-header-inner-title {
   padding-left: 4px;
   text-align: left;
@@ -26331,7 +26331,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Active Styling */
+/*     File Tabs - All tabs - Active Styling */
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-top
   .workspace-tab-header-container
@@ -26395,13 +26395,13 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Hover */
+/*     File Tabs - All tabs - Hover */
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header {
   background-color: var(--color-base-40);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Close Button */
+/*     File Tabs - All tabs - Close Button */
 .horizontal-main-container
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
@@ -26441,9 +26441,9 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ================================================================================================= */
-/* 	File Tabs - Function Buttons */
+/*     File Tabs - Function Buttons */
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - Function Buttons - Tab List/new Tab*/
+/*     File Tabs - Function Buttons - Tab List/new Tab*/
 @media (hover: hover) {
   .workspace-tab-header-tab-list .clickable-icon:hover {
     background-color: var(--color-base-30);
@@ -26475,7 +26475,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Stacked Tabs */
+/*     Stacked Tabs */
 .view-header-title-container:not(.mod-at-end):after {
   background: none;
 }
@@ -26492,7 +26492,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ================================================================================================= */
-/* 	Stacked Tabs - General */
+/*     Stacked Tabs - General */
 .workspace
   .mod-root
   .workspace-tabs.mod-stacked
@@ -26554,9 +26554,9 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ================================================================================================= */
-/* 	Stacked Tabs - Function Buttons */
+/*     Stacked Tabs - Function Buttons */
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - Function Buttons - General */
+/*     Stacked Tabs - Function Buttons - General */
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked
   .workspace-tab-header-container
@@ -26680,7 +26680,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - Function Buttons - Top Specific */
+/*     Stacked Tabs - Function Buttons - Top Specific */
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked.mod-top
   .workspace-tab-header-container
@@ -26774,7 +26774,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - All tabs - Close Button */
+/*     Stacked Tabs - All tabs - Close Button */
 .workspace
   .mod-root
   .workspace-tabs.mod-stacked
@@ -27088,7 +27088,7 @@ body:not(.is-grabbing) .nav-folder-title {
 /* Image amd Embed Links */
 /*
 .cm-s-obsidian span.cm-hmd-internal-link {
-	color: #35B649ff;
+    color: #35B649ff;
 }
 
 */
@@ -27312,7 +27312,7 @@ body:not(.is-grabbing) .nav-folder-title {
 /*Caret [Colour Light]*/
 /* Tag Pane */
 /* ================================================================================================= */
-/* 	GUI Buttons */
+/*     GUI Buttons */
 .clickable-icon.search-results-result-count {
   padding-left: 8px;
   padding-right: 8px;

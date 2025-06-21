@@ -8602,12 +8602,12 @@ body.no-decor-link {
 name: Primary Theme Settings
 id: primary-theme
 settings:
-	-
-		id: readme-guide
-		type: heading
-		level: 1
-		collapsed: true
-		title: How To Use
+    -
+        id: readme-guide
+        type: heading
+        level: 1
+        collapsed: true
+        title: How To Use
     -
         id: readme-content
         type: info-text
@@ -8623,18 +8623,18 @@ settings:
         type: info-text
         markdown: true
         description: 📮 Subscribe to [Primary Theme Updates](https://primarytheme.substack.com/subscribe) to get notified of Primary updates, new features, and goodies right in your inbox!
-	-
-		id: interface
-		type: heading
-		level: 1
-		collapsed: true
-		title: Interface
     -
-		id: interface_typography
-		type: heading
-		level: 2
-		collapsed: true
-		title: Typography
+        id: interface
+        type: heading
+        level: 1
+        collapsed: true
+        title: Interface
+    -
+        id: interface_typography
+        type: heading
+        level: 2
+        collapsed: true
+        title: Typography
     -
         id: readme-content
         type: info-text
@@ -8789,31 +8789,31 @@ settings:
         title: Bold Modifier
         description: This is an addend to Normal Font Weight for certain interface components that Obsidian wanted to turn into bold.
         default: 200
-	-
-		id: interface_animations
-		type: heading
-		level: 2
-		collapsed: true
-		title: Animations and Effects
-	-
-		id: zero-tab-anim
-		type: class-toggle
-		title: Remove Jumpy Tab Animations
-	-
-		id: zero-popup-popdown
-		type: class-toggle
-		title: Remove Popup and Pop Down Animations
-	-
-		id: zero-popup-blur
-		type: class-toggle
-		title: Remove Popup Background Blur
+    -
+        id: interface_animations
+        type: heading
+        level: 2
+        collapsed: true
+        title: Animations and Effects
+    -
+        id: zero-tab-anim
+        type: class-toggle
+        title: Remove Jumpy Tab Animations
+    -
+        id: zero-popup-popdown
+        type: class-toggle
+        title: Remove Popup and Pop Down Animations
+    -
+        id: zero-popup-blur
+        type: class-toggle
+        title: Remove Popup Background Blur
         description: This removes the background blur when opening the Settings, Command Palette, Quick Switcher, and other pop up boxes.This is a good option to toggle on if you are experiencing unreconcilable buggy-ness and visual issues with Primary. You may also toggle this on if you don't prefer the background blur, or just need some performance boost (especially for bigger vaults).
-	-
-		id: interface_ribbon
-		type: heading
-		level: 2
-		collapsed: true
-		title: Ribbon
+    -
+        id: interface_ribbon
+        type: heading
+        level: 2
+        collapsed: true
+        title: Ribbon
     -
         id: ribbon_styles
         type: class-select
@@ -8876,12 +8876,12 @@ settings:
         description: Adjust the top and bottom space between your ribbon's icons.
         default: 4
         format: px
-	-
-		id: interface_editor
-		type: heading
-		level: 2
-		collapsed: true
-		title: Editor
+    -
+        id: interface_editor
+        type: heading
+        level: 2
+        collapsed: true
+        title: Editor
     -
         id: interface_editor-bg
         type: class-select
@@ -8936,9 +8936,9 @@ settings:
         default-light: 'hsla(37, 38%, 83%, 1)'
         default-dark: 'hsla(28, 22%, 18%, 1)'
     -
-		id: editor-file-header
-		type: class-select
-		title: File Header
+        id: editor-file-header
+        type: class-select
+        title: File Header
         default: file-header-default
         options:
             -
@@ -8986,9 +8986,9 @@ settings:
         default-light: 'hsla(31, 23%, 50%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
     -
-		id: active-line-highlight
-		type: class-toggle
-		title: Toggle Active Line Highlighting
+        id: active-line-highlight
+        type: class-toggle
+        title: Toggle Active Line Highlighting
         description: Adds background color to active line.
     -
         id: active-line-bg
@@ -8999,12 +8999,12 @@ settings:
         description: Only works when Active Line Highlighting is turned on.
         default-light: 'hsla(36, 38%, 98%, 1)'
         default-dark: 'hsla(33, 20%, 16%, 1)'
-	-
-		id: interface_status-bar
-		type: heading
-		level: 2
-		collapsed: true
-		title: Status Bar
+    -
+        id: interface_status-bar
+        type: heading
+        level: 2
+        collapsed: true
+        title: Status Bar
     -
         id: interface_status-bar-style
         type: class-select
@@ -9081,12 +9081,12 @@ settings:
         max: 1
         step: 0.1
         default: 1
-	-
-		id: components
-		type: heading
-		level: 1
-		collapsed: true
-		title: Components
+    -
+        id: components
+        type: heading
+        level: 1
+        collapsed: true
+        title: Components
     -
         id: comp_progress
         type: heading
@@ -9207,18 +9207,18 @@ settings:
         opacity: true
         default-light: 'hsla(197, 39%, 56%, 1)'
         default-dark: 'hsla(194, 59%, 56%, 1)'
-	-
-		id: notes-files
-		type: heading
-		level: 1
-		collapsed: true
-		title: Notes and Files
-	-
-		id: nf_header
-		type: heading
-		level: 2
-		collapsed: true
-		title: Heading
+    -
+        id: notes-files
+        type: heading
+        level: 1
+        collapsed: true
+        title: Notes and Files
+    -
+        id: nf_header
+        type: heading
+        level: 2
+        collapsed: true
+        title: Heading
     -
         id: readme-content
         type: info-text
@@ -9229,12 +9229,12 @@ settings:
         type: info-text
         markdown: true
         description: 📖 The settings are based on CSS styling capabilities.
-	-
-		id: nf_header-1
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 1
+    -
+        id: nf_header-1
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 1
     -
         id: h1-size
         type: variable-text
@@ -9362,12 +9362,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_header-2
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 2
+    -
+        id: nf_header-2
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 2
     -
         id: h2-size
         type: variable-text
@@ -9495,12 +9495,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_header-3
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 3
+    -
+        id: nf_header-3
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 3
     -
         id: h3-size
         type: variable-text
@@ -9628,12 +9628,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_header-4
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 4
+    -
+        id: nf_header-4
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 4
     -
         id: h4-size
         type: variable-text
@@ -9761,12 +9761,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_header-5
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 5
+    -
+        id: nf_header-5
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 5
     -
         id: h5-size
         type: variable-text
@@ -9894,12 +9894,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_header-6
-		type: heading
-		level: 3
-		collapsed: true
-		title: Heading 6
+    -
+        id: nf_header-6
+        type: heading
+        level: 3
+        collapsed: true
+        title: Heading 6
     -
         id: h6-size
         type: variable-text
@@ -10027,12 +10027,12 @@ settings:
         title: Roundness
         description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
         default: 0px
-	-
-		id: nf_emphasis
-		type: heading
-		level: 2
-		collapsed: true
-		title: Emphasis
+    -
+        id: nf_emphasis
+        type: heading
+        level: 2
+        collapsed: true
+        title: Emphasis
     -
         id: bold-color
         type: variable-themed-color
@@ -10098,12 +10098,12 @@ settings:
         opacity: true
         default-light: 'hsla(31, 23%, 50%, 1)'
         default-dark: 'hsla(35, 27%, 55%, 1)'
-	-
-		id: nf_highlight
-		type: heading
-		level: 2
-		collapsed: true
-		title: Highlight
+    -
+        id: nf_highlight
+        type: heading
+        level: 2
+        collapsed: true
+        title: Highlight
     -
         id: normal-highlight-color
         type: variable-themed-color
@@ -10184,12 +10184,12 @@ settings:
         opacity: true
         default-light: 'hsla(74, 69%, 44%, 0.2)'
         default-dark: 'hsla(74, 69%, 44%, 0.2)'
-	-
-		id: nf_link
-		type: heading
-		level: 2
-		collapsed: true
-		title: Link
+    -
+        id: nf_link
+        type: heading
+        level: 2
+        collapsed: true
+        title: Link
     -
         id: link-underline-offset
         type: variable-text
@@ -10216,12 +10216,12 @@ settings:
         type: variable-number
         title: Link Opacity when Pressed
         default: 0.5
-	-
-		id: nf_link
-		type: heading
-		level: 3
-		collapsed: true
-		title: Non-markdown Links
+    -
+        id: nf_link
+        type: heading
+        level: 3
+        collapsed: true
+        title: Non-markdown Links
         description: Links that appear outside of notes
     -
         id: link-unresolved-color
@@ -10239,12 +10239,12 @@ settings:
         opacity: true
         default-light: 'hsla(4, 72%, 55%, 1)'
         default-dark: 'hsla(5, 94%, 73%, 1)'
-	-
-		id: nf_link
-		type: heading
-		level: 3
-		collapsed: true
-		title: Unresolved Links
+    -
+        id: nf_link
+        type: heading
+        level: 3
+        collapsed: true
+        title: Unresolved Links
     -
         id: link-unresolved-color
         type: variable-themed-color
@@ -10267,12 +10267,12 @@ settings:
         title: Unresolved Link Opacity
         description: Choose a number between 0 to 1.
         default: 1
-	-
-		id: nf_link
-		type: heading
-		level: 3
-		collapsed: true
-		title: Resolved Links
+    -
+        id: nf_link
+        type: heading
+        level: 3
+        collapsed: true
+        title: Resolved Links
     -
         id: link-color
         type: variable-themed-color
@@ -10289,12 +10289,12 @@ settings:
         opacity: true
         default-light: 'hsla(43, 83%, 57%, 1)'
         default-dark: 'hsla(43, 69%, 63%, 1)'
-	-
-		id: nf_link
-		type: heading
-		level: 3
-		collapsed: true
-		title: External Links
+    -
+        id: nf_link
+        type: heading
+        level: 3
+        collapsed: true
+        title: External Links
     -
         id: link-external-color
         type: variable-themed-color
@@ -10311,12 +10311,12 @@ settings:
         opacity: true
         default-light: 'hsla(148, 48%, 47%, 1)'
         default-dark: 'hsla(152, 51%, 54%, 1)'
-	-
-		id: nf_blockquotes
-		type: heading
-		level: 2
-		collapsed: true
-		title: Blockquotes
+    -
+        id: nf_blockquotes
+        type: heading
+        level: 2
+        collapsed: true
+        title: Blockquotes
     -
         id: blockquote-border-thickness
         type: variable-text
@@ -10338,12 +10338,12 @@ settings:
         opacity: true
         default-light: 'hsla(36, 38%, 98%, 1)'
         default-dark: 'hsla(29, 16%, 12%, 1)'
-	-
-		id: nf_list
-		type: heading
-		level: 2
-		collapsed: true
-		title: List
+    -
+        id: nf_list
+        type: heading
+        level: 2
+        collapsed: true
+        title: List
     -
         id: indentation-guide-reading-indent
         type: variable-number
@@ -10389,12 +10389,12 @@ settings:
         opacity: true
         default-light: 'hsla(31, 23%, 50%, 1)'
         default-dark: 'hsla(35, 27%, 55%, 1)'
-	-
-		id: nf-checkbox
-		type: heading
-		level: 2
-		collapsed: true
-		title: Checkbox
+    -
+        id: nf-checkbox
+        type: heading
+        level: 2
+        collapsed: true
+        title: Checkbox
     -
         id: checklist-bg
         type: variable-themed-color
@@ -10447,12 +10447,12 @@ settings:
         title: Checkbox Border Radius
         description: Changes the roundness of the checkbox. You may use other units such as %, em, or rem. If you want circular checkboxes, put "100%". If you want squircle checkboxes, put "5px" or "6px". If you want square checkboxes, put "2px" or "0".
         default: '4px'
-	-
-		id: nf-checkbox-icons
-		type: heading
-		level: 2
-		collapsed: true
-		title: Checkbox Icons
+    -
+        id: nf-checkbox-icons
+        type: heading
+        level: 2
+        collapsed: true
+        title: Checkbox Icons
     -
         id: inprogress-chbx-color
         type: variable-themed-color
@@ -10711,24 +10711,24 @@ settings:
         opacity: true
         default-light: 'hsla(148, 47%, 47%, 1)'
         default-dark: 'hsla(148, 48%, 42%, 1)'
-	-
-		id: nf_media
-		type: heading
-		level: 2
-		collapsed: true
-		title: Media
+    -
+        id: nf_media
+        type: heading
+        level: 2
+        collapsed: true
+        title: Media
     -
         id: embed-media-border-radius
         type: variable-text
         title: Media Border Radius
         description: Set border radius size for media (images, audio, video)
         default: 8px
-	-
-		id: nf_note-embed
-		type: heading
-		level: 2
-		collapsed: true
-		title: Note Embed
+    -
+        id: nf_note-embed
+        type: heading
+        level: 2
+        collapsed: true
+        title: Note Embed
     -
         id: readme-content
         type: info-text
@@ -10748,12 +10748,12 @@ settings:
         opacity: true
         default-light: 'hsla(39, 39%, 94%, 1)'
         default-dark: 'hsla(31, 19%, 14%, 1)'
-	-
-		id: nf_note-embed-title
-		type: heading
-		level: 3
-		collapsed: true
-		title: Note Embed Title
+    -
+        id: nf_note-embed-title
+        type: heading
+        level: 3
+        collapsed: true
+        title: Note Embed Title
     -
         id: embed-hide-title
         type: class-toggle
@@ -10815,24 +10815,24 @@ settings:
         type: variable-text
         title: Note Embed Title Bottom Margin Size
         default: 8px
-	-
-		id: nf_note-embed-border
-		type: heading
-		level: 3
-		collapsed: true
-		title: Note Embed Border
+    -
+        id: nf_note-embed-border
+        type: heading
+        level: 3
+        collapsed: true
+        title: Note Embed Border
     -
         id: embed-border-radius
         type: variable-text
         title: Note Embed Border Radius
         description: You can also have different radiuses per side. Just write them in the CSS format of top left, top right, bottom right, bottom left. i.e. 2px, 8px, 12px, 0px.
         default: 12px
-	-
-		id: nf_note-embed-border
-		type: heading
-		level: 4
-		collapsed: true
-		title: Note Embed Top Border
+    -
+        id: nf_note-embed-border
+        type: heading
+        level: 4
+        collapsed: true
+        title: Note Embed Top Border
     -
         id: embed-border-top-width
         type: variable-text
@@ -10853,12 +10853,12 @@ settings:
         opacity: true
         default-light: 'hsla(37, 38%, 83%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-	-
-		id: nf_note-embed-border
-		type: heading
-		level: 4
-		collapsed: true
-		title: Note Embed Right Border
+    -
+        id: nf_note-embed-border
+        type: heading
+        level: 4
+        collapsed: true
+        title: Note Embed Right Border
     -
         id: embed-border-end-width
         type: variable-text
@@ -10879,12 +10879,12 @@ settings:
         opacity: true
         default-light: 'hsla(37, 38%, 83%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-	-
-		id: nf_note-embed-border
-		type: heading
-		level: 4
-		collapsed: true
-		title: Note Embed Bottom Border
+    -
+        id: nf_note-embed-border
+        type: heading
+        level: 4
+        collapsed: true
+        title: Note Embed Bottom Border
     -
         id: embed-border-bottom-width
         type: variable-text
@@ -10905,12 +10905,12 @@ settings:
         opacity: true
         default-light: 'hsla(37, 38%, 83%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-	-
-		id: nf_note-embed-border
-		type: heading
-		level: 4
-		collapsed: true
-		title: Note Embed Left Border
+    -
+        id: nf_note-embed-border
+        type: heading
+        level: 4
+        collapsed: true
+        title: Note Embed Left Border
     -
         id: embed-border-start-width
         type: variable-text
@@ -10931,12 +10931,12 @@ settings:
         opacity: true
         default-light: 'hsla(37, 38%, 83%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-	-
-		id: canvas
-		type: heading
-		level: 1
-		collapsed: true
-		title: Canvas
+    -
+        id: canvas
+        type: heading
+        level: 1
+        collapsed: true
+        title: Canvas
     -
         id: canvas-dot-pattern
         type: variable-themed-color
@@ -11009,12 +11009,12 @@ settings:
         opacity: false
         default-light: 'rgb(135, 106, 193)'
         default-dark: 'rgb(135, 106, 193)'
-	-
-		id: file-explorer
-		type: heading
-		level: 1
-		collapsed: true
-		title: File Explorer & Bookmarks
+    -
+        id: file-explorer
+        type: heading
+        level: 1
+        collapsed: true
+        title: File Explorer & Bookmarks
     -
         id: readme-content
         type: info-text
@@ -11060,12 +11060,12 @@ settings:
         type: info-text
         markdown: true
         description: 🎨 The collapse indicator and indentation guide colors take in the color of the text color. If you don't want the hassle of changing these two other nuances, you can just change the text color. <br><br> Same goes for background color when hovered, you can focus on just changing the background color and leave the hovered color and it will adjust accordingly.
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 1
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 1
     -
         id: nav-folder-1-color
         type: variable-themed-color
@@ -11106,12 +11106,12 @@ settings:
         title: Folder 1 Indentation Guide Color
         default-light: 'hsla(4, 56%, 48%, 0.25)'
         default-dark: 'hsla(4, 88%, 61%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 2
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 2
     -
         id: nav-folder-2-color
         type: variable-themed-color
@@ -11152,12 +11152,12 @@ settings:
         title: Folder 2 Indentation Guide Color
         default-light: 'hsla(18, 69%, 50%, 0.25)'
         default-dark: 'hsla(24, 84%, 50%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 3
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 3
     -
         id: nav-folder-3-color
         type: variable-themed-color
@@ -11198,12 +11198,12 @@ settings:
         title: Folder 3 Indentation Guide Color
         default-light: 'hsla(40, 98%, 36%, 0.25)'
         default-dark: 'hsla(42, 79%, 51%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 4
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 4
     -
         id: nav-folder-4-color
         type: variable-themed-color
@@ -11244,12 +11244,12 @@ settings:
         title: Folder 4 Indentation Guide Color
         default-light: 'hsla(153, 65%, 29%, 0.25)'
         default-dark: 'hsla(154, 57%, 42%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 5
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 5
     -
         id: nav-folder-5-color
         type: variable-themed-color
@@ -11290,12 +11290,12 @@ settings:
         title: Folder 5 Indentation Guide Color
         default-light: 'hsla(200, 64%, 37%, 0.25)'
         default-dark: 'hsla(194, 59%, 56%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 6
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 6
     -
         id: nav-folder-6-color
         type: variable-themed-color
@@ -11336,12 +11336,12 @@ settings:
         title: Folder 6 Indentation Guide Color
         default-light: 'hsla(275, 37%, 43%, 0.25)'
         default-dark: 'hsla(242, 52%, 69%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 7
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 7
     -
         id: nav-folder-7-color
         type: variable-themed-color
@@ -11382,12 +11382,12 @@ settings:
         title: Folder 7 Indentation Guide Color
         default-light: 'hsla(4, 56%, 48%, 0.25)'
         default-dark: 'hsla(4, 88%, 61%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 8
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 8
     -
         id: nav-folder-8-color
         type: variable-themed-color
@@ -11428,12 +11428,12 @@ settings:
         title: Folder 8 Indentation Guide Color
         default-light: 'hsla(18, 69%, 50%, 0.25)'
         default-dark: 'hsla(24, 84%, 50%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 9
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 9
     -
         id: nav-folder-9-color
         type: variable-themed-color
@@ -11474,12 +11474,12 @@ settings:
         title: Folder 9 Indentation Guide Color
         default-light: 'hsla(40, 98%, 36%, 0.25)'
         default-dark: 'hsla(42, 79%, 51%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 10
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 10
     -
         id: nav-folder-10-color
         type: variable-themed-color
@@ -11520,12 +11520,12 @@ settings:
         title: Folder 10 Indentation Guide Color
         default-light: 'hsla(153, 65%, 29%, 0.25)'
         default-dark: 'hsla(154, 57%, 42%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 11
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 11
     -
         id: nav-folder-11-color
         type: variable-themed-color
@@ -11566,12 +11566,12 @@ settings:
         title: Folder 11 Indentation Guide Color
         default-light: 'hsla(200, 64%, 37%, 0.25)'
         default-dark: 'hsla(194, 59%, 56%, 0.25)'
-	-
-		id: file-explorer_folder
-		type: heading
-		level: 2
-		collapsed: true
-		title: Folder 12
+    -
+        id: file-explorer_folder
+        type: heading
+        level: 2
+        collapsed: true
+        title: Folder 12
     -
         id: nav-folder-12-color
         type: variable-themed-color
@@ -11623,12 +11623,12 @@ settings:
         type: class-toggle
         title: Custom Bookmarks Folders
         description: By default, File Explorer and Bookmarks share the same colors when the colorful folders toggles are turned on. If you'd like a different color for the Bookmarks folders, toggle this on and set your preferred colors below. Just like File Explorer, customization goes up to 12 folders and cycles through them.
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 1
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 1
     -
         id: bookmark-folder-1-color
         type: variable-themed-color
@@ -11669,12 +11669,12 @@ settings:
         title: Folder 1 Indentation Guide Color
         default-light: 'hsla(4, 56%, 48%, 0.25)'
         default-dark: 'hsla(4, 88%, 61%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 2
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 2
     -
         id: bookmark-folder-2-color
         type: variable-themed-color
@@ -11715,12 +11715,12 @@ settings:
         title: Folder 2 Indentation Guide Color
         default-light: 'hsla(18, 69%, 50%, 0.25)'
         default-dark: 'hsla(24, 84%, 50%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 3
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 3
     -
         id: bookmark-folder-3-color
         type: variable-themed-color
@@ -11761,12 +11761,12 @@ settings:
         title: Folder 3 Indentation Guide Color
         default-light: 'hsla(40, 98%, 36%, 0.25)'
         default-dark: 'hsla(42, 79%, 51%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 4
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 4
     -
         id: bookmark-folder-4-color
         type: variable-themed-color
@@ -11807,12 +11807,12 @@ settings:
         title: Folder 4 Indentation Guide Color
         default-light: 'hsla(153, 65%, 29%, 0.25)'
         default-dark: 'hsla(154, 57%, 42%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 5
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 5
     -
         id: bookmark-folder-5-color
         type: variable-themed-color
@@ -11853,12 +11853,12 @@ settings:
         title: Folder 5 Indentation Guide Color
         default-light: 'hsla(200, 64%, 37%, 0.25)'
         default-dark: 'hsla(194, 59%, 56%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 6
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 6
     -
         id: bookmark-folder-6-color
         type: variable-themed-color
@@ -11899,12 +11899,12 @@ settings:
         title: Folder 6 Indentation Guide Color
         default-light: 'hsla(275, 37%, 43%, 0.25)'
         default-dark: 'hsla(242, 52%, 69%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 7
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 7
     -
         id: bookmark-folder-7-color
         type: variable-themed-color
@@ -11945,12 +11945,12 @@ settings:
         title: Folder 7 Indentation Guide Color
         default-light: 'hsla(4, 56%, 48%, 0.25)'
         default-dark: 'hsla(4, 88%, 61%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 8
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 8
     -
         id: bookmark-folder-8-color
         type: variable-themed-color
@@ -11991,12 +11991,12 @@ settings:
         title: Folder 8 Indentation Guide Color
         default-light: 'hsla(18, 69%, 50%, 0.25)'
         default-dark: 'hsla(24, 84%, 50%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 9
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 9
     -
         id: bookmark-folder-9-color
         type: variable-themed-color
@@ -12037,12 +12037,12 @@ settings:
         title: Folder 9 Indentation Guide Color
         default-light: 'hsla(40, 98%, 36%, 0.25)'
         default-dark: 'hsla(42, 79%, 51%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 10
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 10
     -
         id: bookmark-folder-10-color
         type: variable-themed-color
@@ -12083,12 +12083,12 @@ settings:
         title: Folder 10 Indentation Guide Color
         default-light: 'hsla(153, 65%, 29%, 0.25)'
         default-dark: 'hsla(154, 57%, 42%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 11
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 11
     -
         id: bookmark-folder-11-color
         type: variable-themed-color
@@ -12129,12 +12129,12 @@ settings:
         title: Folder 11 Indentation Guide Color
         default-light: 'hsla(200, 64%, 37%, 0.25)'
         default-dark: 'hsla(194, 59%, 56%, 0.25)'
-	-
-		id: bookmark_folder
-		type: heading
-		level: 3
-		collapsed: true
-		title: Folder 12
+    -
+        id: bookmark_folder
+        type: heading
+        level: 3
+        collapsed: true
+        title: Folder 12
     -
         id: bookmark-folder-12-color
         type: variable-themed-color
@@ -12175,12 +12175,12 @@ settings:
         title: Folder 12 Indentation Guide Color
         default-light: 'hsla(275, 37%, 43%, 0.25)'
         default-dark: 'hsla(242, 52%, 69%, 0.25)'
-	-
-		id: graph
-		type: heading
-		level: 1
-		collapsed: true
-		title: Graph
+    -
+        id: graph
+        type: heading
+        level: 1
+        collapsed: true
+        title: Graph
     -
         id: graph-node
         type: variable-themed-color
@@ -12269,23 +12269,23 @@ settings:
         title: Arrow Color
         default-light: 'hsla(31, 23%, 50%, 1)'
         default-dark: 'hsla(34, 24%, 40%, 1)'
-	-
-		id: advanced
-		type: heading
-		level: 1
-		collapsed: true
-		title: Advanced
+    -
+        id: advanced
+        type: heading
+        level: 1
+        collapsed: true
+        title: Advanced
     -
         id: readme-content
         type: info-text
         markdown: true
         description: 🚧 Coming soon!
     -
-		id: readme-support
-		type: heading
-		level: 1
-		collapsed: true
-		title: Support Primary's Development
+        id: readme-support
+        type: heading
+        level: 1
+        collapsed: true
+        title: Support Primary's Development
     -
         id: readme-content
         type: info-text

@@ -8085,7 +8085,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10354,27 +10354,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23914,7 +23914,7 @@ input.mobile-vault-chooser-field-input {
 /* =============== Dark mode images =======================  */
 /*invert image based on light or dark mode*/
 /*.theme-light .markdown-preview-view img[src*="png"] {
-	filter: hue-rotate(70deg);
+    filter: hue-rotate(70deg);
 }*/
 /*.theme-dark .markdown-preview-view img[src*="png"] {
   opacity: 1;
@@ -24222,7 +24222,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /*.theme-dark .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
-	color: var(--text-normal);
+    color: var(--text-normal);
 }*/
 /*=======================================================*/
 /*========= remove rounded corners =======*/
@@ -24269,7 +24269,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 /*.theme-dark .graph-view.color-fill-attachment {
-	color: var(--text-accent-hover);
+    color: var(--text-accent-hover);
 }*/
 .theme-light .graph-view.color-fill-tag {
   color: var(--accent-strong);
@@ -24621,8 +24621,8 @@ cite {
 
 /* table heading color */
 /*.markdown-preview-view th {
-	background-color: var(--background-primary-alt);
-	border: 0px;
+    background-color: var(--background-primary-alt);
+    border: 0px;
 }*/
 /*excalidraw theme updates*/
 .excalidraw .active {

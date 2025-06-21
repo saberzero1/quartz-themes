@@ -2442,7 +2442,7 @@ body {
   );
   --ss-light-l: 9.86%;
   --ss-light-s: 3.92%;
-  --ss-light-text-main: 0, 0, 0;
+  --ss-light-text-main: #000000rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent-hover: #000;
@@ -2591,7 +2591,7 @@ body {
   );
   --ss-dark-l: 2.58%;
   --ss-dark-s: 3.33%;
-  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-text-main: #FAF7F5rgb-values;
   --tag-background: var(--color-accent-background);
   --tag-background-hover: var(--color-accent-background-hover);
   --text-accent: var(--color-accent-1);
@@ -8189,7 +8189,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10452,27 +10452,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24493,11 +24493,6 @@ pre {
 }
 
 /* Style Settings Plugin */
-/* @settings
-name: Polka Light Theme Customization
-id: ss-light-customization
-settings:
-*/
 /* @settings
 name: Polka Theme
 id: polka

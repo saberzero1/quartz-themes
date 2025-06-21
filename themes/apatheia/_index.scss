@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --accent-d: var(--ap-primary-d);
   --accent-h: var(--ap-primary-h);
   --accent-l: var(--ap-primary-l);
@@ -46,9 +47,6 @@
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --font-interface-theme: var(--ap-font-interface);
-  --font-monospace-theme: var(--ap-font-monospace);
-  --font-text-theme: var(--ap-font-text);
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node-tag: var(--ap-secondary);
   --graph-node-unresolved: var(--text-faint);
@@ -77,9 +75,82 @@
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   color-scheme: dark;
-
-  .callout {
+  --accent-d: var(--ap-primary-d);
+  --accent-h: var(--ap-primary-h);
+  --accent-l: var(--ap-primary-l);
+  --accent-s: var(--ap-primary-s);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
+  --base-d: var(--ap-base0-d);
+  --base-h: var(--ap-base0-h);
+  --base-s: var(--ap-base0-s);
+  --checkbox-radius: 30%;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: var(--ap-color-dp1);
+  --color-base-10: var(--ap-color-dp2);
+  --color-base-100: var(--ap-color-dp11);
+  --color-base-20: var(--ap-color-dp0);
+  --color-base-25: var(--ap-color-dp0);
+  --color-base-30: var(--ap-color-dp0);
+  --color-base-35: var(--ap-color-dp4);
+  --color-base-40: var(--ap-color-dp0);
+  --color-base-50: var(--ap-color-dp6);
+  --color-base-70: var(--ap-color-dp10);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node-tag: var(--ap-secondary);
+  --graph-node-unresolved: var(--text-faint);
+  --h1-color: var(--ap-h1);
+  --h2-color: var(--ap-h2);
+  --h3-color: var(--ap-h3);
+  --h4-color: var(--ap-h4);
+  --h5-color: var(--ap-h5);
+  --h6-color: var(--ap-h6);
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --radius-l: var(--ap-radius-l);
+  --radius-m: var(--ap-radius-m);
+  --radius-s: var(--ap-radius-s);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: var(--ap-color-tag-background);
+  --tag-color: var(--ap-color-tag-text);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -227,11 +298,6 @@
   --ap-color-tag-background: #2c2537;
   --ap-color-tag-text: #eeeeee;
   --ap-font-header: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
-  --ap-font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-monospace: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
   --ap-green: #aac5a0;
   --ap-h1: var(--ap-red);
   --ap-h2: var(--ap-purple);
@@ -326,26 +392,13 @@ body {
   --cursor-link: pointer;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+  --font-interface: Open Sans;
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+  --font-monospace: Source code pro;
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
-  --font-print-override: "??";
   --font-smaller: 0.875em;
-  --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text: Open Sans;
   --font-text-size: 16px;
-  --font-text-theme: "??";
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -396,7 +449,7 @@ body {
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --indentation-guide-width: 1px;
   --inline-title-color: var(--h1-color);
-  --inline-title-font: var(--h1-font);
+  --inline-title-font: Open Sans;
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
@@ -522,9 +575,6 @@ html {
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --font-interface-theme: var(--ap-font-interface);
-  --font-monospace-theme: var(--ap-font-monospace);
-  --font-text-theme: var(--ap-font-text);
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node-tag: var(--ap-secondary);
   --graph-node-unresolved: var(--text-faint);
@@ -553,10 +603,80 @@ html {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   color-scheme: dark;
+  --accent-d: var(--ap-primary-d);
+  --accent-h: var(--ap-primary-h);
+  --accent-l: var(--ap-primary-l);
+  --accent-s: var(--ap-primary-s);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
+  --base-d: var(--ap-base0-d);
+  --base-h: var(--ap-base0-h);
+  --base-s: var(--ap-base0-s);
+  --checkbox-radius: 30%;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: var(--ap-color-dp1);
+  --color-base-10: var(--ap-color-dp2);
+  --color-base-100: var(--ap-color-dp11);
+  --color-base-20: var(--ap-color-dp0);
+  --color-base-25: var(--ap-color-dp0);
+  --color-base-30: var(--ap-color-dp0);
+  --color-base-35: var(--ap-color-dp4);
+  --color-base-40: var(--ap-color-dp0);
+  --color-base-50: var(--ap-color-dp6);
+  --color-base-70: var(--ap-color-dp10);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node-tag: var(--ap-secondary);
+  --graph-node-unresolved: var(--text-faint);
+  --h1-color: var(--ap-h1);
+  --h2-color: var(--ap-h2);
+  --h3-color: var(--ap-h3);
+  --h4-color: var(--ap-h4);
+  --h5-color: var(--ap-h5);
+  --h6-color: var(--ap-h6);
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --radius-l: var(--ap-radius-l);
+  --radius-m: var(--ap-radius-m);
+  --radius-s: var(--ap-radius-s);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-background: var(--ap-color-tag-background);
+  --tag-color: var(--ap-color-tag-text);
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

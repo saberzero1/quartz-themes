@@ -241,3 +241,58 @@ function compareDeclarations(declA, declB) {
   // If both are custom or both are standard, sort alphabetically
   return propA.localeCompare(propB)
 }
+
+/**
+ * Extracts all CSS rules that apply to the dark theme (identified by the presence of ".theme-dark" in the selector).
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @returns {string[]} An array of strings, each representing a rule
+ */
+export function getAllDarkThemeRules(cssString) {
+  const root = postcss.parse(cssString)
+  const darkThemeRules = []
+
+  root.walkRules((rule) => {
+    if (rule.selector === ".theme-dark") {
+      // concat all declarations inside the rule
+      const ruleString = rule.nodes
+        .filter((node) => node.type === "decl")
+        .map((decl) => `${decl.prop}: ${decl.value}`)
+        .join(";\n")
+      darkThemeRules.push(ruleString)
+    }
+    else if (rule.selector.includes(".theme-dark")) {
+      const ruleString = rule.toString().split(".theme-dark").join("")
+      darkThemeRules.push(ruleString)
+    }
+  })
+
+  return darkThemeRules
+}
+
+/**
+ * Extracts all CSS rules that apply to the light theme (identified by the presence of ".theme-light" in the selector).
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @returns {string[]} An array of strings, each representing a rule
+ */
+export function getAllLightThemeRules(cssString) {
+  const root = postcss.parse(cssString)
+  const lightThemeRules = []
+
+  root.walkRules((rule) => {
+    if (rule.selector === ".theme-light") {
+      // concat all declarations inside the rule
+      const ruleString = rule.nodes
+        .filter((node) => node.type === "decl")
+        .map((decl) => `${decl.prop}: ${decl.value}`)
+        .join(";\n")
+      lightThemeRules.push(ruleString)
+    } else if (rule.selector.includes(".theme-light")) {
+      const ruleString = rule.toString().split(".theme-light").join("")
+      lightThemeRules.push(ruleString)
+    }
+  })
+
+  return lightThemeRules
+}

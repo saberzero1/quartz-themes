@@ -8003,7 +8003,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10266,27 +10266,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -25186,25 +25186,25 @@ body:not(.is-mobile):not(.zoom-off) .view-content .image-embed:active img {
 name: Theme simplicity
 id: perso
 settings:
-	-
+    -
         id: credits
         title: ⭐️ Credits
         type: info-text
         description: Made by @Thiews to be shared. Support my work at "[https://buymeacoffee.com/thiews](https://buymeacoffee.com/thiews)"
         markdown: true
-	-
+    -
         id: logo
         title: 1. Global customization (Title, Accent color, navigation panel)
         type: heading
         level: 2
         collapsed: true
-	-
+    -
         id: site-title
         title: Your obsidian title
         description: Put the title in quotation marks (see default parameter)
         type: variable-text
         default: '"OBSIDIAN"'
-	-
+    -
         id: accent
         title: Accent color
         type: variable-color

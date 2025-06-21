@@ -8054,7 +8054,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10319,27 +10319,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23864,53 +23864,53 @@ id: lemons-theme-settings
 collapsed: false
 settings:
   - 
-	id: lt-set-settings
-	title: Lemons Theme Settings
-	type: heading
-	level: 1
+    id: lt-set-settings
+    title: Lemons Theme Settings
+    type: heading
+    level: 1
   -
-	id: lt-set-file-icons
-	title: File Icons
-	description: Adds file and folder icons for different file types
-	type: class-toggle
+    id: lt-set-file-icons
+    title: File Icons
+    description: Adds file and folder icons for different file types
+    type: class-toggle
   -
-	id: lt-pride-month-colors
-	title: Pride Month Colors
-	description: Adds some colorful pride month flags to some UI elements.
-	type: class-toggle
+    id: lt-pride-month-colors
+    title: Pride Month Colors
+    description: Adds some colorful pride month flags to some UI elements.
+    type: class-toggle
   -
-	id: lt-hide-tab-title-bar-file-name
-	title: Hide Tab Title Bar File Name
-	description: Hide the file name in the tab title bar. Who needs to see the tab title three times anyways.
-	type: class-toggle
+    id: lt-hide-tab-title-bar-file-name
+    title: Hide Tab Title Bar File Name
+    description: Hide the file name in the tab title bar. Who needs to see the tab title three times anyways.
+    type: class-toggle
   -
-	id: lt-accent-headings
-	title: More Visible Headings
-	description: Colors the heading in the accent color to make them more visible.
-	type: class-toggle
+    id: lt-accent-headings
+    title: More Visible Headings
+    description: Colors the heading in the accent color to make them more visible.
+    type: class-toggle
   -
-	id: lt-hashtag-headings
-	title: Hashtag Headings
-	description: Prefix headings with a hashtag even in reading mode.
-	type: class-toggle
-	default: true
+    id: lt-hashtag-headings
+    title: Hashtag Headings
+    description: Prefix headings with a hashtag even in reading mode.
+    type: class-toggle
+    default: true
   - 
-	id: lt-set-mode-toggles
-	title: Mode Toggles
-	type: heading
-	level: 2
+    id: lt-set-mode-toggles
+    title: Mode Toggles
+    type: heading
+    level: 2
   - 
-	id: lt-set-focus-mode
-	title: Focus Mode
-	description: Disables part of the UI to help you focus.
-	type: class-toggle
-	addCommand: true
+    id: lt-set-focus-mode
+    title: Focus Mode
+    description: Disables part of the UI to help you focus.
+    type: class-toggle
+    addCommand: true
   -
-	id: lt-set-full-width-editor
-	title: Full Width Editor
-	description: Removes the width limit on the editor.
-	type: class-toggle
-	addCommand: true
+    id: lt-set-full-width-editor
+    title: Full Width Editor
+    description: Removes the width limit on the editor.
+    type: class-toggle
+    addCommand: true
  */
 .style-settings-heading[data-level="0"] {
   margin-bottom: var(--size-4-2);

@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--interactive-normal);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
@@ -55,9 +56,63 @@
   --text-complement: var(--color-complement);
   --text-complement-hover: var(--color-complement-2);
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--interactive-normal);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1a1a1a;
+  --color-base-10: #1a1a1a;
+  --color-base-100: #ffffff;
+  --color-base-20: #121212;
+  --color-base-30: #222222;
+  --color-base-35: #303030;
+  --color-base-40: #505050;
+  --color-base-50: #707070;
+  --color-base-60: #909090;
+  --color-blue: #97c0f3;
+  --color-blue-rgb: 151, 192, 243;
+  --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
+  --color-complement-2: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) + 10%)
+  );
+  --color-cyan: #8bf0db;
+  --color-cyan-rgb: 139, 240, 219;
+  --color-green: #a5e693;
+  --color-green-rgb: 165, 230, 147;
+  --color-orange: #ffc8a3;
+  --color-orange-rgb: 255, 200, 163;
+  --color-pink: #eaa9ff;
+  --color-purple: #ac9df2;
+  --color-purple-rgb: 172, 157, 242;
+  --color-red: #f5988f;
+  --color-red-rgb: 245, 152, 143;
+  --color-yellow: #f0e395;
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-normal: var(--color-base-30);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
+    0px 30px 90px rgba(0, 0, 0, 0.15);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --text-complement: var(--color-complement);
+  --text-complement-hover: var(--color-complement-2);
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -414,10 +469,61 @@ html {
   --text-complement: var(--color-complement);
   --text-complement-hover: var(--color-complement-2);
   color-scheme: dark;
+  --background-modifier-form-field: var(--interactive-normal);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1a1a1a;
+  --color-base-10: #1a1a1a;
+  --color-base-100: #ffffff;
+  --color-base-20: #121212;
+  --color-base-30: #222222;
+  --color-base-35: #303030;
+  --color-base-40: #505050;
+  --color-base-50: #707070;
+  --color-base-60: #909090;
+  --color-blue: #97c0f3;
+  --color-blue-rgb: 151, 192, 243;
+  --color-complement: hsl(var(--complement-h), var(--complement-s), var(--complement-l));
+  --color-complement-2: hsl(
+    var(--complement-h),
+    var(--complement-s),
+    calc(var(--complement-l) + 10%)
+  );
+  --color-cyan: #8bf0db;
+  --color-cyan-rgb: 139, 240, 219;
+  --color-green: #a5e693;
+  --color-green-rgb: 165, 230, 147;
+  --color-orange: #ffc8a3;
+  --color-orange-rgb: 255, 200, 163;
+  --color-pink: #eaa9ff;
+  --color-purple: #ac9df2;
+  --color-purple-rgb: 172, 157, 242;
+  --color-red: #f5988f;
+  --color-red-rgb: 245, 152, 143;
+  --color-yellow: #f0e395;
+  --highlight-mix-blend-mode: lighten;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-normal: var(--color-base-30);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
+    0px 30px 90px rgba(0, 0, 0, 0.15);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+    0px 15px 30px rgba(0, 0, 0, 0.15);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --text-complement: var(--color-complement);
+  --text-complement-hover: var(--color-complement-2);
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --background-modifier-border: #595959;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field: #2f3136;
@@ -85,9 +86,93 @@
   --text-muted: #aaaaaa;
   --text-normal: #5dbcd2;
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-border: #595959;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field: #2f3136;
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #141414;
+  --bold-color: rgb(158, 138, 255);
+  --bold-weight: 700;
+  --code-background: rgb(54, 57, 63);
+  --code-normal: rgb(170, 170, 170);
+  --code-punctuation: rgb(49, 156, 180);
+  --code-size: 13.125px;
+  --code-tag: rgb(49, 156, 180);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
+    SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
+  --font-text-theme: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --graph-line: rgb(38, 121, 140);
+  --graph-node-tag: rgb(93, 188, 210);
+  --graph-node-unresolved: rgb(158, 138, 255);
+  --h1-color: #c7c400;
+  --h2-color: #b9adff;
+  --h3-color: #52c1da;
+  --h4-color: #67c073;
+  --h5-color: #de87ca;
+  --h6-color: #b4b4b4;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: var(--text-normal);
+  --inline-title-color: rgb(93, 188, 210);
+  --interactive-accent: #fe8019;
+  --interactive-accent-hover: #9e8aff;
+  --italic-color: rgb(186, 192, 79);
+  --link-color: rgb(214, 105, 188);
+  --link-external-color: rgb(214, 105, 188);
+  --link-external-color-hover: rgb(236, 154, 217);
+  --mono-rgb-100: 255, 255, 255;
+  --tag-color: rgb(252, 246, 1);
+  --text-accent: #319cb4;
+  --text-faint: #999999;
+  --text-highlight-bg: rgba(252, 246, 1, 0.4);
+  --text-muted: #aaaaaa;
+  --text-normal: #5dbcd2;
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -466,10 +551,91 @@ html {
   --text-muted: #aaaaaa;
   --text-normal: #5dbcd2;
   color-scheme: dark;
+  --background-modifier-border: #595959;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field: #2f3136;
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #141414;
+  --bold-color: rgb(158, 138, 255);
+  --bold-weight: 700;
+  --code-background: rgb(54, 57, 63);
+  --code-normal: rgb(170, 170, 170);
+  --code-punctuation: rgb(49, 156, 180);
+  --code-size: 13.125px;
+  --code-tag: rgb(49, 156, 180);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
+    SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
+  --font-text-theme: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --graph-line: rgb(38, 121, 140);
+  --graph-node-tag: rgb(93, 188, 210);
+  --graph-node-unresolved: rgb(158, 138, 255);
+  --h1-color: #c7c400;
+  --h2-color: #b9adff;
+  --h3-color: #52c1da;
+  --h4-color: #67c073;
+  --h5-color: #de87ca;
+  --h6-color: #b4b4b4;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: var(--text-normal);
+  --inline-title-color: rgb(93, 188, 210);
+  --interactive-accent: #fe8019;
+  --interactive-accent-hover: #9e8aff;
+  --italic-color: rgb(186, 192, 79);
+  --link-color: rgb(214, 105, 188);
+  --link-external-color: rgb(214, 105, 188);
+  --link-external-color-hover: rgb(236, 154, 217);
+  --mono-rgb-100: 255, 255, 255;
+  --tag-color: rgb(252, 246, 1);
+  --text-accent: #319cb4;
+  --text-faint: #999999;
+  --text-highlight-bg: rgba(252, 246, 1, 0.4);
+  --text-muted: #aaaaaa;
+  --text-normal: #5dbcd2;
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

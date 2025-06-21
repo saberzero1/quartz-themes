@@ -3,6 +3,8 @@ import {
   combineIdenticalSelectors,
   removeEmptyRules,
   getRuleDeclarations,
+  getAllDarkThemeRules,
+  getAllLightThemeRules,
 } from "./util/postcss.mjs"
 import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs"
 import {
@@ -17,6 +19,7 @@ import {
   getFonts,
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
+  clearDirectories,
   clearDirectoryContents,
   ensureDirectoryExists,
   copyFileToDirectory,
@@ -24,8 +27,14 @@ import {
   applyRuleToString,
   generateFundingLinks,
 } from "./util/util.mjs"
+import {
+  extractStyleSettings,
+  extractClassToggleCss,
+  replaceVariableValue,
+} from "./util/postcss-style-settings.mjs"
 import { themes, usedRules } from "./config.mjs"
 import { prune } from "./util/prune-unused.mjs"
+import { writeIndex, cleanCSS, writeStyleSettings } from "./util/writer.mjs"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -59,6 +68,7 @@ if (args[0] === "ATOMIZE") {
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
 const folders = listFoldersInDirectory(obsidianFolder)
+//const folders = ["Zen"]
 
 const manifestCollection = []
 
@@ -108,6 +118,10 @@ manifestCollection.forEach((manifest) => {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`)
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
   }
+  if (args[0] === "ATOMIZE") {
+    // Clear the style settings directories.
+    clearDirectories(`./extras/themes/${getTheme(manifest)}`)
+  }
   if (args[0] === "INIT") {
     copyFileToDirectory(`./extras/_index.scss`, `./extras/themes/${getTheme(manifest)}`)
   }
@@ -149,6 +163,7 @@ manifestCollection.forEach((manifest) => {
   const themeExtras = getExtras(getValueFromDictionary(manifest, "name"))
   themeExtras.forEach((extra) => {
     copyFileToDirectory(`./extras/${extra}.scss`, `./themes/${getTheme(manifest)}/extras`)
+    // TODO: Implement style settings here
   })
   // Default override
   copyFileToDirectory(
@@ -228,11 +243,7 @@ manifestCollection.forEach((manifest) => {
     if (!fs.existsSync(`./converted_app.css`)) {
       const obsidianCSS = fs.readFileSync("./app.css", "utf8")
       const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8")
-      let result = splitCombinedRules(`${obsidianCSS}\n${overridesCSS}`)
-      result = combineIdenticalSelectors(result)
-      result = removeEmptyRules(result)
-      result = result.replace(/\n+/g, "\n") // Remove extra newlines
-      result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+      const result = cleanCSS(obsidianCSS, overridesCSS)
       fs.writeFileSync(`./converted_app.css`, result, "utf8")
       // Write extracted version to speed up later processing
       const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8")
@@ -254,11 +265,102 @@ manifestCollection.forEach((manifest) => {
     const cssString = fs.readFileSync(cssFile, "utf8")
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8")
     const obsidianExtractedCSS = fs.readFileSync("./converted_app_extracted.css", "utf8")
-    let result = `${obsidianCSS}\n${splitCombinedRules(cssString)}`
-    result = combineIdenticalSelectors(result)
-    result = removeEmptyRules(result)
-    result = result.replace(/\n+/g, "\n") // Remove extra newlines
-    result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+    let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString))
+
+    // Theme variations (for style settings)
+    const styleSettings = extractStyleSettings(cssString)
+    if (styleSettings && styleSettings.length > 0) {
+      // Extract style settings from the main theme
+      styleSettings.forEach((styleSettingsSet) => {
+        const styleSets = styleSettingsSet["settings"]
+        styleSets.forEach((style) => {
+          let styleRulesCSS = ["", "", ""]
+          const ignoreStyleTypes = ["heading", "info-text"]
+
+          if (ignoreStyleTypes.includes(style["type"])) {
+            // Skip styles that are not relevant for CSS generation
+            console.warn(`Skipping style setting: ${style["id"]} of type ${style["type"]}`)
+            return
+          }
+
+          console.log(`Processing style setting: ${style["id"]} of type ${style["type"]}`)
+
+          // Write the style setting to the CSS string
+          if (style["type"] === "variable-text") {
+            // Use the default text
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              (style["quotes"] ?? false) ? `'${style["default"]}'` : style["default"],
+            )
+          } else if (style["type"] === "variable-number") {
+            // Use the default number
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-number-slider") {
+            // Use the default number
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-select") {
+            // Use the default select value
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-color") {
+            // Use the default color
+            // Replace all lines with variable in the CSS string
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            )
+          } else if (style["type"] === "variable-themed-color") {
+            // Use the default themed colors
+            // This is a special case where we need to handle both light and dark themes
+            // for this, we use the `light-dark()` function in the CSS
+            result = replaceVariableValue(
+              result,
+              style["id"],
+              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+            )
+          } else if (style["type"] === "class-toggle") {
+            // Extract the class toggle CSS
+            styleRulesCSS = extractClassToggleCss(cssString, style["id"])
+            writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"])
+          } else if (style["type"] === "class-select") {
+            // Extract the class for every option in the select
+            const classSelectOptions = style["options"]
+            classSelectOptions.forEach((option) => {
+              const className = option["value"]
+              if (className) {
+                styleRulesCSS = extractClassToggleCss(cssString, className)
+                writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"], className)
+              } else {
+                console.warn(`No class name specified for option: ${JSON.stringify(option)}`)
+              }
+            })
+          } else {
+            console.warn(
+              `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
+            )
+          }
+        })
+      })
+    }
+
+    // Write the main theme CSS to the atomic file
     fs.writeFileSync(atomicFile, result, "utf8")
     // Write extracted version to speed up later processing
     const cssAtomicString = fs.readFileSync(atomicFile, "utf8")
@@ -276,462 +378,27 @@ manifestCollection.forEach((manifest) => {
   const useExtendedSyntax = getValueFromDictionary(manifest, "use_extended_syntax")
     ? "theme"
     : "theme_extracted"
-  const themeCSS = fs.readFileSync(
-    `${atomicFolder}/${getTheme(manifest)}/${useExtendedSyntax}.css`,
-    "utf8",
-  )
-  let resultCSS = fs.readFileSync(`./themes/${getTheme(manifest)}/_index.scss`, "utf8")
-  resultCSS = applyRuleToString(resultCSS, ":root", "//%%ROOT%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY%%", themeCSS)
-
-  // Reusables
-  resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY COLOR%%", themeCSS, "color")
-
-  // Layout
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".workspace-split.mod-root",
-    "//%%WORKSPACE BACKGROUND ROOT%%",
-    themeCSS,
-    "background-color",
-  )
-  /*resultCSS = applyRuleToString(
-    resultCSS,
-    ".workspace-split",
-    "//%%WORKSPACE BACKGROUND SIDEBARS%%",
-    //".workspace-tabs .workspace-leaf",
-    themeCSS,
-    "background-color",
-  )*/
-
-  // Separator borders
-  /*resultCSS = applyRuleToString(
-    resultCSS,
-    ".workspace-leaf-resize-handle",
-    "//%%WORKSPACE SEPARATOR BORDER COLOR%%",
-    themeCSS,
-    "border-color",
-  )*/
-  /*resultCSS = applyRuleToString(
-    resultCSS,
-    ".workspace-leaf-resize-handle",
-    "//%%WORKSPACE SEPARATOR BORDER WIDTH%%",
-    themeCSS,
-    "border-width",
-  )*/
-
-  // Heading links
-  resultCSS = applyRuleToString(resultCSS, "h1 a", "//%%H1 A%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h2 a", "//%%H2 A%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h3 a", "//%%H3 A%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h4 a", "//%%H4 A%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h5 a", "//%%H5 A%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h6 a", "//%%H6 A%%", themeCSS)
-
-  // Headings
-  resultCSS = applyRuleToString(resultCSS, "h1", "//%%H1%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h2", "//%%H2%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h3", "//%%H3%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h4", "//%%H4%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h5", "//%%H5%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "h6", "//%%H6%%", themeCSS)
-
-  // Code blocks
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre", "//%%PRE%%", themeCSS)
-
-  // inline code
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
-
-  // Code copy button
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".markdown-rendered button.copy-code-button",
-    "//%%CLIPBOARD BUTTON%%",
-    themeCSS,
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".markdown-rendered button.copy-code-button:hover",
-    "//%%CLIPBOARD BUTTON HOVER%%",
-    themeCSS,
-  )
-
-  // Breadcrumbs
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".view-header-title-parent .view-header-breadcrumb-separator",
-    "//%%BREADCRUMB SEPARATOR COLOR%%",
-    themeCSS,
-    "color",
-  )
-
-  // Explorer
-  resultCSS = applyRuleToString(resultCSS, ".nav-file-title", "//%%EXPLORER FILE TITLE%%", themeCSS)
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".nav-file-title.is-active",
-    "//%%EXPLORER FILE TITLE ACTIVE%%",
-    themeCSS,
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".tree-item-children",
-    "//%%EXPLORER FOLDER CONTENT%%",
-    themeCSS,
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".tree-item-self .tree-item-icon",
-    "//%%EXPLORER FOLDER ICON COLOR%%",
-    themeCSS,
-    "color",
-  )
-
-  // TOC
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".tree-item-self",
-    "//%%TOC ITEM COLOR%%",
-    themeCSS,
-    "color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".tree-item-self",
-    "//%%TOC ITEM FONT WEIGHT%%",
-    themeCSS,
-    "font-weight",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".tree-item-self",
-    "//%%TOC ITEM FONT SIZE%%",
-    themeCSS,
-    "font-size",
-  )
-
-  // Backlinks
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".backlink-pane > .tree-item-self",
-    "//%%BACKLINK COLOR%%",
-    themeCSS,
-    "color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".backlink-pane > .tree-item-self .tree-item-inner",
-    "//%%BACKLINK WEIGHT%%",
-    themeCSS,
-    "font-weight",
-  )
-
-  // Callouts
-  resultCSS = applyRuleToString(resultCSS, ".callout", "//%%CALLOUT%%", themeCSS)
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".callout",
-    "//%%CALLOUT BACKGROUND%%",
-    themeCSS,
-    "background-color",
-  )
-
-  // Callout title
-  resultCSS = applyRuleToString(resultCSS, ".callout-title", "//%%CALLOUT TITLE%%", themeCSS)
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".callout-title-inner",
-    "//%%CALLOUT TITLE INNER%%",
-    themeCSS,
-  )
-
-  // Callout content
-  resultCSS = applyRuleToString(resultCSS, ".callout-content", "//%%CALLOUT CONTENT%%", themeCSS)
-
-  // Callout variations
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".callout",
-    "//%%CALLOUT NOTE%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="tip"]',
-    "//%%CALLOUT TIP%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="warning"]',
-    "//%%CALLOUT WARNING%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="danger"]',
-    "//%%CALLOUT DANGER%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="abstract"]',
-    "//%%CALLOUT ABSTRACT%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="todo"]',
-    "//%%CALLOUT TODO%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="question"]',
-    "//%%CALLOUT QUESTION%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="info"]',
-    "//%%CALLOUT INFO%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="success"]',
-    "//%%CALLOUT SUCCESS%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="quote"]',
-    "//%%CALLOUT QUOTE%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="example"]',
-    "//%%CALLOUT EXAMPLE%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="bug"]',
-    "//%%CALLOUT BUG%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="summary"]',
-    "//%%CALLOUT SUMMARY%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="tldr"]',
-    "//%%CALLOUT TLDR%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="important"]',
-    "//%%CALLOUT IMPORTANT%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="hint"]',
-    "//%%CALLOUT HINT%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="check"]',
-    "//%%CALLOUT CHECK%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="done"]',
-    "//%%CALLOUT DONE%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="help"]',
-    "//%%CALLOUT HELP%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="faq"]',
-    "//%%CALLOUT FAQ%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="caution"]',
-    "//%%CALLOUT CAUTION%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="attention"]',
-    "//%%CALLOUT ATTENTION%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="failure"]',
-    "//%%CALLOUT FAILURE%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="error"]',
-    "//%%CALLOUT ERROR%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="fail"]',
-    "//%%CALLOUT FAIL%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="missing"]',
-    "//%%CALLOUT MISSING%%",
-    themeCSS,
-    "--callout-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    '.callout[data-callout="cite"]',
-    "//%%CALLOUT CITE%%",
-    themeCSS,
-    "--callout-color",
-  )
-
-  // Content Meta
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".metadata-input-longtext",
-    "//%%CONTENT META%%",
-    themeCSS,
-    "color",
-  )
-
-  // Popovers
-  resultCSS = applyRuleToString(resultCSS, ".popover", "//%%POPOVER%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, ".popover", "//%%POPOVER BORDER%%", themeCSS, "border")
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".popover",
-    "//%%POPOVER BACKGROUND%%",
-    themeCSS,
-    "background-color",
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".popover",
-    "//%%POPOVER BORDER RADIUS%%",
-    themeCSS,
-    "border-radius",
-  )
-
-  // Search
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".prompt",
-    "//%%SEARCH BACKGROUND COLOR%%",
-    themeCSS,
-    "background-color",
-  )
-  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH SHADOW%%", themeCSS, "box-shadow")
-  resultCSS = applyRuleToString(resultCSS, ".prompt", "//%%SEARCH BORDER%%", themeCSS, "border")
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".prompt",
-    "//%%SEARCH BORDER RADIUS%%",
-    themeCSS,
-    "border-radius",
-  )
-  resultCSS = applyRuleToString(resultCSS, "input.prompt-input", "//%%SEARCH INPUT%%", themeCSS)
-
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".suggestion-item.is-selected",
-    "//%%SEARCH RESULT HOVER BACKGROUND%%",
-    themeCSS,
-    "background-color",
-  )
-
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".suggestion-highlight",
-    "//%%SEARCH HIGHLIGHT%%",
-    themeCSS,
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    ".markdown-rendered mark",
-    "//%%SEARCH HIGHLIGHT BACKGROUND%%",
-    themeCSS,
-  )
-  resultCSS = applyRuleToString(
-    resultCSS,
-    "a.tag",
-    "//%%SEARCH RESULT TAG COLOR%%",
-    themeCSS,
-    "color",
-  )
-
-  // Search button
-  resultCSS = applyRuleToString(resultCSS, 'input[type="search"]', "//%%SEARCH BUTTON%%", themeCSS)
-
-  // Write the result to the _index.scss file
-  resultCSS = resultCSS.replace(/\n+/g, "\n") // Remove extra newlines
-  resultCSS = resultCSS.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
-  fs.writeFileSync(`./themes/${getTheme(manifest)}/_index.scss`, resultCSS, "utf8")
-
+  let themeName = getTheme(manifest)
+  let themeCSS = fs.readFileSync(`${atomicFolder}/${themeName}/${useExtendedSyntax}.css`, "utf8")
+  writeIndex(themeName, themeCSS)
   // _dark.scss and _light.scss
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark")
+  const darkRules = getAllDarkThemeRules(themeCSS).join("\n")
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light")
+  const lightRules = getAllLightThemeRules(themeCSS).join("\n")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%DARK%%`, darkValue)
-    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, `//%%DARK%%`, darkValue)
+    replaceInFile(`./themes/${themeName}/_dark.scss`, `//%%DARK%%`, `${darkValue}\n${darkRules}`)
+    const darkInject = fs.readFileSync(`./themes/${themeName}/_dark.scss`, "utf8")
+    replaceInFile(`./themes/${themeName}/_index.scss`, `//%%DARK%%`, darkInject)
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, `//%%LIGHT%%`, lightValue)
-    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, `//%%LIGHT%%`, lightValue)
+    replaceInFile(
+      `./themes/${themeName}/_light.scss`,
+      `//%%LIGHT%%`,
+      `${lightValue}\n${lightRules}`,
+    )
+    const lightInject = fs.readFileSync(`./themes/${themeName}/_light.scss`, "utf8")
+    replaceInFile(`./themes/${themeName}/_index.scss`, `//%%LIGHT%%`, lightInject)
   }
 
   // Unset color-scheme for single mode themes
@@ -739,22 +406,18 @@ manifestCollection.forEach((manifest) => {
     // light only
     if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         /\/\* START DARK \*\/.*?\/\* END DARK \*\//gms,
         ``,
       )
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         /\/\* START DARK GRAPH \*\/.*?\/\* END DARK GRAPH \*\//gms,
         ``,
       )
+      replaceInFile(`./themes/${themeName}/_light.scss`, `:root[saved-theme="light"]`, `:root:root`)
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_light.scss`,
-        `:root[saved-theme="light"]`,
-        `:root:root`,
-      )
-      replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         `/* quartz themes */`,
         `/* quartz themes light-only */`,
       )
@@ -762,37 +425,33 @@ manifestCollection.forEach((manifest) => {
     // dark only
     if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         /\/\* START LIGHT \*\/.*?\/\* END LIGHT \*\//gms,
         ``,
       )
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         /\/\* START LIGHT GRAPH \*\/.*?\/\* END LIGHT GRAPH \*\//gms,
         ``,
       )
+      replaceInFile(`./themes/${themeName}/_dark.scss`, `:root[saved-theme="dark"]`, `:root:root`)
       replaceInFile(
-        `./themes/${getTheme(manifest)}/_dark.scss`,
-        `:root[saved-theme="dark"]`,
-        `:root:root`,
-      )
-      replaceInFile(
-        `./themes/${getTheme(manifest)}/_index.scss`,
+        `./themes/${themeName}/_index.scss`,
         `/* quartz themes */`,
         `/* quartz themes dark-only */`,
       )
     }
     // generic
-    replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\[saved-theme\=\".*?\"\]/g, "")
+    replaceInFile(`./themes/${themeName}/_index.scss`, /\[saved-theme\=\".*?\"\]/g, "")
   }
 
   // Remove remaining comments
-  replaceInFile(`./themes/${getTheme(manifest)}/_index.scss`, /\/\/%%[^%]+%%/g, "")
+  replaceInFile(`./themes/${themeName}/_index.scss`, /\/\/%%[^%]+%%/g, "")
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_dark.scss`, /\/\/%%[^%]+%%/g, "")
+    replaceInFile(`./themes/${themeName}/_dark.scss`, /\/\/%%[^%]+%%/g, "")
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${getTheme(manifest)}/_light.scss`, /\/\/%%[^%]+%%/g, "")
+    replaceInFile(`./themes/${themeName}/_light.scss`, /\/\/%%[^%]+%%/g, "")
   }
 
   console.log(`Finished processing theme: ${themeNameLocal}`)

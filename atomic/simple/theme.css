@@ -1778,7 +1778,7 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: var(--font-family-sans);
+  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
@@ -1800,7 +1800,7 @@ body {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-paragraph: 0.87rem;
+  --font-paragraph: 0.9rem;
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
   --font-print-override: "??";
@@ -2134,12 +2134,12 @@ body {
   --size-4-6: 24px;
   --size-4-8: 32px;
   --size-4-9: 36px;
-  --size-h1: 1.45rem;
-  --size-h2: 1.3rem;
+  --size-h1: 1.75rem;
+  --size-h2: 1.45rem;
   --size-h3: 1.2rem;
   --size-h4: 1rem;
   --size-h5: 0.95rem;
-  --size-h6: var(--font-paragraph);
+  --size-h6: 0.95rem;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
@@ -8015,7 +8015,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10279,27 +10279,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -23967,11 +23967,11 @@ settings:
 /* Main Theme Styling */
 /* ─────────────────────────────────────────────────── */
 body.eis-font-ibm {
-  --font-default: var(--font-family-ibm);
+  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body.eis-font-iawriter-quattro {
-  --font-default: var(--font-family-iawriter-quattro);
+  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: -0.03rem;
 }
 

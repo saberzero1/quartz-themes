@@ -8203,7 +8203,7 @@ select:focus {
 
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator {
   opacity: 1;
@@ -10466,27 +10466,27 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
 
  */
@@ -24063,7 +24063,7 @@ settings:
 ---------------------------------------*/
 /* Rest */
 /*---------------------------------------
-	Documents: Text Properties
+    Documents: Text Properties
   ---------------------------------------*/
 /* Monospace */
 /* Line Width */
@@ -24078,7 +24078,7 @@ settings:
 }
 
 /*---------------------------------------
-	Documents: Text / Headings
+    Documents: Text / Headings
   ---------------------------------------*/
 /* Headings */
 body .markdown-preview-view h6 {
@@ -24128,7 +24128,7 @@ ol p {
 
 /* Lines/Horizontal Rules */
 /*---------------------------------------
-	Documents: Math
+    Documents: Math
   ---------------------------------------*/
 /* Math */
 mjx-container[jax="CHTML"] {
@@ -24150,7 +24150,7 @@ mjx-container[jax="CHTML"] {
 }
 
 /*---------------------------------------
-	Documents: Code
+    Documents: Code
   ---------------------------------------*/
 /* Code blocks */
 code {
@@ -24232,7 +24232,7 @@ pre.line-numbers > code {
 }
 
 /*---------------------------------------
-	Documents: Callouts / Quotes
+    Documents: Callouts / Quotes
   ---------------------------------------*/
 :not(.is-collapsed) > .callout-title:not(:only-child) {
   border-bottom: 2px solid rgba(var(--callout-color), 0.3);
@@ -24259,7 +24259,7 @@ body .markdown-preview-view blockquote {
 }
 
 /*---------------------------------------
-	Documents: Tables / Images / Files
+    Documents: Tables / Images / Files
   ---------------------------------------*/
 /* Tables */
 th {
@@ -24274,10 +24274,10 @@ th {
 
 /* Files */
 /*---------------------------------------
-	Graph
+    Graph
   ---------------------------------------*/
 /*---------------------------------------
-	Interface Elements
+    Interface Elements
   ---------------------------------------*/
 .tooltip:not(.mod-right):not(.mod-left):not(.mod-top) .tooltip-arrow {
   border-bottom-color: var(--background-secondary-alt);

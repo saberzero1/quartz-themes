@@ -638,13 +638,13 @@ mark.line {
 
 /* PRE */
 /* .markdown-rendered pre {
-	position: relative;
-	font-family: var(--font-monospace);
-	padding: 0;
-	min-height: 0;
-	background-color: transparent;
-	border-radius: 0;
-	overflow-x: auto;
+    position: relative;
+    font-family: var(--font-monospace);
+    padding: 0;
+    min-height: 0;
+    background-color: transparent;
+    border-radius: 0;
+    overflow-x: auto;
 } */
 
 /* SUPER/SUBSCRIPT */
