@@ -64,6 +64,11 @@ format-all:
   prettier . --check --cache --write
 
 [private]
+force-format:
+  prettier . --check --write
+  prettier . --check --write --cache
+
+[private]
 lint: format
 
 [private]
