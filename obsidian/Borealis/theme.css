@@ -495,10 +495,30 @@ a.tag[href],
     ul:not(li > ul) > li > ul > li,
     ul:not(li > ul) > li > ul > li > ul > li > ul > li,
     ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
-    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li ul > li > ul > li
+    ul:not(li > ul)
+      > li
+      > ul
+      > li
+      > ul
+      > li
+      > ul
+      > li
+      > ul
+      > li
+      > ul
+      > li
+      ul
+      > li
+      > ul
+      > li
   )
   > .list-bullet::after,
-:is(.HyperMD-list-line-2, .HyperMD-list-line-4, .HyperMD-list-line-6, .HyperMD-list-line-8)
+:is(
+    .HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8
+  )
   .cm-formatting-list-ul
   > .list-bullet::after {
   background-color: transparent;

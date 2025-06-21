@@ -11,8 +11,12 @@
 html[saved-theme="dark"] {
   --background-modifier-border-alt: #303030;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
   --color-base-10: #242424;
@@ -48,8 +52,12 @@ html[saved-theme="dark"] {
   color-scheme: dark;
   --background-modifier-border-alt: #303030;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
   --color-base-10: #242424;
@@ -100,8 +108,12 @@ html[saved-theme="dark"] {
 html[saved-theme="light"] {
   --background-modifier-border-alt: #fff;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #fff;
   --color-base-10: #fafafa;
@@ -134,8 +146,12 @@ html[saved-theme="light"] {
   color-scheme: light;
   --background-modifier-border-alt: #fff;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #fff;
   --color-base-10: #fafafa;
@@ -185,7 +201,8 @@ html[saved-theme="light"] {
   font-weight: 400;
   src:
     local("Nightingale"),
-    url("https://fonts.cdnfonts.com/s/58996/Nightingale Sample.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/58996/Nightingale Sample.woff")
+      format("woff");
 }
 
 /* monaspace-neon-latin-400-normal */
@@ -264,7 +281,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-yellow-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-m);
@@ -307,22 +325,29 @@ body {
   --color-accent-hover: var(--color-accent-2);
   --cursor: default;
   --cursor-link: pointer;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "Satoshi", sans-serif;
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-smaller: 0.875em;
@@ -477,8 +502,12 @@ body {
 html[saved-theme="dark"] {
   --background-modifier-border-alt: #303030;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
   --color-base-10: #242424;
@@ -514,8 +543,12 @@ html[saved-theme="dark"] {
   color-scheme: dark;
   --background-modifier-border-alt: #303030;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
   --color-base-10: #242424;
@@ -567,8 +600,12 @@ html[saved-theme="dark"] {
 html[saved-theme="light"] {
   --background-modifier-border-alt: #fff;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #fff;
   --color-base-10: #fafafa;
@@ -601,8 +638,12 @@ html[saved-theme="light"] {
   color-scheme: light;
   --background-modifier-border-alt: #fff;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #fff;
   --color-base-10: #fafafa;
@@ -798,7 +839,10 @@ html {
   }
 }
 body {
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+  --quartz-text-highlight: var(
+    --text-highlight-bg,
+    var(--background-modifier-hover)
+  ) !important;
   background-color: var(--background-primary);
   section,
   .page > #quartz-body .sidebar {
@@ -832,7 +876,11 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      background-color: color-mix(
+        in srgb,
+        var(--text-a, var(--link-color)),
+        #0000 85%
+      );
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -840,7 +888,10 @@ body {
         background-color: var(
           --tag-background,
           hsla(
-            var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))),
+            var(
+              --interactive-accent-hsl,
+              var(--color-accent-hsl, var(--highlight-fallback))
+            ),
             0.1
           )
         );
@@ -1459,13 +1510,20 @@ body {
   /* PAGE TITLE */
   .page-title,
   .page-title a {
-    color: var(--inline-title-color, var(--h1-color, var(--link-color, var(--darkgray))));
-    font-family: var(--inline-title-font, var(--h1-font, var(--font-text, inherit)));
+    color: var(
+      --inline-title-color,
+      var(--h1-color, var(--link-color, var(--darkgray)))
+    );
+    font-family: var(
+      --inline-title-font,
+      var(--h1-font, var(--font-text, inherit))
+    );
   }
   /* GRAPH */
   .graph {
     & > .graph-outer {
-      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      border: 1px solid
+        var(--background-modifier-border-hover, var(--color-base-35));
       --background-modifier-border-focus: var(--color-base-40);
       & > .global-graph-icon {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1476,7 +1534,8 @@ body {
     }
     & > .global-graph-outer {
       & > .global-graph-container {
-        border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+        border: 1px solid
+          var(--background-modifier-border-hover, var(--color-base-35));
         background-color: var(--background-primary);
       }
     }
@@ -1485,7 +1544,10 @@ body {
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
-    border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
+    border-color: var(
+      --hr-color,
+      var(--background-modifier-border, var(--lightgray))
+    );
   }
   details.toc {
     & summary {
@@ -1613,7 +1675,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #a386f9))
+      )
     )
   ) !important;
 }
@@ -1639,7 +1704,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #c5b6fc))
+      )
     )
   ) !important;
 }

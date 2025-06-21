@@ -483,7 +483,12 @@ pre,
 blockquote:before,
 .markdown-preview-view blockquote {
   border: 2px solid;
-  border-image: linear-gradient(to right bottom, #87ff5f 0, #875faf 45%, rgba(20, 14, 30, 0) 85%);
+  border-image: linear-gradient(
+    to right bottom,
+    #87ff5f 0,
+    #875faf 45%,
+    rgba(20, 14, 30, 0) 85%
+  );
   border-image-slice: 1;
   padding: 10px;
   margin: 1em 0;
@@ -1016,7 +1021,12 @@ ol {
 ol::before {
   content: "";
   border-left: 2px solid;
-  border-image: linear-gradient(to bottom, #87ff5f, #875faf, rgba(20, 14, 30, 0.1));
+  border-image: linear-gradient(
+    to bottom,
+    #87ff5f,
+    #875faf,
+    rgba(20, 14, 30, 0.1)
+  );
   border-image-slice: 1;
   position: absolute;
   top: 0;
@@ -1038,7 +1048,12 @@ cm-hr,
 .markdown-preview-view hr {
   border: none;
   border-top: 2px solid;
-  border-image: linear-gradient(to right, #87ff5f, #875faf, rgba(20, 14, 30, 0.1));
+  border-image: linear-gradient(
+    to right,
+    #87ff5f,
+    #875faf,
+    rgba(20, 14, 30, 0.1)
+  );
   border-image-slice: 1;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -1060,49 +1075,73 @@ hr.workspace-leaf-resize-handle {
 
 /* data view */
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataview
   h4,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataview
   > h4,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   h4,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   > h1,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   > h2,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   > h3,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   > h4,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .block-language-dataviewjs
   > p,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .dataview.dataview-container
   > .contains-task-list,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .dataview.dataview-error,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .dataview.list-view-ul,
 body:not(.table-100):not(.table-max):not(.table-wide)
-  .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide)
+  .markdown-preview-view.is-readable-line-width:not(.table-100):not(
+    .table-max
+  ):not(.table-wide)
   .dataview.result-group {
   /* width fix */
   max-width: 100%;
@@ -1375,7 +1414,10 @@ a:visited {
 }
 
 /* less prominent pinned icon */
-.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-status-icon {
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-status-icon {
   opacity: 0.6 !important;
 }
 
@@ -1388,7 +1430,9 @@ a:visited {
   margin-top: 0px;
 }
 
-.workspace-tabs .workspace-tab-header:not(.is-stacked) .workspace-tab-header-inner {
+.workspace-tabs
+  .workspace-tab-header:not(.is-stacked)
+  .workspace-tab-header-inner {
   box-sizing: border-box !important;
   border-bottom: 4px solid #151515 !important;
   margin: 0px 4px 0 0 !important;
@@ -1396,7 +1440,10 @@ a:visited {
   height: 100%;
 }
 
-.mod-sidedock .workspace-tabs .workspace-tab-header:not(.is-stacked) .workspace-tab-header-inner {
+.mod-sidedock
+  .workspace-tabs
+  .workspace-tab-header:not(.is-stacked)
+  .workspace-tab-header-inner {
   border: 0 !important;
 
   svg {
@@ -1472,8 +1519,12 @@ a:visited {
   }
 }
 
-.is-focused.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused.mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused.mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: #e1d6f8 !important;
 }
 
@@ -1646,7 +1697,9 @@ a:visited {
   }
 }
 
-.workspace-tabs .workspace-tab-header-container .sidebar-toggle-button.mod-right {
+.workspace-tabs
+  .workspace-tab-header-container
+  .sidebar-toggle-button.mod-right {
   padding: 0;
   margin: 0 2px 0px 0px;
   background: transparent !important;
@@ -1836,7 +1889,10 @@ select.dropdown {
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
   );
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   border-inline-start: 2px solid #28163b;
 }
 

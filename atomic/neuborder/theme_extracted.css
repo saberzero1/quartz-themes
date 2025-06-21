@@ -9,11 +9,16 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
-  --shadow-active: inset 3px 3px 3px rgba(0, 0, 0, 0.5),
+  --shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
+  --shadow-active:
+    inset 3px 3px 3px rgba(0, 0, 0, 0.5),
     inset -3px -3px 3px rgba(255, 255, 255, 0.2);
-  --shadow-hover: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.7);
-  --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+  --shadow-hover:
+    inset 3px 3px 3px rgba(0, 0, 0, 0.2),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.7);
+  --shadow-scrollbar:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.15),
     inset -4px -4px 8px rgba(255, 255, 255, 0.7);
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
   --spreadHorizontalWrapped-margin-LR: 3.5px;
@@ -31,14 +36,18 @@ body {
   --anim-duration-none: 0;
   --anim-duration-slow: calc(600ms / var(--anim-speed));
   --anim-duration-superfast: calc(75ms / var(--anim-speed));
-  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
+  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast)
+    var(--anim-motion-swing);
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
+  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow)
+    var(--anim-motion-swing);
   --anim-speed: 1;
-  --background-activated-tab-header-dark: var(--background-modifier-active-hover);
+  --background-activated-tab-header-dark: var(
+    --background-modifier-active-hover
+  );
   --background-activated-tab-header-light: var(--background-primary);
   --background-mod-left-CSS-backdrop-filter-dark: blur(32px);
   --background-mod-left-CSS-backdrop-filter-light: blur(32px);
@@ -82,16 +91,16 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-underlying: var(--background-tertiary);
-  --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light;
+  --background-underlying-CSS-blend-mode-dark:
+    soft-light, luminosity, hue, luminosity, hard-light;
   --background-underlying-CSS-blend-mode-light: overlay, color-burn;
-  --background-underlying-CSS-dark: linear-gradient(
-      317deg,
-      #7037cd 0%,
-      #1d0c20 19%,
-      #651f71 19%,
-      #651f71 33%
+  --background-underlying-CSS-dark:
+    linear-gradient(317deg, #7037cd 0%, #1d0c20 19%, #651f71 19%, #651f71 33%),
+    radial-gradient(
+      100% 100% at 90% 9%,
+      rgb(29, 12, 32) 0%,
+      rgb(29, 12, 32) 100%
     ),
-    radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
     linear-gradient(
       109deg,
       rgb(104, 178, 248) 0%,
@@ -100,8 +109,16 @@ body {
       rgb(104, 178, 248) 54%,
       rgb(104, 178, 248) 65%
     ),
-    radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
-    radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    radial-gradient(
+      100% 100% at 20% 45%,
+      rgb(80, 110, 229) 0%,
+      rgb(101, 31, 113) 100%
+    ),
+    radial-gradient(
+      100% 100% at 90% 27%,
+      rgb(80, 110, 229) 0%,
+      rgb(101, 31, 113) 100%
+    ),
     linear-gradient(
       339deg,
       rgb(101, 31, 113) 0%,
@@ -111,11 +128,8 @@ body {
       rgb(101, 31, 113) 20%,
       rgb(29, 12, 32) 30%
     );
-  --background-underlying-CSS-light: radial-gradient(
-      100% 100% at 13% 50%,
-      #5a6ded 0%,
-      #e0daf7 100%
-    ),
+  --background-underlying-CSS-light:
+    radial-gradient(100% 100% at 13% 50%, #5a6ded 0%, #e0daf7 100%),
     linear-gradient(
       6deg,
       rgb(235, 242, 252) 0%,
@@ -124,8 +138,17 @@ body {
       rgb(224, 218, 247) 11%,
       rgb(90, 109, 237) 16%
     ),
-    radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%),
-    linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%),
+    radial-gradient(
+      100% 100% at 60% 71%,
+      rgb(224, 218, 247) 0%,
+      rgb(219, 244, 255) 100%
+    ),
+    linear-gradient(
+      97deg,
+      rgb(90, 109, 237) 0%,
+      rgb(90, 109, 237) 23%,
+      rgb(90, 109, 237) 53%
+    ),
     linear-gradient(
       351deg,
       rgb(235, 242, 252) 0%,
@@ -135,8 +158,16 @@ body {
       rgb(166, 126, 241) 13%,
       rgb(235, 242, 252) 29%
     ),
-    radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
-    radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
+    radial-gradient(
+      100% 100% at 10% 32%,
+      rgb(90, 109, 237) 0%,
+      rgb(219, 244, 255) 100%
+    ),
+    radial-gradient(
+      100% 100% at 35% 63%,
+      rgb(224, 218, 247) 0%,
+      rgb(224, 218, 247) 100%
+    );
   --background-underlying-dark: var(--background-tertiary);
   --background-underlying-light: var(--background-tertiary);
   --bases-embed-border: 1px solid var(--background-modifier-border);
@@ -195,7 +226,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -221,9 +253,12 @@ body {
   --card-border-radius-dark: 8px;
   --card-border-radius-light: 8px;
   --card-shadow-border-radius-dark: calc(var(--card-border-radius-dark) - 1px);
-  --card-shadow-border-radius-light: calc(var(--card-border-radius-light) - 1px);
+  --card-shadow-border-radius-light: calc(
+    var(--card-border-radius-light) - 1px
+  );
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
-  --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --card-shadow-light:
+    0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
@@ -278,7 +313,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -300,26 +336,33 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -534,8 +577,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -545,7 +590,10 @@ body {
   --mix-blend-mode-on-border-dark: screen;
   --mix-blend-mode-on-border-light: normal;
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -574,7 +622,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -590,7 +639,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -614,7 +664,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -636,9 +689,12 @@ body {
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
-  --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
-  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
-    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
+  --shadow-activated-tab-header-dark: inset 0 0 0 1px
+    var(--background-modifier-border);
+  --shadow-activated-tab-header-light:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2),
+    0 0 0 1px var(--background-modifier-border);
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -1467,9 +1523,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1696,10 +1756,12 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -1710,9 +1772,11 @@ svg.svg-icon {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
@@ -1758,11 +1822,23 @@ svg.svg-icon {
   --color: 0, 0%;
   --color-accent: var(--color-accent-light);
   --color-accent-1: var(--color-accent-1-light);
-  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-1-light: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2.5%)
+  );
   --color-accent-2: var(--color-accent-2-light);
-  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-2-light: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
   --color-accent-3: var(--color-accent-3-light);
-  --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
+  --color-accent-3-light: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l))
+  );
   --color-accent-hsl: var(--color-accent-hsl-light);
   --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -1811,9 +1887,12 @@ svg.svg-icon {
   --input-shadow: var(--shadow);
   --input-shadow-hover: var(--input-shadow-hover-light);
   --input-shadow-hover-light: var(--shadow-hover);
-  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-light:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24),
+    inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --interactive-accent-hover: var(--interactive-accent);
   --interactive-accent-rgb: 32, 171, 233;
   --interactive-hover: var(--color-base-15);
@@ -1825,9 +1904,11 @@ svg.svg-icon {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --search-result-background: transparent;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-error: #ff3333;
   --text-error-hover: #990000;
@@ -1848,21 +1929,26 @@ svg.svg-icon {
   --toggle-thumb-enabled-color: var(--toggle-thumb-enabled-color-light);
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+  --toggle-thumb-enabled-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
     inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
-  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
-    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+  --toggle-thumb-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px rgba(0, 0, 0, 0.1);
   --toggle-track-color: var(--toggle-track-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+  --toggle-track-hovered-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25),
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --toggle-track-shadow: var(--toggle-track-shadow-light);
-  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+  --toggle-track-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25),
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   color-scheme: light;
 }

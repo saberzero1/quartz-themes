@@ -100,8 +100,14 @@ Built with PostCSS and Gulp
   background-color: hsl(240, 7%, 7%);
   background-color: var(--tab-background);
 }
-.workspace-tabs .workspace-tab-header-container .is-before-active .workspace-tab-header-inner,
-.workspace-tabs .workspace-tab-header-container .is-after-active .workspace-tab-header-inner {
+.workspace-tabs
+  .workspace-tab-header-container
+  .is-before-active
+  .workspace-tab-header-inner,
+.workspace-tabs
+  .workspace-tab-header-container
+  .is-after-active
+  .workspace-tab-header-inner {
   background-color: hsl(240, 7%, 7%);
   background-color: var(--tab-background);
 }
@@ -114,7 +120,10 @@ Built with PostCSS and Gulp
   background-color: hsl(240, 7%, 7%);
   background-color: var(--tab-background);
 }
-.workspace-tabs .workspace-tab-header-container .workspace-tab-header .workspace-tab-header-inner {
+.workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header
+  .workspace-tab-header-inner {
   background-color: hsl(240, 7%, 7%);
   background-color: var(--tab-background);
 }
@@ -132,7 +141,10 @@ Built with PostCSS and Gulp
   color: hsl(164, 68%, 72%);
   color: var(--icon-hover);
 }
-.workspace-tabs .workspace-tab-header-container .is-active .workspace-tab-header-inner {
+.workspace-tabs
+  .workspace-tab-header-container
+  .is-active
+  .workspace-tab-header-inner {
   background-color: hsl(240, 7%, 12%) !important;
   background-color: var(--black) !important;
   border-top-left-radius: 20px;
@@ -253,8 +265,14 @@ Built with PostCSS and Gulp
   color: hsl(164, 68%, 72%);
   color: var(--accent);
 }
-.search-result-container .tree-item:hover .tree-item-flair-outer .tree-item-flair,
-.search-result-container .tree-item:focus .tree-item-flair-outer .tree-item-flair {
+.search-result-container
+  .tree-item:hover
+  .tree-item-flair-outer
+  .tree-item-flair,
+.search-result-container
+  .tree-item:focus
+  .tree-item-flair-outer
+  .tree-item-flair {
   color: hsl(240, 7%, 12%);
   color: var(--black);
   background-color: hsl(164, 68%, 72%);
@@ -280,7 +298,10 @@ Built with PostCSS and Gulp
   background-color: hsl(240, 7%, 12%);
   background-color: var(--sidebar-background);
 }
-.search-result-container .tree-item .search-result-file-match .search-result-file-matched-text {
+.search-result-container
+  .tree-item
+  .search-result-file-match
+  .search-result-file-matched-text {
   background-color: hsl(246, 28%, 38%);
   background-color: var(--purple-dark-2);
   color: hsl(212, 61%, 91%);
@@ -394,22 +415,38 @@ Built with PostCSS and Gulp
   border-bottom: 0.5px solid hsl(246, 28%, 48%) !important;
   border-bottom: var(--border) !important;
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-header .view-header-title-container::after {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-header
+  .view-header-title-container::after {
   background: hsl(240, 7%, 7%) !important;
   background: var(--editor-background) !important;
 }
 .mod-root .workspace-leaf .workspace-leaf-content .view-header {
   /* File icon */
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-header .view-header-icon {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-header
+  .view-header-icon {
   color: hsl(211, 19%, 60%);
   color: var(--editor-icons);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-header .view-header-icon:hover {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-header
+  .view-header-icon:hover {
   color: hsl(164, 68%, 72%);
   color: var(--icon-hover);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-header .view-header-title {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-header
+  .view-header-title {
   color: hsl(212, 61%, 91%);
   color: var(--editor-title);
 }
@@ -420,7 +457,11 @@ Built with PostCSS and Gulp
   color: hsl(211, 19%, 60%);
   color: var(--editor-icons);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-header .view-action:hover {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-header
+  .view-action:hover {
   color: hsl(164, 68%, 72%);
   color: var(--icon-hover);
 }
@@ -433,7 +474,11 @@ Built with PostCSS and Gulp
 
   /* Empty window content */
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .empty-state-container {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .empty-state-container {
   color: hsl(211, 19%, 60%);
   color: var(--text-mute);
 }
@@ -458,7 +503,11 @@ Built with PostCSS and Gulp
 .mod-root .workspace-leaf .workspace-leaf-content .view-content {
   /* -------------------------------- Editor styles */
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   font-size: 0.9rem;
   font-size: var(--par);
 }
@@ -470,7 +519,11 @@ Built with PostCSS and Gulp
   .CodeMirror-cursors {
   z-index: 100;
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /* Cursor insert mode */
 }
 .mod-root
@@ -479,11 +532,21 @@ Built with PostCSS and Gulp
   .view-content
   .markdown-source-view
   .CodeMirror-cursor,
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view .cm-cursor {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view
+  .cm-cursor {
   border-left: 1px solid hsl(164, 68%, 72%);
   border-left: 1px solid var(--accent);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view .CodeMirror,
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view
+  .CodeMirror,
 .mod-root
   .workspace-leaf
   .workspace-leaf-content
@@ -492,7 +555,11 @@ Built with PostCSS and Gulp
   .cm-contentContainer {
   max-width: 70vw;
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /* Cursor normal */
 }
 .mod-root
@@ -506,7 +573,11 @@ Built with PostCSS and Gulp
   background: var(--accent);
   z-index: 100;
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /*  live preview */
 }
 .mod-root
@@ -519,7 +590,11 @@ Built with PostCSS and Gulp
   background: hsl(164, 68%, 72%);
   background: var(--accent);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /* Gutters Desktop */
 }
 .mod-root
@@ -543,10 +618,19 @@ Built with PostCSS and Gulp
   font-size: 0.9rem;
   font-size: var(--par);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /* Gutters Mobile */
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view .cm-gutters {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view
+  .cm-gutters {
   background-color: hsl(240, 7%, 7%) !important;
   background-color: var(--editor-background) !important;
 }
@@ -584,7 +668,11 @@ Built with PostCSS and Gulp
   color: hsl(246, 28%, 33%);
   color: var(--line-number);
 }
-.mod-root .workspace-leaf .workspace-leaf-content .view-content .markdown-source-view {
+.mod-root
+  .workspace-leaf
+  .workspace-leaf-content
+  .view-content
+  .markdown-source-view {
   /* Content styles */
   /* See _text-styles.scss */
 

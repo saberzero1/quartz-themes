@@ -99,7 +99,8 @@ body {
   --callout-gallery-gap: 5px;
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: 4px;
@@ -185,7 +186,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -207,8 +209,10 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-folder-file-title: var(--font-default);
@@ -216,22 +220,27 @@ body {
   --font-family-tag: var(--font-default);
   --font-family-vault: var(--font-default);
   --font-family-vertical-bar: var(--font-default);
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: var(--font-default);
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-size-code: 1em;
@@ -456,8 +465,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -465,7 +476,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -494,7 +508,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -510,7 +525,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -534,7 +550,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -1393,9 +1412,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1676,11 +1699,15 @@ svg.svg-icon {
   --graph-line-highlight: light-dark(#, #);
   --highlight-mix-blend-mode: none;
   --icon-color-focused: var(--color-accent);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
-    0 2px 4px 0 rgba(var(--exterior), 0.15), 0 1px 1.5px 0 rgba(var(--exterior), 0.1),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
+    0 2px 4px 0 rgba(var(--exterior), 0.15),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.1),
     0 1px 2px 0 rgba(var(--exterior), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
-    0 2px 3px 0 rgba(var(--exterior), 0.3), 0 1px 1.5px 0 rgba(var(--exterior), 0.2),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
+    0 2px 3px 0 rgba(var(--exterior), 0.3),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.2),
     0 1px 2px 0 rgba(var(--exterior), 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
@@ -1699,10 +1726,14 @@ svg.svg-icon {
   --overlay2: 148, 155, 183;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--exterior), 0.071),
-    0px 6.3px 24.7px rgba(var(--exterior), 0.112), 0px 30px 90px rgba(var(--exterior), 0.2);
-  --shadow-s: 0px 1px 2px rgba(var(--exterior), 0.121),
-    0px 3.4px 6.7px rgba(var(--exterior), 0.179), 0px 15px 30px rgba(var(--exterior), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--exterior), 0.071),
+    0px 6.3px 24.7px rgba(var(--exterior), 0.112),
+    0px 30px 90px rgba(var(--exterior), 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(var(--exterior), 0.121),
+    0px 3.4px 6.7px rgba(var(--exterior), 0.179),
+    0px 15px 30px rgba(var(--exterior), 0.3);
   --shib-speech-bubble-opacity: var(--shib-sp-op-dark, 0.9);
   --side: 38, 42, 58;
   --subtext0: 165, 172, 201;
@@ -1829,11 +1860,15 @@ svg.svg-icon {
   --graph-line-highlight: light-dark(#, #);
   --highlight-mix-blend-mode: none;
   --icon-color-focused: var(--color-accent);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
-    0 2px 4px 0 rgba(var(--exterior), 0.15), 0 1px 1.5px 0 rgba(var(--exterior), 0.1),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
+    0 2px 4px 0 rgba(var(--exterior), 0.15),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.1),
     0 1px 2px 0 rgba(var(--exterior), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
-    0 2px 3px 0 rgba(var(--exterior), 0.3), 0 1px 1.5px 0 rgba(var(--exterior), 0.2),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
+    0 2px 3px 0 rgba(var(--exterior), 0.3),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.2),
     0 1px 2px 0 rgba(var(--exterior), 0.4), 0 0 0 0 transparent;
   --interactive-hover: rgb(var(--surface1));
   --interactive-normal: rgb(var(--surface0));
@@ -1848,10 +1883,14 @@ svg.svg-icon {
   --overlay0: 156, 160, 176;
   --overlay1: 140, 143, 161;
   --overlay2: 76, 79, 105;
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--exterior), 0.071),
-    0px 6.3px 24.7px rgba(var(--exterior), 0.112), 0px 30px 90px rgba(var(--exterior), 0.2);
-  --shadow-s: 0px 1px 2px rgba(var(--exterior), 0.121),
-    0px 3.4px 6.7px rgba(var(--exterior), 0.179), 0px 15px 30px rgba(var(--exterior), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--exterior), 0.071),
+    0px 6.3px 24.7px rgba(var(--exterior), 0.112),
+    0px 30px 90px rgba(var(--exterior), 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(var(--exterior), 0.121),
+    0px 3.4px 6.7px rgba(var(--exterior), 0.179),
+    0px 15px 30px rgba(var(--exterior), 0.3);
   --shib-speech-bubble-opacity: var(--shib-sp-op-light, 0.5);
   --side: 243, 236, 243;
   --subtext0: 108, 111, 133;

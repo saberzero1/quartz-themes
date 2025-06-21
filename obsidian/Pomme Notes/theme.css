@@ -28,7 +28,8 @@ settings:
 */
 
 body {
-  --font-family-system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
+  --font-family-system:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
@@ -124,11 +125,15 @@ body.is-phone {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle {
   max-height: calc(100vh - 45px);
 }
 
-body:not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+body:not(.is-mobile)
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
   max-height: calc(100vh - 45px);
 }
 
@@ -136,7 +141,8 @@ body:not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-h
   height: calc(var(--header-height) + 1px);
 }
 
-.workspace-split.mod-vertical.mod-root .workspace-tab-header-inner-close-button {
+.workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-inner-close-button {
   order: -1;
   margin-right: -22px;
 }
@@ -229,7 +235,9 @@ body.is-tablet .mod-root .workspace-tab-header {
   border-radius: 10px;
 }
 
-.workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon {
+.workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner-icon {
   display: none !important;
 }
 
@@ -365,7 +373,11 @@ body.is-phone .nav-file-title {
 
 .markdown-preview-view mark,
 .cm-s-obsidian span.cm-highlight {
-  background-color: color-mix(in srgb, var(--color-accent) 20%, white 10%) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--color-accent) 20%,
+    white 10%
+  ) !important;
   color: var(--color-accent);
   padding: 2px 4px !important;
   border-radius: 3px !important;
@@ -979,7 +991,10 @@ body {
   --checklist-done-color: #888888;
 }
 
-body.is-mobile.theme-dark .mobile-toolbar .mobile-navbar-action .clickable-icon {
+body.is-mobile.theme-dark
+  .mobile-toolbar
+  .mobile-navbar-action
+  .clickable-icon {
   filter: drop-shadow(0 0 4px black);
 }
 
@@ -1265,8 +1280,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;

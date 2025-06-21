@@ -64,12 +64,17 @@
   font-style: italic;
 }
 body {
-  --font-default: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+  --font-default:
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-monospace:
+    "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
-  --font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-interface:
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   --font-ui-small: 14px;
   --font-text-size: 16px;
   --line-height-normal: 1.5;
@@ -269,7 +274,11 @@ body {
   font-weight: 400 !important;
   text-transform: capitalize;
 }
-.markdown-reading-view .markdown-preview-view .mod-header + div > h1:first-of-type {
+.markdown-reading-view
+  .markdown-preview-view
+  .mod-header
+  + div
+  > h1:first-of-type {
   color: var(--text-accent);
 }
 .HyperMD-header.HyperMD-header-1:first-of-type {
@@ -412,7 +421,8 @@ tbody tr + tr {
   background-color: var(--background-secondary);
   gap: 0;
 }
-.metadata-container:not(.metadata-container.is-collapsed) .metadata-properties-title {
+.metadata-container:not(.metadata-container.is-collapsed)
+  .metadata-properties-title {
   font-weight: bold;
 }
 .metadata-property,
@@ -591,7 +601,9 @@ body {
   background-color: var(--nav-item-background-hover);
   border-left: 3px solid var(--text-accent);
 }
-.mod-root .tree-item:not(.tree-item.nav-folder.is-collapsed) .tree-item-self.nav-folder-title {
+.mod-root
+  .tree-item:not(.tree-item.nav-folder.is-collapsed)
+  .tree-item-self.nav-folder-title {
   background-color: var(--nav-item-background-hover);
   border-left: 3px solid var(--text-accent);
 }

@@ -1,6 +1,76 @@
 import fs from "fs";
 import { applyRuleToString, ensureDirectoryExists } from "./util.mjs";
 import { combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
+import * as prettier from "prettier"
+
+/**
+ * Writes a CSS or SCSS file with Prettier formatting.
+ * This function checks the file extension and applies the appropriate Prettier formatting.
+ *
+ * @param {string} file - The path to the CSS or SCSS file.
+ * @param {string} content - The CSS or SCSS content to write to the file.
+ * @param {string} [encoding="utf8"] - The encoding to use when writing the file.
+ * @return {void} Writes the formatted content to the specified file.
+ */
+export async function writePrettier(file, content, encoding = "utf8") {
+  /*const extension = file.split(".").pop();
+  if (extension === "css" || extension === "scss") {
+    if (extension === "css") {
+      content = prettierCSS(content);
+    } else if (extension === "scss") {
+      content = prettierSCSS(content);
+    }
+  }*/
+  fs.writeFileSync(file, content, encoding);
+}
+
+/**
+ * Formats CSS using Prettier.
+ *
+ * @param {string} css - The CSS string to format.
+ * @return {string} The formatted CSS string.
+ * @throws {Error} If Prettier fails to format the CSS.
+ */
+export async function prettierCSS(css) {
+  try {
+    return await prettier.format(css, {
+      parser: "css",
+      printWidth: 80,
+      tabWidth: 2,
+      useTabs: false,
+      semi: false,
+      trailingComma: "all",
+      quoteProps: "as-needed",
+    });
+  } catch (error) {
+    console.error("Error formatting CSS with Prettier:", error);
+    return css; // Return unformatted CSS if Prettier fails
+  }
+}
+
+/**
+ * Formats SCSS using Prettier.
+ *
+ * @param {string} scss - The SCSS string to format.
+ * @return {string} The formatted SCSS string.
+ * @throws {Error} If Prettier fails to format the SCSS.
+ */
+export async function prettierSCSS(scss) {
+  try {
+    return await prettier.format(scss, {
+      parser: "scss",
+      printWidth: 80,
+      tabWidth: 2,
+      useTabs: false,
+      semi: false,
+      trailingComma: "all",
+      quoteProps: "as-needed",
+    });
+  } catch (error) {
+    console.error("Error formatting SCSS with Prettier:", error);
+    return scss; // Return unformatted SCSS if Prettier fails
+  }
+}
 
 /**
  * Splits combined CSS rules into individual rules.
@@ -18,6 +88,13 @@ let result = `${base}\n${inject}`
     return result;
 }
 
+/**
+ * Writes the index.scss file for a theme with the provided theme CSS.
+ *
+ * @param {string} themeName - The name of the theme.
+ * @param {string} themeCSS - The CSS string for the theme.
+ * @return {void} Writes the processed CSS to the _index.scss file in the theme directory.
+ */
 export function writeIndex(themeName, themeCSS) {
   let resultCSS = fs.readFileSync(`./themes/${themeName}/_index.scss`, "utf8")
   resultCSS = applyRuleToString(resultCSS, ":root", "//%%ROOT%%", themeCSS)
@@ -459,9 +536,20 @@ export function writeIndex(themeName, themeCSS) {
   // Write the result to the _index.scss file
   resultCSS = resultCSS.replace(/\n+/g, "\n") // Remove extra newlines
   resultCSS = resultCSS.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
-  fs.writeFileSync(`./themes/${themeName}/_index.scss`, resultCSS, "utf8")
+  writePrettier(`./themes/${themeName}/_index.scss`, resultCSS, "utf8")
 }
 
+/**
+ * Writes the style settings to a theme's extras directory.
+ * This function creates the necessary directories if they do not exist
+  *
+  * @param {Array} styleRulesCSS - An array containing three CSS strings for the style setting.
+  * @param {string} themeName - The name of the theme.
+  * @param {string} settingName - The name of the style setting.
+  * @param {string} [subPath=""] - Optional subdirectory path within the theme's extras directory.
+  * @return {void} Writes the CSS rules to the _index.scss file in the specified theme and setting directory.
+  * @throws {Error} If the styleRulesCSS array does not contain three valid CSS strings.
+  */
 export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPath = "") {
   if (styleRulesCSS[0] !== "" || styleRulesCSS[1] !== "" || styleRulesCSS[2] !== "") return
   subPath = subPath.endsWith("/") ? subPath.slice(0, -1) : subPath
@@ -469,17 +557,17 @@ export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPat
 
   ensureDirectoryExists(`./extras/themes/${themeName}/${settingName}/${subPath}`)
   // Write the style setting to the extras file
-  fs.writeFileSync(
+  writePrettier(
     `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
     styleRulesCSS[0],
     "utf8",
   )
-  fs.writeFileSync(
+  writePrettier(
     `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
     styleRulesCSS[1],
     "utf8",
   )
-  fs.writeFileSync(
+  writePrettier(
     `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
     styleRulesCSS[2],
     "utf8",

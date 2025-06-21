@@ -96,7 +96,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -171,7 +172,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -184,7 +186,8 @@ body {
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
   --file-folding-offset: 24px;
-  --file-header-border: var(--mu-file-header-border-width) solid var(--mu-file-header-border-color);
+  --file-header-border: var(--mu-file-header-border-width) solid
+    var(--mu-file-header-border-color);
   --file-header-font: var(--font-interface);
   --file-header-font-size: var(--font-ui-medium);
   --file-header-font-weight: 600;
@@ -195,26 +198,33 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -431,8 +441,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: transparent;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -481,7 +493,9 @@ body {
   --mu-dark-sidebar-color: #001122;
   --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
   --mu-default-mode-border-value: 1;
-  --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
+  --mu-default-mode-border-width: calc(
+    var(--mu-default-mode-border-value) * 1px
+  );
   --mu-divider-color-hover: light-dark(#007fff, #007fff);
   --mu-divider-hover-width-value: 3;
   --mu-divider-width-value: 1;
@@ -502,9 +516,11 @@ body {
   --mu-folder-icon-opened-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>');
   --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-default);
   --mu-folder-icon-opened-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
-  --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
+  --mu-font-headings:
+    -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --mu-font-mono: JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace;
+  --mu-font-mono:
+    JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace;
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
   --mu-footnote-color: light-dark(#f07f48, #f07f48);
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
@@ -513,10 +529,14 @@ body {
   --mu-global-font-stylistic-set: normal;
   --mu-header-title-drag: no-drag;
   --mu-hover-underline-color: light-dark(#ff0000cf, #ff0000cf);
-  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value) * 1px);
+  --mu-hover-underline-offset: calc(
+    var(--mu-hover-underline-offset-value) * 1px
+  );
   --mu-hover-underline-offset-value: 2;
   --mu-hover-underline-style: solid;
-  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value) * 1px);
+  --mu-hover-underline-thickness: calc(
+    var(--mu-hover-underline-thickness-value) * 1px
+  );
   --mu-hover-underline-thickness-value: 2;
   --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
   --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
@@ -525,7 +545,9 @@ body {
   --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
   --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
   --mu-inline-code-border: light-dark(#0072d3, #0072d3);
-  --mu-inline-title-font-size: calc(var(--mu-inline-title-font-size-value) * 1em);
+  --mu-inline-title-font-size: calc(
+    var(--mu-inline-title-font-size-value) * 1em
+  );
   --mu-inline-title-font-size-value: 0.88;
   --mu-laser-area: calc(var(--mu-laser-area-value) * 1px);
   --mu-laser-area-value: 82;
@@ -560,16 +582,24 @@ body {
   --mu-rainbow-hue-8: calc(var(--mu-rainbow-hue-1) + 210);
   --mu-rainbow-hue-9: calc(var(--mu-rainbow-hue-1) + 240);
   --mu-rainbow-hue-start-value: 0;
-  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
+  --mu-reading-glow-border-size: calc(
+    var(--mu-reading-glow-border-size-value) * 1px
+  );
   --mu-reading-glow-border-size-value: 3;
   --mu-reading-glow-color: #00a3ff;
   --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
   --mu-reading-glow-radius-value: 1;
   --mu-reading-indicator-color: light-dark(#007fffa3, #007fffa3);
-  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
+  --mu-reading-indicator-width: calc(
+    var(--mu-reading-indicator-width-value-rem) * -1rem
+  );
   --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-scrollbar-thumb-size: calc(var(--mu-scrollbar-thumb-size-adjusted-value) * 1px);
-  --mu-scrollbar-thumb-size-adjusted-value: calc(12 - var(--mu-scrollbar-thumb-size-value));
+  --mu-scrollbar-thumb-size: calc(
+    var(--mu-scrollbar-thumb-size-adjusted-value) * 1px
+  );
+  --mu-scrollbar-thumb-size-adjusted-value: calc(
+    12 - var(--mu-scrollbar-thumb-size-value)
+  );
   --mu-scrollbar-thumb-size-value: 10;
   --mu-scrollbar-track-bg: light-dark(#ffffff00, #00000000);
   --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
@@ -580,16 +610,22 @@ body {
   --mu-sidebar-top-buttons-container-bg-color: light-dark(#d1dfff, #001122);
   --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
   --mu-stacked-mode-border-value: 1;
-  --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
+  --mu-stacked-mode-border-width: calc(
+    var(--mu-stacked-mode-border-value) * 1px
+  );
   --mu-style-settings-indent-color-1: #007fff7f;
   --mu-style-settings-indent-color-2: #d372ff7f;
   --mu-style-settings-indent-color-3: #ff7f007f;
   --mu-suggestion-search-panel-bg-color: light-dark(#d1dfff, #001122);
   --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
   --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-inner-border-width: calc(var(--mu-table-inner-border-width-value) * 1px);
+  --mu-table-inner-border-width: calc(
+    var(--mu-table-inner-border-width-value) * 1px
+  );
   --mu-table-inner-border-width-value: 0;
-  --mu-table-outer-border-width: calc(var(--mu-table-outer-border-width-value) * 1px);
+  --mu-table-outer-border-width: calc(
+    var(--mu-table-outer-border-width-value) * 1px
+  );
   --mu-table-outer-border-width-value: 2;
   --mu-table-row-hover: light-dark(#0088ff33, #0088ff33);
   --mu-table-th-background: light-dark(#004882, #004882);
@@ -599,7 +635,9 @@ body {
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value) * 1px);
   --mu-tags-hashtag-padding-value: 2;
   --mu-titlebar-button-fg: var(--mu-icon);
-  --mu-transparency-blur-level: calc(var(--mu-transparency-blur-level-value) * 1px);
+  --mu-transparency-blur-level: calc(
+    var(--mu-transparency-blur-level-value) * 1px
+  );
   --mu-transparency-blur-level-value: 8;
   --mu-transparency-menus-level: 0.5;
   --mu-underline-text-color-rgb: 255, 40, 72;
@@ -626,7 +664,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -640,7 +679,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -1526,9 +1566,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1757,10 +1801,12 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: normal;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -1829,9 +1875,11 @@ svg.svg-icon {
   --mu-vault-title: light-dark(#a300cf, #a273d8);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tab-divider-color: #003364;
   --text-accent: var(--color-accent-1);
@@ -1900,10 +1948,14 @@ svg.svg-icon {
   --color-yellow-rgb: 224, 172, 0;
   --graph-node-focused: light-dark(#0048a3, #00cfff);
   --highlight-mix-blend-mode: normal;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --interactive-hover: var(--background-modifier-hover);
   --interactive-normal: var(--mu-background-color-2);
   --mono-rgb-0: 255, 255, 255;
@@ -1966,9 +2018,11 @@ svg.svg-icon {
   --mu-titlebar-background: light-dark(#003388, #003388);
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tab-divider-color: #003364;
   --text-muted: #353535;

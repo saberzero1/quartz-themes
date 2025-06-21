@@ -1044,7 +1044,9 @@ button.mod-warning:hover {
   padding-top: 12px;
 }
 
-.mod-root .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active) {
+.mod-root
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:not(.is-active) {
   background-color: var(--color-base-20);
   color: var(--main-ink);
   --background-modifier-hover: var(--color-base-25);
@@ -1157,8 +1159,15 @@ button.mod-warning:hover {
   background-color: var(--color-base-10);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header,
 .workspace
   .mod-root
   .workspace-tabs.mod-stacked
@@ -1237,7 +1246,9 @@ button.mod-warning:hover {
   background-color: var(--color-base-10);
 }
 
-.is-mobile .workspace-drawer .clickable-icon.workspace-drawer-active-tab-chevron,
+.is-mobile
+  .workspace-drawer
+  .clickable-icon.workspace-drawer-active-tab-chevron,
 .is-mobile .setting-item-control .clickable-icon {
   color: var(--color-base-50);
 }

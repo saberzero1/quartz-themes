@@ -4,8 +4,10 @@
 
 /* basic variables --- the first certain design choices */
 body {
-  --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
+  --font-default:
+    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
+    sans-serif;
   --text-on-accent: white !important;
   --modal-border-color: var(--background-modifier-border) !important;
   --collapse-icon-color-collapsed: var(--text-muted) !important;
@@ -125,7 +127,11 @@ svg.svg-icon.lucide-book-open {
     calc(var(--accent-s) - 27%),
     calc(var(--accent-l) - 6%)
   );
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
+  --color-accent-2: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 30%),
+    calc(var(--accent-l) - 8%)
+  );
 }
 .theme-dark,
 .is-mobile.theme-dark {
@@ -291,11 +297,16 @@ body {
 /* remove background */
 
 /* ---> make the tabs above the notes "disappear", while leaving the file explorer tabs <----- */
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+    :hover
+  ) {
   margin: 0;
   height: 5px;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) > * {
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+    :hover
+  )
+  > * {
   opacity: 0;
 }
 
@@ -303,25 +314,32 @@ body {
 .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   transition: 0.15s;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+    :hover
+  ) {
   transition-delay: 0.15s;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover > * {
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover
+  > * {
   transition: 0.3s;
 }
 
 /* ----- **** Tab Classes (Style Settings **** ---- */
 
 /* --- *** Hide Tabs *** --- */
-.hide-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+.hide-tabs
+  .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   display: none;
 }
 
 /* --- *** Show Tabs *** --- */
-.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+.show-tabs
+  .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   height: var(--header-height);
 }
-.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) > * {
+.show-tabs
+  .workspace-tab-header-container:not(:has([data-type="file-explorer"]))
+  > * {
   opacity: 1;
 }
 
@@ -388,8 +406,12 @@ body:not(.is-mobile) .view-header {
 }
 
 /* hide navigation arrows */
-.hide-arrows .view-header-nav-buttons .clickable-icon[aria-label="Navigate back"],
-.hide-arrows view-header-nav-buttons .clickable-icon[aria-label="Navigate forward"] {
+.hide-arrows
+  .view-header-nav-buttons
+  .clickable-icon[aria-label="Navigate back"],
+.hide-arrows
+  view-header-nav-buttons
+  .clickable-icon[aria-label="Navigate forward"] {
   display: none !important;
 }
 

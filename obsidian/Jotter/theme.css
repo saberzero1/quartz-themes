@@ -586,7 +586,9 @@ body {
 }
 
 .view-header:hover .view-header-title-container,
-.workspace-tab-header-container:hover + .workspace-tab-container .view-header-title-container {
+.workspace-tab-header-container:hover
+  + .workspace-tab-container
+  .view-header-title-container {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
@@ -729,7 +731,8 @@ mark {
   border-color: var(--text-accent);
 }
 
-.kanban-plugin__item-prefix-button-wrapper > input[type="checkbox"]:checked:after {
+.kanban-plugin__item-prefix-button-wrapper
+  > input[type="checkbox"]:checked:after {
   -webkit-mask-position: 30% 40%;
 }
 
@@ -830,7 +833,11 @@ table.dataview th > span,
 }
 
 .markdown-preview-view th,
-.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th,
 .table-view-table > thead > tr > th {
   padding: 0.3em 0;
   border-color: var(--background-modifier-border);

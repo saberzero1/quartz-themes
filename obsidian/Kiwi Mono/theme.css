@@ -155,10 +155,26 @@ body {
   --text-faint: #bbb;
 
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 30%);
-  --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 50%);
-  --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 80%);
-  --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 95%) 90%);
+  --accent-tint-1: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 30%
+  );
+  --accent-tint-2: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 50%
+  );
+  --accent-tint-3: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 80%
+  );
+  --accent-tint-4: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 95%) 90%
+  );
   --accent-shade-1: color-mix(
     in lch,
     var(--accent),
@@ -209,10 +225,26 @@ body {
     var(--accent),
     hsl(var(--accent-h), var(--accent-s), 95%) 90%
   );
-  --accent-tint-1: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 20%);
-  --accent-tint-2: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 40%);
-  --accent-tint-3: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 80%);
-  --accent-tint-4: color-mix(in lch, var(--accent), hsl(var(--accent-h), var(--accent-s), 10%) 90%);
+  --accent-tint-1: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 20%
+  );
+  --accent-tint-2: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 40%
+  );
+  --accent-tint-3: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 80%
+  );
+  --accent-tint-4: color-mix(
+    in lch,
+    var(--accent),
+    hsl(var(--accent-h), var(--accent-s), 10%) 90%
+  );
 }
 
 /* contents/blockquote.css */

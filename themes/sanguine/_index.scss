@@ -67,9 +67,11 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--col-important);
   --interactive-accent-hsl: var(--col-accent);
   --mono-rgb-100: 255, 255, 255;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--col-accent-plus);
   --text-accent-hover: var(--col-important-plus);
@@ -135,9 +137,11 @@ html[saved-theme="dark"] {
   --interactive-accent-hover: var(--col-important);
   --interactive-accent-hsl: var(--col-accent);
   --mono-rgb-100: 255, 255, 255;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--col-accent-plus);
   --text-accent-hover: var(--col-important-plus);
@@ -168,7 +172,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm-ALyOA.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm-ALyOA.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D";
@@ -176,7 +181,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film 3D"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3D-qZLd5.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3D-qZLd5.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D Italic";
@@ -184,7 +190,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film 3D Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DItalic-VGAjB.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DItalic-VGAjB.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D Semi-Italic";
@@ -192,7 +199,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film 3D Semi-Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DSemiItalic-JRx6M.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DSemiItalic-JRx6M.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed";
@@ -200,7 +208,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Condensed"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensed-GOxjg.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensed-GOxjg.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed Italic";
@@ -208,7 +217,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Condensed Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedItalic-jE2M0.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedItalic-jE2M0.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed Semi-It";
@@ -216,7 +226,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Condensed Semi-It"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedSemiIt-z8EW4.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedSemiIt-z8EW4.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded";
@@ -224,7 +235,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Expanded"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpanded-51VdV.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpanded-51VdV.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded Italic";
@@ -232,7 +244,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Expanded Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedItalic-7BGLB.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedItalic-7BGLB.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded Semi-It";
@@ -240,7 +253,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Expanded Semi-It"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedSemiIt-mL7v2.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedSemiIt-mL7v2.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Italic";
@@ -248,7 +262,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmItalic-d9B1x.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmItalic-d9B1x.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Leftalic";
@@ -256,7 +271,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Leftalic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmLeftalic-PKxjZ.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmLeftalic-PKxjZ.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough";
@@ -264,7 +280,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough-L3xjE.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough-L3xjE.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D";
@@ -272,7 +289,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough 3D"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3D-X3zjZ.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3D-X3zjZ.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D Italic";
@@ -280,7 +298,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough 3D Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DItalic-gxr8p.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DItalic-gxr8p.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D SemItal";
@@ -288,7 +307,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough 3D SemItal"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DSemital-owd7o.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DSemital-owd7o.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Cond SemiIt";
@@ -296,7 +316,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Cond SemiIt"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondSemiit-eZ8Rn.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondSemiit-eZ8Rn.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Conden Ital";
@@ -304,7 +325,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Conden Ital"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondenItal-0WV9G.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondenItal-0WV9G.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Condensed";
@@ -312,7 +334,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Condensed"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondensed-4BVmW.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondensed-4BVmW.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Exp SemItal";
@@ -320,7 +343,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Exp SemItal"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpSemital-Eaxj8.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpSemital-Eaxj8.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Expand Ital";
@@ -328,7 +352,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Expand Ital"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpandItal-axnjg.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpandItal-axnjg.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Expanded";
@@ -336,7 +361,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Expanded"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpanded-WyGjO.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpanded-WyGjO.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Italic";
@@ -344,7 +370,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughItalic-OVxjp.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughItalic-OVxjp.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Leftalic";
@@ -352,7 +379,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Leftalic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughLeftalic-ZVxjz.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughLeftalic-ZVxjz.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Semi-Italic";
@@ -360,7 +388,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Semi-Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiItalic-x3W0q.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiItalic-x3W0q.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Semi-Leftal";
@@ -368,7 +397,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Rough Semi-Leftal"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiLeftal-3zV78.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiLeftal-3zV78.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Semi-Italic";
@@ -376,7 +406,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Semi-Italic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiItalic-DOxjR.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiItalic-DOxjR.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Semi-Leftalic";
@@ -384,7 +415,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("Slasher Film Semi-Leftalic"),
-    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff")
+      format("woff");
 }
 
 :root {
@@ -419,7 +451,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -463,19 +496,25 @@ body {
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor: default;
   --cursor-link: pointer;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-interface: var(--fnt-head-p);
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
@@ -562,12 +601,16 @@ body {
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
   --p-spacing: 1rem;
   --popover-max-height: 95vh;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --radius-l: 12px;
@@ -681,9 +724,11 @@ html {
   --interactive-accent-hover: var(--col-important);
   --interactive-accent-hsl: var(--col-accent);
   --mono-rgb-100: 255, 255, 255;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--col-accent-plus);
   --text-accent-hover: var(--col-important-plus);
@@ -749,9 +794,11 @@ html {
   --interactive-accent-hover: var(--col-important);
   --interactive-accent-hsl: var(--col-accent);
   --mono-rgb-100: 255, 255, 255;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--col-accent-plus);
   --text-accent-hover: var(--col-important-plus);
@@ -924,7 +971,10 @@ html {
   }
 }
 body {
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+  --quartz-text-highlight: var(
+    --text-highlight-bg,
+    var(--background-modifier-hover)
+  ) !important;
   background-color: var(--background-primary);
   section,
   .page > #quartz-body .sidebar {
@@ -958,7 +1008,11 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      background-color: color-mix(
+        in srgb,
+        var(--text-a, var(--link-color)),
+        #0000 85%
+      );
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -966,7 +1020,10 @@ body {
         background-color: var(
           --tag-background,
           hsla(
-            var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))),
+            var(
+              --interactive-accent-hsl,
+              var(--color-accent-hsl, var(--highlight-fallback))
+            ),
             0.1
           )
         );
@@ -1575,13 +1632,20 @@ body {
   /* PAGE TITLE */
   .page-title,
   .page-title a {
-    color: var(--inline-title-color, var(--h1-color, var(--link-color, var(--darkgray))));
-    font-family: var(--inline-title-font, var(--h1-font, var(--font-text, inherit)));
+    color: var(
+      --inline-title-color,
+      var(--h1-color, var(--link-color, var(--darkgray)))
+    );
+    font-family: var(
+      --inline-title-font,
+      var(--h1-font, var(--font-text, inherit))
+    );
   }
   /* GRAPH */
   .graph {
     & > .graph-outer {
-      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      border: 1px solid
+        var(--background-modifier-border-hover, var(--color-base-35));
       --background-modifier-border-focus: var(--color-base-40);
       & > .global-graph-icon {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1592,7 +1656,8 @@ body {
     }
     & > .global-graph-outer {
       & > .global-graph-container {
-        border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+        border: 1px solid
+          var(--background-modifier-border-hover, var(--color-base-35));
         background-color: var(--background-primary);
       }
     }
@@ -1601,7 +1666,10 @@ body {
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
-    border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
+    border-color: var(
+      --hr-color,
+      var(--background-modifier-border, var(--lightgray))
+    );
   }
   details.toc {
     & summary {
@@ -1728,7 +1796,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #c5b6fc))
+      )
     )
   ) !important;
 }

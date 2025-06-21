@@ -58,7 +58,10 @@ body {
   clear: both;
   padding: 0.5rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  );
   grid-column-gap: 0.75rem;
   grid-row-gap: 0.75rem;
 }
@@ -89,12 +92,20 @@ body {
 }
 
 /* Styling elements inside cards */
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .trim-cols .cards table.dataview tbody > tr > td {
   white-space: normal;
 }
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .cards table.dataview tbody > tr > td {
   border-bottom: none;
   padding: 0 !important;
@@ -403,7 +414,8 @@ body {
   --callout-border-opacity: 25%;
   --callout-border-width: 0px;
   --callout-border-color: rgb(var(--callout-color));
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: normal;
   --callout-title-color: inherit;
@@ -698,7 +710,8 @@ h6,
 }
 /* FLOATING-BOX-SHADOW */
 body {
-  --floating-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
+  --floating-box-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
     0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
     0 12px 33.4px rgba(0, 0, 0, 0.03), 0 20px 80px rgba(0, 0, 0, 0.02);
 }
@@ -767,9 +780,17 @@ tbody > tr {
   --color-base-10: hsl(calc(0 + var(--accent-h)), 30%, 95.9%);
   --color-base-20: hsl(calc(0 + var(--accent-h)), 40%, 94.5%);
   --color-base-25: hsl(calc(0 + var(--accent-h)), 80%, 42%);
-  --color-base-30: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%);
+  --color-base-30: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 55%),
+    89%
+  );
   --color-base-35: hsl(calc(0 + var(--accent-h)), 70%, 88%);
-  --color-base-40: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%);
+  --color-base-40: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 15%),
+    86%
+  );
   --color-base-50: hsl(calc(0 + var(--accent-h)), 18%, 63%);
   --color-base-60: hsl(calc(0 + var(--accent-h)), 55%, 72%);
   --color-base-70: hsl(calc(0 + var(--accent-h)), 5%, 55%);
@@ -826,9 +847,17 @@ tbody > tr {
     calc(95% - calc(var(--accent-l) / 100))
   );
   --color-base-25: hsl(calc(0 + var(--accent-h)), 80%, 42%);
-  --color-base-30: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%);
+  --color-base-30: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 55%),
+    89%
+  );
   --color-base-35: hsl(calc(0 + var(--accent-h)), 70%, 88%);
-  --color-base-40: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%);
+  --color-base-40: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 15%),
+    86%
+  );
   --color-base-50: hsl(calc(0 + var(--accent-h)), 18%, 63%);
   --color-base-60: hsl(calc(0 + var(--accent-h)), 55%, 72%);
   --color-base-70: hsl(calc(0 + var(--accent-h)), 5%, 55%);
@@ -938,7 +967,9 @@ body.toggle-sidebar-left-top
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
   margin: 0 0 11px 0;
 }
-body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
+body.toggle-tab-height
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container {
   margin: 0 0 5px 0;
 }
 
@@ -1002,7 +1033,8 @@ body {
 }
 
 /* Hide Scollbars */
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-scrollbar) ::-webkit-scrollbar-thumb {
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-scrollbar)
+  ::-webkit-scrollbar-thumb {
   visibility: hidden;
 }
 body ::-webkit-scrollbar-thumb:hover {

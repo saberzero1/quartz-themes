@@ -198,7 +198,11 @@ body.is-mobile {
   --background-secondary: rgb(42, 42, 42);
   --background-secondary-alt: rgb(42, 42, 42);
   /* --ribbon-background: rgba(36, 36, 36, 1); */
-  --background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+  --background-modifier-hover: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-d) + 10%)
+  );
   --nav-item-background-active: rgba(245, 245, 245, 0.05);
   --nav-item-color-active: var(--text-accent);
   --nav-indentation-guide-color: rgba(245, 245, 245, 0.08);
@@ -236,7 +240,11 @@ body.is-mobile {
   --background-secondary: rgb(230, 230, 230);
   --background-secondary-alt: rgb(230, 230, 230);
   /* --ribbon-background: rgb(245, 245, 245); */
-  --background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+  --background-modifier-hover: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-d) + 10%)
+  );
   --nav-item-background-active: rgba(0, 0, 0, 0.05);
   --nav-item-color-active: var(--text-accent);
   --background-modifier-hover: rgba(28, 28, 28, 0.1);
@@ -270,7 +278,8 @@ body.is-mobile {
 .is-translucent:not(.is-fullscreen) .titlebar,
 .is-translucent:not(.is-fullscreen) .app-container {
   background-color: rgb(
-    from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))
+    from var(--workspace-background-translucent) r g b /
+      calc(var(--mac-window-opacity))
   ) !important;
 }
 
@@ -325,7 +334,9 @@ hr.workspace-leaf-resize-handle {
 }
 
 /* 移除设置的分界线 */
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   border-top: unset !important;
 }
 
@@ -432,7 +443,8 @@ body.is-mobile .nav-file-title {
   transform: translateX(30px);
 }
 
-.nav-file.iconic-item:has(.iconic-icon) .tree-item-inner.nav-file-title-content::before {
+.nav-file.iconic-item:has(.iconic-icon)
+  .tree-item-inner.nav-file-title-content::before {
   padding-right: 20px;
 }
 
@@ -469,7 +481,9 @@ body.is-mobile .nav-file-title {
   margin-left: -15px;
 }
 
-.workspace-leaf-content[data-type="outline"] .tree-item-self.mod-collapsible .tree-item-inner {
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-self.mod-collapsible
+  .tree-item-inner {
   margin-left: -4px;
 }
 
@@ -681,7 +695,9 @@ body:not(.heading-bottom-line-off) .cm-s-obsidian .HyperMD-header {
   padding-bottom: 0;
 }
 /* 标题下空一行 */
-.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+.cm-s-obsidian
+  .cm-line.HyperMD-header
+  + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
   padding-top: var(--p-spacing);
 }
 
@@ -938,7 +954,8 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
   margin-left: -10px;
 }
 
-.HyperMD-list-line.HyperMD-list-line-2.HyperMD-task-line.cm-line .task-list-label {
+.HyperMD-list-line.HyperMD-list-line-2.HyperMD-task-line.cm-line
+  .task-list-label {
   margin-left: -4px;
 }
 
@@ -1646,11 +1663,18 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
   /* background-color: var(--editor-bg-color) !important; */
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
   border-left: 1px solid var(--indentation-guide-color);
 }
 
-.is-translucent:not(.is-fullscreen) .mod-root .mod-top .workspace-tab-header-container {
+.is-translucent:not(.is-fullscreen)
+  .mod-root
+  .mod-top
+  .workspace-tab-header-container {
   background-color: var(--editor-bg-color) !important;
 }
 
@@ -1747,7 +1771,10 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
   background-color: var(--editor-bg-color);
 }
 
-.is-translucent .workspace-split.mod-root .workspace-tabs.mod-stacked .view-content {
+.is-translucent
+  .workspace-split.mod-root
+  .workspace-tabs.mod-stacked
+  .view-content {
   background-color: transparent;
 }
 
@@ -1797,7 +1824,10 @@ body:not(.is-mobile) .modal.float-search-modal::before {
   z-index: -1;
 }
 
-body:not(.is-mobile) .float-search-modal .float-search-modal-search-ctn .search-row,
+body:not(.is-mobile)
+  .float-search-modal
+  .float-search-modal-search-ctn
+  .search-row,
 body:not(.is-mobile) .global-search-input-container,
 body:not(.is-mobile) .search-input-container input {
   background-color: transparent !important;
@@ -1835,13 +1865,17 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
  * 调整 cMenu Toolbar Editor 样式 
  */
 #editingToolbarModalBar.editingToolbarFlex
-  :is(.editingToolbarCommandItem, button[class^="editingToolbarCommandsubItem"]) {
+  :is(
+    .editingToolbarCommandItem,
+    button[class^="editingToolbarCommandsubItem"]
+  ) {
   /* margin: 5px !important; */
   background-color: transparent;
 }
 
 #editingToolbarModalBar.editingToolbarDefaultAesthetic,
-#editingToolbarModalBar.editingToolbarDefaultAesthetic ~ #editingToolbarPopoverBar {
+#editingToolbarModalBar.editingToolbarDefaultAesthetic
+  ~ #editingToolbarPopoverBar {
   backdrop-filter: blur(10px);
   background-color: #171717de;
 }
@@ -1854,9 +1888,10 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
 }
 
 #editingToolbarModalBar.top
-  :is(.editingToolbarCommandItem, button[class^="editingToolbarCommandsubItem"]):not(
-    .editingToolbar-Divider-Line
-  ) {
+  :is(
+    .editingToolbarCommandItem,
+    button[class^="editingToolbarCommandsubItem"]
+  ):not(.editingToolbar-Divider-Line) {
   padding: 8px;
   border-radius: 6px;
 }
@@ -1891,11 +1926,13 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
 }
 
 #editingToolbarModalBar.editingToolbarDefaultAesthetic,
-#editingToolbarModalBar.editingToolbarDefaultAesthetic ~ #editingToolbarPopoverBar {
+#editingToolbarModalBar.editingToolbarDefaultAesthetic
+  ~ #editingToolbarPopoverBar {
   backdrop-filter: blur(15px);
 }
 
-:is(#editingToolbarModalBar, #editingToolbarPopoverBar) button.editingToolbar-Divider-Line {
+:is(#editingToolbarModalBar, #editingToolbarPopoverBar)
+  button.editingToolbar-Divider-Line {
   min-width: unset;
   flex-shrink: 0;
   display: inline-flex;
@@ -1995,7 +2032,10 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
   width: auto !important;
 }
 
-.export-image-preview-left .setting-item .setting-item-control input[type="number"] {
+.export-image-preview-left
+  .setting-item
+  .setting-item-control
+  input[type="number"] {
   width: 60px !important;
   text-align: center;
 }
@@ -2095,7 +2135,8 @@ g.markmap-node[data-depth="0"] .markmap-foreign {
 }
 
 /* Windows | linux style */
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container::before {
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .app-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2118,15 +2159,19 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
   background: var(--win-editor-bg-color) !important;
 }
 
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon.mod-left:before {
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .workspace-ribbon.mod-left:before {
   background-color: transparent;
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-horizontal,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .workspace-split.mod-horizontal,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-leaf,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .sidebar-toggle-button.mod-left,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .workspace-ribbon,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .sidebar-toggle-button.mod-left,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
   .workspace-split.mod-left-split
   .workspace-sidedock-vault-profile,
@@ -2134,12 +2179,15 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
   .mod-root
   .mod-top
   .workspace-tab-header-container,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .titlebar-button-container.mod-right,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-header-container {
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .titlebar-button-container.mod-right,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .workspace-tab-header-container {
   background-color: transparent !important;
 }
 
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-root,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .workspace-split.mod-root,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
   .workspace-split.mod-root
   .view-content,
@@ -2149,7 +2197,8 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
   background: transparent !important;
 }
 
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-title-container:after {
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)
+  .view-header-title-container:after {
   background: transparent !important;
 }
 

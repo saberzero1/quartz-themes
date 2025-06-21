@@ -142,7 +142,8 @@ html[saved-theme="dark"] {
   font-weight: 400;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
@@ -158,7 +159,8 @@ html[saved-theme="dark"] {
   font-weight: 300;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
@@ -174,7 +176,8 @@ html[saved-theme="dark"] {
   font-weight: 500;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
@@ -190,7 +193,8 @@ html[saved-theme="dark"] {
   font-weight: 600;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
@@ -206,7 +210,8 @@ html[saved-theme="dark"] {
   font-weight: 700;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
@@ -222,7 +227,8 @@ html[saved-theme="dark"] {
   font-weight: 900;
   src:
     local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
+      format("woff");
 }
 
 :root {
@@ -230,9 +236,12 @@ html[saved-theme="dark"] {
   --dark0: #1e1e1e;
   --dark2: #282828;
   --dark4: #323232;
-  --default-font: -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu, cantarell,
-    Open Sans, Helvetica Neue, sans-serif;
-  --font-monospace: "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
+  --default-font:
+    -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu,
+    cantarell, Open Sans, Helvetica Neue, sans-serif;
+  --font-monospace:
+    "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier,
+    monospace;
   --green: #2edb6e;
   --green-light: #44df7d;
   --info: var(--blue);
@@ -269,7 +278,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -309,22 +319,29 @@ body {
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
   --cursor-link: pointer;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
@@ -710,7 +727,10 @@ html {
   }
 }
 body {
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+  --quartz-text-highlight: var(
+    --text-highlight-bg,
+    var(--background-modifier-hover)
+  ) !important;
   background-color: var(--background-primary);
   section,
   .page > #quartz-body .sidebar {
@@ -744,7 +764,11 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      background-color: color-mix(
+        in srgb,
+        var(--text-a, var(--link-color)),
+        #0000 85%
+      );
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -752,7 +776,10 @@ body {
         background-color: var(
           --tag-background,
           hsla(
-            var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))),
+            var(
+              --interactive-accent-hsl,
+              var(--color-accent-hsl, var(--highlight-fallback))
+            ),
             0.1
           )
         );
@@ -869,8 +896,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 46px;
     font-smoothing: antialiased;
     font-style: var(--h1-style);
@@ -889,8 +917,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 36px;
     font-smoothing: antialiased;
     font-style: var(--h2-style);
@@ -909,8 +938,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 32px;
     font-smoothing: antialiased;
     font-style: var(--h3-style);
@@ -929,8 +959,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 24px;
     font-smoothing: antialiased;
     font-style: var(--h4-style);
@@ -949,8 +980,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     font-smoothing: antialiased;
     font-style: var(--h5-style);
@@ -969,8 +1001,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: rgba(255, 255, 255, 0.87);
-    font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+      cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-smoothing: antialiased;
     font-style: var(--h6-style);
@@ -1095,8 +1128,9 @@ body {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       color: rgba(255, 255, 255, 0.87);
-      font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-        "Open Sans", "Helvetica Neue", sans-serif;
+      font-family:
+        -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+        cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-size: 32px;
       font-smoothing: antialiased;
       font-style: var(--h3-style);
@@ -1181,8 +1215,9 @@ body {
           color: rgba(255, 255, 255, 0.6);
           cursor: pointer;
           display: flex;
-          font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
-            cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          font-family:
+            -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen,
+            ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
           font-size: 13px;
           font-smoothing: antialiased;
           font-weight: 400;
@@ -1224,8 +1259,9 @@ body {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       color: rgba(255, 255, 255, 0.87);
-      font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-        "Open Sans", "Helvetica Neue", sans-serif;
+      font-family:
+        -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+        cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-size: 32px;
       font-smoothing: antialiased;
       font-style: var(--h3-style);
@@ -1254,8 +1290,9 @@ body {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       color: rgba(255, 255, 255, 0.87);
-      font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-        "Open Sans", "Helvetica Neue", sans-serif;
+      font-family:
+        -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+        cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-size: 32px;
       font-smoothing: antialiased;
       font-style: var(--h3-style);
@@ -1410,13 +1447,20 @@ body {
   /* PAGE TITLE */
   .page-title,
   .page-title a {
-    color: var(--inline-title-color, var(--h1-color, var(--link-color, var(--darkgray))));
-    font-family: var(--inline-title-font, var(--h1-font, var(--font-text, inherit)));
+    color: var(
+      --inline-title-color,
+      var(--h1-color, var(--link-color, var(--darkgray)))
+    );
+    font-family: var(
+      --inline-title-font,
+      var(--h1-font, var(--font-text, inherit))
+    );
   }
   /* GRAPH */
   .graph {
     & > .graph-outer {
-      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      border: 1px solid
+        var(--background-modifier-border-hover, var(--color-base-35));
       --background-modifier-border-focus: var(--color-base-40);
       & > .global-graph-icon {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1427,7 +1471,8 @@ body {
     }
     & > .global-graph-outer {
       & > .global-graph-container {
-        border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+        border: 1px solid
+          var(--background-modifier-border-hover, var(--color-base-35));
         background-color: var(--background-primary);
       }
     }
@@ -1436,7 +1481,10 @@ body {
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
-    border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
+    border-color: var(
+      --hr-color,
+      var(--background-modifier-border, var(--lightgray))
+    );
   }
   details.toc {
     & summary {
@@ -1570,7 +1618,10 @@ body {
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #c5b6fc))
+      )
     )
   ) !important;
 }

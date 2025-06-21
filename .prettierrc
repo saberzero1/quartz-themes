@@ -1,16 +1,8 @@
 {
-  "printWidth": 100,
+  "printWidth": 80,
   "quoteProps": "as-needed",
   "trailingComma": "all",
   "useTabs": false,
   "tabWidth": 2,
-  "semi": false,
-  "overrides": [
-    {
-      "files": "**/*.json",
-      "options": {
-        "printWidth": 80
-      }
-    }
-  ]
+  "semi": false
 }

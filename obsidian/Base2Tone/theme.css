@@ -188,11 +188,15 @@ pre code,
 .CodeMirror-wrap pre.CodeMirror-line:not(.HyperMD-quote) + .HyperMD-quote {
   border-bottom: none;
 }
-.CodeMirror-wrap pre.CodeMirror-line.HyperMD-quote + pre.CodeMirror-line.HyperMD-quote {
+.CodeMirror-wrap
+  pre.CodeMirror-line.HyperMD-quote
+  + pre.CodeMirror-line.HyperMD-quote {
   border-bottom: none;
   border-top: none;
 }
-.CodeMirror-wrap pre.CodeMirror-line.HyperMD-quote + pre.CodeMirror-line:not(.HyperMD-quote) {
+.CodeMirror-wrap
+  pre.CodeMirror-line.HyperMD-quote
+  + pre.CodeMirror-line:not(.HyperMD-quote) {
   border-top: 1px solid var(--background-secondary);
 }
 

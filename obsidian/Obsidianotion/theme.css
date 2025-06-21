@@ -257,7 +257,9 @@ body {
   --frontmatter-font-size: 0.65rem;
 
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-ibm: "IBM Plex Sans", "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-ibm:
+    "IBM Plex Sans", "IBMRegular", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
 
   /* --font-family-serif: Inter, Helvetica, Arial, sans-serif; */
@@ -802,12 +804,24 @@ Tags Styles
 }
 
 /** showing the level of heading **/
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-1.cm-line:hover:before,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-2.cm-line:hover:before,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-3.cm-line:hover:before,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-4.cm-line:hover:before,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-5.cm-line:hover:before,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-6.cm-line:hover:before {
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-1.cm-line:hover:before,
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-2.cm-line:hover:before,
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-3.cm-line:hover:before,
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-4.cm-line:hover:before,
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-5.cm-line:hover:before,
+.cm-contentContainer
+  .cm-content
+  .HyperMD-header.HyperMD-header-6.cm-line:hover:before {
   --title-height-title-id: 12px;
   position: absolute;
   top: calc(var(--title-height-title-id) / 1.5);
@@ -1088,7 +1102,11 @@ Tags Styles
   left: 0;
   width: 100%;
   height: 25vmin;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 /* ─────────────────────────────────────────────────── */
@@ -1508,8 +1526,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
@@ -1669,32 +1692,64 @@ li[data-task="b"] > p > input:checked {
     -webkit-transform: rotate(360deg);
   }
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p1
+  > input[type="checkbox"] {
   border: 1px solid #ff757f !important;
   background-color: rgba(255, 117, 127, 0.25) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p1
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 117, 127, 0.5) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p2
+  > input[type="checkbox"] {
   border: 1px solid #ffc777 !important;
   background-color: rgba(255, 199, 119, 0.25) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p2
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 199, 119, 0.5) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p3
+  > input[type="checkbox"] {
   border: 1px solid #65bcff !important;
   background-color: rgba(101, 188, 255, 0.25) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p3
+  > input[type="checkbox"]:hover {
   background-color: rgba(101, 188, 255, 0.5) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p4
+  > input[type="checkbox"] {
   border: 1px solid #b4c2f0 !important;
   background-color: rgba(180, 194, 240, 0.25) !important;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p4
+  > input[type="checkbox"]:hover {
   background-color: rgba(180, 194, 240, 0.5) !important;
 }
 

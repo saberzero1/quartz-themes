@@ -55,7 +55,8 @@
   /* Usage of preferred monospace font */
   /* --font-monospace-theme: Menlo, SFMono-Regular, Consolas, "JetBrains Mono",
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace; */
-  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
+  --font-monospace-theme:
+    "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Fira Coda",
     SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
   --scrollbar-bg: rgba(20, 20, 20, 0);
   --scrollbar-thumb-bg: #595959;
@@ -844,7 +845,9 @@ li::marker {
 }
 
 /* Nick's Tiny Sliding Panes Tweaks */
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px; /*instead of 6px*/
 }
 
@@ -1113,7 +1116,10 @@ body:not(.pt-disable-callout-styling) .callout .callout-title {
   border-radius: var(--radius-m);
 }
 
-body:not(.pt-disable-callout-styling) .callout .callout-title:empty + .callout-content {
+body:not(.pt-disable-callout-styling)
+  .callout
+  .callout-title:empty
+  + .callout-content {
   padding: var(--size-4-1) var(--size-4-3);
   border-top-style: solid;
   border-top-width: 1px;

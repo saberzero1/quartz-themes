@@ -754,11 +754,19 @@ body.background-image-toggle .view-header {
     var(--red) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--red) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, transparent);
 }
 .nav-folder-title[data-path^="0"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--red) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="0"]) {
   --nav-indentation-guide-color: color-mix(
@@ -767,14 +775,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="0"]) .nav-file-title {
-  color: color-mix(in srgb, var(--red) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="0"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--red) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--red) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--red) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--red) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--red) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--red) var(--active-contrast-amount),
@@ -795,11 +814,19 @@ body.background-image-toggle .view-header {
     var(--yellow) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--yellow) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--yellow) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--yellow) 60%, transparent);
 }
 .nav-folder-title[data-path^="1"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--yellow) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--yellow) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="1"]) {
   --nav-indentation-guide-color: color-mix(
@@ -808,14 +835,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="1"]) .nav-file-title {
-  color: color-mix(in srgb, var(--yellow) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="1"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--yellow) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--yellow) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--yellow) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--yellow) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--yellow) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--yellow) var(--active-contrast-amount),
@@ -836,11 +874,23 @@ body.background-image-toggle .view-header {
     var(--periwinkle) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--periwinkle) 40%, transparent);
-  --nav-collapse-icon-color: color-mix(in srgb, var(--periwinkle) 60%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--periwinkle) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--periwinkle) 60%,
+    transparent
+  );
 }
 .nav-folder-title[data-path^="2"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--periwinkle) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--periwinkle) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="2"]) {
   --nav-indentation-guide-color: color-mix(
@@ -849,7 +899,9 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="2"]) .nav-file-title {
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="2"])
+  .nav-file-title {
   color: color-mix(
     in srgb,
     var(--periwinkle) var(--medium-contrast-amount),
@@ -857,10 +909,15 @@ body.background-image-toggle .view-header {
   );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--periwinkle) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--periwinkle) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--periwinkle) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--periwinkle) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--periwinkle) var(--active-contrast-amount),
@@ -881,11 +938,19 @@ body.background-image-toggle .view-header {
     var(--orange) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--orange) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--orange) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--orange) 60%, transparent);
 }
 .nav-folder-title[data-path^="3"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--orange) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--orange) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="3"]) {
   --nav-indentation-guide-color: color-mix(
@@ -894,14 +959,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="3"]) .nav-file-title {
-  color: color-mix(in srgb, var(--orange) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="3"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--orange) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--orange) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--orange) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--orange) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--orange) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--orange) var(--active-contrast-amount),
@@ -922,11 +998,19 @@ body.background-image-toggle .view-header {
     var(--blue) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--blue) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--blue) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, transparent);
 }
 .nav-folder-title[data-path^="4"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--blue) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="4"]) {
   --nav-indentation-guide-color: color-mix(
@@ -935,14 +1019,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="4"]) .nav-file-title {
-  color: color-mix(in srgb, var(--blue) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="4"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--blue) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--blue) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--blue) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--blue) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--blue) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--blue) var(--active-contrast-amount),
@@ -963,11 +1058,19 @@ body.background-image-toggle .view-header {
     var(--brown) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--brown) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--brown) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--brown) 60%, transparent);
 }
 .nav-folder-title[data-path^="5"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--brown) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--brown) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="5"]) {
   --nav-indentation-guide-color: color-mix(
@@ -976,14 +1079,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="5"]) .nav-file-title {
-  color: color-mix(in srgb, var(--brown) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="5"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--brown) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--brown) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--brown) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--brown) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--brown) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--brown) var(--active-contrast-amount),
@@ -1004,11 +1118,19 @@ body.background-image-toggle .view-header {
     var(--grey) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--grey) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--grey) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--grey) 60%, transparent);
 }
 .nav-folder-title[data-path^="99"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--grey) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--grey) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) {
   --nav-indentation-guide-color: color-mix(
@@ -1017,14 +1139,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) .nav-file-title {
-  color: color-mix(in srgb, var(--grey) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="99"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--grey) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--grey) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--grey) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--grey) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--grey) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--grey) var(--active-contrast-amount),
@@ -1046,11 +1179,19 @@ body.background-image-toggle .view-header {
     var(--grey) var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--grey) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--grey) 40%,
+    transparent
+  );
   --nav-collapse-icon-color: color-mix(in srgb, var(--grey) 60%, transparent);
 }
 .nav-folder-title[data-path^="99"]:hover {
-  --nav-collapse-icon-color: color-mix(in srgb, var(--grey) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--grey) 60%,
+    var(--contrast-color)
+  );
 }
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) {
   --nav-indentation-guide-color: color-mix(
@@ -1059,14 +1200,25 @@ body.background-image-toggle .view-header {
     transparent
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) .nav-file-title {
-  color: color-mix(in srgb, var(--grey) var(--medium-contrast-amount), var(--default-text-color));
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="99"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--grey) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
   --nav-item-background-hover: color-mix(
     in srgb,
-    color-mix(in srgb, var(--grey) 50%, var(--highlight)) var(--bg-contrast-amount),
+    color-mix(in srgb, var(--grey) 50%, var(--highlight))
+      var(--bg-contrast-amount),
     transparent
   );
-  --background-modifier-border-focus: color-mix(in srgb, var(--grey) 40%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--grey) 40%,
+    transparent
+  );
   --nav-item-background-active: color-mix(
     in srgb,
     var(--grey) var(--active-contrast-amount),

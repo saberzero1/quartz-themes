@@ -210,7 +210,8 @@ body {
 /* Blockquote styling for Read Only mode */
 .el-blockquote > blockquote {
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   color: var(--blockquote-color);
   font-style: var(--blockquote-font-style);
   border-radius: var(--blockquote-border-radius);
@@ -220,7 +221,8 @@ body {
 /* Blockquote styling for Live Preview mode */
 div.HyperMD-quote {
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   color: var(--blockquote-color);
   font-style: italic !important;
   padding: var(--blockquote-padding) !important;

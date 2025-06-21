@@ -33,9 +33,11 @@
 /* 1. Font */
 body {
   /* font stacks taken directly from Notion */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
-    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace: "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace:
+    "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
     monospace;
   -webkit-font-smoothing: auto;
 }
@@ -505,7 +507,10 @@ ol > li {
   border-radius: 0;
 }
 
-.app-container .markdown-preview-view pre[class*="language-note-"] code[class*="language-note-"] {
+.app-container
+  .markdown-preview-view
+  pre[class*="language-note-"]
+  code[class*="language-note-"] {
   color: var(--text-normal);
   white-space: pre-wrap;
   font-family: var(--default-font);
@@ -593,47 +598,74 @@ ol > li {
   background-color: transparent;
 }
 
-.app-container .markdown-preview-view pre.language-note-gray code.language-note-gray,
+.app-container
+  .markdown-preview-view
+  pre.language-note-gray
+  code.language-note-gray,
 .gray {
   color: var(--text-gray);
 }
 
-.app-container .markdown-preview-view pre.language-note-brown code.language-note-brown,
+.app-container
+  .markdown-preview-view
+  pre.language-note-brown
+  code.language-note-brown,
 .brown {
   color: var(--text-brown);
 }
 
-.app-container .markdown-preview-view pre.language-note-orange code.language-note-orange,
+.app-container
+  .markdown-preview-view
+  pre.language-note-orange
+  code.language-note-orange,
 .orange {
   color: var(--text-orange);
 }
 
-.app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
+.app-container
+  .markdown-preview-view
+  pre.language-note-yellow
+  code.language-note-yellow,
 .yellow {
   color: var(--text-yellow);
 }
 
-.app-container .markdown-preview-view pre.language-note-green code.language-note-green,
+.app-container
+  .markdown-preview-view
+  pre.language-note-green
+  code.language-note-green,
 .green {
   color: var(--text-green);
 }
 
-.app-container .markdown-preview-view pre.language-note-blue code.language-note-blue,
+.app-container
+  .markdown-preview-view
+  pre.language-note-blue
+  code.language-note-blue,
 .blue {
   color: var(--text-blue);
 }
 
-.app-container .markdown-preview-view pre.language-note-purple code.language-note-purple,
+.app-container
+  .markdown-preview-view
+  pre.language-note-purple
+  code.language-note-purple,
 .purple {
   color: var(--text-purple);
 }
 
-.app-container .markdown-preview-view pre.language-note-pink code.language-note-pink,
+.app-container
+  .markdown-preview-view
+  pre.language-note-pink
+  code.language-note-pink,
 .pink {
   color: var(--text-pink);
 }
 
-.app-container .markdown-preview-view pre.language-note-red code.language-note-red,
+.app-container
+  .markdown-preview-view
+  pre.language-note-red
+  code.language-note-red,
 .red {
   color: var(--text-red);
 }
@@ -663,7 +695,9 @@ ol > li {
 
 /* This is where the magic happens */
 .workspace-leaf-content[data-type="markdown"] .view-header,
-.workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"] .view-header {
+.workspace-leaf.mod-active
+  .workspace-leaf-content[data-type="markdown"]
+  .view-header {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -704,7 +738,8 @@ ol > li {
   padding: 0;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-header-title-container:after {
+.workspace-leaf-content[data-type="markdown"]
+  .view-header-title-container:after {
   content: none;
 }
 
@@ -768,12 +803,15 @@ ol > li {
 
 /* 7.1. Adjustments for non-in-document headers (graphs, etc) */
 .workspace-leaf-content:not([data-type="markdown"]) .view-header,
-.workspace-leaf.mod-active .workspace-leaf-content:not([data-type="markdown"]) .view-header {
+.workspace-leaf.mod-active
+  .workspace-leaf-content:not([data-type="markdown"])
+  .view-header {
   border: none;
   background-color: var(--background-primary);
 }
 
-.workspace-leaf-content:not([data-type="markdown"]) .view-header-title-container:after,
+.workspace-leaf-content:not([data-type="markdown"])
+  .view-header-title-container:after,
 .workspace-leaf.mod-active
   .workspace-leaf-content:not([data-type="markdown"])
   .view-header-title-container:after {
