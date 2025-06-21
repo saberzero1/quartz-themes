@@ -30,9 +30,12 @@ SOFTWARE.
 
 -------------------------------------------------------------------------- */
 body {
-  --font-editor-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+  --font-editor-theme:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
     sans-serif;
-  --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
+  --font-editor:
+    var(--font-editor-override), var(--font-text-override),
+    var(--font-editor-theme);
 }
 body {
   --icon-color-hover: hsl(var(--color-accent-hsl));
@@ -44,39 +47,90 @@ body {
   --p-spacing-empty: 0.1rem;
 }
 body {
-  --divider-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
-  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+  --divider-color-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
+  --scrollbar-active-thumb-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
 }
 body {
-  --nav-item-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.775);
-  --nav-item-color-active: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);
-  --nav-item-color-selected: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);
+  --nav-item-color-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.775
+  );
+  --nav-item-color-active: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.95
+  );
+  --nav-item-color-selected: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.95
+  );
   --nav-item-weight: 500;
   --nav-item-weight-hover: 500;
   --slider-thumb-border-width: 2px;
-  --slider-thumb-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.75);
-  --slider-track-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+  --slider-thumb-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.75
+  );
+  --slider-track-background: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
   --slider-track-height: 3px;
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-muted);
   --tab-text-color-focused-highlighted: var(--text-accent);
-  --tab-text-color-focused-active-current: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --tab-text-color-focused-active-current: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
   --tab-font-weight: 700;
   --tab-stacked-font-weight: 700;
 }
 body {
   --embed-block-shadow-hover: none;
-  --blockquote-background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
-  --blockquote-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+  --blockquote-background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  );
+  --blockquote-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
   --blockquote-color: var(--text-muted);
   --callout-border-width: 2px;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-m);
   --code-radius: var(--radius-m);
   --embed-max-height: 750px;
-  --embed-border-start: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+  --embed-border-start: 2px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
   --file-header-font-weight: 700;
   --h1-size: 1.802em;
   --h2-size: 1.602em;
@@ -107,7 +161,12 @@ body {
   --dataview-table-tbody-size: calc(var(--font-text-size) * 0.82);
   --dataview-table-thead-size: calc(var(--font-text-size) * 0.88);
   --tag-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.925);
-  --tag-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);
+  --tag-color-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.95
+  );
   --tag-padding-x: 0.7em;
   --tag-padding-y: 0.3em;
   --tag-radius: 1em;
@@ -146,8 +205,18 @@ body {
   --dataview-table-even-bg-color: var(--color-base-10);
   --dataview-table-odd-bg-color: var(--color-base-05);
   --dataview-table-row-hover: var(--color-accent-hsl);
-  --tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.125);
-  --tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  --tag-background: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.125
+  );
+  --tag-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.1
+  );
   --h-transparency: 12%;
   --h-hover-transparency: 25%;
 }
@@ -185,8 +254,18 @@ body {
   --dataview-table-even-bg-color: var(--color-base-10);
   --dataview-table-odd-bg-color: var(--color-base-05);
   --dataview-table-row-hover: var(--color-accent-hsl);
-  --tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.075);
-  --tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+  --tag-background: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.075
+  );
+  --tag-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  );
   --h-transparency: 7%;
   --h-hover-transparency: 20%;
 }
@@ -196,8 +275,18 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-05);
   --background-secondary-alt: var(--color-base-05);
-  --background-modifier-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
-  --background-modifier-active-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.08
+  );
+  --background-modifier-active-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.08
+  );
   --background-modifier-border: var(--color-base-25);
   --background-modifier-border-hover: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-35);
@@ -233,29 +322,58 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
 }
 .view-content.node-insert-event .tree-item .tree-item-inner {
   color: var(--h1-color);
-  background-color: color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h1-color) var(--h-transparency),
+    transparent
+  );
 }
-.view-content.node-insert-event .tree-item .tree-item-self.is-active .tree-item-inner,
-.view-content.node-insert-event .tree-item .tree-item-self.is-clickable:hover .tree-item-inner {
+.view-content.node-insert-event
+  .tree-item
+  .tree-item-self.is-active
+  .tree-item-inner,
+.view-content.node-insert-event
+  .tree-item
+  .tree-item-self.is-clickable:hover
+  .tree-item-inner {
   color: var(--h1-color);
-  background-color: color-mix(in srgb, var(--h1-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h1-color) var(--h-hover-transparency),
+    transparent
+  );
 }
-.view-content.node-insert-event .tree-item .tree-item-self.is-clickable:hover .tree-item-inner {
+.view-content.node-insert-event
+  .tree-item
+  .tree-item-self.is-clickable:hover
+  .tree-item-inner {
   border-left: 2px solid var(--h1-color);
   padding-left: 4px;
 }
 .view-content.node-insert-event .tree-item .tree-item .tree-item-inner {
   color: var(--h2-color);
-  background-color: color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h2-color) var(--h-transparency),
+    transparent
+  );
 }
-.view-content.node-insert-event .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,
+.view-content.node-insert-event
+  .tree-item
+  .tree-item
+  .tree-item-self.is-active
+  .tree-item-inner,
 .view-content.node-insert-event
   .tree-item
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
   color: var(--h2-color);
-  background-color: color-mix(in srgb, var(--h2-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h2-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -265,9 +383,17 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   border-left: 2px solid var(--h2-color);
   padding-left: 4px;
 }
-.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item-inner {
+.view-content.node-insert-event
+  .tree-item
+  .tree-item
+  .tree-item
+  .tree-item-inner {
   color: var(--h3-color);
-  background-color: color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h3-color) var(--h-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -282,7 +408,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
   color: var(--h3-color);
-  background-color: color-mix(in srgb, var(--h3-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h3-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -293,9 +423,18 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   border-left: 2px solid var(--h3-color);
   padding-left: 4px;
 }
-.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item-inner {
+.view-content.node-insert-event
+  .tree-item
+  .tree-item
+  .tree-item
+  .tree-item
+  .tree-item-inner {
   color: var(--h4-color);
-  background-color: color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h4-color) var(--h-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -312,7 +451,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
   color: var(--h4-color);
-  background-color: color-mix(in srgb, var(--h4-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h4-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -332,7 +475,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-inner {
   color: var(--h5-color);
-  background-color: color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h5-color) var(--h-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -351,7 +498,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
   color: var(--h5-color);
-  background-color: color-mix(in srgb, var(--h5-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h5-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -373,7 +524,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-inner {
   color: var(--h6-color);
-  background-color: color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h6-color) var(--h-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -394,7 +549,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
   color: var(--h6-color);
-  background-color: color-mix(in srgb, var(--h6-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h6-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .view-content.node-insert-event
   .tree-item
@@ -441,40 +600,88 @@ h6 {
   transition: background-color 0.75s ease;
 }
 h1 {
-  background-color: color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h1-color) var(--h-transparency),
+    transparent
+  );
 }
 h1:hover {
-  background-color: color-mix(in srgb, var(--h1-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h1-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 h2 {
-  background-color: color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h2-color) var(--h-transparency),
+    transparent
+  );
 }
 h2:hover {
-  background-color: color-mix(in srgb, var(--h2-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h2-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 h3 {
-  background-color: color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h3-color) var(--h-transparency),
+    transparent
+  );
 }
 h3:hover {
-  background-color: color-mix(in srgb, var(--h3-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h3-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 h4 {
-  background-color: color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h4-color) var(--h-transparency),
+    transparent
+  );
 }
 h4:hover {
-  background-color: color-mix(in srgb, var(--h4-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h4-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 h5 {
-  background-color: color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h5-color) var(--h-transparency),
+    transparent
+  );
 }
 h5:hover {
-  background-color: color-mix(in srgb, var(--h5-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h5-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 h6 {
-  background-color: color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h6-color) var(--h-transparency),
+    transparent
+  );
 }
 h6:hover {
-  background-color: color-mix(in srgb, var(--h6-color) var(--h-hover-transparency), transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--h6-color) var(--h-hover-transparency),
+    transparent
+  );
 }
 .markdown-preview-view .heading-collapse-indicator {
   margin-inline-start: -30px;
@@ -614,7 +821,9 @@ body {
     var(--dataview-table-even-bg-color)
   );
 }
-.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):has(> .cm-hashtag.cm-meta) {
+.cm-s-obsidian
+  .cm-line.HyperMD-header
+  + .cm-line:not(.HyperMD-header):has(> .cm-hashtag.cm-meta) {
   padding-top: 0.35rem;
 }
 span.advanced-tables-row-label {
@@ -622,11 +831,19 @@ span.advanced-tables-row-label {
   font-weight: 400;
   color: var(--text-muted);
 }
-[data-type="advanced-tables-toolbar"] .nav-buttons-container .nav-action-button:hover .widget-icon {
+[data-type="advanced-tables-toolbar"]
+  .nav-buttons-container
+  .nav-action-button:hover
+  .widget-icon {
   fill: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 }
 h3.title.svelte-1vwr9dd.svelte-1vwr9dd {
-  background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.2
+  );
 }
 div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
   color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
@@ -636,7 +853,8 @@ div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
 }
 .dataview.table-view-table .table-view-thead .table-view-th {
   border: var(--table-border-width) solid var(--table-border-color);
-  border-bottom: calc(var(--table-border-width) * 2) solid var(--table-border-color);
+  border-bottom: calc(var(--table-border-width) * 2) solid
+    var(--table-border-color);
   padding: 10px 5px;
   text-align: center;
 }
@@ -657,128 +875,128 @@ div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
 name: Simply Colorful theme settings
 id: simply-colorful-theme
 settings:
-	-
-		id: bold-color
-		title: Bold color
-		description: Defines the color of bold text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: italic-color
-		title: Italic color
-		description: Defines the color of italic text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-accent
-		title: Internal link color
-		description: Defines the color of internal links
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-accent-hover
-		title: Internal link hover color
-		description: Defines the color of internal links while hovered
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: link-external-color
-		title: External link color
-		description: Defines the color of external links
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: link-external-color-hover
-		title: External link hover color
-		description: Defines the color of external links while hovered
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-highlight-bg
-		title: Highlight color
-		description: Defines the color of highlighted text
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: sc-headings
-		title: Interface colors
-		description: Defines the colors of all the headings
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h1-color
-		title: Heading 1 color
-		description: Defines the color of heading 1
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h2-color
-		title: Heading 2 color
-		description: Defines the color of heading 2
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h3-color
-		title: Heading 3 color
-		description: Defines the color of heading 3
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h4-color
-		title: Heading 4 color
-		description: Defines the color of heading 4
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h5-color
-		title: Heading 5 color
-		description: Defines the color of heading 5
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h6-color
-		title: Heading 6 color
-		description: Defines the color of heading 6
-		type: variable-themed-color
-		opacity: false
-		format: rgb
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: bold-color
+        title: Bold color
+        description: Defines the color of bold text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: italic-color
+        title: Italic color
+        description: Defines the color of italic text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-accent
+        title: Internal link color
+        description: Defines the color of internal links
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-accent-hover
+        title: Internal link hover color
+        description: Defines the color of internal links while hovered
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: link-external-color
+        title: External link color
+        description: Defines the color of external links
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: link-external-color-hover
+        title: External link hover color
+        description: Defines the color of external links while hovered
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-highlight-bg
+        title: Highlight color
+        description: Defines the color of highlighted text
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: sc-headings
+        title: Interface colors
+        description: Defines the colors of all the headings
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h1-color
+        title: Heading 1 color
+        description: Defines the color of heading 1
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h2-color
+        title: Heading 2 color
+        description: Defines the color of heading 2
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h3-color
+        title: Heading 3 color
+        description: Defines the color of heading 3
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h4-color
+        title: Heading 4 color
+        description: Defines the color of heading 4
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h5-color
+        title: Heading 5 color
+        description: Defines the color of heading 5
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h6-color
+        title: Heading 6 color
+        description: Defines the color of heading 6
+        type: variable-themed-color
+        opacity: false
+        format: rgb
+        default-light: '#'
+        default-dark: '#'
 */

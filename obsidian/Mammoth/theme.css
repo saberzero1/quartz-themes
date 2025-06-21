@@ -40,40 +40,72 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   }
 }
 
-.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p1
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-red) !important;
   background-color: var(--todoist-red-background) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p1
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 117, 127, 0.5) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p2
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-orange) !important;
   background-color: var(--todoist-orange-background) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p2
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 199, 119, 0.5) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p3
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-blue) !important;
   background-color: var(--todoist-blue-background) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p3
+  > input[type="checkbox"]:hover {
   background-color: rgba(101, 188, 255, 0.5) !important;
   border-radius: 50%;
 }
 .markdown-rendered ul > li.task-list-item .todoist-p4 > input[type="checkbox"],
-.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p4
+  > input[type="checkbox"] {
   border: 2px solid var(--slate-gray) !important;
   background-color: rgba(180, 194, 240, 0.25) !important;
   border-radius: 50%;
 }
-.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type="checkbox"]:hover {
+.markdown-preview-view
+  ul
+  > li.task-list-item
+  .todoist-p4
+  > input[type="checkbox"]:hover {
   background-color: rgba(180, 194, 240, 0.5) !important;
   border-radius: 50%;
 }
@@ -162,7 +194,10 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   background-color: var(--orange-yellow) !important;
 }
 
-.markdown-preview-view ul > li.task-list-item.is-checked input[type="checkbox"] {
+.markdown-preview-view
+  ul
+  > li.task-list-item.is-checked
+  input[type="checkbox"] {
   border: 2px solid var(--orange-yellow) !important;
   background-color: var(--granny-smith-apple) !important;
 }

@@ -445,7 +445,10 @@ body:not(.neo-tabs-off)
   border-radius: var(--radius-m);
 }
 
-body:not(.neo-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+body:not(.neo-tabs-off)
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header,
 body:not(.neo-tabs-off)
   .mod-root
   .workspace-tabs:not(.mod-stacked)
@@ -517,7 +520,9 @@ body {
 }
 
 /* Pin icon */
-.mod-root .workspace-tab-header.is-active .workspace-tab-header-status-icon.mod-pinned:hover {
+.mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-status-icon.mod-pinned:hover {
   color: var(--text-normal);
   background-color: transparent;
 }
@@ -529,7 +534,10 @@ body {
 }
 
 body:not(.is-mobile) .mod-left-split .workspace-tab-header-inner-icon .svg-icon,
-body:not(.is-mobile) .mod-right-split .workspace-tab-header-inner-icon .svg-icon,
+body:not(.is-mobile)
+  .mod-right-split
+  .workspace-tab-header-inner-icon
+  .svg-icon,
 body:not(.is-mobile) .clickable-icon.side-dock-ribbon-action .svg-icon,
 body:not(.is-mobile) .clickable-icon.nav-action-button .svg-icon,
 body:not(.is-mobile) .sidebar-toggle-button .clickable-icon .svg-icon,
@@ -631,13 +639,15 @@ body {
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar,
-body:not(.native-scrollbars) .kanban-plugin__scroll-container::-webkit-scrollbar {
+body:not(.native-scrollbars)
+  .kanban-plugin__scroll-container::-webkit-scrollbar {
   width: 11px;
   height: 11px;
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb,
-body:not(.native-scrollbars) .kanban-plugin__scroll-container::-webkit-scrollbar-thumb {
+body:not(.native-scrollbars)
+  .kanban-plugin__scroll-container::-webkit-scrollbar-thumb {
   border: 3px solid transparent;
 }
 
@@ -696,7 +706,12 @@ body:not(.is-mobile)
     .markdown-preview-view:not(.checklist-plugin-main),
     .workspace-leaf-content[data-type="calendar"] .view-content,
     .janitor-scan-results,
-    .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar),
+    .excalidraw-wrapper
+      :is(
+        .App-mobile-menu,
+        .App-menu .Stack .Island.App-menu__left,
+        .scrollbar
+      ),
     .excalidraw-contextMenuContainer .popover,
     .kanban-plugin__board,
     .kanban-plugin__lane-items,
@@ -720,12 +735,18 @@ body {
   -webkit-font-smoothing: antialiased;
 
   /* Font families */
-  --font-text-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-editor-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-monospace-theme: "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas,
+  --font-text-theme:
+    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-editor-theme:
+    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-monospace-theme:
+    "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", monospace;
-  --font-interface-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
+  --font-interface-theme:
+    Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-editor:
+    var(--font-editor-override), var(--font-text-override),
+    var(--font-editor-theme);
 
   --line-height-normal: 1.6;
   --line-height-tight: 1.3;
@@ -753,7 +774,9 @@ body {
 }
 
 /* Heading level Indicator */
-body:not(.is-mobile):not(.heading-indicator-off) .is-live-preview .collapse-indicator::before {
+body:not(.is-mobile):not(.heading-indicator-off)
+  .is-live-preview
+  .collapse-indicator::before {
   content: var(--heading-indicator);
   color: var(--text-faint);
   background-color: var(--background-primary);
@@ -841,7 +864,11 @@ body {
 .markdown-preview-view th,
 .markdown-rendered thead > tr > th,
 .table-view-table > thead > tr > th,
-.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th {
   font-size: 1rem;
   font-size: var(--font-small);
   font-weight: 600;
@@ -916,7 +943,8 @@ body {
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: var(--color-muted-rgb);
 
-  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4) var(--size-4-6);
+  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4)
+    var(--size-4-6);
   --callout-border-width: 1px;
   --callout-border-opacity: 0.15;
 }
@@ -1281,7 +1309,9 @@ body:not(.disable-alternative-checkboxes) {
       content: " ";
       display: block;
       background: var(--interactive-accent);
-      width: calc(var(--checkbox-progress-width) * var(--checkbox-progress-frac));
+      width: calc(
+        var(--checkbox-progress-width) * var(--checkbox-progress-frac)
+      );
       height: 100%;
       top: 0;
       border-radius: 10px;
@@ -1349,7 +1379,9 @@ body:not(.no-kanban-styles) .kanban-plugin__item-title-wrapper {
   background: var(--kanban-item-active-background);
 }
 
-body:not(.no-kanban-styles) .kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
+body:not(.no-kanban-styles)
+  .kanban-plugin__item-form
+  .kanban-plugin__item-input-wrapper {
   background-color: var(--kanban-item-new-background);
 }
 
@@ -1401,7 +1433,9 @@ body:not(.no-kanban-styles) .kanban-plugin__item-content-wrapper {
   box-shadow: none;
 }
 
-body:not(.no-kanban-styles):not(.is-mobile) .kanban-plugin__grow-wrap > textarea:focus {
+body:not(.no-kanban-styles):not(.is-mobile)
+  .kanban-plugin__grow-wrap
+  > textarea:focus {
   box-shadow: none;
 }
 
@@ -1475,7 +1509,10 @@ body {
   --cards-background: transparent;
   --cards-border-width: 1px;
   --cards-aspect-ratio: auto;
-  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  );
 }
 
 @media (max-width: 400pt) {
@@ -1492,7 +1529,8 @@ body {
   --table-width: 100%;
   --table-edge-cell-padding-first: calc(var(--cards-padding) / 2);
   --table-edge-cell-padding-last: calc(var(--cards-padding) / 2);
-  --table-cell-padding: calc(var(--cards-padding) / 3) calc(var(--cards-padding) / 2);
+  --table-cell-padding: calc(var(--cards-padding) / 3)
+    calc(var(--cards-padding) / 2);
   line-height: 1.3;
 }
 .cards table.dataview tbody {
@@ -1516,7 +1554,8 @@ body {
   max-width: var(--cards-max-width);
 }
 .cards table.dataview > tbody > tr:hover {
-  border: var(--cards-border-width) solid var(--background-modifier-border-hover);
+  border: var(--cards-border-width) solid
+    var(--background-modifier-border-hover);
   box-shadow:
     0 4px 6px 0px rgba(0, 0, 0, 0.05),
     0 1px 3px 1px rgba(0, 0, 0, 0.025);
@@ -1577,7 +1616,11 @@ body {
   vertical-align: bottom;
 }
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .trim-cols .cards table.dataview tbody > tr > td {
   white-space: normal;
 }
@@ -1683,7 +1726,9 @@ body {
 /* Card lists */
 .list-cards.markdown-preview-view .list-bullet,
 .list-cards.markdown-preview-view .list-collapse-indicator,
-.list-cards.markdown-preview-view.markdown-rendered.show-indentation-guide li > ul::before {
+.list-cards.markdown-preview-view.markdown-rendered.show-indentation-guide
+  li
+  > ul::before {
   display: none;
 }
 .list-cards.markdown-preview-view div > ul {

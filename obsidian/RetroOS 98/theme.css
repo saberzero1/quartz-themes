@@ -55,13 +55,19 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(43, 41, 41, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --background-modifier-hover: transparent;
 
@@ -115,13 +121,19 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(43, 41, 41, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 
   --background-modifier-hover: transparent;
@@ -249,7 +261,9 @@ body {
   padding-left: 5px;
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   box-shadow:
     inset 1px 0 var(--bg-button-shadow),
     inset 2px 0 var(--bg-button-light),
@@ -652,7 +666,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-track {
   margin-top: 0px;
 }
 
-body:not(.is-mobile) :is(.is-focused .workspace-leaf.mod-active .view-header, .view-header),
+body:not(.is-mobile)
+  :is(.is-focused .workspace-leaf.mod-active .view-header, .view-header),
 body:not(.is-mobile) .workspace-leaf-content > .nav-header {
   position: inherit;
 }
@@ -672,7 +687,11 @@ body.is-frameless:not(.is-hidden-frameless) .titlebar,
 .is-phone .view-header,
 .is-phone .modal-header,
 .is-mobile .workspace-drawer-header {
-  background: linear-gradient(to right, var(--color-accent), var(--color-accent-2));
+  background: linear-gradient(
+    to right,
+    var(--color-accent),
+    var(--color-accent-2)
+  );
 }
 
 .kanban-plugin__lane-header-wrapper,
@@ -735,7 +754,8 @@ body:not(.is-phone).mod-windows.is-frameless.is-hidden-frameless.obsidian-app {
     inset 2px 2px var(--bg-button-light);
 }
 
-body.is-phone.mod-windows.is-frameless.is-hidden-frameless.obsidian-app .mobile-tab-switcher {
+body.is-phone.mod-windows.is-frameless.is-hidden-frameless.obsidian-app
+  .mobile-tab-switcher {
   padding: 4px 4px 2px 4px !important;
   background: var(--background-secondary);
   box-shadow:
@@ -824,12 +844,16 @@ body.is-phone.mod-windows.is-frameless.is-hidden-frameless.obsidian-app .mobile-
   margin: 2px 3px 2px 2px;
 }
 
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right,
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right,
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
   background-color: transparent;
 }
 
-.workspace-split.mod-horizontal .workspace-tabs.mod-top .workspace-leaf .node-insert-event {
+.workspace-split.mod-horizontal
+  .workspace-tabs.mod-top
+  .workspace-leaf
+  .node-insert-event {
   box-shadow:
     inset -1px 0px var(--background-secondary),
     inset 1px 0px var(--bg-button-shadow),
@@ -838,7 +862,10 @@ body.is-phone.mod-windows.is-frameless.is-hidden-frameless.obsidian-app .mobile-
   background-color: var(--background-primary);
 }
 
-.workspace-split:not(.mod-horizontal.mod-left-split, .mod-horizontal.mod-right-split)
+.workspace-split:not(
+    .mod-horizontal.mod-left-split,
+    .mod-horizontal.mod-right-split
+  )
   .workspace-tabs:not(.mod-top)
   .markdown-reading-view {
   border-top: 1px solid black;
@@ -879,7 +906,10 @@ iframe {
 
 .markdown-preview-view:not(.kanban-plugin__markdown-preview-view),
 .markdown-source-view.mod-cm6 .cm-scroller,
-.workspace-split:not(.mod-horizontal.mod-left-split, .mod-horizontal.mod-right-split)
+.workspace-split:not(
+    .mod-horizontal.mod-left-split,
+    .mod-horizontal.mod-right-split
+  )
   .workspace-tabs:not(.mod-top)
   .markdown-source-view.mod-cm6
   .cm-scroller,
@@ -901,7 +931,9 @@ iframe {
   border-right: 5px solid var(--background-secondary);
 }
 
-.workspace-split:not(.mod-left-split, .mod-right-split) .workspace-leaf-content .view-content {
+.workspace-split:not(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content
+  .view-content {
   border-right: 5px solid var(--background-secondary);
 }
 
@@ -967,7 +999,10 @@ input.prompt-input:focus-visible {
   border-bottom: none;
 }
 
-.workspace-split:not(.mod-horizontal.mod-left-split, .mod-horizontal.mod-right-split)
+.workspace-split:not(
+    .mod-horizontal.mod-left-split,
+    .mod-horizontal.mod-right-split
+  )
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container {
   border-bottom: 1px solid transparent;
@@ -1305,7 +1340,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   content: "-";
   color: var(--text-on-accent);
 }
-.tree-item-self.mod-collapsible:hover .tree-item-icon.collapse-icon.is-collapsed::before {
+.tree-item-self.mod-collapsible:hover
+  .tree-item-icon.collapse-icon.is-collapsed::before {
   content: "+";
   color: var(--text-on-accent);
 }
@@ -1436,7 +1472,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) dashed var(--text-normal);
+  border-inline-start: var(--nav-indentation-guide-width) dashed
+    var(--text-normal);
 }
 
 .workspace-split.mod-root .view-content {
@@ -1948,8 +1985,10 @@ svg.svg-icon.lucide-eraser {
 .menu-item.selected:not(.is-label):not(.is-disabled) svg.svg-icon.lucide-eraser,
 .menu-item.selected:not(.is-label):not(.is-disabled) svg.svg-icon.lucide-bold,
 .menu-item.selected:not(.is-label):not(.is-disabled) svg.svg-icon.lucide-italic,
-.menu-item.selected:not(.is-label):not(.is-disabled) svg.svg-icon.lucide-strikethrough,
-.menu-item.selected:not(.is-label):not(.is-disabled) svg.svg-icon.lucide-list-plus {
+.menu-item.selected:not(.is-label):not(.is-disabled)
+  svg.svg-icon.lucide-strikethrough,
+.menu-item.selected:not(.is-label):not(.is-disabled)
+  svg.svg-icon.lucide-list-plus {
   background-color: var(--text-on-accent);
 }
 

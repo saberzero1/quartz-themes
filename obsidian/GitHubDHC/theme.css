@@ -165,7 +165,8 @@ settings:
 */
 body {
   /*───────── Obsidian - provided Variables ──────────*/
-  --font-sans: -apple-system BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
+  --font-sans:
+    -apple-system BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: "DM Mono", "Fira Code", Courier, monospace;
 
@@ -199,7 +200,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -256,7 +258,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
@@ -450,7 +453,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-30,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Popovers - file previews */
@@ -465,7 +471,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -625,7 +634,10 @@ body {
   --background-primary: var(--color-base-00-sk);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-00-sk);
-  --background-modifier-hover: rgba(var(--rgb-hover), var(--background-modifier-hover-alpha));
+  --background-modifier-hover: rgba(
+    var(--rgb-hover),
+    var(--background-modifier-hover-alpha)
+  );
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-30);
@@ -692,8 +704,16 @@ body {
   --accent-l-theme: 72%;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.8%)
+  );
 
   --background-secondary-alt: var(--color-base-25);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -776,8 +796,16 @@ body {
   --accent-l-theme: 45%;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
 
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -987,9 +1015,15 @@ body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
   box-shadow: none;
 }
 
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button:hover,
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button:hover,
-body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
+body.kanban-on
+  .kanban-plugin__item
+  button.kanban-plugin__item-prefix-button:hover,
+body.kanban-on
+  .kanban-plugin__item
+  button.kanban-plugin__item-postfix-button:hover,
+body.kanban-on
+  .kanban-plugin__lane
+  button.kanban-plugin__lane-settings-button:hover {
   background-color: var(--kanban-options-btn);
   cursor: pointer;
 }
@@ -1009,7 +1043,9 @@ body.kanban-on .kanban-plugin__lane-items {
   padding: 8px 15px;
 }
 
-body.kanban-on .kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
+body.kanban-on
+  .kanban-plugin__item-prefix-button-wrapper
+  input[type="checkbox"] {
   filter: none;
 }
 
@@ -1137,7 +1173,9 @@ body.kanban-full .kanban-plugin__item-postfix-button.clickable-icon {
   opacity: 0;
 }
 
-body.kanban-full .kanban-plugin__item:hover .kanban-plugin__item-postfix-button.clickable-icon {
+body.kanban-full
+  .kanban-plugin__item:hover
+  .kanban-plugin__item-postfix-button.clickable-icon {
   opacity: 1;
 }
 
@@ -1165,7 +1203,9 @@ body.kanban-full .kanban-plugin__new-item-button:hover {
 }
 
 /* FIXIES */
-body.kanban-full .kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
+body.kanban-full
+  .kanban-plugin__item-prefix-button-wrapper
+  input[type="checkbox"] {
   filter: none;
   margin: 3px;
 }

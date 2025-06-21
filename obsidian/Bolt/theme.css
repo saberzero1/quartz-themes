@@ -10,7 +10,8 @@
 
 /* =============== some quick design choices using variables ==================== */
 body {
-  --font-interface-theme: Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R";
+  --font-interface-theme:
+    Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R";
   --border-width: 2px;
   --inline-title-weight: 500;
   --inline-title-size: 2.5em;
@@ -195,7 +196,8 @@ body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon svg {
 }
 
 /* styling for the ribbon icon */
-body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon.mod-left:not(:hover):before {
+body:not(.restore-ribbon):not(.is-phone)
+  .workspace-ribbon.mod-left:not(:hover):before {
   border: none !important;
 }
 
@@ -212,7 +214,9 @@ body:not(.restore-ribbon):not(.is-phone)
 body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon:hover:before {
   display: none;
 }
-body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon.mod-left:not(:hover) .side-dock-actions,
+body:not(.restore-ribbon):not(.is-phone)
+  .side-dock-ribbon.mod-left:not(:hover)
+  .side-dock-actions,
 body:not(.restore-ribbon):not(.is-phone)
   .side-dock-ribbon.mod-left:not(:hover)
   .side-dock-settings {
@@ -243,15 +247,25 @@ svg.lucide-folder-closed {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"%2F%3E%3C%2Fsvg%3E');
   transform: none !important;
 }
-.nav-files-container .collapse-icon:not(.is-collapsed) svg.svg-icon.right-triangle {
+.nav-files-container
+  .collapse-icon:not(.is-collapsed)
+  svg.svg-icon.right-triangle {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="M6.1 10L4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5H6.1M19 18H6l1.6-6h13L19 18Z"%2F%3E%3C%2Fsvg%3E');
 }
 
 /* attachments/gallery folders */
-.nav-files-container .nav-folder-title[data-path*="Attachments"] svg.svg-icon.right-triangle,
-.nav-files-container .nav-folder-title[data-path*="attachments"] svg.svg-icon.right-triangle,
-.nav-files-container .nav-folder-title[data-path*="Gallery"] svg.svg-icon.right-triangle,
-.nav-files-container .nav-folder-title[data-path*="gallery"] svg.svg-icon.right-triangle {
+.nav-files-container
+  .nav-folder-title[data-path*="Attachments"]
+  svg.svg-icon.right-triangle,
+.nav-files-container
+  .nav-folder-title[data-path*="attachments"]
+  svg.svg-icon.right-triangle,
+.nav-files-container
+  .nav-folder-title[data-path*="Gallery"]
+  svg.svg-icon.right-triangle,
+.nav-files-container
+  .nav-folder-title[data-path*="gallery"]
+  svg.svg-icon.right-triangle {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="m5 17l4.5-6l3.5 4.5l2.5-3L19 17m1-11h-8l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"%2F%3E%3C%2Fsvg%3E');
 }
 
@@ -447,7 +461,8 @@ body {
 /* hide tag hashtags (#) */
 a.tag,
 .cm-line:not(.cm-active) .cm-hashtag-begin {
-  font-family: "Formular", var(--font-text); /* Formular does not render hashtags */
+  font-family:
+    "Formular", var(--font-text); /* Formular does not render hashtags */
 }
 /* show hashtag again on hover */
 a.tag:not(.basename-tag):hover,
@@ -638,7 +653,9 @@ body {
 /* Material-like view header */
 
 .view-header,
-body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-header {
+body:not(.is-mobile)
+  .workspace-leaf-content:not([data-type="markdown"])
+  .nav-header {
   background-color: var(--lower-accent) !important;
   color: var(--on-lower-accent);
 }
@@ -651,7 +668,10 @@ body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-he
   --text-normal: var(--on-lower-accent);
   --text-muted: var(--on-lower-accent);
 }
-body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-header * {
+body:not(.is-mobile)
+  .workspace-leaf-content:not([data-type="markdown"])
+  .nav-header
+  * {
   color: var(--on-lower-accent);
 }
 
@@ -671,7 +691,10 @@ body:not(.is-mobile) .workspace-leaf-content:not([data-type="markdown"]) .nav-he
 
 /* change the color of items in the view header for contrast */
 .view-header > *,
-body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-header *,
+body:not(.is-mobile)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header
+  *,
 .view-header .clickable-icon,
 .view-header .view-header-title,
 .view-header .view-header-title-parent {
@@ -980,7 +1003,11 @@ body.is-mobile .view-action:nth-last-of-type(2) svg {
   --on-upper-accent: var(--on-primary);
   --on-lower-accent: var(--on-primary);
   --lower-accent: var(--primary-lighter);
-  --primary-lighter: hsl(var(--accent-h), calc(var(--accent-s) - 14%), calc(var(--accent-l) + 7%));
+  --primary-lighter: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 14%),
+    calc(var(--accent-l) + 7%)
+  );
 
   --secondary: #4a6363;
   --on-secondary: #ffffff;
@@ -1022,7 +1049,11 @@ body.is-mobile .view-action:nth-last-of-type(2) svg {
   --lower-accent: var(--secondary-container);
   --on-lower-accent: vaR(--on-secondary-container);
 
-  --primary-lighter: hsl(var(--accent-h), calc(var(--accent-s) - 2%), calc(var(--accent-l) + 5%));
+  --primary-lighter: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 2%),
+    calc(var(--accent-l) + 5%)
+  );
 
   --secondary: #b0cccc;
   --on-secondary: #034747;
@@ -1065,7 +1096,8 @@ body.is-mobile .view-action:nth-last-of-type(2) svg {
   --color-base-70: var(--on-surface-variant);
   --color-base-100: var(--on-background);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --shadow-bottom: 0 10px 10px -10px rgba(0, 0, 0, 0.19), 0 6px 6px -6px rgba(0, 0, 0, 0.23);
+  --shadow-bottom:
+    0 10px 10px -10px rgba(0, 0, 0, 0.19), 0 6px 6px -6px rgba(0, 0, 0, 0.23);
   --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --shadow-m: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   --color-accent-2: var(--secondary);

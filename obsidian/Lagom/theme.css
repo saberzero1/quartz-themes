@@ -7,7 +7,8 @@
 
 /* ::::: LAGOM SETTINGS ::::: */
 body {
-  --mac-terminal-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+  --mac-terminal-shadow:
+    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   --nav-item-size: 15.8px; /* files */
   --radius-s: 11.5px;
@@ -24,7 +25,8 @@ body {
   --icon-file-indicator: "·";
   --inline-title-align: center;
   --inline-title-size: 20px;
-  --inline-code-font-size: calc(var(--default-font-size) - 1.5 px) --code-size-edit-mode: 13.9px;
+  --inline-code-font-size: calc(var(--default-font-size) - 1.5 px)
+    --code-size-edit-mode: 13.9px;
   --code-size: 14px;
   --macos-button-size: 16px;
   --quotes-align: justify;
@@ -192,7 +194,9 @@ body.theme-light {
 }
 
 .page-style-read-mode
-  .markdown-preview-view:not(.markdown-embed):not(.obsidian-metatable):not(.markdown-embed-title) {
+  .markdown-preview-view:not(.markdown-embed):not(.obsidian-metatable):not(
+    .markdown-embed-title
+  ) {
   /* Style page for read mode */
   height: fit-content;
   min-width: auto;
@@ -209,7 +213,9 @@ body.theme-light {
 /* :::::::::: ACTIVE LINE :::::::::: */
 
 /* Focus active line (?) */
-.CodeMirror-lines:not(.selecting) .CodeMirror-code > :not(.CodeMirror-activeline) {
+.CodeMirror-lines:not(.selecting)
+  .CodeMirror-code
+  > :not(.CodeMirror-activeline) {
   opacity: var(--focus-active-line-opacity);
 }
 
@@ -287,8 +293,10 @@ body.theme-light {
   border-left: 0px !important;
   font-size: var(--quote-font-size);
   border-radius: 0px;
-  border-top: var(--quote-hide-top-line) dashed var(--background-modifier-border);
-  border-bottom: var(--quote-hide-down-line) dashed var(--background-modifier-border);
+  border-top: var(--quote-hide-top-line) dashed
+    var(--background-modifier-border);
+  border-bottom: var(--quote-hide-down-line) dashed
+    var(--background-modifier-border);
 }
 
 blockquote::before {
@@ -485,12 +493,18 @@ body:not(.no-codeblock-line-numbers) .HyperMD-codeblock-begin {
 }
 
 body:not(.no-codeblock-line-numbers)
-  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+  .HyperMD-codeblock.cm-line:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  ) {
   padding-left: 2.8em;
 }
 
 body:not(.no-codeblock-line-numbers)
-  .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end):before {
+  .HyperMD-codeblock:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  ):before {
   color: var(--text-muted);
   text-align: right;
   content: counter(codeblock-line-numbers);
@@ -511,7 +525,7 @@ body:not(.no-codeblock-line-numbers)
 }
 
 .frontmatter-container {
-  /*	display: none; */
+  /*    display: none; */
 }
 
 .cm-hmd-frontmatter {
@@ -586,7 +600,10 @@ a.tag {
 }
 
 /* HIDE "X" IN TAGS */
-.markdown-preview-view .mod-header .metadata-container .multi-select-pill-remove-button {
+.markdown-preview-view
+  .mod-header
+  .metadata-container
+  .multi-select-pill-remove-button {
   display: none;
 }
 
@@ -918,12 +935,12 @@ hr {
 /*
 
 .workspace-drawer-backdrop, .modal-container, .is-phone, .suggestion-bg{
-	background: #00000097;
+    background: #00000097;
   box-shadow: var(--input-shadow)
 }
 
 .nav-files-container>div>.nav-folder>.nav-folder-title>.nav-folder-title-content{
-	font-weight:600;
+    font-weight:600;
 }
 
 .nav-folder:nth-child(odd).nav-folder-title, .nav-file:nth-child(odd){}
@@ -1146,7 +1163,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 /* SECONDARY MENU 
 
 .menu-separator:not(.is-mobile, .menu-item) {
-	border-bottom: 1.5px dashed var(--background-modifier-border);
+    border-bottom: 1.5px dashed var(--background-modifier-border);
 }
 
 /*  :::::  UI ICONS  :::::  */
@@ -1345,12 +1362,19 @@ body,
   content: var(--folder-2-open);
 }
 
-.nav-folder.mod-root .nav-folder .nav-folder.is-collapsed .nav-folder-title-content:before {
+.nav-folder.mod-root
+  .nav-folder
+  .nav-folder.is-collapsed
+  .nav-folder-title-content:before {
   content: var(--folder-2);
 }
 
 /* FOLDER LEVEL 3 */
-.nav-folder.mod-root .nav-folder .nav-folder .nav-folder .nav-folder-title-content:before {
+.nav-folder.mod-root
+  .nav-folder
+  .nav-folder
+  .nav-folder
+  .nav-folder-title-content:before {
   content: var(--folder-3-open);
 }
 
@@ -1993,7 +2017,6 @@ settings:
           - 
               label: Right
               value: right
-  - 
       
   - 
       id: embed-section
@@ -2053,7 +2076,6 @@ settings:
           - 
               label: Solid
               value: solid
-  - 
 */
 
 /* @settings

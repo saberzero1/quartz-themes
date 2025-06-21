@@ -68,7 +68,9 @@ body {
 
 .theme-light,
 .theme-dark {
-  --font-text: "iA Writer Duo", var(--font-text-override), "iA Writer Duo", var(--font-interface);
+  --font-text:
+    "iA Writer Duo", var(--font-text-override), "iA Writer Duo",
+    var(--font-interface);
   --line-height-normal: 1.7;
   --link-decoration: underline;
   --link-unresolved-decoration-color: var(--text-muted);

@@ -360,7 +360,10 @@ body.theme-light.vintage-theme {
   --canvas-dot-pattern: #796e6e47;
 }
 
-body.theme-light.vintage-theme .workspace-ribbon .sidebar-toggle-button .clickable-icon {
+body.theme-light.vintage-theme
+  .workspace-ribbon
+  .sidebar-toggle-button
+  .clickable-icon {
   color: #534e3d;
 }
 
@@ -434,7 +437,10 @@ body.theme-dark.vintage-theme {
   --canvas-dot-pattern: #965e29e1;
 }
 
-body.theme-dark.vintage-theme .workspace-ribbon .sidebar-toggle-button .clickable-icon {
+body.theme-dark.vintage-theme
+  .workspace-ribbon
+  .sidebar-toggle-button
+  .clickable-icon {
   color: #f2e5bf;
 }
 
@@ -470,15 +476,21 @@ body.theme-dark.vintage-theme .canvas-control-item:nth-child(4n + 4) {
   color: #79b1c7;
 }
 
-body.theme-dark.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(1) {
+body.theme-dark.vintage-theme
+  .canvas-card-menu
+  .canvas-card-menu-button:nth-child(1) {
   color: #f2e5bf;
 }
 
-body.theme-dark.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(2) {
+body.theme-dark.vintage-theme
+  .canvas-card-menu
+  .canvas-card-menu-button:nth-child(2) {
   color: #fd8b51;
 }
 
-body.theme-dark.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(3) {
+body.theme-dark.vintage-theme
+  .canvas-card-menu
+  .canvas-card-menu-button:nth-child(3) {
   color: #ffad60;
 }
 
@@ -735,8 +747,9 @@ body {
   --modal-animation: modalAnimation 0.1s ease-in;
   --ribbon-box-style-margin: 11%;
   --box-style-sidebar-toggle-button-height: 58px;
-  --font-style: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-style:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --h1-font-style: : inherit;
   --table-border-width: 0.6px;
 }
@@ -881,7 +894,8 @@ body.ribbon-default-style .workspace-ribbon {
   margin-bottom: 35px;
 }
 
-body:not(.ribbon-box-style):not(.ribbon-edge-style) .workspace-ribbon.mod-left.is-collapsed,
+body:not(.ribbon-box-style):not(.ribbon-edge-style)
+  .workspace-ribbon.mod-left.is-collapsed,
 body:not(.ribbon-box-style):not(.ribbon-edge-style) .workspace-ribbon.mod-left,
 body.ribbon-default-style .workspace-ribbon.mod-left.is-collapsed,
 body.ribbon-default-style .workspace-ribbon.mod-left {
@@ -892,7 +906,9 @@ body.ribbon-default-style .workspace-ribbon.mod-left {
   border-top: var(--background-modifier-border);
 }
 
-body:not(.ribbon-box-style):not(.ribbon-edge-style) .workspace-ribbon .sidebar-toggle-button,
+body:not(.ribbon-box-style):not(.ribbon-edge-style)
+  .workspace-ribbon
+  .sidebar-toggle-button,
 body.ribbon-default-style .workspace-ribbon .sidebar-toggle-button {
   margin-top: 6%;
   height: 50px;
@@ -1130,7 +1146,10 @@ body.titlebar-vintage-style .titlebar .mod-minimize:hover {
 }
 
 /* Hide folder icons when disabled */
-body.hide-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before,
+body.hide-folder-icons
+  .nav-folder
+  .nav-folder-title
+  .nav-folder-title-content::before,
 body.hide-folder-icons
   .nav-folder.is-collapsed
   .nav-folder-title
@@ -1364,7 +1383,10 @@ body.hide-file-icons .nav-file .nav-file-title .nav-file-title-content::before {
   margin: 0 2.5px 5px 2.5px;
 }
 
-.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+.workspace
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
   display: none;
 }
 
@@ -1543,7 +1565,9 @@ body.workspace-ribbon {
   background-color: var(--background-secondary);
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   position: relative;
   border: var(--background-modifier-border);
   border-bottom-left-radius: var(--border-radius);

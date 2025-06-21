@@ -20,7 +20,8 @@ body {
   --background: light-dark(var(--light-background), var(--dark-background));
 
   --floating-background: var(--background);
-  --box-shadow: calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
+  --box-shadow:
+    calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
     calc(var(--gap) / 2 * -1) calc(var(--gap) / 2 * -1) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-second), var(--dark-shadow-second));
@@ -68,7 +69,9 @@ body:not(.mod-macos) .sidebar-toggle-button.mod-left,
 }
 
 #editingToolbarModalBar,
-.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container,
 .workspace-split.mod-horizontal.mod-sidedock.mod-right-split
   .mod-top-right-space
   .workspace-tab-header-container,
@@ -131,7 +134,8 @@ body:not(.mod-macos) .sidebar-toggle-button.mod-left,
 
 .workspace-ribbon.mod-left,
 .sidebar-toggle-button.mod-left,
-body:not(.show-ribbon) .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
+body:not(.show-ribbon)
+  .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
 body:not(.show-ribbon)
   .workspace:not(.is-left-sidedock-open)
   .workspace-split.mod-vertical.mod-root,
@@ -149,14 +153,20 @@ body:not(.show-ribbon)
   margin-inline-end: var(--gap);
 }
 
-body:not(.show-ribbon) .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left {
+body:not(.show-ribbon)
+  .workspace.is-left-sidedock-open
+  .sidebar-toggle-button.mod-left {
   margin: 0 !important;
 }
 
-.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container,
-.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container-inner,
-.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container,
-.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container-inner {
+.workspace-tabs.mod-top:not(.mod-top-right-space)
+  .workspace-tab-header-container,
+.workspace-tabs.mod-top:not(.mod-top-right-space)
+  .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+  .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+  .workspace-tab-header-container-inner {
   padding: 0 !important;
   padding-inline: calc(1rem / 4) !important;
   margin: 0 !important;
@@ -283,7 +293,9 @@ div[class^="div-scrollTo"] {
   overflow: var(--overflow);
 }
 
-.workspace-tabs.mod-top .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+.workspace-tabs.mod-top
+  .workspace-tab-header.tappable.is-active
+  .workspace-tab-header-inner {
   position: relative;
   overflow: var(--overflow) !important;
   isolation: isolate;
@@ -303,8 +315,10 @@ div[class^="div-scrollTo"] {
   transform: translateX(-50%);
 }
 
-.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tab-header-inner:before,
-.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-inner:before {
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split
+  .workspace-tab-header-inner:before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+  .workspace-tab-header-inner:before {
   display: none !important;
 }
 
@@ -312,5 +326,7 @@ div[class^="div-scrollTo"] {
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-active.mod-top.mod-top-right-space
   .workspace-tab-header-container {
-  padding-inline-end: calc(var(--size-4-2) + var(--frame-right-space)) !important;
+  padding-inline-end: calc(
+    var(--size-4-2) + var(--frame-right-space)
+  ) !important;
 }

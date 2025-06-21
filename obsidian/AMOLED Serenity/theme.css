@@ -139,28 +139,34 @@
 
   /* Text Colors */
   --style-settings-section-text-colors: "Text Colors";
-  --style-settings-var-text-primary: [color, Primary Text Color, var(--color-base-80)];
-  --style-settings-var-text-secondary: [color, Secondary Text Color, var(--color-base-50)];
+  --style-settings-var-text-primary:
+    [color, Primary Text Color, var(--color-base-80)];
+  --style-settings-var-text-secondary:
+    [color, Secondary Text Color, var(--color-base-50)];
   --style-settings-var-text-error: [color, Error Text Color, var(--red)];
   --style-settings-var-text-warning: [color, Warning Text Color, var(--yellow)];
 
   /* Buttons */
   --style-settings-section-buttons: "Buttons";
-  --style-settings-var-button-background: [color, Button Background Color,
-    var(--background-primary)];
-  --style-settings-var-button-text: [color, Button Text Color, var(--color-base-80)];
-  --style-settings-var-button-border: [color, Button Border Color, var(--background-primary)];
+  --style-settings-var-button-background:
+    [color, Button Background Color, var(--background-primary)];
+  --style-settings-var-button-text:
+    [color, Button Text Color, var(--color-base-80)];
+  --style-settings-var-button-border:
+    [color, Button Border Color, var(--background-primary)];
 
   /* Selections and Focus */
   --style-settings-section-selection-focus: "Selections and Focus";
   --style-settings-var-focus-border: [color, Focus Border Color, var(--purple)];
-  --style-settings-var-selection-background: [color, Selection Background Color,
-    rgba(var(--green_x), 0.25)];
+  --style-settings-var-selection-background:
+    [color, Selection Background Color, rgba(var(--green_x), 0.25)];
 
   /* Status Bar */
   --style-settings-section-status-bar: "Status Bar";
-  --style-settings-var-status-bar-background: [color, Status Bar Background, var(--color-base-05)];
-  --style-settings-var-status-bar-foreground: [color, Status Bar Foreground, var(--color-base-100)];
+  --style-settings-var-status-bar-background:
+    [color, Status Bar Background, var(--color-base-05)];
+  --style-settings-var-status-bar-foreground:
+    [color, Status Bar Foreground, var(--color-base-100)];
 
   /* Default font */
   --header-font: "Inter";

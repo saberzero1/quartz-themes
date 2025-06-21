@@ -114,26 +114,60 @@ body {
     calc(var(--base-l) - 12%)
   );
   --background-secondary-alt: #fcf5e4;
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
+  --background-transparent: hsla(
+    var(--base-h),
+    var(--base-s),
+    var(--base-l),
+    0
+  );
   --background-translucent: rgba(255, 255, 255, 0.85);
-  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
-  --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+  --background-modifier-border: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 6%)
+  );
+  --background-modifier-border-hover: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 12%)
+  );
+  --background-modifier-border-focus: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 20%)
+  );
+  --background-modifier-form-field: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 6%)
+  );
   --background-modifier-form-field-highlighted: hsl(
     var(--base-h),
     var(--base-s),
     calc(var(--base-l) + 8%)
   );
 
-  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --color-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-l)
+  );
   --background-modifier-accent: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
     calc(var(--theme-accent-l) + 10%)
   );
-  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l), 0.8);
-  --text-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-l));
+  --vim-cursor: hsla(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-l),
+    0.8
+  );
+  --text-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-l)
+  );
   --text-accent-hover: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
@@ -186,8 +220,16 @@ body {
   --background-secondary-alt: #000000;
   --background-modifier-border: #333;
   --background-modifier-border-hover: rgb(94, 94, 94);
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 60%));
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --background-modifier-border-focus: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 60%)
+  );
+  --background-modifier-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-d)
+  );
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -197,8 +239,17 @@ body {
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
 
-  --vim-cursor: hsla(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d), 0.8);
-  --color-accent: hsl(var(--theme-accent-h), var(--theme-accent-s), var(--theme-accent-d));
+  --vim-cursor: hsla(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-d),
+    0.8
+  );
+  --color-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-d)
+  );
   --text-accent-hover: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
@@ -240,7 +291,8 @@ body {
 body {
   --font-text-theme: "iA Writer Quattro S";
   --font-interface-theme: var(--font-text-theme);
-  --font-editor-theme: "iA Writer Mono", "iA Writer Mono V", var(--font-text-theme),
+  --font-editor-theme:
+    "iA Writer Mono", "iA Writer Mono V", var(--font-text-theme),
     var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
 
@@ -394,7 +446,8 @@ body .modal-bg {
 /* make workspace frameless */
 .workspace-tab-header-container,
 .workspace-ribbon.mod-left:before,
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   background-color: var(--background-primary);
 }
 

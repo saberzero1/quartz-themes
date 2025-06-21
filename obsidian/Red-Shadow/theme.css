@@ -137,15 +137,18 @@ body {
 */
 
 :root {
-  --default-font: "Poppins", "Oswald", "Montserrat", "Roboto", "Glow Sans SC", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", sans-serif;
+  --default-font:
+    "Poppins", "Oswald", "Montserrat", "Roboto", "Glow Sans SC", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   --default-font-size: 16px;
   --body-font-weight: 400;
-  --tag-font-family: "Fira Sans", "Operator Mono", "OperatorMonoSSmLig-Book", "Montserrat",
-    "Glow Sans SC", "PingFang TC", "微软雅黑", "STXihei", "华文细黑", "Microsoft YaHei",
-    "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
-  --code-mono-font: "Fira Code", "Operator Mono", "JetBrains Mono", "Source Code Pro",
+  --tag-font-family:
+    "Fira Sans", "Operator Mono", "OperatorMonoSSmLig-Book", "Montserrat",
+    "Glow Sans SC", "PingFang TC", "微软雅黑", "STXihei", "华文细黑",
+    "Microsoft YaHei", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+  --code-mono-font:
+    "Fira Code", "Operator Mono", "JetBrains Mono", "Source Code Pro",
     "OperatorMonoSSmLig-Book", monospace;
 }
 
@@ -293,8 +296,14 @@ body {
   opacity: 1;
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   background: var(--background-modifier-border);
   color: var(--text-accent);
 }
@@ -443,7 +452,11 @@ span.cm-formatting-list,
   color: var(--checkbox) !important;
 }
 
-.markdown-preview-view ul > li.task-list-item.is-checked ul > li:not(.is-checked) {
+.markdown-preview-view
+  ul
+  > li.task-list-item.is-checked
+  ul
+  > li:not(.is-checked) {
   text-decoration: none !important;
   color: var(--text-normal) !important;
 }
@@ -508,7 +521,13 @@ h6 {
   border-bottom: 1px solid;
   border-width: 1px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  border-image-source: linear-gradient(
+    to right,
+    var(--text-sub-accent),
+    #100e17,
+    #100e17,
+    #100e17
+  );
 }
 
 .HyperMD-header {
@@ -564,7 +583,13 @@ h6 {
   border-bottom: 1px solid;
   border-width: 35%;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #170e0e, #170e0e, #170e0e);
+  border-image-source: linear-gradient(
+    to right,
+    var(--text-sub-accent),
+    #170e0e,
+    #170e0e,
+    #170e0e
+  );
 }
 
 .view-header-icon {
@@ -1036,7 +1061,9 @@ blockquote {
   background: linear-gradient(90deg, rgba(215, 13, 13, 0.5), #1a1111);
 }
 
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote::before {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote
+  + .HyperMD-quote::before {
   display: none;
 }
 

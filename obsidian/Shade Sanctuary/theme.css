@@ -11,7 +11,11 @@ strong,
 }
 
 /* ============== Headings ============== */
-body .markdown-rendered .markdown-preview-section > div > :is(h1, h2, h3, h4, h5, h6, p),
+body
+  .markdown-rendered
+  .markdown-preview-section
+  > div
+  > :is(h1, h2, h3, h4, h5, h6, p),
 body .markdown-source-view.mod-cm6 .HyperMD-header,
 body
   .markdown-rendered
@@ -160,7 +164,8 @@ body {
   --font-text: "Computer Modern Bright", "Computer Modern", "Inter", Sans-Serif;
   --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
   --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
-  --font-callout-theme: "Computer Modern Bright", "Computer Modern", "Sans-Serif";
+  --font-callout-theme:
+    "Computer Modern Bright", "Computer Modern", "Sans-Serif";
   /* ============== Typography ============== */
   --unified-heading-space: 10px;
   --font-text-size: 10px;
@@ -238,7 +243,11 @@ body {
   --checkbox-color: var(--text-accent);
 
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
-  --text-highlight-bg-active: color-mix(in srgb, var(--h1-color) 25%, transparent);
+  --text-highlight-bg-active: color-mix(
+    in srgb,
+    var(--h1-color) 25%,
+    transparent
+  );
 }
 
 /* ============== Gradient Callout Settings ============== */
@@ -406,7 +415,9 @@ body.is-translucent {
   background-color: var(--background-secondary);
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   border-radius: 10px;
   border: solid 1px var(--color-base-30);
   padding: 5px;
@@ -490,7 +501,8 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 }
 
 /* Add borders to style setting for better visability */
-.style-settings-heading[data-level="0"]:not(.is-collapsed) + .style-settings-container {
+.style-settings-heading[data-level="0"]:not(.is-collapsed)
+  + .style-settings-container {
   border-bottom: 1px solid var(--background-modifier-border);
 }
 .style-settings-heading[data-level="1"] {
@@ -537,7 +549,9 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 }
 
 /* Set editor border and radius */
-.workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+.workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
 .mod-root .workspace-tabs .workspace-leaf {
   border-radius: 20px;
   border: solid 1px var(--color-base-30);
@@ -559,7 +573,9 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 .workspace-leaf .view-header {
   border-radius: 16px;
   background: var(--background-secondary);
-  width: calc(100% - 24px); /* Make the width smaller than the parent container */
+  width: calc(
+    100% - 24px
+  ); /* Make the width smaller than the parent container */
   height: 46px; /* Make the height smaller than the parent container */
   margin: 14px auto; /* Center the box horizontally and vertically */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -812,8 +828,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--checkbox-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;

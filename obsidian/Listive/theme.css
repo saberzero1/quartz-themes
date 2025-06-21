@@ -12,24 +12,24 @@
     - fixed font support with base64 embedding
     - add partial bullet threading feature
 
-	0.6.3 (updated 19Nov2023)
-	- added customisation for Emoji Toolbar
-	- improved performance by optimising has() use in certain places
+    0.6.3 (updated 19Nov2023)
+    - added customisation for Emoji Toolbar
+    - improved performance by optimising has() use in certain places
 
-	0.6.2 (updated 14Oct2023)
-	- improved support for Digital Garden plugin (filetree, backlinks and mobile UI)
+    0.6.2 (updated 14Oct2023)
+    - improved support for Digital Garden plugin (filetree, backlinks and mobile UI)
 
-	0.6.1 (updated 16Sep2023)
-	- minor fixes on SNW plugin
-	- minor fixes on active line background not to affect gutter
-	- minor adjustment to highlight's alternate checkboxex for better demarcation
-	- support for Better Search Views plugin
+    0.6.1 (updated 16Sep2023)
+    - minor fixes on SNW plugin
+    - minor fixes on active line background not to affect gutter
+    - minor adjustment to highlight's alternate checkboxex for better demarcation
+    - support for Better Search Views plugin
 
-	0.6.0 (updated 12Aug2023)
-	- adjust heading spacing for 1.3.7 (plan to make it adjustable)
-	- improved SNW support for headers in list
-	- blockquote LP improvement
-	- customisation on Properties
+    0.6.0 (updated 12Aug2023)
+    - adjust heading spacing for 1.3.7 (plan to make it adjustable)
+    - improved SNW support for headers in list
+    - blockquote LP improvement
+    - customisation on Properties
 
 */
 
@@ -73,8 +73,8 @@
 }
 
 /* =============================================================================
-	Section for (01.) Workspace / General UI
-	- non-color Workspace / UI design
+    Section for (01.) Workspace / General UI
+    - non-color Workspace / UI design
 ============================================================================= */
 
 /* === Hide Listive theme identifier in Style Settings === */
@@ -110,11 +110,11 @@ body:is(.theme-dark, .theme-light) {
 }
 
 /* adjustment to dim text color but retain background color when in focused vs not focused.
-			cannot simply use variable adjustment in body.is-focused as some don't have a variation of the variables
-			- set the sidebar tabs background same as titlebar
-			- set the ribbon bar (when expanded) to be same as background-primary
-			- setting the background when app is not on focus
-		*/
+            cannot simply use variable adjustment in body.is-focused as some don't have a variation of the variables
+            - set the sidebar tabs background same as titlebar
+            - set the ribbon bar (when expanded) to be same as background-primary
+            - setting the background when app is not on focus
+        */
 .workspace-tabs .workspace-leaf {
   background-color: var(--titlebar-background-focused);
 }
@@ -138,7 +138,9 @@ body:not(.is-focused) .clickable-icon {
 /* === Refine Certain UI Elements === */
 
 /* reintroduce resize handle divider width, only for sidebar tabs */
-:is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-leaf-resize-handle {
+:is(.mod-left-split, .mod-right-split)
+  .workspace-tabs
+  .workspace-leaf-resize-handle {
   --divider-width: 4px;
 }
 .mod-root .workspace-tabs .workspace-leaf-resize-handle:not(:hover),
@@ -180,7 +182,10 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 /* === Introduce Distinct Tabs === */
 
 /* rounded square for tab stack with drop shadow */
-.mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner {
+.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner {
   border-radius: 0px;
 }
 .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
@@ -189,10 +194,17 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 body {
   --tab-stacked-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
   border-top-left-radius: var(--size-4-2);
 } /* box-shadow: 0 0 var(--size-4-2) var(--background-modifier-cover); */
-body:not(.is-focused) .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
+body:not(.is-focused)
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container {
   background-color: var(--background-secondary);
 }
 .mod-root .workspace-tabs.mod-stacked .workspace-tab-header {
@@ -283,10 +295,10 @@ body.lst-folder-tabs .workspace .mod-root .workspace-tab-header::after {
 /* adjust UI font size based on settings in Appearance > Font > Font Size */
 body {
   /*
-			--font-ui-medium: calc(15px + var(--font-text-size) - 16px + 1px) ;
-			--font-ui-small: calc(13px + var(--font-text-size) - 16px + 1px) ;
-			--font-ui-smaller: calc(12px + var(--font-text-size) - 16px + 1px) ;
-			*/
+            --font-ui-medium: calc(15px + var(--font-text-size) - 16px + 1px) ;
+            --font-ui-small: calc(13px + var(--font-text-size) - 16px + 1px) ;
+            --font-ui-smaller: calc(12px + var(--font-text-size) - 16px + 1px) ;
+            */
   --font-ui-medium: 14px;
   --font-ui-small: 12px;
   --font-ui-smaller: 11px;
@@ -307,14 +319,14 @@ body {
 }
 
 /* =============================================================================
-	Section for Non-Components Defaults
-	- base colors and color schemes
+    Section for Non-Components Defaults
+    - base colors and color schemes
 ============================================================================= */
 
 /* setting up variables for theme */
 /* chosen colors
-		- DarkSalmon: #e9967a // rgb(233, 150, 122) // hsl(15, 72%, 70%)
-	*/
+        - DarkSalmon: #e9967a // rgb(233, 150, 122) // hsl(15, 72%, 70%)
+    */
 
 body {
   --divider-color: var(--background-secondary);
@@ -341,7 +353,7 @@ body {
   --background-modifier-cover: hsl(0, 0%, 85%);
   /*hsl(0, 0%, 90%)*/
   --background-modifier-form-field: #e6e6e6;
-  /*	--interactive-accent: #60809f; /* for interactive buttons */
+  /*    --interactive-accent: #60809f; /* for interactive buttons */
   --interactive-accent-hover: #708ca9; /* for interactive buttons */
 
   /* color variables for Hover Editor plugin, monochromatic & compound of #e6e6e6 */
@@ -354,22 +366,26 @@ body {
   --text-faint: #808080;
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(0, 0%, 90%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    0,
+    0%,
+    90%
+  ); /* for backlinks, 2% darker than primary */
 }
 
 .color-scheme-base.theme-dark,
 .theme-dark {
   /* Base Color - #262626
-    		   - #3D373A - analogous
-    		   - #332E33 - analogous
-    		   |-- #433d43 - ligher shade
-    		   - #1a1a1a - darker shade
-    		   - #333333 - lighter shade
-    		   - #735050 - monochromatic
-    		   - #595350 - compound
-    		   Base Color 2 - #304050 - special purple
-    		   Base Color 3 - #4682B4 (SteelBlue) & lighter #5a91bf
-    		*/
+               - #3D373A - analogous
+               - #332E33 - analogous
+               |-- #433d43 - ligher shade
+               - #1a1a1a - darker shade
+               - #333333 - lighter shade
+               - #735050 - monochromatic
+               - #595350 - compound
+               Base Color 2 - #304050 - special purple
+               Base Color 3 - #4682B4 (SteelBlue) & lighter #5a91bf
+            */
 
   /* Base Color 1 - for main workspace */
   --background-primary: hsl(0, 0%, 20%); /* for main workspace / #333 */
@@ -388,11 +404,15 @@ body {
     0%,
     16%
   ); /* 4% darker shade of background-primary, active line and backlinks */
-  --background-modifier-border: hsl(20, 5%, 33%); /* #595350; 	/* for horizontal line & border */
+  --background-modifier-border: hsl(
+    20,
+    5%,
+    33%
+  ); /* #595350;     /* for horizontal line & border */
   --background-modifier-cover: #262626; /* for title bar / #332E33 */
   --background-modifier-cover: hsl(0, 0%, 16%); /* for title bar / #332E33 */
   /*  --interactive-accent: #4682B4;                    /* for interactive buttons */
-  /*	--interactive-accent-hover: #5a91bf; 	/* for interactive buttons */
+  /*    --interactive-accent-hover: #5a91bf;     /* for interactive buttons */
 
   /* my custom variables */
   --background-modifier-border-active: hsl(
@@ -400,7 +420,11 @@ body {
     5%,
     53%
   ); /* for border active, lighter for dark mode */
-  --background-modifier-backlinks: hsl(0, 0%, 18%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    0,
+    0%,
+    18%
+  ); /* for backlinks, 2% darker than primary */
 
   /* plugins variables */
   /* color variables for Hover Editor plugin, #735050 is monochromatic of #262626 */
@@ -420,13 +444,13 @@ body {
 
 .color-scheme-discord.theme-dark {
   /*
-    			hsl(220, 8%, 23%) -- main pane/chat window
-    			hsl(223, 7%, 20%) -- sidebar for channels (dark)
-    			hsl(218, 8%, 27%) -- input for chats (lighter)
-    			hsl(216, 7%, 14%) -- sidebar for servers (darker)
-    			hsl(225, 8%, 10%) -- popup (almost black)
-    			hsl(217, 8%, 34%) -- buttons (lightest)
-    		*/
+                hsl(220, 8%, 23%) -- main pane/chat window
+                hsl(223, 7%, 20%) -- sidebar for channels (dark)
+                hsl(218, 8%, 27%) -- input for chats (lighter)
+                hsl(216, 7%, 14%) -- sidebar for servers (darker)
+                hsl(225, 8%, 10%) -- popup (almost black)
+                hsl(217, 8%, 34%) -- buttons (lightest)
+            */
   --background-primary: hsl(220, 8%, 23%);
   --background-modifier-cover: hsl(223, 7%, 20%);
   --background-secondary: hsl(218, 8%, 27%);
@@ -439,17 +463,21 @@ body {
   ); /* 4% darker shade of background-primary, active line and backlinks */
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(220, 8%, 21%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    220,
+    8%,
+    21%
+  ); /* for backlinks, 2% darker than primary */
 }
 .color-scheme-discord.theme-light {
   /*
-    			hsl(0, 0%, 100%) -- main pane/chat window
-    			hsl(220, 13%, 95%) -- sidebar for channels (dark)
-    			hsl(210, 11%, 93%) -- input for chats (lighter)
-    			hsl(216, 10%, 90%) -- sidebar for servers (darker)
-    			hsl(0, 0%, 100%) -- popup (white)
-    			hsl(213, 9%, 46%) -- buttons (bit darker)
-    		*/
+                hsl(0, 0%, 100%) -- main pane/chat window
+                hsl(220, 13%, 95%) -- sidebar for channels (dark)
+                hsl(210, 11%, 93%) -- input for chats (lighter)
+                hsl(216, 10%, 90%) -- sidebar for servers (darker)
+                hsl(0, 0%, 100%) -- popup (white)
+                hsl(213, 9%, 46%) -- buttons (bit darker)
+            */
   --background-primary: hsl(220, 16%, 92%);
   --background-modifier-cover: hsl(223, 14%, 85%);
   --background-secondary: hsl(218, 16%, 85%);
@@ -462,7 +490,11 @@ body {
   ); /* 4% darker shade of background-primary, active line and backlinks */
 
   /* my custom variables */
-  --background-modifier-backlinks: hsl(220, 16%, 90%); /* for backlinks, 2% darker than primary */
+  --background-modifier-backlinks: hsl(
+    220,
+    16%,
+    90%
+  ); /* for backlinks, 2% darker than primary */
 }
 
 /* === OLED Black Color Scheme === */
@@ -493,11 +525,11 @@ body {
 }
 
 /* =============================================================================
-	(11) Section for Typography (including Heading or Header)
-	- header color theme, font type and style
-	- header spacing and margins (including those in ul/ol)
-	- tags pill
-	- internal link formatting
+    (11) Section for Typography (including Heading or Header)
+    - header color theme, font type and style
+    - header spacing and margins (including those in ul/ol)
+    - tags pill
+    - internal link formatting
 ==============================================================================*/
 body {
   --h1-font: Courgette;
@@ -553,8 +585,8 @@ body {
 .theme-dark {
   /* my custom variables */
   /* using https://color.adobe.com/create/color-wheel, Complementary (with #F9CCAC as Base)
-		/* prior alternatives using sky palettes and sand palettes
-		*/
+        /* prior alternatives using sky palettes and sand palettes
+        */
   --h1-color: #ddedee; /* #bccad6 #DDD */
   --h1-color: hsl(217, 22%, 90%);
   --h2-color: #bccad6; /* shade of #55A6AD. #8d9db6 #AAA 00bdbd */
@@ -612,7 +644,9 @@ body {
 body {
   --h2-top-spacing: 1.4rem;
   --h2-bottom-spacing: 0.3rem;
-  --heading-spacing: var(--h2-top-spacing); /* override obsidian 1.3.7 introduction of top margin */
+  --heading-spacing: var(
+    --h2-top-spacing
+  ); /* override obsidian 1.3.7 introduction of top margin */
   --h2-top-spacing-edit: calc(
     var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing) / 2
   );
@@ -621,7 +655,8 @@ body {
   --h4-bottom-spacing: 0.1rem;
 }
 /* -- margin/padding for normal header (not for header in list) - Editing View only */
-.cm-s-obsidian :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3).cm-line {
+.cm-s-obsidian
+  :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3).cm-line {
   padding-block: 0.6em var(--h2-bottom-spacing);
 }
 /* -- margin/padding for normal header (not for header in list) - Reading View only */
@@ -720,7 +755,10 @@ div:has(> h1, > h2) + div:has(p) > p {
 }
 
 .markdown-rendered :is(h3, h4, h5, h6) + p,
-.markdown-rendered div:has(> h3, > h4, > h5, > h6) + div:has(p, pre) > :is(p, pre) {
+.markdown-rendered
+  div:has(> h3, > h4, > h5, > h6)
+  + div:has(p, pre)
+  > :is(p, pre) {
   margin-block-start: 0.6em;
 }
 
@@ -872,8 +910,8 @@ body.theme-dark {
   padding-inline: 0.2em;
 }
 /* half highlight can be achieved with the following
-				background-color: transparent;
-				box-shadow: 0 -21px 0 -10px green inset; 		*/
+                background-color: transparent;
+                box-shadow: 0 -21px 0 -10px green inset;         */
 
 /* === Tags / Hashtags === */
 body {
@@ -919,9 +957,9 @@ body {
 }
 
 /* =============================================================================
-	(12) Section for Content Core Customisation
-	- line spacing, default margins/paddings (not for headers/typography)
-	- Special features not direct to Markdown components (e.g. List Embed)
+    (12) Section for Content Core Customisation
+    - line spacing, default margins/paddings (not for headers/typography)
+    - Special features not direct to Markdown components (e.g. List Embed)
 ============================================================================= */
 
 /* === General Line Spacing, Margin & Padding === */
@@ -965,8 +1003,8 @@ body {
 }
 
 /*-- Partial Bullet Threading /*
-		/* Only immediate parent, using Core feature indentation guide
-		   and still not work well with changing font size. Only works well at 14px */
+        /* Only immediate parent, using Core feature indentation guide
+           and still not work well with changing font size. Only works well at 14px */
 
 /* up to immediate parent */
 .lst-partial-bt {
@@ -984,10 +1022,14 @@ body {
   --indent-dash-spacing9: 0.7em; /* 0.55rem / 0.52rem */
 
   /* this can be deleted later, it's for Indentation Guide community plugin */
-  .ig-lists .HyperMD-list-line.ig-indent-group .ig-tab.ig-indent-group-level::before {
+  .ig-lists
+    .HyperMD-list-line.ig-indent-group
+    .ig-tab.ig-indent-group-level::before {
     width: 2px !important;
   }
-  .cm-active .cm-formatting-list-ul .list-bullet.list-bullet.list-bullet::after {
+  .cm-active
+    .cm-formatting-list-ul
+    .list-bullet.list-bullet.list-bullet::after {
     contain: strict;
     width: var(--list-bullet-size);
     height: var(--list-bullet-size);
@@ -998,7 +1040,9 @@ body {
     contain: strict;
     content: "";
     position: absolute;
-    top: var(--indent-dash-top); /* subtract half of the height of the pseudo-element */
+    top: var(
+      --indent-dash-top
+    ); /* subtract half of the height of the pseudo-element */
     width: var(--indent-dash-width);
     height: 2px;
     background-color: var(--indentation-guide-active-color);
@@ -1093,9 +1137,14 @@ body {
       ~ .HyperMD-list-line-5.cm-active
     )
     .cm-indent:nth-child(4 of .cm-indent)::before,
-  :is(.HyperMD-list-line-6, .HyperMD-list-line-7, .HyperMD-list-line-8, .HyperMD-list-line-9):not(
-      :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)
-    ):has(~ .HyperMD-list-line-6.cm-active)
+  :is(
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-6.cm-active
+    )
     .cm-indent:nth-child(5 of .cm-indent)::before,
   :is(.HyperMD-list-line-7, .HyperMD-list-line-8, .HyperMD-list-line-9):not(
       :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line.cm-active)
@@ -1105,9 +1154,9 @@ body {
       :has(~ .HyperMD-list-line-7 ~ .HyperMD-list-line.cm-active)
     ):has(~ .HyperMD-list-line-8.cm-active)
     .cm-indent:nth-child(7 of .cm-indent)::before,
-  :is(.HyperMD-list-line-9):not(:has(~ .HyperMD-list-line-8 ~ .HyperMD-list-line.cm-active)):has(
-      ~ .HyperMD-list-line-9.cm-active
-    )
+  :is(.HyperMD-list-line-9):not(
+      :has(~ .HyperMD-list-line-8 ~ .HyperMD-list-line.cm-active)
+    ):has(~ .HyperMD-list-line-9.cm-active)
     .cm-indent:nth-child(8 of .cm-indent)::before {
     contain: strict;
     --indentation-guide-color: var(--background-modifier-border-active);
@@ -1123,7 +1172,9 @@ body {
   .cm-active.HyperMD-list-line:has(.cm-header-3) {
     --last-ig-height: calc(0.85em + var(--h3-top-spacing-edit));
   }
-  .HyperMD-list-line.cm-active > .cm-hmd-list-indent > .cm-indent:last-child::before {
+  .HyperMD-list-line.cm-active
+    > .cm-hmd-list-indent
+    > .cm-indent:last-child::before {
     contain: strict;
     --indentation-guide-color: var(--background-modifier-border-active);
     border-width: 2px;
@@ -1216,12 +1267,17 @@ body {
 } /* previously have !important here */
 
 /* adjust the padding for popover */
-.popover.hover-popover > .markdown-embed > .markdown-embed-content > .markdown-preview-view {
+.popover.hover-popover
+  > .markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view {
   --file-margins: var(--size-4-2) var(--size-4-6);
 }
 
 /* adjustment needed post v1.1.x, only for markdown-embed */
-.markdown-source-view.mod-cm6 .internal-embed.markdown-embed.inline-embed .task-list-item-checkbox {
+.markdown-source-view.mod-cm6
+  .internal-embed.markdown-embed.inline-embed
+  .task-list-item-checkbox {
   margin-left: calc(var(--checkbox-size) * -1.5);
 }
 .markdown-source-view.mod-cm6
@@ -1288,7 +1344,9 @@ body .markdown-source-view {
   border: none;
   top: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="list-embed"].internal-embed.markdown-embed ul:first-of-type {
+:is(.HyperMD-list-line, li)
+  [alt*="list-embed"].internal-embed.markdown-embed
+  ul:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
@@ -1297,7 +1355,9 @@ body .markdown-source-view {
   display: none;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]) {
+  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
+    [alt*=".excalidraw"]
+  ) {
   width: calc(100% - 1px);
 }
 li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
@@ -1308,13 +1368,16 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
 }
 
 /* --- Clean Inline Embed in Lists (specify in alias/alt) --- */
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].internal-embed.markdown-embed {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].internal-embed.markdown-embed {
   margin: 0 0 0 0;
   padding: 0;
   border: none;
   top: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].internal-embed.markdown-embed p:first-of-type {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].internal-embed.markdown-embed
+  p:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
@@ -1322,13 +1385,17 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   .markdown-embed-title {
   display: none;
 }
-.HyperMD-list-line [alt*="inline-embed"].internal-embed.is-loaded.markdown-embed {
+.HyperMD-list-line
+  [alt*="inline-embed"].internal-embed.is-loaded.markdown-embed {
   max-width: 99%;
 }
 .HyperMD-list-line [alt*="inline-embed"].markdown-embed .markdown-preview-view {
   padding: 0;
 }
-:is(.HyperMD-list-line, li) [alt*="inline-embed"].markdown-embed .markdown-preview-view p {
+:is(.HyperMD-list-line, li)
+  [alt*="inline-embed"].markdown-embed
+  .markdown-preview-view
+  p {
   text-decoration: underline dotted var(--text-muted);
 }
 
@@ -1341,7 +1408,10 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   opacity: 0.2;
 }
 :is(.list-embed-global, [alt*="list-embed"], [alt*="inline-embed"])
-  :is(.markdown-embed:hover .file-embed-link svg, .markdown-embed:hover .markdown-embed-link)
+  :is(
+    .markdown-embed:hover .file-embed-link svg,
+    .markdown-embed:hover .markdown-embed-link
+  )
   svg {
   opacity: 1;
 }
@@ -1350,8 +1420,12 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   :is(.markdown-embed, .file-embed) {
   background-color: var(--background-primary);
 }
-:is(.list-embed-global :not(.popover)) :is(.markdown-embed:hover, .file-embed:hover),
-:is([alt*="list-embed"].internal-embed):is(.markdown-embed:hover, .file-embed:hover) {
+:is(.list-embed-global :not(.popover))
+  :is(.markdown-embed:hover, .file-embed:hover),
+:is([alt*="list-embed"].internal-embed):is(
+    .markdown-embed:hover,
+    .file-embed:hover
+  ) {
   background-color: var(--background-secondary);
 }
 
@@ -1392,13 +1466,13 @@ ul ol,
 ol ol {
   position: relative;
 } /*padding-left: 1.4em; }
-		/* -- same as above, but specific for mobile view,
-				exclude callout from the settings  */ /*
-		.is-mobile .markdown-preview-view ul,
-		.markdown-rendered :is(ol, ul):not(.callout :is(ul, ol))
-			{ margin-top: 0.1em; padding-left: var(--list-indent-read); }
+        /* -- same as above, but specific for mobile view,
+                exclude callout from the settings  */ /*
+        .is-mobile .markdown-preview-view ul,
+        .markdown-rendered :is(ol, ul):not(.callout :is(ul, ol))
+            { margin-top: 0.1em; padding-left: var(--list-indent-read); }
 
-		/* -- Collapse Indicator -- Adjusting the distance a bit */
+        /* -- Collapse Indicator -- Adjusting the distance a bit */
 
 /* Follow Obsidian 1.5.3 selectors. List (bullet & number) only */
 .markdown-preview-view .list-collapse-indicator {
@@ -1418,7 +1492,7 @@ ol ol {
         }
 
 
-	/* == List Indentation Lines / Outliner in Reading View == */
+    /* == List Indentation Lines / Outliner in Reading View == */
 /* -- Draw the indentation guide lines in reading view only */
 .is-css-guide
   .markdown-rendered:not(.show-indentation-guide)
@@ -1430,7 +1504,9 @@ ol ol {
   top: 0;
   bottom: 0;
 }
-.is-mobile.is-css-guide .markdown-rendered :is(ul ul, ol ul, ul ol, ol ol)::before {
+.is-mobile.is-css-guide
+  .markdown-rendered
+  :is(ul ul, ol ul, ul ol, ol ol)::before {
   left: calc(-16px + 2px + var(--list-guide-adj-mobile));
 }
 /* -- Guide adjustment for reading view for Obsidian "Show Indentation Guide" */
@@ -1469,13 +1545,13 @@ body {
 /* .show-indentation-guide :is(h2[data-heading^="Journal"], h3[data-heading^="on "]) + ul ul::before { left: calc(-13px + var(--list-guide-adj) - 3px); } */
 
 /* =============================================================================
-	(13) Section for Markdown (Basic + Extended) Components Customisation
-	- alternate checkbox, blockquote, callout, codeblock, frontmatter,
-	  graph view, mermaid, properties, and table
+    (13) Section for Markdown (Basic + Extended) Components Customisation
+    - alternate checkbox, blockquote, callout, codeblock, frontmatter,
+      graph view, mermaid, properties, and table
 ============================================================================= */
 
 /* === BLOCK QUOTE / BLOCKQUOTE === */
-/*	background-color: #622569; /* W3S Flower Palettes */
+/*    background-color: #622569; /* W3S Flower Palettes */
 body {
   --blockquote-background-color: var(--background-secondary);
   --blockquote-border-thickness: var(--size-4-1);
@@ -1521,11 +1597,12 @@ body {
 
 /* === CALLOUT BLOCKS === */
 /* General adjustments (on paddings and margins)
-		   - added callout padding on the right (12px to 16px)
-		   - define callout content padding, initially 0 */
+           - added callout padding on the right (12px to 16px)
+           - define callout content padding, initially 0 */
 body .callout {
   --callout-content-padding: var(--size-4-2) 0 var(--size-4-1) 0; /* i remove first, */
-  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-3) var(--size-4-4); /* give additional padding on the right side */
+  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-3)
+    var(--size-4-4); /* give additional padding on the right side */
 }
 .callout .callout-content > *:first-child {
   margin-top: 0;
@@ -1588,7 +1665,9 @@ body:not(.callout-style-original) .callout > .callout-title > .callout-icon {
   top: -10px;
   right: -8px;
 }
-.callout[data-callout-metadata*="no-title"] > .callout-title > .callout-title-inner {
+.callout[data-callout-metadata*="no-title"]
+  > .callout-title
+  > .callout-title-inner {
   display: none;
 }
 .callout[data-callout-metadata*="no-title"] > .callout-content {
@@ -1620,7 +1699,10 @@ li > .callout {
 
 /* === (Normal) Checkboxes === */
 /* no strikethrough for children node of checked parent */
-ul > li.task-list-item:is([data-task="x"], [data-task="X"]) > ul > li.task-list-item {
+ul
+  > li.task-list-item:is([data-task="x"], [data-task="X"])
+  > ul
+  > li.task-list-item {
   /* display: inline-block; */ /* comment out because it makes subtasks overlap in reading view */
   color: var(--text-normal);
 }
@@ -1710,8 +1792,13 @@ li[data-task="-"] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
@@ -1784,13 +1871,13 @@ li[data-task="“"] > p > input:checked::after {
   top: -5px;
 }
 /* cite */ /*
-		input[data-task="“"]:checked, li[data-task="“"]>input:checked, li[data-task="“"]>p>input:checked {
-		    --checkbox-color-hover: var(--color-purple);
-		    color: var(--color-purple);
-		    -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M2.46,4.19c.94-1.01,2.35-1.53,4.21-1.53h.67v1.88l-.54,.11c-.91,.18-1.55,.54-1.89,1.07-.18,.28-.28,.61-.29,.94h2.05c.18,0,.35,.07,.47,.2,.13,.13,.2,.29,.2,.47v4.67c0,.74-.6,1.33-1.33,1.33H2c-.18,0-.35-.07-.47-.2-.13-.12-.2-.29-.2-.47V7.39c0-.07-.13-1.83,1.13-3.19ZM13.33,13.33h-4c-.18,0-.35-.07-.47-.2-.13-.12-.2-.29-.2-.47V7.39c0-.07-.13-1.83,1.13-3.19,.94-1.01,2.35-1.53,4.21-1.53h.67v1.88l-.54,.11c-.91,.18-1.55,.54-1.89,1.07-.18,.28-.28,.61-.29,.94h2.05c.18,0,.35,.07,.47,.2,.12,.13,.2,.29,.2,.47v4.67c0,.74-.6,1.33-1.33,1.33Z"/></svg>');
-		}
+        input[data-task="“"]:checked, li[data-task="“"]>input:checked, li[data-task="“"]>p>input:checked {
+            --checkbox-color-hover: var(--color-purple);
+            color: var(--color-purple);
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M2.46,4.19c.94-1.01,2.35-1.53,4.21-1.53h.67v1.88l-.54,.11c-.91,.18-1.55,.54-1.89,1.07-.18,.28-.28,.61-.29,.94h2.05c.18,0,.35,.07,.47,.2,.13,.13,.2,.29,.2,.47v4.67c0,.74-.6,1.33-1.33,1.33H2c-.18,0-.35-.07-.47-.2-.13-.12-.2-.29-.2-.47V7.39c0-.07-.13-1.83,1.13-3.19ZM13.33,13.33h-4c-.18,0-.35-.07-.47-.2-.13-.12-.2-.29-.2-.47V7.39c0-.07-.13-1.83,1.13-3.19,.94-1.01,2.35-1.53,4.21-1.53h.67v1.88l-.54,.11c-.91,.18-1.55,.54-1.89,1.07-.18,.28-.28,.61-.29,.94h2.05c.18,0,.35,.07,.47,.2,.12,.13,.2,.29,.2,.47v4.67c0,.74-.6,1.33-1.33,1.33Z"/></svg>');
+        }
 
-		/* For [r] or "r" i.e. reference */
+        /* For [r] or "r" i.e. reference */
 input[type="checkbox"][data-task="r"]:is(*, :hover, :active),
 li[data-task="r"] > input:checked,
 li[data-task="r"] > p > input:checked {
@@ -1993,7 +2080,9 @@ li[data-task="*"]::after {
 
 /* === Frontmatter/YAML Metadata === */
 /* for Obsidian up to 1.3.7 only. V1.4.0 already introduce Properties */
-:is(.lst-fm-compact, .lst-fm-std) .frontmatter-container .frontmatter-container-header:hover {
+:is(.lst-fm-compact, .lst-fm-std)
+  .frontmatter-container
+  .frontmatter-container-header:hover {
   color: var(--text-muted);
 }
 
@@ -2009,7 +2098,9 @@ body:is(.lst-fm-compact, *) .frontmatter-container {
 body:is(.lst-fm-compact, *) .frontmatter-container.is-collapsed {
   padding: 0;
 }
-body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-container-header {
+body:is(.lst-fm-compact, *)
+  .frontmatter-container
+  .frontmatter-container-header {
   position: absolute;
   right: 3px;
   top: -0.2rem;
@@ -2019,7 +2110,9 @@ body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-container-header
   padding: 0;
 }
 body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-section,
-body:is(.lst-fm-compact, *) .frontmatter-container .frontmatter-section:last-child {
+body:is(.lst-fm-compact, *)
+  .frontmatter-container
+  .frontmatter-section:last-child {
   margin-bottom: 0;
   margin-right: 12px;
 }
@@ -2055,7 +2148,9 @@ body.lst-fm-std .frontmatter-container .frontmatter-section-label {
   flex: 0 1 4em;
   color: var(--text-faint);
 }
-body.lst-fm-std .frontmatter-container.is-collapsed .frontmatter-container-header {
+body.lst-fm-std
+  .frontmatter-container.is-collapsed
+  .frontmatter-container-header {
   border-bottom-width: 0px;
 }
 
@@ -2217,7 +2312,12 @@ body {
 .list-d-c-d .HyperMD-list-line-1 .cm-formatting-list-ul .list-bullet::after {
 }
 .list-d-c-d
-  :is(.HyperMD-list-line-2, .HyperMD-list-line-4, .HyperMD-list-line-6, .HyperMD-list-line-8)
+  :is(
+    .HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8
+  )
   .cm-formatting-list-ul
   .list-bullet::after {
   width: calc(0.3rem - 1px);
@@ -2397,20 +2497,25 @@ body.lst-prop-super-compact .metadata-properties {
     visibility: collapse;
   }
   /* remove the remove button special for tags property */
-  & .metadata-property[data-property-key="tags"] .multi-select-pill-remove-button {
+  &
+    .metadata-property[data-property-key="tags"]
+    .multi-select-pill-remove-button {
     display: none;
   }
   & .metadata-property[data-property-key="tags"] .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   } /* adding "padding to the right after 1.5.1 update "*/
-  & .markdown-reading-view .metadata-property[data-property-key="tags"] .multi-select-pill-content {
+  &
+    .markdown-reading-view
+    .metadata-property[data-property-key="tags"]
+    .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   }
 }
 
 /* =============================================================================
-	(21) Section for Edge Cases / Tweaks
-	- datavew dv-card / dv-list-nav
+    (21) Section for Edge Cases / Tweaks
+    - datavew dv-card / dv-list-nav
 ============================================================================= */
 
 /* === Background for Common Sections === */
@@ -2480,7 +2585,9 @@ div:has(> [data-heading] > [href*="#lst/clear-float"]),
 .workspace-leaf-content :is(.HyperMD-list-line, li) img:not([width]) {
   max-width: 300px;
 }
-.workspace-leaf-content :is(.HyperMD-list-line, li):has(img[src] ~ img[src]) img:not([width]) {
+.workspace-leaf-content
+  :is(.HyperMD-list-line, li):has(img[src] ~ img[src])
+  img:not([width]) {
   max-width: 270px;
 }
 /* to ensure image with transparency have some background color, specify "bgcolor" in alt text */
@@ -2508,10 +2615,10 @@ span.selection {
 
 /* === Mod for float image in lists === */
 /* to be deleted post 31 Sep 2023
-		.tag-mcllist-float-img ul img {float: right; margin-left: 0.5em;}
-		img[alt*="right"] {float: right; margin-left: 0.5em;}
+        .tag-mcllist-float-img ul img {float: right; margin-left: 0.5em;}
+        img[alt*="right"] {float: right; margin-left: 0.5em;}
 
-		/* image and caption using callout [!caption] */
+        /* image and caption using callout [!caption] */
 /* adopted from anubis's snippet -- https://discord.com/channels/686053708261228577/744933215063638183/1037935390276976660 */
 .callout[data-callout="caption"] {
   background-color: transparent;
@@ -2532,7 +2639,9 @@ span.selection {
 .callout[data-callout="caption"] .callout-content p .snw-reference {
   display: none;
 }
-.callout[data-callout="caption"] .callout-content span.internal-embed.image-embed.is-loaded {
+.callout[data-callout="caption"]
+  .callout-content
+  span.internal-embed.image-embed.is-loaded {
   display: block;
 }
 
@@ -2588,8 +2697,8 @@ span.selection {
 }
 
 /* =============================================================================
-	(22) Section for Mobile Only Features
-	- FAB
+    (22) Section for Mobile Only Features
+    - FAB
 ============================================================================= */
 
 /* === Floating Action Button FAB === */
@@ -2622,8 +2731,12 @@ body.is-mobile:not(.lst-disable-fab-view)
 }
 
 /* make the 1st added commander button as FAB as well. change 1 to 2 for 2nd commander button */
-body.is-mobile.lst-fab-b2-1 div.view-actions > .view-action:nth-child(1 of .cmdr-page-header),
-body.is-mobile.lst-fab-b2-2 div.view-actions > .view-action:nth-child(2 of .cmdr-page-header) {
+body.is-mobile.lst-fab-b2-1
+  div.view-actions
+  > .view-action:nth-child(1 of .cmdr-page-header),
+body.is-mobile.lst-fab-b2-2
+  div.view-actions
+  > .view-action:nth-child(2 of .cmdr-page-header) {
   position: absolute;
   top: calc(88vh - var(--lst-fab-b2-y));
   right: calc(0vw + var(--lst-fab-view-x));
@@ -2643,7 +2756,9 @@ body.is-mobile.lst-fab-b2-2 div.view-actions > .view-action:nth-child(2 of .cmdr
   z-index: 60;
 }
 /* change background-color when hover */
-body.is-mobile:not(.custom-page-header) div.view-actions > .view-action.clickable-icon:hover {
+body.is-mobile:not(.custom-page-header)
+  div.view-actions
+  > .view-action.clickable-icon:hover {
   background-color: var(--background-accent);
 }
 
@@ -2655,16 +2770,16 @@ body.is-mobile.lst-disable-fab-view
 }
 
 /* =============================================================================
-	(31) Section for Plugins Support / Adjustment
-	- Outliner and Zoom
-	- Indentation Guide and Style Settings
-	- Query Control and SNW
-	- Omnisearch
-	- Spaced Repetition
+    (31) Section for Plugins Support / Adjustment
+    - Outliner and Zoom
+    - Indentation Guide and Style Settings
+    - Query Control and SNW
+    - Omnisearch
+    - Spaced Repetition
 ============================================================================= */
 
 /* This is for adjusting visuals other than main contents i.e. sidebar items
-		spacing and color theme. not sure, but could be checklist plugin */
+        spacing and color theme. not sure, but could be checklist plugin */
 header.svelte-128mhjl {
   font-size: 1em !important;
 }
@@ -2976,7 +3091,9 @@ body.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) + ul {
 /* === Plugin: Indentation Guide (mgmeyer) === */
 
 /* adjustment for relationship width */
-.ig-uncategorized .cm-line[style*="text-indent"]:not(.HyperMD-list-line) .ig-tab::before,
+.ig-uncategorized
+  .cm-line[style*="text-indent"]:not(.HyperMD-list-line)
+  .ig-tab::before,
 .ig-lists .HyperMD-list-line .ig-tab::before,
 .ig-code .HyperMD-codeblock .ig-tab::before {
   width: 1px !important;
@@ -3049,7 +3166,7 @@ body {
             padding-right: unset;
         }
 
-		/* --- Adjustment for Outliner Plugin --- */
+        /* --- Adjustment for Outliner Plugin --- */
 .outliner-plugin-list-lines-content-container {
   left: calc(1px + var(--list-guide-outliner-adj));
 }
@@ -3074,7 +3191,12 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) p {
   margin-block: 0.4em 0;
 }
 /* remove top margin for ul for the answers */
-div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div .callout ul:first-child {
+div:has([href*="#flashcards"])
+  ~ div:has(h5, h6)
+  + div:has(p)
+  + div
+  .callout
+  ul:first-child {
   margin-top: 0.2em;
 }
 div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
@@ -3084,18 +3206,21 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
 /* === Plugin: Strange New Word (SNW) === */
 
 /* references
-		.snw-sidepane-container / .snw-popover-container
-			--> .snw-ref-area --> .snw-ref-item-container
-				--> .snw-ref-item-file.search-result-file-title
-				--> .snw-ref-item-collection-items.search-result-file-matches --> .snw-ref-item-info.search-result-file-match
-		*/
+        .snw-sidepane-container / .snw-popover-container
+            --> .snw-ref-area --> .snw-ref-item-container
+                --> .snw-ref-item-file.search-result-file-title
+                --> .snw-ref-item-collection-items.search-result-file-matches --> .snw-ref-item-info.search-result-file-match
+        */
 
 /* -- General UI */
 /* make sure snw reference on header still formatted using --font-text */
 .snw-reference {
   font-family: var(--font-text);
 }
-:is(.snw-ref-title-side-pane, .snw-ref-title-popover).tree-item-self:is(*, :hover) {
+:is(.snw-ref-title-side-pane, .snw-ref-title-popover).tree-item-self:is(
+    *,
+    :hover
+  ) {
   border: none;
   font-weight: bold;
   font-family: var(--h1-font);
@@ -3125,7 +3250,7 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
 
 /* SNW block reference counter - adjustment for List Embed compatibility */
 /* [alt*="list-embed"] ~ .snw-reference.snw-embed.snw-embed { position: absolute; right: 2.5em; top: 0.5em; }
-		.list-embed-global :is(.HyperMD-list-line, ul) .internal-embed.is-loaded ~ .snw-reference.snw-embed.snw-embed { position: absolute; right: 2.5em; top: 0.5em; } */
+        .list-embed-global :is(.HyperMD-list-line, ul) .internal-embed.is-loaded ~ .snw-reference.snw-embed.snw-embed { position: absolute; right: 2.5em; top: 0.5em; } */
 
 /* -- for List Embed compatibility */
 .list-embed-global
@@ -3134,14 +3259,19 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
     :has(.markdown-preview-section > div > ul)
   ),
 :is(.HyperMD-list-line, li):has(.snw-reference)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):not(
-    :has(.markdown-preview-section > div > ul)
-  ) {
+  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
+    [alt*=".excalidraw"]
+  ):not(:has(.markdown-preview-section > div > ul)) {
   width: calc(100% - 25px);
 }
 
 /* -- hide SNW reference counter inside embedded notes (that maybe recursive in nature) */
-[alt*="list-embed"] .markdown-preview-section > div > ul > li > .snw-reference.snw-block-preview,
+[alt*="list-embed"]
+  .markdown-preview-section
+  > div
+  > ul
+  > li
+  > .snw-reference.snw-block-preview,
 .list-embed-global
   :is(.HyperMD-list-line, ul)
   .internal-embed.is-loaded
@@ -3171,7 +3301,8 @@ li:has(> [data-heading]:is(h1, h2)) > .snw-reference {
 li:has(> [data-heading]:not(h1, h2)) > .snw-reference {
   --lst-snw-top: calc(var(--h3-top-spacing) * 1.5);
 }
-li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-preview {
+li:has(> [data-heading]):has(> .snw-block-preview)
+  > .snw-reference.snw-block-preview {
   position: absolute;
   top: var(--lst-snw-top);
   right: 0;
@@ -3204,7 +3335,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 
 /* === Plugin: Style Settings === */
 /* make the input box on same row as the title/description */
-.view-content .style-settings-container .setting-item:not(.setting-item-heading) {
+.view-content
+  .style-settings-container
+  .setting-item:not(.setting-item-heading) {
   flex-direction: row;
 }
 .view-content .style-settings-container {
@@ -3244,7 +3377,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
   margin-left: -1.15em;
 }
 /* color - font title/item */
-.style-settings-container[data-level="0"] > .style-settings-heading .setting-item-name {
+.style-settings-container[data-level="0"]
+  > .style-settings-heading
+  .setting-item-name {
   color: var(--h3-color);
 }
 .style-settings-container[data-level="0"]
@@ -3281,7 +3416,10 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 }
 
 /* - Adjustment for Mobile */
-.is-phone .style-settings-heading[data-level="0"] > .setting-item-info > .setting-item-name {
+.is-phone
+  .style-settings-heading[data-level="0"]
+  > .setting-item-info
+  > .setting-item-name {
   padding-left: 1em;
   position: relative;
 }
@@ -3311,7 +3449,9 @@ li:has(> [data-heading]):has(> .snw-block-preview) > .snw-reference.snw-block-pr
 body {
   --math-block-list-align: left;
 }
-:is(.HyperMD-list-line, li) .math-block mjx-container[jax="CHTML"][display="true"] {
+:is(.HyperMD-list-line, li)
+  .math-block
+  mjx-container[jax="CHTML"][display="true"] {
   text-align: var(--math-block-list-align);
 }
 
@@ -3345,10 +3485,10 @@ body {
        to non-bullet header, the structure is actually not adjacent.
        the :not() is to prevent 2-column structure on sub-bullets.   */
 .reviewcolumn div > ul {
-  /*	list-style:none; */
+  /*    list-style:none; */
   /*
-    	display: grid;
-    	grid-auto-flow: column;
+        display: grid;
+        grid-auto-flow: column;
     */
 }
 
@@ -3375,57 +3515,57 @@ name: Listive Theme Settings
 id: listive-theme-settings
 settings:
 
-	-
-		id: listive-theme
-		title: Listive theme identifier
-		type: class-toggle
-		default: true
+    -
+        id: listive-theme
+        title: Listive theme identifier
+        type: class-toggle
+        default: true
 
 
-	-
-		id: general-ui-scheme-title
-		title: General UI and Color Scheme
-		description: Theme variant, ui font size, line-height, note's width etc.
-		type: heading
-		level: 1
-		collapsed: true
+    -
+        id: general-ui-scheme-title
+        title: General UI and Color Scheme
+        description: Theme variant, ui font size, line-height, note's width etc.
+        type: heading
+        level: 1
+        collapsed: true
 
-	-
-		id: general-color-scheme-title
-		title: Color schemes
-		type: heading
-		level: 2
-		collapsed: false
-	-
-		id: desktop-dark-theme-variant
+    -
+        id: general-color-scheme-title
+        title: Color schemes
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: desktop-dark-theme-variant
         title: Theme variant
         description: Variations on a theme
         type: class-select
         allowEmpty: false
         default: color-scheme-discord
         options:
-        	-
-				label: Base
-            	value: color-scheme-base
-			-
-				label: Discord
-				value: color-scheme-discord
-        	-
-				label: OLED Black
-				value: oled-black
-	-
-		id: is-force-oled-black-mobile
-		title: Force OLED Black theme for mobile
-		type: class-toggle
-		default: true
+            -
+                label: Base
+                value: color-scheme-base
+            -
+                label: Discord
+                value: color-scheme-discord
+            -
+                label: OLED Black
+                value: oled-black
+    -
+        id: is-force-oled-black-mobile
+        title: Force OLED Black theme for mobile
+        type: class-toggle
+        default: true
 
-	-
-		id: general-ui-fonts-title
-		title: UI Fonts
-		type: heading
-		level: 2
-		collapsed: false
-	-
+    -
+        id: general-ui-fonts-title
+        title: UI Fonts
+        type: heading
+        level: 2
+        collapsed: false
+    -
          id: font-ui-medium
          title: UI Font Size
          description: The maximum line width in rem units
@@ -3434,39 +3574,39 @@ settings:
          min: 10
          max: 30
          step: 1
-		 format: px
+         format: px
 
 
-	-
-		id: features-general-title
-		title: Note's General Look and Feel
-		type: heading
-		level: 2
-		collapsed: false
-	-
- 		id: file-line-width
- 		title: Note pane max width
- 		description: Use `cssClass:wide-page` in frontmatter for per note full width.
- 		type: variable-text
- 		default: 700px
-	-
- 		id: line-height-normal
- 		title: Note line height
- 		description: General line height. See Typography heading's and Outliner and List for list's.
- 		type: variable-number
- 		default: 1.35
-
-	-
-		id: fab-title
-		title: Floating Action Button (FAB)
-		type: heading
-		level: 2
-		collapsed: true
     -
- 		id: lst-fab-view-x
- 		title: FAB button X-Axis Adjustment
- 		type: variable-text
- 		default: 2vw
+        id: features-general-title
+        title: Note's General Look and Feel
+        type: heading
+        level: 2
+        collapsed: false
+    -
+         id: file-line-width
+         title: Note pane max width
+         description: Use `cssClass:wide-page` in frontmatter for per note full width.
+         type: variable-text
+         default: 700px
+    -
+         id: line-height-normal
+         title: Note line height
+         description: General line height. See Typography heading's and Outliner and List for list's.
+         type: variable-number
+         default: 1.35
+
+    -
+        id: fab-title
+        title: Floating Action Button (FAB)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+         id: lst-fab-view-x
+         title: FAB button X-Axis Adjustment
+         type: variable-text
+         default: 2vw
     -
         id: lst-disable-fab-view
         title: Disable FAB Edit/View Button (mobile only)
@@ -3477,528 +3617,528 @@ settings:
         title: FAB Edit/View Button Y-Axis Adjustment
         type: variable-text
         default: 10vh
-	-
-		id: fab-2nd-button-select
+    -
+        id: fab-2nd-button-select
         title: FAB 2nd Button Selection
         description: Select which button for 2nd button or disable it
         type: class-select
         allowEmpty: false
         default: lst-fab-b2-1
         options:
-        	-
-				label: 1st Cmdr button
-            	value: lst-fab-b2-1
-			-
-				label: 2nd Cmdr button
-				value: lst-fab-b2-2
-        	-
-				label: Disable 2nd FAB
-				value: lst-disable-fab-b2
-	-
- 		id: lst-fab-b2-y
- 		title: FAB 2nd Button Y-Axis Adjustment
- 		type: variable-text
- 		default: 30vh
+            -
+                label: 1st Cmdr button
+                value: lst-fab-b2-1
+            -
+                label: 2nd Cmdr button
+                value: lst-fab-b2-2
+            -
+                label: Disable 2nd FAB
+                value: lst-disable-fab-b2
+    -
+         id: lst-fab-b2-y
+         title: FAB 2nd Button Y-Axis Adjustment
+         type: variable-text
+         default: 30vh
 
 
-	-
-		id: typography-headers-title
-		title: Typography - Headings / Headers
-		type: heading
-		level: 1
-		collapsed: true
-	-
-		id: header-h1-title
-		title: H1
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h1-font
-		title: H1 Font
-		type: variable-text
-		default: Courgette
-	-
-		id: h1-size
-		title: H1 Font Size
-		type: variable-text
-		default: 1.60em
-	-
-		id: h1-border-width
-		title: H1 Border Width
-		type: variable-text
-		default: 1px
-	-
-		id: h1-color
-		title: H1 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: header-h2-title
-		title: H2
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h2-font
-		title: H2 Font
-		type: variable-text
-		default: Courgette
-	-
-		id: h2-size
-		title: H2 Font Size
-		type: variable-text
-		default: 1.48em
-	-
-		id: h2-border-width
-		title: H2 Border Width
-		type: variable-text
-		default: 1px
-	-
-		id: h2-color
-		title: H2 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: header-h3-title
-		title: H3
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h3-font
-		title: H3 Font
-		type: variable-text
-		default: Karla
-	-
-		id: h3-size
-		title: H3 Font Size
-		type: variable-text
-		default: 1.36em
-	-
-		id: h3-border-width
-		title: H3 Border Width
-		type: variable-text
-		default: 0px
-	-
-		id: h3-color
-		title: H3 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: typography-headers-title
+        title: Typography - Headings / Headers
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: header-h1-title
+        title: H1
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h1-font
+        title: H1 Font
+        type: variable-text
+        default: Courgette
+    -
+        id: h1-size
+        title: H1 Font Size
+        type: variable-text
+        default: 1.60em
+    -
+        id: h1-border-width
+        title: H1 Border Width
+        type: variable-text
+        default: 1px
+    -
+        id: h1-color
+        title: H1 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: header-h2-title
+        title: H2
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h2-font
+        title: H2 Font
+        type: variable-text
+        default: Courgette
+    -
+        id: h2-size
+        title: H2 Font Size
+        type: variable-text
+        default: 1.48em
+    -
+        id: h2-border-width
+        title: H2 Border Width
+        type: variable-text
+        default: 1px
+    -
+        id: h2-color
+        title: H2 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: header-h3-title
+        title: H3
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h3-font
+        title: H3 Font
+        type: variable-text
+        default: Karla
+    -
+        id: h3-size
+        title: H3 Font Size
+        type: variable-text
+        default: 1.36em
+    -
+        id: h3-border-width
+        title: H3 Border Width
+        type: variable-text
+        default: 0px
+    -
+        id: h3-color
+        title: H3 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 
-	-
-		id: header-h4-title
-		title: H4
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h4-font
-		title: H4 Font
-		type: variable-text
-		default: Karla
-	-
-		id: h4-size
-		title: H4 Font Size
-		type: variable-text
-		default: 1.12em
-	-
-		id: h4-color
-		title: H4 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: header-h4-title
+        title: H4
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h4-font
+        title: H4 Font
+        type: variable-text
+        default: Karla
+    -
+        id: h4-size
+        title: H4 Font Size
+        type: variable-text
+        default: 1.12em
+    -
+        id: h4-color
+        title: H4 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 
-	-
-		id: header-h5-title
-		title: H5
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h5-font
-		title: H5 Font
-		type: variable-text
-		default: Inter
-	-
-		id: h5-size
-		title: H5 Font Size
-		type: variable-text
-		default: 1.00em
-	-
-		id: h5-color
-		title: H5 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: header-h5-title
+        title: H5
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h5-font
+        title: H5 Font
+        type: variable-text
+        default: Inter
+    -
+        id: h5-size
+        title: H5 Font Size
+        type: variable-text
+        default: 1.00em
+    -
+        id: h5-color
+        title: H5 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 
-	-
-		id: header-h6-title
-		title: H6
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: h6-font
-		title: H6 Font
-		type: variable-text
-		default: Inter
-	-
-		id: h6-size
-		title: H6 Font Size
-		type: variable-text
-		default: 1.00em
-	-
-		id: h6-color
-		title: H6 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    -
+        id: header-h6-title
+        title: H6
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: h6-font
+        title: H6 Font
+        type: variable-text
+        default: Inter
+    -
+        id: h6-size
+        title: H6 Font Size
+        type: variable-text
+        default: 1.00em
+    -
+        id: h6-color
+        title: H6 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 
 
 
-	-
-		id: listive-outliner-title
-		title: Outliner and List Customisation
-		description: Indentation guide, list embed, list style, etc.
-		type: heading
-		level: 1
-		collapsed: true
-	-
-		id: lst-ig-adj-title
-		title: Relationship line adjustment
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: is-css-guide
-		title: Enable CSS based Relationship Line
-		description: Reading View only. Add is-css-guide class to the body element
-		type: class-toggle
-		default: true
-	-
-		id: list-guide-adj
-		title: Relationship Line adjustment for desktop
-		description: Reading View only. Either enable toggle above or Editor > Show Indentation Guide
-		type: variable-text
-		default: 0px
-	-
-		id: list-guide-adj-mobile
-		title: Relationship Line adjustment for mobile
-		description: Reading View only. Must enable toggle above
-		type: variable-text
-		default: 0px
-	-
-		id: list-guide-outliner-adj
-		title: Outliner plugin vertical line adjustment
-		description: Editing View only.
-		type: variable-text
-		default: 0px
+    -
+        id: listive-outliner-title
+        title: Outliner and List Customisation
+        description: Indentation guide, list embed, list style, etc.
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: lst-ig-adj-title
+        title: Relationship line adjustment
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: is-css-guide
+        title: Enable CSS based Relationship Line
+        description: Reading View only. Add is-css-guide class to the body element
+        type: class-toggle
+        default: true
+    -
+        id: list-guide-adj
+        title: Relationship Line adjustment for desktop
+        description: Reading View only. Either enable toggle above or Editor > Show Indentation Guide
+        type: variable-text
+        default: 0px
+    -
+        id: list-guide-adj-mobile
+        title: Relationship Line adjustment for mobile
+        description: Reading View only. Must enable toggle above
+        type: variable-text
+        default: 0px
+    -
+        id: list-guide-outliner-adj
+        title: Outliner plugin vertical line adjustment
+        description: Editing View only.
+        type: variable-text
+        default: 0px
 
-	-
-		id: list-style-title
-		title: List Bullet Style
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: list-style
+    -
+        id: list-style-title
+        title: List Bullet Style
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: list-style
         title: List Bullet Style
         description: Variations on a theme
         type: class-select
         allowEmpty: false
         default: list-d-c-d
         options:
-			-
-				label: Disc-Disc
-				value: list-d-d-d
-			-
-				label: Disc-Circle
-				value: list-d-c-d
-        	-
-				label: Disc-Circle-Square
-				value: list-d-c-s
+            -
+                label: Disc-Disc
+                value: list-d-d-d
+            -
+                label: Disc-Circle
+                value: list-d-c-d
+            -
+                label: Disc-Circle-Square
+                value: list-d-c-s
 
-	-
-		id: list-spacing-title
-		title: List Spacing - Indent and Line
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: list-indent-first
-		title: Indent spacing for 1st bullet
-		description: Reading View only. Left spacing for first li
-		type: variable-number
-		default: 1.6
-		format: em
-	-
-		id: list-indent
-		title: Indent spacing for subsequent bullets
-		description: Editing and Reading View. Left spacing for subsequent li
-		type: variable-number
-		default: 1.6
-		format: em
-	-
-		id: list-spacing
-		title: Line spacing for lists (ol and ul)
-		description: Top & bottom spacing between lists. See General UI and Typography for non list line height.
-		type: variable-number
-		default: 0.2
-		format: em
-
-
-	-
-		id: list-embed-title
-		title: List Embed
-		description: Enable "seamless" embed when in list for all notes
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: list-embed-global
-		title: Enable List Embed vault-wide
-		type: class-toggle
-		default: false
+    -
+        id: list-spacing-title
+        title: List Spacing - Indent and Line
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: list-indent-first
+        title: Indent spacing for 1st bullet
+        description: Reading View only. Left spacing for first li
+        type: variable-number
+        default: 1.6
+        format: em
+    -
+        id: list-indent
+        title: Indent spacing for subsequent bullets
+        description: Editing and Reading View. Left spacing for subsequent li
+        type: variable-number
+        default: 1.6
+        format: em
+    -
+        id: list-spacing
+        title: Line spacing for lists (ol and ul)
+        description: Top & bottom spacing between lists. See General UI and Typography for non list line height.
+        type: variable-number
+        default: 0.2
+        format: em
 
 
-	-
-		id: list-bt-title
-		title: Bullet Threading
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: lst-partial-bt
-		title: Enable Partial Bullet Threading
-		type: class-toggle
-		default: false
+    -
+        id: list-embed-title
+        title: List Embed
+        description: Enable "seamless" embed when in list for all notes
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: list-embed-global
+        title: Enable List Embed vault-wide
+        type: class-toggle
+        default: false
+
+
+    -
+        id: list-bt-title
+        title: Bullet Threading
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: lst-partial-bt
+        title: Enable Partial Bullet Threading
+        type: class-toggle
+        default: false
 
 
 
-	-
-		id: features-title
-		title: Content Elements look and feel
-		description: Callout style, frontmatter, gutter, tabs style, etc.
-		type: heading
-		level: 1
-		collapsed: true
+    -
+        id: features-title
+        title: Content Elements look and feel
+        description: Callout style, frontmatter, gutter, tabs style, etc.
+        type: heading
+        level: 1
+        collapsed: true
 
-	-
-		id: alternate-checkboxes-title
-		title: Alternate Checkboxes
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: alt-checkbox-bg-content
+    -
+        id: alternate-checkboxes-title
+        title: Alternate Checkboxes
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: alt-checkbox-bg-content
         title: Background Option
-		description: Only for non task related checkboxes
+        description: Only for non task related checkboxes
         type: variable-select
         allowEmpty: false
         default: "''"
         options:
-        	-
-				label: Enable
-            	value: "''"
-			-
-				label: Disable
-				value: none
+            -
+                label: Enable
+                value: "''"
+            -
+                label: Disable
+                value: none
 
-	-
-		id: blockquote-title
-		title: Blockquote
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: blockquote-font-style
+    -
+        id: blockquote-title
+        title: Blockquote
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: blockquote-font-style
         title: Blockquote Font Style
         type: variable-select
         allowEmpty: false
         default: italic
         options:
-        	-
-				label: Normal
-            	value: normal
-			-
-				label: Italic
-				value: italic
+            -
+                label: Normal
+                value: normal
+            -
+                label: Italic
+                value: italic
 
-	-
-		id: callout-title
-		title: Callout
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: callout-style
+    -
+        id: callout-title
+        title: Callout
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: callout-style
         title: Callout Style
         type: class-select
         allowEmpty: false
         default: callout-style-icon-right
         options:
-        	-
-				label: Original
-            	value: callout-style-original
-			-
-				label: Icon Top Right
-				value: callout-style-icon-right
+            -
+                label: Original
+                value: callout-style-original
+            -
+                label: Icon Top Right
+                value: callout-style-icon-right
 
-	-
-		id: frontmatter-title
-		title: Frontmatter
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: frontmatter-style
+    -
+        id: frontmatter-title
+        title: Frontmatter
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: frontmatter-style
         title: Frontmatter Style
         type: class-select
         allowEmpty: false
         default: lst-fm-compact
         options:
-        	-
-				label: Compact
-            	value: lst-fm-compact
-			-
-				label: Standard
-				value: lst-fm-std
-	-
-		id: lst-fm-lp-hide
-		title: Hide Frontmatter in LP
-		description: Hides frontmatter/YAML when line is not active. There's visual cues.
-		type: class-toggle
-		default: false
+            -
+                label: Compact
+                value: lst-fm-compact
+            -
+                label: Standard
+                value: lst-fm-std
+    -
+        id: lst-fm-lp-hide
+        title: Hide Frontmatter in LP
+        description: Hides frontmatter/YAML when line is not active. There's visual cues.
+        type: class-toggle
+        default: false
 
-	-
-		id: gutter-title
-		title: Gutter "div"
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: gutter-display
+    -
+        id: gutter-title
+        title: Gutter "div"
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: gutter-display
         title: Show/Hide Gutter
-		description: When "Show line number" option disabled
+        description: When "Show line number" option disabled
         type: variable-select
         allowEmpty: false
         default: block
         options:
-        	-
-				label: Show
-            	value: block
-			-
-				label: Hide
-				value: none
+            -
+                label: Show
+                value: block
+            -
+                label: Hide
+                value: none
 
-	-
-		id: lst-mathblock-title
-		title: Math block / Latex
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: math-block-list-align
-		title: Alignment of Math Block in List
-		type: variable-select
-		default: left
-		options:
-			-
-				label: Left
-				value: left
-			-
-				label: Center
-				value: center
-			-
-				label: Right
-				value: right
+    -
+        id: lst-mathblock-title
+        title: Math block / Latex
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: math-block-list-align
+        title: Alignment of Math Block in List
+        type: variable-select
+        default: left
+        options:
+            -
+                label: Left
+                value: left
+            -
+                label: Center
+                value: center
+            -
+                label: Right
+                value: right
 
-	-
-		id: properties-title
-		title: Properties
-		description: Applies to in document only (not applicable to the side pane)
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: properties-style
+    -
+        id: properties-title
+        title: Properties
+        description: Applies to in document only (not applicable to the side pane)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: properties-style
         title: Properties Style
         type: class-select
         allowEmpty: false
         default: lst-prop-super-compact
         options:
-			-
-				label: Super Compact
-				value: lst-prop-super-compact
-        	-
-				label: Compact
-            	value: lst-prop-compact
-			-
-				label: Standard
-				value: lst-prop-std
-	-
-		id: lst-prop-rv-noedit
-		title: Prevent Accidental Clicks in Reading View
-		description: Removes "x" button and disable checkbox state change
-		type: class-toggle
-		default: true
-	-
-		id: metadata-background
-		title: Properties Background
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: metadata-label-width
-		title: Properties Label Width (in em)
-		type: variable-number
-		default: 8
-		format: em
-	-
-		id: metadata-divider-width
-		title: Properties Divider Width (in px)
-		description: Bottom border for each Property
-		type: variable-number
-		default: 0
-		format: px
+            -
+                label: Super Compact
+                value: lst-prop-super-compact
+            -
+                label: Compact
+                value: lst-prop-compact
+            -
+                label: Standard
+                value: lst-prop-std
+    -
+        id: lst-prop-rv-noedit
+        title: Prevent Accidental Clicks in Reading View
+        description: Removes "x" button and disable checkbox state change
+        type: class-toggle
+        default: true
+    -
+        id: metadata-background
+        title: Properties Background
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: metadata-label-width
+        title: Properties Label Width (in em)
+        type: variable-number
+        default: 8
+        format: em
+    -
+        id: metadata-divider-width
+        title: Properties Divider Width (in px)
+        description: Bottom border for each Property
+        type: variable-number
+        default: 0
+        format: px
 
-	-
-		id: tabs-title
-		title: Tabs
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: lst-tabs-style
+    -
+        id: tabs-title
+        title: Tabs
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: lst-tabs-style
         title: Tabs UI Style
         type: class-select
         allowEmpty: false
         default: lst-floating-tabs
         options:
-        	-
-				label: Floating Pill
-            	value: lst-floating-tabs
-			-
-				label: Folder Tabs
-				value: lst-folder-tabs
+            -
+                label: Floating Pill
+                value: lst-floating-tabs
+            -
+                label: Folder Tabs
+                value: lst-folder-tabs
 
-	-
-		id: tag-title
-		title: Tags
-		type: heading
-		level: 2
-		collapsed: true
+    -
+        id: tag-title
+        title: Tags
+        type: heading
+        level: 2
+        collapsed: true
     -
         id: tag-bg-accent-hsl
         title: Tag Background Color
@@ -4015,14 +4155,14 @@ settings:
         type: heading
         level: 1
         collapsed: false
-	-
+    -
         id: lst-docs
         title: Documentation for Listive
         description: https://github.com/efemkay/obsidian-listive-theme
         type: heading
         level: 2
         collapsed: true
-	-
+    -
         id: lst-support-donate
         title: Support Listive Development @ Ko-Fi
         description: https://ko-fi.com/efemkay

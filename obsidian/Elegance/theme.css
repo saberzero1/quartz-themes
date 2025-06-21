@@ -302,7 +302,11 @@ Thanks to:
   --text-error-hover: rgba(255, 0, 0, 0.466);
   --text-highlight-bg: rgba(255, 255, 0, 0.699);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --text-selection: rgb(78, 91, 154); /* Chromium precess this color with alpha channel */
+  --text-selection: rgb(
+    78,
+    91,
+    154
+  ); /* Chromium precess this color with alpha channel */
   --text-on-accent: rgb(0, 0, 0);
   --interactive-normal: #ffb86c;
   --interactive-hover: rgb(255, 85, 85);
@@ -356,7 +360,12 @@ Thanks to:
   --text-error-hover: rgb(232, 0, 0);
   --text-highlight-bg: rgba(117, 0, 0, 0.293);
   --text-highlight-bg-active: rgba(255, 255, 50, 0.4);
-  --text-selection: rgba(44, 77, 188, 0.2); /* Chromium precess this color with alpha channel */
+  --text-selection: rgba(
+    44,
+    77,
+    188,
+    0.2
+  ); /* Chromium precess this color with alpha channel */
   --text-on-accent: rgb(255, 255, 255);
   --interactive-normal: rgb(240, 128, 0);
   --interactive-hover: rgb(255, 85, 85);
@@ -453,7 +462,10 @@ input.prompt-input {
   font-family: calibri;
 }
 
-.nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title:not(.is-active) {
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-file
+  > .nav-file-title:not(.is-active) {
   border-left: transparent;
 }
 
@@ -547,14 +559,21 @@ input.prompt-input {
   margin-left: -8px;
 }
 
-.workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root > div.nav-folder-children {
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-folder.mod-root
+  > div.nav-folder-children {
   padding: 10px 0px 5px 10px;
   border-radius: 20px;
   margin: 2px;
 }
 
 .workspace-leaf.mod-active .view-header {
-  background: linear-gradient(90deg, transparent 60px, transparent 61px, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 60px,
+    transparent 61px,
+    transparent 100%
+  );
 }
 
 .nav-folder {
@@ -668,11 +687,15 @@ input.document-search-input.mod-no-match:hover {
 
 /* Active icon workspace */
 
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.mod-left-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
   color: var(--text-accent) !important;
 }
 
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.mod-right-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
   color: var(--text-accent);
 }
 
@@ -931,7 +954,11 @@ body {
   padding: 0px 5px 0px 10px;
 }
 
-.outline .tree-item > .tree-item-children .tree-item-self .tree-item-inner::before {
+.outline
+  .tree-item
+  > .tree-item-children
+  .tree-item-self
+  .tree-item-inner::before {
   content: "ᛜ";
   color: var(--text-accent);
   margin-left: 1px;
@@ -1355,7 +1382,8 @@ body.is-focused .workspace-tabs.mod-top {
 
 /* Different color of title bar contair (minimize, fullscreen and close Obsidian) */
 
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right {
   background-color: var(--background-secondary-alt);
 }
 
@@ -2228,7 +2256,9 @@ a:hover {
 .external-link {
   color: var(--external-link);
   font-weight: 500;
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/As68C4R.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url(https://i.imgur.com/As68C4R.png);
   background-size: 21px;
   cursor: pointer;
   background-position: left;
@@ -2254,7 +2284,8 @@ a:hover {
 
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -2466,7 +2497,11 @@ ul ol::before {
   content: "";
   display: block !important;
   position: absolute !important;
-  background-image: linear-gradient(to right, var(--text-accent) 1px, #c81a1a00 2px) !important;
+  background-image: linear-gradient(
+    to right,
+    var(--text-accent) 1px,
+    #c81a1a00 2px
+  ) !important;
   background-size: 1.8ch 1px !important;
   background-position-x: 0px !important;
   width: 100% !important;
@@ -2734,20 +2769,28 @@ ul ol::before {
   background-color: var(--background-secondary-alt);
 }
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table) {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table) {
   border-collapse: collapse;
   overflow: auto;
   margin: 20px auto;
 }
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):active,
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):hover {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):active,
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):hover {
   overflow: hidden;
   resize: both !important;
 }
 
 body .markdown-preview-view th,
-body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+body
+  .markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th,
 body .table-view-table > thead > tr > th {
   background-image: none;
 }
@@ -2809,7 +2852,9 @@ body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td) {
   text-overflow: ellipsis;
 }
 
-body.no-wrapped-table-cell table:not([class*="table-view-table"]) :is(th, td):hover,
+body.no-wrapped-table-cell
+  table:not([class*="table-view-table"])
+  :is(th, td):hover,
 body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td):hover {
   text-overflow: clip;
 }
@@ -2870,7 +2915,9 @@ body.no-wrapped-dvtable table.dataview tr > td:last-of-type {
   max-width: unset;
 }
 
-body.auto-serial-number-dvtable .markdown-source-view:not(.cards) .dataview.table-view-table {
+body.auto-serial-number-dvtable
+  .markdown-source-view:not(.cards)
+  .dataview.table-view-table {
   counter-reset: sec;
 }
 body.auto-serial-number-dvtable
@@ -2883,7 +2930,9 @@ body.auto-serial-number-dvtable
   content: counter(sec) ". ";
 }
 
-body.auto-serial-number-dvtable .markdown-preview-view:not(.cards) .dataview.table-view-table {
+body.auto-serial-number-dvtable
+  .markdown-preview-view:not(.cards)
+  .dataview.table-view-table {
   counter-reset: section;
 }
 body.auto-serial-number-dvtable
@@ -2902,7 +2951,12 @@ body:not(.no-wrapped-dvtable)
   > tbody
   > tr
   > td,
-body:not(.no-wrapped-dvtable) .markdown-source-view.mod-cm6 .table-view-table > tbody > tr > td {
+body:not(.no-wrapped-dvtable)
+  .markdown-source-view.mod-cm6
+  .table-view-table
+  > tbody
+  > tr
+  > td {
   max-width: 18em;
 }
 
@@ -2927,20 +2981,28 @@ body:not(.no-wrapped-dvtable) .markdown-source-view.mod-cm6 .table-view-table > 
 
 /* Table resize how you want in bottom right corner*/
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table) {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table) {
   border-collapse: collapse;
   overflow: auto;
   margin: 20px auto;
 }
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):active,
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):hover {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):active,
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):hover {
   overflow: hidden;
   resize: both !important;
 }
 
 body .markdown-preview-view th,
-body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+body
+  .markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th,
 body .table-view-table > thead > tr > th {
   background-image: none;
 }
@@ -3273,7 +3335,10 @@ Support kepano's work:https://github.com/sponsors/kepano */
   clear: both;
   padding: 0.3rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  );
   grid-column-gap: 0.65rem;
   grid-row-gap: 0.65rem;
 }
@@ -3313,12 +3378,20 @@ Support kepano's work:https://github.com/sponsors/kepano */
 
 /* Styling elements inside cards */
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .trim-cols .cards table.dataview tbody > tr > td {
   white-space: normal;
 }
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .cards table.dataview tbody > tr > td {
   border-bottom: none;
   padding: 0px !important;
@@ -3705,7 +3778,9 @@ input[type="checkbox"]:checked {
   padding-bottom: 0.5em;
 }
 
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
+body
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:not([data-task=" "]),
 body .markdown-preview-view ul > li.task-list-item.is-checked {
   color: var(--text-normal);
   opacity:;
@@ -3714,7 +3789,10 @@ body .markdown-preview-view ul > li.task-list-item.is-checked {
 body.minimal-strike-lists
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task]:is([data-task="x"]),
-body.minimal-strike-lists .markdown-preview-view ul li[data-task="x"].task-list-item.is-checked,
+body.minimal-strike-lists
+  .markdown-preview-view
+  ul
+  li[data-task="x"].task-list-item.is-checked,
 body.minimal-strike-lists li[data-task="x"].task-list-item.is-checked {
   color: var(--text-faint);
 }
@@ -3735,7 +3813,9 @@ ul > li.task-list-item .task-list-item-checkbox {
   margin-left: -0.4em;
 }
 
-.is-mobile .markdown-preview-view input[type="checkbox"].task-list-item-checkbox {
+.is-mobile
+  .markdown-preview-view
+  input[type="checkbox"].task-list-item-checkbox {
   top: 0.2em;
 }
 
@@ -4123,7 +4203,11 @@ body .kanban-plugin__checkbox-label {
 
 /* Checkbox */
 
-.block-language-leaflet .leaflet-control-expandable-list .input-container .input-item > input {
+.block-language-leaflet
+  .leaflet-control-expandable-list
+  .input-container
+  .input-item
+  > input {
   appearance: none;
 }
 
@@ -4170,7 +4254,12 @@ a.tag[href*="#ToDo"]:hover {
   font-weight: bold;
 }
 
-span.cm-formatting cm-formatting-hashtag cm-hashtag cm-hashtag-begin cm-meta cm-tag-ToDo {
+span.cm-formatting
+  cm-formatting-hashtag
+  cm-hashtag
+  cm-hashtag-begin
+  cm-meta
+  cm-tag-ToDo {
   background-color: rgb(173 0 0) !important;
   color: white !important;
 }
@@ -4731,7 +4820,10 @@ button.kanban-plugin__new-item-button {
 /*================*/
 
 .excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked + .ToolIcon__icon,
-.excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked + .ToolIcon__icon {
+.excalidraw
+  .ToolIcon.fillable
+  .ToolIcon_type_checkbox:checked
+  + .ToolIcon__icon {
   background-color: transparent !important;
 }
 
@@ -4750,12 +4842,23 @@ button.kanban-plugin__new-item-button {
 }
 
 .excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked + .ToolIcon__icon,
-.excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked + .ToolIcon__icon {
+.excalidraw
+  .ToolIcon.fillable
+  .ToolIcon_type_checkbox:checked
+  + .ToolIcon__icon {
   background-color: var(--text-accent) !important;
 }
 
-.excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked + .ToolIcon__icon svg,
-.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked + .ToolIcon__icon svg {
+.excalidraw
+  .ToolIcon.fillable
+  .ToolIcon_type_checkbox:checked
+  + .ToolIcon__icon
+  svg,
+.excalidraw
+  .ToolIcon.fillable
+  .ToolIcon_type_radio:checked
+  + .ToolIcon__icon
+  svg {
   fill: black;
 }
 

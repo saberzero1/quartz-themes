@@ -160,7 +160,6 @@ settings:
         min: 0
         max: 100
         step: 1
-    -
 */
 /* @settings
 
@@ -1845,7 +1844,9 @@ settings:
   border-radius: var(--radius-s);
 }
 
-.style-settings-container .setting-item:is([data-id^="setting-accent-h"]) input.slider {
+.style-settings-container
+  .setting-item:is([data-id^="setting-accent-h"])
+  input.slider {
   height: 0.8em;
   --hue-slider-sat: 70%;
   --hue-slider-br: 60%;
@@ -1889,9 +1890,12 @@ settings:
 }
 
 /* hide option */
-body:not(.line-active-enable) .setting-item[data-id="setting-line-active-color"],
-body:not(.calendar-swap-year-month) .setting-item[data-id="setting-calendar-year-suffix"],
-body:not(.quote-theme) .setting-item:is([data-id="quote-mark"], [data-id="quote-shadow"]),
+body:not(.line-active-enable)
+  .setting-item[data-id="setting-line-active-color"],
+body:not(.calendar-swap-year-month)
+  .setting-item[data-id="setting-calendar-year-suffix"],
+body:not(.quote-theme)
+  .setting-item:is([data-id="quote-mark"], [data-id="quote-shadow"]),
 body:not(.scrollbar-smooth) .setting-item[data-id="scrollbar-smooth-editor"],
 body.bg-default .setting-item[data-id="setting-bg-color"],
 body.scrollbar-hide
@@ -1912,13 +1916,16 @@ body:not(.search-internal-enable)
     [data-id="search-internal-disable-select-all"]
   ),
 body:not(.color-use-custom) .setting-item[data-id*="color-accent-"],
-body:not(.list-enable) .setting-item:is([data-id*="setting-list-"], [data-id="list-checkbox"]),
+body:not(.list-enable)
+  .setting-item:is([data-id*="setting-list-"], [data-id="list-checkbox"]),
 body:not(.code-language) .setting-item[data-id="setting-code-language-color"],
 body:not(.code-preview-bg) .setting-item[data-id="setting-code-bg-outer"],
 body:not(.modal-header) .setting-item[data-id="setting-modal-header-title"],
 body:not(.color-use-custom) .setting-item[data-id^="accent-hue"],
-body:not(.color-active-custom-light) .setting-item[data-id="setting-color-active-custom-light"],
-body:not(.color-active-custom-dark) .setting-item[data-id="setting-color-active-custom-dark"],
+body:not(.color-active-custom-light)
+  .setting-item[data-id="setting-color-active-custom-light"],
+body:not(.color-active-custom-dark)
+  .setting-item[data-id="setting-color-active-custom-dark"],
 body:not(.message-modify) .setting-item[data-id^="setting-message"],
 body:not(.image-zoom) .setting-item[data-id^="image-zoom-out"],
 body:not(.heading-level-enable) .setting-item[data-id^="heading-level-fix"],
@@ -1941,7 +1948,9 @@ body:not(.quote-theme)
 body:not(.scrollbar-smooth)
   .setting-item[data-id="scrollbar-smooth-editor"]
   + .style-settings-container,
-body.bg-default .setting-item[data-id="setting-bg-color"] + .style-settings-container,
+body.bg-default
+  .setting-item[data-id="setting-bg-color"]
+  + .style-settings-container,
 body.scrollbar-hide
   .setting-item:is(
     [data-id*="scrollbar-hover"],
@@ -1949,22 +1958,30 @@ body.scrollbar-hide
     [data-id="scrollbar-gutter"]
   )
   + .style-settings-container,
-body:not(.status-bar-enable) .setting-item[data-id*="status-bar-style"] + .style-settings-container,
+body:not(.status-bar-enable)
+  .setting-item[data-id*="status-bar-style"]
+  + .style-settings-container,
 :is(body.status-bar-scroll, body:not(.status-bar-style-float))
   .setting-item[data-id="status-bar-style-center"]
   + .style-settings-container,
 body:not(.tab-title-bar-round)
   .setting-item[data-id="tab-title-bar-shadow"]
   + .style-settings-container,
-body:not(.loading-text) .setting-item[data-id="loading-text-content"] + .style-settings-container,
-body:not(.explorer-icon) .setting-item[data-id="setting-color-dirs"] + .style-settings-container,
+body:not(.loading-text)
+  .setting-item[data-id="loading-text-content"]
+  + .style-settings-container,
+body:not(.explorer-icon)
+  .setting-item[data-id="setting-color-dirs"]
+  + .style-settings-container,
 body:not(.search-internal-enable)
   .setting-item:is(
     [data-id="search-internal-expand-on-focus"],
     [data-id="search-internal-disable-select-all"]
   )
   + .style-settings-container,
-body:not(.color-use-custom) .setting-item[data-id*="color-accent-"] + .style-settings-container,
+body:not(.color-use-custom)
+  .setting-item[data-id*="color-accent-"]
+  + .style-settings-container,
 body:not(.list-enable)
   .setting-item:is([data-id*="setting-list-"], [data-id="list-checkbox"])
   + .style-settings-container,
@@ -1977,25 +1994,39 @@ body:not(.code-preview-bg)
 body:not(.modal-header)
   .setting-item[data-id="setting-modal-header-title"]
   + .style-settings-container,
-body:not(.color-use-custom) .setting-item[data-id^="accent-hue"] + .style-settings-container,
+body:not(.color-use-custom)
+  .setting-item[data-id^="accent-hue"]
+  + .style-settings-container,
 body:not(.color-active-custom-light)
   .setting-item[data-id="setting-color-active-custom-light"]
   + .style-settings-container,
 body:not(.color-active-custom-dark)
   .setting-item[data-id="setting-color-active-custom-dark"]
   + .style-settings-container,
-body:not(.message-modify) .setting-item[data-id^="setting-message"] + .style-settings-container,
-body:not(.image-zoom) .setting-item[data-id^="image-zoom-out"] + .style-settings-container,
+body:not(.message-modify)
+  .setting-item[data-id^="setting-message"]
+  + .style-settings-container,
+body:not(.image-zoom)
+  .setting-item[data-id^="image-zoom-out"]
+  + .style-settings-container,
 body:not(.heading-level-enable)
   .setting-item[data-id^="heading-level-fix"]
   + .style-settings-container,
 body:not(.heading-color-colorful)
   .setting-item[data-id="heading-color-custom"]
   + .style-settings-container,
-body:not(.table-colorful) .setting-item[data-id^="setting-table"] + .style-settings-container,
-body:not(.embed-enable) .setting-item[data-id^="embed-title"] + .style-settings-container,
-body:not(.hr-enable) .setting-item[data-id^="setting-hr-icon"] + .style-settings-container,
-body:not(.tag-outline) .setting-item[data-id="tag-outline-setting"] + .style-settings-container {
+body:not(.table-colorful)
+  .setting-item[data-id^="setting-table"]
+  + .style-settings-container,
+body:not(.embed-enable)
+  .setting-item[data-id^="embed-title"]
+  + .style-settings-container,
+body:not(.hr-enable)
+  .setting-item[data-id^="setting-hr-icon"]
+  + .style-settings-container,
+body:not(.tag-outline)
+  .setting-item[data-id="tag-outline-setting"]
+  + .style-settings-container {
   display: none;
 }
 
@@ -2003,7 +2034,9 @@ body:not(.tag-outline) .setting-item[data-id="tag-outline-setting"] + .style-set
 div.workspace-leaf-content[data-type="style-settings"] div.view-content {
   padding: var(--file-margins);
 }
-body.is-mobile div.workspace-leaf-content[data-type="style-settings"] div.view-content {
+body.is-mobile
+  div.workspace-leaf-content[data-type="style-settings"]
+  div.view-content {
   padding: var(--size-4-8) var(--size-4-4);
 }
 body:not(.is-mobile)
@@ -2038,7 +2071,8 @@ body:not(.is-mobile)
 
 .style-settings-heading[data-level="0"] {
   background-color: var(--md-container-bg);
-  border: 1px solid hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 4%), 16%) !important;
+  border: 1px solid
+    hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 4%), 16%) !important;
 }
 .style-settings-heading[data-level="0"]
   + .style-settings-container
@@ -2072,7 +2106,8 @@ body:not(.is-mobile)
 ) {
   padding-left: var(--size-2-1);
   margin-left: var(--size-4-4);
-  border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   transition: var(--animation);
 }
 :is(
@@ -2142,7 +2177,8 @@ body.modal-item-animation .style-settings-heading:hover {
   --interactive-accent: var(--accent-active);
   --radius-xl: var(--size-4-3);
   --animation: var(--setting-animation-time, 200ms) var(--anim-motion-smooth);
-  --animation-slow: calc(var(--setting-animation-time, 200ms) * 2) var(--anim-motion-smooth);
+  --animation-slow: calc(var(--setting-animation-time, 200ms) * 2)
+    var(--anim-motion-smooth);
   --animation-delay: calc(4 * var(--setting-animation-time, 150ms));
   --bg-opacity: 1;
   --block-outline-width: 3px;
@@ -2178,9 +2214,15 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
 :is(.theme-light, .theme-light .print) {
   --color-red: rgba(var(--color-red-rgb), var(--color-opacity)) !important;
   --color-red-rgb: 189, 81, 81 !important;
-  --color-orange: rgba(var(--color-orange-rgb), var(--color-opacity)) !important;
+  --color-orange: rgba(
+    var(--color-orange-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-orange-rgb: 217, 133, 38 !important;
-  --color-yellow: rgba(var(--color-yellow-rgb), var(--color-opacity)) !important;
+  --color-yellow: rgba(
+    var(--color-yellow-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-yellow-rgb: 200, 154, 4 !important;
   --color-green: rgba(var(--color-green-rgb), var(--color-opacity)) !important;
   --color-green-rgb: 85, 170, 24 !important;
@@ -2188,11 +2230,15 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
   --color-cyan-rgb: 21, 147, 97 !important;
   --color-blue: rgba(var(--color-blue-rgb), var(--color-opacity)) !important;
   --color-blue-rgb: 6, 149, 188 !important;
-  --color-purple: rgba(var(--color-purple-rgb), var(--color-opacity)) !important;
+  --color-purple: rgba(
+    var(--color-purple-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-purple-rgb: 134, 112, 178 !important;
   --background-primary-hsl: var(--accent-h), calc(var(--accent-s) - 12%), 97%;
   --background-primary: hsl(var(--background-primary-hsl));
-  --background-secondary-hsl: calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%),
+  --background-secondary-hsl:
+    calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%),
     calc(100% - (100% - var(--accent-l)) / 8);
   --background-secondary: hsl(var(--background-secondary-hsl));
   --background-modifier-hover: hsl(
@@ -2200,11 +2246,27 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
     calc(var(--accent-s) * 1.2),
     min(var(--accent-l) * 2, 90%)
   );
-  --accent-active: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 4%));
-  --accent-inactive: hsl(var(--accent-h), calc(var(--accent-s) - 4%), calc(var(--accent-l) + 24%));
+  --accent-active: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 4%)
+  );
+  --accent-inactive: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 4%),
+    calc(var(--accent-l) + 24%)
+  );
   --text-on-accent: #fafafa !important;
-  --frame-background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 32%));
-  --frame-outline-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%));
+  --frame-background-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 32%)
+  );
+  --frame-outline-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 23.5%)
+  );
   --frame-muted-color: hsl(
     var(--accent-h),
     calc(var(--accent-s) - 20%),
@@ -2225,9 +2287,15 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
 :is(.theme-dark, .theme-dark .print) {
   --color-red: rgba(var(--color-red-rgb), var(--color-opacity)) !important;
   --color-red-rgb: 241, 167, 167 !important;
-  --color-orange: rgba(var(--color-orange-rgb), var(--color-opacity)) !important;
+  --color-orange: rgba(
+    var(--color-orange-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-orange-rgb: 240, 192, 168 !important;
-  --color-yellow: rgba(var(--color-yellow-rgb), var(--color-opacity)) !important;
+  --color-yellow: rgba(
+    var(--color-yellow-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-yellow-rgb: 238, 207, 160 !important;
   --color-green: rgba(var(--color-green-rgb), var(--color-opacity)) !important;
   --color-green-rgb: 164, 223, 174 !important;
@@ -2235,18 +2303,38 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
   --color-cyan-rgb: 161, 232, 229 !important;
   --color-blue: rgba(var(--color-blue-rgb), var(--color-opacity)) !important;
   --color-blue-rgb: 143, 199, 255 !important;
-  --color-purple: rgba(var(--color-purple-rgb), var(--color-opacity)) !important;
+  --color-purple: rgba(
+    var(--color-purple-rgb),
+    var(--color-opacity)
+  ) !important;
   --color-purple-rgb: 212, 207, 252 !important;
   --background-primary: hsl(var(--background-primary-hsl));
   --background-primary-hsl: var(--accent-h), 5%, 5%;
   --background-secondary: hsl(var(--background-secondary-hsl));
-  --background-secondary-hsl: calc(var(--accent-h) + 8), calc(var(--accent-s) / 6),
+  --background-secondary-hsl:
+    calc(var(--accent-h) + 8), calc(var(--accent-s) / 6),
     calc(var(--accent-l) / 5);
-  --background-modifier-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) / 3));
-  --accent-active: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 16%));
-  --accent-inactive: hsl(var(--accent-h), calc(var(--accent-s) + 24%), calc(var(--accent-l) - 32%));
+  --background-modifier-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) / 3)
+  );
+  --accent-active: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 16%)
+  );
+  --accent-inactive: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) + 24%),
+    calc(var(--accent-l) - 32%)
+  );
   --frame-background-color: hsl(var(--accent-h), 12%, 16%);
-  --frame-outline-color: hsl(calc(var(--accent-h) - 24), calc(var(--accent-s) + 6%), 24%);
+  --frame-outline-color: hsl(
+    calc(var(--accent-h) - 24),
+    calc(var(--accent-s) + 6%),
+    24%
+  );
   --frame-muted-color: hsl(
     var(--accent-h),
     calc(var(--accent-s) - 20%),
@@ -2254,7 +2342,10 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
   );
   --text-normal: hsla(var(--accent-h), 50%, 94%, 75%);
   --text-on-accent: #eaeaea !important;
-  --md-container-bg: var(--setting-md-container-bg, hsl(calc(var(--accent-h) - 4), 18%, 9%));
+  --md-container-bg: var(
+    --setting-md-container-bg,
+    hsl(calc(var(--accent-h) - 4), 18%, 9%)
+  );
   --color-opacity: 0.85;
 }
 
@@ -2264,11 +2355,19 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
 ) {
   --accent-active: var(
     --setting-color-active-custom-light,
-    hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) + -12%), calc(var(--accent-l) + 4%))
+    hsl(
+      calc(var(--accent-h) + 60),
+      calc(var(--accent-s) + -12%),
+      calc(var(--accent-l) + 4%)
+    )
   );
   --accent-inactive: var(
     --setting-color-active-custom-dark,
-    hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) + -12%), calc(var(--accent-l) + 20%))
+    hsl(
+      calc(var(--accent-h) + 60),
+      calc(var(--accent-s) + -12%),
+      calc(var(--accent-l) + 20%)
+    )
   );
 }
 
@@ -2278,11 +2377,19 @@ html :is(body.obsidian-app, body.obsidian-app .print) {
 ) {
   --accent-active: var(
     --setting-color-active-custom-light,
-    hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) + -12%), calc(var(--accent-l) + -12%))
+    hsl(
+      calc(var(--accent-h) + 60),
+      calc(var(--accent-s) + -12%),
+      calc(var(--accent-l) + -12%)
+    )
   );
   --accent-inactive: var(
     --setting-color-active-custom-dark,
-    hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) + -12%), calc(var(--accent-l) + -28%))
+    hsl(
+      calc(var(--accent-h) + 60),
+      calc(var(--accent-s) + -12%),
+      calc(var(--accent-l) + -28%)
+    )
   );
 }
 
@@ -2343,14 +2450,17 @@ body {
   --file-line-width: var(--setting-file-line-width, clamp(600px, 72%, 820px));
 }
 
-.markdown-source-view.mod-cm6.is-readable-line-width :is(.cm-content, .cm-line) {
+.markdown-source-view.mod-cm6.is-readable-line-width
+  :is(.cm-content, .cm-line) {
   max-width: 100%;
 }
 
 .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"] {
   background-color: hsla(var(--editor-bg), var(--bg-opacity));
 }
-.workspace-split.mod-root .workspace-leaf-content[data-type="markdown"] .view-content {
+.workspace-split.mod-root
+  .workspace-leaf-content[data-type="markdown"]
+  .view-content {
   background-color: transparent;
 }
 
@@ -2381,11 +2491,17 @@ body .markdown-source-view .cm-scroller .cm-line:not(.HyperMD-codeblock) {
 /* #endregion editor line height */
 /* #region current line highlight */
 .theme-light {
-  --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 24%, 92%));
+  --active-line: var(
+    --setting-line-active-color,
+    hsl(var(--accent-h), 24%, 92%)
+  );
 }
 
 .theme-dark {
-  --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 18%, 14%));
+  --active-line: var(
+    --setting-line-active-color,
+    hsl(var(--accent-h), 18%, 14%)
+  );
 }
 
 body:is(:not(.css-settings-manager), .line-active-enable)
@@ -2400,16 +2516,35 @@ body:is(:not(.css-settings-manager), .line-active-enable)
 /* #endregion current line highlight */
 /* #region line indicator */
 /* reference from https://github.com/Akifyss/obsidian-border */
-body.line-indicator-enable .markdown-preview-sizer > div:not(.search-highlight) {
+body.line-indicator-enable
+  .markdown-preview-sizer
+  > div:not(.search-highlight) {
   position: relative;
 }
 body.line-indicator-enable
   :is(
     .markdown-reading-view
       .markdown-preview-sizer
-      > div:not(:has(:is(.collapse-indicator, hr, pre, blockquote, table, p img, audio, video))),
+      > div:not(
+        :has(
+          :is(
+            .collapse-indicator,
+            hr,
+            pre,
+            blockquote,
+            table,
+            p img,
+            audio,
+            video
+          )
+        )
+      ),
     .markdown-source-view
-      .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line-1:has(.collapse-indicator))
+      .cm-line:not(
+        .HyperMD-header,
+        .HyperMD-quote,
+        .HyperMD-list-line-1:has(.collapse-indicator)
+      )
   ):hover::after {
   content: "";
   width: var(--size-4-1);
@@ -2458,10 +2593,14 @@ mark {
 }
 
 body {
-  --text-highlight-bg: var(--setting-text-highlight-bg, rgba(var(--color-yellow-rgb), 0.3));
+  --text-highlight-bg: var(
+    --setting-text-highlight-bg,
+    rgba(var(--color-yellow-rgb), 0.3)
+  );
 }
 
-.text-highlight-all-round :is(.markdown-source-view .cm-highlight, .markdown-rendered mark) {
+.text-highlight-all-round
+  :is(.markdown-source-view .cm-highlight, .markdown-rendered mark) {
   -webkit-box-decoration-break: clone;
 }
 
@@ -2472,13 +2611,17 @@ body {
   background: var(--text-highlight-bg);
 }
 
-body.text-highlight-margin :is(.markdown-source-view span.cm-highlight, .markdown-rendered mark) {
+body.text-highlight-margin
+  :is(.markdown-source-view span.cm-highlight, .markdown-rendered mark) {
   margin: 0 var(--size-2-1);
   padding: var(--size-2-1) var(--size-4-1);
 }
 
 .markdown-source-view
-  :is(:not(.cm-highlight) + .cm-formatting-highlight, .cm-formatting-highlight:first-child) {
+  :is(
+    :not(.cm-highlight) + .cm-formatting-highlight,
+    .cm-formatting-highlight:first-child
+  ) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0;
@@ -2538,7 +2681,9 @@ a :is(em, strong):hover {
 
 /* #endregion bold & italic */
 /* #region others */
-.workspace-leaf-content[data-type="markdown"] .view-header .clickable-icon:hover {
+.workspace-leaf-content[data-type="markdown"]
+  .view-header
+  .clickable-icon:hover {
   background-color: var(--background-modifier-hover);
 }
 
@@ -2578,7 +2723,11 @@ input[type="checkbox"]:checked::after {
 }
 
 :is(.theme-light, .theme-light .print) {
-  --code-preview-base: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 30%));
+  --code-preview-base: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 30%)
+  );
   --code-mac-style-header-bg: #333;
 }
 
@@ -2641,7 +2790,10 @@ input[type="checkbox"]:checked::after {
   border-right: var(--code-bg-border);
   border-radius: 0 !important;
 }
-.cm-s-obsidian .cm-line.HyperMD-codeblock .cm-fold-indicator .collapse-indicator {
+.cm-s-obsidian
+  .cm-line.HyperMD-codeblock
+  .cm-fold-indicator
+  .collapse-indicator {
   padding-left: var(--size-4-3);
   padding-right: unset !important;
   left: calc(var(--size-4-2) * -3);
@@ -2661,13 +2813,15 @@ input[type="checkbox"]:checked::after {
   margin-bottom: var(--size-2-1) !important;
 }
 
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-callout) {
+.markdown-source-view.mod-cm6
+  .cm-embed-block:not(.cm-table-widget):not(.cm-callout) {
   box-shadow: none !important;
   border: var(--block-outline-width) solid transparent;
   border-radius: var(--radius-l) !important;
   transition: var(--animation);
 }
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-callout):hover {
+.markdown-source-view.mod-cm6
+  .cm-embed-block:not(.cm-table-widget):not(.cm-callout):hover {
   border-color: var(--accent-active);
 }
 .markdown-source-view.mod-cm6
@@ -2729,8 +2883,13 @@ body .markdown-rendered pre .copy-code-button:hover {
   background-color: var(--text-normal);
 }
 
-.code-nowrap.scrollbar-gutter-overlay:not(.code-mac-style-header) .app-container div pre {
-  padding-bottom: calc(var(--code-size) * var(--line-height-normal) * 0.8) !important;
+.code-nowrap.scrollbar-gutter-overlay:not(.code-mac-style-header)
+  .app-container
+  div
+  pre {
+  padding-bottom: calc(
+    var(--code-size) * var(--line-height-normal) * 0.8
+  ) !important;
 }
 .code-nowrap.scrollbar-gutter-overlay pre code {
   padding-bottom: var(--size-2-3);
@@ -3116,7 +3275,14 @@ body:is(:not(.css-settings-manager), .code-language)
 .code-theme
   :is(.markdown-rendered, .markdown-source-view.mod-cm6)
   :is(
-    .token:is(.tag, .constant, .symbol, .deleted, .class-name, .maybe-class-name),
+    .token:is(
+        .tag,
+        .constant,
+        .symbol,
+        .deleted,
+        .class-name,
+        .maybe-class-name
+      ),
     .cm-tag,
     .cm-operator
   ) {
@@ -3146,7 +3312,14 @@ body:is(:not(.css-settings-manager), .code-language)
 .code-theme
   :is(.markdown-rendered, .markdown-source-view.mod-cm6)
   :is(
-    .token:is(.entity, .parameter, .property, .property-access, .url, .variable),
+    .token:is(
+        .entity,
+        .parameter,
+        .property,
+        .property-access,
+        .url,
+        .variable
+      ),
     :is(.language-css, .style) .token.string,
     .cm-def,
     .cm-number + .cm-variable
@@ -3155,7 +3328,11 @@ body:is(:not(.css-settings-manager), .code-language)
 }
 .code-theme
   :is(.markdown-rendered, .markdown-source-view.mod-cm6)
-  :is(.token:is(.attr-value, .function, .class-name), .cm-property, .cm-attribute) {
+  :is(
+    .token:is(.attr-value, .function, .class-name),
+    .cm-property,
+    .cm-attribute
+  ) {
   color: var(--code-function);
 }
 .code-theme
@@ -3188,7 +3365,9 @@ body:is(:not(.css-settings-manager), .code-language)
 .code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview) {
   border: none;
   padding-top: calc(var(--code-size) * var(--line-height-normal) * 1.5);
-  padding-bottom: calc(var(--code-size) * var(--line-height-normal) * 0.5) !important;
+  padding-bottom: calc(
+    var(--code-size) * var(--line-height-normal) * 0.5
+  ) !important;
 }
 .code-mac-style-header:not(:has(.print))
   .markdown-rendered
@@ -3196,7 +3375,9 @@ body:is(:not(.css-settings-manager), .code-language)
   code[class*="language-"]::before {
   color: var(--setting-code-language-color, var(--accent-active));
 }
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview)::after {
+.code-mac-style-header:not(:has(.print))
+  .markdown-rendered
+  pre:not(.dataview)::after {
   content: "";
   width: 100%;
   height: calc(var(--code-size) * var(--line-height-normal) * 1.1);
@@ -3205,14 +3386,17 @@ body:is(:not(.css-settings-manager), .code-language)
   left: 0;
   position: absolute;
 }
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview)::before {
+.code-mac-style-header:not(:has(.print))
+  .markdown-rendered
+  pre:not(.dataview)::before {
   content: "";
   width: calc(var(--code-size) - var(--size-2-1));
   height: calc(var(--code-size) - var(--size-2-1));
   position: absolute;
   left: 0.8rem;
   top: calc(
-    (var(--code-size) - var(--size-2-1)) * var(--line-height-normal) * 0.6 - var(--code-size) / 3
+    (var(--code-size) - var(--size-2-1)) * var(--line-height-normal) * 0.6 -
+      var(--code-size) / 3
   );
   border-radius: 50%;
   z-index: 9;
@@ -3236,7 +3420,9 @@ body:is(:not(.css-settings-manager), .code-language)
 }
 .code-line-number
   .cm-contentContainer
-  .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+  .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  )::before {
   counter-increment: code-line;
   content: counter(code-line);
   position: absolute;
@@ -3279,8 +3465,14 @@ body:is(:not(.css-settings-manager), .code-language)
     )
   );
 }
-.code-preview-bg .markdown-preview-view .markdown-preview-section pre:not([class*="frontmatter"]) {
-  --code-background: var(--setting-code-bg, hsl(var(--background-secondary-hsl)));
+.code-preview-bg
+  .markdown-preview-view
+  .markdown-preview-section
+  pre:not([class*="frontmatter"]) {
+  --code-background: var(
+    --setting-code-bg,
+    hsl(var(--background-secondary-hsl))
+  );
   border-width: 0;
 }
 
@@ -3298,7 +3490,8 @@ body:is(:not(.css-settings-manager), .embed-enable) .cm-embed-block {
   border-radius: var(--radius-l) !important;
   transition: var(--animation);
 }
-body:is(:not(.css-settings-manager), .embed-enable) .internal-embed.is-loaded:not(.image-embed) {
+body:is(:not(.css-settings-manager), .embed-enable)
+  .internal-embed.is-loaded:not(.image-embed) {
   --embed-background: var(--background-primary);
   --embed-max-height: initial;
   transition: var(--animation);
@@ -3350,7 +3543,10 @@ body:is(:not(.css-settings-manager), .embed-enable)
   min-height: fit-content !important;
 }
 body:is(:not(.css-settings-manager), .embed-enable)
-  .internal-embed.is-loaded:not(.image-embed):is(.markdown-embed, .file-embed):hover {
+  .internal-embed.is-loaded:not(.image-embed):is(
+    .markdown-embed,
+    .file-embed
+  ):hover {
   border-color: var(--accent-active);
 }
 body:is(:not(.css-settings-manager), .embed-enable)
@@ -3364,7 +3560,10 @@ body:is(:not(.css-settings-manager), .embed-enable)
   svg.link {
   transform: rotate(90deg);
 }
-body:is(:not(.css-settings-manager), .embed-enable).scrollbar-gutter-reserve.embed-title-right-top
+body:is(
+    :not(.css-settings-manager),
+    .embed-enable
+  ).scrollbar-gutter-reserve.embed-title-right-top
   .internal-embed.is-loaded:not([alt="#"])
   .markdown-embed-heading
   .markdown-preview-section
@@ -3473,7 +3672,9 @@ body.hr-enable :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr {
     transparent 100%
   );
 }
-body.hr-enable :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr::after {
+body.hr-enable
+  :is(.markdown-source-view.mod-cm6, .markdown-rendered)
+  hr::after {
   content: var(--setting-hr-icon, "⭐");
   display: inline-block;
   font-family: var(--font-monospace);
@@ -3495,11 +3696,20 @@ body.hr-enable :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr::after 
 /* #region link */
 :is(body, .print .markdown-rendered) {
   --link-color-rgb: var(--setting-link-internal-color, var(--color-blue-rgb));
-  --link-external-color-rgb: var(--setting-link-external-color, var(--color-orange-rgb));
+  --link-external-color-rgb: var(
+    --setting-link-external-color,
+    var(--color-orange-rgb)
+  );
   --link-color: rgba(var(--link-color-rgb), var(--color-opacity));
   --link-color-hover: var(--link-color);
-  --link-color-underline: var(--setting-link-internal-color-underline, var(--link-color));
-  --link-external-color: rgba(var(--link-external-color-rgb), var(--color-opacity));
+  --link-color-underline: var(
+    --setting-link-internal-color-underline,
+    var(--link-color)
+  );
+  --link-external-color: rgba(
+    var(--link-external-color-rgb),
+    var(--color-opacity)
+  );
   --link-external-color-hover: var(--link-external-color);
   --link-external-color-underline: var(
     --setting-link-external-color-underline,
@@ -3537,7 +3747,11 @@ body span:is(.cm-formatting-link, .cm-formatting-link-string) {
 }
 
 body:not(.link-hover-expand)
-  :is(a.external-link, .cm-link .cm-underline, .cm-url:not(.cm-string) .cm-underline) {
+  :is(
+    a.external-link,
+    .cm-link .cm-underline,
+    .cm-url:not(.cm-string) .cm-underline
+  ) {
   transition: var(--animation);
   color: rgba(var(--link-external-color-rgb), var(--color-opacity));
   border-radius: var(--radius-s);
@@ -3545,15 +3759,26 @@ body:not(.link-hover-expand)
   text-decoration-color: var(--link-external-color-underline);
 }
 body:not(.link-hover-expand)
-  :is(a.external-link, .cm-link .cm-underline, .cm-url:not(.cm-string) .cm-underline):hover {
+  :is(
+    a.external-link,
+    .cm-link .cm-underline,
+    .cm-url:not(.cm-string) .cm-underline
+  ):hover {
   background-color: rgba(var(--link-external-color-rgb), 0.15);
 }
 body:not(.link-hover-expand)
-  :is(a.external-link, .cm-link .cm-underline, .cm-url:not(.cm-string) .cm-underline):active {
+  :is(
+    a.external-link,
+    .cm-link .cm-underline,
+    .cm-url:not(.cm-string) .cm-underline
+  ):active {
   background-color: rgba(var(--link-external-color-rgb), 0.35);
 }
 body:not(.link-hover-expand)
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline) {
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ) {
   transition: var(--animation);
   color: rgba(var(--link-color-rgb), var(--color-opacity));
   border-radius: var(--radius-s);
@@ -3561,15 +3786,26 @@ body:not(.link-hover-expand)
   text-decoration-color: var(--link-color-underline);
 }
 body:not(.link-hover-expand)
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline):hover {
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ):hover {
   background-color: rgba(var(--link-color-rgb), 0.15);
 }
 body:not(.link-hover-expand)
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline):active {
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ):active {
   background-color: rgba(var(--link-color-rgb), 0.35);
 }
 
-span:is(.cm-url, .cm-link, .cm-hmd-internal-link, .cm-formatting-link.cm-url):hover {
+span:is(
+    .cm-url,
+    .cm-link,
+    .cm-hmd-internal-link,
+    .cm-formatting-link.cm-url
+  ):hover {
   text-decoration: none;
 }
 
@@ -3584,7 +3820,10 @@ body.link-hover-expand .cm-hmd-internal-link > .cm-underline {
   --link-decoration-hover: none;
 }
 body.link-hover-expand
-  :is(a.external-link:not(.is-unresolved), :is(.cm-link, .cm-url) > .cm-underline) {
+  :is(
+    a.external-link:not(.is-unresolved),
+    :is(.cm-link, .cm-url) > .cm-underline
+  ) {
   font-size: var(--link-text-size);
   box-shadow: inset 0 -0.1em 0 var(--link-external-color-underline);
   text-decoration: none !important;
@@ -3592,15 +3831,27 @@ body.link-hover-expand
   color: var(--link-external-color) !important;
 }
 body.link-hover-expand
-  :is(a.external-link:not(.is-unresolved), :is(.cm-link, .cm-url) > .cm-underline):hover,
+  :is(
+    a.external-link:not(.is-unresolved),
+    :is(.cm-link, .cm-url) > .cm-underline
+  ):hover,
 body.link-hover-expand
-  :is(a.external-link:not(.is-unresolved), :is(.cm-link, .cm-url) > .cm-underline):focus {
+  :is(
+    a.external-link:not(.is-unresolved),
+    :is(.cm-link, .cm-url) > .cm-underline
+  ):focus {
   box-shadow: inset 0 -1.3em 0 var(--link-external-color-underline);
   --link-color: var(--setting-link-internal-color-hover, var(--text-on-accent));
-  --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
+  --link-external-color: var(
+    --setting-link-external-color-hover,
+    var(--text-on-accent)
+  );
 }
 body.link-hover-expand
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline) {
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ) {
   font-size: var(--link-text-size);
   box-shadow: inset 0 -0.1em 0 var(--link-color-underline);
   text-decoration: none !important;
@@ -3608,12 +3859,21 @@ body.link-hover-expand
   color: var(--link-color) !important;
 }
 body.link-hover-expand
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline):hover,
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ):hover,
 body.link-hover-expand
-  :is(a.internal-link:not(.is-unresolved), .cm-hmd-internal-link > .cm-underline):focus {
+  :is(
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ):focus {
   box-shadow: inset 0 -1.3em 0 var(--link-color-underline);
   --link-color: var(--setting-link-internal-color-hover, var(--text-on-accent));
-  --link-external-color: var(--setting-link-external-color-hover, var(--text-on-accent));
+  --link-external-color: var(
+    --setting-link-external-color-hover,
+    var(--text-on-accent)
+  );
 }
 body.link-hover-expand :is(.cm-hmd-internal-link, .cm-link) {
   transition: color var(--animation);
@@ -3621,7 +3881,8 @@ body.link-hover-expand :is(.cm-hmd-internal-link, .cm-link) {
 
 body.link-icon
   :is(
-    :is(.markdown-source-view, .markdown-preview-view) a.internal-link:not(.is-unresolved),
+    :is(.markdown-source-view, .markdown-preview-view)
+      a.internal-link:not(.is-unresolved),
     .cm-hmd-internal-link > .cm-underline
   )::before {
   content: "";
@@ -3635,7 +3896,8 @@ body.link-icon
 }
 body.link-icon:not(.link-click-to-edit-in-live-preview)
   :is(
-    :is(.markdown-source-view, .markdown-preview-view) a.external-link:not(.is-resolved),
+    :is(.markdown-source-view, .markdown-preview-view)
+      a.external-link:not(.is-resolved),
     :is(.cm-link:not(.cm-hmd-footnote, .cm-escape), .cm-url) > .cm-underline
   ):not(.cm-escape + .cm-link .cm-underline)::before {
   content: "";
@@ -3666,11 +3928,20 @@ body.link-click-to-edit-in-live-preview
 /* #region list */
 body:is(:not(.css-settings-manager), .list-enable) {
   --list-marker-color: var(--setting-list-marker, var(--accent-active));
-  --list-marker-color-alt: var(--setting-list-marker-alt, var(--list-marker-color));
+  --list-marker-color-alt: var(
+    --setting-list-marker-alt,
+    var(--list-marker-color)
+  );
   --list-marker-color-alt-render: transparent;
   --checkbox-marker-color: var(--text-on-accent);
-  --checkbox-border-color: var(--setting-list-checkbox-color, var(--accent-inactive));
-  --checkbox-border-color-hover: var(--setting-list-checkbox-color-hover, var(--accent-active));
+  --checkbox-border-color: var(
+    --setting-list-checkbox-color,
+    var(--accent-inactive)
+  );
+  --checkbox-border-color-hover: var(
+    --setting-list-checkbox-color-hover,
+    var(--accent-active)
+  );
   --list-bullet-size: calc(var(--font-text-size) / 3 + var(--size-2-1));
 }
 body:is(:not(.css-settings-manager), .list-enable) .cm-formatting-list {
@@ -3690,17 +3961,22 @@ body:is(:not(.css-settings-manager), .list-enable)
   .task-list-item-checkbox {
   border-width: var(--size-2-1);
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-source-view .task-list-item-checkbox {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-source-view
+  .task-list-item-checkbox {
   margin-inline-start: 0.3rem;
   margin-inline-end: var(--size-4-1);
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-preview-view .task-list-item-checkbox {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-preview-view
+  .task-list-item-checkbox {
   margin-inline-start: calc(var(--checkbox-size) * -1.3);
 }
 body:is(:not(.css-settings-manager), .list-enable) .collapse-indicator {
   --cursor: pointer;
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-source-view.mod-cm6 {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-source-view.mod-cm6 {
   --list-bullet-end-padding: 1.6rem;
 }
 body:is(:not(.css-settings-manager), .list-enable)
@@ -3718,10 +3994,15 @@ body:is(:not(.css-settings-manager), .list-enable) li .list-collapse-indicator {
   padding-inline-end: 1.2rem !important;
   transform: translateX(-2.25rem);
 }
-body:is(:not(.css-settings-manager), .list-enable) ol li .list-collapse-indicator {
+body:is(:not(.css-settings-manager), .list-enable)
+  ol
+  li
+  .list-collapse-indicator {
   transform: translateX(-3rem);
 }
-body:is(:not(.css-settings-manager), .list-enable) .contains-task-list .list-collapse-indicator {
+body:is(:not(.css-settings-manager), .list-enable)
+  .contains-task-list
+  .list-collapse-indicator {
   transform: translateX(-2.4rem);
 }
 body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ul > li {
@@ -3739,27 +4020,48 @@ body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol {
 body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol > li {
   margin-inline-start: calc(var(--font-text-size) + 0.25rem);
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol li > ol {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-rendered
+  ol
+  li
+  > ol {
   padding-left: calc(var(--font-text-size));
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol li > ol::before {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-rendered
+  ol
+  li
+  > ol::before {
   left: calc(var(--font-text-size) * -1.5);
 }
-body:is(:not(.css-settings-manager), .list-enable) :is(.markdown-rendered, div) > ul {
+body:is(:not(.css-settings-manager), .list-enable)
+  :is(.markdown-rendered, div)
+  > ul {
   --list-indent: 0;
 }
-body:is(:not(.css-settings-manager), .list-enable) .HyperMD-list-line-2 .list-bullet {
+body:is(:not(.css-settings-manager), .list-enable)
+  .HyperMD-list-line-2
+  .list-bullet {
   --list-marker-color: transparent;
-  --list-bullet-border: var(--setting-list-marker, var(--accent-active)) var(--size-2-1) solid;
-  --list-bullet-size: calc(calc(var(--font-text-size) / 3 + var(--size-2-1)) - var(--size-2-1));
+  --list-bullet-border: var(--setting-list-marker, var(--accent-active))
+    var(--size-2-1) solid;
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) - var(--size-2-1)
+  );
 }
-body:is(:not(.css-settings-manager), .list-enable) .HyperMD-list-line-3 .list-bullet {
+body:is(:not(.css-settings-manager), .list-enable)
+  .HyperMD-list-line-3
+  .list-bullet {
   --list-bullet-radius: 0;
   --list-marker-color: var(--list-marker-color-alt);
-  --list-bullet-size: calc(calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.95);
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.95
+  );
   transform: rotate(45deg);
 }
-body:is(:not(.css-settings-manager), .list-enable) .HyperMD-list-line-4 .list-bullet {
+body:is(:not(.css-settings-manager), .list-enable)
+  .HyperMD-list-line-4
+  .list-bullet {
   --list-marker-color: transparent;
   --list-bullet-border: var(--list-marker-color-alt) var(--size-2-1) solid;
   --list-bullet-size: calc(
@@ -3770,25 +4072,55 @@ body:is(:not(.css-settings-manager), .list-enable) .HyperMD-list-line-4 .list-bu
 }
 body:is(:not(.css-settings-manager), .list-enable) ul > li > ul > li {
   --list-marker-color: var(--list-marker-color-alt-render);
-  --list-bullet-border: var(--setting-list-marker, var(--accent-active)) var(--size-2-1) solid;
-  --list-bullet-size: calc(calc(var(--font-text-size) / 3 + var(--size-2-1)) - var(--size-2-1));
+  --list-bullet-border: var(--setting-list-marker, var(--accent-active))
+    var(--size-2-1) solid;
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) - var(--size-2-1)
+  );
 }
 body:is(:not(.css-settings-manager), .list-enable) ul > li > ul > li > ul > li {
-  --list-bullet-size: calc(calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.5);
+  --list-bullet-size: calc(
+    calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.5
+  );
   --list-bullet-radius: 0;
   --list-marker-color: var(--list-marker-color-alt);
   --deg: 45deg;
 }
-body:is(:not(.css-settings-manager), .list-enable) ul > li > ul > li > ul > li .list-bullet {
+body:is(:not(.css-settings-manager), .list-enable)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet {
   transform: rotate(var(--deg));
 }
-body:is(:not(.css-settings-manager), .list-enable) ul > li > ul > li > ul > li > ul > li {
+body:is(:not(.css-settings-manager), .list-enable)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li {
   --list-bullet-size: calc(
     calc(var(--font-text-size) / 3 + var(--size-2-1)) * 0.9 - var(--size-2-1)
   );
   --list-marker-color: var(--list-marker-color-alt-render);
 }
-body:is(:not(.css-settings-manager), .list-enable) ul > li > ul > li > ul > li > ul > li ul > li {
+body:is(:not(.css-settings-manager), .list-enable)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  ul
+  > li {
   --list-bullet-radius: var(--radius-s);
   --list-marker-color: var(--setting-list-marker, var(--accent-active));
 }
@@ -3804,7 +4136,10 @@ body:is(:not(.css-settings-manager), .list-enable)
   > li {
   --list-marker-color: var(--setting-list-marker, var(--accent-active));
 }
-body:is(:not(.css-settings-manager), .list-enable) .markdown-source-view .callout .task-list-item {
+body:is(:not(.css-settings-manager), .list-enable)
+  .markdown-source-view
+  .callout
+  .task-list-item {
   margin-inline-start: calc(var(--font-text-size) / 1.5);
 }
 
@@ -3941,7 +4276,9 @@ body.list-enable .print {
   body:not(.tasks)
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task]:is([data-task="-"]),
-.list-checkbox-alternative body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+.list-checkbox-alternative
+  body:not(.tasks)
+  li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
 }
@@ -4031,7 +4368,9 @@ body.quote-theme :is(.markdown-source-view, .markdown-rendered) {
   --blockquote-border-thickness: var(--size-4-1);
   --blockquote-radius: var(--size-2-3);
 }
-body.quote-theme .markdown-source-view.mod-cm6 :is(.HyperMD-quote, .cm-blockquote-border)::before {
+body.quote-theme
+  .markdown-source-view.mod-cm6
+  :is(.HyperMD-quote, .cm-blockquote-border)::before {
   width: var(--blockquote-border-thickness);
   border-left: none;
   background-color: var(--blockquote-border-color);
@@ -4063,21 +4402,33 @@ body.quote-theme .markdown-source-view.mod-cm6 .HyperMD-quote::before {
   left: calc(var(--blockquote-border-thickness) / 2);
   z-index: 10;
 }
-body.quote-theme .markdown-source-view.mod-cm6 .HyperMD-quote + .HyperMD-quote::before {
+body.quote-theme
+  .markdown-source-view.mod-cm6
+  .HyperMD-quote
+  + .HyperMD-quote::before {
   top: calc(var(--blockquote-radius) * -2);
 }
 body.quote-theme
   .markdown-source-view.mod-cm6
-  :is(div:not(.HyperMD-quote) + .HyperMD-quote, .cm-content :first-child:is(.HyperMD-quote)) {
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  ) {
   border-top-left-radius: var(--blockquote-radius) !important;
   border-top-right-radius: var(--blockquote-radius) !important;
 }
 body.quote-theme
   .markdown-source-view.mod-cm6
-  :is(div:not(.HyperMD-quote) + .HyperMD-quote, .cm-content :first-child:is(.HyperMD-quote))::after,
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  )::after,
 body.quote-theme
   .markdown-source-view.mod-cm6
-  :is(div:not(.HyperMD-quote) + .HyperMD-quote, .cm-content :first-child:is(.HyperMD-quote))
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  )
   .cm-quote.cm-formatting::after {
   content: none !important;
 }
@@ -4142,10 +4493,14 @@ body.quote-theme.quote-mark.quote-theme blockquote::before {
   content: "“" !important;
   background-color: transparent;
   color: var(--text-muted);
-  top: calc(var(--font-text-size) * var(--line-height-normal) - 2.1428571429rem);
+  top: calc(
+    var(--font-text-size) * var(--line-height-normal) - 2.1428571429rem
+  );
   transform: translateX(-1.32rem);
 }
-body.quote-theme :is(.markdown-preview-view, .community-modal-readme.markdown-rendered) blockquote {
+body.quote-theme
+  :is(.markdown-preview-view, .community-modal-readme.markdown-rendered)
+  blockquote {
   padding-left: var(--size-4-6);
 }
 body.quote-theme
@@ -4156,55 +4511,153 @@ body.quote-theme
 }
 body.quote-theme
   :is(
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-2 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-3 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-4 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-5 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-6 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-7 .cm-blockquote-border:nth-of-type(-n + 8),
-    .HyperMD-quote-2:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 2),
-    .HyperMD-quote-3:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 3),
-    .HyperMD-quote-4:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 4),
-    .HyperMD-quote-5:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 5),
-    .HyperMD-quote-6:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 6),
-    .HyperMD-quote-7:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 7),
-    .HyperMD-quote-8:not(.cm-active) + .HyperMD-quote-8 .cm-blockquote-border:nth-of-type(-n + 8)
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 8)
   )::before {
   top: calc(var(--blockquote-radius) * -2);
 }
@@ -4226,124 +4679,198 @@ body {
 }
 
 body:is(:not(.css-settings-manager), .table-full)
-  :is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) {
+  :is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  ) {
   --table-white-space: break-all;
   width: 100%;
 }
 body:is(:not(.css-settings-manager), .table-full)
-  :is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+  :is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-editor {
   width: 100%;
 }
 
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-col-btn {
   border-top-right-radius: var(--table-radius);
   border-bottom-right-radius: var(--table-radius);
   color: var(--table-btn-color);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-row-btn {
   border-bottom-left-radius: var(--table-radius);
   border-bottom-right-radius: var(--table-radius);
   color: var(--table-btn-color);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
-  :is(.table-col-btn, .table-row-btn, .table-col-drag-handle:hover, .table-row-drag-handle:hover) {
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
+  :is(
+    .table-col-btn,
+    .table-row-btn,
+    .table-col-drag-handle:hover,
+    .table-row-drag-handle:hover
+  ) {
   transition: var(--animation);
   background-color: var(--table-btn-bg);
   --table-drag-handle-color: var(--table-btn-color);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   :is(tr:hover .table-row-drag-handle, th:hover .table-col-drag-handle) {
   opacity: 1;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) th {
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
+  th {
   background-color: var(--table-header-bg);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
-  th:first-child:not(:has(:is(.table-row-drag-handle, .table-col-drag-handle):hover)) {
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
+  th:first-child:not(
+    :has(:is(.table-row-drag-handle, .table-col-drag-handle):hover)
+  ) {
   border-top-left-radius: var(--table-radius);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   th:last-child:not(:has(.table-col-drag-handle:hover)) {
   border-top-right-radius: var(--table-radius);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(
-    .table-col-btn:hover
-  )
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  ):has(.table-col-btn:hover)
   th:last-child {
   border-top-right-radius: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   tr:last-child
   td:first-child {
   border-bottom-left-radius: var(--table-radius);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(
-    .table-row-btn:hover
-  )
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  ):has(.table-row-btn:hover)
   tr:last-child
   td:first-child {
   border-bottom-left-radius: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   tr:last-child
   td:last-child {
   border-bottom-right-radius: var(--table-radius);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(
-    :is(.table-col-btn, .table-row-btn):hover
-  )
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  ):has(:is(.table-col-btn, .table-row-btn):hover)
   tr:last-child
   td:last-child {
   border-bottom-right-radius: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   :is(th, td):not(:first-child) {
   border-left: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   tbody
   td {
   border-top: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   thead
   tr {
   background-color: var(--table-header-bg);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   tbody
   tr:nth-of-type(2n) {
   background-color: var(--table-alt-line-bg);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   tbody
   tr:nth-of-type(2n + 1) {
   background-color: var(--background-primary);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-cell-wrapper:has(> .cm-s-obsidian):not(:has(.image-embed)) {
   padding-inline: var(--size-4-1);
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-cell-wrapper:has(> .image-embed) {
   display: table-cell;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-cell-wrapper
   .image-embed {
   padding-block: 0;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-cell-wrapper:has(.is-live-preview .image-embed) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table)
+:is(
+    .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+    .markdown-rendered table
+  )
   .table-cell-wrapper:has(.is-live-preview .image-embed)
   [class="cm-line"] {
   display: none;
@@ -4385,7 +4912,10 @@ body.tag-plain {
 }
 
 body.tag-outline {
-  --tag-border-color: var(--setting-tag-outline, var(--accent-inactive)) !important;
+  --tag-border-color: var(
+    --setting-tag-outline,
+    var(--accent-inactive)
+  ) !important;
   --tag-border-width: var(--size-2-1) !important;
   --tag-color: var(--setting-tag-color, var(--accent-active)) !important;
 }
@@ -4447,12 +4977,24 @@ body {
   --h4-weight: 650;
   --h5-weight: 600;
   --h6-weight: 600;
-  --h1-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h1-size));
-  --h2-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h2-size));
-  --h3-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h3-size));
-  --h4-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h4-size));
-  --h5-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h5-size));
-  --h6-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h6-size));
+  --h1-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h1-size)
+  );
+  --h2-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h2-size)
+  );
+  --h3-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h3-size)
+  );
+  --h4-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h4-size)
+  );
+  --h5-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h5-size)
+  );
+  --h6-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h6-size)
+  );
   --h1-font: var(--setting-h1-font, var(--font-text));
   --h2-font: var(--setting-h2-font, var(--font-text));
   --h3-font: var(--setting-h3-font, var(--font-text));
@@ -4542,30 +5084,50 @@ body:is(:not(.css-settings-manager), .heading-level-enable)
 }
 body:is(:not(.css-settings-manager), .heading-level-enable)
   :is(
-    div.markdown-reading-view > div > div > div.is-collapsed > :is(h1, h2, h3, h4, h5, h6),
-    .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header:has(> .cm-foldPlaceholder)
+    div.markdown-reading-view
+      > div
+      > div
+      > div.is-collapsed
+      > :is(h1, h2, h3, h4, h5, h6),
+    .markdown-source-view.mod-cm6.is-live-preview
+      .HyperMD-header:has(> .cm-foldPlaceholder)
   )::before {
   opacity: 0.9;
   text-decoration: underline 0.1rem;
 }
 body:is(:not(.css-settings-manager), .heading-level-enable).heading-level-fix
   :is(
-    div.markdown-reading-view > div > div > div:not(.is-collapsed) > :is(h1, h2, h3, h4, h5, h6),
-    .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header:not(:has(> .cm-foldPlaceholder))
+    div.markdown-reading-view
+      > div
+      > div
+      > div:not(.is-collapsed)
+      > :is(h1, h2, h3, h4, h5, h6),
+    .markdown-source-view.mod-cm6.is-live-preview
+      .HyperMD-header:not(:has(> .cm-foldPlaceholder))
   )::before {
   opacity: 0.4;
 }
 body:is(:not(.css-settings-manager), .heading-level-enable).heading-level-fix
   :is(
-    div.markdown-reading-view > div > div > div:not(.is-collapsed) > :is(h1, h2, h3, h4, h5, h6),
-    .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header:not(:has(> .cm-foldPlaceholder))
+    div.markdown-reading-view
+      > div
+      > div
+      > div:not(.is-collapsed)
+      > :is(h1, h2, h3, h4, h5, h6),
+    .markdown-source-view.mod-cm6.is-live-preview
+      .HyperMD-header:not(:has(> .cm-foldPlaceholder))
   ):not(:hover)::before {
   color: var(--text-muted);
 }
 body:is(:not(.css-settings-manager), .heading-level-enable).heading-level-fix
   :is(
-    div.markdown-reading-view > div > div > div:not(.is-collapsed) > :is(h1, h2, h3, h4, h5, h6),
-    .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header:not(:has(> .cm-foldPlaceholder))
+    div.markdown-reading-view
+      > div
+      > div
+      > div:not(.is-collapsed)
+      > :is(h1, h2, h3, h4, h5, h6),
+    .markdown-source-view.mod-cm6.is-live-preview
+      .HyperMD-header:not(:has(> .cm-foldPlaceholder))
   ):hover::before {
   opacity: 1;
 }
@@ -4693,7 +5255,8 @@ body:is(:not(.css-settings-manager), .heading-level-enable)
   > :is(h1, h2, h3, h4, h5, h6)::before {
   left: calc(-1 * var(--size-4-6)) !important;
 }
-body:is(:not(.css-settings-manager), .heading-level-enable) .heading-collapse-indicator {
+body:is(:not(.css-settings-manager), .heading-level-enable)
+  .heading-collapse-indicator {
   position: absolute;
   z-index: 99;
   height: var(--size-4-4);
@@ -4704,7 +5267,9 @@ body:is(:not(.css-settings-manager), .heading-level-enable) .heading-collapse-in
   padding: 0 !important;
   --cursor: pointer;
 }
-body:is(:not(.css-settings-manager), .heading-level-enable) .heading-collapse-indicator svg {
+body:is(:not(.css-settings-manager), .heading-level-enable)
+  .heading-collapse-indicator
+  svg {
   display: none;
 }
 body:is(:not(.css-settings-manager), .heading-level-enable) .HyperMD-header {
@@ -4742,9 +5307,15 @@ body.heading-h1-underline :is(h1, .HyperMD-header-1)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h1-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h1-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h1-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h1-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h1-underline h1::after {
   left: 0;
@@ -4756,7 +5327,8 @@ body.heading-h1-underline .vertical-tab-content h1 {
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
 }
-body.heading-h1-underline.heading-underline-thin :is(h1, .HyperMD-header-1)::after {
+body.heading-h1-underline.heading-underline-thin
+  :is(h1, .HyperMD-header-1)::after {
   height: var(--size-2-1);
 }
 
@@ -4774,9 +5346,15 @@ body.heading-h2-underline :is(h2, .HyperMD-header-2)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h2-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h2-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h2-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h2-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h2-underline h2::after {
   left: 0;
@@ -4788,7 +5366,8 @@ body.heading-h2-underline .vertical-tab-content h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
 }
-body.heading-h2-underline.heading-underline-thin :is(h2, .HyperMD-header-2)::after {
+body.heading-h2-underline.heading-underline-thin
+  :is(h2, .HyperMD-header-2)::after {
   height: var(--size-2-1);
 }
 
@@ -4806,9 +5385,15 @@ body.heading-h3-underline :is(h3, .HyperMD-header-3)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h3-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h3-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h3-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h3-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h3-underline h3::after {
   left: 0;
@@ -4820,7 +5405,8 @@ body.heading-h3-underline .vertical-tab-content h3 {
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
 }
-body.heading-h3-underline.heading-underline-thin :is(h3, .HyperMD-header-3)::after {
+body.heading-h3-underline.heading-underline-thin
+  :is(h3, .HyperMD-header-3)::after {
   height: var(--size-2-1);
 }
 
@@ -4838,9 +5424,15 @@ body.heading-h4-underline :is(h4, .HyperMD-header-4)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h4-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h4-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h4-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h4-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h4-underline h4::after {
   left: 0;
@@ -4852,7 +5444,8 @@ body.heading-h4-underline .vertical-tab-content h4 {
   font-size: var(--h4-size);
   font-weight: var(--h4-weight);
 }
-body.heading-h4-underline.heading-underline-thin :is(h4, .HyperMD-header-4)::after {
+body.heading-h4-underline.heading-underline-thin
+  :is(h4, .HyperMD-header-4)::after {
   height: var(--size-2-1);
 }
 
@@ -4870,9 +5463,15 @@ body.heading-h5-underline :is(h5, .HyperMD-header-5)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h5-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h5-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h5-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h5-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h5-underline h5::after {
   left: 0;
@@ -4884,7 +5483,8 @@ body.heading-h5-underline .vertical-tab-content h5 {
   font-size: var(--h5-size);
   font-weight: var(--h5-weight);
 }
-body.heading-h5-underline.heading-underline-thin :is(h5, .HyperMD-header-5)::after {
+body.heading-h5-underline.heading-underline-thin
+  :is(h5, .HyperMD-header-5)::after {
   height: var(--size-2-1);
 }
 
@@ -4902,9 +5502,15 @@ body.heading-h6-underline :is(h6, .HyperMD-header-6)::after {
   height: var(--size-4-1);
   width: 100%;
   top: 50%;
-  transform: translateY(max(var(--h6-size) * var(--line-height-normal) * 0.3, var(--size-4-3)));
+  transform: translateY(
+    max(var(--h6-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
   border-radius: var(--size-2-1);
-  background-image: linear-gradient(to right, var(--h6-color) 30%, transparent 70%);
+  background-image: linear-gradient(
+    to right,
+    var(--h6-color) 30%,
+    transparent 70%
+  );
 }
 body.heading-h6-underline h6::after {
   left: 0;
@@ -4916,7 +5522,8 @@ body.heading-h6-underline .vertical-tab-content h6 {
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
 }
-body.heading-h6-underline.heading-underline-thin :is(h6, .HyperMD-header-6)::after {
+body.heading-h6-underline.heading-underline-thin
+  :is(h6, .HyperMD-header-6)::after {
   height: var(--size-2-1);
 }
 
@@ -5105,7 +5712,8 @@ input.metadata-property-key-input,
   padding-block: var(--size-2-1);
 }
 
-.metadata-property:not([data-property-key="tags"]) .metadata-property-key-input {
+.metadata-property:not([data-property-key="tags"])
+  .metadata-property-key-input {
   padding-block: var(--size-2-3);
 }
 
@@ -5170,11 +5778,21 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 }
 
 .theme-light {
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 24%), 24%);
+  --calendar-weekend-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 24%),
+    24%
+  );
 }
 
 .theme-dark {
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 24%), 24%);
+  --calendar-weekend-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 24%),
+    24%
+  );
 }
 
 #calendar-container {
@@ -5299,7 +5917,8 @@ body #calendar-container .day {
   -webkit-mask-size: unset;
   background-color: var(--button-gray-1);
 }
-:is(.excalidraw, .excalidraw.theme--dark) :is(.Island, .mobile-misc-tools-container) {
+:is(.excalidraw, .excalidraw.theme--dark)
+  :is(.Island, .mobile-misc-tools-container) {
   backdrop-filter: blur(var(--size-2-3));
 }
 .excalidraw .popover {
@@ -5440,7 +6059,9 @@ body.link-icon
   font-family: var(--font-monospace);
 }
 
-body.back-blur-title-bar .workspace-leaf-content[data-type="diff-view"] .d2h-file-diff {
+body.back-blur-title-bar
+  .workspace-leaf-content[data-type="diff-view"]
+  .d2h-file-diff {
   padding-top: var(--size-4-8);
 }
 
@@ -5476,8 +6097,14 @@ img.banner-image {
 /* #region kanban */
 body {
   --kanban-item-color: var(--setting-kanban-item-color, var(--text-normal));
-  --kanban-item-bg: var(--setting-kanban-item-bg, hsl(var(--background-primary-hsl)));
-  --kanban-board-bg: var(--setting-kanban-board-bg, hsl(var(--background-secondary-hsl)));
+  --kanban-item-bg: var(
+    --setting-kanban-item-bg,
+    hsl(var(--background-primary-hsl))
+  );
+  --kanban-board-bg: var(
+    --setting-kanban-board-bg,
+    hsl(var(--background-secondary-hsl))
+  );
 }
 
 :is(.kanban-plugin, .kanban-plugin__item, .kanban-plugin__lane) button {
@@ -5621,7 +6248,8 @@ body {
   margin-top: 0;
   translate: 0 -50%;
 }
-.kanban-plugin__board-settings-modal .choices[data-type*="select-one"].is-open:after {
+.kanban-plugin__board-settings-modal
+  .choices[data-type*="select-one"].is-open:after {
   margin-top: 0;
 }
 
@@ -5636,7 +6264,9 @@ body.search-internal-enable .kanban-plugin__search-wrapper {
   top: var(--size-2-3);
   right: var(--size-2-3);
 }
-body.search-internal-enable .kanban-plugin__search-wrapper a[aria-label="Cancel"] {
+body.search-internal-enable
+  .kanban-plugin__search-wrapper
+  a[aria-label="Cancel"] {
   padding: var(--size-4-1);
   margin-left: var(--size-2-2);
 }
@@ -5698,7 +6328,8 @@ body.dv-enable .cm-embed-block:has(.dataview) {
 .workspace-leaf-content[data-type="recent-files"] .nav-file-title.is-active {
   background-color: var(--accent-active);
 }
-.workspace-leaf-content[data-type="recent-files"] .nav-file-title.is-active::after {
+.workspace-leaf-content[data-type="recent-files"]
+  .nav-file-title.is-active::after {
   content: none;
 }
 .workspace-leaf-content[data-type="recent-files"] .recent-files-file-delete {
@@ -5872,7 +6503,9 @@ body:is(.modal-toggle-round, .modal-toggle-thin) .checkbox-container {
   background-color: var(--color-base-20);
   cursor: pointer;
 }
-body:is(.modal-toggle-round, .modal-toggle-thin) .checkbox-container input[type="checkbox"] {
+body:is(.modal-toggle-round, .modal-toggle-thin)
+  .checkbox-container
+  input[type="checkbox"] {
   display: none;
 }
 
@@ -5953,11 +6586,14 @@ body.modal-toggle-thin .checkbox-container.is-enabled:active::after {
   left: calc(2 * var(--toggle-border-width));
 }
 
-body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile) .modal-container {
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container {
   --modal-header-height: var(--size-4-12);
   --top-search-right: var(--size-4-12);
 }
-body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile) .modal-container .mod-settings {
+body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
+  .modal-container
+  .mod-settings {
   container-type: inline-size;
 }
 body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
@@ -6041,9 +6677,13 @@ body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
   top: calc(var(--size-2-1) * -1);
   left: var(--size-4-2);
   transform: translateY(
-    calc((var(--modal-header-height) - var(--input-height)) / 2 - var(--size-2-1))
+    calc(
+      (var(--modal-header-height) - var(--input-height)) / 2 - var(--size-2-1)
+    )
   );
-  width: calc(clamp(180px, var(--modal-width) / 4, 250px) - var(--size-4-3) * 1);
+  width: calc(
+    clamp(180px, var(--modal-width) / 4, 250px) - var(--size-4-3) * 1
+  );
 }
 body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
   .modal-container
@@ -6075,7 +6715,9 @@ body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
   .setting-item-control {
   top: calc(var(--size-2-1) * -1);
   transform: translateY(
-    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+    calc(
+      (var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1)
+    )
   );
   right: var(--top-search-right);
   position: absolute;
@@ -6116,7 +6758,9 @@ body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
   position: absolute;
   top: calc(var(--size-2-1) * -1);
   transform: translateY(
-    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+    calc(
+      (var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1)
+    )
   );
   right: var(--top-search-right);
 }
@@ -6128,7 +6772,9 @@ body:is(:not(.css-settings-manager), .modal-header):not(.is-mobile)
   position: absolute;
   top: calc(var(--size-2-1) * -1);
   transform: translateY(
-    calc((var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1))
+    calc(
+      (var(--modal-header-height) - var(--input-height)) / 2 + var(--size-2-1)
+    )
   );
   right: var(--top-search-right);
 }
@@ -6199,7 +6845,11 @@ button {
   padding: 1px var(--size-4-2);
   transition: var(--animation);
 }
-.modal-container .mod-settings .modal-content .setting-hotkey .setting-hotkey-icon {
+.modal-container
+  .mod-settings
+  .modal-content
+  .setting-hotkey
+  .setting-hotkey-icon {
   margin-right: calc(-1 * var(--size-4-1));
 }
 .modal-container .mod-settings .modal-content .setting-hotkey:hover {
@@ -6209,10 +6859,17 @@ button {
   color: var(--text-faint);
   background-color: var(--frame-background-color);
 }
-.modal-container .mod-settings .modal-content .setting-hotkey:not(.has-conflict):not(.mod-active) {
+.modal-container
+  .mod-settings
+  .modal-content
+  .setting-hotkey:not(.has-conflict):not(.mod-active) {
   background-color: var(--code-background);
 }
-.modal-container .mod-settings .modal-content .setting-item-heading .setting-item-name {
+.modal-container
+  .mod-settings
+  .modal-content
+  .setting-item-heading
+  .setting-item-name {
   font-weight: bold;
   font-size: var(--font-ui-medium);
 }
@@ -6225,7 +6882,11 @@ body.setting-group-title.theme-dark
   filter: brightness(1.4);
 }
 
-body.setting-group-title .modal-container .mod-settings .modal-content .vertical-tab-header-group {
+body.setting-group-title
+  .modal-container
+  .mod-settings
+  .modal-content
+  .vertical-tab-header-group {
   padding-bottom: 0;
 }
 body.setting-group-title
@@ -6335,8 +6996,10 @@ body:not(.is-mobile):not(.mod-macos)
 body:not(.is-mobile):not(.mod-macos).scrollbar-hover-accent {
   --setting-scrollbar-hover: hsla(var(--color-accent-hsl), 40%);
 }
-body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand ::-webkit-scrollbar-thumb:hover,
-body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand ::-webkit-scrollbar-thumb:active {
+body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand
+  ::-webkit-scrollbar-thumb:hover,
+body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand
+  ::-webkit-scrollbar-thumb:active {
   border-width: var(--size-2-1) !important;
 }
 body:not(.is-mobile):not(.mod-macos) ::-webkit-scrollbar {
@@ -6367,7 +7030,8 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .vertical-tab-header,
     .vertical-tab-content,
     .nav-files-container,
-    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"]) .view-content,
+    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"])
+      .view-content,
     .search-result-container,
     .git-view-body,
     .suggestion-container .suggestion,
@@ -6384,7 +7048,8 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     pre code,
     .workspace-leaf-content[data-type="calendar"] .view-content,
     .janitor-scan-results,
-    .excalidraw-wrapper :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
+    .excalidraw-wrapper
+      :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
     .excalidraw-contextMenuContainer .popover,
     .kanban-plugin__board,
     .kanban-plugin__lane-items,
@@ -6397,7 +7062,8 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .vertical-tab-header,
     .vertical-tab-content,
     .nav-files-container,
-    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"]) .view-content,
+    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"])
+      .view-content,
     .search-result-container,
     .git-view-body,
     .suggestion-container .suggestion,
@@ -6414,7 +7080,8 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     pre code,
     .workspace-leaf-content[data-type="calendar"] .view-content,
     .janitor-scan-results,
-    .excalidraw-wrapper :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
+    .excalidraw-wrapper
+      :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
     .excalidraw-contextMenuContainer .popover,
     .kanban-plugin__board,
     .kanban-plugin__lane-items,
@@ -6422,15 +7089,19 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
   ):hover {
   --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
 }
-body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable textarea {
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea {
   color: transparent;
   transition: color var(--animation);
   -webkit-text-fill-color: var(--text-normal);
 }
-body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable textarea:hover {
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea:hover {
   color: hsla(var(--color-accent-hsl), 24%);
 }
-body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable textarea * {
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea
+  * {
   -webkit-text-fill-color: initial;
 }
 body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
@@ -6469,10 +7140,16 @@ body.tab-float .mod-root .workspace-tab-header.is-active {
   --tab-radius-active: var(--size-2-3);
   box-shadow: var(--shadow-s);
 }
-body.tab-float .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+body.tab-float
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
   padding: var(--size-2-1);
 }
-body.tab-float .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+body.tab-float
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button:hover {
   background-color: var(--frame-background-color);
 }
 body.tab-float
@@ -6484,8 +7161,12 @@ body.tab-float
 body.tab-float.theme-dark .mod-root .workspace-tab-header.is-active {
   box-shadow: none;
 }
-body.tab-float .workspace-split.mod-root .workspace-tab-header.is-active::before,
-body.tab-float .workspace-split.mod-root .workspace-tab-header.is-active::after {
+body.tab-float
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active::before,
+body.tab-float
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active::after {
   box-shadow: none;
 }
 body.tab-float .workspace-tab-header-new-tab {
@@ -6506,7 +7187,10 @@ body.tab-float .workspace-tab-header-new-tab {
   cursor: text;
 }
 
-body.tab-show-close-all .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button,
+body.tab-show-close-all
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button,
 body.tab-show-close-part
   .mod-root
   .workspace-tab-header:not(.is-active)
@@ -6542,7 +7226,9 @@ body.tab-title-bar-text-hidden
   transition-delay: 0s;
 }
 
-body.tab-title-bar-round .workspace-leaf-content:not([data-type="excalidraw"]) .view-header {
+body.tab-title-bar-round
+  .workspace-leaf-content:not([data-type="excalidraw"])
+  .view-header {
   margin: var(--size-4-1);
   margin-bottom: 0;
   padding: 0 var(--size-2-3) !important;
@@ -6621,14 +7307,20 @@ body {
 
 /* #endregion tab */
 /* #region titlebar */
-body.titlebar-button-style.is-hidden-frameless:is(.mod-windows, .mod-linux) .titlebar-button {
+body.titlebar-button-style.is-hidden-frameless:is(.mod-windows, .mod-linux)
+  .titlebar-button {
   padding: 0 14px;
 }
-body.titlebar-button-style.is-hidden-frameless:is(.mod-windows, .mod-linux) .titlebar-button svg {
+body.titlebar-button-style.is-hidden-frameless:is(.mod-windows, .mod-linux)
+  .titlebar-button
+  svg {
   width: 100%;
   height: 32%;
 }
-body.titlebar-button-style.is-frameless:not(.is-hidden-frameless):is(.mod-windows, .mod-linux)
+body.titlebar-button-style.is-frameless:not(.is-hidden-frameless):is(
+    .mod-windows,
+    .mod-linux
+  )
   .titlebar-button
   svg:not([class*="logo"]) {
   width: 100%;
@@ -6670,7 +7362,11 @@ body.titlebar-button-style .workspace-tab-header-new-tab {
 
 /* 参考 minimal theme */
 :is(body, body.is-focused)
-  :is(.mod-top .workspace-tab-header-container, .sidebar-toggle-button.mod-left, .titlebar),
+  :is(
+    .mod-top .workspace-tab-header-container,
+    .sidebar-toggle-button.mod-left,
+    .titlebar
+  ),
 :is(body, body.is-focused) .workspace-ribbon.mod-left::before {
   --titlebar-container: var(--frame-outline-color);
   --frame-divider-color: var(--frame-outline-color);
@@ -6692,19 +7388,39 @@ body.titlebar-button-style .workspace-tab-header-new-tab {
   color: var(--text-normal);
 }
 
-.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left .clickable-icon,
-.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right .clickable-icon {
+.workspace.is-left-sidedock-open
+  .sidebar-toggle-button.mod-left
+  .clickable-icon,
+.workspace.is-right-sidedock-open
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
   color: var(--color-accent);
 }
 
 body.titlebar-colorful.theme-light {
-  --frame-background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 18%));
-  --frame-outline-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%));
-  --frame-muted-color: hsl(var(--accent-h), calc(var(--accent-s) - 20%), ar(--accent-l));
+  --frame-background-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 18%)
+  );
+  --frame-outline-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 23.5%)
+  );
+  --frame-muted-color: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 20%),
+    ar(--accent-l)
+  );
 }
 body.titlebar-colorful.theme-dark {
   --frame-background-color: hsl(var(--accent-h), 12%, 38%);
-  --frame-outline-color: hsl(calc(var(--accent-h) - 6), calc(var(--accent-s) + 12%), 40%);
+  --frame-outline-color: hsl(
+    calc(var(--accent-h) - 6),
+    calc(var(--accent-s) + 12%),
+    40%
+  );
   --frame-muted-color: hsl(
     var(--accent-h),
     calc(var(--accent-s) - 20%),
@@ -6721,7 +7437,8 @@ body.titlebar-colorful
   .clickable-icon {
   color: var(--text-on-accent);
 }
-body.titlebar-colorful :is(.document-search-close-button, .modal-close-button)::before {
+body.titlebar-colorful
+  :is(.document-search-close-button, .modal-close-button)::before {
   background-color: var(--text-normal);
 }
 
@@ -6800,7 +7517,8 @@ body.status-bar-enable.status-bar-style-float.status-bar-scroll .status-bar {
   right: 0;
   padding: var(--size-4-1);
 }
-body.status-bar-enable.status-bar-style-float.status-bar-scroll .status-bar:hover {
+body.status-bar-enable.status-bar-style-float.status-bar-scroll
+  .status-bar:hover {
   transform: translateX(0);
   transition-delay: 0s;
 }
@@ -6918,7 +7636,8 @@ body.titlebar-button-style.is-maximized .mod-maximize svg {
     body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title,
     body.link-icon
       :is(
-        :is(.markdown-source-view, .markdown-preview-view) a.internal-link:not(.is-unresolved),
+        :is(.markdown-source-view, .markdown-preview-view)
+          a.internal-link:not(.is-unresolved),
         .cm-hmd-internal-link .cm-underline
       )
   )::before {
@@ -6937,7 +7656,8 @@ body.link-icon:not(.link-click-to-edit-in-live-preview)
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></g></svg>');
 }
 
-body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title:is(.is-unsupported)::before {
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(.is-unsupported)::before {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3c0 1.3-2 2-2 2m0 4h.01" /></g></svg>');
 }
 
@@ -6994,7 +7714,11 @@ body:is(:not(.css-settings-manager), .explorer-icon)
 }
 
 body:is(:not(.css-settings-manager), .explorer-icon)
-  .nav-file-title:is([data-path$="zip"], [data-path$="7z"], [data-path$="tar"])::before {
+  .nav-file-title:is(
+    [data-path$="zip"],
+    [data-path$="7z"],
+    [data-path$="tar"]
+  )::before {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 22V4c0-.5.2-1 .6-1.4C5 2.2 5.5 2 6 2h8.5L20 7.5V20c0 .5-.2 1-.6 1.4c-.4.4-.9.6-1.4.6h-2"/><path d="M14 2v6h6"/><circle cx="10" cy="20" r="2"/><path d="M10 7V6m0 6v-1m0 7v-2"/></g></svg>');
 }
 
@@ -7048,7 +7772,8 @@ body.message-modify:not(.color-active-default).theme-light {
   --background-modifier-message: hsl(
     var(
       --setting-message-bg,
-      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%) calc(var(--accent-l) + 4%)
+      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)
+        calc(var(--accent-l) + 4%)
     )
   );
 }
@@ -7056,7 +7781,8 @@ body.message-modify:not(.color-active-default).theme-dark {
   --background-modifier-message: hsl(
     var(
       --setting-message-bg,
-      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%) calc(var(--accent-l) - 12%)
+      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)
+        calc(var(--accent-l) - 12%)
     )
   );
 }
@@ -7072,7 +7798,9 @@ body.message-tooltip-hide-arrow .tooltip-arrow {
     --bg-opacity: 0.75;
   }
   body:is(.bg-static, .bg-live) .workspace-split.mod-root,
-  body:is(.bg-static, .bg-live) .workspace-split.mod-root .workspace-leaf-content {
+  body:is(.bg-static, .bg-live)
+    .workspace-split.mod-root
+    .workspace-leaf-content {
     background-color: hsla(var(--editor-bg), calc(var(--bg-opacity) / 2));
   }
   body:is(.bg-static, .bg-live) :not(.mod-root) .workspace-leaf {
@@ -7141,7 +7869,10 @@ https://github.com/sponsors/kepano
   .workspace-tab-header-container {
   padding-left: 0;
 }
-.labeled-nav.mod-macos .mod-left-split .mod-top .workspace-tab-header-container:before,
+.labeled-nav.mod-macos
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header-container:before,
 .labeled-nav.mod-macos.is-hidden-frameless:not(.is-fullscreen)
   .mod-left-split
   .mod-top
@@ -7171,8 +7902,10 @@ https://github.com/sponsors/kepano
   .workspace-tab-header-container:before {
   border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
 }
-.labeled-nav:not(.is-hidden-frameless) .workspace-ribbon.mod-left:not(.is-collapsed),
-.labeled-nav.mod-macos:not(.hider-ribbon) .workspace-ribbon.mod-left:not(.is-collapsed),
+.labeled-nav:not(.is-hidden-frameless)
+  .workspace-ribbon.mod-left:not(.is-collapsed),
+.labeled-nav.mod-macos:not(.hider-ribbon)
+  .workspace-ribbon.mod-left:not(.is-collapsed),
 .labeled-nav.colorful-frame.is-hidden-frameless:not(.is-fullscreen)
   .workspace-ribbon.mod-left:not(.is-collapsed) {
   --tab-outline-width: 1px;
@@ -7185,7 +7918,9 @@ https://github.com/sponsors/kepano
   top: 0;
   content: " ";
 }
-.labeled-nav.hider-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
+.labeled-nav.hider-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(
+    .is-popout-window
+  )
   .mod-left-split:not(.is-sidedock-collapsed)
   .workspace-tabs.mod-top-left-space
   .workspace-tab-header-container {
@@ -7249,7 +7984,10 @@ https://github.com/sponsors/kepano
   border: none;
   height: auto;
 }
-.labeled-nav .mod-left-split .mod-top .workspace-tab-header.is-active:not(:hover) {
+.labeled-nav
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active:not(:hover) {
   background-color: transparent;
 }
 .labeled-nav .mod-left-split .mod-top .workspace-tab-header.is-active,
@@ -7261,13 +7999,20 @@ https://github.com/sponsors/kepano
   --tab-text-color-focused-active-current: var(--text-normal);
   --icon-color: var(--text-normal);
 }
-.labeled-nav .mod-left-split .mod-top .workspace-tab-header .workspace-tab-header-inner {
+.labeled-nav
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header
+  .workspace-tab-header-inner {
   gap: var(--size-2-3);
   padding: var(--size-4-1) var(--size-4-2);
   box-shadow: none;
   border: none;
 }
-.labeled-nav .mod-left-split .mod-top .workspace-tab-header.has-active-menu:hover,
+.labeled-nav
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.has-active-menu:hover,
 .labeled-nav .mod-left-split .mod-top .workspace-tab-header.is-active:hover {
   background-color: transparent;
 }
@@ -7283,7 +8028,11 @@ https://github.com/sponsors/kepano
   .workspace-tab-header-inner {
   background-color: var(--nav-item-background-hover);
 }
-.labeled-nav .mod-left-split .mod-top .workspace-tab-header:hover .workspace-tab-header-inner-icon,
+.labeled-nav
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header:hover
+  .workspace-tab-header-inner-icon,
 .labeled-nav
   .mod-left-split
   .mod-top
@@ -7326,7 +8075,8 @@ body {
   margin-right: var(--size-4-3);
   transform: translateY(var(--size-4-1));
 }
-.workspace-leaf-content[data-type="tag"] .tree-item-self:has(.tree-item-icon)::before {
+.workspace-leaf-content[data-type="tag"]
+  .tree-item-self:has(.tree-item-icon)::before {
   background-color: var(--folder-color);
 }
 .workspace-leaf-content[data-type="tag"] .tree-item-icon.collapse-icon {
@@ -7341,10 +8091,13 @@ body {
 .workspace-leaf-content[data-type="bookmarks"] {
   --nav-item-color-active: var(--text-on-accent);
 }
-.workspace-leaf-content[data-type="bookmarks"] .tree-item-self.mod-collapsible .tree-item-icon {
+.workspace-leaf-content[data-type="bookmarks"]
+  .tree-item-self.mod-collapsible
+  .tree-item-icon {
   margin-right: var(--size-4-1);
 }
-.workspace-leaf-content[data-type="bookmarks"] .tree-item-self:not(.mod-collapsible) {
+.workspace-leaf-content[data-type="bookmarks"]
+  .tree-item-self:not(.mod-collapsible) {
   padding-left: var(--size-2-3);
 }
 .workspace-leaf-content[data-type="bookmarks"]
@@ -7354,7 +8107,9 @@ body {
   color: var(--accent-active);
   width: calc(1.3 * var(--size-4-4));
 }
-.workspace-leaf-content[data-type="bookmarks"] .tree-item-self.is-active .tree-item-icon {
+.workspace-leaf-content[data-type="bookmarks"]
+  .tree-item-self.is-active
+  .tree-item-icon {
   color: var(--nav-item-color-active);
 }
 
@@ -7362,7 +8117,10 @@ body {
 /* #region graph */
 body {
   --graph-node: var(--setting-graph-node, var(--text-muted));
-  --graph-node-unresolved: var(--setting-graph-node-unresolved, var(--text-faint));
+  --graph-node-unresolved: var(
+    --setting-graph-node-unresolved,
+    var(--text-faint)
+  );
   --graph-node-focused: var(--setting-graph-node-focus, var(--accent-active));
 }
 
@@ -7392,20 +8150,27 @@ body {
   line-height: var(--outline-item-height);
 }
 
-.workspace-leaf-content[data-type="outline"] .tree-item-self.is-active > .tree-item-inner {
+.workspace-leaf-content[data-type="outline"]
+  .tree-item-self.is-active
+  > .tree-item-inner {
   color: var(--text-on-accent);
 }
 
 body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item {
   position: relative;
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-self {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item-self {
   position: relative;
   margin-bottom: 0;
   white-space: nowrap;
   margin-top: -1px;
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-self .tree-item-inner {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item-self
+  .tree-item-inner {
   padding-left: var(--size-4-1);
 }
 body.outline-enable
@@ -7447,7 +8212,9 @@ body.outline-enable
   .tree-item-icon::before {
   box-shadow: 0 0 0 var(--size-4-1) var(--background-modifier-hover);
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item::after {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item::after {
   content: "";
   width: var(--outline-guideline-width);
   position: absolute;
@@ -7456,11 +8223,15 @@ body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item::aft
   left: -14px;
   height: calc(100% - var(--outline-item-height) + var(--size-4-8));
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-icon {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item-icon {
   cursor: pointer;
   transform: translateY(8px);
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-icon::before {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item-icon::before {
   width: var(--size-4-2);
   height: var(--size-4-2);
   background-color: var(--outline-guideline-color-alt);
@@ -7471,7 +8242,11 @@ body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-icon
   transform: translateY(-50%);
   z-index: 10;
 }
-body.outline-enable .workspace-leaf-content[data-type="outline"] .tree-item-icon svg path {
+body.outline-enable
+  .workspace-leaf-content[data-type="outline"]
+  .tree-item-icon
+  svg
+  path {
   display: none;
 }
 body.outline-enable
@@ -7520,8 +8295,10 @@ body.outline-enable
   bottom: calc(100% - (var(--outline-item-height) + var(--size-4-2)) / 2 - 1px);
   width: var(--size-4-6);
   border-bottom-left-radius: var(--radius-m);
-  border-bottom: var(--outline-guideline-width) solid var(--outline-guideline-color);
-  border-left: var(--outline-guideline-width) solid var(--outline-guideline-color);
+  border-bottom: var(--outline-guideline-width) solid
+    var(--outline-guideline-color);
+  border-left: var(--outline-guideline-width) solid
+    var(--outline-guideline-color);
   z-index: 9;
 }
 body.outline-enable
@@ -7538,7 +8315,10 @@ body {
   --file-folding-offset: 28px;
   --folder-color-rgb: 245, 180, 0;
   --folder-color: rgb(var(--setting-color-dirs, var(--folder-color-rgb)));
-  --folder-hover-color: rgba(var(--setting-color-dirs, var(--folder-color-rgb)), 0.24);
+  --folder-hover-color: rgba(
+    var(--setting-color-dirs, var(--folder-color-rgb)),
+    0.24
+  );
   --nav-item-size: calc(var(--size-4-4) * 0.9);
   --line-height-tight: 1.6;
   --nav-indentation-guide-color: hsla(var(--accent-h), 20%, 50%, 0.2);
@@ -7557,7 +8337,8 @@ body {
   color: var(--text-on-accent);
 }
 
-body:not(.is-grabbing) :is(.nav-file-title.is-being-dragged, .nav-folder-title.is-being-dragged),
+body:not(.is-grabbing)
+  :is(.nav-file-title.is-being-dragged, .nav-folder-title.is-being-dragged),
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged {
   background-color: var(--accent-inactive);
@@ -7636,7 +8417,9 @@ body:is(:not(.css-settings-manager), .explorer-icon)
 body:is(:not(.css-settings-manager), .explorer-icon)
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
-  .nav-file-title:not([data-path$="excalidraw.md"]):not([data-path$="excalidraw"])::before {
+  .nav-file-title:not([data-path$="excalidraw.md"]):not(
+    [data-path$="excalidraw"]
+  )::before {
   content: "";
   position: absolute;
   width: var(--size-4-4);
@@ -7735,7 +8518,8 @@ body:is(:not(.css-settings-manager), .explorer-icon)
   background: var(--accent-inactive);
 }
 
-body.explorer-title-wrap :is(.nav-file-title-content, .nav-folder-title-content) {
+body.explorer-title-wrap
+  :is(.nav-file-title-content, .nav-folder-title-content) {
   overflow: visible;
   white-space: pre-wrap;
 }
@@ -7746,8 +8530,10 @@ body.explorer-title-wrap :is(.nav-file-title-content, .nav-folder-title-content)
 /* #region [mobile] */
 .is-mobile {
   --input-border-width: 1px;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
 }
 .is-mobile:is(.bg-static, .bg-live) {
   --background-modifier-form-field: hsl(var(--background-primary-hsl));
