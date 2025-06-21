@@ -41,7 +41,7 @@ force-atomize:
   rm converted_app.css || true
   rm converted_app_extracted.css || true
   node convert.js ATOMIZE
-  npx prettier . --write
+  prettier . --write
 
 [private]
 fonts:
