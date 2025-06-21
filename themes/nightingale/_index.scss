@@ -9,6 +9,19 @@
 
 :root:root,
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --background-modifier-border: rgba(14, 210, 247, 0.05);
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #1e1e1e;
@@ -124,18 +137,7 @@ html[saved-theme="dark"] {
   --text-faint: rgba(122, 162, 247, 0.8);
   --text-highlight-bg: rgba(192, 205, 14, 0.8);
   --text-normal: #b7b7b7;
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 .darkmode {
@@ -525,6 +527,19 @@ body {
 /* START DARK */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --background-modifier-border: rgba(14, 210, 247, 0.05);
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #1e1e1e;
@@ -640,18 +655,7 @@ html {
   --text-faint: rgba(122, 162, 247, 0.8);
   --text-highlight-bg: rgba(192, 205, 14, 0.8);
   --text-normal: #b7b7b7;
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* CALLOUTS */

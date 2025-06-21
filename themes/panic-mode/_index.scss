@@ -9,6 +9,18 @@
 
 :root:root,
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--text-faint);
   --background-modifier-form-field: var(--background-primary);
   --background-primary: rgba(21, 30, 45, 1);
@@ -134,18 +146,7 @@ html[saved-theme="dark"] {
   --text-muted: #a1a1a1;
   --text-normal: rgb(224, 226, 213);
   --text-selection: rgba(80, 102, 130, 0.5);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 .darkmode {
@@ -447,6 +448,18 @@ body {
 /* START DARK */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--text-faint);
   --background-modifier-form-field: var(--background-primary);
   --background-primary: rgba(21, 30, 45, 1);
@@ -572,18 +585,7 @@ html {
   --text-muted: #a1a1a1;
   --text-normal: rgb(224, 226, 213);
   --text-selection: rgba(80, 102, 130, 0.5);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* CALLOUTS */

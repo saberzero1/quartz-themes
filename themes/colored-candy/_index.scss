@@ -9,6 +9,19 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --accent-l-closer: min(var(--accent-l), 40%);
   --accent-l-readable: max(var(--accent-l), 50%);
   --accent-minus-60: calc(var(--accent-h) - 60);
@@ -266,22 +279,24 @@ html[saved-theme="dark"] {
   );
   --text-muted: hsl(var(--accent-h), 15%, 68%);
   --text-normal: hsl(0, 0%, 85%);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-l-closer: max(var(--accent-l), 60%);
   --accent-l-readable: min(var(--accent-l), 35%);
   --accent-minus-60: calc(var(--accent-h) - 60);
@@ -547,18 +562,7 @@ html[saved-theme="light"] {
   );
   --text-muted: hsl(var(--accent-h), 15%, 33%);
   --text-normal: hsl(0, 0%, 13%);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 @font-face {
@@ -971,6 +975,19 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --accent-l-closer: min(var(--accent-l), 40%);
   --accent-l-readable: max(var(--accent-l), 50%);
   --accent-minus-60: calc(var(--accent-h) - 60);
@@ -1228,23 +1245,25 @@ html[saved-theme="dark"] {
   );
   --text-muted: hsl(var(--accent-h), 15%, 68%);
   --text-normal: hsl(0, 0%, 85%);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-l-closer: max(var(--accent-l), 60%);
   --accent-l-readable: min(var(--accent-l), 35%);
   --accent-minus-60: calc(var(--accent-h) - 60);
@@ -1510,18 +1529,7 @@ html[saved-theme="light"] {
   );
   --text-muted: hsl(var(--accent-h), 15%, 33%);
   --text-normal: hsl(0, 0%, 13%);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */

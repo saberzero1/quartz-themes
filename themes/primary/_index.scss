@@ -9,6 +9,19 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --accent-h: 31;
   --accent-l: 24%;
   --accent-s: 27%;
@@ -538,22 +551,24 @@ html[saved-theme="dark"] {
   --text-input-color: var(--color-d-gray-20);
   --text-muted: var(--color-d-gray-40);
   --text-normal: var(--color-d-gray-20);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-h: 31;
   --accent-l: 50%;
   --accent-s: 23%;
@@ -1077,18 +1092,7 @@ html[saved-theme="light"] {
   --text-input-color: var(--color-l-gray-130);
   --text-muted: var(--color-l-gray-100);
   --text-normal: var(--color-l-gray-130);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 @font-face {
@@ -1422,6 +1426,19 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
   --accent-h: 31;
   --accent-l: 24%;
   --accent-s: 27%;
@@ -1951,23 +1968,25 @@ html[saved-theme="dark"] {
   --text-input-color: var(--color-d-gray-20);
   --text-muted: var(--color-d-gray-40);
   --text-normal: var(--color-d-gray-20);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-h: 31;
   --accent-l: 50%;
   --accent-s: 23%;
@@ -2491,18 +2510,7 @@ html[saved-theme="light"] {
   --text-input-color: var(--color-l-gray-130);
   --text-muted: var(--color-l-gray-100);
   --text-normal: var(--color-l-gray-130);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */

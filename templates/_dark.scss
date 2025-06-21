@@ -1,8 +1,5 @@
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-
-  //%%DARK%%
-
   .callout {
     --callout-blend-mode: lighten;
   }
@@ -15,4 +12,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
+//%%DARK%%
+
 }

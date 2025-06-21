@@ -9,6 +9,18 @@
 
 :root:root,
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: #fd8bfd;
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #262335;
@@ -136,18 +148,7 @@ html[saved-theme="dark"] {
   font-weight: 300;
   opacity: 1;
   overflow: visible;
-  text-shadow: 0 0 0.5em #0000ff .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  text-shadow: 0 0 0.5em #0000ff;
 }
 
 .darkmode {
@@ -562,6 +563,18 @@ body {
 /* START DARK */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: #fd8bfd;
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #262335;
@@ -689,18 +702,7 @@ html {
   font-weight: 300;
   opacity: 1;
   overflow: visible;
-  text-shadow: 0 0 0.5em #0000ff .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  text-shadow: 0 0 0.5em #0000ff;
 }
 /* END DARK */
 /* CALLOUTS */

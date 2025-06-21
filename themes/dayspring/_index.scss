@@ -9,6 +9,19 @@
 
 :root:root,
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-h: 80;
   --accent-l: 45%;
   --accent-s: 45%;
@@ -154,18 +167,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--color-yellow-lightest);
   --text-muted: var(--color-base-60);
   --text-normal: var(--color-base-100);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 .darkmode {
@@ -474,6 +476,19 @@ body {
 /* START LIGHT */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
   --accent-h: 80;
   --accent-l: 45%;
   --accent-s: 45%;
@@ -619,18 +634,7 @@ html {
   --text-highlight-bg: var(--color-yellow-lightest);
   --text-muted: var(--color-base-60);
   --text-normal: var(--color-base-100);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */

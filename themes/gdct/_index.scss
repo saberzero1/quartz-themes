@@ -9,6 +9,18 @@
 
 :root:root,
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--text-faint);
   --background-modifier-form-field: var(--background-primary);
   --background-primary: rgb(254, 254, 254);
@@ -132,18 +144,7 @@ html[saved-theme="light"] {
   --text-muted: #828282;
   --text-normal: #27384b;
   --text-selection: rgba(232, 167, 165, 0.5);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 .darkmode {
@@ -445,6 +446,18 @@ body {
 /* START LIGHT */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--text-faint);
   --background-modifier-form-field: var(--background-primary);
   --background-primary: rgb(254, 254, 254);
@@ -568,18 +581,7 @@ html {
   --text-muted: #828282;
   --text-normal: #27384b;
   --text-selection: rgba(232, 167, 165, 0.5);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */

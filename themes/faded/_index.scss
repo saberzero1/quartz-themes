@@ -9,6 +9,18 @@
 
 :root:root,
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-primary: var(--custom-black-600);
   --background-primary-alt: var(--custom-black-800);
   --background-secondary: var(--custom-black-800);
@@ -202,18 +214,7 @@ html[saved-theme="dark"] {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 .darkmode {
@@ -626,6 +627,18 @@ body {
 /* START DARK */
 :root,
 html {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-primary: var(--custom-black-600);
   --background-primary-alt: var(--custom-black-800);
   --background-secondary: var(--custom-black-800);
@@ -819,18 +832,7 @@ html {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* CALLOUTS */

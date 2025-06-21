@@ -9,6 +9,18 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--rp-highlightMed);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-primary: var(--rp-surface);
@@ -136,22 +148,23 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--rp-highlight);
   --text-muted: var(--rp-muted);
   --text-normal: var(--rp-text);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--rp-highlightMed);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-primary: var(--rp-surface);
@@ -279,18 +292,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--rp-highlight);
   --text-muted: var(--rp-muted);
   --text-normal: var(--rp-text);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 
 @font-face {
@@ -702,6 +704,18 @@ body {
 /* START DARK */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
   --background-modifier-border: var(--rp-highlightMed);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-primary: var(--rp-surface);
@@ -829,23 +843,24 @@ html[saved-theme="dark"] {
   --text-highlight-bg: var(--rp-highlight);
   --text-muted: var(--rp-muted);
   --text-normal: var(--rp-text);
-  color-scheme: dark .callout {
-    --callout-blend-mode: lighten;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
+  color-scheme: dark;
 }
 /* END DARK */
 /* START LIGHT */
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
   --background-modifier-border: var(--rp-highlightMed);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-primary: var(--rp-surface);
@@ -973,18 +988,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: var(--rp-highlight);
   --text-muted: var(--rp-muted);
   --text-normal: var(--rp-text);
-  color-scheme: light .callout {
-    --callout-blend-mode: darken;
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
+  color-scheme: light;
 }
 /* END LIGHT */
 /* CALLOUTS */
