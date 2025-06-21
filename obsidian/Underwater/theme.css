@@ -1,7 +1,9 @@
 .theme-light,
 .theme-dark {
   /*Font*/
-  --font-text-theme: var(--font-text-override), "Lexend", "Inter", var(--font-default), sans-serif;
+  --font-text-theme:
+    var(--font-text-override), "Lexend", "Inter", var(--font-default),
+    sans-serif;
   --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
 
   /*COLORS*/
@@ -119,7 +121,8 @@
   --h5-size: 1em;
   --h6-size: 1em;
   --h6-variant: small-caps;
-  --headings-font: var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
+  --headings-font:
+    var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
   --h1-font: var(--headings-font);
   --h2-font: var(--headings-font);
   --h3-font: var(--headings-font);
@@ -871,7 +874,9 @@ body:not(is-mobile):not(.show-ribbon) .workspace {
   --tab-outline-color: var(--background-modifier-border);
 }
 /*vault switcher (v1.6) styling*/
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   border-radius: 8px;
   margin: 14px 14px 14px 0px;
   border: transparent;
@@ -1026,12 +1031,14 @@ body:not(.is-phone) .prompt-results {
 
 /*Dotted intendation*/
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) dashed var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) dashed
+    var(--nav-indentation-guide-color);
 }
 .markdown-rendered.show-indentation-guide li > ul::before,
 .markdown-rendered.show-indentation-guide li > ol::before,
 .markdown-source-view.mod-cm6 .cm-indent::before {
-  border-inline-end: var(--indentation-guide-width) dashed var(--indentation-guide-color);
+  border-inline-end: var(--indentation-guide-width) dashed
+    var(--indentation-guide-color);
 }
 
 /*smaller pinned tabs*/
@@ -1176,7 +1183,10 @@ body:not(.no-links) .markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover {
   background-color: var(--highlight-med);
   color: var(--link-color);
 }
-body:not(.no-links) .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover {
+body:not(.no-links)
+  .markdown-source-view.mod-cm6
+  .cm-hmd-internal-link
+  .cm-underline:hover {
   color: var(--link-color);
 }
 .no-links .markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover,
@@ -1315,8 +1325,17 @@ pre {
 }
 
 /*---center + radius for img and embeds---*/
-:is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered)
-  :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed) {
+:is(
+    :is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line),
+    .markdown-rendered
+  )
+  :is(
+    img,
+    .external-embed,
+    .internal-embed audio,
+    .internal-embed video,
+    .iframe-external-embed
+  ) {
   margin-inline: auto !important;
   display: block;
   border-radius: 10px;
@@ -1366,7 +1385,8 @@ body:not(.no-button) button {
 
 /*notebook*/
 .mod-root .workspace-tabs .workspace-leaf .notebook {
-  background-image: linear-gradient(rgba(var(--iris-rgb), 0.05) 2px, transparent 2px),
+  background-image:
+    linear-gradient(rgba(var(--iris-rgb), 0.05) 2px, transparent 2px),
     linear-gradient(to right, rgba(var(--iris-rgb), 0.05) 2px, transparent 2px);
   background-size: 20px 20px;
 }
@@ -1991,8 +2011,17 @@ body:not(.no-todoist) {
 /*Support for https://github.com/HandaArchitect/obsidian-banner-snippet*/
 /*Remove hover image animation from the banner*/
 .banner
-  :is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered)
-  :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed),
+  :is(
+    :is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line),
+    .markdown-rendered
+  )
+  :is(
+    img,
+    .external-embed,
+    .internal-embed audio,
+    .internal-embed video,
+    .iframe-external-embed
+  ),
 .banner.banner-fade.markdown-preview-view img[alt="banner"]:first-child,
 .banner.banner-fade.is-live-preview img[alt="banner"]:first-child,
 .banner.markdown-preview-view img[alt="banner"]:first-child,
@@ -2015,7 +2044,10 @@ body:not(.no-todoist) {
   transform: none !important;
 } /*dotted background on drawings*/
 .dotted .excalidraw {
-  background-image: radial-gradient(var(--background-modifier-border) 1px, transparent 0);
+  background-image: radial-gradient(
+    var(--background-modifier-border) 1px,
+    transparent 0
+  );
   background-size: 20px 20px;
   background-position: -19px -19px;
 }
@@ -2107,7 +2139,8 @@ body:not(.no-cardboard) {
 .setting-item[data-id="underwater-theme"] .setting-item-name {
   color: var(--foam);
 }
-.setting-item[data-id="underwater-theme"] .style-settings-collapse-indicator::after {
+.setting-item[data-id="underwater-theme"]
+  .style-settings-collapse-indicator::after {
   color: var(--foam);
   content: " 🐳";
 }
@@ -2281,12 +2314,24 @@ body:not(.no-cardboard) {
 }
 
 /* Disable click */
-.no-click input[data-task]:not(input[data-task=" "], .no-click input[data-task="x"]):checked,
-.no-click li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"]) > input:checked,
-.no-click li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"]) > p > input:checked,
+.no-click
+  input[data-task]:not(
+    input[data-task=" "],
+    .no-click input[data-task="x"]
+  ):checked,
+.no-click
+  li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"])
+  > input:checked,
+.no-click
+  li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"])
+  > p
+  > input:checked,
 .no-click
   label.task-list-label:has(
-    > input[data-task]:not(input[data-task=" "], .no-click input[data-task="x"]):checked
+    > input[data-task]:not(
+        input[data-task=" "],
+        .no-click input[data-task="x"]
+      ):checked
   ) {
   pointer-events: none;
 }
@@ -2729,7 +2774,7 @@ settings:
         id: tab-img
         title: New tab image
         description: Looks better with a small image
-        type: variable-text
+        type: info-text
         default: url("")
     -
         id: vault-icon
@@ -2874,7 +2919,7 @@ settings:
     - 
         id: bg-url
         title: Background image url
-        type: variable-text
+        type: info-text
         default: url("")
     - 
         id: bg-opacity

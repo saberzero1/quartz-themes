@@ -61,7 +61,8 @@
 
 div.tree-item.nav-file:has(*[data-path*="_about_.md"]),
 .hide-folder-note .is-folder-note,
-.nav-files-container:not(.show-unsupported) .tree-item.nav-file:has(.is-unsupported):before {
+.nav-files-container:not(.show-unsupported)
+  .tree-item.nav-file:has(.is-unsupported):before {
   display: none;
 }
 

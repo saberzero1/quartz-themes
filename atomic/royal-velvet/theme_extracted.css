@@ -96,7 +96,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -170,7 +171,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -192,26 +194,33 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "Fira Sans", sans-serif;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "Fira Code", monospace;
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -426,8 +435,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -435,7 +446,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -464,7 +478,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -478,7 +493,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -502,7 +518,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -743,7 +762,11 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
   color: var(--h1-color);
   font-family: var(--h1-font);
   font-size: var(--h1-size);
@@ -761,7 +784,11 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--orange) 0,
+    var(--yellow) 100%
+  );
   color: var(--h2-color);
   font-family: var(--h2-font);
   font-size: var(--h2-size);
@@ -779,7 +806,11 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--green) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0,
+    var(--green) 100%
+  );
   color: var(--h3-color);
   font-family: var(--h3-font);
   font-size: var(--h3-size);
@@ -797,7 +828,11 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--green) 0, var(--blue) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--green) 0,
+    var(--blue) 100%
+  );
   color: var(--h4-color);
   font-family: var(--h4-font);
   font-size: var(--h4-size);
@@ -815,7 +850,11 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--blue) 0, var(--purple) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--blue) 0,
+    var(--purple) 100%
+  );
   color: var(--h5-color);
   font-family: var(--h5-font);
   font-size: var(--h5-size);
@@ -833,7 +872,11 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--pink) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0,
+    var(--pink) 100%
+  );
   color: var(--h6-color);
   font-family: var(--h6-font);
   font-size: var(--h6-size);
@@ -1369,9 +1412,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1573,7 +1620,8 @@ svg.svg-icon {
   --blue: hsl(var(--blue-tuple));
   --blue-600: hsla(var(--blue-tuple), 0.6);
   --blue-hue: 170;
-  --blue-secondary-tuple: var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
+  --blue-secondary-tuple:
+    var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
   --blue-tuple: var(--blue-hue), var(--primary-sat), var(--primary-lit);
   --checkbox-color-hover: var(--list-marker-color);
   --code-normal: var(--purple-pink);
@@ -1622,7 +1670,8 @@ svg.svg-icon {
   --green: hsl(var(--green-tuple));
   --green-200: hsla(var(--green-tuple), 0.2);
   --green-hue: 115;
-  --green-secondary-tuple: var(--green-hue), var(--secondary-sat), var(--secondary-lit);
+  --green-secondary-tuple:
+    var(--green-hue), var(--secondary-sat), var(--secondary-lit);
   --green-tuple: var(--green-hue), var(--primary-sat), var(--primary-lit);
   --greenSecondary: hsl(var(--green-secondary-tuple));
   --highlight-mix-blend-mode: darken;
@@ -1630,7 +1679,8 @@ svg.svg-icon {
   --indentation-guide: var(--layer-4);
   --indentation-guide-opacity: 10%;
   --input-shadow: none;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--pink);
@@ -1660,7 +1710,8 @@ svg.svg-icon {
   --orange: hsl(var(--orange-tuple));
   --orange-100: hsla(var(--orange-tuple), 0.1);
   --orange-hue: 35;
-  --orange-secondary-tuple: var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
+  --orange-secondary-tuple:
+    var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
   --orange-tuple: var(--orange-hue), var(--primary-sat), var(--primary-lit);
   --orangeSecondary: hsl(var(--orange-secondary-tuple));
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -1670,7 +1721,8 @@ svg.svg-icon {
   --pink-300: hsla(var(--pink-tuple), 0.3);
   --pink-400: hsla(var(--pink-tuple), 0.4);
   --pink-hue: 330;
-  --pink-secondary-tuple: var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --pink-secondary-tuple:
+    var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
   --pink-tuple: var(--pink-hue), var(--primary-sat), var(--primary-lit);
   --pinkSecondary: hsl(var(--pink-secondary-tuple));
   --primary-lit: 75.1%;
@@ -1681,14 +1733,18 @@ svg.svg-icon {
   --purple-hue: 250;
   --purple-pink: hsl(var(--purple-pink-tuple));
   --purple-pink-hue: 285;
-  --purple-pink-secondary-tuple: var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
-  --purple-pink-tuple: var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
-  --purple-secondary-tuple: var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-pink-secondary-tuple:
+    var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-pink-tuple:
+    var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
+  --purple-secondary-tuple:
+    var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
   --purple-tuple: var(--purple-hue), var(--primary-sat), var(--primary-lit);
   --red: hsl(var(--red-tuple));
   --red-900: hsla(var(--red-tuple), 0.9);
   --red-hue: 10;
-  --red-secondary-tuple: var(--red-hue), var(--secondary-sat), var(--secondary-lit);
+  --red-secondary-tuple:
+    var(--red-hue), var(--secondary-sat), var(--secondary-lit);
   --red-tuple: var(--red-hue), var(--primary-sat), var(--primary-lit);
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
@@ -1697,9 +1753,11 @@ svg.svg-icon {
   --scrollbar-thumb-bg: var(--pink-100);
   --secondary-lit: 90%;
   --secondary-sat: 100%;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --table-header-color: var(--layer-2);
   --text-accent: var(--pink);
@@ -1717,7 +1775,8 @@ svg.svg-icon {
   --yellow-100: hsla(var(--yellow-tuple), 0.1);
   --yellow-700: hsla(var(--yellow-tuple), 0.7);
   --yellow-hue: 60;
-  --yellow-secondary-tuple: var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
+  --yellow-secondary-tuple:
+    var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
   --yellow-tuple: var(--yellow-hue), var(--primary-sat), var(--primary-lit);
   color-scheme: dark;
 }
@@ -1743,7 +1802,8 @@ svg.svg-icon {
   --blue: hsl(var(--blue-tuple));
   --blue-600: hsla(var(--blue-tuple), 0.6);
   --blue-hue: 200;
-  --blue-secondary-tuple: var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
+  --blue-secondary-tuple:
+    var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
   --blue-tuple: var(--blue-hue), var(--primary-sat), var(--primary-lit);
   --checkbox-color-hover: var(--list-marker-color);
   --code-normal: var(--purple-pink);
@@ -1792,7 +1852,8 @@ svg.svg-icon {
   --green: hsl(var(--green-tuple));
   --green-200: hsla(var(--green-tuple), 0.2);
   --green-hue: 105;
-  --green-secondary-tuple: var(--green-hue), var(--secondary-sat), var(--secondary-lit);
+  --green-secondary-tuple:
+    var(--green-hue), var(--secondary-sat), var(--secondary-lit);
   --green-tuple: var(--green-hue), var(--primary-sat), var(--primary-lit);
   --greenSecondary: hsl(var(--green-secondary-tuple));
   --highlight-mix-blend-mode: darken;
@@ -1800,8 +1861,10 @@ svg.svg-icon {
   --indentation-guide: var(--layer-4);
   --indentation-guide-opacity: 10%;
   --input-shadow: none;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --interactive-accent: var(--pink);
   --interactive-accent-hover: var(--orange);
   --interactive-hover: var(--layer-0);
@@ -1829,7 +1892,8 @@ svg.svg-icon {
   --orange: hsl(var(--orange-tuple));
   --orange-100: hsla(var(--orange-tuple), 0.1);
   --orange-hue: 30;
-  --orange-secondary-tuple: var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
+  --orange-secondary-tuple:
+    var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
   --orange-tuple: var(--orange-hue), var(--primary-sat), var(--primary-lit);
   --orangeSecondary: hsl(var(--orange-secondary-tuple));
   --pink: hsl(var(--pink-tuple));
@@ -1837,7 +1901,8 @@ svg.svg-icon {
   --pink-300: hsla(var(--pink-tuple), 0.3);
   --pink-400: hsla(var(--pink-tuple), 0.4);
   --pink-hue: 330;
-  --pink-secondary-tuple: var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --pink-secondary-tuple:
+    var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
   --pink-tuple: var(--pink-hue), var(--primary-sat), var(--primary-lit);
   --pinkSecondary: hsl(var(--pink-secondary-tuple));
   --primary-lit: 43%;
@@ -1848,14 +1913,18 @@ svg.svg-icon {
   --purple-hue: 300;
   --purple-pink: hsl(var(--purple-pink-tuple));
   --purple-pink-hue: 310;
-  --purple-pink-secondary-tuple: var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
-  --purple-pink-tuple: var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
-  --purple-secondary-tuple: var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-pink-secondary-tuple:
+    var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-pink-tuple:
+    var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
+  --purple-secondary-tuple:
+    var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
   --purple-tuple: var(--purple-hue), var(--primary-sat), var(--primary-lit);
   --red: hsl(var(--red-tuple));
   --red-900: hsla(var(--red-tuple), 0.9);
   --red-hue: 0;
-  --red-secondary-tuple: var(--red-hue), var(--secondary-sat), var(--secondary-lit);
+  --red-secondary-tuple:
+    var(--red-hue), var(--secondary-sat), var(--secondary-lit);
   --red-tuple: var(--red-hue), var(--primary-sat), var(--primary-lit);
   --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-secondary-alt);
@@ -1864,9 +1933,11 @@ svg.svg-icon {
   --scrollbar-thumb-bg: var(--pink-100);
   --secondary-lit: 50%;
   --secondary-sat: 80%;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --table-header-color: var(--layer-2);
   --text-accent: var(--pink);
@@ -1884,7 +1955,8 @@ svg.svg-icon {
   --yellow-100: hsla(var(--yellow-tuple), 0.1);
   --yellow-700: hsla(var(--yellow-tuple), 0.7);
   --yellow-hue: 40;
-  --yellow-secondary-tuple: var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
+  --yellow-secondary-tuple:
+    var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
   --yellow-tuple: var(--yellow-hue), var(--primary-sat), var(--primary-lit);
   color-scheme: light;
 }

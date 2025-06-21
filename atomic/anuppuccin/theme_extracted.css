@@ -31,8 +31,8 @@ body {
   --anp-header-font: "Noto Serif";
   --anp-header-margin-value: 15px;
   --anp-preview-width-max: 800px;
-  --anp-preview-width-pct: 95%;
-  --anp-rainbow-folder-bg-opacity: 1;
+  --anp-preview-width-pct: 80%;
+  --anp-rainbow-folder-bg-opacity: 0.7;
   --anp-rainbow-folder-border-opacity: 1;
   --anp-rainbow-folder-collapse-border-custom: #00000044;
   --anp-table-width-pct: 100%;
@@ -91,7 +91,7 @@ body {
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
-  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --bold-weight: 600;
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -99,7 +99,7 @@ body {
   --callout-border-width: 0px;
   --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
-  --callout-content-padding: var(--size-4-2);
+  --callout-content-padding: 8px;
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
   --callout-example: var(--color-purple-rgb);
@@ -109,12 +109,12 @@ body {
   --callout-padding: 0;
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
-  --callout-radius: var(--radius-s);
+  --callout-radius: 4px;
   --callout-success: var(--color-green-rgb);
   --callout-summary: var(--color-cyan-rgb);
   --callout-tip: var(--color-cyan-rgb);
   --callout-title-color: inherit;
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --callout-title-size: inherit;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
@@ -188,7 +188,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -196,7 +197,7 @@ body {
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
-  --embed-max-height: 4000px;
+  --embed-max-height: 200;
   --embed-padding: 0 0 0 var(--size-4-6);
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
@@ -205,31 +206,38 @@ body {
   --file-header-font-weight: 400;
   --file-header-justify: center;
   --file-line-width: 700px;
-  --file-margins: var(--size-4-8);
+  --file-margins: 32px;
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -268,44 +276,44 @@ body {
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h1-color: inherit;
-  --h1-font: inherit;
+  --h1-font: Noto Serif;
   --h1-line-height: 1.2;
-  --h1-size: 1.802em;
+  --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
-  --h2-font: inherit;
+  --h2-font: Noto Serif;
   --h2-line-height: 1.2;
-  --h2-size: 1.602em;
+  --h2-size: 1.6em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
-  --h3-font: inherit;
+  --h3-font: Noto Serif;
   --h3-line-height: 1.3;
-  --h3-size: 1.424em;
+  --h3-size: 1.37em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
-  --h4-font: inherit;
+  --h4-font: Noto Serif;
   --h4-line-height: 1.4;
-  --h4-size: 1.266em;
+  --h4-size: 1.25em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
-  --h5-font: inherit;
-  --h5-line-height: var(--line-height-normal);
-  --h5-size: 1.125em;
+  --h5-font: Noto Serif;
+  --h5-line-height: 1.5;
+  --h5-size: 1.12em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
-  --h6-font: inherit;
-  --h6-line-height: var(--line-height-normal);
-  --h6-size: 1em;
+  --h6-font: Noto Serif;
+  --h6-line-height: 1.5;
+  --h6-size: 1.12em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
@@ -396,10 +404,10 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: calc(var(--indent-unit) * var(--indent-size));
+  --list-indent: 2em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: var(--text-faint);
+  --list-marker-color: light-dark(#, #);
   --list-marker-color-collapsed: var(--text-accent);
   --list-marker-color-hover: var(--text-muted);
   --list-numbered-style: decimal;
@@ -444,8 +452,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -453,7 +463,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -482,7 +495,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -521,7 +535,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -605,7 +622,9 @@ body {
   --tab-stacked-font-size: var(--font-ui-small);
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
-  --tab-stacked-pane-width: calc(var(--anp-tab-stacked-pane-width, 1) * var(--file-line-width));
+  --tab-stacked-pane-width: calc(
+    var(--anp-tab-stacked-pane-width, 1) * var(--file-line-width)
+  );
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
@@ -1362,9 +1381,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1566,7 +1589,7 @@ svg.svg-icon {
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
   --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1610,26 +1633,62 @@ svg.svg-icon {
   --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 30, 30, 46));
   --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 135, 176, 249));
   --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 17, 17, 27));
-  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205));
+  --ctp-flamingo: var(
+    --ctp-custom-flamingo,
+    var(--ctp-ext-flamingo, 242, 205, 205)
+  );
   --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 166, 227, 161));
-  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254));
+  --ctp-lavender: var(
+    --ctp-custom-lavender,
+    var(--ctp-ext-lavender, 180, 190, 254)
+  );
   --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 24, 24, 37));
   --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 235, 160, 172));
   --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 203, 166, 247));
-  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 105, 109, 134));
-  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 129, 157));
-  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 142, 149, 179));
+  --ctp-overlay0: var(
+    --ctp-custom-overlay0,
+    var(--ctp-ext-overlay0, 105, 109, 134)
+  );
+  --ctp-overlay1: var(
+    --ctp-custom-overlay1,
+    var(--ctp-ext-overlay1, 123, 129, 157)
+  );
+  --ctp-overlay2: var(
+    --ctp-custom-overlay2,
+    var(--ctp-ext-overlay2, 142, 149, 179)
+  );
   --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 250, 179, 135));
   --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 245, 194, 231));
   --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 243, 139, 168));
-  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220));
-  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236));
+  --ctp-rosewater: var(
+    --ctp-custom-rosewater,
+    var(--ctp-ext-rosewater, 245, 224, 220)
+  );
+  --ctp-sapphire: var(
+    --ctp-custom-sapphire,
+    var(--ctp-ext-sapphire, 116, 199, 236)
+  );
   --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 137, 220, 235));
-  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 168, 201));
-  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 223));
-  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 49, 50, 68));
-  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 67, 70, 90));
-  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 86, 89, 112));
+  --ctp-subtext0: var(
+    --ctp-custom-subtext0,
+    var(--ctp-ext-subtext0, 161, 168, 201)
+  );
+  --ctp-subtext1: var(
+    --ctp-custom-subtext1,
+    var(--ctp-ext-subtext1, 179, 188, 223)
+  );
+  --ctp-surface0: var(
+    --ctp-custom-surface0,
+    var(--ctp-ext-surface0, 49, 50, 68)
+  );
+  --ctp-surface1: var(
+    --ctp-custom-surface1,
+    var(--ctp-ext-surface1, 67, 70, 90)
+  );
+  --ctp-surface2: var(
+    --ctp-custom-surface2,
+    var(--ctp-ext-surface2, 86, 89, 112)
+  );
   --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 148, 226, 213));
   --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 198, 208, 245));
   --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 249, 226, 175));
@@ -1638,11 +1697,15 @@ svg.svg-icon {
   --embed-block-shadow-hover: none;
   --highlight-mix-blend-mode: none;
   --icon-color-focused: var(--color-accent);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(var(--ctp-crust), 0.15), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
     0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(var(--ctp-crust), 0.3), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
     0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
@@ -1657,10 +1720,14 @@ svg.svg-icon {
   --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
-  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
+    0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
+    0px 15px 30px rgba(var(--ctp-crust), 0.3);
   --table-border-width: var(--anp-table-thickness, 1px);
   --text-accent: var(--color-accent-1);
   --text-error: rgb(var(--ctp-red));
@@ -1701,7 +1768,7 @@ svg.svg-icon {
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
   --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
-  --callout-title-padding: var(--size-4-2);
+  --callout-title-padding: 8px;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1745,26 +1812,62 @@ svg.svg-icon {
   --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 239, 241, 245));
   --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 42, 110, 245));
   --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 220, 224, 232));
-  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 221, 120, 120));
+  --ctp-flamingo: var(
+    --ctp-custom-flamingo,
+    var(--ctp-ext-flamingo, 221, 120, 120)
+  );
   --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 64, 160, 43));
-  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 114, 135, 253));
+  --ctp-lavender: var(
+    --ctp-custom-lavender,
+    var(--ctp-ext-lavender, 114, 135, 253)
+  );
   --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 230, 233, 239));
   --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 230, 69, 83));
   --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 136, 57, 239));
-  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 156, 160, 176));
-  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 140, 143, 161));
-  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 124, 127, 147));
+  --ctp-overlay0: var(
+    --ctp-custom-overlay0,
+    var(--ctp-ext-overlay0, 156, 160, 176)
+  );
+  --ctp-overlay1: var(
+    --ctp-custom-overlay1,
+    var(--ctp-ext-overlay1, 140, 143, 161)
+  );
+  --ctp-overlay2: var(
+    --ctp-custom-overlay2,
+    var(--ctp-ext-overlay2, 124, 127, 147)
+  );
   --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 254, 100, 11));
   --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 236, 131, 208));
   --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 210, 15, 57));
-  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 222, 149, 132));
-  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 32, 159, 181));
+  --ctp-rosewater: var(
+    --ctp-custom-rosewater,
+    var(--ctp-ext-rosewater, 222, 149, 132)
+  );
+  --ctp-sapphire: var(
+    --ctp-custom-sapphire,
+    var(--ctp-ext-sapphire, 32, 159, 181)
+  );
   --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 4, 165, 229));
-  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 108, 111, 133));
-  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 92, 95, 119));
-  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 204, 208, 218));
-  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 188, 192, 204));
-  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 172, 176, 190));
+  --ctp-subtext0: var(
+    --ctp-custom-subtext0,
+    var(--ctp-ext-subtext0, 108, 111, 133)
+  );
+  --ctp-subtext1: var(
+    --ctp-custom-subtext1,
+    var(--ctp-ext-subtext1, 92, 95, 119)
+  );
+  --ctp-surface0: var(
+    --ctp-custom-surface0,
+    var(--ctp-ext-surface0, 204, 208, 218)
+  );
+  --ctp-surface1: var(
+    --ctp-custom-surface1,
+    var(--ctp-ext-surface1, 188, 192, 204)
+  );
+  --ctp-surface2: var(
+    --ctp-custom-surface2,
+    var(--ctp-ext-surface2, 172, 176, 190)
+  );
   --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 23, 146, 153));
   --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 76, 79, 105));
   --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 228, 147, 32));
@@ -1773,11 +1876,15 @@ svg.svg-icon {
   --embed-block-shadow-hover: none;
   --highlight-mix-blend-mode: none;
   --icon-color-focused: var(--color-accent);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(var(--ctp-crust), 0.15), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
     0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(var(--ctp-crust), 0.3), 0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
+    0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
     0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
   --interactive-hover: rgb(var(--ctp-surface1));
   --interactive-normal: rgb(var(--ctp-surface0));
@@ -1788,10 +1895,14 @@ svg.svg-icon {
   --mono-rgb-0: var(--ctp-crust);
   --mono-rgb-100: var(--ctp-text);
   --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112), 0px 30px 90px rgba(var(--ctp-crust), 0.2);
-  --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179), 0px 15px 30px rgba(var(--ctp-crust), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
+    0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
+    0px 30px 90px rgba(var(--ctp-crust), 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(var(--ctp-crust), 0.121),
+    0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
+    0px 15px 30px rgba(var(--ctp-crust), 0.3);
   --table-border-width: var(--anp-table-thickness, 1px);
   --text-error: rgb(var(--ctp-red));
   --text-error-hover: rgba(var(--ctp-red), 0.8);

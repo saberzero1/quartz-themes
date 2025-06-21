@@ -71,7 +71,8 @@ body.is-focused .workspace-ribbon.mod-left {
   background-color: var(--tr);
 }
 
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right {
   background-color: var(--tr);
 }
 

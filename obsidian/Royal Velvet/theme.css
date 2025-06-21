@@ -225,14 +225,16 @@ body {
   --red: hsl(var(--red-tuple));
   --red-900: hsla(var(--red-tuple), 0.9);
 
-  --red-secondary-tuple: var(--red-hue), var(--secondary-sat), var(--secondary-lit);
+  --red-secondary-tuple:
+    var(--red-hue), var(--secondary-sat), var(--secondary-lit);
 
   /* orange */
   --orange-tuple: var(--orange-hue), var(--primary-sat), var(--primary-lit);
   --orange: hsl(var(--orange-tuple));
   --orange-100: hsla(var(--orange-tuple), 0.1);
 
-  --orange-secondary-tuple: var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
+  --orange-secondary-tuple:
+    var(--orange-hue), var(--secondary-sat), var(--secondary-lit);
   --orangeSecondary: hsl(var(--orange-secondary-tuple));
 
   /* yellow */
@@ -241,14 +243,16 @@ body {
   --yellow-100: hsla(var(--yellow-tuple), 0.1);
   --yellow-700: hsla(var(--yellow-tuple), 0.7);
 
-  --yellow-secondary-tuple: var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
+  --yellow-secondary-tuple:
+    var(--yellow-hue), var(--secondary-sat), var(--secondary-lit);
 
   /* green */
   --green-tuple: var(--green-hue), var(--primary-sat), var(--primary-lit);
   --green: hsl(var(--green-tuple));
   --green-200: hsla(var(--green-tuple), 0.2);
 
-  --green-secondary-tuple: var(--green-hue), var(--secondary-sat), var(--secondary-lit);
+  --green-secondary-tuple:
+    var(--green-hue), var(--secondary-sat), var(--secondary-lit);
   --greenSecondary: hsl(var(--green-secondary-tuple));
 
   /* blue */
@@ -256,20 +260,24 @@ body {
   --blue: hsl(var(--blue-tuple));
   --blue-600: hsla(var(--blue-tuple), 0.6);
 
-  --blue-secondary-tuple: var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
+  --blue-secondary-tuple:
+    var(--blue-hue), var(--secondary-sat), var(--secondary-lit);
 
   /* purple */
   --purple-tuple: var(--purple-hue), var(--primary-sat), var(--primary-lit);
   --purple: hsl(var(--purple-tuple));
   --purple-200: hsla(var(--purple-tuple), 0.2);
 
-  --purple-secondary-tuple: var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-secondary-tuple:
+    var(--purple-hue), var(--secondary-sat), var(--secondary-lit);
 
   /* purple-pink */
-  --purple-pink-tuple: var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
+  --purple-pink-tuple:
+    var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
   --purple-pink: hsl(var(--purple-pink-tuple));
 
-  --purple-pink-secondary-tuple: var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --purple-pink-secondary-tuple:
+    var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit);
 
   /* pink */
   --pink-tuple: var(--pink-hue), var(--primary-sat), var(--primary-lit);
@@ -278,7 +286,8 @@ body {
   --pink-300: hsla(var(--pink-tuple), 0.3);
   --pink-400: hsla(var(--pink-tuple), 0.4);
 
-  --pink-secondary-tuple: var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
+  --pink-secondary-tuple:
+    var(--pink-hue), var(--secondary-sat), var(--secondary-lit);
   --pinkSecondary: hsl(var(--pink-secondary-tuple));
 
   --gradientDegree: 135deg;
@@ -298,7 +307,9 @@ body {
   --background-modifier-error-hover: var(--red);
 
   --text-normal: var(--on-layer); /*Text body of note*/
-  --text-muted: var(--on-layer-600); /*Text darker for sidebar, toggles, inactive, tags, etc*/
+  --text-muted: var(
+    --on-layer-600
+  ); /*Text darker for sidebar, toggles, inactive, tags, etc*/
   --text-accent: var(--pink); /*Links*/
   --text-accent-hover: var(--pinkSecondary); /*Links hover*/
   --text-faint: var(--on-layer-600); /*Link brackets color & Gutter Numbers*/
@@ -306,7 +317,9 @@ body {
   --text-error-hover: var(--redSecondary);
 
   --text-highlight-bg: var(--yellow-100); /*Search Matches*/
-  --text-highlight-bg-active: var(--orange-100); /*Active Search Match (Preview Mode)*/
+  --text-highlight-bg-active: var(
+    --orange-100
+  ); /*Active Search Match (Preview Mode)*/
   --text-selection: var(--purple-200); /*Text Selections*/
 
   /* other custom vars */
@@ -348,7 +361,9 @@ body {
 
   --hr-color: var(--orange); /* Horizontal Line */
 
-  --checkbox-color-hover: var(--list-marker-color); /* Overrides checkbox list level 7+ hover */
+  --checkbox-color-hover: var(
+    --list-marker-color
+  ); /* Overrides checkbox list level 7+ hover */
 }
 
 /*Setting Dropdown*/
@@ -371,7 +386,11 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
   font-weight: 700;
 }
 
@@ -416,7 +435,9 @@ body {
   color: var(--pinkSecondary);
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
 .view-header {
   border-bottom: 5px solid var(--layer-2);
 }
@@ -499,7 +520,11 @@ body:not([class*="doc-title"]) .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
 } /*Source Mode*/
 
 h2,
@@ -508,7 +533,11 @@ body.doc-title-h2 .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--orange) 0,
+    var(--yellow) 100%
+  );
 } /*Source Mode*/
 
 h3,
@@ -517,7 +546,11 @@ body.doc-title-h3 .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--green) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0,
+    var(--green) 100%
+  );
 } /*Source Mode*/
 
 h4,
@@ -526,7 +559,11 @@ body.doc-title-h4 .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--green) 0, var(--blue) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--green) 0,
+    var(--blue) 100%
+  );
 } /*Source Mode*/
 
 h5,
@@ -535,7 +572,11 @@ body.doc-title-h5 .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--blue) 0, var(--purple) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--blue) 0,
+    var(--purple) 100%
+  );
 } /*Source Mode*/
 
 h6,
@@ -544,7 +585,11 @@ body.doc-title-h6 .inline-title {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--pink) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0,
+    var(--pink) 100%
+  );
 } /*Source Mode*/
 
 /*--Code--*/
@@ -738,12 +783,20 @@ table {
 }
 
 thead {
-  background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--pink) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0,
+    var(--pink) 100%
+  );
 }
 
 /* Dataview Plugin table head */
 thead.table-view-thead {
-  background-image: linear-gradient(var(--gradientDegree), var(--blue) 0, var(--purple) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--blue) 0,
+    var(--purple) 100%
+  );
 }
 
 thead .dataview.small-text {
@@ -785,7 +838,8 @@ thead .dataview.small-text {
 }
 
 /* Table Head Row when editing table contents */
-.markdown-source-view.cm-s-obsidian.mod-cm6 .HyperMD-table-row.HyperMD-table-row-0.cm-line {
+.markdown-source-view.cm-s-obsidian.mod-cm6
+  .HyperMD-table-row.HyperMD-table-row-0.cm-line {
   color: var(--text-normal);
 }
 
@@ -997,7 +1051,11 @@ ol ol ol ol ol ol ol li::marker,
 }
 
 .HyperMD-list-line-4 .list-bullet::after,
-.has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after {
+.has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet::after {
   background-color: var(--green);
 }
 
@@ -1050,7 +1108,9 @@ ul ul input[type="checkbox"],
   border-color: var(--orange);
 }
 .HyperMD-list-line-2 input[type="checkbox"][data-task="x"],
-.has-list-bullet .has-list-bullet.contains-task-list .task-list-item-checkbox:checked {
+.has-list-bullet
+  .has-list-bullet.contains-task-list
+  .task-list-item-checkbox:checked {
   background-color: var(--orange);
   border-color: var(--orange);
 }
@@ -1202,33 +1262,67 @@ what causes this? - .CodeMirror.cm-spell-error setting red a squiggly line as ba
 }
 
 .cm-header-1.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
 }
 .cm-header-2.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--orange) 0,
+    var(--yellow) 100%
+  );
 }
 .cm-header-3.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--yellow) 0, var(--green) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0,
+    var(--green) 100%
+  );
 }
 .cm-header-4.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--green) 0, var(--blue) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--green) 0,
+    var(--blue) 100%
+  );
 }
 .cm-header-5.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--blue) 0, var(--purple) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--blue) 0,
+    var(--purple) 100%
+  );
 }
 .cm-header-6.cm-spell-error {
-  background-image: linear-gradient(var(--gradientDegree), var(--purple) 0, var(--pink) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0,
+    var(--pink) 100%
+  );
 }
 
 /* Tab Title */
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
 .is-focused .workspace-leaf.mod-active .view-header-title {
   font-weight: 700;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
 }
 
 /* Tab Title Bar */
@@ -1285,7 +1379,11 @@ what causes this? - .CodeMirror.cm-spell-error setting red a squiggly line as ba
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(var(--gradientDegree), var(--pink) 0, var(--orange) 100%);
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 100%
+  );
 }
 
 /* ">" on blockquote in editing mode */

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 body {
   /* ## Fonts */
-  --font-text-theme: "Inter", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  --font-text-theme:
+    "Inter", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
-  --font-monospace-theme: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
-  --font-interface-theme: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Inter", sans-serif;
+  --font-monospace-theme:
+    "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
+  --font-interface-theme:
+    "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Inter", sans-serif;
 }
 
 :root {
@@ -39,8 +42,16 @@ body {
   --elevation4: 0.12;
   --elevation5: 0.14;
   --titlebar-text-color-focused: var(--text-normal);
-  --link-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%) !important;
-  --link-external-color-hover: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 80%) !important;
+  --link-color-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.8),
+    80%
+  ) !important;
+  --link-external-color-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.8),
+    80%
+  ) !important;
 }
 
 .theme-light {
@@ -78,29 +89,74 @@ body {
   --inverse-surface: #313033;
   --primaryInverse: #cabeff;
   --surface1: rgb(
-    calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
-    calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
-    calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
+    calc(
+      var(--primary-r) * var(--elevation1) + var(--surface-r) *
+        (1 - var(--elevation1))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation1) + var(--surface-g) *
+        (1 - var(--elevation1))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation1) + var(--surface-b) *
+        (1 - var(--elevation1))
+    )
   );
   --surface2: rgb(
-    calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
-    calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
-    calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
+    calc(
+      var(--primary-r) * var(--elevation2) + var(--surface-r) *
+        (1 - var(--elevation2))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation2) + var(--surface-g) *
+        (1 - var(--elevation2))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation2) + var(--surface-b) *
+        (1 - var(--elevation2))
+    )
   );
   --surface3: rgb(
-    calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
-    calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
-    calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
+    calc(
+      var(--primary-r) * var(--elevation3) + var(--surface-r) *
+        (1 - var(--elevation3))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation3) + var(--surface-g) *
+        (1 - var(--elevation3))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation3) + var(--surface-b) *
+        (1 - var(--elevation3))
+    )
   );
   --surface4: rgb(
-    calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
-    calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
-    calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
+    calc(
+      var(--primary-r) * var(--elevation4) + var(--surface-r) *
+        (1 - var(--elevation4))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation4) + var(--surface-g) *
+        (1 - var(--elevation4))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation4) + var(--surface-b) *
+        (1 - var(--elevation4))
+    )
   );
   --surface5: rgb(
-    calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
-    calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
-    calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
+    calc(
+      var(--primary-r) * var(--elevation5) + var(--surface-r) *
+        (1 - var(--elevation5))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation5) + var(--surface-g) *
+        (1 - var(--elevation5))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation5) + var(--surface-b) *
+        (1 - var(--elevation5))
+    )
   );
   /* Standard colours */
   --background-primary: var(--background);
@@ -197,29 +253,74 @@ body {
   --inverse-surface: var(--inverse-surface);
   --primary-inverse: var(--primaryInverse);
   --surface1: rgb(
-    calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
-    calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
-    calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
+    calc(
+      var(--primary-r) * var(--elevation1) + var(--surface-r) *
+        (1 - var(--elevation1))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation1) + var(--surface-g) *
+        (1 - var(--elevation1))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation1) + var(--surface-b) *
+        (1 - var(--elevation1))
+    )
   );
   --surface2: rgb(
-    calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
-    calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
-    calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
+    calc(
+      var(--primary-r) * var(--elevation2) + var(--surface-r) *
+        (1 - var(--elevation2))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation2) + var(--surface-g) *
+        (1 - var(--elevation2))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation2) + var(--surface-b) *
+        (1 - var(--elevation2))
+    )
   );
   --surface3: rgb(
-    calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
-    calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
-    calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
+    calc(
+      var(--primary-r) * var(--elevation3) + var(--surface-r) *
+        (1 - var(--elevation3))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation3) + var(--surface-g) *
+        (1 - var(--elevation3))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation3) + var(--surface-b) *
+        (1 - var(--elevation3))
+    )
   );
   --surface4: rgb(
-    calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
-    calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
-    calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
+    calc(
+      var(--primary-r) * var(--elevation4) + var(--surface-r) *
+        (1 - var(--elevation4))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation4) + var(--surface-g) *
+        (1 - var(--elevation4))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation4) + var(--surface-b) *
+        (1 - var(--elevation4))
+    )
   );
   --surface5: rgb(
-    calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
-    calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
-    calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
+    calc(
+      var(--primary-r) * var(--elevation5) + var(--surface-r) *
+        (1 - var(--elevation5))
+    ),
+    calc(
+      var(--primary-g) * var(--elevation5) + var(--surface-g) *
+        (1 - var(--elevation5))
+    ),
+    calc(
+      var(--primary-b) * var(--elevation5) + var(--surface-b) *
+        (1 - var(--elevation5))
+    )
   );
   --focus: var(--surface4);
   --hover: var(--surface2);
@@ -808,11 +909,27 @@ a.tag:after {
 .markdown-preview-view table tbody tr td:nth-of-type(even),
 .markdown-preview-view table tbody tr td:nth-of-type(odd),
 .markdown-source-view.mod-cm6.is-live-preview table thead tr td,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr td:nth-of-type(even),
-.markdown-source-view.mod-cm6.is-live-preview table thead tr td:nth-of-type(odd),
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr
+  td:nth-of-type(even),
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr
+  td:nth-of-type(odd),
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr td,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr td:nth-of-type(even),
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr td:nth-of-type(odd) {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr
+  td:nth-of-type(even),
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr
+  td:nth-of-type(odd) {
   background: var(--surface);
   color: var(--on-surface);
   padding-top: 1px;
@@ -844,14 +961,30 @@ a.tag:after {
 }
 .markdown-preview-view table thead tr:last-of-type td:first-of-type,
 .markdown-preview-view table tbody tr:last-of-type td:first-of-type,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:last-of-type td:first-of-type,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:last-of-type td:first-of-type {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:last-of-type
+  td:first-of-type,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:last-of-type
+  td:first-of-type {
   border-bottom-left-radius: var(--radius-l);
 }
 .markdown-preview-view table thead tr:last-of-type td:last-of-type,
 .markdown-preview-view table tbody tr:last-of-type td:last-of-type,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:last-of-type td:last-of-type,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:last-of-type td:last-of-type {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:last-of-type
+  td:last-of-type,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:last-of-type
+  td:last-of-type {
   border-bottom-right-radius: var(--radius-l);
 }
 .markdown-preview-view table thead tr:nth-child(even) th,
@@ -861,39 +994,99 @@ a.tag:after {
 .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) th,
 .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) td,
 .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) th,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) td {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(even)
+  td {
   background-color: var(--surface-mid);
 }
 .markdown-preview-view table thead tr:nth-child(even) table,
 .markdown-preview-view table tbody tr:nth-child(even) table,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(even)
+  table,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(even)
+  table {
   margin-bottom: 10px;
 }
 .markdown-preview-view table thead tr:nth-child(even) table th,
 .markdown-preview-view table thead tr:nth-child(even) table td,
 .markdown-preview-view table tbody tr:nth-child(even) table th,
 .markdown-preview-view table tbody tr:nth-child(even) table td,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table th,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) table td,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table th,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) table td {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(even)
+  table
+  th,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(even)
+  table
+  td,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(even)
+  table
+  th,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(even)
+  table
+  td {
   background-color: var(--surface);
 }
 .markdown-preview-view table thead tr:nth-child(odd) table,
 .markdown-preview-view table tbody tr:nth-child(odd) table,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) table,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(odd)
+  table,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(odd)
+  table {
   margin-bottom: 10px;
 }
 .markdown-preview-view table thead tr:nth-child(odd) table th,
 .markdown-preview-view table thead tr:nth-child(odd) table td,
 .markdown-preview-view table tbody tr:nth-child(odd) table th,
 .markdown-preview-view table tbody tr:nth-child(odd) table td,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) table th,
-.markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) table td,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table th,
-.markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) table td {
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(odd)
+  table
+  th,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  thead
+  tr:nth-child(odd)
+  table
+  td,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(odd)
+  table
+  th,
+.markdown-source-view.mod-cm6.is-live-preview
+  table
+  tbody
+  tr:nth-child(odd)
+  table
+  td {
   background-color: var(--surface-mid);
 }
 
@@ -902,20 +1095,52 @@ a.tag:after {
   .markdown-preview-view table thead tr:nth-child(even) td,
   .markdown-preview-view table tbody tr:nth-child(even) th,
   .markdown-preview-view table tbody tr:nth-child(even) td,
-  .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) th,
-  .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(even) td,
-  .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) th,
-  .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(even) td {
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    thead
+    tr:nth-child(even)
+    th,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    thead
+    tr:nth-child(even)
+    td,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    tbody
+    tr:nth-child(even)
+    th,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    tbody
+    tr:nth-child(even)
+    td {
     background-color: var(--surface);
   }
   .markdown-preview-view table thead tr:nth-child(odd) th,
   .markdown-preview-view table thead tr:nth-child(odd) td,
   .markdown-preview-view table tbody tr:nth-child(odd) th,
   .markdown-preview-view table tbody tr:nth-child(odd) td,
-  .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) th,
-  .markdown-source-view.mod-cm6.is-live-preview table thead tr:nth-child(odd) td,
-  .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) th,
-  .markdown-source-view.mod-cm6.is-live-preview table tbody tr:nth-child(odd) td {
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    thead
+    tr:nth-child(odd)
+    th,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    thead
+    tr:nth-child(odd)
+    td,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    tbody
+    tr:nth-child(odd)
+    th,
+  .markdown-source-view.mod-cm6.is-live-preview
+    table
+    tbody
+    tr:nth-child(odd)
+    td {
     background-color: transparent;
   }
 }
@@ -986,8 +1211,10 @@ body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) {
   /* Advanced Mobile Toolbar Mode */
   /* Shrink FAB on small displays */
 }
-body.is-phone.fab-enabled-mobile:not(.custom-page-header) .view-action:nth-last-of-type(4),
-body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) .view-action:nth-last-of-type(4) {
+body.is-phone.fab-enabled-mobile:not(.custom-page-header)
+  .view-action:nth-last-of-type(4),
+body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header)
+  .view-action:nth-last-of-type(4) {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
   display: flex;
@@ -1026,8 +1253,10 @@ body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header)
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
 }
 @media screen and (max-height: 400px) {
-  body.is-phone.fab-enabled-mobile:not(.custom-page-header) .view-action:nth-of-type(4),
-  body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header) .view-action:nth-of-type(4) {
+  body.is-phone.fab-enabled-mobile:not(.custom-page-header)
+    .view-action:nth-of-type(4),
+  body:not(.is-phone).fab-enabled-desktop:not(.custom-page-header)
+    .view-action:nth-of-type(4) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }
@@ -1038,7 +1267,8 @@ body:not(.is-phone).fab-enabled-desktop.custom-page-header {
   /* Shrink FAB on small displays */
 }
 body.is-phone.fab-enabled-mobile.custom-page-header .view-action:first-child,
-body:not(.is-phone).fab-enabled-desktop.custom-page-header .view-action:first-child {
+body:not(.is-phone).fab-enabled-desktop.custom-page-header
+  .view-action:first-child {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
   display: flex;
@@ -1059,7 +1289,9 @@ body:not(.is-phone).fab-enabled-desktop.custom-page-header .view-action:first-ch
     8px 18px 80px rgba(0, 0, 0, 0.4);
   top: calc(100vh - 48px - 44px - 16px);
 }
-body.is-phone.fab-enabled-mobile.custom-page-header .view-action:first-child > *:first-child,
+body.is-phone.fab-enabled-mobile.custom-page-header
+  .view-action:first-child
+  > *:first-child,
 body:not(.is-phone).fab-enabled-desktop.custom-page-header
   .view-action:first-child
   > *:first-child {
@@ -1075,13 +1307,16 @@ body:not(.is-phone).fab-enabled-desktop.custom-page-header
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
 }
 @media screen and (max-height: 400px) {
-  body.is-phone.fab-enabled-mobile.custom-page-header .view-action:nth-last-of-type(5),
-  body:not(.is-phone).fab-enabled-desktop.custom-page-header .view-action:nth-last-of-type(5) {
+  body.is-phone.fab-enabled-mobile.custom-page-header
+    .view-action:nth-last-of-type(5),
+  body:not(.is-phone).fab-enabled-desktop.custom-page-header
+    .view-action:nth-last-of-type(5) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }
 
-body:not(.is-phone).fab-enabled-desktop.custom-page-header:has(.titlebar) .view-action:first-child {
+body:not(.is-phone).fab-enabled-desktop.custom-page-header:has(.titlebar)
+  .view-action:first-child {
   top: calc(100vh - 48px - 44px - 16px - 40px);
 }
 
@@ -1573,7 +1808,10 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
 .view-content.excalidraw-view .sidebar-trigger button:hover,
 .view-content.excalidraw-view .ToolIcon.ToolIcon_type_floating div button:hover,
 .view-content.excalidraw-view .App-menu_top__left .menu-button button:hover,
-.view-content.excalidraw-view .layer-ui__wrapper__footer-right .ToolIcon__icon button:hover,
+.view-content.excalidraw-view
+  .layer-ui__wrapper__footer-right
+  .ToolIcon__icon
+  button:hover,
 .view-content.excalidraw-view .mobile-misc-tools-container button:hover {
   background: var(--surface-variant) !important;
 }
@@ -1626,12 +1864,18 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
 .view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container {
   right: -10px;
 }
-.view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container .ToolIcon {
+.view-content.excalidraw-view
+  .App-top-bar
+  .mobile-misc-tools-container
+  .ToolIcon {
   margin-left: 4px;
   margin-right: 4px;
   margin-bottom: 3px;
 }
-.view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container .ToolIcon:first-child {
+.view-content.excalidraw-view
+  .App-top-bar
+  .mobile-misc-tools-container
+  .ToolIcon:first-child {
   margin-top: 4px;
 }
 .view-content.excalidraw-view
@@ -1641,7 +1885,10 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
   .ToolIcon__icon {
   border-radius: 6px;
 }
-.view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container .ToolIcon:last-child {
+.view-content.excalidraw-view
+  .App-top-bar
+  .mobile-misc-tools-container
+  .ToolIcon:last-child {
   margin-bottom: 4px;
 }
 .view-content.excalidraw-view .layer-ui__wrapper__top-right .ToolIcon {
@@ -1654,13 +1901,18 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
   svg {
   fill: var(--on-surface) !important;
 }
-.view-content.excalidraw-view .mobile-misc-tools-container label:not(.ToolIcon) {
+.view-content.excalidraw-view
+  .mobile-misc-tools-container
+  label:not(.ToolIcon) {
   width: var(--excalidraw-button-size);
   padding: 0;
   margin: 3px 4px;
   margin-top: -1px;
 }
-.view-content.excalidraw-view .mobile-misc-tools-container label:not(.ToolIcon) :hover {
+.view-content.excalidraw-view
+  .mobile-misc-tools-container
+  label:not(.ToolIcon)
+  :hover {
   background: var(--surface-variant) !important;
 }
 .view-content.excalidraw-view .sidebar-trigger.default-sidebar-trigger {
@@ -1670,7 +1922,9 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-file-title-content {
   padding: calc(var(--excalidraw-button-size) / 2 - 8px) !important;
   display: block;
 }
-.view-content.excalidraw-view .sidebar-trigger.default-sidebar-trigger .library-button__label {
+.view-content.excalidraw-view
+  .sidebar-trigger.default-sidebar-trigger
+  .library-button__label {
   display: none;
 }
 .view-content.excalidraw-view .popover {
@@ -1709,7 +1963,10 @@ body.pen-mode .view-content.excalidraw-view .App-top-bar .Stack_horizontal {
 body.pen-mode .view-content.excalidraw-view .App-top-bar .Stack_vertical {
   margin-bottom: 170px;
 }
-body.pen-mode .view-content.excalidraw-view .App-top-bar .mobile-misc-tools-container {
+body.pen-mode
+  .view-content.excalidraw-view
+  .App-top-bar
+  .mobile-misc-tools-container {
   right: inherit;
   top: inherit;
   bottom: 0;
@@ -1722,14 +1979,21 @@ body.pen-mode .view-content.excalidraw-view .App-top-bar .App-toolbar__divider {
 body.pen-mode .view-content.excalidraw-view .App-bottom-bar {
   padding-left: calc(var(--excalidraw-button-size) + 12px);
 }
-body.pen-mode .view-content.excalidraw-view .excalidraw--mobile .HintViewer span {
+body.pen-mode
+  .view-content.excalidraw-view
+  .excalidraw--mobile
+  .HintViewer
+  span {
   position: absolute !important;
   top: auto !important;
   bottom: 10px !important;
   right: 10px !important;
   opacity: 0.2;
 }
-body.pen-mode .view-content.excalidraw-view .excalidraw--mobile .welcome-screen-center {
+body.pen-mode
+  .view-content.excalidraw-view
+  .excalidraw--mobile
+  .welcome-screen-center {
   display: none !important;
 }
 body.pen-mode .view-content.excalidraw-view .App-toolbar__extra-tools-dropdown {
@@ -1870,7 +2134,9 @@ body.mod-linux.enable-mica .cm-line:not(.HyperMD-quote, .HyperMD-codeblock) {
 body.mod-windows.enable-mica
   .cm-line.HyperMD-quote
   + .cm-line:not(.HyperMD-quote, .HyperMD-codeblock),
-body.mod-mac.enable-mica .cm-line.HyperMD-quote + .cm-line:not(.HyperMD-quote, .HyperMD-codeblock),
+body.mod-mac.enable-mica
+  .cm-line.HyperMD-quote
+  + .cm-line:not(.HyperMD-quote, .HyperMD-codeblock),
 body.mod-linux.enable-mica
   .cm-line.HyperMD-quote
   + .cm-line:not(.HyperMD-quote, .HyperMD-codeblock) {
@@ -2005,8 +2271,10 @@ body.show-view-header .workspace-leaf-content {
   border-top-left-radius: 0 !important;
 }
 
-body.mod-windows.hide-toolbar-desktop .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed,
-body.mod-linux.hide-toolbar-desktop .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+body.mod-windows.hide-toolbar-desktop
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed,
+body.mod-linux.hide-toolbar-desktop
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
   max-width: 0px;
   margin: 0;
   padding: 0;
@@ -2022,8 +2290,10 @@ body.mod-linux.hide-toolbar-desktop
   .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed::before {
   display: none;
 }
-body.mod-windows.hide-toolbar-desktop .workspace-ribbon.side-dock-ribbon.mod-left,
-body.mod-linux.hide-toolbar-desktop .workspace-ribbon.side-dock-ribbon.mod-left {
+body.mod-windows.hide-toolbar-desktop
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+body.mod-linux.hide-toolbar-desktop
+  .workspace-ribbon.side-dock-ribbon.mod-left {
   transition-duration: 0s;
 }
 body.mod-windows.hide-toolbar-desktop
@@ -2117,7 +2387,9 @@ body:not(.hide-toolbar-desktop) .mod-root .workspace-tab-header,
   z-index: -1000 !important;
 }
 
-body:not(.hide-toolbar-desktop) .mod-root .workspace-tab-header.is-active:first-of-type,
+body:not(.hide-toolbar-desktop)
+  .mod-root
+  .workspace-tab-header.is-active:first-of-type,
 body.hide-toolbar-desktop
   .mod-root
   .workspace-tabs:not(.mod-top-left-space)
@@ -2126,7 +2398,9 @@ body.hide-toolbar-desktop
   padding-bottom: 13px;
 }
 
-body:not(.hide-toolbar-desktop) .mod-root .workspace-tab-header.is-active:first-of-type::after,
+body:not(.hide-toolbar-desktop)
+  .mod-root
+  .workspace-tab-header.is-active:first-of-type::after,
 body.hide-toolbar-desktop
   .mod-root
   .workspace-tabs:not(.mod-top-left-space)
@@ -2166,7 +2440,10 @@ body.more-drag-desktop .workspace-ribbon.side-dock-ribbon {
 body.more-drag-desktop .mod-root .workspace-tab-header {
   -webkit-app-region: drag;
 }
-body.more-drag-desktop .mod-root .workspace-tab-header .workspace-tab-header-inner-title {
+body.more-drag-desktop
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-title {
   -webkit-app-region: no-drag;
   margin-bottom: -5px;
   padding-bottom: 5px;
@@ -2175,7 +2452,10 @@ body.more-drag-desktop .mod-root .workspace-tab-header .workspace-tab-header-inn
 body.tab-drag-desktop .mod-root .workspace-tab-header.is-active {
   -webkit-app-region: drag;
 }
-body.tab-drag-desktop .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+body.tab-drag-desktop
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   -webkit-app-region: drag;
 }
 
@@ -2251,7 +2531,10 @@ body.tab-drag-desktop .mod-root .workspace-tab-header.is-active .workspace-tab-h
 }
 
 body.space-above-document .cm-editor .cm-scroller .cm-sizer,
-body.space-above-document .markdown-reading-view .markdown-preview-view .markdown-preview-sizer {
+body.space-above-document
+  .markdown-reading-view
+  .markdown-preview-view
+  .markdown-preview-sizer {
   padding-top: 25vh;
 }
 body.space-above-document .markdown-embed-content .markdown-preview-sizer,
@@ -2490,10 +2773,30 @@ body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg {
   stroke-width: 1px;
   transform: scale(1.2);
 }
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="m9 14 2 2 4-4"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="M9 12v-1h6v1"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="M11 17h2"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="M12 11v6"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m9 14 2 2 4-4"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M9 12v-1h6v1"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M11 17h2"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M12 11v6"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
@@ -2506,8 +2809,18 @@ body.mod-windows.win-menu
   .menu-item-icon
   svg
   path[d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="M21 14H11"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="m15 10-4 4 4 4"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M21 14H11"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m15 10-4 4 4 4"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
@@ -2524,8 +2837,18 @@ body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y="2"],
 body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y="3"] {
   color: var(--menu-text-color);
 }
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="M15 6a9 9 0 0 0-9 9"],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg path[d="m15 10-4 4 4 4"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M15 6a9 9 0 0 0-9 9"],
+body.mod-windows.win-menu
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m15 10-4 4 4 4"],
 body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg polyline {
   fill: none;
 }
@@ -2542,7 +2865,9 @@ body.mod-windows.win-menu div.menu .menu-item .cmdr-menu-more-options:hover {
 body.mod-windows.win-menu div.menu .menu-item.is-disabled {
   opacity: 0.5;
 }
-body.mod-windows.win-menu div.menu .menu-item.selected:not(.is-disabled):not(.is-label) {
+body.mod-windows.win-menu
+  div.menu
+  .menu-item.selected:not(.is-disabled):not(.is-label) {
   background-color: rgba(54, 54, 54, 0.0431372549);
 }
 body.mod-windows.win-menu div.menu .menu-separator {
@@ -2554,7 +2879,9 @@ body.mod-windows.win-menu.theme-dark div.menu {
   background-color: rgba(32, 31, 33, 0.8352941176) !important;
   border-color: rgba(255, 255, 255, 0.062745098);
 }
-body.mod-windows.win-menu.theme-dark div.menu .menu-item.selected:not(.is-disabled):not(.is-label) {
+body.mod-windows.win-menu.theme-dark
+  div.menu
+  .menu-item.selected:not(.is-disabled):not(.is-label) {
   background-color: rgba(255, 255, 255, 0.062745098);
 }
 body.mod-windows.win-menu.theme-dark div.menu .menu-separator {
@@ -2578,22 +2905,66 @@ body.mod-windows.win-menu.enable-mica.theme-dark div.menu {
 }
 
 body:not(.vibrant).theme-dark {
-  --color-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 70%) !important;
-  --color-accent-1: hsl(var(--accent-h), calc(var(--accent-s) * 0.7), 80%) !important;
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 90%) !important;
+  --color-accent: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.6),
+    70%
+  ) !important;
+  --color-accent-1: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.7),
+    80%
+  ) !important;
+  --color-accent-2: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.8),
+    90%
+  ) !important;
   --primary: hsl(var(--accent-h), calc(var(--accent-s) * 0.75), 80%) !important;
-  --secondary: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 70%) !important;
-  --text-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 90%) !important;
-  --text-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 90%) !important;
+  --secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.4),
+    70%
+  ) !important;
+  --text-accent: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.4),
+    90%
+  ) !important;
+  --text-accent: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.4),
+    90%
+  ) !important;
 }
 
 body:not(.vibrant).theme-light {
-  --color-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 75%) !important;
-  --color-accent-1: hsl(var(--accent-h), calc(var(--accent-s) * 0.7), 80%) !important;
-  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 85%) !important;
+  --color-accent: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.8),
+    75%
+  ) !important;
+  --color-accent-1: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.7),
+    80%
+  ) !important;
+  --color-accent-2: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.6),
+    85%
+  ) !important;
   --primary: hsl(var(--accent-h), calc(var(--accent-s) * 0.86), 73%) !important;
-  --secondary: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 70%) !important;
-  --text-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 50%) !important;
+  --secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.6),
+    70%
+  ) !important;
+  --text-accent: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.6),
+    50%
+  ) !important;
 }
 
 body.theme-dark {
@@ -2617,7 +2988,11 @@ body.theme-dark {
   --secondary-container: var(--text-on-accent);
   --on-secondary-container: var(--color-accent-1);
   --tertiary-container: hsl(var(--accent-h), calc(var(--accent-s) * 0.5), 18%);
-  --on-tertiary-container: hsl(var(--accent-h), calc(var(--accent-s) * 0.5), 78%);
+  --on-tertiary-container: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.5),
+    78%
+  );
   --text-selection: hsl(var(--accent-h), calc(var(--accent-s) * 0.3), 20%);
 }
 
@@ -2644,7 +3019,11 @@ body.theme-light {
   --secondary-container: var(--text-on-accent);
   --on-secondary-container: var(--color-accent-1);
   --tertiary-container: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 66%);
-  --on-tertiary-container: hsl(var(--accent-h), calc(var(--accent-s) * 0.2), 12%);
+  --on-tertiary-container: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 0.2),
+    12%
+  );
   --interactive-hover: hsl(var(--accent-h), 15%, 85%);
   --text-selection: hsl(var(--accent-h), calc(var(--accent-s) * 0.5), 80%);
 }
@@ -2798,5 +3177,4 @@ settings:
         title: Customizable FAB action
         description: Uses the first button in the optional tab status bar for the FAB. Set an item of your choice to appear first using the Commander plugin to customize the FAB action.
         type: class-toggle
-    -
 */ /*# sourceMappingURL=theme.css.map */

@@ -96,7 +96,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -170,7 +171,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -192,29 +194,39 @@ body {
   --flair-color: var(--text-normal);
   --folder-color: rgb(var(--setting-color-dirs, var(--folder-color-rgb)));
   --folder-color-rgb: 245, 180, 0;
-  --folder-hover-color: rgba(var(--setting-color-dirs, var(--folder-color-rgb)), 0.24);
+  --folder-hover-color: rgba(
+    var(--setting-color-dirs, var(--folder-color-rgb)),
+    0.24
+  );
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -250,46 +262,61 @@ body {
   --graph-node-attachment: var(--color-yellow);
   --graph-node-focused: var(--setting-graph-node-focus, var(--accent-active));
   --graph-node-tag: var(--color-green);
-  --graph-node-unresolved: var(--setting-graph-node-unresolved, var(--text-faint));
+  --graph-node-unresolved: var(
+    --setting-graph-node-unresolved,
+    var(--text-faint)
+  );
   --graph-text: var(--text-normal);
   --h1-color: inherit;
   --h1-font: var(--setting-h1-font, var(--font-text));
-  --h1-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h1-size));
+  --h1-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h1-size)
+  );
   --h1-size: calc(var(--font-text-size) * var(--setting-h1-size, 1.6));
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 750;
   --h2-color: inherit;
   --h2-font: var(--setting-h2-font, var(--font-text));
-  --h2-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h2-size));
+  --h2-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h2-size)
+  );
   --h2-size: calc(var(--font-text-size) * var(--setting-h2-size, 1.5));
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 700;
   --h3-color: inherit;
   --h3-font: var(--setting-h3-font, var(--font-text));
-  --h3-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h3-size));
+  --h3-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h3-size)
+  );
   --h3-size: calc(var(--font-text-size) * var(--setting-h3-size, 1.4));
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 650;
   --h4-color: inherit;
   --h4-font: var(--setting-h4-font, var(--font-text));
-  --h4-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h4-size));
+  --h4-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h4-size)
+  );
   --h4-size: calc(var(--font-text-size) * var(--setting-h4-size, 1.3));
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 650;
   --h5-color: inherit;
   --h5-font: var(--setting-h5-font, var(--font-text));
-  --h5-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h5-size));
+  --h5-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h5-size)
+  );
   --h5-size: calc(var(--font-text-size) * var(--setting-h5-size, 1.2));
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
   --h6-font: var(--setting-h6-font, var(--font-text));
-  --h6-line-height: calc(var(--setting-line-height, var(--line-height-normal)) * var(--h6-size));
+  --h6-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h6-size)
+  );
   --h6-size: calc(var(--font-text-size) * var(--setting-h6-size, 1.1));
   --h6-style: normal;
   --h6-variant: normal;
@@ -348,8 +375,14 @@ body {
   --interactive-normal: var(--color-base-00);
   --italic-color: var(--setting-text-italic-color, var(--color-red));
   --italic-weight: inherit;
-  --kanban-board-bg: var(--setting-kanban-board-bg, hsl(var(--background-secondary-hsl)));
-  --kanban-item-bg: var(--setting-kanban-item-bg, hsl(var(--background-primary-hsl)));
+  --kanban-board-bg: var(
+    --setting-kanban-board-bg,
+    hsl(var(--background-secondary-hsl))
+  );
+  --kanban-item-bg: var(
+    --setting-kanban-item-bg,
+    hsl(var(--background-primary-hsl))
+  );
   --kanban-item-color: var(--setting-kanban-item-color, var(--text-normal));
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -432,8 +465,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -441,7 +476,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: min(85vh, var(--modal-max-height));
@@ -471,7 +509,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: calc(var(--size-4-4) * 0.9);
   --nav-item-weight: inherit;
@@ -489,7 +528,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -513,7 +553,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -690,7 +733,10 @@ body {
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: var(--setting-text-highlight-bg, rgba(var(--color-yellow-rgb), 0.3));
+  --text-highlight-bg: var(
+    --setting-text-highlight-bg,
+    rgba(var(--color-yellow-rgb), 0.3)
+  );
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
@@ -1375,9 +1421,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1565,12 +1615,20 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 18%, 14%));
+  --active-line: var(
+    --setting-line-active-color,
+    hsl(var(--accent-h), 18%, 14%)
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 24%), 24%);
+  --calendar-weekend-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 24%),
+    24%
+  );
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1613,10 +1671,12 @@ svg.svg-icon {
   --color-yellow-rgb: 224, 222, 113;
   --folder-inactive: 70%;
   --highlight-mix-blend-mode: darken;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -1634,9 +1694,11 @@ svg.svg-icon {
     60%
   );
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23eee" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
@@ -1644,11 +1706,19 @@ svg.svg-icon {
 }
 
 .theme-light {
-  --active-line: var(--setting-line-active-color, hsl(var(--accent-h), 24%, 92%));
+  --active-line: var(
+    --setting-line-active-color,
+    hsl(var(--accent-h), 24%, 92%)
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-secondary-alt: var(--color-base-05);
-  --calendar-weekend-bg: hsla(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 24%), 24%);
+  --calendar-weekend-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 24%),
+    24%
+  );
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1691,10 +1761,14 @@ svg.svg-icon {
   --color-yellow-rgb: 224, 172, 0;
   --folder-inactive: 85%;
   --highlight-mix-blend-mode: darken;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --ribbon-background: hsla(
@@ -1704,9 +1778,11 @@ svg.svg-icon {
     60%
   );
   --select-bg-img: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23222" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>');
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   color-scheme: light;
 }

@@ -341,7 +341,8 @@ h1 {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--text-accent);
   color: var(--text-normal);
-  font-family: Cairo, Roboto, Inter, Mod, "Segoe UI", Consolas, Inter, sans-serif;
+  font-family:
+    Cairo, Roboto, Inter, Mod, "Segoe UI", Consolas, Inter, sans-serif;
 }
 h2 {
   font-size: 26px;
@@ -663,15 +664,21 @@ input[type="number"] {
 
 /* ===== view header color ==========*/
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   background-color: var(--background-secondary-alt);
   border-bottom: 2.5px solid var(--text-accent);
 }
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   border-top-left-radius: 0px;
 }
 
@@ -682,7 +689,9 @@ input[type="number"] {
 }
 
 /*==== separators =====*/
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+.workspace-split.mod-root
+  .workspace-split.mod-vertical
+  .workspace-leaf-content {
   padding-right: 0px;
 }
 .workspace-leaf-resize-handle {
@@ -714,7 +723,8 @@ input[type="number"] {
   cursor: pointer;
   position: relative;
 }
-.side-dock-collapsible-section-header.is-collapsed .side-dock-collapsible-section-header-indicator {
+.side-dock-collapsible-section-header.is-collapsed
+  .side-dock-collapsible-section-header-indicator {
   transform: translateX(-9px) translateY(7px) rotate(-90deg);
 }
 .side-dock-collapsible-section-header-indicator {
@@ -2134,33 +2144,74 @@ body.is-translucent {
 /*=============== FOCUS MODE by death_au + transparency mod ================*/
 .cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line,
 .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-link,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-internal-link,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-hmd-internal-link,
 .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-url,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-escape-backslash,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-inline-code,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line.HyperMD-codeblock,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-builtin,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-hmd-escape-backslash,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-inline-code,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > pre.CodeMirror-line.HyperMD-codeblock,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-hashtag,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-builtin,
 .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-footref,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-footref,
 .cm-s-obsidian
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   pre.HyperMD-footnote
   span.cm-hmd-footnote,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-highlight,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-highlight,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-list,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-highlight,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-highlight,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-list,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task,
 .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-quote,
 .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-math,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.hmd-fold-math-placeholder {
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.hmd-fold-math-placeholder {
   opacity: 0.7;
   filter: saturate(0.7);
 }
 
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-highlight,
-.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-highlight {
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-highlight,
+.cm-s-obsidian
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-highlight {
   background-color: transparent;
 }
 .CodeMirror-activeline {

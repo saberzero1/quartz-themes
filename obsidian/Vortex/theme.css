@@ -118,12 +118,42 @@ body {
 /* HEADING - GRADIENT UNDERLINE STYLES */
 .markdown-preview-section,
 .HyperMD-header {
-  --gradient-h1: linear-gradient(to right, #00c8ff, #ff00d0 45%, var(--background-primary) 90%);
-  --gradient-h2: linear-gradient(to right, #f9ff4f, #f35b35 40%, var(--background-primary) 80%);
-  --gradient-h3: linear-gradient(to right, #ff1793, #ca0aff 35%, var(--background-primary) 70%);
-  --gradient-h4: linear-gradient(to right, #9d50bb, #6e48aa 30%, var(--background-primary) 60%);
-  --gradient-h5: linear-gradient(to right, #43e97b, #38f9d7 25%, var(--background-primary) 50%);
-  --gradient-h6: linear-gradient(to right, #fc46c2, #3f5efb 22%, var(--background-primary) 45%);
+  --gradient-h1: linear-gradient(
+    to right,
+    #00c8ff,
+    #ff00d0 45%,
+    var(--background-primary) 90%
+  );
+  --gradient-h2: linear-gradient(
+    to right,
+    #f9ff4f,
+    #f35b35 40%,
+    var(--background-primary) 80%
+  );
+  --gradient-h3: linear-gradient(
+    to right,
+    #ff1793,
+    #ca0aff 35%,
+    var(--background-primary) 70%
+  );
+  --gradient-h4: linear-gradient(
+    to right,
+    #9d50bb,
+    #6e48aa 30%,
+    var(--background-primary) 60%
+  );
+  --gradient-h5: linear-gradient(
+    to right,
+    #43e97b,
+    #38f9d7 25%,
+    var(--background-primary) 50%
+  );
+  --gradient-h6: linear-gradient(
+    to right,
+    #fc46c2,
+    #3f5efb 22%,
+    var(--background-primary) 45%
+  );
 }
 
 /* **************************************************** */
@@ -563,7 +593,9 @@ button.mod-cta {
   background: var(--accent-opacity-20);
 }
 
-.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left .clickable-icon {
+.workspace.is-left-sidedock-open
+  .sidebar-toggle-button.mod-left
+  .clickable-icon {
   color: var(--theme-color);
   background: var(--accent-opacity-10);
   outline: 3px solid var(--accent-opacity-60);
@@ -617,8 +649,10 @@ button.mod-cta {
 /* |                                                             | */
 /* +-------------------------------------------------------------+ */
 
-.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tab-header.tappable,
-.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header.tappable {
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split
+  .workspace-tab-header.tappable,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+  .workspace-tab-header.tappable {
   opacity: 0.8;
 }
 
@@ -650,8 +684,10 @@ button.mod-cta {
   color: var(--theme-color);
 }
 
-.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tab-header.tappable:hover,
-.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header.tappable:hover {
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split
+  .workspace-tab-header.tappable:hover,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+  .workspace-tab-header.tappable:hover {
   opacity: 1;
   background-color: var(--accent-opacity-5);
 }
@@ -673,7 +709,9 @@ button.mod-cta {
   border-radius: 8px;
 }
 
-.workspace-split.mod-vertical.mod-root .workspace-tab-header.tappable .workspace-tab-header-inner {
+.workspace-split.mod-vertical.mod-root
+  .workspace-tab-header.tappable
+  .workspace-tab-header-inner {
   border: 2px solid transparent;
   border-radius: 8px;
 }
@@ -699,7 +737,9 @@ button.mod-cta {
   background-color: var(--accent-opacity-20);
 }
 
-.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right .clickable-icon {
+.workspace.is-right-sidedock-open
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
   color: var(--theme-color);
   background: var(--accent-opacity-10);
   outline: 3px solid var(--accent-opacity-50);
@@ -810,7 +850,11 @@ button.mod-cta {
 }
 /* Adds a subtle gradient to the underline in editor mode. */
 .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
-  background-image: linear-gradient(to bottom, var(--sub-accent-60) 0%, var(--sub-accent-60) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--sub-accent-60) 0%,
+    var(--sub-accent-60) 100%
+  );
 }
 
 /* Dims the color of Markdown formatting characters for links. */
@@ -835,7 +879,11 @@ button.mod-cta {
   background-size: 100% 18%;
   text-decoration: none;
   transition: background 350ms ease-in-out;
-  background-image: linear-gradient(to bottom, var(--sub-accent-60) 0%, var(--sub-accent-60) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--sub-accent-60) 0%,
+    var(--sub-accent-60) 100%
+  );
 }
 
 /* Applies unhover animation to internal and external links. */
@@ -959,7 +1007,9 @@ a:hover,
   ),
 .markdown-preview-view code {
   overflow-wrap: break-word;
-  background-color: var(--accent-opacity-10); /* Light background for inline code */
+  background-color: var(
+    --accent-opacity-10
+  ); /* Light background for inline code */
   word-wrap: break-word;
   padding: 0 5px;
   border-radius: 0.3rem; /* Rounded corners */
@@ -1110,7 +1160,10 @@ pre[class$="python"]:before {
   border-width: var(--callout-border-width);
   border-radius: var(--callout-radius);
   margin: 1em 0;
-  background-color: rgba(var(--callout-color), var(--callout-background-opacity));
+  background-color: rgba(
+    var(--callout-color),
+    var(--callout-background-opacity)
+  );
   padding: var(--callout-padding);
 }
 

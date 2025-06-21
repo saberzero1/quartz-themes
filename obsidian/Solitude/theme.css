@@ -20,21 +20,73 @@
   --color-blue: #027aff;
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
-  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
-  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(3% + var(--color-base-l)));
-  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(4% + var(--color-base-l)));
-  --color-base-25: hsl(var(--color-base-h), var(--color-base-s), calc(7% + var(--color-base-l)));
-  --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(8% + var(--color-base-l)));
-  --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(14% + var(--color-base-l)));
-  --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(22% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(29% + var(--color-base-l)));
-  --color-base-60: hsl(var(--color-base-h), var(--color-base-s), calc(49% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(62% + var(--color-base-l)));
-  --color-base-100: hsl(var(--color-base-h), var(--color-base-s), calc(74% + var(--color-base-l)));
+  --color-base-00: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    var(--color-base-l)
+  );
+  --color-base-10: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(3% + var(--color-base-l))
+  );
+  --color-base-20: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(4% + var(--color-base-l))
+  );
+  --color-base-25: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(7% + var(--color-base-l))
+  );
+  --color-base-30: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(8% + var(--color-base-l))
+  );
+  --color-base-35: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(14% + var(--color-base-l))
+  );
+  --color-base-40: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(22% + var(--color-base-l))
+  );
+  --color-base-50: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(29% + var(--color-base-l))
+  );
+  --color-base-60: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(49% + var(--color-base-l))
+  );
+  --color-base-70: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(62% + var(--color-base-l))
+  );
+  --color-base-100: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(74% + var(--color-base-l))
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 15%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 15%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 15%)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-accent-1);
@@ -44,20 +96,36 @@
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     2px 2px 1px 0 rgba(0, 0, 0, 0.6);
-  --input-shadow-hover: inset 0 1px 1px 1px rgba(255, 255, 255, 0.2),
+  --input-shadow-hover:
+    inset 0 1px 1px 1px rgba(255, 255, 255, 0.2),
     3px 3px 3px 0 rgba(0, 0, 0, 0.75);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 .is-mobile.theme-dark {
-  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
-  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(3% + var(--color-base-l)));
-  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(4% + var(--color-base-l)));
+  --color-base-00: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    var(--color-base-l)
+  );
+  --color-base-10: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(3% + var(--color-base-l))
+  );
+  --color-base-20: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(4% + var(--color-base-l))
+  );
   --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
   --modal-background: var(--background-secondary);
   --search-result-background: var(--background-secondary);
@@ -91,23 +159,83 @@
   --color-blue: #027aff;
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
-  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
-  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(-7% + var(--color-base-l)));
-  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(-10% + var(--color-base-l)));
-  --color-base-25: hsl(var(--color-base-h), var(--color-base-s), calc(-12% + var(--color-base-l)));
-  --color-base-30: hsl(var(--color-base-h), var(--color-base-s), calc(-18% + var(--color-base-l)));
-  --color-base-35: hsl(var(--color-base-h), var(--color-base-s), calc(-20% + var(--color-base-l)));
-  --color-base-40: hsl(var(--color-base-h), var(--color-base-s), calc(-28% + var(--color-base-l)));
-  --color-base-50: hsl(var(--color-base-h), var(--color-base-s), calc(-36% + var(--color-base-l)));
-  --color-base-60: hsl(var(--color-base-h), var(--color-base-s), calc(-49% + var(--color-base-l)));
-  --color-base-70: hsl(var(--color-base-h), var(--color-base-s), calc(-62% + var(--color-base-l)));
-  --color-base-80: hsl(var(--color-base-h), var(--color-base-s), calc(-78% + var(--color-base-l)));
-  --color-base-90: hsl(var(--color-base-h), var(--color-base-s), calc(-84% + var(--color-base-l)));
-  --color-base-100: hsl(var(--color-base-h), var(--color-base-s), calc(-94% + var(--color-base-l)));
+  --color-base-00: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    var(--color-base-l)
+  );
+  --color-base-10: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-7% + var(--color-base-l))
+  );
+  --color-base-20: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-10% + var(--color-base-l))
+  );
+  --color-base-25: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-12% + var(--color-base-l))
+  );
+  --color-base-30: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-18% + var(--color-base-l))
+  );
+  --color-base-35: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-20% + var(--color-base-l))
+  );
+  --color-base-40: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-28% + var(--color-base-l))
+  );
+  --color-base-50: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-36% + var(--color-base-l))
+  );
+  --color-base-60: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-49% + var(--color-base-l))
+  );
+  --color-base-70: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-62% + var(--color-base-l))
+  );
+  --color-base-80: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-78% + var(--color-base-l))
+  );
+  --color-base-90: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-84% + var(--color-base-l))
+  );
+  --color-base-100: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-94% + var(--color-base-l))
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 5%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-accent-1);
@@ -117,20 +245,36 @@
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     2px 2px 1px 0 rgba(0, 0, 0, 0.6);
-  --input-shadow-hover: inset 0 1px 1px 1px rgba(255, 255, 255, 0.2),
+  --input-shadow-hover:
+    inset 0 1px 1px 1px rgba(255, 255, 255, 0.2),
     3px 3px 3px 0 rgba(0, 0, 0, 0.75);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 .is-mobile.theme-light {
-  --color-base-00: hsl(var(--color-base-h), var(--color-base-s), var(--color-base-l));
-  --color-base-10: hsl(var(--color-base-h), var(--color-base-s), calc(-7% + var(--color-base-l)));
-  --color-base-20: hsl(var(--color-base-h), var(--color-base-s), calc(-10% + var(--color-base-l)));
+  --color-base-00: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    var(--color-base-l)
+  );
+  --color-base-10: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-7% + var(--color-base-l))
+  );
+  --color-base-20: hsl(
+    var(--color-base-h),
+    var(--color-base-s),
+    calc(-10% + var(--color-base-l))
+  );
   --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
   --modal-background: var(--background-secondary);
   --search-result-background: var(--background-secondary);
@@ -206,7 +350,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -262,7 +407,8 @@ body {
   --embed-border-bottom: none;
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File */
   --file-line-width: 700px;
@@ -453,7 +599,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Popover */
@@ -468,7 +617,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radius */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -986,11 +1138,13 @@ body:not(.is-mobile) .workspace > .workspace-split {
   height: calc(100% - var(--panel-spacing));
 }
 
-body:not(.is-mobile):is(.has-custom-background) .workspace-split.mod-left-split {
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-split.mod-left-split {
   margin-left: var(--panel-spacing);
 }
 
-body:not(.is-mobile):is(.has-custom-background) .workspace-split.mod-right-split {
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-split.mod-right-split {
   margin-right: var(--panel-spacing);
 }
 
@@ -1003,9 +1157,15 @@ body:not(.is-mobile):is(.has-custom-background)
   .workspace-split.mod-root
   .workspace-tab-header:not(.is-active)
   .workspace-tab-header-inner,
-body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-tab-list .clickable-icon,
-body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-new-tab .clickable-icon,
-body:not(.is-mobile):is(.has-custom-background) .sidebar-toggle-button .clickable-icon {
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-tab-header-tab-list
+  .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-tab-header-new-tab
+  .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background)
+  .sidebar-toggle-button
+  .clickable-icon {
   background-color: var(--color-base-25);
 }
 
@@ -1016,8 +1176,12 @@ body:not(.is-mobile):is(.has-custom-background)
 body:not(.is-mobile):is(.has-custom-background)
   .workspace-tab-header-tab-list:hover
   .clickable-icon,
-body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-new-tab:hover .clickable-icon,
-body:not(.is-mobile):is(.has-custom-background) .sidebar-toggle-button:hover .clickable-icon {
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-tab-header-new-tab:hover
+  .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background)
+  .sidebar-toggle-button:hover
+  .clickable-icon {
   background-color: var(--color-base-30);
 }
 
@@ -1058,10 +1222,15 @@ body:not(.is-mobile) .workspace > .workspace-split:not(.mod-root) {
   margin: 0px var(--panel-spacing) 0 0;
 }
 
-body:not(.is-mobile) .workspace > .workspace-split:not(.mod-root, .mod-left-split),
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split:not(.mod-root, .mod-left-split),
 body:not(.is-mobile)
   .workspace-split.mod-vertical
-  > :is(.workspace-split:not(:nth-child(2)), .workspace-tabs:not(:nth-child(2))) {
+  > :is(
+    .workspace-split:not(:nth-child(2)),
+    .workspace-tabs:not(:nth-child(2))
+  ) {
   margin-left: var(--panel-spacing);
 }
 
@@ -1076,7 +1245,10 @@ body:not(.is-mobile)
   height: 24px;
 }
 
-.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner {
   background-color: var(--tab-background-active);
   border-color: var(--divider-color);
   box-shadow: var(--input-shadow);
@@ -1102,7 +1274,9 @@ body:is(.show-file-first-letter)
   left: 6px;
 }
 
-.workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+.workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
 .mod-root .workspace-tabs .workspace-leaf,
 .view-header,
 .is-focused .workspace-leaf.mod-active .view-header {
@@ -1564,7 +1738,8 @@ a.external-link[href*="reactjs.org"]::before {
   background-color: var(--color-base-10);
 }
 
-.workspace-split.mod-horizontal:is(.mod-right-split, .mod-left-split) .kanban-plugin {
+.workspace-split.mod-horizontal:is(.mod-right-split, .mod-left-split)
+  .kanban-plugin {
   background-color: var(--background-secondary);
 }
 

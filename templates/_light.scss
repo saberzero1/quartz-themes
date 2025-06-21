@@ -1,9 +1,19 @@
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
 
   //%%LIGHT%%
 
   .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 

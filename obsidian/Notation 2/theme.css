@@ -130,10 +130,12 @@
 
 /* --------- fonts ---------- */
 body {
-  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
-    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-default:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-text: var(--font-default);
-  --font-monospace-default: "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
+  --font-monospace-default:
+    "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-bold: 500;
 }
 
@@ -462,14 +464,18 @@ div.nav-header {
   color: transparent;
 }
 
-.embedded-backlinks .tree-item-self.is-clickable[aria-label] .tree-item-inner::before {
+.embedded-backlinks
+  .tree-item-self.is-clickable[aria-label]
+  .tree-item-inner::before {
   content: "Linked to this page";
   position: absolute;
   color: var(--text-muted);
   font-size: var(--font-ui-smaller);
 }
 
-.embedded-backlinks .tree-item-self.is-clickable[aria-label]:nth-child(3) .tree-item-inner,
+.embedded-backlinks
+  .tree-item-self.is-clickable[aria-label]:nth-child(3)
+  .tree-item-inner,
 .embedded-backlinks
   .tree-item-self.is-clickable[aria-label]:nth-child(3)
   + .search-result-container {
@@ -659,16 +665,19 @@ div.nav-header {
 /* ------------ font selections ---------- */
 .serif,
 .serif .cm-sizer {
-  font-family: "Lyons Serif", "Gambetta", "Lyon-Text", Georgia, ui-serif, serif !important;
+  font-family:
+    "Lyons Serif", "Gambetta", "Lyon-Text", Georgia, ui-serif, serif !important;
 }
 .sans,
 .sans .cm-sizer {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
-    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
 .mono,
 .mono .cm-sizer {
-  font-family: "iA Writer Duospace", "Nitti", Menlo, Courier, monospace !important;
+  font-family:
+    "iA Writer Duospace", "Nitti", Menlo, Courier, monospace !important;
 }
 
 body.default-serif {
@@ -1025,17 +1034,29 @@ body {
 }
 .markdown-preview-section > div a.tag:nth-of-type(10n + 1),
 .HyperMD-list-line
-  > :is(span.cm-hashtag:nth-of-type(20n + 2), span.cm-hashtag:nth-of-type(20n + 2) + .cm-hashtag),
+  > :is(
+    span.cm-hashtag:nth-of-type(20n + 2),
+    span.cm-hashtag:nth-of-type(20n + 2) + .cm-hashtag
+  ),
 .cm-line
-  > :is(span.cm-hashtag-begin:nth-of-type(10n + 1), span.cm-hashtag-end:nth-of-type(20n + 2)) {
+  > :is(
+    span.cm-hashtag-begin:nth-of-type(10n + 1),
+    span.cm-hashtag-end:nth-of-type(20n + 2)
+  ) {
   background-color: var(--tag-1, var(--tag-1-default));
 }
 :is(
   .markdown-preview-section > div a.tag:nth-of-type(10n + 2),
   .HyperMD-list-line
-    > :is(span.cm-hashtag:nth-of-type(20n + 4), span.cm-hashtag:nth-of-type(20n + 4) + .cm-hashtag),
+    > :is(
+      span.cm-hashtag:nth-of-type(20n + 4),
+      span.cm-hashtag:nth-of-type(20n + 4) + .cm-hashtag
+    ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 3), span.cm-hashtag-end:nth-of-type(20n + 4))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 3),
+      span.cm-hashtag-end:nth-of-type(20n + 4)
+    )
 ) {
   background-color: var(--tag-2-default);
 }
@@ -1043,9 +1064,15 @@ body {
 :is(
   .markdown-preview-section > div a.tag:nth-of-type(10n + 3),
   .HyperMD-list-line
-    > :is(span.cm-hashtag:nth-of-type(20n + 6), span.cm-hashtag:nth-of-type(20n + 6) + .cm-hashtag),
+    > :is(
+      span.cm-hashtag:nth-of-type(20n + 6),
+      span.cm-hashtag:nth-of-type(20n + 6) + .cm-hashtag
+    ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 5), span.cm-hashtag-end:nth-of-type(20n + 6))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 5),
+      span.cm-hashtag-end:nth-of-type(20n + 6)
+    )
 ) {
   background-color: var(--tag-3-default);
 }
@@ -1053,9 +1080,15 @@ body {
 :is(
   .markdown-preview-section > div a.tag:nth-of-type(10n + 4),
   .HyperMD-list-line
-    > :is(span.cm-hashtag:nth-of-type(20n + 8), span.cm-hashtag:nth-of-type(20n + 8) + .cm-hashtag),
+    > :is(
+      span.cm-hashtag:nth-of-type(20n + 8),
+      span.cm-hashtag:nth-of-type(20n + 8) + .cm-hashtag
+    ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 7), span.cm-hashtag-end:nth-of-type(20n + 8))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 7),
+      span.cm-hashtag-end:nth-of-type(20n + 8)
+    )
 ) {
   background-color: var(--tag-4-default);
 }
@@ -1068,7 +1101,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 10) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 9), span.cm-hashtag-end:nth-of-type(20n + 10))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 9),
+      span.cm-hashtag-end:nth-of-type(20n + 10)
+    )
 ) {
   background-color: var(--tag-5, var(--tag-5-default));
 }
@@ -1081,7 +1117,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 12) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 11), span.cm-hashtag-end:nth-of-type(20n + 12))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 11),
+      span.cm-hashtag-end:nth-of-type(20n + 12)
+    )
 ) {
   background-color: var(--tag-6, var(--tag-6-default));
 }
@@ -1093,7 +1132,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 14) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 13), span.cm-hashtag-end:nth-of-type(20n + 14))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 13),
+      span.cm-hashtag-end:nth-of-type(20n + 14)
+    )
 ) {
   background-color: var(--tag-7-default);
 }
@@ -1105,7 +1147,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 16) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 15), span.cm-hashtag-end:nth-of-type(20n + 16))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 15),
+      span.cm-hashtag-end:nth-of-type(20n + 16)
+    )
 ) {
   background-color: var(--tag-8-default);
 }
@@ -1117,7 +1162,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 18) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 17), span.cm-hashtag-end:nth-of-type(20n + 18))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 17),
+      span.cm-hashtag-end:nth-of-type(20n + 18)
+    )
 ) {
   background-color: var(--tag-9-default);
 }
@@ -1129,7 +1177,10 @@ body {
       span.cm-hashtag:nth-of-type(20n + 20) + .cm-hashtag
     ),
   .cm-line
-    > :is(span.cm-hashtag-begin:nth-of-type(20n + 19), span.cm-hashtag-end:nth-of-type(20n + 20))
+    > :is(
+      span.cm-hashtag-begin:nth-of-type(20n + 19),
+      span.cm-hashtag-end:nth-of-type(20n + 20)
+    )
 ) {
   background-color: var(--tag-10-default);
 }
@@ -1281,7 +1332,8 @@ body {
 }
 
 .wys .markdown-source-view.mod-cm6 .cm-line {
-  padding: calc(var(--custom-line-height) / 3) 0px calc(var(--custom-line-height) / 3) 0px;
+  padding: calc(var(--custom-line-height) / 3) 0px
+    calc(var(--custom-line-height) / 3) 0px;
   line-height: var(--custom-line-height) !important;
 }
 
@@ -1292,7 +1344,8 @@ body {
 .wys .markdown-rendered h4,
 .wys .markdown-rendered h5,
 .wys .markdown-rendered h6 {
-  margin: var(--custom-line-height) 0px calc(var(--custom-line-height) * 0.4) 0px !important;
+  margin: var(--custom-line-height) 0px calc(var(--custom-line-height) * 0.4)
+    0px !important;
   padding: 0.1em 0.15em 0.2em 0.15em;
   width: 100%;
 }

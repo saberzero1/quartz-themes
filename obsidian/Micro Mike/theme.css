@@ -37,644 +37,644 @@ body:is(.outsideSidebar_RBA, .insideSidebar_RBA) {
 name: Micro Mike
 id: MicroMike
 settings:
-	-
-		id: settingsHoverPreview
-		title: Settings Hover Preview
-		description: With this on, you can preview your Obsidian appearance by simply putting the cursor outside of the settings window. 
-		type: class-toggle
-		default: true
-	- 
-		id: this-is-a-heading
-		title: Colors & Style
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: palette
-		title: Color Palette
-		description: Colors in window. If you add another theme before this, it will be used in "inherit", or just the usual Obsidian colors.
-		type: class-select
-		allowEmpty: false
-		default: dtm08
-		options:
-			- inherit
-			- accentMicroMike
-			- classicMicroMike
-			- dtm08
-			- factorio
-	-
-		id: disableBevels
-		title: Disable Bevels 
-		description: Disable bevels, resulting in a more minimalist appearance.
-		type: class-toggle
-	- 
-		id: text-normal
-		title: Primary Text Color
-		type: variable-color
-		opacity: false
-		format: hex
-		default: '#a3a5aa'
-	-
-		id: enableNewIcons
-		title: Enable XP-style Icons
-		description: Enable colorful XP-style icons to replace flat SVG icons. This is only done where the icons are supported. (Not supported with dtm08)
-		type: class-toggle
-	-
-		id: blendDropdown
-		title: Blender Style Dropdowns
-		description: Enable Blender 2.7esque dropdowns. 
-		type: class-toggle
-	-
-		id: win7bar
-		title: Windows 7 Title Bar
-		description: Enable Windows 7 Title Bar and Frame.
-		type: class-toggle
-	- 
-		id: this-is-a-heading
-		title: Accent Palette Specific Settings
-		type: heading
-		level: 3
-		collapsed: true
-	-
-		id: colorIntensity
-		title: Color Intensity Multiplier (Accent Only)
-		description: Determine Micro Mike Palette color brightness.
-		type: variable-number-slider
-		default: 1
-		min: 0
-		max: 2
-		step: 0.05
-		format: 
-	-
-		id: colorIntensityBevel
-		title: Bevel Color Intensity Multiplier (Accent Only)
-		description: Determine Micro Mike Palette color brightness for bevel.
-		type: variable-number-slider
-		default: 1
-		min: 0
-		max: 2
-		step: 0.05
-		format: 
-	-
-		id: linkBrightnessAdditive
-		title: Link Brightness Intensity Multiplier (Accent Only)
-		description: Determine Micro Mike Palette additive brightness for link.
-		type: variable-number-slider
-		default: 0.85
-		min: 0.5
-		max: 2
-		step: 0.05
-		format: 
-	- 
-		id: this-is-a-heading-a
-		title: DTM08 Specific Settings
-		type: heading
-		level: 3
-		collapsed: true
-	-
-		id: dtm08GradientEditorMode
-		title: Enable Gradient in Editor Mode
-		type: class-toggle
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Shared UI Components (Scrollbar, Drag bars, Resize bars, Ribbon...)
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: handleSize
-		title: Resize Bars Size
-		description: The size of the resize bars for each of the sidebars.
-		type: variable-number-slider
-		default: 16
-		min: 4
-		max: 30
-		step: 2
-		format: px
-	-
-		id: scrollBarSize
-		title: Scroll Bar Size
-		description: The width of the scrollbar on the side. 
-		type: variable-number-slider
-		default: 16
-		min: 4
-		max: 30
-		step: 2
-		format: px
-	-
-		id: ribbon-width
-		title: Ribbon Width
-		description: The width of the space occupied by the ribbon.
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: ribbonButtonHeight
-		title: Ribbon Button Height
-		description: The height of the ribbon buttons.
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: disableFastClose
-		title: Disable Sidebar Fast Close
-		description: Micro Mike uses a hack to make sidebars disappear immediately upon pressing the button. This disables that.
-		type: class-toggle
-	-
-		id: extendRightSidebarMinimum
-		title: Extend Right Sidebar Minimum Width
-		description: With the right sidebar button now on the task bar, Micro Mike makes the right sidebar longer to compensate - if you want.
-		type: class-toggle
-		default: true
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Text Editor
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: editorDashboardHeight
-		title: Editor Dashboard Height
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: editorDashboardButtonsWidth
-		title: Editor Dashboard Buttons Width %
-		type: variable-number-slider
-		default: 20
-		min: 5
-		max: 33
-		step: 1
-		format: "%"
-	-
-		id: file-line-width
-		title: Text Window Length
-		description: Size of text window in text editor. 
-		type: variable-number-slider
-		default: 700
-		min: 300
-		max: 1800
-		step: 50
-		format: px
-	-
-		id: centerAlignReadableLength
-		title: Center Align Readable Line Length
-		description: Undo modified left-aligned readable line length to normal standard.
-		type: class-toggle
-	-
-		id: propertiesDisable
-		title: Disable Properties Display in Preview / Live Preview (Still avail. in Source Mode)
-		type: class-toggle
-	- 
-		id: disableToplinks
-		title: Disable Toplinks
-		description: By default, Micro Mike modifies the Backlinks plugin's optional footer display to display at the top a simple set of links leading to your current document. 
-		type: class-toggle	
-	- 
-		id: disableSimpleEditor
-		title: Disable Simple Editor
-		description: This switch disables the line-height focused modifications to the editor.
-		type: class-toggle
-	-
-		id: lineMultiplier
-		title: Line Height Multiplier
-		description: Line height for simple editor. 
-		type: variable-number-slider
-		default: 1.25
-		min: 1
-		max: 2
-		step: 0.05
-	- 
-		id: disableSECodeblock
-		title: Disable Simple Editor Code Block
-		description: This switch disables the modified, line-height aligned codeblocks.
-		type: class-toggle
-	- 
-		id: disableSECallout
-		title: Disable Simple Editor Callout
-		description: This switch disables the modified, line-height aligned callout.
-		type: class-toggle
-	-
-		id: enablePreviewCulling
-		title: Re-Enable Dynamic Unloading in Text Preview
-		type: class-toggle
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Tabs & Sidebars
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: stackTabs
-		title: Stack the tabs
-		description: The tabs will be stacked.
-		type: class-toggle
-		default: true
-	-
-		id: editorStackWidth
-		title: Stack Tabs Width
-		description: The width of the stacked tabs. 
-		type: variable-number-slider
-		default: 200
-		min: 120
-		max: 300
-		step: 5
-		format: px
-	-
-		id: disableXButtons
-		title: Disable Tab X Buttons
-		description: Did you know you can close tabs by middle clicking on them?
-		type: class-toggle
-	-
-		id: tabTitleWordWrap
-		title: Tab Title Word Wrap
-		description: If there is space and the title is long enough, the text will now overflow onto more lines.
-		type: class-toggle
-	-
-		id: tabTitleCentered
-		title: Center Tab Titles
-		type: class-toggle
-	-
-		id: editorTabHeight
-		title: Editor (Non-Stack) Tab Height
-		description: Tab Height 
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: editorTabHeightStack
-		title: Editor Stack Tab Height
-		description: Tab Height 
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: sidebarTabHeight
-		title: Sidebar Tab Height
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: sidebarDashboardHeight
-		title: Sidebar Dashboard Height
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 5
-		format: px
-	-
-		id: cornerDragLocation
-		title: Corner Drag Location
-		description: This creates a space at the left corner where the window can be dragged.
-		type: class-toggle
-	-
-		id: editorDragSpace
-		title: Editor Drag Space
-		description: This creates a space at the right corner in editor tabs where the window can be dragged.
-		type: class-toggle
-	-
-		id: leftAlignedLeftSidebarButtonDisable
-		title: Disable Left Sidebar Button Corner Alignment
-		description: This allows you to disable the left corner positioning of the left sidebar button.
-		type: class-toggle
-	-
-		id: rightSidebarButtonAlignment
-		title: Right Sidebar Button Alignment
-		description: "This determines the alignment of the sidebar button.\n **titlebarAlign**: Acts as a fourth button on the titlebar.\n **outsideSidebar**: Creates a button on the outside of the sidebar to the right - this is the default behavior.\n **insideSidebar**: Creates a button inside the sidebar to the left."
-		type: class-select
-		allowEmpty: false
-		default: titlebarAlign_RBA
-		options:
-			- titlebarAlign_RBA
-			- outsideSidebar_RBA
-			- insideSidebar_RBA
-	- 
-		id: this-is-a-heading ---------------------------------------------------------------------------------------
-		title: Title Bar
-		type: heading
-		level: 2
-		collapsed: true
-	- 
-		id: dragSpaceHeight
-		title: Drag Space Height
-		type: variable-number-slider
-		default: 20
-		min: 0
-		max: 80
-		step: 5
-		format: px
-	-
-		id: disableRightTitlebarOffset
-		title: Disable Titlebar Spacing
-		description: Space is made for the titlebar buttons. If the drag space height is high enough, then it doesn't overlap even without this.
-		type: class-toggle
-	-
-		id: titlebarButtonWidth
-		title: Titlebar Button Width
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 2
-		format: px
-	-
-		id: titlebarButtonHeight
-		title: Titlebar Button Height
-		type: variable-number-slider
-		default: 40
-		min: 20
-		max: 80
-		step: 2
-		format: px
-	- 
-		id: this-is-a-heading ---------------------------------------------------------------------------------------
-		title: Tree Elements (File browser, outline, tag, search, backlinks...)
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: outlineLevelWidth
-		title: Hierarchical Display Width
-		description: The size of each level's separation. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
-		type: variable-number-slider
-		default: 16
-		min: 14
-		max: 40
-		step: 1
-		format: px
-	-
-		id: outlineLevelHeight
-		title: Hierarchical Display Height
-		description: The height of each section. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
-		type: variable-number-slider
-		default: 16
-		min: 14
-		max: 40
-		step: 1
-		format: px
-	-
-		id: outlineLevelFontSize
-		title: Hierarchical Display Font Size
-		description: The size of the fonts. Please adjust "Hierarchical Display Height" above to actually make the sections larger. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
-		type: variable-number-slider
-		default: 13
-		min: 9
-		max: 20
-		step: 1
-		format: px
-	-
-		id: treeWordWrap
-		title: Tree View Word Wrap
-		description: Enables word wrap in the file browser, ensuring full titles will be displayed.
-		type: class-toggle
-	-
-		id: boldFolders
-		title: Bold File Browser Folders
-		type: class-toggle
-		default: true	
-	-
-		id: fileBrowserLayeredBackground
-		title: Layered Background in File Browser Folders
-		description: Enable layered background in file browser. This helps perceive depth.
-		type: class-toggle
-		default: true
-	-
-		id: enableSidebarCulling
-		title: Re-Enable Dynamic Unloading for Sidebars
-		type: class-toggle
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Prompt Window
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: modalAlignment
-		title: Prompt Alignment
-		description: Pick the compass direction that the generic (file seeking, etc...) prompt is aligned to.
-		type: class-select
-		allowEmpty: false
-		default: modalSAlign
-		options:
-			- 
+    -
+        id: settingsHoverPreview
+        title: Settings Hover Preview
+        description: With this on, you can preview your Obsidian appearance by simply putting the cursor outside of the settings window. 
+        type: class-toggle
+        default: true
+    - 
+        id: this-is-a-heading
+        title: Colors & Style
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: palette
+        title: Color Palette
+        description: Colors in window. If you add another theme before this, it will be used in "inherit", or just the usual Obsidian colors.
+        type: class-select
+        allowEmpty: false
+        default: dtm08
+        options:
+            - inherit
+            - accentMicroMike
+            - classicMicroMike
+            - dtm08
+            - factorio
+    -
+        id: disableBevels
+        title: Disable Bevels 
+        description: Disable bevels, resulting in a more minimalist appearance.
+        type: class-toggle
+    - 
+        id: text-normal
+        title: Primary Text Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#a3a5aa'
+    -
+        id: enableNewIcons
+        title: Enable XP-style Icons
+        description: Enable colorful XP-style icons to replace flat SVG icons. This is only done where the icons are supported. (Not supported with dtm08)
+        type: class-toggle
+    -
+        id: blendDropdown
+        title: Blender Style Dropdowns
+        description: Enable Blender 2.7esque dropdowns. 
+        type: class-toggle
+    -
+        id: win7bar
+        title: Windows 7 Title Bar
+        description: Enable Windows 7 Title Bar and Frame.
+        type: class-toggle
+    - 
+        id: this-is-a-heading
+        title: Accent Palette Specific Settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: colorIntensity
+        title: Color Intensity Multiplier (Accent Only)
+        description: Determine Micro Mike Palette color brightness.
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 0.05
+        format: 
+    -
+        id: colorIntensityBevel
+        title: Bevel Color Intensity Multiplier (Accent Only)
+        description: Determine Micro Mike Palette color brightness for bevel.
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 0.05
+        format: 
+    -
+        id: linkBrightnessAdditive
+        title: Link Brightness Intensity Multiplier (Accent Only)
+        description: Determine Micro Mike Palette additive brightness for link.
+        type: variable-number-slider
+        default: 0.85
+        min: 0.5
+        max: 2
+        step: 0.05
+        format: 
+    - 
+        id: this-is-a-heading-a
+        title: DTM08 Specific Settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: dtm08GradientEditorMode
+        title: Enable Gradient in Editor Mode
+        type: class-toggle
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Shared UI Components (Scrollbar, Drag bars, Resize bars, Ribbon...)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: handleSize
+        title: Resize Bars Size
+        description: The size of the resize bars for each of the sidebars.
+        type: variable-number-slider
+        default: 16
+        min: 4
+        max: 30
+        step: 2
+        format: px
+    -
+        id: scrollBarSize
+        title: Scroll Bar Size
+        description: The width of the scrollbar on the side. 
+        type: variable-number-slider
+        default: 16
+        min: 4
+        max: 30
+        step: 2
+        format: px
+    -
+        id: ribbon-width
+        title: Ribbon Width
+        description: The width of the space occupied by the ribbon.
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: ribbonButtonHeight
+        title: Ribbon Button Height
+        description: The height of the ribbon buttons.
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: disableFastClose
+        title: Disable Sidebar Fast Close
+        description: Micro Mike uses a hack to make sidebars disappear immediately upon pressing the button. This disables that.
+        type: class-toggle
+    -
+        id: extendRightSidebarMinimum
+        title: Extend Right Sidebar Minimum Width
+        description: With the right sidebar button now on the task bar, Micro Mike makes the right sidebar longer to compensate - if you want.
+        type: class-toggle
+        default: true
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Text Editor
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: editorDashboardHeight
+        title: Editor Dashboard Height
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: editorDashboardButtonsWidth
+        title: Editor Dashboard Buttons Width %
+        type: variable-number-slider
+        default: 20
+        min: 5
+        max: 33
+        step: 1
+        format: "%"
+    -
+        id: file-line-width
+        title: Text Window Length
+        description: Size of text window in text editor. 
+        type: variable-number-slider
+        default: 700
+        min: 300
+        max: 1800
+        step: 50
+        format: px
+    -
+        id: centerAlignReadableLength
+        title: Center Align Readable Line Length
+        description: Undo modified left-aligned readable line length to normal standard.
+        type: class-toggle
+    -
+        id: propertiesDisable
+        title: Disable Properties Display in Preview / Live Preview (Still avail. in Source Mode)
+        type: class-toggle
+    - 
+        id: disableToplinks
+        title: Disable Toplinks
+        description: By default, Micro Mike modifies the Backlinks plugin's optional footer display to display at the top a simple set of links leading to your current document. 
+        type: class-toggle    
+    - 
+        id: disableSimpleEditor
+        title: Disable Simple Editor
+        description: This switch disables the line-height focused modifications to the editor.
+        type: class-toggle
+    -
+        id: lineMultiplier
+        title: Line Height Multiplier
+        description: Line height for simple editor. 
+        type: variable-number-slider
+        default: 1.25
+        min: 1
+        max: 2
+        step: 0.05
+    - 
+        id: disableSECodeblock
+        title: Disable Simple Editor Code Block
+        description: This switch disables the modified, line-height aligned codeblocks.
+        type: class-toggle
+    - 
+        id: disableSECallout
+        title: Disable Simple Editor Callout
+        description: This switch disables the modified, line-height aligned callout.
+        type: class-toggle
+    -
+        id: enablePreviewCulling
+        title: Re-Enable Dynamic Unloading in Text Preview
+        type: class-toggle
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Tabs & Sidebars
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: stackTabs
+        title: Stack the tabs
+        description: The tabs will be stacked.
+        type: class-toggle
+        default: true
+    -
+        id: editorStackWidth
+        title: Stack Tabs Width
+        description: The width of the stacked tabs. 
+        type: variable-number-slider
+        default: 200
+        min: 120
+        max: 300
+        step: 5
+        format: px
+    -
+        id: disableXButtons
+        title: Disable Tab X Buttons
+        description: Did you know you can close tabs by middle clicking on them?
+        type: class-toggle
+    -
+        id: tabTitleWordWrap
+        title: Tab Title Word Wrap
+        description: If there is space and the title is long enough, the text will now overflow onto more lines.
+        type: class-toggle
+    -
+        id: tabTitleCentered
+        title: Center Tab Titles
+        type: class-toggle
+    -
+        id: editorTabHeight
+        title: Editor (Non-Stack) Tab Height
+        description: Tab Height 
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: editorTabHeightStack
+        title: Editor Stack Tab Height
+        description: Tab Height 
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: sidebarTabHeight
+        title: Sidebar Tab Height
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: sidebarDashboardHeight
+        title: Sidebar Dashboard Height
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 5
+        format: px
+    -
+        id: cornerDragLocation
+        title: Corner Drag Location
+        description: This creates a space at the left corner where the window can be dragged.
+        type: class-toggle
+    -
+        id: editorDragSpace
+        title: Editor Drag Space
+        description: This creates a space at the right corner in editor tabs where the window can be dragged.
+        type: class-toggle
+    -
+        id: leftAlignedLeftSidebarButtonDisable
+        title: Disable Left Sidebar Button Corner Alignment
+        description: This allows you to disable the left corner positioning of the left sidebar button.
+        type: class-toggle
+    -
+        id: rightSidebarButtonAlignment
+        title: Right Sidebar Button Alignment
+        description: "This determines the alignment of the sidebar button.\n **titlebarAlign**: Acts as a fourth button on the titlebar.\n **outsideSidebar**: Creates a button on the outside of the sidebar to the right - this is the default behavior.\n **insideSidebar**: Creates a button inside the sidebar to the left."
+        type: class-select
+        allowEmpty: false
+        default: titlebarAlign_RBA
+        options:
+            - titlebarAlign_RBA
+            - outsideSidebar_RBA
+            - insideSidebar_RBA
+    - 
+        id: this-is-a-heading ---------------------------------------------------------------------------------------
+        title: Title Bar
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: dragSpaceHeight
+        title: Drag Space Height
+        type: variable-number-slider
+        default: 20
+        min: 0
+        max: 80
+        step: 5
+        format: px
+    -
+        id: disableRightTitlebarOffset
+        title: Disable Titlebar Spacing
+        description: Space is made for the titlebar buttons. If the drag space height is high enough, then it doesn't overlap even without this.
+        type: class-toggle
+    -
+        id: titlebarButtonWidth
+        title: Titlebar Button Width
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 2
+        format: px
+    -
+        id: titlebarButtonHeight
+        title: Titlebar Button Height
+        type: variable-number-slider
+        default: 40
+        min: 20
+        max: 80
+        step: 2
+        format: px
+    - 
+        id: this-is-a-heading ---------------------------------------------------------------------------------------
+        title: Tree Elements (File browser, outline, tag, search, backlinks...)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: outlineLevelWidth
+        title: Hierarchical Display Width
+        description: The size of each level's separation. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
+        type: variable-number-slider
+        default: 16
+        min: 14
+        max: 40
+        step: 1
+        format: px
+    -
+        id: outlineLevelHeight
+        title: Hierarchical Display Height
+        description: The height of each section. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
+        type: variable-number-slider
+        default: 16
+        min: 14
+        max: 40
+        step: 1
+        format: px
+    -
+        id: outlineLevelFontSize
+        title: Hierarchical Display Font Size
+        description: The size of the fonts. Please adjust "Hierarchical Display Height" above to actually make the sections larger. This affects the size of the collapse buttons. (Hierarchical Display - Editor, Outline, Tag View, Outgoing/Backlinks)
+        type: variable-number-slider
+        default: 13
+        min: 9
+        max: 20
+        step: 1
+        format: px
+    -
+        id: treeWordWrap
+        title: Tree View Word Wrap
+        description: Enables word wrap in the file browser, ensuring full titles will be displayed.
+        type: class-toggle
+    -
+        id: boldFolders
+        title: Bold File Browser Folders
+        type: class-toggle
+        default: true    
+    -
+        id: fileBrowserLayeredBackground
+        title: Layered Background in File Browser Folders
+        description: Enable layered background in file browser. This helps perceive depth.
+        type: class-toggle
+        default: true
+    -
+        id: enableSidebarCulling
+        title: Re-Enable Dynamic Unloading for Sidebars
+        type: class-toggle
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Prompt Window
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: modalAlignment
+        title: Prompt Alignment
+        description: Pick the compass direction that the generic (file seeking, etc...) prompt is aligned to.
+        type: class-select
+        allowEmpty: false
+        default: modalSAlign
+        options:
+            - 
                 label: Centered
                 value: modalCAlign
             - 
                 label: North
                 value: modalNAlign
-			- 
+            - 
                 label: Northeast
                 value: modalNEAlign
             - 
                 label: East
                 value: modalEAlign
-			- 
+            - 
                 label: Southeast
                 value: modalSEAlign
             - 
                 label: South
                 value: modalSAlign
-			- 
+            - 
                 label: Southwest
                 value: modalSWAlign
             - 
                 label: West
                 value: modalWAlign
-			- 
+            - 
                 label: Northwest
                 value: modalNWAlign
-	-
-		id: modalHSize
-		title: Prompt Height
-		description: In percentage, choose the height of the prompt.
-		type: variable-number-slider
-		default: 50
-		min: 20
-		max: 100
-		step: 5
-		format: "%"
-	-
-		id: modalWSize
-		title: Prompt Width
-		description: In percentage, choose the width of the prompt.
-		type: variable-number-slider
-		default: 35
-		min: 20
-		max: 100
-		step: 5
-		format: "%"
-	-
-		id: modalOffsetX
-		title: Prompt X Offset
-		description: Choose an X offset for the prompt. If uncarefully applied, will cause it to move offscreen.
-		type: variable-number-slider
-		default: 250
-		min: -1000
-		max: 1000
-		step: 25
-		format: px
-	-
-		id: modalOffsetY
-		title: Prompt Y Offset
-		description: Choose a Y offset for the prompt. If uncarefully applied, will cause it to move offscreen.
-		type: variable-number-slider
-		default: 0
-		min: -500
-		max: 500
-		step: 10
-		format: px
-	-
-		id: modalMinWidth
-		title: Prompt Min Width
-		description: The prompt window is not allowed to become any smaller than this size. The max size is defined by the above setting.
-		type: variable-number-slider
-		default: 300
-		min: 200
-		max: 1200
-		step: 10
-		format: px
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Settings Window
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: disableLeftAlignSettings
-		title: Disable Alternate Settings Alignment
-		description: The experimental new alignment for visual ergonomics can be disabled here.
-		type: class-toggle
-	-
-		id: largeSettingsButtons
-		title: Large Settings Buttons
-		description: Increase size of settings buttons for convenience.
-		type: class-toggle
-	-
-		id: settingsLeftColumnLength
-		title: Settings Left Column Width
-		description: If the alternate settings alignement is enabled, this determines the amount of space it is given.
-		type: variable-number-slider
-		default: 200
-		min: 200
-		max: 350
-		step: 5
-		format: px	
-	-
-		id: settingsAlignment
-		title: Settings Alignment
-		description: Pick the compass direction that the generic (file seeking, etc...) settings is aligned to.
-		type: class-select
-		allowEmpty: false
-		default: settingsWAlign
-		options:
-			- 
+    -
+        id: modalHSize
+        title: Prompt Height
+        description: In percentage, choose the height of the prompt.
+        type: variable-number-slider
+        default: 50
+        min: 20
+        max: 100
+        step: 5
+        format: "%"
+    -
+        id: modalWSize
+        title: Prompt Width
+        description: In percentage, choose the width of the prompt.
+        type: variable-number-slider
+        default: 35
+        min: 20
+        max: 100
+        step: 5
+        format: "%"
+    -
+        id: modalOffsetX
+        title: Prompt X Offset
+        description: Choose an X offset for the prompt. If uncarefully applied, will cause it to move offscreen.
+        type: variable-number-slider
+        default: 250
+        min: -1000
+        max: 1000
+        step: 25
+        format: px
+    -
+        id: modalOffsetY
+        title: Prompt Y Offset
+        description: Choose a Y offset for the prompt. If uncarefully applied, will cause it to move offscreen.
+        type: variable-number-slider
+        default: 0
+        min: -500
+        max: 500
+        step: 10
+        format: px
+    -
+        id: modalMinWidth
+        title: Prompt Min Width
+        description: The prompt window is not allowed to become any smaller than this size. The max size is defined by the above setting.
+        type: variable-number-slider
+        default: 300
+        min: 200
+        max: 1200
+        step: 10
+        format: px
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Settings Window
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: disableLeftAlignSettings
+        title: Disable Alternate Settings Alignment
+        description: The experimental new alignment for visual ergonomics can be disabled here.
+        type: class-toggle
+    -
+        id: largeSettingsButtons
+        title: Large Settings Buttons
+        description: Increase size of settings buttons for convenience.
+        type: class-toggle
+    -
+        id: settingsLeftColumnLength
+        title: Settings Left Column Width
+        description: If the alternate settings alignement is enabled, this determines the amount of space it is given.
+        type: variable-number-slider
+        default: 200
+        min: 200
+        max: 350
+        step: 5
+        format: px    
+    -
+        id: settingsAlignment
+        title: Settings Alignment
+        description: Pick the compass direction that the generic (file seeking, etc...) settings is aligned to.
+        type: class-select
+        allowEmpty: false
+        default: settingsWAlign
+        options:
+            - 
                 label: Centered
                 value: settingsCAlign
             - 
                 label: North
                 value: settingsNAlign
-			- 
+            - 
                 label: Northeast
                 value: settingsNEAlign
             - 
                 label: East
                 value: settingsEAlign
-			- 
+            - 
                 label: Southeast
                 value: settingsSEAlign
             - 
                 label: South
                 value: settingsSAlign
-			- 
+            - 
                 label: Southwest
                 value: settingsSWAlign
             - 
                 label: West
                 value: settingsWAlign
-			- 
+            - 
                 label: Northwest
                 value: settingsNWAlign
-	-
-		id: settingsHSize
-		title: Settings Height
-		description: In percentage, choose the height of the settings.
-		type: variable-number-slider
-		default: 100
-		min: 35
-		max: 100
-		step: 5
-		format: "%"
-	-
-		id: settingsWSize
-		title: Settings Width
-		description: In percentage, choose the width of the settings.
-		type: variable-number-slider
-		default: 60
-		min: 50
-		max: 100
-		step: 5
-		format: "%"
-	-
-		id: settingsOffsetX
-		title: Settings X Offset
-		description: Choose an X offset for the settings. If uncarefully applied, will cause it to move offscreen.
-		type: variable-number-slider
-		default: 0
-		min: -520
-		max: 520
-		step: 40
-		format: px
-	-
-		id: settingsOffsetY
-		title: Settings Y Offset
-		description: Choose a Y offset for the settings. If uncarefully applied, will cause it to move offscreen.
-		type: variable-number-slider
-		default: 0
-		min: -500
-		max: 500
-		step: 10
-		format: px
-	-
-		id: settingsMinWidth
-		title: Settings Min Width
-		description: The settings window is not allowed to become any smaller than this size. The max size is defined by the above setting.
-		type: variable-number-slider
-		default: 800
-		min: 500
-		max: 1200
-		step: 10
-		format: px
-	- 
-		id: this-is-a-heading------------------------------------------------------------------------------------------------------
-		title: Mini Mode
-		type: heading
-		level: 2
-		collapsed: true
-	-
-		id: disableMiniMode
-		title: Disable Mini Mode
-		description: When the window is small enough, Micro Mike focuses the window by removing side elements. This disables that.
-		type: class-toggle
+    -
+        id: settingsHSize
+        title: Settings Height
+        description: In percentage, choose the height of the settings.
+        type: variable-number-slider
+        default: 100
+        min: 35
+        max: 100
+        step: 5
+        format: "%"
+    -
+        id: settingsWSize
+        title: Settings Width
+        description: In percentage, choose the width of the settings.
+        type: variable-number-slider
+        default: 60
+        min: 50
+        max: 100
+        step: 5
+        format: "%"
+    -
+        id: settingsOffsetX
+        title: Settings X Offset
+        description: Choose an X offset for the settings. If uncarefully applied, will cause it to move offscreen.
+        type: variable-number-slider
+        default: 0
+        min: -520
+        max: 520
+        step: 40
+        format: px
+    -
+        id: settingsOffsetY
+        title: Settings Y Offset
+        description: Choose a Y offset for the settings. If uncarefully applied, will cause it to move offscreen.
+        type: variable-number-slider
+        default: 0
+        min: -500
+        max: 500
+        step: 10
+        format: px
+    -
+        id: settingsMinWidth
+        title: Settings Min Width
+        description: The settings window is not allowed to become any smaller than this size. The max size is defined by the above setting.
+        type: variable-number-slider
+        default: 800
+        min: 500
+        max: 1200
+        step: 10
+        format: px
+    - 
+        id: this-is-a-heading------------------------------------------------------------------------------------------------------
+        title: Mini Mode
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: disableMiniMode
+        title: Disable Mini Mode
+        description: When the window is small enough, Micro Mike focuses the window by removing side elements. This disables that.
+        type: class-toggle
 */
 body {
   --levelLayer: #ffffff18;
@@ -689,17 +689,33 @@ body {
   --bevelBright2: #8b8d9199;
   --bevelDark1: #5a5a5a99;
   --bevelDark2: #7a767299;
-  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
+  --bevelStyleButton:
+    inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
     inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
+  --bevelStyleContainer:
+    inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
     inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
-  --bevelStyleContainerOuter: 1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
-    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1),
-    0px -2px var(--bevelDark1), -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
+  --bevelStyleContainerOuter:
+    1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
+    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2),
+    -2px 0px var(--bevelDark1), 0px -2px var(--bevelDark1),
+    -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
   --link-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --settingsHeaderGradient: linear-gradient(90deg, #ffffff16 0%, rgba(0, 0, 0, 0) 80%);
-  --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.16) 100%);
-  --enabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.04) 100%);
+  --settingsHeaderGradient: linear-gradient(
+    90deg,
+    #ffffff16 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  --disabledOverlay: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.16) 100%
+  );
+  --enabledOverlay: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
 }
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
@@ -1029,7 +1045,8 @@ body {
   color: var(--textBrighter);
 }
 
-.workspace-leaf-content[data-type="file-explorer"] .tree-item-self.is-clickable {
+.workspace-leaf-content[data-type="file-explorer"]
+  .tree-item-self.is-clickable {
   box-shadow: var(--bevelStyleTop);
 }
 
@@ -1154,7 +1171,9 @@ body:not(.enableTreeViewCulling)
   z-index: 10;
   margin-right: calc(0px - var(--scrollBarSize));
 }
-body:not(.enableTreeViewCulling) :is(.mod-left-split, .mod-right-split) .workspace-leaf-content {
+body:not(.enableTreeViewCulling)
+  :is(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content {
   overflow-y: scroll;
 }
 body:not(.enableTreeViewCulling)
@@ -1249,7 +1268,8 @@ body {
   display: none;
 }
 
-body:not(.disableSimpleEditor) :is(.markdown-rendered:not(.community-modal-readme), .cm-scroller) {
+body:not(.disableSimpleEditor)
+  :is(.markdown-rendered:not(.community-modal-readme), .cm-scroller) {
   --h1-line-height: var(--line-height-normal);
   --h2-line-height: var(--line-height-normal);
   --h3-line-height: var(--line-height-normal);
@@ -1330,15 +1350,21 @@ body:not(.disableSimpleEditor)
   div:is(.el-ul, .el-ol) {
   margin-top: var(--margin-scale);
 }
-body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) hr {
+body:not(.disableSimpleEditor)
+  .markdown-rendered:not(.community-modal-readme)
+  hr {
   margin-top: calc(var(--margin-scale) * 1.5);
   height: calc(var(--margin-scale) * 0.5);
   margin-bottom: 0px;
 }
-body:not(.disableSimpleEditor) .markdown-rendered:not(.community-modal-readme) .footnote-ref {
+body:not(.disableSimpleEditor)
+  .markdown-rendered:not(.community-modal-readme)
+  .footnote-ref {
   vertical-align: text-bottom;
 }
-body:not(.disableSimpleEditor) .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+body:not(.disableSimpleEditor)
+  .markdown-source-view.mod-cm6
+  .cm-line.HyperMD-codeblock {
   padding-left: 5px;
 }
 
@@ -1405,7 +1431,9 @@ body:not(.enablePreviewCulling)
   > .markdown-preview-sizer {
   padding-bottom: 500px !important;
 }
-body:not(.enablePreviewCulling) .markdown-preview-view > .markdown-preview-sizer {
+body:not(.enablePreviewCulling)
+  .markdown-preview-view
+  > .markdown-preview-sizer {
   min-height: 0px !important;
 }
 
@@ -1431,17 +1459,26 @@ body .workspace-leaf-content[data-type="file-explorer"] .nav-files-container {
   margin: 0px;
   gap: 0px;
 }
-body .workspace-leaf-content[data-type="file-explorer"] .nav-files-container .nav-folder-title {
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title {
   padding: 0px;
   margin: 0px;
   gap: 0px;
 }
-body .workspace-leaf-content[data-type="file-explorer"] .nav-files-container .nav-file-title {
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title {
   padding: 0px;
   margin: 0px;
   gap: 0px;
 }
-body .workspace-leaf-content[data-type="file-explorer"] .mod-root > .tree-item-self {
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .mod-root
+  > .tree-item-self {
   text-align: end;
   text-align: center;
   align-items: center;
@@ -1457,7 +1494,10 @@ body
   font-size: 20px;
   text-align: center;
 }
-body .workspace-leaf-content[data-type="file-explorer"] .tree-item-children .tree-item-children {
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .tree-item-children
+  .tree-item-children {
   position: relative;
 }
 
@@ -1498,7 +1538,10 @@ body .workspace-leaf-content[data-type="file-explorer"] .tree-item-children .tre
     margin-right: 0px;
   }
 }
-.workspace-leaf-content[data-type="outline"] .view-content .tree-item .tree-item-self.is-clickable {
+.workspace-leaf-content[data-type="outline"]
+  .view-content
+  .tree-item
+  .tree-item-self.is-clickable {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -1645,7 +1688,9 @@ body {
   padding-bottom: var(--handleSize);
 }
 
-.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+.workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions {
   margin-right: calc(var(--handleSize));
 }
 
@@ -1716,7 +1761,8 @@ body {
   gap: 0px;
 }
 
-body:not(.native-scrollbars) .kanban-plugin__scroll-container::-webkit-scrollbar,
+body:not(.native-scrollbars)
+  .kanban-plugin__scroll-container::-webkit-scrollbar,
 body:not(.native-scrollbars) .prompt-results::-webkit-scrollbar,
 body:not(.native-scrollbars) ::-webkit-scrollbar {
   width: var(--scrollBarSize);
@@ -1727,11 +1773,15 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
   border: 0px;
 }
 
-.setting-item.mod-toggle:has(> .setting-item-control > .checkbox-container:not(.is-enabled)) {
+.setting-item.mod-toggle:has(
+    > .setting-item-control > .checkbox-container:not(.is-enabled)
+  ) {
   background: var(--disabledOverlay);
 }
 
-.setting-item.mod-toggle:has(> .setting-item-control > .checkbox-container.is-enabled) {
+.setting-item.mod-toggle:has(
+    > .setting-item-control > .checkbox-container.is-enabled
+  ) {
   background: var(--enabledOverlay);
 }
 
@@ -1748,7 +1798,9 @@ body:not(.is-mobile) .modal.mod-settings {
   height: 100%;
 }
 
-body:not(.is-mobile).setting-item-control div[aria-label="Open themes folder"] + .dropdown {
+body:not(.is-mobile).setting-item-control
+  div[aria-label="Open themes folder"]
+  + .dropdown {
   width: 160px;
 }
 
@@ -1844,13 +1896,18 @@ body:not(.is-mobile).largeSettingsButtons .modal.mod-settings .clickable-icon {
   margin-right: 10px;
 }
 .modal.mod-settings .setting-item .setting-item-control .dropdown,
-.modal.mod-settings .setting-item .setting-item-control .search-input-container {
+.modal.mod-settings
+  .setting-item
+  .setting-item-control
+  .search-input-container {
   text-wrap: wrap;
   padding-top: 5px;
   padding-bottom: 5px;
   display: flex;
 }
-body:not(.disableLeftAlignSettings) .modal.mod-settings :is(h1, h2, h3, h4, h5, h6) {
+body:not(.disableLeftAlignSettings)
+  .modal.mod-settings
+  :is(h1, h2, h3, h4, h5, h6) {
   padding-left: calc(var(--settingsLeftColumnLength) - 20px);
 }
 body:not(.disableLeftAlignSettings)
@@ -1866,11 +1923,15 @@ body:not(.disableLeftAlignSettings)
   line-height: 26px;
   background: var(--settingsHeaderGradient);
 }
-.modal.mod-settings :is(h1, h2, h3, h4, h5, h6, .setting-item-heading) .setting-item-name {
+.modal.mod-settings
+  :is(h1, h2, h3, h4, h5, h6, .setting-item-heading)
+  .setting-item-name {
   font-size: 20px;
   margin-left: 10px;
 }
-.modal.mod-settings :is(h1, h2, h3, h4, h5, h6, .setting-item-heading) .setting-item-control {
+.modal.mod-settings
+  :is(h1, h2, h3, h4, h5, h6, .setting-item-heading)
+  .setting-item-control {
   min-width: calc(var(--settingsLeftColumnLength) - 30px) !important;
 }
 
@@ -1911,7 +1972,8 @@ body:not(.disableLeftAlignSettings):not(.is-mobile)
   max-width: var(--settingsLeftColumnLength);
 }
 
-body:not(.css-settings-manager):not(.is-mobile) .modal-container:has(> .mod-settings) {
+body:not(.css-settings-manager):not(.is-mobile)
+  .modal-container:has(> .mod-settings) {
   align-items: flex-start;
 }
 body:not(.css-settings-manager):not(.is-mobile)
@@ -1923,7 +1985,9 @@ body:not(.css-settings-manager):not(.is-mobile)
   min-width: var(--settingsMinWidth);
 }
 
-body:not(.is-mobile) .css-settings-manager .modal-container:has(> .mod-settings) {
+body:not(.is-mobile)
+  .css-settings-manager
+  .modal-container:has(> .mod-settings) {
   align-items: center;
   justify-content: center;
 }
@@ -1977,7 +2041,9 @@ body:not(.is-mobile) .css-settings-manager .modal-container:has(> .mod-settings)
   left: 0%;
 }
 
-:not(.is-mobile).settingsHoverPreview .modal-container.mod-dim .modal.mod-settings {
+:not(.is-mobile).settingsHoverPreview
+  .modal-container.mod-dim
+  .modal.mod-settings {
   background-color: transparent;
   box-shadow: var(--bevelStyleButton);
 }
@@ -1999,7 +2065,9 @@ body:not(.is-mobile) .css-settings-manager .modal-container:has(> .mod-settings)
   height: var(--titlebarButtonHeight);
   width: var(--titlebarButtonWidth);
 }
-.workspace-tab-header-container .sidebar-toggle-button.mod-right .clickable-icon {
+.workspace-tab-header-container
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -2033,10 +2101,15 @@ body:not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
   height: var(--editorTabHeight);
 }
 
-.insideSidebar_RBA:has(> * > * > * > .mod-right-split:not(.is-sidedock-collapsed)) .workspace-tabs {
+.insideSidebar_RBA:has(
+    > * > * > * > .mod-right-split:not(.is-sidedock-collapsed)
+  )
+  .workspace-tabs {
   overflow: visible;
 }
-.insideSidebar_RBA:has(> * > * > * > .mod-right-split:not(.is-sidedock-collapsed))
+.insideSidebar_RBA:has(
+    > * > * > * > .mod-right-split:not(.is-sidedock-collapsed)
+  )
   .workspace-tabs
   .workspace-tab-header-container
   .sidebar-toggle-button.mod-right {
@@ -2046,7 +2119,9 @@ body:not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
   width: 40px;
   z-index: 10;
 }
-.insideSidebar_RBA:has(> * > * > * > .mod-right-split:not(.is-sidedock-collapsed))
+.insideSidebar_RBA:has(
+    > * > * > * > .mod-right-split:not(.is-sidedock-collapsed)
+  )
   .workspace-tabs
   .workspace-tab-header-container
   .sidebar-toggle-button.mod-right
@@ -2054,7 +2129,9 @@ body:not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
   width: 40px;
   height: var(--sidebarTabHeight);
 }
-.insideSidebar_RBA:has(> * > * > * > .mod-right-split:not(.is-sidedock-collapsed))
+.insideSidebar_RBA:has(
+    > * > * > * > .mod-right-split:not(.is-sidedock-collapsed)
+  )
   .workspace-tabs.mod-top-right-space
   .workspace-tab-header-container {
   margin-left: 40px;
@@ -2107,32 +2184,46 @@ html body.is-fullscreen:not(.outsideSidebar_RBA):not(.insideSidebar_RBA) {
 }
 
 html
-  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(
+    .insideSidebar_RBA
+  )
   .mod-root {
   --frame-right-space: var(--titlebarButtonWidth);
 }
 html
-  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(
+    .insideSidebar_RBA
+  )
   .mod-root
   .mod-top-right-space
   .workspace-tab-header-new-tab {
   margin-right: var(--titlebarButtonWidth);
 }
 html
-  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(
+    .insideSidebar_RBA
+  )
   .workspace-split:not(.mod-root)
   .mod-top-right-space
   .workspace-tab-header-container-inner {
   margin-right: var(--titlebarButtonWidth);
 }
 html
-  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
+  body.is-fullscreen:is(.mod-windows, .mod-linux):not(.outsideSidebar_RBA):not(
+    .insideSidebar_RBA
+  )
   .sidebar-toggle-button.mod-right {
   right: 0px;
 }
 
-html .mod-windows:not(.stackTabs):not(.disableRightTitlebarOffset) .mod-root .mod-top-right-space,
-html .mod-linux:not(.stackTabs):not(.disableRightTitlebarOffset) .mod-root .mod-top-right-space {
+html
+  .mod-windows:not(.stackTabs):not(.disableRightTitlebarOffset)
+  .mod-root
+  .mod-top-right-space,
+html
+  .mod-linux:not(.stackTabs):not(.disableRightTitlebarOffset)
+  .mod-root
+  .mod-top-right-space {
   --frame-right-space: var(--rightFrameSetTo);
 }
 
@@ -2146,7 +2237,9 @@ html .mod-linux:not(.stackTabs):not(.disableRightTitlebarOffset) .mod-root .mod-
 }
 
 :is(.mod-left-split, .workspace-split.mod-root) .sidebar-toggle-button.mod-left,
-:is(.mod-left-split, .workspace-split.mod-root) .sidebar-toggle-button.mod-left .clickable-icon {
+:is(.mod-left-split, .workspace-split.mod-root)
+  .sidebar-toggle-button.mod-left
+  .clickable-icon {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -2154,7 +2247,8 @@ html .mod-linux:not(.stackTabs):not(.disableRightTitlebarOffset) .mod-root .mod-
   height: var(--sidebarTabHeight);
 }
 
-:is(.mod-left-split, .workspace-split.mod-root) .sidebar-toggle-button.mod-left {
+:is(.mod-left-split, .workspace-split.mod-root)
+  .sidebar-toggle-button.mod-left {
   margin-top: var(--dragSpaceHeight);
 }
 
@@ -2167,16 +2261,19 @@ body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation
   .workspace-tab-header-container-inner {
   margin-left: 0px;
 }
-body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation .sidebar-toggle-button.mod-left {
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation
+  .sidebar-toggle-button.mod-left {
   order: -1;
   margin-left: 40px;
 }
 
-body:not(.disableFastClose) .workspace-split.mod-horizontal.mod-left-split.is-sidedock-collapsed {
+body:not(.disableFastClose)
+  .workspace-split.mod-horizontal.mod-left-split.is-sidedock-collapsed {
   display: none !important;
 }
 
-body:not(.disableFastClose) .workspace-split.mod-horizontal.mod-right-split.is-sidedock-collapsed {
+body:not(.disableFastClose)
+  .workspace-split.mod-horizontal.mod-right-split.is-sidedock-collapsed {
   display: none !important;
 }
 
@@ -2217,7 +2314,9 @@ body:not(.disableFastClose) .workspace-split.mod-horizontal.mod-right-split.is-s
   .workspace-tab-header-tab-list {
   display: none;
 }
-:is(.mod-left-split, .mod-right-split) .workspace-tabs.mod-top .workspace-tab-header-container {
+:is(.mod-left-split, .mod-right-split)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
   height: calc(var(--sidebarTabHeight) + var(--dragSpaceHeight));
 }
 :is(.mod-left-split, .mod-right-split)
@@ -2268,7 +2367,9 @@ body:not(.disableExtendRightSidebarMinimum) .mod-right-split {
   flex-grow: 1;
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -2348,7 +2449,10 @@ body {
   gap: 0px;
   border-bottom: 0px;
 }
-.workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner {
+.workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -2464,16 +2568,26 @@ body {
   width: 0px;
   height: 0px;
 }
-.workspace .mod-root .workspace-tab-header-container .workspace-tab-header-tab-list {
+.workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-tab-list {
   display: none;
 }
-.workspace .mod-root .workspace-tab-header-container .workspace-tab-header-new-tab {
+.workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-new-tab {
   padding: 0px;
   margin: 0px;
   gap: 0px;
   align-items: flex-end;
 }
-.workspace .mod-root .workspace-tab-header-container .workspace-tab-header-new-tab .clickable-icon {
+.workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-new-tab
+  .clickable-icon {
   padding: 0px;
   margin: 0px;
   gap: 0px;
@@ -2557,7 +2671,11 @@ body:not(.stackTabs).editorDragSpace
 .stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-spacer {
   flex-grow: 0;
 }
-.stackTabs .workspace .mod-root .workspace-tabs .workspace-tab-header-container:nth-of-type(1) {
+.stackTabs
+  .workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1) {
   height: 100%;
   flex-direction: column;
   background-color: var(--background-secondary);
@@ -2923,7 +3041,8 @@ as in Live Preview */
   padding-inline-start: var(--list-indent);
 }
 
-div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked,
+div.is-live-preview
+  input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked,
 li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"]:checked,
 li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"]:checked {
   --checkbox-marker-color: transparent;
@@ -2931,14 +3050,21 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"]:checked {
   border-radius: var(--icon-border-radius);
   background: var(--icon-background);
 }
-div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked:hover,
+div.is-live-preview
+  input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked:hover,
 li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"]:checked:hover,
-li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"]:checked:hover {
+li:not([data-task="x"], [data-task=" "])
+  > p
+  > input[type="checkbox"]:checked:hover {
   background: var(--icon-background-hover);
 }
-div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked::after,
-li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"]:checked::after,
-li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"]:checked::after {
+div.is-live-preview
+  input[type="checkbox"]:not([data-task="x"], [data-task=" "]):checked::after,
+li:not([data-task="x"], [data-task=" "])
+  > input[type="checkbox"]:checked::after,
+li:not([data-task="x"], [data-task=" "])
+  > p
+  > input[type="checkbox"]:checked::after {
   background-color: var(--icon-mask-color);
   -webkit-mask-image: var(--icon-mask-image);
   -webkit-mask-size: contain;
@@ -2964,7 +3090,9 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"]:checked::a
   height: fill-available; /* Fallback for Safari */
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   padding: 0px;
 }
 
@@ -2977,7 +3105,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   bottom: 26px;
 }
 
-body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clickable-icon):before {
+body:not(.pane-relief-disable-counts)
+  .view-header-nav-buttons
+  :is(button.clickable-icon):before {
   content: "";
   min-width: 0;
 }
@@ -3048,7 +3178,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 .view-content:has(> .quiet-outline) .function-bar div .n-input__input {
   margin-left: 5px;
 }
-.view-content:has(> .quiet-outline) .function-bar div .n-input__input .n-input__input-el {
+.view-content:has(> .quiet-outline)
+  .function-bar
+  div
+  .n-input__input
+  .n-input__input-el {
   margin-left: 5px;
   height: var(--sidebarDashboardHeight);
 }
@@ -3144,47 +3278,50 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   --window-border-radius: 6px;
   --window-border-color: rgba(0, 0, 0, 0.7);
   --window-background-color: #4580c4;
-  --window-background-glass-stripes: linear-gradient(135deg, #fff5 70px, transparent 100px),
+  --window-background-glass-stripes:
+    linear-gradient(135deg, #fff5 70px, transparent 100px),
     linear-gradient(225deg, #fff5 70px, transparent 100px),
     linear-gradient(
         54deg,
-        /* ------------------------------- 1st stripe ------------------------------- */ #0002 0 4%,
+        /* ------------------------------- 1st stripe ------------------------------- */
+          #0002 0 4%,
         #6661 6% 6%,
         #0002 8% 10%,
-        /* ------------------------------- 2nd stripe ------------------------------- */ #0002 15%
-          16%,
+        /* ------------------------------- 2nd stripe ------------------------------- */
+          #0002 15% 16%,
         #aaa1 17% 18%,
         #0002 23% 24%,
-        /* ------------------------------- 3rd stripe ------------------------------- */ #bbb2 25%
-          26%,
+        /* ------------------------------- 3rd stripe ------------------------------- */
+          #bbb2 25% 26%,
         #0002 31% 33%,
-        /* ------------------------------- 4th stripe ------------------------------- */ #0002 34%
-          34.5%,
+        /* ------------------------------- 4th stripe ------------------------------- */
+          #0002 34% 34.5%,
         #bbb2 36% 40%,
-        /* ------------------------------- 5th stripe ------------------------------- */ #0002 41%
-          41.5%,
+        /* ------------------------------- 5th stripe ------------------------------- */
+          #0002 41% 41.5%,
         #bbb2 44% 45%,
-        /* ------------------------------- 6th stripe ------------------------------- */ #bbb2 46%
-          47%,
+        /* ------------------------------- 6th stripe ------------------------------- */
+          #bbb2 46% 47%,
         #0002 48% 49%,
         #0002 50% 50.5%,
-        /* ------------------------------- 7th stripe ------------------------------- */ #0002 56%
-          56.5%,
+        /* ------------------------------- 7th stripe ------------------------------- */
+          #0002 56% 56.5%,
         #bbb2 57% 63%,
         #0002 67% 69%,
-        /* ------------------------------- 8th stripe ------------------------------- */ #bbb2 69.5%
-          70%,
+        /* ------------------------------- 8th stripe ------------------------------- */
+          #bbb2 69.5% 70%,
         #0002 73.5% 74%,
-        /* ------------------------------- 9th stripe ------------------------------- */ #bbb2 74.5%
-          79%,
+        /* ------------------------------- 9th stripe ------------------------------- */
+          #bbb2 74.5% 79%,
         #0002 80% 84%,
-        /* ------------------------------- 10th stripe ------------------------------- */ #aaa2 85%
-          86%,
+        /* ------------------------------- 10th stripe ------------------------------- */
+          #aaa2 85% 86%,
         #0002 87%,
         #bbb1 90%
       )
       left center/100vw 100vh no-repeat fixed;
-  --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33),
+  --window-background:
+    linear-gradient(to right, #ffffff66, #0000001a, #ffffff33),
     var(--window-background-color);
   --control-border-color: rgba(0, 0, 0, 0.3);
   --control-border-radius: 5px;
@@ -3197,30 +3334,27 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     rgba(255, 255, 255, 0.5)
   );
   /* Colors for minimize, maximize, and restore buttons when hovered */
-  --control-background-hovered: radial-gradient(circle at bottom, #2aceda, transparent 65%),
+  --control-background-hovered:
+    radial-gradient(circle at bottom, #2aceda, transparent 65%),
     linear-gradient(#b6d9ee 50%, #1a6ca1 50%);
   /* Colors for minimize, maximize, and restore buttons when clicked */
-  --control-background-active: radial-gradient(circle at bottom, #0bfdfa, transparent 65%),
+  --control-background-active:
+    radial-gradient(circle at bottom, #0bfdfa, transparent 65%),
     linear-gradient(#86a7bc 50%, #092747 50%);
   /* Colors for the close button at normal state */
-  --control-background-close: radial-gradient(circle at -60% 50%, #0007 5% 10%, #0000 50%),
+  --control-background-close:
+    radial-gradient(circle at -60% 50%, #0007 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #0007 5% 10%, #0000 50%),
     linear-gradient(#e0a197e5, #cf796a 25% 50%, #d54f36 50%);
   /* Colors for the close button when hovered */
-  --control-background-close-hovered: radial-gradient(
-      circle at 50% 170%,
-      #f4e676 10% 20%,
-      #0000 60%
-    ),
+  --control-background-close-hovered:
+    radial-gradient(circle at 50% 170%, #f4e676 10% 20%, #0000 60%),
     radial-gradient(circle at -60% 50%, #000a 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #000a 5% 10%, #0000 50%),
     linear-gradient(#fb9d8b, #ee6d56 25% 50%, #d42809 50%);
   /* Colors for the close button when clicked */
-  --control-background-close-active: radial-gradient(
-      circle at 50% 170%,
-      #dcc03f 10% 20%,
-      #0000 60%
-    ),
+  --control-background-close-active:
+    radial-gradient(circle at 50% 170%, #dcc03f 10% 20%, #0000 60%),
     radial-gradient(circle at -60% 50%, #000 5% 10%, #0000 50%),
     radial-gradient(circle at 160% 50%, #000 5% 10%, #0000 50%),
     linear-gradient(#d1a894, #b67562 25% 50%, #7d0d01 50%);
@@ -3245,7 +3379,8 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   width: 100%;
   height: 100%;
   border-radius: var(--window-border-radius);
-  background: linear-gradient(
+  background:
+    linear-gradient(
       transparent 20%,
       rgba(255, 255, 255, 0.7019607843) 40%,
       transparent 41%
@@ -3480,7 +3615,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 .ref .title-bar.active .title-bar-controls button::after {
   content: none;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Minimize"],
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Minimize"],
 .window.active .ref .title-bar .title-bar-controls button.is-minimize,
 .ref .title-bar.active .title-bar-controls button[aria-label="Minimize"],
 .ref .title-bar.active .title-bar-controls button.is-minimize {
@@ -3488,9 +3627,16 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     url("./icon/minimize.png") no-repeat center 10px,
     var(--control-background);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Minimize"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Minimize"]::before,
 .window.active .ref .title-bar .title-bar-controls button.is-minimize::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Minimize"]::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Minimize"]::before,
 .ref .title-bar.active .title-bar-controls button.is-minimize::before {
   content: "";
   box-shadow:
@@ -3503,30 +3649,66 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Minimize"]:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Minimize"]:hover::before,
 .window.active
   .ref
   .title-bar
   .title-bar-controls
   button[aria-label="Minimize"]:focus-visible::before,
-.window.active .ref .title-bar .title-bar-controls button.is-minimize:hover::before,
-.window.active .ref .title-bar .title-bar-controls button.is-minimize:focus-visible::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Minimize"]:hover::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Minimize"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-minimize:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-minimize:focus-visible::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Minimize"]:hover::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Minimize"]:focus-visible::before,
 .ref .title-bar.active .title-bar-controls button.is-minimize:hover::before,
-.ref .title-bar.active .title-bar-controls button.is-minimize:focus-visible::before {
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button.is-minimize:focus-visible::before {
   opacity: 1;
   transition: opacity 0.1s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Minimize"]:active::before,
-.window.active .ref .title-bar .title-bar-controls button.is-minimize:active::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Minimize"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Minimize"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-minimize:active::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Minimize"]:active::before,
 .ref .title-bar.active .title-bar-controls button.is-minimize:active::before {
   background:
     url("./icon/minimize.png") no-repeat center 10px,
     var(--control-background-active);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Maximize"],
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Maximize"],
 .window.active .ref .title-bar .title-bar-controls button.is-maximize,
 .ref .title-bar.active .title-bar-controls button[aria-label="Maximize"],
 .ref .title-bar.active .title-bar-controls button.is-maximize {
@@ -3534,9 +3716,16 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     url("./icon/maximize.png") no-repeat center,
     var(--control-background);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Maximize"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Maximize"]::before,
 .window.active .ref .title-bar .title-bar-controls button.is-maximize::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Maximize"]::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Maximize"]::before,
 .ref .title-bar.active .title-bar-controls button.is-maximize::before {
   content: "";
   box-shadow:
@@ -3548,24 +3737,56 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Maximize"]:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Maximize"]:hover::before,
 .window.active
   .ref
   .title-bar
   .title-bar-controls
   button[aria-label="Maximize"]:focus-visible::before,
-.window.active .ref .title-bar .title-bar-controls button.is-maximize:hover::before,
-.window.active .ref .title-bar .title-bar-controls button.is-maximize:focus-visible::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Maximize"]:hover::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Maximize"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-maximize:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-maximize:focus-visible::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Maximize"]:hover::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Maximize"]:focus-visible::before,
 .ref .title-bar.active .title-bar-controls button.is-maximize:hover::before,
-.ref .title-bar.active .title-bar-controls button.is-maximize:focus-visible::before {
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button.is-maximize:focus-visible::before {
   opacity: 1;
   transition: opacity 0.1s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Maximize"]:active::before,
-.window.active .ref .title-bar .title-bar-controls button.is-maximize:active::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Maximize"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Maximize"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-maximize:active::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Maximize"]:active::before,
 .ref .title-bar.active .title-bar-controls button.is-maximize:active::before {
   background:
     url("./icon/maximize.png") no-repeat center,
@@ -3579,7 +3800,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     url("./icon/help.png") no-repeat center,
     var(--control-background);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Help"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Help"]::before,
 .window.active .ref .title-bar .title-bar-controls button.is-help::before,
 .ref .title-bar.active .title-bar-controls button[aria-label="Help"]::before,
 .ref .title-bar.active .title-bar-controls button.is-help::before {
@@ -3593,20 +3818,52 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Help"]:hover::before,
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Help"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Help"]:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Help"]:focus-visible::before,
 .window.active .ref .title-bar .title-bar-controls button.is-help:hover::before,
-.window.active .ref .title-bar .title-bar-controls button.is-help:focus-visible::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Help"]:hover::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Help"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-help:focus-visible::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Help"]:hover::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Help"]:focus-visible::before,
 .ref .title-bar.active .title-bar-controls button.is-help:hover::before,
-.ref .title-bar.active .title-bar-controls button.is-help:focus-visible::before {
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button.is-help:focus-visible::before {
   opacity: 1;
   transition: opacity 0.1s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Help"]:active::before,
-.window.active .ref .title-bar .title-bar-controls button.is-help:active::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Help"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Help"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-help:active::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Help"]:active::before,
 .ref .title-bar.active .title-bar-controls button.is-help:active::before {
   background:
     url("./icon/help.png") no-repeat center,
@@ -3620,7 +3877,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     url("./icon/restore.png") no-repeat center,
     var(--control-background);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Restore"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Restore"]::before,
 .window.active .ref .title-bar .title-bar-controls button.is-restore::before,
 .ref .title-bar.active .title-bar-controls button[aria-label="Restore"]::before,
 .ref .title-bar.active .title-bar-controls button.is-restore::before {
@@ -3634,24 +3895,56 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Restore"]:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Restore"]:hover::before,
 .window.active
   .ref
   .title-bar
   .title-bar-controls
   button[aria-label="Restore"]:focus-visible::before,
-.window.active .ref .title-bar .title-bar-controls button.is-restore:hover::before,
-.window.active .ref .title-bar .title-bar-controls button.is-restore:focus-visible::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Restore"]:hover::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Restore"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-restore:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-restore:focus-visible::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Restore"]:hover::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Restore"]:focus-visible::before,
 .ref .title-bar.active .title-bar-controls button.is-restore:hover::before,
-.ref .title-bar.active .title-bar-controls button.is-restore:focus-visible::before {
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button.is-restore:focus-visible::before {
   opacity: 1;
   transition: opacity 0.1s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Restore"]:active::before,
-.window.active .ref .title-bar .title-bar-controls button.is-restore:active::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Restore"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Restore"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-restore:active::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Restore"]:active::before,
 .ref .title-bar.active .title-bar-controls button.is-restore:active::before {
   background:
     url("./icon/restore.png") no-repeat center,
@@ -3667,7 +3960,11 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
     var(--control-background-close);
   box-shadow: var(--control-inset-shadow);
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Close"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Close"]::before,
 .window.active .ref .title-bar .title-bar-controls button.is-close::before,
 .ref .title-bar.active .title-bar-controls button[aria-label="Close"]::before,
 .ref .title-bar.active .title-bar-controls button.is-close::before {
@@ -3683,20 +3980,56 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Close"]:hover::before,
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Close"]:focus-visible::before,
-.window.active .ref .title-bar .title-bar-controls button.is-close:hover::before,
-.window.active .ref .title-bar .title-bar-controls button.is-close:focus-visible::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Close"]:hover::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Close"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Close"]:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Close"]:focus-visible::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-close:hover::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-close:focus-visible::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Close"]:hover::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Close"]:focus-visible::before,
 .ref .title-bar.active .title-bar-controls button.is-close:hover::before,
-.ref .title-bar.active .title-bar-controls button.is-close:focus-visible::before {
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button.is-close:focus-visible::before {
   opacity: 1;
   transition: opacity 0.1s linear;
 }
-.window.active .ref .title-bar .title-bar-controls button[aria-label="Close"]:active::before,
-.window.active .ref .title-bar .title-bar-controls button.is-close:active::before,
-.ref .title-bar.active .title-bar-controls button[aria-label="Close"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button[aria-label="Close"]:active::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button.is-close:active::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button[aria-label="Close"]:active::before,
 .ref .title-bar.active .title-bar-controls button.is-close:active::before {
   background:
     url("./icon/close.png") no-repeat center,
@@ -3707,15 +4040,33 @@ body:not(.pane-relief-disable-counts) .view-header-nav-buttons :is(button.clicka
 .ref .title-bar.active .title-bar-controls button:disabled {
   /* TODO: Add rules to style disabled close button */
 }
-.window.active .ref .title-bar .title-bar-controls button:disabled[aria-label="Maximize"],
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button:disabled[aria-label="Maximize"],
 .window.active .ref .title-bar .title-bar-controls button:disabled.is-maximize,
-.ref .title-bar.active .title-bar-controls button:disabled[aria-label="Maximize"],
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button:disabled[aria-label="Maximize"],
 .ref .title-bar.active .title-bar-controls button:disabled.is-maximize {
   background: var(--control-background);
 }
-.window.active .ref .title-bar .title-bar-controls button:disabled[aria-label="Maximize"]::before,
-.window.active .ref .title-bar .title-bar-controls button:disabled.is-maximize::before,
-.ref .title-bar.active .title-bar-controls button:disabled[aria-label="Maximize"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button:disabled[aria-label="Maximize"]::before,
+.window.active
+  .ref
+  .title-bar
+  .title-bar-controls
+  button:disabled.is-maximize::before,
+.ref
+  .title-bar.active
+  .title-bar-controls
+  button:disabled[aria-label="Maximize"]::before,
 .ref .title-bar.active .title-bar-controls button:disabled.is-maximize::before {
   content: "";
   background: url("./icon/maximize.png") no-repeat center;
@@ -3771,7 +4122,8 @@ body.win7bar.is-frameless.is-hidden-frameless .titlebar {
   height: 27px;
 }
 
-.win7bar.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+.win7bar.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -3846,7 +4198,10 @@ html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-text {
   font-weight: 400;
   right: 50%;
 }
-html:has(> .win7bar) body.obsidian-app .titlebar .titlebar-button-container.mod-right {
+html:has(> .win7bar)
+  body.obsidian-app
+  .titlebar
+  .titlebar-button-container.mod-right {
   box-sizing: content-box;
   display: flex;
   background: rgba(255, 255, 255, 0.2);
@@ -4007,7 +4362,8 @@ html:has(> .win7bar) body.obsidian-app::before {
   width: 100%;
   height: 100%;
   border-radius: var(--window-border-radius);
-  background: linear-gradient(
+  background:
+    linear-gradient(
       transparent 20%,
       rgba(255, 255, 255, 0.7019607843) 40%,
       transparent 41%
@@ -4017,7 +4373,9 @@ html:has(> .win7bar) body.obsidian-app::before {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8666666667);
 }
 
-body.win7bar.obsidian-app.is-focused .titlebar .titlebar-button-container.mod-right {
+body.win7bar.obsidian-app.is-focused
+  .titlebar
+  .titlebar-button-container.mod-right {
   border-color: var(--window-border-color);
 }
 body.win7bar.obsidian-app.is-focused
@@ -4298,7 +4656,8 @@ body.win7bar.obsidian-app.is-focused.is-maximized
   display: block;
 }
 
-body.win7bar:not(.qe-title-center):not(.qe-title-hide) .titlebar-text.qe-replacement {
+body.win7bar:not(.qe-title-center):not(.qe-title-hide)
+  .titlebar-text.qe-replacement {
   text-align: center;
 }
 
@@ -4350,14 +4709,14 @@ body.win7bar:not(.outsideSidebar_RBA):not(.insideSidebar_RBA)
   --text-normal: #a3a5aa;
   --text-on-accent: white;
   /*
-  	tabFlexbox
-  	dashboardFlexbox
-  	bevels
-  	stackTabs
-  	Filebrowser hierarchical whatever wordwrap
+      tabFlexbox
+      dashboardFlexbox
+      bevels
+      stackTabs
+      Filebrowser hierarchical whatever wordwrap
   Tab wordwrap
-  	gradient based on whether stacktabs or not
-  	*/
+      gradient based on whether stacktabs or not
+      */
 }
 
 body.oldAndroid {
@@ -4376,18 +4735,26 @@ body.oldAndroid {
     var(--darkKeyboardGTop) 0%,
     var(--darkKeyboardGBottom) 100%
   );
-  --keyboardButtonInsetShadow: inset 0px 1px 0px 0px var(--brightKeyboardHighlight);
-  --keyboardButtonOutsideShadow: 0px 0px 0px 1px #000000, 0px 3px 4px 1px #000000;
-  --keyboardButtonBoxShadow: var(--keyboardButtonInsetShadow), var(--keyboardButtonOutsideShadow);
+  --keyboardButtonInsetShadow: inset 0px 1px 0px 0px
+    var(--brightKeyboardHighlight);
+  --keyboardButtonOutsideShadow:
+    0px 0px 0px 1px #000000, 0px 3px 4px 1px #000000;
+  --keyboardButtonBoxShadow:
+    var(--keyboardButtonInsetShadow), var(--keyboardButtonOutsideShadow);
   --keyboardButtonBorderRadius: 6px;
   --keyboardButtonIconColor: #000;
   --keyboardButtonIconShadow: 0px 1px var(--brightKeyboardHighlight);
   --dialogGTop: #afafaf;
   --dialogGBottom: #8d8d8d;
-  --dialogGradient: linear-gradient(183deg, var(--dialogGTop) 0%, var(--dialogGBottom) 100%);
+  --dialogGradient: linear-gradient(
+    183deg,
+    var(--dialogGTop) 0%,
+    var(--dialogGBottom) 100%
+  );
   --buttonSheetLeftSide: inset 1px 0px 0px 0px #bbbbbb;
   --buttonSheetRightSide: inset -1px 0px 0px 0px #666666;
-  --buttonSheetSeparatorRight: inset 1px 0px 0px 0px #666666, inset 2px 0px 0px 0px #bbbbbb;
+  --buttonSheetSeparatorRight:
+    inset 1px 0px 0px 0px #666666, inset 2px 0px 0px 0px #bbbbbb;
   --brightnessLayer1: 1.1;
   --brightnessLayer2: 1.15;
 }
@@ -4400,7 +4767,10 @@ body.oldAndroid {
 .oldAndroid .sidebar-toggle-button:is(.mod-right, .mod-left) .clickable-icon,
 .oldAndroid .workspace-tab-header-new-tab,
 .oldAndroid .nav-buttons-container .clickable-icon,
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions
+  .clickable-icon,
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header,
 .oldAndroid .titlebar-button-container .titlebar-button,
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header {
@@ -4408,49 +4778,74 @@ body.oldAndroid {
   box-shadow: var(--keyboardButtonInsetShadow);
   border-radius: var(--keyboardButtonBorderRadius);
 }
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher svg,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher
+  svg,
 .oldAndroid
   .workspace-tab-header-container-inner
   .workspace-tab-header
   .workspace-tab-header-inner-close-button
   svg,
-.oldAndroid .sidebar-toggle-button:is(.mod-right, .mod-left) .clickable-icon svg,
+.oldAndroid
+  .sidebar-toggle-button:is(.mod-right, .mod-left)
+  .clickable-icon
+  svg,
 .oldAndroid .workspace-tab-header-new-tab svg,
 .oldAndroid .nav-buttons-container .clickable-icon svg,
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon svg,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions
+  .clickable-icon
+  svg,
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header svg,
 .oldAndroid .titlebar-button-container .titlebar-button svg {
   color: var(--keyboardButtonIconColor);
   filter: drop-shadow(var(--keyboardButtonIconShadow));
 }
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher:hover,
 .oldAndroid
   .workspace-tab-header-container-inner
   .workspace-tab-header
   .workspace-tab-header-inner-close-button:hover,
-.oldAndroid .sidebar-toggle-button:is(.mod-right, .mod-left) .clickable-icon:hover,
+.oldAndroid
+  .sidebar-toggle-button:is(.mod-right, .mod-left)
+  .clickable-icon:hover,
 .oldAndroid .workspace-tab-header-new-tab:hover,
 .oldAndroid .nav-buttons-container .clickable-icon:hover,
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:hover,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions
+  .clickable-icon:hover,
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header:hover,
 .oldAndroid .titlebar-button-container .titlebar-button:hover {
   filter: brightness(var(--brightnessLayer1));
 }
 
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header:hover,
-.oldAndroid .workspace-tab-header-container-inner .is-active.workspace-tab-header {
+.oldAndroid
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header {
   filter: brightness(var(--brightnessLayer1));
 }
-.oldAndroid .workspace-tab-header-container-inner .is-active.workspace-tab-header:hover {
+.oldAndroid
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header:hover {
   filter: brightness(var(--brightnessLayer2));
 }
 
 .oldAndroid .nav-buttons-container .clickable-icon,
-.oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon,
+.oldAndroid
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-actions
+  .clickable-icon,
 .oldAndroid .workspace-tab-header-container-inner .workspace-tab-header,
 .oldAndroid .titlebar-button-container .titlebar-button {
   border-radius: 0px;
-  box-shadow: var(--keyboardButtonInsetShadow), var(--buttonSheetLeftSide),
+  box-shadow:
+    var(--keyboardButtonInsetShadow), var(--buttonSheetLeftSide),
     var(--buttonSheetRightSide);
 }
 .oldAndroid .nav-buttons-container .clickable-icon:first-of-type,
@@ -4458,7 +4853,9 @@ body.oldAndroid {
   .workspace-sidedock-vault-profile
   .workspace-drawer-vault-actions
   .clickable-icon:first-of-type,
-.oldAndroid .workspace-tab-header-container-inner .workspace-tab-header:first-of-type,
+.oldAndroid
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:first-of-type,
 .oldAndroid .titlebar-button-container .titlebar-button:first-of-type {
   box-shadow: var(--keyboardButtonInsetShadow), var(--buttonSheetRightSide);
   border-bottom-left-radius: var(--keyboardButtonBorderRadius);
@@ -4469,7 +4866,9 @@ body.oldAndroid {
   .workspace-sidedock-vault-profile
   .workspace-drawer-vault-actions
   .clickable-icon:last-of-type,
-.oldAndroid .workspace-tab-header-container-inner .workspace-tab-header:last-of-type,
+.oldAndroid
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:last-of-type,
 .oldAndroid .titlebar-button-container .titlebar-button:last-of-type {
   box-shadow: var(--keyboardButtonInsetShadow), var(--buttonSheetLeftSide);
   border-top-right-radius: var(--keyboardButtonBorderRadius);
@@ -4560,7 +4959,10 @@ body {
   --iconDrawCanvas: url(data:image/png;base64,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);
 }
 
-.enableNewIcons .mod-root .workspace-tab-header-container-inner .workspace-tab-header {
+.enableNewIcons
+  .mod-root
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
   background-image: none;
 }
 
@@ -4574,7 +4976,7 @@ body {
 .enableNewIcons .view-actions svg,
 .enableNewIcons .workspace-tab-header-new-tab svg
 {
-	display:none;
+    display:none;
 }
 */
 /*
@@ -4582,7 +4984,7 @@ body {
 .enableNewIcons .suggestion-container .clickable-icon svg,
 .enableNewIcons .workspace-tab-header-inner-close-button svg
 {
-	display:block;
+    display:block;
 }
 */
 .enableNewIcons .clickable-icon[aria-label],
@@ -4600,7 +5002,7 @@ body {
 .enableNewIcons .clickable-icon.view-action,
 
 {
-	background-size:26px;
+    background-size:26px;
 }
 */
 .enableNewIcons
@@ -4975,19 +5377,61 @@ body {
   --linkBrightnessAdditive: 1;
 }
 
-body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
+body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(
+    .factorio
+  ) {
   /* Hierarchical palette */
   --bottom: #000000;
-  --bottom_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 6%));
-  --bottom_b: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 12%));
-  --level1: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 18%));
-  --level1_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 24%));
-  --level1_b: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 27%));
-  --level2: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 27%));
-  --level2_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 30%));
-  --level2_b: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 33%));
-  --level3: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 33%));
-  --level3_a: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 36%));
+  --bottom_a: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 6%)
+  );
+  --bottom_b: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 12%)
+  );
+  --level1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 18%)
+  );
+  --level1_a: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 24%)
+  );
+  --level1_b: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 27%)
+  );
+  --level2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 27%)
+  );
+  --level2_a: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 30%)
+  );
+  --level2_b: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 33%)
+  );
+  --level3: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 33%)
+  );
+  --level3_a: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 36%)
+  );
   /* Bevels */
   --bevelBright1: hsla(
     var(--accent-h),
@@ -5013,8 +5457,17 @@ body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(.fact
     calc(var(--colorIntensityBevel) * 20% + 35%),
     50%
   );
-  --lineColor: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 40% + 20%), 50%);
-  --link-color: hsl(var(--accent-h), var(--accent-s), calc(var(--linkBrightnessAdditive) * 50%));
+  --lineColor: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 40% + 20%),
+    50%
+  );
+  --link-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--linkBrightnessAdditive) * 50%)
+  );
   --link-color-hover: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -5032,16 +5485,36 @@ body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(.fact
   --levelLayer: #ffffff18;
   --levelHover: #ffffff11;
   */
-  --levelLayer: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 12%);
-  --levelHover: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 24%);
-  --buttonLayer: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 24%);
+  --levelLayer: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 45%),
+    12%
+  );
+  --levelHover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 45%),
+    24%
+  );
+  --buttonLayer: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 45%),
+    24%
+  );
   --buttonLayerHover: hsla(
     var(--accent-h),
     var(--accent-s),
     calc(var(--colorIntensity) * 45%),
     36%
   );
-  --separatorColor: hsla(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 45%), 40%);
+  --separatorColor: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 45%),
+    40%
+  );
   --nav-item-background-hover: var(--levelHover);
   --nav-item-background-active: var(--levelHover);
   /*
@@ -5050,7 +5523,11 @@ body:not(.classicMicroMike):not(.inherit):not(.oldAndroid):not(.dtm08):not(.fact
   --icon-color-active: hsl(var(--accent-h), var(--accent-s), 75%);
   --icon-color-focused: hsl(var(--accent-h), var(--accent-s), 60%);
   */
-  --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--colorIntensity) * 30% + 30%));
+  --icon-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--colorIntensity) * 30% + 30%)
+  );
   --icon-color-hover: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -5106,7 +5583,11 @@ body.classicMicroMike {
   --collapse-icon-color: var(--icon-color);
   --collapse-icon-color-collapsed: var(--icon-color);
   --icon-color-active: #ffffff;
-  --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.33) 100%);
+  --disabledOverlay: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.33) 100%
+  );
 }
 
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
@@ -5140,49 +5621,49 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
   /*
   body:not(.is-grabbing) .tree-item-self.is-clickable:hover
   {
-  	color: var(--nav-item-color);
-  	background-color:var(--level1_a);
+      color: var(--nav-item-color);
+      background-color:var(--level1_a);
   }
   body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover
   {
-  	color: var(--nav-item-color);
-  	background-color:var(--bottom_a);
+      color: var(--nav-item-color);
+      background-color:var(--bottom_a);
   }
   body:not(.is-grabbing) .nav-file-title.tree-item-self.is-clickable:hover
   body:not(.is-grabbing) .nav-folder-title.tree-item-self.is-clickable:hover
   {
-  	background-color:var(--level1_a);
-  	color: var(--nav-item-color);
+      background-color:var(--level1_a);
+      color: var(--nav-item-color);
   }
   body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title.is-active:hover,
   body:not(.is-grabbing) .tree-item-self.is-clickable.nav-folder-title.is-active:hover,
   .tree-item-self.is-clickable.nav-file-title.is-active,
   .tree-item-self.is-clickable.nav-folder-title.is-active
   {
-  	background-color:var(--bottom_b);
-  	color: var(--nav-item-color);
+      background-color:var(--bottom_b);
+      color: var(--nav-item-color);
   }
   .nav-folder-title.is-active,
   .nav-folder-title.is-selected,
   body:not(.is-grabbing) .nav-folder-title.is-active:hover,
   body:not(.is-grabbing) .nav-folder-title.is-selected:hover
   {
-  	background-color:var(--level2);
+      background-color:var(--level2);
   }
   body:not(.is-grabbing) .nav-file-title.is-being-dragged,
   body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   .nav-file-title.is-being-dragged,
   .nav-folder-title.is-being-dragged
   {
-  	background-color: var(--interactive-accent);
+      background-color: var(--interactive-accent);
   }
   .nav-folder-collapse-indicator.collapse-icon svg.svg-icon
   {
-  	color:var(--collapseIconColor);
+      color:var(--collapseIconColor);
   }
   .nav-folder.mod-root>.nav-folder-title:first-of-type:hover
   {
-  	background-color:var(--level1);
+      background-color:var(--level1);
   }*/
   /* Outline (specific) */
   /* Quick Explorer */
@@ -5193,11 +5674,11 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) {
   /*
   .checkbox-container
   {
-  	background-color:var(--level3);
+      background-color:var(--level3);
   }
   .community-modal-details
   {
-  	background-color:var(--level1_a);
+      background-color:var(--level1_a);
   }
   */
   /* Sidebar Tabs */
@@ -5211,19 +5692,31 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio).theme-dark {
   --interactive-hover: var(--level2_a);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .view-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .nav-header,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .nav-header {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .mod-left-split
+  .nav-header,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .mod-right-split
+  .nav-header {
   background-color: var(--level2);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) textarea,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.metadata-input-text,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="date"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="datetime-local"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="text"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="search"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="email"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="password"],
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input[type="number"] {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input.metadata-input-text,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="date"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="datetime-local"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="text"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="search"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="email"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="password"],
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input[type="number"] {
   background-color: var(--level1);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.slider {
@@ -5254,11 +5747,15 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .workspace-leaf-content[data-type="recent-files"] {
   background: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf.mod-active,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tabs .workspace-leaf {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-leaf.mod-active,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-tabs
+  .workspace-leaf {
   background: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .clickable-icon.nav-action-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .clickable-icon.nav-action-button {
   opacity: 1;
   background-color: var(--level2);
 }
@@ -5289,8 +5786,10 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .tree-item-icon.collapse-icon:hover {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .tree-item-self:hover,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .tree-item-self.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .tree-item-self:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .tree-item-self.is-active {
   background-color: var(--levelHover);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
@@ -5309,8 +5808,10 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .view-header {
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .document-search-button,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .document-search-close-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .document-search-button,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .document-search-close-button {
   background-color: var(--level2);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
@@ -5413,15 +5914,21 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .tree-item-self.is-clickable:hover {
   background-color: var(--levelHover);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .explorable.titlebar-button {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .explorable.titlebar-button {
   box-shadow: var(--bevelStyleButton);
   background-color: var(--level2);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .explorable.titlebar-button:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .explorable.titlebar-button:hover {
   background-color: var(--level2_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) #quick-explorer .explorable.selected,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) #quick-explorer .explorable:hover,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  #quick-explorer
+  .explorable.selected,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  #quick-explorer
+  .explorable:hover,
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .qe-popup-menu
   .menu-item:not(.is-disabled):not(.is-label).selected {
@@ -5430,7 +5937,8 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .prompt {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) input.prompt-input {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  input.prompt-input {
   background-color: var(--bottom);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal-bg {
@@ -5444,17 +5952,23 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .workspace-split.mod-horizontal.mod-left-split {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-left-split .workspace-tabs {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .mod-left-split
+  .workspace-tabs {
   background-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .mod-right-split .workspace-tabs {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .mod-right-split
+  .workspace-tabs {
   background-color: var(--bottom);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-resize-handle {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-leaf-resize-handle {
   background-color: var(--level1);
   border-color: var(--level1);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-leaf-resize-handle:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-leaf-resize-handle:hover {
   background-color: var(--level1_a);
   border-color: var(--level1_a);
 }
@@ -5477,8 +5991,10 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal-bg {
   background-color: transparent;
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-community-theme,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal.mod-community-plugin {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .modal.mod-community-theme,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .modal.mod-community-plugin {
   background-color: var(--level1);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
@@ -5497,7 +6013,9 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   background-color: var(--level1);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .dropdown,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .search-results-info .dropdown {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .search-results-info
+  .dropdown {
   background-color: var(--level1_a);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .dropdown:hover,
@@ -5533,16 +6051,23 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .clickable-icon.is-active {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .modal
+  .clickable-icon {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .modal
+  .clickable-icon:hover {
   background-color: var(--level1_b);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .modal .clickable-icon {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .modal
+  .clickable-icon {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .vertical-tab-nav-item.is-active,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .vertical-tab-nav-item.is-active,
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .vertical-tab-nav-item.is-active:hover {
   background-color: var(--background-modifier-hover);
@@ -5571,10 +6096,12 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
   .workspace-tab-header:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-tab-header:hover {
   background-color: var(--level1_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .workspace-tab-header.is-active {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .workspace-tab-header.is-active {
   background-color: var(--level1_b);
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
@@ -5672,12 +6199,15 @@ body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item {
   --background-modifier-border: var(--level3);
   --background-modifier-border-hover: var(--level3_a);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item.is-selected,
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-item.is-selected:hover {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .community-item.is-selected,
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .community-item.is-selected:hover {
   border-color: var(--level3_a);
   background-color: var(--level3);
 }
-body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio) .community-modal-details {
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .community-modal-details {
   background-color: transparent;
 }
 body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
@@ -5707,13 +6237,17 @@ body {
 }
 
 body:not(.disableBevels):not(.dtm08):not(.factorio) {
-  --bevelStyleButton: inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
+  --bevelStyleButton:
+    inset -1px -1px var(--bevelDark1), inset 1px 1px var(--bevelBright2),
     inset -2px -2px var(--bevelDark2), inset 2px 2px var(--bevelBright1);
-  --bevelStyleContainer: inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
+  --bevelStyleContainer:
+    inset -1px -1px var(--bevelBright1), inset 1px 1px var(--bevelDark2),
     inset -2px -2px var(--bevelBright2), inset 2px 2px var(--bevelDark1);
-  --bevelStyleContainerOuter: 1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
-    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2), -2px 0px var(--bevelDark1),
-    0px -2px var(--bevelDark1), -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
+  --bevelStyleContainerOuter:
+    1px 1px var(--bevelBright1), -1px -1px var(--bevelDark2),
+    -2px -2px var(--bevelDark1), 2px 2px var(--bevelBright2),
+    -2px 0px var(--bevelDark1), 0px -2px var(--bevelDark1),
+    -2px 2px var(--bevelBright2), 2px -2px var(--bevelBright2);
 }
 
 body:not(.disableBevels):not(.dtm08):not(.factorio) {
@@ -5729,26 +6263,26 @@ body:not(.disableBevels):not(.dtm08):not(.factorio) {
   /*
   .nav-folder.mod-root .nav-folder > .nav-folder-children
   {
-  	border-left: 1px solid var(--separatorColor);
+      border-left: 1px solid var(--separatorColor);
   }*/
   /*
   .workspace-leaf-content[data-type=file-explorer] .tree-item-inner
   {
-  	border-left:1px solid var(--separatorColor);
+      border-left:1px solid var(--separatorColor);
   }
   .workspace-leaf-content[data-type=file-explorer] .tree-item-self.is-clickable:hover .tree-item-inner
   {
-  	border-left:1px solid var(--separatorColor);
+      border-left:1px solid var(--separatorColor);
   }
-  	*/
+      */
   /*
   .workspace-leaf-content[data-type=outline] .tree-item-inner
   {
-  	border-left:1px solid var(--separatorColor);
+      border-left:1px solid var(--separatorColor);
   }
   .workspace-leaf-content[data-type=outline] .tree-item-self.is-clickable:hover .tree-item-inner
   {
-  	border-left:1px solid var(--separatorColor);
+      border-left:1px solid var(--separatorColor);
   }
   */
   /* Quick Explorer */
@@ -5767,7 +6301,8 @@ body:not(.disableBevels):not(.dtm08):not(.factorio).theme-dark {
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .clickable-icon,
 body:not(.disableBevels):not(.dtm08):not(.factorio) .clickable-icon:hover,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace-tab-header-inner-close-button,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .workspace-tab-header-inner-close-button,
 body:not(.disableBevels):not(.dtm08):not(.factorio) button {
   box-shadow: var(--bevelStyleButton);
 }
@@ -5776,7 +6311,9 @@ body:not(.disableBevels):not(.dtm08):not(.factorio) .view-header {
   border: 0px;
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split .nav-header,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split .nav-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .mod-right-split
+  .nav-header {
   padding: 3px;
   box-shadow: var(--bevelStyleButton);
   border: 0px;
@@ -5793,20 +6330,27 @@ body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:active,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="text"]:active,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="search"]:active,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="email"]:active,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="password"]:active,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="password"]:active,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="number"]:active,
 body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:focus,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="text"]:focus,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="search"]:focus,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="email"]:focus,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="password"]:focus,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="password"]:focus,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="number"]:focus,
 body:not(.disableBevels):not(.dtm08):not(.factorio) textarea:focus-visible,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="text"]:focus-visible,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="search"]:focus-visible,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="email"]:focus-visible,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="password"]:focus-visible,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input[type="number"]:focus-visible {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="text"]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="search"]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="email"]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="password"]:focus-visible,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input[type="number"]:focus-visible {
   box-shadow: var(--bevelStyleContainer);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
@@ -5835,16 +6379,22 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
   box-shadow: var(--bevelStyleContainer);
   box-shadow: var(--bevelStyleContainerOuter);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .is-clickable .tree-item-icon.collapse-icon {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .is-clickable
+  .tree-item-icon.collapse-icon {
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .document-search-container {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .document-search-close-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .document-search-close-button {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .workspace .mod-root .workspace-tab-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .workspace
+  .mod-root
+  .workspace-tab-header {
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
@@ -5854,33 +6404,50 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
-  :is(.workspace-leaf-content[data-type="markdown"], .workspace-leaf-content[data-type="empty"])
+  :is(
+    .workspace-leaf-content[data-type="markdown"],
+    .workspace-leaf-content[data-type="empty"]
+  )
   .view-header
   .view-actions,
 body:not(.disableBevels):not(.dtm08):not(.factorio)
-  :is(.workspace-leaf-content[data-type="markdown"], .workspace-leaf-content[data-type="empty"])
+  :is(
+    .workspace-leaf-content[data-type="markdown"],
+    .workspace-leaf-content[data-type="empty"]
+  )
   .view-header
   .view-header-nav-buttons {
   margin: 3px;
   height: calc(100% - 6px);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
-  :is(.workspace-leaf-content[data-type="markdown"], .workspace-leaf-content[data-type="empty"])
+  :is(
+    .workspace-leaf-content[data-type="markdown"],
+    .workspace-leaf-content[data-type="empty"]
+  )
   .view-header
   .view-actions
   > *:is(a, button),
 body:not(.disableBevels):not(.dtm08):not(.factorio)
-  :is(.workspace-leaf-content[data-type="markdown"], .workspace-leaf-content[data-type="empty"])
+  :is(
+    .workspace-leaf-content[data-type="markdown"],
+    .workspace-leaf-content[data-type="empty"]
+  )
   .view-header
   .view-header-nav-buttons
   > *:is(a, button) {
   height: 100%;
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .markdown-preview-view .markdown-embed,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .markdown-preview-view .file-embed {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .markdown-preview-view
+  .markdown-embed,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .markdown-preview-view
+  .file-embed {
   box-shadow: var(--bevelStyleContainer);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .explorable.titlebar-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .explorable.titlebar-button {
   box-shadow: var(--bevelStyleButton);
   background-color: var(--level2);
 }
@@ -5889,7 +6456,8 @@ body:not(.disableBevels):not(.dtm08):not(.factorio) .prompt {
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:hover,
 body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:focus,
-body:not(.disableBevels):not(.dtm08):not(.factorio) input.prompt-input:focus-visible {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  input.prompt-input:focus-visible {
   box-shadow: var(--bevelStyleContainer);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split > hr,
@@ -5897,11 +6465,16 @@ body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split > hr {
   border-left: 1px solid var(--level2);
   border-right: 1px solid var(--level2);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-horizontal > div > hr:not(.mod-root hr) {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .mod-horizontal
+  > div
+  > hr:not(.mod-root hr) {
   border-top: 1px solid var(--level2);
   border-bottom: 1px solid var(--level2);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .modal-container.mod-dim .modal.mod-settings,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .modal-container.mod-dim
+  .modal.mod-settings,
 body:not(.disableBevels):not(.dtm08):not(.factorio)
   .modal-container.mod-dim
   .modal.mod-community-plugin,
@@ -5911,11 +6484,15 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
 body:not(.disableBevels):not(.dtm08):not(.factorio) .modal.mod-community-theme {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .modal.mod-settings .vertical-tab-content {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .modal.mod-settings
+  .vertical-tab-content {
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .dropdown:hover,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .search-results-info .dropdown:hover {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .search-results-info
+  .dropdown:hover {
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
@@ -5931,8 +6508,12 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
   .clickable-icon.is-active {
   box-shadow: var(--bevelStyleButton);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-left-split .workspace-tab-header,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .mod-right-split .workspace-tab-header {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .mod-left-split
+  .workspace-tab-header,
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .mod-right-split
+  .workspace-tab-header {
   box-shadow: var(--bevelStyleButton);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio)
@@ -5943,7 +6524,9 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
   .clickable-icon {
   height: calc(var(--sidebarDashboardHeight) - 6px);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio):not(.leftAlignedLeftSidebarButtonDisable)
+body:not(.disableBevels):not(.dtm08):not(.factorio):not(
+    .leftAlignedLeftSidebarButtonDisable
+  )
   .mod-left-split
   .workspace-tab-header-container
   .workspace-tab-header-container-inner {
@@ -5962,10 +6545,13 @@ body:not(.disableBevels):not(.dtm08):not(.factorio)
   margin-right: calc(var(--handleSize) + 1px);
 }
 body:not(.disableBevels):not(.dtm08):not(.factorio) .community-item.is-selected,
-body:not(.disableBevels):not(.dtm08):not(.factorio) .community-item.is-selected:hover {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .community-item.is-selected:hover {
   border-color: var(--level3_a);
 }
-body:not(.disableBevels):not(.dtm08):not(.factorio) .titlebar-button-container .titlebar-button {
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .titlebar-button-container
+  .titlebar-button {
   box-shadow: var(--bevelStyleButton);
 }
 
@@ -5994,14 +6580,24 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
 }
 
 .dtm08 :is(.view-header, .nav-header) {
-  background: linear-gradient(var(--d8d8), var(--d8dA) 50%, var(--d8dB) 50%, var(--d8dC));
+  background: linear-gradient(
+    var(--d8d8),
+    var(--d8dA) 50%,
+    var(--d8dB) 50%,
+    var(--d8dC)
+  );
   box-shadow:
     inset 0 1px rgba(255, 255, 255, 0.1333333333),
     inset 0 2px rgba(255, 255, 255, 0.0666666667);
 }
 
 .dtm08 .status-bar {
-  background-image: linear-gradient(var(--d8d9), var(--d8dA) 50%, var(--d8dB) 50%, var(--d8dD));
+  background-image: linear-gradient(
+    var(--d8d9),
+    var(--d8dA) 50%,
+    var(--d8dB) 50%,
+    var(--d8dD)
+  );
   box-shadow: inset 0 2px rgba(255, 255, 255, 0.0666666667);
   border-top: solid 1px rgba(0, 0, 0, 0.7333333333);
 }
@@ -6042,7 +6638,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .vertical-tab-nav-item:active,
 .dtm08 .workspace-ribbon :not(.sidebar-toggle-button) .clickable-icon:active,
 .dtm08 .modal-container .prompt .suggestion-item:active {
-  background: linear-gradient(var(--d8dB), var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA));
+  background: linear-gradient(
+    var(--d8dB),
+    var(--d8dC) 50%,
+    var(--d8dB) 50%,
+    var(--d8dA)
+  );
   box-shadow:
     inset 0 1px 4px #000,
     0 1px rgba(255, 255, 255, 0.1333333333);
@@ -6055,7 +6656,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .is-active.vertical-tab-nav-item,
 .dtm08 .workspace-ribbon :not(.sidebar-toggle-button) .is-active.clickable-icon,
 .dtm08 .modal-container .prompt .is-active.suggestion-item {
-  background: linear-gradient(var(--d8d8), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dA));
+  background: linear-gradient(
+    var(--d8d8),
+    var(--d8d7) 50%,
+    var(--d8d9) 50%,
+    var(--d8dA)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
     inset 0 1px rgba(255, 255, 255, 0.2),
@@ -6081,15 +6687,25 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   :is(.view-header, .nav-header)
   :is(.view-header-nav-buttons, .nav-buttons-container, .view-actions)
   .clickable-icon,
-.dtm08 .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header,
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header,
 .dtm08 .workspace-tab-header-new-tab .clickable-icon {
   border: solid 1px #000;
-  background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8d9));
+  background: linear-gradient(
+    var(--d8d7),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8d9)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
 }
-.dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button:hover,
+.dtm08:not(.win7bar)
+  .titlebar-button-container.mod-right
+  .titlebar-button:hover,
 .dtm08
   :not(.is-mobile)
   .workspace-split.mod-left-split
@@ -6111,12 +6727,19 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container-inner
   .workspace-tab-header:hover,
 .dtm08 .workspace-tab-header-new-tab .clickable-icon:hover {
-  background: linear-gradient(var(--d8d6), var(--d8d8) 50%, var(--d8d9) 50%, var(--d8d8));
+  background: linear-gradient(
+    var(--d8d6),
+    var(--d8d8) 50%,
+    var(--d8d9) 50%,
+    var(--d8d8)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
 }
-.dtm08:not(.win7bar) .titlebar-button-container.mod-right .is-active.titlebar-button,
+.dtm08:not(.win7bar)
+  .titlebar-button-container.mod-right
+  .is-active.titlebar-button,
 .dtm08
   :not(.is-mobile)
   .workspace-split.mod-left-split
@@ -6138,12 +6761,19 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container-inner
   .is-active.workspace-tab-header,
 .dtm08 .workspace-tab-header-new-tab .is-active.clickable-icon {
-  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d8) 50%, var(--d8d7));
+  background: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d8) 50%,
+    var(--d8d7)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
 }
-.dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button:not(:last-of-type),
+.dtm08:not(.win7bar)
+  .titlebar-button-container.mod-right
+  .titlebar-button:not(:last-of-type),
 .dtm08
   :not(.is-mobile)
   .workspace-split.mod-left-split
@@ -6174,7 +6804,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container-inner
   .workspace-tab-header {
   border: solid 1px #000;
-  background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8d9));
+  background: linear-gradient(
+    var(--d8d7),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8d9)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6184,7 +6819,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container
   .workspace-tab-header-container-inner
   .workspace-tab-header:hover {
-  background: linear-gradient(var(--d8d6), var(--d8d8) 50%, var(--d8d9) 50%, var(--d8d8));
+  background: linear-gradient(
+    var(--d8d6),
+    var(--d8d8) 50%,
+    var(--d8d9) 50%,
+    var(--d8d8)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6194,7 +6834,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container
   .workspace-tab-header-container-inner
   .is-active.workspace-tab-header {
-  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d8) 50%, var(--d8d7));
+  background: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d8) 50%,
+    var(--d8d7)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
     0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6305,11 +6950,19 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     0 0 1px 2px rgba(255, 255, 255, 0.4);
 }
 
-.dtm08 .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header,
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header,
 .dtm08 .workspace-tab-header-new-tab .clickable-icon {
   border: solid 1px #000;
   border-bottom: 0px;
-  background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8dC));
+  background: linear-gradient(
+    var(--d8d7),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8dC)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
     0 0 0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6319,7 +6972,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container-inner
   .workspace-tab-header:hover,
 .dtm08 .workspace-tab-header-new-tab .clickable-icon:hover {
-  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dB));
+  background: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d9) 50%,
+    var(--d8dB)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
     0 0 0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6329,7 +6987,12 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   .workspace-tab-header-container-inner
   .is-active.workspace-tab-header,
 .dtm08 .workspace-tab-header-new-tab .is-active.clickable-icon {
-  background: linear-gradient(var(--d8d5), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dB));
+  background: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d9) 50%,
+    var(--d8dB)
+  );
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.0666666667),
     0 0 0 1px rgba(255, 255, 255, 0.0666666667);
@@ -6648,19 +7311,35 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
 .theme-dark {
   --d8i-fwd: url("data:image/png;base64,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");
   --dtm-08-emoji-tooltip-shadow: 0 0 0 1px #000b, 0 1px 4px #0008;
-  --dtm-08-emoji-tooltip-top-background: linear-gradient(var(--d8d7), var(--d8d9));
+  --dtm-08-emoji-tooltip-top-background: linear-gradient(
+    var(--d8d7),
+    var(--d8d9)
+  );
   --dtm-08-emoji-tooltip-top-shadow: inset 0 1px #fff3;
-  --dtm-08-emoji-tooltip-bottom-background: linear-gradient(var(--d8dA), var(--d8dB));
+  --dtm-08-emoji-tooltip-bottom-background: linear-gradient(
+    var(--d8dA),
+    var(--d8dB)
+  );
   --dtm-08-emoji-tooltip-bottom-shadow: inset 0 1px #0008, inset 0 2px #fff2;
   --dtm-08-dm-list-tab-icon-background: #0004;
   --dtm-08-dm-list-tab-icon-shadow: 0 1px #fff2, inset 0 1px 2px #0008;
   --dtm-08-dm-list-tab-icon-color: inherit;
-  --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#0003, #0006);
-  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
-    0 0 0 1px #0008, 0 1px 4px #0004;
-  --dtm-08-tabs-bg: linear-gradient(var(--d8dB), var(--d8dA) 50%, var(--d8d8) 50%, var(--d8d7));
-  --dtm-08-tabs-bs: inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
+  --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2px
+    rgba(0, 0, 0, 0.5);
+  --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(
+    #0003,
+    #0006
+  );
+  --dtm-08-worse-profile-popout-custom-status-box-shadow:
+    inset 0 0 0 1px #fff1, inset 0 1px #fff2, 0 0 0 1px #0008, 0 1px 4px #0004;
+  --dtm-08-tabs-bg: linear-gradient(
+    var(--d8dB),
+    var(--d8dA) 50%,
+    var(--d8d8) 50%,
+    var(--d8d7)
+  );
+  --dtm-08-tabs-bs:
+    inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
   --dtm-08-tab-hover-bg: linear-gradient(
     var(--d8d8),
     var(--d8d9) 50%,
@@ -6688,24 +7367,24 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8dB) 50%,
     var(--d8dA)
   );
-  --dtm-08-card-style1-bs: 0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
-    inset 0 1px #fff3;
+  --dtm-08-card-style1-bs:
+    0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
   --dtm-08-card-style1h-bg: linear-gradient(
     var(--d8d8),
     var(--d8d9) 50%,
     var(--d8dA) 50%,
     var(--d8d9)
   );
-  --dtm-08-card-style1h-bs: 0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2,
-    inset 0 1px #fff3;
+  --dtm-08-card-style1h-bs:
+    0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
   --dtm-08-card-style1a-bg: linear-gradient(
     var(--d8dA),
     var(--d8dB) 50%,
     var(--d8dC) 50%,
     var(--d8dB)
   );
-  --dtm-08-card-style1a-bs: inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2,
-    inset 0 1px 1px #0006;
+  --dtm-08-card-style1a-bs:
+    inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2, inset 0 1px 1px #0006;
   --dtm-08-card-style1i-bg: linear-gradient(
     var(--d8dB),
     var(--d8dA) 50%,
@@ -6713,28 +7392,54 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8d8)
   );
   --dtm-08-card-style1i-bs: inset 0 1px 4px #0008, 0 0 0 1px #0004, 0 2px #fff2;
-  --dtm-08-card-style2i-bs: 0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
+  --dtm-08-card-style2i-bs:
+    0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
     inset 0 0 0 1px rgba(0 0 0/0.25);
-  --dtm-08-message-hover-bg: linear-gradient(#0002, #0001 50%, #0003 50%, #0002);
-  --dtm-08-right-sidebar-separator-line: linear-gradient(to right, #0000, #000b);
+  --dtm-08-message-hover-bg: linear-gradient(
+    #0002,
+    #0001 50%,
+    #0003 50%,
+    #0002
+  );
+  --dtm-08-right-sidebar-separator-line: linear-gradient(
+    to right,
+    #0000,
+    #000b
+  );
 }
 
 .theme-light {
   --d8i-fwd: url("data:image/png;base64,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");
   --dtm-08-emoji-tooltip-shadow: 0 0 0 1px #0004, 0 1px 4px #0004;
-  --dtm-08-emoji-tooltip-top-background: linear-gradient(var(--d8l2), var(--d8l4));
+  --dtm-08-emoji-tooltip-top-background: linear-gradient(
+    var(--d8l2),
+    var(--d8l4)
+  );
   --dtm-08-emoji-tooltip-top-shadow: inset 0 1px #fff;
-  --dtm-08-emoji-tooltip-bottom-background: linear-gradient(var(--d8l3), var(--d8l5));
+  --dtm-08-emoji-tooltip-bottom-background: linear-gradient(
+    var(--d8l3),
+    var(--d8l5)
+  );
   --dtm-08-emoji-tooltip-bottom-shadow: inset 0 1px #0002, inset 0 2px #fff;
   --dtm-08-dm-list-tab-icon-background: #0008;
   --dtm-08-dm-list-tab-icon-shadow: 0 1px #fff2, inset 0 1px 2px #0008;
   --dtm-08-dm-list-tab-icon-color: var(--d8l2);
-  --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 1px rgb(255 255 255);
-  --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(#fff4, #fff6);
-  --dtm-08-worse-profile-popout-custom-status-box-shadow: inset 0 0 0 1px #fff1, inset 0 1px #fff2,
-    0 0 0 1px #0002, 0 1px 4px #0006;
-  --dtm-08-tabs-bg: linear-gradient(var(--d8lA), var(--d8l9) 50%, var(--d8l8) 50%, var(--d8l7));
-  --dtm-08-tabs-bs: inset 0 1px 4px #0004, 0 0 0 1px var(--d8lD), 0 2px #fff6, 0 0 0 2px #fff4;
+  --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 1px
+    rgb(255 255 255);
+  --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(
+    #fff4,
+    #fff6
+  );
+  --dtm-08-worse-profile-popout-custom-status-box-shadow:
+    inset 0 0 0 1px #fff1, inset 0 1px #fff2, 0 0 0 1px #0002, 0 1px 4px #0006;
+  --dtm-08-tabs-bg: linear-gradient(
+    var(--d8lA),
+    var(--d8l9) 50%,
+    var(--d8l8) 50%,
+    var(--d8l7)
+  );
+  --dtm-08-tabs-bs:
+    inset 0 1px 4px #0004, 0 0 0 1px var(--d8lD), 0 2px #fff6, 0 0 0 2px #fff4;
   --dtm-08-tab-hover-bg: linear-gradient(
     var(--d8l3),
     var(--d8l5) 50%,
@@ -6762,7 +7467,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8l1) 50%,
     var(--d8l2)
   );
-  --dtm-08-card-style1-bs: 0 1px 3px #0004, inset 0 0 0 1px var(--d8lA), inset 0 0 0 2px #fffb,
+  --dtm-08-card-style1-bs:
+    0 1px 3px #0004, inset 0 0 0 1px var(--d8lA), inset 0 0 0 2px #fffb,
     inset 0 2px #fff;
   --dtm-08-card-style1h-bg: linear-gradient(
     var(--d8l0),
@@ -6770,7 +7476,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8l1) 50%,
     var(--d8l0)
   );
-  --dtm-08-card-style1h-bs: 0 1px 5px #0004, inset 0 0 0 1px var(--d8lE), inset 0 0 0 2px #fff,
+  --dtm-08-card-style1h-bs:
+    0 1px 5px #0004, inset 0 0 0 1px var(--d8lE), inset 0 0 0 2px #fff,
     inset 0 2px #fff;
   --dtm-08-card-style1a-bg: linear-gradient(
     var(--d8l3),
@@ -6778,7 +7485,8 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8l3) 50%,
     var(--d8l2)
   );
-  --dtm-08-card-style1a-bs: inset 0 1px 8px #0009, inset 0 0 0 1px var(--d8l5), 0 0 0 1px #fff6,
+  --dtm-08-card-style1a-bs:
+    inset 0 1px 8px #0009, inset 0 0 0 1px var(--d8l5), 0 0 0 1px #fff6,
     0 1px #fff;
   --dtm-08-card-style1i-bg: linear-gradient(
     var(--d8l2),
@@ -6786,20 +7494,43 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
     var(--d8l2) 50%,
     var(--d8l1)
   );
-  --dtm-08-card-style1i-bs: inset 0 1px 4px #0004, inset 0 0 0 1px var(--d8l5), 0 1px #fffb;
-  --dtm-08-message-hover-bg: linear-gradient(#00000006, #00000003 50%, #00000011 50%, #00000006);
-  --dtm-08-right-sidebar-separator-line: linear-gradient(to right, #0000, var(--d8lD));
+  --dtm-08-card-style1i-bs:
+    inset 0 1px 4px #0004, inset 0 0 0 1px var(--d8l5), 0 1px #fffb;
+  --dtm-08-message-hover-bg: linear-gradient(
+    #00000006,
+    #00000003 50%,
+    #00000011 50%,
+    #00000006
+  );
+  --dtm-08-right-sidebar-separator-line: linear-gradient(
+    to right,
+    #0000,
+    var(--d8lD)
+  );
 }
 
 :root,
 .theme-dark,
 .theme-light {
   --blurple: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
-  --blurple-st: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5);
+  --blurple-st: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.5
+  );
   --blurple-hover: hsl(227.1, calc(var(--saturation-factor, 1) * 44.1%), 58.6%);
   --blurple-active: hsl(226.3, calc(var(--saturation-factor, 1) * 33.9%), 52%);
-  --blurple-inverted: hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%);
-  --blurple-inverted-active: hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%);
+  --blurple-inverted: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 55.6%),
+    98.2%
+  );
+  --blurple-inverted-active: hsl(
+    228.6,
+    calc(var(--saturation-factor, 1) * 60%),
+    93.1%
+  );
   --red: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
   --red-hover: hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%);
   --red-active: hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%);
@@ -6808,57 +7539,260 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   --yellow: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
   --yellow-hover: hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%);
   --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
-  --yellow-inverted-active: hsl(37.3, calc(var(--saturation-factor, 1) * 95.7%), 90.8%);
+  --yellow-inverted-active: hsl(
+    37.3,
+    calc(var(--saturation-factor, 1) * 95.7%),
+    90.8%
+  );
   --green: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
   --green-hover: hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%);
   --green-active: hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%);
   --green-inverted: hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%);
-  --green-inverted-active: hsl(153.9, calc(var(--saturation-factor, 1) * 43.4%), 89.6%);
-  --brand-experiment-100: hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%);
-  --brand-experiment-130: hsl(228, calc(var(--saturation-factor, 1) * 62.5%), 96.9%);
-  --brand-experiment-160: hsl(228, calc(var(--saturation-factor, 1) * 60%), 95.1%);
-  --brand-experiment-200: hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%);
-  --brand-experiment-230: hsl(226.7, calc(var(--saturation-factor, 1) * 57.4%), 90.8%);
-  --brand-experiment-260: hsl(225.9, calc(var(--saturation-factor, 1) * 58.6%), 88.6%);
-  --brand-experiment-300: hsl(226.8, calc(var(--saturation-factor, 1) * 57.7%), 86.1%);
-  --brand-experiment-330: hsl(226.9, calc(var(--saturation-factor, 1) * 59.1%), 81.8%);
-  --brand-experiment-360: hsl(227.3, calc(var(--saturation-factor, 1) * 57.9%), 77.6%);
-  --brand-experiment-400: hsl(226.3, calc(var(--saturation-factor, 1) * 58%), 72%);
-  --brand-experiment-430: hsl(226.5, calc(var(--saturation-factor, 1) * 58.2%), 70%);
-  --brand-experiment-460: hsl(226.9, calc(var(--saturation-factor, 1) * 58.5%), 67.8%);
+  --green-inverted-active: hsl(
+    153.9,
+    calc(var(--saturation-factor, 1) * 43.4%),
+    89.6%
+  );
+  --brand-experiment-100: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 55.6%),
+    98.2%
+  );
+  --brand-experiment-130: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 62.5%),
+    96.9%
+  );
+  --brand-experiment-160: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 60%),
+    95.1%
+  );
+  --brand-experiment-200: hsl(
+    228.6,
+    calc(var(--saturation-factor, 1) * 60%),
+    93.1%
+  );
+  --brand-experiment-230: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 57.4%),
+    90.8%
+  );
+  --brand-experiment-260: hsl(
+    225.9,
+    calc(var(--saturation-factor, 1) * 58.6%),
+    88.6%
+  );
+  --brand-experiment-300: hsl(
+    226.8,
+    calc(var(--saturation-factor, 1) * 57.7%),
+    86.1%
+  );
+  --brand-experiment-330: hsl(
+    226.9,
+    calc(var(--saturation-factor, 1) * 59.1%),
+    81.8%
+  );
+  --brand-experiment-360: hsl(
+    227.3,
+    calc(var(--saturation-factor, 1) * 57.9%),
+    77.6%
+  );
+  --brand-experiment-400: hsl(
+    226.3,
+    calc(var(--saturation-factor, 1) * 58%),
+    72%
+  );
+  --brand-experiment-430: hsl(
+    226.5,
+    calc(var(--saturation-factor, 1) * 58.2%),
+    70%
+  );
+  --brand-experiment-460: hsl(
+    226.9,
+    calc(var(--saturation-factor, 1) * 58.5%),
+    67.8%
+  );
   --brand-experiment: var(--blurple);
-  --brand-experiment-500: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
-  --brand-experiment-530: hsl(226.6, calc(var(--saturation-factor, 1) * 45.2%), 59.2%);
-  --brand-experiment-560: hsl(226.6, calc(var(--saturation-factor, 1) * 35.3%), 52.7%);
-  --brand-experiment-600: hsl(227.1, calc(var(--saturation-factor, 1) * 31%), 44.3%);
-  --brand-experiment-630: hsl(226.2, calc(var(--saturation-factor, 1) * 31.3%), 38.2%);
-  --brand-experiment-660: hsl(226.4, calc(var(--saturation-factor, 1) * 31%), 33.5%);
-  --brand-experiment-700: hsl(226.8, calc(var(--saturation-factor, 1) * 30.8%), 26.1%);
-  --brand-experiment-730: hsl(227.7, calc(var(--saturation-factor, 1) * 31.2%), 24.5%);
-  --brand-experiment-760: hsl(226.7, calc(var(--saturation-factor, 1) * 31.6%), 22.4%);
-  --brand-experiment-800: hsl(226.5, calc(var(--saturation-factor, 1) * 31.3%), 19.4%);
-  --brand-experiment-830: hsl(225, calc(var(--saturation-factor, 1) * 31.6%), 14.9%);
-  --brand-experiment-860: hsl(225, calc(var(--saturation-factor, 1) * 32%), 9.8%);
-  --brand-experiment-900: hsl(228, calc(var(--saturation-factor, 1) * 29.4%), 3.3%);
-  --brand-experiment-05a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05);
-  --brand-experiment-10a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.1);
-  --brand-experiment-15a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.15);
-  --brand-experiment-20a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.2);
-  --brand-experiment-25a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.25);
-  --brand-experiment-30a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.3);
-  --brand-experiment-35a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.35);
-  --brand-experiment-40a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.4);
-  --brand-experiment-45a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.45);
-  --brand-experiment-50a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5);
-  --brand-experiment-55a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.55);
-  --brand-experiment-60a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.6);
-  --brand-experiment-65a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.65);
-  --brand-experiment-70a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.7);
-  --brand-experiment-75a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.75);
-  --brand-experiment-80a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.8);
-  --brand-experiment-85a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.85);
-  --brand-experiment-90a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.9);
-  --brand-experiment-95a: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.95);
+  --brand-experiment-500: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%
+  );
+  --brand-experiment-530: hsl(
+    226.6,
+    calc(var(--saturation-factor, 1) * 45.2%),
+    59.2%
+  );
+  --brand-experiment-560: hsl(
+    226.6,
+    calc(var(--saturation-factor, 1) * 35.3%),
+    52.7%
+  );
+  --brand-experiment-600: hsl(
+    227.1,
+    calc(var(--saturation-factor, 1) * 31%),
+    44.3%
+  );
+  --brand-experiment-630: hsl(
+    226.2,
+    calc(var(--saturation-factor, 1) * 31.3%),
+    38.2%
+  );
+  --brand-experiment-660: hsl(
+    226.4,
+    calc(var(--saturation-factor, 1) * 31%),
+    33.5%
+  );
+  --brand-experiment-700: hsl(
+    226.8,
+    calc(var(--saturation-factor, 1) * 30.8%),
+    26.1%
+  );
+  --brand-experiment-730: hsl(
+    227.7,
+    calc(var(--saturation-factor, 1) * 31.2%),
+    24.5%
+  );
+  --brand-experiment-760: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 31.6%),
+    22.4%
+  );
+  --brand-experiment-800: hsl(
+    226.5,
+    calc(var(--saturation-factor, 1) * 31.3%),
+    19.4%
+  );
+  --brand-experiment-830: hsl(
+    225,
+    calc(var(--saturation-factor, 1) * 31.6%),
+    14.9%
+  );
+  --brand-experiment-860: hsl(
+    225,
+    calc(var(--saturation-factor, 1) * 32%),
+    9.8%
+  );
+  --brand-experiment-900: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 29.4%),
+    3.3%
+  );
+  --brand-experiment-05a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.05
+  );
+  --brand-experiment-10a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.1
+  );
+  --brand-experiment-15a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.15
+  );
+  --brand-experiment-20a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.2
+  );
+  --brand-experiment-25a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.25
+  );
+  --brand-experiment-30a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.3
+  );
+  --brand-experiment-35a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.35
+  );
+  --brand-experiment-40a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.4
+  );
+  --brand-experiment-45a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.45
+  );
+  --brand-experiment-50a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.5
+  );
+  --brand-experiment-55a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.55
+  );
+  --brand-experiment-60a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.6
+  );
+  --brand-experiment-65a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.65
+  );
+  --brand-experiment-70a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.7
+  );
+  --brand-experiment-75a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.75
+  );
+  --brand-experiment-80a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.8
+  );
+  --brand-experiment-85a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.85
+  );
+  --brand-experiment-90a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.9
+  );
+  --brand-experiment-95a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.95
+  );
 }
 
 .theme-dark,
@@ -6871,23 +7805,34 @@ body:is(.inherit, .dtm08) .workspace-leaf-resize-handle:hover {
   --yellow-360: var(--yellow);
   --green-360: var(--green);
   --brand-500: var(--blurple);
-  --premium-tier-2-purple-for-gradients: hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%);
-  --premium-tier-2-purple-for-gradients-hsl: 342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
+  --premium-tier-2-purple-for-gradients: hsl(
+    342,
+    calc(var(--saturation-factor, 1) * 58%),
+    72.9%
+  );
+  --premium-tier-2-purple-for-gradients-hsl:
+    342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
   --premium-tier-2-purple-for-gradients-2: hsl(
     296.8,
     calc(var(--saturation-factor, 1) * 44.2%),
     66.3%
   );
-  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%;
-  --premium-tier-2-pink-for-gradients: hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%);
-  --premium-tier-2-pink-for-gradients-hsl: 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+  --premium-tier-2-purple-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients: hsl(
+    270,
+    calc(var(--saturation-factor, 1) * 86.7%),
+    70.6%
+  );
+  --premium-tier-2-pink-for-gradients-hsl:
+    270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
   --premium-tier-2-pink-for-gradients-2: hsl(
     296.8,
     calc(var(--saturation-factor, 1) * 44.2%),
     66.3%
   );
-  --premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
 }
 
 body.dtm08 {
@@ -6904,12 +7849,32 @@ body.dtm08 {
 
 body.dtm08 {
   --text-on-accent: var(--textBrighter) !important;
-  --bgGradient1: linear-gradient(0deg, rgba(29, 32, 37, 1) 0%, rgba(8, 8, 8, 1) 100%);
-  --bgGradient2: linear-gradient(180deg, rgba(29, 32, 37, 1) 0%, rgba(8, 8, 8, 1) 100%);
+  --bgGradient1: linear-gradient(
+    0deg,
+    rgba(29, 32, 37, 1) 0%,
+    rgba(8, 8, 8, 1) 100%
+  );
+  --bgGradient2: linear-gradient(
+    180deg,
+    rgba(29, 32, 37, 1) 0%,
+    rgba(8, 8, 8, 1) 100%
+  );
   --levelLayer: #d3e2ff18;
-  --settingsHeaderGradient: linear-gradient(90deg, #d3e2ff16 0%, rgba(0, 0, 0, 0) 80%);
-  --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, #00000088 100%);
-  --enabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, #d3e2ff18 100%);
+  --settingsHeaderGradient: linear-gradient(
+    90deg,
+    #d3e2ff16 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  --disabledOverlay: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 75%,
+    #00000088 100%
+  );
+  --enabledOverlay: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 75%,
+    #d3e2ff18 100%
+  );
   --settingHeaderBG: url(data:image/jpeg;base64,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);
 }
 
@@ -6917,24 +7882,24 @@ body.dtm08 {
   /* This needs to be variabled before it goes to public 
   .titlebar-inner
   {
-  	justify-content: space-between;
-  	.titlebar-button-container.mod-right
-  	{
-  		position: fixed;
-  		right: 0px;
-  		top: 0px;
-  		align-self: flex-end;
-  		&::before
-  		{
-  			left:-40px;
-  			z-index: -1;
-  			content: "";
-  			position: absolute;
-  			height: 60px;
-  			width: 160px;
-  			background: var(--bgGradient2);
-  		}
-  	}
+      justify-content: space-between;
+      .titlebar-button-container.mod-right
+      {
+          position: fixed;
+          right: 0px;
+          top: 0px;
+          align-self: flex-end;
+          &::before
+          {
+              left:-40px;
+              z-index: -1;
+              content: "";
+              position: absolute;
+              height: 60px;
+              width: 160px;
+              background: var(--bgGradient2);
+          }
+      }
   }
   */
 }
@@ -6942,7 +7907,10 @@ body.dtm08 {
   background-color: none;
   background: var(--bgGradient1);
 }
-.dtm08 .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+.dtm08
+  .workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
 .dtm08 .mod-root .workspace-tabs .workspace-leaf,
 .dtm08 .workspace-tabs .workspace-leaf {
   background: var(--bgGradient1);
@@ -6950,7 +7918,12 @@ body.dtm08 {
 .dtm08 .workspace-tab-header-container,
 .dtm08 .mod-top-right-space,
 .dtm08 .mod-top {
-  background: linear-gradient(var(--d8dA), var(--d8dD) 50%, var(--d8dE) 50%, var(--d8dF));
+  background: linear-gradient(
+    var(--d8dA),
+    var(--d8dD) 50%,
+    var(--d8dE) 50%,
+    var(--d8dF)
+  );
   box-shadow:
     inset 0 1px rgba(255, 255, 255, 0.1333333333),
     inset 0 2px rgba(255, 255, 255, 0.0666666667);
@@ -6961,16 +7934,26 @@ body.dtm08 {
 .dtm08 .workspace-leaf-content[data-mode="source"] .view-content {
   background-color: #000000;
 }
-.dtm08.dtm08GradientEditorMode .workspace-leaf-content[data-mode="source"] .view-content {
+.dtm08.dtm08GradientEditorMode
+  .workspace-leaf-content[data-mode="source"]
+  .view-content {
   background: transparent;
 }
 
 .dtm08 .modal-container .prompt {
-  background: linear-gradient(rgba(63, 67, 75, 0.8666666667), rgba(32, 35, 41, 0.8666666667));
+  background: linear-gradient(
+    rgba(63, 67, 75, 0.8666666667),
+    rgba(32, 35, 41, 0.8666666667)
+  );
   border: solid 1px #000;
 }
 .dtm08 .modal-container .prompt .prompt-input {
-  background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+  background: linear-gradient(
+    var(--d8dD) 0%,
+    var(--d8dC) 50%,
+    var(--d8dB) 50%,
+    var(--d8dA) 100%
+  );
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.4),
     inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
@@ -7047,21 +8030,21 @@ body.dtm08 {
   /*
   &:before
   {
-  	content: "";
-  	display: block;
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	right: 0;
-  	bottom: 0;
-  	mask: linear-gradient(to right, #000, #0000);
-  	-webkit-mask: linear-gradient(to right, #000, #0000);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      mask: linear-gradient(to right, #000, #0000);
+      -webkit-mask: linear-gradient(to right, #000, #0000);
 
-  	background: linear-gradient(var(--d8dA), var(--d8d9) 50%, var(--d8dB) 50%, var(--d8dD));
-  	box-shadow: inset 0 -1px #000, 0 -1px #000;
-  	z-index: 0;
+      background: linear-gradient(var(--d8dA), var(--d8d9) 50%, var(--d8dB) 50%, var(--d8dD));
+      box-shadow: inset 0 -1px #000, 0 -1px #000;
+      z-index: 0;
   }
-  	*/
+      */
 }
 .dtm08
   .modal.mod-settings
@@ -7073,7 +8056,11 @@ body.dtm08 {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.dtm08 .modal.mod-settings .modal-content .vertical-tab-content-container .vertical-tab-content {
+.dtm08
+  .modal.mod-settings
+  .modal-content
+  .vertical-tab-content-container
+  .vertical-tab-content {
   background: linear-gradient(var(--d8d9), var(--d8dB)) fixed 0 0 / cover;
 }
 .dtm08 .modal.mod-settings .modal-content button {
@@ -7091,7 +8078,8 @@ body.dtm08 {
 .dtm08.leftAlignedLeftSidebarButtonDisable .sidebar-toggle-button.mod-left {
   border-left: 0px;
 }
-.dtm08:not(.leftAlignedLeftSidebarButtonDisable) .sidebar-toggle-button.mod-left {
+.dtm08:not(.leftAlignedLeftSidebarButtonDisable)
+  .sidebar-toggle-button.mod-left {
   border-right: 0px;
 }
 .dtm08.titlebarAlign_RBA .sidebar-toggle-button.mod-right {
@@ -7109,7 +8097,10 @@ body.dtm08 {
   border-right: 0px;
 }
 
-.dtm08 :not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+.dtm08
+  :not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   margin-bottom: -1px;
 }
 .dtm08
@@ -7124,21 +8115,24 @@ body.dtm08 {
   /*
   .workspace-tab-header-container-inner
   {
-  	border-radius: 3px 3px 0 0;
-  	border: solid 1px #000;
-  	background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8dC));
-  	box-shadow: inset 0 0 0 1px #fff1, 0 0 0 1px #fff1;
-  	position: relative;
-  	bottom: -1px;
+      border-radius: 3px 3px 0 0;
+      border: solid 1px #000;
+      background: linear-gradient(var(--d8d7), var(--d8d9) 50%, var(--d8dA) 50%, var(--d8dC));
+      box-shadow: inset 0 0 0 1px #fff1, 0 0 0 1px #fff1;
+      position: relative;
+      bottom: -1px;
   }
   */
   /*
   &:not(.disableRightTitlebarOffset) .mod-top-right-space .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:last-of-type
   {
-  	border-right: 0px;
+      border-right: 0px;
   }*/
 }
-.dtm08 .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header {
+.dtm08
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
   border-bottom: 0px;
 }
 .mod-root
@@ -7162,7 +8156,8 @@ body.dtm08 {
 .dtm08:not(.win7bar) .titlebar-button-container.mod-right .titlebar-button {
   width: 41px;
 }
-.dtm08:not(.win7bar).is-frameless:not(.is-hidden-frameless, .is-fullscreen) .titlebar-inner {
+.dtm08:not(.win7bar).is-frameless:not(.is-hidden-frameless, .is-fullscreen)
+  .titlebar-inner {
   background: linear-gradient(var(--d8dE), var(--d8d9));
   box-shadow:
     inset 0 -1px var(--d8dA),
@@ -7217,7 +8212,9 @@ body.dtm08 {
   background-color: #242324;
   box-shadow: none;
 }
-.factorio .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+.factorio
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
   background-color: transparent;
 }
 .factorio .node-insert-event {

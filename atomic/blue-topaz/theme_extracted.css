@@ -1,36 +1,36 @@
 :root {
-  --background-code: #292d3e;
+  --background-code: light-dark(#292d3e, #292d3e);
   --button-radius: 4px;
   --cards-width: 87.04px;
   --code-atom: #f78c6c;
-  --code-attribute: #c792ea;
+  --code-attribute: light-dark(#c792ea, #c792ea);
   --code-attribute-in-comment: #c792ea;
   --code-bracket: #ff5370;
-  --code-builtin: #ffcb6b;
+  --code-builtin: light-dark(#ffcb6b, #ffcb6b);
   --code-callee: #89ddff;
-  --code-comment: #676e95;
+  --code-comment: light-dark(#676e95, #676e95);
   --code-def: #82aaff;
   --code-definition: #82aaff;
   --code-error-bg: #ff5370;
   --code-header: #da7dae;
-  --code-hr: #98e342;
-  --code-keyword: #c792ea;
+  --code-hr: light-dark(#98e342, #98e342);
+  --code-keyword: light-dark(#c792ea, #c792ea);
   --code-link: #696d70;
   --code-matching-bracket: #ffffff;
-  --code-meta: #ffcb6b;
-  --code-normal: #d4d4d4;
+  --code-meta: light-dark(#ffcb6b, #ffcb6b);
+  --code-normal: light-dark(#d4d4d4, #d4d4d4);
   --code-number: #ff5370;
-  --code-operator: #89ddff;
-  --code-property: #c792ea;
-  --code-qualifier: #decb6b;
-  --code-string: #c3e88d;
-  --code-string-2: #f07178;
-  --code-tag: #ff5370;
+  --code-operator: light-dark(#89ddff, #89ddff);
+  --code-property: light-dark(#c792ea, #c792ea);
+  --code-qualifier: light-dark(#decb6b, #decb6b);
+  --code-string: light-dark(#c3e88d, #c3e88d);
+  --code-string-2: light-dark(#f07178, #f07178);
+  --code-tag: light-dark(#ff5370, #ff5370);
   --code-tag-in-comment: #ff5370;
-  --code-type: #decb6b;
-  --code-variable: #f07178;
-  --code-variable-2: #53ada3;
-  --code-variable-3: #e7852fe7;
+  --code-type: light-dark(#decb6b, #decb6b);
+  --code-variable: light-dark(#f07178, #f07178);
+  --code-variable-2: light-dark(#eeffff, #eeffff);
+  --code-variable-3: light-dark(#f07178, #f07178);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --matrix-1: var(--p-kanban-color-2);
@@ -184,7 +184,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -229,30 +230,30 @@ body {
   --cloze-decoration-color-2: var(--theme-color);
   --cloze-decoration-color-3: var(--theme-color);
   --code-atom: var(--orange-1);
-  --code-attribute: var(--code-function);
+  --code-attribute: light-dark(#c792ea, #c792ea);
   --code-background: var(--background-code);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: var(--darkgreen);
-  --code-function: var(--color-yellow);
-  --code-hr: var(--code-punctuation);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-language: var(--text-muted);
-  --code-normal: var(--text-normal);
-  --code-operator: var(--code-property);
-  --code-property: var(--blue);
-  --code-punctuation: var(--text-muted);
-  --code-qualifier: var(--aqua);
+  --code-comment: light-dark(#676e95, #676e95);
+  --code-function: light-dark(#c792ea, #c792ea);
+  --code-hr: light-dark(#98e342, #98e342);
+  --code-important: light-dark(#c792ea, #c792ea);
+  --code-keyword: light-dark(#c792ea, #c792ea);
+  --code-language: light-dark(#ff5370, #ff5370);
+  --code-normal: light-dark(#d4d4d4, #d4d4d4);
+  --code-operator: light-dark(#89ddff, #89ddff);
+  --code-property: light-dark(#c792ea, #c792ea);
+  --code-punctuation: light-dark(#ff5370, #ff5370);
+  --code-qualifier: light-dark(#decb6b, #decb6b);
   --code-radius: var(--radius-s);
-  --code-selection-background: var(--text-selection);
+  --code-selection-background: light-dark(#353a50, #353a50);
   --code-selection-color: var(--code-normal);
   --code-size: var(--font-smaller);
-  --code-string: var(--color-green);
-  --code-string-2: var(--code-string);
-  --code-tag: var(--purple);
-  --code-type: var(--code-function);
-  --code-value: var(--green);
+  --code-string: light-dark(#c3e88d, #c3e88d);
+  --code-string-2: light-dark(#f07178, #f07178);
+  --code-tag: light-dark(#ff5370, #ff5370);
+  --code-type: light-dark(#decb6b, #decb6b);
+  --code-value: light-dark(#ff5370, #ff5370);
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -279,7 +280,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -305,24 +307,31 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
   --font-family-em: var(--font-family-strong, var(--font-monospace-theme));
-  --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
-    "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
-  --font-family-inline-code: var(--font-monospace-override), var(--font-monospace-theme);
+  --font-family-folder-file-title:
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
+    "Source Sans Pro", "Segoe UI Emoji", sans-serif;
+  --font-family-inline-code:
+    var(--font-monospace-override), var(--font-monospace-theme);
   --font-family-list: var(--font-default);
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-family-strong: Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
+  --font-family-strong:
+    Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
     "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
-  --font-family-tag: Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
+  --font-family-tag:
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif;
   --font-family-title: var(--font-text, var(--font-default));
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
@@ -330,16 +339,22 @@ body {
   --font-loading-text: var(--font-monospace-theme);
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
-  --font-monospace-theme: "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei", "Source Code Pro", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
+    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
+    "Source Code Pro", monospace;
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-size-better-footnote: 1.3em;
@@ -372,7 +387,9 @@ body {
   --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei";
+  --font-text-theme:
+    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei";
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -607,7 +624,8 @@ body {
   --menu-padding: var(--size-2-3);
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
-  --mermaid-font-family: Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
+  --mermaid-font-family:
+    Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
     Arial, cursive;
   --metadata-background: transparent;
   --metadata-border-color: var(--background-modifier-border);
@@ -642,8 +660,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -651,7 +671,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -680,7 +703,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -726,7 +750,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -755,7 +780,10 @@ body {
   --popover-width-factor: 1;
   --print-em-color: var(--accent-em);
   --print-strong-color: var(--accent-strong);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -1629,9 +1657,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1829,8 +1861,8 @@ svg.svg-icon {
   --background-blockquote: #9191911c;
   --background-blue: #2f5264;
   --background-brown: #493a3a;
-  --background-code: #1111118c;
-  --background-code-2: #4c4c4cb0;
+  --background-code: light-dark(#292d3e, #292d3e);
+  --background-code-2: light-dark(#, #);
   --background-gray: #535353;
   --background-green: #32503e;
   --background-leaf-resize-handle: var(--background-secondary-alt-bg-4-bt);
@@ -1861,7 +1893,12 @@ svg.svg-icon {
   --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #000000);
   --background-secondary-translucent: #2c2c2c26;
   --background-secondary-translucent-1: #2c2c2c26;
-  --background-titlebar-inner: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 10%);
+  --background-titlebar-inner: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  );
   --background-transparent-black-or-white-1: #1b1b1b9a;
   --background-transparent-black-or-white-2: #1e1e1ebd;
   --background-transparent-black-or-white-3: #2f2f2f6c;
@@ -1910,8 +1947,8 @@ svg.svg-icon {
   --checklist-color-5: #a4620086;
   --checklist-color-6: #ab100586;
   --checklist-color-7: #7f1f9086;
-  --code-active-line-background-color: var(--activeline-background);
-  --code-normal: #d0d0d0;
+  --code-active-line-background-color: light-dark(#353a50, #353a50);
+  --code-normal: light-dark(#d4d4d4, #d4d4d4);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2015,10 +2052,12 @@ svg.svg-icon {
   --h6-color: var(--print-h6-color, hsl(290, 85%, 81%));
   --highlight-mix-blend-mode: darken;
   --hr-color: var(--color-base-10);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -2087,9 +2126,11 @@ svg.svg-icon {
   --search-result-file-matched-bg: #023774;
   --search-result-file-title-color: var(--text-normal);
   --search-text: #e0e0e0;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --sliding-panes-header-color: #f1a634d0;
   --stag1: #f08383;
@@ -2136,7 +2177,7 @@ svg.svg-icon {
   --text-blue: #7c94ff;
   --text-brown: #be9684;
   --text-checked-checkbox: #8e8e8e;
-  --text-color-code: #d58000;
+  --text-color-code: light-dark(#, #);
   --text-error: #e16d76;
   --text-error-hover: #c9626a;
   --text-faint: #797979;
@@ -2197,8 +2238,8 @@ svg.svg-icon {
   --background-blockquote: #d5d5d52c;
   --background-blue: #ddebf1;
   --background-brown: #e9e5e3;
-  --background-code: #e6e6e671;
-  --background-code-2: #cccccc62;
+  --background-code: light-dark(#292d3e, #292d3e);
+  --background-code-2: light-dark(#, #);
   --background-gray: #ebeced;
   --background-green: #ddedea;
   --background-leaf-resize-handle: var(--background-secondary-alt-bg-4-bt);
@@ -2231,7 +2272,12 @@ svg.svg-icon {
   --background-secondary-alt-bg-4-bt-publish: #f6f6f6;
   --background-secondary-translucent: #ffffff3d;
   --background-secondary-translucent-1: #ffffff5d;
-  --background-titlebar-inner: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 10%);
+  --background-titlebar-inner: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  );
   --background-transparent-black-or-white-1: #ffffffb0;
   --background-transparent-black-or-white-2: #ffffffca;
   --background-transparent-black-or-white-3: #eeeeee91;
@@ -2281,8 +2327,8 @@ svg.svg-icon {
   --checklist-color-5: #ffe0b2ab;
   --checklist-color-6: #ffcdd2ab;
   --checklist-color-7: #e1bee7ab;
-  --code-active-line-background-color: var(--activeline-background);
-  --code-normal: #000000;
+  --code-active-line-background-color: light-dark(#353a50, #353a50);
+  --code-normal: light-dark(#d4d4d4, #d4d4d4);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2385,10 +2431,14 @@ svg.svg-icon {
   --h5-color: var(--print-h5-color, hsl(209, 70%, 62%));
   --h6-color: var(--print-h6-color, hsl(209, 65%, 72%));
   --highlight-mix-blend-mode: darken;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-rgb: 70, 142, 235;
   --interactive-hover: #e6e6e6;
@@ -2445,9 +2495,11 @@ svg.svg-icon {
   --search-result-file-matched-bg: #ffd9d9e5;
   --search-result-file-title-color: var(--text-normal);
   --search-text: #000000;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --sliding-panes-header-color: #0e64bb;
   --stag1: #fa8787;
@@ -2494,7 +2546,7 @@ svg.svg-icon {
   --text-blue: #0083bb;
   --text-brown: #855a46;
   --text-checked-checkbox: #9b9b9b;
-  --text-color-code: #e95d00;
+  --text-color-code: light-dark(#, #);
   --text-error: #e75545;
   --text-error-hover: #f86959;
   --text-faint: #7f7f7f;

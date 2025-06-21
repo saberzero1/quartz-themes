@@ -40,9 +40,12 @@
   --success: var(--green);
   --success-hover: var(--green-light);
   /* Fonts */
-  --default-font: -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu, cantarell,
-    Open Sans, Helvetica Neue, sans-serif;
-  --font-monospace: "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier, monospace;
+  --default-font:
+    -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu,
+    cantarell, Open Sans, Helvetica Neue, sans-serif;
+  --font-monospace:
+    "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier,
+    monospace;
 }
 
 .theme-dark {
@@ -79,8 +82,9 @@
 }
 
 .checklist-plugin-main .classic {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -109,8 +113,9 @@
 }
 .checklist-plugin-main .group .group-header .title .tag-base,
 .checklist-plugin-main .group .group-header .title .tag-sub {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -138,8 +143,9 @@ body {
 
 h1,
 .cm-header-1 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -151,8 +157,9 @@ h1,
 
 h2,
 .cm-header-2 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -164,8 +171,9 @@ h2,
 
 h3,
 .cm-header-3 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -177,8 +185,9 @@ h3,
 
 h4,
 .cm-header-4 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -190,8 +199,9 @@ h4,
 
 h5,
 .cm-header-5 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -203,8 +213,9 @@ h5,
 
 h6,
 .cm-header-6 {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -251,8 +262,9 @@ h6,
 .nav-folder-title {
   padding: 4px 8px;
   cursor: pointer;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -286,8 +298,9 @@ h6,
 .tag-container .tree-item-self {
   padding: 4px 8px;
   cursor: pointer;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -371,8 +384,9 @@ input[type="email"]::placeholder,
 input[type="password"]::placeholder,
 input[type="number"]::placeholder,
 input[type="search"]::placeholder {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -398,8 +412,9 @@ input[type="search"]::placeholder {
 }
 
 button {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -421,8 +436,9 @@ button:hover {
 }
 
 button:not(.mod-cta):not(.mod-warning) {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -452,8 +468,9 @@ button:not(.mod-cta):not(.mod-warning):hover {
 }
 
 button.mod-warning {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -481,8 +498,9 @@ button.mod-warning:hover {
 }
 
 .mod-cta {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -519,8 +537,9 @@ button.mod-warning:hover {
 .suggestion-item {
   padding: 4px 8px;
   cursor: pointer;
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -752,7 +771,10 @@ blockquote {
   width: initial;
   height: initial;
 }
-.mod-macos:not(.is-fullscreen) .titlebar .titlebar-inner .titlebar-button-container {
+.mod-macos:not(.is-fullscreen)
+  .titlebar
+  .titlebar-inner
+  .titlebar-button-container {
   position: initial;
 }
 
@@ -887,8 +909,9 @@ input.task-list-item-checkbox:checked {
 }
 
 .flair {
-  font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

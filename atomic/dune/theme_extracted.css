@@ -2,8 +2,8 @@
   --banner-ah: 240px;
   --banner-bh: 200px;
   --button-background: #91aadd;
-  --bwidth-a: 10px;
-  --bwidth-b: 10px;
+  --bwidth-a: 60px;
+  --bwidth-b: 60px;
   --bwidth-s1: 6px;
   --bwidth-s2: 6px;
   --callout-gap: 0.5rem;
@@ -14,9 +14,9 @@
   --col-rule-color: #b3b3b3;
   --col-rule-width: 1px;
   --contacts-alh: 50px;
-  --contacts-font: Helvetica, sans-serif;
-  --custom-font-c: var(--custom-font-h);
-  --custom-font-h: Helvetica;
+  --contacts-font: Helvetica, "Century Gothic", Roboto, Arial, sans-serif;
+  --custom-font-c: Helvetica, Sengoa, Optima-Regular, GillSans;
+  --custom-font-h: Helvetica, Sengoa, Optima-Regular, GillSans;
   --custom-fsz-1: 16px;
   --custom-fsz-2: 16px;
   --custom-fsz-3: 16px;
@@ -34,10 +34,11 @@
   --h5-color: var(--h4-color);
   --h6-color: var(--h4-color);
   --header-col: #c66102;
-  --hr-color: #808080;
-  --hr-stars: rgb(237, 188, 52);
+  --hr-color: light-dark(#808080, #808080);
+  --hr-stars: light-dark(#808080, #808080);
   --indent-l: 4em;
-  --initial-font: var(--poetry-font-h);
+  --initial-font:
+    "Manuskript Gothisch", Pecita, Mumsies, Helvetica, Sengoa, Optima-Regular;
   --initial-sz: 110px;
   --keyboard-height: 0px;
   --light-blue: #99ccff;
@@ -52,18 +53,21 @@
   --loading-icon-delay: 400ms;
   --med-shadow-l: rgba(127, 127, 127, 0.2);
   --min-boxwidth: 230px;
-  --modern-font-c: var(--modern-font-h);
-  --modern-font-h: "Louis George Cafe";
-  --movies-font: "AbadiMT-CondensedLight", Helvetica, sans-serif;
+  --modern-font-c: "Louis George Cafe", "Liberation Serif", sans-serif;
+  --modern-font-h: "Louis George Cafe", "DejaVu Serif", sans-serif;
+  --movies-font:
+    AbadiMT-CondensedLight, Helvetica, "Century Gothic", Roboto, Arial,
+    sans-serif;
   --nav-item-background-selected: rgba(244, 155, 31, 0.4);
   --nav-item-color: var(--text-normal);
   --page-border: 1px solid CanvasText;
   --page-margin: 8px auto -1px;
   --pdfViewer-padding-bottom: 9px;
-  --poetry-font-c: var(--poetry-font-h);
-  --poetry-font-h: "Manuskript Gothisch";
+  --poetry-font-c: cursive, Pecita, Mumsies, sans-serif;
+  --poetry-font-h: "Manuskript Gothisch", Pecita, Mumsies, sans-serif;
   --property-height: 32px;
-  --recipes-font: "Mumsies", "cursive", Helvetica, sans-serif;
+  --recipes-font:
+    cursive, Mumsies, Helvetica, "Century Gothic", Roboto, Arial, sans-serif;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -158,8 +162,8 @@ body {
   --border-width: 1px;
   --button-background: #91aadd;
   --button-radius: var(--input-radius);
-  --bwidth-a: 10px;
-  --bwidth-b: 10px;
+  --bwidth-a: 60px;
+  --bwidth-b: 60px;
   --bwidth-s1: 6px;
   --bwidth-s2: 6px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -177,7 +181,8 @@ body {
   --callout-info: var(--color-blue-rgb);
   --callout-margin: 4px;
   --callout-min-width: 200px;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -238,12 +243,12 @@ body {
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
   --contacts-alh: 50px;
-  --contacts-font: Helvetica, sans-serif;
+  --contacts-font: Helvetica, "Century Gothic", Roboto, Arial, sans-serif;
   --copy-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(0, 0, 0, 1);transform: scale(0.8, 0.8);msFilter:;'%3E%3Cpath d='M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z' %3E%3C/path%3E%3C/svg%3E");
   --cursor: default;
   --cursor-link: pointer;
-  --custom-font-c: var(--custom-font-h);
-  --custom-font-h: Helvetica;
+  --custom-font-c: Helvetica, Sengoa, Optima-Regular, GillSans;
+  --custom-font-h: Helvetica, Sengoa, Optima-Regular, GillSans;
   --custom-fsz-1: 16px;
   --custom-fsz-2: 16px;
   --custom-fsz-3: 16px;
@@ -272,7 +277,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -294,26 +300,33 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -400,8 +413,8 @@ body {
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --hr-color: #808080;
-  --hr-stars: rgb(237, 188, 52);
+  --hr-color: light-dark(#808080, #808080);
+  --hr-stars: light-dark(#808080, #808080);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
@@ -432,7 +445,8 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --initial-font: var(--poetry-font-h);
+  --initial-font:
+    "Manuskript Gothisch", Pecita, Mumsies, Helvetica, Sengoa, Optima-Regular;
   --initial-sz: 110px;
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -545,8 +559,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -555,7 +571,10 @@ body {
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --min-boxwidth: 230px;
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -564,9 +583,11 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: var(--radius-l);
   --modal-width: 90vw;
-  --modern-font-c: var(--modern-font-h);
-  --modern-font-h: "Louis George Cafe";
-  --movies-font: "AbadiMT-CondensedLight", Helvetica, sans-serif;
+  --modern-font-c: "Louis George Cafe", "Liberation Serif", sans-serif;
+  --modern-font-h: "Louis George Cafe", "DejaVu Serif", sans-serif;
+  --movies-font:
+    AbadiMT-CondensedLight, Helvetica, "Century Gothic", Roboto, Arial,
+    sans-serif;
   --nav-collapse-icon-color: var(--collapse-icon-color);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
   --nav-heading-color: var(--text-normal);
@@ -587,7 +608,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -601,7 +623,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -619,15 +642,18 @@ body {
   --pill-padding-y: 0.25em;
   --pill-radius: 2em;
   --pill-weight: inherit;
-  --poetry-font-c: var(--poetry-font-h);
-  --poetry-font-h: "Manuskript Gothisch";
+  --poetry-font-c: cursive, Pecita, Mumsies, sans-serif;
+  --poetry-font-h: "Manuskript Gothisch", Pecita, Mumsies, sans-serif;
   --popover-font-size: var(--font-text-size);
   --popover-height: 400px;
   --popover-max-height: 95vh;
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -638,7 +664,8 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --recipes-font: "Mumsies", "cursive", Helvetica, sans-serif;
+  --recipes-font:
+    cursive, Mumsies, Helvetica, "Century Gothic", Roboto, Arial, sans-serif;
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
@@ -1504,7 +1531,10 @@ input[type="search"] {
 .tree-item-children {
   border-inline-start: 0;
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1753,10 +1783,10 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --def-blue: var(--light-blue);
+  --def-blue: light-dark(#0080ff, #0080ff);
   --def-gray: var(--light-gray);
-  --def-green: var(--light-green);
-  --def-red: var(--light-red);
+  --def-green: light-dark(#52a543, #228b22);
+  --def-red: light-dark(#db3434, #b92b2b);
   --frame-color-a: #ff7029;
   --frame-color-b: #ff7029;
   --graph-arrow: var(--text-muted);
@@ -1771,11 +1801,13 @@ svg.svg-icon {
   --hl-mark-gray: var(--dark-gray);
   --hl-mark-green: var(--dark-green);
   --hl-mark-red: var(--dark-red);
-  --initial-col: #b60000;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --initial-col: light-dark(#800000, #800000);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -1798,9 +1830,11 @@ svg.svg-icon {
   );
   --prefs-title: var(--h1-color);
   --rev-fontcol: #515151;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --shadow-tone: rgba(255, 255, 255, 0.06);
   --stat-bar-hl: var(--light-shadow-l);
@@ -1881,10 +1915,10 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --def-blue: var(--dark-blue);
+  --def-blue: light-dark(#0080ff, #0080ff);
   --def-gray: var(--dark-gray);
-  --def-green: var(--dark-green);
-  --def-red: var(--dark-red);
+  --def-green: light-dark(#52a543, #228b22);
+  --def-red: light-dark(#db3434, #b92b2b);
   --frame-color-a: #4a6cb0;
   --frame-color-b: #4a6cb0;
   --graph-arrow: var(--text-muted);
@@ -1899,12 +1933,16 @@ svg.svg-icon {
   --hl-mark-gray: var(--light-gray);
   --hl-mark-green: var(--light-green);
   --hl-mark-red: var(--light-red);
-  --initial-col: #800000;
+  --initial-col: light-dark(#800000, #800000);
   --input-bg: lightgray;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --intro-dune: linear-gradient(to left, #390058, #8b0000, #ff8c00, #ffe89e);
   --link-unresolved-color: dimgray;
   --logo-grad: linear-gradient(to bottom, #ff8c00 0%, #8b0000 100%);
@@ -1919,9 +1957,11 @@ svg.svg-icon {
   );
   --prefs-title: var(--h1-color);
   --rev-fontcol: var(--light-tone);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --shadow-tone: rgba(0, 0, 0, 0.04);
   --stat-bar-hl: var(--background-primary);

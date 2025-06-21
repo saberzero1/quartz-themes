@@ -21,11 +21,11 @@ alias u := update
 
 [private]
 verify:
-  npx prettier . --check
+  prettier . --check --cache
 
 [private]
 verify-ci:
-  npx prettier . --check --ignore-path "./.prettiercompileignore"
+  prettier . --check --cache --ignore-path "./.prettiercompileignore"
 
 [private]
 build:
@@ -34,7 +34,14 @@ build:
 [private]
 atomize:
   node convert.js ATOMIZE
-  npx prettier . --write
+  prettier . --write --cache
+
+[private]
+force-atomize:
+  rm converted_app.css || true
+  rm converted_app_extracted.css || true
+  node convert.js ATOMIZE
+  prettier . --write --cache
 
 [private]
 fonts:
@@ -46,11 +53,11 @@ clean-fonts:
 
 [private]
 format:
-  npx prettier . --write --ignore-path "./.prettiercompileignore"
+  prettier . --write --cache --ignore-path "./.prettiercompileignore"
 
 [private]
 format-all:
-  npx prettier . --check --write
+  prettier . --check --cache --write
 
 [private]
 lint: format

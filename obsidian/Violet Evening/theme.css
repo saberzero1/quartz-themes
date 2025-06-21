@@ -114,7 +114,12 @@ blockquote p {
 
 .markdown-preview-view blockquote {
   border: 1px solid;
-  border-image: linear-gradient(to right, #fa9c2a, #ac36fa, rgba(102, 49, 154, 0.05));
+  border-image: linear-gradient(
+    to right,
+    #fa9c2a,
+    #ac36fa,
+    rgba(102, 49, 154, 0.05)
+  );
   border-image-slice: 1;
   border-left-width: 1px;
 }

@@ -23,19 +23,19 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --syntax-border: #a0a6a7;
-  --syntax-builtin: #2d76e9;
-  --syntax-comment: #16486d;
-  --syntax-def: #69eed7;
-  --syntax-default-text: #eeeeee;
-  --syntax-keyword: #552b79;
-  --syntax-number: #9795ee;
-  --syntax-operator: #6852b3;
-  --syntax-property: #4a6bdb;
-  --syntax-string: #be4aa0;
-  --syntax-variable: #558fc7;
-  --syntax-variable-2: #4186b6;
-  --syntax-variable-3: #c689e3;
+  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
+  --syntax-builtin: light-dark(#2d76e9, #2d76e9);
+  --syntax-comment: light-dark(#16486d, #16486d);
+  --syntax-def: light-dark(#69eed7, #69eed7);
+  --syntax-default-text: light-dark(#eeeeee, #eeeeee);
+  --syntax-keyword: light-dark(#552b79, #552b79);
+  --syntax-number: light-dark(#9795ee, #9795ee);
+  --syntax-operator: light-dark(#6852b3, #6852b3);
+  --syntax-property: light-dark(#4a6bdb, #4a6bdb);
+  --syntax-string: light-dark(#be4aa0, #be4aa0);
+  --syntax-variable: light-dark(#558fc7, #558fc7);
+  --syntax-variable-2: light-dark(#4186b6, #4186b6);
+  --syntax-variable-3: light-dark(#c689e3, #c689e3);
   --viewer-container-height: 0;
   --xfa-focus-outline: 2px solid CanvasText;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
@@ -122,7 +122,7 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --bases-embed-border: 1px solid var(--background-modifier-border);
@@ -158,7 +158,7 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -179,7 +179,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -253,7 +254,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -275,26 +277,33 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -509,8 +518,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -518,7 +529,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -547,7 +561,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -561,7 +576,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -585,7 +601,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -654,19 +673,19 @@ body {
   --sync-avatar-color-7: var(--color-purple);
   --sync-avatar-color-8: var(--color-pink);
   --sync-avatar-color-current-user: transparent;
-  --syntax-border: #a0a6a7;
-  --syntax-builtin: #2d76e9;
-  --syntax-comment: #16486d;
-  --syntax-def: #69eed7;
-  --syntax-default-text: #eeeeee;
-  --syntax-keyword: #552b79;
-  --syntax-number: #9795ee;
-  --syntax-operator: #6852b3;
-  --syntax-property: #4a6bdb;
-  --syntax-string: #be4aa0;
-  --syntax-variable: #558fc7;
-  --syntax-variable-2: #4186b6;
-  --syntax-variable-3: #c689e3;
+  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
+  --syntax-builtin: light-dark(#2d76e9, #2d76e9);
+  --syntax-comment: light-dark(#16486d, #16486d);
+  --syntax-def: light-dark(#69eed7, #69eed7);
+  --syntax-default-text: light-dark(#eeeeee, #eeeeee);
+  --syntax-keyword: light-dark(#552b79, #552b79);
+  --syntax-number: light-dark(#9795ee, #9795ee);
+  --syntax-operator: light-dark(#6852b3, #6852b3);
+  --syntax-property: light-dark(#4a6bdb, #4a6bdb);
+  --syntax-string: light-dark(#be4aa0, #be4aa0);
+  --syntax-variable: light-dark(#558fc7, #558fc7);
+  --syntax-variable-2: light-dark(#4186b6, #4186b6);
+  --syntax-variable-3: light-dark(#c689e3, #c689e3);
   --tab-background-active: var(--background-primary);
   --tab-container-background: var(--background-secondary);
   --tab-curve: 6px;
@@ -1440,9 +1459,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1629,19 +1652,19 @@ svg.svg-icon {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #000000;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary);
-  --blockquote-bg: #0c0c0c;
-  --blockquote-border-color: #4d4d4f;
+  --blockquote-bg: light-dark(#f9f9f9, #0c0c0c);
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --blockquote-radius: 8px;
-  --blockquote-text: inherit;
+  --blockquote-text: light-dark(#000000, #ffffff);
   --card-bg: #000000;
-  --card-border-color: #4d4d4f84;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
   --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15);
   --caret-color: var(--text-color);
-  --citation-bg: var(--color-accent);
+  --citation-bg: light-dark(#68686e, #68686e);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1674,7 +1697,7 @@ svg.svg-icon {
   --color-green-rgb: 68, 207, 110;
   --color-orange: #e9973f;
   --color-orange-rgb: 233, 151, 63;
-  --color-panel: #0c0c0c;
+  --color-panel: light-dark(#a5aab6, #0c0c0c);
   --color-pink: #fa99cd;
   --color-pink-rgb: 250, 153, 205;
   --color-purple: #a882ff;
@@ -1683,16 +1706,18 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --custom-color-accent-dark: #68686e;
+  --custom-color-accent-dark: #68686ehex;
   --external-link-text-shadow: 1px 1px 2px var(--color-accent);
-  --graph-bg: #0c0c0c;
-  --graph-line-color: #4d4d4f;
+  --graph-bg: light-dark(#a5aaae, #0c0c0c);
+  --graph-line-color: light-dark(#6767672c, #4d4d4f);
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--card-border-color);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
@@ -1703,9 +1728,11 @@ svg.svg-icon {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --tab-background-active: rgba(255, 255, 255, 0.1);
   --table-header-background: var(--color-accent);
@@ -1719,19 +1746,21 @@ svg.svg-icon {
   --background-default: #a5aaae;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-primary: #9096a4;
+  --background-primary: light-dark(#a5aaae, #000000);
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary);
-  --blockquote-bg: #a5aaae;
-  --blockquote-border-color: #252525c3;
+  --blockquote-bg: light-dark(#f9f9f9, #0c0c0c);
+  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
   --blockquote-radius: 8px;
-  --blockquote-text: inherit;
+  --blockquote-text: light-dark(#000000, #ffffff);
   --card-bg: #9096a4;
-  --card-border-color: #25252586;
-  --card-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
+  --card-border-color: light-dark(#252525c3, #4d4d4f);
+  --card-shadow:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
   --caret-color: var(--text-color);
-  --citation-bg: var(--color-accent);
+  --citation-bg: light-dark(#68686e, #68686e);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1764,7 +1793,7 @@ svg.svg-icon {
   --color-green-rgb: 8, 185, 78;
   --color-orange: #ec7500;
   --color-orange-rgb: 236, 117, 0;
-  --color-panel: #a5aab6;
+  --color-panel: light-dark(#a5aab6, #0c0c0c);
   --color-pink: #d53984;
   --color-pink-rgb: 213, 57, 132;
   --color-purple: #7852ee;
@@ -1773,21 +1802,27 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --custom-color-accent-light: #a0a6a7;
+  --custom-color-accent-light: #a0a6a7hex;
   --external-link-text-shadow: 1px 1px 2px var(--color-accent);
-  --graph-bg: #a5aaae;
-  --graph-line-color: #6767672c;
+  --graph-bg: light-dark(#a5aaae, #0c0c0c);
+  --graph-line-color: light-dark(#6767672c, #4d4d4f);
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--card-border-color);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tab-background-active: rgba(0, 0, 0, 0.08);
   --table-header-background: var(--color-accent);

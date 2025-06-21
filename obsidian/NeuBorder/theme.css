@@ -36,11 +36,8 @@ body {
   --background-mod-right-CSS-blend-mode-dark: normal;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px);
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px);
-  --background-underlying-CSS-light: radial-gradient(
-      100% 100% at 13% 50%,
-      #5a6ded 0%,
-      #e0daf7 100%
-    ),
+  --background-underlying-CSS-light:
+    radial-gradient(100% 100% at 13% 50%, #5a6ded 0%, #e0daf7 100%),
     linear-gradient(
       6deg,
       rgb(235, 242, 252) 0%,
@@ -49,8 +46,17 @@ body {
       rgb(224, 218, 247) 11%,
       rgb(90, 109, 237) 16%
     ),
-    radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%),
-    linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%),
+    radial-gradient(
+      100% 100% at 60% 71%,
+      rgb(224, 218, 247) 0%,
+      rgb(219, 244, 255) 100%
+    ),
+    linear-gradient(
+      97deg,
+      rgb(90, 109, 237) 0%,
+      rgb(90, 109, 237) 23%,
+      rgb(90, 109, 237) 53%
+    ),
     linear-gradient(
       351deg,
       rgb(235, 242, 252) 0%,
@@ -60,16 +66,23 @@ body {
       rgb(166, 126, 241) 13%,
       rgb(235, 242, 252) 29%
     ),
-    radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%),
-    radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%);
-  --background-underlying-CSS-dark: linear-gradient(
-      317deg,
-      #7037cd 0%,
-      #1d0c20 19%,
-      #651f71 19%,
-      #651f71 33%
+    radial-gradient(
+      100% 100% at 10% 32%,
+      rgb(90, 109, 237) 0%,
+      rgb(219, 244, 255) 100%
     ),
-    radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%),
+    radial-gradient(
+      100% 100% at 35% 63%,
+      rgb(224, 218, 247) 0%,
+      rgb(224, 218, 247) 100%
+    );
+  --background-underlying-CSS-dark:
+    linear-gradient(317deg, #7037cd 0%, #1d0c20 19%, #651f71 19%, #651f71 33%),
+    radial-gradient(
+      100% 100% at 90% 9%,
+      rgb(29, 12, 32) 0%,
+      rgb(29, 12, 32) 100%
+    ),
     linear-gradient(
       109deg,
       rgb(104, 178, 248) 0%,
@@ -78,8 +91,16 @@ body {
       rgb(104, 178, 248) 54%,
       rgb(104, 178, 248) 65%
     ),
-    radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
-    radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%),
+    radial-gradient(
+      100% 100% at 20% 45%,
+      rgb(80, 110, 229) 0%,
+      rgb(101, 31, 113) 100%
+    ),
+    radial-gradient(
+      100% 100% at 90% 27%,
+      rgb(80, 110, 229) 0%,
+      rgb(101, 31, 113) 100%
+    ),
     linear-gradient(
       339deg,
       rgb(101, 31, 113) 0%,
@@ -90,16 +111,22 @@ body {
       rgb(29, 12, 32) 30%
     );
   --background-underlying-CSS-blend-mode-light: overlay, color-burn;
-  --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light;
+  --background-underlying-CSS-blend-mode-dark:
+    soft-light, luminosity, hue, luminosity, hard-light;
 }
 /* Define variables for shadow and color */
 :root {
-  --shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
-  --shadow-hover: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.7);
-  --shadow-active: inset 3px 3px 3px rgba(0, 0, 0, 0.5),
+  --shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.5);
+  --shadow-hover:
+    inset 3px 3px 3px rgba(0, 0, 0, 0.2),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.7);
+  --shadow-active:
+    inset 3px 3px 3px rgba(0, 0, 0, 0.5),
     inset -3px -3px 3px rgba(255, 255, 255, 0.2);
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
-  --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+  --shadow-scrollbar:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.15),
     inset -4px -4px 8px rgba(255, 255, 255, 0.7);
   --background: #f0f0f0;
 }
@@ -154,9 +181,21 @@ body {
   --color-accent-3: var(--color-accent-3-light);
   --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --color-accent-3-light: hsla(var(--accent-h), calc(0.4 * var(--accent-s)), calc(var(--accent-l)));
+  --color-accent-1-light: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2.5%)
+  );
+  --color-accent-2-light: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
+  --color-accent-3-light: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l))
+  );
   --background-modifier-border: hsla(
     var(--accent-h),
     calc(0.4 * var(--accent-s)),
@@ -190,9 +229,11 @@ body {
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --color: 0, 0%;
   /*两个值一样*/
@@ -246,18 +287,23 @@ body {
   --toggle-thumb-enabled-color-light: white;
   --toggle-thumb-shadow: var(--toggle-thumb-shadow-light);
   --toggle-thumb-enabled-shadow: var(--toggle-thumb-enabled-shadow-light);
-  --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
-    inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05),
-    0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+  --toggle-thumb-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 4px rgba(0, 0, 0, 0.1);
+  --toggle-thumb-enabled-shadow-light:
+    0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.4),
     inset 0px -4px 4px hsla(var(--interactive-accent-hsl), 0.3);
   --toggle-track-enabled-color: var(--toggle-track-enabled-color-light);
   --toggle-track-color-light: var(--background-modifier-border-hover);
   --toggle-track-enabled-color-light: var(--interactive-accent);
   --toggle-track-hovered-shadow: var(--toggle-track-hovered-shadow-light);
-  --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+  --toggle-track-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25),
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
-  --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25),
+  --toggle-track-hovered-shadow-light:
+    inset 0px 1px 2px rgba(0, 0, 0, 0.25),
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --interactive-normal: var(--color-base-05);
   --interactive-hover: var(--color-base-15);
@@ -266,9 +312,12 @@ body {
   --input-shadow-hover: var(--input-shadow-hover-light);
   --input-radius-light: 5px;
   /* defines the radius for  search boxes */
-  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16),
-    inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
-    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+  --input-shadow-light:
+    0px 4px 8px -4px rgba(0, 0, 0, 0.16),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.04),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12),
+    inset 0px 2px 0.75px rgba(255, 255, 255, 0.24),
+    inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
   --input-shadow: var(--shadow);
   --input-shadow-hover-light: var(--shadow-hover);
   --toggle-track-color: var(--toggle-track-color-light);
@@ -888,7 +937,8 @@ input[type="range"]::-webkit-slider-thumb:is(:hover, :active) {
   transition: none;
   border-color: var(--slider-thumb-border-color);
 }
-body:not(.is-mobile) input[type="range"]:is(:focus, :focus-visible)::-webkit-slider-thumb {
+body:not(.is-mobile)
+  input[type="range"]:is(:focus, :focus-visible)::-webkit-slider-thumb {
   box-shadow: var(--toggle-thumb-shadow);
   outline-offset: 2px;
   outline: 2px solid var(--background-modifier-border-focus);
@@ -1047,7 +1097,9 @@ body:not(.is-mobile):not(.card-layout-open-light).theme-light
 }
 body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-leaf,
 body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-leaf-content,
-body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .view-header:not(.animate),
+body:not(.is-mobile)
+  .workspace-tabs:not(.mod-stacked)
+  .view-header:not(.animate),
 body:not(.is-mobile)
   .workspace-tabs:not(.mod-stacked)
   .view-content:not(.vignette-radial, .vignette-linear, .animate),
@@ -1083,19 +1135,28 @@ body.background-underlying-Color-light.theme-light {
 body.background-underlying-Color-dark.theme-dark {
   --background-underlying: var(--background-underlying-dark) !important;
 }
-body.theme-light:not(.is-mobile).background-underlying-CSS-light .app-container {
-  background: var(--background-underlying-CSS-light, --background-underlying) !important;
-  background-blend-mode: var(--background-underlying-CSS-blend-mode-light) !important;
+body.theme-light:not(.is-mobile).background-underlying-CSS-light
+  .app-container {
+  background: var(
+    --background-underlying-CSS-light,
+    --background-underlying
+  ) !important;
+  background-blend-mode: var(
+    --background-underlying-CSS-blend-mode-light
+  ) !important;
 }
 /* ====== Layout ===== */
 /* default Layout*/
 body {
-  --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
+  --card-shadow-light:
+    0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4),
     0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
   --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
   --card-border-radius-light: 8px;
   --card-border-radius-dark: 8px;
-  --card-shadow-border-radius-light: calc(var(--card-border-radius-light) - 1px);
+  --card-shadow-border-radius-light: calc(
+    var(--card-border-radius-light) - 1px
+  );
   --card-shadow-border-radius-dark: calc(var(--card-border-radius-dark) - 1px);
 }
 body.is-frameless:not(.is-hidden-frameless).is-fullscreen {
@@ -1111,7 +1172,9 @@ body {
 .theme-light:not(.is-mobile) .titlebar,
 .theme-light:not(.is-mobile) .status-bar,
 .theme-light:not(.is-mobile) .workspace-ribbon,
-.theme-light:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container,
+.theme-light:not(.is-mobile)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container,
 .theme-light:not(.is-mobile).card-layout-open-light
   .workspace-tabs
   .workspace-tab-header-container {
@@ -1134,13 +1197,17 @@ body.theme-light.mod-left-split-background-primary-light {
 body.theme-light.mod-right-split-background-primary-light {
   --background-mod-left-split: var(--background-primary) !important;
 }
-body.theme-dark:not(.is-mobile).card-layout-open-dark.mod-left-split-background-transparent-dark
+body.theme-dark:not(
+    .is-mobile
+  ).card-layout-open-dark.mod-left-split-background-transparent-dark
   .mod-left-split
   .workspace-tab-container {
   --card-shadow-dark: transparent;
 }
 body.theme-light.mod-left-split-background-customize-light {
-  --background-mod-left-split: var(--background-mod-left-split-light) !important;
+  --background-mod-left-split: var(
+    --background-mod-left-split-light
+  ) !important;
 }
 body:not(.is-mobile).card-layout-open-light.theme-light
   .workspace-split.mod-left-split
@@ -1186,14 +1253,20 @@ body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
   .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-split) !important;
 }
-body:not(.is-mobile).theme-light.card-layout-open-light.mod-left-split-background-CSS-light
+body:not(
+    .is-mobile
+  ).theme-light.card-layout-open-light.mod-left-split-background-CSS-light
   .workspace-split.mod-left-split
   .workspace-tab-container,
-body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-left-split-background-CSS-light
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   .workspace-tab-container,
-body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-background-CSS-light
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-left-split-background-CSS-light
   .workspace-split.mod-left-split
   .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-CSS-light) !important;
@@ -1201,14 +1274,20 @@ body:not(.is-mobile).theme-light:not(.card-layout-open-light).mod-left-split-bac
   backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
   -webkit-backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
 }
-body:not(.is-mobile).theme-dark.card-layout-open-dark.mod-left-split-background-CSS-dark
+body:not(
+    .is-mobile
+  ).theme-dark.card-layout-open-dark.mod-left-split-background-CSS-dark
   .workspace-split.mod-left-split
   .workspace-tab-container,
-body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark
+body:not(.is-mobile).theme-dark:not(
+    .card-layout-open-dark
+  ).mod-left-split-background-CSS-dark
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   .workspace-tab-container,
-body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-background-CSS-dark
+body:not(.is-mobile).theme-dark:not(
+    .card-layout-open-dark
+  ).mod-left-split-background-CSS-dark
   .workspace-split.mod-left-split
   .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-left-CSS-dark) !important;
@@ -1219,14 +1298,21 @@ body:not(.is-mobile).theme-dark:not(.card-layout-open-dark).mod-left-split-backg
 /* background - mod-root */
 body.theme-light.mod-root-split-background-primary-light,
 body.theme-dark.mod-root-split-background-primary-dark,
-body.theme-light.mod-root-split-background-transparent-light:not(.card-layout-open-light),
-body.theme-dark.mod-root-split-background-transparent-dark:not(.card-layout-open-dark),
+body.theme-light.mod-root-split-background-transparent-light:not(
+    .card-layout-open-light
+  ),
+body.theme-dark.mod-root-split-background-transparent-dark:not(
+    .card-layout-open-dark
+  ),
 body.theme-light:is(
     .mod-root-split-background-transparent-light,
     .mod-root-split-background-CSS-light
   )
   .mod-stacked,
-body.theme-dark:is(.mod-root-split-background-transparent-dark, .mod-root-split-background-CSS-dark)
+body.theme-dark:is(
+    .mod-root-split-background-transparent-dark,
+    .mod-root-split-background-CSS-dark
+  )
   .mod-stacked {
   --background-mod-root-split: var(--background-primary) !important;
 }
@@ -1261,25 +1347,36 @@ body:not(.is-mobile):not(.card-layout-open-dark).theme-dark
   background: var(--background-mod-root-split) !important;
 }
 body:not(.is-mobile) .workspace-split.mod-left-split,
-body:not(.is-mobile) .workspace:not(.is-left-sidedock-open) .workspace-split.mod-root {
+body:not(.is-mobile)
+  .workspace:not(.is-left-sidedock-open)
+  .workspace-split.mod-root {
   border-bottom-left-radius: var(--card-border-radius-light, 8px);
   overflow: hidden;
 }
 body:not(.is-mobile).theme-dark .workspace-split.mod-left-split,
-body:not(.is-mobile).theme-dark .workspace:not(.is-left-sidedock-open) .workspace-split.mod-root {
+body:not(.is-mobile).theme-dark
+  .workspace:not(.is-left-sidedock-open)
+  .workspace-split.mod-root {
   border-bottom-left-radius: var(--card-border-radius-dark, 8px);
 }
-body:not(.is-mobile) .workspace:not(.is-right-sidedock-open) .workspace-split.mod-root,
+body:not(.is-mobile)
+  .workspace:not(.is-right-sidedock-open)
+  .workspace-split.mod-root,
 body:not(.is-mobile) .workspace-split.mod-right-split {
   border-bottom-right-radius: var(--card-border-radius-light, 8px);
   overflow: hidden;
 }
-body:not(.is-mobile).theme-dark .workspace:not(.is-right-sidedock-open) .workspace-split.mod-root,
+body:not(.is-mobile).theme-dark
+  .workspace:not(.is-right-sidedock-open)
+  .workspace-split.mod-root,
 body:not(.is-mobile).theme-dark .workspace-split.mod-right-split {
   border-bottom-right-radius: var(--card-border-radius-dark, 8px);
 }
 .workspace-window .mod-top-left-space .workspace-tab-container,
-.workspace-window .mod-top-left-space .workspace-tab-container .workspace-leaf-content {
+.workspace-window
+  .mod-top-left-space
+  .workspace-tab-container
+  .workspace-leaf-content {
   border-top-left-radius: 0px !important;
 }
 body:not(.is-mobile) .workspace::before {
@@ -1294,7 +1391,10 @@ body:not(.is-mobile) .workspace::before {
 }
 body:not(.is-mobile).theme-dark .workspace::before {
   border-radius: var(--card-shadow-border-radius-dark, 7px);
-  box-shadow: var(--card-shadow-dark, 0px 0px 0px 1px var(--background-modifier-border));
+  box-shadow: var(
+    --card-shadow-dark,
+    0px 0px 0px 1px var(--background-modifier-border)
+  );
 }
 body:not(.is-mobile).is-popout-window .workspace::before {
   width: calc(100%) !important;
@@ -1362,7 +1462,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
   border: 2px solid transparent;
   border-width: 0px 0px 0px 0px;
 }
-body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree > div > div) {
+body:not(.is-mobile).scrollbar-space-occupation-off
+  :is(.mk-file-tree > div > div) {
   overflow-y: overlay !important;
 }
 /* ====== titlebar ===== */
@@ -1431,10 +1532,12 @@ body.is-hidden-frameless .titlebar-button-container.mod-right {
 .sidebar-toggle-button {
   padding-top: 6px;
 }
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   padding-right: 16px;
 }
-body:not(.is-hidden-frameless):not(.is-popout-window) .sidebar-toggle-button.mod-right {
+body:not(.is-hidden-frameless):not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   margin-right: -8px;
 }
 .workspace-tab-header-inner {
@@ -1475,30 +1578,47 @@ body {
   --color-activated-tab-header-light: var(--text-normal);
   --color-activated-tab-header-dark: var(--text-normal);
   --background-activated-tab-header-light: var(--background-primary);
-  --shadow-activated-tab-header-light: 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
-    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2), 0 0 0 1px var(--background-modifier-border);
-  --background-activated-tab-header-dark: var(--background-modifier-active-hover);
-  --shadow-activated-tab-header-dark: inset 0 0 0 1px var(--background-modifier-border);
+  --shadow-activated-tab-header-light:
+    0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.4),
+    0px 0px 2px hsla(var(--accent-h), 18%, 80%, 0.2),
+    0 0 0 1px var(--background-modifier-border);
+  --background-activated-tab-header-dark: var(
+    --background-modifier-active-hover
+  );
+  --shadow-activated-tab-header-dark: inset 0 0 0 1px
+    var(--background-modifier-border);
 }
-body.theme-light.color-to-tab-icon-light .mod-root .workspace-tab-header.is-active svg,
+body.theme-light.color-to-tab-icon-light
+  .mod-root
+  .workspace-tab-header.is-active
+  svg,
 body.theme-light
   :is(.mod-left-split, .mod-right-split)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-body.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+body.theme-light
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--color-activated-tab-header-light) !important;
   --icon-opacity: 1;
 }
-body.theme-dark.color-to-tab-icon-dark .mod-root .workspace-tab-header.is-active svg,
+body.theme-dark.color-to-tab-icon-dark
+  .mod-root
+  .workspace-tab-header.is-active
+  svg,
 body.theme-dark
   :is(.mod-left-split, .mod-right-split)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-body.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+body.theme-dark
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--color-activated-tab-header-dark) !important;
   --icon-opacity: 1;
 }
-body:not(.is-mobile).theme-dark .workspace-tab-header .workspace-tab-header-inner {
+body:not(.is-mobile).theme-dark
+  .workspace-tab-header
+  .workspace-tab-header-inner {
   border-radius: var(--border-radius-activated-tab-header-dark);
 }
 .workspace-tab-header-tab-list,
@@ -1522,7 +1642,10 @@ body:not(.is-mobile).theme-dark .workspace-tab-header .workspace-tab-header-inne
   gap: var(--size-2-2);
 }
 body:not(.is-mobile) .mod-left-split .workspace-tab-header-inner-icon .svg-icon,
-body:not(.is-mobile) .mod-right-split .workspace-tab-header-inner-icon .svg-icon,
+body:not(.is-mobile)
+  .mod-right-split
+  .workspace-tab-header-inner-icon
+  .svg-icon,
 body:not(.is-mobile) .clickable-icon.side-dock-ribbon-action .svg-icon,
 body:not(.is-mobile) .clickable-icon.nav-action-button .svg-icon,
 body:not(.is-mobile) .sidebar-toggle-button .clickable-icon .svg-icon,
@@ -1541,11 +1664,15 @@ body:not(.is-mobile) .workspace-tab-header-tab-list .clickable-icon .svg-icon {
 /* Find a way to make this only apply rounded corners when the workspace ribbon is closed */
 body:not(.is-mobile) .workspace-ribbon,
 body:not(.is-mobile) .mod-top-left-space .workspace-tab-container,
-body.is-popout-window .workspace-tabs.mod-top-left-space > .workspace-tab-container {
+body.is-popout-window
+  .workspace-tabs.mod-top-left-space
+  > .workspace-tab-container {
   border-top-left-radius: var(--card-border-radius-light, 8px) !important;
   overflow: hidden;
 }
-body:not(.is-mobile) .workspace:not(.is-right-sidedock-open) .workspace-split.mod-root,
+body:not(.is-mobile)
+  .workspace:not(.is-right-sidedock-open)
+  .workspace-split.mod-root,
 body:not(.is-mobile) .workspace-split.mod-right-split {
   border-bottom-right-radius: var(--card-border-radius-light, 8px);
   overflow: hidden;
@@ -1557,7 +1684,10 @@ body:not(.is-mobile) .workspace-split.mod-right-split {
 }
 /* no idea what this stuff does. It's probably important */
 .workspace-window .mod-top-left-space .workspace-tab-container,
-.workspace-window .mod-top-left-space .workspace-tab-container .workspace-leaf-content {
+.workspace-window
+  .mod-top-left-space
+  .workspace-tab-container
+  .workspace-leaf-content {
   border-top-left-radius: 0px !important;
 }
 body:not(.is-mobile) .workspace::before {
@@ -1590,14 +1720,18 @@ body {
   --anim-duration-fast: calc(150ms / var(--anim-speed));
   --anim-duration-moderate: calc(300ms / var(--anim-speed));
   --anim-duration-slow: calc(600ms / var(--anim-speed));
-  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
-  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
+  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast)
+    var(--anim-motion-swing);
+  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow)
+    var(--anim-motion-swing);
 }
 body:not(.is-phone, .extra-anim-remove) .prompt,
 body:not(.is-mobile, .extra-anim-remove) .document-search-container,
 body:not(.is-phone, .extra-anim-remove) .modal:not(:has(.checkbox-container)) {
-  -webkit-animation: scale-up var(--anim-duration-fast) cubic-bezier(0.175, 0.885, 0.32, 1.095) both;
-  animation: scale-up var(--anim-duration-fast) cubic-bezier(0.175, 0.885, 0.32, 1.095) both;
+  -webkit-animation: scale-up var(--anim-duration-fast)
+    cubic-bezier(0.175, 0.885, 0.32, 1.095) both;
+  animation: scale-up var(--anim-duration-fast)
+    cubic-bezier(0.175, 0.885, 0.32, 1.095) both;
 }
 @-webkit-keyframes scale-up {
   0% {

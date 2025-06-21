@@ -99,7 +99,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-color: inherit;
@@ -184,7 +185,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
@@ -218,7 +220,10 @@ body {
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
-  --graph-line: var(--canvas-contrast-high, var(--background-modifier-border-focus));
+  --graph-line: var(
+    --canvas-contrast-high,
+    var(--background-modifier-border-focus)
+  );
   --graph-node: var(--text-muted);
   --graph-node-unresolved: var(--text-faint);
   --graph-node-focused: var(--text-accent);
@@ -373,7 +378,8 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-children-padding-left: var(--size-2-2);
   --nav-item-children-margin-left: var(--size-4-3);
@@ -433,7 +439,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--canvas-contrast-low, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --canvas-contrast-low,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Multi-select pills */
@@ -461,7 +470,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   --pdf-sidebar-background: var(--background-primary);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   /* Popovers - file previews */
   --popover-width: 450px;
   --popover-height: 400px;
@@ -475,7 +485,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--canvas-contrast-low, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --canvas-contrast-low,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;

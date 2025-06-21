@@ -206,31 +206,31 @@ svg * {
 
   .cm-header-1:not(.cm-formatting),
   h1 {
-    /*	  text-shadow: 0 0 0.5em #FF00FF; */
+    /*      text-shadow: 0 0 0.5em #FF00FF; */
   }
 
   .cm-header-2:not(.cm-formatting),
   h2 {
-    /*	  text-shadow: 0 0 0.5em #38e8ff; */
+    /*      text-shadow: 0 0 0.5em #38e8ff; */
   }
 
   .cm-header-3:not(.cm-formatting),
   h3 {
-    /*	  text-shadow: 0 0 0.5em #00FF00; */
+    /*      text-shadow: 0 0 0.5em #00FF00; */
   }
 
   .cm-header-4:not(.cm-formatting),
   h4 {
-    /*	  text-shadow: 0 0 0.5em #FFFF00; */
+    /*      text-shadow: 0 0 0.5em #FFFF00; */
   }
 
   .cm-header-5:not(.cm-formatting),
   h5 {
-    /*	  text-shadow: 0 0 0.5em #FF0000; */
+    /*      text-shadow: 0 0 0.5em #FF0000; */
   }
 
   .cm-header-6:not(.cm-formatting),
   h6 {
-    /*	  text-shadow: 0 0 0.5em #0000FF; */
+    /*      text-shadow: 0 0 0.5em #0000FF; */
   }
 }

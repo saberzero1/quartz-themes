@@ -2,9 +2,10 @@
 /* I used an early version of Dark Remix as a starting point: obsdn dark rmx - v202007102000 */
 
 :root {
-  --default-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
+  --default-font:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Source Code Pro", monospace;
@@ -25,7 +26,8 @@ body {
   --accent-l: 57%;
   --link-decoration: none;
   --background-modifier-hover: var(--background-secondary);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: 0em 0.5em 0.15em 0.5em; /*var(--nav-item-padding)*/
   --p-spacing: 0.75em;
   --link-decoration-hover: none;
@@ -61,7 +63,12 @@ body {
   --interactive-accent-rgb: 38, 157, 255; /*rgb(38,157,255)*/
   --interactive-accent-hover: #4e8ae4;
   --interactive-accent-hover-dark: #0f56bf;
-  --scrollbar-active-thumb-bg: rgba(62, 147, 216, 0.8); /*rgba(255,255,255,0.2)*/
+  --scrollbar-active-thumb-bg: rgba(
+    62,
+    147,
+    216,
+    0.8
+  ); /*rgba(255,255,255,0.2)*/
   --scrollbar-bg: rgba(255, 255, 255, 0);
   --scrollbar-thumb-bg: rgb(20, 20, 20); /*rgba(81,144,175,0.2)*/
   --accent-strong: #ec5151; /*#EC7272*/ /*#ec0d0d*/
@@ -115,8 +122,14 @@ body {
   --interactive-hover: #e9e9e9;
   --interactive-accent-hover: #2287d4;
   --interactive-accent: #2da4ff; /*this is for calendar day highlight, nested tag highlight, active note highlight*/
-  --interactive-accent-rgb: 38, 157, 255; /*rgb(34,182,226)*/ /*rgb(38,157,255)*/
-  --scrollbar-active-thumb-bg: rgba(38, 157, 255, 0.8); /*rgb(5,4,39); the color when clicked */
+  --interactive-accent-rgb:
+    38, 157, 255; /*rgb(34,182,226)*/ /*rgb(38,157,255)*/
+  --scrollbar-active-thumb-bg: rgba(
+    38,
+    157,
+    255,
+    0.8
+  ); /*rgb(5,4,39); the color when clicked */
   --scrollbar-bg: rgba(100, 100, 100, 0);
   --scrollbar-thumb-bg: #e3e5e8;
   --accent-strong: #ff6666;
@@ -152,7 +165,9 @@ body {
   margin-block-end: var(--p-spacing); /*var(--p-spacing)*/
 }
 
-.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+.cm-s-obsidian
+  .cm-line.HyperMD-header
+  + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
   padding-top: var(--p-spacing);
 }
 .cm-s-obsidian .cm-line.HyperMD-header {
@@ -163,7 +178,7 @@ body {
 
 /*invert image based on light or dark mode*/
 /*.theme-light .markdown-preview-view img[src*="png"] {
-	filter: hue-rotate(70deg);
+    filter: hue-rotate(70deg);
 }*/
 /*.theme-dark .markdown-preview-view img[src*="png"] {
   opacity: 1;
@@ -235,12 +250,22 @@ body {
 .mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb {
   border-color: var(--background-secondary);
 }
-.theme-light.minimal-light-contrast .mod-left-split .vertical-tab-header::-webkit-scrollbar-thumb,
-.theme-light.minimal-light-contrast .mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb {
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .vertical-tab-header::-webkit-scrollbar-thumb,
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-thumb {
   background-color: var(--background-modifier-border-hover);
 }
-.theme-light.minimal-light-contrast .mod-left-split .vertical-tab-header::-webkit-scrollbar-track,
-.theme-light.minimal-light-contrast .mod-left-split .workspace-tabs ::-webkit-scrollbar-track {
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .vertical-tab-header::-webkit-scrollbar-track,
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-track {
   border-color: var(--background-modifier-border-hover);
 }
 
@@ -402,9 +427,9 @@ body {
 /*the highlight band on tags in the tag pane */
 .tree-item-self.is-clickable:hover {
   background-color: var(--background-nav-alt);
-  /*	background-color: transparent;
-	border: 1px solid var(--text-accent);
-	border-radius: 0px;*/
+  /*    background-color: transparent;
+    border: 1px solid var(--text-accent);
+    border-radius: 0px;*/
 }
 .tree-item-self:hover .tree-item-flair {
   background-color: var(--interactive-accent-hover-dark);
@@ -417,9 +442,9 @@ body {
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--background-nav-alt);
-  /*  	background-color: transparent;
-	border: 1px solid var(--text-accent);
-	border-radius: 0px;*/
+  /*      background-color: transparent;
+    border: 1px solid var(--text-accent);
+    border-radius: 0px;*/
 }
 /*=====================================================================================*/
 
@@ -552,7 +577,9 @@ h6 {
   margin-block-end: var(--p-spacing);
 }
 
-.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+.cm-s-obsidian
+  .cm-line.HyperMD-header
+  + .cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
   padding-top: var(--p-spacing); /*var(--p-spacing)*/
 }
 
@@ -646,7 +673,7 @@ h6 {
   color: var(--text-normal);
 }
 /*.theme-dark .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
-	color: var(--text-normal);
+    color: var(--text-normal);
 }*/
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
@@ -724,7 +751,7 @@ h6 {
   /*color: #FE654F;*/
 }
 /*.theme-dark .graph-view.color-fill-attachment {
-	color: var(--text-accent-hover);
+    color: var(--text-accent-hover);
 }*/
 .theme-light .graph-view.color-fill-tag {
   color: var(--accent-strong); /*#ff6666*/
@@ -1155,8 +1182,12 @@ cite {
 }
 
 /*main leaf borders*/
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-radius: 0;
 }
 
@@ -1200,8 +1231,8 @@ cite {
 
 /* table heading color */
 /*.markdown-preview-view th {
-	background-color: var(--background-primary-alt);
-	border: 0px;
+    background-color: var(--background-primary-alt);
+    border: 0px;
 }*/
 
 /*excalidraw theme updates*/
@@ -1212,15 +1243,26 @@ cite {
 }
 
 /*excalidraw*/
-.excalidraw .App-toolbar .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon,
-.excalidraw .App-toolbar .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon {
+.excalidraw
+  .App-toolbar
+  .ToolIcon
+  .ToolIcon_type_radio:checked
+  + .ToolIcon__icon,
+.excalidraw
+  .App-toolbar
+  .ToolIcon
+  .ToolIcon_type_checkbox:checked
+  + .ToolIcon__icon {
   background: var(--text-accent) !important;
   --icon-fill-color: #ffffff;
   --keybinding-color: #ffffff;
 }
 
 .excalidraw .App-toolbar .ToolIcon .ToolIcon_type_radio:hover + .ToolIcon__icon,
-.excalidraw .App-toolbar .ToolIcon .ToolIcon_type_checkbox:hover.ToolIcon__icon {
+.excalidraw
+  .App-toolbar
+  .ToolIcon
+  .ToolIcon_type_checkbox:hover.ToolIcon__icon {
   /* background: var(--text-accent) !important;*/
   --icon-fill-color: var(--text-accent-hover-dark);
   --keybinding-color: #ffffff;
@@ -1358,7 +1400,8 @@ body:not(.no-svg-replace) svg.right-triangle {
 .nav-folder.mod-root .nav-folder > .nav-folder-children {
   padding-left: var(--size-4-2);
   margin-left: 1.2em;
-  border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
 }
 
 /*this only appears to change the Recent Files sidebar*/

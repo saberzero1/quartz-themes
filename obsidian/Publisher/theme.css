@@ -84,7 +84,8 @@ body {
   --orange-20: hsla(11, 100%, 20%, 1);
   --orange-10: hsla(11, 100%, 10%, 1);
   /* Shadow */
-  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   /* Buttons */
   --button-radius: var(--radius-s);
   /* Checkboxes */
@@ -251,7 +252,9 @@ body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active:active {
 body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active:focus {
   color: var(--orange-40);
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--black-100);
 }
 body .svg-icon.lucide-chevrons-up-down {
@@ -375,7 +378,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .vertical-tab-header {
   background-color: var(--black-20);
 }
-.theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+.theme-light:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--black-80);
 }
 .theme-light button {
@@ -465,13 +470,16 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"] {
   color: var(--black-80);
 }
-.theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
+.theme-light
+  .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
   color: var(--black-80);
 }
-.theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
+.theme-light
+  .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
   color: var(--black-90);
 }
-.theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
+.theme-light
+  .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
   color: var(--black-80);
 }
 .theme-light .vertical-tab-header-group-items {
@@ -555,13 +563,16 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"] {
   color: var(--black-80);
 }
-.theme-light .clickable-icon.view-action[aria-label="Open board settings"]:hover {
+.theme-light
+  .clickable-icon.view-action[aria-label="Open board settings"]:hover {
   color: var(--black-80);
 }
-.theme-light .clickable-icon.view-action[aria-label="Open board settings"]:active {
+.theme-light
+  .clickable-icon.view-action[aria-label="Open board settings"]:active {
   color: var(--black-90);
 }
-.theme-light .clickable-icon.view-action[aria-label="Open board settings"]:focus {
+.theme-light
+  .clickable-icon.view-action[aria-label="Open board settings"]:focus {
   color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings {
@@ -732,7 +743,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --titlebar-text-color: var(--white-80);
   --titlebar-text-color-focused: var(--white-80);
   /* Swatch */
-  --swatch-shadow: var(--shadow) /* Dragging */ --drag-ghost-background: var(--white-80);
+  --swatch-shadow: var(--shadow) /* Dragging */
+    --drag-ghost-background: var(--white-80);
   --drag-ghost-text-color: var(--white-80);
   /* Nav */
   --nav-item-color: var(--white-80);
@@ -918,7 +930,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
+.theme-dark
+  .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
@@ -1048,7 +1061,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   font-size: 1rem;
   font-family: var(--font-text-theme);
 }
-.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+.theme-dark:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--black-90);
 }
 .theme-dark .setting-item-name {

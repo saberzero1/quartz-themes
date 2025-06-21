@@ -4,11 +4,13 @@
   font-style: normal;
   src: url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot);
   src:
-    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot) format("embedded-opentype"),
+    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.eot)
+      format("embedded-opentype"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2) format("woff2"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff) format("woff"),
     url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.ttf) format("truetype"),
-    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.svg?#boxicons) format("svg");
+    url(https://unpkg.com/boxicons@2.1.4/fonts/boxicons.svg?#boxicons)
+      format("svg");
 }
 .bx {
   font-family: boxicons !important;

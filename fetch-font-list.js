@@ -37,7 +37,10 @@ function extractFontFamilies(filePath) {
   // Remove variables and fallback fonts
   const filteredFamilies = fontFamilies.map((families) =>
     families.filter(
-      (name) => !name.startsWith("--") && !name.includes("fallback") && !name.startsWith("var"),
+      (name) =>
+        !name.startsWith("--") &&
+        !name.includes("fallback") &&
+        !name.startsWith("var"),
     ),
   )
   // Flatten the array and remove duplicates

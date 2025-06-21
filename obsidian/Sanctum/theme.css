@@ -50,7 +50,8 @@ body {
   --font-editor-theme: Inter, sans-serif;
   --font-editor: var(--font-editor-theme), var(--font-text);
   --font-text-theme: Inter, sans-serif;
-  --font-monospace-theme: "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
+  --font-monospace-theme:
+    "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --font-interface-theme: Inter, sans-serif;
 }
 :root {
@@ -238,13 +239,15 @@ body {
 }
 .theme-light {
   --shadow-color: 0deg 5% 59%;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
     0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4),
     0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32),
     0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25),
     0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18);
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
     0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47),
     0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4),
     0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33),
@@ -253,13 +256,15 @@ body {
 }
 .theme-dark {
   --shadow-color: 0deg 0% 1%;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
     0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4),
     0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32),
     0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25),
     0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18);
-  --input-shadow-hover: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow-hover:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47),
     0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4),
     0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33),
@@ -463,7 +468,8 @@ body {
   color: var(--blockquote-color);
   font-style: var(--blockquote-font-style);
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   padding: 0 0 0 var(--size-7);
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -484,8 +490,10 @@ body {
 .blockquote-border .markdown-rendered blockquote {
   padding-top: 16px;
   padding-bottom: 16px;
-  border-top: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
-  border-bottom: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-top: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
+  border-bottom: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   border-left: none;
 }
 .blockquote-border .markdown-rendered blockquote::before {
@@ -502,7 +510,9 @@ body {
   border-left-width: var(--blockquote-border-thickness);
   background-color: var(--blockquote-background-color);
 }
-.blockquote-marker .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+.blockquote-marker
+  .markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote {
   border-left: none;
 }
 .blockquote-marker .markdown-source-view.mod-cm6 .cm-blockquote-border {
@@ -512,7 +522,8 @@ body {
   --callout-radius: var(--radius-s);
   --callout-border-opacity: 30%;
   --callout-border-width: 0px;
-  --callout-padding: var(--size-4-4) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-4) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-title-padding: 0;
   --callout-title-background: transparent;
@@ -572,7 +583,12 @@ body {
 .callout[data-callout="important"] {
   --callout-color: 92, 153, 124;
 }
-.callout:where([data-callout="tip"], [data-callout="hint"], [data-callout="idea"]) .callout-icon {
+.callout:where(
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="idea"]
+  )
+  .callout-icon {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M11 24h10v2H11zm2 4h6v2h-6zm3-26A10 10 0 0 0 6 12a9.19 9.19 0 0 0 3.46 7.62c1 .93 1.54 1.46 1.54 2.38h2c0-1.84-1.11-2.87-2.19-3.86A7.2 7.2 0 0 1 8 12a8 8 0 0 1 16 0 7.2 7.2 0 0 1-2.82 6.14c-1.07 1-2.18 2-2.18 3.86h2c0-.92.53-1.45 1.54-2.39A9.18 9.18 0 0 0 26 12 10 10 0 0 0 16 2Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
 }
@@ -589,7 +605,11 @@ body {
 .callout[data-callout="done"] {
   --callout-color: 102, 153, 97;
 }
-.callout:where([data-callout="success"], [data-callout="check"], [data-callout="done"])
+.callout:where(
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
+  )
   .callout-icon {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpolygon points='13 24 4 15 5.414 13.586 13 21.171 26.586 7.586 28 9 13 24'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
@@ -626,7 +646,11 @@ body {
 .callout[data-callout="attention"] {
   --callout-color: 184, 131, 0;
 }
-.callout:where([data-callout="warning"], [data-callout="caution"], [data-callout="attention"])
+.callout:where(
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
+  )
   .callout-icon {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M16,23a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,23Z'/%3E%3Crect x='15' y='12' width='2' height='9'/%3E%3Cpath d='M29,30H3a1,1,0,0,1-.8872-1.4614l13-25a1,1,0,0,1,1.7744,0l13,25A1,1,0,0,1,29,30ZM4.6507,28H27.3493l.002-.0033L16.002,6.1714h-.004L4.6487,27.9967Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
@@ -639,7 +663,11 @@ body {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23000%7D%3C/style%3E%3C/defs%3E%3Cpath d='M16 28a11 11 0 1 1 11-11 11 11 0 0 1-11 11Zm0-20a9 9 0 1 0 9 9 9 9 0 0 0-9-9Z'/%3E%3Cpath d='M18.59 21 15 17.41V11h2v5.58l3 3.01L18.59 21z'/%3E%3Cpath d='M3.96 5.5h5.07v2H3.96z' class='cls-1' transform='rotate(-45.06 6.502 6.497)'/%3E%3Cpath d='M24.5 3.96h2v5.07h-2z' class='cls-1' transform='rotate(-44.94 25.5 6.498)'/%3E%3Cpath id='_Transparent_Rectangle_' fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
 }
-.callout:where([data-callout="alarm"], [data-callout="reminder"], [data-callout="notification"])
+.callout:where(
+    [data-callout="alarm"],
+    [data-callout="reminder"],
+    [data-callout="notification"]
+  )
   .callout-icon {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M28.7071,19.293,26,16.5859V13a10.0136,10.0136,0,0,0-9-9.9492V1H15V3.0508A10.0136,10.0136,0,0,0,6,13v3.5859L3.2929,19.293A1,1,0,0,0,3,20v3a1,1,0,0,0,1,1h7v.7768a5.152,5.152,0,0,0,4.5,5.1987A5.0057,5.0057,0,0,0,21,25V24h7a1,1,0,0,0,1-1V20A1,1,0,0,0,28.7071,19.293ZM19,25a3,3,0,0,1-6,0V24h6Zm8-3H5V20.4141L7.707,17.707A1,1,0,0,0,8,17V13a8,8,0,0,1,16,0v4a1,1,0,0,0,.293.707L27,20.4141Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
@@ -677,7 +705,8 @@ body {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M24 4v22.75l-7.1-3.59-.9-.45-.9.45L8 26.75V4h16m0-2H8a2 2 0 0 0-2 2v26l10-5 10 5V4a2 2 0 0 0-2-2Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt;Transparent Rectangle&gt;'/%3E%3C/svg%3E");
 }
-.callout:where([data-callout="favorite"], [data-callout="favourite"]) .callout-icon {
+.callout:where([data-callout="favorite"], [data-callout="favourite"])
+  .callout-icon {
   background-color: currentColor;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Efavorite%3C/title%3E%3Cpath d='M22.45,6a5.47,5.47,0,0,1,3.91,1.64,5.7,5.7,0,0,1,0,8L16,26.13,5.64,15.64a5.7,5.7,0,0,1,0-8,5.48,5.48,0,0,1,7.82,0L16,10.24l2.53-2.58A5.44,5.44,0,0,1,22.45,6m0-2a7.47,7.47,0,0,0-5.34,2.24L16,7.36,14.89,6.24a7.49,7.49,0,0,0-10.68,0,7.72,7.72,0,0,0,0,10.82L16,29,27.79,17.06a7.72,7.72,0,0,0,0-10.82A7.49,7.49,0,0,0,22.45,4Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E");
 }
@@ -826,11 +855,17 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement {
   min-width: 24px;
 }
-.markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
+.markdown-source-view.mod-cm6
+  .cm-gutters
+  .cm-lineNumbers
+  .cm-gutterElement:not(.cm-active) {
   padding-right: 24px;
   opacity: 0.5;
 }
-.markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement.cm-active {
+.markdown-source-view.mod-cm6
+  .cm-gutters
+  .cm-lineNumbers
+  .cm-gutterElement.cm-active {
   padding-right: 24px;
   color: var(--text-muted);
   border-radius: var(--radius-s) 0 0 var(--radius-s);
@@ -843,7 +878,10 @@ body {
   border-radius: 0 var(--radius-s) var(--radius-s) 0;
 }
 body:not(.is-mobile)
-  :is(.markdown-source-view.mod-cm6 .cm-scroller, .markdown-reading-view .markdown-preview-view) {
+  :is(
+    .markdown-source-view.mod-cm6 .cm-scroller,
+    .markdown-reading-view .markdown-preview-view
+  ) {
   padding-left: var(--size-8);
 }
 body {
@@ -922,7 +960,9 @@ body {
 .wrap-nav-titles {
   --nav-item-white-space: wrap;
 }
-body:not(.nav-folder-indicators) .nav-folder.is-collapsed .nav-folder-title-content::before,
+body:not(.nav-folder-indicators)
+  .nav-folder.is-collapsed
+  .nav-folder-title-content::before,
 body:not(.nav-folder-indicators) .nav-folder .nav-folder-title-content::before {
   display: inline-block;
   content: "";
@@ -939,7 +979,10 @@ body:not(.nav-folder-indicators)
   -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Efolder%3C/title%3E%3Cpath d='M11.17,6l3.42,3.41.58.59H28V26H4V6h7.17m0-2H4A2,2,0,0,0,2,6V26a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2H16L12.59,4.59A2,2,0,0,0,11.17,4Z' transform='translate(0)'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E")
     no-repeat;
 }
-body:not(.nav-folder-indicators) .nav-folder .nav-folder-title .nav-folder-title-content::before {
+body:not(.nav-folder-indicators)
+  .nav-folder
+  .nav-folder-title
+  .nav-folder-title-content::before {
   -webkit-mask: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M28,8H20.8284L17.4143,4.5859A2,2,0,0,0,16,4H4A2,2,0,0,0,2,6V26a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10A2,2,0,0,0,28,8ZM8,26V14h8v6.17l-2.59-2.58L12,19l5,5,5-5-1.41-1.41L18,20.17V14a2.0025,2.0025,0,0,0-2-2H8a2.0025,2.0025,0,0,0-2,2V26H4V6H16l4,4h8v2H22v2h6V26Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E")
     no-repeat;
 }
@@ -953,7 +996,9 @@ body:not(.nav-folder-indicators) .nav-folder-title {
   right: -4px;
 }
 .markdown-source-view.mod-cm6
-  .cm-line:not(.cm-active):not(.HyperMD-task-line):not(.HyperMD-header):not(.HyperMD-list-line-1)
+  .cm-line:not(.cm-active):not(.HyperMD-task-line):not(.HyperMD-header):not(
+    .HyperMD-list-line-1
+  )
   .cm-fold-indicator
   .collapse-indicator {
   padding-right: 14px;
@@ -1217,7 +1262,18 @@ ul > li.task-list-item[data-task="X"] {
 :is(body, .default-marker-odd) ul > li .list-bullet:after,
 :is(body, .default-marker-odd) ol > li > ul > li .list-bullet:after,
 :is(body, .default-marker-odd) ul > li > ul > li > ul > li .list-bullet:after,
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+:is(body, .default-marker-odd)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 :is(body, .default-marker-odd)
   ul
   > li
@@ -1263,7 +1319,16 @@ ul > li.task-list-item[data-task="X"] {
 }
 :is(body, .default-marker-even) ul > li > ul > li .list-bullet::after,
 :is(body, .default-marker-even) ol > li > ul > li > ul > li .list-bullet::after,
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+:is(body, .default-marker-even)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 :is(body, .default-marker-even)
   ul
   > li
@@ -1373,7 +1438,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-1 ul > li .list-bullet:after,
 .alternate-marker-odd-1 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-1 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-1 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-1
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-1
   ul
   > li
@@ -1412,7 +1488,16 @@ ol ol ol ol ol ol ol ol ol ol {
   .list-bullet:after,
 .alternate-marker-even-2 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-2 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-2 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-2
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-2
   ul
   > li
@@ -1474,7 +1559,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-2 ul > li .list-bullet:after,
 .alternate-marker-odd-2 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-2 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-2 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-2
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-2
   ul
   > li
@@ -1513,7 +1609,16 @@ ol ol ol ol ol ol ol ol ol ol {
   .list-bullet:after,
 .alternate-marker-even-3 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-3 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-3 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-3
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-3
   ul
   > li
@@ -1577,7 +1682,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-3 ul > li .list-bullet:after,
 .alternate-marker-odd-3 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-3 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-3 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-3
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-3
   ul
   > li
@@ -1620,7 +1736,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-4 ul > li .list-bullet:after,
 .alternate-marker-odd-4 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-4 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-4 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-4
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-4
   ul
   > li
@@ -1659,7 +1786,16 @@ ol ol ol ol ol ol ol ol ol ol {
   .list-bullet:after,
 .alternate-marker-even-4 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-4 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-4 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-4
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-4
   ul
   > li
@@ -1721,7 +1857,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-5 ul > li .list-bullet:after,
 .alternate-marker-odd-5 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-5 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-5 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-5
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-5
   ul
   > li
@@ -1760,7 +1907,16 @@ ol ol ol ol ol ol ol ol ol ol {
   .list-bullet:after,
 .alternate-marker-even-5 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-5 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-5 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-5
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-5
   ul
   > li
@@ -1824,7 +1980,18 @@ ol ol ol ol ol ol ol ol ol ol {
 .alternate-marker-odd-6 ul > li .list-bullet:after,
 .alternate-marker-odd-6 ol > li > ul > li .list-bullet:after,
 .alternate-marker-odd-6 ul > li > ul > li > ul > li .list-bullet:after,
-.alternate-marker-odd-6 ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,
+.alternate-marker-odd-6
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet:after,
 .alternate-marker-odd-6
   ul
   > li
@@ -1863,7 +2030,16 @@ ol ol ol ol ol ol ol ol ol ol {
   .list-bullet:after,
 .alternate-marker-even-6 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-6 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-6 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-6
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-6
   ul
   > li
@@ -1929,7 +2105,16 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 .alternate-marker-even-1 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-1 ol > li > ul > li > ul > li .list-bullet::after,
-.alternate-marker-even-1 ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+.alternate-marker-even-1
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-1
   ul
   > li
@@ -2353,8 +2538,12 @@ body {
   --divider-width-hover: 3px;
   --divider-vertical-height: calc(100% - var(--header-height));
 }
-.is-hidden-frameless .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.is-hidden-frameless .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+.is-hidden-frameless
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+.is-hidden-frameless
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
   height: calc(100% - var(--header-height));
 }
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
@@ -2406,7 +2595,9 @@ body {
   line-height: 1.3;
   position: relative;
 }
-.view-content .style-settings-container .setting-item:not(.setting-item-heading) {
+.view-content
+  .style-settings-container
+  .setting-item:not(.setting-item-heading) {
   flex-direction: row;
 }
 .community-item.is-selected {
@@ -2446,7 +2637,9 @@ body {
 .themed-color-wrapper > div {
   padding: 4px;
 }
-.style-settings-heading.is-collapsed .style-settings-collapse-indicator > svg.right-triangle {
+.style-settings-heading.is-collapsed
+  .style-settings-collapse-indicator
+  > svg.right-triangle {
   transform: scale(1.5);
 }
 .style-settings-collapse-indicator > svg.right-triangle {
@@ -2479,12 +2672,20 @@ body.theme-light.is-translucent {
   padding: 4px;
   gap: 4px;
 }
-.mod-left-split .workspace-tab-header-container-inner .workspace-tab-header.is-active,
-.mod-right-split .workspace-tab-header-container-inner .workspace-tab-header.is-active {
+.mod-left-split
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active,
+.mod-right-split
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active {
   background-color: transparent;
 }
-.mod-left-split .workspace-tab-header-container-inner .workspace-tab-header.is-active:hover,
-.mod-right-split .workspace-tab-header-container-inner .workspace-tab-header.is-active:hover {
+.mod-left-split
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active:hover,
+.mod-right-split
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active:hover {
   background-color: var(--background-selected-hover);
 }
 .mod-left-split
@@ -2545,7 +2746,11 @@ body {
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
   color: var(--text-muted);
 }
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
   box-shadow:
     -0.5px 0 0.4px hsl(var(--shadow-color) / 0.47),
     -0.8px 0 0.7px -1px hsl(var(--shadow-color) / 0.4),
@@ -2572,7 +2777,9 @@ body {
 .mod-stacked .workspace-tab-header {
   border-right: var(--divider-width) solid var(--divider-color);
 }
-body.is-focused .workspace-tab-header:not(.mod-active) .workspace-tab-header-inner-close-button {
+body.is-focused
+  .workspace-tab-header:not(.mod-active)
+  .workspace-tab-header-inner-close-button {
   color: var(--tab-text-color-focused);
 }
 body {
@@ -2600,8 +2807,14 @@ body {
   padding: 4px 8px 4px 16px;
   border: none;
 }
-.table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview th,
-.table-single-rows .cm-embed-block.markdown-rendered .block-language-dataview td,
+.table-single-rows
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  th,
+.table-single-rows
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  td,
 .table-single-rows .markdown-rendered table th,
 .table-single-rows .markdown-rendered table td,
 .table-single-rows .markdown-rendered .table-view-table th,
@@ -2619,14 +2832,24 @@ body {
   background-color: var(--table-header-background);
   border-bottom: 1px solid var(--border-subtle-2);
 }
-.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview th,
+.table-cell-border
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  th,
 .table-cell-border .markdown-rendered table th,
 .table-cell-border .markdown-rendered .table-view-table th {
   border: 1px solid var(--border-subtle-1);
   border-bottom: 1px solid var(--border-strong-1);
 }
-.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview thead,
-.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody tr,
+.table-sticky-headers
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  thead,
+.table-sticky-headers
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr,
 .table-sticky-headers .markdown-rendered table thead,
 .table-sticky-headers .markdown-rendered table tbody tr,
 .table-sticky-headers .markdown-rendered .table-view-table thead,
@@ -2636,7 +2859,10 @@ body {
   width: 100%;
   table-layout: fixed;
 }
-.table-sticky-headers .cm-embed-block.markdown-rendered .block-language-dataview tbody,
+.table-sticky-headers
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody,
 .table-sticky-headers .markdown-rendered table tbody,
 .table-sticky-headers .markdown-rendered .table-view-table tbody {
   display: block;
@@ -2649,12 +2875,18 @@ body {
   font-size: var(--font-smaller);
   font-weight: var(--font-normal);
 }
-.table-cell-border .cm-embed-block.markdown-rendered .block-language-dataview td,
+.table-cell-border
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  td,
 .table-cell-border .markdown-rendered table td,
 .table-cell-border .markdown-rendered .table-view-table td {
   border: 1px solid var(--border-subtle-1);
 }
-.table-column-border .cm-embed-block.markdown-rendered .block-language-dataview td:not(:last-child),
+.table-column-border
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  td:not(:last-child),
 .table-column-border .markdown-rendered table td:not(:last-child),
 .table-column-border .markdown-rendered .table-view-table td:not(:last-child) {
   border-right: 1px solid var(--border-subtle-1);
@@ -2670,18 +2902,32 @@ body {
   tbody
   tr:nth-child(odd),
 .table-alternate-row .markdown-rendered table tbody tr:nth-child(odd),
-.table-alternate-row .markdown-rendered .table-view-table tbody tr:nth-child(odd) {
+.table-alternate-row
+  .markdown-rendered
+  .table-view-table
+  tbody
+  tr:nth-child(odd) {
   background-color: var(--background-hover);
 }
-.cm-embed-block.markdown-rendered .block-language-dataview tbody tr:nth-child(odd):hover,
-.cm-embed-block.markdown-rendered .block-language-dataview tbody tr:nth-child(even):hover,
+.cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr:nth-child(odd):hover,
+.cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr:nth-child(even):hover,
 .markdown-rendered table tbody tr:nth-child(odd):hover,
 .markdown-rendered table tbody tr:nth-child(even):hover,
 .markdown-rendered .table-view-table tbody tr:nth-child(odd):hover,
 .markdown-rendered .table-view-table tbody tr:nth-child(even):hover {
   background-color: var(--table-hover-highlight-color);
 }
-.table-hover-row .cm-embed-block.markdown-rendered .block-language-dataview tbody tr:hover,
+.table-hover-row
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr:hover,
 .table-hover-row .markdown-rendered table tbody tr:hover,
 .table-hover-row .markdown-rendered .table-view-table tbody tr:hover {
   background-color: transparent;
@@ -2693,7 +2939,12 @@ body {
   tr
   td:nth-child(odd),
 .table-alternate-column .markdown-rendered table tbody tr td:nth-child(odd),
-.table-alternate-column .markdown-rendered .table-view-table tbody tr td:nth-child(odd) {
+.table-alternate-column
+  .markdown-rendered
+  .table-view-table
+  tbody
+  tr
+  td:nth-child(odd) {
   background-color: var(--background-hover);
   border-top: 1px solid var(--background-hover);
   border-bottom: 1px solid var(--background-hover);
@@ -2704,8 +2955,18 @@ body {
   tbody
   tr
   td,
-.table-row-border:not(.table-sticky-headers) .markdown-rendered table tbody tr td,
-.table-row-border:not(.table-sticky-headers) .markdown-rendered .table-view-table tbody tr td {
+.table-row-border:not(.table-sticky-headers)
+  .markdown-rendered
+  table
+  tbody
+  tr
+  td,
+.table-row-border:not(.table-sticky-headers)
+  .markdown-rendered
+  .table-view-table
+  tbody
+  tr
+  td {
   border-top: 1px solid var(--border-subtle-1);
   border-bottom: 1px solid var(--border-subtle-1);
 }
@@ -2716,7 +2977,12 @@ body {
   tr
   td,
 .table-sticky-headers.table-row-border .markdown-rendered table tbody tr td,
-.table-sticky-headers.table-row-border .markdown-rendered .table-view-table tbody tr td {
+.table-sticky-headers.table-row-border
+  .markdown-rendered
+  .table-view-table
+  tbody
+  tr
+  td {
   border-bottom: 1px solid var(--border-subtle-1);
 }
 .table-nums table {
@@ -2769,7 +3035,9 @@ body {
 .workspace-leaf-content[data-type="graph"] .view-header {
   height: unset;
 }
-.workspace-leaf-content[data-type="style-settings"] .view-header .view-header-title,
+.workspace-leaf-content[data-type="style-settings"]
+  .view-header
+  .view-header-title,
 .workspace-leaf-content[data-type="graph"] .view-header .view-header-title {
   visibility: hidden;
 }
@@ -2778,7 +3046,10 @@ body {
   position: unset;
   margin-top: unset;
 }
-body.pane-relief-pane-numbering .workspace-split .workspace-leaf .view-header-icon,
+body.pane-relief-pane-numbering
+  .workspace-split
+  .workspace-leaf
+  .view-header-icon,
 body.pane-relief-pane-numbering
   .workspace-split
   .workspace-leaf-content[data-type="style-settings"]
@@ -2980,8 +3251,8 @@ body {
   counter-set: h1-counter;
 }
 .heading-counter-0 .el-h3 h3:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-0 .el-h4 {
@@ -2990,8 +3261,8 @@ body {
   counter-set: h1-counter;
 }
 .heading-counter-0 .el-h4 h4:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-0 .el-h5 {
@@ -3000,8 +3271,8 @@ body {
   counter-set: h1-counter;
 }
 .heading-counter-0 .el-h5 h5:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-0 .el-h6 {
@@ -3009,8 +3280,9 @@ body {
   counter-set: h1-counter;
 }
 .heading-counter-0 .el-h6 h6:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "."
+    counter(h6-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-1 .el-h1 {
@@ -3034,8 +3306,8 @@ body {
   counter-reset: h4-counter;
 }
 .heading-counter-1 .el-h3 h3:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-1 .el-h4 {
@@ -3043,8 +3315,8 @@ body {
   counter-reset: h5-counter;
 }
 .heading-counter-1 .el-h4 h4:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-1 .el-h5 {
@@ -3052,16 +3324,17 @@ body {
   counter-reset: h6-counter;
 }
 .heading-counter-1 .el-h5 h5:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
   padding-right: 0.5em;
 }
 .heading-counter-1 .el-h6 {
   counter-increment: h6-counter;
 }
 .heading-counter-1 .el-h6 h6:before {
-  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "."
-    counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) "";
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "."
+    counter(h6-counter) "";
   padding-right: 0.5em;
 }
 body {
@@ -3107,7 +3380,8 @@ input[type="checkbox"] {
   border: 1.5px solid var(--checkbox-border-color);
   width: var(--checkbox-size);
   height: var(--checkbox-size);
-  transition: box-shadow var(--duration-moderate-2) var(--motion-entrance-expressive);
+  transition: box-shadow var(--duration-moderate-2)
+    var(--motion-entrance-expressive);
 }
 input[type="checkbox"]:hover {
   box-shadow: 0 0 0 3px rgba(var(--checkbox-color-rgb), 0.2);
@@ -3338,27 +3612,37 @@ div.search-input-container:before {
   top: 0;
   color: var(--text-muted);
 }
-.markdown-source-view.is-live-preview progress[value^="1"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="2"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="3"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="1"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="2"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="3"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="1"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="2"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="3"]::-webkit-progress-value {
   background-color: var(--red);
 }
-.markdown-source-view.is-live-preview progress[value^="4"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="5"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="6"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="7"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="4"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="5"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="6"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="7"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="4"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="5"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="6"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="7"]::-webkit-progress-value {
   background-color: var(--orange);
 }
-.markdown-source-view.is-live-preview progress[value^="8"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="9"]::-webkit-progress-value,
-.markdown-source-view.is-live-preview progress[value^="100"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="8"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="9"]::-webkit-progress-value,
+.markdown-source-view.is-live-preview
+  progress[value^="100"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="8"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="9"]::-webkit-progress-value,
 .markdown-preview-view progress[value^="100"]::-webkit-progress-value {
@@ -3384,8 +3668,10 @@ div.search-input-container:before {
     padding-left: 208px;
   }
 }
-.markdown-source-view.is-live-preview progress:not([value]):indeterminate::-webkit-progress-bar,
-.markdown-preview-view progress:not([value]):indeterminate::-webkit-progress-bar {
+.markdown-source-view.is-live-preview
+  progress:not([value]):indeterminate::-webkit-progress-bar,
+.markdown-preview-view
+  progress:not([value]):indeterminate::-webkit-progress-bar {
   background-color: var(--cyan);
   width: 32px;
 }
@@ -3467,7 +3753,8 @@ body {
 }
 .checkbox-container {
   --shadow-color: 0deg 0% 61%;
-  --toggle-shadow: inset 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.57),
+  --toggle-shadow:
+    inset 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.57),
     inset 0px 0.8px 0.7px -2px hsl(var(--shadow-color) / 0.43),
     inset 0px 2.1px 1.9px -4px hsl(var(--shadow-color) / 0.29);
   border-radius: var(--toggle-radius);
@@ -3594,10 +3881,16 @@ body {
   font-size: 80%;
   font-weight: bold;
 }
-.code-lines .markdown-rendered pre:not(pre.frontmatter) code[class*="language-"] {
+.code-lines
+  .markdown-rendered
+  pre:not(pre.frontmatter)
+  code[class*="language-"] {
   padding-left: 24px;
 }
-.code-lines .markdown-rendered pre:not(pre.frontmatter) code[class*="language-"]:before {
+.code-lines
+  .markdown-rendered
+  pre:not(pre.frontmatter)
+  code[class*="language-"]:before {
   box-sizing: inherit;
   overflow: hidden;
   position: absolute;
@@ -3621,7 +3914,9 @@ body {
 .code-label .markdown-rendered pre[class*="language-"]:not(pre.frontmatter) {
   padding-top: 32px;
 }
-.code-label .markdown-rendered pre[class*="language-"]:not(pre.frontmatter)::before {
+.code-label
+  .markdown-rendered
+  pre[class*="language-"]:not(pre.frontmatter)::before {
   content: attr(class);
   font-size: 0.75em;
   color: var(--text-muted);
@@ -3630,7 +3925,10 @@ body {
   right: 8px;
   clip-path: polygon(9ch 0, 100% 0, 100% 100%, 9ch 100%);
 }
-.code-lines.code-label .markdown-rendered :not(pre.frontmatter) code[class*="language-"]:before {
+.code-lines.code-label
+  .markdown-rendered
+  :not(pre.frontmatter)
+  code[class*="language-"]:before {
   clip-path: polygon(0 0, 4ch 0, 4ch calc(100% - 40px), 0 calc(100% - 40px));
 }
 .callout[data-callout*="column"] {
@@ -3893,7 +4191,7 @@ input[type="checkbox"][data-task="S"]::after {
 li[data-task="-"] input[type="checkbox"]:checked::after,
 input[type="checkbox"][data-task="-"]::after {
   background-color: var(--red);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' fill='rgb(8, 8, 8)' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:none;%7D%3C/style%3E%3Cpath id='inner-path' d='M9,10.6L10.6,9L23,21.4L21.4,23L9,10.6z' class='st0'/%3E%3Cpath d='M6.1,6.1C0.6,11.5,0.6,20.3,6,25.8c0,0,0.1,0.1,0.1,0.1c5.4,5.5,14.2,5.5,19.7,0.1c0,0,0.1-0.1,0.1-0.1	c5.5-5.4,5.5-14.2,0.1-19.7c0,0-0.1-0.1-0.1-0.1C20.5,0.6,11.7,0.6,6.2,6C6.2,6,6.1,6.1,6.1,6.1z M24.8,17.1l-17.6,0v-2.2l17.6,0	V17.1z'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0,0h32v32H0V0z' class='st0'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon' fill='rgb(8, 8, 8)' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:none;%7D%3C/style%3E%3Cpath id='inner-path' d='M9,10.6L10.6,9L23,21.4L21.4,23L9,10.6z' class='st0'/%3E%3Cpath d='M6.1,6.1C0.6,11.5,0.6,20.3,6,25.8c0,0,0.1,0.1,0.1,0.1c5.4,5.5,14.2,5.5,19.7,0.1c0,0,0.1-0.1,0.1-0.1    c5.5-5.4,5.5-14.2,0.1-19.7c0,0-0.1-0.1-0.1-0.1C20.5,0.6,11.7,0.6,6.2,6C6.2,6,6.1,6.1,6.1,6.1z M24.8,17.1l-17.6,0v-2.2l17.6,0    V17.1z'/%3E%3Cpath id='_Transparent_Rectangle_' d='M0,0h32v32H0V0z' class='st0'/%3E%3C/svg%3E");
 }
 li[data-task=">"] input[type="checkbox"]:checked::after,
 input[type="checkbox"][data-task=">"]::after {
@@ -4960,31 +5258,49 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .callout[data-callout="grid"] .callout-content img {
   max-height: 300px;
 }
-.callout[data-callout="grid"][data-callout-metadata="100"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="100"]
+  .callout-content
+  img {
   max-height: 100px;
 }
-.callout[data-callout="grid"][data-callout-metadata="150"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="150"]
+  .callout-content
+  img {
   max-height: 150px;
 }
-.callout[data-callout="grid"][data-callout-metadata="200"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="200"]
+  .callout-content
+  img {
   max-height: 200px;
 }
-.callout[data-callout="grid"][data-callout-metadata="250"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="250"]
+  .callout-content
+  img {
   max-height: 250px;
 }
-.callout[data-callout="grid"][data-callout-metadata="300"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="300"]
+  .callout-content
+  img {
   max-height: 300px;
 }
-.callout[data-callout="grid"][data-callout-metadata="350"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="350"]
+  .callout-content
+  img {
   max-height: 350px;
 }
-.callout[data-callout="grid"][data-callout-metadata="400"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="400"]
+  .callout-content
+  img {
   max-height: 400px;
 }
-.callout[data-callout="grid"][data-callout-metadata="450"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="450"]
+  .callout-content
+  img {
   max-height: 450px;
 }
-.callout[data-callout="grid"][data-callout-metadata="500"] .callout-content img {
+.callout[data-callout="grid"][data-callout-metadata="500"]
+  .callout-content
+  img {
   max-height: 500px;
 }
 .nord.theme-light p > code,
@@ -5862,7 +6178,10 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-light pre:not(.frontmatter) .token.inserted,
 .one-dark.theme-light pre:not(.frontmatter) .token.regex,
 .one-dark.theme-light pre:not(.frontmatter) .token.attr-value,
-.one-dark.theme-light pre:not(.frontmatter) .token.attr-value > .token.punctuation,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .token.attr-value
+  > .token.punctuation,
 .one-dark.theme-light .HyperMD-codeblock .cm-builtin,
 .one-dark.theme-light .HyperMD-codeblock .cm-string,
 .one-dark.theme-light .HyperMD-codeblock .cm-string-2,
@@ -5873,7 +6192,10 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-light .HyperMD-codeblock .token.inserted,
 .one-dark.theme-light .HyperMD-codeblock .token.regex,
 .one-dark.theme-light .HyperMD-codeblock .token.attr-value,
-.one-dark.theme-light .HyperMD-codeblock .token.attr-value > .token.punctuation {
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .token.attr-value
+  > .token.punctuation {
   color: hsl(119deg, 34%, 47%);
 }
 .one-dark.theme-light p > code .cm-operator,
@@ -5907,15 +6229,30 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-light .HyperMD-codeblock .token.url {
   color: hsl(198deg, 99%, 37%);
 }
-.one-dark.theme-light p > code .token.attr-value > .token.punctuation.attr-equals,
-.one-dark.theme-light p > code .token.special-attr > .token.attr-value > .token.value.css,
-.one-dark.theme-light pre:not(.frontmatter) .token.attr-value > .token.punctuation.attr-equals,
+.one-dark.theme-light
+  p
+  > code
+  .token.attr-value
+  > .token.punctuation.attr-equals,
+.one-dark.theme-light
+  p
+  > code
+  .token.special-attr
+  > .token.attr-value
+  > .token.value.css,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .token.attr-value
+  > .token.punctuation.attr-equals,
 .one-dark.theme-light
   pre:not(.frontmatter)
   .token.special-attr
   > .token.attr-value
   > .token.value.css,
-.one-dark.theme-light .HyperMD-codeblock .token.attr-value > .token.punctuation.attr-equals,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .token.attr-value
+  > .token.punctuation.attr-equals,
 .one-dark.theme-light
   .HyperMD-codeblock
   .token.special-attr
@@ -5936,26 +6273,53 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-light p > code .language-css .token.function,
 .one-dark.theme-light p > code .language-css .token.url > .token.function,
 .one-dark.theme-light pre:not(.frontmatter) .language-css .token.function,
-.one-dark.theme-light pre:not(.frontmatter) .language-css .token.url > .token.function,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-css
+  .token.url
+  > .token.function,
 .one-dark.theme-light .HyperMD-codeblock .language-css .token.function,
-.one-dark.theme-light .HyperMD-codeblock .language-css .token.url > .token.function {
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-css
+  .token.url
+  > .token.function {
   color: hsl(198deg, 99%, 37%);
 }
 .one-dark.theme-light p > code .language-css .token.url > .token.string.url,
-.one-dark.theme-light pre:not(.frontmatter) .language-css .token.url > .token.string.url,
-.one-dark.theme-light .HyperMD-codeblock .language-css .token.url > .token.string.url {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-css
+  .token.url
+  > .token.string.url,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-css
+  .token.url
+  > .token.string.url {
   color: hsl(119deg, 34%, 47%);
 }
 .one-dark.theme-light p > code .language-css .token.important,
 .one-dark.theme-light p > code .language-css .token.atrule .token.rule,
 .one-dark.theme-light pre:not(.frontmatter) .language-css .token.important,
-.one-dark.theme-light pre:not(.frontmatter) .language-css .token.atrule .token.rule,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-css
+  .token.atrule
+  .token.rule,
 .one-dark.theme-light .HyperMD-codeblock .language-css .token.important,
-.one-dark.theme-light .HyperMD-codeblock .language-css .token.atrule .token.rule {
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-css
+  .token.atrule
+  .token.rule {
   color: hsl(301deg, 63%, 40%);
 }
 .one-dark.theme-light p > code .language-javascript .token.operator,
-.one-dark.theme-light pre:not(.frontmatter) .language-javascript .token.operator,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-javascript
+  .token.operator,
 .one-dark.theme-light .HyperMD-codeblock .language-javascript .token.operator {
   color: hsl(301deg, 63%, 40%);
 }
@@ -5992,16 +6356,29 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 }
 .one-dark.theme-light p > code .language-markdown .token.url,
 .one-dark.theme-light p > code .language-markdown .token.url > .token.operator,
-.one-dark.theme-light p > code .language-markdown .token.url-reference.url > .token.string,
+.one-dark.theme-light
+  p
+  > code
+  .language-markdown
+  .token.url-reference.url
+  > .token.string,
 .one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.url,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.url > .token.operator,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.operator,
 .one-dark.theme-light
   pre:not(.frontmatter)
   .language-markdown
   .token.url-reference.url
   > .token.string,
 .one-dark.theme-light .HyperMD-codeblock .language-markdown .token.url,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.url > .token.operator,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.operator,
 .one-dark.theme-light
   .HyperMD-codeblock
   .language-markdown
@@ -6010,57 +6387,145 @@ body:not(.no-sanctum-ions) svg.lucide-history {
   color: hsl(230deg, 8%, 24%);
 }
 .one-dark.theme-light p > code .language-markdown .token.url > .token.content,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.url > .token.content,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.url > .token.content {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.content,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.content {
   color: hsl(221deg, 87%, 60%);
 }
 .one-dark.theme-light p > code .language-markdown .token.url > .token.url,
 .one-dark.theme-light p > code .language-markdown .token.url-reference.url,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.url > .token.url,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.url-reference.url,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.url > .token.url,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.url-reference.url {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.url,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url-reference.url,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.url,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url-reference.url {
   color: hsl(198deg, 99%, 37%);
 }
 .one-dark.theme-light p > code .language-markdown .token.blockquote.punctuation,
 .one-dark.theme-light p > code .language-markdown .token.hr.punctuation,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.blockquote.punctuation,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.hr.punctuation,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.blockquote.punctuation,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.hr.punctuation {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.blockquote.punctuation,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.hr.punctuation,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.blockquote.punctuation,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.hr.punctuation {
   color: hsl(230deg, 4%, 64%);
   font-style: italic;
 }
 .one-dark.theme-light p > code .language-markdown .token.code-snippet,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.code-snippet,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.code-snippet {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.code-snippet,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.code-snippet {
   color: hsl(119deg, 34%, 47%);
 }
 .one-dark.theme-light p > code .language-markdown .token.bold .token.content,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.bold .token.content,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.bold .token.content {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.bold
+  .token.content,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.bold
+  .token.content {
   color: hsl(35deg, 99%, 36%);
 }
 .one-dark.theme-light p > code .language-markdown .token.italic .token.content,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.italic .token.content,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.italic .token.content {
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.italic
+  .token.content,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.italic
+  .token.content {
   color: hsl(301deg, 63%, 40%);
 }
 .one-dark.theme-light p > code .language-markdown .token.strike .token.content,
-.one-dark.theme-light p > code .language-markdown .token.strike .token.punctuation,
+.one-dark.theme-light
+  p
+  > code
+  .language-markdown
+  .token.strike
+  .token.punctuation,
 .one-dark.theme-light p > code .language-markdown .token.list.punctuation,
-.one-dark.theme-light p > code .language-markdown .token.title.important > .token.punctuation,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.strike .token.content,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.strike .token.punctuation,
-.one-dark.theme-light pre:not(.frontmatter) .language-markdown .token.list.punctuation,
+.one-dark.theme-light
+  p
+  > code
+  .language-markdown
+  .token.title.important
+  > .token.punctuation,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.strike
+  .token.content,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.strike
+  .token.punctuation,
+.one-dark.theme-light
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.list.punctuation,
 .one-dark.theme-light
   pre:not(.frontmatter)
   .language-markdown
   .token.title.important
   > .token.punctuation,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.strike .token.content,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.strike .token.punctuation,
-.one-dark.theme-light .HyperMD-codeblock .language-markdown .token.list.punctuation,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.strike
+  .token.content,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.strike
+  .token.punctuation,
+.one-dark.theme-light
+  .HyperMD-codeblock
+  .language-markdown
+  .token.list.punctuation,
 .one-dark.theme-light
   .HyperMD-codeblock
   .language-markdown
@@ -6220,7 +6685,10 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-dark pre:not(.frontmatter) .token.inserted,
 .one-dark.theme-dark pre:not(.frontmatter) .token.regex,
 .one-dark.theme-dark pre:not(.frontmatter) .token.attr-value,
-.one-dark.theme-dark pre:not(.frontmatter) .token.attr-value > .token.punctuation,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .token.attr-value
+  > .token.punctuation,
 .one-dark.theme-dark .HyperMD-codeblock .cm-string,
 .one-dark.theme-dark .HyperMD-codeblock .cm-string-2,
 .one-dark.theme-dark .HyperMD-codeblock .cm-builtin,
@@ -6265,16 +6733,35 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-dark .HyperMD-codeblock .token.url {
   color: hsl(187deg, 47%, 55%);
 }
-.one-dark.theme-dark p > code .token.attr-value > .token.punctuation.attr-equals,
-.one-dark.theme-dark p > code .token.special-attr > .token.attr-value > .token.value.css,
-.one-dark.theme-dark pre:not(.frontmatter) .token.attr-value > .token.punctuation.attr-equals,
+.one-dark.theme-dark
+  p
+  > code
+  .token.attr-value
+  > .token.punctuation.attr-equals,
+.one-dark.theme-dark
+  p
+  > code
+  .token.special-attr
+  > .token.attr-value
+  > .token.value.css,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .token.attr-value
+  > .token.punctuation.attr-equals,
 .one-dark.theme-dark
   pre:not(.frontmatter)
   .token.special-attr
   > .token.attr-value
   > .token.value.css,
-.one-dark.theme-dark .HyperMD-codeblock .token.attr-value > .token.punctuation.attr-equals,
-.one-dark.theme-dark .HyperMD-codeblock .token.special-attr > .token.attr-value > .token.value.css {
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .token.attr-value
+  > .token.punctuation.attr-equals,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .token.special-attr
+  > .token.attr-value
+  > .token.value.css {
   color: hsl(220deg, 14%, 71%);
 }
 .one-dark.theme-dark p > code .language-css .token.selector,
@@ -6290,22 +6777,46 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 .one-dark.theme-dark p > code .language-css .token.function,
 .one-dark.theme-dark p > code .language-css .token.url > .token.function,
 .one-dark.theme-dark pre:not(.frontmatter) .language-css .token.function,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.url > .token.function,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-css
+  .token.url
+  > .token.function,
 .one-dark.theme-dark .HyperMD-codeblock .language-css .token.function,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.url > .token.function {
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-css
+  .token.url
+  > .token.function {
   color: hsl(187deg, 47%, 55%);
 }
 .one-dark.theme-dark p > code .language-css .token.url > .token.string.url,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.url > .token.string.url,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.url > .token.string.url {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-css
+  .token.url
+  > .token.string.url,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-css
+  .token.url
+  > .token.string.url {
   color: hsl(95deg, 38%, 62%);
 }
 .one-dark.theme-dark p > code .language-css .token.important,
 .one-dark.theme-dark p > code .language-css .token.atrule .token.rule,
 .one-dark.theme-dark pre:not(.frontmatter) .language-css .token.important,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.atrule .token.rule,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-css
+  .token.atrule
+  .token.rule,
 .one-dark.theme-dark .HyperMD-codeblock .language-css .token.important,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.atrule .token.rule {
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-css
+  .token.atrule
+  .token.rule {
   color: hsl(286deg, 60%, 67%);
 }
 .one-dark.theme-dark p > code .language-javascript .token.operator,
@@ -6346,16 +6857,29 @@ body:not(.no-sanctum-ions) svg.lucide-history {
 }
 .one-dark.theme-dark p > code .language-markdown .token.url,
 .one-dark.theme-dark p > code .language-markdown .token.url > .token.operator,
-.one-dark.theme-dark p > code .language-markdown .token.url-reference.url > .token.string,
+.one-dark.theme-dark
+  p
+  > code
+  .language-markdown
+  .token.url-reference.url
+  > .token.string,
 .one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url > .token.operator,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.operator,
 .one-dark.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.url-reference.url
   > .token.string,
 .one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.operator,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.operator,
 .one-dark.theme-dark
   .HyperMD-codeblock
   .language-markdown
@@ -6364,57 +6888,142 @@ body:not(.no-sanctum-ions) svg.lucide-history {
   color: hsl(220deg, 14%, 71%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.url > .token.content,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url > .token.content,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.content {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.content,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.content {
   color: hsl(207deg, 82%, 66%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.url > .token.url,
 .one-dark.theme-dark p > code .language-markdown .token.url-reference.url,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url > .token.url,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.url,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url-reference.url {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url
+  > .token.url,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.url-reference.url,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url
+  > .token.url,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.url-reference.url {
   color: hsl(187deg, 47%, 55%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.blockquote.punctuation,
 .one-dark.theme-dark p > code .language-markdown .token.hr.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.blockquote.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.hr.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.blockquote.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.hr.punctuation {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.blockquote.punctuation,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.hr.punctuation,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.blockquote.punctuation,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.hr.punctuation {
   color: hsl(220deg, 10%, 40%);
   font-style: italic;
 }
 .one-dark.theme-dark p > code .language-markdown .token.code-snippet,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.code-snippet,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.code-snippet,
 .one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.code-snippet {
   color: hsl(95deg, 38%, 62%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.bold .token.content,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.bold .token.content,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.bold .token.content {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.bold
+  .token.content,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.bold
+  .token.content {
   color: hsl(29deg, 54%, 61%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.italic .token.content,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.italic .token.content,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.italic .token.content {
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.italic
+  .token.content,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.italic
+  .token.content {
   color: hsl(286deg, 60%, 67%);
 }
 .one-dark.theme-dark p > code .language-markdown .token.strike .token.content,
-.one-dark.theme-dark p > code .language-markdown .token.strike .token.punctuation,
+.one-dark.theme-dark
+  p
+  > code
+  .language-markdown
+  .token.strike
+  .token.punctuation,
 .one-dark.theme-dark p > code .language-markdown .token.list.punctuation,
-.one-dark.theme-dark p > code .language-markdown .token.title.important > .token.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.strike .token.content,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.strike .token.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.list.punctuation,
+.one-dark.theme-dark
+  p
+  > code
+  .language-markdown
+  .token.title.important
+  > .token.punctuation,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.strike
+  .token.content,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.strike
+  .token.punctuation,
+.one-dark.theme-dark
+  pre:not(.frontmatter)
+  .language-markdown
+  .token.list.punctuation,
 .one-dark.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.title.important
   > .token.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.strike .token.content,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.strike .token.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.list.punctuation,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.strike
+  .token.content,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.strike
+  .token.punctuation,
+.one-dark.theme-dark
+  .HyperMD-codeblock
+  .language-markdown
+  .token.list.punctuation,
 .one-dark.theme-dark
   .HyperMD-codeblock
   .language-markdown
@@ -8090,7 +8699,8 @@ body {
   box-shadow: none;
   color: var(--text-faint);
 }
-.kanban-plugin__lane-header-wrapper button.kanban-plugin__lane-settings-button:hover {
+.kanban-plugin__lane-header-wrapper
+  button.kanban-plugin__lane-settings-button:hover {
   background-color: var(--background-modifier-hover);
   color: var(--text-muted);
 }
@@ -8156,7 +8766,9 @@ button.kanban-plugin__new-item-button:hover {
   flex-wrap: wrap;
   overflow-y: scroll;
 }
-body:is(.is-focused, :not(.is-focused)) .workspace-leaf-content[data-type="kanban"] .view-header {
+body:is(.is-focused, :not(.is-focused))
+  .workspace-leaf-content[data-type="kanban"]
+  .view-header {
   height: unset;
   background-color: var(--background-primary);
 }
@@ -8188,115 +8800,115 @@ body:is(.is-focused, :not(.is-focused))
 name: Sanctum
 id: sanctum
 settings:
-	-
-		id: light-mode-contrast-mode
-		title: Light mode contrast mode
-		type: class-select
-		allowEmpty: false
-		default: 'sanctum-default-light'
-		options:
-			-
-				label: Default
-				value: 'sanctum-default-light'
-			-
-				label: Contrast
-				value: 'sanctum-contrast-light'
-			-
-				label: White
-				value: 'sanctum-white'
-	-
-		id: dark-mode-contrast-mode
-		title: Dark mode contrast mode
-		type: class-select
-		allowEmpty: false
-		default: 'sanctum-default-dark'
-		options:
-			-
-				label: Default
-				value: 'sanctum-default-dark'
-			-
-				label: Contrast
-				value: 'sanctum-contrast-dark'
-			-
-				label: True Black
-				value: 'sanctum-black'
-	-			
-		id: color-accent-rgb-l
-		title: Accent color light mode
-		type: variable-select
-		default: '246, 141, 69'
-		options:
-			-
-				label: 'Orange'
-				value: '246, 141, 69'
-			-
-				label: 'Red'
-				value: '243, 90, 55'
-			-
-				label: 'Pink'
-				value: '236, 90, 118'
-			-
-				label: 'Lavender'
-				value: '165, 119, 218'
-			-
-				label: 'Blue'
-				value: '83, 112, 159'
-			-
-				label: 'Cyan'
-				value: '99, 149, 156'
-			-
-				label: 'Viridian'
-				value: '92, 153, 124'
-			-
-				label: 'Green'
-				value: '102, 153, 97'
-			-
-				label: 'Pistachio'
-				value: '141, 147, 25'
-			-
-				label: 'Yellow'
-				value: '243, 189, 79'
-	-			
-		id: color-accent-rgb-d
-		title: Accent color dark mode
-		type: variable-select
-		default: '102, 153, 97'
-		options:
-			-
-				label: 'Orange'
-				value: '246, 141, 69'
-			-
-				label: 'Red'
-				value: '243, 90, 55'
-			-
-				label: 'Pink'
-				value: '236, 90, 118'
-			-
-				label: 'Lavender'
-				value: '165, 119, 218'
-			-
-				label: 'Blue'
-				value: '83, 112, 159'
-			-
-				label: 'Cyan'
-				value: '99, 149, 156'
-			-
-				label: 'Viridian'
-				value: '92, 153, 124'
-			-
-				label: 'Green'
-				value: '102, 153, 97'
-			-
-				label: 'Pistachio'
-				value: '141, 147, 25'
-			-
-				label: 'Yellow'
-				value: '243, 189, 79'
-	-
-		id: font-editor-theme
-		title: Editor font
-		type: variable-text
-		default: '??'
+    -
+        id: light-mode-contrast-mode
+        title: Light mode contrast mode
+        type: class-select
+        allowEmpty: false
+        default: 'sanctum-default-light'
+        options:
+            -
+                label: Default
+                value: 'sanctum-default-light'
+            -
+                label: Contrast
+                value: 'sanctum-contrast-light'
+            -
+                label: White
+                value: 'sanctum-white'
+    -
+        id: dark-mode-contrast-mode
+        title: Dark mode contrast mode
+        type: class-select
+        allowEmpty: false
+        default: 'sanctum-default-dark'
+        options:
+            -
+                label: Default
+                value: 'sanctum-default-dark'
+            -
+                label: Contrast
+                value: 'sanctum-contrast-dark'
+            -
+                label: True Black
+                value: 'sanctum-black'
+    -            
+        id: color-accent-rgb-l
+        title: Accent color light mode
+        type: variable-select
+        default: '246, 141, 69'
+        options:
+            -
+                label: 'Orange'
+                value: '246, 141, 69'
+            -
+                label: 'Red'
+                value: '243, 90, 55'
+            -
+                label: 'Pink'
+                value: '236, 90, 118'
+            -
+                label: 'Lavender'
+                value: '165, 119, 218'
+            -
+                label: 'Blue'
+                value: '83, 112, 159'
+            -
+                label: 'Cyan'
+                value: '99, 149, 156'
+            -
+                label: 'Viridian'
+                value: '92, 153, 124'
+            -
+                label: 'Green'
+                value: '102, 153, 97'
+            -
+                label: 'Pistachio'
+                value: '141, 147, 25'
+            -
+                label: 'Yellow'
+                value: '243, 189, 79'
+    -            
+        id: color-accent-rgb-d
+        title: Accent color dark mode
+        type: variable-select
+        default: '102, 153, 97'
+        options:
+            -
+                label: 'Orange'
+                value: '246, 141, 69'
+            -
+                label: 'Red'
+                value: '243, 90, 55'
+            -
+                label: 'Pink'
+                value: '236, 90, 118'
+            -
+                label: 'Lavender'
+                value: '165, 119, 218'
+            -
+                label: 'Blue'
+                value: '83, 112, 159'
+            -
+                label: 'Cyan'
+                value: '99, 149, 156'
+            -
+                label: 'Viridian'
+                value: '92, 153, 124'
+            -
+                label: 'Green'
+                value: '102, 153, 97'
+            -
+                label: 'Pistachio'
+                value: '141, 147, 25'
+            -
+                label: 'Yellow'
+                value: '243, 189, 79'
+    -
+        id: font-editor-theme
+        title: Editor font
+        type: variable-text
+        default: '??'
     - 
         id: file-line-width
         title: Readable line width
@@ -8306,1367 +8918,1367 @@ settings:
         min: 30
         max: 70
         step: 1
-		format: 'rem'
-	-
-		id: active-line-highlighting
-		title: Active line highlighting
-		type: heading
-		level: 1
-		collapsed: true
-	-
-			id: active-line-accent
-			title: Active Line Highlighting
-			type: variable-select
-			default: 'transparent'
-			options:
-					-
-						label: 'No highlighting'
-						value: 'transparent'
-					-
-						label: 'Subtle highlight'
-						value: 'var(--background-hover)'
-					-
-						label: 'Accent color highlight'
-						value: 'rgba(var(--color-accent-rgb), .3)'
-	-
-		id: asides
-		title: Asides
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: aside-counter
-				title: Toggle aside counter [Beta]
-				type: class-toggle
-	-
-				id: aside-border
-				title: Toggle aside borders
-				type: class-toggle
-	-
-				id: aside-border-color
-				title: Aside border color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: aside-text-color
-				title: Aside text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: aside-background
-				title: Aside background color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: aside-background-hover
-				title: Aside background hover color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-		id: blockquotes
-		title: Blockquotes
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: blockquote-border-color
-				title: Blockquote border color
-				type: variable-themed-color
-				format: hex
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: blockquote-border-thickness
-				title: Blockquote border thickness (px)
-				type: variable-number
-				default: 0
-				format: 'px'
-	-
-				id: blockquote-marker
-				title: Toggle blockquote short divider
-				description: Adds a visual element to the top of blockquotes. Its is affected by the border options above.
-				type: class-toggle
-	-
-				id: blockquote-border
-				title: Toggle blockquote horizontal dividers
-				description: Adds 2 horizontal rules to the top and bottom of blockquotes. This option replaces blockquote short dividers.
-				type: class-toggle
-	-
-				id: blockquote-color
-				title: Blockquote text color
-				type: variable-themed-color
-				format: hex
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: blockquote-size
-				title: Blockquote text size (rem)
-				type: variable-number
-				default: .9
-				format: 'rem'
-	-
-				id: blockquote-font-style
-				title: Blockquote font style
-				type: variable-select
-				default: 'normal'
-				options:
-					- 'normal'
-					- 'italic'
-					- 'oblique'
-	-
-		id: callouts
-		title: Callouts
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: callout-border-width
-				title: Callout border width (px)
-				type: variable-number
-				default: 0
-				format: 'px'
-	-
-				id: callout-border-opacity
-				title: Callout border color opacity (%)
-				type: variable-number
-				default: 30
-				format: '%'
-	-
-		id: code-blocks
-		title: Code
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: code-lines
-				title: Toggle code block line numbers
-				description: Adds line numbers to code blocks
-				type: class-toggle
-	-
-				id: code-label
-				title: Toggle code block labels
-				description: Adds programming language labels to code blocks
-				type: class-toggle
-	-
-				id: code-border
-				title: Code borders
-				description: Adds a subtle border around code blocks
-				type: class-toggle
-	-
-				id: code-background
-				title: Code background color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-normal-inline
-				title: Inline Code text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: syntax-highlighting
-				title: Syntax Highlighting color scheme
-				description: This will only affect code block text colors.
-				type: class-select
-				allowEmpty: false
-				default: '#'
-				options:
-					-
-						label: 'Default'
-						value: '#'
-					-
-						label: 'Nord'
-						value: 'nord'
-					-
-						label: 'Dracula'
-						value: 'dracula'
-					-
-						label: 'One Dark/Light'
-						value: 'one-dark'
-					-
-						label: 'Solarized'
-						value: 'solarized'
-					-
-						label: 'Gruvbox'
-						value: 'gruvbox'
-					-
-						label: 'Material'
-						value: 'material'
-	-
-			id: custom-syntax-colors
-			title: Custom syntax highlighting
-			description: Note that because Obsidian uses 2 different processes for code syntax in Reading and Editing view, syntax highlighting is bound to not be a 100% match between views.
-			type: heading
-			level: 2
-			collapsed: true
-	-
-				id: code-normal
-				title: Code normal text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-comment
-				title: Code comment text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-punctuation
-				title: Code punctuation text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-tag
-				title: Code tag text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-value
-				title: Code value text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-string
-				title: Code string text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-property
-				title: Code text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-function
-				title: Code function text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-keyword
-				title: Code keyword text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: code-important
-				title: Code important text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-		id: embeds
-		title: Embeds / Transclusions
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: clean-embeds
-				title: Clean embeds
-				description: It is recommended to have every setting below set to default while clean embeds is toggled on.
-				type: class-toggle
-	-
-				id: embed-background
-				title: Embed background color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: embed-border-color
-				title: Embed border color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: embed-border-width
-				title: Embed left border width (px)
-				type: variable-number
-				default: 1
-				format: 'px'
-	-
-		id: emphasis
-		title: Emphasis
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: highlight
-				title: Highlight background color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: bold-color
-				title: Bold text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: italic-color
-				title: Italic text color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: '#'
-				default-dark: '#'
-	-
-		id: file-explorer
-		title: File Explorer
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: hide-vault-title
-				title: Hide vault title
-				type: class-toggle
-	-
-				id: wrap-nav-titles
-				title: Wrap titles
-				type: class-toggle
-	-
-		id: headings
-		title: Headings
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: heading-outline
-				title: Heading outline
-				description: Select the heading outline method you prefer. This will only affect Reading View. This feature is reliant on the Contextual Typography plugin.
-				type: class-select
-				allowEmpty: false
-				default: '#'
-				options:
-					-
-						label: 'Default'
-						value: '#'
-					-
-						label: 'H1 is Lvl 0'
-						value: 'heading-counter-0'
-					-
-						label: 'H1 is lvl 1'
-						value: 'heading-counter-1'
-	-
-				id: headings-1
-				title: Level 1 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h1-font
-						title: H1 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h1-color
-						title: H1 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(24.4, 90.8%, 61.8%)'
-	-
-						id: h1-line
-						title: H1 divider line
-						type: class-toggle
-	-
-						id: h1-size
-						title: H1 size (em)
-						type: variable-number
-						default: 2
-						format: 'em'
-	-
-						id: h1-weight
-						title: H1 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h1-variant
-						title: H1 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h1-style
-						title: H1 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-				id: headings-2
-				title: Level 2 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h2-font
-						title: H2 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h2-color
-						title: H2 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(40.2, 87.2%, 63.1%)'
-	-
-						id: h2-line
-						title: H2 divider line
-						type: class-toggle
-	-
-						id: h2-size
-						title: H2 size (em)
-						type: variable-number
-						default: 1.75
-						format: 'em'
-	-
-						id: h2-weight
-						title: H2 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h2-variant
-						title: H2 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h2-style
-						title: H2 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-				id: headings-3
-				title: Level 3 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h3-font
-						title: H3 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h3-color
-						title: H3 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(63, 70.9%, 33.7%)'
-	-
-						id: h3-line
-						title: H3 divider line
-						type: class-toggle
-	-
-						id: h3-size
-						title: H3 size (em)
-						type: variable-number
-						default: 1.5
-						format: 'em'
-	-
-						id: h3-weight
-						title: H3 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h3-variant
-						title: H3 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h3-style
-						title: H3 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-				id: headings-4
-				title: Level 4 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h4-font
-						title: H4 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h4-color
-						title: H4 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(151.5, 24.9%, 48%)'
-	-
-						id: h4-line
-						title: H4 divider line
-						type: class-toggle
-	-
-						id: h4-size
-						title: H4 size (em)
-						type: variable-number
-						default: 1.25
-						format: 'em'
-	-
-						id: h4-weight
-						title: H4 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h4-variant
-						title: H4 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h4-style
-						title: H4 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-				id: headings-5
-				title: Level 5 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h5-font
-						title: H5 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h5-color
-						title: H5 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(217.1, 31.4%, 47.5%)'
-	-
-						id: h5-line
-						title: H5 divider line
-						type: class-toggle
-	-
-						id: h5-size
-						title: H5 size (em)
-						type: variable-number
-						default: 1.125
-						format: 'em'
-	-
-						id: h5-weight
-						title: H5 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h5-variant
-						title: H5 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h5-style
-						title: H5 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-				id: headings-6
-				title: Level 6 headings
-				type: heading
-				level: 2
-				collapsed: true
-	-	
-						id: h6-font
-						title: H6 font
-						type: variable-text
-						default: 'Inter, sans-serif'
-	-	
-						id: h6-color
-						title: H6 color
-						description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
-						type: variable-color
-						opacity: false
-						format: hsl
-						default: 'hsl(268deg, 57%, 66%)'
-	-
-						id: h6-line
-						title: H6 divider line
-						type: class-toggle
-	-
-						id: h6-size
-						title: H6 size (em)
-						type: variable-number
-						default: 1
-						format: 'em'
-	-
-						id: h6-weight
-						title: H6 weight
-						description: Available weights depend on the font itself.
-						type: variable-select
-						default: '600'
-						options:
-							- '100'
-							- '200'
-							- '300'
-							- '400'
-							- '500'
-							- '600'
-							- '700'
-							- '800'
-							- '900'
-	-
-						id: h6-variant
-						title: H6 font variant
-						description: Available font variants depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'small-caps'
-							- 'all-small-caps'
-							- 'petite-caps'
-							- 'all-petite-caps'
-							- 'titling-caps'
-	-
-						id: h6-style
-						title: H6 font style
-						description: Available font styles depend on the font itself.
-						type: variable-select
-						default: 'normal'
-						options:
-							- 'normal'
-							- 'italic'
-							- 'oblique'
-	-
-		id: indentation-guides
-		title: Indentation guides
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: indentation-guide-active
-				title: Indentation guide active color
-				type: variable-select
-				default: 'rgba(var(--mono-rgb-100), 0.3)'
-				options:
-					-
-						label: Default
-						value: 'rgba(var(--mono-rgb-100), 0.3)'
-					-
-						label: Accent color
-						value: 'var(--interactive)'
-	-
-		id: links
-		title: Links
-		type: heading
-		level: 1
-		collapsed: true
-	-
-			id: internal-links
-			title: Internal links
-			type: heading
-			level: 2
-			collapsed: false
-	-
-					id: link-color
-					title: Internal link color
-					type: variable-themed-color
-					format: rgb
-					opacity: false
-					default-light: 'rgb(var(--interactive-accent-rgb))'
-					default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-					id: link-color-hover
-					title: Internal link color (hover)
-					type: variable-themed-color
-					format: rgb
-					opacity: false
-					default-light: 'rgb(var(--interactive-accent-rgb))'
-					default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-					id: link-decoration
-					title: Internal link decoration
-					type: variable-select
-					default: 'underline'
-					options:
-						-
-							label: Underline
-							value: 'underline'
-						-
-							label: None
-							value: 'none'
-	-
-					id: link-decoration-hover
-					title: Internal link decoration (hover)
-					type: variable-select
-					default: 'underline'
-					options:
-						-
-							label: Underline
-							value: 'underline'
-						-
-							label: None
-							value: 'none'
-	-
-				id: link-style
-				title: Internal link style
-				type: variable-select
-				default: 'normal'
-				options:
-					- 'normal'
-					- 'italic'
-	-
-				id: link-text-transform
-				title: Internal link text transform
-				type: variable-select
-				default: 'none'
-				options:
-					- 'none'
-					- 'capitalize'
-					- 'uppercase'
-					- 'lowercase'
-	-
-			id: external-links
-			title: External links
-			type: heading
-			level: 2
-			collapsed: false
-	-
-					id: link-external-color
-					title: External link color
-					type: variable-themed-color
-					format: rgb
-					opacity: false
-					default-light: 'rgb(var(--interactive-accent-rgb))'
-					default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-					id: link-external-color-hover
-					title: External link color (hover)
-					type: variable-themed-color
-					format: rgb
-					opacity: false
-					default-light: 'rgb(var(--interactive-accent-rgb))'
-					default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-					id: link-external-decoration
-					title: External link decoration
-					type: variable-select
-					default: 'underline'
-					options:
-						-
-							label: Underline
-							value: 'underline'
-						-
-							label: None
-							value: 'none'
-	-
-					id: link-external-decoration-hover
-					title: External link decoration (hover)
-					type: variable-select
-					default: 'underline'
-					options:
-						-
-							label: Underline
-							value: 'underline'
-						-
-							label: None
-							value: 'none'
-	-
-				id: link-external-style
-				title: External link style
-				type: variable-select
-				default: 'normal'
-				options:
-					- 'normal'
-					- 'italic'
-	-
-		id: lists
-		title: Lists & Tasks
-		type: heading
-		level: 1
-		collapsed: true
-	-			
-			id: checkbox-color-rgb
-			title: Checkbox color
-			type: variable-select
-			default: '102, 153, 97'
-			options:
-				-
-					label: 'Orange'
-					value: '246, 141, 69'
-				-
-					label: 'Red'
-					value: '197, 65, 40'
-				-
-					label: 'Pink'
-					value: '236, 90, 118'
-				-
-					label: 'Lavender'
-					value: '165, 119, 218'
-				-
-					label: 'Blue'
-					value: '83, 112, 159'
-				-
-					label: 'Cyan'
-					value: '99, 149, 156'
-				-
-					label: 'Viridian'
-					value: '92, 153, 124'
-				-
-					label: 'Green'
-					value: '102, 153, 97'
-				-
-					label: 'Pistachio'
-					value: '141, 147, 25'
-				-
-					label: 'Yellow'
-					value: '243, 189, 79'
-	-
-				id: checkbox-radius
-				title: Checkbox shape
-				type: variable-select
-				allowEmpty: false
-				default: '16px'
-				options:
-					-
-						label: circle
-						value: '16px'
-					-
-						label: square
-						value: '2px'
-	-
-				id: checklist-done-decoration
-				title: Strike completed tasks
-				type: variable-select
-				default: 'line-through'
-				options:
-					-
-						label: Strike
-						value: 'line-through'
-					-
-						label: No strike
-						value: 'none'
-	-
-				id: checklist-done-color
-				title: Completed task text color
-				type: variable-select
-				default: 'var(--text-faint)'
-				options:
-					-
-						label: Default
-						value: 'var(--text-faint)'
-					-
-						label: Normal text
-						value: 'var(--text-normal)'
-	-
-				id: checklist-done-strike-color
-				title: Completed task text strike color
-				type: variable-select
-				default: 'var(--text-faint)'
-				options:
-					-
-						label: Default
-						value: 'var(--text-faint)'
-					-
-						label: Normal text
-						value: 'var(--text-normal)'
-					-
-						label: Red
-						value: 'var(--red)'
-	-
-				id: list-indent
-				title: Nested list indentation (em)
-				type: variable-number
-				default: 1.5
-				format: 'em'
-	-
-				id: list-spacing
-				title: List item spacing (em)
-				type: variable-number
-				default: 0.075
-				format: 'em'
-	-
-				id: odd-marker
-				title: Odd numbered list marker style
-				type: class-select
-				allowEmpty: false
-				default: 'default-marker-odd'
-				options:
-					-
-						label: em-dash
-						value: 'default-marker-odd'
-					-
-						label: hyphen
-						value: 'alternate-marker-odd-1'
-					-
-						label: bullet operator
-						value: 'alternate-marker-odd-2'
-					-
-						label: square bullet
-						value: 'alternate-marker-odd-3'
-					-
-						label: bullet
-						value: 'alternate-marker-odd-4'
-					-
-						label: ring
-						value: 'alternate-marker-odd-5'
-					-
-						label: triangule
-						value: 'alternate-marker-odd-6'
-	-
-				id: even-marker
-				title: Odd numbered list marker style
-				type: class-select
-				allowEmpty: false
-				default: 'default-marker-even'
-				options:
-					-
-						label: em-dash
-						value: 'alternate-marker-even-1'
-					-
-						label: hyphen
-						value: 'alternate-marker-even-2'
-					-
-						label: bullet operator
-						value: 'alternate-marker-even-3'
-					-
-						label: square bullet
-						value: 'default-marker-even'
-					-
-						label: bullet
-						value: 'alternate-marker-even-4'
-					-
-						label: ring
-						value: 'alternate-marker-even-5'
-					-
-						label: triangule
-						value: 'alternate-marker-even-6'
-	-
-				id: step-list
-				title: Ordered list marker style
-				description: This feature will only affect Reading View.
-				type: class-select
-				allowEmpty: false
-				default: '#'
-				options:
-					-
-						label: 'Default'
-						value: '#'
-					-
-						label: 'Step list'
-						value: 'step-list-0'
-					-
-						label: 'Outlined List'
-						value: 'step-list-1'
-	-
-		id: tables
-		title: Tables
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: table-cell-border
-				title: Cell borders
-				type: class-toggle
-	-
-				id: table-row-border
-				title: Row lines
-				type: class-toggle
-	-
-				id: table-column-border
-				title: Column lines
-				type: class-toggle
-	-
-				id: table-alternate-row
-				title: Striped rows
-				type: class-toggle
-	-
-				id: table-alternate-column
-				title: Striped columns
-				type: class-toggle
-	-
-				id: table-hover-row
-				title: Disable active row highlighting
-				type: class-toggle
-	-
-				id: table-hover-highlight-color
-				title: Active row highlight color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
-				default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
-	-
-				id: table-single-rows
-				title: Disable row text wrap
-				type: class-toggle
-	-
-				id: table-sticky-headers
-				title: Sticky headers
-				type: class-toggle
-	-
-				id: table-sticky-height
-				title: Sticky header table max height (px)
-				type: variable-number
-				default: 600
-				format: 'px'
-	-
-				id: table-tabular-figures
-				title: Tabular figures
-				type: class-toggle
-	-
-				id: table-nums
-				title: Row numbers
-				type: class-toggle
-	-
-		id: tags
-		title: Tags
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: tag-radius
-				title: Tag Shape
-				type: variable-select
-				default: '2em'
-				allowEmpty: false
-				options:
-					-
-						label: 'Pill'
-						value: '2em'
-					-
-						label: 'Rounded'
-						value: '4px'
-					-
-						label: 'Square'
-						value: '0em'
-	-
-				id: tag-border-width
-				title: Tag border
-				type: variable-select
-				default: '0px'
-				allowEmpty: false
-				options:
-					-
-						label: 'None'
-						value: '0px'
-					-
-						label: 'Thin'
-						value: '1px'
-					-
-						label: 'Thick'
-						value: '2px'
-	-
-				id: tag-color
-				title: Tag text color
-				type: variable-themed-color
-				format: rgb
-				opacity: false
-				default-light: 'rgb(var(--interactive-accent-rgb))'
-				default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-				id: tag-color-hover
-				title: Tag text color (hover)
-				type: variable-themed-color
-				format: rgb
-				opacity: false
-				default-light: 'rgb(var(--interactive-accent-rgb))'
-				default-dark: 'rgb(var(--interactive-accent-rgb))'
-	-
-				id: tag-background
-				title: Tag background color
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
-				default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
-	-
-				id: tag-background-hover
-				title: Tag background color (hover)
-				type: variable-themed-color
-				format: rgb
-				opacity: true
-				default-light: 'rgba(var(--interactive-accent-rgb), 0.25)'
-				default-dark: 'rgba(var(--interactive-accent-rgb), 0.25)'
-	-
-				id: tag-decoration
-				title: Tag text decoration
-				type: variable-select
-				default: 'none'
-				allowEmpty: false
-				options:
-					-
-						label: 'None'
-						value: 'none'
-					-
-						label: 'Thin underline'
-						value: 'underline 1px'
-					-
-						label: 'Thick underline'
-						value: 'underline 2px'
-	-
-				id: tag-decoration-hover
-				title: Tag text decoration (hover)
-				type: variable-select
-				default: 'none'
-				allowEmpty: false
-				options:
-					-
-						label: 'None'
-						value: 'none'
-					-
-						label: 'Thin underline'
-						value: 'underline 1px'
-					-
-						label: 'Thick underline'
-						value: 'underline 2px'
-	-
-		id: tab-title-bar
-		title: Tab title bar
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: sticky-view-actions
-				title: Disable floating tab title bar buttons
-				description: Reveals the entirety of the tab title bar, like native obsidian.
-				type: class-toggle
-	-
-		id: tab-nav-items
-		title: Navigation Items
-		type: heading
-		level: 1
-		collapsed: true
-	-
-				id: nav-folder-indicators
-				title: Replace folder icons with regular chevron/arrows
-				type: class-toggle
-	-
-				id: colorful-active-nav
-				title: Disable colorful active nav items
-				type: class-toggle
-	-
-		id: plugins
-		title: Plugins
-		type: heading
-		level: 1
-		collapsed: true
-	-
-			id: calendar
-			title: Calendar
-			type: heading
-			level: 2
-			collapsed: true
-	-
-				id: stendig
-				title: Stendig-like layout [Beta]
-				description: Calendar layout inspired by Massimo Vignelli's famous Stendig calendars
-				type: class-toggle
-	-
-				id: calendar-flip
-				title: Flip calendar Month + Year title
-				type: class-toggle
-	-
-				id: calendar-dot
-				title: Calendar dot color
-				type: variable-themed-color
-				format: hex
-				default-light: '#'
-				default-dark: '#'
-	-
-				id: calendar-dot-hover
-				title: Calendar dot color on hover
-				type: variable-themed-color
-				format: hex
-				default-light: '#'
-				default-dark: '#'
-	-
-			id: kanban
-			title: Kanban
-			type: heading
-			level: 2
-			collapsed: true
-	-
-				id: wrap-kanban-lanes
-				title: Wrap kanban lanes
-				type: class-toggle
-	-
-		id: advanced
-		title: Advanced Settings
-		type: heading
-		level: 1
-		collapsed: false
-	-
-			id: no-sanctum-icons
-			title: Disable custom icons
-			type: class-toggle
+        format: 'rem'
+    -
+        id: active-line-highlighting
+        title: Active line highlighting
+        type: heading
+        level: 1
+        collapsed: true
+    -
+            id: active-line-accent
+            title: Active Line Highlighting
+            type: variable-select
+            default: 'transparent'
+            options:
+                    -
+                        label: 'No highlighting'
+                        value: 'transparent'
+                    -
+                        label: 'Subtle highlight'
+                        value: 'var(--background-hover)'
+                    -
+                        label: 'Accent color highlight'
+                        value: 'rgba(var(--color-accent-rgb), .3)'
+    -
+        id: asides
+        title: Asides
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: aside-counter
+                title: Toggle aside counter [Beta]
+                type: class-toggle
+    -
+                id: aside-border
+                title: Toggle aside borders
+                type: class-toggle
+    -
+                id: aside-border-color
+                title: Aside border color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: aside-text-color
+                title: Aside text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: aside-background
+                title: Aside background color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: aside-background-hover
+                title: Aside background hover color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+        id: blockquotes
+        title: Blockquotes
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: blockquote-border-color
+                title: Blockquote border color
+                type: variable-themed-color
+                format: hex
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: blockquote-border-thickness
+                title: Blockquote border thickness (px)
+                type: variable-number
+                default: 0
+                format: 'px'
+    -
+                id: blockquote-marker
+                title: Toggle blockquote short divider
+                description: Adds a visual element to the top of blockquotes. Its is affected by the border options above.
+                type: class-toggle
+    -
+                id: blockquote-border
+                title: Toggle blockquote horizontal dividers
+                description: Adds 2 horizontal rules to the top and bottom of blockquotes. This option replaces blockquote short dividers.
+                type: class-toggle
+    -
+                id: blockquote-color
+                title: Blockquote text color
+                type: variable-themed-color
+                format: hex
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: blockquote-size
+                title: Blockquote text size (rem)
+                type: variable-number
+                default: .9
+                format: 'rem'
+    -
+                id: blockquote-font-style
+                title: Blockquote font style
+                type: variable-select
+                default: 'normal'
+                options:
+                    - 'normal'
+                    - 'italic'
+                    - 'oblique'
+    -
+        id: callouts
+        title: Callouts
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: callout-border-width
+                title: Callout border width (px)
+                type: variable-number
+                default: 0
+                format: 'px'
+    -
+                id: callout-border-opacity
+                title: Callout border color opacity (%)
+                type: variable-number
+                default: 30
+                format: '%'
+    -
+        id: code-blocks
+        title: Code
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: code-lines
+                title: Toggle code block line numbers
+                description: Adds line numbers to code blocks
+                type: class-toggle
+    -
+                id: code-label
+                title: Toggle code block labels
+                description: Adds programming language labels to code blocks
+                type: class-toggle
+    -
+                id: code-border
+                title: Code borders
+                description: Adds a subtle border around code blocks
+                type: class-toggle
+    -
+                id: code-background
+                title: Code background color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-normal-inline
+                title: Inline Code text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: syntax-highlighting
+                title: Syntax Highlighting color scheme
+                description: This will only affect code block text colors.
+                type: class-select
+                allowEmpty: false
+                default: '#'
+                options:
+                    -
+                        label: 'Default'
+                        value: '#'
+                    -
+                        label: 'Nord'
+                        value: 'nord'
+                    -
+                        label: 'Dracula'
+                        value: 'dracula'
+                    -
+                        label: 'One Dark/Light'
+                        value: 'one-dark'
+                    -
+                        label: 'Solarized'
+                        value: 'solarized'
+                    -
+                        label: 'Gruvbox'
+                        value: 'gruvbox'
+                    -
+                        label: 'Material'
+                        value: 'material'
+    -
+            id: custom-syntax-colors
+            title: Custom syntax highlighting
+            description: Note that because Obsidian uses 2 different processes for code syntax in Reading and Editing view, syntax highlighting is bound to not be a 100% match between views.
+            type: heading
+            level: 2
+            collapsed: true
+    -
+                id: code-normal
+                title: Code normal text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-comment
+                title: Code comment text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-punctuation
+                title: Code punctuation text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-tag
+                title: Code tag text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-value
+                title: Code value text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-string
+                title: Code string text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-property
+                title: Code text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-function
+                title: Code function text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-keyword
+                title: Code keyword text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: code-important
+                title: Code important text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+        id: embeds
+        title: Embeds / Transclusions
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: clean-embeds
+                title: Clean embeds
+                description: It is recommended to have every setting below set to default while clean embeds is toggled on.
+                type: class-toggle
+    -
+                id: embed-background
+                title: Embed background color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: embed-border-color
+                title: Embed border color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: embed-border-width
+                title: Embed left border width (px)
+                type: variable-number
+                default: 1
+                format: 'px'
+    -
+        id: emphasis
+        title: Emphasis
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: highlight
+                title: Highlight background color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: bold-color
+                title: Bold text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: italic-color
+                title: Italic text color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: '#'
+                default-dark: '#'
+    -
+        id: file-explorer
+        title: File Explorer
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: hide-vault-title
+                title: Hide vault title
+                type: class-toggle
+    -
+                id: wrap-nav-titles
+                title: Wrap titles
+                type: class-toggle
+    -
+        id: headings
+        title: Headings
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: heading-outline
+                title: Heading outline
+                description: Select the heading outline method you prefer. This will only affect Reading View. This feature is reliant on the Contextual Typography plugin.
+                type: class-select
+                allowEmpty: false
+                default: '#'
+                options:
+                    -
+                        label: 'Default'
+                        value: '#'
+                    -
+                        label: 'H1 is Lvl 0'
+                        value: 'heading-counter-0'
+                    -
+                        label: 'H1 is lvl 1'
+                        value: 'heading-counter-1'
+    -
+                id: headings-1
+                title: Level 1 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h1-font
+                        title: H1 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h1-color
+                        title: H1 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(24.4, 90.8%, 61.8%)'
+    -
+                        id: h1-line
+                        title: H1 divider line
+                        type: class-toggle
+    -
+                        id: h1-size
+                        title: H1 size (em)
+                        type: variable-number
+                        default: 2
+                        format: 'em'
+    -
+                        id: h1-weight
+                        title: H1 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h1-variant
+                        title: H1 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h1-style
+                        title: H1 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+                id: headings-2
+                title: Level 2 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h2-font
+                        title: H2 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h2-color
+                        title: H2 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(40.2, 87.2%, 63.1%)'
+    -
+                        id: h2-line
+                        title: H2 divider line
+                        type: class-toggle
+    -
+                        id: h2-size
+                        title: H2 size (em)
+                        type: variable-number
+                        default: 1.75
+                        format: 'em'
+    -
+                        id: h2-weight
+                        title: H2 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h2-variant
+                        title: H2 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h2-style
+                        title: H2 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+                id: headings-3
+                title: Level 3 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h3-font
+                        title: H3 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h3-color
+                        title: H3 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(63, 70.9%, 33.7%)'
+    -
+                        id: h3-line
+                        title: H3 divider line
+                        type: class-toggle
+    -
+                        id: h3-size
+                        title: H3 size (em)
+                        type: variable-number
+                        default: 1.5
+                        format: 'em'
+    -
+                        id: h3-weight
+                        title: H3 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h3-variant
+                        title: H3 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h3-style
+                        title: H3 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+                id: headings-4
+                title: Level 4 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h4-font
+                        title: H4 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h4-color
+                        title: H4 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(151.5, 24.9%, 48%)'
+    -
+                        id: h4-line
+                        title: H4 divider line
+                        type: class-toggle
+    -
+                        id: h4-size
+                        title: H4 size (em)
+                        type: variable-number
+                        default: 1.25
+                        format: 'em'
+    -
+                        id: h4-weight
+                        title: H4 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h4-variant
+                        title: H4 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h4-style
+                        title: H4 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+                id: headings-5
+                title: Level 5 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h5-font
+                        title: H5 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h5-color
+                        title: H5 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(217.1, 31.4%, 47.5%)'
+    -
+                        id: h5-line
+                        title: H5 divider line
+                        type: class-toggle
+    -
+                        id: h5-size
+                        title: H5 size (em)
+                        type: variable-number
+                        default: 1.125
+                        format: 'em'
+    -
+                        id: h5-weight
+                        title: H5 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h5-variant
+                        title: H5 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h5-style
+                        title: H5 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+                id: headings-6
+                title: Level 6 headings
+                type: heading
+                level: 2
+                collapsed: true
+    -    
+                        id: h6-font
+                        title: H6 font
+                        type: variable-text
+                        default: 'Inter, sans-serif'
+    -    
+                        id: h6-color
+                        title: H6 color
+                        description: For reverting back to default text color, click "Cancel" inside the color picker, and then click the "Restore default" button next to it.
+                        type: variable-color
+                        opacity: false
+                        format: hsl
+                        default: 'hsl(268deg, 57%, 66%)'
+    -
+                        id: h6-line
+                        title: H6 divider line
+                        type: class-toggle
+    -
+                        id: h6-size
+                        title: H6 size (em)
+                        type: variable-number
+                        default: 1
+                        format: 'em'
+    -
+                        id: h6-weight
+                        title: H6 weight
+                        description: Available weights depend on the font itself.
+                        type: variable-select
+                        default: '600'
+                        options:
+                            - '100'
+                            - '200'
+                            - '300'
+                            - '400'
+                            - '500'
+                            - '600'
+                            - '700'
+                            - '800'
+                            - '900'
+    -
+                        id: h6-variant
+                        title: H6 font variant
+                        description: Available font variants depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'small-caps'
+                            - 'all-small-caps'
+                            - 'petite-caps'
+                            - 'all-petite-caps'
+                            - 'titling-caps'
+    -
+                        id: h6-style
+                        title: H6 font style
+                        description: Available font styles depend on the font itself.
+                        type: variable-select
+                        default: 'normal'
+                        options:
+                            - 'normal'
+                            - 'italic'
+                            - 'oblique'
+    -
+        id: indentation-guides
+        title: Indentation guides
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: indentation-guide-active
+                title: Indentation guide active color
+                type: variable-select
+                default: 'rgba(var(--mono-rgb-100), 0.3)'
+                options:
+                    -
+                        label: Default
+                        value: 'rgba(var(--mono-rgb-100), 0.3)'
+                    -
+                        label: Accent color
+                        value: 'var(--interactive)'
+    -
+        id: links
+        title: Links
+        type: heading
+        level: 1
+        collapsed: true
+    -
+            id: internal-links
+            title: Internal links
+            type: heading
+            level: 2
+            collapsed: false
+    -
+                    id: link-color
+                    title: Internal link color
+                    type: variable-themed-color
+                    format: rgb
+                    opacity: false
+                    default-light: 'rgb(var(--interactive-accent-rgb))'
+                    default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                    id: link-color-hover
+                    title: Internal link color (hover)
+                    type: variable-themed-color
+                    format: rgb
+                    opacity: false
+                    default-light: 'rgb(var(--interactive-accent-rgb))'
+                    default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                    id: link-decoration
+                    title: Internal link decoration
+                    type: variable-select
+                    default: 'underline'
+                    options:
+                        -
+                            label: Underline
+                            value: 'underline'
+                        -
+                            label: None
+                            value: 'none'
+    -
+                    id: link-decoration-hover
+                    title: Internal link decoration (hover)
+                    type: variable-select
+                    default: 'underline'
+                    options:
+                        -
+                            label: Underline
+                            value: 'underline'
+                        -
+                            label: None
+                            value: 'none'
+    -
+                id: link-style
+                title: Internal link style
+                type: variable-select
+                default: 'normal'
+                options:
+                    - 'normal'
+                    - 'italic'
+    -
+                id: link-text-transform
+                title: Internal link text transform
+                type: variable-select
+                default: 'none'
+                options:
+                    - 'none'
+                    - 'capitalize'
+                    - 'uppercase'
+                    - 'lowercase'
+    -
+            id: external-links
+            title: External links
+            type: heading
+            level: 2
+            collapsed: false
+    -
+                    id: link-external-color
+                    title: External link color
+                    type: variable-themed-color
+                    format: rgb
+                    opacity: false
+                    default-light: 'rgb(var(--interactive-accent-rgb))'
+                    default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                    id: link-external-color-hover
+                    title: External link color (hover)
+                    type: variable-themed-color
+                    format: rgb
+                    opacity: false
+                    default-light: 'rgb(var(--interactive-accent-rgb))'
+                    default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                    id: link-external-decoration
+                    title: External link decoration
+                    type: variable-select
+                    default: 'underline'
+                    options:
+                        -
+                            label: Underline
+                            value: 'underline'
+                        -
+                            label: None
+                            value: 'none'
+    -
+                    id: link-external-decoration-hover
+                    title: External link decoration (hover)
+                    type: variable-select
+                    default: 'underline'
+                    options:
+                        -
+                            label: Underline
+                            value: 'underline'
+                        -
+                            label: None
+                            value: 'none'
+    -
+                id: link-external-style
+                title: External link style
+                type: variable-select
+                default: 'normal'
+                options:
+                    - 'normal'
+                    - 'italic'
+    -
+        id: lists
+        title: Lists & Tasks
+        type: heading
+        level: 1
+        collapsed: true
+    -            
+            id: checkbox-color-rgb
+            title: Checkbox color
+            type: variable-select
+            default: '102, 153, 97'
+            options:
+                -
+                    label: 'Orange'
+                    value: '246, 141, 69'
+                -
+                    label: 'Red'
+                    value: '197, 65, 40'
+                -
+                    label: 'Pink'
+                    value: '236, 90, 118'
+                -
+                    label: 'Lavender'
+                    value: '165, 119, 218'
+                -
+                    label: 'Blue'
+                    value: '83, 112, 159'
+                -
+                    label: 'Cyan'
+                    value: '99, 149, 156'
+                -
+                    label: 'Viridian'
+                    value: '92, 153, 124'
+                -
+                    label: 'Green'
+                    value: '102, 153, 97'
+                -
+                    label: 'Pistachio'
+                    value: '141, 147, 25'
+                -
+                    label: 'Yellow'
+                    value: '243, 189, 79'
+    -
+                id: checkbox-radius
+                title: Checkbox shape
+                type: variable-select
+                allowEmpty: false
+                default: '16px'
+                options:
+                    -
+                        label: circle
+                        value: '16px'
+                    -
+                        label: square
+                        value: '2px'
+    -
+                id: checklist-done-decoration
+                title: Strike completed tasks
+                type: variable-select
+                default: 'line-through'
+                options:
+                    -
+                        label: Strike
+                        value: 'line-through'
+                    -
+                        label: No strike
+                        value: 'none'
+    -
+                id: checklist-done-color
+                title: Completed task text color
+                type: variable-select
+                default: 'var(--text-faint)'
+                options:
+                    -
+                        label: Default
+                        value: 'var(--text-faint)'
+                    -
+                        label: Normal text
+                        value: 'var(--text-normal)'
+    -
+                id: checklist-done-strike-color
+                title: Completed task text strike color
+                type: variable-select
+                default: 'var(--text-faint)'
+                options:
+                    -
+                        label: Default
+                        value: 'var(--text-faint)'
+                    -
+                        label: Normal text
+                        value: 'var(--text-normal)'
+                    -
+                        label: Red
+                        value: 'var(--red)'
+    -
+                id: list-indent
+                title: Nested list indentation (em)
+                type: variable-number
+                default: 1.5
+                format: 'em'
+    -
+                id: list-spacing
+                title: List item spacing (em)
+                type: variable-number
+                default: 0.075
+                format: 'em'
+    -
+                id: odd-marker
+                title: Odd numbered list marker style
+                type: class-select
+                allowEmpty: false
+                default: 'default-marker-odd'
+                options:
+                    -
+                        label: em-dash
+                        value: 'default-marker-odd'
+                    -
+                        label: hyphen
+                        value: 'alternate-marker-odd-1'
+                    -
+                        label: bullet operator
+                        value: 'alternate-marker-odd-2'
+                    -
+                        label: square bullet
+                        value: 'alternate-marker-odd-3'
+                    -
+                        label: bullet
+                        value: 'alternate-marker-odd-4'
+                    -
+                        label: ring
+                        value: 'alternate-marker-odd-5'
+                    -
+                        label: triangule
+                        value: 'alternate-marker-odd-6'
+    -
+                id: even-marker
+                title: Odd numbered list marker style
+                type: class-select
+                allowEmpty: false
+                default: 'default-marker-even'
+                options:
+                    -
+                        label: em-dash
+                        value: 'alternate-marker-even-1'
+                    -
+                        label: hyphen
+                        value: 'alternate-marker-even-2'
+                    -
+                        label: bullet operator
+                        value: 'alternate-marker-even-3'
+                    -
+                        label: square bullet
+                        value: 'default-marker-even'
+                    -
+                        label: bullet
+                        value: 'alternate-marker-even-4'
+                    -
+                        label: ring
+                        value: 'alternate-marker-even-5'
+                    -
+                        label: triangule
+                        value: 'alternate-marker-even-6'
+    -
+                id: step-list
+                title: Ordered list marker style
+                description: This feature will only affect Reading View.
+                type: class-select
+                allowEmpty: false
+                default: '#'
+                options:
+                    -
+                        label: 'Default'
+                        value: '#'
+                    -
+                        label: 'Step list'
+                        value: 'step-list-0'
+                    -
+                        label: 'Outlined List'
+                        value: 'step-list-1'
+    -
+        id: tables
+        title: Tables
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: table-cell-border
+                title: Cell borders
+                type: class-toggle
+    -
+                id: table-row-border
+                title: Row lines
+                type: class-toggle
+    -
+                id: table-column-border
+                title: Column lines
+                type: class-toggle
+    -
+                id: table-alternate-row
+                title: Striped rows
+                type: class-toggle
+    -
+                id: table-alternate-column
+                title: Striped columns
+                type: class-toggle
+    -
+                id: table-hover-row
+                title: Disable active row highlighting
+                type: class-toggle
+    -
+                id: table-hover-highlight-color
+                title: Active row highlight color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
+                default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
+    -
+                id: table-single-rows
+                title: Disable row text wrap
+                type: class-toggle
+    -
+                id: table-sticky-headers
+                title: Sticky headers
+                type: class-toggle
+    -
+                id: table-sticky-height
+                title: Sticky header table max height (px)
+                type: variable-number
+                default: 600
+                format: 'px'
+    -
+                id: table-tabular-figures
+                title: Tabular figures
+                type: class-toggle
+    -
+                id: table-nums
+                title: Row numbers
+                type: class-toggle
+    -
+        id: tags
+        title: Tags
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: tag-radius
+                title: Tag Shape
+                type: variable-select
+                default: '2em'
+                allowEmpty: false
+                options:
+                    -
+                        label: 'Pill'
+                        value: '2em'
+                    -
+                        label: 'Rounded'
+                        value: '4px'
+                    -
+                        label: 'Square'
+                        value: '0em'
+    -
+                id: tag-border-width
+                title: Tag border
+                type: variable-select
+                default: '0px'
+                allowEmpty: false
+                options:
+                    -
+                        label: 'None'
+                        value: '0px'
+                    -
+                        label: 'Thin'
+                        value: '1px'
+                    -
+                        label: 'Thick'
+                        value: '2px'
+    -
+                id: tag-color
+                title: Tag text color
+                type: variable-themed-color
+                format: rgb
+                opacity: false
+                default-light: 'rgb(var(--interactive-accent-rgb))'
+                default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                id: tag-color-hover
+                title: Tag text color (hover)
+                type: variable-themed-color
+                format: rgb
+                opacity: false
+                default-light: 'rgb(var(--interactive-accent-rgb))'
+                default-dark: 'rgb(var(--interactive-accent-rgb))'
+    -
+                id: tag-background
+                title: Tag background color
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
+                default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
+    -
+                id: tag-background-hover
+                title: Tag background color (hover)
+                type: variable-themed-color
+                format: rgb
+                opacity: true
+                default-light: 'rgba(var(--interactive-accent-rgb), 0.25)'
+                default-dark: 'rgba(var(--interactive-accent-rgb), 0.25)'
+    -
+                id: tag-decoration
+                title: Tag text decoration
+                type: variable-select
+                default: 'none'
+                allowEmpty: false
+                options:
+                    -
+                        label: 'None'
+                        value: 'none'
+                    -
+                        label: 'Thin underline'
+                        value: 'underline 1px'
+                    -
+                        label: 'Thick underline'
+                        value: 'underline 2px'
+    -
+                id: tag-decoration-hover
+                title: Tag text decoration (hover)
+                type: variable-select
+                default: 'none'
+                allowEmpty: false
+                options:
+                    -
+                        label: 'None'
+                        value: 'none'
+                    -
+                        label: 'Thin underline'
+                        value: 'underline 1px'
+                    -
+                        label: 'Thick underline'
+                        value: 'underline 2px'
+    -
+        id: tab-title-bar
+        title: Tab title bar
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: sticky-view-actions
+                title: Disable floating tab title bar buttons
+                description: Reveals the entirety of the tab title bar, like native obsidian.
+                type: class-toggle
+    -
+        id: tab-nav-items
+        title: Navigation Items
+        type: heading
+        level: 1
+        collapsed: true
+    -
+                id: nav-folder-indicators
+                title: Replace folder icons with regular chevron/arrows
+                type: class-toggle
+    -
+                id: colorful-active-nav
+                title: Disable colorful active nav items
+                type: class-toggle
+    -
+        id: plugins
+        title: Plugins
+        type: heading
+        level: 1
+        collapsed: true
+    -
+            id: calendar
+            title: Calendar
+            type: heading
+            level: 2
+            collapsed: true
+    -
+                id: stendig
+                title: Stendig-like layout [Beta]
+                description: Calendar layout inspired by Massimo Vignelli's famous Stendig calendars
+                type: class-toggle
+    -
+                id: calendar-flip
+                title: Flip calendar Month + Year title
+                type: class-toggle
+    -
+                id: calendar-dot
+                title: Calendar dot color
+                type: variable-themed-color
+                format: hex
+                default-light: '#'
+                default-dark: '#'
+    -
+                id: calendar-dot-hover
+                title: Calendar dot color on hover
+                type: variable-themed-color
+                format: hex
+                default-light: '#'
+                default-dark: '#'
+    -
+            id: kanban
+            title: Kanban
+            type: heading
+            level: 2
+            collapsed: true
+    -
+                id: wrap-kanban-lanes
+                title: Wrap kanban lanes
+                type: class-toggle
+    -
+        id: advanced
+        title: Advanced Settings
+        type: heading
+        level: 1
+        collapsed: false
+    -
+            id: no-sanctum-icons
+            title: Disable custom icons
+            type: class-toggle
 */
 /* @plugins
 core:

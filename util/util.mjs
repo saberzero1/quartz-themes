@@ -1,12 +1,10 @@
 import { themes } from "./../config.mjs"
 import {
-  splitCombinedRules,
-  combineIdenticalSelectors,
-  removeEmptyRules,
   getRuleDeclarations,
 } from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
+import { writePrettier } from "./writer.mjs"
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
@@ -78,6 +76,30 @@ export function getCurrentFolder() {
 }
 
 /**
+ * Retrieves the variations of a theme from the themes configuration.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {Object[]} An array of variations for the specified theme.
+ */
+export function getVariationsFromTheme(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["variations"]
+}
+
+/**
+ * Retrieves the names of variations for a specified theme.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {string[]} An array of variation names for the specified theme.
+ */
+export function getVariationNamesFromTheme(theme) {
+  // Get the variations for the specified theme
+  const variations = getVariationsFromTheme(theme)
+
+  // Map the variations to their names
+  return variations.map((variation) => variation.name)
+}
+
+/**
  * Retrieves the value associated with a given key in a dictionary.
  *
  * @param {Object} dictionary - The dictionary (JavaScript object) to search.
@@ -132,6 +154,34 @@ export function sanitizeFilenamePreservingEmojis(input) {
   sanitized = sanitized.replace(/-+$/gu, "")
 
   return sanitized
+}
+
+/**
+ * Removes all directories of a specified directory, but does not remove files within the root directory.
+ * This function is useful for clearing out a directory while preserving the root files.
+ *
+ * @param {string} dirPath - The path of the directory to clear.
+ * @throws {Error} If the directory cannot be accessed or if an error occurs during deletion.
+ */
+export function clearDirectories(dirPath) {
+  try {
+    // Read all items in the directory
+    const items = fs.readdirSync(dirPath)
+
+    // Iterate over each item and remove it if it's a directory
+    items.forEach((item) => {
+      const itemPath = path.join(dirPath, item)
+      const stats = fs.statSync(itemPath)
+
+      // Check if it's a directory
+      if (stats.isDirectory()) {
+        // Recursively remove the directory
+        clearDirectoryContents(itemPath)
+      }
+    })
+  } catch (error) {
+    throw new Error(`Unable to clear directory: ${error.message}`)
+  }
 }
 
 /**
@@ -381,10 +431,7 @@ export function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ru
 export function applyRuleToString(sourceString, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
   try {
     // Find the rule declarations for the specified selector
-    const ruleDeclarations =
-      ruleToExtract === ""
-        ? getRuleDeclarations(inputCSS, ruleSelector)
-        : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
+    const ruleDeclarations = getRuleOccurences(inputCSS, ruleSelector, ruleToExtract)
     if (ruleDeclarations) {
       // Apply the rule declarations to the specified file
       return replaceInString(sourceString, targetText, `${ruleDeclarations}\n\n`)
@@ -396,6 +443,19 @@ export function applyRuleToString(sourceString, ruleSelector, targetText, inputC
   }
 }
 
+/**
+ * Get all occurrences of a CSS rule in a given CSS string.
+ *
+ * @param {string} inputCSS - The CSS string to search for the rule.
+ * @param {string} ruleSelector - The CSS selector for the rule to be extracted.
+ * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
+ * @returns {string|null} A string containing all declarations for the specified rule selector.
+ */
+export function getRuleOccurences(inputCSS, ruleSelector, ruleToExtract = "") {
+  return ruleToExtract === ""
+    ? getRuleDeclarations(inputCSS, ruleSelector)
+    : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
+}
 
 /**
  * Get all files under a directory and return them as an array of strings.
