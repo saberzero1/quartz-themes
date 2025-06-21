@@ -1,0 +1,15 @@
+body.more-drag-desktop .view-header,
+body.more-drag-desktop .titlebar-inner,
+body.more-drag-desktop .workspace-ribbon.side-dock-ribbon {
+  -webkit-app-region: drag;
+}
+
+body.more-drag-desktop .mod-root .workspace-tab-header {
+  -webkit-app-region: drag;
+}
+
+body.more-drag-desktop .mod-root .workspace-tab-header .workspace-tab-header-inner-title {
+  -webkit-app-region: no-drag;
+  margin-bottom: -5px;
+  padding-bottom: 5px;
+}

@@ -18,13 +18,13 @@
 
 body {
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  /* 	Variables (Global) */
+  /*     Variables (Global) */
 
   /* ================================================================================================= */
-  /* 	Variables (Global) - Fonts */
+  /*     Variables (Global) - Fonts */
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Fonts - UI Sizes */
+  /*     Variables (Global) - Fonts - UI Sizes */
 
   --font-ui-unreadable: 8px;
   --font-ui-teeny: 10px;
@@ -69,7 +69,7 @@ body {
   --h6-weight: 100;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Fonts - Typeface */
+  /*     Variables (Global) - Fonts - Typeface */
   /*  If you don't have these then get from https://developer.apple.com/fonts/ */
 
   --font-monospace-default: "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
@@ -79,7 +79,7 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Fonts - Colours */
+  /*     Variables (Global) - Fonts - Colours */
 
   --text-faint: var(--color-base-60);
   --vault-name-color: var(--color-base-70);
@@ -87,10 +87,10 @@ body {
   /*--nav-item-color-hover: */
 
   /* ================================================================================================= */
-  /* 	Variables (Global) - Sizes */
+  /*     Variables (Global) - Sizes */
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Sizes - TO BE SORTED */
+  /*     Variables (Global) - Sizes - TO BE SORTED */
 
   --header-height: 50px;
   --file-line-width: 100%;
@@ -117,7 +117,7 @@ body {
   --icon-l-stroke-width: 1.25px;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Properties */
+  /*     Variables (Global) - Properties */
 
   --metadata-background: transparent;
   --metadata-display-reading: block;
@@ -168,7 +168,7 @@ body {
   --callout-content-background: transparent;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (Global) - Sizes - Radius */
+  /*     Variables (Global) - Sizes - Radius */
 
   --radius-none: 0px;
   --radius-xs: 1px;
@@ -184,20 +184,20 @@ body {
   --codeblock-radius: var(--radius-m);
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Checkbox - Size */
+  /*     Variables - Checkbox - Size */
 
   --checkbox-size: 10px;
   --checkbox-radius: var(--radius-round);
   --checkbox-margin-inline-start: 0.85em;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Checkbox - Colour */
+  /*     Variables - Checkbox - Colour */
   --checkbox-border-color: var(--color-base-50);
   --checkbox-border-color-hover: var(--color-base-highlight);
   --checklist-done-color: var(--color-base-60);
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Toggles - Dimensions (Large) */
+  /*     Variables - Toggles - Dimensions (Large) */
 
   --toggle-width: 25px;
   --toggle-radius: 13px;
@@ -206,53 +206,53 @@ body {
   --toggle-thumb-width: 13px;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Toggles - Dimensions (Small) */
+  /*     Variables - Toggles - Dimensions (Small) */
   --toggle-s-width: 25px;
   --toggle-s-thumb-height: 13px;
   --toggle-s-thumb-width: 13px;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Toggles - Styling */
+  /*     Variables - Toggles - Styling */
 
   --toggle-thumb-color: #ffffff;
   --toggle-s-border-width: 1px;
   --toggle-border-width: 1px;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Bullets/list-ul - Size */
+  /*     Variables - Bullets/list-ul - Size */
   --list-bullet-size: 0.4em;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Bullets/list-ul - Colours */
+  /*     Variables - Bullets/list-ul - Colours */
 
   --list-marker-color: var(--color-base-80);
   --list-marker-color-hover: var(--color-base-highlight);
   --list-marker-color-collapsed: var(--color-base-highlight);
   /* ================================================================================================= */
-  /* 	Variables (Global) - Colours */
+  /*     Variables (Global) - Colours */
   --titlebar-background: var(--color-base-17);
   --tab-container-background: var(--color-base-17);
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Ribbon - Hide SS */
+  /*     Variables - Ribbon - Hide SS */
 
   --ribbon-width: 0px;
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables - Ribbon - Colour */
+  /*     Variables - Ribbon - Colour */
 } /*end body*/
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Variables (theme-light) */
+/*     Variables (theme-light) */
 
 .theme-light {
   color-scheme: light;
 
   /* ================================================================================================= */
-  /* 	Variables (theme-light) - Colours */
+  /*     Variables (theme-light) - Colours */
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (theme-light) - Colours - Foundations */
+  /*     Variables (theme-light) - Colours - Foundations */
 
   --color-base-00: #ffffff;
   --color-base-05: #fafafa;
@@ -348,7 +348,7 @@ body {
   --text-highlight-bg: var(--color-base-verylowlight);
 
   /* ---------------------------------------------------------------------------------- */
-  /* 	Variables (theme-light) - Colours - highlight definitions */
+  /*     Variables (theme-light) - Colours - highlight definitions */
 
   /*--color-base-highlight: #4D89FF; #6C31E3FF;*/
   /*--color-base-lowlight: #B1D2FBFF; #CEB5F4FF;*/
@@ -360,7 +360,7 @@ body {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Variables (theme-dark) */
+/*     Variables (theme-dark) */
 
 .theme-dark {
   color-scheme: dark;
@@ -468,13 +468,13 @@ body {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Editor Frame */
+/*     Editor Frame */
 
 /* ================================================================================================= */
-/* 	Editor Frame - Styling */
+/*     Editor Frame - Styling */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Styling  - Sizing */
+/*     Editor Frame - Styling  - Sizing */
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
   max-width: 700px; /* SS */
@@ -488,7 +488,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Styling  - Colour and Layout */
+/*     Editor Frame - Styling  - Colour and Layout */
 
 .is-focused .workspace-leaf.mod-active .view-header-title {
   color: var(--color-base-00);
@@ -522,10 +522,10 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Frame - Breadcrumbs */
+/*     Editor Frame - Breadcrumbs */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Divider */
+/*     Editor Frame - Breadcrumbs  - Divider */
 
 .view-header-breadcrumb {
   top: 2px;
@@ -557,7 +557,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs - normal folder */
+/*     Editor Frame - Breadcrumbs - normal folder */
 .theme-light
   .workspace-split.mod-vertical.mod-root
   .view-header-title-parent
@@ -587,7 +587,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - folder notes */
+/*     Editor Frame - Breadcrumbs  - folder notes */
 
 .theme-light
   .workspace-split.mod-vertical.mod-root
@@ -604,7 +604,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - files */
+/*     Editor Frame - Breadcrumbs  - files */
 
 .view-header .view-header-title-container .view-header-title {
   background-color: var(--color-base-lowlight);
@@ -617,7 +617,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Template Folder */
+/*     Editor Frame - Breadcrumbs  - Template Folder */
 
 .theme-light
   .workspace-split.mod-vertical.mod-root
@@ -634,7 +634,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Template files */
+/*     Editor Frame - Breadcrumbs  - Template files */
 
 .theme-light
   .workspace-split.mod-vertical.mod-root
@@ -651,7 +651,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Attachments Folder */
+/*     Editor Frame - Breadcrumbs  - Attachments Folder */
 
 .theme-light
   .workspace-split.mod-vertical.mod-root
@@ -668,15 +668,15 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Breadcrumbs  - Attachment files */
+/*     Editor Frame - Breadcrumbs  - Attachment files */
 
 /* Not possible :( */
 
 /* ================================================================================================= */
-/* 	Editor Frame - Search and Replace */
+/*     Editor Frame - Search and Replace */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Search and Replace  - Search/Replace Pane */
+/*     Editor Frame - Search and Replace  - Search/Replace Pane */
 
 .cm-s-obsidian .document-search-container {
   margin-left: 0px;
@@ -698,7 +698,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Frame - Search and Replace  - Inline Highliting */
+/*     Editor Frame - Search and Replace  - Inline Highliting */
 
 .cm-s-obsidian span.obsidian-search-match-highlight,
 .cm-s-obsidian span.obsidian-search-match-highlight .cm-inline-code,
@@ -710,13 +710,13 @@ body {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Editor Content */
+/*     Editor Content */
 
 /* ================================================================================================= */
-/* 	Editor Content - Blank Page */
+/*     Editor Content - Blank Page */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Blank Page - General Styling */
+/*     Editor Content - Blank Page - General Styling */
 
 .empty-state {
   justify-content: flex-start;
@@ -738,20 +738,20 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Inline-Title */
+/*     Editor Content - Inline-Title */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Inline-Title - General */
+/*     Editor Content - Inline-Title - General */
 
 .inline-title {
   font-size: 1.5em;
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - YAML */
+/*     Editor Content - YAML */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - YAML - opening/closing lines (cm-def) */
+/*     Editor Content - YAML - opening/closing lines (cm-def) */
 
 .cm-line .cm-def.cm-hmd-frontmatter {
   visibility: collapse;
@@ -770,7 +770,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - YAML - key (cm-atom) */
+/*     Editor Content - YAML - key (cm-atom) */
 
 .cm-atom.cm-hmd-frontmatter {
   padding-left: 0px;
@@ -794,10 +794,10 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Embed (General) */
+/*     Editor Content - Embed (General) */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (General) - Remove ugly border shadow */
+/*     Editor Content - Embed (General) - Remove ugly border shadow */
 
 .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
   box-shadow: none;
@@ -806,7 +806,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (General) - Move edit button to left margin and stretch content to full (remaining) width*/
+/*     Editor Content - Embed (General) - Move edit button to left margin and stretch content to full (remaining) width*/
 
 .markdown-source-view.mod-cm6 .cm-embed-block {
   display: flex;
@@ -825,10 +825,10 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Embed (Callouts/Admonitions) */
+/*     Editor Content - Embed (Callouts/Admonitions) */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Standard Callouts */
+/*     Editor Content - Embed (Callouts/Admonitions) - Standard Callouts */
 .callout[data-callout="note"],
 .callout[data-callout="info"],
 .callout[data-callout="purpose"] {
@@ -1087,14 +1087,14 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Custom Metadata Callout */
+/*     Editor Content - Embed (Callouts/Admonitions) - Custom Metadata Callout */
 
 .callout[data-callout="metadata"] {
   --callout-icon: package;
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Size */
+/*     Editor Content - Embed (Callouts/Admonitions) - Size */
 
 .cm-embed-block.cm-callout {
   width: calc(100%);
@@ -1107,7 +1107,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Styling */
+/*     Editor Content - Embed (Callouts/Admonitions) - Styling */
 
 .callout-icon svg.svg-icon {
   height: 16px;
@@ -1143,7 +1143,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) - Collapsed Size */
+/*     Editor Content - Embed (Callouts/Admonitions) - Collapsed Size */
 
 .callout.is-collapsible.is-collapsed {
   padding: 6px;
@@ -1165,7 +1165,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Callouts/Admonitions) -  Animation */
+/*     Editor Content - Embed (Callouts/Admonitions) -  Animation */
 
 .markdown-source-view.mod-cm6 .callout {
   transition: all 250ms 0ms;
@@ -1174,17 +1174,17 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Embed (Tables) */
+/*     Editor Content - Embed (Tables) */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Tables) - Source Spacing */
+/*     Editor Content - Embed (Tables) - Source Spacing */
 
 .markdown-source-view.mod-cm6 .cm-table-widget table {
   margin: 0px;
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed (Tables) - Rendered Spacing */
+/*     Editor Content - Embed (Tables) - Rendered Spacing */
 
 .markdown-rendered table {
   margin-block-start: 0px;
@@ -1202,10 +1202,10 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Embed -  */
+/*     Editor Content - Embed -  */
 
 /* ================================================================================================= */
-/* 	Editor Content - Codeblocks */
+/*     Editor Content - Codeblocks */
 
 .el-pre > pre {
   border: var(--divider-width) solid var(--color-base-30);
@@ -1213,7 +1213,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - sizing */
+/*     Editor Content - Codeblocks - sizing */
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
   width: fit-content;
@@ -1221,14 +1221,14 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Scroll text in reader mode */
+/*     Editor Content - Codeblocks - Scroll text in reader mode */
 
 /*.HyperMD-codeblock {
-	white-space: nowrap;
+    white-space: nowrap;
 }*/
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Code Styling */
+/*     Editor Content - Codeblocks - Code Styling */
 
 .cm-comment.cm-hmd-codeblock {
   color: var(--code-comment);
@@ -1241,7 +1241,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - highlight opening/closing block */
+/*     Editor Content - Codeblocks - highlight opening/closing block */
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin .cm-hmd-codeblock,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end .cm-hmd-codeblock {
@@ -1249,7 +1249,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Borders */
+/*     Editor Content - Codeblocks - Borders */
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
   border-top-color: var(--color-base-30);
@@ -1277,7 +1277,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Codeblocks - Language Flair/Copy block */
+/*     Editor Content - Codeblocks - Language Flair/Copy block */
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .code-block-flair {
   top: 0px;
@@ -1292,7 +1292,7 @@ body {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Checkbox */
+/*     Editor Content - Checkbox */
 
 .checkbox-container {
   background-color: var(--color-base-90);
@@ -1335,7 +1335,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Checkbox - Styling */
+/*     Editor Content - Checkbox - Styling */
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
   text-decoration: none;
@@ -1373,10 +1373,10 @@ input[type="checkbox"]:checked {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - lists */
+/*     Editor Content - lists */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - lists - General */
+/*     Editor Content - lists - General */
 
 .cm-s-obsidian .is-collapsed ~ .cm-formatting-list {
   color: var(--color-base-highlight);
@@ -1387,24 +1387,24 @@ input[type="checkbox"]:checked {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - lists - Bullets/list-ul */
+/*     Editor Content - lists - Bullets/list-ul */
 
 .markdown-source-view.mod-cm6 .cm-formatting-list-ul {
   padding-right: 3px;
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Number list/list-ol */
+/*     Editor Content - Number list/list-ol */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Number list/list-ol - Styling */
+/*     Editor Content - Number list/list-ol - Styling */
 
 .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
   padding-right: 3px;
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Inline Code */
+/*     Editor Content - Inline Code */
 
 .cm-s-obsidian span.cm-inline-code {
   color: var(--text-normal);
@@ -1412,12 +1412,12 @@ input[type="checkbox"]:checked {
 }
 
 /* ================================================================================================= */
-/* 	Editor Content - Headings */
+/*     Editor Content - Headings */
 
 /* */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Headings - Collapse */
+/*     Editor Content - Headings - Collapse */
 
 .markdown-source-view.mod-cm6 .cm-foldPlaceholder {
   color: var(--color-base-highlight);
@@ -1430,7 +1430,7 @@ input[type="checkbox"]:checked {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Editor Content - Headings - Specific Headings */
+/*     Editor Content - Headings - Specific Headings */
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1 {
@@ -1527,7 +1527,7 @@ h6,
 }
 
 /* ================================================================================================= */
-/* 	Outgoing links  - Missing top border */
+/*     Outgoing links  - Missing top border */
 
 .workspace-leaf-content[data-type="outgoing-link"] .view-content {
   position: relative;
@@ -1541,7 +1541,7 @@ h6,
 }
 
 /* ================================================================================================= */
-/* 	Backlinks - Missing top border */
+/*     Backlinks - Missing top border */
 
 .mod-root .workspace-leaf-content[data-type="backlink"] .nav-header {
   margin-top: 0px;
@@ -1562,13 +1562,13 @@ h6,
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Graph */
+/*     Graph */
 
 /* ================================================================================================= */
-/* 	Graph - Controls */
+/*     Graph - Controls */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Graph - Controls - Styling */
+/*     Graph - Controls - Styling */
 
 .workspace-leaf-content[data-type="localgraph"] .view-content {
   top: 8px;
@@ -1599,23 +1599,23 @@ h6,
 }
 
 /* ================================================================================================= */
-/* 	Graph - Lines */
+/*     Graph - Lines */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Graph - Lines - Styling */
+/*     Graph - Lines - Styling */
 
 .graph-view.color-line {
   color: var(--color-base-100);
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Scrollbars */
+/*     Scrollbars */
 
 /* ================================================================================================= */
-/* 	Scrollbars - Editor Panes */
+/*     Scrollbars - Editor Panes */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Styling */
+/*     Scrollbars - Editor Panes - Styling */
 
 ::-webkit-scrollbar {
   background-color: none;
@@ -1641,7 +1641,7 @@ h6,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Inactive styling */
+/*     Scrollbars - Editor Panes - Inactive styling */
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs
@@ -1654,7 +1654,7 @@ h6,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Editor Panes - Active styling */
+/*     Scrollbars - Editor Panes - Active styling */
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-active
@@ -1679,10 +1679,10 @@ h6,
 }
 
 /* ================================================================================================= */
-/* 	Scrollbars - Sidebar Leafs */
+/*     Scrollbars - Sidebar Leafs */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Scrollbars - Sidebar Leafs - Styling */
+/*     Scrollbars - Sidebar Leafs - Styling */
 
 .nav-files-container::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar-2);
@@ -1693,10 +1693,10 @@ h6,
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	GUI Elements */
+/*     GUI Elements */
 
 /* ================================================================================================= */
-/* 	GUI Elements - Ribbon */
+/*     GUI Elements - Ribbon */
 
 body.is-focused .workspace-ribbon.mod-left,
 .workspace-ribbon {
@@ -1729,17 +1729,17 @@ body.is-focused .workspace-ribbon.mod-left,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Ribbon - Icon Colours*/
+/*     GUI Elements - Ribbon - Icon Colours*/
 
 .workspace-ribbon .clickable-icon {
   color: var(--color-base-highlight);
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Status Bar */
+/*     GUI Elements - Status Bar */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Status Bar - Hide */
+/*     GUI Elements - Status Bar - Hide */
 
 .status-bar {
   visibility: collapse;
@@ -1751,10 +1751,10 @@ body.is-focused .workspace-ribbon.mod-left,
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Command Pallete/Quick Switcher */
+/*     GUI Elements - Command Pallete/Quick Switcher */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Command Pallete/Quick Switcher - Styling */
+/*     GUI Elements - Command Pallete/Quick Switcher - Styling */
 
 .prompt {
   border-radius: var(--radius-m);
@@ -1789,10 +1789,10 @@ input.prompt-input {
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Input (text) */
+/*     GUI Elements - Input (text) */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Input (text) - Styling */
+/*     GUI Elements - Input (text) - Styling */
 
 .cm-s-obsidian input[type="text"] {
   border: 0.5px solid var(--color-base-00);
@@ -1800,10 +1800,10 @@ input.prompt-input {
 }
 
 /* ================================================================================================= */
-/* 	GUI Elements - Button */
+/*     GUI Elements - Button */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	GUI Elements - Button - Styling */
+/*     GUI Elements - Button - Styling */
 
 .cm-s-obsidian button:not(.clickable-icon) {
   height: 24px;
@@ -1878,25 +1878,25 @@ button.clickable-icon {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Interface Leafs */
+/*     Interface Leafs */
 
 /* ================================================================================================= */
-/* 	Interface Leafs - Search */
+/*     Interface Leafs - Search */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Interface Leafs - Search - Search Pop out */
+/*     Interface Leafs - Search - Search Pop out */
 .suggestion-container.mod-search-suggestion .suggestion {
   background-color: var(--color-base-17);
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Plugins */
+/*     Plugins */
 
 /* ================================================================================================= */
-/* 	Plugins - Dataview */
+/*     Plugins - Dataview */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - Embeds */
+/*     Plugins - Dataview - Embeds */
 
 .block-language-dataview.node-insert-event:has(.dataview.list-view-ul),
 .block-language-dataview.node-insert-event:has(.dataview.table-view-table) {
@@ -1912,7 +1912,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - Tables  */
+/*     Plugins - Dataview - Tables  */
 
 .dataview .table-view-table {
   margin: 0px;
@@ -1930,7 +1930,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Dataview - List  */
+/*     Plugins - Dataview - List  */
 
 .dataview.list-view-ul {
   margin: 0px;
@@ -1938,10 +1938,10 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Templater */
+/*     Plugins - Templater */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Templater - Remove ugly background highlights*/
+/*     Plugins - Templater - Remove ugly background highlights*/
 
 .cm-s-obsidian .templater-inline .cm-templater-command,
 .templater-command-bg.cm-line {
@@ -1949,10 +1949,10 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Folder Notes */
+/*     Plugins - Folder Notes */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - Embeds */
+/*     Plugins - Folder Notes - Embeds */
 .markdown-source-view.mod-cm6 .cm-embed-block .block-language-folder-overview .folder-overview {
   width: fit-content;
   border: 1px dashed var(--color-base-verylowlight);
@@ -1982,7 +1982,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - File Browser Styling */
+/*     Plugins - Folder Notes - File Browser Styling */
 
 .tree-item.nav-folder .nav-folder-title.has-folder-note .tree-item-inner.nav-folder-title-content {
   text-decoration-thickness: 1px;
@@ -2005,7 +2005,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - File Browser Folder Icons */
+/*     Plugins - Folder Notes - File Browser Folder Icons */
 
 .theme-dark
   .tree-item.nav-folder
@@ -2022,7 +2022,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Folder Notes - Draw the selection box for Folders with Folder Notes */
+/*     Plugins - Folder Notes - Draw the selection box for Folders with Folder Notes */
 
 .nav-folder-title.has-folder-note.is-active .tree-item-inner.nav-folder-title-content {
   border-radius: var(--radius-m);
@@ -2032,7 +2032,7 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Plugins - Advanced Tables */
+/*     Plugins - Advanced Tables */
 
 .advanced-tables-buttons .nav-buttons-container {
   margin: 0px;
@@ -2059,7 +2059,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Plugins - Advanced Tables - Missing top border */
+/*     Plugins - Advanced Tables - Missing top border */
 
 .view-content:has(.advanced-tables-buttons) {
   position: relative;
@@ -2073,10 +2073,10 @@ button.clickable-icon {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Workspace Splits */
+/*     Workspace Splits */
 
 /* ================================================================================================= */
-/* 	Workspace Splits - Resize Handlers */
+/*     Workspace Splits - Resize Handlers */
 
 .workspace-leaf-resize-handle:hover {
   background-color: var(--color-base-lowlight);
@@ -2084,9 +2084,9 @@ button.clickable-icon {
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits - General */
+/*     Workspace Splits - General */
 
-/* Workspace Splits - General - Size and Position	*/
+/* Workspace Splits - General - Size and Position    */
 
 .mod-left-split .workspace-tab-header-container-inner,
 .mod-right-split .workspace-tab-header-container-inner {
@@ -2108,7 +2108,7 @@ button.clickable-icon {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* Workspace Splits - General - Colours	*/
+/* Workspace Splits - General - Colours    */
 
 /* override some stupid focus colour changing */
 body.is-focused .sidebar-toggle-button,
@@ -2124,7 +2124,7 @@ body.is-focused .workspace-tabs.mod-top,
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits - Left Specific */
+/*     Workspace Splits - Left Specific */
 
 .is-fullscreen .sidebar-toggle-button.mod-left {
   transition-duration: 1000ms;
@@ -2220,7 +2220,7 @@ body.is-focused .workspace-tabs.mod-top,
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits -  Middle Specific */
+/*     Workspace Splits -  Middle Specific */
 
 .mod-horizontal .workspace-tab-header-container {
   border-bottom: 0px;
@@ -2231,7 +2231,7 @@ body.is-focused .workspace-tabs.mod-top,
 }
 
 /* ================================================================================================= */
-/* 	Workspace Splits - Right Specific */
+/*     Workspace Splits - Right Specific */
 
 .workspace.is-right-sidedock-open
   .workspace-split.mod-horizontal.mod-right-split
@@ -2292,13 +2292,13 @@ body.is-focused .workspace-tabs.mod-top,
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Workspace Leafs */
+/*     Workspace Leafs */
 
 /* ================================================================================================= */
-/* 	Workspace Leafs - Files */
+/*     Workspace Leafs - Files */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Vault Name */
+/*     Workspace Leafs - Files - Vault Name */
 
 .tree-item.nav-folder .nav-folder-title[data-path$="/"] {
   padding-left: 8px;
@@ -2321,7 +2321,7 @@ body.is-focused .workspace-tabs.mod-top,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - General */
+/*     Workspace Leafs - Files - General */
 
 body:not(.is-grabbing) .nav-file-title,
 body:not(.is-grabbing) .nav-folder-title,
@@ -2358,10 +2358,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Folders specifically */
+/*     Workspace Leafs - Files - Folders specifically */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Files  specifically */
+/*     Workspace Leafs - Files - Files  specifically */
 
 /* Highlight active note */
 
@@ -2376,7 +2376,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Folders) */
+/*     Workspace Leafs - Files - Icons (Folders) */
 
 .theme-light .nav-folder .nav-folder-title-content:before,
 .theme-light .nav-folder.is-collapsed .nav-folder-title-content:before {
@@ -2403,7 +2403,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Template Folder) */
+/*     Workspace Leafs - Files - Icons (Template Folder) */
 
 .theme-light .nav-folder .nav-folder-title[data-path*="template"] .nav-folder-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-plus'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/%3E%3Cline x1='12' x2='12' y1='10' y2='16'/%3E%3Cline x1='9' x2='15' y1='13' y2='13'/%3E%3C/svg%3E");
@@ -2414,7 +2414,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Template File) */
+/*     Workspace Leafs - Files - Icons (Template File) */
 .theme-light .nav-folder .nav-file-title[data-path*="template"] .nav-file-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file-plus'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='12' x2='12' y1='18' y2='12'/%3E%3Cline x1='9' x2='15' y1='15' y2='15'/%3E%3C/svg%3E");
 }
@@ -2424,7 +2424,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Attachment Folder) */
+/*     Workspace Leafs - Files - Icons (Attachment Folder) */
 
 .theme-light
   .nav-folder
@@ -2441,7 +2441,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (Files) */
+/*     Workspace Leafs - Files - Icons (Files) */
 
 .theme-light .nav-file-title-content:before {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(110, 105, 102)' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
@@ -2465,7 +2465,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Icons (non md files) */
+/*     Workspace Leafs - Files - Icons (non md files) */
 
 .theme-light .nav-file-title[data-path$="png"] .nav-file-title-content:before,
 .theme-light .nav-file-title[data-path$="jpg"] .nav-file-title-content:before,
@@ -2522,7 +2522,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Files - Little labels for non md files */
+/*     Workspace Leafs - Files - Little labels for non md files */
 
 .nav-file-tag {
   margin: 0px;
@@ -2537,10 +2537,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ================================================================================================= */
-/* 	Workspace Leafs - Search */
+/*     Workspace Leafs - Search */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Search - Missing top border */
+/*     Workspace Leafs - Search - Missing top border */
 
 .workspace-leaf-content:has(.search-row) {
   position: relative;
@@ -2550,10 +2550,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 /* ↑↑↑↑↑↑↑↑↑↑ Workspace Leafs: Search [ALL] */
 
 /* ================================================================================================= */
-/* 	Workspace Leafs - Outline */
+/*     Workspace Leafs - Outline */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Outline - Missing top border */
+/*     Workspace Leafs - Outline - Missing top border */
 
 .view-content:has(.outline) {
   position: relative;
@@ -2567,10 +2567,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ================================================================================================= */
-/* 	Workspace Leafs - Navigation Pane (Common) */
+/*     Workspace Leafs - Navigation Pane (Common) */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Navigation Pane (Common) - General */
+/*     Workspace Leafs - Navigation Pane (Common) - General */
 
 .nav-header {
   padding-left: 0px;
@@ -2592,7 +2592,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Workspace Leafs - Navigation Pane (Common) - Icons */
+/*     Workspace Leafs - Navigation Pane (Common) - Icons */
 
 .clickable-icon.nav-action-button.is-active,
 .clickable-icon.nav-action-button:hover {
@@ -2612,13 +2612,13 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	File Tabs */
+/*     File Tabs */
 
 /* ================================================================================================= */
-/* 	File Tabs - When at Top */
+/*     File Tabs - When at Top */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - When at Top - Size and Position*/
+/*     File Tabs - When at Top - Size and Position*/
 
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner {
   flex-grow: 1;
@@ -2699,10 +2699,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ================================================================================================= */
-/* 	File Tabs - All tabs */
+/*     File Tabs - All tabs */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Tab Sizing */
+/*     File Tabs - All tabs - Tab Sizing */
 
 .workspace .mod-root .workspace-tab-header {
   width: 100%;
@@ -2713,7 +2713,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - get rid of after/before spacers */
+/*     File Tabs - All tabs - get rid of after/before spacers */
 
 .workspace .mod-root .workspace-tab-header-inner::after {
   width: 0px;
@@ -2730,7 +2730,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - General Styling*/
+/*     File Tabs - All tabs - General Styling*/
 
 .mod-root .workspace-tab-header-inner-title {
   text-align: left;
@@ -2818,7 +2818,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Active Styling */
+/*     File Tabs - All tabs - Active Styling */
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-top
@@ -2874,14 +2874,14 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Hover */
+/*     File Tabs - All tabs - Hover */
 
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header {
   background-color: var(--color-base-40);
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - All tabs - Close Button */
+/*     File Tabs - All tabs - Close Button */
 
 .horizontal-main-container
   .workspace-split.mod-vertical.mod-root
@@ -2921,10 +2921,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ================================================================================================= */
-/* 	File Tabs - Function Buttons */
+/*     File Tabs - Function Buttons */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	File Tabs - Function Buttons - Tab List/new Tab*/
+/*     File Tabs - Function Buttons - Tab List/new Tab*/
 
 .workspace-tab-header-tab-list {
   order: -1;
@@ -2963,7 +2963,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* 	Stacked Tabs */
+/*     Stacked Tabs */
 
 .view-header-title-container:not(.mod-at-end):after {
   background: none;
@@ -2984,7 +2984,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
   margin-left: 35px;
 }
 /* ================================================================================================= */
-/* 	Stacked Tabs - General */
+/*     Stacked Tabs - General */
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
   max-width: 36px;
@@ -3077,10 +3077,10 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ================================================================================================= */
-/* 	Stacked Tabs - Function Buttons */
+/*     Stacked Tabs - Function Buttons */
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - Function Buttons - General */
+/*     Stacked Tabs - Function Buttons - General */
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked
@@ -3163,7 +3163,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - Function Buttons - Top Specific */
+/*     Stacked Tabs - Function Buttons - Top Specific */
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked.mod-top
@@ -3229,7 +3229,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 	Stacked Tabs - All tabs - Close Button */
+/*     Stacked Tabs - All tabs - Close Button */
 
 .workspace
   .mod-root
@@ -3611,7 +3611,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 /* Image amd Embed Links */
 /*
 .cm-s-obsidian span.cm-hmd-internal-link {
-	color: #35B649ff;
+    color: #35B649ff;
 }
 */
 .cm-s-obsidian span.cm-hmd-internal-link.cm-link-alias {
@@ -4015,7 +4015,7 @@ a {
 }
 
 /* ================================================================================================= */
-/* 	GUI Buttons */
+/*     GUI Buttons */
 
 .clickable-icon {
   padding: 0px;

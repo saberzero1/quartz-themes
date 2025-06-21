@@ -1,0 +1,424 @@
+body:not(.code-language) .setting-item[data-id="setting-code-language-color"] {
+  display: none;
+}
+
+body:not(.code-language)
+  .setting-item[data-id="setting-code-language-color"]
+  + .style-settings-container {
+  display: none;
+}
+
+body:is(:not(.css-settings-manager), .code-language) .markdown-rendered pre {
+  padding: 2rem 0.8rem;
+  position: relative;
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class*="language-"]::before {
+  content: "unkown language";
+  font-family: var(--font-text);
+  color: var(--setting-code-language-color, var(--inline-code));
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: absolute;
+  letter-spacing: 0.05rem;
+  text-align: right;
+  right: calc(1.3rem + 2 * var(--size-4-1));
+  top: 0.1333333333rem;
+  line-height: var(--line-height-normal);
+  z-index: 9;
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-c"]::before {
+  content: "C";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-properties"]::before {
+  content: "Properties";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-python"]::before {
+  content: "Python";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-nginx"]::before {
+  content: "Nginx";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-css"]::before {
+  content: "CSS";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-javascript"]::before {
+  content: "Javascript";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-js"]::before {
+  content: "JS";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-typescript"]::before {
+  content: "Typescript";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-ts"]::before {
+  content: "TS";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-jsp"]::before {
+  content: "JSP";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-php"]::before {
+  content: "PHP";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-lua"]::before {
+  content: "Lua";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-shell"]::before {
+  content: "Shell";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-powershell"]::before {
+  content: "PowerShell";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-flow"]::before {
+  content: "Flow";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-sequence"]::before {
+  content: "Sequence";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-sql"]::before {
+  content: "SQL";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-yaml"]::before {
+  content: "YAML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-yml"]::before {
+  content: "YML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-ini"]::before {
+  content: "ini";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-xml"]::before {
+  content: "XML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-cs"]::before {
+  content: "CS";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-cpp"]::before {
+  content: "CPP";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-java"]::before {
+  content: "Java";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-html"]::before {
+  content: "HTML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-txt"]::before {
+  content: "TXT";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-md"]::before {
+  content: "MD";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-markdown"]::before {
+  content: "Markdown";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-bat"]::before {
+  content: "Bat";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-json"]::before {
+  content: "Json";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-groovy"]::before {
+  content: "Groovy";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-scss"]::before {
+  content: "SCSS";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-bash"]::before {
+  content: "Bash";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-cmd"]::before {
+  content: "Cmd";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-latex"]::before {
+  content: "Latex";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-zig"]::before {
+  content: "Zig";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-ssml"]::before {
+  content: "SSML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-jsx"]::before {
+  content: "JSX";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-tsx"]::before {
+  content: "TSX";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-tsconfig"]::before {
+  content: "tsconfig";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-git"]::before {
+  content: "Git";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-csharp"]::before {
+  content: "CSharp";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-csv"]::before {
+  content: "CSV";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-cue"]::before {
+  content: "cue";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-toml"]::before {
+  content: "TOML";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-kt"]::before {
+  content: "kt";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-kotlin"]::before {
+  content: "Kotlin";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-go"]::before {
+  content: "Go";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-rust"]::before {
+  content: "Rust";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-regex"]::before {
+  content: "Regex";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-swift"]::before {
+  content: "Swift";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-abap"]::before {
+  content: "ABAP";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-pl/sql"]::before {
+  content: "PL/SQL";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-c++"]::before {
+  content: "C++";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-c#"]::before {
+  content: "C#";
+}
+
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered
+  pre
+  code[class~="language-sh"]::before {
+  content: "Shell";
+}

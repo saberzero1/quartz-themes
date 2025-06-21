@@ -1,0 +1,18 @@
+body:not(.active-line-off)
+  .markdown-source-view
+  .cm-active:not(:has(.cm-fold-indicator):hover)::after {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -12px;
+  border-left: 4px solid var(--background-modifier-border-hover);
+  border-radius: var(--input-radius);
+  content: "";
+}
+
+body:not(.active-line-off)
+  .markdown-source-view
+  .cm-active:not(:has(.cm-fold-indicator):hover)[dir="rtl"]::after {
+  right: -12px;
+  left: unset;
+}

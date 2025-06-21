@@ -1,0 +1,9 @@
+.quote-border blockquote,
+.quote-border .HyperMD-quote:before {
+  border-left: 0px solid #eee !important;
+}
+
+body:not(.quote-border) blockquote,
+body:not(.quote-border) .HyperMD-quote:before {
+  border-left-width: 3px !important;
+}

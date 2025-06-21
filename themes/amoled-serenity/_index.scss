@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: var(--color-base-00);
   --background-secondary: var(--color-base-00);
@@ -101,9 +102,109 @@
   --yellow: rgb(var(--yellow_x));
   --yellow_x: 235, 203, 139;
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: var(--color-base-00);
+  --background-secondary: var(--color-base-00);
+  --body-font: "Inter";
+  --code-background: var(--background-primary);
+  --code-comment: var(--color-base-50);
+  --code-function: var(--yellow);
+  --code-important: var(--orange);
+  --code-keyword: var(--purple);
+  --code-normal: var(--color-base-80);
+  --code-property: var(--frost0);
+  --code-punctuation: var(--color-base-60);
+  --code-size: var(--font-smaller);
+  --code-string: var(--green);
+  --code-tag: var(--red);
+  --code-value: var(--purple);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #0e0e0e;
+  --color-base-10: #242424;
+  --color-base-100: #ffffff;
+  --color-base-20: #1a1a1a;
+  --color-base-25: #262626;
+  --color-base-30: #333333;
+  --color-base-35: #363636;
+  --color-base-40: #4a4a4a;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #bbbbbb;
+  --color-base-80: #dddddd;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --font-text-theme: var(--body-font);
+  --frost0: rgb(var(--frost0_x));
+  --frost0_x: 143, 188, 187;
+  --frost2: rgb(var(--frost2_x));
+  --frost2_x: 129, 161, 193;
+  --green: rgb(var(--green_x));
+  --green_x: 163, 190, 140;
+  --h1-color: var(--red);
+  --h1-font: var(--header-font);
+  --h2-color: var(--yellow);
+  --h2-font: var(--header-font);
+  --h3-color: var(--green);
+  --h3-font: var(--header-font);
+  --h4-color: var(--purple);
+  --h4-font: var(--header-font);
+  --h5-color: var(--frost0);
+  --h5-font: var(--header-font);
+  --h6-color: var(--frost2);
+  --h6-font: var(--header-font);
+  --header-font: "Inter";
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --orange: rgb(var(--orange_x));
+  --orange_x: 208, 135, 112;
+  --purple: rgb(var(--purple_x));
+  --purple_x: 180, 142, 173;
+  --red: rgb(var(--red_x));
+  --red_x: 191, 97, 106;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-primary: var(--color-base-80);
+  --yellow: rgb(var(--yellow_x));
+  --yellow_x: 235, 203, 139;
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -646,10 +747,107 @@ html {
   --yellow: rgb(var(--yellow_x));
   --yellow_x: 235, 203, 139;
   color-scheme: dark;
+  --background-modifier-form-field: var(--color-base-25);
+  --background-primary: var(--color-base-00);
+  --background-secondary: var(--color-base-00);
+  --body-font: "Inter";
+  --code-background: var(--background-primary);
+  --code-comment: var(--color-base-50);
+  --code-function: var(--yellow);
+  --code-important: var(--orange);
+  --code-keyword: var(--purple);
+  --code-normal: var(--color-base-80);
+  --code-property: var(--frost0);
+  --code-punctuation: var(--color-base-60);
+  --code-size: var(--font-smaller);
+  --code-string: var(--green);
+  --code-tag: var(--red);
+  --code-value: var(--purple);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #0e0e0e;
+  --color-base-10: #242424;
+  --color-base-100: #ffffff;
+  --color-base-20: #1a1a1a;
+  --color-base-25: #262626;
+  --color-base-30: #333333;
+  --color-base-35: #363636;
+  --color-base-40: #4a4a4a;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #bbbbbb;
+  --color-base-80: #dddddd;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --font-text-theme: var(--body-font);
+  --frost0: rgb(var(--frost0_x));
+  --frost0_x: 143, 188, 187;
+  --frost2: rgb(var(--frost2_x));
+  --frost2_x: 129, 161, 193;
+  --green: rgb(var(--green_x));
+  --green_x: 163, 190, 140;
+  --h1-color: var(--red);
+  --h1-font: var(--header-font);
+  --h2-color: var(--yellow);
+  --h2-font: var(--header-font);
+  --h3-color: var(--green);
+  --h3-font: var(--header-font);
+  --h4-color: var(--purple);
+  --h4-font: var(--header-font);
+  --h5-color: var(--frost0);
+  --h5-font: var(--header-font);
+  --h6-color: var(--frost2);
+  --h6-font: var(--header-font);
+  --header-font: "Inter";
+  --highlight-mix-blend-mode: darken;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --orange: rgb(var(--orange_x));
+  --orange_x: 208, 135, 112;
+  --purple: rgb(var(--purple_x));
+  --purple_x: 180, 142, 173;
+  --red: rgb(var(--red_x));
+  --red_x: 191, 97, 106;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-primary: var(--color-base-80);
+  --yellow: rgb(var(--yellow_x));
+  --yellow_x: 235, 203, 139;
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

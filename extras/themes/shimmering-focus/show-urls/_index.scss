@@ -1,0 +1,35 @@
+body:not(.show-urls) .cm-line:not(.cm-active) .cm-string.cm-url {
+  color: var(--text-faint);
+  cursor: default;
+  text-decoration: none;
+}
+
+body:not(.show-urls)
+  .cm-s-obsidian:not(.is-live-preview)
+  .cm-line:not(.cm-active)
+  .cm-string.cm-url:not(.cm-formatting) {
+  letter-spacing: 0;
+  font-size: 0;
+}
+
+body:not(.show-urls)
+  .cm-s-obsidian:not(.is-live-preview)
+  .cm-line:not(.cm-active)
+  .cm-string.cm-url:not(.cm-formatting):after {
+  font-family: var(--icon-font);
+  font-size: calc(var(--font-text-size) * 0.9);
+  content: "link";
+  position: relative;
+  top: 2px;
+}
+
+body:not(.show-urls)
+  .cm-s-obsidian:not(.is-live-preview)
+  .cm-line.cm-active
+  .cm-string.cm-url:not(.cm-formatting):after,
+body:not(.show-urls)
+  .cm-s-obsidian:not(.is-live-preview)
+  .cm-line.cm-active
+  .cm-string.cm-url:not(.cm-formatting) {
+  transition-delay: var(--transition-delay-passing-over-protection);
+}

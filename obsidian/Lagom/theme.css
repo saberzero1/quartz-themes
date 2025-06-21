@@ -511,7 +511,7 @@ body:not(.no-codeblock-line-numbers)
 }
 
 .frontmatter-container {
-  /*	display: none; */
+  /*    display: none; */
 }
 
 .cm-hmd-frontmatter {
@@ -918,12 +918,12 @@ hr {
 /*
 
 .workspace-drawer-backdrop, .modal-container, .is-phone, .suggestion-bg{
-	background: #00000097;
+    background: #00000097;
   box-shadow: var(--input-shadow)
 }
 
 .nav-files-container>div>.nav-folder>.nav-folder-title>.nav-folder-title-content{
-	font-weight:600;
+    font-weight:600;
 }
 
 .nav-folder:nth-child(odd).nav-folder-title, .nav-file:nth-child(odd){}
@@ -1146,7 +1146,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 /* SECONDARY MENU 
 
 .menu-separator:not(.is-mobile, .menu-item) {
-	border-bottom: 1.5px dashed var(--background-modifier-border);
+    border-bottom: 1.5px dashed var(--background-modifier-border);
 }
 
 /*  :::::  UI ICONS  :::::  */
@@ -1993,7 +1993,6 @@ settings:
           - 
               label: Right
               value: right
-  - 
       
   - 
       id: embed-section
@@ -2053,7 +2052,6 @@ settings:
           - 
               label: Solid
               value: solid
-  - 
 */
 
 /* @settings

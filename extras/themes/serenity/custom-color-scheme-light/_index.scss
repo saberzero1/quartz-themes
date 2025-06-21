@@ -1,0 +1,9 @@
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-theme-tint"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-theme-sat"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-theme-base"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-base"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-c-20"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-text"][data-id*="-l"],
+body:not(.custom-color-scheme-light) .setting-item[data-id*="custom-border"][data-id*="-l"] {
+  display: none;
+}

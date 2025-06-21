@@ -1,0 +1,28 @@
+body:not(.ss-zoom-off) .view-content .image-embed:not(.canvas-node-content):active,
+body:not(.ss-zoom-off)
+  .view-content
+  .markdown-preview-view
+  img[referrerpolicy="no-referrer"]:active {
+  aspect-ratio: unset;
+  background-color: var(--background-primary);
+  cursor: zoom-out;
+  display: block;
+  z-index: 200;
+  position: fixed;
+  max-height: calc(100% + 1px);
+  max-width: 100%;
+  height: calc(100% + 1px);
+  width: 100%;
+  object-fit: contain;
+  margin: -0.5px auto 0 !important;
+  text-align: center;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body:not(.ss-zoom-off) .view-content div:not(.canvas-node-content) img {
+  max-width: 100%;
+  cursor: zoom-in;
+}

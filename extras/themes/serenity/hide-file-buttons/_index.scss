@@ -1,0 +1,8 @@
+body:not(:not(.hide-file-buttons)) .nav-buttons-container:not(:hover) {
+  opacity: 0;
+}
+
+body:not(.opacity-hide):not(:not(.hide-file-buttons)) .nav-buttons-container:not(:hover) {
+  height: 1px;
+  padding: 2px;
+}

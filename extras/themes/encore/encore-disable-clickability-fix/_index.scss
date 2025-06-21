@@ -1,0 +1,17 @@
+body:not(.is-mobile):not(.encore-disable-clickability-fix)
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  > .cm-editor
+  > .cm-scroller
+  > .cm-sizer
+  > .cm-contentContainer
+  > .cm-content {
+  max-width: unset;
+  margin-left: -4rem;
+  padding-left: 4rem;
+  margin-right: -4rem;
+  padding-right: 4rem;
+}
+
+body:not(.is-mobile):not(.encore-disable-clickability-fix) .cm-scroller {
+  overflow-x: hidden;
+}

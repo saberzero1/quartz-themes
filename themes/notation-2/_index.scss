@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-border: #323130;
   --background-modifier-form-field: var(--color-base-25);
   --background-modifier-hover: rgba(255, 255, 255, 0.04);
@@ -57,12 +58,70 @@
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: var(--tag-1-default);
   color-scheme: dark;
+  --background-modifier-border: #323130;
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: rgba(255, 255, 255, 0.04);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #191919;
+  --color-base-100: #dadada;
+  --color-base-20: rgb(32, 32, 32);
+  --color-base-25: #21201e;
+  --color-base-30: #21201e;
+  --color-base-35: #363636;
+  --color-base-40: #535353;
+  --color-base-50: #707070;
+  --color-base-70: #a0a0a0;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 29, 40, 46;
+  --color-cyan: rgb(51, 126, 169);
+  --color-cyan-rgb: 29, 40, 46;
+  --color-green: rgb(82, 158, 144);
+  --color-green-rgb: 34, 43, 38;
+  --color-orange: rgb(199, 125, 72);
+  --color-orange-rgb: 56, 40, 30;
+  --color-pink: rgb(209, 87, 150);
+  --color-purple: rgb(157, 104, 211);
+  --color-purple-rgb: 43, 36, 49;
+  --color-red: rgb(223, 84, 82);
+  --color-red-rgb: 54, 36, 34;
+  --color-yellow: rgb(202, 152, 73);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-1-default: rgb(137, 99, 42);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: var(--tag-1-default);
+  color-scheme: dark .callout {
 
-  .callout {
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --background-modifier-hover: hsl(60, 3%, 0%, 4%);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -107,8 +166,60 @@
   --tag-1-default: rgb(253, 236, 200);
   --text-highlight-bg: var(--tag-1-default);
   color-scheme: light;
+  --background-modifier-hover: hsl(60, 3%, 0%, 4%);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(0, 0%, 100%);
+  --color-base-100: #37352f;
+  --color-base-20: #fbfbfa;
+  --color-base-25: #e1e1e1;
+  --color-base-30: #dfdfdf;
+  --color-base-35: #f1f1f0;
+  --color-base-40: #afafaf;
+  --color-base-50: #a3a29e;
+  --color-base-70: #737272;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 231, 243, 248;
+  --color-cyan: rgb(51, 126, 169);
+  --color-cyan-rgb: 231, 243, 248;
+  --color-green: rgb(68, 131, 97);
+  --color-green-rgb: 237, 243, 236;
+  --color-orange: rgb(217, 115, 13);
+  --color-orange-rgb: 251, 236, 221;
+  --color-pink: rgb(193, 76, 138);
+  --color-purple: rgb(144, 101, 176);
+  --color-purple-rgb: 244, 240, 247, 0.8;
+  --color-red: rgb(212, 76, 71);
+  --color-red-rgb: 253, 235, 236;
+  --color-yellow: rgb(203, 145, 47);
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-1-default: rgb(253, 236, 200);
+  --text-highlight-bg: var(--tag-1-default);
+  color-scheme: light .callout {
 
-  .callout {
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -454,10 +565,63 @@ html[saved-theme="dark"] {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: var(--tag-1-default);
   color-scheme: dark;
+  --background-modifier-border: #323130;
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: rgba(255, 255, 255, 0.04);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #191919;
+  --color-base-100: #dadada;
+  --color-base-20: rgb(32, 32, 32);
+  --color-base-25: #21201e;
+  --color-base-30: #21201e;
+  --color-base-35: #363636;
+  --color-base-40: #535353;
+  --color-base-50: #707070;
+  --color-base-70: #a0a0a0;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 29, 40, 46;
+  --color-cyan: rgb(51, 126, 169);
+  --color-cyan-rgb: 29, 40, 46;
+  --color-green: rgb(82, 158, 144);
+  --color-green-rgb: 34, 43, 38;
+  --color-orange: rgb(199, 125, 72);
+  --color-orange-rgb: 56, 40, 30;
+  --color-pink: rgb(209, 87, 150);
+  --color-purple: rgb(157, 104, 211);
+  --color-purple-rgb: 43, 36, 49;
+  --color-red: rgb(223, 84, 82);
+  --color-red-rgb: 54, 36, 34;
+  --color-yellow: rgb(202, 152, 73);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tag-1-default: rgb(137, 99, 42);
+  --text-accent: var(--color-accent-1);
+  --text-highlight-bg: var(--tag-1-default);
+  color-scheme: dark .callout {
+
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -510,10 +674,58 @@ html[saved-theme="light"] {
   --tag-1-default: rgb(253, 236, 200);
   --text-highlight-bg: var(--tag-1-default);
   color-scheme: light;
+  --background-modifier-hover: hsl(60, 3%, 0%, 4%);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsl(0, 0%, 100%);
+  --color-base-100: #37352f;
+  --color-base-20: #fbfbfa;
+  --color-base-25: #e1e1e1;
+  --color-base-30: #dfdfdf;
+  --color-base-35: #f1f1f0;
+  --color-base-40: #afafaf;
+  --color-base-50: #a3a29e;
+  --color-base-70: #737272;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 231, 243, 248;
+  --color-cyan: rgb(51, 126, 169);
+  --color-cyan-rgb: 231, 243, 248;
+  --color-green: rgb(68, 131, 97);
+  --color-green-rgb: 237, 243, 236;
+  --color-orange: rgb(217, 115, 13);
+  --color-orange-rgb: 251, 236, 221;
+  --color-pink: rgb(193, 76, 138);
+  --color-purple: rgb(144, 101, 176);
+  --color-purple-rgb: 244, 240, 247, 0.8;
+  --color-red: rgb(212, 76, 71);
+  --color-red-rgb: 253, 235, 236;
+  --color-yellow: rgb(203, 145, 47);
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tag-1-default: rgb(253, 236, 200);
+  --text-highlight-bg: var(--tag-1-default);
+  color-scheme: light .callout {
+
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

@@ -1,0 +1,7 @@
+body.hide-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before,
+body.hide-folder-icons
+  .nav-folder.is-collapsed
+  .nav-folder-title
+  .nav-folder-title-content::before {
+  display: none;
+}

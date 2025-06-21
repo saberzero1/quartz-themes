@@ -1,0 +1,3 @@
+body:not(:not(.hide-close-tab)) .workspace-tab-header-inner-close-button:not(:hover) {
+  opacity: 0 !important;
+}

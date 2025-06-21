@@ -1,0 +1,9 @@
+body:not(.color-use-custom) .setting-item[data-id*="color-accent-"],
+body:not(.color-use-custom) .setting-item[data-id^="accent-hue"] {
+  display: none;
+}
+
+body:not(.color-use-custom) .setting-item[data-id*="color-accent-"] + .style-settings-container,
+body:not(.color-use-custom) .setting-item[data-id^="accent-hue"] + .style-settings-container {
+  display: none;
+}

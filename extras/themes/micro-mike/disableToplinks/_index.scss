@@ -1,0 +1,215 @@
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer) {
+  display: flex;
+  flex-direction: column;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer) {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  gap: 0px;
+  order: -1;
+  min-height: unset !important;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer):has(
+    > .backlink-pane > .search-result-container > .search-empty-state
+  ) {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .nav-header {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  > .tree-item-self {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--hr-color);
+  margin-bottom: 10px;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result {
+  display: flex;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-matches {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable:hover {
+  background-color: transparent;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-icon {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-flair-outer {
+  display: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-inner {
+  line-height: 35px;
+  font-size: var(--font-text-size);
+  white-space: nowrap;
+  color: var(--link-color);
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-inner:hover {
+  color: var(--link-color-hover);
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-inner:hover::before {
+  text-decoration-line: none;
+  text-decoration: none;
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-inner::before {
+  content: "႟";
+  color: var(--text-normal);
+}
+
+body:not(.disableToplinks)
+  :is(.markdown-reading-view, .markdown-source-view)
+  :is(.markdown-preview-sizer, .cm-sizer)
+  :is(.embedded-backlinks, .mod-footer)
+  .backlink-pane
+  .search-result-container
+  .search-results-children
+  .search-result
+  .search-result-file-title.tree-item-self.is-clickable
+  .tree-item-inner::after {
+  content: "";
+  color: var(--text-normal);
+}

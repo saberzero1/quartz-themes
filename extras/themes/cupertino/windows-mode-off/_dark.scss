@@ -1,0 +1,30 @@
+body.windows-mode-off:not(.is-mobile):not(.blur-effect-off).theme-dark .vertical-tab-header {
+  background-color: rgb(from var(--color-base-10) r g b/75%);
+}
+
+body.windows-mode-off:not(.is-mobile).blur-effect-off.theme-dark .vertical-tab-header {
+  background-color: var(--color-base-10);
+}
+
+body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-dark {
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
+  --input-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 0.5px 0 0 rgba(255, 255, 255, 0.1) inset !important;
+  --interactive-normal: var(--color-base-35);
+  --modal-background: rgb(from var(--background-primary) r g b / 90%) !important;
+  --modal-border-color: rgba(255, 255, 255, 0.1);
+  --slider-thumb-border-color: var(--color-base-35);
+}
+
+body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-dark .mod-sidedock {
+  --divider-color: rgba(0, 0, 0, 0.2) !important
+;
+}
+
+body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-dark
+  .modal.mod-settings
+  .setting-item:not(.setting-item-heading) {
+  border: var(--border-width) solid rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
+}

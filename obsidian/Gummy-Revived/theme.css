@@ -161,9 +161,9 @@ settings:
 }
 
 /* Usually, I delete the following and then write my own CSS here.
-	However, if this is helpful, feel free to leave it and edit it!
-	Otherwise, proceed/delete to the next code block for custom CSS below
-	*/
+    However, if this is helpful, feel free to leave it and edit it!
+    Otherwise, proceed/delete to the next code block for custom CSS below
+    */
 
 /** Gradient Headers **/
 
@@ -219,18 +219,18 @@ body {
   --transition-05: all 0.3s cubic-bezier(0.25, 0.46, 0.46, 0.95);
   --transition-03: all 0.2s cubic-bezier(0.25, 0.47, 0.45, 0.94);
   /* --solid-border: 1px solid var(--background-modifier-border);
-		--dashed-border: 1px dashed var(--background-modifier-border); */
+        --dashed-border: 1px dashed var(--background-modifier-border); */
   --o-border: 1px solid var(--background-modifier-border);
 
   /* Typefaces
-	*/
+    */
   --font-title: "Peace Sans", sans-serif;
   --font-interface-theme: "Inter", sans-serif;
   --font-text-theme: "Space Grotesk", sans-serif;
   --font-monospace: "Source Code Pro", monospace;
 
   /* Links
-	*/
+    */
   --link-color: var(--text-muted);
   --link-color-hover: var(--text-normal);
   --link-decoration: underline;
@@ -248,7 +248,7 @@ body {
   --link-unresolved-decoration-color: transparent;
 
   /* Text
-	*/
+    */
   --text-normal: var(--color-base-70);
   --text-muted: var(--color-base-50);
   --text-faint: var(--color-base-60);
@@ -429,18 +429,18 @@ body {
 }
 
 /* .workspace {
-	background: transparent;
+    background: transparent;
 } */
 
 /* .workspace::before {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	content: "";
-	background: url("https://media0.giphy.com/media/5vidmSHUsyoybSYNN0/giphy.gif?cid=ecf05e47x9zpzexjmpwcmczcrejccexj37mmfan5zwptjn3r&ep=v1_gifs_related&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-color: var(--color-accent);
-	opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background: url("https://media0.giphy.com/media/5vidmSHUsyoybSYNN0/giphy.gif?cid=ecf05e47x9zpzexjmpwcmczcrejccexj37mmfan5zwptjn3r&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-color: var(--color-accent);
+    opacity: 0.3;
 } */
 
 .mod-root .workspace-tabs .workspace-leaf,
@@ -509,7 +509,7 @@ hr {
 }
 
 /* .frontmatter-container:hover .frontmatter-container-header {
-	border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
 } */
 
 .frontmatter-container:hover {
@@ -1008,9 +1008,9 @@ a.tag:hover,
 }
 
 /* .nav-folder.mod-root .nav-folder > .nav-folder-children {
-	background: var(--background-primary);
-	margin: 0;
-	border-radius: var(--radius-m);
+    background: var(--background-primary);
+    margin: 0;
+    border-radius: var(--radius-m);
 } */
 
 .nav-file-title.is-active {
@@ -1064,7 +1064,7 @@ a.tag:hover,
 }
 
 /* .nav-file-title-content {
-	padding-bottom: 4px;
+    padding-bottom: 4px;
 } */
 
 .nav-file::before {
@@ -1201,9 +1201,9 @@ a.tag:hover,
 
   border: none;
   /* border-left:  var(--o-border);
-	border-top:  var(--o-border);
-	border-right: none;
-	border-bottom:  var(--o-border); */
+    border-top:  var(--o-border);
+    border-right: none;
+    border-bottom:  var(--o-border); */
   border-radius: 8px 0 0 8px;
   height: 50%;
 }
@@ -1412,7 +1412,7 @@ a.tag:hover,
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 
 .theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p,
@@ -1567,7 +1567,7 @@ input[type="checkbox"]:checked::after {
 
   position: absolute;
   /* top: 2px;
-	left: -2px; */
+    left: -2px; */
 
   -webkit-mask-position: 52% 52%;
   -webkit-mask-size: 100%;
@@ -1702,7 +1702,7 @@ li.is-checked:where(
 }
 
 /* .markdown-source-view.mod-cm6 input[type="checkbox"][data-task] {
-	top: -3px;
+    top: -3px;
 } */
 
 li[data-task="!"] input[type="checkbox"]:checked::after,
@@ -1783,9 +1783,9 @@ input[type="password"],
 input[type="number"] {
   font-size: var(--font-ui-small);
   /*
-	font-size: var(--font-ui-small);
-	border-radius: var(--input-radius);
-	outline: none;
+    font-size: var(--font-ui-small);
+    border-radius: var(--input-radius);
+    outline: none;
   */
   background: transparent;
 
@@ -1856,7 +1856,7 @@ a:hover,
   color: var(--text-normal);
 
   /* text-decoration-line: underline;
-	text-decoration-thickness: 2px; unneeded with 1.0 vars */
+    text-decoration-thickness: 2px; unneeded with 1.0 vars */
   text-decoration-skip-ink: all;
   text-decoration-color: var(--color-accent);
   font-variation-settings:

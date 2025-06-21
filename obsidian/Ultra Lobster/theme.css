@@ -914,23 +914,23 @@ settings:
 
 body {
   /*
-	1.0 theme baseplate, cleaned with 💖 by kneecaps.
-	File originally found in app.css of Obsidian, a markdown editing application.
-	The following variables should give basic control over all 1.0 UI elements and then some.
-	For custom CSS, begin by adding under the comment field "Custom CSS".
-	When adding custom CSS, try to be mindful for your future self, they might appreciate comments
-	Try to add CSS in blocks that are grouped by the effect, such as general UI tweaks or Typography
+    1.0 theme baseplate, cleaned with 💖 by kneecaps.
+    File originally found in app.css of Obsidian, a markdown editing application.
+    The following variables should give basic control over all 1.0 UI elements and then some.
+    For custom CSS, begin by adding under the comment field "Custom CSS".
+    When adding custom CSS, try to be mindful for your future self, they might appreciate comments
+    Try to add CSS in blocks that are grouped by the effect, such as general UI tweaks or Typography
   
-	Original preface:
-	List of variables is placed in body rather than :root so 
-	that we can	combine all property types including colors
-	and sort alphabetically to maximize readability in
-	the compiled app.css file.
-	----------------------------------------------------- 
-	*/
+    Original preface:
+    List of variables is placed in body rather than :root so 
+    that we can    combine all property types including colors
+    and sort alphabetically to maximize readability in
+    the compiled app.css file.
+    ----------------------------------------------------- 
+    */
 
   /* Animations 
-	*/
+    */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
   --anim-duration-fast: 140ms;
@@ -942,7 +942,7 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
 
   /* Blockquotes 
-	*/
+    */
   --blockquote-border-thickness: 2px;
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-font-style: normal;
@@ -954,15 +954,15 @@ body {
   --bold-color: inherit;
 
   /* Borders 
-	*/
+    */
   --border-width: 1px;
 
   /* Buttons 
-	*/
+    */
   --button-radius: var(--input-radius);
 
   /* Callouts 
-	*/
+    */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
@@ -989,7 +989,7 @@ body {
   --callout-quote: 158, 158, 158;
 
   /* Canvas 
-	*/
+    */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
   --canvas-color-1: var(--color-red-rgb);
@@ -1001,7 +1001,7 @@ body {
   --canvas-dot-pattern: var(--color-base-30);
 
   /* Checkboxes 
-	*/
+    */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
   --checkbox-marker-color: var(--background-primary);
@@ -1013,7 +1013,7 @@ body {
   --checklist-done-color: var(--text-muted);
 
   /* Code 
-	*/
+    */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
@@ -1030,23 +1030,23 @@ body {
   --code-value: var(--color-purple);
 
   /* Collapse icons 
-	*/
+    */
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--color-accent);
 
   /* Cursor 
-	*/
+    */
   --cursor: default;
   --cursor-link: pointer;
 
   /* Dialogs - e.g. small modals, confirmations 
-	*/
+    */
   --dialog-width: 560px;
   --dialog-max-width: 80vw;
   --dialog-max-height: 85vh;
 
   /* Dividers — between panes 
-	*/
+    */
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
@@ -1054,12 +1054,12 @@ body {
   --divider-vertical-height: calc(100% - var(--header-height));
 
   /* Dragging 
-	*/
+    */
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
 
   /* Embeds 
-	*/
+    */
   --embed-max-height: 4000px;
   --embed-canvas-max-height: 400px;
   --embed-background: inherit;
@@ -1071,12 +1071,12 @@ body {
   --embed-font-style: inherit;
 
   /* Blocks 
-	*/
+    */
   --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout 
-	*/
+    */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
@@ -1086,20 +1086,20 @@ body {
   --file-header-justify: center;
 
   /* Relative font sizes 
-	*/
+    */
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
 
   /* UI font sizes 
-	*/
+    */
   --font-ui-smaller: 12px;
   --font-ui-small: 13px;
   --font-ui-medium: 15px;
   --font-ui-large: 20px;
 
   /* Font weights 
-	*/
+    */
   --font-thin: 100;
   --font-extralight: 200;
   --font-light: 300;
@@ -1111,11 +1111,11 @@ body {
   --font-black: 900;
 
   /* Footnotes 
-	*/
+    */
   --footnote-size: var(--font-smaller);
 
   /* Graphs 
-	*/
+    */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
@@ -1126,7 +1126,7 @@ body {
   --graph-node-attachment: var(--color-yellow);
 
   /* Headings 
-	*/
+    */
   --heading-formatting: var(--text-faint);
   --h1-color: inherit;
   --h2-color: inherit;
@@ -1172,16 +1172,16 @@ body {
   --h6-weight: 600;
 
   /* View header 
-	*/
+    */
   --header-height: 40px;
 
   /* Horizontal rules 
-	*/
+    */
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
 
   /* Icons 
-	*/
+    */
   --icon-size: var(--icon-m);
   --icon-stroke: var(--icon-m-stroke-width);
   --icon-xs: 14px;
@@ -1204,13 +1204,13 @@ body {
   --clickable-icon-radius: var(--radius-s);
 
   /* Indentation guide 
-	*/
+    */
   --indentation-guide-width: 1px;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
 
   /* Inline title 
-	*/
+    */
   --inline-title-color: var(--color-base-100);
   --inline-title-font: var(--font-title);
   --inline-title-line-height: var(--h1-line-height);
@@ -1220,18 +1220,18 @@ body {
   --inline-title-weight: 500;
 
   /* Inputs 
-	*/
+    */
   --input-height: 30px;
   --input-radius: 5px;
   --input-font-weight: var(--font-normal);
   --input-border-width: 1px;
 
   /* Italic 
-	*/
+    */
   --italic-color: inherit;
 
   /* Z-index 
-	*/
+    */
   --layer-cover: 5;
   --layer-sidedock: 10;
   --layer-status-bar: 15;
@@ -1244,12 +1244,12 @@ body {
   --layer-dragged-item: 80;
 
   /* Line heights 
-	*/
+    */
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
 
   /* Links 
-	*/
+    */
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-hover);
   --link-decoration: underline;
@@ -1267,7 +1267,7 @@ body {
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
   /* Lists 
-	*/
+    */
   --list-indent: 2em;
   --list-spacing: 0.075em;
   --list-marker-color: var(--text-faint);
@@ -1280,7 +1280,7 @@ body {
   --list-numbered-style: decimal;
 
   /* File navigator 
-	*/
+    */
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
   --nav-item-color-hover: var(--text-normal);
@@ -1304,7 +1304,7 @@ body {
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 
   /* Modals - e.g. settings, community themes, community plugins 
-	*/
+    */
   --modal-background: var(--background-primary);
   --modal-width: 90vw;
   --modal-height: 85vh;
@@ -1317,7 +1317,7 @@ body {
   --modal-community-sidebar-width: 280px;
 
   /* Popovers - file previews 
-	*/
+    */
   --popover-width: 450px;
   --popover-height: 400px;
   --popover-max-height: 70vh;
@@ -1326,7 +1326,7 @@ body {
   --popover-font-size: var(--font-text-size);
 
   /* Prompts - e.g. quick switcher, command palette 
-	*/
+    */
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
@@ -1334,27 +1334,27 @@ body {
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
 
   /* Radiuses 
-	*/
+    */
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
   --radius-xl: 16px;
 
   /* Ribbon 
-	*/
+    */
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
 
   /* Scrollbars 
-	*/
+    */
   --scrollbar-active-thumb-bg: var(--color-accent);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.1);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
 
   /* Search 
-	*/
+    */
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -1362,7 +1362,7 @@ body {
   --search-result-background: var(--background-primary);
 
   /* Layout sizing - for padding and margins 
-	*/
+    */
   --size-2-1: 2px;
   --size-2-2: 4px;
   --size-2-3: 6px;
@@ -1379,12 +1379,12 @@ body {
   --size-4-18: 72px;
 
   /* Sidebar 
-	*/
+    */
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
 
   /* Sliders 
-	*/
+    */
   --slider-thumb-border-width: 1px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-height: 18px;
@@ -1397,7 +1397,7 @@ body {
   --slider-track-height: 3px;
 
   /* Status bar 
-	*/
+    */
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
@@ -1407,14 +1407,14 @@ body {
   --status-bar-radius: var(--radius-m) 0 0 0;
 
   /* Swatch for color inputs 
-	*/
+    */
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
 
   /* Tabs 
-	*/
+    */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
@@ -1435,7 +1435,7 @@ body {
   --tab-max-width: 320px;
 
   /* Stacked tabs 
-	*/
+    */
   --tab-stacked-pane-width: 700px;
   --tab-stacked-header-width: var(--header-height);
   --tab-stacked-font-size: var(--font-ui-small);
@@ -1446,7 +1446,7 @@ body {
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
 
   /* Tables 
-	*/
+    */
   --table-background: transparent;
   --table-border-width: 1px;
   --table-border-color: var(--background-modifier-border);
@@ -1470,7 +1470,7 @@ body {
   --table-row-last-border-width: var(--table-border-width);
 
   /* Tags 
-	*/
+    */
   --tag-size: var(--font-smaller);
   --tag-color: var(--color-accent);
   --tag-color-hover: var(--color-accent);
@@ -1486,7 +1486,7 @@ body {
   --tag-radius: 2em;
 
   /* Window frame 
-	*/
+    */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
   --titlebar-border-width: 0px;
@@ -1496,7 +1496,7 @@ body {
   --titlebar-text-weight: var(--font-bold);
 
   /* Toggles 
-	*/
+    */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
@@ -1510,17 +1510,17 @@ body {
   --toggle-s-thumb-width: 15px;
 
   /* Vault name 
-	*/
+    */
   --vault-name-font-size: var(--font-ui-small);
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
 
   /* Workspace 
-	*/
+    */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
 
   /* Color mappings ------------------------ 
-	*/
+    */
 
   /* Accent HSL values */
   --accent-h: 254;
@@ -1528,7 +1528,7 @@ body {
   --accent-l: 68%;
 
   /* Backgrounds 
-	*/
+    */
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
@@ -1545,11 +1545,11 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
 
   /* Inputs 
-	*/
+    */
   --background-modifier-form-field: var(--color-base-00);
 
   /* Text 
-	*/
+    */
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -2043,10 +2043,10 @@ body {
   --gradient-bg-tertiary: linear-gradient(135deg, #e4f1f7 30.62%, #d0e6f1 90.72%);
   --background-modifier-border-alt: #fff;
   /* --color-accent: #70B4F9 !important;
-	--color-accent-rgb: 112, 180, 249 !important;
-	--color-accent-hsl: 210, 92%, 71% !important;
-	--h1-color: #70B4F9;
-	--h2-color: #e5989b; */
+    --color-accent-rgb: 112, 180, 249 !important;
+    --color-accent-hsl: 210, 92%, 71% !important;
+    --h1-color: #70B4F9;
+    --h2-color: #e5989b; */
 }
 
 .ulu-shark-d.theme-dark {
@@ -2097,10 +2097,10 @@ body {
   /* --accent-h: 194 !important;
     --accent-s: 92% !important;
     --accent-l: 62% !important;
-	--color-accent-hsl: var(--accent-h),
-	var(--accent-s),
-	var(--accent-l);
-	--color-accent: #45CEF7 !important;
+    --color-accent-hsl: var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
+    --color-accent: #45CEF7 !important;
     --color-accent-rgb: 69, 81, 247 !important;
     --h1-color: #45CEF7;
     --h2-color: #F745BF; */
@@ -3637,9 +3637,9 @@ body {
 }
 
 /* Usually, I delete the following and then write my own CSS here.
-	However, if this is helpful, feel free to leave it and edit it!
-	Otherwise, proceed/delete to the next code block for custom CSS below
-	*/
+    However, if this is helpful, feel free to leave it and edit it!
+    Otherwise, proceed/delete to the next code block for custom CSS below
+    */
 
 body {
   --file-line-width: 74ch;
@@ -3649,7 +3649,7 @@ body {
   --o-border: 1px solid var(--background-modifier-border);
 
   /* Typefaces
-	*/
+    */
   /* --font-title: "Monaspace", sans-serif;
     --font-interface-theme: "Satoshi", sans-serif;
     --font-text-theme: "Satoshi", sans-serif;
@@ -3663,7 +3663,7 @@ body {
   --font-mono: "Monaspace Neon", "Monaspace", monospace;
 
   /* Links
-	*/
+    */
   --link-color: var(--text-muted);
   --link-color-hover: var(--text-normal);
   --link-decoration: underline;
@@ -3681,7 +3681,7 @@ body {
   --link-unresolved-decoration-color: transparent;
 
   /* Text
-	*/
+    */
   --text-normal: var(--color-base-70);
   --text-muted: var(--color-base-50);
   --text-faint: var(--color-base-60);
@@ -3798,13 +3798,13 @@ input[type="number"]:focus-visible {
 
 /* .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-	border-right: var(--o-border);
-	border-right-width: var(--divider-width);
+    border-right: var(--o-border);
+    border-right-width: var(--divider-width);
 }
 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-	border-left: var(--o-border);
-	border-left-width: var(--divider-width);
+    border-left: var(--o-border);
+    border-left-width: var(--divider-width);
 } */
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
@@ -5107,8 +5107,8 @@ a,
 /* Disable external link icon
 */
 /* .external-link {
-	background-image: none;
-	padding-right: 0;
+    background-image: none;
+    padding-right: 0;
 } */
 
 .external-link {
@@ -6533,7 +6533,7 @@ div[aria-label="Help"]:hover {
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 
 .ulu-gummy-canvas1.theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p,
@@ -7090,7 +7090,7 @@ div[aria-label="Help"]:hover {
 
   /* background: linear-gradient(-45deg, var(--color-blue), var(--color-pink), var(--color-red), var(--color-accent));
 background-size: 400% 400%;
-	animation: gradient 15s ease infinite; */
+    animation: gradient 15s ease infinite; */
 
   padding: 80px;
 
@@ -7099,11 +7099,11 @@ background-size: 400% 400%;
 }
 
 /* .theme-dark .empty-state-container::before {
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
 .theme-light .empty-state-container::before {
-	opacity: 0.5;
+    opacity: 0.5;
 } */
 
 @keyframes gradient {
@@ -7773,7 +7773,7 @@ background-size: 400% 400%;
 }
 
 /* .theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p{
-	color: white;
+    color: white;
 } */
 
 .ulu-gradient-canvas1 .theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p,

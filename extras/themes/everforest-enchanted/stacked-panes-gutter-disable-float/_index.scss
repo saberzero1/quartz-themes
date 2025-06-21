@@ -1,0 +1,17 @@
+body:not(.stacked-panes-gutter-disable-float)
+  .workspace-tabs.mod-stacked
+  .mod-cm6.is-readable-line-width {
+  .cm-contentContainer {
+    display: grid !important;
+  }
+  :is(.cm-gutters, .cm-content) {
+    grid-area: 1 / -1;
+  }
+  .cm-content {
+    width: unset !important;
+  }
+  .cm-gutters {
+    justify-self: left;
+    translate: -100% 0;
+  }
+}

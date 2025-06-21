@@ -1,0 +1,19 @@
+body:is(.show-file-first-letter)
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header[data-type="markdown"]
+  .workspace-tab-header-inner-title {
+  display: block;
+  margin: 0px 3px 3px 3px;
+}
+
+body:is(.show-file-first-letter)
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header[data-type="markdown"]
+  .workspace-tab-header-inner-title {
+  display: block;
+  position: absolute;
+  font-size: xx-small;
+  max-width: 5px;
+  top: 9px;
+  left: 6px;
+}

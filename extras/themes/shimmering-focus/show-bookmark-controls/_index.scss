@@ -1,0 +1,5 @@
+body:not(.show-bookmark-controls)
+  .workspace-leaf-content[data-type="bookmarks"]
+  :is(.nav-buttons-container, .nav-header) {
+  display: none;
+}

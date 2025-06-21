@@ -147,7 +147,7 @@ body {
   color: white;
 }
 /* .mod-root .workspace-tab-header:not(.workspace-tab-header.is-active) + .workspace-tab-header:not(.workspace-tab-header.is-active) {
-	border-right: 1px solid #525252; 
+    border-right: 1px solid #525252; 
 } */
 .workspace .mod-root .workspace-tab-header {
   padding: 0 !important;
@@ -248,7 +248,7 @@ body {
 }
 .cm-line:has(.cm-hashtag) {
   /* padding-top: 0.5rem !important;
-	padding-bottom: 0.5rem !important; */
+    padding-bottom: 0.5rem !important; */
 }
 .cm-s-obsidian .cm-line.HyperMD-header {
   padding-top: 0 !important;

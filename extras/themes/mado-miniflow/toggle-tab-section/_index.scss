@@ -1,0 +1,10 @@
+body:not(.is-mobile).toggle-tab-section
+  .workspace-split.mod-vertical.mod-root
+  :is(
+    .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+    .workspace-tab-header-new-tab,
+    .workspace-tab-header-tab-list
+  ) {
+  opacity: 0;
+  transition: opacity 0.15s;
+}

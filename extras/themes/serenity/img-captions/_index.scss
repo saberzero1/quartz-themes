@@ -1,0 +1,17 @@
+.img-captions:not(:has(.image-captions-figure)) .image-embed[alt]:after {
+  content: attr(alt);
+  display: block;
+  font-size: 90%;
+  line-height: 1.4;
+  color: var(--text-faint);
+  text-align: center;
+  font-weight: bold;
+}
+
+.img-captions img[alt]:after {
+  content: attr(alt);
+  display: block;
+  font-size: 90%;
+  color: var(--text-faint);
+  text-align: center;
+}

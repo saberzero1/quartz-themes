@@ -1,0 +1,9 @@
+body:not(.no-animation) img {
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+body:not(.no-animation) img:hover {
+  transform: scale(1.03);
+}

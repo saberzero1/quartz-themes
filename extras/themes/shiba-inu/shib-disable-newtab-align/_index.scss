@@ -1,0 +1,27 @@
+body:not(.shib-floating-animated-tab-toggle):not(.shib-disable-newtab-align)
+  .workspace-split.mod-vertical
+  .workspace-tab-header-spacer {
+  display: none;
+}
+
+body:not(.shib-floating-animated-tab-toggle):not(.shib-disable-newtab-align)
+  .workspace-split.mod-vertical
+  .workspace-tab-header-new-tab {
+  margin-left: auto;
+}
+
+.shib-floating-tab-toggle:not(.shib-disable-newtab-align) .workspace-tab-header-container-inner {
+  width: 100%;
+}
+
+.shib-floating-animated-tab-toggle
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner,
+.shib-floating-animated-tab-toggle
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
+  width: unset;
+  gap: var(--shib-floating-tab-gap, 10px);
+}

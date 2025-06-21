@@ -1,0 +1,7 @@
+.treeWordWrap:not(.oldTreeViewImplementation)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .tree-item-inner {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}

@@ -1,0 +1,74 @@
+body:not(:not(.simple-backlinks)) .embedded-backlinks .tree-item-icon.collapse-icon,
+body:not(:not(.simple-backlinks)) .embedded-backlinks .search-result-file-matches,
+body:not(:not(.simple-backlinks)) .embedded-backlinks .tree-item-flair-outer {
+  display: none;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks {
+  border-top: none;
+  padding-top: 2em;
+}
+
+body:not(:not(.simple-backlinks)) .backlink-pane .tree-item-self.is-clickable[aria-label] {
+  pointer-events: none;
+  display: none;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .search-result-container {
+  display: block !important;
+  border-bottom: none;
+  margin-bottom: 0.5em;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks {
+  margin: 2em 0 !important;
+  /* decrease margin */
+}
+
+body:not(:not(.simple-backlinks))
+  .embedded-backlinks
+  .tree-item-self:not([aria-label])
+  .tree-item-inner {
+  color: var(--link-color);
+  font-size: var(--font-ui-small);
+  text-decoration: var(--link-decoration);
+  font-family: var(--link-font);
+  text-decoration-color: var(--link-decoration-color);
+  text-underline-offset: var(--link-underline-offset);
+}
+
+body:not(:not(.simple-backlinks))
+  .embedded-backlinks
+  .tree-item-self:not([aria-label])
+  .tree-item-inner:hover {
+  text-decoration-color: var(--link-color-hover);
+  color: var(--link-color-hover);
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .tree-item-self:hover {
+  background-color: transparent !important;
+  /* get rid of background color on hover for all backlink items */
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .tree-item-self:not([aria-label])::before {
+  content: "●";
+  font-size: 5.7px;
+  color: var(--text-muted);
+  margin-right: 10px;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .search-empty-state {
+  display: none;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .search-result {
+  border: none;
+  border-radius: revert;
+  margin: revert;
+  padding: revert;
+  background-color: revert;
+}
+
+body:not(:not(.simple-backlinks)) .embedded-backlinks .search-result-file-title {
+  font-weight: normal !important;
+}

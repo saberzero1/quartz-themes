@@ -1,0 +1,19 @@
+body.mu-automatic-folder-name-rainbow-colors
+  .nav-files-container.node-insert-event
+  > div
+  > .nav-file {
+  --mu-file-icon-color: var(--text-normal) !important;
+  --mu-folder-text-color: var(--text-normal) !important;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
+  --nav-item-background-selected: var(--text-normal);
+}
+
+body.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 1) {
+  --mu-folder-icon-color: var(--text-normal);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
+}

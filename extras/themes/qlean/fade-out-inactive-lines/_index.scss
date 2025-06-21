@@ -1,0 +1,21 @@
+body.fade-out-inactive-lines :is(.cm-line:not(.cm-active), .cm-embed-block) {
+  transition: var(--focus-transition-duration);
+  opacity: var(--inactive-opacity);
+}
+
+body.fade-out-inactive-lines :is(.cm-line:not(.cm-active), .cm-embed-block):hover {
+  opacity: var(--inactive-hover-opacity);
+}
+
+body.fade-out-inactive-lines .cm-line.cm-active {
+  opacity: 1;
+}
+
+body:not(.fade-out-inactive-lines)
+  .setting-item:is(
+    [data-id="inactive-opacity"],
+    [data-id="inactive-hover-opacity"],
+    [data-id="focus-transition-duration"]
+  ) {
+  display: none;
+}

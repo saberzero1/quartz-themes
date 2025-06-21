@@ -1,0 +1,8 @@
+body:not(.accent-headings-off) {
+  --h1-color: hsl(var(--accent-h), 52%, 72%);
+  --h2-color: hsl(var(--accent-h), 52%, 68%);
+  --h3-color: hsl(var(--accent-h), 52%, 64%);
+  --h4-color: hsl(var(--accent-h), 50%, 60%);
+  --h5-color: hsl(var(--accent-h), 40%, 52%);
+  --h6-color: hsl(var(--accent-h), 38%, 46%);
+}

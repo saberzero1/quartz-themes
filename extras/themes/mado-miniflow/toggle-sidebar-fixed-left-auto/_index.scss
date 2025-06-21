@@ -1,0 +1,4 @@
+body:is(.toggle-sidebar-fixed-left-auto) .mod-left-split .workspace-leaf-content {
+  min-width: var(--sidebar-size-left);
+  max-width: fit-content;
+}

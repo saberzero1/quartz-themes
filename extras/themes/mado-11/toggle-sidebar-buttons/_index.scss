@@ -1,0 +1,177 @@
+body.is-translucent:is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .mod-top:is(.mod-top-left-space, .mod-top-right-space)
+  .workspace-tab-header-container {
+  background: var(--color-base-00-trans-alt) !important;
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header-container {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace
+  > .workspace-split.mod-horizontal:not(.mod-right-split)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container,
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons):not(
+    .toggle-topright-opacity
+  )
+  .workspace
+  > .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  position: absolute;
+  width: 100%;
+  top: calc(var(--hovering-trigger-size) - var(--header-height));
+  background: var(--background-secondary);
+  border: var(--border);
+  border-top: none;
+  border-bottom-left-radius: var(--button-radius);
+  border-bottom-right-radius: var(--button-radius);
+  box-shadow: var(--panel-shadow);
+  z-index: 1;
+  -webkit-app-region: no-drag;
+  transition:
+    top 0.2s,
+    opacity 0.1s;
+  opacity: 0;
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace
+  > .workspace-split.mod-horizontal:not(.mod-right-split)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  border-left: none;
+  /* fix for macos */
+  /* margin-left:var(--frame-left-space); */
+  /* width:calc(100% - var(--frame-left-space)); */
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons):not(
+    .toggle-topright-opacity
+  )
+  .workspace
+  > .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  border-right: none;
+}
+
+body:is(
+    :not(.css-settings-manager),
+    .toggle-sidebar-buttons
+  ).is-grabbing.is-grabbing.is-grabbing.is-grabbing.is-grabbing
+  .app-container:not(.no-transition)
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-leaf {
+  padding-top: var(--header-height);
+}
+
+body.mod-macos.is-hidden-frameless:not(.is-mobile):is(
+    :not(.css-settings-manager),
+    .toggle-sidebar-buttons
+  ):not(.is-popout-window)
+  .workspace
+  > .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  /* width:calc(100% - 44px); */
+  /* border-right:var(--border); */
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace
+  > .workspace-split.mod-horizontal
+  .workspace-tabs.mod-top:is(.mod-top-left-space, .mod-top-right-space)
+  .workspace-tab-header-container
+  > div {
+  z-index: 1;
+  -webkit-app-region: no-drag;
+}
+
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace
+  > .workspace-split.mod-horizontal
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% - var(--hovering-trigger-size));
+  left: 0;
+  top: var(--header-height);
+  /* background:black; */
+  -webkit-app-region: drag;
+  pointer-events: none;
+  /* preven unclickabled buttons underneath it */
+  transition: height 0.2s;
+}
+
+body.mod-macos:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+  .workspace
+  > .workspace-split.mod-horizontal
+  .workspace-tabs.mod-top.mod-top-right-space
+  .workspace-tab-header-container:before {
+  /* height:0; */
+}
+
+body:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(.toggle-sidebar-buttons)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container,
+body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-horizontal):not(.toggle-sidebar-buttons)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container {
+  left: 13px;
+  right: unset;
+  top: 0px;
+  box-shadow: var(--window-shadow);
+}
+
+body.mod-macos:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(.toggle-sidebar-buttons)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container,
+body.mod-macos:not(.is-mobile):is(.TEB-hide-horizontal):not(.toggle-sidebar-buttons)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container {
+  left: var(--frame-left-space);
+}
+
+body:not(.toggle-sidebar-buttons).css-settings-manager
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:hover:hover
+  + .workspace-tab-container
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container,
+body:not(.toggle-sidebar-buttons).css-settings-manager
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container:hover:hover {
+  pointer-events: initial;
+  top: 0px;
+  opacity: 1;
+}
+
+body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal).css-settings-manager
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container:hover:hover {
+  top: 13px;
+}
+
+body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal)
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:hover:hover
+  + .workspace-tab-container
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container {
+  pointer-events: initial;
+  opacity: 1;
+  right: 13px;
+  left: unset;
+  top: 13px;
+}

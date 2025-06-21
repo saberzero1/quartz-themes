@@ -1,0 +1,13 @@
+body:not(.no-dv-table-border)
+  :is(.markdown-preview-view, .markdown-source-view):not(.cards)
+  .table-view-table,
+body:not(.no-dv-table-border)
+  :is(.markdown-preview-view, .markdown-source-view):not(.cards)
+  .table-view-table
+  th,
+body:not(.no-dv-table-border)
+  :is(.markdown-preview-view, .markdown-source-view):not(.cards)
+  .table-view-table
+  td {
+  border: var(--table-border-width) solid var(--table-border-color);
+}

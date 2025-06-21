@@ -90,26 +90,38 @@ export function styleSettingToCss(setting, value) {
  *
  * @param {string} cssString - The full CSS source
  * @param {string} classToggleId - The class-toggle id (e.g. "my-css-class")
- * @returns {string} - The rewritten CSS string
+ * @returns {string, string, string} - The rewritten CSS string, dark theme CSS string, light theme CSS string
  */
 export function extractClassToggleCss(cssString, classToggleId) {
   const root = postcss.parse(cssString)
-  const classSelector = `.${classToggleId}`
+  const classSelector = classToggleId.startsWith(".") ? classToggleId : `.${classToggleId}`
   let output = ""
+  let darkOutput = ""
+  let lightOutput = ""
   root.walkRules(rule => {
     // For each selector in the rule (can be comma-separated)
     const selectors = (rule.selectors || rule.selector.split(",").map(s => s.trim()))
     const matchingSelectors = selectors.filter(sel => sel.includes(classSelector))
     if (matchingSelectors.length > 0) {
-      console.log("Matching selectors for class-toggle:", matchingSelectors)
       // Remove the .class from the selector
-      const newSelectors = matchingSelectors.map(sel => sel.replaceAll(classSelector, "").replace(/\s+/g, " ").trim())
-      // Build the rule string
-      output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString()).join("\n")}\n}\n\n`
+      const newSelectors = matchingSelectors.map(sel => sel.replace(new RegExp(`${classSelector}(?=[\.\s])`, "g"), "").replace(/\s+/g, " ").trim())
+      // For all non-dark/light selectors, add to output
+      if (!newSelectors.some(sel => sel.includes(".theme-dark") || sel.includes(".theme-light"))) {
+        output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+      }
+      // If the class-toggle is for dark theme, add to darkOutput
+      // Also remove the `.dark-theme` class from the selector
+      if (newSelectors.some(sel => sel.includes(".theme-dark"))) {
+        darkOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-dark(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+      }
+      // If the class-toggle is for light theme, add to lightOutput
+      // Also remove the `.light-theme` class from the selector
+      if (newSelectors.some(sel => sel.includes(".theme-light"))) {
+        lightOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-light(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+      }
     }
   })
-  console.log(output.trim())
-  return output.trim()
+  return [output.trim(), darkOutput.trim(), lightOutput.trim()]
 }
 
 /**

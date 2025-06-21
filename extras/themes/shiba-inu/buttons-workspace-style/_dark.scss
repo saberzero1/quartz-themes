@@ -1,0 +1,19 @@
+body.theme-dark .graph-controls button,
+body.theme-dark .modal button,
+body.theme-dark .popover button,
+body.theme-dark:not(.buttons-plugin-style) .workspace button {
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.3) inset;
+  border-radius: 5px;
+}
+
+body.theme-dark .graph-controls button:active,
+body.theme-dark .modal button:active,
+body.theme-dark .popover button:active,
+body.theme-dark .workspace button:active {
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.15) inset,
+    0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}

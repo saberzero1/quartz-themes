@@ -1,0 +1,28 @@
+body:not(.full-width-off)
+  .workspace-leaf-content[data-type="markdown"]
+  .image-embed:not(.canvas-node-content) {
+  display: block;
+  border-radius: var(--radius-s);
+  width: 100%;
+  line-height: 0;
+}
+
+body:not(.full-width-off)
+  .workspace-leaf-content[data-type="markdown"]
+  img:not([width]):not([class]) {
+  background-color: var(--background-secondary);
+  width: 100%;
+  max-height: 480px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  text-align: center;
+}
+
+body:not(.full-width-off) table,
+body:not(.full-width-off) .table-wrapper {
+  width: 100% !important;
+}
+
+body:not(.full-width-off) .workspace-leaf-content[data-type="markdown"] iframe.external-embed {
+  width: 100%;
+}

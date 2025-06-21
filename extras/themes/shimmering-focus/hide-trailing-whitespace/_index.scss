@@ -1,0 +1,15 @@
+body:not(.hide-trailing-whitespace)
+  .view-content
+  > .cm-s-obsidian
+  > div
+  > .cm-scroller
+  > .cm-sizer
+  > .cm-contentContainer
+  > .cm-content
+  > .cm-line
+  > :is(.cm-trailing-space-a, .cm-trailing-space-b, .cm-trailing-space-new-line):after {
+  color: var(--text-faint);
+  content: "·";
+  font-size: 1em;
+  font-weight: 600;
+}

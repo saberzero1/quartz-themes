@@ -1,10 +1,10 @@
 body {
   /*
-	List of variables is placed in body rather than :root so 
-	that we can	combine all property types including colors
-	and sort alphabetically to maximize readability in
-	the compiled app.css file.
-	----------------------------------------------------- */
+    List of variables is placed in body rather than :root so 
+    that we can    combine all property types including colors
+    and sort alphabetically to maximize readability in
+    the compiled app.css file.
+    ----------------------------------------------------- */
   /* Animations */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
@@ -2972,12 +2972,12 @@ body.is-phone .view-header-nav-buttons {
   overflow: hidden;
   background-color: var(--background-primary);
   /*
-	&.is-in-sidebar {
-		background-color: var(--background-secondary);
-		.workspace-leaf {
-			background-color: var(--background-secondary);
-		}
-	}*/
+    &.is-in-sidebar {
+        background-color: var(--background-secondary);
+        .workspace-leaf {
+            background-color: var(--background-secondary);
+        }
+    }*/
 }
 .workspace-fake-target-overlay > * {
   width: 100%;
@@ -3542,7 +3542,7 @@ body > .workspace-split {
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
   width: var(--tab-stacked-pane-width);
   /* This is here for performance reasons - it helps the engine know
-		   what's out of view and avoid rendering them */
+           what's out of view and avoid rendering them */
   contain: strict;
 }
 .workspace
@@ -4181,7 +4181,7 @@ select:focus,
 }
 /*
 .is-mobile & .cm-fold-indicator .collapse-indicator {
-	opacity: 1;
+    opacity: 1;
 }*/
 h1:hover .collapse-indicator,
 h2:hover .collapse-indicator,
@@ -5188,27 +5188,27 @@ body:not(.native-scrollbars) * {
 }
 /* Scroll indicator for sidebar containers
 body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
-	.item-list,
-	.nav-files-container,
-	.search-result-container,
-	.tag-container,
-	.outgoing-link-pane,
-	.backlink-pane {
-		background:
-			linear-gradient(
-				var(--background-secondary) 10%,
-				rgba(0, 0, 0, 0)
-			)
-			center top,
-			linear-gradient(
-				var(--background-modifier-border) 100%,
-				rgba(0, 0, 0, 0)
-			)
-			center top;
-		background-repeat: no-repeat;
-		background-size: 100% 40px, 91% 1px;
-		background-attachment: local, scroll;
-	}
+    .item-list,
+    .nav-files-container,
+    .search-result-container,
+    .tag-container,
+    .outgoing-link-pane,
+    .backlink-pane {
+        background:
+            linear-gradient(
+                var(--background-secondary) 10%,
+                rgba(0, 0, 0, 0)
+            )
+            center top,
+            linear-gradient(
+                var(--background-modifier-border) 100%,
+                rgba(0, 0, 0, 0)
+            )
+            center top;
+        background-repeat: no-repeat;
+        background-size: 100% 40px, 91% 1px;
+        background-attachment: local, scroll;
+    }
 }
  */
 .suggestion-container {
@@ -6525,16 +6525,16 @@ code[class*="language-"] {
   color: var(--text-muted);
   position: relative;
   /*.tag,
-	.frontmatter-alias {
-		text-decoration: none;
-		background-color: var(--background-secondary);
-		border-radius: 30px;
-		color: var(--text-muted);
-		padding: var(--size-2-2) var(--size-4-2);
-		line-height: 1;
-		white-space: nowrap;
-	}
-	*/
+    .frontmatter-alias {
+        text-decoration: none;
+        background-color: var(--background-secondary);
+        border-radius: 30px;
+        color: var(--text-muted);
+        padding: var(--size-2-2) var(--size-4-2);
+        line-height: 1;
+        white-space: nowrap;
+    }
+    */
 }
 .markdown-embed-content .frontmatter-container {
   display: none;
@@ -8394,8 +8394,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag,
   padding: var(--size-4-3) var(--size-4-3) var(--size-4-8);
   flex: 1 0 0;
   /* #todo This should be removed and make the DOM changes instead
-		Section headers for linked/unlinked mentions
-	 */
+        Section headers for linked/unlinked mentions
+     */
 }
 .backlink-pane .search-result-container,
 .outgoing-link-pane .search-result-container {

@@ -1,0 +1,13 @@
+.nav-2:not(.theme-black) .nav-file {
+  background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+  margin-bottom: 0.3em;
+  border-radius: 3px 0px 0px 3px !important;
+  border-radius: 0px !important;
+}
+
+.nav-2.theme-black .nav-file {
+  background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.03) !important;
+  margin-bottom: 0.3em;
+  border-radius: 3px 0px 0px 3px !important;
+  border-radius: 0px !important;
+}

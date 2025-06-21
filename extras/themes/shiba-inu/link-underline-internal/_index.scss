@@ -1,0 +1,9 @@
+body:not(.link-underline-internal)
+  .markdown-source-view.mod-cm6
+  .cm-hmd-internal-link
+  > :not(.is-unresolved).cm-underline,
+body:not(.link-underline-internal)
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link:not(.is-unresolved) {
+  text-decoration-line: none;
+}

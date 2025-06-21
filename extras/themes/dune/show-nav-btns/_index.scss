@@ -1,0 +1,8 @@
+body:not(.is-phone):not(.show-nav-btns) .nav-buttons-container {
+  opacity: 0.2;
+  transition: opacity 1s ease-out;
+}
+
+body:not(.is-phone):not(.show-nav-btns) .nav-buttons-container:hover {
+  opacity: 1;
+}

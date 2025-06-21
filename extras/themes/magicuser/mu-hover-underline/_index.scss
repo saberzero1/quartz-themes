@@ -1,0 +1,24 @@
+body.mu-hover-underline
+  .markdown-reading-view
+  .markdown-preview-sizer
+  *:not(.mod-header, .inline-title):hover,
+body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--mu-hover-underline-color) !important;
+  text-decoration-skip-ink: none;
+  text-decoration-style: var(--mu-hover-underline-style) !important;
+  text-decoration-thickness: var(--mu-hover-underline-thickness) !important;
+  text-underline-offset: var(--mu-hover-underline-offset) !important;
+}
+
+.mu-hover-underline-style-dashed {
+  --mu-hover-underline-style: dashed;
+}
+
+.mu-hover-underline-style-dotted {
+  --mu-hover-underline-style: dotted;
+}
+
+.mu-hover-underline-style-double {
+  --mu-hover-underline-style: double;
+}

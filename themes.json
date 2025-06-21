@@ -49,11 +49,7 @@
       "variations": [
         {
           "name": "colorful-headings",
-          "rules": {
-            "at-colorful-headings": {
-              "type": "class-toggle"
-            }
-          }
+          "injects": ["at-colorful-headings"]
         }
       ],
       "extras": [],

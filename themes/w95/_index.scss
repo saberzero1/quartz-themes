@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes light-only */
 
-:root:root {
+:root:root,
+html[saved-theme="light"] {
   --accent-1: #ffffff;
   --accent-6: #00007b;
   --accent-h: 240;
@@ -79,9 +80,87 @@
   --text-faint: #4f5057;
   --text-highlight-bg: #485e3066;
   color-scheme: light;
-
-  .callout {
+  --accent-1: #ffffff;
+  --accent-6: #00007b;
+  --accent-h: 240;
+  --accent-l: 24%;
+  --accent-s: 100%;
+  --background-modifier-border: var(--color-base-60);
+  --background-modifier-border-focus: var(--background-primary);
+  --background-modifier-border-hover: var(--background-primary);
+  --background-primary: #bdbebd;
+  --background-secondary: #bdbebd;
+  --bold-color: #000000;
+  --code-background: var(--accent-1);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --graph-line: var(--background-primary, var(--background-modifier-border-focus));
+  --h1-color: var(--header-color);
+  --h2-color: var(--header-color);
+  --h3-color: var(--header-color);
+  --h4-color: var(--header-color);
+  --h5-color: var(--header-color);
+  --h6-color: var(--header-color);
+  --header-color: #34548a;
+  --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
+  --interactive-accent: var(--accent-6);
+  --interactive-accent-hover: var(--background-primary);
+  --italic-color: #343b58;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-item-background-active: #00007b;
+  --nav-item-color-active: var(--accent-1);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-faint: #4f5057;
+  --text-highlight-bg: #485e3066;
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -542,10 +621,85 @@ html {
   --text-faint: #4f5057;
   --text-highlight-bg: #485e3066;
   color-scheme: light;
+  --accent-1: #ffffff;
+  --accent-6: #00007b;
+  --accent-h: 240;
+  --accent-l: 24%;
+  --accent-s: 100%;
+  --background-modifier-border: var(--color-base-60);
+  --background-modifier-border-focus: var(--background-primary);
+  --background-modifier-border-hover: var(--background-primary);
+  --background-primary: #bdbebd;
+  --background-secondary: #bdbebd;
+  --bold-color: #000000;
+  --code-background: var(--accent-1);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f6f6f6;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --graph-line: var(--background-primary, var(--background-modifier-border-focus));
+  --h1-color: var(--header-color);
+  --h2-color: var(--header-color);
+  --h3-color: var(--header-color);
+  --h4-color: var(--header-color);
+  --h5-color: var(--header-color);
+  --h6-color: var(--header-color);
+  --header-color: #34548a;
+  --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
+  --interactive-accent: var(--accent-6);
+  --interactive-accent-hover: var(--background-primary);
+  --italic-color: #343b58;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-item-background-active: #00007b;
+  --nav-item-color-active: var(--accent-1);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-faint: #4f5057;
+  --text-highlight-bg: #485e3066;
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

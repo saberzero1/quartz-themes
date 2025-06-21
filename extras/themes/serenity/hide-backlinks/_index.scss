@@ -1,0 +1,4 @@
+body:not(:not(.hide-backlinks)) .markdown-source-view .embedded-backlinks:not(.mk-inline-context),
+body:not(:not(.hide-backlinks)) .markdown-source-view .footnotes {
+  display: none;
+}

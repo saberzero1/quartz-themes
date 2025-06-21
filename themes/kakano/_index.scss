@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme="dark"] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   --background-modifier-border: var(--theme-color-baseDarkened25);
   --background-modifier-border-focus: var(--theme-color-baseDarkened25);
   --background-modifier-hover: var(--theme-color-base);
@@ -67,13 +68,80 @@
   --text-normal: var(--theme-color-baseLightened60);
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   color-scheme: dark;
-
-  .callout {
+  --background-modifier-border: var(--theme-color-baseDarkened25);
+  --background-modifier-border-focus: var(--theme-color-baseDarkened25);
+  --background-modifier-hover: var(--theme-color-base);
+  --background-primary: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.95));
+  --background-prompt: var(--theme-color-baseDarkened80);
+  --background-secondary: var(--theme-color-baseDarkened70);
+  --caret-color: hsl(var(--accent-h), 150%, 80%);
+  --collapse-icon-color: var(--theme-color-base);
+  --collapse-icon-color-collapsed: var(--theme-color-base);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
+  --highlight-mix-blend-mode: darken;
+  --icon-color: var(--theme-color-base);
+  --interactive-accent: var(--theme-color-base);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --nav-indentation-guide-color: var(--theme-color-baseTransparent25);
+  --nav-item-color: var(--theme-color-baseLightened60);
+  --nav-item-color-active: var(--theme-color-baseDarkened80);
+  --search-icon-color: var(--theme-color-base);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s) * 1.2), calc(var(--accent-l)));
+  --text-accent: var(--color-accent-1);
+  --text-faint: var(--theme-color-baseLightened25);
+  --text-normal: var(--theme-color-baseLightened60);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --background-modifier-border: var(--theme-color-baseLightened25);
   --background-modifier-border-focus: var(--theme-color-base);
   --background-modifier-hover: var(--theme-color-base);
@@ -132,9 +200,74 @@
   --text-normal: var(--theme-color-baseDarkened90);
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   color-scheme: light;
-
-  .callout {
+  --background-modifier-border: var(--theme-color-baseLightened25);
+  --background-modifier-border-focus: var(--theme-color-base);
+  --background-modifier-hover: var(--theme-color-base);
+  --background-primary: white;
+  --background-prompt: var(--theme-color-baseLightened95);
+  --background-secondary: var(--theme-color-baseLightened60);
+  --caret-color: hsl(var(--accent-h), 150%, 50%);
+  --collapse-icon-color: var(--theme-color-base);
+  --collapse-icon-color-collapsed: var(--theme-color-base);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
+  --highlight-mix-blend-mode: darken;
+  --icon-color: var(--theme-color-base);
+  --interactive-accent: var(--theme-color-base);
+  --interactive-accent-hover: var(--theme-color-base);
+  --mono-rgb-100: 0, 0, 0;
+  --nav-indentation-guide-color: var(--theme-color-baseTransparent25);
+  --nav-item-color: var(--theme-color-baseDarkened80);
+  --nav-item-color-active: var(--theme-color-baseLightened80);
+  --search-icon-color: var(--theme-color-base);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l) * 0.9));
+  --text-faint: var(--theme-color-baseDarkened70);
+  --text-normal: var(--theme-color-baseDarkened90);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -709,10 +842,73 @@ html[saved-theme="dark"] {
   --text-normal: var(--theme-color-baseLightened60);
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
   color-scheme: dark;
+  --background-modifier-border: var(--theme-color-baseDarkened25);
+  --background-modifier-border-focus: var(--theme-color-baseDarkened25);
+  --background-modifier-hover: var(--theme-color-base);
+  --background-primary: color-mix(in srgb, var(--theme-color-base), black calc(100% * 0.95));
+  --background-prompt: var(--theme-color-baseDarkened80);
+  --background-secondary: var(--theme-color-baseDarkened70);
+  --caret-color: hsl(var(--accent-h), 150%, 80%);
+  --collapse-icon-color: var(--theme-color-base);
+  --collapse-icon-color-collapsed: var(--theme-color-base);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-100: #dadada;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
+  --highlight-mix-blend-mode: darken;
+  --icon-color: var(--theme-color-base);
+  --interactive-accent: var(--theme-color-base);
+  --interactive-accent-hover: var(--color-accent-1);
+  --mono-rgb-100: 255, 255, 255;
+  --nav-indentation-guide-color: var(--theme-color-baseTransparent25);
+  --nav-item-color: var(--theme-color-baseLightened60);
+  --nav-item-color-active: var(--theme-color-baseDarkened80);
+  --search-icon-color: var(--theme-color-base);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s) * 1.2), calc(var(--accent-l)));
+  --text-accent: var(--color-accent-1);
+  --text-faint: var(--theme-color-baseLightened25);
+  --text-normal: var(--theme-color-baseLightened60);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.1));
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
@@ -779,10 +975,72 @@ html[saved-theme="light"] {
   --text-normal: var(--theme-color-baseDarkened90);
   --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
   color-scheme: light;
+  --background-modifier-border: var(--theme-color-baseLightened25);
+  --background-modifier-border-focus: var(--theme-color-base);
+  --background-modifier-hover: var(--theme-color-base);
+  --background-primary: white;
+  --background-prompt: var(--theme-color-baseLightened95);
+  --background-secondary: var(--theme-color-baseLightened60);
+  --caret-color: hsl(var(--accent-h), 150%, 50%);
+  --collapse-icon-color: var(--theme-color-base);
+  --collapse-icon-color-collapsed: var(--theme-color-base);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #ffffff;
+  --color-base-100: #222222;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
+  --highlight-mix-blend-mode: darken;
+  --icon-color: var(--theme-color-base);
+  --interactive-accent: var(--theme-color-base);
+  --interactive-accent-hover: var(--theme-color-base);
+  --mono-rgb-100: 0, 0, 0;
+  --nav-indentation-guide-color: var(--theme-color-baseTransparent25);
+  --nav-item-color: var(--theme-color-baseDarkened80);
+  --nav-item-color-active: var(--theme-color-baseLightened80);
+  --search-icon-color: var(--theme-color-base);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
+  --tag-color: hsl(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l) * 0.9));
+  --text-faint: var(--theme-color-baseDarkened70);
+  --text-normal: var(--theme-color-baseDarkened90);
+  --theme-color-shadow: hsl(var(--base-h), calc(var(--base-s) * 0.75), calc(var(--base-l) * 0.75));
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

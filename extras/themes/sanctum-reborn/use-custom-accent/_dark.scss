@@ -1,0 +1,6 @@
+.theme-dark:not(.use-custom-accent),
+.sanctum-default-dark:not(.use-custom-accent),
+.sanctum-contrast-dark:not(.use-custom-accent),
+.sanctum-black:not(.use-custom-accent) {
+  --color-accent-rgb: var(--color-accent-rgb-d);
+}

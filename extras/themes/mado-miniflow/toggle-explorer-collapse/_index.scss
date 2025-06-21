@@ -1,0 +1,30 @@
+body:is(:not(.css-settings-manager), .toggle-explorer-collapse) .nav-folder-title .collapse-icon {
+  display: none;
+}
+
+body.css-settings-manager:not(.toggle-explorer-collapse)
+  .workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  h1 {
+  padding-left: 33px;
+}
+
+body.css-settings-manager:not(.toggle-explorer-collapse)
+  .workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  .collapse-indicator
+  svg {
+  position: absolute;
+  left: 15px;
+  top: 16px;
+}
+
+body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  .collapse-indicator
+  svg {
+  display: none;
+}

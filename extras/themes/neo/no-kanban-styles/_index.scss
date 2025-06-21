@@ -1,0 +1,70 @@
+body:not(.no-kanban-styles) .kanban-plugin {
+  --dot-color: hsl(0 0% 40% / 20%);
+  --dot-spacing: 20px;
+  --dot-size: 1px;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-title-wrapper {
+  padding: 8px 8px 8px 12px;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
+  background-color: var(--kanban-item-new-background);
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__lane-items > div {
+  margin-top: 6px;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__board {
+  background-image: radial-gradient(
+    circle,
+    var(--dot-color) var(--dot-size),
+    transparent var(--dot-size)
+  );
+  border-top: var(--thin-border);
+  background-size: var(--dot-spacing) var(--dot-spacing);
+  background-attachment: local;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__board > div {
+  margin: 0 auto;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-form {
+  border-top: none;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__lane-header-wrapper {
+  border-bottom: 0;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin button {
+  box-shadow: none;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-button-wrapper > button:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-button-wrapper {
+  border-top: none;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__lane {
+  border: 1px solid transparent;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-content-wrapper {
+  box-shadow: none;
+}
+
+body:not(.no-kanban-styles):not(.is-mobile) .kanban-plugin__grow-wrap > textarea:focus {
+  box-shadow: none;
+}
+
+body:not(.no-kanban-styles) .kanban-plugin__item-input-actions button,
+body:not(.no-kanban-styles) .kanban-plugin__lane-input-actions button {
+  font-size: var(--font-adaptive-small);
+}

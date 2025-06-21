@@ -1,0 +1,103 @@
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder .nav-folder-title,
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder .nav-file-title,
+body:not(.vibrant-folders) .nav-files-container .collapse-icon svg.svg-icon,
+body:not(.vibrant-folders) .nav-files-container + .tree-item-self .tree-item-icon {
+  color: var(--800) !important;
+  --icon-color: var(--800);
+}
+
+body:not(.vibrant-folders)
+  .nav-files-container
+  > div
+  > .nav-folder-children
+  > .nav-file
+  .nav-file-title {
+  color: var(--800);
+}
+
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder .nav-folder-children {
+  border-color: rgba(var(--800-RGB), 1);
+}
+
+body:is(.vibrant-folders)
+  .nav-files-container
+  > div
+  > .nav-folder-children
+  > .nav-file
+  .nav-file-title {
+  color: var(--800);
+}
+
+body:is(.vibrant-folders) .nav-folder-children > .nav-folder,
+body:is(.vibrant-folders) .nav-files-container > div > .nav-folder,
+body:is(.vibrant-folders) [data-type="bookmarks"] .tree-item {
+  --colorful: var(--C000-RGB);
+  --text-color: var(--000) !important;
+  --icon-color: var(--000);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 2),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 2),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 2) {
+  --colorful: var(--C001-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 3),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 3),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 3) {
+  --colorful: var(--C002-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 4),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 4),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 4) {
+  --colorful: var(--C003-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 5),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 5),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 5) {
+  --colorful: var(--C004-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 6),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 6),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 6) {
+  --colorful: var(--C005-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 7),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 7),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 7) {
+  --colorful: var(--C006-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 8),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 8),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 8) {
+  --colorful: var(--C007-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 9),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 9),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 9) {
+  --colorful: var(--C008-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 10),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 10),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 10) {
+  --colorful: var(--C009-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 11),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 11),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 11) {
+  --colorful: var(--C010-RGB);
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n + 12),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n + 12),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n + 12) {
+  --colorful: var(--C011-RGB);
+}

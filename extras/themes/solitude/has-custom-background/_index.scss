@@ -1,0 +1,41 @@
+body:not(.is-mobile):is(.has-custom-background) {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--custom-background);
+}
+
+body:not(.is-mobile):is(.has-custom-background) .workspace,
+body:not(.is-mobile):is(.has-custom-background) .workspace-split.mod-root {
+  background-color: transparent;
+}
+
+body:not(.is-mobile):is(.has-custom-background) .workspace-split.mod-left-split {
+  margin-left: var(--panel-spacing);
+}
+
+body:not(.is-mobile):is(.has-custom-background) .workspace-split.mod-right-split {
+  margin-right: var(--panel-spacing);
+}
+
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-split.mod-root
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner,
+body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-tab-list .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-new-tab .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background) .sidebar-toggle-button .clickable-icon {
+  background-color: var(--color-base-25);
+}
+
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-split.mod-root
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner,
+body:not(.is-mobile):is(.has-custom-background)
+  .workspace-tab-header-tab-list:hover
+  .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background) .workspace-tab-header-new-tab:hover .clickable-icon,
+body:not(.is-mobile):is(.has-custom-background) .sidebar-toggle-button:hover .clickable-icon {
+  background-color: var(--color-base-30);
+}

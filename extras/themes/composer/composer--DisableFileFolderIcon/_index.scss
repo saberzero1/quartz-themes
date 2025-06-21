@@ -1,0 +1,25 @@
+body:not(.composer--DisableFileFolderIcon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .tree-item-icon.collapse-icon,
+body:not(.composer--DisableFileFolderIcon)
+  .workspace-leaf-content[data-type="bookmarks"]
+  .tree-item-icon.collapse-icon {
+  background-color: var(--icon-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M4 9.333 4.967 7.4a1.333 1.333 0 0 1 1.193-.733h7.173m0 0a1.333 1.333 0 0 1 1.294 1.666l-1.034 4a1.333 1.333 0 0 1-1.293 1H2.667A1.333 1.333 0 0 1 1.333 12V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6H12a1.333 1.333 0 0 1 1.333 1.333v1.334Z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+body:not(.composer--DisableFileFolderIcon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .is-collapsed
+  .tree-item-icon.collapse-icon,
+body:not(.composer--DisableFileFolderIcon)
+  .workspace-leaf-content[data-type="bookmarks"]
+  .is-collapsed
+  .tree-item-icon.collapse-icon {
+  background-color: var(--icon-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M2.667 13.333h10.666A1.333 1.333 0 0 0 14.667 12V5.333A1.333 1.333 0 0 0 13.333 4H8.047a1.333 1.333 0 0 1-1.107-.6l-.547-.8A1.333 1.333 0 0 0 5.287 2h-2.62a1.333 1.333 0 0 0-1.334 1.333V12c0 .733.6 1.333 1.334 1.333Z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}

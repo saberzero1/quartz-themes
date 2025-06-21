@@ -1,0 +1,87 @@
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header
+  .nav-buttons-container,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header
+  .nav-action-button,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header
+  svg.svg-icon,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header
+  .nav-buttons-container,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header
+  .nav-action-button,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header
+  svg.svg-icon {
+  transition: var(--anim-duration-fast) var(--anim-duration-fast) !important;
+}
+
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container {
+  gap: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container
+  .nav-action-button,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container
+  .nav-action-button {
+  flex-grow: 0;
+  background-color: var(--background-modifier-hover);
+  padding: 2px;
+  width: unset;
+  height: unset;
+}
+
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container
+  svg.svg-icon,
+body:not(.is-mobile):not(.hide-nav-header-off)
+  .mod-sidedock
+  .workspace-leaf-content:not([data-type="zotero-annotation-view"])
+  > .view-content
+  > .nav-header:not(:hover):not(:has(.has-active-menu))
+  .nav-buttons-container
+  svg.svg-icon {
+  --icon-size: 0px;
+}

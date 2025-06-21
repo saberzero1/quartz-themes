@@ -1,0 +1,4 @@
+body:not(.is-mobile).toggle-sidebar-toggle-left .sidebar-toggle-button.mod-left {
+  opacity: 0;
+  transition: opacity 0.15s;
+}

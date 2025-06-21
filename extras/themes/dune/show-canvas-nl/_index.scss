@@ -1,0 +1,13 @@
+body:not(.show-canvas-nl) .canvas-wrapper:not(.mod-readonly) .canvas-node-label {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  font-weight: bold;
+  background: gray;
+  color: white;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+body:not(.show-canvas-nl) .canvas-wrapper:not(.mod-readonly) .canvas-node-label:hover {
+  opacity: 1;
+}

@@ -1,0 +1,9 @@
+body:not(.deactivate-window-border, .is-maximized, .is-mobile) {
+  border: 1px solid var(--color-accent-1);
+}
+
+body:not(.deactivate-window-border, .is-maximized, .is-mobile)
+  .titlebar-button-container.mod-right {
+  border-top: 1px solid var(--color-accent-1);
+  border-right: 1px solid var(--color-accent-1);
+}

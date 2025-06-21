@@ -1,0 +1,11 @@
+.muted-code-activeline-bg
+  .markdown-source-view.cm-s-obsidian.mod-cm6
+  .cm-active.cm-line.HyperMD-codeblock-bg {
+  background-color: var(--background-code) !important;
+}
+
+.muted-code-activeline-bg
+  .markdown-source-view.cm-s-obsidian.mod-cm6
+  .cm-active.cm-line.HyperMD-codeblock-bg::before {
+  background-color: unset !important;
+}

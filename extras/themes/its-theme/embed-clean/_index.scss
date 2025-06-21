@@ -1,0 +1,26 @@
+.embed-clean .internal-embed > .markdown-embed,
+.embed-clean .internal-embed.is-loaded:not(.image-embed) {
+  --embed-padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.embed-clean .internal-embed > .markdown-embed:not(:hover),
+.embed-clean .internal-embed.is-loaded:not(.image-embed):not(:hover) {
+  --embed-border-color: transparent;
+  --embed-border-left-color: var(--embed-border-color);
+  --embed-border-right-color: var(--embed-border-color);
+  --embed-border-top-color: var(--embed-border-color);
+  --embed-border-bottom-color: var(--embed-border-color);
+  --embed-border-left: var(--embed-thickness) var(--embed-border-type)
+    var(--embed-border-left-color);
+  --embed-border-right: var(--embed-thickness) var(--embed-border-type)
+    var(--embed-border-right-color);
+  --embed-border-top: var(--embed-thickness) var(--embed-border-type) var(--embed-border-top-color);
+  --embed-border-bottom: var(--embed-thickness) var(--embed-border-type)
+    var(--embed-border-bottom-color);
+}
+
+.embed-clean .internal-embed.inline-embed {
+  --embed-title-padding: 0;
+}

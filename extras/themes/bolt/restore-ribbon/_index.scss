@@ -1,0 +1,72 @@
+.restore-ribbon .workspace-ribbon {
+  background-color: var(--lower-accent) !important;
+}
+
+.restore-ribbon .workspace-ribbon::before {
+  background-color: var(--upper-accent) !important;
+}
+
+.restore-ribbon .workspace-ribbon * {
+  color: var(--on-upper-accent) !important;
+}
+
+body:not(.restore-ribbon) .workspace-ribbon {
+  bottom: 20px;
+  left: 30px;
+  flex-direction: column-reverse;
+}
+
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon {
+  position: absolute;
+}
+
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon:not(:hover) {
+  padding: calc(var(--icon-size) + 1px);
+}
+
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon {
+  box-shadow: var(--shadow-s);
+  border: none !important;
+  background-color: var(--surface) !important;
+  border-radius: var(--radius-s);
+  width: calc(var(--ribbon-width) + 1px);
+  transform: scale(1.5) translateY(-16%);
+  transition: 0.25s padding-top !important;
+}
+
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon svg {
+  color: vaR(--primary) !important;
+}
+
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon.mod-left:not(:hover):before {
+  border: none !important;
+}
+
+body:not(.restore-ribbon):not(.is-phone)
+  .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
+  .side-dock-actions,
+body:not(.restore-ribbon):not(.is-phone)
+  .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
+  .side-dock-settings,
+body:not(.restore-ribbon):not(.is-phone)
+  .workspace-ribbon:not(.is-collapsed).side-dock-ribbon.mod-left
+  .side-dock-actions,
+body:not(.restore-ribbon):not(.is-phone) .workspace-ribbon:hover:before {
+  display: none;
+}
+
+body:not(.restore-ribbon):not(.is-phone) .side-dock-ribbon.mod-left:not(:hover) .side-dock-actions,
+body:not(.restore-ribbon):not(.is-phone)
+  .side-dock-ribbon.mod-left:not(:hover)
+  .side-dock-settings {
+  display: none;
+}
+
+body:not(.restore-ribbon):not(.is-phone)
+  .side-dock-ribbon.mod-left:hover
+  .sidebar-toggle-button.mod-left {
+  position: relative;
+  /* this is the magic trick right here. */
+  align-self: center;
+  margin-bottom: -13px;
+}

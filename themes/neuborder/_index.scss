@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes light-only */
 
-:root:root {
+:root:root,
+html[saved-theme="light"] {
   --accent-h: var(--accent-light-h);
   --accent-l: var(--accent-light-l);
   --accent-light-h: 232;
@@ -79,9 +80,87 @@
   --text-muted: #232323;
   --text-normal: #000000;
   color-scheme: light;
-
-  .callout {
+  --accent-h: var(--accent-light-h);
+  --accent-l: var(--accent-light-l);
+  --accent-light-h: 232;
+  --accent-light-l: 64%;
+  --accent-light-s: 80%;
+  --accent-s: var(--accent-light-s);
+  --background-modifier-border: #eaeaea;
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
+  --background-modifier-form-field: transparent;
+  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
+  --background-primary: var(--color-primary-lightest);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: #f6f6f6;
+  --button-radius-medium: 6px;
+  --color: 0, 0%;
+  --color-accent: var(--color-accent-light);
+  --color-accent-1: var(--color-accent-1-light);
+  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: var(--color-accent-2-light);
+  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--color-accent-hsl-light);
+  --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f0f0f0;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5a5a5a;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-blue-rgb: 3, 138, 255;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-cyan-rgb: 54, 215, 183;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-green-rgb: 120, 186, 126;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-orange-rgb: 243, 156, 18;
+  --color-pink: rgb(var(--color-pink-rgb));
+  --color-pink-rgb: 242, 63, 165;
+  --color-primary-light: hsl(var(--color), calc(var(--l) - 7.5%));
+  --color-primary-lightest: hsl(var(--color), var(--l));
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-purple-rgb: 148, 85, 236;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-red-rgb: 254, 121, 104;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+  --input-radius: var(--input-radius-light);
+  --input-radius-light: 5px;
+  --interactive-accent-hover: var(--interactive-accent);
+  --l: 100%;
+  --list-radius-medium: 6px;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-faint: hsl(var(--accent-h), 6%, 64%);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #232323;
+  --text-normal: #000000;
+  color-scheme: light .callout {
     --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
   }
 }
 
@@ -542,10 +621,85 @@ html {
   --text-muted: #232323;
   --text-normal: #000000;
   color-scheme: light;
+  --accent-h: var(--accent-light-h);
+  --accent-l: var(--accent-light-l);
+  --accent-light-h: 232;
+  --accent-light-l: 64%;
+  --accent-light-s: 80%;
+  --accent-s: var(--accent-light-s);
+  --background-modifier-border: #eaeaea;
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(var(--accent-l)),
+    0.3
+  );
+  --background-modifier-form-field: transparent;
+  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
+  --background-primary: var(--color-primary-lightest);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: #f6f6f6;
+  --button-radius-medium: 6px;
+  --color: 0, 0%;
+  --color-accent: var(--color-accent-light);
+  --color-accent-1: var(--color-accent-1-light);
+  --color-accent-1-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+  --color-accent-2: var(--color-accent-2-light);
+  --color-accent-2-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+  --color-accent-hsl: var(--color-accent-hsl-light);
+  --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-100: #222222;
+  --color-base-20: #f0f0f0;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-70: #5a5a5a;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-blue-rgb: 3, 138, 255;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-cyan-rgb: 54, 215, 183;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-green-rgb: 120, 186, 126;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-orange-rgb: 243, 156, 18;
+  --color-pink: rgb(var(--color-pink-rgb));
+  --color-pink-rgb: 242, 63, 165;
+  --color-primary-light: hsl(var(--color), calc(var(--l) - 7.5%));
+  --color-primary-lightest: hsl(var(--color), var(--l));
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-purple-rgb: 148, 85, 236;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-red-rgb: 254, 121, 104;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+  --input-radius: var(--input-radius-light);
+  --input-radius-light: 5px;
+  --interactive-accent-hover: var(--interactive-accent);
+  --l: 100%;
+  --list-radius-medium: 6px;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-faint: hsl(var(--accent-h), 6%, 64%);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #232323;
+  --text-normal: #000000;
+  color-scheme: light .callout {
+    --callout-blend-mode: darken;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }

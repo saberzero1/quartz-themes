@@ -1,0 +1,26 @@
+.aura-floating-status-bar {
+  --status-bar-position: absolute;
+  --status-bar-radius: var(--radius-m);
+}
+
+.aura-floating-status-bar .status-bar {
+  transform: translateX(calc(100% + 5px));
+  transition: transform 300ms 150ms;
+  bottom: 5px;
+  right: 5px;
+}
+
+.aura-floating-status-bar .status-bar::before {
+  width: 100%;
+  min-height: 100%;
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+}
+
+.aura-floating-status-bar .status-bar:hover {
+  transform: none;
+  transition: transform 300ms 150ms;
+}

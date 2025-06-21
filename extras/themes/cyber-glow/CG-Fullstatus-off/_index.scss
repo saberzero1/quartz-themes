@@ -1,0 +1,10 @@
+.CG-Fullstatus-off .status-bar {
+  margin: 0px 20px 12px 0px;
+  border-top: 1px solid;
+}
+
+body:not(.CG-Fullstatus-off) .status-bar {
+  position: sticky;
+  border-radius: 0px;
+  background: var(--background-secondary);
+}

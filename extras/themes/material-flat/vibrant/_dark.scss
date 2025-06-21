@@ -1,0 +1,9 @@
+body:not(.vibrant).theme-dark {
+  --color-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.6), 70%) !important;
+  --color-accent-1: hsl(var(--accent-h), calc(var(--accent-s) * 0.7), 80%) !important;
+  --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) * 0.8), 90%) !important;
+  --primary: hsl(var(--accent-h), calc(var(--accent-s) * 0.75), 80%) !important;
+  --secondary: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 70%) !important;
+  --text-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 90%) !important;
+  --text-accent: hsl(var(--accent-h), calc(var(--accent-s) * 0.4), 90%) !important;
+}

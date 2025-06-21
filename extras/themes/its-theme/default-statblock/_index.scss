@@ -1,0 +1,100 @@
+body:not(.default-statblock) {
+  --statblock-primary-color: var(--text);
+  --statblock-background-color: var(--note);
+  --statblock-bar-color: var(--accent);
+  --statblock-rule-color: var(--accent);
+  --statblock-alt: var(--td);
+  --statblock-alt-padding: 0.25em 0.3em;
+  --statblock-image-border-color: var(--hr);
+  --statblock-border-size: 0;
+  --statblock-border-color: var(--lines);
+  --statblock-bar-border-size: 0;
+  --statblock-bar-border-color: var(--statblock-bar-color);
+  --statblock-box-shadow-color: var(--outline);
+  --statblock-box-shadow-x-offset: 0;
+  --statblock-box-shadow-y-offset: 0;
+  --statblock-box-shadow-blur: 20px;
+  --statblock-heading-font: var(--font);
+  --statblock-heading-font-color: var(--headers);
+  --statblock-heading-font-variant: normal;
+  --statblock-heading-font-weight: var(--header-weight);
+  --statblock-heading-line-height: 28px;
+  --statblock-subheading-font-size: var(--font-small);
+  --statblock-subheading-font-style: italic;
+  --statblock-subheading-font-weight: normal;
+  --statblock-font-color: var(--text);
+  --statblock-content-font: var(--font-default);
+  --statblock-content-font-size: var(--font-text-size);
+  --statblock-property-name-font-color: var(--headers);
+  --statblock-property-font-color: var(--text);
+  --statblock-section-heading-border-size: 4px;
+  --statblock-section-heading-border-color: var(--table);
+  --statblock-section-heading-font-color: var(--footnote);
+  --statblock-section-heading-font-size: var(--h3-size);
+  --statblock-section-heading-font-variant: normal;
+  --statblock-section-heading-font-weight: var(--header-weight);
+  --statblock-section-heading-font: var(--h3-font);
+  --statblock-traits-font-style: normal;
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin {
+  --header-border-line-width: 0;
+  --h1-border-line-width: var(--header-border-line-width);
+  --h2-border-line-width: var(--header-border-line-width);
+  --h3-border-line-width: var(--header-border-line-width);
+  --h4-border-line-width: var(--header-border-line-width);
+  --h5-border-line-width: var(--header-border-line-width);
+  --h6-border-line-width: var(--header-border-line-width);
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin .statblock-content {
+  padding: 0.45em;
+}
+
+body:not(.default-statblock)
+  .obsidian-statblock-plugin
+  .statblock-content
+  .statblock-item-container {
+  margin-bottom: 0.2rem;
+}
+
+body:not(.default-statblock)
+  .obsidian-statblock-plugin
+  .statblock-content
+  > div
+  > .statblock-item-container:not(.group-container):not(.inline-container):not(.rule-container) {
+  padding: var(--statblock-alt-padding);
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin .statblock-inline-item {
+  padding: var(--statblock-alt-padding);
+}
+
+body:not(.default-statblock)
+  .obsidian-statblock-plugin
+  .column
+  > .statblock-item-container:nth-child(odd):not(
+    .rule-container,
+    .table-container,
+    .traits-container,
+    .heading-container
+  ) {
+  background: var(--statblock-alt);
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin .spell-list .spell-level .property-text,
+body:not(.default-statblock) .obsidian-statblock-plugin .property-name {
+  color: var(--statblock-property-name-font-color);
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin .spell-list .spell-level .property-text {
+  font-weight: 600;
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin .spell-list .spells .property-text {
+  font-style: normal;
+}
+
+body:not(.default-statblock) .obsidian-statblock-plugin li::marker {
+  --list-marker-color: transparent;
+}

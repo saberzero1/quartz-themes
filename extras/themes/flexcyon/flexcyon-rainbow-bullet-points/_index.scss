@@ -1,0 +1,24 @@
+body.flexcyon-rainbow-bullet-points ol > li:nth-of-type(6n + 1)::marker,
+body.flexcyon-rainbow-bullet-points ul > li:nth-of-type(6n + 1)::marker {
+  color: var(--color-blue);
+}
+
+body.flexcyon-rainbow-bullet-points ol > li:nth-of-type(6n + 2)::marker,
+body.flexcyon-rainbow-bullet-points ul > li:nth-of-type(6n + 2)::marker {
+  color: var(--color-cyan);
+}
+
+body.flexcyon-rainbow-bullet-points ol > li:nth-of-type(6n + 3)::marker,
+body.flexcyon-rainbow-bullet-points ul > li:nth-of-type(6n + 3)::marker {
+  color: var(--color-pink);
+}
+
+body.flexcyon-rainbow-bullet-points ol > li:nth-of-type(6n + 4)::marker,
+body.flexcyon-rainbow-bullet-points ul > li:nth-of-type(6n + 4)::marker {
+  color: var(--color-green);
+}
+
+body.flexcyon-rainbow-bullet-points ol > li:nth-of-type(6n + 5)::marker,
+body.flexcyon-rainbow-bullet-points ul > li:nth-of-type(6n + 5)::marker {
+  color: var(--color-yellow);
+}

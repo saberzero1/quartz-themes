@@ -1,0 +1,30 @@
+body:not(.hide-frontmatter-off) .metadata-properties-heading {
+  display: none;
+}
+
+body:not(.is-mobile):not(.hide-frontmatter-off)
+  .markdown-reading-view
+  .metadata-container:not(:hover)
+  .metadata-property[data-property-key="cssclasses"]:not(.has-active-menu):not(:focus-within),
+body:not(.is-mobile):not(.hide-frontmatter-off)
+  .markdown-reading-view
+  .metadata-container:not(:hover)
+  .metadata-add-button {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body:not(.is-mobile):not(.hide-frontmatter-off)
+  .markdown-reading-view
+  .metadata-container:not(:hover)
+  .metadata-property[data-property-key="cssclasses"]:not(.has-active-menu):not(:focus-within) {
+  padding: 0;
+  max-height: 0px;
+}
+
+body:not(.is-mobile):not(.hide-frontmatter-off)
+  .markdown-reading-view
+  .metadata-container:not(:hover)
+  .metadata-add-button {
+  height: 0;
+}

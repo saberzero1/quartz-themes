@@ -1,0 +1,5 @@
+body:not(.is-phone):not(.inline-title-divider-remove) .inline-title:not(.mk-inline-title) {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: var(--size-4-3);
+  margin-bottom: var(--size-4-3);
+}

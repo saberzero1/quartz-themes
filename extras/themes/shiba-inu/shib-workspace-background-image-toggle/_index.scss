@@ -1,0 +1,129 @@
+.shib-workspace-background-image-toggle .view-header-title-container:not(.mod-at-end):after {
+  display: none;
+}
+
+body.shib-disable-borders.shib-workspace-background-image-toggle {
+  --divider-color: transparent;
+}
+
+.shib-workspace-background-image-toggle .canvas-wrapper,
+.shib-workspace-background-image-toggle .is-focused .workspace-leaf.mod-active .view-header,
+.shib-workspace-background-image-toggle
+  .mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right,
+.shib-workspace-background-image-toggle .mod-root .workspace-tabs .workspace-leaf,
+.shib-workspace-background-image-toggle .shib-card-layout .workspace-tab-header-container,
+.shib-workspace-background-image-toggle
+  .workspace-fake-target-overlay:not(.is-in-sidebar)
+  .workspace-tabs
+  .workspace-leaf,
+.shib-workspace-background-image-toggle .workspace-split.mod-root,
+.shib-canvas-dark-bg .canvas-wrapper,
+.shib-card-layout .view-header,
+.shib-card-layout .workspace-ribbon.mod-left:before,
+.shib-workspace-background-image-toggle:not(.shib-card-layout).mod-macos.is-hidden-frameless:not(
+    .is-popout-window
+  )
+  .sidebar-toggle-button.mod-right,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-container-after.is-after-active,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-container-after.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-container-before.is-before-active,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-header.is-after-active,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-header.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-header.is-before-active,
+body.layout-style-options-default.shib-workspace-background-image-toggle
+  .workspace-tab-header.is-before-active
+  .workspace-tab-header-inner {
+  background-color: transparent;
+}
+
+.shib-workspace-background-image-toggle {
+  --card-background-color: transparent;
+  --card-foreground-color: rgba(var(--base), var(--shib-custom-bg-card-fg-opacity, 0.4));
+  --tab-inactive-color: rgba(var(--side), var(--shib-custom-bg-card-fg-opacity, 0.4));
+  --code-background: var(--card-foreground-color);
+}
+
+.shib-workspace-background-image-toggle .horizontal-main-container,
+.shib-bg-fix .horizontal-main-container {
+  background: var(--shib-background-image);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.shib-workspace-background-image-toggle .workspace,
+.shib-bg-fix .workspace {
+  backdrop-filter: brightness(var(--shib-custom-bg-brightness, 0.5))
+    blur(var(--shib-custom-bg-blur, 5px));
+  background-color: transparent;
+}
+
+.shib-workspace-background-image-toggle .kanban-plugin__item-title-wrapper,
+.is-focused.shib-card-layout .workspace-leaf.mod-active .view-header,
+.shib-card-layout .workspace-ribbon,
+.shib-card-layout .workspace-split.mod-root .view-content {
+  background: 0 0;
+}
+
+.shib-alternate-tab-toggle .workspace-tabs:not(.mod-stacked),
+.shib-safari-tab-toggle .workspace-tabs:not(.mod-stacked) {
+  --tab-background: var(--tab-inactive-color);
+  --tab-background-active: var(--card-foreground-color);
+  --tab-background-inactive: var(--tab-inactive-color);
+}
+
+.shib-floating-header .nav-folder.mod-root > .nav-folder-title {
+  background-color: var(--tab-inactive-color);
+}
+
+.shib-workspace-background-image-toggle .kanban-plugin .kanban-plugin__lane button:hover,
+.shib-workspace-background-image-toggle .kanban-plugin__item-content-wrapper,
+.shib-workspace-background-image-toggle .kanban-plugin__lane,
+.is-focused:not(.shib-card-layout) .workspace-leaf.mod-active .view-header,
+.shib-workspace-background-image-toggle:not(.shib-card-layout) .view-header,
+.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-ribbon,
+.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-ribbon.mod-left:before,
+.shib-workspace-background-image-toggle:not(.shib-card-layout)
+  .workspace-split.mod-root
+  .view-content,
+.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-tab-header-container,
+.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-tabs .workspace-leaf {
+  background-color: var(--card-foreground-color);
+}
+
+.shib-workspace-background-image-toggle
+  :is(
+    .tree-item-inner,
+    .tree-item-flair,
+    .workspace-ribbon-collapse-btn,
+    .side-dock-ribbon-tab,
+    .side-dock-ribbon-action
+  ):not(:hover) {
+  color: var(--text-normal);
+}
+
+.background-settings-workplace-mountain-light {
+  --mountain: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibauni/mountain.jpg?raw=true");
+  --shib-background-image: var(--mountain);
+}
+
+.background-settings-workplace-mountain2-light {
+  --mountain2: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/mountain2.jpeg?raw=true");
+  --shib-background-image: var(--mountain2);
+}
+
+body.hide-left-ribbon-retention-drawer:not(.shib-workspace-background-image-toggle)
+  .workspace-tabs.mod-top {
+  background: var(--background-secondary-alt);
+}

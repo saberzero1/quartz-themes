@@ -163,7 +163,7 @@ body {
 
 /*invert image based on light or dark mode*/
 /*.theme-light .markdown-preview-view img[src*="png"] {
-	filter: hue-rotate(70deg);
+    filter: hue-rotate(70deg);
 }*/
 /*.theme-dark .markdown-preview-view img[src*="png"] {
   opacity: 1;
@@ -402,9 +402,9 @@ body {
 /*the highlight band on tags in the tag pane */
 .tree-item-self.is-clickable:hover {
   background-color: var(--background-nav-alt);
-  /*	background-color: transparent;
-	border: 1px solid var(--text-accent);
-	border-radius: 0px;*/
+  /*    background-color: transparent;
+    border: 1px solid var(--text-accent);
+    border-radius: 0px;*/
 }
 .tree-item-self:hover .tree-item-flair {
   background-color: var(--interactive-accent-hover-dark);
@@ -417,9 +417,9 @@ body {
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--background-nav-alt);
-  /*  	background-color: transparent;
-	border: 1px solid var(--text-accent);
-	border-radius: 0px;*/
+  /*      background-color: transparent;
+    border: 1px solid var(--text-accent);
+    border-radius: 0px;*/
 }
 /*=====================================================================================*/
 
@@ -646,7 +646,7 @@ h6 {
   color: var(--text-normal);
 }
 /*.theme-dark .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
-	color: var(--text-normal);
+    color: var(--text-normal);
 }*/
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
@@ -724,7 +724,7 @@ h6 {
   /*color: #FE654F;*/
 }
 /*.theme-dark .graph-view.color-fill-attachment {
-	color: var(--text-accent-hover);
+    color: var(--text-accent-hover);
 }*/
 .theme-light .graph-view.color-fill-tag {
   color: var(--accent-strong); /*#ff6666*/
@@ -1200,8 +1200,8 @@ cite {
 
 /* table heading color */
 /*.markdown-preview-view th {
-	background-color: var(--background-primary-alt);
-	border: 0px;
+    background-color: var(--background-primary-alt);
+    border: 0px;
 }*/
 
 /*excalidraw theme updates*/

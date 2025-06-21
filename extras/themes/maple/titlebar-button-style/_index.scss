@@ -1,0 +1,79 @@
+body.is-hidden-frameless:is(.mod-windows, .mod-linux) .titlebar-button {
+  padding: 0 14px;
+}
+
+body.is-hidden-frameless:is(.mod-windows, .mod-linux) .titlebar-button svg {
+  width: 100%;
+  height: 32%;
+}
+
+body.is-frameless:not(.is-hidden-frameless):is(.mod-windows, .mod-linux)
+  .titlebar-button
+  svg:not([class*="logo"]) {
+  width: 100%;
+  height: 42%;
+}
+
+body.titlebar-button-style .titlebar-button.mod-close:hover {
+  color: var(--text-on-accent);
+}
+
+body.titlebar-button-style .workspace-tab-header-new-tab {
+  padding-bottom: var(--size-2-1);
+}
+
+body.titlebar-button-style .mod-maximize svg {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><rect x="2" y="2" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>');
+}
+
+body.is-maximized .mod-maximize svg {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g fill="none" stroke="currentColor" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"><path d="M602 932H234c-77.3 0-140-62.7-140-140V424c0-77.3 62.7-140 140-140h368c77.3 0 140 62.7 140 140v368c0 77.3-62.7 140-140 140z" /><path d="M284 284v-50c0-77.3 62.7-140 140-140h368c77.3 0 140 62.7 140 140v368c0 77.3-62.7 140-140 140h-50" /></g></svg>');
+}
+
+:is(
+  :is(
+      body.titlebar-button-style .mod-maximize,
+      body.is-maximized .mod-maximize,
+      body:is(:not(.css-settings-manager), .explorer-icon)
+        .workspace-leaf-content:is([data-type="file-explorer"])
+        .nav-files-container
+    )
+    svg,
+  svg:is(
+      .excalidraw-icon,
+      .spreadsheet,
+      [class*="lucide-folder"],
+      .lucide-sticky-note,
+      .lucide-image,
+      .lucide-file,
+      .lucide-copy,
+      .database-folder-icon
+    )
+) {
+  background-color: currentColor;
+  -webkit-mask-size: 100% 100%;
+}
+
+:is(
+    :is(
+        body.titlebar-button-style .mod-maximize,
+        body.is-maximized .mod-maximize,
+        body:is(:not(.css-settings-manager), .explorer-icon)
+          .workspace-leaf-content:is([data-type="file-explorer"])
+          .nav-files-container
+      )
+      svg,
+    svg:is(
+        .excalidraw-icon,
+        .spreadsheet,
+        [class*="lucide-folder"],
+        .lucide-sticky-note,
+        .lucide-image,
+        .lucide-file,
+        .lucide-copy,
+        .database-folder-icon
+      )
+  )
+  path {
+  display: none;
+}

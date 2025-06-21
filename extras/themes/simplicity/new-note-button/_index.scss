@@ -1,0 +1,28 @@
+body:not(.new-note-button)
+  .workspace-split:not(.mod-root)
+  .mod-top-left-space
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-action-button:first-of-type:after {
+  content: "New note";
+  margin-left: 10px;
+}
+
+body:not(.new-note-button)
+  .workspace-split:not(.mod-root)
+  .mod-top-left-space
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container {
+  justify-content: left;
+}
+
+body:not(.new-note-button)
+  .workspace-split:not(.mod-root)
+  .mod-top-left-space
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-action-button:first-of-type {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}

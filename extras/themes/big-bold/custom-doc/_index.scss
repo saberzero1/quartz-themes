@@ -1,0 +1,7 @@
+body:not(.custom-doc) {
+  --doc-background: var(--doc-bg);
+}
+
+.custom-doc {
+  --doc-background: var(--custom-doc-bg) !important;
+}

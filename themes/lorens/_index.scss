@@ -7,7 +7,8 @@
 @use "../variables.scss" as *;
 /* quartz themes dark-only */
 
-:root:root {
+:root:root,
+html[saved-theme="dark"] {
   --accent-dark-h: 216;
   --accent-dark-l: 49%;
   --accent-dark-s: 25%;
@@ -105,9 +106,113 @@
     0.6
   );
   color-scheme: dark;
-
-  .callout {
+  --accent-dark-h: 216;
+  --accent-dark-l: 49%;
+  --accent-dark-s: 25%;
+  --accent-h: var(--accent-dark-h);
+  --accent-l: var(--accent-dark-l);
+  --accent-s: var(--accent-dark-s);
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.3
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.25
+  );
+  --background-modifier-form-field: transparent;
+  --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 3.9)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.9)
+  );
+  --code-background: var(--code-background-dark);
+  --code-border: var(--code-border-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-accent-1: var(--color-accent-1-dark);
+  --color-accent-1-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: var(--color-accent-2-dark);
+  --color-accent-2-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-dark: #0ba360;
+  --color-accent-hsl: var(--color-accent-hsl-dark);
+  --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555;
+  --color-base-50: #666;
+  --color-base-70: #bababa;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-blue-rgb: 137, 189, 244;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-cyan-rgb: 134, 223, 226;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-green-rgb: 124, 211, 124;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-orange-rgb: 251, 187, 131;
+  --color-pink: rgb(var(--color-pink-rgb));
+  --color-pink-rgb: 242, 182, 222;
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-purple-rgb: 203, 158, 255;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-red-rgb: 255, 120, 129;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-yellow-rgb: 255, 232, 139;
+  --highlight-mix-blend-mode: lighten;
+  --input-radius: var(--input-radius-dark);
+  --input-radius-dark: 5px;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-faint: hsl(var(--accent-h), 12%, 44%);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: hsl(var(--accent-h), 18%, 72%);
+  --text-normal: hsl(var(--accent-h), 24%, 84%);
+  --workspace-background-translucent: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6),
+    0.6
+  );
+  color-scheme: dark .callout {
     --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
   }
 }
 
@@ -603,10 +708,111 @@ html {
     0.6
   );
   color-scheme: dark;
+  --accent-dark-h: 216;
+  --accent-dark-l: 49%;
+  --accent-dark-s: 25%;
+  --accent-h: var(--accent-dark-h);
+  --accent-l: var(--accent-dark-l);
+  --accent-s: var(--accent-dark-s);
+  --background-modifier-border: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.2
+  );
+  --background-modifier-border-focus: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.3
+  );
+  --background-modifier-border-hover: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l)),
+    0.25
+  );
+  --background-modifier-form-field: transparent;
+  --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 3.9)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25 * var(--accent-l) / 4.9)
+  );
+  --code-background: var(--code-background-dark);
+  --code-border: var(--code-border-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-accent-1: var(--color-accent-1-dark);
+  --color-accent-1-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: var(--color-accent-2-dark);
+  --color-accent-2-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-dark: #0ba360;
+  --color-accent-hsl: var(--color-accent-hsl-dark);
+  --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555;
+  --color-base-50: #666;
+  --color-base-70: #bababa;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-blue-rgb: 137, 189, 244;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-cyan-rgb: 134, 223, 226;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-green-rgb: 124, 211, 124;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-orange-rgb: 251, 187, 131;
+  --color-pink: rgb(var(--color-pink-rgb));
+  --color-pink-rgb: 242, 182, 222;
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-purple-rgb: 203, 158, 255;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-red-rgb: 255, 120, 129;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-yellow-rgb: 255, 232, 139;
+  --highlight-mix-blend-mode: lighten;
+  --input-radius: var(--input-radius-dark);
+  --input-radius-dark: 5px;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: var(--color-accent-1);
+  --text-faint: hsl(var(--accent-h), 12%, 44%);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: hsl(var(--accent-h), 18%, 72%);
+  --text-normal: hsl(var(--accent-h), 24%, 84%);
+  --workspace-background-translucent: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) / 5.4),
+    calc(1.25 * var(--accent-l) / 3.6),
+    0.6
+  );
+  color-scheme: dark .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
+
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }

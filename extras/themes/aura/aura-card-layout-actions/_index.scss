@@ -1,0 +1,23 @@
+.aura-card-layout .side-dock-actions {
+  border-radius: 5px;
+  border: 1px solid var(--tab-outline-color);
+  background-color: var(--card-background-color);
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions).aura-card-layout
+  .workspace-ribbon
+  .side-dock-actions
+  > .clickable-icon,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions).aura-card-layout
+  .workspace-ribbon
+  .side-dock-settings
+  > .clickable-icon {
+  color: rgb(var(--cpt-black)) !important;
+  --icon-color: rgb(var(--cpt-black)) !important;
+  --icon-color-hover: rgb(var(--cpt-black)) !important;
+  --icon-color-focused: rgb(var(--cpt-black)) !important;
+  --tab-text-color-focused: rgb(var(--cpt-black)) !important;
+  --tab-text-color-focused-active-current: rgb(var(--cpt-black)) !important;
+}

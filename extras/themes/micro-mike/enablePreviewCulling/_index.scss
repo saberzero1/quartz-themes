@@ -1,0 +1,20 @@
+body:not(.enablePreviewCulling) .markdown-reading-view {
+  overflow-y: scroll;
+}
+
+body:not(.enablePreviewCulling) .markdown-preview-view {
+  overflow-y: visible;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+body:not(.enablePreviewCulling)
+  :not(.markdown-embed-content)
+  > .markdown-preview-view
+  > .markdown-preview-sizer {
+  padding-bottom: 500px !important;
+}
+
+body:not(.enablePreviewCulling) .markdown-preview-view > .markdown-preview-sizer {
+  min-height: 0px !important;
+}

@@ -1,0 +1,42 @@
+.row-lines-off {
+  --table-row-last-border-width: 0;
+  --bases-table-row-border-width: 0;
+}
+
+.row-lines-off .table-view-table > tbody > tr > td,
+.row-lines-off table:not(.calendar) tbody > tr:last-child > td,
+.row-lines-off table:not(.calendar) tbody > tr > td {
+  border-bottom: none;
+}
+
+.row-lines:not(.table-lines) .markdown-preview-view:not(.cards),
+.row-lines:not(.table-lines) .markdown-source-view:not(.cards) {
+  --table-row-last-border-width: 0;
+}
+
+.row-lines:not(.table-lines)
+  .markdown-preview-view:not(.cards)
+  .table-view-table
+  > tbody
+  > tr:not(:last-child)
+  > td,
+.row-lines:not(.table-lines)
+  .markdown-preview-view:not(.cards)
+  table:not(.calendar)
+  tbody
+  > tr:not(:last-child)
+  > td,
+.row-lines:not(.table-lines)
+  .markdown-source-view:not(.cards)
+  .table-view-table
+  > tbody
+  > tr:not(:last-child)
+  > td,
+.row-lines:not(.table-lines)
+  .markdown-source-view:not(.cards)
+  table:not(.calendar)
+  tbody
+  > tr:not(:last-child)
+  > td {
+  border-bottom: var(--table-border-width) solid var(--table-border-color);
+}
