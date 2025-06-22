@@ -1,5 +1,8 @@
 import yaml from "js-yaml"
 import postcss from "postcss"
+import { endsWithAnyOf } from "./util.mjs"
+
+String.prototype.endsWithAnyOf = endsWithAnyOf
 
 /**
  * Extracts all /* @settings ... *\/ YAML blocks from a CSS string.
@@ -107,17 +110,17 @@ export function extractClassToggleCss(cssString, classToggleId) {
       const newSelectors = matchingSelectors.map(sel => sel.replace(new RegExp(`${classSelector}(?=[\.\s])`, "g"), "").replace(/\s+/g, " ").trim())
       // For all non-dark/light selectors, add to output
       if (!newSelectors.some(sel => sel.includes(".theme-dark") || sel.includes(".theme-light"))) {
-        output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+        output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString().endsWithAnyOf(["/", "{"]) ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
       }
       // If the class-toggle is for dark theme, add to darkOutput
       // Also remove the `.dark-theme` class from the selector
       if (newSelectors.some(sel => sel.includes(".theme-dark"))) {
-        darkOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-dark(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+        darkOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-dark(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWithAnyOf(["/", "{"]) ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
       }
       // If the class-toggle is for light theme, add to lightOutput
       // Also remove the `.light-theme` class from the selector
       if (newSelectors.some(sel => sel.includes(".theme-light"))) {
-        lightOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-light(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWith("/") ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
+        lightOutput += `${newSelectors.map(sel => sel.replace(new RegExp("\.theme-light(?=[\.\s])","g"), "").replace(/\s+/g, " ").trim()).join(", ")} {\n${rule.nodes.map(n => n.toString().endsWithAnyOf(["/", "{"]) ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
       }
     }
   })
@@ -201,7 +204,7 @@ export function replaceVariableThemedColor(cssString, variableId, valueLight, va
  * @returns {string} - The CSS string with the variable replaced
  */
 export function replaceVariableValue(cssString, variableId, value) {
-  const regex = new RegExp(`(--${variableId}\s*:\s*)([^;]+)(;)`, 'g')
+  const regex = new RegExp(`^\s*?(?!\@container).*?(--${variableId}\s*:\s*)([^;]+)(;)`, 'g')
   return cssString.replace(regex, `$1${value}$3`)
 }
 
