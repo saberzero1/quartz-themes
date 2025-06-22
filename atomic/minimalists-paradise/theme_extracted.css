@@ -23,19 +23,19 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
-  --syntax-builtin: light-dark(#2d76e9, #2d76e9);
-  --syntax-comment: light-dark(#16486d, #16486d);
-  --syntax-def: light-dark(#69eed7, #69eed7);
-  --syntax-default-text: light-dark(#eeeeee, #eeeeee);
-  --syntax-keyword: light-dark(#552b79, #552b79);
-  --syntax-number: light-dark(#9795ee, #9795ee);
-  --syntax-operator: light-dark(#6852b3, #6852b3);
-  --syntax-property: light-dark(#4a6bdb, #4a6bdb);
-  --syntax-string: light-dark(#be4aa0, #be4aa0);
-  --syntax-variable: light-dark(#558fc7, #558fc7);
-  --syntax-variable-2: light-dark(#4186b6, #4186b6);
-  --syntax-variable-3: light-dark(#c689e3, #c689e3);
+  --syntax-border: #a0a6a7;
+  --syntax-builtin: #2d76e9;
+  --syntax-comment: #16486d;
+  --syntax-def: #69eed7;
+  --syntax-default-text: #eeeeee;
+  --syntax-keyword: #552b79;
+  --syntax-number: #9795ee;
+  --syntax-operator: #6852b3;
+  --syntax-property: #4a6bdb;
+  --syntax-string: #be4aa0;
+  --syntax-variable: #558fc7;
+  --syntax-variable-2: #4186b6;
+  --syntax-variable-3: #c689e3;
   --viewer-container-height: 0;
   --xfa-focus-outline: 2px solid CanvasText;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
@@ -122,7 +122,7 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: light-dark(#a5aaae, #000000);
+  --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --bases-embed-border: 1px solid var(--background-modifier-border);
@@ -158,7 +158,7 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
+  --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -673,19 +673,19 @@ body {
   --sync-avatar-color-7: var(--color-purple);
   --sync-avatar-color-8: var(--color-pink);
   --sync-avatar-color-current-user: transparent;
-  --syntax-border: light-dark(#a0a6a7, #a0a6a7);
-  --syntax-builtin: light-dark(#2d76e9, #2d76e9);
-  --syntax-comment: light-dark(#16486d, #16486d);
-  --syntax-def: light-dark(#69eed7, #69eed7);
-  --syntax-default-text: light-dark(#eeeeee, #eeeeee);
-  --syntax-keyword: light-dark(#552b79, #552b79);
-  --syntax-number: light-dark(#9795ee, #9795ee);
-  --syntax-operator: light-dark(#6852b3, #6852b3);
-  --syntax-property: light-dark(#4a6bdb, #4a6bdb);
-  --syntax-string: light-dark(#be4aa0, #be4aa0);
-  --syntax-variable: light-dark(#558fc7, #558fc7);
-  --syntax-variable-2: light-dark(#4186b6, #4186b6);
-  --syntax-variable-3: light-dark(#c689e3, #c689e3);
+  --syntax-border: #a0a6a7;
+  --syntax-builtin: #2d76e9;
+  --syntax-comment: #16486d;
+  --syntax-def: #69eed7;
+  --syntax-default-text: #eeeeee;
+  --syntax-keyword: #552b79;
+  --syntax-number: #9795ee;
+  --syntax-operator: #6852b3;
+  --syntax-property: #4a6bdb;
+  --syntax-string: #be4aa0;
+  --syntax-variable: #558fc7;
+  --syntax-variable-2: #4186b6;
+  --syntax-variable-3: #c689e3;
   --tab-background-active: var(--background-primary);
   --tab-container-background: var(--background-secondary);
   --tab-curve: 6px;
@@ -1652,19 +1652,19 @@ svg.svg-icon {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: light-dark(#a5aaae, #000000);
+  --background-primary: #000000;
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary);
-  --blockquote-bg: light-dark(#f9f9f9, #0c0c0c);
-  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
+  --blockquote-bg: #0c0c0c;
+  --blockquote-border-color: #4d4d4f;
   --blockquote-radius: 8px;
-  --blockquote-text: light-dark(#000000, #ffffff);
+  --blockquote-text: inherit;
   --card-bg: #000000;
-  --card-border-color: light-dark(#252525c3, #4d4d4f);
+  --card-border-color: #4d4d4f84;
   --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15);
   --caret-color: var(--text-color);
-  --citation-bg: light-dark(#68686e, #68686e);
+  --citation-bg: var(--color-accent);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1697,7 +1697,7 @@ svg.svg-icon {
   --color-green-rgb: 68, 207, 110;
   --color-orange: #e9973f;
   --color-orange-rgb: 233, 151, 63;
-  --color-panel: light-dark(#a5aab6, #0c0c0c);
+  --color-panel: #0c0c0c;
   --color-pink: #fa99cd;
   --color-pink-rgb: 250, 153, 205;
   --color-purple: #a882ff;
@@ -1706,10 +1706,10 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --custom-color-accent-dark: #68686ehex;
+  --custom-color-accent-dark: #68686e;
   --external-link-text-shadow: 1px 1px 2px var(--color-accent);
-  --graph-bg: light-dark(#a5aaae, #0c0c0c);
-  --graph-line-color: light-dark(#6767672c, #4d4d4f);
+  --graph-bg: #0c0c0c;
+  --graph-line-color: #4d4d4f;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--card-border-color);
   --input-shadow:
@@ -1746,21 +1746,21 @@ svg.svg-icon {
   --background-default: #a5aaae;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-primary: light-dark(#a5aaae, #000000);
+  --background-primary: #9096a4;
   --background-primary-alt: var(--background-primary);
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary);
-  --blockquote-bg: light-dark(#f9f9f9, #0c0c0c);
-  --blockquote-border-color: light-dark(#252525c3, #4d4d4f);
+  --blockquote-bg: #a5aaae;
+  --blockquote-border-color: #252525c3;
   --blockquote-radius: 8px;
-  --blockquote-text: light-dark(#000000, #ffffff);
+  --blockquote-text: inherit;
   --card-bg: #9096a4;
-  --card-border-color: light-dark(#252525c3, #4d4d4f);
+  --card-border-color: #25252586;
   --card-shadow:
     rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
   --caret-color: var(--text-color);
-  --citation-bg: light-dark(#68686e, #68686e);
+  --citation-bg: var(--color-accent);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1793,7 +1793,7 @@ svg.svg-icon {
   --color-green-rgb: 8, 185, 78;
   --color-orange: #ec7500;
   --color-orange-rgb: 236, 117, 0;
-  --color-panel: light-dark(#a5aab6, #0c0c0c);
+  --color-panel: #a5aab6;
   --color-pink: #d53984;
   --color-pink-rgb: 213, 57, 132;
   --color-purple: #7852ee;
@@ -1802,10 +1802,10 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --custom-color-accent-light: #a0a6a7hex;
+  --custom-color-accent-light: #a0a6a7;
   --external-link-text-shadow: 1px 1px 2px var(--color-accent);
-  --graph-bg: light-dark(#a5aaae, #0c0c0c);
-  --graph-line-color: light-dark(#6767672c, #4d4d4f);
+  --graph-bg: #a5aaae;
+  --graph-line-color: #6767672c;
   --highlight-mix-blend-mode: darken;
   --icon-color: var(--card-border-color);
   --input-shadow:

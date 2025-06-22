@@ -1677,7 +1677,7 @@ body {
   --blockquote-border-thickness: 1.2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: var(--text-normal);
+  --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -1724,7 +1724,7 @@ body {
   --checkbox-color-hover: var(--interactive-accent-hover);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
-  --checkbox-radius: 60px;
+  --checkbox-radius: 10px;
   --checkbox-size: var(--font-text-size);
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
@@ -1752,25 +1752,25 @@ body {
   --cursor-color: var(--interactive-accent);
   --cursor-link: pointer;
   --cursor-width: 2.5px;
-  --custom-base-c-d: 9%;
+  --custom-base-c-d: 10%;
   --custom-base-c-l: 99%;
-  --custom-border-c-d: 31%;
+  --custom-border-c-d: 50%;
   --custom-border-c-l: 82%;
-  --custom-c-20-d: 13%;
+  --custom-c-20-d: 14%;
   --custom-c-20-l: 97%;
-  --custom-text-c-d: 73%;
+  --custom-text-c-d: 90%;
   --custom-text-c-l: 43%;
-  --custom-theme-sat-d: 63%;
+  --custom-theme-sat-d: 20%;
   --custom-theme-sat-l: 100%;
-  --custom-theme-sat-secondary-d: 50%;
+  --custom-theme-sat-secondary-d: 25%;
   --custom-theme-sat-secondary-l: 77%;
-  --custom-theme-sat-text-d: 19%;
+  --custom-theme-sat-text-d: 10%;
   --custom-theme-sat-text-l: 25%;
-  --custom-theme-tint-d: 223;
+  --custom-theme-tint-d: 0;
   --custom-theme-tint-l: 15;
-  --custom-theme-tint-secondary-d: 225;
+  --custom-theme-tint-secondary-d: 0;
   --custom-theme-tint-secondary-l: 15;
-  --custom-theme-tint-text-d: 223;
+  --custom-theme-tint-text-d: 10;
   --custom-theme-tint-text-l: 205;
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
@@ -1792,7 +1792,7 @@ body {
   --dv-table-column-alt-background: transparent;
   --dv-table-row-alt-background: transparent;
   --dv-table-text-align: left;
-  --dv-table-white-space: normal;
+  --dv-table-white-space: initial;
   --editing-file-line-width: var(--file-line-width);
   --embed-background: inherit;
   --embed-block-shadow-hover:
@@ -1807,7 +1807,7 @@ body {
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
   --file-folding-offset: 24px;
-  --file-font-size: var(--font-ui-small);
+  --file-font-size: inherit;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
   --file-header-font-size: var(--font-ui-small);
@@ -1823,10 +1823,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-default-custom: iA Writer Quattro S;
+  --font-default-custom: "iA Writer Quattro S";
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-inline-field: var(--font-text);
+  --font-inline-field: inherit;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
@@ -1836,7 +1836,7 @@ body {
   --font-medium: 500;
   --font-mermaid: var(--font-text);
   --font-monospace: "iA Writer Mono", "iA Writer Mono S";
-  --font-monospace-custom: iA Writer Mono S;
+  --font-monospace-custom: "iA Writer Mono S";
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1850,7 +1850,7 @@ body {
     var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-secondary: "iA Writer Duo", "iA Writer Duo S";
-  --font-secondary-custom: iA Writer Duo S;
+  --font-secondary-custom: "iA Writer Duo S";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
@@ -1891,55 +1891,55 @@ body {
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h-align-s: left;
-  --h-font-s: var(--font-text);
+  --h-font-s: inherit;
   --h-weight-s: 600;
   --h1-align: var(--h-align-s);
   --h1-color: inherit;
   --h1-font: var(--h-font-s);
   --h1-line-height: 1.2;
-  --h1-size: 1.4em;
-  --h1-style: Normal;
-  --h1-variant: Normal;
+  --h1-size: 1.72em;
+  --h1-style: normal;
+  --h1-variant: normal;
   --h1-weight: var(--h-weight-s);
   --h2-align: var(--h-align-s);
   --h2-color: inherit;
   --h2-font: var(--h-font-s);
   --h2-line-height: 1.2;
-  --h2-size: 1.22em;
-  --h2-style: Normal;
-  --h2-variant: Normal;
+  --h2-size: 1.51em;
+  --h2-style: normal;
+  --h2-variant: normal;
   --h2-weight: var(--h-weight-s);
   --h3-align: var(--h-align-s);
   --h3-color: inherit;
   --h3-font: var(--h-font-s);
   --h3-line-height: 1.3;
-  --h3-size: 1.17em;
-  --h3-style: Normal;
-  --h3-variant: Normal;
+  --h3-size: 1.35em;
+  --h3-style: normal;
+  --h3-variant: normal;
   --h3-weight: var(--h-weight-s);
   --h4-align: var(--h-align-s);
   --h4-color: inherit;
   --h4-font: var(--h-font-s);
   --h4-line-height: 1.4;
-  --h4-size: 1.1em;
-  --h4-style: Normal;
-  --h4-variant: Normal;
+  --h4-size: 1.19em;
+  --h4-style: normal;
+  --h4-variant: normal;
   --h4-weight: var(--h-weight-s);
   --h5-align: var(--h-align-s);
   --h5-color: inherit;
   --h5-font: var(--h-font-s);
   --h5-line-height: var(--line-height-normal);
-  --h5-size: 1.04em;
-  --h5-style: Normal;
-  --h5-variant: Normal;
+  --h5-size: 1.08em;
+  --h5-style: normal;
+  --h5-variant: normal;
   --h5-weight: var(--h-weight-s);
   --h6-align: var(--h-align-s);
   --h6-color: inherit;
   --h6-font: var(--h-font-s);
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
-  --h6-style: Italic;
-  --h6-variant: Normal;
+  --h6-style: normal;
+  --h6-variant: normal;
   --h6-weight: var(--h-weight-s);
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
@@ -1979,16 +1979,16 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1.5px;
-  --inline-field-size: inherit;
+  --inline-field-size: var(--font-small);
   --inline-title-align: center;
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: calc(var(--h1-size) + 0.5em);
-  --inline-title-style: Normal;
-  --inline-title-variant: Normal;
-  --inline-title-weight: 700;
+  --inline-title-style: var(--h1-style);
+  --inline-title-variant: var(--h1-variant);
+  --inline-title-weight: var(--h1-weight);
   --input-border-width: 1px;
   --input-date-separator: var(--text-faint);
   --input-font-weight: var(--font-normal);
@@ -2002,7 +2002,7 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: hsla(var(--color-accent-hsl), 0.1);
   --interactive-normal: var(--background-secondary-alt);
-  --italic-color: var(--text-normal);
+  --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -2199,7 +2199,7 @@ body {
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
-  --serenity-mode-font-size: 18px;
+  --serenity-mode-font-size: 17px;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -2317,7 +2317,7 @@ body {
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
   --table-text-size: var(--font-smaller);
-  --table-white-space: normal;
+  --table-white-space: break-spaces;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
@@ -24767,12 +24767,12 @@ input.mobile-vault-chooser-field-input {
 .cursive-font {
   --font-secondary: Comfortaa, cursive;
   --font-text-theme: "UD Digi Kyokasho NK-R", "Varela Round", cursive;
-  --h1-font: var(--h-font-s);
+  --h1-font: var(--font-secondary);
   --h2-font: var(--font-secondary);
-  --h3-font: var(--h-font-s);
-  --h4-font: var(--h-font-s);
-  --h5-font: var(--h-font-s);
-  --h6-font: var(--h-font-s);
+  --h3-font: var(--font-secondary);
+  --h4-font: var(--font-secondary);
+  --h5-font: var(--font-secondary);
+  --h6-font: var(--font-secondary);
 }
 
 .google-font {
@@ -24815,11 +24815,11 @@ input.mobile-vault-chooser-field-input {
 
 /* fonts from list select */
 .font-select {
-  --font-default-select: iA Writer Quattro S;
+  --font-default-select: "iA Writer Quattro S";
   --font-monospace: var(--font-monospace-select), monospace;
-  --font-monospace-select: iA Writer Mono S;
+  --font-monospace-select: "iA Writer Mono S";
   --font-secondary: var(--font-secondary-select), sans-serif;
-  --font-secondary-select: iA Writer Duo S;
+  --font-secondary-select: "iA Writer Duo S";
   --font-text-theme:
     var(--font-default-select), var(--font-secondary-select), sans-serif;
 }
@@ -26653,7 +26653,7 @@ abbr[title] {
 }
 
 .page-gallery__tile-image--content {
-  --h1-size: 1.4em;
+  --h1-size: var(--font-ui-medium);
   background: var(--background-primary-alt);
   border-radius: vaR(--radius-s) var(--radius-s) 0 0;
   box-shadow: none;
@@ -26675,7 +26675,7 @@ abbr[title] {
 
 /* make content less distracting and more readable */
 .page-gallery__tile-image--content:hover {
-  --h1-size: 1.4em;
+  --h1-size: var(--font-ui-medium);
   background: var(--background-primary-alt);
   box-shadow: none;
   font-size: var(--font-ui-smaller);

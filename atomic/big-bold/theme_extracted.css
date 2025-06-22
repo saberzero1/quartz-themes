@@ -188,7 +188,7 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
-  --file-emoji: Noto Emoji;
+  --file-emoji: "Noto Emoji";
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -205,13 +205,13 @@ body {
   --folder-2-open: var(--normal-folder-2-open);
   --folder-3: var(--normal-folder-3);
   --folder-3-open: var(--normal-folder-3-open);
-  --folder-emoji: Noto Emoji;
+  --folder-emoji: "Noto Emoji";
   --folder-icon-size: 1.6em;
   --folder-padding: 4px;
   --font-black: 900;
   --font-bold: 700;
   --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
-  --font-emoji: Noto Color Emoji;
+  --font-emoji: "Noto Color Emoji";
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
@@ -220,7 +220,7 @@ body {
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
-  --font-main: Nunito Sans;
+  --font-main: "Nunito Sans";
   --font-medium: 500;
   --font-mermaid: var(--font-text);
   --font-monospace: "DM Mono", monospace;
@@ -322,7 +322,7 @@ body {
   --h6-variant: var(--heading-variant);
   --h6-weight: var(--heading-weight);
   --header-height: 40px;
-  --heading-font: Merriweather Sans;
+  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
   --heading-font-2: var(--heading-font), var(--font-default);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
@@ -336,7 +336,7 @@ body {
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
   --icon-color-hover: var(--text-muted);
-  --icon-emoji: Noto Color Emoji;
+  --icon-emoji: "Noto Color Emoji";
   --icon-l: 18px;
   --icon-l-stroke-width: 1.3px;
   --icon-m: 18px;
@@ -369,13 +369,13 @@ body {
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
   --inline-title-color: var(--text-normal);
-  --inline-title-font: var(--heading-font);
+  --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 2.5em;
-  --inline-title-style: normal;
-  --inline-title-variant: var(--heading-variant);
-  --inline-title-weight: var(--heading-weight);
+  --inline-title-style: var(--h1-style);
+  --inline-title-variant: var(--h1-variant);
+  --inline-title-weight: var(--h1-weight);
   --input-border-width: 1px;
   --input-date-separator: var(--text-faint);
   --input-font-weight: var(--font-normal);

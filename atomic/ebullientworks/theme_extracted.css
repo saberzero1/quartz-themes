@@ -215,9 +215,9 @@ body {
   --ebw-callout-toc: 235, 235, 235;
   --ebw-callout-warning: 234, 175, 0;
   --ebw-embed-border-color: var(--gray-dark-7);
-  --ebw-font-callout-title: "Architects Daughter";
+  --ebw-font-callout-title: var(--ebw-header-font);
   --ebw-font-monospace: "Fira Code", "Source Code Pro", Jetbrains Mono;
-  --ebw-font-tags: "Architects Daughter";
+  --ebw-font-tags: var(--ebw-header-font);
   --ebw-font-text: "IBM Plex Sans", Helvetica Neue;
   --ebw-header-font: "Architects Daughter";
   --ebw-header-font-caps-variant: normal;

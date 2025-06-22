@@ -589,7 +589,7 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --bold-color: light-dark(#000000, #ffffff);
+  --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -738,7 +738,7 @@ body {
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --italic-color: light-dark(#000000, #ffffff);
+  --italic-color: inherit;
   --layer-popover: 30;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;

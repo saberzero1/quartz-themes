@@ -34,7 +34,7 @@
   "homepage": "https://github.com/saberzero1/quartz-themes#readme",
   "devDependencies": {
     "css": "^3.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.3",
     "sass": "^1.79.3"
   },
   "dependencies": {

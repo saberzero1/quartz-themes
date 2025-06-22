@@ -4,7 +4,17 @@ import {
 } from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
-import { writePrettier } from "./writer.mjs"
+
+/**
+ * Checks if a string ends with any of the provided endings.
+ * @param {string[]} endings - An array of possible endings to check against.
+ * @return {boolean} True if the string ends with any of the provided endings, false otherwise.
+ */
+export function endsWithAnyOf(endings) {
+  const str = this.toString()
+  // Check if the string ends with any of the provided endings
+  return endings.some((ending) => str.endsWith(ending))
+}
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.

@@ -1630,7 +1630,7 @@ body {
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-form-field: #007fff21;
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: #007fff28;
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
@@ -1725,28 +1725,28 @@ body {
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
-  --checklist-done-color: #00cf48hex;
+  --checklist-done-color: #00cf48;
   --checklist-done-decoration: underline;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: light-dark(#f1f1f1, #001122);
+  --code-background: var(--mu-background-color-2);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: light-dark(#a3a3a3, #a3a3a3);
-  --code-function: light-dark(#00a300, #48f148);
+  --code-comment: #a3a3a3;
+  --code-function: #48f148;
   --code-important: #ff7f00;
-  --code-keyword: light-dark(#c300f1, #d372ff);
+  --code-keyword: var(--mu-purple-1);
   --code-normal: var(--mu-text-1);
-  --code-operator: light-dark(#c300f1, #d372ff);
-  --code-property: light-dark(#0048a3, #0088f1);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
+  --code-operator: var(--mu-purple-1);
+  --code-property: #0088f1;
+  --code-punctuation: #d372ff;
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
-  --code-string: light-dark(#0000f1, #00d8ff);
-  --code-tag: light-dark(#c300f1, #d372ff);
-  --code-value: light-dark(#f18f00, #ffa300);
+  --code-string: #00d8ff;
+  --code-tag: var(--mu-purple-1);
+  --code-value: #ffa300;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: light-dark(#0072d3, #0072d3);
-  --collapse-icon-color-collapsed: light-dark(#d300ff, #d300ff);
+  --collapse-icon-color: #0072d3;
+  --collapse-icon-color-collapsed: #0072d3;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1850,50 +1850,50 @@ body {
   --footnote-radius: var(--radius-s);
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
-  --graph-line: light-dark(#007fff, #007fff);
-  --graph-node: light-dark(#d372ff, #d372ff);
-  --graph-node-attachment: light-dark(#007fff, #007fff);
-  --graph-node-focused: light-dark(#0048a3, #00cfff);
-  --graph-node-tag: light-dark(#20cf20, #20f120);
-  --graph-node-unresolved: light-dark(#a3a3a3, #a3a3a3);
-  --graph-text: light-dark(#000, #f1f1f1);
+  --graph-line: var(--mu-color-lig);
+  --graph-node: var(--mu-purple-1);
+  --graph-node-attachment: var(--mu-color-lig);
+  --graph-node-focused: #00cfff;
+  --graph-node-tag: var(--mu-green-1);
+  --graph-node-unresolved: var(--mu-gray-1);
+  --graph-text: var(--mu-text-1);
   --h1-color: var(--mu-h1);
-  --h1-font: Inter, sans-serif;
+  --h1-font: var(--mu-font-headings);
   --h1-line-height: 1.2;
   --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 800;
   --h2-color: var(--mu-h2);
-  --h2-font: Inter, sans-serif;
+  --h2-font: var(--mu-font-headings);
   --h2-line-height: 1.2;
   --h2-size: 1.5em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 800;
   --h3-color: var(--mu-h3);
-  --h3-font: Inter, sans-serif;
+  --h3-font: var(--mu-font-headings);
   --h3-line-height: 1.3;
   --h3-size: 1.17em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 800;
   --h4-color: var(--mu-h4);
-  --h4-font: Inter, sans-serif;
+  --h4-font: var(--mu-font-headings);
   --h4-line-height: 1.4;
   --h4-size: 1em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 800;
   --h5-color: var(--mu-h5);
-  --h5-font: Inter, sans-serif;
+  --h5-font: var(--mu-font-headings);
   --h5-line-height: var(--line-height-normal);
   --h5-size: 0.83em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 800;
   --h6-color: var(--mu-h6);
-  --h6-font: Inter, sans-serif;
+  --h6-font: var(--mu-font-headings);
   --h6-line-height: var(--line-height-normal);
   --h6-size: 0.67em;
   --h6-style: normal;
@@ -1902,8 +1902,8 @@ body {
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --hidden-text-underline-background-color: light-dark(#ffff0088, #ffff0088);
-  --hidden-text-underline-foreground-color: light-dark(#000, #f1f1f1);
+  --hidden-text-underline-background-color: #ffff0088;
+  --hidden-text-underline-foreground-color: var(--text-normal);
   --hr-color: var(--mu-hr-color);
   --hr-thickness: 2px;
   --icon-color: var(--mu-icon);
@@ -1991,8 +1991,8 @@ body {
   --list-indent: 2em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --list-marker-color-collapsed: light-dark(#f100f1, #f100f1);
+  --list-marker-color: #007fff;
+  --list-marker-color-collapsed: #f100f1;
   --list-marker-color-hover: var(--list-marker-color);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -2047,7 +2047,7 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: light-dark(#007fff30, #007fff30);
+  --modal-border-color: #007fff30;
   --modal-border-width: var(--mu-border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 92vh;
@@ -2082,31 +2082,31 @@ body {
   --mu-callout-video: 237, 48, 48;
   --mu-callout-yellow: 237, 188, 0;
   --mu-cards-border: var(--mu-background-color-1);
-  --mu-code-block-border: light-dark(#0072d3, #0072d3);
+  --mu-code-block-border: #0072d3;
   --mu-collapse-icon-size: 1.2;
-  --mu-column-stripped-background: light-dark(#00000011, #00000082);
+  --mu-column-stripped-background: #00000082;
   --mu-dark-sidebar-color: #001122;
-  --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-default-mode-border-color: #0088ff;
   --mu-default-mode-border-value: 1;
   --mu-default-mode-border-width: calc(
     var(--mu-default-mode-border-value) * 1px
   );
-  --mu-divider-color-hover: light-dark(#007fff, #007fff);
+  --mu-divider-color-hover: #007fff;
   --mu-divider-hover-width-value: 3;
   --mu-divider-width-value: 1;
-  --mu-file-header-border-color: light-dark(#007fff20, #007fff20);
+  --mu-file-header-border-color: #007fff20;
   --mu-file-header-border-value: 1;
   --mu-file-header-border-width: calc(var(--mu-file-header-border-value) * 1px);
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-file-icon-color: #0072d3;
   --mu-file-line-width-value: 700;
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: #007fff10;
+  --mu-folder-area-border: #007fff30;
   --mu-folder-icon-closed-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
   --mu-folder-icon-closed-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M2 10h20"/></svg>');
   --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-default);
   --mu-folder-icon-closed-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
+  --mu-folder-icon-color: #0048a3;
+  --mu-folder-icon-color-active: #00a3ff;
   --mu-folder-icon-opened-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
   --mu-folder-icon-opened-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>');
   --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-default);
@@ -2115,15 +2115,16 @@ body {
     -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mu-font-mono:
-    JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace;
+    "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New",
+    monospace;
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
-  --mu-footnote-color: light-dark(#f07f48, #f07f48);
+  --mu-footnote-color: #f07f48;
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
-  --mu-global-font: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace;
+  --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
   --mu-global-font-letter-spacing: normal;
   --mu-global-font-stylistic-set: normal;
   --mu-header-title-drag: no-drag;
-  --mu-hover-underline-color: light-dark(#ff0000cf, #ff0000cf);
+  --mu-hover-underline-color: #ff0000cf;
   --mu-hover-underline-offset: calc(
     var(--mu-hover-underline-offset-value) * 1px
   );
@@ -2133,13 +2134,13 @@ body {
     var(--mu-hover-underline-thickness-value) * 1px
   );
   --mu-hover-underline-thickness-value: 2;
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
-  --mu-inline-code-border: light-dark(#0072d3, #0072d3);
+  --mu-indent-color-level-1: #007fff7f;
+  --mu-indent-color-level-2: #d372ff7f;
+  --mu-indent-color-level-3: #ff7f007f;
+  --mu-indent-color-level-4: #00a3487f;
+  --mu-indent-color-level-5: #e500007f;
+  --mu-indent-color-level-6: #8282007f;
+  --mu-inline-code-border: #0072d3;
   --mu-inline-title-font-size: calc(
     var(--mu-inline-title-font-size-value) * 1em
   );
@@ -2154,17 +2155,17 @@ body {
   --mu-line-highlight-background: transparent;
   --mu-line-highlight-border: transparent;
   --mu-max-letter-spacing: 2px;
-  --mu-menu-separator-color: light-dark(#0072d322, #0072d322);
+  --mu-menu-separator-color: #0072d322;
   --mu-modal-background: #000;
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
   --mu-neon-mode-glow-value: 0.5;
-  --mu-new-window-border-color: light-dark(#007fff, #007fff);
+  --mu-new-window-border-color: #007fff;
   --mu-new-window-border-value: 1;
   --mu-new-window-border-width: calc(var(--mu-new-window-border-value) * 1px);
-  --mu-num-table-bg-col: light-dark(#00000082, #00000082);
-  --mu-num-table-bg-row: light-dark(#00000022, #00000022);
-  --mu-o-ui-border: light-dark(#0072d3, #0072d3);
-  --mu-properties-container-color: light-dark(#007fff10, #007fff10);
+  --mu-num-table-bg-col: #00000082;
+  --mu-num-table-bg-row: #00000022;
+  --mu-o-ui-border: #0072d3;
+  --mu-properties-container-color: #007fff10;
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-rainbow-hue-1: var(--mu-rainbow-hue-start-value);
   --mu-rainbow-hue-10: calc(var(--mu-rainbow-hue-1) + 270);
@@ -2184,7 +2185,7 @@ body {
   --mu-reading-glow-color: #00a3ff;
   --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
   --mu-reading-glow-radius-value: 1;
-  --mu-reading-indicator-color: light-dark(#007fffa3, #007fffa3);
+  --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-width: calc(
     var(--mu-reading-indicator-width-value-rem) * -1rem
   );
@@ -2196,14 +2197,14 @@ body {
     12 - var(--mu-scrollbar-thumb-size-value)
   );
   --mu-scrollbar-thumb-size-value: 10;
-  --mu-scrollbar-track-bg: light-dark(#ffffff00, #00000000);
-  --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
+  --mu-scrollbar-track-bg: transparent;
+  --mu-scrollbar-track-bg-hover: transparent;
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value) * 1px);
   --mu-scrollbar-width-value: 16;
-  --mu-sidebar-bottom-vault-profile-bg-color: light-dark(#d1dfff, #001122);
-  --mu-sidebar-pane-numbers: light-dark(#007fff, #007fff);
-  --mu-sidebar-top-buttons-container-bg-color: light-dark(#d1dfff, #001122);
-  --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-sidebar-bottom-vault-profile-bg-color: var(--background-secondary);
+  --mu-sidebar-pane-numbers: #007fff;
+  --mu-sidebar-top-buttons-container-bg-color: var(--background-secondary);
+  --mu-stacked-mode-border-color: #0088ff;
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(
     var(--mu-stacked-mode-border-value) * 1px
@@ -2211,9 +2212,9 @@ body {
   --mu-style-settings-indent-color-1: #007fff7f;
   --mu-style-settings-indent-color-2: #d372ff7f;
   --mu-style-settings-indent-color-3: #ff7f007f;
-  --mu-suggestion-search-panel-bg-color: light-dark(#d1dfff, #001122);
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
+  --mu-suggestion-search-panel-bg-color: var(--background-secondary);
+  --mu-table-color-1: var(--mu-background-color-2);
+  --mu-table-color-2: var(--mu-background-color-1);
   --mu-table-inner-border-width: calc(
     var(--mu-table-inner-border-width-value) * 1px
   );
@@ -2222,10 +2223,10 @@ body {
     var(--mu-table-outer-border-width-value) * 1px
   );
   --mu-table-outer-border-width-value: 2;
-  --mu-table-row-hover: light-dark(#0088ff33, #0088ff33);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-row-hover: #0088ff33;
+  --mu-table-th-background: #004882;
   --mu-table-th-foreground-edit: var(--mu-text-1);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-foreground-main: #e1e1e1;
   --mu-tag-border-color: #0072d3;
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value) * 1px);
   --mu-tags-hashtag-padding-value: 2;
@@ -2239,7 +2240,7 @@ body {
   --mu-warm-screen-mode: 0;
   --muc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffff4848' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
   --muc-icon-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffbf00' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --nav-collapse-icon-color: #0072d3;
   --nav-collapse-icon-color-collapsed: #0072d3;
   --nav-heading-color: var(--text-normal);
   --nav-heading-color-collapsed: var(--text-faint);
@@ -2249,13 +2250,13 @@ body {
   --nav-heading-weight-hover: var(--font-medium);
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-indentation-guide-width: var(--indentation-guide-width);
-  --nav-item-background-active: light-dark(#007fff28, #007fff28);
+  --nav-item-background-active: #007fff28;
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-selected: #0072d338;
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-normal);
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: var(--text-normal);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
@@ -2318,7 +2319,7 @@ body {
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
-  --search-icon-color: light-dark(#007fff, #007fff);
+  --search-icon-color: #007fff;
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
@@ -2398,7 +2399,7 @@ body {
   --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-normal);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --tab-text-color-focused-active-current: var(--text-normal);
   --tab-text-color-focused-highlighted: var(--text-normal);
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -2435,16 +2436,16 @@ body {
   --table-selection-border-color: var(--interactive-accent);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
-  --table-text-color: light-dark(#000000, #f1f1f1);
+  --table-text-color: inherit;
   --table-text-size: inherit;
   --table-white-space: normal;
-  --tag-background: light-dark(#8b6cef82, #8b6cef82);
-  --tag-background-hover: light-dark(#a994f382, #a994f382);
-  --tag-border-color: light-dark(#0072d33f, #0072d33f);
-  --tag-border-color-hover: light-dark(#00bfff, #00bfff);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: #0072d33f;
+  --tag-border-color-hover: #00bfff;
   --tag-border-width: 1px;
-  --tag-color: light-dark(#8b6cef, #8b6cef);
-  --tag-color-hover: light-dark(#a994f3, #a994f3);
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent-hover);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 8px;
@@ -2457,10 +2458,10 @@ body {
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: light-dark(#ffff0088, #ffff0088);
+  --text-highlight-bg: #ffff0088;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --text-normal: var(--color-base-100);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
@@ -2529,19 +2530,19 @@ body {
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-primary-alt: #e1e1e1;
   --background-secondary-alt: #ffffff;
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-comment: light-dark(#a3a3a3, #a3a3a3);
-  --code-function: light-dark(#00a300, #48f148);
+  --code-background: #f1f1ff;
+  --code-comment: #a3a3a3;
+  --code-function: #00a300;
   --code-important: #ff7f00;
-  --code-keyword: light-dark(#c300f1, #d372ff);
+  --code-keyword: #c300f1;
   --code-normal: var(--mu-text-1);
-  --code-operator: light-dark(#c300f1, #d372ff);
-  --code-property: light-dark(#0048a3, #0088f1);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
+  --code-operator: #c300f1;
+  --code-property: #0048a3;
+  --code-punctuation: #c300f1;
   --code-size: var(--font-smaller);
-  --code-string: light-dark(#0000f1, #00d8ff);
-  --code-tag: light-dark(#c300f1, #d372ff);
-  --code-value: light-dark(#f18f00, #ffa300);
+  --code-string: #0000f1;
+  --code-tag: #c300f1;
+  --code-value: #f18f00;
   --code-white-space: pre-wrap;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -2583,7 +2584,7 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --graph-node-focused: light-dark(#0048a3, #00cfff);
+  --graph-node-focused: #0048a3;
   --highlight-mix-blend-mode: normal;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -2597,64 +2598,64 @@ body {
   --interactive-normal: var(--mu-background-color-2);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-background: light-dark(#cfcfcf88, #cfcfcf20);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-code-attribute: light-dark(#e50000, #ffa3a3);
+  --mu-background-color-1: #e8efff;
+  --mu-background-color-2: #d1dfff;
+  --mu-blockquote-background: #cfcfcf88;
+  --mu-blockquote-border: #007fff;
+  --mu-bookmarked-note-icon-bg: #007fff30;
+  --mu-caret-color: #cf00ff;
+  --mu-code-attribute: #e50000;
   --mu-color-lig: #007fff;
-  --mu-column-stripped-background: light-dark(#00000011, #00000082);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-external-link: light-dark(#0033ff, #00a9dd);
-  --mu-external-link-hover: light-dark(#00a3ff, #00c3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-column-stripped-background: #00000011;
+  --mu-divider-color: #007fff10;
+  --mu-external-link: #0033ff;
+  --mu-external-link-hover: #00a3ff;
+  --mu-folder-text-color: #0048a3;
   --mu-folder-zoom: 82%;
   --mu-gray-1: #a3a3a3;
   --mu-green-1: #20cf20;
   --mu-green-2: #20a320;
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --mu-h1: #0072d3;
+  --mu-h2: #0072d3;
+  --mu-h3: #0072d3;
+  --mu-h4: #0072d3;
+  --mu-h5: #0072d3;
+  --mu-h6: #0072d3;
+  --mu-hr-color: #0072d3;
+  --mu-icon: #5382d3;
+  --mu-icon-active: #007fff;
+  --mu-icon-focused: #00a3ff;
+  --mu-icon-hover: #007fff;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-input-bg-color: #fff;
-  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
-  --mu-link: light-dark(#a200ff, #d372ff);
-  --mu-link-hover: light-dark(#c300ff, #db8fff);
+  --mu-label-h1: #bf72d8;
+  --mu-label-h2: #bf72d8;
+  --mu-label-h3: #bf72d8;
+  --mu-label-h4: #bf72d8;
+  --mu-label-h5: #bf72d8;
+  --mu-label-h6: #bf72d8;
+  --mu-link: #a200ff;
+  --mu-link-hover: #c300ff;
   --mu-magenta-1: #f100f1;
   --mu-modal-background: #cfcfcf;
   --mu-notes-icon-zoom: 72%;
-  --mu-property-color: light-dark(#0072d3, #00a3ff);
-  --mu-property-title-color: light-dark(#0072d3, #00a3ff);
+  --mu-property-color: #0072d3;
+  --mu-property-title-color: #0072d3;
   --mu-purple-1: #d372ff;
   --mu-purple-2: #b10aff;
-  --mu-scrollbar-thumb-bg: light-dark(#48484822, #84848422);
-  --mu-scrollbar-thumb-bg-hover: light-dark(#48484848, #84848448);
-  --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
+  --mu-scrollbar-thumb-bg: #48484822;
+  --mu-scrollbar-thumb-bg-hover: #48484848;
+  --mu-scrollbar-track-bg-hover: #82828221;
   --mu-special-folder-color: #000;
   --mu-suggestion-color: #0072d3;
   --mu-text-1: #000;
-  --mu-text-bold: light-dark(#000000, #f1f1f1);
-  --mu-text-italic: light-dark(#000000, #f1f1f1);
+  --mu-text-bold: inherit;
+  --mu-text-italic: inherit;
   --mu-text-selection: #0051f136;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #003388;
   --mu-titlebar-text: #f1f1f1;
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-vault-title: #a300cf;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2663,7 +2664,7 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tab-divider-color: #003364;
   --text-muted: #353535;
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --text-normal: #000;
   color-scheme: light;
 }
 
@@ -2728,64 +2729,64 @@ body {
   --interactive-normal: var(--mu-background-color-2);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-background: light-dark(#cfcfcf88, #cfcfcf20);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-code-attribute: light-dark(#e50000, #ffa3a3);
+  --mu-background-color-1: #002248;
+  --mu-background-color-2: #001122;
+  --mu-blockquote-background: #cfcfcf20;
+  --mu-blockquote-border: #007fff;
+  --mu-bookmarked-note-icon-bg: #007fff40;
+  --mu-caret-color: #00cfff;
+  --mu-code-attribute: #ffa3a3;
   --mu-color-lig: #007fff;
-  --mu-column-stripped-background: light-dark(#00000011, #00000082);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-external-link: light-dark(#0033ff, #00a9dd);
-  --mu-external-link-hover: light-dark(#00a3ff, #00c3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-column-stripped-background: #00000082;
+  --mu-divider-color: #007fff10;
+  --mu-external-link: #00a9dd;
+  --mu-external-link-hover: #00c3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-folder-zoom: 82%;
   --mu-gray-1: #a3a3a3;
   --mu-green-1: #20f120;
   --mu-green-2: #20a320;
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --mu-h1: #00a3ff;
+  --mu-h2: #00a3ff;
+  --mu-h3: #00a3ff;
+  --mu-h4: #00a3ff;
+  --mu-h5: #00a3ff;
+  --mu-h6: #00a3ff;
+  --mu-hr-color: #0072d3;
+  --mu-icon: #5382d3;
+  --mu-icon-active: #007fff;
+  --mu-icon-focused: #00a3ff;
+  --mu-icon-hover: #007fff;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-input-bg-color: #001836;
-  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
-  --mu-link: light-dark(#a200ff, #d372ff);
-  --mu-link-hover: light-dark(#c300ff, #db8fff);
+  --mu-label-h1: #a35fbf;
+  --mu-label-h2: #a35fbf;
+  --mu-label-h3: #a35fbf;
+  --mu-label-h4: #a35fbf;
+  --mu-label-h5: #a35fbf;
+  --mu-label-h6: #a35fbf;
+  --mu-link: #d372ff;
+  --mu-link-hover: #db8fff;
   --mu-magenta-1: #f100f1;
   --mu-modal-background: #000;
   --mu-notes-icon-zoom: 72%;
-  --mu-property-color: light-dark(#0072d3, #00a3ff);
-  --mu-property-title-color: light-dark(#0072d3, #00a3ff);
+  --mu-property-color: #00a3ff;
+  --mu-property-title-color: #00a3ff;
   --mu-purple-1: #d372ff;
   --mu-purple-2: #a273d8;
-  --mu-scrollbar-thumb-bg: light-dark(#48484822, #84848422);
-  --mu-scrollbar-thumb-bg-hover: light-dark(#48484848, #84848448);
-  --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
+  --mu-scrollbar-thumb-bg: #84848422;
+  --mu-scrollbar-thumb-bg-hover: #84848448;
+  --mu-scrollbar-track-bg-hover: #00000021;
   --mu-special-folder-color: #000;
   --mu-suggestion-color: #00d3ff;
   --mu-text-1: #f1f1f1;
-  --mu-text-bold: light-dark(#000000, #f1f1f1);
-  --mu-text-italic: light-dark(#000000, #f1f1f1);
+  --mu-text-bold: inherit;
+  --mu-text-italic: inherit;
   --mu-text-selection: #0051f1a3;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-text-title: hsl(278, 80%, 60%);
+  --mu-titlebar-background: #003388;
   --mu-titlebar-text: #f1f1f1;
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-vault-title: var(--mu-purple-2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --shadow-l:
@@ -6500,7 +6501,7 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
 
 .is-translucent:not(.is-fullscreen) {
   --divider-color: rgba(0, 0, 0, 0.15);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
   --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
 }
 
@@ -11069,14 +11070,14 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
 }
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active {
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: var(--interactive-accent);
   --icon-color: var(--text-on-accent);
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
 }
 
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: var(--interactive-accent);
   --icon-color: var(--text-on-accent);
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
@@ -14099,7 +14100,7 @@ input.metadata-property-key-input:focus {
 }
 
 .bases-toolbar-suggest-operators .search-input-container {
-  --search-icon-color: light-dark(#007fff, #007fff);
+  --search-icon-color: var(--text-faint);
   margin-top: 2px;
   order: -1;
 }
@@ -17050,7 +17051,7 @@ em {
 }
 
 .bases-toolbar-menu-container .search-input-container {
-  --search-icon-color: light-dark(#007fff, #007fff);
+  --search-icon-color: var(--text-faint);
   border-bottom: var(--border-width) solid var(--background-modifier-border);
   margin-bottom: var(--size-4-2);
   padding-bottom: var(--size-4-1);
@@ -19726,13 +19727,13 @@ body:not(.is-phone)
 }
 
 .sync-history-list-item-header.is-active {
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --nav-collapse-icon-color: var(--text-on-accent);
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
 }
 
 .sync-history-list-item-header.is-active:hover {
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --nav-collapse-icon-color: var(--text-on-accent);
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
 }
@@ -19749,7 +19750,7 @@ body:not(.is-phone)
 
 @media (hover: hover) {
   .sync-history-list-item-header.is-active .tree-item-flair:hover {
-    --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+    --nav-collapse-icon-color: var(--text-on-accent);
   }
 }
 
@@ -19830,7 +19831,7 @@ body:not(.is-phone)
 
 @media (hover: hover) {
   .sync-history-list-item-header .tree-item-flair:hover {
-    --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+    --nav-collapse-icon-color: var(--text-normal);
     background-color: var(--background-modifier-hover);
     opacity: 1;
   }
@@ -22059,7 +22060,7 @@ body.is-screenshotting *::-webkit-scrollbar {
 .is-mobile.theme-dark {
   --background-modifier-cover: rgba(0, 0, 0, 0.5);
   --background-modifier-form-field: var(--background-modifier-border);
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
   --background-modifier-message: var(--background-secondary);
   --color-base-00: #000;
   --color-base-10: #111;
@@ -22067,7 +22068,7 @@ body.is-screenshotting *::-webkit-scrollbar {
   --mobile-sidebar-background: var(--background-secondary);
   --search-result-background: var(--background-secondary);
   --settings-home-background: var(--background-primary);
-  --tag-background: light-dark(#8b6cef82, #8b6cef82);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
 }
 
 .is-tablet {
@@ -24788,14 +24789,14 @@ body.mu-folder-icon-closed-op3 {
 
 body.mu-disable-folder-style {
   --nav-item-color: currentColor;
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: currentColor;
   --nav-item-color-highlighted: currentColor;
   --nav-item-color-hover: currentColor;
   --nav-item-color-selected: currentColor;
 }
 
 span.is-flashing {
-  --code-background: light-dark(#f1f1f1, #001122);
+  --code-background: var(--text-highlight-bg);
   -webkit-text-fill-color: #000;
   border-bottom: 3px solid var(--mu-caret-color);
   border-radius: 0;
@@ -24803,7 +24804,7 @@ span.is-flashing {
 }
 
 .markdown-reading-view .is-flashing {
-  --code-background: light-dark(#f1f1f1, #001122);
+  --code-background: var(--text-highlight-bg);
   -webkit-text-fill-color: #000;
   border-radius: 0;
   color: #000;
@@ -30023,25 +30024,25 @@ table.calendar.svelte-pcimu8 td {
 .table4 {
   --mu-table-inner-border-width: 1px;
   --mu-table-outer-border-width: 2px;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: var(--text-accent);
   --mu-table-th-foreground-edit: var(--mu-text-1);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
 }
 
 .table5 {
   --mu-table-inner-border-width: 0;
   --mu-table-outer-border-width: 2px;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: var(--text-accent);
   --mu-table-th-foreground-edit: var(--mu-text-1);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
 }
 
 .table6 {
   --mu-table-inner-border-width: 0;
   --mu-table-outer-border-width: 2px;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: var(--text-accent);
   --mu-table-th-foreground-edit: var(--mu-text-1);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
   --table-column-alt-background: var(--mu-column-stripped-background);
 }
 
@@ -30120,7 +30121,7 @@ table.calendar.svelte-pcimu8 td {
   table:not(.calendar.svelte-pcimu8)
   tr:hover
   td::before {
-  --mu-num-table-bg-row: light-dark(#00000022, #00000022);
+  --mu-num-table-bg-row: #0072d38f;
 }
 
 .num-table
@@ -30779,376 +30780,376 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 /* Themes */
 /* Purple */
 .theme-light.magicuser-purple-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
+  --code-background: #e8e8e8;
+  --mu-background-color-1: #dbd0ff;
+  --mu-background-color-2: #cdbeff;
   --mu-dark-sidebar-color: #250035;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-input-bg-color: #fff;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #330048;
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #250035;
+  --mu-vault-title: #a300cf;
 }
 
 .theme-dark.magicuser-purple-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
+  --code-background: #1f1f1f;
+  --mu-background-color-1: #330048;
+  --mu-background-color-2: #250035;
+  --mu-divider-color: #00000000;
   --mu-input-bg-color: #160020;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #110022;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #210030;
+  --mu-vault-title: #bf48ff;
 }
 
 /* Teal */
 .theme-light.magicuser-teal-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
+  --code-background: #e8e8e8;
+  --mu-background-color-1: #e1f0f0;
+  --mu-background-color-2: #cde8e8;
   --mu-dark-sidebar-color: #002121;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-input-bg-color: #fff;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-table-th-background: #004040;
+  --mu-titlebar-background: #004040;
 }
 
 .theme-dark.magicuser-teal-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
+  --code-background: #1f1f1f;
+  --mu-background-color-1: #002828;
+  --mu-background-color-2: #002121;
+  --mu-divider-color: #00000000;
   --mu-input-bg-color: #003838;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-table-th-background: #004040;
+  --mu-titlebar-background: #004040;
 }
 
 /* Camouflage */
 .theme-light.magicuser-camouflage-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #e8e8e8;
+  --code-punctuation: #727d57;
+  --mu-background-color-1: #e1e8d3;
+  --mu-background-color-2: #d1d8c0;
+  --mu-caret-color: #ff7f00;
   --mu-dark-sidebar-color: #1e2117;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #4f573c;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-input-bg-color: #fff;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #3a3f2c;
+  --mu-text-title: #727d57;
+  --mu-titlebar-background: #3a3f2c;
+  --mu-vault-title: #727d57;
 }
 
 .theme-dark.magicuser-camouflage-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --code-background: #000;
+  --code-punctuation: #727d57;
+  --mu-background-color-1: #24281c;
+  --mu-background-color-2: #1e2117;
+  --mu-caret-color: #ff7f00;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #a0ac82;
   --mu-input-bg-color: #000;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #3a3f2c;
+  --mu-text-title: #727d57;
+  --mu-titlebar-background: #3a3f2c;
+  --mu-vault-title: #727d57;
 }
 
 /* Gray */
 .theme-light.magicuser-gray-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --code-punctuation: #979797;
+  --mu-background-color-1: #e8e8e8;
+  --mu-background-color-2: #e1e1e1;
+  --mu-caret-color: #f500b4;
   --mu-dark-sidebar-color: #181818;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-h1: #0072d3;
+  --mu-h2: #0072d3;
+  --mu-h3: #0072d3;
+  --mu-h4: #0072d3;
+  --mu-h5: #0072d3;
+  --mu-h6: #0072d3;
   --mu-input-bg-color: #fff;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #282828;
+  --mu-text-title: #828282;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #828282;
 }
 
 .theme-dark.magicuser-gray-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
+  --code-background: #000;
+  --code-punctuation: #7f7f7f;
+  --mu-background-color-1: #1f1f1f;
+  --mu-background-color-2: #181818;
+  --mu-caret-color: #ff48cf;
+  --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: #080808;
+  --mu-text-title: #828282;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #828282;
 }
 
 /* Room lamp */
 .theme-light.magicuser-room-lamp-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #e8e8e8;
+  --code-punctuation: #ac3f5d;
+  --mu-background-color-1: #f9edc6;
+  --mu-background-color-2: #f7e8b3;
+  --mu-caret-color: #d3148d;
   --mu-dark-sidebar-color: #3f1423;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-input-bg-color: #fff;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: hsl(339, 52%, 8%);
+  --mu-text-title: #ac3f5d;
+  --mu-titlebar-background: #461828;
+  --mu-vault-title: #ac3f5d;
 }
 
 .theme-dark.magicuser-room-lamp-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --code-background: #000;
+  --code-punctuation: #ac3f5d;
+  --mu-background-color-1: #2f0f18;
+  --mu-background-color-2: #3f1423;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #97bff1;
+  --mu-h1: #97bff1;
+  --mu-h2: #97bff1;
+  --mu-h3: #97bff1;
+  --mu-h4: #97bff1;
+  --mu-h5: #97bff1;
+  --mu-h6: #97bff1;
   --mu-input-bg-color: #000;
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-table-th-background: hsl(339, 52%, 8%);
+  --mu-text-title: #ac3f5d;
+  --mu-titlebar-background: #461828;
+  --mu-vault-title: #ac3f5d;
 }
 
 /* Moon */
 .theme-light.magicuser-moon-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #e1e1e1;
+  --code-punctuation: #a300a3;
+  --mu-background-color-1: #d2e1f1;
+  --mu-background-color-2: #c3d6ea;
+  --mu-caret-color: #d300ff;
   --mu-dark-sidebar-color: #000b15;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
   --mu-input-bg-color: #fff;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #001a33;
   --mu-text-selection: #bf48ff33;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #001a33;
+  --mu-vault-title: #a300cf;
 }
 
 .theme-dark.magicuser-moon-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
+  --code-background: #000;
+  --code-punctuation: #a300a3;
+  --mu-background-color-1: #001122;
+  --mu-background-color-2: #000b15;
+  --mu-caret-color: #d300ff;
+  --mu-divider-color: #dfc1c100;
+  --mu-folder-text-color: #729fd8;
+  --mu-h1: #729fd8;
+  --mu-h2: #729fd8;
+  --mu-h3: #729fd8;
+  --mu-h4: #729fd8;
+  --mu-h5: #729fd8;
+  --mu-h6: #729fd8;
   --mu-input-bg-color: #001836;
   --mu-suggestion-color: #00a3ff;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #001a33;
   --mu-text-selection: #bf48ff55;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #001a33;
+  --mu-vault-title: #a300cf;
+  --text-normal: #c1c1c1;
 }
 
 /* Concentration */
 .theme-light.magicuser-concentration-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #c0c0cf;
+  --code-punctuation: #797995;
+  --mu-background-color-1: #dddde8;
+  --mu-background-color-2: #d7d7e1;
+  --mu-caret-color: #f500b4;
   --mu-dark-sidebar-color: #121216;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #00a3ff;
   --mu-input-bg-color: #f1f1f5;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #0b0b0e;
   --mu-text-selection: #bf48ff48;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-text-title: #58586f;
+  --mu-titlebar-background: #0b0b0e;
+  --mu-vault-title: #58586f;
 }
 
 .theme-dark.magicuser-concentration-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #282833;
+  --code-punctuation: #797995;
+  --mu-background-color-1: #1b1b21;
+  --mu-background-color-2: #121216;
+  --mu-caret-color: #ff48cf;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #72b1ff;
+  --mu-h1: #f1d743;
+  --mu-h2: #f1d743;
+  --mu-h3: #f1d743;
+  --mu-h4: #f1d743;
+  --mu-h5: #f1d743;
+  --mu-h6: #f1d743;
+  --mu-icon-focused: #00a3ff;
   --mu-input-bg-color: #0c0c0e;
   --mu-suggestion-color: #00a3ff;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #0b0b0e;
   --mu-text-selection: #bf48ff55;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-text-title: #58586f;
+  --mu-titlebar-background: #0b0b0e;
+  --mu-vault-title: #58586f;
 }
 
 /* Creativity */
 .theme-light.magicuser-creativity-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #fff1f5;
+  --code-punctuation: #cf22cf;
+  --mu-background-color-1: #f1dbe1;
+  --mu-background-color-2: #edd4da;
+  --mu-caret-color: #f500b4;
   --mu-dark-sidebar-color: #25131f;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #cf22cf;
   --mu-input-bg-color: #fff;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #3d1f33;
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-text-title: #a348a3;
+  --mu-titlebar-background: #3d1f33;
+  --mu-vault-title: #a348a3;
 }
 
 .theme-dark.magicuser-creativity-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #4c283f;
+  --code-punctuation: #cf72cf;
+  --mu-background-color-1: #291522;
+  --mu-background-color-2: #25131f;
+  --mu-caret-color: #ff48cf;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #72b1ff;
+  --mu-icon-focused: #cf22cf;
   --mu-input-bg-color: #1b0e17;
   --mu-suggestion-color: #00a3ff;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #3d1f33;
   --mu-text-selection: #0088ff7f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-text-title: #a348a3;
+  --mu-titlebar-background: #3d1f33;
+  --mu-vault-title: #a348a3;
 }
 
 /* Teacher */
 .theme-light.magicuser-teacher-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: hsl(146, 28%, 88%);
+  --code-punctuation: #50886a;
+  --mu-background-color-1: hsl(146, 28%, 90%);
+  --mu-background-color-2: hsl(146, 28%, 86%);
+  --mu-caret-color: #00a348;
   --mu-dark-sidebar-color: #24332a;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #0a090900;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #007fff;
+  --mu-h2: #cf22ff;
+  --mu-h3: #ff9300;
+  --mu-h4: #3cc347;
+  --mu-h5: #f63737;
+  --mu-h6: #a3a300;
+  --mu-icon-focused: #00d87f;
   --mu-input-bg-color: #fff;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #2c4737;
   --mu-text-selection: #0ed8947f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #50886a;
+  --mu-titlebar-background: #484848;
+  --mu-vault-title: #50886a;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-dark.magicuser-teacher-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #1f3528;
+  --code-punctuation: #2fb86f;
+  --mu-background-color-1: #28392f;
+  --mu-background-color-2: #24332a;
+  --mu-caret-color: hsl(160, 89%, 51%);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #72b1ff;
+  --mu-h1: #72b1ff;
+  --mu-h2: #e897ff;
+  --mu-h3: #ffc375;
+  --mu-h4: #b5e8b9;
+  --mu-h5: #fa9797;
+  --mu-h6: #fffd7f;
+  --mu-icon-focused: #00d87f;
   --mu-input-bg-color: #1b0e17;
   --mu-suggestion-color: #00a3ff;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #18281f;
   --mu-text-selection: #0ed89455;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #50886a;
+  --mu-titlebar-background: #484848;
+  --mu-vault-title: #50886a;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 /* Stealth */
@@ -31157,45 +31158,45 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --background-modifier-border-hover: #cfcfcf;
   --checkbox-border-color: #828282;
   --checkbox-border-color-hover: #a3a3a3;
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --modal-border-color: light-dark(#007fff30, #007fff30);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --code-punctuation: #727272;
+  --list-marker-color: #727272;
+  --modal-border-color: #cfcfcf;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #d8d8d8;
+  --mu-blockquote-border: #828282;
+  --mu-caret-color: #0072d3;
   --mu-dark-sidebar-color: #111111;
-  --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-file-header-border-color: light-dark(#007fff20, #007fff20);
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --mu-default-mode-border-color: #0072d3;
+  --mu-divider-color: #00000000;
+  --mu-file-header-border-color: #cfcfcf;
+  --mu-folder-area-background: #bfbfbf48;
+  --mu-folder-area-border: #bfbfbf88;
+  --mu-folder-text-color: #000;
+  --mu-h1: #000;
+  --mu-h2: #000;
+  --mu-h3: #000;
+  --mu-h4: #000;
+  --mu-h5: #000;
+  --mu-h6: #000;
+  --mu-hr-color: #cfcfcf;
+  --mu-icon: #575757;
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --mu-icon-hover: #0072d3;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-input-bg-color: #fff;
-  --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-stacked-mode-border-color: #0072d3;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #484848;
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-text-title: #727272;
+  --mu-titlebar-background: #000;
+  --mu-vault-title: #727272;
+  --nav-collapse-icon-color: #727272;
   --prompt-border-color: #cfcfcf;
-  --search-icon-color: light-dark(#007fff, #007fff);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --search-icon-color: #0072d3;
+  --text-normal: #000;
 }
 
 .theme-dark.magicuser-stealth-theme {
@@ -31203,249 +31204,253 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --background-modifier-border-hover: #282828;
   --checkbox-border-color: #828282;
   --checkbox-border-color-hover: #a3a3a3;
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --modal-border-color: light-dark(#007fff30, #007fff30);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-file-header-border-color: light-dark(#007fff20, #007fff20);
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --code-background: #000;
+  --code-punctuation: #727272;
+  --list-marker-color: #727272;
+  --modal-border-color: #282828;
+  --mu-background-color-1: #181818;
+  --mu-background-color-2: #111111;
+  --mu-blockquote-border: #828282;
+  --mu-caret-color: #00a3ff;
+  --mu-default-mode-border-color: #0072d3;
+  --mu-divider-color: #00000000;
+  --mu-file-header-border-color: #282828;
+  --mu-folder-area-background: #bfbfbf11;
+  --mu-folder-area-border: #bfbfbf28;
+  --mu-folder-text-color: #727272;
+  --mu-h1: #979797;
+  --mu-h2: #979797;
+  --mu-h3: #979797;
+  --mu-h4: #979797;
+  --mu-h5: #979797;
+  --mu-h6: #979797;
+  --mu-hr-color: #484848;
+  --mu-icon: #575757;
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --mu-icon-hover: #0072d3;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-input-bg-color: #000;
-  --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-stacked-mode-border-color: #0072d3;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: #080808;
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-text-title: #575757;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #575757;
+  --nav-collapse-icon-color: #727272;
   --prompt-border-color: #282828;
-  --search-icon-color: light-dark(#007fff, #007fff);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --search-icon-color: #0072d3;
+  --text-normal: #aaa;
 }
 
 /* Chroma Amulet */
 .theme-light.magicuser-chroma-amulet-theme {
   --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
   --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --code-punctuation: var(--amulet-title-color);
+  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 90%);
+  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 82%);
+  --mu-caret-color: #0072d3;
   --mu-dark-sidebar-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon: var(--amulet-icon-color);
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --mu-icon-hover: var(--amulet-icon-color);
+  --mu-icon-statusbar-menu: var(--amulet-icon-color);
   --mu-input-bg-color: #fff;
   --mu-suggestion-color: #0072d3;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: var(--amulet-icon-color);
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --search-icon-color: light-dark(#007fff, #007fff);
+  --mu-text-title: var(--amulet-title-color);
+  --mu-titlebar-background: hsl(
+    var(--mu-amulet-hue),
+    var(--mu-amulet-sat),
+    80%
+  );
+  --mu-vault-title: var(--amulet-title-color);
+  --search-icon-color: var(--amulet-icon-color);
 }
 
 .theme-dark.magicuser-chroma-amulet-theme {
   --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
   --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
+  --code-background: #000;
+  --code-punctuation: var(--amulet-title-color);
+  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
+  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #72b1ff;
+  --mu-h1: #00a3ff;
+  --mu-h2: #00a3ff;
+  --mu-h3: #00a3ff;
+  --mu-h4: #00a3ff;
+  --mu-h5: #00a3ff;
+  --mu-h6: #00a3ff;
+  --mu-icon: var(--amulet-icon-color);
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --mu-icon-hover: var(--amulet-icon-color);
+  --mu-icon-statusbar-menu: var(--amulet-icon-color);
   --mu-input-bg-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 4%);
   --mu-suggestion-color: #00cfff;
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-th-background: var(--amulet-icon-color);
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --search-icon-color: light-dark(#007fff, #007fff);
+  --mu-text-title: var(--amulet-title-color);
+  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
+  --mu-vault-title: var(--amulet-title-color);
+  --search-icon-color: var(--amulet-icon-color);
 }
 
 /* Accent */
 .theme-light.magicuser-accent-theme {
   --background-modifier-border: var(--mu-accent-details);
   --background-modifier-border-hover: var(--mu-accent-details);
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: var(--mu-accent-details);
   --checkbox-border-color: #828282;
   --checkbox-border-color-hover: var(--mu-accent-color);
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
+  --code-background: #f1f1f1;
+  --code-punctuation: var(--mu-accent-icons);
   --divider-color-hover: var(--mu-accent-color);
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --modal-border-color: light-dark(#007fff30, #007fff30);
+  --list-marker-color: var(--mu-accent-light-mode);
+  --modal-border-color: var(--mu-accent-details);
   --mu-accent-color: hsla(var(--color-accent-hsl), 1);
   --mu-accent-details: hsla(var(--color-accent-hsl), 0.2);
   --mu-accent-icons: hsl(var(--accent-h), 78%, 55%);
   --mu-accent-light-mode: hsl(var(--accent-h), 78%, 38%);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #e1e1e1;
+  --mu-blockquote-border: var(--mu-accent-color);
+  --mu-bookmarked-note-icon-bg: var(--mu-accent-details);
+  --mu-caret-color: hsl(var(--accent-h), 82%, 52%);
   --mu-dark-sidebar-color: #111111;
-  --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-file-header-border-color: light-dark(#007fff20, #007fff20);
+  --mu-default-mode-border-color: var(--mu-accent-color);
+  --mu-divider-color: #00000000;
+  --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
   --mu-file-header-border-width: 2px;
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
+  --mu-file-icon-color: var(--mu-accent-light-mode);
+  --mu-folder-area-background: hsla(var(--color-accent-hsl), 0.1);
+  --mu-folder-area-border: hsla(var(--color-accent-hsl), 0.3);
+  --mu-folder-icon-color: #828282;
+  --mu-folder-icon-color-active: var(--mu-accent-light-mode);
+  --mu-folder-text-color: #000;
+  --mu-h1: var(--mu-accent-light-mode);
+  --mu-h2: var(--mu-accent-light-mode);
+  --mu-h3: var(--mu-accent-light-mode);
+  --mu-h4: var(--mu-accent-light-mode);
+  --mu-h5: var(--mu-accent-light-mode);
+  --mu-h6: var(--mu-accent-light-mode);
+  --mu-hr-color: var(--mu-accent-color);
+  --mu-icon: hsl(var(--accent-h), 78%, 38%);
+  --mu-icon-active: var(--mu-accent-icons);
+  --mu-icon-focused: var(--mu-accent-icons);
+  --mu-icon-hover: var(--mu-accent-icons);
+  --mu-icon-statusbar-menu: hsl(var(--accent-h), 78%, 38%);
+  --mu-indent-color-level-1: var(--mu-accent-details);
+  --mu-indent-color-level-2: var(--mu-accent-details);
+  --mu-indent-color-level-3: var(--mu-accent-details);
+  --mu-indent-color-level-4: var(--mu-accent-details);
+  --mu-indent-color-level-5: var(--mu-accent-details);
+  --mu-indent-color-level-6: var(--mu-accent-details);
   --mu-input-bg-color: #fff;
-  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
-  --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-label-h1: #979797;
+  --mu-label-h2: #979797;
+  --mu-label-h3: #979797;
+  --mu-label-h4: #979797;
+  --mu-label-h5: #979797;
+  --mu-label-h6: #979797;
+  --mu-stacked-mode-border-color: var(--mu-accent-color);
   --mu-suggestion-color: var(--mu-accent-color);
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-background: #080808;
+  --mu-table-th-foreground-main: var(--text-accent);
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
-  --nav-item-background-active: light-dark(#007fff28, #007fff28);
+  --mu-text-title: #0072d3;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #0072d3;
+  --nav-collapse-icon-color: #a3a3a3;
+  --nav-item-background-active: var(--mu-accent-details);
   --prompt-border-color: var(--mu-accent-details);
-  --search-icon-color: light-dark(#007fff, #007fff);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --search-icon-color: var(--mu-accent-icons);
+  --text-normal: #000;
 }
 
 .theme-dark.magicuser-accent-theme {
   --background-modifier-border: var(--mu-accent-details);
   --background-modifier-border-hover: var(--mu-accent-details);
-  --background-modifier-hover: light-dark(#007fff28, #007fff28);
+  --background-modifier-hover: var(--mu-accent-details);
   --checkbox-border-color: #828282;
   --checkbox-border-color-hover: var(--mu-accent-color);
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
+  --code-background: #000;
+  --code-punctuation: var(--mu-accent-color);
   --divider-color-hover: var(--mu-accent-color);
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --modal-border-color: light-dark(#007fff30, #007fff30);
+  --list-marker-color: var(--mu-accent-color);
+  --modal-border-color: var(--mu-accent-details);
   --mu-accent-color: hsla(var(--color-accent-hsl), 1);
   --mu-accent-details: hsla(var(--color-accent-hsl), 0.2);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --mu-background-color-1: #181818;
+  --mu-background-color-2: #111111;
+  --mu-blockquote-border: var(--mu-accent-color);
+  --mu-bookmarked-note-icon-bg: var(--mu-accent-details);
+  --mu-caret-color: hsla(var(--color-accent-hsl), 1);
   --mu-dark-sidebar-color: #1f1f1f;
-  --mu-default-mode-border-color: light-dark(#0088ff, #0088ff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-file-header-border-color: light-dark(#007fff20, #007fff20);
+  --mu-default-mode-border-color: var(--mu-accent-color);
+  --mu-divider-color: #00000000;
+  --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
   --mu-file-header-border-width: 2px;
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-hr-color: light-dark(#0072d3, #0072d3);
-  --mu-icon: light-dark(#5382d3, #5382d3);
-  --mu-icon-active: light-dark(#007fff, #007fff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
-  --mu-icon-hover: light-dark(#007fff, #007fff);
-  --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
+  --mu-file-icon-color: var(--mu-accent-color);
+  --mu-folder-area-background: hsla(var(--color-accent-hsl), 0.1);
+  --mu-folder-area-border: hsla(var(--color-accent-hsl), 0.3);
+  --mu-folder-icon-color: #484848;
+  --mu-folder-icon-color-active: var(--mu-accent-color);
+  --mu-folder-text-color: #979797;
+  --mu-h1: hsl(var(--accent-h), 78%, 72%);
+  --mu-h2: hsl(var(--accent-h), 78%, 72%);
+  --mu-h3: hsl(var(--accent-h), 78%, 72%);
+  --mu-h4: hsl(var(--accent-h), 78%, 72%);
+  --mu-h5: hsl(var(--accent-h), 78%, 72%);
+  --mu-h6: hsl(var(--accent-h), 78%, 72%);
+  --mu-hr-color: var(--mu-accent-color);
+  --mu-icon: hsla(var(--color-accent-hsl), 0.7);
+  --mu-icon-active: var(--mu-accent-color);
+  --mu-icon-focused: var(--mu-accent-color);
+  --mu-icon-hover: var(--mu-accent-color);
+  --mu-icon-statusbar-menu: var(--mu-accent-color);
+  --mu-indent-color-level-1: var(--mu-accent-details);
+  --mu-indent-color-level-2: var(--mu-accent-details);
+  --mu-indent-color-level-3: var(--mu-accent-details);
+  --mu-indent-color-level-4: var(--mu-accent-details);
+  --mu-indent-color-level-5: var(--mu-accent-details);
+  --mu-indent-color-level-6: var(--mu-accent-details);
   --mu-input-bg-color: #000;
-  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
-  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
-  --mu-stacked-mode-border-color: light-dark(#0088ff, #0088ff);
+  --mu-label-h1: #484848;
+  --mu-label-h2: #484848;
+  --mu-label-h3: #484848;
+  --mu-label-h4: #484848;
+  --mu-label-h5: #484848;
+  --mu-label-h6: #484848;
+  --mu-stacked-mode-border-color: var(--mu-accent-color);
   --mu-suggestion-color: var(--mu-accent-color);
-  --mu-table-th-background: light-dark(#004882, #004882);
-  --mu-table-th-foreground-main: light-dark(#e1e1e1, #e1e1e1);
+  --mu-table-th-background: #080808;
+  --mu-table-th-foreground-main: var(--text-accent);
   --mu-text-selection: #0088ff53;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
-  --nav-item-background-active: light-dark(#007fff28, #007fff28);
+  --mu-text-title: #0072d3;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #0072d3;
+  --nav-collapse-icon-color: #484848;
+  --nav-item-background-active: var(--mu-accent-details);
   --prompt-border-color: var(--mu-accent-details);
-  --search-icon-color: light-dark(#007fff, #007fff);
-  --text-normal: light-dark(#000000, #f1f1f1);
+  --search-icon-color: var(--mu-accent-color);
+  --text-normal: #cfcfcf;
   --text-selection: hsla(var(--color-accent-hsl), 0.3);
 }
 
@@ -31453,321 +31458,321 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 /* BG Series - Light Theme */
 .magicuser-bg-north-pole-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-sunset-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-old-school-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-classic-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-night-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-dreams-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-slide-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .magicuser-bg-synth-theme {
   --mu-cards-border: #0072d330;
-  --mu-table-color-1: light-dark(#a3a3a328, #a3a3a328);
-  --mu-table-color-2: light-dark(#a3a3a348, #a3a3a348);
-  --mu-table-th-background: light-dark(#004882, #004882);
+  --mu-table-color-1: #a3a3a328;
+  --mu-table-color-2: #a3a3a348;
+  --mu-table-th-background: #1f1f1f;
   --status-bar-border-color: #0072d330;
 }
 
 .theme-light.magicuser-bg-north-pole-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-sunset-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-old-school-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-classic-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-night-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-dreams-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-slide-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 .theme-light.magicuser-bg-synth-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --code-background: #f1f1f1;
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
   --mu-dark-sidebar-color: #000;
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-icon-focused: #9700f1;
   --mu-input-bg-color: #f1f1f1;
   --mu-suggestion-color: #9700cf;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #0072d3;
 }
 
 /* Synth, Dreams and Classic */
 .theme-dark.magicuser-bg-north-pole-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 .theme-dark.magicuser-bg-sunset-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 .theme-dark.magicuser-bg-classic-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 .theme-dark.magicuser-bg-dreams-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 .theme-dark.magicuser-bg-synth-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 /* Old School */
@@ -31776,66 +31781,66 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --checkbox-border-color-hover: #3dffac;
   --checkbox-color: #00e1a3;
   --checkbox-color-hover: #32ffa6;
-  --code-background: light-dark(#f1f1f1, #001122);
-  --code-punctuation: light-dark(#c300f1, #d372ff);
+  --code-background: #000;
+  --code-punctuation: hsl(164, 100%, 32%);
   --hr-color: #00f0b0;
-  --list-marker-color: light-dark(#007fff, #007fff);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --list-marker-color: #00f0b0;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00f0b0;
+  --mu-divider-color: #00000000;
+  --mu-folder-text-color: #00cf95;
+  --mu-h1: #00cf95;
+  --mu-h2: #00cf95;
+  --mu-h3: #00cf95;
+  --mu-h4: #00cf95;
+  --mu-h5: #00cf95;
+  --mu-h6: #00cf95;
+  --mu-icon-focused: #00f0b0;
   --mu-input-bg-color: #1f1f1f;
   --mu-suggestion-color: #00f0b0;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #00a378;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #00a378;
+  --tab-text-color-focused-active-current: #00f0b0;
 }
 
 /* Night */
 .theme-dark.magicuser-bg-night-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00f188;
+  --mu-divider-color: #00000000;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
   --mu-suggestion-color: #00f188;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 /* Slide */
 .theme-dark.magicuser-bg-slide-theme {
-  --code-background: light-dark(#f1f1f1, #001122);
-  --mu-background-color-1: light-dark(#e8efff, #002248);
-  --mu-background-color-2: light-dark(#d1dfff, #001122);
-  --mu-caret-color: light-dark(#cf00ff, #00cfff);
-  --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-h1: light-dark(#0072d3, #00a3ff);
-  --mu-h2: light-dark(#0072d3, #00a3ff);
-  --mu-h3: light-dark(#0072d3, #00a3ff);
-  --mu-h4: light-dark(#0072d3, #00a3ff);
-  --mu-h5: light-dark(#0072d3, #00a3ff);
-  --mu-h6: light-dark(#0072d3, #00a3ff);
-  --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
+  --code-background: #181818;
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-h1: #f1f100;
+  --mu-h2: #f1f100;
+  --mu-h3: #f1f100;
+  --mu-h4: #f1f100;
+  --mu-h5: #f1f100;
+  --mu-h6: #f1f100;
+  --mu-icon-focused: #bf48ff;
   --mu-input-bg-color: #1f1f1f;
   --mu-suggestion-color: #f1f100;
-  --mu-text-title: light-dark(#a300cf, #af47eb);
-  --mu-titlebar-background: light-dark(#003388, #003388);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
-  --tab-text-color-focused-active-current: light-dark(#000000, #f1f1f1);
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --tab-text-color-focused-active-current: #00a3ff;
 }
 
 .theme-dark.magicuser-bg-dreams-theme
@@ -32085,57 +32090,57 @@ body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
   --mu-bg-search-results: #2f0f18;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #97bff1;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-moon-theme {
   --mu-bg-search-results: #001122;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #729fd8;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
   --mu-bg-search-results: #24281c;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #a0ac82;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-gray-theme {
   --mu-bg-search-results: #1f1f1f;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teal-theme {
   --mu-bg-search-results: #002828;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-purple-theme {
   --mu-bg-search-results: #330048;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-concentration-theme {
   --mu-bg-search-results: #1b1b21;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72b1ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-creativity-theme {
   --mu-bg-search-results: #291522;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72b1ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
   --mu-bg-search-results: #28392f;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72b1ff;
 }
 
 body:not(
@@ -32143,81 +32148,81 @@ body:not(
   ).theme-light.mu-sidebar-dark.magicuser-stealth-theme {
   --background-modifier-border: #282828;
   --mu-bg-search-results: #181818;
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-area-background: #bfbfbf11;
+  --mu-folder-area-border: #bfbfbf28;
+  --mu-folder-text-color: #727272;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-accent-theme {
   --mu-bg-search-results: #181818;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-folder-text-color: #979797;
+  --nav-collapse-icon-color: #484848;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
   --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-folder-text-color: #72b1ff;
+  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-classic-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-night-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-slide-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 body:not(
     .mu-cards-interface
   ).theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
   --mu-bg-search-results: #000;
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
 }
 
 /* Frontmatter md */
@@ -32644,17 +32649,17 @@ div.nav-files-container.node-insert-event
 
 /* Custom sidebar - light mode */
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-text-color: #72a3ff;
   --mu-special-folder-color: #000;
   --nav-item-color: #a3a3a3;
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: #a3a3a3;
   --nav-item-color-hover: #a3a3a3;
   --nav-item-color-selected: #cfcfcf;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
   .workspace-leaf-content {
-  --mu-sidebar-top-buttons-container-bg-color: light-dark(#d1dfff, #001122);
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
   background-color: var(--mu-dark-sidebar-color);
 }
 
@@ -32809,31 +32814,31 @@ div.workspace-tab-container
 }
 
 .mu-hide-folder-open-area {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: transparent;
+  --mu-folder-area-border: transparent;
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/01"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/001"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="001"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="01"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 70%, 82%);
 }
 
@@ -32854,26 +32859,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="01"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/02"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(20, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/002"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(20, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="002"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(20, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="02"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(20, 70%, 82%);
 }
 
@@ -32894,26 +32899,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="02"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/03"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(55, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/003"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(55, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="003"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(55, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="03"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(55, 70%, 82%);
 }
 
@@ -32934,26 +32939,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="03"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/04"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(120, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/004"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(120, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="004"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(120, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="04"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(120, 70%, 82%);
 }
 
@@ -32974,26 +32979,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="04"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/05"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(200, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/005"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(200, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="005"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(200, 70%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="05"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(200, 70%, 82%);
 }
 
@@ -33014,26 +33019,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="05"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/06"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(230, 89%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/006"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(230, 89%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="006"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(230, 89%, 82%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="06"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(230, 89%, 82%);
 }
 
@@ -33054,26 +33059,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="06"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/07"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(280, 90%, 80%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/007"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(280, 90%, 80%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="007"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(280, 90%, 80%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="07"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(280, 90%, 80%);
 }
 
@@ -33094,26 +33099,26 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="07"]:hover {
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/08"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 0%, 72%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path*="/008"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 0%, 72%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="008"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 0%, 72%);
 }
 
 body.mu-rainbow-folders .nav-folder-title[data-path^="08"] {
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
   background-color: hsl(0, 0%, 72%);
 }
 
@@ -33138,38 +33143,38 @@ body:not(
     .mu-cards-interface
   ).theme-light.mu-automatic-rainbow-folders.mu-sidebar-dark
   .workspace-leaf-content {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-file-icon-color: #000;
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
+  --mu-indent-color-level-1: #000;
+  --mu-indent-color-level-2: #000;
+  --mu-indent-color-level-3: #000;
+  --mu-indent-color-level-4: #000;
+  --mu-indent-color-level-5: #000;
+  --mu-indent-color-level-6: #000;
+  --nav-collapse-icon-color: #000;
   --nav-item-background-selected: #000;
   --nav-item-color: #000;
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: #000;
   --nav-item-color-highlighted: #000;
   --nav-item-color-hover: #000;
   --nav-item-color-selected: #000;
 }
 
 body.mu-automatic-rainbow-folders {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
-  --nav-collapse-icon-color: light-dark(#0072d3, #0072d3);
+  --mu-file-icon-color: #000;
+  --mu-folder-icon-color: #000;
+  --mu-folder-text-color: #000;
+  --mu-indent-color-level-1: #000;
+  --mu-indent-color-level-2: #000;
+  --mu-indent-color-level-3: #000;
+  --mu-indent-color-level-4: #000;
+  --mu-indent-color-level-5: #000;
+  --mu-indent-color-level-6: #000;
+  --nav-collapse-icon-color: #000;
   --nav-item-background-selected: #000;
   --nav-item-color: #000;
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: #000;
   --nav-item-color-highlighted: #000;
   --nav-item-color-hover: #000;
   --nav-item-color-selected: #000;
@@ -33179,80 +33184,80 @@ body.mu-automatic-rainbow-folders
   .nav-files-container.node-insert-event
   > div
   > .nav-file {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
   --nav-item-background-selected: var(--text-normal);
   --nav-item-color: var(--text-normal);
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: var(--text-normal);
   --nav-item-color-highlighted: var(--text-normal);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 1) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
-  --mu-vault-title: light-dark(#a300cf, #a273d8);
+  --mu-folder-area-background: #cfcfcf;
+  --mu-folder-area-border: #cfcfcf;
+  --mu-vault-title: #000;
   background-color: #cfcfcf;
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 2) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 3) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 4) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 5) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 6) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 7) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 8) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
   background-color: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 9) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
   background-color: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 10) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
   background-color: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
 }
 
 body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n + 11) {
-  --mu-folder-area-background: light-dark(#007fff10, #007fff10);
-  --mu-folder-area-border: light-dark(#007fff30, #007fff30);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
   background-color: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
 }
 
@@ -33261,11 +33266,11 @@ body.mu-automatic-folder-name-rainbow-colors
   .nav-files-container.node-insert-event
   > div
   > .nav-file {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
   --nav-item-background-selected: var(--text-normal);
   --nav-item-color: var(--text-normal);
-  --nav-item-color-active: light-dark(#007fff28, #007fff28);
+  --nav-item-color-active: var(--text-normal);
   --nav-item-color-highlighted: var(--text-normal);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
@@ -33273,169 +33278,169 @@ body.mu-automatic-folder-name-rainbow-colors
 
 body.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 1) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 2) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 3) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 4) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 5) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 6) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 7) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 8) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 9) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 10) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
 }
 
 body.theme-dark.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 11) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 2) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 3) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 4) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 5) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 6) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 7) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 8) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 9) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 10) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
 }
 
 body.theme-light.mu-automatic-folder-name-rainbow-colors
   .tree-item.nav-folder:nth-child(10n + 11) {
-  --mu-file-icon-color: light-dark(#0072d3, #0072d3);
-  --mu-folder-icon-color: light-dark(#0048a3, #0048a3);
-  --mu-folder-icon-color-active: light-dark(#00a3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
 }
 
 /* Neon Mode */
@@ -35142,8 +35147,8 @@ body.mu-hover-underline
 /* Cards UI Interface */
 body:not(.is-mobile).mu-cards-interface {
   --divider-color: transparent;
-  --mu-sidebar-top-buttons-container-bg-color: light-dark(#d1dfff, #001122);
-  --mu-titlebar-background: light-dark(#003388, #003388);
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
+  --mu-titlebar-background: var(--mu-background-color-2);
   --ribbon-background: var(--mu-background-color-2);
 }
 
@@ -36557,12 +36562,12 @@ body.mu-global-font-mode {
   --font-interface: var(--mu-global-font);
   --font-monospace-default: var(--mu-global-font);
   --font-text: var(--mu-global-font);
-  --h1-font: Inter, sans-serif;
-  --h2-font: Inter, sans-serif;
-  --h3-font: Inter, sans-serif;
-  --h4-font: Inter, sans-serif;
-  --h5-font: Inter, sans-serif;
-  --h6-font: Inter, sans-serif;
+  --h1-font: var(--mu-global-font);
+  --h2-font: var(--mu-global-font);
+  --h3-font: var(--mu-global-font);
+  --h4-font: var(--mu-global-font);
+  --h5-font: var(--mu-global-font);
+  --h6-font: var(--mu-global-font);
   font-feature-settings: var(--mu-global-font-stylistic-set);
   letter-spacing: calc(
     min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing))
@@ -36582,12 +36587,12 @@ body.mu-hide-indent-guides {
   --indentation-guide-color: transparent;
   --indentation-guide-color-active: transparent;
   --indentation-guide-width: 0;
-  --mu-indent-color-level-1: light-dark(#007fff7f, #007fff7f);
-  --mu-indent-color-level-2: light-dark(#d372ff7f, #d372ff7f);
-  --mu-indent-color-level-3: light-dark(#ff7f007f, #ff7f007f);
-  --mu-indent-color-level-4: light-dark(#00a3487f, #00a3487f);
-  --mu-indent-color-level-5: light-dark(#e500007f, #e500007f);
-  --mu-indent-color-level-6: light-dark(#9797007f, #9797007f);
+  --mu-indent-color-level-1: transparent;
+  --mu-indent-color-level-2: transparent;
+  --mu-indent-color-level-3: transparent;
+  --mu-indent-color-level-4: transparent;
+  --mu-indent-color-level-5: transparent;
+  --mu-indent-color-level-6: transparent;
 }
 
 /* Suggestion - search panel */

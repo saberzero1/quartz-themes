@@ -1821,7 +1821,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: Pixel Square;
+  --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1942,7 +1942,7 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: #ff0000hex;
+  --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
@@ -2269,7 +2269,7 @@ body {
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
-  --text-accent-hover: #5e0b11hex;
+  --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -2446,7 +2446,7 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: #ff0000hex;
+  --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: var(--color-base-35);
   --interactive-normal: var(--color-base-30);
@@ -19884,7 +19884,7 @@ body.theme-dark {
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
   --color-accent: var(--interactive-accent);
-  --font-text: Pixel Square;
+  --font-text: "Pixel Square", "pixel_squareregular";
   --ribbon-background: var(--background-primary);
   --selection-color: #f5f7fa;
   --text-accent: var(--text-accent-hover);
@@ -24277,7 +24277,7 @@ body.theme-light {
   --checkbox-color-hover: var(--text-accent-hover);
   --code-string: #4682e3;
   --color-accent: var(--interactive-accent);
-  --font-text: Pixel Square;
+  --font-text: "Pixel Square", "pixel_squareregular";
   --selection-color: #f5f7fa;
   --text-normal: #080808;
   --text-selection: var(--text-accent-hover);

@@ -10,7 +10,7 @@
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: 3.5px;
   --viewer-container-height: 0;
-  --vim-cursor-blink-rate: 1200ms;
+  --vim-cursor-blink-rate: 1.2s;
   --xfa-focus-outline: 2px solid CanvasText;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
 }
@@ -154,7 +154,7 @@ body {
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
-  --code-size: 0.875em;
+  --code-size: var(--font-smaller);
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
@@ -413,7 +413,7 @@ body {
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --longform-base-line-height: 1;
-  --longform-font-size: 1.2rem;
+  --longform-font-size: 1.3rem;
   --longform-font-text-theme: "Garamond", "Times New Roman", serif;
   --longform-letter-spacing: 0px;
   --menu-backdrop-filter: none;
@@ -646,7 +646,7 @@ body {
   --tab-text-color-focused-active: var(--text-muted);
   --tab-text-color-focused-active-current: var(--text-normal);
   --tab-text-color-focused-highlighted: var(--text-accent);
-  --tab-width: 250px;
+  --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: var(--background-modifier-border);
   --table-add-button-border-width: var(--table-border-width);
@@ -1641,7 +1641,7 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --highlight-hue-1: 40;
+  --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 40%/40%;
   --hotkey-color: var(--secondary-accent);
@@ -1748,7 +1748,7 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --highlight-hue-1: 40;
+  --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 70%/40%;
   --hotkey-color: var(--secondary-accent);

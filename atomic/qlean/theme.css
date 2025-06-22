@@ -1798,12 +1798,14 @@ body {
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
-  --font-interface-override:;
+  --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default);
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1819,9 +1821,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+  --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2265,7 +2265,7 @@ body {
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
-  --tag-radius: 0em;
+  --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
@@ -24455,7 +24455,7 @@ body:is(.theme-light, .theme-dark) {
   --font-default:
     "Noto Sans JP", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
     "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
-  --font-em-color: light-dark(hsl(0, 0%, 25%), hsl(0, 0%, 83%));
+  --font-em-color: var(--text-normal);
   --font-em-decoration-color: var(--font-em-color);
   --font-em-decoration-line: none;
   --font-em-decoration-offset: 2px;
@@ -24463,8 +24463,8 @@ body:is(.theme-light, .theme-dark) {
   --font-em-decoration-width: 1px;
   --font-em-size: 1em;
   --font-em-style: italic;
-  --font-em-weight: 400;
-  --font-file-tree:;
+  --font-em-weight: normal;
+  --font-file-tree: var(--font-default);
   --font-file-tree-size: 0.95em;
   --font-file-tree-weight: 400;
   --font-h1-size: 2.25em;
@@ -24479,47 +24479,41 @@ body:is(.theme-light, .theme-dark) {
   --font-h5-weight: var(--font-h1-weight);
   --font-h6-size: 1em;
   --font-h6-weight: var(--font-h1-weight);
-  --font-header:;
-  --font-highlight-bg-color: light-dark(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0));
-  --font-highlight-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 9%));
-  --font-highlight-decoration-color: light-dark(
-    hsla(0, 0%, 25%, 1),
-    hsla(0, 0%, 83%, 1)
-  );
+  --font-header: var(--font-text);
+  --font-highlight-bg-color: var(--color-accent);
+  --font-highlight-color: var(--text-reversed);
+  --font-highlight-decoration-color: var(--text-normal);
   --font-highlight-decoration-line: none;
-  --font-highlight-decoration-offset: 6px;
+  --font-highlight-decoration-offset: 3px;
   --font-highlight-decoration-style: solid;
   --font-highlight-decoration-width: 2px;
   --font-highlight-size: 1em;
   --font-highlight-style: normal;
-  --font-highlight-weight: 400;
+  --font-highlight-weight: normal;
   --font-inline-tile-color: var(--text-normal);
-  --font-inline-title:;
+  --font-inline-title: var(--font-header);
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
-  --font-interface-override:;
+  --font-interface-override: "";
   --font-latex-size: 1em;
   --font-latex-weight: 400;
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace: var(--font-monospace-default);
   --font-monospace-default:
     "iA Writer Mono", iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace-size: 1em;
   --font-monospace-weight: 400;
-  --font-source-view:;
+  --font-source-view: var(--font-monospace);
   --font-source-view-size: 1em;
   --font-source-view-weight: 400;
-  --font-strikethrough-color: light-dark(hsl(0, 0%, 45%), hsl(0, 0%, 45%));
-  --font-strikethrough-decoration-color: light-dark(
-    hsla(0, 0%, 45%, 1),
-    hsla(0, 0%, 45%, 1)
-  );
+  --font-strikethrough-color: var(--text-muted);
+  --font-strikethrough-decoration-color: var(--font-strikethrough-color);
   --font-strikethrough-decoration-line: line-through;
   --font-strikethrough-decoration-style: solid;
   --font-strikethrough-decoration-width: 2px;
   --font-strikethrough-size: 1em;
   --font-strikethrough-style: normal;
-  --font-strikethrough-weight: 400;
-  --font-strong-color: light-dark(hsl(0, 0%, 9%), hsl(0, 0%, 96%));
+  --font-strikethrough-weight: normal;
+  --font-strong-color: var(--text-strong);
   --font-strong-decoration-color: var(--font-strong-color);
   --font-strong-decoration-line: none;
   --font-strong-decoration-offset: 2px;
@@ -24531,21 +24525,16 @@ body:is(.theme-light, .theme-dark) {
   --font-tag: var(--font-monospace);
   --font-tag-size: 1em;
   --font-tag-weight: 400;
-  --font-text:
-    "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+  --font-text: var(--font-default);
   --font-text-weight: 400;
-  --font-underlined-color: light-dark(hsl(0, 0%, 25%), hsl(0, 0%, 83%));
-  --font-underlined-decoration-color: light-dark(
-    hsla(0, 0%, 25%, 1),
-    hsla(0, 0%, 83%, 1)
-  );
+  --font-underlined-color: var(--text-normal);
+  --font-underlined-decoration-color: var(--font-underlined-color);
   --font-underlined-decoration-line: underline;
   --font-underlined-decoration-offset: 6px;
   --font-underlined-decoration-style: wavy;
   --font-underlined-decoration-width: 2px;
   --font-underlined-size: 1em;
-  --font-underlined-weight: 400;
+  --font-underlined-weight: normal;
   --font-vault-name: var(--font-file-tree);
   --font-vault-name-size: 1.25em;
   --font-vault-name-weight: 400;

@@ -229,7 +229,7 @@ body {
   --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: var(--font-serif);
+  --font-text-theme: "??";
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -1614,7 +1614,7 @@ svg.svg-icon {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif);
+  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --highlight-mix-blend-mode: lighten;
@@ -1700,7 +1700,7 @@ svg.svg-icon {
   --font-interface-theme: var(--font-sans);
   --font-sans: "Avenir", "Avenir Next";
   --font-serif: "Bookerly";
-  --font-text-theme: var(--font-serif);
+  --font-text-theme: var(--font-serif), "Source Han Serif", "Noto Serif JP";
   --glow-color: white;
   --heading-font: var(--font-cursive);
   --highlight-mix-blend-mode: lighten;

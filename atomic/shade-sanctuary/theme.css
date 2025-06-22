@@ -1789,7 +1789,8 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-callout-theme: Computer Modern;
+  --font-callout-theme:
+    "Computer Modern Bright", "Computer Modern", "Sans-Serif";
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -1800,7 +1801,7 @@ body {
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
-  --font-interface-theme: Jetbrains Mono;
+  --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -1812,7 +1813,7 @@ body {
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-override: "??";
-  --font-monospace-theme: Jetbrains Mono;
+  --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace;
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
@@ -1822,7 +1823,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: Computer Modern;
+  --font-text: "Computer Modern Bright", "Computer Modern", "Inter", Sans-Serif;
   --font-text-override: "??";
   --font-text-size: 10px;
   --font-text-theme: "??";

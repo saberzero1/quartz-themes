@@ -1789,7 +1789,7 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-default: var(--font-family-sans);
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-family-iawriter-quattro: "iA Writer Quattro", "iaWriterQuattro", mono;
@@ -2321,7 +2321,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
-  --width-body-content: 700px;
+  --width-body-content: 800px;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -moz-osx-font-smoothing: grayscale;
@@ -19937,7 +19937,7 @@ body.theme-dark {
   --frontmatter-active-color: rgba(0, 0, 0, 0.8);
   --frontmatter-atom-background: rgba(255, 255, 255, 0.04);
   --frontmatter-atom-color: rgba(255, 255, 255, 0.4);
-  --heading-text-color: light-dark(#37352f, #fff);
+  --heading-text-color: #fff;
   --link-hover-color: #fff;
   --nav-item-active: #fff;
   --nav-item-background-active: #252525;
@@ -24550,11 +24550,11 @@ body.eis-hide-ribbon {
 }
 
 body.eis-font-ibm {
-  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-default: var(--font-family-ibm);
 }
 
 body.eis-font-iawriter-quattro {
-  --font-default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-default: var(--font-family-iawriter-quattro);
   letter-spacing: -0.03rem;
 }
 
@@ -24568,7 +24568,7 @@ body.theme-light {
   --frontmatter-active-color: rgba(0, 0, 0, 0.8);
   --frontmatter-atom-background: rgba(0, 0, 0, 0.05);
   --frontmatter-atom-color: rgba(0, 0, 0, 0.5);
-  --heading-text-color: light-dark(#37352f, #fff);
+  --heading-text-color: #37352f;
   --link-hover-color: #000;
   --nav-item-active: #373530;
   --nav-item-background-active: #ededeb;
@@ -24593,14 +24593,14 @@ body.theme-light {
 }
 
 body.eis-small-font {
-  --font-paragraph: 0.95rem;
+  --font-paragraph: 0.9rem;
   --frontmatter-font-size: 0.5rem;
-  --size-h1: 2rem;
-  --size-h2: 1.7rem;
-  --size-h3: 1.4rem;
-  --size-h4: 1.2rem;
-  --size-h5: 1.1rem;
-  --size-h6: 1rem;
+  --size-h1: 1.5rem;
+  --size-h2: 1.275rem;
+  --size-h3: 1.25rem;
+  --size-h4: 0.975rem;
+  --size-h5: 0.862rem;
+  --size-h6: 0.75rem;
   --width-body-content: 700px;
 }
 

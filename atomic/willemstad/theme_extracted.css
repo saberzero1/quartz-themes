@@ -1634,9 +1634,9 @@ svg.svg-icon {
       2
   );
   --header-icon-size: 16px;
-  --header-margin: 4px;
+  --header-margin: var(--size-4-1);
   --header-margin-half: calc(0.5 * var(--header-margin));
-  --header-padding: 6px;
+  --header-padding: var(--size-2-3);
   --height-status-bar-item: 20px;
   --highlight-mix-blend-mode: darken;
   --icon-color-focused: var(--color-accent);
@@ -1763,9 +1763,9 @@ svg.svg-icon {
       2
   );
   --header-icon-size: 16px;
-  --header-margin: 4px;
+  --header-margin: var(--size-4-1);
   --header-margin-half: calc(0.5 * var(--header-margin));
-  --header-padding: 6px;
+  --header-padding: var(--size-2-3);
   --height-status-bar-item: 20px;
   --highlight-mix-blend-mode: darken;
   --icon-color-focused: var(--color-accent);

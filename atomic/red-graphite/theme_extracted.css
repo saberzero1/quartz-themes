@@ -532,7 +532,7 @@ body {
   --radius-s: 4px;
   --radius-xl: 16px;
   --red-graphite-interface-font: "Avenir";
-  --red-graphite-monospace-font:  ;
+  --red-graphite-monospace-font: "";
   --red-graphite-text-font: "Avenir";
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);

@@ -1609,8 +1609,8 @@ svg.svg-icon {
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
-  --chalk-grey: light-dark(#686868, #dddddd);
-  --chalk-grey-accent: light-dark(#636363, #cbcbcb);
+  --chalk-grey: #dddddd;
+  --chalk-grey-accent: #cbcbcb;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1652,17 +1652,17 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --h1-color: var(--chalk-grey);
-  --h1-gradient-accent: light-dark(#5968fb, #bec4ff);
+  --h1-gradient-accent: #bec4ff;
   --h2-color: var(--chalk-grey);
-  --h2-gradient-accent: light-dark(#3372ca, #9ac0ff);
+  --h2-gradient-accent: #9ac0ff;
   --h3-color: var(--chalk-grey);
-  --h3-gradient-accent: light-dark(#6f33ca, #b999e8);
+  --h3-gradient-accent: #b999e8;
   --h4-color: var(--chalk-grey);
-  --h4-gradient-accent: light-dark(#ca3393, #f088ca);
+  --h4-gradient-accent: #f088ca;
   --h5-color: var(--chalk-grey);
-  --h5-gradient-accent: light-dark(#262cda, #8e91eb);
+  --h5-gradient-accent: #8e91eb;
   --h6-color: var(--chalk-grey);
-  --h6-gradient-accent: light-dark(#f21bf6, #e990eb);
+  --h6-gradient-accent: #e990eb;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1695,8 +1695,8 @@ svg.svg-icon {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-secondary-alt: var(--color-base-05);
-  --chalk-grey: light-dark(#686868, #dddddd);
-  --chalk-grey-accent: light-dark(#636363, #cbcbcb);
+  --chalk-grey: #686868;
+  --chalk-grey-accent: #636363;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1738,17 +1738,17 @@ svg.svg-icon {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --h1-color: var(--chalk-grey);
-  --h1-gradient-accent: light-dark(#5968fb, #bec4ff);
+  --h1-gradient-accent: #5968fb;
   --h2-color: var(--chalk-grey);
-  --h2-gradient-accent: light-dark(#3372ca, #9ac0ff);
+  --h2-gradient-accent: #3372ca;
   --h3-color: var(--chalk-grey);
-  --h3-gradient-accent: light-dark(#6f33ca, #b999e8);
+  --h3-gradient-accent: #6f33ca;
   --h4-color: var(--chalk-grey);
-  --h4-gradient-accent: light-dark(#ca3393, #f088ca);
+  --h4-gradient-accent: #ca3393;
   --h5-color: var(--chalk-grey);
-  --h5-gradient-accent: light-dark(#262cda, #8e91eb);
+  --h5-gradient-accent: #262cda;
   --h6-color: var(--chalk-grey);
-  --h6-gradient-accent: light-dark(#f21bf6, #e990eb);
+  --h6-gradient-accent: #f21bf6;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),

@@ -203,12 +203,14 @@ body {
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
-  --font-interface-override:  ;
+  --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default);
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -224,9 +226,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+  --font-text: var(--font-print);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -670,7 +670,7 @@ body {
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
-  --tag-radius: 0em;
+  --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --text-accent: var(--color-accent);

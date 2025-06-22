@@ -2310,7 +2310,7 @@ body {
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(77, 139, 249, 0.3);
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
@@ -2477,7 +2477,7 @@ body {
   --text-error: #ff0000;
   --text-error-hover: #ff3333;
   --text-faint: var(--text-2);
-  --text-highlight-bg: rgba(77, 139, 249, 0.3);
+  --text-highlight-bg: var(--vercel-blue-300);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   --text-on-accent: #ffffff;
@@ -2601,7 +2601,7 @@ body {
   --text-error: #ff0000;
   --text-error-hover: #ff3333;
   --text-faint: var(--text-2);
-  --text-highlight-bg: rgba(77, 139, 249, 0.3);
+  --text-highlight-bg: var(--vercel-blue-300);
   --text-muted: var(--text-2);
   --text-normal: var(--text-1);
   --text-on-accent: #ffffff;

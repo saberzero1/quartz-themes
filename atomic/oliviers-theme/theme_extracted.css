@@ -586,11 +586,11 @@ body {
   --OT-color-on-base-20: var(--color-base-100);
   --OT-editMode-font: var(--font-text);
   --OT-editMode-font-size: 18px;
-  --OT-editMode-line-height: 1.4em;
-  --OT-editMode-line-width: 44em;
-  --OT-editMode-tableText-size: 17px;
-  --OT-kanban-font: Uberhand Pro;
-  --OT-kanban-font-size: 16px;
+  --OT-editMode-line-height: 1.5em;
+  --OT-editMode-line-width: 45em;
+  --OT-editMode-tableText-size: 0.9em;
+  --OT-kanban-font: "Uberhand Pro";
+  --OT-kanban-font-size: 17px;
   --OT-kbd: #353500;
   --OT-kbd-background: ivory;
   --OT-menu-background: var(--color-base-05);
@@ -600,9 +600,9 @@ body {
   --OT-nav-item-vertical-padding: var(--size-4-1);
   --OT-pill-background: var(--color-accent-2);
   --OT-pill-color: var(--OT-color-on-accent-2);
-  --OT-readingMode-line-height: 1.4em;
-  --OT-readingMode-line-width: 39em;
-  --OT-readingMode-text-size: 18px;
+  --OT-readingMode-line-height: 1.5em;
+  --OT-readingMode-line-width: 42em;
+  --OT-readingMode-text-size: 17px;
   --OT-ribbon-icon-color-sidebar-is-collapsed: var(--icon-color);
   --OT-ribbon-icon-color-sidebar-is-open: var(--icon-color);
   --OT-search-result-file-title-expanded: var(--color-base-100);
@@ -622,7 +622,7 @@ body {
   --OT-tooltip-text-color: var(--OT-color-on-accent-1);
   --OT-tree-item-flair-background: var(--color-accent-3);
   --OT-tree-item-flair-color: var(--OT-color-on-accent-3);
-  --OT-UI-font-size: 18px;
+  --OT-UI-font-size: 15px;
   --OT-vertical-tab-header-group-title: var(--color-base-70);
   --OT-view-header-title-focus-color: var(--color-accent-1);
   --OT-view-header-title-no-focus-color: var(--color-base-50);
