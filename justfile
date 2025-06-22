@@ -55,8 +55,8 @@ clean-fonts:
 
 [private]
 format:
-  prettier . --write --cache --ignore-path "./.prettiercompileignore"
-  prettier . --write --cache --ignore-path "./.prettiercompileignore"
+  prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
+  prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
 
 [private]
 format-all:
@@ -76,6 +76,12 @@ compile-all: build fonts format clean-fonts
 
 [private]
 compile: build format
+
+[private]
+test-compile:
+  node convert.js
+  prettier . --write --cache --check --ignore-path "./.prettiertestignore"
+  prettier . --write --cache --check --ignore-path "./.prettiertestignore"
 
 [private]
 compile-single $theme:
