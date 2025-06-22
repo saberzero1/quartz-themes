@@ -1,0 +1,34 @@
+.theme-light {
+  /* Base Color */
+  --color-base-00: #faf9f6;
+  --color-base-05: #ece8dd;
+  --color-base-10: #e5e0d0;
+  --color-base-20: #d7cfb7;
+  --color-base-25: #d0c7aa;
+  --color-base-30: #c9be9e;
+  --color-base-35: #c2b691;
+  --color-base-40: #bbad85;
+  --color-base-50: #ad9d6b;
+  --color-base-60: #9b8a56;
+  --color-base-70: #827348;
+  --color-base-100: #36301e;
+  /* Accent color = --color-base-50 */
+  --accent-h: 45.5 !important;
+  --accent-s: 28.7% !important;
+  --accent-l: 54.9% !important;
+  /* Ivory Pages Variables */
+  --main-ink: var(--black-ink);
+  --main-ink-muted: var(--black-ink-muted);
+  --main-ink-fainted: var(--black-ink-fainted);
+  --secondary-ink: var(--darkblue-ink);
+  --secondary-ink-muted: var(--darkblue-ink-muted);
+  --secondary-ink-fainted: var(--darkblue-ink-fainted);
+  --bold-accent-ink: var(--darkblue-ink);
+  --italic-accent-ink: var(--darkgreen-ink);
+  --leather-color: #4e4175;
+  --leather-color-alt: #5f4f8e;
+  --leather-color-rgb: 78, 65, 117;
+  --leather-contrast-color: var(--white-ink);
+  --leather-contrast-color-muted: var(--white-ink-muted);
+  --paper-color: rgba(250, 249, 246, 0.9);
+}

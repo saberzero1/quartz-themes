@@ -1,0 +1,47 @@
+.theme-light {
+  --background-tertiary: hsl(1, 100%, 100%);
+  --text-muted: hsl(var(--accent-h), 20%, 50%);
+  --text-faint: hsl(var(--accent-h), 20%, 63%, 65%);
+  --color-base-00: hsl(calc(0 + var(--accent-h)), 100%, 99.5%);
+  --color-base-05: hsl(calc(0 + var(--accent-h)), 40%, 96.5%);
+  --color-base-10: hsl(calc(0 + var(--accent-h)), 30%, 95.9%);
+  --color-base-20: hsl(calc(0 + var(--accent-h)), 40%, 94.5%);
+  --color-base-25: hsl(calc(0 + var(--accent-h)), 80%, 42%);
+  --color-base-30: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 55%),
+    89%
+  );
+  --color-base-35: hsl(calc(0 + var(--accent-h)), 70%, 88%);
+  --color-base-40: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 15%),
+    86%
+  );
+  --color-base-50: hsl(calc(0 + var(--accent-h)), 18%, 63%);
+  --color-base-60: hsl(calc(0 + var(--accent-h)), 55%, 72%);
+  --color-base-70: hsl(calc(0 + var(--accent-h)), 5%, 55%);
+  --color-base-100: hsl(calc(0 + var(--accent-h)), 5%, 30%);
+  --h1-color: hsl(var(--accent-h), 10%, 25%);
+  --h2-color: var(--h1-color);
+  --h3-color: var(--h1-color);
+  --h4-color: var(--h1-color);
+  --h5-color: var(--h1-color);
+  --h6-color: var(--h1-color);
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}

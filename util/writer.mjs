@@ -551,7 +551,7 @@ export function writeIndex(themeName, themeCSS) {
   * @throws {Error} If the styleRulesCSS array does not contain three valid CSS strings.
   */
 export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPath = "") {
-  if (styleRulesCSS[0] !== "" || styleRulesCSS[1] !== "" || styleRulesCSS[2] !== "") return
+  if (styleRulesCSS[0] === "" && styleRulesCSS[1] === "" && styleRulesCSS[2] === "") return
   subPath = subPath.endsWith("/") ? subPath.slice(0, -1) : subPath
   subPath = subPath.startsWith("/") ? subPath.slice(1) : subPath
 

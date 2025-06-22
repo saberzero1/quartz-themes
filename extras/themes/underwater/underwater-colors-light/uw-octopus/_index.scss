@@ -1,0 +1,24 @@
+.uw-octopus {
+  /*PALETTE*/
+  --love-rgb: 205, 106, 94;
+  --gold-rgb: 230, 161, 73;
+  --rose-rgb: 127, 111, 134;
+  --pine-rgb: 86, 139, 187;
+  --foam-rgb: 106, 168, 149;
+  --iris-rgb: 204, 135, 90;
+  --base: #f2edf4;
+  --surface-rgb: 252, 251, 250;
+  --overlay: #eee9f0;
+  --muted: #798094;
+  --subtle: #616980;
+  --text: #475669;
+  --highlight-low: #e3e9eb;
+  --highlight-med-rgb: 206, 222, 227;
+  --highlight-high: #b4c3c8;
+  /*override accent color !*/
+  --accent-h: 6;
+  --accent-s: 53%;
+  --accent-l: 59%;
+  --color-accent-hsl: 6, 53%, 59%;
+  /*foam*/
+}

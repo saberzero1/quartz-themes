@@ -1,0 +1,65 @@
+.lightPalette-Orange {
+  --OT-theme-reference-color: orange;
+  /*    #FFA500    */
+  --color-base-00: #fdf6e8;
+  --color-base-20: #ffe1c9;
+  --color-base-35: #ffb174;
+  --color-base-40: #fc6e00;
+  --color-base-50: #f0b36a;
+  --color-base-70: #ff811f;
+  --color-base-05: #ffd7b8;
+  --color-base-100: #2f4858;
+  --link-color: #849f86;
+  /*    --h1-color:            #9D7956; */
+  /*    --h3-color:            #6B523B; */
+  /*    --h5-color:            #44607C; */
+  --code-background: #fbe9d3;
+  --OT-button-OFF-bg: #ffd8b8;
+  --OT-color-on-base-20: #f78700;
+  --OT-color-muted-on-base-20: #ff9d52;
+  --OT-table-header-background: #fceddc;
+  --OT-table-background: #fdf6ed;
+  --OT-table-alt-background: #fcf2e5;
+  --metadata-background: #ffecd5;
+  --OT-setting-item-description: #ee9a00;
+}
+
+.accentColor-lightMode-shade {
+  --accent-h: 39 !important;
+  --accent-s: 100% !important;
+  --accent-l: 57% !important;
+  --color-accent-2: #ffb122 !important;
+  --color-accent-3: #ffe4c4 !important;
+  --OT-color-muted-on-accent-1: #edd4b6;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-accent-2: #aa6e00;
+  --OT-color-on-accent-3: #f78700;
+}
+
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 189 !important;
+  --accent-s: 100% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #00aecc !important;
+  --color-accent-2: #99f0ff !important;
+  --color-accent-3: #ccf7ff !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-muted-on-accent-1: #33e1ff !important;
+  --OT-color-on-accent-2: var(--color-base-70) !important;
+  --OT-color-muted-on-accent-2: #008a91;
+  --OT-color-on-accent-3: #008a91 !important;
+}
+
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 249 !important;
+  --accent-s: 100% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #1e00cc !important;
+  --color-accent-2: #6e55ff !important;
+  --color-accent-3: #d3ccff !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #ffc355 !important;
+  --OT-color-on-accent-2: #fff !important;
+  --OT-color-on-accent-3: #0b00e6 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 93%);
+}

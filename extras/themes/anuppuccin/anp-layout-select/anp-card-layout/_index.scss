@@ -1,0 +1,149 @@
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}
+
+.anp-colorful-frame.anp-card-layout:not(
+    .anp-card-layout-filebrowser
+  ).anp-colorful-frame-icon-toggle-light.theme-light
+  .workspace-leaf-content[data-type="file-explorer"],
+.anp-colorful-frame.anp-card-layout:not(
+    .anp-card-layout-filebrowser
+  ).anp-colorful-frame-icon-toggle-dark.theme-dark
+  .workspace-leaf-content[data-type="file-explorer"] {
+  --tab-text-color: var(--text-normal);
+  --tab-text-color-focused: var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-highlighted: var(--text-normal);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --icon-color: var(--text-normal);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark,
+.anp-colorful-frame.anp-card-layout-actions .workspace-ribbon,
+.anp-colorful-frame.anp-card-layout .workspace-tab-container,
+.anp-colorful-frame.anp-card-layout .modal,
+.anp-colorful-frame.anp-card-layout
+  .mod-vertical
+  .workspace-tab-header.is-active,
+.anp-colorful-frame.anp-alternate-tab-toggle
+  .mod-vertical
+  .workspace-tab-header {
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+  --icon-color-active: var(--text-accent);
+  --icon-color-focused: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-mini-tab-toggle
+  .mod-vertical
+  .workspace-tab-header
+  .workspace-tab-header-inner-title,
+.anp-colorful-frame.anp-mini-tab-toggle
+  .mod-vertical
+  .workspace-tab-header
+  .workspace-tab-header-inner-title,
+.anp-colorful-frame.is-focused:not(
+    .anp-colorful-frame-icon-toggle-dark.theme-dark
+  )
+  .mod-left-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused:not(
+    .anp-colorful-frame-icon-toggle-light.theme-light
+  )
+  .mod-left-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused:not(
+    .anp-colorful-frame-icon-toggle-dark.theme-dark
+  )
+  .mod-right-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused:not(
+    .anp-colorful-frame-icon-toggle-light.theme-light
+  )
+  .mod-right-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--background-secondary-alt);
+}
+
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-left-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-right-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-left-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-right-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-right-split
+  .workspace-tab-header.is-active,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-left-split
+  .workspace-tab-header.is-active,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-right-split
+  .workspace-tab-header.is-active,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-left-split
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}

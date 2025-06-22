@@ -1,0 +1,11 @@
+body:not(.mod-windows):not(.is-mobile):not(.blur-effect-off).theme-light
+  .vertical-tab-header,
+body.windows-mode-off:not(.is-mobile):not(.blur-effect-off).theme-light
+  .vertical-tab-header {
+  background-color: rgb(from var(--color-base-30) r g b/75%);
+}
+
+body:not(.mod-windows):not(.is-mobile).theme-light .vertical-tab-header,
+body.windows-mode-off:not(.is-mobile).theme-light .vertical-tab-header {
+  background-color: var(--color-base-30);
+}

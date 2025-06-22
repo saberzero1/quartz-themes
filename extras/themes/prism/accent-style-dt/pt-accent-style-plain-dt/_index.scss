@@ -1,0 +1,203 @@
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .workspace-tab-header.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .nav-action-button.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .vertical-tab-nav-item.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .nav-file-title.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .tree-item-self.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .suggestion-hotkey,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .workspace-leaf
+  div.workspace-leaf-content[data-type="file-tree-view"]
+  div.oz-nav-file.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .workspace-drawer.is-pinned
+  .workspace-drawer-header-icon.mod-pin,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .canvas-help
+  .setting-hotkey,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .clickable-icon[aria-label="Search settings"].is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .pdf-outline-view
+  .tree-item-self.mod-active {
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt):not(
+    .is-phone
+  )
+  .vertical-tab-nav-item.is-active,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt):not(
+    .is-phone
+  )
+  .horizontal-tab-nav-item.is-active {
+  --icon-color: var(--highlight-text-normal);
+  color: var(--highlight-text-normal);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .search-result-file-match-destination-file {
+  color: var(--text-normal);
+  background-color: var(--background-secondary);
+  border-color: var(--background-secondary);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .search-result-file-match-destination-file:hover {
+  color: var(--interactive-accent-hover);
+  background-color: var(--background-secondary);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .search-result-file-match-replace-button {
+  background-color: var(--background-secondary);
+  border-color: var(--background-secondary);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .search-result-file-match-replace-button:hover {
+  color: var(--interactive-accent-text);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  button.mod-cta {
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  button.mod-cta:hover {
+  color: var(--interactive-accent-hover);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    button.mod-warning,
+    .side-dock-ribbon-action.is-active[aria-label="Start/stop recording"]
+  ) {
+  color: var(--color-red-text);
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    button.mod-warning,
+    .side-dock-ribbon-action.is-active[aria-label="Start/stop recording"]
+  ):hover {
+  color: var(--color-red-tint);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    .pcr-button,
+    .modal button:not(.mod-cta):not(.mod-warning),
+    .graph-control-content button,
+    .modal-setting-nav-bar .clickable-icon,
+    .document-search-button,
+    .pdf-toolbar-button
+  ) {
+  color: var(--color-grey-text);
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    .pcr-button,
+    .modal button:not(.mod-cta):not(.mod-warning),
+    .graph-control-content button,
+    .modal-setting-nav-bar .clickable-icon,
+    .document-search-button,
+    .pdf-toolbar-button
+  ):hover {
+  color: var(--color-grey-tint);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .setting-command-hotkeys
+  .setting-hotkey {
+  color: var(--color-blue-text);
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .setting-command-hotkeys
+  .setting-hotkey.mod-empty {
+  color: var(--text-normal);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .setting-command-hotkeys
+  .setting-hotkey.has-conflict {
+  color: var(--color-red-text);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(.flair.mod-pop, .community-item .flair) {
+  color: var(--color-green-text);
+  background-color: var(--background-secondary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  button.copy-code-button {
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  button.copy-code-button:hover {
+  color: var(--interactive-accent-hover);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    .workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right,
+    .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left,
+    .popover-action.is-active,
+    .mod-pin-popover.is-active
+  ),
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .pdf-toolbar-left
+  .clickable-icon[aria-label="Toggle sidebar"].is-active {
+  background-color: var(--background-primary);
+  border-color: var(--window-border-color);
+}
+
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  :is(
+    .workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right,
+    .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left,
+    .popover-action.is-active,
+    .mod-pin-popover.is-active
+  ):hover,
+:is(.theme-dark.pt-accent-style-plain-dt, .pt-accent-style-plain-lt)
+  .pdf-toolbar-left
+  .clickable-icon[aria-label="Toggle sidebar"].is-active:hover {
+  color: var(--interactive-accent-hover);
+}
+
+:is(.theme-dark.is-mobile, .pt-accent-style-plain-lt.is-mobile)
+  .modal.mod-settings
+  .vertical-tab-nav-item {
+  border-color: transparent;
+}
+
+:is(.theme-dark.is-mobile, .pt-accent-style-plain-lt.is-mobile)
+  .modal.mod-settings
+  .vertical-tab-nav-item.is-active {
+  border-color: var(--window-border-color);
+}

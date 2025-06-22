@@ -1,0 +1,32 @@
+:is(.pt-highlight-text-color-lt, .theme-dark.pt-highlight-text-color-dt)
+  span.cm-link {
+  color: var(--link-external-color);
+}
+
+:is(.pt-highlight-text-color-lt, .theme-dark.pt-highlight-text-color-dt)
+  span.cm-hmd-internal-link {
+  color: var(--link-color);
+}
+
+:is(.pt-highlight-text-color-lt, .theme-dark.pt-highlight-text-color-dt)
+  span.cm-hmd-internal-link:hover {
+  color: var(--link-color-hover);
+}
+
+body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt
+  mark[class].mark-text-default {
+  color: var(--text-normal);
+}
+
+:is(
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt
+    mark[class],
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-text-color-dt
+    mark[class]
+),
+body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-color-lt
+  mark[class].mark-text-color {
+  color: var(--mark-highlight-text);
+}

@@ -1,0 +1,14 @@
+body.accent-blue {
+  --accent-h: 177.45;
+  --accent-s: 90%;
+  --accent-l: 40%;
+  --interactive-accent: var(--color-blue) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
+  --link-color: var(--color-blue);
+  --link-external-color: var(--color-blue);
+}

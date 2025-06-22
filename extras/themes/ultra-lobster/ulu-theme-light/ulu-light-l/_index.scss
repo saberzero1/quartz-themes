@@ -1,0 +1,66 @@
+.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 239, 121, 106;
+  --color-red: #ef796a;
+  --color-red-hsl: 7, 81%, 68%;
+  --color-green-rgb: 140, 179, 105;
+  --color-green: #8cb369;
+  --color-green-hsl: 92, 33%, 56%;
+  --color-orange-rgb: 255, 127, 81;
+  --color-orange: #ff7f51;
+  --color-orange-hsl: 16, 100%, 66%;
+  --color-yellow-rgb: 237, 174, 73;
+  --color-yellow: #edae49;
+  --color-yellow-hsl: 37, 82%, 61%;
+  --color-cyan-rgb: 15, 189, 168;
+  --color-cyan: #0fbda8;
+  --color-cyan-hsl: 173, 85%, 40%;
+  --color-blue-rgb: 120, 139, 255;
+  --color-blue: #788bff;
+  --color-blue-hsl: 232, 100%, 74%;
+  --color-purple-rgb: 147, 129, 255;
+  --color-purple: #9381ff;
+  --color-purple-hsl: 249, 100%, 75%;
+  --color-pink-rgb: 251, 99, 118;
+  --color-pink: #fb6376;
+  --color-pink-hsl: 353, 95%, 69%;
+  --canvas-color: 10, 10, 10;
+  --color-base-00: #fcf8e8;
+  /* background-primary */
+  --color-base-05: #fefefe;
+  /* background-secondary-alt in light mode, for some reason */
+  --color-base-10: #fefefe;
+  /* background-primary-alt */
+  --color-base-20: #f1edde;
+  /* background-secondary */
+  --color-base-25: #fefefe;
+  /* idk lol */
+  --color-base-30: #dad6ca;
+  /* background-modifier-border */
+  --color-base-35: #a39180;
+  /* background-modifier-border-hover */
+  --color-base-40: var(--color-base-30);
+  /* background-modifier-border-focus */
+  --color-base-50: #817466;
+  /* text-faint */
+  --color-base-60: #b9b6aa;
+  /* also no clue */
+  --color-base-70: #3e3d39;
+  /* text-muted */
+  --color-base-100: #433c34;
+  /* text-normal */
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #fefefe 1.62%,
+    #fdfbf1 50.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #f6f3ea 1.62%,
+    #f1edde 50.72%
+  ) !important;
+  --background-modifier-border-alt: #fff !important;
+}

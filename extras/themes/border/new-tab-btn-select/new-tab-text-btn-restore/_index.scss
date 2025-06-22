@@ -1,0 +1,5 @@
+body:not(.new-tab-text-btn-restore).is-mobile.theme-light
+  .workspace-leaf-content[data-type="empty"]
+  .empty-state-action-list {
+  box-shadow: var(--input-shadow-light);
+}

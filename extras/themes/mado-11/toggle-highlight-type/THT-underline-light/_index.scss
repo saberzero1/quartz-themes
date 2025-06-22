@@ -1,0 +1,16 @@
+.theme-light:is(.THT-underline, .THT-underline-light) {
+  --color-highlight: var(--color-yellow);
+  --text-highlight-bg: hsla(45, 53%, 73%, 1);
+}
+
+body.theme-light
+  :is(
+    mark,
+    .cm-s-obsidian span.cm-formatting-highlight,
+    .cm-s-obsidian span.cm-highlight,
+    .search-result-file-matched-text
+  ) {
+  border-bottom: 2px solid var(--text-highlight-bg);
+  color: var(--color-highlight);
+  background: none;
+}

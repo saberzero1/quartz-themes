@@ -1,0 +1,40 @@
+.theme-light {
+  --vault-icon: "🍵";
+  --accent-h: 85 !important;
+  --accent-s: 55% !important;
+  --accent-l: 55% !important;
+  --color-red-rgb: 211, 130, 101;
+  --color-red: #c57c4b;
+  --color-green-rgb: 151, 203, 77;
+  --color-green: #8ab252;
+  --color-orange-rgb: 174, 141, 80;
+  --color-orange: #c2982e;
+  --color-yellow-rgb: 202, 204, 67;
+  --color-yellow: #adad46;
+  --color-cyan-rgb: 107, 192, 138;
+  --color-cyan: #359c5b;
+  --color-blue-rgb: 124, 198, 185;
+  --color-blue: #399d8b;
+  --color-purple-rgb: 130, 159, 181;
+  --color-purple: #5097ad;
+  --color-pink-rgb: 189, 144, 169;
+  --color-pink: #7985ab;
+}
+
+.theme-light {
+  --doc-bg: #e4efd9;
+  --shadow-color: #e5ecdb !important;
+  --color-base-05: hsl(90, 57%, 97%);
+  --color-base-00: hsla(96, 100%, 99%, var(--page-transparency));
+  --color-base-10: #e9f3df;
+  --color-base-20: #e9f4db;
+  --color-base-25: #e1edd3;
+  --color-base-30: #6c983f37;
+  --color-base-35: #d1ddc6;
+  --color-base-40: #c8d9c1;
+  --color-base-50: #80907a;
+  --color-base-60: #849b81;
+  --color-base-70: #6c826c;
+  --color-base-100: #272d28;
+  --panel-child: hsl(90, 80%, 97.5%);
+}

@@ -1,0 +1,52 @@
+.theme-light {
+  --color-red: #9e0005;
+  --color-green: #77710e;
+  --color-yellow: #b37614;
+  --color-blue: #076678;
+  --color-purple: #8e3e6f;
+  --color-cyan: #427b58;
+  --color-orange: #b03a03;
+  --color-red-rgb: 157, 0, 6;
+  --color-green-rgb: 121, 116, 14;
+  --color-yellow-rgb: 181, 118, 20;
+  --color-blue-rgb: 7, 2, 120;
+  --color-purple-rgb: 143, 63, 113;
+  --color-cyan-rgb: 66, 123, 88;
+  --color-orange-rgb: 175, 58, 3;
+  --color-pink: var(--color-purple);
+  --color-pink-rgb: var(--color-purple-rgb);
+  --color-base-00: #fbf0c6;
+  --color-base-05: #f2e5bb;
+  --color-base-10: #ebdbb2;
+  --color-base-20: #d4c3a0;
+  --color-base-25: #c9ba9c;
+  --color-base-30: #bdaf93;
+  --color-base-35: #b1a38b;
+  --color-base-40: #a89985;
+  --color-base-50: #918273;
+  --color-base-60: #7d6f64;
+  --color-base-70: #655b53;
+  --color-base-80: #4f4945;
+  --color-base-85: #46403e;
+  --color-base-90: #3b3735;
+  --color-base-95: #32302f;
+  --color-base-100: #292929;
+  --bg-hue: 39;
+  --bg-sat: 0%;
+  --bg2: var(--color-base-05);
+  --bg3: var(--color-base-10);
+  --bg4: var(--color-base-20);
+  --bg5: var(--color-base-25);
+  --bg6: var(--color-base-30);
+  --color-accent: var(--color-red);
+  --color-accent-hsl: 358 100% 31%;
+  --interactive-accent: var(--color-orange);
+  --secondary-accent: var(--color-blue);
+  --hover-accent: #d85f0e;
+  --link-unresolved-color: var(--color-cyan);
+}
+
+.theme-light ::selection {
+  background-color: var(--color-base-40);
+  color: var(--color-base-100);
+}

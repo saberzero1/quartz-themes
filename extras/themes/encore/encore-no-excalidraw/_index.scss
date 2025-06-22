@@ -1,0 +1,9 @@
+body:not(.encore-no-excalidraw).theme-light .excalidraw:not(.theme--dark) {
+  --button-gray-1: var(--color-base-30);
+  --button-gray-2: var(--color-base-40);
+  --button-gray-3: var(--color-base-30);
+  --dialog-border-color: var(--color-base-40);
+  --island-bg-color: var(--color-base-00);
+  --input-border-color: var(--color-base-30);
+  --input-bg-color: var(--color-base-20);
+}
