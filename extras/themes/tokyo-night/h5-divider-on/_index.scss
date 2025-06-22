@@ -1,0 +1,19 @@
+body.h5-divider-on
+  :is(
+    .markdown-preview-sizer > div > h5,
+    .markdown-rendered > h5,
+    .HyperMD-header-5
+  )::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  right: 0px;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    var(--h5-color) 30%,
+    transparent 70%
+  );
+}

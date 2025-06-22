@@ -1,0 +1,62 @@
+.separate-color-scheme.lm-color-scheme-custom.theme-light {
+  --color-base-00: var(--color-scheme-custom-background-primary, #e1c4a6);
+  --color-base-05: var(--color-scheme-custom-background-secondary-alt, #cbaa87);
+  --color-base-10: var(--color-scheme-custom-background-primary-alt, #daba97);
+  --color-base-20: var(--color-scheme-custom-background-secondary, #dabb9a);
+  --color-base-25: var(
+    --color-scheme-custom-background-modifier-form-field,
+    #4c4743
+  );
+  --color-base-30: var(
+    --color-scheme-custom-background-modifier-border,
+    #c6a57f
+  );
+  --color-base-35: var(
+    --color-scheme-custom-background-modifier-border-hover,
+    #a8865f
+  );
+  --color-base-40: var(
+    --color-scheme-custom-background-modifier-border-focus,
+    #b4916a
+  );
+  --color-base-50: var(--color-scheme-custom-text-faint, #7a6d68);
+  --color-base-70: var(--color-scheme-custom-text-muted, #5b4f4a);
+  --color-base-100: var(--color-scheme-custom-text-normal, #5f4f49);
+  --background-modifier-message: var(
+    --color-scheme-custom-tooltip-notice-background-color,
+    #d7b38d
+  );
+  --color-accent: var(--color-scheme-custom-color-accent, #800000);
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: var(--color-scheme-custom-color-accent-hover, #a00000);
+  --titlebar-background-focused: var(--color-base-20);
+  --activeline: var(--color-scheme-custom-activeline, #d4b4946a);
+  --text-selection: var(--color-scheme-custom-text-selection, #c7a78683);
+  --color-bold: var(--color-scheme-custom-bold, #bd5757);
+  --color-italic: var(--color-scheme-custom-italic, #ae612b);
+  --text-highlight-bg: var(--color-scheme-custom-highlight-bg, #eac357);
+  --heading-formatting-color: var(
+    --color-scheme-custom-heading-formatting-color,
+    #d34747
+  );
+  --in-between-background: var(
+    --color-scheme-custom-in-between-background,
+    #d4af88
+  );
+  --color-red-rgb: 207, 30, 51;
+  --color-red: #cf1e33;
+  --color-orange-rgb: 193, 109, 24;
+  --color-orange: #c16d18;
+  --color-yellow-rgb: 151, 116, 0;
+  --color-yellow: #977400;
+  --color-green-rgb: 1, 144, 59;
+  --color-green: #01903b;
+  --color-cyan-rgb: 0, 158, 155;
+  --color-cyan: #009e9b;
+  --color-blue-rgb: 2, 95, 200;
+  --color-blue: #025fc8;
+  --color-purple-rgb: 95, 56, 214;
+  --color-purple: #5f38d6;
+  --color-pink-rgb: 191, 32, 109;
+  --color-pink: #bf206d;
+}

@@ -283,71 +283,71 @@ div.HyperMD-header.HyperMD-header-2.cm-line {
   background-color: var(--text-accent-hover);
 }
 
-.tag[href^="#obsidian"] {
+.tag[href^='#obsidian'] {
   background-color: #4d3ca6;
 }
 
-.tag[href^="#important"] {
+.tag[href^='#important'] {
   background-color: red;
 }
 
-.tag[href^="#стартовал_проект"] {
+.tag[href^='#стартовал_проект'] {
   background-color: green;
 }
 
-.tag[href^="#высокий_шанс"] {
+.tag[href^='#высокий_шанс'] {
   background-color: green;
 }
 
-.tag[href^="#complete"] {
+.tag[href^='#complete'] {
   background-color: green;
 }
 
-.tag[href^="#ожидание"] {
+.tag[href^='#ожидание'] {
   background-color: orange;
 }
-.tag[href^="#идет_конкурс"] {
-  background-color: orange;
-}
-
-.tag[href^="#средний_шанс"] {
+.tag[href^='#идет_конкурс'] {
   background-color: orange;
 }
 
-.tag[href^="#inprogress"] {
+.tag[href^='#средний_шанс'] {
   background-color: orange;
 }
 
-.tag[href^="#daily_notes"] {
+.tag[href^='#inprogress'] {
+  background-color: orange;
+}
+
+.tag[href^='#daily_notes'] {
   background-color: #4d3ca6;
 }
 
-.tag[href^="#tasklist"] {
+.tag[href^='#tasklist'] {
   background-color: #4d3ca6;
 }
 
-.tag[href^="#TIER1"] {
+.tag[href^='#TIER1'] {
   background-color: red;
 }
 
-.tag[href^="#TIER2"] {
+.tag[href^='#TIER2'] {
   background-color: orange;
 }
 
-.tag[href^="#TIER3"] {
+.tag[href^='#TIER3'] {
   background-color: green;
 }
 
-.tag[href^="#DISQUALIFIED"] {
+.tag[href^='#DISQUALIFIED'] {
   background-color: gray;
 }
 
-.tag[href^="#проект_не_состоялся"] {
+.tag[href^='#проект_не_состоялся'] {
   background-color: gray;
 }
 
-.tag[href^="#failed"],
-.tag[href^="#проигран_конкурс"] {
+.tag[href^='#failed'],
+.tag[href^='#проигран_конкурс'] {
   background-color: red;
 }
 
@@ -376,7 +376,7 @@ ul ul {
 
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 2px solid var(--background-modifier-border); /*rgba(20,122,255,0.3);*/
   position: absolute;
 }
@@ -409,7 +409,7 @@ ul ul::before {
 }
 
 .theme-light .markdown-preview-view .task-list-item-checkbox {
-  content: "";
+  content: '';
   filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
 }
 
@@ -466,7 +466,7 @@ blockquote a {
 }
 
 blockquote:before {
-  content: "“";
+  content: '“';
   position: relative;
   left: 0px;
   top: 0;
@@ -624,8 +624,8 @@ blockquote:before {
 .collapsible-item-children {
   margin-left: 8px;
 }
-.graph-controls input[type="text"],
-.graph-controls input[type="range"] {
+.graph-controls input[type='text'],
+.graph-controls input[type='range'] {
   width: 100%;
   font-size: 0.65rem;
 }
@@ -669,13 +669,13 @@ blockquote:before {
 .graph-controls .setting-item {
   padding: 0px 0 0px 0;
 }
-.graph-controls input[type="range"] {
+.graph-controls input[type='range'] {
   -webkit-appearance: none;
   background-color: var(--background-modifier-border);
   border-radius: 2px;
   height: 2px;
 }
-.graph-controls input[type="range"]::-webkit-slider-thumb {
+.graph-controls input[type='range']::-webkit-slider-thumb {
   width: 13px;
   height: 9px;
   border-radius: 20%;
@@ -706,7 +706,7 @@ blockquote:before {
 }
 .graph-controls .checkbox-container:after {
   pointer-events: none;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-color: var(--text-on-accent);
@@ -796,7 +796,7 @@ body.is-grabbing {
 
 /* ======= ### Search ==============*/
 
-.workspace-leaf-content[data-type="search"] .search-result-file-matches {
+.workspace-leaf-content[data-type='search'] .search-result-file-matches {
   color: var(--text-nav);
   font-size: 0.8rem;
 }
@@ -864,11 +864,11 @@ div.titlebar-button {
 }
 
 textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
   color: var(--text-normal-original);
 }
 /* ======= ### Note name ==============*/

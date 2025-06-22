@@ -1,0 +1,85 @@
+bod {
+  --grey-50-rgb: 225, 227, 233;
+  --grey-100-rgb: 222, 227, 241;
+  --grey-200-rgb: 173, 181, 200;
+  --grey-300-rgb: 162, 165, 186;
+  --grey-350-rgb: 126, 128, 148;
+  --grey-400-rgb: 97, 97, 115;
+  --grey-500-rgb: 40, 40, 48;
+  --grey-600-rgb: 26, 26, 32;
+  --grey-700-rgb: 20, 20, 25;
+  --grey-800-rgb: 11, 11, 12;
+  --grey-850-rgb: 8, 8, 8;
+  --grey-875-rgb: 6, 6, 6;
+  --grey-900-rgb: 0, 0, 0;
+  --accent-h: 203;
+  --accent-s: 66%;
+  --accent-l: 54%;
+  --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+bod.encore-colors-colorful {
+  --highlight-hue: 30;
+  --bold-color: var(--color-green);
+  --italic-color: var(--color-red);
+  --h1-color: #5af273;
+  --h2-color: #65e4de;
+  --h3-color: #e755db;
+  --h4-color: #e9ca63;
+  --h5-color: #9dee51;
+  --h6-color: #8badec;
+}
+bod
+  .mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container,
+bod
+  .mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container {
+  background-color: rgba(255, 255, 255, 0.062745098);
+  backdrop-filter: blur(20px) saturate(1.8);
+}
+bod
+  .mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active,
+bod
+  .mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active {
+  background-color: rgba(255, 255, 255, 0.1882352941);
+}
+bod .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background-color: rgba(255, 255, 255, 0.1882352941);
+  backdrop-filter: blur(50px) saturate(1.5);
+}
+bod .mod-root .workspace-tab-container .workspace-leaf-content {
+  --en-opacity: 0.75;
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)),
+    linear-gradient(
+      rgba(255, 255, 255, 0.031372549),
+      rgba(255, 255, 255, 0.0078431373)
+    );
+  backdrop-filter: blur(32px) saturate(2);
+}
+bod
+  .mod-root
+  .workspace-tab-container
+  .workspace-leaf-content
+  .canvas-wrapper
+  .canvas-background {
+  background-color: transparent;
+  --canvas-dot-pattern: #ffffff15;
+}
+bod.encore-fancy-headers
+  .workspace-tab-container
+  .workspace-leaf-content
+  > .view-header {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: var(--en-acrylic);
+}

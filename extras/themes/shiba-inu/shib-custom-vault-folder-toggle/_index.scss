@@ -1,0 +1,75 @@
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-custom-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content,
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-folder-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content,
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-shiba-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content {
+  font-family: var(--font-family-vault);
+  font-weight: 700;
+  text-align: left;
+  margin-left: 30px;
+  opacity: 1 !important;
+}
+
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-folder-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content:before {
+  content: ' ';
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='26px' height='26px' viewBox='0 -2.5 24 24' id='meteor-icon-kit__regular-folder-open' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.1679 7H21.6679C22.7724 7 23.6679 7.8954 23.6679 9C23.6679 9.2641 23.6156 9.5255 23.514 9.7692L20.1807 17.7692C19.8702 18.5145 19.1419 19 18.3345 19H4.36866C2.83339 19 1.54587 17.8409 1.38515 16.3141L0.0167269 3.31405C-0.156721 1.6663 1.03844 0.18993 2.68619 0.01648C2.79051 0.0055 2.89534 0 3.00024 0H8.94712C9.37755 0 9.75969 0.27543 9.8958 0.68377L10.6679 3H19.4023C20.5069 3 21.4023 3.89543 21.4023 5C21.4023 5.08293 21.3972 5.16578 21.3869 5.24807L21.1679 7zM19.1523 7L19.4023 5H9.22636L8.22636 2H3.00024C2.96528 2 2.93033 2.00183 2.89556 2.00549C2.34631 2.06331 1.94792 2.55543 2.00574 3.10468L3.27334 15.1469L6.15506 8.2308C6.4656 7.4855 7.19381 7 8.00121 7H19.1523zM8.00121 9L4.66788 17H18.3345L21.6679 9H8.00121z' fill='%23758CA3'/%3E%3C/svg%3E");
+  text-align: left;
+  width: 26px;
+  height: 26px;
+  margin-left: -30px;
+  margin-top: -4px;
+  position: absolute;
+  background-color: var(--color-accent);
+}
+
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-shiba-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content:before {
+  content: ' ';
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' version='1.1'%3E%3Cpath d='M 322.412 7.335 C 307.060 15.315, 289.743 26.740, 279.572 35.596 C 275.212 39.393, 267.629 47.450, 262.720 53.500 C 252.603 65.970, 236.380 89.909, 230.668 100.800 C 228.562 104.814, 224.103 111.024, 220.759 114.599 C 213.127 122.757, 202.320 128.355, 190.720 130.158 L 183 131.359 183 134.721 C 183 139.778, 180.243 152.117, 177.462 159.506 C 174.240 168.064, 169.368 177.673, 162.545 188.926 L 157.029 198.023 155.906 214.761 C 155.288 223.968, 154.719 231.567, 154.642 231.649 C 154.564 231.731, 151.350 230.559, 147.500 229.045 C 143.650 227.531, 134.984 224.162, 128.242 221.559 C 114.185 216.131, 109.028 211.960, 103.959 201.919 C 97.897 189.909, 93.624 167.551, 93.560 147.500 C 93.514 133.044, 94.892 127.918, 99.374 125.875 C 108.007 121.942, 112.322 131.442, 113.553 157.088 C 114.607 179.044, 118.694 195.647, 124.300 200.747 C 125.510 201.848, 129.160 203.726, 132.412 204.921 C 139.412 207.493, 139.962 207.077, 139.985 199.200 C 140.002 193.317, 140.512 192.144, 149.731 176.775 C 160.323 159.117, 166.016 143.411, 165.985 131.936 C 165.964 124.023, 163.481 114.673, 158.832 105 C 153.359 93.612, 141.165 81.247, 130 75.766 C 116.497 69.137, 101.596 67.335, 86.500 70.504 C 65.335 74.948, 47.266 92.042, 42.540 112.093 C 39.585 124.630, 41.048 141.399, 45.978 151.500 L 48.907 157.500 46.128 160.500 C 38.200 169.058, 31.827 180.329, 28.116 192.353 C 23.445 207.490, 22.997 216.800, 23.042 297.801 C 23.079 366.627, 23.238 373.927, 24.792 378.203 C 27.725 386.279, 32.102 391.395, 39.043 394.864 L 45.319 398 71.160 398 L 97 398 97 390.210 C 97 381.707, 95.157 373.187, 91.961 366.924 C 89.201 361.513, 83.640 355.508, 79.989 353.996 L 77 352.757 77 335.108 L 77 317.458 84.944 313.650 C 95.175 308.746, 108.882 299.667, 116.500 292.749 C 126.598 283.578, 126.890 283.490, 147 283.567 C 165.785 283.638, 182.225 285.895, 207 291.801 L 218.500 294.543 219 335.522 L 219.500 376.500 222.203 381.623 C 223.689 384.441, 226.977 388.570, 229.508 390.798 C 237.030 397.419, 240.027 398, 266.678 398 L 290 398 290.193 392.750 C 290.760 377.317, 288.169 366.745, 282.142 359.899 C 279.996 357.461, 277.062 354.836, 275.621 354.065 L 273 352.662 273 323.716 L 273 294.770 280.946 286.375 C 294.780 271.761, 306.412 254.333, 311.995 239.858 C 313.689 235.464, 319.896 212.661, 325.788 189.185 L 336.500 146.500 341.150 144.192 C 344.769 142.396, 348.591 141.673, 358.391 140.931 C 377.260 139.503, 386.195 135.314, 394.500 124 C 398.383 118.711, 408.231 96.531, 407.766 94.122 C 407.610 93.316, 399.220 89.790, 387.522 85.617 C 368.608 78.869, 367.497 78.330, 366.650 75.495 C 362.673 62.172, 358.701 56.067, 350.322 50.397 C 346.988 48.140, 341.552 45.483, 338.244 44.492 L 332.229 42.690 333.203 39.595 C 334.132 36.644, 335.687 0.972, 334.885 1.025 C 334.673 1.039, 329.060 3.878, 322.412 7.335' stroke='none' fill='%23000000' fill-rule='evenodd'/%3E%3C/svg%3E");
+  text-align: left;
+  width: 29px;
+  height: 29px;
+  margin-left: -30px;
+  margin-top: -2px;
+  position: absolute;
+  background-color: var(--color-accent);
+}
+
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-custom-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content:before {
+  content: ' ';
+  -webkit-mask-image: var(--shib-custom-vault-folder-custom-icon-url);
+  text-align: left;
+  width: 26px;
+  height: 26px;
+  margin-left: -30px;
+  margin-top: -4px;
+  position: absolute;
+  background-color: var(--color-accent);
+}
+
+.shib-floating-header.shib-custom-vault-folder-toggle
+  .nav-folder.mod-root
+  > .nav-folder-title {
+  padding-top: 6px;
+}
+
+.shib-floating-header.shib-custom-vault-folder-toggle
+  .nav-folder.mod-root
+  > .nav-folder-children {
+  padding-top: 45px;
+}

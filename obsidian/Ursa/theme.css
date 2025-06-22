@@ -21,8 +21,8 @@
   --blockquote-border: #d6555f;
   --tag-background: #a7b0b3;
   --interactive-accent-rgb: #db4d52;
-  --font-family-editor: Avenir, "Avenir Next";
-  --font-family-preview: Avenir, "Avenir Next";
+  --font-family-editor: Avenir, 'Avenir Next';
+  --font-family-preview: Avenir, 'Avenir Next';
 }
 
 .theme-dark {
@@ -48,8 +48,8 @@
   --blockquote-border: #4aa8fb;
   --tag-background: #a7b0b3;
   --interactive-accent-rgb: #6bcafb;
-  --font-family-editor: Avenir, "Avenir Next";
-  --font-family-preview: Avenir, "Avenir Next";
+  --font-family-editor: Avenir, 'Avenir Next';
+  --font-family-preview: Avenir, 'Avenir Next';
 }
 
 #graph-view-canvas .links {
@@ -163,7 +163,7 @@ li > p {
 }
 
 ul li:not(.task-list-item)::before {
-  content: "•";
+  content: '•';
   color: var(--blockquote-border);
   display: inline-block;
   width: 1em;
@@ -173,10 +173,10 @@ ul li:not(.task-list-item)::before {
   text-shadow: 0 0 0.5em var(--accent-2);
 }
 ul ul li:not(.task-list-item)::before {
-  content: "•";
+  content: '•';
 }
 ul ul ul li:not(.task-list-item)::before {
-  content: "•";
+  content: '•';
 }
 
 /* numbered lists */
@@ -191,7 +191,7 @@ ol > li:not(.task-list-item)::before,
 ul ol > li:not(.task-list-item)::before,
 ul ul ol > li:not(.task-list-item)::before,
 ul ul ul ol > li:not(.task-list-item)::before {
-  content: "." counter(li);
+  content: '.' counter(li);
   color: var(--blockquote-border);
   font-weight: normal;
   display: inline-block;
@@ -220,7 +220,7 @@ ul ul ul ol > li:not(.task-list-item)::before {
   font-weight: 600;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   font-size: 1em;
   line-height: 1em;
@@ -615,37 +615,37 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* add some header prefix in preview */
 h1::before {
-  content: "H1 ";
+  content: 'H1 ';
   font-size: 12px;
   color: var(--text-faint);
 }
 
 h2::before {
-  content: "H2 ";
+  content: 'H2 ';
   font-size: 12px;
   color: var(--text-faint);
 }
 
 h3::before {
-  content: "H3 ";
+  content: 'H3 ';
   font-size: 12px;
   color: var(--text-faint);
 }
 
 h4::before {
-  content: "H4 ";
+  content: 'H4 ';
   font-size: 12px;
   color: var(--text-faint);
 }
 
 h5::before {
-  content: "H5 ";
+  content: 'H5 ';
   font-size: 12px;
   color: var(--text-faint);
 }
 
 h6::before {
-  content: "H6 ";
+  content: 'H6 ';
   font-size: 12px;
   color: var(--text-faint);
 }

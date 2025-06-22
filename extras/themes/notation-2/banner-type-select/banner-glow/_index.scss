@@ -1,0 +1,30 @@
+.banner-glow .cover-img img[alt*='banner'] {
+  -webkit-mask-image: none;
+  mask-image: none;
+  filter: brightness(70%);
+}
+
+.banner-glow .cover-img .inline-title {
+  position: relative;
+  margin-top: calc(var(--banner-size) - 160px) !important;
+  line-height: 1em !important;
+  font-size: 3em !important;
+  margin-bottom: calc(var(--banner-size) * 0.1);
+  text-align: center;
+  padding: 0.8em 1.8em;
+  margin-right: auto;
+  margin-left: auto;
+  color: hsl(var(--accent-h), var(--accent-s), 99.8%);
+  border-radius: var(--radius-m);
+  border: none;
+  text-shadow:
+    hsl(var(--accent-h), var(--accent-s), 97%) 0px 0px 2px,
+    hsl(var(--accent-h), var(--accent-s), 90%) 0px 0px 10px;
+  transition: text-shadow 0.15s;
+}
+
+.banner-glow .cover-img .inline-title:hover {
+  text-shadow:
+    hsl(var(--accent-h), var(--accent-s), 95%) 0px 0px 7px,
+    hsl(var(--accent-h), var(--accent-s), 88%) 0px 0px 15px;
+}

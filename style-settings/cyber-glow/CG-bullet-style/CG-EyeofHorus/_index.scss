@@ -1,0 +1,19 @@
+.CG-EyeofHorus li:not(.is-collapsed) .list-bullet:after,
+.CG-EyeofHorus .cm-formatting-list .list-bullet:after,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  content: '𓂀';
+}
+.CG-EyeofHorus li:not(.is-collapsed) .list-bullet:after,
+.CG-EyeofHorus .cm-formatting-list .list-bullet:after,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  transform: translate(-5px, 0px) rotate(0deg);
+}
+.CG-EyeofHorus li.is-collapsed .list-bullet:after,
+.CG-EyeofHorus .is-collapsed ~ .cm-formatting-list .list-bullet:after,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  content: '𓂀';
+  transform: translate(5px, 20px) rotate(180deg);
+}

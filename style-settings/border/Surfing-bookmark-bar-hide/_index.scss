@@ -1,0 +1,9 @@
+body .workspace-leaf-content[data-type='surfing-view'] .wb-bookmark-bar {
+  display: none;
+}
+body
+  .workspace-leaf-content[data-type='surfing-view']
+  .wb-view-content:has(.wb-bookmark-bar)
+  .wb-frame {
+  height: calc(100%);
+}

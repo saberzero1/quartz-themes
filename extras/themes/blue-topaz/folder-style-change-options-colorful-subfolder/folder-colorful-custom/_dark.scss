@@ -1,0 +1,13 @@
+body.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful-border
+  ).folder-colorful-custom:not(.is-grabbing)
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-folder-title,
+body.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful-border
+  ).folder-colorful-custom:not(.is-grabbing)
+  .workspace-leaf-content[data-type='file-explorer']
+  .tree-item-self.is-clickable.nav-folder-title {
+  color: color-mix(in hsl, var(--folder-colorful-custom-color), white 38%);
+  filter: var(--tab-color);
+}

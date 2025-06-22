@@ -1,0 +1,151 @@
+body.fancy-hr-number .markdown-rendered {
+  counter-reset: fancyhrno;
+}
+
+body.fancy-hr-number .markdown-rendered hr {
+  overflow: initial;
+  margin-block-start: 2.5em;
+  margin-block-end: 2.5em;
+  border: none;
+  height: 0;
+  min-height: 0.7em;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--hr-color-numbers-line-1) 30%,
+    var(--hr-color-numbers-line-2) 46%,
+    transparent 46%,
+    transparent 54%,
+    var(--hr-color-numbers-line-3) 54%,
+    var(--hr-color-numbers-line-4) 70%,
+    transparent 100%
+  );
+  counter-increment: fancyhrno;
+}
+
+body.fancy-hr-number .markdown-rendered hr::after {
+  content: counter(fancyhrno);
+  display: inline-block;
+  font-family: var(--font-monospace-theme);
+  font-weight: bold;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -0.2em);
+  color: var(--hr-color-numbers-color);
+  background: var(--hr-color-numbers-bg-color);
+  border-radius: 50%;
+  padding: 0 0.44em 0 0.5em;
+}
+
+body.hollow-number .markdown-rendered hr::after,
+body.hollow-number .markdown-source-view.mod-cm6 hr::after,
+body.hollow-number
+  .markdown-source-view
+  div:not(.CodeMirror-activeline)
+  > .HyperMD-hr.CodeMirror-line::after {
+  -webkit-text-fill-color: var(--hr-numbers-text-fill);
+  -webkit-text-stroke: 1px var(--hr-numbers-text-stroke);
+  font-family: var(--font-text-theme);
+}
+
+body.fancy-hr-number
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-hr {
+  opacity: 0;
+  position: relative;
+}
+
+body.fancy-hr-number div > .CodeMirror-line span.cm-hr {
+  display: inline-block;
+}
+
+body.fancy-hr-number .markdown-source-view {
+  counter-reset: fancyhrno1;
+}
+
+body.fancy-hr-number
+  .markdown-source-view
+  div:not(.CodeMirror-activeline)
+  > .HyperMD-hr.CodeMirror-line::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--hr-color-numbers-line-1) 30%,
+    var(--hr-color-numbers-line-2) 46%,
+    transparent 46%,
+    transparent 54%,
+    var(--hr-color-numbers-line-3) 54%,
+    var(--hr-color-numbers-line-4) 70%,
+    transparent 100%
+  );
+  left: 0;
+  top: 50%;
+  counter-increment: fancyhrno1;
+}
+
+body.fancy-hr-number
+  .markdown-source-view
+  div:not(.CodeMirror-activeline)
+  > .HyperMD-hr.CodeMirror-line::after {
+  content: counter(fancyhrno1);
+  display: inline-block;
+  font-family: var(--font-monospace-theme);
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--hr-color-numbers-color);
+  background: var(--hr-color-numbers-bg-color);
+  border-radius: 50%;
+  padding: 0 0.44em 0 0.5em;
+}
+
+body.fancy-hr-number .cm-s-obsidian hr {
+  border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--hr-color-numbers-line-1) 30%,
+      var(--hr-color-numbers-line-2) 46%,
+      transparent 46%,
+      transparent 54%,
+      var(--hr-color-numbers-line-3) 54%,
+      var(--hr-color-numbers-line-4) 70%,
+      transparent 100%
+    )
+    1;
+  border-width: 2px;
+  counter-increment: fancyhrno;
+}
+
+body.fancy-hr-number .markdown-source-view.mod-cm6 {
+  counter-reset: fancyhrno;
+}
+
+body.fancy-hr-number .markdown-source-view.mod-cm6 .hr::after {
+  left: 50%;
+  top: 50%;
+  content: counter(fancyhrno);
+  display: inline-block;
+  font-family: var(--font-monospace-theme);
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: var(--hr-color-numbers-color);
+  background: var(--hr-color-numbers-bg-color);
+  border-radius: 50%;
+  padding: 0 0.45em 0 0.5em;
+}
+
+body.hr-for-pagination.fancy-hr-number .markdown-rendered hr:after {
+  break-after: page;
+  visibility: visible;
+}

@@ -1,22 +1,120 @@
-.theme-light .oreo-safari-tab-toggle .workspace-split.mod-vertical.mod-root {
-  --tab-background-inactive: #f2f2f2;
-  /* --oreo-background-secondary-alt-light */
-  --tab-background-active: #ffffff;
-  /* --oreo-background-primary-light */
-  --tab-background-inactive-hover: #e0e0e0;
-  /* --oreo-background-primary-secondary-light */
-  --tab-text-color: #707070;
-  /* --oreo-text-faint-light */
-  --tab-text-color-active: #333333;
-  /* --oreo-text-muted-light */
-  --tab-text-color-focused: #333333;
-  /* --oreo-text-muted-light */
-  --tab-text-color-focused-active: #333333;
-  /* --oreo-text-muted-light */
-  --tab-text-color-focused-highlighted: #ffcc00;
-  /* --oreo-text-accent-light */
-  --tab-text-color-focused-active-current: #ffcc00;
-  /* --oreo-text-accent-light */
-  --tab-divider-color: #cccccc;
-  /* --oreo-background-modifier-border-hover-light */
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  margin: 5px 0 !important;
+  gap: 10px;
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  border-radius: 6px;
+  border: 1px solid var(--tab-divider-color);
+  background-color: var(--tab-background-inactive);
+  color: var(--tab-text-color);
+  max-width: 320px;
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:not(.is-active) {
+  --icon-color: var(--tab-text-color);
+  --icon-color-hover: var(--tab-text-color-active);
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-title {
+  margin-top: 3px;
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header::before,
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header::after {
+  display: none;
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active {
+  background-color: var(--tab-background-active);
+  max-width: 320px;
+  box-shadow: none;
+}
+
+.oreo-safari-tab-toggle
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
+  background-color: var(--tab-background-inactive-hover);
+}
+
+.oreo-safari-tab-toggle:not(.oreo-disable-newtab-align)
+  .workspace-tab-header-container-inner {
+  width: 100%;
+}
+
+.oreo-safari-tab-toggle.oreo-safari-tab-animated
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  transition:
+    max-width 400ms ease-in-out,
+    width 400ms ease-in-out,
+    flex-grow 400ms ease,
+    background-color 150ms;
+}
+
+.oreo-safari-tab-toggle.oreo-safari-tab-animated
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active {
+  flex-grow: 1.67;
+  max-width: 320px;
+}
+
+.oreo-safari-tab-toggle {
+  --header-height: 40px;
+  --tab-stacked-header-width: 40px;
+}
+
+.oreo-safari-tab-toggle .workspace-tabs:not(.mod-stacked) {
+  --tab-background: var(--tab-background-inactive);
+  --tab-background-active: var(--tab-background-active);
+  --tab-font-size: 12px;
+  --tab-height: 28px;
+  --tab-max-width: 200px;
+  --tab-max-width-active: 300px;
 }

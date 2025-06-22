@@ -1,0 +1,46 @@
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-ribbon.mod-right,
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-ribbon.mod-left {
+  position: absolute;
+  border: 1px solid var(--lines);
+  box-shadow: 4px 4px 0 var(--outline);
+  width: var(--ribbon-width);
+  top: var(--ribbon-float-top);
+  bottom: var(--ribbon-float-bottom);
+  --ribbon-background-collapsed: var(--ribbon-background);
+}
+
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-ribbon.mod-right {
+  right: 10px;
+}
+
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-ribbon.mod-left {
+  left: 10px;
+}
+
+.sidebar-ribbon-float:not(.is-mobile).sidebar-float-top {
+  --ribbon-float-top: 45px;
+}
+
+.sidebar-ribbon-float:not(.is-mobile).sidebar-float-bottom {
+  --ribbon-float-bottom: 45px;
+}
+
+.sidebar-ribbon-float:not(.is-mobile).sidebar-float-center
+  .side-dock-ribbon.mod-right,
+.sidebar-ribbon-float:not(.is-mobile).sidebar-float-center
+  .side-dock-ribbon.mod-left {
+  --ribbon-float-top: 50%;
+  transform: translate(0, -50%);
+}
+
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-settings {
+  border-top: var(--tab-outline-width) solid var(--tab-outline-color);
+}
+
+.sidebar-ribbon-float:not(.is-mobile) .sidebar-toggle-button {
+  position: relative;
+}
+
+.sidebar-ribbon-float:not(.is-mobile) .side-dock-actions {
+  margin-top: 0;
+}

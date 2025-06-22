@@ -1,0 +1,14 @@
+.fas-bigger-font {
+  --font-weight: var(--font-normal);
+  --font-text-size: 18px !important;
+  --font-ui-smaller: 14px;
+  --font-ui-small: 15px;
+  --font-ui-medium: 17px;
+  --font-ui-large: 22px;
+}
+
+:is(.fas-accessibility, .fas-bigger-font)
+  .cm-s-obsidian
+  span.cm-formatting-quote {
+  font-weight: var(--font-normal);
+}

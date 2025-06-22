@@ -1,0 +1,48 @@
+.aura-workspace-background {
+  --background-primary: rgba(
+    var(--cpt-core),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --background-primary-alt: rgba(
+    var(--cpt-core-alt),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --background-secondary: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --background-secondary-alt: rgba(
+    var(--cpt-mantle-alt),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --ribbon-background: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --ribbon-background-collapsed: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --titlebar-background: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+  --titlebar-background-focused: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-dark)
+  );
+}
+
+.aura-workspace-background .workspace {
+  background-color: rgba(var(--cpt-core), 0.2);
+  backdrop-filter: brightness(
+      var(--aura-workspace-background-brightness-dark, 0.5)
+    )
+    blur(var(--aura-workspace-background-blur-dark, 5px));
+}
+
+.aura-workspace-background .horizontal-main-container {
+  --workspace-background-image: var(
+    --aura-workspace-background-image-dark-custom-option
+  );
+}

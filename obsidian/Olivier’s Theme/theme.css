@@ -355,7 +355,7 @@ body {
   --OT-editMode-line-height: 1.5em;
   --OT-editMode-line-width: 45em;
   --OT-editMode-tableText-size: 0.9em;
-  --OT-kanban-font: "Uberhand Pro";
+  --OT-kanban-font: 'Uberhand Pro';
   --OT-kanban-font-size: 17px;
 
   /*    ---------- Other theme’s variables    */
@@ -642,7 +642,7 @@ body {
 
   /* font family in Edit Mode: */
   --editor-font-family:
-    var(--OT-editMode-font), "Comic Sans MS", var(--font-default);
+    var(--OT-editMode-font), 'Comic Sans MS', var(--font-default);
 
   --border-width: 1.5px;
   --checkbox-radius: 0.3rem;
@@ -4593,7 +4593,7 @@ p,
 
 /* ----- OpSpl Checkbox -----
     j’épaissis quelque peu le bord de la checkbox */
-input[type="checkbox"] {
+input[type='checkbox'] {
   border: 2px solid var(--checkbox-border-color);
 }
 
@@ -5687,13 +5687,13 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
   background-color: var(--OT-button-background-hover);
 }
 /*    settings: outils de sélection avec un curseur (sliders)    */
-input[type="range"] {
+input[type='range'] {
   background-color: var(--color-accent-2);
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   background-color: var(--color-accent-2);
 }
-input[type="range"]::-webkit-slider-thumb:hover {
+input[type='range']::-webkit-slider-thumb:hover {
   background-color: var(--color-accent-1);
 }
 
@@ -5848,7 +5848,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
   color: var(--OT-color-muted-on-base-20);
   font-size: var(--nav-item-size);
 }
-[data-type="tlfItemView"].workspace-leaf-content {
+[data-type='tlfItemView'].workspace-leaf-content {
   /*        background-color:    var(--background-secondary-alt);    */
 }
 /*    ----------------------------------------------    */
@@ -6114,7 +6114,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 .markdown-rendered .table-view-table {
   margin-block-start: calc(var(--p-spacing) * 1.1);
   margin-block-end: calc(var(--p-spacing) * 1.5);
-  font-feature-settings: "lnum"; /*    au lieu des “old-style numerals”    */
+  font-feature-settings: 'lnum'; /*    au lieu des “old-style numerals”    */
 }
 
 .markdown-rendered th {
@@ -6743,7 +6743,7 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type="color"] {
+  > input[type='color'] {
   visibility: hidden;
   width: 300px;
 }
@@ -6758,9 +6758,9 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type="color"]::before {
+  > input[type='color']::before {
   visibility: visible;
-  content: "The accent color is overridden by the theme. Use the Style Settings Plugin to customize theme colors.";
+  content: 'The accent color is overridden by the theme. Use the Style Settings Plugin to customize theme colors.';
   color: var(--text-error);
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
@@ -6880,23 +6880,23 @@ img {
 }
 
 /*    complément au snippet “MCL Gallery Cards”, version 0.9.2    */
-div[data-embed-type="image"].el-embed-image.el-p {
+div[data-embed-type='image'].el-embed-image.el-p {
   margin-block-end: 1.2rem;
 }
 /*    - - - - - - - - - - MCL Gallery Cards 0.9.2     */
 /* Editing and Reading View - Gallery using <p> and Callout. Using <p> (in Reading View) to contain and format as gallery view using metadata="gallery" to contain and format as gallery view */
 /* Create display: flex and key adjustment on margin and gap */
-div[data-embed-type="image"] > p,
-div[data-callout-metadata*="gallery"].callout > .callout-content > p {
+div[data-embed-type='image'] > p,
+div[data-callout-metadata*='gallery'].callout > .callout-content > p {
   display: flex;
   gap: var(--OT-callout-gallery-gap);
   margin-top: calc(var(--OT-callout-gallery-gap));
   margin-bottom: 0;
 }
-div[data-embed-type="image"].el-embed-image.el-p {
+div[data-embed-type='image'].el-embed-image.el-p {
   margin-top: var(--OT-callout-gallery-gap);
 }
-div[data-callout-metadata*="gallery"].callout > .callout-content {
+div[data-callout-metadata*='gallery'].callout > .callout-content {
   --callout-content-padding: 0.5rem 0 0 0;
 }
 /* Introduce subtle border and make the gallery as object-fit: cover
@@ -6964,7 +6964,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 }
 /* ajoutons un symbole devant le nom */
 .file-embed-title:before {
-  content: "\1F4C3\2005";
+  content: '\1F4C3\2005';
 }
 /* -------------------- ↑ PDF -------------------- ↑ */
 
@@ -7031,7 +7031,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 }
 
 .markdown-preview-view blockquote:after {
-  content: "«";
+  content: '«';
   color: var(--text-normal);
   position: absolute;
   top: 0.1em;
@@ -7049,7 +7049,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 
 .citation-source:before {
   /* Devant l’auteur de la citation: un tiret cadratin suivi d’un espace demi-cadratin    */
-  content: "—\2002";
+  content: '—\2002';
 }
 
 /*    linewrapping ON inside codeblocks if set via Styles settings    */
@@ -7066,26 +7066,26 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 /*    Ceci fonctionne grâce au plugin “Contextual Typography”.
     Il est donc indispensable de le charger et de l’activer!    */
 /* p suivant un h4, un h5 ou un h6: on supprime l’espace au-dessus    */
-.markdown-preview-view div[data-tag-name="h4"] + div > p,
-.markdown-preview-view div[data-tag-name="h5"] + div > p,
-.markdown-preview-view div[data-tag-name="h6"] + div > p {
+.markdown-preview-view div[data-tag-name='h4'] + div > p,
+.markdown-preview-view div[data-tag-name='h5'] + div > p,
+.markdown-preview-view div[data-tag-name='h6'] + div > p {
   margin-top: 0rem;
 }
 
 /* Heading 1 au milieu de la fiche, c’est-à-dire suivant
     une ligne horizontale, ou un paragraphe, ou une liste non-numéroté,
     ou une liste numérotée */
-.markdown-preview-view div[data-tag-name="hr"] + div > h1,
-.markdown-preview-view div[data-tag-name="p"] + div > h1,
-.markdown-preview-view div[data-tag-name="ul"] + div > h1,
-.markdown-preview-view div[data-tag-name="ol"] + div > h1 {
+.markdown-preview-view div[data-tag-name='hr'] + div > h1,
+.markdown-preview-view div[data-tag-name='p'] + div > h1,
+.markdown-preview-view div[data-tag-name='ul'] + div > h1,
+.markdown-preview-view div[data-tag-name='ol'] + div > h1 {
   --heading-spacing: 3rem;
 }
 
 /* Titres de niveau 2 ou 3 suivant immédiatement un titre de niveau supérieur */
-.markdown-preview-view div[data-tag-name="h1"] + div > h2,
-.markdown-preview-view div[data-tag-name="h1"] + div > h3,
-.markdown-preview-view div[data-tag-name="h2"] + div > h3 {
+.markdown-preview-view div[data-tag-name='h1'] + div > h2,
+.markdown-preview-view div[data-tag-name='h1'] + div > h3,
+.markdown-preview-view div[data-tag-name='h2'] + div > h3 {
   margin-top: 0rem;
 }
 /* -------------------- ↑ Contextual typography ↑ -------------------- */
@@ -7271,10 +7271,10 @@ markdown-rendered h6 {
 /*     Quand des headings de niveau 3 à 6 suivent directement une ligne horizontale,
     je préfère qu’ils soient plus proches de la ligne. Si j’utilise une ligne à cet endroit-là,
     c’est justement pour avoir une variante de la séparation visuelle. */
-.markdown-preview-view div[data-tag-name="hr"] + div > h3,
-.markdown-preview-view div[data-tag-name="hr"] + div > h4,
-.markdown-preview-view div[data-tag-name="hr"] + div > h5,
-.markdown-preview-view div[data-tag-name="hr"] + div > h6 {
+.markdown-preview-view div[data-tag-name='hr'] + div > h3,
+.markdown-preview-view div[data-tag-name='hr'] + div > h4,
+.markdown-preview-view div[data-tag-name='hr'] + div > h5,
+.markdown-preview-view div[data-tag-name='hr'] + div > h6 {
   margin-top: 0em;
   padding-top: 0em;
 }
@@ -7291,8 +7291,8 @@ body .kanban-plugin {
 
 body .kanban-plugin__markdown-preview-view {
   font-family:
-    var(--OT-kanban-font), "Comic Sans MS", "Tekton Pro", "Palatino Sans Com",
-    "Arial Narrow", "Helvetica Neue", sans-serif !important;
+    var(--OT-kanban-font), 'Comic Sans MS', 'Tekton Pro', 'Palatino Sans Com',
+    'Arial Narrow', 'Helvetica Neue', sans-serif !important;
 }
 
 /* les “post-its” dans les colonnes */
@@ -7322,8 +7322,8 @@ div.kanban-plugin__lane-title-count {
 body:not(.is-mobile) .kanban-plugin__grow-wrap > textarea:focus {
   box-shadow: none;
   font-family:
-    var(--OT-kanban-font), "P22 Eaglefeather", "Tekton Pro",
-    "Palatino Sans Com", "Arial Narrow", "Helvetica Neue", sans-serif !important;
+    var(--OT-kanban-font), 'P22 Eaglefeather', 'Tekton Pro',
+    'Palatino Sans Com', 'Arial Narrow', 'Helvetica Neue', sans-serif !important;
 }
 
 .kanban-plugin__new-item-button:hover {
@@ -7436,7 +7436,7 @@ ul > li::marker,
 .cm-s-obsidian .cm-formatting-list {
   color: var(--list-marker-color);
   font-weight: var(--bold-weight);
-  font-feature-settings: "lnum"; /*    au lieu des “old-style numerals”    */
+  font-feature-settings: 'lnum'; /*    au lieu des “old-style numerals”    */
   font-variant-numeric: tabular-nums;
 }
 
@@ -7577,7 +7577,7 @@ div > * > li > * > li > * > li:last-child {
 .metadata-container .internal-link.is-unresolved {
   background-color: lightgrey;
 }
-.metadata-property[data-property-key="tags"] {
+.metadata-property[data-property-key='tags'] {
   --pill-color: var(--OT-pill-color);
   --pill-background: var(--OT-pill-background);
   --pill-color-remove: var(--OT-pill-background);
@@ -7713,8 +7713,8 @@ button.canvas-menu-item {
 /* ---------- classe KBD, pour documenter les raccourcis clavier ---------- */
 kbd {
   font-family:
-    Consolas, "Courier New", "PT Mono", "Dico Code Two", "Frutiger Neue LT Pro",
-    "Menlo", Monaco, Verdana, monospace;
+    Consolas, 'Courier New', 'PT Mono', 'Dico Code Two', 'Frutiger Neue LT Pro',
+    'Menlo', Monaco, Verdana, monospace;
   font-weight: var(--font-semibold);
   font-size: 1.05em;
   padding: 3px 3px 0px 3px;
@@ -7873,12 +7873,12 @@ kbd {
   color: var(--OT-color-muted-on-accent-1);
 }
 
-.heading-list-item[data-level="1"] .text::after,
-.heading-list-item[data-level="2"] .text::after,
-.heading-list-item[data-level="3"] .text::after,
-.heading-list-item[data-level="4"] .text::after,
-.heading-list-item[data-level="5"] .text::after,
-.heading-list-item[data-level="6"] .text::after {
+.heading-list-item[data-level='1'] .text::after,
+.heading-list-item[data-level='2'] .text::after,
+.heading-list-item[data-level='3'] .text::after,
+.heading-list-item[data-level='4'] .text::after,
+.heading-list-item[data-level='5'] .text::after,
+.heading-list-item[data-level='6'] .text::after {
   font-size: var(--font-ui-smaller);
   color: var(--OT-color-muted-on-base-20) !important;
 }
@@ -7984,14 +7984,14 @@ kbd {
 .recent-note-item.is-active .recent-note-info {
   color: var(--OT-color-muted-on-accent-2);
 }
-body[data-recent-notes-density="compact"] .recent-note-date {
+body[data-recent-notes-density='compact'] .recent-note-date {
   color: var(--OT-color-muted-on-base-20);
   font-size: var(--font-ui-small);
 }
-body[data-recent-notes-density="compact"] .recent-note-preview {
+body[data-recent-notes-density='compact'] .recent-note-preview {
   color: var(--OT-color-muted-on-base-20);
 }
-body[data-recent-notes-density="compact"] .is-active .recent-note-preview {
+body[data-recent-notes-density='compact'] .is-active .recent-note-preview {
   color: var(--OT-color-muted-on-accent-2);
 }
 /*    ---- hovering ----    */
@@ -8011,7 +8011,7 @@ body[data-recent-notes-density="compact"] .is-active .recent-note-preview {
     background: inherit; /* Inherit background from parent */
   }
 }
-body[data-recent-notes-density="compact"]
+body[data-recent-notes-density='compact']
   div.recent-note-item:hover:not(.is-active) {
   color: var(--OT-color-on-accent-1);
   background: var(--color-accent-1);
@@ -8176,7 +8176,7 @@ body[data-recent-notes-density="compact"]
   border: none; /*    1px solid transparent;    */
 }
 .related-note-item::before {
-  content: "⭢";
+  content: '⭢';
   margin-right: 0.4em;
   font-size: var(--font-ui-small);
 }
@@ -8423,11 +8423,11 @@ body {
 }
 
 textarea::placeholder,
-input[type="text"]::placeholder,
-input[type="search"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="number"]::placeholder {
+input[type='text']::placeholder,
+input[type='search']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder,
+input[type='number']::placeholder {
   color: lightgrey;
 }
 

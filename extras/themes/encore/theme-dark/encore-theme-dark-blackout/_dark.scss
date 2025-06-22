@@ -1,0 +1,31 @@
+bod.theme-dark {
+  --grey-50-rgb: 225, 227, 233;
+  --grey-100-rgb: 222, 227, 241;
+  --grey-200-rgb: 173, 181, 200;
+  --grey-300-rgb: 162, 165, 186;
+  --grey-350-rgb: 126, 128, 148;
+  --grey-400-rgb: 97, 97, 115;
+  --grey-500-rgb: 40, 40, 48;
+  --grey-600-rgb: 26, 26, 32;
+  --grey-700-rgb: 20, 20, 25;
+  --grey-800-rgb: 0, 0, 0;
+  --grey-850-rgb: 0, 0, 0;
+  --grey-875-rgb: 0, 0, 0;
+  --grey-900-rgb: 0, 0, 0;
+  --accent-h: 203;
+  --accent-s: 66%;
+  --accent-l: 54%;
+  --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+}
+
+bod.encore-colors-colorful {
+  --highlight-hue: 30;
+  --bold-color: #a283ec;
+  --italic-color: #98f8eb;
+  --h1-color: #975af2;
+  --h2-color: #d965e4;
+  --h3-color: #e05b9e;
+  --h4-color: #e96363;
+  --h5-color: #ee7e51;
+  --h6-color: #ecc68b;
+}

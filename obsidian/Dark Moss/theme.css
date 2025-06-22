@@ -1,5 +1,5 @@
 :root {
-  --default-font: "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif;
+  --default-font: 'Segoe UI', 'Arial', 'Tahoma', 'Helvetica', sans-serif;
 }
 
 body .modal {
@@ -71,8 +71,8 @@ body .modal {
 
   --font-weight-title: 600;
   --font-monospace:
-    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
-    "Arial", sans-serif;
+    'Consolas', 'Fira Code', 'Source Code Pro', 'Droid Sans Mono', 'Monoid',
+    'Arial', sans-serif;
   --line-height-headers: 1;
   --file-line-width: 1000px;
 
@@ -242,11 +242,11 @@ a:hover,
 /* code block */
 
 /* Code blocks */
-pre[class*="language-"] {
+pre[class*='language-'] {
   overflow: hidden;
 }
 
-code[class*="language-"] {
+code[class*='language-'] {
   display: block;
   padding: 0em;
   overflow: auto;
@@ -382,8 +382,8 @@ body:not(.is-grabbing) .nav-file-title.is-selected:hover {
   background-color: var(--nav-item-background-active);
 }
 
-div[data-path="0attachments"],
-div[data-path="0attachments"] + div.nav-folder-children {
+div[data-path='0attachments'],
+div[data-path='0attachments'] + div.nav-folder-children {
   display: none;
 }
 

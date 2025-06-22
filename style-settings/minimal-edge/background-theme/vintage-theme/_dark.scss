@@ -1,0 +1,62 @@
+body.vintage-theme {
+  --background-primary: #291f18;
+  --background-secondary: #41352a;
+  --text-normal: #c2b8ac;
+  --text-accent: #a0662fdf;
+  --icon-color: #a0662f9c;
+  --icon-color-focused: #965e29e1;
+  --tab-text-color-focused-active-current: #965e29e1;
+  --interactive-normal: #291f18;
+  --background-modifier-border: var(--border-size) var(--border-style) #b9979747;
+  --code-background: #27231a;
+  --code-keyword: #ffad60;
+  --code-normal: #fd8b51;
+  --code-operator: #f2e5bf;
+  --code-value: #e3b750;
+  --code-function: #dcbb59;
+  --code-property: #d29a8c;
+  --code-string: #79b1c7;
+  --hr-color: #b9979747;
+  --table-border-color: #b9979747;
+  --canvas-dot-pattern: #965e29e1;
+}
+body.vintage-theme .workspace-ribbon .sidebar-toggle-button .clickable-icon {
+  color: #f2e5bf;
+}
+body.vintage-theme .clickable-icon:nth-child(4n + 1) {
+  color: #ffad60;
+}
+body.vintage-theme .clickable-icon:nth-child(4n + 2) {
+  color: #fd8b51;
+}
+body.vintage-theme .clickable-icon:nth-child(4n + 3) {
+  color: #ffad60;
+}
+body.vintage-theme .clickable-icon:nth-child(4n + 4) {
+  color: #79b1c7;
+}
+body.vintage-theme .canvas-control-item:nth-child(4n + 1) {
+  color: #f2e5bf;
+}
+body.vintage-theme .canvas-control-item:nth-child(4n + 2) {
+  color: #ffad60;
+}
+body.vintage-theme .canvas-control-item:nth-child(4n + 3) {
+  color: #fd8b51;
+}
+body.vintage-theme .canvas-control-item:nth-child(4n + 4) {
+  color: #79b1c7;
+}
+body.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(1) {
+  color: #f2e5bf;
+}
+body.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(2) {
+  color: #fd8b51;
+}
+body.vintage-theme .canvas-card-menu .canvas-card-menu-button:nth-child(3) {
+  color: #ffad60;
+}
+body.vintage-theme .nav-file-tag {
+  background-color: #5f514463;
+  color: #7e7e7e86;
+}

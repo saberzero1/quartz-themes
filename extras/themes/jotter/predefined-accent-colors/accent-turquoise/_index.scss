@@ -1,0 +1,14 @@
+.predefined-accent-color.accent-turquoise {
+  --accent: var(--turquoise);
+  --accent-h: 181;
+  --accent-s: 71%;
+  --accent-l: 69%;
+}
+
+.accent-turquoise {
+  --text-on-accent: #353132;
+}
+
+.colorful-tooltips.accent-turquoise .tooltip {
+  color: var(--text-on-accent);
+}

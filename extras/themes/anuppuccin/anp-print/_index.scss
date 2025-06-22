@@ -1,5 +1,4 @@
-.anp-print .print.theme-light,
-.anp-print .print.theme-dark {
+.anp-print .print {
   --ctp-crust: inherit;
   --ctp-mantle: inherit;
   --ctp-base: inherit;
@@ -26,4 +25,15 @@
   --ctp-sapphire: inherit;
   --ctp-blue: inherit;
   --ctp-lavender: inherit;
+}
+
+.anp-print .print,
+body.anp-print,
+.anp-print .markdown-rendered,
+:root:has(.anp-print) {
+  background-color: rgb(var(--ctp-base));
+}
+
+.anp-print .print .markdown-preview-view {
+  color: rgb(var(--ctp-text));
 }

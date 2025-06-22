@@ -1,6 +1,146 @@
-.anp-rainbow-file-toggle.theme-light .nav-files-container > div > .nav-file {
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-title,
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-file-title,
+.anp-full-rainbow-color-toggle .nav-files-container .collapse-icon svg.svg-icon,
+.anp-full-rainbow-color-toggle .tree-item-self .tree-item-icon {
+  color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
+  --icon-color: var(
+    --anp-full-rainbow-text-inverted,
+    var(--background-primary)
+  );
+}
+
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle
+  .nav-files-container
+  > div
+  > .nav-folder-children
+  > .nav-file
+  .nav-file-title {
+  color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
+}
+
+.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle
+  .nav-files-container
+  > div
+  > .nav-file {
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.anp-full-rainbow-color-toggle:not(.is-grabbing)
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-title:hover,
+.anp-full-rainbow-color-toggle:not(.is-grabbing)
+  .nav-files-container
+  > div
+  .nav-file
+  .nav-file-title:hover {
+  background-color: rgba(var(--ctp-base), 0.1);
+}
+
+.anp-full-rainbow-color-toggle:not(.is-grabbing)
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-file-title.is-active {
+  border-color: rgba(var(--ctp-base), 0.2);
+  background-color: rgba(var(--ctp-base), 0.2);
+}
+
+.anp-full-rainbow-color-toggle .nav-file {
+  overflow-y: hidden;
+}
+
+.anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed,
+.anp-full-rainbow-color-toggle .nav-folder-title-content.is-being-renamed {
+  cursor: text;
+  border-color: var(--interactive-accent);
+  background-color: rgba(var(--ctp-crust), 0.2);
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-file-title-content.is-being-renamed::selection,
+.anp-full-rainbow-color-toggle
+  .nav-folder-title-content.is-being-renamed::selection {
+  background-color: hsla(var(--color-accent-hsl), 0.2);
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-file-title-content.is-being-renamed::selection {
+  background-color: rgba(var(--ctp-accent), 0.2);
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  .nav-folder
+  > .nav-folder-children {
+  padding: 0 5px 0 5px;
+}
+
+.anp-full-rainbow-color-toggle .nav-files-container > div > .nav-folder {
+  transition: background-color 0.4s;
   background-color: rgba(
-    var(--ctp-overlay1),
+    var(--rainbow-folder-color),
     var(--anp-rainbow-folder-bg-opacity)
   );
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-children {
+  border-color: rgba(var(--ctp-crust), 0.4);
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-file.has-focus {
+  background-color: rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity));
+  border-left: none;
+  border-color: rgb(var(--ctp-accent));
+}
+
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-file
+  > .nav-file-title,
+.anp-full-rainbow-color-toggle
+  .nav-files-container
+  > div
+  > .nav-file.has-focus
+  > .nav-file-title {
+  margin-bottom: 0;
+}
+
+.anp-full-rainbow-color-toggle
+  .workspace-leaf.mod-active
+  .nav-folder.has-focus
+  > .nav-file-title,
+.anp-full-rainbow-color-toggle
+  .workspace-leaf.mod-active
+  .nav-folder.has-focus
+  > .nav-file-title:focus-within,
+.anp-full-rainbow-color-toggle
+  .workspace-leaf.mod-active
+  .nav-folder.has-focus
+  > .nav-folder-title,
+.anp-full-rainbow-color-toggle
+  .workspace-leaf.mod-active
+  .nav-folder.has-focus
+  > .nav-folder-title:focus-within {
+  box-shadow: none;
 }

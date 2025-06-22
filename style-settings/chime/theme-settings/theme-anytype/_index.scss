@@ -1,0 +1,110 @@
+.h1-bottom-border.colorful-headings.theme-anytype h1,
+.h1-bottom-border.colorful-headings.theme-anytype .HyperMD-header-1,
+.h2-bottom-border.colorful-headings.theme-anytype h2,
+.h2-bottom-border.colorful-headings.theme-anytype .HyperMD-header-2,
+.h3-bottom-border.colorful-headings.theme-anytype h3,
+.h3-bottom-border.colorful-headings.theme-anytype .HyperMD-header-3,
+.h4-bottom-border.colorful-headings.theme-anytype h4,
+.h4-bottom-border.colorful-headings.theme-anytype .HyperMD-header-4,
+.h5-bottom-border.colorful-headings.theme-anytype h5,
+.h5-bottom-border.colorful-headings.theme-anytype .HyperMD-header-5,
+.h6-bottom-border.colorful-headings.theme-anytype h6,
+.h6-bottom-border.colorful-headings.theme-anytype .HyperMD-header-6 {
+  border-bottom: none;
+}
+.theme-anytype.checkbox-anytype input[type='checkbox']:checked:after {
+  background-color: #1eabeb;
+}
+.theme-anytype.colored-bold-and-italic {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-green);
+}
+.theme-anytype.colorful-headings {
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+}
+.theme-anytype.colorful-headings-alt {
+  --h1-color: var(--color-blue);
+  --h2-color: var(--color-cyan);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-yellow);
+  --h5-color: var(--color-orange);
+  --h6-color: var(--color-red);
+}
+.theme-anytype.colorful-headings h1,
+.theme-anytype.colorful-headings .HyperMD-header-1 {
+  background-color: rgba(var(--color-red-rgb), 0.2);
+  padding: 5px 10px 5px 10px;
+}
+.theme-anytype.colorful-headings h2,
+.theme-anytype.colorful-headings .HyperMD-header-2 {
+  background-color: rgba(var(--color-orange-rgb), 0.3);
+  padding: 5px 10px 5px 10px;
+}
+.theme-anytype.colorful-headings h3,
+.theme-anytype.colorful-headings .HyperMD-header-3 {
+  background-color: rgba(var(--color-yellow-rgb), 0.3);
+  padding: 5px 10px 5px 10px;
+}
+.theme-anytype.colorful-headings h4,
+.theme-anytype.colorful-headings .HyperMD-header-4 {
+  background-color: rgba(var(--color-green-rgb), 0.3);
+  padding: 5px 0px 5px 10px;
+}
+.theme-anytype.colorful-headings h5,
+.theme-anytype.colorful-headings .HyperMD-header-5 {
+  background-color: rgba(var(--color-cyan-rgb), 0.3);
+  padding: 3px 10px 3px 10px;
+}
+.theme-anytype.colorful-headings h6,
+.theme-anytype.colorful-headings .HyperMD-header-6 {
+  background-color: rgba(var(--color-blue-rgb), 0.3);
+  padding: 3px 10px 3px 10px;
+}
+.theme-anytype {
+  --accent-h: 45 !important;
+  --accent-s: 100% !important;
+  --accent-l: 50% !important;
+  --callout-title-color: var(--text-normal);
+  --callout-quote: 216, 216, 216;
+  --callout-radius: 5px;
+  --font-default: 'Inter', 'Aevnir Next', sans-serif;
+  --color-red-rgb: 220, 83, 40;
+  --color-red: #dc5328;
+  --color-green-rgb: 139, 208, 49;
+  --color-green: #8bd031;
+  --color-orange-rgb: 241, 177, 56;
+  --color-orange: #f1b138;
+  --color-yellow-rgb: 234, 213, 60;
+  --color-yellow: #ead53c;
+  --color-cyan-rgb: 107, 200, 186;
+  --color-cyan: #6bc8ba;
+  --color-blue-rgb: 90, 171, 235;
+  --color-blue: #5aabeb;
+  --color-purple-rgb: 60, 100, 231;
+  --color-purple: #3c64e7;
+  --color-pink-rgb: 152, 89, 200;
+  --color-pink: #9859c8;
+}
+.theme-anytype.callout-outlined .callout {
+  background-color: transparent !important;
+  border-width: 2px;
+  border-color: rgba(var(--callout-color), 0.75);
+}
+.theme-anytype.callout-bordered .callout {
+  background-color: rgba(var(--callout-color), 0.3);
+  border-width: 2px;
+}
+.theme-anytype .callout-icon .svg-icon {
+  color: var(--text-normal);
+}
+.theme-anytype .callout-fold .svg-icon {
+  color: var(--text-normal);
+}
+.theme-anytype {
+  --list-marker-color: var(--text-normal);
+}

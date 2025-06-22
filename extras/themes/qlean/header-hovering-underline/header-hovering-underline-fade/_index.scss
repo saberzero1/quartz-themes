@@ -1,0 +1,40 @@
+body.header-hovering-underline-fade
+  .markdown-rendered
+  :is(h1, h2, h3, h4, h5, h6)::after,
+body.header-hovering-underline-fade
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6)::after,
+body.header-hovering-underline-fade
+  .markdown-source-view.is-live-preview
+  .cm-line.HyperMD-header::after {
+  content: '';
+  display: block;
+  height: calc(0.125 * var(--font-text-size));
+  width: 0;
+  background-color: transparent;
+}
+
+body.header-hovering-underline-fade
+  .markdown-rendered
+  :is(h1, h2, h3, h4, h5, h6)::after,
+body.header-hovering-underline-fade
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6)::after,
+body.header-hovering-underline-fade
+  .markdown-source-view.is-live-preview
+  .cm-line.HyperMD-header::after {
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+body.header-hovering-underline-fade
+  .markdown-rendered
+  :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline-fade
+  .style-settings-container
+  :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline-fade
+  .markdown-source-view.is-live-preview
+  .cm-line.HyperMD-header:hover::after {
+  background-color: var(--text-normal);
+}

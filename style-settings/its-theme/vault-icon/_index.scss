@@ -1,0 +1,19 @@
+:root,
+body {
+  --image: '';
+  --width: 32px;
+  --height: 28px;
+  --padding: 10px;
+}
+.mod-left .workspace-drawer-header::before,
+.workspace-sidedock-vault-profile::before {
+  content: '';
+  background-image: var(--image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: var(--width);
+  height: var(--height);
+}
+.mod-left .workspace-drawer-header::before {
+  margin-right: var(--padding);
+}

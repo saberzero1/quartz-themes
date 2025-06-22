@@ -1,0 +1,7 @@
+body table {
+  --table-header-color: var(--setting-table-header-text, var(--text-on-accent));
+  --table-header-bg: var(--setting-table-header-bg, var(--accent-active));
+}
+body .markdown-source-view table thead .cm-s-obsidian {
+  color: var(--setting-table-header-text, var(--text-normal));
+}

@@ -1,0 +1,7 @@
+body.table-style-two :is(.markdown-preview-view, .markdown-rendered) th {
+  border: none;
+  border-bottom: 2px solid;
+}
+body.table-style-two :is(.markdown-preview-view, .markdown-rendered) td {
+  border: none;
+}

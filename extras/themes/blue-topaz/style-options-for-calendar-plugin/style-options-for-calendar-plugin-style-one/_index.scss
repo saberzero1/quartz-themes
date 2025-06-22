@@ -1,0 +1,42 @@
+body.style-options-for-calendar-plugin-style-one #calendar-container th {
+  padding: 10px 0;
+  border-radius: 0 !important;
+}
+
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  th:nth-last-child(1),
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  th:nth-last-child(2) {
+  color: var(--color-calendar-weekends) !important;
+}
+
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  td:nth-last-child(1),
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  td:nth-last-child(2) {
+  background-color: var(--color-calendar-weekends-2) !important;
+}
+
+body.style-options-for-calendar-plugin-style-one #calendar-container .day {
+  border-radius: 50% !important;
+}
+
+body.style-options-for-calendar-plugin-style-one #calendar-container .today {
+  color: var(--text-accent) !important;
+  font-weight: 700 !important;
+  background-image: unset;
+}
+
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  .day:active,
+body.style-options-for-calendar-plugin-style-one #calendar-container .active,
+body.style-options-for-calendar-plugin-style-one
+  #calendar-container
+  .active.today {
+  background-color: var(--theme-color-translucent-3) !important;
+}

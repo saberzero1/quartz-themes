@@ -1,0 +1,8 @@
+.tag-outline {
+  --tag-border-width: 2px;
+}
+
+.tag-outline.tag-outline {
+  --tag-background: transparent;
+  --tag-color: var(--tag-text);
+}

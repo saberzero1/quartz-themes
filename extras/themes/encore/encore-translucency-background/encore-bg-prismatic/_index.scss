@@ -1,0 +1,26 @@
+body.encore-translucency.encore-bg-prismatic {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(0, 4, 255),
+    rgb(107, 15, 254),
+    rgb(153, 0, 255),
+    rgb(255, 0, 242),
+    rgb(255, 0, 170),
+    rgb(255, 0, 242),
+    rgb(153, 0, 255),
+    rgb(107, 15, 254),
+    rgb(0, 4, 255),
+    rgb(107, 15, 254),
+    rgb(153, 0, 255),
+    rgb(255, 0, 242)
+  );
+  background-size: 100% 400vh;
+  animation: scroll-up infinite 30s linear;
+}
+
+body.encore-translucency.encore-bg-prismatic::before {
+  position: fixed;
+  inset: 0;
+  content: '';
+  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}

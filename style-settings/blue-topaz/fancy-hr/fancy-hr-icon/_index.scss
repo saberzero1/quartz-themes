@@ -1,0 +1,115 @@
+body-icon .markdown-rendered hr {
+  overflow: initial;
+  margin-block-start: 2.5em;
+  margin-block-end: 2.5em;
+  border: none;
+  height: 0;
+  min-height: 0.7em;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--hr-color-icon-1) 30%,
+      var(--hr-color-icon-2) 46%,
+      transparent 46%,
+      transparent 54%,
+      var(--hr-color-icon-3) 54%,
+      var(--hr-color-icon-4) 70%,
+      transparent 100%
+    )
+    1;
+}
+body-icon .markdown-rendered hr::after {
+  content: var(--icon);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  font-size: 1em;
+  transform: translate(-50%, -0.35em) rotate(var(--rotate));
+  transform-origin: 50% 50%;
+  padding: 0.3rem;
+  color: var(--theme-color);
+}
+body-icon div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
+  opacity: 0;
+  position: relative;
+}
+body-icon div > .CodeMirror-line span.cm-hr {
+  display: inline-block;
+}
+body-icon
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line.HyperMD-hr::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--hr-color-icon-1) 30%,
+      var(--hr-color-icon-2) 46%,
+      transparent 46%,
+      transparent 54%,
+      var(--hr-color-icon-3) 54%,
+      var(--hr-color-icon-4) 70%,
+      transparent 100%
+    )
+    1;
+  left: 0;
+  top: 50%;
+}
+body-icon div:not(.CodeMirror-activeline) > .CodeMirror-line.HyperMD-hr::after {
+  content: var(--icon);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1em;
+  transform: translate(-50%, -50%) rotate(var(--rotate));
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--theme-color);
+}
+body-icon .cm-s-obsidian hr {
+  border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--hr-color-icon-1) 30%,
+      var(--hr-color-icon-2) 46%,
+      transparent 46%,
+      transparent 54%,
+      var(--hr-color-icon-3) 54%,
+      var(--hr-color-icon-4) 70%,
+      transparent 100%
+    )
+    1;
+  border-width: 2px;
+}
+body-icon .markdown-source-view.mod-cm6 .hr::after {
+  content: var(--icon);
+  display: inline-block;
+  position: absolute;
+  font-size: 1em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(var(--rotate));
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--theme-color);
+}
+body-icon .markdown-rendered hr {
+  border-image-source: linear-gradient(
+    to right,
+    var(--background-primary) 0%,
+    var(--hr-color-icon-1) 30%,
+    var(--hr-color-icon-2) 46%,
+    transparent 46%,
+    transparent 54%,
+    var(--hr-color-icon-3) 54%,
+    var(--hr-color-icon-4) 70%,
+    var(--background-primary) 100%
+  );
+}

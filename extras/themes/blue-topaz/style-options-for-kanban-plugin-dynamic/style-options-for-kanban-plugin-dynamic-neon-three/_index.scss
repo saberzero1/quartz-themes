@@ -1,0 +1,104 @@
+body.style-options-for-kanban-plugin-static-little-color.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane,
+body.style-options-for-kanban-plugin-static-plain.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane {
+  border: none !important;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n) {
+  background: unset !important;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: huerotate-1 6s infinite linear;
+  filter: hue-rotate(360deg);
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n)::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 250%;
+  height: 300%;
+  background-color: var(--background-secondary-alt) !important;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: 0 0;
+  background-image: conic-gradient(var(--kanban-shadow), var(--kanban-shadow));
+  animation: rotate 2s linear infinite;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n)::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  top: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-color: var(--background-secondary-alt) !important;
+  border-radius: 10px;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n):hover {
+  box-shadow:
+    0 0 5px var(--kanban-shadow),
+    0 0 25px var(--kanban-shadow);
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n):hover::after,
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(n):hover::before {
+  transition: 0.3s;
+  background: var(--kanban-shadow);
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 2) {
+  animation: huerotate-2 6s infinite linear;
+  filter: hue-rotate(410deg);
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 3) {
+  animation: huerotate-3 6s infinite linear;
+  filter: hue-rotate(500deg);
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 4) {
+  filter: hue-rotate(540deg);
+  animation: huerotate-4 6s infinite linear;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 5) {
+  filter: hue-rotate(580deg);
+  animation: huerotate-5 6s infinite linear;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 6) {
+  filter: hue-rotate(640deg);
+  animation: huerotate-6 6s infinite linear;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three
+  .kanban-plugin__lane-wrapper:nth-child(7n + 0) {
+  filter: hue-rotate(690deg);
+  animation: huerotate-7 6s infinite linear;
+}

@@ -1,0 +1,119 @@
+body.safari-tab-style
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::before,
+body.safari-tab-style
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::after,
+body.safari-tab-style
+  .workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner::after {
+  display: none;
+}
+body.safari-tab-style
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner,
+body.safari-tab-style
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+body.safari-tab-style
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header,
+body.safari-tab-style
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  border-radius: 6px;
+  box-shadow: none;
+  height: calc(var(--header-height) * 0.7);
+  margin-left: 12px;
+  padding: 0 !important;
+  transition:
+    400ms,
+    background-color 150ms ease-in-out;
+}
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  transition: 400ms;
+}
+body.safari-tab-style
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:first-child {
+  margin-left: 0;
+}
+body.safari-tab-style
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner {
+  padding: 0 4px 0 8px;
+  transition: 400ms;
+}
+body.safari-tab-style
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner,
+body.safari-tab-style
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner-close-button,
+body.safari-tab-style
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner-icon {
+  color: var(--text-muted);
+}
+body.safari-tab-style .workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
+}
+body.safari-tab-style
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active {
+  flex-grow: 1.67;
+  max-width: 300px;
+}
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner,
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-close-button,
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--text-noraml);
+  font-weight: bold;
+}
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active:hover {
+  background-color: var(--background-modifier-border);
+}
+body.safari-tab-style
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  border: 1px solid rgba(var(--mono-rgb-0), 0.25);
+}

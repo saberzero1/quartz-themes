@@ -1,0 +1,58 @@
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--text-muted);
+}
+
+.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--interactive-accent-text);
+}
+
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--rainbow-text-color);
+}

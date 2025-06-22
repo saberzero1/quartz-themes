@@ -1,0 +1,8 @@
+.o-shark-l .markdown-reading-view h1:not(.embedded-note-title)::before,
+.o-shark-l :nth-child(1 of .cm-header-1)::before {
+  background: #70b4f9 !important;
+}
+.o-shark-l .markdown-reading-view h2:not(.embedded-note-title)::before,
+.o-shark-l :nth-child(1 of .cm-header-2)::before {
+  background: #e5989b;
+}

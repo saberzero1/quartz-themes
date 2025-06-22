@@ -1,0 +1,24 @@
+body-style-two #calendar-container .day {
+  border-radius: 0 !important;
+}
+body-style-two .day.adjacent-month {
+  background-color: var(--background-transparent-black-or-white-3) !important;
+}
+body-style-two #calendar-container tbody tr:first-child {
+  background-color: rgba(var(--table-color-rgb), 0.1) !important;
+}
+body-style-two #calendar-container tbody tr:nth-child(2) {
+  background-color: rgba(var(--table-color-rgb), 0.2) !important;
+}
+body-style-two #calendar-container tbody tr:nth-child(3) {
+  background-color: rgba(var(--table-color-rgb), 0.3) !important;
+}
+body-style-two #calendar-container tbody tr:nth-child(4) {
+  background-color: rgba(var(--table-color-rgb), 0.4) !important;
+}
+body-style-two #calendar-container tbody tr:nth-child(5) {
+  background-color: rgba(var(--table-color-rgb), 0.5) !important;
+}
+body-style-two #calendar-container tbody tr:nth-child(6) {
+  background-color: rgba(var(--table-color-rgb), 0.6) !important;
+}

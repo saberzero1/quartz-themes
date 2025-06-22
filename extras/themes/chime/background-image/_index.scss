@@ -1,10 +1,24 @@
-.background-image .workspace-ribbon.mod-left:before,
-.background-image .side-dock-actions,
-.background-image .side-dock-settings {
-  backdrop-filter: brightness(107%) blur(var(--bg-blur));
+.background-image {
+  --workspace-background: var(--custom-image);
+  --tab-container-background: transparent;
+  --ribbon-background-collapsed: transparent !important;
+  --ribbon-background: transparent !important;
+  --border-width: 0px !important;
 }
 
-.background-image .workspace-split {
-  background: transparent !important;
-  backdrop-filter: brightness(107%) blur(var(--bg-blur));
+.background-image .side-dock-actions,
+.background-image .side-dock-settings {
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.background-image .side-dock-actions {
+  margin-top: -8px;
+}
+
+.background-image .side-dock-settings {
+  margin-bottom: -11px;
+  margin-top: -4px;
+  padding-top: 505px;
+  padding-bottom: 4px;
 }

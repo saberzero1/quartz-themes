@@ -1,0 +1,61 @@
+:scope.fas-status-bar-top .app-container {
+  flex-direction: column-reverse;
+}
+
+:scope.fas-status-bar-top .horizontal-main-container {
+  position: relative;
+}
+
+:scope.fas-status-bar-top .status-bar {
+  position: initial;
+  background: none;
+}
+
+:scope.fas-status-bar-top.is-hidden-frameless:not(.is-fullscreen):not(
+    .mod-macos
+  )
+  .status-bar {
+  margin-right: calc(
+    var(--frame-right-space) + var(--size-4-2) + var(--workspace-top-margin) +
+      var(--header-height) - 1px
+  );
+}
+
+:scope.fas-status-bar-top.is-hidden-frameless:not(.is-fullscreen):not(
+    .mod-macos
+  )
+  .status-bar::before {
+  -webkit-app-region: drag;
+  content: '';
+  height: 100%;
+  flex-grow: 1;
+}
+
+:scope.fas-status-bar-top.is-hidden-frameless:not(.is-fullscreen)
+  .mod-root
+  .workspace-tab-header-container,
+:scope.fas-status-bar-top:not(.is-frameless)
+  .mod-root
+  .workspace-tab-header-container {
+  border-top: 0 !important;
+  box-sizing: border-box;
+}
+
+:scope.fas-status-bar-top.is-hidden-frameless:not(.is-fullscreen)
+  .titlebar-button-container.mod-right::before {
+  left: calc(-1 * var(--header-height) + 1px) !important;
+  width: calc(var(--header-height) - 1px) !important;
+  height: calc(var(--header-height) - 1px) !important;
+}
+
+:scope.fas-status-bar-top.mod-macos.is-hidden-frameless
+  .sidebar-toggle-button.mod-right {
+  position: static;
+}
+
+:scope.fas-status-bar-top.mod-macos.is-hidden-frameless
+  .workspace
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  padding-right: 0;
+}

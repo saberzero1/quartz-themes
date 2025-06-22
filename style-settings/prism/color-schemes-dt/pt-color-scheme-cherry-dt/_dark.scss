@@ -1,0 +1,47 @@
+.pt-color-scheme-cherry-dt {
+  --color-grey-base-hsl: 0, 0%, 17%;
+  --color-red-base-hsl: 2, 50%, 20%;
+  --color-orange-base-hsl: 26, 59%, 16%;
+  --color-yellow-base-hsl: 43, 64%, 13%;
+  --color-green-base-hsl: 124, 48%, 14%;
+  --color-mint-base-hsl: 165, 75%, 11%;
+  --color-cyan-base-hsl: 196, 57%, 15%;
+  --color-blue-base-hsl: 225, 47%, 21%;
+  --color-purple-base-hsl: 272, 45%, 22%;
+  --color-pink-base-hsl: 326, 50%, 20%;
+  --color-grey-tint-hsl: 0, 0%, 41%;
+  --color-red-tint-hsl: 4, 46%, 47%;
+  --color-orange-tint-hsl: 26, 49%, 38%;
+  --color-yellow-tint-hsl: 43, 53%, 32%;
+  --color-green-tint-hsl: 123, 39%, 33%;
+  --color-mint-tint-hsl: 164, 61%, 29%;
+  --color-cyan-tint-hsl: 196, 48%, 36%;
+  --color-blue-tint-hsl: 225, 42%, 50%;
+  --color-purple-tint-hsl: 272, 42%, 51%;
+  --color-pink-tint-hsl: 326, 44%, 46%;
+  --color-grey-text-hsl: 0, 0%, 67%;
+  --color-red-text-hsl: 4, 70%, 74%;
+  --color-orange-text-hsl: 26, 80%, 63%;
+  --color-yellow-text-hsl: 43, 57%, 54%;
+  --color-green-text-hsl: 123, 45%, 55%;
+  --color-mint-text-hsl: 165, 56%, 48%;
+  --color-cyan-text-hsl: 195, 64%, 59%;
+  --color-blue-text-hsl: 226, 56%, 74%;
+  --color-purple-text-hsl: 268, 48%, 75%;
+  --color-pink-text-hsl: 330, 60%, 74%;
+  --text-normal-hsl: 2, 48%, 93%;
+  --text-muted-hsl: 2, 48%, 88%;
+  --text-faint-hsl: 2, 48%, 83%;
+  --background-primary-hsl: 2, 48%, 19%;
+  --background-primary-alt-hsl: 2, 48%, 29%;
+  --background-secondary-hsl: 2, 48%, 12%;
+  --background-secondary-blur-hsl: 2, 48%, 13%;
+  --background-secondary-alt-hsl: 2, 48%, 8%;
+  --shadow-color-hsl: 2, 48%, 7%;
+  --shadow-s: hsla(var(--shadow-color-hsl), 10%) 0 1px 2px 0;
+  --shadow-l:
+    hsla(var(--shadow-color-hsl), 10%) 0 1px 2px,
+    hsla(var(--shadow-color-hsl), 10%) 0 2px 4px,
+    hsla(var(--shadow-color-hsl), 10%) 0 4px 8px,
+    hsla(var(--shadow-color-hsl), 10%) 0 6px 12px;
+}

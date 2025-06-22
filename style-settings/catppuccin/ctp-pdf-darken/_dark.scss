@@ -1,0 +1,5 @@
+.pdfViewer .canvasWrapper,
+.pdf-thumbnail-view .thumbnailImage {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}

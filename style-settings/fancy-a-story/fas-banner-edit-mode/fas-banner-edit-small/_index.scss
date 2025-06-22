@@ -1,0 +1,15 @@
+.fas-banner-edit-small
+  .markdown-source-view.banner
+  .cm-contentContainer
+  > div
+  > .image-embed:nth-child(1 of div.image-embed) {
+  --image-shadow-offset: 0;
+}
+.fas-banner-edit-small
+  .markdown-source-view.banner
+  .cm-contentContainer
+  > div
+  > .image-embed:nth-child(1 of div.image-embed)
+  img {
+  max-width: 100px;
+}

@@ -1,0 +1,11 @@
+.is-live-preview .cm-widgetBuffer + .cm-header {
+  animation: outdent 275ms ease-out;
+  display: inline-block;
+}
+.is-live-preview .cm-widgetBuffer + .cm-header.cm-formatting {
+  animation: opac 275ms ease-in;
+}
+.is-live-preview .cm-active .cm-header + .cm-header {
+  animation: indent 275ms ease-out;
+  display: inline-block;
+}

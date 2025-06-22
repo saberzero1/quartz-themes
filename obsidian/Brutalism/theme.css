@@ -63,7 +63,7 @@ body {
   font-size: calc(26px + (72 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1;
   font-family:
-    "Archivo", "Archivo SemiBold", system-ui, "Segoe UI", Roboto, Helvetica,
+    'Archivo', 'Archivo SemiBold', system-ui, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
   background: -webkit-radial-gradient(#bb9af7, #f7768e);
   -webkit-background-clip: text;

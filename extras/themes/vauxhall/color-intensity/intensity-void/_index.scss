@@ -1,0 +1,8 @@
+&.intensity-void {
+  --lum-bg: 100%;
+}
+
+.intensity-void {
+  --lum: 0%;
+  --background-modifier-border: var(--color-base-40);
+}

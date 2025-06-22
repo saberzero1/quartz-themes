@@ -1,0 +1,73 @@
+body.color-scheme-options-simplicity-topaz.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  border-radius: 20px;
+  box-shadow: var(--window-shadow2);
+}
+
+body.color-scheme-options-simplicity-topaz.background-image-settings-command-palette-switch
+  .modal-container
+  .community-plugin-search {
+  border-bottom-left-radius: 20px;
+}
+
+body.color-scheme-options-simplicity-topaz.background-image-settings-command-palette-switch
+  .modal-container
+  .community-plugin-search {
+  border-bottom-left-radius: 20px;
+}
+
+body.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  background-size: cover;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+body.background-image-settings-command-palette-same-as-workplace.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  background-image: var(--theme-background);
+  filter: blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))
+    saturate(var(--saturate-4-bg-cp));
+  opacity: var(--opacity-cp);
+  z-index: -1;
+}
+
+body.background-image-settings-command-palette-same-as-workplace.background-settings-workplace-waves2-light
+  .modal-container
+  .prompt::before,
+body.background-image-settings-command-palette-same-as-workplace.background-settings-workplace-waves2
+  .modal-container
+  .prompt::before {
+  top: 60%;
+}
+
+body.background-image-settings-command-palette-same-as-workplace.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt
+  input.prompt-input,
+body.background-image-settings-command-palette-switch:not(
+    .background-image-settings-command-palette-same-as-workplace
+  )
+  .modal-container
+  .prompt
+  input.prompt-input {
+  background-color: transparent;
+}
+
+body.background-image-settings-command-palette-custom.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  background-size: auto;
+  filter: blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))
+    saturate(var(--saturate-4-bg-cp));
+  opacity: var(--opacity-cp);
+  z-index: -1;
+}

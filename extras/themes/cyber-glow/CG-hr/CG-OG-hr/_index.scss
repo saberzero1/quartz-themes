@@ -1,0 +1,34 @@
+.CG-OG-hr .markdown-preview-view hr::after {
+  content: '₪';
+  display: inline-block;
+  font-size: 1.65rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 5% 50%;
+  padding: 0.5rem;
+  color: white;
+  text-shadow:
+    0 0 5px #ffaa00,
+    0 0 10px #ffaa00,
+    0 0 20px #ffaa00,
+    0 0 40px #ffaa00,
+    0 0 80px #ffaa00;
+}
+
+.CG-OG-hr .hr.cm-line hr::after {
+  content: '₪';
+  display: inline-block;
+  font-size: 1.65rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform-origin: 5% 50%;
+  margin-top: -0.2rem;
+  color: white;
+  text-shadow:
+    0 0 5px #ffaa00,
+    0 0 10px #ffaa00,
+    0 0 20px #ffaa00,
+    0 0 40px #ffaa00,
+    0 0 80px #ffaa00;
+}

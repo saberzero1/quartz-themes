@@ -1,0 +1,20 @@
+.vileplume.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: var(--dark3);
+}
+
+bod.theme-dark {
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark0);
+  --background-secondary: var(--dark1);
+  --background-secondary-alt: var(--dark2);
+  --text-normal: var(--light2);
+  --text-faint: var(--light0);
+  --text-muted: var(--light1);
+  --text-link: var(--frost0);
+  --opacity-translucency: 0.9;
+  --title-gradient-bottom: var(--text-title-h1);
+}
+
+.vileplume.theme-dark .graph-view.color-fill {
+  color: white;
+}

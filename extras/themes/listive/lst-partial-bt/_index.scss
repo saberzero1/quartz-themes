@@ -1,0 +1,179 @@
+.lst-partial-bt {
+  --indent-dash-width: var(--list-indent);
+  /* 1.45rem / 1.20rem */
+  --indent-dash-top: 0.82em;
+  /* 0.75rem / 0.70rem */
+  /* --indent-dash-left: 0.82em; */
+  --indent-dash-left: calc(var(--list-indent) / 1.95);
+  --indent-dash-spacing2: 0.9em;
+  /* 0.50rem / 0.55rem */
+  --indent-dash-spacing3: 0.9em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing4: 0.9em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing5: 0.9em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing6: 0.92em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing7: 0.75em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing8: 0.75em;
+  /* 0.55rem / 0.52rem */
+  --indent-dash-spacing9: 0.7em;
+  /* 0.55rem / 0.52rem */
+  /* this can be deleted later, it's for Indentation Guide community plugin */
+  .ig-lists
+    .HyperMD-list-line.ig-indent-group
+    .ig-tab.ig-indent-group-level::before {
+    width: 2px !important;
+  }
+  .cm-active
+    .cm-formatting-list-ul
+    .list-bullet.list-bullet.list-bullet::after {
+    contain: strict;
+    width: var(--list-bullet-size);
+    height: var(--list-bullet-size);
+    outline: 0;
+    background-color: var(--indentation-guide-active-color);
+  }
+  .cm-active .cm-hmd-list-indent::before {
+    contain: strict;
+    content: '';
+    position: absolute;
+    top: var(
+      --indent-dash-top
+    ); /* subtract half of the height of the pseudo-element */
+    width: var(--indent-dash-width);
+    height: 2px;
+    background-color: var(--indentation-guide-active-color);
+  }
+  /* set distance from top for headers in list */
+  .cm-hmd-list-indent:has(~ .cm-header-2) {
+    --indent-dash-top: 1.4rem;
+  }
+  .cm-hmd-list-indent:has(~ .cm-header-3) {
+    --indent-dash-top: 1rem;
+  }
+  /* paint the horizontal arm, support up to 9 indent levels */
+  .HyperMD-list-line-2 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(0 * var(--indent-dash-left) + var(--indent-dash-spacing2));
+  }
+  .HyperMD-list-line-3 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(2 * var(--indent-dash-left) + var(--indent-dash-spacing3));
+  }
+  .HyperMD-list-line-4 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(4 * var(--indent-dash-left) + var(--indent-dash-spacing4));
+  }
+  .HyperMD-list-line-5 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(6 * var(--indent-dash-left) + var(--indent-dash-spacing5));
+  }
+  .HyperMD-list-line-6 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(8 * var(--indent-dash-left) + var(--indent-dash-spacing6));
+  }
+  .HyperMD-list-line-7 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(10 * var(--indent-dash-left) + var(--indent-dash-spacing7));
+  }
+  .HyperMD-list-line-8 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(12 * var(--indent-dash-left) + var(--indent-dash-spacing8));
+  }
+  .HyperMD-list-line-9 .cm-hmd-list-indent::before {
+    contain: strict;
+    left: calc(14 * var(--indent-dash-left) + var(--indent-dash-spacing9));
+  }
+  /* paint the immediate parent vertical arm */
+  :is(
+      .HyperMD-list-line-2,
+      .HyperMD-list-line-3,
+      .HyperMD-list-line-4,
+      .HyperMD-list-line-5,
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-2.cm-active
+    )
+    .cm-indent:nth-child(1 of .cm-indent)::before,
+  :is(
+      .HyperMD-list-line-3,
+      .HyperMD-list-line-4,
+      .HyperMD-list-line-5,
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-3.cm-active
+    )
+    .cm-indent:nth-child(2 of .cm-indent)::before,
+  :is(
+      .HyperMD-list-line-4,
+      .HyperMD-list-line-5,
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-4.cm-active
+    )
+    .cm-indent:nth-child(3 of .cm-indent)::before,
+  :is(
+      .HyperMD-list-line-5,
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-5.cm-active
+    )
+    .cm-indent:nth-child(4 of .cm-indent)::before,
+  :is(
+      .HyperMD-list-line-6,
+      .HyperMD-list-line-7,
+      .HyperMD-list-line-8,
+      .HyperMD-list-line-9
+    ):not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(
+      ~ .HyperMD-list-line-6.cm-active
+    )
+    .cm-indent:nth-child(5 of .cm-indent)::before,
+  :is(.HyperMD-list-line-7, .HyperMD-list-line-8, .HyperMD-list-line-9):not(
+      :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line.cm-active)
+    ):has(~ .HyperMD-list-line-7.cm-active)
+    .cm-indent:nth-child(6 of .cm-indent)::before,
+  :is(.HyperMD-list-line-8, .HyperMD-list-line-9):not(
+      :has(~ .HyperMD-list-line-7 ~ .HyperMD-list-line.cm-active)
+    ):has(~ .HyperMD-list-line-8.cm-active)
+    .cm-indent:nth-child(7 of .cm-indent)::before,
+  :is(.HyperMD-list-line-9):not(
+      :has(~ .HyperMD-list-line-8 ~ .HyperMD-list-line.cm-active)
+    ):has(~ .HyperMD-list-line-9.cm-active)
+    .cm-indent:nth-child(8 of .cm-indent)::before {
+    contain: strict;
+    --indentation-guide-color: var(--background-modifier-border-active);
+    border-width: 2px;
+  }
+  .cm-active.HyperMD-list-line {
+    --last-ig-height: 0.9em;
+  }
+  .cm-active.HyperMD-list-line:has(.cm-header-2) {
+    --last-ig-height: calc(0.95em + var(--h2-top-spacing-edit));
+  }
+  .cm-active.HyperMD-list-line:has(.cm-header-3) {
+    --last-ig-height: calc(0.85em + var(--h3-top-spacing-edit));
+  }
+  .HyperMD-list-line.cm-active
+    > .cm-hmd-list-indent
+    > .cm-indent:last-child::before {
+    contain: strict;
+    --indentation-guide-color: var(--background-modifier-border-active);
+    border-width: 2px;
+    height: var(--last-ig-height);
+  }
+}

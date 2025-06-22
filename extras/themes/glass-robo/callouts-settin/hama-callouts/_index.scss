@@ -1,0 +1,51 @@
+.hama-callouts .callout {
+  border-radius: 0;
+  padding: 0;
+  border: 1px solid rgba(var(--callout-color), 0.25);
+}
+
+.hama-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title {
+  background: linear-gradient(
+    to left,
+    rgba(var(--callout-color), 0.1),
+    transparent
+  );
+}
+
+.hama-callouts .callout .callout-title {
+  background: linear-gradient(
+    to right,
+    rgba(var(--callout-color), 0.1),
+    transparent
+  );
+  padding: 5px 8px;
+}
+
+.hama-callouts .callout .callout-content {
+  border-top: 1px dashed rgba(var(--callout-color), 0.25);
+  padding: 8px;
+}
+
+.hama-callouts.callout_center_settings .callout .callout-title {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    rgba(var(--callout-color), 0.1) 50%,
+    transparent 100%
+  );
+}
+
+.hama-callouts.callout_center_settings
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title {
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    rgba(var(--callout-color), 0.1) 50%,
+    transparent 100%
+  );
+}

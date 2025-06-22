@@ -1,0 +1,19 @@
+.callout-block .callout {
+  --callout-padding: 0;
+  --callout-content-padding: 0 10px;
+  --callout-title-padding: 6px 10px;
+  --callout-title-background: var(--callout-color);
+  --callout-border-opacity: 0.5;
+}
+
+.callout-block .callout .callout-title {
+  background-color: rgba(
+    var(--callout-title-background, var(--callout-color)),
+    0.2
+  );
+}
+
+.callout-block .callout.is-collapsible:not(.is-collapsed) > .callout-content {
+  border-bottom: 1px solid
+    rgba(var(--callout-color), var(--callout-border-opacity));
+}

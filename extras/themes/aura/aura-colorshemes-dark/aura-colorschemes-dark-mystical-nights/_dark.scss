@@ -1,0 +1,29 @@
+.aura-colorschemes-dark-mystical-nights {
+  --cpt-crust: 9, 0, 15;
+  --cpt-crust-alt: 12, 3, 18;
+  --cpt-mantle: 12, 3, 19;
+  --cpt-mantle-alt: 17, 7, 25;
+  --cpt-core: 17, 7, 25;
+  --cpt-core-alt: 21, 10, 28;
+  --cpt-text: 226, 122, 255;
+  --cpt-border: 44, 25, 49;
+  --background-modifier-border-focus: rgba(var(--cpt-crust), 0.5);
+  --cpt-aura: var(--cpt-pink);
+  --cpt-red: 255, 85, 85;
+  --cpt-orange: 255, 184, 108;
+  --cpt-yellow: 217, 163, 31;
+  --cpt-green: 80, 250, 123;
+  --cpt-blue: 125, 164, 247;
+  --cpt-cyan: 148, 235, 255;
+  --cpt-pink: 255, 121, 198;
+  --cpt-purple: 189, 147, 249;
+}
+
+.aura-heading-color.aura-colorschemes-dark-mystical-nights {
+  --h1-color: rgb(var(--cpt-pink));
+  --h2-color: rgb(var(--cpt-purple));
+  --h3-color: rgb(var(--cpt-blue));
+  --h4-color: rgb(var(--cpt-orange));
+  --h5-color: rgb(var(--cpt-red));
+  --h6-color: rgb(var(--cpt-green));
+}

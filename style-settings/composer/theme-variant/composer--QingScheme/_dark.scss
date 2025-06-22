@@ -1,0 +1,26 @@
+.composer--QingScheme.theme-dark {
+  --accent-h: 198;
+  --accent-s: 28%;
+  --accent-l: 45%;
+  --background-primary: hsl(198, 25%, 18%);
+  --background-primary-alt: hsl(198, 22%, 21%);
+  --background-secondary: hsl(198, 20%, 24%);
+  --background-secondary-alt: hsl(198, 18%, 27%);
+  --background-gradient: linear-gradient(
+    165deg,
+    hsl(198, 28%, 16%) 0%,
+    hsl(198, 24%, 20%) 50%,
+    hsl(198, 20%, 23%) 100%
+  );
+  /* quote */
+  --blockquote-border-color: hsl(200, 20%, 35%);
+  --blockquote-background-color: hsla(200, 25%, 18%, 0.8);
+  --blockquote-color: hsl(200, 32%, 71%);
+  /* codeblock */
+  --codeblock-background: hsla(200, 20%, 22%, 0.9);
+  --codeblock-caret-color: hsl(200, 30%, 65%);
+  /* text-highlight */
+  --text-highlight-background: hsla(200, 38%, 74%, 0.4);
+  --text-highlight-border-color: hsl(199, 55%, 88%);
+  --text-highlight-color: hsl(200, 13%, 91%);
+}

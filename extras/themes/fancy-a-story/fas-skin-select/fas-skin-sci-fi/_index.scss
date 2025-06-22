@@ -1,0 +1,559 @@
+.fas-skin-sci-fi {
+  --metadata-border-color: rgb(var(--sci-fi-color-rgb));
+  --font-weight: var(--font-normal);
+  --callout-border-opacity: 1;
+  --hr-color: rgb(var(--sci-fi-color-rgb));
+}
+
+.fas-skin-sci-fi :is(.markdown-source-view, .markdown-preview-view) {
+  --inline-title-font: 'Orbitron', Arial, serif;
+  --h1-font: 'Orbitron', Arial, serif;
+  --h2-font: 'Orbitron', Arial, serif;
+  --h2-font: 'Orbitron', Arial, serif;
+  --h4-font: 'Orbitron', Arial, serif;
+  --h5-font: 'Orbitron', Arial, serif;
+  --h6-font: 'Orbitron', Arial, serif;
+  --font-text: 'Chakra Petch', ProFont, Arial, serif;
+  font-family: var(--font-text);
+}
+
+.fas-skin-sci-fi
+  .markdown-preview-sizer:not(.markdown-embed .markdown-preview-sizer),
+.fas-skin-sci-fi .markdown-source-view {
+  padding-inline: 3cqh;
+}
+
+.fas-skin-sci-fi .markdown-reading-view::before,
+.fas-skin-sci-fi .markdown-source-view::before {
+  content: '';
+  position: fixed;
+  top: var(--header-height);
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(var(--sci-fi-color-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-frame-left), var(--sci-fi-frame-right);
+  -webkit-mask-size: auto 100%;
+  -webkit-mask-position:
+    left center,
+    right center;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.fas-skin-sci-fi.is-mobile .markdown-reading-view::before,
+.fas-skin-sci-fi.is-mobile .markdown-source-view::before {
+  top: var(--view-header-height);
+}
+
+.fas-skin-sci-fi.is-mobile .markdown-reading-view::before {
+  right: var(--scrollbar-width, 12px);
+}
+
+.fas-skin-sci-fi .markdown-source-view::before {
+  right: 0;
+}
+
+.fas-skin-sci-fi .cm-scroller,
+.fas-skin-sci-fi .markdown-preview-view {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(var(--sci-fi-color-rgb), 0.1) 1px,
+    transparent 0
+  );
+  background-size: 40px 40px;
+}
+
+.fas-skin-sci-fi.fas-h1-display
+  .markdown-preview-view
+  h1:not(.callout h1, ul h1, ol h1),
+.fas-skin-sci-fi
+  .markdown-preview-view.h1-display
+  h1:not(.callout h1, ul h1, ol h1) {
+  --h1-color: inherit;
+  --h1-background: transparent;
+  --h1-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h1-display
+  .markdown-preview-view
+  h1:not(.callout h1, ul h1, ol h1)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h1-display
+  h1:not(.callout h1, ul h1, ol h1)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi.fas-h2-display
+  .markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2),
+.fas-skin-sci-fi
+  .markdown-preview-view.h2-display
+  h2:not(.callout h2, ul h2, ol h2) {
+  --h2-color: inherit;
+  --h2-background: transparent;
+  --h2-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h2-display
+  .markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h2-display
+  h2:not(.callout h2, ul h2, ol h2)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi.fas-h3-display
+  .markdown-preview-view
+  h3:not(.callout h3, ul h3, ol h3),
+.fas-skin-sci-fi
+  .markdown-preview-view.h3-display
+  h3:not(.callout h3, ul h3, ol h3) {
+  --h3-color: inherit;
+  --h3-background: transparent;
+  --h3-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h3-display
+  .markdown-preview-view
+  h3:not(.callout h3, ul h3, ol h3)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h3-display
+  h3:not(.callout h3, ul h3, ol h3)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi.fas-h4-display
+  .markdown-preview-view
+  h4:not(.callout h4, ul h4, ol h4),
+.fas-skin-sci-fi
+  .markdown-preview-view.h4-display
+  h4:not(.callout h4, ul h4, ol h4) {
+  --h4-color: inherit;
+  --h4-background: transparent;
+  --h4-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h4-display
+  .markdown-preview-view
+  h4:not(.callout h4, ul h4, ol h4)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h4-display
+  h4:not(.callout h4, ul h4, ol h4)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi.fas-h5-display
+  .markdown-preview-view
+  h5:not(.callout h5, ul h5, ol h5),
+.fas-skin-sci-fi
+  .markdown-preview-view.h5-display
+  h5:not(.callout h5, ul h5, ol h5) {
+  --h5-color: inherit;
+  --h5-background: transparent;
+  --h5-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h5-display
+  .markdown-preview-view
+  h5:not(.callout h5, ul h5, ol h5)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h5-display
+  h5:not(.callout h5, ul h5, ol h5)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi.fas-h6-display
+  .markdown-preview-view
+  h6:not(.callout h6, ul h6, ol h6),
+.fas-skin-sci-fi
+  .markdown-preview-view.h6-display
+  h6:not(.callout h6, ul h6, ol h6) {
+  --h6-color: inherit;
+  --h6-background: transparent;
+  --h6-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h6-display
+  .markdown-preview-view
+  h6:not(.callout h6, ul h6, ol h6)::before,
+.fas-skin-sci-fi
+  .markdown-preview-view.h6-display
+  h6:not(.callout h6, ul h6, ol h6)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='note'],
+    [data-callout='abstract'],
+    [data-callout='summary'],
+    [data-callout='tldr'],
+    [data-callout='info'],
+    [data-callout='todo'],
+    [data-callout='tip'],
+    [data-callout='hint'],
+    [data-callout='important'],
+    [data-callout='success'],
+    [data-callout='check'],
+    [data-callout='done'],
+    [data-callout='question'],
+    [data-callout='help'],
+    [data-callout='faq'],
+    [data-callout='warning'],
+    [data-callout='caution'],
+    [data-callout='attention'],
+    [data-callout='failure'],
+    [data-callout='fail'],
+    [data-callout='missing'],
+    [data-callout='danger'],
+    [data-callout='error'],
+    [data-callout='bug'],
+    [data-callout='example'],
+    [data-callout='quote'],
+    [data-callout='cite']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout),
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='cards-deck'],
+    [data-callout='email'],
+    [data-callout='profile'],
+    [data-callout='autopsy'],
+    [data-callout='screen'],
+    [data-callout='profile']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout) {
+  clip-path: polygon(
+    20px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px
+  );
+  border: none;
+  background-image: linear-gradient(
+    135deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='note'],
+    [data-callout='abstract'],
+    [data-callout='summary'],
+    [data-callout='tldr'],
+    [data-callout='info'],
+    [data-callout='todo'],
+    [data-callout='tip'],
+    [data-callout='hint'],
+    [data-callout='important'],
+    [data-callout='success'],
+    [data-callout='check'],
+    [data-callout='done'],
+    [data-callout='question'],
+    [data-callout='help'],
+    [data-callout='faq'],
+    [data-callout='warning'],
+    [data-callout='caution'],
+    [data-callout='attention'],
+    [data-callout='failure'],
+    [data-callout='fail'],
+    [data-callout='missing'],
+    [data-callout='danger'],
+    [data-callout='error'],
+    [data-callout='bug'],
+    [data-callout='example'],
+    [data-callout='quote'],
+    [data-callout='cite']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+  .callout-title,
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='cards-deck'],
+    [data-callout='email'],
+    [data-callout='profile'],
+    [data-callout='autopsy'],
+    [data-callout='screen'],
+    [data-callout='profile']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+  .callout-title {
+  background: none;
+}
+
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='note'],
+    [data-callout='abstract'],
+    [data-callout='summary'],
+    [data-callout='tldr'],
+    [data-callout='info'],
+    [data-callout='todo'],
+    [data-callout='tip'],
+    [data-callout='hint'],
+    [data-callout='important'],
+    [data-callout='success'],
+    [data-callout='check'],
+    [data-callout='done'],
+    [data-callout='question'],
+    [data-callout='help'],
+    [data-callout='faq'],
+    [data-callout='warning'],
+    [data-callout='caution'],
+    [data-callout='attention'],
+    [data-callout='failure'],
+    [data-callout='fail'],
+    [data-callout='missing'],
+    [data-callout='danger'],
+    [data-callout='error'],
+    [data-callout='bug'],
+    [data-callout='example'],
+    [data-callout='quote'],
+    [data-callout='cite']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+  .callout-content,
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='cards-deck'],
+    [data-callout='email'],
+    [data-callout='profile'],
+    [data-callout='autopsy'],
+    [data-callout='screen'],
+    [data-callout='profile']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+  .callout-content {
+  border-top-style: solid;
+}
+
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='note'],
+    [data-callout='abstract'],
+    [data-callout='summary'],
+    [data-callout='tldr'],
+    [data-callout='info'],
+    [data-callout='todo'],
+    [data-callout='tip'],
+    [data-callout='hint'],
+    [data-callout='important'],
+    [data-callout='success'],
+    [data-callout='check'],
+    [data-callout='done'],
+    [data-callout='question'],
+    [data-callout='help'],
+    [data-callout='faq'],
+    [data-callout='warning'],
+    [data-callout='caution'],
+    [data-callout='attention'],
+    [data-callout='failure'],
+    [data-callout='fail'],
+    [data-callout='missing'],
+    [data-callout='danger'],
+    [data-callout='error'],
+    [data-callout='bug'],
+    [data-callout='example'],
+    [data-callout='quote'],
+    [data-callout='cite']
+  ):not(
+    :is([data-callout='email'], [data-callout='timeline']) .callout
+  )::before,
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='cards-deck'],
+    [data-callout='email'],
+    [data-callout='profile'],
+    [data-callout='autopsy'],
+    [data-callout='screen'],
+    [data-callout='profile']
+  ):not(
+    :is([data-callout='email'], [data-callout='timeline']) .callout
+  )::before {
+  content: '';
+  position: absolute;
+  background: rgba(var(--callout-color), var(--callout-border-opacity));
+  inset: 0;
+  clip-path: polygon(
+    0 20px,
+    20px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px,
+    var(--callout-border-width) calc(20px + var(--callout-border-width) * 0.5),
+    var(--callout-border-width) calc(100% - var(--callout-border-width)),
+    calc(100% - 20px - var(--callout-border-width) * 0.5)
+      calc(100% - var(--callout-border-width)),
+    calc(100% - var(--callout-border-width))
+      calc(100% - 20px - var(--callout-border-width) * 0.5),
+    calc(100% - var(--callout-border-width)) var(--callout-border-width),
+    calc(20px + var(--callout-border-width) * 0.5) var(--callout-border-width),
+    var(--callout-border-width) calc(20px + var(--callout-border-width) * 0.5)
+  );
+}
+
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='note'],
+    [data-callout='abstract'],
+    [data-callout='summary'],
+    [data-callout='tldr'],
+    [data-callout='info'],
+    [data-callout='todo'],
+    [data-callout='tip'],
+    [data-callout='hint'],
+    [data-callout='important'],
+    [data-callout='success'],
+    [data-callout='check'],
+    [data-callout='done'],
+    [data-callout='question'],
+    [data-callout='help'],
+    [data-callout='faq'],
+    [data-callout='warning'],
+    [data-callout='caution'],
+    [data-callout='attention'],
+    [data-callout='failure'],
+    [data-callout='fail'],
+    [data-callout='missing'],
+    [data-callout='danger'],
+    [data-callout='error'],
+    [data-callout='bug'],
+    [data-callout='example'],
+    [data-callout='quote'],
+    [data-callout='cite']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout):is(
+    [data-callout-metadata~='accent']
+  )::before,
+.fas-skin-sci-fi
+  .callout:is(
+    [data-callout='cards-deck'],
+    [data-callout='email'],
+    [data-callout='profile'],
+    [data-callout='autopsy'],
+    [data-callout='screen'],
+    [data-callout='profile']
+  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout):is(
+    [data-callout-metadata~='accent']
+  )::before {
+  background: rgb(from var(--color-accent) r g b/var(--callout-border-opacity));
+}
+
+.fas-skin-sci-fi :is(.markdown-preview-view, .markdown-source-view) hr {
+  width: 100%;
+  height: 20px;
+  border: none;
+  background-color: var(--hr-color);
+  -webkit-mask-image: var(--sci-fi-hr);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+}

@@ -92,7 +92,7 @@
     Apple Color Emoji, Segoe UI Emoji;
 
   --editor-font:
-    "JetBrainsMono Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+    'JetBrainsMono Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular,
     SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
@@ -104,10 +104,10 @@
   font-family: var(--default-font);
 }
 
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }
@@ -469,9 +469,9 @@ input.task-list-item-checkbox:checked {
   fill: var(--blue) !important;
 }
 
-.setting-item-control input[type="text"] {
+.setting-item-control input[type='text'] {
   color: var(--text-normal);
 }
-.setting-item-control input[type="text"]::placeholder {
+.setting-item-control input[type='text']::placeholder {
   color: var(--dark3);
 }

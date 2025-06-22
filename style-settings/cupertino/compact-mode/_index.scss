@@ -1,0 +1,12 @@
+body {
+  --nav-item-padding: 6px 8px 6px 24px;
+}
+bod.is-mobile {
+  --nav-item-padding: 12px 16px;
+}
+bod.is-mobile .nav-files-container .tree-item-icon.collapse-icon {
+  right: 16px;
+}
+bod.is-mobile .suggestion-item {
+  padding: 8px 16px !important;
+}

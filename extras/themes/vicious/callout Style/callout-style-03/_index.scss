@@ -1,0 +1,19 @@
+.callout-style-03 .callout {
+  background: var(--metadata-label-text-color);
+  color: var(--background-primary);
+}
+
+.callout-style-03 .callout-content {
+  background: rgb(var(--metadata-label-text-color));
+  color: var(--background-primary);
+}
+
+.callout-style-03 .callout-icon .svg-icon,
+.callout-style-03 .callout-title-inner {
+  color: var(--background-primary);
+}
+
+.callout-style-03 .callout-content {
+  border-top: 1px solid var(--background-primary);
+  padding: 8px 16px !important;
+}

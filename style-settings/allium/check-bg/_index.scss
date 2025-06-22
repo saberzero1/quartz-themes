@@ -1,0 +1,152 @@
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='X'],
+:is(ul, ol) > li[data-task='X'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='>'],
+:is(ul, ol) > li[data-task='>'].task-list-item.is-checked {
+  background: rgba(var(--chbx-h), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='<'],
+:is(ul, ol) > li[data-task='<'].task-list-item.is-checked {
+  background: rgba(var(--chbx-h), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='D'],
+:is(ul, ol) > li[data-task='D'].task-list-item.is-checked {
+  background: rgba(var(--chbx-h), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='-'],
+:is(ul, ol) > li[data-task='-'].task-list-item.is-checked {
+  background: rgba(var(--chbx-d), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='?'],
+:is(ul, ol) > li[data-task='?'].task-list-item.is-checked {
+  background: rgba(var(--chbx-q), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='!'],
+:is(ul, ol) > li[data-task='!'].task-list-item.is-checked {
+  background: rgba(var(--chbx-i), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='+'],
+:is(ul, ol) > li[data-task='+'].task-list-item.is-checked {
+  background: rgba(var(--chbx-a), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='/'],
+:is(ul, ol) > li[data-task='/'].task-list-item.is-checked {
+  background: linear-gradient(
+    to left,
+    var(--accent, var(--interactive-accent)) 0%,
+    transparent 1%
+  );
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='R'],
+:is(ul, ol) > li[data-task='R'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='i'],
+:is(ul, ol) > li[data-task='i'].task-list-item.is-checked {
+  background: rgba(var(--chbx-id), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='B'],
+:is(ul, ol) > li[data-task='B'].task-list-item.is-checked {
+  background: rgba(var(--chbx-B), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='P'],
+:is(ul, ol) > li[data-task='P'].task-list-item.is-checked {
+  background: rgba(var(--chbx-P), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='C'],
+:is(ul, ol) > li[data-task='C'].task-list-item.is-checked {
+  background: rgba(var(--chbx-C), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='I'],
+:is(ul, ol) > li[data-task='I'].task-list-item.is-checked {
+  background: rgba(var(--chbx-I), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='Q'],
+:is(ul, ol) > li[data-task='Q'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='N'],
+:is(ul, ol) > li[data-task='N'].task-list-item.is-checked {
+  background: rgba(var(--chbx-N), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='b'],
+:is(ul, ol) > li[data-task='b'].task-list-item.is-checked {
+  background: rgba(var(--chbx-b), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='p'],
+:is(ul, ol) > li[data-task='p'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='E'],
+:is(ul, ol) > li[data-task='E'].task-list-item.is-checked {
+  background: rgba(var(--chbx-I), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='L'],
+:is(ul, ol) > li[data-task='L'].task-list-item.is-checked {
+  background: rgba(var(--chbx-N), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='A'],
+:is(ul, ol) > li[data-task='A'].task-list-item.is-checked {
+  background: rgba(var(--chbx-P), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='r'],
+:is(ul, ol) > li[data-task='r'].task-list-item.is-checked {
+  background: rgba(var(--chbx-r), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='c'],
+:is(ul, ol) > li[data-task='c'].task-list-item.is-checked {
+  background: rgba(var(--chbx-c), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='o'],
+:is(ul, ol) > li[data-task='o'].task-list-item.is-checked {
+  background: rgba(var(--chbx-b), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='d'],
+:is(ul, ol) > li[data-task='d'].task-list-item.is-checked {
+  background: rgba(var(--chbx-I), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='T'],
+:is(ul, ol) > li[data-task='T'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='t'],
+:is(ul, ol) > li[data-task='t'].task-list-item.is-checked {
+  background: rgba(var(--chbx-R), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='O'],
+:is(ul, ol) > li[data-task='O'].task-list-item.is-checked {
+  background: hsla(var(--interactive-accent-hsl), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='F'],
+:is(ul, ol) > li[data-task='F'].task-list-item.is-checked {
+  background: rgba(var(--chbx-h), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='W'],
+:is(ul, ol) > li[data-task='W'].task-list-item.is-checked {
+  background: rgba(var(--chbx-P), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='~'],
+:is(ul, ol) > li[data-task='~'].task-list-item.is-checked {
+  background: rgba(var(--chbx-C), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='@'],
+:is(ul, ol) > li[data-task='@'].task-list-item.is-checked {
+  background: rgba(var(--chbx-b), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='f'],
+:is(ul, ol) > li[data-task='f'].task-list-item.is-checked {
+  background: rgba(var(--chbx-N), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='H'],
+:is(ul, ol) > li[data-task='H'].task-list-item.is-checked {
+  background: rgba(var(--chbx-a), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='&'],
+:is(ul, ol) > li[data-task='&'].task-list-item.is-checked {
+  background: rgba(var(--txt), 20%);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task='s'],
+:is(ul, ol) > li[data-task='s'].task-list-item.is-checked {
+  background: rgba(var(--chbx-d), 20%);
+}

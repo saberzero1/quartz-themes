@@ -1,0 +1,18 @@
+.CG-Custom-sbt.is-hidden-frameless
+  .sidebar-toggle-button.mod-left
+  > .clickable-icon,
+body:not(.is-tablet).is-mobile .view-header-nav-buttons,
+.CG-Custom-sbt.is-mobile .mod-left-split-toggle,
+body.is-tablet.sidebar-toggle-button.mod-left > .clickable-icon,
+.CG-Custom-sbt.is-frameless:not(.is-hidden-frameless)
+  .titlebar-button-container.mod-left {
+  background-size: 115%;
+  background-image: var(--CG-workspace-custom-sbt);
+}
+
+.CG-Custom-sbt.is-frameless:not(.is-hidden-frameless)
+  .titlebar-button-container.mod-left:hover {
+  background-size: 115%;
+  background-color: var(--text-accent);
+  background-blend-mode: luminosity;
+}

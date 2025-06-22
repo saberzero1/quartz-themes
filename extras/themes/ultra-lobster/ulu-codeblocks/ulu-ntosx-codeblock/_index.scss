@@ -1,0 +1,67 @@
+.ulu-ntosx-codeblock
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-line {
+  max-width: 100vh;
+}
+
+.ulu-ntosx-codeblock pre[class*='language-']::before {
+  display: block;
+  content: '';
+  height: 32px;
+  background: var(--text-normal);
+  box-shadow: 0 calc(-1 * var(--size-4-4)) 0 var(--size-4-4) var(--text-normal);
+}
+
+.ulu-ntosx-codeblock pre[class*='language-']::after {
+  display: block;
+  content: '';
+  height: 18px;
+  width: 18px;
+  background: var(--color-red);
+  box-shadow:
+    25px 0 var(--color-orange),
+    50px 0 var(--color-green);
+  position: absolute;
+  top: 7px;
+  border-radius: 100vmax;
+}
+
+.ulu-ntosx-codeblock .markdown-rendered pre {
+  border: 1px solid var(--text-normal);
+}
+
+.ulu-ntosx-codeblock .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  height: 38px;
+  background: var(--text-normal);
+  border-top: 1px solid var(--text-normal);
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-right-radius: 8px !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-left-radius: 8px !important;
+}
+
+.ulu-ntosx-codeblock .cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  background: var(--code-background);
+  border-bottom: 1px solid var(--text-normal);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.ulu-ntosx-codeblock .cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-right: 1px solid var(--text-normal);
+  border-left: 1px solid var(--text-normal);
+}
+
+.ulu-ntosx-codeblock .cm-s-obsidian div.HyperMD-codeblock-begin-bg::after {
+  display: block;
+  content: '';
+  height: 18px;
+  width: 18px;
+  background: var(--color-red);
+  box-shadow:
+    25px 0 var(--color-orange),
+    50px 0 var(--color-green);
+  position: absolute;
+  top: 7px;
+  border-radius: 100vmax;
+}

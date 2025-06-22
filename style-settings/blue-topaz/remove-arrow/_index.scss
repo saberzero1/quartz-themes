@@ -1,0 +1,38 @@
+body.remove-file-icons .nav-folder.mod-root {
+  padding-left: 4px;
+}
+body .tree-item-self {
+  --icon-opacity: 0;
+}
+body .tree-item-self .tree-item-icon {
+  --icon-opacity: 0;
+}
+body:not(.default-icons):not(
+    .bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  )
+  .nav-folder-collapse-indicator::before {
+  display: none;
+}
+body:not(.default-icons) :not([class*='mk-tree']).nav-folder-title-content {
+  margin-left: -18px;
+}
+body:not(.default-icons)
+  .tree-item.nav-folder.mod-root
+  > .tree-item-self.nav-folder-title {
+  padding-left: 23px;
+  margin-left: -10px;
+}
+body .nav-folder-title .iconize-icon {
+  margin: 0 22px 0 -18px !important;
+}
+body.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful,
+    .folder-style-change-options-colorful-order
+  )
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  > .nav-folder-title
+  > .nav-folder-collapse-indicator {
+  display: none;
+}

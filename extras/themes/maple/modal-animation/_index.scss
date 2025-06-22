@@ -1,0 +1,5 @@
+body.modal-animation :is(.prompt, .popover, .modal) {
+  animation:
+    op var(--animation),
+    bounce var(--animation);
+}

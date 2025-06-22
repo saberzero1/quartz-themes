@@ -1,0 +1,3 @@
+&.pln-attachments-xlsx .nav-file:has([data-path$='.xlsx']) {
+  display: contents !important;
+}

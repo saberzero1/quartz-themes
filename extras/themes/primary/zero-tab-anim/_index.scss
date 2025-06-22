@@ -1,0 +1,8 @@
+body.zero-tab-anim .workspace-tab-header.workspace-tab-header:not(.is-active),
+body.zero-tab-anim
+  .workspace-tab-header.workspace-tab-header:not(.is-active):active,
+body.zero-tab-anim
+  .workspace-tab-header.workspace-tab-header:not(.is-active):hover {
+  transition: transform none;
+  transform: unset;
+}

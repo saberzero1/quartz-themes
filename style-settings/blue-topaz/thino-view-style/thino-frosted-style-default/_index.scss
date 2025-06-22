@@ -1,0 +1,37 @@
+body.thino-frosted-style-default
+  div[data-type='thino_view']
+  .modern#page-wrapper:is(
+    .memos-chat-view,
+    .memos-moments-view,
+    .memos-list-view,
+    .memos-table-view,
+    .memos-calendar-view,
+    .memos-waterfall-view
+  ) {
+  --thino-modern-primary: var(--bg-color-settings-0-1);
+  --thino-modern-secondary: transparent;
+}
+body.thino-frosted-style-default
+  div[data-type='thino_view']
+  .moments-view
+  .thino-moment-wrapper {
+  border-radius: var(--radius-m);
+  background-color: var(--bg-color-settings-2);
+}
+body.thino-frosted-style-default
+  div[data-type='thino_view']
+  .moments-view
+  .thino-moment-wrapper:after {
+  display: none;
+}
+body.thino-frosted-style-default:not(.is-mobile)
+  div[data-type='thino_view']:not(.mobile-view)
+  .view-content {
+  background: var(--bg-color-settings-2);
+  backdrop-filter: blur(20px);
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  box-shadow: var(--window-shadow2);
+  border-radius: var(--radius-l);
+}

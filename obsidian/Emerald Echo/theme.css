@@ -1,7 +1,7 @@
 .HyperMD-header-1::after,
 h1 {
   display: block;
-  content: "";
+  content: '';
   padding-bottom: 2px;
   border-bottom: 2px solid #128a12;
 }
@@ -9,7 +9,7 @@ h1 {
 .HyperMD-header-2::after,
 h2 {
   display: block;
-  content: "";
+  content: '';
   padding-bottom: 2px;
   border-bottom: 1px dashed #be7070;
 }
@@ -17,7 +17,7 @@ h2 {
 .HyperMD-header-3::after,
 h3 {
   display: block;
-  content: "";
+  content: '';
   padding-bottom: 2px;
   border-bottom: 1px dotted #3d7676;
 }

@@ -1,0 +1,9 @@
+body.share-thino-with-workspace-background
+  .share-memo-image-dialog
+  > .dialog-container
+  > .dialog-content-container
+  > .memo-container:is(.modern, .clean, .gradient)
+  > .memo-background {
+  background-image: var(--theme-background) !important;
+  background-size: cover;
+}

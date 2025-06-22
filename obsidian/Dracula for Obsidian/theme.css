@@ -358,10 +358,10 @@ pre code {
 }
 
 /* remove the shadow that typically affect light mode */
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none !important;
   color: var(--text-faint) !important;
   background-color: var(--pre-code);
@@ -429,7 +429,7 @@ thead {
 /***************************************/
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   color: var(--text-accent);
   font-size: 1em;
@@ -494,16 +494,16 @@ thead {
 }
 
 /*backlink pane*/
-.workspace-leaf-content[data-type="backlink"] .view-content {
+.workspace-leaf-content[data-type='backlink'] .view-content {
   background-color: var(--background-secondary);
 }
 
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
+.workspace-leaf-content[data-type='tag'] .tag-pane-tag-count,
+.workspace-leaf-content[data-type='tag'] .tag-pane-tag-text {
   font-size: var(--font-size-side-dock);
 }
 
-.workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
+.workspace-leaf-content[data-type='backlink'] .search-result-file-matches {
   font-size: var(--font-size-side-dock);
 }
 /***************************************/
@@ -561,7 +561,7 @@ thead {
   color: var(--text-muted);
 }
 
-.workspace-leaf-content[data-type="graph"] .view-content {
+.workspace-leaf-content[data-type='graph'] .view-content {
   background-color: var(--background-primary);
 }
 
@@ -663,7 +663,7 @@ ul ul {
   position: relative;
 }
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--border-color);
   position: absolute;
 }

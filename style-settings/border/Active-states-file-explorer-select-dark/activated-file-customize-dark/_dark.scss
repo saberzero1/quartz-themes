@@ -1,0 +1,6 @@
+.activated-file-customize-dark.theme-dark
+  .nav-file-title.is-active
+  .nav-file-tag,
+.activated-file-customize-dark.theme-dark .tree-item-self.is-active svg {
+  color: var(--color-activated-file-dark) !important;
+}

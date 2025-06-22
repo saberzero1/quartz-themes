@@ -1,0 +1,8 @@
+body.status-bar-enable.status-bar-style-float:is(
+    .status-bar-default,
+    .status-bar-hidden
+  )
+  .status-bar {
+  left: 50%;
+  transform: translateX(-50%);
+}

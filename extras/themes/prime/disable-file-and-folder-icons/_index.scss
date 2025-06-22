@@ -1,0 +1,13 @@
+body.disable-file-and-folder-icons
+  .nav-folder-title
+  > .nav-folder-title-content::before {
+  content: '';
+  padding: 0;
+}
+
+body.disable-file-and-folder-icons
+  .nav-file-title
+  > .nav-file-title-content::before {
+  content: '';
+  padding: 0;
+}

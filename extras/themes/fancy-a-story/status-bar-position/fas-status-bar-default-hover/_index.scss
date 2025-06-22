@@ -1,0 +1,32 @@
+:scope.fas-status-bar-default-hover .status-bar {
+  --transition-duration: 0.5s;
+  --transition-timing-function: ease;
+  --border-width: max(15px, var(--radius-m));
+  transition-duration:
+    var(--transition-duration), max(0s, var(--transition-duration) - 0.2s);
+  transition-timing-function: var(--transition-timing-function);
+  transition-property: transform, border;
+}
+
+:scope.fas-status-bar-default-hover .status-bar:not(:hover) {
+  transform: translateX(calc(100% - var(--border-width)));
+  border-left: var(--color-accent) solid var(--border-width);
+  box-shadow: -4px 0px 8px var(--shadow-color);
+}
+
+:scope.fas-status-bar-default-hover .status-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-property: left;
+  z-index: -1;
+}
+
+:scope.fas-status-bar-default-hover .status-bar:hover::before {
+  left: 0;
+}

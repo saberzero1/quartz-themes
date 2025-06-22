@@ -1,0 +1,14 @@
+.predefined-accent-color.accent-mustard {
+  --accent: var(--mustard);
+  --accent-h: 40;
+  --accent-s: 100%;
+  --accent-l: 72%;
+}
+
+.accent-mustard {
+  --text-on-accent: #353132;
+}
+
+.colorful-tooltips.accent-mustard .tooltip {
+  color: var(--text-on-accent);
+}

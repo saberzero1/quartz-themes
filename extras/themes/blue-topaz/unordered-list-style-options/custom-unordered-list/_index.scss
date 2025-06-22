@@ -1,0 +1,78 @@
+body.custom-unordered-list
+  .markdown-rendered
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet::after,
+body.custom-unordered-list .markdown-rendered .list-bullet::after {
+  content: var(--list-ul-marker-4);
+  font-size: var(--list-ul-marker-size-4);
+  color: var(--list-ul-marker-color-4, var(--list-marker-color));
+}
+
+body.custom-unordered-list .markdown-source-view.mod-cm6 .list-bullet::after {
+  content: var(--list-ul-marker-4);
+  font-size: var(--list-ul-marker-size-4);
+  color: var(--list-ul-marker-color-4, var(--list-marker-color));
+}
+
+body.custom-unordered-list .has-list-bullet .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-1.cm-line
+  div.cm-fold-indicator
+  ~ span.cm-formatting
+  .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-1.cm-line
+  > span.cm-formatting:first-of-type
+  .list-bullet::after {
+  content: var(--list-ul-marker-1);
+  font-size: var(--list-ul-marker-size-1);
+  color: var(--list-ul-marker-color-1, var(--list-marker-color));
+}
+
+body.custom-unordered-list
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-2.cm-line
+  div.cm-fold-indicator
+  ~ span.cm-formatting
+  .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-2.cm-line
+  span.cm-hmd-list-indent
+  ~ span.cm-formatting
+  .list-bullet::after {
+  content: var(--list-ul-marker-2);
+  font-size: var(--list-ul-marker-size-2);
+  color: var(--list-ul-marker-color-2, var(--list-marker-color));
+}
+
+body.custom-unordered-list
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-3.cm-line
+  div.cm-fold-indicator
+  ~ span.cm-formatting
+  .list-bullet::after,
+body.custom-unordered-list
+  .markdown-source-view.mod-cm6
+  .HyperMD-list-line.HyperMD-list-line-3.cm-line
+  span.cm-hmd-list-indent
+  ~ span.cm-formatting
+  .list-bullet::after {
+  content: var(--list-ul-marker-3);
+  font-size: var(--list-ul-marker-size-3);
+  color: var(--list-ul-marker-color-3, var(--list-marker-color));
+}

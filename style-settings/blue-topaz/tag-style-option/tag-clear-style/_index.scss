@@ -1,0 +1,34 @@
+body.tag-clear-style .tag:not(.token):nth-child(n) {
+  background-color: transparent;
+  border: none;
+  color: var(--text-accent);
+  text-decoration: underline;
+  padding: 0 2px;
+}
+body.tag-clear-style .tag:not(.token):nth-child(n):hover {
+  background-color: var(--theme-color-translucent-015) !important;
+}
+body.tag-clear-style .cm-s-obsidian span.cm-hashtag-begin,
+body.tag-clear-style .cm-s-obsidian span.cm-hashtag-begin + .cm-hashtag.cm-meta,
+body.tag-clear-style .cm-s-obsidian span.cm-hashtag-end,
+body.tag-clear-style
+  .cm-s-obsidian
+  span.cm-hashtag-begin
+  + span.cm-hashtag.cm-meta.cm-hashtag-end,
+body.tag-clear-style
+  .cm-s-obsidian
+  span.cm-hashtag-begin
+  + .cm-hashtag.cm-meta {
+  background-color: transparent;
+  border: none;
+  color: var(--text-accent) !important;
+  text-decoration: underline;
+  padding: 0;
+}
+body.tag-clear-style
+  .cm-s-obsidian
+  span.cm-hashtag-begin
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: transparent;
+}

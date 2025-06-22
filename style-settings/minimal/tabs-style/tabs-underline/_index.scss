@@ -1,0 +1,28 @@
+.tabs-underline .mod-root {
+  --tab-curve: 0;
+  --tab-radius: 0;
+  --tab-radius-active: 0;
+  --tab-outline-width: 0px;
+  --tab-background-active: transparent;
+}
+.tabs-underline .mod-root .workspace-tab-header-container {
+  border-bottom: 1px solid var(--divider-color);
+}
+.tabs-underline .mod-root .workspace-tab-header {
+  border-bottom: 2px solid transparent;
+}
+.tabs-underline .mod-root .workspace-tab-header:hover {
+  border-bottom: 2px solid var(--ui2);
+}
+.tabs-underline
+  .mod-root
+  .workspace-tab-header:hover
+  .workspace-tab-header-inner {
+  background-color: rgba(0, 0, 0, 0);
+}
+.tabs-underline .mod-root .workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--ax3);
+}
+.tabs-underline .mod-root .workspace-tab-header-inner:hover {
+  background-color: rgba(0, 0, 0, 0);
+}

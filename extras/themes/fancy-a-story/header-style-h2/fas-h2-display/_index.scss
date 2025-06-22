@@ -1,0 +1,252 @@
+.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2) {
+  --h2-line-height: 1.2em;
+  --h2-size: 2.8em;
+  --h2-font: var(--font-typewriter), var(--font-text);
+  --h2-color: var(--workleaves-background);
+  --h2-background: var(--color-base-100);
+  background-color: var(--h2-background);
+  text-align: center;
+  position: relative;
+  padding: var(--cutout-outline-inset);
+  clip-path: polygon(
+    0 var(--cutout-corner-angle),
+    var(--cutout-corner-angle) 0,
+    calc(100% - var(--cutout-corner-angle)) 0,
+    100% var(--cutout-corner-angle),
+    100% calc(100% - var(--cutout-corner-angle)),
+    calc(100% - var(--cutout-corner-angle)) 100%,
+    var(--cutout-corner-angle) 100%,
+    0 calc(100% - var(--cutout-corner-angle))
+  );
+  overflow: hidden;
+  /* Creates a Block Formatting Context (BFC) to avoid going over the float elements */
+}
+
+.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2)::before {
+  content: '';
+  position: absolute;
+  background: var(--cutout-border-background);
+  inset: var(--cutout-outline-inset);
+  clip-path: polygon(
+    0 var(--cutout-corner-angle),
+    var(--cutout-corner-angle) 0,
+    calc(100% - var(--cutout-corner-angle)) 0,
+    100% var(--cutout-corner-angle),
+    100% calc(100% - var(--cutout-corner-angle)),
+    calc(100% - var(--cutout-corner-angle)) 100%,
+    var(--cutout-corner-angle) 100%,
+    0 calc(100% - var(--cutout-corner-angle)),
+    0 var(--cutout-corner-angle),
+    var(--cutout-outline-thickness)
+      calc(var(--cutout-corner-angle) + var(--cutout-outline-thickness) * 0.5),
+    var(--cutout-outline-thickness)
+      calc(
+        100% - var(--cutout-corner-angle) - var(--cutout-outline-thickness) *
+          0.5
+      ),
+    calc(var(--cutout-corner-angle) + var(--cutout-outline-thickness) * 0.5)
+      calc(100% - var(--cutout-outline-thickness)),
+    calc(
+        100% - var(--cutout-corner-angle) - var(--cutout-outline-thickness) *
+          0.5
+      )
+      calc(100% - var(--cutout-outline-thickness)),
+    calc(100% - var(--cutout-outline-thickness))
+      calc(
+        100% - var(--cutout-corner-angle) - var(--cutout-outline-thickness) *
+          0.5
+      ),
+    calc(100% - var(--cutout-outline-thickness))
+      calc(var(--cutout-corner-angle) + var(--cutout-outline-thickness) * 0.5),
+    calc(
+        100% - var(--cutout-corner-angle) - var(--cutout-outline-thickness) *
+          0.5
+      )
+      var(--cutout-outline-thickness),
+    calc(var(--cutout-corner-angle) + var(--cutout-outline-thickness) * 0.5)
+      var(--cutout-outline-thickness),
+    var(--cutout-outline-thickness)
+      calc(var(--cutout-corner-angle) + var(--cutout-outline-thickness) * 0.5)
+  );
+}
+
+.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2):is(.is-collapsed > h2)::before {
+  background: var(--h2-border-color-collapsed);
+}
+
+.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2):is(.is-collapsed > h2)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--h2-border-color-collapsed);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0,
+    var(--cutout-outline-inset)
+      calc(var(--cutout-corner-angle) + 0.5 * var(--cutout-outline-inset) + 2px),
+    var(--cutout-outline-inset)
+      calc(
+        100% - var(--cutout-corner-angle) - 0.5 * var(--cutout-outline-inset) -
+          2px
+      ),
+    calc(var(--cutout-corner-angle) + 0.5 * var(--cutout-outline-inset) + 2px)
+      calc(100% - var(--cutout-outline-inset)),
+    calc(
+        100% - var(--cutout-corner-angle) - 0.5 * var(--cutout-outline-inset) -
+          2px
+      )
+      calc(100% - var(--cutout-outline-inset)),
+    calc(100% - var(--cutout-outline-inset))
+      calc(
+        100% - var(--cutout-corner-angle) - 0.5 * var(--cutout-outline-inset) -
+          2px
+      ),
+    calc(100% - var(--cutout-outline-inset))
+      calc(var(--cutout-corner-angle) + 0.5 * var(--cutout-outline-inset) + 2px),
+    calc(
+        100% - var(--cutout-corner-angle) - 0.5 * var(--cutout-outline-inset) -
+          2px
+      )
+      var(--cutout-outline-inset),
+    calc(var(--cutout-corner-angle) + 0.5 * var(--cutout-outline-inset) + 2px)
+      var(--cutout-outline-inset),
+    var(--cutout-outline-inset)
+      calc(var(--cutout-corner-angle) + 0.5 * var(--cutout-outline-inset) + 2px)
+  );
+}
+
+.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2)
+  .heading-collapse-indicator {
+  margin-inline-start: 0;
+}
+
+.fas-skin-sci-fi.fas-h2-display
+  .markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2),
+.fas-h2-display
+  .sci-fi.markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2) {
+  --h2-color: inherit;
+  --h2-background: transparent;
+  --h2-font: 'Orbitron', Arial, serif;
+  padding: unset;
+  clip-path: unset;
+  text-align: left;
+}
+
+.fas-skin-sci-fi.fas-h2-display
+  .markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2)::before,
+.fas-h2-display
+  .sci-fi.markdown-preview-view
+  h2:not(.callout h2, ul h2, ol h2)::before {
+  position: unset;
+  background-image: unset;
+  inset: unset;
+  clip-path: unset;
+  display: inline-block;
+  height: 1em;
+  width: 6em;
+  transform: translateY(-15%);
+  background-color: rgba(var(--color-cyan-rgb), 1);
+  -webkit-mask-image: var(--sci-fi-h-display);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-mode: luminance;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.fas-skin-art-deco.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2) {
+  --h2-line-height: 1.2em;
+  --h2-size: 3em;
+  --h2-font: 'ParkLaneNF', 'Limelight', 'Impact', 'Inter';
+  --h2-color: var(--art-deco-color);
+  --h2-weight: 500;
+  --h2-background: var(--color-base-100);
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  padding-inline: var(--cutout-outline-inset);
+  padding-block: calc(var(--cutout-outline-inset) + 16px);
+  clip-path: none;
+}
+
+.fas-skin-art-deco.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2)::before {
+  --corner-size: 0.5em;
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: unset;
+  background-image: var(--art-deco-gradient);
+  mask:
+    var(--art-deco-h-top-left) left top/var(--corner-size) var(--corner-size)
+      no-repeat,
+    var(--art-deco-h-top-right) right top/var(--corner-size) var(--corner-size)
+      no-repeat,
+    var(--art-deco-h-bottom-right) right bottom/var(--corner-size)
+      var(--corner-size) no-repeat,
+    var(--art-deco-h-bottom-left) left bottom/var(--corner-size)
+      var(--corner-size) no-repeat,
+    var(--art-deco-h-hline) var(--corner-size)
+      top/calc(100% - 2 * var(--corner-size))
+      calc(0.2514469152 * var(--corner-size)) no-repeat,
+    var(--art-deco-h-hline) var(--corner-size)
+      bottom/calc(100% - 2 * var(--corner-size))
+      calc(0.2514469152 * var(--corner-size)) no-repeat,
+    var(--art-deco-h-vline) left var(--corner-size) /
+      calc(0.2507139294 * var(--corner-size))
+      calc(100% - 2 * var(--corner-size)) no-repeat,
+    var(--art-deco-h-vline) right var(--corner-size) /
+      calc(0.2514469152 * var(--corner-size) - 0.5px)
+      calc(100% - 2 * var(--corner-size)) no-repeat;
+}
+
+.fas-skin-art-deco.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2):is(.is-collapsed > h2)::after {
+  content: none;
+}
+
+.fas-skin-art-deco.fas-h2-display
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
+  )
+  h2:not(.callout h2, ul h2, ol h2)
+  .heading-collapse-indicator {
+  margin-inline-start: 0;
+}

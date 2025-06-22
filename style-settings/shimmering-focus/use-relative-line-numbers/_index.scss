@@ -1,0 +1,88 @@
+:not(.is-mobile) .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
+  font-size: 0;
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active,
+:not(.is-mobile) .cm-lineNumbers :before {
+  font-size: 0.85rem;
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ .cm-active):before {
+  content: '1';
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ * + .cm-active):before {
+  content: '2';
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ * + * + .cm-active):before {
+  content: '3';
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ * + * + * + .cm-active):before {
+  content: '4';
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ * + * + * + * + .cm-active):before {
+  content: '5';
+}
+:not(.is-mobile) .cm-lineNumbers :has(+ * + * + * + * + * + .cm-active):before {
+  content: '6';
+}
+:not(.is-mobile)
+  .cm-lineNumbers
+  :has(+ * + * + * + * + * + * + .cm-active):before {
+  content: '7';
+}
+:not(.is-mobile)
+  .cm-lineNumbers
+  :has(+ * + * + * + * + * + * + * + .cm-active):before {
+  content: '8';
+}
+:not(.is-mobile)
+  .cm-lineNumbers
+  :has(+ * + * + * + * + * + * + * + * + .cm-active):before {
+  content: '9';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + :before {
+  content: '1';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + :before {
+  content: '2';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + * + :before {
+  content: '3';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + * + * + :before {
+  content: '4';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + * + * + * + :before {
+  content: '5';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + * + * + * + * + :before {
+  content: '6';
+}
+:not(.is-mobile) .cm-lineNumbers .cm-active + * + * + * + * + * + * + :before {
+  content: '7';
+}
+:not(.is-mobile)
+  .cm-lineNumbers
+  .cm-active
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + :before {
+  content: '8';
+}
+:not(.is-mobile)
+  .cm-lineNumbers
+  .cm-active
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + :before {
+  content: '9';
+}

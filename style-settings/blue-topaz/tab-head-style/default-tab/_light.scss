@@ -1,0 +1,9 @@
+body.color-scheme-options-simplicity-topaz
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background-image: linear-gradient(
+    to right,
+    var(--background-secondary),
+    var(--simple-white-2)
+  );
+}

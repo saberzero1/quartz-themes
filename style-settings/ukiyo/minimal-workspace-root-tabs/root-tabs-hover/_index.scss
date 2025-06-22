@@ -1,0 +1,88 @@
+.floating-sides.minimal-mode.root-tabs-hover .workspace {
+  --margin-top-animation-delay: 0s;
+}
+.floating-sides.minimal-mode.root-tabs-hover
+  .workspace:has(
+    .workspace-tabs.mod-active.mod-top
+      .workspace-tab-header-container:not(:hover)
+  ) {
+  --margin-top: calc(var(--header-height) / 3);
+  --margin-top-animation-delay: 1s;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-container
+  .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu))
+  .view-actions,
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-container
+  .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu))
+  .view-header-nav-buttons {
+  opacity: 0;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container,
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  .sidebar-toggle-button {
+  transition:
+    height var(--default-animation-duration) ease-in-out,
+    opacity var(--default-animation-duration) ease-in-out;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container:not(:hover) {
+  animation-duration: 1.25s;
+  animation-name: slow-fade-out;
+  height: calc(var(--header-height) / 3);
+  opacity: 0;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container:not(:hover)
+  .sidebar-toggle-button {
+  animation-duration: 1.25s;
+  animation-name: slow-fade-out;
+  height: calc(var(--header-height) / 3);
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  max-width: 90%;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 100%;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-spacer {
+  display: block;
+  width: 25px;
+  height: auto;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-container
+  .view-header {
+  transition:
+    height var(--hover-animation-duration) ease-in-out,
+    opacity var(--hover-animation-duration) ease-in-out;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-container
+  .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu)) {
+  height: 20px;
+}

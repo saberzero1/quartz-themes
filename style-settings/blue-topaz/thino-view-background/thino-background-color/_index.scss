@@ -1,0 +1,18 @@
+body.thino-background-color div[data-type='thino_view'].workspace-leaf-content {
+  --start-color: hsla(
+    var(--thino-modern-primary-h),
+    var(--thino-modern-primary-s),
+    var(--thino-modern-primary-l),
+    var(--thino-modern-primary-a)
+  );
+  --end-color: hsla(
+    calc(var(--thino-modern-primary-h) + 30),
+    calc(var(--thino-modern-primary-s) + 5%),
+    calc(var(--thino-modern-primary-l) + 13%),
+    calc(var(--thino-modern-primary-a) * 0.8)
+  );
+  background: linear-gradient(117deg, var(--start-color), var(--end-color));
+  --background-primary: var(--bg-color-settings-2);
+  --memos-memo-bg: var(--bg-color-settings-0-1);
+  --memos-memo-border: var(--bg-color-settings-0-1);
+}

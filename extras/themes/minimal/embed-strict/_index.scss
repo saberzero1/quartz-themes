@@ -1,0 +1,41 @@
+.embed-strict {
+  --embed-background: transparent;
+  --embed-border-start: 0;
+  --embed-border-left: 0;
+  --embed-padding: 0;
+}
+
+.embed-strict .markdown-embed-content {
+  --folding-offset: 0px;
+}
+
+.embed-strict .internal-embed .markdown-embed,
+.embed-strict .markdown-preview-view .markdown-embed,
+.embed-strict.markdown-preview-view .markdown-embed {
+  padding: 0;
+}
+
+.embed-strict .internal-embed .markdown-embed .markdown-embed-title,
+.embed-strict .markdown-embed-title {
+  display: none;
+}
+
+.embed-strict .internal-embed:not([src*='#^']) .markdown-embed-link {
+  width: 24px;
+  opacity: 0;
+}
+
+.contextual-typography
+  .embed-strict
+  .internal-embed
+  .markdown-preview-view
+  .markdown-preview-sizer
+  > div,
+.embed-strict.contextual-typography
+  .internal-embed
+  .markdown-preview-view
+  .markdown-preview-sizer
+  > div {
+  margin: 0;
+  width: 100%;
+}

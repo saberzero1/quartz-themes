@@ -1,0 +1,10 @@
+body-adapt .database-plugin__navbar,
+body-adapt .database-plugin__table {
+  --background-primary: transparent;
+  --background-secondary: rgba(var(--mono-rgb-100), 0.025);
+}
+body-adapt .database-plugin__th:hover,
+body-adapt .data-input:hover {
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.025);
+  --background-secondary: var(--background-modifier-hover);
+}

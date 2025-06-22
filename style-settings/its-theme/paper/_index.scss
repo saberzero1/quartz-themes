@@ -1,0 +1,34 @@
+:root,
+body {
+  --edges-note: 0 0 60px var(--outline) inset;
+  --edges-ui: 0 0 25px var(--outline) inset;
+  --file-header-background: transparent;
+  --pane-background: transparent;
+}
+,
+.modal.mod-settings .vertical-tab-content-container,
+.workspace-split:not(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content[data-type='markdown'],
+.workspace-leaf-content[data-type='graph'] > canvas,
+.workspace-drawer-inner,
+.modal,
+.community-plugin-search,
+.prompt,
+.kanban-plugin__lane.kanban-plugin__lane {
+  box-shadow: var(--edges-note);
+}
+.workspace-tabs,
+.modal.mod-settings .vertical-tab-header,
+.workspace-tabs .workspace-leaf {
+  box-shadow: var(--edges-ui);
+}
+.CodeMirror-gutter.CodeMirror-linenumbers,
+.CodeMirror-gutter.CodeMirror-foldgutter,
+.markdown-source-view.mod-cm6 .cm-gutters,
+.workspace-leaf:not(.mod-active) .workspace-tab-header-container,
+.horizontal-tab-content,
+.vertical-tab-content,
+.horizontal-tab-nav-item:not(.is-active),
+.vertical-tab-nav-item:not(.is-active) {
+  background: transparent;
+}

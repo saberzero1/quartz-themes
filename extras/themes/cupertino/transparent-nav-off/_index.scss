@@ -1,16 +1,12 @@
-body.is-mobile:not(.transparent-nav-off).theme-light .mobile-toolbar {
-  background-color: #d1d3da;
+body.is-phone.transparent-nav-off .mod-root .view-header {
+  padding-top: var(--safe-area-inset-top);
 }
 
-body.is-mobile:not(.transparent-nav-off).theme-light
-  .mobile-toolbar
-  .mobile-navbar-action
-  .clickable-icon {
-  filter: drop-shadow(0 0 4px white);
+body.is-phone.transparent-nav-off .empty-state-action:first-child {
+  padding-top: 12px;
 }
 
-body.is-phone:not(.transparent-nav-off).theme-light
-  .workspace-drawer
-  .nav-header {
-  background-color: rgb(from var(--background-secondary) r g b/50%);
+body.is-phone.transparent-nav-off #cMenuToolbarModalBar,
+body.is-phone.transparent-nav-off #cMenuToolbarPopoverBar {
+  top: 0 !important;
 }

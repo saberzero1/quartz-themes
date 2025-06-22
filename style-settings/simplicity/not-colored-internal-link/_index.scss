@@ -1,0 +1,9 @@
+.cm-hmd-internal-link .cm-underline,
+.cm-line.cm-active .cm-hmd-internal-link,
+.cm-link .cm-underline,
+.cm-line.cm-active .cm-link,
+.internal-link,
+.external-link {
+  color: var(--color-base-60);
+  color: var(--text-normal) !important;
+}

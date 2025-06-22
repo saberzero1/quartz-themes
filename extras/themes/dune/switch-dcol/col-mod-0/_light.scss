@@ -1,0 +1,40 @@
+.col-mod-0 {
+  --light-base-c: #433721;
+  --link-color-dune: var(--text-accent);
+  --prefs-title: var(--light-base-c);
+  --h1-color-c: var(--light-base-c);
+  --header-col: var(--h1-color-c);
+  --text-selection-c: #dd94178a;
+  --text-selection: var(--text-selection-c);
+}
+
+.col-mod-0 {
+  --text-accent: var(--color-accent);
+  --button-background: var(--interactive-accent);
+  --prefs-shadow: var(--background-primary);
+  --prefs-grad: var(--background-primary);
+  --input-bg: var(--background-secondary);
+  --text-muted-c: var(--color-base-70);
+  --text-faint-c: var(--color-base-50);
+  --link-color-c: var(--text-accent);
+  --text-muted: var(--text-muted-c);
+  --text-faint: var(--text-faint-c);
+  --link-color: var(--link-color-c);
+  --text-normal-c: var(--color-base-100);
+  --bold-color-c: inherit;
+  --italic-color-c: inherit;
+  --text-normal: var(--text-normal-c);
+  --bold-color: var(--bold-color-c);
+  --italic-color: var(--italic-color-c);
+  --background-primary-c: var(--color-base-00);
+  --background-secondary-c: var(--color-base-20);
+  --background-primary: var(--background-primary-c);
+  --background-secondary: var(--background-secondary-c);
+  --background-modifier-border-c: var(--color-base-40);
+  --background-modifier-border: var(--background-modifier-border-c);
+  --wm-b-col: var(--background-secondary);
+}
+
+.col-mod-0 .workspace-tab-header-container {
+  background-color: var(--color-base-20);
+}

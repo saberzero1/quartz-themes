@@ -1,0 +1,25 @@
+-toggle.abyss {
+  --background-default: #10081e;
+  --text-color: #ffffff;
+  --background-primary: #080212;
+  --background-primary-alt: var(--background-primary);
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: var(--background-primary);
+  --background-modifier-border: var(--card-border-color);
+  --card-bg: #080212;
+  --card-border-color: #805cbe84;
+  --blockquote-border-color: #300c6e;
+  --blockquote-bg: #10081e;
+  --blockquote-radius: 8px;
+  --blockquote-text: inherit;
+  --citation-bg: var(--color-accent);
+  --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15);
+  --graph-bg: #100425;
+  --graph-line-color: var(--card-border-color);
+  --tab-background-active: rgba(255, 255, 255, 0.1);
+  --caret-color: var(--text-color);
+  --color-panel: #10081e;
+  --table-header-background: var(--color-accent);
+  --custom-color-accent-dark: #341961;
+  --icon-color: var(--card-border-color);
+}

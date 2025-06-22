@@ -407,16 +407,16 @@ settings:
 div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode {
   color: var(--text-on-accent);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="normal"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode='normal'] {
   background-color: var(--color-blue);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="insert"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode='insert'] {
   background-color: var(--color-green);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="visual"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode='visual'] {
   background-color: var(--color-pink);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="replace"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode='replace'] {
   background-color: var(--red);
 }
 

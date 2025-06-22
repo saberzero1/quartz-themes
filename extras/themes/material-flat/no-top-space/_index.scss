@@ -1,0 +1,4 @@
+body.no-top-space .app-container {
+  margin-top: -7px;
+  height: calc(100% + 7px);
+}

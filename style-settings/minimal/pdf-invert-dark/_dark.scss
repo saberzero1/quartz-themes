@@ -1,0 +1,5 @@
+.workspace-leaf-content[data-type='pdf'] .pdf-viewer .canvasWrapper,
+.workspace-leaf-content[data-type='pdf'] .pdfViewer .canvasWrapper {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}

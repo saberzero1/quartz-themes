@@ -1,0 +1,12 @@
+body.kanban-full-height-column button.kanban-plugin__new-item-button {
+  align-self: flex-end;
+}
+
+body.kanban-full-height-column .kanban-plugin__item-button-wrapper {
+  flex-grow: 1;
+  display: flex;
+}
+
+body.kanban-full-height-column .kanban-plugin__lane-wrapper {
+  min-height: 100%;
+}

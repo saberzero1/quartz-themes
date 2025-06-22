@@ -1,6 +1,6 @@
 body {
   --font-default: Courier, monospace;
-  --font-monospace-default: "Lucida Console", monospace;
+  --font-monospace-default: 'Lucida Console', monospace;
 
   /* default: 700px */
   --file-line-width: 520px;

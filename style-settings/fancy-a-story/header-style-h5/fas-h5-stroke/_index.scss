@@ -1,0 +1,45 @@
+.fas-h5-stroke
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h5-display)
+  )
+  h5 {
+  --h5-weight: var(--font-extralight);
+  --h5-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fas-h5-stroke
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h5-display)
+  )
+  h5::before {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  background-color: var(--h5-border-color);
+  height: 1px;
+}
+.fas-h5-stroke
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h5-display)
+  )
+  h5::after {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  background-color: var(--h5-border-color);
+  height: 1px;
+}
+.fas-h5-stroke
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h5-display)
+  )
+  h5:is(.is-collapsed > h5)::before,
+.fas-h5-stroke
+  .markdown-preview-view:not(
+    :is(.newspaper, .movie-script, .minimalist, .h5-display)
+  )
+  h5:is(.is-collapsed > h5)::after {
+  background-color: var(--h5-border-color-collapsed);
+}

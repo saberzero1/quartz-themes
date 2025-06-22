@@ -1,0 +1,253 @@
+.dots-style-headers .is-live-preview .HyperMD-header-1,
+.dots-style-headers .markdown-rendered h1,
+.dots-style-headers .is-live-preview .HyperMD-header-2,
+.dots-style-headers .markdown-rendered h2,
+.dots-style-headers .is-live-preview .HyperMD-header-3,
+.dots-style-headers .markdown-rendered h3,
+.dots-style-headers .is-live-preview .HyperMD-header-4,
+.dots-style-headers .markdown-rendered h4,
+.dots-style-headers .is-live-preview .HyperMD-header-5,
+.dots-style-headers .markdown-rendered h5,
+.dots-style-headers .is-live-preview .HyperMD-header-6,
+.dots-style-headers .markdown-rendered h6 {
+  position: relative;
+  padding: 0;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-1 .cm-header-1,
+.dots-style-headers .markdown-rendered h1 {
+  position: relative !important;
+  padding: 10px 20px;
+  border-bottom: 2px solid rgba(var(--h1-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-1 .cm-header-1::before,
+.dots-style-headers .markdown-rendered h1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h1-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-1 .cm-header-1::after,
+.dots-style-headers .markdown-rendered h1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h1-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-2 .cm-header-2,
+.dots-style-headers .markdown-rendered h2 {
+  position: relative !important;
+  padding: 8px 18px;
+  border-bottom: 2px solid rgba(var(--h2-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-2 .cm-header-2::before,
+.dots-style-headers .markdown-rendered h2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h2-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-2 .cm-header-2::after,
+.dots-style-headers .markdown-rendered h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h2-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-3 .cm-header-3,
+.dots-style-headers .markdown-rendered h3 {
+  position: relative !important;
+  padding: 6px 16px;
+  border-bottom: 2px solid rgba(var(--h3-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-3 .cm-header-3::before,
+.dots-style-headers .markdown-rendered h3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h3-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-3 .cm-header-3::after,
+.dots-style-headers .markdown-rendered h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h3-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-4 .cm-header-4,
+.dots-style-headers .markdown-rendered h4 {
+  position: relative !important;
+  padding: 5px 14px;
+  border-bottom: 2px solid rgba(var(--h4-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-4 .cm-header-4::before,
+.dots-style-headers .markdown-rendered h4::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h4-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-4 .cm-header-4::after,
+.dots-style-headers .markdown-rendered h4::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h4-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-5 .cm-header-5,
+.dots-style-headers .markdown-rendered h5 {
+  position: relative !important;
+  padding: 4px 12px;
+  border-bottom: 2px solid rgba(var(--h5-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-5 .cm-header-5::before,
+.dots-style-headers .markdown-rendered h5::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h5-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-5 .cm-header-5::after,
+.dots-style-headers .markdown-rendered h5::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h5-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-6 .cm-header-6,
+.dots-style-headers .markdown-rendered h6 {
+  position: relative !important;
+  padding: 3px 10px;
+  border-bottom: 2px solid rgba(var(--h6-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-6 .cm-header-6::before,
+.dots-style-headers .markdown-rendered h6::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  top: unset;
+  bottom: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h6-new-color), 1);
+}
+
+.dots-style-headers .is-live-preview .HyperMD-header-6 .cm-header-6::after,
+.dots-style-headers .markdown-rendered h6::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: rgba(var(--h6-new-color), 1);
+}

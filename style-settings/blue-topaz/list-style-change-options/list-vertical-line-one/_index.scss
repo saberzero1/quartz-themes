@@ -1,0 +1,26 @@
+body.list-vertical-line-one ol,
+body.list-vertical-line-one ol ol,
+body.list-vertical-line-one ol ol ol,
+body.list-vertical-line-one ol ul ol,
+body.list-vertical-line-one ol ol ol ol,
+body.list-vertical-line-one ol ol ul ol,
+body.list-vertical-line-one ol ul ol ol {
+  list-style: none;
+}
+body.list-vertical-line-one ol {
+  counter-reset: niceBTT;
+}
+body.list-vertical-line-one ol > li {
+  counter-increment: niceBTT;
+}
+body.list-vertical-line-one ol > li::before {
+  content: counters(niceBTT, '.') '. ';
+  font-weight: bold;
+  color: var(--list-ol-number-color);
+  margin-left: -1.3em;
+  font-family: Monaco;
+  font-size: 0.9em;
+}
+body.list-vertical-line-one :is(ol, ul) :is(ol, ul) {
+  position: relative;
+}

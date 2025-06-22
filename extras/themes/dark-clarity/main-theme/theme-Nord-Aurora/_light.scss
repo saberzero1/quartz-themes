@@ -1,0 +1,21 @@
+bod.theme-dark,
+bod.theme-light {
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg: hsla(210, 40%, 59%, 0.816);
+  --text-title-h1: hsl(354 42% 56%);
+  --text-title-h2: hsl(14 51% 63%);
+  --text-title-h3: hsl(40 71% 73%);
+  --text-title-h4: hsl(92 28% 65%);
+  --text-title-h5: hsl(311 20% 63%);
+  --text-title-h6: hsl(222 10% 75%);
+  --folder-color1: hsl(354 42% 56% / var(--folder-alpha));
+  --folder-color2: hsl(14 51% 63% / var(--folder-alpha));
+  --folder-color3: hsl(40 71% 73% / var(--folder-alpha));
+  --folder-color4: hsl(92 28% 65% / var(--folder-alpha));
+  --folder-color5: hsl(311 20% 63% / var(--folder-alpha));
+  --folder-color6: hsl(222 10% 75% / var(--folder-alpha));
+}
+
+bod.theme-light {
+  --text-title-h6: #989ba1;
+}

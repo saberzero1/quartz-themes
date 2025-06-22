@@ -1,0 +1,9 @@
+.markdown-rendered blockquote::before {
+  font-style: normal;
+  content: '❛❛';
+  display: inline;
+  font-size: 2.25em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  margin-right: 15px;
+}

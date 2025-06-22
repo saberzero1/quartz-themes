@@ -1,0 +1,310 @@
+body {
+  .mod-sidedock .workspace-leaf-content[data-type='map'] {
+    margin: 0.5rem 0;
+  }
+  .view-header {
+    border-bottom: none;
+  }
+  .map-view-main {
+    overflow: hidden;
+    border-radius: var(--tab-radius);
+    background-color: var(--theme-color-graphViewBg);
+  }
+  .map-view-main:before,
+  .map-view-main:after {
+    /* Match graph view */
+    background: transparent;
+    box-shadow: var(--theme-shadow-indent);
+    content: '';
+    display: block;
+    height: 1rem;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 120%;
+    z-index: 2;
+  }
+  .map-view-main:before {
+    top: -1rem;
+  }
+  .map-view-main:after {
+    bottom: -1rem;
+  }
+  .map-view-graph-controls {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    padding: 0.25rem;
+    gap: 0;
+    box-shadow: var(--theme-shadow-input);
+    border-radius: var(--radius-m);
+    .graph-control-div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0;
+    }
+    & select,
+    & button {
+      flex-basis: calc(50% - 0.325em);
+      flex-shrink: 1;
+      flex-grow: 0;
+    }
+    .graph-control-follow-div {
+      display: flex;
+      gap: 0.5em;
+      align-content: baseline;
+      justify-content: flex-start;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    .graph-control-follow-label {
+      margin: 0.1875em 0 0 0;
+    }
+    .graph-control-content {
+      width: 100%;
+      flex-shrink: 0;
+      padding: 0.5em 0;
+      margin: 0;
+      gap: 0.25em;
+      overflow: visible;
+    }
+    /* Presets section */
+    .graph-control-div:last-child .graph-control-content {
+      /* Presets dropdown */
+      & .dropdown.mv-map-control:first-child {
+        flex-shrink: 0;
+        flex-basis: 100%;
+      }
+    }
+  }
+  .map-view-main {
+    .marker-cluster-small,
+    .marker-cluster-small div {
+      background-color: var(--theme-color-greenTransparent25);
+    }
+    .marker-cluster-medium,
+    .marker-cluster-medium div {
+      background-color: var(--theme-color-yellowTransparent25);
+    }
+    .marker-cluster-large,
+    .marker-cluster-large div {
+      background-color: var(--theme-color-orangeTransparent25);
+    }
+  }
+  .map-view-graph-controls .lbl-triangle {
+    border-top-left-radius: var(--radius-s);
+    border-bottom-left-radius: var(--radius-s);
+    font-size: var(--nav-item-size);
+    font-weight: var(--font-medium);
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.25em 1.5em 0.25em 0.5em;
+    line-height: var(--theme-lineHeight-tight);
+    width: 1em;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: none;
+    position: relative;
+    color: transparent;
+    top: 0;
+  }
+  .map-view-graph-controls .lbl-triangle:before {
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    content: '';
+    background-color: var(--theme-color-control);
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8L12 17L21 8"></path></svg>');
+    transition: transform 100ms ease-in-out;
+    transform: rotate(-90deg);
+  }
+  .map-view-graph-controls .controls-toggle:checked + .lbl-triangle {
+    transform: none;
+  }
+  .map-view-graph-controls .controls-toggle:checked + .lbl-triangle:before {
+    transform: rotate(0deg);
+  }
+  .map-view-graph-controls .lbl-toggle {
+    border-top-right-radius: var(--radius-s);
+    border-bottom-right-radius: var(--radius-s);
+    color: var(--text-faint);
+    font-size: var(--nav-item-size);
+    font-weight: var(--font-medium);
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.25em 0.5em 0.25em 0;
+    line-height: var(--theme-lineHeight-tight);
+    display: flex;
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition: none;
+  }
+  @media (hover: hover) {
+    .map-view-graph-controls .lbl-triangle:hover,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-toggle:hover)
+      .lbl-triangle {
+      background-color: var(--nav-item-background-hover);
+      color: transparent;
+    }
+    .map-view-graph-controls .lbl-triangle:hover:before,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-toggle:hover)
+      .lbl-triangle:before {
+      background-color: var(--theme-color-controlHover);
+    }
+    .map-view-graph-controls .lbl-toggle:hover,
+    .map-view-graph-controls
+      .graph-control-div:has(.lbl-triangle:hover)
+      .lbl-toggle {
+      color: var(--nav-item-color-hover);
+      background-color: var(--nav-item-background-hover);
+      font-weight: var(--font-medium);
+    }
+  }
+  .map-view-graph-controls
+    .controls-toggle:checked
+    + .lbl-triangle
+    + .lbl-toggle
+    + .graph-control-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .map-view-graph-controls .search-input-container {
+    width: 100%;
+    padding: var(--input-border-width);
+    &:before {
+      top: calc(
+        (var(--input-height) - var(--search-icon-size)) / 2 +
+          var(--input-border-width)
+      );
+    }
+  }
+  .map-view-main {
+    .leaflet-control-container {
+      .leaflet-top {
+        top: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-right {
+        right: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-bottom {
+        bottom: var(--theme-length-controlSetSpacing);
+      }
+      .leaflet-left {
+        left: var(--theme-length-controlSetSpacing);
+      }
+    }
+  }
+  .map-view-main .leaflet-control-container .leaflet-top.leaflet-right {
+    background: var(--theme-color-controlSetBg);
+    border: none;
+    padding: 0.25rem;
+    gap: 0;
+    box-shadow: var(--theme-shadow-input);
+    border-radius: var(--radius-m);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    & .leaflet-control {
+      border: none;
+      margin: 0;
+    }
+    & .leaflet-control-zoom {
+      padding: 0;
+    }
+    & a {
+      align-items: center;
+      background-color: transparent;
+      border-radius: var(--clickable-icon-radius);
+      border: none;
+      box-shadow: none;
+      color: var(--theme-color-control);
+      cursor: var(--cursor);
+      display: flex;
+      height: 2em;
+      justify-content: center;
+      min-height: var(--input-height);
+      opacity: var(--icon-opacity);
+      padding: 0.25rem;
+      text-decoration: none;
+      transition: opacity 0.15s ease-in-out;
+      width: 2em;
+      font-size: 1rem;
+      &.on {
+        opacity: var(--icon-opacity-hover);
+        color: var(--theme-color-controlLightweightActive);
+        background-color: var(--theme-color-interactiveActive);
+      }
+    }
+    @media (hover: hover) {
+      & a:hover {
+        color: var(--theme-color-controlHover);
+        background-color: var(--background-modifier-hover);
+      }
+    }
+  }
+  .leaflet-touch .leaflet-bar a:first-child,
+  .leaflet-touch .leaflet-bar a:last-child {
+    border-radius: var(--clickable-icon-radius);
+  }
+  .cm-embed-block .block-language-mapview .map-view-main {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-left: var(--embed-border-left);
+    border-radius: var(--radius-m);
+    border-right: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    margin: 0;
+    /* Open button */
+    & .map-view-graph-controls > .mv-map-control.mv-control-button {
+      border: none;
+      box-shadow: var(--theme-shadow-control);
+      background-color: var(--theme-color-controlBgLowWeight);
+      color: var(--theme-color-controlText);
+      font-size: var(--font-ui-smaller);
+      line-height: var(--line-height-tight);
+      min-height: 0;
+      padding: 0.25em 0.5em;
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+    & .map-view-graph-controls > .mv-map-control.mv-control-button :focus {
+      box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
+      outline: none;
+    }
+    @media (hover: hover) {
+      & .map-view-graph-controls > .mv-map-control.mv-control-button :hover {
+        border: none;
+        background: var(--theme-color-controlBgHover);
+        color: var(--theme-color-controlTextHover);
+      }
+    }
+  }
+  /* Map view preset save-as modal */
+  .modal-content:has(.newPresetDialogGrid) {
+    padding: 1rem 1rem 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    .newPresetDialogLine:last-child {
+      display: flex;
+      justify-content: flex-end;
+      > button {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .geolink:has(.cm-underline) {
+    /* Don't make a double underline */
+    text-decoration-line: none;
+  }
+}

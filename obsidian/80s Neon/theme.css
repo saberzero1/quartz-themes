@@ -267,7 +267,7 @@ li > p {
 }
 
 ul li:not(.task-list-item)::before {
-  content: "•";
+  content: '•';
   /* 🤔 need to think of some better bullet chars */
   color: var(--accent-2);
   display: inline-block;
@@ -279,11 +279,11 @@ ul li:not(.task-list-item)::before {
 }
 
 ul ul li:not(.task-list-item)::before {
-  content: "◦";
+  content: '◦';
 }
 
 ul ul ul li:not(.task-list-item)::before {
-  content: "▪";
+  content: '▪';
 }
 
 /* 3.9.2. Numbered lists */
@@ -300,7 +300,7 @@ ol > li:not(.task-list-item)::before,
 ul ol > li:not(.task-list-item)::before,
 ul ul ol > li:not(.task-list-item)::before,
 ul ul ul ol > li:not(.task-list-item)::before {
-  content: counter(li) ".";
+  content: counter(li) '.';
   color: var(--accent-2);
   font-weight: normal;
   display: inline-block;
@@ -328,7 +328,7 @@ ul ul ul ol > li:not(.task-list-item)::before {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   color: var(--accent-2);
   font-size: 1em;

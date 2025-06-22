@@ -1,0 +1,168 @@
+body.theme-dark {
+  /* dark mode quick hack */
+  --simple-white-1: hsla(215, 17%, 10%, 1);
+  --simple-white-2: hsla(214, 24%, 15%, 1);
+  --simple-white-3: hsla(212, 17%, 22%, 0.9);
+  --simple-white-6: hsla(212, 17%, 0%, 0.3);
+  --simple-white-4: hsla(215, 22%, 13%, 1);
+  --simple-white-5: hsla(207, 10%, 10%, 0.1);
+  --simple-tran: hsla(207, 10%, 10%, 0);
+  --simple-black-1: hsla(0, 0%, 73%, 1);
+  --simple-black-2: hsla(213, 33%, 65%, 1);
+  --simple-gray-1: hsla(0, 0%, 83%, 1);
+  --simple-gray-2: hsla(210, 25%, 5%, 0.3);
+  --simple-gray-3: hsla(210, 15%, 50%, 0.4);
+  --simple-gray-4: hsla(210, 15%, 70%, 0.5);
+  --simple-gray-5: hsla(207, 17%, 10%, 0.5);
+  --simple-gray-6: hsla(217, 28%, 90%, 0.9);
+  --simple-gray-7: hsla(217, 18%, 50%, 0.9);
+  --simple-yellow: hsla(45, 63%, 43%, 1);
+  --simple-blue-3: hsla(245, 60%, 67%, 1);
+  --custom-titlebar-bg: var(--background-modifier-cover);
+  --color-black: var(--simple-black-1);
+  --color-dark-gray: var(--simple-gray-1);
+  --color-accent: var(--simple-blue-1);
+  --color-accent-alt: var(--simple-blue-2);
+  --color-accent-dark: var(--simple-blue-3);
+  --color-gray: var(--simple-gray-2);
+  --color-light-gray: var(--simple-gray-3);
+  --color-medium-gray: var(--simple-gray-4);
+  --modal-group-border: var(--simple-gray-6);
+  --button-selected: var(--simple-white-6);
+  --button-hover: var(--simple-white-6);
+  --button-selected-hover: var(--simple-white-3);
+  --window-shadow: 0 1px 3px var(--simple-white-5);
+  --window-shadow2: 0 0 9px var(--simple-white-6);
+  --window-shadow-hover: 0 3px 5px var(--simple-white-6);
+  --window-shadow-transparent: 0 3px 5px transparent;
+  --border: 1px solid var(--simple-gray-5);
+  --background-primary: var(--simple-white-2);
+  --tab-outline-color: var(--simple-white-2);
+  --divider-color: var(--simple-gray-5);
+  --background-secondary-alt: var(--simple-white-2);
+  --background-tertiary: var(--simple-white-3);
+  --background-primary-alt: var(--simple-white-6);
+  --background-secondary-bg-4-bt: var(--simple-tran);
+  --background-accent: var(--simple-blue-1);
+  --background-fourth: var(--simple-white-3);
+  --background-fifth: var(--simple-white-5);
+  --background-sixth: var(--simple-white-5);
+  --text-color-code: var(--simple-orang-1);
+  --text-normal: var(--simple-black-1);
+  --text-error: var(--simple-red-1);
+  --text-faint: var(--simple-gray-6);
+  --text-highlight-bg: var(--simple-yellow);
+  --text-bold: var(--simple-black-2);
+  --text-em: var(--simple-gray-6);
+  --text-muted: hsl(218, 17%, 58%);
+  --background-modifier-error: var(--simple-red-1);
+  --background-modifier-border: var(--simple-gray-5);
+  --accent-h: 209;
+  --accent-s: 60%;
+  --accent-l: 55%;
+  --indentation-guide: var(--simple-gray-3);
+  --search-result-background: var(--simple-gray-2);
+  --scrollbar-bg: transparent;
+}
+body-simplicity-topaz .workspace-tab-header.is-active {
+  --tab-background-active: var(--background-primary);
+  --tab-outline-width: var(--simple-gray-5);
+}
+body-simplicity-topaz
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  background-color: var(--tab-background-active);
+}
+body.theme-dark:not(.background-settings-workplace-background-image)
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  background-color: var(--simple-white-4);
+}
+body.setting-default-frosted-glass.theme-dark .modal-bg {
+  background-color: var(--bg-color-settings-3);
+  backdrop-filter: blur(5px);
+}
+body-simplicity-topaz
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+body-simplicity-topaz
+  .workspace-split.mod-horizontal
+  > .workspace-leaf
+  .view-header,
+body-simplicity-topaz
+  .workspace-split.mod-vertical
+  > .workspace-leaf
+  .view-header {
+  background-color: transparent;
+}
+body:not(.is-mobile).background-settings-workplace-background-image
+  .workspace-split.mod-root {
+  background-color: var(--simple-tran);
+}
+body.background-settings-workplace-background-image .workspace-tabs,
+body.background-settings-workplace-background-image
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+body.background-settings-workplace-background-image
+  div.workspace-ribbon.mod-left:before {
+  background-color: var(--background-secondary-bg-4-bt);
+}
+body.theme-dark .view-content {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+body-simplicity-topaz
+  .workspace-split.mod-horizontal
+  > .workspace-leaf.mod-active
+  .view-header
+  .view-header-title,
+body-simplicity-topaz
+  .workspace-split.mod-vertical
+  > .workspace-leaf.mod-active
+  .view-header
+  .view-header-title {
+  color: var(--simple-black-2);
+  text-shadow: 0px 0px 0px rgba(145, 237, 232, 1);
+}
+body.background-settings-workplace-background-image.theme-dark {
+  --background-primary-alt-bg-4-bt: var(--simple-tran);
+  --background-secondary-bg-4-bt: var(--simple-tran);
+  --background-secondary-alt-bg-4-bt: var(--simple-tran);
+  --background-primary: var(--simple-gray-2);
+}
+body.background-settings-workplace-background-image .webpage-container::before {
+  filter: blur(var(--blur-depth)) brightness(calc(var(--brightness-4-bg) - 0.5))
+    saturate(var(--saturate-4-bg));
+}
+body.background-settings-workplace-background-image .workspace::before {
+  filter: blur(var(--blur-depth)) brightness(calc(var(--brightness-4-bg) - 0.5))
+    saturate(var(--saturate-4-bg));
+}
+body.background-settings-workplace-background-image:is(
+    .background-settings-workplace-waves,
+    .background-settings-workplace-waves2
+  ).theme-dark
+  .workspace {
+  background: var(--simple-white-2);
+}
+body.transparent-tab-style.theme-dark:not(
+    .background-settings-workplace-background-image
+  )
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  background-color: var(--tab-background-active);
+}
+body.bt-bubble-layout.bt-bubble-not-file-tree:not(
+    .background-settings-workplace-background-image
+  )
+  .workspace-leaf-content:is(
+    [data-type='file-explorer'],
+    [data-type='mk-file-view']
+  ),
+body.bt-bubble-layout:not(.background-settings-workplace-background-image)
+  .workspace-split
+  .workspace-leaf-content:not(
+    :is([data-type='file-explorer'], [data-type='mk-file-view'])
+  ) {
+  background-color: var(--background-primary-alt);
+}

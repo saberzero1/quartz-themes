@@ -1,0 +1,20 @@
+.tag-button {
+  --tag-background: var(--background-primary);
+  --tag-background-hover: var(--code-background);
+  --tag-color: var(--text-normal);
+  --tag-color-hover: var(--text-normal);
+  --tag-radius: 0.8em;
+  --tag-border-color: var(--background-modifier-border);
+  --tag-border-width: 1px;
+  --tag-border-color-hover: var(--color-base-25);
+}
+
+.tag-button a.tag,
+.tag-button .editor .cm-hashtag {
+  -webkit-box-shadow: 0 -1px 7px -1px rgb(118 118 118 / 20%) inset;
+}
+
+.tag-button a.tag:hover,
+.tag-button .editor .cm-hashtag:hover {
+  -webkit-box-shadow: 0 -1px 7px -1px rgb(118 118 118 / 10%) inset;
+}

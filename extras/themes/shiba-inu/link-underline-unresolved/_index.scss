@@ -1,0 +1,19 @@
+body.link-underline-unresolved * > .internal-link.is-unresolved,
+body.link-underline-unresolved
+  .cm-hmd-internal-link
+  .is-unresolved
+  .cm-underline,
+body.link-underline-unresolved
+  .markdown-source-view.mod-cm6
+  .cm-hmd-internal-link
+  .is-unresolved,
+body.link-underline-unresolved .markdown-source-view.mod-cm6 .is-unresolved,
+body.link-underline-unresolved
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link.is-unresolved,
+body.link-underline-unresolved
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link.is-unresolved
+  > * {
+  text-decoration: none !important;
+}

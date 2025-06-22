@@ -215,7 +215,7 @@ strong,
 /* Checkbox */
 /*************/
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   -webkit-appearance: none;
   border-radius: 30%;
   border: 2px solid #c42532;
@@ -224,8 +224,8 @@ input[type="checkbox"] {
 }
 
 .checklist-plugin-main .group .compact > .toggle .checked,
-.is-flashing input[type="checkbox"]:checked,
-input[type="checkbox"]:checked {
+.is-flashing input[type='checkbox']:checked,
+input[type='checkbox']:checked {
   background-color: var(--background-secondary) !important;
   border: 2px solid #145285;
   background-position: center;

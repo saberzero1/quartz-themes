@@ -1,0 +1,11 @@
+body.quote-theme.quote-border .markdown-rendered blockquote {
+  border: var(--block-outline-width) solid var(--accent-inactive);
+  transition: var(--animation);
+  box-shadow: none;
+}
+body.quote-theme.quote-border .markdown-rendered blockquote:hover {
+  border-color: var(--accent-active);
+}
+body.quote-theme.quote-border .markdown-rendered blockquote blockquote {
+  margin: var(--block-outline-width);
+}

@@ -1,0 +1,53 @@
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs.mod-top.mod-top-left-space
+  .workspace-tab-header-container,
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs.mod-top.mod-top-right-space
+  .workspace-tab-header-container,
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top.mod-top-left-space
+  .workspace-tab-header-container,
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top.mod-top-right-space
+  .workspace-tab-header-container {
+  display: none;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container,
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container {
+  transition:
+    opacity var(--default-animation-duration) ease-in-out,
+    background-color var(--default-animation-duration) ease-in-out;
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container:not(:hover),
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container:not(:hover) {
+  border: 0;
+  background-color: var(--background-secondary);
+}
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container:not(:hover)
+  .workspace-tab-header,
+:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container:not(:hover)
+  .workspace-tab-header {
+  opacity: 0;
+}

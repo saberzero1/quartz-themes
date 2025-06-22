@@ -400,7 +400,7 @@ h6 {
   --embed-title-size: calc(var(--font-text-size) * 0.85);
   --title-display: block;
 }
-.markdown-embed[alt=""] {
+.markdown-embed[alt=''] {
   /* Use an empty alt to hide the title */
   --title-display: none;
 }
@@ -739,10 +739,10 @@ button.kanban-plugin__new-item-button:hover {
   display: none;
 }
 .internal-link.BC-Link.BC-prev::before {
-  content: "←";
+  content: '←';
 }
 .internal-link.BC-Link.BC-next::after {
-  content: "→";
+  content: '→';
 }
 
 /* Replace trail dingbats */
@@ -751,7 +751,7 @@ button.kanban-plugin__new-item-button:hover {
 }
 .BC-trail-sep::after {
   font-size: 1rem;
-  content: " \› ";
+  content: ' \› ';
 }
 .internal-link.BC-Link {
   /* Force pointer (sidebar) */
@@ -813,7 +813,7 @@ li.svelte-1p44ezg.svelte-1p44ezg::marker {
   /*Fix overwrite*/
   font-size: inherit;
 }
-.setting-item-heading[data-level="0"] {
+.setting-item-heading[data-level='0'] {
   font-size: 2rem;
   padding-top: 0;
   margin-top: 0;
@@ -821,19 +821,19 @@ li.svelte-1p44ezg.svelte-1p44ezg::marker {
 .setting-item-heading {
   font-size: 1.25rem;
 }
-.style-settings-heading[data-level="0"] + .style-settings-container {
+.style-settings-heading[data-level='0'] + .style-settings-container {
   padding-left: 0;
 }
 .style-settings-container {
   padding-left: 2ch;
 }
-.setting-item-heading[data-id="buenavista"]
+.setting-item-heading[data-id='buenavista']
   > .setting-item-info
   > .setting-item-name::after {
   margin-left: 1.5ch;
   font-size: 0.75rem;
   font-weight: normal;
-  content: "by oqipo";
+  content: 'by oqipo';
 }
 
 /*-------- OUTLINE PLUGIN */

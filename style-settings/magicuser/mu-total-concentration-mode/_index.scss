@@ -1,0 +1,22 @@
+body.is-mobile .view-header,
+body.is-mobile .workspace-tab-header-container,
+body.is-mobile .mobile-navbar {
+  display: none;
+}
+body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon.mod-left,
+body:not(.is-mobile) .sidebar-toggle-button.mod-left,
+body:not(.is-mobile) .status-bar,
+body:not(.is-mobile) .view-header,
+body:not(.is-mobile) .workspace-tab-header-container,
+body:not(.is-mobile) .titlebar-button-container.mod-right {
+  display: none;
+}
+body:not(.is-mobile, .mu-distraction-free-mode, ).mu-cards-interface
+  .workspace-tab-container {
+  margin-bottom: 16px;
+}
+body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
+  border-radius: 8px;
+  margin: 8px;
+  border: 1px solid var(--mu-cards-border);
+}

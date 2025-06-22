@@ -175,7 +175,7 @@ ul ul {
   position: relative;
 }
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid;
   /*border-image: linear-gradient(#390d5f, var(--interactive-accent), #390d5f); /*purple*/
   border-image: linear-gradient(
@@ -197,7 +197,7 @@ ol ol {
   position: relative;
 }
 ol ol::before {
-  content: "";
+  content: '';
   border-left: 1px solid;
   border-image: linear-gradient(
     rgba(6, 217, 63, 0.1),
@@ -265,7 +265,7 @@ blockquote:before {
   font:
     14px/20px italic Times,
     serif;
-  content: "“";
+  content: '“';
   font-size: 3em;
   line-height: 0.1em;
   vertical-align: -0.4em;

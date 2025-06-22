@@ -1,0 +1,60 @@
+.o-red {
+  --accent-h: 5 !important;
+  --accent-s: 90% !important;
+  --accent-l: 56% !important;
+  --color-accent-rgb: var(--color-red-rgb);
+}
+
+.o-red-l.theme-light {
+  --accent-h: 13;
+  --accent-s: 68%;
+  --accent-l: 63%;
+  --color-red-rgb: 154, 69, 60;
+  --color-red: #9a453c;
+  --color-red-hsl: 6, 44%, 42%;
+  --color-green-rgb: 97, 113, 91;
+  --color-green: #61715b;
+  --color-green-hsl: 104, 11%, 40%;
+  --color-orange-rgb: 160, 116, 75;
+  --color-orange: #a0744b;
+  --color-orange-hsl: 29, 36%, 46%;
+  --color-yellow-rgb: 154, 143, 81;
+  --color-yellow: #9a8f51;
+  --color-yellow-hsl: 51, 31%, 46%;
+  --color-cyan-rgb: 16, 77, 112;
+  --color-cyan: #104d70;
+  --color-cyan-hsl: 202, 75%, 25%;
+  --color-blue-rgb: 51, 83, 138;
+  --color-blue: #33538a;
+  --color-blue-hsl: 218, 45%, 37%;
+  --color-purple-rgb: 95, 81, 112;
+  --color-purple: #5f5170;
+  --color-purple-hsl: 267, 16%, 38%;
+  --color-pink-rgb: 141, 72, 63;
+  --color-pink: #8d483f;
+  --color-pink-hsl: 7, 38%, 40%;
+  --color-base-00: #dacdcd;
+  /* background-primary */
+  --color-base-05: #cabbbb;
+  /* background-secondary-alt in light mode, for some reason */
+  --color-base-10: #b39696;
+  /* background-primary-alt */
+  --color-base-20: #b9a5a5;
+  /* background-secondary */
+  --color-base-25: #bd9898;
+  /* idk lol */
+  --color-base-30: #b18a8a;
+  /* background-modifier-border */
+  --color-base-35: #5a3a3a;
+  /* background-modifier-border-hover */
+  --color-base-40: var(--color-base-30);
+  /* background-modifier-border-focus */
+  --color-base-50: #5a3a3a;
+  /* text-faint */
+  --color-base-60: #4e3434;
+  /* also no clue */
+  --color-base-70: #231a1a;
+  /* text-muted */
+  --color-base-100: #0b0909;
+  /* text-normal */
+}

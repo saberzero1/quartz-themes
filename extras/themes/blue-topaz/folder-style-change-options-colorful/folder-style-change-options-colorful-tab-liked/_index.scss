@@ -1,0 +1,87 @@
+body.bt-toggle-colorful-folder.folder-colorful-custom
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: none;
+  border-left: 2px solid var(--folder-colorful-custom-color);
+  filter: var(--tab-color);
+  @supports (
+    border: 1px solid
+      color-mix(
+        in srgb,
+        var(--folder-colorful-custom-color) 30%,
+        var(--background-secondary)
+      )
+  ) {
+    border: 1px solid
+      color-mix(
+        in srgb,
+        var(--folder-colorful-custom-color) 30%,
+        var(--background-secondary)
+      );
+  }
+}
+
+body.bt-toggle-colorful-folder.folder-colorful-custom
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder.is-collapsed
+  > .tree-item-self.is-clickable.nav-folder-title::before {
+  background-color: var(--folder-colorful-custom-color);
+  filter: var(--tab-color);
+}
+
+body.bt-toggle-colorful-folder.folder-colorful-custom
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  > .tree-item-self.is-clickable.nav-folder-title::before {
+  background-color: var(--folder-colorful-custom-color);
+  filter: var(--tab-color);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: 1px solid
+    color-mix(in srgb, var(--tab-color) 30%, var(--background-secondary));
+  margin: 5px 4px 5px 0;
+  border-radius: 3px;
+  border-left: 3px solid var(--tab-color);
+}
+
+body.is-mobile.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: 1px solid var(--background-modifier-border);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder.is-collapsed
+  > .tree-item-self.is-clickable.nav-folder-title::before {
+  content: '';
+  width: 6px;
+  height: 20px;
+  position: absolute;
+  margin-left: -30px;
+  border-radius: 3px 0px 0px 3px;
+  background-color: var(--tab-color);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  > .tree-item-self.is-clickable.nav-folder-title::before {
+  content: '';
+  width: 13px;
+  height: 20px;
+  position: absolute;
+  margin-left: -37px;
+  border-radius: 3px 0px 0px 3px;
+  background-color: var(--tab-color);
+}

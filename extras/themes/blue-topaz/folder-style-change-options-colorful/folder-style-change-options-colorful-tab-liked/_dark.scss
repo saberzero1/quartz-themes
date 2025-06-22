@@ -1,0 +1,15 @@
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: none;
+  /* 支持 color-mix 的浏览器使用 color-mix */
+  @supports (
+    border: 1px solid
+      color-mix(in srgb, var(--tab-color) 15%, var(--background-secondary))
+  ) {
+    border: 1px solid
+      color-mix(in srgb, var(--tab-color) 15%, var(--background-secondary));
+  }
+  border-left: 3px solid var(--tab-color);
+}

@@ -1,0 +1,10 @@
+.canvas-wrapper {
+  background-color: var(--background-secondary);
+}
+.canvas-controls button,
+.canvas-card-menu {
+  background-color: var(--background-primary);
+}
+.canvas-card-menu .canvas-card-menu-button svg {
+  fill: var(--background-primary);
+}

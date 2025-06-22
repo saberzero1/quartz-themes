@@ -1,0 +1,21 @@
+.callout-floating .callout,
+.callout-floating .markdown-source-view.mod-cm6 .callout {
+  margin: 13px 0px;
+  border-radius: var(--radius-s);
+  border: 1.2px var(--line-style) rgba(var(--callout-color), 0.7);
+  box-shadow: var(--shadow-s);
+  background-color: transparent;
+  padding: 0px;
+}
+
+.callout-floating .callout-title,
+.callout-floating .markdown-source-view.mod-cm6 .callout-title {
+  background-color: rgba(var(--callout-color), 0.2);
+  padding: 10px;
+  min-width: 100%;
+}
+
+.callout-floating .callout-content,
+.callout-floating .markdown-source-view.mod-cm6 .callout-content {
+  padding: 0px 10px;
+}

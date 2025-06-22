@@ -1,0 +1,22 @@
+.color-scheme-discord.theme-dark {
+  /*
+                hsl(220, 8%, 23%) -- main pane/chat window
+                hsl(223, 7%, 20%) -- sidebar for channels (dark)
+                hsl(218, 8%, 27%) -- input for chats (lighter)
+                hsl(216, 7%, 14%) -- sidebar for servers (darker)
+                hsl(225, 8%, 10%) -- popup (almost black)
+                hsl(217, 8%, 34%) -- buttons (lightest)
+            */
+  --background-primary: hsl(220, 8%, 23%);
+  --background-modifier-cover: hsl(223, 7%, 20%);
+  --background-secondary: hsl(218, 8%, 27%);
+  --background-secondary-alt: hsl(218, 8%, 21%);
+  /* 6% darker than secondary */
+  --background-accent: hsl(223, 7%, 30%);
+  /* 10% lighter than modifier-cover */
+  --background-accent-alt: hsl(220, 8%, 19%);
+  /* 4% darker shade of background-primary, active line and backlinks */
+  /* my custom variables */
+  --background-modifier-backlinks: hsl(220, 8%, 21%);
+  /* for backlinks, 2% darker than primary */
+}

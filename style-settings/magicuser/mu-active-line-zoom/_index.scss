@@ -1,0 +1,19 @@
+body .view-content .cm-line.cm-active {
+  border: 1px dotted var(--text-faint);
+  font-size: 1.5em;
+  padding: 0;
+  margin-inline-start: 0;
+}
+body .view-content .cm-line.cm-active .cm-header {
+  font-size: 1.5em !important;
+}
+body .view-content .cm-line.cm-active input[type='checkbox'] {
+  margin-inline-start: 8px;
+}
+body
+  .markdown-reading-view
+  > div
+  > div
+  > div:not(.mod-header, .obsidian-banner-wrapper):active {
+  font-size: 1.5em !important;
+}

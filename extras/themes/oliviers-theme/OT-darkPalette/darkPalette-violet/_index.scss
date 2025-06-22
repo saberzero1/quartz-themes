@@ -1,0 +1,59 @@
+.theme-dar.accentColor-darkMode-shade {
+  --accent-h: 264 !important;
+  --accent-s: 40% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #ac94d1 !important;
+  --color-accent-2: #5e3d8f !important;
+  --color-accent-3: #4e3377 !important;
+  --OT-color-on-accent-1: #170f24 !important;
+  --OT-color-muted-on-accent-1: #3f295f !important;
+  --OT-color-on-accent-2: #d8c5f4 !important;
+  --OT-color-on-accent-3: #c8b7e1 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #9a7cc7;
+  --OT-button-cta-text-normal: #27193c;
+  /*    --OT-view-header-title-focus-color:        #AC94D1; */
+  /*    --OT-view-header-title-no-focus-color:    #8864BD; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+
+.theme-dar.accentColor-darkMode-alternative-1 {
+  --accent-h: 84 !important;
+  --accent-s: 50% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #9bc859 !important;
+  --color-accent-2: #5d802a !important;
+  --color-accent-3: #41591e !important;
+  /*    --OT-color-on-accent-1:            #D9EABF    !important; */
+  --OT-color-muted-on-accent-1: #4b6622 !important;
+  --OT-color-on-accent-2: #e0eecc !important;
+  --OT-color-on-accent-3: #d9eabf !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.theme-dar.accentColor-darkMode-alternative-2 {
+  --accent-h: 174 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #99ddd6 !important;
+  --color-accent-2: #40bfb3 !important;
+  --color-accent-3: #26736b !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #2a7f77 !important;
+  --OT-color-on-accent-2: #d9f2f0 !important;
+  --OT-color-on-accent-3: #d9f2f0 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+
+.theme-dar.inkColor-darkMode-default
+  .markdown-source-view.mod-cm6
+  .cm-editor:before {
+  /*    couleur de la pastille:    #A982E8    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23A982E8" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

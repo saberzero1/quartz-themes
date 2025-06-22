@@ -1,0 +1,9 @@
+body.pt-accent-color-pink-dt {
+  --interactive-accent-base-hsl: var(--color-pink-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-pink-text-hsl);
+  --interactive-accent-base: var(--color-pink-base);
+  --interactive-accent-tint: var(--color-pink-tint);
+  --interactive-accent-text: var(--color-pink-text);
+  --interactive-accent-hover: var(--color-pink-tint);
+}

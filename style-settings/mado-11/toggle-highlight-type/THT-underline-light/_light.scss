@@ -1,0 +1,11 @@
+bod.theme-light
+  :is(
+    mark,
+    .cm-s-obsidian span.cm-formatting-highlight,
+    .cm-s-obsidian span.cm-highlight,
+    .search-result-file-matched-text
+  ) {
+  border-bottom: 2px solid var(--text-highlight-bg);
+  color: var(--color-highlight);
+  background: none;
+}

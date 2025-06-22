@@ -1,8 +1,8 @@
 /* === import special font that doesn't render hashtags (#) */
 @font-face {
-  font-family: "Formular";
-  src: url("data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAXMAA4AAAAACOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAAFZAAAABYAAAAWABMABkdQT1MAAAV8AAAAIAAAACBEdkx1R1NVQgAABZwAAAAvAAAAMCN+JIxPUy8yAAACDAAAAEcAAABgII84HWNtYXAAAAJUAAAAMQAAADwAOwB9Z2FzcAAABVwAAAAIAAAACP//AANnbHlmAAABRAAAACgAAAAoKX11F2hlYWQAAAGcAAAANgAAADYW4dEnaGhlYQAAAewAAAAgAAAAJA/2Cc9obXR4AAAB1AAAABgAAAAYDeYAd2xvY2EAAAGMAAAADQAAAA4APAA8bWF4cAAAAWwAAAAeAAAAIABLAEVuYW1lAAACiAAAAq4AAAXocAf8uHBvc3QAAAU4AAAAJAAAADNVXVC5AAIAdwAAA8MFtgADAAcAADMRIRElIREhdwNM/T8CNf3LBbb6SoEEtHjaY2BkYGBgY3BiYGYAASYgZmQAiTmA+QwACZIAkQAAeNpjYGAQQUAAAt4AeQAAAAABAAAAAgCDDlp/b18PPPUACwgAAAAAAM8sf4QAAAAA4KMGkP+m/lgITAc7AAAACAACAAAAAAAABDkAdwAAAAACqgAAAAAAAAI5AAAEygAAeNpjYGRgYLP8Z8l4krv//zIGBg4fBqAICmADAH24BNx42mNgZrnJOIGBlYGB1ZjlLAMDwywIzXSWIY0pC0gzIAFGBnTgwKDAoMxm+c+S8ST7XcY3CgwM08EKfzCdAlIKDEwAU4UM+QB42mNgYGBiYGBgBmIRIMkIplkYNIA0G5BmBMoqMCj//w/kg+n/T/4/AqsCAgCI4wiyAAAAeNqtUrtu1EAUvfZu3g/RISGERqJJpMReVkFityKJlBSRUEgRiXJsjx+s12ONZ9dxw5/QUFJS8QF8AZ9CS8Px7CRrIJEosOWZc1/nnrkeInrmFOTQ4nmHb4EdWoe1wC6tEbe4Ry8ptbjfyVmhHfpo8WrHv0Zv6bPF67RHPy3e6ODNTt8teuw8t3i7g3dozxlbvEtPnQBKnP4GrC/OB4sdeuQOLHZp131tcY/eu28s7ndyVuiJ+9Xi1Y5/jT653y1ep8uetnijgzc7fbfI632zeLuDd5D/w+JdetU/OZVlo7Ik1Wwv3GfDwYujQywjFjTsnDe8EOyEJxGvuIJxwK4bHqaiyvmcXWQqy0UxkR47znNmSCqmRCXUXETemVTTWc7VlUjabUHW5VpS3TGN2W3VuJUyuhaqymTBht5gMLzMBa8EGsRCMS2ZTgVbqq9EqNvUWCoTiWWhmVY8ElOuJoxrrbJgZlIKqbNQVN6/ni/Vuhz7fl3XXqBkXcTyxpMqOS4aNoOgOtOpnGlWCjXNKqM3q1ipZJoFmRaRLe+W+jkEFKHw6ZQkldSQoowS3GJNDLcwpH3sQxrQCzqiQ4tG8AXIZXSOu9/gK0jAOgFKKMJa4VM2coDItcEheAViOfAc3gv0avvl8BY0gQIP3mPYOfalkspYbaXAPscaIfMM+YqmNDN8iq7gT+6srrKHdN2n6m9NY3T/s9f4biojsLSqKtRIVLR+D5EB9kvDwo3uxQlik8twJmnW1ETum31bEwLdssZGwbImNn5tPAo9IninRtsEPg6vNnwBNC9ZCuytFZoTe//9/6Wmb4n5+Hhr83rQoBCrkdOqvoGnPUuCP12YWzSzE6rB1Z5PGs0MPMJMPUN8Od/M3IfScKbmhG1Veyd+7/5QVx96FxMozOr/AnWqLjEAAHjaY2BiAIP/DAxpDNgAGxAzMjAxMjEwM7Cx+IX6+AAAP3gCvAAAAAH//wACAAEAAAAMAAAAAAAAAAIAAQADAAUAAQAAAAEAAAAKABwAHgABREZMVAAIAAQAAAAA//8AAAAAAAB42mNgZGBg4GLQYdBjYHZx8wlhEEmuLMphkMtJLMljkGNgAcoy/P/PAAcArlkHTgA=")
-    format("woff");
+  font-family: 'Formular';
+  src: url('data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAXMAA4AAAAACOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAAFZAAAABYAAAAWABMABkdQT1MAAAV8AAAAIAAAACBEdkx1R1NVQgAABZwAAAAvAAAAMCN+JIxPUy8yAAACDAAAAEcAAABgII84HWNtYXAAAAJUAAAAMQAAADwAOwB9Z2FzcAAABVwAAAAIAAAACP//AANnbHlmAAABRAAAACgAAAAoKX11F2hlYWQAAAGcAAAANgAAADYW4dEnaGhlYQAAAewAAAAgAAAAJA/2Cc9obXR4AAAB1AAAABgAAAAYDeYAd2xvY2EAAAGMAAAADQAAAA4APAA8bWF4cAAAAWwAAAAeAAAAIABLAEVuYW1lAAACiAAAAq4AAAXocAf8uHBvc3QAAAU4AAAAJAAAADNVXVC5AAIAdwAAA8MFtgADAAcAADMRIRElIREhdwNM/T8CNf3LBbb6SoEEtHjaY2BkYGBgY3BiYGYAASYgZmQAiTmA+QwACZIAkQAAeNpjYGAQQUAAAt4AeQAAAAABAAAAAgCDDlp/b18PPPUACwgAAAAAAM8sf4QAAAAA4KMGkP+m/lgITAc7AAAACAACAAAAAAAABDkAdwAAAAACqgAAAAAAAAI5AAAEygAAeNpjYGRgYLP8Z8l4krv//zIGBg4fBqAICmADAH24BNx42mNgZrnJOIGBlYGB1ZjlLAMDwywIzXSWIY0pC0gzIAFGBnTgwKDAoMxm+c+S8ST7XcY3CgwM08EKfzCdAlIKDEwAU4UM+QB42mNgYGBiYGBgBmIRIMkIplkYNIA0G5BmBMoqMCj//w/kg+n/T/4/AqsCAgCI4wiyAAAAeNqtUrtu1EAUvfZu3g/RISGERqJJpMReVkFityKJlBSRUEgRiXJsjx+s12ONZ9dxw5/QUFJS8QF8AZ9CS8Px7CRrIJEosOWZc1/nnrkeInrmFOTQ4nmHb4EdWoe1wC6tEbe4Ry8ptbjfyVmhHfpo8WrHv0Zv6bPF67RHPy3e6ODNTt8teuw8t3i7g3dozxlbvEtPnQBKnP4GrC/OB4sdeuQOLHZp131tcY/eu28s7ndyVuiJ+9Xi1Y5/jT653y1ep8uetnijgzc7fbfI632zeLuDd5D/w+JdetU/OZVlo7Ik1Wwv3GfDwYujQywjFjTsnDe8EOyEJxGvuIJxwK4bHqaiyvmcXWQqy0UxkR47znNmSCqmRCXUXETemVTTWc7VlUjabUHW5VpS3TGN2W3VuJUyuhaqymTBht5gMLzMBa8EGsRCMS2ZTgVbqq9EqNvUWCoTiWWhmVY8ElOuJoxrrbJgZlIKqbNQVN6/ni/Vuhz7fl3XXqBkXcTyxpMqOS4aNoOgOtOpnGlWCjXNKqM3q1ipZJoFmRaRLe+W+jkEFKHw6ZQkldSQoowS3GJNDLcwpH3sQxrQCzqiQ4tG8AXIZXSOu9/gK0jAOgFKKMJa4VM2coDItcEheAViOfAc3gv0avvl8BY0gQIP3mPYOfalkspYbaXAPscaIfMM+YqmNDN8iq7gT+6srrKHdN2n6m9NY3T/s9f4biojsLSqKtRIVLR+D5EB9kvDwo3uxQlik8twJmnW1ETum31bEwLdssZGwbImNn5tPAo9IninRtsEPg6vNnwBNC9ZCuytFZoTe//9/6Wmb4n5+Hhr83rQoBCrkdOqvoGnPUuCP12YWzSzE6rB1Z5PGs0MPMJMPUN8Od/M3IfScKbmhG1Veyd+7/5QVx96FxMozOr/AnWqLjEAAHjaY2BiAIP/DAxpDNgAGxAzMjAxMjEwM7Cx+IX6+AAAP3gCvAAAAAH//wACAAEAAAAMAAAAAAAAAAIAAQADAAUAAQAAAAEAAAAKABwAHgABREZMVAAIAAQAAAAA//8AAAAAAAB42mNgZGBg4GLQYdBjYHZx8wlhEEmuLMphkMtJLMljkGNgAcoy/P/PAAcArlkHTgA=')
+    format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 /* =============== some quick design choices using variables ==================== */
 body {
   --font-interface-theme:
-    Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R";
+    Roboto, OpenSans, Inter, 'Noto Sans JP', 'UD Digi Kyokasho NK-R';
   --border-width: 2px;
   --inline-title-weight: 500;
   --inline-title-size: 2.5em;
@@ -233,7 +233,7 @@ body:not(.restore-ribbon):not(.is-phone)
 }
 
 /* remove the help button (because for most people, it's useless) */
-.side-dock-ribbon-action[aria-label="Help"] {
+.side-dock-ribbon-action[aria-label='Help'] {
   display: none;
 }
 
@@ -255,16 +255,16 @@ svg.lucide-folder-closed {
 
 /* attachments/gallery folders */
 .nav-files-container
-  .nav-folder-title[data-path*="Attachments"]
+  .nav-folder-title[data-path*='Attachments']
   svg.svg-icon.right-triangle,
 .nav-files-container
-  .nav-folder-title[data-path*="attachments"]
+  .nav-folder-title[data-path*='attachments']
   svg.svg-icon.right-triangle,
 .nav-files-container
-  .nav-folder-title[data-path*="Gallery"]
+  .nav-folder-title[data-path*='Gallery']
   svg.svg-icon.right-triangle,
 .nav-files-container
-  .nav-folder-title[data-path*="gallery"]
+  .nav-folder-title[data-path*='gallery']
   svg.svg-icon.right-triangle {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 22 22"%3E%3Cpath fill="currentColor" d="m5 17l4.5-6l3.5 4.5l2.5-3L19 17m1-11h-8l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"%2F%3E%3C%2Fsvg%3E');
 }
@@ -442,7 +442,7 @@ img {
   padding-left: 0px;
 }
 .dataview.inline-field-value::before {
-  content: "-";
+  content: '-';
   padding-right: 10px;
 }
 .dataview.inline-field-key {
@@ -462,7 +462,7 @@ body {
 a.tag,
 .cm-line:not(.cm-active) .cm-hashtag-begin {
   font-family:
-    "Formular", var(--font-text); /* Formular does not render hashtags */
+    'Formular', var(--font-text); /* Formular does not render hashtags */
 }
 /* show hashtag again on hover */
 a.tag:not(.basename-tag):hover,
@@ -559,22 +559,22 @@ th {
 }
 
 .HyperMD-header-1:not(.cm-active)::before {
-  content: "H1";
+  content: 'H1';
 }
 .HyperMD-header-2:not(.cm-active)::before {
-  content: "H2";
+  content: 'H2';
 }
 .HyperMD-header-3:not(.cm-active)::before {
-  content: "H3";
+  content: 'H3';
 }
 .HyperMD-header-4:not(.cm-active)::before {
-  content: "H4";
+  content: 'H4';
 }
 .HyperMD-header-5:not(.cm-active)::before {
-  content: "H5";
+  content: 'H5';
 }
 .HyperMD-header-6:not(.cm-active)::before {
-  content: "H6";
+  content: 'H6';
 }
 
 .inline-title {
@@ -654,7 +654,7 @@ body {
 
 .view-header,
 body:not(.is-mobile)
-  .workspace-leaf-content:not([data-type="markdown"])
+  .workspace-leaf-content:not([data-type='markdown'])
   .nav-header {
   background-color: var(--lower-accent) !important;
   color: var(--on-lower-accent);
@@ -669,7 +669,7 @@ body:not(.is-mobile)
   --text-muted: var(--on-lower-accent);
 }
 body:not(.is-mobile)
-  .workspace-leaf-content:not([data-type="markdown"])
+  .workspace-leaf-content:not([data-type='markdown'])
   .nav-header
   * {
   color: var(--on-lower-accent);
@@ -682,7 +682,7 @@ body:not(.is-mobile)
 }
 
 /* make nav header look the same */
-.workspace-leaf-content:not([data-type="markdown"]) .nav-header {
+.workspace-leaf-content:not([data-type='markdown']) .nav-header {
   height: calc(var(--header-height) - 2px);
 }
 .is-phone .nav-header {
@@ -692,7 +692,7 @@ body:not(.is-mobile)
 /* change the color of items in the view header for contrast */
 .view-header > *,
 body:not(.is-mobile)
-  .workspace-leaf-content[data-type="file-explorer"]
+  .workspace-leaf-content[data-type='file-explorer']
   .nav-header
   *,
 .view-header .clickable-icon,
@@ -728,14 +728,14 @@ body {
   --checklist-done-color: inherit;
 }
 
-input[type="checkbox"]:checked:after {
+input[type='checkbox']:checked:after {
   -webkit-mask-size: 85%;
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 21 21"%3E%3Cpath fill="currentColor" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"%2F%3E%3C%2Fsvg%3E');
 }
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   border: none;
 }
-input[type="checkbox"]:not(:checked) {
+input[type='checkbox']:not(:checked) {
   border: 2px solid var(--outline);
 }
 
@@ -780,7 +780,7 @@ input[type="checkbox"]:not(:checked) {
 
 /* ====== drawer header ====== */
 body {
-  --custom-drawer-header: "Bolt";
+  --custom-drawer-header: 'Bolt';
 }
 body:not(.is-phone) .workspace-drawer-header {
   height: var(--header-height);
@@ -808,7 +808,7 @@ body:not(.is-phone) .workspace-drawer-active-tab-header {
   visibility: visible;
 }
 .workspace-drawer-header-name::before {
-  content: "";
+  content: '';
   display: block;
   margin-right: 5px;
   background-color: currentColor;
@@ -878,21 +878,21 @@ body:not(.is-phone) .workspace-drawer-active-tab-header {
 }
 
 /* == new note and new folder buttons == */
-.workspace-drawer .nav-action-button[aria-label="New note"],
-.workspace-drawer .nav-action-button[aria-label="New folder"] {
+.workspace-drawer .nav-action-button[aria-label='New note'],
+.workspace-drawer .nav-action-button[aria-label='New folder'] {
   padding: 0px 7px;
 }
-.workspace-drawer .nav-action-button[aria-label="New note"]:after,
-.workspace-drawer .nav-action-button[aria-label="New folder"]:after {
+.workspace-drawer .nav-action-button[aria-label='New note']:after,
+.workspace-drawer .nav-action-button[aria-label='New folder']:after {
   text-transform: uppercase;
   margin-left: 7px;
   font-size: 13px;
 }
-.workspace-drawer .nav-action-button[aria-label="New note"]:after {
-  content: "Note";
+.workspace-drawer .nav-action-button[aria-label='New note']:after {
+  content: 'Note';
 }
-.workspace-drawer .nav-action-button[aria-label="New folder"]:after {
-  content: "Folder";
+.workspace-drawer .nav-action-button[aria-label='New folder']:after {
+  content: 'Folder';
 }
 
 /* ======= hide specific things ===== */
@@ -931,7 +931,7 @@ body {
   font-weight: 600 !important;
 }
 .nav-folder-title-content:before {
-  content: "";
+  content: '';
   margin-right: 5px;
 }
 
@@ -946,7 +946,7 @@ body {
   padding: 3px 0;
 }
 .nav-file-title-content:before {
-  content: "";
+  content: '';
   margin-right: 10px;
 }
 

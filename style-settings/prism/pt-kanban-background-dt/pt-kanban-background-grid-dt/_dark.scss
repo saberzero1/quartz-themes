@@ -1,0 +1,15 @@
+.pt-kanban-background-grid-dt .kanban-plugin__board {
+  background-image:
+    linear-gradient(
+      to right,
+      hsla(var(--background-secondary-hsl), 90%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      hsla(var(--background-secondary-hsl), 90%) 1px,
+      transparent 1px
+    );
+  background-attachment: local;
+  background-size: 8px 8px;
+}

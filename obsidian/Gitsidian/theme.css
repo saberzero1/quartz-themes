@@ -2,8 +2,8 @@
   background-color: #fff;
 }
 
-code[class*="language-"],
-pre[class*="language-"],
+code[class*='language-'],
+pre[class*='language-'],
 .token.punctuation,
 .token.operator {
   color: #24292e !important;
@@ -132,7 +132,7 @@ pre[class*="language-"],
 .markdown-preview-view hr:after,
 .markdown-preview-view hr:before {
   display: table;
-  content: "";
+  content: '';
 }
 
 .markdown-preview-view hr:after {
@@ -318,7 +318,7 @@ pre[class*="language-"],
 .markdown-preview-view:after,
 .markdown-preview-view:before {
   display: table;
-  content: "";
+  content: '';
 }
 
 .markdown-preview-view:after {
@@ -522,8 +522,8 @@ pre[class*="language-"],
 }
 
 .markdown-preview-view pre,
-.markdown-previev-view :not(pre) > code[class*="language-"],
-.markdown-preview-view pre[class*="language-"] {
+.markdown-previev-view :not(pre) > code[class*='language-'],
+.markdown-preview-view pre[class*='language-'] {
   color: #24292e;
   padding: 16px;
   overflow: auto;

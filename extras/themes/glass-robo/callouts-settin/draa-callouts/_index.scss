@@ -1,0 +1,49 @@
+.draa-callouts .callout {
+  position: relative;
+  margin-top: 10px !important;
+  overflow: visible;
+  background: rgba(var(--callout-color), 0.1);
+  border-radius: 8px;
+}
+
+.draa-callouts .callout .callout-content {
+  margin-top: 10px;
+}
+
+.draa-callouts .callout .callout-title {
+  overflow: hidden;
+  position: absolute;
+  top: -18px;
+  left: 15px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 8px solid
+    var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
+
+.draa-callouts .callout .callout-title .callout-title-inner {
+  z-index: 15;
+}
+
+.draa-callouts .callout .callout-title::before {
+  content: ' ';
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--callout-color), 0.4);
+  z-index: 10;
+}
+
+.draa-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title {
+  left: unset;
+  right: 15px;
+}

@@ -1,0 +1,9 @@
+.is-mobile .mobile-toolbar {
+  height: auto;
+}
+.is-mobile
+  .mobile-toolbar
+  .mobile-toolbar-options-container
+  .mobile-toolbar-options-list {
+  display: flex !important;
+}

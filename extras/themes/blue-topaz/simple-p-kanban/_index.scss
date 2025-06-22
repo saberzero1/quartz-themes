@@ -1,0 +1,10 @@
+body.simple-p-kanban .kanban ul:first-child > li:nth-of-type(n) {
+  border-top: none !important;
+}
+
+body.simple-p-kanban
+  .callout.callout[data-callout*='kanban']
+  ul:first-child
+  > li:nth-of-type(n) {
+  border-top: none !important;
+}

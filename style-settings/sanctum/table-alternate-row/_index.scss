@@ -1,0 +1,8 @@
+.cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr:nth-child(odd),
+.markdown-rendered table tbody tr:nth-child(odd),
+.markdown-rendered .table-view-table tbody tr:nth-child(odd) {
+  background-color: var(--background-hover);
+}

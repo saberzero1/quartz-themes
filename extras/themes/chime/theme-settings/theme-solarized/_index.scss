@@ -1,18 +1,45 @@
-.theme-light {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #fdf6e3;
-  --color-base-05: #f4efde;
-  --color-base-10: #f1ecda;
-  --color-base-20: #eee8d5;
-  --color-base-25: #eee8d5;
-  --color-base-30: #ddd6c1;
-  --color-base-35: #ccc5ae;
-  --color-base-40: #a7b4b4;
-  --color-base-50: #93a1a1;
-  --color-base-60: #839496;
-  --color-base-70: #657b83;
-  --color-base-100: #586e75;
+.theme-solarized.colored-bold-and-italic {
+  --bold-color: var(--color-orange);
+  --italic-color: var(--color-green);
+}
+
+.theme-solarized.colorful-headings {
+  --h1-color: var(--color-cyan);
+  --h2-color: var(--color-blue);
+  --h3-color: var(--color-purple);
+  --h4-color: var(--color-pink);
+  --h5-color: var(--color-red);
+  --h6-color: var(--color-orange);
+}
+
+.theme-solarized.colorful-headings-alt {
+  --h1-color: var(--color-orange);
+  --h2-color: var(--color-yellow);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-cyan);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+}
+
+.theme-solarized {
+  --font-default: 'Hind', sans-serif;
+  --accent-h: 18 !important;
+  --accent-s: 80% !important;
+  --accent-l: 44% !important;
+  --color-red-rgb: 220, 50, 47;
+  --color-red: #dc322f;
+  --color-green-rgb: 133, 153, 0;
+  --color-green: #859900;
+  --color-orange-rgb: 203, 75, 22;
+  --color-orange: #cb4b16;
+  --color-yellow-rgb: 181, 137, 0;
+  --color-yellow: #b58900;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-cyan: #2aa198;
+  --color-blue-rgb: 38, 139, 210;
+  --color-blue: #268bd2;
+  --color-purple-rgb: 108, 113, 196;
+  --color-purple: #6c71c4;
+  --color-pink-rgb: 211, 54, 130;
+  --color-pink: #d33682;
 }

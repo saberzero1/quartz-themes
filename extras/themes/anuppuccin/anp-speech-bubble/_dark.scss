@@ -1,0 +1,30 @@
+.anp-speech-bubble [data-task='0'],
+.anp-speech-bubble [data-task='1'],
+.anp-speech-bubble [data-task='2'],
+.anp-speech-bubble [data-task='3'],
+.anp-speech-bubble [data-task='4'],
+.anp-speech-bubble [data-task='5'],
+.anp-speech-bubble [data-task='6'],
+.anp-speech-bubble [data-task='7'],
+.anp-speech-bubble [data-task='8'],
+.anp-speech-bubble [data-task='9'] {
+  --text-normal: var(--background-primary);
+  transition:
+    background-color 0.2s,
+    background 0.2s,
+    border-radius 0.2s;
+}
+
+.anp-speech-bubble [data-task='0']::selection,
+.anp-speech-bubble [data-task='1']::selection,
+.anp-speech-bubble [data-task='2']::selection,
+.anp-speech-bubble [data-task='3']::selection,
+.anp-speech-bubble [data-task='4']::selection,
+.anp-speech-bubble [data-task='5']::selection,
+.anp-speech-bubble [data-task='6']::selection,
+.anp-speech-bubble [data-task='7']::selection,
+.anp-speech-bubble [data-task='8']::selection,
+.anp-speech-bubble [data-task='9']::selection {
+  background-color: rgba(var(--ctp-crust), 0.2);
+  background: rgba(var(--ctp-crust), 0.2);
+}

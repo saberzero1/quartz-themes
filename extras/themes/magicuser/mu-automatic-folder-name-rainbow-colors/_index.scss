@@ -1,79 +1,20 @@
 body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 2) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  .nav-files-container.node-insert-event
+  > div
+  > .nav-file {
+  --mu-file-icon-color: var(--text-normal) !important;
+  --mu-folder-text-color: var(--text-normal) !important;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
+  --nav-item-background-selected: var(--text-normal);
 }
 
 body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 3) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 4) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 5) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 6) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 7) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 8) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 9) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 10) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
-}
-
-body.mu-automatic-folder-name-rainbow-colors
-  .tree-item.nav-folder:nth-child(10n + 11) {
-  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
-  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
-  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
-  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  .tree-item.nav-folder:nth-child(10n + 1) {
+  --mu-folder-icon-color: var(--text-normal);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
 }

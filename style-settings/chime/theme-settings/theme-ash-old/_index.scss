@@ -1,0 +1,22 @@
+bod.classic-layout {
+  --ribbon-background-collapsed: transparent;
+}
+.theme-ash-old .nav-file-title:hover {
+  color: var(--interactive-accent) !important;
+}
+.theme-ash-old .nav-folder.mod-root > .nav-folder-title {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.theme-ash-old {
+  --font-default: 'Hindi', 'Moulpali', 'Bahnschrift', sans-serif;
+  --nav-item-color-active: var(--color-accent);
+}
+.folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), 0.13);
+  border: 0.25px solid rgb(var(--rainbow-folder-color));
+  margin-bottom: 5px;
+  color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color-collapsed: rgb(var(--rainbow-folder-color));
+}

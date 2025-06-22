@@ -1,0 +1,31 @@
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  ) {
+  --font-text-size: var(--serenity-mode-font-size) !important;
+}
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .workspace-tab-header-container,
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .workspace-ribbon,
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .view-header,
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .embedded-backlinks,
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .inline-title,
+.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  )
+  .mk-header.cm-line {
+  display: none !important;
+}

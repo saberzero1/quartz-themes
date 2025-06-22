@@ -1,0 +1,41 @@
+.ulu-end-d.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --canvas-color: 114, 114, 114;
+  --color-base-00: #0d0d0d;
+  /* background-primary */
+  --color-base-10: #1f1f1f;
+  /* background-primary-alt */
+  --color-base-20: #1a1a1a;
+  /* background-secondary */
+  --color-base-25: #1f1f1f;
+  /* idk lol */
+  --color-base-30: #121212;
+  /* background-modifier-border */
+  --color-base-35: #383838;
+  /* background-modifier-border-hover */
+  --color-base-40: #3c3c3c;
+  /* background-modifier-border-focus */
+  --color-base-50: #9f9789;
+  /* text-faint */
+  --color-base-60: #b2ada3;
+  /* also no clue */
+  --color-base-70: #d9d2c4;
+  /* text-muted */
+  --color-base-100: #ffffff;
+  /* text-normal */
+  --text-on-accent: var(--color-base-00);
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #0d0d0d 1.62%,
+    #0a0a0a 50.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #141414 1.62%,
+    #080808 50.72%
+  ) !important;
+  --background-modifier-border-alt: #1a1a1a !important;
+}

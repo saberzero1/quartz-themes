@@ -1,0 +1,15 @@
+body.remove-shadow-p-kanban .kanban ul ul li:hover {
+  background: var(--p-kanban-card-color-2) !important;
+  border-color: var(--p-kanban-border-color) !important;
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+}
+
+body.remove-shadow-p-kanban
+  .callout.callout[data-callout*='kanban']
+  ul
+  ul
+  li:hover {
+  background: var(--p-kanban-card-color-2) !important;
+  border-color: var(--p-kanban-border-color) !important;
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+}

@@ -1,0 +1,73 @@
+body:not(.is-mobile):not(.blur-effect-off) .vertical-tab-content,
+body:not(.is-mobile):not(.blur-effect-off) .community-modal-details {
+  background-color: rgb(from var(--color-base-20) r g b/75%);
+}
+body:not(.is-mobile).blur-effect-off .vertical-tab-content,
+body:not(.is-mobile).blur-effect-off .community-modal-details {
+  background-color: var(--color-base-20);
+}
+body:not(.is-mobile) .modal.mod-settings .mobile-option-setting-item,
+body:not(.is-mobile) .modal.mod-community-modal .mobile-option-setting-item {
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 12px 16px;
+}
+body:not(.is-mobile) .modal.mod-settings textarea,
+body:not(.is-mobile)
+  .modal.mod-settings
+  input[type='text']:not(.metadata-container input):not(.prompt input),
+body:not(.is-mobile) .modal.mod-settings input[type='number'],
+body:not(.is-mobile) .modal.mod-settings input[type='search'],
+body:not(.is-mobile) .modal.mod-community-modal textarea,
+body:not(.is-mobile)
+  .modal.mod-community-modal
+  input[type='text']:not(.metadata-container input):not(.prompt input),
+body:not(.is-mobile) .modal.mod-community-modal input[type='number'],
+body:not(.is-mobile) .modal.mod-community-modal input[type='search'] {
+  border: var(--border-width) solid var(--background-modifier-border-hover);
+}
+body:not(.is-mobile) .modal:not(.mod-community-modal) .setting-item-heading {
+  border: none;
+  padding: 16px 16px 12px;
+}
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:not(.setting-item-heading) {
+  border-right: var(--border-width) solid var(--background-modifier-border);
+  border-left: var(--border-width) solid var(--background-modifier-border);
+  border-radius: 0;
+  background-color: rgba(var(--mono-rgb-100), 0.02);
+  padding: 12px 16px;
+}
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item-heading
+  + .setting-item,
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  *:not(.setting-item)
+  + .setting-item:not(.setting-item-heading),
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:first-child:not(.setting-item-heading) {
+  border-top: var(--border-width) solid var(--background-modifier-border);
+  border-top-right-radius: var(--radius-s) !important;
+  border-top-left-radius: var(--radius-s) !important;
+}
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:has(+ .setting-item-heading),
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:has(+ *:not(.setting-item)):not(.setting-item-heading),
+body:not(.is-mobile) .modal:not(.mod-community-modal) .setting-item:last-child {
+  border-bottom: var(--border-width) solid var(--background-modifier-border);
+  border-bottom-right-radius: var(--radius-s) !important;
+  border-bottom-left-radius: var(--radius-s) !important;
+}
+body:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item-info:has(.setting-item-name:empty)
+  .setting-item-description {
+  padding: 0;
+}

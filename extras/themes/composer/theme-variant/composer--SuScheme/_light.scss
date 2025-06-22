@@ -1,0 +1,28 @@
+.composer--SuScheme.theme-light {
+  --accent-h: 204;
+  --accent-s: 15%;
+  --accent-l: 58%;
+  --background-primary: #fafafa;
+  --background-primary-alt: #f4f4f5;
+  --background-secondary: #f1f0ee;
+  --background-secondary-alt: #dddfe3;
+  --background-gradient: radial-gradient(
+    ellipse at 50% 30%,
+    hsl(0, 0%, 100%) 20%,
+    hsl(220, 16%, 95%) 80%
+  );
+  --background-modifier-border: rgba(225, 219, 214, 0.6);
+  /* quote */
+  --blockquote-border-color: hsl(220, 15%, 80%);
+  --blockquote-background-color: hsl(220, 20%, 97%);
+  --blockquote-color: hsl(220, 25%, 35%);
+  /* codeblock */
+  --codeblock-background: #d6d4d440;
+  --codeblock-caret-color: #4a556b;
+  --codeblock-border-radius: 8px;
+  /* text-highlight */
+  --text-highlight-background: hsla(41, 61%, 92%);
+  --text-highlight-border-color: hsl(47, 48%, 42%);
+  --text-highlight-color: hsl(220, 25%, 25%);
+  --text-highlight-border-radius: 4px;
+}

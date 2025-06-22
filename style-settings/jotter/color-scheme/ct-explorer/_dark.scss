@@ -1,0 +1,31 @@
+.ct-explorer {
+  --background-primary: #161616;
+  --background-primary-alt: #242323;
+  --background-secondary: #161616;
+  --background-modifier-border: hsl(30, 1%, 23%);
+  --background-modifier-border-hover: hsl(30, 1%, 28%);
+  --indentation-guide-color-active: hsl(30, 1%, 43%);
+  --interactive-normal: var(--background-modifier-border);
+  --interactive-hover: var(--background-modifier-border-hover);
+  --text-normal: #f4f4f0;
+  --text-muted: #a6a4a1;
+  --text-faint: #555453;
+}
+.ct-explorer {
+  --color-red: #bf616a;
+  --color-red-rgb: 191, 97, 106;
+  --color-green: #8fbcbb;
+  --color-green-rgb: 143, 188, 187;
+  --color-orange: #d08770;
+  --color-orange-rgb: 208, 135, 112;
+  --color-yellow: #ebc88b;
+  --color-yellow-rgb: 235, 200, 139;
+  --color-cyan: #88c0d0;
+  --color-cyan-rgb: 136, 192, 208;
+  --color-blue: #81a1c1;
+  --color-blue-rgb: 129, 161, 193;
+  --color-purple: #8b81c1;
+  --color-purple-rgb: 139, 129, 193;
+  --color-pink: #bd81c1;
+  --color-pink-rgb: 189, 129, 193;
+}

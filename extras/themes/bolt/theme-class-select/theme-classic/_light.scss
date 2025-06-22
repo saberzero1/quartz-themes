@@ -1,0 +1,24 @@
+.theme-classic {
+  --accent-h: 256 !important;
+  --accent-s: 34% !important;
+  --accent-l: 48% !important;
+  --primary: hsl(256, 34%, 48%);
+  --on-primary: #ffffff;
+  --primary-container: #eaddff;
+  --on-primary-container: #21005d;
+  --secondary: #625b71;
+  --on-secondary: #ffffff;
+  --secondary-container: #e8def8;
+  --on-secondary-container: #1d192b;
+  --tertiary: #7d5260;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #ffd8e4;
+  --on-tertiary-container: #31111d;
+  --background: #fffbfe;
+  --on-background: #1c1b1f;
+  --surface: #f7f1f6;
+  --on-surface: #1c1b1f;
+  --outline: #79747e;
+  --surface-variant: #e7e0ec;
+  --on-surface-variant: #49454f;
+}

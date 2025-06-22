@@ -1,0 +1,9 @@
+body.pt-accent-color-red-lt {
+  --interactive-accent-base-hsl: var(--color-red-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-red-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-red-text-hsl);
+  --interactive-accent-base: var(--color-red-base);
+  --interactive-accent-tint: var(--color-red-tint);
+  --interactive-accent-text: var(--color-red-text);
+  --interactive-accent-hover: var(--color-red-tint);
+}

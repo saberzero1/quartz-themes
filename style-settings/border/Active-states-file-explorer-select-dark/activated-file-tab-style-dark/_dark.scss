@@ -1,0 +1,20 @@
+.activated-file-tab-style-dark.theme-dark {
+  --border-radius-activated-file-dark: var(
+    --border-radius-activated-tab-header-dark
+  ) !important;
+  --color-activated-file-dark: var(
+    --color-activated-tab-header-dark
+  ) !important;
+  --background-activated-file-dark: var(
+    --background-activated-tab-header-dark
+  ) !important;
+  --shadow-activated-file-dark: var(
+    --shadow-activated-tab-header-dark
+  ) !important;
+}
+.activated-file-tab-style-dark.theme-dark
+  .nav-file-title.is-active
+  .nav-file-tag,
+.activated-file-tab-style-dark.theme-dark .tree-item-self.is-active svg {
+  color: var(--color-activated-file-dark) !important;
+}

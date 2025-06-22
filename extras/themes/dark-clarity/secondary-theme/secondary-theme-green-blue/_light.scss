@@ -1,0 +1,13 @@
+bod.theme-dark,
+bod.theme-light {
+  /* 超链颜色，包含元标签，如果不设置默认为主题色 */
+  --text-accent: #51b385;
+  --text-accent1: #61d29d;
+  --text-accent2: #00ddff;
+  --text-accent-hover: hsl(152, 69%, 61%);
+  /* tag 颜色 */
+  --tag-color: #58a6ff;
+  --tag-color-hover: #449bff;
+  /* 引用颜色 */
+  --quote-color: rgb(61, 154, 216);
+}

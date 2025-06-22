@@ -12,7 +12,7 @@ Built with PostCSS and Gulp
 
 */
 @font-face {
-  font-family: "Fira Code";
+  font-family: 'Fira Code';
   font-weight: 100 900;
   font-style: normal italic bold;
 
@@ -69,7 +69,7 @@ Built with PostCSS and Gulp
   --scrollbar-bg: var(--purple);
 
   /* --------------------------------------------- Font */
-  --font: "Fira Code", monospace;
+  --font: 'Fira Code', monospace;
 
   /* font sizes */
   --par: 0.9rem;
@@ -332,31 +332,31 @@ Built with PostCSS and Gulp
   background-color: var(--explorer-hover);
 }
 /* Starred content */
-[data-type="starred"] .nav-file .nav-file-icon {
+[data-type='starred'] .nav-file .nav-file-icon {
   color: hsl(246, 28%, 48%);
   color: var(--icon-normal);
 }
-[data-type="starred"] .nav-file .nav-file-title-content {
+[data-type='starred'] .nav-file .nav-file-title-content {
   color: hsl(211, 19%, 60%);
   color: var(--text-mute);
 }
-[data-type="starred"] .nav-file:hover,
-[data-type="starred"] .nav-file:focus {
+[data-type='starred'] .nav-file:hover,
+[data-type='starred'] .nav-file:focus {
   background-color: hsl(240, 7%, 17%);
   background-color: var(--explorer-hover);
 }
-[data-type="starred"] .nav-file:hover *,
-[data-type="starred"] .nav-file:focus * {
+[data-type='starred'] .nav-file:hover *,
+[data-type='starred'] .nav-file:focus * {
   background-color: hsl(240, 7%, 17%) !important;
   background-color: var(--explorer-hover) !important;
 }
-[data-type="starred"] .nav-file:hover .nav-file-icon,
-[data-type="starred"] .nav-file:focus .nav-file-icon {
+[data-type='starred'] .nav-file:hover .nav-file-icon,
+[data-type='starred'] .nav-file:focus .nav-file-icon {
   color: hsl(164, 68%, 72%);
   color: var(--icon-hover);
 }
-[data-type="starred"] .nav-file:hover .nav-file-title-content,
-[data-type="starred"] .nav-file:focus .nav-file-title-content {
+[data-type='starred'] .nav-file:hover .nav-file-title-content,
+[data-type='starred'] .nav-file:focus .nav-file-title-content {
   color: hsl(164, 68%, 72%);
   color: var(--accent);
 }
@@ -643,7 +643,7 @@ Built with PostCSS and Gulp
   .cm-foldGutter {
   background: hsl(240, 7%, 7%);
   background: var(--editor-background);
-  span[title="Unfold line"] {
+  span[title='Unfold line'] {
     /* color: var(--purple);  doesn't work */
   }
 }
@@ -709,7 +709,7 @@ Built with PostCSS and Gulp
 }
 /* ------------- BASE LINE STYLING */
 .cm-content {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   font-family: var(--font);
   max-width: 90vw !important;
 }
@@ -992,7 +992,7 @@ Built with PostCSS and Gulp
   color: var(--accent);
 }
 body {
-  font-family: "Fira Code", monospace !important;
+  font-family: 'Fira Code', monospace !important;
   font-family: var(--font) !important;
 }
 .tooltip {

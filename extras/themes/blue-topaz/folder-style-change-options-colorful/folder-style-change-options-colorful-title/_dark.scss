@@ -1,0 +1,16 @@
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not(
+    .folder-colorful-six
+  )
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not(
+    .folder-colorful-six
+  )
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-file-title {
+  filter: brightness(2);
+}

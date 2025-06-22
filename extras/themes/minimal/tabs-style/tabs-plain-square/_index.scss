@@ -1,0 +1,23 @@
+.tabs-plain-square .mod-root {
+  --tab-curve: 0;
+  --tab-radius: 0;
+  --tab-radius-active: 0;
+}
+
+.tabs-plain-square .mod-root .workspace-tab-header-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tabs-plain-square .mod-root .workspace-tab-header-container-inner {
+  margin-top: -1px;
+  margin-left: -15px;
+}
+
+.tabs-plain-square .mod-root .workspace-tab-header {
+  padding: 0;
+}
+
+.tabs-plain-square .mod-root .workspace-tab-header-inner {
+  padding: 0 8px;
+}

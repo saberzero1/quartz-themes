@@ -1,0 +1,29 @@
+body {
+  --divider-color: transparent;
+  --tab-outline-color: transparent;
+  --tab-divider-color: transparent;
+  --bt-bubble-border-color: transparent;
+}
+body .workspace-ribbon,
+body .workspace-split > .workspace-leaf-resize-handle,
+body .view-header {
+  border: none;
+}
+body .workspace-split .workspace-leaf-content {
+  border: none !important;
+}
+body
+  .workspace-split.mod-horizontal
+  > *
+  > .workspace-leaf-resize-handle:not(:hover) {
+  border-bottom-color: transparent;
+}
+body .workspace-ribbon.mod-left:before {
+  border-bottom: var(--tab-outline-width) transparent;
+}
+body .workspace-tab-header-container {
+  border-bottom: var(--tab-outline-width) transparent;
+}
+body .workspace-split.mod-root .workspace-tab-header.is-active {
+  box-shadow: var(--window-shadow);
+}

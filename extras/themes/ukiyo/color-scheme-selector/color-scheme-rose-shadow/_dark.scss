@@ -1,0 +1,28 @@
+.color-scheme-rose-shadow:not(.separate-color-scheme).theme-dark {
+  --color-base-00: #3b252d;
+  --color-base-05: var(--color-base-30);
+  --color-base-10: #35242a;
+  --color-base-20: #412730;
+  --color-base-25: #4d2d38;
+  --color-base-30: #773d477e;
+  --color-base-35: var(--color-base-30);
+  --color-base-40: #c2937b;
+  --color-base-50: #b3826a;
+  --color-base-70: #c2937b;
+  --color-base-100: #d3a590;
+  --background-modifier-message: #28171d;
+  --color-accent: #b884c4;
+  --color-accent-1: #b884c4;
+  --color-accent-2: #c693d1;
+  --activeline: #4e2d3896;
+  --text-selection: #6e425296;
+  --color-bold: #fccab1;
+  --color-italic: #eccfe8;
+  --text-highlight-bg: #b053bc2e;
+  --heading-formatting-color: #d12e6d;
+  --in-between-background: #321e25;
+  --background-modifier-form-field: var(--color-base-25);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-highlight-bg-active: var(--text-highlight-bg);
+}

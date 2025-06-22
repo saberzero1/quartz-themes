@@ -1,0 +1,13 @@
+body :is(.markdown-preview-view, .markdown-rendered) h4,
+body
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-4.cm-line {
+  border-bottom: var(--h4-underline-width, 1px) var(--h4-underline-style, solid)
+    var(--h4-underline-color, var(--h4-color));
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-4 + .cm-line {
+  padding-top: 0.5em !important;
+}
+body .cm-s-obsidian .cm-line.HyperMD-header-4 {
+  padding-top: 0.5rem;
+}

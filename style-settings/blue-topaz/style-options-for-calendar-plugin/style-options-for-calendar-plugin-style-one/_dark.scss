@@ -1,0 +1,13 @@
+body.color-scheme-options-topaz-nord.theme-dark #calendar-container {
+  --color-tr: var(--nord0);
+  --color-calendar-weekends: var(--nord11);
+}
+body.theme-dark {
+  --color-calendar-weekends: #cc8484;
+  --color-calendar-weekends-2: #ff9f9f21;
+  --calendar-today-background-color: #00b3005e;
+  --theme-color-translucent-3: #217cc769;
+}
+body.theme-dark #calendar-container {
+  --color-tr: #11111183;
+}

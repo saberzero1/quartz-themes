@@ -1,0 +1,113 @@
+.style-colorless {
+  /* Colors for colorless light */
+  --color-white: 0, 0%, 94.9%;
+  --color-pink: 0, 0%, 83.14%;
+  --color-purple: 0, 0%, 45.1%;
+  --color-red: 0, 0%, 52.16%;
+  --color-orange: 0, 0%, 43.92%;
+  --color-yellow: 0, 0%, 34.9%;
+  --color-green: 0, 0%, 25.88%;
+  --color-teal: 0, 0%, 40%;
+  --color-cyan: 0, 0%, 49.02%;
+  --color-blue: 0, 0%, 60%;
+  --color-black: 0, 0%, 3.92%;
+  --color-base-0: 0, 0%, 94.12%;
+  --color-base-1: var(--color-white);
+  --color-base-2: 0, 0%, 95.69%;
+  --color-base-3: 0, 0%, 96.47%;
+  --color-base-4: 0, 0%, 97.25%;
+  --color-base-5: 0, 0%, 98.04%;
+  --color-selected: var(--color-yellow);
+  --color-hovered: var(--color-orange);
+  --color-stop: var(--color-red);
+  --color-caution: var(--color-blue);
+  --color-interactable: var(--color-green);
+  --color-alternate: var(--color-pink);
+  --color-content: var(--color-teal);
+  --color-confirmed: var(--color-purple);
+  --color-text-normal: var(--color-black);
+  --color-text-muted: 0, 0%, 30%;
+  --color-text-faint: 0, 0%, 60%;
+  --color-text-bold: var(--color-cyan);
+  --color-text-italic: var(--color-green);
+  --color-text-strikethrough: var(--color-red);
+  --color-text-highlight: var(--color-white);
+  --color-text-highlight-background: var(--color-black);
+  --color-text-highlight-active-background: var(--color-orange);
+  --color-text-title: var(--color-pink);
+  --color-text-h1: var(--color-red);
+  --color-text-h2: var(--color-orange);
+  --color-text-h3: 0, 0%, 50.98%;
+  --color-text-h4: var(--color-cyan);
+  --color-text-h5: 0, 0%, 47.06%;
+  --color-text-h6: var(--color-purple);
+  --color-horizontal-rule: var(--color-alternate);
+  --color-list-bullets: var(--color-pink);
+  --color-list-indentation-indicator: magenta;
+  --color-list-indentation-indicator-hover: var(--color-pink);
+  --color-checklist-empty: var(--color-stop);
+  --color-checklist-empty-border: var(--color-stop);
+  --color-checklist-full: var(--color-green);
+  --color-checklist-full-border: var(--color-green);
+  --color-tag: var(--color-yellow);
+  --color-tag-hover: var(--yellow0);
+  --color-code-normal: var(--color-text-muted);
+  --color-code-comment: var(--color-text-faint);
+  --color-code-function: var(--color-yellow);
+  --color-code-important: var(--color-orange);
+  --color-code-keyword: var(--color-pink);
+  --color-code-property: var(--color-blue);
+  --color-code-punctuation: var(--color-text-muted);
+  --color-code-string: var(--color-green);
+  --color-code-tag: var(--color-red);
+  --color-code-value: var(--color-purple);
+  /* Generic Coloring */
+  --background-primary: hsl(var(--color-base-1));
+  --background-primary-alt: hsl(var(--color-base-2));
+  --background-secondary: hsl(var(--color-base-2));
+  --background-secondary-alt: hsl(var(--color-base-3));
+  --text-selection: hsl(var(--color-yellow));
+  --tab-text-color-focused-active-current: hsl(var(--color-selected));
+  --tab-text-color-active: hsl(var(--color-hovered));
+  --titlebar-background: hsl(var(--color-base-3));
+  --titlebar-background-focused: hsl(var(--color-base-2));
+}
+
+.style-colorless a,
+.style-colorless a .footnote-link,
+.style-colorless .cm-s-obsidian .cm-formatting-link.cm-url,
+.style-colorless .cm-s-obsidian .cm-url,
+.style-colorless .cm-s-obsidian .cm-link,
+.style-colorless .cm-s-obsidian .cm-hmd-internal-link,
+.style-colorless .markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.style-colorless .markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  color: hsl(var(--color-text-muted));
+}
+
+.style-colorless .markdown-rendered .external-link,
+.style-colorless .markdown-rendered .internal-link {
+  color: hsl(var(--color-text-normal));
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--color-text-normal));
+}
+
+.style-colorless .markdown-rendered .external-link:hover,
+.style-colorless .markdown-rendered .internal-link:hover {
+  color: hsl(var(--color-text-faint));
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--color-text-faint));
+}
+
+.style-colorless .external-link.is-unresolved,
+.style-colorless .internal-link.is-unresolved {
+  color: hsl(var(--color-text-muted));
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--color-text-muted));
+}
+
+.style-colorless .markdown-rendered .external-link.is-unresolved:hover,
+.style-colorless .markdown-rendered .internal-link.is-unresolved:hover {
+  color: hsl(var(--color-alternate));
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--color-alternate));
+}

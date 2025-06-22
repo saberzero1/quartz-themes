@@ -1,32 +1,95 @@
-body.windows-mode-off:not(.is-mobile):not(.blur-effect-off).theme-light
-  .vertical-tab-header {
-  background-color: rgb(from var(--color-base-30) r g b/75%);
+body.windows-mode-off:not(.is-mobile):not(.blur-effect-off)
+  .vertical-tab-content,
+body.windows-mode-off:not(.is-mobile):not(.blur-effect-off)
+  .community-modal-details {
+  background-color: rgb(from var(--color-base-20) r g b/75%);
 }
 
-body.windows-mode-off:not(.is-mobile).blur-effect-off.theme-light
-  .vertical-tab-header {
-  background-color: var(--color-base-30);
+body.windows-mode-off:not(.is-mobile).blur-effect-off .vertical-tab-content,
+body.windows-mode-off:not(.is-mobile).blur-effect-off .community-modal-details {
+  background-color: var(--color-base-20);
 }
 
-body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-light {
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
-  --input-shadow:
-    0px 0px 0px 1px var(--background-modifier-border),
-    0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset !important;
-  --interactive-normal: var(--background-primary);
-  --modal-background: rgb(
-    from var(--background-secondary) r g b / 90%
-  ) !important;
-  --modal-border-color: rgba(0, 0, 0, 0.1);
-  --slider-thumb-border-color: var(--color-base-00);
-}
-
-body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-light
+body.windows-mode-off:not(.is-mobile)
   .modal.mod-settings
+  .mobile-option-setting-item,
+body.windows-mode-off:not(.is-mobile)
+  .modal.mod-community-modal
+  .mobile-option-setting-item {
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 12px 16px;
+}
+
+body.windows-mode-off:not(.is-mobile) .modal.mod-settings textarea,
+body.windows-mode-off:not(.is-mobile)
+  .modal.mod-settings
+  input[type='text']:not(.metadata-container input):not(.prompt input),
+body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type='number'],
+body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type='search'],
+body.windows-mode-off:not(.is-mobile) .modal.mod-community-modal textarea,
+body.windows-mode-off:not(.is-mobile)
+  .modal.mod-community-modal
+  input[type='text']:not(.metadata-container input):not(.prompt input),
+body.windows-mode-off:not(.is-mobile)
+  .modal.mod-community-modal
+  input[type='number'],
+body.windows-mode-off:not(.is-mobile)
+  .modal.mod-community-modal
+  input[type='search'] {
+  border: var(--border-width) solid var(--background-modifier-border-hover);
+}
+
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item-heading {
+  border: none;
+  padding: 16px 16px 12px;
+}
+
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
   .setting-item:not(.setting-item-heading) {
-  border: var(--border-width) solid rgba(0, 0, 0, 0.05);
-  background-color: #fff;
+  border-right: var(--border-width) solid var(--background-modifier-border);
+  border-left: var(--border-width) solid var(--background-modifier-border);
+  border-radius: 0;
+  background-color: rgba(var(--mono-rgb-100), 0.02);
+  padding: 12px 16px;
+}
+
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item-heading
+  + .setting-item,
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  *:not(.setting-item)
+  + .setting-item:not(.setting-item-heading),
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:first-child:not(.setting-item-heading) {
+  border-top: var(--border-width) solid var(--background-modifier-border);
+  border-top-right-radius: var(--radius-s) !important;
+  border-top-left-radius: var(--radius-s) !important;
+}
+
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:has(+ .setting-item-heading),
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:has(+ *:not(.setting-item)):not(.setting-item-heading),
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item:last-child {
+  border-bottom: var(--border-width) solid var(--background-modifier-border);
+  border-bottom-right-radius: var(--radius-s) !important;
+  border-bottom-left-radius: var(--radius-s) !important;
+}
+
+body.windows-mode-off:not(.is-mobile)
+  .modal:not(.mod-community-modal)
+  .setting-item-info:has(.setting-item-name:empty)
+  .setting-item-description {
+  padding: 0;
 }

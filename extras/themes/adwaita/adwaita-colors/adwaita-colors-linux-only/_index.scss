@@ -1,35 +1,21 @@
-body:not(
-    .adwaita-colors-always,
-    .adwaita-colors-linux-only,
-    .adwaita-colors-never
-  ).mod-linux.theme-light,
-body.mod-linux.theme-light {
-  --titlebar-text-color: #8c8c8c;
-  --icon-color: #939393;
-  --icon-color-hover: #939393;
-  --icon-color-focused: #939393;
-  --tab-text-color: #939393;
-  --tab-text-color-focused: #939393;
-  --tab-text-color-focused-active-current: #939393;
-  --background-modifier-hover: #f0f0f0;
+bod.mod-linux {
+  --titlebar-background: var(--adwaita-headerbar-backdrop-color);
+  --titlebar-background-focused: var(--adwaita-headerbar-bg-color);
+  --titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
+  --text-normal: var(--adwaita-view-fg-color);
 }
 
-body:not(
-    .adwaita-colors-always,
-    .adwaita-colors-linux-only,
-    .adwaita-colors-never
-  ).mod-linux.is-focused
+bod.mod-linux.is-focused
   .workspace-tabs.mod-top
   .workspace-tab-header-container,
-body:not(
-    .adwaita-colors-always,
-    .adwaita-colors-linux-only,
-    .adwaita-colors-never
-  ).mod-linux.is-focused
-  .sidebar-toggle-button,
-body.mod-linux.is-focused
-  .workspace-tabs.mod-top
-  .workspace-tab-header-container,
-body.mod-linux.is-focused .sidebar-toggle-button {
-  --background-modifier-hover: #d8d8d8;
+bod.mod-linux.is-focused .sidebar-toggle-button {
+  --icon-color: var(--adwaita-headerbar-fg-color);
+  --icon-color-hover: var(--adwaita-headerbar-fg-color);
+  --icon-color-focused: var(--adwaita-headerbar-fg-color);
+  --tab-text-color-focused: var(--adwaita-headerbar-fg-color);
+  --tab-text-color-focused-active-current: var(--adwaita-headerbar-fg-color);
+}
+
+bod.mod-linux .titlebar-button.mod-logo:hover {
+  background-color: inherit;
 }

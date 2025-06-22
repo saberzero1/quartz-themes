@@ -1,0 +1,319 @@
+.mod-root .workspace-tab-header-container-inner .workspace-tab-header {
+  background-image: none;
+}
+.clickable-icon[aria-label],
+.sidebar-toggle-button,
+.workspace-tab-header,
+.nav-action-button,
+.workspace-tab-header-tab-list .clickable-icon,
+.sidebar-toggle-button .clickable-icon {
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 80% auto;
+  /* Resize the background image to cover the entire container */
+}
+.workspace-leaf-content
+  :is(.view-header-nav-buttons, .view-actions)
+  .clickable-icon {
+  background-size: calc(var(--editorDashboardHeight) * 0.8);
+}
+.nav-action-button.clickable-icon {
+  background-size: calc(var(--sidebarDashboardHeight) * 0.8);
+}
+.workspace-tab-header,
+.workspace-tab-header-tab-list .clickable-icon,
+.workspace-tab-header-new-tab .clickable-icon {
+  background-size: calc(var(--sidebarTabHeight) * 0.8);
+}
+.stackTabs .workspace-tab-header-new-tab .clickable-icon {
+  background-size: calc(var(--editorTabHeightStack) * 0.8);
+}
+.clickable-icon[aria-label='Settings'] {
+  color: green;
+  background-image: var(--iconSettings);
+}
+.clickable-icon[aria-label='Help'] {
+  color: green;
+  background-image: var(--iconHelp);
+}
+.clickable-icon[aria-label='Open another vault'] {
+  color: green;
+  background-image: var(--iconAnotherVault);
+}
+.sidebar-toggle-button .clickable-icon {
+  color: green;
+  background-image: var(--iconSidebarToggle);
+}
+.clickable-icon[aria-label*='Toggle Focus Mode'] {
+  color: green;
+  background-image: var(--iconFocus);
+}
+.clickable-icon[aria-label='Open homepage'] {
+  color: green;
+  background-image: var(--iconHome);
+}
+.clickable-icon[aria-label='Open graph view'] {
+  color: green;
+  background-image: var(--iconGraph);
+}
+.clickable-icon[aria-label='Insert template'] {
+  color: green;
+  background-image: var(--iconTemplate);
+}
+.clickable-icon[aria-label='Open command palette'] {
+  color: green;
+  background-image: var(--iconCommandPalette);
+}
+.clickable-icon[aria-label='Open today'] {
+  color: green;
+  background-image: var(--iconToday);
+}
+.workspace-tab-header[aria-label='Files'] {
+  color: green;
+  background-image: var(--iconFileExplorer);
+}
+.workspace-tab-header[aria-label='Recent Files'] {
+  color: green;
+  background-image: var(--iconRecentFiles);
+}
+.workspace-tab-header[aria-label='Bookmarks'] {
+  color: green;
+  background-image: var(--iconStarred);
+}
+.workspace-tab-header[aria-label='Tags'] {
+  color: green;
+  background-image: var(--iconTags);
+}
+.workspace-tab-header[aria-label='Search'] {
+  color: green;
+  background-image: var(--iconSearch);
+}
+.clickable-icon[aria-label='New note'] {
+  color: green;
+  background-image: var(--iconNote);
+}
+.clickable-icon[aria-label='New folder'] {
+  color: green;
+  background-image: var(--iconNewFolder);
+}
+.clickable-icon[aria-label='Change sort order'] {
+  color: green;
+  background-image: var(--iconSortOrder);
+}
+.clickable-icon[aria-label='Collapse all'] {
+  color: green;
+  background-image: var(--iconExpand);
+}
+.clickable-icon[aria-label='Expand all'] {
+  color: green;
+  background-image: var(--iconCollapse);
+}
+.nav-action-button.reveal-active-file-button {
+  background-size: 24px;
+  background-image: var(--iconActiveFile);
+}
+.clickable-icon[aria-label='Match case'] {
+  color: green;
+  background-image: var(--iconCase);
+}
+.clickable-icon[aria-label='Explain search term'] {
+  color: green;
+  background-image: var(--iconHelp);
+}
+.clickable-icon[aria-label='Collapse results'] {
+  color: green;
+  background-image: var(--iconExpand);
+}
+.clickable-icon[aria-label='Show more context'] {
+  color: green;
+  background-image: var(--iconPlus);
+}
+.clickable-icon[aria-label='Copy search results'] {
+  color: green;
+  background-image: var(--iconCopy);
+}
+.clickable-icon[aria-label='Change sort order'] {
+  color: green;
+  background-image: var(--iconSortOrder);
+}
+.clickable-icon[aria-label='Show nested tags'] {
+  color: green;
+  background-image: var(--iconNested);
+}
+.clickable-icon[aria-label='Navigate back'] {
+  color: green;
+  background-image: var(--iconBack);
+}
+.clickable-icon[aria-label='Navigate forward'] {
+  color: green;
+  background-image: var(--iconForward);
+}
+.clickable-icon[aria-label*='Current view: reading'] {
+  color: green;
+  background-image: var(--iconPreview);
+}
+.clickable-icon[aria-label*='Current view: editing'] {
+  color: green;
+  background-image: var(--iconEditor);
+}
+.clickable-icon[aria-label='More options'] {
+  color: green;
+  background-image: var(--iconSettings);
+}
+.clickable-icon[aria-label='Star/unstar current file'] {
+  color: green;
+  background-image: var(--iconNote);
+}
+.clickable-icon[aria-label='Star/unstar current search'] {
+  color: green;
+  background-image: var(--iconFocus);
+}
+.clickable-icon[aria-label='New tab'] {
+  color: green;
+  background-image: var(--iconPlus);
+}
+.workspace-tab-header-tab-list .clickable-icon {
+  color: green;
+  background-image: var(--iconStack);
+}
+.workspace-tab-header[aria-label='Outline'],
+.workspace-tab-header[aria-label*='Outline'] {
+  color: green;
+  background-image: var(--iconOutline);
+}
+.clickable-icon[aria-label='Manage workspace layouts'] {
+  color: green;
+  background-image: var(--iconLayout);
+}
+.clickable-icon[aria-label='Create new unique note'] {
+  color: green;
+  background-image: var(--iconUniqueNote);
+}
+.clickable-icon[aria-label='Open random note'] {
+  color: green;
+  background-image: var(--iconRandomNote);
+}
+.clickable-icon[aria-label='Publish changes'] {
+  color: green;
+  background-image: var(--iconPublish);
+}
+.clickable-icon[aria-label='Open format converter'] {
+  color: green;
+  background-image: var(--iconConvert);
+}
+.clickable-icon[aria-label="Open today's daily note"] {
+  color: green;
+  background-image: var(--iconToday);
+}
+.clickable-icon[aria-label='Start/stop recording'] {
+  color: green;
+  background-image: var(--iconRecord);
+}
+.workspace-tab-header[aria-label*='Backlinks'] {
+  color: green;
+  background-image: var(--iconBacklinks);
+}
+.workspace-tab-header[aria-label*='Outgoing'] {
+  color: green;
+  background-image: var(--iconOutgoing);
+}
+.workspace-tab-header[aria-label='Graph view'] {
+  color: green;
+  background-image: var(--iconGraph);
+}
+.clickable-icon[aria-label='Show search filter'] {
+  color: green;
+  background-image: var(--iconSearch);
+}
+.workspace-tab-header[data-type='markdown']:not(
+    .mod-root .workspace-tab-header[data-type='markdown']
+  ) {
+  color: green;
+  background-image: var(--iconNote);
+}
+.clickable-icon[aria-label='Open quick switcher'] {
+  color: green;
+  background-image: var(--iconQuickSwitcher);
+}
+.clickable-icon[aria-label='New group'] {
+  background-image: var(--iconNewFolder);
+}
+.clickable-icon[aria-label='Bookmark the active tab...'] {
+  background-image: var(--iconPlus);
+}
+.clickable-icon[aria-label='Create new canvas'] {
+  background-image: var(--iconPreview);
+}
+.clickable-icon[aria-label='Publish changes...'] {
+  background-image: var(--iconGlobe);
+}
+.clickable-icon[aria-label='All properties'] {
+  background-image: var(--iconDrawCanvas);
+}
+All properties .clickable-icon[aria-label='Settings'] svg,
+.clickable-icon[aria-label='Help'] svg,
+.clickable-icon[aria-label='Open another vault'] svg,
+.sidebar-toggle-button .clickable-icon svg,
+.clickable-icon[aria-label*='Toggle Focus Mode'] svg,
+.clickable-icon[aria-label='Open homepage'] svg,
+.clickable-icon[aria-label='Open graph view'] svg,
+.clickable-icon[aria-label='Insert template'] svg,
+.clickable-icon[aria-label='Open command palette'] svg,
+.clickable-icon[aria-label='Open today'] svg,
+.workspace-tab-header[aria-label='Files'] svg,
+.workspace-tab-header[aria-label='Recent Files'] svg,
+.workspace-tab-header[aria-label='Bookmarks'] svg,
+.workspace-tab-header[aria-label='Tags'] svg,
+.workspace-tab-header[aria-label='Search'] svg,
+.clickable-icon[aria-label='New note'] svg,
+.clickable-icon[aria-label='New folder'] svg,
+.clickable-icon[aria-label='Change sort order'] svg,
+.clickable-icon[aria-label='Collapse all'] svg,
+.clickable-icon[aria-label='Expand all'] svg,
+.nav-action-button.reveal-active-file-button svg,
+.clickable-icon[aria-label='Match case'] svg,
+.clickable-icon[aria-label='Explain search term'] svg,
+.clickable-icon[aria-label='Collapse results'] svg,
+.clickable-icon[aria-label='Show more context'] svg,
+.clickable-icon[aria-label='Copy search results'] svg,
+.clickable-icon[aria-label='Change sort order'] svg,
+.clickable-icon[aria-label='Show nested tags'] svg,
+.clickable-icon[aria-label='Navigate back'] svg,
+.clickable-icon[aria-label='Navigate forward'] svg,
+.clickable-icon[aria-label*='Current view: reading'] svg,
+.clickable-icon[aria-label*='Current view: editing'] svg,
+.clickable-icon[aria-label='More options'] svg,
+.clickable-icon[aria-label='Star/unstar current file'] svg,
+.clickable-icon[aria-label='Star/unstar current search'] svg,
+.clickable-icon[aria-label='New tab'] svg,
+.workspace-tab-header-tab-list .clickable-icon svg,
+.workspace-tab-header[aria-label='Outline'] svg,
+.workspace-tab-header[aria-label*='Outline'] svg,
+.clickable-icon[aria-label='Manage workspace layouts'] svg,
+.clickable-icon[aria-label='Create new unique note'] svg,
+.clickable-icon[aria-label='Open random note'] svg,
+.clickable-icon[aria-label='Publish changes'] svg,
+.clickable-icon[aria-label='Open format converter'] svg,
+.clickable-icon[aria-label="Open today's daily note"] svg,
+.clickable-icon[aria-label='Start/stop recording'] svg,
+.workspace-tab-header[aria-label*='Backlinks'] svg,
+.workspace-tab-header[aria-label*='Outgoing'] svg,
+.workspace-tab-header[aria-label='Graph view'] svg,
+.clickable-icon[aria-label='Show search filter'] svg,
+.workspace-tab-header[data-type='markdown']:not(
+    .mod-root .workspace-tab-header[data-type='markdown']
+  )
+  svg,
+.clickable-icon[aria-label='Open quick switcher'] svg,
+.clickable-icon[aria-label='New group'] svg,
+.clickable-icon[aria-label='Bookmark the active tab...'] svg,
+.clickable-icon[aria-label='Create new canvas'] svg,
+.clickable-icon[aria-label='Publish changes...'] svg,
+.clickable-icon[aria-label='All properties'] svg {
+  display: none;
+}
+.clickable-icon[aria-label='Settings'] svg {
+  display: none;
+}

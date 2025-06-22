@@ -1,0 +1,3 @@
+&.pln-attachments-docx .nav-file:has([data-path$='.docx']) {
+  display: contents !important;
+}

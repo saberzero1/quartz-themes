@@ -1,0 +1,54 @@
+.shiba-toggle-folder-icons .nav-folder-collapse-indicator svg.svg-icon {
+  color: transparent !important;
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-cute
+  .nav-folder
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 6C2 4.34315 3.34315 3 5 3H7.75093C8.82997 3 9.86325 3.43595 10.6162 4.20888L9.94852 4.85927L10.6162 4.20888L11.7227 5.34484C11.911 5.53807 12.1693 5.64706 12.4391 5.64706H16.4386C18.5513 5.64706 20.281 7.28495 20.4284 9.35939C21.7878 9.88545 22.5642 11.4588 21.977 12.927L20.1542 17.4853C19.5468 19.0041 18.0759 20 16.4402 20H6C4.88522 20 3.87543 19.5427 3.15116 18.8079C2.44035 18.0867 2 17.0938 2 16V6ZM18.3829 9.17647C18.1713 8.29912 17.3812 7.64706 16.4386 7.64706H12.4391C11.6298 7.64706 10.8548 7.3201 10.2901 6.7404L9.18356 5.60444L9.89987 4.90666L9.18356 5.60444C8.80709 5.21798 8.29045 5 7.75093 5H5C4.44772 5 4 5.44772 4 6V14.4471L5.03813 11.25C5.43958 10.0136 6.59158 9.17647 7.89147 9.17647H18.3829ZM5.03034 17.7499L6.94036 11.8676C7.07417 11.4555 7.45817 11.1765 7.89147 11.1765H19.4376C19.9575 11.1765 20.3131 11.7016 20.12 12.1844L18.2972 16.7426C17.9935 17.502 17.258 18 16.4402 18H6C5.64785 18 5.31756 17.9095 5.03034 17.7499Z' fill='%230F1729'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  background-color: currentColor;
+  height: auto;
+  width: var(--font-size-folder-and-file, 1.0625em);
+  margin-right: 4px;
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-cute
+  .nav-folder.is-collapsed
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 6C2 4.34315 3.34315 3 5 3H8.74586C9.80773 3 10.826 3.42223 11.5763 4.17364L13.4 6H16.9925C19.7576 6 21.9977 8.2443 21.9925 11.0094L21.9812 17.0094C21.976 19.7671 19.739 22 16.9812 22H7C4.23858 22 2 19.7614 2 17V6ZM11.5722 7L10.1611 5.58682C9.78595 5.21111 9.27679 5 8.74586 5H5C4.44772 5 4 5.44772 4 6V9H8.74586C9.2768 9 9.78595 8.78889 10.1611 8.41318L11.5722 7ZM4 11V17C4 18.6569 5.34315 20 7 20H16.9812C18.6359 20 19.9781 18.6603 19.9812 17.0056L19.9925 11.0056C19.9956 9.34658 18.6515 8 16.9925 8H13.4L11.5763 9.82636C10.826 10.5778 9.80773 11 8.74586 11H4Z' fill='%230F1729'/%3E%3C/svg%3E");
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-normal
+  .nav-folder
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000000' d='M878.08 448H241.92l-96 384h636.16l96-384zM832 384v-64H485.76L357.504 192H128v448l57.92-231.744A32 32 0 0 1 216.96 384H832zm-24.96 512H96a32 32 0 0 1-32-32V160a32 32 0 0 1 32-32h287.872l128.384 128H864a32 32 0 0 1 32 32v96h23.04a32 32 0 0 1 31.04 39.744l-112 448A32 32 0 0 1 807.04 896z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  background-color: currentColor;
+  height: auto;
+  width: var(--font-size-folder-and-file, 1.0625em);
+  margin-right: 4px;
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-normal
+  .nav-folder.is-collapsed
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000000' d='M128 192v640h768V320H485.76L357.504 192H128zm-32-64h287.872l128.384 128H928a32 32 0 0 1 32 32v576a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V160a32 32 0 0 1 32-32z'/%3E%3C/svg%3E");
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-arrows
+  .nav-folder
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 4C12.5523 4 13 4.44772 13 5V16.5858L17.2929 12.2929C17.6834 11.9024 18.3166 11.9024 18.7071 12.2929C19.0976 12.6834 19.0976 13.3166 18.7071 13.7071L12.7071 19.7071C12.5196 19.8946 12.2652 20 12 20C11.7348 20 11.4804 19.8946 11.2929 19.7071L5.29289 13.7071C4.90237 13.3166 4.90237 12.6834 5.29289 12.2929C5.68342 11.9024 6.31658 11.9024 6.70711 12.2929L11 16.5858V5C11 4.44772 11.4477 4 12 4Z' fill='%230F1729'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  background-color: currentColor;
+  height: auto;
+  width: var(--font-size-folder-and-file, 1.0625em);
+  margin-right: 4px;
+}
+
+.shiba-toggle-folder-icons.shiba-toggle-folder-icons-arrows
+  .nav-folder.is-collapsed
+  .nav-folder-collapse-indicator {
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H16.5858L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z' fill='%230F1729'/%3E%3C/svg%3E");
+}

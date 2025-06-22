@@ -134,8 +134,8 @@ body {
 
 /* code block remove shadow */
 
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   background: var(--background-primary-alt);
   text-shadow: 0px 0px white;
   font-family: var(--font-monospace);
@@ -192,19 +192,19 @@ body {
   background-color: var(--text-accent-hover);
 }
 
-.tag[href^="#obsidian"] {
+.tag[href^='#obsidian'] {
   background-color: #4d3ca6;
 }
 
-.tag[href^="#important"] {
+.tag[href^='#important'] {
   background-color: red;
 }
 
-.tag[href^="#complete"] {
+.tag[href^='#complete'] {
   background-color: green;
 }
 
-.tag[href^="#inprogress"] {
+.tag[href^='#inprogress'] {
   background-color: orange;
 }
 
@@ -217,7 +217,7 @@ ul ul {
 
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--border);
   /*rgba(20,122,255,0.3);
 */
@@ -291,7 +291,7 @@ ul ul::before {
   position: absolute;
 }
 .markdown-embed-link::before {
-  content: ">>";
+  content: '>>';
   color: var(--text-error);
   font-size: 12px;
   font-weight: 700;
@@ -342,7 +342,7 @@ h1 {
   border-bottom: 1px solid var(--text-accent);
   color: var(--text-normal);
   font-family:
-    Cairo, Roboto, Inter, Mod, "Segoe UI", Consolas, Inter, sans-serif;
+    Cairo, Roboto, Inter, Mod, 'Segoe UI', Consolas, Inter, sans-serif;
 }
 h2 {
   font-size: 26px;
@@ -356,7 +356,7 @@ h2 {
     Cairo,
     Roboto,
     Inter,
-    "Segoe UI",
+    'Segoe UI',
     Consolas,
     Hector,
     kayak sans,
@@ -521,9 +521,9 @@ p {
   padding: 0px 30px 0 10px;
   cursor: pointer;
 }
-div[aria-label="New note"],
-div[aria-label="New folder"],
-div[aria-label^="Star/unstar current"] {
+div[aria-label='New note'],
+div[aria-label='New folder'],
+div[aria-label^='Star/unstar current'] {
   color: var(--accent-strong);
 }
 .nav-files-container {
@@ -538,10 +538,10 @@ div[aria-label^="Star/unstar current"] {
   color: var(--text-normal);
 }
 
-div[aria-label="Insert template"] {
+div[aria-label='Insert template'] {
   color: red;
 }
-div[aria-label="Settings"] {
+div[aria-label='Settings'] {
   color: var(--text-accent2);
 }
 
@@ -594,11 +594,11 @@ workspace-tab-header {
 }
 
 /*-------search pane---------*/
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-  font-family: Barlow, Cairo, "Inter", sans-serif;
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+  font-family: Barlow, Cairo, 'Inter', sans-serif;
   padding: 5px 8px;
   font-size: 14px;
   border-radius: 4px;
@@ -619,7 +619,7 @@ input[type="number"] {
 }
 .nav-folder-collapse-indicator::after {
   position: absolute;
-  content: "\\";
+  content: '\\';
   left: 8px;
   top: -1px;
   color: var(--text-accent2);
@@ -844,7 +844,7 @@ input[type="number"] {
   z-index: var(--layer-status-bar);
 }
 .status-bar::after {
-  content: ": :";
+  content: ': :';
   position: absolute;
   left: 30px;
   color: var(--text-error);
@@ -879,7 +879,7 @@ input[type="number"] {
   border-bottom: 5px solid rgba(0, 0, 0, 0.9);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-  content: " ";
+  content: ' ';
   font-size: 0;
   line-height: 0;
 }
@@ -956,8 +956,8 @@ input[type="number"] {
 .collapsible-item-children {
   margin-left: 8px;
 }
-.graph-controls input[type="text"],
-.graph-controls input[type="range"] {
+.graph-controls input[type='text'],
+.graph-controls input[type='range'] {
   width: 100%;
   font-size: 10px;
 }
@@ -1000,13 +1000,13 @@ input[type="number"] {
 .graph-controls .setting-item {
   padding: 0;
 }
-.graph-controls input[type="range"] {
+.graph-controls input[type='range'] {
   -webkit-appearance: none;
   background-color: var(--background-secondary);
   border-radius: 2px;
   height: 2px;
 }
-.graph-controls input[type="range"]::-webkit-slider-thumb {
+.graph-controls input[type='range']::-webkit-slider-thumb {
   width: 13px;
   height: 9px;
   border-radius: 20%;
@@ -1037,7 +1037,7 @@ input[type="number"] {
 }
 .graph-controls .checkbox-container:after {
   pointer-events: none;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-color: var(--text-on-accent);
@@ -1166,7 +1166,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 /* --- the bottom gradient ---*/
 .popover.hover-popover:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 0px; /* 50px */
@@ -1227,7 +1227,7 @@ sub {
 /* Add quotation character before quote */
 blockquote.rq:before {
   font: Barlow;
-  content: "\02033"; /* \275D \0022 \02033 \02DD \201F \201D \030B \02BA*/
+  content: '\02033'; /* \275D \0022 \02033 \02DD \201F \201D \030B \02BA*/
   font-size: 5em;
   color: var(--text-accent);
   vertical-align: -0.1em;
@@ -1237,7 +1237,7 @@ blockquote.rq:before {
 }
 blockquote.rq:after {
   font: Barlow;
-  content: "\02033"; /* \275D \0022 \02033 \02DD \201F \201D \030B \02BA*/
+  content: '\02033'; /* \275D \0022 \02033 \02DD \201F \201D \030B \02BA*/
   font-size: 5em;
   color: var(--text-accent);
   float: right;
@@ -1325,7 +1325,7 @@ table {
   min-height: 20px;
   background-color: var(--background-primary);
 }
-.workspace-leaf-content[data-type="backlink"] .view-content {
+.workspace-leaf-content[data-type='backlink'] .view-content {
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -1350,11 +1350,11 @@ table {
 }
 /* smaller menu backlinks etc */
 
-.workspace-leaf-content[data-type="search"] .nav-action-button.is-active {
+.workspace-leaf-content[data-type='search'] .nav-action-button.is-active {
   background-color: var(--text-highlight-bg);
   color: var(--text-accent2);
 }
-.workspace-leaf-content[data-type="search"] .nav-action-button {
+.workspace-leaf-content[data-type='search'] .nav-action-button {
   padding: 2px 10px 0px 10px;
   margin: 0px 3px 3px 2px;
   border-radius: 4px;
@@ -1372,46 +1372,46 @@ table {
   display: flex;
 }
 
-div[aria-label="文件管理器"],
-div[aria-label="File explorer"],
-div[aria-label="搜索"],
-div[aria-label="Search"],
-div[aria-label^="星标"],
-div[aria-label^="Starred"] {
+div[aria-label='文件管理器'],
+div[aria-label='File explorer'],
+div[aria-label='搜索'],
+div[aria-label='Search'],
+div[aria-label^='星标'],
+div[aria-label^='Starred'] {
   padding: 0px 5px 0px 20px;
   background-color: var(--background-secondary-alt);
 }
 /*========  replace icons in tab header with text =========*/
-div[aria-label="文件管理器"] .workspace-tab-header-inner-icon,
-div[aria-label="File explorer"] .workspace-tab-header-inner-icon {
+div[aria-label='文件管理器'] .workspace-tab-header-inner-icon,
+div[aria-label='File explorer'] .workspace-tab-header-inner-icon {
   display: none;
 }
-div[aria-label="文件管理器"] .workspace-tab-header-inner:after,
-div[aria-label="File explorer"] .workspace-tab-header-inner:after {
-  content: "FILES";
+div[aria-label='文件管理器'] .workspace-tab-header-inner:after,
+div[aria-label='File explorer'] .workspace-tab-header-inner:after {
+  content: 'FILES';
   font-size: 12px;
   font-weight: 700;
   margin-left: -8px;
 }
 
-div[aria-label="搜索"] .workspace-tab-header-inner-icon,
-div[aria-label="Search"] .workspace-tab-header-inner-icon {
+div[aria-label='搜索'] .workspace-tab-header-inner-icon,
+div[aria-label='Search'] .workspace-tab-header-inner-icon {
   display: none;
 }
-div[aria-label="搜索"] .workspace-tab-header-inner:after,
-div[aria-label="Search"] .workspace-tab-header-inner:after {
-  content: "SEARCH";
+div[aria-label='搜索'] .workspace-tab-header-inner:after,
+div[aria-label='Search'] .workspace-tab-header-inner:after {
+  content: 'SEARCH';
   font-size: 12px;
   font-weight: 700;
   margin-left: -8px;
 }
-div[aria-label="星标"] .workspace-tab-header-inner-icon,
-div[aria-label="Starred"] .workspace-tab-header-inner-icon {
+div[aria-label='星标'] .workspace-tab-header-inner-icon,
+div[aria-label='Starred'] .workspace-tab-header-inner-icon {
   display: none;
 }
-div[aria-label="星标"] .workspace-tab-header-inner:after,
-div[aria-label="Starred"] .workspace-tab-header-inner:after {
-  content: "STAR";
+div[aria-label='星标'] .workspace-tab-header-inner:after,
+div[aria-label='Starred'] .workspace-tab-header-inner:after {
+  content: 'STAR';
   font-size: 12px;
   font-weight: 700;
   margin-left: -8px;
@@ -1432,28 +1432,28 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
 }
 
 /* ========= tag pane ===================*/
-.workspace-leaf-content[data-type="tag"] {
+.workspace-leaf-content[data-type='tag'] {
   padding: 10px 10px;
   overflow: auto;
 }
-.workspace-tab-header[aria-label="标签面板"]
+.workspace-tab-header[aria-label='标签面板']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg,
-.workspace-tab-header[aria-label="Tag pane"]
+.workspace-tab-header[aria-label='Tag pane']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg {
   display: none;
 }
 
-.workspace-tab-header[aria-label="标签面板"]
+.workspace-tab-header[aria-label='标签面板']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before,
-.workspace-tab-header[aria-label="Tag pane"]
+.workspace-tab-header[aria-label='Tag pane']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before {
-  content: "TAGS";
+  content: 'TAGS';
   font-size: 12px;
   font-weight: 900;
   display: block;
@@ -1462,10 +1462,10 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   position: relative;
   padding: 0 5px;
 }
-.workspace-tab-header[aria-label="标签面板"]
+.workspace-tab-header[aria-label='标签面板']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover,
-.workspace-tab-header[aria-label="Tag pane"]
+.workspace-tab-header[aria-label='Tag pane']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover {
   color: red;
@@ -1491,24 +1491,24 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   padding: 0px 15px;
 }
 /*==== outline pane ====*/
-.workspace-tab-header[aria-label*="大纲"]
+.workspace-tab-header[aria-label*='大纲']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg,
-.workspace-tab-header[aria-label^="Outline"]
+.workspace-tab-header[aria-label^='Outline']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg {
   display: none;
   color: red;
 }
-.workspace-tab-header[aria-label*="大纲"]
+.workspace-tab-header[aria-label*='大纲']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before,
-.workspace-tab-header[aria-label^="Outline"]
+.workspace-tab-header[aria-label^='Outline']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before {
-  content: "OUTLINE";
+  content: 'OUTLINE';
   font-size: 12px;
   font-weight: 900;
   display: block;
@@ -1517,10 +1517,10 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   position: relative;
   padding: 0 8px;
 }
-.workspace-tab-header[aria-label*="大纲"]
+.workspace-tab-header[aria-label*='大纲']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover,
-.workspace-tab-header[aria-label^="Outline"]
+.workspace-tab-header[aria-label^='Outline']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover {
   color: red;
@@ -1537,24 +1537,24 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
 }
 
 /*===== backlinks pane =======*/
-.workspace-tab-header[aria-label*="反向链接"]
+.workspace-tab-header[aria-label*='反向链接']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg,
-.workspace-tab-header[aria-label^="Backlinks"]
+.workspace-tab-header[aria-label^='Backlinks']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon
   svg {
   display: none;
   color: red;
 }
-.workspace-tab-header[aria-label*="反向链接"]
+.workspace-tab-header[aria-label*='反向链接']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before,
-.workspace-tab-header[aria-label^="Backlinks"]
+.workspace-tab-header[aria-label^='Backlinks']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon::before {
-  content: "BACKLINKS";
+  content: 'BACKLINKS';
   font-size: 12px;
   font-weight: 900;
   display: block;
@@ -1563,21 +1563,21 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   position: relative;
   padding: 0 10px;
 }
-.workspace-tab-header[aria-label^="反向链接"]
+.workspace-tab-header[aria-label^='反向链接']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover,
-.workspace-tab-header[aria-label^="Backlinks"]
+.workspace-tab-header[aria-label^='Backlinks']
   > .workspace-tab-header-inner
   > .workspace-tab-header-inner-icon:hover {
   color: red;
 }
 
-.workspace-leaf-content[data-type="backlink"] .nav-action-button {
+.workspace-leaf-content[data-type='backlink'] .nav-action-button {
   padding: 2px 8px 0px 8px;
   margin: 0px 20px 3px 3px;
   border-radius: 4px;
 }
-.workspace-leaf-content[data-type="backlink"] .nav-action-button.is-active {
+.workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
   background-color: var(--text-highlight-bg);
   color: var(--text-accent2);
   padding: 2px 8px 0px 8px;
@@ -1661,7 +1661,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   color: var(--text-accent2);
   border-bottom: 3px solid var(--interactive-accent);
 }
-.view-action[aria-label="Unlink pane"] {
+.view-action[aria-label='Unlink pane'] {
   color: var(--accent-strong);
 }
 .workspace-leaf.mod-active .view-header-title {
@@ -1676,7 +1676,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
 }
 
 .view-header-title:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -6px;
   right: -31px;
@@ -1686,7 +1686,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   background: var(--background-secondary-alt);
 }
 .workspace-leaf.mod-active .view-header-title:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -6px;
   right: -31px;
@@ -1696,7 +1696,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   background: var(--background-secondary-alt);
 }
 .view-header-title-container:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1731,7 +1731,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
     Source Code,
     -apple-system,
     BlinkMacSystemFont,
-    "Segoe UI",
+    'Segoe UI',
     Roboto,
     Oxygen;
 }
@@ -1789,7 +1789,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
 }
 .checkbox-container:after {
   pointer-events: none;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-color: var(--bw);
@@ -1871,7 +1871,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   display: none;
 }
 .titlebar-button.mod-back:before {
-  content: "<<prev";
+  content: '<<prev';
   font-size: 11px;
   top: -2px;
   position: relative;
@@ -1880,7 +1880,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   display: none;
 }
 .titlebar-button.mod-forward:before {
-  content: "next>>";
+  content: 'next>>';
   font-size: 11px;
   top: -2px;
   position: relative;
@@ -1897,7 +1897,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   position: relative;
 }
 .titlebar-text:after {
-  content: "\\ ono-sendai";
+  content: '\\ ono-sendai';
   font-size: 10px;
   text-align: right;
   right: -1px;
@@ -1905,7 +1905,7 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   position: relative;
 }
 .titlebar-text:before {
-  content: "\\ \\";
+  content: '\\ \\';
   font-size: 11px;
   text-align: right;
   right: 1px;
@@ -1917,19 +1917,19 @@ div[aria-label="Starred"] .workspace-tab-header-inner:after {
   height: 26px;
   top: 0px;
 }
-div[aria-label="Minimize"] svg rect {
+div[aria-label='Minimize'] svg rect {
   opacity: 0.7;
   stroke: var(--text-accent2);
   fill: var(--text-accent2);
   filter: saturate(100);
 }
-div[aria-label="Restore down"] svg rect,
-div[aria-label="Maximize"] svg rect {
+div[aria-label='Restore down'] svg rect,
+div[aria-label='Maximize'] svg rect {
   opacity: 1;
   stroke: var(--text-accent2);
   fill: none;
 }
-div[aria-label="Close window"] {
+div[aria-label='Close window'] {
   color: red;
   opacity: 0.7;
   filter: saturate(100);
@@ -2040,7 +2040,7 @@ body.is-translucent {
 
 /*-- display H1-h6 in gutter--*/
 .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1:before {
-  content: "H1";
+  content: 'H1';
   font-size: 18px;
   color: var(--text-accent2);
   left: -54px;
@@ -2048,7 +2048,7 @@ body.is-translucent {
   position: absolute;
 }
 .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2:before {
-  content: "H2";
+  content: 'H2';
   font-size: 13px;
   color: var(--text-accent2);
   left: -48px;
@@ -2056,7 +2056,7 @@ body.is-translucent {
   position: absolute;
 }
 .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3:before {
-  content: "H3";
+  content: 'H3';
   font-size: 11px;
   color: var(--text-accent2);
   left: -41px;
@@ -2064,7 +2064,7 @@ body.is-translucent {
   position: absolute;
 }
 .cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4:before {
-  content: "H4";
+  content: 'H4';
   font-size: 10px;
   color: var(--text-accent2);
   left: -41px;
@@ -2072,7 +2072,7 @@ body.is-translucent {
   position: absolute;
 }
 .cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5:before {
-  content: "H5";
+  content: 'H5';
   font-size: 10px;
   color: var(--text-accent2);
   left: -41px;
@@ -2080,7 +2080,7 @@ body.is-translucent {
   position: absolute;
 }
 .cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6:before {
-  content: "H6";
+  content: 'H6';
   font-size: 10px;
   color: var(--text-accent2);
   left: -41px;
@@ -2279,7 +2279,7 @@ body.is-translucent {
 .label {
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial,
     Fira Code,
@@ -2349,7 +2349,7 @@ div.mermaidTooltip {
   padding: 2px !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
   font-size: 10px !important;
@@ -2468,7 +2468,7 @@ text.actor > tspan {
 .mermaid-main-font {
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2514,7 +2514,7 @@ text.actor > tspan {
   line-height: 14px !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2530,7 +2530,7 @@ text.actor > tspan {
 .grid .tick text {
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2559,7 +2559,7 @@ text.actor > tspan {
   text-anchor: middle !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2574,7 +2574,7 @@ text.actor > tspan {
   font-size: 9px !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2730,7 +2730,7 @@ text.actor > tspan {
   fill: var(--text-normal) !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2742,7 +2742,7 @@ g.classGroup text {
     consolas,
     monospace,
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
   font-size: 8px !important;
@@ -2843,7 +2843,7 @@ g.classGroup line {
   color: var(--text-muted) !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2854,7 +2854,7 @@ g.classGroup line {
   fill: var(--text-normal) !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2862,7 +2862,7 @@ g.classGroup line {
 .slice {
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2873,7 +2873,7 @@ g.stateGroup text {
   font-size: 10px !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -2939,7 +2939,7 @@ g.stateGroup line {
   font-weight: bold !important;
   font-family:
     Segoe UI,
-    "trebuchet ms",
+    'trebuchet ms',
     verdana,
     arial !important;
 }
@@ -3016,7 +3016,7 @@ g.stateGroup line {
 
 :root {
   --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
-  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  --mermaid-font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
 }
 
 /* Classes common for multiple diagrams */

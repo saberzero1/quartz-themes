@@ -1,26 +1,19 @@
-body.mod-root-split-background-transparent-light:not(.card-layout-open-light),
-body.theme-light:is(
-    .mod-root-split-background-transparent-light,
-    .mod-root-split-background-CSS-light
-  )
-  .mod-stacked {
-  --background-mod-root-split: var(--background-primary) !important;
+body.mod-root-split-background-transparent-light
+  .setting-item[data-id='background-mod-root-split-light'],
+body.mod-root-split-background-transparent-light
+  .setting-item[data-id='background-mod-root-CSS-light'],
+body.mod-root-split-background-transparent-light
+  .setting-item[data-id='background-mod-root-CSS-blend-mode-light'],
+body.mod-root-split-background-transparent-light
+  .setting-item[data-id='background-mod-root-CSS-backdrop-filter-light'] {
+  display: none;
 }
 
-body.card-layout-open-light {
+body.theme-ligh.card-layout-open-light {
   --background-mod-root-split: transparent !important;
 }
 
-body.theme-light:not(
-    .is-mobile
-  ).card-layout-open-light.mod-root-split-background-transparent-light
-  .mod-root
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-container {
-  --card-shadow-light: transparent;
-}
-
-body.card-layout-open-light.tab-autohide
+body.theme-ligh.card-layout-open-light.tab-autohide
   .mod-root
   .workspace-tabs:not(.mod-top)
   .workspace-tab-container
@@ -28,12 +21,4 @@ body.card-layout-open-light.tab-autohide
   box-shadow: inset 0px 1px 0px var(--divider-color);
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
-}
-
-:is(
-    .theme-dark.card-layout-open-dark.mod-root-split-background-transparent-dark,
-    .card-layout-open-light.mod-root-split-background-transparent-light
-  )
-  .is-sidedock-collapsed {
-  visibility: hidden;
 }

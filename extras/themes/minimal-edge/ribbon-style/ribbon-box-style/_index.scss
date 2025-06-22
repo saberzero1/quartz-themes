@@ -1,0 +1,35 @@
+body.ribbon-box-style .workspace-ribbon {
+  background-color: transparent;
+  max-height: none;
+  margin-bottom: 0;
+  border-radius: 0;
+  height: 430px;
+}
+
+body.ribbon-box-style .workspace-ribbon.mod-left.is-collapsed,
+body.ribbon-box-style .workspace-ribbon.mod-left {
+  background-color: transparent;
+  margin-top: 11%;
+  border: none;
+}
+
+body.ribbon-box-style .workspace-ribbon .clickable-icon {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  border: var(--background-modifier-border);
+  padding: 10px;
+}
+
+body.ribbon-box-style .workspace-ribbon .sidebar-toggle-button {
+  height: 58px;
+  margin-top: 7%;
+  background: transparent;
+  border: none;
+  margin-bottom: 0;
+}
+
+body.ribbon-box-style .side-dock-settings,
+body.ribbon-box-style .side-dock-actions {
+  margin-top: 25px;
+  gap: 15px;
+}

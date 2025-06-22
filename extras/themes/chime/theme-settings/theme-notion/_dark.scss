@@ -1,0 +1,73 @@
+.theme-notion.colorful-headings h1,
+.theme-notion.colorful-headings .HyperMD-header-1 {
+  background-color: rgba(var(--color-red-rgb), 0.26);
+  padding: 5px 10px 5px 10px;
+}
+
+.theme-notion.colorful-headings h2,
+.theme-notion.colorful-headings .HyperMD-header-2 {
+  background-color: rgba(var(--color-orange-rgb), 0.26);
+  padding: 5px 10px 5px 10px;
+}
+
+.theme-notion.colorful-headings h3,
+.theme-notion.colorful-headings .HyperMD-header-3 {
+  background-color: rgba(var(--color-yellow-rgb), 0.26);
+  padding: 5px 10px 5px 10px;
+}
+
+.theme-notion.colorful-headings h4,
+.theme-notion.colorful-headings .HyperMD-header-4 {
+  background-color: rgba(var(--color-green-rgb), 0.26);
+  padding: 5px 10px 5px 10px;
+}
+
+.theme-notion.colorful-headings h5,
+.theme-notion.colorful-headings .HyperMD-header-5 {
+  background-color: rgba(var(--color-blue-rgb), 0.26);
+  padding: 3px 10px 3px 10px;
+}
+
+.theme-notion.colorful-headings h6,
+.theme-notion.colorful-headings .HyperMD-header-6 {
+  background-color: rgba(var(--color-purple-rgb), 0.26);
+  padding: 3px 10px 3px 10px;
+}
+
+.theme-notion.theme-dark .callout {
+  background-color: rgba(var(--callout-color), 0.2);
+}
+
+.theme-notion.theme-dark {
+  color-scheme: dark;
+  --background-modifier-border: #323130;
+  --highlight-mix-blend-mode: lighten;
+  --color-base-00: #191919;
+  --color-base-10: #2d2d2d;
+  --color-base-20: #202020;
+  --color-base-25: #21201e;
+  --color-base-30: #21201e;
+  --color-base-35: #363636;
+  --color-base-40: #535353;
+  --color-base-50: #707070;
+  --color-base-60: #5d5d5d;
+  --color-base-70: #a0a0a0;
+  --color-base-100: rgba(255, 255, 255, 0.81);
+  --color-red-rgb: 212, 76, 71;
+  --color-gray: #363636a3;
+  --color-red: #d44c47;
+  --color-green-rgb: 79, 131, 68;
+  --color-green: #4f8344;
+  --color-orange-rgb: 217, 115, 13;
+  --color-orange: #d9730d;
+  --color-yellow-rgb: 203, 145, 47;
+  --color-yellow: #cb912f;
+  --color-cyan-rgb: 88, 148, 138;
+  --color-cyan: #58948a;
+  --color-blue-rgb: 51, 126, 169;
+  --color-blue: #337ea9;
+  --color-purple-rgb: 144, 101, 176;
+  --color-purple: #9065b0;
+  --color-pink-rgb: 193, 76, 138;
+  --color-pink: #c14c8a;
+}

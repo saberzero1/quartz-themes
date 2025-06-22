@@ -1,0 +1,11 @@
+.activated-file-accent-dark.theme-dark {
+  --border-radius-activated-file-dark: var(--radius-s) !important;
+  --color-activated-file-dark: var(--text-on-accent) !important;
+  --background-activated-file-dark: var(--color-accent) !important;
+  --shadow-activated-file-dark: none !important;
+}
+
+.activated-file-accent-dark.theme-dark .nav-file-title.is-active .nav-file-tag,
+.activated-file-accent-dark.theme-dark .tree-item-self.is-active svg {
+  color: var(--text-on-accent) !important;
+}

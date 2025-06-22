@@ -1,0 +1,23 @@
+.rose-pine-moon {
+  /*PALETTE*/
+  --love-rgb: 235, 111, 146;
+  --gold-rgb: 246, 193, 119;
+  --rose-rgb: 234, 154, 151;
+  --pine-rgb: 62, 143, 176;
+  --foam-rgb: 156, 207, 216;
+  --iris-rgb: 196, 167, 231;
+  --base: #232136;
+  --surface-rgb: 42, 39, 63;
+  --overlay: #393552;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --highlight-low: #2a283e;
+  --highlight-med-rgb: 68, 65, 90;
+  --highlight-high: #56526e;
+  /*override accent color !*/
+  --accent-h: 193;
+  --accent-s: 46%;
+  --accent-l: 75%;
+  --color-accent-hsl: 193, 46%, 75%;
+}

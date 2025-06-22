@@ -1,0 +1,841 @@
+body:not()
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  :is(.task-list-label, p)
+  > input:is([type='checkbox'], [type='checkbox' i]):checked,
+body:not()
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  > input:is([type='checkbox'], [type='checkbox' i]):checked,
+body:not()
+  .task-list-item.is-checked:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  :is(.task-list-label, p)
+  > input:is([type='checkbox'], [type='checkbox' i]):checked,
+body:not()
+  .task-list-item.is-checked:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  > input:is([type='checkbox'], [type='checkbox' i]):checked {
+  background-color: transparent;
+  font: var(--its);
+  font-family: var(--its);
+  font-size: inherit;
+  font-weight: 10;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  -webkit-mask-image: unset;
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  :is(.task-list-label, p)
+  > input:is([type='checkbox'], [type='checkbox' i]):checked::after,
+body:not()
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  > input:is([type='checkbox'], [type='checkbox' i]):checked::after,
+body:not()
+  .task-list-item.is-checked:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  :is(.task-list-label, p)
+  > input:is([type='checkbox'], [type='checkbox' i]):checked::after,
+body:not()
+  .task-list-item.is-checked:is(
+    [data-task='X'],
+    [data-task='>'],
+    [data-task='-'],
+    [data-task='D'],
+    [data-task='?'],
+    [data-task='/'],
+    [data-task='+'],
+    [data-task='R'],
+    [data-task='!'],
+    [data-task='i'],
+    [data-task='B'],
+    [data-task='P'],
+    [data-task='C'],
+    [data-task='Q'],
+    [data-task='N'],
+    [data-task='b'],
+    [data-task='I'],
+    [data-task='p'],
+    [data-task='L'],
+    [data-task='E'],
+    [data-task='A'],
+    [data-task='r'],
+    [data-task='c'],
+    [data-task='o'],
+    [data-task='d'],
+    [data-task='T'],
+    [data-task='t'],
+    [data-task='O'],
+    [data-task='F'],
+    [data-task='W'],
+    [data-task='~'],
+    [data-task='@'],
+    [data-task='f'],
+    [data-task='a'],
+    [data-task='&'],
+    [data-task='s'],
+    [data-task='H'],
+    [data-task='<']
+  )
+  > input:is([type='checkbox'], [type='checkbox' i]):checked::after {
+  background-color: transparent;
+  top: -4px;
+  left: 0px;
+  -webkit-mask-image: unset;
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='X']::after,
+body:not()
+  .task-list-item.is-checked[data-task='X']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='X']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec01';
+  color: var(--accent2-lite, var(--text-accent));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='>']::after,
+body:not()
+  .task-list-item.is-checked[data-task='>']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='>']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec03';
+  color: var(--text-normal);
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='<']::after,
+body:not()
+  .task-list-item.is-checked[data-task='<']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='<']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec03';
+  color: var(--text-faint);
+  transform: scale(-1, 1);
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='D']::after,
+body:not()
+  .task-list-item.is-checked[data-task='D']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='D']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec04';
+  color: rgb(var(--chbx-h));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='-']::after,
+body:not()
+  .task-list-item.is-checked[data-task='-']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='-']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec02';
+  color: rgb(var(--chbx-d));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='?']::after,
+body:not()
+  .task-list-item.is-checked[data-task='?']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='?']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec05';
+  color: rgb(var(--chbx-q));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='!']::after,
+body:not()
+  .task-list-item.is-checked[data-task='!']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='!']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec08';
+  color: rgb(var(--chbx-i));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='+']::after,
+body:not()
+  .task-list-item.is-checked[data-task='+']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='+']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec06';
+  color: rgb(var(--chbx-a));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='/']::after,
+body:not()
+  .task-list-item.is-checked[data-task='/']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='/']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec17';
+  color: var(--accent, var(--interactive-accent));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='R']::after,
+body:not()
+  .task-list-item.is-checked[data-task='R']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='R']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec07';
+  color: rgb(var(--chbx-R));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='i']::after,
+body:not()
+  .task-list-item.is-checked[data-task='i']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='i']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec09';
+  color: rgb(var(--chbx-id));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='B']::after,
+body:not()
+  .task-list-item.is-checked[data-task='B']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='B']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec10';
+  color: rgb(var(--chbx-B));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='P']::after,
+body:not()
+  .task-list-item.is-checked[data-task='P']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='P']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec11';
+  color: rgb(var(--chbx-P));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='C']::after,
+body:not()
+  .task-list-item.is-checked[data-task='C']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='C']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec12';
+  color: rgb(var(--chbx-C));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='I']::after,
+body:not()
+  .task-list-item.is-checked[data-task='I']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='I']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec16';
+  color: rgb(var(--chbx-I));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='Q']::after,
+body:not()
+  .task-list-item.is-checked[data-task='Q']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='Q']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec13';
+  color: rgb(var(--chbx-R));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='N']::after,
+body:not()
+  .task-list-item.is-checked[data-task='N']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='N']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec14';
+  color: rgb(var(--chbx-N));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='b']::after,
+body:not()
+  .task-list-item.is-checked[data-task='b']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='b']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec15';
+  color: rgb(var(--chbx-b));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='p']::after,
+body:not()
+  .task-list-item.is-checked[data-task='p']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='p']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec19';
+  color: rgb(var(--chbx-R));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='E']::after,
+body:not()
+  .task-list-item.is-checked[data-task='E']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='E']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec18';
+  color: rgb(var(--chbx-I));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='L']::after,
+body:not()
+  .task-list-item.is-checked[data-task='L']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='L']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec21';
+  color: rgb(var(--chbx-N));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='A']::after,
+body:not()
+  .task-list-item.is-checked[data-task='A']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='A']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec20';
+  color: rgb(var(--chbx-P));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='r']::after,
+body:not()
+  .task-list-item.is-checked[data-task='r']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='r']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec22';
+  color: rgb(var(--chbx-r));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='c']::after,
+body:not()
+  .task-list-item.is-checked[data-task='c']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='c']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec29';
+  color: rgb(var(--chbx-c));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='o']::after,
+body:not()
+  .task-list-item.is-checked[data-task='o']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='o']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec24';
+  color: rgb(var(--chbx-b));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='d']::after,
+body:not()
+  .task-list-item.is-checked[data-task='d']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='d']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec25';
+  color: rgb(var(--chbx-I));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='T']::after,
+body:not()
+  .task-list-item.is-checked[data-task='T']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='T']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec26';
+  color: rgb(var(--chbx-R));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='t']::after,
+body:not()
+  .task-list-item.is-checked[data-task='t']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='t']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec27';
+  color: rgb(var(--chbx-R));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='O']::after,
+body:not()
+  .task-list-item.is-checked[data-task='O']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='O']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\e805';
+  color: hsl(var(--interactive-accent-hsl));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='F']::after,
+body:not()
+  .task-list-item.is-checked[data-task='F']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='F']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec28';
+  color: rgb(var(--chbx-h));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='W']::after,
+body:not()
+  .task-list-item.is-checked[data-task='W']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='W']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\e813';
+  color: rgb(var(--chbx-P));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='~']::after,
+body:not()
+  .task-list-item.is-checked[data-task='~']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='~']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec33';
+  color: rgb(var(--chbx-C));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='@']::after,
+body:not()
+  .task-list-item.is-checked[data-task='@']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='@']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\e900';
+  color: rgb(var(--chbx-b));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='f']::after,
+body:not()
+  .task-list-item.is-checked[data-task='f']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='f']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\e81e';
+  color: rgb(var(--chbx-N));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='H']::after,
+body:not()
+  .task-list-item.is-checked[data-task='H']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='H']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec30';
+  color: rgb(var(--chbx-a));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='&']::after,
+body:not()
+  .task-list-item.is-checked[data-task='&']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='&']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec32';
+  color: rgb(var(--chbx-B));
+}
+body:not()
+  .markdown-source-view.mod-cm6
+  .task-list-item-checkbox[data-task='s']::after,
+body:not()
+  .task-list-item.is-checked[data-task='s']
+  > input[type='checkbox']:checked::after,
+body:not()
+  .task-list-item.is-checked[data-task='s']
+  p
+  > input[type='checkbox']:checked::after {
+  content: '\ec31';
+  color: rgb(var(--chbx-d));
+}

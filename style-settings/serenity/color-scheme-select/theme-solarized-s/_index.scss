@@ -1,0 +1,45 @@
+.theme-solarized-s {
+  --theme-tint: 48.5;
+  --theme-sat: 100%;
+  --theme-tint-secondary: 43;
+  --theme-sat-secondary: 52%;
+  --theme-tint-text: 194;
+  --theme-sat-text: 22%;
+  --accent-h: 175 !important;
+  --accent-s: 59% !important;
+  --accent-l: 40% !important;
+  --color-red: #dc322f;
+  --color-green-rgb: 133, 153, 0;
+  --color-green: #859900;
+  --color-orange-rgb: 203, 75, 22;
+  --color-orange: #cb4b16;
+  --color-yellow-rgb: 181, 137, 0;
+  --color-yellow: #b58900;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-cyan: #2aa198;
+  --color-blue-rgb: 38, 139, 210;
+  --color-blue: #268bd2;
+  --color-purple-rgb: 108, 113, 196;
+  --color-purple: #6c71c4;
+  --color-pink-rgb: 211, 54, 130;
+  --color-pink: #d33682;
+  --text-base: 30%;
+}
+.theme-dar.low-contrast-dark {
+  --base-c: 15%;
+}
+.theme-dar.low-contrast-dark,
+.theme-dar.medium-contrast-dark {
+  --color-red: #d86866;
+  --accent-h: 18 !important;
+  --accent-s: 80% !important;
+  --accent-l: 55% !important;
+}
+.theme-solarized-s.colorful-headings-s {
+  --h1-color: var(--color-cyan);
+  --h2-color: var(--color-cyan);
+  --h3-color: var(--color-cyan);
+  --h4-color: var(--color-cyan);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-cyan);
+}

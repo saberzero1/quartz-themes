@@ -1,0 +1,14 @@
+body.accent-green {
+  --accent-h: 147.45;
+  --accent-s: 90%;
+  --accent-l: 80%;
+  --interactive-accent: var(--color-green) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.85
+  ) !important;
+  --link-color: var(--color-green);
+  --link-external-color: var(--color-green);
+}

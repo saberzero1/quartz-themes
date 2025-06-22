@@ -1,24 +1,24 @@
-@use "sass:color";
-@use "sass:list";
-@use "sass:map";
-@use "sass:meta";
-@use "sass:string";
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:string';
 /* Quartz imports */
-@use "../variables.scss" as *;
+@use '../variables.scss' as *;
 /* quartz themes */
 
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root[saved-theme='dark'],
+html[saved-theme='dark'] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=" "] {
+  code[data-theme*=' '] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=" "] span {
+  code[data-theme*=' '] span {
     color: var(--shiki-dark);
   }
   --background-modifier-form-field: var(--color-base-25);
@@ -121,18 +121,18 @@ html[saved-theme="dark"] {
   color-scheme: dark;
 }
 
-:root[saved-theme="light"],
-html[saved-theme="light"] {
+:root[saved-theme='light'],
+html[saved-theme='light'] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=" "] {
+  code[data-theme*=' '] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=" "] span {
+  code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -229,36 +229,36 @@ html[saved-theme="light"] {
 
 /* ia-writer-mono-latin-400-italic */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: 'iA Writer Mono';
   font-style: italic;
   font-display: swap;
   font-weight: 400;
   src:
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2)
-      format("woff2"),
+      format('woff2'),
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff)
-      format("woff");
+      format('woff');
 }
 /* ia-writer-mono-latin-700-italic */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: 'iA Writer Mono';
   font-style: italic;
   font-display: swap;
   font-weight: 700;
   src:
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2)
-      format("woff2"),
+      format('woff2'),
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff)
-      format("woff");
+      format('woff');
 }
 
 /* [0] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.0.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25ee8, U+25f23, U+25f5c, U+25fd4, U+25fe0, U+25ffb, U+2600c, U+26017,
     U+26060, U+260ed, U+26222, U+2626a, U+26270, U+26286, U+2634c, U+26402,
@@ -291,11 +291,11 @@ html[saved-theme="light"] {
 }
 /* [1] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.1.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+1f235-1f23b, U+1f240-1f248, U+1f250-1f251, U+2000b, U+20089-2008a,
     U+200a2, U+200a4, U+200b0, U+200f5, U+20158, U+201a2, U+20213, U+2032b,
@@ -326,22 +326,22 @@ html[saved-theme="light"] {
 }
 /* [2] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.2.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+ffd7, U+ffda-ffdc, U+ffe0-ffe2, U+ffe4, U+ffe6, U+ffe8-ffee,
     U+1f100-1f10c, U+1f110-1f16c, U+1f170-1f1ac, U+1f200-1f202, U+1f210-1f234;
 }
 /* [3] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.3.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+fa10, U+fa12-fa6d, U+fb00-fb04, U+fe10-fe19, U+fe30-fe42, U+fe44-fe52,
     U+fe54-fe66, U+fe68-fe6b, U+ff02, U+ff04, U+ff07, U+ff51, U+ff5b, U+ff5d,
@@ -350,20 +350,20 @@ html[saved-theme="light"] {
 }
 /* [4] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.4.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range: U+f92d-f959, U+f95b-f9f2, U+f9f4-fa0b, U+fa0e-fa0f;
 }
 /* [5] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.5.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+9e8b-9e8c, U+9e8e-9e8f, U+9e91-9e92, U+9e95-9e96, U+9e98, U+9e9b,
     U+9e9d-9e9e, U+9ea4-9ea5, U+9ea8-9eaa, U+9eac-9eb0, U+9eb3-9eb5, U+9eb8,
@@ -379,11 +379,11 @@ html[saved-theme="light"] {
 }
 /* [6] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.6.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+9c3e, U+9c41, U+9c43-9c4a, U+9c4e-9c50, U+9c52-9c54, U+9c56, U+9c58,
     U+9c5a-9c61, U+9c63, U+9c65, U+9c67-9c6b, U+9c6d-9c6e, U+9c70, U+9c72,
@@ -402,11 +402,11 @@ html[saved-theme="light"] {
 }
 /* [7] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.7.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+9ae5-9ae7, U+9ae9, U+9aeb-9aec, U+9aee-9aef, U+9af1-9af5, U+9af7,
     U+9af9-9afb, U+9afd, U+9aff-9b06, U+9b08-9b09, U+9b0b-9b0e, U+9b10, U+9b12,
@@ -423,11 +423,11 @@ html[saved-theme="light"] {
 }
 /* [8] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.8.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+98eb, U+98ed-98ee, U+98f0-98f1, U+98f3, U+98f6, U+9902, U+9907-9909,
     U+9911-9912, U+9914-9918, U+991a-9922, U+9924, U+9926-9927, U+992b-992c,
@@ -447,11 +447,11 @@ html[saved-theme="light"] {
 }
 /* [9] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.9.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+971d, U+9721-9724, U+9728, U+972a, U+9730-9731, U+9733, U+9736,
     U+9738-9739, U+973b, U+973d-973e, U+9741-9744, U+9746-974a, U+974d-974f,
@@ -472,11 +472,11 @@ html[saved-theme="light"] {
 }
 /* [10] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.10.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+944a, U+944c, U+9452-9453, U+9455, U+9459-945c, U+945e-9463, U+9468,
     U+946a-946b, U+946d-9472, U+9475, U+9477, U+947c-947f, U+9481, U+9483-9485,
@@ -496,11 +496,11 @@ html[saved-theme="light"] {
 }
 /* [11] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.11.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+92bc-92bd, U+92bf-92c3, U+92c5-92c8, U+92cb-92d0, U+92d2-92d3, U+92d5,
     U+92d7-92d9, U+92dc-92dd, U+92df-92e1, U+92e3-92e5, U+92e7-92ea, U+92ec,
@@ -519,11 +519,11 @@ html[saved-theme="light"] {
 }
 /* [12] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.12.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+9143, U+9146-914c, U+914f, U+9153, U+9156-915b, U+9161, U+9163-9165,
     U+9167, U+9169, U+916d, U+9172-9174, U+9179-917b, U+9181-9183, U+9185-9187,
@@ -541,11 +541,11 @@ html[saved-theme="light"] {
 }
 /* [13] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.13.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+8f52-8f55, U+8f57-8f58, U+8f5c-8f5e, U+8f61-8f66, U+8f9c-8f9d,
     U+8f9f-8fa2, U+8fa4-8fa8, U+8fad-8faf, U+8fb4-8fb8, U+8fbe, U+8fc0-8fc2,
@@ -566,11 +566,11 @@ html[saved-theme="light"] {
 }
 /* [14] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.14.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+8dc0, U+8dc2, U+8dc5-8dc8, U+8dca-8dcc, U+8dce-8dcf, U+8dd1, U+8dd4-8dd7,
     U+8dd9-8ddb, U+8ddf, U+8de3-8de5, U+8de7, U+8dea-8dec, U+8df0-8df2, U+8df4,
@@ -589,11 +589,11 @@ html[saved-theme="light"] {
 }
 /* [15] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.15.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+8b2d, U+8b30, U+8b37, U+8b3c, U+8b3e, U+8b41-8b46, U+8b48-8b49,
     U+8b4c-8b4f, U+8b51-8b54, U+8b56, U+8b59, U+8b5b, U+8b5e-8b5f, U+8b63,
@@ -615,11 +615,11 @@ html[saved-theme="light"] {
 }
 /* [16] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.16.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+8973-8975, U+8977, U+897a-897e, U+8980, U+8983, U+8988-898a, U+898d,
     U+8990, U+8993-8995, U+8998, U+899b-899c, U+899f-89a1, U+89a5-89a6, U+89a9,
@@ -640,11 +640,11 @@ html[saved-theme="light"] {
 }
 /* [17] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.17.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+87e2-87e6, U+87ea-87ed, U+87ef, U+87f1, U+87f3, U+87f5-87f8, U+87fa-87fb,
     U+87fe-87ff, U+8801, U+8803, U+8805-8807, U+8809-880b, U+880d-8816,
@@ -664,11 +664,11 @@ html[saved-theme="light"] {
 }
 /* [18] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.18.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+8655-8659, U+865b, U+865d-8664, U+8667, U+8669, U+866c, U+866f, U+8671,
     U+8675-8677, U+867a-867b, U+867d, U+8687-8689, U+868b-868d, U+8691, U+8693,
@@ -687,11 +687,11 @@ html[saved-theme="light"] {
 }
 /* [19] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.19.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+84b4, U+84b9-84bb, U+84bd-84c2, U+84c6-84ca, U+84cc-84d1, U+84d3, U+84d6,
     U+84d9-84da, U+84dc, U+84e7, U+84ea, U+84ec, U+84ef-84f2, U+84f4, U+84f7,
@@ -711,11 +711,11 @@ html[saved-theme="light"] {
 }
 /* [20] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.20.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+82e8, U+82ea, U+82ed, U+82ef, U+82f3-82f4, U+82f6-82f7, U+82f9, U+82fb,
     U+82fd-82fe, U+8300-8301, U+8303, U+8306-8308, U+830a-830c, U+8316-8318,
@@ -736,11 +736,11 @@ html[saved-theme="light"] {
 }
 /* [21] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.21.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+814a, U+814c, U+8151-8153, U+8157, U+815f-8161, U+8165-8169, U+816d-816f,
     U+8171, U+8173-8174, U+8177, U+8180-8186, U+8188, U+818a-818b, U+818e,
@@ -761,11 +761,11 @@ html[saved-theme="light"] {
 }
 /* [22] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.22.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7f77-7f79, U+7f7d-7f80, U+7f82-7f83, U+7f86-7f88, U+7f8b-7f8d,
     U+7f8f-7f91, U+7f94, U+7f96-7f97, U+7f9a, U+7f9c-7f9d, U+7fa1-7fa3, U+7fa6,
@@ -787,11 +787,11 @@ html[saved-theme="light"] {
 }
 /* [23] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.23.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7d57, U+7d59-7d5d, U+7d63, U+7d65, U+7d67, U+7d6a, U+7d6e, U+7d70,
     U+7d72-7d73, U+7d78, U+7d7a-7d7b, U+7d7d, U+7d7f, U+7d81-7d83, U+7d85-7d86,
@@ -810,11 +810,11 @@ html[saved-theme="light"] {
 }
 /* [24] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.24.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7bc8, U+7bca-7bcc, U+7bcf, U+7bd4, U+7bd6-7bd7, U+7bd9-7bdb, U+7bdd,
     U+7be5-7be6, U+7be8-7bea, U+7bf0, U+7bf2-7bfa, U+7bfc, U+7bfe, U+7c00-7c04,
@@ -834,11 +834,11 @@ html[saved-theme="light"] {
 }
 /* [25] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.25.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7a17-7a19, U+7a1b, U+7a1e-7a21, U+7a27, U+7a2b, U+7a2d, U+7a2f-7a31,
     U+7a34-7a35, U+7a37-7a3b, U+7a3e, U+7a43-7a49, U+7a4c, U+7a4e, U+7a50,
@@ -858,11 +858,11 @@ html[saved-theme="light"] {
 }
 /* [26] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.26.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7851-7852, U+785c, U+785e, U+7860-7861, U+7863-7864, U+7868, U+786a,
     U+786e-786f, U+7872, U+7874, U+787a, U+787c, U+787e, U+7886-7887, U+788a,
@@ -882,11 +882,11 @@ html[saved-theme="light"] {
 }
 /* [27] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.27.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+768c-768e, U+7690, U+7693, U+7695-7696, U+7699-76a8, U+76aa, U+76ad,
     U+76af-76b0, U+76b4, U+76b6-76ba, U+76bd, U+76c1-76c3, U+76c5, U+76c8-76c9,
@@ -907,11 +907,11 @@ html[saved-theme="light"] {
 }
 /* [28] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.28.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7511-7513, U+7515-7517, U+751c, U+751e, U+7520-7522, U+7524, U+7526-7527,
     U+7529-752c, U+752f, U+7536, U+7538-7539, U+753c-7540, U+7543-7544,
@@ -929,11 +929,11 @@ html[saved-theme="light"] {
 }
 /* [29] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.29.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+736c, U+736e-7371, U+7375, U+7377-737c, U+7380-7381, U+7383, U+7385-7386,
     U+738a, U+738e, U+7390, U+7393-7398, U+739c, U+739e-73a0, U+73a2,
@@ -953,11 +953,11 @@ html[saved-theme="light"] {
 }
 /* [30] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.30.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7166, U+7168, U+716c, U+7179, U+7180, U+7184-7185, U+7187-7188, U+718c,
     U+718f, U+7192, U+7194-7196, U+7199-719b, U+71a0, U+71a2, U+71a8, U+71ac,
@@ -980,11 +980,11 @@ html[saved-theme="light"] {
 }
 /* [31] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.31.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+6f58-6f5b, U+6f5d-6f5e, U+6f60-6f62, U+6f66, U+6f68, U+6f6c-6f6d, U+6f6f,
     U+6f74, U+6f78, U+6f7a, U+6f7c-6f7e, U+6f80, U+6f82-6f83, U+6f86-6f88,
@@ -1006,11 +1006,11 @@ html[saved-theme="light"] {
 }
 /* [32] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.32.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+6d7c, U+6d80-6d82, U+6d85, U+6d87, U+6d89-6d8a, U+6d8c-6d8e, U+6d91-6d98,
     U+6d9c, U+6daa-6dac, U+6dae, U+6db4-6db5, U+6db7-6db9, U+6dbd, U+6dbf,
@@ -1031,11 +1031,11 @@ html[saved-theme="light"] {
 }
 /* [33] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.33.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+6b85, U+6b89, U+6b8d, U+6b95, U+6b97-6b98, U+6b9b, U+6b9e-6ba0,
     U+6ba2-6ba4, U+6ba8-6bb3, U+6bb7-6bb9, U+6bbc-6bbe, U+6bc0, U+6bc3-6bc4,
@@ -1057,11 +1057,11 @@ html[saved-theme="light"] {
 }
 /* [34] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.34.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+69dd-69de, U+69e2-69e3, U+69e5, U+69e7-69eb, U+69ed-69ef, U+69f1-69f6,
     U+69f9, U+69fe-6a01, U+6a03, U+6a05, U+6a0a, U+6a0c, U+6a0f, U+6a11-6a15,
@@ -1082,11 +1082,11 @@ html[saved-theme="light"] {
 }
 /* [35] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.35.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+6855, U+6857-6859, U+685b, U+685d, U+685f, U+6863, U+6867, U+686b,
     U+686e-6872, U+6874-6875, U+6877, U+6879-687c, U+687e-687f, U+6882-6884,
@@ -1106,11 +1106,11 @@ html[saved-theme="light"] {
 }
 /* [36] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.36.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+667e-6680, U+6683-6684, U+6688, U+668b-668e, U+6690, U+6692, U+6698-669d,
     U+669f-66a0, U+66a2, U+66a4, U+66ad, U+66b1-66b3, U+66b5, U+66b8-66b9,
@@ -1132,11 +1132,11 @@ html[saved-theme="light"] {
 }
 /* [37] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.37.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+64d2, U+64d4-64d5, U+64d7-64d8, U+64da, U+64e0-64e1, U+64e3-64e5, U+64e7,
     U+64e9-64ea, U+64ed, U+64ef-64f2, U+64f4-64f7, U+64fa-64fb, U+64fd-6501,
@@ -1157,11 +1157,11 @@ html[saved-theme="light"] {
 }
 /* [38] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.38.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+62cf, U+62d1, U+62d4-62d6, U+62da, U+62dc, U+62ea, U+62ee-62ef,
     U+62f1-62f2, U+62f4-62f5, U+62fc-62fd, U+62ff, U+6302-6304, U+6308-630d,
@@ -1183,11 +1183,11 @@ html[saved-theme="light"] {
 }
 /* [39] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.39.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+6117, U+6119, U+611c, U+611e, U+6120-6122, U+6127-6128, U+612a-612c,
     U+6130-6131, U+6134-6137, U+6139-613a, U+613c-613f, U+6141-6142,
@@ -1208,11 +1208,11 @@ html[saved-theme="light"] {
 }
 /* [40] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.40.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+5f6c-5f6d, U+5f6f, U+5f72-5f75, U+5f78, U+5f7a, U+5f7d-5f7f, U+5f82-5f83,
     U+5f87-5f89, U+5f8d, U+5f8f, U+5f91, U+5f96, U+5f99, U+5f9c-5f9d, U+5fa0,
@@ -1232,11 +1232,11 @@ html[saved-theme="light"] {
 }
 /* [41] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.41.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+5d9b, U+5d9d, U+5d9f-5da0, U+5da2, U+5da4, U+5da7, U+5dab-5dac, U+5dae,
     U+5db0, U+5db2, U+5db4, U+5db7-5db9, U+5dbc-5dbd, U+5dc3, U+5dc7, U+5dc9,
@@ -1258,11 +1258,11 @@ html[saved-theme="light"] {
 }
 /* [42] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.42.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+5bbc, U+5bc0-5bc1, U+5bc3, U+5bc7, U+5bc9, U+5bcd-5bd0, U+5bd3-5bd4,
     U+5bd6-5bda, U+5bde, U+5be0-5be2, U+5be4-5be6, U+5be8, U+5beb-5bec,
@@ -1284,11 +1284,11 @@ html[saved-theme="light"] {
 }
 /* [43] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.43.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+598b-598e, U+5992, U+5995, U+5997, U+599b, U+599d, U+599f, U+59a3-59a4,
     U+59a7, U+59ad-59b0, U+59b2-59b3, U+59b7, U+59ba, U+59bc, U+59be, U+59c1,
@@ -1313,11 +1313,11 @@ html[saved-theme="light"] {
 }
 /* [44] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.44.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+57b3, U+57b8, U+57bd, U+57c0, U+57c3, U+57c6-57c8, U+57cc, U+57cf,
     U+57d2-57d7, U+57dc-57de, U+57e0-57e1, U+57e3-57e4, U+57e6-57e7, U+57e9,
@@ -1338,11 +1338,11 @@ html[saved-theme="light"] {
 }
 /* [45] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.45.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+5616-5617, U+5619, U+561b, U+5620, U+5628, U+562c, U+562f-5639,
     U+563b-563d, U+563f-5641, U+5643-5644, U+5646-5647, U+5649, U+564b,
@@ -1362,11 +1362,11 @@ html[saved-theme="light"] {
 }
 /* [46] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.46.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+543f-5440, U+5443-5444, U+5447, U+544c-544f, U+5455, U+545e, U+5462,
     U+5464, U+5466-5467, U+5469, U+546b-546e, U+5470-5471, U+5474-5477, U+547b,
@@ -1386,11 +1386,11 @@ html[saved-theme="light"] {
 }
 /* [47] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.47.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+528d, U+5291-5298, U+529a, U+529c, U+52a4-52a7, U+52ab-52ad, U+52af-52b0,
     U+52b5-52b8, U+52ba-52be, U+52c0-52c1, U+52c4-52c6, U+52c8, U+52ca,
@@ -1410,11 +1410,11 @@ html[saved-theme="light"] {
 }
 /* [48] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.48.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+50dd-50df, U+50e1-50e6, U+50e8-50e9, U+50ed-50f6, U+50f9-50fb, U+50fe,
     U+5101-5103, U+5106-5109, U+510b-510e, U+5110, U+5112, U+5114-511e, U+5121,
@@ -1434,11 +1434,11 @@ html[saved-theme="light"] {
 }
 /* [49] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.49.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4f57-4f58, U+4f5a-4f5b, U+4f5d-4f5f, U+4f63-4f64, U+4f69-4f6a, U+4f6c,
     U+4f6e-4f71, U+4f76-4f7e, U+4f81-4f85, U+4f88-4f8a, U+4f8c, U+4f8e-4f90,
@@ -1457,11 +1457,11 @@ html[saved-theme="light"] {
 }
 /* [50] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.50.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4093, U+4103, U+4105, U+4148, U+414f, U+4163, U+41b4, U+41bf, U+41e6,
     U+41ee, U+41f3, U+4207, U+420e, U+4264, U+4293, U+42c6, U+42d6, U+42dd,
@@ -1486,11 +1486,11 @@ html[saved-theme="light"] {
 }
 /* [51] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.51.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+3395-339b, U+339e-33a0, U+33a2-33ff, U+3402, U+3405-3406, U+3427, U+342c,
     U+342e, U+3468, U+346a, U+3488, U+3492, U+34b5, U+34bc, U+34c1, U+34c7,
@@ -1509,50 +1509,50 @@ html[saved-theme="light"] {
 }
 /* [52] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.52.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range: U+32b5-332b, U+332d-3394;
 }
 /* [53] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.53.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range: U+31c8-31e3, U+31f0-321e, U+3220-3230, U+3232-32b4;
 }
 /* [54] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.54.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+3028-303f, U+3094-3096, U+309f-30a0, U+30ee, U+30f7-30fa, U+30ff,
     U+3105-312f, U+3131-3163, U+3165-318e, U+3190-31bb, U+31c0-31c7;
 }
 /* [55] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.55.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2f14-2fd5, U+2ff0-2ffb, U+3004, U+3013, U+3016-301b, U+301e, U+3020-3027;
 }
 /* [56] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.56.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25e4-25e6, U+2601-2603, U+2609, U+260e-260f, U+2616-2617, U+261c-261f,
     U+262f, U+2641, U+2660, U+2662-2664, U+2666-2668, U+266d-266e, U+2672-267d,
@@ -1562,11 +1562,11 @@ html[saved-theme="light"] {
 }
 /* [57] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.57.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+24d1-24ff, U+2503-2513, U+2515-2516, U+2518-251b, U+251d-2522,
     U+2524-259f, U+25a2-25ab, U+25b1, U+25b7, U+25c0-25c1, U+25c9-25ca, U+25cc,
@@ -1574,11 +1574,11 @@ html[saved-theme="light"] {
 }
 /* [58] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.58.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2105, U+2109-210a, U+210f, U+2116, U+2121, U+2126-2127, U+212b, U+212e,
     U+2135, U+213b, U+2194-2199, U+21b8-21b9, U+21c4-21c6, U+21cb-21cc, U+21d0,
@@ -1592,11 +1592,11 @@ html[saved-theme="light"] {
 }
 /* [59] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.59.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+a1-a4, U+a6-a7, U+aa, U+ac-ad, U+b5-b6, U+b8-ba, U+bc-c8, U+ca-cc,
     U+ce-d5, U+d9-db, U+dd-df, U+e6, U+ee, U+f0, U+f5, U+f7, U+f9, U+fb,
@@ -1609,11 +1609,11 @@ html[saved-theme="light"] {
 }
 /* [60] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.60.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2227, U+26a0, U+2713, U+301f, U+4ff8, U+5239, U+526a, U+54fa, U+5740,
     U+5937, U+5993, U+59fb, U+5a3c, U+5c41, U+6028, U+626e, U+646f, U+647a,
@@ -1624,11 +1624,11 @@ html[saved-theme="light"] {
 }
 /* [61] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.61.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+a8, U+2032, U+2261, U+2282, U+3090, U+30f1, U+339c, U+535c, U+53d9,
     U+56a2, U+56c1, U+5806, U+589f, U+59d0, U+5a7f, U+60e0, U+639f, U+65af,
@@ -1639,11 +1639,11 @@ html[saved-theme="light"] {
 }
 /* [62] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.62.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2d9, U+21d4, U+301d, U+515c, U+52fe, U+5420, U+5750, U+5766, U+5954,
     U+5b95, U+5f8a, U+5f98, U+620c, U+621f, U+641c, U+66d9, U+676d, U+6775,
@@ -1654,11 +1654,11 @@ html[saved-theme="light"] {
 }
 /* [63] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.63.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2ca-2cb, U+2229, U+2468, U+2669, U+266f, U+273f, U+4ec0, U+4f60, U+4fb6,
     U+5347, U+540e, U+543b, U+5b0c, U+5d4c, U+5f14, U+5f9e, U+6155, U+62d0,
@@ -1669,11 +1669,11 @@ html[saved-theme="light"] {
 }
 /* [64] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.64.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2467, U+4ece, U+4ed4, U+4f91, U+4fae, U+534d, U+53c9, U+54b3, U+586b,
     U+5944, U+5b78, U+5df7, U+5f77, U+6101, U+6167-6168, U+61a4, U+62d9, U+698a,
@@ -1684,11 +1684,11 @@ html[saved-theme="light"] {
 }
 /* [65] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.65.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+b1, U+309b, U+4e5e, U+51f1, U+5506, U+55c5, U+58cc, U+59d1, U+5c51,
     U+5ef7, U+6284, U+62d7, U+6689, U+673d, U+6a2b, U+6a8e, U+6a9c, U+6d63,
@@ -1699,11 +1699,11 @@ html[saved-theme="light"] {
 }
 /* [66] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.66.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2020, U+3003, U+3231, U+4e9b, U+4f3d, U+4f47, U+51b6, U+51dc, U+53e1,
     U+5bc5, U+602f, U+60bc, U+61c9, U+633d, U+637b, U+6492, U+65fa, U+660f,
@@ -1714,11 +1714,11 @@ html[saved-theme="light"] {
 }
 /* [67] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.67.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2466, U+2600, U+4eab, U+4fe3, U+4ff5, U+51a5, U+51f0, U+536f, U+53d4,
     U+53f1, U+54a5, U+559d, U+55e3, U+58fa, U+5962, U+59ea, U+5c16, U+5cef,
@@ -1729,11 +1729,11 @@ html[saved-theme="light"] {
 }
 /* [68] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.68.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+251c, U+2523, U+4e14, U+545f, U+54bd, U+553e, U+55dc, U+56da, U+589c,
     U+5b55, U+5bb5, U+5ce1, U+5df4, U+5eb6, U+5ec9, U+6191, U+62f7, U+6357,
@@ -1744,11 +1744,11 @@ html[saved-theme="light"] {
 }
 /* [69] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.69.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2003, U+2312, U+266c, U+4f86, U+51ea, U+5243, U+5256, U+541f, U+5841,
     U+59dc, U+5df3, U+601c, U+60e7, U+632b, U+638c, U+64ad, U+6881, U+697c,
@@ -1759,11 +1759,11 @@ html[saved-theme="light"] {
 }
 /* [70] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.70.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+266b, U+3006, U+5176, U+5197, U+51a8, U+51c6, U+52f2, U+5614, U+5875,
     U+5a2f, U+5b54, U+5ce0, U+5dba, U+5deb, U+5e63, U+5f59, U+5fcc, U+6068,
@@ -1774,11 +1774,11 @@ html[saved-theme="light"] {
 }
 /* [71] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.71.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+af, U+2465, U+2517, U+33a1, U+4f10, U+50c5, U+51b4, U+5384, U+5606,
     U+5bb0, U+5cac, U+5ee3, U+618e, U+61f2, U+62c9, U+66ab, U+66f9, U+6816,
@@ -1789,11 +1789,11 @@ html[saved-theme="light"] {
 }
 /* [72] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.72.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e91, U+508d, U+50e7, U+514e, U+51f6, U+5446, U+5504, U+584a, U+59a8,
     U+59d3, U+5a46, U+5ac9, U+6020, U+60a6, U+6148, U+621a, U+6234, U+64c1,
@@ -1804,11 +1804,11 @@ html[saved-theme="light"] {
 }
 /* [73] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.73.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+221e, U+2514, U+51f9, U+5270, U+5449, U+5824, U+59a5, U+5a29, U+5d07,
     U+5e16, U+60e3, U+614c, U+6276, U+643e, U+64ab, U+6562, U+6681, U+670b,
@@ -1819,11 +1819,11 @@ html[saved-theme="light"] {
 }
 /* [74] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.74.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2002, U+2025, U+4f8d, U+51e1, U+51f8, U+5507, U+5598, U+58f1, U+5983,
     U+59ac, U+5c3c, U+5de7, U+5e7d, U+5eca, U+5f61, U+606d, U+60f9, U+636e,
@@ -1834,11 +1834,11 @@ html[saved-theme="light"] {
 }
 /* [75] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.75.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2464, U+2501, U+2640, U+2642, U+339d, U+4f0e, U+5091, U+50b5, U+5132,
     U+51cc, U+558b, U+55aa, U+585e, U+5bee, U+5dfe, U+60b6, U+62b9, U+6349,
@@ -1849,11 +1849,11 @@ html[saved-theme="light"] {
 }
 /* [76] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.76.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2266-2267, U+4f2f, U+5208, U+5451, U+546a, U+5589, U+576a, U+5815, U+5a9a,
     U+5b9b, U+5c3a, U+5efb, U+5faa, U+6109, U+6643, U+6652, U+695a, U+69fd,
@@ -1864,11 +1864,11 @@ html[saved-theme="light"] {
 }
 /* [77] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.77.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2207, U+25ef, U+309c, U+4e4f, U+5146, U+51dd, U+5351, U+540a, U+5629,
     U+5eb5, U+5f04, U+5f13, U+60dc, U+6212, U+63b4, U+642c, U+6627, U+66a6,
@@ -1879,11 +1879,11 @@ html[saved-theme="light"] {
 }
 /* [78] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.78.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e32, U+51db, U+53a8, U+53ea, U+5609, U+5674, U+5a92, U+5e7e, U+6115,
     U+611a, U+62cc, U+62ed, U+63c9, U+64b9, U+64e6, U+65cb, U+6606, U+6731,
@@ -1894,11 +1894,11 @@ html[saved-theme="light"] {
 }
 /* [79] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.79.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25b3, U+30f5, U+4eae, U+4f46, U+4f51, U+5203, U+52ff, U+55a7, U+564c,
     U+565b, U+57f9, U+5805, U+5b64, U+5e06, U+5f70, U+5f90, U+60e8, U+6182,
@@ -1909,11 +1909,11 @@ html[saved-theme="light"] {
 }
 /* [80] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.80.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2463, U+25a1, U+4ef0, U+5076, U+5098, U+51fd, U+5302, U+5448, U+54c9,
     U+570b, U+583a, U+5893, U+58a8, U+58ee, U+5949, U+5bdb, U+5f26, U+5f81,
@@ -1924,11 +1924,11 @@ html[saved-theme="light"] {
 }
 /* [81] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.81.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2010, U+2502, U+25b6, U+4f3a, U+514b, U+5265, U+52c3, U+5339, U+53ec,
     U+54c0, U+55b0, U+5854, U+5b8f, U+5cb3, U+5e84, U+60da, U+6247, U+6249,
@@ -1939,11 +1939,11 @@ html[saved-theme="light"] {
 }
 /* [82] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.82.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2103, U+5049, U+52b1, U+5320, U+5553, U+572d, U+58c7, U+5b5d, U+5bc2,
     U+5de3, U+5e61, U+5f80, U+61a9, U+67d0, U+67f4, U+6c88, U+6ca1, U+6ce5,
@@ -1954,11 +1954,11 @@ html[saved-theme="light"] {
 }
 /* [83] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.83.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2500, U+3008-3009, U+4ead, U+4f0f, U+4fca, U+53eb, U+543e, U+57a2, U+5cf0,
     U+5e8f, U+5fe0, U+61b2, U+62d8, U+6442, U+64b2, U+6589, U+659c, U+67f1,
@@ -1969,11 +1969,11 @@ html[saved-theme="light"] {
 }
 /* [84] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.84.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+3014-3015, U+4e3c, U+5036, U+5075, U+533f, U+53e9, U+5531, U+5642, U+5984,
     U+59e6, U+5a01, U+5b6b, U+5c0b, U+5f25, U+6069, U+60a0, U+614e, U+62b5,
@@ -1984,11 +1984,11 @@ html[saved-theme="light"] {
 }
 /* [85] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.85.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25c7, U+3007, U+504f, U+507d, U+51a0, U+52a3, U+5410, U+5510, U+559a,
     U+5782, U+582a, U+5c0a, U+5c3f, U+5c48, U+5f6b, U+6176, U+622f, U+6279,
@@ -1999,11 +1999,11 @@ html[saved-theme="light"] {
 }
 /* [86] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.86.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+24, U+2022, U+2212, U+221f, U+2665, U+4ecf, U+5100, U+51cd, U+52d8,
     U+5378, U+53f6, U+574a, U+5982, U+5996, U+5c1a, U+5e1d, U+5f84, U+609f,
@@ -2014,11 +2014,11 @@ html[saved-theme="light"] {
 }
 /* [87] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.87.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+b0, U+226a, U+2462, U+4e39, U+4fc3, U+4fd7, U+50be, U+50da, U+5200,
     U+5211, U+54f2, U+5618, U+596a, U+5b22, U+5bb4, U+5d50, U+60a3, U+63fa,
@@ -2029,11 +2029,11 @@ html[saved-theme="light"] {
 }
 /* [88] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.88.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25bd, U+4e59, U+4ec1, U+4ff3, U+515a, U+518a, U+525b, U+5375, U+552f,
     U+57a3, U+5b9c, U+5c3d, U+5e3d, U+5e7b, U+5f0a, U+6094, U+6458, U+654f,
@@ -2044,11 +2044,11 @@ html[saved-theme="light"] {
 }
 /* [89] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.89.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+a5, U+4e80, U+4f34, U+4f73, U+4f75, U+511f, U+5192, U+52aa, U+53c8,
     U+570f, U+57cb, U+596e, U+5d8b, U+5f66, U+5fd9, U+62db, U+62f6, U+6328,
@@ -2059,11 +2059,11 @@ html[saved-theme="light"] {
 }
 /* [90] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.90.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e18, U+4fb5, U+5104, U+52c7, U+5353, U+5374, U+53e5, U+587e, U+594f,
     U+5a20, U+5de1, U+5f18, U+5fcd, U+6291, U+62ab, U+6355, U+6392, U+63da,
@@ -2074,11 +2074,11 @@ html[saved-theme="light"] {
 }
 /* [91] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.91.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+60, U+2200, U+226b, U+2461, U+517c, U+526f, U+5800, U+5b97, U+5bf8,
     U+5c01, U+5d29, U+5e4c, U+5e81, U+6065, U+61d0, U+667a, U+6696, U+6843,
@@ -2089,11 +2089,11 @@ html[saved-theme="light"] {
 }
 /* [92] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.92.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2460, U+4e5f, U+4e7e, U+4ed9, U+501f, U+502b, U+5968, U+5974, U+5ac1,
     U+5b99, U+5ba3, U+5be7, U+5be9, U+5c64, U+5cb8, U+5ec3, U+5f1f, U+616e,
@@ -2104,11 +2104,11 @@ html[saved-theme="light"] {
 }
 /* [93] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.93.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+21d2, U+25ce, U+300a-300b, U+4e89, U+4e9c, U+4ea1, U+5263, U+53cc, U+5426,
     U+5869, U+5947, U+598a, U+5999, U+5e55, U+5e72, U+5e79, U+5fae, U+5fb9,
@@ -2119,11 +2119,11 @@ html[saved-theme="light"] {
 }
 /* [94] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.94.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2015, U+2190, U+4e43, U+5019, U+5247, U+52e7, U+5438, U+54b2, U+55ab,
     U+57f7, U+5bd2, U+5e8a, U+5ef6, U+6016, U+60b2, U+6162, U+6319, U+6551,
@@ -2134,11 +2134,11 @@ html[saved-theme="light"] {
 }
 /* [95] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.95.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2193, U+25b2, U+4e4b, U+516d, U+51c4, U+529f, U+52c9, U+5360, U+5442,
     U+5857, U+5915, U+59eb, U+5a9b, U+5c3b, U+6012, U+61b6, U+62b1, U+6311,
@@ -2149,11 +2149,11 @@ html[saved-theme="light"] {
 }
 /* [96] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.96.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e03, U+4f38, U+50b7, U+5264, U+5348, U+5371, U+585a, U+58ca, U+5951,
     U+59b9, U+59d4, U+5b98, U+5f8b, U+6388, U+64cd, U+65e7, U+6803, U+6b6f,
@@ -2164,11 +2164,11 @@ html[saved-theme="light"] {
 }
 /* [97] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.97.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7e, U+b4, U+25c6, U+2661, U+4e92, U+4eee, U+4ffa, U+5144, U+5237, U+5287,
     U+52b4, U+58c1, U+5bff, U+5c04, U+5c06, U+5e95, U+5f31, U+5f93, U+63c3,
@@ -2179,11 +2179,11 @@ html[saved-theme="light"] {
 }
 /* [98] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.98.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25cb, U+4e71, U+4f59, U+50d5, U+520a, U+5217, U+5230, U+523a-523b, U+541b,
     U+5439, U+5747, U+59c9, U+5bdf, U+5c31, U+5de8, U+5e7c, U+5f69, U+6050,
@@ -2194,11 +2194,11 @@ html[saved-theme="light"] {
 }
 /* [99] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.99.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2191, U+505c, U+52e4, U+5305, U+535a, U+56e0, U+59bb, U+5acc, U+5b09,
     U+5b87, U+5c90, U+5df1, U+5e2d, U+5e33, U+5f3e, U+6298, U+6383, U+653b,
@@ -2209,11 +2209,11 @@ html[saved-theme="light"] {
 }
 /* [100] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.100.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e08, U+4f9d, U+5012, U+514d, U+51b7, U+5275, U+53ca, U+53f8, U+5584,
     U+57fc, U+5b9d, U+5bfa, U+5c3e, U+5f01, U+5fb4, U+5fd7, U+606f, U+62e1,
@@ -2224,11 +2224,11 @@ html[saved-theme="light"] {
 }
 /* [101] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.101.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25bc, U+3012, U+4ef2, U+4f0a, U+516b, U+5373, U+539a, U+53b3, U+559c,
     U+56f0, U+5727, U+5742, U+5965, U+59ff, U+5bc6, U+5dfb, U+5e45, U+5ead,
@@ -2239,11 +2239,11 @@ html[saved-theme="light"] {
 }
 /* [102] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.102.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+3d, U+5e, U+25cf, U+4e0e, U+4e5d, U+4e73, U+4e94, U+4f3c, U+5009, U+5145,
     U+51ac, U+5238, U+524a, U+53f3, U+547c, U+5802, U+5922, U+5a66, U+5c0e,
@@ -2254,11 +2254,11 @@ html[saved-theme="light"] {
 }
 /* [103] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.103.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+500d, U+5074, U+50cd, U+5175, U+52e2, U+5352, U+5354, U+53f2, U+5409,
     U+56fa, U+5a18, U+5b88, U+5bdd, U+5ca9, U+5f92, U+5fa9, U+60a9, U+623f,
@@ -2269,11 +2269,11 @@ html[saved-theme="light"] {
 }
 /* [104] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.104.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e01, U+4e21, U+4e38, U+52a9, U+547d, U+592e, U+5931, U+5b63, U+5c40,
     U+5dde, U+5e78, U+5efa, U+5fa1, U+604b, U+6075, U+62c5, U+632f, U+6a19,
@@ -2284,11 +2284,11 @@ html[saved-theme="light"] {
 }
 /* [105] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.105.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+25, U+25a0, U+4e26, U+4f4e, U+5341, U+56f2, U+5bbf, U+5c45, U+5c55,
     U+5c5e, U+5dee, U+5e9c, U+5f7c, U+6255, U+627f, U+62bc, U+65cf, U+661f,
@@ -2299,11 +2299,11 @@ html[saved-theme="light"] {
 }
 /* [106] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.106.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+30f6, U+50ac, U+5178, U+51e6, U+5224, U+52dd, U+5883, U+5897, U+590f,
     U+5a5a, U+5bb3, U+5c65, U+5e03, U+5e2b, U+5e30, U+5eb7, U+6271, U+63f4,
@@ -2314,11 +2314,11 @@ html[saved-theme="light"] {
 }
 /* [107] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.107.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+23, U+3c, U+2192, U+4e45, U+4efb, U+4f50, U+4f8b, U+4fc2, U+5024, U+5150,
     U+5272, U+5370, U+53bb, U+542b, U+56db, U+56e3, U+57ce, U+5bc4, U+5bcc,
@@ -2329,11 +2329,11 @@ html[saved-theme="light"] {
 }
 /* [108] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.108.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2605-2606, U+301c, U+4e57, U+4fee, U+5065, U+52df, U+533b, U+5357, U+57df,
     U+58eb, U+58f0, U+591c, U+592a-592b, U+5948, U+5b85, U+5d0e, U+5ea7, U+5ff5,
@@ -2344,11 +2344,11 @@ html[saved-theme="light"] {
 }
 /* [109] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.109.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+266a, U+4f11, U+533a, U+5343, U+534a, U+53cd, U+5404, U+56f3, U+5b57-5b58,
     U+5bae, U+5c4a, U+5e0c, U+5e2f, U+5eab, U+5f35, U+5f79, U+614b, U+6226,
@@ -2359,11 +2359,11 @@ html[saved-theme="light"] {
 }
 /* [110] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.110.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+40, U+4e86, U+4e95, U+4f01, U+4f1d, U+4fbf, U+5099, U+5171, U+5177,
     U+53cb, U+53ce, U+53f0, U+5668, U+5712, U+5ba4, U+5ca1, U+5f85, U+60f3,
@@ -2374,11 +2374,11 @@ html[saved-theme="light"] {
 }
 /* [111] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.111.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+2b, U+d7, U+300e-300f, U+4e07, U+4e8c, U+512a, U+5149, U+518d, U+5236,
     U+52b9, U+52d9, U+5468, U+578b, U+57fa, U+5b8c, U+5ba2, U+5c02, U+5de5,
@@ -2389,11 +2389,11 @@ html[saved-theme="light"] {
 }
 /* [112] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.112.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e16, U+4e3b, U+4ea4, U+4ee4, U+4f4d, U+4f4f, U+4f55, U+4f9b, U+5317,
     U+5358, U+53c2, U+53e4, U+548c, U+571f, U+59cb, U+5cf6, U+5e38, U+63a2,
@@ -2404,11 +2404,11 @@ html[saved-theme="light"] {
 }
 /* [113] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.113.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+26, U+5f, U+2026, U+203b, U+4e09, U+4eac, U+4ed5, U+4fa1, U+5143, U+5199,
     U+5207, U+539f, U+53e3, U+53f7, U+5411, U+5473, U+5546, U+55b6, U+5929,
@@ -2419,11 +2419,11 @@ html[saved-theme="light"] {
 }
 /* [114] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.114.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+3e, U+3005, U+4e0d, U+4e88, U+4ecb, U+4ee3, U+4ef6, U+4fdd, U+4fe1,
     U+500b, U+50cf, U+5186, U+5316, U+53d7, U+540c, U+544a, U+54e1, U+5728,
@@ -2434,11 +2434,11 @@ html[saved-theme="light"] {
 }
 /* [115] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.115.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+7c, U+3080, U+4ee5, U+5148, U+516c, U+521d, U+5225, U+529b, U+52a0,
     U+53ef, U+56de, U+56fd, U+5909, U+591a, U+5b66, U+5b9f, U+5bb6, U+5bfe,
@@ -2449,11 +2449,11 @@ html[saved-theme="light"] {
 }
 /* [116] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.116.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+a9, U+3010-3011, U+30e2, U+4e0b, U+4eca, U+4ed6, U+4ed8, U+4f53, U+4f5c,
     U+4f7f, U+53d6, U+540d, U+54c1, U+5730, U+5916, U+5b50, U+5c0f, U+5f8c,
@@ -2464,11 +2464,11 @@ html[saved-theme="light"] {
 }
 /* [117] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.117.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+4e, U+a0, U+3000, U+300c-300d, U+4e00, U+4e0a, U+4e2d, U+4e8b, U+4eba,
     U+4f1a, U+5165, U+5168, U+5185, U+51fa, U+5206, U+5229, U+524d, U+52d5,
@@ -2479,11 +2479,11 @@ html[saved-theme="light"] {
 }
 /* [118] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.118.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+21-22, U+27-2a, U+2c-3b, U+3f, U+41-4d, U+4f-5d, U+61-7b, U+7d, U+ab,
     U+ae, U+b2-b3, U+b7, U+bb, U+c9, U+cd, U+d6, U+d8, U+dc, U+e0-e5, U+e7-ed,
@@ -2493,11 +2493,11 @@ html[saved-theme="light"] {
 }
 /* [119] */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw_qMHVdbR2L8Y9QTJ1LwkRmR5GprQAe69m.119.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+20, U+2027, U+3001-3002, U+3041-307f, U+3081-308f, U+3091-3093,
     U+3099-309a, U+309d-309e, U+30a1-30e1, U+30e3-30ed, U+30ef-30f0,
@@ -2505,20 +2505,20 @@ html[saved-theme="light"] {
 }
 /* cyrillic */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35jS0547sMCHYIZn.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* vietnamese */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35PS0547sMCHYIZn.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
@@ -2526,11 +2526,11 @@ html[saved-theme="light"] {
 }
 /* latin-ext */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35LS0547sMCHYIZn.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -2538,11 +2538,11 @@ html[saved-theme="light"] {
 }
 /* latin */
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notosansjp/v53/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35zS0547sMCHYA.woff2)
-    format("woff2");
+    format('woff2');
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -2621,34 +2621,34 @@ body {
   --cursor: default;
   --cursor-link: pointer;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
+    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
   --font-medium: 500;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
+    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
+    'Source Code Pro', monospace;
+  --font-monospace-override: '??';
+  --font-monospace-theme: '??';
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
-  --font-text-theme: "??";
+  --font-text-theme: '??';
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -2785,18 +2785,18 @@ body {
   width: 100%;
 }
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root[saved-theme='dark'],
+html[saved-theme='dark'] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=" "] {
+  code[data-theme*=' '] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=" "] span {
+  code[data-theme*=' '] span {
     color: var(--shiki-dark);
   }
   --background-modifier-form-field: var(--color-base-25);
@@ -2900,18 +2900,18 @@ html[saved-theme="dark"] {
 }
 /* END DARK */
 /* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
+:root[saved-theme='light'],
+html[saved-theme='light'] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=" "] {
+  code[data-theme*=' '] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=" "] span {
+  code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -3027,107 +3027,107 @@ html {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="abstract"] {
+    &[data-callout='abstract'] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="summary"] {
+    &[data-callout='summary'] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="tldr"] {
+    &[data-callout='tldr'] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="info"] {
+    &[data-callout='info'] {
       --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="todo"] {
+    &[data-callout='todo'] {
       --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="important"] {
+    &[data-callout='important'] {
       --callout-color: var(--callout-important);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="tip"] {
+    &[data-callout='tip'] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="hint"] {
+    &[data-callout='hint'] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="success"] {
+    &[data-callout='success'] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="check"] {
+    &[data-callout='check'] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="done"] {
+    &[data-callout='done'] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="question"] {
+    &[data-callout='question'] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="help"] {
+    &[data-callout='help'] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="faq"] {
+    &[data-callout='faq'] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="warning"] {
+    &[data-callout='warning'] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="caution"] {
+    &[data-callout='caution'] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="attention"] {
+    &[data-callout='attention'] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="failure"] {
+    &[data-callout='failure'] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="fail"] {
+    &[data-callout='fail'] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="missing"] {
+    &[data-callout='missing'] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="danger"] {
+    &[data-callout='danger'] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="error"] {
+    &[data-callout='error'] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="bug"] {
+    &[data-callout='bug'] {
       --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="example"] {
+    &[data-callout='example'] {
       --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="quote"] {
+    &[data-callout='quote'] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
     }
-    &[data-callout="cite"] {
+    &[data-callout='cite'] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
     }
@@ -3261,7 +3261,7 @@ body {
       text-decoration: var(--tag-decoration-hover);
     }
   }
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     appearance: none;
     appearance: none;
     border-radius: var(--checkbox-radius);
@@ -3275,17 +3275,17 @@ body {
     position: relative;
     transition: box-shadow 0.15s ease-in-out;
   }
-  input[type="checkbox"]:hover,
-  input[type="checkbox"]:active,
-  input[type="checkbox"]:focus {
+  input[type='checkbox']:hover,
+  input[type='checkbox']:active,
+  input[type='checkbox']:focus {
     outline: 0;
     border-color: var(--checkbox-border-color-hover);
   }
-  input[type="checkbox"]:focus-visible {
+  input[type='checkbox']:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }
-  input[type="checkbox"]:checked:after {
-    content: "";
+  input[type='checkbox']:checked:after {
+    content: '';
     top: -1px;
     inset-inline-start: -1px;
     position: absolute;
@@ -3298,18 +3298,18 @@ body {
     mask-repeat: no-repeat;
     mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
   }
-  input[type="checkbox"]:checked {
+  input[type='checkbox']:checked {
     background-color: var(--checkbox-color);
     border-color: var(--checkbox-color);
   }
   @media (hover: hover) {
-    input[type="checkbox"]:checked:hover {
+    input[type='checkbox']:checked:hover {
       background-color: var(--checkbox-color-hover);
       border-color: var(--checkbox-color-hover);
     }
   }
-  input[type="checkbox"][data-indeterminate="true"]:not(:checked):after {
-    content: "";
+  input[type='checkbox'][data-indeterminate='true']:not(:checked):after {
+    content: '';
     position: absolute;
     top: calc(var(--checkbox-size) / 2 - 2px);
     width: calc(var(--checkbox-size) - 6px);
@@ -3447,51 +3447,51 @@ body {
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
     //color: var(--code-color);
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+    span[style='--shiki-light:#6F42C1;--shiki-dark:#B392F0;'] {
       //color: var(--code-value) !important;
       color: var(--color-purple) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+    span[style='--shiki-light:#005CC5;--shiki-dark:#79B8FF;'] {
       //color: var(--code-function) !important;
       color: var(--color-blue) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+    span[style='--shiki-light:#032F62;--shiki-dark:#9ECBFF;'] {
       //color: var(--code-string) !important;
       color: var(--color-cyan) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+    span[style='--shiki-light:#032F62;--shiki-dark:#DBEDFF;'] {
       //color: var(--code-property) !important;
       color: var(--code-yellow) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+    span[style='--shiki-light:#24292E;--shiki-dark:#E1E4E8;'] {
       //color: var(--code-normal) !important;
       color: var(--code-normal) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+    span[style='--shiki-light:#586069;--shiki-dark:#D1D5DA;'] {
       //color: var(--code-punctuation) !important;
       color: var(--text-muted) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+    span[style='--shiki-light:#F6F8FA;--shiki-dark:#2F363D;'] {
       //color: var(--code-comment) !important;
       color: var(--text-faint) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+    span[style='--shiki-light:#6A737D;--shiki-dark:#6A737D;'] {
       //color: var(--code-comment) !important;
       color: var(--code-comment) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+    span[style='--shiki-light:#22863A;--shiki-dark:#85E89D;'] {
       //color: var(--code-tag) !important;
       color: var(--color-green) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+    span[style='--shiki-light:#E36209;--shiki-dark:#FFAB70;'] {
       //color: var(--code-important) !important;
       color: var(--color-orange) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+    span[style='--shiki-light:#B31D28;--shiki-dark:#FDAEB7;'] {
       //color: var(--text-operator) !important;
       color: var(--color-pink) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+    span[style='--shiki-light:#D73A49;--shiki-dark:#F97583;'] {
       //color: var(--code-keyword) !important;
       color: var(--color-red) !important;
     }
@@ -3573,7 +3573,7 @@ body {
           display: flex;
           align-self: center;
           background: var(--icon-color);
-          content: "";
+          content: '';
         }
         & > div {
           width: 100%;
@@ -3621,7 +3621,7 @@ body {
             color: var(--nav-item-color-active);
             font-weight: var(--nav-item-weight-active);
           }
-          &[data-for$="/index"] {
+          &[data-for$='/index'] {
             padding-inline-start: 8px;
           }
           padding-inline-start: 0;
@@ -3632,7 +3632,7 @@ body {
           height: 16px;
           min-width: 16px;
           min-height: 16px;
-          content: "";
+          content: '';
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -3692,7 +3692,7 @@ body {
       display: none;
     }
     /* lucide book-open icon */
-    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
+    --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
@@ -3704,7 +3704,7 @@ body {
       display: none;
     }
     /* lucide git-fork icon */
-    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
+    --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
@@ -3716,9 +3716,9 @@ body {
       display: none !important;
     }
     /* lucide moon icon */
-    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
+    --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
     /* lucide sun icon */
-    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
+    --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
     background: var(--icon-color) !important;
     width: 24px;
     height: 24px;
@@ -3962,13 +3962,13 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-:root[saved-theme="light"] {
+:root[saved-theme='light'] {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-:root[saved-theme="dark"] {
+:root[saved-theme='dark'] {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
@@ -3979,7 +3979,7 @@ body {
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */
-:root:root[saved-theme="light"] {
+:root:root[saved-theme='light'] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,
@@ -4008,7 +4008,7 @@ body {
 }
 /* END LIGHT GRAPH */
 /* START DARK GRAPH */
-:root:root[saved-theme="dark"] {
+:root:root[saved-theme='dark'] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,

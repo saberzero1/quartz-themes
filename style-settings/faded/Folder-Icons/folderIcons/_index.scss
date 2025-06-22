@@ -1,0 +1,26 @@
+.folderIcons
+  .nav-folder-children
+  .nav-folder
+  .nav-folder-title-content::before {
+  content: '\e801';
+  color: var(--custom-folder-icon-open);
+}
+.folderIcons .nav-folder.is-collapsed .nav-folder-title-content:before {
+  color: var(--custom-folder-icon-closed);
+}
+.folderIcons
+  .nav-folder
+  > .nav-folder-title:hover
+  > .nav-folder-title-content::before {
+  color: var(--custom-folder-icon-hover);
+}
+.folderIcons .file-tree-plugin-view .oz-folder-element .oz-icon-div::before {
+  content: '\e801';
+  color: var(--custom-folder-icon-open);
+}
+.folderIcons
+  .file-tree-plugin-view
+  .oz-folder-element:hover
+  .oz-icon-div::before {
+  color: var(--custom-folder-icon-hover);
+}

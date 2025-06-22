@@ -1,0 +1,26 @@
+.ulu-gradient-canvas5
+  .theme-dark
+  .canvas-node.is-themed.mod-canvas-color-5
+  .canvas-node-content
+  p {
+  color: var(--text-on-accent);
+}
+
+.ulu-gradient-canvas5
+  .theme-dark
+  .canvas-node.is-themed.mod-canvas-color-5
+  .canvas-node-content {
+  background-image: linear-gradient(
+    45deg,
+    hsl(210deg 90% 80%) 0%,
+    hsl(211deg 91% 77%) 21%,
+    hsl(212deg 92% 74%) 30%,
+    hsl(212deg 93% 71%) 39%,
+    hsl(213deg 93% 68%) 46%,
+    hsl(213deg 93% 65%) 54%,
+    hsl(213deg 92% 61%) 61%,
+    hsl(213deg 91% 58%) 69%,
+    hsl(213deg 90% 54%) 79%,
+    hsl(212deg 93% 49%) 100%
+  );
+}

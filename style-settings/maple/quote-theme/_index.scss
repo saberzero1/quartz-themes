@@ -1,0 +1,298 @@
+body {
+  --blockquote-border-color: var(--accent-active);
+  /* 引导线高度修复 */
+}
+body :is(.markdown-source-view, .markdown-rendered) {
+  --blockquote-border-thickness: var(--size-4-1);
+  --blockquote-radius: var(--size-2-3);
+}
+body
+  .markdown-source-view.mod-cm6
+  :is(.HyperMD-quote, .cm-blockquote-border)::before {
+  width: var(--blockquote-border-thickness);
+  border-left: none;
+  background-color: var(--blockquote-border-color);
+  border-radius: var(--blockquote-radius);
+  inset-block: var(--blockquote-radius);
+}
+body
+  .markdown-source-view.mod-cm6
+  :is(.HyperMD-quote, .cm-blockquote-border)
+  :not(:first-child)::before {
+  transform: translateX(var(--size-2-1));
+}
+body .markdown-source-view.mod-cm6 .HyperMD-quote {
+  border-radius: 0 !important;
+}
+body
+  .markdown-source-view.mod-cm6
+  .HyperMD-quote.cm-active:not(:has(+ .HyperMD-quote:not(.HyperMD-callout))) {
+  border-bottom-left-radius: var(--blockquote-radius) !important;
+  border-bottom-right-radius: var(--blockquote-radius) !important;
+}
+body
+  .markdown-source-view.mod-cm6
+  .HyperMD-quote.cm-active
+  .cm-blockquote-border::before {
+  background-color: transparent;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-quote::before {
+  left: calc(var(--blockquote-border-thickness) / 2);
+  z-index: 10;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-quote + .HyperMD-quote::before {
+  top: calc(var(--blockquote-radius) * -2);
+}
+body
+  .markdown-source-view.mod-cm6
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  ) {
+  border-top-left-radius: var(--blockquote-radius) !important;
+  border-top-right-radius: var(--blockquote-radius) !important;
+}
+body
+  .markdown-source-view.mod-cm6
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  )::after,
+body
+  .markdown-source-view.mod-cm6
+  :is(
+    div:not(.HyperMD-quote) + .HyperMD-quote,
+    .cm-content :first-child:is(.HyperMD-quote)
+  )
+  .cm-quote.cm-formatting::after {
+  content: none !important;
+}
+body .markdown-rendered blockquote {
+  --h1-size: var(--font-text-size);
+  --h2-size: var(--font-text-size);
+  --h3-size: var(--font-text-size);
+  --h4-size: var(--font-text-size);
+  --h5-size: var(--font-text-size);
+  --h6-size: var(--font-text-size);
+  --h1-line-height: var(--setting-line-height, var(--line-height-normal));
+  --h2-line-height: var(--setting-line-height, var(--line-height-normal));
+  --h3-line-height: var(--setting-line-height, var(--line-height-normal));
+  --h4-line-height: var(--setting-line-height, var(--line-height-normal));
+  --h5-line-height: var(--setting-line-height, var(--line-height-normal));
+  --h6-line-height: var(--setting-line-height, var(--line-height-normal));
+  border: none;
+  border-radius: var(--blockquote-radius);
+  position: relative;
+  margin-block: var(--size-4-3);
+}
+body .markdown-rendered blockquote :is(p, h1, h2, h3, h4, h5, h6) {
+  padding-left: var(--blockquote-border-thickness);
+  padding-right: var(--size-4-3);
+}
+body .markdown-rendered blockquote::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--blockquote-radius) * 4 / 5);
+  top: var(--blockquote-radius);
+  border-radius: var(--blockquote-radius);
+  height: calc(100% - var(--blockquote-radius) * 2);
+  width: var(--blockquote-border-thickness);
+  background-color: var(--accent-active);
+}
+body .markdown-rendered blockquote blockquote {
+  box-shadow: none;
+  margin-inline-end: var(--size-4-3) !important;
+}
+bod.quote-shadow .markdown-rendered blockquote {
+  box-shadow: var(--shadow-s);
+}
+bod.quote-border .markdown-rendered blockquote {
+  border: var(--block-outline-width) solid var(--accent-inactive);
+  transition: var(--animation);
+  box-shadow: none;
+}
+bod.quote-border .markdown-rendered blockquote:hover {
+  border-color: var(--accent-active);
+}
+bod.quote-border .markdown-rendered blockquote blockquote {
+  margin: var(--block-outline-width);
+}
+bod.quote-mark blockquote {
+  padding-left: 2.28rem;
+}
+bod.quote-mark blockquote::before {
+  position: absolute;
+  font-size: 3rem;
+  font-family: Source Code Pro;
+  line-height: 1;
+  content: '“' !important;
+  background-color: transparent;
+  color: var(--text-muted);
+  top: calc(
+    var(--font-text-size) * var(--line-height-normal) - 2.1428571429rem
+  );
+  transform: translateX(-1.32rem);
+}
+body
+  :is(.markdown-preview-view, .community-modal-readme.markdown-rendered)
+  blockquote {
+  padding-left: var(--size-4-6);
+}
+body
+  :is(.markdown-preview-view, .community-modal-readme.markdown-rendered)
+  blockquote
+  :is(p, h1, h2, h3, h4, h5, h6) {
+  padding-left: calc(var(--blockquote-border-thickness) * 2);
+}
+body
+  :is(
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-2
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-3
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-4
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-5
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-6
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-7
+      .cm-blockquote-border:nth-of-type(-n + 8),
+    .HyperMD-quote-2:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 2),
+    .HyperMD-quote-3:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 3),
+    .HyperMD-quote-4:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 4),
+    .HyperMD-quote-5:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 5),
+    .HyperMD-quote-6:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 6),
+    .HyperMD-quote-7:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 7),
+    .HyperMD-quote-8:not(.cm-active)
+      + .HyperMD-quote-8
+      .cm-blockquote-border:nth-of-type(-n + 8)
+  )::before {
+  top: calc(var(--blockquote-radius) * -2);
+}

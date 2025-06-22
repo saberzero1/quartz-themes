@@ -1,0 +1,28 @@
+.sh2 {
+  --code-background: #0d1117;
+  --code-white-space: nowrap;
+  --code-size: 13px;
+  --code-normal: #e6edf3;
+  --code-comment: #8b949e;
+  --code-function: #d2a8ff;
+  --code-important: #ff7b72;
+  --code-keyword: #ff7b72;
+  --code-operator: #79c0ff;
+  --code-property: #79c0ff;
+  --code-punctuation: #e6edf3;
+  --code-string: #a5d6ff;
+  --code-tag: #7ee787;
+  --code-value: #79c0ff;
+}
+.sh2 .markdown-preview-view .token.hexcode.color {
+  color: #a5d6ff;
+}
+.sh2 .markdown-preview-view .token.selector {
+  color: #7ee787;
+}
+.sh2 .markdown-preview-view .token.class-name {
+  color: #ffa657;
+}
+.sh2 .markdown-preview-view .token.console {
+  color: #c9d1d9;
+}

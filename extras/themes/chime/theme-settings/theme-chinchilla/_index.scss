@@ -1,14 +1,48 @@
-.theme-light {
-  --color-base-00: rgb(242, 243, 244);
-  --color-base-05: rgb(236, 237, 239);
-  --color-base-10: rgb(227, 229, 233);
-  --color-base-20: rgb(236, 237, 239);
-  --color-base-25: rgb(221, 224, 228);
-  --color-base-30: rgb(221, 223, 229);
-  --color-base-35: rgb(219, 222, 227);
-  --color-base-40: rgb(198, 204, 211);
-  --color-base-50: rgb(173, 180, 190);
-  --color-base-60: rgb(166, 172, 182);
-  --color-base-70: rgb(129, 135, 146);
-  --color-base-100: #000000;
+.theme-chinchilla {
+  --accent-h: 184 !important;
+  --accent-s: 33% !important;
+  --accent-l: 60% !important;
+  --color-red-rgb: 245, 167, 167;
+  --color-red: #b15e5e;
+  --color-green-rgb: 150, 207, 173;
+  --color-green: #699c7d;
+  --color-orange-rgb: 224, 189, 155;
+  --color-orange: #b39373;
+  --color-yellow-rgb: 219, 209, 176;
+  --color-yellow: #cdbd8a;
+  --color-cyan-rgb: 166, 199, 199;
+  --color-cyan: #83a5a5;
+  --color-blue-rgb: 147, 177, 210;
+  --color-blue: #7290af;
+  --color-purple-rgb: 175, 158, 228;
+  --color-purple: #8573ba;
+  --color-pink-rgb: 213, 139, 175;
+  --color-pink: #a86384;
+}
+
+.theme-chinchilla.colorful-headings {
+  --h1-color: rgb(115, 195, 195);
+  --h2-color: rgb(145, 214, 214);
+  --h3-color: rgb(149, 217, 209);
+  --h4-color: rgb(162, 213, 202);
+  --h5-color: rgb(171, 218, 203);
+  --h6-color: rgb(188, 214, 201);
+}
+
+.theme-chinchilla.colorful-headings-alt {
+  --h1-color: var(--color-blue);
+  --h2-color: var(--color-cyan);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-yellow);
+  --h5-color: var(--color-orange);
+  --h6-color: var(--color-red);
+}
+
+.theme-chinchilla.colored-bold-and-italic {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-purple);
+}
+
+.theme-chinchilla {
+  --font-default: 'Avenir Next', 'Roboto', sans-serif;
 }

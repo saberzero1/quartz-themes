@@ -558,7 +558,7 @@ select.dropdown {
 }
 
 .clickable-icon::before {
-  content: " ";
+  content: ' ';
 }
 
 .side-dock-settings,

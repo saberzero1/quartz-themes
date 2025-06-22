@@ -37,7 +37,7 @@ body,
 }
 
 /* Glowing effect for checkboxes */
-.markdown-preview-view input[type="checkbox"] {
+.markdown-preview-view input[type='checkbox'] {
   appearance: none;
   width: 16px;
   height: 16px;
@@ -52,7 +52,7 @@ body,
     background 0.3s ease-in-out;
 }
 
-.markdown-preview-view input[type="checkbox"]:checked {
+.markdown-preview-view input[type='checkbox']:checked {
   background: #ffffff;
   box-shadow: 0 0 8px #ffffff;
 }

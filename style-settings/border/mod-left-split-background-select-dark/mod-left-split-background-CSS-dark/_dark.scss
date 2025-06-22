@@ -1,0 +1,8 @@
+body:not(.is-mobile).card-layout-open-dark.mod-left-split-background-CSS-dark
+  .workspace-split.mod-left-split
+  .workspace-tab-container {
+  background: var(--background-mod-left-CSS-dark) !important;
+  background-blend-mode: var(--background-mod-left-CSS-blend-mode-dark);
+  backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-dark);
+  -webkit-backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-dark);
+}

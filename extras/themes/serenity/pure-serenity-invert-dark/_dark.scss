@@ -1,0 +1,22 @@
+.pure-serenity-dar.serenity-mode:not(.serenity-src):not(.serenity-lp):has(
+    [data-mode='source']
+  ),
+.pure-serenity-dark.serenity-mod.serenity-lp:has(
+    [data-mode='source'] .is-live-preview
+  ),
+.pure-serenity-dar.serenity-mode.serenity-src:has(
+    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+  ) {
+  --color-base-00: #ffffff !important;
+  --color-base-05: #ffffff !important;
+  --color-base-10: #ffffff !important;
+  --color-base-20: #ffffff !important;
+  --color-base-25: #ffffff !important;
+  --color-base-30: #ffffff !important;
+  --color-base-35: #ffffff !important;
+  --color-base-40: #000000 !important;
+  --color-base-50: #000000 !important;
+  --color-base-60: #000000 !important;
+  --color-base-70: #000000 !important;
+  --color-base-100: #000000 !important;
+}

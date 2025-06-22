@@ -1,0 +1,17 @@
+.checkbox-anytype input[type='checkbox']:checked:after {
+  background-color: var(--color-green);
+  top: 0px;
+  bottom: 0px;
+  -webkit-mask-size: 100%;
+  -webkit-mask-image: url(<?xmlversion='1.0'?><svgdata-name='Capa 1'id='Capa_1'viewBox='0 0 20 19.84'xmlns='http://www.w3.org/2000/svg'><pathd='M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z'/></svg>);
+}
+.theme-anytype.checkbox-anytype input[type='checkbox']:checked:after {
+  background-color: #1eabeb;
+}
+.checkbox-anytype input[type='checkbox']:checked {
+  background-color: transparent;
+  border-color: transparent !important;
+}
+.checkbox-anytype input[type='checkbox'] {
+  border-radius: 1em;
+}

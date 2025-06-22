@@ -1,0 +1,6 @@
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+body ul > li.task-list-item[data-task='x'],
+body ul > li.task-list-item[data-task='X'] {
+  text-decoration: var(--checklist-done-decoration);
+}

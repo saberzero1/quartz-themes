@@ -12,15 +12,15 @@ It took a lot of inference, Google, and examining other themes, but I did it. It
 So, don't give up. Make that theme. Because YOU CAN DO IT. */
 
 /* --- Import Font --- */
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 .workspace {
   font-weight: var(--font-normal) !important;
 }
 
 body {
-  --font-default: "Roboto", "Assistant", sans-serif;
+  --font-default: 'Roboto', 'Assistant', sans-serif;
 }
 /* ----| CARDS SNIPPET |----*/
 /* By: kepano */
@@ -294,7 +294,7 @@ body {
 }
 
 .cards table.dataview thead:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -355,8 +355,8 @@ body {
   font-size: var(--font-adaptive-small);
 }
 
-.cards table.dataview thead > tr > th[sortable-style="sortable-asc"],
-.cards table.dataview thead > tr > th[sortable-style="sortable-desc"] {
+.cards table.dataview thead > tr > th[sortable-style='sortable-asc'],
+.cards table.dataview thead > tr > th[sortable-style='sortable-desc'] {
   color: var(--text-normal);
 }
 
@@ -429,10 +429,10 @@ body {
 
   --h1-size: 2.17em;
   --h1-weight: 600;
-  --h1-font: "Lato";
+  --h1-font: 'Lato';
   --h2-size: 2em;
   --h2-weight: 400;
-  --h2-font: "Work Sans";
+  --h2-font: 'Work Sans';
   --h3-weight: 400;
   --h4-weight: 400;
   --h5-weight: 400;
@@ -453,7 +453,7 @@ body {
   -webkit-user-select: text;
 }
 .markdown-source-view {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1,
 .markdown-rendered h1,
@@ -578,7 +578,7 @@ h6,
 
 .markdown-preview-view hr::after,
 .markdown-source-view hr::after {
-  content: "✦";
+  content: '✦';
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -639,7 +639,7 @@ h6,
 }
 
 .callout::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 15px;
   top: 15px;
@@ -668,7 +668,7 @@ h6,
   transform: scale(1.085);
 }
 .markdown-preview-view blockquote:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 14px;
   top: 15px;
@@ -766,7 +766,7 @@ tbody > tr {
 
 /* SIDEBAR ICONS */
 .nav-folder.mod-root > .nav-folder-title ::before {
-  content: "⟡ ";
+  content: '⟡ ';
 }
 
 /* THEME COLORS */
@@ -1020,7 +1020,7 @@ body.is-translucent
   left: 0;
   top: 0;
   background-color: transparent;
-  content: " ";
+  content: ' ';
   border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
   height: calc(var(--header-height) - var(--tab-outline-width));
   width: var(--ribbon-width);

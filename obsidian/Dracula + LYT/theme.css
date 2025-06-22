@@ -187,7 +187,7 @@ span.cm-url:hover,
 .theme-dark .HyperMD-codeblock {
   background: #282a36 !important;
   color: #f8f8f2;
-  font-family: "SF Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: 'SF Mono', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   /* font-weight: 600 !important; */
   /* white-space: pre; */
   word-spacing: normal;
@@ -297,11 +297,11 @@ span.cm-url:hover,
 /* ------------------------------------------------------------*/
 
 /* Main Properties */
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'] {
   background: #282a36 !important;
   color: #f8f8f2;
-  font-family: "SF Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: 'SF Mono', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   /* font-weight: 600 !important; */
   /* white-space: pre; */
   word-spacing: normal;
@@ -314,16 +314,16 @@ span.cm-url:hover,
 }
 
 /* What the code looks like when highlighted */
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection,
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection {
+code[class*='language-']::selection,
+code[class*='language-'] ::selection,
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection {
   background: rgba(146, 146, 175, 0.164); /* changes background color */
   color: unset; /* changes color of the highlighted text */
 }
 
 /* Properties specific to code blocks */
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 1em; /* this is standard */
   margin: 0.5em 0; /* this is the default */
   overflow: auto; /* this is standard */
@@ -504,7 +504,7 @@ li code,
 ul code,
 ol code {
   font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -523,7 +523,7 @@ ol code {
 /* Inline Code in Source Mode */
 .cm-inline-code {
   font-family:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
   line-height: normal;
   background: #2f2f2d !important;
   color: #ff5555 !important;
@@ -543,17 +543,17 @@ table > tbody {
 
 :root {
   --default-font:
-    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif !important;
   --font-monospace:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
   --font-code:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
   --font-monospace-1:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
   --font-monospace-2:
-    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
+    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
 }
 
 /*Bullet list line height in Live Mode*/
@@ -617,8 +617,8 @@ Icons: Boxicons
 
   /* Square-y Proportion */
   --font-sans-2:
-    "Abril Text", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
-    "Ubuntu", Helvetica, Arial, sans-serif;
+    'Abril Text', 'Inter', -apple-system BlinkMacSystemFont, 'Segoe UI',
+    'Ubuntu', Helvetica, Arial, sans-serif;
   /* --font-monospace-2:
     'DM Mono', 'Fira Code', Courier, monospace; */
 
@@ -1159,11 +1159,11 @@ Icons: Boxicons
 }
 
 .workspace-ribbon .side-dock-ribbon-action:hover,
-.workspace-ribbon-collapse-btn:hover[aria-label-position="right"] {
+.workspace-ribbon-collapse-btn:hover[aria-label-position='right'] {
   color: var(--color-purple-700);
 }
 
-.workspace-ribbon-collapse-btn:hover[aria-label-position="left"] {
+.workspace-ribbon-collapse-btn:hover[aria-label-position='left'] {
   color: var(--color-green-920);
 }
 
@@ -1293,7 +1293,7 @@ body .workspace-tab-header .workspace-tab-header-inner-icon svg {
 
 .nav-folder.mod-root > .nav-folder-title {
   font-size: var(--font-scale-0);
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   background: var(--background-secondary);
   top: 0;
   width: 100%;
@@ -2401,10 +2401,10 @@ ul ul ul {
   list-style-type: circle;
 }
 ul ul ul ul {
-  list-style-type: "▪ ";
+  list-style-type: '▪ ';
 }
 ul ul ul ul ul {
-  list-style-type: "– ";
+  list-style-type: '– ';
 }
 ul ul ul ul ul ul {
   list-style-type: disc;
@@ -2416,10 +2416,10 @@ ul ul ul ul ul ul ul ul {
   list-style-type: circle;
 }
 ul ul ul ul ul ul ul ul ul {
-  list-style-type: "▪ ";
+  list-style-type: '▪ ';
 }
 ul ul ul ul ul ul ul ul ul ul {
-  list-style-type: "– ";
+  list-style-type: '– ';
 }
 ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: disc;
@@ -2431,15 +2431,15 @@ ul ul ul ul ul ul ul ul ul ul ul ul ul {
   list-style-type: circle;
 }
 ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
-  list-style-type: "▪ ";
+  list-style-type: '▪ ';
 }
 ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
-  list-style-type: "– ";
+  list-style-type: '– ';
 }
 
 /*──────────Checkboxes──────────*/
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   -webkit-appearance: none;
   background: var(--color-black);
   margin-bottom: 6px;
@@ -2448,16 +2448,16 @@ input[type="checkbox"] {
   box-shadow: 0px 1px 0px var(--shadow-xsm);
 }
 
-input[type="checkbox"]:hover {
+input[type='checkbox']:hover {
   background: var(--color-gray-70);
   cursor: pointer;
 }
 
-input[type="checkbox"]:active {
+input[type='checkbox']:active {
   background: var(--color-blacker);
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background: transparent;
   border: 1px solid var(--border-xsm);
 
@@ -2472,7 +2472,7 @@ ul.contains-task-list {
 }
 
 /* Markdown Checkboxes in Preview Fix */
-.markdown-preview-view input[type="checkbox"] {
+.markdown-preview-view input[type='checkbox'] {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2573,7 +2573,7 @@ ul.contains-task-list {
   transition: var(--duration-moderate-1) var(--motion-smooth);
 }
 
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable="false"] {
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable='false'] {
   contain: none;
 }
 
@@ -2873,7 +2873,7 @@ span.frontmatter-section-label {
 ++++++++++++++++++++++++++++++++++++++
 ──────────────────────────────────────*/
 
-.workspace-leaf-content[data-type="graph"] .view-content {
+.workspace-leaf-content[data-type='graph'] .view-content {
   padding: 0;
 }
 
@@ -2991,7 +2991,7 @@ span.frontmatter-section-label {
   transition: var(--duration-moderate-2) var(--motion-heavy);
 }
 
-.graph-controls-button.mod-open[aria-label="Open graph settings"] {
+.graph-controls-button.mod-open[aria-label='Open graph settings'] {
   border-bottom: 1px solid var(--color-gray-80);
 }
 
@@ -3017,7 +3017,7 @@ span.frontmatter-section-label {
 }
 
 body:not(.no-custom-icons) .modal-close-button:before {
-  content: " ";
+  content: ' ';
 }
 
 body:not(.no-custom-icons) .modal-close-button {
@@ -3429,7 +3429,7 @@ input.prompt-input {
   background: var(--color-cyan-520) !important;
 }
 
-.clickable-icon[aria-label="Change sort order"] {
+.clickable-icon[aria-label='Change sort order'] {
   padding: var(--scale-2-2) var(--scale-2-2) var(--scale-2-2) var(--scale-2-2) !important;
 }
 
@@ -3547,7 +3547,7 @@ pre button.copy-code-button {
         Search Input Component
 ────────────────────────────────────*/
 
-input[type="text"]:not(
+input[type='text']:not(
     .graph-controls input,
     .document-search input.document-search-input,
     .document-replace input.document-replace-input
@@ -3571,11 +3571,11 @@ textarea,
 }
 
 textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
 input.document-search-input,
 input.document-replace-input {
   font-size: calc(2px + var(--font-scale-1));
@@ -3587,20 +3587,20 @@ input.document-replace-input {
 /* Search Input Colors */
 
 textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
   background: var(--background-modifier-form-field);
 }
 
 textarea::placeholder,
-input[type="text"]::placeholder,
-input[type="search"]::placeholder,
-input[type="email"],
-input[type="password"]::placeholder,
-input[type="number"]::placeholder {
+input[type='text']::placeholder,
+input[type='search']::placeholder,
+input[type='email'],
+input[type='password']::placeholder,
+input[type='number']::placeholder {
   color: var(--text-faint);
 }
 
@@ -3609,11 +3609,11 @@ textarea:hover {
 }
 
 textarea:focus,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus {
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus {
   color: var(--color-cyan-500);
   border: 1px solid var(--color-yellow-500);
   box-shadow: 0 1px 0 1px var(--shadow-xsm);
@@ -3626,7 +3626,7 @@ input.document-replace-input {
 
 /* Search Input Close Button */
 
-.search-input-container .search-input-clear-button[aria-label="Clear search"] {
+.search-input-container .search-input-clear-button[aria-label='Clear search'] {
   color: var(--color-slate-900);
   border-radius: var(--scale-2-1);
   margin-right: 0px;
@@ -3685,7 +3685,7 @@ input.document-replace-input {
                 Slider
 ────────────────────────────────────*/
 
-input[type="range"] {
+input[type='range'] {
   background-color: transparent;
   height: 24px;
   padding: 0px;
@@ -3693,12 +3693,12 @@ input[type="range"] {
   cursor: default;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   background: var(--color-gray-60);
   height: 2px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   height: 12px;
   width: 24px;
   margin-top: -2px;
@@ -3709,14 +3709,14 @@ input[type="range"]::-webkit-slider-thumb {
   border: 1px solid var(--border-xsm);
 }
 
-input[type="range"]::-webkit-slider-thumb:hover,
-input[type="range"]::-webkit-slider-thumb:active {
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
   background: var(--color-yellow-300);
   border-width: 1;
   transition: var(--duration-fast-1) var(--motion-jumpy);
 }
 
-.graph-controls input[type="range"]::-webkit-slider-runnable-track {
+.graph-controls input[type='range']::-webkit-slider-runnable-track {
   margin-top: -5px;
 }
 
@@ -3911,12 +3911,12 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 /*─────────Tab Content Scrollbar──────────*/
 
-.workspace-leaf-content:not(.workspace-leaf-content[data-type="markdown"])
+.workspace-leaf-content:not(.workspace-leaf-content[data-type='markdown'])
   ::-webkit-scrollbar-thumb {
   background: var(--color-gray-70);
 }
 
-.workspace-leaf-content:not(.workspace-leaf-content[data-type="markdown"])
+.workspace-leaf-content:not(.workspace-leaf-content[data-type='markdown'])
   ::-webkit-scrollbar-thumb:active {
   background: var(--color-cyan-530);
 }
@@ -4148,7 +4148,7 @@ are many tab options on drawers + sizing fix */
 }
 
 .is-mobile
-  div[aria-label="Uninitialized"].workspace-drawer-header-icon.sync-status-icon.mod-working
+  div[aria-label='Uninitialized'].workspace-drawer-header-icon.sync-status-icon.mod-working
   svg {
   vertical-align: 0px;
 }
@@ -4228,7 +4228,7 @@ are many tab options on drawers + sizing fix */
   border-top: 1px solid var(--background-modifier-border);
 }
 
-.is-mobile .workspace-drawer .nav-folder-title[data-path="/"] {
+.is-mobile .workspace-drawer .nav-folder-title[data-path='/'] {
   display: none;
 }
 
@@ -4334,7 +4334,7 @@ are many tab options on drawers + sizing fix */
 /*─────────Modal CLose Button──────────*/
 
 .is-mobile .vertical-tab-header::before {
-  content: "Settings";
+  content: 'Settings';
   font-family: var(--default-font);
   font-weight: var(--font-bold);
   color: var(--text-muted);
@@ -4625,7 +4625,7 @@ are many tab options on drawers + sizing fix */
         Calendar Plugin
 ────────────────────────────────────*/
 
-.workspace-leaf-content[data-type="calendar"] .view-content {
+.workspace-leaf-content[data-type='calendar'] .view-content {
   padding-bottom: 0;
 }
 
@@ -4690,7 +4690,7 @@ are many tab options on drawers + sizing fix */
 }
 
 /* Removes Scrollbar in Calendar */
-.workspace-leaf-content[data-type="calendar"] ::-webkit-scrollbar {
+.workspace-leaf-content[data-type='calendar'] ::-webkit-scrollbar {
   display: none;
 }
 
@@ -4908,11 +4908,11 @@ body.plugin-sliding-panes-rotate-header
 .view-content
   .kanban-plugin
   .kanban-plugin__item
-  button[aria-label="More options"].kanban-plugin__item-postfix-button,
+  button[aria-label='More options'].kanban-plugin__item-postfix-button,
 .view-content
   .kanban-plugin
   .kanban-plugin__lane
-  button[aria-label="More options"].kanban-plugin__lane-settings-button,
+  button[aria-label='More options'].kanban-plugin__lane-settings-button,
 .view-content .kanban-plugin .kanban-plugin__lane-settings-button.is-enabled {
   background: var(--color-slate-900);
   margin-right: 0;
@@ -4922,7 +4922,7 @@ body.plugin-sliding-panes-rotate-header
 .view-content
   .kanban-plugin
   .kanban-plugin__item
-  button[aria-label="Archive card"].kanban-plugin__item-prefix-button {
+  button[aria-label='Archive card'].kanban-plugin__item-prefix-button {
   background: var(--color-purple-900);
   margin-right: var(--scale-2-4);
   padding: var(--scale-2-1) var(--scale-2-2) var(--scale-2-1) var(--scale-2-2) !important;
@@ -4995,7 +4995,7 @@ body.plugin-sliding-panes-rotate-header
             Excalidraw
 ────────────────────────────────────*/
 
-.workspace-leaf-content[data-type="excalidraw"] .view-content {
+.workspace-leaf-content[data-type='excalidraw'] .view-content {
   padding: var(--scale-0-0);
 }
 
@@ -5012,7 +5012,7 @@ body .excalidraw .Island.App-menu__left {
   padding: var(--scale-8-2) var(--scale-8-2) var(--scale-8-2) var(--scale-8-2);
 }
 
-.workspace-leaf-content[data-type="excalidraw"] .view-content {
+.workspace-leaf-content[data-type='excalidraw'] .view-content {
   padding: var(--scale-0-0);
 }
 
@@ -5083,15 +5083,15 @@ body .excalidraw .buttonList label {
   border-radius: var(--scale-2-1);
 }
 
-.workspace .excalidraw .Island button[type="button"]:focus {
+.workspace .excalidraw .Island button[type='button']:focus {
   background: rgba(200, 200, 200, 1);
 }
 
-.workspace .excalidraw .undo-redo-buttons button[type="button"]:focus {
+.workspace .excalidraw .undo-redo-buttons button[type='button']:focus {
   background: rgba(200, 200, 200, 1);
 }
 
-.workspace .excalidraw button.help-icon[type="button"]:focus {
+.workspace .excalidraw button.help-icon[type='button']:focus {
   color: var(--color-gray-30);
   background: transparent;
 }
@@ -5121,18 +5121,18 @@ body .excalidraw.theme--dark .Island label.control-label {
   color: var(--color-gray-30);
 }
 
-.workspace .excalidraw.theme--dark .Island button[type="button"]:focus {
+.workspace .excalidraw.theme--dark .Island button[type='button']:focus {
   background: rgba(100, 100, 100, 1);
 }
 
 .workspace
   .excalidraw.theme--dark
   .undo-redo-buttons
-  button[type="button"]:focus {
+  button[type='button']:focus {
   background: rgba(100, 100, 100, 1);
 }
 
-.workspace .excalidraw.theme--dark button.help-icon[type="button"]:focus {
+.workspace .excalidraw.theme--dark button.help-icon[type='button']:focus {
   color: var(--color-gray-70);
   background: transparent;
 }
@@ -5144,7 +5144,7 @@ body .excalidraw.theme--dark kbd {
 /*~ Icon Replacements for Excalidraw ~*/
 /* Quote Glyph Icon (Convert to Markdown RAW) */
 body:not(.no-custom-icons)
-  .view-action[aria-label="Change to RAW mode (only effects text-elements with links or transclusions)"]
+  .view-action[aria-label='Change to RAW mode (only effects text-elements with links or transclusions)']
   svg.quote-glyph {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M20.553 18.15H3.447a1.443 1.443 0 0 1-1.442-1.441V7.291c0-.795.647-1.441 1.442-1.441h17.105c.795 0 1.442.646 1.442 1.441v9.418a1.441 1.441 0 0 1-1.441 1.441zM6.811 15.268V11.52l1.922 2.402 1.922-2.402v3.748h1.922V8.732h-1.922l-1.922 2.403-1.922-2.403H4.889v6.535h1.922zM19.688 12h-1.922V8.732h-1.923V12h-1.922l2.884 3.364L19.688 12z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -5737,7 +5737,7 @@ body:not(.no-custom-icons) svg.cross {
 body:not(.no-custom-icons)
   .view-header
   .view-actions
-  .view-action.mod-close-leaf[aria-label="Close"]
+  .view-action.mod-close-leaf[aria-label='Close']
   svg.cross {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -5764,7 +5764,7 @@ body:not(.no-custom-icons) svg.document {
 
 /* Document, File Explorer New Note */
 body:not(.no-custom-icons)
-  .workspace-leaf-content[data-type="file-explorer"]
+  .workspace-leaf-content[data-type='file-explorer']
   .nav-header
   .nav-action-button
   svg.document {
@@ -5773,7 +5773,7 @@ body:not(.no-custom-icons)
 
 /* Document, Active Note (Markdown) */
 body:not(.no-custom-icons)
-  .workspace-leaf-content[data-type="markdown"]
+  .workspace-leaf-content[data-type='markdown']
   .view-header
   .view-header-icon
   svg.document {
@@ -5782,7 +5782,7 @@ body:not(.no-custom-icons)
 
 /* Document, Active Note ( ) */
 body:not(.no-custom-icons)
-  .workspace-leaf-content[data-type=" "]
+  .workspace-leaf-content[data-type=' ']
   .view-header
   .view-header-icon
   svg.document {
@@ -5796,7 +5796,7 @@ body:not(.no-custom-icons) svg.documents {
 
 /* Multiple Document, Search Files -> Copy Search Results */
 body:not(.no-custom-icons)
-  .workspace-leaf-content[data-type="search"]
+  .workspace-leaf-content[data-type='search']
   .nav-header
   .nav-action-button
   svg.documents {
@@ -5868,7 +5868,7 @@ body:not(.no-custom-icons) svg.folder {
 
 /* Folder, Workspace Tab Header -> File Explorer */
 body:not(.no-custom-icons)
-  .workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header[aria-label='File explorer']
   .workspace-tab-header-inner-icon
   svg.folder {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z'%3E%3C/path%3E%3C/svg%3E");
@@ -5876,7 +5876,7 @@ body:not(.no-custom-icons)
 
 /* Folder, File Explorer -> Add Folder */
 body:not(.no-custom-icons)
-  .nav-action-button[aria-label="New folder"]
+  .nav-action-button[aria-label='New folder']
   svg.folder {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M13 9h-2v3H8v2h3v3h2v-3h3v-2h-3z'%3E%3C/path%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.996.996 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -6235,7 +6235,7 @@ body:not(.no-custom-icons) svg.search {
 
 /* Search, Tab Header -> Obsidian Search */
 body:not(.no-custom-icons)
-  .workspace-tab-header[aria-label="Search"]
+  .workspace-tab-header[aria-label='Search']
   .workspace-tab-header-inner-icon
   svg.search {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M13.707 2.293A.996.996 0 0 0 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9a.996.996 0 0 0-.293-.707l-6-6zM6 4h6.586L18 9.414l.002 9.174-2.568-2.568c.35-.595.566-1.281.566-2.02 0-2.206-1.794-4-4-4s-4 1.794-4 4 1.794 4 4 4c.739 0 1.425-.216 2.02-.566L16.586 20H6V4zm6 12c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z'%3E%3C/path%3E%3C/svg%3E");

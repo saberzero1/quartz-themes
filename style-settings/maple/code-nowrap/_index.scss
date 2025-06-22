@@ -1,0 +1,13 @@
+.scrollbar-gutter-overlay:not(.code-mac-style-header) .app-container div pre {
+  padding-bottom: calc(
+    var(--code-size) * var(--line-height-normal) * 0.8
+  ) !important;
+}
+.scrollbar-gutter-overlay pre code {
+  padding-bottom: var(--size-2-3);
+}
+pre code {
+  word-break: normal;
+  word-wrap: break-word;
+  white-space: pre;
+}

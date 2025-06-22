@@ -140,7 +140,7 @@
   /* Explorer */
   --folder-title-color: var(--floral-white);
   --file-title-color: var(--floral-white);
-  --file-content: "📄 ";
+  --file-content: '📄 ';
   --folder-filter: invert(51%) sepia(51%) saturate(596%) hue-rotate(89deg)
     brightness(89%) contrast(84%);
 }
@@ -216,7 +216,7 @@
   --file-title-color: var(--rich-black);
   --folder-filter: invert(55%) sepia(89%) saturate(330%) hue-rotate(89deg)
     brightness(99%) contrast(88%);
-  --file-content: "📄 ";
+  --file-content: '📄 ';
 }
 
 /* ----------- Links ----------- */
@@ -282,8 +282,8 @@ pre code {
   background-color: var(--codeblock-background);
 }
 
-pre[class*="language-"],
-code[class*="language-"] {
+pre[class*='language-'],
+code[class*='language-'] {
   font-size: var(--code-text-size) !important;
   background: var(--codeblock-background) !important;
   color: var(--codeblock-color) !important;
@@ -368,7 +368,7 @@ code[class*="language-"] {
 }
 
 .nav-folder-children .nav-folder-title-content::before {
-  content: "📁 "; /*FCD53F*/
+  content: '📁 '; /*FCD53F*/
   margin-right: 0px !important;
 }
 

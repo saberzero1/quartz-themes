@@ -1,0 +1,12 @@
+bod.toggle-status-bar .status-bar-item.plugin-sync {
+  bottom: 54px;
+  right: 5px;
+  position: absolute;
+  padding: var(--button-padding-icon);
+}
+bod.toggle-status-bar .status-bar-item.plugin-sync:hover {
+  filter: brightness(0.8);
+}
+bod.toggle-status-bar .status-bar-item .svg-icon {
+  --icon-size: var(--icon-l);
+}

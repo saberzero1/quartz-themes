@@ -1,0 +1,10 @@
+body .cm-editor .cm-scroller .cm-sizer,
+body .markdown-reading-view .markdown-preview-view .markdown-preview-sizer {
+  padding-top: 25vh;
+}
+body .markdown-embed-content .markdown-preview-sizer,
+body .markdown-embed-content .cm-sizer,
+body .canvas-node-container .markdown-preview-sizer,
+body .canvas-node-container .cm-sizer {
+  padding-top: inherit !important;
+}

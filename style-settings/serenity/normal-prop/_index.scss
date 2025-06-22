@@ -1,0 +1,24 @@
+[data-type='markdown'] .metadata-container:not(.is-collapsed) {
+  padding: 15px 20px;
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  border-radius: var(--radius-m);
+  font-size: var(--font-small);
+}
+.metadata-container .metadata-properties-title {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  padding: 14px;
+  font-size: var(--font-smaller);
+}
+.metadata-container:not(.is-collapsed) .metadata-properties-title {
+  border: none;
+  background-color: transparent;
+}
+.metadata-container:hover .metadata-properties-title::before {
+  content: '+ ';
+}
+.metadata-container:not(.is-collapsed):hover
+  .metadata-properties-title::before {
+  content: '- ';
+}

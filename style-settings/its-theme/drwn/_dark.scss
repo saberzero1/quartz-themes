@@ -1,0 +1,39 @@
+,
+.theme-dark {
+  --outer-bar: #0b0f13;
+  --note: #1a1e24;
+  --accent-color: 55, 136, 118;
+  --accent: #378876;
+  --lite-accent: #6ce0d3;
+  --dark-accent: #216565;
+  --deep-dark-accent: #103f3d;
+  --accent2: #5cb2d6;
+  --accent2-lite: #49d8e2;
+  --headers: #399f94;
+  --text: #bccad8;
+  --code-text: #72cdd0;
+  --i-at: #5ebfa9;
+  --inactive: #2b5b77;
+  --tag-text: var(--folder-open);
+  --folder-open: #58c8e0;
+  --folder-text-color: #71a6b7;
+  --file-icon-color: #204c5d;
+  --bg: #1e2f33;
+  --hr: #0f465d;
+  --tag: #1a5753;
+  --th: var(--dark-accent);
+  --td: rgba(6, 12, 12, 0.38);
+  --table: #2b4448;
+  --lines: #1e4765;
+  --tab-stack-shadow: rgba(0, 74, 63, 0.08);
+  --highlight: rgba(60, 168, 131, 0.25);
+  --hvr: rgba(115, 253, 190, 0.25);
+  --hvr-active: rgba(52, 237, 181, 0.13);
+  --graph-lines: #04303d;
+  --theme-rainbow-1: var(--headers);
+  --theme-rainbow-2: var(--accent);
+  --theme-rainbow-3: var(--inactive);
+  --theme-rainbow-4: var(--file-icon-color);
+  --theme-rainbow-5: var(--table);
+  --theme-rainbow-6: var(--code-bg);
+}

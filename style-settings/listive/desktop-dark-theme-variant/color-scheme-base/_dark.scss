@@ -1,0 +1,47 @@
+.color-scheme-base.theme-dark {
+  /* Base Color - #262626
+- #3D373A - analogous
+- #332E33 - analogous
+|-- #433d43 - ligher shade
+- #1a1a1a - darker shade
+- #333333 - lighter shade
+- #735050 - monochromatic
+- #595350 - compound
+Base Color 2 - #304050 - special purple
+Base Color 3 - #4682B4 (SteelBlue) & lighter #5a91bf
+*/
+  /* Base Color 1 - for main workspace */
+  --background-primary: hsl(0, 0%, 20%);
+  /* for main workspace / #333 */
+  --background-primary-alt: #1a1a1a;
+  /* and pre (code) background */
+  /* Using Analogous of #262626 - for sidebar and modal dialog */
+  --background-secondary: hsl(300, 5%, 25%);
+  /* #433d43 */
+  --background-secondary-alt: hsl(300, 5%, 19%);
+  /* 6% darker than secondary */
+  /* auxilary, mixed of shade of gray & blue-purple */
+  --background-accent: hsl(300, 15%, 27%);
+  /* for blockquote & journal shading / before this #304050 or #394d60 */
+  --background-accent-alt: hsl(0, 0%, 16%);
+  /* 4% darker shade of background-primary, active line and backlinks */
+  --background-modifier-border: hsl(20, 5%, 33%);
+  /* #595350;     /* for horizontal line & border */
+  --background-modifier-cover: #262626;
+  /* for title bar / #332E33 */
+  --background-modifier-cover: hsl(0, 0%, 16%);
+  /* for title bar / #332E33 */
+  /*  --interactive-accent: #4682B4;                    /* for interactive buttons */
+  /*    --interactive-accent-hover: #5a91bf;     /* for interactive buttons */
+  /* my custom variables */
+  --background-modifier-border-active: hsl(20, 5%, 53%);
+  /* for border active, lighter for dark mode */
+  --background-modifier-backlinks: hsl(0, 0%, 18%);
+  /* for backlinks, 2% darker than primary */
+  /* plugins variables */
+  /* color variables for Hover Editor plugin, #735050 is monochromatic of #262626 */
+  --he-title-bar-active-pinned-bg: #735050;
+  --he-title-bar-inactive-pinned-bg: #735050;
+  --he-title-bar-active-bg: #3d373a;
+  --he-title-bar-inactive-bg: #3d373a;
+}

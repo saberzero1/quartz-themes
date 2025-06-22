@@ -1,0 +1,41 @@
+.tartus-callouts .callout {
+  padding: 0;
+  display: flex;
+  min-height: 38px;
+}
+
+.tartus-callouts .callout .callout-title {
+  width: 35px;
+  position: relative;
+}
+
+.tartus-callouts .callout .callout-title .callout-title-inner {
+  display: block !important;
+  position: absolute;
+  left: 100%;
+  width: max-content;
+  padding-left: var(--size-4-3);
+  padding-top: var(--size-4-3);
+}
+
+.tartus-callouts .callout .callout-title .callout-icon {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tartus-callouts .callout .callout-content {
+  padding: var(--size-4-3);
+  padding-top: 30px;
+}
+
+.tartus-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title
+  .callout-title-inner {
+  left: unset;
+  right: 100%;
+  padding-right: var(--size-4-3);
+}

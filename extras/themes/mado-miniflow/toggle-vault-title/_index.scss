@@ -1,0 +1,4 @@
+body:is(:not(.css-settings-manager), .toggle-vault-title)
+  .nav-folder-title[data-path='/'] {
+  display: none;
+}

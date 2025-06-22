@@ -1,0 +1,34 @@
+bod.theme-dark {
+  --grey-900-rgb: 32, 36, 43;
+  --grey-800-rgb: 39, 43, 52;
+  --grey-700-rgb: 61, 68, 83;
+  --grey-600-rgb: 79, 88, 107;
+  --grey-500-rgb: 79, 88, 107;
+  --grey-400-rgb: 171, 178, 191;
+  --grey-300-rgb: 171, 178, 191;
+  --grey-200-rgb: 171, 178, 191;
+  --grey-100-rgb: 206, 210, 218;
+  --grey-50-rgb: 206, 210, 218;
+  --accent-h: 207;
+  --accent-s: 82%;
+  --accent-l: 66%;
+  --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
+  --color-red: #e06c75;
+  --color-green: #98c379;
+  --color-orange: #d19a66;
+  --color-yellow: #e5c07b;
+  --color-cyan: #56b6c2;
+  --color-blue: #61afef;
+}
+
+bod.encore-colors-colorful {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-green);
+  --highlight-hue: 37;
+  --h1-color: var(--color-orange);
+  --h2-color: var(--color-green);
+  --h3-color: var(--color-cyan);
+  --h4-color: var(--color-blue);
+  --h5-color: var(--color-red);
+  --h6-color: var(--color-yellow);
+}

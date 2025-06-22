@@ -1,0 +1,40 @@
+.lightPalette-sunnyMemos {
+  --OT-theme-reference-color: #ffdfb7;
+  --color-base-00: #ffeed9;
+  /*    --background-primary        */
+  --color-base-20: #ffdfb7;
+  /*    --background-secondary        */
+  --color-base-05: #ffce8a;
+  /*    --background-secondary-alt    */
+  --color-base-10: #ffddb1;
+  /*    --background-primary-alt    */
+  --color-base-35: #ffce8a;
+  /*    --interactive-hover            */
+  --color-base-40: #b45e19;
+  /*    --bordures                    */
+  --color-base-50: #efa385;
+  /*    --text-faint                */
+  --color-base-70: #d04f1c;
+  /*    --text-muted                */
+  --color-base-100: #a33e16;
+  /*    --text-normal                */
+  --link-color: #167ba3;
+  --accent-h: 33 !important;
+  --accent-s: 76% !important;
+  --accent-l: 65% !important;
+  --OT-stabilo-mark: var(--stabilo-orange-foncé);
+  --OT-stabilo-text: var(--color-base-00);
+  --OT-table-header-background: #ffd7a6;
+  --OT-table-alt-background: #ffe6c8;
+  --code-background: #ffe6c8;
+  --OT-color-on-base-20: #c57000;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-base-20: #ff930d;
+  --OT-color-muted-on-accent-1: #ffd095;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 77%);
+}
+
+.OT-Light-pills-color-theme.lightPalette-sunnyMemos {
+  --OT-pill-color: var(--color-base-100);
+  --OT-pill-background: var(--OT-theme-reference-color);
+}

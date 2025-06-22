@@ -1,0 +1,90 @@
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-content {
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
+}
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
+  font-weight: bold;
+}
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+}
+.aura-callouts.aura-callouts-block .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+}
+.aura-callouts.aura-callouts-block .callout-fold {
+  padding-right: 0px;
+}
+.aura-callouts.aura-callouts-block .callout {
+  --callout-title-padding: var(--size-4-2);
+}
+.aura-callouts.aura-callouts-block .callout.is-collapsible {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+  --bold-weight: bolder;
+}
+.aura-callouts.aura-callouts-block .callout.is-collapsible .callout-fold {
+  padding-right: 0px;
+}
+.aura-callouts.aura-callouts-block .callout.is-collapsible.is-collapsed {
+  padding: 0;
+}
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible.is-collapsed
+  .callout-title {
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible.is-collapsed
+  .callout-content {
+  display: none;
+}
+.aura-callouts.aura-callouts-block .callout.is-collapsible:not(.is-collapsed) {
+  padding: 0px 0px var(--callout-title-padding) 0px;
+}
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+  cursor: pointer;
+}
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+}
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+.aura-callouts.aura-callouts-block .callout .list-collapse-indicator {
+  margin-left: -35px;
+  padding-right: 3px;
+}

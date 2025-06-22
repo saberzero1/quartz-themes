@@ -1,36 +1,18 @@
-body.theme-light:is(.shib-card-layout)
+body.toggle-bg-panel-page
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
-    [data-type="search"],
-    [data-type="starred"],
-    [data-type="recent-files"]
+    [data-type='search'],
+    [data-type='starred'],
+    [data-type='recent-files']
   )::before {
-  opacity: var(--panel-page-opacity);
-  border-radius: var(--shib-card-radius, var(--radius-xl));
-}
-
-body.theme-light:not(.shib-card-layout)
-  :is(
-    .nav-files-container,
-    .file-tree-plugin-view,
-    [data-type="search"],
-    [data-type="starred"],
-    [data-type="recent-files"]
-  )::before {
-  opacity: var(--panel-page-opacity);
-}
-
-body.panel-page-bg-theme-light-space.theme-light {
-  --panel-page-background-url-theme: url("https://i.pinimg.com/originals/52/e5/6f/52e56fb927b170294ccc035f02c6477d.jpg");
-}
-
-body.panel-page-bg-theme-light-paradise.theme-light {
-  --panel-page-background-url-theme: url("https://www.enjpg.com/img/2020/summer-aesthetic-wallpaper-iphone-15.jpg");
-}
-
-body.panel-page-bg-theme-light-custom.theme-light {
-  --panel-page-background-url-theme: var(
-    --background-panel-page-theme-light-custom
-  );
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: no-repeat center/cover var(--panel-page-background-url-theme);
+  z-index: -1;
 }

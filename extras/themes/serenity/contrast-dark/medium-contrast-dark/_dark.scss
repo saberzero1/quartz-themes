@@ -1,0 +1,72 @@
+.custom-color-scheme-dar.theme-dark {
+  --theme-tint: var(--custom-theme-tint-text-d) !important;
+  --theme-sat: var(--custom-theme-sat-text-d);
+  --theme-tint-secondary: var(--custom-theme-tint-secondary-d) !important;
+  --theme-sat-secondary: var(--custom-theme-sat-secondary-d) !important;
+  --theme-tint-text: var(--custom-theme-tint-d) !important;
+  --theme-sat-text: var(--custom-theme-sat-d) !important;
+  --base-c: var(--custom-base-c-d) !important;
+  --c-00: var(--custom-base-c-d) !important;
+  --c-05: calc(var(--custom-base-c-d) + 2%) !important;
+  --c-10: calc(var(--custom-base-c-d) + 2.5%) !important;
+  --c-20: var(--custom-c-20-d) !important;
+  --c-25: var(--custom-border-c-d) !important;
+  --c-30: var(--custom-border-c-d) !important;
+  --background-modifier-border: hsl(
+    var(--custom-theme-tint-d),
+    var(--custom-theme-sat-text-d),
+    var(--c-30)
+  ) !important;
+  --background-modifier-border-hover: hsl(
+    var(--custom-theme-tint-d),
+    calc(var(--custom-theme-sat-text-d) - 5%),
+    var(--c-30)
+  ) !important;
+  --background-modifier-border-focus: hsl(
+    var(--custom-theme-tint-d),
+    calc(var(--custon-theme-sat-text-d) - 5%),
+    var(--c-30)
+  ) !important;
+  --c-40: var(--custom-border-c-d) !important;
+  --c-50: calc(var(--custom-text-c-d) - 20%) !important;
+  --c-60: calc(var(--custom-text-c-d) - 15%) !important;
+  --c-70: calc(var(--custom-text-c-d) - 10%) !important;
+  --c-100: var(--custom-text-c-d) !important;
+  --color-base-40: hsl(
+    var(--custom-theme-tint-d),
+    var(--custom-theme-sat-d),
+    var(--custom-border-c-d)
+  ) !important;
+  --background-secondary: hsl(
+    var(--theme-tint-secondary),
+    var(--theme-sat-secondary),
+    var(--c-20)
+  ) !important;
+}
+
+.medium-contrast-dark {
+  /* base contrast */
+  /* this is the lightest "l" value */
+  --base-c-m: calc(var(--base-c) - 10%);
+  /* these represent hsl "l" values. */
+  /* the higher the contrast, the greater the range between values. */
+  --c-00: var(--base-c-m);
+  --c-05: calc(var(--base-c-m) + 1%);
+  --c-10: calc(var(--base-c-m) + 5%);
+  --c-20: calc(var(--base-c-m) - 4%);
+  --c-25: calc(var(--base-c-m) + 3%);
+  --c-30: calc(var(--base-c-m) + 3%);
+  --c-35: calc(var(--base-c-m) + 19%);
+  --c-40: calc(var(--base-c-m) + 18%);
+  --c-50: calc(var(--base-c-m) + 60%);
+  --c-60: calc(var(--base-c-m) + 64%);
+  --c-70: calc(var(--base-c-m) + 66%);
+  --c-100: calc(var(--base-c-m) + 68%);
+}
+
+.theme-solarized-s.medium-contrast-dark {
+  --color-red: #d86866;
+  --accent-h: 18 !important;
+  --accent-s: 80% !important;
+  --accent-l: 55% !important;
+}

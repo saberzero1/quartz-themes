@@ -1,0 +1,7 @@
+NearWhite {
+  --background-primary: color-mix(
+    in srgb,
+    var(--theme-color-base),
+    white calc(100% * 0.97)
+  );
+}

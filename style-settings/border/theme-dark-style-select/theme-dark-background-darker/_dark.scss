@@ -1,0 +1,43 @@
+.theme-dark-background-darker {
+  --background-primary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 4),
+    calc(var(--accent-l) / 5)
+  );
+  --background-primary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 4),
+    calc(var(--accent-l) / 4)
+  );
+  --background-secondary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(var(--accent-l) / 6)
+  );
+  --background-secondary-alt: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 6),
+    calc(var(--accent-l) / 3.6)
+  );
+  --background-tertiary: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 6),
+    calc(var(--accent-l) / 4)
+  );
+  --workspace-background-translucent: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) / 6),
+    calc(var(--accent-l) / 4),
+    0.6
+  );
+  --interactive-normal: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(var(--accent-l) / 3)
+  );
+  --interactive-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) / 7),
+    calc(var(--accent-l) / 2.7)
+  );
+}

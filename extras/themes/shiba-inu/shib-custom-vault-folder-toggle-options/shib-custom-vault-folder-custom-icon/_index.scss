@@ -1,0 +1,25 @@
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-custom-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content {
+  font-family: var(--font-family-vault);
+  font-weight: 700;
+  text-align: left;
+  margin-left: 30px;
+  opacity: 1 !important;
+}
+
+.shib-custom-vault-folder-toggle.shib-custom-vault-folder-custom-icon
+  .nav-folder.mod-root
+  > .nav-folder-title
+  > .nav-folder-title-content:before {
+  content: ' ';
+  -webkit-mask-image: var(--shib-custom-vault-folder-custom-icon-url);
+  text-align: left;
+  width: 26px;
+  height: 26px;
+  margin-left: -30px;
+  margin-top: -4px;
+  position: absolute;
+  background-color: var(--color-accent);
+}

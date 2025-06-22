@@ -1,0 +1,45 @@
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover)
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover)
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover)
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover).is-hidden-frameless
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover).is-hidden-frameless
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover).is-hidden-frameless
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover)
+  .workspace-tabs.mod-top {
+  transition: gap var(--anim-in);
+}
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover).is-hidden-frameless
+  .titlebar-button-container,
+body:not(.is-mobile).tab-autohide:has(.status-bar:hover)
+  .mod-top
+  .workspace-tab-header-container {
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}

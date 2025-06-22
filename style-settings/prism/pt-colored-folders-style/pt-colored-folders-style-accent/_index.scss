@@ -1,0 +1,101 @@
+.pt-colored-folder.pt-colored-folders-files-match
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-folder
+  .nav-file-title:not(.is-active, :hover) {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folders-accent
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-files-container
+  > div
+  > .nav-folder {
+  --nav-indentation-guide-color: var(--interactive-accent-tint);
+}
+.pt-colored-folders-accent
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-title {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folders-accent
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-file-title:hover,
+.pt-colored-folders-accent
+  .workspace-leaf-content[data-type='file-explorer']
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-title:hover {
+  color: var(--interactive-accent-text);
+  background-color: var(--interactive-accent-base);
+}
+.pt-colored-folders-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders-accent
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders-accent
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folders-accent
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+  .nav-folder.is-collapsed:hover
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+  .nav-folder:not(.is-collapsed)
+  .collapse-icon
+  svg.svg-icon,
+.pt-colored-folder.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+  .nav-folder:not(.is-collapsed):hover
+  .collapse-icon
+  svg.svg-icon {
+  background-color: var(--interactive-accent-text);
+}

@@ -1,0 +1,4 @@
+.active-line-background
+  .cm-active.cm-line:not(.HyperMD-quote, .HyperMD-codeblock) {
+  background-color: var(--bg4);
+}

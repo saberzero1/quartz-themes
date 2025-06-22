@@ -1,0 +1,95 @@
+.neat-style-headers .is-live-preview .HyperMD-header-1,
+.neat-style-headers .markdown-rendered h1,
+.neat-style-headers .is-live-preview .HyperMD-header-2,
+.neat-style-headers .markdown-rendered h2,
+.neat-style-headers .is-live-preview .HyperMD-header-3,
+.neat-style-headers .markdown-rendered h3,
+.neat-style-headers .is-live-preview .HyperMD-header-4,
+.neat-style-headers .markdown-rendered h4,
+.neat-style-headers .is-live-preview .HyperMD-header-5,
+.neat-style-headers .markdown-rendered h5,
+.neat-style-headers .is-live-preview .HyperMD-header-6,
+.neat-style-headers .markdown-rendered h6 {
+  position: relative;
+  padding: 0;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  padding: 5px;
+  text-align: center;
+  line-height: unset;
+  border-radius: 50px;
+}
+.neat-style-headers .is-live-preview .HyperMD-header-1::before,
+.neat-style-headers .markdown-rendered h1::before,
+.neat-style-headers .is-live-preview .HyperMD-header-2::before,
+.neat-style-headers .markdown-rendered h2::before,
+.neat-style-headers .is-live-preview .HyperMD-header-3::before,
+.neat-style-headers .markdown-rendered h3::before,
+.neat-style-headers .is-live-preview .HyperMD-header-4::before,
+.neat-style-headers .markdown-rendered h4::before,
+.neat-style-headers .is-live-preview .HyperMD-header-5::before,
+.neat-style-headers .markdown-rendered h5::before,
+.neat-style-headers .is-live-preview .HyperMD-header-6::before,
+.neat-style-headers .markdown-rendered h6::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 80%;
+  height: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.neat-style-headers .is-live-preview .HyperMD-header-1,
+.neat-style-headers .markdown-rendered h1 {
+  background-color: rgba(var(--h1-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-1::before,
+.neat-style-headers .markdown-rendered h1::before {
+  background-color: rgba(var(--h2-new-color), 0.3);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-2,
+.neat-style-headers .markdown-rendered h2 {
+  background-color: rgba(var(--h2-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-2::before,
+.neat-style-headers .markdown-rendered h2::before {
+  background-color: rgba(var(--h2-new-color), 0.3);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-3,
+.neat-style-headers .markdown-rendered h3 {
+  background-color: rgba(var(--h3-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-3::before,
+.neat-style-headers .markdown-rendered h3::before {
+  background-color: rgba(var(--h3-new-color), 0.3);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-4,
+.neat-style-headers .markdown-rendered h4 {
+  background-color: rgba(var(--h4-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-4::before,
+.neat-style-headers .markdown-rendered h4::before {
+  background-color: rgba(var(--h4-new-color), 0.3);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-5,
+.neat-style-headers .markdown-rendered h5 {
+  background-color: rgba(var(--h5-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-5::before,
+.neat-style-headers .markdown-rendered h5::before {
+  background-color: rgba(var(--h5-new-color), 0.3);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-6,
+.neat-style-headers .markdown-rendered h6 {
+  background-color: rgba(var(--h6-new-color), 0.1);
+}
+.neat-style-headers .is-live-preview .HyperMD-header-6::before,
+.neat-style-headers .markdown-rendered h6::before {
+  background-color: rgba(var(--h6-new-color), 0.3);
+}

@@ -1,0 +1,9 @@
+body.pt-accent-color-orange-lt {
+  --interactive-accent-base-hsl: var(--color-orange-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-orange-text-hsl);
+  --interactive-accent-base: var(--color-orange-base);
+  --interactive-accent-tint: var(--color-orange-tint);
+  --interactive-accent-text: var(--color-orange-text);
+  --interactive-accent-hover: var(--color-orange-tint);
+}

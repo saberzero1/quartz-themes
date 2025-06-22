@@ -1,19 +1,158 @@
-.ulu-we3-callout .theme-light {
-  --color-callout-red: #ffe0e0;
-  --color-callout-blue: #def1ff;
-  --color-callout-green: #e0ffe3;
-  --color-callout-yellow: #ffffe0;
-  --color-callout-orange: #fff2e0;
-  --color-callout-teal: #e0feff;
-  --color-callout-grey: #ededed;
-  --color-callout-purple: #ede0ff;
-  --color-callout-border-red: #e5c7c7;
-  --color-callout-border-blue: #c7d8e5;
-  --color-callout-border-green: #cce5c7;
-  --color-callout-border-yellow: #e3e5c7;
-  --color-callout-border-orange: #e5dbc7;
-  --color-callout-border-teal: #c7e5e5;
-  --color-callout-border-grey: #dbdbdb;
-  --color-callout-border-purple: #d8c7e5;
-  --color-callout-text: var(--text-normal);
+.ulu-we3-callout .callout[data-callout='abstract'],
+.ulu-we3-callout .callout[data-callout='warning'],
+.ulu-we3-callout .callout[data-callout='info'],
+.ulu-we3-callout .callout[data-callout='example'],
+.ulu-we3-callout .callout[data-callout='note'],
+.ulu-we3-callout .callout[data-callout='tip'],
+.ulu-we3-callout .callout[data-callout='success'],
+.ulu-we3-callout .callout[data-callout='question'],
+.ulu-we3-callout .callout[data-callout='failure'],
+.ulu-we3-callout .callout[data-callout='danger'],
+.ulu-we3-callout .callout[data-callout='bug'],
+.ulu-we3-callout .callout[data-callout='quote'] {
+  color: var(--color-callout-text);
+}
+
+.ulu-we3-callout .callout-title-inner {
+  font-weight: var(--bold-weight);
+  text-shadow: 0px 0px 18px rgba(var(--callout-color), 0.5);
+  color: var(--callout-title-color);
+}
+
+.ulu-we3-callout .callout {
+  border-radius: 8px;
+  transition: 700ms;
+}
+
+.ulu-we3-callout .callout[data-callout='abstract'],
+.ulu-we3-callout .callout[data-callout='summary'],
+.ulu-we3-callout .callout[data-callout='tldr'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(66, 4, 126, 0.1),
+    12px -12px 69px -3px rgba(7, 244, 158, 0.05);
+}
+
+.ulu-we3-callout .callout[data-callout='danger'],
+.ulu-we3-callout .callout[data-callout='bug'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(52, 7, 61, 0.1),
+    12px -12px 69px -3px rgba(239, 116, 92, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='info'],
+.ulu-we3-callout .callout[data-callout='todo'],
+.ulu-we3-callout .callout[data-callout='note'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(84, 86, 206, 0.1),
+    0px 1px 69px -3px rgba(201, 88, 187, 0.1),
+    12px -12px 69px -3px rgba(250, 191, 120, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='summary'],
+.ulu-we3-callout .callout[data-callout='example'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(34, 5, 45, 0.1),
+    12px -12px 69px -3px rgba(239, 116, 92, 0.2);
+}
+
+.ulu-we3-callout .callout[data-callout='caution'],
+.ulu-we3-callout .callout[data-callout='warning'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(8, 32, 62, 0.1),
+    12px -12px 69px -3px rgba(85, 124, 147, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='tip'],
+.ulu-we3-callout .callout[data-callout='hint'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(94, 67, 93, 0.1),
+    12px -12px 69px -3px rgba(164, 198, 184, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='success'],
+.ulu-we3-callout .callout[data-callout='check'],
+.ulu-we3-callout .callout[data-callout='done'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(28, 62, 53, 0.1),
+    12px -12px 69px -3px rgba(153, 242, 209, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='question'],
+.ulu-we3-callout .callout[data-callout='help'],
+.ulu-we3-callout .callout[data-callout='faq'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(63, 63, 66, 0.1),
+    12px -12px 69px -3px rgba(93, 93, 60, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='failure'],
+.ulu-we3-callout .callout[data-callout='fail'],
+.ulu-we3-callout .callout[data-callout='missing'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(18, 36, 63, 0.1),
+    12px -12px 69px -3px rgba(244, 152, 90, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='error'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(31, 0, 33, 0.1),
+    12px -12px 69px -3px rgba(117, 16, 6, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='important'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(249, 188, 44, 0.1),
+    12px -12px 69px -3px rgba(247, 76, 6, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='quote'],
+.ulu-we3-callout .callout[data-callout='cite'] {
+  box-shadow:
+    -12px 12px 69px -3px rgba(96, 105, 107, 0.1),
+    12px -12px 69px -3px rgba(133, 142, 150, 0.1);
+}
+
+.ulu-we3-callout .callout[data-callout='tldr'],
+.ulu-we3-callout .callout[data-callout='caution'],
+.ulu-we3-callout .callout[data-callout='todo'],
+.ulu-we3-callout .callout[data-callout='summary'],
+.ulu-we3-callout .callout[data-callout='hint'],
+.ulu-we3-callout .callout[data-callout='important'],
+.ulu-we3-callout .callout[data-callout='check'],
+.ulu-we3-callout .callout[data-callout='done'],
+.ulu-we3-callout .callout[data-callout='help'],
+.ulu-we3-callout .callout[data-callout='faq'],
+.ulu-we3-callout .callout[data-callout='fail'],
+.ulu-we3-callout .callout[data-callout='error'],
+.ulu-we3-callout .callout[data-callout='important'],
+.ulu-we3-callout .callout[data-callout='cite'],
+.ulu-we3-callout .callout[data-callout='abstract'],
+.ulu-we3-callout .callout[data-callout='warning'],
+.ulu-we3-callout .callout[data-callout='info'],
+.ulu-we3-callout .callout[data-callout='example'],
+.ulu-we3-callout .callout[data-callout='note'],
+.ulu-we3-callout .callout[data-callout='tip'],
+.ulu-we3-callout .callout[data-callout='success'],
+.ulu-we3-callout .callout[data-callout='question'],
+.ulu-we3-callout .callout[data-callout='failure'],
+.ulu-we3-callout .callout[data-callout='danger'],
+.ulu-we3-callout .callout[data-callout='bug'],
+.ulu-we3-callout .callout[data-callout='quote'] {
+  border: 1px solid var(--background-primary);
+  background: var(--background-primary);
+}
+
+.ulu-we3-callout .callout:hover {
+  border: 1px solid rgb(var(--callout-color));
+}
+
+.ulu-we3-callout .callout-icon .svg-icon,
+.ulu-we3-callout .callout-icon {
+  display: none;
+}
+
+.ulu-we3-callout .callout-title {
+  font-size: 2em;
+  padding: 0;
+  gap: 0;
 }

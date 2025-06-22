@@ -41,7 +41,7 @@
     .obsidian-search-match-highlight
   ),
 .HyperMD-codeblock-bg,
-.theme-dark pre[class*="language-"],
+.theme-dark pre[class*='language-'],
 .markdown-preview-view code {
   background-color: var(--pre-code) !important;
   color: var(--code-block) !important;

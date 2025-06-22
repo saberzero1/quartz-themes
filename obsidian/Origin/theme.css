@@ -5,8 +5,8 @@
 /* basic variables --- the first certain design choices */
 body {
   --font-default:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
+    Inter, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Sans JP', 'Yu Gothic', 'Microsoft YaHei Light',
     sans-serif;
   --text-on-accent: white !important;
   --modal-border-color: var(--background-modifier-border) !important;
@@ -46,7 +46,7 @@ svg.svg-icon.lucide-folder-plus,
 svg.svg-icon.lucide-folder-closed,
 svg.svg-icon.lucide-folder-open,
 svg.svg-icon.lucide-file,
-[aria-label="New note"] svg.svg-icon.lucide-edit,
+[aria-label='New note'] svg.svg-icon.lucide-edit,
 svg.svg-icon.lucide-sort-asc,
 svg.svg-icon.lucide-edit-3,
 svg.svg-icon.lucide-book-open {
@@ -83,7 +83,7 @@ svg.svg-icon.lucide-folder-open {
 
 /* note/new note icon */
 svg.svg-icon.lucide-file,
-[aria-label="New note"] svg.svg-icon.lucide-edit {
+[aria-label='New note'] svg.svg-icon.lucide-edit {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 2048 2048"%3E%3Cpath fill="currentColor" d="M1792 549v1499H128V0h1115l549 549zm-512-37h293l-293-293v293zm384 1408V640h-512V128H256v1792h1408z"%2F%3E%3C%2Fsvg%3E');
 }
 
@@ -252,7 +252,7 @@ body {
   padding-left: 15px;
   font-size: 1.03em;
   font-weight: 400 !important;
-  font-family: var(--font-interface-override), "Avenir Next";
+  font-family: var(--font-interface-override), 'Avenir Next';
 }
 
 /* ----- ***** Files ***** ----- */
@@ -297,13 +297,13 @@ body {
 /* remove background */
 
 /* ---> make the tabs above the notes "disappear", while leaving the file explorer tabs <----- */
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+.workspace-tab-header-container:not(:has([data-type='file-explorer'])):not(
     :hover
   ) {
   margin: 0;
   height: 5px;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+.workspace-tab-header-container:not(:has([data-type='file-explorer'])):not(
     :hover
   )
   > * {
@@ -311,15 +311,15 @@ body {
 }
 
 /* transitions */
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+.workspace-tab-header-container:not(:has([data-type='file-explorer'])) {
   transition: 0.15s;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(
+.workspace-tab-header-container:not(:has([data-type='file-explorer'])):not(
     :hover
   ) {
   transition-delay: 0.15s;
 }
-.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover
+.workspace-tab-header-container:not(:has([data-type='file-explorer'])):hover
   > * {
   transition: 0.3s;
 }
@@ -328,17 +328,17 @@ body {
 
 /* --- *** Hide Tabs *** --- */
 .hide-tabs
-  .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+  .workspace-tab-header-container:not(:has([data-type='file-explorer'])) {
   display: none;
 }
 
 /* --- *** Show Tabs *** --- */
 .show-tabs
-  .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+  .workspace-tab-header-container:not(:has([data-type='file-explorer'])) {
   height: var(--header-height);
 }
 .show-tabs
-  .workspace-tab-header-container:not(:has([data-type="file-explorer"]))
+  .workspace-tab-header-container:not(:has([data-type='file-explorer']))
   > * {
   opacity: 1;
 }
@@ -408,10 +408,10 @@ body:not(.is-mobile) .view-header {
 /* hide navigation arrows */
 .hide-arrows
   .view-header-nav-buttons
-  .clickable-icon[aria-label="Navigate back"],
+  .clickable-icon[aria-label='Navigate back'],
 .hide-arrows
   view-header-nav-buttons
-  .clickable-icon[aria-label="Navigate forward"] {
+  .clickable-icon[aria-label='Navigate forward'] {
   display: none !important;
 }
 
@@ -425,8 +425,8 @@ body:not(.is-mobile) .view-header {
 }
 
 /* now active panes have a colorful border just like in the older version! */
-body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="markdown"]),
-body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="empty"]) {
+body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type='markdown']),
+body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type='empty']) {
   border-color: hsla(var(--color-accent-hsl), 0.45) !important;
 }
 
@@ -519,8 +519,8 @@ body {
   --code-value: var(--color-purple);
 }
 
-code[class*="language"],
-pre[class*="language"] {
+code[class*='language'],
+pre[class*='language'] {
   text-shadow: 0 1px var(--background-primary); /* metallic "inset" look */
   color: var(--text-normal) !important;
 }

@@ -42,22 +42,22 @@ div.tree-item-children.nav-folder-children {
 }
 
 textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
   background: #ffffff00;
   border-color: var(--background-modifier-border-hover);
 }
 
 @media (hover: hover) {
   textarea:hover,
-  input[type="text"]:hover,
-  input[type="search"]:hover,
-  input[type="email"]:hover,
-  input[type="password"]:hover,
-  input[type="number"]:hover {
+  input[type='text']:hover,
+  input[type='search']:hover,
+  input[type='email']:hover,
+  input[type='password']:hover,
+  input[type='number']:hover {
     border-color: var(--background-modifier-border-hover);
     transition:
       box-shadow 0.15s ease-in-out,
@@ -66,23 +66,23 @@ input[type="number"] {
 }
 
 textarea:active,
-input[type="text"]:active,
-input[type="search"]:active,
-input[type="email"]:active,
-input[type="password"]:active,
-input[type="number"]:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
 textarea:focus,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
 textarea:focus-visible,
-input[type="text"]:focus-visible,
-input[type="search"]:focus-visible,
-input[type="email"]:focus-visible,
-input[type="password"]:focus-visible,
-input[type="number"]:focus-visible {
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
   box-shadow: none;
 }
 
@@ -149,22 +149,22 @@ input[type="number"]:focus-visible {
   }
 
   textarea,
-  input[type="text"],
-  input[type="search"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"] {
+  input[type='text'],
+  input[type='search'],
+  input[type='email'],
+  input[type='password'],
+  input[type='number'] {
     background: #ffffff00;
     border-color: var(--background-modifier-border-hover);
   }
 
   @media (hover: hover) {
     textarea:hover,
-    input[type="text"]:hover,
-    input[type="search"]:hover,
-    input[type="email"]:hover,
-    input[type="password"]:hover,
-    input[type="number"]:hover {
+    input[type='text']:hover,
+    input[type='search']:hover,
+    input[type='email']:hover,
+    input[type='password']:hover,
+    input[type='number']:hover {
       border-color: var(--background-modifier-border-hover);
       transition:
         box-shadow 0.15s ease-in-out,
@@ -173,23 +173,23 @@ input[type="number"]:focus-visible {
   }
 
   textarea:active,
-  input[type="text"]:active,
-  input[type="search"]:active,
-  input[type="email"]:active,
-  input[type="password"]:active,
-  input[type="number"]:active,
+  input[type='text']:active,
+  input[type='search']:active,
+  input[type='email']:active,
+  input[type='password']:active,
+  input[type='number']:active,
   textarea:focus,
-  input[type="text"]:focus,
-  input[type="search"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus,
-  input[type="number"]:focus,
+  input[type='text']:focus,
+  input[type='search']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus,
+  input[type='number']:focus,
   textarea:focus-visible,
-  input[type="text"]:focus-visible,
-  input[type="search"]:focus-visible,
-  input[type="email"]:focus-visible,
-  input[type="password"]:focus-visible,
-  input[type="number"]:focus-visible {
+  input[type='text']:focus-visible,
+  input[type='search']:focus-visible,
+  input[type='email']:focus-visible,
+  input[type='password']:focus-visible,
+  input[type='number']:focus-visible {
     box-shadow: none;
   }
 

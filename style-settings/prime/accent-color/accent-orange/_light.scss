@@ -1,0 +1,14 @@
+body.accent-orange {
+  --accent-h: 26.74;
+  --accent-s: 90%;
+  --accent-l: 50%;
+  --interactive-accent: var(--color-orange) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.8
+  ) !important;
+  --link-color: var(--color-orange);
+  --link-external-color: var(--color-orange);
+}

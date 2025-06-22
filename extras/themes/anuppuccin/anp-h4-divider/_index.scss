@@ -1,0 +1,10 @@
+.anp-h4-divider .markdown-rendered h4,
+.anp-h4-divider .HyperMD-header-4 {
+  border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+
+.anp-h4-divider.anp-header-divider-color-toggle .markdown-rendered h4,
+.anp-h4-divider.anp-header-divider-color-toggle .HyperMD-header-4 {
+  border-bottom-color: currentColor;
+}

@@ -1,0 +1,27 @@
+.theme-novelist.colorful-headings {
+  --h1-color: #9e7759;
+  --h2-color: #b58a62;
+  --h3-color: #cd9b6d;
+  --h4-color: #d29035;
+  --h5-color: rgb(210, 170, 51);
+  --h6-color: rgb(222, 173, 26);
+}
+
+.theme-novelist.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-base-00: #faf8f0;
+  --color-base-05: #f2eadb;
+  --color-base-10: #f4f0e9;
+  --color-base-20: #f4eee3;
+  --color-base-25: #ccb8a0;
+  --color-base-30: #e1d5c9;
+  --color-base-35: #cebcac;
+  --color-base-40: #c1a88f;
+  --color-base-50: #a2988f;
+  --color-base-60: #9f7b5f;
+  --color-base-70: #7b6c65;
+  --color-base-100: #524f4d;
+}

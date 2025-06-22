@@ -1,0 +1,7 @@
+.page-gallery-flexgrow .page-gallery__tile {
+  max-width: unset;
+  flex-grow: 1;
+  height: flex;
+  width: fit-content;
+  min-width: 12em;
+}

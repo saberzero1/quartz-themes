@@ -1,0 +1,34 @@
+.lightPalette-metallicBlue {
+  --OT-theme-reference-color: #378cc8;
+  --color-base-00: #fafff3;
+  --color-base-20: #143248;
+  --color-base-35: #143248;
+  --color-base-40: #3d8cc8;
+  --color-base-50: var(--light-blue);
+  --color-base-70: #72add8;
+  --color-base-05: #1b4463;
+  --color-base-100: #255c84;
+  --link-color: #3f9de1;
+  /*    --h1-color:                var(--text-normal); */
+  /*    --h3-color:                var(--text-normal); */
+  /*    --h5-color:                var(--text-normal); */
+  --code-background: #eaf3f9;
+  --OT-button-OFF-bg: #f0f5ea;
+  --OT-button-ON-bg: #26618b;
+  --toggle-thumb-color: #5894c5;
+  --OT-table-header-background: #cbe9ff;
+  --OT-table-background: #fbfcfd;
+  --OT-table-alt-background: #edf7ff;
+  --metadata-background: #cbe9ff;
+  --metadata-label-text-color: var(--color-base-100);
+  --icon-color: #f2f7fb;
+  --OT-clickable-icon-in-header: var(--color-base-20);
+  --OT-ribbon-icon-color-sidebar-is-collapsed: var(--color-base-20);
+  --OT-metadata-property-icon: var(--color-base-20);
+  --OT-color-on-base-20: #b6e1ff;
+  --OT-color-muted-on-base-20: #7fb5dc;
+  --OT-nav-folder-title-color: var(--OT-color-muted-on-base-20);
+  --OT-search-settings-item-name: var(--OT-color-on-base-20);
+  --OT-setting-item-description: #3676a4;
+  /*    le texte descriptif complémentaire dans le panneau des Settings    */
+}

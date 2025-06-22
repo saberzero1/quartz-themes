@@ -1,0 +1,29 @@
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-light.pt-highlight-text-default-lt
+    mark[class],
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt
+    mark[class]
+),
+:is(
+    body:not(
+        .pt-disable-mark-highlight-styling
+      ).theme-light.pt-highlight-text-default-lt
+      mark[class].mark-text-default,
+    body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt
+      mark[class]
+  ).mark-text-default {
+  color: var(--text-normal);
+}
+
+:is(
+    body:not(
+        .pt-disable-mark-highlight-styling
+      ).theme-light.pt-highlight-text-default-lt
+      mark[class].mark-text-color,
+    body:not(.pt-disable-mark-highlight-styling).pt-highlight-text-default-dt
+      mark[class]
+  ).mark-text-color {
+  color: var(--mark-highlight-text);
+}

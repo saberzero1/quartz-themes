@@ -1,0 +1,40 @@
+.theme-spring .markdown-rendered mark,
+.theme-spring .cm-s-obsidian span.cm highlight {
+  color: white;
+}
+.theme-spring.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --accent-h: 79 !important;
+  --accent-s: 80% !important;
+  --accent-l: 69% !important;
+  --color-red-rgb: 228, 111, 125;
+  --color-red: #e46f7d;
+  --color-green-rgb: 165, 209, 140;
+  --color-green: #a5d18c;
+  --color-orange-rgb: 251, 179, 108;
+  --color-orange: #fbb36c;
+  --color-yellow-rgb: 255, 222, 115;
+  --color-yellow: #ffde73;
+  --color-cyan-rgb: 111, 210, 194;
+  --color-cyan: #6fd2c2;
+  --color-blue-rgb: 86, 174, 214;
+  --color-blue: #56aed6;
+  --color-purple-rgb: 181, 132, 199;
+  --color-purple: #b584c7;
+  --color-pink-rgb: 255, 148, 200;
+  --color-pink: #ff94c8;
+  --color-base-00: #414e44;
+  --color-base-10: #45594b;
+  --color-base-20: #37463d;
+  --color-base-25: #556951;
+  --color-base-30: #4e624b;
+  --color-base-35: #6b8669;
+  --color-base-40: rgb(119, 161, 116);
+  --color-base-50: rgb(143, 163, 141);
+  --color-base-60: rgb(137, 161, 118);
+  --color-base-70: #a0ae8e;
+  --color-base-100: #c5ccac;
+}

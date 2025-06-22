@@ -1,0 +1,7 @@
+.shib-h6-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-6.cm-line,
+.shib-h6-underline :is(.markdown-preview-view, .markdown-rendered) h6 {
+  border-bottom: var(--hr-thickness) solid var(--h6-color);
+  padding-bottom: 2px;
+}

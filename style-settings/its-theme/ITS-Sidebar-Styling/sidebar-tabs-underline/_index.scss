@@ -1,0 +1,25 @@
+.sidebar-tabs-underline
+  :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split) {
+  --tab-outline-width: 0;
+  --sidebar-icon-color: var(--inactive);
+  --sidebar-icon-color-active: var(--headers);
+  --icon-color-focused: var(--text);
+  --sidebar-tab-border-color: var(--inactive);
+  --sidebar-tab-border-color-active: var(--headers);
+  --sidebar-tab-border-width: 4px;
+  --sidebar-tab-background-color: var(--note);
+}
+.sidebar-tabs-underline
+  :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)
+  .is-active.is-active {
+  --sidebar-tab-border-color: var(--sidebar-icon-color-active);
+  --tab-text-color-focused-active: var(--text);
+  --tab-text-color-focused-active-current: var(--text);
+}
+.sidebar-tabs-underline
+  :is(.mod-left-split.mod-left-split, .mod-right-split.mod-right-split)
+  .is-active.is-active:hover {
+  --sidebar-icon-color-active: var(--text);
+  --sidebar-tab-border-color: var(--sidebar-tab-border-color-active);
+  --sidebar-tab-background-color-hover: var(--accent);
+}

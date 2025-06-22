@@ -1,24 +1,24 @@
 /* maple-mono-latin-400-normal */
 @font-face {
-  font-family: "Maple Mono";
+  font-family: 'Maple Mono';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src:
     url(https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.5/files/maple-mono-latin-400-normal.woff2)
-      format("woff2"),
+      format('woff2'),
     url(https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.5/files/maple-mono-latin-400-normal.woff)
-      format("woff");
+      format('woff');
 }
 /* maple-mono-latin-400-italic */
 @font-face {
-  font-family: "Maple Mono";
+  font-family: 'Maple Mono';
   font-style: italic;
   font-display: swap;
   font-weight: 400;
   src:
     url(https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.5/./files/maple-mono-latin-400-italic.woff2)
-      format("woff2"),
+      format('woff2'),
     url(https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.5/./files/maple-mono-latin-400-italic.woff)
-      format("woff");
+      format('woff');
 }

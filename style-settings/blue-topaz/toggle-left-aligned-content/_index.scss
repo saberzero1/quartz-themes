@@ -1,0 +1,13 @@
+body
+  .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
+  .cm-scroller
+  > *:first-child {
+  margin-left: 0;
+}
+body
+  :is(.markdown-preview-view, .markdown-rendered).is-readable-line-width:not(
+    .matrix
+  )
+  .markdown-preview-sizer {
+  margin-left: 0;
+}

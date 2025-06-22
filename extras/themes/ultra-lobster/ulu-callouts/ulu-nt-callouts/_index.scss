@@ -1,19 +1,89 @@
-.theme-light {
-  --color-callout-red: #ffe0e0;
-  --color-callout-blue: #def1ff;
-  --color-callout-green: #e0ffe3;
-  --color-callout-yellow: #ffffe0;
-  --color-callout-orange: #fff2e0;
-  --color-callout-teal: #e0feff;
-  --color-callout-grey: #ededed;
-  --color-callout-purple: #ede0ff;
-  --color-callout-border-red: #e5c7c7;
-  --color-callout-border-blue: #c7d8e5;
-  --color-callout-border-green: #cce5c7;
-  --color-callout-border-yellow: #e3e5c7;
-  --color-callout-border-orange: #e5dbc7;
-  --color-callout-border-teal: #c7e5e5;
-  --color-callout-border-grey: #dbdbdb;
-  --color-callout-border-purple: #d8c7e5;
-  --color-callout-text: var(--text-normal);
+.ulu-nt-callouts .callout[data-callout='abstract'],
+.ulu-nt-callouts .callout[data-callout='warning'],
+.ulu-nt-callouts .callout[data-callout='info'],
+.ulu-nt-callouts .callout[data-callout='example'],
+.ulu-nt-callouts .callout[data-callout='note'],
+.ulu-nt-callouts .callout[data-callout='tip'],
+.ulu-nt-callouts .callout[data-callout='success'],
+.ulu-nt-callouts .callout[data-callout='question'],
+.ulu-nt-callouts .callout[data-callout='failure'],
+.ulu-nt-callouts .callout[data-callout='danger'],
+.ulu-nt-callouts .callout[data-callout='bug'],
+.ulu-nt-callouts .callout[data-callout='quote'] {
+  color: var(--color-callout-text);
+}
+
+.ulu-nt-callouts .callout[data-callout='info'],
+.ulu-nt-callouts .callout[data-callout='todo'] {
+  border: 1px solid var(--color-callout-border-blue) !important;
+  background: var(--color-callout-blue) !important;
+}
+
+.ulu-nt-callouts .callout[data-callout='abstract'],
+.ulu-nt-callouts .callout[data-callout='summary'],
+.ulu-nt-callouts .callout[data-callout='tldr'] {
+  border: 1px solid var(--color-callout-border-teal);
+  background: var(--color-callout-teal);
+}
+
+.ulu-nt-callouts .callout[data-callout='warning'],
+.ulu-nt-callouts .callout[data-callout='caution'],
+.ulu-nt-callouts .callout[data-callout='danger'] {
+  border: 1px solid var(--color-callout-border-orange);
+  background: var(--color-callout-orange);
+}
+
+.ulu-nt-callouts .callout[data-callout='example'] {
+  border: 1px solid var(--color-callout-border-purple);
+  background: var(--color-callout-purple);
+}
+
+.ulu-nt-callouts .callout[data-callout='note'] {
+  border: 1px solid var(--color-callout-border-blue);
+  background: var(--color-callout-blue);
+}
+
+.ulu-nt-callouts .callout[data-callout='tip'],
+.ulu-nt-callouts .callout[data-callout='hint'],
+.ulu-nt-callouts .callout[data-callout='important'] {
+  border: 1px solid var(--color-callout-border-teal);
+  background: var(--color-callout-teal);
+}
+
+.ulu-nt-callouts .callout[data-callout='question'],
+.ulu-nt-callouts .callout[data-callout='help'],
+.ulu-nt-callouts .callout[data-callout='faq'] {
+  border: 1px solid var(--color-callout-border-yellow);
+  background: var(--color-callout-yellow);
+}
+
+.ulu-nt-callouts .callout[data-callout='danger'],
+.ulu-nt-callouts .callout[data-callout='error'] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.ulu-nt-callouts .callout[data-callout='failure'],
+.ulu-nt-callouts .callout[data-callout='fail'],
+.ulu-nt-callouts .callout[data-callout='missing'] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.ulu-nt-callouts .callout[data-callout='bug'] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.ulu-nt-callouts .callout[data-callout='quote'],
+.ulu-nt-callouts .callout[data-callout='cite'] {
+  border: 1px solid var(--color-callout-border-grey);
+  background: var(--color-callout-grey);
+}
+
+.ulu-nt-callouts .callout[data-callout='success'],
+.ulu-nt-callouts .callout[data-callout='check'],
+.ulu-nt-callouts .callout[data-callout='done'] {
+  border: 1px solid var(--color-callout-border-green);
+  background: var(--color-callout-green);
 }

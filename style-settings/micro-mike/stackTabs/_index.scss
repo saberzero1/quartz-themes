@@ -1,0 +1,174 @@
+body:not(.disableMiniMode)
+  .workspace
+  .mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  margin-right: 0px;
+}
+html .mod-windows .mod-root,
+html .mod-linux .mod-root {
+  --frame-right-space: 0px;
+}
+.workspace:has(.mod-right-split.is-sidedock-collapsed)
+  .workspace-tab-container
+  .workspace-leaf
+  .view-header {
+  --frame-right-space: var(--rightFrameSetTo);
+  margin-right: var(--frame-right-space);
+}
+.workspace .mod-root .workspace-tabs {
+  flex-direction: row;
+}
+.workspace .mod-root .workspace-tabs .workspace-tab-header-spacer {
+  flex-grow: 0;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1) {
+  height: 100%;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  padding-right: 0px;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-new-tab {
+  margin-left: 0px;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-new-tab
+  .clickable-icon {
+  width: 100%;
+  height: var(--editorTabHeightStack);
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-container-inner {
+  --animation-dur: 0ms !important;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  flex-basis: 0px;
+  height: 0px;
+  max-height: var(--editorTabHeightStack);
+  max-width: var(--editorStackWidth);
+  flex-grow: 1;
+  min-width: 0px;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner {
+  flex-grow: 1;
+  height: 100%;
+}
+.workspace
+  .mod-root
+  .workspace-tabs
+  .workspace-tab-header-container:nth-of-type(1)
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-title {
+  margin-left: 5%;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 40px;
+  flex-shrink: 1;
+}
+.disableXButtons
+  .workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-close-button {
+  display: none !important;
+}
+.enableNewIcons .workspace-tab-header-new-tab .clickable-icon {
+  background-size: calc(var(--editorTabHeightStack) * 0.8);
+}
+body:not(.inherit):not(.oldAndroid):not(.dtm08):not(.factorio)
+  .mod-root
+  .workspace-tab-header-container-inner {
+  background-color: var(--bottom);
+}
+body:not(.disableBevels):not(.dtm08):not(.factorio)
+  .mod-root
+  .workspace-tab-header-inner-close-button {
+  box-shadow: var(--bevelStyleButton);
+}
+.dtm08
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  border: solid 1px #000;
+  background: linear-gradient(
+    var(--d8d7),
+    var(--d8d9) 50%,
+    var(--d8dA) 50%,
+    var(--d8d9)
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover {
+  background: linear-gradient(
+    var(--d8d6),
+    var(--d8d8) 50%,
+    var(--d8d9) 50%,
+    var(--d8d8)
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .is-active.workspace-tab-header {
+  background: linear-gradient(
+    var(--d8d5),
+    var(--d8d7) 50%,
+    var(--d8d8) 50%,
+    var(--d8d7)
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1333333333),
+    0 1px rgba(255, 255, 255, 0.0666666667);
+}
+.dtm08
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:not(:last-of-type) {
+  border-bottom: 0px;
+}

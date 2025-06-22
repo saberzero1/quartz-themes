@@ -457,7 +457,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h1 h1:not(:hover)::before,
 .headings-indicator-h1 .HyperMD-header-1::before {
   position: relative;
-  content: "h1";
+  content: 'h1';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -468,7 +468,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h2 h2:not(:hover)::before,
 .headings-indicator-h2 .HyperMD-header-2::before {
   position: relative;
-  content: "h2";
+  content: 'h2';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -479,7 +479,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h3 h3:not(:hover)::before,
 .headings-indicator-h3 .HyperMD-header-3::before {
   position: relative;
-  content: "h3";
+  content: 'h3';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -490,7 +490,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h4 h4:not(:hover)::before,
 .headings-indicator-h4 .HyperMD-header-4::before {
   position: relative;
-  content: "h4";
+  content: 'h4';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -501,7 +501,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h5 h5:not(:hover)::before,
 .headings-indicator-h5 .HyperMD-header-5::before {
   position: relative;
-  content: "h5";
+  content: 'h5';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -512,7 +512,7 @@ body.flexcyon-h6-underline-enabled h6 {
 .headings-indicator-h6 h6:not(:hover)::before,
 .headings-indicator-h6 .HyperMD-header-6::before {
   position: relative;
-  content: "h6";
+  content: 'h6';
   color: var(--text-faint);
   font-size: var(--font-ui-medium);
   padding-right: 8px;
@@ -602,29 +602,29 @@ body.theme-dark {
   --flexcyon-ascii-checkboxes-font-size: 1.2rem;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="!"]
+  li[data-task='!']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="!"]
+  li[data-task='!']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "!";
+  content: '!';
   color: var(--color-red);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -632,29 +632,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task=">"]
+  li[data-task='>']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task=">"]
+  li[data-task='>']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: ">";
+  content: '>';
   color: var(--color-purple);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -662,29 +662,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="i"]
+  li[data-task='i']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="i"]
+  li[data-task='i']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "i";
+  content: 'i';
   color: var(--color-blue);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -692,29 +692,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="?"]
+  li[data-task='?']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="?"]
+  li[data-task='?']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "?";
+  content: '?';
   color: var(--color-green);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -722,29 +722,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="#"]
+  li[data-task='#']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="#"]
+  li[data-task='#']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "#";
+  content: '#';
   color: var(--color-cyan);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -752,29 +752,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="."]
+  li[data-task='.']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="."]
+  li[data-task='.']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: ".";
+  content: '.';
   color: var(--color-orange);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -782,29 +782,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="<"]
+  li[data-task='<']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="<"]
+  li[data-task='<']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "<";
+  content: '<';
   color: var(--color-yellow);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -812,29 +812,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="$"]
+  li[data-task='$']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="$"]
+  li[data-task='$']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "$";
+  content: '$';
   color: var(--text-accent);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -842,29 +842,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="*"]
+  li[data-task='*']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="*"]
+  li[data-task='*']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "*";
+  content: '*';
   color: var(--color-red);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -902,29 +902,29 @@ body.flexcyon-ascii-checkboxes-enabled
   mask-image: none;
   top: -0.325em;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="@"]
+  li[data-task='@']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="@"]
+  li[data-task='@']
   > p
   > input:checked::after {
   background-color: transparent;
-  content: "@";
+  content: '@';
   color: var(--color-blue);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -953,7 +953,7 @@ body.flexcyon-ascii-checkboxes-enabled
   li[data-task='"']
   > p
   > input:checked::after {
-  content: "“";
+  content: '“';
   color: var(--color-green);
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
   text-align: center;
@@ -967,13 +967,13 @@ body.flexcyon-ascii-checkboxes-enabled
   li[data-task="'"]
   > p
   > input:checked::after {
-  content: "‘";
+  content: '‘';
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="i"]
+  li[data-task='i']
   > p
   > input:checked::after {
   border: 1.5px solid var(--color-blue);
@@ -983,66 +983,66 @@ body.flexcyon-ascii-checkboxes-enabled
   margin-inline-start: -1.5px;
   top: -0.1rem;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="<"]
+  li[data-task='<']
   > p
   > input:checked::after,
-body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task=">"]
+  li[data-task='>']
   > p
   > input:checked::after {
   transform: scaleY(1.1);
   top: -0.4rem;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="."]
+  li[data-task='.']
   > p
   > input:checked::after {
-  content: "...";
+  content: '...';
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.2rem);
   letter-spacing: -0.5px;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="*"]
+  li[data-task='*']
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.75rem);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="$"]
+  li[data-task='$']
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="@"]
+  li[data-task='@']
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
   top: -0.45rem;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="l"]:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task='l']:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > p > input:checked {
   background-color: transparent;
   font-weight: 900;
 }
-body.flexcyon-ascii-checkboxes-enabled input[data-task="l"]:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task='l']:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task="l"]
+  li[data-task='l']
   > p
   > input:checked:hover {
   filter: brightness(1.25);
@@ -1094,7 +1094,7 @@ body:where(.theme-dark) {
   );
 }
 
-body:is(.theme-dark) h3[data-heading*="find section #"] a.tag {
+body:is(.theme-dark) h3[data-heading*='find section #'] a.tag {
   all: unset;
 }
 
@@ -1122,7 +1122,7 @@ body:is(.theme-dark) {
 }
 
 .editor-grid,
-body.flexcyon-editor-grid .view-content [class*="markdown-"] {
+body.flexcyon-editor-grid .view-content [class*='markdown-'] {
   background-image:
     repeating-linear-gradient(
       to right,
@@ -1139,12 +1139,12 @@ body.flexcyon-editor-grid .view-content [class*="markdown-"] {
     );
 }
 .editor-grid *,
-body.flexcyon-editor-grid .view-content [class*="markdown-"] * {
+body.flexcyon-editor-grid .view-content [class*='markdown-'] * {
   background-image: none;
 }
 
 .editor-dots,
-body.flexcyon-editor-dots .view-content [class*="markdown-"] {
+body.flexcyon-editor-dots .view-content [class*='markdown-'] {
   background-image: radial-gradient(
     var(--color-base-00) var(--flexcyon-editor-dot-size),
     transparent 1px
@@ -1154,7 +1154,7 @@ body.flexcyon-editor-dots .view-content [class*="markdown-"] {
     var(--flexcyon-editor-bg-width);
 }
 .editor-dots *,
-body.flexcyon-editor-dots .view-content [class*="markdown-"] * {
+body.flexcyon-editor-dots .view-content [class*='markdown-'] * {
   background-image: none;
 }
 
@@ -1216,7 +1216,7 @@ body.flexcyon-settings-smiley-icons-enabled
 body.flexcyon-settings-smiley-icons-enabled
   div.setting-item-control
   div.checkbox-container::after {
-  content: ":(";
+  content: ':(';
   transform: translateY(-0.5px);
   width: fit-content;
   height: fit-content;
@@ -1228,7 +1228,7 @@ body.flexcyon-settings-smiley-icons-enabled
 body.flexcyon-settings-smiley-icons-enabled
   div.setting-item-control
   div.checkbox-container.is-enabled::after {
-  content: ":)";
+  content: ':)';
   color: var(--color-green);
 }
 body.flexcyon-settings-smiley-icons-enabled
@@ -1291,7 +1291,7 @@ body:where(.theme-dark) {
   --icon-color-focused: var(--interactive-accent);
   --clickable-icon-radius: 0;
 }
-body:where(.theme-dark) [aria-label^="Collapse results"] {
+body:where(.theme-dark) [aria-label^='Collapse results'] {
   letter-spacing: var(--less-letter-spacing);
 }
 body:where(.theme-dark) span.flair.mod-pop {
@@ -1348,31 +1348,31 @@ body.flexcyon-settings-comm-item-enabled .community-modal-info-version {
   );
 }
 
-body.flexcyon-settings-coloured-icons [aria-label^="Uninstall"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Uninstall'] {
   color: rgba(var(--color-red-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Options"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Options'] {
   color: rgba(var(--color-blue-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Hotkeys"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Hotkeys'] {
   color: rgba(var(--color-green-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Donate to support"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Donate to support'] {
   color: rgba(var(--color-pink-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Reload plugins"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Reload plugins'] {
   color: rgba(var(--color-cyan-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Open plugins folder"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Open plugins folder'] {
   color: rgba(var(--color-green-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Reload snippets"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Reload snippets'] {
   color: rgba(var(--color-cyan-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Open snippets folder"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Open snippets folder'] {
   color: rgba(var(--color-green-rgb), 0.9);
 }
-body.flexcyon-settings-coloured-icons [aria-label^="Restore default"] {
+body.flexcyon-settings-coloured-icons [aria-label^='Restore default'] {
   color: rgba(var(--color-purple-rgb), 0.9);
 }
 
@@ -1721,7 +1721,7 @@ body.flexcyon-metadata-display-editing-disabled {
 body:is(.theme-dark)
   :is(
     textarea,
-    input:not([type="checkbox"]),
+    input:not([type='checkbox']),
     input.metadata-input-text,
     select
   ):is(:focus, :active, :focus-visible),
@@ -1753,7 +1753,7 @@ body:where(.theme-dark) .callout {
   margin: var(--flexcyon-callout-vertical-margin) 0;
 }
 
-div.callout[data-callout-metadata*="tategaki"] div.callout-content {
+div.callout[data-callout-metadata*='tategaki'] div.callout-content {
   writing-mode: vertical-rl;
   overflow: scroll;
   max-width: 95%;
@@ -1765,14 +1765,14 @@ div.callout[data-callout-metadata*="tategaki"] div.callout-content {
   max-height: 85vh;
   text-indent: 1rem;
 }
-div.callout[data-callout-metadata*="tategaki"]
+div.callout[data-callout-metadata*='tategaki']
   div.callout-content
   :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 0;
   line-height: 1.667;
 }
 
-div.callout[data-callout-metadata*="vertical-ltr"] div.callout-content {
+div.callout[data-callout-metadata*='vertical-ltr'] div.callout-content {
   writing-mode: vertical-lr;
   overflow: scroll;
   max-width: 95%;
@@ -1784,1080 +1784,1080 @@ div.callout[data-callout-metadata*="vertical-ltr"] div.callout-content {
   max-height: 85vh;
   text-indent: 1rem;
 }
-div.callout[data-callout-metadata*="vertical-ltr"]
+div.callout[data-callout-metadata*='vertical-ltr']
   div.callout-content
   :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 0;
   line-height: 1.667;
 }
 
-div.callout[data-callout-metadata*="empty"] .callout-icon,
-div.callout[data-callout*="empty"] .callout-icon,
-div.callout[data-callout-metadata*="tategaki"] .callout-icon,
-div.callout[data-callout-metadata*="vertical-ltr"] .callout-icon,
-div.callout[data-callout-metadata*="no-icon"] .callout-icon {
+div.callout[data-callout-metadata*='empty'] .callout-icon,
+div.callout[data-callout*='empty'] .callout-icon,
+div.callout[data-callout-metadata*='tategaki'] .callout-icon,
+div.callout[data-callout-metadata*='vertical-ltr'] .callout-icon,
+div.callout[data-callout-metadata*='no-icon'] .callout-icon {
   display: none;
 }
 
-div.callout[data-callout-metadata*="tategaki"] .callout-title-inner,
-div.callout[data-callout-metadata*="empty"] .callout-title-inner,
-div.callout[data-callout*="empty"] .callout-title-inner,
-div.callout[data-callout-metadata*="vertical-ltr"] .callout-title-inner,
-div.callout[data-callout-metadata*="no-title"] .callout-title-inner {
+div.callout[data-callout-metadata*='tategaki'] .callout-title-inner,
+div.callout[data-callout-metadata*='empty'] .callout-title-inner,
+div.callout[data-callout*='empty'] .callout-title-inner,
+div.callout[data-callout-metadata*='vertical-ltr'] .callout-title-inner,
+div.callout[data-callout-metadata*='no-title'] .callout-title-inner {
   display: none;
 }
 
-div.callout[data-callout-metadata*="bg-transparent"],
-div.callout[data-callout-metadata*="transparent-bg"] {
+div.callout[data-callout-metadata*='bg-transparent'],
+div.callout[data-callout-metadata*='transparent-bg'] {
   background-color: transparent;
 }
 
-div.callout[data-callout-metadata*="all-yellow"],
-div.callout[data-callout-metadata*="bg-yellow"] {
+div.callout[data-callout-metadata*='all-yellow'],
+div.callout[data-callout-metadata*='bg-yellow'] {
   background-color: rgba(
     var(--color-yellow-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow'] .callout-icon .svg-icon {
   color: var(--color-yellow);
 }
 
-div.callout[data-callout-metadata*="all-blue"],
-div.callout[data-callout-metadata*="bg-blue"] {
+div.callout[data-callout-metadata*='all-blue'],
+div.callout[data-callout-metadata*='bg-blue'] {
   background-color: rgba(
     var(--color-blue-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-blue"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-blue'] .callout-icon .svg-icon {
   color: var(--color-blue);
 }
 
-div.callout[data-callout-metadata*="all-purple"],
-div.callout[data-callout-metadata*="bg-purple"] {
+div.callout[data-callout-metadata*='all-purple'],
+div.callout[data-callout-metadata*='bg-purple'] {
   background-color: rgba(
     var(--color-purple-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-purple"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-purple'] .callout-icon .svg-icon {
   color: var(--color-purple);
 }
 
-div.callout[data-callout-metadata*="all-red"],
-div.callout[data-callout-metadata*="bg-red"] {
+div.callout[data-callout-metadata*='all-red'],
+div.callout[data-callout-metadata*='bg-red'] {
   background-color: rgba(
     var(--color-red-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-red"] .callout-title,
-div.callout[data-callout-metadata*="all-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red"] .callout-title,
-div.callout[data-callout-metadata*="title-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red'] .callout-title,
+div.callout[data-callout-metadata*='all-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red'] .callout-title,
+div.callout[data-callout-metadata*='title-red'] .callout-icon .svg-icon {
   color: var(--color-red);
 }
 
-div.callout[data-callout-metadata*="all-cyan"],
-div.callout[data-callout-metadata*="bg-cyan"] {
+div.callout[data-callout-metadata*='all-cyan'],
+div.callout[data-callout-metadata*='bg-cyan'] {
   background-color: rgba(
     var(--color-cyan-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan'] .callout-icon .svg-icon {
   color: var(--color-cyan);
 }
 
-div.callout[data-callout-metadata*="all-pink"],
-div.callout[data-callout-metadata*="bg-pink"] {
+div.callout[data-callout-metadata*='all-pink'],
+div.callout[data-callout-metadata*='bg-pink'] {
   background-color: rgba(
     var(--color-pink-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-pink"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-pink'] .callout-icon .svg-icon {
   color: var(--color-pink);
 }
 
-div.callout[data-callout-metadata*="all-green"],
-div.callout[data-callout-metadata*="bg-green"] {
+div.callout[data-callout-metadata*='all-green'],
+div.callout[data-callout-metadata*='bg-green'] {
   background-color: rgba(
     var(--color-green-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-green"] .callout-title,
-div.callout[data-callout-metadata*="all-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green"] .callout-title,
-div.callout[data-callout-metadata*="title-green"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-green'] .callout-title,
+div.callout[data-callout-metadata*='all-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green'] .callout-title,
+div.callout[data-callout-metadata*='title-green'] .callout-icon .svg-icon {
   color: var(--color-green);
 }
 
-div.callout[data-callout-metadata*="all-orange"],
-div.callout[data-callout-metadata*="bg-orange"] {
+div.callout[data-callout-metadata*='all-orange'],
+div.callout[data-callout-metadata*='bg-orange'] {
   background-color: rgba(
     var(--color-orange-rgb),
     var(--flexcyon-callout-bg-opacity)
   );
 }
 
-div.callout[data-callout-metadata*="all-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-orange"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-orange'] .callout-icon .svg-icon {
   color: var(--color-orange);
 }
 
-div.callout[data-callout-metadata*="center-all"] div.callout-title,
-div.callout[data-callout-metadata*="center-title"] div.callout-title {
+div.callout[data-callout-metadata*='center-all'] div.callout-title,
+div.callout[data-callout-metadata*='center-title'] div.callout-title {
   justify-content: center;
 }
 
-div.callout[data-callout-metadata*="center-all"] div.callout-content,
-div.callout[data-callout-metadata*="center-content"] div.callout-content {
+div.callout[data-callout-metadata*='center-all'] div.callout-content,
+div.callout[data-callout-metadata*='center-content'] div.callout-content {
   text-align: center;
 }
 
-div.callout[data-callout-metadata*="rtl-all"] div.callout-title *,
-div.callout[data-callout-metadata*="rtl-all"] div.callout-title,
-div.callout[data-callout-metadata*="rtl-title"] div.callout-title *,
-div.callout[data-callout-metadata*="rtl-title"] div.callout-title {
+div.callout[data-callout-metadata*='rtl-all'] div.callout-title *,
+div.callout[data-callout-metadata*='rtl-all'] div.callout-title,
+div.callout[data-callout-metadata*='rtl-title'] div.callout-title *,
+div.callout[data-callout-metadata*='rtl-title'] div.callout-title {
   direction: rtl !important;
   unicode-bidi: bidi-override;
 }
 
-div.callout[data-callout-metadata*="rtl-all"] div.callout-content *,
-div.callout[data-callout-metadata*="rtl-content"] div.callout-content * {
+div.callout[data-callout-metadata*='rtl-all'] div.callout-content *,
+div.callout[data-callout-metadata*='rtl-content'] div.callout-content * {
   direction: rtl !important;
   unicode-bidi: bidi-override;
 }
-div.callout[data-callout-metadata*="rtl-all"]
+div.callout[data-callout-metadata*='rtl-all']
   div.callout-content
-  code[class*="language-"],
-div.callout[data-callout-metadata*="rtl-all"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='rtl-all']
   div.callout-content
-  pre[class*="language-"],
-div.callout[data-callout-metadata*="rtl-content"]
+  pre[class*='language-'],
+div.callout[data-callout-metadata*='rtl-content']
   div.callout-content
-  code[class*="language-"],
-div.callout[data-callout-metadata*="rtl-content"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='rtl-content']
   div.callout-content
-  pre[class*="language-"] {
+  pre[class*='language-'] {
   text-align: right;
 }
 
-div.callout[data-callout-metadata*="ltr-all"] div.callout-title *,
-div.callout[data-callout-metadata*="ltr-all"] div.callout-title,
-div.callout[data-callout-metadata*="ltr-title"] div.callout-title *,
-div.callout[data-callout-metadata*="ltr-title"] div.callout-title {
+div.callout[data-callout-metadata*='ltr-all'] div.callout-title *,
+div.callout[data-callout-metadata*='ltr-all'] div.callout-title,
+div.callout[data-callout-metadata*='ltr-title'] div.callout-title *,
+div.callout[data-callout-metadata*='ltr-title'] div.callout-title {
   direction: ltr !important;
   unicode-bidi: bidi-override;
 }
 
-div.callout[data-callout-metadata*="ltr-all"] div.callout-content * *,
-div.callout[data-callout-metadata*="ltr-content"] div.callout-content * * {
+div.callout[data-callout-metadata*='ltr-all'] div.callout-content * *,
+div.callout[data-callout-metadata*='ltr-content'] div.callout-content * * {
   direction: rtl !important;
   unicode-bidi: bidi-override;
 }
-div.callout[data-callout-metadata*="ltr-all"]
+div.callout[data-callout-metadata*='ltr-all']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="ltr-all"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='ltr-all']
   div.callout-content
   *
-  pre[class*="language-"],
-div.callout[data-callout-metadata*="ltr-content"]
+  pre[class*='language-'],
+div.callout[data-callout-metadata*='ltr-content']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="ltr-content"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='ltr-content']
   div.callout-content
   *
-  pre[class*="language-"] {
+  pre[class*='language-'] {
   text-align: left;
 }
 
-div.callout[data-callout-metadata*="uppercase-all"]
+div.callout[data-callout-metadata*='uppercase-all']
   div.callout-title
   .callout-title-inner,
-div.callout[data-callout-metadata*="uppercase-title"]
+div.callout[data-callout-metadata*='uppercase-title']
   div.callout-title
   .callout-title-inner {
   text-transform: uppercase;
 }
 
-div.callout[data-callout-metadata*="uppercase-all"] div.callout-content *,
-div.callout[data-callout-metadata*="uppercase-content"] div.callout-content * {
+div.callout[data-callout-metadata*='uppercase-all'] div.callout-content *,
+div.callout[data-callout-metadata*='uppercase-content'] div.callout-content * {
   text-transform: uppercase;
 }
-div.callout[data-callout-metadata*="uppercase-all"] div.callout-content * *,
-div.callout[data-callout-metadata*="uppercase-content"]
+div.callout[data-callout-metadata*='uppercase-all'] div.callout-content * *,
+div.callout[data-callout-metadata*='uppercase-content']
   div.callout-content
   *
   * {
   text-transform: uppercase;
 }
-div.callout[data-callout-metadata*="uppercase-all"]
+div.callout[data-callout-metadata*='uppercase-all']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="uppercase-all"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='uppercase-all']
   div.callout-content
   *
-  pre[class*="language-"],
-div.callout[data-callout-metadata*="uppercase-content"]
+  pre[class*='language-'],
+div.callout[data-callout-metadata*='uppercase-content']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="uppercase-content"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='uppercase-content']
   div.callout-content
   *
-  pre[class*="language-"] {
+  pre[class*='language-'] {
   text-transform: uppercase;
 }
 
-div.callout[data-callout-metadata*="lowercase-all"]
+div.callout[data-callout-metadata*='lowercase-all']
   div.callout-title
   .callout-title-inner,
-div.callout[data-callout-metadata*="lowercase-title"]
+div.callout[data-callout-metadata*='lowercase-title']
   div.callout-title
   .callout-title-inner {
   text-transform: lowercase;
 }
 
-div.callout[data-callout-metadata*="lowercase-all"] div.callout-content *,
-div.callout[data-callout-metadata*="lowercase-content"] div.callout-content * {
+div.callout[data-callout-metadata*='lowercase-all'] div.callout-content *,
+div.callout[data-callout-metadata*='lowercase-content'] div.callout-content * {
   text-transform: lowercase;
 }
-div.callout[data-callout-metadata*="lowercase-all"] div.callout-content * *,
-div.callout[data-callout-metadata*="lowercase-content"]
+div.callout[data-callout-metadata*='lowercase-all'] div.callout-content * *,
+div.callout[data-callout-metadata*='lowercase-content']
   div.callout-content
   *
   * {
   text-transform: lowercase;
 }
-div.callout[data-callout-metadata*="lowercase-all"]
+div.callout[data-callout-metadata*='lowercase-all']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="lowercase-all"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='lowercase-all']
   div.callout-content
   *
-  pre[class*="language-"],
-div.callout[data-callout-metadata*="lowercase-content"]
+  pre[class*='language-'],
+div.callout[data-callout-metadata*='lowercase-content']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="lowercase-content"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='lowercase-content']
   div.callout-content
   *
-  pre[class*="language-"] {
+  pre[class*='language-'] {
   text-transform: lowercase;
 }
 
-div.callout[data-callout-metadata*="caps-all"]
+div.callout[data-callout-metadata*='caps-all']
   div.callout-title
   .callout-title-inner,
-div.callout[data-callout-metadata*="caps-title"]
+div.callout[data-callout-metadata*='caps-title']
   div.callout-title
   .callout-title-inner {
   text-transform: capitalize;
 }
 
-div.callout[data-callout-metadata*="caps-all"] div.callout-content *,
-div.callout[data-callout-metadata*="caps-content"] div.callout-content * {
+div.callout[data-callout-metadata*='caps-all'] div.callout-content *,
+div.callout[data-callout-metadata*='caps-content'] div.callout-content * {
   text-transform: capitalize;
 }
-div.callout[data-callout-metadata*="caps-all"] div.callout-content * *,
-div.callout[data-callout-metadata*="caps-content"] div.callout-content * * {
+div.callout[data-callout-metadata*='caps-all'] div.callout-content * *,
+div.callout[data-callout-metadata*='caps-content'] div.callout-content * * {
   text-transform: capitalize;
 }
-div.callout[data-callout-metadata*="caps-all"]
+div.callout[data-callout-metadata*='caps-all']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="caps-all"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='caps-all']
   div.callout-content
   *
-  pre[class*="language-"],
-div.callout[data-callout-metadata*="caps-content"]
+  pre[class*='language-'],
+div.callout[data-callout-metadata*='caps-content']
   div.callout-content
   *
-  code[class*="language-"],
-div.callout[data-callout-metadata*="caps-content"]
+  code[class*='language-'],
+div.callout[data-callout-metadata*='caps-content']
   div.callout-content
   *
-  pre[class*="language-"] {
+  pre[class*='language-'] {
   text-transform: capitalize;
 }
 
-div.callout[data-callout-metadata*="all-red-blue"],
-div.callout[data-callout-metadata*="bg-red-blue"] {
+div.callout[data-callout-metadata*='all-red-blue'],
+div.callout[data-callout-metadata*='bg-red-blue'] {
   background-color: var(--color-red-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-red-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-red-blue"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-red-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-red-blue'] .callout-icon .svg-icon {
   color: var(--color-red-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-red"],
-div.callout[data-callout-metadata*="bg-blue-red"] {
+div.callout[data-callout-metadata*='all-blue-red'],
+div.callout[data-callout-metadata*='bg-blue-red'] {
   background-color: var(--color-red-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-red"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-red"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-blue-red'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-red'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-red'] .callout-icon .svg-icon {
   color: var(--color-red-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-orange"],
-div.callout[data-callout-metadata*="bg-red-orange"] {
+div.callout[data-callout-metadata*='all-red-orange'],
+div.callout[data-callout-metadata*='bg-red-orange'] {
   background-color: var(--color-red-orange-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-red-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-red-orange"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-red-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-red-orange'] .callout-icon .svg-icon {
   color: var(--color-red-orange-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-red"],
-div.callout[data-callout-metadata*="bg-orange-red"] {
+div.callout[data-callout-metadata*='all-orange-red'],
+div.callout[data-callout-metadata*='bg-orange-red'] {
   background-color: var(--color-red-orange-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-red"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-red"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-orange-red'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-red'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-red'] .callout-icon .svg-icon {
   color: var(--color-red-orange-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-yellow"],
-div.callout[data-callout-metadata*="bg-red-yellow"] {
+div.callout[data-callout-metadata*='all-red-yellow'],
+div.callout[data-callout-metadata*='bg-red-yellow'] {
   background-color: var(--color-red-yellow-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-red-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-red-yellow"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-red-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-red-yellow'] .callout-icon .svg-icon {
   color: var(--color-red-yellow-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-red"],
-div.callout[data-callout-metadata*="bg-yellow-red"] {
+div.callout[data-callout-metadata*='all-yellow-red'],
+div.callout[data-callout-metadata*='bg-yellow-red'] {
   background-color: var(--color-red-yellow-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-red"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-red"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-yellow-red'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-red'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-red'] .callout-icon .svg-icon {
   color: var(--color-red-yellow-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-green"],
-div.callout[data-callout-metadata*="bg-red-green"] {
+div.callout[data-callout-metadata*='all-red-green'],
+div.callout[data-callout-metadata*='bg-red-green'] {
   background-color: var(--color-red-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-green"] .callout-title,
-div.callout[data-callout-metadata*="all-red-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-green"] .callout-title,
-div.callout[data-callout-metadata*="title-red-green"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-green'] .callout-title,
+div.callout[data-callout-metadata*='all-red-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-green'] .callout-title,
+div.callout[data-callout-metadata*='title-red-green'] .callout-icon .svg-icon {
   color: var(--color-red-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-red"],
-div.callout[data-callout-metadata*="bg-green-red"] {
+div.callout[data-callout-metadata*='all-green-red'],
+div.callout[data-callout-metadata*='bg-green-red'] {
   background-color: var(--color-red-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-red"] .callout-title,
-div.callout[data-callout-metadata*="all-green-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-red"] .callout-title,
-div.callout[data-callout-metadata*="title-green-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-green-red'] .callout-title,
+div.callout[data-callout-metadata*='all-green-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-red'] .callout-title,
+div.callout[data-callout-metadata*='title-green-red'] .callout-icon .svg-icon {
   color: var(--color-red-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-cyan"],
-div.callout[data-callout-metadata*="bg-red-cyan"] {
+div.callout[data-callout-metadata*='all-red-cyan'],
+div.callout[data-callout-metadata*='bg-red-cyan'] {
   background-color: var(--color-red-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-red-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-red-cyan"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-red-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-red-cyan'] .callout-icon .svg-icon {
   color: var(--color-red-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-red"],
-div.callout[data-callout-metadata*="bg-cyan-red"] {
+div.callout[data-callout-metadata*='all-cyan-red'],
+div.callout[data-callout-metadata*='bg-cyan-red'] {
   background-color: var(--color-red-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-red"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-red"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-cyan-red'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-red'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-red'] .callout-icon .svg-icon {
   color: var(--color-red-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-purple"],
-div.callout[data-callout-metadata*="bg-red-purple"] {
+div.callout[data-callout-metadata*='all-red-purple'],
+div.callout[data-callout-metadata*='bg-red-purple'] {
   background-color: var(--color-red-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-red-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-red-purple"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-red-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-red-purple'] .callout-icon .svg-icon {
   color: var(--color-red-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-red"],
-div.callout[data-callout-metadata*="bg-purple-red"] {
+div.callout[data-callout-metadata*='all-purple-red'],
+div.callout[data-callout-metadata*='bg-purple-red'] {
   background-color: var(--color-red-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-red"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-red"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-purple-red'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-red'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-red'] .callout-icon .svg-icon {
   color: var(--color-red-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-red-pink"],
-div.callout[data-callout-metadata*="bg-red-pink"] {
+div.callout[data-callout-metadata*='all-red-pink'],
+div.callout[data-callout-metadata*='bg-red-pink'] {
   background-color: var(--color-red-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-red-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-red-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-red-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-red-pink"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-red-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-red-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-red-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-red-pink'] .callout-icon .svg-icon {
   color: var(--color-red-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-red"],
-div.callout[data-callout-metadata*="bg-pink-red"] {
+div.callout[data-callout-metadata*='all-pink-red'],
+div.callout[data-callout-metadata*='bg-pink-red'] {
   background-color: var(--color-red-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-red"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-red"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-red"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-red"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-pink-red'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-red'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-red'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-red'] .callout-icon .svg-icon {
   color: var(--color-red-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-yellow"],
-div.callout[data-callout-metadata*="bg-orange-yellow"] {
+div.callout[data-callout-metadata*='all-orange-yellow'],
+div.callout[data-callout-metadata*='bg-orange-yellow'] {
   background-color: var(--color-orange-yellow-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-yellow"]
+div.callout[data-callout-metadata*='all-orange-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-yellow-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-orange"],
-div.callout[data-callout-metadata*="bg-yellow-orange"] {
+div.callout[data-callout-metadata*='all-yellow-orange'],
+div.callout[data-callout-metadata*='bg-yellow-orange'] {
   background-color: var(--color-orange-yellow-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-orange"]
+div.callout[data-callout-metadata*='all-yellow-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-yellow-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-green"],
-div.callout[data-callout-metadata*="bg-orange-green"] {
+div.callout[data-callout-metadata*='all-orange-green'],
+div.callout[data-callout-metadata*='bg-orange-green'] {
   background-color: var(--color-orange-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-green"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-green"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-green"]
+div.callout[data-callout-metadata*='all-orange-green'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-green'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-green']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-orange"],
-div.callout[data-callout-metadata*="bg-green-orange"] {
+div.callout[data-callout-metadata*='all-green-orange'],
+div.callout[data-callout-metadata*='bg-green-orange'] {
   background-color: var(--color-orange-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-green-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-green-orange"]
+div.callout[data-callout-metadata*='all-green-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-green-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-green-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-cyan"],
-div.callout[data-callout-metadata*="bg-orange-cyan"] {
+div.callout[data-callout-metadata*='all-orange-cyan'],
+div.callout[data-callout-metadata*='bg-orange-cyan'] {
   background-color: var(--color-orange-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-cyan"]
+div.callout[data-callout-metadata*='all-orange-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-cyan']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-orange"],
-div.callout[data-callout-metadata*="bg-cyan-orange"] {
+div.callout[data-callout-metadata*='all-cyan-orange'],
+div.callout[data-callout-metadata*='bg-cyan-orange'] {
   background-color: var(--color-orange-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-orange"]
+div.callout[data-callout-metadata*='all-cyan-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-blue"],
-div.callout[data-callout-metadata*="bg-orange-blue"] {
+div.callout[data-callout-metadata*='all-orange-blue'],
+div.callout[data-callout-metadata*='bg-orange-blue'] {
   background-color: var(--color-orange-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-blue"]
+div.callout[data-callout-metadata*='all-orange-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-blue']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-orange"],
-div.callout[data-callout-metadata*="bg-blue-orange"] {
+div.callout[data-callout-metadata*='all-blue-orange'],
+div.callout[data-callout-metadata*='bg-blue-orange'] {
   background-color: var(--color-orange-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-orange"]
+div.callout[data-callout-metadata*='all-blue-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-purple"],
-div.callout[data-callout-metadata*="bg-orange-purple"] {
+div.callout[data-callout-metadata*='all-orange-purple'],
+div.callout[data-callout-metadata*='bg-orange-purple'] {
   background-color: var(--color-orange-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-purple"]
+div.callout[data-callout-metadata*='all-orange-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-orange"],
-div.callout[data-callout-metadata*="bg-purple-orange"] {
+div.callout[data-callout-metadata*='all-purple-orange'],
+div.callout[data-callout-metadata*='bg-purple-orange'] {
   background-color: var(--color-orange-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-orange"]
+div.callout[data-callout-metadata*='all-purple-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-orange-pink"],
-div.callout[data-callout-metadata*="bg-orange-pink"] {
+div.callout[data-callout-metadata*='all-orange-pink'],
+div.callout[data-callout-metadata*='bg-orange-pink'] {
   background-color: var(--color-orange-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-orange-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-orange-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-orange-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-orange-pink"]
+div.callout[data-callout-metadata*='all-orange-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-orange-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-orange-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-orange-pink']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-orange"],
-div.callout[data-callout-metadata*="bg-pink-orange"] {
+div.callout[data-callout-metadata*='all-pink-orange'],
+div.callout[data-callout-metadata*='bg-pink-orange'] {
   background-color: var(--color-orange-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-orange"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-orange"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-orange"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-orange"]
+div.callout[data-callout-metadata*='all-pink-orange'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-orange'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-orange'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-orange']
   .callout-icon
   .svg-icon {
   color: var(--color-orange-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-green"],
-div.callout[data-callout-metadata*="bg-yellow-green"] {
+div.callout[data-callout-metadata*='all-yellow-green'],
+div.callout[data-callout-metadata*='bg-yellow-green'] {
   background-color: var(--color-yellow-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-green"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-green"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-green"]
+div.callout[data-callout-metadata*='all-yellow-green'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-green'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-green']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-yellow"],
-div.callout[data-callout-metadata*="bg-green-yellow"] {
+div.callout[data-callout-metadata*='all-green-yellow'],
+div.callout[data-callout-metadata*='bg-green-yellow'] {
   background-color: var(--color-yellow-green-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-green-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-green-yellow"]
+div.callout[data-callout-metadata*='all-green-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-green-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-green-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-green-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-cyan"],
-div.callout[data-callout-metadata*="bg-yellow-cyan"] {
+div.callout[data-callout-metadata*='all-yellow-cyan'],
+div.callout[data-callout-metadata*='bg-yellow-cyan'] {
   background-color: var(--color-yellow-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-cyan"]
+div.callout[data-callout-metadata*='all-yellow-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-cyan']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-yellow"],
-div.callout[data-callout-metadata*="bg-cyan-yellow"] {
+div.callout[data-callout-metadata*='all-cyan-yellow'],
+div.callout[data-callout-metadata*='bg-cyan-yellow'] {
   background-color: var(--color-yellow-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-yellow"]
+div.callout[data-callout-metadata*='all-cyan-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-blue"],
-div.callout[data-callout-metadata*="bg-yellow-blue"] {
+div.callout[data-callout-metadata*='all-yellow-blue'],
+div.callout[data-callout-metadata*='bg-yellow-blue'] {
   background-color: var(--color-yellow-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-blue"]
+div.callout[data-callout-metadata*='all-yellow-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-blue']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-yellow"],
-div.callout[data-callout-metadata*="bg-blue-yellow"] {
+div.callout[data-callout-metadata*='all-blue-yellow'],
+div.callout[data-callout-metadata*='bg-blue-yellow'] {
   background-color: var(--color-yellow-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-yellow"]
+div.callout[data-callout-metadata*='all-blue-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-purple"],
-div.callout[data-callout-metadata*="bg-yellow-purple"] {
+div.callout[data-callout-metadata*='all-yellow-purple'],
+div.callout[data-callout-metadata*='bg-yellow-purple'] {
   background-color: var(--color-yellow-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-purple"]
+div.callout[data-callout-metadata*='all-yellow-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-yellow"],
-div.callout[data-callout-metadata*="bg-purple-yellow"] {
+div.callout[data-callout-metadata*='all-purple-yellow'],
+div.callout[data-callout-metadata*='bg-purple-yellow'] {
   background-color: var(--color-yellow-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-yellow"]
+div.callout[data-callout-metadata*='all-purple-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-yellow-pink"],
-div.callout[data-callout-metadata*="bg-yellow-pink"] {
+div.callout[data-callout-metadata*='all-yellow-pink'],
+div.callout[data-callout-metadata*='bg-yellow-pink'] {
   background-color: var(--color-yellow-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-yellow-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-yellow-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-yellow-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-yellow-pink"]
+div.callout[data-callout-metadata*='all-yellow-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-yellow-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-yellow-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-yellow-pink']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-yellow"],
-div.callout[data-callout-metadata*="bg-pink-yellow"] {
+div.callout[data-callout-metadata*='all-pink-yellow'],
+div.callout[data-callout-metadata*='bg-pink-yellow'] {
   background-color: var(--color-yellow-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-yellow"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-yellow"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-yellow"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-yellow"]
+div.callout[data-callout-metadata*='all-pink-yellow'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-yellow'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-yellow'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-yellow']
   .callout-icon
   .svg-icon {
   color: var(--color-yellow-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-cyan"],
-div.callout[data-callout-metadata*="bg-green-cyan"] {
+div.callout[data-callout-metadata*='all-green-cyan'],
+div.callout[data-callout-metadata*='bg-green-cyan'] {
   background-color: var(--color-green-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-green-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-green-cyan"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-green-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-green-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-green-cyan'] .callout-icon .svg-icon {
   color: var(--color-green-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-green"],
-div.callout[data-callout-metadata*="bg-cyan-green"] {
+div.callout[data-callout-metadata*='all-cyan-green'],
+div.callout[data-callout-metadata*='bg-cyan-green'] {
   background-color: var(--color-green-cyan-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-green"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-green"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-green"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-cyan-green'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-green'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-green'] .callout-icon .svg-icon {
   color: var(--color-green-cyan-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-blue"],
-div.callout[data-callout-metadata*="bg-green-blue"] {
+div.callout[data-callout-metadata*='all-green-blue'],
+div.callout[data-callout-metadata*='bg-green-blue'] {
   background-color: var(--color-green-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-green-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-green-blue"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-green-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-green-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-green-blue'] .callout-icon .svg-icon {
   color: var(--color-green-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-green"],
-div.callout[data-callout-metadata*="bg-blue-green"] {
+div.callout[data-callout-metadata*='all-blue-green'],
+div.callout[data-callout-metadata*='bg-blue-green'] {
   background-color: var(--color-green-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-green"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-green"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-green"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-blue-green'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-green'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-green'] .callout-icon .svg-icon {
   color: var(--color-green-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-purple"],
-div.callout[data-callout-metadata*="bg-green-purple"] {
+div.callout[data-callout-metadata*='all-green-purple'],
+div.callout[data-callout-metadata*='bg-green-purple'] {
   background-color: var(--color-green-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-green-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-green-purple"]
+div.callout[data-callout-metadata*='all-green-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-green-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-green-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-green-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-green"],
-div.callout[data-callout-metadata*="bg-purple-green"] {
+div.callout[data-callout-metadata*='all-purple-green'],
+div.callout[data-callout-metadata*='bg-purple-green'] {
   background-color: var(--color-green-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-green"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-green"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-green"]
+div.callout[data-callout-metadata*='all-purple-green'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-green'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-green']
   .callout-icon
   .svg-icon {
   color: var(--color-green-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-green-pink"],
-div.callout[data-callout-metadata*="bg-green-pink"] {
+div.callout[data-callout-metadata*='all-green-pink'],
+div.callout[data-callout-metadata*='bg-green-pink'] {
   background-color: var(--color-green-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-green-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-green-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-green-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-green-pink"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-green-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-green-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-green-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-green-pink'] .callout-icon .svg-icon {
   color: var(--color-green-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-green"],
-div.callout[data-callout-metadata*="bg-pink-green"] {
+div.callout[data-callout-metadata*='all-pink-green'],
+div.callout[data-callout-metadata*='bg-pink-green'] {
   background-color: var(--color-green-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-green"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-green"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-green"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-green"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-pink-green'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-green'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-green'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-green'] .callout-icon .svg-icon {
   color: var(--color-green-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-blue"],
-div.callout[data-callout-metadata*="bg-cyan-blue"] {
+div.callout[data-callout-metadata*='all-cyan-blue'],
+div.callout[data-callout-metadata*='bg-cyan-blue'] {
   background-color: var(--color-cyan-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-blue"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-cyan-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-blue'] .callout-icon .svg-icon {
   color: var(--color-cyan-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-cyan"],
-div.callout[data-callout-metadata*="bg-blue-cyan"] {
+div.callout[data-callout-metadata*='all-blue-cyan'],
+div.callout[data-callout-metadata*='bg-blue-cyan'] {
   background-color: var(--color-cyan-blue-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-cyan"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-blue-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-cyan'] .callout-icon .svg-icon {
   color: var(--color-cyan-blue-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-purple"],
-div.callout[data-callout-metadata*="bg-cyan-purple"] {
+div.callout[data-callout-metadata*='all-cyan-purple'],
+div.callout[data-callout-metadata*='bg-cyan-purple'] {
   background-color: var(--color-cyan-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-purple"]
+div.callout[data-callout-metadata*='all-cyan-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-cyan-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-cyan"],
-div.callout[data-callout-metadata*="bg-purple-cyan"] {
+div.callout[data-callout-metadata*='all-purple-cyan'],
+div.callout[data-callout-metadata*='bg-purple-cyan'] {
   background-color: var(--color-cyan-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-cyan"]
+div.callout[data-callout-metadata*='all-purple-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-cyan']
   .callout-icon
   .svg-icon {
   color: var(--color-cyan-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-cyan-pink"],
-div.callout[data-callout-metadata*="bg-cyan-pink"] {
+div.callout[data-callout-metadata*='all-cyan-pink'],
+div.callout[data-callout-metadata*='bg-cyan-pink'] {
   background-color: var(--color-cyan-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-cyan-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-cyan-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-cyan-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-cyan-pink"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-cyan-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-cyan-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-cyan-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-cyan-pink'] .callout-icon .svg-icon {
   color: var(--color-cyan-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-cyan"],
-div.callout[data-callout-metadata*="bg-pink-cyan"] {
+div.callout[data-callout-metadata*='all-pink-cyan'],
+div.callout[data-callout-metadata*='bg-pink-cyan'] {
   background-color: var(--color-cyan-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-cyan"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-cyan"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-cyan"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-cyan"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-pink-cyan'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-cyan'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-cyan'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-cyan'] .callout-icon .svg-icon {
   color: var(--color-cyan-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-purple"],
-div.callout[data-callout-metadata*="bg-blue-purple"] {
+div.callout[data-callout-metadata*='all-blue-purple'],
+div.callout[data-callout-metadata*='bg-blue-purple'] {
   background-color: var(--color-blue-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-purple"]
+div.callout[data-callout-metadata*='all-blue-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-blue-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-blue"],
-div.callout[data-callout-metadata*="bg-purple-blue"] {
+div.callout[data-callout-metadata*='all-purple-blue'],
+div.callout[data-callout-metadata*='bg-purple-blue'] {
   background-color: var(--color-blue-purple-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-blue"]
+div.callout[data-callout-metadata*='all-purple-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-blue']
   .callout-icon
   .svg-icon {
   color: var(--color-blue-purple-mix);
 }
 
-div.callout[data-callout-metadata*="all-blue-pink"],
-div.callout[data-callout-metadata*="bg-blue-pink"] {
+div.callout[data-callout-metadata*='all-blue-pink'],
+div.callout[data-callout-metadata*='bg-blue-pink'] {
   background-color: var(--color-blue-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-blue-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-blue-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-blue-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-blue-pink"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-blue-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-blue-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-blue-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-blue-pink'] .callout-icon .svg-icon {
   color: var(--color-blue-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-blue"],
-div.callout[data-callout-metadata*="bg-pink-blue"] {
+div.callout[data-callout-metadata*='all-pink-blue'],
+div.callout[data-callout-metadata*='bg-pink-blue'] {
   background-color: var(--color-blue-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-blue"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-blue"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-blue"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-blue"] .callout-icon .svg-icon {
+div.callout[data-callout-metadata*='all-pink-blue'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-blue'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-blue'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-blue'] .callout-icon .svg-icon {
   color: var(--color-blue-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-purple-pink"],
-div.callout[data-callout-metadata*="bg-purple-pink"] {
+div.callout[data-callout-metadata*='all-purple-pink'],
+div.callout[data-callout-metadata*='bg-purple-pink'] {
   background-color: var(--color-purple-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-purple-pink"] .callout-title,
-div.callout[data-callout-metadata*="all-purple-pink"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-purple-pink"] .callout-title,
-div.callout[data-callout-metadata*="title-purple-pink"]
+div.callout[data-callout-metadata*='all-purple-pink'] .callout-title,
+div.callout[data-callout-metadata*='all-purple-pink'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-purple-pink'] .callout-title,
+div.callout[data-callout-metadata*='title-purple-pink']
   .callout-icon
   .svg-icon {
   color: var(--color-purple-pink-mix);
 }
 
-div.callout[data-callout-metadata*="all-pink-purple"],
-div.callout[data-callout-metadata*="bg-pink-purple"] {
+div.callout[data-callout-metadata*='all-pink-purple'],
+div.callout[data-callout-metadata*='bg-pink-purple'] {
   background-color: var(--color-purple-pink-mix-bg);
 }
 
-div.callout[data-callout-metadata*="all-pink-purple"] .callout-title,
-div.callout[data-callout-metadata*="all-pink-purple"] .callout-icon .svg-icon,
-div.callout[data-callout-metadata*="title-pink-purple"] .callout-title,
-div.callout[data-callout-metadata*="title-pink-purple"]
+div.callout[data-callout-metadata*='all-pink-purple'] .callout-title,
+div.callout[data-callout-metadata*='all-pink-purple'] .callout-icon .svg-icon,
+div.callout[data-callout-metadata*='title-pink-purple'] .callout-title,
+div.callout[data-callout-metadata*='title-pink-purple']
   .callout-icon
   .svg-icon {
   color: var(--color-purple-pink-mix);
 }
 
-body.is-mobile .markdown-reading-view .callout[data-callout-metadata*="$pop"] {
+body.is-mobile .markdown-reading-view .callout[data-callout-metadata*='$pop'] {
   margin-left: min(-5vw, -40px);
   width: max(var(--file-line-width) / 2, 40vw);
 }
 
-.markdown-source-view .callout[data-callout-metadata*="$pop"]:not(:hover) {
+.markdown-source-view .callout[data-callout-metadata*='$pop']:not(:hover) {
   visibility: visible;
 }
 
-.markdown-reading-view .callout[data-callout-metadata*="$pop"] {
+.markdown-reading-view .callout[data-callout-metadata*='$pop'] {
   display: block;
   position: absolute;
   margin-left: min(-3vw, -40px);
@@ -2867,35 +2867,35 @@ body.is-mobile .markdown-reading-view .callout[data-callout-metadata*="$pop"] {
   backdrop-filter: blur(20px);
   z-index: 999;
 }
-.markdown-reading-view .callout[data-callout-metadata*="$pop"] .callout-title {
+.markdown-reading-view .callout[data-callout-metadata*='$pop'] .callout-title {
   margin-top: 3px;
   margin-left: 22px;
 }
-.markdown-reading-view .callout[data-callout-metadata*="$pop"]:hover::before {
+.markdown-reading-view .callout[data-callout-metadata*='$pop']:hover::before {
   display: block;
   border: none;
   transition: all var(--flexcyon-callout-pop-animation-duration) ease;
 }
-.markdown-reading-view .callout[data-callout-metadata*="$pop"]::before {
+.markdown-reading-view .callout[data-callout-metadata*='$pop']::before {
   visibility: visible;
-  content: ">";
+  content: '>';
   display: block;
   position: absolute;
   padding: 2px;
   color: rgb(var(--callout-color));
   z-index: 1;
 }
-.markdown-reading-view .callout[data-callout-metadata*="$pop"]:not(:hover) {
+.markdown-reading-view .callout[data-callout-metadata*='$pop']:not(:hover) {
   visibility: hidden;
 }
 
-div.callout[data-callout-metadata*="tilt-all"] .callout-title,
-div.callout[data-callout-metadata*="tilt-title"] .callout-title {
+div.callout[data-callout-metadata*='tilt-all'] .callout-title,
+div.callout[data-callout-metadata*='tilt-title'] .callout-title {
   transform: skewX(-7.5deg);
 }
 
-div.callout[data-callout-metadata*="tilt-all"] .callout-content,
-div.callout[data-callout-metadata*="tilt-content"] .callout-content {
+div.callout[data-callout-metadata*='tilt-all'] .callout-content,
+div.callout[data-callout-metadata*='tilt-content'] .callout-content {
   transform: skewX(-7.5deg);
 }
 
@@ -2989,7 +2989,7 @@ body.flexcyon-workspace-card-layout {
   --titlebar-background-focused: transparent;
 }
 body.flexcyon-workspace-card-layout
-  .workspace-leaf-content:not([data-type="markdown"]) {
+  .workspace-leaf-content:not([data-type='markdown']) {
   margin: 10px;
 }
 body.flexcyon-workspace-card-layout
@@ -3078,7 +3078,7 @@ body.flexcyon-workspace-angled-layout
   span.clickable-icon
   svg,
 body.flexcyon-workspace-angled-layout
-  span.clickable-icon[aria-label="New tab"]
+  span.clickable-icon[aria-label='New tab']
   svg,
 body.flexcyon-workspace-angled-layout .nav-header,
 body.flexcyon-workspace-angled-layout
@@ -3091,8 +3091,8 @@ body.flexcyon-workspace-angled-layout .workspace-tab-header-container-inner {
   transform: skewX(-7.5deg);
 }
 
-.workspace-leaf-content[data-type="file-properties"] .pane-empty::before {
-  content: "No properties found.";
+.workspace-leaf-content[data-type='file-properties'] .pane-empty::before {
+  content: 'No properties found.';
 }
 
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
@@ -3127,7 +3127,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-explorer"]
+    .workspace-tab-header.is-active[data-type='file-explorer']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
@@ -3135,10 +3135,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-explorer"]
+    .workspace-tab-header.is-active[data-type='file-explorer']
   )
   + .workspace-tab-container::before {
-  content: "Files";
+  content: 'Files';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3150,7 +3150,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-tree-view"]
+    .workspace-tab-header.is-active[data-type='file-tree-view']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
@@ -3158,10 +3158,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-tree-view"]
+    .workspace-tab-header.is-active[data-type='file-tree-view']
   )
   + .workspace-tab-container::before {
-  content: "Alternate File Tree";
+  content: 'Alternate File Tree';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3173,7 +3173,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="bookmarks"]
+    .workspace-tab-header.is-active[data-type='bookmarks']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
@@ -3181,10 +3181,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="bookmarks"]
+    .workspace-tab-header.is-active[data-type='bookmarks']
   )
   + .workspace-tab-container::before {
-  content: "Bookmarks";
+  content: 'Bookmarks';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3196,7 +3196,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="all-properties"]
+    .workspace-tab-header.is-active[data-type='all-properties']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
@@ -3204,10 +3204,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="all-properties"]
+    .workspace-tab-header.is-active[data-type='all-properties']
   )
   + .workspace-tab-container::before {
-  content: "All Properties";
+  content: 'All Properties';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3219,7 +3219,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="outline"]
+    .workspace-tab-header.is-active[data-type='outline']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
@@ -3227,10 +3227,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="outline"]
+    .workspace-tab-header.is-active[data-type='outline']
   )
   + .workspace-tab-container::before {
-  content: "Outline";
+  content: 'Outline';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3242,7 +3242,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="full-calendar-sidebar-view"]
+    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
@@ -3250,10 +3250,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="full-calendar-sidebar-view"]
+    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
   )
   + .workspace-tab-container::before {
-  content: "Full Calendar | Sidebar";
+  content: 'Full Calendar | Sidebar';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3265,7 +3265,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="backlink"]
+    .workspace-tab-header.is-active[data-type='backlink']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-orange-rgb), calc(var(--dimmed) - 0.15));
@@ -3273,10 +3273,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="backlink"]
+    .workspace-tab-header.is-active[data-type='backlink']
   )
   + .workspace-tab-container::before {
-  content: "Backlinks";
+  content: 'Backlinks';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3288,7 +3288,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="review-queue-list-view"]
+    .workspace-tab-header.is-active[data-type='review-queue-list-view']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-red-rgb), calc(var(--dimmed) - 0.15));
@@ -3296,10 +3296,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="review-queue-list-view"]
+    .workspace-tab-header.is-active[data-type='review-queue-list-view']
   )
   + .workspace-tab-container::before {
-  content: "Review Queue";
+  content: 'Review Queue';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3311,7 +3311,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-properties"]
+    .workspace-tab-header.is-active[data-type='file-properties']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
@@ -3319,10 +3319,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="file-properties"]
+    .workspace-tab-header.is-active[data-type='file-properties']
   )
   + .workspace-tab-container::before {
-  content: "Properties";
+  content: 'Properties';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3334,7 +3334,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="outgoing-link"]
+    .workspace-tab-header.is-active[data-type='outgoing-link']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
@@ -3342,10 +3342,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="outgoing-link"]
+    .workspace-tab-header.is-active[data-type='outgoing-link']
   )
   + .workspace-tab-container::before {
-  content: "Outgoing Links";
+  content: 'Outgoing Links';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3357,7 +3357,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="graph"]
+    .workspace-tab-header.is-active[data-type='graph']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
@@ -3365,10 +3365,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="graph"]
+    .workspace-tab-header.is-active[data-type='graph']
   )
   + .workspace-tab-container::before {
-  content: "Graph View";
+  content: 'Graph View';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3380,7 +3380,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="full-calendar-view"]
+    .workspace-tab-header.is-active[data-type='full-calendar-view']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
@@ -3388,10 +3388,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="full-calendar-view"]
+    .workspace-tab-header.is-active[data-type='full-calendar-view']
   )
   + .workspace-tab-container::before {
-  content: "Full Calendar";
+  content: 'Full Calendar';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3403,7 +3403,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="localgraph"]
+    .workspace-tab-header.is-active[data-type='localgraph']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
@@ -3411,10 +3411,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="localgraph"]
+    .workspace-tab-header.is-active[data-type='localgraph']
   )
   + .workspace-tab-container::before {
-  content: "Local Graph";
+  content: 'Local Graph';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3426,7 +3426,7 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="calendar"]
+    .workspace-tab-header.is-active[data-type='calendar']
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
@@ -3434,10 +3434,10 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type="calendar"]
+    .workspace-tab-header.is-active[data-type='calendar']
   )
   + .workspace-tab-container::before {
-  content: "Calendar";
+  content: 'Calendar';
   position: absolute;
   top: 56px;
   left: 32px;
@@ -3448,14 +3448,14 @@ body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
 }
 
 body.flexcyon-file-exp-dimmed-file-exts-enabled
-  div[data-path$=".md"]
+  div[data-path$='.md']
   div.nav-file-tag {
   display: none;
 }
 body.flexcyon-file-exp-dimmed-file-exts-enabled
-  div[data-path$=".md"]
+  div[data-path$='.md']
   div.nav-file-title-content::after {
-  content: ".md";
+  content: '.md';
   opacity: var(--dimmed);
 }
 body.flexcyon-file-exp-dimmed-file-exts-enabled div div.nav-file-tag {
@@ -3468,7 +3468,7 @@ body.flexcyon-file-exp-dimmed-file-exts-enabled div div.nav-file-tag {
   font-weight: unset;
 }
 body.flexcyon-file-exp-dimmed-file-exts-enabled div div.nav-file-tag::before {
-  content: ".";
+  content: '.';
 }
 
 body.flexcyon-rainbow-folders
@@ -3933,32 +3933,32 @@ body:where(.theme-dark) .outgoing-link-pane div.tree-item-flair-outer > span {
 
 body.theme-dark {
   --status-bar-font-size: 12.5px;
-  --flexcyon-vim-insert-text: "INSERT";
-  --flexcyon-vim-normal-text: "NORMAL";
-  --flexcyon-vim-command-text: "COMMAND";
+  --flexcyon-vim-insert-text: 'INSERT';
+  --flexcyon-vim-normal-text: 'NORMAL';
+  --flexcyon-vim-command-text: 'COMMAND';
   --flexcyon-vim-bottom-positioning: -4px;
   --flexcyon-vim-left-positioning: 6px;
-  --flexcyon-status-hide-until-hover-text: "Show status";
+  --flexcyon-status-hide-until-hover-text: 'Show status';
   --flexcyon-status-hide-hover-duration: 0.35s;
   --flexcyon-status-hide-hover-function: ease-out;
-  --flexcyon-status-reading-text: "READ";
-  --flexcyon-status-source-text: "SOURCE";
-  --flexcyon-status-live-text: "LIVE";
+  --flexcyon-status-reading-text: 'READ';
+  --flexcyon-status-source-text: 'SOURCE';
+  --flexcyon-status-live-text: 'LIVE';
 }
 body.theme-dark div:has(.cm-vim-panel) + .status-bar {
   margin-bottom: 36px;
 }
 
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label="Reading"]::before {
+  .plugin-editor-status[aria-label='Reading']::before {
   color: var(--text-accent);
 }
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label="Source mode"]::before {
+  .plugin-editor-status[aria-label='Source mode']::before {
   color: var(--color-purple);
 }
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label="Live Preview"]::before {
+  .plugin-editor-status[aria-label='Live Preview']::before {
   color: var(--color-blue);
 }
 
@@ -3969,15 +3969,15 @@ body.flexcyon-status-text-mode .plugin-editor-status::before {
   font-weight: bold;
 }
 body.flexcyon-status-text-mode
-  .plugin-editor-status[aria-label="Reading"]::before {
+  .plugin-editor-status[aria-label='Reading']::before {
   content: var(--flexcyon-status-reading-text);
 }
 body.flexcyon-status-text-mode
-  .plugin-editor-status[aria-label="Source mode"]::before {
+  .plugin-editor-status[aria-label='Source mode']::before {
   content: var(--flexcyon-status-source-text);
 }
 body.flexcyon-status-text-mode
-  .plugin-editor-status[aria-label="Live Preview"]::before {
+  .plugin-editor-status[aria-label='Live Preview']::before {
   content: var(--flexcyon-status-live-text);
 }
 
@@ -4049,7 +4049,7 @@ body.flexcyon-status-style-card .status-bar {
 body.theme-dark {
   --flexcyon-ascii-max-font-size: 14px;
   --flexcyon-ascii-line-height: 1;
-  --flexcyon-ascii-art: " \a_______________                                       \a___  ____/__  /________  ____________  ______________ \a__  /_   __  /_  _ \\_  |/_/  ___/_  / / /  __ \\_  __ \\ \a_  __/   _  / /  __/_>  < / /__ _  /_/ // /_/ /  / / / \a/_/      /_/  \\___//_/|_| \\___/ _\\__, / \\____//_/ /_/ \a                                 /____/                \a \a \a";
+  --flexcyon-ascii-art: ' \a_______________                                       \a___  ____/__  /________  ____________  ______________ \a__  /_   __  /_  _ \\_  |/_/  ___/_  / / /  __ \\_  __ \\ \a_  __/   _  / /  __/_>  < / /__ _  /_/ // /_/ /  / / / \a/_/      /_/  \\___//_/|_| \\___/ _\\__, / \\____//_/ /_/ \a                                 /____/                \a \a \a';
 }
 body.theme-dark div.empty-state-action {
   font-size: 1.05rem;
@@ -5309,7 +5309,7 @@ body.flexcyon-oz-alternate-folder-count
   div.oz-folder-line:hover
   div.oz-folder-count
   span.oz-nav-file-tag::before {
-  content: "Count: ";
+  content: 'Count: ';
 }
 
 body.flexcyon-oz-folder-icons-disabled div.oz-icon-div {
@@ -5321,20 +5321,20 @@ body.flexcyon-oz-file-tree-header-disabled div.oz-file-tree-header {
 }
 
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$=".md"]
+  div.oz-nav-file-title[data-path$='.md']
   div
   svg {
   display: none;
 }
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$=".md"]
+  div.oz-nav-file-title[data-path$='.md']
   span.oz-nav-file-tag {
   display: none;
 }
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$=".md"]
+  div.oz-nav-file-title[data-path$='.md']
   div::after {
-  content: ".md";
+  content: '.md';
   opacity: var(--dimmed);
 }
 body.flexcyon-oz-dimmed-file-exts-enabled
@@ -5358,7 +5358,7 @@ body.flexcyon-oz-dimmed-file-exts-enabled
 body.flexcyon-oz-dimmed-file-exts-enabled
   div.oz-nav-file-title
   span.oz-nav-file-tag::before {
-  content: ".";
+  content: '.';
 }
 
 div.oz-nav-file.is-active,
@@ -5461,7 +5461,7 @@ body.theme-dark.highlightr-lowlight
 }
 
 body.theme-dark.highlightr-floating
-  mark[class*="hltr"]:last-of-type:not(mark[class*="hltr"]:only-of-type) {
+  mark[class*='hltr']:last-of-type:not(mark[class*='hltr']:only-of-type) {
   --floating-background: var(--background-primary);
   --floating-size: 20%;
   padding-bottom: 0.1em;
@@ -5488,10 +5488,10 @@ body.theme-dark table.calendar thead tr th {
   color: var(--link-color);
   text-transform: capitalize;
 }
-body.theme-dark [id="calendar-container"] {
+body.theme-dark [id='calendar-container'] {
   scale: 105%;
 }
-body.theme-dark [id="calendar-container"] * {
+body.theme-dark [id='calendar-container'] * {
   font-size: var(--font-ui-small);
 }
 body.theme-dark h3.title span.year {
@@ -5603,14 +5603,14 @@ body.flexcyon-workspace-angled-layout div.oz-folder-line {
   text-decoration: none;
 }
 .internal-link.BC-prev strong::before {
-  content: "◀️ ";
+  content: '◀️ ';
 }
 
 .internal-link.BC-next {
   text-decoration: none;
 }
 .internal-link.BC-next strong::after {
-  content: " ▶️";
+  content: ' ▶️';
 }
 
 .BC-grid-options {
@@ -5630,16 +5630,16 @@ div.dataview-error-box p.dataview-error-message {
 }
 
 /* Modifications for note gallery plugin with banner snippet*/
-body:where(.theme-dark) div.card-content-container img[alt="banner"] {
+body:where(.theme-dark) div.card-content-container img[alt='banner'] {
   display: none;
 }
 
-body:where(.theme-dark) .popover .banner img[alt="banner"] {
+body:where(.theme-dark) .popover .banner img[alt='banner'] {
   display: none;
 }
 
 /* Modifications for banner snippet */
-body:where(.theme-dark) .banner img[alt="banner"] {
+body:where(.theme-dark) .banner img[alt='banner'] {
   padding: 1px;
   border-radius: 0px 0px 10px 10px;
   z-index: 0;

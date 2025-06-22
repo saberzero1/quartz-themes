@@ -1,0 +1,77 @@
+.colorscheme-grubox.theme-dark {
+  --color-red: #f84935;
+  --color-green: #b8ba26;
+  --color-yellow: #fabd2e;
+  --color-blue: #83a598;
+  --color-purple: #d4879c;
+  --color-cyan: #8ec07c;
+  --color-orange: #fe811b;
+  --color-pink: var(--color-purple);
+  --color-pink-rgb: 211, 134, 155;
+  --color-red-rgb: 248, 73, 52;
+  --color-green-rgb: 184, 187, 38;
+  --color-yellow-rgb: 250, 189, 47;
+  --color-blue-rgb: 131, 165, 152;
+  --color-purple-rgb: 211, 134, 155;
+  --color-cyan-rgb: 142, 192, 124;
+  --color-orange-rgb: 254, 128, 25;
+  --color-base-00: #1f1f1f;
+  --color-base-05: #292929;
+  --color-base-10: #32302f;
+  --color-base-20: #3b3735;
+  --color-base-25: #4f4945;
+  --color-base-30: #655b53;
+  --color-base-35: #7d6f64;
+  --color-base-40: #918273;
+  --color-base-50: #a89985;
+  --color-base-60: #bdaf93;
+  --color-base-75: #b1a38b;
+  --color-base-85: #c9ba9c;
+  --color-base-90: #ebdbb2;
+  --color-base-95: #f2e5bb;
+  --color-base-100: #fbf0c6;
+  --bg1: var(--color-base-05);
+  --bg2: var(--color-base-10);
+  --bg3: var(--color-base-05);
+  --bg4: var(--color-base-10);
+  --bg5: var(--color-base-10);
+  --bg6: var(--color-base-05);
+  --background-primary: var(--color-base-05);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-05);
+  --background-secondary-alt: var(--color-base-25);
+  --background-modifier-hover: var(--color-base-10);
+  --background-modifier-active-hover: var(--color-base-20);
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-20);
+  --background-modifier-error-rgb: 248, 73, 52;
+  --background-modifier-error: var(--color-red);
+  --background-modifier-error-hover: var(--color-red-rgb);
+  --background-modifier-success-rgb: 184, 187, 38;
+  --background-modifier-success: var(--color-green);
+  --background-modifier-message: var(--color-base-10);
+  --background-modifier-form-field: var(--color-base-20);
+  --h1-color: var(--color-orange);
+  --h2-color: var(--color-green);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-red);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-blue);
+  --alt-heading-color: var(--color-green);
+  --text-normal: var(--color-base-90);
+  --icon-color: var(--color-red);
+  --color-accent: var(--color-red);
+  --color-accent-hsl: 358 100% 31%;
+  --interactive-accent: var(--color-orange);
+  --secondary-accent: var(--color-green);
+  --hover-accent: #d85f0e;
+  --link-unresolved-color: var(--color-cyan);
+}
+.colorscheme-grubox.theme-dark ::selection {
+  background-color: var(--color-base-20);
+  color: var(--color-base-100);
+}
+.colorscheme-grubox.theme-dark :is(.nav-file-title, .nav-folder-title) {
+  color: var(--color-base-85);
+}

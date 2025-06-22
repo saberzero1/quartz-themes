@@ -1,0 +1,26 @@
+.theme-dark.minimal-eink-dark.tabs-modern,
+.minimal-eink-light.tabs-modern {
+  --minimal-tab-text-color-active: var(--bg1);
+  --tab-text-color-focused: var(--bg1);
+  --tab-text-color-focused-active-current: var(--bg1);
+}
+.theme-dark.minimal-eink-dark.tabs-modern
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active,
+.minimal-eink-light.tabs-modern
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active {
+  background-color: var(--tx1);
+}
+.theme-dark.minimal-eink-dark.is-focused.tabs-modern
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.minimal-eink-light.is-focused.tabs-modern
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--bg1);
+}

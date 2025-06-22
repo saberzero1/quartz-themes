@@ -1,0 +1,53 @@
+.ulu-gradient-d.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-base-00: #000;
+  /* background-primary */
+  --color-base-10: #161b33;
+  /* background-primary-alt */
+  --color-base-20: #0d0c1d;
+  /* background-secondary */
+  --color-base-25: #040303;
+  /* idk lol */
+  --color-base-30: #1e2126;
+  /* background-modifier-border */
+  --color-base-35: #3d3d3d;
+  /* background-modifier-border-hover */
+  --color-base-40: #5d5d5d;
+  /* background-modifier-border-focus */
+  --color-base-50: #9097a0;
+  /* text-faint */
+  --color-base-60: #6277cd;
+  /* also no clue */
+  --color-base-70: #d3d1eb;
+  /* text-muted */
+  --color-base-100: #fff;
+  /* text-normal */
+  --color-accent: hsl(50 100% 55%) !important;
+  --color-accent-hsl: 50, 100%, 55% !important;
+  --color-accent-rgb: 255, 217, 25 !important;
+  --text-on-accent: var(--color-base-00);
+  --background-primary: linear-gradient(
+    0deg,
+    hsl(244deg 41% 8%) 0%,
+    hsl(233deg 39% 12%) 50%,
+    hsl(230deg 40% 14%) 100%
+  );
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    rgba(9, 9, 9, 0.5) 20.62%,
+    rgba(0, 0, 0, 0.5) 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #1e5e6c 20.62%,
+    #601e6c 90.72%
+  ) !important;
+  --background-modifier-border-alt: #40916c !important;
+}
+
+.ulu-gradient-d.theme-dark .modal:not(.is-mobile) {
+  background: var(--gradient-bg-secondary) !important;
+}

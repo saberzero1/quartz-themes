@@ -1,0 +1,12 @@
+body.no-wrapped-dvtable-cell .dataview.table-view-table {
+  width: 100%;
+  table-layout: fixed;
+}
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td) {
+  white-space: nowrap;
+  overflow-x: auto;
+  text-overflow: ellipsis;
+}
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td):hover {
+  text-overflow: clip;
+}

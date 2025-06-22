@@ -1,0 +1,59 @@
+.o-min-d .workspace-ribbon {
+  border-right: none !important;
+  background: var(--background-primary-alt);
+}
+.o-min-d .workspace-ribbon.mod-left.is-collapsed {
+  background: var(--background-primary-alt);
+  border-right: none !important;
+}
+:root:root:root:root:root
+  .o-min-d:not(.is-mobile)
+  .workspace-sidedock-vault-profile {
+  border-top: none !important;
+  background: var(--background-secondary) !important;
+  border-radius: var(--radius-l);
+  margin-bottom: 8px;
+  width: 97.5%;
+}
+.o-min-d .workspace-ribbon.mod-left .sidebar-toggle-button {
+  border-right: none !important;
+}
+.o-min-d .nav-file-title.is-active {
+  background-color: transparent;
+  border: none;
+}
+.o-min-d.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+  --canvas-color: 245, 245, 245;
+  --color-base-00: #0c0c0c;
+  --color-base-05: #0f0f0f;
+  --color-base-10: #161616;
+  --color-base-20: #000000;
+  --color-base-25: #222222;
+  --color-base-30: #000000;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #000000;
+  --color-base-50: #666;
+  --color-base-60: #999;
+  --color-base-70: #bababa;
+  --color-base-100: #ffffff;
+}

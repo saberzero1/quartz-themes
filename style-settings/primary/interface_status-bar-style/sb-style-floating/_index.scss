@@ -1,0 +1,15 @@
+body.sb-style-floating .status-bar {
+  --status-bar-position: absolute;
+  --status-bar-background: var(--status-bar-floating-bg);
+  right: var(--status-bar-floating-offset);
+  bottom: var(--status-bar-floating-offset);
+  --status-bar-border-width: 1px;
+  --status-bar-radius: calc(var(--radius-m) - 2px);
+  opacity: var(--status-bar-floating-opacity);
+  transition: var(--anim-motion-smooth) var(--anim-duration-fast);
+  box-shadow: var(--status-bar-floating-shadow);
+}
+body.sb-style-floating .status-bar:hover {
+  opacity: var(--status-bar-floating-opacity-hover);
+  transition: var(--anim-motion-smooth) var(--anim-duration-fast);
+}

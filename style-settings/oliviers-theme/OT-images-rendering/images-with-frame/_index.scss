@@ -1,0 +1,12 @@
+.images-with-frame img {
+  border: 1px solid var(--text-normal);
+  padding: 2px;
+}
+.images-with-frame-and-shadow img {
+  box-shadow: 6px 6px 3px grey;
+  border: 1px solid var(--text-normal);
+  padding: 2px;
+}
+.images-with-frame-and-shadow .image-captions-caption {
+  padding-top: 0.8rem;
+}

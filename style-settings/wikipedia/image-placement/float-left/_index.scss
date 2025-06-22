@@ -1,0 +1,10 @@
+.float-left .markdown-rendered img {
+  float: left;
+  clear: left;
+  margin: var(--infobox-margin-left);
+}
+.float-left .markdown-rendered img ~ img {
+  float: right;
+  clear: right;
+  margin: var(--infobox-margin);
+}
