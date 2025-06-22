@@ -1,0 +1,9 @@
+body-monochrome-topaz *:not(font) > em > strong,
+body-monochrome-topaz *:not(font) > strong > em,
+body-monochrome-topaz .cm-strong.cm-em {
+  background-image: initial;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-color: initial;
+}

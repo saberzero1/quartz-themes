@@ -103,7 +103,7 @@ blockquote:before {
   font:
     14px/20px italic Times,
     serif;
-  content: "“";
+  content: '“';
   font-size: 3em;
   line-height: 0.1em;
   vertical-align: -0.4em;
@@ -218,7 +218,7 @@ ul ul {
 }
 
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid;
   border-image: linear-gradient(#fa9c2a, #ac36fa, rgba(102, 49, 154, 0.05));
   border-image-slice: 1;
@@ -236,7 +236,7 @@ ol ol {
   position: relative;
 }
 ol ol::before {
-  content: "";
+  content: '';
   border-left: 1px solid;
   border-image: linear-gradient(#fa9c2a, #ac36fa, rgba(102, 49, 154, 0.05));
   border-image-slice: 1;

@@ -1,0 +1,33 @@
+body
+  :is(
+    .markdown-preview-sizer > div > h2,
+    .markdown-rendered > h2,
+    .HyperMD-header-2
+  )::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0px;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    var(--h2-accent-color) 30%,
+    transparent 70%
+  );
+}
+body h2::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0px;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    var(--h2-accent-color) 30%,
+    transparent 70%
+  );
+}

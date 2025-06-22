@@ -1,0 +1,10 @@
+body.is-translucent:is(:not(.css-settings-manager), )
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container {
+  background: var(--color-base-00-trans-alt) !important;
+}
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-topleft-radius)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked {
+  border-top-left-radius: var(--window-radius);
+}

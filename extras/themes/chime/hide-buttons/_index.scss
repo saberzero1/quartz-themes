@@ -1,0 +1,18 @@
+.hide-buttons.classic-layout {
+  --border-width: 0px;
+}
+
+.hide-buttons .view-actions,
+.hide-buttons .side-dock-settings,
+.hide-buttons .side-dock-actions,
+.hide-buttons .sidebar-toggle-button {
+  opacity: 0;
+}
+
+.hide-buttons .view-actions:hover,
+.hide-buttons .side-dock-settings:hover,
+.hide-buttons .side-dock-actions:hover {
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+  transition-delay: 0ms;
+}

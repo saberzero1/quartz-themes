@@ -1,0 +1,11 @@
+body:not(.default-loading-page).loading-animation-custom
+  .progress-bar-message::before {
+  position: initial;
+  animation: unset;
+  display: block;
+  content: var(--loading-page-custom-gif-caption);
+  background: no-repeat center/cover var(--loading-page-custom-gif-url);
+  width: 800px;
+  height: 600px;
+  margin-top: -20px;
+}

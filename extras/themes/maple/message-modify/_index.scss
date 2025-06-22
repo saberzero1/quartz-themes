@@ -1,9 +1,12 @@
-body.message-modify:not(.color-active-default).theme-light {
+body.message-modify {
   --background-modifier-message: hsl(
     var(
       --setting-message-bg,
-      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)
-        calc(var(--accent-l) + 4%)
+      calc(var(--accent-h) - 30) var(--accent-s) calc(var(--accent-l) - 20%)
     )
   );
+}
+
+body.message-modify :is(.tooltip, .notice) {
+  color: var(--setting-message-fg, var(--text-on-accent));
 }

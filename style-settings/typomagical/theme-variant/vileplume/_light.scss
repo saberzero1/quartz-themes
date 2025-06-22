@@ -1,0 +1,37 @@
+bod.theme-light {
+  --background-primary: var(--light3);
+  --background-primary-alt: var(--light3);
+  --background-secondary: var(--light2);
+  --background-secondary-alt: var(--light1);
+  --text-normal: var(--dark1);
+  --text-faint: var(--dark3);
+  --text-muted: var(--dark2);
+  --text-link: var(--frost0);
+  --text-highlight-bg: var(--light0);
+  --text-selection: var(--light0);
+  --link-color-hover: var(--yellow);
+  --link-color: var(--yellow59);
+  --title-gradient-top: var(--text-title-h1);
+  --title-gradient-bottom: var(--text-normal);
+}
+.vileplume.theme-light .cm-header-1.cm-header-1,
+.vileplume.theme-light .markdown-preview-section.markdown-preview-section h1 {
+  text-shadow:
+    1px 1px rgba(235, 235, 235, 0.5),
+    2px 2px rgba(235, 235, 235, 0.5),
+    3px 3px rgba(235, 235, 235, 0.5),
+    4px 4px rgba(235, 235, 235, 0.4),
+    5px 5px rgba(235, 235, 235, 0.3),
+    6px 6px rgba(235, 235, 235, 0.2),
+    7px 7px rgba(235, 235, 235, 0.1),
+    8px 8px rgba(235, 235, 235, 0.1);
+}
+.vileplume.theme-light .graph-view.color-line {
+  color: hsl(83, 26%, 84%);
+}
+.vileplume.theme-light .graph-view.color-fill {
+  color: hsl(126, 26%, 51%);
+}
+.vileplume.theme-light .graph-view.graph-view.color-fill-attachment {
+  color: hsl(25, 83%, 67%);
+}

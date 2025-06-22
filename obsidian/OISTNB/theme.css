@@ -18,8 +18,8 @@
 }
 
 body {
-  --font-text-theme: "Courier New", monospace;
-  --font-ui-theme: "VT323", "Courier New", monospace;
+  --font-text-theme: 'Courier New', monospace;
+  --font-ui-theme: 'VT323', 'Courier New', monospace;
 
   --radius-xs: 2px;
   --radius-s: 4px;
@@ -225,7 +225,7 @@ textarea:focus {
 
 /* Enhanced CRT Screen Effect */
 .theme-dark .workspace::after {
-  content: " ";
+  content: ' ';
   display: block;
   position: fixed;
   top: 0;

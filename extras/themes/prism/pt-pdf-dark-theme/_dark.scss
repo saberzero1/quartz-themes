@@ -1,0 +1,5 @@
+.pt-pdf-dark-theme.theme-dark .pdf-viewer .canvasWrapper,
+.pt-pdf-dark-theme.theme-dark .pdf-sidebar-container img.thumbnailImage {
+  filter: invert(1) hue-rotate(180deg) saturate(100%);
+  mix-blend-mode: screen;
+}

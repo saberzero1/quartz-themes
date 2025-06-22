@@ -1,0 +1,26 @@
+.ulu-gradient-canvas1
+  .theme-dark
+  .canvas-node.is-themed.mod-canvas-color-1
+  .canvas-node-content {
+  background-image: linear-gradient(
+    45deg,
+    hsl(18deg 88% 66%) 0%,
+    hsl(17deg 88% 65%) 21%,
+    hsl(16deg 87% 63%) 30%,
+    hsl(15deg 86% 62%) 39%,
+    hsl(14deg 85% 60%) 46%,
+    hsl(13deg 85% 59%) 54%,
+    hsl(11deg 84% 57%) 61%,
+    hsl(10deg 83% 56%) 69%,
+    hsl(8deg 82% 55%) 79%,
+    hsl(6deg 81% 54%) 100%
+  );
+}
+
+.ulu-gradient-canvas1
+  .theme-dark
+  .canvas-node.is-themed.mod-canvas-color-1
+  .canvas-node-content
+  p {
+  color: var(--text-on-accent);
+}

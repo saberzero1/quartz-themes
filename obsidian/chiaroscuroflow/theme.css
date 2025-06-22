@@ -97,7 +97,7 @@ settings:
 
 /* Base64 Encoded Fonts */
 @font-face {
-  font-family: "Nunito Sans 12pt ExtraLight";
+  font-family: 'Nunito Sans 12pt ExtraLight';
 
   font-weight: 100 900;
   font-style: normal;
@@ -106,7 +106,7 @@ settings:
 }
 
 @font-face {
-  font-family: "Manrope ExtraLight";
+  font-family: 'Manrope ExtraLight';
 
   font-weight: 100 900;
   font-style: normal;
@@ -116,19 +116,19 @@ settings:
 /* CSS Variables */
 :root {
   --heading-font:
-    "Nunito Sans", "Nunito Sans Bold", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    'Nunito Sans', 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --heading-color-light: #0c0909;
   --heading-color-dark: #dddddd;
 }
 
 body {
   --font-text:
-    var(--body-font, Manrope), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    var(--body-font, Manrope), -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif;
   --font-header:
-    var(--header-font, "Nunito Sans Bold"), -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    var(--header-font, 'Nunito Sans Bold'), -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .theme-light {
@@ -151,7 +151,7 @@ body {
   --background-primary: rgb(255, 250, 205);
 }
 
-.theme-light .workspace-leaf-content[data-type="markdown"],
+.theme-light .workspace-leaf-content[data-type='markdown'],
 .theme-light .markdown-preview-view,
 .theme-light .view-content {
   background: none;
@@ -174,7 +174,7 @@ body {
   --background-primary: rgb(25, 18, 63);
 }
 
-.theme-dark .workspace-leaf-content[data-type="markdown"],
+.theme-dark .workspace-leaf-content[data-type='markdown'],
 .theme-dark .markdown-preview-view,
 .theme-dark .view-content {
   background: none;
@@ -353,7 +353,7 @@ body,
     background: none !important;
   }
 
-  .workspace-leaf-content[data-type="markdown"],
+  .workspace-leaf-content[data-type='markdown'],
   .markdown-preview-view,
   .view-content {
     background: none !important;

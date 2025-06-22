@@ -1,17 +1,104 @@
-body:not(
-    .adwaita-tabs-always,
-    .adwaita-tabs-linux-only,
-    .adwaita-tabs-never
-  ).mod-linux.theme-light,
-body.theme-light {
-  --tab-background-active: #f0f0f0;
+body.adwaita-tabs-always {
+  --tab-radius-active: 4px;
 }
 
-body:not(
-    .adwaita-tabs-always,
-    .adwaita-tabs-linux-only,
-    .adwaita-tabs-never
-  ).mod-linux.is-focused,
-body.is-focused {
-  --tab-background-active: #d8d8d8;
+body.adwaita-tabs-always:not(.adwaita-tabs-short) {
+  --tab-width: 10000px;
+  /* infinite width */
+  --tab-max-width: none;
+}
+
+body.adwaita-tabs-always
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  --tab-outline-width: 0;
+}
+
+body.adwaita-tabs-always
+  .workspace-tab-header-container
+  .workspace-tab-header-new-tab {
+  margin-right: var(--size-4-1);
+}
+
+body.adwaita-tabs-always .workspace-tab-header-new-tab {
+  order: 1;
+}
+
+body.adwaita-tabs-always .workspace-tab-header-tab-list,
+body.adwaita-tabs-always .sidebar-toggle-button.mod-right {
+  order: 2;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  padding: 0;
+  margin: 5px 3px 5px 2px;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active {
+  color: var(--tab-text-color-focused);
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:before,
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:after {
+  content: none;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header
+  .workspace-tab-header-inner::after {
+  right: -6px;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header
+  .workspace-tab-header-inner-title {
+  padding-left: 20px;
+  text-align: center;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:last-child
+  .workspace-tab-header-inner::after {
+  content: none;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
+  opacity: 0;
+  display: flex;
+}
+
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-close-button,
+body.adwaita-tabs-always
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header
+  :hover
+  .workspace-tab-header-inner-close-button {
+  opacity: 1;
 }

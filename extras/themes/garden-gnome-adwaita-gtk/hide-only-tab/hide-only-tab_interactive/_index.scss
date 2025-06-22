@@ -1,0 +1,8 @@
+.hide-only-tab_interactive {
+  --only-tab-background: transparent;
+  --only-tab-background-hover: transparent;
+  --only-tab-background-active: var(--background-hover);
+  --only-tab-text: transparent;
+  --only-tab-text-hover: var(--text-faint);
+  --only-tab-close-button: var(--background-active);
+}

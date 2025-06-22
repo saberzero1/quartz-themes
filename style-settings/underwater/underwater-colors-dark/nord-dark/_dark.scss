@@ -1,0 +1,38 @@
+.nord-dark {
+  /*PALETTE*/
+  --love-rgb: 191, 97, 106;
+  /*nord11*/
+  --gold-rgb: 235, 203, 139;
+  /*nord13*/
+  --rose-rgb: 208, 135, 112;
+  /*nord12*/
+  --pine-rgb: 129, 161, 193;
+  /*nord9*/
+  --foam-rgb: 143, 188, 187;
+  /*nord7*/
+  --iris-rgb: 180, 142, 173;
+  /*nord15*/
+  --base: #3b4252;
+  /*nord1*/
+  --surface-rgb: 46, 52, 64;
+  /*nord0*/
+  --overlay: #434c5e;
+  /*nord2*/
+  --muted: #d8dee9;
+  /*nord4*/
+  --subtle: #e5e9f0;
+  /*nord5*/
+  --text: #eceff4;
+  /*nord6*/
+  --highlight-low: #3b4252;
+  /*nord 1*/
+  --highlight-med-rgb: 67, 76, 94;
+  /*nord 2*/
+  --highlight-high: #4c566a;
+  /*nord3*/
+  /*override accent color !*/
+  --accent-h: 210;
+  --accent-s: 34%;
+  --accent-l: 63%;
+  --color-accent-hsl: 210, 34%, 63%;
+}

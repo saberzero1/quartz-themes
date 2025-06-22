@@ -1,0 +1,64 @@
+body
+  .workspace-leaf-content[data-type='markdown']
+  .markdown-source-view.mod-cm6
+  div.cm-line:not(
+    :is(
+      .hr,
+      .HyperMD-header,
+      .HyperMD-quote,
+      .HyperMD-list-line,
+      .HyperMD-codeblock
+    )
+  ) {
+  text-indent: 2em;
+}
+body
+  .workspace-leaf-content[data-type='markdown']
+  .markdown-source-view.mod-cm6
+  div.cm-line:not(
+    :is(
+      .hr,
+      .HyperMD-header,
+      .HyperMD-quote,
+      .HyperMD-list-line,
+      .HyperMD-codeblock
+    )
+  )
+  .cm-hmd-frontmatter:first-of-type {
+  margin-left: -2em;
+}
+body
+  .markdown-source-view.mod-cm6
+  div.has-banner.cm-line:not(.HyperMD-header)
+  .cm-def.cm-hmd-frontmatter,
+body
+  .markdown-source-view.mod-cm6
+  div.has-banner.cm-line:not(.HyperMD-header)
+  .collapse-indicator {
+  margin-left: 0;
+  left: -3em;
+}
+body [data-type='markdown'] div[class='el-p']:not(blockquote) > p {
+  text-indent: 2em;
+}
+body [data-type='markdown'] div[class='el-p']:not(blockquote) > p > br {
+  content: ' ';
+  white-space: pre;
+  line-height: calc((var(--paragraph-spacing) + 0.3) * 1em);
+  display: unset;
+}
+body [data-type='markdown'] div[class='el-p']:not(blockquote) > p > br::after {
+  content: '\\A\\9\\9';
+}
+body .print *:not(blockquote) > p {
+  text-indent: 2em;
+}
+body .print *:not(blockquote) > p > br {
+  content: ' ';
+  white-space: pre;
+  line-height: calc((var(--paragraph-spacing) + 0.3) * 1em);
+  display: unset;
+}
+body .print *:not(blockquote) > p > br::after {
+  content: '\\A\\9\\9';
+}

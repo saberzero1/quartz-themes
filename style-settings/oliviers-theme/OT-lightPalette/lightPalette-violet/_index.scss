@@ -1,0 +1,129 @@
+.theme-dar.darkPalette-default {
+  --OT-theme-reference-color: #16082a;
+  --color-base-00: #16082a;
+  --color-base-20: #200c40;
+  --color-base-35: #4c1d95;
+  --color-base-40: #2b1155;
+  --color-base-50: #6d29d5;
+  --color-base-70: #ebe2f9;
+  --color-base-05: #341363;
+  --OT-color-on-base-20: #9160e1;
+  --code-background: #200c40;
+  --code-background: #311262;
+  /*    --background-modifier-border:    #2B1155; */
+  --OT-button-OFF-bg: #441988;
+  --code-normal: #c1a4ee;
+  --color-base-100: #a982e8;
+  --link-color: #c1e882;
+  --OT-setting-item-description: #8864bd;
+  --OT-stabilo-mark: #cdb6f1;
+  --OT-stabilo-text: #200c40;
+  --OT-table-header-background: #270f4e;
+  --OT-table-background: #1d0b39;
+}
+.theme-ligh.accentColor-lightMode-shade {
+  --accent-h: 272 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  /*    --color-accent-1:                    #6E16C7    !important; */
+  --color-accent-2: #9835f1 !important;
+  --color-accent-3: #e9d4fc !important;
+  /*    --OT-color-on-accent-1:                #fff    !important; */
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-accent-1: #d9b4fa !important;
+  --OT-color-on-accent-3: #6d0ec3;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
+}
+.theme-ligh.accentColor-lightMode-alternative-1 {
+  --accent-h: 152 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  /*    --color-accent-1:                #15C0C0    !important; */
+  --color-accent-2: #35f198 !important;
+  --color-accent-3: #d4fce9 !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-muted-on-accent-1: #35f198 !important;
+  --OT-color-on-accent-2: var(--OT-color-on-base-20) !important;
+  --OT-color-on-accent-3: #076438 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+.theme-ligh.accentColor-lightMode-alternative-2 {
+  --accent-h: 32 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  --color-accent-1: #ef8815 !important;
+  --color-accent-2: #f2a247 !important;
+  --color-accent-3: #fbe1c4 !important;
+  /*    --OT-color-on-accent-1:            #2F540A    !important; */
+  --OT-color-muted-on-accent-1: #94530a !important;
+  --OT-color-on-accent-2: #fdf1e4 !important;
+  --OT-color-on-accent-3: #c36d0e !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 77%);
+}
+.theme-dar.darkPalette-default.accentColor-darkMode-shade {
+  --accent-h: 264 !important;
+  --accent-s: 40% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #ac94d1 !important;
+  --color-accent-2: #5e3d8f !important;
+  --color-accent-3: #4e3377 !important;
+  --OT-color-on-accent-1: #170f24 !important;
+  --OT-color-muted-on-accent-1: #3f295f !important;
+  --OT-color-on-accent-2: #d8c5f4 !important;
+  --OT-color-on-accent-3: #c8b7e1 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #9a7cc7;
+  --OT-button-cta-text-normal: #27193c;
+  /*    --OT-view-header-title-focus-color:        #AC94D1; */
+  /*    --OT-view-header-title-no-focus-color:    #8864BD; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+.theme-dar.darkPalette-default.accentColor-darkMode-alternative-1 {
+  --accent-h: 84 !important;
+  --accent-s: 50% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #9bc859 !important;
+  --color-accent-2: #5d802a !important;
+  --color-accent-3: #41591e !important;
+  /*    --OT-color-on-accent-1:            #D9EABF    !important; */
+  --OT-color-muted-on-accent-1: #4b6622 !important;
+  --OT-color-on-accent-2: #e0eecc !important;
+  --OT-color-on-accent-3: #d9eabf !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+.theme-dar.darkPalette-default.accentColor-darkMode-alternative-2 {
+  --accent-h: 174 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #99ddd6 !important;
+  --color-accent-2: #40bfb3 !important;
+  --color-accent-3: #26736b !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #2a7f77 !important;
+  --OT-color-on-accent-2: #d9f2f0 !important;
+  --OT-color-on-accent-3: #d9f2f0 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+.theme-ligh.inkColor-lightMode-default
+  .markdown-source-view.mod-cm6
+  .cm-editor:before {
+  /*    couleur de la pastille:    #4B0B8B    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%234B0B8B" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.theme-dar.darkPalette-default.inkColor-darkMode-default
+  .markdown-source-view.mod-cm6
+  .cm-editor:before {
+  /*    couleur de la pastille:    #A982E8    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23A982E8" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

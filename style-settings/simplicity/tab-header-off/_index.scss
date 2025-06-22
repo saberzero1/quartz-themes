@@ -1,0 +1,27 @@
+.workspace-ribbon.mod-left {
+  padding: 0px;
+  transition: 0.2s;
+  margin-top: 0px !important;
+  padding-top: var(--header-height);
+  border-right: 1px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08) !important;
+}
+.mod-left-split .workspace-tabs.mod-top .workspace-tab-header-container,
+.mod-root .workspace-tabs.mod-top .workspace-tab-header-container {
+  height: 2px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.mod-left-split .workspace-tabs.mod-top .workspace-tab-header-container:hover,
+.mod-root .workspace-tabs.mod-top .workspace-tab-header-container:hover {
+  height: var(--header-height);
+  opacity: 1;
+  transition: 0.2s;
+}
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner {
+  padding: 40px var(--size-4-2) var(--size-4-4);
+}

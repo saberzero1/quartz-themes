@@ -1,0 +1,38 @@
+.glow-callouts .callout {
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+.glow-callouts .callout::after {
+  content: '';
+  background: rgba(var(--callout-color), 0.1) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+.glow-callouts .callout::before {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  border-left: 3px solid rgb(var(--callout-color));
+  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+.glow-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))::after {
+  right: -3px;
+  left: unset;
+}
+.glow-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+  right: 0px;
+  left: unset;
+}

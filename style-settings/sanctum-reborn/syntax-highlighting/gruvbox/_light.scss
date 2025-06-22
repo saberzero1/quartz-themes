@@ -1,0 +1,198 @@
+.gruvbox.theme-light p > code,
+.gruvbox.theme-light pre:not(.frontmatter),
+.gruvbox.theme-light .HyperMD-codeblock {
+  --code-background: #fbf1c7;
+  --code-normal: #3c3836;
+  --text-muted: #7c6f64;
+  --text-faint: #7c6f64;
+}
+.gruvbox.theme-light p > code .cm-hr,
+.gruvbox.theme-light p > code .cm-comment,
+.gruvbox.theme-light p > code .cm-meta,
+.gruvbox.theme-light p > code .token.comment,
+.gruvbox.theme-light p > code .token.prolog,
+.gruvbox.theme-light p > code .token.cdata,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-hr,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-comment,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-meta,
+.gruvbox.theme-light pre:not(.frontmatter) .token.comment,
+.gruvbox.theme-light pre:not(.frontmatter) .token.prolog,
+.gruvbox.theme-light pre:not(.frontmatter) .token.cdata,
+.gruvbox.theme-light .HyperMD-codeblock .cm-hr,
+.gruvbox.theme-light .HyperMD-codeblock .cm-comment,
+.gruvbox.theme-light .HyperMD-codeblock .cm-meta,
+.gruvbox.theme-light .HyperMD-codeblock .token.comment,
+.gruvbox.theme-light .HyperMD-codeblock .token.prolog,
+.gruvbox.theme-light .HyperMD-codeblock .token.cdata {
+  color: #7c6f64;
+}
+.gruvbox.theme-light p > code .cm-keyword,
+.gruvbox.theme-light p > code .token.delimiter,
+.gruvbox.theme-light p > code .token.boolean,
+.gruvbox.theme-light p > code .token.keyword,
+.gruvbox.theme-light p > code .token.selector,
+.gruvbox.theme-light p > code .token.important,
+.gruvbox.theme-light p > code .token.atrule,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-keyword,
+.gruvbox.theme-light pre:not(.frontmatter) .token.delimiter,
+.gruvbox.theme-light pre:not(.frontmatter) .token.boolean,
+.gruvbox.theme-light pre:not(.frontmatter) .token.keyword,
+.gruvbox.theme-light pre:not(.frontmatter) .token.selector,
+.gruvbox.theme-light pre:not(.frontmatter) .token.important,
+.gruvbox.theme-light pre:not(.frontmatter) .token.atrule,
+.gruvbox.theme-light .HyperMD-codeblock .cm-keyword,
+.gruvbox.theme-light .HyperMD-codeblock .token.delimiter,
+.gruvbox.theme-light .HyperMD-codeblock .token.boolean,
+.gruvbox.theme-light .HyperMD-codeblock .token.keyword,
+.gruvbox.theme-light .HyperMD-codeblock .token.selector,
+.gruvbox.theme-light .HyperMD-codeblock .token.important,
+.gruvbox.theme-light .HyperMD-codeblock .token.atrule {
+  color: #9d0006;
+}
+.gruvbox.theme-light p > code .cm-attribute,
+.gruvbox.theme-light p > code .cm-operator,
+.gruvbox.theme-light p > code .cm-punctuation,
+.gruvbox.theme-light p > code .cm-bracket.cm-tag,
+.gruvbox.theme-light p > code .token.operator,
+.gruvbox.theme-light p > code .token.punctuation,
+.gruvbox.theme-light p > code .token.attr-name,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-attribute,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-operator,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-punctuation,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-bracket.cm-tag,
+.gruvbox.theme-light pre:not(.frontmatter) .token.operator,
+.gruvbox.theme-light pre:not(.frontmatter) .token.punctuation,
+.gruvbox.theme-light pre:not(.frontmatter) .token.attr-name,
+.gruvbox.theme-light .HyperMD-codeblock .cm-attribute,
+.gruvbox.theme-light .HyperMD-codeblock .cm-operator,
+.gruvbox.theme-light .HyperMD-codeblock .cm-punctuation,
+.gruvbox.theme-light .HyperMD-codeblock .cm-bracket.cm-tag,
+.gruvbox.theme-light .HyperMD-codeblock .token.operator,
+.gruvbox.theme-light .HyperMD-codeblock .token.punctuation,
+.gruvbox.theme-light .HyperMD-codeblock .token.attr-name {
+  color: #7c6f64;
+}
+.gruvbox.theme-light p > code .cm-builtin,
+.gruvbox.theme-light p > code .cm-type,
+.gruvbox.theme-light p > code .cm-tag,
+.gruvbox.theme-light p > code .token.tag,
+.gruvbox.theme-light p > code .token.tag .punctuation,
+.gruvbox.theme-light p > code .token.doctype,
+.gruvbox.theme-light p > code .token.builtin,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-builtin,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-type,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-tag,
+.gruvbox.theme-light pre:not(.frontmatter) .token.tag,
+.gruvbox.theme-light pre:not(.frontmatter) .token.tag .punctuation,
+.gruvbox.theme-light pre:not(.frontmatter) .token.doctype,
+.gruvbox.theme-light pre:not(.frontmatter) .token.builtin,
+.gruvbox.theme-light .HyperMD-codeblock .cm-builtin,
+.gruvbox.theme-light .HyperMD-codeblock .cm-type,
+.gruvbox.theme-light .HyperMD-codeblock .cm-tag,
+.gruvbox.theme-light .HyperMD-codeblock .token.tag,
+.gruvbox.theme-light .HyperMD-codeblock .token.tag .punctuation,
+.gruvbox.theme-light .HyperMD-codeblock .token.doctype,
+.gruvbox.theme-light .HyperMD-codeblock .token.builtin {
+  color: #b57614;
+}
+.gruvbox.theme-light p > code .cm-number,
+.gruvbox.theme-light p > code .token.entity,
+.gruvbox.theme-light p > code .token.number,
+.gruvbox.theme-light p > code .token.symbol,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-number,
+.gruvbox.theme-light pre:not(.frontmatter) .token.entity,
+.gruvbox.theme-light pre:not(.frontmatter) .token.number,
+.gruvbox.theme-light pre:not(.frontmatter) .token.symbol,
+.gruvbox.theme-light .HyperMD-codeblock .cm-number,
+.gruvbox.theme-light .HyperMD-codeblock .token.entity,
+.gruvbox.theme-light .HyperMD-codeblock .token.number,
+.gruvbox.theme-light .HyperMD-codeblock .token.symbol {
+  color: #8f3f71;
+}
+.gruvbox.theme-light p > code .cm-variable,
+.gruvbox.theme-light p > code .cm-variable-2,
+.gruvbox.theme-light p > code .cm-variable-3,
+.gruvbox.theme-light p > code .cm-property,
+.gruvbox.theme-light p > code .token.property,
+.gruvbox.theme-light p > code .token.constant,
+.gruvbox.theme-light p > code .token.variable,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-variable,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-variable-2,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-variable-3,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-property,
+.gruvbox.theme-light pre:not(.frontmatter) .token.property,
+.gruvbox.theme-light pre:not(.frontmatter) .token.constant,
+.gruvbox.theme-light pre:not(.frontmatter) .token.variable,
+.gruvbox.theme-light .HyperMD-codeblock .cm-variable,
+.gruvbox.theme-light .HyperMD-codeblock .cm-variable-2,
+.gruvbox.theme-light .HyperMD-codeblock .cm-variable-3,
+.gruvbox.theme-light .HyperMD-codeblock .cm-property,
+.gruvbox.theme-light .HyperMD-codeblock .token.property,
+.gruvbox.theme-light .HyperMD-codeblock .token.constant,
+.gruvbox.theme-light .HyperMD-codeblock .token.variable {
+  color: #9d0006;
+}
+.gruvbox.theme-light p > code .cm-string-2,
+.gruvbox.theme-light p > code .token.string,
+.gruvbox.theme-light p > code .token.char,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-string-2,
+.gruvbox.theme-light pre:not(.frontmatter) .token.string,
+.gruvbox.theme-light pre:not(.frontmatter) .token.char,
+.gruvbox.theme-light .HyperMD-codeblock .cm-string-2,
+.gruvbox.theme-light .HyperMD-codeblock .token.string,
+.gruvbox.theme-light .HyperMD-codeblock .token.char {
+  color: #797403;
+}
+.gruvbox.theme-light p > code .cm-string,
+.gruvbox.theme-light p > code .token.attr-value,
+.gruvbox.theme-light p > code .token.attr-value .punctuation,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-string,
+.gruvbox.theme-light pre:not(.frontmatter) .token.attr-value,
+.gruvbox.theme-light pre:not(.frontmatter) .token.attr-value .punctuation,
+.gruvbox.theme-light .HyperMD-codeblock .cm-string,
+.gruvbox.theme-light .HyperMD-codeblock .token.attr-value,
+.gruvbox.theme-light .HyperMD-codeblock .token.attr-value .punctuation {
+  color: #7c6f64;
+}
+.gruvbox.theme-light p > code .cm-link,
+.gruvbox.theme-light p > code .token.url,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-link,
+.gruvbox.theme-light pre:not(.frontmatter) .token.url,
+.gruvbox.theme-light .HyperMD-codeblock .cm-link,
+.gruvbox.theme-light .HyperMD-codeblock .token.url {
+  color: #797403;
+  text-decoration: underline;
+}
+.gruvbox.theme-light p > code .cm-qualifier,
+.gruvbox.theme-light p > code .token.function,
+.gruvbox.theme-light pre:not(.frontmatter) .cm-qualifier,
+.gruvbox.theme-light pre:not(.frontmatter) .token.function,
+.gruvbox.theme-light .HyperMD-codeblock .cm-qualifier,
+.gruvbox.theme-light .HyperMD-codeblock .token.function {
+  color: #b57614;
+}
+.gruvbox.theme-light p > code .token.regex,
+.gruvbox.theme-light pre:not(.frontmatter) .token.regex,
+.gruvbox.theme-light .HyperMD-codeblock .token.regex {
+  background: #797403;
+}
+.gruvbox.theme-light p > code .token.bold,
+.gruvbox.theme-light pre:not(.frontmatter) .token.bold,
+.gruvbox.theme-light .HyperMD-codeblock .token.bold {
+  font-weight: bold;
+}
+.gruvbox.theme-light p > code .token.italic,
+.gruvbox.theme-light pre:not(.frontmatter) .token.italic,
+.gruvbox.theme-light .HyperMD-codeblock .token.italic {
+  font-style: italic;
+}
+.gruvbox.theme-light p > code .token.inserted,
+.gruvbox.theme-light pre:not(.frontmatter) .token.inserted,
+.gruvbox.theme-light .HyperMD-codeblock .token.inserted {
+  background: #7c6f64;
+}
+.gruvbox.theme-light p > code .token.deleted,
+.gruvbox.theme-light pre:not(.frontmatter) .token.deleted,
+.gruvbox.theme-light .HyperMD-codeblock .token.deleted {
+  background: #9d0006;
+}

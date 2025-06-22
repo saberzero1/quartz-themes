@@ -10,12 +10,24 @@ settings:
         allowEmpty: false
         default: matcha
         options:
-            - matcha
-            - dreamscape
-            - peach
-            - pool
-            - strawberry
-            - vanilla
+            -
+                label: Matcha
+                value: matcha
+            -
+                label: Dreamscape
+                value: dreamscape
+            -
+                label: Matcha
+                value: peach
+            -
+                label: Pool
+                value: pool
+            -
+                label: Strawberry
+                value: strawberry
+            -
+                label: Vanilla
+                value: vanilla
 
 */
 
@@ -50,7 +62,7 @@ body {
   --toggle-radius: 5px;
   --toggle-thumb-radius: 5px;
 
-  .workspace-leaf-content[data-type="markdown"] .view-content {
+  .workspace-leaf-content[data-type='markdown'] .view-content {
     background-image: radial-gradient(
       circle at 1px 1px,
       #dddddd 1px,

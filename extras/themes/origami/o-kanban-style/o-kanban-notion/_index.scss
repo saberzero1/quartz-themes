@@ -1,0 +1,16 @@
+.o-kanban-notion .kanban-plugin__item {
+  font-size: 1em;
+  margin-bottom: 5px;
+  border: none;
+  border-left: var(--bb-border-dashed);
+  border-radius: 0;
+}
+
+.o-kanban-notion .kanban-plugin__lane-header-wrapper {
+  border-bottom: var(--bb-border);
+}
+
+.o-kanban-notion .kanban-plugin__lane {
+  background: var(--background-primary);
+  border: 1px solid var(--background-primary);
+}

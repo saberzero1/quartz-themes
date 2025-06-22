@@ -1,0 +1,18 @@
+:root,
+body {
+  & {
+    --tag-radius: 5px;
+    --tag-border-width: 2px;
+  }
+  & .cm-hashtag-begin {
+    display: none;
+  }
+  & a.tag,
+  & .cm-hashtag.cm-hashtag-end {
+    border-right: var(--tag-border-width) solid var(--tag-border-color);
+    border-left: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    padding-left: var(--tag-padding-x);
+    padding-right: var(--tag-padding-x);
+  }
+}

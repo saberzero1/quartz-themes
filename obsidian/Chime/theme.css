@@ -2,12 +2,12 @@
 /* ----- by: Ha'ani Whitlock ----- */
 
 /* ---------- fonts ---------- */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700;800&family=Koh+Santepheap:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Warp&family=Merriweather:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100;200;300;400;500;600;700&family=Averia+Gruesa+Libre&family=Comfortaa:wght@300;400;500;600;700&family=Courgette&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Forum&family=Handlee&family=Hind:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700;800&family=Koh+Santepheap:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Warp&family=Merriweather:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100;200;300;400;500;600;700&family=Averia+Gruesa+Libre&family=Comfortaa:wght@300;400;500;600;700&family=Courgette&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Forum&family=Handlee&family=Hind:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 /* -- custom font -- */
 .custom-font-toggle {
@@ -334,8 +334,8 @@ thead {
   --h5-size: 0.99em;
   --h6-size: 0.98em;
   --h1-line-height: 1.8em;
-  --font-text: "Archivo", Arial, sans-serif;
-  --h1-font: "Linux Libertine", "Georgia", "Times", serif;
+  --font-text: 'Archivo', Arial, sans-serif;
+  --h1-font: 'Linux Libertine', 'Georgia', 'Times', serif;
   --h1-weight: normal;
   --inline-title-color: var(--text-normal);
   --radius-s: 0px;
@@ -404,7 +404,7 @@ thead {
   border-radius: var(--radius-s);
 }
 
-.wiki-page.markdown-preview-view .callout[data-callout*="info"] {
+.wiki-page.markdown-preview-view .callout[data-callout*='info'] {
   float: right;
   clear: right;
   width: 25%;
@@ -414,7 +414,7 @@ thead {
   box-shadow: var(--shadow-s);
   border: 1px solid var(--background-modifier-border);
 }
-.wiki-page.markdown-source-view .callout[data-callout*="info"] {
+.wiki-page.markdown-source-view .callout[data-callout*='info'] {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
@@ -425,7 +425,7 @@ thead {
 }
 
 .wiki-page.markdown-preview-view
-  .callout[data-callout*="info"]
+  .callout[data-callout*='info']
   .callout-content {
   width: 100%;
   display: block;
@@ -433,7 +433,7 @@ thead {
   margin-right: auto;
   padding: 5px;
 }
-.wiki-page.markdown-preview-view .callout[data-callout*="info"] .callout-title {
+.wiki-page.markdown-preview-view .callout[data-callout*='info'] .callout-title {
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
   color: var(--text-normal);
@@ -460,7 +460,7 @@ thead {
 }
 
 .wiki-page.markdown-preview-view
-  .callout[data-callout*="info"]
+  .callout[data-callout*='info']
   .callout-icon
   .svg-icon {
   padding-right: 0.2em;
@@ -617,12 +617,12 @@ body {
 }
 .link-em .internal-link::before,
 .link-em .external-link::before {
-  content: "🡭";
+  content: '🡭';
   margin-right: 0.3em;
   display: inline-block;
   font-size: 0.8em;
   font-weight: 600;
-  font-family: "Noto Sans Symbols 2", sans-serif;
+  font-family: 'Noto Sans Symbols 2', sans-serif;
 }
 
 /* -------- wide page css class -------- */
@@ -682,7 +682,7 @@ body {
 }
 .blockquote-mark .markdown-rendered blockquote::before {
   font-style: normal;
-  content: "❛❛";
+  content: '❛❛';
   display: inline;
   font-size: 2.25em;
   line-height: 0.1em;
@@ -793,7 +793,7 @@ body {
   padding-right: 0px;
 }
 .dataview.inline-field-key::after {
-  content: ":";
+  content: ':';
   margin-left: 0px;
   margin-right: 5px;
 }
@@ -1042,8 +1042,8 @@ h1,
   padding: 0px 10px;
 }
 /* custom callout colors */
-.callout[data-callout="danger"],
-.callout[data-callout="error"] {
+.callout[data-callout='danger'],
+.callout[data-callout='error'] {
   --callout-color: var(--callout-warning);
 }
 body {
@@ -1053,32 +1053,32 @@ body {
 body {
   --checklist-done-decoration: none;
 }
-.checkbox-block input[type="checkbox"]:checked:after {
+.checkbox-block input[type='checkbox']:checked:after {
   background-color: transparent;
   -webkit-mask-image: none;
 }
-.checkbox-block input[type="checkbox"]:checked {
+.checkbox-block input[type='checkbox']:checked {
   background-color: var(--checkbox-color);
   box-shadow: inset 0 0 0 2px var(--background-primary);
 }
-.checkbox-block input[type="checkbox"] {
+.checkbox-block input[type='checkbox'] {
   border-radius: 0px;
 }
-.checkbox-anytype input[type="checkbox"]:checked:after {
+.checkbox-anytype input[type='checkbox']:checked:after {
   background-color: var(--color-green);
   top: 0px;
   bottom: 0px;
   -webkit-mask-size: 100%;
-  -webkit-mask-image: url(<?xmlversion="1.0"?><svgdata-name="Capa 1"id="Capa_1"viewBox="0 0 20 19.84"xmlns="http://www.w3.org/2000/svg"><pathd="M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z"/></svg>);
+  -webkit-mask-image: url(<?xmlversion='1.0'?><svgdata-name='Capa 1'id='Capa_1'viewBox='0 0 20 19.84'xmlns='http://www.w3.org/2000/svg'><pathd='M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z'/></svg>);
 }
-.theme-anytype.checkbox-anytype input[type="checkbox"]:checked:after {
+.theme-anytype.checkbox-anytype input[type='checkbox']:checked:after {
   background-color: #1eabeb;
 }
-.checkbox-anytype input[type="checkbox"]:checked {
+.checkbox-anytype input[type='checkbox']:checked {
   background-color: transparent;
   border-color: transparent !important;
 }
-.checkbox-anytype input[type="checkbox"] {
+.checkbox-anytype input[type='checkbox'] {
   border-radius: 1em;
 }
 
@@ -1107,7 +1107,7 @@ body {
 /* ----- default (Macaroon) theme ----- */
 body,
 .theme-default {
-  --font-default: "Arima", cursive;
+  --font-default: 'Arima', cursive;
 }
 
 .theme-light,
@@ -1197,7 +1197,7 @@ body,
 
 .theme-crystal {
   --font-default:
-    "IBM Plex Sans", "Yu Micho", "Franklin Gothic", "Lucida Sans", sans-serif;
+    'IBM Plex Sans', 'Yu Micho', 'Franklin Gothic', 'Lucida Sans', sans-serif;
   --nav-item-color-active: var(--color-accent);
 }
 .theme-crystal .nav-folder.mod-root > .nav-folder-title {
@@ -1327,7 +1327,7 @@ body,
 }
 
 .theme-ash-old {
-  --font-default: "Hindi", "Moulpali", "Bahnschrift", sans-serif;
+  --font-default: 'Hindi', 'Moulpali', 'Bahnschrift', sans-serif;
   --nav-item-color-active: var(--color-accent);
 }
 
@@ -1412,7 +1412,7 @@ body,
 /* ----- spring theme ----- */
 
 .theme-spring {
-  --font-default: "Courgette", "Handlee", cursive;
+  --font-default: 'Courgette', 'Handlee', cursive;
 }
 
 .theme-spring.colored-bold-and-italic {
@@ -1496,13 +1496,13 @@ body,
 /* ----- novelist theme + novel css class ----- */
 .theme-novelist {
   --font-default:
-    Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face",
-    "Book Antiqua", sans-serif;
+    Merriweather, Georgia, 'Libre Baskerville', 'Baskerville Old Face',
+    'Book Antiqua', sans-serif;
 }
 .novel {
   --font-text:
-    Merriweather, "Libre Baskerville", Georgia, "Baskerville Old Face",
-    "Book Antiqua", Alice, "EB Garamond", sans-serif !important;
+    Merriweather, 'Libre Baskerville', Georgia, 'Baskerville Old Face',
+    'Book Antiqua', Alice, 'EB Garamond', sans-serif !important;
   --inline-title-color: var(--text-normal);
 }
 .novel img {
@@ -1515,7 +1515,7 @@ body,
 
 .theme-novelist .markdown-preview-view br,
 .novel.markdown-preview-view br {
-  content: "";
+  content: '';
   display: block;
   margin-top: 10px;
 }
@@ -1527,7 +1527,7 @@ body,
 .theme-novelist:not(.is-mobile) .markdown-rendered hr::before,
 .theme-novelist .markdown-source-view hr::before {
   font-size: 1.5em;
-  content: "🕮";
+  content: '🕮';
   font-weight: 500;
   display: inline-block;
   position: absolute;
@@ -1672,7 +1672,7 @@ body,
   --accent-h: 92 !important;
   --accent-s: 28% !important;
   --accent-l: 65% !important;
-  --font-default: "Bahnschrift", "Aevnir Next", sans-serif;
+  --font-default: 'Bahnschrift', 'Aevnir Next', sans-serif;
 }
 .theme-nord.theme-light {
   color-scheme: light;
@@ -1747,7 +1747,7 @@ body,
 
 /* ----- classic obsidian theme ----- */
 .theme-classic {
-  --font-default: "Aevnir Next", sans-serif;
+  --font-default: 'Aevnir Next', sans-serif;
 }
 .theme-classic.theme-light {
   color-scheme: light;
@@ -1820,7 +1820,7 @@ body,
 /* ----- light & bright theme ----- */
 
 .theme-light-and-bright {
-  --font-default: "Noto Sans", sans-serif;
+  --font-default: 'Noto Sans', sans-serif;
   --h1-weight: 600;
   --h2-weight: 600;
   --h3-weight: 600;
@@ -1908,7 +1908,7 @@ body,
 .theme-light-and-bright .markdown-rendered hr::before,
 .theme-light-and-bright .markdown-source-view hr::before {
   font-size: 1.5em;
-  content: "✦";
+  content: '✦';
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -1938,7 +1938,7 @@ body,
   --h6-color: var(--color-purple);
 }
 .theme-solarized {
-  --font-default: "Hind", sans-serif;
+  --font-default: 'Hind', sans-serif;
   --accent-h: 18 !important;
   --accent-s: 80% !important;
   --accent-l: 44% !important;
@@ -1995,7 +1995,7 @@ body,
 
 /* ----- gruvbox theme ----- */
 .theme-gruvbox {
-  --font-default: "Hind", sans-serif;
+  --font-default: 'Hind', sans-serif;
 }
 .theme-gruvbox.colorful-headings {
   --h1-color: var(--color-red);
@@ -2150,7 +2150,7 @@ body,
   --callout-title-color: var(--text-normal);
   --callout-quote: 216, 216, 216;
   --callout-radius: 5px;
-  --font-default: "Inter", "Aevnir Next", sans-serif;
+  --font-default: 'Inter', 'Aevnir Next', sans-serif;
   --color-red-rgb: 220, 83, 40;
   --color-red: #dc5328;
   --color-green-rgb: 139, 208, 49;
@@ -2316,7 +2316,7 @@ body,
 /* ------ typography ------ */
 
 .theme-chinchilla {
-  --font-default: "Avenir Next", "Roboto", sans-serif;
+  --font-default: 'Avenir Next', 'Roboto', sans-serif;
 }
 
 /* ----- celestial theme ----- */
@@ -2376,7 +2376,7 @@ body,
 
 .theme-celestial.theme-light {
   color-scheme: light;
-  --font-default: "Yu Gothic", "Inter", sans-serif;
+  --font-default: 'Yu Gothic', 'Inter', sans-serif;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -2411,11 +2411,11 @@ body,
   --color-base-60: #d99e5a;
   --color-base-70: #af7d43;
   --color-base-100: rgb(155, 109, 87);
-  --theme-decoration: "☀️";
+  --theme-decoration: '☀️';
 }
 .theme-celestial.theme-dark {
   color-scheme: dark;
-  --font-default: "Merienda", cursive;
+  --font-default: 'Merienda', cursive;
   --highlight-mix-blend-mode: lighten;
   --background-modifier-border: #3b3f56;
   --mono-rgb-0: 0, 0, 0;
@@ -2450,7 +2450,7 @@ body,
   --color-base-60: #70778e;
   --color-base-70: #8890a6;
   --color-base-100: #989eb2;
-  --theme-decoration: "☾";
+  --theme-decoration: '☾';
   --h1-color: rgb(255, 255, 255);
   --h2-color: white;
   --h3-color: white;
@@ -2468,7 +2468,7 @@ body,
 }
 .theme-celestial.theme-light .markdown-rendered hr,
 .theme-celestial.theme-light .markdown-source-view hr {
-  font-family: "Yu Gothic", "Inter", sans-serif !important;
+  font-family: 'Yu Gothic', 'Inter', sans-serif !important;
 }
 
 /* ----- notion theme ----- */
@@ -2565,8 +2565,8 @@ body,
   --accent-l: 51% !important;
   --callout-quote: 120, 119, 116;
   --font-default:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 /* - alternate colorful headings - */
@@ -2609,7 +2609,7 @@ body,
 }
 
 /* - checkboxes - */
-.theme-notion input[type="checkbox"]:not(:checked) {
+.theme-notion input[type='checkbox']:not(:checked) {
   border: 1.7px solid var(--text-normal);
 }
 /* - lists - */
@@ -2618,7 +2618,7 @@ body,
   --list-marker-color: var(--text-normal);
 }
 
-.theme-notion input[type="checkbox"] {
+.theme-notion input[type='checkbox'] {
   border-radius: 0px;
 }
 .theme-notion.theme-light {
@@ -2986,7 +2986,7 @@ body,
 }
 
 .cards table.dataview thead:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -3047,8 +3047,8 @@ body,
   font-size: var(--font-adaptive-small);
 }
 
-.cards table.dataview thead > tr > th[sortable-style="sortable-asc"],
-.cards table.dataview thead > tr > th[sortable-style="sortable-desc"] {
+.cards table.dataview thead > tr > th[sortable-style='sortable-asc'],
+.cards table.dataview thead > tr > th[sortable-style='sortable-desc'] {
   color: var(--text-normal);
 }
 
@@ -3315,13 +3315,13 @@ body {
 }
 .increased-line-height .markdown-preview-view br,
 .increased-line-height .markdown-preview-view br {
-  content: "";
+  content: '';
   display: block;
   margin-top: 0.5em !important;
 }
 
 /* ---------- style settings ---------- */
-.style-settings-heading[data-id="chime-theme"] .setting-item-name {
+.style-settings-heading[data-id='chime-theme'] .setting-item-name {
   color: var(--color-accent-1);
 }
 

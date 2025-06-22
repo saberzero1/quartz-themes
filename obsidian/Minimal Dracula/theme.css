@@ -189,13 +189,13 @@ body.theme-dark {
 
 .theme-dark textarea,
 .theme-dark input.metadata-input-text,
-.theme-dark input[type="date"],
-.theme-dark input[type="datetime-local"],
-.theme-dark input[type="text"],
-.theme-dark input[type="search"],
-.theme-dark input[type="email"],
-.theme-dark input[type="password"],
-.theme-dark input[type="number"] {
+.theme-dark input[type='date'],
+.theme-dark input[type='datetime-local'],
+.theme-dark input[type='text'],
+.theme-dark input[type='search'],
+.theme-dark input[type='email'],
+.theme-dark input[type='password'],
+.theme-dark input[type='number'] {
   background-color: var(--color-background-4);
 }
 
@@ -282,13 +282,13 @@ body.theme-light {
 
 .theme-light textarea,
 .theme-light input.metadata-input-text,
-.theme-light input[type="date"],
-.theme-light input[type="datetime-local"],
-.theme-light input[type="text"],
-.theme-light input[type="search"],
-.theme-light input[type="email"],
-.theme-light input[type="password"],
-.theme-light input[type="number"] {
+.theme-light input[type='date'],
+.theme-light input[type='datetime-local'],
+.theme-light input[type='text'],
+.theme-light input[type='search'],
+.theme-light input[type='email'],
+.theme-light input[type='password'],
+.theme-light input[type='number'] {
   background-color: var(--color-background-1);
 }
 

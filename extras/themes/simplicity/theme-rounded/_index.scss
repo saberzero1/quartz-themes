@@ -1,79 +1,58 @@
-body.theme-light:not(.theme-rounded) {
-  --background-secondary: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.06
-  ) !important;
+.theme-rounded .workspace-tab-header-container {
+  border-bottom: none !important;
 }
 
-.theme-light:not(.theme-rounded) {
-  --tab-container-background: var(--color-base-00);
+.theme-rounded .workspace .mod-root .workspace-tab-header::after,
+.theme-rounded .workspace-split.mod-root .workspace-tab-header::before,
+.theme-rounded .workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
 }
 
-.theme-light:not(.theme-rounded) .mod-right .workspace-tab-header-container {
-  background-color: var(--color-base-00) !important;
+.theme-rounded
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.theme-rounded .workspace-tab-header .workspace-tab-header-inner-title:hover {
+  color: var(--color-accent) !important;
 }
 
-.theme-light,
-.theme-dark {
-  --background-primary: var(--color-base-00) !important;
-  --background-secondary: var(--color-base-00) !important;
+.theme-rounded .workspace-tab-container {
+  border-radius: 30px;
+  border-top: 13px solid transparent !important;
+  border-right: 13px solid transparent !important;
+  border-bottom: 18px solid transparent !important;
+  border-left: 13px solid transparent !important;
 }
 
-.theme-light
+.theme-rounded .mod-root .mod-stacked .workspace-tab-header {
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.theme-rounded .workspace-leaf-resize-handle {
+  border-color: transparent !important;
+}
+
+.theme-rounded.nav-1 .nav-file-title {
+  border-top: 1px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.other-active-tab.theme-rounded
+  .workspace
   .mod-root
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header.is-active,
-.theme-dark .mod-root .workspace-tab-header.is-active,
-.theme-light .workspace-tab-header-container,
-.theme-light .workspace-ribbon.mod-left,
-.theme-rounded .workspace-tab-container,
-.theme-dark.theme-rounded:not(.theme-black)
-  .workspace-split.mod-root
-  .view-content {
-  background-color: transparent !important;
-  box-shadow: none !important;
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner {
+  background: var(--background-primary) !important;
+  margin-right: 5px;
+  border-radius: 7px;
+  z-index: 2;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.08) !important;
 }
 
-.theme-light .workspace-ribbon.mod-left,
-.theme-dark.theme-rounded .workspace-ribbon.mod-left {
-  border-right: none !important;
-  background-color: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.05
-  ) !important;
-}
-
-.theme-light .workspace-ribbon.mod-left:before,
-.theme-dark.theme-rounded:not(.theme-black) .workspace-ribbon.mod-left:before,
-.theme-dark.theme-black .workspace-ribbon.mod-left:before {
-  //background-color: transparent !important;
-  background-color: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.05
-  ) !important;
-}
-
-.theme-light .workspace-tabs:not(.mod-stacked) .workspace-leaf {
-  border: 1px solid
-    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.22) !important;
-  border-radius: 25px;
-}
-
-.theme-light .workspace-split {
-  background-color: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.06
-  );
-}
-
-body:not(.theme-rounded, .theme-light) .workspace-tab-header-container {
-  background-color: var(--background-secondary) !important;
+.other-active-tab.theme-rounded
+  .workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--text-normal) !important;
+  font-weight: 400 !important;
 }

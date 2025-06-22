@@ -1,0 +1,24 @@
+.folder-rainbow-backgrounds .nav-folder-title {
+  color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color-collapsed: rgb(var(--rainbow-folder-color));
+}
+.folder-rainbow-backgrounds .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), 0.3);
+  color: inherit;
+  --nav-collapse-icon-color: var(--text-normal);
+  --nav-collapse-icon-color-collapsed: var(--text-normal);
+}
+.folder-rainbow-backgrounds.theme-crystal .nav-folder-title,
+.folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), 0.13);
+  border: 0.25px solid rgb(var(--rainbow-folder-color));
+  margin-bottom: 5px;
+  color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color-collapsed: rgb(var(--rainbow-folder-color));
+}
+.folder-rainbow-backgrounds .nav-folder.mod-root .nav-folder .nav-file-title {
+  --rainbow-folder-color: inherit;
+  color: rgb(var(--rainbow-folder-color));
+}

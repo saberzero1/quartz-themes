@@ -1,0 +1,12 @@
+.h3-bottom-border h3,
+.h3-bottom-border .HyperMD-header-3 {
+  padding-bottom: 2px;
+  border-bottom: 1.4px var(--line-style) var(--hr-color);
+}
+
+.h3-bottom-border.colorful-headings.theme-notion h3,
+.h3-bottom-border.colorful-headings.theme-notion .HyperMD-header-3,
+.h3-bottom-border.colorful-headings.theme-anytype h3,
+.h3-bottom-border.colorful-headings.theme-anytype .HyperMD-header-3 {
+  border-bottom: none;
+}

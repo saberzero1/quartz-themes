@@ -1,0 +1,10 @@
+.colorful-tooltips.accent-turquoise .tooltip,
+.colorful-tooltips.accent-mustard .tooltip,
+.colorful-tooltips.accent-bubblegum .tooltip,
+.colorful-tooltips.accent-pumpkin .tooltip {
+  color: var(--text-on-accent);
+}
+
+.colorful-tooltips .tooltip {
+  background-color: var(--color-accent);
+}

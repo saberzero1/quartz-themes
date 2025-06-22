@@ -29,7 +29,7 @@
   border-radius: 0px;
 
   &::after {
-    content: "";
+    content: '';
     background: linear-gradient(
       90deg,
       rgba(var(--color-rgb), 0.5) 0% transparent 53px,
@@ -45,7 +45,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     background: rgba(var(--color-rgb), 0.3) !important;
     position: absolute;
     left: 0px;

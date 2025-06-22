@@ -1,0 +1,14 @@
+.is-live-preview .cm-embed-block:not(.cm-table-widget):hover {
+  box-shadow: none;
+}
+.tooltip:not(.mod-error),
+.is-live-preview
+  .cm-embed-block:not(.cm-table-widget):hover
+  .edit-block-button {
+  display: none;
+}
+.modal-container + .tooltip,
+.app-container:has(.mod-active .workspace-leaf-content[data-type=' '])
+  ~ .tooltip {
+  display: unset;
+}

@@ -1,0 +1,4 @@
+.callout[data-callout='info'] {
+  --h6-background: rgba(var(--callout-color), 20%);
+  /* make header 6 match callout color */
+}

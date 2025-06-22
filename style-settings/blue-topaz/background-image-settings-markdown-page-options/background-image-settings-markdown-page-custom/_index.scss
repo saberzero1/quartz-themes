@@ -1,0 +1,8 @@
+body.background-image-settings-switch.background-image-settings-markdown-page-custom
+  .workspace-split.mod-root
+  .workspace-leaf
+  .workspace-leaf-content[data-type='markdown']::before {
+  background-size: unset;
+  background-color: var(--custom-markdown-page-background-color);
+  opacity: var(--bg-markdown-page-opacity-cp, 1);
+}

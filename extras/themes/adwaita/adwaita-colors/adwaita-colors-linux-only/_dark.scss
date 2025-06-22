@@ -1,0 +1,17 @@
+bod.mod-linux.theme-dark {
+  --titlebar-text-color: #919191;
+  --icon-color: #929292;
+  --icon-color-hover: #929292;
+  --icon-color-focused: #929292;
+  --tab-text-color: #929292;
+  --tab-text-color-focused: #8a8a8a;
+  --tab-text-color-focused-active-current: #8a8a8a;
+  --background-modifier-hover: #323232;
+}
+
+bod.mod-linux.is-focused
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container,
+bod.mod-linux.is-focused .sidebar-toggle-button {
+  --background-modifier-hover: #464646;
+}

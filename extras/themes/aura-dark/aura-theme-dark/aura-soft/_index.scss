@@ -1,0 +1,20 @@
+.clickable-icon.aura-soft:hover,
+.clickable-icon.aura-soft:hover svg,
+.is-focused.aura-soft .titlebar-inner.aura-soft {
+  color: #61ffca;
+}
+
+body.aura-soft:not(.is-grabbing) .nav-file-title.is-active.aura-soft:hover,
+body.aura-soft:not(.is-grabbing) .nav-folder-title.is-active.aura-soft:hover,
+.nav-file-title.is-active.aura-soft,
+.nav-folder-title.is-active.aura-soft {
+  color: #a277ff;
+}
+
+.dropdown.aura-soft {
+  background-color: #3d375e7f;
+}
+
+.dropdown.aura-soft:hover {
+  background-color: #af8aff7f;
+}

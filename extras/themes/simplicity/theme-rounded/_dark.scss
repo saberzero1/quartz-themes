@@ -1,0 +1,102 @@
+.theme-rounded.theme-light,
+.theme-rounded.theme-dark {
+  --background-primary: var(--color-base-00) !important;
+  --background-secondary: var(--color-base-00) !important;
+}
+
+.theme-rounded:not(.theme-black) {
+  --background-primary: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.01
+  ) !important;
+}
+
+.theme-rounded.theme-light
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active,
+.theme-rounded.theme-dark .mod-root .workspace-tab-header.is-active,
+.theme-rounded.theme-light .workspace-tab-header-container,
+.theme-rounded.theme-light .workspace-ribbon.mod-left,
+.theme-rounded .workspace-tab-container,
+.theme-rounded:not(.theme-black) .workspace-split.mod-root .view-content {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.theme-rounded.theme-dark:not(.theme-black) .workspace-tab-header-container,
+.theme-rounded:not(.theme-black) .workspace-ribbon.mod-left,
+.theme-rounded:not(.theme-black) .mod-root .workspace-tabs .workspace-leaf {
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.06
+  ) !important;
+}
+
+.theme-rounded.theme-light .workspace-ribbon.mod-left,
+.theme-rounded .workspace-ribbon.mod-left {
+  border-right: none !important;
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  ) !important;
+}
+
+.theme-rounded.theme-light .workspace-ribbon.mod-left:before,
+.theme-rounded:not(.theme-black) .workspace-ribbon.mod-left:before,
+.theme-dar.theme-black .workspace-ribbon.mod-left:before {
+  background-color: transparent !important;
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  ) !important;
+}
+
+.theme-rounded:not(.theme-black) .workspace-ribbon.mod-left {
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.06
+  ) !important;
+}
+
+.theme-rounded.theme-black .workspace-tab-header.is-active,
+.theme-rounded.theme-black .workspace-tab-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.theme-rounded.theme-dark .workspace-leaf {
+  border: 1px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
+  border-radius: 25px;
+}
+
+.theme-rounded.theme-black .workspace-split {
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.05
+  ) !important;
+}
+
+.theme-rounded.theme-black
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container {
+  background-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.005
+  ) !important;
+  background-color: transparent !important;
+}

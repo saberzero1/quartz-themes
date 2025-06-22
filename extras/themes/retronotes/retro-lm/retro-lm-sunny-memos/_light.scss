@@ -1,0 +1,40 @@
+.retro-lm-sunny-memos.theme-light {
+  /* Base Color */
+  --color-base-00: #ffeed9;
+  --color-base-05: #ffe6c5;
+  --color-base-10: #ffddb1;
+  --color-base-20: #ffcc8a;
+  --color-base-25: #ffc476;
+  --color-base-30: #ffbb63;
+  --color-base-35: #ffb34f;
+  --color-base-40: #ffaa3c;
+  --color-base-50: #b45e19;
+  --color-base-60: #ec8600;
+  --color-base-70: #c57000;
+  --color-base-100: #4f2d00;
+  /* Accent color = --color-base-50 */
+  --accent-h: 26.7 !important;
+  --accent-s: 75.6% !important;
+  --accent-l: 40.2% !important;
+  /* Sunny Memos Variables */
+  --main-ink: var(--brown-ink);
+  --main-ink-muted: var(--brown-ink-muted);
+  --main-ink-fainted: var(--brown-ink-fainted);
+  --secondary-ink: var(--darkbrown-ink);
+  --secondary-ink-muted: var(--darkbrown-ink-muted);
+  --secondary-ink-fainted: var(--darkbrown-ink-fainted);
+  --bold-accent-ink: var(--darkgreen-ink);
+  --italic-accent-ink: var(--darkblue-ink);
+  --leather-color: #6a3a29;
+  --leather-color-alt: #864a34;
+  --leather-color-rgb: 106, 58, 41;
+  --leather-contrast-color: var(--white-ink);
+  --leather-contrast-color-muted: var(--white-ink-muted);
+  --paper-color: rgba(255, 238, 216, 0.9);
+  --checkbox-marker-color: var(--darkbrown-ink);
+  --interactive-accent: var(--color-base-50);
+}
+
+.retro-lm-sunny-memos.theme-light .vertical-tab-header-group-title {
+  color: var(--color-base-40);
+}

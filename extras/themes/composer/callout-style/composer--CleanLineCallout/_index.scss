@@ -1,0 +1,34 @@
+.composer--CleanLineCallout .callout {
+  background-color: transparent;
+}
+
+.composer--CleanLineCallout .callout-title {
+  position: relative;
+  padding: 0px 0px 8px 0px;
+}
+
+.composer--CleanLineCallout .callout.is-collapsed .callout-title {
+  padding: initial;
+}
+
+.composer--CleanLineCallout .callout.is-collapsed .callout-title::after {
+  display: none;
+  height: 0px;
+  background: initial;
+}
+
+.composer--CleanLineCallout .callout-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(var(--callout-color), 0.1) 0%,
+    rgba(var(--callout-color), 0.6) 12%,
+    rgba(var(--callout-color), 0.1) 62%,
+    transparent 100%
+  );
+}

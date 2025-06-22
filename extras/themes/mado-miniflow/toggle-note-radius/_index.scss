@@ -1,0 +1,6 @@
+body.toggle-note-radius
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header {
+  border-bottom-left-radius: var(--window-radius);
+}

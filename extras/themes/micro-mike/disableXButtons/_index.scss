@@ -1,0 +1,31 @@
+.disableXButtons
+  .workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner {
+  padding-right: 3px;
+}
+
+.disableXButtons
+  .workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-close-button {
+  display: none !important;
+}
+
+.disableXButtons.stackTabs
+  .workspace
+  .mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-close-button {
+  display: none !important;
+}

@@ -1,0 +1,4 @@
+body.header-2-background .cm-header-2,
+body.header-2-background :is(.markdown-preview-view, .markdown-rendered) h2 {
+  background-color: var(--h2-bg-color);
+}

@@ -1,0 +1,34 @@
+,
+.theme-light {
+  --outer-bar: #eef3fd;
+  --side-bar: var(--note);
+  --note: #f8fbff;
+  --accent-color: 232, 175, 142;
+  --accent: #e8af8e;
+  --lite-accent: #c48a69;
+  --accent2: #a9523c;
+  --accent2-lite: #e57858;
+  --dark-accent: #dc8a67;
+  --deep-dark-accent: #7b4430;
+  --headers: #e19363;
+  --text: #697580;
+  --soft-text: #cf9870;
+  --code-text: #ea7542;
+  --i-at: #c16e43;
+  --folder-open: #edb595;
+  --folder: #ba5d4b;
+  --fg: #91542e;
+  --tag: #e48751;
+  --table: #ccd6eb;
+  --hr: #cfc2bb;
+  --th: var(--dark-accent);
+  --highlight: rgba(255, 158, 89, 0.4);
+  --hvr: rgba(253, 157, 115, 0.25);
+  --hvr-active: rgba(255, 158, 89, 0.4);
+  --theme-rainbow-1: var(--headers);
+  --theme-rainbow-2: var(--soft-text);
+  --theme-rainbow-3: var(--i-at);
+  --theme-rainbow-4: var(--file-icon-color);
+  --theme-rainbow-5: var(--tag);
+  --theme-rainbow-6: var(--file-icon-color);
+}

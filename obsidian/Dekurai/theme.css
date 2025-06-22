@@ -1,8 +1,8 @@
 :root {
-  --default-font: "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif;
+  --default-font: 'Segoe UI', 'Arial', 'Tahoma', 'Helvetica', sans-serif;
   --font-monospace:
-    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
-    "Arial", sans-serif;
+    'Consolas', 'Fira Code', 'Source Code Pro', 'Droid Sans Mono', 'Monoid',
+    'Arial', sans-serif;
 }
 
 .theme-dark {
@@ -163,7 +163,7 @@ body:not(.is-grabbing) .nav-file-title.is-selected:hover {
 }
 
 .HyperMD-quote.HyperMD-quote-1.cm-line::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -0.2rem;
   top: 0;
@@ -196,7 +196,7 @@ body:not(.is-grabbing) .nav-file-title.is-selected:hover {
 
 /* search prev*/
 .markdown-rendered .search-highlight > div.is-active::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.35rem;
   left: 0;
@@ -211,7 +211,7 @@ body:not(.is-grabbing) .nav-file-title.is-selected:hover {
 
 /* search prev other*/
 .markdown-rendered .search-highlight > div::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.35rem;
   left: 0;
@@ -329,16 +329,16 @@ body:not(.no-codeblock-line-numbers)
 
 body:not(.no-codeblock-line-numbers)
   .markdown-reading-view
-  pre[class*="language-"]::before {
+  pre[class*='language-']::before {
   display: block;
-  content: " ";
+  content: ' ';
   line-height: 1.5em;
   background-color: var(--code-block-alt-bg);
   border-top-right-radius: calc(var(--codeblock-roundness) * 0.8);
   border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
 }
 
-body:not(.no-codeblock-line-numbers) pre[class*="language-"]::after {
+body:not(.no-codeblock-line-numbers) pre[class*='language-']::after {
   content: attr(class);
   font-size: 0.9rem;
   text-shadow: none;
@@ -389,7 +389,7 @@ body:not(.no-codeblock-line-numbers) .markdown-preview-view pre code {
 }
 
 /* hide attachments folder */
-div[data-path="0attachments"] {
+div[data-path='0attachments'] {
   display: none;
 }
 

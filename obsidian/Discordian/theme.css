@@ -221,9 +221,9 @@ body,
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
-  -webkit-font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  font-feature-settings: "tnum";
+  -webkit-font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
   -webkit-font-variant-numeric: tabular-nums;
   -moz-font-variant-numeric: tabular-nums;
   font-variant-numeric: tabular-nums;
@@ -252,11 +252,11 @@ body,
 }
 
 button,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
 .splash-brand-name,
 .dropdown,
 .setting-hotkey,
@@ -275,22 +275,22 @@ button {
     color 0.17s ease;
 }
 
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
   font-size: 0.875rem;
   color: var(--text-muted);
   border-radius: 4px;
   background-color: var(--discord-dark) !important;
 }
 
-input[type="text"]:focus-within,
-input[type="search"]:focus-within,
-input[type="email"]:focus-within,
-input[type="password"]:focus-within,
-input[type="number"]:focus-within {
+input[type='text']:focus-within,
+input[type='search']:focus-within,
+input[type='email']:focus-within,
+input[type='password']:focus-within,
+input[type='number']:focus-within {
   color: var(--text-normal);
 }
 
@@ -1317,9 +1317,9 @@ Navigation & File Explorer */
   color: var(--text-muted) !important;
   background-color: var(--background-secondary);
   display: inline-flex;
-  -webkit-font-feature-settings: "tnum" !important;
-  -moz-font-feature-settings: "tnum" !important;
-  font-feature-settings: "tnum" !important;
+  -webkit-font-feature-settings: 'tnum' !important;
+  -moz-font-feature-settings: 'tnum' !important;
+  font-feature-settings: 'tnum' !important;
   -webkit-font-variant-numeric: tabular-nums !important;
   -moz-font-variant-numeric: tabular-nums !important;
 }
@@ -1613,7 +1613,7 @@ Header */
 }
 
 .view-header::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   left: 0;
@@ -1644,7 +1644,7 @@ Header */
 /* fix the long-title-obscuring shadows */
 .workspace-leaf.mod-active .view-header-title-container::after,
 .view-header-title-container::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   right: 0;
@@ -1670,7 +1670,7 @@ Header */
 }
 
 .workspace-leaf-content .view-content,
-.workspace-leaf-content[data-type="tag"] {
+.workspace-leaf-content[data-type='tag'] {
   padding: 10px;
 }
 
@@ -1786,7 +1786,7 @@ ul ul ul {
 }
 
 ul > li:not(.task-list-item)::before {
-  content: "\2022";
+  content: '\2022';
   color: var(--text-faint);
   font-weight: 400;
   display: inline-block;
@@ -1813,7 +1813,7 @@ ol > li {
 }
 
 ol > li::before {
-  content: counter(counter) ". ";
+  content: counter(counter) '. ';
   color: var(--text-faint);
   position: absolute;
   text-align: right;
@@ -1829,7 +1829,7 @@ ol > li::before {
 TASK LISTS
 ----------------------------------------------------------------*/
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
   padding: 0;
@@ -1839,13 +1839,13 @@ input[type="checkbox"] {
   border-radius: 3px;
 }
 
-input[type="checkbox"]:focus,
-input[type="checkbox"]:hover {
+input[type='checkbox']:focus,
+input[type='checkbox']:hover {
   outline: 0;
   border-color: var(--text-faint);
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background-color: var(--discord-blue) !important;
   border: 1px solid var(--discord-blue);
   background-position: center;
@@ -1912,18 +1912,18 @@ FOR DEFAULT BEHAVIOUR PLEASE REMOVE THIS WHOLE SECTION TILL END */
 
 /* HACK: makes unchecked task same size as checked one */
 .discordian-pretty-tasks-editor .cm-s-obsidian span.cm-formatting-task::after {
-  content: "\0020\0020\0020\0020";
+  content: '\0020\0020\0020\0020';
   color: transparent;
 }
 
-.discordian-pretty-tasks-editor input[type="checkbox"]:checked,
+.discordian-pretty-tasks-editor input[type='checkbox']:checked,
 .discordian-pretty-tasks-editor .cm-formatting-task.cm-property {
   background-color: var(--discord-blue) !important;
   border: 1px solid var(--discord-blue);
 }
 
 .discordian-pretty-tasks-editor .cm-formatting-task.cm-property::after {
-  content: "\0020\0020\0020" !important;
+  content: '\0020\0020\0020' !important;
   color: transparent !important;
 }
 
@@ -2366,8 +2366,8 @@ span.cm-inline-code.cm-hmd-indented-code,
 /*----------------------------------------------------------------
 preview */
 
-.theme-dark :not(pre) > code[class*="language-"],
-.theme-dark pre[class*="language-"] {
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
   background: var(--background-code-preview);
   text-shadow: unset !important;
   padding: 6px 10px;
@@ -2394,7 +2394,7 @@ preview */
   font-size: 100%;
 }
 
-pre.frontmatter[class*="language-"] {
+pre.frontmatter[class*='language-'] {
   background-color: transparent;
   text-shadow: unset !important;
   color: var(--text-normal) !important;
@@ -2436,7 +2436,7 @@ frontmatter */
 }
 
 .frontmatter-container .frontmatter-section-label::after {
-  content: ":";
+  content: ':';
   display: inline-block;
 }
 
@@ -2535,7 +2535,7 @@ Settings Modal */
 
 .modal.mod-settings .modal-close-button::after {
   position: absolute;
-  content: "ESC";
+  content: 'ESC';
   font-weight: 600;
   font-size: 13px;
   text-align: right;
@@ -2809,7 +2809,7 @@ input.prompt-input:focus-within {
 }
 
 .prompt-instruction:first-of-type::before {
-  content: "tips:";
+  content: 'tips:';
   text-transform: uppercase;
   color: var(--interactive-accent);
   margin-right: 0.5rem;
@@ -2953,7 +2953,7 @@ button.mod-cta a:hover {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%238D9196' d='M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.clickable-icon[aria-label="Delete workspace"] {
+.clickable-icon[aria-label='Delete workspace'] {
   margin-top: 4px;
 }
 
@@ -3046,7 +3046,7 @@ Graph controls */
   width: 100%;
 }
 
-.graph-controls .clickable-icon[aria-label="Delete group"] > svg {
+.graph-controls .clickable-icon[aria-label='Delete group'] > svg {
   margin-top: -2px;
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%238D9196' d='M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z'%3E%3C/path%3E%3C/svg%3E") !important;
 }
@@ -3315,7 +3315,7 @@ Internal Queries */
 .markdown-preview-view
   .internal-query.is-embed
   .internal-query-header-title::after {
-  content: "";
+  content: '';
 }
 
 /* Seamless internal queries - no scrollbar */
@@ -3385,7 +3385,7 @@ body.discordian-theme.discordian-rel-preview
   ul
   ul::before,
 body:not(.discordian-theme) .markdown-preview-view ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--text-muted);
   opacity: 0.2;
   position: absolute;
@@ -3484,15 +3484,15 @@ IMAGES RELATED ADD-ONS
 /*----------------------------------------------------------------
 Floating images with captions by @radekkozak */
 
-.markdown-preview-view .image-embed:not([src$="left"]):not([src$="right"]),
-.markdown-preview-view .image-embed[src$="center"] {
+.markdown-preview-view .image-embed:not([src$='left']):not([src$='right']),
+.markdown-preview-view .image-embed[src$='center'] {
   clear: both;
   margin: 1rem auto;
   width: fit-content;
 }
 
 .markdown-preview-view.img-captions
-  .image-embed:not([src$="left"]):not([src$="right"])::after {
+  .image-embed:not([src$='left']):not([src$='right'])::after {
   content: attr(alt);
   padding: 0 1rem 0 1rem;
   margin-top: 1rem;
@@ -3502,7 +3502,7 @@ Floating images with captions by @radekkozak */
   font-size: 0.8125rem;
 }
 
-.markdown-preview-view .image-embed[src$="left"] {
+.markdown-preview-view .image-embed[src$='left'] {
   position: relative;
   float: left;
   margin-right: 2rem;
@@ -3513,7 +3513,7 @@ Floating images with captions by @radekkozak */
   width: fit-content;
 }
 
-.markdown-preview-view.img-captions .image-embed[src$="left"]::after {
+.markdown-preview-view.img-captions .image-embed[src$='left']::after {
   content: attr(alt);
   padding: 0 1rem 0 1rem;
   margin-top: 1rem;
@@ -3523,7 +3523,7 @@ Floating images with captions by @radekkozak */
   font-size: 0.8125rem;
 }
 
-.markdown-preview-view .image-embed[src$="right"] {
+.markdown-preview-view .image-embed[src$='right'] {
   position: relative;
   float: right;
   margin-top: 1rem;
@@ -3534,7 +3534,7 @@ Floating images with captions by @radekkozak */
   width: fit-content;
 }
 
-.markdown-preview-view.img-captions .image-embed[src$="right"]::after {
+.markdown-preview-view.img-captions .image-embed[src$='right']::after {
   content: attr(alt);
   padding: 0 1rem 0 1rem;
   margin-top: 1rem;
@@ -3548,7 +3548,7 @@ Floating images with captions by @radekkozak */
 Modified masonry-like gallery (image grids)
 Original credits to @kepano */
 
-.img-grid .markdown-preview-section > div > p > .image-embed[alt*="."] {
+.img-grid .markdown-preview-section > div > p > .image-embed[alt*='.'] {
   padding: 0 0.75rem 0 0.75rem;
 }
 
@@ -3556,7 +3556,7 @@ Original credits to @kepano */
   .markdown-preview-section
   > div
   > p
-  > .image-embed[alt*="."]:last-child {
+  > .image-embed[alt*='.']:last-child {
   padding-right: 0;
 }
 
@@ -3564,7 +3564,7 @@ Original credits to @kepano */
   .markdown-preview-section
   > div
   > p
-  > .image-embed[alt*="."]:first-child {
+  > .image-embed[alt*='.']:first-child {
   padding-left: 0;
 }
 
@@ -3578,11 +3578,11 @@ Explanation is this:
 When no alt pipe is used by the user, Obsidian will add alt text in the form of "filename.ext" by default.
 This rule targets any image embeds with a period in it (BE AWARE) to make image grids possible */
 
-.img-grid span.image-embed[alt*="."] {
+.img-grid span.image-embed[alt*='.'] {
   display: table-cell;
 }
 
-.img-grid img[alt*="."] {
+.img-grid img[alt*='.'] {
   max-height: 33vh;
   object-fit: cover;
 }
@@ -3781,7 +3781,7 @@ body.discordian-theme.is-fullscreen .modal-container {
 CALENDAR PLUGIN v1.4.11
 ----------------------------------------------------------------*/
 
-.workspace-leaf-content[data-type="calendar"] .view-content {
+.workspace-leaf-content[data-type='calendar'] .view-content {
   padding: 5px 0 0 0;
 }
 
@@ -3928,7 +3928,7 @@ body.plugin-sliding-panes-rotate-header
   > .workspace-leaf-content
   > .view-header
   > .view-header-title-container::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   bottom: 100px !important;
   top: unset;
@@ -4110,7 +4110,7 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(
 ADVANCED TABLES v0.11.0
 ----------------------------------------------------------------*/
 
-.workspace-leaf-content[data-type="advanced-tables-toolbar"]
+.workspace-leaf-content[data-type='advanced-tables-toolbar']
   .nav-action-button
   svg.widget-icon {
   width: 20px;
@@ -4322,8 +4322,8 @@ DISCORD ORIGINAL MARKINGS */
 
 /* codeblocks in Preview */
 
-.discordian-original-markings.theme-dark :not(pre) > code[class*="language-"],
-.discordian-original-markings.theme-dark pre[class*="language-"] {
+.discordian-original-markings.theme-dark :not(pre) > code[class*='language-'],
+.discordian-original-markings.theme-dark pre[class*='language-'] {
   background-color: var(--background-secondary);
   border: 1px solid var(--background-secondary-alt);
 }

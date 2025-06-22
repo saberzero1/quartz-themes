@@ -1,37 +1,25 @@
-.theme-light {
-  --accent-h: 323;
-  --accent-s: 30%;
-  --accent-l: 65%;
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 225, 120, 132;
-  --color-red: #e17884;
-  --color-green-rgb: 117, 194, 151;
-  --color-green: #75c297;
-  --color-orange-rgb: 241, 144, 112;
-  --color-orange: #f19070;
-  --color-yellow-rgb: 255, 168, 46;
-  --color-yellow: #dcb46f;
-  --color-cyan-rgb: 111, 210, 194;
-  --color-cyan: #6fd2c2;
-  --color-blue-rgb: 136, 198, 227;
-  --color-blue: #88c6e3;
-  --color-purple-rgb: 181, 132, 199;
-  --color-purple: #b584c7;
-  --color-pink-rgb: 220, 118, 167;
-  --color-pink: #dc76a7;
-  --color-base-00: #f8f3f2;
-  --color-base-05: #faf3f1;
-  --color-base-10: #f0e9e4;
-  --color-base-20: #f4ebeb;
-  --color-base-25: #d9c9ca;
-  --color-base-30: #cec2c577;
-  --color-base-35: #b5a7ac;
-  --color-base-40: #b6a4b2;
-  --color-base-50: #a391a3;
-  --color-base-60: #867786;
-  --color-base-70: #685a68;
-  --color-base-100: #594f67;
+.theme-default .horizontal-tab-nav-item.is-active {
+  color: var(--text-on-accent) !important;
+}
+
+.colorful-headings-alt.theme-default {
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-blue);
+}
+
+.colorful-headings.theme-default {
+  --h1-color: rgb(217, 174, 180);
+  --h2-color: rgb(218, 178, 201);
+  --h3-color: rgb(200, 165, 200);
+  --h4-color: rgb(191, 165, 199);
+  --h5-color: rgb(158, 142, 184);
+  --h6-color: rgb(156, 156, 190);
+}
+
+.theme-default {
+  --font-default: 'Arima', cursive;
 }

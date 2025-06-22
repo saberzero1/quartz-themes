@@ -1,0 +1,6 @@
+body {
+  --scrollbar-bg: transparent;
+}
+body div.modal-content.vertical-tabs-container ::-webkit-scrollbar-thumb {
+  display: none;
+}

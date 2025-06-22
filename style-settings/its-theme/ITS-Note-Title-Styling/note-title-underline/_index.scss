@@ -1,0 +1,26 @@
+.note-title-underline.note-title-underline
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+.note-title-underline.note-title-underline
+  .workspace-leaf-content
+  .view-header {
+  border-bottom: 4px solid transparent;
+}
+.note-title-underline.note-title-underline
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+.note-title-underline.note-title-underline
+  .workspace-leaf.mod-active
+  .view-header {
+  border-bottom-color: var(--note-title-border-color);
+}
+.note-title-underline.note-title-underline
+  .workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header {
+  border-right: 4px solid var(--note-title-border-color);
+}

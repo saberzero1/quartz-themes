@@ -1,20 +1,19 @@
-body.mod-right-split-background-transparent-light:not(.card-layout-open-light) {
-  --background-mod-right-split: var(--background-primary) !important;
+body.mod-right-split-background-transparent-light
+  .setting-item[data-id='background-mod-right-split-light'],
+body.mod-right-split-background-transparent-light
+  .setting-item[data-id='background-mod-right-CSS-light'],
+body.mod-right-split-background-transparent-light
+  .setting-item[data-id='background-mod-right-CSS-blend-mode-light'],
+body.mod-right-split-background-transparent-light
+  .setting-item[data-id='background-mod-right-CSS-backdrop-filter-light'] {
+  display: none;
 }
 
-body.card-layout-open-light {
+body.theme-ligh.card-layout-open-light {
   --background-mod-right-split: transparent !important;
 }
 
-body.theme-light:not(
-    .is-mobile
-  ).card-layout-open-light.mod-right-split-background-transparent-light
-  .mod-right-split
-  .workspace-tab-container {
-  --card-shadow-light: transparent;
-}
-
-body.card-layout-open-light.tab-autohide
+body.theme-ligh.card-layout-open-light.tab-autohide
   .mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-container

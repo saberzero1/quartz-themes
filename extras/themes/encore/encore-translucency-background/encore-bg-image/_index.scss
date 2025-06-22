@@ -1,0 +1,14 @@
+body.encore-translucency.encore-bg-image .app-container {
+  background-image: var(--encore-translucency-image);
+  background-size: cover;
+}
+
+body.encore-translucency.encore-bg-image .app-container::before {
+  position: fixed;
+  inset: 0;
+  content: '';
+  background: transparent;
+  backdrop-filter: blur(
+    calc(1px * pow(var(--encore-translucency-blur-amount, 10), 2))
+  );
+}

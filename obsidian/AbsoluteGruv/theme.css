@@ -1,7 +1,7 @@
 /* 1. Font */
 body {
   /* font stacks taken directly from Notion */
-  --font-monospace: "Source Code Pro", "Source Code Pro", "Source Code Pro";
+  --font-monospace: 'Source Code Pro', 'Source Code Pro', 'Source Code Pro';
   -webkit-font-smoothing: auto;
 }
 
@@ -143,10 +143,10 @@ body {
   --text-selection: rgba(189, 174, 147, 0.5); /* light3 */
 }
 
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }
@@ -526,7 +526,7 @@ ul ul {
 }
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--dim-blue);
   position: absolute;
 }
@@ -708,16 +708,16 @@ body:not(.show-scrollbar) ::-webkit-scrollbar {
 
 body:not(.show-scrollbar)
   .workspace-split.mod-root
-  .workspace-leaf-content[data-type="style-settings"]
+  .workspace-leaf-content[data-type='style-settings']
   ::-webkit-scrollbar {
   display: none;
 }
 
-.workspace-split.mod-root .workspace-leaf-content[data-type="style-settings"] {
+.workspace-split.mod-root .workspace-leaf-content[data-type='style-settings'] {
   font-size: var(--menu-font-size);
 }
 
-.mod-root .workspace-leaf-content[data-type="style-settings"] .view-content {
+.mod-root .workspace-leaf-content[data-type='style-settings'] .view-content {
   padding: 20px;
 }
 

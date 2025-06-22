@@ -1,0 +1,14 @@
+.link-glow.theme-dark .cm-hmd-internal-link {
+  --link-color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
+  color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
+  text-shadow:
+    0px 0px 40px hsl(var(--accent-h), var(--accent-s), 75%),
+    0px 0px 10px hsl(var(--accent-h), var(--accent-s), 50%);
+  text-decoration: underline var(--link-decoration-color-active) solid
+    var(--link-decoration-thickness) !important;
+  opacity: 1;
+  --link-unresolved-opacity: 1;
+}
+.link-glow.theme-dark .cm-hmd-internal-link .cm-underline {
+  color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
+}

@@ -1,0 +1,9 @@
+body.left-roll .nav-files-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+body.left-roll .nav-files-container > * {
+  min-width: var(--left-roll-min-width);
+}

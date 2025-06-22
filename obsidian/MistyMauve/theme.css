@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Arvo";
+  font-family: 'Arvo';
   /* Add other properties here, as needed. For example: */
   /*
     font-weight: 100 900;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Permanent Marker";
+  font-family: 'Permanent Marker';
   /* Add other properties here, as needed. For example: */
   /*
     font-weight: 100 900;
@@ -38,8 +38,8 @@
   --color-light-carmine-pink: #e26868;
 
   /* Font Preset */
-  --arvo-bold: "Arvo", serif;
-  --permanent-marker: "Permanent Marker", cursive;
+  --arvo-bold: 'Arvo', serif;
+  --permanent-marker: 'Permanent Marker', cursive;
 }
 body {
   /* Headings */
@@ -93,14 +93,14 @@ body {
 
   /* Icon */
   --search-icon-color: var(--color-tulip);
-  [class*="icon"],
-  [class*="titlebar-button"] {
+  [class*='icon'],
+  [class*='titlebar-button'] {
     color: var(--color-tulip);
     border-radius: 20%;
     transition: 0.5s;
   }
 
-  [class*="icon"]:hover {
+  [class*='icon']:hover {
     animation: zoom-in-zoom-out 0.8s infinite;
   }
 

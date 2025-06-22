@@ -1,0 +1,7 @@
+.hide-file-tabs .workspace-ribbon.mod-left:before {
+  background-color: var(--background-primary) !important;
+}
+
+.hide-file-tabs:not(.flat-mode) .workspace-tab-header-container {
+  background-color: var(--background-primary) !important;
+}

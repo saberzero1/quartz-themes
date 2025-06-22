@@ -523,15 +523,15 @@ body {
   border-radius: var(--list-radius-medium);
 }
 /* Adds Neumorphic styling to the "Search Settings" button */
-.clickable-icon[aria-label="Search settings"] {
+.clickable-icon[aria-label='Search settings'] {
   border-radius: var(--button-radius-medium);
   box-shadow: var(--shadow);
 }
-.clickable-icon[aria-label="Search settings"]:hover {
+.clickable-icon[aria-label='Search settings']:hover {
   background-color: var(--background-modifier-hover);
   box-shadow: var(--shadow-hover);
 }
-.clickable-icon[aria-label="Search settings"]:active {
+.clickable-icon[aria-label='Search settings']:active {
   box-shadow: var(--shadow-active);
 }
 /* Adds Neumorphic styling to the "Clear search" button */
@@ -829,7 +829,7 @@ h1 {
   /* Adjust the space between the header text and the bar */
 }
 h1::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: 0;
@@ -847,7 +847,7 @@ h2 {
   /* Adjust the space between the header text and the bar */
 }
 h2::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: 0;
@@ -923,14 +923,14 @@ h2::after {
   box-shadow: var(--shadow-active);
 }
 /* Adds Neumorphic styling to sliders*/
-input[type="range"] {
+input[type='range'] {
   background-color: var(--color-primary);
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   box-shadow: var(--toggle-thumb-shadow);
   transition: none;
 }
-input[type="range"]::-webkit-slider-thumb:is(:hover, :active) {
+input[type='range']::-webkit-slider-thumb:is(:hover, :active) {
   box-shadow: var(--toggle-thumb-shadow);
   outline-offset: 2px;
   outline: 2px solid var(--background-modifier-border-hover);
@@ -938,7 +938,7 @@ input[type="range"]::-webkit-slider-thumb:is(:hover, :active) {
   border-color: var(--slider-thumb-border-color);
 }
 body:not(.is-mobile)
-  input[type="range"]:is(:focus, :focus-visible)::-webkit-slider-thumb {
+  input[type='range']:is(:focus, :focus-visible)::-webkit-slider-thumb {
   box-shadow: var(--toggle-thumb-shadow);
   outline-offset: 2px;
   outline: 2px solid var(--background-modifier-border-focus);
@@ -1380,7 +1380,7 @@ body:not(.is-mobile).theme-dark .workspace-split.mod-right-split {
   border-top-left-radius: 0px !important;
 }
 body:not(.is-mobile) .workspace::before {
-  content: " ";
+  content: ' ';
   width: calc(100% - 44px);
   height: calc(100% - 44px);
   border-radius: var(--card-shadow-border-radius-light, 7px);
@@ -1506,7 +1506,7 @@ body.is-hidden-frameless .titlebar-button-container.mod-right {
   display: none;
 }
 .titlebar-button-container.mod-right .titlebar-button::after {
-  content: "";
+  content: '';
   background-color: var(--on-border-light);
   width: 16px;
   height: 16px;
@@ -1691,7 +1691,7 @@ body:not(.is-mobile) .workspace-split.mod-right-split {
   border-top-left-radius: 0px !important;
 }
 body:not(.is-mobile) .workspace::before {
-  content: " ";
+  content: ' ';
   width: calc(100% - 44px);
   height: calc(100% - 44px);
   border-radius: var(--card-shadow-border-radius-light, 7px);

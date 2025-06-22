@@ -1,0 +1,43 @@
+.magicuser-bg-old-school-theme {
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1f1f1f;
+  --mu-text-title: #00a378;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #00a378;
+  --mu-folder-text-color: #00cf95;
+  --code-background: #000;
+  --code-punctuation: hsl(164, 100%, 32%);
+  --tab-text-color-focused-active-current: #00f0b0;
+  --mu-suggestion-color: #00f0b0;
+  --mu-caret-color: #00f0b0;
+  --mu-h1: #00cf95;
+  --mu-h2: #00cf95;
+  --mu-h3: #00cf95;
+  --mu-h4: #00cf95;
+  --mu-h5: #00cf95;
+  --mu-h6: #00cf95;
+  --checkbox-color: #00e1a3;
+  --checkbox-color-hover: #32ffa6;
+  --checkbox-border-color: #00e1a3;
+  --checkbox-border-color-hover: #3dffac;
+  --mu-icon-focused: #00f0b0;
+  --hr-color: #00f0b0;
+  --list-marker-color: #00f0b0;
+}
+.magicuser-bg-old-school-theme
+  .workspace-split:not(.mod-right-split, .mod-left-split)
+  .view-content,
+.magicuser-bg-old-school-theme .view-content > .canvas-wrapper {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, var(--mu-bg-image-overlay)),
+      rgba(0, 0, 0, var(--mu-bg-image-overlay))
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.71) 0%, #002417 100%) 100% 100%;
+}
+.magicuser-bg-old-school-theme .document-search-container {
+  background: transparent;
+}

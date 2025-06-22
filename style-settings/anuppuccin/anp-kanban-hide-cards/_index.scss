@@ -1,0 +1,12 @@
+:not(.anp-kanban-uncollapse-lanes)
+  .kanban-plugin__item-wrapper:has(.is-search-miss),
+.anp-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container))
+  .kanban-plugin__item-wrapper:has(.is-search-miss) {
+  display: none;
+}
+.anp-kanban-hide-card-border .kanban-plugin__item.is-search-hit {
+  box-shadow: none;
+}
+:not(.anp-kanban-hide-card-border) .kanban-plugin__item.is-search-hit {
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}

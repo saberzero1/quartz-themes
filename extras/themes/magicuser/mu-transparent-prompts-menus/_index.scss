@@ -1,5 +1,4 @@
 body:not(.is-mobile).mu-transparent-prompts-menus
-  div:is(.graph-controls, .modal, .prompt, .menu) {
-  background-color: rgba(255, 255, 255, var(--mu-transparency-menus-level));
-  backdrop-filter: blur(var(--mu-transparency-blur-level));
+  div:is(.modal .vertical-tab-header, .modal .vertical-tab-content) {
+  background: transparent;
 }

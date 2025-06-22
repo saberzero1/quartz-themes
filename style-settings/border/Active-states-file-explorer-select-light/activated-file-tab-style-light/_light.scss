@@ -1,0 +1,20 @@
+.activated-file-tab-style-light.theme-light {
+  --border-radius-activated-file-light: var(
+    --border-radius-activated-tab-header-light
+  ) !important;
+  --color-activated-file-light: var(
+    --color-activated-tab-header-light
+  ) !important;
+  --background-activated-file-light: var(
+    --background-activated-tab-header-light
+  ) !important;
+  --shadow-activated-file-light: var(
+    --shadow-activated-tab-header-light
+  ) !important;
+}
+.activated-file-tab-style-light.theme-light
+  .nav-file-title.is-active
+  .nav-file-tag,
+.activated-file-tab-style-light.theme-light .tree-item-self.is-active svg {
+  color: var(--color-activated-file-light) !important;
+}

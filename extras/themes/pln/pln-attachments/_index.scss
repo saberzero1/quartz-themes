@@ -1,0 +1,25 @@
+&.pln-attachments .nav-file:has(.nav-file-tag) {
+  display: none;
+}
+
+.pln-attachments {
+  &.pln-attachments-canvas .nav-file:has([data-path$='.canvas']),
+  &.pln-attachments-pdf .nav-file:has([data-path$='.pdf']),
+  &.pln-attachments-docx .nav-file:has([data-path$='.docx']),
+  &.pln-attachments-xlsx .nav-file:has([data-path$='.xlsx']),
+  &.pln-attachments-images .nav-file:has([data-path$='.jpg']),
+  &.pln-attachments-images .nav-file:has([data-path$='.jpeg']),
+  &.pln-attachments-images .nav-file:has([data-path$='.png']) {
+    display: contents !important;
+  }
+}
+
+&.pln-attachments-canvas .nav-file:has([data-path$='.canvas']),
+&.pln-attachments-pdf .nav-file:has([data-path$='.pdf']),
+&.pln-attachments-docx .nav-file:has([data-path$='.docx']),
+&.pln-attachments-xlsx .nav-file:has([data-path$='.xlsx']),
+&.pln-attachments-images .nav-file:has([data-path$='.jpg']),
+&.pln-attachments-images .nav-file:has([data-path$='.jpeg']),
+&.pln-attachments-images .nav-file:has([data-path$='.png']) {
+  display: contents !important;
+}

@@ -1,0 +1,63 @@
+.cross-style-headers .is-live-preview .HyperMD-header-1,
+.cross-style-headers .markdown-rendered h1,
+.cross-style-headers .is-live-preview .HyperMD-header-2,
+.cross-style-headers .markdown-rendered h2,
+.cross-style-headers .is-live-preview .HyperMD-header-3,
+.cross-style-headers .markdown-rendered h3,
+.cross-style-headers .is-live-preview .HyperMD-header-4,
+.cross-style-headers .markdown-rendered h4,
+.cross-style-headers .is-live-preview .HyperMD-header-5,
+.cross-style-headers .markdown-rendered h5,
+.cross-style-headers .is-live-preview .HyperMD-header-6,
+.cross-style-headers .markdown-rendered h6 {
+  position: relative;
+  padding: 0;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-align: center;
+  padding: 5px 0;
+}
+.cross-style-headers .is-live-preview .HyperMD-header-1::before,
+.cross-style-headers .markdown-rendered h1::before,
+.cross-style-headers .is-live-preview .HyperMD-header-2::before,
+.cross-style-headers .markdown-rendered h2::before,
+.cross-style-headers .is-live-preview .HyperMD-header-3::before,
+.cross-style-headers .markdown-rendered h3::before,
+.cross-style-headers .is-live-preview .HyperMD-header-4::before,
+.cross-style-headers .markdown-rendered h4::before,
+.cross-style-headers .is-live-preview .HyperMD-header-5::before,
+.cross-style-headers .markdown-rendered h5::before,
+.cross-style-headers .is-live-preview .HyperMD-header-6::before,
+.cross-style-headers .markdown-rendered h6::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  left: 10px;
+  width: 1px;
+  height: 150%;
+}
+.cross-style-headers .is-live-preview .HyperMD-header-1::after,
+.cross-style-headers .markdown-rendered h1::after,
+.cross-style-headers .is-live-preview .HyperMD-header-2::after,
+.cross-style-headers .markdown-rendered h2::after,
+.cross-style-headers .is-live-preview .HyperMD-header-3::after,
+.cross-style-headers .markdown-rendered h3::after,
+.cross-style-headers .is-live-preview .HyperMD-header-4::after,
+.cross-style-headers .markdown-rendered h4::after,
+.cross-style-headers .is-live-preview .HyperMD-header-5::after,
+.cross-style-headers .markdown-rendered h5::after,
+.cross-style-headers .is-live-preview .HyperMD-header-6::after,
+.cross-style-headers .markdown-rendered h6::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  right: 10px;
+  width: 1px;
+  height: 150%;
+}

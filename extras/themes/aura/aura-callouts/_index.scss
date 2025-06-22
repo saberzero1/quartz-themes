@@ -1,0 +1,293 @@
+.aura-callouts.aura-callouts-vanilla .callout {
+  border-radius: var(--callout-radius);
+  padding: 0;
+}
+
+.aura-callouts.aura-callouts-vanilla .callout .callout-title {
+  padding: 10px;
+  background-color: var(--callout-color);
+}
+
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
+  padding-left: 20px;
+  background-color: var(--background-primary-alt);
+}
+
+.aura-callouts.aura-callouts-vanilla .callout .callout-title,
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
+  border-left: var(--size-2-3) solid rgb(var(--callout-color));
+}
+
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout:not(.is-collapsible)
+  .callout-content {
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout:not(.is-collapsible)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0 0.6);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
+  font-weight: normal;
+}
+
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+}
+
+.aura-callouts.aura-callouts-sleek .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+
+.aura-callouts.aura-callouts-sleek .callout-fold {
+  padding-right: 0px;
+}
+
+.aura-callouts.aura-callouts-sleek .callout {
+  --callout-title-padding: var(--size-4-2);
+}
+
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+  --bold-weight: bolder;
+}
+
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible .callout-fold {
+  padding-right: 0px;
+}
+
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible.is-collapsed {
+  padding: 0;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout.is-collapsible.is-collapsed
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout.is-collapsible.is-collapsed
+  .callout-content {
+  display: none;
+}
+
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible:not(.is-collapsed) {
+  padding: 0px 0px var(--callout-title-padding) 0px;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+
+.aura-callouts.aura-callouts-sleek
+  .callout:not(.is-collapsible)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+
+.aura-callouts.aura-callouts-sleek .callout .list-collapse-indicator {
+  margin-left: -35px;
+  padding-right: 3px;
+}
+
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-content {
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
+}
+
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
+  font-weight: bold;
+}
+
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+}
+
+.aura-callouts.aura-callouts-block .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+}
+
+.aura-callouts.aura-callouts-block .callout-fold {
+  padding-right: 0px;
+}
+
+.aura-callouts.aura-callouts-block .callout {
+  --callout-title-padding: var(--size-4-2);
+}
+
+.aura-callouts.aura-callouts-block .callout.is-collapsible {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--cpt-mantle), 0.4);
+  --bold-weight: bolder;
+}
+
+.aura-callouts.aura-callouts-block .callout.is-collapsible .callout-fold {
+  padding-right: 0px;
+}
+
+.aura-callouts.aura-callouts-block .callout.is-collapsible.is-collapsed {
+  padding: 0;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible.is-collapsed
+  .callout-title {
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible.is-collapsed
+  .callout-content {
+  display: none;
+}
+
+.aura-callouts.aura-callouts-block .callout.is-collapsible:not(.is-collapsed) {
+  padding: 0px 0px var(--callout-title-padding) 0px;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+  cursor: pointer;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+}
+
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
+  padding: 0px;
+}
+
+.aura-callouts.aura-callouts-block
+  .callout:not(.is-collapsible)
+  .callout-title {
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+
+.aura-callouts.aura-callouts-block .callout .list-collapse-indicator {
+  margin-left: -35px;
+  padding-right: 3px;
+}
+
+.aura-callouts .callout[data-callout='note'] {
+  --callout-color: var(--cpt-blue);
+}
+
+.aura-callouts .callout[data-callout='abstract'],
+.aura-callouts .callout[data-callout='summary'],
+.aura-callouts .callout[data-callout='tldr'],
+.aura-callouts .callout[data-callout='seealso'] {
+  --callout-color: var(--cpt-blue);
+}
+
+.aura-callouts .callout[data-callout='info'],
+.aura-callouts .callout[data-callout='todo'],
+.aura-callouts .callout[data-callout='tip'],
+.aura-callouts .callout[data-callout='hint'],
+.aura-callouts .callout[data-callout='important'] {
+  --callout-color: var(--cpt-blue);
+}
+
+.aura-callouts .callout[data-callout='success'],
+.aura-callouts .callout[data-callout='check'],
+.aura-callouts .callout[data-callout='done'],
+.aura-callouts .callout[data-callout='question'],
+.aura-callouts .callout[data-callout='help'],
+.aura-callouts .callout[data-callout='faq'] {
+  --callout-color: var(--cpt-green);
+}
+
+.aura-callouts .callout[data-callout='warning'],
+.aura-callouts .callout[data-callout='caution'],
+.aura-callouts .callout[data-callout='attention'] {
+  --callout-color: var(--cpt-yellow);
+}
+
+.aura-callouts .callout[data-callout='failure'],
+.aura-callouts .callout[data-callout='fail'],
+.aura-callouts .callout[data-callout='missing'] {
+  --callout-color: var(--cpt-orange);
+}
+
+.aura-callouts .callout[data-callout='danger'],
+.aura-callouts .callout[data-callout='error'],
+.aura-callouts .callout[data-callout='bug'] {
+  --callout-color: var(--cpt-red);
+}
+
+.aura-callouts .callout[data-callout='example'] {
+  --callout-color: var(--cpt-purple);
+}

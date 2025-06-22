@@ -1,0 +1,28 @@
+,
+:is(.h-line, ) div {
+  --header-border-line-height: 0;
+  --h1-border-line-height: var(--header-border-line-height);
+  --h2-border-line-height: var(--header-border-line-height);
+  --h3-border-line-height: var(--header-border-line-height);
+  --h4-border-line-height: var(--header-border-line-height);
+  --h5-border-line-height: var(--header-border-line-height);
+  --h6-border-line-height: var(--header-border-line-height);
+}
+-1 div {
+  --h1-border-line-height: 0;
+}
+-2 div {
+  --h2-border-line-height: 0;
+}
+-3 div {
+  --h3-border-line-height: 0;
+}
+-4 div {
+  --h4-border-line-height: 0;
+}
+-5 div {
+  --h5-border-line-height: 0;
+}
+-6 div {
+  --h6-border-line-height: 0;
+}

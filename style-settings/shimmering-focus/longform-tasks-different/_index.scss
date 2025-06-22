@@ -1,0 +1,5 @@
+body
+  :is(.writing, .longform-leaf)
+  :is(.HyperMD-task-line, .HyperMD-task-line > *, ul.contains-task-list) {
+  color: var(--text-faint);
+}

@@ -1,0 +1,33 @@
+.t-d,
+.theme-dark .t-d {
+  --outer-bar: #0b0f13;
+  --side-bar: var(--note);
+  --note: #1a1e24;
+  --accent-color: 223, 123, 65;
+  --accent: #df7b41;
+  --lite-accent: #c48a69;
+  --dark-accent: #c66c39;
+  --deep-dark-accent: #62250f;
+  --accent2: #8f3f2b;
+  --accent2-lite: #e57858;
+  --headers: #df7b41;
+  --text: #bccad8;
+  --code-text: #fa8a45;
+  --i-at: #bf7f5e;
+  --folder-open: #d8af97;
+  --file-icon-color: #8f3f2b;
+  --tag: var(--th);
+  --th: #a66038;
+  --td: rgba(12, 9, 6, 0.38);
+  --table: #463228;
+  --hr: #744f3c;
+  --highlight: rgba(148, 87, 49, 0.575);
+  --hvr: rgba(253, 162, 115, 0.25);
+  --hvr-active: rgba(236, 110, 52, 0.3);
+  --theme-rainbow-1: var(--i-at);
+  --theme-rainbow-2: var(--headers);
+  --theme-rainbow-3: var(--accent2);
+  --theme-rainbow-4: var(--tag);
+  --theme-rainbow-5: var(--table);
+  --theme-rainbow-6: var(--dark-sidebar);
+}

@@ -1,0 +1,12 @@
+body-all
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
+  display: none;
+}
+body-all
+  .mod-root
+  .workspace-tab-header:hover
+  .workspace-tab-header-inner-close-button {
+  display: inherit;
+}

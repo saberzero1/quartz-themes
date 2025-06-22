@@ -1,0 +1,383 @@
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .workspace-split:not(.mod-left-split, .mod-right-split)
+  .metadata-container {
+  border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .metadata-properties-heading {
+  position: absolute;
+  top: -15px;
+  left: 32px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .metadata-properties-heading
+  * {
+  color: rgba(var(--color-purple-rgb), 0.9);
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .metadata-properties-heading
+  div.collapse-indicator,
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .metadata-properties-heading
+  .metadata-properties-title {
+  background-color: var(--color-base-10);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .metadata-content {
+  margin-top: 4px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-explorer']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-explorer']
+  )
+  + .workspace-tab-container::before {
+  content: 'Files';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-blue-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-tree-view']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-tree-view']
+  )
+  + .workspace-tab-container::before {
+  content: 'Alternate File Tree';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-purple-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='bookmarks']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='bookmarks']
+  )
+  + .workspace-tab-container::before {
+  content: 'Bookmarks';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-cyan-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='all-properties']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='all-properties']
+  )
+  + .workspace-tab-container::before {
+  content: 'All Properties';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-pink-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='outline']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='outline']
+  )
+  + .workspace-tab-container::before {
+  content: 'Outline';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-green-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
+  )
+  + .workspace-tab-container::before {
+  content: 'Full Calendar | Sidebar';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-yellow-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='backlink']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-orange-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='backlink']
+  )
+  + .workspace-tab-container::before {
+  content: 'Backlinks';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-orange-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='review-queue-list-view']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-red-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='review-queue-list-view']
+  )
+  + .workspace-tab-container::before {
+  content: 'Review Queue';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-red-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-properties']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='file-properties']
+  )
+  + .workspace-tab-container::before {
+  content: 'Properties';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-blue-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='outgoing-link']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='outgoing-link']
+  )
+  + .workspace-tab-container::before {
+  content: 'Outgoing Links';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-purple-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='graph']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='graph']
+  )
+  + .workspace-tab-container::before {
+  content: 'Graph View';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-cyan-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='full-calendar-view']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='full-calendar-view']
+  )
+  + .workspace-tab-container::before {
+  content: 'Full Calendar';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-pink-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='localgraph']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='localgraph']
+  )
+  + .workspace-tab-container::before {
+  content: 'Local Graph';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-green-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='calendar']
+  )
+  + .workspace-tab-container {
+  border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
+}
+
+body.flexcyon-workspace-card-layout.flexcyon-workspace-cards-tui-ext
+  .mod-sidedock
+  .workspace-tab-header-container:has(
+    .workspace-tab-header.is-active[data-type='calendar']
+  )
+  + .workspace-tab-container::before {
+  content: 'Calendar';
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  z-index: 1;
+  color: rgba(var(--color-yellow-rgb), 0.85);
+  background-color: var(--color-base-00);
+  padding: 0px 8px;
+}

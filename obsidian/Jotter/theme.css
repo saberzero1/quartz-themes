@@ -448,7 +448,7 @@ body {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type="color"] {
+  > input[type='color'] {
   visibility: hidden;
   width: 12rem;
 }
@@ -467,9 +467,9 @@ body {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type="color"]::before {
+  > input[type='color']::before {
   visibility: visible;
-  content: "Open the Style Settings plugin to pick your accent colors.";
+  content: 'Open the Style Settings plugin to pick your accent colors.';
   color: var(--text-error);
   font-size: var(--font-ui-smaller);
 }
@@ -605,11 +605,11 @@ body {
   color: var(--text-normal);
 }
 
-.workspace-tab-header-inner-close-button[aria-label="Close"] > svg {
+.workspace-tab-header-inner-close-button[aria-label='Close'] > svg {
   stroke: var(--text-faint);
 }
 
-.workspace-tab-header-inner-close-button[aria-label="Close"]:hover > svg {
+.workspace-tab-header-inner-close-button[aria-label='Close']:hover > svg {
   stroke: var(--text-muted);
 }
 
@@ -686,8 +686,8 @@ select,
 
 /* Checkboxes */
 .markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
   text-decoration: none;
   color: var(--text-faint);
 }
@@ -723,7 +723,7 @@ mark {
 
 /* KANBAN */
 /* Kanban - Checkboxes */
-.kanban-plugin__item-prefix-button-wrapper input[type="checkbox"] {
+.kanban-plugin__item-prefix-button-wrapper input[type='checkbox'] {
   filter: none;
 }
 
@@ -732,7 +732,7 @@ mark {
 }
 
 .kanban-plugin__item-prefix-button-wrapper
-  > input[type="checkbox"]:checked:after {
+  > input[type='checkbox']:checked:after {
   -webkit-mask-position: 30% 40%;
 }
 

@@ -1,0 +1,81 @@
+.ulu-shark-d.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 247, 69, 69;
+  --color-red: #f74545;
+  --color-red-hsl: 0, 92%, 62%;
+  --color-orange-rgb: 247, 138, 69;
+  --color-orange: #f78a45;
+  --color-orange-hsl: 23, 92%, 62%;
+  --color-yellow-rgb: 247, 204, 68;
+  --color-yellow: #f7cc44;
+  --color-yellow-hsl: 46, 92%, 62%;
+  --color-green-rgb: 69, 247, 123;
+  --color-green: #45f77b;
+  --color-green-hsl: 138, 92%, 62%;
+  --color-cyan-rgb: 69, 206, 247;
+  --color-cyan: #45cef7;
+  --color-cyan-hsl: 194, 92%, 62%;
+  --color-blue-rgb: 90, 100, 248;
+  --color-blue: #5a64f8;
+  --color-blue-hsl: 236, 92%, 66%;
+  --color-purple-rgb: 170, 69, 247;
+  --color-purple-hsl: 274, 92%, 62%;
+  --color-purple: #aa45f7;
+  --color-pink-rgb: 247, 69, 191;
+  --color-pink: #f745bf;
+  --color-pink-hsl: 319, 92%, 62%;
+  --canvas-color: 246, 129, 135;
+  --color-base-00: #38333d;
+  --color-base-10: #47414e;
+  --color-base-20: #252228;
+  --color-base-25: #332f37;
+  --color-base-30: #3f3a45;
+  --color-base-35: #8e718e;
+  --color-base-40: #8e718e;
+  --color-base-50: #d8ccd8;
+  --color-base-60: #d3c9d3;
+  --color-base-70: #d3c9d3;
+  --color-base-100: #fefefe;
+  --gradient-bg-primary: linear-gradient(135deg, #38333d 1.62%, #332e38 50.72%);
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #332f37 1.62%,
+    #252228 50.72%
+  ) !important;
+  --gradient-bg-tertiary: linear-gradient(
+    135deg,
+    #8e718e 30.62%,
+    #836383 90.72%
+  );
+  --background-modifier-border-alt: #9c7b9c;
+  /* --accent-h: 194 !important;
+--accent-s: 92% !important;
+--accent-l: 62% !important;
+--color-accent-hsl: var(--accent-h),
+var(--accent-s),
+var(--accent-l);
+--color-accent: #45CEF7 !important;
+--color-accent-rgb: 69, 81, 247 !important;
+--h1-color: #45CEF7;
+--h2-color: #F745BF; */
+}
+.ulu-shark-d.theme-dark
+  .mod-root
+  .workspace-tabs
+  .workspace-leaf:not(.is-mobile),
+.ulu-shark-d.theme-dark .modal:not(.is-mobile) {
+  border: 1px solid #3f3a45 !important;
+}
+.ulu-shark-d.ulu-prop-card
+  .markdown-source-view.is-live-preview.show-properties
+  .metadata-container {
+  display: var(--metadata-display-editing);
+  border: 1px solid var(--background-modifier-border-alt);
+  background: var(--gradient-bg-tertiary);
+  margin-bottom: 3em;
+  border-radius: 8px;
+  padding: 8px;
+}

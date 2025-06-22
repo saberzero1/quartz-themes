@@ -1,0 +1,10 @@
+body.top-bottom-table-border
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table)
+  table,
+body.top-bottom-table-border .markdown-rendered div:has(> table) table,
+body.top-bottom-table-border .style-settings-container div:has(> table) table {
+  border-top: 2px solid var(--text-normal);
+  border-bottom: 1px solid var(--text-normal);
+}

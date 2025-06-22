@@ -1,0 +1,20 @@
+#calendar-container,
+.view-header,
+.nav-folder.mod-root,
+.nav-header .nav-buttons-container,
+.workspace-split.mod-root .view-content {
+  background: linear-gradient(
+    120deg,
+    var(--ap-color-dp1),
+    var(--ap-color-dp2),
+    70%,
+    var(--ap-color-dp1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+.nav-file-title {
+  background: transparent;
+  backdrop-filter: blur(15px);
+}

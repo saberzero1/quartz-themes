@@ -35,7 +35,7 @@ SOFTWARE.
 
 */
 @font-face {
-  font-family: "Lato Light";
+  font-family: 'Lato Light';
   /* Add other properties here, as needed. For example: */
   /*
   font-weight: 100 900;
@@ -164,8 +164,8 @@ body {
   /* Borders */
   --border-width: var(--size-2-1);
   /* Fonts */
-  --font-interface-theme: "Lato";
-  --font-text-theme: "Times New Roman", Times, serif;
+  --font-interface-theme: 'Lato';
+  --font-text-theme: 'Times New Roman', Times, serif;
   /* Divider */
   --divider-color: transparent;
   /* Links */
@@ -353,7 +353,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --table-background-color: var(--white-80);
   --table-header-background: var(--black-80);
   --table-header-background-hover: var(--black-80);
-  --table-header-font: "Lato";
+  --table-header-font: 'Lato';
   --table-header-color: var(--white-80);
   --table-line-height: 2rem;
   /* Callout */
@@ -467,19 +467,19 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .clickable-icon.search-results-result-count:focus {
   color: var(--white-90);
 }
-.theme-light .clickable-icon.extra-setting-button[aria-label="Check now"] {
+.theme-light .clickable-icon.extra-setting-button[aria-label='Check now'] {
   color: var(--black-80);
 }
 .theme-light
-  .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
+  .clickable-icon.extra-setting-button[aria-label='Check now']:hover {
   color: var(--black-80);
 }
 .theme-light
-  .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
+  .clickable-icon.extra-setting-button[aria-label='Check now']:active {
   color: var(--black-90);
 }
 .theme-light
-  .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
+  .clickable-icon.extra-setting-button[aria-label='Check now']:focus {
   color: var(--black-80);
 }
 .theme-light .vertical-tab-header-group-items {
@@ -560,19 +560,19 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .svg-icon.help:focus {
   color: var(--white-90);
 }
-.theme-light .clickable-icon.view-action[aria-label="Open board settings"] {
+.theme-light .clickable-icon.view-action[aria-label='Open board settings'] {
   color: var(--black-80);
 }
 .theme-light
-  .clickable-icon.view-action[aria-label="Open board settings"]:hover {
+  .clickable-icon.view-action[aria-label='Open board settings']:hover {
   color: var(--black-80);
 }
 .theme-light
-  .clickable-icon.view-action[aria-label="Open board settings"]:active {
+  .clickable-icon.view-action[aria-label='Open board settings']:active {
   color: var(--black-90);
 }
 .theme-light
-  .clickable-icon.view-action[aria-label="Open board settings"]:focus {
+  .clickable-icon.view-action[aria-label='Open board settings']:focus {
   color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings {
@@ -608,7 +608,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   font-family: var(--font-text-theme);
 }
 .theme-light .callout-title {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 3rem;
@@ -637,10 +637,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .clickable-icon.nav-action-button.is-active {
   background-color: transparent;
 }
-.theme-light .clickable-icon[aria-label="Search settings"]:hover {
+.theme-light .clickable-icon[aria-label='Search settings']:hover {
   color: var(--white-100);
 }
-.theme-light .clickable-icon.is-active[aria-label="Search settings"] {
+.theme-light .clickable-icon.is-active[aria-label='Search settings'] {
   background-color: transparent;
 }
 .theme-light .setting-item-name {
@@ -784,7 +784,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --table-border-color: transparent;
   --table-header-background: var(--black-85);
   --table-header-background-hover: var(--black-85);
-  --table-header-font: "Lato";
+  --table-header-font: 'Lato';
   --table-header-color: var(--white-80);
   --table-line-height: 2rem;
   /* Vault Profile */
@@ -861,7 +861,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--white-80);
 }
 .theme-dark .callout-title {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 3rem;
@@ -923,18 +923,18 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark .svg-icon.lucide-rotate-ccw:focus {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"] {
+.theme-dark .clickable-icon.extra-setting-button[aria-label='Check now'] {
   color: var(--white-80);
   border: transparent;
 }
-.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
+.theme-dark .clickable-icon.extra-setting-button[aria-label='Check now']:hover {
   color: var(--white-90);
 }
 .theme-dark
-  .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
+  .clickable-icon.extra-setting-button[aria-label='Check now']:active {
   color: var(--white-100);
 }
-.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
+.theme-dark .clickable-icon.extra-setting-button[aria-label='Check now']:focus {
   color: var(--white-90);
 }
 .theme-dark .vertical-tab-header-group-items {
@@ -963,30 +963,30 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark .vertical-tab-nav-item:focus {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon[aria-label="Search settings"] {
+.theme-dark .clickable-icon[aria-label='Search settings'] {
   color: var(--white-80);
   border: transparent;
 }
-.theme-dark .clickable-icon[aria-label="Search settings"]:hover {
+.theme-dark .clickable-icon[aria-label='Search settings']:hover {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon[aria-label="Search settings"]:active {
+.theme-dark .clickable-icon[aria-label='Search settings']:active {
   color: var(--white-100);
 }
-.theme-dark .clickable-icon[aria-label="Search settings"]:focus {
+.theme-dark .clickable-icon[aria-label='Search settings']:focus {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon.is-active[aria-label="Search settings"] {
+.theme-dark .clickable-icon.is-active[aria-label='Search settings'] {
   color: var(--white-80);
   border: transparent;
 }
-.theme-dark .clickable-icon.is-active[aria-label="Search settings"]:hover {
+.theme-dark .clickable-icon.is-active[aria-label='Search settings']:hover {
   color: var(--white-90);
 }
-.theme-dark .clickable-icon.is-active[aria-label="Search settings"]:active {
+.theme-dark .clickable-icon.is-active[aria-label='Search settings']:active {
   color: var(--white-100);
 }
-.theme-dark .clickable-icon.is-active[aria-label="Search settings"]:focus {
+.theme-dark .clickable-icon.is-active[aria-label='Search settings']:focus {
   color: var(--white-90);
 }
 .theme-dark .internal-query-header-icon {
@@ -1044,10 +1044,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark svg.svg-icon.sidebar-left:focus {
   color: var(--white-90);
 }
-.theme-dark input[type="search"] {
+.theme-dark input[type='search'] {
   background-color: var(--black-80);
 }
-.theme-dark input[type="search"]:focus {
+.theme-dark input[type='search']:focus {
   background-color: var(--black-80);
   color: var(--white-80);
 }

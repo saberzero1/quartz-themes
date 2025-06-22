@@ -1,0 +1,75 @@
+.frontmatter-container {
+  background-color: var(--background-secondary-alt);
+  clear: right !important;
+  float: right !important;
+  margin: 0px 0px 0.5em 0.5em !important;
+}
+.frontmatter-container.is-collapsed {
+  max-width: 120px;
+  background-color: transparent;
+}
+.frontmatter-container .frontmatter-container-header {
+  border-radius: var(--radius-l);
+  margin: 0px auto;
+  width: fit-content;
+  font-size: var(--font-ui-small);
+}
+.frontmatter-container.is-collapsed .frontmatter-container-header:hover {
+  color: var(--interactive-accent);
+  background-color: var(--interactive-hover) !important;
+  border-color: var(--background-modifier-border-hover);
+}
+.frontmatter-container.is-collapsed .frontmatter-container-header {
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
+}
+.frontmatter-container:not(.is-collapsed) .frontmatter-container-header {
+  color: transparent;
+  max-height: 1px;
+  min-height: 1px;
+  padding: 0px;
+  margin: 0px;
+}
+.frontmatter-container:not(.is-collapsed)
+  .frontmatter-container-header::before {
+  color: var(--text-faint);
+  content: '❌';
+  font-family: 'Noto Emoji';
+  font-size: 0.5em;
+  opacity: 0;
+}
+.frontmatter-container:not(.is-collapsed)
+  .frontmatter-container-header:hover::before {
+  color: var(--color-red);
+  content: '❌';
+  opacity: 1;
+}
+.frontmatter-container:not(.is-collapsed) {
+  max-width: 30%;
+  font-size: var(--font-ui-medium);
+  float: left;
+  margin: 0px 2em 1.5em 0px;
+}
+.frontmatter-section-label::after {
+  content: none;
+}
+.frontmatter-section-label,
+.frontmatter-section {
+  font-size: var(--font-ui-small);
+  display: block;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.frontmatter-section-label {
+  font-weight: var(--h1-weight);
+  font-family: var(--h1-font);
+  font-size: var(--font-ui-small);
+}
+.frontmatter-section {
+  margin: 5px 0px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}

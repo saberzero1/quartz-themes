@@ -1,0 +1,18 @@
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .markdown-source-view {
+  --font-text-size: var(--serenity-mode-font-size) !important;
+}
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .workspace-tab-header-container,
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .workspace-ribbon,
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .view-header,
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .embedded-backlinks,
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .inline-title,
+.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+  .mk-header.cm-line {
+  display: none !important;
+}

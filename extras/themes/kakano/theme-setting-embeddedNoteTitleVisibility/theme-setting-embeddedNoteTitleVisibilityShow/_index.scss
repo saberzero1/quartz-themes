@@ -1,0 +1,8 @@
+.theme-setting-embeddedNoteTitleVisibilityShow
+  .internal-embed:has(.embed-title:not(:empty)) {
+  padding-top: 0.5rem;
+}
+
+.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
+  display: flex;
+}

@@ -216,10 +216,10 @@ body {
   --ebw-callout-warning: 234, 175, 0;
   --ebw-embed-border-color: var(--gray-dark-7);
   --ebw-font-callout-title: var(--ebw-header-font);
-  --ebw-font-monospace: "Fira Code", "Source Code Pro", Jetbrains Mono;
+  --ebw-font-monospace: 'Fira Code', 'Source Code Pro', Jetbrains Mono;
   --ebw-font-tags: var(--ebw-header-font);
-  --ebw-font-text: "IBM Plex Sans", Helvetica Neue;
-  --ebw-header-font: "Architects Daughter";
+  --ebw-font-text: 'IBM Plex Sans', Helvetica Neue;
+  --ebw-header-font: 'Architects Daughter';
   --ebw-header-font-caps-variant: normal;
   --ebw-header-modifier: 1.4;
   --ebw-link-hidden: var(--cyan-4);
@@ -253,15 +253,15 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
+    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
   --font-interface-theme: var(--ebw-font-text);
   --font-light: 300;
   --font-medium: 500;
@@ -270,22 +270,22 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
+    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
+    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
+    'Source Code Pro', monospace;
+  --font-monospace-override: '??';
   --font-monospace-theme: var(--ebw-font-monospace);
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
   --font-text-theme: var(--ebw-font-text);
   --font-thin: 100;
@@ -300,7 +300,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: ".";
+  --footnote-id-delimiter: '.';
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -1090,132 +1090,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout="tip"] {
+.callout[data-callout='tip'] {
   --callout-color: var(--ebw-callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: var(--ebw-callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="danger"] {
+.callout[data-callout='danger'] {
   --callout-color: var(--ebw-callout-danger);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-color: var(--ebw-callout-abstract);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-color: var(--ebw-callout-info);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout="question"] {
+.callout[data-callout='question'] {
   --callout-color: var(--ebw-callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: var(--ebw-callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: var(--ebw-callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: var(--ebw-callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout='example'] {
   --callout-color: var(--ebw-callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: var(--ebw-callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout="summary"] {
+.callout[data-callout='summary'] {
   --callout-color: var(--ebw-callout-abstract);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="tldr"] {
+.callout[data-callout='tldr'] {
   --callout-color: var(--ebw-callout-abstract);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-color: var(--ebw-callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-color: var(--ebw-callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="check"] {
+.callout[data-callout='check'] {
   --callout-color: var(--ebw-callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="done"] {
+.callout[data-callout='done'] {
   --callout-color: var(--ebw-callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="help"] {
+.callout[data-callout='help'] {
   --callout-color: var(--ebw-callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: var(--ebw-callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="caution"] {
+.callout[data-callout='caution'] {
   --callout-color: var(--ebw-callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-color: var(--ebw-callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="failure"] {
+.callout[data-callout='failure'] {
   --callout-color: var(--ebw-callout-failure);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: var(--ebw-callout-danger);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="fail"] {
+.callout[data-callout='fail'] {
   --callout-color: var(--ebw-callout-failure);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-color: var(--ebw-callout-failure);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="cite"] {
+.callout[data-callout='cite'] {
   --callout-color: var(--ebw-callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1235,7 +1235,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold {
@@ -1245,7 +1245,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold .svg-icon {
@@ -1332,7 +1332,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1436,7 +1436,7 @@ input[type="search"] {
 }
 
 .tree-item-self:before {
-  content: "\200B";
+  content: '\200B';
 }
 
 .tree-item-self.mod-collapsible {
@@ -1488,7 +1488,7 @@ input[type="search"] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: "\200b";
+  content: '\200b';
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1568,7 +1568,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled="true"] {
+.clickable-icon[aria-disabled='true'] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

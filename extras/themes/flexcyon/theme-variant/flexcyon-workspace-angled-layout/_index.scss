@@ -1,0 +1,55 @@
+body.flexcyon-workspace-angled-layout .collapse-icon.is-collapsed svg.svg-icon {
+  transform: rotate(calc(var(--direction) * -1 * 90deg)) skewX(-5deg);
+}
+
+body.flexcyon-workspace-angled-layout .tree-item-self .collapse-icon svg {
+  transform: skewX(7.5deg);
+}
+
+body.flexcyon-workspace-angled-layout div.graph-controls.is-close {
+  transform: skewY(-5deg);
+}
+
+body.flexcyon-workspace-angled-layout .side-dock-actions,
+body.flexcyon-workspace-angled-layout .sidebar-toggle-button {
+  transform: skewY(-1.5deg);
+}
+
+body.flexcyon-workspace-angled-layout .modal-container {
+  transform: skewX(-1deg);
+}
+
+body.flexcyon-workspace-angled-layout .titlebar-button-container.mod-right,
+body.flexcyon-workspace-angled-layout
+  .workspace-tab-header-tab-list
+  span.clickable-icon
+  svg,
+body.flexcyon-workspace-angled-layout
+  span.clickable-icon[aria-label='New tab']
+  svg,
+body.flexcyon-workspace-angled-layout .nav-header,
+body.flexcyon-workspace-angled-layout
+  div.oz-folders-action-items.file-tree-header-fixed,
+body.flexcyon-workspace-angled-layout div.oz-nav-buttons-right-block,
+body.flexcyon-workspace-angled-layout div.oz-nav-action-button,
+body.flexcyon-workspace-angled-layout .workspace-drawer-vault-actions,
+body.flexcyon-workspace-angled-layout button,
+body.flexcyon-workspace-angled-layout .workspace-tab-header-container-inner {
+  transform: skewX(-7.5deg);
+}
+
+body.flexcyon-workspace-angled-layout .nav-folder-title-content {
+  transform: skewX(-5deg);
+}
+
+body.flexcyon-workspace-angled-layout #calendar-container > div > div {
+  transform: skewX(-7.5deg);
+}
+
+body.flexcyon-workspace-angled-layout
+  .oz-explorer-container
+  .oz-file-tree-files
+  div,
+body.flexcyon-workspace-angled-layout div.oz-folder-line {
+  transform: skewX(-5deg);
+}

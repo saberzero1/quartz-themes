@@ -1,0 +1,100 @@
+.ulu-red-l.theme-light {
+  --accent-h: 13;
+  --accent-s: 68%;
+  --accent-l: 63%;
+  --color-red: #ea5e41;
+  --color-red-hsl: 10.3, 80.1%, 58.6%;
+  --color-red-rgb: 234, 94, 65;
+  --color-green: #a9d37e;
+  --color-green-hsl: 89.6, 49.1%, 66.1%;
+  --color-green-rgb: 169, 211, 126;
+  --color-orange: #ed874c;
+  --color-orange-hsl: 22, 81.7%, 61.4%;
+  --color-orange-rgb: 237, 135, 76;
+  --color-yellow: #e9ba4a;
+  --color-yellow-hsl: 42.3, 78.3%, 60.2%;
+  --color-yellow-rgb: 233, 186, 74;
+  --color-cyan: #5ab7ed;
+  --color-cyan-hsl: 202, 80.3%, 64.1%;
+  --color-cyan-rgb: 90, 183, 237;
+  --color-blue: #339af0;
+  --color-blue-hsl: 207.3, 86.3%, 57.1%;
+  --color-blue-rgb: 122, 184, 225;
+  --color-purple: #7865e6;
+  --color-purple-hsl: 248.8, 72.1%, 64.9%;
+  --color-purple-rgb: 120, 101, 230;
+  --color-pink: #f6b7d8;
+  --color-pink-hsl: 328.6, 77.8%, 84.1%;
+  --color-base-00: #dacdcd;
+  /* background-primary */
+  --color-base-05: #fefefe;
+  /* background-secondary-alt in light mode, for some reason */
+  --color-base-10: #b18a8a;
+  /* background-primary-alt */
+  --color-base-20: #cebdbd;
+  /* background-secondary */
+  --color-base-25: #b18a8a;
+  /* idk lol */
+  --color-base-30: #b18a8a;
+  /* background-modifier-border */
+  --color-base-35: #5a3a3a;
+  /* background-modifier-border-hover */
+  --color-base-40: var(--color-base-30);
+  /* background-modifier-border-focus */
+  --color-base-50: #5a3a3a;
+  /* text-faint */
+  --color-base-60: #4e3434;
+  /* also no clue */
+  --color-base-70: #231a1a;
+  /* text-muted */
+  --color-base-100: #0b0909;
+  /* text-normal */
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #e5dcdc 1.62%,
+    #dacdcd 50.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #dacdcd 1.62%,
+    #cebdbd 50.72%
+  ) !important;
+  --background-modifier-border-alt: #f7dede !important;
+}
+.ulu-red {
+  --color-accent: hsl(var(--color-red-hsl));
+  --color-accent-rgb: var(--color-red-rgb);
+  --color-accent-hsl: var(--color-red-hsl);
+  --color-accent-1: var(--color-blue);
+  --color-accent-1-rgb: var(--color-blue-rgb);
+}
+.ulu-accent-bg-l.ulu-red {
+  --color-base-00: #fdfbfb;
+  --color-base-20: #f5f2f2;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #fff 20.62%,
+    #fdfbfb 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #f8f6f6 20.62%,
+    #f5f2f2 90.72%
+  ) !important;
+  --background-modifier-border-alt: #fff !important;
+}
+.ulu-accent-bg-lowcon-l.ulu-red {
+  --color-base-00: #f5f2f2;
+  --color-base-20: #f5f2f2;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #f5f2f2 20.62%,
+    #f5f2f2 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #f5f2f2 20.62%,
+    #f5f2f2 90.72%
+  ) !important;
+  --background-modifier-border-alt: #fff !important;
+}

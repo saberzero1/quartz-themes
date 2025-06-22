@@ -1,0 +1,189 @@
+.mu-tags-colored a.tag[href='#todo'],
+.mu-tags-colored .cm-tag-todo {
+  background-color: #ff7f00;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#inprogress'],
+.mu-tags-colored .cm-tag-inprogress {
+  background-color: #0082d3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#idea'],
+.mu-tags-colored .cm-tag-idea {
+  background-color: #00004f;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#completed'],
+.mu-tags-colored .cm-tag-completed,
+.mu-tags-colored a.tag[href='#ready'],
+.mu-tags-colored .cm-tag-ready {
+  background-color: #009700cf;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#implemented'],
+.mu-tags-colored .cm-tag-implemented {
+  background-color: #a300ff;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#family'],
+.mu-tags-colored .cm-tag-family {
+  background-color: #cfcfcf;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#attention'],
+.mu-tags-colored .cm-tag-attention {
+  background-color: #f1f100;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#warning'],
+.mu-tags-colored .cm-tag-warning {
+  background-color: #ffbf00;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#caution'],
+.mu-tags-colored .cm-tag-caution {
+  background-color: #d30000;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#test'],
+.mu-tags-colored .cm-tag-test,
+.mu-tags-colored a.tag[href='#watch'],
+.mu-tags-colored .cm-tag-watch,
+.mu-tags-colored a.tag[href='#review'],
+.mu-tags-colored .cm-tag-review,
+.mu-tags-colored a.tag[href='#research'],
+.mu-tags-colored .cm-tag-research,
+.mu-tags-colored a.tag[href='#reference'],
+.mu-tags-colored .cm-tag-reference,
+.mu-tags-colored a.tag[href='#cheatsheet'],
+.mu-tags-colored .cm-tag-cheatsheet,
+.mu-tags-colored a.tag[href='#article'],
+.mu-tags-colored .cm-tag-article,
+.mu-tags-colored a.tag[href='#citation'],
+.mu-tags-colored .cm-tag-citation {
+  background-color: #282828;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#team'],
+.mu-tags-colored .cm-tag-team,
+.mu-tags-colored a.tag[href='#solo'],
+.mu-tags-colored .cm-tag-solo {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#bookmark'],
+.mu-tags-colored .cm-tag-bookmark {
+  background-color: #0048a3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#meeting'],
+.mu-tags-colored .cm-tag-meeting,
+.mu-tags-colored a.tag[href='#appointment'],
+.mu-tags-colored .cm-tag-appointment,
+.mu-tags-colored a.tag[href='#date'],
+.mu-tags-colored .cm-tag-date {
+  background-color: #e8e882;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#important'],
+.mu-tags-colored .cm-tag-important {
+  background-color: #d34848;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#favorite'],
+.mu-tags-colored .cm-tag-favorite {
+  background-color: #0072d3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#wishlist'],
+.mu-tags-colored .cm-tag-wishlist {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#reminder'],
+.mu-tags-colored .cm-tag-reminder {
+  background-color: #33cfa3;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#work'],
+.mu-tags-colored .cm-tag-work {
+  background-color: #0000a3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#study'],
+.mu-tags-colored .cm-tag-study {
+  background-color: #007fd3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#s5'],
+.mu-tags-colored a.tag[href='#s4'],
+.mu-tags-colored a.tag[href='#s3'],
+.mu-tags-colored a.tag[href='#s2'],
+.mu-tags-colored a.tag[href='#s1'],
+.mu-tags-colored .cm-tag-s5,
+.mu-tags-colored .cm-tag-s4,
+.mu-tags-colored .cm-tag-s3,
+.mu-tags-colored .cm-tag-s2,
+.mu-tags-colored .cm-tag-s1 {
+  background-color: #181818cf;
+  color: #82828282;
+}
+
+.mu-tags-colored a.tag[href='#gA'],
+.mu-tags-colored a.tag[href='#gB'],
+.mu-tags-colored a.tag[href='#gC'],
+.mu-tags-colored a.tag[href='#gD'],
+.mu-tags-colored a.tag[href='#gF'],
+.mu-tags-colored .cm-tag-gA,
+.mu-tags-colored .cm-tag-gB,
+.mu-tags-colored .cm-tag-gC,
+.mu-tags-colored .cm-tag-gD,
+.mu-tags-colored .cm-tag-gF {
+  background-color: #181818cf;
+  color: #82828282;
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+.mu-tags-colored a.tag[href='#art'],
+.mu-tags-colored .cm-tag-art {
+  background-color: #0048a3;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#video'],
+.mu-tags-colored .cm-tag-video {
+  background-color: #d32828;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href='#finances'],
+.mu-tags-colored .cm-tag-finances {
+  background-color: #7fd356f1;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href='#magic'],
+.mu-tags-colored .cm-tag-magic {
+  background-color: #820082;
+  color: #f1f1f1;
+}

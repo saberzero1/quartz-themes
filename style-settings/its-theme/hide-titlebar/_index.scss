@@ -1,0 +1,10 @@
+.titlebar:not(:hover) {
+  width: 100%;
+  opacity: 0;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+}
+-tab .workspace-tab-header-container:not(:hover) {
+  height: 12px;
+  opacity: 0;
+}

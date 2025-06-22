@@ -1,0 +1,31 @@
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-title:after,
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+  [data-type='bookmarks']
+  .tree-item
+  .tree-item-inner:after {
+  transition: color 0.4s;
+  color: rgba(
+    var(--rainbow-folder-color),
+    var(--anp-simple-rainbow-opacity, 1)
+  );
+  content: '⬤';
+  font-size: 10px;
+  position: relative;
+  margin-left: 4px;
+  opacity: 0.5;
+  top: -0.5px;
+}
+
+.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+  [data-type='bookmarks']
+  .tree-item
+  .tree-item-inner {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}

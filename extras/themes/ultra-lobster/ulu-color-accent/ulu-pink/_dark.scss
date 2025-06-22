@@ -1,0 +1,37 @@
+.ulu-pink {
+  --color-accent: hsl(var(--color-pink-hsl));
+  --color-accent-rgb: var(--color-pink-rgb);
+  --color-accent-hsl: var(--color-pink-hsl);
+  --color-accent-1: var(--color-orange);
+  --color-accent-1-rgb: var(--color-orange-rgb);
+}
+
+.ulu-accent-bg-d.ulu-pink {
+  --color-base-00: #060505;
+  --color-base-20: #130e0f;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #262626 20.62%,
+    #060505 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #2b2b2b 20.62%,
+    #130e0f 90.72%
+  ) !important;
+}
+
+.ul.ulu-con-accent-bg-d.ulu-pink {
+  --color-base-00: #130e0f;
+  --color-base-20: #130e0f;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #130e0f 20.62%,
+    #130e0f 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #130e0f 20.62%,
+    #130e0f 90.72%
+  ) !important;
+}

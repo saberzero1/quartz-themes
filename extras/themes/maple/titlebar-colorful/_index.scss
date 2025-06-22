@@ -1,17 +1,19 @@
-body.theme-light {
-  --frame-background-color: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 18%)
-  );
-  --frame-outline-color: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 23.5%)
-  );
-  --frame-muted-color: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 20%),
-    ar(--accent-l)
-  );
+body.titlebar-colorful .modal-container .mod-settings::before {
+  --setting-color-logo: var(--text-on-accent);
+}
+
+body.titlebar-colorful
+  .workspace.is-left-sidedock-open
+  .sidebar-toggle-button.mod-left
+  .clickable-icon,
+body.titlebar-colorful
+  .workspace.is-right-sidedock-open
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
+  color: var(--text-on-accent);
+}
+
+body.titlebar-colorful
+  :is(.document-search-close-button, .modal-close-button)::before {
+  background-color: var(--text-normal);
 }

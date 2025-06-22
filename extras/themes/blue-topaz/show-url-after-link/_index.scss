@@ -1,0 +1,3 @@
+body.show-url-after-link a.external-link::after {
+  content: ' (' attr(href) ') ';
+}

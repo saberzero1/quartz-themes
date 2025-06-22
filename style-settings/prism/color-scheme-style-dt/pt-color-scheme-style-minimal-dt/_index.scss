@@ -1,0 +1,12 @@
+body.theme-dar.pt-disable-blur {
+  --background-secondary-blur: var(--background-secondary-alt);
+}
+.pt-color-scheme-style-minimal-dt .workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: transparent;
+}
+.pt-color-scheme-style-minimal-dt
+  .workspace-leaf
+  div.workspace-leaf-content[data-type='file-tree-view']
+  #file-tree-divider {
+  background-color: transparent;
+}

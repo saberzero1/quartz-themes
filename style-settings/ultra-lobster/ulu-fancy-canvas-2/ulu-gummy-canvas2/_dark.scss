@@ -1,0 +1,23 @@
+.ulu-gummy-canvas2.theme-dark
+  .canvas-node.is-themed.mod-canvas-color-2
+  .canvas-node-content {
+  background-image: linear-gradient(
+    45deg,
+    hsl(29deg 82% 54%) 0%,
+    hsl(28deg 83% 53%) 11%,
+    hsl(28deg 83% 53%) 22%,
+    hsl(27deg 84% 53%) 33%,
+    hsl(26deg 84% 53%) 44%,
+    hsl(25deg 85% 53%) 56%,
+    hsl(25deg 85% 52%) 67%,
+    hsl(24deg 86% 52%) 78%,
+    hsl(23deg 86% 52%) 89%,
+    hsl(22deg 87% 52%) 100%
+  );
+}
+.ulu-gummy-canvas2.theme-dark
+  .canvas-node.is-themed.mod-canvas-color-2
+  .canvas-node-content
+  p {
+  color: white;
+}

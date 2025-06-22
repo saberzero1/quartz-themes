@@ -1,0 +1,52 @@
+.theme-catpp {
+  --base-c: 23%;
+  --theme-tint-text: 230;
+  --theme-sat-text: 22%;
+  --theme-sat-secondary: 17%;
+  --theme-tint: 230;
+  --theme-sat: 80%;
+  --accent-h: 193 !important;
+  --accent-s: 43% !important;
+  --accent-l: 67% !important;
+  --color-red-rgb: 238, 153, 160;
+  --color-red: #ee99a0;
+  --color-green-rgb: 166, 218, 149;
+  --color-green: #a6da95;
+  --color-orange-rgb: 245, 169, 127;
+  --color-orange: #f5a97f;
+  --color-yellow-rgb: 238, 212, 159;
+  --color-yellow: #eed49f;
+  --color-cyan-rgb: 145, 215, 227;
+  --color-cyan: #91d7e3;
+  --color-blue-rgb: 138, 173, 244;
+  --color-blue: #8aadf4;
+  --color-purple-rgb: 183, 189, 248;
+  --color-purple: #b7bdf8;
+  --color-pink-rgb: 245, 189, 230;
+  --color-pink: #f5bde6;
+  --rose: #f4dbd6;
+}
+
+.theme-catpp.low-contrast-dark {
+  --base-c: 18%;
+  --theme-sat-text: 17%;
+  --theme-tint-text: 228;
+  --theme-sat: 50%;
+}
+
+.theme-catpp.high-contrast-dark {
+  --base-c: 25%;
+  --theme-sat-text: 20%;
+  --theme-tint-text: 240;
+  --theme-sat: 80%;
+  --c-100: 90% !important;
+}
+
+.theme-catpp.colorful-headings-s {
+  --h1-color: #7dc4e4;
+  --h2-color: var(--color-blue);
+  --h3-color: #c6a0f6;
+  --h4-color: var(--color-pink);
+  --h5-color: var(--color-red);
+  --h6-color: var(--color-orange);
+}

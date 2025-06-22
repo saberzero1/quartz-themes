@@ -1,0 +1,14 @@
+.raka-callouts .callout {
+  border-radius: 3px;
+  padding: var(--size-4-3) var(--size-4-6);
+}
+.raka-callouts .callout .callout-title {
+  background: rgba(var(--callout-color), 0.1);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+}
+.raka-callouts .callout .callout-content {
+  padding-top: 5px;
+}

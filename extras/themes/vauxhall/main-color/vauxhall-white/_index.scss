@@ -1,0 +1,20 @@
+.vauxhall-white {
+  --hue-bg: 228;
+  --hue-fg: 220;
+  --sat-bg: 20%;
+  --sat-fg: 20%;
+  &.theme-light {
+    --sat-bg: 30%;
+    --sat-fg: 0%;
+    --lum-bg: 90%;
+    --lum-fg: 0%;
+
+    &.intensity-void {
+      --lum-bg: 100%;
+    }
+
+    &.intensity-nebula {
+      --lum-bg: 80%;
+    }
+  }
+}

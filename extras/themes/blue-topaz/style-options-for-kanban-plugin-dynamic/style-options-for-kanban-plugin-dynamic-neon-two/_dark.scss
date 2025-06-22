@@ -1,0 +1,14 @@
+body.theme-dark {
+  --background-transparent-black-or-white-1: #232323c2;
+  --background-transparent-black-or-white-2: #0f0f0f69;
+  --background-transparent-black-or-white-3: #2222224d;
+  --background-transparent-blue: #53a3ff41;
+}
+
+body.theme-dark .kanban-plugin__lane-header-wrapper {
+  background: var(--background-transparent-blue) !important;
+  padding: 5px 11px !important;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 5px !important;
+  z-index: 100 !important;
+}

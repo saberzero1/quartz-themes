@@ -1,0 +1,32 @@
+.theme-dark-purple {
+  --main-node: #9b59b6;
+  --main-node-hover: #8e44ad;
+  --tags: #d2a8ff;
+  --external-link: #82d2e8;
+  --external-link-hidden: rgba(131, 197, 235, 0.3);
+  --main-background: rgb(36, 36, 36);
+  --secondary-background: rgb(27, 27, 27);
+  --secondary-background-low-opacity: rgba(27, 27, 27, 0.329);
+  --attachments: rgb(105, 188, 235);
+  --accent-1: #8e44ad;
+  --accent-2: #9b59b6;
+  --accent-3: #3498db;
+  --accent-4: #2980b9;
+  --accent-5: #1abc9c;
+  --accent-6: #16a085;
+  --text-normal: rgb(201, 201, 201);
+  --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --text-on-accent: white;
+  --background-modifier-error: #e74c3c;
+  --background-modifier-error-hover: #c0392b;
+  --text-highlight-bg: #9b59b6;
+  --h1-gradient: #9b59b6, #8e44ad, #d2a8ff, #8e44ad;
+  --h2-gradient: #d2a8ff, #9b59b6, #222;
+  --h2-icon-color: #9b59b6;
+  --h3-h6-icon-color: #d2a8ff;
+}

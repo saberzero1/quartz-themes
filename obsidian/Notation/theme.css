@@ -34,10 +34,10 @@
 body {
   /* font stacks taken directly from Notion */
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-monospace:
-    "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    'SF Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
     monospace;
   -webkit-font-smoothing: auto;
 }
@@ -248,7 +248,7 @@ strong,
 /* 4.2.1. Nifty arrow before internal links (also applies to embeds) */
 .internal-link::before,
 .markdown-embed-link::before {
-  content: " ";
+  content: ' ';
   background-color: var(--text-normal);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
   display: inline-block;
@@ -381,7 +381,7 @@ strong,
 
 /* the SVG check mark */
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   background-color: white;
   left: 2px;
@@ -502,15 +502,15 @@ ol > li {
 /* Original idea from: https://gist.github.com/mklepaczewski/54e451f09994b9d450de81c8baaf8aa4 */
 /* but also with simpler classes so you can use `<span class='colour'>` as well */
 
-.app-container .markdown-preview-view pre[class*="language-note-"] {
+.app-container .markdown-preview-view pre[class*='language-note-'] {
   padding: 3px 2px;
   border-radius: 0;
 }
 
 .app-container
   .markdown-preview-view
-  pre[class*="language-note-"]
-  code[class*="language-note-"] {
+  pre[class*='language-note-']
+  code[class*='language-note-'] {
   color: var(--text-normal);
   white-space: pre-wrap;
   font-family: var(--default-font);
@@ -694,9 +694,9 @@ ol > li {
 }
 
 /* This is where the magic happens */
-.workspace-leaf-content[data-type="markdown"] .view-header,
+.workspace-leaf-content[data-type='markdown'] .view-header,
 .workspace-leaf.mod-active
-  .workspace-leaf-content[data-type="markdown"]
+  .workspace-leaf-content[data-type='markdown']
   .view-header {
   max-width: 700px;
   margin-left: auto;
@@ -715,7 +715,7 @@ ol > li {
 .workspace
   > .workspace-split
   > .workspace-leaf:first-of-type:last-of-type
-  .workspace-leaf-content[data-type="markdown"]
+  .workspace-leaf-content[data-type='markdown']
   .view-header {
   background-color: transparent;
   border: none;
@@ -725,25 +725,25 @@ ol > li {
   position: relative;
 }
 
-.workspace-leaf-content[data-type="markdown"] {
+.workspace-leaf-content[data-type='markdown'] {
   overflow: auto;
   position: unset;
   margin-top: 35px;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-header-title-container {
+.workspace-leaf-content[data-type='markdown'] .view-header-title-container {
   width: 100%;
   margin-top: auto;
   height: auto;
   padding: 0;
 }
 
-.workspace-leaf-content[data-type="markdown"]
+.workspace-leaf-content[data-type='markdown']
   .view-header-title-container:after {
   content: none;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-header-title {
+.workspace-leaf-content[data-type='markdown'] .view-header-title {
   font-size: 40px;
   line-height: 1.2em;
   padding: 3px 2px;
@@ -753,7 +753,7 @@ ol > li {
   white-space: normal;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-actions {
+.workspace-leaf-content[data-type='markdown'] .view-actions {
   position: absolute;
   top: 0;
   right: 0;
@@ -762,17 +762,17 @@ ol > li {
   z-index: 1;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-header-icon {
+.workspace-leaf-content[data-type='markdown'] .view-header-icon {
   position: absolute;
   left: 0;
   z-index: 2;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-content {
+.workspace-leaf-content[data-type='markdown'] .view-content {
   height: auto;
 }
 
-.workspace-leaf-content[data-type="markdown"] .markdown-source-view {
+.workspace-leaf-content[data-type='markdown'] .markdown-source-view {
   z-index: 0;
 }
 
@@ -802,18 +802,18 @@ ol > li {
 }
 
 /* 7.1. Adjustments for non-in-document headers (graphs, etc) */
-.workspace-leaf-content:not([data-type="markdown"]) .view-header,
+.workspace-leaf-content:not([data-type='markdown']) .view-header,
 .workspace-leaf.mod-active
-  .workspace-leaf-content:not([data-type="markdown"])
+  .workspace-leaf-content:not([data-type='markdown'])
   .view-header {
   border: none;
   background-color: var(--background-primary);
 }
 
-.workspace-leaf-content:not([data-type="markdown"])
+.workspace-leaf-content:not([data-type='markdown'])
   .view-header-title-container:after,
 .workspace-leaf.mod-active
-  .workspace-leaf-content:not([data-type="markdown"])
+  .workspace-leaf-content:not([data-type='markdown'])
   .view-header-title-container:after {
   background: linear-gradient(to right, transparent, var(--background-primary));
 }
@@ -872,6 +872,6 @@ a.tag,
  * gray, brown, orange, yellow, green, blue, purple, pink, red
  * If you want your own colours for your own specific tags you can copy and utilize this: */
 .cm-s-obsidian span.cm-hashtag.cm-tag-important,
-.tag[href="#important"] {
+.tag[href='#important'] {
   background-color: var(--background-red);
 }

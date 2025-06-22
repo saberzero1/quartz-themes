@@ -1,0 +1,134 @@
+body.theme-setting-overrideCalendar {
+  .workspace-leaf-content[data-type='calendar'] {
+    .view-content {
+      background-color: var(--theme-color-tabNavActiveBg);
+
+      .mod-fade:after {
+        display: none;
+      }
+    }
+    .container {
+      border-radius: 1rem;
+    }
+    .container > .calendar {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .container:has(> .calendar) {
+    background-color: var(--theme-color-calendarBg);
+    margin: 0;
+    padding: 0 !important;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end !important;
+      margin: 0 !important;
+      padding: 1em 0.5em 0.5em 0.5em !important;
+
+      .title {
+        cursor: default;
+        line-height: 1;
+        padding: 0;
+      }
+      .right-nav {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      .arrow svg,
+      .reset-button {
+        color: var(--icon-color);
+      }
+    }
+  }
+  .calendar .day {
+    padding: 0.5em 1em;
+    min-height: 10em;
+  }
+  .container > .calendar {
+    table-layout: fixed;
+    margin: 1rem;
+  }
+  .container > .calendar thead th {
+    background: transparent;
+    border: none;
+    text-transform: none;
+    font-size: var(--font-ui-small);
+    font-weight: normal;
+    color: var(--theme-color-control);
+    text-align: left;
+    padding: 0.25em 1em;
+  }
+  .container > .calendar tbody td {
+    display: table-cell;
+    max-width: 0;
+    border: none;
+    padding: 0;
+    vertical-align: top;
+  }
+  /* Days for current month */
+  .container > .calendar tbody td {
+    .day {
+      background-color: var(--theme-color-calendarDayBg);
+      border-radius: 0;
+      margin: 0;
+    }
+
+    .day.today {
+      background-color: var(--theme-color-tabNavBg);
+      color: var(--text-normal);
+      font-weight: bold;
+      border-radius: 0.5em;
+    }
+    .day.active {
+      background-color: var(--background-primary);
+      color: var(--text-normal);
+    }
+  }
+  .container > .calendar tbody td:has(.day.today) {
+    background-color: var(--theme-color-calendarDayBg);
+  }
+  .container > .calendar tbody td:has(.adjacent-month) {
+    background-color: transparent;
+
+    .day {
+      background-color: transparent;
+    }
+  }
+  @media (hover: hover) {
+    .container > .calendar tbody td .day:hover {
+      background: transparent;
+    }
+    .container > .calendar tbody td:not(:has(.adjacent-month)) .day:hover {
+      background-color: var(--theme-color-controlBgHover);
+      color: var(--theme-color-controlHover);
+    }
+  }
+  .calendar .day {
+    text-align: left;
+  }
+  .mod-sidedock .workspace-leaf-content[data-type='calendar'] {
+    .container {
+      border-radius: var(--radius-m);
+      overflow: hidden;
+
+      .calendar .day {
+        padding: 0.25em 0.25em;
+        min-height: 3em;
+      }
+    }
+    .container > .calendar {
+      table-layout: fixed;
+      width: 100%;
+      margin: 0;
+    }
+    .container > .calendar thead th {
+      padding: 0.25em;
+    }
+    .container > .calendar tbody td .day.today {
+      border-radius: 0.25em;
+    }
+  }
+}

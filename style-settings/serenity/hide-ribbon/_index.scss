@@ -1,0 +1,7 @@
+:not(.hide-tabs) .workspace-ribbon.mod-left.is-collapsed:hover:before {
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+.view-header-nav-buttons {
+  padding-left: 1.5em;
+  margin-left: 1.5em;
+}

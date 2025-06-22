@@ -398,7 +398,7 @@ settings:
 }
 
 button {
-  font-family: "Cartograph CF";
+  font-family: 'Cartograph CF';
   font-style: italic;
   background-color: var(--rp-overlay);
   color: var(--rp-foam);
@@ -518,7 +518,7 @@ a:not(.internal-link) {
 .cm-em,
 em {
   color: var(--rp-iris) !important;
-  font-family: "Cartograph CF" !important;
+  font-family: 'Cartograph CF' !important;
 }
 
 .cm-em.cm-formatting-em {
@@ -664,7 +664,7 @@ img:hover {
 
 /* code blocks in preview */
 pre code {
-  font-family: "Cartograph CF" !important;
+  font-family: 'Cartograph CF' !important;
   font-size: 14 !important;
   padding: 6px !important;
   line-height: normal;
@@ -682,10 +682,10 @@ pre code {
   font-size: var(--font-size-code);
 }
 
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none !important;
   color: var(--text-faint) !important;
   background-color: var(--pre-code);
@@ -739,7 +739,7 @@ thead {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   color: var(--text-accent);
   font-size: 1em;
@@ -797,16 +797,16 @@ thead {
   border-top-right-radius: 0 !important;
 }
 
-.workspace-leaf-content[data-type="backlink"] .view-content {
+.workspace-leaf-content[data-type='backlink'] .view-content {
   background-color: var(--background-secondary);
 }
 
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
+.workspace-leaf-content[data-type='tag'] .tag-pane-tag-count,
+.workspace-leaf-content[data-type='tag'] .tag-pane-tag-text {
   font-size: var(--font-size-side-dock);
 }
 
-.workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
+.workspace-leaf-content[data-type='backlink'] .search-result-file-matches {
   font-size: var(--font-size-side-dock);
 }
 
@@ -859,7 +859,7 @@ thead {
   color: var(--text-muted);
 }
 
-.workspace-leaf-content[data-type="graph"] .view-content {
+.workspace-leaf-content[data-type='graph'] .view-content {
   background-color: var(--background-primary);
 }
 
@@ -930,7 +930,7 @@ ul ul {
 }
 
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--border-color);
   position: absolute;
 }
@@ -956,7 +956,7 @@ ul .task-list-item ul::before {
 
 /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-  font-family: "Cartograph CF" !important;
+  font-family: 'Cartograph CF' !important;
   font-size: var(--font-size-code) !important;
   padding: 1px !important;
   display: block;
@@ -1016,7 +1016,7 @@ code {
 
 em,
 .cm-em {
-  font-family: "Cartograph CF";
+  font-family: 'Cartograph CF';
   font-style: italic;
   color: var(--text-accent);
 }
@@ -1159,7 +1159,7 @@ a:hover,
   color: var(--quote-opening-modifier) !important;
 }
 
-input[type="checkbox"],
+input[type='checkbox'],
 .markdown-preview-view .cm-formatting-task {
   -webkit-appearance: none;
   appearance: none;
@@ -1175,10 +1175,10 @@ input[type="checkbox"],
   display: inline-block;
 }
 
-input[type="checkbox"]:focus {
+input[type='checkbox']:focus {
   outline: 0;
 }
-input[type="checkbox"]:checked,
+input[type='checkbox']:checked,
 .cm-formatting-task.cm-property {
   background-color: var(--text-accent-hover);
   border: 1px solid var(--text-accent-hover);

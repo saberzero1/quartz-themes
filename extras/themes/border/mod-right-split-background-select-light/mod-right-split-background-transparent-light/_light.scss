@@ -1,0 +1,11 @@
+body.mod-right-split-background-transparent-light:not(.card-layout-open-light) {
+  --background-mod-right-split: var(--background-primary) !important;
+}
+
+body.theme-light:not(
+    .is-mobile
+  ).card-layout-open-light.mod-right-split-background-transparent-light
+  .mod-right-split
+  .workspace-tab-container {
+  --card-shadow-light: transparent;
+}

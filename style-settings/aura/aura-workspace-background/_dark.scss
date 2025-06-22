@@ -1,0 +1,31 @@
+:root[saved-theme='dark'],
+html[saved-theme='dark'] {
+  --background-primary: rgba(var(--cpt-core), var(--workspace-slider-dark));
+  --background-primary-alt: rgba(
+    var(--cpt-core-alt),
+    var(--workspace-slider-dark)
+  );
+  --background-secondary: rgba(var(--cpt-mantle), var(--workspace-slider-dark));
+  --background-secondary-alt: rgba(
+    var(--cpt-mantle-alt),
+    var(--workspace-slider-dark)
+  );
+  --ribbon-background: rgba(var(--cpt-mantle), var(--workspace-slider-dark));
+  --ribbon-background-collapsed: rgba(
+    var(--cpt-mantle),
+    var(--workspace-slider-dark)
+  );
+  --titlebar-background: rgba(var(--cpt-crust), var(--workspace-slider-dark));
+  --titlebar-background-focused: rgba(
+    var(--cpt-crust),
+    var(--workspace-slider-dark)
+  );
+}
+.workspace {
+  background-color: rgba(var(--cpt-core), 0.2);
+  backdrop-filter: brightness(var(--brightness-dark, 0.5))
+    blur(var(--blur-dark, 5px));
+}
+.horizontal-main-container {
+  --workspace-background-image: var(--image-dark-custom-option);
+}

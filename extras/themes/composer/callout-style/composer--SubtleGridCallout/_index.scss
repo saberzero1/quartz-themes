@@ -1,0 +1,45 @@
+.composer--SubtleGridCallout .callout {
+  background: linear-gradient(
+    150deg,
+    rgba(var(--callout-color), 0.15) 0%,
+    rgba(var(--callout-color), 0.05) 10%,
+    var(--background-primary) 38%
+  );
+  border: 1px solid rgba(var(--callout-color), 0.38);
+  position: relative;
+  padding: 4px;
+}
+
+.composer--SubtleGridCallout .callout::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 42%;
+  height: 88%;
+  background:
+    repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 19px,
+      rgba(var(--callout-color), 0.6) 20px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 19px,
+      rgba(var(--callout-color), 0.6) 20px
+    );
+  mask:
+    linear-gradient(to right, var(--background-primary), transparent 80%),
+    linear-gradient(to bottom, var(--background-primary), transparent 80%);
+  mask-composite: intersect;
+}
+
+.composer--SubtleGridCallout .callout-title {
+  padding: 8px 16px 8px 16px;
+}
+
+.composer--SubtleGridCallout .callout-content {
+  padding: 0px 16px 0px 16px;
+}

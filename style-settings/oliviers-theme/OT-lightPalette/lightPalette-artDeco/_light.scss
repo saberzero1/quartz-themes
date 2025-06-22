@@ -1,0 +1,32 @@
+.lightPalette-artDeco {
+  --OT-theme-reference-color: #ff52a8;
+  --color-base-00: #d1feff;
+  --color-base-20: #ff8bc5;
+  --color-base-35: #ffd700;
+  --color-base-40: #ffd700;
+  --color-base-50: #ff96ca;
+  --color-base-70: #d1feff;
+  --color-base-05: #ab8ef0;
+  --code-background: #affeff;
+  --OT-button-OFF-bg: #ff63b1;
+  --color-base-100: #332b00;
+  --link-color: #00bdc0;
+  /*    --h1-color:            #2C686E; */
+  /*    --h3-color:            #357F86; */
+  /*    --h5-color:            #4FB0B9; */
+  --OT-clickable-icon-in-header: var(--color-base-100);
+  --OT-color-muted-on-base-20: #3c9199;
+  --OT-color-on-base-20: #e2ffff;
+  --OT-stabilo-mark: var(--stabilo-bleu-clair);
+  /*    --OT-table-background:            var(--blockquote-background-color); */
+  --OT-table-header-background: var(--metadata-background);
+  --OT-table-alt-background: var(--blockquote-background-color);
+  --metadata-background: #ffe0ef;
+  --metadata-label-text-color: #887300;
+  --OT-metadata-property-icon: var(--metadata-label-text-color);
+  --OT-ribbon-icon-color-sidebar-is-collapsed: #ff369a;
+  --OT-setting-item-description: grey;
+  --OT-view-header-title-focus-color: var(--color-base-20);
+  --OT-view-header-title-no-focus-color: #00bdc0;
+  --tab-text-color-focused-active: var(--color-base-20);
+}

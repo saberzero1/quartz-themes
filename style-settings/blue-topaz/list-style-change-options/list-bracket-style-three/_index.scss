@@ -1,0 +1,37 @@
+body.list-bracket-style-three
+  :is(.markdown-preview-view, .markdown-rendered):not(.kanban)
+  :is(ul, ol):has(:is(ol, ul))
+  > li:has(:is(ol, ul)):not(.task-list-item) {
+  border-radius: var(--radius-s);
+  word-wrap: break-word;
+  word-break: break-word;
+  transition: all 300ms ease-in-out;
+  border-left: 0.125em solid var(--list-ul-block-color);
+}
+body.list-bracket-style-three
+  :is(.markdown-preview-view, .markdown-rendered):not(.kanban)
+  ol:has(:is(ol, ul))
+  > li:has(:is(ol, ul)):not(.task-list-item) {
+  border-left: 0.125em solid var(--list-ol-block-color);
+}
+body.list-bracket-style-three
+  :is(.markdown-preview-view, .markdown-rendered):not(.kanban)
+  :is(ul, ol):has(:is(ol, ul))
+  > li:has(:is(ol, ul)):not(.task-list-item) {
+  padding-left: 0.3em;
+}
+body.list-bracket-style-three
+  .markdown-rendered.show-indentation-guide
+  li:not(.task-list-item)
+  > ul::before,
+body.list-bracket-style-three
+  .markdown-rendered.show-indentation-guide
+  li:not(.task-list-item)
+  > ol::before {
+  border: none;
+}
+body.list-bracket-style-three
+  :is(.markdown-preview-view, .markdown-rendered):not(.kanban)
+  li:not(.task-list-item) {
+  padding-left: 0.45rem;
+}

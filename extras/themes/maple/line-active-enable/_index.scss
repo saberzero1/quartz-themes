@@ -1,0 +1,8 @@
+body:is(:not(.css-settings-manager), .line-active-enable)
+  .workspace-leaf.mod-active
+  .markdown-source-view
+  .cm-scroller
+  .cm-line.cm-active {
+  background-color: var(--active-line);
+  border-radius: var(--size-2-3);
+}

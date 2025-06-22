@@ -1,0 +1,18 @@
+body.h5-toggle-underline :is(.markdown-preview-view, .markdown-rendered) h5,
+body.h5-toggle-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-5.cm-line {
+  border-bottom: var(--h5-underline-width, 1px) var(--h5-underline-style, solid)
+    var(--h5-underline-color, var(--h5-color));
+}
+
+body.h5-toggle-underline
+  .markdown-source-view.mod-cm6
+  .HyperMD-header-5
+  + .cm-line {
+  padding-top: 0.5em !important;
+}
+
+body.h5-toggle-underline .cm-s-obsidian .cm-line.HyperMD-header-5 {
+  padding-top: 0.5rem;
+}

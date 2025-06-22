@@ -1,0 +1,9 @@
+Hover .internal-embed:has(.embed-title:not(:empty)) {
+  padding-top: 1.5rem;
+}
+Hover .internal-embed:has(.embed-title:not(:empty)):hover .embed-title {
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}

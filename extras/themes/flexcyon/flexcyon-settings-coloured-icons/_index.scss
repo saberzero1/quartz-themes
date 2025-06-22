@@ -1,0 +1,35 @@
+body.flexcyon-settings-coloured-icons [aria-label^='Uninstall'] {
+  color: rgba(var(--color-red-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Options'] {
+  color: rgba(var(--color-blue-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Hotkeys'] {
+  color: rgba(var(--color-green-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Donate to support'] {
+  color: rgba(var(--color-pink-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Reload plugins'] {
+  color: rgba(var(--color-cyan-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Open plugins folder'] {
+  color: rgba(var(--color-green-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Reload snippets'] {
+  color: rgba(var(--color-cyan-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Open snippets folder'] {
+  color: rgba(var(--color-green-rgb), 0.9);
+}
+
+body.flexcyon-settings-coloured-icons [aria-label^='Restore default'] {
+  color: rgba(var(--color-purple-rgb), 0.9);
+}

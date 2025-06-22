@@ -1,21 +1,25 @@
-.theme-light {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --accent-h: 81 !important;
-  --accent-s: 68% !important;
-  --accent-l: 58% !important;
-  --color-base-00: #fdfff5;
-  --color-base-05: #f4f8e2;
-  --color-base-10: #e7eed4;
-  --color-base-20: #e3efd2;
-  --color-base-25: #ddeace;
-  --color-base-30: rgb(186, 209, 177);
-  --color-base-35: #a5c1a1;
-  --color-base-40: #96c09f;
-  --color-base-50: #8cb59b;
-  --color-base-60: #82a196;
-  --color-base-70: #608b76;
-  --color-base-100: #467262;
+.theme-spring {
+  --font-default: 'Courgette', 'Handlee', cursive;
+}
+
+.theme-spring.colored-bold-and-italic {
+  --bold-color: rgb(135, 204, 135);
+}
+
+.colorful-headings.theme-spring {
+  --h1-color: rgb(142, 202, 127);
+  --h2-color: rgb(126, 216, 188);
+  --h4-color: rgb(227, 185, 114);
+  --h3-color: rgb(239, 165, 180);
+  --h5-color: rgb(200, 207, 85);
+  --h6-color: rgb(104, 189, 203);
+}
+
+.colorful-headings-alt.theme-spring {
+  --h1-color: rgb(156, 196, 129);
+  --h2-color: rgb(175, 209, 145);
+  --h3-color: rgb(179, 216, 115);
+  --h4-color: rgb(190, 218, 106);
+  --h5-color: rgb(213, 218, 61);
+  --h6-color: rgb(215, 214, 141);
 }

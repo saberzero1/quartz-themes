@@ -1,0 +1,9 @@
+body {
+  & .cm-formatting.external-link {
+    display: none;
+  }
+  & a.external-link {
+    background-image: none;
+    padding-right: unset;
+  }
+}

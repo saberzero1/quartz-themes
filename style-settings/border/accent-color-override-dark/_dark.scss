@@ -1,0 +1,40 @@
+:root[saved-theme='dark'],
+html[saved-theme='dark'] {
+  --accent-h: var(--accent-dark-h) !important;
+  --accent-s: var(--accent-dark-s) !important;
+  --accent-l: var(--accent-dark-l) !important;
+  .theme-dark
+    .mod-settings
+    .vertical-tab-content-container
+    > .vertical-tab-content
+    > .setting-item:nth-child(2)
+    > .setting-item-control:has(> input[type='color']) {
+    position: relative;
+    visibility: hidden;
+  }
+  .theme-dark
+    .mod-settings
+    .vertical-tab-content-container
+    > .vertical-tab-content
+    > .setting-item:nth-child(2)
+    > .setting-item-control:has(> input[type='color'])::before {
+    content: 'Overridden by Style Settings';
+    font-family: var(--font-interface);
+    font-size: var(--font-ui-smaller);
+    position: absolute;
+    width: max-content;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: visible;
+    pointer-events: none;
+  }
+  .is-mobile
+    .mod-settings
+    .vertical-tab-content-container
+    > .vertical-tab-content
+    > .setting-item:nth-child(2)
+    > .setting-item-control:has(> input[type='color'])::before {
+    width: auto;
+  }
+}

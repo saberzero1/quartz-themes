@@ -1,0 +1,11 @@
+.new-tab-image-none
+  .workspace-leaf-content[data-type='empty']
+  .empty-state::before {
+  display: none;
+}
+
+.new-tab-image-none
+  .workspace-leaf-content[data-type='empty']
+  .empty-state-title {
+  display: block;
+}

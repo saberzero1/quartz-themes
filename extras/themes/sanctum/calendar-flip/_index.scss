@@ -1,0 +1,17 @@
+.calendar-flip #calendar-container .nav {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.calendar-flip #calendar-container .title {
+  flex-grow: unset;
+  padding-right: 8px;
+}
+
+.stendig.calendar-flip #calendar-container .title {
+  justify-content: flex-end;
+}
+
+.stendig.calendar-flip #calendar-container .right-nav {
+  justify-content: flex-end;
+}

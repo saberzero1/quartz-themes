@@ -1,0 +1,30 @@
+body.embed-alt .markdown-source-view.is-live-preview .media-embed:after,
+body.embed-alt .markdown-rendered .media-embed:after,
+body.embed-alt .style-settings-container .media-embed:after {
+  content: attr(alt);
+  font-family: var(--font-default);
+  font-size: 0.8em;
+  font-weight: 100;
+  color: var(--text-muted);
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+bod.embed-alt-right .markdown-source-view.is-live-preview .media-embed:after,
+bod.embed-alt-right .markdown-rendered .media-embed:after,
+bod.embed-alt-right .style-settings-container .media-embed:after {
+  text-align: end;
+}
+
+bod.embed-alt-left .markdown-source-view.is-live-preview .media-embed:after,
+bod.embed-alt-left .markdown-rendered .media-embed:after,
+bod.embed-alt-left .style-settings-container .media-embed:after {
+  text-align: start;
+}
+
+bod.embed-alt-middle .markdown-source-view.is-live-preview .media-embed:after,
+bod.embed-alt-middle .markdown-rendered .media-embed:after,
+bod.embed-alt-middle .style-settings-container .media-embed:after {
+  text-align: center;
+}

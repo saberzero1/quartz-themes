@@ -145,14 +145,14 @@ body {
 }
 
 view-header-title-container,
-.workspace-leaf-content[data-type="outline"] .view-content,
+.workspace-leaf-content[data-type='outline'] .view-content,
 .backlink-pane,
 .outgoing-link-pane,
 .tag-container {
   border-radius: 10px;
 }
 
-.workspace-leaf-content[data-type="outline"] .view-content,
+.workspace-leaf-content[data-type='outline'] .view-content,
 .backlink-pane,
 .outgoing-link-pane,
 .tag-container {

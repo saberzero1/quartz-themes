@@ -1,0 +1,7 @@
+.nav-folder-title:not(:has(.svelte-ner10q)) .nav-folder-collapse-indicator {
+  display: none;
+}
+.file-explorer-cards .nav-folder-title {
+  padding: 10px 13px;
+  /* when folder collapse indicators are hidden, increase padding */
+}

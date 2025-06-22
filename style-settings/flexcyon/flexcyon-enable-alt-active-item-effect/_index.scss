@@ -1,0 +1,21 @@
+body .vertical-tab-nav-item {
+  padding-left: 0.5rem;
+  transform: padding ease-in-out 0.35s;
+}
+body .vertical-tab-nav-item.search-settings-input {
+  padding-left: 0.1rem;
+}
+body .vertical-tab-nav-item.is-active {
+  color: var(--text-accent);
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--text-on-accent) 10%,
+    var(--text-on-accent) 90%,
+    transparent 100%
+  );
+  padding-left: 0.75rem;
+}
+body .vertical-tab-nav-item.is-active:hover {
+  font-weight: bold;
+}

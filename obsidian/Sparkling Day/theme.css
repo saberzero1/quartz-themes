@@ -231,10 +231,10 @@ ul ul ul {
 /* ----------- Checkboxes ----------- */
 
 :is(
-    .HyperMD-task-line[data-task="/"],
-    .HyperMD-task-line[data-task=">"],
-    .HyperMD-task-line[data-task="-"],
-    .HyperMD-task-line[data-task="<"]
+    .HyperMD-task-line[data-task='/'],
+    .HyperMD-task-line[data-task='>'],
+    .HyperMD-task-line[data-task='-'],
+    .HyperMD-task-line[data-task='<']
   )
   .task-list-item-checkbox::after {
   -webkit-mask-image: none;
@@ -242,25 +242,25 @@ ul ul ul {
   background-color: transparent;
 }
 
-.HyperMD-task-line[data-task="/"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="/"] .task-list-item-checkbox:hover {
+.HyperMD-task-line[data-task='/'] .task-list-item-checkbox,
+.HyperMD-task-line[data-task='/'] .task-list-item-checkbox:hover {
   background-color: var(--folly);
   border-color: var(--checkbox-border-color);
 }
 
-.HyperMD-task-line[data-task=">"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=">"] .task-list-item-checkbox:hover {
+.HyperMD-task-line[data-task='>'] .task-list-item-checkbox,
+.HyperMD-task-line[data-task='>'] .task-list-item-checkbox:hover {
   background-color: var(--bright-green);
   border-color: var(--checkbox-border-color);
 }
 
-.HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="-"] .task-list-item-checkbox:hover {
+.HyperMD-task-line[data-task='-'] .task-list-item-checkbox,
+.HyperMD-task-line[data-task='-'] .task-list-item-checkbox:hover {
   background-color: var(--gold);
   border-color: var(--checkbox-border-color);
 }
-.HyperMD-task-line[data-task="<"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="<"] .task-list-item-checkbox:hover {
+.HyperMD-task-line[data-task='<'] .task-list-item-checkbox,
+.HyperMD-task-line[data-task='<'] .task-list-item-checkbox:hover {
   background-color: var(--robin-egg-blue);
   border-color: var(--checkbox-border-color);
 }
@@ -285,8 +285,8 @@ pre code {
   border: var(--codeblock-background) !important;
 }
 
-pre[class*="language-"],
-code[class*="language-"] {
+pre[class*='language-'],
+code[class*='language-'] {
   background: var(--codeblock-background);
   color: var(--codeblock-color) !important;
 }
@@ -497,11 +497,11 @@ img {
 /* ----------- File Explorer ----------- */
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-  content: "📄 ";
+  content: '📄 ';
 }
 
 .nav-folder-children .nav-folder-title-content::before {
-  content: "📁 ";
+  content: '📁 ';
   margin-right: 0px !important;
 }
 

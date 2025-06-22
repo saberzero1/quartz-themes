@@ -1,0 +1,44 @@
+.ulu-line-callouts .callout::after {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+
+.ulu-line-callouts .callout {
+  /* background: rgba(var(--callout-color), 0.05); */
+  background: transparent;
+  position: relative;
+  /* border: 1px solid rgba(var(--callout-color), 0.1); */
+  /* border-left: 3px solid rgba(var(--callout-color), 0.4); */
+  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+
+.ulu-line-callouts .callout::before {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  border-left: 3px solid rgb(var(--callout-color));
+  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+
+.ulu-line-callouts .callout:hover,
+.ulu-line-callouts .markdown-source-view.mod-cm6 .cm-embed-block:hover {
+  border-radius: 0px;
+}
+
+.ulu-line-callouts .callout-title-inner {
+  font-weight: bold;
+  /* font-family: var(--font-title); */
+  font-variation-settings: 'WGHT' 900;
+}

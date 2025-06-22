@@ -52,7 +52,7 @@ a {
 
 span.view-header-breadcrumb,
 div.view-header-title {
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
   letter-spacing: 1px;
 }
 
@@ -66,7 +66,7 @@ div.view-header-title {
 
 a.tag,
 .cm-hashtag {
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
   text-transform: uppercase;
   font-size: 9px;
   letter-spacing: 1px;
@@ -74,18 +74,18 @@ a.tag,
 
 .nav-file-title,
 .nav-folder-title {
-  font-family: "segoe ui", sans-serif;
+  font-family: 'segoe ui', sans-serif;
   font-size: 12px;
 }
 
 body {
   --inline-title-color: #4c5e75;
-  --inline-title-font: "georgia", serif;
+  --inline-title-font: 'georgia', serif;
   --inline-title-size: 2em;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-weight: 200;
 
-  --font-text: "segoe ui", sans-serif;
+  --font-text: 'segoe ui', sans-serif;
   --font-text-size: 14px !important;
 }
 
@@ -126,11 +126,11 @@ svg * {
 }
 
 .body {
-  font-family: "segoe ui", sans-serif;
+  font-family: 'segoe ui', sans-serif;
 }
 
 .workspace-tab-header-inner-title {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   text-transform: lowercase;
   font-size: 9px;
   letter-spacing: 1px;
@@ -209,7 +209,7 @@ body {
 .callout-title {
   color: #4c5e75;
   font-size: 15px;
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
 }
 
 .markdown-preview-section > div h1,
@@ -218,7 +218,7 @@ body {
 .markdown-preview-section > div h4,
 .markdown-preview-section > div h5,
 .markdown-preview-section > div h6 {
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
   margin-top: 40px;
   font-weight: normal;
   color: #4c5e75 !important;

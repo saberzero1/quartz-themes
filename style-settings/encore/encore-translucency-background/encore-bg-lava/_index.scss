@@ -1,0 +1,16 @@
+body.encore-translucency.encore-bg-lava {
+  background-image:
+    radial-gradient(transparent, #360700),
+    linear-gradient(to top, #d86800, transparent),
+    linear-gradient(to bottom left, #b43900, #1a0101);
+}
+body.encore-translucency.encore-bg-lava::before {
+  position: fixed;
+  inset: 0;
+  content: '';
+  animation: fade-in 60s linear infinite alternate;
+  background-image:
+    radial-gradient(transparent, #360700),
+    linear-gradient(to top, #f5e498, transparent),
+    linear-gradient(to bottom left, #ff0000, #ff0000);
+}

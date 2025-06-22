@@ -1,0 +1,28 @@
+.theme-light-green {
+  --main-background: #f0f8f0;
+  --secondary-background: #e1f0e1;
+  --secondary-background-low-opacity: #e1f0e154;
+  --main-node: #27ae60;
+  --accent-1: #2ecc71;
+  --accent-2: #16a085;
+  --accent-3: #3498db;
+  --accent-4: #2980b9;
+  --accent-5: #f1c40f;
+  --accent-6: #f39c12;
+  --external-link: #16a085;
+  --external-link-hidden: #16a08599;
+  --text-normal: rgb(36, 36, 36);
+  --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --background-modifier-error: #e74c3c;
+  --background-modifier-error-hover: #c0392b;
+  --text-highlight-bg: #2ecc71;
+  --h1-gradient: #27ae60, #2ecc71, #16a085, #3498db;
+  --h2-gradient: #2ecc71, #27ae60, #eee;
+  --h2-icon-color: #27ae60;
+  --h3-h6-icon-color: #2ecc71;
+}

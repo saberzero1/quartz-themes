@@ -364,7 +364,7 @@ h6 {
 
 .cm-line hr::after,
 .markdown-preview-view hr::after {
-  content: "☀";
+  content: '☀';
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -1016,13 +1016,13 @@ a:hover,
   color: var(--theme-color) !important; /* Text color */
 }
 
-.theme-dark :not(pre) > code[class*="language-"],
-.theme-dark pre[class*="language-"] {
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
   background-color: var(--background-secondary);
 }
 
 /* Inline code for light/dark modes */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 4px 7px;
   border-radius: 0.3em;
   white-space: normal;
@@ -1061,7 +1061,7 @@ a:hover,
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
   position: absolute;
-  content: "";
+  content: '';
   top: -5%;
   left: 0;
   width: 100%;
@@ -1082,7 +1082,7 @@ pre {
   position: relative;
 }
 
-pre[class*="language-"]:before {
+pre[class*='language-']:before {
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 700;
@@ -1093,7 +1093,7 @@ pre[class*="language-"]:before {
   right: 0.3rem;
   padding: 0;
   color: var(--theme-color) !important;
-  content: "";
+  content: '';
   text-transform: uppercase;
   background: var(--accent-opacity-5);
   border-radius: 8px;
@@ -1101,50 +1101,50 @@ pre[class*="language-"]:before {
   z-index: 10;
 }
 
-pre[class$="javascript"]:before,
-pre[class$="js"]:before {
-  content: "JavaScript";
+pre[class$='javascript']:before,
+pre[class$='js']:before {
+  content: 'JavaScript';
 }
 
-pre[class$="typescript"]:before,
-pre[class$="ts"]:before {
-  content: "typescript";
+pre[class$='typescript']:before,
+pre[class$='ts']:before {
+  content: 'typescript';
 }
 
-pre[class$="html"]:before {
-  content: "html";
+pre[class$='html']:before {
+  content: 'html';
 }
 
-pre[class$="css"]:before {
-  content: "css";
+pre[class$='css']:before {
+  content: 'css';
 }
 
-pre[class$="ejs"]:before {
-  content: "ejs";
+pre[class$='ejs']:before {
+  content: 'ejs';
 }
 
-pre[class$="vue"]:before {
-  content: "vue";
+pre[class$='vue']:before {
+  content: 'vue';
 }
 
-pre[class$="react"]:before {
-  content: "react";
+pre[class$='react']:before {
+  content: 'react';
 }
 
-pre[class$="shell"]:before {
-  content: "Shell";
+pre[class$='shell']:before {
+  content: 'Shell';
 }
 
-pre[class$="powershell"]:before {
-  content: "PowerShell";
+pre[class$='powershell']:before {
+  content: 'PowerShell';
 }
 
-pre[class$="json"]:before {
-  content: "Json";
+pre[class$='json']:before {
+  content: 'Json';
 }
 
-pre[class$="python"]:before {
-  content: "python";
+pre[class$='python']:before {
+  content: 'python';
 }
 
 /* +-------------------------------------------------+ */
@@ -1170,91 +1170,91 @@ pre[class$="python"]:before {
 /* ╔═══════════════════════════╗ */
 /* ║      Custom Callout       ║ */
 /* ╚═══════════════════════════╝ */
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-trophy;
 }
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-octagon-alert;
 }
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: var(--callout-color-red);
   --callout-icon: lucide-triangle-alert;
 }
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-info;
 }
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-quote;
 }
-.callout[data-callout="note"] {
+.callout[data-callout='note'] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-notebook-pen;
 }
-.callout[data-callout="highlight"] {
+.callout[data-callout='highlight'] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-highlighter;
 }
-.callout[data-callout="idea"] {
+.callout[data-callout='idea'] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-lightbulb;
 }
-.callout[data-callout="task"] {
+.callout[data-callout='task'] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-circle-check-big;
 }
-.callout[data-callout="reminder"] {
+.callout[data-callout='reminder'] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-bell-ring;
 }
-.callout[data-callout="analysis"] {
+.callout[data-callout='analysis'] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-chart-pie;
 }
-.callout[data-callout="inspiration"] {
+.callout[data-callout='inspiration'] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-sunrise;
 }
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-message-circle-question;
 }
-.callout[data-callout="code"] {
+.callout[data-callout='code'] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-code;
 }
-.callout[data-callout="goal"] {
+.callout[data-callout='goal'] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-target;
 }
-.callout[data-callout="celebration"] {
+.callout[data-callout='celebration'] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-party-popper;
 }
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: var(--callout-color-red);
   --callout-icon: lucide-bug;
 }
-.callout[data-callout="gift"] {
+.callout[data-callout='gift'] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-gift;
 }
-.callout[data-callout="puzzle"] {
+.callout[data-callout='puzzle'] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-puzzle;
 }
-.callout[data-callout="bookmark"] {
+.callout[data-callout='bookmark'] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-bookmark;
 }
-.callout[data-callout="calendar"] {
+.callout[data-callout='calendar'] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-calendar;
 }
-.callout[data-callout="team"] {
+.callout[data-callout='team'] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-users;
 }
@@ -1262,20 +1262,20 @@ pre[class$="python"]:before {
 /* ╔═══════════════════════════╗ */
 /* ║         Checkbox          ║ */
 /* ╚═══════════════════════════╝ */
-input[data-task="/"]:checked,
-li[data-task="/"] > input:checked,
-li[data-task="/"] > p > input:checked {
+input[data-task='/']:checked,
+li[data-task='/'] > input:checked,
+li[data-task='/'] > p > input:checked {
   background-image: none;
   background-color: transparent;
   position: relative;
   overflow: hidden;
 }
-input[data-task="/"]:checked:after,
-li[data-task="/"] > input:checked:after,
-li[data-task="/"] > p > input:checked:after {
+input[data-task='/']:checked:after,
+li[data-task='/'] > input:checked:after,
+li[data-task='/'] > p > input:checked:after {
   top: 0;
   left: 0;
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   background-color: var(--theme-color);
@@ -1284,14 +1284,14 @@ li[data-task="/"] > p > input:checked:after {
   -webkit-mask-image: none;
 }
 
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
   text-decoration: none !important;
   color: var(--accent-opacity-50);
 }
 
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='/'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
   text-decoration: none !important;
   color: var(--theme-color);
 }

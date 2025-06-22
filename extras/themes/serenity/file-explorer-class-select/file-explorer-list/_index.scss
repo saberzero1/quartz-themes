@@ -1,0 +1,27 @@
+.file-explorer-list .nav-file-title::before,
+.file-explorer-list .nav-folder-title::before {
+  content: '●';
+  font-size: 5.7px;
+  color: var(--text-muted);
+  margin-right: 10px;
+}
+
+.file-explorer-list .nav-folder .nav-folder .nav-file-title::before {
+  content: '○';
+  font-size: 8px;
+  color: var(--text-muted);
+  margin-right: 10px;
+  font-weight: 900 !important;
+}
+
+.file-explorer-list .nav-folder-title::before {
+  content: '◆';
+  font-size: 10px;
+}
+
+.file-explorer-list
+  .nav-folder
+  .nav-folder:not(.is-collapsed)
+  .nav-folder-title::before {
+  font-size: 13px;
+}

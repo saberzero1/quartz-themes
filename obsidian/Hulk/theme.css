@@ -128,7 +128,7 @@ mark {
   margin-right: 6px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 50%;
@@ -136,11 +136,11 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-input[type="checkbox"]:focus {
+input[type='checkbox']:focus {
   outline: 0;
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background-color: var(--text-accent-hover);
   border: 1px solid var(--text-accent-hover);
   background-position: center;
@@ -180,7 +180,7 @@ code,
 /* code + code blocks for preview */
 .markdown-preview-view code {
   color: var(--yellow);
-  font-family: monaco, "Source Code Pro", monospace;
+  font-family: monaco, 'Source Code Pro', monospace;
   background-color: var(--pre-code) !important;
   border-radius: 4px;
   border-color: #ff79c6 !important;
@@ -647,7 +647,7 @@ ul ul {
 }
 
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid #393067;
   position: absolute;
 }

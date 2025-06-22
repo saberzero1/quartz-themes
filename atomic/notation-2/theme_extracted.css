@@ -198,15 +198,15 @@ body {
   --font-black: 900;
   --font-bold: 500;
   --font-default:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -214,22 +214,22 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+    'iA Writer Duospace', 'Nitti', Menlo, Courier, monospace;
+  --font-monospace-override: '??';
+  --font-monospace-theme: '??';
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-default);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
-  --font-text-theme: "??";
+  --font-text-theme: '??';
   --font-thin: 100;
   --font-ui-large: 1.15em;
   --font-ui-medium: 0.97em;
@@ -242,7 +242,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: ".";
+  --footnote-id-delimiter: '.';
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -935,132 +935,132 @@ h6 {
   padding-left: 2.3em;
 }
 
-.callout[data-callout="tip"] {
+.callout[data-callout='tip'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="danger"] {
+.callout[data-callout='danger'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout="question"] {
+.callout[data-callout='question'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout='example'] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout="summary"] {
+.callout[data-callout='summary'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="tldr"] {
+.callout[data-callout='tldr'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="check"] {
+.callout[data-callout='check'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="done"] {
+.callout[data-callout='done'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="help"] {
+.callout[data-callout='help'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="caution"] {
+.callout[data-callout='caution'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="failure"] {
+.callout[data-callout='failure'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="fail"] {
+.callout[data-callout='fail'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="cite"] {
+.callout[data-callout='cite'] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1080,7 +1080,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold {
@@ -1092,7 +1092,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold .svg-icon {
@@ -1179,7 +1179,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1283,7 +1283,7 @@ input[type="search"] {
 }
 
 .tree-item-self:before {
-  content: "\200B";
+  content: '\200B';
 }
 
 .tree-item-self.mod-collapsible {
@@ -1335,7 +1335,7 @@ input[type="search"] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: "\200b";
+  content: '\200b';
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1415,7 +1415,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled="true"] {
+.clickable-icon[aria-disabled='true'] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

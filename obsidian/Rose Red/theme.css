@@ -794,7 +794,7 @@ mark {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   color: var(--interactive-accent);
   line-height: 1.25em;
@@ -856,12 +856,12 @@ mark {
 }
 
 .CodeMirror-foldgutter-folded:after {
-  content: "\25BA";
+  content: '\25BA';
   color: var(--text-link);
 }
 
 .CodeMirror-foldgutter-open:after {
-  content: "\25BC";
+  content: '\25BC';
 }
 
 /* Bullet Point Relationship Lines */
@@ -873,7 +873,7 @@ ul ul {
 
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid;
   color: #92cdd6;
   position: absolute;
@@ -939,7 +939,7 @@ body {
     Apple Color Emoji, Segoe UI Emoji;
 
   --font-monospace-theme:
-    "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+    'Hack', 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular,
     SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 

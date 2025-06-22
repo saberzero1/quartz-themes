@@ -1,0 +1,88 @@
+.retro-dm-misty-mirage.theme-dark {
+  /* Base Color */
+  --color-base-00: #3b3149;
+  --color-base-05: #443955;
+  --color-base-10: #4d4161;
+  --color-base-20: #57496c;
+  --color-base-25: #605178;
+  --color-base-30: #6a5884;
+  --color-base-35: #736090;
+  --color-base-40: #7d699b;
+  --color-base-50: #9181aa;
+  --color-base-60: #a598ba;
+  --color-base-70: #bab0ca;
+  --color-base-100: #e3dfe9;
+  /* Accent color = --color-base-50 */
+  --accent-h: 294.4 !important;
+  --accent-s: 19.4% !important;
+  --accent-l: 58.6% !important;
+  /* Misty Mirage Variables */
+  --paper-color: rgba(68, 57, 85, 0.95);
+  --main-ink: var(--white-ink);
+  --main-ink-muted: var(--white-ink-muted);
+  --main-ink-fainted: var(--white-ink-fainted);
+  --secondary-ink: #e6e6fa;
+  --secondary-ink-muted: rgba(230, 230, 250, 0.85);
+  --secondary-ink-fainted: rgba(230, 230, 250, 0.65);
+  --bold-accent-ink: #a3b28c;
+  --italic-accent-ink: #e6e6fa;
+  --leather-color: var(--secondary-ink);
+  --leather-color-alt: #dcc5f3;
+  --leather-color-rgb: 230, 230, 250;
+  --leather-contrast-color: var(--black-ink);
+  --leather-contrast-color-muted: var(--black-ink-muted);
+  --background-modifier-form-field: var(--color-base-10);
+  --interactive-normal: var(--color-base-20);
+  --link-color: #d2b5f0;
+  --link-unresolved-color: #d2c3e2;
+}
+
+.retro-dm-misty-mirage.theme-dark .vertical-tab-header {
+  background-color: var(--color-base-20);
+  --interactive-accent: var(--color-base-60);
+  --background-modifier-hover: var(--color-base-70);
+}
+
+.retro-dm-misty-mirage.theme-dark .setting-hotkey {
+  background-color: var(--color-base-35);
+}
+
+.retro-dm-misty-mirage.theme-dark .modal-sidebar {
+  background-color: var(--color-base-00);
+}
+
+.retro-dm-misty-mirage.theme-dark .menu {
+  background-color: var(--color-base-20);
+  --background-modifier-hover: var(--color-base-50);
+}
+
+.is-mobil.theme-dark .workspace-drawer-header-name-text {
+  color: var(--color-base-00);
+}
+
+.is-mobil.theme-dark .workspace-drawer-header-info {
+  color: var(--color-base-30);
+}
+
+.retro-dm-misty-mirage.theme-dark .mobile-navbar-actions .clickable-icon {
+  --icon-color: var(--color-base-100);
+}
+
+.retro-dm-misty-mirage.theme-dark .container.svelte-pcimu8 {
+  --color-text-today: var(--color-base-05);
+  --color-text-day: var(--color-base-00);
+  --color-text-heading: var(--color-base-40);
+  --color-arrow: var(--color-base-30);
+  --color-text-weeknum: var(--color-base-20);
+  --color-text-title: var(--color-base-20);
+  --color-button: var(--color-base-30);
+  --color-dot: var(--color-base-40);
+}
+
+.retro-dm-misty-mirage.theme-dark .reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
+  color: var(--color-base-50);
+}
+
+.retro-dm-misty-mirage.theme-dark .year.svelte-1vwr9dd.svelte-1vwr9dd {
+  color: var(--color-base-50);
+}

@@ -1,0 +1,9 @@
+body:not(.default-loading-page).loading-shape-with-custom-gif
+  .progress-bar-message:before {
+  display: block;
+  width: 250px;
+  height: 250px;
+  content: var(--loading-page-custom-gif-caption-alt);
+  background: no-repeat center/cover var(--loading-page-custom-gif-url-alt);
+  animation: shape-gif 2.5s infinite alternate;
+}

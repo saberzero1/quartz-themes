@@ -1,0 +1,39 @@
+body:not(.folder-arrow-display) .nav-folder .tree-item-icon.collapse-icon {
+  display: none;
+}
+
+body.folder-arrow
+  .nav-files-container
+  .nav-folder-title:hover
+  .tree-item-icon.collapse-icon,
+body.folder-arrow
+  .nav-files-container
+  .nav-folder-title:hover
+  .nav-folder-collapse-indicator,
+body.folder-arrow
+  .nav-files-container
+  .nav-folder-title:hover
+  .tree-item-icon.nav-folder-collapse-indicator {
+  display: flex;
+  margin-left: -2px;
+}
+
+body.folder-arrow
+  .nav-files-container
+  .tree-item-self.is-active
+  .collapse-icon
+  svg {
+  color: var(--text-dl);
+}
+
+body.folder-arrow
+  .nav-files-container
+  .nav-folder-children
+  .nav-folder-title:hover
+  .nav-folder-title-content::before {
+  margin-left: var(--file-icon-margin);
+}
+
+body.folder-arrow-display .nav-folder .tree-item-icon.collapse-icon {
+  margin-right: 4px;
+}

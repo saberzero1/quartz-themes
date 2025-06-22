@@ -1,0 +1,24 @@
+.swida-callouts .callout {
+  --s: 50px;
+  --c1: #e1f5c400;
+  --c2: rgba(var(--callout-color), 0.1);
+  --_g:
+    #0000, #0004 5%, var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%, #0004 95%, #0000;
+  background:
+    radial-gradient(100% 50% at 100% 0, var(--_g)),
+    radial-gradient(100% 50% at 0 50%, var(--_g)),
+    radial-gradient(100% 50% at 100% 100%, var(--_g));
+  background-size: var(--s) calc(2 * var(--s));
+}
+
+.swida-callouts .callout .callout-title-inner {
+  background-color: rgba(var(--callout-color), 0.5);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.swida-callouts .callout .callout-content p {
+  font-weight: bold;
+}

@@ -1,0 +1,103 @@
+body.layout-style-options-rectangle
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner,
+body.layout-style-options-rectangle
+  .workspace-tab-container-after.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-rectangle
+  .workspace-tab-header.is-before-active
+  .workspace-tab-header-inner,
+body.layout-style-options-rectangle
+  .workspace-tab-header.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-rectangle .workspace-tab-header,
+body.layout-style-options-rectangle .workspace-tab-header-inner,
+body.layout-style-options-rectangle
+  .workspace-split.mod-left-split
+  .view-content,
+body.layout-style-options-rectangle
+  .workspace-split.mod-right-split
+  .view-content,
+body.layout-style-options-rectangle .workspace-tab-header.is-after-active,
+body.layout-style-options-rectangle .workspace-tab-header.is-before-active,
+body.layout-style-options-rectangle
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+body.layout-style-options-rectangle
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content,
+body.layout-style-options-rectangle
+  .workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+body.layout-style-options-rectangle .workspace-tab-header-inner {
+  padding: 3px 9px;
+}
+
+body.layout-style-options-rectangle .workspace-tab-container-before,
+body.layout-style-options-rectangle .workspace-tab-container-after {
+  width: 0;
+}
+
+body.layout-style-options-rectangle .workspace-tab-header-container {
+  padding: 4px 0 0 4px;
+}
+
+body.layout-style-options-rectangle
+  .workspace-split.mod-right-split
+  .workspace-tabs
+  .workspace-leaf {
+  border-top-right-radius: 0;
+}
+
+body.layout-style-options-rectangle
+  .workspace-split.mod-left-split
+  .workspace-tabs
+  .workspace-leaf {
+  border-top-left-radius: 0;
+}
+
+body.layout-style-options-rectangle .workspace-tab-header-container {
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border-1);
+}
+
+body.layout-style-options-rectangle
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle:not(:hover),
+body.layout-style-options-rectangle
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle:not(:hover),
+body.layout-style-options-rectangle
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle:not(:hover) {
+  height: 100%;
+  background-color: var(--background-leaf-resize-handle);
+}
+
+body.layout-style-options-rectangle
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle:hover,
+body.layout-style-options-rectangle
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle:hover,
+body.layout-style-options-rectangle
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle:hover {
+  height: 100%;
+}
+
+body.layout-style-options-rectangle .side-dock-ribbon-action {
+  padding: 3px 0;
+}

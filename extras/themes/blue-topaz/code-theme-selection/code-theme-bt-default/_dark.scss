@@ -1,0 +1,17 @@
+body.code-theme-bt-default {
+  --background-code: #1111118c;
+  --code-variable: var(--red);
+  --code-normal: #ebdbb2;
+  --code-comment: var(--darkgreen);
+  --code-function: var(--light-yellow);
+  --code-important: var(--darkblue);
+  --code-keyword: var(--darkblue);
+  --code-operator: #a89984;
+  --code-property: var(--blue);
+  --code-punctuation: var(--gray-2);
+  --code-string: var(--green);
+  --code-tag: var(--red);
+  --code-value: var(--green);
+  --code-string-2: var(--yellow);
+  --code-active-line-background-color: #111111eb;
+}

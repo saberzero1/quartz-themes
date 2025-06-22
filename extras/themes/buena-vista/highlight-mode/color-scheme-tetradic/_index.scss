@@ -1,0 +1,67 @@
+.color-scheme-tetradic {
+  --accent-tetra-2-h: calc(var(--accent-h) - 90);
+  --accent-tetra-3-h: calc(var(--accent-h) + 180);
+  --accent-tetra-4-h: calc(var(--accent-h) + 90);
+  --text-highlight-h: var(--accent-tetra-2-h);
+  --italic-h: var(--accent-tetra-4-h);
+  --bold-h: var(--accent-tetra-3-h);
+  --callout-h: var(--accent-h);
+  --button-h: var(--accent-h);
+  --button-alt-h: var(--accent-tetra-3-h);
+}
+
+.color-scheme-tetradic {
+  --italic-color: hsl(var(--italic-h), var(--accent-s), var(--color-80-l));
+  --bold-color: hsl(var(--bold-h), var(--accent-s), var(--color-80-l));
+  --text-highlight-bg: hsla(
+    var(--text-highlight-h),
+    var(--accent-s),
+    var(--accent-l),
+    50%
+  );
+  --callout-background-hsla:
+    var(--callout-h), var(--accent-s), var(--accent-l), 20%;
+  --background-modifier-hover: hsl(
+    var(--button-h),
+    var(--accent-s),
+    var(--color-50-l),
+    25%
+  );
+  /*Titlebar and ribbon*/
+  --icon-color-hover: hsl(var(--button-h), var(--accent-s), var(--color-90-l));
+  --nav-item-background-hover: hsla(
+    var(--button-h),
+    var(--accent-s),
+    var(--color-40-l),
+    33%
+  );
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-color-hover: var(--icon-color-hover);
+  --nav-item-color-active: var(--text-on-accent);
+  --checkbox-color: hsl(
+    var(--button-alt-h),
+    calc(var(--accent-s) * 0.8),
+    var(--color-70-l)
+  );
+  --checkbox-color-hover: hsl(
+    var(--button-alt-h),
+    var(--accent-s),
+    var(--color-80-l)
+  );
+  --background-modifier-form-field: var(--color-base-15);
+  --color-base-00: hsl(0, 0%, var(--color-00-l));
+  --color-base-05: hsl(0, 0%, var(--color-05-l));
+  --color-base-10: hsl(0, 0%, var(--color-10-l));
+  --color-base-15: hsl(0, 0%, var(--color-15-l));
+  --color-base-20: hsl(0, 0%, var(--color-20-l));
+  --color-base-25: hsl(0, 0%, var(--color-25-l));
+  --color-base-30: hsl(0, 0%, var(--color-30-l));
+  --color-base-35: hsl(0, 0%, var(--color-35-l));
+  --color-base-40: hsl(0, 0%, var(--color-40-l));
+  --color-base-50: hsl(0, 0%, var(--color-50-l));
+  --color-base-60: hsl(0, 0%, var(--color-60-l));
+  --color-base-70: hsl(0, 0%, var(--color-70-l));
+  --color-base-80: hsl(0, 0%, var(--color-80-l));
+  --color-base-90: hsl(0, 0%, var(--color-90-l));
+  --color-base-100: hsl(0, 0%, var(--color-100-l));
+}

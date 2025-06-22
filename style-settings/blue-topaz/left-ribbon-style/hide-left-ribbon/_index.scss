@@ -1,0 +1,104 @@
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer
+  .file-tree-plugin-view
+  .oz-nav-action-button {
+  margin-left: 20px !important;
+}
+body.view-button-front.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer.color-scheme-options-simplicity-topaz
+  .workspace-leaf-content
+  .view-header
+  .view-header-nav-buttons {
+  margin-left: 5px;
+}
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content[data-mode='source']
+  .view-content
+  .markdown-source-view:not(.is-live-preview)::before {
+  left: 38px;
+}
+body.hide-left-ribbon .workspace-ribbon.mod-left:not(:hover):before,
+body.hide-left-ribbon .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover),
+body.hide-left-ribbon
+  .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
+  .sidebar-toggle-button.mod-left {
+  margin-left: calc(-1 * var(--ribbon-width) + 1px);
+}
+body.hide-left-ribbon
+  .workspace-ribbon.side-dock-ribbon.mod-left
+  .sidebar-toggle-button.mod-left,
+body.hide-left-ribbon .workspace-ribbon.mod-left:before,
+body.hide-left-ribbon .workspace-ribbon.side-dock-ribbon.mod-left {
+  transition: all 350ms ease-in-out;
+}
+body.hide-left-ribbon-retention-drawer.hide-titlebar-close-btn.is-hidden-frameless
+  .titlebar-button.mod-logo {
+  display: none;
+}
+body.hide-left-ribbon-retention-drawer.hide-titlebar-close-btn.is-hidden-frameless
+  .workspace-ribbon.mod-left
+  .sidebar-toggle-button {
+  padding-top: var(--size-4-2);
+}
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.mod-left:not(:hover)
+  ~ .workspace-split
+  .workspace-tabs.mod-top.mod-top-left-space
+  .workspace-tab-header-container {
+  margin-left: 30px;
+  transition: all 350ms ease-in-out;
+}
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.mod-left:not(:hover):before,
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover) {
+  margin-left: calc(-1 * var(--ribbon-width) + 1px);
+}
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.side-dock-ribbon.mod-left
+  .sidebar-toggle-button.mod-left,
+body.hide-left-ribbon-retention-drawer .workspace-ribbon.mod-left:before,
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.mod-left:hover
+  ~ .workspace-split
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container {
+  transition: all 350ms ease-in-out;
+}
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.side-dock-ribbon.mod-left
+  .sidebar-toggle-button.mod-left {
+  background: unset;
+}
+body.hide-left-ribbon-retention-drawer:not(
+    .background-settings-workplace-background-image
+  )
+  .workspace-tabs.mod-top {
+  background: var(--background-secondary-alt);
+}
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer .view-header {
+  padding-left: 24px;
+}
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content:is([data-mode='preview'], [data-mode='source'])
+  .view-header
+  .view-actions
+  > :is(
+    [aria-label^='该面板处于编辑视图中'],
+    [aria-label^='Current view: editing']
+  ) {
+  left: 30px;
+}
+body.hide-titlebar-close-btn.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content[data-mode='preview']
+  .view-header
+  .view-actions
+  > :is(
+    [aria-label^='该面板处于阅读视图中'],
+    [aria-label^='Current view: reading']
+  ) {
+  left: 30px;
+}
+body.hide-titlebar-close-btn.is-hidden-frameless .titlebar-button.mod-logo {
+  display: none;
+}

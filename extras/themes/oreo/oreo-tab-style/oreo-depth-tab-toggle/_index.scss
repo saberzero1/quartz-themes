@@ -1,0 +1,80 @@
+.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header {
+  --tab-text-color-focused-active-current: #000000;
+  /* Oreo depth tab text */
+  --tab-text-color-focused: #000000;
+  /* Oreo depth tab text */
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active) {
+  --tab-text-color: #000000;
+  /* Oreo depth tab text */
+  --icon-color: #000000;
+  /* Oreo depth tab text */
+  --icon-color-hover: #000000;
+  /* Oreo depth tab text */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Oreo mantle color */
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::before,
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::after {
+  box-shadow:
+    inset 0 0 0 1px transparent,
+    0 0 0 16px rgba(255, 255, 255, 0.6);
+  /* Oreo shadow */
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::after {
+  clip-path: inset(50% 50% 0 0);
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::before {
+  clip-path: inset(50% 0 0 50%);
+}
+
+.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-container-inner {
+  gap: 10px;
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
+  background-color: transparent;
+}
+
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner-close-button:hover {
+  background-color: #e8e8e8;
+  /* Oreo hover background */
+}
+
+.oreo-depth-tab-toggle.oreo-depth-tab-text-invert {
+  --oreo-depth-tab-text: #000000;
+  /* Oreo crust color */
+}

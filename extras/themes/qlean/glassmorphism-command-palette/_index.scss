@@ -1,0 +1,7 @@
+body.glassmorphism-command-palette .prompt,
+body.glassmorphism-command-palette .graph-controls:not(.is-close),
+body.glassmorphism-command-palette .menu {
+  background-color: rgba(127, 127, 127, 0.01);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}

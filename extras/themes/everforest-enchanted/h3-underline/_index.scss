@@ -1,0 +1,6 @@
+body.h3-underline h3,
+body.h3-underline .HyperMD-header-3.cm-line {
+  border-bottom: 2px var(--h3-underline-style, solid)
+    var(--background-modifier-border);
+  padding-bottom: 2px;
+}

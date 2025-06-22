@@ -1,0 +1,45 @@
+body.lorens {
+  background-color: var(--glass-background-color-settings, #0d161d) !important;
+  --glass-background-color-settings: #0d161d;
+  --s-hover-bg-color-green: rgba(var(--s-color-purple), 0.2);
+  --text-normal: #f8f8f2;
+  --s-color-orange: 253, 252, 179;
+  --s-color-blue: 118, 133, 245;
+  --s-color-red: 254, 97, 62;
+  --s-color-green: 129, 225, 164;
+  --s-color-purple: 122, 91, 166;
+  --s-color-bright-blue: 202, 252, 191;
+  --s-color-gray: 178, 166, 189;
+}
+
+.lorens-color-headers {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
+}
+
+.lorens-callouts .callout {
+  --s: 10px;
+  /* control the size*/
+  --c1: rgba(var(--callout-color), 0.1);
+  --c2: #cd8b5200;
+  --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+  --_s: calc(var(--s) / 2) / calc(2 * var(--s)) calc(2 * var(--s));
+  background:
+    linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s),
+    linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s),
+    radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0 / var(--s) var(--s);
+}
+
+.lorens-callouts .callout .callout-title-inner {
+  background-color: rgba(var(--callout-color), 0.3);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.lorens-callouts .callout .callout-content p {
+  font-weight: bold;
+}

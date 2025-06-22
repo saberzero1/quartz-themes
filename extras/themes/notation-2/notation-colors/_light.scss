@@ -1,0 +1,57 @@
+bod.theme-light,
+bod.theme-dark {
+  /* change these numbers for an entirely new look */
+  --hue: 203;
+  --sat: 8%;
+  --interactive-accent-rgb: 46, 170, 220;
+  --code: #eb5757;
+  --opacity-translucency: 0.7;
+}
+
+.notation-colors.theme-light {
+  --L0: 0%;
+  --L1: 100%;
+  --L2: 96%;
+  --L3: 90%;
+  --text-rgb: 55, 53, 47;
+  --text-highlight-bg: rgb(251, 243, 219);
+  --text-selection: rgba(0, 122, 255, 0.15);
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --color-gray: rgba(55, 53, 47, 0.6);
+  --color-brown: rgb(100, 71, 58);
+  --color-orange: rgb(217, 115, 13);
+  --color-yellow: rgb(223, 171, 1);
+  --color-green: rgb(15, 123, 108);
+  --color-blue: rgb(11, 110, 153);
+  --color-purple: rgb(105, 64, 165);
+  --color-pink: rgb(173, 26, 114);
+  --color-red: rgb(224, 62, 62);
+  --color-gray-rgb: 235, 236, 237;
+  --color-brown-rgb: 233, 229, 227;
+  --color-orange-rgb: 250, 235, 221;
+  --color-yellow-rgb: 251, 243, 219;
+  --color-green-rgb: 221, 237, 234;
+  --color-blue-rgb: 221, 235, 241;
+  --color-purple-rgb: 234, 228, 242;
+  --color-pink-rgb: 244, 223, 235;
+  --color-red-rgb: 251, 228, 228;
+}
+
+bod.theme-light,
+bod.theme-dark {
+  --background-primary: hsl(var(--hue), var(--sat), var(--L1));
+  --background-primary-alt: hsl(var(--hue), var(--sat), var(--L3));
+  --background-secondary: hsl(var(--hue), var(--sat), var(--L2));
+  --background-secondary-alt: hsl(var(--hue), var(--sat), var(--L3));
+  --background-accent: hsl(var(--hue), var(--sat), var(--L0));
+  --background-modifier-border: rgba(var(--text-rgb), 0.14);
+  --text-accent: rgba(var(--text-rgb), 0.45);
+  --text-accent-hover: rgba(var(--text-rgb), 0.45);
+  --text-normal: rgba(var(--text-rgb), 0.9);
+  --text-muted: rgba(var(--text-rgb), 0.7);
+  --text-faint: rgba(var(--text-rgb), 0.55);
+  --text-on-accent: rgba(var(--text-rgb), 0.9);
+  --interactive-accent: rgb(var(--interactive-accent-rgb));
+  --interactive-accent-hover: rgba(var(--interactive-accent-rgb), 0.8);
+}

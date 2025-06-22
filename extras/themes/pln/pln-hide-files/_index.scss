@@ -1,0 +1,6 @@
+.pln-hide-files {
+  & div[data-path^='_'],
+  & div[data-path*='/_'] {
+    display: none;
+  }
+}

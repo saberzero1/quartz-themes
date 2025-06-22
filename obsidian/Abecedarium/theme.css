@@ -3,12 +3,12 @@
 
 :root {
   --default-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Microsoft YaHei Light', sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
-  --font-monospace: "Source Code Pro", monospace;
+  --font-monospace: 'Source Code Pro', monospace;
 }
 
 body {
@@ -982,7 +982,7 @@ cite {
 
 .loghead h2:before {
   background-color: var(--text-normal);
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   position: relative;
@@ -992,7 +992,7 @@ cite {
 
 .loghead h2:after {
   background-color: var(--text-normal);
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   position: relative;
@@ -1011,7 +1011,7 @@ cite {
 }
 
 .loghead.markdown-preview-view h4 {
-  font-family: "YaleNew";
+  font-family: 'YaleNew';
   /*text-transform: uppercase;*/
   letter-spacing: 0.1em;
   /*font-size:45px !important;*/
@@ -1035,7 +1035,7 @@ cite {
 
 .allhead h2:after {
   background-color: var(--text-normal);
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   position: relative;
@@ -1068,7 +1068,7 @@ cite {
 }
 .allhead h3:after {
   background-color: var(--text-normal);
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   position: relative;
@@ -1099,7 +1099,7 @@ cite {
 }
 .allhead h4:after {
   background-color: var(--text-normal);
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   position: relative;
@@ -1198,7 +1198,7 @@ cite {
 
 .table-view-table > tbody > tr > td:first-child::before {
   counter-increment: section;
-  content: counter(section) ". ";
+  content: counter(section) '. ';
 }
 
 .markdown-preview-view tr:nth-child(odd) {
@@ -1473,12 +1473,12 @@ body:not(.no-svg-replace) svg.right-triangle {
 }
 
 /*change color of checked item in Reading and Live Preview*/
-ul > li.task-list-item[data-task="x"],
-ul > li.task-list-item[data-task="X"] {
+ul > li.task-list-item[data-task='x'],
+ul > li.task-list-item[data-task='X'] {
   color: var(--text-faint);
 }
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
   color: var(--text-faint);
 }
 

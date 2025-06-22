@@ -1,0 +1,25 @@
+.theme-celestial .nav-folder.mod-root > .nav-folder-title::before {
+  content: var(--theme-decoration);
+  padding-right: 8px;
+  text-align: center;
+}
+.theme-celestial .nav-folder.mod-root > .nav-folder-title {
+  color: var(--color-accent-2) !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.theme-celestial .markdown-rendered hr::before,
+.theme-celestial .markdown-source-view hr::before {
+  font-size: 1.5em;
+  content: var(--theme-decoration);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0.35rem;
+  color: var(--color-accent-1);
+  background-color: var(--background-primary);
+  z-index: 1;
+}

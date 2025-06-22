@@ -1,0 +1,13 @@
+body.style-options-for-admonition-plugin .admonition-flex {
+  margin: 1em 0;
+}
+
+body.admonition-bg-color-same .callout {
+  background-color: rgba(var(--callout-color), 0.1);
+  border-width: var(--callout-border-width);
+}
+
+body.admonition-bg-color-same .callout-title {
+  color: rgb(var(--callout-color));
+  background-color: unset;
+}

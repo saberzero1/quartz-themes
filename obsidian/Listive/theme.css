@@ -53,7 +53,7 @@
 ============================================================================= */
 
 @font-face {
-  font-family: "Courgette";
+  font-family: 'Courgette';
   /* Add other properties here, as needed. For example: */
   /*
   font-weight: 100 900;
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-  font-family: "Karla";
+  font-family: 'Karla';
   /* Add other properties here, as needed. For example: */
   /*
   font-weight: 100 900;
@@ -78,7 +78,7 @@
 ============================================================================= */
 
 /* === Hide Listive theme identifier in Style Settings === */
-[data-id="listive-theme"].setting-item.mod-toggle {
+[data-id='listive-theme'].setting-item.mod-toggle {
   contain: strict;
   display: none;
 }
@@ -534,12 +534,12 @@ body {
 body {
   --h1-font: Courgette;
   --h2-font: Courgette;
-  --h3-font: "Karla", "Inter";
-  --h4-font: "Karla", "Inter";
-  --default-font: "Inter";
-  --font-text-theme: "Inter";
+  --h3-font: 'Karla', 'Inter';
+  --h4-font: 'Karla', 'Inter';
+  --default-font: 'Inter';
+  --font-text-theme: 'Inter';
 
-  --keyheader-font: "Open Sans"; /* Delius */
+  --keyheader-font: 'Open Sans'; /* Delius */
   /* these are obsidian app.css variables */
 
   --h1-size: 1.6em;
@@ -732,7 +732,7 @@ body ul {
 
 /* -- margin for ul after headers. (1) Normal reading view, (2) Dataview lists, and (3) Inside callout */
 div:has([data-heading]) + div > ul,
-[data-heading] + div[class*="block-language-dataview"] ul,
+[data-heading] + div[class*='block-language-dataview'] ul,
 .callout-content [data-heading] + ul {
   margin-top: 0;
 }
@@ -769,7 +769,7 @@ div:has(> h1, > h2) + div:has(p) > p {
 .HyperMD-header-2::after,
 .HyperMD-header-3::after {
   display: block;
-  content: "";
+  content: '';
 }
 
 /* -- For Normal Heading padding between header text and bottom border. Editing View and Reading View. Normal header and header in list */
@@ -820,7 +820,7 @@ h3,
 .HyperMD-list-line:has(.cm-header-1) {
   &::after {
     contain: strict;
-    content: "";
+    content: '';
     display: block;
     border-bottom: solid;
     border-image-slice: 1;
@@ -839,7 +839,7 @@ h3,
 .HyperMD-list-line:has(.cm-header-2) {
   &::after {
     contain: strict;
-    content: "";
+    content: '';
     display: block;
     border-bottom: solid;
     border-image-slice: 1;
@@ -858,7 +858,7 @@ h3,
 .HyperMD-list-line:has(.cm-header-3) {
   &::after {
     contain: strict;
-    content: "";
+    content: '';
     display: block;
     border-bottom: solid;
     border-image-slice: 1;
@@ -992,7 +992,7 @@ body {
 /* .cm-line is need to avoid applying for line number gutter */
 .cm-line.cm-active:not(.HyperMD-quote)::before {
   contain: strict;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1038,7 +1038,7 @@ body {
   }
   .cm-active .cm-hmd-list-indent::before {
     contain: strict;
-    content: "";
+    content: '';
     position: absolute;
     top: var(
       --indent-dash-top
@@ -1307,7 +1307,7 @@ body .markdown-source-view {
 }
 .list-embed-global
   :is(.HyperMD-list-line, li)
-  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):has(
+  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']):has(
     .markdown-preview-section > div > ul
   ) {
   margin: 0 0 0 calc(var(--list-embed-margin) + var(--list-embed-adj));
@@ -1329,7 +1329,7 @@ body .markdown-source-view {
 }
 .list-embed-global
   :is(.HyperMD-list-line, li)
-  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]) {
+  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']) {
   width: calc(100% - 1px);
 }
 .list-embed-global .HyperMD-list-line .markdown-embed .markdown-preview-view {
@@ -1338,62 +1338,62 @@ body .markdown-source-view {
 
 /* --- Clean Embed in Lists (specify in alias/alt) --- */
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.markdown-embed:not([alt*=".excalidraw"]) {
+  [alt*='list-embed'].internal-embed.markdown-embed:not([alt*='.excalidraw']) {
   margin: 0 0 0 calc(-1.6em + var(--list-embed-adj));
   padding: 0;
   border: none;
   top: 0;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.markdown-embed
+  [alt*='list-embed'].internal-embed.markdown-embed
   ul:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.markdown-embed
+  [alt*='list-embed'].internal-embed.markdown-embed
   .markdown-embed-title {
   display: none;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
-    [alt*=".excalidraw"]
+  [alt*='list-embed'].internal-embed.is-loaded.markdown-embed:not(
+    [alt*='.excalidraw']
   ) {
   width: calc(100% - 1px);
 }
-li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
+li [alt*='list-embed'].internal-embed.is-loaded.markdown-embed.markdown-embed {
   margin-left: calc(-1.6em + var(--list-embed-adj));
 }
-.HyperMD-list-line [alt*="list-embed"].markdown-embed .markdown-preview-view {
+.HyperMD-list-line [alt*='list-embed'].markdown-embed .markdown-preview-view {
   padding-bottom: 0;
 }
 
 /* --- Clean Inline Embed in Lists (specify in alias/alt) --- */
 :is(.HyperMD-list-line, li)
-  [alt*="inline-embed"].internal-embed.markdown-embed {
+  [alt*='inline-embed'].internal-embed.markdown-embed {
   margin: 0 0 0 0;
   padding: 0;
   border: none;
   top: 0;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="inline-embed"].internal-embed.markdown-embed
+  [alt*='inline-embed'].internal-embed.markdown-embed
   p:first-of-type {
   margin-block: 0;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="inline-embed"].internal-embed.markdown-embed
+  [alt*='inline-embed'].internal-embed.markdown-embed
   .markdown-embed-title {
   display: none;
 }
 .HyperMD-list-line
-  [alt*="inline-embed"].internal-embed.is-loaded.markdown-embed {
+  [alt*='inline-embed'].internal-embed.is-loaded.markdown-embed {
   max-width: 99%;
 }
-.HyperMD-list-line [alt*="inline-embed"].markdown-embed .markdown-preview-view {
+.HyperMD-list-line [alt*='inline-embed'].markdown-embed .markdown-preview-view {
   padding: 0;
 }
 :is(.HyperMD-list-line, li)
-  [alt*="inline-embed"].markdown-embed
+  [alt*='inline-embed'].markdown-embed
   .markdown-preview-view
   p {
   text-decoration: underline dotted var(--text-muted);
@@ -1402,12 +1402,12 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
 /* special adjustment - padding bottom in LP */
 
 /* hide the link icon and show when hover */
-:is(.list-embed-global, [alt*="list-embed"], [alt*="inline-embed"])
+:is(.list-embed-global, [alt*='list-embed'], [alt*='inline-embed'])
   :is(.file-embed-link svg, .markdown-embed-link)
   svg {
   opacity: 0.2;
 }
-:is(.list-embed-global, [alt*="list-embed"], [alt*="inline-embed"])
+:is(.list-embed-global, [alt*='list-embed'], [alt*='inline-embed'])
   :is(
     .markdown-embed:hover .file-embed-link svg,
     .markdown-embed:hover .markdown-embed-link
@@ -1416,13 +1416,13 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
   opacity: 1;
 }
 /* give different background color when hover */
-:is(.list-embed-global :not(.popover), [alt*="list-embed"].internal-embed)
+:is(.list-embed-global :not(.popover), [alt*='list-embed'].internal-embed)
   :is(.markdown-embed, .file-embed) {
   background-color: var(--background-primary);
 }
 :is(.list-embed-global :not(.popover))
   :is(.markdown-embed:hover, .file-embed:hover),
-:is([alt*="list-embed"].internal-embed):is(
+:is([alt*='list-embed'].internal-embed):is(
     .markdown-embed:hover,
     .file-embed:hover
   ) {
@@ -1497,7 +1497,7 @@ ol ol {
 .is-css-guide
   .markdown-rendered:not(.show-indentation-guide)
   :is(ul ul, ol ul, ul ol, ol ol)::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--background-modifier-border);
   position: absolute;
   left: calc(-13px + var(--list-guide-adj));
@@ -1522,20 +1522,20 @@ body {
   --ig-left-4: -8px;
 }
 .markdown-rendered:is(*, .show-indentation-guide)
-  :is(h2[data-heading^="Journal"], h3[data-heading^="on "])
+  :is(h2[data-heading^='Journal'], h3[data-heading^='on '])
   + ul
   ul::before {
   left: calc(var(--ig-left-2) + var(--list-guide-adj) - 4px);
 }
 .markdown-rendered:is(*, .show-indentation-guide)
-  :is(h2[data-heading^="Journal"], h3[data-heading^="on "])
+  :is(h2[data-heading^='Journal'], h3[data-heading^='on '])
   + ul
   ul
   ul::before {
   left: calc(var(--ig-left-3) + var(--list-guide-adj) - 4px);
 }
 .markdown-rendered:is(*, .show-indentation-guide)
-  :is(h2[data-heading^="Journal"], h3[data-heading^="on "])
+  :is(h2[data-heading^='Journal'], h3[data-heading^='on '])
   + ul
   ul
   ul
@@ -1618,27 +1618,27 @@ body .callout {
 .callout {
   --callout-icon: lucide-edit-3;
 }
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-icon: lucide-file-text;
 }
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-icon: lucide-check-circle;
 }
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-icon: lucide-alert-octagon;
 }
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-icon: lucide-lightbulb;
 }
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-icon: lucide-chevrons-up;
 }
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-icon: lucide-octagon;
 }
-.callout[data-callout="success"],
-.callout[data-callout="check"],
-.callout[data-callout="done"] {
+.callout[data-callout='success'],
+.callout[data-callout='check'],
+.callout[data-callout='done'] {
   --callout-icon: lucide-check-check;
 }
 
@@ -1655,22 +1655,22 @@ body:not(.callout-style-original) .callout > .callout-title > .callout-icon {
 }
 
 /* No Title Callout still default to "callout-style-icon-right" even if "callout-style-orignal" selected */
-.callout[data-callout-metadata*="no-title"] {
+.callout[data-callout-metadata*='no-title'] {
   position: relative;
 }
-.callout[data-callout-metadata*="no-title"] > .callout-title > .callout-icon {
+.callout[data-callout-metadata*='no-title'] > .callout-title > .callout-icon {
   --icon-size: 48px;
   opacity: 0.3;
   position: absolute;
   top: -10px;
   right: -8px;
 }
-.callout[data-callout-metadata*="no-title"]
+.callout[data-callout-metadata*='no-title']
   > .callout-title
   > .callout-title-inner {
   display: none;
 }
-.callout[data-callout-metadata*="no-title"] > .callout-content {
+.callout[data-callout-metadata*='no-title'] > .callout-content {
   padding-block: 0;
   padding-right: 2em;
 }
@@ -1686,8 +1686,8 @@ li > .callout {
 }
 
 /* custom callout -- update / latest */
-.callout[data-callout="update"],
-.callout[data-callout="latest"] {
+.callout[data-callout='update'],
+.callout[data-callout='latest'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-bell-ring;
 }
@@ -1700,7 +1700,7 @@ li > .callout {
 /* === (Normal) Checkboxes === */
 /* no strikethrough for children node of checked parent */
 ul
-  > li.task-list-item:is([data-task="x"], [data-task="X"])
+  > li.task-list-item:is([data-task='x'], [data-task='X'])
   > ul
   > li.task-list-item {
   /* display: inline-block; */ /* comment out because it makes subtasks overlap in reading view */
@@ -1710,75 +1710,75 @@ ul
 /* === (Alternate) Checkboxes === */
 
 /* common (only for Tasks) */
-input[data-task=">"]:checked,
-li[data-task=">"] > input:checked,
-li[data-task=">"] > p > input:checked,
-input[data-task="-"]:checked,
-li[data-task="-"] > input:checked,
-li[data-task="-"] > p > input:checked,
-input[data-task="<"]:checked,
-li[data-task="<"] > input:checked,
-li[data-task="<"] > p > input:checked {
+input[data-task='>']:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked,
+input[data-task='-']:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked,
+input[data-task='<']:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked {
   --checkbox-marker-color: transparent;
   background-color: currentColor;
 }
 /* Common (only for Info / Higlights) - Include lock the state for mouse click */
-input[data-task="I"]:checked,
-li[data-task="I"] > input:checked,
-li[data-task="I"] > p > input:checked,
-input[data-task="i"]:checked,
-li[data-task="i"] > input:checked,
-li[data-task="i"] > p > input:checked,
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked,
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked,
 input[data-task='"']:checked,
 li[data-task='"'] > input:checked,
 li[data-task='"'] > p > input:checked,
-input[data-task="“"]:checked,
-li[data-task="“"] > input:checked,
-li[data-task="“"] > p > input:checked,
-input[data-task="!"]:checked,
-li[data-task="!"] > input:checked,
-li[data-task="!"] > p > input:checked,
-input[data-task="r"]:checked,
-li[data-task="r"] > input:checked,
-li[data-task="r"] > p > input:checked,
-input[data-task="*"]:checked,
-li[data-task="*"] > input:checked,
-li[data-task="*"] > p > input:checked {
+input[data-task='“']:checked,
+li[data-task='“'] > input:checked,
+li[data-task='“'] > p > input:checked,
+input[data-task='!']:checked,
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked,
+input[data-task='r']:checked,
+li[data-task='r'] > input:checked,
+li[data-task='r'] > p > input:checked,
+input[data-task='*']:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked {
   --checkbox-marker-color: transparent;
   background-color: currentColor;
   border: none;
   pointer-events: none;
 }
-label.task-list-label:has(> input[data-task="I"]:checked),
-label.task-list-label:has(> input[data-task="!"]:checked),
+label.task-list-label:has(> input[data-task='I']:checked),
+label.task-list-label:has(> input[data-task='!']:checked),
 label.task-list-label:has(> input[data-task='"']:checked),
-label.task-list-label:has(> input[data-task="“"]:checked),
-label.task-list-label:has(> input[data-task="!"]:checked),
-label.task-list-label:has(> input[data-task="r"]:checked),
-label.task-list-label:has(> input[data-task="*"]:checked) {
+label.task-list-label:has(> input[data-task='“']:checked),
+label.task-list-label:has(> input[data-task='!']:checked),
+label.task-list-label:has(> input[data-task='r']:checked),
+label.task-list-label:has(> input[data-task='*']:checked) {
   pointer-events: none;
 }
 
 /* For [/] "/" i.e Partial or Incomplete */
-.HyperMD-list-line input[data-task="/"]:checked,
-.markdown-preview-view li[data-task="/"] > input[type="checkbox"]:checked {
+.HyperMD-list-line input[data-task='/']:checked,
+.markdown-preview-view li[data-task='/'] > input[type='checkbox']:checked {
   background-image: linear-gradient(
     135deg,
     var(--interactive-accent) 50%,
     var(--background-primary) 50%
   );
 }
-input[data-task="/"]:checked:after,
-li[data-task="/"] > input:checked:after,
-li[data-task="/"] > p > input:checked:after {
+input[data-task='/']:checked:after,
+li[data-task='/'] > input:checked:after,
+li[data-task='/'] > p > input:checked:after {
   background-color: var(--background-modifier-accent);
   -webkit-mask-image: none;
 }
 
 /* For [>] ">" i.e. Defer or Reschedule */
-input[data-task=">"]:checked,
-li[data-task=">"] > input:checked,
-li[data-task=">"] > p > input:checked {
+input[data-task='>']:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked {
   color: var(--text-faint);
   transform: rotate(90deg);
   -webkit-mask-position: 50% 100%;
@@ -1786,28 +1786,28 @@ li[data-task=">"] > p > input:checked {
 }
 
 /* For [-] "-" i.e. Canceled */
-input[data-task="-"]:checked,
-li[data-task="-"] > input:checked,
-li[data-task="-"] > p > input:checked {
+input[data-task='-']:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked {
   color: var(--text-faint);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 body:not(.tasks)
   .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task]:is([data-task="-"]),
+  .HyperMD-task-line[data-task]:is([data-task='-']),
 body:not(.tasks)
   .markdown-preview-view
   ul
-  li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+  li[data-task='-'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
 }
 
 /* For [<] "<" i.e. Schedule or Meeting */
-input[data-task="<"]:checked,
-li[data-task="<"] > input:checked,
-li[data-task="<"] > p > input:checked {
+input[data-task='<']:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked {
   color: var(--text-faint);
   border: none;
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z"/></svg>');
@@ -1816,48 +1816,48 @@ li[data-task="<"] > p > input:checked {
 /* INFO / HIGHLIGHTS */
 
 /* For [I] "I" i.e. Idea or Lightbulb */
-input[data-task="I"]:checked,
-li[data-task="I"] > input:checked,
-li[data-task="I"] > p > input:checked {
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked {
   --checkbox-color-hover: var(--color-yellow);
   color: var(--color-yellow);
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><g><rect class="cls-1" width="16" height="16"/><path d="M9,1c0-.27-.11-.52-.29-.71-.19-.19-.44-.29-.71-.29s-.52,.11-.71,.29c-.19,.19-.29,.44-.29,.71v1c0,.27,.11,.52,.29,.71,.19,.19,.44,.29,.71,.29s.52-.11,.71-.29c.19-.19,.29-.44,.29-.71V1Zm4.66,2.76c.18-.19,.28-.44,.28-.7,0-.26-.11-.51-.29-.7s-.44-.29-.7-.29c-.26,0-.51,.1-.7,.28l-.71,.71c-.18,.19-.28,.44-.28,.7,0,.26,.11,.51,.29,.7s.44,.29,.7,.29c.26,0,.51-.1,.7-.28l.71-.71Zm2.34,4.24c0,.27-.11,.52-.29,.71-.19,.19-.44,.29-.71,.29h-1c-.27,0-.52-.11-.71-.29-.19-.19-.29-.44-.29-.71s.11-.52,.29-.71c.19-.19,.44-.29,.71-.29h1c.27,0,.52,.11,.71,.29,.19,.19,.29,.44,.29,.71ZM3.05,4.46c.09,.1,.2,.17,.32,.22,.12,.05,.25,.08,.39,.08,.13,0,.26-.02,.39-.07,.12-.05,.23-.12,.33-.22,.09-.09,.17-.21,.22-.33,.05-.12,.08-.25,.07-.39,0-.13-.03-.26-.08-.39-.05-.12-.13-.23-.22-.32l-.71-.71c-.19-.18-.44-.28-.7-.28-.26,0-.51,.11-.7,.29s-.29,.44-.29,.7c0,.26,.1,.51,.28,.7l.71,.71Zm-.05,3.54c0,.27-.11,.52-.29,.71-.19,.19-.44,.29-.71,.29H1c-.27,0-.52-.11-.71-.29-.19-.19-.29-.44-.29-.71s.11-.52,.29-.71c.19-.19,.44-.29,.71-.29h1c.27,0,.52,.11,.71,.29,.19,.19,.29,.44,.29,.71Zm3,6v-1h4v1c0,.53-.21,1.04-.59,1.41-.38,.38-.88,.59-1.41,.59s-1.04-.21-1.41-.59c-.38-.38-.59-.88-.59-1.41Zm4-2c.02-.34,.21-.65,.48-.86,.65-.51,1.13-1.22,1.36-2.02,.23-.8,.21-1.65-.06-2.43-.27-.79-.78-1.47-1.46-1.95-.68-.48-1.49-.74-2.32-.74s-1.64,.26-2.32,.74c-.68,.48-1.19,1.16-1.46,1.95-.27,.79-.29,1.64-.06,2.43,.23,.8,.71,1.5,1.36,2.02,.27,.21,.46,.52,.48,.86h4Z"/></g></svg>');
 }
 
 /* For [i] "i" i.e. info */
-input[data-task="i"]:checked,
-li[data-task="i"] > input:checked,
-li[data-task="i"] > p > input:checked {
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked {
   --checkbox-color-hover: var(--color-cyan);
   color: var(--color-cyan);
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><g><rect class="cls-1" width="16" height="16"/><path d="M10.67,13v-1.67c0-.1-.03-.18-.09-.24s-.14-.09-.24-.09h-1V5.67c0-.1-.03-.18-.09-.24s-.14-.09-.24-.09h-3.33c-.1,0-.18,.03-.24,.09s-.09,.14-.09,.24v1.67c0,.1,.03,.18,.09,.24s.14,.09,.24,.09h1v3.33h-1c-.1,0-.18,.03-.24,.09s-.09,.14-.09,.24v1.67c0,.1,.03,.18,.09,.24s.14,.09,.24,.09h4.67c.1,0,.18-.03,.24-.09s.09-.14,.09-.24Zm-1.33-9.33v-1.67c0-.1-.03-.18-.09-.24s-.14-.09-.24-.09h-2c-.1,0-.18,.03-.24,.09s-.09,.14-.09,.24v1.67c0,.1,.03,.18,.09,.24s.14,.09,.24,.09h2c.1,0,.18-.03,.24-.09s.09-.14,.09-.24Zm6.67,4.33c0,1.45-.36,2.79-1.07,4.02-.72,1.23-1.69,2.2-2.91,2.91-1.23,.72-2.56,1.07-4.02,1.07s-2.79-.36-4.02-1.07c-1.23-.72-2.2-1.69-2.91-2.91-.72-1.23-1.07-2.56-1.07-4.02S.36,5.21,1.07,3.98c.72-1.23,1.69-2.2,2.91-2.91,1.23-.72,2.56-1.07,4.02-1.07s2.79,.36,4.02,1.07c1.23,.72,2.2,1.69,2.91,2.91,.72,1.23,1.07,2.56,1.07,4.02Z"/></g></svg>');
 }
 
 /* For [!] "!" i.e. warning */
-input[data-task="!"]:checked,
-li[data-task="!"] > input:checked,
-li[data-task="!"] > p > input:checked {
+input[data-task='!']:checked,
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked {
   --checkbox-color-hover: var(--color-red);
   color: var(--color-orange);
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}.cls-2{fill-rule:evenodd;}</style></defs><rect class="cls-1" width="16" height="16"/><path class="cls-2" d="M8,16c4.42,0,8-3.58,8-8S12.42,0,8,0,0,3.58,0,8s3.58,8,8,8ZM6.07,3.55c-.08,.29-.09,.6-.03,.9l.86,4.56c.05,.28,.2,.52,.42,.7,.22,.18,.49,.28,.77,.28s.55-.1,.77-.28c.22-.18,.36-.43,.42-.7l.86-4.56c.06-.3,.04-.61-.03-.9-.08-.29-.22-.57-.41-.8-.19-.23-.44-.42-.71-.55-.28-.13-.58-.2-.88-.2s-.61,.07-.88,.2c-.28,.13-.52,.32-.71,.55-.19,.23-.34,.51-.41,.8Zm3.07,10.01c.28-.28,.44-.66,.44-1.06s-.16-.78-.44-1.06c-.28-.28-.66-.44-1.06-.44s-.78,.16-1.06,.44c-.28,.28-.44,.66-.44,1.06s.16,.78,.44,1.06c.28,.28,.66,.44,1.06,.44s.78-.16,1.06-.44Z"/></svg>');
 }
 
 /* For ["] or "“" i.e. citation, my version */
-input[type="checkbox"][data-task='"']:is(*, :hover, :active),
-input[type="checkbox"][data-task="“"]:is(*, :hover, :active),
+input[type='checkbox'][data-task='"']:is(*, :hover, :active),
+input[type='checkbox'][data-task='“']:is(*, :hover, :active),
 li[data-task='"'] > input:checked,
 li[data-task='"'] > p > input:checked,
-li[data-task="“"] > input:checked,
-li[data-task="“"] > p > input:checked {
+li[data-task='“'] > input:checked,
+li[data-task='“'] > p > input:checked {
   background-color: transparent;
 }
-input[type="checkbox"][data-task='"']:checked::after,
-input[type="checkbox"][data-task="“"]:checked::after,
+input[type='checkbox'][data-task='"']:checked::after,
+input[type='checkbox'][data-task='“']:checked::after,
 li[data-task='"'] > input:checked::after,
-li[data-task="“"] > input:checked::after,
+li[data-task='“'] > input:checked::after,
 li[data-task='"'] > p > input:checked::after,
-li[data-task="“"] > p > input:checked::after {
-  content: "❝";
+li[data-task='“'] > p > input:checked::after {
+  content: '❝';
   font-size: 1.6em;
   text-align: center;
   top: -5px;
@@ -1866,8 +1866,8 @@ li[data-task="“"] > p > input:checked::after {
   background-color: transparent;
   -webkit-mask-image: revert;
 }
-li[data-task="“"] > input:checked::after,
-li[data-task="“"] > p > input:checked::after {
+li[data-task='“'] > input:checked::after,
+li[data-task='“'] > p > input:checked::after {
   top: -5px;
 }
 /* cite */ /*
@@ -1878,15 +1878,15 @@ li[data-task="“"] > p > input:checked::after {
         }
 
         /* For [r] or "r" i.e. reference */
-input[type="checkbox"][data-task="r"]:is(*, :hover, :active),
-li[data-task="r"] > input:checked,
-li[data-task="r"] > p > input:checked {
+input[type='checkbox'][data-task='r']:is(*, :hover, :active),
+li[data-task='r'] > input:checked,
+li[data-task='r'] > p > input:checked {
   background-color: transparent;
 }
-input[type="checkbox"][data-task="r"]:checked::after,
-li[data-task="r"] > input:checked::after,
-li[data-task="r"] > p > input:checked::after {
-  content: "🕮";
+input[type='checkbox'][data-task='r']:checked::after,
+li[data-task='r'] > input:checked::after,
+li[data-task='r'] > p > input:checked::after {
+  content: '🕮';
   font-size: 0.9em;
   font-weight: bold;
   text-align: center;
@@ -1897,16 +1897,16 @@ li[data-task="r"] > p > input:checked::after {
   -webkit-mask-image: revert;
 }
 /* additional adjustment for reading view only */
-li[data-task="r"] > input:checked::after,
-li[data-task="r"] > p > input:checked::after {
+li[data-task='r'] > input:checked::after,
+li[data-task='r'] > p > input:checked::after {
   top: -2px;
   left: 0px;
 }
 
 /* For [*] "*" i.e. Star or Favourites */
-input[data-task="*"]:checked,
-li[data-task="*"] > input:checked,
-li[data-task="*"] > p > input:checked {
+input[data-task='*']:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked {
   --checkbox-color-hover: var(--color-yellow);
   color: var(--color-yellow);
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M8.91,.58c-.08-.17-.21-.32-.37-.42C8.38,.05,8.19,0,8,0s-.38,.05-.54,.16c-.16,.1-.29,.25-.37,.42l-1.93,4.12L.85,5.36c-.18,.03-.35,.1-.49,.22-.14,.12-.25,.27-.3,.45-.06,.17-.07,.36-.03,.54,.04,.18,.13,.34,.26,.48l3.15,3.23-.75,4.57c-.03,.19,0,.38,.06,.55,.07,.17,.19,.32,.35,.43,.15,.11,.33,.17,.52,.18,.19,0,.37-.03,.54-.12l3.84-2.13,3.84,2.13c.16,.09,.35,.13,.54,.12,.19-.01,.37-.07,.52-.18,.15-.11,.27-.26,.35-.43,.07-.17,.09-.36,.06-.55l-.75-4.57,3.15-3.23c.13-.13,.22-.3,.26-.48,.04-.18,.03-.37-.03-.54-.06-.17-.16-.33-.31-.45-.14-.12-.31-.2-.49-.22l-4.31-.66L8.91,.58Z"/></svg>');
@@ -1915,44 +1915,44 @@ li[data-task="*"] > p > input:checked {
 /* -- background option. for info/highlight alternate checkbox */
 
 /* setting the color for each label */
-.HyperMD-list-line:has(> .task-list-label > [data-task="I"])::after,
-li[data-task="I"]::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='I'])::after,
+li[data-task='I']::after {
   background: rgba(var(--color-yellow-rgb), 0.18);
 }
-.HyperMD-list-line:has(> .task-list-label > [data-task="i"])::after,
-li[data-task="i"]::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='i'])::after,
+li[data-task='i']::after {
   background: rgba(var(--color-purple-rgb), 0.18);
 }
 .HyperMD-list-line:has(> .task-list-label > [data-task='"'])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="“"])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='“'])::after,
 li[data-task='"']::after,
-li[data-task="“"]::after {
+li[data-task='“']::after {
   background: rgba(var(--callout-quote), 0.18);
 }
-.HyperMD-list-line:has(> .task-list-label > [data-task="!"])::after,
-li[data-task="!"]::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='!'])::after,
+li[data-task='!']::after {
   background: rgba(var(--color-red-rgb), 0.18);
 }
-.HyperMD-list-line:has(> .task-list-label > [data-task="r"])::after,
-li[data-task="r"]::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='r'])::after,
+li[data-task='r']::after {
   background: rgba(var(--callout-quote), 0.18);
 }
-.HyperMD-list-line:has(> .task-list-label > [data-task="*"])::after,
-li[data-task="*"]::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='*'])::after,
+li[data-task='*']::after {
   background: rgba(var(--color-orange-rgb), 0.18);
 }
 
 /* adjust the background position, common to all types */
 body {
-  --alt-checkbox-bg-content: "";
+  --alt-checkbox-bg-content: '';
 }
-.HyperMD-list-line:has(> .task-list-label > [data-task="I"])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="i"])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='I'])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='i'])::after,
 .HyperMD-list-line:has(> .task-list-label > [data-task='"'])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="“"])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="!"])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="r"])::after,
-.HyperMD-list-line:has(> .task-list-label > [data-task="*"])::after {
+.HyperMD-list-line:has(> .task-list-label > [data-task='“'])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='!'])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='r'])::after,
+.HyperMD-list-line:has(> .task-list-label > [data-task='*'])::after {
   content: var(--alt-checkbox-bg-content);
   position: absolute;
   inset: 1px 0em 0 1.6em;
@@ -1963,56 +1963,56 @@ body {
 }
 
 /* move the background in line with list level */
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="I"])::after,
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="i"])::after,
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='I'])::after,
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='i'])::after,
 .HyperMD-list-line-2:has(> .task-list-label > [data-task='"'])::after,
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="“"])::after,
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="!"])::after,
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="r"])::after,
-.HyperMD-list-line-2:has(> .task-list-label > [data-task="*"])::after {
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='“'])::after,
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='!'])::after,
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='r'])::after,
+.HyperMD-list-line-2:has(> .task-list-label > [data-task='*'])::after {
   left: 3.55em;
   width: calc(100% - 3.55em);
 }
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="I"])::after,
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="i"])::after,
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='I'])::after,
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='i'])::after,
 .HyperMD-list-line-3:has(> .task-list-label > [data-task='"'])::after,
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="“"])::after,
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="!"])::after,
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="r"])::after,
-.HyperMD-list-line-3:has(> .task-list-label > [data-task="*"])::after {
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='“'])::after,
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='!'])::after,
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='r'])::after,
+.HyperMD-list-line-3:has(> .task-list-label > [data-task='*'])::after {
   left: 5.15em;
   width: calc(100% - 5.15em);
 }
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="I"])::after,
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="i"])::after,
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='I'])::after,
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='i'])::after,
 .HyperMD-list-line-4:has(> .task-list-label > [data-task='"'])::after,
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="“"])::after,
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="!"])::after,
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="r"])::after,
-.HyperMD-list-line-4:has(> .task-list-label > [data-task="*"])::after {
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='“'])::after,
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='!'])::after,
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='r'])::after,
+.HyperMD-list-line-4:has(> .task-list-label > [data-task='*'])::after {
   left: 6.75em;
   width: calc(100% - 6.75em);
 }
 
 /* general setup for background in reading view */
-li[data-task="I"],
-li[data-task="i"],
+li[data-task='I'],
+li[data-task='i'],
 li[data-task='"'],
-li[data-task="“"],
-li[data-task="!"],
-li[data-task="r"],
-li[data-task="*"] {
+li[data-task='“'],
+li[data-task='!'],
+li[data-task='r'],
+li[data-task='*'] {
   position: relative;
   z-index: 30;
 }
-li[data-task="I"]::after,
-li[data-task="i"]::after,
+li[data-task='I']::after,
+li[data-task='i']::after,
 li[data-task='"']::after,
-li[data-task="“"]::after,
-li[data-task="!"]::after,
-li[data-task="r"]::after,
-li[data-task="*"]::after {
-  content: "";
+li[data-task='“']::after,
+li[data-task='!']::after,
+li[data-task='r']::after,
+li[data-task='*']::after {
+  content: '';
   position: absolute;
   top: 1px;
   left: -0.25em;
@@ -2168,7 +2168,7 @@ body.lst-fm-lp-hide
 body.lst-fm-lp-hide
   .markdown-source-view.is-live-preview
   .cm-line:has(.cm-hmd-frontmatter.cm-def)::after {
-  content: " place cursor here to reveal frontmatter";
+  content: ' place cursor here to reveal frontmatter';
   color: var(--text-faint);
   font-size: 0.8em;
   font-style: italic;
@@ -2193,7 +2193,7 @@ body.lst-fm-lp-hide
   .markdown-source-view.is-live-preview
   :has(.cm-line.cm-active .cm-hmd-frontmatter)
   .cm-line:has(.cm-hmd-frontmatter.cm-def)::after {
-  content: "";
+  content: '';
 }
 
 /* === Graph View Mods ===*/
@@ -2498,16 +2498,16 @@ body.lst-prop-super-compact .metadata-properties {
   }
   /* remove the remove button special for tags property */
   &
-    .metadata-property[data-property-key="tags"]
+    .metadata-property[data-property-key='tags']
     .multi-select-pill-remove-button {
     display: none;
   }
-  & .metadata-property[data-property-key="tags"] .multi-select-pill-content {
+  & .metadata-property[data-property-key='tags'] .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   } /* adding "padding to the right after 1.5.1 update "*/
   &
     .markdown-reading-view
-    .metadata-property[data-property-key="tags"]
+    .metadata-property[data-property-key='tags']
     .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   }
@@ -2521,8 +2521,8 @@ body.lst-prop-super-compact .metadata-properties {
 /* === Background for Common Sections === */
 
 /* -- for Journal (H2 in a list) */
-h2[data-heading^="Journal"] + ul > li,
-h3[data-heading^="on "] + ul > li {
+h2[data-heading^='Journal'] + ul > li,
+h3[data-heading^='on '] + ul > li {
   width: 100%;
   border-radius: 0.3rem;
   margin-block: 0.2rem;
@@ -2531,13 +2531,13 @@ h3[data-heading^="on "] + ul > li {
 }
 
 /* -- for metadata at the top (H4 in a list) */
-h4[data-heading^="Metadata"] + ul {
+h4[data-heading^='Metadata'] + ul {
   background-color: var(--background-accent);
   border-radius: 0.3rem;
 }
 
 /* -- for metadata at the bottom (normal H4 followed by ul) */
-div:has(> [data-heading^="Metadata"]) + div ul {
+div:has(> [data-heading^='Metadata']) + div ul {
   background-color: var(--background-accent);
   border-radius: 0.4rem;
 }
@@ -2552,8 +2552,8 @@ div:has(> [data-heading^="Metadata"]) + div ul {
 }
 
 /* === Clear Float === */
-div:has(> p > [href*="#lst/clear-float"]),
-div:has(> [data-heading] > [href*="#lst/clear-float"]),
+div:has(> p > [href*='#lst/clear-float']),
+div:has(> [data-heading] > [href*='#lst/clear-float']),
 .cm-line:has(.cm-tag-lstclear-float) {
   clear: both;
 }
@@ -2562,7 +2562,7 @@ div:has(> [data-heading] > [href*="#lst/clear-float"]),
   color: var(--text-faint);
   background-color: rgba(0, 0, 0, 0.05);
 }
-[href*="#lst/clear-float"] {
+[href*='#lst/clear-float'] {
   display: none;
 }
 
@@ -2577,7 +2577,7 @@ div:has(> [data-heading] > [href*="#lst/clear-float"]),
 /* === Custom Layout / Special Cards === */
 
 /* -- hide the headings */
-.markdown-embed-heading div[data-tag-name*="h"] {
+.markdown-embed-heading div[data-tag-name*='h'] {
   display: none;
 }
 
@@ -2591,7 +2591,7 @@ div:has(> [data-heading] > [href*="#lst/clear-float"]),
   max-width: 270px;
 }
 /* to ensure image with transparency have some background color, specify "bgcolor" in alt text */
-img[alt*="bgcolor"] {
+img[alt*='bgcolor'] {
   background-color: var(--h2-color);
 }
 
@@ -2620,26 +2620,26 @@ span.selection {
 
         /* image and caption using callout [!caption] */
 /* adopted from anubis's snippet -- https://discord.com/channels/686053708261228577/744933215063638183/1037935390276976660 */
-.callout[data-callout="caption"] {
+.callout[data-callout='caption'] {
   background-color: transparent;
   padding: 0 !important;
   margin: 0 !important;
 }
-.callout[data-callout="caption"] .callout-title {
+.callout[data-callout='caption'] .callout-title {
   display: none;
 }
-.callout[data-callout="caption"] .callout-content {
+.callout[data-callout='caption'] .callout-content {
   display: contents;
 }
-.callout[data-callout="caption"] .callout-content p {
+.callout[data-callout='caption'] .callout-content p {
   text-align: center;
   font-style: italic;
   font-size: 0.9em;
 }
-.callout[data-callout="caption"] .callout-content p .snw-reference {
+.callout[data-callout='caption'] .callout-content p .snw-reference {
   display: none;
 }
-.callout[data-callout="caption"]
+.callout[data-callout='caption']
   .callout-content
   span.internal-embed.image-embed.is-loaded {
   display: block;
@@ -2648,12 +2648,12 @@ span.selection {
 /* .internal-embed.image-embed.is-loaded::after {content: attr(alt); font-family: Courgette;} */
 
 /* === Mod for Dataview Card and List Nav === */
-.callout[data-callout-metadata*="dv-list-nav"] ul {
+.callout[data-callout-metadata*='dv-list-nav'] ul {
   display: flex;
   padding-inline-start: var(--list-indent);
   --list-indent: 0;
 }
-.callout[data-callout-metadata*="dv-list-nav"] li {
+.callout[data-callout-metadata*='dv-list-nav'] li {
   flex: 1 1 0;
   border-radius: 1em;
   background-color: var(--background-secondary);
@@ -2662,22 +2662,22 @@ span.selection {
   margin-inline: var(--size-4-1) !important;
   padding-inline: 0.5em;
 }
-.callout[data-callout-metadata*="dv-list-nav"] {
+.callout[data-callout-metadata*='dv-list-nav'] {
   --link-decoration: none;
 }
 
 /* === Mod for Dataview Card and List Button === */
-.callout[data-callout-metadata*="dv-list-button"] ul {
+.callout[data-callout-metadata*='dv-list-button'] ul {
   display: flex;
   padding-inline-start: var(--list-indent);
   --list-indent: 0;
 }
-.callout[data-callout-metadata*="dv-list-button"] li {
+.callout[data-callout-metadata*='dv-list-button'] li {
   flex: 1 1 0;
   list-style: none;
   padding-block: 0;
 }
-.callout[data-callout-metadata*="dv-list-button"] li a {
+.callout[data-callout-metadata*='dv-list-button'] li a {
   display: block;
   border-radius: 1em;
   background-color: var(--background-secondary);
@@ -2688,10 +2688,10 @@ span.selection {
   padding-top: calc(var(--list-spacing));
   padding-bottom: calc(var(--list-spacing) / 2);
 }
-.callout[data-callout-metadata*="dv-list-button"] li a:hover {
+.callout[data-callout-metadata*='dv-list-button'] li a:hover {
   background-color: var(--background-modifier-hover);
 }
-.callout[data-callout-metadata*="dv-list-button"] {
+.callout[data-callout-metadata*='dv-list-button'] {
   --link-decoration: none;
   --link-decoration-hover: none;
 }
@@ -2719,7 +2719,7 @@ body {
 /* make the button "floating" and define customisation */
 body.is-mobile:not(.lst-disable-fab-view)
   div.view-actions
-  > .view-action[aria-label^="Current view"] {
+  > .view-action[aria-label^='Current view'] {
   position: absolute;
   top: calc(88vh - var(--lst-fab-view-y));
   right: calc(0vw + var(--lst-fab-view-x));
@@ -2765,7 +2765,7 @@ body.is-mobile:not(.custom-page-header)
 /* Style Settings -- hide axis options when FAB disabled */
 body.is-mobile.lst-disable-fab-view
   .style-settings-container
-  .setting-item[data-id^="lst-fab-view-y"] {
+  .setting-item[data-id^='lst-fab-view-y'] {
   display: none;
 }
 
@@ -2936,7 +2936,7 @@ body.markdown-preview-view ul {
   position: relative;
 }
 body.markdown-preview-view ul ul::before {
-  content: "";
+  content: '';
   position: absolute;
   margin-left: -0.9em;
   margin-top: 0;
@@ -2966,7 +2966,7 @@ body.markdown-preview-view .folder.inner-folder {
   position: relative;
 }
 body.markdown-preview-view .folder.inner-folder::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 1.2em;
@@ -3092,7 +3092,7 @@ body.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) + ul {
 
 /* adjustment for relationship width */
 .ig-uncategorized
-  .cm-line[style*="text-indent"]:not(.HyperMD-list-line)
+  .cm-line[style*='text-indent']:not(.HyperMD-list-line)
   .ig-tab::before,
 .ig-lists .HyperMD-list-line .ig-tab::before,
 .ig-code .HyperMD-codeblock .ig-tab::before {
@@ -3187,11 +3187,11 @@ body {
 }
 
 /* adjust margin for ## Review section (#flashcards) */
-div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) p {
+div:has([href*='#flashcards']) ~ div:has(h5, h6) + div:has(p) p {
   margin-block: 0.4em 0;
 }
 /* remove top margin for ul for the answers */
-div:has([href*="#flashcards"])
+div:has([href*='#flashcards'])
   ~ div:has(h5, h6)
   + div:has(p)
   + div
@@ -3199,7 +3199,7 @@ div:has([href*="#flashcards"])
   ul:first-child {
   margin-top: 0.2em;
 }
-div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
+div:has([href*='#flashcards']) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
   margin-top: 0.2em;
 }
 
@@ -3255,18 +3255,18 @@ div:has([href*="#flashcards"]) ~ div:has(h5, h6) + div:has(p) + div:has(ul) ul {
 /* -- for List Embed compatibility */
 .list-embed-global
   :is(.HyperMD-list-line, li):has(.snw-reference)
-  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):not(
+  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']):not(
     :has(.markdown-preview-section > div > ul)
   ),
 :is(.HyperMD-list-line, li):has(.snw-reference)
-  [alt*="list-embed"].internal-embed.is-loaded.markdown-embed:not(
-    [alt*=".excalidraw"]
+  [alt*='list-embed'].internal-embed.is-loaded.markdown-embed:not(
+    [alt*='.excalidraw']
   ):not(:has(.markdown-preview-section > div > ul)) {
   width: calc(100% - 25px);
 }
 
 /* -- hide SNW reference counter inside embedded notes (that maybe recursive in nature) */
-[alt*="list-embed"]
+[alt*='list-embed']
   .markdown-preview-section
   > div
   > ul
@@ -3344,12 +3344,12 @@ li:has(> [data-heading]):has(> .snw-block-preview)
   border-left: 1px solid var(--background-modifier-border);
   padding-bottom: 0;
 }
-.view-content .style-settings-container[data-level="2"] {
+.view-content .style-settings-container[data-level='2'] {
   padding-left: 1rem;
   margin-left: 0;
 }
 /* adjust the padding left */
-.style-settings-container[data-level="0"] {
+.style-settings-container[data-level='0'] {
   margin-left: 0.3rem;
   margin-bottom: 1em;
 }
@@ -3357,18 +3357,18 @@ li:has(> [data-heading]):has(> .snw-block-preview)
   padding-left: 1.2rem;
 }
 /* */
-.style-settings-heading[data-level="0"]:not(.is-collapsed) {
+.style-settings-heading[data-level='0']:not(.is-collapsed) {
   margin-bottom: 1em;
 }
 /* adjust padding for collapse icon only for first header */
-.workspace-leaf-content[data-type="style-settings"]
+.workspace-leaf-content[data-type='style-settings']
   > .view-content
   > .setting-item-heading
   > .setting-item-info
   > .setting-item-name {
   padding-left: 1em;
 }
-.workspace-leaf-content[data-type="style-settings"]
+.workspace-leaf-content[data-type='style-settings']
   > .view-content
   > .setting-item-heading
   > .setting-item-info
@@ -3377,18 +3377,18 @@ li:has(> [data-heading]):has(> .snw-block-preview)
   margin-left: -1.15em;
 }
 /* color - font title/item */
-.style-settings-container[data-level="0"]
+.style-settings-container[data-level='0']
   > .style-settings-heading
   .setting-item-name {
   color: var(--h3-color);
 }
-.style-settings-container[data-level="0"]
+.style-settings-container[data-level='0']
   > .style-settings-container
   > .style-settings-heading
   .setting-item-name {
   color: var(--h4-color);
 }
-.style-settings-heading[data-level="2"] .setting-item-name {
+.style-settings-heading[data-level='2'] .setting-item-name {
   color: var(--h4-color);
 }
 .style-settings-container .setting-item:not([data-level]) {
@@ -3411,20 +3411,20 @@ li:has(> [data-heading]):has(> .snw-block-preview)
 }
 
 /* adjust the bottom padding to avoid overflow */
-.workspace-leaf-content[data-type="style-settings"] > .view-content {
+.workspace-leaf-content[data-type='style-settings'] > .view-content {
   padding-bottom: 2rem;
 }
 
 /* - Adjustment for Mobile */
 .is-phone
-  .style-settings-heading[data-level="0"]
+  .style-settings-heading[data-level='0']
   > .setting-item-info
   > .setting-item-name {
   padding-left: 1em;
   position: relative;
 }
 .is-phone
-  .style-settings-heading[data-level="0"]
+  .style-settings-heading[data-level='0']
   > .setting-item-info
   > .setting-item-name
   .style-settings-collapse-indicator {
@@ -3451,7 +3451,7 @@ body {
 }
 :is(.HyperMD-list-line, li)
   .math-block
-  mjx-container[jax="CHTML"][display="true"] {
+  mjx-container[jax='CHTML'][display='true'] {
   text-align: var(--math-block-list-align);
 }
 

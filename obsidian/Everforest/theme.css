@@ -34,7 +34,7 @@
 /* 1. Font */
 body {
   /* font stacks taken directly from Notion */
-  --font-monospace: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
+  --font-monospace: 'Hack', 'Hack Nerd Font', 'Source Code Pro', monospace;
   -webkit-font-smoothing: auto;
   --h1-color: var(--text-title-h1);
   --h2-color: var(--text-title-h2);
@@ -182,10 +182,10 @@ body {
   --text-selection: rgba(189, 174, 147, 0.5); /* light3 */
 }
 
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none;
   background-color: var(--pre-code);
 }
@@ -296,24 +296,24 @@ TAGS
   TAG REF STYLING
   ----------------------------------------------------------------*/
 
-.tag[href^="#❗️"],
-.tag[href^="#important❗️"] {
+.tag[href^='#❗️'],
+.tag[href^='#important❗️'] {
   background-color: var(--tag-base);
   border: 1px solid var(--boldred);
 }
 
-.tag[href^="#📓"],
-.tag[href^="#journal📓"] {
+.tag[href^='#📓'],
+.tag[href^='#journal📓'] {
   background-color: var(--tag-base);
   border: 1px solid var(--purple);
 }
 
-.tag[href^="#🌱"],
-.tag[href^="#seedling🌱"],
-.tag[href^="#🌿"],
-.tag[href^="#budding🌿"],
-.tag[href^="#🌳"],
-.tag[href^="#evergreen🌳"] {
+.tag[href^='#🌱'],
+.tag[href^='#seedling🌱'],
+.tag[href^='#🌿'],
+.tag[href^='#budding🌿'],
+.tag[href^='#🌳'],
+.tag[href^='#evergreen🌳'] {
   background-color: var(--tag-base);
   border: 1px solid var(--boldgreen);
 }

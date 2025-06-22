@@ -1,0 +1,37 @@
+.ulu-yellow {
+  --color-accent: hsl(var(--color-yellow-hsl));
+  --color-accent-rgb: var(--color-yellow-rgb);
+  --color-accent-hsl: var(--color-yellow-hsl);
+  --color-accent-1: var(--color-red);
+  --color-accent-1-rgb: var(--color-red-rgb);
+}
+
+.ulu-accent-bg-d.ulu-yellow {
+  --color-base-00: #050404;
+  --color-base-20: #13110f;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #262626 20.62%,
+    #050404 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #2b2b2b 20.62%,
+    #13110f 90.72%
+  ) !important;
+}
+
+.ulu-accent-bg-lowcon-d.ulu-yellow {
+  --color-base-00: #13110f;
+  --color-base-20: #13110f;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #13110f 20.62%,
+    #13110f 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #13110f 20.62%,
+    #13110f 90.72%
+  ) !important;
+}

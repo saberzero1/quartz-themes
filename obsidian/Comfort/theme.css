@@ -176,7 +176,7 @@ body {
   --link-external-color-hover: #1a4078;
   --background-modifier-border: rgba(0, 0, 0, 0);
   --input-shadow: none;
-  --font-text: "宋体", SimSun;
+  --font-text: '宋体', SimSun;
   --input-shadow-hover: none;
   --background-modifier-border-focus: #add4ad;
   --modal-border-color: rgba(0, 0, 0, 0);

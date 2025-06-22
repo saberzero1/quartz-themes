@@ -1,0 +1,25 @@
+.vaultTitle .nav-folder.mod-root > .nav-folder-title {
+  border-left: 5px solid var(--custom-background-tertiary);
+  border-top: 5px solid var(--interactive-accent);
+  border-right: 5px solid var(--interactive-accent);
+  border-bottom: 5px solid var(--interactive-accent);
+  box-shadow: inset 0px 15px 0px 22px var(--custom-background-tertiary);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    var(--interactive-accent) 55%,
+    var(--interactive-accent) 100%
+  );
+  justify-content: center;
+  /* color: #ffffff; */
+  /* animation-name: text-shadow_color_change_V2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  padding: 10px 0px;
+  position: relative;
+  margin-left: -12px;
+  margin-right: -12px;
+}

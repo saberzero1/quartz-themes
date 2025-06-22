@@ -1,0 +1,235 @@
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder.mod-root
+  .nav-folder
+  .nav-folder {
+  background-color: inherit;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .is-collapsed
+  .nav-folder-collapse-indicator
+  svg,
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-collapse-indicator
+  svg,
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  .nav-file-title,
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  .nav-folder-title {
+  color: var(--nav-folder-title-color);
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 2) {
+  background-color: var(--folder-colorful-custom-color);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 3) {
+  background-color: var(--folder-colorful-custom-color2);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 4) {
+  background-color: var(--folder-colorful-custom-color3);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 5) {
+  background-color: var(--folder-colorful-custom-color4);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 6) {
+  background-color: var(--folder-colorful-custom-color5);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 7) {
+  background-color: var(--folder-colorful-custom-color6);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 8) {
+  background-color: var(--folder-colorful-custom-color7);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 9) {
+  background-color: var(--folder-colorful-custom-color8);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 10) {
+  background-color: var(--folder-colorful-custom-color9);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 11) {
+  background-color: var(--folder-colorful-custom-color10);
+  opacity: var(--shib-colorful-folders-opacity);
+  border-radius: var(--shib-colorful-folders-radius, 2px);
+  margin-bottom: 2px;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 2)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 3)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color2);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 4)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color3);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 5)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color4);
+  opacity: 0.8;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 6)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color5);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 7)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color6);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 8)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color7);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 9)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color8);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 10)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color9);
+  opacity: 0.9;
+  font-weight: 700;
+}
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
+  .nav-folder-children
+  > .nav-folder:nth-child(10n + 11)
+  .nav-folder-title {
+  color: var(--folder-colorful-custom-color10);
+  opacity: 0.9;
+  font-weight: 700;
+}

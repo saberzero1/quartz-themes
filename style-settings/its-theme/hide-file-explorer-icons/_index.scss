@@ -1,0 +1,16 @@
+.nav-folder .nav-folder-title {
+  --folder-icon: '';
+  --file-icon-margin: 0;
+}
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  content: '';
+  width: 0;
+}
+.nav-file .nav-file-title {
+  --file-icon: '';
+  --file-icon-margin: 0;
+}
+.nav-file .nav-file-title .nav-file-title-content::before {
+  content: '';
+  width: 0;
+}

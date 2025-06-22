@@ -1,0 +1,154 @@
+body.color-scheme-options-lilac .theme-light,
+body.theme-light {
+  --background-primary: var(--background-primary-bg-4-bt, #d7c4f2);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt, #e8dffa);
+  --background-secondary: var(--background-secondary-bg-4-bt, #e1cefa);
+  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #d7c4f2);
+  --background-modifier-border: #af9dd1;
+  --background-modifier-success: #d7a4e7;
+  --text-normal: #0e0e0e;
+  --text-muted: #ab7ecf;
+  --text-faint: #a23ac2;
+  --accent-em: #620ac6;
+  --text-selection: #8b66bb59;
+  --interactive-normal: #eaeaeb;
+  --interactive-hover: #d1b6f0;
+  --interactive-accent-rgb: 195, 144, 230;
+  /*工作区旁边的线*/
+  --accent-h: 266;
+  --accent-s: 62%;
+  --accent-l: 72%;
+  --strong-em-highlight-color: #7908ae;
+  --text-highlight-bg-h: 273;
+  --text-highlight-bg-s: 65%;
+  --text-highlight-bg-l: 75%;
+  --text-highlight-bg-a: 0.706;
+  --text-highlight-bg: hsla(
+    var(--text-highlight-bg-h),
+    var(--text-highlight-bg-s),
+    var(--text-highlight-bg-l),
+    var(--text-highlight-bg-a)
+  );
+  --text-search-highlight-bg: #d1d2ff;
+  --strong-em-color-1: #5008ae;
+  --strong-em-color-2: #2e0153;
+  --search-result-file-matched-bg: #ffc3c3;
+  --background-mobile-drawer-1: #ffffff;
+  --background-mobile-drawer-2: #ffffffa1;
+  --background-secondary-alt-bg-4-bt-publish: #e1d5eb61;
+  --scrollbar-thumb-bg: #aa7dd3a8;
+  --scrollbar-active-thumb-bg: #aa7dd3;
+  --search-result-file-title-color: #5a10a0;
+  --background-blockquote: #b6b6b62c;
+  --internal-link-color: #6203a2;
+  --list-ul: #ffffff;
+  --list-ul-block-color: #7f1bb9;
+  --list-ul-disc-color: #d955f3;
+  --list-ul-hover: #ba2fdd;
+  --list-ol-block-color: #7835a5;
+  --list-ol-number-color: #85429a;
+  --list-ol-hover: #9231b8;
+  --green-1: #9c30c7;
+  --tag-text: #d2a3d4;
+  --stag1: #fa8787;
+  --stag1-bg: #eb2727;
+  --stag2: #fdbd5c;
+  --stag2-bg: #ee9002;
+  --stag3: #50ce3a;
+  --stag3-bg: #22ac09;
+  --tag1: #2b85ce;
+  --tag2: #29b325;
+  --tag3: #20b9ce;
+  --tag4: #dfd331;
+  --tag5: #bbbbbb;
+  --tag-dailynote: #0077ff;
+  --tag-dailynote-bg: #277cdd;
+  --tag-weeklynote: #4b9fff;
+  --tag-weeklynote-bg: #6aafff;
+  --tag-questions: #b68fff;
+  --tag-questions-bg: #b085ff;
+  --tag-ideas: #ceb900;
+  --tag-ideas-bg: #444444d8;
+  --h1-color: var(--print-h1-color, #6f6493);
+  --h2-color: var(--print-h2-color, #724681);
+  --h3-color: var(--print-h3-color, #330349);
+  --h4-color: var(--print-h4-color, #2d1445);
+  --h5-color: var(--print-h5-color, #300e47);
+  --h6-color: var(--print-h6-color, #331945);
+  /*graph*/
+  --graph-text-color: #696969;
+  --graph-tag: #da9ee2cc;
+  --graph-attach: #88b0d6cc;
+  --graph-circle: #ac6fbfcc;
+  --graph-line: #b1b1b1;
+  --graph-unresolved: #db4e4ecc;
+  --graph-arrow: #e25300;
+  --graph-control-bg: #ffffff9a;
+  /*mermaid*/
+  --mermaid-active-task-color: #44bbff;
+  --mermaid-seq-dia-color: #76c8ff;
+  /*table*/
+  --table-background-color: #efe0f1;
+  --table-background-color-odd: #ffffffaf;
+  --table-border-color: #7d7d7d;
+  --table-thead-background-color: #d4a7e6c7;
+  --table-hover-raw-color: #c485ee2f;
+  --table-hover-color: #a75dec34;
+  --table-hover-thead-color: #edddff;
+  /*calendar*/
+  --calendar-week-color: #8b32b4;
+  --calendar-week-hover: #f9e3ff;
+  --calendar-week-background-color: #d4bfe6;
+  --calendar-today-background-color: #c2aaee;
+  --color-text-weeknum: #8b32b4;
+  /*day planner 改为相应色系*/
+  --day-planner-pie: #eca95c;
+  --day-planner-timeline: #d62f2f;
+  --day-planner-line: #d0aee6;
+  --day-planner-dot: #d0aee6;
+  --day-planner-item-hover: #d0aee6;
+  --event-item-color1: #e6e0f1;
+  --event-item-color2: #d4cae5;
+  --event-item-color3: #c2b4d9;
+  --event-item-color4: #b09fcd;
+  --event-item-color5: #9f8ac1;
+  --event-item-color6: #9078b6;
+  --event-item-color7: #8066ac;
+  --event-item-color8: #7154a1;
+  --event-item-color9: #604195;
+  --event-item-color10: #4f2d89;
+  --event-item-color11: #3c197c;
+  --event-item-color12: #280070;
+  /* stickies */
+  --stickies-color-1: #b8b3e2;
+  --stickies-color-2: #e9c6f1;
+  --tape-color: #acacac65;
+  /*Sliding panes*/
+  --sliding-panes-header-color: #2c0240;
+  --background-4-sliding-pane: #ffffffef;
+  --color-view-header-gradient-1: #efe0f1ef;
+  /*标题上的颜色*/
+  --color-view-header-gradient-2: #e1c9f1ef;
+  /*checkbox*/
+  --checkbox-color-0: var(--text-accent);
+  --checkbox-color-1: #e0dd2a;
+  --checkbox-color-2: #4077bf;
+  --checkbox-color-3: #ffe9e9;
+  --checkbox-color-4: #fffbd4;
+  --checkbox-color-5: #ad7fbf;
+  --checkbox-color-6: #a3a1a1;
+  --text-checked-checkbox: #9b9b9b;
+  --interactive-hover: #dbdbdc;
+  --table-color-calendar-2: rgb(211, 161, 247);
+  --table-color-rgb: 211, 161, 247;
+  --divider-color: #d7c4f2;
+  --tab-stacked-shadow: #c69fd5;
+}
+
+body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: #cbb5e9;
+}
+
+body.theme-light #calendar-container {
+  --theme-color-translucent-3: #dccaffb0;
+}

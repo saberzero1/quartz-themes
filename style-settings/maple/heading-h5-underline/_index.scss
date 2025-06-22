@@ -1,0 +1,37 @@
+body {
+  --h5-line-height: calc(
+    var(--setting-line-height, var(--line-height-normal)) * var(--h5-size) * 1.2
+  );
+}
+body :is(h5, .HyperMD-header-5) {
+  position: relative;
+}
+body :is(h5, .HyperMD-header-5)::after {
+  content: '';
+  position: absolute;
+  height: var(--size-4-1);
+  width: 100%;
+  top: 50%;
+  transform: translateY(
+    max(var(--h5-size) * var(--line-height-normal) * 0.3, var(--size-4-3))
+  );
+  border-radius: var(--size-2-1);
+  background-image: linear-gradient(
+    to right,
+    var(--h5-color) 30%,
+    transparent 70%
+  );
+}
+body h5::after {
+  left: 0;
+}
+body .HyperMD-header-5::after {
+  left: var(--size-4-1);
+}
+body .vertical-tab-content h5 {
+  font-size: var(--h5-size);
+  font-weight: var(--h5-weight);
+}
+bod.heading-underline-thin :is(h5, .HyperMD-header-5)::after {
+  height: var(--size-2-1);
+}

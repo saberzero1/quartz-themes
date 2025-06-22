@@ -1,0 +1,29 @@
+-on .cm-sizer > .embedded-backlinks,
+-on .mod-footer:has(> .embedded-backlinks) {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  overflow-y: visible;
+  & > .backlink-pane,
+  & > .embedded-backlinks > .backlink-pane {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
+-on .markdown-source-view.mod-cm6 .cm-scroller {
+  overflow-y: scroll;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+-on
+  .setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container {
+  position: sticky;
+  bottom: 0;
+  overflow-y: visible;
+}

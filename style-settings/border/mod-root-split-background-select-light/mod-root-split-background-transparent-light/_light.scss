@@ -1,0 +1,11 @@
+body.mod-root-split-background-transparent-light:not(.card-layout-open-light) {
+  --background-mod-root-split: var(--background-primary) !important;
+}
+body.theme-light:not(
+    .is-mobile
+  ).card-layout-open-light.mod-root-split-background-transparent-light
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-container {
+  --card-shadow-light: transparent;
+}

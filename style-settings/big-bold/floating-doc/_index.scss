@@ -1,0 +1,51 @@
+:root,
+body {
+  --ribbon-background-collapsed: transparent;
+  --ribbon-background: transparent;
+  .workspace,
+  .workspace > .workspace-split,
+  .workspace-ribbon::before {
+    background: var(--doc-background);
+  }
+  .enable-bg-img .workspace,
+  .enable-bg-img .workspace > .workspace-split,
+  .enable-bg-img .workspace-ribbon::before {
+    background: transparent;
+  }
+  .workspace-leaf {
+    background-color: transparent !important;
+    margin: 0px 0.5em;
+  }
+  .workspace-leaf-content[data-type='markdown'] {
+    max-width: var(--file-line-width) !important;
+    margin: auto !important;
+  }
+  .workspace-leaf-content {
+    border-radius: var(--radius-s) var(--radius-s) 0px 0px;
+    box-shadow: var(--shadow-s);
+  }
+  .enable-bg-img .workspace-leaf-content {
+    background-color: var(--background-primary) !important;
+  }
+}
+.enable-bg-img:not() .workspace-split.mod-horizontal.mod-left-split,
+.enable-bg-img:not() .workspace-ribbon,
+.enable-bg-img:not() .workspace-ribbon.is-collapsed,
+.enable-bg-img:not() .workspace-ribbon::before {
+  background-color: var(--background-primary) !important;
+}
+.page-shadow:not() .workspace,
+.page-shadow:not() .workspace > .workspace-split,
+.page-shadow:not() .workspace-ribbon,
+.page-shadow:not() .workspace-ribbon::before,
+.page-shadow .view-content {
+  box-shadow: 0 0 70px var(--shadow-color) inset;
+}
+.page-shadow.is-focused:not() .workspace-leaf.mod-active .view-header,
+.page-shadow:not() .view-header,
+.page-shadow:not() .workspace-leaf-content,
+.page-shadow:not() .workspace-tab-container,
+.page-shadow:not() .workspace-leaf.mod-active,
+.page-shadow:not() .view-content {
+  background-color: transparent !important;
+}

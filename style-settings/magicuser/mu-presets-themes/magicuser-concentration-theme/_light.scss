@@ -1,0 +1,28 @@
+.magicuser-concentration-theme {
+  --mu-background-color-1: #dddde8;
+  --mu-background-color-2: #d7d7e1;
+  --mu-caret-color: #f500b4;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #f1f1f5;
+  --mu-text-title: #58586f;
+  --mu-titlebar-background: #0b0b0e;
+  --mu-vault-title: #58586f;
+  --code-background: #c0c0cf;
+  --code-punctuation: #797995;
+  --mu-folder-text-color: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #bf48ff48;
+  --mu-dark-sidebar-color: #121216;
+  --mu-icon-focused: #00a3ff;
+  --mu-table-th-background: #0b0b0e;
+}
+body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-concentration-theme {
+  --mu-folder-text-color: #72b1ff;
+  --mu-bg-search-results: #1b1b21;
+}

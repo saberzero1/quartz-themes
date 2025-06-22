@@ -6,9 +6,9 @@ with a few modifications to make it work with the Tokyo Night Storm.
 
 /*Fonts*/
 :root {
-  --default-font: "JetBrains Mono", monospace;
-  --default-font: "JetBrains Mono Nerd Font", monospace;
-  --font-monospace: "Anonymous Pro", "Anonymouse Pro for Powerline", monospace;
+  --default-font: 'JetBrains Mono', monospace;
+  --default-font: 'JetBrains Mono Nerd Font', monospace;
+  --font-monospace: 'Anonymous Pro', 'Anonymouse Pro for Powerline', monospace;
 }
 
 .theme-dark {
@@ -217,8 +217,8 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url.external-link {
 }
 
 /* callouts */
-.callout[data-callout="quote"],
-.callout[data-callout="cite"] {
+.callout[data-callout='quote'],
+.callout[data-callout='cite'] {
   background-color: rgba(var(--bg_highlight_dark_x), 0.5);
 }
 

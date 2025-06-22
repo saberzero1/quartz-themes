@@ -1,0 +1,24 @@
+.link-button {
+  --link-color: var(--text-normal);
+  --link-unresolved-color: var(--text-normal);
+  --link-external-color: var(--text-normal);
+  --link-decoration-hover: none;
+  --link-external-decoration-hover: none;
+}
+.link-button .internal-link,
+.link-button .external-link,
+.link-button .markdown-source-view.mod-cm6 .cm-underline {
+  background-color: var(--background-primary);
+  -webkit-box-shadow: 0 -1px 7px -1px rgb(118 118 118 / 15%) inset;
+  padding: 1px 10px;
+  border-radius: 0.4em;
+  border: solid var(--background-modifier-border) 1.1px;
+  background-image: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.link-button .internal-link:hover,
+.link-button .external-link:hover,
+.link-button .markdown-source-view.mod-cm6 .cm-underline:hover {
+  -webkit-box-shadow: 0 -1px 10px -1px rgb(118 118 118 / 30%) inset;
+}

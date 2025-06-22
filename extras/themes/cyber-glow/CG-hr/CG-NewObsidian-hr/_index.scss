@@ -1,0 +1,21 @@
+.CG-NewObsidian-hr .markdown-preview-view hr::after,
+.CG-NewObsidian-hr .hr.cm-line hr::after {
+  content: ' ';
+  display: inline-block;
+  background-color: var(--text-accent);
+  position: absolute;
+  padding: 1rem;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.CG-NewObsidian-hr .markdown-preview-view hr::after {
+  -webkit-mask-image: var(--newoutlined-logo);
+  -webkit-mask-size: 100%;
+  transform: translate(-45%, -50%);
+}
+
+.CG-NewObsidian-hr .hr.cm-line hr::after {
+  -webkit-mask-image: var(--newoutlined-logo);
+  -webkit-mask-size: 80%;
+  transform: translate(-40%, -33%);
+}

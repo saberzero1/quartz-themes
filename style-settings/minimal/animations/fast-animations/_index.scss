@@ -1,0 +1,7 @@
+.fast {
+  --ribbon-animation-duration: 0.05s;
+  --focus-animation-duration: 0.05s;
+}
+.fast .mod-sidedock {
+  transition-duration: 70ms !important;
+}

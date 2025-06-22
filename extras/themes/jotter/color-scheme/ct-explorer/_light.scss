@@ -1,0 +1,14 @@
+.ct-explorer {
+  --background-primary: #e7e5d0;
+  --background-primary-alt: #dad7c3;
+  --background-secondary: #e7e5d0;
+  --code-background: #dedbc9;
+  --background-modifier-border: hsl(55, 20%, 75%);
+  --background-modifier-border-hover: hsl(55, 20%, 80%);
+  --indentation-guide-color-active: hsl(30, 1%, 63%);
+  --interactive-normal: var(--background-modifier-border);
+  --interactive-hover: var(--background-modifier-border-hover);
+  --text-normal: #191919;
+  --text-muted: #555864;
+  --text-faint: #999ba4;
+}

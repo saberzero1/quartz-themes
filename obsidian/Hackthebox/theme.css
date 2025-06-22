@@ -402,7 +402,7 @@ code {
   padding: 0 0 !important;
 }
 
-code[data-line="0"] {
+code[data-line='0'] {
   color: var(--code-normal) !important;
   font-size: calc(var(--font-text-size) * 0.875) !important;
 }

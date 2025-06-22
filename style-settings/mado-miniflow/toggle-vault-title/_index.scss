@@ -1,0 +1,3 @@
+body:is(:not(.css-settings-manager), ) .nav-folder-title[data-path='/'] {
+  display: none;
+}

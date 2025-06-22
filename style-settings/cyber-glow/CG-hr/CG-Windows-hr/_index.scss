@@ -1,0 +1,19 @@
+.CG-Windows-hr .markdown-preview-view hr::after,
+.CG-Windows-hr .hr.cm-line hr::after {
+  content: ' ';
+  display: inline-block;
+  background-color: var(--text-accent);
+  position: absolute;
+  padding: 1rem;
+  -webkit-mask-repeat: no-repeat;
+}
+.CG-Windows-hr .markdown-preview-view hr::after {
+  -webkit-mask-image: var(--windowsLogo);
+  -webkit-mask-size: 65%;
+  transform: translate(-35%, -50%);
+}
+.CG-Windows-hr .hr.cm-line hr::after {
+  -webkit-mask-image: var(--windowsLogo);
+  -webkit-mask-size: 80%;
+  transform: translate(-35%, -30%);
+}

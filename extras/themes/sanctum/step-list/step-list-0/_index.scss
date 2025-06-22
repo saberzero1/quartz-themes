@@ -1,0 +1,14 @@
+.step-list-0 ol {
+  list-style-type: none;
+}
+
+.step-list-0 ol {
+  counter-reset: decimal;
+}
+
+.step-list-0 ol > li::before {
+  content: 'Step ' counters(decimal, '.') ': ';
+  counter-increment: decimal;
+  color: var(--text-faint);
+  margin-left: -1.1em;
+}

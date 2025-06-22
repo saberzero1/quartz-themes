@@ -1,0 +1,26 @@
+body .setting-item[data-id='background-image-settings-command-palette-custom'] {
+  display: none;
+}
+body.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  background-image: var(--theme-background);
+  filter: blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))
+    saturate(var(--saturate-4-bg-cp));
+  opacity: var(--opacity-cp);
+  z-index: -1;
+}
+body.background-image-settings-command-palette-switch.background-settings-workplace-waves2-light
+  .modal-container
+  .prompt::before,
+body.background-image-settings-command-palette-switch.background-settings-workplace-waves2
+  .modal-container
+  .prompt::before {
+  top: 60%;
+}
+body.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt
+  input.prompt-input {
+  background-color: transparent;
+}

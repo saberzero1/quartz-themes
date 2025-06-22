@@ -1,0 +1,14 @@
+.ct-undercover {
+  --background-primary: #fcfcfc;
+  --background-primary-alt: #dbe1eb;
+  --background-secondary: #eff1f5;
+  --code-background: #eaf0f8;
+  --background-modifier-border: hsl(218, 11%, 86%);
+  --background-modifier-border-hover: hsl(218, 11%, 81%);
+  --indentation-guide-color-active: hsl(218, 11%, 70%);
+  --interactive-normal: var(--background-modifier-border);
+  --interactive-hover: hsl(218, 11%, 90%);
+  --text-normal: #212834;
+  --text-muted: #7787a9;
+  --text-faint: #a1acc2;
+}

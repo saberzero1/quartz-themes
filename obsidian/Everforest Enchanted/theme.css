@@ -420,10 +420,10 @@ body:not(.disable-menu-animations) :is(.modal, .prompt) {
 
 /* Text trees */
 .progress-bar-message::before {
-  content: "🌲 ";
+  content: '🌲 ';
 }
 .progress-bar-message::after {
-  content: " 🌲";
+  content: ' 🌲';
 }
 
 /* Progress bars */
@@ -520,13 +520,13 @@ pre {
 }
 
 /* Codeblock top bars */
-pre[class^="language-"] {
+pre[class^='language-'] {
   padding-top: calc(
     var(--size-4-2) + var(--code-size) * var(--line-height-normal) + 1px
   );
 }
-pre[class^="language-"]::before {
-  content: "";
+pre[class^='language-']::before {
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -539,7 +539,7 @@ pre[class^="language-"]::before {
   ) {
   overflow: hidden;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background-color: var(--code-header);
@@ -548,7 +548,7 @@ pre[class^="language-"]::before {
 }
 
 /* Codeblock language labels */
-pre[class^="language-"]::after {
+pre[class^='language-']::after {
   content: attr(class);
   position: absolute;
   top: 0;
@@ -569,137 +569,137 @@ pre[class^="language-"]::after {
   font-family: var(--font-monospace);
   font-size: 1em;
 }
-.markdown-rendered pre[class^="language-"] button.copy-code-button {
+.markdown-rendered pre[class^='language-'] button.copy-code-button {
   top: calc(6px + var(--code-size) * var(--line-height-normal));
 }
 
 pre.language-applescript::after {
-  content: "AppleScript";
+  content: 'AppleScript';
 }
 pre.language-armasm::after,
 pre.language-arm-asm::after {
-  content: "ARM Assembly";
+  content: 'ARM Assembly';
 }
 pre.language-bash::after {
-  content: "Bash";
+  content: 'Bash';
 }
 pre.language-c::after {
-  content: "C";
+  content: 'C';
 }
 pre.language-cpp::after {
-  content: "C++";
+  content: 'C++';
 }
 pre.language-cs::after {
-  content: "C#";
+  content: 'C#';
 }
 pre.language-css::after {
-  content: "CSS";
+  content: 'CSS';
 }
 pre.language-flow::after {
-  content: "Flow";
+  content: 'Flow';
 }
 pre.language-git::after {
-  content: "GIT";
+  content: 'GIT';
 }
 pre.language-haskell::after {
-  content: "Haskell";
+  content: 'Haskell';
 }
 pre.language-html::after {
-  content: "HTML";
+  content: 'HTML';
 }
 pre.language-ini::after {
-  content: "INI";
+  content: 'INI';
 }
 pre.language-java::after {
-  content: "JAVA";
+  content: 'JAVA';
 }
 pre.language-javascript::after {
-  content: "JavaScript";
+  content: 'JavaScript';
 }
 pre.language-js::after {
-  content: "JavaScript";
+  content: 'JavaScript';
 }
 pre.language-json::after {
-  content: "JSON";
+  content: 'JSON';
 }
 pre.language-lua::after {
-  content: "Lua";
+  content: 'Lua';
 }
 pre.language-makefile::after {
-  content: "Makefile";
+  content: 'Makefile';
 }
 pre.language-md::after,
 pre.language-markdown::after {
-  content: "Markdown";
+  content: 'Markdown';
 }
 pre.language-matlab::after {
-  content: "MATLAB";
+  content: 'MATLAB';
 }
 pre.language-nginx::after {
-  content: "Nginx";
+  content: 'Nginx';
 }
 pre.language-node::after {
-  content: "Node";
+  content: 'Node';
 }
 pre.language-php::after {
-  content: "PHP";
+  content: 'PHP';
 }
 pre.language-py::after {
-  content: "Python";
+  content: 'Python';
 }
 pre.language-python::after {
-  content: "Python";
+  content: 'Python';
 }
 pre.language-r::after {
-  content: "R";
+  content: 'R';
 }
 pre.language-react::after {
-  content: "React";
+  content: 'React';
 }
 pre.language-regex::after {
-  content: "Regex";
+  content: 'Regex';
 }
 pre.language-rust::after {
-  content: "Rust";
+  content: 'Rust';
 }
 pre.language-sequence::after {
-  content: "Sequence";
+  content: 'Sequence';
 }
 pre.language-shell::after {
-  content: "Shell";
+  content: 'Shell';
 }
 pre.language-sql::after {
-  content: "SQL";
+  content: 'SQL';
 }
 pre.language-text::after {
-  content: "Plain Text";
+  content: 'Plain Text';
 }
 pre.language-ts::after {
-  content: "TypeScript";
+  content: 'TypeScript';
 }
 pre.language-toml::after {
-  content: "TOML";
+  content: 'TOML';
 }
 pre.language-txt::after {
-  content: "Plain Text";
+  content: 'Plain Text';
 }
 pre.language-typescript::after {
-  content: "TypeScript";
+  content: 'TypeScript';
 }
 pre.language-url::after {
-  content: "URL";
+  content: 'URL';
 }
 pre.language-vim::after {
-  content: "vimrc";
+  content: 'vimrc';
 }
 pre.language-xml::after {
-  content: "XML";
+  content: 'XML';
 }
 pre.language-yaml::after {
-  content: "YAML";
+  content: 'YAML';
 }
 pre.language-zsh::after {
-  content: "zsh";
+  content: 'zsh';
 }
 
 /** Links **/
@@ -750,7 +750,7 @@ ul > .task-list-item {
 }
 
 /* Fix ordered list checkboxes */
-ol > li.task-list-item.is-checked[data-task="x"] {
+ol > li.task-list-item.is-checked[data-task='x'] {
   text-decoration: var(--checklist-done-decoration);
   color: var(--checklist-done-color);
 }
@@ -810,7 +810,7 @@ input.task-list-item-checkbox:checked::after {
 }
 .markdown-source-view:not(.is-live-preview)
   .cm-formatting-quote:not(.cm-formatting-quote-1)::before {
-  content: "\200b";
+  content: '\200b';
   position: absolute;
   width: 1px;
   border-left: var(--blockquote-border-thickness) solid
@@ -912,7 +912,7 @@ div:has(h1) + div p:has(.tag) {
 }
 
 /* Embed backgrounds */
-.internal-embed.is-loaded:not(.image-embed, [src$=".excalidraw"]) {
+.internal-embed.is-loaded:not(.image-embed, [src$='.excalidraw']) {
   background-color: var(--blockquote-background-color);
 }
 
@@ -935,20 +935,20 @@ div:has(h1) + div p:has(.tag) {
 */
 
 /* Clean embed (no background, padding, borders) */
-.markdown-embed[alt~="clean"] {
+.markdown-embed[alt~='clean'] {
   --blockquote-background-color: transparent;
   border: none;
   padding: 0;
 }
 /* Removes the first title */
-.markdown-embed[alt~="no-title"]
+.markdown-embed[alt~='no-title']
   .markdown-preview-section
   > :is(.mod-header, .mod-header + div:has(.frontmatter))
   + div:has(h1, h2, h3, h4, h5, h6) {
   display: none;
 }
 /* Removes the embed icon */
-.markdown-embed[alt~="no-link"] .markdown-embed-link {
+.markdown-embed[alt~='no-link'] .markdown-embed-link {
   display: none;
 }
 
@@ -1599,13 +1599,13 @@ settings:
 
 /** Improve style setting appearance **/
 /* Padding on the bottom */
-[data-type="style-settings"] .view-content > div:last-child,
+[data-type='style-settings'] .view-content > div:last-child,
 .vertical-tab-content > div:has(.style-settings-heading):last-child {
   padding-bottom: 400px;
 }
 
 /* Remove default margins */
-[data-id="everforest-enchanted-theme"]
+[data-id='everforest-enchanted-theme']
   + .style-settings-container
   .setting-item-heading {
   margin-top: 0;
@@ -1613,7 +1613,7 @@ settings:
 }
 
 /* Style headings */
-[data-id="everforest-enchanted-theme"]
+[data-id='everforest-enchanted-theme']
   + .style-settings-container
   .setting-item-heading {
   border-color: var(--setting-border-color);
@@ -1622,7 +1622,7 @@ settings:
   color: var(--setting-border-color) !important;
 }
 /* Style heading containers */
-[data-id="everforest-enchanted-theme"]
+[data-id='everforest-enchanted-theme']
   + .style-settings-container
   .setting-item-heading
   + .style-settings-container {
@@ -1641,35 +1641,35 @@ settings:
 /* Modify the style of setting items */
 .view-content
   .style-settings-container
-  :is(.setting-item-control:has(input), input[type="text"]) {
+  :is(.setting-item-control:has(input), input[type='text']) {
   width: 100%;
   place-content: flex-start;
 }
 
 /* Heading colors */
 /* Yellow skipped for contrast. There will hopefully never be 6 levels of indentation */
-[data-level="1"],
-[data-level="1"] + .style-settings-container {
+[data-level='1'],
+[data-level='1'] + .style-settings-container {
   --setting-border-color: var(--header-red);
   --setting-icon-color: var(--fg-red);
 }
-[data-level="2"],
-[data-level="2"] + .style-settings-container {
+[data-level='2'],
+[data-level='2'] + .style-settings-container {
   --setting-border-color: var(--header-orange);
   --setting-icon-color: var(--fg-orange);
 }
-[data-level="3"],
-[data-level="3"] + .style-settings-container {
+[data-level='3'],
+[data-level='3'] + .style-settings-container {
   --setting-border-color: var(--header-green);
   --setting-icon-color: var(--fg-green);
 }
-[data-level="4"],
-[data-level="4"] + .style-settings-container {
+[data-level='4'],
+[data-level='4'] + .style-settings-container {
   --setting-border-color: var(--header-blue);
   --setting-icon-color: var(--fg-blue);
 }
-[data-level="5"],
-[data-level="5"] + .style-settings-container {
+[data-level='5'],
+[data-level='5'] + .style-settings-container {
   --setting-border-color: var(--header-purple);
   --setting-icon-color: var(--fg-purple);
 }
@@ -1801,7 +1801,7 @@ body.image-embed-enable-zoom {
       background-color: var(--background-primary);
     }
     &:active::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: var(--color-base-00);
       width: 100%;
@@ -2113,56 +2113,56 @@ body.visual-parity-enabled {
 }
 
 /* Quote callout */
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
 }
-.callout[data-callout="quote"] .callout-title {
+.callout[data-callout='quote'] .callout-title {
   background-color: var(--callout-content-color);
   padding: 0 1ch 1ch;
   display: block;
   text-align: right;
 }
-.callout[data-callout="quote"] .callout-title .callout-icon {
+.callout[data-callout='quote'] .callout-title .callout-icon {
   display: none;
 }
-.callout[data-callout="quote"] .callout-content {
+.callout[data-callout='quote'] .callout-content {
   border: none;
   padding-top: var(--size-4-4);
 }
 
 /* Custom callouts */
 /* Uses Material Colors 300-500 + A100 */
-.callout[data-callout="math"] {
+.callout[data-callout='math'] {
   --callout-color: 132, 255, 255;
   --callout-icon: lucide-sigma;
 }
-.callout[data-callout="math"] .callout-content {
+.callout[data-callout='math'] .callout-content {
   padding: 0 !important;
 }
-.callout[data-callout="math"] .callout-content .math-block {
+.callout[data-callout='math'] .callout-content .math-block {
   border: none;
 }
-.callout[data-callout="graph"] {
+.callout[data-callout='graph'] {
   --callout-color: 255, 152, 0;
   --callout-icon: lucide-line-chart;
 }
-.callout[data-callout="image"] {
+.callout[data-callout='image'] {
   --callout-color: 234, 128, 252;
   --callout-icon: lucide-image;
 }
-.callout[data-callout="image"] .callout-content {
+.callout[data-callout='image'] .callout-content {
   padding: 0 !important;
 }
-.callout[data-callout="code"] {
+.callout[data-callout='code'] {
   --callout-color: 76, 175, 80;
   --callout-icon: lucide-curly-braces;
 }
-.callout[data-callout="code"] .callout-content {
+.callout[data-callout='code'] .callout-content {
   padding: 0 !important;
 }
-.callout[data-callout="code"] .callout-content > pre {
+.callout[data-callout='code'] .callout-content > pre {
   margin-block: 0;
   background-color: var(--code-background);
 }
@@ -2180,8 +2180,8 @@ img {
 .cm-line:not(.cm-active):has(
     .image-embed ~ .image-embed,
     img:not(.cm-widgetBuffer) ~ img:not(.cm-widgetBuffer)
-  ):not(:has([alt="inline"])),
-p:has(.image-embed ~ .image-embed, img ~ img):not(:has([alt="inline"])) {
+  ):not(:has([alt='inline'])),
+p:has(.image-embed ~ .image-embed, img ~ img):not(:has([alt='inline'])) {
   display: flex;
   gap: 0.5rem;
   align-items: start;
@@ -2198,20 +2198,20 @@ p:has(.image-embed ~ .image-embed, img ~ img):not(:has([alt="inline"])) {
 /* Makes a highlighted line shrink the image */
 :root:root
   .cm-line.cm-active
-  > :is(.image-embed:not([alt="inline"]), img:not([alt="inline"])) {
+  > :is(.image-embed:not([alt='inline']), img:not([alt='inline'])) {
   width: 100px;
   display: inline-block;
 }
 /* Centers the image if it is modified */
-:root:root .cm-line:not(.cm-active) > .image-embed:not([alt="inline"]),
-p > .image-embed:not([alt="inline"]) {
+:root:root .cm-line:not(.cm-active) > .image-embed:not([alt='inline']),
+p > .image-embed:not([alt='inline']) {
   display: flex;
   place-items: center;
   flex-direction: column;
 }
 
 /* Disable changes if images have the alt text is exactly inline */
-img[alt="inline"] {
+img[alt='inline'] {
   display: inline !important;
 }
 
@@ -2227,59 +2227,59 @@ img[alt="inline"] {
 
 /* Sizing */
 .image-embed > img:not([width]),
-span > img[src^="http"]:not([width]) {
+span > img[src^='http']:not([width]) {
   display: block;
   width: calc(var(--img-width) / 100 * min(100%, var(--file-line-width)));
   margin-right: auto;
 }
-.image-embed[src~="1/4"],
-img[src^="http"][alt~="1/4"] {
+.image-embed[src~='1/4'],
+img[src^='http'][alt~='1/4'] {
   --img-width: 25;
 }
-.image-embed[src~="2/5"],
-img[src^="http"][alt~="2/5"] {
+.image-embed[src~='2/5'],
+img[src^='http'][alt~='2/5'] {
   --img-width: 40;
 }
-.image-embed[src~="1/3"],
-img[src^="http"][alt~="1/3"] {
+.image-embed[src~='1/3'],
+img[src^='http'][alt~='1/3'] {
   --img-width: 33.3;
 }
-.image-embed[src~="1/2"],
-img[src^="http"][alt~="1/2"] {
+.image-embed[src~='1/2'],
+img[src^='http'][alt~='1/2'] {
   --img-width: 50;
 }
-.image-embed[src~="3/5"],
-img[src^="http"][alt~="3/5"] {
+.image-embed[src~='3/5'],
+img[src^='http'][alt~='3/5'] {
   --img-width: 60;
 }
-.image-embed[src~="2/3"],
-img[src^="http"][alt~="2/3"] {
+.image-embed[src~='2/3'],
+img[src^='http'][alt~='2/3'] {
   --img-width: 66.6;
 }
-.image-embed[src~="3/4"],
-img[src^="http"][alt~="3/4"] {
+.image-embed[src~='3/4'],
+img[src^='http'][alt~='3/4'] {
   --img-width: 75;
 }
-.image-embed[src~="4/5"],
-img[src^="http"][alt~="4/5"] {
+.image-embed[src~='4/5'],
+img[src^='http'][alt~='4/5'] {
   --img-width: 80;
 }
-.image-embed[src~="1/1"],
-.image-embed[src~="full"],
-img[src^="http"][alt~="1/1"],
-img[src^="http"][alt~="full"] {
+.image-embed[src~='1/1'],
+.image-embed[src~='full'],
+img[src^='http'][alt~='1/1'],
+img[src^='http'][alt~='full'] {
   --img-width: 100;
 }
 
 /* Alignment */
-.image-embed[src~="left"] > img,
-.markdown-source-view.mod-cm6 .cm-content img[src^="http"][alt~="left"],
-img[src^="http"][alt~="left"] {
+.image-embed[src~='left'] > img,
+.markdown-source-view.mod-cm6 .cm-content img[src^='http'][alt~='left'],
+img[src^='http'][alt~='left'] {
   margin-left: 0 !important;
 }
-.image-embed[src~="right"] > img,
-.markdown-source-view.mod-cm6 .cm-content img[src^="http"][alt~="right"],
-img[src^="http"][alt~="right"] {
+.image-embed[src~='right'] > img,
+.markdown-source-view.mod-cm6 .cm-content img[src^='http'][alt~='right'],
+img[src^='http'][alt~='right'] {
   margin-right: 0 !important;
 }
 /* External images */
@@ -2288,64 +2288,64 @@ img[src^="http"][alt~="right"] {
 }
 
 /* Floats */
-.markdown-reading-view .image-embed[src~="float"] > img:not([width]) {
+.markdown-reading-view .image-embed[src~='float'] > img:not([width]) {
   width: calc(var(--img-width, 100) / 100 * min(100vw, var(--file-line-width)));
   margin: 0 !important;
 }
-.markdown-reading-view .image-embed[src~="float"] {
+.markdown-reading-view .image-embed[src~='float'] {
   clear: both;
 }
-.markdown-reading-view .image-embed[src~="float"][src~="left"] {
+.markdown-reading-view .image-embed[src~='float'][src~='left'] {
   float: left;
   margin-right: 2%;
 }
-.markdown-reading-view .image-embed[src~="float"][src~="right"] {
+.markdown-reading-view .image-embed[src~='float'][src~='right'] {
   float: right;
   margin-left: 2%;
 }
 
 /* Image alt text other modifications */
-.image-embed[src~="white"] > img,
-img[src^="http"][alt~="white"] {
+.image-embed[src~='white'] > img,
+img[src^='http'][alt~='white'] {
   background-color: white;
 }
-.image-embed[src~="black"] > img,
-img[src^="http"][alt~="black"] {
+.image-embed[src~='black'] > img,
+img[src^='http'][alt~='black'] {
   background-color: black;
 }
-.image-embed[src~="border"] > img,
-img[src^="http"][alt~="border"] {
+.image-embed[src~='border'] > img,
+img[src^='http'][alt~='border'] {
   border: 0.25rem solid var(--background-modifier-border);
 }
-.image-embed[src~="shadow"] > img,
-img[src^="http"][alt~="shadow"] {
+.image-embed[src~='shadow'] > img,
+img[src^='http'][alt~='shadow'] {
   box-shadow: 2px 2px 4px #0007;
 }
-.image-embed[src~="rounded"] > img,
-img[src^="http"][alt~="rounded"] {
+.image-embed[src~='rounded'] > img,
+img[src^='http'][alt~='rounded'] {
   border-radius: 0.5rem;
 }
-.image-embed[src~="blur"] > img,
-img[src^="http"][alt~="blur"] {
+.image-embed[src~='blur'] > img,
+img[src^='http'][alt~='blur'] {
   filter: blur(5px);
   transition: filter 500ms 250ms ease;
 }
-.image-embed[src~="blur"] > img:hover,
-img[src^="http"][alt~="blur"]:hover {
+.image-embed[src~='blur'] > img:hover,
+img[src^='http'][alt~='blur']:hover {
   filter: blur(0);
 }
 
 /* Alt text as caption under image */
 body:not(.no-image-alttext-caption)
   .image-embed:not(
-    [alt*=".png"],
-    [alt*=".gif"],
-    [alt*=".jpg"],
-    [alt*=".jpeg"],
-    [alt*=".tiff"],
-    [alt*=".avif"],
-    [alt*=".webp"],
-    [alt="inline"],
+    [alt*='.png'],
+    [alt*='.gif'],
+    [alt*='.jpg'],
+    [alt*='.jpeg'],
+    [alt*='.tiff'],
+    [alt*='.avif'],
+    [alt*='.webp'],
+    [alt='inline'],
     [width]
   )::after {
   content: attr(alt);
@@ -2359,13 +2359,13 @@ body:not(.no-image-alttext-caption)
   &::after {
     margin-inline: auto;
   }
-  &[src~="left"]::after {
+  &[src~='left']::after {
     margin-inline: 0 auto;
   }
-  &[src~="right"]::after {
+  &[src~='right']::after {
     margin-inline: auto 0;
   }
-  :root .markdown-preview-view &[src~="float"]::after {
+  :root .markdown-preview-view &[src~='float']::after {
     width: 100%;
   }
 }
@@ -2454,7 +2454,7 @@ body:not(.no-image-alttext-caption)
 .dataview.list-view-ul li::before {
   visibility: visible;
   position: absolute;
-  content: "\200B";
+  content: '\200B';
   pointer-events: none;
   border-radius: var(--list-bullet-radius);
   width: var(--list-bullet-size);
@@ -2497,7 +2497,7 @@ hr.page-break {
   background-color: unset;
 }
 hr.page-break::before {
-  content: "Page Break";
+  content: 'Page Break';
   font-size: 0.75em;
   margin-inline: auto;
 }

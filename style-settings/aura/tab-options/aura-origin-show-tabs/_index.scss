@@ -1,0 +1,9 @@
+.aura-origin-layout.aura-origin-show-tabs
+  .workspace-tab-header-container:not(:has([data-type='file-explorer'])) {
+  height: var(--header-height) !important;
+}
+.aura-origin-layout.aura-origin-show-tabs
+  .workspace-tab-header-container:not(:has([data-type='file-explorer']))
+  > * {
+  opacity: 1 !important;
+}

@@ -197,16 +197,16 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Microsoft YaHei Light', sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -214,24 +214,24 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+    'SF Mono', Menlo, SFMono-Regular, Consolas, 'Roboto Mono',
+    'Source Code Pro', monospace;
+  --font-monospace-override: '??';
+  --font-monospace-theme: '??';
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
     var(--font-text-override), var(--font-text-theme), var(--font-interface);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
-  --font-text-theme: "??";
+  --font-text-theme: '??';
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -244,7 +244,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: ".";
+  --footnote-id-delimiter: '.';
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -934,132 +934,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout="tip"] {
+.callout[data-callout='tip'] {
   --callout-color: 0, 191, 165;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: 255, 145, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="danger"] {
+.callout[data-callout='danger'] {
   --callout-color: 255, 23, 68;
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-color: 0, 176, 255;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-color: 0, 184, 212;
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout="question"] {
+.callout[data-callout='question'] {
   --callout-color: 100, 221, 23;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: 0, 184, 212;
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: 0, 200, 83;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: 158, 158, 158;
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout='example'] {
   --callout-color: 124, 77, 255;
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: 245, 0, 87;
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout="summary"] {
+.callout[data-callout='summary'] {
   --callout-color: 0, 176, 255;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="tldr"] {
+.callout[data-callout='tldr'] {
   --callout-color: 0, 176, 255;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-color: 0, 191, 165;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-color: 0, 191, 165;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="check"] {
+.callout[data-callout='check'] {
   --callout-color: 0, 200, 83;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="done"] {
+.callout[data-callout='done'] {
   --callout-color: 0, 200, 83;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="help"] {
+.callout[data-callout='help'] {
   --callout-color: 100, 221, 23;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: 100, 221, 23;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="caution"] {
+.callout[data-callout='caution'] {
   --callout-color: 255, 145, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-color: 255, 145, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="failure"] {
+.callout[data-callout='failure'] {
   --callout-color: 255, 82, 82;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: 255, 23, 68;
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="fail"] {
+.callout[data-callout='fail'] {
   --callout-color: 255, 82, 82;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-color: 255, 82, 82;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="cite"] {
+.callout[data-callout='cite'] {
   --callout-color: 158, 158, 158;
   --callout-icon: quote-glyph;
 }
@@ -1080,7 +1080,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold {
@@ -1091,7 +1091,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold .svg-icon {
@@ -1178,7 +1178,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1287,7 +1287,7 @@ input[type="search"] {
 }
 
 .tree-item-self:before {
-  content: "\200B";
+  content: '\200B';
 }
 
 .tree-item-self.mod-collapsible {
@@ -1340,7 +1340,7 @@ input[type="search"] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: "\200b";
+  content: '\200b';
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1428,7 +1428,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled="true"] {
+.clickable-icon[aria-disabled='true'] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

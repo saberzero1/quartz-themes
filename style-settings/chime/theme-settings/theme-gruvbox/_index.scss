@@ -1,0 +1,23 @@
+.theme-gruvbox.colored-bold-and-italic {
+  --bold-color: var(--color-orange);
+  --italic-color: var(--color-green);
+}
+.theme-gruvbox {
+  --font-default: 'Hind', sans-serif;
+}
+.theme-gruvbox.colorful-headings {
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-blue);
+}
+.theme-gruvbox.colorful-headings-alt {
+  --h1-color: var(--color-green);
+  --h2-color: var(--color-cyan);
+  --h3-color: var(--color-blue);
+  --h4-color: var(--color-purple);
+  --h5-color: var(--color-pink);
+  --h6-color: var(--color-red);
+}

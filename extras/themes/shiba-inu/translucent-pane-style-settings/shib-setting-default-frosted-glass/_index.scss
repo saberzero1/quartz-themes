@@ -1,0 +1,44 @@
+.shib-setting-default-frosted-glass .prompt {
+  background-color: var(--bg-color-settings-4);
+  backdrop-filter: blur(3px);
+}
+
+.shib-setting-default-frosted-glass .vertical-tab-header-group-title {
+  color: var(--text-normal);
+  border-top: 1px dashed var(--text-muted);
+  border-top: none;
+}
+
+.shib-setting-default-frosted-glass .modal-bg {
+  background-color: var(--bg-color-settings-0);
+  backdrop-filter: blur(5px);
+}
+
+.shib-setting-default-frosted-glass .modal.mod-settings {
+  background-color: rgba(var(--base), 0.5);
+  box-shadow: 0 0 20px var(--bg-color-settings-1);
+  border: none;
+}
+
+.shib-setting-default-frosted-glass .vertical-tab-header {
+  background-color: rgba(var(--base), 0.5);
+}
+
+.shib-setting-default-frosted-glass .horizontal-tab-nav-item,
+.shib-setting-default-frosted-glass .vertical-tab-nav-item {
+  background-color: transparent;
+}
+
+.shib-setting-default-frosted-glass .horizontal-tab-nav-item.is-active,
+.shib-setting-default-frosted-glass .horizontal-tab-nav-item:hover,
+.shib-setting-default-frosted-glass .vertical-tab-nav-item.is-active,
+.shib-setting-default-frosted-glass .vertical-tab-nav-item:hover {
+  background-color: var(--bg-color-settings-2);
+  color: var(--text-normal);
+  font-weight: 700;
+}
+
+.shib-setting-default-frosted-glass .horizontal-tab-content,
+.shib-setting-default-frosted-glass .vertical-tab-content {
+  background-color: rgba(var(--base), 1);
+}

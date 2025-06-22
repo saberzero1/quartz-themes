@@ -1,0 +1,46 @@
+.separate-color-scheme.dm-color-scheme-custom.theme-dark {
+  --color-base-00: var(--color-scheme-custom-background-primary, #372d29);
+  --color-base-05: var(--color-scheme-custom-background-secondary-alt, #413632);
+  --color-base-10: var(--color-scheme-custom-background-primary-alt, #2b2723);
+  --color-base-20: var(--color-scheme-custom-background-secondary, #413632);
+  --color-base-25: var(
+    --color-scheme-custom-background-modifier-form-field,
+    #2b2723
+  );
+  --color-base-30: var(
+    --color-scheme-custom-background-modifier-border,
+    #504431
+  );
+  --color-base-35: var(
+    --color-scheme-custom-background-modifier-border-hover,
+    #645743
+  );
+  --color-base-40: var(
+    --color-scheme-custom-background-modifier-border-focus,
+    #504431
+  );
+  --color-base-50: var(--color-scheme-custom-text-faint, #868074);
+  --color-base-70: var(--color-scheme-custom-text-muted, #b2a699);
+  --color-base-100: var(--color-scheme-custom-text-normal, #ccc2b7);
+  --background-modifier-message: var(
+    --color-scheme-custom-tooltip-notice-background-color,
+    #281f1b
+  );
+  --color-accent: var(--color-scheme-custom-color-accent, #ba945f);
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: var(--color-scheme-custom-color-accent-hover, #e0ba86);
+  --titlebar-background-focused: var(--color-base-20);
+  --activeline: var(--color-scheme-custom-activeline, #51454140);
+  --text-selection: var(--color-scheme-custom-text-selection, #6154508f);
+  --color-bold: var(--color-scheme-custom-bold, --accent);
+  --color-italic: var(--color-scheme-custom-italic, #e77a59);
+  --text-highlight-bg: var(--color-scheme-custom-highlight-bg, #926b22e6);
+  --heading-formatting-color: var(
+    --color-scheme-custom-heading-formatting-color,
+    #c72626
+  );
+  --in-between-background: var(
+    --color-scheme-custom-in-between-background,
+    #2e2420
+  );
+}

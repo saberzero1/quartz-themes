@@ -1,0 +1,29 @@
+[data-task='0'],
+[data-task='1'],
+[data-task='2'],
+[data-task='3'],
+[data-task='4'],
+[data-task='5'],
+[data-task='6'],
+[data-task='7'],
+[data-task='8'],
+[data-task='9'] {
+  --text-normal: var(--background-primary);
+  transition:
+    background-color 0.2s,
+    background 0.2s,
+    border-radius 0.2s;
+}
+[data-task='0']::selection,
+[data-task='1']::selection,
+[data-task='2']::selection,
+[data-task='3']::selection,
+[data-task='4']::selection,
+[data-task='5']::selection,
+[data-task='6']::selection,
+[data-task='7']::selection,
+[data-task='8']::selection,
+[data-task='9']::selection {
+  background-color: rgba(var(--ctp-crust), 0.2);
+  background: rgba(var(--ctp-crust), 0.2);
+}

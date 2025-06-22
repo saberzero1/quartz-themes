@@ -1,0 +1,19 @@
+.theme-anytype.theme-dark .callout {
+  background-color: rgba(var(--callout-color), 0.3);
+}
+.theme-anytype.theme-dark {
+  color-scheme: dark;
+  --background-modifier-border: #323130;
+  --highlight-mix-blend-mode: lighten;
+  --color-base-00: #21201e;
+  --color-base-10: #32312f;
+  --color-base-20: rgb(28, 26, 23);
+  --color-base-25: #21201e;
+  --color-base-30: #2e2c29;
+  --color-base-35: #484643;
+  --color-base-40: #605d5a;
+  --color-base-50: #7b7974;
+  --color-base-60: #9c9994;
+  --color-base-70: #aeaba6;
+  --color-base-100: #ffffff;
+}

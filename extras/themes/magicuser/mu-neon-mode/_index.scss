@@ -1,20 +1,209 @@
-.mu-neon-mode {
-  --mu-neon-h1-color: 0, 127, 255;
-  --mu-neon-h2-color: 197, 71, 255;
-  --mu-neon-h3-color: 235, 152, 0;
-  --mu-neon-h4-color: 0, 192, 0;
-  --mu-neon-h5-color: 177, 0, 0;
-  --mu-neon-h6-color: 130, 130, 0;
-  --mu-neon-h1: rgb(var(--mu-neon-h1-color));
-  --mu-neon-h1-glow: rgba(var(--mu-neon-h1-color), 0.7);
-  --mu-neon-h2: rgb(var(--mu-neon-h2-color));
-  --mu-neon-h2-glow: rgba(var(--mu-neon-h2-color), 0.7);
-  --mu-neon-h3: rgb(var(--mu-neon-h3-color));
-  --mu-neon-h3-glow: rgba(var(--mu-neon-h3-color), 0.7);
-  --mu-neon-h4: rgb(var(--mu-neon-h4-color));
-  --mu-neon-h4-glow: rgba(var(--mu-neon-h4-color), 0.7);
-  --mu-neon-h5: rgb(var(--mu-neon-h5-color));
-  --mu-neon-h5-glow: rgba(var(--mu-neon-h5-color), 0.7);
-  --mu-neon-h6: rgb(var(--mu-neon-h6-color));
-  --mu-neon-h6-glow: rgba(var(--mu-neon-h6-color), 0.7);
+.mu-neon-mode .markdown-reading-view h1 a,
+.mu-neon-mode .markdown-reading-view h1,
+.mu-neon-mode .cm-header.cm-header-1 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h1-glow) !important;
+  color: var(--mu-neon-h1) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h2 a,
+.mu-neon-mode .markdown-reading-view h2,
+.mu-neon-mode .cm-header.cm-header-2 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h2-glow) !important;
+  color: var(--mu-neon-h2) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h3 a,
+.mu-neon-mode .markdown-reading-view h3,
+.mu-neon-mode .cm-header.cm-header-3 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h3-glow) !important;
+  color: var(--mu-neon-h3) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h4 a,
+.mu-neon-mode .markdown-reading-view h4,
+.mu-neon-mode .cm-header.cm-header-4 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h4-glow) !important;
+  color: var(--mu-neon-h4) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h5 a,
+.mu-neon-mode .markdown-reading-view h5,
+.mu-neon-mode .cm-header.cm-header-5 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h5-glow) !important;
+  color: var(--mu-neon-h5) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h6 a,
+.mu-neon-mode .markdown-reading-view h6,
+.mu-neon-mode .cm-header.cm-header-6 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h6-glow) !important;
+  color: var(--mu-neon-h6) !important;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h1::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h1-color);
+  margin-bottom: 4px;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h2::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h2-color);
+  margin-bottom: 4px;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h3::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h3-color);
+  margin-bottom: 4px;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h4::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-4::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h4-color);
+  margin-bottom: 4px;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h5::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-5::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h5-color);
+  margin-bottom: 4px;
+}
+
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h6::after,
+body:not(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-6::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--h6-color);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h1::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h1-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h1-color), 0.7);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h2::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h2-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h2-color), 0.7);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h3::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h3-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h3-color), 0.7);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h4::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-4::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h4-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h4-color), 0.7);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h5::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-5::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h5-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h5-color), 0.7);
+  margin-bottom: 4px;
+}
+
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .markdown-reading-view
+  h6::after,
+body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
+  .HyperMD-header.HyperMD-header-6::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(var(--mu-neon-h6-color));
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h6-color), 0.7);
+  margin-bottom: 4px;
 }

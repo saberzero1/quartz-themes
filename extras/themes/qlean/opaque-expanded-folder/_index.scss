@@ -1,0 +1,6 @@
+body.opaque-expanded-folder
+  .workspace
+  .tree-item:not(.is-collapsed)
+  > .tree-item-self {
+  opacity: 1;
+}

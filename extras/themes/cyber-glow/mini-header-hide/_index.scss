@@ -1,0 +1,59 @@
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-1
+  )::before {
+  content: 'H1';
+  margin-top: calc(var(--h1-size) - 0.1em);
+  color: var(--text-accent);
+}
+
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-2
+  )::before {
+  content: 'H2';
+  margin-top: calc(var(--h2-size) - 0.2em);
+  color: var(--h2-glow);
+}
+
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-3
+  )::before {
+  content: 'H3';
+  margin-top: calc(var(--h3-size) - 0.2em);
+  color: var(--h3-glow);
+}
+
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-4
+  )::before {
+  content: 'H4';
+  margin-top: calc(var(--h4-size) - 0.3em);
+  color: var(--h4-glow);
+}
+
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-5
+  )::before {
+  content: 'H5';
+  margin-top: calc(var(--h5-size) - 0.4em);
+  color: var(--h5-glow);
+}
+
+.mini-header-hide
+  .markdown-source-view.mod-cm6
+  :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(
+    .cm-header-6
+  )::before {
+  content: 'H6';
+  margin-top: calc(var(--h6-size) - 0.4em);
+  color: var(--h6-glow);
+}

@@ -1,39 +1,27 @@
-.low-contrast-light {
-  --theme-sat: 30%;
-  --theme-sat-secondary: 30%;
-  --base-c: 95%;
-}
-
-.high-contrast-light {
-  --base-c: 93.5%;
-}
-
 .theme-catpp {
-  --base-c: 94%;
-  --color-red: hsl(347, 87%, 44%);
-  --color-red-rgb: 210, 15, 57;
-  --color-orange: #dd7878;
-  --color-orange-rgb: 220, 138, 120;
-  --color-yellow: #df8e1d;
-  --color-yellow-rgb: 223, 142, 29;
-  --color-green: #179299;
-  --color-green-rgb: 23, 146, 153;
-  --color-cyan: #04a5e5;
-  --color-cyan-rgb: 4, 165, 229;
-  --color-blue: #1e66f5;
-  --color-blue-rgb: 30, 102, 245;
-  --color-purple: #637afa;
-  --color-purple-rgb: 114, 135, 253;
-  --color-pink: #ea76cb;
-  --color-pink-rgb: 234, 118, 203;
-  --rose: #dc8a78;
+  --theme-tint: 220;
+  --theme-sat: 45%;
+  --theme-tint-secondary: 220;
+  --theme-sat-secondary: 35%;
+  --theme-tint-text: 234;
+  --theme-sat-text: 24%;
+  --background-modifier-hover: rgba(var(--color-purple-rgb), 0.25);
+  --checkbox-color: var(--color-green);
+  --checkbox-color-hover: var(--color-cyan);
+  --accent-h: 231 !important;
+  --accent-s: 97% !important;
+  --accent-l: 72% !important;
 }
 
-.colorful-headings-s {
-  --h1-color: var(--color-purple);
-  --h2-color: var(--color-blue);
-  --h3-color: var(--color-cyan);
-  --h4-color: var(--color-green);
-  --h5-color: #40a02b;
-  --h6-color: var(--color-orange);
+.theme-catpp:not(.red-accent):not(.orange-accent):not(.yellow-accent):not(
+    .green-accent
+  ):not(.cyan-accent):not(.blue-accent):not(.purple-accent):not(.pink-accent) {
+  --color-accent-1: var(--color-purple);
+  --color-accent-2: var(--color-pink);
+  --interactive-accent: var(--rose);
+  --text-on-accent: var(--background-primary) !important;
+  --text-accent: var(--color-green);
+  --link-color: var(--color-purple);
+  --link-color-hover: var(--color-pink);
+  --link-unresolved-color: var(--color-cyan);
 }

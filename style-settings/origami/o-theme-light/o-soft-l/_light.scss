@@ -1,0 +1,55 @@
+.o-soft-l.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 239, 121, 106;
+  --color-red: #ef796a;
+  --color-red-hsl: 7, 81%, 68%;
+  --color-green-rgb: 140, 179, 105;
+  --color-green: #8cb369;
+  --color-green-hsl: 92, 33%, 56%;
+  --color-orange-rgb: 255, 127, 81;
+  --color-orange: #ff7f51;
+  --color-orange-hsl: 16, 100%, 66%;
+  --color-yellow-rgb: 237, 174, 73;
+  --color-yellow: #edae49;
+  --color-yellow-hsl: 37, 82%, 61%;
+  --color-cyan-rgb: 15, 189, 168;
+  --color-cyan: #0fbda8;
+  --color-cyan-hsl: 173, 85%, 40%;
+  --color-blue-rgb: 120, 139, 255;
+  --color-blue: #788bff;
+  --color-blue-hsl: 232, 100%, 74%;
+  --color-purple-rgb: 147, 129, 255;
+  --color-purple: #9381ff;
+  --color-purple-hsl: 249, 100%, 75%;
+  --color-pink-rgb: 251, 99, 118;
+  --color-pink: #fb6376;
+  --color-pink-hsl: 353, 95%, 69%;
+  --canvas-color: 10, 10, 10;
+  --color-base-00: #f7f4e8;
+  /* note bg */
+  --color-base-05: #ece8d8;
+  /* unfocused tab & dock & modal */
+  --color-base-10: #e6e1cf;
+  /* ribbon */
+  --color-base-20: #dfdbcd;
+  /* active tab & secondary areas & tab border & selected */
+  --color-base-25: #cfc9b2;
+  /* hightlighted area border */
+  --color-base-30: #dad6ca;
+  /*  good ole border */
+  --color-base-35: #c7b8a9;
+  /* tab/clickable icon hover border */
+  --color-base-40: #dacdc1;
+  /* tab/clickable icon hover bg */
+  --color-base-50: #7c7062;
+  /* text-faint/folder icons */
+  --color-base-60: #92887c;
+  /* text-muted */
+  --color-base-70: #6e655b;
+  /* text-normal */
+  --color-base-100: #433c34;
+  /* text-header/title */
+}

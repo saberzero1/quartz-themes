@@ -515,7 +515,7 @@ div.callout-icon {
   }
 }
 
-.callout[data-callout="note"] {
+.callout[data-callout='note'] {
   background-color: var(--bg-hard-accent);
 
   /* --callout-icon: code-xml; */
@@ -538,7 +538,7 @@ div.callout-icon {
     vertical-align: middle;
 } */
 
-[data-callout="info"] {
+[data-callout='info'] {
   color: var(--text);
   background-color: var(--orange-rgba);
 }
@@ -547,15 +547,15 @@ div.callout-icon {
     background-color: var(--red-rgba);
 } */
 
-[data-callout="success"] {
+[data-callout='success'] {
   background-color: var(--green-rgba);
 }
 
-[data-callout="warning"] {
+[data-callout='warning'] {
   background-color: var(--yellow-rgba);
 }
 
-[data-callout="tip"] {
+[data-callout='tip'] {
   background-color: var(--blue-rgba);
 }
 

@@ -1,0 +1,30 @@
+.mu-tabs-square
+  .workspace-split:not(.mod-right-split, .mod-left-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::after,
+.mu-tabs-square
+  .workspace-split:not(.mod-right-split, .mod-left-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::before {
+  display: none;
+}
+
+.mu-tabs-square
+  .workspace-split:not(.mod-right-split, .mod-left-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  --tab-radius-active: 0;
+  --tab-radius: 0;
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-titlebar-background);
+}
+
+.mu-tabs-square
+  .workspace-split:not(.mod-right-split, .mod-left-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active {
+  --tab-radius-active: 0;
+  --tab-radius: 0;
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-default-mode-border-color);
+}

@@ -1,0 +1,128 @@
+body:not(.is-mobile).hover-scrollbars .markdown-embed:not(.canvas-node-content),
+body:not(.is-mobile).hover-scrollbars
+  .popover.hover-popover
+  .markdown-embed
+  .markdown-embed {
+  padding: 0 0 0 1em;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .workspace-leaf-content .view-content,
+    .search-result-container,
+    .git-view-body,
+    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .markdown-preview-view,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .markdown-embed-content,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .tag-container
+  )::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px !important;
+  background-color: transparent !important;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  .community-modal-info
+  div[class^='community-modal-info-'] {
+  color: var(--text-normal);
+}
+body.body:not(.is-mobile).hover-scrollbars
+  .canvas-node-content
+  .markdown-preview-view {
+  overflow-y: auto !important;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .view-content,
+    .search-result-container,
+    .git-view-body,
+    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .markdown-preview-view,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .markdown-embed-content,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .tag-container
+  ) {
+  color: transparent;
+  transition: color var(--anim-duration-fast) var(--anim-motion-smooth);
+  overflow-y: overlay;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .view-content,
+    .search-result-container,
+    .git-view-body,
+    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .markdown-preview-view,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .markdown-embed-content,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .tag-container
+  ):hover {
+  color: var(--scrollbar-thumb-bg);
+}
+body.body:not(.is-mobile).hover-scrollbars
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .view-content,
+    .search-result-container,
+    .git-view-body,
+    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .markdown-preview-view,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .community-modal-search-results-wrapper,
+    .tag-container
+  )
+  > :not(h1, h2, h3, h4, h5, h6) {
+  color: var(--text-normal);
+}
+body.body:not(.is-mobile).hover-scrollbars
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .view-content,
+    .search-result-container,
+    .git-view-body,
+    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .markdown-preview-view,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .markdown-embed-content,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .tag-container
+  )::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-active-thumb-bg) !important;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  .popover.hover-popover
+  > .markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view {
+  color: transparent !important;
+}
+body.body:not(.is-mobile).hover-scrollbars
+  .popover.hover-popover
+  > .markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view:hover {
+  color: var(--scrollbar-thumb-bg) !important;
+}

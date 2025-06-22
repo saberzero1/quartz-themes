@@ -1,0 +1,13 @@
+body:not(.default-loading-page).loading-page-style-default
+  .progress-bar-message:before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  position: relative;
+  animation: shape 2.5s infinite alternate;
+  visibility: visible !important;
+  display: block;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}

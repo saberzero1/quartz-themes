@@ -1,0 +1,141 @@
+.a-theme-apatheia {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-orange: #e9973f;
+  --color-yellow: #e0de71;
+  --color-cyan: #53dfdd;
+  --color-blue: #027aff;
+  --color-purple: #a882ff;
+  --color-pink: #fa99cd;
+  --color-base-00: var(--ap-color-dp1);
+  --color-base-10: var(--ap-color-dp2);
+  --color-base-20: var(--ap-color-dp0);
+  --color-base-25: var(--ap-color-dp0);
+  --color-base-30: var(--ap-color-dp0);
+  --color-base-35: var(--ap-color-dp4);
+  --color-base-40: var(--ap-color-dp0);
+  --color-base-50: var(--ap-color-dp6);
+  --color-base-60: var(--ap-color-dp7);
+  --color-base-70: var(--ap-color-dp10);
+  --color-base-100: var(--ap-color-dp11);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.8%)
+  );
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --tag-background: var(--ap-color-tag-background);
+  --tag-color: var(--ap-color-tag-text);
+  --icon-color-focused: var(--color-accent);
+  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-d) + 12%)
+  );
+  --h1-color: var(--ap-h1);
+  --h2-color: var(--ap-h2);
+  --h3-color: var(--ap-h3);
+  --h4-color: var(--ap-h4);
+  --h5-color: var(--ap-h5);
+  --h6-color: var(--ap-h6);
+  --strong-color: var(--ap-color-strong);
+  --em-color: var(--ap-color-italic);
+  --quote-color: var(--ap-color-quote);
+  --tag-background-color-l: #bde1d3;
+  --tag-font-color-l: #1d694b;
+  --tag-background-color-d: #b3e1bd;
+  --tag-font-color-d: #ffffff;
+  --font-text-theme: var(--ap-font-text);
+  --font-editor-theme: var(--ap-font-text);
+  --font-monospace-theme: var(--ap-font-monospace);
+  --font-interface-theme: var(--ap-font-interface);
+  --checkbox-radius: 30%;
+  --link-external-decoration: underline;
+  --link-decoration: underline;
+  --scrollbar-bg: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 15%),
+    1
+  );
+  --scrollbar-thumb-bg: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 15%),
+    1
+  );
+  --scrollbar-active-thumb-bg: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.4
+  );
+  --base-h: var(--ap-base0-h);
+  --base-s: var(--ap-base0-s);
+  --base-l: var(--ap-base0-l);
+  --base-d: var(--ap-base0-d);
+  --accent-h: var(--ap-primary-h);
+  --accent-s: var(--ap-primary-s);
+  --accent-l: var(--ap-primary-l);
+  --accent-d: var(--ap-primary-d);
+  --blue: #2e80f2;
+  --pink: #ff82b2;
+  --green: #3eb4bf;
+  --yellow: #e5b567;
+  --orange: #e87d3e;
+  --red: #e83e3e;
+  --purple: #9e86c8;
+  --tab-divider-color: var(--color-base-10);
+  --tab-text-color: var(--color-base-70);
+  --radius-s: var(--ap-radius-s);
+  --radius-m: var(--ap-radius-m);
+  --radius-l: var(--ap-radius-l);
+  --radius-xl: var(--ap-radius-xl);
+  --graph-controls-width: 240px;
+  --graph-text: var(--text-normal);
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node: var(--text-muted);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-focused: var(--text-accent);
+  --graph-node-tag: var(--ap-secondary);
+  --graph-node-attachment: var(--color-yellow);
+}

@@ -1,0 +1,58 @@
+body.glassRoboCode {
+  /* Code block */
+  --code-white-space: pre-wrap;
+  --code-size: var(--font-smallest);
+  --code-comment: #4f4e4e;
+  --code-normal: var(--text-muted);
+  --code-function: #8cd30c;
+  --code-important: #b62b2b;
+  --code-keyword: #b62b2b;
+  --code-operator: #7d00b6;
+  --code-property: #2bb668;
+  --code-punctuation: #b62b2b;
+  --code-string: #a7b2b;
+  --code-tag: var(--color-red);
+  --code-value: #957425;
+  --code-background: var(--s-bg-code-svg);
+  --code-border: 1px dashed #4e4f4e42;
+}
+
+body.glassRoboCode
+  .cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ),
+body.glassRoboCode .cm-s-obsidian span.cm-inline-code,
+body.glassRoboCode :not(pre) > code {
+  background-color: rgba(70, 67, 67, 0.8705882353) !important;
+  border-radius: 3px;
+  padding: 0 0.25em;
+}
+
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-bg {
+  background: rgba(13, 22, 29, 0.568627451);
+}
+
+body.glassRoboCode .markdown-rendered pre {
+  border: var(--code-border);
+}
+
+body.glassRoboCode :not(pre) > code[class*='language-'],
+body.glassRoboCode pre[class*='language-'] {
+  background-color: rgba(13, 22, 29, 0.568627451);
+}
+
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top: var(--code-border);
+}
+
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: var(--code-border);
+}
+
+body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-left: var(--code-border);
+  border-right: var(--code-border);
+}

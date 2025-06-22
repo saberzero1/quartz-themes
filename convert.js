@@ -5,8 +5,8 @@ import {
   getRuleDeclarations,
   getAllDarkThemeRules,
   getAllLightThemeRules,
-} from "./util/postcss.mjs";
-import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs";
+} from './util/postcss.mjs';
+import { inlineScssUseRulesAndClean } from './util/at-use-embed.mjs';
 import {
   readJsonFileAsDictionary,
   getValueFromDictionary,
@@ -26,24 +26,24 @@ import {
   replaceInFile,
   applyRuleToString,
   generateFundingLinks,
-} from "./util/util.mjs";
+} from './util/util.mjs';
 import {
   extractStyleSettings,
   extractClassToggleCss,
   replaceVariableValue,
-} from "./util/postcss-style-settings.mjs";
-import { themes, usedRules, themeToTest, testMode } from "./config.mjs";
-import { prune } from "./util/prune-unused.mjs";
+} from './util/postcss-style-settings.mjs';
+import { themes, usedRules, themeToTest, testMode } from './config.mjs';
+import { prune } from './util/prune-unused.mjs';
 import {
   writeIndex,
   cleanCSS,
   writeStyleSettings,
   writePrettier,
-} from "./util/writer.mjs";
-import * as fs from "fs";
-import * as path from "path";
+} from './util/writer.mjs';
+import * as fs from 'fs';
+import * as path from 'path';
 
-let singleThemeName = "";
+let singleThemeName = '';
 
 const start = Date.now();
 
@@ -62,22 +62,22 @@ const start = Date.now();
 // STEP 1
 const args = getCommandLineArgs();
 
-if (args[0] === "ATOMIZE") {
+if (args[0] === 'ATOMIZE') {
   if (
     fs.existsSync(`./converted_app.css`) ||
     fs.existsSync(`./converted_app_extracted.css`)
   ) {
     throw new Error(
-      "Converted app.css already exists. Please remove it before running the script again.",
+      'Converted app.css already exists. Please remove it before running the script again.',
     );
   }
 }
 
-ensureDirectoryExists("./style-settings");
+ensureDirectoryExists('./style-settings');
 
-const obsidianFolder = "./obsidian";
-const atomicFolder = "./atomic";
-const styleSettingsFolder = "./style-settings";
+const obsidianFolder = './obsidian';
+const atomicFolder = './atomic';
+const styleSettingsFolder = './style-settings';
 const folders = testMode
   ? [themeToTest]
   : listFoldersInDirectory(obsidianFolder);
@@ -85,17 +85,17 @@ const folders = testMode
 const manifestCollection = [];
 
 // STEP 2
-if (singleThemeName === "") {
+if (singleThemeName === '') {
   folders.forEach((folder) => {
     manifestCollection.push(
-      readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"),
+      readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, 'manifest.json'),
     );
   });
-} else if (singleThemeName !== "") {
+} else if (singleThemeName !== '') {
   manifestCollection.push(
     readJsonFileAsDictionary(
       `${obsidianFolder}/${singleThemeName}`,
-      "manifest.json",
+      'manifest.json',
     ),
   );
 }
@@ -111,9 +111,9 @@ manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`);
   //ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
-  if (args[0] === "INIT") {
+  if (args[0] === 'INIT') {
     ensureDirectoryExists(`./extras/themes/${getTheme(manifest)}`);
-  } else if (args[0] !== "") {
+  } else if (args[0] !== '') {
     singleThemeName = args[0];
   }
 });
@@ -147,7 +147,7 @@ manifestCollection.forEach((manifest) => {
     // Clear the style settings directories.
     clearDirectories(`./extras/themes/${getTheme(manifest)}`)
   }*/
-  if (args[0] === "INIT") {
+  if (args[0] === 'INIT') {
     copyFileToDirectory(
       `./extras/_index.scss`,
       `./extras/themes/${getTheme(manifest)}`,
@@ -157,7 +157,7 @@ manifestCollection.forEach((manifest) => {
 
 // _dark.scss
 manifestCollection.forEach((manifest) => {
-  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+  if (isDarkTheme(getValueFromDictionary(manifest, 'name'))) {
     copyFileToDirectory(
       `./templates/_dark.scss`,
       `./themes/${getTheme(manifest)}`,
@@ -167,7 +167,7 @@ manifestCollection.forEach((manifest) => {
 
 // _light.scss
 manifestCollection.forEach((manifest) => {
-  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+  if (isLightTheme(getValueFromDictionary(manifest, 'name'))) {
     copyFileToDirectory(
       `./templates/_light.scss`,
       `./themes/${getTheme(manifest)}`,
@@ -178,11 +178,11 @@ manifestCollection.forEach((manifest) => {
 // fonts
 manifestCollection.forEach((manifest) => {
   //copyFileToDirectory(`./templates/_fonts.scss`, `./themes/${getTheme(manifest)}`)
-  const fontExtras = getFonts(getValueFromDictionary(manifest, "name"));
+  const fontExtras = getFonts(getValueFromDictionary(manifest, 'name'));
   fontExtras.forEach((font) => {
     copyFileToDirectory(
       `./extras/fonts/${font}.scss`,
-      `./themes/${getTheme(manifest)}/extras/fonts${font.includes("/") ? `/${font.replace(/\/[^/]+$/, "")}` : ""}`,
+      `./themes/${getTheme(manifest)}/extras/fonts${font.includes('/') ? `/${font.replace(/\/[^/]+$/, '')}` : ''}`,
     );
   });
 });
@@ -194,7 +194,7 @@ manifestCollection.forEach((manifest) => {
 
 // extras
 manifestCollection.forEach((manifest) => {
-  const themeExtras = getExtras(getValueFromDictionary(manifest, "name"));
+  const themeExtras = getExtras(getValueFromDictionary(manifest, 'name'));
   themeExtras.forEach((extra) => {
     copyFileToDirectory(
       `./extras/${extra}.scss`,
@@ -214,33 +214,33 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./themes/${getTheme(manifest)}/README.md`,
-    "%OBSIDIAN_THEME_NAME%",
-    getValueFromDictionary(manifest, "name"),
+    '%OBSIDIAN_THEME_NAME%',
+    getValueFromDictionary(manifest, 'name'),
   );
 });
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./themes/${getTheme(manifest)}/README.md`,
-    "%OBSIDIAN_THEME_NAME_SANITIZED%",
+    '%OBSIDIAN_THEME_NAME_SANITIZED%',
     getTheme(manifest),
   );
 });
 manifestCollection.forEach((manifest) => {
   const authorValue =
-    getValueFromDictionary(manifest, "author") !== ""
-      ? getValueFromDictionary(manifest, "author")
-      : "No author provided";
+    getValueFromDictionary(manifest, 'author') !== ''
+      ? getValueFromDictionary(manifest, 'author')
+      : 'No author provided';
   const authorUrlValue =
-    getValueFromDictionary(manifest, "authorUrl") !== ""
-      ? getValueFromDictionary(manifest, "authorUrl")
-      : "";
+    getValueFromDictionary(manifest, 'authorUrl') !== ''
+      ? getValueFromDictionary(manifest, 'authorUrl')
+      : '';
   const authorString =
-    authorUrlValue !== ""
+    authorUrlValue !== ''
       ? `<a href="${authorUrlValue}" target="_blank" rel="noopener noreferrer">${authorValue}</a>`
       : authorValue;
   replaceInFile(
     `./themes/${getTheme(manifest)}/README.md`,
-    "%OBSIDIAN_THEME_AUTHOR%",
+    '%OBSIDIAN_THEME_AUTHOR%',
     authorString,
   );
 });
@@ -248,7 +248,7 @@ manifestCollection.forEach((manifest) => {
   const result = generateFundingLinks(manifest);
   replaceInFile(
     `./themes/${getTheme(manifest)}/README.md`,
-    "%OBSIDIAN_THEME_AUTHOR_DONATE_URL%",
+    '%OBSIDIAN_THEME_AUTHOR_DONATE_URL%',
     result,
   );
 });
@@ -256,8 +256,8 @@ manifestCollection.forEach((manifest) => {
 // STEP 6
 // _index.scss
 manifestCollection.forEach((manifest) => {
-  const themeNameLocal = getValueFromDictionary(manifest, "name");
-  let extras = "";
+  const themeNameLocal = getValueFromDictionary(manifest, 'name');
+  let extras = '';
   if (isDarkTheme(themeNameLocal)) {
     extras += `\n@use "dark";`;
   }
@@ -282,18 +282,18 @@ manifestCollection.forEach((manifest) => {
   );
 });
 manifestCollection.forEach((manifest) => {
-  const themeNameLocal = getValueFromDictionary(manifest, "name");
+  const themeNameLocal = getValueFromDictionary(manifest, 'name');
   console.log(`Processing theme: ${themeNameLocal}`);
-  if (args[0] === "ATOMIZE" || testMode) {
+  if (args[0] === 'ATOMIZE' || testMode) {
     if (!testMode) {
       if (!fs.existsSync(`./converted_app.css`)) {
-        const obsidianCSS = fs.readFileSync("./app.css", "utf8");
-        const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
+        const obsidianCSS = fs.readFileSync('./app.css', 'utf8');
+        const overridesCSS = fs.readFileSync('./overrides_app.css', 'utf8');
         const result = cleanCSS(obsidianCSS, overridesCSS);
-        writePrettier(`./converted_app.css`, result, "utf8");
+        writePrettier(`./converted_app.css`, result, 'utf8');
         // Write extracted version to speed up later processing
-        const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
-        let extractResult = "";
+        const cssAtomicString = fs.readFileSync(`./converted_app.css`, 'utf8');
+        let extractResult = '';
         for (const rule of usedRules) {
           const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`;
           extractResult += applyRuleToString(
@@ -305,20 +305,20 @@ manifestCollection.forEach((manifest) => {
         }
         extractResult = combineIdenticalSelectors(extractResult);
         extractResult = removeEmptyRules(extractResult);
-        extractResult = extractResult.replace(/\n+/g, "\n"); // Remove extra newlines
-        extractResult = extractResult.replace(/^\}$/gm, "}\n"); // Add extra newlines between rules
-        writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
+        extractResult = extractResult.replace(/\n+/g, '\n'); // Remove extra newlines
+        extractResult = extractResult.replace(/^\}$/gm, '}\n'); // Add extra newlines between rules
+        writePrettier(`./converted_app_extracted.css`, extractResult, 'utf8');
       }
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`);
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`;
     const atomicExctractedFile = `./atomic/${getTheme(manifest)}/theme_extracted.css`;
-    const cssFile = `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`;
-    const cssString = fs.readFileSync(cssFile, "utf8");
-    const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8");
+    const cssFile = `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`;
+    const cssString = fs.readFileSync(cssFile, 'utf8');
+    const obsidianCSS = fs.readFileSync('./converted_app.css', 'utf8');
     const obsidianExtractedCSS = fs.readFileSync(
-      "./converted_app_extracted.css",
-      "utf8",
+      './converted_app_extracted.css',
+      'utf8',
     );
     let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString));
 
@@ -331,90 +331,90 @@ manifestCollection.forEach((manifest) => {
       clearDirectories(`./style-settings/${getTheme(manifest)}`);
       // Extract style settings from the main theme
       styleSettings.forEach((styleSettingsSet) => {
-        const styleSets = styleSettingsSet["settings"];
+        const styleSets = styleSettingsSet['settings'];
         styleSets.forEach((style) => {
-          let styleRulesCSS = ["", "", ""];
-          const ignoreStyleTypes = ["heading", "info-text"];
+          let styleRulesCSS = ['', '', ''];
+          const ignoreStyleTypes = ['heading', 'info-text'];
 
-          if (ignoreStyleTypes.includes(style["type"])) {
+          if (ignoreStyleTypes.includes(style['type'])) {
             // Skip styles that are not relevant for CSS generation
             console.warn(
-              `Skipping style setting: ${style["id"]} of type ${style["type"]}`,
+              `Skipping style setting: ${style['id']} of type ${style['type']}`,
             );
             return;
           }
 
           console.log(
-            `Processing style setting: ${style["id"]} of type ${style["type"]}`,
+            `Processing style setting: ${style['id']} of type ${style['type']}`,
           );
 
           // Write the style setting to the CSS string
-          if (style["type"] === "variable-text") {
+          if (style['type'] === 'variable-text') {
             // Use the default text
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
-              style["id"],
-              (style["quotes"] ?? false)
-                ? `'${style["default"]}'`
-                : style["default"],
+              style['id'],
+              (style['quotes'] ?? false)
+                ? `'${style['default']}'`
+                : style['default'],
             );
-          } else if (style["type"] === "variable-number") {
+          } else if (style['type'] === 'variable-number') {
             // Use the default number
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
+              style['id'],
+              style['default'] + (style['format'] ?? ''),
             );
-          } else if (style["type"] === "variable-number-slider") {
+          } else if (style['type'] === 'variable-number-slider') {
             // Use the default number
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
+              style['id'],
+              style['default'] + (style['format'] ?? ''),
             );
-          } else if (style["type"] === "variable-select") {
+          } else if (style['type'] === 'variable-select') {
             // Use the default select value
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
+              style['id'],
+              style['default'] + (style['format'] ?? ''),
             );
-          } else if (style["type"] === "variable-color") {
+          } else if (style['type'] === 'variable-color') {
             // Use the default color
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
+              style['id'],
+              style['default'] + (style['format'] ?? ''),
             );
-          } else if (style["type"] === "variable-themed-color") {
+          } else if (style['type'] === 'variable-themed-color') {
             // Use the default themed colors
             // This is a special case where we need to handle both light and dark themes
             // for this, we use the `light-dark()` function in the CSS
             result = replaceVariableValue(
               result,
-              style["id"],
-              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+              style['id'],
+              `light-dark(${style['default-light']}, ${style['default-dark']})`,
             );
-          } else if (style["type"] === "class-toggle") {
+          } else if (style['type'] === 'class-toggle') {
             // Extract the class toggle CSS
-            styleRulesCSS = extractClassToggleCss(cssString, style["id"]);
-            writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"]);
-          } else if (style["type"] === "class-select") {
+            styleRulesCSS = extractClassToggleCss(cssString, style['id']);
+            writeStyleSettings(styleRulesCSS, getTheme(manifest), style['id']);
+          } else if (style['type'] === 'class-select') {
             // Extract the class for every option in the select
-            const classSelectOptions = style["options"];
+            const classSelectOptions = style['options'];
             classSelectOptions.forEach((option) => {
-              const className = option["value"];
+              const className = option['value'];
               if (className) {
                 styleRulesCSS = extractClassToggleCss(cssString, className);
                 writeStyleSettings(
                   styleRulesCSS,
                   getTheme(manifest),
-                  style["id"],
+                  style['id'],
                   className,
                 );
               } else {
@@ -425,7 +425,7 @@ manifestCollection.forEach((manifest) => {
             });
           } else {
             console.warn(
-              `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
+              `Unknown style setting type: ${variationRules[style['id']]['type']} for ${style['id']}`,
             );
           }
         });
@@ -433,9 +433,9 @@ manifestCollection.forEach((manifest) => {
     }
 
     // Write the main theme CSS to the atomic file
-    writePrettier(atomicFile, result, "utf8");
+    writePrettier(atomicFile, result, 'utf8');
     // Write extracted version to speed up later processing
-    const cssAtomicString = fs.readFileSync(atomicFile, "utf8");
+    const cssAtomicString = fs.readFileSync(atomicFile, 'utf8');
     let extractResult = `${obsidianExtractedCSS}\n`;
     for (const rule of usedRules) {
       const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`;
@@ -448,28 +448,28 @@ manifestCollection.forEach((manifest) => {
     }
     extractResult = combineIdenticalSelectors(extractResult);
     extractResult = removeEmptyRules(extractResult);
-    extractResult = extractResult.replace(/\n+/g, "\n"); // Remove extra newlines
-    extractResult = extractResult.replace(/^\}$/gm, "}\n"); // Add extra newlines between rules
-    writePrettier(atomicExctractedFile, extractResult, "utf8");
+    extractResult = extractResult.replace(/\n+/g, '\n'); // Remove extra newlines
+    extractResult = extractResult.replace(/^\}$/gm, '}\n'); // Add extra newlines between rules
+    writePrettier(atomicExctractedFile, extractResult, 'utf8');
   }
   const useExtendedSyntax = getValueFromDictionary(
     manifest,
-    "use_extended_syntax",
+    'use_extended_syntax',
   )
-    ? "theme"
-    : "theme_extracted";
+    ? 'theme'
+    : 'theme_extracted';
   let themeName = getTheme(manifest);
   let themeCSS = fs.readFileSync(
     `${atomicFolder}/${themeName}/${useExtendedSyntax}.css`,
-    "utf8",
+    'utf8',
   );
   writeIndex(themeName, themeCSS);
   // _dark.scss and _light.scss
-  const darkValue = getRuleDeclarations(themeCSS, ".theme-dark");
-  const darkRules = getAllDarkThemeRules(themeCSS).join("\n");
-  const lightValue = getRuleDeclarations(themeCSS, ".theme-light");
-  const lightRules = getAllLightThemeRules(themeCSS).join("\n");
-  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+  const darkValue = getRuleDeclarations(themeCSS, '.theme-dark');
+  const darkRules = getAllDarkThemeRules(themeCSS).join('\n');
+  const lightValue = getRuleDeclarations(themeCSS, '.theme-light');
+  const lightRules = getAllLightThemeRules(themeCSS).join('\n');
+  if (isDarkTheme(getValueFromDictionary(manifest, 'name'))) {
     replaceInFile(
       `./themes/${themeName}/_dark.scss`,
       `//%%DARK%%`,
@@ -477,7 +477,7 @@ manifestCollection.forEach((manifest) => {
     );
     const darkInject = fs.readFileSync(
       `./themes/${themeName}/_dark.scss`,
-      "utf8",
+      'utf8',
     );
     replaceInFile(
       `./themes/${themeName}/_index.scss`,
@@ -485,7 +485,7 @@ manifestCollection.forEach((manifest) => {
       darkInject,
     );
   }
-  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+  if (isLightTheme(getValueFromDictionary(manifest, 'name'))) {
     replaceInFile(
       `./themes/${themeName}/_light.scss`,
       `//%%LIGHT%%`,
@@ -493,7 +493,7 @@ manifestCollection.forEach((manifest) => {
     );
     const lightInject = fs.readFileSync(
       `./themes/${themeName}/_light.scss`,
-      "utf8",
+      'utf8',
     );
     replaceInFile(
       `./themes/${themeName}/_index.scss`,
@@ -503,9 +503,9 @@ manifestCollection.forEach((manifest) => {
   }
 
   // Unset color-scheme for single mode themes
-  if (!isFullTheme(getValueFromDictionary(manifest, "name"))) {
+  if (!isFullTheme(getValueFromDictionary(manifest, 'name'))) {
     // light only
-    if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    if (isLightTheme(getValueFromDictionary(manifest, 'name'))) {
       replaceInFile(
         `./themes/${themeName}/_index.scss`,
         /\/\* START DARK \*\/.*?\/\* END DARK \*\//gms,
@@ -528,7 +528,7 @@ manifestCollection.forEach((manifest) => {
       );
     }
     // dark only
-    if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
+    if (isDarkTheme(getValueFromDictionary(manifest, 'name'))) {
       replaceInFile(
         `./themes/${themeName}/_index.scss`,
         /\/\* START LIGHT \*\/.*?\/\* END LIGHT \*\//gms,
@@ -554,23 +554,23 @@ manifestCollection.forEach((manifest) => {
     replaceInFile(
       `./themes/${themeName}/_index.scss`,
       /\[saved-theme\=\".*?\"\]/g,
-      "",
+      '',
     );
   }
 
   // Remove remaining comments
-  replaceInFile(`./themes/${themeName}/_index.scss`, /\/\/%%[^%]+%%/g, "");
-  if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${themeName}/_dark.scss`, /\/\/%%[^%]+%%/g, "");
+  replaceInFile(`./themes/${themeName}/_index.scss`, /\/\/%%[^%]+%%/g, '');
+  if (isDarkTheme(getValueFromDictionary(manifest, 'name'))) {
+    replaceInFile(`./themes/${themeName}/_dark.scss`, /\/\/%%[^%]+%%/g, '');
   }
-  if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(`./themes/${themeName}/_light.scss`, /\/\/%%[^%]+%%/g, "");
+  if (isLightTheme(getValueFromDictionary(manifest, 'name'))) {
+    replaceInFile(`./themes/${themeName}/_light.scss`, /\/\/%%[^%]+%%/g, '');
   }
 
   console.log(`Finished processing theme: ${themeNameLocal}`);
 });
 
-console.info("All themes processed successfully.");
+console.info('All themes processed successfully.');
 
 if (folders.length === 1) {
   // If only one theme is processed, end early (we are apparently testing)
@@ -586,10 +586,10 @@ if (folders.length === 1) {
     const themePath = `./themes/${folder}/_index.scss`;
     if (fs.existsSync(themePath)) {
       // Combine all @use rules in the _index.scss file
-      const scssContent = fs.readFileSync(themePath, "utf8");
+      const scssContent = fs.readFileSync(themePath, 'utf8');
       const processedScss = inlineScssUseRulesAndClean(scssContent, themePath);
       const prunedScss = prune(processedScss);
-      writePrettier(themePath, prunedScss, "utf8");
+      writePrettier(themePath, prunedScss, 'utf8');
       // Remove all directories under themes/${folder}
       const themeDir = `./themes/${folder}`;
       const items = fs.readdirSync(themeDir);
@@ -606,27 +606,27 @@ if (folders.length === 1) {
 }
 
 // Rebuild README.md
-console.log("Updating compatibility table...");
+console.log('Updating compatibility table...');
 
 // Prepare README.md
-fs.unlinkSync("README.md");
-fs.copyFileSync("README-TEMPLATE.md", "README.md");
+fs.unlinkSync('README.md');
+fs.copyFileSync('README-TEMPLATE.md', 'README.md');
 
 // Build compatibility table
 const compatibilityTableLines = [];
 const themeList = [];
 manifestCollection.forEach((manifest) => {
-  themeList.push(getTheme(manifest, "name"));
+  themeList.push(getTheme(manifest, 'name'));
 });
 themeList.sort();
 themeList.forEach((themeName) => {
   const mode = isFullTheme(themeName)
-    ? "both"
+    ? 'both'
     : isDarkTheme(themeName)
-      ? "dark"
-      : "light";
-  const compatibilityArray = themes[themeName]["compatibility"];
-  let compatibilityString = "";
+      ? 'dark'
+      : 'light';
+  const compatibilityArray = themes[themeName]['compatibility'];
+  let compatibilityString = '';
   compatibilityArray.forEach((compatibility) => {
     compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
   });
@@ -636,22 +636,22 @@ themeList.forEach((themeName) => {
 });
 
 const compatibilityTable =
-  "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview |\n| --- | --- | --- | --- |".concat(
+  '| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview |\n| --- | --- | --- | --- |'.concat(
     ...compatibilityTableLines,
   );
 
 // Write result to README.md
-replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable);
+replaceInFile(`./README.md`, '//COMPATIBILITY_TABLE', compatibilityTable);
 // Clean up comments
-replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, "");
-console.log("Finished updating compatibility table");
+replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, '');
+console.log('Finished updating compatibility table');
 
-console.log("Updating Quartz Syncer file list...");
+console.log('Updating Quartz Syncer file list...');
 
 // Prepare Quartz Syncer file list
-if (fs.existsSync("quartz-syncer-file-list.json"))
-  fs.unlinkSync("quartz-syncer-file-list.json");
-if (fs.existsSync("theme-list")) fs.unlinkSync("theme-list");
+if (fs.existsSync('quartz-syncer-file-list.json'))
+  fs.unlinkSync('quartz-syncer-file-list.json');
+if (fs.existsSync('theme-list')) fs.unlinkSync('theme-list');
 
 // Build Quartz Syncer file list as json
 const quartzSyncerFileList = {};
@@ -665,10 +665,10 @@ themeFolders.forEach((folder) => {
   const themePath = `./themes/${folder}/_index.scss`;
   if (fs.existsSync(themePath)) {
     // Combine all @use rules in the _index.scss file
-    const scssContent = fs.readFileSync(themePath, "utf8");
+    const scssContent = fs.readFileSync(themePath, 'utf8');
     const processedScss = inlineScssUseRulesAndClean(scssContent, themePath);
     const prunedScss = prune(processedScss);
-    writePrettier(themePath, prunedScss, "utf8");
+    writePrettier(themePath, prunedScss, 'utf8');
     // Remove all directories under themes/${folder}
     const themeDir = `./themes/${folder}`;
     const items = fs.readdirSync(themeDir);
@@ -687,7 +687,7 @@ themeFolders.forEach((folder) => {
     `./themes/${folder}`,
     folder,
   );
-  const themeName = folder.replace(/^\.\//, "");
+  const themeName = folder.replace(/^\.\//, '');
   quartzSyncerFileList[themeName] = files;
   themeListFileList.push(themeName);
 });
@@ -696,13 +696,13 @@ themeFolders.forEach((folder) => {
 writePrettier(
   `./quartz-syncer-file-list.json`,
   JSON.stringify(quartzSyncerFileList, null, 2),
-  "utf8",
+  'utf8',
 );
 
 // Write the theme list to theme-list
-writePrettier(`./theme-list`, themeListFileList.join("\n"), "utf8");
+writePrettier(`./theme-list`, themeListFileList.join('\n'), 'utf8');
 
-console.log("Finished updating Quartz Syncer file list");
+console.log('Finished updating Quartz Syncer file list');
 // Log the time taken to run the script in minutes and seconds
 const end = Date.now();
 const timeTaken = ((end - start) / 1000).toFixed(2);

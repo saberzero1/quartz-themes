@@ -1,0 +1,20 @@
+.theme-black.theme-dark {
+  --vault-icon: '🌙';
+  --accent-h: 0 !important;
+  --accent-s: 0% !important;
+  --accent-l: 73% !important;
+  --doc-bg: hsl(193, 0%, 8%);
+  --highlight-mix-blend-mode: lighten;
+  --color-base-00: hsla(216, 0%, 0%, var(--page-transparency));
+  --color-base-10: hsl(216, 0%, 5%);
+  --color-base-20: hsl(216, 10%, 9%);
+  --color-base-25: hsl(216, 10%, 16%);
+  --color-base-30: hsl(216, 10%, 6%);
+  --color-base-35: hsl(216, 10%, 13%);
+  --color-base-40: hsl(216, 10%, 15%);
+  --color-base-50: hsl(216, 12%, 69%);
+  --color-base-60: hsl(216, 13%, 78%);
+  --color-base-70: hsl(218, 14%, 85%);
+  --color-base-100: hsl(0, 0%, 100%);
+  --panel-child: hsl(216, 10%, 9%);
+}

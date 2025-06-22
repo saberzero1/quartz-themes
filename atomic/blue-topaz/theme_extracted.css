@@ -89,10 +89,10 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-command-palette-theme-dark-custom: url("https://");
-  --background-command-palette-theme-light-custom: url("https://");
-  --background-markdown-page-theme-dark-custom: url("https://");
-  --background-markdown-page-theme-light-custom: url("https://");
+  --background-command-palette-theme-dark-custom: url('https://');
+  --background-command-palette-theme-light-custom: url('https://');
+  --background-markdown-page-theme-dark-custom: url('https://');
+  --background-markdown-page-theme-light-custom: url('https://');
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
@@ -105,13 +105,13 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-panel-page-theme-dark-custom: url("https://");
-  --background-panel-page-theme-light-custom: url("https://");
+  --background-panel-page-theme-dark-custom: url('https://');
+  --background-panel-page-theme-light-custom: url('https://');
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-settings-workplace-theme-dark-custom: url("https://");
-  --background-settings-workplace-theme-light-custom: url("https://");
+  --background-settings-workplace-theme-dark-custom: url('https://');
+  --background-settings-workplace-theme-light-custom: url('https://');
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -293,7 +293,7 @@ body {
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
   --fancy-cursor-width: 2px;
-  --fancy-hr-icon: "😀";
+  --fancy-hr-icon: '😀';
   --fancy-hr-rotate: 0deg;
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
@@ -308,33 +308,33 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Microsoft YaHei Light', sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
+  --font-family-better-footnote: Arlrdbd, 'Source Han Sans', 'Segoe UI Emoji';
   --font-family-em: var(--font-family-strong, var(--font-monospace-theme));
   --font-family-folder-file-title:
-    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
-    "Source Sans Pro", "Segoe UI Emoji", sans-serif;
+    var(--font-text-override), Arlrdbd, 'Source Han Sans', 'Noto Sans CJK',
+    'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
   --font-family-inline-code:
     var(--font-monospace-override), var(--font-monospace-theme);
   --font-family-list: var(--font-default);
-  --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
+  --font-family-special-tag: 'Lucida Handwriting', 'Segoe UI Emoji';
   --font-family-strong:
-    Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", var(--font-interface);
+    Bookerly, 'Inter', 'Segoe UI', 'LXGW WenKai Screen', 'LXGW WenKai Screen R',
+    '霞鹜文楷 GB', 'LXGW WenKai', 'Segoe UI Emoji', var(--font-interface);
   --font-family-tag:
-    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
-    "Segoe UI Emoji", Serif;
+    Bookerly, 'Inter', 'Segoe UI', 'Microsoft YaHei', STzhongsong, STSong,
+    'Segoe UI Emoji', Serif;
   --font-family-title: var(--font-text, var(--font-default));
-  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
+  --font-family-vault: 'Lucida Handwriting', 'Segoe UI Emoji';
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
   --font-light: 300;
   --font-loading-text: var(--font-monospace-theme);
   --font-medium: 500;
@@ -343,19 +343,19 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
+    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
+    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
+    'Source Code Pro', monospace;
+  --font-monospace-override: '??';
   --font-monospace-theme:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
+    'JetBrains Mono', Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono',
+    'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei',
+    'Source Code Pro', monospace;
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-semibold: 600;
   --font-size-better-footnote: 1.3em;
   --font-size-checklist: 0.85em;
@@ -385,11 +385,11 @@ body {
   --font-smallest: 0.8em;
   --font-style-em: italic;
   --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
   --font-text-theme:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei";
+    Bookerly, 'Inter', 'Segoe UI', '霞鹜文楷 GB', 'LXGW WenKai',
+    'Microsoft YaHei';
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -407,7 +407,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: ".";
+  --footnote-id-delimiter: '.';
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -602,21 +602,21 @@ body {
   --list-ol-marker-4: decimal;
   --list-spacing: 0.075em;
   --list-spacing-bt: 1;
-  --list-ul-colorful-marker-content: "\2022";
-  --list-ul-marker-1: "\2022";
-  --list-ul-marker-2: "\25E6";
-  --list-ul-marker-3: "\25AA";
-  --list-ul-marker-4: "\25E6";
+  --list-ul-colorful-marker-content: '\\2022';
+  --list-ul-marker-1: '\\2022';
+  --list-ul-marker-2: '\\25E6';
+  --list-ul-marker-3: '\\25AA';
+  --list-ul-marker-4: '\\25E6';
   --list-ul-marker-color: var(--list-marker-color);
   --loading-add-text-color: #d47e86;
   --loading-add-text-color-alt: #a4e39c;
-  --loading-diy-text: "快乐摸鱼又一天，人生还剩多少天？";
+  --loading-diy-text: '快乐摸鱼又一天，人生还剩多少天？';
   --loading-diy-text-color: var(--text-normal);
-  --loading-page-custom-gif-caption: " ";
-  --loading-page-custom-gif-caption-alt: " ";
+  --loading-page-custom-gif-caption: ' ';
+  --loading-page-custom-gif-caption-alt: ' ';
   --loading-page-custom-gif-url: url(https://);
-  --loading-text-after: "✿❀";
-  --loading-text-before: "❀✿";
+  --loading-text-after: '✿❀';
+  --loading-text-before: '❀✿';
   --menu-backdrop-filter: none;
   --menu-background: var(--background-secondary);
   --menu-border-color: var(--background-modifier-border-hover);
@@ -625,7 +625,7 @@ body {
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
   --mermaid-font-family:
-    Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
+    Segoe UI, 'Microsoft YaHei', 'Segoe UI Emoji', 'trebuchet ms', verdana,
     Arial, cursive;
   --metadata-background: transparent;
   --metadata-border-color: var(--background-modifier-border);
@@ -809,8 +809,8 @@ body {
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
   --share-card-background-opacity-cp: 0.6;
-  --share-thino-background-dark-custom: url("https://");
-  --share-thino-background-light-custom: url("https://");
+  --share-thino-background-dark-custom: url('https://');
+  --share-thino-background-light-custom: url('https://');
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -964,8 +964,8 @@ body {
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --thino-background-dark-custom: url("https://");
-  --thino-background-light-custom: url("https://");
+  --thino-background-dark-custom: url('https://');
+  --thino-background-light-custom: url('https://');
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
   --titlebar-blur-depth: 8px;
@@ -1215,132 +1215,132 @@ h6 {
   padding-right: 10px;
 }
 
-.callout[data-callout="tip"] {
+.callout[data-callout='tip'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="danger"] {
+.callout[data-callout='danger'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout="question"] {
+.callout[data-callout='question'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout='example'] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout="summary"] {
+.callout[data-callout='summary'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="tldr"] {
+.callout[data-callout='tldr'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="check"] {
+.callout[data-callout='check'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="done"] {
+.callout[data-callout='done'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout="help"] {
+.callout[data-callout='help'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="caution"] {
+.callout[data-callout='caution'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="failure"] {
+.callout[data-callout='failure'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="fail"] {
+.callout[data-callout='fail'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout="cite"] {
+.callout[data-callout='cite'] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1360,7 +1360,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold {
@@ -1370,7 +1370,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold .svg-icon {
@@ -1459,7 +1459,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-app-region: no-drag;
   background: var(--bg-color-settings-4);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1563,7 +1563,7 @@ input[type="search"] {
 }
 
 .tree-item-self:before {
-  content: "\200B";
+  content: '\200B';
 }
 
 .tree-item-self.mod-collapsible {
@@ -1615,7 +1615,7 @@ input[type="search"] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: "\200b";
+  content: '\200b';
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1697,7 +1697,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled="true"] {
+.clickable-icon[aria-disabled='true'] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;
@@ -1924,7 +1924,7 @@ svg.svg-icon {
   --bg-sliding-pane-leaf: #0f0f0f36;
   --blue: #a0c7e9;
   --bt-connected-indent-line-color: #926a6a;
-  --bt-indentation-line-image: url("");
+  --bt-indentation-line-image: url('');
   --calendar-active-color: var(--theme-color-translucent-04);
   --calendar-hover-color: var(--theme-color-translucent-02);
   --calendar-today-background-color: #8c4545;
@@ -2304,7 +2304,7 @@ svg.svg-icon {
   --blue: var(--nord10);
   --blue-green: #3bd4da;
   --bt-connected-indent-line-color: #ffa8a8;
-  --bt-indentation-line-image: url("");
+  --bt-indentation-line-image: url('');
   --calendar-active-color: var(--theme-color-translucent-02);
   --calendar-hover-color: var(--theme-color-translucent-01);
   --calendar-today-background-color: #aaeec6;

@@ -1,0 +1,26 @@
+body.tag-fill {
+  --tag-background: var(--setting-tag-bg, var(--accent-active)) !important;
+  --tag-background-hover: var(--tag-background);
+  --tag-color: var(--text-on-accent);
+  --tag-color-hover: var(--tag-color);
+}
+
+body.tag-fill :is(.cm-tag-obsidian, .tag[href='#obsidian']) {
+  --tag-background: var(--color-purple) !important ;
+}
+
+body.tag-fill :is(.cm-tag-todo, .tag[href='#todo']) {
+  --tag-background: var(--color-green) !important ;
+}
+
+body.tag-fill :is(.cm-tag-important, .tag[href='#important']) {
+  --tag-background: var(--color-red) !important ;
+}
+
+body.tag-fill :is(.cm-tag-progress, .tag[href='#progress']) {
+  --tag-background: var(--color-blue) !important ;
+}
+
+body.tag-fill :is(.cm-tag-complete, .tag[href='#complete']) {
+  --tag-background: var(--color-orange) !important ;
+}

@@ -1,0 +1,28 @@
+body.encore-translucency.encore-bg-chromatic {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(15, 245, 254),
+    rgb(111, 0, 255),
+    rgb(255, 0, 0),
+    rgb(255, 222, 0),
+    rgb(167, 255, 0),
+    rgb(0, 255, 136),
+    rgb(15, 245, 254),
+    rgb(111, 0, 255),
+    rgb(253, 0, 0),
+    rgb(255, 222, 0),
+    rgb(167, 255, 0),
+    rgb(0, 255, 136),
+    rgb(15, 245, 254),
+    rgb(111, 0, 255)
+  );
+  background-size: 100% 800vh;
+  animation: scroll-up-down infinite 180s ease-in-out alternate-reverse;
+}
+
+body.encore-translucency.encore-bg-chromatic::before {
+  position: fixed;
+  inset: 0;
+  content: '';
+  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
+}

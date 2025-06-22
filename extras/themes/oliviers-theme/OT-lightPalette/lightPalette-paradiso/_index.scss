@@ -1,26 +1,26 @@
-.lightPalette-paradiso {
-  --OT-theme-reference-color: #c5c889;
-  --color-base-00: #f1efe3;
-  --color-base-20: #e1e2c2;
-  --color-base-35: #858740;
-  --color-base-40: #858740;
-  --color-base-50: #a7a951;
-  --color-base-70: #636430;
-  --color-base-05: #d6d7ab;
-  --code-background: #ecedd9;
-  --OT-button-OFF-bg: #d6d7ab;
-  --color-base-100: #4c4d25;
-  --link-color: #5351a9;
-  /*    --h1-color:            #484923; */
-  /*    --h3-color:            #35361A; */
-  /*    --h5-color:            #A7A951; */
-  --OT-color-on-base-20: #636430;
-  --OT-setting-item-description: #6e6f36;
-  --OT-table-header-background: #e5e6cc;
-  --OT-table-background: #ededdb;
+.theme-dar.darkPalette-default {
+  --OT-theme-reference-color: #35361a;
+  --color-base-00: #35361a;
+  --color-base-20: #4c4d25;
+  --color-base-35: #909246;
+  --color-base-40: #35361a;
+  --color-base-50: #797b3b;
+  --color-base-70: #adb05b;
+  --color-base-05: #404120;
+  --background-modifier-border: #82843f;
+  --code-background: #636430;
+  --OT-button-OFF-bg: #6e6f36;
+  --color-base-100: #e1e2c2;
+  --link-color: #ffcc00;
+  --OT-stabilo-mark: #909246;
+  --OT-stabilo-text: #24514c !important;
+  --OT-color-on-base-20: #bfc17d;
+  --OT-setting-item-description: #d0d29f;
+  --OT-table-header-background: #2a2b14;
+  --OT-table-background: #2e2f16;
 }
 
-.accentColor-lightMode-shade {
+.theme-ligh.accentColor-lightMode-shade {
   --accent-h: 62 !important;
   --accent-s: 36% !important;
   --accent-l: 50% !important;
@@ -30,7 +30,7 @@
   --OT-color-on-accent-2: #f4f4e8;
 }
 
-.accentColor-lightMode-alternative-1 {
+.theme-ligh.accentColor-lightMode-alternative-1 {
   --accent-h: 212 !important;
   --accent-s: 36% !important;
   --accent-l: 50% !important;
@@ -43,7 +43,7 @@
   --OT-color-on-accent-3: #527cad !important;
 }
 
-.accentColor-lightMode-alternative-2 {
+.theme-ligh.accentColor-lightMode-alternative-2 {
   --accent-h: 272 !important;
   --accent-s: 36% !important;
   --accent-l: 50% !important;
@@ -54,9 +54,67 @@
   --OT-color-on-accent-3: #69428a !important;
 }
 
-.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+.theme-dar.darkPalette-default.accentColor-darkMode-shade {
+  --accent-h: 62 !important;
+  --accent-s: 50% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #b5b93e !important;
+  --color-accent-2: #6d6f36 !important;
+  --color-accent-3: #777929 !important;
+  --OT-color-on-accent-1: #1e1f0f !important;
+  --OT-color-muted-on-accent-1: #57582b !important;
+  --OT-color-on-accent-2: #f8f9ec !important;
+  /*    --OT-color-on-accent-3:                    #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #adb05b;
+  --OT-view-header-title-no-focus-color: #9c9f36;
+}
+
+.theme-dar.darkPalette-default.accentColor-darkMode-alternative-1 {
+  --accent-h: 152 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #73d0a4 !important;
+  --color-accent-2: #37a672 !important;
+  --color-accent-3: #226646 !important;
+  --OT-color-on-accent-1: #15402c !important;
+  --OT-color-muted-on-accent-1: #2f8c60 !important;
+  --OT-color-on-accent-2: #f2fbf7 !important;
+  --OT-color-on-accent-3: #8cd9b5 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.theme-dar.darkPalette-default.accentColor-darkMode-alternative-2 {
+  --accent-h: 32 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #d4ac7f !important;
+  --color-accent-2: #c38b4c !important;
+  --color-accent-3: #8c602f !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #8c602f !important;
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.theme-ligh.inkColor-lightMode-default
+  .markdown-source-view.mod-cm6
+  .cm-editor:before {
   /*    couleur de la pastille:    #4C4D25    */
   content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%234C4D25" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.theme-dar.darkPalette-default.inkColor-darkMode-default
+  .markdown-source-view.mod-cm6
+  .cm-editor:before {
+  /*    couleur de la pastille:    #E1E2C2    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23E1E2C2" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
   height: 0px;
   background-color: transparent;
   position: absolute;

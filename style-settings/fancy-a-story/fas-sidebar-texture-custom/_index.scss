@@ -1,0 +1,35 @@
+:root,
+body {
+  --sidebar-texture: var(--sidebar-texture-custom);
+  --sidebar-texture-size: var(--sidebar-texture-size-custom);
+  --sidebar-texture-blend: var(--sidebar-texture-blend-custom);
+  --sidebar-texture-blend-dark: var(--sidebar-texture-blend-custom-dark);
+  --sidebar-texture-position: var(--sidebar-texture-position-custom);
+  --sidebar-texture-opacity: var(--sidebar-texture-opacity-custom);
+}
+.fas-skin-art-deco:not() .app-container {
+  --sidebar-texture: var(--art-deco-background);
+  --sidebar-texture-size: auto 100%;
+  --sidebar-texture-blend: soft-light;
+  --sidebar-texture-blend-dark: soft-light;
+  --sidebar-texture-position: center center;
+  --sidebar-texture-opacity: 0.2;
+}
+.fas-skin-art-deco.fas-bg-textures:not() .mod-sidedock .workspace-leaf {
+  background-repeat: no-repeat;
+}
+body:not() .style-settings-container [data-id='sidebar-texture-custom'],
+body:not() .style-settings-container [data-id='sidebar-texture-blend-custom'],
+body:not()
+  .style-settings-container
+  [data-id='sidebar-texture-blend-custom-dark'],
+body:not() .style-settings-container [data-id='sidebar-texture-size-custom'],
+body:not()
+  .style-settings-container
+  [data-id='sidebar-texture-position-custom'],
+body:not()
+  .style-settings-container
+  [data-id='sidebar-texture-opacity-custom'] {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -120,7 +120,7 @@ body {
     Apple Color Emoji, Segoe UI Emoji;
 
   --font-monospace-theme:
-    "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
+    'Hack', 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular,
     SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
@@ -145,10 +145,10 @@ body {
 }
 
 .body,
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"] {
+.theme-dark code[class*='language-'],
+.theme-dark pre[class*='language-'],
+.theme-light code[class*='language-'],
+.theme-light pre[class*='language-'] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }
@@ -561,11 +561,11 @@ input.task-list-item-checkbox:checked {
   fill: var(--frost3) !important;
 }
 
-.setting-item-control input[type="text"] {
+.setting-item-control input[type='text'] {
   color: var(--text-normal);
 }
 
-.setting-item-control input[type="text"]::placeholder {
+.setting-item-control input[type='text']::placeholder {
   color: var(--dark3);
 }
 

@@ -188,7 +188,7 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
-  --file-emoji: "Noto Emoji";
+  --file-emoji: 'Noto Emoji';
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -205,44 +205,44 @@ body {
   --folder-2-open: var(--normal-folder-2-open);
   --folder-3: var(--normal-folder-3);
   --folder-3-open: var(--normal-folder-3-open);
-  --folder-emoji: "Noto Emoji";
+  --folder-emoji: 'Noto Emoji';
   --folder-icon-size: 1.6em;
   --folder-padding: 4px;
   --font-black: 900;
   --font-bold: 700;
   --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
-  --font-emoji: "Noto Color Emoji";
+  --font-emoji: 'Noto Color Emoji';
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, "??"), var(--font-default);
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
+    var(--default-font, '??'), var(--font-default);
+  --font-interface-override: '??';
+  --font-interface-theme: '??';
   --font-light: 300;
-  --font-main: "Nunito Sans";
+  --font-main: 'Nunito Sans';
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: "DM Mono", monospace;
+  --font-monospace: 'DM Mono', monospace;
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
+    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
+    'Source Code Pro', monospace;
+  --font-monospace-override: '??';
+  --font-monospace-theme: '??';
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), "Arial";
-  --font-print-override: "??";
+    var(--font-text-theme), 'Arial';
+  --font-print-override: '??';
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-print);
-  --font-text-override: "??";
+  --font-text-override: '??';
   --font-text-size: 16px;
-  --font-text-theme: "??";
+  --font-text-theme: '??';
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -255,7 +255,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: ".";
+  --footnote-id-delimiter: '.';
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -322,7 +322,7 @@ body {
   --h6-variant: var(--heading-variant);
   --h6-weight: var(--heading-weight);
   --header-height: 40px;
-  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
+  --heading-font: 'Merriweather Sans', 'Book Antiqua', var(--font-default);
   --heading-font-2: var(--heading-font), var(--font-default);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
@@ -336,7 +336,7 @@ body {
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
   --icon-color-hover: var(--text-muted);
-  --icon-emoji: "Noto Color Emoji";
+  --icon-emoji: 'Noto Color Emoji';
   --icon-l: 18px;
   --icon-l-stroke-width: 1.3px;
   --icon-m: 18px;
@@ -521,12 +521,12 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
-  --normal-folder-1: "📒";
-  --normal-folder-1-open: "📖";
-  --normal-folder-2: "📑";
-  --normal-folder-2-open: "📑";
-  --normal-folder-3: "🔖";
-  --normal-folder-3-open: "🔖";
+  --normal-folder-1: '📒';
+  --normal-folder-1-open: '📖';
+  --normal-folder-2: '📑';
+  --normal-folder-2-open: '📑';
+  --normal-folder-3: '🔖';
+  --normal-folder-3-open: '🔖';
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --page-transparency: 100%;
@@ -986,47 +986,47 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout="tip"] {
+.callout[data-callout='tip'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-star;
 }
 
-.callout[data-callout="warning"] {
+.callout[data-callout='warning'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-octagon;
 }
 
-.callout[data-callout="danger"] {
+.callout[data-callout='danger'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="abstract"] {
+.callout[data-callout='abstract'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-layout-list;
 }
 
-.callout[data-callout="todo"] {
+.callout[data-callout='todo'] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout="question"] {
+.callout[data-callout='question'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="info"] {
+.callout[data-callout='info'] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout="success"] {
+.callout[data-callout='success'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check-circle;
 }
 
-.callout[data-callout="quote"] {
+.callout[data-callout='quote'] {
   --callout-color: var(--callout-quote);
   --callout-icon: message-square;
   clear: right;
@@ -1039,87 +1039,87 @@ h6 {
   width: flex;
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout='example'] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout="bug"] {
+.callout[data-callout='bug'] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-server-crash;
 }
 
-.callout[data-callout="summary"] {
+.callout[data-callout='summary'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-layout-list;
 }
 
-.callout[data-callout="tldr"] {
+.callout[data-callout='tldr'] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-layout-list;
 }
 
-.callout[data-callout="important"] {
+.callout[data-callout='important'] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout="hint"] {
+.callout[data-callout='hint'] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-star;
 }
 
-.callout[data-callout="check"] {
+.callout[data-callout='check'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check-circle;
 }
 
-.callout[data-callout="done"] {
+.callout[data-callout='done'] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check-circle;
 }
 
-.callout[data-callout="help"] {
+.callout[data-callout='help'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="faq"] {
+.callout[data-callout='faq'] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout="caution"] {
+.callout[data-callout='caution'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-octagon;
 }
 
-.callout[data-callout="attention"] {
+.callout[data-callout='attention'] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-octagon;
 }
 
-.callout[data-callout="failure"] {
+.callout[data-callout='failure'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-slash;
 }
 
-.callout[data-callout="error"] {
+.callout[data-callout='error'] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout="fail"] {
+.callout[data-callout='fail'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-slash;
 }
 
-.callout[data-callout="missing"] {
+.callout[data-callout='missing'] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-slash;
 }
 
-.callout[data-callout="cite"] {
+.callout[data-callout='cite'] {
   --callout-color: var(--callout-quote);
   --callout-icon: message-square;
   clear: right;
@@ -1149,7 +1149,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold {
@@ -1159,7 +1159,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: "\200B";
+  content: '\200B';
 }
 
 .callout-fold .svg-icon {
@@ -1244,7 +1244,7 @@ a.tag {
   border: 0.8px solid vaR(--background-modifier-border);
   border-radius: vaR(--radius-s);
   color: var(--text-accent);
-  font-family: var(--h1-font), "Noto Color Emoji";
+  font-family: var(--h1-font), 'Noto Color Emoji';
   font-size: 1em;
   font-weight: var(--tag-weight);
   line-height: 1;
@@ -1252,7 +1252,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1364,7 +1364,7 @@ input[type="search"] {
 }
 
 .tree-item-self:before {
-  content: "\200B";
+  content: '\200B';
 }
 
 .tree-item-self.mod-collapsible {
@@ -1416,7 +1416,7 @@ input[type="search"] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: "\200b";
+  content: '\200b';
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1496,7 +1496,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled="true"] {
+.clickable-icon[aria-disabled='true'] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;
@@ -1728,8 +1728,8 @@ svg.svg-icon {
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --vault-font: "Noto Emoji";
-  --vault-icon: "💎";
+  --vault-font: 'Noto Emoji';
+  --vault-icon: '💎';
   color-scheme: dark;
 }
 
@@ -1808,8 +1808,8 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-  --vault-font: "Noto Emoji";
-  --vault-icon: "💎";
+  --vault-font: 'Noto Emoji';
+  --vault-icon: '💎';
   color-scheme: light;
 }
 

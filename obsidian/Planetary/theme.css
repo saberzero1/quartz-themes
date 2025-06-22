@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
   /* Add other properties here, as needed. For example: */
   font-weight: 100 900;
   font-style: normal italic;
@@ -8,7 +8,7 @@
 }
 
 :root {
-  --font-text-theme: "IBM Plex Sans", sans-serif;
+  --font-text-theme: 'IBM Plex Sans', sans-serif;
 }
 
 .workspace-tab-header.is-active::before,

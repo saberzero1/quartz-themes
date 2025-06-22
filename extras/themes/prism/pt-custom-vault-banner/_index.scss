@@ -1,0 +1,29 @@
+.pt-custom-vault-banner .workspace-drawer-vault-name {
+  display: flex;
+  align-items: center;
+}
+
+.pt-custom-vault-banner .workspace-drawer-vault-name::before {
+  display: inline-flex;
+  min-width: 24px;
+  height: 24px;
+  margin-right: var(--size-4-2);
+  content: '';
+  background-image: var(--custom-vault-banner-icon-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pt-custom-vault-banner.is-mobile .mod-left .workspace-drawer-header::before {
+  display: block;
+  width: 32px;
+  height: 48px;
+  margin-right: var(--size-4-4);
+  content: '';
+  background-image: var(--custom-vault-banner-icon-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: unset;
+}

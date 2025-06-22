@@ -1,0 +1,6 @@
+Show .internal-embed:has(.embed-title:not(:empty)) {
+  padding-top: 0.5rem;
+}
+Show .embed-title {
+  display: flex;
+}

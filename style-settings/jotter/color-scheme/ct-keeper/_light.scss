@@ -1,0 +1,14 @@
+.ct-keeper {
+  --background-primary: #d8dee9;
+  --background-primary-alt: #c5cdda;
+  --background-secondary: #d8dee9;
+  --code-background: #d0d8e4;
+  --background-modifier-border: hsl(222, 20%, 80%);
+  --background-modifier-border-hover: hsl(222, 20%, 83%);
+  --indentation-guide-color-active: hsl(220, 17%, 70%);
+  --interactive-normal: var(--background-modifier-border);
+  --interactive-hover: var(--background-modifier-border-hover);
+  --text-normal: #2e3440;
+  --text-muted: #6b7b97;
+  --text-faint: #8b9ab9;
+}

@@ -1,0 +1,108 @@
+.wotc-beyond,
+.theme-dark .wotc-beyond,
+.theme-light.wotc-beyond,
+.theme-light .wotc-beyond {
+  --header-weight: 500;
+  --font: 'its-Draconis', 'Draconis', Inter;
+  --font-monospace: 'its-Fira Code', 'Fira Code', Inter;
+  --font-default: 'its-Bookerly', 'Bookerly', Inter;
+  --font-text: var(--font-default);
+  --vault-name-font-size: 25px;
+  --hr-icon-symbol: '';
+  --hr-icon-font: var(--its);
+  --hr-image-height: 5px;
+  --hr-image-width: 100%;
+  --hr-thickness: 0;
+  --embed-h: #c93c3c;
+  --h2-color: sandybrown;
+  --h3-color: #a11111;
+  --h1-border-line-color: var(--embed-h);
+  --h2-border-line-color: var(--h2-color);
+  --h3-border-line-color: var(--h3-color);
+  --h1-border-right-color: linear-gradient(
+    to right,
+    var(--h1-border-line-color),
+    transparent
+  );
+  --h2-border-right-color: linear-gradient(
+    to right,
+    var(--h2-border-line-color),
+    transparent
+  );
+  --h3-border-right-color: linear-gradient(
+    to right,
+    var(--h3-border-line-color),
+    transparent
+  );
+  --h4-border-right-color: linear-gradient(
+    to right,
+    var(--header-border-line-color),
+    transparent
+  );
+  --h5-border-right-color: linear-gradient(
+    to right,
+    var(--header-border-line-color),
+    transparent
+  );
+  --h6-border-right-color: linear-gradient(
+    to right,
+    var(--header-border-line-color),
+    transparent
+  );
+  --h1-border-left-color: linear-gradient(
+    to left,
+    var(--h1-border-line-color),
+    transparent
+  );
+  --h2-border-left-color: linear-gradient(
+    to left,
+    var(--h2-border-line-color),
+    transparent
+  );
+  --h3-border-left-color: linear-gradient(
+    to left,
+    var(--h3-border-line-color),
+    transparent
+  );
+  --h4-border-left-color: linear-gradient(
+    to left,
+    var(--header-border-line-color),
+    transparent
+  );
+  --h5-border-left-color: linear-gradient(
+    to left,
+    var(--header-border-line-color),
+    transparent
+  );
+  --h6-border-left-color: linear-gradient(
+    to left,
+    var(--header-border-line-color),
+    transparent
+  );
+  --icon-color: var(--text);
+  --drop-shadow: var(--td);
+  --paper-edges: 0 0 60px var(--outline) inset;
+  --paper-edges-m: 0 0 100px var(--outline) inset;
+  --tab-container-background: transparent;
+  --tab-titlebar-color: transparent;
+  --pane-background: transparent;
+  --file-header-background: transparent;
+  --kanban-card-title-background: var(--td);
+  --kanban-card-metadata-background: var(--note);
+}
+.wotc-beyond,
+.theme-dark .wotc-beyond {
+  --outline: #0000008c;
+  --headers: #c14343;
+  --code-text: #fa4545;
+  --tag-text: #d04e4e;
+  --dark-accent: #652121;
+  --accent: #863737;
+  --i-at: #bf5e5e;
+  --folder: var(--accent);
+  --hr-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Artboard1' x='0' y='0' width='100' height='7' style='fill:none;'/%3E%3Cpath d='M50,2.5L100,3.5L50,4L0,3.5L50,2.5Z' style='fill:rgb(146, 47, 47);'/%3E%3C/svg%3E")
+    no-repeat center center;
+  --hr: #772d2d;
+  --hvr-active: rgba(212, 47, 47, 0.4);
+  --highlight: #7a141466;
+}

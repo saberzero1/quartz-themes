@@ -1,0 +1,11 @@
+.status-bar-center {
+  --status-bar-radius: var(--radius-m);
+  --status-bar-border-width: 1px;
+}
+
+.status-bar-center .status-bar {
+  left: unset;
+  right: unset;
+  margin: 0 auto 0.5rem auto;
+  position: relative;
+}

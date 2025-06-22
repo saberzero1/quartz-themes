@@ -1,0 +1,304 @@
+.material.theme-dark p > code,
+.material.theme-dark pre:not(.frontmatter),
+.material.theme-dark .HyperMD-codeblock {
+  --code-background: #2f2f2f;
+  --code-normal: #eee;
+  --text-muted: #616161;
+  --text-faint: #616161;
+}
+
+.material.theme-dark p > code .language-css > code,
+.material.theme-dark p > code .language-sass > code,
+.material.theme-dark p > code .language-scss > code,
+.material.theme-dark pre:not(.frontmatter) .language-css > code,
+.material.theme-dark pre:not(.frontmatter) .language-sass > code,
+.material.theme-dark pre:not(.frontmatter) .language-scss > code,
+.material.theme-dark .HyperMD-codeblock .language-css > code,
+.material.theme-dark .HyperMD-codeblock .language-sass > code,
+.material.theme-dark .HyperMD-codeblock .language-scss > code {
+  color: #fd9170;
+}
+
+.material.theme-dark p > code [class*='language-'] .namespace,
+.material.theme-dark pre:not(.frontmatter) [class*='language-'] .namespace,
+.material.theme-dark .HyperMD-codeblock [class*='language-'] .namespace {
+  opacity: 0.7;
+}
+
+.material.theme-dark p > code .token.atrule,
+.material.theme-dark pre:not(.frontmatter) .token.atrule,
+.material.theme-dark .HyperMD-codeblock .token.atrule {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .token.attr-name,
+.material.theme-dark pre:not(.frontmatter) .token.attr-name,
+.material.theme-dark .HyperMD-codeblock .token.attr-name {
+  color: #ffcb6b;
+}
+
+.material.theme-dark p > code .cm-string,
+.material.theme-dark p > code .token.attr-value,
+.material.theme-dark pre:not(.frontmatter) .cm-string,
+.material.theme-dark pre:not(.frontmatter) .token.attr-value,
+.material.theme-dark .HyperMD-codeblock .cm-string,
+.material.theme-dark .HyperMD-codeblock .token.attr-value {
+  color: #a5e844;
+}
+
+.material.theme-dark p > code .cm-attribute,
+.material.theme-dark p > code .token.attribute,
+.material.theme-dark pre:not(.frontmatter) .cm-attribute,
+.material.theme-dark pre:not(.frontmatter) .token.attribute,
+.material.theme-dark .HyperMD-codeblock .cm-attribute,
+.material.theme-dark .HyperMD-codeblock .token.attribute {
+  color: #a5e844;
+}
+
+.material.theme-dark p > code .token.boolean,
+.material.theme-dark pre:not(.frontmatter) .token.boolean,
+.material.theme-dark .HyperMD-codeblock .token.boolean {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .cm-builtin,
+.material.theme-dark p > code .token.builtin,
+.material.theme-dark pre:not(.frontmatter) .cm-builtin,
+.material.theme-dark pre:not(.frontmatter) .token.builtin,
+.material.theme-dark .HyperMD-codeblock .cm-builtin,
+.material.theme-dark .HyperMD-codeblock .token.builtin {
+  color: #ffcb6b;
+}
+
+.material.theme-dark p > code .token.cdata,
+.material.theme-dark pre:not(.frontmatter) .token.cdata,
+.material.theme-dark .HyperMD-codeblock .token.cdata {
+  color: #80cbc4;
+}
+
+.material.theme-dark p > code .token.char,
+.material.theme-dark pre:not(.frontmatter) .token.char,
+.material.theme-dark .HyperMD-codeblock .token.char {
+  color: #80cbc4;
+}
+
+.material.theme-dark p > code .token.class,
+.material.theme-dark pre:not(.frontmatter) .token.class,
+.material.theme-dark .HyperMD-codeblock .token.class {
+  color: #ffcb6b;
+}
+
+.material.theme-dark p > code .token.class-name,
+.material.theme-dark pre:not(.frontmatter) .token.class-name,
+.material.theme-dark .HyperMD-codeblock .token.class-name {
+  color: #f2ff00;
+}
+
+.material.theme-dark p > code .cm-comment,
+.material.theme-dark p > code .cm-meta,
+.material.theme-dark p > code .cm-hr,
+.material.theme-dark p > code .token.comment,
+.material.theme-dark pre:not(.frontmatter) .cm-comment,
+.material.theme-dark pre:not(.frontmatter) .cm-meta,
+.material.theme-dark pre:not(.frontmatter) .cm-hr,
+.material.theme-dark pre:not(.frontmatter) .token.comment,
+.material.theme-dark .HyperMD-codeblock .cm-comment,
+.material.theme-dark .HyperMD-codeblock .cm-meta,
+.material.theme-dark .HyperMD-codeblock .cm-hr,
+.material.theme-dark .HyperMD-codeblock .token.comment {
+  color: #616161;
+}
+
+.material.theme-dark p > code .token.constant,
+.material.theme-dark pre:not(.frontmatter) .token.constant,
+.material.theme-dark .HyperMD-codeblock .token.constant {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .token.deleted,
+.material.theme-dark pre:not(.frontmatter) .token.deleted,
+.material.theme-dark .HyperMD-codeblock .token.deleted {
+  color: #f66;
+}
+
+.material.theme-dark p > code .cm-type,
+.material.theme-dark p > code .token.doctype,
+.material.theme-dark pre:not(.frontmatter) .cm-type,
+.material.theme-dark pre:not(.frontmatter) .token.doctype,
+.material.theme-dark .HyperMD-codeblock .cm-type,
+.material.theme-dark .HyperMD-codeblock .token.doctype {
+  color: #616161;
+}
+
+.material.theme-dark p > code .token.entity,
+.material.theme-dark pre:not(.frontmatter) .token.entity,
+.material.theme-dark .HyperMD-codeblock .token.entity {
+  color: #f66;
+}
+
+.material.theme-dark p > code .cm-qualifier,
+.material.theme-dark p > code .token.function,
+.material.theme-dark pre:not(.frontmatter) .cm-qualifier,
+.material.theme-dark pre:not(.frontmatter) .token.function,
+.material.theme-dark .HyperMD-codeblock .cm-qualifier,
+.material.theme-dark .HyperMD-codeblock .token.function {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .token.hexcode,
+.material.theme-dark pre:not(.frontmatter) .token.hexcode,
+.material.theme-dark .HyperMD-codeblock .token.hexcode {
+  color: #f2ff00;
+}
+
+.material.theme-dark p > code .token.id,
+.material.theme-dark pre:not(.frontmatter) .token.id,
+.material.theme-dark .HyperMD-codeblock .token.id {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.material.theme-dark p > code .token.important,
+.material.theme-dark pre:not(.frontmatter) .token.important,
+.material.theme-dark .HyperMD-codeblock .token.important {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.material.theme-dark p > code .token.inserted,
+.material.theme-dark pre:not(.frontmatter) .token.inserted,
+.material.theme-dark .HyperMD-codeblock .token.inserted {
+  color: #80cbc4;
+}
+
+.material.theme-dark p > code .cm-keyword,
+.material.theme-dark p > code .token.keyword,
+.material.theme-dark pre:not(.frontmatter) .cm-keyword,
+.material.theme-dark pre:not(.frontmatter) .token.keyword,
+.material.theme-dark .HyperMD-codeblock .cm-keyword,
+.material.theme-dark .HyperMD-codeblock .token.keyword {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .cm-number,
+.material.theme-dark p > code .token.number,
+.material.theme-dark pre:not(.frontmatter) .cm-number,
+.material.theme-dark pre:not(.frontmatter) .token.number,
+.material.theme-dark .HyperMD-codeblock .cm-number,
+.material.theme-dark .HyperMD-codeblock .token.number {
+  color: #fd9170;
+}
+
+.material.theme-dark p > code .cm-operator,
+.material.theme-dark p > code .token.operator,
+.material.theme-dark pre:not(.frontmatter) .cm-operator,
+.material.theme-dark pre:not(.frontmatter) .token.operator,
+.material.theme-dark .HyperMD-codeblock .cm-operator,
+.material.theme-dark .HyperMD-codeblock .token.operator {
+  color: #89ddff;
+}
+
+.material.theme-dark p > code .token.prolog,
+.material.theme-dark pre:not(.frontmatter) .token.prolog,
+.material.theme-dark .HyperMD-codeblock .token.prolog {
+  color: #616161;
+}
+
+.material.theme-dark p > code .cm-property,
+.material.theme-dark p > code .token.property,
+.material.theme-dark pre:not(.frontmatter) .cm-property,
+.material.theme-dark pre:not(.frontmatter) .token.property,
+.material.theme-dark .HyperMD-codeblock .cm-property,
+.material.theme-dark .HyperMD-codeblock .token.property {
+  color: #80cbc4;
+}
+
+.material.theme-dark p > code .token.pseudo-class,
+.material.theme-dark pre:not(.frontmatter) .token.pseudo-class,
+.material.theme-dark .HyperMD-codeblock .token.pseudo-class {
+  color: #a5e844;
+}
+
+.material.theme-dark p > code .token.pseudo-element,
+.material.theme-dark pre:not(.frontmatter) .token.pseudo-element,
+.material.theme-dark .HyperMD-codeblock .token.pseudo-element {
+  color: #a5e844;
+}
+
+.material.theme-dark p > code .cm-punctuation,
+.material.theme-dark p > code .cm-bracket.cm-tag,
+.material.theme-dark p > code .token.punctuation,
+.material.theme-dark pre:not(.frontmatter) .cm-punctuation,
+.material.theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag,
+.material.theme-dark pre:not(.frontmatter) .token.punctuation,
+.material.theme-dark .HyperMD-codeblock .cm-punctuation,
+.material.theme-dark .HyperMD-codeblock .cm-bracket.cm-tag,
+.material.theme-dark .HyperMD-codeblock .token.punctuation {
+  color: #89ddff;
+}
+
+.material.theme-dark p > code .token.regex,
+.material.theme-dark pre:not(.frontmatter) .token.regex,
+.material.theme-dark .HyperMD-codeblock .token.regex {
+  color: #f2ff00;
+}
+
+.material.theme-dark p > code .token.selector,
+.material.theme-dark pre:not(.frontmatter) .token.selector,
+.material.theme-dark .HyperMD-codeblock .token.selector {
+  color: #f66;
+}
+
+.material.theme-dark p > code .cm-string-2,
+.material.theme-dark p > code .token.string,
+.material.theme-dark pre:not(.frontmatter) .cm-string-2,
+.material.theme-dark pre:not(.frontmatter) .token.string,
+.material.theme-dark .HyperMD-codeblock .cm-string-2,
+.material.theme-dark .HyperMD-codeblock .token.string {
+  color: #a5e844;
+}
+
+.material.theme-dark p > code .token.symbol,
+.material.theme-dark pre:not(.frontmatter) .token.symbol,
+.material.theme-dark .HyperMD-codeblock .token.symbol {
+  color: #c792ea;
+}
+
+.material.theme-dark p > code .cm-tag,
+.material.theme-dark p > code .token.tag,
+.material.theme-dark pre:not(.frontmatter) .cm-tag,
+.material.theme-dark pre:not(.frontmatter) .token.tag,
+.material.theme-dark .HyperMD-codeblock .cm-tag,
+.material.theme-dark .HyperMD-codeblock .token.tag {
+  color: #f66;
+}
+
+.material.theme-dark p > code .token.unit,
+.material.theme-dark pre:not(.frontmatter) .token.unit,
+.material.theme-dark .HyperMD-codeblock .token.unit {
+  color: #fd9170;
+}
+
+.material.theme-dark p > code .cm-link,
+.material.theme-dark p > code .token.url,
+.material.theme-dark pre:not(.frontmatter) .cm-link,
+.material.theme-dark pre:not(.frontmatter) .token.url,
+.material.theme-dark .HyperMD-codeblock .cm-link,
+.material.theme-dark .HyperMD-codeblock .token.url {
+  color: #f66;
+}
+
+.material.theme-dark p > code .cm-variable,
+.material.theme-dark p > code .cm-variable-2,
+.material.theme-dark p > code .cm-variable-3,
+.material.theme-dark p > code .token.variable,
+.material.theme-dark pre:not(.frontmatter) .cm-variable,
+.material.theme-dark pre:not(.frontmatter) .cm-variable-2,
+.material.theme-dark pre:not(.frontmatter) .cm-variable-3,
+.material.theme-dark pre:not(.frontmatter) .token.variable,
+.material.theme-dark .HyperMD-codeblock .cm-variable,
+.material.theme-dark .HyperMD-codeblock .cm-variable-2,
+.material.theme-dark .HyperMD-codeblock .cm-variable-3,
+.material.theme-dark .HyperMD-codeblock .token.variable {
+  color: #f66;
+}

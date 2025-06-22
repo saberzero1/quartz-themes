@@ -1,0 +1,233 @@
+.oreo-alternate-tab-toggle {
+  --header-height: 40px;
+  --tab-stacked-header-width: 40px;
+}
+
+.oreo-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) {
+  --tab-background: var(--tab-background-inactive);
+  --tab-background-active: var(--tab-background-active);
+  --tab-font-size: 12px;
+  --tab-height: 28px;
+  --tab-max-width: 200px;
+  --tab-max-width-active: 300px;
+}
+
+.oreo-alternate-tab-toggle .workspace-ribbon.mod-left {
+  margin-top: 40px;
+}
+
+.oreo-alternate-tab-toggle .workspace-ribbon.mod-left:before {
+  padding-bottom: 0px;
+}
+
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::before,
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::after,
+.oreo-alternate-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner::after {
+  display: none;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner,
+.oreo-alternate-tab-toggle
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  gap: 10px;
+}
+
+.oreo-disable-newtab-align.oreo-alternate-tab-toggle
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner,
+.oreo-disable-newtab-align.oreo-alternate-tab-toggle
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
+  width: unset;
+  gap: 10px;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header,
+.oreo-alternate-tab-toggle
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  background: var(--tab-background);
+  border-radius: 6px;
+  box-shadow: none !important;
+  height: 28px;
+  padding: 0 !important;
+  transition:
+    400ms,
+    background-color 150ms ease-in-out;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  max-width: 200px;
+  border: 1px solid var(--tab-divider-color);
+}
+
+.oreo-alternate-tab-toggle.oreo-alt-tab-anim-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
+  transition:
+    400ms,
+    background-color 150ms ease-in-out;
+}
+
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:first-child {
+  margin-left: 0;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner {
+  padding: 7px 8px;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner {
+  padding: 0 4px 0 8px;
+  transition:
+    400ms,
+    background-color 150ms ease-in-out,
+    max-width 400ms;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner,
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner-close-button,
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner-icon {
+  color: var(--tab-text-color);
+}
+
+.oreo-alternate-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner::after {
+  display: none;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active {
+  flex-grow: 1.67;
+  max-width: 300px;
+  background-color: var(--tab-background-active);
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--tab-text-color-focused-highlighted);
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-close-button,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--tab-text-color-focused-active);
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Oreo surface1 color */
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-close-button,
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked).mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--tab-text-color-focused-active-current) !important;
+}
+
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active:hover {
+  background-color: var(--tab-background-active);
+  /* Oreo border color */
+}
+
+.oreo-alternate-tab-toggle .sidebar-toggle-button.mod-left,
+.oreo-alternate-tab-toggle .sidebar-toggle-button.mod-right {
+  align-items: center;
+}
+
+.oreo-alternate-tab-toggle .sidebar-toggle-button.mod-left .clickable-icon,
+.oreo-alternate-tab-toggle .sidebar-toggle-button.mod-right .clickable-icon {
+  height: 28px;
+}

@@ -1,0 +1,14 @@
+.predefined-accent-color.accent-bubblegum {
+  --accent: var(--bubblegum);
+  --accent-h: 352;
+  --accent-s: 100%;
+  --accent-l: 85%;
+}
+
+.accent-bubblegum {
+  --text-on-accent: #353132;
+}
+
+.colorful-tooltips.accent-bubblegum .tooltip {
+  color: var(--text-on-accent);
+}

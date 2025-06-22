@@ -1,0 +1,46 @@
+.setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container {
+  margin-top: 1em;
+  order: 3;
+}
+
+.setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .embedded-backlinks {
+  padding: 0 2rem 0.5rem 2rem;
+}
+
+.setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container {
+  padding: 0.5em 2em 0 2em;
+}
+
+.setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container:has(~ .embedded-backlinks[style*='display: none']) {
+  padding-bottom: 0.5em;
+}
+
+.setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container[data-property-count='0']
+  ~ .embedded-backlinks {
+  padding-top: 0.5rem;
+}
+
+.theme-setting-stickyEmbeddedLinks-on
+  .setting-properties-position-below
+  .mod-root
+  .is-live-preview
+  .metadata-container {
+  position: sticky;
+  bottom: 0;
+  overflow-y: visible;
+}

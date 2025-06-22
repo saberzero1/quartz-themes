@@ -1,0 +1,15 @@
+body:not(.mu-reading-glow-status-off)
+  .markdown-reading-view
+  > div
+  > div
+  > div:not(.mod-header, .obsidian-banner-wrapper):active {
+  box-shadow:
+    0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color),
+    0 0 1.2rem 0.2rem var(--mu-reading-glow-color);
+  border-radius: var(--mu-reading-glow-radius);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.mu-reading-glow-status-off {
+  --mu-reading-glow-color: transparent;
+}

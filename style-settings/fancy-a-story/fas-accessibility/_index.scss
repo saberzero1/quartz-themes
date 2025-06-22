@@ -1,0 +1,21 @@
+:root,
+body {
+  --icon-opacity-inactive: 0.5;
+  --font-typewriter: 'TT2020Base', 'Courier', monospace;
+  --font-text-theme: 'Noto';
+  --font-weight: var(--font-normal);
+  --font-text-size: 18px !important;
+  --font-ui-smaller: 14px;
+  --font-ui-small: 15px;
+  --font-ui-medium: 17px;
+  --font-ui-large: 22px;
+}
+
+:is(, .fas-bigger-font) .cm-s-obsidian span.cm-formatting-quote {
+  font-weight: var(--font-normal);
+}
+body .style-settings-container [data-id='fas-sans-serif'],
+body .style-settings-container [data-id='fas-bigger-font'] {
+  opacity: 0.5;
+  pointer-events: none;
+}

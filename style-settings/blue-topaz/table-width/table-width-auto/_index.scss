@@ -1,0 +1,5 @@
+body-auto
+  :is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table) {
+  width: auto;
+}

@@ -1,0 +1,4 @@
+body.header-3-background .cm-header-3,
+body.header-3-background :is(.markdown-preview-view, .markdown-rendered) h3 {
+  background-color: var(--h3-bg-color);
+}

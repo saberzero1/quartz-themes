@@ -16,7 +16,7 @@
 .tree-item.nav-file:before,
 .tree-item.nav-folder:before,
 .tree-item-children.nav-folder-children:before {
-  content: "";
+  content: '';
   position: absolute;
   background: var(--bg-color);
 }
@@ -59,7 +59,7 @@
   top: 16px;
 }
 
-div.tree-item.nav-file:has(*[data-path*="_about_.md"]),
+div.tree-item.nav-file:has(*[data-path*='_about_.md']),
 .hide-folder-note .is-folder-note,
 .nav-files-container:not(.show-unsupported)
   .tree-item.nav-file:has(.is-unsupported):before {

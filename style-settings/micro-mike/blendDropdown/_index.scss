@@ -1,0 +1,32 @@
+.menu {
+  word-wrap: none;
+  white-space: nowrap;
+  text-overflow: clip;
+  background-color: #111111;
+  padding: 1px;
+  border: none;
+}
+.menu .menu-item {
+  height: 20px;
+  line-height: 1em;
+  font-size: 12px;
+  padding-left: 2px;
+}
+.menu .menu-item.selected:not(.is-disabled):not(.is-label),
+.menu .menu-item:hover:not(.is-disabled):not(.is-label) {
+  background: linear-gradient(180deg, #7aa3e5 0%, #5680c1 100%);
+  color: #000;
+}
+.menu .menu-item.selected:not(.is-disabled):not(.is-label) svg,
+.menu .menu-item:hover:not(.is-disabled):not(.is-label) svg {
+  color: #000;
+}
+.menu .menu-item .menu-item-icon.mod-checked {
+  bottom: 0px;
+}
+.menu .menu-separator {
+  position: relative;
+  width: 200%;
+  left: -1px;
+  margin: 2px auto;
+}

@@ -1,0 +1,67 @@
+.shib-workspace-background-image-toggle.theme-dark {
+  --background-primary-bg-4-bt: #1414148a;
+  --background-secondary-bg-4-bt: #16161680;
+  --background-secondary-alt-bg-4-bt: #16161680;
+  --background-primary-alt-bg-4-bt: #1c1c1ccf;
+  --text-normal: #cccccc;
+  --page-border-bottom: var(--color-base-30);
+}
+
+.shib-workspace-background-image-toggle.is-mobile {
+  --background-primary-bg-4-bt: #1f1f1fbf;
+  --background-secondary-bg-4-bt: #00000069;
+  --background-secondary-alt-bg-4-bt: #16161680;
+  --background-primary-alt-bg-4-bt: #00000082;
+  --text-normal: #d4d4d4;
+  --page-border-bottom: var(--color-base-30);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-cute-town-d.theme-dark {
+  --cute-town-d: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town-dark%20(2).png?raw=true');
+  --shib-background-image: var(--cute-town-d);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-in-the-sky.theme-dark {
+  --in-the-sky: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/in-the-sky.jpg?raw=true');
+  --shib-background-image: var(--in-the-sky);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-tokyo.theme-dark {
+  --tokyo: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/tokyo.jpeg?raw=true');
+  --shib-background-image: var(--tokyo);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-thunder.theme-dark {
+  --thunder: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/thunder.jpg?raw=true');
+  --shib-background-image: var(--thunder);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi.theme-dark {
+  --lofi: url('https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/bici.jpg');
+  --shib-background-image: var(--lofi);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi2.theme-dark {
+  --lofi2: url('https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/nord-street.png');
+  --shib-background-image: var(--lofi2);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi3.theme-dark {
+  --lofi3: url('https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/room.jpg');
+  --shib-background-image: var(--lofi3);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi4.theme-dark {
+  --lofi4: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/lofi4.jpg?raw=true');
+  --shib-background-image: var(--lofi4);
+}
+
+.shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-custom-option.theme-dark {
+  --shib-background-image: var(
+    --background-settings-workplace-theme-dark-custom
+  );
+}
+
+.shib-workspace-background-image-toggle.background-settings-markdown-page-custom-option.theme-dark {
+  --shib-background-image: var(--background-settings-markdown-page-custom);
+}

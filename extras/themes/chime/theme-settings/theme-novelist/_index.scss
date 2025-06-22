@@ -1,27 +1,75 @@
-.colorful-headings {
-  --h1-color: #9e7759;
-  --h2-color: #b58a62;
-  --h3-color: #cd9b6d;
-  --h4-color: #d29035;
-  --h5-color: rgb(210, 170, 51);
-  --h6-color: rgb(222, 173, 26);
+.theme-novelist {
+  --font-default:
+    Merriweather, Georgia, 'Libre Baskerville', 'Baskerville Old Face',
+    'Book Antiqua', sans-serif;
 }
 
-.theme-light {
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #faf8f0;
-  --color-base-05: #f2eadb;
-  --color-base-10: #f4f0e9;
-  --color-base-20: #f4eee3;
-  --color-base-25: #ccb8a0;
-  --color-base-30: #e1d5c9;
-  --color-base-35: #cebcac;
-  --color-base-40: #c1a88f;
-  --color-base-50: #a2988f;
-  --color-base-60: #9f7b5f;
-  --color-base-70: #7b6c65;
-  --color-base-100: #524f4d;
+.theme-novelist .markdown-preview-view br {
+  content: '';
+  display: block;
+  margin-top: 10px;
+}
+
+.theme-novelist:not(.is-mobile) .markdown-rendered hr::before,
+.theme-novelist .markdown-source-view hr::before {
+  font-size: 1.5em;
+  content: '🕮';
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0.35rem;
+  color: var(--background-modifier-border-hover);
+  background-color: var(--background-primary);
+  z-index: 1;
+}
+
+.theme-novelist.colorful-headings-alt .inline-title,
+.theme-novelist.colorful-headings-alt h1,
+.theme-novelist.colorful-headings-alt .HyperMD-header-1,
+.theme-novelist.colorful-headings-alt h2,
+.theme-novelist.colorful-headings-alt .HyperMD-header-2,
+.theme-novelist.colorful-headings-alt h3,
+.theme-novelist.colorful-headings-alt .HyperMD-header-3,
+.theme-novelist.colorful-headings-alt h4,
+.theme-novelist.colorful-headings-alt .HyperMD-header-4,
+.theme-novelist.colorful-headings-alt h5,
+.theme-novelist.colorful-headings-alt .HyperMD-header-5,
+.theme-novelist.colorful-headings-alt h6,
+.theme-novelist.colorful-headings-alt .HyperMD-header-6 {
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.theme-novelist.colorful-headings-alt h1,
+.theme-novelist.colorful-headings-alt HyperMD-header-1,
+.theme-novelist.colorful-headings-alt .inline-title {
+  background-image: linear-gradient(rgb(244, 205, 11), rgb(216, 171, 57));
+}
+
+.theme-novelist.colorful-headings-alt h2,
+.theme-novelist.colorful-headings-alt HyperMD-header-2 {
+  background-image: linear-gradient(#f4ba69, rgb(210, 170, 51));
+}
+
+.theme-novelist.colorful-headings-alt h3,
+.theme-novelist.colorful-headings-alt HyperMD-header-3 {
+  background-image: linear-gradient(#dfb535, #d29035);
+}
+
+.theme-novelist.colorful-headings-alt h4,
+.theme-novelist.colorful-headings-alt HyperMD-header-4 {
+  background-image: linear-gradient(#f1a73f, #b7895d);
+}
+
+.theme-novelist.colorful-headings-alt h5,
+.theme-novelist.colorful-headings-alt HyperMD-header-5 {
+  background-image: linear-gradient(#f1ae6f, #b47f4e);
+}
+
+.theme-novelist.colorful-headings-alt h6,
+.theme-novelist.colorful-headings-alt HyperMD-header-6 {
+  background-image: linear-gradient(#f08e34, #946d4f);
 }

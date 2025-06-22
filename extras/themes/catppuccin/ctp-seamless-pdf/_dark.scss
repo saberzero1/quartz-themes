@@ -1,0 +1,9 @@
+.theme-light.ctp-seamless-pdf,
+.ctp-seamless-pdf {
+  --pdf-shadow: none;
+}
+
+.theme-light.ctp-seamless-pdf .pdfViewer .page,
+.ctp-seamless-pdf .pdfViewer .page {
+  border: 0;
+}

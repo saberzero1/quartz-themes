@@ -25,12 +25,12 @@ body {
 
 body {
   --inline-title-line-height: 105%;
-  --h1-font: "Bricolage Grotesque";
-  --h2-font: "Bricolage Grotesque";
-  --h3-font: "Bricolage Grotesque";
-  --h4-font: "Bricolage Grotesque";
-  --h5-font: "Bricolage Grotesque";
-  --h6-font: "Bricolage Grotesque";
+  --h1-font: 'Bricolage Grotesque';
+  --h2-font: 'Bricolage Grotesque';
+  --h3-font: 'Bricolage Grotesque';
+  --h4-font: 'Bricolage Grotesque';
+  --h5-font: 'Bricolage Grotesque';
+  --h6-font: 'Bricolage Grotesque';
 }
 
 .cm-s-obsidian .cm-line.HyperMD-header {
@@ -79,7 +79,7 @@ body {
 
 .cm-header,
 .inline-title {
-  font-variation-settings: "opsz" 32;
+  font-variation-settings: 'opsz' 32;
   font-kerning: normal;
   text-wrap: balance;
   letter-spacing: 0.01em;
@@ -178,7 +178,7 @@ body {
 body {
   --callout-default: var(--blue-300);
 }
-body .callout[data-callout="default"] {
+body .callout[data-callout='default'] {
   --callout-title-color: var(--blue-400);
   --callout-content: var(--blue-600);
 }
@@ -186,9 +186,9 @@ body .callout[data-callout="default"] {
 body {
   --callout-summary: var(--gray-300);
 }
-body .callout[data-callout="summary"],
-body .callout[data-callout="tldr"],
-body .callout[data-callout="abstract"] {
+body .callout[data-callout='summary'],
+body .callout[data-callout='tldr'],
+body .callout[data-callout='abstract'] {
   --callout-title-color: var(--gray-500);
   --callout-content: var(--gray-700);
 }
@@ -196,7 +196,7 @@ body .callout[data-callout="abstract"] {
 body {
   --callout-info: var(--gray-400);
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout='info'] {
   --callout-title-color: var(--gray-900);
   --callout-content: var(--gray-600);
 }
@@ -204,7 +204,7 @@ body .callout[data-callout="info"] {
 body {
   --callout-todo: var(--blue-300);
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout='todo'] {
   --callout-title-color: var(--blue-500);
   --callout-content: var(--blue-700);
 }
@@ -212,8 +212,8 @@ body .callout[data-callout="todo"] {
 body {
   --callout-tip: var(--sea-green-300);
 }
-body .callout[data-callout="tip"],
-body .callout[data-callout="hint"] {
+body .callout[data-callout='tip'],
+body .callout[data-callout='hint'] {
   --callout-title-color: var(--sea-green-500);
   --callout-content: var(--sea-green-700);
 }
@@ -221,7 +221,7 @@ body .callout[data-callout="hint"] {
 body {
   --callout-important: var(--orange-300);
 }
-body .callout[data-callout="important"] {
+body .callout[data-callout='important'] {
   --callout-title-color: var(--orange-400);
   --callout-content: var(--orange-700);
 }
@@ -229,9 +229,9 @@ body .callout[data-callout="important"] {
 body {
   --callout-success: var(--green-300);
 }
-body .callout[data-callout="success"],
-body .callout[data-callout="check"],
-body .callout[data-callout="done"] {
+body .callout[data-callout='success'],
+body .callout[data-callout='check'],
+body .callout[data-callout='done'] {
   --callout-title-color: var(--green-500);
   --callout-content: var(--green-700);
 }
@@ -239,9 +239,9 @@ body .callout[data-callout="done"] {
 body {
   --callout-question: var(--orange-300);
 }
-body .callout[data-callout="question"],
-body .callout[data-callout="help"],
-body .callout[data-callout="faq"] {
+body .callout[data-callout='question'],
+body .callout[data-callout='help'],
+body .callout[data-callout='faq'] {
   --callout-title-color: var(--orange-400);
   --callout-content: var(--orange-700);
 }
@@ -249,9 +249,9 @@ body .callout[data-callout="faq"] {
 body {
   --callout-warning: var(--orange-300);
 }
-body .callout[data-callout="warning"],
-body .callout[data-callout="attention"],
-body .callout[data-callout="caution"] {
+body .callout[data-callout='warning'],
+body .callout[data-callout='attention'],
+body .callout[data-callout='caution'] {
   --callout-title-color: var(--orange-500);
   --callout-content: var(--orange-700);
 }
@@ -259,9 +259,9 @@ body .callout[data-callout="caution"] {
 body {
   --callout-fail: var(--red-300);
 }
-body .callout[data-callout="fail"],
-body .callout[data-callout="failure"],
-body .callout[data-callout="missing"] {
+body .callout[data-callout='fail'],
+body .callout[data-callout='failure'],
+body .callout[data-callout='missing'] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-600);
 }
@@ -269,8 +269,8 @@ body .callout[data-callout="missing"] {
 body {
   --callout-error: var(--red-300);
 }
-body .callout[data-callout="error"],
-body .callout[data-callout="danger"] {
+body .callout[data-callout='error'],
+body .callout[data-callout='danger'] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-600);
 }
@@ -278,7 +278,7 @@ body .callout[data-callout="danger"] {
 body {
   --callout-bug: var(--red-300);
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout='bug'] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-700);
 }
@@ -286,7 +286,7 @@ body .callout[data-callout="bug"] {
 body {
   --callout-example: var(--yellow-300);
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout='example'] {
   --callout-title-color: var(--yellow-400);
   --callout-content: var(--yellow-800);
 }
@@ -294,8 +294,8 @@ body .callout[data-callout="example"] {
 body {
   --callout-quote: var(--gray-300);
 }
-body .callout[data-callout="quote"],
-body .callout[data-callout="cite"] {
+body .callout[data-callout='quote'],
+body .callout[data-callout='cite'] {
   --callout-title-color: var(--gray-500);
   --callout-content: var(--gray-700);
 }
@@ -398,7 +398,7 @@ body {
   padding: var(--size-4-2);
 }
 
-.workspace-leaf-content[data-type="outline"] .view-content {
+.workspace-leaf-content[data-type='outline'] .view-content {
   padding-top: var(--size-4-2);
 }
 
@@ -989,7 +989,7 @@ body {
   );
 }
 
-input[type="checkbox"]:checked:hover {
+input[type='checkbox']:checked:hover {
   background-color: var(--gray-600);
 }
 
@@ -999,16 +999,16 @@ body .theme-dark {
 body .theme-light {
   --checkbox-quote-color: var(--red-300);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="/"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='/'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--gray-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="/"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='/'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
 }
-body input[data-task="/"]:checked,
-body li[data-task="/"] > input:checked,
-body li[data-task="/"] > p > input:checked {
+body input[data-task='/']:checked,
+body li[data-task='/'] > input:checked,
+body li[data-task='/'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1016,27 +1016,27 @@ body li[data-task="/"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="/"]:checked,
-body li[data-task="/"] > input:checked,
-body li[data-task="/"] > p > input:checked {
+body input[data-task='/']:checked,
+body li[data-task='/'] > input:checked,
+body li[data-task='/'] > p > input:checked {
   color: var(--gray-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-loader'%3E%3Cpath d='M12 2v4'/%3E%3Cpath d='m16.2 7.8 2.9-2.9'/%3E%3Cpath d='M18 12h4'/%3E%3Cpath d='m16.2 16.2 2.9 2.9'/%3E%3Cpath d='M12 18v4'/%3E%3Cpath d='m4.9 19.1 2.9-2.9'/%3E%3Cpath d='M2 12h4'/%3E%3Cpath d='m4.9 4.9 2.9 2.9'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body input[data-task="x"][type="checkbox"]:checked,
-body input[data-task="X"][type="checkbox"]:checked {
+body input[data-task='x'][type='checkbox']:checked,
+body input[data-task='X'][type='checkbox']:checked {
   background-color: transparent;
   border-color: transparent;
 }
-body input[data-task="x"][type="checkbox"]:checked:after,
-body input[data-task="X"][type="checkbox"]:checked:after {
+body input[data-task='x'][type='checkbox']:checked:after,
+body input[data-task='X'][type='checkbox']:checked:after {
   color: var(--checklist-done-color);
   background-color: currentColor;
   -webkit-mask-size: 23px;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16px' viewBox='0 -960 960 960' width='20px' fill='%23e8eaed'%3E%3Cpath d='m419-285 291-292-63-64-228 228-111-111-63 64 174 175Zm60.68 226q-86.32 0-163.65-32.6-77.32-32.61-134.57-89.86T91.6-316.03Q59-393.35 59-479.86q0-87.41 32.66-164.28Q124.33-721 181.7-778.58q57.38-57.57 134.41-90.49Q393.15-902 479.34-902q87.55 0 164.83 32.85 77.29 32.85 134.57 90.3 57.29 57.46 90.27 134.52Q902-567.26 902-479.46q0 86.74-32.93 163.55-32.92 76.81-90.49 134.2Q721-124.33 644.13-91.66 567.26-59 479.68-59Z'/%3E%3C/svg%3E");
 }
-body input[data-task="x"][type="checkbox"]:checked:after:checked,
-body input[data-task="X"][type="checkbox"]:checked:after:checked {
+body input[data-task='x'][type='checkbox']:checked:after:checked,
+body input[data-task='X'][type='checkbox']:checked:after:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1044,23 +1044,23 @@ body input[data-task="X"][type="checkbox"]:checked:after:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
-body ul > li.task-list-item[data-task="x"],
-body ul > li.task-list-item[data-task="X"] {
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+body ul > li.task-list-item[data-task='x'],
+body ul > li.task-list-item[data-task='X'] {
   text-decoration: var(--checklist-done-decoration);
   color: var(--gray-300);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="-"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='-'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--gray-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="-"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='-'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
 }
-body input[data-task="-"]:checked,
-body li[data-task="-"] > input:checked,
-body li[data-task="-"] > p > input:checked {
+body input[data-task='-']:checked,
+body li[data-task='-'] > input:checked,
+body li[data-task='-'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1068,31 +1068,31 @@ body li[data-task="-"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="-"]:checked,
-body li[data-task="-"] > input:checked,
-body li[data-task="-"] > p > input:checked {
+body input[data-task='-']:checked,
+body li[data-task='-'] > input:checked,
+body li[data-task='-'] > p > input:checked {
   color: var(--gray-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-off'%3E%3Cpath d='m2 2 20 20'/%3E%3Cpath d='M8.35 2.69A10 10 0 0 1 21.3 15.65'/%3E%3Cpath d='M19.08 19.08A10 10 0 1 1 4.92 4.92'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
-body ul > li.task-list-item[data-task="-"],
-body ul > li.task-list-item[data-task="-"] {
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='-'],
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='-'],
+body ul > li.task-list-item[data-task='-'],
+body ul > li.task-list-item[data-task='-'] {
   text-decoration: var(--checklist-done-decoration);
   --checklist-done-color: var(--gray-300);
   color: var(--checklist-done-color) !important;
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=">"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='>'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--blue-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=">"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='>'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
 }
-body input[data-task=">"]:checked,
-body li[data-task=">"] > input:checked,
-body li[data-task=">"] > p > input:checked {
+body input[data-task='>']:checked,
+body li[data-task='>'] > input:checked,
+body li[data-task='>'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1100,23 +1100,23 @@ body li[data-task=">"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task=">"]:checked,
-body li[data-task=">"] > input:checked,
-body li[data-task=">"] > p > input:checked {
+body input[data-task='>']:checked,
+body li[data-task='>'] > input:checked,
+body li[data-task='>'] > p > input:checked {
   color: var(--blue-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 -960 960 960' width='18px' fill='%23e8eaed'%3E%3Cpath d='M762-521 612-671q-16-16-15.5-37.5T613-746q16-15 37.5-15t36.5 15l188 188q8 8 11.5 17t3.5 20q0 11-3.5 20T875-484L687-296q-16 16-37 15.5T613-296q-16-16-16.5-37.5T612-371l150-150Zm-288 53H264q-45 0-77.5 32T154-358v137q0 22-15.5 37.5T101-168q-22 0-37.5-15.5T48-221v-137q0-90 63.5-153T264-574h210l-98-98q-16-16-15.5-38t16.5-37q16-15 37-15t36 15l189 189q8 8 11.5 17t3.5 20q0 11-3.5 20T639-484L451-296q-15 15-36.5 15.5T377-295q-16-15-16.5-37t15.5-38l98-98Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="<"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='<'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--gray-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="<"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='<'] {
   background-color: color-mix(in srgb, var(--gray-400), var(--gray-50) 85%);
 }
-body input[data-task="<"]:checked,
-body li[data-task="<"] > input:checked,
-body li[data-task="<"] > p > input:checked {
+body input[data-task='<']:checked,
+body li[data-task='<'] > input:checked,
+body li[data-task='<'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1124,14 +1124,14 @@ body li[data-task="<"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="<"]:checked,
-body li[data-task="<"] > input:checked,
-body li[data-task="<"] > p > input:checked {
+body input[data-task='<']:checked,
+body li[data-task='<'] > input:checked,
+body li[data-task='<'] > p > input:checked {
   color: var(--gray-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-calendar'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect width='18' height='18' x='3' y='4' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="?"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='?'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
@@ -1140,16 +1140,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="?"] {
   border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="?"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='?'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="?"]:checked,
-body li[data-task="?"] > input:checked,
-body li[data-task="?"] > p > input:checked {
+body input[data-task='?']:checked,
+body li[data-task='?'] > input:checked,
+body li[data-task='?'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1157,14 +1157,14 @@ body li[data-task="?"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="?"]:checked,
-body li[data-task="?"] > input:checked,
-body li[data-task="?"] > p > input:checked {
+body input[data-task='?']:checked,
+body li[data-task='?'] > input:checked,
+body li[data-task='?'] > p > input:checked {
   color: var(--checklist-orange-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 -960 960 960' width='18px' fill='%23e8eaed'%3E%3Cpath d='M479.75-218Q504-218 521-234.75q17-16.74 17-41Q538-300 521.25-317q-16.74-17-41-17Q456-334 439-317.25q-17 16.74-17 41Q422-252 438.75-235q16.74 17 41 17Zm.53 154q-85.92 0-161.76-32.52-75.84-32.52-132.66-89.34-56.82-56.82-89.34-132.62Q64-394.28 64-480.46q0-86.44 32.58-162 32.58-75.57 89.5-132.55Q243-832 318.7-864q75.69-32 161.76-32 86.43 0 161.98 32Q718-832 775-775t89 132.81q32 75.81 32 162T864-318.5q-32 75.5-88.99 132.42-56.98 56.92-132.77 89.5Q566.45-64 480.28-64Zm2.68-590q22.58 0 41.81 12.68Q544-628.64 544-606.39 544-586 531.31-569q-12.7 17-29.31 30-26 22-49 47.5T430-433q0 19.67 14.18 32.83Q458.36-387 478.6-387q20.65 0 35.03-13.5Q528-414 533-435q5-23 19.64-40.17 14.63-17.17 31.36-32.77 23-22.06 40-50.75T641-619q0-57-47.5-91.5T485.14-745q-42.05 0-79.59 19-37.55 19-63.71 54.27-9.84 12.81-5.34 28.77Q341-627 354.64-615.2 372-601 393-607.5q21-6.5 36-23.5 11-12 24.35-17.5 13.35-5.5 29.61-5.5Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="!"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='!'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
@@ -1173,16 +1173,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="!"] {
   border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
     solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="!"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='!'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="!"]:checked,
-body li[data-task="!"] > input:checked,
-body li[data-task="!"] > p > input:checked {
+body input[data-task='!']:checked,
+body li[data-task='!'] > input:checked,
+body li[data-task='!'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1190,14 +1190,14 @@ body li[data-task="!"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="!"]:checked,
-body li[data-task="!"] > input:checked,
-body li[data-task="!"] > p > input:checked {
+body input[data-task='!']:checked,
+body li[data-task='!'] > input:checked,
+body li[data-task='!'] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='19px' viewBox='0 -960 960 960' width='19px' fill='%23e8eaed'%3E%3Cpath d='M479.59-96Q439-96 410.5-124.91q-28.5-28.9-28.5-69.5 0-40.59 28.91-69.09 28.9-28.5 69.5-28.5 40.59 0 69.09 28.91 28.5 28.9 28.5 69.5 0 40.59-28.91 69.09-28.9 28.5-69.5 28.5Zm.2-298Q436-394 406-424.17q-30-30.16-30-73.89v-260.22Q376-802 406.21-832t74-30Q524-862 554-831.83q30 30.16 30 73.89v260.22Q584-454 553.79-424t-74 30Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="*"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='*'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
@@ -1206,16 +1206,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="*"] {
   border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="*"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='*'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="*"]:checked,
-body li[data-task="*"] > input:checked,
-body li[data-task="*"] > p > input:checked {
+body input[data-task='*']:checked,
+body li[data-task='*'] > input:checked,
+body li[data-task='*'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1223,9 +1223,9 @@ body li[data-task="*"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="*"]:checked,
-body li[data-task="*"] > input:checked,
-body li[data-task="*"] > p > input:checked {
+body input[data-task='*']:checked,
+body li[data-task='*'] > input:checked,
+body li[data-task='*'] > p > input:checked {
   color: var(--checklist-yellow-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='19px' viewBox='0 -960 960 960' width='19px' fill='%23e8eaed'%3E%3Cpath d='m480-270-157 94q-15 8-29.5 7t-25.5-9q-11-8-16-22.5t-1-29.5l41-176-139-118q-13-10-15.5-24.5T139-576q4-13 16-22.5t27-10.5l181-16 72-167q7-16 19-23t26-7q14 0 26 7t19 23l72 168 181 15q15 1 27 11t16 23q4 13 1 27t-16 24L668-406l41 176q4 15-1 29.5T692-178q-11 8-25.5 9t-29.5-7l-157-94Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
@@ -1247,7 +1247,7 @@ body li[data-task=\"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-quote'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
   transform: scaleY(0.9);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="l"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='l'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
@@ -1256,16 +1256,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="l"] {
   border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
     solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="l"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='l'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="l"]:checked,
-body li[data-task="l"] > input:checked,
-body li[data-task="l"] > p > input:checked {
+body input[data-task='l']:checked,
+body li[data-task='l'] > input:checked,
+body li[data-task='l'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1273,23 +1273,23 @@ body li[data-task="l"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="l"]:checked,
-body li[data-task="l"] > input:checked,
-body li[data-task="l"] > p > input:checked {
+body input[data-task='l']:checked,
+body li[data-task='l'] > input:checked,
+body li[data-task='l'] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-map-pin'%3E%3Cpath d='M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="b"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='b'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--blue-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="b"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='b'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
 }
-body input[data-task="b"]:checked,
-body li[data-task="b"] > input:checked,
-body li[data-task="b"] > p > input:checked {
+body input[data-task='b']:checked,
+body li[data-task='b'] > input:checked,
+body li[data-task='b'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1297,23 +1297,23 @@ body li[data-task="b"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="b"]:checked,
-body li[data-task="b"] > input:checked,
-body li[data-task="b"] > p > input:checked {
+body input[data-task='b']:checked,
+body li[data-task='b'] > input:checked,
+body li[data-task='b'] > p > input:checked {
   color: var(--blue-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-bookmark'%3E%3Cpath d='m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="i"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='i'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--blue-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="i"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='i'] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
 }
-body input[data-task="i"]:checked,
-body li[data-task="i"] > input:checked,
-body li[data-task="i"] > p > input:checked {
+body input[data-task='i']:checked,
+body li[data-task='i'] > input:checked,
+body li[data-task='i'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1321,14 +1321,14 @@ body li[data-task="i"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="i"]:checked,
-body li[data-task="i"] > input:checked,
-body li[data-task="i"] > p > input:checked {
+body input[data-task='i']:checked,
+body li[data-task='i'] > input:checked,
+body li[data-task='i'] > p > input:checked {
   color: var(--blue-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-alert'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' x2='12' y1='8' y2='12'/%3E%3Cline x1='12' x2='12.01' y1='16' y2='16'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="S"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='S'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
@@ -1337,16 +1337,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="S"] {
   border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="S"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='S'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="S"]:checked,
-body li[data-task="S"] > input:checked,
-body li[data-task="S"] > p > input:checked {
+body input[data-task='S']:checked,
+body li[data-task='S'] > input:checked,
+body li[data-task='S'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1354,14 +1354,14 @@ body li[data-task="S"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="S"]:checked,
-body li[data-task="S"] > input:checked,
-body li[data-task="S"] > p > input:checked {
+body input[data-task='S']:checked,
+body li[data-task='S'] > input:checked,
+body li[data-task='S'] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-dollar-sign'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8'/%3E%3Cpath d='M12 18V6'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="I"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='I'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
@@ -1370,16 +1370,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="I"] {
   border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="I"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='I'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="I"]:checked,
-body li[data-task="I"] > input:checked,
-body li[data-task="I"] > p > input:checked {
+body input[data-task='I']:checked,
+body li[data-task='I'] > input:checked,
+body li[data-task='I'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1387,14 +1387,14 @@ body li[data-task="I"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="I"]:checked,
-body li[data-task="I"] > input:checked,
-body li[data-task="I"] > p > input:checked {
+body input[data-task='I']:checked,
+body li[data-task='I'] > input:checked,
+body li[data-task='I'] > p > input:checked {
   color: var(--checklist-yellow-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 -960 960 960' width='18px' fill='%23e8eaed'%3E%3Cpath d='M407.74-240Q378-240 357-261.15 336-282.3 336-312v-67q-57-37.3-88.5-95.65Q216-533 216-600q0-110.31 76.78-187.16 76.78-76.84 187-76.84T667-787.16q77 76.85 77 187.16 0 66.82-31.5 125.41T624-379v67q0 29.7-21.18 50.85Q581.65-240 551.91-240H407.74ZM396-96q-15.3 0-25.65-10.29Q360-116.58 360-131.79t10.35-25.71Q380.7-168 396-168h168q15.3 0 25.65 10.29Q600-147.42 600-132.21t-10.35 25.71Q579.3-96 564-96H396Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="p"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='p'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
@@ -1403,16 +1403,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="p"] {
   border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="p"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='p'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="p"]:checked,
-body li[data-task="p"] > input:checked,
-body li[data-task="p"] > p > input:checked {
+body input[data-task='p']:checked,
+body li[data-task='p'] > input:checked,
+body li[data-task='p'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1420,14 +1420,14 @@ body li[data-task="p"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="p"]:checked,
-body li[data-task="p"] > input:checked,
-body li[data-task="p"] > p > input:checked {
+body input[data-task='p']:checked,
+body li[data-task='p'] > input:checked,
+body li[data-task='p'] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-thumbs-up'%3E%3Cpath d='M7 10v12'/%3E%3Cpath d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="c"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='c'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
@@ -1436,16 +1436,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="c"] {
   border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
     solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="c"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='c'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="c"]:checked,
-body li[data-task="c"] > input:checked,
-body li[data-task="c"] > p > input:checked {
+body input[data-task='c']:checked,
+body li[data-task='c'] > input:checked,
+body li[data-task='c'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1453,14 +1453,14 @@ body li[data-task="c"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="c"]:checked,
-body li[data-task="c"] > input:checked,
-body li[data-task="c"] > p > input:checked {
+body input[data-task='c']:checked,
+body li[data-task='c'] > input:checked,
+body li[data-task='c'] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-thumbs-up'%3E%3Cpath d='M7 10v12'/%3E%3Cpath d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z'/%3E%3C/svg%3E");
   transform: rotate(180deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="f"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='f'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
@@ -1469,16 +1469,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="f"] {
   border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="f"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='f'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="f"]:checked,
-body li[data-task="f"] > input:checked,
-body li[data-task="f"] > p > input:checked {
+body input[data-task='f']:checked,
+body li[data-task='f'] > input:checked,
+body li[data-task='f'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1486,14 +1486,14 @@ body li[data-task="f"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="f"]:checked,
-body li[data-task="f"] > input:checked,
-body li[data-task="f"] > p > input:checked {
+body input[data-task='f']:checked,
+body li[data-task='f'] > input:checked,
+body li[data-task='f'] > p > input:checked {
   color: var(--checklist-orange-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-flame'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="k"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='k'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
@@ -1502,16 +1502,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="k"] {
   border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="k"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='k'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-orange-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="k"]:checked,
-body li[data-task="k"] > input:checked,
-body li[data-task="k"] > p > input:checked {
+body input[data-task='k']:checked,
+body li[data-task='k'] > input:checked,
+body li[data-task='k'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1519,14 +1519,14 @@ body li[data-task="k"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="k"]:checked,
-body li[data-task="k"] > input:checked,
-body li[data-task="k"] > p > input:checked {
+body input[data-task='k']:checked,
+body li[data-task='k'] > input:checked,
+body li[data-task='k'] > p > input:checked {
   color: var(--checklist-orange-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-key'%3E%3Cpath d='m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4'/%3E%3Cpath d='m21 2-9.6 9.6'/%3E%3Ccircle cx='7.5' cy='15.5' r='5.5'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="w"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='w'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
@@ -1535,16 +1535,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="w"] {
   border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="w"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='w'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-yellow-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="w"]:checked,
-body li[data-task="w"] > input:checked,
-body li[data-task="w"] > p > input:checked {
+body input[data-task='w']:checked,
+body li[data-task='w'] > input:checked,
+body li[data-task='w'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1552,14 +1552,14 @@ body li[data-task="w"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="w"]:checked,
-body li[data-task="w"] > input:checked,
-body li[data-task="w"] > p > input:checked {
+body input[data-task='w']:checked,
+body li[data-task='w'] > input:checked,
+body li[data-task='w'] > p > input:checked {
   color: var(--checklist-yellow-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-crown'%3E%3Cpath d='M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="u"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='u'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
@@ -1568,16 +1568,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="u"] {
   border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
     1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="u"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='u'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-green-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="u"]:checked,
-body li[data-task="u"] > input:checked,
-body li[data-task="u"] > p > input:checked {
+body input[data-task='u']:checked,
+body li[data-task='u'] > input:checked,
+body li[data-task='u'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1585,14 +1585,14 @@ body li[data-task="u"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="u"]:checked,
-body li[data-task="u"] > input:checked,
-body li[data-task="u"] > p > input:checked {
+body input[data-task='u']:checked,
+body li[data-task='u'] > input:checked,
+body li[data-task='u'] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-chevron-up'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m8 14 4-4 4 4'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="d"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task='d'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
@@ -1601,16 +1601,16 @@ body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="d"] {
   border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
     solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="d"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task='d'] {
   background-color: color-mix(
     in srgb,
     var(--checklist-red-color),
     var(--gray-50) 85%
   );
 }
-body input[data-task="d"]:checked,
-body li[data-task="d"] > input:checked,
-body li[data-task="d"] > p > input:checked {
+body input[data-task='d']:checked,
+body li[data-task='d'] > input:checked,
+body li[data-task='d'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1618,9 +1618,9 @@ body li[data-task="d"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="d"]:checked,
-body li[data-task="d"] > input:checked,
-body li[data-task="d"] > p > input:checked {
+body input[data-task='d']:checked,
+body li[data-task='d'] > input:checked,
+body li[data-task='d'] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-chevron-up'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m8 14 4-4 4 4'/%3E%3C/svg%3E");
   transform: rotate(180deg);
@@ -1823,10 +1823,10 @@ body li[data-task="d"] > p > input:checked {
 }
 .tasks-styled
   .contains-task-list.plugin-tasks-query-result
-  li:has(input[type="checkbox"]:hover) {
+  li:has(input[type='checkbox']:hover) {
   background-color: var(--gray-100);
 }
-.tasks-styled .contains-task-list.plugin-tasks-query-result li[data-task="x"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li[data-task='x'] {
   opacity: 0.75;
   color: var(--gray-300);
 }
@@ -1912,7 +1912,7 @@ body li[data-task="d"] > p > input:checked {
 }
 .tasks-styled--unique-lines
   .contains-task-list.plugin-tasks-query-result
-  li[data-task="x"] {
+  li[data-task='x'] {
   opacity: 0.75;
   color: var(--gray-300);
 }
@@ -1935,7 +1935,7 @@ body li[data-task="d"] > p > input:checked {
 }
 
 @font-face {
-  font-family: "Bricolage Grotesque";
+  font-family: 'Bricolage Grotesque';
   /* Add other properties here, as needed. For example: */
   /*
   font-weight: 100 900;
@@ -2236,8 +2236,8 @@ body {
   --text-muted: var(--gray-600);
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
-  --font-text-theme: "Inter";
-  --file-header-font: "Inter";
+  --font-text-theme: 'Inter';
+  --file-header-font: 'Inter';
   --link-decoration: none;
   --bold-modifier: 200;
   --bold-modifier: 300;

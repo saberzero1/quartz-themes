@@ -36,8 +36,8 @@ svg * {
 
 .body {
   font-family:
-    "Myriad Apple",
-    "yu gothic",
+    'Myriad Apple',
+    'yu gothic',
     myriad apple text,
     sans-serif !important;
 }
@@ -56,25 +56,25 @@ body {
 }
 
 .workspace-tab-header-inner-title {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 .nav-file-title,
 .nav-folder-title {
   font-size: 1em;
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
 }
 
 body {
   --inline-title-color: #a48783;
-  --inline-title-font: "georgia", serif;
+  --inline-title-font: 'georgia', serif;
   --inline-title-size: 2em;
   --inline-title-margin-bottom: 0.5em;
 }
 
 a.tag,
 .cm-hashtag {
-  font-family: "georgia", serif;
+  font-family: 'georgia', serif;
 }
 
 .callout > .callout-content p:last-child {
@@ -142,7 +142,7 @@ a.tag,
 .markdown-preview-section > div h4,
 .markdown-preview-section > div h5,
 .markdown-preview-section > div h6 {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   margin-top: 40px;
   font-weight: normal;
   color: #a48783 !important;

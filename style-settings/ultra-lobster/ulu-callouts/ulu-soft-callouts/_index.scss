@@ -1,0 +1,15 @@
+.ulu-soft-callouts .callout {
+  position: relative;
+  overflow: hidden;
+}
+.ulu-soft-callouts .callout:before {
+  background: rgb(var(--callout-color));
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  border-radius: 0px;
+}

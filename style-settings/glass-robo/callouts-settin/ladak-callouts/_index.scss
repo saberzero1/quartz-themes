@@ -1,0 +1,49 @@
+.ladak-callouts .callout {
+  position: relative;
+  border-radius: 8px;
+}
+.ladak-callouts .callout .callout-title {
+  background: rgba(var(--callout-color), 1);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px 8px 8px 0;
+  overflow: visible;
+}
+.ladak-callouts .callout .callout-title .callout-title-inner {
+  color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  z-index: 15;
+}
+.ladak-callouts .callout .callout-title::after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  bottom: -50px;
+  left: 0;
+  height: 50px;
+  width: 25px;
+  border-top-left-radius: 8px;
+  box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+}
+.ladak-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title {
+  left: unset;
+  right: 0;
+  border-radius: 8px 8px 0 8px;
+}
+.ladak-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title::after {
+  left: unset;
+  right: 0;
+  border-top-left-radius: unset;
+  border-top-right-radius: 8px;
+}
+.ladak-callouts .callout .callout-content {
+  padding-top: 30px;
+}

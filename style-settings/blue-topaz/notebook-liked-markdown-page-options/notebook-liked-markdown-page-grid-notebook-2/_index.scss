@@ -1,0 +1,25 @@
+body.notebook-liked-markdown-page-grid-notebook-2
+  .setting-item[data-id='grid-notebook-line-color-2'] {
+  display: block !important;
+}
+body.background-notebook-liked-switch.notebook-liked-markdown-page-grid-notebook-2
+  .markdown-preview-view.markdown-rendered,
+body.background-notebook-liked-switch.notebook-liked-markdown-page-grid-notebook-2
+  .cm-s-obsidian
+  .cm-scroller {
+  background: var(--bg-color-notebook);
+  background-image:
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0),
+    linear-gradient(
+      90deg,
+      var(--grid-notebook-line-color-2) 1px,
+      transparent 0
+    ),
+    linear-gradient(var(--grid-notebook-line-color-1) 1px, transparent 0),
+    linear-gradient(90deg, var(--grid-notebook-line-color-1) 1px, transparent 0);
+  background-size:
+    75px 75px,
+    75px 75px,
+    15px 15px,
+    15px 15px;
+}

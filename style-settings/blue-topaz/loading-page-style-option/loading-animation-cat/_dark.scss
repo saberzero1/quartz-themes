@@ -1,0 +1,6 @@
+body:not(.default-loading-page).theme-dark .progress-bar-message::before {
+  filter: invert(100%) hue-rotate(153deg) saturate(250%);
+}
+body:not(.default-loading-page).theme-dark .progress-bar {
+  background-color: black;
+}

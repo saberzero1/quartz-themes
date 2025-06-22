@@ -1,0 +1,16 @@
+.pt-status-bar-position-floating .status-bar {
+  --status-bar-position: absolute;
+  right: 0;
+  left: 0;
+  width: fit-content;
+  margin: 0 auto calc(var(--size-2-3) + var(--scroll-bar-size));
+  background: var(--background-secondary-blur);
+  -webkit-backdrop-filter: blur(var(--blur-intensity));
+  backdrop-filter: blur(var(--blur-intensity));
+  border: 1px solid var(--window-border-color);
+  border-radius: var(--radius-s);
+  box-shadow: var(--shadow-l);
+}
+.pt-status-bar-position-floating div#cMenuModalBar {
+  bottom: calc(var(--size-4-3) + 33px + var(--scroll-bar-size)) !important;
+}

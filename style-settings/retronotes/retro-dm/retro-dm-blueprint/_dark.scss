@@ -1,0 +1,34 @@
+-blueprint.theme-dark {
+  /* Base Color */
+  --color-base-00: #0d3365;
+  --color-base-05: #103c77;
+  --color-base-10: #124588;
+  --color-base-20: #1757ab;
+  --color-base-25: #195fbc;
+  --color-base-30: #1b68cd;
+  --color-base-35: #1d71df;
+  --color-base-40: #2d7be3;
+  --color-base-50: #4f91e8;
+  --color-base-60: #72a7ec;
+  --color-base-70: #94bcf1;
+  --color-base-100: #ebf3fc;
+  /* Accent color = --color-base-50 */
+  --accent-h: 214.1 !important;
+  --accent-s: 76.9% !important;
+  --accent-l: 61 !important;
+  /* Blueprint Variables */
+  --main-ink: var(--white-ink);
+  --main-ink-muted: var(--white-ink-muted);
+  --main-ink-fainted: var(--white-ink-fainted);
+  --secondary-ink: var(--orange-ink);
+  --secondary-ink-muted: var(--orange-ink-muted);
+  --secondary-ink-fainted: var(--orange-ink-fainted);
+  --bold-accent-ink: var(--orange-ink);
+  --italic-accent-ink: var(--yellow-ink);
+  --leather-color: #140e66;
+  --leather-color-alt: #281bce;
+  --leather-color-rgb: 20, 14, 102;
+  --leather-contrast-color: var(--white-ink);
+  --leather-contrast-color-muted: var(--white-ink-muted);
+  --paper-color: rgba(13, 51, 101, 0.95);
+}

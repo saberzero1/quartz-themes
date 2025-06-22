@@ -1,0 +1,114 @@
+body.colorful-tag-bt .tag:not(.token):nth-child(5n + 1) {
+  background-color: var(--tag1);
+}
+
+body.colorful-tag-bt .tag:not(.token):nth-child(5n + 2) {
+  background-color: var(--tag2);
+}
+
+body.colorful-tag-bt .tag:not(.token):nth-child(5n + 3) {
+  background-color: var(--tag3);
+}
+
+body.colorful-tag-bt .tag:not(.token):nth-child(5n + 4) {
+  background-color: var(--tag4);
+}
+
+body.colorful-tag-bt .tag:not(.token):nth-child(5n) {
+  background-color: var(--tag5);
+}
+
+body.colorful-tag-bt a.tag:not(.token) {
+  font-size: var(--font-size-tag);
+  font-family: var(--font-family-tag) !important;
+  border: none;
+  color: var(--tag-text);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 1),
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + span.cm-hashtag,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + .cm-hashtag.cm-meta,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: var(--tag1);
+}
+
+body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 2),
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + span.cm-hashtag,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + .cm-hashtag.cm-meta,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: var(--tag2);
+}
+
+body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 3),
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + span.cm-hashtag,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + .cm-hashtag.cm-meta,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: var(--tag3);
+}
+
+body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 4),
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + span.cm-hashtag,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + .cm-hashtag.cm-meta,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: var(--tag4);
+}
+
+body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n),
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + span.cm-hashtag,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + .cm-hashtag.cm-meta,
+body.colorful-tag-bt
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  background-color: var(--tag5);
+}

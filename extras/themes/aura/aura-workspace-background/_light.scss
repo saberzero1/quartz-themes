@@ -1,0 +1,48 @@
+.aura-workspace-background {
+  --background-primary: rgba(
+    var(--cpt-core),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --background-primary-alt: rgba(
+    var(--cpt-core-alt),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --background-secondary: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --background-secondary-alt: rgba(
+    var(--cpt-mantle-alt),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --ribbon-background: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --ribbon-background-collapsed: rgba(
+    var(--cpt-mantle),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --titlebar-background: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+  --titlebar-background-focused: rgba(
+    var(--cpt-crust),
+    var(--aura-workspace-background-workspace-slider-light)
+  );
+}
+
+.aura-workspace-background .workspace {
+  background-color: rgba(var(--cpt-core), 0.2);
+  backdrop-filter: brightness(
+      var(--aura-workspace-background-brightness-light, 0.5)
+    )
+    blur(var(--aura-workspace-background-blur-light, 5px));
+}
+
+.aura-workspace-background .horizontal-main-container {
+  --workspace-background-image: var(
+    --aura-workspace-background-image-light-custom-option
+  );
+}

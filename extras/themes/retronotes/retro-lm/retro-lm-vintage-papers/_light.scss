@@ -1,0 +1,39 @@
+.retro-lm-vintage-papers.theme-light {
+  /* Base Color */
+  --color-base-00: #f8f8ff;
+  --color-base-05: #e4e4ff;
+  --color-base-10: #d1d1ff;
+  --color-base-20: #bdbdff;
+  --color-base-25: #aaaaff;
+  --color-base-30: #9696ff;
+  --color-base-35: #8282ff;
+  --color-base-40: #8080ee;
+  --color-base-50: #6e6eec;
+  --color-base-60: #4747ff;
+  --color-base-70: #3434ff;
+  --color-base-100: #0000aa;
+  /* Accent color = --color-base-50 */
+  --accent-h: 240 !important;
+  --accent-s: 76.8% !important;
+  --accent-l: 67.8% !important;
+  /* Vintage Papers Variables */
+  --main-ink: var(--black-ink);
+  --main-ink-muted: var(--black-ink-muted);
+  --main-ink-fainted: var(--black-ink-fainted);
+  --secondary-ink: var(--darkblue-ink);
+  --secondary-ink-muted: var(--darkblue-ink-muted);
+  --secondary-ink-fainted: var(--darkblue-ink-fainted);
+  --bold-accent-ink: var(--orange-ink);
+  --italic-accent-ink: var(--red-ink);
+  --leather-color: #0a2e50;
+  --leather-color-alt: #03101c;
+  --leather-color-rgb: 10, 46, 80;
+  --leather-contrast-color: var(--white-ink);
+  --leather-contrast-color-muted: var(--white-ink-muted);
+  --paper-color: rgba(248, 248, 255, 0.9);
+  --text-selection: var(--color-base-20);
+  --background-primary-alt: var(--color-base-05);
+  --interactive-hover: var(--color-base-100);
+  --inline-title-color: var(--leather-color);
+  --background-modifier-hover: var(--leather-color);
+}

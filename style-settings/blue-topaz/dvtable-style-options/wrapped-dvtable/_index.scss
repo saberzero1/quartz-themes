@@ -1,0 +1,14 @@
+body.wrapped-dvtable:not(.no-wrapped-dvtable-cell):not(.no-wrapped-dvtable)
+  :is(.markdown-preview-view, .markdown-rendered)
+  table.dataview.table-view-table
+  > thead
+  > tr,
+body.wrapped-dvtable:not(.no-wrapped-dvtable-cell):not(.no-wrapped-dvtable)
+  :is(.markdown-preview-view, .markdown-rendered)
+  .table.dataview.table-view-table
+  > tbody
+  > tr {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}

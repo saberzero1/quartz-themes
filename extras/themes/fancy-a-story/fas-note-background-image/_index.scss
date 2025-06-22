@@ -1,0 +1,68 @@
+.fas-note-background-image .markdown-source-view:not(.no-background, .no-bg),
+.fas-note-background-image .markdown-preview-view:not(.no-background, .no-bg) {
+  background-color: var(--workleaves-background);
+  background-image: var(--fas-note-background-image-url);
+  background-blend-mode: var(--fas-note-background-image-blend-mode);
+}
+
+.fas-note-background-image
+  .markdown-source-view:not(.no-background, .no-bg)
+  .cm-editor {
+  background-color: rgb(
+    from var(--workleaves-background) r g
+      b/calc(1 - var(--fas-note-background-image-opacity))
+  );
+  backdrop-filter: blur(var(--fas-note-background-image-blur))
+    brightness(var(--fas-note-background-image-brightness));
+}
+
+body:not(.native-scrollbars).fas-note-background-image
+  .markdown-preview-view:not(.no-background, .no-bg)::-webkit-scrollbar-track {
+  background-color: rgb(
+    from var(--workleaves-background) r g
+      b/calc(1 - var(--fas-note-background-image-opacity))
+  );
+}
+
+.fas-note-background-image .markdown-preview-view:not(.no-background, .no-bg) {
+  padding: 0;
+}
+
+.fas-note-background-image
+  .markdown-preview-view:not(.no-background, .no-bg)
+  > :first-child {
+  padding-block: var(--file-margins-block);
+  padding-inline: max(
+    var(--file-margins-inline),
+    0.5 * (100% - var(--file-margins-inline) - var(--file-line-width)) +
+      var(--scrollbar-width)
+  );
+  max-width: 100%;
+  background-color: rgb(
+    from var(--workleaves-background) r g
+      b/calc(1 - var(--fas-note-background-image-opacity))
+  );
+  backdrop-filter: blur(var(--fas-note-background-image-blur))
+    brightness(var(--fas-note-background-image-brightness));
+}
+
+.fas-note-background-image .markdown-source-view:not(.no-background, .no-bg),
+.fas-note-background-image .markdown-preview-view:not(.no-background, .no-bg) {
+  background-size: cover;
+  background-position: center;
+}
+
+.fas-note-background-image .markdown-source-view:not(.no-background, .no-bg),
+.fas-note-background-image .markdown-preview-view:not(.no-background, .no-bg) {
+  background-repeat: repeat;
+}
+
+.fas-note-background-image
+  .markdown-preview-view:not(.no-background, .no-bg)
+  .metadata-container,
+.fas-note-background-image
+  .markdown-source-view:not(.no-background, .no-bg)
+  .metadata-container {
+  background-color: rgb(from var(--workleaves-background) r g b/0.7);
+  backdrop-filter: blur(5px);
+}

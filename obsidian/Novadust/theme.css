@@ -416,7 +416,7 @@ video {
   color: var(--light-blue);
 }
 
-input[type="checkbox"]:checked:hover {
+input[type='checkbox']:checked:hover {
   border-color: rgba(var(--soft-yellow-rgb), 0.1) !important;
 }
 

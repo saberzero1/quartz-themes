@@ -1,0 +1,8 @@
+body.memos-scroll
+  div[data-type='thino_view']
+  .memolist-wrapper
+  .memolist-container
+  .masonry-memolist {
+  max-height: 660px;
+  overflow: auto;
+}

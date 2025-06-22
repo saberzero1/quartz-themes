@@ -158,22 +158,22 @@ For reference, check the Obsidian style settings repo
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
   --ap-font-text:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
   --ap-font-interface:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
   --ap-font-monospace:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
   --ap-font-title:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
   --ap-font-header:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
   --ap-font-hashtag:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu,
     sans-serif;
 }
 
@@ -1228,8 +1228,8 @@ body:not(.default-font-color) .cm-strong {
 
 /* Completed checkboxes */
 .markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
   text-decoration: none;
   color: var(--text-faint);
 }
@@ -1258,7 +1258,7 @@ Code styling
   color: var(--ap-code-gray-2);
 }
 
-code[class*="language-"],
+code[class*='language-'],
 .token.selector,
 .token.tag,
 .token.parameter,

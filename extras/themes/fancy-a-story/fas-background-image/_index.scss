@@ -1,0 +1,188 @@
+body:not(.fas-background-image)
+  .workspace.is-left-sidedock-open:not(.is-right-sidedock-open)
+  .mod-root
+  .mod-top:nth-child(1 of .mod-top)
+  .workspace-tab-header-container,
+body:not(.fas-background-image)
+  .workspace.is-left-sidedock-open.is-right-sidedock-open
+  .mod-root
+  .mod-top:nth-child(1 of .mod-top):not(.mod-top:nth-last-child(1 of .mod-top))
+  .workspace-tab-header-container {
+  -webkit-mask-image: radial-gradient(
+    var(--cutout-corner-radius) at 0 var(--workspace-top-margin),
+    transparent 100%,
+    black
+  );
+}
+
+body:not(.fas-background-image)
+  .workspace.is-right-sidedock-open:not(.is-left-sidedock-open)
+  .mod-root
+  .mod-top:nth-last-child(1 of .mod-top)
+  .workspace-tab-header-container,
+body:not(.fas-background-image)
+  .workspace.is-left-sidedock-open.is-right-sidedock-open
+  .mod-root
+  .mod-top:nth-last-child(1 of .mod-top):not(.mod-top:nth-child(1 of .mod-top))
+  .workspace-tab-header-container {
+  -webkit-mask-image: radial-gradient(
+    var(--cutout-corner-radius) at 100% var(--workspace-top-margin),
+    transparent 100%,
+    black
+  );
+}
+
+body:not(.fas-background-image)
+  .workspace.is-left-sidedock-open.is-right-sidedock-open
+  .mod-root
+  .mod-top:nth-child(1 of .mod-top):nth-last-child(1 of .mod-top)
+  .workspace-tab-header-container {
+  -webkit-mask-image:
+    radial-gradient(
+      var(--cutout-corner-radius) at 0 var(--workspace-top-margin),
+      transparent 100%,
+      black
+    ),
+    radial-gradient(
+      var(--cutout-corner-radius) at 100% var(--workspace-top-margin),
+      transparent 100%,
+      black
+    );
+  mask-composite: intersect;
+}
+
+.fas-background-image:not(.is-mobile).is-hidden-frameless:not(.is-fullscreen)
+  .mod-root
+  .workspace-tab-header-container,
+.fas-background-image:not(.is-mobile):not(.is-frameless)
+  .mod-root
+  .workspace-tab-header-container {
+  border-top: 6px solid transparent;
+  background-color: transparent;
+}
+
+.fas-background-image:not(.is-mobile) .workspace > .workspace-split.mod-root {
+  height: calc(100% - 6px);
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace:not(.is-right-sidedock-open)
+  > .workspace-split.mod-root {
+  margin-right: 6px;
+}
+
+.fas-background-image:not(.is-mobile).is-popout-window
+  .workspace
+  > .workspace-split.mod-root {
+  width: calc(100% - 12px);
+  margin-left: 6px;
+}
+
+.fas-background-image:not(.is-mobile) .mod-root .workspace-tab-container {
+  border: 1px solid var(--sidedock-inset-border-color);
+}
+
+.fas-background-image:not(.is-mobile).is-hidden-frameless:not(.is-fullscreen)
+  .mod-root
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner,
+.fas-background-image:not(.is-mobile):not(.is-frameless)
+  .mod-root
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner {
+  background-color: rgb(from var(--workspace-background) r g b/0.8);
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header
+  .workspace-tab-header-inner::before,
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header
+  .workspace-tab-header-inner::after,
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header
+  + .workspace-tab-header.is-active::before {
+  display: none;
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header:not(.is-active):first-child
+  .workspace-tab-header-inner {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0 100%
+  );
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header:not(.is-active):last-child
+  .workspace-tab-header-inner {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-tab-header:not(.is-active):first-child:last-child
+  .workspace-tab-header-inner {
+  clip-path: none;
+}
+
+.fas-background-image:not(.is-mobile) .app-container {
+  background-image: var(--fas-background-image-url);
+  background-size: cover;
+}
+
+.fas-background-image:not(.is-mobile) .workspace {
+  background-color: rgb(
+    from var(--workspace-background) r g
+      b/calc(1 - var(--fas-background-image-opacity))
+  );
+  backdrop-filter: blur(var(--fas-background-image-blur));
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+}
+
+.fas-background-image:not(.is-mobile) .workspace-sidedock-vault-profile,
+.fas-background-image:not(.is-mobile) .workspace-ribbon {
+  --icon-opacity: 0.5;
+  transition: background-color 0.2s;
+}
+
+.fas-background-image:not(.is-mobile) .workspace-ribbon:hover {
+  background-color: rgba(var(--mono-rgb-0), 0.6);
+}
+
+.fas-background-image:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile:not(
+    :is(.is-mobile .workspace-sidedock-vault-profile)
+  ):hover {
+  background-color: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-foreground: rgb(var(--mono-rgb-100));
+  --workspace-foreground-faint: rgba(var(--mono-rgb-100), 0.6);
+  --workspace-foreground-muted: rgba(var(--mono-rgb-100), 0.6);
+  --vault-profile-color: rgba(var(--mono-rgb-100), 0.6);
+  --vault-profile-color-hover: rgb(var(--mono-rgb-100));
+}
+
+.fas-background-image:not(.is-mobile).mod-windows.is-hidden-frameless:not(
+    .is-fullscreen
+  )
+  .workspace:not(.is-right-sidedock-open)
+  .mod-root::before {
+  content: none;
+}

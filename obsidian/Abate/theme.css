@@ -54,7 +54,7 @@ body {
     );*
     
     //* Font */
-      --font-text-theme: "Noto Sans",
+      --font-text-theme: 'Noto Sans',
     Open Sans serif;
 
   --font-thin: 100;

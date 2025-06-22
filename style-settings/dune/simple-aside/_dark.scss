@@ -1,0 +1,30 @@
+.theme-dark
+  :is(
+    .callout[data-callout='aside'][data-callout-metadata~='l'],
+    .callout[data-callout='seite'][data-callout-metadata~='l']
+  ),
+.theme-dark
+  .markdown-preview-view
+  :is(
+    .callout[data-callout='aside'][data-callout-metadata~='lh']:hover,
+    .callout[data-callout='seite'][data-callout-metadata~='lv']:hover
+  ) {
+  border-right: 4px solid navajowhite;
+  border-radius: 0;
+  padding-left: 0;
+}
+.theme-dark
+  :is(
+    .callout[data-callout='aside'][data-callout-metadata~='r'],
+    .callout[data-callout='seite'][data-callout-metadata~='r']
+  ),
+.theme-dark
+  .markdown-preview-view
+  :is(
+    .callout[data-callout='aside'][data-callout-metadata~='rh']:hover,
+    .callout[data-callout='seite'][data-callout-metadata~='rv']:hover
+  ) {
+  border-left: 4px solid navajowhite;
+  border-radius: 0;
+  padding-right: 0;
+}

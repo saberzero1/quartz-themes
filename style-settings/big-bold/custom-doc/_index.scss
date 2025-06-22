@@ -1,0 +1,7 @@
+:root,
+body {
+  --doc-background: var(--bg) !important;
+  body:not() {
+    --doc-background: var(--doc-bg);
+  }
+}

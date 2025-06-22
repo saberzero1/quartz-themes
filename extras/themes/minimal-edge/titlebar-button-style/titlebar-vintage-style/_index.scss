@@ -1,11 +1,34 @@
-body.titlebar-vintage-style .titlebar .mod-close {
-  background-color: #ffad60;
+bod.mod-windows .titlebar-button {
+  border-radius: 50%;
+  border: var(--background-modifier-border);
+  padding: 7px;
+  height: 5px;
+  width: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-body.titlebar-vintage-style .titlebar .mod-maximize {
-  background-color: #ffeead;
+bod.mod-windows .titlebar-button:hover {
+  padding: 8px;
 }
 
-body.titlebar-vintage-style .titlebar .mod-minimize {
-  background-color: #96ceb4;
+bod.is-hidden-frameless:not(.is-fullscreen)
+  .titlebar-button-container.mod-right {
+  background-color: var(--background-primary);
+  gap: 10px;
+  margin: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+body.titlebar-vintage-style .titlebar .mod-close:hover {
+  background-color: #ffc997;
+}
+
+body.titlebar-vintage-style .titlebar .mod-maximize:hover {
+  background-color: #fff6d4;
+}
+
+body.titlebar-vintage-style .titlebar .mod-minimize:hover {
+  background-color: #c6ffe4;
 }

@@ -1,0 +1,10 @@
+body:is(.theme-light, .theme-dark).theme-light {
+  --color-h: var(--accent-color-light-hue-default);
+  --color-s: var(--accent-color-light-saturation-default);
+  --color-l: var(--accent-color-light-lightness-default);
+}
+body:is(.theme-light, .theme-dark) {
+  --color-h: var(--accent-color-dark-hue-default);
+  --color-s: var(--accent-color-dark-saturation-default);
+  --color-l: var(--accent-color-dark-lightness-default);
+}

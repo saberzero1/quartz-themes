@@ -1,0 +1,22 @@
+.theme-default .horizontal-tab-nav-item.is-active {
+  color: var(--text-on-accent) !important;
+}
+.colorful-headings-alt.theme-default {
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-blue);
+}
+.colorful-headings.theme-default {
+  --h1-color: rgb(217, 174, 180);
+  --h2-color: rgb(218, 178, 201);
+  --h3-color: rgb(200, 165, 200);
+  --h4-color: rgb(191, 165, 199);
+  --h5-color: rgb(158, 142, 184);
+  --h6-color: rgb(156, 156, 190);
+}
+.theme-default {
+  --font-default: 'Arima', cursive;
+}

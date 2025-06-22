@@ -1,0 +1,11 @@
+body.adwaita-font-always {
+  --titlebar-height: 45px;
+  --font-interface-theme: Cantarell;
+  --font-ui-small: 15px;
+  --h1-weight: 900;
+}
+
+body.adwaita-font-always .titlebar-text {
+  top: 10px;
+  height: auto;
+}

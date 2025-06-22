@@ -1,4 +1,29 @@
-.theme-light {
-  --bold-color: hsl(calc(var(--accent-h) + 180), 45%, 50%);
-  --italic-color: hsl(calc(var(--accent-h) + 90), 45%, 50%);
+.theme-solarized.colored-bold-and-italic,
+.theme-gruvbox.colored-bold-and-italic {
+  --bold-color: var(--color-orange);
+  --italic-color: var(--color-green);
+}
+
+.theme-spring.colored-bold-and-italic {
+  --bold-color: rgb(135, 204, 135);
+}
+
+.theme-nord.colored-bold-and-italic {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-green);
+}
+
+.theme-anytype.colored-bold-and-italic {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-green);
+}
+
+.theme-chinchilla.colored-bold-and-italic {
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-purple);
+}
+
+.theme-notion.colored-bold-and-italic {
+  --bold-color: var(--color-red);
+  --italic-color: var(--color-blue);
 }
