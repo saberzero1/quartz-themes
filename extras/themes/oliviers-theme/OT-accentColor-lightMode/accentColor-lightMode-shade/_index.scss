@@ -1,0 +1,228 @@
+.lightPalette-artDeco.accentColor-lightMode-shade {
+  --accent-h: 51 !important;
+  --accent-s: 100% !important;
+  --accent-l: 80% !important;
+  --color-accent-1: #eec900 !important;
+  --color-accent-2: #ffef99 !important;
+  --color-accent-3: #fff7cc !important;
+  --OT-color-on-accent-1: white;
+  --OT-color-muted-on-accent-1: #998100;
+  --OT-color-on-accent-2: #443900;
+  --OT-color-on-accent-3: #443900;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.lightPalette-beige.accentColor-lightMode-shade {
+  --accent-h: 38 !important;
+  --accent-s: 54% !important;
+  --accent-l: 73% !important;
+  --color-accent-1: #c4923b !important;
+  --OT-color-muted-on-accent-1: #e3cba2;
+  --color-accent-2: #dfc495 !important;
+  --OT-color-on-accent-2: #816027;
+  --OT-color-muted-on-accent-2: #b58737;
+  --color-accent-3: #f3e8d6 !important;
+}
+
+.lightPalette-blue.accentColor-lightMode-shade {
+  --accent-h: 215 !important;
+  --accent-s: 100% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: hsl(215, 100%, 50%) !important;
+  --OT-color-muted-on-accent-1: #c3d9ef;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --color-accent-3: #bbd7ff !important;
+  --vault-profile-color: var(--color-accent-2);
+}
+
+.lightPalette-OBSIDIAN.accentColor-lightMode-shade {
+  --accent-h: 254 !important;
+  --accent-s: 60% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #4529a3 !important;
+  --color-accent-2: var(--obsidian-violet) !important;
+  --color-accent-3: #ddd6f5 !important;
+  --OT-color-muted-on-accent-1: #d2c9f1;
+  --OT-color-on-accent-2: white;
+  --OT-color-muted-on-accent-2: #ddd6f5;
+  --OT-color-on-accent-3: 4529A3;
+  --OT-view-header-title-focus-color: var(--obsidian-violet);
+}
+
+.lightPalette-green.accentColor-lightMode-shade {
+  --accent-h: 142 !important;
+  --accent-s: 83% !important;
+  --accent-l: 66% !important;
+  --color-accent-1: #14d65b !important;
+  --OT-color-on-accent-1: #085a26 !important;
+  --OT-color-muted-on-accent-1: #0b7934 !important;
+  /*    --color-accent-2:                #60F095    !important; */
+  --OT-color-on-accent-2: #085a26 !important;
+  --OT-color-muted-on-accent-2: #0a692d !important;
+  --color-accent-3: #cdfadd !important;
+  --OT-color-on-accent-3: #085a26 !important;
+}
+
+.lightPalette-icy.accentColor-lightMode-shade {
+  --accent-h: 214 !important;
+  --accent-s: 100% !important;
+  --accent-l: 90% !important;
+  --color-accent-1: #4495ff !important;
+  --color-accent-2: #bbd8ff !important;
+  --color-accent-3: #ddecff !important;
+  --OT-color-on-accent-1: var(--color-base-00);
+  --OT-color-muted-on-accent-1: #97cbff;
+  --OT-color-on-accent-2: #0058cc;
+  --OT-color-muted-on-accent-2: #4495ff;
+  /*    --OT-view-header-title-focus-color:        #005FDD; */
+  /*    --OT-view-header-title-no-focus-color:    var(--color-accent-1); */
+  --OT-button-ON-bg: #0049aa;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 93%);
+}
+
+.lightPalette-lightBeige.accentColor-lightMode-shade {
+  --accent-h: 28 !important;
+  --accent-s: 31% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #876446 !important;
+  --color-accent-2: #a87d58 !important;
+  --color-accent-3: #e8ddd3 !important;
+  --OT-color-on-accent-1: #faf7f4 !important;
+  /*    --OT-color-muted-on-accent-1:    #fff    !important; */
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+}
+
+.lightPalette-metallicBlue.accentColor-lightMode-shade {
+  --accent-h: 205 !important;
+  --accent-s: 51% !important;
+  --accent-l: 49% !important;
+  --color-accent-1: #0062a9 !important;
+  --color-accent-2: #3e88be !important;
+  --color-accent-3: #d6e6f1 !important;
+  --OT-color-muted-on-accent-1: #b6e1ff;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-on-accent-3: #002743;
+  --OT-view-header-title-no-focus-color: var(--color-accent-2);
+}
+
+.lightPalette-Orange.accentColor-lightMode-shade {
+  --accent-h: 39 !important;
+  --accent-s: 100% !important;
+  --accent-l: 57% !important;
+  --color-accent-2: #ffb122 !important;
+  --color-accent-3: #ffe4c4 !important;
+  --OT-color-muted-on-accent-1: #edd4b6;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-accent-2: #aa6e00;
+  --OT-color-on-accent-3: #f78700;
+}
+
+.lightPalette-parchment.accentColor-lightMode-shade {
+  --accent-h: 37 !important;
+  --accent-s: 53% !important;
+  --accent-l: 61% !important;
+  /*    --color-accent-1:                #999    !important; */
+  --color-accent-2: #d0a866 !important;
+  --color-accent-3: #f2e7d5 !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #e0c69a !important;
+  --OT-color-on-accent-2: var(--color-base-00) !important;
+  --OT-color-on-accent-3: var(--color-accent-1) !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 80%);
+}
+
+.lightPalette-paradiso.accentColor-lightMode-shade {
+  --accent-h: 62 !important;
+  --accent-s: 36% !important;
+  --accent-l: 50% !important;
+  --color-accent-2: #aaad52 !important;
+  --color-accent-3: #d7d9ae !important;
+  --OT-color-muted-on-accent-1: #bbbd75;
+  --OT-color-on-accent-2: #f4f4e8;
+}
+
+.lightPalette-pistachio.accentColor-lightMode-shade {
+  --accent-h: 138 !important;
+  --accent-s: 35% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #295637 !important;
+  --color-accent-2: #3a784d !important;
+  --color-accent-3: #cbe6d3 !important;
+  --OT-color-muted-on-accent-1: #c8e5d0;
+  --OT-color-on-accent-2: var(--color-base-20);
+  --OT-color-on-accent-3: var(--color-accent-1);
+}
+
+.lightPalette-red.accentColor-lightMode-shade {
+  --accent-h: 350 !important;
+  --accent-s: 81% !important;
+  --accent-l: 63% !important;
+  --color-accent-1: #b7132f !important;
+  --color-accent-2: #ed546e !important;
+  --color-accent-3: #facfd6 !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-muted-on-accent-1: #f5a1af;
+  --OT-color-on-accent-2: white;
+  /*    --OT-view-header-title-no-focus-color:    var(--color-accent-2); */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 90%);
+}
+
+.lightPalette-solarized.accentColor-lightMode-shade {
+  --accent-h: 180 !important;
+  --accent-s: 7% !important;
+  --accent-l: 45% !important;
+  --color-accent-1: var(--solarized-base01) !important;
+  --color-accent-2: var(--solarized-base0) !important;
+  --color-accent-3: var(--solarized-base2) !important;
+  --OT-color-muted-on-accent-1: var(--solarized-base2) !important;
+  --OT-color-on-accent-2: var(--solarized-base2) !important;
+  --OT-color-on-accent-3: var(--solarized-base01) !important;
+  --OT-button-ON-bg: var(--solarized-base01);
+}
+
+.lightPalette-stone.accentColor-lightMode-shade {
+  --accent-h: 24 !important;
+  --accent-s: 5% !important;
+  --accent-l: 61% !important;
+  /*    --color-accent-1:                    #534E4A    !important; */
+  --color-accent-2: #a19b97 !important;
+  --color-accent-3: #d9d7d5 !important;
+  --OT-color-on-accent-1: #fff !important;
+  --OT-color-on-accent-2: #fff !important;
+  --OT-color-on-accent-3: #4b4643;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 78%);
+  --OT-view-header-title-focus-color: #35312e;
+}
+
+.lightPalette-sunnyMemos.accentColor-lightMode-shade {
+  --highlighted-folder-current-note-color: var(--color-base-70);
+}
+
+.lightPalette-violet.accentColor-lightMode-shade {
+  --accent-h: 272 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  /*    --color-accent-1:                    #6E16C7    !important; */
+  --color-accent-2: #9835f1 !important;
+  --color-accent-3: #e9d4fc !important;
+  /*    --OT-color-on-accent-1:                #fff    !important; */
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-accent-1: #d9b4fa !important;
+  --OT-color-on-accent-3: #6d0ec3;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
+}
+
+.lightPalette-yellow.accentColor-lightMode-shade {
+  --accent-h: 51 !important;
+  --accent-s: 100% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #f5c504 !important;
+  --color-accent-2: gold !important;
+  /*    #FFD701    */
+  --color-accent-3: #fdeca6 !important;
+  --OT-color-on-accent-1: white;
+  --OT-color-muted-on-accent-1: #9a8200;
+  --OT-color-on-accent-2: #675700;
+  --OT-color-on-accent-3: #4e3e01;
+}

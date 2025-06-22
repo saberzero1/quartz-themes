@@ -1,0 +1,21 @@
+.theme-light {
+  /*
+                hsl(0, 0%, 100%) -- main pane/chat window
+                hsl(220, 13%, 95%) -- sidebar for channels (dark)
+                hsl(210, 11%, 93%) -- input for chats (lighter)
+                hsl(216, 10%, 90%) -- sidebar for servers (darker)
+                hsl(0, 0%, 100%) -- popup (white)
+                hsl(213, 9%, 46%) -- buttons (bit darker)
+            */
+  --background-primary: hsl(220, 16%, 92%);
+  --background-modifier-cover: hsl(223, 14%, 85%);
+  --background-secondary: hsl(218, 16%, 85%);
+  --background-secondary-alt: hsl(218, 16%, 81%);
+  /* 6% darker than secondary */
+  --background-accent: hsl(223, 14%, 90%);
+  --background-accent-alt: hsl(220, 16%, 88%);
+  /* 4% darker shade of background-primary, active line and backlinks */
+  /* my custom variables */
+  --background-modifier-backlinks: hsl(220, 16%, 90%);
+  /* for backlinks, 2% darker than primary */
+}

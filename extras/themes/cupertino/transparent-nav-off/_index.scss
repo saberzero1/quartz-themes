@@ -1,0 +1,16 @@
+body.is-mobile:not(.transparent-nav-off).theme-light .mobile-toolbar {
+  background-color: #d1d3da;
+}
+
+body.is-mobile:not(.transparent-nav-off).theme-light
+  .mobile-toolbar
+  .mobile-navbar-action
+  .clickable-icon {
+  filter: drop-shadow(0 0 4px white);
+}
+
+body.is-phone:not(.transparent-nav-off).theme-light
+  .workspace-drawer
+  .nav-header {
+  background-color: rgb(from var(--background-secondary) r g b/50%);
+}

@@ -1,0 +1,19 @@
+body:not(.is-mobile).card-layout-open-light.mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top) {
+  background: var(--background-mod-left-CSS-light) !important;
+  background-blend-mode: var(--background-mod-left-CSS-blend-mode-light);
+  backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
+  -webkit-backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
+}

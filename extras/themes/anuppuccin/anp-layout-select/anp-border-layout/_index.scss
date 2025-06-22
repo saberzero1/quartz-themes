@@ -1,0 +1,30 @@
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-light.theme-light
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(
+    .anp-card-layout,
+    .anp-border-layout
+  ).anp-colorful-frame-icon-toggle-dark.theme-dark
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}

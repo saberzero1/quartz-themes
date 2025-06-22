@@ -132,10 +132,10 @@ manifestCollection.forEach((manifest) => {
       `./extras/themes/${getTheme(manifest)}`,
     )
   }
-  if (args[0] === "ATOMIZE") {
+  /*if (args[0] === "ATOMIZE") {
     // Clear the style settings directories.
     clearDirectories(`./extras/themes/${getTheme(manifest)}`)
-  }
+  }*/
   if (args[0] === "INIT") {
     copyFileToDirectory(
       `./extras/_index.scss`,

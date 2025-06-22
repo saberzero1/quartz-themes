@@ -1,0 +1,28 @@
+.theme-light-orange {
+  --main-background: #eaeaea;
+  --secondary-background: #d9d9d9;
+  --secondary-background-low-opacity: #e2e2e254;
+  --main-node: #e06d0f;
+  --accent-1: #f05006;
+  --accent-2: #cf1f08;
+  --accent-3: #d64545;
+  --accent-4: #08500d;
+  --accent-5: #2012a0;
+  --accent-6: #1944aa;
+  --external-link: #307a8e;
+  --external-link-hidden: #307a8e99;
+  --text-normal: rgb(36, 36, 36);
+  --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --background-modifier-error: #cf2d2d;
+  --background-modifier-error-hover: #a72020;
+  --text-highlight-bg: #e9b35f;
+  --h1-gradient: #e06d0f, #f05006, #cf1f08, #d64545;
+  --h2-gradient: #f05006, #e06d0f, #eee;
+  --h2-icon-color: #e06d0f;
+  --h3-h6-icon-color: #f05006;
+}

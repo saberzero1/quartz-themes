@@ -1,0 +1,15 @@
+body:not(
+    .adwaita-tabs-always,
+    .adwaita-tabs-linux-only,
+    .adwaita-tabs-never
+  ).mod-linux.theme-light {
+  --tab-background-active: #f0f0f0;
+}
+
+body:not(
+    .adwaita-tabs-always,
+    .adwaita-tabs-linux-only,
+    .adwaita-tabs-never
+  ).mod-linux.is-focused {
+  --tab-background-active: #d8d8d8;
+}

@@ -1,0 +1,7 @@
+body:is(.theme-light)
+  .nav-files-container
+  > div
+  > .nav-folder
+  .nav-folder-children {
+  border-color: rgba(var(--800-RGB), 1);
+}

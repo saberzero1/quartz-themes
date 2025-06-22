@@ -1,0 +1,17 @@
+.theme-light {
+  --bg-hue: 43;
+  --bg-sat: 57%;
+  --bg-val: 89%;
+  --color-accent-hsl: 68, 99%, 32%;
+  --color-accent: #8da201;
+  --interactive-accent: #3995c6;
+  --alt-heading-color: #f85654;
+  --secondary-accent: #e69975;
+  --hover-accent: #f57b24;
+  --link-unresolved-color: #e0a100;
+}
+
+.theme-light ::selection {
+  color: #fff;
+  background-color: #8da201;
+}

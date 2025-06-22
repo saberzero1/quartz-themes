@@ -1,0 +1,22 @@
+body.toggle-bg-panel-page.theme-light:is(.shib-card-layout)
+  :is(
+    .nav-files-container,
+    .file-tree-plugin-view,
+    [data-type="search"],
+    [data-type="starred"],
+    [data-type="recent-files"]
+  )::before {
+  opacity: var(--panel-page-opacity);
+  border-radius: var(--shib-card-radius, var(--radius-xl));
+}
+
+body.toggle-bg-panel-page.theme-light:not(.shib-card-layout)
+  :is(
+    .nav-files-container,
+    .file-tree-plugin-view,
+    [data-type="search"],
+    [data-type="starred"],
+    [data-type="recent-files"]
+  )::before {
+  opacity: var(--panel-page-opacity);
+}

@@ -1,0 +1,11 @@
+body.theme-light:not(.is-mobile):has(
+    > .app-container
+  ).background-underlying-CSS-light {
+  background: var(
+    --background-underlying-CSS-light,
+    --background-underlying
+  ) !important;
+  background-blend-mode: var(
+    --background-underlying-CSS-blend-mode-light
+  ) !important;
+}

@@ -1,0 +1,65 @@
+.lightPalette-paradiso {
+  --OT-theme-reference-color: #c5c889;
+  --color-base-00: #f1efe3;
+  --color-base-20: #e1e2c2;
+  --color-base-35: #858740;
+  --color-base-40: #858740;
+  --color-base-50: #a7a951;
+  --color-base-70: #636430;
+  --color-base-05: #d6d7ab;
+  --code-background: #ecedd9;
+  --OT-button-OFF-bg: #d6d7ab;
+  --color-base-100: #4c4d25;
+  --link-color: #5351a9;
+  /*    --h1-color:            #484923; */
+  /*    --h3-color:            #35361A; */
+  /*    --h5-color:            #A7A951; */
+  --OT-color-on-base-20: #636430;
+  --OT-setting-item-description: #6e6f36;
+  --OT-table-header-background: #e5e6cc;
+  --OT-table-background: #ededdb;
+}
+
+.accentColor-lightMode-shade {
+  --accent-h: 62 !important;
+  --accent-s: 36% !important;
+  --accent-l: 50% !important;
+  --color-accent-2: #aaad52 !important;
+  --color-accent-3: #d7d9ae !important;
+  --OT-color-muted-on-accent-1: #bbbd75;
+  --OT-color-on-accent-2: #f4f4e8;
+}
+
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 212 !important;
+  --accent-s: 36% !important;
+  --accent-l: 50% !important;
+  /*    --color-accent-1:                #999    !important; */
+  /*    --color-accent-2:                #999    !important; */
+  --color-accent-3: #dce5ef !important;
+  /*    --OT-color-on-accent-1:            #fff    !important; */
+  --OT-color-muted-on-accent-1: #bacbde !important;
+  --OT-color-on-accent-2: #f3f6fa !important;
+  --OT-color-on-accent-3: #527cad !important;
+}
+
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 272 !important;
+  --accent-s: 36% !important;
+  --accent-l: 50% !important;
+  --color-accent-3: #e6dcef !important;
+  --OT-color-on-accent-1: #f7f3fa !important;
+  --OT-color-muted-on-accent-1: #d6c5e4 !important;
+  --OT-color-on-accent-2: #fff !important;
+  --OT-color-on-accent-3: #69428a !important;
+}
+
+.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #4C4D25    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%234C4D25" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

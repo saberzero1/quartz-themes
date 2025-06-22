@@ -1,0 +1,76 @@
+.lightPalette-sunnyMemos {
+  --OT-theme-reference-color: #ffdfb7;
+  --color-base-00: #ffeed9;
+  /*    --background-primary        */
+  --color-base-20: #ffdfb7;
+  /*    --background-secondary        */
+  --color-base-05: #ffce8a;
+  /*    --background-secondary-alt    */
+  --color-base-10: #ffddb1;
+  /*    --background-primary-alt    */
+  --color-base-35: #ffce8a;
+  /*    --interactive-hover            */
+  --color-base-40: #b45e19;
+  /*    --bordures                    */
+  --color-base-50: #efa385;
+  /*    --text-faint                */
+  --color-base-70: #d04f1c;
+  /*    --text-muted                */
+  --color-base-100: #a33e16;
+  /*    --text-normal                */
+  --link-color: #167ba3;
+  --accent-h: 33 !important;
+  --accent-s: 76% !important;
+  --accent-l: 65% !important;
+  --OT-stabilo-mark: var(--stabilo-orange-foncé);
+  --OT-stabilo-text: var(--color-base-00);
+  --OT-table-header-background: #ffd7a6;
+  --OT-table-alt-background: #ffe6c8;
+  --code-background: #ffe6c8;
+  --OT-color-on-base-20: #c57000;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-base-20: #ff930d;
+  --OT-color-muted-on-accent-1: #ffd095;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 77%);
+}
+
+.accentColor-lightMode-shade {
+  --highlighted-folder-current-note-color: var(--color-base-70);
+}
+
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 213 !important;
+  --accent-s: 76% !important;
+  --accent-l: 65% !important;
+  --color-accent-1: #3583e4 !important;
+  --color-accent-2: #629fea !important;
+  --color-accent-3: #8fbaf0 !important;
+}
+
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 153 !important;
+  --accent-s: 76% !important;
+  --accent-l: 65% !important;
+  --color-accent-1: #26e28e !important;
+  --color-accent-2: #62eaad !important;
+  --color-accent-3: #adf4d4 !important;
+  --OT-color-on-accent-2: #09442a !important;
+  /*    --OT-color-on-accent-3:    #000;    !important; */
+  --OT-color-muted-on-accent-1: #cbf8e4;
+  --OT-view-header-title-focus-color: #11804e;
+}
+
+.OT-Light-pills-color-theme.lightPalette-sunnyMemos {
+  --OT-pill-color: var(--color-base-100);
+  --OT-pill-background: var(--OT-theme-reference-color);
+}
+
+.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #a33e16    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23a33e16" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

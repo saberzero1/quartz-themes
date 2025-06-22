@@ -1,0 +1,13 @@
+body.github-light {
+  --code-background: var(--color-github-light-background);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-github-light-orange);
+  --code-important: var(--color-github-light-orange);
+  --code-keyword: var(--color-github-light-red);
+  --code-property: var(--color-github-light-blue);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-github-light-cyan);
+  --code-tag: var(--color-github-light-red);
+  --code-value: var(--color-github-light-purple);
+}

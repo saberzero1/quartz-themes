@@ -1,0 +1,208 @@
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .workspace-tab-header.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .nav-action-button.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .vertical-tab-nav-item.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .nav-file-title.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .tree-item-self.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .suggestion-hotkey,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .workspace-leaf
+  div.workspace-leaf-content[data-type="file-tree-view"]
+  div.oz-nav-file.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .workspace-drawer.is-pinned
+  .workspace-drawer-header-icon.mod-pin,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .canvas-help
+  .setting-hotkey,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .clickable-icon[aria-label="Search settings"].is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .pdf-outline-view
+  .tree-item-self.mod-active {
+  background-color: var(--interactive-accent-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt):not(
+    .is-phone
+  )
+  .vertical-tab-nav-item.is-active,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt):not(
+    .is-phone
+  )
+  .horizontal-tab-nav-item.is-active {
+  --icon-color: var(--highlight-text-normal);
+  color: var(--highlight-text-normal);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .search-result-file-match-destination-file {
+  color: var(--text-normal);
+  background-color: var(--color-grey-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .search-result-file-match-destination-file:hover {
+  color: var(--interactive-accent-hover);
+  background-color: var(--interactive-accent-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .search-result-file-match-replace-button {
+  background-color: var(--color-grey-base);
+  border-color: var(--color-grey-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .search-result-file-match-replace-button:hover {
+  background-color: var(--interactive-accent-base);
+  border-color: var(--interactive-accent-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  button.mod-cta {
+  background-color: var(--interactive-accent-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  button.mod-cta:hover {
+  color: var(--interactive-accent-tint);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    button.mod-warning,
+    .side-dock-ribbon-action.is-active[aria-label="Start/stop recording"]
+  ) {
+  color: var(--text-normal);
+  background-color: var(--color-red-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    button.mod-warning,
+    .side-dock-ribbon-action.is-active[aria-label="Start/stop recording"]
+  ):hover {
+  color: var(--color-red-tint);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    .pcr-button,
+    .modal button:not(.mod-cta):not(.mod-warning),
+    .graph-control-content button,
+    .modal-setting-nav-bar .clickable-icon,
+    .document-search-button,
+    .pdf-toolbar-button
+  ) {
+  color: var(--text-normal);
+  background-color: var(--color-grey-base);
+  border-color: var(--color-grey-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    .pcr-button,
+    .modal button:not(.mod-cta):not(.mod-warning),
+    .graph-control-content button,
+    .modal-setting-nav-bar .clickable-icon,
+    .document-search-button,
+    .pdf-toolbar-button
+  ):hover {
+  color: var(--color-grey-tint);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .setting-command-hotkeys
+  .setting-hotkey {
+  color: var(--text-normal);
+  background-color: var(--color-blue-base);
+  border-color: var(--color-blue-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .setting-command-hotkeys
+  .setting-hotkey.mod-empty {
+  background-color: var(--color-grey-base);
+  border-color: var(--color-grey-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .setting-command-hotkeys
+  .setting-hotkey.has-conflict {
+  background-color: var(--color-red-base);
+  border-color: var(--color-red-base);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(.flair.mod-pop, .community-item .flair) {
+  color: var(--highlight-text-normal);
+  background-color: var(--color-green-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  button.copy-code-button {
+  color: var(--text-normal);
+  background-color: var(--color-grey-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  button.copy-code-button:hover {
+  color: var(--color-grey-tint);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    .workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right,
+    .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left,
+    .popover-action.is-active,
+    .mod-pin-popover.is-active
+  ),
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .pdf-toolbar-left
+  .clickable-icon[aria-label="Toggle sidebar"].is-active {
+  background-color: var(--interactive-accent-base);
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  :is(
+    .workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right,
+    .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left,
+    .popover-action.is-active,
+    .mod-pin-popover.is-active
+  ):hover,
+:is(.theme-dark.pt-accent-style-filled-dt, .pt-accent-style-filled-lt)
+  .pdf-toolbar-left
+  .clickable-icon[aria-label="Toggle sidebar"].is-active:hover {
+  color: var(--interactive-accent-hover);
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt.is-mobile, .is-mobile)
+  .modal.mod-settings
+  .vertical-tab-nav-item {
+  border-color: transparent;
+}
+
+:is(.theme-dark.pt-accent-style-filled-dt.is-mobile, .is-mobile)
+  .modal.mod-settings
+  .vertical-tab-nav-item.is-active {
+  background-color: var(--interactive-accent-base);
+}

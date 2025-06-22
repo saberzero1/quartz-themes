@@ -1,0 +1,25 @@
+.theme-dark:not(.pdf-shadows-on),
+.theme-light:not(.pdf-shadows-on) {
+  --pdf-shadow: none;
+  --pdf-thumbnail-shadow: none;
+}
+
+.theme-dark:not(.pdf-shadows-on) .pdf-viewer .page,
+.theme-dark:not(.pdf-shadows-on) .pdfViewer .page,
+.theme-light:not(.pdf-shadows-on) .pdf-viewer .page,
+.theme-light:not(.pdf-shadows-on) .pdfViewer .page {
+  border: 0;
+}
+
+.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container .thumbnailSelectionRing,
+.theme-light:not(.pdf-shadows-on)
+  .pdf-sidebar-container
+  .thumbnailSelectionRing {
+  padding: 0;
+}
+
+.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container .thumbnail::after,
+.theme-light:not(.pdf-shadows-on) .pdf-sidebar-container .thumbnail::after {
+  right: var(--size-4-2);
+  bottom: var(--size-4-2);
+}

@@ -1,0 +1,71 @@
+.lightPalette-lightBeige {
+  --OT-theme-reference-color: #c3a78d;
+  --color-base-00: #f6f2ee;
+  --color-base-20: #e8dcd2;
+  --color-base-35: #d7c2b0;
+  --color-base-40: #a87d58;
+  --color-base-50: #bfa389;
+  --color-base-70: #725b49;
+  --color-base-05: #e3d4c6;
+  --code-background: #e6dbd0;
+  --OT-button-OFF-bg: #dac9ba;
+  --color-base-100: #6a4f38;
+  --link-color: #58a8a5;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 81%);
+  --checklist-done-color: #c7ad96;
+  /*    --h1-color:                #96704F; */
+  /*    --h3-color:                #9F7653; */
+  /*    --h5-color:                #BEA18D; */
+  --OT-table-background: #f8f5f1;
+  --OT-table-header-background: #e6ddd5;
+  --OT-table-alt-background: #f2ece6;
+  --metadata-background: #eee5dd;
+  --OT-color-muted-on-accent-1: #dfcfc2;
+  --OT-color-muted-on-base-20: #89786c;
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-on-base-20: #a87d58;
+  --OT-setting-item-description: #8b684a;
+  --OT-stabilo-mark: #e9ddd1;
+}
+
+.accentColor-lightMode-shade {
+  --accent-h: 28 !important;
+  --accent-s: 31% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #876446 !important;
+  --color-accent-2: #a87d58 !important;
+  --color-accent-3: #e8ddd3 !important;
+  --OT-color-on-accent-1: #faf7f4 !important;
+  /*    --OT-color-muted-on-accent-1:    #fff    !important; */
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+}
+
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 239 !important;
+  --accent-s: 30% !important;
+  --accent-l: 43% !important;
+  --color-accent-1: #4d4e90 !important;
+  --color-accent-2: #8586be !important;
+  --color-accent-3: #c7c8e2 !important;
+}
+
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 178 !important;
+  --accent-s: 31% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #417a79 !important;
+  --color-accent-2: #6fb2b1 !important;
+  --color-accent-3: #deeded !important;
+  --OT-color-on-accent-2: #e6fafa !important;
+}
+
+.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #71573E    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%2371573E" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

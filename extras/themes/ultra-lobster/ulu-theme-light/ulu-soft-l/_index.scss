@@ -1,0 +1,67 @@
+.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 154, 69, 60;
+  --color-red: #9a453c;
+  --color-red-hsl: 6, 44%, 42%;
+  --color-green-rgb: 139, 164, 129;
+  --color-green: #8ba481;
+  --color-green-hsl: 103, 16%, 57%;
+  --color-orange-rgb: 241, 187, 138;
+  --color-orange: #f1bb8a;
+  --color-orange-hsl: 29, 79%, 74%;
+  --color-yellow-rgb: 228, 188, 127;
+  --color-yellow: #e4bc7f;
+  --color-yellow-hsl: 36, 65%, 70%;
+  --color-cyan-rgb: 155, 199, 189;
+  --color-cyan: #9bc7bd;
+  --color-cyan-hsl: 166, 28%, 69%;
+  --color-blue-rgb: 23, 92, 89;
+  --color-blue: #175c59;
+  --color-blue-hsl: 177, 60%, 23%;
+  --color-purple-rgb: 166, 154, 181;
+  --color-purple: #a69ab5;
+  --color-purple-hsl: 267, 15%, 66%;
+  --color-pink-rgb: 239, 121, 106;
+  --color-pink: #ef796a;
+  --color-pink-hsl: 7, 81%, 68%;
+  --canvas-color: 10, 10, 10;
+  --color-base-00: #f6f2ee;
+  /* background-primary */
+  --color-base-05: #fefefe;
+  /* background-secondary-alt in light mode, for some reason */
+  --color-base-10: #fefefe;
+  /* background-primary-alt */
+  --color-base-20: #e1d4c6;
+  /* background-secondary */
+  --color-base-25: #fefefe;
+  /* idk lol */
+  --color-base-30: #c6b19c;
+  /* background-modifier-border */
+  --color-base-35: #a39180;
+  /* background-modifier-border-hover */
+  --color-base-40: var(--color-base-30);
+  /* background-modifier-border-focus */
+  --color-base-50: #817466;
+  /* text-faint */
+  --color-base-60: #a39180;
+  /* also no clue */
+  --color-base-70: #62574d;
+  /* text-muted */
+  --color-base-100: #433c34;
+  /* text-normal */
+  --gradient-bg-primary: linear-gradient(135deg, #faf7f5 1.62%, #f6f2ee 50.72%);
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #e6dcd0 1.62%,
+    #e1d4c6 50.72%
+  );
+  --gradient-bg-tertiary: linear-gradient(
+    135deg,
+    #e4f1f7 30.62%,
+    #d0e6f1 90.72%
+  );
+  --background-modifier-border-alt: #fff;
+}
