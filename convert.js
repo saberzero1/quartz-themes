@@ -19,7 +19,6 @@ import {
   getFonts,
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
-  clearDirectories,
   clearDirectoryContents,
   ensureDirectoryExists,
   copyFileToDirectory,
@@ -75,8 +74,8 @@ if (args[0] === "ATOMIZE") {
 
 const obsidianFolder = "./obsidian"
 const atomicFolder = "./atomic"
-const folders = listFoldersInDirectory(obsidianFolder)
-//const folders = ["Zen"]
+//const folders = listFoldersInDirectory(obsidianFolder)
+const folders = ["Fancy-a-Story"]
 
 const manifestCollection = []
 
