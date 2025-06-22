@@ -195,6 +195,22 @@ export function clearDirectories(dirPath) {
 }
 
 /**
+ * Recursively walks through a directory and yields all file paths.
+ * This function uses async iteration to handle large directories efficiently.
+ *
+ * @param {string} dir - The path of the directory to walk through.
+ * @returns {AsyncGenerator<string>} An async generator that yields file paths.
+ * @throws {Error} If the directory cannot be accessed or read.
+ */
+export async function* walk(dir) {
+    for await (const d of await fs.promises.opendir(dir)) {
+        const entry = path.join(dir, d.name);
+        if (d.isDirectory()) yield* walk(entry);
+        else if (d.isFile()) yield entry;
+    }
+}
+
+/**
  * Removes all contents of a specified directory.
  *
  * @param {string} dirPath - The path of the directory to clear.

@@ -79,13 +79,13 @@ export async function prettierSCSS(scss) {
  * @return {string} The processed CSS string with combined rules split.
  */
 export function cleanCSS(base, inject) {
-let result = `${base}\n${inject}`
+  let result = `${base}\n${inject}`
   result = splitCombinedRules(result)
-    result = combineIdenticalSelectors(result)
-    result = removeEmptyRules(result)
-    result = result.replace(/\n+/g, "\n") // Remove extra newlines
-    result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
-    return result;
+  result = combineIdenticalSelectors(result)
+  result = removeEmptyRules(result)
+  result = result.replace(/\n+/g, "\n") // Remove extra newlines
+  result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+  return result;
 }
 
 /**
@@ -556,20 +556,46 @@ export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPat
   subPath = subPath.startsWith("/") ? subPath.slice(1) : subPath
 
   ensureDirectoryExists(`./extras/themes/${themeName}/${settingName}/${subPath}`)
+  ensureDirectoryExists(`./style-settings/${themeName}/${settingName}/${subPath}`)
+
+  if (subPath !== "") {
+    subPath += "/"
+  }
+
+  const base = styleRulesCSS[0].replace(new RegExp(`\.${settingName}(?=\.|\s)`, "g"), "")
+  const dark = styleRulesCSS[1].replace(new RegExp(`\.${settingName}(?=\.|\s)`, "g"), "")
+  const light = styleRulesCSS[2].replace(new RegExp(`\.${settingName}(?=\.|\s)`, "g"), "")
+
   // Write the style setting to the extras file
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
+    `./extras/themes/${themeName}/${settingName}/${subPath}_index.scss`,
     styleRulesCSS[0],
     "utf8",
   )
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
-    styleRulesCSS[1],
+    `./extras/themes/${themeName}/${settingName}/${subPath}_dark.scss`,
+    styleRulesCSS[1], 
     "utf8",
   )
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}/_index.scss`,
+    `./extras/themes/${themeName}/${settingName}/${subPath}_light.scss`,
     styleRulesCSS[2],
+    "utf8",
+  )
+
+  writePrettier(
+    `./style-settings/${themeName}/${settingName}/${subPath}_index.scss`,
+    base,
+  "utf8",
+  )
+  writePrettier(
+    `./style-settings/${themeName}/${settingName}/${subPath}_dark.scss`,
+    dark,
+    "utf8",
+  )
+  writePrettier(
+    `./style-settings/${themeName}/${settingName}/${subPath}_light.scss`,
+    light,
     "utf8",
   )
 }

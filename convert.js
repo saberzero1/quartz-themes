@@ -20,6 +20,7 @@ import {
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
   clearDirectoryContents,
+  clearDirectories,
   ensureDirectoryExists,
   copyFileToDirectory,
   replaceInFile,
@@ -31,7 +32,7 @@ import {
   extractClassToggleCss,
   replaceVariableValue,
 } from "./util/postcss-style-settings.mjs";
-import { themes, usedRules } from "./config.mjs";
+import { themes, usedRules, themeToTest, testMode } from "./config.mjs";
 import { prune } from "./util/prune-unused.mjs";
 import {
   writeIndex,
@@ -72,10 +73,14 @@ if (args[0] === "ATOMIZE") {
   }
 }
 
+ensureDirectoryExists("./style-settings");
+
 const obsidianFolder = "./obsidian";
 const atomicFolder = "./atomic";
-const folders = listFoldersInDirectory(obsidianFolder);
-//const folders = ["Fancy-a-Story"]
+const styleSettingsFolder = "./style-settings";
+const folders = testMode
+  ? [themeToTest]
+  : listFoldersInDirectory(obsidianFolder);
 
 const manifestCollection = [];
 
@@ -96,7 +101,11 @@ if (singleThemeName === "") {
 }
 
 // STEP 3
-clearDirectoryContents(`./themes`);
+if (folders.length === 1) {
+  clearDirectoryContents(`./themes/${getTheme(manifestCollection[0])}`);
+} else {
+  clearDirectoryContents(`./themes`);
+}
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`);
@@ -275,29 +284,31 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   const themeNameLocal = getValueFromDictionary(manifest, "name");
   console.log(`Processing theme: ${themeNameLocal}`);
-  if (args[0] === "ATOMIZE") {
-    if (!fs.existsSync(`./converted_app.css`)) {
-      const obsidianCSS = fs.readFileSync("./app.css", "utf8");
-      const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
-      const result = cleanCSS(obsidianCSS, overridesCSS);
-      writePrettier(`./converted_app.css`, result, "utf8");
-      // Write extracted version to speed up later processing
-      const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
-      let extractResult = "";
-      for (const rule of usedRules) {
-        const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`;
-        extractResult += applyRuleToString(
-          target,
-          rule,
-          `//%%NEXTEXTRACTRULE%%`,
-          cssAtomicString,
-        );
+  if (args[0] === "ATOMIZE" || testMode) {
+    if (!testMode) {
+      if (!fs.existsSync(`./converted_app.css`)) {
+        const obsidianCSS = fs.readFileSync("./app.css", "utf8");
+        const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
+        const result = cleanCSS(obsidianCSS, overridesCSS);
+        writePrettier(`./converted_app.css`, result, "utf8");
+        // Write extracted version to speed up later processing
+        const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
+        let extractResult = "";
+        for (const rule of usedRules) {
+          const target = `${rule} {\n//%%NEXTEXTRACTRULE%%\n}\n`;
+          extractResult += applyRuleToString(
+            target,
+            rule,
+            `//%%NEXTEXTRACTRULE%%`,
+            cssAtomicString,
+          );
+        }
+        extractResult = combineIdenticalSelectors(extractResult);
+        extractResult = removeEmptyRules(extractResult);
+        extractResult = extractResult.replace(/\n+/g, "\n"); // Remove extra newlines
+        extractResult = extractResult.replace(/^\}$/gm, "}\n"); // Add extra newlines between rules
+        writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
       }
-      extractResult = combineIdenticalSelectors(extractResult);
-      extractResult = removeEmptyRules(extractResult);
-      extractResult = extractResult.replace(/\n+/g, "\n"); // Remove extra newlines
-      extractResult = extractResult.replace(/^\}$/gm, "}\n"); // Add extra newlines between rules
-      writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`);
     const atomicFile = `./atomic/${getTheme(manifest)}/theme.css`;
@@ -314,6 +325,10 @@ manifestCollection.forEach((manifest) => {
     // Theme variations (for style settings)
     const styleSettings = extractStyleSettings(cssString);
     if (styleSettings && styleSettings.length > 0) {
+      ensureDirectoryExists(`./style-settings/${getTheme(manifest)}`);
+      // Clear out all subfolders of the style settings
+      clearDirectories(`./extras/themes/${getTheme(manifest)}`);
+      clearDirectories(`./style-settings/${getTheme(manifest)}`);
       // Extract style settings from the main theme
       styleSettings.forEach((styleSettingsSet) => {
         const styleSets = styleSettingsSet["settings"];
@@ -557,6 +572,39 @@ manifestCollection.forEach((manifest) => {
 
 console.info("All themes processed successfully.");
 
+if (folders.length === 1) {
+  // If only one theme is processed, end early (we are apparently testing)
+  // so we don't need to rebuild the README.md or Quartz Syncer file list
+  console.log(
+    `Single theme processed: ${getTheme(manifestCollection[0])}. Exiting early.`,
+  );
+  // Get all directories under themes
+  const themeFolders = [getTheme(manifestCollection[0])];
+
+  // Embed @use rules in each theme's _index.scss
+  themeFolders.forEach((folder) => {
+    const themePath = `./themes/${folder}/_index.scss`;
+    if (fs.existsSync(themePath)) {
+      // Combine all @use rules in the _index.scss file
+      const scssContent = fs.readFileSync(themePath, "utf8");
+      const processedScss = inlineScssUseRulesAndClean(scssContent, themePath);
+      const prunedScss = prune(processedScss);
+      writePrettier(themePath, prunedScss, "utf8");
+      // Remove all directories under themes/${folder}
+      const themeDir = `./themes/${folder}`;
+      const items = fs.readdirSync(themeDir);
+      items.forEach((item) => {
+        const itemPath = path.join(themeDir, item);
+        if (fs.statSync(itemPath).isDirectory()) {
+          fs.rmSync(itemPath, { recursive: true });
+        }
+      });
+    }
+  });
+  // Exit the script
+  process.exit(0);
+}
+
 // Rebuild README.md
 console.log("Updating compatibility table...");
 
@@ -612,7 +660,7 @@ const themeListFileList = [];
 // Get all directories under themes
 const themeFolders = listFoldersInDirectory(`./themes`);
 
-// Embet @use rules in each theme's _index.scss
+// Embed @use rules in each theme's _index.scss
 themeFolders.forEach((folder) => {
   const themePath = `./themes/${folder}/_index.scss`;
   if (fs.existsSync(themePath)) {

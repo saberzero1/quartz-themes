@@ -107,7 +107,7 @@ export function extractClassToggleCss(cssString, classToggleId) {
     const matchingSelectors = selectors.filter(sel => sel.includes(classSelector))
     if (matchingSelectors.length > 0) {
       // Remove the .class from the selector
-      const newSelectors = matchingSelectors.map(sel => sel.replace(new RegExp(`${classSelector}(?=[\.\s])`, "g"), "").replace(/\s+/g, " ").trim())
+      const newSelectors = matchingSelectors.map(sel => sel.replace(new RegExp(`\.${classSelector}(?=[\.\s])`, "g"), "").replace(/\s+/g, " ").trim())
       // For all non-dark/light selectors, add to output
       if (!newSelectors.some(sel => sel.includes(".theme-dark") || sel.includes(".theme-light"))) {
         output += `${newSelectors.join(", ")} {\n${rule.nodes.map(n => n.toString().endsWithAnyOf(["/", "{"]) ? n.toString() : n.toString() + ";").join("\n")}\n}\n\n`
