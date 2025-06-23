@@ -5,7 +5,7 @@ import {
 } from './util/util.mjs';
 
 export const testMode = false;
-export const themeToTest = 'Blue Topaz';
+export const themeToTest = 'Qlean';
 
 export const themes = getValueFromDictionary(
   readJsonFileAsDictionary(getCurrentFolder(), 'themes.json'),
