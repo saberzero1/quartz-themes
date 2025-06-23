@@ -1660,21 +1660,26 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-accent: var(--accent-blue);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border: var(--border-1);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover: var(--color-red);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--color-base-00);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-success: var(--vercel-blue-600);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: var(--background-3);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1708,6 +1713,7 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
+  --blockquote-border: var(--vercel-blue-600);
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -1715,6 +1721,7 @@ body {
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --border-color: var(--border-1);
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -1766,6 +1773,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
+  --code-block: var(--text-1);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -1934,6 +1942,12 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hr-color: var(--background-modifier-border);
@@ -1966,6 +1980,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code: var(--vercel-blue-600);
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -1980,11 +1995,12 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-10);
-  --interactive-normal: var(--color-base-00);
+  --interactive-hover: var(--highlight-low);
+  --interactive-normal: var(--background-2);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2151,6 +2167,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
+  --pre-code: var(--background-2);
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2168,9 +2185,9 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -2306,21 +2323,22 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-accent: var(--text-accent);
+  --text-accent-hover: var(--link-color-hover);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-faint: var(--text-2);
+  --text-highlight-bg: var(--vercel-blue-300);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
-  --text-on-accent: white;
+  --text-muted: var(--text-2);
+  --text-normal: var(--text-1);
+  --text-on-accent: #ffffff;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-selection: rgba(77, 139, 249, 0.3);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -2344,6 +2362,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
+  --vim-cursor: var(--vercel-blue-600);
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -2371,25 +2390,12 @@ body {
   --background-1: var(--vercel-gray-100);
   --background-2: var(--vercel-gray-200);
   --background-3: var(--vercel-gray-300);
-  --background-accent: var(--accent-blue);
-  --background-modifier-border: var(--border-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.4);
-  --background-modifier-error: #ff0000;
-  --background-modifier-error-hover: #ff3333;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
-  --background-modifier-success: var(--vercel-blue-600);
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-2);
-  --background-secondary: var(--background-2);
-  --background-secondary-alt: var(--background-3);
-  --blockquote-border: var(--vercel-blue-600);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-05);
   --border-1: var(--vercel-gray-200);
   --border-2: var(--vercel-gray-300);
   --border-3: var(--vercel-blue-600);
-  --border-color: var(--border-1);
-  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2430,17 +2436,10 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --heading-color-h1: var(--vercel-blue-500);
-  --heading-color-h2: var(--vercel-blue-600);
-  --heading-color-h3: var(--text-1);
-  --heading-color-h4: var(--text-1);
-  --heading-color-h5: var(--text-1);
-  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-blue-300);
   --highlight-low: var(--vercel-gray-200);
   --highlight-med: var(--vercel-gray-300);
   --highlight-mix-blend-mode: darken;
-  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-200);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -2450,20 +2449,11 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --interactive-accent: var(--accent-blue);
-  --interactive-accent-active: var(--vercel-blue-600);
-  --interactive-accent-hover: var(--vercel-blue-500);
-  --interactive-hover: var(--highlight-low);
-  --interactive-normal: var(--background-2);
   --link-color: var(--vercel-blue-600);
   --link-color-hover: var(--vercel-blue-700);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --pre-code: var(--background-2);
   --pre-code-bg: var(--vercel-gray-200);
-  --scrollbar-active-thumb-bg: var(--border-2);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: var(--border-1);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2472,19 +2462,7 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-1: var(--vercel-gray-900);
   --text-2: var(--vercel-gray-600);
-  --text-accent: var(--text-accent);
-  --text-accent-hover: var(--link-color-hover);
-  --text-error: #ff0000;
-  --text-error-hover: #ff3333;
-  --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
-  --text-muted: var(--text-2);
-  --text-normal: var(--text-1);
-  --text-on-accent: #ffffff;
-  --text-selection: rgba(77, 139, 249, 0.3);
-  --titlebar-background: var(--background-1);
-  --titlebar-background-focused: var(--background-2);
-  --vim-cursor: var(--vercel-blue-600);
+  --text-accent: var(--vercel-blue-600);
   color-scheme: light;
 }
 
@@ -2493,25 +2471,13 @@ body {
   --background-1: var(--vercel-gray-900);
   --background-2: var(--vercel-gray-900);
   --background-3: var(--vercel-gray-800);
-  --background-accent: var(--accent-blue);
-  --background-modifier-border: var(--border-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.4);
-  --background-modifier-error: #ff0000;
-  --background-modifier-error-hover: #ff3333;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
-  --background-modifier-success: var(--vercel-blue-600);
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-2);
-  --background-secondary: var(--background-2);
-  --background-secondary-alt: var(--background-3);
-  --blockquote-border: var(--vercel-blue-600);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
   --border-1: var(--vercel-gray-700);
   --border-2: var(--vercel-gray-600);
   --border-3: var(--vercel-blue-600);
-  --border-color: var(--border-1);
-  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2552,17 +2518,10 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --heading-color-h1: var(--vercel-blue-500);
-  --heading-color-h2: var(--vercel-blue-600);
-  --heading-color-h3: var(--text-1);
-  --heading-color-h4: var(--text-1);
-  --heading-color-h5: var(--text-1);
-  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-gray-600);
   --highlight-low: var(--vercel-gray-800);
   --highlight-med: var(--vercel-gray-700);
   --highlight-mix-blend-mode: darken;
-  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-800);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -2572,11 +2531,10 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--accent-blue);
-  --interactive-accent-active: var(--vercel-blue-600);
-  --interactive-accent-hover: var(--vercel-blue-500);
-  --interactive-hover: var(--highlight-low);
-  --interactive-normal: var(--background-2);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --link-color: var(--vercel-blue-500);
   --link-color-hover: var(--vercel-blue-600);
   --link-external-color: var(--vercel-gray-400);
@@ -2584,10 +2542,7 @@ body {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pre-code: var(--background-2);
-  --scrollbar-active-thumb-bg: var(--border-2);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: var(--border-1);
+  --pre-code: var(--vercel-gray-500);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2596,19 +2551,8 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-1: var(--vercel-gray-100);
   --text-2: var(--vercel-gray-400);
-  --text-accent: var(--text-accent);
-  --text-accent-hover: var(--link-color-hover);
-  --text-error: #ff0000;
-  --text-error-hover: #ff3333;
-  --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
-  --text-muted: var(--text-2);
-  --text-normal: var(--text-1);
-  --text-on-accent: #ffffff;
-  --text-selection: rgba(77, 139, 249, 0.3);
-  --titlebar-background: var(--background-1);
-  --titlebar-background-focused: var(--background-2);
-  --vim-cursor: var(--vercel-blue-600);
+  --text-accent: var(--vercel-blue-500);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
 

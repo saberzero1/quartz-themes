@@ -40,9 +40,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: 210;
+  --accent-l: 63%;
+  --accent-s: 34%;
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -176,6 +176,18 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-blue: #6199bf;
+  --color-blue-rgb: 97, 153, 191;
+  --color-green: #a3be8c;
+  --color-green-rgb: 163, 190, 140;
+  --color-orange: #d08770;
+  --color-orange-rgb: 208, 135, 112;
+  --color-purple: #b48ead;
+  --color-purple-rgb: 180, 142, 173;
+  --color-red: #bf616a;
+  --color-red-rgb: 191, 97, 106;
+  --color-yellow: #ebcb8b;
+  --color-yellow-rgb: 235, 203, 139;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;

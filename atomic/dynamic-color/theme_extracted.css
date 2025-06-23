@@ -27,21 +27,22 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-error: var(--color-red);
+  --background-modifier-active-hover: var(--md-sys-color-primary-container);
+  --background-modifier-border: var(--md-sys-color-outline-variant);
+  --background-modifier-border-focus: var(--md-sys-color-primary);
+  --background-modifier-border-hover: var(--md-sys-color-outline);
+  --background-modifier-error: var(--md-sys-color-error-container);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--color-base-00);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-form-field: var(--md-sys-color-error-surface-container);
+  --background-modifier-hover: var(--md-sys-color-surface-container);
+  --background-modifier-message: var(--md-sys-color-error-secondary-container);
+  --background-modifier-success: var(--md-sys-color-error-primary-container);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: var(--md-sys-color-surface-container-lowest);
+  --background-primary-alt: var(--md-sys-color-surface-container-low);
+  --background-secondary: var(--md-sys-color-surface-container-high);
+  --background-secondary-alt: var(--md-sys-color-surface-container-highest);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -74,16 +75,16 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-background-color: var(--md-sys-color-surface-container-high);
+  --blockquote-border-color: var(--md-sys-color-primary);
   --blockquote-border-thickness: 2px;
-  --blockquote-color: inherit;
+  --blockquote-color: var(--md-sys-color-on-surface);
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
-  --button-radius: var(--input-radius);
+  --button-radius: 20px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -110,8 +111,8 @@ body {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --canvas-background: var(--background-primary);
-  --canvas-card-label-color: var(--text-faint);
+  --canvas-background: var(--md-sys-color-background);
+  --canvas-card-label-color: var(--md-sys-color-on-background);
   --canvas-color: 192, 192, 192;
   --canvas-color-1: var(--color-red-rgb);
   --canvas-color-2: var(--color-orange-rgb);
@@ -119,7 +120,7 @@ body {
   --canvas-color-4: var(--color-green-rgb);
   --canvas-color-5: var(--color-cyan-rgb);
   --canvas-color-6: var(--color-purple-rgb);
-  --canvas-dot-pattern: var(--color-base-30);
+  --canvas-dot-pattern: var(--md-sys-color-outline-variant);
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
@@ -132,14 +133,14 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: var(--background-primary-alt);
+  --code-background: var(--md-sys-color-surface);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
+  --code-normal: var(--md-sys-color-on-surface);
   --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
@@ -157,8 +158,8 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: var(--background-modifier-border);
-  --divider-color-hover: var(--interactive-accent);
+  --divider-color: var(--md-sys-color-outline-variant);
+  --divider-color-hover: var(--md-sys-color-outline);
   --divider-vertical-height: calc(100% - var(--header-height));
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -170,7 +171,7 @@ body {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-background: inherit;
+  --embed-background: var(--md-sys-color-surface);
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
@@ -182,6 +183,8 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 var(--size-4-6);
+  --error-hue: 0;
+  --error-saturation: 84%;
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -251,49 +254,49 @@ body {
   --footnote-radius: var(--radius-s);
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
-  --graph-node: var(--text-muted);
-  --graph-node-attachment: var(--color-yellow);
-  --graph-node-focused: var(--text-accent);
-  --graph-node-tag: var(--color-green);
-  --graph-node-unresolved: var(--text-faint);
-  --graph-text: var(--text-normal);
-  --h1-color: inherit;
+  --graph-line: var(--md-sys-color-outline);
+  --graph-node: var(--md-sys-color-surface-container);
+  --graph-node-attachment: var(--md-sys-color-tertiary-container);
+  --graph-node-focused: var(--md-sys-color-surface-bright);
+  --graph-node-tag: var(--md-sys-color-primary-container);
+  --graph-node-unresolved: var(--md-sys-color-surface-container-low);
+  --graph-text: var(--md-sys-color-on-background);
+  --h1-color: var(--md-sys-color-on-surface);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: var(--md-sys-color-on-surface);
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: var(--md-sys-color-on-surface);
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: var(--md-sys-color-on-surface);
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: var(--md-sys-color-on-surface);
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: var(--md-sys-color-on-surface);
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
@@ -303,8 +306,9 @@ body {
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --hr-color: var(--background-modifier-border);
+  --hr-color: var(--md-sys-color-outline-variant);
   --hr-thickness: 2px;
+  --hue: var(--accent-h, 278);
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
@@ -333,7 +337,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: var(--md-sys-color-on-surface);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
@@ -347,11 +351,13 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
+  --interactive-accent: var(--md-sys-color-primary);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-10);
-  --interactive-normal: var(--color-base-00);
+  --interactive-hover: var(--md-sys-color-primary-container);
+  --interactive-normal: var(--md-sys-color-surface-container);
+  --interactive-normal-accent: var(--md-sys-color-surface-bright);
+  --interactive-normal-hover: var(--md-sys-color-surface-dim);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -395,6 +401,488 @@ body {
   --list-marker-color-hover: var(--text-muted);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
+  --md-ref-palette-error-0: hsl(var(--error-hue) var(--error-saturation) 0%);
+  --md-ref-palette-error-10: hsl(var(--error-hue) var(--error-saturation) 10%);
+  --md-ref-palette-error-100: hsl(
+    var(--error-hue) var(--error-saturation) 100%
+  );
+  --md-ref-palette-error-12: hsl(var(--error-hue) var(--error-saturation) 12%);
+  --md-ref-palette-error-17: hsl(var(--error-hue) var(--error-saturation) 17%);
+  --md-ref-palette-error-20: hsl(var(--error-hue) var(--error-saturation) 20%);
+  --md-ref-palette-error-22: hsl(var(--error-hue) var(--error-saturation) 22%);
+  --md-ref-palette-error-24: hsl(var(--error-hue) var(--error-saturation) 24%);
+  --md-ref-palette-error-25: hsl(var(--error-hue) var(--error-saturation) 25%);
+  --md-ref-palette-error-30: hsl(var(--error-hue) var(--error-saturation) 30%);
+  --md-ref-palette-error-35: hsl(var(--error-hue) var(--error-saturation) 35%);
+  --md-ref-palette-error-4: hsl(var(--error-hue) var(--error-saturation) 4%);
+  --md-ref-palette-error-40: hsl(var(--error-hue) var(--error-saturation) 40%);
+  --md-ref-palette-error-5: hsl(var(--error-hue) var(--error-saturation) 5%);
+  --md-ref-palette-error-50: hsl(var(--error-hue) var(--error-saturation) 50%);
+  --md-ref-palette-error-6: hsl(var(--error-hue) var(--error-saturation) 6%);
+  --md-ref-palette-error-60: hsl(var(--error-hue) var(--error-saturation) 60%);
+  --md-ref-palette-error-70: hsl(var(--error-hue) var(--error-saturation) 70%);
+  --md-ref-palette-error-80: hsl(var(--error-hue) var(--error-saturation) 80%);
+  --md-ref-palette-error-87: hsl(var(--error-hue) var(--error-saturation) 87%);
+  --md-ref-palette-error-90: hsl(var(--error-hue) var(--error-saturation) 90%);
+  --md-ref-palette-error-92: hsl(var(--error-hue) var(--error-saturation) 92%);
+  --md-ref-palette-error-94: hsl(var(--error-hue) var(--error-saturation) 94%);
+  --md-ref-palette-error-95: hsl(var(--error-hue) var(--error-saturation) 95%);
+  --md-ref-palette-error-96: hsl(var(--error-hue) var(--error-saturation) 96%);
+  --md-ref-palette-error-98: hsl(var(--error-hue) var(--error-saturation) 98%);
+  --md-ref-palette-error-99: hsl(var(--error-hue) var(--error-saturation) 99%);
+  --md-ref-palette-neutral-0: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 0%
+  );
+  --md-ref-palette-neutral-10: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 10%
+  );
+  --md-ref-palette-neutral-100: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 100%
+  );
+  --md-ref-palette-neutral-12: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 12%
+  );
+  --md-ref-palette-neutral-17: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 17%
+  );
+  --md-ref-palette-neutral-20: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 20%
+  );
+  --md-ref-palette-neutral-22: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 22%
+  );
+  --md-ref-palette-neutral-24: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 24%
+  );
+  --md-ref-palette-neutral-25: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 25%
+  );
+  --md-ref-palette-neutral-30: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 30%
+  );
+  --md-ref-palette-neutral-35: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 35%
+  );
+  --md-ref-palette-neutral-4: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 4%
+  );
+  --md-ref-palette-neutral-40: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 40%
+  );
+  --md-ref-palette-neutral-5: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 5%
+  );
+  --md-ref-palette-neutral-50: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 50%
+  );
+  --md-ref-palette-neutral-6: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 6%
+  );
+  --md-ref-palette-neutral-60: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 60%
+  );
+  --md-ref-palette-neutral-70: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 70%
+  );
+  --md-ref-palette-neutral-80: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 80%
+  );
+  --md-ref-palette-neutral-87: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 87%
+  );
+  --md-ref-palette-neutral-90: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 90%
+  );
+  --md-ref-palette-neutral-92: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 92%
+  );
+  --md-ref-palette-neutral-94: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 94%
+  );
+  --md-ref-palette-neutral-95: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 95%
+  );
+  --md-ref-palette-neutral-96: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 96%
+  );
+  --md-ref-palette-neutral-98: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 98%
+  );
+  --md-ref-palette-neutral-99: hsl(
+    var(--neutral-hue) var(--neutral-saturation) 99%
+  );
+  --md-ref-palette-neutral-variant-0: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 0%
+  );
+  --md-ref-palette-neutral-variant-10: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 10%
+  );
+  --md-ref-palette-neutral-variant-100: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 100%
+  );
+  --md-ref-palette-neutral-variant-12: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 12%
+  );
+  --md-ref-palette-neutral-variant-17: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 17%
+  );
+  --md-ref-palette-neutral-variant-20: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 20%
+  );
+  --md-ref-palette-neutral-variant-22: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 22%
+  );
+  --md-ref-palette-neutral-variant-24: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 24%
+  );
+  --md-ref-palette-neutral-variant-25: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 25%
+  );
+  --md-ref-palette-neutral-variant-30: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 30%
+  );
+  --md-ref-palette-neutral-variant-35: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 35%
+  );
+  --md-ref-palette-neutral-variant-4: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 4%
+  );
+  --md-ref-palette-neutral-variant-40: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 40%
+  );
+  --md-ref-palette-neutral-variant-5: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 5%
+  );
+  --md-ref-palette-neutral-variant-50: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 50%
+  );
+  --md-ref-palette-neutral-variant-6: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 6%
+  );
+  --md-ref-palette-neutral-variant-60: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 60%
+  );
+  --md-ref-palette-neutral-variant-70: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 70%
+  );
+  --md-ref-palette-neutral-variant-80: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 80%
+  );
+  --md-ref-palette-neutral-variant-87: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 87%
+  );
+  --md-ref-palette-neutral-variant-90: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 90%
+  );
+  --md-ref-palette-neutral-variant-92: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 92%
+  );
+  --md-ref-palette-neutral-variant-94: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 94%
+  );
+  --md-ref-palette-neutral-variant-95: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 95%
+  );
+  --md-ref-palette-neutral-variant-96: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 96%
+  );
+  --md-ref-palette-neutral-variant-98: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 98%
+  );
+  --md-ref-palette-neutral-variant-99: hsl(
+    var(--neutral-variant-hue) var(--neutral-variant-saturation) 99%
+  );
+  --md-ref-palette-primary-0: hsl(
+    var(--primary-hue) var(--primary-saturation) 0%
+  );
+  --md-ref-palette-primary-10: hsl(
+    var(--primary-hue) var(--primary-saturation) 10%
+  );
+  --md-ref-palette-primary-100: hsl(
+    var(--primary-hue) var(--primary-saturation) 100%
+  );
+  --md-ref-palette-primary-12: hsl(
+    var(--primary-hue) var(--primary-saturation) 12%
+  );
+  --md-ref-palette-primary-17: hsl(
+    var(--primary-hue) var(--primary-saturation) 17%
+  );
+  --md-ref-palette-primary-20: hsl(
+    var(--primary-hue) var(--primary-saturation) 20%
+  );
+  --md-ref-palette-primary-22: hsl(
+    var(--primary-hue) var(--primary-saturation) 22%
+  );
+  --md-ref-palette-primary-24: hsl(
+    var(--primary-hue) var(--primary-saturation) 24%
+  );
+  --md-ref-palette-primary-25: hsl(
+    var(--primary-hue) var(--primary-saturation) 25%
+  );
+  --md-ref-palette-primary-30: hsl(
+    var(--primary-hue) var(--primary-saturation) 30%
+  );
+  --md-ref-palette-primary-35: hsl(
+    var(--primary-hue) var(--primary-saturation) 35%
+  );
+  --md-ref-palette-primary-4: hsl(
+    var(--primary-hue) var(--primary-saturation) 4%
+  );
+  --md-ref-palette-primary-40: hsl(
+    var(--primary-hue) var(--primary-saturation) 40%
+  );
+  --md-ref-palette-primary-5: hsl(
+    var(--primary-hue) var(--primary-saturation) 5%
+  );
+  --md-ref-palette-primary-50: hsl(
+    var(--primary-hue) var(--primary-saturation) 50%
+  );
+  --md-ref-palette-primary-6: hsl(
+    var(--primary-hue) var(--primary-saturation) 6%
+  );
+  --md-ref-palette-primary-60: hsl(
+    var(--primary-hue) var(--primary-saturation) 60%
+  );
+  --md-ref-palette-primary-70: hsl(
+    var(--primary-hue) var(--primary-saturation) 70%
+  );
+  --md-ref-palette-primary-80: hsl(
+    var(--primary-hue) var(--primary-saturation) 80%
+  );
+  --md-ref-palette-primary-87: hsl(
+    var(--primary-hue) var(--primary-saturation) 87%
+  );
+  --md-ref-palette-primary-90: hsl(
+    var(--primary-hue) var(--primary-saturation) 90%
+  );
+  --md-ref-palette-primary-92: hsl(
+    var(--primary-hue) var(--primary-saturation) 92%
+  );
+  --md-ref-palette-primary-94: hsl(
+    var(--primary-hue) var(--primary-saturation) 94%
+  );
+  --md-ref-palette-primary-95: hsl(
+    var(--primary-hue) var(--primary-saturation) 95%
+  );
+  --md-ref-palette-primary-96: hsl(
+    var(--primary-hue) var(--primary-saturation) 96%
+  );
+  --md-ref-palette-primary-98: hsl(
+    var(--primary-hue) var(--primary-saturation) 98%
+  );
+  --md-ref-palette-primary-99: hsl(
+    var(--primary-hue) var(--primary-saturation) 99%
+  );
+  --md-ref-palette-secondary-0: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 0%
+  );
+  --md-ref-palette-secondary-10: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 10%
+  );
+  --md-ref-palette-secondary-100: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 100%
+  );
+  --md-ref-palette-secondary-12: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 12%
+  );
+  --md-ref-palette-secondary-17: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 17%
+  );
+  --md-ref-palette-secondary-20: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 20%
+  );
+  --md-ref-palette-secondary-22: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 22%
+  );
+  --md-ref-palette-secondary-24: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 24%
+  );
+  --md-ref-palette-secondary-25: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 25%
+  );
+  --md-ref-palette-secondary-30: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 30%
+  );
+  --md-ref-palette-secondary-35: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 35%
+  );
+  --md-ref-palette-secondary-4: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 4%
+  );
+  --md-ref-palette-secondary-40: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 40%
+  );
+  --md-ref-palette-secondary-5: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 5%
+  );
+  --md-ref-palette-secondary-50: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 50%
+  );
+  --md-ref-palette-secondary-6: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 6%
+  );
+  --md-ref-palette-secondary-60: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 60%
+  );
+  --md-ref-palette-secondary-70: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 70%
+  );
+  --md-ref-palette-secondary-80: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 80%
+  );
+  --md-ref-palette-secondary-87: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 87%
+  );
+  --md-ref-palette-secondary-90: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 90%
+  );
+  --md-ref-palette-secondary-92: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 92%
+  );
+  --md-ref-palette-secondary-94: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 94%
+  );
+  --md-ref-palette-secondary-95: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 95%
+  );
+  --md-ref-palette-secondary-96: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 96%
+  );
+  --md-ref-palette-secondary-98: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 98%
+  );
+  --md-ref-palette-secondary-99: hsl(
+    var(--secondary-hue) var(--secondary-saturation) 99%
+  );
+  --md-ref-palette-tertiary-0: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 0%
+  );
+  --md-ref-palette-tertiary-10: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 10%
+  );
+  --md-ref-palette-tertiary-100: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 100%
+  );
+  --md-ref-palette-tertiary-12: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 12%
+  );
+  --md-ref-palette-tertiary-17: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 17%
+  );
+  --md-ref-palette-tertiary-20: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 20%
+  );
+  --md-ref-palette-tertiary-22: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 22%
+  );
+  --md-ref-palette-tertiary-24: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 24%
+  );
+  --md-ref-palette-tertiary-25: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 25%
+  );
+  --md-ref-palette-tertiary-30: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 30%
+  );
+  --md-ref-palette-tertiary-35: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 35%
+  );
+  --md-ref-palette-tertiary-4: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 4%
+  );
+  --md-ref-palette-tertiary-40: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 40%
+  );
+  --md-ref-palette-tertiary-5: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 5%
+  );
+  --md-ref-palette-tertiary-50: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 50%
+  );
+  --md-ref-palette-tertiary-6: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 6%
+  );
+  --md-ref-palette-tertiary-60: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 60%
+  );
+  --md-ref-palette-tertiary-70: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 70%
+  );
+  --md-ref-palette-tertiary-80: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 80%
+  );
+  --md-ref-palette-tertiary-87: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 87%
+  );
+  --md-ref-palette-tertiary-90: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 90%
+  );
+  --md-ref-palette-tertiary-92: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 92%
+  );
+  --md-ref-palette-tertiary-94: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 94%
+  );
+  --md-ref-palette-tertiary-95: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 95%
+  );
+  --md-ref-palette-tertiary-96: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 96%
+  );
+  --md-ref-palette-tertiary-98: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 98%
+  );
+  --md-ref-palette-tertiary-99: hsl(
+    var(--tertiary-hue) var(--tertiary-saturation) 99%
+  );
+  --md-sys-color-background: var(--md-ref-palette-neutral-10);
+  --md-sys-color-error: var(--md-ref-palette-error-80);
+  --md-sys-color-error-container: var(--md-ref-palette-error-30);
+  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral-20);
+  --md-sys-color-inverse-primary: var(--md-ref-palette-primary-40);
+  --md-sys-color-inverse-surface: var(--md-ref-palette-neutral-90);
+  --md-sys-color-on-background: var(--md-ref-palette-neutral-90);
+  --md-sys-color-on-error: var(--md-ref-palette-error-20);
+  --md-sys-color-on-error-container: var(--md-ref-palette-error-90);
+  --md-sys-color-on-primary: var(--md-ref-palette-primary-20);
+  --md-sys-color-on-primary-container: var(--md-ref-palette-primary-90);
+  --md-sys-color-on-primary-fixed: var(--md-ref-palette-primary-10);
+  --md-sys-color-on-primary-fixed-dim: var(--md-ref-palette-primary-30);
+  --md-sys-color-on-secondary: var(--md-ref-palette-secondary-20);
+  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary-90);
+  --md-sys-color-on-secondary-fixed: var(--md-ref-palette-secondary-10);
+  --md-sys-color-on-secondary-fixed-dim: var(--md-ref-palette-secondary-30);
+  --md-sys-color-on-surface: var(--md-ref-palette-neutral-90);
+  --md-sys-color-on-surface-variant: var(--md-ref-palette-neutral-variant-80);
+  --md-sys-color-on-tertiary: var(--md-ref-palette-tertiary-20);
+  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary-90);
+  --md-sys-color-on-tertiary-fixed: var(--md-ref-palette-tertiary-10);
+  --md-sys-color-on-tertiary-fixed-dim: var(--md-ref-palette-tertiary-30);
+  --md-sys-color-outline: var(--md-ref-palette-neutral-variant-60);
+  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant-30);
+  --md-sys-color-primary: var(--md-ref-palette-primary-80);
+  --md-sys-color-primary-container: var(--md-ref-palette-primary-30);
+  --md-sys-color-primary-fixed: var(--md-ref-palette-primary-90);
+  --md-sys-color-primary-fixed-dim: var(--md-ref-palette-primary-80);
+  --md-sys-color-scrim: var(--md-ref-palette-neutral-0);
+  --md-sys-color-secondary: var(--md-ref-palette-secondary-80);
+  --md-sys-color-secondary-container: var(--md-ref-palette-secondary-30);
+  --md-sys-color-secondary-fixed: var(--md-ref-palette-secondary-90);
+  --md-sys-color-secondary-fixed-dim: var(--md-ref-palette-secondary-80);
+  --md-sys-color-shadow: var(--md-ref-palette-neutral-0);
+  --md-sys-color-surface: var(--md-ref-palette-neutral-6);
+  --md-sys-color-surface-bright: var(--md-ref-palette-neutral-24);
+  --md-sys-color-surface-container: var(--md-ref-palette-neutral-12);
+  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral-17);
+  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral-22);
+  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral-10);
+  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral-4);
+  --md-sys-color-surface-dim: var(--md-ref-palette-neutral-6);
+  --md-sys-color-surface-variant: var(--md-ref-palette-neutral-variant-30);
+  --md-sys-color-tertiary: var(--md-ref-palette-tertiary-80);
+  --md-sys-color-tertiary-container: var(--md-ref-palette-tertiary-30);
+  --md-sys-color-tertiary-fixed: var(--md-ref-palette-tertiary-90);
+  --md-sys-color-tertiary-fixed-dim: var(--md-ref-palette-tertiary-80);
   --menu-backdrop-filter: none;
   --menu-background: var(--background-secondary);
   --menu-border-color: var(--background-modifier-border-hover);
@@ -486,6 +974,10 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
+  --neutral-hue: var(--hue);
+  --neutral-saturation: 4%;
+  --neutral-variant-hue: var(--hue);
+  --neutral-variant-saturation: 8%;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: var(--background-primary);
@@ -518,6 +1010,8 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
+  --primary-hue: var(--hue);
+  --primary-saturation: calc(max(48%, var(--saturation)));
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -531,18 +1025,21 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-primary);
+  --ribbon-background: var(--md-sys-color-surface-container);
+  --ribbon-background-collapsed: var(--md-sys-color-surface-dim);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
-  --search-clear-button-color: var(--text-muted);
+  --saturation: var(--accent-s, 34%);
+  --scrollbar-active-thumb-bg: var(--md-sys-color-on-surface);
+  --scrollbar-bg: var(--md-sys-color-surface-dim);
+  --scrollbar-thumb-bg: var(--md-sys-color-outline);
+  --search-clear-button-color: var(--md-sys-color-on-surface);
   --search-clear-button-size: 13px;
-  --search-icon-color: var(--text-muted);
+  --search-icon-color: var(--md-sys-color-on-surface);
   --search-icon-size: 18px;
-  --search-result-background: var(--background-primary);
+  --search-result-background: var(--md-sys-color-surface-container);
+  --secondary-hue: var(--hue);
+  --secondary-saturation: 16%;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -565,18 +1062,18 @@ body {
   --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
-  --slider-thumb-radius: 50%;
+  --slider-thumb-radius: 36px;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
-  --status-bar-background: var(--background-secondary);
-  --status-bar-border-color: var(--divider-color);
+  --status-bar-background: var(--md-sys-color-primary-container);
+  --status-bar-border-color: var(--md-sys-color-outline-variant);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: var(--font-ui-smaller);
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
-  --status-bar-text-color: var(--text-muted);
+  --status-bar-text-color: var(--md-sys-color-on-primary-container);
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
@@ -659,13 +1156,13 @@ body {
   --table-text-color: inherit;
   --table-text-size: var(--font-text-size);
   --table-white-space: break-spaces;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-background: var(--md-sys-color-primary-container);
+  --tag-background-hover: var(--md-sys-color-primary);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: var(--md-sys-color-on-primary-container);
+  --tag-color-hover: var(--md-sys-color-on-primary);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -673,26 +1170,28 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --tertiary-hue: calc(var(--hue) + 60);
+  --tertiary-saturation: 24%;
+  --text-accent: var(--md-sys-color-primary);
+  --text-accent-hover: var(--md-sys-color-primary);
   --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-faint: var(--md-sys-color-outline-variant);
+  --text-highlight-bg: var(--md-sys-color-tertiary-container);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
-  --text-on-accent: white;
-  --text-on-accent-inverted: black;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-muted: var(--md-sys-color-outline);
+  --text-normal: var(--md-sys-color-on-surface);
+  --text-on-accent: var(--md-sys-color-on-primary);
+  --text-on-accent-inverted: var(--md-sys-color-on-primary);
+  --text-selection: var(--md-sys-color-secondary-container);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
-  --titlebar-border-color: var(--background-modifier-border);
+  --titlebar-background: var(--md-sys-color-surface-dim);
+  --titlebar-background-focused: var(--md-sys-color-surface-container);
+  --titlebar-border-color: var(--md-sys-color-outline-variant);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--text-normal);
+  --titlebar-text-color: var(--md-sys-color-on-surface);
+  --titlebar-text-color-focused: var(--md-sys-color-on-surface);
   --titlebar-text-weight: var(--font-bold);
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -705,6 +1204,7 @@ body {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
+  --vault-name-color: var(--md-sys-color-on-background);
   --vault-profile-actions-display: flex;
   --vault-profile-color: var(--text-normal);
   --vault-profile-color-hover: var(--vault-profile-color);
@@ -1548,30 +2048,10 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --background-modifier-active-hover: var(--md-sys-color-primary-container);
-  --background-modifier-border: var(--md-sys-color-outline-variant);
-  --background-modifier-border-focus: var(--md-sys-color-primary);
-  --background-modifier-border-hover: var(--md-sys-color-outline);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-error: var(--md-sys-color-error-container);
-  --background-modifier-form-field: var(--md-sys-color-error-surface-container);
-  --background-modifier-hover: var(--md-sys-color-surface-container);
-  --background-modifier-message: var(--md-sys-color-error-secondary-container);
-  --background-modifier-success: var(--md-sys-color-error-primary-container);
-  --background-primary: var(--md-sys-color-surface-container-lowest);
-  --background-primary-alt: var(--md-sys-color-surface-container-low);
-  --background-secondary: var(--md-sys-color-surface-container-high);
-  --background-secondary-alt: var(--md-sys-color-surface-container-highest);
-  --blockquote-background-color: var(--md-sys-color-surface-container-high);
-  --blockquote-border-color: var(--md-sys-color-primary);
-  --blockquote-color: var(--md-sys-color-on-surface);
-  --button-radius: 20px;
-  --canvas-background: var(--md-sys-color-background);
-  --canvas-card-label-color: var(--md-sys-color-on-background);
-  --canvas-dot-pattern: var(--md-sys-color-outline-variant);
-  --code-background: var(--md-sys-color-surface);
-  --code-normal: var(--md-sys-color-on-surface);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1612,28 +2092,7 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --divider-color: var(--md-sys-color-outline-variant);
-  --divider-color-hover: var(--md-sys-color-outline);
-  --embed-background: var(--md-sys-color-surface);
-  --error-hue: 0;
-  --error-saturation: 84%;
-  --graph-line: var(--md-sys-color-outline);
-  --graph-node: var(--md-sys-color-surface-container);
-  --graph-node-attachment: var(--md-sys-color-tertiary-container);
-  --graph-node-focused: var(--md-sys-color-surface-bright);
-  --graph-node-tag: var(--md-sys-color-primary-container);
-  --graph-node-unresolved: var(--md-sys-color-surface-container-low);
-  --graph-text: var(--md-sys-color-on-background);
-  --h1-color: var(--md-sys-color-on-surface);
-  --h2-color: var(--md-sys-color-on-surface);
-  --h3-color: var(--md-sys-color-on-surface);
-  --h4-color: var(--md-sys-color-on-surface);
-  --h5-color: var(--md-sys-color-on-surface);
-  --h6-color: var(--md-sys-color-on-surface);
   --highlight-mix-blend-mode: darken;
-  --hr-color: var(--md-sys-color-outline-variant);
-  --hue: var(--accent-h, 278);
-  --inline-title-color: var(--md-sys-color-on-surface);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1642,574 +2101,29 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--md-sys-color-primary);
+  --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--md-sys-color-primary-container);
-  --interactive-normal: var(--md-sys-color-surface-container);
-  --interactive-normal-accent: var(--md-sys-color-surface-bright);
-  --interactive-normal-hover: var(--md-sys-color-surface-dim);
-  --md-ref-palette-error-0: hsl(var(--error-hue) var(--error-saturation) 0%);
-  --md-ref-palette-error-10: hsl(var(--error-hue) var(--error-saturation) 10%);
-  --md-ref-palette-error-100: hsl(
-    var(--error-hue) var(--error-saturation) 100%
-  );
-  --md-ref-palette-error-12: hsl(var(--error-hue) var(--error-saturation) 12%);
-  --md-ref-palette-error-17: hsl(var(--error-hue) var(--error-saturation) 17%);
-  --md-ref-palette-error-20: hsl(var(--error-hue) var(--error-saturation) 20%);
-  --md-ref-palette-error-22: hsl(var(--error-hue) var(--error-saturation) 22%);
-  --md-ref-palette-error-24: hsl(var(--error-hue) var(--error-saturation) 24%);
-  --md-ref-palette-error-25: hsl(var(--error-hue) var(--error-saturation) 25%);
-  --md-ref-palette-error-30: hsl(var(--error-hue) var(--error-saturation) 30%);
-  --md-ref-palette-error-35: hsl(var(--error-hue) var(--error-saturation) 35%);
-  --md-ref-palette-error-4: hsl(var(--error-hue) var(--error-saturation) 4%);
-  --md-ref-palette-error-40: hsl(var(--error-hue) var(--error-saturation) 40%);
-  --md-ref-palette-error-5: hsl(var(--error-hue) var(--error-saturation) 5%);
-  --md-ref-palette-error-50: hsl(var(--error-hue) var(--error-saturation) 50%);
-  --md-ref-palette-error-6: hsl(var(--error-hue) var(--error-saturation) 6%);
-  --md-ref-palette-error-60: hsl(var(--error-hue) var(--error-saturation) 60%);
-  --md-ref-palette-error-70: hsl(var(--error-hue) var(--error-saturation) 70%);
-  --md-ref-palette-error-80: hsl(var(--error-hue) var(--error-saturation) 80%);
-  --md-ref-palette-error-87: hsl(var(--error-hue) var(--error-saturation) 87%);
-  --md-ref-palette-error-90: hsl(var(--error-hue) var(--error-saturation) 90%);
-  --md-ref-palette-error-92: hsl(var(--error-hue) var(--error-saturation) 92%);
-  --md-ref-palette-error-94: hsl(var(--error-hue) var(--error-saturation) 94%);
-  --md-ref-palette-error-95: hsl(var(--error-hue) var(--error-saturation) 95%);
-  --md-ref-palette-error-96: hsl(var(--error-hue) var(--error-saturation) 96%);
-  --md-ref-palette-error-98: hsl(var(--error-hue) var(--error-saturation) 98%);
-  --md-ref-palette-error-99: hsl(var(--error-hue) var(--error-saturation) 99%);
-  --md-ref-palette-neutral-0: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 0%
-  );
-  --md-ref-palette-neutral-10: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 10%
-  );
-  --md-ref-palette-neutral-100: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 100%
-  );
-  --md-ref-palette-neutral-12: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 12%
-  );
-  --md-ref-palette-neutral-17: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 17%
-  );
-  --md-ref-palette-neutral-20: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 20%
-  );
-  --md-ref-palette-neutral-22: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 22%
-  );
-  --md-ref-palette-neutral-24: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 24%
-  );
-  --md-ref-palette-neutral-25: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 25%
-  );
-  --md-ref-palette-neutral-30: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 30%
-  );
-  --md-ref-palette-neutral-35: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 35%
-  );
-  --md-ref-palette-neutral-4: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 4%
-  );
-  --md-ref-palette-neutral-40: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 40%
-  );
-  --md-ref-palette-neutral-5: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 5%
-  );
-  --md-ref-palette-neutral-50: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 50%
-  );
-  --md-ref-palette-neutral-6: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 6%
-  );
-  --md-ref-palette-neutral-60: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 60%
-  );
-  --md-ref-palette-neutral-70: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 70%
-  );
-  --md-ref-palette-neutral-80: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 80%
-  );
-  --md-ref-palette-neutral-87: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 87%
-  );
-  --md-ref-palette-neutral-90: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 90%
-  );
-  --md-ref-palette-neutral-92: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 92%
-  );
-  --md-ref-palette-neutral-94: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 94%
-  );
-  --md-ref-palette-neutral-95: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 95%
-  );
-  --md-ref-palette-neutral-96: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 96%
-  );
-  --md-ref-palette-neutral-98: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 98%
-  );
-  --md-ref-palette-neutral-99: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 99%
-  );
-  --md-ref-palette-neutral-variant-0: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 0%
-  );
-  --md-ref-palette-neutral-variant-10: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 10%
-  );
-  --md-ref-palette-neutral-variant-100: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 100%
-  );
-  --md-ref-palette-neutral-variant-12: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 12%
-  );
-  --md-ref-palette-neutral-variant-17: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 17%
-  );
-  --md-ref-palette-neutral-variant-20: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 20%
-  );
-  --md-ref-palette-neutral-variant-22: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 22%
-  );
-  --md-ref-palette-neutral-variant-24: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 24%
-  );
-  --md-ref-palette-neutral-variant-25: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 25%
-  );
-  --md-ref-palette-neutral-variant-30: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 30%
-  );
-  --md-ref-palette-neutral-variant-35: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 35%
-  );
-  --md-ref-palette-neutral-variant-4: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 4%
-  );
-  --md-ref-palette-neutral-variant-40: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 40%
-  );
-  --md-ref-palette-neutral-variant-5: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 5%
-  );
-  --md-ref-palette-neutral-variant-50: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 50%
-  );
-  --md-ref-palette-neutral-variant-6: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 6%
-  );
-  --md-ref-palette-neutral-variant-60: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 60%
-  );
-  --md-ref-palette-neutral-variant-70: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 70%
-  );
-  --md-ref-palette-neutral-variant-80: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 80%
-  );
-  --md-ref-palette-neutral-variant-87: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 87%
-  );
-  --md-ref-palette-neutral-variant-90: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 90%
-  );
-  --md-ref-palette-neutral-variant-92: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 92%
-  );
-  --md-ref-palette-neutral-variant-94: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 94%
-  );
-  --md-ref-palette-neutral-variant-95: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 95%
-  );
-  --md-ref-palette-neutral-variant-96: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 96%
-  );
-  --md-ref-palette-neutral-variant-98: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 98%
-  );
-  --md-ref-palette-neutral-variant-99: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 99%
-  );
-  --md-ref-palette-primary-0: hsl(
-    var(--primary-hue) var(--primary-saturation) 0%
-  );
-  --md-ref-palette-primary-10: hsl(
-    var(--primary-hue) var(--primary-saturation) 10%
-  );
-  --md-ref-palette-primary-100: hsl(
-    var(--primary-hue) var(--primary-saturation) 100%
-  );
-  --md-ref-palette-primary-12: hsl(
-    var(--primary-hue) var(--primary-saturation) 12%
-  );
-  --md-ref-palette-primary-17: hsl(
-    var(--primary-hue) var(--primary-saturation) 17%
-  );
-  --md-ref-palette-primary-20: hsl(
-    var(--primary-hue) var(--primary-saturation) 20%
-  );
-  --md-ref-palette-primary-22: hsl(
-    var(--primary-hue) var(--primary-saturation) 22%
-  );
-  --md-ref-palette-primary-24: hsl(
-    var(--primary-hue) var(--primary-saturation) 24%
-  );
-  --md-ref-palette-primary-25: hsl(
-    var(--primary-hue) var(--primary-saturation) 25%
-  );
-  --md-ref-palette-primary-30: hsl(
-    var(--primary-hue) var(--primary-saturation) 30%
-  );
-  --md-ref-palette-primary-35: hsl(
-    var(--primary-hue) var(--primary-saturation) 35%
-  );
-  --md-ref-palette-primary-4: hsl(
-    var(--primary-hue) var(--primary-saturation) 4%
-  );
-  --md-ref-palette-primary-40: hsl(
-    var(--primary-hue) var(--primary-saturation) 40%
-  );
-  --md-ref-palette-primary-5: hsl(
-    var(--primary-hue) var(--primary-saturation) 5%
-  );
-  --md-ref-palette-primary-50: hsl(
-    var(--primary-hue) var(--primary-saturation) 50%
-  );
-  --md-ref-palette-primary-6: hsl(
-    var(--primary-hue) var(--primary-saturation) 6%
-  );
-  --md-ref-palette-primary-60: hsl(
-    var(--primary-hue) var(--primary-saturation) 60%
-  );
-  --md-ref-palette-primary-70: hsl(
-    var(--primary-hue) var(--primary-saturation) 70%
-  );
-  --md-ref-palette-primary-80: hsl(
-    var(--primary-hue) var(--primary-saturation) 80%
-  );
-  --md-ref-palette-primary-87: hsl(
-    var(--primary-hue) var(--primary-saturation) 87%
-  );
-  --md-ref-palette-primary-90: hsl(
-    var(--primary-hue) var(--primary-saturation) 90%
-  );
-  --md-ref-palette-primary-92: hsl(
-    var(--primary-hue) var(--primary-saturation) 92%
-  );
-  --md-ref-palette-primary-94: hsl(
-    var(--primary-hue) var(--primary-saturation) 94%
-  );
-  --md-ref-palette-primary-95: hsl(
-    var(--primary-hue) var(--primary-saturation) 95%
-  );
-  --md-ref-palette-primary-96: hsl(
-    var(--primary-hue) var(--primary-saturation) 96%
-  );
-  --md-ref-palette-primary-98: hsl(
-    var(--primary-hue) var(--primary-saturation) 98%
-  );
-  --md-ref-palette-primary-99: hsl(
-    var(--primary-hue) var(--primary-saturation) 99%
-  );
-  --md-ref-palette-secondary-0: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 0%
-  );
-  --md-ref-palette-secondary-10: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 10%
-  );
-  --md-ref-palette-secondary-100: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 100%
-  );
-  --md-ref-palette-secondary-12: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 12%
-  );
-  --md-ref-palette-secondary-17: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 17%
-  );
-  --md-ref-palette-secondary-20: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 20%
-  );
-  --md-ref-palette-secondary-22: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 22%
-  );
-  --md-ref-palette-secondary-24: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 24%
-  );
-  --md-ref-palette-secondary-25: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 25%
-  );
-  --md-ref-palette-secondary-30: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 30%
-  );
-  --md-ref-palette-secondary-35: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 35%
-  );
-  --md-ref-palette-secondary-4: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 4%
-  );
-  --md-ref-palette-secondary-40: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 40%
-  );
-  --md-ref-palette-secondary-5: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 5%
-  );
-  --md-ref-palette-secondary-50: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 50%
-  );
-  --md-ref-palette-secondary-6: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 6%
-  );
-  --md-ref-palette-secondary-60: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 60%
-  );
-  --md-ref-palette-secondary-70: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 70%
-  );
-  --md-ref-palette-secondary-80: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 80%
-  );
-  --md-ref-palette-secondary-87: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 87%
-  );
-  --md-ref-palette-secondary-90: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 90%
-  );
-  --md-ref-palette-secondary-92: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 92%
-  );
-  --md-ref-palette-secondary-94: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 94%
-  );
-  --md-ref-palette-secondary-95: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 95%
-  );
-  --md-ref-palette-secondary-96: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 96%
-  );
-  --md-ref-palette-secondary-98: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 98%
-  );
-  --md-ref-palette-secondary-99: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 99%
-  );
-  --md-ref-palette-tertiary-0: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 0%
-  );
-  --md-ref-palette-tertiary-10: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 10%
-  );
-  --md-ref-palette-tertiary-100: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 100%
-  );
-  --md-ref-palette-tertiary-12: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 12%
-  );
-  --md-ref-palette-tertiary-17: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 17%
-  );
-  --md-ref-palette-tertiary-20: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 20%
-  );
-  --md-ref-palette-tertiary-22: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 22%
-  );
-  --md-ref-palette-tertiary-24: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 24%
-  );
-  --md-ref-palette-tertiary-25: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 25%
-  );
-  --md-ref-palette-tertiary-30: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 30%
-  );
-  --md-ref-palette-tertiary-35: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 35%
-  );
-  --md-ref-palette-tertiary-4: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 4%
-  );
-  --md-ref-palette-tertiary-40: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 40%
-  );
-  --md-ref-palette-tertiary-5: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 5%
-  );
-  --md-ref-palette-tertiary-50: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 50%
-  );
-  --md-ref-palette-tertiary-6: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 6%
-  );
-  --md-ref-palette-tertiary-60: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 60%
-  );
-  --md-ref-palette-tertiary-70: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 70%
-  );
-  --md-ref-palette-tertiary-80: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 80%
-  );
-  --md-ref-palette-tertiary-87: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 87%
-  );
-  --md-ref-palette-tertiary-90: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 90%
-  );
-  --md-ref-palette-tertiary-92: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 92%
-  );
-  --md-ref-palette-tertiary-94: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 94%
-  );
-  --md-ref-palette-tertiary-95: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 95%
-  );
-  --md-ref-palette-tertiary-96: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 96%
-  );
-  --md-ref-palette-tertiary-98: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 98%
-  );
-  --md-ref-palette-tertiary-99: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 99%
-  );
-  --md-sys-color-background: var(--md-ref-palette-neutral-10);
-  --md-sys-color-error: var(--md-ref-palette-error-80);
-  --md-sys-color-error-container: var(--md-ref-palette-error-30);
-  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral-20);
-  --md-sys-color-inverse-primary: var(--md-ref-palette-primary-40);
-  --md-sys-color-inverse-surface: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-background: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-error: var(--md-ref-palette-error-20);
-  --md-sys-color-on-error-container: var(--md-ref-palette-error-90);
-  --md-sys-color-on-primary: var(--md-ref-palette-primary-20);
-  --md-sys-color-on-primary-container: var(--md-ref-palette-primary-90);
-  --md-sys-color-on-primary-fixed: var(--md-ref-palette-primary-10);
-  --md-sys-color-on-primary-fixed-dim: var(--md-ref-palette-primary-30);
-  --md-sys-color-on-secondary: var(--md-ref-palette-secondary-20);
-  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary-90);
-  --md-sys-color-on-secondary-fixed: var(--md-ref-palette-secondary-10);
-  --md-sys-color-on-secondary-fixed-dim: var(--md-ref-palette-secondary-30);
-  --md-sys-color-on-surface: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-surface-variant: var(--md-ref-palette-neutral-variant-80);
-  --md-sys-color-on-tertiary: var(--md-ref-palette-tertiary-20);
-  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary-90);
-  --md-sys-color-on-tertiary-fixed: var(--md-ref-palette-tertiary-10);
-  --md-sys-color-on-tertiary-fixed-dim: var(--md-ref-palette-tertiary-30);
-  --md-sys-color-outline: var(--md-ref-palette-neutral-variant-60);
-  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant-30);
-  --md-sys-color-primary: var(--md-ref-palette-primary-80);
-  --md-sys-color-primary-container: var(--md-ref-palette-primary-30);
-  --md-sys-color-primary-fixed: var(--md-ref-palette-primary-90);
-  --md-sys-color-primary-fixed-dim: var(--md-ref-palette-primary-80);
-  --md-sys-color-scrim: var(--md-ref-palette-neutral-0);
-  --md-sys-color-secondary: var(--md-ref-palette-secondary-80);
-  --md-sys-color-secondary-container: var(--md-ref-palette-secondary-30);
-  --md-sys-color-secondary-fixed: var(--md-ref-palette-secondary-90);
-  --md-sys-color-secondary-fixed-dim: var(--md-ref-palette-secondary-80);
-  --md-sys-color-shadow: var(--md-ref-palette-neutral-0);
-  --md-sys-color-surface: var(--md-ref-palette-neutral-6);
-  --md-sys-color-surface-bright: var(--md-ref-palette-neutral-24);
-  --md-sys-color-surface-container: var(--md-ref-palette-neutral-12);
-  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral-17);
-  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral-22);
-  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral-10);
-  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral-4);
-  --md-sys-color-surface-dim: var(--md-ref-palette-neutral-6);
-  --md-sys-color-surface-variant: var(--md-ref-palette-neutral-variant-30);
-  --md-sys-color-tertiary: var(--md-ref-palette-tertiary-80);
-  --md-sys-color-tertiary-container: var(--md-ref-palette-tertiary-30);
-  --md-sys-color-tertiary-fixed: var(--md-ref-palette-tertiary-90);
-  --md-sys-color-tertiary-fixed-dim: var(--md-ref-palette-tertiary-80);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --neutral-hue: var(--hue);
-  --neutral-saturation: 4%;
-  --neutral-variant-hue: var(--hue);
-  --neutral-variant-saturation: 8%;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --primary-hue: var(--hue);
-  --primary-saturation: calc(max(48%, var(--saturation)));
-  --ribbon-background: var(--md-sys-color-surface-container);
-  --ribbon-background-collapsed: var(--md-sys-color-surface-dim);
-  --saturation: var(--accent-s, 34%);
-  --scrollbar-active-thumb-bg: var(--md-sys-color-on-surface);
-  --scrollbar-bg: var(--md-sys-color-surface-dim);
-  --scrollbar-thumb-bg: var(--md-sys-color-outline);
-  --search-clear-button-color: var(--md-sys-color-on-surface);
-  --search-icon-color: var(--md-sys-color-on-surface);
-  --search-result-background: var(--md-sys-color-surface-container);
-  --secondary-hue: var(--hue);
-  --secondary-saturation: 16%;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --slider-thumb-radius: 36px;
-  --status-bar-background: var(--md-sys-color-primary-container);
-  --status-bar-border-color: var(--md-sys-color-outline-variant);
-  --status-bar-text-color: var(--md-sys-color-on-primary-container);
-  --tag-background: var(--md-sys-color-primary-container);
-  --tag-background-hover: var(--md-sys-color-primary);
-  --tag-color: var(--md-sys-color-on-primary-container);
-  --tag-color-hover: var(--md-sys-color-on-primary);
-  --tertiary-hue: calc(var(--hue) + 60);
-  --tertiary-saturation: 24%;
-  --text-accent: var(--md-sys-color-primary);
-  --text-accent-hover: var(--md-sys-color-primary);
-  --text-faint: var(--md-sys-color-outline-variant);
-  --text-highlight-bg: var(--md-sys-color-tertiary-container);
-  --text-muted: var(--md-sys-color-outline);
-  --text-normal: var(--md-sys-color-on-surface);
-  --text-on-accent: var(--md-sys-color-on-primary);
-  --text-on-accent-inverted: var(--md-sys-color-on-primary);
-  --text-selection: var(--md-sys-color-secondary-container);
-  --titlebar-background: var(--md-sys-color-surface-dim);
-  --titlebar-background-focused: var(--md-sys-color-surface-container);
-  --titlebar-border-color: var(--md-sys-color-outline-variant);
-  --titlebar-text-color: var(--md-sys-color-on-surface);
-  --titlebar-text-color-focused: var(--md-sys-color-on-surface);
-  --vault-name-color: var(--md-sys-color-on-background);
+  --text-accent: var(--color-accent-1);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
 
 .theme-light {
-  --background-modifier-active-hover: var(--md-sys-color-primary-container);
-  --background-modifier-border: var(--md-sys-color-outline-variant);
-  --background-modifier-border-focus: var(--md-sys-color-primary);
-  --background-modifier-border-hover: var(--md-sys-color-outline);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-modifier-error: var(--md-sys-color-error-container);
-  --background-modifier-form-field: var(--md-sys-color-error-surface-container);
-  --background-modifier-hover: var(--md-sys-color-surface-container);
-  --background-modifier-message: var(--md-sys-color-error-secondary-container);
-  --background-modifier-success: var(--md-sys-color-error-primary-container);
-  --background-primary: var(--md-sys-color-surface-container-lowest);
-  --background-primary-alt: var(--md-sys-color-surface-container-low);
-  --background-secondary: var(--md-sys-color-surface-container-high);
-  --background-secondary-alt: var(--md-sys-color-surface-container-highest);
-  --blockquote-background-color: var(--md-sys-color-surface-container-high);
-  --blockquote-border-color: var(--md-sys-color-primary);
-  --blockquote-color: var(--md-sys-color-on-surface);
-  --button-radius: 20px;
-  --canvas-background: var(--md-sys-color-background);
-  --canvas-card-label-color: var(--md-sys-color-on-background);
-  --canvas-dot-pattern: var(--md-sys-color-outline-variant);
-  --code-background: var(--md-sys-color-surface);
-  --code-normal: var(--md-sys-color-on-surface);
+  --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2250,28 +2164,7 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --divider-color: var(--md-sys-color-outline-variant);
-  --divider-color-hover: var(--md-sys-color-outline);
-  --embed-background: var(--md-sys-color-surface);
-  --error-hue: 0;
-  --error-saturation: 84%;
-  --graph-line: var(--md-sys-color-outline);
-  --graph-node: var(--md-sys-color-surface-container);
-  --graph-node-attachment: var(--md-sys-color-tertiary-container);
-  --graph-node-focused: var(--md-sys-color-surface-bright);
-  --graph-node-tag: var(--md-sys-color-primary-container);
-  --graph-node-unresolved: var(--md-sys-color-surface-container-low);
-  --graph-text: var(--md-sys-color-on-background);
-  --h1-color: var(--md-sys-color-on-surface);
-  --h2-color: var(--md-sys-color-on-surface);
-  --h3-color: var(--md-sys-color-on-surface);
-  --h4-color: var(--md-sys-color-on-surface);
-  --h5-color: var(--md-sys-color-on-surface);
-  --h6-color: var(--md-sys-color-on-surface);
   --highlight-mix-blend-mode: darken;
-  --hr-color: var(--md-sys-color-outline-variant);
-  --hue: var(--accent-h, 278);
-  --inline-title-color: var(--md-sys-color-on-surface);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -2280,543 +2173,14 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --interactive-accent: var(--md-sys-color-primary);
-  --interactive-hover: var(--md-sys-color-primary-container);
-  --interactive-normal: var(--md-sys-color-surface-container);
-  --interactive-normal-accent: var(--md-sys-color-surface-bright);
-  --interactive-normal-hover: var(--md-sys-color-surface-dim);
-  --md-ref-palette-error-0: hsl(var(--error-hue) var(--error-saturation) 0%);
-  --md-ref-palette-error-10: hsl(var(--error-hue) var(--error-saturation) 10%);
-  --md-ref-palette-error-100: hsl(
-    var(--error-hue) var(--error-saturation) 100%
-  );
-  --md-ref-palette-error-12: hsl(var(--error-hue) var(--error-saturation) 12%);
-  --md-ref-palette-error-17: hsl(var(--error-hue) var(--error-saturation) 17%);
-  --md-ref-palette-error-20: hsl(var(--error-hue) var(--error-saturation) 20%);
-  --md-ref-palette-error-22: hsl(var(--error-hue) var(--error-saturation) 22%);
-  --md-ref-palette-error-24: hsl(var(--error-hue) var(--error-saturation) 24%);
-  --md-ref-palette-error-25: hsl(var(--error-hue) var(--error-saturation) 25%);
-  --md-ref-palette-error-30: hsl(var(--error-hue) var(--error-saturation) 30%);
-  --md-ref-palette-error-35: hsl(var(--error-hue) var(--error-saturation) 35%);
-  --md-ref-palette-error-4: hsl(var(--error-hue) var(--error-saturation) 4%);
-  --md-ref-palette-error-40: hsl(var(--error-hue) var(--error-saturation) 40%);
-  --md-ref-palette-error-5: hsl(var(--error-hue) var(--error-saturation) 5%);
-  --md-ref-palette-error-50: hsl(var(--error-hue) var(--error-saturation) 50%);
-  --md-ref-palette-error-6: hsl(var(--error-hue) var(--error-saturation) 6%);
-  --md-ref-palette-error-60: hsl(var(--error-hue) var(--error-saturation) 60%);
-  --md-ref-palette-error-70: hsl(var(--error-hue) var(--error-saturation) 70%);
-  --md-ref-palette-error-80: hsl(var(--error-hue) var(--error-saturation) 80%);
-  --md-ref-palette-error-87: hsl(var(--error-hue) var(--error-saturation) 87%);
-  --md-ref-palette-error-90: hsl(var(--error-hue) var(--error-saturation) 90%);
-  --md-ref-palette-error-92: hsl(var(--error-hue) var(--error-saturation) 92%);
-  --md-ref-palette-error-94: hsl(var(--error-hue) var(--error-saturation) 94%);
-  --md-ref-palette-error-95: hsl(var(--error-hue) var(--error-saturation) 95%);
-  --md-ref-palette-error-96: hsl(var(--error-hue) var(--error-saturation) 96%);
-  --md-ref-palette-error-98: hsl(var(--error-hue) var(--error-saturation) 98%);
-  --md-ref-palette-error-99: hsl(var(--error-hue) var(--error-saturation) 99%);
-  --md-ref-palette-neutral-0: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 0%
-  );
-  --md-ref-palette-neutral-10: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 10%
-  );
-  --md-ref-palette-neutral-100: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 100%
-  );
-  --md-ref-palette-neutral-12: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 12%
-  );
-  --md-ref-palette-neutral-17: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 17%
-  );
-  --md-ref-palette-neutral-20: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 20%
-  );
-  --md-ref-palette-neutral-22: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 22%
-  );
-  --md-ref-palette-neutral-24: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 24%
-  );
-  --md-ref-palette-neutral-25: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 25%
-  );
-  --md-ref-palette-neutral-30: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 30%
-  );
-  --md-ref-palette-neutral-35: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 35%
-  );
-  --md-ref-palette-neutral-4: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 4%
-  );
-  --md-ref-palette-neutral-40: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 40%
-  );
-  --md-ref-palette-neutral-5: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 5%
-  );
-  --md-ref-palette-neutral-50: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 50%
-  );
-  --md-ref-palette-neutral-6: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 6%
-  );
-  --md-ref-palette-neutral-60: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 60%
-  );
-  --md-ref-palette-neutral-70: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 70%
-  );
-  --md-ref-palette-neutral-80: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 80%
-  );
-  --md-ref-palette-neutral-87: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 87%
-  );
-  --md-ref-palette-neutral-90: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 90%
-  );
-  --md-ref-palette-neutral-92: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 92%
-  );
-  --md-ref-palette-neutral-94: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 94%
-  );
-  --md-ref-palette-neutral-95: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 95%
-  );
-  --md-ref-palette-neutral-96: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 96%
-  );
-  --md-ref-palette-neutral-98: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 98%
-  );
-  --md-ref-palette-neutral-99: hsl(
-    var(--neutral-hue) var(--neutral-saturation) 99%
-  );
-  --md-ref-palette-neutral-variant-0: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 0%
-  );
-  --md-ref-palette-neutral-variant-10: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 10%
-  );
-  --md-ref-palette-neutral-variant-100: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 100%
-  );
-  --md-ref-palette-neutral-variant-12: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 12%
-  );
-  --md-ref-palette-neutral-variant-17: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 17%
-  );
-  --md-ref-palette-neutral-variant-20: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 20%
-  );
-  --md-ref-palette-neutral-variant-22: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 22%
-  );
-  --md-ref-palette-neutral-variant-24: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 24%
-  );
-  --md-ref-palette-neutral-variant-25: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 25%
-  );
-  --md-ref-palette-neutral-variant-30: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 30%
-  );
-  --md-ref-palette-neutral-variant-35: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 35%
-  );
-  --md-ref-palette-neutral-variant-4: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 4%
-  );
-  --md-ref-palette-neutral-variant-40: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 40%
-  );
-  --md-ref-palette-neutral-variant-5: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 5%
-  );
-  --md-ref-palette-neutral-variant-50: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 50%
-  );
-  --md-ref-palette-neutral-variant-6: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 6%
-  );
-  --md-ref-palette-neutral-variant-60: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 60%
-  );
-  --md-ref-palette-neutral-variant-70: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 70%
-  );
-  --md-ref-palette-neutral-variant-80: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 80%
-  );
-  --md-ref-palette-neutral-variant-87: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 87%
-  );
-  --md-ref-palette-neutral-variant-90: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 90%
-  );
-  --md-ref-palette-neutral-variant-92: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 92%
-  );
-  --md-ref-palette-neutral-variant-94: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 94%
-  );
-  --md-ref-palette-neutral-variant-95: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 95%
-  );
-  --md-ref-palette-neutral-variant-96: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 96%
-  );
-  --md-ref-palette-neutral-variant-98: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 98%
-  );
-  --md-ref-palette-neutral-variant-99: hsl(
-    var(--neutral-variant-hue) var(--neutral-variant-saturation) 99%
-  );
-  --md-ref-palette-primary-0: hsl(
-    var(--primary-hue) var(--primary-saturation) 0%
-  );
-  --md-ref-palette-primary-10: hsl(
-    var(--primary-hue) var(--primary-saturation) 10%
-  );
-  --md-ref-palette-primary-100: hsl(
-    var(--primary-hue) var(--primary-saturation) 100%
-  );
-  --md-ref-palette-primary-12: hsl(
-    var(--primary-hue) var(--primary-saturation) 12%
-  );
-  --md-ref-palette-primary-17: hsl(
-    var(--primary-hue) var(--primary-saturation) 17%
-  );
-  --md-ref-palette-primary-20: hsl(
-    var(--primary-hue) var(--primary-saturation) 20%
-  );
-  --md-ref-palette-primary-22: hsl(
-    var(--primary-hue) var(--primary-saturation) 22%
-  );
-  --md-ref-palette-primary-24: hsl(
-    var(--primary-hue) var(--primary-saturation) 24%
-  );
-  --md-ref-palette-primary-25: hsl(
-    var(--primary-hue) var(--primary-saturation) 25%
-  );
-  --md-ref-palette-primary-30: hsl(
-    var(--primary-hue) var(--primary-saturation) 30%
-  );
-  --md-ref-palette-primary-35: hsl(
-    var(--primary-hue) var(--primary-saturation) 35%
-  );
-  --md-ref-palette-primary-4: hsl(
-    var(--primary-hue) var(--primary-saturation) 4%
-  );
-  --md-ref-palette-primary-40: hsl(
-    var(--primary-hue) var(--primary-saturation) 40%
-  );
-  --md-ref-palette-primary-5: hsl(
-    var(--primary-hue) var(--primary-saturation) 5%
-  );
-  --md-ref-palette-primary-50: hsl(
-    var(--primary-hue) var(--primary-saturation) 50%
-  );
-  --md-ref-palette-primary-6: hsl(
-    var(--primary-hue) var(--primary-saturation) 6%
-  );
-  --md-ref-palette-primary-60: hsl(
-    var(--primary-hue) var(--primary-saturation) 60%
-  );
-  --md-ref-palette-primary-70: hsl(
-    var(--primary-hue) var(--primary-saturation) 70%
-  );
-  --md-ref-palette-primary-80: hsl(
-    var(--primary-hue) var(--primary-saturation) 80%
-  );
-  --md-ref-palette-primary-87: hsl(
-    var(--primary-hue) var(--primary-saturation) 87%
-  );
-  --md-ref-palette-primary-90: hsl(
-    var(--primary-hue) var(--primary-saturation) 90%
-  );
-  --md-ref-palette-primary-92: hsl(
-    var(--primary-hue) var(--primary-saturation) 92%
-  );
-  --md-ref-palette-primary-94: hsl(
-    var(--primary-hue) var(--primary-saturation) 94%
-  );
-  --md-ref-palette-primary-95: hsl(
-    var(--primary-hue) var(--primary-saturation) 95%
-  );
-  --md-ref-palette-primary-96: hsl(
-    var(--primary-hue) var(--primary-saturation) 96%
-  );
-  --md-ref-palette-primary-98: hsl(
-    var(--primary-hue) var(--primary-saturation) 98%
-  );
-  --md-ref-palette-primary-99: hsl(
-    var(--primary-hue) var(--primary-saturation) 99%
-  );
-  --md-ref-palette-secondary-0: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 0%
-  );
-  --md-ref-palette-secondary-10: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 10%
-  );
-  --md-ref-palette-secondary-100: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 100%
-  );
-  --md-ref-palette-secondary-12: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 12%
-  );
-  --md-ref-palette-secondary-17: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 17%
-  );
-  --md-ref-palette-secondary-20: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 20%
-  );
-  --md-ref-palette-secondary-22: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 22%
-  );
-  --md-ref-palette-secondary-24: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 24%
-  );
-  --md-ref-palette-secondary-25: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 25%
-  );
-  --md-ref-palette-secondary-30: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 30%
-  );
-  --md-ref-palette-secondary-35: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 35%
-  );
-  --md-ref-palette-secondary-4: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 4%
-  );
-  --md-ref-palette-secondary-40: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 40%
-  );
-  --md-ref-palette-secondary-5: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 5%
-  );
-  --md-ref-palette-secondary-50: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 50%
-  );
-  --md-ref-palette-secondary-6: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 6%
-  );
-  --md-ref-palette-secondary-60: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 60%
-  );
-  --md-ref-palette-secondary-70: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 70%
-  );
-  --md-ref-palette-secondary-80: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 80%
-  );
-  --md-ref-palette-secondary-87: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 87%
-  );
-  --md-ref-palette-secondary-90: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 90%
-  );
-  --md-ref-palette-secondary-92: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 92%
-  );
-  --md-ref-palette-secondary-94: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 94%
-  );
-  --md-ref-palette-secondary-95: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 95%
-  );
-  --md-ref-palette-secondary-96: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 96%
-  );
-  --md-ref-palette-secondary-98: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 98%
-  );
-  --md-ref-palette-secondary-99: hsl(
-    var(--secondary-hue) var(--secondary-saturation) 99%
-  );
-  --md-ref-palette-tertiary-0: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 0%
-  );
-  --md-ref-palette-tertiary-10: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 10%
-  );
-  --md-ref-palette-tertiary-100: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 100%
-  );
-  --md-ref-palette-tertiary-12: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 12%
-  );
-  --md-ref-palette-tertiary-17: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 17%
-  );
-  --md-ref-palette-tertiary-20: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 20%
-  );
-  --md-ref-palette-tertiary-22: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 22%
-  );
-  --md-ref-palette-tertiary-24: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 24%
-  );
-  --md-ref-palette-tertiary-25: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 25%
-  );
-  --md-ref-palette-tertiary-30: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 30%
-  );
-  --md-ref-palette-tertiary-35: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 35%
-  );
-  --md-ref-palette-tertiary-4: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 4%
-  );
-  --md-ref-palette-tertiary-40: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 40%
-  );
-  --md-ref-palette-tertiary-5: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 5%
-  );
-  --md-ref-palette-tertiary-50: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 50%
-  );
-  --md-ref-palette-tertiary-6: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 6%
-  );
-  --md-ref-palette-tertiary-60: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 60%
-  );
-  --md-ref-palette-tertiary-70: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 70%
-  );
-  --md-ref-palette-tertiary-80: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 80%
-  );
-  --md-ref-palette-tertiary-87: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 87%
-  );
-  --md-ref-palette-tertiary-90: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 90%
-  );
-  --md-ref-palette-tertiary-92: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 92%
-  );
-  --md-ref-palette-tertiary-94: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 94%
-  );
-  --md-ref-palette-tertiary-95: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 95%
-  );
-  --md-ref-palette-tertiary-96: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 96%
-  );
-  --md-ref-palette-tertiary-98: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 98%
-  );
-  --md-ref-palette-tertiary-99: hsl(
-    var(--tertiary-hue) var(--tertiary-saturation) 99%
-  );
-  --md-sys-color-background: var(--md-ref-palette-neutral-10);
-  --md-sys-color-error: var(--md-ref-palette-error-80);
-  --md-sys-color-error-container: var(--md-ref-palette-error-30);
-  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral-20);
-  --md-sys-color-inverse-primary: var(--md-ref-palette-primary-40);
-  --md-sys-color-inverse-surface: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-background: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-error: var(--md-ref-palette-error-20);
-  --md-sys-color-on-error-container: var(--md-ref-palette-error-90);
-  --md-sys-color-on-primary: var(--md-ref-palette-primary-20);
-  --md-sys-color-on-primary-container: var(--md-ref-palette-primary-90);
-  --md-sys-color-on-primary-fixed: var(--md-ref-palette-primary-10);
-  --md-sys-color-on-primary-fixed-dim: var(--md-ref-palette-primary-30);
-  --md-sys-color-on-secondary: var(--md-ref-palette-secondary-20);
-  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary-90);
-  --md-sys-color-on-secondary-fixed: var(--md-ref-palette-secondary-10);
-  --md-sys-color-on-secondary-fixed-dim: var(--md-ref-palette-secondary-30);
-  --md-sys-color-on-surface: var(--md-ref-palette-neutral-90);
-  --md-sys-color-on-surface-variant: var(--md-ref-palette-neutral-variant-80);
-  --md-sys-color-on-tertiary: var(--md-ref-palette-tertiary-20);
-  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary-90);
-  --md-sys-color-on-tertiary-fixed: var(--md-ref-palette-tertiary-10);
-  --md-sys-color-on-tertiary-fixed-dim: var(--md-ref-palette-tertiary-30);
-  --md-sys-color-outline: var(--md-ref-palette-neutral-variant-60);
-  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant-30);
-  --md-sys-color-primary: var(--md-ref-palette-primary-80);
-  --md-sys-color-primary-container: var(--md-ref-palette-primary-30);
-  --md-sys-color-primary-fixed: var(--md-ref-palette-primary-90);
-  --md-sys-color-primary-fixed-dim: var(--md-ref-palette-primary-80);
-  --md-sys-color-scrim: var(--md-ref-palette-neutral-0);
-  --md-sys-color-secondary: var(--md-ref-palette-secondary-80);
-  --md-sys-color-secondary-container: var(--md-ref-palette-secondary-30);
-  --md-sys-color-secondary-fixed: var(--md-ref-palette-secondary-90);
-  --md-sys-color-secondary-fixed-dim: var(--md-ref-palette-secondary-80);
-  --md-sys-color-shadow: var(--md-ref-palette-neutral-0);
-  --md-sys-color-surface: var(--md-ref-palette-neutral-6);
-  --md-sys-color-surface-bright: var(--md-ref-palette-neutral-24);
-  --md-sys-color-surface-container: var(--md-ref-palette-neutral-12);
-  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral-17);
-  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral-22);
-  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral-10);
-  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral-4);
-  --md-sys-color-surface-dim: var(--md-ref-palette-neutral-6);
-  --md-sys-color-surface-variant: var(--md-ref-palette-neutral-variant-30);
-  --md-sys-color-tertiary: var(--md-ref-palette-tertiary-80);
-  --md-sys-color-tertiary-container: var(--md-ref-palette-tertiary-30);
-  --md-sys-color-tertiary-fixed: var(--md-ref-palette-tertiary-90);
-  --md-sys-color-tertiary-fixed-dim: var(--md-ref-palette-tertiary-80);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --neutral-hue: var(--hue);
-  --neutral-saturation: 4%;
-  --neutral-variant-hue: var(--hue);
-  --neutral-variant-saturation: 8%;
-  --primary-hue: var(--hue);
-  --primary-saturation: calc(max(48%, var(--saturation)));
-  --ribbon-background: var(--md-sys-color-surface-container);
-  --ribbon-background-collapsed: var(--md-sys-color-surface-dim);
-  --saturation: var(--accent-s, 34%);
-  --scrollbar-active-thumb-bg: var(--md-sys-color-on-surface);
-  --scrollbar-bg: var(--md-sys-color-surface-dim);
-  --scrollbar-thumb-bg: var(--md-sys-color-outline);
-  --search-clear-button-color: var(--md-sys-color-on-surface);
-  --search-icon-color: var(--md-sys-color-on-surface);
-  --search-result-background: var(--md-sys-color-surface-container);
-  --secondary-hue: var(--hue);
-  --secondary-saturation: 16%;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --slider-thumb-radius: 36px;
-  --status-bar-background: var(--md-sys-color-primary-container);
-  --status-bar-border-color: var(--md-sys-color-outline-variant);
-  --status-bar-text-color: var(--md-sys-color-on-primary-container);
-  --tag-background: var(--md-sys-color-primary-container);
-  --tag-background-hover: var(--md-sys-color-primary);
-  --tag-color: var(--md-sys-color-on-primary-container);
-  --tag-color-hover: var(--md-sys-color-on-primary);
-  --tertiary-hue: calc(var(--hue) + 60);
-  --tertiary-saturation: 24%;
-  --text-accent: var(--md-sys-color-primary);
-  --text-accent-hover: var(--md-sys-color-primary);
-  --text-faint: var(--md-sys-color-outline-variant);
-  --text-highlight-bg: var(--md-sys-color-tertiary-container);
-  --text-muted: var(--md-sys-color-outline);
-  --text-normal: var(--md-sys-color-on-surface);
-  --text-on-accent: var(--md-sys-color-on-primary);
-  --text-on-accent-inverted: var(--md-sys-color-on-primary);
-  --text-selection: var(--md-sys-color-secondary-container);
-  --titlebar-background: var(--md-sys-color-surface-dim);
-  --titlebar-background-focused: var(--md-sys-color-surface-container);
-  --titlebar-border-color: var(--md-sys-color-outline-variant);
-  --titlebar-text-color: var(--md-sys-color-on-surface);
-  --titlebar-text-color-focused: var(--md-sys-color-on-surface);
-  --vault-name-color: var(--md-sys-color-on-background);
   color-scheme: light;
 }
 

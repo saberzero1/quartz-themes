@@ -332,42 +332,78 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
-  --h1-size: 1.802em;
+  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
+  --h1-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h1-size: 2.2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
-  --h2-size: 1.602em;
+  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
+  --h2-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h2-size: 2em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
-  --h3-size: 1.424em;
+  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
+  --h3-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h3-size: 1.85em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
-  --h4-size: 1.266em;
+  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
+  --h4-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h4-size: 1.6em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
-  --h5-size: 1.125em;
+  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
+  --h5-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h5-size: 1.47em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
-  --h6-size: 1em;
+  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
+  --h6-link-ul-color: color-mix(
+    in srgb,
+    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
+    transparent
+  );
+  --h6-size: 1.35em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
@@ -376,6 +412,7 @@ body {
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
+  --hx-link-ul-transparency-pct: 33%;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
@@ -440,16 +477,18 @@ body {
   --line-height-tight: 1.3;
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
-  --link-decoration-hover: underline;
+  --link-decoration: none;
+  --link-decoration-hover: none;
   --link-decoration-thickness: auto;
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
+  --link-unresolved-decoration: none;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  --link-unresolved-decoration-hover: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -459,7 +498,7 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: calc(var(--indent-unit) * var(--indent-size));
+  --list-indent: 1em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: var(--text-faint);
@@ -558,7 +597,7 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
-  --p-spacing: 1rem;
+  --p-spacing: 0.25rem;
   --p-spacing-empty: 0rem;
   --pdf-background: var(--background-primary);
   --pdf-page-background: var(--background-primary);
@@ -1697,50 +1736,7 @@ svg.svg-icon {
   --color-yellow-rgb: 224, 222, 113;
   --default-codeblock: var(--obsidian-codeblock);
   --graph-view-line-color: var(--dark1);
-  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
-  --h1-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h1-size: 2.2em;
-  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
-  --h2-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h2-size: 2em;
-  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
-  --h3-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h3-size: 1.85em;
-  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
-  --h4-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h4-size: 1.6em;
-  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
-  --h5-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h5-size: 1.47em;
-  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
-  --h6-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h6-size: 1.35em;
   --highlight-mix-blend-mode: darken;
-  --hx-link-ul-transparency-pct: 33%;
   --inline-code: var(--code-light-gray);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1756,16 +1752,8 @@ svg.svg-icon {
   --interactive-before: var(--dark4);
   --interactive-hover: var(--color-base-35);
   --interactive-normal: var(--color-base-30);
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --link-unresolved-decoration: none;
-  --link-unresolved-decoration-hover: none;
-  --list-indent: 1em;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --p-spacing: 0.25rem;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
   --pre-code: var(--default-codeblock);
@@ -1855,50 +1843,7 @@ svg.svg-icon {
   --color-yellow-rgb: 224, 172, 0;
   --default-codeblock: var(--r-light3);
   --graph-view-line-color: var(--light4);
-  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
-  --h1-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h1) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h1-size: 2.2em;
-  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
-  --h2-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h2) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h2-size: 2em;
-  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
-  --h3-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h3) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h3-size: 1.85em;
-  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
-  --h4-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h4) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h4-size: 1.6em;
-  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
-  --h5-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h5) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h5-size: 1.47em;
-  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
-  --h6-link-ul-color: color-mix(
-    in srgb,
-    var(--text-title-h6) var(--hx-link-ul-transparency-pct),
-    transparent
-  );
-  --h6-size: 1.35em;
   --highlight-mix-blend-mode: darken;
-  --hx-link-ul-transparency-pct: 33%;
   --inline-code: var(--r-dark2);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -1913,16 +1858,8 @@ svg.svg-icon {
   --interactive-before: var(--r-light4);
   --interactive-hover: var(--r-light0);
   --interactive-normal: var(--r-light2);
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
-  --link-unresolved-decoration: none;
-  --link-unresolved-decoration-hover: none;
-  --list-indent: 1em;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --p-spacing: 0.25rem;
   --pre-code: var(--default-codeblock);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),

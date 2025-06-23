@@ -1942,8 +1942,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
@@ -2268,8 +2268,8 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -2381,8 +2381,6 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
@@ -2391,8 +2389,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
   color-scheme: light;
 }
 
@@ -2457,8 +2453,8 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --interactive-accent-rgb: #d1d5db;
   --interactive-before: #374151;
   --interactive-hover: var(--color-base-35);
@@ -2476,8 +2472,7 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: var(--color-accent-1);
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-link: #d1d5db;

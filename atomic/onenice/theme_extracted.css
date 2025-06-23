@@ -29,14 +29,14 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--interactive-hover);
+  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-message: #a0a1a7;
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-primary: var(--color-base-00);
@@ -123,8 +123,8 @@ body {
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
-  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-color: var(--green);
+  --checkbox-color-hover: var(--purple);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
@@ -157,12 +157,12 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: var(--background-modifier-border);
+  --divider-color: transparent;
   --divider-color-hover: var(--interactive-accent);
   --divider-vertical-height: calc(100% - var(--header-height));
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-background: var(--background-secondary-alt);
   --drag-ghost-text-color: #fff;
   --dropdown-background: var(--interactive-normal);
   --dropdown-background-blend-mode: hard-light;
@@ -181,7 +181,7 @@ body {
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 var(--size-4-6);
+  --embed-padding: 0 0 0 var(--size-4-4);
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -340,7 +340,7 @@ body {
   --inline-title-size: var(--h1-size);
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
-  --inline-title-weight: var(--h1-weight);
+  --inline-title-weight: var(--bold-weight);
   --input-border-width: 1px;
   --input-date-separator: var(--text-faint);
   --input-font-weight: var(--font-normal);
@@ -368,12 +368,12 @@ body {
   --line-height-tight: 1.3;
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
+  --link-decoration: none;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
+  --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
@@ -446,10 +446,7 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(
-    --color-base-40,
-    var(--background-modifier-border-focus)
-  );
+  --modal-border-color: var(--green);
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -468,13 +465,13 @@ body {
   --nav-heading-weight-hover: var(--font-medium);
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-indentation-guide-width: var(--indentation-guide-width);
-  --nav-item-background-active: var(--background-modifier-hover);
+  --nav-item-background-active: #4fa6ed;
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
-  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-active: #ffffff;
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
@@ -518,10 +515,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(
-    --color-base-40,
-    var(--background-modifier-border-focus)
-  );
+  --prompt-border-color: var(--green);
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -531,7 +525,7 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: var(--background-secondary);
+  --ribbon-background: var(--background-secondary-alt);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
@@ -597,7 +591,7 @@ body {
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: var(--divider-color);
+  --tab-outline-color: transparent;
   --tab-outline-width: 1px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
@@ -659,18 +653,18 @@ body {
   --table-text-color: inherit;
   --table-text-size: var(--font-text-size);
   --table-white-space: break-spaces;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-background: var(--background-primary-alt);
+  --tag-background-hover: #8ebd6b;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: var(--purple);
+  --tag-color-hover: var(--purple);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 5px;
+  --tag-radius: 40px;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
@@ -1554,8 +1548,6 @@ svg.svg-icon {
   --aqua: #48b0bd;
   --background-accent: #000;
   --background-modifier-border: #7a818e;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #00000099;
   --background-modifier-error: #e55561;
@@ -1569,15 +1561,12 @@ svg.svg-icon {
     var(--accent-l),
     0.06
   );
-  --background-modifier-message: #a0a1a7;
   --background-modifier-success: #8ebd6b;
   --background-primary: #1f2329;
   --background-primary-alt: #181b20;
   --background-secondary: #181b20;
   --background-secondary-alt: #181b20;
   --blue: #4fa6ed;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1618,15 +1607,11 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --divider-color: transparent;
   --divider-color-hover: #4fa6ed;
-  --drag-ghost-background: var(--background-secondary-alt);
-  --embed-padding: 0 0 0 var(--size-4-4);
   --gray-1: #7a818e;
   --gray-2: #7a818e;
   --green: #8ebd6b;
   --highlight-mix-blend-mode: darken;
-  --inline-title-weight: var(--bold-weight);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1643,21 +1628,14 @@ svg.svg-icon {
   );
   --interactive-hover: #e5556197;
   --interactive-normal: #1f2329;
-  --link-decoration: none;
-  --link-external-decoration: none;
-  --modal-border-color: var(--green);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
   --orange: #cc9057;
   --panel-border-color: #535965;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --prompt-border-color: var(--green);
   --purple: #bf68d9;
   --red: #e55561;
-  --ribbon-background: var(--background-secondary-alt);
   --scrollbar-active-thumb-bg: #4fa6ed;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #20242f;
@@ -1667,14 +1645,6 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tab-outline-color: transparent;
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-padding-x: 5px;
-  --tag-padding-y: 5px;
-  --tag-radius: 40px;
   --text-accent: #61afef;
   --text-accent-hover: #e55561;
   --text-error: #e16d76;
@@ -1702,8 +1672,6 @@ svg.svg-icon {
   --aqua: #0184bc;
   --background-accent: #fff;
   --background-modifier-border: #a0a1a7;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #000000cc;
   --background-modifier-error: #e45649;
@@ -1711,15 +1679,12 @@ svg.svg-icon {
   --background-modifier-error-rgb: 230, 135, 135;
   --background-modifier-form-field: #a0a1a7;
   --background-modifier-form-field-highlighted: #fff;
-  --background-modifier-message: #a0a1a7;
   --background-modifier-success: #50a14f;
   --background-primary: #e6e6e6;
   --background-primary-alt: #e1e1e1;
   --background-secondary: #dcdcdc;
   --background-secondary-alt: #dcdcdc;
   --blue: #4078f2;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1760,15 +1725,11 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --divider-color: transparent;
   --divider-color-hover: #4fa6ed;
-  --drag-ghost-background: var(--background-secondary-alt);
-  --embed-padding: 0 0 0 var(--size-4-4);
   --gray-1: #a0a1a7;
   --gray-2: #a0a1a7;
   --green: #50a14f;
   --highlight-mix-blend-mode: darken;
-  --inline-title-weight: var(--bold-weight);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -1785,19 +1746,12 @@ svg.svg-icon {
   --interactive-accent-rgb: 21, 146, 255;
   --interactive-hover: #e5556197;
   --interactive-normal: #fafafa;
-  --link-decoration: none;
-  --link-external-decoration: none;
-  --modal-border-color: var(--green);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
   --orange: #c18401;
   --panel-border-color: #383a42;
-  --prompt-border-color: var(--green);
   --purple: #a626a4;
   --red: #e45649;
-  --ribbon-background: var(--background-secondary-alt);
   --scrollbar-active-thumb-bg: #4fa6ed;
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: #686868;
@@ -1807,14 +1761,6 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tab-outline-color: transparent;
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-padding-x: 5px;
-  --tag-padding-y: 5px;
-  --tag-radius: 40px;
   --text-accent: #4078f2;
   --text-accent-hover: #e45649;
   --text-error: #e75545;

@@ -1610,9 +1610,9 @@
 /* Obsidian theme variables */
 /* ------------------------ */
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: 250;
+  --accent-l: 75%;
+  --accent-s: 80%;
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 250ms;
   --anim-duration-none: 0;
@@ -1634,9 +1634,11 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: var(--base-60);
+  --background-primary-alt: var(--base-55);
+  --background-secondary: var(--base-55);
+  --background-secondary-alt: var(--base-55);
+  --base-hue: 230;
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1674,7 +1676,7 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: var(--base-10);
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -1741,22 +1743,22 @@ body {
   --checklist-done-color: var(--text-faint);
   --checklist-done-decoration: none;
   --clickable-icon-radius: 6px;
-  --code-background: var(--background-primary-alt);
+  --code-background: var(--background-secondary);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
+  --code-function: var(--color-cyan);
+  --code-important: var(--color-red);
+  --code-keyword: var(--color-purple);
   --code-normal: var(--text-normal);
-  --code-operator: var(--color-red);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
+  --code-operator: var(--color-orange);
+  --code-property: var(--color-blue);
+  --code-punctuation: var(--color-pink);
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
   --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
+  --code-tag: var(--color-yellow);
+  --code-value: var(--color-cyan);
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -1944,14 +1946,14 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
-  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --indentation-guide-color: var(--base-45);
+  --indentation-guide-color-active: var(--base-35);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: var(--base-05);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
@@ -2064,11 +2066,8 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(
-    --color-base-40,
-    var(--background-modifier-border-focus)
-  );
-  --modal-border-width: var(--border-width);
+  --modal-border-color: var(--base-45);
+  --modal-border-width: 1px;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
   --modal-max-height: 1000px;
@@ -2136,11 +2135,8 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(
-    --color-base-40,
-    var(--background-modifier-border-focus)
-  );
-  --prompt-border-width: var(--border-width);
+  --prompt-border-color: var(--base-50);
+  --prompt-border-width: 1px;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
@@ -2150,7 +2146,7 @@ body {
   --radius-s: 4px;
   --radius-xl: 16px;
   --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-primary);
+  --ribbon-background-collapsed: var(--background-secondary);
   --ribbon-padding: 8px 0px;
   --ribbon-width: 40px;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.15);
@@ -2210,6 +2206,7 @@ body {
   --sync-avatar-color-7: var(--color-purple);
   --sync-avatar-color-8: var(--color-pink);
   --sync-avatar-color-current-user: transparent;
+  --tab-active-color: var(--base-45);
   --tab-background-active: var(--background-primary);
   --tab-container-background: var(--background-secondary);
   --tab-curve: 6px;
@@ -2297,11 +2294,11 @@ body {
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
+  --text-faint: var(--base-35);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-muted: var(--base-20);
+  --text-normal: var(--base-15);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
@@ -2356,9 +2353,6 @@ body {
 }
 
 .theme-light {
-  --accent-h: 250;
-  --accent-l: 75%;
-  --accent-s: 80%;
   --background-modifier-border: var(--base-45);
   --background-modifier-border-focus: var(--base-35);
   --background-modifier-border-hover: var(--base-40);
@@ -2366,10 +2360,7 @@ body {
   --background-modifier-cover: rgba(0, 0, 0, 0.5);
   --background-modifier-form-field: rgba(255, 255, 255, 0.5);
   --background-modifier-hover: hsla(var(--base-hue), 40%, 90%, 0.8);
-  --background-primary: var(--base-60);
-  --background-primary-alt: var(--base-55);
-  --background-secondary: var(--base-55);
-  --background-secondary-alt: var(--base-55);
+  --background-secondary-alt: var(--color-base-05);
   --base-05: hsl(var(--base-hue), var(--base-sat, 14%), 8%);
   --base-10: hsl(var(--base-hue), var(--base-sat, 12%), 12%);
   --base-15: hsl(var(--base-hue), var(--base-sat, 11%), 15%);
@@ -2382,20 +2373,6 @@ body {
   --base-50: hsl(var(--base-hue), var(--base-sat, 30%), 92%);
   --base-55: hsl(var(--base-hue), var(--base-sat, 25%), 96%);
   --base-60: hsl(var(--base-hue), var(--base-sat, 15%), 98%);
-  --base-hue: 230;
-  --bold-color: var(--base-10);
-  --code-background: var(--background-secondary);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-cyan);
-  --code-important: var(--color-red);
-  --code-keyword: var(--color-purple);
-  --code-normal: var(--text-normal);
-  --code-operator: var(--color-orange);
-  --code-property: var(--color-blue);
-  --code-punctuation: var(--color-pink);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-yellow);
-  --code-value: var(--color-cyan);
   --color-accent: hsl(var(--color-accent-hsl));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), 75%);
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), 70%);
@@ -2437,8 +2414,6 @@ body {
   --color-yellow: rgb(229, 199, 0);
   --color-yellow-rgb: 229, 199, 0;
   --highlight-mix-blend-mode: darken;
-  --indentation-guide-color: var(--base-45);
-  --indentation-guide-color-active: var(--base-35);
   --inline-title-color: var(--base-05);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -2448,19 +2423,10 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--base-50);
   --interactive-normal: var(--base-55);
-  --modal-border-color: var(--base-45);
-  --modal-border-width: 1px;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --prompt-border-color: var(--base-50);
-  --prompt-border-width: 1px;
-  --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-secondary);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2471,18 +2437,12 @@ body {
   --tab-active-shadow: inset 0 0 0 1px var(--background-modifier-border);
   --text-accent: hsl(var(--accent-h), 85%, 65%);
   --text-accent-hover: hsl(var(--accent-h), 60%, 45%);
-  --text-faint: var(--base-35);
   --text-highlight-bg: var(--base-45);
-  --text-muted: var(--base-20);
-  --text-normal: var(--base-15);
   --text-selection: var(--base-50);
   color-scheme: light;
 }
 
 .theme-dark {
-  --accent-h: 250;
-  --accent-l: 75%;
-  --accent-s: 80%;
   --background-modifier-border: var(--base-45);
   --background-modifier-border-focus: var(--base-35);
   --background-modifier-border-hover: var(--base-40);
@@ -2490,10 +2450,7 @@ body {
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-modifier-hover: hsla(var(--base-hue), 50%, 80%, 0.05);
-  --background-primary: var(--base-60);
-  --background-primary-alt: var(--base-55);
-  --background-secondary: var(--base-55);
-  --background-secondary-alt: var(--base-55);
+  --background-secondary-alt: var(--color-base-30);
   --base-05: hsl(var(--base-hue), var(--base-sat, 2%), 93%);
   --base-10: hsl(var(--base-hue), var(--base-sat, 3%), 82%);
   --base-15: hsl(var(--base-hue), var(--base-sat, 4%), 75%);
@@ -2506,20 +2463,6 @@ body {
   --base-50: hsl(var(--base-hue), var(--base-sat, 11%), 15%);
   --base-55: hsl(var(--base-hue), var(--base-sat, 12%), 12%);
   --base-60: hsl(var(--base-hue), var(--base-sat, 16%), 9%);
-  --base-hue: 230;
-  --bold-color: var(--base-10);
-  --code-background: var(--background-secondary);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-cyan);
-  --code-important: var(--color-red);
-  --code-keyword: var(--color-purple);
-  --code-normal: var(--text-normal);
-  --code-operator: var(--color-orange);
-  --code-property: var(--color-blue);
-  --code-punctuation: var(--color-pink);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-yellow);
-  --code-value: var(--color-cyan);
   --color-accent: hsl(var(--color-accent-hsl));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), 70%);
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), 75%);
@@ -2561,9 +2504,6 @@ body {
   --color-yellow: rgb(230 232 118);
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
-  --indentation-guide-color: var(--base-45);
-  --indentation-guide-color-active: var(--base-35);
-  --inline-title-color: var(--base-05);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2572,34 +2512,23 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: var(--base-40);
   --interactive-normal: var(--base-45);
-  --modal-border-color: var(--base-45);
-  --modal-border-width: 1px;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --prompt-border-color: var(--base-50);
-  --prompt-border-width: 1px;
-  --ribbon-background: var(--background-secondary);
-  --ribbon-background-collapsed: var(--background-secondary);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tab-active-color: var(--base-45);
   --text-accent: hsl(var(--accent-h), 85%, 75%);
   --text-accent-hover: hsl(var(--accent-h), 90%, 84%);
-  --text-faint: var(--base-35);
   --text-highlight-bg: var(--base-40);
-  --text-muted: var(--base-20);
-  --text-normal: var(--base-15);
   --text-selection: var(--base-50);
   color-scheme: dark;
 }

@@ -246,10 +246,16 @@ body {
   --file-margins: var(--size-4-8);
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
-  --floating-toc-background-color: var(--background-primary);
+  --floating-toc-background-color: var(--background-secondary);
   --floating-toc-font-color: var(--nav-item-color);
-  --floating-toc-header-background-color: var(--background-primary);
-  --floating-toc-hover-color: var(--text-accent-hover);
+  --floating-toc-font-size: var(--font-ui-small);
+  --floating-toc-header-background-color: var(--background-secondary);
+  --floating-toc-highlight-color: var(--color-accent-2);
+  --floating-toc-highlight-color-rgb: 255, 128, 0;
+  --floating-toc-hover-color: var(--OT-color-on-accent-1);
+  --floating-toc-line-color: var(--OT-color-on-accent-2);
+  --floating-toc-line-height: 1.2rem;
+  --floating-toc-response-time: 0s;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -1752,15 +1758,6 @@ svg.svg-icon {
   --color-red-rgb: 199, 56, 60;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --floating-toc-background-color: var(--background-secondary);
-  --floating-toc-font-size: var(--font-ui-small);
-  --floating-toc-header-background-color: var(--background-secondary);
-  --floating-toc-highlight-color: var(--color-accent-2);
-  --floating-toc-highlight-color-rgb: 255, 128, 0;
-  --floating-toc-hover-color: var(--OT-color-on-accent-1);
-  --floating-toc-line-color: var(--OT-color-on-accent-2);
-  --floating-toc-line-height: 1.2rem;
-  --floating-toc-response-time: 0s;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1837,15 +1834,6 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --floating-toc-background-color: var(--background-secondary);
-  --floating-toc-font-size: var(--font-ui-small);
-  --floating-toc-header-background-color: var(--background-secondary);
-  --floating-toc-highlight-color: var(--color-accent-2);
-  --floating-toc-highlight-color-rgb: 255, 128, 0;
-  --floating-toc-hover-color: var(--OT-color-on-accent-1);
-  --floating-toc-line-color: var(--OT-color-on-accent-2);
-  --floating-toc-line-height: 1.2rem;
-  --floating-toc-response-time: 0s;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),

@@ -15,9 +15,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: 163;
+  --accent-l: 28%;
+  --accent-s: 90%;
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -31,17 +31,19 @@ body {
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-box-shadow: none;
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-message: rgba(0, 0, 0, 0.8);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-30);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -88,6 +90,7 @@ body {
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: var(--color-red-rgb);
+  --callout-columns-sub-width-min: max(50%, 200px);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-default: var(--color-blue-rgb);
@@ -151,6 +154,16 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: var(--color-accent-10);
+  --color-accent-00: hsl(155, 100%, 37%);
+  --color-accent-05: hsl(158, 96%, 33%);
+  --color-accent-1: var(--color-accent-00);
+  --color-accent-10: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-15: hsl(170, 83%, 24%);
+  --color-accent-2: var(--color-accent-20);
+  --color-accent-20: hsl(184, 74%, 20%);
+  --color-red-2: hsl(0, 100%, 40%);
+  --color-white-soft: hsl(230, 43%, 99.5%);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -176,6 +189,7 @@ body {
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
+  --embed-border-left: none;
   --embed-border-start: 2px solid var(--interactive-accent);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
@@ -198,8 +212,11 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
     Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
+  --font-editor: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
+  --font-editor-m: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
   --font-extrabold: 800;
   --font-extralight: 200;
+  --font-heading: 'Manrope', 'Inter 3.19', 'DM Sans';
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font);
@@ -207,7 +224,9 @@ body {
   --font-interface-theme: var(--font-ui);
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: var(--font-text);
+  --font-menu: 'Manrope', 'Inter 3.19', 'DM Sans';
+  --font-menu-m: 'Manrope', 'Inter 3.19', 'DM Sans';
+  --font-mermaid: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme), 'DM Mono';
   --font-monospace-default:
@@ -215,12 +234,13 @@ body {
     'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
     'Source Code Pro', monospace;
   --font-monospace-override: '??';
-  --font-monospace-theme: '??';
+  --font-monospace-theme: 'DM Mono';
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
     var(--font-text-theme), 'Arial';
   --font-print-override: '??';
+  --font-reveal: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
@@ -232,7 +252,9 @@ body {
   --font-text-size: 16px;
   --font-text-theme: var(--font-editor);
   --font-thin: 100;
+  --font-ui: 'Manrope', 'Inter 3.19', 'DM Sans';
   --font-ui-large: 20px;
+  --font-ui-m: 'Manrope', 'Inter 3.19', 'DM Sans';
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -251,6 +273,8 @@ body {
   --footnote-padding-inline: var(--size-2-3);
   --footnote-radius: var(--radius-s);
   --footnote-size: var(--font-smaller);
+  --frame-right-space: 0;
+  --gap-status-bar: var(--size-2-1);
   --graph-controls-width: 240px;
   --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node: var(--text-muted);
@@ -262,54 +286,64 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
-  --h1-size: 1.802em;
+  --h1-size: 1.8em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
-  --h2-size: 1.602em;
+  --h2-size: 1.6em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
-  --h3-size: 1.424em;
+  --h3-size: 1.45em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
-  --h4-size: 1.266em;
+  --h4-size: 1.3em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
-  --h5-size: 1.125em;
+  --h5-size: 1.15em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
-  --h6-size: 1em;
+  --h6-size: 1.05em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
-  --header-height: 40px;
+  --header-height: calc(
+    var(--header-icon-size) + var(--header-padding) * 2 + var(--header-margin) *
+      2
+  );
+  --header-icon-size: 16px;
+  --header-margin: var(--size-4-1);
+  --header-margin-half: calc(0.5 * var(--header-margin));
+  --header-padding: var(--size-2-3);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
+  --height-status-bar-item: 20px;
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
+  --icon-color-focused: var(--color-accent);
   --icon-color-hover: var(--text-muted);
+  --icon-diff: calc(var(--header-icon-size) - var(--tab-icon-size));
+  --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size));
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -347,12 +381,15 @@ body {
   --input-font-weight: var(--font-normal);
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
-  --input-radius: 5px;
+  --input-radius: var(--radius-s);
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-10);
-  --interactive-normal: var(--color-base-00);
+  --interactive-focus: var(--color-base-40);
+  --interactive-hover: var(--color-base-30);
+  --interactive-normal: var(--color-base-20);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -365,6 +402,7 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
+  --leap-status-bar-item: 4px;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: var(--text-accent);
@@ -396,6 +434,7 @@ body {
   --list-marker-color-hover: var(--text-muted);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
+  --margin-callout: 0.5em;
   --menu-backdrop-filter: none;
   --menu-background: var(--background-secondary);
   --menu-border-color: var(--background-modifier-border-hover);
@@ -451,13 +490,13 @@ body {
     --color-base-40,
     var(--background-modifier-border-focus)
   );
-  --modal-border-width: var(--border-width);
+  --modal-border-width: 0;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
   --modal-max-height: 1000px;
   --modal-max-width: 1100px;
   --modal-max-width-narrow: 800px;
-  --modal-radius: var(--radius-l);
+  --modal-radius: var(--radius-m);
   --modal-width: 90vw;
   --nav-collapse-icon-color: var(--collapse-icon-color);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
@@ -487,8 +526,15 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
+  --object-border: var(--object-border-width) solid var(--object-border-color);
+  --object-border-color: var(--modal-border-color);
+  --object-border-width: 0;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
+  --padding-icon-clickable-LR: var(--size-2-2);
+  --padding-icon-clickable-TD: var(--size-2-2);
+  --padding-modal-side: var(--size-4-1);
+  --padding-modal-side-2: calc(var(--padding-modal-side) * 2);
   --pdf-background: var(--background-primary);
   --pdf-page-background: var(--background-primary);
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -523,19 +569,19 @@ body {
     --color-base-40,
     var(--background-modifier-border-focus)
   );
-  --prompt-border-width: var(--border-width);
+  --prompt-border-width: 0;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
-  --radius-l: 12px;
-  --radius-m: 8px;
-  --radius-s: 4px;
+  --radius-l: calc(var(--shape-roundish) * 1.5);
+  --radius-m: calc(var(--shape-roundish) * 1);
+  --radius-s: calc(var(--shape-roundish) * 0.5);
   --radius-xl: 16px;
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
-  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
-  --ribbon-width: 44px;
+  --ribbon-padding: var(--header-margin);
+  --ribbon-width: var(--header-height);
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
@@ -544,7 +590,11 @@ body {
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
+  --setting-heading: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
+  --shadow-l: none;
+  --shadow-s: none;
   --shape-roundish: 0.4rem;
+  --sidebar-icon-size: 18px;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -572,6 +622,7 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
+  --smallcap-font: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
@@ -598,9 +649,11 @@ body {
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
+  --tab-icon-size: 14px;
   --tab-max-width: 320px;
   --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
+  --tab-outline-width: 0px;
+  --tab-padding: calc(var(--header-padding) + 0.5 * var(--icon-diff));
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
   --tab-stacked-font-size: var(--font-ui-small);
@@ -678,6 +731,7 @@ body {
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
+  --text-error-hover: var(--color-red-2);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
@@ -696,7 +750,7 @@ body {
   --titlebar-text-color: var(--text-muted);
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-weight: var(--font-bold);
-  --toggle-border-width: 2px;
+  --toggle-border-width: 0;
   --toggle-radius: 18px;
   --toggle-s-border-width: 2px;
   --toggle-s-thumb-height: 15px;
@@ -713,6 +767,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
+  --width-vll: 700px;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -1562,23 +1617,21 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --accent-h: 163;
-  --accent-l: 28%;
-  --accent-s: 90%;
-  --background-modifier-box-shadow: none;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
-  --background-modifier-message: rgba(0, 0, 0, 0.8);
   --background-secondary-alt: var(--color-base-30);
-  --callout-columns-sub-width-min: max(50%, 200px);
-  --color-accent: var(--color-accent-10);
-  --color-accent-00: hsl(155, 100%, 37%);
-  --color-accent-05: hsl(158, 96%, 33%);
-  --color-accent-1: var(--color-accent-00);
-  --color-accent-10: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-15: hsl(170, 83%, 24%);
-  --color-accent-2: var(--color-accent-20);
-  --color-accent-20: hsl(184, 74%, 20%);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1605,109 +1658,56 @@ svg.svg-icon {
   --color-purple: #a882ff;
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
-  --color-red-2: hsl(0, 100%, 40%);
   --color-red-rgb: 251, 70, 76;
-  --color-white-soft: hsl(230, 43%, 99.5%);
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --embed-border-left: none;
-  --font-editor: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-editor-m: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-heading: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-menu: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-menu-m: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-mermaid: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-monospace-theme: 'DM Mono';
-  --font-reveal: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-ui: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-ui-m: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --frame-right-space: 0;
-  --gap-status-bar: var(--size-2-1);
-  --h1-size: 1.8em;
-  --h2-size: 1.6em;
-  --h3-size: 1.45em;
-  --h4-size: 1.3em;
-  --h5-size: 1.15em;
-  --h6-size: 1.05em;
-  --header-height: calc(
-    var(--header-icon-size) + var(--header-padding) * 2 + var(--header-margin) *
-      2
-  );
-  --header-icon-size: 16px;
-  --header-margin: var(--size-4-1);
-  --header-margin-half: calc(0.5 * var(--header-margin));
-  --header-padding: var(--size-2-3);
-  --height-status-bar-item: 20px;
   --highlight-mix-blend-mode: darken;
-  --icon-color-focused: var(--color-accent);
-  --icon-diff: calc(var(--header-icon-size) - var(--tab-icon-size));
-  --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size));
-  --input-radius: var(--radius-s);
-  --input-shadow: none;
-  --input-shadow-hover: none;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --interactive-focus: var(--color-base-40);
-  --interactive-hover: var(--color-base-30);
-  --interactive-normal: var(--color-base-20);
-  --leap-status-bar-item: 4px;
-  --margin-callout: 0.5em;
-  --modal-border-width: 0;
-  --modal-radius: var(--radius-m);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --object-border: var(--object-border-width) solid var(--object-border-color);
-  --object-border-color: var(--modal-border-color);
-  --object-border-width: 0;
-  --padding-icon-clickable-LR: var(--size-2-2);
-  --padding-icon-clickable-TD: var(--size-2-2);
-  --padding-modal-side: var(--size-4-1);
-  --padding-modal-side-2: calc(var(--padding-modal-side) * 2);
   --PComm001-col-dot: var(--color-accent-1);
   --PComm001-col-today: var(--color-accent-1);
   --PComm001-col-year: var(--color-accent-1);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --prompt-border-width: 0;
-  --radius-l: calc(var(--shape-roundish) * 1.5);
-  --radius-m: calc(var(--shape-roundish) * 1);
-  --radius-s: calc(var(--shape-roundish) * 0.5);
-  --ribbon-padding: var(--header-margin);
-  --ribbon-width: var(--header-height);
-  --setting-heading: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --shadow-l: none;
-  --shadow-s: none;
-  --sidebar-icon-size: 18px;
-  --smallcap-font: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --tab-icon-size: 14px;
-  --tab-outline-width: 0px;
-  --tab-padding: calc(var(--header-padding) + 0.5 * var(--icon-diff));
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
-  --text-error-hover: var(--color-red-2);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  --toggle-border-width: 0;
-  --width-vll: 700px;
   color-scheme: dark;
 }
 
 .theme-light {
-  --accent-h: 163;
-  --accent-l: 28%;
-  --accent-s: 90%;
-  --background-modifier-box-shadow: none;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-modifier-message: rgba(0, 0, 0, 0.8);
   --background-primary: var(--color-white-soft);
-  --background-secondary-alt: var(--color-base-30);
-  --callout-columns-sub-width-min: max(50%, 200px);
-  --color-accent: var(--color-accent-10);
-  --color-accent-00: hsl(155, 100%, 37%);
-  --color-accent-05: hsl(158, 96%, 33%);
-  --color-accent-1: var(--color-accent-00);
-  --color-accent-10: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-15: hsl(170, 83%, 24%);
-  --color-accent-2: var(--color-accent-20);
-  --color-accent-20: hsl(184, 74%, 20%);
+  --background-secondary-alt: var(--color-base-05);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -1734,82 +1734,29 @@ svg.svg-icon {
   --color-purple: #7852ee;
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
-  --color-red-2: hsl(0, 100%, 40%);
   --color-red-rgb: 233, 49, 71;
-  --color-white-soft: hsl(230, 43%, 99.5%);
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --embed-border-left: none;
-  --font-editor: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-editor-m: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-heading: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-menu: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-menu-m: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-mermaid: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-monospace-theme: 'DM Mono';
-  --font-reveal: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --font-ui: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --font-ui-m: 'Manrope', 'Inter 3.19', 'DM Sans';
-  --frame-right-space: 0;
-  --gap-status-bar: var(--size-2-1);
-  --h1-size: 1.8em;
-  --h2-size: 1.6em;
-  --h3-size: 1.45em;
-  --h4-size: 1.3em;
-  --h5-size: 1.15em;
-  --h6-size: 1.05em;
-  --header-height: calc(
-    var(--header-icon-size) + var(--header-padding) * 2 + var(--header-margin) *
-      2
-  );
-  --header-icon-size: 16px;
-  --header-margin: var(--size-4-1);
-  --header-margin-half: calc(0.5 * var(--header-margin));
-  --header-padding: var(--size-2-3);
-  --height-status-bar-item: 20px;
   --highlight-mix-blend-mode: darken;
-  --icon-color-focused: var(--color-accent);
-  --icon-diff: calc(var(--header-icon-size) - var(--tab-icon-size));
-  --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size));
-  --input-radius: var(--radius-s);
-  --input-shadow: none;
-  --input-shadow-hover: none;
-  --interactive-focus: var(--color-base-40);
-  --interactive-hover: var(--color-base-30);
-  --interactive-normal: var(--color-base-20);
-  --leap-status-bar-item: 4px;
-  --margin-callout: 0.5em;
-  --modal-border-width: 0;
-  --modal-radius: var(--radius-m);
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --object-border: var(--object-border-width) solid var(--object-border-color);
-  --object-border-color: var(--modal-border-color);
-  --object-border-width: 0;
-  --padding-icon-clickable-LR: var(--size-2-2);
-  --padding-icon-clickable-TD: var(--size-2-2);
-  --padding-modal-side: var(--size-4-1);
-  --padding-modal-side-2: calc(var(--padding-modal-side) * 2);
   --PComm001-col-dot: var(--color-accent-1);
   --PComm001-col-today: var(--color-accent-1);
   --PComm001-col-year: var(--color-accent-1);
-  --prompt-border-width: 0;
-  --radius-l: calc(var(--shape-roundish) * 1.5);
-  --radius-m: calc(var(--shape-roundish) * 1);
-  --radius-s: calc(var(--shape-roundish) * 0.5);
-  --ribbon-padding: var(--header-margin);
-  --ribbon-width: var(--header-height);
-  --setting-heading: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --shadow-l: none;
-  --shadow-s: none;
-  --sidebar-icon-size: 18px;
-  --smallcap-font: 'Inter 3.19', 'DM Sans', 'Inter 3.19', 'Manrope';
-  --tab-icon-size: 14px;
-  --tab-outline-width: 0px;
-  --tab-padding: calc(var(--header-padding) + 0.5 * var(--icon-diff));
-  --text-error-hover: var(--color-red-2);
-  --toggle-border-width: 0;
-  --width-vll: 700px;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
   color-scheme: light;
 }
 

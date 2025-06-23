@@ -1824,6 +1824,7 @@ body {
   --cloze-decoration-color: red;
   --cloze-decoration-color-2: var(--theme-color);
   --cloze-decoration-color-3: var(--theme-color);
+  --code-active-line-background-color: var(--activeline-background);
   --code-atom: var(--orange-1);
   --code-attribute: var(--code-function);
   --code-background: var(--background-code);
@@ -2715,7 +2716,6 @@ body {
   --checklist-color-5: #ffe0b2ab;
   --checklist-color-6: #ffcdd2ab;
   --checklist-color-7: #e1bee7ab;
-  --code-active-line-background-color: var(--activeline-background);
   --code-normal: #000000;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -3080,7 +3080,6 @@ body {
   --checklist-color-5: #a4620086;
   --checklist-color-6: #ab100586;
   --checklist-color-7: #7f1f9086;
-  --code-active-line-background-color: var(--activeline-background);
   --code-normal: #d0d0d0;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(

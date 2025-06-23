@@ -22,9 +22,6 @@ html[saved-theme='dark'] {
     color: var(--shiki-dark);
   }
 
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-modifier-border: var(--color-base-25);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
@@ -81,9 +78,6 @@ html[saved-theme='dark'] {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
   color-scheme: dark;
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-modifier-border: var(--color-base-25);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
@@ -156,10 +150,6 @@ html[saved-theme='light'] {
   code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
-
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -211,9 +201,6 @@ html[saved-theme='light'] {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   color-scheme: light;
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -982,9 +969,9 @@ body {
 :root {
 }
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
@@ -1234,9 +1221,6 @@ html[saved-theme='dark'] {
     color: var(--shiki-dark);
   }
 
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-modifier-border: var(--color-base-25);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
@@ -1293,9 +1277,6 @@ html[saved-theme='dark'] {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
   color-scheme: dark;
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-modifier-border: var(--color-base-25);
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
@@ -1369,10 +1350,6 @@ html[saved-theme='light'] {
   code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
-
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -1424,9 +1401,6 @@ html[saved-theme='light'] {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: rgba(255, 200, 0, 0.459);
   color-scheme: light;
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
   --background-secondary-alt: var(--color-base-05);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(

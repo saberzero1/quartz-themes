@@ -21,42 +21,10 @@ html[saved-theme='dark'] {
   code[data-theme*=' '] span {
     color: var(--shiki-dark);
   }
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #2e2e2e;
   --background-secondary: var(--accent-color-bg_d);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -102,44 +70,12 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: var(--color-accent-1);
   color-scheme: dark;
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #2e2e2e;
   --background-secondary: var(--accent-color-bg_d);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -185,7 +121,7 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: var(--color-accent-1);
   color-scheme: dark;
 }
 
@@ -203,41 +139,9 @@ html[saved-theme='light'] {
   code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-primary: var(--accent-color-bg);
   --background-secondary: var(--accent-color-bg2);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
     calc(var(--accent-s) * 1.01),
@@ -281,43 +185,10 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   color-scheme: light;
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-primary: var(--accent-color-bg);
   --background-secondary: var(--accent-color-bg2);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
     calc(var(--accent-s) * 1.01),
@@ -361,7 +232,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   color-scheme: light;
 }
 
@@ -528,6 +398,38 @@ html[saved-theme='light'] {
 :root {
 }
 body {
+  --accent-color-bg: white;
+  --accent-color-bg_d: #2e2e2e;
+  --accent-color-bg2: white;
+  --accent-color-inverse2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(calc(var(--accent-l) - 67%) * -100)
+  );
+  --accent-color-light08: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.08
+  );
+  --accent-color-light1: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.1
+  );
+  --accent-color-light10: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    1
+  );
+  --accent-color-light5: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.5
+  );
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -593,6 +495,7 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --cursor: default;
   --cursor-link: pointer;
   --font-default:
@@ -741,7 +644,7 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
+  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   --text-accent-hover: var(--color-accent-2);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -783,42 +686,10 @@ html[saved-theme='dark'] {
   code[data-theme*=' '] span {
     color: var(--shiki-dark);
   }
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #2e2e2e;
   --background-secondary: var(--accent-color-bg_d);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -864,44 +735,12 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: var(--color-accent-1);
   color-scheme: dark;
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #2e2e2e;
   --background-secondary: var(--accent-color-bg_d);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -947,7 +786,7 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: var(--color-accent-1);
   color-scheme: dark;
 }
 /* END DARK */
@@ -966,41 +805,9 @@ html[saved-theme='light'] {
   code[data-theme*=' '] span {
     color: var(--shiki-light);
   }
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-primary: var(--accent-color-bg);
   --background-secondary: var(--accent-color-bg2);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
     calc(var(--accent-s) * 1.01),
@@ -1044,43 +851,10 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   color-scheme: light;
-  --accent-color-bg: white;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg2: white;
-  --accent-color-inverse2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(calc(var(--accent-l) - 67%) * -100)
-  );
-  --accent-color-light08: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.08
-  );
-  --accent-color-light1: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    1
-  );
-  --accent-color-light5: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.5
-  );
   --background-primary: var(--accent-color-bg);
   --background-secondary: var(--accent-color-bg2);
-  --color-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
     calc(var(--accent-s) * 1.01),
@@ -1124,7 +898,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --text-accent: hsla(var(--accent-h), var(--accent-s), var(--accent-l));
   color-scheme: light;
 }
 /* END LIGHT */

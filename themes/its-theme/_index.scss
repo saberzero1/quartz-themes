@@ -36,15 +36,8 @@ html[saved-theme='dark'] {
   --background-secondary: var(--side-bar);
   --bg: #252c36;
   --bold-color: inherit;
-  --bttn: var(--dark-accent);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: #232831;
   --code-text: #fa4545;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -84,8 +77,6 @@ html[saved-theme='dark'] {
   --icon-color: var(--soft-text);
   --inactive: #586477;
   --input-bg: rgba(0, 0, 0, 0.3);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: var(--hr);
@@ -105,13 +96,6 @@ html[saved-theme='dark'] {
   --side-bar: var(--note);
   --soft-text: #97a1b9;
   --tag: var(--dark-accent);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #06080c60;
   --text: #bccad8;
   --text-accent: var(--accent2-lite);
@@ -136,15 +120,8 @@ html[saved-theme='dark'] {
   --background-secondary: var(--side-bar);
   --bg: #252c36;
   --bold-color: inherit;
-  --bttn: var(--dark-accent);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: #232831;
   --code-text: #fa4545;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -184,8 +161,6 @@ html[saved-theme='dark'] {
   --icon-color: var(--soft-text);
   --inactive: #586477;
   --input-bg: rgba(0, 0, 0, 0.3);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: var(--hr);
@@ -205,13 +180,6 @@ html[saved-theme='dark'] {
   --side-bar: var(--note);
   --soft-text: #97a1b9;
   --tag: var(--dark-accent);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #06080c60;
   --text: #bccad8;
   --text-accent: var(--accent2-lite);
@@ -253,15 +221,8 @@ html[saved-theme='light'] {
   --background-secondary: var(--side-bar);
   --bg: #e1e9f6;
   --bold-color: inherit;
-  --bttn: var(--headers);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: var(--embed-bg);
   --code-text: #ea4262;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -301,8 +262,6 @@ html[saved-theme='light'] {
   --icon-color: var(--soft-text);
   --inactive: #a6bbde;
   --input-bg: var(--td);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: #b5c2d8;
@@ -322,13 +281,6 @@ html[saved-theme='light'] {
   --side-bar: var(--note);
   --soft-text: #697580;
   --tag: #c65656;
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #d0ddef62;
   --text: #30353a;
   --text-accent: var(--accent2-lite);
@@ -353,15 +305,8 @@ html[saved-theme='light'] {
   --background-secondary: var(--side-bar);
   --bg: #e1e9f6;
   --bold-color: inherit;
-  --bttn: var(--headers);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: var(--embed-bg);
   --code-text: #ea4262;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -401,8 +346,6 @@ html[saved-theme='light'] {
   --icon-color: var(--soft-text);
   --inactive: #a6bbde;
   --input-bg: var(--td);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: #b5c2d8;
@@ -422,13 +365,6 @@ html[saved-theme='light'] {
   --side-bar: var(--note);
   --soft-text: #697580;
   --tag: #c65656;
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #d0ddef62;
   --text: #30353a;
   --text-accent: var(--accent2-lite);
@@ -493,10 +429,10 @@ body {
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --caret-color: var(--text-normal);
-  --checkbox-border-color: var(--text-faint);
-  --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
-  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-border-color: var(--accent);
+  --checkbox-border-color-hover: var(--dark-accent);
+  --checkbox-color: var(--accent);
+  --checkbox-color-hover: var(--dark-accent);
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
@@ -518,7 +454,7 @@ body {
   --code-value: var(--color-purple);
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
-  --collapse-icon-color-collapsed: var(--text-accent);
+  --collapse-icon-color-collapsed: var(--inactive);
   --cursor: default;
   --cursor-link: pointer;
   --file-icon: '';
@@ -649,8 +585,6 @@ body {
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --layer-popover: 30;
@@ -695,15 +629,15 @@ body {
   --size-4-3: 12px;
   --size-4-4: 16px;
   --size-4-6: 24px;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-background: var(--tag);
+  --tag-background-hover: var(--accent);
+  --tag-border-color: var(--tag);
+  --tag-border-color-hover: var(--accent);
   --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: var(--text-dl);
+  --tag-color-hover: var(--text-dl);
   --tag-decoration: none;
-  --tag-decoration-hover: none;
+  --tag-decoration-hover: underline;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: var(--accent2-lite);
@@ -762,15 +696,8 @@ html[saved-theme='dark'] {
   --background-secondary: var(--side-bar);
   --bg: #252c36;
   --bold-color: inherit;
-  --bttn: var(--dark-accent);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: #232831;
   --code-text: #fa4545;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -810,8 +737,6 @@ html[saved-theme='dark'] {
   --icon-color: var(--soft-text);
   --inactive: #586477;
   --input-bg: rgba(0, 0, 0, 0.3);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: var(--hr);
@@ -831,13 +756,6 @@ html[saved-theme='dark'] {
   --side-bar: var(--note);
   --soft-text: #97a1b9;
   --tag: var(--dark-accent);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #06080c60;
   --text: #bccad8;
   --text-accent: var(--accent2-lite);
@@ -862,15 +780,8 @@ html[saved-theme='dark'] {
   --background-secondary: var(--side-bar);
   --bg: #252c36;
   --bold-color: inherit;
-  --bttn: var(--dark-accent);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: #232831;
   --code-text: #fa4545;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -910,8 +821,6 @@ html[saved-theme='dark'] {
   --icon-color: var(--soft-text);
   --inactive: #586477;
   --input-bg: rgba(0, 0, 0, 0.3);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: var(--hr);
@@ -931,13 +840,6 @@ html[saved-theme='dark'] {
   --side-bar: var(--note);
   --soft-text: #97a1b9;
   --tag: var(--dark-accent);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #06080c60;
   --text: #bccad8;
   --text-accent: var(--accent2-lite);
@@ -980,15 +882,8 @@ html[saved-theme='light'] {
   --background-secondary: var(--side-bar);
   --bg: #e1e9f6;
   --bold-color: inherit;
-  --bttn: var(--headers);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: var(--embed-bg);
   --code-text: #ea4262;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -1028,8 +923,6 @@ html[saved-theme='light'] {
   --icon-color: var(--soft-text);
   --inactive: #a6bbde;
   --input-bg: var(--td);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: #b5c2d8;
@@ -1049,13 +942,6 @@ html[saved-theme='light'] {
   --side-bar: var(--note);
   --soft-text: #697580;
   --tag: #c65656;
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #d0ddef62;
   --text: #30353a;
   --text-accent: var(--accent2-lite);
@@ -1080,15 +966,8 @@ html[saved-theme='light'] {
   --background-secondary: var(--side-bar);
   --bg: #e1e9f6;
   --bold-color: inherit;
-  --bttn: var(--headers);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
   --code-bg: var(--embed-bg);
   --code-text: #ea4262;
-  --collapse-icon-color-collapsed: var(--inactive);
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -1128,8 +1007,6 @@ html[saved-theme='light'] {
   --icon-color: var(--soft-text);
   --inactive: #a6bbde;
   --input-bg: var(--td);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --italic-color: inherit;
   --lines: #b5c2d8;
@@ -1149,13 +1026,6 @@ html[saved-theme='light'] {
   --side-bar: var(--note);
   --soft-text: #697580;
   --tag: #c65656;
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
   --td: #d0ddef62;
   --text: #30353a;
   --text-accent: var(--accent2-lite);

@@ -1614,6 +1614,7 @@ body {
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
+  --active-line-color: var(--color-accent);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1685,7 +1686,7 @@ body {
   --blockquote-border-thickness: 8px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: var(--text-accent-hover);
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -1912,6 +1913,7 @@ body {
   --heading-letter-spacing: 1.5px;
   --heading-scaling: 1;
   --heading-spacing: calc(var(--p-spacing) * 2.5);
+  --hotkey-color: var(--secondary-accent);
   --hr-color: var(--text-faint);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
@@ -1945,6 +1947,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1.5px;
   --indentation-guide-width-active: var(--indentation-guide-width);
+  --inline-code-color: var(--secondary-accent);
   --inline-title-color: var(--text-gray);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -1960,11 +1963,11 @@ body {
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
   --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent-hover: var(--hover-accent);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-10);
+  --interactive-hover: var(--color-base-20);
   --interactive-normal: var(--color-base-00);
-  --italic-color: inherit;
+  --italic-color: var(--text-accent-hover);
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -2284,8 +2287,8 @@ body {
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: var(--secondary-accent);
+  --tag-color-hover: var(--text-accent-hover);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-padding-x: 0;
@@ -2294,16 +2297,17 @@ body {
   --tag-size: 1em;
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --text-accent-hover: var(--hover-accent);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
+  --text-gray: var(--color-base-60);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-normal: var(--color-base-85s);
   --text-on-accent: #fff;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-selection: hsl(var(--color-accent-hsl), 20%);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --thin-border: 1px solid var(--basic-border-color);
@@ -2358,7 +2362,6 @@ body {
 
 .theme-light {
   --a-row: #00000008;
-  --active-line-color: var(--color-accent);
   --alt-heading-color: #5460ab;
   --b-row: #00000014;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -2366,7 +2369,6 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --bg-hue: var(--bg-hue-light);
   --bg-sat: 25%;
-  --bold-color: var(--text-accent-hover);
   --color-accent: #1396a0;
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2411,9 +2413,7 @@ body {
   --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 70%/40%;
-  --hotkey-color: var(--secondary-accent);
   --hover-accent: #dc388f;
-  --inline-code-color: var(--secondary-accent);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -2423,15 +2423,6 @@ body {
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
   --interactive-accent: #108189;
-  --interactive-accent-hover: var(--hover-accent);
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-20);
-  --interactive-normal: var(--color-base-00);
-  --italic-color: var(--text-accent-hover);
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
   --link-unresolved-color: #6fb74e;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -2443,15 +2434,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-color: var(--secondary-accent);
-  --tag-color-hover: var(--text-accent-hover);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--hover-accent);
-  --text-faint: var(--color-base-50);
-  --text-gray: var(--color-base-60);
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-85s);
-  --text-selection: hsl(var(--color-accent-hsl), 20%);
   --titlebar-background: var(--bg5);
   --titlebar-background-focused: var(--bg4);
   --vim-cursor-bg: #404040;
@@ -2463,7 +2445,6 @@ body {
 
 .theme-dark {
   --a-row: #0003;
-  --active-line-color: var(--color-accent);
   --alt-heading-color: #8c96d9;
   --b-row: #00000059;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -2472,7 +2453,6 @@ body {
   --background-secondary-alt: var(--color-base-30);
   --bg-hue: var(--bg-hue-dark);
   --bg-sat: 15%;
-  --bold-color: var(--text-accent-hover);
   --color-accent: #18c1cd;
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2517,9 +2497,7 @@ body {
   --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 40%/40%;
-  --hotkey-color: var(--secondary-accent);
   --hover-accent: #ed5aa8;
-  --inline-code-color: var(--secondary-accent);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2529,15 +2507,9 @@ body {
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: #108189;
-  --interactive-accent-hover: var(--hover-accent);
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-20);
-  --interactive-normal: var(--color-base-00);
-  --italic-color: var(--text-accent-hover);
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --link-unresolved-color: #6fb74e;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -2551,15 +2523,8 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tag-color: var(--secondary-accent);
-  --tag-color-hover: var(--text-accent-hover);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--hover-accent);
-  --text-faint: var(--color-base-50);
-  --text-gray: var(--color-base-60);
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-85s);
-  --text-selection: hsl(var(--color-accent-hsl), 20%);
+  --text-accent: var(--color-accent-1);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: var(--bg6);
   --titlebar-background-focused: var(--bg5);
   --vim-cursor-bg: #000;

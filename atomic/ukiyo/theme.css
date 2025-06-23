@@ -1753,6 +1753,7 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent-1: var(--color-accent);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2283,7 +2284,7 @@ body {
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background-focused: var(--color-base-20);
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -2337,7 +2338,11 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;
@@ -2391,7 +2396,6 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: #eac357;
   --text-selection: #c7a78683;
-  --titlebar-background-focused: var(--color-base-20);
   color-scheme: light;
 }
 
@@ -2403,7 +2407,11 @@ body {
   --background-modifier-message: #281f1b;
   --background-secondary-alt: var(--color-base-30);
   --color-accent: #ba945f;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -2464,7 +2472,6 @@ body {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: #926b22e6;
   --text-selection: #6154508f;
-  --titlebar-background-focused: var(--color-base-20);
   color-scheme: dark;
 }
 

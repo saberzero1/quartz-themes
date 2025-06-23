@@ -476,9 +476,9 @@ html[saved-theme='light'] {
   --nordic-darken: 0%;
 }
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: 210;
+  --accent-l: 63%;
+  --accent-s: 34%;
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
@@ -543,6 +543,17 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-blue: #6199bf;
+  --color-blue-rgb: 97, 153, 191;
+  --color-green: #a3be8c;
+  --color-green-rgb: 163, 190, 140;
+  --color-orange: #d08770;
+  --color-orange-rgb: 208, 135, 112;
+  --color-purple: #b48ead;
+  --color-purple-rgb: 180, 142, 173;
+  --color-red: #bf616a;
+  --color-red-rgb: 191, 97, 106;
+  --color-yellow: #ebcb8b;
   --cursor: default;
   --cursor-link: pointer;
   --font-default:

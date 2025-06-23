@@ -123,10 +123,10 @@ body {
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-muted);
   --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--text-muted);
-  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: var(--background-primary);
+  --checkbox-marker-color: transparent;
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
   --checklist-done-color: var(--text-muted);
@@ -226,7 +226,9 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    'iA Writer Duo', var(--font-text-override), 'iA Writer Duo',
+    var(--font-interface);
   --font-text-override: '??';
   --font-text-size: 16px;
   --font-text-theme: '??';
@@ -364,7 +366,7 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
-  --line-height-normal: 1.5;
+  --line-height-normal: 1.7;
   --line-height-tight: 1.3;
   --link-color: var(--text-normal);
   --link-color-hover: var(--text-accent-hover);
@@ -374,10 +376,11 @@ body {
   --link-external-color: var(--text-normal);
   --link-external-color-hover: var(--color-accent);
   --link-external-decoration: underline;
+  --link-external-decoration-color: var(--text-muted);
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-normal);
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  --link-unresolved-decoration-color: var(--text-muted);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 1;
@@ -1559,10 +1562,6 @@ svg.svg-icon {
   --background-primary: #1b1b1b;
   --background-secondary: #141414;
   --background-secondary-alt: var(--color-base-30);
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
-  --checklist-done-decoration: line-through;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1603,9 +1602,6 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --font-text:
-    'iA Writer Duo', var(--font-text-override), 'iA Writer Duo',
-    var(--font-interface);
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1619,10 +1615,6 @@ svg.svg-icon {
   --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: var(--color-base-35);
   --interactive-normal: var(--color-base-30);
-  --line-height-normal: 1.7;
-  --link-decoration: underline;
-  --link-external-decoration-color: var(--text-muted);
-  --link-unresolved-decoration-color: var(--text-muted);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -1649,10 +1641,6 @@ svg.svg-icon {
   --background-primary: #f7f7f7;
   --background-secondary: #fcfcfc;
   --background-secondary-alt: var(--color-base-05);
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
-  --checklist-done-decoration: line-through;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1693,9 +1681,6 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --font-text:
-    'iA Writer Duo', var(--font-text-override), 'iA Writer Duo',
-    var(--font-interface);
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -1705,10 +1690,6 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --line-height-normal: 1.7;
-  --link-decoration: underline;
-  --link-external-decoration-color: var(--text-muted);
-  --link-unresolved-decoration-color: var(--text-muted);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:

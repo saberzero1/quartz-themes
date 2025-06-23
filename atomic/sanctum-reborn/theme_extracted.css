@@ -89,21 +89,23 @@ body {
   --aside-background-hover: var(--background-modifier-hover);
   --aside-border-color: var(--background-modifier-border);
   --aside-text-color: var(--text-muted);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover: var(--color-red);
+  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
+  --background-modifier-border: var(--border-subtle-0);
+  --background-modifier-border-focus: var(--focus);
+  --background-modifier-border-hover: var(--border-subtle-1);
+  --background-modifier-cover: var(--background-hover);
+  --background-modifier-error: var(--red);
+  --background-modifier-error-hover: var(--red);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--color-base-00);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-form-field: var(--field-1);
+  --background-modifier-hover: var(--background-hover);
+  --background-modifier-message: var(--layer-1);
+  --background-modifier-success: var(--green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: var(--background);
+  --background-primary-alt: var(--layer-1);
+  --background-secondary: var(--background);
+  --background-secondary-alt: var(--background);
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -233,8 +235,14 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: var(--interactive);
+  --color-accent-1: var(--interactive);
+  --color-accent-2: var(--interactive);
   --color-accent-rgb-d: 102, 153, 97;
   --color-accent-rgb-l: 246, 141, 69;
+  --color-green-rgb: 102, 153, 97;
+  --color-red-rgb: 197, 65, 40;
+  --color-yellow-rgb: 243, 189, 79;
   --cursor: default;
   --cursor-link: pointer;
   --custom-accent-color: 102, 153, 97;
@@ -451,6 +459,8 @@ body {
   --icon-xs-stroke-width: 1px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
+  --indentation-guide: rgb(var(--mono-rgb-100) 0.15);
+  --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3);
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
   --indentation-guide-editing-indent: 0.85em;
@@ -864,16 +874,17 @@ body {
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
-  --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-error: var(--red);
+  --text-faint: var(--text-placeholder);
+  --text-highlight-bg: var(--highlight);
+  --text-highlight-bg-active: var(--highlight);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
-  --text-on-accent: white;
+  --text-muted: var(--text-secondary);
+  --text-normal: var(--text-primary);
+  --text-on-accent: rgb(var(--white));
   --text-on-accent-inverted: black;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
-  --text-success: var(--color-green);
+  --text-selection: rgba(var(--color-accent-rgb), 0.5);
+  --text-success: var(--green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
@@ -1806,24 +1817,10 @@ svg.svg-icon {
   --background-hover: rgba(var(--gray-50), 0.16);
   --background-inverse: rgb(var(--gray-10));
   --background-inverse-hover: rgba(var(--gray-20), 0.5);
-  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
-  --background-modifier-border: var(--border-subtle-0);
-  --background-modifier-border-focus: var(--focus);
-  --background-modifier-border-hover: var(--border-subtle-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: var(--background-hover);
-  --background-modifier-error: var(--red);
-  --background-modifier-error-hover: var(--red);
-  --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--field-1);
-  --background-modifier-hover: var(--background-hover);
-  --background-modifier-message: var(--layer-1);
-  --background-modifier-success: var(--green);
-  --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--background);
-  --background-primary-alt: var(--layer-1);
-  --background-secondary: var(--background);
-  --background-secondary-alt: var(--background);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
   --background-selected: rgba(var(--gray-50), 0.24);
   --background-selected-hover: rgba(var(--gray-50), 0.32);
   --border-inverse: rgb(var(--gray-10));
@@ -1844,9 +1841,17 @@ svg.svg-icon {
   --code-string: var(--green-40);
   --code-tag: var(--red-50);
   --code-value: var(--lavender);
-  --color-accent: var(--interactive);
-  --color-accent-1: var(--interactive);
-  --color-accent-2: var(--interactive);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-rgb: var(--custom-accent-color);
   --color-base-00: #1e1e1e;
@@ -1866,7 +1871,7 @@ svg.svg-icon {
   --color-cyan: #53dfdd;
   --color-cyan-rgb: 83, 223, 221;
   --color-green: #44cf6e;
-  --color-green-rgb: 102, 153, 97;
+  --color-green-rgb: 68, 207, 110;
   --color-orange: #e9973f;
   --color-orange-rgb: 233, 151, 63;
   --color-pink: #fa99cd;
@@ -1874,9 +1879,9 @@ svg.svg-icon {
   --color-purple: #a882ff;
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
-  --color-red-rgb: 197, 65, 40;
+  --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --color-yellow-rgb: 243, 189, 79;
+  --color-yellow-rgb: 224, 222, 113;
   --field-1: rgb(var(--gray-90));
   --field-hover-1: rgb(var(--gray-80));
   --focus: var(--cyan-60);
@@ -1888,8 +1893,6 @@ svg.svg-icon {
   --icon-on-color: rgb(var(--white));
   --icon-primary: rgb(var(--gray-10));
   --icon-secondary: rgb(var(--gray-30));
-  --indentation-guide: rgb(var(--mono-rgb-100) 0.15);
-  --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 9%),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 47%),
@@ -1933,18 +1936,10 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-code: var(--pink-50);
-  --text-error: var(--red);
-  --text-faint: var(--text-placeholder);
-  --text-highlight-bg: var(--highlight);
-  --text-highlight-bg-active: var(--highlight);
-  --text-muted: var(--text-secondary);
-  --text-normal: var(--text-primary);
-  --text-on-accent: rgb(var(--white));
   --text-placeholder: rgb(var(--gray-60));
   --text-primary: rgb(var(--gray-10));
   --text-secondary: rgb(var(--gray-30));
-  --text-selection: rgba(var(--color-accent-rgb), 0.5);
-  --text-success: var(--green);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color-scheme: dark;
 }
 
@@ -1954,24 +1949,9 @@ svg.svg-icon {
   --background-hover: rgba(var(--gray-50), 0.12);
   --background-inverse: rgb(var(--gray-80));
   --background-inverse-hover: rgba(var(--gray-70), 0.5);
-  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
-  --background-modifier-border: var(--border-subtle-0);
-  --background-modifier-border-focus: var(--focus);
-  --background-modifier-border-hover: var(--border-subtle-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: var(--background-hover);
-  --background-modifier-error: var(--red);
-  --background-modifier-error-hover: var(--red);
-  --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--field-1);
-  --background-modifier-hover: var(--background-hover);
-  --background-modifier-message: var(--layer-1);
-  --background-modifier-success: var(--green);
-  --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--background);
-  --background-primary-alt: var(--layer-1);
-  --background-secondary: var(--background);
-  --background-secondary-alt: var(--background);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-05);
   --background-selected: rgba(var(--gray-50), 0.2);
   --background-selected-hover: rgba(var(--gray-50), 0.32);
   --border-inverse: rgb(var(--gray-100));
@@ -1993,9 +1973,17 @@ svg.svg-icon {
   --code-string: var(--green);
   --code-tag: var(--red);
   --code-value: var(--lavender);
-  --color-accent: var(--interactive);
-  --color-accent-1: var(--interactive);
-  --color-accent-2: var(--interactive);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-rgb: var(--custom-accent-color);
   --color-base-00: #ffffff;
@@ -2015,7 +2003,7 @@ svg.svg-icon {
   --color-cyan: #00bfbc;
   --color-cyan-rgb: 0, 191, 188;
   --color-green: #08b94e;
-  --color-green-rgb: 102, 153, 97;
+  --color-green-rgb: 8, 185, 78;
   --color-orange: #ec7500;
   --color-orange-rgb: 236, 117, 0;
   --color-pink: #d53984;
@@ -2023,9 +2011,9 @@ svg.svg-icon {
   --color-purple: #7852ee;
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
-  --color-red-rgb: 197, 65, 40;
+  --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
-  --color-yellow-rgb: 243, 189, 79;
+  --color-yellow-rgb: 224, 172, 0;
   --field-1: rgb(var(--white));
   --field-hover-1: rgb(var(--gray-20));
   --focus: var(--cyan-60);
@@ -2037,8 +2025,6 @@ svg.svg-icon {
   --icon-on-color: rgb(var(--white));
   --icon-primary: rgb(var(--gray-100));
   --icon-secondary: rgb(var(--gray-70));
-  --indentation-guide: rgb(var(--mono-rgb-100) 0.15);
-  --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 12%),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 47%),
@@ -2075,18 +2061,9 @@ svg.svg-icon {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-code: var(--pink-60);
-  --text-error: var(--red);
-  --text-faint: var(--text-placeholder);
-  --text-highlight-bg: var(--highlight);
-  --text-highlight-bg-active: var(--highlight);
-  --text-muted: var(--text-secondary);
-  --text-normal: var(--text-primary);
-  --text-on-accent: rgb(var(--white));
   --text-placeholder: rgb(var(--gray-40));
   --text-primary: rgb(var(--gray-100));
   --text-secondary: rgb(var(--gray-70));
-  --text-selection: rgba(var(--color-accent-rgb), 0.5);
-  --text-success: var(--green);
   color-scheme: light;
 }
 

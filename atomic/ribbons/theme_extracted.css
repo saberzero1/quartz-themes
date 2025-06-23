@@ -415,9 +415,9 @@ body {
   --list-marker-color-hover: var(--text-muted);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
-  --med-small: 400px;
-  --med-tall: 600px;
-  --medium: 500px;
+  --med-small: 250px;
+  --med-tall: 450px;
+  --medium: 300px;
   --menu-backdrop-filter: none;
   --menu-background: var(--background-secondary);
   --menu-border-color: var(--background-modifier-border-hover);
@@ -551,6 +551,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
+  --radius: 0px;
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -594,8 +595,8 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
-  --small: 200px;
-  --small-med: 300px;
+  --small: 150px;
+  --small-med: 200px;
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
@@ -699,7 +700,7 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --tall: 700px;
+  --tall: 500px;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
@@ -1657,15 +1658,10 @@ svg.svg-icon {
   --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: var(--color-base-35);
   --interactive-normal: var(--color-base-30);
-  --med-small: 250px;
-  --med-tall: 450px;
-  --medium: 300px;
-  --micro: 70px;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --radius: 0px;
   --ribbon-img: var(--img-ribbon-dark);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -1673,16 +1669,12 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --small: 150px;
-  --small-med: 200px;
-  --tall: 500px;
   --text-accent: var(--color-accent-1);
   --text-faint: #e1d0b388;
   --text-normal: #c7b89e;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --text-subtitle: #d88874;
   --text-title: #c59445;
-  --tiny: 100px;
   color-scheme: dark;
 }
 
@@ -1760,13 +1752,8 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
-  --med-small: 250px;
-  --med-tall: 450px;
-  --medium: 300px;
-  --micro: 70px;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --radius: 0px;
   --ribbon-img: var(--img-ribbon-light);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -1774,14 +1761,10 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --small: 150px;
-  --small-med: 200px;
-  --tall: 500px;
   --text-faint: rgba(80, 80, 80, 0.65);
   --text-normal: black;
   --text-subtitle: #77220d;
   --text-title: #4b254d;
-  --tiny: 100px;
   color-scheme: light;
 }
 
