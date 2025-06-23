@@ -1862,27 +1862,31 @@ body {
   /* TOC */
   .toc {
     color: var(--h3-color);
-    h3 {
-      --font-weight: var(--h3-weight);
-      background-color: color-mix(
-        in srgb,
-        var(--h3-color) var(--h-transparency),
-        transparent
-      );
-      border-radius: var(--radius-s);
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        background-color: color-mix(
+          in srgb,
+          var(--h3-color) var(--h-transparency),
+          transparent
+        );
+        border-radius: var(--radius-s);
+        color: var(--h3-color);
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
+        letter-spacing: -0.015em;
+        line-height: var(--h3-line-height);
+        margin: 8px -8px;
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        padding: 4px 8px;
+        transition: background-color 0.75s ease;
+      }
       color: var(--h3-color);
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: var(--font-weight);
-      letter-spacing: -0.015em;
-      line-height: var(--h3-line-height);
-      margin: 8px -8px;
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
-      padding: 4px 8px;
-      transition: background-color 0.75s ease;
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

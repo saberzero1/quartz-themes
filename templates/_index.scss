@@ -754,10 +754,17 @@ body {
 
     //%%TOC H3 COLOR%%
 
-    h3 {
+    button.toc-header
+    {
+      h3 {
 
-      //%%H3%%
+        //%%H3%%
 
+      }
+
+      //%%TOC H3 COLOR%%
+
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

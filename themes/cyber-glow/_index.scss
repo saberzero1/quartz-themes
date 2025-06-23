@@ -1566,31 +1566,35 @@ body {
   /* TOC */
   .toc {
     color: var(--text-normal);
-    h3 {
-      --font-weight: var(--h3-weight);
-      border-image-slice: 1;
-      border-image-source: linear-gradient(
-        to right,
-        var(--h3-glow),
-        transparent
-      );
-      border-image-width: 0 0 2px 0;
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          to right,
+          var(--h3-glow),
+          transparent
+        );
+        border-image-width: 0 0 2px 0;
+        color: var(--text-normal);
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
+        letter-spacing: -0.015em;
+        line-height: var(--h3-line-height);
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        padding-bottom: 3px;
+        text-shadow:
+          0 0 5px var(--h3-glow),
+          0 0 10px var(--h3-glow),
+          0 0 20px var(--h3-glow),
+          0 0 10px var(--h3-glow);
+      }
       color: var(--text-normal);
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: var(--font-weight);
-      letter-spacing: -0.015em;
-      line-height: var(--h3-line-height);
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
-      padding-bottom: 3px;
-      text-shadow:
-        0 0 5px var(--h3-glow),
-        0 0 10px var(--h3-glow),
-        0 0 20px var(--h3-glow),
-        0 0 10px var(--h3-glow);
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

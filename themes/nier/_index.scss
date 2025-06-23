@@ -1529,20 +1529,24 @@ body {
   /* TOC */
   .toc {
     color: var(--text-normal);
-    h3 {
-      --font-weight: var(--h3-weight);
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        color: var(--text-normal);
+        font-family: var(--h3-font);
+        font-size: 20px;
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: 500;
+        letter-spacing: 0.5rem;
+        line-height: var(--h3-line-height);
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        text-shadow: 0.2rem 0.2rem 0 rgba(77, 73, 62, 0.3);
+        text-transform: uppercase;
+      }
       color: var(--text-normal);
-      font-family: var(--h3-font);
-      font-size: 20px;
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: 500;
-      letter-spacing: 0.5rem;
-      line-height: var(--h3-line-height);
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
-      text-shadow: 0.2rem 0.2rem 0 rgba(77, 73, 62, 0.3);
-      text-transform: uppercase;
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,
