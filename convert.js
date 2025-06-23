@@ -200,7 +200,6 @@ manifestCollection.forEach((manifest) => {
       `./extras/${extra}.scss`,
       `./themes/${getTheme(manifest)}/extras`,
     );
-    // TODO: Implement style settings here
   });
   // Default override
   copyFileToDirectory(

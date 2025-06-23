@@ -658,6 +658,12 @@ body {
         backdrop-filter: blur(8px);
       }
     }
+    button.explorer-toggle,
+    h2 {
+
+      //%%EXPLORER BUTTON HEADING COLOR%%
+
+    }
     .explorer-content {
       @media all and ($mobile) {
 
@@ -745,6 +751,9 @@ body {
 
   /* TOC */
   .toc {
+
+    //%%TOC H3 COLOR%%
+
     h3 {
 
       //%%H3%%
