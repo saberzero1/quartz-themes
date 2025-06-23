@@ -333,7 +333,7 @@
       "fonts": ["archivo"]
     },
     "buena-vista": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -555,7 +555,7 @@
       "fonts": []
     },
     "dark-clarity": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -954,7 +954,7 @@
       "fonts": []
     },
     "garden-gnome-adwaita-gtk": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -1026,7 +1026,7 @@
       "fonts": []
     },
     "gummy-revived": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -1458,7 +1458,7 @@
       "fonts": ["arvo", "permanent-marker"]
     },
     "modern-genz-vibedose": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -1802,7 +1802,7 @@
       "fonts": []
     },
     "origami": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -2026,7 +2026,7 @@
       "fonts": []
     },
     "purple-owl": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
@@ -2130,7 +2130,7 @@
       "fonts": []
     },
     "ribbons": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -2234,7 +2234,7 @@
       "fonts": ["sf-mono"]
     },
     "sandover": {
-      "compatibility": ["checking"],
+      "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -2688,7 +2688,7 @@
       "fonts": []
     },
     "ukiyo": {
-      "compatibility": ["removed"],
+      "compatibility": ["removed", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
@@ -2926,7 +2926,7 @@
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "zen": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
