@@ -203,6 +203,13 @@ export function writeIndex(themeName, themeCSS) {
     themeCSS,
     'color',
   )
+  resultCSS = applyRuleToString(
+    resultCSS,
+    'h2',
+      '//%%EXPLORER BUTTON HEADING COLOR%%',
+    themeCSS,
+    'color',
+  )
 
   // TOC
   resultCSS = applyRuleToString(
@@ -225,6 +232,14 @@ export function writeIndex(themeName, themeCSS) {
     '//%%TOC ITEM FONT SIZE%%',
     themeCSS,
     'font-size',
+  )
+
+  resultCSS = applyRuleToString(
+    resultCSS,
+    'h3',
+    '//%%TOC H3 COLOR%%',
+    themeCSS,
+    'color',
   )
 
   // Backlinks

@@ -1207,6 +1207,10 @@ body {
         backdrop-filter: blur(8px);
       }
     }
+    button.explorer-toggle,
+    h2 {
+      color: #00bb00;
+    }
     .explorer-content {
       @media all and ($mobile) {
         background-color: var(--background-primary);
@@ -1301,6 +1305,7 @@ body {
   }
   /* TOC */
   .toc {
+    color: #00bb00;
     h3 {
       --font-weight: var(--h3-weight);
       border: var(--strict-separator);

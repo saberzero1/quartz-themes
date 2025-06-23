@@ -1158,6 +1158,10 @@ body {
         backdrop-filter: blur(8px);
       }
     }
+    button.explorer-toggle,
+    h2 {
+      color: rgba(255, 255, 255, 0.87);
+    }
     .explorer-content {
       @media all and ($mobile) {
         background-color: var(--background-primary);
@@ -1258,6 +1262,7 @@ body {
   }
   /* TOC */
   .toc {
+    color: rgba(255, 255, 255, 0.87);
     h3 {
       --font-weight: var(--h3-weight);
       -moz-osx-font-smoothing: grayscale;
