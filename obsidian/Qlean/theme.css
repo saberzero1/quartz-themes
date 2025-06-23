@@ -9239,14 +9239,14 @@ settings:
     type: heading
     level: 1
     collapsed: true
-  -
-    id: enable-alternative-checkboxes
-    title: Enable Alternative Checkboxes
-    title.zh: 启用替代样式复选框
-    description: Disable this if you are using your own implementation via a CSS Snippet.
-    description.zh: 如果你在自己的 CSS 片段中实现了复选框样式，请关闭这个选项。
-    default: true
-    type: class-toggle
+  #-
+  #  id: enable-alternative-checkboxes
+  #  title: Enable Alternative Checkboxes
+  #  title.zh: 启用替代样式复选框
+  #  description: Disable this if you are using your own implementation via a CSS Snippet.
+  #  description.zh: 如果你在自己的 CSS 片段中实现了复选框样式，请关闭这个选项。
+  #  default: true
+  #  type: class-toggle
   -
     id: checkbox-uppercase-set
     title: Uppercase Set for Checkboxes
