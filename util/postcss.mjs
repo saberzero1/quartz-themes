@@ -16,7 +16,13 @@ export function splitCombinedRules(cssString) {
         // if these are the only selectors, we replace both selectors with 'body'
         if (
           (originalRule.selectors[0] === ".theme-dark" && originalRule.selectors[1] === ".theme-light") ||
-          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === ".theme-dark")
+          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === ".theme-dark") ||
+          (originalRule.selectors[0] === "body.theme-dark" && originalRule.selectors[1] === ".theme-light") ||
+          (originalRule.selectors[0] === ".theme-dark" && originalRule.selectors[1] === "body.theme-light") ||
+          (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === ".theme-dark") ||
+          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === "body.theme-dark") ||
+          (originalRule.selectors[0] === "body.theme-dark" && originalRule.selectors[1] === "body.theme-light") ||
+          (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === "body.theme-dark")
         ) {
           originalRule.selectors = ["body"]
           return

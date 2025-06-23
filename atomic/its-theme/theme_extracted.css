@@ -85,9 +85,12 @@ body {
   --blockquote-padding: var(--size-4-3) var(--size-4-6);
   --blockquote-padding-lp: 7px 0;
   --bold-color: inherit;
-  --bold-modifier: 200;
-  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --bold-modifier: 500;
+  --bold-weight: 900;
   --border-width: 1px;
+  --box-border: 2px solid var(--outline);
+  --box-border-m: 3px solid var(--outline);
+  --box-border-s: 1px solid var(--outline);
   --bullet: '';
   --bullet-font: var(--its);
   --button-background: var(--bttn);
@@ -141,7 +144,7 @@ body {
   --checkbox-color-hover: var(--dark-accent);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
-  --checkbox-radius: var(--radius-s);
+  --checkbox-radius: var(--radius-m);
   --checkbox-size: var(--font-text-size);
   --checklist-done-color: var(--inactive);
   --checklist-done-decoration: none;
@@ -187,8 +190,8 @@ body {
   --divider-color: var(--outer-bar);
   --divider-color-hover: var(--accent);
   --divider-vertical-height: calc(100% - var(--header-height));
-  --divider-width: 1px;
-  --divider-width-hover: 3px;
+  --divider-width: 2px;
+  --divider-width-hover: 5px;
   --drag-ghost-background: var(--dark-accent);
   --drag-ghost-text-color: var(--text-dl);
   --dropdown-background: var(--interactive-normal);
@@ -230,6 +233,8 @@ body {
   --embed-title-white-space: wrap;
   --explorer-item-padding: 2px 8px;
   --explorer-padding: 4px 4px 4px 3px;
+  --fa5: 'Font Awesome 5 Free Solid';
+  --fa6: 'Font Awesome 6 Free Solid';
   --file-folding-offset: 24px;
   --file-font: var(--its);
   --file-header-background: var(--note);
@@ -265,15 +270,13 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    sans-serif;
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Microsoft YaHei Light', sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-frontmatter: var(--font-small);
-  --font-interface:
-    var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
+  --font-interface: var(--font-interface-override), var(--font-default);
   --font-interface-override: '??';
   --font-interface-theme: '??';
   --font-ligatures: none;
@@ -281,12 +284,9 @@ body {
   --font-medium: 500;
   --font-mermaid: var(--font-text);
   --font-monospace:
-    var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
+    'Fira Code', 'Fira Code Medium', 'Source Code Pro', monospace;
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
-    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
-    'Source Code Pro', monospace;
+    var(--font-monospace-default-override), var(--font-monospace);
   --font-monospace-override: '??';
   --font-monospace-theme: '??';
   --font-normal: 400;
@@ -295,18 +295,18 @@ body {
     var(--font-text-theme), 'Arial';
   --font-print-override: '??';
   --font-semibold: 600;
-  --font-small: 0.933em;
-  --font-smaller: 0.875em;
-  --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-small: 0.95em;
+  --font-smaller: 0.9em;
+  --font-smallest: 0.85em;
+  --font-text: var(--font-text-override), var(--font-default);
   --font-text-override: '??';
   --font-text-size: 16px;
   --font-text-theme: '??';
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
-  --font-ui-small: 13px;
-  --font-ui-smaller: 12px;
+  --font-ui-small: 14px;
+  --font-ui-smaller: 13.5px;
   --font-weight: var(--font-normal);
   --footnote-divider-color: var(--metadata-divider-color);
   --footnote-divider-color-active: var(--metadata-divider-color-focus);
@@ -471,13 +471,14 @@ body {
   --hr-text-offset: 12px;
   --hr-thickness: 2px;
   --hr-width: auto;
+  --icon-btn-radius: var(--radius-s);
   --icon-color: var(--soft-text);
   --icon-color-active: var(--text-dl);
   --icon-color-focused: var(--text);
   --icon-color-hover: var(--text);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
-  --icon-m: 18px;
+  --icon-m: 17px;
   --icon-m-stroke-width: 1.75px;
   --icon-opacity: 1;
   --icon-opacity-active: 1;
@@ -533,7 +534,9 @@ body {
   --input-font-weight: var(--font-normal);
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
-  --input-radius: 5px;
+  --input-radius: var(--radius-s);
+  --input-shadow: var(--shadow-s);
+  --input-shadow-hover: var(--shadow-m);
   --interactive-accent: var(--bttn);
   --interactive-accent-hover: var(--bg);
   --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
@@ -541,6 +544,7 @@ body {
   --interactive-normal: var(--code-bg);
   --italic-color: inherit;
   --italic-weight: inherit;
+  --its: 'its';
   --kanban-button-background: var(--code-bg);
   --kanban-button-shadow: var(--input-shadow);
   --kanban-card-border: var(--box-border);
@@ -571,7 +575,7 @@ body {
   --layer-status-bar: 15;
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
-  --line-height-tight: 1.3;
+  --line-height-tight: 1.3em;
   --link-background: transparent;
   --link-background-hover: var(--link-background);
   --link-border: none;
@@ -617,6 +621,7 @@ body {
   --list-numbered-color: var(--headers);
   --list-numbered-style: decimal;
   --list-spacing: 1px;
+  --mdi: 'Material Icons Sharp';
   --med-small: 250px;
   --med-tall: 450px;
   --medium: 300px;
@@ -627,6 +632,10 @@ body {
   --menu-padding: var(--size-2-3);
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
+  --message-border-color: var(--outline);
+  --message-border-width: 0px;
+  --message-box-shadow: var(--shadow-s);
+  --message-color: var(--text-dl);
   --metadata-background: transparent;
   --metadata-border-color: var(--background-modifier-border);
   --metadata-border-radius: 0;
@@ -758,7 +767,7 @@ body {
   --pill-focus-width: calc(100% + 6px);
   --pill-padding-x: 0.65em;
   --pill-padding-y: 0.25em;
-  --pill-radius: 2em;
+  --pill-radius: var(--radius-m);
   --pill-weight: inherit;
   --popover-background: var(--background-primary);
   --popover-border: 3px solid var(--outline);
@@ -769,7 +778,7 @@ body {
   --popover-pdf-width: 450px;
   --popover-width: 650px;
   --prompt-border-color: var(--outline);
-  --prompt-border-width: var(--border-width);
+  --prompt-border-width: 3px;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
@@ -781,10 +790,11 @@ body {
   --r-main-font: var(--font-default);
   --r-progress-color: var(--lite-accent);
   --radius: 0px;
-  --radius-l: 12px;
-  --radius-m: 8px;
-  --radius-s: 4px;
-  --radius-xl: 16px;
+  --radius-h: calc(var(--radius-s) / 0.5);
+  --radius-l: calc(var(--radius-s) * 1.2);
+  --radius-m: calc(var(--radius-s) * 1.1);
+  --radius-s: 0;
+  --radius-xl: calc(var(--radius-s) * 1.5);
   --ribbon-background: var(--outer-bar);
   --ribbon-background-collapsed: var(--note);
   --ribbon-border-color: var(--outer-bar);
@@ -794,8 +804,11 @@ body {
   --ribbon-icon-stroke: var(--icon-l-stroke-width);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 40px;
+  --rmx: 'remixicon';
   --root-list-bullet-spacing: 0;
   --root-list-spacing: 10px;
+  --rpg: 'rpg-awesome';
+  --scroll-size: 7px;
   --scrollbar-active-thumb-bg: var(--lite-accent);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-border-width: 0;
@@ -817,6 +830,10 @@ body {
   --setting-item-heading-background: transparent;
   --setting-item-heading-border: 2px solid var(--headers);
   --setting-item-padding: 10px 15px;
+  --shadow-l: 5px 5px 0 var(--outline);
+  --shadow-m: 3px 3px 0 var(--outline);
+  --shadow-ml: 4px 4px 0 var(--outline);
+  --shadow-s: 2px 2px 0 var(--outline);
   --sidebar-icon-color: var(--text);
   --sidebar-icon-color-active: var(--text-dl);
   --sidebar-markdown-font-size: var(--font-text-size);
@@ -851,11 +868,12 @@ body {
   --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
-  --slider-thumb-radius: 50%;
+  --slider-thumb-radius: var(--radius-h);
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
+  --slider-track-radius: var(--radius-h);
   --small: 150px;
   --small-med: 200px;
   --status-bar-background: var(--outer-bar);
@@ -989,9 +1007,9 @@ body {
   --tag-decoration-hover: underline;
   --tag-font: var(--font-default);
   --tag-font-weight: inherit;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-padding-x: 7px;
+  --tag-padding-y: 3px;
+  --tag-radius: var(--radius-l);
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --tall: 500px;
@@ -1020,14 +1038,15 @@ body {
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-weight: var(--font-bold);
   --toggle-border-width: 1px;
-  --toggle-radius: 18px;
+  --toggle-radius: var(--radius-h);
   --toggle-s-border-width: 2px;
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 20px;
+  --toggle-shadow: none;
   --toggle-thumb-color: transparent;
   --toggle-thumb-height: 18px;
-  --toggle-thumb-radius: 18px;
+  --toggle-thumb-radius: var(--radius-h);
   --toggle-thumb-width: 18px;
   --toggle-width: 20px;
   --tooltip-color: var(--text-dl);
