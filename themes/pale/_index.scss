@@ -24,12 +24,6 @@ html[saved-theme='dark'] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #323232;
   --code-background: #232323;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -65,7 +59,6 @@ html[saved-theme='dark'] {
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
   --h1-color: #d9d8d8;
   --h2-color: #d4d4d4;
   --h3-color: #b4b4b4;
@@ -91,12 +84,6 @@ html[saved-theme='dark'] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #323232;
   --code-background: #232323;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -132,7 +119,6 @@ html[saved-theme='dark'] {
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
   --h1-color: #d9d8d8;
   --h2-color: #d4d4d4;
   --h3-color: #b4b4b4;
@@ -174,12 +160,6 @@ html[saved-theme='light'] {
   --background-primary: #efdcbc;
   --background-secondary: rgba(255, 255, 255, 0.062);
   --code-background: #292929;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -215,7 +195,6 @@ html[saved-theme='light'] {
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
   --h1-color: #242424c7;
   --h2-color: #242424c7;
   --h3-color: #2d2d2dc7;
@@ -238,12 +217,6 @@ html[saved-theme='light'] {
   --background-primary: #efdcbc;
   --background-secondary: rgba(255, 255, 255, 0.062);
   --code-background: #292929;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -279,7 +252,6 @@ html[saved-theme='light'] {
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
   --h1-color: #242424c7;
   --h2-color: #242424c7;
   --h3-color: #2d2d2dc7;
@@ -516,17 +488,17 @@ body {
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
+  --code-function: #dcbb59;
   --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
-  --code-property: var(--color-cyan);
+  --code-keyword: #ff6347;
+  --code-normal: #c4c4c4;
+  --code-property: #d29a8c;
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
-  --code-string: var(--color-green);
+  --code-string: #05a3a3;
   --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
+  --code-value: #e3b750;
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -717,12 +689,6 @@ html[saved-theme='dark'] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #323232;
   --code-background: #232323;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -758,7 +724,6 @@ html[saved-theme='dark'] {
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
   --h1-color: #d9d8d8;
   --h2-color: #d4d4d4;
   --h3-color: #b4b4b4;
@@ -784,12 +749,6 @@ html[saved-theme='dark'] {
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: #323232;
   --code-background: #232323;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -825,7 +784,6 @@ html[saved-theme='dark'] {
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
   --h1-color: #d9d8d8;
   --h2-color: #d4d4d4;
   --h3-color: #b4b4b4;
@@ -868,12 +826,6 @@ html[saved-theme='light'] {
   --background-primary: #efdcbc;
   --background-secondary: rgba(255, 255, 255, 0.062);
   --code-background: #292929;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -909,7 +861,6 @@ html[saved-theme='light'] {
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
   --h1-color: #242424c7;
   --h2-color: #242424c7;
   --h3-color: #2d2d2dc7;
@@ -932,12 +883,6 @@ html[saved-theme='light'] {
   --background-primary: #efdcbc;
   --background-secondary: rgba(255, 255, 255, 0.062);
   --code-background: #292929;
-  --code-function: #dcbb59;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
-  --code-string: #05a3a3;
-  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -973,7 +918,6 @@ html[saved-theme='light'] {
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
   --h1-color: #242424c7;
   --h2-color: #242424c7;
   --h3-color: #2d2d2dc7;

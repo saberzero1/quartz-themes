@@ -69,7 +69,6 @@ html[saved-theme='dark'] {
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --graph-line: rgba(128, 128, 128);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
@@ -130,7 +129,6 @@ html[saved-theme='dark'] {
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --graph-line: rgba(128, 128, 128);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
@@ -205,7 +203,6 @@ html[saved-theme='light'] {
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
-  --graph-line: rgba(128, 128, 128);
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -262,7 +259,6 @@ html[saved-theme='light'] {
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
-  --graph-line: rgba(128, 128, 128);
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -549,7 +545,7 @@ body {
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-weight: var(--font-normal);
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-line: rgba(128, 128, 128);
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
   --h1-color: var(--header-col);
@@ -746,7 +742,6 @@ html[saved-theme='dark'] {
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --graph-line: rgba(128, 128, 128);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
@@ -807,7 +802,6 @@ html[saved-theme='dark'] {
   --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
-  --graph-line: rgba(128, 128, 128);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
@@ -883,7 +877,6 @@ html[saved-theme='light'] {
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
-  --graph-line: rgba(128, 128, 128);
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -940,7 +933,6 @@ html[saved-theme='light'] {
   --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
-  --graph-line: rgba(128, 128, 128);
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),

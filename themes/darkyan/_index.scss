@@ -64,8 +64,8 @@ html[saved-theme='dark'] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -75,8 +75,7 @@ html[saved-theme='dark'] {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: var(--color-accent-1);
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-normal: #d1d5db;
@@ -123,8 +122,8 @@ html[saved-theme='dark'] {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -134,8 +133,7 @@ html[saved-theme='dark'] {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: var(--color-accent-1);
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-normal: #d1d5db;
@@ -466,8 +464,8 @@ body {
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --interactive-accent-hsl: var(--color-accent-hsl);
   --italic-color: inherit;
   --layer-popover: 30;
@@ -525,8 +523,8 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
@@ -609,8 +607,8 @@ html {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -620,8 +618,7 @@ html {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: var(--color-accent-1);
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-normal: #d1d5db;
@@ -668,8 +665,8 @@ html {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -679,8 +676,7 @@ html {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: var(--color-accent-1);
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-normal: #d1d5db;

@@ -22,7 +22,11 @@ html[saved-theme='dark'] {
   }
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: #ba945f;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -64,7 +68,11 @@ html[saved-theme='dark'] {
   color-scheme: dark;
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: #ba945f;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -121,7 +129,11 @@ html[saved-theme='light'] {
   }
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;
@@ -160,7 +172,11 @@ html[saved-theme='light'] {
   color-scheme: light;
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;
@@ -568,6 +584,7 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent-1: var(--color-accent);
   --cursor: default;
   --cursor-link: pointer;
   --font-default: 'CMU Typewriter Text';
@@ -752,7 +769,11 @@ html[saved-theme='dark'] {
   }
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: #ba945f;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -794,7 +815,11 @@ html[saved-theme='dark'] {
   color-scheme: dark;
   --background-modifier-form-field: var(--color-base-25);
   --color-accent: #ba945f;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -852,7 +877,11 @@ html[saved-theme='light'] {
   }
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;
@@ -891,7 +920,11 @@ html[saved-theme='light'] {
   color-scheme: light;
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: var(--color-accent);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;

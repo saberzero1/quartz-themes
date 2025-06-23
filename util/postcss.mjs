@@ -11,6 +11,17 @@ export function splitCombinedRules(cssString) {
 
   root.walkRules((originalRule) => {
     if (originalRule.selectors && originalRule.selectors.length > 1) {
+      if (originalRule.selectors.length === 2) {
+        // Check if the selectors are ".theme-dark" and ".theme-light"
+        // if these are the only selectors, we replace both selectors with 'body'
+        if (
+          (originalRule.selectors[0] === ".theme-dark" && originalRule.selectors[1] === ".theme-light") ||
+          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === ".theme-dark")
+        ) {
+          originalRule.selectors = ["body"]
+          return
+        }
+      }
       const parent = originalRule.parent
       const newRules = []
 

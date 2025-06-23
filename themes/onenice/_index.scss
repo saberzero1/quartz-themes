@@ -26,8 +26,6 @@ html[saved-theme='dark'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #7a818e;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #0000004d;
   --background-modifier-hover: hsla(
     var(--accent-h),
@@ -38,14 +36,7 @@ html[saved-theme='dark'] {
   --background-primary: #1f2329;
   --background-primary-alt: #181b20;
   --background-secondary: #181b20;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -77,17 +68,8 @@ html[saved-theme='dark'] {
   --color-yellow: #e0de71;
   --green: #8ebd6b;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) - 10%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 255, 255, 255;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #bf68d9;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -95,11 +77,6 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #61afef;
   --text-accent-hover: #e55561;
   --text-faint: #535965;
@@ -111,8 +88,6 @@ html[saved-theme='dark'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #7a818e;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #0000004d;
   --background-modifier-hover: hsla(
     var(--accent-h),
@@ -123,14 +98,7 @@ html[saved-theme='dark'] {
   --background-primary: #1f2329;
   --background-primary-alt: #181b20;
   --background-secondary: #181b20;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -162,17 +130,8 @@ html[saved-theme='dark'] {
   --color-yellow: #e0de71;
   --green: #8ebd6b;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) - 10%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 255, 255, 255;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #bf68d9;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -180,11 +139,6 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #61afef;
   --text-accent-hover: #e55561;
   --text-faint: #535965;
@@ -213,20 +167,11 @@ html[saved-theme='light'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #a0a1a7;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #a0a1a7;
   --background-primary: #e6e6e6;
   --background-primary-alt: #e1e1e1;
   --background-secondary: #dcdcdc;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -258,16 +203,8 @@ html[saved-theme='light'] {
   --color-yellow: #e0ac00;
   --green: #50a14f;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) - 4%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #a626a4;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -275,11 +212,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #4078f2;
   --text-accent-hover: #e45649;
   --text-faint: #101012;
@@ -291,20 +223,11 @@ html[saved-theme='light'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #a0a1a7;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #a0a1a7;
   --background-primary: #e6e6e6;
   --background-primary-alt: #e1e1e1;
   --background-secondary: #dcdcdc;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -336,16 +259,8 @@ html[saved-theme='light'] {
   --color-yellow: #e0ac00;
   --green: #50a14f;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) - 4%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #a626a4;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -353,11 +268,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #4078f2;
   --text-accent-hover: #e45649;
   --text-faint: #101012;
@@ -534,8 +444,8 @@ body {
   --accent-l: 66%;
   --accent-s: 88%;
   --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--interactive-hover);
+  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-primary: var(--color-base-00);
@@ -574,8 +484,8 @@ body {
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
-  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-color: var(--green);
+  --checkbox-color-hover: var(--purple);
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
@@ -687,8 +597,6 @@ body {
   --input-border-width: 1px;
   --input-height: 30px;
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
   --italic-color: inherit;
@@ -706,11 +614,11 @@ body {
   --nav-heading-weight: var(--font-medium);
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-indentation-guide-width: var(--indentation-guide-width);
-  --nav-item-background-active: var(--background-modifier-hover);
+  --nav-item-background-active: #4fa6ed;
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
-  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-active: #ffffff;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6);
   --nav-item-size: var(--font-ui-small);
@@ -718,10 +626,7 @@ body {
   --nav-item-weight-active: inherit;
   --p-spacing: 1rem;
   --popover-max-height: 95vh;
-  --prompt-border-color: var(
-    --color-base-40,
-    var(--background-modifier-border-focus)
-  );
+  --prompt-border-color: var(--green);
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --radius-l: 12px;
@@ -736,16 +641,16 @@ body {
   --size-4-3: 12px;
   --size-4-4: 16px;
   --size-4-6: 24px;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-background: var(--background-primary-alt);
+  --tag-background-hover: #8ebd6b;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: var(--purple);
+  --tag-color-hover: var(--purple);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 2em;
+  --tag-radius: 40px;
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -793,8 +698,6 @@ html[saved-theme='dark'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #7a818e;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #0000004d;
   --background-modifier-hover: hsla(
     var(--accent-h),
@@ -805,14 +708,7 @@ html[saved-theme='dark'] {
   --background-primary: #1f2329;
   --background-primary-alt: #181b20;
   --background-secondary: #181b20;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -844,17 +740,8 @@ html[saved-theme='dark'] {
   --color-yellow: #e0de71;
   --green: #8ebd6b;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) - 10%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 255, 255, 255;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #bf68d9;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -862,11 +749,6 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #61afef;
   --text-accent-hover: #e55561;
   --text-faint: #535965;
@@ -878,8 +760,6 @@ html[saved-theme='dark'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #7a818e;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #0000004d;
   --background-modifier-hover: hsla(
     var(--accent-h),
@@ -890,14 +770,7 @@ html[saved-theme='dark'] {
   --background-primary: #1f2329;
   --background-primary-alt: #181b20;
   --background-secondary: #181b20;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 5),
     calc(var(--accent-s) * 1.05),
@@ -929,17 +802,8 @@ html[saved-theme='dark'] {
   --color-yellow: #e0de71;
   --green: #8ebd6b;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) + 5%),
-    calc(var(--accent-l) - 10%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 255, 255, 255;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #bf68d9;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -947,11 +811,6 @@ html[saved-theme='dark'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #61afef;
   --text-accent-hover: #e55561;
   --text-faint: #535965;
@@ -981,20 +840,11 @@ html[saved-theme='light'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #a0a1a7;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #a0a1a7;
   --background-primary: #e6e6e6;
   --background-primary-alt: #e1e1e1;
   --background-secondary: #dcdcdc;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -1026,16 +876,8 @@ html[saved-theme='light'] {
   --color-yellow: #e0ac00;
   --green: #50a14f;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) - 4%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #a626a4;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -1043,11 +885,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #4078f2;
   --text-accent-hover: #e45649;
   --text-faint: #101012;
@@ -1059,20 +896,11 @@ html[saved-theme='light'] {
   --accent-l: 48%;
   --accent-s: 26%;
   --background-modifier-border: #a0a1a7;
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-form-field: #a0a1a7;
   --background-primary: #e6e6e6;
   --background-primary-alt: #e1e1e1;
   --background-secondary: #dcdcdc;
-  --checkbox-color: var(--green);
-  --checkbox-color-hover: var(--purple);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
   --color-accent-2: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -1104,16 +932,8 @@ html[saved-theme='light'] {
   --color-yellow: #e0ac00;
   --green: #50a14f;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent-hover: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) - 4%)
-  );
   --interactive-hover: #e5556197;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: #4fa6ed;
-  --nav-item-color-active: #ffffff;
-  --prompt-border-color: var(--green);
   --purple: #a626a4;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -1121,11 +941,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: #8ebd6b;
-  --tag-color: var(--purple);
-  --tag-color-hover: var(--purple);
-  --tag-radius: 40px;
   --text-accent: #4078f2;
   --text-accent-hover: #e45649;
   --text-faint: #101012;

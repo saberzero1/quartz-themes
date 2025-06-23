@@ -67,7 +67,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
   color-scheme: light;
@@ -117,7 +116,6 @@ html[saved-theme='light'] {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
   color-scheme: light;
@@ -497,7 +495,7 @@ body {
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 2em;
+  --tag-radius: 4px;
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
@@ -586,7 +584,6 @@ html {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
   color-scheme: light;
@@ -636,7 +633,6 @@ html {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
   color-scheme: light;
