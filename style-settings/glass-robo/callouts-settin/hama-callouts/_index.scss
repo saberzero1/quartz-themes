@@ -24,7 +24,7 @@
   border-top: 1px dashed rgba(var(--callout-color), 0.25);
   padding: 8px;
 }
-.hama-callouts.callout_center_settings .callout .callout-title {
+.callout_center_settings .callout .callout-title {
   display: grid;
   justify-content: center;
   background: linear-gradient(
@@ -34,7 +34,7 @@
     transparent 100%
   );
 }
-.hama-callouts.callout_center_settings
+.callout_center_settings
   .callout:has(> .callout-title .callout-title-inner:dir(rtl))
   > .callout-title {
   background: linear-gradient(

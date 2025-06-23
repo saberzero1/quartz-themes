@@ -1,24 +1,16 @@
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
@@ -26,53 +18,37 @@
   color: var(--nav-folder-title-color);
   font-weight: 400;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   .nav-folder
   .nav-folder {
   background-color: inherit;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: rgba(var(--red), 0.3);
@@ -80,9 +56,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: rgba(var(--lily), 0.3);
@@ -90,9 +64,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: rgba(var(--orange), 0.3);
@@ -100,9 +72,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: rgba(var(--yellow), 0.3);
@@ -110,9 +80,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: rgba(var(--lemon), 0.3);
@@ -120,9 +88,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: rgba(var(--green), 0.3);
@@ -130,9 +96,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: rgba(var(--sea), 0.3);
@@ -140,9 +104,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: rgba(var(--turquoise), 0.3);
@@ -150,9 +112,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: rgba(var(--cyan), 0.3);
@@ -160,9 +120,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-one:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-one:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: rgba(var(--blue), 0.3);
@@ -170,161 +128,111 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title {
   color: var(--nav-folder-title-color);
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: rgba(var(--red), 0.9);
@@ -332,9 +240,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: rgba(var(--lily), 0.9);
@@ -342,9 +248,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: rgba(var(--orange), 0.9);
@@ -352,9 +256,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: rgba(var(--yellow), 0.9);
@@ -362,9 +264,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: rgba(var(--lemon), 0.9);
@@ -372,9 +272,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: rgba(var(--green), 0.9);
@@ -382,19 +280,13 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8),
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: rgba(var(--sea), 0.9);
@@ -402,19 +294,13 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7),
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: rgba(var(--turquoise), 0.9);
@@ -422,29 +308,19 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9),
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: rgba(var(--cyan), 0.9);
@@ -452,19 +328,13 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-three:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-three:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5),
-.shiba-color-folder-background.folder-colorful-two:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-two:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: rgba(var(--blue), 0.9);
@@ -472,9 +342,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: #b67b66;
@@ -482,9 +350,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: #d09d7b;
@@ -492,14 +358,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #d3a984;
@@ -507,14 +369,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #73a788;
@@ -522,14 +380,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6),
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #478966;
@@ -537,14 +391,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7),
-.shiba-color-folder-background.folder-colorful-four:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-four:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #135e45;
@@ -552,14 +402,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2),
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #a68877;
@@ -567,14 +413,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3),
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #b38f7a;
@@ -582,14 +424,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #b99780;
@@ -597,14 +435,10 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #c1a28a;
@@ -612,9 +446,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: #cab199;
@@ -622,9 +454,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-five:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-five:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: #d2bfa7;
@@ -632,9 +462,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: #7779a6;
@@ -642,9 +470,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: #897ab3;
@@ -652,9 +478,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #8780b9;
@@ -662,9 +486,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #998ac1;
@@ -672,9 +494,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: #9d99ca;
@@ -682,9 +502,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: #a8a7d2;
@@ -692,9 +510,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #7d77a6;
@@ -702,9 +518,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #827ab3;
@@ -712,9 +526,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: #8080b9;
@@ -722,9 +534,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-six:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-six:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: #908ac1;
@@ -732,9 +542,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: var(--folder-colorful-custom-color);
@@ -742,9 +550,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: var(--folder-colorful-custom-color2);
@@ -752,9 +558,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: var(--folder-colorful-custom-color3);
@@ -762,9 +566,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: var(--folder-colorful-custom-color4);
@@ -772,9 +574,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: var(--folder-colorful-custom-color5);
@@ -782,9 +582,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: var(--folder-colorful-custom-color6);
@@ -792,9 +590,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: var(--folder-colorful-custom-color7);
@@ -802,9 +598,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: var(--folder-colorful-custom-color8);
@@ -812,9 +606,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: var(--folder-colorful-custom-color9);
@@ -822,9 +614,7 @@
   border-radius: var(--shib-colorful-folders-radius, 2px);
   margin-bottom: 2px;
 }
-.shiba-color-folder-background.folder-colorful-custom:not(
-    .shiba-color-folder-default
-  )
+.folder-colorful-custom:not(.shiba-color-folder-default)
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: var(--folder-colorful-custom-color10);

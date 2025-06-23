@@ -1,4 +1,4 @@
-.smooth-mode.theme-dark
+.theme-dark
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs
   .workspace-tab-header-container-inner
@@ -6,12 +6,12 @@
   background-color: var(--background-primary);
 }
 
-.smooth-mode.theme-dark
+.theme-dark
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs
   .workspace-tab-header-container-inner
   .workspace-tab-header:hover,
-.smooth-mode.theme-light
+.theme-light
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs
   .workspace-tab-header-container-inner
@@ -19,7 +19,7 @@
   background-color: var(--background-secondary);
 }
 
-.smooth-mode.theme-dark
+.theme-dark
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs
   .workspace-tab-header-container-inner
@@ -36,21 +36,6 @@
   .workspace-tab-header {
   color: #460c0c;
   --tab-text-color-focused-active-current: #460c0c;
-}
-
-.color-scheme-golden-book:not(.separate-color-scheme).theme-dark
-  :not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
-  .workspace-split.mod-horizontal.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container:not(:hover),
-.separate-color-scheme.dm-color-scheme-golden-book.theme-dark
-  :not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
-  .workspace-split.mod-horizontal.mod-right-split
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-header-container:not(:hover) {
-  border: 0;
-  opacity: 0;
-  background-color: var(--background-secondary);
 }
 
 .separate-color-scheme.dm-color-scheme-golden-book.smooth-mode

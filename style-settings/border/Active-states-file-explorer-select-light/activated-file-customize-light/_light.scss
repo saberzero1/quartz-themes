@@ -1,6 +1,4 @@
-.activated-file-customize-light.theme-light
-  .nav-file-title.is-active
-  .nav-file-tag,
-.activated-file-customize-light.theme-light .tree-item-self.is-active svg {
+.theme-light .nav-file-title.is-active .nav-file-tag,
+.theme-light .tree-item-self.is-active svg {
   color: var(--color-activated-file-light) !important;
 }

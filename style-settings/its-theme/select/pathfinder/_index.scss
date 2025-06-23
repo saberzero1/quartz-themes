@@ -1,7 +1,7 @@
 .pathfinder .cm-line.hr {
   bottom: -10px;
 }
-.pathfinder.markdown-rendered hr::after,
+.markdown-rendered hr::after,
 .pathfinder .markdown-rendered hr::after,
 .pathfinder .cm-line:not(.cm-active) hr {
   content: '';
@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.pathfinder.pathfinder,
+.pathfinder,
 .pathfinder-remaster.pathfinder-remaster {
   --font: 'Taroca';
   --header-weight: 100;
@@ -59,7 +59,7 @@
   --hvr: rgba(191, 0, 0, 0.2);
   --hvr-active: #e5800040;
 }
-.pathfinder.markdown-rendered hr,
+.markdown-rendered hr,
 .pathfinder .markdown-rendered hr {
   overflow: visible;
   display: flow-root;

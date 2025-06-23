@@ -377,6 +377,13 @@
   color: var(--text-on-accent) !important;
 }
 
+body:not(.is-grabbing).ctp-full-palette .mk-sidebar {
+  --nav-item-background-active: rgb(var(--ctp-mauve));
+  --nav-item-background-selected: rgb(var(--ctp-mauve));
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
 body.ctp-full-palette:not(.disable-folder-highlight)
   .tree-item-self.fn-is-active {
   --nav-item-background-active: rgb(var(--ctp-mauve));

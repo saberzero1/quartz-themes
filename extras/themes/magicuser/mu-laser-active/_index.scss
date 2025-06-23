@@ -1,4 +1,4 @@
-body.mu-laser-active.mu-laser-type-line
+body.mu-laser-type-line
   div.workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content::after {
   content: '';
@@ -19,7 +19,7 @@ body.mu-laser-active.mu-laser-type-line
   pointer-events: none;
 }
 
-body.mu-laser-active.mu-laser-type-area
+body.mu-laser-type-area
   div.workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content::after {
   content: '';

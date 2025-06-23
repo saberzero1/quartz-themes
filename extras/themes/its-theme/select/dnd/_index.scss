@@ -1,8 +1,4 @@
-:not(.dnd):not(.wotc) h3.fantasy-title::after {
-  display: none;
-}
-
-.dnd.dnd {
+.dnd {
   --font: 'Cinzel Decorative', 'Amarante', 'Oleo Script', 'Lobster 1.3', Inter;
   --font-monospace:
     'Fira Code Medium', 'Recursive Mono Linear Static Medium',

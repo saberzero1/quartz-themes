@@ -27,85 +27,43 @@ body {
   .ctp-accent-rosewater {
     --ctp-accent: var(--ctp-rosewater);
   }
-  .theme-ligh.ctp-accent-light-rosewater {
-    --ctp-accent: var(--ctp-rosewater);
-  }
   .ctp-accent-flamingo {
-    --ctp-accent: var(--ctp-flamingo);
-  }
-  .theme-ligh.ctp-accent-light-flamingo {
     --ctp-accent: var(--ctp-flamingo);
   }
   .ctp-accent-pink {
     --ctp-accent: var(--ctp-pink);
   }
-  .theme-ligh.ctp-accent-light-pink {
-    --ctp-accent: var(--ctp-pink);
-  }
   .ctp-accent-mauve {
-    --ctp-accent: var(--ctp-mauve);
-  }
-  .theme-ligh.ctp-accent-light-mauve {
     --ctp-accent: var(--ctp-mauve);
   }
   .ctp-accent-red {
     --ctp-accent: var(--ctp-red);
   }
-  .theme-ligh.ctp-accent-light-red {
-    --ctp-accent: var(--ctp-red);
-  }
   .ctp-accent-maroon {
-    --ctp-accent: var(--ctp-maroon);
-  }
-  .theme-ligh.ctp-accent-light-maroon {
     --ctp-accent: var(--ctp-maroon);
   }
   .ctp-accent-peach {
     --ctp-accent: var(--ctp-peach);
   }
-  .theme-ligh.ctp-accent-light-peach {
-    --ctp-accent: var(--ctp-peach);
-  }
   .ctp-accent-yellow {
-    --ctp-accent: var(--ctp-yellow);
-  }
-  .theme-ligh.ctp-accent-light-yellow {
     --ctp-accent: var(--ctp-yellow);
   }
   .ctp-accent-green {
     --ctp-accent: var(--ctp-green);
   }
-  .theme-ligh.ctp-accent-light-green {
-    --ctp-accent: var(--ctp-green);
-  }
   .ctp-accent-teal {
-    --ctp-accent: var(--ctp-teal);
-  }
-  .theme-ligh.ctp-accent-light-teal {
     --ctp-accent: var(--ctp-teal);
   }
   .ctp-accent-sky {
     --ctp-accent: var(--ctp-sky);
   }
-  .theme-ligh.ctp-accent-light-sky {
-    --ctp-accent: var(--ctp-sky);
-  }
   .ctp-accent-sapphire {
-    --ctp-accent: var(--ctp-sapphire);
-  }
-  .theme-ligh.ctp-accent-light-sapphire {
     --ctp-accent: var(--ctp-sapphire);
   }
   .ctp-accent-blue {
     --ctp-accent: var(--ctp-blue);
   }
-  .theme-ligh.ctp-accent-light-blue {
-    --ctp-accent: var(--ctp-blue);
-  }
   .ctp-accent-lavender {
-    --ctp-accent: var(--ctp-lavender);
-  }
-  .theme-ligh.ctp-accent-light-lavender {
     --ctp-accent: var(--ctp-lavender);
   }
 }
@@ -122,7 +80,7 @@ body {
 .anp-callout-color-toggle .callout[data-callout='note'] {
   --callout-color: var(--ctp-accent);
 }
-bod.anp-button-metadata-toggle
+body.anp-button-metadata-toggle
   .frontmatter-container
   .frontmatter-container-header,
 body
@@ -131,7 +89,7 @@ body
   .frontmatter-container-header {
   background-color: rgba(var(--ctp-accent), 0.8);
 }
-bod.anp-button-metadata-toggle
+body.anp-button-metadata-toggle
   .frontmatter-container
   .frontmatter-container-header:hover,
 body
@@ -140,7 +98,7 @@ body
   .frontmatter-container-header:hover {
   background-color: rgba(var(--ctp-accent), 0.7);
 }
-bod.anp-button-metadata-toggle
+body.anp-button-metadata-toggle
   .frontmatter-container
   .frontmatter-container-header:active,
 body
@@ -149,15 +107,15 @@ body
   .frontmatter-container-header:active {
   background-color: rgba(var(--ctp-accent), 0.6);
 }
-.anp-colorful-fram.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
+.anp-colorful-frame.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
   .mod-top
   .workspace-tab-header-container,
-.anp-colorful-fram.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
+.anp-colorful-frame.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
   .workspace-ribbon.mod-left:before,
-.anp-colorful-fram.anp-colorful-frame.anp-card-layout,
-.anp-colorful-fram.anp-colorful-frame.anp-card-layout .workspace-tabs.mod-top,
-.anp-colorful-fram.anp-colorful-frame.anp-card-layout .sidebar-toggle-button,
-.anp-colorful-fram.anp-colorful-frame.anp-card-layout
+.anp-colorful-frame.anp-colorful-frame.anp-card-layout,
+.anp-colorful-frame.anp-colorful-frame.anp-card-layout .workspace-tabs.mod-top,
+.anp-colorful-frame.anp-colorful-frame.anp-card-layout .sidebar-toggle-button,
+.anp-colorful-frame.anp-colorful-frame.anp-card-layout
   .workspace-ribbon.mod-left:before {
   --tab-container-background: rgba(
     var(--anp-colorful-frame-color, var(--ctp-accent)),
@@ -168,13 +126,13 @@ body
     var(--anp-colorful-frame-opacity, 1)
   );
 }
-.anp-colorful-fram.anp-colorful-frame.anp-card-layout .prompt {
+.anp-colorful-frame.anp-colorful-frame.anp-card-layout .prompt {
   --background-modifier-hover: rgba(var(--ctp-text), 0.075);
 }
-.anp-colorful-fram.anp-colorful-frame .sidebar-toggle-button {
+.anp-colorful-frame.anp-colorful-frame .sidebar-toggle-button {
   --background-modifier-hover: rgba(var(--ctp-text), 0.075);
 }
-.anp-colorful-fram.anp-card-layout .workspace-tabs {
+.anp-colorful-frame.anp-card-layout .workspace-tabs {
   background-color: var(--tab-container-background);
 }
 .style-settings-heading:is(

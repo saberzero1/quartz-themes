@@ -1,19 +1,19 @@
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container:not(:hover)
   .workspace-tab-header,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container:not(:hover)
   .workspace-tab-header,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container:not(:hover)
   .workspace-tab-header,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container:not(:hover)
@@ -21,15 +21,15 @@
   opacity: 0;
 }
 
-.floating-sides.minimal-mode.sidebar-hide {
+.floating-sides.sidebar-hide {
   --workspace-split-left-offset: 0px;
 }
 
-.floating-sides.minimal-mode.root-tabs-hover .workspace {
+.floating-sides.root-tabs-hover .workspace {
   --margin-top-animation-delay: 0s;
 }
 
-.floating-sides.minimal-mode.root-tabs-hover
+.floating-sides.root-tabs-hover
   .workspace:has(
     .workspace-tabs.mod-active.mod-top
       .workspace-tab-header-container:not(:hover)
@@ -38,7 +38,7 @@
   --margin-top-animation-delay: 1s;
 }
 
-.floating-sides.minimal-mode.sidebar-hover
+.floating-sides.sidebar-hover
   .workspace.is-left-sidedock-open:has(
     .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
   ) {
@@ -67,7 +67,7 @@
   margin: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left {
   transition:
     margin-left var(--default-animation-duration) ease-in-out,
@@ -75,31 +75,31 @@
   margin-left: calc(-1 * var(--ribbon-width) + 10px);
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left
   .side-dock-actions,
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left
   .side-dock-settings {
   transition: opacity var(--default-animation-duration) ease-in-out;
   opacity: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left:hover {
   margin-left: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left:hover
   .side-dock-actions,
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hover
+:not(.is-mobile, .smooth-mode).sidebar-hover
   .workspace-ribbon.side-dock-ribbon.mod-left:hover
   .side-dock-settings {
   opacity: 1;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sidebar-hide
+:not(.is-mobile, .smooth-mode).sidebar-hide
   .workspace-ribbon.side-dock-ribbon.mod-left {
   display: none;
 }
@@ -110,19 +110,19 @@
   display: none !important;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container {
@@ -132,19 +132,19 @@
     background-color var(--default-animation-duration) ease-in-out;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container:not(:hover) {
@@ -153,11 +153,11 @@
   background-color: var(--background-secondary);
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container {
@@ -169,11 +169,11 @@
   z-index: 1;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hover
+:not(.is-mobile, .smooth-mode).sides-tabs-hover
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover) {
@@ -181,30 +181,30 @@
   opacity: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-left-space
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top.mod-top-right-space
   .workspace-tab-header-container {
   display: none;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container {
@@ -213,11 +213,11 @@
     background-color var(--default-animation-duration) ease-in-out;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover) {
@@ -225,22 +225,22 @@
   background-color: var(--background-secondary);
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-container
   .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu))
   .view-actions,
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-container
   .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu))
   .view-header-nav-buttons,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover)
   .workspace-tab-header,
-:not(.is-mobile, .smooth-mode).minimal-mode.sides-tabs-hide
+:not(.is-mobile, .smooth-mode).sides-tabs-hide
   .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container:not(:hover)
@@ -248,10 +248,10 @@
   opacity: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.nav-header-hover
+:not(.is-mobile, .smooth-mode).nav-header-hover
   .workspace-split.mod-horizontal.mod-left-split
   .nav-header,
-:not(.is-mobile, .smooth-mode).minimal-mode.nav-header-hover
+:not(.is-mobile, .smooth-mode).nav-header-hover
   .workspace-split.mod-horizontal.mod-right-split
   .nav-header {
   padding-top: 2px;
@@ -262,20 +262,20 @@
   height: 30px;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.nav-header-hover
+:not(.is-mobile, .smooth-mode).nav-header-hover
   .workspace-split.mod-horizontal.mod-left-split
   .nav-header:not(:hover),
-:not(.is-mobile, .smooth-mode).minimal-mode.nav-header-hover
+:not(.is-mobile, .smooth-mode).nav-header-hover
   .workspace-split.mod-horizontal.mod-right-split
   .nav-header:not(:hover) {
   height: 15px;
   opacity: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container,
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
   .sidebar-toggle-button {
@@ -284,7 +284,7 @@
     opacity var(--default-animation-duration) ease-in-out;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container:not(:hover) {
   animation-duration: 1.25s;
@@ -293,7 +293,7 @@
   opacity: 0;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container:not(:hover)
   .sidebar-toggle-button {
@@ -302,14 +302,14 @@
   height: calc(var(--header-height) / 3);
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
   .workspace-tab-header-container-inner {
   max-width: 90%;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
   .workspace-tab-header-container-inner
@@ -320,7 +320,7 @@
   max-width: 100%;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
   .workspace-tab-header-spacer {
@@ -329,7 +329,7 @@
   height: auto;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-container
   .view-header {
@@ -338,7 +338,7 @@
     opacity var(--hover-animation-duration) ease-in-out;
 }
 
-:not(.is-mobile, .smooth-mode).minimal-mode.root-tabs-hover
+:not(.is-mobile, .smooth-mode).root-tabs-hover
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-container
   .view-header:not(:hover, :focus-within, :active, :has(.has-active-menu)) {

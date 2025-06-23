@@ -1,4 +1,4 @@
-bod.theme-light:is(.shib-card-layout)
+body.theme-light:is(.shib-card-layout)
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
@@ -10,7 +10,7 @@ bod.theme-light:is(.shib-card-layout)
   border-radius: var(--shib-card-radius, var(--radius-xl));
 }
 
-bod.theme-light:not(.shib-card-layout)
+body.theme-light:not(.shib-card-layout)
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
@@ -21,15 +21,15 @@ bod.theme-light:not(.shib-card-layout)
   opacity: var(--panel-page-opacity);
 }
 
-bod.panel-page-bg-theme-light-space.theme-light {
+body.panel-page-bg-theme-light-space.theme-light {
   --panel-page-background-url-theme: url('https://i.pinimg.com/originals/52/e5/6f/52e56fb927b170294ccc035f02c6477d.jpg');
 }
 
-bod.panel-page-bg-theme-light-paradise.theme-light {
+body.panel-page-bg-theme-light-paradise.theme-light {
   --panel-page-background-url-theme: url('https://www.enjpg.com/img/2020/summer-aesthetic-wallpaper-iphone-15.jpg');
 }
 
-bod.panel-page-bg-theme-light-custom.theme-light {
+body.panel-page-bg-theme-light-custom.theme-light {
   --panel-page-background-url-theme: var(
     --background-panel-page-theme-light-custom
   );

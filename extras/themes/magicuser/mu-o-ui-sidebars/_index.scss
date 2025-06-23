@@ -4,7 +4,7 @@ body.mu-o-ui-sidebars
   border: 1px solid var(--mu-o-ui-border);
 }
 
-body.mu-o-ui-sidebars.mu-cards-interface
+body.mu-cards-interface
   .workspace-split:is(.mod-left-split, .mod-right-split)
   .workspace-leaf {
   border-radius: var(--size-4-2);

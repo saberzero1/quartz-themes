@@ -1,6 +1,4 @@
-.ulu-canvas-fancycolor14.theme-dark
-  .canvas-node.is-themed.mod-canvas-color-5
-  .canvas-node-content {
+.theme-dark .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content {
   background-image: linear-gradient(
     135deg,
     hsl(218deg 82% 54%) 0%,
@@ -15,9 +13,6 @@
     hsl(227deg 87% 52%) 100%
   );
 }
-.ulu-canvas-fancycolor14.theme-dark
-  .canvas-node.is-themed.mod-canvas-color-5
-  .canvas-node-content
-  p {
+.theme-dark .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p {
   color: white;
 }

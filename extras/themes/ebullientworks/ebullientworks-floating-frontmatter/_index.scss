@@ -1,7 +1,5 @@
 .ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter {
+.is-mobile .markdown-rendered pre.frontmatter {
   float: right;
   position: absolute;
   right: 0.15em;
@@ -14,10 +12,7 @@
 }
 
 .ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter code,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter
-  code {
+.is-mobile .markdown-rendered pre.frontmatter code {
   visibility: hidden;
 }
 
@@ -25,10 +20,7 @@
   .markdown-rendered
   pre.frontmatter
   .mod-failed,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter
-  .mod-failed {
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed {
   position: absolute;
 }
 
@@ -37,11 +29,7 @@
   pre.frontmatter
   .mod-failed
   .mod-error,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter
-  .mod-failed
-  .mod-error {
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed .mod-error {
   visibility: hidden;
 }
 
@@ -50,18 +38,12 @@
   pre.frontmatter
   .mod-failed:hover
   .mod-error,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter
-  .mod-failed:hover
-  .mod-error {
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed:hover .mod-error {
   visibility: visible;
 }
 
 .ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter::before,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter::before {
+.is-mobile .markdown-rendered pre.frontmatter::before {
   content: '✧';
   font-size: 20px;
   color: var(--primary-accent-3);
@@ -72,7 +54,7 @@
   .markdown-rendered
   pre.frontmatter:not(:hover)
   > button.copy-code-button,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   pre.frontmatter:not(:hover)
   > button.copy-code-button {
@@ -80,9 +62,7 @@
 }
 
 .ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter:hover,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter:hover {
+.is-mobile .markdown-rendered pre.frontmatter:hover {
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-secondary);
   filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-secondary-alt));
@@ -96,22 +76,15 @@
   .markdown-rendered
   pre.frontmatter:hover
   code,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  pre.frontmatter:hover
-  code {
+.is-mobile .markdown-rendered pre.frontmatter:hover code {
   visibility: visible;
   background-color: var(---background-secondary);
 }
 
 .ebullientworks-floating-frontmatter .markdown-rendered .metadata-container,
 .ebullientworks-floating-frontmatter .markdown-rendered .frontmatter-container,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container {
+.is-mobile .markdown-rendered .metadata-container,
+.is-mobile .markdown-rendered .frontmatter-container {
   float: right;
   position: absolute;
   right: 0.6rem;
@@ -155,38 +128,20 @@
   .markdown-rendered
   .frontmatter-container
   .frontmatter-section,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container
-  .metadata-properties-heading,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container
-  .metadata-content,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container
-  .frontmatter-container-header,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container
-  .frontmatter-section,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile .markdown-rendered .metadata-container .metadata-properties-heading,
+.is-mobile .markdown-rendered .metadata-container .metadata-content,
+.is-mobile .markdown-rendered .metadata-container .frontmatter-container-header,
+.is-mobile .markdown-rendered .metadata-container .frontmatter-section,
+.is-mobile
   .markdown-rendered
   .frontmatter-container
   .metadata-properties-heading,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container
-  .metadata-content,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile .markdown-rendered .frontmatter-container .metadata-content,
+.is-mobile
   .markdown-rendered
   .frontmatter-container
   .frontmatter-container-header,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container
-  .frontmatter-section {
+.is-mobile .markdown-rendered .frontmatter-container .frontmatter-section {
   visibility: hidden;
 }
 
@@ -196,12 +151,8 @@
 .ebullientworks-floating-frontmatter
   .markdown-rendered
   .frontmatter-container::before,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container::before,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container::before {
+.is-mobile .markdown-rendered .metadata-container::before,
+.is-mobile .markdown-rendered .frontmatter-container::before {
   content: '✧';
   font-size: 20px;
   color: var(--primary-accent-3);
@@ -240,35 +191,26 @@
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-section,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .metadata-container:hover
   .metadata-properties-heading,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .metadata-container:hover
   .frontmatter-container-header,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container:hover
-  .metadata-content,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container:hover
-  .frontmatter-section,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile .markdown-rendered .metadata-container:hover .metadata-content,
+.is-mobile .markdown-rendered .metadata-container:hover .frontmatter-section,
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .metadata-properties-heading,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-container-header,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container:hover
-  .metadata-content,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile .markdown-rendered .frontmatter-container:hover .metadata-content,
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-section {
@@ -283,11 +225,11 @@
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-collapse-indicator,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .metadata-container:hover
   .frontmatter-collapse-indicator,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-collapse-indicator {
@@ -297,9 +239,7 @@
 .ebullientworks-floating-frontmatter
   .markdown-rendered
   .frontmatter-container:hover,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .frontmatter-container:hover {
+.is-mobile .markdown-rendered .frontmatter-container:hover {
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
   filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-modifier-border));
@@ -313,7 +253,7 @@
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-container-header,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-container-header {
@@ -324,7 +264,7 @@
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-section,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile
   .markdown-rendered
   .frontmatter-container:hover
   .frontmatter-section {
@@ -334,9 +274,7 @@
 .ebullientworks-floating-frontmatter
   .markdown-rendered
   .metadata-container:hover,
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container:hover {
+.is-mobile .markdown-rendered .metadata-container:hover {
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
   filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-modifier-border));
@@ -354,11 +292,8 @@
   .markdown-rendered
   .metadata-container:hover
   .metadata-property[data-property-key='tags'],
-.ebullientworks-floating-frontmatter.is-mobile
-  .markdown-rendered
-  .metadata-container:hover
-  .metadata-property,
-.ebullientworks-floating-frontmatter.is-mobile
+.is-mobile .markdown-rendered .metadata-container:hover .metadata-property,
+.is-mobile
   .markdown-rendered
   .metadata-container:hover
   .metadata-property[data-property-key='tags'] {

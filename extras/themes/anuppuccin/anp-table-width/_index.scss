@@ -1,13 +1,10 @@
-.anp-table-width.markdown-rendered:not(.cards):not(.table-disable) table,
-.anp-table-width.markdown-rendered.cards:not(.table-disable)
-  table:not(.dataview) {
+.markdown-rendered:not(.cards):not(.table-disable) table,
+.markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
   width: var(--anp-table-width-pct);
 }
 
-.anp-table-width.anp-table-toggle
-  .markdown-rendered:not(.cards):not(.table-disable)
-  table,
-.anp-table-width.anp-table-toggle
+.anp-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table,
+.anp-table-toggle
   .markdown-rendered.cards:not(.table-disable)
   table:not(.dataview) {
   width: var(--anp-table-width-pct);

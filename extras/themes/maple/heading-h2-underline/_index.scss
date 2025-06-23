@@ -38,6 +38,6 @@ body.heading-h2-underline .vertical-tab-content h2 {
   font-weight: var(--h2-weight);
 }
 
-bod.heading-underline-thin :is(h2, .HyperMD-header-2)::after {
+body.heading-underline-thin :is(h2, .HyperMD-header-2)::after {
   height: var(--size-2-1);
 }

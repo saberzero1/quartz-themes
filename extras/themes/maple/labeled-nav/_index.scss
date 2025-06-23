@@ -1,5 +1,5 @@
-.labeled-nav.mod-windows,
-.labeled-nav.is-fullscreen:not(.colorful-frame) {
+.mod-windows,
+.is-fullscreen:not(.colorful-frame) {
   --labeled-nav-top-margin: 0;
 }
 
@@ -9,7 +9,7 @@
   in different conditions e.g. OSes and colorful frame */
 }
 
-.labeled-nav.is-translucent
+.is-translucent
   .mod-left-split
   .mod-top
   .workspace-tab-header-container
@@ -17,18 +17,15 @@
   background-color: transparent;
 }
 
-.labeled-nav.is-hidden-frameless:not(.is-fullscreen)
+.is-hidden-frameless:not(.is-fullscreen)
   .mod-left-split
   .workspace-tabs.mod-top-left-space
   .workspace-tab-header-container {
   padding-left: 0;
 }
 
-.labeled-nav.mod-macos
-  .mod-left-split
-  .mod-top
-  .workspace-tab-header-container:before,
-.labeled-nav.mod-macos.is-hidden-frameless:not(.is-fullscreen)
+.mod-macos .mod-left-split .mod-top .workspace-tab-header-container:before,
+.mod-macos.is-hidden-frameless:not(.is-fullscreen)
   .mod-left-split
   .mod-top
   .workspace-tab-header-container:before {
@@ -39,7 +36,7 @@
   border-bottom: 0 solid var(--tab-outline-color);
 }
 
-.labeled-nav.mod-macos.is-hidden-frameless:not(.is-fullscreen)
+.mod-macos.is-hidden-frameless:not(.is-fullscreen)
   .workspace-ribbon.mod-left:not(.is-collapsed) {
   border: none;
   --tab-outline-width: 0px;
@@ -49,11 +46,11 @@
   .mod-left-split
   .mod-top
   .workspace-tab-header-container:before,
-.labeled-nav.mod-macos:not(.hider-ribbon)
+.mod-macos:not(.hider-ribbon)
   .mod-left-split
   .mod-top
   .workspace-tab-header-container:before,
-.labeled-nav.colorful-frame.is-hidden-frameless:not(.is-fullscreen)
+.colorful-frame.is-hidden-frameless:not(.is-fullscreen)
   .mod-left-split
   .mod-top
   .workspace-tab-header-container:before {
@@ -62,9 +59,8 @@
 
 .labeled-nav:not(.is-hidden-frameless)
   .workspace-ribbon.mod-left:not(.is-collapsed),
-.labeled-nav.mod-macos:not(.hider-ribbon)
-  .workspace-ribbon.mod-left:not(.is-collapsed),
-.labeled-nav.colorful-frame.is-hidden-frameless:not(.is-fullscreen)
+.mod-macos:not(.hider-ribbon) .workspace-ribbon.mod-left:not(.is-collapsed),
+.colorful-frame.is-hidden-frameless:not(.is-fullscreen)
   .workspace-ribbon.mod-left:not(.is-collapsed) {
   --tab-outline-width: 1px;
 }
@@ -78,7 +74,7 @@
   content: ' ';
 }
 
-.labeled-nav.hider-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(
+.hider-ribbon.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(
     .is-popout-window
   )
   .mod-left-split:not(.is-sidedock-collapsed)

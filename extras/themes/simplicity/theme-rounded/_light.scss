@@ -1,16 +1,16 @@
-.theme-rounded.theme-light,
-.theme-rounded.theme-dark {
+.theme-light,
+.theme-dark {
   --background-primary: var(--color-base-00) !important;
   --background-secondary: var(--color-base-00) !important;
 }
 
-.theme-rounded.theme-light
+.theme-light
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active,
-.theme-rounded.theme-dark .mod-root .workspace-tab-header.is-active,
-.theme-rounded.theme-light .workspace-tab-header-container,
-.theme-rounded.theme-light .workspace-ribbon.mod-left,
+.theme-dark .mod-root .workspace-tab-header.is-active,
+.theme-light .workspace-tab-header-container,
+.theme-light .workspace-ribbon.mod-left,
 .theme-rounded .workspace-tab-container,
 .theme-dark.theme-rounded:not(.theme-black)
   .workspace-split.mod-root
@@ -19,7 +19,7 @@
   box-shadow: none !important;
 }
 
-.theme-rounded.theme-light .workspace-ribbon.mod-left,
+.theme-light .workspace-ribbon.mod-left,
 .theme-dark.theme-rounded .workspace-ribbon.mod-left {
   border-right: none !important;
   background-color: hsla(
@@ -30,9 +30,9 @@
   ) !important;
 }
 
-.theme-rounded.theme-light .workspace-ribbon.mod-left:before,
+.theme-light .workspace-ribbon.mod-left:before,
 .theme-dark.theme-rounded:not(.theme-black) .workspace-ribbon.mod-left:before,
-.theme-dar.theme-black .workspace-ribbon.mod-left:before {
+.theme-dark.theme-black .workspace-ribbon.mod-left:before {
   background-color: transparent !important;
   background-color: hsla(
     var(--accent-h),
@@ -42,13 +42,13 @@
   ) !important;
 }
 
-.theme-rounded.theme-light .workspace-tabs:not(.mod-stacked) .workspace-leaf {
+.theme-light .workspace-tabs:not(.mod-stacked) .workspace-leaf {
   border: 1px solid
     hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.22) !important;
   border-radius: 25px;
 }
 
-.theme-rounded.theme-light .workspace-split {
+.theme-light .workspace-split {
   background-color: hsla(
     var(--accent-h),
     var(--accent-s),

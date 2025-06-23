@@ -1,24 +1,24 @@
-bod.encore-bg-image .app-container {
+body.encore-bg-image .app-container {
   background-image: var(--image);
   background-size: cover;
 }
-bod.encore-bg-image .app-container::before {
+body.encore-bg-image .app-container::before {
   position: fixed;
   inset: 0;
   content: '';
   background: transparent;
   backdrop-filter: blur(calc(1px * pow(var(--blur-amount, 10), 2)));
 }
-bod.encore-bg-frosty {
+body.encore-bg-frosty {
   background-image: linear-gradient(rgb(12, 136, 126), rgb(78, 4, 250));
 }
-bod.encore-bg-frosty .app-container {
+body.encore-bg-frosty .app-container {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1920 3240' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3C/defs%3E%3Cellipse style='filter: blur(200px); fill: rgb(38, 214, 255);' cx='465.54' cy='549.634' rx='559.232' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(59, 55, 212);' cx='1461.894' cy='749.77' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(123, 130, 208);' cx='398.22' cy='1237.125' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(17, 197, 255);' cx='1546.62' cy='1737.081' rx='603.713' ry='357.778'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(185, 185, 185);' cx='981.906' cy='1520.478' rx='371.639' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(35, 30, 204);' cx='549.068' cy='2325.941' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1338.121' cy='2790.09' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1297.975' cy='-434.34' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3C/svg%3E");
   background-size: cover;
   background-repeat: mirror;
   animation: scroll-up infinite 120s linear;
 }
-bod.encore-bg-chromatic {
+body.encore-bg-chromatic {
   background-image: repeating-linear-gradient(
     45deg,
     rgb(15, 245, 254),
@@ -39,13 +39,13 @@ bod.encore-bg-chromatic {
   background-size: 100% 800vh;
   animation: scroll-up-down infinite 180s ease-in-out alternate-reverse;
 }
-bod.encore-bg-chromatic::before {
+body.encore-bg-chromatic::before {
   position: fixed;
   inset: 0;
   content: '';
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
-bod.encore-bg-prismatic {
+body.encore-bg-prismatic {
   background-image: repeating-linear-gradient(
     45deg,
     rgb(0, 4, 255),
@@ -64,19 +64,19 @@ bod.encore-bg-prismatic {
   background-size: 100% 400vh;
   animation: scroll-up infinite 30s linear;
 }
-bod.encore-bg-prismatic::before {
+body.encore-bg-prismatic::before {
   position: fixed;
   inset: 0;
   content: '';
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
-bod.encore-bg-dawn {
+body.encore-bg-dawn {
   background-image:
     radial-gradient(transparent, rgba(1, 2, 36, 0.4784313725)),
     linear-gradient(to bottom, rgba(222, 244, 255, 0.11), transparent),
     linear-gradient(to bottom left, #0036e6, #400dcc);
 }
-bod.encore-bg-dawn::before {
+body.encore-bg-dawn::before {
   position: fixed;
   inset: 0;
   content: '';
@@ -86,13 +86,13 @@ bod.encore-bg-dawn::before {
     linear-gradient(to bottom, rgba(222, 244, 255, 0.1568627451), transparent),
     linear-gradient(to bottom left, #ee8d4d, rgba(0, 18, 182, 0.7058823529));
 }
-bod.encore-bg-lava {
+body.encore-bg-lava {
   background-image:
     radial-gradient(transparent, #360700),
     linear-gradient(to top, #d86800, transparent),
     linear-gradient(to bottom left, #b43900, #1a0101);
 }
-bod.encore-bg-lava::before {
+body.encore-bg-lava::before {
   position: fixed;
   inset: 0;
   content: '';
@@ -102,13 +102,13 @@ bod.encore-bg-lava::before {
     linear-gradient(to top, #f5e498, transparent),
     linear-gradient(to bottom left, #ff0000, #ff0000);
 }
-bod.encore-bg-emerald {
+body.encore-bg-emerald {
   background-image:
     radial-gradient(transparent, #071400),
     linear-gradient(to top, #54f1d7, transparent),
     linear-gradient(to bottom left, #55df00, #1b4900);
 }
-bod.encore-bg-sapphire {
+body.encore-bg-sapphire {
   background-image:
     radial-gradient(transparent, #000018),
     linear-gradient(to top, #5871ff, transparent),

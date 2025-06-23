@@ -11,9 +11,6 @@ body {
   --font-ui-large: 22px;
 }
 
-:is(, .fas-bigger-font) .cm-s-obsidian span.cm-formatting-quote {
-  font-weight: var(--font-normal);
-}
 body .style-settings-container [data-id='fas-sans-serif'],
 body .style-settings-container [data-id='fas-bigger-font'] {
   opacity: 0.5;

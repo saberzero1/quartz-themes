@@ -5,7 +5,7 @@ bodys-always {
 bodys-always svg.logo-wireframe {
   stroke-width: 45;
 }
-bod.is-frameless:not(.is-hidden-frameless) .app-container {
+body.is-frameless:not(.is-hidden-frameless) .app-container {
   margin-top: -9px;
   height: calc(100% + 9px);
 }

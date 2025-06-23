@@ -7,6 +7,10 @@ body-stacked {
 body .workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
   margin: 0 0 5px 0;
 }
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
 body
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-top)
@@ -17,6 +21,10 @@ body.toggle-tab-design
   .workspace-tab-header-inner {
   padding: 1px 11px;
 }
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
 body
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-top)

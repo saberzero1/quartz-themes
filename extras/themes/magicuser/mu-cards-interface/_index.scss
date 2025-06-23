@@ -36,8 +36,7 @@ body:not(
   margin-bottom: 16px;
 }
 
-body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode
-  .workspace-tab-container {
+body:not(.is-mobile).mu-distraction-free-mode .workspace-tab-container {
   border-radius: 8px;
   margin-left: 8px;
   margin-right: 16px;
@@ -46,8 +45,7 @@ body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode
   border: 1px solid var(--mu-cards-border);
 }
 
-body:not(.is-mobile).mu-cards-interface.mu-total-concentration-mode
-  .workspace-tab-container {
+body:not(.is-mobile).mu-total-concentration-mode .workspace-tab-container {
   border-radius: 8px;
   margin: 8px;
   border: 1px solid var(--mu-cards-border);

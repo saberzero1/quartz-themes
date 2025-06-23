@@ -40,7 +40,7 @@ body.background-image .cm-editor .cm-contentContainer {
   height: auto;
 }
 
-body.background-image.is-focused .workspace-leaf.mod-active .view-header,
+body.is-focused .workspace-leaf.mod-active .view-header,
 body.background-image .view-header,
 body.background-image .view-header-title-parent,
 body.background-image .view-header-title,
@@ -58,7 +58,7 @@ body.background-image .kanban-plugin.kanban-plugin,
 body.background-image .workspace > .workspace-split,
 body.background-image .workspace-split.mod-root .view-content,
 body.background-image .workspace-tabs .workspace-leaf,
-body.background-image.is-focused .workspace-tabs.mod-top,
+body.is-focused .workspace-tabs.mod-top,
 body.background-image .workspace-tabs.mod-top,
 body.background-image :is(.markdown-preview-view, .markdown-source-view) {
   background: transparent;

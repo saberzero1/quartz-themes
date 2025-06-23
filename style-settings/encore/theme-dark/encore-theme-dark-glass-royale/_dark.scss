@@ -1,4 +1,4 @@
-bod {
+body {
   --grey-50-rgb: 225, 227, 233;
   --grey-100-rgb: 222, 227, 241;
   --grey-200-rgb: 173, 181, 200;
@@ -17,7 +17,7 @@ bod {
   --accent-l: 54%;
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
 }
-bod.encore-colors-colorful {
+body.encore-colors-colorful {
   --highlight-hue: 30;
   --bold-color: var(--color-green);
   --italic-color: var(--color-red);
@@ -28,24 +28,24 @@ bod.encore-colors-colorful {
   --h5-color: #9dee51;
   --h6-color: #8badec;
 }
-bod
+body
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container,
-bod
+body
   .mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container {
   background-color: rgba(255, 255, 255, 0.062745098);
   backdrop-filter: blur(20px) saturate(1.8);
 }
-bod
+body
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container
   .workspace-tab-header-container-inner
   .workspace-tab-header.is-active,
-bod
+body
   .mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container
@@ -53,11 +53,11 @@ bod
   .workspace-tab-header.is-active {
   background-color: rgba(255, 255, 255, 0.1882352941);
 }
-bod .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+body .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   background-color: rgba(255, 255, 255, 0.1882352941);
   backdrop-filter: blur(50px) saturate(1.5);
 }
-bod .mod-root .workspace-tab-container .workspace-leaf-content {
+body .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 0.75;
   background-image:
     radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2509803922)),
@@ -67,7 +67,7 @@ bod .mod-root .workspace-tab-container .workspace-leaf-content {
     );
   backdrop-filter: blur(32px) saturate(2);
 }
-bod
+body
   .mod-root
   .workspace-tab-container
   .workspace-leaf-content
@@ -76,7 +76,7 @@ bod
   background-color: transparent;
   --canvas-dot-pattern: #ffffff15;
 }
-bod.encore-fancy-headers
+body.encore-fancy-headers
   .workspace-tab-container
   .workspace-leaf-content
   > .view-header {

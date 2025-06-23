@@ -25231,7 +25231,7 @@ em strong /*Rosé Pine dawn*/ {
 }
 
 /*latex color*/
-mjx-container[jax="CHTML"][display="true"] /*Rosé Pine dawn*/ {
+mjx-container[jax='CHTML'][display='true'] /*Rosé Pine dawn*/ {
   color: var(--latex-color);
 }
 
@@ -25239,7 +25239,7 @@ mjx-container[jax="CHTML"][display="true"] /*Rosé Pine dawn*/ {
   color: var(--latex-color);
 }
 
-mjx-container[jax="CHTML"] /*Rosé Pine dawn*/ {
+mjx-container[jax='CHTML'] /*Rosé Pine dawn*/ {
   color: var(--latex-color);
 }
 
@@ -25332,9 +25332,9 @@ body:not(.no-links)
 }
 
 .workspace-leaf-content:is(
-    [data-type="surfing-view"],
-    [data-type="graph"],
-    [data-type="localgraph"]
+    [data-type='surfing-view'],
+    [data-type='graph'],
+    [data-type='localgraph']
   )
   ::-webkit-scrollbar /*Rosé Pine dawn*/ {
   display: none;
@@ -25588,11 +25588,11 @@ body:not(.no-activeline) .cm-active.cm-line {
 }
 
 /*File explorer editing content color fix*/
-.tree-item-inner[contenteditable="true"] /*Rosé Pine dawn*/ {
+.tree-item-inner[contenteditable='true'] /*Rosé Pine dawn*/ {
   color: var(--text-normal);
 }
 
-.tree-item-inner-text[contenteditable="true"] /*Rosé Pine dawn*/ {
+.tree-item-inner-text[contenteditable='true'] /*Rosé Pine dawn*/ {
   color: var(--text-normal);
 }
 
@@ -25922,22 +25922,22 @@ body:not(.no-todoist) {
   transition: none;
 }
 
-.banner.banner-fade.markdown-preview-view img[alt="banner"]:first-child /*Rosé Pine dawn*/ {
+.banner.banner-fade.markdown-preview-view img[alt='banner']:first-child /*Rosé Pine dawn*/ {
   border-radius: 0px;
   transition: none;
 }
 
-.banner.banner-fade.is-live-preview img[alt="banner"]:first-child /*Rosé Pine dawn*/ {
+.banner.banner-fade.is-live-preview img[alt='banner']:first-child /*Rosé Pine dawn*/ {
   border-radius: 0px;
   transition: none;
 }
 
-.banner.markdown-preview-view img[alt="banner"]:first-child /*Rosé Pine dawn*/ {
+.banner.markdown-preview-view img[alt='banner']:first-child /*Rosé Pine dawn*/ {
   border-radius: 0px;
   transition: none;
 }
 
-.banner.is-live-preview img[alt="banner"]:first-child /*Rosé Pine dawn*/ {
+.banner.is-live-preview img[alt='banner']:first-child /*Rosé Pine dawn*/ {
   border-radius: 0px;
   transition: none;
 }
@@ -26114,11 +26114,11 @@ body:not(.no-cardboard) {
   --callout-border-width: 2px 6px 6px 2px;
 }
 
-[data-callout-metadata~="solid"] /*Rosé Pine dawn*/ {
+[data-callout-metadata~='solid'] /*Rosé Pine dawn*/ {
   --callout-border-width: 2px 6px 6px 2px;
 }
 
-[data-callout="solid"] /*Rosé Pine dawn*/ {
+[data-callout='solid'] /*Rosé Pine dawn*/ {
   --callout-border-width: 2px 6px 6px 2px;
 }
 
@@ -26130,7 +26130,7 @@ body:not(.no-cardboard) {
   --callout-title-padding: 7px 15px;
 }
 
-[data-callout-metadata~="outlined"] /*Rosé Pine dawn*/ {
+[data-callout-metadata~='outlined'] /*Rosé Pine dawn*/ {
   --callout-border-width: 1px;
   --callout-content-background: var(--background-primary);
   --callout-content-padding: 0px var(--size-4-6);
@@ -26138,7 +26138,7 @@ body:not(.no-cardboard) {
   --callout-title-padding: 7px 15px;
 }
 
-[data-callout="outlined"] /*Rosé Pine dawn*/ {
+[data-callout='outlined'] /*Rosé Pine dawn*/ {
   --callout-border-width: 1px;
   --callout-content-background: var(--background-primary);
   --callout-content-padding: 0px var(--size-4-6);
@@ -26153,14 +26153,14 @@ body:not(.no-cardboard) {
   border-width: 2px;
 }
 
-[data-callout-metadata~="math"] /*Rosé Pine dawn*/ {
+[data-callout-metadata~='math'] /*Rosé Pine dawn*/ {
   background-color: transparent;
   border-color: rgba(var(--callout-color));
   border-radius: 0px;
   border-width: 2px;
 }
 
-[data-callout="math"] /*Rosé Pine dawn*/ {
+[data-callout='math'] /*Rosé Pine dawn*/ {
   background-color: transparent;
   border-color: rgba(var(--callout-color));
   border-radius: 0px;
@@ -26189,20 +26189,20 @@ body:not(.no-cardboard) {
 /* Disable click */
 .no-click
   input[data-task]:not(
-    input[data-task=" "],
-    .no-click input[data-task="x"]
+    input[data-task=' '],
+    .no-click input[data-task='x']
   ):checked /*Rosé Pine dawn*/ {
   pointer-events: none;
 }
 
 .no-click
-  li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"])
+  li[data-task]:not(li[data-task=' '], .no-click li[data-task='x'])
   > input:checked /*Rosé Pine dawn*/ {
   pointer-events: none;
 }
 
 .no-click
-  li[data-task]:not(li[data-task=" "], .no-click li[data-task="x"])
+  li[data-task]:not(li[data-task=' '], .no-click li[data-task='x'])
   > p
   > input:checked /*Rosé Pine dawn*/ {
   pointer-events: none;
@@ -26211,8 +26211,8 @@ body:not(.no-cardboard) {
 .no-click
   label.task-list-label:has(
     > input[data-task]:not(
-        input[data-task=" "],
-        .no-click input[data-task="x"]
+        input[data-task=' '],
+        .no-click input[data-task='x']
       ):checked
   ) /*Rosé Pine dawn*/ {
   pointer-events: none;

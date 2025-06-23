@@ -1,9 +1,9 @@
-.cards.pln-cards-sort table.dataview thead,
+.pln-cards-sort table.dataview thead,
 .pln-cards-sort .cards table.dataview thead {
   display: none !important;
 }
 
-.cards.pln-cards-borders table.dataview > tbody > tr,
+.pln-cards-borders table.dataview > tbody > tr,
 .pln-cards-borders .cards table.dataview > tbody > tr {
   background-color: rgba(var(--pln-cards-color-rgb), 0.4) !important;
   border-top: 4px solid rgb(var(--pln-cards-color-rgb)) !important;
@@ -20,7 +20,7 @@
   --list-indent: 0;
 }
 
-.cards.table-100 table.dataview tbody,
+.table-100 table.dataview tbody,
 .table-100 .cards table.dataview tbody {
   padding: 0.25rem 0.75rem;
 }
@@ -156,13 +156,13 @@
   top: 0px;
 }
 
-.cards.table-100 table.dataview thead > tr,
+.table-100 table.dataview thead > tr,
 .table-100 .cards table.dataview thead > tr {
   right: 0.75rem;
 }
 
 .table-100 .cards table.dataview thead:before,
-.cards.table-100 table.dataview thead:before {
+.table-100 table.dataview thead:before {
   margin-right: 0.75rem;
 }
 
@@ -244,43 +244,43 @@
   background-color: var(--background-modifier-hover);
 }
 
-.cards.cards-16-9,
-.lis.cards-16-9 {
+.cards-16-9,
+.list-cards.cards-16-9 {
   --cards-aspect-ratio: 16/9;
 }
 
-.cards.cards-1-1,
-.lis.cards-1-1 {
+.cards-1-1,
+.list-cards.cards-1-1 {
   --cards-aspect-ratio: 1/1;
 }
 
-.cards.cards-2-1,
-.lis.cards-2-1 {
+.cards-2-1,
+.list-cards.cards-2-1 {
   --cards-aspect-ratio: 2/1;
 }
 
-.cards.cards-2-3,
-.lis.cards-2-3 {
+.cards-2-3,
+.list-cards.cards-2-3 {
   --cards-aspect-ratio: 2/3;
 }
 
-.cards.cards-cols-1,
-.lis.cards-cols-1 {
+.cards-cols-1,
+.list-cards.cards-cols-1 {
   --cards-columns: repeat(1, minmax(0, 1fr));
 }
 
-.cards.cards-cols-2,
-.lis.cards-cols-2 {
+.cards-cols-2,
+.list-cards.cards-cols-2 {
   --cards-columns: repeat(2, minmax(0, 1fr));
 }
 
-.cards.cards-cover,
-.lis.cards-cover {
+.cards-cover,
+.list-cards.cards-cover {
   --cards-image-fit: cover;
 }
 
-.cards.cards-align-bottom table.dataview tbody > tr > td:last-child,
-.lis.cards-align-bottom table.dataview tbody > tr > td:last-child {
+.cards-align-bottom table.dataview tbody > tr > td:last-child,
+.list-cards.cards-align-bottom table.dataview tbody > tr > td:last-child {
   margin-top: auto;
 }
 

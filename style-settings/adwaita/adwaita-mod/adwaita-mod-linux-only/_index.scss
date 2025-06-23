@@ -1,53 +1,53 @@
-bod.mod-linux {
+body.mod-linux {
   --frame-right-space: calc(var(--scale) * 120px);
   --foreground-focus: var(--adwaita-headerbar-fg-color);
 }
-bod.mod-linux.adwaita-window-button-minimize-hide
+body.mod-linux.adwaita-window-button-minimize-hide
   .titlebar-button-container.mod-right
   .titlebar-button.mod-minimize {
   display: none;
 }
-bod.mod-linux.adwaita-window-button-maximize-hide
+body.mod-linux.adwaita-window-button-maximize-hide
   .titlebar-button-container.mod-right
   .titlebar-button.mod-maximize {
   display: none;
 }
-bod.mod-linux.adwaita-window-button-close-hide
+body.mod-linux.adwaita-window-button-close-hide
   .titlebar-button-container.mod-right
   .titlebar-button.mod-close {
   display: none;
 }
-bod.mod-linux.adwaita-window-button-minimize-hide:not(
+body.mod-linux.adwaita-window-button-minimize-hide:not(
     .adwaita-window-button-maximize-hide.adwaita-window-button-close-hide
   ),
-bod.mod-linux.adwaita-window-button-maximize-hide:not(
+body.mod-linux.adwaita-window-button-maximize-hide:not(
     .adwaita-window-button-close-hide.adwaita-window-button-minimize-hide
   ),
-bod.mod-linux.adwaita-window-button-close-hide:not(
+body.mod-linux.adwaita-window-button-close-hide:not(
     .adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide
   ) {
   --frame-right-space: calc(var(--scale) * (120px - 38px));
 }
-bod.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(
+body.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide:not(
     .adwaita-window-button-close-hide
   ),
-bod.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(
+body.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide:not(
     .adwaita-window-button-minimize-hide
   ),
-bod.mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(
+body.mod-linux.adwaita-window-button-close-hide.adwaita-window-button-minimize-hide:not(
     .adwaita-window-button-maximize-hide
   ) {
   --frame-right-space: calc(var(--scale) * (120px - 38px - 38px));
 }
-bod.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+body.mod-linux.adwaita-window-button-minimize-hide.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
   --frame-right-space: calc(var(--scale) * (120px - 38px - 38px - 38px));
 }
-bod.mod-linux .titlebar-button-container.mod-right {
+body.mod-linux .titlebar-button-container.mod-right {
   transform: scale(var(--scale));
   margin-right: var(--right-margin);
   transform-origin: right;
 }
-bod.mod-linux .titlebar-button-container.mod-right .titlebar-button {
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button {
   height: 24px;
   width: 24px;
   border-radius: 12px;
@@ -56,71 +56,71 @@ bod.mod-linux .titlebar-button-container.mod-right .titlebar-button {
   background: var(--background);
   color: var(--foreground);
 }
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-minimize
   svg,
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-maximize
   svg,
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-close
   svg {
   display: none;
 }
-bod.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
   content: '';
   background-color: currentColor;
   width: 16px;
   height: 16px;
   margin: auto;
 }
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-minimize::after {
   -webkit-mask-image: var(--adwaita-icon-window-minimize-symbolic);
   mask-image: var(--adwaita-icon-window-minimize-symbolic);
 }
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-maximize::after {
   -webkit-mask-image: var(--adwaita-icon-window-maximize-symbolic);
   mask-image: var(--adwaita-icon-window-maximize-symbolic);
 }
-bod.mod-linux
+body.mod-linux
   .titlebar-button-container.mod-right
   .titlebar-button.mod-close::after {
   -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
   mask-image: var(--adwaita-icon-window-close-symbolic);
 }
-bod.mod-linux .titlebar-button-container.mod-right .titlebar-button:hover {
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button:hover {
   background: var(--background) !important;
 }
-bod.mod-linux .titlebar-button-container.mod-right .titlebar-button svg {
+body.mod-linux .titlebar-button-container.mod-right .titlebar-button svg {
   width: 12px;
   height: 12px;
   margin: auto;
 }
-bod.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button,
-bod.mod-linux.is-focused .modal-close-button {
+body.mod-linux.is-focused .titlebar-button-container.mod-right .titlebar-button,
+body.mod-linux.is-focused .modal-close-button {
   background: var(--background-focus);
   color: var(--foreground-focus);
 }
-bod.mod-linux.is-focused
+body.mod-linux.is-focused
   .titlebar-button-container.mod-right
   .titlebar-button:hover,
-bod.mod-linux.is-focused .modal-close-button:hover {
+body.mod-linux.is-focused .modal-close-button:hover {
   background: var(--background-hover) !important;
 }
-bod.mod-linux.is-focused
+body.mod-linux.is-focused
   .titlebar-button-container.mod-right
   .titlebar-button:active,
-bod.mod-linux.is-focused .modal-close-button:active {
+body.mod-linux.is-focused .modal-close-button:active {
   background: var(--background-active) !important;
 }
-bod.mod-linux .modal-close-button {
+body.mod-linux .modal-close-button {
   height: 24px;
   width: 24px;
   border-radius: 12px;
@@ -129,7 +129,7 @@ bod.mod-linux .modal-close-button {
   transform: scale(var(--scale));
   transform-origin: right;
 }
-bod.mod-linux .modal-close-button:before {
+body.mod-linux .modal-close-button:before {
   content: '';
   display: block;
   width: 16px;

@@ -94,37 +94,37 @@ body.flexcyon-workspace-card-layout
   transform: translateX(8px);
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .workspace-split:not(.mod-left-split, .mod-right-split)
   .metadata-container {
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext .metadata-properties-heading {
+body.flexcyon-workspace-cards-tui-ext .metadata-properties-heading {
   position: absolute;
   top: -15px;
   left: 32px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext .metadata-properties-heading * {
+body.flexcyon-workspace-cards-tui-ext .metadata-properties-heading * {
   color: rgba(var(--color-purple-rgb), 0.9);
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .metadata-properties-heading
   div.collapse-indicator,
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .metadata-properties-heading
   .metadata-properties-title {
   background-color: var(--color-base-10);
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext .metadata-content {
+body.flexcyon-workspace-cards-tui-ext .metadata-content {
   margin-top: 4px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-explorer']
@@ -133,7 +133,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-explorer']
@@ -149,7 +149,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-tree-view']
@@ -158,7 +158,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-tree-view']
@@ -174,7 +174,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='bookmarks']
@@ -183,7 +183,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='bookmarks']
@@ -199,7 +199,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='all-properties']
@@ -208,7 +208,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='all-properties']
@@ -224,7 +224,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='outline']
@@ -233,7 +233,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='outline']
@@ -249,7 +249,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
@@ -258,7 +258,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
@@ -274,7 +274,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='backlink']
@@ -283,7 +283,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-orange-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='backlink']
@@ -299,7 +299,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='review-queue-list-view']
@@ -308,7 +308,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-red-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='review-queue-list-view']
@@ -324,7 +324,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-properties']
@@ -333,7 +333,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='file-properties']
@@ -349,7 +349,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='outgoing-link']
@@ -358,7 +358,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='outgoing-link']
@@ -374,7 +374,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='graph']
@@ -383,7 +383,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='graph']
@@ -399,7 +399,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='full-calendar-view']
@@ -408,7 +408,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='full-calendar-view']
@@ -424,7 +424,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='localgraph']
@@ -433,7 +433,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='localgraph']
@@ -449,7 +449,7 @@ bod.flexcyon-workspace-cards-tui-ext
   padding: 0px 8px;
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='calendar']
@@ -458,7 +458,7 @@ bod.flexcyon-workspace-cards-tui-ext
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
 }
 
-bod.flexcyon-workspace-cards-tui-ext
+body.flexcyon-workspace-cards-tui-ext
   .mod-sidedock
   .workspace-tab-header-container:has(
     .workspace-tab-header.is-active[data-type='calendar']

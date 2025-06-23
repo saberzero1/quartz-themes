@@ -16,7 +16,7 @@
     var(--background-primary)
   );
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle
+.anp-rainbow-file-toggle
   .nav-files-container
   > div
   > .nav-folder-children
@@ -24,10 +24,7 @@
   .nav-file-title {
   color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
 }
-.anp-full-rainbow-color-toggle.anp-rainbow-file-toggle
-  .nav-files-container
-  > div
-  > .nav-file {
+.anp-rainbow-file-toggle .nav-files-container > div > .nav-file {
   border-radius: 5px;
   margin-bottom: 2px;
 }

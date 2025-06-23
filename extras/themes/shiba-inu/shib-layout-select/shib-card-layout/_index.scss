@@ -119,9 +119,9 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
   margin-bottom: var(--shib-card-layout-padding, 10px);
 }
 
-.shib-card-layout.shib-card-shadows .side-dock-actions,
-.shib-card-layout.shib-card-shadows .workspace-split .workspace-leaf-content,
-.shib-card-layout.shib-card-shadows.shib-card-layout-fileexplorer
+.shib-card-shadows .side-dock-actions,
+.shib-card-shadows .workspace-split .workspace-leaf-content,
+.shib-card-shadows.shib-card-layout-fileexplorer
   .workspace-split
   .workspace-leaf-content[data-type='file-explorer'] {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
@@ -135,7 +135,7 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
   border-width: 0;
 }
 
-.shib-card-layout.shib-card-layout-fileexplorer
+.shib-card-layout-fileexplorer
   .workspace-split
   .workspace-leaf-content[data-type='file-explorer'] {
   background-color: var(--card-foreground-color);

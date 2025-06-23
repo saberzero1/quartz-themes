@@ -3,12 +3,12 @@
   margin-right: 0px;
 }
 
-.ultra-focus.classic-layout {
+.classic-layout {
   --workspace-background: var(--background-primary);
   --divider-width: 0px;
 }
 
-.ultra-focus.classic-layout .workspace-ribbon::before {
+.classic-layout .workspace-ribbon::before {
   background-color: var(--background-secondary) !important;
   border-bottom: 2px solid var(--background-secondary) !important;
 }

@@ -1,35 +1,35 @@
-.card-layout-pad-open.is-tablet .workspace-drawer {
+.is-tablet .workspace-drawer {
   padding-top: 0;
 }
 
-.card-layout-pad-open.is-tablet .workspace-drawer-ribbon {
+.is-tablet .workspace-drawer-ribbon {
   border-right: 1px solid var(--divider-color);
 }
 
-.card-layout-pad-open.is-tablet {
+.is-tablet {
   --titlebar-background: var(--background-underlying);
   --titlebar-background-focused: var(--background-underlying);
 }
 
-.card-layout-pad-open.is-tablet,
-.card-layout-pad-open.is-tablet .app-container,
-.card-layout-pad-open.is-tablet .workspace,
-.card-layout-pad-open.is-tablet .horizontal-main-container {
+.is-tablet,
+.is-tablet .app-container,
+.is-tablet .workspace,
+.is-tablet .horizontal-main-container {
   background-color: var(--background-underlying) !important;
 }
 
-.card-layout-pad-open.is-tablet .workspace {
+.is-tablet .workspace {
   gap: 16px;
   padding: 16px;
   padding-bottom: 24px;
   padding-top: 8px;
 }
 
-.card-layout-pad-open.is-tablet .app-container:has(.mobile-toolbar) .workspace {
+.is-tablet .app-container:has(.mobile-toolbar) .workspace {
   padding-bottom: 8px;
 }
 
-.card-layout-pad-open.is-tablet .workspace-drawer {
+.is-tablet .workspace-drawer {
   background-color: var(--background-primary);
   border-radius: var(--card-border-radius-light, 8px) !important;
   overflow: hidden !important;
@@ -38,7 +38,7 @@
   margin-top: 32px;
 }
 
-.card-layout-pad-open.is-tablet .workspace-split.mod-root {
+.is-tablet .workspace-split.mod-root {
   border-radius: var(--card-border-radius-light, 8px) !important;
   overflow: hidden !important;
   background-color: var(--background-primary) !important;
@@ -48,7 +48,7 @@
     0 0 0 1px var(--background-modifier-border);
 }
 
-.card-layout-pad-open.is-tablet .workspace-drawer.is-pinned {
+.is-tablet .workspace-drawer.is-pinned {
   border-right: none;
   border-left: none;
   border-radius: var(--card-border-radius-light, 8px) !important;
@@ -59,6 +59,6 @@
     0 0 0 1px var(--background-modifier-border);
 }
 
-.card-layout-pad-open.is-tablet .workspace-drawer-inner {
+.is-tablet .workspace-drawer-inner {
   padding-top: 8px;
 }

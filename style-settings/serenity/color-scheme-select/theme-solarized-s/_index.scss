@@ -25,17 +25,7 @@
   --color-pink: #d33682;
   --text-base: 30%;
 }
-.theme-dar.low-contrast-dark {
-  --base-c: 15%;
-}
-.theme-dar.low-contrast-dark,
-.theme-dar.medium-contrast-dark {
-  --color-red: #d86866;
-  --accent-h: 18 !important;
-  --accent-s: 80% !important;
-  --accent-l: 55% !important;
-}
-.theme-solarized-s.colorful-headings-s {
+.colorful-headings-s {
   --h1-color: var(--color-cyan);
   --h2-color: var(--color-cyan);
   --h3-color: var(--color-cyan);

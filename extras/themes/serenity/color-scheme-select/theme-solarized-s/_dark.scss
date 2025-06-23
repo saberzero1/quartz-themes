@@ -11,3 +11,15 @@
   --text-muted: rgb(85, 148, 165) !important;
   --text-faint: rgb(73, 133, 149) !important;
 }
+
+.low-contrast-dark {
+  --base-c: 15%;
+}
+
+.low-contrast-dark,
+.medium-contrast-dark {
+  --color-red: #d86866;
+  --accent-h: 18 !important;
+  --accent-s: 80% !important;
+  --accent-l: 55% !important;
+}

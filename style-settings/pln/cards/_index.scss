@@ -205,35 +205,35 @@ table.dataview thead > tr > th:hover {
   background-color: var(--background-modifier-hover);
 }
 -16-9,
-.lis-16-9 {
+.list-16-9 {
   --aspect-ratio: 16/9;
 }
 -1-1,
-.lis-1-1 {
+.list-1-1 {
   --aspect-ratio: 1/1;
 }
 -2-1,
-.lis-2-1 {
+.list-2-1 {
   --aspect-ratio: 2/1;
 }
 -2-3,
-.lis-2-3 {
+.list-2-3 {
   --aspect-ratio: 2/3;
 }
 -cols-1,
-.lis-cols-1 {
+.list-cols-1 {
   --columns: repeat(1, minmax(0, 1fr));
 }
 -cols-2,
-.lis-cols-2 {
+.list-cols-2 {
   --columns: repeat(2, minmax(0, 1fr));
 }
 -cover,
-.lis-cover {
+.list-cover {
   --image-fit: cover;
 }
 -align-bottom table.dataview tbody > tr > td:last-child,
-.lis-align-bottom table.dataview tbody > tr > td:last-child {
+.list-align-bottom table.dataview tbody > tr > td:last-child {
   margin-top: auto;
 }
 table.dataview tbody > tr > td:not(:first-child) {

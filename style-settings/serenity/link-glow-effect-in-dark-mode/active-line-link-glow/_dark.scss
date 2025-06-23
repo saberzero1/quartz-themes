@@ -1,8 +1,6 @@
-.active-line-link-glow.theme-dark:not(:has(.active-sentence))
-  .cm-active
-  .cm-hmd-internal-link,
-.active-line-link-glow.theme-dark .cm-hmd-internal-link:has(.active-sentence),
-.active-line-link-glow.theme-dark .cm-hmd-internal-link:hover {
+.theme-dark:not(:has(.active-sentence)) .cm-active .cm-hmd-internal-link,
+.theme-dark .cm-hmd-internal-link:has(.active-sentence),
+.theme-dark .cm-hmd-internal-link:hover {
   --link-color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
   color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
   text-shadow:

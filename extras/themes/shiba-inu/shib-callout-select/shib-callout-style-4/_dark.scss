@@ -1,28 +1,28 @@
-.shib-callout-toggl.shib-callout-toggl.theme-dark .callout {
+.shib-callout-toggle.shib-callout-toggle.theme-dark .callout {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.shib-callout-toggl.theme-dark .callout-title {
+.shib-callout-toggle.theme-dark .callout-title {
   background: rgba(var(--callout-color), 0.2);
 }
 
-.shib-callout-toggl.theme-dark .callout-title .callout-icon {
+.shib-callout-toggle.theme-dark .callout-title .callout-icon {
   border-radius: 10px;
   filter: brightness(1);
 }
 
-.shib-callout-toggl.theme-dark
+.shib-callout-toggle.theme-dark
   .callout.is-collapsed:not(.is-collapsed)
   .callout-title {
   padding: 0;
   box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.175) inset;
 }
 
-.shib-callout-toggl.theme-dark .callout-fold {
+.shib-callout-toggle.theme-dark .callout-fold {
   filter: brightness(1);
 }
 
-.shib-callout-toggl.theme-dark .callout-content {
+.shib-callout-toggle.theme-dark .callout-content {
   padding: var(--size-4-4);
   background: var(--color-d-black);
   box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.175) inset;

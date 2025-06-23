@@ -1,4 +1,4 @@
-.colorscheme-everforest.theme-light {
+.theme-light {
   --bg-hue: 43;
   --bg-sat: 57%;
   --bg-val: 89%;
@@ -10,7 +10,7 @@
   --hover-accent: #f57b24;
   --link-unresolved-color: #e0a100;
 }
-.colorscheme-everforest.theme-light ::selection {
+.theme-light ::selection {
   color: #fff;
   background-color: #8da201;
 }

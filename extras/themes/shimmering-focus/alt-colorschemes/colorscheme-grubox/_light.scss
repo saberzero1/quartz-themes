@@ -1,4 +1,4 @@
-.colorscheme-grubox.theme-light {
+.theme-light {
   --color-red: #9e0005;
   --color-green: #77710e;
   --color-yellow: #b37614;
@@ -46,7 +46,7 @@
   --link-unresolved-color: var(--color-cyan);
 }
 
-.colorscheme-grubox.theme-light ::selection {
+.theme-light ::selection {
   background-color: var(--color-base-40);
   color: var(--color-base-100);
 }

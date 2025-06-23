@@ -3,15 +3,13 @@
   --tab-radius: 0px;
 }
 
-.sidebar-tabs-plain-square.labeled-nav
-  .mod-left-split
-  .workspace-tabs:not(.mod-top),
+.labeled-nav .mod-left-split .workspace-tabs:not(.mod-top),
 .sidebar-tabs-plain-square:not(.labeled-nav) .mod-left-split {
   --tab-background-active: var(--background-secondary);
 }
 
 .sidebar-tabs-plain-square .mod-right-split .workspace-tab-header-container,
-.sidebar-tabs-plain-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container,
@@ -24,7 +22,7 @@
 .sidebar-tabs-plain-square
   .mod-right-split
   .workspace-tab-header-container-inner,
-.sidebar-tabs-plain-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container-inner,
@@ -38,7 +36,7 @@
 }
 
 .sidebar-tabs-plain-square .mod-right-split .workspace-tab-header,
-.sidebar-tabs-plain-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header,
@@ -51,7 +49,7 @@
 }
 
 .sidebar-tabs-plain-square .mod-right-split .workspace-tab-header.is-active,
-.sidebar-tabs-plain-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header.is-active,

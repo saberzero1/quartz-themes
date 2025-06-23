@@ -24726,7 +24726,7 @@ settings:
     width: 100%;
     height: 100%;
     position: absolute;
-    content: "";
+    content: '';
     background: url("https://media0.giphy.com/media/5vidmSHUsyoybSYNN0/giphy.gif?cid=ecf05e47x9zpzexjmpwcmczcrejccexj37mmfan5zwptjn3r&ep=v1_gifs_related&rid=giphy.gif&ct=g");
     background-size: cover;
     background-color: var(--color-accent);

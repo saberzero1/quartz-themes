@@ -1,0 +1,13 @@
+body:not(.is-mobile).largeSettingsButtons {
+  --toggle-thumb-radius: 4px;
+  --toggle-thumb-height: 36px;
+  --toggle-thumb-width: 36px;
+  --toggle-width: 80px;
+  --toggle-radius: 4px;
+}
+
+body:not(.is-mobile).largeSettingsButtons .modal.mod-settings .clickable-icon {
+  background-color: var(--level1_a);
+  min-height: 40px;
+  width: 40px;
+}

@@ -1,4 +1,4 @@
-.colorscheme-grubox.theme-dark {
+.theme-dark {
   --color-red: #f84935;
   --color-green: #b8ba26;
   --color-yellow: #fabd2e;
@@ -68,10 +68,10 @@
   --hover-accent: #d85f0e;
   --link-unresolved-color: var(--color-cyan);
 }
-.colorscheme-grubox.theme-dark ::selection {
+.theme-dark ::selection {
   background-color: var(--color-base-20);
   color: var(--color-base-100);
 }
-.colorscheme-grubox.theme-dark :is(.nav-file-title, .nav-folder-title) {
+.theme-dark :is(.nav-file-title, .nav-folder-title) {
   color: var(--color-base-85);
 }

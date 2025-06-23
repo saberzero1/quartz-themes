@@ -1,7 +1,7 @@
-.custom-color-scheme-dark.theme-dark,
-.custom-color-scheme-dark.medium-contrast-dark.theme-dark,
-.custom-color-scheme-dark.low-contrast-dark.theme-dark,
-.custom-color-scheme-dark.high-contrast-dark.theme-dark {
+.theme-dark,
+.medium-contrast-dark.theme-dark,
+.low-contrast-dark.theme-dark,
+.high-contrast-dark.theme-dark {
   --theme-tint: var(--custom-theme-tint-text-d) !important;
   --theme-sat: var(--custom-theme-sat-text-d);
   --theme-tint-secondary: var(--custom-theme-tint-secondary-d) !important;

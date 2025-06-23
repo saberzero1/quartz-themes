@@ -1,13 +1,3 @@
-.callout[data-callout='letter'] :is(.callout-content) {
-  background-color: color-mix(
-    in srgb,
-    rgb(var(--callout-color)),
-    var(--workleaves-background) 92%
-  );
-  background-image: var(--paper-texture);
-  background-size: 500px;
-  background-blend-mode: multiply;
-}
 .workspace-leaf-content[data-type='file-explorer']::before {
   content: '';
   position: absolute;

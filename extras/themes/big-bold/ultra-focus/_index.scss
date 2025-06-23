@@ -48,7 +48,7 @@ body.ultra-focus:not(.is-mobile)
   opacity: 1;
 }
 
-.ultra-focus.highlight-active-line .cm-contentContainer .cm-line,
-.ultra-focus.highlight-active-line .cm-contentContainer img {
+.highlight-active-line .cm-contentContainer .cm-line,
+.highlight-active-line .cm-contentContainer img {
   opacity: 0.6;
 }

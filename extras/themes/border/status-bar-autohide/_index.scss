@@ -54,3 +54,30 @@ body:not(.is-mobile).tab-autohide.status-bar-autohide:has(.status-bar:hover)
     height var(--anim-in),
     opacity var(--anim-in);
 }
+
+body:not(.is-mobile).status-bar-autohide .status-bar {
+  opacity: 0;
+  height: 16px;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+
+body:not(.is-mobile).status-bar-autohide .status-bar:hover {
+  opacity: 1;
+  height: 24px;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+
+body:not(.is-mobile).status-bar-autohide .horizontal-main-container {
+  padding-bottom: 16px;
+  transition: padding-bottom var(--anim-out);
+}
+
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .horizontal-main-container {
+  padding-bottom: 24px;
+  transition: padding-bottom var(--anim-in);
+}

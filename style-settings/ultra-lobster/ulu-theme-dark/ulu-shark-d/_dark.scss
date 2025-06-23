@@ -1,4 +1,4 @@
-.ulu-shark-d.theme-dark {
+.theme-dark {
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
@@ -62,14 +62,11 @@ var(--accent-l);
 --h1-color: #45CEF7;
 --h2-color: #F745BF; */
 }
-.ulu-shark-d.theme-dark
-  .mod-root
-  .workspace-tabs
-  .workspace-leaf:not(.is-mobile),
-.ulu-shark-d.theme-dark .modal:not(.is-mobile) {
+.theme-dark .mod-root .workspace-tabs .workspace-leaf:not(.is-mobile),
+.theme-dark .modal:not(.is-mobile) {
   border: 1px solid #3f3a45 !important;
 }
-.ulu-shark-d.ulu-prop-card
+.ulu-prop-card
   .markdown-source-view.is-live-preview.show-properties
   .metadata-container {
   display: var(--metadata-display-editing);

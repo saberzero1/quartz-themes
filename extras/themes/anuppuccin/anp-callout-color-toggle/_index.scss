@@ -53,7 +53,6 @@
   --callout-color: var(--ctp-surface2);
 }
 
-.anp-callout-color-toggle.anuppuccin-accent-toggle
-  .callout[data-callout='note'] {
+.anuppuccin-accent-toggle .callout[data-callout='note'] {
   --callout-color: var(--ctp-accent);
 }

@@ -28888,7 +28888,7 @@ pre.frontmatter.language-yaml:before {
 /*not word now*/
 /*
 img[src$="#tape"]::before {
-  content: "";
+  content: '';
   display: block;
   width: 100px;
   height: 30px;
@@ -28941,7 +28941,7 @@ div[src$="#pin"] {
 }
 
 div[src$="#pin"]::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 5px;
   height: 5px;
@@ -28983,7 +28983,7 @@ div[alt="-sbq"] {
 }
 
 div[alt="-sbq"]::after {
-  content: "";
+  content: '';
   display: block;
   height: 32px;
   width: 2px;
@@ -29223,7 +29223,7 @@ div {
           transform: rotate(2deg);
       }
       div[alt*="+tape"]::before {
-          content: "";
+          content: '';
           display: block;
           position: relative;
           margin: auto;
@@ -29270,7 +29270,7 @@ div {
           -ms-transform: rotate(0deg);
           transform: rotate(2deg);}
       div[alt*="+pin"]::before {
-          content: "";
+          content: '';
           position: absolute;
           width: 5px;
           height: 5px;

@@ -8,17 +8,3 @@ body.mod-root-split-background-transparent-dark
   .setting-item[data-id='background-mod-root-CSS-backdrop-filter-dark'] {
   display: none;
 }
-
-body.theme-dar.card-layout-open-dark {
-  --background-mod-root-split: transparent !important;
-}
-
-body.theme-dar.card-layout-open-dark.tab-autohide
-  .mod-root
-  .workspace-tabs:not(.mod-top)
-  .workspace-tab-container
-  > .workspace-leaf {
-  box-shadow: inset 0px 1px 0px var(--divider-color);
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}

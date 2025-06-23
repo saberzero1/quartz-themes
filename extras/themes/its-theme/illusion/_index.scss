@@ -1,14 +1,14 @@
-.illusion.illusion
+.illusion
   .callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='left'] {
   margin-left: -30px;
 }
 
-.illusion.illusion
+.illusion
   .callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='right'] {
   margin-right: -30px;
 }
 
-.illusion.illusion .callout[data-callout~='infobox'] [data-heading] {
+.illusion .callout[data-callout~='infobox'] [data-heading] {
   --illusion-box-shadow: none;
   --header-shadow: var(--illusion-box-shadow);
   --h1-shadow: var(--header-shadow);
@@ -19,15 +19,15 @@
   --h6-shadow: var(--header-shadow);
 }
 
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading],
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header),
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading],
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header) {
   --h1-background: var(--illusion-h1-background);
   --h2-background: var(--illusion-h2-background);
@@ -72,32 +72,32 @@
   display: flow-root;
 }
 
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   [class*='cm-formatting'],
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   .cm-foldPlaceholder,
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   [class*='cm-formatting'],
-.illusion.illusion
+.illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder,
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   [class*='cm-formatting'],
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   .cm-foldPlaceholder,
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   [class*='cm-formatting'],
-.illusion.illusion:is(.markdown-preview-view, .is-live-preview)
+.illusion:is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder {
   color: var(--illusion-header-text);

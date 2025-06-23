@@ -235,20 +235,6 @@
   .callout-content {
   border: none;
 }
-:is(body.fas-h1-stroke:where(), :where() .h1-stroke)
-  .callout[data-callout='infobox']
-  h1 {
-  display: block;
-}
-:is(body.fas-h1-stroke:where(), :where() .h1-stroke)
-  .callout[data-callout='infobox']
-  h1::before,
-:is(body.fas-h1-stroke:where(), :where() .h1-stroke)
-  .callout[data-callout='infobox']
-  h1::after {
-  background: none;
-  height: unset;
-}
 :where() .callout[data-callout='infobox'] .callout[data-callout='footer'] {
   --callout-blend-mode: normal;
   background: color-mix(

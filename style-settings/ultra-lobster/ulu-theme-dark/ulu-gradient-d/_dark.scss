@@ -1,4 +1,4 @@
-.ulu-gradient-d.theme-dark {
+.theme-dark {
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
@@ -47,6 +47,6 @@
   ) !important;
   --background-modifier-border-alt: #40916c !important;
 }
-.ulu-gradient-d.theme-dark .modal:not(.is-mobile) {
+.theme-dark .modal:not(.is-mobile) {
   background: var(--gradient-bg-secondary) !important;
 }

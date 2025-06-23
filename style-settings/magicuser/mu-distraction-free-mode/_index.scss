@@ -25,10 +25,6 @@ body.is-mobile .workspace-tab-header-container,
 body.is-mobile .mobile-navbar {
   display: none;
 }
-body:not(.is-mobile, , .mu-total-concentration-mode).mu-cards-interface
-  .workspace-tab-container {
-  margin-bottom: 16px;
-}
 body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
   border-radius: 8px;
   margin-left: 8px;

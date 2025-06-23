@@ -1,4 +1,4 @@
-.list-bullet-color.list-bullet-color {
+.list-bullet-color {
   --list-bullet-color-1: var(--rainbow-1);
   --list-bullet-color-2: var(--rainbow-2);
   --list-bullet-color-3: var(--rainbow-3);
@@ -7,115 +7,76 @@
   --list-bullet-color-6: var(--rainbow-6);
 }
 
-.list-bullet-color.list-bullet-color :is(ul, ol) li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-1
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul, ol) li::before,
+.list-bullet-color .HyperMD-list-line-1 .cm-formatting-list::before {
   color: var(--list-bullet-color-1);
 }
 
-.list-bullet-color.list-bullet-color :is(ul ul, ol ol) li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-2
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul ul, ol ol) li::before,
+.list-bullet-color .HyperMD-list-line-2 .cm-formatting-list::before {
   color: var(--list-bullet-color-2);
 }
 
-.list-bullet-color.list-bullet-color :is(ul ul ul, ol ol ol) li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-3
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul ul ul, ol ol ol) li::before,
+.list-bullet-color .HyperMD-list-line-3 .cm-formatting-list::before {
   color: var(--list-bullet-color-3);
 }
 
-.list-bullet-color.list-bullet-color :is(ul ul ul ul, ol ol ol ol) li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-4
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul ul ul ul, ol ol ol ol) li::before,
+.list-bullet-color .HyperMD-list-line-4 .cm-formatting-list::before {
   color: var(--list-bullet-color-4);
 }
 
-.list-bullet-color.list-bullet-color
-  :is(ul ul ul ul ul, ol ol ol ol ol)
-  li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-5
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul ul ul ul ul, ol ol ol ol ol) li::before,
+.list-bullet-color .HyperMD-list-line-5 .cm-formatting-list::before {
   color: var(--list-bullet-color-5);
 }
 
-.list-bullet-color.list-bullet-color
-  :is(ul ul ul ul ul ul, ol ol ol ol ol ol)
-  li::before,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-6
-  .cm-formatting-list::before {
+.list-bullet-color :is(ul ul ul ul ul ul, ol ol ol ol ol ol) li::before,
+.list-bullet-color .HyperMD-list-line-6 .cm-formatting-list::before {
   color: var(--list-bullet-color-6);
 }
 
-.list-bullet-color.list-bullet-color :is(ul, ol) li .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-1
-  .task-list-item-checkbox {
+.list-bullet-color :is(ul, ol) li .task-list-item-checkbox,
+.list-bullet-color .HyperMD-list-line-1 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-1);
 }
 
-.list-bullet-color.list-bullet-color
-  :is(ul ul, ol ol)
-  li
-  .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-2
-  .task-list-item-checkbox {
+.list-bullet-color :is(ul ul, ol ol) li .task-list-item-checkbox,
+.list-bullet-color .HyperMD-list-line-2 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-2);
 }
 
-.list-bullet-color.list-bullet-color
-  :is(ul ul ul, ol ol ol)
-  li
-  .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-3
-  .task-list-item-checkbox {
+.list-bullet-color :is(ul ul ul, ol ol ol) li .task-list-item-checkbox,
+.list-bullet-color .HyperMD-list-line-3 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-3);
 }
 
-.list-bullet-color.list-bullet-color
-  :is(ul ul ul ul, ol ol ol ol)
-  li
-  .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-4
-  .task-list-item-checkbox {
+.list-bullet-color :is(ul ul ul ul, ol ol ol ol) li .task-list-item-checkbox,
+.list-bullet-color .HyperMD-list-line-4 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-4);
 }
 
-.list-bullet-color.list-bullet-color
+.list-bullet-color
   :is(ul ul ul ul ul, ol ol ol ol ol)
   li
   .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-5
-  .task-list-item-checkbox {
+.list-bullet-color .HyperMD-list-line-5 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-5);
 }
 
-.list-bullet-color.list-bullet-color
+.list-bullet-color
   :is(ul ul ul ul ul ul, ol ol ol ol ol ol)
   li
   .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-6
-  .task-list-item-checkbox {
+.list-bullet-color .HyperMD-list-line-6 .task-list-item-checkbox {
   --checkbox-border-color: var(--rainbow-6);
 }
 
-.list-bullet-color.list-bullet-color
+.list-bullet-color
   :is(ul ul ul ul ul ul ul, ol ol ol ol ol ol ol)
   li
   .task-list-item-checkbox,
-.list-bullet-color.list-bullet-color
-  .HyperMD-list-line-7
-  .task-list-item-checkbox {
+.list-bullet-color .HyperMD-list-line-7 .task-list-item-checkbox {
   --checkbox-border-color: var(--accent);
 }

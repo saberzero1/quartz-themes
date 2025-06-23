@@ -114,7 +114,7 @@ body.aura-card-layout:not(.aura-colorful-frame):not(
   border-width: 0;
 }
 
-.aura-card-layout.aura-card-layout-fileexplorer
+.aura-card-layout-fileexplorer
   .workspace-split
   .workspace-leaf-content[data-type='file-explorer'] {
   background-color: var(--card-background-color);

@@ -22,7 +22,7 @@ body
     hsl(var(--background-primary-hsl))
   );
 }
-bod-out
+body-out
   :is(.markdown-preview-view, .workspace-leaf-content[data-type='image'])
   img:not([class*='emoji'], .banner-image):active {
   position: fixed;

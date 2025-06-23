@@ -1,4 +1,4 @@
-.o-min-l.theme-light {
+.theme-light {
   color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
@@ -49,7 +49,8 @@
   background: var(--background-primary-alt);
   border-right: none !important;
 }
-:root:root:root:root:root.theme-light:not(.is-mobile)
+:root:root:root:root:root
+  .theme-light:not(.is-mobile)
   .workspace-sidedock-vault-profile {
   border-top: none !important;
   background: var(--background-secondary) !important;
@@ -57,10 +58,10 @@
   margin-bottom: 8px;
   width: 97.5%;
 }
-.o-min-l.theme-light .workspace-ribbon.mod-left .sidebar-toggle-button {
+.theme-light .workspace-ribbon.mod-left .sidebar-toggle-button {
   border-right: none !important;
 }
-.o-min-l.theme-light .nav-file-title.is-active {
+.theme-light .nav-file-title.is-active {
   background-color: transparent;
   border: none;
 }

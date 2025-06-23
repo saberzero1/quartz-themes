@@ -1,3 +1,24 @@
+body:not(.is-mobile).nav-header-autohide
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header
+  .nav-buttons-container {
+  height: 8px;
+  opacity: 0;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+
+body:not(.is-mobile).nav-header-autohide
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header:hover
+  .nav-buttons-container,
+body:not(.is-mobile).nav-header-autohide
+  .workspace-tab-header-container:hover
+  ~ .workspace-tab-container
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header
+  .nav-buttons-container,
 body:not(.is-mobile).tab-title-bar-autohide.nav-header-autohide
   .mod-root
   .workspace-leaf-content[data-type='backlink']
@@ -12,6 +33,29 @@ body:not(.is-mobile).tab-title-bar-autohide.nav-header-autohide
     opacity var(--anim-in);
 }
 
+body:not(.is-mobile).nav-header-autohide
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header
+  .search-input-container {
+  height: 0px;
+  opacity: 0;
+  margin: 0px auto 0px;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out),
+    margin var(--anim-out);
+}
+
+body:not(.is-mobile).nav-header-autohide
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header:hover
+  .search-input-container,
+body:not(.is-mobile).nav-header-autohide
+  .workspace-tab-header-container:hover
+  ~ .workspace-tab-container
+  :is(.workspace-leaf-content, .view-content)
+  > .nav-header
+  .search-input-container,
 body:not(.is-mobile).tab-title-bar-autohide.nav-header-autohide
   .mod-root
   .workspace-leaf-content[data-type='backlink']

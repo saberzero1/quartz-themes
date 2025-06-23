@@ -23,12 +23,11 @@
   margin: auto;
 }
 
-.ssopt-editor-vll.ssopt-editor-vll-title {
+.ssopt-editor-vll-title {
   /* added the class so that it can only work when the editor is using the variable line length setting */
 }
 
-.ssopt-editor-vll.ssopt-editor-vll-title
-  .workspace-leaf-content[data-type='markdown'] {
+.ssopt-editor-vll-title .workspace-leaf-content[data-type='markdown'] {
   /*
   max-width: var(--width-vll);
   margin: auto;
@@ -37,7 +36,7 @@
   /* does this work? */
 }
 
-.ssopt-editor-vll.ssopt-editor-vll-title
+.ssopt-editor-vll-title
   .workspace-leaf-content[data-type='markdown']
   div.view-header {
   box-sizing: border-box;

@@ -1,4 +1,4 @@
-.theme-celestial.colorful-headings {
+.colorful-headings {
   --h1-color: #8ac9de;
   --h2-color: #94d1e6;
   --h3-color: #abd0dc;
@@ -6,7 +6,7 @@
   --h5-color: #b2bccf;
   --h6-color: #b4b5dd;
 }
-.theme-celestial.theme-light {
+.theme-light {
   color-scheme: light;
   --font-default: 'Yu Gothic', 'Inter', sans-serif;
   --highlight-mix-blend-mode: darken;
@@ -45,7 +45,7 @@
   --color-base-100: rgb(155, 109, 87);
   --theme-decoration: '☀️';
 }
-.theme-celestial.theme-light .markdown-rendered hr,
-.theme-celestial.theme-light .markdown-source-view hr {
+.theme-light .markdown-rendered hr,
+.theme-light .markdown-source-view hr {
   font-family: 'Yu Gothic', 'Inter', sans-serif !important;
 }

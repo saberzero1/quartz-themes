@@ -26231,7 +26231,7 @@ input.document-replace-input.mod-no-match:hover {
 /* NOTE Root Folder Highlight */
 /* .nav-files-container > .tree-item.nav-folder.mod-root > .tree-item-children.nav-folder-children > .tree-item.nav-folder > .tree-item-self.nav-folder-title:hover:before{
     position: absolute;
-    content: "";
+    content: '';
     background-color: var(--nav-item-background-hover);
     left: -13px;
     top: 0px;
@@ -26241,7 +26241,7 @@ input.document-replace-input.mod-no-match:hover {
 /* NOTE Nested Folder Highlight */
 /* .nav-files-container .tree-item-self.nav-folder-title:hover:before{
     position: absolute;
-    content: "";
+    content: '';
     background-color: var(--nav-item-background-hover);
     left: -2px;
     top: 0px;
@@ -27740,7 +27740,7 @@ a.internal-link:hover {
 
 /* NOTE Header 1 Color */
 /* .markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link:after{
-    content: "";
+    content: '';
     background-image: linear-gradient(
         var(--custom-gradientDegree),
         var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-1-percent),

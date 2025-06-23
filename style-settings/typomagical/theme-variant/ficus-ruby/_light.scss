@@ -1,4 +1,4 @@
-bod.theme-light {
+body.theme-light {
   --background-primary: #f5f5f5;
   --background-primary-alt: hsl(180, 13%, 86%);
   --background-secondary: #b0c6c2;
@@ -41,23 +41,23 @@ bod.theme-light {
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
   --highlight-mix-blend-mode: darken;
 }
-bod.theme-light .is-selected kbd {
+body.theme-light .is-selected kbd {
   background-color: var(--background-secondary-alt);
 }
-bod.theme-light .view-header {
+body.theme-light .view-header {
   border-top: 1px solid var(--background-primary-alt);
   border-bottom: 2px solid var(--background-primary-alt);
   background-color: var(--background-primary-alt);
 }
-bod.theme-light .workspace-ribbon.mod-right.is-collapsed {
+body.theme-light .workspace-ribbon.mod-right.is-collapsed {
   border-left-color: var(--background-secondary-alt);
 }
-bod.theme-light .workspace-ribbon {
+body.theme-light .workspace-ribbon {
   border-left: 2px solid transparent;
 }
-bod.theme-light .status-bar {
+body.theme-light .status-bar {
   border-top: 2px solid var(--background-secondary-alt);
 }
-bod.theme-light .view-action {
+body.theme-light .view-action {
   color: var(--text-muted);
 }

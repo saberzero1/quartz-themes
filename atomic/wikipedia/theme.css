@@ -24947,7 +24947,7 @@ body {
 }
 
 .nav-folder.mod-root > .nav-folder-title::before {
-  content: "";
+  content: '';
     display: block;
     background: center / contain no-repeat var(--vault-img);
     width: 30px;

@@ -1,57 +1,3 @@
-.theme-dar.headers-low {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-base-5);
-  --color-text-h2: var(--color-base-5);
-  --color-text-h3: var(--color-base-5);
-  --color-text-h4: var(--color-base-5);
-  --color-text-h5: var(--color-base-5);
-  --color-text-h6: var(--color-base-5);
-}
-.theme-dar.headers-default {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-base-5);
-  --color-text-h2: var(--color-base-5);
-  --color-text-h3: var(--color-green);
-  --color-text-h4: var(--color-green);
-  --color-text-h5: var(--color-green);
-  --color-text-h6: var(--color-green);
-}
-.theme-dar.headers-high {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-red);
-  --color-text-h2: var(--color-orange);
-  --color-text-h3: var(--color-yellow);
-  --color-text-h4: var(--color-green);
-  --color-text-h5: var(--color-purple);
-  --color-text-h6: var(--color-pink);
-}
-.theme-ligh.headers-low {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-base-5);
-  --color-text-h2: var(--color-base-5);
-  --color-text-h3: var(--color-base-5);
-  --color-text-h4: var(--color-base-5);
-  --color-text-h5: var(--color-base-5);
-  --color-text-h6: var(--color-base-5);
-}
-.theme-ligh.headers-default {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-base-5);
-  --color-text-h2: var(--color-base-5);
-  --color-text-h3: var(--color-blue);
-  --color-text-h4: var(--color-blue);
-  --color-text-h5: var(--color-blue);
-  --color-text-h6: var(--color-blue);
-}
-.theme-ligh.headers-high {
-  --color-text-title: var(--color-base-5);
-  --color-text-h1: var(--color-green);
-  --color-text-h2: var(--color-teal);
-  --color-text-h3: var(--color-blue);
-  --color-text-h4: var(--color-pink);
-  --color-text-h5: var(--color-purple);
-  --color-text-h6: var(--color-orange);
-}
 .style-solar .prompt {
   background-color: hsl(var(--color-base-0));
 }
@@ -82,7 +28,7 @@
   background-color: hsl(var(--color-base-2));
 }
 .style-solar button,
-.style-solar.clickable-icon {
+.clickable-icon {
   color: hsl(var(--color-interactable));
   background-color: hsl(var(--color-base-2));
 }

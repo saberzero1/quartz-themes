@@ -1,4 +1,4 @@
-.titlebar-colors.titlebar-colors.titlebar-colors {
+.titlebar-colors {
   --titlebar-text-color: var(--inactive);
   --titlebar-text-color-focused: var(--text-dl);
   --titlebar-background: var(--dark-accent);
@@ -14,27 +14,24 @@
   --tab-divider-color: var(--td);
 }
 
-.titlebar-colors.titlebar-colors.titlebar-colors
-  .workspace-tab-header.is-active {
+.titlebar-colors .workspace-tab-header.is-active {
   --sidebar-tab-color-hover: var(--text);
   --sidebar-icon-color: var(--text);
 }
 
-.titlebar-colors.titlebar-colors.titlebar-colors .sidebar-toggle-button,
-.titlebar-colors.titlebar-colors.titlebar-colors
-  .workspace-tabs.mod-top
-  .workspace-tab-header-container,
-.titlebar-colors.titlebar-colors.titlebar-colors
+.titlebar-colors .sidebar-toggle-button,
+.titlebar-colors .workspace-tabs.mod-top .workspace-tab-header-container,
+.titlebar-colors
   .workspace-tab-header-container
   .workspace-tab-header-inner-icon {
   --sidebar-icon-color: var(--text-on-accent);
   --icon-color: var(--text-dl);
 }
 
-.titlebar-colors.titlebar-colors.titlebar-colors
+.titlebar-colors
   :is(.mod-left-split, .mod-right-split)
   .workspace-tab-header.is-active,
-.titlebar-colors.titlebar-colors.titlebar-colors
+.titlebar-colors
   :is(.mod-left-split, .mod-right-split)
   .workspace-tab-header
   .workspace-tab-header-inner-icon {

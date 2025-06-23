@@ -25895,7 +25895,7 @@ button:focus:after {
 }
 
 .workspace-leaf.mod-active:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -1px;
@@ -25906,7 +25906,7 @@ button:focus:after {
 }
 
 .workspace-leaf.mod-active .view-header:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0px;

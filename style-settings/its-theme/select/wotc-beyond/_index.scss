@@ -18,14 +18,10 @@ body.wotc-beyond .publish-renderer,
 body.wotc-beyond .graph-view-container {
   box-shadow: var(--paper-edges-m);
 }
-body:not(.wotc-beyond)
-  .wotc-beyond:is(.markdown-source-view, .markdown-preview-view) {
-  box-shadow: var(--paper-edges);
-}
 .wotc-beyond .cm-line.hr {
   bottom: -10px;
 }
-.wotc-beyond.markdown-rendered hr::after,
+.markdown-rendered hr::after,
 .wotc-beyond .markdown-rendered hr::after,
 .wotc-beyond .cm-line:not(.cm-active) hr {
   content: '';

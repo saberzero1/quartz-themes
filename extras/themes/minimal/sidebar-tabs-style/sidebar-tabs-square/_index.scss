@@ -3,13 +3,13 @@
   --tab-radius: 0px;
 }
 
-.sidebar-tabs-square.labeled-nav .mod-left-split .workspace-tabs:not(.mod-top),
+.labeled-nav .mod-left-split .workspace-tabs:not(.mod-top),
 .sidebar-tabs-square:not(.labeled-nav) .mod-left-split {
   --tab-background-active: var(--background-secondary);
 }
 
 .sidebar-tabs-square .mod-right-split .workspace-tab-header-container-inner,
-.sidebar-tabs-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container-inner,
@@ -22,7 +22,7 @@
 }
 
 .sidebar-tabs-square .mod-right-split .workspace-tab-header,
-.sidebar-tabs-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header,
@@ -33,7 +33,7 @@
 }
 
 .sidebar-tabs-square .mod-right-split .workspace-tab-header.is-active,
-.sidebar-tabs-square.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header.is-active,

@@ -1,7 +1,6 @@
 .serenity-mode:not(.serenity-src):not(.serenity-lp) .markdown-source-view,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .markdown-source-view,
-.serenity-mode.serenity-src:has(
+.serenity-lp:has([data-mode='source'] .is-live-preview) .markdown-source-view,
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   ) {
   --font-text-size: var(--serenity-mode-font-size) !important;
@@ -19,39 +18,34 @@
   .inline-title,
 .serenity-mode:not(.serenity-src):not(.serenity-lp):has([data-mode='source'])
   .mk-header.cm-line,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
+.serenity-lp:has([data-mode='source'] .is-live-preview)
   .workspace-tab-header-container,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .workspace-ribbon,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .view-header,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .embedded-backlinks,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .inline-title,
-.serenity-mode.serenity-lp:has([data-mode='source'] .is-live-preview)
-  .mk-header.cm-line,
-.serenity-mode.serenity-src:has(
+.serenity-lp:has([data-mode='source'] .is-live-preview) .workspace-ribbon,
+.serenity-lp:has([data-mode='source'] .is-live-preview) .view-header,
+.serenity-lp:has([data-mode='source'] .is-live-preview) .embedded-backlinks,
+.serenity-lp:has([data-mode='source'] .is-live-preview) .inline-title,
+.serenity-lp:has([data-mode='source'] .is-live-preview) .mk-header.cm-line,
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .workspace-tab-header-container,
-.serenity-mode.serenity-src:has(
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .workspace-ribbon,
-.serenity-mode.serenity-src:has(
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .view-header,
-.serenity-mode.serenity-src:has(
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .embedded-backlinks,
-.serenity-mode.serenity-src:has(
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .inline-title,
-.serenity-mode.serenity-src:has(
+.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   )
   .mk-header.cm-line {

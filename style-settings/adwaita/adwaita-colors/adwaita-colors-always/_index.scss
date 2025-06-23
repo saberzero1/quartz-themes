@@ -4,8 +4,8 @@ body-always {
   --titlebar-text-color-focused: var(--adwaita-headerbar-fg-color);
   --text-normal: var(--adwaita-view-fg-color);
 }
-bod.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
-bod.is-focused .sidebar-toggle-button {
+body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+body.is-focused .sidebar-toggle-button {
   --icon-color: var(--adwaita-headerbar-fg-color);
   --icon-color-hover: var(--adwaita-headerbar-fg-color);
   --icon-color-focused: var(--adwaita-headerbar-fg-color);

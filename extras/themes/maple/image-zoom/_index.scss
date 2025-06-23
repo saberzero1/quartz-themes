@@ -24,7 +24,7 @@ body.image-zoom
   );
 }
 
-bod.image-zoom-out
+body.image-zoom-out
   :is(.markdown-preview-view, .workspace-leaf-content[data-type='image'])
   img:not([class*='emoji'], .banner-image):active {
   position: fixed;

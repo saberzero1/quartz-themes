@@ -1,33 +1,33 @@
-bod.mod-linux {
+body.mod-linux {
   --tab-radius-active: 4px;
 }
 
-bod.mod-linux:not(.adwaita-tabs-short) {
+body.mod-linux:not(.adwaita-tabs-short) {
   --tab-width: 10000px;
   /* infinite width */
   --tab-max-width: none;
 }
 
-bod.mod-linux
+body.mod-linux
   .workspace-tab-header-container
   .workspace-tab-header-container-inner {
   --tab-outline-width: 0;
 }
 
-bod.mod-linux .workspace-tab-header-container .workspace-tab-header-new-tab {
+body.mod-linux .workspace-tab-header-container .workspace-tab-header-new-tab {
   margin-right: var(--size-4-1);
 }
 
-bod.mod-linux .workspace-tab-header-new-tab {
+body.mod-linux .workspace-tab-header-new-tab {
   order: 1;
 }
 
-bod.mod-linux .workspace-tab-header-tab-list,
-bod.mod-linux .sidebar-toggle-button.mod-right {
+body.mod-linux .workspace-tab-header-tab-list,
+body.mod-linux .sidebar-toggle-button.mod-right {
   order: 2;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header {
@@ -35,25 +35,25 @@ bod.mod-linux
   margin: 5px 3px 5px 2px;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active {
   color: var(--tab-text-color-focused);
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header:before,
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header:after {
   content: none;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header
@@ -61,7 +61,7 @@ bod.mod-linux
   right: -6px;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header
@@ -70,7 +70,7 @@ bod.mod-linux
   text-align: center;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header:last-child
@@ -78,7 +78,7 @@ bod.mod-linux
   content: none;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header
@@ -87,12 +87,12 @@ bod.mod-linux
   display: flex;
 }
 
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-close-button,
-bod.mod-linux
+body.mod-linux
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header

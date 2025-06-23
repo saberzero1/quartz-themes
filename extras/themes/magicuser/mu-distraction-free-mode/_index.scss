@@ -34,15 +34,6 @@ body.is-mobile.mu-distraction-free-mode .mobile-navbar {
   display: none;
 }
 
-body:not(
-    .is-mobile,
-    .mu-distraction-free-mode,
-    .mu-total-concentration-mode
-  ).mu-cards-interface
-  .workspace-tab-container {
-  margin-bottom: 16px;
-}
-
 body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode
   .workspace-tab-container {
   border-radius: 8px;

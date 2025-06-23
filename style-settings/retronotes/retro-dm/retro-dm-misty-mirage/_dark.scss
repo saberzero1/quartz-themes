@@ -1,4 +1,4 @@
--misty-mirage.theme-dark {
+.theme-dark {
   /* Base Color */
   --color-base-00: #3b3149;
   --color-base-05: #443955;
@@ -36,31 +36,31 @@
   --link-color: #d2b5f0;
   --link-unresolved-color: #d2c3e2;
 }
--misty-mirage.theme-dark .vertical-tab-header {
+.theme-dark .vertical-tab-header {
   background-color: var(--color-base-20);
   --interactive-accent: var(--color-base-60);
   --background-modifier-hover: var(--color-base-70);
 }
--misty-mirage.theme-dark .setting-hotkey {
+.theme-dark .setting-hotkey {
   background-color: var(--color-base-35);
 }
--misty-mirage.theme-dark .modal-sidebar {
+.theme-dark .modal-sidebar {
   background-color: var(--color-base-00);
 }
--misty-mirage.theme-dark .menu {
+.theme-dark .menu {
   background-color: var(--color-base-20);
   --background-modifier-hover: var(--color-base-50);
 }
-.is-mobil.theme-dark .workspace-drawer-header-name-text {
+.is-mobile.theme-dark .workspace-drawer-header-name-text {
   color: var(--color-base-00);
 }
-.is-mobil.theme-dark .workspace-drawer-header-info {
+.is-mobile.theme-dark .workspace-drawer-header-info {
   color: var(--color-base-30);
 }
--misty-mirage.theme-dark .mobile-navbar-actions .clickable-icon {
+.theme-dark .mobile-navbar-actions .clickable-icon {
   --icon-color: var(--color-base-100);
 }
--misty-mirage.theme-dark .container.svelte-pcimu8 {
+.theme-dark .container.svelte-pcimu8 {
   --color-text-today: var(--color-base-05);
   --color-text-day: var(--color-base-00);
   --color-text-heading: var(--color-base-40);
@@ -70,9 +70,9 @@
   --color-button: var(--color-base-30);
   --color-dot: var(--color-base-40);
 }
--misty-mirage.theme-dark .reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
+.theme-dark .reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
   color: var(--color-base-50);
 }
--misty-mirage.theme-dark .year.svelte-1vwr9dd.svelte-1vwr9dd {
+.theme-dark .year.svelte-1vwr9dd.svelte-1vwr9dd {
   color: var(--color-base-50);
 }

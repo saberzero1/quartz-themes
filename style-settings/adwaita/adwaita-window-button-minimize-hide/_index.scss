@@ -32,7 +32,7 @@ body:not(
     .adwaita-mod-always,
     .adwaita-mod-linux-only,
     .adwaita-mod-never
-  ).mod-linu.adwaita-window-button-maximize-hide:not(
+  ).mod-linux.adwaita-window-button-maximize-hide:not(
     .adwaita-window-button-close-hide
   ),
 body:not(
@@ -42,13 +42,13 @@ body:not(
   ).mod-linux.adwaita-window-button-close-hide:not(
     .adwaita-window-button-maximize-hide
   ),
-body.adwaita-mod-alway.adwaita-window-button-maximize-hide:not(
+body.adwaita-mod-always.adwaita-window-button-maximize-hide:not(
     .adwaita-window-button-close-hide
   ),
 body.adwaita-mod-always.adwaita-window-button-close-hide:not(
     .adwaita-window-button-maximize-hide
   ),
-body.adwaita-mod-linux-only.mod-linu.adwaita-window-button-maximize-hide:not(
+body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide:not(
     .adwaita-window-button-close-hide
   ),
 body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-close-hide:not(
@@ -60,9 +60,9 @@ body:not(
     .adwaita-mod-always,
     .adwaita-mod-linux-only,
     .adwaita-mod-never
-  ).mod-linu.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
-body.adwaita-mod-alway.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
-body.adwaita-mod-linux-only.mod-linu.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
+  ).mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
+body.adwaita-mod-always.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide,
+body.adwaita-mod-linux-only.mod-linux.adwaita-window-button-maximize-hide.adwaita-window-button-close-hide {
   --frame-right-space: calc(
     var(--adwaita-mod-scale) * (120px - 38px - 38px - 38px)
   );

@@ -32,3 +32,29 @@ body.mod-root-split-background-transparent-dark.card-layout-open-dark.tab-autohi
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
 }
+
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-light).theme-light
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-dark).theme-dark
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf {
+  box-shadow: inset 0px 1px 0px transparent;
+  transition: box-shadow var(--anim-out);
+}
+
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-light).theme-light
+  :has(.workspace-tab-header-container:hover)
+  .workspace-tabs:not(.mod-top):hover
+  .workspace-tab-container
+  > .workspace-leaf,
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-dark).theme-dark
+  :has(.workspace-tab-header-container:hover)
+  .workspace-tabs:not(.mod-top):hover
+  .workspace-tab-container
+  > .workspace-leaf {
+  box-shadow: inset 0px 1px 0px var(--workspace-divider-color);
+  transition: box-shadow var(--anim-in);
+}

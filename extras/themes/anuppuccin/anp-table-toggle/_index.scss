@@ -217,17 +217,15 @@
   text-align: var(--anp-table-align-td, center);
 }
 
-.anp-table-toggle.anp-table-th-highlight
+.anp-table-th-highlight
   .markdown-preview-view:not(.cards):not(.table-disable)
   th,
-.anp-table-toggle.anp-table-th-highlight
+.anp-table-th-highlight
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   th,
-.anp-table-toggle.anp-table-th-highlight
-  .is-live-preview:not(.cards):not(.table-disable)
-  th,
-.anp-table-toggle.anp-table-th-highlight
+.anp-table-th-highlight .is-live-preview:not(.cards):not(.table-disable) th,
+.anp-table-th-highlight
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   th {
@@ -237,20 +235,20 @@
   );
 }
 
-.anp-table-toggle.anp-table-row-alt
+.anp-table-row-alt
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-row-alt
+.anp-table-row-alt
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-row-alt
+.anp-table-row-alt
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-row-alt
+.anp-table-row-alt
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
@@ -261,20 +259,20 @@
   );
 }
 
-.anp-table-toggle.anp-table-col-alt
+.anp-table-col-alt
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-col-alt
+.anp-table-col-alt
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-col-alt
+.anp-table-col-alt
   .is-live-preview:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-col-alt
+.anp-table-col-alt
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
@@ -285,17 +283,13 @@
   );
 }
 
-.anp-table-toggle.anp-table-full
-  .markdown-preview-view:not(.cards):not(.table-disable)
-  td,
-.anp-table-toggle.anp-table-full
+.anp-table-full .markdown-preview-view:not(.cards):not(.table-disable) td,
+.anp-table-full
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   td,
-.anp-table-toggle.anp-table-full
-  .is-live-preview:not(.cards):not(.table-disable)
-  td,
-.anp-table-toggle.anp-table-full
+.anp-table-full .is-live-preview:not(.cards):not(.table-disable) td,
+.anp-table-full
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   td {
@@ -305,38 +299,38 @@
   );
 }
 
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td,
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
@@ -347,20 +341,20 @@
   );
 }
 
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n),
-.anp-table-toggle.anp-table-checkered
+.anp-table-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)

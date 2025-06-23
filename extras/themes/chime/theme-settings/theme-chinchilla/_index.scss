@@ -20,7 +20,7 @@
   --color-pink: #a86384;
 }
 
-.theme-chinchilla.colorful-headings {
+.colorful-headings {
   --h1-color: rgb(115, 195, 195);
   --h2-color: rgb(145, 214, 214);
   --h3-color: rgb(149, 217, 209);
@@ -29,7 +29,7 @@
   --h6-color: rgb(188, 214, 201);
 }
 
-.theme-chinchilla.colorful-headings-alt {
+.colorful-headings-alt {
   --h1-color: var(--color-blue);
   --h2-color: var(--color-cyan);
   --h3-color: var(--color-green);
@@ -38,7 +38,7 @@
   --h6-color: var(--color-red);
 }
 
-.theme-chinchilla.colored-bold-and-italic {
+.colored-bold-and-italic {
   --bold-color: var(--color-blue);
   --italic-color: var(--color-purple);
 }

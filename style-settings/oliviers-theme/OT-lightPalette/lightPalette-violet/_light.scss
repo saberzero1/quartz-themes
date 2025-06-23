@@ -19,3 +19,51 @@
   --OT-table-header-background: #ddbdfa;
   --OT-table-background: #e8d6fc;
 }
+.accentColor-lightMode-shade {
+  --accent-h: 272 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  /*    --color-accent-1:                    #6E16C7    !important; */
+  --color-accent-2: #9835f1 !important;
+  --color-accent-3: #e9d4fc !important;
+  /*    --OT-color-on-accent-1:                #fff    !important; */
+  --OT-color-on-accent-2: var(--color-base-00);
+  --OT-color-muted-on-accent-1: #d9b4fa !important;
+  --OT-color-on-accent-3: #6d0ec3;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
+}
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 152 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  /*    --color-accent-1:                #15C0C0    !important; */
+  --color-accent-2: #35f198 !important;
+  --color-accent-3: #d4fce9 !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-muted-on-accent-1: #35f198 !important;
+  --OT-color-on-accent-2: var(--OT-color-on-base-20) !important;
+  --OT-color-on-accent-3: #076438 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 32 !important;
+  --accent-s: 87% !important;
+  --accent-l: 58% !important;
+  --color-accent-1: #ef8815 !important;
+  --color-accent-2: #f2a247 !important;
+  --color-accent-3: #fbe1c4 !important;
+  /*    --OT-color-on-accent-1:            #2F540A    !important; */
+  --OT-color-muted-on-accent-1: #94530a !important;
+  --OT-color-on-accent-2: #fdf1e4 !important;
+  --OT-color-on-accent-3: #c36d0e !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 77%);
+}
+.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #4B0B8B    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%234B0B8B" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

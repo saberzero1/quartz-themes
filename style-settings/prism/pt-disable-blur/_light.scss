@@ -1,3 +1,6 @@
+body:is(.theme-light, .theme-dark) {
+  --background-secondary-blur: var(--background-secondary);
+}
 body.pt-color-scheme-style-border-lt {
   --background-secondary-blur: var(--background-primary);
 }

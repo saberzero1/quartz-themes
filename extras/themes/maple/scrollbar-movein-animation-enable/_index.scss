@@ -1,0 +1,91 @@
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .workspace-leaf-content:not([data-type*='graph'], [data-type*='pdf'])
+      .view-content,
+    .search-result-container,
+    .git-view-body,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin),
+    .tag-container,
+    .backlink-pane,
+    .markdown-source-view .cm-scroller,
+    .markdown-preview-view,
+    .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+    .markdown-embed-content .markdown-rendered,
+    pre code,
+    .workspace-leaf-content[data-type='calendar'] .view-content,
+    .janitor-scan-results,
+    .excalidraw-wrapper
+      :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
+    .excalidraw-contextMenuContainer .popover,
+    .kanban-plugin__board,
+    .kanban-plugin__lane-items,
+    .kanban-plugin__autocomplete
+  ) {
+  transition: var(--scrollbar-color) var(--animation);
+}
+
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  :is(
+    .vertical-tab-header,
+    .vertical-tab-content,
+    .nav-files-container,
+    .workspace-leaf-content:not([data-type*='graph'], [data-type*='pdf'])
+      .view-content,
+    .search-result-container,
+    .git-view-body,
+    .suggestion-container .suggestion,
+    .prompt-results,
+    .community-modal-search-results-wrapper,
+    .community-modal-info,
+    .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin),
+    .tag-container,
+    .backlink-pane,
+    .markdown-source-view .cm-scroller,
+    .markdown-preview-view,
+    .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+    .markdown-embed-content .markdown-rendered,
+    pre code,
+    .workspace-leaf-content[data-type='calendar'] .view-content,
+    .janitor-scan-results,
+    .excalidraw-wrapper
+      :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
+    .excalidraw-contextMenuContainer .popover,
+    .kanban-plugin__board,
+    .kanban-plugin__lane-items,
+    .kanban-plugin__autocomplete
+  ):hover {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
+}
+
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea {
+  color: transparent;
+  transition: color var(--animation);
+  -webkit-text-fill-color: var(--text-normal);
+}
+
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea:hover {
+  color: hsla(var(--color-accent-hsl), 24%);
+}
+
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea
+  * {
+  -webkit-text-fill-color: initial;
+}
+
+body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
+  textarea::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 0 10px inset;
+  border-width: 3.2px;
+  background-clip: content-box;
+  background-color: transparent !important;
+}

@@ -10,11 +10,12 @@ body {
   --Obsidianbg: var(--bgimage);
   --CGworkspace-background-image: var(--Obsidianbg);
 }
-.obsidian-ap-image-custom {
+.obsidian-app-image-custom {
   --CGworkspace-background-image: var(--image-custom-option);
 }
 .workspace,
-.status-bar {
+.status-bar,
+body:not(.is-hidden-frameless) .titlebar-inner {
   background-color: var(--background-secondary);
   backdrop-filter: brightness(var(--brightness, 1.15)) blur(var(--blur, 15px))
     saturate(var(--saturation, 2)) contrast(var(--contrast, 100%));

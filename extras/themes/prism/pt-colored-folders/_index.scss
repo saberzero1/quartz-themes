@@ -1,11 +1,11 @@
-.pt-colored-folders.pt-colored-folders-style-accent.pt-colored-folders-files-match
+.pt-colored-folders-style-accent.pt-colored-folders-files-match
   .workspace-leaf-content[data-type='file-explorer']
   .nav-folder
   .nav-file-title:not(.is-active, :hover) {
   color: var(--interactive-accent-text);
 }
 
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -13,7 +13,7 @@
   --nav-indentation-guide-color: var(--interactive-accent-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -22,13 +22,13 @@
   color: var(--interactive-accent-text);
 }
 
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
   > .nav-folder
   .nav-file-title:hover,
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -38,77 +38,77 @@
   background-color: var(--interactive-accent-base);
 }
 
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent
+.pt-colored-folders-style-accent
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon {
   color: var(--interactive-accent-text);
 }
 
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon {
   background-color: var(--interactive-accent-text);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-colored-folders-files-match
+.pt-colored-folders-style-rainbow.pt-colored-folders-files-match
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -117,7 +117,7 @@
   color: var(--rainbow-text-color);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -125,7 +125,7 @@
   --nav-indentation-guide-color: var(--rainbow-indent-color);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -134,13 +134,13 @@
   color: var(--rainbow-text-color);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
   > .nav-folder
   .nav-file-title:hover,
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -150,7 +150,7 @@
   background-color: var(--rainbow-background-color);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -160,7 +160,7 @@
   --rainbow-indent-color: var(--color-red-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -170,7 +170,7 @@
   --rainbow-indent-color: var(--color-orange-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -180,7 +180,7 @@
   --rainbow-indent-color: var(--color-yellow-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -190,7 +190,7 @@
   --rainbow-indent-color: var(--color-green-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -200,7 +200,7 @@
   --rainbow-indent-color: var(--color-mint-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -210,7 +210,7 @@
   --rainbow-indent-color: var(--color-cyan-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -220,7 +220,7 @@
   --rainbow-indent-color: var(--color-blue-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -230,7 +230,7 @@
   --rainbow-indent-color: var(--color-purple-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -240,7 +240,7 @@
   --rainbow-indent-color: var(--color-pink-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .workspace-leaf-content[data-type='file-explorer']
   .nav-files-container
   > div
@@ -250,70 +250,70 @@
   --rainbow-indent-color: var(--color-grey-tint);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow
+.pt-colored-folders-style-rainbow
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon {
   color: var(--rainbow-text-color);
 }
 
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder.is-collapsed
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder.is-collapsed:hover
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder:not(.is-collapsed)
   .collapse-icon
   svg.svg-icon,
-.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
+.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent
   .nav-folder:not(.is-collapsed):hover
   .collapse-icon
   svg.svg-icon {

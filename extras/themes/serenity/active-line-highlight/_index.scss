@@ -27,13 +27,13 @@
     .markdown-source-view .metadata-container:hover,
     .markdown-source-view .metadata-container:focus-within
   ),
-.active-line-highlight.opacity-hover .cm-line:hover {
+.opacity-hover .cm-line:hover {
   opacity: 1 !important;
   filter: none !important;
 }
 
 .active-line-highlight .cm-active.cm-line:not(.HyperMD-header),
-.active-line-highlight.opacity-hover .cm-line:not(.HyperMD-header):hover {
+.opacity-hover .cm-line:not(.HyperMD-header):hover {
   font-size: var(--active-line-size) !important;
 }
 

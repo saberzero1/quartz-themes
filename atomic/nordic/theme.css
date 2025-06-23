@@ -25078,18 +25078,13 @@ settings:
         allowEmpty: false
         default: nordic-base
         options:
-            -
-                label: Base
-                value: nordic-base
-            -
-                label: Uniform
-                value: nordic-uniform
+            - nordic-base
+            - nordic-uniform
     - 
         id: nordic-colored-headers
         title: Colored Headers (Rainbow Headers)
         description: adds different colors for each of the headings
         type: class-toggle
-        default: true
     - 
         id: nordic-darken
         title: Darker Dark Theme

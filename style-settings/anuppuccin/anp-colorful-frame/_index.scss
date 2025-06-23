@@ -49,10 +49,10 @@ body {
     .workspace-tab-header-container,
   .anuppuccin-accent-toggle:not(.anp-card-layout, .anp-border-layout)
     .workspace-ribbon.mod-left:before,
-  .anuppuccin-accent-toggl.anp-card-layout,
-  .anuppuccin-accent-toggl.anp-card-layout .workspace-tabs.mod-top,
-  .anuppuccin-accent-toggl.anp-card-layout .sidebar-toggle-button,
-  .anuppuccin-accent-toggl.anp-card-layout .workspace-ribbon.mod-left:before {
+  .anuppuccin-accent-toggle.anp-card-layout,
+  .anuppuccin-accent-toggle.anp-card-layout .workspace-tabs.mod-top,
+  .anuppuccin-accent-toggle.anp-card-layout .sidebar-toggle-button,
+  .anuppuccin-accent-toggle.anp-card-layout .workspace-ribbon.mod-left:before {
     --tab-container-background: rgba(
       var(--color, var(--ctp-accent)),
       var(--opacity, 1)
@@ -62,11 +62,11 @@ body {
       var(--opacity, 1)
     );
   }
-  .anuppuccin-accent-toggl.anp-card-layout .prompt {
+  .anuppuccin-accent-toggle.anp-card-layout .prompt {
     --background-modifier-hover: rgba(var(--ctp-text), 0.075);
   }
   .anuppuccin-accent-toggle .sidebar-toggle-button,
-  .anp-colorful-fram .sidebar-toggle-button {
+  .sidebar-toggle-button {
     --background-modifier-hover: rgba(var(--ctp-text), 0.075);
   }
   .is-focused
@@ -104,10 +104,10 @@ body {
   :not(.anp-card-layout, .anp-border-layout)
     .mod-top
     .workspace-tab-header-container,
-  .anp-colorful-fram.anp-card-layout,
-  .anp-colorful-fram.anp-card-layout .workspace-tabs.mod-top,
-  .anp-colorful-fram.anp-card-layout .sidebar-toggle-button,
-  .anp-colorful-fram.anp-card-layout .workspace-ribbon.mod-left:before,
+  .anp-card-layout,
+  .anp-card-layout .workspace-tabs.mod-top,
+  .anp-card-layout .sidebar-toggle-button,
+  .anp-card-layout .workspace-ribbon.mod-left:before,
   :not(.anp-card-layout, .anp-border-layout) .workspace-ribbon.mod-left:before {
     --tab-container-background: hsla(
       var(--color-hsl, var(--color-accent-hsl)),
@@ -430,7 +430,7 @@ body {
   .is-fullscreen:not(.is-popout-window) .sidebar-toggle-button.mod-left {
     border-radius: 0 0 var(--radius-m) 0;
   }
-  bod.anp-card-layout .workspace,
+  body.anp-card-layout .workspace,
   .anuppuccin-accent-toggle.anp-card-layout .workspace-tabs {
     background-color: var(--tab-container-background);
   }
@@ -520,26 +520,26 @@ body {
 :not(.is-frameless) .sidebar-toggle-button.mod-left {
   border-radius: var(--radius-m);
 }
-bod.anp-border-layout .horizontal-main-container {
+body.anp-border-layout .horizontal-main-container {
   background-color: var(--colorful-frame-color);
   --titlebar-background: var(--colorful-frame-color);
   --ribbon-background: var(--colorful-frame-color);
   --ribbon-background-collapsed: var(--colorful-frame-color);
   --card-background-color: var(--colorful-frame-color);
 }
-bod.anp-border-layout .workspace-ribbon {
+body.anp-border-layout .workspace-ribbon {
   --icon-color: var(--colorful-icon-color);
   --icon-color-hover: var(--colorful-icon-color-alt);
   --icon-color-active: var(--colorful-icon-color-alt);
   --icon-color-focused: var(--colorful-icon-color);
 }
-bod.anp-border-layout .workspace-ribbon .clickable-icon:hover {
+body.anp-border-layout .workspace-ribbon .clickable-icon:hover {
   background-color: rgba(var(--ctp-crust), 0.2);
 }
-bod.anp-border-layout .workspace-ribbon .clickable-icon:active {
+body.anp-border-layout .workspace-ribbon .clickable-icon:active {
   background-color: rgba(var(--ctp-crust), 0.3);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon {
@@ -548,23 +548,23 @@ bod.anp-border-layout
   --icon-color-active: var(--colorful-icon-color-alt);
   --icon-color-focused: var(--colorful-icon-color);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon:hover {
   background-color: rgba(var(--ctp-crust), 0.2);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon:active {
   background-color: rgba(var(--ctp-crust), 0.3);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container {
@@ -573,13 +573,13 @@ bod.anp-border-layout
   --icon-color-active: var(--colorful-icon-color-alt);
   --icon-color-focused: var(--colorful-icon-color);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
@@ -587,13 +587,13 @@ bod.anp-border-layout
   .workspace-tab-header-inner {
   background-color: rgba(var(--ctp-crust), 0.2);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .workspace-tab-header.is-active
   .workspace-tab-header-inner,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
@@ -601,37 +601,37 @@ bod.anp-border-layout
   .workspace-tab-header-inner {
   background-color: rgba(var(--ctp-crust), 0.3);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:hover,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:hover {
   background-color: rgba(var(--ctp-crust), 0.2);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:active,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:active {
   background-color: rgba(var(--ctp-crust), 0.3);
 }
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-right-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
@@ -639,13 +639,13 @@ bod.anp-border-layout
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-title,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-bod.anp-border-layout
+body.anp-border-layout
   .workspace-split.mod-left-split
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
@@ -655,16 +655,16 @@ bod.anp-border-layout
   .workspace-tab-header-inner-title {
   color: var(--colorful-icon-color);
 }
-bod.anp-border-layout.anp-mini-tab-toggle
+body.anp-border-layout.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-title,
-bod.anp-border-layout.anp-mini-tab-toggle
+body.anp-border-layout.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-status-container,
-bod.anp-border-layout.anp-mini-tab-toggle
+body.anp-border-layout.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-close-button,
-bod.anp-border-layout.anp-mini-tab-toggle
+body.anp-border-layout.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-icon {
   color: var(--background-primary);

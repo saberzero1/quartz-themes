@@ -24947,7 +24947,7 @@ input.mobile-vault-chooser-field-input {
 
 /*
 .cm-active.cm-line::after {
-    content: "";
+    content: '';
     width: 100%;
     height: calc(var(--font-text-size) + 2px);
     left: 0;

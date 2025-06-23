@@ -4,20 +4,20 @@
   --workspace-split-left-offset: var(--ribbon-width);
 }
 
-.floating-sides.smooth-mode {
+.smooth-mode {
   --margin-top: calc(var(--header-height) + 5px);
 }
 
-.floating-sides.minimal-mode.sidebar-hide {
+.minimal-mode.sidebar-hide {
   --workspace-split-left-offset: 0px;
 }
 
 .floating-sides,
-.floating-sides.minimal-mode.root-tabs-hover .workspace {
+.minimal-mode.root-tabs-hover .workspace {
   --margin-top-animation-delay: 0s;
 }
 
-.floating-sides.minimal-mode.root-tabs-hover
+.minimal-mode.root-tabs-hover
   .workspace:has(
     .workspace-tabs.mod-active.mod-top
       .workspace-tab-header-container:not(:hover)
@@ -26,7 +26,7 @@
   --margin-top-animation-delay: 1s;
 }
 
-.floating-sides.minimal-mode.sidebar-hover
+.minimal-mode.sidebar-hover
   .workspace.is-left-sidedock-open:has(
     .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
   ) {

@@ -1,4 +1,4 @@
-bod.is-phone .mobile-navbar .clickable-icon {
+body.is-phone .mobile-navbar .clickable-icon {
   background-color: var(--surface-variant);
   height: 30px;
   width: 60px;
@@ -6,11 +6,11 @@ bod.is-phone .mobile-navbar .clickable-icon {
   border-radius: 15px;
 }
 
-bod.is-phone .mobile-toolbar {
+body.is-phone .mobile-toolbar {
   height: 45px;
 }
 
-bod.is-phone .mobile-toolbar-option {
+body.is-phone .mobile-toolbar-option {
   background-color: var(--surface-variant);
   height: 30px;
   width: 50px;
@@ -18,7 +18,7 @@ bod.is-phone .mobile-toolbar-option {
   border-radius: 15px;
 }
 
-bod.is-phone .nav-action-button {
+body.is-phone .nav-action-button {
   background-color: var(--surface);
   height: 40px;
   min-width: 65px;

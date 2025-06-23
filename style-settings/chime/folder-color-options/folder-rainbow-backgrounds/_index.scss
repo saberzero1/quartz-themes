@@ -9,8 +9,8 @@
   --nav-collapse-icon-color: var(--text-normal);
   --nav-collapse-icon-color-collapsed: var(--text-normal);
 }
-.folder-rainbow-backgrounds.theme-crystal .nav-folder-title,
-.folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
+.theme-crystal .nav-folder-title,
+.theme-ash-old .nav-folder-title {
   background-color: rgba(var(--rainbow-folder-color), 0.13);
   border: 0.25px solid rgb(var(--rainbow-folder-color));
   margin-bottom: 5px;

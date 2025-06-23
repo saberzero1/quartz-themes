@@ -1,4 +1,4 @@
-bod {
+body {
   --grey-50-rgb: 225, 227, 233;
   --grey-100-rgb: 222, 227, 241;
   --grey-200-rgb: 173, 181, 200;
@@ -17,7 +17,7 @@ bod {
   --accent-l: 54%;
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
 }
-bod.encore-colors-colorful {
+body.encore-colors-colorful {
   --highlight-hue: 30;
   --bold-color: var(--color-green);
   --italic-color: var(--color-red);

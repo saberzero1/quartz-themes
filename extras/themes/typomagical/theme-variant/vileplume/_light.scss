@@ -1,4 +1,4 @@
-bod.theme-light {
+body.theme-light {
   --background-primary: var(--light3);
   --background-primary-alt: var(--light3);
   --background-secondary: var(--light2);
@@ -15,8 +15,8 @@ bod.theme-light {
   --title-gradient-bottom: var(--text-normal);
 }
 
-.vileplume.theme-light .cm-header-1.cm-header-1,
-.vileplume.theme-light .markdown-preview-section.markdown-preview-section h1 {
+.theme-light .cm-header-1.cm-header-1,
+.theme-light .markdown-preview-section.markdown-preview-section h1 {
   text-shadow:
     1px 1px rgba(235, 235, 235, 0.5),
     2px 2px rgba(235, 235, 235, 0.5),
@@ -28,14 +28,14 @@ bod.theme-light {
     8px 8px rgba(235, 235, 235, 0.1);
 }
 
-.vileplume.theme-light .graph-view.color-line {
+.theme-light .graph-view.color-line {
   color: hsl(83, 26%, 84%);
 }
 
-.vileplume.theme-light .graph-view.color-fill {
+.theme-light .graph-view.color-fill {
   color: hsl(126, 26%, 51%);
 }
 
-.vileplume.theme-light .graph-view.graph-view.color-fill-attachment {
+.theme-light .graph-view.graph-view.color-fill-attachment {
   color: hsl(25, 83%, 67%);
 }

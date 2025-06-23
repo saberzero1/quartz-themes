@@ -12,6 +12,12 @@ body.toggle-tab-height
   margin: 0 0 5px 0;
 }
 
+body.is-frameless:not(.is-hidden-frameless):not(
+    .is-fullscreen
+  ).toggle-tab-height
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
 body.toggle-tab-height
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-top)
@@ -23,6 +29,12 @@ body.toggle-tab-design.toggle-tab-height
   padding: 1px 11px;
 }
 
+body.is-frameless:not(.is-hidden-frameless):not(
+    .is-fullscreen
+  ).toggle-tab-height
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
 body.toggle-tab-height
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-top)

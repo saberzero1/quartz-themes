@@ -27,14 +27,14 @@
   --rose: #f4dbd6;
 }
 
-.theme-catpp.low-contrast-dark {
+.low-contrast-dark {
   --base-c: 18%;
   --theme-sat-text: 17%;
   --theme-tint-text: 228;
   --theme-sat: 50%;
 }
 
-.theme-catpp.high-contrast-dark {
+.high-contrast-dark {
   --base-c: 25%;
   --theme-sat-text: 20%;
   --theme-tint-text: 240;
@@ -42,7 +42,7 @@
   --c-100: 90% !important;
 }
 
-.theme-catpp.colorful-headings-s {
+.colorful-headings-s {
   --h1-color: #7dc4e4;
   --h2-color: var(--color-blue);
   --h3-color: #c6a0f6;

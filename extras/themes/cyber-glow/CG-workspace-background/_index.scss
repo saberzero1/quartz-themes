@@ -14,14 +14,15 @@
   --CGworkspace-background-image: var(--Obsidianbg);
 }
 
-.obsidian-ap.CG-workspace-background-image-custom {
+.obsidian-app.CG-workspace-background-image-custom {
   --CGworkspace-background-image: var(
     --CG-workspace-background-image-custom-option
   );
 }
 
 .CG-workspace-background .workspace,
-.CG-workspace-background .status-bar {
+.CG-workspace-background .status-bar,
+body:not(.is-hidden-frameless).CG-workspace-background .titlebar-inner {
   background-color: var(--background-secondary);
   backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15))
     blur(var(--CG-workspace-background-blur, 15px))

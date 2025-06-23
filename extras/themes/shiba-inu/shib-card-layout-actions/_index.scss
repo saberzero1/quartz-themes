@@ -1,8 +1,8 @@
-.shib-card-layout-actions.shib-card-layout .workspace-ribbon.mod-left {
+.shib-card-layout .workspace-ribbon.mod-left {
   margin-right: var(--shib-card-layout-padding, 10px);
 }
 
-.shib-card-layout-actions.shib-card-layout .side-dock-actions {
+.shib-card-layout .side-dock-actions {
   border-radius: 0 var(--shib-card-radius, var(--radius-xl))
     var(--shib-card-radius, var(--radius-xl)) 0;
   border: 1px solid var(--tab-outline-color);
@@ -10,7 +10,7 @@
   margin-top: 2px;
 }
 
-.shib-card-layout-actions.shib-card-layout .side-dock-settings {
+.shib-card-layout .side-dock-settings {
   border-radius: 0 var(--shib-card-radius, var(--radius-xl)) 0 0;
   border: 1px solid var(--tab-outline-color);
   background-color: var(--card-foreground-color);

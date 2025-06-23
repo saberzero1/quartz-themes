@@ -23,7 +23,7 @@ body.anp-border-layout .horizontal-main-container {
   --ribbon-background: var(--card-background-color);
   --ribbon-background-collapsed: var(--card-background-color);
 }
-bod.anp-fixed-status-bar {
+body.anp-fixed-status-bar {
   --anp-border-bottom-padding: calc(var(--anp-border-padding, 20px) - 18px);
 }
 body.anp-border-layout .workspace {
@@ -250,7 +250,7 @@ body.anp-border-layout .workspace-ribbon.mod-left,
 body.anp-border-layout .workspace-ribbon.mod-left.is-focused {
   border-right-color: var(--card-background-color);
 }
-bod.is-popout-window .workspace {
+body.is-popout-window .workspace {
   margin-left: var(--anp-border-padding, 20px);
 }
 .anp-fixed-status-bar.anp-border-layout .status-bar {
@@ -408,16 +408,16 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tab-header-inner-title {
   color: var(--colorful-icon-color);
 }
-body.anp-colorful-fram.anp-mini-tab-toggle
+body.anp-colorful-frame.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-title,
-body.anp-colorful-fram.anp-mini-tab-toggle
+body.anp-colorful-frame.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-status-container,
-body.anp-colorful-fram.anp-mini-tab-toggle
+body.anp-colorful-frame.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-close-button,
-body.anp-colorful-fram.anp-mini-tab-toggle
+body.anp-colorful-frame.anp-mini-tab-toggle
   .workspace-tabs.mod-top
   .workspace-tab-header-inner-icon {
   color: var(--background-primary);

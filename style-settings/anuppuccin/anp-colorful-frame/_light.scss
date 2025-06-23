@@ -3,6 +3,38 @@ body-icon-toggle-dark.theme-dark {
   --colorful-icon-color: var(--text-normal);
   --colorful-icon-color-alt: var(--text-muted);
 }
+:not(.anp-card-layout, .anp-border-layout)-icon-toggle-light.theme-light
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+:not(.anp-card-layout, .anp-border-layout)-icon-toggle-light.theme-light
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active,
+:not(.anp-card-layout, .anp-border-layout)-icon-toggle-dark.theme-dark
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+:not(.anp-card-layout, .anp-border-layout)-icon-toggle-dark.theme-dark
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}
+.anp-card-layout:not(.anp-card-layout-filebrowser)-icon-toggle-light.theme-light
+  .workspace-leaf-content[data-type='file-explorer'],
+.anp-card-layout:not(.anp-card-layout-filebrowser)-icon-toggle-dark.theme-dark
+  .workspace-leaf-content[data-type='file-explorer'] {
+  --tab-text-color: var(--text-normal);
+  --tab-text-color-focused: var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-highlighted: var(--text-normal);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --icon-color: var(--text-normal);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-normal);
+}
 .anp-card-layout-icon-toggle-light.theme-light,
 .anp-card-layout-icon-toggle-dark.theme-dark,
 .anp-card-layout.anp-card-layout-actions .workspace-ribbon,

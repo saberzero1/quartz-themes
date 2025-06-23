@@ -1,4 +1,4 @@
-bod.theme-light {
+body.theme-light {
   --titlebar-text-color: #8c8c8c;
   --icon-color: #939393;
   --icon-color-hover: #939393;
@@ -9,7 +9,7 @@ bod.theme-light {
   --background-modifier-hover: #f0f0f0;
 }
 
-bod.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
-bod.is-focused .sidebar-toggle-button {
+body.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+body.is-focused .sidebar-toggle-button {
   --background-modifier-hover: #d8d8d8;
 }

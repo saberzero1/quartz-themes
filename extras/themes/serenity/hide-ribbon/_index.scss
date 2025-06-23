@@ -1,3 +1,12 @@
+body:not(.flat-mode):not(.hide-tabs).hide-ribbon
+  .workspace-ribbon.mod-left:hover:before,
+body:not(.flat-mode):not(.hide-file-tabs).hide-ribbon
+  .workspace-ribbon.mod-left:hover:before {
+  opacity: 1;
+  background-color: var(--titlebar-background-focused) !important;
+  border-bottom: var(--divider-width) solid var(--divider-color) !important;
+}
+
 .hide-ribbon:not(.hide-tabs)
   .workspace-ribbon.mod-left.is-collapsed:hover:before {
   border-bottom: var(--divider-width) solid var(--divider-color) !important;
