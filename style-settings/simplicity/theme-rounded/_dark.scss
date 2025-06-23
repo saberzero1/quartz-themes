@@ -45,7 +45,7 @@
 }
 .theme-light .workspace-ribbon.mod-left:before,
 :not(.theme-black) .workspace-ribbon.mod-left:before,
-.theme-dar.theme-black .workspace-ribbon.mod-left:before {
+.theme-black .workspace-ribbon.mod-left:before {
   background-color: transparent !important;
   background-color: hsla(
     var(--accent-h),

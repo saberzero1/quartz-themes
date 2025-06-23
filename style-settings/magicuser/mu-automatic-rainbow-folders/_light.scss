@@ -1,20 +1,3 @@
-body:not(.mu-cards-interface, ).mu-sidebar-dark
-  .workspace-leaf-content
-  .tree-item-self.nav-file-title:not(.is-being-dragged),
-body:not(.mu-cards-interface, ).mu-sidebar-dark
-  .workspace-leaf-content
-  .tree-item-flair,
-body:not(.mu-cards-interface, ).mu-sidebar-dark
-  .workspace-leaf-content
-  .search-params
-  .setting-item-name,
-body:not(.mu-cards-interface, ).mu-sidebar-dark
-  .workspace-leaf-content
-  .backlink-pane
-  > .tree-item-self,
-body:not(.mu-cards-interface, ).outgoing-link-pane > .tree-item-self {
-  color: #bfbfbf !important;
-}
 body:not(.mu-cards-interface).mu-sidebar-dark .workspace-leaf-content,
 body {
   --mu-folder-icon-color: #000 !important;

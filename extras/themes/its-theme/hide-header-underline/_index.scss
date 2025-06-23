@@ -1,5 +1,4 @@
-.hide-header-underline.hide-header-underline,
-:is(.h-line, .hide-header-underline) div {
+.hide-header-underline {
   --header-border-line-height: 0;
   --h1-border-line-height: var(--header-border-line-height);
   --h2-border-line-height: var(--header-border-line-height);

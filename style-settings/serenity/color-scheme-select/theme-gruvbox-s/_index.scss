@@ -25,16 +25,7 @@
   --color-pink-rgb: 241, 168, 203;
   --color-pink: #d383aa;
 }
-.theme-ligh.low-contrast-light {
-  --color-base-35: hsl(
-    var(--theme-tint),
-    calc(var(--theme-sat-text) + 5%),
-    50%,
-    0.18
-  ) !important;
-  --color-base-30: hsl(var(--theme-tint), 60%, 75%) !important;
-}
-.theme-gruvbox-s.colorful-headings-s {
+.colorful-headings-s {
   --h2-color: var(--color-orange);
   --h1-color: var(--color-red);
   --h3-color: var(--color-green);

@@ -1,4 +1,4 @@
-bod.theme-dark {
+body.theme-dark {
   --grey-50-rgb: 225, 227, 233;
   --grey-100-rgb: 222, 227, 241;
   --grey-200-rgb: 173, 181, 200;
@@ -18,7 +18,7 @@ bod.theme-dark {
   --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.4);
 }
 
-bod.encore-colors-colorful {
+body.encore-colors-colorful {
   --highlight-hue: 30;
   --bold-color: #a283ec;
   --italic-color: #98f8eb;

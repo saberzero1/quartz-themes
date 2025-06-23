@@ -1,9 +1,9 @@
-.simple-aside.theme-light
+.theme-light
   :is(
     .callout[data-callout='aside'][data-callout-metadata~='l'],
     .callout[data-callout='seite'][data-callout-metadata~='l']
   ),
-.simple-aside.theme-light
+.theme-light
   .markdown-preview-view
   :is(
     .callout[data-callout='aside'][data-callout-metadata~='lh']:hover,
@@ -14,12 +14,12 @@
   padding-left: 0;
 }
 
-.simple-aside.theme-light
+.theme-light
   :is(
     .callout[data-callout='aside'][data-callout-metadata~='r'],
     .callout[data-callout='seite'][data-callout-metadata~='r']
   ),
-.simple-aside.theme-light
+.theme-light
   .markdown-preview-view
   :is(
     .callout[data-callout='aside'][data-callout-metadata~='rh']:hover,

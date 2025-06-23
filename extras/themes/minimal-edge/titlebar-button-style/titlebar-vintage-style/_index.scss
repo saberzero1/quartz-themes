@@ -1,4 +1,4 @@
-bod.mod-windows .titlebar-button {
+body.mod-windows .titlebar-button {
   border-radius: 50%;
   border: var(--background-modifier-border);
   padding: 7px;
@@ -8,11 +8,11 @@ bod.mod-windows .titlebar-button {
   transition: all 0.3s ease;
 }
 
-bod.mod-windows .titlebar-button:hover {
+body.mod-windows .titlebar-button:hover {
   padding: 8px;
 }
 
-bod.is-hidden-frameless:not(.is-fullscreen)
+body.is-hidden-frameless:not(.is-fullscreen)
   .titlebar-button-container.mod-right {
   background-color: var(--background-primary);
   gap: 10px;

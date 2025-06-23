@@ -1,4 +1,4 @@
-bod.theme-dark {
+body.theme-dark {
   --grey-900-rgb: 30, 30, 30;
   --grey-800-rgb: 38, 38, 38;
   --grey-700-rgb: 54, 54, 54;
@@ -19,12 +19,12 @@ bod.theme-dark {
   background-color: rgba(var(--grey-800-rgb), var(--en-opacity));
 }
 
-bod.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
+body.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 1;
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 
-bod.theme-dark
+body.theme-dark
   .mod-root
   .workspace-tab-container
   .workspace-leaf-content
@@ -33,11 +33,11 @@ bod.theme-dark
   background-color: rgba(var(--grey-900-rgb), var(--en-opacity));
 }
 
-bod.theme-dark .mk-note-header:after {
+body.theme-dark .mk-note-header:after {
   --gradient-color: var(--color-base-10);
 }
 
-bod.encore-fancy-headers
+body.encore-fancy-headers
   .workspace-tab-container
   .workspace-leaf-content
   > .view-header {

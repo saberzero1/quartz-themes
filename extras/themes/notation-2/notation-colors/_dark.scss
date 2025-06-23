@@ -1,5 +1,5 @@
-bod.theme-light,
-bod.theme-dark {
+body.theme-light,
+body.theme-dark {
   /* change these numbers for an entirely new look */
   --hue: 203;
   --sat: 8%;
@@ -8,7 +8,7 @@ bod.theme-dark {
   --opacity-translucency: 0.7;
 }
 
-.notation-colors.theme-dark {
+.theme-dark {
   --L0: 0%;
   --L1: 20%;
   --L2: 23%;
@@ -38,8 +38,8 @@ bod.theme-dark {
   --color-red-rgb: 89, 65, 65;
 }
 
-bod.theme-light,
-bod.theme-dark {
+body.theme-light,
+body.theme-dark {
   --background-primary: hsl(var(--hue), var(--sat), var(--L1));
   --background-primary-alt: hsl(var(--hue), var(--sat), var(--L3));
   --background-secondary: hsl(var(--hue), var(--sat), var(--L2));

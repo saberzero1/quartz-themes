@@ -10,13 +10,11 @@
 .page-shadow:not(.floating-doc) .workspace-ribbon::before,
 .page-shadow .vertical-tab-content,
 .page-shadow .vertical-tab-header,
-.page-shadow.floating-doc .view-content {
+.floating-doc .view-content {
   box-shadow: 0 0 70px var(--shadow-color) inset;
 }
 
-.page-shadow.is-focused:not(.floating-doc)
-  .workspace-leaf.mod-active
-  .view-header,
+.is-focused:not(.floating-doc) .workspace-leaf.mod-active .view-header,
 .page-shadow:not(.floating-doc) .view-header,
 .page-shadow:not(.floating-doc) .workspace-leaf-content,
 .page-shadow:not(.floating-doc) .workspace-tab-container,

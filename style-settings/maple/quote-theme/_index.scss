@@ -103,24 +103,24 @@ body .markdown-rendered blockquote blockquote {
   box-shadow: none;
   margin-inline-end: var(--size-4-3) !important;
 }
-bod.quote-shadow .markdown-rendered blockquote {
+body.quote-shadow .markdown-rendered blockquote {
   box-shadow: var(--shadow-s);
 }
-bod.quote-border .markdown-rendered blockquote {
+body.quote-border .markdown-rendered blockquote {
   border: var(--block-outline-width) solid var(--accent-inactive);
   transition: var(--animation);
   box-shadow: none;
 }
-bod.quote-border .markdown-rendered blockquote:hover {
+body.quote-border .markdown-rendered blockquote:hover {
   border-color: var(--accent-active);
 }
-bod.quote-border .markdown-rendered blockquote blockquote {
+body.quote-border .markdown-rendered blockquote blockquote {
   margin: var(--block-outline-width);
 }
-bod.quote-mark blockquote {
+body.quote-mark blockquote {
   padding-left: 2.28rem;
 }
-bod.quote-mark blockquote::before {
+body.quote-mark blockquote::before {
   position: absolute;
   font-size: 3rem;
   font-family: Source Code Pro;

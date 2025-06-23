@@ -1,49 +1,49 @@
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-room-lamp-theme {
+body:not(.mu-cards-interface).magicuser-room-lamp-theme {
   --mu-folder-text-color: #97bff1 !important;
   --mu-bg-search-results: #2f0f18;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-moon-theme {
+body:not(.mu-cards-interface).magicuser-moon-theme {
   --mu-folder-text-color: #729fd8 !important;
   --mu-bg-search-results: #001122;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-camouflage-theme {
+body:not(.mu-cards-interface).magicuser-camouflage-theme {
   --mu-folder-text-color: #a0ac82 !important;
   --mu-bg-search-results: #24281c;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-gray-theme {
+body:not(.mu-cards-interface).magicuser-gray-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #1f1f1f;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-teal-theme {
+body:not(.mu-cards-interface).magicuser-teal-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #002828;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-purple-theme {
+body:not(.mu-cards-interface).magicuser-purple-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #330048;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-concentration-theme {
+body:not(.mu-cards-interface).magicuser-concentration-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #1b1b21;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-creativity-theme {
+body:not(.mu-cards-interface).magicuser-creativity-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #291522;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-teacher-theme {
+body:not(.mu-cards-interface).magicuser-teacher-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #28392f;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-stealth-theme {
+body:not(.mu-cards-interface).magicuser-stealth-theme {
   --mu-folder-text-color: #727272;
   --mu-bg-search-results: #181818;
   --mu-folder-area-background: #bfbfbf11;
@@ -51,26 +51,26 @@ body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-stealth-theme {
   --background-modifier-border: #282828;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-accent-theme {
+body:not(.mu-cards-interface).magicuser-accent-theme {
   --mu-folder-text-color: #979797;
   --mu-bg-search-results: #181818;
   --nav-collapse-icon-color: #484848;
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-chroma-amulet-theme {
+body:not(.mu-cards-interface).magicuser-chroma-amulet-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
   --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
 }
 
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-north-pole-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-sunset-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-old-school-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-classic-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-night-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-dreams-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-slide-theme,
-body:not(.mu-cards-interface).mu-sidebar-dark.magicuser-bg-synth-theme {
+body:not(.mu-cards-interface).magicuser-bg-north-pole-theme,
+body:not(.mu-cards-interface).magicuser-bg-sunset-theme,
+body:not(.mu-cards-interface).magicuser-bg-old-school-theme,
+body:not(.mu-cards-interface).magicuser-bg-classic-theme,
+body:not(.mu-cards-interface).magicuser-bg-night-theme,
+body:not(.mu-cards-interface).magicuser-bg-dreams-theme,
+body:not(.mu-cards-interface).magicuser-bg-slide-theme,
+body:not(.mu-cards-interface).magicuser-bg-synth-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #000;
 }

@@ -1,3 +1,7 @@
+body:is(.theme-light, .theme-dark).pt-disable-blur {
+  --background-secondary-blur: var(--background-secondary);
+}
+
 body.pt-color-scheme-style-border-lt.pt-disable-blur {
   --background-secondary-blur: var(--background-primary);
 }

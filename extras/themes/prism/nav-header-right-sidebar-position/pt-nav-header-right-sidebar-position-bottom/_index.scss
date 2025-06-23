@@ -101,10 +101,8 @@
   padding-bottom: calc(38px + 2 * var(--scroll-bar-size));
 }
 
-.pt-nav-header-right-sidebar-position-bottom.is-mobile
-  .workspace-drawer.mod-right
-  .nav-buttons-container,
-.pt-nav-header-right-sidebar-position-bottom.is-mobile
+.is-mobile .workspace-drawer.mod-right .nav-buttons-container,
+.is-mobile
   .workspace-drawer.mod-right
   .workspace-leaf-content[data-type='dangling-links']
   .nav-header {

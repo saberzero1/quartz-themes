@@ -3,6 +3,87 @@ body.is-translucent:is(:not(.css-settings-manager), )
   .workspace-tab-header-container {
   background: var(--color-base-00-trans-alt) !important;
 }
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container {
+  position: absolute;
+  width: 100%;
+  top: calc(var(--hovering-trigger-size) - var(--header-height));
+  background: var(--background-secondary);
+  border: var(--border);
+  border-top: none;
+  border-bottom-left-radius: var(--button-radius);
+  border-bottom-right-radius: var(--button-radius);
+  box-shadow: var(--panel-shadow);
+  z-index: 1;
+  -webkit-app-region: no-drag;
+  transition:
+    top 0.2s,
+    opacity 0.1s;
+  opacity: 0;
+}
+body:not(.is-mobile) .workspace-tabs:not(.mod-top) {
+  overflow: hidden;
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container {
+  top: calc(13px - var(--header-height));
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner {
+  margin-left: 0;
+  padding-block: 5px;
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-inner {
+  padding: 20px 9px 13px;
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container
+  > div {
+  z-index: 1;
+  -webkit-app-region: no-drag;
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: calc(100% - var(--hovering-trigger-size));
+  left: 0;
+  top: var(--header-height);
+  /* background:black; */
+  -webkit-app-region: drag;
+  pointer-events: none;
+  /* preven unclickabled buttons underneath it */
+  transition: height 0.2s;
+}
+body:not(.is-mobile)
+  .workspace
+  > .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:hover:before {
+  height: 0;
+}
 body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-topleft-radius)
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked {

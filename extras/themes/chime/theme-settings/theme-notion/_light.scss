@@ -1,44 +1,44 @@
-.theme-notion.colorful-headings h1,
-.theme-notion.colorful-headings .HyperMD-header-1 {
+.colorful-headings h1,
+.colorful-headings .HyperMD-header-1 {
   background-color: rgba(var(--color-red-rgb), 0.13);
   padding: 5px 10px 5px 10px;
 }
 
-.theme-notion.colorful-headings h2,
-.theme-notion.colorful-headings .HyperMD-header-2 {
+.colorful-headings h2,
+.colorful-headings .HyperMD-header-2 {
   background-color: rgba(var(--color-orange-rgb), 0.13);
   padding: 5px 10px 5px 10px;
 }
 
-.theme-notion.colorful-headings h3,
-.theme-notion.colorful-headings .HyperMD-header-3 {
+.colorful-headings h3,
+.colorful-headings .HyperMD-header-3 {
   background-color: rgba(var(--color-yellow-rgb), 0.15);
   padding: 5px 10px 5px 10px;
 }
 
-.theme-notion.colorful-headings h4,
-.theme-notion.colorful-headings .HyperMD-header-4 {
+.colorful-headings h4,
+.colorful-headings .HyperMD-header-4 {
   background-color: rgba(var(--color-green-rgb), 0.13);
   padding: 5px 10px 5px 10px;
 }
 
-.theme-notion.colorful-headings h5,
-.theme-notion.colorful-headings .HyperMD-header-5 {
+.colorful-headings h5,
+.colorful-headings .HyperMD-header-5 {
   background-color: rgba(var(--color-blue-rgb), 0.13);
   padding: 3px 10px 3px 10px;
 }
 
-.theme-notion.colorful-headings h6,
-.theme-notion.colorful-headings .HyperMD-header-6 {
+.colorful-headings h6,
+.colorful-headings .HyperMD-header-6 {
   background-color: rgba(var(--color-purple-rgb), 0.13);
   padding: 3px 10px 3px 10px;
 }
 
-.theme-notion.theme-light .callout {
+.theme-light .callout {
   background-color: rgba(var(--callout-color), 0.1);
 }
 
-.theme-notion.theme-light {
+.theme-light {
   color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;

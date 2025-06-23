@@ -28,7 +28,7 @@
   padding: 8px;
 }
 
-.hama-callouts.callout_center_settings .callout .callout-title {
+.callout_center_settings .callout .callout-title {
   display: grid;
   justify-content: center;
   background: linear-gradient(
@@ -39,7 +39,7 @@
   );
 }
 
-.hama-callouts.callout_center_settings
+.callout_center_settings
   .callout:has(> .callout-title .callout-title-inner:dir(rtl))
   > .callout-title {
   background: linear-gradient(

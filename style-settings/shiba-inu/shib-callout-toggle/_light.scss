@@ -1,4 +1,4 @@
-.shib-callout-style-.shib-callout-style-4.theme-light .callout {
+.shib-callout-style-4.shib-callout-style-4.theme-light .callout {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .shib-callout-style-4.theme-light .callout-title {
@@ -25,9 +25,7 @@
   box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.05) inset;
 }
 .callout-title-inner,
-.theme-ligh.shib-callout-default
-  .callout:not(.is-collapsible)
-  .callout-title-inner {
+.shib-callout-default .callout:not(.is-collapsible) .callout-title-inner {
   color: var(--text-normal);
   --bold-color: var(--text-normal);
   --italic-color: var(--text-normal);

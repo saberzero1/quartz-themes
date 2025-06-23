@@ -1,10 +1,3 @@
-body:not(.mu-disable-tr-hover) .markdown-reading-view tr:hover,
-body:not(.mu-disable-tr-hover)
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
-  tr:hover {
-  background-color: var(--mu-table-row-hover) !important;
-}
-
 .mu-disable-tr-hover .markdown-reading-view tr:nth-child(odd):hover,
 .mu-disable-tr-hover
   .workspace-leaf-content:not([data-type='full-calendar-view'])
@@ -17,11 +10,6 @@ body:not(.mu-disable-tr-hover)
   .workspace-leaf-content:not([data-type='full-calendar-view'])
   tr:nth-child(even):hover {
   background-color: var(--mu-table-color-1) !important;
-}
-
-body:not(.mu-disable-tr-hover) .cm-callout.cm-embed-block table th {
-  background-color: var(--mu-table-th-background) !important;
-  color: var(--mu-table-th-foreground-main) !important;
 }
 
 .mu-disable-tr-hover .cm-callout.cm-embed-block table th:hover {

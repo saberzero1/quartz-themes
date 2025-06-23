@@ -1,214 +1,202 @@
-.one-dark.theme-dark p > code,
-.one-dark.theme-dark pre:not(.frontmatter),
-.one-dark.theme-dark .HyperMD-codeblock {
+.theme-dark p > code,
+.theme-dark pre:not(.frontmatter),
+.theme-dark .HyperMD-codeblock {
   --code-background: hsl(220, 13%, 18%);
   --code-normal: hsl(220, 14%, 71%);
   --text-muted: hsl(220, 14%, 71%);
   --text-faint: hsl(220, 10%, 40%);
 }
 
-.one-dark.theme-dark p > code .cm-hr,
-.one-dark.theme-dark p > code .cm-comment,
-.one-dark.theme-dark p > code .cm-meta,
-.one-dark.theme-dark p > code .token.comment,
-.one-dark.theme-dark p > code .token.prolog,
-.one-dark.theme-dark p > code .token.cdata,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-hr,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-comment,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-meta,
-.one-dark.theme-dark pre:not(.frontmatter) .token.comment,
-.one-dark.theme-dark pre:not(.frontmatter) .token.prolog,
-.one-dark.theme-dark pre:not(.frontmatter) .token.cdata,
-.one-dark.theme-dark .HyperMD-codeblock .cm-hr,
-.one-dark.theme-dark .HyperMD-codeblock .cm-comment,
-.one-dark.theme-dark .HyperMD-codeblock .cm-meta,
-.one-dark.theme-dark .HyperMD-codeblock .token.comment,
-.one-dark.theme-dark .HyperMD-codeblock .token.prolog,
-.one-dark.theme-dark .HyperMD-codeblock .token.cdata {
+.theme-dark p > code .cm-hr,
+.theme-dark p > code .cm-comment,
+.theme-dark p > code .cm-meta,
+.theme-dark p > code .token.comment,
+.theme-dark p > code .token.prolog,
+.theme-dark p > code .token.cdata,
+.theme-dark pre:not(.frontmatter) .cm-hr,
+.theme-dark pre:not(.frontmatter) .cm-comment,
+.theme-dark pre:not(.frontmatter) .cm-meta,
+.theme-dark pre:not(.frontmatter) .token.comment,
+.theme-dark pre:not(.frontmatter) .token.prolog,
+.theme-dark pre:not(.frontmatter) .token.cdata,
+.theme-dark .HyperMD-codeblock .cm-hr,
+.theme-dark .HyperMD-codeblock .cm-comment,
+.theme-dark .HyperMD-codeblock .cm-meta,
+.theme-dark .HyperMD-codeblock .token.comment,
+.theme-dark .HyperMD-codeblock .token.prolog,
+.theme-dark .HyperMD-codeblock .token.cdata {
   color: hsl(220deg, 10%, 40%);
 }
 
-.one-dark.theme-dark p > code .cm-bracket.cm-tag,
-.one-dark.theme-dark p > code .cm-punctuation,
-.one-dark.theme-dark p > code .cm-type,
-.one-dark.theme-dark p > code .token.doctype,
-.one-dark.theme-dark p > code .token.punctuation,
-.one-dark.theme-dark p > code .token.entity,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-type,
-.one-dark.theme-dark pre:not(.frontmatter) .token.doctype,
-.one-dark.theme-dark pre:not(.frontmatter) .token.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .token.entity,
-.one-dark.theme-dark .HyperMD-codeblock .cm-bracket.cm-tag,
-.one-dark.theme-dark .HyperMD-codeblock .cm-punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .cm-type,
-.one-dark.theme-dark .HyperMD-codeblock .token.doctype,
-.one-dark.theme-dark .HyperMD-codeblock .token.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .token.entity {
+.theme-dark p > code .cm-bracket.cm-tag,
+.theme-dark p > code .cm-punctuation,
+.theme-dark p > code .cm-type,
+.theme-dark p > code .token.doctype,
+.theme-dark p > code .token.punctuation,
+.theme-dark p > code .token.entity,
+.theme-dark pre:not(.frontmatter) .cm-bracket.cm-tag,
+.theme-dark pre:not(.frontmatter) .cm-punctuation,
+.theme-dark pre:not(.frontmatter) .cm-type,
+.theme-dark pre:not(.frontmatter) .token.doctype,
+.theme-dark pre:not(.frontmatter) .token.punctuation,
+.theme-dark pre:not(.frontmatter) .token.entity,
+.theme-dark .HyperMD-codeblock .cm-bracket.cm-tag,
+.theme-dark .HyperMD-codeblock .cm-punctuation,
+.theme-dark .HyperMD-codeblock .cm-type,
+.theme-dark .HyperMD-codeblock .token.doctype,
+.theme-dark .HyperMD-codeblock .token.punctuation,
+.theme-dark .HyperMD-codeblock .token.entity {
   color: hsl(220deg, 14%, 71%);
 }
 
-.one-dark.theme-dark p > code .cm-number,
-.one-dark.theme-dark p > code .cm-attribute,
-.one-dark.theme-dark p > code .token.attr-name,
-.one-dark.theme-dark p > code .token.class-name,
-.one-dark.theme-dark p > code .token.boolean,
-.one-dark.theme-dark p > code .token.constant,
-.one-dark.theme-dark p > code .token.number,
-.one-dark.theme-dark p > code .token.atrule,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-number,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-attribute,
-.one-dark.theme-dark pre:not(.frontmatter) .token.attr-name,
-.one-dark.theme-dark pre:not(.frontmatter) .token.class-name,
-.one-dark.theme-dark pre:not(.frontmatter) .token.boolean,
-.one-dark.theme-dark pre:not(.frontmatter) .token.constant,
-.one-dark.theme-dark pre:not(.frontmatter) .token.number,
-.one-dark.theme-dark pre:not(.frontmatter) .token.atrule,
-.one-dark.theme-dark .HyperMD-codeblock .cm-number,
-.one-dark.theme-dark .HyperMD-codeblock .cm-attribute,
-.one-dark.theme-dark .HyperMD-codeblock .token.attr-name,
-.one-dark.theme-dark .HyperMD-codeblock .token.class-name,
-.one-dark.theme-dark .HyperMD-codeblock .token.boolean,
-.one-dark.theme-dark .HyperMD-codeblock .token.constant,
-.one-dark.theme-dark .HyperMD-codeblock .token.number,
-.one-dark.theme-dark .HyperMD-codeblock .token.atrule {
+.theme-dark p > code .cm-number,
+.theme-dark p > code .cm-attribute,
+.theme-dark p > code .token.attr-name,
+.theme-dark p > code .token.class-name,
+.theme-dark p > code .token.boolean,
+.theme-dark p > code .token.constant,
+.theme-dark p > code .token.number,
+.theme-dark p > code .token.atrule,
+.theme-dark pre:not(.frontmatter) .cm-number,
+.theme-dark pre:not(.frontmatter) .cm-attribute,
+.theme-dark pre:not(.frontmatter) .token.attr-name,
+.theme-dark pre:not(.frontmatter) .token.class-name,
+.theme-dark pre:not(.frontmatter) .token.boolean,
+.theme-dark pre:not(.frontmatter) .token.constant,
+.theme-dark pre:not(.frontmatter) .token.number,
+.theme-dark pre:not(.frontmatter) .token.atrule,
+.theme-dark .HyperMD-codeblock .cm-number,
+.theme-dark .HyperMD-codeblock .cm-attribute,
+.theme-dark .HyperMD-codeblock .token.attr-name,
+.theme-dark .HyperMD-codeblock .token.class-name,
+.theme-dark .HyperMD-codeblock .token.boolean,
+.theme-dark .HyperMD-codeblock .token.constant,
+.theme-dark .HyperMD-codeblock .token.number,
+.theme-dark .HyperMD-codeblock .token.atrule {
   color: hsl(29deg, 54%, 61%);
 }
 
-.one-dark.theme-dark p > code .cm-keyword,
-.one-dark.theme-dark p > code .token.keyword,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-keyword,
-.one-dark.theme-dark pre:not(.frontmatter) .token.keyword,
-.one-dark.theme-dark .HyperMD-codeblock .cm-keyword,
-.one-dark.theme-dark .HyperMD-codeblock .token.keyword {
+.theme-dark p > code .cm-keyword,
+.theme-dark p > code .token.keyword,
+.theme-dark pre:not(.frontmatter) .cm-keyword,
+.theme-dark pre:not(.frontmatter) .token.keyword,
+.theme-dark .HyperMD-codeblock .cm-keyword,
+.theme-dark .HyperMD-codeblock .token.keyword {
   color: hsl(286deg, 60%, 67%);
 }
 
-.one-dark.theme-dark p > code .cm-qualifier,
-.one-dark.theme-dark p > code .cm-tag,
-.one-dark.theme-dark p > code .cm-property,
-.one-dark.theme-dark p > code .token.property,
-.one-dark.theme-dark p > code .token.tag,
-.one-dark.theme-dark p > code .token.symbol,
-.one-dark.theme-dark p > code .token.deleted,
-.one-dark.theme-dark p > code .token.important,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-qualifier,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-tag,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-property,
-.one-dark.theme-dark pre:not(.frontmatter) .token.property,
-.one-dark.theme-dark pre:not(.frontmatter) .token.tag,
-.one-dark.theme-dark pre:not(.frontmatter) .token.symbol,
-.one-dark.theme-dark pre:not(.frontmatter) .token.deleted,
-.one-dark.theme-dark pre:not(.frontmatter) .token.important,
-.one-dark.theme-dark .HyperMD-codeblock .cm-qualifier,
-.one-dark.theme-dark .HyperMD-codeblock .cm-tag,
-.one-dark.theme-dark .HyperMD-codeblock .cm-property,
-.one-dark.theme-dark .HyperMD-codeblock .token.property,
-.one-dark.theme-dark .HyperMD-codeblock .token.tag,
-.one-dark.theme-dark .HyperMD-codeblock .token.symbol,
-.one-dark.theme-dark .HyperMD-codeblock .token.deleted,
-.one-dark.theme-dark .HyperMD-codeblock .token.important {
+.theme-dark p > code .cm-qualifier,
+.theme-dark p > code .cm-tag,
+.theme-dark p > code .cm-property,
+.theme-dark p > code .token.property,
+.theme-dark p > code .token.tag,
+.theme-dark p > code .token.symbol,
+.theme-dark p > code .token.deleted,
+.theme-dark p > code .token.important,
+.theme-dark pre:not(.frontmatter) .cm-qualifier,
+.theme-dark pre:not(.frontmatter) .cm-tag,
+.theme-dark pre:not(.frontmatter) .cm-property,
+.theme-dark pre:not(.frontmatter) .token.property,
+.theme-dark pre:not(.frontmatter) .token.tag,
+.theme-dark pre:not(.frontmatter) .token.symbol,
+.theme-dark pre:not(.frontmatter) .token.deleted,
+.theme-dark pre:not(.frontmatter) .token.important,
+.theme-dark .HyperMD-codeblock .cm-qualifier,
+.theme-dark .HyperMD-codeblock .cm-tag,
+.theme-dark .HyperMD-codeblock .cm-property,
+.theme-dark .HyperMD-codeblock .token.property,
+.theme-dark .HyperMD-codeblock .token.tag,
+.theme-dark .HyperMD-codeblock .token.symbol,
+.theme-dark .HyperMD-codeblock .token.deleted,
+.theme-dark .HyperMD-codeblock .token.important {
   color: hsl(355deg, 65%, 65%);
 }
 
-.one-dark.theme-dark p > code .cm-string,
-.one-dark.theme-dark p > code .cm-string-2,
-.one-dark.theme-dark p > code .cm-builtin,
-.one-dark.theme-dark p > code .token.selector,
-.one-dark.theme-dark p > code .token.string,
-.one-dark.theme-dark p > code .token.char,
-.one-dark.theme-dark p > code .token.builtin,
-.one-dark.theme-dark p > code .token.inserted,
-.one-dark.theme-dark p > code .token.regex,
-.one-dark.theme-dark p > code .token.attr-value,
-.one-dark.theme-dark p > code .token.attr-value > .token.punctuation,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-string,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-string-2,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-builtin,
-.one-dark.theme-dark pre:not(.frontmatter) .token.selector,
-.one-dark.theme-dark pre:not(.frontmatter) .token.string,
-.one-dark.theme-dark pre:not(.frontmatter) .token.char,
-.one-dark.theme-dark pre:not(.frontmatter) .token.builtin,
-.one-dark.theme-dark pre:not(.frontmatter) .token.inserted,
-.one-dark.theme-dark pre:not(.frontmatter) .token.regex,
-.one-dark.theme-dark pre:not(.frontmatter) .token.attr-value,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .token.attr-value
-  > .token.punctuation,
-.one-dark.theme-dark .HyperMD-codeblock .cm-string,
-.one-dark.theme-dark .HyperMD-codeblock .cm-string-2,
-.one-dark.theme-dark .HyperMD-codeblock .cm-builtin,
-.one-dark.theme-dark .HyperMD-codeblock .token.selector,
-.one-dark.theme-dark .HyperMD-codeblock .token.string,
-.one-dark.theme-dark .HyperMD-codeblock .token.char,
-.one-dark.theme-dark .HyperMD-codeblock .token.builtin,
-.one-dark.theme-dark .HyperMD-codeblock .token.inserted,
-.one-dark.theme-dark .HyperMD-codeblock .token.regex,
-.one-dark.theme-dark .HyperMD-codeblock .token.attr-value,
-.one-dark.theme-dark .HyperMD-codeblock .token.attr-value > .token.punctuation {
+.theme-dark p > code .cm-string,
+.theme-dark p > code .cm-string-2,
+.theme-dark p > code .cm-builtin,
+.theme-dark p > code .token.selector,
+.theme-dark p > code .token.string,
+.theme-dark p > code .token.char,
+.theme-dark p > code .token.builtin,
+.theme-dark p > code .token.inserted,
+.theme-dark p > code .token.regex,
+.theme-dark p > code .token.attr-value,
+.theme-dark p > code .token.attr-value > .token.punctuation,
+.theme-dark pre:not(.frontmatter) .cm-string,
+.theme-dark pre:not(.frontmatter) .cm-string-2,
+.theme-dark pre:not(.frontmatter) .cm-builtin,
+.theme-dark pre:not(.frontmatter) .token.selector,
+.theme-dark pre:not(.frontmatter) .token.string,
+.theme-dark pre:not(.frontmatter) .token.char,
+.theme-dark pre:not(.frontmatter) .token.builtin,
+.theme-dark pre:not(.frontmatter) .token.inserted,
+.theme-dark pre:not(.frontmatter) .token.regex,
+.theme-dark pre:not(.frontmatter) .token.attr-value,
+.theme-dark pre:not(.frontmatter) .token.attr-value > .token.punctuation,
+.theme-dark .HyperMD-codeblock .cm-string,
+.theme-dark .HyperMD-codeblock .cm-string-2,
+.theme-dark .HyperMD-codeblock .cm-builtin,
+.theme-dark .HyperMD-codeblock .token.selector,
+.theme-dark .HyperMD-codeblock .token.string,
+.theme-dark .HyperMD-codeblock .token.char,
+.theme-dark .HyperMD-codeblock .token.builtin,
+.theme-dark .HyperMD-codeblock .token.inserted,
+.theme-dark .HyperMD-codeblock .token.regex,
+.theme-dark .HyperMD-codeblock .token.attr-value,
+.theme-dark .HyperMD-codeblock .token.attr-value > .token.punctuation {
   color: hsl(95deg, 38%, 62%);
 }
 
-.one-dark.theme-dark p > code .cm-variable,
-.one-dark.theme-dark p > code .cm-variable-2,
-.one-dark.theme-dark p > code .cm-variable-3,
-.one-dark.theme-dark p > code .cm-operator,
-.one-dark.theme-dark p > code .token.variable,
-.one-dark.theme-dark p > code .token.operator,
-.one-dark.theme-dark p > code .token.function,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-variable,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-variable-2,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-variable-3,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-operator,
-.one-dark.theme-dark pre:not(.frontmatter) .token.variable,
-.one-dark.theme-dark pre:not(.frontmatter) .token.operator,
-.one-dark.theme-dark pre:not(.frontmatter) .token.function,
-.one-dark.theme-dark .HyperMD-codeblock .cm-variable,
-.one-dark.theme-dark .HyperMD-codeblock .cm-variable-2,
-.one-dark.theme-dark .HyperMD-codeblock .cm-variable-3,
-.one-dark.theme-dark .HyperMD-codeblock .cm-operator,
-.one-dark.theme-dark .HyperMD-codeblock .token.variable,
-.one-dark.theme-dark .HyperMD-codeblock .token.operator,
-.one-dark.theme-dark .HyperMD-codeblock .token.function {
+.theme-dark p > code .cm-variable,
+.theme-dark p > code .cm-variable-2,
+.theme-dark p > code .cm-variable-3,
+.theme-dark p > code .cm-operator,
+.theme-dark p > code .token.variable,
+.theme-dark p > code .token.operator,
+.theme-dark p > code .token.function,
+.theme-dark pre:not(.frontmatter) .cm-variable,
+.theme-dark pre:not(.frontmatter) .cm-variable-2,
+.theme-dark pre:not(.frontmatter) .cm-variable-3,
+.theme-dark pre:not(.frontmatter) .cm-operator,
+.theme-dark pre:not(.frontmatter) .token.variable,
+.theme-dark pre:not(.frontmatter) .token.operator,
+.theme-dark pre:not(.frontmatter) .token.function,
+.theme-dark .HyperMD-codeblock .cm-variable,
+.theme-dark .HyperMD-codeblock .cm-variable-2,
+.theme-dark .HyperMD-codeblock .cm-variable-3,
+.theme-dark .HyperMD-codeblock .cm-operator,
+.theme-dark .HyperMD-codeblock .token.variable,
+.theme-dark .HyperMD-codeblock .token.operator,
+.theme-dark .HyperMD-codeblock .token.function {
   color: hsl(207deg, 82%, 66%);
 }
 
-.one-dark.theme-dark p > code .cm-link,
-.one-dark.theme-dark p > code .token.url,
-.one-dark.theme-dark pre:not(.frontmatter) .cm-link,
-.one-dark.theme-dark pre:not(.frontmatter) .token.url,
-.one-dark.theme-dark .HyperMD-codeblock .cm-link,
-.one-dark.theme-dark .HyperMD-codeblock .token.url {
+.theme-dark p > code .cm-link,
+.theme-dark p > code .token.url,
+.theme-dark pre:not(.frontmatter) .cm-link,
+.theme-dark pre:not(.frontmatter) .token.url,
+.theme-dark .HyperMD-codeblock .cm-link,
+.theme-dark .HyperMD-codeblock .token.url {
   color: hsl(187deg, 47%, 55%);
 }
 
-.one-dark.theme-dark
-  p
-  > code
-  .token.attr-value
-  > .token.punctuation.attr-equals,
-.one-dark.theme-dark
-  p
-  > code
-  .token.special-attr
-  > .token.attr-value
-  > .token.value.css,
-.one-dark.theme-dark
+.theme-dark p > code .token.attr-value > .token.punctuation.attr-equals,
+.theme-dark p > code .token.special-attr > .token.attr-value > .token.value.css,
+.theme-dark
   pre:not(.frontmatter)
   .token.attr-value
   > .token.punctuation.attr-equals,
-.one-dark.theme-dark
+.theme-dark
   pre:not(.frontmatter)
   .token.special-attr
   > .token.attr-value
   > .token.value.css,
-.one-dark.theme-dark
+.theme-dark
   .HyperMD-codeblock
   .token.attr-value
   > .token.punctuation.attr-equals,
-.one-dark.theme-dark
+.theme-dark
   .HyperMD-codeblock
   .token.special-attr
   > .token.attr-value
@@ -216,86 +204,62 @@
   color: hsl(220deg, 14%, 71%);
 }
 
-.one-dark.theme-dark p > code .language-css .token.selector,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.selector,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.selector {
+.theme-dark p > code .language-css .token.selector,
+.theme-dark pre:not(.frontmatter) .language-css .token.selector,
+.theme-dark .HyperMD-codeblock .language-css .token.selector {
   color: hsl(355deg, 65%, 65%);
 }
 
-.one-dark.theme-dark p > code .language-css .token.property,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.property,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.property {
+.theme-dark p > code .language-css .token.property,
+.theme-dark pre:not(.frontmatter) .language-css .token.property,
+.theme-dark .HyperMD-codeblock .language-css .token.property {
   color: hsl(220deg, 14%, 71%);
 }
 
-.one-dark.theme-dark p > code .language-css .token.function,
-.one-dark.theme-dark p > code .language-css .token.url > .token.function,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.function,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-css
-  .token.url
-  > .token.function,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.function,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-css
-  .token.url
-  > .token.function {
+.theme-dark p > code .language-css .token.function,
+.theme-dark p > code .language-css .token.url > .token.function,
+.theme-dark pre:not(.frontmatter) .language-css .token.function,
+.theme-dark pre:not(.frontmatter) .language-css .token.url > .token.function,
+.theme-dark .HyperMD-codeblock .language-css .token.function,
+.theme-dark .HyperMD-codeblock .language-css .token.url > .token.function {
   color: hsl(187deg, 47%, 55%);
 }
 
-.one-dark.theme-dark p > code .language-css .token.url > .token.string.url,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-css
-  .token.url
-  > .token.string.url,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-css
-  .token.url
-  > .token.string.url {
+.theme-dark p > code .language-css .token.url > .token.string.url,
+.theme-dark pre:not(.frontmatter) .language-css .token.url > .token.string.url,
+.theme-dark .HyperMD-codeblock .language-css .token.url > .token.string.url {
   color: hsl(95deg, 38%, 62%);
 }
 
-.one-dark.theme-dark p > code .language-css .token.important,
-.one-dark.theme-dark p > code .language-css .token.atrule .token.rule,
-.one-dark.theme-dark pre:not(.frontmatter) .language-css .token.important,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-css
-  .token.atrule
-  .token.rule,
-.one-dark.theme-dark .HyperMD-codeblock .language-css .token.important,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-css
-  .token.atrule
-  .token.rule {
+.theme-dark p > code .language-css .token.important,
+.theme-dark p > code .language-css .token.atrule .token.rule,
+.theme-dark pre:not(.frontmatter) .language-css .token.important,
+.theme-dark pre:not(.frontmatter) .language-css .token.atrule .token.rule,
+.theme-dark .HyperMD-codeblock .language-css .token.important,
+.theme-dark .HyperMD-codeblock .language-css .token.atrule .token.rule {
   color: hsl(286deg, 60%, 67%);
 }
 
-.one-dark.theme-dark p > code .language-javascript .token.operator,
-.one-dark.theme-dark pre:not(.frontmatter) .language-javascript .token.operator,
-.one-dark.theme-dark .HyperMD-codeblock .language-javascript .token.operator {
+.theme-dark p > code .language-javascript .token.operator,
+.theme-dark pre:not(.frontmatter) .language-javascript .token.operator,
+.theme-dark .HyperMD-codeblock .language-javascript .token.operator {
   color: hsl(286deg, 60%, 67%);
 }
 
-.one-dark.theme-dark
+.theme-dark
   p
   > code
   .language-javascript
   .token.template-string
   > .token.interpolation
   > .token.interpolation-punctuation.punctuation,
-.one-dark.theme-dark
+.theme-dark
   pre:not(.frontmatter)
   .language-javascript
   .token.template-string
   > .token.interpolation
   > .token.interpolation-punctuation.punctuation,
-.one-dark.theme-dark
+.theme-dark
   .HyperMD-codeblock
   .language-javascript
   .token.template-string
@@ -304,44 +268,40 @@
   color: hsl(5deg, 48%, 51%);
 }
 
-.one-dark.theme-dark p > code .language-json .token.operator,
-.one-dark.theme-dark pre:not(.frontmatter) .language-json .token.operator,
-.one-dark.theme-dark .HyperMD-codeblock .language-json .token.operator {
+.theme-dark p > code .language-json .token.operator,
+.theme-dark pre:not(.frontmatter) .language-json .token.operator,
+.theme-dark .HyperMD-codeblock .language-json .token.operator {
   color: hsl(220deg, 14%, 71%);
 }
 
-.one-dark.theme-dark p > code .language-json .token.null.keyword,
-.one-dark.theme-dark pre:not(.frontmatter) .language-json .token.null.keyword,
-.one-dark.theme-dark .HyperMD-codeblock .language-json .token.null.keyword {
+.theme-dark p > code .language-json .token.null.keyword,
+.theme-dark pre:not(.frontmatter) .language-json .token.null.keyword,
+.theme-dark .HyperMD-codeblock .language-json .token.null.keyword {
   color: hsl(29deg, 54%, 61%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.url,
-.one-dark.theme-dark p > code .language-markdown .token.url > .token.operator,
-.one-dark.theme-dark
+.theme-dark p > code .language-markdown .token.url,
+.theme-dark p > code .language-markdown .token.url > .token.operator,
+.theme-dark
   p
   > code
   .language-markdown
   .token.url-reference.url
   > .token.string,
-.one-dark.theme-dark pre:not(.frontmatter) .language-markdown .token.url,
-.one-dark.theme-dark
+.theme-dark pre:not(.frontmatter) .language-markdown .token.url,
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.url
   > .token.operator,
-.one-dark.theme-dark
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.url-reference.url
   > .token.string,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.url,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.url
-  > .token.operator,
-.one-dark.theme-dark
+.theme-dark .HyperMD-codeblock .language-markdown .token.url,
+.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.operator,
+.theme-dark
   .HyperMD-codeblock
   .language-markdown
   .token.url-reference.url
@@ -349,150 +309,93 @@
   color: hsl(220deg, 14%, 71%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.url > .token.content,
-.one-dark.theme-dark
+.theme-dark p > code .language-markdown .token.url > .token.content,
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.url
   > .token.content,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.url
-  > .token.content {
+.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.content {
   color: hsl(207deg, 82%, 66%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.url > .token.url,
-.one-dark.theme-dark p > code .language-markdown .token.url-reference.url,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.url
-  > .token.url,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.url-reference.url,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.url
-  > .token.url,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.url-reference.url {
+.theme-dark p > code .language-markdown .token.url > .token.url,
+.theme-dark p > code .language-markdown .token.url-reference.url,
+.theme-dark pre:not(.frontmatter) .language-markdown .token.url > .token.url,
+.theme-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url,
+.theme-dark .HyperMD-codeblock .language-markdown .token.url > .token.url,
+.theme-dark .HyperMD-codeblock .language-markdown .token.url-reference.url {
   color: hsl(187deg, 47%, 55%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.blockquote.punctuation,
-.one-dark.theme-dark p > code .language-markdown .token.hr.punctuation,
-.one-dark.theme-dark
+.theme-dark p > code .language-markdown .token.blockquote.punctuation,
+.theme-dark p > code .language-markdown .token.hr.punctuation,
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.blockquote.punctuation,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.hr.punctuation,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.blockquote.punctuation,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.hr.punctuation {
+.theme-dark pre:not(.frontmatter) .language-markdown .token.hr.punctuation,
+.theme-dark .HyperMD-codeblock .language-markdown .token.blockquote.punctuation,
+.theme-dark .HyperMD-codeblock .language-markdown .token.hr.punctuation {
   color: hsl(220deg, 10%, 40%);
   font-style: italic;
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.code-snippet,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.code-snippet,
-.one-dark.theme-dark .HyperMD-codeblock .language-markdown .token.code-snippet {
+.theme-dark p > code .language-markdown .token.code-snippet,
+.theme-dark pre:not(.frontmatter) .language-markdown .token.code-snippet,
+.theme-dark .HyperMD-codeblock .language-markdown .token.code-snippet {
   color: hsl(95deg, 38%, 62%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.bold .token.content,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.bold
-  .token.content,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.bold
-  .token.content {
+.theme-dark p > code .language-markdown .token.bold .token.content,
+.theme-dark pre:not(.frontmatter) .language-markdown .token.bold .token.content,
+.theme-dark .HyperMD-codeblock .language-markdown .token.bold .token.content {
   color: hsl(29deg, 54%, 61%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.italic .token.content,
-.one-dark.theme-dark
+.theme-dark p > code .language-markdown .token.italic .token.content,
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.italic
   .token.content,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.italic
-  .token.content {
+.theme-dark .HyperMD-codeblock .language-markdown .token.italic .token.content {
   color: hsl(286deg, 60%, 67%);
 }
 
-.one-dark.theme-dark p > code .language-markdown .token.strike .token.content,
-.one-dark.theme-dark
-  p
-  > code
-  .language-markdown
-  .token.strike
-  .token.punctuation,
-.one-dark.theme-dark p > code .language-markdown .token.list.punctuation,
-.one-dark.theme-dark
+.theme-dark p > code .language-markdown .token.strike .token.content,
+.theme-dark p > code .language-markdown .token.strike .token.punctuation,
+.theme-dark p > code .language-markdown .token.list.punctuation,
+.theme-dark
   p
   > code
   .language-markdown
   .token.title.important
   > .token.punctuation,
-.one-dark.theme-dark
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.strike
   .token.content,
-.one-dark.theme-dark
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.strike
   .token.punctuation,
-.one-dark.theme-dark
-  pre:not(.frontmatter)
-  .language-markdown
-  .token.list.punctuation,
-.one-dark.theme-dark
+.theme-dark pre:not(.frontmatter) .language-markdown .token.list.punctuation,
+.theme-dark
   pre:not(.frontmatter)
   .language-markdown
   .token.title.important
   > .token.punctuation,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.strike
-  .token.content,
-.one-dark.theme-dark
+.theme-dark .HyperMD-codeblock .language-markdown .token.strike .token.content,
+.theme-dark
   .HyperMD-codeblock
   .language-markdown
   .token.strike
   .token.punctuation,
-.one-dark.theme-dark
-  .HyperMD-codeblock
-  .language-markdown
-  .token.list.punctuation,
-.one-dark.theme-dark
+.theme-dark .HyperMD-codeblock .language-markdown .token.list.punctuation,
+.theme-dark
   .HyperMD-codeblock
   .language-markdown
   .token.title.important
@@ -500,29 +403,29 @@
   color: hsl(355deg, 65%, 65%);
 }
 
-.one-dark.theme-dark p > code .token.bold,
-.one-dark.theme-dark pre:not(.frontmatter) .token.bold,
-.one-dark.theme-dark .HyperMD-codeblock .token.bold {
+.theme-dark p > code .token.bold,
+.theme-dark pre:not(.frontmatter) .token.bold,
+.theme-dark .HyperMD-codeblock .token.bold {
   font-weight: bold;
 }
 
-.one-dark.theme-dark p > code .token.comment,
-.one-dark.theme-dark p > code .token.italic,
-.one-dark.theme-dark pre:not(.frontmatter) .token.comment,
-.one-dark.theme-dark pre:not(.frontmatter) .token.italic,
-.one-dark.theme-dark .HyperMD-codeblock .token.comment,
-.one-dark.theme-dark .HyperMD-codeblock .token.italic {
+.theme-dark p > code .token.comment,
+.theme-dark p > code .token.italic,
+.theme-dark pre:not(.frontmatter) .token.comment,
+.theme-dark pre:not(.frontmatter) .token.italic,
+.theme-dark .HyperMD-codeblock .token.comment,
+.theme-dark .HyperMD-codeblock .token.italic {
   font-style: italic;
 }
 
-.one-dark.theme-dark p > code .token.entity,
-.one-dark.theme-dark pre:not(.frontmatter) .token.entity,
-.one-dark.theme-dark .HyperMD-codeblock .token.entity {
+.theme-dark p > code .token.entity,
+.theme-dark pre:not(.frontmatter) .token.entity,
+.theme-dark .HyperMD-codeblock .token.entity {
   cursor: help;
 }
 
-.one-dark.theme-dark p > code .token.namespace,
-.one-dark.theme-dark pre:not(.frontmatter) .token.namespace,
-.one-dark.theme-dark .HyperMD-codeblock .token.namespace {
+.theme-dark p > code .token.namespace,
+.theme-dark pre:not(.frontmatter) .token.namespace,
+.theme-dark .HyperMD-codeblock .token.namespace {
   opacity: 0.8;
 }

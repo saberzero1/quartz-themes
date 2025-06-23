@@ -1,8 +1,3 @@
-body:not(.table-unwrap) .cm-s-obsidian .HyperMD-table-row.HyperMD-table-row {
-  min-width: min-content;
-  white-space: pre-wrap;
-}
-
 .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn,
 .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn {
   color: var(--table-add-button-color);
@@ -46,18 +41,6 @@ body:not(.table-unwrap) .cm-s-obsidian .HyperMD-table-row.HyperMD-table-row {
 
 body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   padding-inline-start: 0;
-}
-
-body:not(.default-statblock)
-  .obsidian-statblock-plugin
-  .column
-  > .statblock-item-container:nth-child(odd):not(
-    .rule-container,
-    .table-container,
-    .traits-container,
-    .heading-container
-  ) {
-  background: var(--statblock-alt);
 }
 
 .callout[data-callout~='cards'][data-callout-metadata~='flex']
@@ -279,20 +262,20 @@ body:not(.default-statblock)
   padding: 0;
 }
 
-.tables-center .cm-table-widget.cm-table-widget .table-wrapper,
-.tables-center table,
+s-center .cm-table-widget.cm-table-widget .table-wrapper,
+s-center table,
 .t-c .cm-table-widget.cm-table-widget .table-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
 
-.tables-wide table,
-.tables-wide .cm-table-widget.markdown-rendered .table-wrapper,
+s-wide table,
+s-wide .cm-table-widget.markdown-rendered .table-wrapper,
 .t-w .cm-table-widget.markdown-rendered .table-wrapper {
   min-width: 100%;
 }
 
-.tables-no-alt-background.tables-no-alt-background,
+s-no-alt-backgrounds-no-alt-background,
 .table-nalt.table-nalt {
   --table-column-alt-background: transparent;
   --table-row-alt-background: transparent;
@@ -300,75 +283,48 @@ body:not(.default-statblock)
   --table-column-background-hover: transparent;
 }
 
-.tables-no-alt-column-background.tables-no-alt-column-background {
+s-no-alt-column-backgrounds-no-alt-column-background {
   --table-column-alt-background: transparent;
   --table-column-background-hover: transparent;
 }
 
-.tables-no-alt-row-background.tables-no-alt-row-background {
+s-no-alt-row-backgrounds-no-alt-row-background {
   --table-row-alt-background: transparent;
   --table-row-background-hover: transparent;
 }
 
-:is(.table-alto, .tables-alt-original)
-  .markdown-rendered
-  tbody
-  tr
-  > td:nth-child(2n + 2),
-:is(.table-alto, .tables-alt-original)
-  .markdown-rendered
-  tbody
-  tr:nth-child(odd) {
-  background-color: transparent;
-}
-
-:is(.table-alto, .tables-alt-original)
-  .markdown-rendered
-  tbody
-  tr
-  > td:nth-child(odd) {
-  background-color: var(--table-column-alt-background);
-}
-
-:is(.table-alto, .tables-alt-original)
-  .markdown-rendered
-  tbody
-  tr:nth-child(even) {
-  background-color: var(--table-row-alt-background);
-}
-
-.tables-no-hover {
+s-no-hover {
   --table-header-background-hover: var(--table-header-background);
 }
 
-.tables-no-hover tbody tr:nth-child(odd):hover {
+s-no-hover tbody tr:nth-child(odd):hover {
   --table-row-alt-background-hover: var(--table-row-alt-background);
 }
 
-.tables-no-hover tbody tr:nth-child(even):hover {
+s-no-hover tbody tr:nth-child(even):hover {
   --table-row-background-hover: var(--table-row-background);
 }
 
-.tables-borders {
+s-borders {
   --table-border-color: var(--hr);
 }
 
-.table.table {
+.table {
   --table-style-column-header-background: var(--outer-bar);
   --table-style-column-header-bold-weight: var(--bold-weight);
   --table-style-column-header-bold-color: var(--bold-color);
 }
 
-.table.table td:nth-child(1) {
+.table td:nth-child(1) {
   font-weight: var(--table-style-column-header-bold-weight);
   color: var(--table-style-column-header-bold-color);
 }
 
-.table.table tr td:nth-child(1) {
+.table tr td:nth-child(1) {
   background-color: var(--table-style-column-header-background);
 }
 
-.table.table tr:hover td:nth-child(1) {
+.table tr:hover td:nth-child(1) {
   background-color: var(--table-row-alt-background-hover);
 }
 
@@ -380,7 +336,7 @@ body:not(.default-statblock)
   background-color: var(--table-header-background-hover);
 }
 
-.tables-styling-wikipedia,
+s-styling-wikipedia,
 .table-wikipedia {
   --table-header-color: var(--text);
   --table-header-background: transparent;
@@ -390,7 +346,7 @@ body:not(.default-statblock)
   --table-column-alt-background: transparent;
 }
 
-.tables-styling-wikipedia tr:last-child,
+s-styling-wikipedia tr:last-child,
 .table-wikipedia tr:last-child {
   margin-bottom: 2px;
 }

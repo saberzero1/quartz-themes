@@ -5,6 +5,9 @@ body:not(.disableMiniMode)
   .workspace-tab-header-container {
   margin-right: 0px;
 }
+:is(.mod-windows, .mod-linux) {
+  --frame-right-space: 0px;
+}
 html .mod-windows .mod-root,
 html .mod-linux .mod-root {
   --frame-right-space: 0px;

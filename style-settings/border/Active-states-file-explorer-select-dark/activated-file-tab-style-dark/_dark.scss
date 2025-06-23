@@ -1,4 +1,4 @@
-.activated-file-tab-style-dark.theme-dark {
+.theme-dark {
   --border-radius-activated-file-dark: var(
     --border-radius-activated-tab-header-dark
   ) !important;
@@ -12,9 +12,7 @@
     --shadow-activated-tab-header-dark
   ) !important;
 }
-.activated-file-tab-style-dark.theme-dark
-  .nav-file-title.is-active
-  .nav-file-tag,
-.activated-file-tab-style-dark.theme-dark .tree-item-self.is-active svg {
+.theme-dark .nav-file-title.is-active .nav-file-tag,
+.theme-dark .tree-item-self.is-active svg {
   color: var(--color-activated-file-dark) !important;
 }

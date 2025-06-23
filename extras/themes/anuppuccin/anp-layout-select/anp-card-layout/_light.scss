@@ -1,12 +1,12 @@
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-light.theme-light,
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-dark.theme-dark,
-.anp-colorful-fram.anp-card-layout-actions .workspace-ribbon,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light,
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark,
+.anp-colorful-frame.anp-card-layout-actions .workspace-ribbon,
 .anp-colorful-frame.anp-card-layout .workspace-tab-container,
 .anp-colorful-frame.anp-card-layout .modal,
 .anp-colorful-frame.anp-card-layout
   .mod-vertical
   .workspace-tab-header.is-active,
-.anp-colorful-fram.anp-alternate-tab-toggle
+.anp-colorful-frame.anp-alternate-tab-toggle
   .mod-vertical
   .workspace-tab-header {
   --tab-text-color: var(--text-faint);
@@ -21,36 +21,36 @@
   --icon-color-focused: var(--text-normal);
 }
 
-.anp-colorful-fram.anp-mini-tab-toggle
+.anp-colorful-frame.anp-mini-tab-toggle
   .mod-vertical
   .workspace-tab-header
   .workspace-tab-header-inner-title,
-.anp-colorful-fram.anp-mini-tab-toggle
+.anp-colorful-frame.anp-mini-tab-toggle
   .mod-vertical
   .workspace-tab-header
   .workspace-tab-header-inner-title,
-.anp-colorful-fram.is-focused:not(
+.anp-colorful-frame.is-focused:not(
     .anp-colorful-frame-icon-toggle-dark.theme-dark
   )
   .mod-left-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused:not(
+.anp-colorful-frame.is-focused:not(
     .anp-colorful-frame-icon-toggle-light.theme-light
   )
   .mod-left-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused:not(
+.anp-colorful-frame.is-focused:not(
     .anp-colorful-frame-icon-toggle-dark.theme-dark
   )
   .mod-right-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused:not(
+.anp-colorful-frame.is-focused:not(
     .anp-colorful-frame-icon-toggle-light.theme-light
   )
   .mod-right-split
@@ -60,22 +60,22 @@
   color: var(--background-secondary-alt);
 }
 
-.anp-colorful-fram.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-left-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-right-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-left-split
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
+.anp-colorful-frame.is-focused.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-right-split
   .mod-active
   .workspace-tab-header.is-active
@@ -83,16 +83,16 @@
   color: var(--text-normal);
 }
 
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-light.theme-light
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-right-split
   .workspace-tab-header.is-active,
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-light.theme-light
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-left-split
   .workspace-tab-header.is-active,
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-dark.theme-dark
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-right-split
   .workspace-tab-header.is-active,
-.anp-colorful-fram.anp-colorful-frame-icon-toggle-dark.theme-dark
+.anp-colorful-frame.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-left-split
   .workspace-tab-header.is-active {
   background-color: rgba(var(--ctp-text), 0.3);

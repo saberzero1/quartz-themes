@@ -1,6 +1,17 @@
 body:not(.is-mobile).card-layout-open-light.mod-root-split-background-CSS-light
   .workspace-split.mod-root
-  .workspace-tab-container {
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-root-split-background-CSS-light
+  .workspace-split.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile).theme-light:not(
+    .card-layout-open-light
+  ).mod-root-split-background-CSS-light
+  .workspace-split.mod-root
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-root-CSS-light) !important;
   background-blend-mode: var(--background-mod-root-CSS-blend-mode-light);
   backdrop-filter: var(--background-mod-root-CSS-backdrop-filter-light);

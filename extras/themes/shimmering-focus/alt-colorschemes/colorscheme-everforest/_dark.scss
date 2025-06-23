@@ -1,4 +1,4 @@
-.colorscheme-everforest.theme-dark {
+.theme-dark {
   --bg-hue: 204;
   --bg-sat: 14%;
   --bg-val: 21%;
@@ -11,7 +11,7 @@
   --link-unresolved-color: #dbbd80;
 }
 
-.colorscheme-everforest.theme-dark ::selection {
+.theme-dark ::selection {
   color: #fff;
   background-color: #a8c181;
 }

@@ -44,12 +44,12 @@ body.is-phone.fab-enabled-mobile:not(.custom-page-header)
   transform: scale(0.8) translate(-50%, -50%);
 }
 
-body.is-phon.custom-page-header {
+body.is-phone.custom-page-header {
   /* Advanced Mobile Toolbar Mode */
   /* Shrink FAB on small displays */
 }
 
-body.is-phon.custom-page-header .view-action:first-child {
+body.is-phone.custom-page-header .view-action:first-child {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
   display: flex;
@@ -71,17 +71,17 @@ body.is-phon.custom-page-header .view-action:first-child {
   top: calc(100vh - 48px - 44px - 16px);
 }
 
-body.is-phon.custom-page-header .view-action:first-child > *:first-child {
+body.is-phone.custom-page-header .view-action:first-child > *:first-child {
   width: 24px;
   height: 24px;
 }
 
-body.is-phon.custom-page-header
+body.is-phone.custom-page-header
   body:not(:not(.advanced-toolbar-mode))
   .view-action:nth-last-of-type(5) {
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
 }
 
-body.is-phon.custom-page-header .view-action:nth-last-of-type(5) {
+body.is-phone.custom-page-header .view-action:nth-last-of-type(5) {
   transform: scale(0.8) translate(-50%, -50%);
 }

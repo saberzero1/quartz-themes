@@ -1,6 +1,17 @@
 body:not(.is-mobile).card-layout-open-dark.mod-right-split-background-CSS-dark
   .workspace-split.mod-right-split
-  .workspace-tab-container {
+  .workspace-tab-container,
+body:not(.is-mobile).theme-dark:not(
+    .card-layout-open-dark
+  ).mod-right-split-background-CSS-dark
+  .workspace-split.mod-right-split
+  .workspace-tabs.mod-top
+  .workspace-tab-container,
+body:not(.is-mobile).theme-dark:not(
+    .card-layout-open-dark
+  ).mod-right-split-background-CSS-dark
+  .workspace-split.mod-right-split
+  .workspace-tabs:not(.mod-top) {
   background: var(--background-mod-right-CSS-dark) !important;
   background-blend-mode: var(--background-mod-right-CSS-blend-mode-dark);
   backdrop-filter: var(--background-mod-right-CSS-backdrop-filter-dark);

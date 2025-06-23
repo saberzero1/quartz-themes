@@ -2,7 +2,7 @@
 .theme-celestial .cm-s-obsidian span.cm highlight {
   color: white;
 }
-.theme-celestial.colorful-headings-alt {
+.colorful-headings-alt {
   --h1-color: #5684d9;
   --h2-color: rgb(119, 148, 214);
   --h3-color: #6e9dc7;
@@ -10,7 +10,7 @@
   --h5-color: rgb(89, 155, 181);
   --h6-color: #7194a9;
 }
-.theme-celestial.colorful-headings {
+.colorful-headings {
   --h6-color: #898fe1;
   --h5-color: rgb(94, 133, 224);
   --h4-color: #579fde;
@@ -18,7 +18,7 @@
   --h2-color: #94d0e7;
   --h1-color: #ceebff;
 }
-.theme-celestial.theme-dark {
+.theme-dark {
   color-scheme: dark;
   --font-default: 'Merienda', cursive;
   --highlight-mix-blend-mode: lighten;
@@ -63,11 +63,11 @@
   --h5-color: white;
   --h6-color: white;
 }
-.theme-celestial.theme-dark blockquote {
+.theme-dark blockquote {
   border-radius: 50px;
   padding: 1em 1.5em 1em 1.5em;
 }
-.theme-celestial.theme-dark .markdown-rendered hr,
-.theme-celestial.theme-dark .markdown-source-view hr {
+.theme-dark .markdown-rendered hr,
+.theme-dark .markdown-source-view hr {
   border-color: var(--text-faint);
 }

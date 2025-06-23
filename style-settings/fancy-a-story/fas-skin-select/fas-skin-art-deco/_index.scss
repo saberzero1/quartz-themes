@@ -394,7 +394,7 @@
   --sidebar-texture-position: center center;
   --sidebar-texture-opacity: 0.2;
 }
-.fas-skin-art-deco.fas-bg-textures:not(.fas-sidebar-texture-custom)
+.fas-bg-textures:not(.fas-sidebar-texture-custom)
   .mod-sidedock
   .workspace-leaf {
   background-repeat: no-repeat;
@@ -439,7 +439,7 @@
   box-shadow: none;
   text-shadow: 0px 0px 2px var(--background-modifier-hover);
 }
-.fas-skin-art-deco.fas-h1-display
+.fas-h1-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
@@ -460,7 +460,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h1-display
+.fas-h1-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
@@ -496,7 +496,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h1-display
+.fas-h1-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
@@ -506,7 +506,7 @@
   h1:not(.callout h1, ul h1, ol h1):is(.is-collapsed > h1)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h1-display
+.fas-h1-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
@@ -518,7 +518,7 @@
   .heading-collapse-indicator {
   margin-inline-start: 0;
 }
-.fas-skin-art-deco.fas-h2-display
+.fas-h2-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
   )
@@ -539,7 +539,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h2-display
+.fas-h2-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
   )
@@ -575,7 +575,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h2-display
+.fas-h2-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
   )
@@ -585,7 +585,7 @@
   h2:not(.callout h2, ul h2, ol h2):is(.is-collapsed > h2)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h2-display
+.fas-h2-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h2-stroke, .h2-normal, .sci-fi)
   )
@@ -597,7 +597,7 @@
   .heading-collapse-indicator {
   margin-inline-start: 0;
 }
-.fas-skin-art-deco.fas-h3-display
+.fas-h3-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-normal, .sci-fi)
   )
@@ -618,7 +618,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h3-display
+.fas-h3-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-normal, .sci-fi)
   )
@@ -654,7 +654,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h3-display
+.fas-h3-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-normal, .sci-fi)
   )
@@ -664,7 +664,7 @@
   h3:not(.callout h3, ul h3, ol h3):is(.is-collapsed > h3)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h3-display
+.fas-h3-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h3-stroke, .h3-normal, .sci-fi)
   )
@@ -676,7 +676,7 @@
   .heading-collapse-indicator {
   margin-inline-start: 0;
 }
-.fas-skin-art-deco.fas-h4-display
+.fas-h4-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-normal, .sci-fi)
   )
@@ -697,7 +697,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h4-display
+.fas-h4-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-normal, .sci-fi)
   )
@@ -733,7 +733,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h4-display
+.fas-h4-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-normal, .sci-fi)
   )
@@ -743,7 +743,7 @@
   h4:not(.callout h4, ul h4, ol h4):is(.is-collapsed > h4)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h4-display
+.fas-h4-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h4-stroke, .h4-normal, .sci-fi)
   )
@@ -755,7 +755,7 @@
   .heading-collapse-indicator {
   margin-inline-start: 0;
 }
-.fas-skin-art-deco.fas-h5-display
+.fas-h5-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-normal, .sci-fi)
   )
@@ -776,7 +776,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h5-display
+.fas-h5-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-normal, .sci-fi)
   )
@@ -812,7 +812,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h5-display
+.fas-h5-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-normal, .sci-fi)
   )
@@ -822,7 +822,7 @@
   h5:not(.callout h5, ul h5, ol h5):is(.is-collapsed > h5)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h5-display
+.fas-h5-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h5-stroke, .h5-normal, .sci-fi)
   )
@@ -834,7 +834,7 @@
   .heading-collapse-indicator {
   margin-inline-start: 0;
 }
-.fas-skin-art-deco.fas-h6-display
+.fas-h6-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-normal, .sci-fi)
   )
@@ -855,7 +855,7 @@
   padding-block: calc(var(--cutout-outline-inset) + 16px);
   clip-path: none;
 }
-.fas-skin-art-deco.fas-h6-display
+.fas-h6-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-normal, .sci-fi)
   )
@@ -891,7 +891,7 @@
       calc(0.2514469152 * var(--corner-size) - 0.5px)
       calc(100% - 2 * var(--corner-size)) no-repeat;
 }
-.fas-skin-art-deco.fas-h6-display
+.fas-h6-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-normal, .sci-fi)
   )
@@ -901,7 +901,7 @@
   h6:not(.callout h6, ul h6, ol h6):is(.is-collapsed > h6)::after {
   content: none;
 }
-.fas-skin-art-deco.fas-h6-display
+.fas-h6-display
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h6-stroke, .h6-normal, .sci-fi)
   )

@@ -40,12 +40,12 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-.fas-skin-sci-fi.is-mobile .markdown-reading-view::before,
-.fas-skin-sci-fi.is-mobile .markdown-source-view::before {
+.is-mobile .markdown-reading-view::before,
+.is-mobile .markdown-source-view::before {
   top: var(--view-header-height);
 }
 
-.fas-skin-sci-fi.is-mobile .markdown-reading-view::before {
+.is-mobile .markdown-reading-view::before {
   right: var(--scrollbar-width, 12px);
 }
 
@@ -63,9 +63,7 @@
   background-size: 40px 40px;
 }
 
-.fas-skin-sci-fi.fas-h1-display
-  .markdown-preview-view
-  h1:not(.callout h1, ul h1, ol h1),
+.fas-h1-display .markdown-preview-view h1:not(.callout h1, ul h1, ol h1),
 .fas-skin-sci-fi
   .markdown-preview-view.h1-display
   h1:not(.callout h1, ul h1, ol h1) {
@@ -77,7 +75,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h1-display
+.fas-h1-display
   .markdown-preview-view
   h1:not(.callout h1, ul h1, ol h1)::before,
 .fas-skin-sci-fi
@@ -101,9 +99,7 @@
   margin-right: 0.2em;
 }
 
-.fas-skin-sci-fi.fas-h2-display
-  .markdown-preview-view
-  h2:not(.callout h2, ul h2, ol h2),
+.fas-h2-display .markdown-preview-view h2:not(.callout h2, ul h2, ol h2),
 .fas-skin-sci-fi
   .markdown-preview-view.h2-display
   h2:not(.callout h2, ul h2, ol h2) {
@@ -115,7 +111,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h2-display
+.fas-h2-display
   .markdown-preview-view
   h2:not(.callout h2, ul h2, ol h2)::before,
 .fas-skin-sci-fi
@@ -139,9 +135,7 @@
   margin-right: 0.2em;
 }
 
-.fas-skin-sci-fi.fas-h3-display
-  .markdown-preview-view
-  h3:not(.callout h3, ul h3, ol h3),
+.fas-h3-display .markdown-preview-view h3:not(.callout h3, ul h3, ol h3),
 .fas-skin-sci-fi
   .markdown-preview-view.h3-display
   h3:not(.callout h3, ul h3, ol h3) {
@@ -153,7 +147,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h3-display
+.fas-h3-display
   .markdown-preview-view
   h3:not(.callout h3, ul h3, ol h3)::before,
 .fas-skin-sci-fi
@@ -177,9 +171,7 @@
   margin-right: 0.2em;
 }
 
-.fas-skin-sci-fi.fas-h4-display
-  .markdown-preview-view
-  h4:not(.callout h4, ul h4, ol h4),
+.fas-h4-display .markdown-preview-view h4:not(.callout h4, ul h4, ol h4),
 .fas-skin-sci-fi
   .markdown-preview-view.h4-display
   h4:not(.callout h4, ul h4, ol h4) {
@@ -191,7 +183,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h4-display
+.fas-h4-display
   .markdown-preview-view
   h4:not(.callout h4, ul h4, ol h4)::before,
 .fas-skin-sci-fi
@@ -215,9 +207,7 @@
   margin-right: 0.2em;
 }
 
-.fas-skin-sci-fi.fas-h5-display
-  .markdown-preview-view
-  h5:not(.callout h5, ul h5, ol h5),
+.fas-h5-display .markdown-preview-view h5:not(.callout h5, ul h5, ol h5),
 .fas-skin-sci-fi
   .markdown-preview-view.h5-display
   h5:not(.callout h5, ul h5, ol h5) {
@@ -229,7 +219,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h5-display
+.fas-h5-display
   .markdown-preview-view
   h5:not(.callout h5, ul h5, ol h5)::before,
 .fas-skin-sci-fi
@@ -253,9 +243,7 @@
   margin-right: 0.2em;
 }
 
-.fas-skin-sci-fi.fas-h6-display
-  .markdown-preview-view
-  h6:not(.callout h6, ul h6, ol h6),
+.fas-h6-display .markdown-preview-view h6:not(.callout h6, ul h6, ol h6),
 .fas-skin-sci-fi
   .markdown-preview-view.h6-display
   h6:not(.callout h6, ul h6, ol h6) {
@@ -267,7 +255,7 @@
   text-align: left;
 }
 
-.fas-skin-sci-fi.fas-h6-display
+.fas-h6-display
   .markdown-preview-view
   h6:not(.callout h6, ul h6, ol h6)::before,
 .fas-skin-sci-fi

@@ -11,7 +11,7 @@
 
 .embed-strict .internal-embed .markdown-embed,
 .embed-strict .markdown-preview-view .markdown-embed,
-.embed-strict.markdown-preview-view .markdown-embed {
+.markdown-preview-view .markdown-embed {
   padding: 0;
 }
 
@@ -31,7 +31,7 @@
   .markdown-preview-view
   .markdown-preview-sizer
   > div,
-.embed-strict.contextual-typography
+.contextual-typography
   .internal-embed
   .markdown-preview-view
   .markdown-preview-sizer

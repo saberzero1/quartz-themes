@@ -24,7 +24,7 @@
   clip-path: polygon(0 0, 4ch 0, 4ch calc(100% - 20px), 0 calc(100% - 20px));
 }
 
-.code-lines.code-label
+.code-label
   .markdown-rendered
   :not(pre.frontmatter)
   code[class*='language-']:before {

@@ -1,13 +1,97 @@
+.theme-light:not(.is-mobile).card-layout-open-light
+  .workspace-tabs
+  .workspace-tab-header-container {
+  --text-muted: var(--on-border-light);
+  --text-faint: var(--on-border-light);
+  --titlebar-text-color: var(--text-muted);
+  --titlebar-text-color-focused: var(--text-muted);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --status-bar-text-color: var(--text-muted);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+  --tab-text-color: var(--text-faint);
+  --icon-opacity: 1;
+  mix-blend-mode: var(--mix-blend-mode-on-border-light);
+}
+
 body.mod-left-split-background-transparent-light.card-layout-open-light {
   --background-mod-left-split: transparent !important;
+}
+
+body.theme-light:not(.is-mobile).mod-left-split-background-transparent-light
+  .mod-left-split
+  .workspace-tab-container {
+  --card-shadow-light: transparent;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace-split.mod-left-split
+  .workspace-tab-container {
+  background: var(--background-mod-left-split) !important;
+}
+
+body:not(.is-mobile).mod-left-split-background-CSS-light
+  .workspace-split.mod-left-split
+  .workspace-tab-container {
+  background: var(--background-mod-left-CSS-light) !important;
+  background-blend-mode: var(--background-mod-left-CSS-blend-mode-light);
+  backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
+  -webkit-backdrop-filter: var(--background-mod-left-CSS-backdrop-filter-light);
 }
 
 body.mod-right-split-background-transparent-light.card-layout-open-light {
   --background-mod-right-split: transparent !important;
 }
 
+body.theme-light:not(.is-mobile).mod-right-split-background-transparent-light
+  .mod-right-split
+  .workspace-tab-container {
+  --card-shadow-light: transparent;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace-split.mod-right-split
+  .workspace-tab-container {
+  background: var(--background-mod-right-split) !important;
+}
+
+body:not(.is-mobile).mod-right-split-background-CSS-light
+  .workspace-split.mod-right-split
+  .workspace-tab-container {
+  background: var(--background-mod-right-CSS-light) !important;
+  background-blend-mode: var(--background-mod-right-CSS-blend-mode-light);
+  backdrop-filter: var(--background-mod-right-CSS-backdrop-filter-light);
+  -webkit-backdrop-filter: var(
+    --background-mod-right-CSS-backdrop-filter-light
+  );
+}
+
 body.mod-root-split-background-transparent-light.card-layout-open-light {
   --background-mod-root-split: transparent !important;
+}
+
+body.theme-light:not(.is-mobile).mod-root-split-background-transparent-light
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-container {
+  --card-shadow-light: transparent;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace-split.mod-root
+  .workspace-tab-container {
+  background: var(--background-mod-root-split) !important;
+}
+
+body:not(.is-mobile).mod-root-split-background-CSS-light
+  .workspace-split.mod-root
+  .workspace-tab-container {
+  background: var(--background-mod-root-CSS-light) !important;
+  background-blend-mode: var(--background-mod-root-CSS-blend-mode-light);
+  backdrop-filter: var(--background-mod-root-CSS-backdrop-filter-light);
+  -webkit-backdrop-filter: var(--background-mod-root-CSS-backdrop-filter-light);
 }
 
 body.card-layout-open-light
@@ -17,17 +101,17 @@ body.card-layout-open-light
   box-shadow: inset 0px 1px 0px transparent;
 }
 
-body.mod-left-split-background-transparent-ligh.tab-autohide
+body.mod-left-split-background-transparent-light.tab-autohide
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-container
   > .workspace-leaf,
-body.mod-right-split-background-transparent-ligh.tab-autohide
+body.mod-right-split-background-transparent-light.tab-autohide
   .mod-right-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-container
   > .workspace-leaf,
-body.mod-root-split-background-transparent-ligh.tab-autohide
+body.mod-root-split-background-transparent-light.tab-autohide
   .mod-root
   .workspace-tabs:not(.mod-top)
   .workspace-tab-container
@@ -37,10 +121,68 @@ body.mod-root-split-background-transparent-ligh.tab-autohide
   border-top-right-radius: 0px !important;
 }
 
-body:not(.is-mobile).card-highlight-ligh.theme-light
+body:not(.is-mobile).theme-light .workspace::before {
+  display: none;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace.is-left-sidedock-open
+  .workspace-split.mod-horizontal.mod-left-split {
+  margin-right: 16px;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace.is-right-sidedock-open
+  .workspace-split.mod-horizontal.mod-right-split {
+  margin-left: 16px;
+}
+
+body:not(.is-mobile).theme-light .workspace-split.mod-vertical {
+  gap: 16px;
+}
+
+body:not(.is-mobile).theme-light .workspace-tab-container {
+  border-radius: var(--card-border-radius-light, 8px) !important;
+  overflow: hidden !important;
+  box-shadow: var(--card-shadow-light);
+}
+
+body:not(.is-mobile).theme-light .workspace-tabs,
+body:not(.is-mobile).theme-light .workspace-split {
+  overflow: visible !important;
+}
+
+body:not(.is-mobile).theme-light .workspace-tabs,
+body:not(.is-mobile).theme-light .workspace-tab-header-container {
+  background-color: transparent !important;
+}
+
+body:not(.is-mobile).theme-light
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container {
+  border-top: unset;
+}
+
+body:not(.is-mobile).card-highlight-light.theme-light
   .mod-root:has(.workspace-tabs + .workspace-tabs)
   .workspace-tabs.mod-active
   .workspace-tab-container {
   outline-offset: 0px;
   outline: 2px solid var(--color-accent-3);
+}
+
+body:not(.is-mobile).theme-light
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container {
+  overflow-x: auto !important;
+  &::-webkit-scrollbar-button {
+    width: 2px !important;
+  }
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+}
+
+body:not(.is-mobile).theme-light {
+  --workspace-divider-color: transparent;
 }

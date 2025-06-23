@@ -1,4 +1,4 @@
-bod {
+body {
   --grey-50-rgb: 242, 240, 229;
   --grey-100-rgb: 206, 205, 195;
   --grey-200-rgb: 168, 166, 159;
@@ -18,7 +18,7 @@ bod {
   --workspace-background-translucent: rgba(var(--grey-700-rgb), 0.33);
   background-color: rgb(var(--grey-875-rgb));
 }
-bod.encore-colors-colorful {
+body.encore-colors-colorful {
   --highlight-hue: 50;
   --italic-color: #d2e6d2;
   --bold-color: #e0eec5;
@@ -29,11 +29,11 @@ bod.encore-colors-colorful {
   --h5-color: #9482c5;
   --h6-color: #9482c5;
 }
-bod .mod-root .workspace-tab-container .workspace-leaf-content {
+body .mod-root .workspace-tab-container .workspace-leaf-content {
   --en-opacity: 1;
   background-color: rgb(var(--grey-900-rgb));
 }
-bod
+body
   .mod-root
   .workspace-tab-container
   .workspace-leaf-content
@@ -41,10 +41,10 @@ bod
   .canvas-background {
   background-color: rgb(var(--grey-900-rgb));
 }
-bod .mk-note-header:after {
+body .mk-note-header:after {
   --gradient-color: var(--color-base-10);
 }
-bod.encore-fancy-headers
+body.encore-fancy-headers
   .workspace-tab-container
   .workspace-leaf-content
   > .view-header {

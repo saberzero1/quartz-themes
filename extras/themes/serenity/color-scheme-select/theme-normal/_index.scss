@@ -1,4 +1,4 @@
-.theme-normal.blue-accent {
+.blue-accent {
   --color-accent-hsl: 193, 85%, 50% !important;
   --color-accent: rgb(21, 189, 236) !important;
   --color-accent-1: hsl(193, 85%, 50%) !important;
@@ -7,7 +7,7 @@
   --link-unresolved-decoration-color: rgba(21, 189, 236, 0.265);
 }
 
-.theme-normal.green-accent {
+.green-accent {
   --color-accent: #38ab70 !important;
   --color-accent-1: #2aaf6a !important;
   --color-accent-2: #26d37a !important;
@@ -15,7 +15,7 @@
   --link-unresolved-decoration-color: #29c87652;
 }
 
-.theme-normal.yellow-accent {
+.yellow-accent {
   --color-accent: #ffb700 !important;
   --color-accent-1: #ffb700 !important;
   --color-accent-2: #ffb700 !important;

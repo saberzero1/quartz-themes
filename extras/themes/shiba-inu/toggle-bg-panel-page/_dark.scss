@@ -1,4 +1,4 @@
-bod.theme-dark:is(.shib-card-layout)
+body.theme-dark:is(.shib-card-layout)
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
@@ -10,7 +10,7 @@ bod.theme-dark:is(.shib-card-layout)
   border-radius: var(--shib-card-radius, var(--radius-xl));
 }
 
-bod.theme-dark:not(.shib-card-layout)
+body.theme-dark:not(.shib-card-layout)
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
@@ -21,19 +21,19 @@ bod.theme-dark:not(.shib-card-layout)
   opacity: var(--panel-page-opacity);
 }
 
-bod.panel-page-bg-theme-dark-robot.theme-dark {
+body.panel-page-bg-theme-dark-robot.theme-dark {
   --panel-page-background-url-theme: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/robot.jpeg?raw=true');
 }
 
-bod.panel-page-bg-theme-dark-paradise.theme-dark {
+body.panel-page-bg-theme-dark-paradise.theme-dark {
   --panel-page-background-url-theme: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/paradise2.jpeg?raw=true');
 }
 
-bod.panel-page-bg-theme-dark-apple.theme-dark {
+body.panel-page-bg-theme-dark-apple.theme-dark {
   --panel-page-background-url-theme: url('https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/iphone.jpeg?raw=true');
 }
 
-bod.panel-page-bg-theme-dark-custom.theme-dark {
+body.panel-page-bg-theme-dark-custom.theme-dark {
   --panel-page-background-url-theme: var(
     --background-panel-page-theme-dark-custom
   );

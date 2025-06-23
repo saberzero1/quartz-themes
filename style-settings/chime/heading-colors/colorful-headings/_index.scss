@@ -46,7 +46,7 @@
   --h5-color: var(--color-cyan);
   --h6-color: var(--color-blue);
 }
-.colorful-headings.theme-default {
+.theme-default {
   --h1-color: rgb(217, 174, 180);
   --h2-color: rgb(218, 178, 201);
   --h3-color: rgb(200, 165, 200);
@@ -54,33 +54,33 @@
   --h5-color: rgb(158, 142, 184);
   --h6-color: rgb(156, 156, 190);
 }
-.h1-bottom-borde.theme-notion h1,
-.h1-bottom-borde.theme-notion .HyperMD-header-1,
-.h2-bottom-borde.theme-notion h2,
-.h2-bottom-borde.theme-notion .HyperMD-header-2,
-.h3-bottom-borde.theme-notion h3,
-.h3-bottom-borde.theme-notion .HyperMD-header-3,
-.h4-bottom-borde.theme-notion h4,
-.h4-bottom-borde.theme-notion .HyperMD-header-4,
-.h5-bottom-borde.theme-notion h5,
-.h5-bottom-borde.theme-notion .HyperMD-header-5,
-.h6-bottom-borde.theme-notion h6,
-.h6-bottom-borde.theme-notion .HyperMD-header-6,
-.h1-bottom-borde.theme-anytype h1,
-.h1-bottom-borde.theme-anytype .HyperMD-header-1,
-.h2-bottom-borde.theme-anytype h2,
-.h2-bottom-borde.theme-anytype .HyperMD-header-2,
-.h3-bottom-borde.theme-anytype h3,
-.h3-bottom-borde.theme-anytype .HyperMD-header-3,
-.h4-bottom-borde.theme-anytype h4,
-.h4-bottom-borde.theme-anytype .HyperMD-header-4,
-.h5-bottom-borde.theme-anytype h5,
-.h5-bottom-borde.theme-anytype .HyperMD-header-5,
-.h6-bottom-borde.theme-anytype h6,
-.h6-bottom-borde.theme-anytype .HyperMD-header-6 {
+.h1-bottom-border.theme-notion h1,
+.h1-bottom-border.theme-notion .HyperMD-header-1,
+.h2-bottom-border.theme-notion h2,
+.h2-bottom-border.theme-notion .HyperMD-header-2,
+.h3-bottom-border.theme-notion h3,
+.h3-bottom-border.theme-notion .HyperMD-header-3,
+.h4-bottom-border.theme-notion h4,
+.h4-bottom-border.theme-notion .HyperMD-header-4,
+.h5-bottom-border.theme-notion h5,
+.h5-bottom-border.theme-notion .HyperMD-header-5,
+.h6-bottom-border.theme-notion h6,
+.h6-bottom-border.theme-notion .HyperMD-header-6,
+.h1-bottom-border.theme-anytype h1,
+.h1-bottom-border.theme-anytype .HyperMD-header-1,
+.h2-bottom-border.theme-anytype h2,
+.h2-bottom-border.theme-anytype .HyperMD-header-2,
+.h3-bottom-border.theme-anytype h3,
+.h3-bottom-border.theme-anytype .HyperMD-header-3,
+.h4-bottom-border.theme-anytype h4,
+.h4-bottom-border.theme-anytype .HyperMD-header-4,
+.h5-bottom-border.theme-anytype h5,
+.h5-bottom-border.theme-anytype .HyperMD-header-5,
+.h6-bottom-border.theme-anytype h6,
+.h6-bottom-border.theme-anytype .HyperMD-header-6 {
   border-bottom: none;
 }
-.colorful-headings.theme-spring {
+.theme-spring {
   --h1-color: rgb(142, 202, 127);
   --h2-color: rgb(126, 216, 188);
   --h4-color: rgb(227, 185, 114);

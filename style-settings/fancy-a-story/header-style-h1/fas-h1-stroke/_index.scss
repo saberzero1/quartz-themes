@@ -1,33 +1,3 @@
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1,
-:is(body.fas-h1-stroke, .h1-stroke) .callout[data-callout='fas-infobox'] h1 {
-  display: block;
-}
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1::before,
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1::after,
-:is(body.fas-h1-stroke, .h1-stroke)
-  .callout[data-callout='fas-infobox']
-  h1::before,
-:is(body.fas-h1-stroke, .h1-stroke)
-  .callout[data-callout='fas-infobox']
-  h1::after {
-  background: none;
-  height: unset;
-}
 .fas-h1-stroke
   .markdown-preview-view:not(
     :is(.newspaper, .movie-script, .minimalist, .h1-display)

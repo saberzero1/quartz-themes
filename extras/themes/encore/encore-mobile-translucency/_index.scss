@@ -1,17 +1,17 @@
-.encore-mobile-translucency.is-mobile {
+.is-mobile {
   --sidebar-filter: blur(16px);
 }
 
-.encore-mobile-translucency.is-mobile.encore-blur-less {
+.is-mobile.encore-blur-less {
   --sidebar-filter: blur(8px);
 }
 
-.encore-mobile-translucency.is-mobile .workspace-drawer-inner {
+.is-mobile .workspace-drawer-inner {
   background-color: rgba(var(--grey-900-rgb), 0.6);
   backdrop-filter: var(--sidebar-filter);
 }
 
-.encore-mobile-translucency.is-mobile .mobile-navbar {
+.is-mobile .mobile-navbar {
   border-top: 1px solid var(--color-base-25);
   background-color: rgba(var(--grey-900-rgb), 0.66);
   backdrop-filter: var(--en-acrylic);

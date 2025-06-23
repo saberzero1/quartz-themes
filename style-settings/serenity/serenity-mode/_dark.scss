@@ -1,8 +1,8 @@
 .pure-serenity-dark:not(.serenity-src):not(.serenity-lp):has(
     [data-mode='source']
   ),
-.pure-serenity-dar.serenity-lp:has([data-mode='source'] .is-live-preview),
-.pure-serenity-dar.serenity-src:has(
+.pure-serenity-dark.serenity-lp:has([data-mode='source'] .is-live-preview),
+.pure-serenity-dark.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   ) {
   --color-base-00: #000000;
@@ -21,10 +21,10 @@
 .pure-serenity-dark.pure-serenity-invert-dark:not(.serenity-src):not(
     .serenity-lp
   ):has([data-mode='source']),
-.pure-serenity-dar.pure-serenity-invert-dark.serenity-lp:has(
+.pure-serenity-dark.pure-serenity-invert-dark.serenity-lp:has(
     [data-mode='source'] .is-live-preview
   ),
-.pure-serenity-dark.pure-serenity-invert-dar.serenity-src:has(
+.pure-serenity-dark.pure-serenity-invert-dark.serenity-src:has(
     [data-mode='source'] .markdown-source-view:not(.is-live-preview)
   ) {
   --color-base-00: #ffffff !important;

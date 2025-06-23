@@ -1,24 +1,22 @@
-.o-hack-d.workspace-tab-header-container,
-.o-hack-d.workspace-split.mod-vertical .workspace-tab-header-container,
-.o-hack-d.workspace-tabs.mod-top-right-space .workspace-tab-header-container,
-.o-hack-d.workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+.workspace-tab-header-container,
+.workspace-split.mod-vertical .workspace-tab-header-container,
+.workspace-tabs.mod-top-right-space .workspace-tab-header-container,
+.workspace-tabs.mod-top-left-space .workspace-tab-header-container {
   background: #ffffff !important;
   height: 41px;
 }
-.o-hack-d.workspace-tab-header-inner .workspace-tab-header-inner-icon {
+.workspace-tab-header-inner .workspace-tab-header-inner-icon {
   color: #000000;
 }
-.o-hack-d.workspace-tab-header-tab-list .clickable-icon,
-.o-hack-d.workspace-tab-header-new-tab .clickable-icon {
+.workspace-tab-header-tab-list .clickable-icon,
+.workspace-tab-header-new-tab .clickable-icon {
   color: #000000 !important;
 }
-.o-hack-d.sidebar-toggle-button:not(
-    .workspace-ribbon.mod-left .sidebar-toggle-button
-  )
+.sidebar-toggle-button:not(.workspace-ribbon.mod-left .sidebar-toggle-button)
   .clickable-icon,
-.o-hack-d.workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon {
+.workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon {
   color: #000000 !important;
 }
-.o-hack-d.titlebar-button {
+.titlebar-button {
   color: #000000;
 }

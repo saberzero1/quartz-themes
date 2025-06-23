@@ -212,135 +212,125 @@
   text-align: var(--shib-table-align-td, center);
 }
 
-.shib-table-toggle.shib-td-alt-cols
+.shib-td-alt-cols
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-alt-cols
+.shib-td-alt-cols
   .is-live-preview:not(.cards):not(.table-disable)
   table
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-alt-cols
+.shib-td-alt-cols
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-alt-cols
+.shib-td-alt-cols
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-alt-rows
+.shib-td-alt-rows
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-alt-rows
+.shib-td-alt-rows
   .is-live-preview:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-alt-rows
+.shib-td-alt-rows
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-alt-rows
+.shib-td-alt-rows
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   table
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
   tr
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-full
+.shib-td-full
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   td,
-.shib-table-toggle.shib-td-full
-  .is-live-preview:not(.cards:not(.table-disable))
-  table
-  td,
-.shib-table-toggle.shib-td-full
+.shib-td-full .is-live-preview:not(.cards:not(.table-disable)) table td,
+.shib-td-full
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   td,
-.shib-table-toggle.shib-td-full
-  .markdown-preview-view:not(.cards):not(.table-disable)
-  table
-  td,
-.shib-table-toggle.shib-th-highlight
+.shib-td-full .markdown-preview-view:not(.cards):not(.table-disable) table td,
+.shib-th-highlight
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   th,
-.shib-table-toggle.shib-th-highlight
-  .is-live-preview:not(.cards):not(.table-disable)
-  th,
-.shib-table-toggle.shib-th-highlight
+.shib-th-highlight .is-live-preview:not(.cards):not(.table-disable) th,
+.shib-th-highlight
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   th,
-.shib-table-toggle.shib-th-highlight
-  .markdown-preview-view:not(.cards):not(.table-disable)
-  th {
+.shib-th-highlight .markdown-preview-view:not(.cards):not(.table-disable) th {
   background-color: rgba(var(--side), var(--shib-table-highlight-opacity, 0.5));
 }
 
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n),
-.shib-table-toggle.shib-td-checkered
+.shib-td-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
   tr:nth-child(2n)

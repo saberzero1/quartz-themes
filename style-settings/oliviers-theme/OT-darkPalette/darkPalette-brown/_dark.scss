@@ -22,3 +22,52 @@
   --OT-table-header-background: #371e00;
   --OT-table-background: #291606;
 }
+.accentColor-darkMode-shade {
+  --accent-h: 28 !important;
+  --accent-s: 80% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #e67819 !important;
+  --color-accent-2: #8a480f !important;
+  --color-accent-3: #5c300a !important;
+  /*    --OT-color-on-accent-1:            #E39451    !important; */
+  --OT-color-muted-on-accent-1: #5c300a !important;
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+}
+.accentColor-darkMode-alternative-1 {
+  --accent-h: 148 !important;
+  --accent-s: 80% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #66eea5 !important;
+  --color-accent-2: #0d7b40 !important;
+  --color-accent-3: #084d28 !important;
+  --OT-color-on-accent-1: #084d28 !important;
+  /*    --OT-color-muted-on-accent-1:        #fff    !important; */
+  --OT-color-on-accent-2: #b2f7d2 !important;
+  --OT-color-on-accent-3: #b2f7d2 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+.accentColor-darkMode-alternative-2 {
+  --accent-h: 268 !important;
+  --accent-s: 80% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #7819e6 !important;
+  --color-accent-2: #400d7b !important;
+  --color-accent-3: #5812a9 !important;
+  --OT-color-on-accent-1: #ede0fc !important;
+  --OT-color-muted-on-accent-1: #c9a3f5 !important;
+  --OT-color-on-accent-2: #dbc2f8 !important;
+  --OT-color-on-accent-3: #c094f3 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #8a37ea;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+.inkColor-darkMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #E6A571    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23E6A571" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

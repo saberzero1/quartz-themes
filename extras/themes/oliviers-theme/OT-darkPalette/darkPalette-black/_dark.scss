@@ -16,3 +16,53 @@
   --tab-text-color-active: #5d5d5d;
   --tab-text-color-focused: #6e6e6e;
 }
+
+.accentColor-darkMode-shade {
+  --accent-h: 254 !important;
+  --accent-s: 80% !important;
+  --accent-l: 68% !important;
+  --color-accent-1: #a38bf2 !important;
+  --color-accent-2: var(--obsidian-violet) !important;
+  --color-accent-3: #4216ce !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-on-accent-2: white !important;
+  --OT-color-muted-on-accent-1: #4e1fe7 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 45%);
+}
+
+.accentColor-darkMode-alternative-1 {
+  --accent-h: 134 !important;
+  --accent-s: 40% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #28e855 !important;
+  --color-accent-2: #4db264 !important;
+  --color-accent-3: #24542f !important;
+  --OT-color-muted-on-accent-1: #24542f !important;
+  --OT-color-on-accent-2: #e0fce7 !important;
+  --OT-color-on-accent-3: #addbb7 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 22%);
+}
+
+.accentColor-darkMode-alternative-2 {
+  --accent-h: 14 !important;
+  --accent-s: 81% !important;
+  --accent-l: 37% !important;
+  --color-accent-1: #eb6e47 !important;
+  --color-accent-2: #a93612 !important;
+  --color-accent-3: #7b270d !important;
+  --OT-color-on-accent-1: #fff !important;
+  --OT-color-muted-on-accent-1: #9a3110 !important;
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  --OT-color-on-accent-3: #f09275 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.inkColor-darkMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    white    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

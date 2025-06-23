@@ -19,6 +19,29 @@ body:not(.is-grabbing):not(
   width: 100%;
   -webkit-app-region: drag;
 }
+body:not(.is-mobile):not(.labeled-nav).vault-profile-top
+  .workspace-split.mod-left-split
+  .mod-top
+  .workspace-tab-container {
+  margin-top: calc(var(--header-height) + 8px);
+}
+body:not(.is-mobile):not(.labeled-nav).vault-profile-top
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: var(--header-height);
+  z-index: 6;
+  width: 100%;
+  border-top: 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+body:not(.is-mobile):not(.labeled-nav).vault-profile-top
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher {
+  padding-left: var(--size-4-2);
+}
 body:not(.is-mobile).labeled-nav.vault-profile-top
   .workspace-split.mod-left-split
   .workspace-sidedock-vault-profile {

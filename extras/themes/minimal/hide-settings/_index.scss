@@ -1,3 +1,9 @@
+body:not(.is-mobile).hide-settings
+  .workspace-drawer-vault-actions
+  .clickable-icon:last-child {
+  display: none;
+}
+
 body:not(.is-mobile).hide-help.hide-settings .workspace-drawer-vault-actions {
   display: none !important;
 }

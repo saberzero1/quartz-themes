@@ -1,25 +1,25 @@
-bod.mod-linux {
+body.mod-linux {
   --titlebar-height: 45px;
   --header-height: 46px;
 }
 
-bod.mod-linux svg.logo-wireframe {
+body.mod-linux svg.logo-wireframe {
   stroke-width: 45;
 }
 
-bod.mod-linux.is-frameless:not(.is-hidden-frameless) .app-container {
+body.mod-linux.is-frameless:not(.is-hidden-frameless) .app-container {
   margin-top: -9px;
   height: calc(100% + 9px);
 }
 
-bod.mod-linux .sidebar-toggle-button,
-bod.mod-linux .workspace-tab-header-new-tab,
-bod.mod-linux .workspace-tab-header-tab-list,
-bod.mod-linux
+body.mod-linux .sidebar-toggle-button,
+body.mod-linux .workspace-tab-header-new-tab,
+body.mod-linux .workspace-tab-header-tab-list,
+body.mod-linux
   .mod-left-split
   .workspace-tabs
   .workspace-tab-header-container-inner,
-bod.mod-linux
+body.mod-linux
   .mod-right-split
   .workspace-tabs
   .workspace-tab-header-container-inner {
@@ -28,10 +28,10 @@ bod.mod-linux
   padding-bottom: 0;
 }
 
-bod.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header,
-bod.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header,
-bod.mod-linux .sidebar-toggle-button .clickable-icon,
-bod.mod-linux
+body.mod-linux .mod-left-split .workspace-tabs .workspace-tab-header,
+body.mod-linux .mod-right-split .workspace-tabs .workspace-tab-header,
+body.mod-linux .sidebar-toggle-button .clickable-icon,
+body.mod-linux
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon {
@@ -41,11 +41,11 @@ bod.mod-linux
   margin-bottom: auto;
 }
 
-bod.mod-linux .sidebar-toggle-button.mod-left .clickable-icon svg {
+body.mod-linux .sidebar-toggle-button.mod-left .clickable-icon svg {
   display: none;
 }
 
-bod.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
+body.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
   content: '';
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
@@ -55,11 +55,11 @@ bod.mod-linux .sidebar-toggle-button.mod-left .clickable-icon::after {
   margin: auto;
 }
 
-bod.mod-linux .sidebar-toggle-button.mod-right .clickable-icon svg {
+body.mod-linux .sidebar-toggle-button.mod-right .clickable-icon svg {
   display: none;
 }
 
-bod.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
+body.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
   content: '';
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
@@ -69,11 +69,11 @@ bod.mod-linux .sidebar-toggle-button.mod-right .clickable-icon::after {
   margin: auto;
 }
 
-bod.mod-linux .workspace-tab-header-new-tab .clickable-icon svg {
+body.mod-linux .workspace-tab-header-new-tab .clickable-icon svg {
   display: none;
 }
 
-bod.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
+body.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
   content: '';
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
@@ -83,11 +83,11 @@ bod.mod-linux .workspace-tab-header-new-tab .clickable-icon::after {
   margin: auto;
 }
 
-bod.mod-linux .workspace-tab-header-tab-list .clickable-icon svg {
+body.mod-linux .workspace-tab-header-tab-list .clickable-icon svg {
   display: none;
 }
 
-bod.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
+body.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
   content: '';
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
@@ -97,11 +97,11 @@ bod.mod-linux .workspace-tab-header-tab-list .clickable-icon::after {
   margin: auto;
 }
 
-bod.mod-linux .workspace-tab-header-inner-close-button svg {
+body.mod-linux .workspace-tab-header-inner-close-button svg {
   display: none;
 }
 
-bod.mod-linux .workspace-tab-header-inner-close-button::after {
+body.mod-linux .workspace-tab-header-inner-close-button::after {
   content: '';
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
@@ -111,14 +111,14 @@ bod.mod-linux .workspace-tab-header-inner-close-button::after {
   margin: auto;
 }
 
-bod.mod-linux
+body.mod-linux
   .workspace-tab-header[data-type='file-explorer']
   .workspace-tab-header-inner-icon
   svg {
   display: none;
 }
 
-bod.mod-linux
+body.mod-linux
   .workspace-tab-header[data-type='file-explorer']
   .workspace-tab-header-inner-icon::after {
   content: '';
@@ -130,14 +130,14 @@ bod.mod-linux
   margin: auto;
 }
 
-bod.mod-linux
+body.mod-linux
   .workspace-tab-header[data-type='search']
   .workspace-tab-header-inner-icon
   svg {
   display: none;
 }
 
-bod.mod-linux
+body.mod-linux
   .workspace-tab-header[data-type='search']
   .workspace-tab-header-inner-icon::after {
   content: '';

@@ -6,6 +6,10 @@ body.stackTabs:not(.disableMiniMode)
   margin-right: 0px;
 }
 
+:is(.mod-windows, .mod-linux).stackTabs {
+  --frame-right-space: 0px;
+}
+
 html .mod-windows.stackTabs .mod-root,
 html .mod-linux.stackTabs .mod-root {
   --frame-right-space: 0px;

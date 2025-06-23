@@ -32,10 +32,10 @@ body.anp-card-layout {
     var(--background-modifier-border);
   --ribbon-padding: 0;
 }
-bod.anp-hide-borders {
+body.anp-hide-borders {
   --tab-outline-color: transparent;
 }
-bod.anp-hide-borders .menu {
+body.anp-hide-borders .menu {
   border: 0px !important;
 }
 body.anp-card-layout .sidebar-toggle-button,
@@ -45,9 +45,9 @@ body.anp-card-layout .workspace-tabs.mod-top {
 body.anp-card-layout .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
   --file-header-border: none;
 }
-bod.is-focused,
-bod.is-focused .sidebar-toggle-button,
-bod.is-focused .workspace-tabs.mod-top {
+body.is-focused,
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
   --tab-container-background: var(--card-background-color);
 }
 body.anp-card-layout .mod-left-split .workspace-tabs .workspace-leaf,
@@ -65,21 +65,21 @@ body.anp-card-layout .workspace-ribbon.mod-left,
 body.anp-card-layout .workspace-ribbon.mod-left:before {
   background-color: var(--tab-container-background);
 }
-bod.anp-card-layout-actions .workspace-ribbon.mod-left {
+body.anp-card-layout-actions .workspace-ribbon.mod-left {
   margin-right: var(--anp-card-layout-padding, 10px);
 }
-bod.anp-card-layout-actions .side-dock-actions {
+body.anp-card-layout-actions .side-dock-actions {
   border-radius: 0px var(--anp-card-radius, var(--radius-xl))
     var(--anp-card-radius, var(--radius-xl)) 0px;
   margin-top: 2px;
   border-width: 1px 1px 0px 1px;
 }
-bod.anp-card-layout-actions .side-dock-actions {
+body.anp-card-layout-actions .side-dock-actions {
   border-style: solid;
   border-color: var(--tab-outline-color);
   background-color: var(--card-foreground-color);
 }
-bod.anp-card-layout-actions.anp-fixed-status-bar .side-dock-settings {
+body.anp-card-layout-actions.anp-fixed-status-bar .side-dock-settings {
   border-width: 1px;
   border-radius: 0px var(--anp-card-radius, var(--radius-xl))
     var(--anp-card-radius, var(--radius-xl)) 0px;
@@ -149,16 +149,16 @@ body.anp-card-layout .mod-right-split .workspace-tab-container {
 body.anp-card-layout
   .workspace-split
   .workspace-leaf-content:not([data-type='file-explorer']),
-bod.anp-card-layout-filebrowser
+body.anp-card-layout-filebrowser
   .workspace-leaf-content[data-type='file-explorer'] {
   border-radius: var(--anp-card-radius, var(--radius-xl));
   background-color: var(--card-foreground-color);
   border: 1px solid var(--tab-outline-color);
   margin-bottom: var(--anp-card-layout-padding, 10px);
 }
-bod.anp-card-shadows .workspace-split .workspace-leaf-content,
-bod.anp-card-shadows.anp-card-layout-actions .side-dock-actions,
-bod.anp-card-shadows.anp-card-layout-filebrowser
+body.anp-card-shadows .workspace-split .workspace-leaf-content,
+body.anp-card-shadows.anp-card-layout-actions .side-dock-actions,
+body.anp-card-shadows.anp-card-layout-filebrowser
   .workspace-split
   .workspace-leaf-content[data-type='file-explorer'] {
   box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
@@ -210,7 +210,7 @@ body.anp-card-layout .workspace-drop-overlay:before {
   --status-bar-border-color: transparent;
   --status-bar-background: var(--card-background-color);
 }
-.anp-card-layout.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek {
+.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek {
   --capacities-sidebar-bottom: calc(
     var(--anp-card-layout-padding, 10px) + 80px
   );
@@ -283,7 +283,7 @@ body.anp-colorful-frame.anp-card-layout .workspace,
 }
 .anp-colorful-frame.anp-card-layout,
 .anp-colorful-frame.anp-card-layout .workspace-tab-container,
-.anp-colorful-fram.anp-mini-tab-toggle
+.anp-colorful-frame.anp-mini-tab-toggle
   .mod-vertical
   .workspace-tab-header.is-active {
   --tab-text-color: var(--background-secondary-alt);
@@ -300,11 +300,11 @@ body.anp-colorful-frame.anp-card-layout .workspace,
   .workspace-tab-header-status-icon {
   color: var(--icon-color);
 }
-.anp-colorful-fram.is-focused:not(.anp-mini-tab-toggle)
+.anp-colorful-frame.is-focused:not(.anp-mini-tab-toggle)
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.anp-colorful-fram.is-focused:not(.anp-mini-tab-toggle)
+.anp-colorful-frame.is-focused:not(.anp-mini-tab-toggle)
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-title {

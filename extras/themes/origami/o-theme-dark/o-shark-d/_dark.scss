@@ -1,4 +1,4 @@
-.o-shark-d.theme-dark {
+.theme-dark {
   color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
@@ -65,4 +65,14 @@
 
 .o-shark-d .mod-right-split .workspace-tabs .workspace-leaf {
   background: #1c2431 !important;
+}
+
+.o-header-lapel .markdown-reading-view h1:not(.embedded-note-title)::before,
+.o-header-lapel :nth-child(1 of .cm-header-1)::before {
+  background: #70b4f9 !important;
+}
+
+.o-header-lapel .markdown-reading-view h2:not(.embedded-note-title)::before,
+.o-header-lapel :nth-child(1 of .cm-header-2)::before {
+  background: #ffc8dd;
 }

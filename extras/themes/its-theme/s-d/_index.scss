@@ -1,4 +1,4 @@
-.s-d.s-d {
+.s-d {
   /*FONTS*/
   --font: /*'Recursive Sans Casual Static',*/
     'Recursive Sans Linear Static Black', 'RocknRoll One Regular',
@@ -17,8 +17,8 @@
   background: var(--note);
 }
 
-.s-d.s-d.solve,
-.s-d.s-d .solve {
+.solve,
+.s-d .solve {
   --headers: var(--header-solve);
   --h3-font: var(--solve-font);
   --h4-font: var(--solve-font);
@@ -26,23 +26,23 @@
   --h6-font: var(--solve-font);
 }
 
-.s-d.s-d.solve th,
-.s-d.s-d.solve td:nth-child(1),
-.s-d.s-d .solve th,
-.s-d.s-d .solve td:nth-child(1) {
+.solve th,
+.solve td:nth-child(1),
+.s-d .solve th,
+.s-d .solve td:nth-child(1) {
   background-color: var(--outer-bar);
 }
 
-.s-d.s-d.solve td mark,
-.s-d.s-d .solve td mark {
+.solve td mark,
+.s-d .solve td mark {
   color: var(--answer);
   background-color: var(--answer-bg);
   font-weight: 600;
   padding: 2px;
 }
 
-.s-d.s-d.solve tr,
-.s-d.s-d .solve tr {
+.solve tr,
+.s-d .solve tr {
   width: 10% !important;
 }
 

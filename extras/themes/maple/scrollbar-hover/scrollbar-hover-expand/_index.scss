@@ -1,0 +1,6 @@
+body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand
+  ::-webkit-scrollbar-thumb:hover,
+body:not(.is-mobile):not(.mod-macos).scrollbar-hover-expand
+  ::-webkit-scrollbar-thumb:active {
+  border-width: var(--size-2-1) !important;
+}

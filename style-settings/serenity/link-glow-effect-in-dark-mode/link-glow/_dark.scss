@@ -1,4 +1,4 @@
-.link-glow.theme-dark .cm-hmd-internal-link {
+.theme-dark .cm-hmd-internal-link {
   --link-color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
   color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
   text-shadow:
@@ -9,6 +9,6 @@
   opacity: 1;
   --link-unresolved-opacity: 1;
 }
-.link-glow.theme-dark .cm-hmd-internal-link .cm-underline {
+.theme-dark .cm-hmd-internal-link .cm-underline {
   color: hsl(var(--accent-h), var(--accent-s), 88%) !important;
 }

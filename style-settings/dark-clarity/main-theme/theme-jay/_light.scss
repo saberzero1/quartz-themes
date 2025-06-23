@@ -1,5 +1,5 @@
-bod.theme-dark,
-bod.theme-light {
+body.theme-dark,
+body.theme-light {
   --theme-color: hsl(245, 75%, 63%);
   --text-highlight-bg: hsl(23, 54%, 45%);
   --text-title-h1: hsl(180 42% 40%);
@@ -15,7 +15,7 @@ bod.theme-light {
   --folder-color5: hsl(23 56% 49% / var(--folder-alpha));
   --folder-color6: hsl(23 54% 45% / var(--folder-alpha));
 }
-bod.theme-light {
+body.theme-light {
   --theme-color: hsl(245, 75%, 63%);
   --text-highlight-bg: #6a83f58c;
 }

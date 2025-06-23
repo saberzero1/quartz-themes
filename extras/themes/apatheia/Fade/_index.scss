@@ -1,9 +1,9 @@
-.Fade.modal,
-.Fade.snw-ref-title-popover,
-.Fade.menu,
-.Fade.popover,
-.Fade.prompt,
-.Fade.workspace-split.mod-vertical.mod-root
+.modal,
+.snw-ref-title-popover,
+.menu,
+.popover,
+.prompt,
+.workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-stacked)
   .view-content {
   animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);

@@ -1,16 +1,14 @@
-.tabs-modern.colorful-frame
-  .mod-root
-  .mod-top.workspace-tabs:not(.mod-stacked) {
+.colorful-frame .mod-root .mod-top.workspace-tabs:not(.mod-stacked) {
   --tab-background: var(--frame-outline-color);
   --tab-outline-width: 1px;
 }
 
-.tabs-modern.colorful-frame
+.colorful-frame
   .mod-root
   .mod-top.workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-close-button,
-.tabs-modern.colorful-frame
+.colorful-frame
   .mod-root
   .mod-top.workspace-tabs:not(.mod-stacked)
   .workspace-tab-header:hover
@@ -18,9 +16,7 @@
   color: var(--minimal-tab-text-color-active);
 }
 
-.tabs-modern.minimal-focus-mode
-  .mod-root
-  .workspace-tab-header-container:hover {
+.minimal-focus-mode .mod-root .workspace-tab-header-container:hover {
   --tab-outline-width: 0px;
 }
 
@@ -132,7 +128,7 @@
   border: 1px solid var(--tab-outline-color);
 }
 
-.tabs-modern.sidebar-tabs-default .mod-right-split,
-.tabs-modern.sidebar-tabs-wide .mod-right-split {
+.sidebar-tabs-default .mod-right-split,
+.sidebar-tabs-wide .mod-right-split {
   --tab-outline-width: 0;
 }

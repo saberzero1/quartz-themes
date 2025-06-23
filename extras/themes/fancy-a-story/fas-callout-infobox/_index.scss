@@ -296,31 +296,6 @@
   border: none;
 }
 
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1 {
-  display: block;
-}
-
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1::before,
-:is(
-    body.fas-h1-stroke:where(.fas-callout-infobox),
-    :where(.fas-callout-infobox) .h1-stroke
-  )
-  .callout[data-callout='infobox']
-  h1::after {
-  background: none;
-  height: unset;
-}
-
 :where(.fas-callout-infobox)
   .callout[data-callout='infobox']
   .callout[data-callout='footer'] {

@@ -1,4 +1,4 @@
-bod {
+body {
   --grey-50-rgb: 225, 227, 233;
   --grey-100-rgb: 222, 227, 241;
   --grey-200-rgb: 173, 181, 200;
@@ -24,20 +24,20 @@ bod {
     rgba(253, 45, 45, 1) 100%
   );
 }
-bod.encore-colors-colorful {
+body.encore-colors-colorful {
   --bold-color: var(--color-red);
   --italic-color: var(--color-green);
 }
-bod .mod-root .workspace-tab-container {
+body .mod-root .workspace-tab-container {
   border-radius: var(--tab-radius);
   --shadow-properties: 0 0 50px -25px;
   animation: rgb-shadow 12s linear infinite forwards;
 }
-bod .modal {
+body .modal {
   --shadow-properties: 0 0 50px -15px;
   animation: rgb-shadow 12s linear infinite forwards;
 }
-bod .prompt::before {
+body .prompt::before {
   content: '';
   position: fixed;
   top: 0;
@@ -49,7 +49,7 @@ bod .prompt::before {
   animation: pan-right 5s linear infinite forwards;
   filter: blur(60px);
 }
-bod .prompt::after {
+body .prompt::after {
   content: '';
   position: fixed;
   top: 0;
@@ -61,7 +61,7 @@ bod .prompt::after {
   animation: pan-right 5s linear infinite forwards;
   filter: blur(15px);
 }
-bod .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+body .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   --en-opacity: 0.2;
   background-color: rgba(var(--grey-100-rgb), var(--en-opacity));
 }

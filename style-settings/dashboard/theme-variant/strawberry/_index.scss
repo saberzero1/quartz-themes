@@ -1,0 +1,68 @@
+body.strawberry {
+  --text-accent: #d89fa1;
+  --text-accent-hover: #ebc4c4;
+  --color-base-00: #fafafa;
+  --color-base-05: #f8e6e6;
+  --color-base-10: #fafafa;
+  --color-base-20: #fafafa;
+  --color-base-25: #f8e6e6;
+  --color-base-30: #f8e6e6;
+  --color-base-35: #f8e6e6;
+  --color-base-40: #f8e6e6;
+  --color-base-50: #4e4d49;
+  --color-base-60: #c17e83;
+  --color-base-70: #434b56;
+  --color-base-100: #222;
+  --hr-color: #f8e6e6;
+  --icon-color-hover: #c17e83;
+  --icon-color-focused: #ebc4c4;
+  --inline-title-color: #c17e83;
+  --interactive-normal: #f8e6e6;
+  --nav-item-background-hover: #f8e6e6;
+  --slider-track-background: #f8e6e6;
+  /* add a background to the whole sidebar */
+  .mod-sidedock {
+    background:
+      linear-gradient(
+        25deg,
+        #fafafa 40%,
+        transparent 41%,
+        transparent 59%,
+        #fafafa 60%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 45%,
+        #f8e6e6 45%,
+        #f8e6e6 55%,
+        transparent 55%,
+        transparent 20%,
+        #f8e6e6 20%,
+        #f8e6e6 30%,
+        transparent 30%
+      ),
+      linear-gradient(90deg, #f8e6e6 9%, transparent 10%);
+    background-size: 2em 2em;
+  }
+  i,
+  em,
+  span.cm-em {
+    color: #c17e83;
+  }
+  a {
+    text-decoration-color: #c17e8372;
+  }
+  .markdown-rendered blockquote {
+    border-left: 1px dotted #ebc4c4;
+  }
+  .callout {
+    border-color: #ebc4c4;
+    background-color: #fafafa83;
+  }
+  .callout-title {
+    color: #ebc4c4;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f8e6e6 !important;
+  }
+}

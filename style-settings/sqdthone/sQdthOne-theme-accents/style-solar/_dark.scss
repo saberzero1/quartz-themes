@@ -72,3 +72,30 @@
   --titlebar-background: hsl(var(--color-base-2));
   --titlebar-background-focused: hsl(var(--color-base-1));
 }
+.headers-low {
+  --color-text-title: var(--color-base-5);
+  --color-text-h1: var(--color-base-5);
+  --color-text-h2: var(--color-base-5);
+  --color-text-h3: var(--color-base-5);
+  --color-text-h4: var(--color-base-5);
+  --color-text-h5: var(--color-base-5);
+  --color-text-h6: var(--color-base-5);
+}
+.headers-default {
+  --color-text-title: var(--color-base-5);
+  --color-text-h1: var(--color-base-5);
+  --color-text-h2: var(--color-base-5);
+  --color-text-h3: var(--color-green);
+  --color-text-h4: var(--color-green);
+  --color-text-h5: var(--color-green);
+  --color-text-h6: var(--color-green);
+}
+.headers-high {
+  --color-text-title: var(--color-base-5);
+  --color-text-h1: var(--color-red);
+  --color-text-h2: var(--color-orange);
+  --color-text-h3: var(--color-yellow);
+  --color-text-h4: var(--color-green);
+  --color-text-h5: var(--color-purple);
+  --color-text-h6: var(--color-pink);
+}

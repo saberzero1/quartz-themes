@@ -1,9 +1,9 @@
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle
+.anp-simple-rainbow-title-toggle
   .nav-files-container
   > div
   > .nav-folder
   .nav-folder-title,
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle
+.anp-simple-rainbow-title-toggle
   [data-type='bookmarks']
   .tree-item
   .tree-item-inner {
@@ -15,16 +15,15 @@
   --nav-item-background-hover: rgba(var(--rainbow-folder-color), 0.1);
   --nav-item-background-active: rgba(var(--rainbow-folder-color), 0.1);
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-title-toggle
-  .nav-folder.is-being-dragged-over {
+.anp-simple-rainbow-title-toggle .nav-folder.is-being-dragged-over {
   background-color: rgba(var(--rainbow-folder-color), 0.1);
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+.anp-simple-rainbow-icon-toggle
   .nav-files-container
   > div
   > .nav-folder
   .nav-folder-title:after,
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+.anp-simple-rainbow-icon-toggle
   [data-type='bookmarks']
   .tree-item
   .tree-item-inner:after {
@@ -40,7 +39,7 @@
   opacity: 0.5;
   top: -0.5px;
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-toggle
+.anp-simple-rainbow-icon-toggle
   [data-type='bookmarks']
   .tree-item
   .tree-item-inner {
@@ -49,20 +48,18 @@
   flex-grow: 1;
   justify-content: space-between;
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle
+.anp-simple-rainbow-indentation-toggle
   .nav-files-container
   .nav-folder
   > .nav-folder-children,
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-indentation-toggle
+.anp-simple-rainbow-indentation-toggle
   [data-type='bookmarks']
   .tree-item
   .tree-item-children {
   transition: color 0.4s;
   border-color: rgba(var(--rainbow-folder-color), 0.5);
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-collapse-icon-toggle
-  .tree-item-self
-  .tree-item-icon {
+.anp-simple-rainbow-collapse-icon-toggle .tree-item-self .tree-item-icon {
   --icon-color: rgba(
     var(--rainbow-folder-color),
     var(--anp-simple-rainbow-opacity, 1)
@@ -76,7 +73,6 @@
     var(--anp-simple-rainbow-opacity, 1)
   );
 }
-.anp-simple-rainbow-color-toggle.anp-simple-rainbow-icon-folder-toggle
-  .obsidian-icon-folder-icon {
+.anp-simple-rainbow-icon-folder-toggle .obsidian-icon-folder-icon {
   color: rgb(var(--rainbow-folder-color));
 }

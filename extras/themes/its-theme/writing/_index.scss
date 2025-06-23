@@ -1,4 +1,4 @@
-.writing.writing {
+.writing {
   --file-line-width: 600px;
   --link-color: var(--text);
   --link-color-hover: var(--soft-text);
@@ -22,16 +22,16 @@
   --code-background: var(--td);
 }
 
-.writing.writing.markdown-source-view.mod-cm6 .cm-sizer,
-.writing.writing .markdown-source-view.mod-cm6 .cm-scroller .cm-sizer,
-.writing.writing .markdown-preview-sizer {
+.markdown-source-view.mod-cm6 .cm-sizer,
+.writing .markdown-source-view.mod-cm6 .cm-scroller .cm-sizer,
+.writing .markdown-preview-sizer {
   max-width: var(--file-line-width);
   margin: auto;
 }
 
-.writing.writing .internal-link::after,
-.writing.writing .cm-underline::after,
-.writing.writing .external-link::after {
+.writing .internal-link::after,
+.writing .cm-underline::after,
+.writing .external-link::after {
   font-family: var(--its);
   font-size: calc(var(--font-text-size) - 2px);
   font-style: normal !important;
@@ -42,18 +42,18 @@
   margin-right: -8px;
 }
 
-.writing.writing .internal-link::after,
-.writing.writing span:not(.cm-link) .cm-underline::after {
+.writing .internal-link::after,
+.writing span:not(.cm-link) .cm-underline::after {
   content: '\e819';
 }
 
-.writing.writing .external-link::after {
+.writing .external-link::after {
   content: '\e818';
 }
 
-.writing.writing,
-.writing.writing.hcl,
-.writing.writing .hcl {
+.writing,
+.hcl,
+.writing .hcl {
   --header-border-line-height: 0;
   --h1-border-line-height: var(--header-border-line-height);
   --h2-border-line-height: var(--header-border-line-height);
@@ -63,32 +63,32 @@
   --h6-border-line-height: var(--header-border-line-height);
 }
 
-.writing.writing .markdown-preview-section,
-.writing.writing .cm-s-obsidian,
-.writing.writing.markdown-preview-view,
-.writing.writing.cm-s-obsidian {
+.writing .markdown-preview-section,
+.writing .cm-s-obsidian,
+.markdown-preview-view,
+.cm-s-obsidian {
   text-align: justify;
 }
 
-.writing.writing .markdown-preview-view pre,
-.writing.writing.markdown-preview-view pre,
-.writing.writing .HyperMD-codeblock:not(.cm-formatting-code-block) {
+.writing .markdown-preview-view pre,
+.markdown-preview-view pre,
+.writing .HyperMD-codeblock:not(.cm-formatting-code-block) {
   border-left: 5px solid var(--code-bg);
   border-right: 5px solid var(--code-text);
   filter: saturate(70%);
 }
 
-.writing.writing .footnote-link,
-.writing.writing .cm-inline-footnote,
-.writing.writing .cm-inline-footnote-end,
-.writing.writing .cm-inline-footnote-end + .cm-link {
+.writing .footnote-link,
+.writing .cm-inline-footnote,
+.writing .cm-inline-footnote-end,
+.writing .cm-inline-footnote-end + .cm-link {
   color: var(--inactive);
 }
 
-.writing.writing .footnote-link:hover,
-.writing.writing .cm-inline-footnote:hover,
-.writing.writing .cm-inline-footnote-end:hover,
-.writing.writing .cm-inline-footnote-end + .cm-link:hover {
+.writing .footnote-link:hover,
+.writing .cm-inline-footnote:hover,
+.writing .cm-inline-footnote-end:hover,
+.writing .cm-inline-footnote-end + .cm-link:hover {
   background-color: var(--link-background-hover);
 }
 

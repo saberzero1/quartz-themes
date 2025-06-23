@@ -17,7 +17,7 @@
   color: rgb(var(--cpt-text));
 }
 
-.aura-rainbow-folders.aura-card-layout:not(.aura-card-layout-fileexplorer)
+.aura-card-layout:not(.aura-card-layout-fileexplorer)
   .nav-files-container
   > div
   > .tree-item.nav-file {
@@ -106,7 +106,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 2) {
@@ -116,7 +116,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 3) {
@@ -126,7 +126,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 4) {
@@ -136,7 +136,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 5) {
@@ -146,7 +146,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 6) {
@@ -156,7 +156,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 7) {
@@ -166,7 +166,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 8) {
@@ -176,7 +176,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
+.aura-colorschemes-dark-mystical-nights
   .nav-files-container
   > div
   > .tree-item.nav-folder:nth-child(8n + 9) {
@@ -186,9 +186,7 @@
   margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorful-frame.aura-card-layout:not(
-    .aura-card-layout-fileexplorer
-  )
+.aura-colorful-frame.aura-card-layout:not(.aura-card-layout-fileexplorer)
   .mod-left-split
   .nav-files-container
   > div

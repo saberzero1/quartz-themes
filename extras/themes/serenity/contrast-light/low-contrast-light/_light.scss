@@ -1,4 +1,4 @@
-.custom-color-scheme-ligh.theme-light {
+.custom-color-scheme-light.theme-light {
   --theme-tint: var(--custom-theme-tint-l) !important;
   --theme-sat: var(--custom-theme-sat-l);
   --theme-tint-secondary: var(--custom-theme-tint-secondary-l) !important;
@@ -63,6 +63,15 @@
     50%,
     0.18
   ) !important;
+}
+
+.theme-solarized-s {
+  --theme-tint-secondary: 47;
+  --theme-sat-secondary: 70%;
+}
+
+.theme-rose-pine {
+  --base-c: 96%;
 }
 
 .theme-everforest.low-contrast-light {

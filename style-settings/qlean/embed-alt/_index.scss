@@ -10,18 +10,18 @@ body .style-settings-container .media-embed:after {
   width: 100%;
   margin-top: 0.5em;
 }
-bod-right .markdown-source-view.is-live-preview .media-embed:after,
-bod-right .markdown-rendered .media-embed:after,
-bod-right .style-settings-container .media-embed:after {
+body-right .markdown-source-view.is-live-preview .media-embed:after,
+body-right .markdown-rendered .media-embed:after,
+body-right .style-settings-container .media-embed:after {
   text-align: end;
 }
-bod-left .markdown-source-view.is-live-preview .media-embed:after,
-bod-left .markdown-rendered .media-embed:after,
-bod-left .style-settings-container .media-embed:after {
+body-left .markdown-source-view.is-live-preview .media-embed:after,
+body-left .markdown-rendered .media-embed:after,
+body-left .style-settings-container .media-embed:after {
   text-align: start;
 }
-bod-middle .markdown-source-view.is-live-preview .media-embed:after,
-bod-middle .markdown-rendered .media-embed:after,
-bod-middle .style-settings-container .media-embed:after {
+body-middle .markdown-source-view.is-live-preview .media-embed:after,
+body-middle .markdown-rendered .media-embed:after,
+body-middle .style-settings-container .media-embed:after {
   text-align: center;
 }

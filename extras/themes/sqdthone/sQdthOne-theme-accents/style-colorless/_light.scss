@@ -73,6 +73,36 @@
   --titlebar-background-focused: hsl(var(--color-base-2));
 }
 
+.headers-low {
+  --color-text-title: var(--color-pink);
+  --color-text-h1: var(--color-pink);
+  --color-text-h2: var(--color-pink);
+  --color-text-h3: var(--color-pink);
+  --color-text-h4: var(--color-pink);
+  --color-text-h5: var(--color-pink);
+  --color-text-h6: var(--color-pink);
+}
+
+.headers-default {
+  --color-text-title: var(--color-pink);
+  --color-text-h1: var(--color-pink);
+  --color-text-h2: 0, 0%, 54.9%;
+  --color-text-h3: 0, 0%, 50.98%;
+  --color-text-h4: 0, 0%, 47.06%;
+  --color-text-h5: 0, 0%, 43.14%;
+  --color-text-h6: 0, 0%, 39.22%;
+}
+
+.headers-high {
+  --color-text-title: var(--color-pink);
+  --color-text-h1: var(--color-red);
+  --color-text-h2: var(--color-orange);
+  --color-text-h3: 0, 0%, 50.98%;
+  --color-text-h4: var(--color-cyan);
+  --color-text-h5: 0, 0%, 47.06%;
+  --color-text-h6: var(--color-purple);
+}
+
 .style-colorless a,
 .style-colorless a .footnote-link,
 .style-colorless .cm-s-obsidian .cm-formatting-link.cm-url,

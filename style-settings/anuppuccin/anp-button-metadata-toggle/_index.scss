@@ -23,6 +23,21 @@ body.anuppuccin-accent-toggle
   .frontmatter-container-header:active {
   background-color: rgba(var(--ctp-accent), 0.6);
 }
+body:not(.anuppuccin-accent-toggle)
+  .frontmatter-container
+  .frontmatter-container-header {
+  background-color: hsla(var(--color-accent-hsl), 0.8);
+}
+body:not(.anuppuccin-accent-toggle)
+  .frontmatter-container
+  .frontmatter-container-header:hover {
+  background-color: hsla(var(--color-accent-hsl), 0.7);
+}
+body:not(.anuppuccin-accent-toggle)
+  .frontmatter-container
+  .frontmatter-container-header:active {
+  background-color: hsla(var(--color-accent-hsl), 0.6);
+}
 .frontmatter-container {
   padding: 0;
 }

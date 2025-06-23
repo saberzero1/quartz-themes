@@ -72,13 +72,13 @@ body:not(.flexcyon-status-text-enable-color) div.cm-vim-message {
   color: var(--color-red) !important;
   font-weight: bold;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   markdown-source-view.mod-cm6
   .cm-panels.cm-panels-bottom {
   border-top: unset;
   padding-top: 6px;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   .cm-editor
   .cm-scroller:not(.cm-vimMode)
   .cm-sizer:has(+ .cm-vimCursorLayer)::before {
@@ -90,7 +90,7 @@ bod.flexcyon-status-text-enable-color
   height: 30px;
   padding: 0px 8px;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   .cm-editor
   .cm-scroller.cm-vimMode:not(:has(+ .cm-panels))
   .cm-sizer:has(+ .cm-vimCursorLayer)::before {
@@ -102,7 +102,7 @@ bod.flexcyon-status-text-enable-color
   color: var(--color-purple);
   padding: 0px 8px;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   .cm-panels
   .cm-panel
   div
@@ -111,17 +111,17 @@ bod.flexcyon-status-text-enable-color
   bottom: var(--flexcyon-vim-bottom-positioning);
   left: 75px;
 }
-bod.flexcyon-status-text-enable-color .cm-panels .cm-panel {
+body.flexcyon-status-text-enable-color .cm-panels .cm-panel {
   background-color: var(--color-base-00);
   padding-top: 5px;
   font-weight: 500;
 }
-bod.flexcyon-status-text-enable-color .cm-panels input {
+body.flexcyon-status-text-enable-color .cm-panels input {
   transform: translateY(-4px);
   font-size: 0.9rem;
   z-index: 16;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   .cm-editor
   > .cm-scroller
   + .cm-panels
@@ -133,7 +133,7 @@ bod.flexcyon-status-text-enable-color
   color: var(--color-blue);
   padding-right: 4px;
 }
-bod.flexcyon-status-text-enable-color
+body.flexcyon-status-text-enable-color
   .cm-editor
   > .cm-scroller
   + .cm-panels
@@ -141,7 +141,7 @@ bod.flexcyon-status-text-enable-color
   div {
   color: var(--text-muted);
 }
-bod.flexcyon-status-text-enable-color div.cm-vim-message {
+body.flexcyon-status-text-enable-color div.cm-vim-message {
   color: var(--color-red) !important;
   font-weight: bold;
 }

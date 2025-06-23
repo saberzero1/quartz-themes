@@ -18,3 +18,49 @@
   --OT-table-header-background: #d3ebda;
   --OT-table-background: #e7f4eb;
 }
+
+.accentColor-lightMode-shade {
+  --accent-h: 138 !important;
+  --accent-s: 35% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #295637 !important;
+  --color-accent-2: #3a784d !important;
+  --color-accent-3: #cbe6d3 !important;
+  --OT-color-muted-on-accent-1: #c8e5d0;
+  --OT-color-on-accent-2: var(--color-base-20);
+  --OT-color-on-accent-3: var(--color-accent-1);
+}
+
+.accentColor-lightMode-alternative-1 {
+  --accent-h: 318 !important;
+  --accent-s: 35% !important;
+  --accent-l: 35% !important;
+  --color-accent-3: #ebd7e5 !important;
+  --OT-color-on-accent-1: #fcf9fb !important;
+  --OT-color-muted-on-accent-1: #d5a9c8 !important;
+  --OT-color-on-accent-2: #f1e2ed !important;
+  --OT-color-on-accent-3: #562949 !important;
+}
+
+.accentColor-lightMode-alternative-2 {
+  --accent-h: 228 !important;
+  --accent-s: 45% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #475ec1 !important;
+  --color-accent-2: #314281 !important;
+  --color-accent-3: #bbc4e5 !important;
+  --OT-color-on-accent-1: #f8f9fd !important;
+  --OT-color-muted-on-accent-1: #d3d9ee !important;
+  --OT-color-on-accent-2: #edeff7 !important;
+  --OT-color-on-accent-3: #314281 !important;
+}
+
+.inkColor-lightMode-default .markdown-source-view.mod-cm6 .cm-editor:before {
+  /*    couleur de la pastille:    #288045    */
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="%23288045" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1l-2.05-2.05l1-1c.1-.11.24-.16.38-.16m-1.97 1.74l2.06 2.06l-6.06 6.06H7.07v-2.06l6.06-6.06Z"%2F%3E%3C%2Fsvg%3E');
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,10 +1,10 @@
-.sidebar-tabs-index.labeled-nav .mod-left-split .workspace-tabs:not(.mod-top),
+.labeled-nav .mod-left-split .workspace-tabs:not(.mod-top),
 .sidebar-tabs-index:not(.labeled-nav) .mod-left-split {
   --tab-background-active: var(--background-secondary);
 }
 
 .sidebar-tabs-index .mod-right-split .workspace-tab-header-container-inner,
-.sidebar-tabs-index.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header-container-inner,
@@ -17,7 +17,7 @@
 }
 
 .sidebar-tabs-index .mod-right-split .workspace-tab-header,
-.sidebar-tabs-index.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header,
@@ -28,7 +28,7 @@
 }
 
 .sidebar-tabs-index .mod-right-split .workspace-tab-header.is-active,
-.sidebar-tabs-index.labeled-nav
+.labeled-nav
   .mod-left-split
   .workspace-tabs:not(.mod-top)
   .workspace-tab-header.is-active,

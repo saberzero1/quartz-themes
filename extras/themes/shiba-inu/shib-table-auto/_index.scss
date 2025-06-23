@@ -1,11 +1,8 @@
-.shib-table-auto.markdown-rendered.cards:not(.table-disable)
-  table:not(.dataview),
-.shib-table-auto.markdown-rendered:not(.cards):not(.table-disable) table,
-.shib-table-auto.shib-table-toggle
+.markdown-rendered.cards:not(.table-disable) table:not(.dataview),
+.markdown-rendered:not(.cards):not(.table-disable) table,
+.shib-table-toggle
   .markdown-rendered.cards:not(.table-disable)
   table:not(.dataview),
-.shib-table-auto.shib-table-toggle
-  .markdown-rendered:not(.cards):not(.table-disable)
-  table {
+.shib-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table {
   margin: 0 auto;
 }

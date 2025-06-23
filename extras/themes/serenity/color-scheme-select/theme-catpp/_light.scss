@@ -1,10 +1,10 @@
-.theme-catpp.low-contrast-light {
+.low-contrast-light {
   --theme-sat: 30%;
   --theme-sat-secondary: 30%;
   --base-c: 95%;
 }
 
-.theme-catpp.high-contrast-light {
+.high-contrast-light {
   --base-c: 93.5%;
 }
 
@@ -29,7 +29,7 @@
   --rose: #dc8a78;
 }
 
-.theme-catpp.colorful-headings-s {
+.colorful-headings-s {
   --h1-color: var(--color-purple);
   --h2-color: var(--color-blue);
   --h3-color: var(--color-cyan);

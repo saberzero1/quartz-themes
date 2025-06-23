@@ -1,0 +1,49 @@
+body:not(.is-mobile)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container {
+  opacity: 0;
+  cursor: pointer;
+  height: 0px;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+body:not(.is-mobile) .titlebar-button-container.mod-right {
+  cursor: pointer;
+  opacity: 0;
+  height: 16px;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+body:not(.is-mobile):has(
+    .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:hover
+  )
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container,
+body:not(.is-mobile):has(.workspace-leaf-content .view-header:hover)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container,
+body:not(.is-mobile):has(.titlebar-button-container.mod-right :hover)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container {
+  opacity: 1;
+  height: 40px;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile):has(
+    .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:hover
+  )
+  .titlebar-button-container.mod-right,
+body:not(.is-mobile):has(.workspace-leaf-content .view-header:hover)
+  .titlebar-button-container.mod-right,
+body:not(.is-mobile):has(.titlebar-button-container.mod-right :hover)
+  .titlebar-button-container.mod-right {
+  opacity: 1 !important;
+  height: 40px !important;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}

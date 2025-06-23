@@ -1,9 +1,7 @@
-.CG-MObsidian-sbt.is-hidden-frameless
-  .sidebar-toggle-button.mod-left
-  > .clickable-icon,
-body:not(.is-tablet).is-mobile .view-header-nav-buttons,
-.CG-MObsidian-sbt.is-mobile .mod-left-split-toggle,
-body.is-tablet.sidebar-toggle-button.mod-left > .clickable-icon,
+.is-hidden-frameless .sidebar-toggle-button.mod-left > .clickable-icon,
+body:not(.is-tablet) .is-mobile .view-header-nav-buttons,
+.is-mobile .mod-left-split-toggle,
+body.is-tablet .sidebar-toggle-button.mod-left > .clickable-icon,
 .CG-MObsidian-sbt .titlebar-button-container.mod-left {
   background-image: var(--New-Obsidiantoggle);
 }

@@ -9,12 +9,10 @@
   box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
-.anp-floating-header.anp-card-layout .nav-folder.mod-root > .nav-folder-title {
+.anp-card-layout .nav-folder.mod-root > .nav-folder-title {
   background-color: var(--card-foreground-color, var(--background-primary));
 }
 
-.anp-floating-header.anp-custom-vault-toggle
-  .nav-folder.mod-root
-  > .nav-folder-title {
+.anp-custom-vault-toggle .nav-folder.mod-root > .nav-folder-title {
   padding-top: 10px;
 }

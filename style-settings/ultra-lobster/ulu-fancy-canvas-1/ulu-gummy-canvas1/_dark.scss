@@ -1,6 +1,4 @@
-.ulu-gummy-canvas1.theme-dark
-  .canvas-node.is-themed.mod-canvas-color-1
-  .canvas-node-content {
+.theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content {
   background-image: linear-gradient(
     45deg,
     hsl(15deg 82% 54%) 0%,
@@ -15,9 +13,6 @@
     hsl(9deg 87% 52%) 100%
   );
 }
-.ulu-gummy-canvas1.theme-dark
-  .canvas-node.is-themed.mod-canvas-color-1
-  .canvas-node-content
-  p {
+.theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p {
   color: white;
 }
