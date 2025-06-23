@@ -1882,28 +1882,32 @@ body {
   /* TOC */
   .toc {
     color: var(--h3-color);
-    h3 {
-      --font-weight: var(--h3-weight);
-      background: var(--h3-background);
-      border: var(--h3-border-width) solid;
-      border-radius: var(--radius-m);
-      box-shadow: var(--h3-shadow);
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        background: var(--h3-background);
+        border: var(--h3-border-width) solid;
+        border-radius: var(--radius-m);
+        box-shadow: var(--h3-shadow);
+        color: var(--h3-color);
+        display: flow-root;
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
+        letter-spacing: -0.015em;
+        line-height: var(--h3-line-height);
+        margin-block-end: var(--heading-spacing-bottom);
+        margin-block-start: var(--heading-spacing-top);
+        margin-top: var(--heading-spacing-top);
+        padding: var(--h3-padding);
+        text-align: var(--h3-text-align);
+        word-break: keep-all;
+        word-wrap: normal;
+      }
       color: var(--h3-color);
-      display: flow-root;
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: var(--font-weight);
-      letter-spacing: -0.015em;
-      line-height: var(--h3-line-height);
-      margin-block-end: var(--heading-spacing-bottom);
-      margin-block-start: var(--heading-spacing-top);
-      margin-top: var(--heading-spacing-top);
-      padding: var(--h3-padding);
-      text-align: var(--h3-text-align);
-      word-break: keep-all;
-      word-wrap: normal;
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

@@ -1263,23 +1263,27 @@ body {
   /* TOC */
   .toc {
     color: rgba(255, 255, 255, 0.87);
-    h3 {
-      --font-weight: var(--h3-weight);
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        color: rgba(255, 255, 255, 0.87);
+        font-family:
+          -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
+          cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 32px;
+        font-smoothing: antialiased;
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: 500;
+        letter-spacing: -0.015em;
+        line-height: 150%;
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+      }
       color: rgba(255, 255, 255, 0.87);
-      font-family:
-        -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-        cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 32px;
-      font-smoothing: antialiased;
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: 500;
-      letter-spacing: -0.015em;
-      line-height: 150%;
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

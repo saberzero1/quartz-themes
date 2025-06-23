@@ -1413,18 +1413,22 @@ body {
   /* TOC */
   .toc {
     color: var(--h3-color);
-    h3 {
-      --font-weight: var(--h3-weight);
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        color: var(--h3-color);
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
+        letter-spacing: -0.015em;
+        line-height: var(--h3-line-height);
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+      }
       color: var(--h3-color);
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: var(--font-weight);
-      letter-spacing: -0.015em;
-      line-height: var(--h3-line-height);
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,

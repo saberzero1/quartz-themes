@@ -1306,22 +1306,26 @@ body {
   /* TOC */
   .toc {
     color: #00bb00;
-    h3 {
-      --font-weight: var(--h3-weight);
-      border: var(--strict-separator);
+    button.toc-header {
+      h3 {
+        --font-weight: var(--h3-weight);
+        border: var(--strict-separator);
+        color: #00bb00;
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
+        letter-spacing: -0.015em;
+        line-height: var(--h3-line-height);
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        margin-top: 0;
+        padding: 0 var(--size-2-2);
+        width: 100%;
+      }
       color: #00bb00;
-      font-family: var(--h3-font);
-      font-size: var(--h3-size);
-      font-style: var(--h3-style);
-      font-variant: var(--h3-variant);
-      font-weight: var(--font-weight);
-      letter-spacing: -0.015em;
-      line-height: var(--h3-line-height);
-      margin-block-end: var(--p-spacing);
-      margin-block-start: var(--p-spacing);
-      margin-top: 0;
-      padding: 0 var(--size-2-2);
-      width: 100%;
+      color: inherit;
     }
     ul.toc-content.overflow {
       li,
