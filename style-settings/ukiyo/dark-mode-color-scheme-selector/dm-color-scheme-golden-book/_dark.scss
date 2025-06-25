@@ -51,12 +51,12 @@
   --color-pink-rgb: 191, 32, 109;
   --color-pink: #bf206d;
 }
-.separate-color-scheme.theme-dark [class^='markdown-'] {
+.separate-color-scheme.theme-dark [class^="markdown-"] {
   background-color: var(--color-base-00);
   --background-secondary: #e4cdba;
   --background-secondary-alt: #dec5b1;
 }
-.separate-color-scheme.theme-dark [class^='markdown-'] table {
+.separate-color-scheme.theme-dark [class^="markdown-"] table {
   --color-base-40: var(--table-header-border-color);
 }
 .separate-color-scheme.theme-dark
@@ -65,7 +65,7 @@
     .workspace-tab-header-container,
     .workspace-ribbon,
     .suggestion
-  ):not(:has([class^='markdown-'])) {
+  ):not(:has([class^="markdown-"])) {
   --tab-text-color-active: #f7e8cf;
   --tab-text-color-focused-active-current: #f7e8cf;
   --icon-color: var(--color-base-40);

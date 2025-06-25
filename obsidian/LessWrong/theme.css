@@ -10,7 +10,7 @@ body {
   --link-external-decoration-hover: none;
   --icon-color: #a8a8a8;
 
-  --font-text-theme: 'Charter', Georgia, serif;
+  --font-text-theme: "Charter", Georgia, serif;
   --font-interface-theme: sans-serif;
 
   --radius-s: 3px;

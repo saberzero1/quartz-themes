@@ -20,7 +20,7 @@
   display: none;
 }
 
-.embed-strict .internal-embed:not([src*='#^']) .markdown-embed-link {
+.embed-strict .internal-embed:not([src*="#^"]) .markdown-embed-link {
   width: 24px;
   opacity: 0;
 }

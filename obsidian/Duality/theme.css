@@ -1,8 +1,8 @@
 :root {
   /* Font settings - Consistent across themes */
-  --font-interface-theme: 'Segoe UI', Arial, sans-serif;
-  --font-text-theme: 'Georgia', Times, serif;
-  --font-monospace-theme: 'Consolas', 'Courier New', monospace;
+  --font-interface-theme: "Segoe UI", Arial, sans-serif;
+  --font-text-theme: "Georgia", Times, serif;
+  --font-monospace-theme: "Consolas", "Courier New", monospace;
   --font-text-size: 16px;
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
@@ -436,9 +436,9 @@
   --divider-color-hover: #663b38;
 
   /* Fonts */
-  --font-text-theme: 'Times New Roman', Times, serif;
-  --font-interface-theme: 'Times New Roman', Times, serif;
-  --font-monospace-theme: 'Courier New', Courier, monospace;
+  --font-text-theme: "Times New Roman", Times, serif;
+  --font-interface-theme: "Times New Roman", Times, serif;
+  --font-monospace-theme: "Courier New", Courier, monospace;
 }
 
 /* Additional Styling  */

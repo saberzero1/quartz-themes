@@ -19,7 +19,7 @@
   .markdown-source-view
   .dataview-ul
   li:not(:last-child):after {
-  content: ', ';
+  content: ", ";
 }
 
 .dataview-inline-lists .markdown-preview-view ul.dataview-ol > li::before,

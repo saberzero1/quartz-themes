@@ -1,6 +1,6 @@
-import convertCssColorsToRgbWithSass from './color-convert.mjs';
-import * as fs from 'fs';
-import * as path from 'path';
+import convertCssColorsToRgbWithSass from "./color-convert.mjs";
+import * as fs from "fs";
+import * as path from "path";
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
@@ -16,7 +16,7 @@ function readJsonFileAsDictionary(folderPath, fileName) {
     const filePath = path.join(folderPath, fileName);
 
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Parse the JSON content into a JavaScript object
     const jsonObject = JSON.parse(fileContent);
@@ -80,7 +80,7 @@ function getCurrentFolder() {
  */
 function getValueFromDictionary(dictionary, key) {
   // Check if the key exists using the `in` operator and return the value or an empty string
-  return key in dictionary ? dictionary[key] : '';
+  return key in dictionary ? dictionary[key] : "";
 }
 
 /**
@@ -110,20 +110,20 @@ function sanitizeFilenamePreservingEmojis(input) {
   let sanitized = input.toLowerCase();
 
   // Replace spaces with hyphens
-  sanitized = sanitized.replace(/\s+/g, '-');
+  sanitized = sanitized.replace(/\s+/g, "-");
 
   // Replace accents
-  sanitized = sanitized.normalize('NFD');
+  sanitized = sanitized.normalize("NFD");
 
   // Remove invalid filename characters, preserving emojis and some valid characters
-  sanitized = sanitized.replace(/[^a-z0-9-_\p{Emoji}]/gu, '');
+  sanitized = sanitized.replace(/[^a-z0-9-_\p{Emoji}]/gu, "");
 
   // Remove duplicate hyphens
-  sanitized = sanitized.replace(/-+/gu, '-');
+  sanitized = sanitized.replace(/-+/gu, "-");
 
   // Remove hyphens from start and end
-  sanitized = sanitized.replace(/^-+/gu, '');
-  sanitized = sanitized.replace(/-+$/gu, '');
+  sanitized = sanitized.replace(/^-+/gu, "");
+  sanitized = sanitized.replace(/-+$/gu, "");
 
   return sanitized;
 }
@@ -202,7 +202,7 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
 function replaceInFile(filePath, targetString, replacementString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Replace all occurrences of the target string with the replacement string
     const modifiedContent = fileContent
@@ -210,7 +210,7 @@ function replaceInFile(filePath, targetString, replacementString) {
       .join(replacementString);
 
     // Write the modified content back to the file
-    fs.writeFileSync(filePath, modifiedContent, 'utf8');
+    fs.writeFileSync(filePath, modifiedContent, "utf8");
 
     //console.log(`Replaced all occurrences of "${targetString}" with "${replacementString}" in '${filePath}'`);
   } catch (error) {
@@ -229,7 +229,7 @@ function replaceInFile(filePath, targetString, replacementString) {
 function findAllMatchesInFile(filePath, regexString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Use match to find all matches in the file content
     const matches = fileContent.matchAll(regexString);
@@ -255,7 +255,7 @@ function findAllMatchesInFile(filePath, regexString) {
 function findAllMatchesAsString(filePath, regexString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Create a regular expression object with the global flag to find all matches
     //const regex = new RegExp(regexString, 'gmsv');
@@ -264,7 +264,7 @@ function findAllMatchesAsString(filePath, regexString) {
     const matches = fileContent.match(regexString);
 
     // Convert the matches array to a newline-separated string (or return an empty string if no matches)
-    return matches ? matches.join('\n') : '';
+    return matches ? matches.join("\n") : "";
   } catch (error) {
     throw new Error(`Unable to process file: ${error.message}`);
   }
@@ -281,25 +281,25 @@ function findAllMatchesAsString(filePath, regexString) {
 function removeNonVariableLines(cssString) {
   try {
     // Read the string as an array of lines
-    const lines = cssString.split('\n');
+    const lines = cssString.split("\n");
 
     // Remove comments
     const linesCleared = lines.map((line) =>
-      line.replaceAll(/\/\*.*?\*\//g, ''),
+      line.replaceAll(/\/\*.*?\*\//g, ""),
     );
 
     // Filter lines to include only those that match the CSS variable pattern
     const variableLines = linesCleared.filter(
-      (line) => line.trim().startsWith('--') && line.trim().endsWith(';'),
+      (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
     );
 
     // Filter lines that end with invalid colors (like color: #;)
     const emptyColorLines = variableLines.filter(
-      (line) => !line.trim().endsWith('#;'),
+      (line) => !line.trim().endsWith("#;"),
     );
 
     // Join the filtered lines back into a single string
-    const updatedContent = emptyColorLines.join('\n');
+    const updatedContent = emptyColorLines.join("\n");
 
     // Convert colors to rgb
     const convertedContent = convertCssColorsToRgbWithSass(updatedContent);
@@ -332,7 +332,7 @@ const currentFolder = getCurrentFolder();
 const args = getCommandLineArgs();
 //console.log("Command line arguments:", args)
 
-const obsidianFolder = './obsidian';
+const obsidianFolder = "./obsidian";
 const folders = listFoldersInDirectory(obsidianFolder);
 //console.log(folders.length)
 
@@ -340,7 +340,7 @@ const folders = listFoldersInDirectory(obsidianFolder);
 let manifestCollection = [];
 folders.forEach((folder) => {
   manifestCollection.push(
-    readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, 'manifest.json'),
+    readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"),
   );
 });
 //console.log(manifestCollection)
@@ -350,12 +350,12 @@ clearDirectoryContents(`./themes`);
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   );
   // INIT ONLY
-  if (args[0] === 'INIT') {
+  if (args[0] === "INIT") {
     ensureDirectoryExists(
-      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
     );
   }
 });
@@ -365,7 +365,7 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/README.md`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   );
 });
 
@@ -373,13 +373,13 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_index.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
     // INIT ONLY
   );
-  if (args[0] === 'INIT') {
+  if (args[0] === "INIT") {
     copyFileToDirectory(
       `./extras/_index.scss`,
-      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+      `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
     );
   }
 });
@@ -388,7 +388,7 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_fonts.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   );
 });
 
@@ -396,7 +396,7 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_dark.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   );
 });
 
@@ -404,7 +404,7 @@ manifestCollection.forEach((manifest) => {
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_light.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
   );
 });
 
@@ -412,70 +412,70 @@ manifestCollection.forEach((manifest) => {
 // README.md
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/README.md`,
-    '%OBSIDIAN_THEME_NAME%',
-    getValueFromDictionary(manifest, 'name'),
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    "%OBSIDIAN_THEME_NAME%",
+    getValueFromDictionary(manifest, "name"),
   );
 });
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/README.md`,
-    '%OBSIDIAN_THEME_NAME_SANITIZED%',
-    sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name')),
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    "%OBSIDIAN_THEME_NAME_SANITIZED%",
+    sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name")),
   );
 });
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/README.md`,
-    '%OBSIDIAN_THEME_URL%',
-    getValueFromDictionary(manifest, 'authorUrl') !== ''
-      ? getValueFromDictionary(manifest, 'authorUrl')
-      : '#',
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
+    "%OBSIDIAN_THEME_URL%",
+    getValueFromDictionary(manifest, "authorUrl") !== ""
+      ? getValueFromDictionary(manifest, "authorUrl")
+      : "#",
   );
 });
 
 // STEP 6
 // _index.scss
-const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, 'gmsv');
-const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, 'gmsv');
-const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, 'gmsv');
+const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv");
+const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv");
+const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv");
 const darkRegex = new RegExp(
   /^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/,
-  'gmsv',
+  "gmsv",
 );
 const lightRegex = new RegExp(
   /^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/,
-  'gmsv',
+  "gmsv",
 );
 let hasDarkOptions = true;
 let hasLightOptions = true;
 manifestCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//OVERRIDES`,
     `@use "overrides";`,
   );
 });
 manifestCollection.forEach((manifest) => {
   const bodyValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`,
+    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     bodyRegex,
   );
-  const bodyValue2 = bodyValue.replace(bodyRegex, '$1');
+  const bodyValue2 = bodyValue.replace(bodyRegex, "$1");
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//BODY`,
     removeNonVariableLines(bodyValue2),
   );
 });
 manifestCollection.forEach((manifest) => {
   const rootValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`,
+    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     rootRegex,
   );
-  const rootValue2 = rootValue.replace(rootRegex, '$1');
+  const rootValue2 = rootValue.replace(rootRegex, "$1");
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//ROOT`,
     removeNonVariableLines(rootValue2),
   );
@@ -484,12 +484,12 @@ manifestCollection.forEach((manifest) => {
 // _fonts.scss
 manifestCollection.forEach((manifest) => {
   const fontValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`,
+    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     fontRegex,
   );
-  const fontValue2 = fontValue.replace(fontRegex, '$1');
+  const fontValue2 = fontValue.replace(fontRegex, "$1");
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_fonts.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_fonts.scss`,
     `//FONTS`,
     fontValue2,
   );
@@ -498,76 +498,76 @@ manifestCollection.forEach((manifest) => {
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
   const darkValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`,
+    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     darkRegex,
   );
   const lightValue = findAllMatchesAsString(
-    `./obsidian/${getValueFromDictionary(manifest, 'name')}/theme.css`,
+    `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     lightRegex,
   );
-  hasDarkOptions = darkValue !== '';
-  hasLightOptions = lightValue !== '';
-  const darkValue2 = darkValue.replace(darkRegex, '$1');
-  const lightValue2 = lightValue.replace(lightRegex, '$1');
+  hasDarkOptions = darkValue !== "";
+  hasLightOptions = lightValue !== "";
+  const darkValue2 = darkValue.replace(darkRegex, "$1");
+  const lightValue2 = lightValue.replace(lightRegex, "$1");
   if (hasDarkOptions) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
     );
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_dark.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
     );
   }
   if (hasLightOptions) {
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
     );
     replaceInFile(
-      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_light.scss`,
+      `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
     );
   }
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//DARK`,
     removeNonVariableLines(lightValue2),
   );
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_light.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
     `//DARK`,
     removeNonVariableLines(lightValue2),
   );
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//LIGHT`,
     removeNonVariableLines(darkValue2),
   );
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_dark.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
     `//LIGHT`,
     removeNonVariableLines(darkValue2),
   );
 
   // Remove remaining comments
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_index.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    '',
+    "",
   );
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_dark.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    '',
+    "",
   );
   replaceInFile(
-    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, 'name'))}/_light.scss`,
+    `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
-    '',
+    "",
   );
 });

@@ -1,10 +1,10 @@
 body {
-  .workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content {
+  .workspace-leaf-content[data-type="advanced-tables-toolbar"] .view-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
-  [data-type='advanced-tables-toolbar']
+  [data-type="advanced-tables-toolbar"]
     .nav-buttons-container
     .nav-action-button
     > svg {
@@ -25,7 +25,7 @@ body {
     font-size: var(--font-ui-small);
     color: var(--text-normal);
   }
-  [data-type='advanced-tables-toolbar']
+  [data-type="advanced-tables-toolbar"]
     .nav-buttons-container
     .nav-action-button {
     margin-right: 0.25em;

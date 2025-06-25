@@ -1,5 +1,5 @@
 .theme-light {
-  --code-font-family: 'Hack';
+  --code-font-family: "Hack";
   --link-color: #106ba3;
   --text-color: #202b33;
   --brackets-color: #a7b6c2;
@@ -29,12 +29,12 @@ strong {
 
 /*Insert [[ ]] around links to make it look like roam*/
 .internal-link::before {
-  content: '[[';
+  content: "[[";
   color: var(--brackets-color);
 }
 
 .internal-link::after {
-  content: ']]';
+  content: "]]";
   color: var(--brackets-color);
 }
 
@@ -154,8 +154,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* Code in markdown preview */
 .markdown-preview-view code,
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   font-size: 1em;
   font-family: var(--code-font-family);
 }

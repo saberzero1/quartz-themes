@@ -1,10 +1,10 @@
-.callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='left'] {
+.callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="left"] {
   margin-left: -30px;
 }
-.callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='right'] {
+.callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="right"] {
   margin-right: -30px;
 }
-.callout[data-callout~='infobox'] [data-heading] {
+.callout[data-callout~="infobox"] [data-heading] {
   --box-shadow: none;
   --header-shadow: var(--box-shadow);
   --h1-shadow: var(--header-shadow);
@@ -66,25 +66,25 @@
 }
 :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   .cm-foldPlaceholder,
 :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder,
 :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   .cm-foldPlaceholder,
 :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder {

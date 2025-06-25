@@ -1,5 +1,5 @@
 .vault-icon {
-  --vault-icon-image: '';
+  --vault-icon-image: "";
   --vault-icon-width: 32px;
   --vault-icon-height: 28px;
   --vault-icon-padding: 10px;
@@ -7,7 +7,7 @@
 
 .vault-icon .mod-left .workspace-drawer-header::before,
 .vault-icon .workspace-sidedock-vault-profile::before {
-  content: '';
+  content: "";
   background-image: var(--vault-icon-image);
   background-size: contain;
   background-repeat: no-repeat;

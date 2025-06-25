@@ -81,30 +81,30 @@ body.style-options-for-admonition-plugin
   background-color: var(--p-kanban-color-8);
   padding-left: 2em;
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 1) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 1) {
   background-color: var(--p-kanban-color-1);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 2) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 2) {
   background-color: var(--p-kanban-color-2);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 3) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 3) {
   background-color: var(--p-kanban-color-3);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 4) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 4) {
   background-color: var(--p-kanban-color-4);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 5) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 5) {
   background-color: var(--p-kanban-color-5);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 6) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 6) {
   background-color: var(--p-kanban-color-6);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n + 7) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n + 7) {
   background-color: var(--p-kanban-color-7);
 }
-body .callout.callout[data-callout*='kanban'] ul > li:nth-of-type(8n) {
+body .callout.callout[data-callout*="kanban"] ul > li:nth-of-type(8n) {
   background-color: var(--p-kanban-color-8);
 }
-body .callout.callout[data-callout*='kanban'] .task-list-item-checkbox {
+body .callout.callout[data-callout*="kanban"] .task-list-item-checkbox {
   border-color: var(--text-normal) !important;
 }

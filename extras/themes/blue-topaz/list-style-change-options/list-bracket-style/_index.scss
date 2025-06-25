@@ -107,7 +107,7 @@ body.list-bracket-style-two ol > li {
 }
 
 body.list-bracket-style-two ol > li::before {
-  content: counters(niceBT, '.') '. ';
+  content: counters(niceBT, ".") ". ";
   font-weight: bold;
   font-family: Monaco;
   font-size: 0.8em;

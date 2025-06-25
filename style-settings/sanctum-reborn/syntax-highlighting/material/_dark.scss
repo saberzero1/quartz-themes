@@ -17,9 +17,9 @@
 .theme-dark .HyperMD-codeblock .language-scss > code {
   color: #fd9170;
 }
-.theme-dark p > code [class*='language-'] .namespace,
-.theme-dark pre:not(.frontmatter) [class*='language-'] .namespace,
-.theme-dark .HyperMD-codeblock [class*='language-'] .namespace {
+.theme-dark p > code [class*="language-"] .namespace,
+.theme-dark pre:not(.frontmatter) [class*="language-"] .namespace,
+.theme-dark .HyperMD-codeblock [class*="language-"] .namespace {
   opacity: 0.7;
 }
 .theme-dark p > code .token.atrule,

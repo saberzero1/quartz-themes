@@ -679,104 +679,104 @@ pre {
 /* Copy button text in view mode is just "Copy", so we replace it with language name itself */
 /* ======================================== */
 pre {
-  --language: 'Text';
+  --language: "Text";
 }
 
 .language-css {
-  --language: 'CSS';
+  --language: "CSS";
 }
 
 .language-html {
-  --language: 'HTML';
+  --language: "HTML";
 }
 
 .language-xml {
-  --language: 'XML';
+  --language: "XML";
 }
 
 .language-java {
-  --language: 'Java';
+  --language: "Java";
 }
 
 .language-powershell {
-  --language: 'PowerShell';
+  --language: "PowerShell";
 }
 
 .language-bash {
-  --language: 'bash';
+  --language: "bash";
 }
 
 .language-sh {
-  --language: 'sh';
+  --language: "sh";
 }
 
 .language-fortran {
-  --language: 'Fortran';
+  --language: "Fortran";
 }
 
 .language-vim {
-  --language: '.vimrc';
+  --language: ".vimrc";
 }
 
 .language-markdown {
-  --language: 'Markdown';
+  --language: "Markdown";
 }
 
 .language-sql {
-  --language: 'SQL';
+  --language: "SQL";
 }
 
 .language-dockerfile {
-  --language: 'Dockerfile';
+  --language: "Dockerfile";
 }
 
 .language-latex {
-  --language: 'LaTeX';
+  --language: "LaTeX";
 }
 
 .language-lua {
-  --language: 'Lua';
+  --language: "Lua";
 }
 
 .language-csharp {
-  --language: 'C#';
+  --language: "C#";
 }
 
 .language-cpp {
-  --language: 'C++';
+  --language: "C++";
 }
 
 .language-c {
-  --language: 'C';
+  --language: "C";
 }
 
 .language-python {
-  --language: 'Python';
+  --language: "Python";
 }
 
 .language-php {
-  --language: 'PHP';
+  --language: "PHP";
 }
 
 .language-groovy {
-  --language: 'Groovy';
+  --language: "Groovy";
 }
 
 .language-nginx {
-  --language: 'Nginx';
+  --language: "Nginx";
 }
 
 .language-yaml,
 .language-yml {
-  --language: 'YAML';
+  --language: "YAML";
 }
 
 .language-toml {
-  --language: 'TOML';
+  --language: "TOML";
 }
 
 .language-ini {
-  --language: 'INI';
+  --language: "INI";
 }
 
 /* Remove original text */
@@ -829,7 +829,7 @@ pre {
 /* Embed containers: PDFs (page specified) */
 /* ======================================== */
 /* Disable scrollbar */
-.pdf-embed[src*='#page=']
+.pdf-embed[src*="#page="]
   > .pdf-container
   > .pdf-content-container
   > .pdf-viewer-container {
@@ -837,7 +837,7 @@ pre {
   /* Disable scrolling when clicking on top or bottom of the page (this also disables text-selection) */
   pointer-events: none;
 }
-.pdf-embed[src*='#page=']
+.pdf-embed[src*="#page="]
   > .pdf-container
   > .pdf-content-container
   > .pdf-viewer-container
@@ -850,7 +850,7 @@ pre {
 }
 
 /* Different toolbar color */
-.pdf-embed[src*='#page='] > .pdf-toolbar {
+.pdf-embed[src*="#page="] > .pdf-toolbar {
   background-color: #000000;
 }
 
@@ -932,7 +932,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 .table-col-btn,
 .table-row-btn,
 .view-header-breadcrumb,
-.clickable-icon[aria-disabled='false'],
+.clickable-icon[aria-disabled="false"],
 .clickable-icon:not([aria-disabled]),
 .workspace-tab-header-inner,
 .workspace-tab-header-status-icon,

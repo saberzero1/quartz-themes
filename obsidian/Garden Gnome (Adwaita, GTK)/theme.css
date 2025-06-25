@@ -192,7 +192,7 @@ h6 {
   /* Hide header */
   --inline-title-margin-bottom: 0;
 }
-.markdown-embed[alt=''] .embed-title {
+.markdown-embed[alt=""] .embed-title {
   /* Use an empty alt to hide the title: ![[Title|]] */
   display: none;
 }
@@ -230,7 +230,7 @@ h6 {
 .nav-folder-title::before {
   /* Little folder icon */
   box-sizing: border-box;
-  content: '';
+  content: "";
   margin: auto 0.5ch auto 0;
   border: solid var(--nav-item-color);
   border-width: 0 0 7px 5px;
@@ -395,10 +395,10 @@ button.kanban-plugin__new-item-button:hover {
   display: none;
 }
 .internal-link.BC-Link.BC-prev::before {
-  content: '←';
+  content: "←";
 }
 .internal-link.BC-Link.BC-next::after {
-  content: '→';
+  content: "→";
 }
 /* Replace trail dingbats */
 .BC-trail-sep {
@@ -406,7 +406,7 @@ button.kanban-plugin__new-item-button:hover {
 }
 .BC-trail-sep::after {
   font-size: 1rem;
-  content: ' \› ';
+  content: " \› ";
 }
 
 /* Tree view is partially unsupported, it's terribly made and too much for me */
@@ -416,7 +416,7 @@ button.kanban-plugin__new-item-button:hover {
   cursor: pointer;
 }
 /*Buttons*/
-.workspace-leaf-content[data-type='BC-matrix'] .view-content {
+.workspace-leaf-content[data-type="BC-matrix"] .view-content {
   padding-top: 0;
   /* Hijack */
   --link-color: var(--nav-item-color);
@@ -499,12 +499,12 @@ h6.BC-Matrix-header {
 
 /* STYLE SETTINGS PLUGIN */
 
-.style-settings-heading[data-level='0'] {
+.style-settings-heading[data-level="0"] {
   padding-top: 0;
   margin-top: 0;
 }
 .style-settings-container,
-.style-settings-heading[data-level='0'] + .style-settings-container {
+.style-settings-heading[data-level="0"] + .style-settings-container {
   padding-left: 2ch;
 }
 .setting-item + .setting-item-heading,
@@ -512,19 +512,19 @@ h6.BC-Matrix-header {
   margin-bottom: 0.5em;
   margin-top: 0;
 }
-.style-settings-heading[data-level='0'] .setting-item-name {
+.style-settings-heading[data-level="0"] .setting-item-name {
   font-size: 1.8em;
 }
-.style-settings-heading[data-level='1'] .setting-item-name {
+.style-settings-heading[data-level="1"] .setting-item-name {
   font-size: 1.6em;
 }
-.style-settings-heading[data-level='2'] .setting-item-name {
+.style-settings-heading[data-level="2"] .setting-item-name {
   font-size: 1.42em;
 }
-.style-settings-heading[data-level='3'] .setting-item-name {
+.style-settings-heading[data-level="3"] .setting-item-name {
   font-size: 1.26em;
 }
-.style-settings-heading[data-level='4'] .setting-item-name {
+.style-settings-heading[data-level="4"] .setting-item-name {
   font-size: 1.125em;
 }
 
@@ -551,21 +551,21 @@ h6.BC-Matrix-header {
 
 /* Custom image attributes */
 
-span[src$='#color-invert-b'],
-span[src$='color-invert'] {
+span[src$="#color-invert-b"],
+span[src$="color-invert"] {
   filter: var(--color-invert-filter-b);
 }
-span[src$='#color-invert-w'] {
+span[src$="#color-invert-w"] {
   filter: var(--color-invert-filter-w);
 }
-span[src$='#invert-b'],
-span[src$='#invert'] {
+span[src$="#invert-b"],
+span[src$="#invert"] {
   filter: var(--invert-filter-b);
 }
-span[src$='#invert-w'] {
+span[src$="#invert-w"] {
   filter: var(--invert-filter-w);
 }
-span[alt$='center'] {
+span[alt$="center"] {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1226,7 +1226,7 @@ a {
   display: none;
 }
 .mod-root .workspace-tab-header + .workspace-tab-header::before {
-  content: '';
+  content: "";
   clip-path: none;
 
   left: -2px;
@@ -1414,14 +1414,14 @@ button.mod-cta {
 button.mod-cta:hover {
   background-color: var(--blue-2);
 }
-input[type='text'],
-input[type='search'],
-input[type='email'],
-input[type='password'],
-input[type='number'] {
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
   background-color: var(--background-hover);
 }
-input[type='search']:active {
+input[type="search"]:active {
   background-color: var(--background-active);
 }
 

@@ -26,7 +26,7 @@ body.flexcyon-workspace-card-layout .metadata-content {
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-explorer']
+    .workspace-tab-header.is-active[data-type="file-explorer"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
@@ -34,10 +34,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-explorer']
+    .workspace-tab-header.is-active[data-type="file-explorer"]
   )
   + .workspace-tab-container::before {
-  content: 'Files';
+  content: "Files";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -49,7 +49,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-tree-view']
+    .workspace-tab-header.is-active[data-type="file-tree-view"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
@@ -57,10 +57,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-tree-view']
+    .workspace-tab-header.is-active[data-type="file-tree-view"]
   )
   + .workspace-tab-container::before {
-  content: 'Alternate File Tree';
+  content: "Alternate File Tree";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -72,7 +72,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='bookmarks']
+    .workspace-tab-header.is-active[data-type="bookmarks"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
@@ -80,10 +80,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='bookmarks']
+    .workspace-tab-header.is-active[data-type="bookmarks"]
   )
   + .workspace-tab-container::before {
-  content: 'Bookmarks';
+  content: "Bookmarks";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -95,7 +95,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='all-properties']
+    .workspace-tab-header.is-active[data-type="all-properties"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
@@ -103,10 +103,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='all-properties']
+    .workspace-tab-header.is-active[data-type="all-properties"]
   )
   + .workspace-tab-container::before {
-  content: 'All Properties';
+  content: "All Properties";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -118,7 +118,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='outline']
+    .workspace-tab-header.is-active[data-type="outline"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
@@ -126,10 +126,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='outline']
+    .workspace-tab-header.is-active[data-type="outline"]
   )
   + .workspace-tab-container::before {
-  content: 'Outline';
+  content: "Outline";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -141,7 +141,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
+    .workspace-tab-header.is-active[data-type="full-calendar-sidebar-view"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
@@ -149,10 +149,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='full-calendar-sidebar-view']
+    .workspace-tab-header.is-active[data-type="full-calendar-sidebar-view"]
   )
   + .workspace-tab-container::before {
-  content: 'Full Calendar | Sidebar';
+  content: "Full Calendar | Sidebar";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -164,7 +164,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='backlink']
+    .workspace-tab-header.is-active[data-type="backlink"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-orange-rgb), calc(var(--dimmed) - 0.15));
@@ -172,10 +172,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='backlink']
+    .workspace-tab-header.is-active[data-type="backlink"]
   )
   + .workspace-tab-container::before {
-  content: 'Backlinks';
+  content: "Backlinks";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -187,7 +187,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='review-queue-list-view']
+    .workspace-tab-header.is-active[data-type="review-queue-list-view"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-red-rgb), calc(var(--dimmed) - 0.15));
@@ -195,10 +195,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='review-queue-list-view']
+    .workspace-tab-header.is-active[data-type="review-queue-list-view"]
   )
   + .workspace-tab-container::before {
-  content: 'Review Queue';
+  content: "Review Queue";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -210,7 +210,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-properties']
+    .workspace-tab-header.is-active[data-type="file-properties"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-blue-rgb), calc(var(--dimmed) - 0.15));
@@ -218,10 +218,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='file-properties']
+    .workspace-tab-header.is-active[data-type="file-properties"]
   )
   + .workspace-tab-container::before {
-  content: 'Properties';
+  content: "Properties";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -233,7 +233,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='outgoing-link']
+    .workspace-tab-header.is-active[data-type="outgoing-link"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-purple-rgb), calc(var(--dimmed) - 0.15));
@@ -241,10 +241,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='outgoing-link']
+    .workspace-tab-header.is-active[data-type="outgoing-link"]
   )
   + .workspace-tab-container::before {
-  content: 'Outgoing Links';
+  content: "Outgoing Links";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -256,7 +256,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='graph']
+    .workspace-tab-header.is-active[data-type="graph"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-cyan-rgb), calc(var(--dimmed) - 0.15));
@@ -264,10 +264,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='graph']
+    .workspace-tab-header.is-active[data-type="graph"]
   )
   + .workspace-tab-container::before {
-  content: 'Graph View';
+  content: "Graph View";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -279,7 +279,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='full-calendar-view']
+    .workspace-tab-header.is-active[data-type="full-calendar-view"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-pink-rgb), calc(var(--dimmed) - 0.15));
@@ -287,10 +287,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='full-calendar-view']
+    .workspace-tab-header.is-active[data-type="full-calendar-view"]
   )
   + .workspace-tab-container::before {
-  content: 'Full Calendar';
+  content: "Full Calendar";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -302,7 +302,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='localgraph']
+    .workspace-tab-header.is-active[data-type="localgraph"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-green-rgb), calc(var(--dimmed) - 0.15));
@@ -310,10 +310,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='localgraph']
+    .workspace-tab-header.is-active[data-type="localgraph"]
   )
   + .workspace-tab-container::before {
-  content: 'Local Graph';
+  content: "Local Graph";
   position: absolute;
   top: 56px;
   left: 32px;
@@ -325,7 +325,7 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='calendar']
+    .workspace-tab-header.is-active[data-type="calendar"]
   )
   + .workspace-tab-container {
   border: 2px solid rgba(var(--color-yellow-rgb), calc(var(--dimmed) - 0.15));
@@ -333,10 +333,10 @@ body.flexcyon-workspace-card-layout
 body.flexcyon-workspace-card-layout
   .mod-sidedock
   .workspace-tab-header-container:has(
-    .workspace-tab-header.is-active[data-type='calendar']
+    .workspace-tab-header.is-active[data-type="calendar"]
   )
   + .workspace-tab-container::before {
-  content: 'Calendar';
+  content: "Calendar";
   position: absolute;
   top: 56px;
   left: 32px;

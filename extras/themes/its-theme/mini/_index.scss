@@ -80,7 +80,7 @@
 }
 
 .minimalist-workspace .nav-folder .nav-folder-title {
-  --folder-icon: '';
+  --folder-icon: "";
   --file-icon-margin: 0;
 }
 
@@ -88,12 +88,12 @@
   .nav-folder
   .nav-folder-title
   .nav-folder-title-content::before {
-  content: '';
+  content: "";
   width: 0;
 }
 
 .minimalist-workspace .nav-file .nav-file-title {
-  --file-icon: '';
+  --file-icon: "";
   --file-icon-margin: 0;
 }
 
@@ -101,7 +101,7 @@
   .nav-file
   .nav-file-title
   .nav-file-title-content::before {
-  content: '';
+  content: "";
   width: 0;
 }
 
@@ -109,9 +109,9 @@
   --font: var(--font-default);
   --background-modifier-hover: var(--td);
   --tag-color: var(--accent2-lite);
-  --hr-icon-symbol: '';
-  --file-icon: '';
-  --folder-icon: '';
+  --hr-icon-symbol: "";
+  --file-icon: "";
+  --folder-icon: "";
   --header-border-line-height: 0;
   --nav-item-border-width: 2px;
   --nav-item-border-color: var(--text);

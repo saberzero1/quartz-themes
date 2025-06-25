@@ -3,7 +3,7 @@
   .vertical-tab-content-container
   > .vertical-tab-content
   > .setting-item:nth-child(2)
-  > .setting-item-control:has(> input[type='color']) {
+  > .setting-item-control:has(> input[type="color"]) {
   position: relative;
   visibility: hidden;
 }
@@ -13,8 +13,8 @@
   .vertical-tab-content-container
   > .vertical-tab-content
   > .setting-item:nth-child(2)
-  > .setting-item-control:has(> input[type='color'])::before {
-  content: 'Overridden by Style Settings';
+  > .setting-item-control:has(> input[type="color"])::before {
+  content: "Overridden by Style Settings";
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
   position: absolute;
@@ -31,7 +31,7 @@
   .vertical-tab-content-container
   > .vertical-tab-content
   > .setting-item:nth-child(2)
-  > .setting-item-control:has(> input[type='color'])::before {
+  > .setting-item-control:has(> input[type="color"])::before {
   width: auto;
 }
 

@@ -1,13 +1,13 @@
 body.flexcyon-file-exp-dimmed-file-exts-enabled
-  div[data-path$='.md']
+  div[data-path$=".md"]
   div.nav-file-tag {
   display: none;
 }
 
 body.flexcyon-file-exp-dimmed-file-exts-enabled
-  div[data-path$='.md']
+  div[data-path$=".md"]
   div.nav-file-title-content::after {
-  content: '.md';
+  content: ".md";
   opacity: var(--dimmed);
 }
 
@@ -22,5 +22,5 @@ body.flexcyon-file-exp-dimmed-file-exts-enabled div div.nav-file-tag {
 }
 
 body.flexcyon-file-exp-dimmed-file-exts-enabled div div.nav-file-tag::before {
-  content: '.';
+  content: ".";
 }

@@ -1,8 +1,8 @@
 .fileIcons .nav-file-icon::before {
-  content: '\e800';
+  content: "\e800";
   text-align: center;
   color: var(--custom-file-icon);
-  font-family: 'its';
+  font-family: "its";
   margin-right: 6px;
   vertical-align: top;
   font-size: 13px;
@@ -12,7 +12,7 @@
   .nav-folder-children
   .nav-file-title
   > .nav-file-title-content::before {
-  content: '\e800';
+  content: "\e800";
   text-align: center;
   color: var(--custom-file-icon);
 }
@@ -23,7 +23,7 @@
   .file-tree-plugin-view
   .oz-nav-file-title
   .oz-nav-file-title-content::before {
-  content: '\e800';
+  content: "\e800";
   text-align: center;
   color: var(--custom-file-icon);
 }

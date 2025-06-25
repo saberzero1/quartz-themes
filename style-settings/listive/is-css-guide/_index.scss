@@ -1,6 +1,6 @@
 .markdown-rendered:not(.show-indentation-guide)
   :is(ul ul, ol ul, ul ol, ol ol)::before {
-  content: '';
+  content: "";
   border-left: 1px solid var(--background-modifier-border);
   position: absolute;
   left: calc(-13px + var(--list-guide-adj));

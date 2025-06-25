@@ -32,7 +32,7 @@
 .lodi-style-headers .markdown-rendered h5::before,
 .lodi-style-headers .is-live-preview .HyperMD-header-6::before,
 .lodi-style-headers .markdown-rendered h6::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -56,7 +56,7 @@
 .lodi-style-headers .markdown-rendered h5::after,
 .lodi-style-headers .is-live-preview .HyperMD-header-6::after,
 .lodi-style-headers .markdown-rendered h6::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -68,12 +68,12 @@
   border-bottom-right-radius: 5px;
 }
 
-.lodi-style-headers .HyperMD-header.HyperMD-header-1.cm-line[dir='rtl'],
-.lodi-style-headers .HyperMD-header.HyperMD-header-2.cm-line[dir='rtl'],
-.lodi-style-headers .HyperMD-header.HyperMD-header-3.cm-line[dir='rtl'],
-.lodi-style-headers .HyperMD-header.HyperMD-header-4.cm-line[dir='rtl'],
-.lodi-style-headers .HyperMD-header.HyperMD-header-5.cm-line[dir='rtl'],
-.lodi-style-headers .HyperMD-header.HyperMD-header-6.cm-line[dir='rtl'] {
+.lodi-style-headers .HyperMD-header.HyperMD-header-1.cm-line[dir="rtl"],
+.lodi-style-headers .HyperMD-header.HyperMD-header-2.cm-line[dir="rtl"],
+.lodi-style-headers .HyperMD-header.HyperMD-header-3.cm-line[dir="rtl"],
+.lodi-style-headers .HyperMD-header.HyperMD-header-4.cm-line[dir="rtl"],
+.lodi-style-headers .HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
+.lodi-style-headers .HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
   margin-bottom: 10px;
 }
 

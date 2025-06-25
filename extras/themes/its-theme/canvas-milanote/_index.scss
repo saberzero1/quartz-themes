@@ -13,7 +13,7 @@ body.canvas-milanote {
 .canvas-milanote
   .canvas-node
   .canvas-node-content.markdown-embed:not(.is-loaded) {
-  --milanote-serif-font: 'Harding', 'Ranille Normal', 'Georgia', 'Calibri';
+  --milanote-serif-font: "Harding", "Ranille Normal", "Georgia", "Calibri";
   --h1-size: calc(var(--font-text-size) * 1.55);
   --h2-size: calc(var(--font-text-size) * 1.45);
   --h3-size: calc(var(--font-text-size) * 1.35);

@@ -1,12 +1,12 @@
 .composer--NodeOutlineStyle
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content {
   /* Base styles for outline container */
   .collapse-icon {
     padding-inline-end: var(--size-2-3);
     opacity: var(--outline-collapsed-icon-opacity);
     &::before {
-      content: '' !important;
+      content: "" !important;
     }
   }
   /* Tree item base styles */
@@ -14,7 +14,7 @@
     &:not(.is-grabbing) {
       position: relative;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 2px;
         background-color: transparent;
@@ -37,7 +37,7 @@
         line-height: calc(var(--nav-item-size) * 1.8);
         position: relative;
         &::before {
-          content: '';
+          content: "";
           width: var(--size-4-1);
           height: var(--size-4-1);
           border: 2px solid var(--color-accent);
@@ -93,7 +93,7 @@
     }
     /* Hover decoration for child items */
     &:hover > .tree-item-children > .tree-item:hover::before {
-      content: '';
+      content: "";
       position: absolute;
       top: calc(var(--nav-item-size) * 1.8 / 2 * -1);
       left: -9px;

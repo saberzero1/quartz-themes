@@ -44,7 +44,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p1
-  > input[type='checkbox'] {
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-red) !important;
   background-color: var(--todoist-red-background) !important;
   border-radius: 50%;
@@ -53,7 +53,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p1
-  > input[type='checkbox']:hover {
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 117, 127, 0.5) !important;
   border-radius: 50%;
 }
@@ -61,7 +61,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p2
-  > input[type='checkbox'] {
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-orange) !important;
   background-color: var(--todoist-orange-background) !important;
   border-radius: 50%;
@@ -70,7 +70,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p2
-  > input[type='checkbox']:hover {
+  > input[type="checkbox"]:hover {
   background-color: rgba(255, 199, 119, 0.5) !important;
   border-radius: 50%;
 }
@@ -78,7 +78,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p3
-  > input[type='checkbox'] {
+  > input[type="checkbox"] {
   border: 2px solid var(--todoist-blue) !important;
   background-color: var(--todoist-blue-background) !important;
   border-radius: 50%;
@@ -87,16 +87,16 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p3
-  > input[type='checkbox']:hover {
+  > input[type="checkbox"]:hover {
   background-color: rgba(101, 188, 255, 0.5) !important;
   border-radius: 50%;
 }
-.markdown-rendered ul > li.task-list-item .todoist-p4 > input[type='checkbox'],
+.markdown-rendered ul > li.task-list-item .todoist-p4 > input[type="checkbox"],
 .markdown-preview-view
   ul
   > li.task-list-item
   .todoist-p4
-  > input[type='checkbox'] {
+  > input[type="checkbox"] {
   border: 2px solid var(--slate-gray) !important;
   background-color: rgba(180, 194, 240, 0.25) !important;
   border-radius: 50%;
@@ -105,7 +105,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   ul
   > li.task-list-item
   .todoist-p4
-  > input[type='checkbox']:hover {
+  > input[type="checkbox"]:hover {
   background-color: rgba(180, 194, 240, 0.5) !important;
   border-radius: 50%;
 }
@@ -171,7 +171,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 }
 
 /* ------------------------------------ STANDARD CHECKBOXES ------------------------------------ */
-.markdown-preview-view ul > li.task-list-item input[type='checkbox'] {
+.markdown-preview-view ul > li.task-list-item input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   border: 2px solid var(--text-normal) !important;
@@ -189,7 +189,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   margin-right: 5px;
   margin-left: -6px;
 }
-.markdown-preview-view ul > li.task-list-item input[type='checkbox']:hover {
+.markdown-preview-view ul > li.task-list-item input[type="checkbox"]:hover {
   border: 2px solid var(--text-normal) !important;
   background-color: var(--orange-yellow) !important;
 }
@@ -197,7 +197,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 .markdown-preview-view
   ul
   > li.task-list-item.is-checked
-  input[type='checkbox'] {
+  input[type="checkbox"] {
   border: 2px solid var(--orange-yellow) !important;
   background-color: var(--granny-smith-apple) !important;
 }
@@ -327,7 +327,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 
 /* ------------------------------------ Makes dropdown teal ------------------------------------ */
 .dropdown {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f5b700%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url("data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f5b700%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 /* ------------------------------------ Makes quickswitcher selection bright ------------------------------------ */

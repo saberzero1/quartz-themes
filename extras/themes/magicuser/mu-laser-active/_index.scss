@@ -1,7 +1,7 @@
 body.mu-laser-type-line
   div.workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content::after {
-  content: '';
+  content: "";
   top: var(--mu-laser-top);
   left: 10px;
   right: 20px;
@@ -22,7 +22,7 @@ body.mu-laser-type-line
 body.mu-laser-type-area
   div.workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content::after {
-  content: '';
+  content: "";
   top: var(--mu-laser-top);
   left: 10px;
   right: 20px;

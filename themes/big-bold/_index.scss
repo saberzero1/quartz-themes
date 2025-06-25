@@ -1,24 +1,24 @@
-@use 'sass:color';
-@use 'sass:list';
-@use 'sass:map';
-@use 'sass:meta';
-@use 'sass:string';
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 /* Quartz imports */
-@use '../variables.scss' as *;
+@use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -136,18 +136,18 @@ html[saved-theme='dark'] {
   color-scheme: dark;
 }
 
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
   --background-secondary-alt: var(--color-base-05);
@@ -256,49 +256,49 @@ html[saved-theme='light'] {
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCY9_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkAI9_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCI9_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkB49_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkC49_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
@@ -306,11 +306,11 @@ html[saved-theme='light'] {
 }
 /* latin-ext */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCo9_WamXgHlIbvw.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -318,11 +318,11 @@ html[saved-theme='light'] {
 }
 /* latin */
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_WamXgHlI.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -331,49 +331,49 @@ html[saved-theme='light'] {
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -381,11 +381,11 @@ html[saved-theme='light'] {
 }
 /* latin */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -394,21 +394,21 @@ html[saved-theme='light'] {
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Merriweather Sans';
+  font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhOsHzRRXnKOrnx4.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Merriweather Sans';
+  font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhusHzRRXnKOrnx4.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
@@ -416,11 +416,11 @@ html[saved-theme='light'] {
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Merriweather Sans';
+  font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4Vh-sHzRRXnKOrnx4.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -428,11 +428,11 @@ html[saved-theme='light'] {
 }
 /* latin */
 @font-face {
-  font-family: 'Merriweather Sans';
+  font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4ViesHzRRXnKOr.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -441,54 +441,54 @@ html[saved-theme='light'] {
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTw8cKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTy8cKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTxMcKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyMcKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
@@ -496,12 +496,12 @@ html[saved-theme='light'] {
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyccKpKrCzi0iNaA.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -509,12 +509,12 @@ html[saved-theme='light'] {
 }
 /* latin */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTx8cKpKrCzi0i.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -523,20 +523,20 @@ html[saved-theme='light'] {
 
 /* [0] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1f1e6-1f1ff;
 }
 /* [1] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4,
     U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
@@ -544,11 +544,11 @@ html[saved-theme='light'] {
 }
 /* [2] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122,
     U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2,
@@ -570,11 +570,11 @@ html[saved-theme='light'] {
 }
 /* [3] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694,
     U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709,
@@ -592,11 +592,11 @@ html[saved-theme='light'] {
 }
 /* [4] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf,
     U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b,
@@ -609,11 +609,11 @@ html[saved-theme='light'] {
 }
 /* [5] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708,
     U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2,
@@ -626,11 +626,11 @@ html[saved-theme='light'] {
 }
 /* [6] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382,
     U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
@@ -638,11 +638,11 @@ html[saved-theme='light'] {
 }
 /* [7] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5,
     U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300,
@@ -655,11 +655,11 @@ html[saved-theme='light'] {
 }
 /* [8] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f,
     U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8,
@@ -673,11 +673,11 @@ html[saved-theme='light'] {
 }
 /* [9] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728,
     U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389,
@@ -691,11 +691,11 @@ html[saved-theme='light'] {
 }
 /* [10] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2194-2195, U+2640, U+2642, U+26d3, U+27a1, U+fe0f, U+1f344,
     U+1f34b, U+1f3c3, U+1f3fb-1f3ff, U+1f426, U+1f468-1f469, U+1f4a5, U+1f525,
@@ -704,11 +704,11 @@ html[saved-theme='light'] {
 }
 /* [11] */
 @font-face {
-  font-family: 'Noto Color Emoji';
+  font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
 }
 body {
@@ -716,20 +716,20 @@ body {
 
 /* [0] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.0.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1f1e6-1f1ff;
 }
 /* [1] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.1.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4,
     U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
@@ -737,11 +737,11 @@ body {
 }
 /* [2] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.2.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122,
     U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2,
@@ -763,11 +763,11 @@ body {
 }
 /* [3] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.3.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694,
     U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709,
@@ -785,11 +785,11 @@ body {
 }
 /* [4] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.4.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf,
     U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b,
@@ -802,11 +802,11 @@ body {
 }
 /* [5] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.5.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708,
     U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2,
@@ -819,11 +819,11 @@ body {
 }
 /* [6] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.6.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382,
     U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
@@ -831,11 +831,11 @@ body {
 }
 /* [7] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.7.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5,
     U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300,
@@ -848,11 +848,11 @@ body {
 }
 /* [8] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.8.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f,
     U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8,
@@ -866,11 +866,11 @@ body {
 }
 /* [9] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.9.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728,
     U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389,
@@ -884,11 +884,11 @@ body {
 }
 /* [10] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.10.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+200d, U+2194-2195, U+2640, U+2642, U+26d3, U+27a1, U+fe0f, U+1f344,
     U+1f34b, U+1f3c3, U+1f3fb-1f3ff, U+1f426, U+1f468-1f469, U+1f4a5, U+1f525,
@@ -897,43 +897,43 @@ body {
 }
 /* [11] */
 @font-face {
-  font-family: 'Noto Emoji';
+  font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.11.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
 }
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvlUlIfM0qh1d65g.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXt1UlIfM0qh1d65g.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* vietnamese */
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvFUlIfM0qh1d65g.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
@@ -941,12 +941,12 @@ body {
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvVUlIfM0qh1d65g.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -954,12 +954,12 @@ body {
 }
 /* latin */
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1UlIfM0qh1d.woff2)
-    format('woff2');
+    format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -967,6 +967,155 @@ body {
 }
 
 :root {
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    light-dark(
+      hsl(
+        calc(var(--accent-h) - 4),
+        var(--accent-s),
+        calc(var(--accent-l) - 2%)
+      ),
+      hsl(
+        calc(var(--accent-h) - 1),
+        calc(var(--accent-s) * 1.01),
+        calc(var(--accent-l) * 1.075)
+      )
+    ),
+    hsl(calc(var(--accent-h) - 4), var(--accent-s), calc(var(--accent-l) - 2%))
+  );
+  --color-accent-2: light-dark(
+    light-dark(
+      hsl(
+        calc(var(--accent-h) + 2),
+        calc(var(--accent-s) + 5%),
+        calc(var(--accent-l) + 4%)
+      ),
+      hsl(
+        calc(var(--accent-h) - 3),
+        calc(var(--accent-s) * 1.02),
+        calc(var(--accent-l) * 1.15)
+      )
+    ),
+    hsl(
+      calc(var(--accent-h) + 2),
+      calc(var(--accent-s) + 5%),
+      calc(var(--accent-l) + 4%)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(
+    light-dark(hsla(216, 16%, 13%, var(--page-transparency)), #ffffff),
+    hsla(0, 0%, 100%, var(--page-transparency))
+  );
+  --color-base-05: light-dark(light-dark(#212121, #fcfcfc), #fcfcfc);
+  --color-base-10: light-dark(light-dark(hsl(216, 17%, 14%), #fafafa), #fdfdfd);
+  --color-base-100: light-dark(light-dark(#c8d4e6, #222222), #252525);
+  --color-base-20: light-dark(
+    light-dark(hsl(216, 19%, 16%), #f6f6f6),
+    hsl(0, 0%, 96%)
+  );
+  --color-base-25: light-dark(light-dark(hsl(216, 20%, 20%), #e3e3e3), #efefef);
+  --color-base-30: light-dark(
+    light-dark(hsl(218, 18%, 15%), #e0e0e0),
+    #9f9f9f66
+  );
+  --color-base-35: light-dark(light-dark(hsl(218, 19%, 27%), #d4d4d4), #dedede);
+  --color-base-40: light-dark(light-dark(hsl(218, 19%, 31%), #bdbdbd), #d7d7d7);
+  --color-base-50: light-dark(light-dark(hsl(219, 13%, 51%), #ababab), #878787);
+  --color-base-70: light-dark(light-dark(hsl(220, 17%, 66%), #5c5c5c), #7f7f7f);
+  --color-blue: light-dark(light-dark(#009be3, #086ddd), #4e8aa6);
+  --color-blue-rgb: light-dark(
+    light-dark(0, 155, 227, 8, 109, 221),
+    0,
+    155,
+    227
+  );
+  --color-cyan: light-dark(light-dark(#00cecb, #00bfbc), #49a7ba);
+  --color-cyan-rgb: light-dark(
+    light-dark(0, 206, 203, 0, 191, 188),
+    0,
+    206,
+    203
+  );
+  --color-green: light-dark(light-dark(#7dcf2b, #08b94e), #8fb26b);
+  --color-green-rgb: light-dark(
+    light-dark(125, 207, 43, 8, 185, 78),
+    125,
+    207,
+    43
+  );
+  --color-orange: light-dark(light-dark(#f69c00, #ec7500), #d08344);
+  --color-orange-rgb: light-dark(
+    light-dark(246, 156, 0, 236, 117, 0),
+    246,
+    156,
+    0
+  );
+  --color-pink: light-dark(light-dark(#e66ab4, #d53984), #ac7aaa);
+  --color-pink-rgb: light-dark(
+    light-dark(230, 106, 180, 213, 57, 132),
+    230,
+    106,
+    180
+  );
+  --color-purple: light-dark(light-dark(#b45af5, #7852ee), #8076ad);
+  --color-purple-rgb: light-dark(
+    light-dark(180, 90, 245, 120, 82, 238),
+    180,
+    90,
+    245
+  );
+  --color-red: light-dark(light-dark(#ff4d3a, #e93147), #c75f54);
+  --color-red-rgb: light-dark(
+    light-dark(255, 77, 58, 233, 49, 71),
+    255,
+    77,
+    58
+  );
+  --color-yellow: light-dark(light-dark(#e8c900, #e0ac00), #dca931);
+  --color-yellow-rgb: light-dark(
+    light-dark(232, 201, 0, 224, 172, 0),
+    232,
+    201,
+    0
+  );
+  --highlight-mix-blend-mode: light-dark(lighten, darken);
+  --highlight-text: light-dark(white, var(--text-normal));
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --text-highlight-bg: light-dark(
+    light-dark(hsla(var(--color-accent-hsl), 0.475), rgba(255, 208, 0, 0.4)),
+    rgba(255, 200, 0, 0.459)
+  );
 }
 body {
   --accent-h: 181;
@@ -1037,25 +1186,25 @@ body {
   --custom-code-height: 1em;
   --custom-line-height: 2em;
   --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
-  --font-emoji: 'Noto Color Emoji';
+  --font-emoji: "Noto Color Emoji";
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
-  --font-interface-theme: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
   --font-light: 300;
-  --font-main: 'Nunito Sans';
+  --font-main: "Nunito Sans";
   --font-medium: 500;
-  --font-monospace: 'DM Mono', monospace;
+  --font-monospace: "DM Mono", monospace;
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
-  --font-text-override: '??';
-  --font-text-theme: '??';
+  --font-text-override: "??";
+  --font-text-theme: "??";
   --font-ui-medium: 15px;
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
@@ -1105,7 +1254,7 @@ body {
   --h6-style: var(--heading-style);
   --h6-variant: var(--heading-variant);
   --h6-weight: var(--heading-weight);
-  --heading-font: 'Merriweather Sans', 'Book Antiqua', var(--font-default);
+  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
   --heading-font-2: var(--heading-font), var(--font-default);
   --heading-style: normal;
   --heading-variant: normal;
@@ -1206,18 +1355,18 @@ body {
   width: 100%;
 }
 /* START DARK */
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -1336,18 +1485,18 @@ html[saved-theme='dark'] {
 }
 /* END DARK */
 /* START LIGHT */
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
   --background-secondary-alt: var(--color-base-05);
@@ -1478,107 +1627,107 @@ html {
       --callout-color: var(--callout-default);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='abstract'] {
+    &[data-callout="abstract"] {
       --callout-color: var(--callout-summary);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='summary'] {
+    &[data-callout="summary"] {
       --callout-color: var(--callout-summary);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='tldr'] {
+    &[data-callout="tldr"] {
       --callout-color: var(--callout-summary);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='info'] {
+    &[data-callout="info"] {
       --callout-color: var(--callout-info);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='todo'] {
+    &[data-callout="todo"] {
       --callout-color: var(--callout-todo);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='important'] {
+    &[data-callout="important"] {
       --callout-color: var(--callout-important);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='tip'] {
+    &[data-callout="tip"] {
       --callout-color: var(--callout-tip);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='hint'] {
+    &[data-callout="hint"] {
       --callout-color: var(--callout-tip);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='success'] {
+    &[data-callout="success"] {
       --callout-color: var(--callout-success);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='check'] {
+    &[data-callout="check"] {
       --callout-color: var(--callout-success);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='done'] {
+    &[data-callout="done"] {
       --callout-color: var(--callout-success);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='question'] {
+    &[data-callout="question"] {
       --callout-color: var(--callout-question);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='help'] {
+    &[data-callout="help"] {
       --callout-color: var(--callout-question);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='faq'] {
+    &[data-callout="faq"] {
       --callout-color: var(--callout-question);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='warning'] {
+    &[data-callout="warning"] {
       --callout-color: var(--callout-warning);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='caution'] {
+    &[data-callout="caution"] {
       --callout-color: var(--callout-warning);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='attention'] {
+    &[data-callout="attention"] {
       --callout-color: var(--callout-warning);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='failure'] {
+    &[data-callout="failure"] {
       --callout-color: var(--callout-fail);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='fail'] {
+    &[data-callout="fail"] {
       --callout-color: var(--callout-fail);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='missing'] {
+    &[data-callout="missing"] {
       --callout-color: var(--callout-fail);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='danger'] {
+    &[data-callout="danger"] {
       --callout-color: var(--callout-error);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='error'] {
+    &[data-callout="error"] {
       --callout-color: var(--callout-error);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='bug'] {
+    &[data-callout="bug"] {
       --callout-color: var(--callout-bug);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='example'] {
+    &[data-callout="example"] {
       --callout-color: var(--callout-example);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='quote'] {
+    &[data-callout="quote"] {
       --callout-color: var(--callout-quote);
       background-color: var(--background-secondary-alt);
     }
-    &[data-callout='cite'] {
+    &[data-callout="cite"] {
       --callout-color: var(--callout-quote);
       background-color: var(--background-secondary-alt);
     }
@@ -1723,7 +1872,7 @@ body {
       text-decoration: var(--tag-decoration-hover);
     }
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     appearance: none;
     appearance: none;
     border-radius: var(--checkbox-radius);
@@ -1737,17 +1886,17 @@ body {
     position: relative;
     transition: box-shadow 0.15s ease-in-out;
   }
-  input[type='checkbox']:hover,
-  input[type='checkbox']:active,
-  input[type='checkbox']:focus {
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:active,
+  input[type="checkbox"]:focus {
     outline: 0;
     border-color: var(--checkbox-border-color-hover);
   }
-  input[type='checkbox']:focus-visible {
+  input[type="checkbox"]:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }
-  input[type='checkbox']:checked:after {
-    content: '';
+  input[type="checkbox"]:checked:after {
+    content: "";
     top: -1px;
     inset-inline-start: -1px;
     position: absolute;
@@ -1760,18 +1909,18 @@ body {
     mask-repeat: no-repeat;
     mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
   }
-  input[type='checkbox']:checked {
+  input[type="checkbox"]:checked {
     background-color: var(--checkbox-color);
     border-color: var(--checkbox-color);
   }
   @media (hover: hover) {
-    input[type='checkbox']:checked:hover {
+    input[type="checkbox"]:checked:hover {
       background-color: var(--checkbox-color-hover);
       border-color: var(--checkbox-color-hover);
     }
   }
-  input[type='checkbox'][data-indeterminate='true']:not(:checked):after {
-    content: '';
+  input[type="checkbox"][data-indeterminate="true"]:not(:checked):after {
+    content: "";
     position: absolute;
     top: calc(var(--checkbox-size) / 2 - 2px);
     width: calc(var(--checkbox-size) - 6px);
@@ -1910,51 +2059,51 @@ body {
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
     //color: var(--code-color);
-    span[style='--shiki-light:#6F42C1;--shiki-dark:#B392F0;'] {
+    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
       //color: var(--code-value) !important;
       color: var(--color-purple) !important;
     }
-    span[style='--shiki-light:#005CC5;--shiki-dark:#79B8FF;'] {
+    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
       //color: var(--code-function) !important;
       color: var(--color-blue) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#9ECBFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
       //color: var(--code-string) !important;
       color: var(--color-cyan) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#DBEDFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
       //color: var(--code-property) !important;
       color: var(--code-yellow) !important;
     }
-    span[style='--shiki-light:#24292E;--shiki-dark:#E1E4E8;'] {
+    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
       //color: var(--code-normal) !important;
       color: var(--code-normal) !important;
     }
-    span[style='--shiki-light:#586069;--shiki-dark:#D1D5DA;'] {
+    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
       //color: var(--code-punctuation) !important;
       color: var(--text-muted) !important;
     }
-    span[style='--shiki-light:#F6F8FA;--shiki-dark:#2F363D;'] {
+    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
       //color: var(--code-comment) !important;
       color: var(--text-faint) !important;
     }
-    span[style='--shiki-light:#6A737D;--shiki-dark:#6A737D;'] {
+    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
       //color: var(--code-comment) !important;
       color: var(--code-comment) !important;
     }
-    span[style='--shiki-light:#22863A;--shiki-dark:#85E89D;'] {
+    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
       //color: var(--code-tag) !important;
       color: var(--color-green) !important;
     }
-    span[style='--shiki-light:#E36209;--shiki-dark:#FFAB70;'] {
+    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
       //color: var(--code-important) !important;
       color: var(--color-orange) !important;
     }
-    span[style='--shiki-light:#B31D28;--shiki-dark:#FDAEB7;'] {
+    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
       //color: var(--text-operator) !important;
       color: var(--color-pink) !important;
     }
-    span[style='--shiki-light:#D73A49;--shiki-dark:#F97583;'] {
+    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
       //color: var(--code-keyword) !important;
       color: var(--color-red) !important;
     }
@@ -2040,7 +2189,7 @@ body {
           display: flex;
           align-self: center;
           background: var(--icon-color);
-          content: '';
+          content: "";
         }
         & > div {
           width: 100%;
@@ -2092,7 +2241,7 @@ body {
             color: var(--nav-item-color-active);
             font-weight: var(--nav-item-weight-active);
           }
-          &[data-for$='/index'] {
+          &[data-for$="/index"] {
             padding-inline-start: 8px;
           }
           padding-inline-start: 0;
@@ -2103,7 +2252,7 @@ body {
           height: 16px;
           min-width: 16px;
           min-height: 16px;
-          content: '';
+          content: "";
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -2168,7 +2317,7 @@ body {
       display: none;
     }
     /* lucide book-open icon */
-    --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
+    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
@@ -2180,7 +2329,7 @@ body {
       display: none;
     }
     /* lucide git-fork icon */
-    --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
+    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
@@ -2192,9 +2341,9 @@ body {
       display: none !important;
     }
     /* lucide moon icon */
-    --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
+    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
     /* lucide sun icon */
-    --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
+    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     width: 24px;
     height: 24px;
@@ -2426,13 +2575,13 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-:root[saved-theme='light'] {
+:root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-:root[saved-theme='dark'] {
+:root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
@@ -2443,7 +2592,7 @@ body {
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */
-:root:root[saved-theme='light'] {
+:root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,
@@ -2472,7 +2621,7 @@ body {
 }
 /* END LIGHT GRAPH */
 /* START DARK GRAPH */
-:root:root[saved-theme='dark'] {
+:root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,

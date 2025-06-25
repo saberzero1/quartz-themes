@@ -10,17 +10,17 @@
   }
   /* remove the remove button special for tags property */
   &
-    .metadata-property[data-property-key='tags']
+    .metadata-property[data-property-key="tags"]
     .multi-select-pill-remove-button {
     display: none;
   }
-  & .metadata-property[data-property-key='tags'] .multi-select-pill-content {
+  & .metadata-property[data-property-key="tags"] .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   }
   /* adding "padding to the right after 1.5.1 update "*/
   &
     .markdown-reading-view
-    .metadata-property[data-property-key='tags']
+    .metadata-property[data-property-key="tags"]
     .multi-select-pill-content {
     margin-right: var(--pill-padding-x);
   }

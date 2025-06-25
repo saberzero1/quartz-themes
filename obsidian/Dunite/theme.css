@@ -1,5 +1,5 @@
 body {
-  input[type='checkbox']:checked {
+  input[type="checkbox"]:checked {
     background-color: hsl(65deg, 31%, 85%);
     border-color: var(--checkbox-color);
   }

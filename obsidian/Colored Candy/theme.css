@@ -340,7 +340,7 @@ body {
 }
 
 /* #region checkboxes */
-input[type='checkbox']:checked:after {
+input[type="checkbox"]:checked:after {
   position: static;
   padding: auto;
 }
@@ -401,7 +401,7 @@ mark,
 
 :not(.cm-formatting-hashtag)
   + .cm-highlight.cm-hashtag:not(.cm-formatting-hashtag)::before {
-  content: '#';
+  content: "#";
 }
 
 .cm-highlight:not(.cm-formatting)

@@ -90,13 +90,13 @@ body:not(.mu-cards-interface).mu-sidebar-dark .workspace-leaf-content {
 }
 
 body:not(.mu-cards-interface).mu-sidebar-dark
-  .workspace-leaf-content[data-type='calendar']
+  .workspace-leaf-content[data-type="calendar"]
   .month {
   color: #a3a3a3 !important;
 }
 
 body:not(.mu-cards-interface).mu-sidebar-dark
-  .workspace-leaf-content[data-type='calendar']
+  .workspace-leaf-content[data-type="calendar"]
   table {
   --color-dot: #cfcfcf;
   --color-arrow: #cfcfcf;

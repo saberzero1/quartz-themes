@@ -9,12 +9,12 @@ body.image-alt .image-embed[alt]::after {
 
 body.image-alt
   .image-embed[alt]:not(
-    [alt$='.png'],
-    [alt$='.jpg'],
-    [alt$='.jpeg'],
-    [alt$='.tiff'],
-    [alt$='.webp'],
-    [alt$='.bmp']
+    [alt$=".png"],
+    [alt$=".jpg"],
+    [alt$=".jpeg"],
+    [alt$=".tiff"],
+    [alt$=".webp"],
+    [alt$=".bmp"]
   )::after {
   content: attr(alt);
   font-size: var(--font-smaller);

@@ -39,7 +39,7 @@ body {
   }
   .cm-active .cm-hmd-list-indent::before {
     contain: strict;
-    content: '';
+    content: "";
     position: absolute;
     top: var(
       --indent-dash-top

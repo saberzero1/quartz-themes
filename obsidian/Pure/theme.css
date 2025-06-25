@@ -154,8 +154,8 @@ ul > li.task-list-item .task-list-item-checkbox {
   color: var(--background-primary);
 }
 
-input[type='checkbox']:checked:after {
-  content: '\2713'; /* Tick mark character */
+input[type="checkbox"]:checked:after {
+  content: "\2713"; /* Tick mark character */
   position: absolute;
   top: 54%;
   left: 50%;

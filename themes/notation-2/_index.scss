@@ -1,23 +1,23 @@
-@use 'sass:color';
-@use 'sass:list';
-@use 'sass:map';
-@use 'sass:meta';
-@use 'sass:string';
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 /* Quartz imports */
-@use '../variables.scss' as *;
+@use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -123,17 +123,17 @@ html[saved-theme='dark'] {
   color-scheme: dark;
 }
 
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
   --background-modifier-hover: hsl(60, 3%, 0%, 4%);
@@ -229,79 +229,215 @@ html[saved-theme='light'] {
 }
 
 @font-face {
-  font-family: 'Lyons Serif';
+  font-family: "Lyons Serif";
   font-style: normal;
   font-weight: 400;
   src:
-    local('Lyons Serif'),
-    url('https://fonts.cdnfonts.com/s/22130/Lyons Serif.woff') format('woff');
+    local("Lyons Serif"),
+    url("https://fonts.cdnfonts.com/s/22130/Lyons Serif.woff") format("woff");
 }
 @font-face {
-  font-family: 'Lyons Serif';
+  font-family: "Lyons Serif";
   font-style: italic;
   font-weight: 400;
   src:
-    local('Lyons Serif'),
-    url('https://fonts.cdnfonts.com/s/22130/Lyons Serif Italic.woff')
-      format('woff');
+    local("Lyons Serif"),
+    url("https://fonts.cdnfonts.com/s/22130/Lyons Serif Italic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'Lyons Serif';
+  font-family: "Lyons Serif";
   font-style: normal;
   font-weight: 700;
   src:
-    local('Lyons Serif'),
-    url('https://fonts.cdnfonts.com/s/22130/Lyons Serif Bold.woff')
-      format('woff');
+    local("Lyons Serif"),
+    url("https://fonts.cdnfonts.com/s/22130/Lyons Serif Bold.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'Lyons Serif';
+  font-family: "Lyons Serif";
   font-style: normal;
   font-weight: 900;
   src:
-    local('Lyons Serif'),
-    url('https://fonts.cdnfonts.com/s/22130/Lyons Serif Black.woff')
-      format('woff');
+    local("Lyons Serif"),
+    url("https://fonts.cdnfonts.com/s/22130/Lyons Serif Black.woff")
+      format("woff");
 }
 
 @font-face {
-  font-family: 'iA Writer Duospace';
+  font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: 400;
   src:
-    local('iA Writer Duospace'),
-    url('https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-Regular.woff')
-      format('woff');
+    local("iA Writer Duospace"),
+    url("https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-Regular.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'iA Writer Duospace';
+  font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: 400;
   src:
-    local('iA Writer Duospace'),
-    url('https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-RegularItalic.woff')
-      format('woff');
+    local("iA Writer Duospace"),
+    url("https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-RegularItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'iA Writer Duospace';
+  font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: 700;
   src:
-    local('iA Writer Duospace'),
-    url('https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-Bold.woff')
-      format('woff');
+    local("iA Writer Duospace"),
+    url("https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-Bold.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'iA Writer Duospace';
+  font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: 700;
   src:
-    local('iA Writer Duospace'),
-    url('https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-BoldItalic.woff')
-      format('woff');
+    local("iA Writer Duospace"),
+    url("https://fonts.cdnfonts.com/s/18144/iAWriterDuospace-BoldItalic.woff")
+      format("woff");
 }
 
 :root {
+  --background-modifier-hover: light-dark(
+    rgba(255, 255, 255, 0.04),
+    hsl(60, 3%, 0%, 4%)
+  );
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(light-dark(#191919, #ffffff), hsl(0, 0%, 100%));
+  --color-base-100: light-dark(light-dark(#dadada, #222222), #37352f);
+  --color-base-20: light-dark(light-dark(rgb(32, 32, 32), #f6f6f6), #fbfbfa);
+  --color-base-25: light-dark(light-dark(#21201e, #e3e3e3), #e1e1e1);
+  --color-base-30: light-dark(light-dark(#21201e, #e0e0e0), #dfdfdf);
+  --color-base-35: light-dark(light-dark(#363636, #d4d4d4), #f1f1f0);
+  --color-base-40: light-dark(light-dark(#535353, #bdbdbd), #afafaf);
+  --color-base-50: light-dark(light-dark(#707070, #ababab), #a3a29e);
+  --color-base-70: light-dark(light-dark(#a0a0a0, #5c5c5c), #737272);
+  --color-blue: light-dark(
+    light-dark(rgb(51, 126, 169), #086ddd),
+    rgb(51, 126, 169)
+  );
+  --color-blue-rgb: light-dark(
+    light-dark(29, 40, 46, 8, 109, 221),
+    231,
+    243,
+    248
+  );
+  --color-cyan: light-dark(
+    light-dark(rgb(51, 126, 169), #00bfbc),
+    rgb(51, 126, 169)
+  );
+  --color-cyan-rgb: light-dark(
+    light-dark(29, 40, 46, 0, 191, 188),
+    231,
+    243,
+    248
+  );
+  --color-green: light-dark(
+    light-dark(rgb(82, 158, 144), #08b94e),
+    rgb(68, 131, 97)
+  );
+  --color-green-rgb: light-dark(
+    light-dark(34, 43, 38, 8, 185, 78),
+    237,
+    243,
+    236
+  );
+  --color-orange: light-dark(
+    light-dark(rgb(199, 125, 72), #ec7500),
+    rgb(217, 115, 13)
+  );
+  --color-orange-rgb: light-dark(
+    light-dark(56, 40, 30, 236, 117, 0),
+    251,
+    236,
+    221
+  );
+  --color-pink: light-dark(
+    light-dark(rgb(209, 87, 150), #d53984),
+    rgb(193, 76, 138)
+  );
+  --color-purple: light-dark(
+    light-dark(rgb(157, 104, 211), #7852ee),
+    rgb(144, 101, 176)
+  );
+  --color-purple-rgb: light-dark(
+    light-dark(43, 36, 49, 120, 82, 238),
+    244,
+    240,
+    247,
+    0.8
+  );
+  --color-red: light-dark(
+    light-dark(rgb(223, 84, 82), #e93147),
+    rgb(212, 76, 71)
+  );
+  --color-red-rgb: light-dark(
+    light-dark(54, 36, 34, 233, 49, 71),
+    253,
+    235,
+    236
+  );
+  --color-yellow: light-dark(
+    light-dark(rgb(202, 152, 73), #e0ac00),
+    rgb(203, 145, 47)
+  );
+  --mono-rgb-100: light-dark(light-dark(255, 255, 255, 0, 0, 0), 0, 0, 0);
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --tag-1-default: light-dark(rgb(137, 99, 42), rgb(253, 236, 200));
 }
 body {
   --accent-h: 210;
@@ -371,21 +507,21 @@ body {
   --cursor-link: pointer;
   --font-bold: 500;
   --font-default:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
-  --font-interface-theme: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
   --font-medium: 500;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    'iA Writer Duospace', 'Nitti', Menlo, Courier, monospace;
-  --font-monospace-override: '??';
-  --font-monospace-theme: '??';
+    "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
   --font-normal: 400;
   --font-smaller: 0.875em;
   --font-text: var(--font-default);
@@ -533,17 +669,17 @@ body {
   width: 100%;
 }
 /* START DARK */
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -650,17 +786,17 @@ html[saved-theme='dark'] {
 }
 /* END DARK */
 /* START LIGHT */
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
   --background-modifier-hover: hsl(60, 3%, 0%, 4%);
@@ -777,107 +913,107 @@ html {
       --callout-color: var(--callout-default);
       background-color: transparent;
     }
-    &[data-callout='abstract'] {
+    &[data-callout="abstract"] {
       --callout-color: var(--callout-summary);
       background-color: transparent;
     }
-    &[data-callout='summary'] {
+    &[data-callout="summary"] {
       --callout-color: var(--callout-summary);
       background-color: transparent;
     }
-    &[data-callout='tldr'] {
+    &[data-callout="tldr"] {
       --callout-color: var(--callout-summary);
       background-color: transparent;
     }
-    &[data-callout='info'] {
+    &[data-callout="info"] {
       --callout-color: var(--callout-info);
       background-color: transparent;
     }
-    &[data-callout='todo'] {
+    &[data-callout="todo"] {
       --callout-color: var(--callout-todo);
       background-color: transparent;
     }
-    &[data-callout='important'] {
+    &[data-callout="important"] {
       --callout-color: var(--callout-important);
       background-color: transparent;
     }
-    &[data-callout='tip'] {
+    &[data-callout="tip"] {
       --callout-color: var(--callout-tip);
       background-color: transparent;
     }
-    &[data-callout='hint'] {
+    &[data-callout="hint"] {
       --callout-color: var(--callout-tip);
       background-color: transparent;
     }
-    &[data-callout='success'] {
+    &[data-callout="success"] {
       --callout-color: var(--callout-success);
       background-color: transparent;
     }
-    &[data-callout='check'] {
+    &[data-callout="check"] {
       --callout-color: var(--callout-success);
       background-color: transparent;
     }
-    &[data-callout='done'] {
+    &[data-callout="done"] {
       --callout-color: var(--callout-success);
       background-color: transparent;
     }
-    &[data-callout='question'] {
+    &[data-callout="question"] {
       --callout-color: var(--callout-question);
       background-color: transparent;
     }
-    &[data-callout='help'] {
+    &[data-callout="help"] {
       --callout-color: var(--callout-question);
       background-color: transparent;
     }
-    &[data-callout='faq'] {
+    &[data-callout="faq"] {
       --callout-color: var(--callout-question);
       background-color: transparent;
     }
-    &[data-callout='warning'] {
+    &[data-callout="warning"] {
       --callout-color: var(--callout-warning);
       background-color: transparent;
     }
-    &[data-callout='caution'] {
+    &[data-callout="caution"] {
       --callout-color: var(--callout-warning);
       background-color: transparent;
     }
-    &[data-callout='attention'] {
+    &[data-callout="attention"] {
       --callout-color: var(--callout-warning);
       background-color: transparent;
     }
-    &[data-callout='failure'] {
+    &[data-callout="failure"] {
       --callout-color: var(--callout-fail);
       background-color: transparent;
     }
-    &[data-callout='fail'] {
+    &[data-callout="fail"] {
       --callout-color: var(--callout-fail);
       background-color: transparent;
     }
-    &[data-callout='missing'] {
+    &[data-callout="missing"] {
       --callout-color: var(--callout-fail);
       background-color: transparent;
     }
-    &[data-callout='danger'] {
+    &[data-callout="danger"] {
       --callout-color: var(--callout-error);
       background-color: transparent;
     }
-    &[data-callout='error'] {
+    &[data-callout="error"] {
       --callout-color: var(--callout-error);
       background-color: transparent;
     }
-    &[data-callout='bug'] {
+    &[data-callout="bug"] {
       --callout-color: var(--callout-bug);
       background-color: transparent;
     }
-    &[data-callout='example'] {
+    &[data-callout="example"] {
       --callout-color: var(--callout-example);
       background-color: transparent;
     }
-    &[data-callout='quote'] {
+    &[data-callout="quote"] {
       --callout-color: var(--callout-quote);
       background-color: transparent;
     }
-    &[data-callout='cite'] {
+    &[data-callout="cite"] {
       --callout-color: var(--callout-quote);
       background-color: transparent;
     }
@@ -1017,7 +1153,7 @@ body {
       text-decoration: var(--tag-decoration-hover);
     }
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     appearance: none;
     appearance: none;
     border-radius: var(--checkbox-radius);
@@ -1031,17 +1167,17 @@ body {
     position: relative;
     transition: box-shadow 0.15s ease-in-out;
   }
-  input[type='checkbox']:hover,
-  input[type='checkbox']:active,
-  input[type='checkbox']:focus {
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:active,
+  input[type="checkbox"]:focus {
     outline: 0;
     border-color: var(--checkbox-border-color-hover);
   }
-  input[type='checkbox']:focus-visible {
+  input[type="checkbox"]:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }
-  input[type='checkbox']:checked:after {
-    content: '';
+  input[type="checkbox"]:checked:after {
+    content: "";
     top: -1px;
     inset-inline-start: -1px;
     position: absolute;
@@ -1054,18 +1190,18 @@ body {
     mask-repeat: no-repeat;
     mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
   }
-  input[type='checkbox']:checked {
+  input[type="checkbox"]:checked {
     background-color: var(--checkbox-color);
     border-color: var(--checkbox-color);
   }
   @media (hover: hover) {
-    input[type='checkbox']:checked:hover {
+    input[type="checkbox"]:checked:hover {
       background-color: var(--checkbox-color-hover);
       border-color: var(--checkbox-color-hover);
     }
   }
-  input[type='checkbox'][data-indeterminate='true']:not(:checked):after {
-    content: '';
+  input[type="checkbox"][data-indeterminate="true"]:not(:checked):after {
+    content: "";
     position: absolute;
     top: calc(var(--checkbox-size) / 2 - 2px);
     width: calc(var(--checkbox-size) - 6px);
@@ -1202,51 +1338,51 @@ body {
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
     //color: var(--code-color);
-    span[style='--shiki-light:#6F42C1;--shiki-dark:#B392F0;'] {
+    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
       //color: var(--code-value) !important;
       color: var(--color-purple) !important;
     }
-    span[style='--shiki-light:#005CC5;--shiki-dark:#79B8FF;'] {
+    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
       //color: var(--code-function) !important;
       color: var(--color-blue) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#9ECBFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
       //color: var(--code-string) !important;
       color: var(--color-cyan) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#DBEDFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
       //color: var(--code-property) !important;
       color: var(--code-yellow) !important;
     }
-    span[style='--shiki-light:#24292E;--shiki-dark:#E1E4E8;'] {
+    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
       //color: var(--code-normal) !important;
       color: var(--code-normal) !important;
     }
-    span[style='--shiki-light:#586069;--shiki-dark:#D1D5DA;'] {
+    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
       //color: var(--code-punctuation) !important;
       color: var(--text-muted) !important;
     }
-    span[style='--shiki-light:#F6F8FA;--shiki-dark:#2F363D;'] {
+    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
       //color: var(--code-comment) !important;
       color: var(--text-faint) !important;
     }
-    span[style='--shiki-light:#6A737D;--shiki-dark:#6A737D;'] {
+    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
       //color: var(--code-comment) !important;
       color: var(--code-comment) !important;
     }
-    span[style='--shiki-light:#22863A;--shiki-dark:#85E89D;'] {
+    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
       //color: var(--code-tag) !important;
       color: var(--color-green) !important;
     }
-    span[style='--shiki-light:#E36209;--shiki-dark:#FFAB70;'] {
+    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
       //color: var(--code-important) !important;
       color: var(--color-orange) !important;
     }
-    span[style='--shiki-light:#B31D28;--shiki-dark:#FDAEB7;'] {
+    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
       //color: var(--text-operator) !important;
       color: var(--color-pink) !important;
     }
-    span[style='--shiki-light:#D73A49;--shiki-dark:#F97583;'] {
+    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
       //color: var(--code-keyword) !important;
       color: var(--color-red) !important;
     }
@@ -1332,7 +1468,7 @@ body {
           display: flex;
           align-self: center;
           background: var(--icon-color);
-          content: '';
+          content: "";
         }
         & > div {
           width: 100%;
@@ -1380,7 +1516,7 @@ body {
             color: var(--nav-item-color-active);
             font-weight: var(--nav-item-weight-active);
           }
-          &[data-for$='/index'] {
+          &[data-for$="/index"] {
             padding-inline-start: 8px;
           }
           padding-inline-start: 0;
@@ -1391,7 +1527,7 @@ body {
           height: 16px;
           min-width: 16px;
           min-height: 16px;
-          content: '';
+          content: "";
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -1456,7 +1592,7 @@ body {
       display: none;
     }
     /* lucide book-open icon */
-    --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
+    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
@@ -1468,7 +1604,7 @@ body {
       display: none;
     }
     /* lucide git-fork icon */
-    --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
+    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
@@ -1480,9 +1616,9 @@ body {
       display: none !important;
     }
     /* lucide moon icon */
-    --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
+    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
     /* lucide sun icon */
-    --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
+    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     width: 24px;
     height: 24px;
@@ -1710,13 +1846,13 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-:root[saved-theme='light'] {
+:root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-:root[saved-theme='dark'] {
+:root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
@@ -1727,7 +1863,7 @@ body {
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */
-:root:root[saved-theme='light'] {
+:root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,
@@ -1756,7 +1892,7 @@ body {
 }
 /* END LIGHT GRAPH */
 /* START DARK GRAPH */
-:root:root[saved-theme='dark'] {
+:root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,

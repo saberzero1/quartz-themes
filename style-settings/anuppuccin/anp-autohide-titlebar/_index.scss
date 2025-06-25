@@ -20,7 +20,7 @@
 }
 :not(.is-mobile) .workspace-leaf-content .view-header::before {
   bottom: calc(var(--title-bar-target-translate-y) * -1);
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   top: 0;

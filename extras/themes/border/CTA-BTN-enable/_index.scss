@@ -1,5 +1,5 @@
 body:not(.is-mobile).CTA-BTN-enable
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-header
   .nav-buttons-container
   .clickable-icon.nav-action-button:first-of-type {
@@ -12,7 +12,7 @@ body:not(.is-mobile).CTA-BTN-enable
 }
 
 body:not(.is-mobile).CTA-BTN-enable
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-header
   .nav-buttons-container
   .clickable-icon.nav-action-button:first-of-type:hover {
@@ -20,11 +20,11 @@ body:not(.is-mobile).CTA-BTN-enable
 }
 
 body:not(.is-mobile).CTA-BTN-enable
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-header
   .nav-buttons-container
   .clickable-icon.nav-action-button:first-of-type::after {
-  content: 'New Note';
+  content: "New Note";
   font-size: var(--font-ui-small);
   margin-left: auto;
 }

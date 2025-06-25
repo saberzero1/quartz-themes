@@ -166,45 +166,45 @@
   margin-left: -35px;
   padding-right: 3px;
 }
-.callout[data-callout='note'] {
+.callout[data-callout="note"] {
   --callout-color: var(--cpt-blue);
 }
-.callout[data-callout='abstract'],
-.callout[data-callout='summary'],
-.callout[data-callout='tldr'],
-.callout[data-callout='seealso'] {
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"],
+.callout[data-callout="seealso"] {
   --callout-color: var(--cpt-blue);
 }
-.callout[data-callout='info'],
-.callout[data-callout='todo'],
-.callout[data-callout='tip'],
-.callout[data-callout='hint'],
-.callout[data-callout='important'] {
+.callout[data-callout="info"],
+.callout[data-callout="todo"],
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
   --callout-color: var(--cpt-blue);
 }
-.callout[data-callout='success'],
-.callout[data-callout='check'],
-.callout[data-callout='done'],
-.callout[data-callout='question'],
-.callout[data-callout='help'],
-.callout[data-callout='faq'] {
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
   --callout-color: var(--cpt-green);
 }
-.callout[data-callout='warning'],
-.callout[data-callout='caution'],
-.callout[data-callout='attention'] {
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
   --callout-color: var(--cpt-yellow);
 }
-.callout[data-callout='failure'],
-.callout[data-callout='fail'],
-.callout[data-callout='missing'] {
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
   --callout-color: var(--cpt-orange);
 }
-.callout[data-callout='danger'],
-.callout[data-callout='error'],
-.callout[data-callout='bug'] {
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
   --callout-color: var(--cpt-red);
 }
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-color: var(--cpt-purple);
 }

@@ -1,4 +1,4 @@
-body.anp-card-layout .workspace-leaf-content[data-type='file-explorer'] {
+body.anp-card-layout .workspace-leaf-content[data-type="file-explorer"] {
   border-radius: var(--anp-card-radius, var(--radius-xl));
   background-color: var(--card-foreground-color);
   border: 1px solid var(--tab-outline-color);
@@ -6,6 +6,6 @@ body.anp-card-layout .workspace-leaf-content[data-type='file-explorer'] {
 }
 body.anp-card-layout.anp-card-shadows
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
 }

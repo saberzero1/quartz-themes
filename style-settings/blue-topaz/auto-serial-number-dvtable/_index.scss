@@ -8,7 +8,7 @@ body
   > tr
   > td:first-child::before {
   counter-increment: sec;
-  content: counter(sec) '. ';
+  content: counter(sec) ". ";
 }
 body .markdown-preview-view:not(.cards) .dataview.table-view-table {
   counter-reset: section;
@@ -20,5 +20,5 @@ body
   > tr
   > td:first-child::before {
   counter-increment: section;
-  content: counter(section) '. ';
+  content: counter(section) ". ";
 }

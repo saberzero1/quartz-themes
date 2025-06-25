@@ -15,7 +15,7 @@ body:not(.is-grabbing):not(
   .workspace-tab-header-container:before {
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
   height: var(--header-height);
   width: 100%;
   -webkit-app-region: drag;

@@ -10,7 +10,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > :is(h1, h2, h3, h4, h5, h6),
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header
   )::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   padding: 0.1rem;
@@ -109,7 +109,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h1,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-1
   )::before {
-  content: 'H1';
+  content: "H1";
 }
 body:is(:not(.css-settings-manager), ).link-heading
   :is(
@@ -127,7 +127,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h2,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-2
   )::before {
-  content: 'H2';
+  content: "H2";
 }
 body:is(:not(.css-settings-manager), ).link-heading
   :is(
@@ -145,7 +145,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h3,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-3
   )::before {
-  content: 'H3';
+  content: "H3";
 }
 body:is(:not(.css-settings-manager), ).link-heading
   :is(
@@ -163,7 +163,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h4,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-4
   )::before {
-  content: 'H4';
+  content: "H4";
 }
 body:is(:not(.css-settings-manager), ).link-heading
   :is(
@@ -181,7 +181,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h5,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-5
   )::before {
-  content: 'H5';
+  content: "H5";
 }
 body:is(:not(.css-settings-manager), ).link-heading
   :is(
@@ -199,7 +199,7 @@ body:is(:not(.css-settings-manager), )
     div.markdown-reading-view > div > div > div > h6,
     .markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-6
   )::before {
-  content: 'H6';
+  content: "H6";
 }
 body:is(:not(.css-settings-manager), )
   div.markdown-reading-view

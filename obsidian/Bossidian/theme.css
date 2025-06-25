@@ -55,7 +55,7 @@ body.theme-dark {
 }
 .cm-line hr::after,
 .markdown-preview-view hr::after {
-  content: '§';
+  content: "§";
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%) rotate(60deg);
@@ -100,7 +100,7 @@ body.theme-dark {
 }
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -5%;
   left: 0;
   width: 100%;
@@ -120,7 +120,7 @@ pre {
   position: relative;
 }
 
-pre[class*='language-']::before {
+pre[class*="language-"]::before {
   font-family:
     Rubik,
     Lato,
@@ -137,7 +137,7 @@ pre[class*='language-']::before {
   right: 0.3rem;
   padding: 0;
   color: var(--text-accent) !important;
-  content: '';
+  content: "";
   text-transform: uppercase;
   background: rgba(16, 14, 23, 0.86);
   border-radius: 8px;
@@ -145,50 +145,50 @@ pre[class*='language-']::before {
   z-index: 10;
 }
 
-pre[class$='javascript']::before,
-pre[class$='js']::before {
-  content: 'JavaScript';
+pre[class$="javascript"]::before,
+pre[class$="js"]::before {
+  content: "JavaScript";
 }
 
-pre[class$='typescript']::before,
-pre[class$='ts']::before {
-  content: 'typescript';
+pre[class$="typescript"]::before,
+pre[class$="ts"]::before {
+  content: "typescript";
 }
 
-pre[class$='html']::before {
-  content: 'html';
+pre[class$="html"]::before {
+  content: "html";
 }
 
-pre[class$='css']::before {
-  content: 'css';
+pre[class$="css"]::before {
+  content: "css";
 }
 
-pre[class$='ejs']::before {
-  content: 'ejs';
+pre[class$="ejs"]::before {
+  content: "ejs";
 }
 
-pre[class$='vue']::before {
-  content: 'vue';
+pre[class$="vue"]::before {
+  content: "vue";
 }
 
-pre[class$='react']::before {
-  content: 'react';
+pre[class$="react"]::before {
+  content: "react";
 }
 
-pre[class$='shell']::before {
-  content: 'Shell';
+pre[class$="shell"]::before {
+  content: "Shell";
 }
 
-pre[class$='powershell']::before {
-  content: 'PowerShell';
+pre[class$="powershell"]::before {
+  content: "PowerShell";
 }
 
-pre[class$='json']::before {
-  content: 'Json';
+pre[class$="json"]::before {
+  content: "Json";
 }
 
-pre[class$='python']::before {
-  content: 'python';
+pre[class$="python"]::before {
+  content: "python";
 }
 
 .HyperMD-header > * {

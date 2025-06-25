@@ -17,7 +17,7 @@
 :scope.is-hidden-frameless:not(.is-fullscreen):not(.mod-macos)
   .status-bar::before {
   -webkit-app-region: drag;
-  content: '';
+  content: "";
   height: 100%;
   flex-grow: 1;
 }

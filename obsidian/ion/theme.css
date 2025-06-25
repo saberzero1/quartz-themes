@@ -174,11 +174,11 @@ h6 {
 :is(
     textarea,
     input:is(
-        [type='text'],
-        [type='search'],
-        [type='email'],
-        [type='password'],
-        [type='number']
+        [type="text"],
+        [type="search"],
+        [type="email"],
+        [type="password"],
+        [type="number"]
       )
   )::placeholder {
   color: hsl(var(--ion-hs), 40%);
@@ -235,80 +235,80 @@ a,
   --callout-l-p: 63;
 }
 .callout:is(
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr']
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
   ) {
   --callout-h: 198;
   --callout-s: 100%;
   --callout-l-p: 50;
 }
-.callout:is([data-callout='info'], [data-callout='todo']) {
+.callout:is([data-callout="info"], [data-callout="todo"]) {
   --callout-h: 187;
   --callout-s: 100%;
   --callout-l-p: 41;
 }
 .callout:is(
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important']
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
   ) {
   --callout-h: 171;
   --callout-s: 100%;
   --callout-l-p: 37;
 }
 .callout:is(
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done']
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
   ) {
   --callout-h: 144;
   --callout-s: 100%;
   --callout-l-p: 39;
 }
 .callout:is(
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq']
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
   ) {
   --callout-h: 96;
   --callout-s: 81%;
   --callout-l-p: 47;
 }
 .callout:is(
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention']
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
   ) {
   --callout-h: 34;
   --callout-s: 100%;
   --callout-l-p: 50;
 }
 .callout:is(
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing']
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
   ) {
   --callout-h: 0;
   --callout-s: 100%;
   --callout-l-p: 66;
 }
-.callout:is([data-callout='danger'], [data-callout='error']) {
+.callout:is([data-callout="danger"], [data-callout="error"]) {
   --callout-h: 348;
   --callout-s: 99%;
   --callout-l-p: 54;
 }
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   --callout-h: 338;
   --callout-s: 100%;
   --callout-l-p: 48;
 }
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-h: 255;
   --callout-s: 100%;
   --callout-l-p: 65;
 }
-.callout:is([data-callout='quote'], [data-callout='cite']) {
+.callout:is([data-callout="quote"], [data-callout="cite"]) {
   --callout-h: 0;
   --callout-s: 0%;
   --callout-l-p: 61;
@@ -332,7 +332,7 @@ a,
 }
 
 /*to make shadow visible..*/
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable='false'] {
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable="false"] {
   contain: none !important;
 }
 .cm-embed-block.markdown-rendered.cm-callout.show-indentation-guide {
@@ -374,7 +374,7 @@ button.mod-cta {
 }
 
 /* Slider */
-:root:root:root input[type='range'] {
+:root:root:root input[type="range"] {
   background-color: var(--ion-color);
 
   --ion-l-p: 60;
@@ -475,23 +475,23 @@ TODO
 }
 
 /*Checkbox*/
-:root:root input[type='checkbox'] {
+:root:root input[type="checkbox"] {
   border: 1px solid var(--ion-color);
   box-shadow: var(--border-bloom);
   background-color: transparent;
 }
 
-input[type='checkbox']:checked:after {
+input[type="checkbox"]:checked:after {
   background-color: var(--ion-color);
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   --ion-h: var(--accent-h);
   --ion-s: var(--accent-s);
   --ion-l-p: 60;
 }
 
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   --ion-l-p: 100;
 }
 

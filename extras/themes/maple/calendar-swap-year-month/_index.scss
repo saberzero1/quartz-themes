@@ -17,7 +17,7 @@ body.calendar-swap-year-month #calendar-container .nav .title .year {
 }
 
 body.calendar-swap-year-month #calendar-container .nav .title .year::after {
-  content: var(--setting-calendar-year-suffix, '年');
+  content: var(--setting-calendar-year-suffix, "年");
   margin-right: var(--size-2-1);
   margin-left: var(--size-2-1);
 }

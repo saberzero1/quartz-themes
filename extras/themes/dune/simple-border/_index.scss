@@ -4,14 +4,14 @@
 
 .simple-border
   a:is(
-    [href='#red'],
-    [href='#rot'],
-    [href='#green'],
-    [href='#grün'],
-    [href='#blue'],
-    [href='#blau'],
-    [href='#gray'],
-    [href='#grau']
+    [href="#red"],
+    [href="#rot"],
+    [href="#green"],
+    [href="#grün"],
+    [href="#blue"],
+    [href="#blau"],
+    [href="#gray"],
+    [href="#grau"]
   )
   + mark {
   border-radius: 4px;

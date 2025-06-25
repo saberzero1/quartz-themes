@@ -21,6 +21,6 @@ body.encore-translucency.encore-bg-prismatic {
 body.encore-translucency.encore-bg-prismatic::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }

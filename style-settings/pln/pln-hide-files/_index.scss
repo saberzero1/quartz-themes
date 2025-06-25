@@ -1,7 +1,7 @@
 :root,
 body {
-  & div[data-path^='_'],
-  & div[data-path*='/_'] {
+  & div[data-path^="_"],
+  & div[data-path*="/_"] {
     display: none;
   }
 }

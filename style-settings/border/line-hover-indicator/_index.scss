@@ -1,15 +1,15 @@
-.workspace-leaf-content:is([data-type='markdown'], [data-type='webviewer']):not(
+.workspace-leaf-content:is([data-type="markdown"], [data-type="webviewer"]):not(
     :has(.document-search-container)
   )
   .markdown-preview-sizer
   > div:not(:has(.collapse-indicator, .mk-header)) {
   position: relative;
 }
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > div:not(:has(.mk-note-footer)):has(.cm-hmd-list-indent)::after,
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > div:not(
@@ -18,17 +18,17 @@
     .HyperMD-header,
     :has(.mk-note-footer, .collapse-indicator)
   )::after,
-.workspace-leaf-content:is([data-type='markdown'], [data-type='webviewer']):not(
+.workspace-leaf-content:is([data-type="markdown"], [data-type="webviewer"]):not(
     :has(.document-search-container)
   )
   .markdown-preview-sizer
   > div:is(.el-ul, .el-ol)::after,
-.workspace-leaf-content:is([data-type='markdown'], [data-type='webviewer']):not(
+.workspace-leaf-content:is([data-type="markdown"], [data-type="webviewer"]):not(
     :has(.document-search-container)
   )
   .markdown-preview-sizer
   > div:not(:has(.collapse-indicator, .mk-header))::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -12px;
   top: 3px;
@@ -39,11 +39,11 @@
   --hover-indicator-color: var(--text-faint);
   opacity: 1;
 }
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > div:not(:has(.mk-note-footer)):has(.cm-hmd-list-indent):hover::after,
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > div:not(
@@ -52,12 +52,12 @@
     .HyperMD-header,
     :has(.mk-note-footer, .collapse-indicator)
   ):hover::after,
-.workspace-leaf-content:is([data-type='markdown'], [data-type='webviewer']):not(
+.workspace-leaf-content:is([data-type="markdown"], [data-type="webviewer"]):not(
     :has(.document-search-container)
   )
   .markdown-preview-sizer
   > div:is(.el-ul, .el-ol):hover::after,
-.workspace-leaf-content:is([data-type='markdown'], [data-type='webviewer']):not(
+.workspace-leaf-content:is([data-type="markdown"], [data-type="webviewer"]):not(
     :has(.document-search-container)
   )
   .markdown-preview-sizer
@@ -65,11 +65,11 @@
   height: calc(100% - 6px);
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line:not(.HyperMD-list-line-1):after,
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -88,11 +88,11 @@
   color: var(--hover-indicator-color);
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line:not(.HyperMD-list-line-1):hover::after,
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -101,16 +101,16 @@
   --hover-indicator-color: var(--text-faint);
 }
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer,
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock-end {
   counter-reset: code-line;
 }
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -119,71 +119,71 @@
   content: counter(code-line) !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line:not(.HyperMD-list-line-1):after {
-  content: '';
+  content: "";
   text-indent: 0px !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-2::after {
-  content: '2' !important;
+  content: "2" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-3::after {
-  content: '3' !important;
+  content: "3" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-4::after {
-  content: '4' !important;
+  content: "4" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-5::after {
-  content: '5' !important;
+  content: "5" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-6::after {
-  content: '6' !important;
+  content: "6" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-7::after {
-  content: '7' !important;
+  content: "7" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-8::after {
-  content: '8' !important;
+  content: "8" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-9::after {
-  content: '9' !important;
+  content: "9" !important;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-list-line.HyperMD-list-line-10::after {
-  content: '10' !important;
+  content: "10" !important;
 }
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > .cm-active:not(:has(.mk-note-footer)):has(.cm-hmd-list-indent)::after,
-.workspace-leaf-content[data-type='markdown']
+.workspace-leaf-content[data-type="markdown"]
   .markdown-source-view
   .cm-content
   > .cm-active:not(
@@ -192,7 +192,7 @@
     .HyperMD-header,
     :has(.mk-note-footer, .collapse-indicator)
   )::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -12px;
   top: 3px;
@@ -204,11 +204,11 @@
   opacity: 1;
 }
 .focus-indicator-list-level
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-active.HyperMD-list-line:not(.HyperMD-list-line-1)::after,
 .focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end

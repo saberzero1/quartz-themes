@@ -69,7 +69,7 @@
 }
 
 body {
-  --font-text-theme: 'Fira Code';
+  --font-text-theme: "Fira Code";
 }
 
 svg * {

@@ -1,5 +1,5 @@
 .theme-light-and-bright {
-  --font-default: 'Noto Sans', sans-serif;
+  --font-default: "Noto Sans", sans-serif;
   --h1-weight: 600;
   --h2-weight: 600;
   --h3-weight: 600;
@@ -54,7 +54,7 @@
 .theme-light-and-bright .markdown-rendered hr::before,
 .theme-light-and-bright .markdown-source-view hr::before {
   font-size: 1.5em;
-  content: '✦';
+  content: "✦";
   display: inline-block;
   position: absolute;
   left: 50%;

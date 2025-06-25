@@ -1,222 +1,222 @@
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='X']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='X'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="X"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="X"].task-list-item.is-checked {
   color: var(--text-faint);
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='>']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='>'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task=">"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task=">"].task-list-item.is-checked {
   color: var(--text-normal);
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='<']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='<'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="<"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="<"].task-list-item.is-checked {
   color: var(--text-faint);
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='D']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='D'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="D"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="D"].task-list-item.is-checked {
   color: rgb(var(--chbx-h));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='-']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='-'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="-"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="-"].task-list-item.is-checked {
   color: rgb(var(--chbx-d));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='?']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='?'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="?"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="?"].task-list-item.is-checked {
   color: rgb(var(--chbx-q));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='!']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='!'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="!"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="!"].task-list-item.is-checked {
   color: rgb(var(--chbx-i));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='+']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='+'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="+"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="+"].task-list-item.is-checked {
   color: rgb(var(--chbx-a));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='/']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='/'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="/"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="/"].task-list-item.is-checked {
   color: var(--text-muted);
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='R']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='R'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="R"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="R"].task-list-item.is-checked {
   color: rgb(var(--chbx-R));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='i']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='i'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="i"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="i"].task-list-item.is-checked {
   color: rgb(var(--chbx-id));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='B']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='B'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="B"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="B"].task-list-item.is-checked {
   color: rgb(var(--chbx-B));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='P']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='P'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="P"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="P"].task-list-item.is-checked {
   color: rgb(var(--chbx-P));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='C']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='C'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="C"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="C"].task-list-item.is-checked {
   color: rgb(var(--chbx-C));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='I']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='I'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="I"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="I"].task-list-item.is-checked {
   color: rgb(var(--chbx-I));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='Q']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='Q'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="Q"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="Q"].task-list-item.is-checked {
   color: rgb(var(--chbx-R));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='N']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='N'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="N"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="N"].task-list-item.is-checked {
   color: rgb(var(--chbx-N));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='b']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='b'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="b"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="b"].task-list-item.is-checked {
   color: rgb(var(--chbx-b));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='p']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='p'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="p"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="p"].task-list-item.is-checked {
   color: rgb(var(--chbx-R));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='E']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='E'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="E"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="E"].task-list-item.is-checked {
   color: rgb(var(--chbx-I));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='L']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='L'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="L"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="L"].task-list-item.is-checked {
   color: rgb(var(--chbx-N));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='A']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='A'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="A"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="A"].task-list-item.is-checked {
   color: rgb(var(--chbx-P));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='r']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='r'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="r"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="r"].task-list-item.is-checked {
   color: rgb(var(--chbx-r));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='c']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='c'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="c"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="c"].task-list-item.is-checked {
   color: rgb(var(--chbx-c));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='o']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='o'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="o"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="o"].task-list-item.is-checked {
   color: rgb(var(--chbx-b));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='d']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='d'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="d"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="d"].task-list-item.is-checked {
   color: rgb(var(--chbx-I));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='T']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='T'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="T"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="T"].task-list-item.is-checked {
   color: rgb(var(--chbx-R));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='t']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='t'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="t"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="t"].task-list-item.is-checked {
   color: rgb(var(--chbx-R));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='O']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='O'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="O"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="O"].task-list-item.is-checked {
   color: hsl(var(--interactive-accent-hsl));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='F']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='F'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="F"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="F"].task-list-item.is-checked {
   color: rgb(var(--chbx-h));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='W']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='W'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="W"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="W"].task-list-item.is-checked {
   color: rgb(var(--chbx-P));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='~']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='~'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="~"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="~"].task-list-item.is-checked {
   color: rgb(var(--chbx-C));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='@']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='@'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="@"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="@"].task-list-item.is-checked {
   color: rgb(var(--chbx-b));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='f']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='f'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="f"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="f"].task-list-item.is-checked {
   color: rgb(var(--chbx-N));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='H']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='H'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="H"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="H"].task-list-item.is-checked {
   color: rgb(var(--chbx-a));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='&']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='&'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="&"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="&"].task-list-item.is-checked {
   color: rgb(var(--chbx-B));
 }
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='s']
-  [class^='cm-list']:not(.cm-formatting-task),
-ul > li[data-task='s'].task-list-item.is-checked {
+  .HyperMD-task-line[data-task="s"]
+  [class^="cm-list"]:not(.cm-formatting-task),
+ul > li[data-task="s"].task-list-item.is-checked {
   color: rgb(var(--chbx-d));
 }

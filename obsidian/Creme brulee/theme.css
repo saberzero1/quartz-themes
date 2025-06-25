@@ -119,9 +119,9 @@ body {
   --link-external-decoration: none;
   --link-formatting-color: hsla(var(--interactive-accent-hsl), 0.5);
 
-  --h1-font: 'Merryweather Sans', Merriweather, Lucida Bright, Georgia, serif;
-  --h2-font: 'Merryweather Sans', Merriweather, Lucida Bright, Georgia, serif;
-  --h3-font: 'Merryweather Sans', Merriweather, Lucida Bright, Georgia, serif;
+  --h1-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
+  --h2-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
+  --h3-font: "Merryweather Sans", Merriweather, Lucida Bright, Georgia, serif;
 
   --h1-size: 1.3em;
   --h2-size: 1.05em;
@@ -670,7 +670,7 @@ body .metadata-input-longtext::-webkit-scrollbar {
   --tag-padding-x: 0.65em;
 }
 
-.metadata-property:not([data-property-key='tags']) {
+.metadata-property:not([data-property-key="tags"]) {
   --pill-padding-x: var(--tag-padding-x);
   --pill-padding-y: var(--tag-padding-y);
   --pill-radius: var(--tag-radius);
@@ -873,7 +873,7 @@ p:has(> span:only-child > br:only-child) {
 }
 
 .is-mobile.is-phone
-  .workspace-leaf-content:not([data-type='canvas'])
+  .workspace-leaf-content:not([data-type="canvas"])
   .view-header-left {
   display: none;
 }

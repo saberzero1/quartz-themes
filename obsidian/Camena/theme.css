@@ -109,12 +109,12 @@ body {
 
   --font-heading-theme: var(--font-text-theme);
   --font-interface-theme:
-    Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
   --font-monospace-theme:
-    ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
-    'DejaVu Sans Mono', monospace;
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
   --font-text-theme:
-    Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
   --font-text-size: 16px;
 
   --graph-node: var(--color-red);
@@ -221,22 +221,22 @@ h4,
 }
 
 .HyperMD-header-1,
-.inline-title[data-level='1'],
+.inline-title[data-level="1"],
 .HyperMD-list-line .cm-header-1,
 .HyperMD-header-2,
-.inline-title[data-level='2'],
+.inline-title[data-level="2"],
 .HyperMD-list-line .cm-header-2,
 .HyperMD-header-3,
-.inline-title[data-level='3'],
+.inline-title[data-level="3"],
 .HyperMD-list-line .cm-header-3,
 .HyperMD-header-4,
-.inline-title[data-level='4'],
+.inline-title[data-level="4"],
 .HyperMD-list-line .cm-header-4,
 .HyperMD-header-5,
-.inline-title[data-level='5'],
+.inline-title[data-level="5"],
 .HyperMD-list-line .cm-header-5,
 .HyperMD-header-6,
-.inline-title[data-level='6'],
+.inline-title[data-level="6"],
 .HyperMD-list-line .cm-header-6 {
   letter-spacing: normal;
 }
@@ -282,7 +282,7 @@ h2,
 
 h2,
 .markdown-rendered h2 .HyperMD-header-2,
-.inline-title[data-level='2'],
+.inline-title[data-level="2"],
 .HyperMD-list-line .cm-header-2 {
   font-family: var(--font-heading-theme);
   border-radius: 0.5rem;
@@ -470,7 +470,7 @@ blockquote a:hover,
 }
 
 /* CHECKBOXES */
-input[type='checkbox'] {
+input[type="checkbox"] {
   border-width: 0.1rem;
   transition: all 0.2s ease-in-out;
 }
@@ -750,7 +750,7 @@ table {
 }
 
 @media (hover: hover) {
-  input[type='color']::-webkit-color-swatch:hover {
+  input[type="color"]::-webkit-color-swatch:hover {
     box-shadow:
       inset 0 0 0 1px rgba(var(--mono-rgb-100) / 0.25),
       0 0 0 3px var(--background-modifier-border-hover);

@@ -30,9 +30,9 @@ SOFTWARE.
 /* =============================================== global =================================================*/
 :root {
   padding-bottom: 24px;
-  --default-font: 'Times New Roman', Times, serif;
+  --default-font: "Times New Roman", Times, serif;
   --default-font-size: 16px;
-  --code-font: 'Fira Code', 'JetBrains Mono', monospace;
+  --code-font: "Fira Code", "JetBrains Mono", monospace;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   --card-max-width: 10000px;
   --card-width: 100%;
@@ -49,7 +49,7 @@ SOFTWARE.
   .cm-s-obsidian {
     font-family: var(
       --default-font,
-      'Times New Roman',
+      "Times New Roman",
       Times,
       serif
     ) !important;
@@ -59,7 +59,7 @@ SOFTWARE.
   .markdown-preview-view {
     font-family: var(
       --default-font,
-      'Times New Roman',
+      "Times New Roman",
       Times,
       serif
     ) !important;
@@ -223,19 +223,19 @@ SOFTWARE.
 
   .markdown-preview-view pre code,
   .cm-s-obsidian pre,
-  .cm-s-obsidian code[class*='language-'] {
+  .cm-s-obsidian code[class*="language-"] {
     font-family: var(--code-font) !important;
   }
 
   .cm-s-obsidian span.cm-inline-code,
   .markdown-preview-view code {
-    font-family: var(--code-font, 'Fira Code', monospace) !important;
+    font-family: var(--code-font, "Fira Code", monospace) !important;
   }
 
   .markdown-preview-view pre code,
   .cm-s-obsidian pre,
-  .cm-s-obsidian code[class*='language-'] {
-    font-family: var(--code-font, 'Fira Code', monospace) !important;
+  .cm-s-obsidian code[class*="language-"] {
+    font-family: var(--code-font, "Fira Code", monospace) !important;
     font-size: 0.95rem;
   }
 
@@ -467,8 +467,8 @@ SOFTWARE.
     width: fit-content;
   }
 
-  .workspace-tab-header[data-type='markdown'],
-  .workspace-tab-header[data-type='empty'] {
+  .workspace-tab-header[data-type="markdown"],
+  .workspace-tab-header[data-type="empty"] {
     max-width: 100%;
     display: flex;
     flex-grow: 1;
@@ -484,8 +484,8 @@ SOFTWARE.
     color: var(--text-normal);
   }
 
-  .workspace-tab-header[data-type='markdown'].is-active.mod-active,
-  .workspace-tab-header[data-type='empty'].is-active.mod-active {
+  .workspace-tab-header[data-type="markdown"].is-active.mod-active,
+  .workspace-tab-header[data-type="empty"].is-active.mod-active {
     flex-grow: 2;
     max-width: 250px;
     background-color: var(--color-accent);
@@ -669,8 +669,8 @@ SOFTWARE.
 
   /* Ajustes visuais gerais para blocos de código */
 
-  .cm-s-obsidian code[class*='language-python'] {
-    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  .cm-s-obsidian code[class*="language-python"] {
+    font-family: "Fira Code", "JetBrains Mono", monospace;
     font-size: 0.95rem;
     line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.02);
@@ -683,7 +683,7 @@ SOFTWARE.
   }
 
   .markdown-preview-view code.language-python {
-    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    font-family: "Fira Code", "JetBrains Mono", monospace;
     font-size: 0.95rem;
     line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.02);
@@ -751,28 +751,28 @@ SOFTWARE.
   }
 
   .markdown-preview-view code.language-python span {
-    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    font-family: "Fira Code", "JetBrains Mono", monospace;
   }
 
   /* Manual highlighting using data-token or keyword-based targeting */
   .markdown-preview-view code.language-python span:has(> .token-keyword),
-  .markdown-preview-view code.language-python span:contains('def'),
-  .markdown-preview-view code.language-python span:contains('return'),
-  .markdown-preview-view code.language-python span:contains('if'),
-  .markdown-preview-view code.language-python span:contains('else'),
-  .markdown-preview-view code.language-python span:contains('elif'),
-  .markdown-preview-view code.language-python span:contains('while'),
-  .markdown-preview-view code.language-python span:contains('for'),
-  .markdown-preview-view code.language-python span:contains('in') {
+  .markdown-preview-view code.language-python span:contains("def"),
+  .markdown-preview-view code.language-python span:contains("return"),
+  .markdown-preview-view code.language-python span:contains("if"),
+  .markdown-preview-view code.language-python span:contains("else"),
+  .markdown-preview-view code.language-python span:contains("elif"),
+  .markdown-preview-view code.language-python span:contains("while"),
+  .markdown-preview-view code.language-python span:contains("for"),
+  .markdown-preview-view code.language-python span:contains("in") {
     color: var(--syntax-keyword);
     font-weight: bold;
   }
 
-  .markdown-preview-view code.language-python span:contains('print'),
-  .markdown-preview-view code.language-python span:contains('len'),
-  .markdown-preview-view code.language-python span:contains('range'),
-  .markdown-preview-view code.language-python span:contains('str'),
-  .markdown-preview-view code.language-python span:contains('int') {
+  .markdown-preview-view code.language-python span:contains("print"),
+  .markdown-preview-view code.language-python span:contains("len"),
+  .markdown-preview-view code.language-python span:contains("range"),
+  .markdown-preview-view code.language-python span:contains("str"),
+  .markdown-preview-view code.language-python span:contains("int") {
     color: var(--syntax-builtin);
   }
 
@@ -781,7 +781,7 @@ SOFTWARE.
     color: var(--syntax-string);
   }
 
-  .markdown-preview-view code.language-python span:contains('#') {
+  .markdown-preview-view code.language-python span:contains("#") {
     color: var(--syntax-comment);
     font-style: italic;
     opacity: 0.85;
@@ -789,46 +789,46 @@ SOFTWARE.
 
   /* Força aplicação da paleta de sintaxe no Preview Mode mesmo sem classes específicas */
   .markdown-preview-view code.language-python span {
-    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    font-family: "Fira Code", "JetBrains Mono", monospace;
   }
 
   .markdown-preview-view code.language-python span:has(> .token-keyword),
-  .markdown-preview-view code.language-python span[class*='token-keyword'],
-  .markdown-preview-view code.language-python span[class*='keyword'] {
+  .markdown-preview-view code.language-python span[class*="token-keyword"],
+  .markdown-preview-view code.language-python span[class*="keyword"] {
     color: var(--syntax-keyword);
   }
 
-  .markdown-preview-view code.language-python span[class*='def'],
-  .markdown-preview-view code.language-python span[class*='function'] {
+  .markdown-preview-view code.language-python span[class*="def"],
+  .markdown-preview-view code.language-python span[class*="function"] {
     color: var(--syntax-def);
   }
 
-  .markdown-preview-view code.language-python span[class*='string'] {
+  .markdown-preview-view code.language-python span[class*="string"] {
     color: var(--syntax-string);
   }
 
-  .markdown-preview-view code.language-python span[class*='number'] {
+  .markdown-preview-view code.language-python span[class*="number"] {
     color: var(--syntax-number);
   }
 
-  .markdown-preview-view code.language-python span[class*='comment'] {
+  .markdown-preview-view code.language-python span[class*="comment"] {
     color: var(--syntax-comment);
     font-style: italic;
     opacity: 0.85;
   }
 
-  .markdown-preview-view code.language-python span[class*='builtin'],
-  .markdown-preview-view code.language-python span:contains('print'),
-  .markdown-preview-view code.language-python span:contains('len'),
-  .markdown-preview-view code.language-python span:contains('range') {
+  .markdown-preview-view code.language-python span[class*="builtin"],
+  .markdown-preview-view code.language-python span:contains("print"),
+  .markdown-preview-view code.language-python span:contains("len"),
+  .markdown-preview-view code.language-python span:contains("range") {
     color: var(--syntax-builtin);
   }
 
-  .markdown-preview-view code.language-python span[class*='operator'] {
+  .markdown-preview-view code.language-python span[class*="operator"] {
     color: var(--syntax-operator);
   }
 
-  .markdown-preview-view code.language-python span[class*='property'] {
+  .markdown-preview-view code.language-python span[class*="property"] {
     color: var(--syntax-property);
     font-style: italic;
   }
@@ -1320,46 +1320,46 @@ settings:
 
 /* Força aplicação da paleta de sintaxe no Preview Mode mesmo sem classes específicas */
 .markdown-preview-view code.language-python span {
-  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
 }
 
 .markdown-preview-view code.language-python span:has(> .token-keyword),
-.markdown-preview-view code.language-python span[class*='token-keyword'],
-.markdown-preview-view code.language-python span[class*='keyword'] {
+.markdown-preview-view code.language-python span[class*="token-keyword"],
+.markdown-preview-view code.language-python span[class*="keyword"] {
   color: var(--syntax-keyword);
 }
 
-.markdown-preview-view code.language-python span[class*='def'],
-.markdown-preview-view code.language-python span[class*='function'] {
+.markdown-preview-view code.language-python span[class*="def"],
+.markdown-preview-view code.language-python span[class*="function"] {
   color: var(--syntax-def);
 }
 
-.markdown-preview-view code.language-python span[class*='string'] {
+.markdown-preview-view code.language-python span[class*="string"] {
   color: var(--syntax-string);
 }
 
-.markdown-preview-view code.language-python span[class*='number'] {
+.markdown-preview-view code.language-python span[class*="number"] {
   color: var(--syntax-number);
 }
 
-.markdown-preview-view code.language-python span[class*='comment'] {
+.markdown-preview-view code.language-python span[class*="comment"] {
   color: var(--syntax-comment);
   font-style: italic;
   opacity: 0.85;
 }
 
-.markdown-preview-view code.language-python span[class*='builtin'],
-.markdown-preview-view code.language-python span:contains('print'),
-.markdown-preview-view code.language-python span:contains('len'),
-.markdown-preview-view code.language-python span:contains('range') {
+.markdown-preview-view code.language-python span[class*="builtin"],
+.markdown-preview-view code.language-python span:contains("print"),
+.markdown-preview-view code.language-python span:contains("len"),
+.markdown-preview-view code.language-python span:contains("range") {
   color: var(--syntax-builtin);
 }
 
-.markdown-preview-view code.language-python span[class*='operator'] {
+.markdown-preview-view code.language-python span[class*="operator"] {
   color: var(--syntax-operator);
 }
 
-.markdown-preview-view code.language-python span[class*='property'] {
+.markdown-preview-view code.language-python span[class*="property"] {
   color: var(--syntax-property);
   font-style: italic;
 }
@@ -1863,9 +1863,9 @@ settings:
 .extended-light-color-schemes-toggle {
   :root {
     padding-bottom: 24px;
-    --default-font: 'Times New Roman', Times, serif;
+    --default-font: "Times New Roman", Times, serif;
     --default-font-size: 16px;
-    --code-font: 'Fira Code', 'JetBrains Mono', monospace;
+    --code-font: "Fira Code", "JetBrains Mono", monospace;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     --card-max-width: 10000px;
     --card-width: 100%;
@@ -1882,7 +1882,7 @@ settings:
     .cm-s-obsidian {
       font-family: var(
         --default-font,
-        'Times New Roman',
+        "Times New Roman",
         Times,
         serif
       ) !important;
@@ -1892,7 +1892,7 @@ settings:
     .markdown-preview-view {
       font-family: var(
         --default-font,
-        'Times New Roman',
+        "Times New Roman",
         Times,
         serif
       ) !important;
@@ -2065,19 +2065,19 @@ settings:
 
     .markdown-preview-view pre code,
     .cm-s-obsidian pre,
-    .cm-s-obsidian code[class*='language-'] {
+    .cm-s-obsidian code[class*="language-"] {
       font-family: var(--code-font) !important;
     }
 
     .cm-s-obsidian span.cm-inline-code,
     .markdown-preview-view code {
-      font-family: var(--code-font, 'Fira Code', monospace) !important;
+      font-family: var(--code-font, "Fira Code", monospace) !important;
     }
 
     .markdown-preview-view pre code,
     .cm-s-obsidian pre,
-    .cm-s-obsidian code[class*='language-'] {
-      font-family: var(--code-font, 'Fira Code', monospace) !important;
+    .cm-s-obsidian code[class*="language-"] {
+      font-family: var(--code-font, "Fira Code", monospace) !important;
       font-size: 0.95rem;
     }
 
@@ -2304,8 +2304,8 @@ settings:
       width: fit-content;
     }
 
-    .workspace-tab-header[data-type='markdown'],
-    .workspace-tab-header[data-type='empty'] {
+    .workspace-tab-header[data-type="markdown"],
+    .workspace-tab-header[data-type="empty"] {
       max-width: 100%;
       display: flex;
       flex-grow: 1;
@@ -2320,8 +2320,8 @@ settings:
       box-sizing: border-box;
     }
 
-    .workspace-tab-header[data-type='markdown'].is-active.mod-active,
-    .workspace-tab-header[data-type='empty'].is-active.mod-active {
+    .workspace-tab-header[data-type="markdown"].is-active.mod-active,
+    .workspace-tab-header[data-type="empty"].is-active.mod-active {
       flex-grow: 2;
       max-width: 250px;
       background-color: var(--color-accent);

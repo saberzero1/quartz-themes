@@ -29,22 +29,22 @@ body.view-button-front
   margin-top: 25px;
 }
 body.view-button-front
-  .workspace-leaf-content:is([data-mode='preview'], [data-mode='source'])
+  .workspace-leaf-content:is([data-mode="preview"], [data-mode="source"])
   .view-header
   .view-actions
   > :is(
-    [aria-label^='该面板处于编辑视图中'],
-    [aria-label^='Current view: editing']
+    [aria-label^="该面板处于编辑视图中"],
+    [aria-label^="Current view: editing"]
   ) {
   left: -10px;
 }
 body.view-button-front
-  .workspace-leaf-content[data-mode='preview']
+  .workspace-leaf-content[data-mode="preview"]
   .view-header
   .view-actions
   > :is(
-    [aria-label^='该面板处于阅读视图中'],
-    [aria-label^='Current view: reading']
+    [aria-label^="该面板处于阅读视图中"],
+    [aria-label^="Current view: reading"]
   ) {
   left: -10px;
 }
@@ -53,7 +53,7 @@ body .markdown-preview-view {
 }
 body
   .workspace-split.mod-root
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .view-content {
   padding-left: 2.5rem;
 }

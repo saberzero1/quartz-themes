@@ -23,14 +23,14 @@
 .setting-properties-position-below
   .mod-root
   .is-live-preview
-  .metadata-container:has(~ .embedded-backlinks[style*='display: none']) {
+  .metadata-container:has(~ .embedded-backlinks[style*="display: none"]) {
   padding-bottom: 0.5em;
 }
 
 .setting-properties-position-below
   .mod-root
   .is-live-preview
-  .metadata-container[data-property-count='0']
+  .metadata-container[data-property-count="0"]
   ~ .embedded-backlinks {
   padding-top: 0.5rem;
 }

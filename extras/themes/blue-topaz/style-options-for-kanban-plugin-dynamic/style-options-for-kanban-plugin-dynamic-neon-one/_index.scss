@@ -23,7 +23,7 @@ body.style-options-for-kanban-plugin-dynamic-neon-one
 
 body.style-options-for-kanban-plugin-dynamic-neon-one
   .kanban-plugin__lane-wrapper:nth-child(n)::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   left: 50%;
@@ -41,7 +41,7 @@ body.style-options-for-kanban-plugin-dynamic-neon-one
 
 body.style-options-for-kanban-plugin-dynamic-neon-one
   .kanban-plugin__lane-wrapper:nth-child(n)::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: 2px;

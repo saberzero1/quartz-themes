@@ -40,7 +40,7 @@ li code,
 ul code,
 ol code {
   font-family:
-    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal;
   background: var(--dark-10) !important;
   color: var(--red-3) !important;
@@ -64,7 +64,7 @@ ol code {
     .obsidian-search-match-highlight
   ) {
   font-family:
-    'Monaco', Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace !important;
+    "Monaco", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace !important;
   line-height: normal !important;
   background: #87837826 !important;
   color: var(--red-4) !important;
@@ -83,7 +83,7 @@ ol code {
 .theme-dark .HyperMD-codeblock {
   background: var(--dark-8) !important;
   color: var(--white-1);
-  font-family: 'SF Mono', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "SF Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   word-spacing: normal;
   word-break: normal;
   line-height: 1.5;
@@ -190,11 +190,11 @@ ol code {
 /* ------------------------------------------------------------*/
 
 /* Main Properties */
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   background: var(--dark-8) !important;
   color: var(--white-1);
-  font-family: 'SF Mono', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "SF Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   /* font-weight: 600 !important; */
   /* white-space: pre; */
   word-spacing: normal;
@@ -207,10 +207,10 @@ ol code {
 }
 
 /* What the code looks like when highlighted */
-code[class*='language-']::selection,
-code[class*='language-'] ::selection,
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection {
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection {
   background: rgba(146, 146, 175, 0.164);
   /* changes background color */
   color: unset;
@@ -218,7 +218,7 @@ pre[class*='language-'] ::selection {
 }
 
 /* Properties specific to code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 1em;
   /* this is standard */
   margin: 0.5em 0;
@@ -619,7 +619,7 @@ div.metadata-property-key > input {
   background: inherit;
 }
 
-.metadata-property:not([data-property-key='tags']) .multi-select-pill {
+.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
   line-height: var(--line-height-normal);
 }
 
@@ -635,20 +635,20 @@ div.metadata-property-key > input {
 
 /* Search Input Colors */
 textarea,
-input[type='text'],
-input[type='search'],
-input[type='email'],
-input[type='password'],
-input[type='number'] {
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
   background: var(--background-modifier-form-field);
 }
 
 textarea::placeholder,
-input[type='text']::placeholder,
-input[type='search']::placeholder,
-input[type='email'],
-input[type='password']::placeholder,
-input[type='number']::placeholder {
+input[type="text"]::placeholder,
+input[type="search"]::placeholder,
+input[type="email"],
+input[type="password"]::placeholder,
+input[type="number"]::placeholder {
   color: var(--text-faint);
 }
 
@@ -657,17 +657,17 @@ textarea:hover {
 }
 
 textarea:focus,
-input[type='text']:focus,
-input[type='search']:focus,
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='number']:focus {
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
   color: var(--h6-color);
   border: 1px solid var(--h5-color);
 }
 
 textarea:focus,
-input[type='text']:focus {
+input[type="text"]:focus {
   border-top-left-radius: var(--radius-l);
   border-top-right-radius: var(--radius-l);
 }
@@ -1383,7 +1383,7 @@ body {
 
 :root {
   --default-font:
-    'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif !important;
+    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
 }

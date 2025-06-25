@@ -14,7 +14,7 @@ body.list-vertical-line-one ol > li {
   counter-increment: niceBTT;
 }
 body.list-vertical-line-one ol > li::before {
-  content: counters(niceBTT, '.') '. ';
+  content: counters(niceBTT, ".") ". ";
   font-weight: bold;
   color: var(--list-ol-number-color);
   margin-left: -1.3em;

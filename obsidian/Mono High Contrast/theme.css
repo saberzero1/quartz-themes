@@ -127,7 +127,7 @@
 
 /* Fonts */
 body {
-  --font-interface: 'Fira Code', 'FuraMono Nerd Font', monospace;
+  --font-interface: "Fira Code", "FuraMono Nerd Font", monospace;
   -webkit-font-smoothing: auto;
 }
 

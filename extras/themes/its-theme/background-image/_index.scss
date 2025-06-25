@@ -21,7 +21,7 @@ body.background-image .workspace-tabs .workspace-leaf {
   backdrop-filter: blur(var(--background-image-blur));
 }
 
-body.background-image .workspace-leaf-content[data-type='style-settings'],
+body.background-image .workspace-leaf-content[data-type="style-settings"],
 body.background-image .kanban-plugin.kanban-plugin,
 body.background-image
   .markdown-preview-section.markdown-preview-section:not(

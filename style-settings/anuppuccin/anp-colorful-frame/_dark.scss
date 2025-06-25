@@ -22,9 +22,9 @@ body-icon-toggle-dark.theme-dark {
   background-color: rgba(var(--ctp-text), 0.3);
 }
 .anp-card-layout:not(.anp-card-layout-filebrowser)-icon-toggle-light.theme-light
-  .workspace-leaf-content[data-type='file-explorer'],
+  .workspace-leaf-content[data-type="file-explorer"],
 .anp-card-layout:not(.anp-card-layout-filebrowser)-icon-toggle-dark.theme-dark
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   --tab-text-color: var(--text-normal);
   --tab-text-color-focused: var(--text-normal);
   --tab-text-color-focused-active: var(--text-normal);

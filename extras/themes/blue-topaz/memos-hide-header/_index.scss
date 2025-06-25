@@ -1,11 +1,11 @@
 body.memos-hide-header
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .view-header
   :is(.view-header-nav-buttons, .view-header-title-container) {
   display: none;
 }
 
-body.memos-hide-header div[data-type='thino_view'] .view-header {
+body.memos-hide-header div[data-type="thino_view"] .view-header {
   position: absolute;
   right: 0;
   background-color: transparent !important;
@@ -14,11 +14,11 @@ body.memos-hide-header div[data-type='thino_view'] .view-header {
   transform: translateY(-15px);
 }
 
-body.memos-hide-header div[data-type='thino_view'] .view-actions {
+body.memos-hide-header div[data-type="thino_view"] .view-actions {
   position: relative;
 }
 
-body.memos-hide-header div[data-type='thino_view'] .view-header:not(:hover) {
+body.memos-hide-header div[data-type="thino_view"] .view-header:not(:hover) {
   transform: translateY(calc(-1 * var(--header-height)));
   transition: all 0.6s linear;
 }

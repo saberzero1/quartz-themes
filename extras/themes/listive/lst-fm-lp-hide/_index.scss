@@ -11,7 +11,7 @@ body.lst-fm-lp-hide
 body.lst-fm-lp-hide
   .markdown-source-view.is-live-preview
   .cm-line:has(.cm-hmd-frontmatter.cm-def)::after {
-  content: ' place cursor here to reveal frontmatter';
+  content: " place cursor here to reveal frontmatter";
   color: var(--text-faint);
   font-size: 0.8em;
   font-style: italic;
@@ -36,5 +36,5 @@ body.lst-fm-lp-hide
   .markdown-source-view.is-live-preview
   :has(.cm-line.cm-active .cm-hmd-frontmatter)
   .cm-line:has(.cm-hmd-frontmatter.cm-def)::after {
-  content: '';
+  content: "";
 }

@@ -1,23 +1,23 @@
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8) {
   counter-reset: numRow + 1 numCol 0;
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr:not(:first-child) {
   counter-increment: numRow;
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr
   th::before,
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   td::before {
   float: left;
@@ -26,24 +26,24 @@
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr
   th::after,
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   td::after {
   clear: left;
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr
   th::before,
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   td::before {
   display: block;
@@ -58,7 +58,7 @@
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr:hover
   td::before {
@@ -66,7 +66,7 @@
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr
   td:first-child::before {
@@ -74,14 +74,14 @@
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   :not(.calendar.svelte-pcimu8)
   td::before {
   background-color: var(--mu-num-table-bg-row);
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   table:not(.calendar.svelte-pcimu8)
   tr
   th::before {
@@ -92,11 +92,11 @@
 }
 
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   .cards
   td::before,
 .num-table
-  .workspace-leaf-content:not([data-type='full-calendar-view'])
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
   .cards
   th::before {
   display: none;

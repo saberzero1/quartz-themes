@@ -1,6 +1,6 @@
 body:not(.is-mobile).nav-header-autohide
   .mod-root
-  .workspace-leaf-content[data-type='backlink']
+  .workspace-leaf-content[data-type="backlink"]
   .view-header:hover
   ~ .view-content
   > .nav-header
@@ -13,7 +13,7 @@ body:not(.is-mobile).nav-header-autohide
 }
 body:not(.is-mobile).nav-header-autohide
   .mod-root
-  .workspace-leaf-content[data-type='backlink']
+  .workspace-leaf-content[data-type="backlink"]
   .view-header:hover
   ~ .view-content
   > .nav-header
@@ -28,7 +28,7 @@ body:not(.is-mobile).nav-header-autohide
 }
 body:not(.is-mobile) .view-header::after {
   width: 100%;
-  content: ' ';
+  content: " ";
   background-color: transparent;
   height: var(--size-4-4);
   position: absolute;

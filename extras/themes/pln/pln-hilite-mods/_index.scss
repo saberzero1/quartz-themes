@@ -23,7 +23,7 @@
   }
   & mark.edit::before {
     color: var(--color-red);
-    content: 'Edit:';
+    content: "Edit:";
   }
   /*Orange highlighter (unfinished)*/
   & mark.unfinished {
@@ -32,7 +32,7 @@
   }
   & mark.unfinished::before {
     color: var(--color-orange);
-    content: 'Unfinished:';
+    content: "Unfinished:";
   }
   /*Pink highlighter (verify)*/
   & mark.verify {
@@ -41,7 +41,7 @@
   }
   & mark.verify::before {
     color: var(--color-purple);
-    content: 'Verify:';
+    content: "Verify:";
   }
   /* Green highlighter (important)*/
   & mark.important {
@@ -50,7 +50,7 @@
   }
   & mark.important::before {
     color: var(--color-green);
-    content: 'Important:';
+    content: "Important:";
   }
   /*
     * Text colours using mark

@@ -603,9 +603,9 @@ body {
 }
 
 body {
-  --red-graphite-interface-font: 'Avenir';
-  --red-graphite-text-font: 'Avenir';
-  --red-graphite-monospace-font: '';
+  --red-graphite-interface-font: "Avenir";
+  --red-graphite-text-font: "Avenir";
+  --red-graphite-monospace-font: "";
   --font-interface-override: var(--red-graphite-interface-font);
   --font-text-override: var(--red-graphite-text-font);
   --font-monospace-override: var(--red-graphite-monospace-font);
@@ -853,7 +853,7 @@ body {
   .mod-right-split
   .metadata-container
   .metadata-content
-  .metadata-property:not([data-property-key='tags']) {
+  .metadata-property:not([data-property-key="tags"]) {
   --pill-color: var(--color-base-40);
 }
 
@@ -1303,7 +1303,7 @@ body {
   color: var(--color-base-00);
 }
 
-.theme-light .style-settings-container[data-level='2'] {
+.theme-light .style-settings-container[data-level="2"] {
   background: var(--color-base-25);
   border: 1px solid var(--color-base-30);
   border-radius: 5px;
@@ -1311,7 +1311,7 @@ body {
   margin: 2px 0 2px -20px;
 }
 
-.theme-dark .style-settings-container[data-level='2'] {
+.theme-dark .style-settings-container[data-level="2"] {
   background: var(--color-base-110);
   border: 1px solid var(--color-base-100);
   border-radius: 5px;

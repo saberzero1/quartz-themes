@@ -1,5 +1,5 @@
 body.reduce-bottom-padding
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   :is(.markdown-preview-view, .markdown-rendered)
   .markdown-preview-sizer,
 body.reduce-bottom-padding:not(.plugin-cm-typewriter-scroll)

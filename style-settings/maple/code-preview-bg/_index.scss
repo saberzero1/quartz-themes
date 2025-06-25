@@ -5,7 +5,7 @@ body {
 }
 .markdown-preview-view
   .markdown-preview-section
-  div:has(> pre:not([class*='frontmatter'])) {
+  div:has(> pre:not([class*="frontmatter"])) {
   padding: var(--size-4-4) var(--size-4-8);
   margin-block: var(--size-4-4);
   border-radius: var(--setting-code-bg-radius);
@@ -23,7 +23,7 @@ body {
 }
 .markdown-preview-view
   .markdown-preview-section
-  pre:not([class*='frontmatter']) {
+  pre:not([class*="frontmatter"]) {
   --code-background: var(
     --setting-code-bg,
     hsl(var(--background-secondary-hsl))

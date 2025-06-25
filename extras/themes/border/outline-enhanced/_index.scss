@@ -1,5 +1,5 @@
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .tree-item-inner {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7,28 +7,28 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .collapse-icon {
   padding-inline-end: var(--size-2-3);
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .collapse-icon::before {
-  content: '' !important;
+  content: "" !important;
 }
 
 .outline-enhanced:not(.is-grabbing)
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item {
   position: relative;
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-self {
   position: relative;
@@ -39,7 +39,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-self
   .tree-item-inner {
@@ -53,11 +53,11 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-self
   .tree-item-inner::before {
-  content: '';
+  content: "";
   width: var(--size-4-1);
   height: var(--size-4-1);
   border: 2px solid var(--color-accent);
@@ -69,7 +69,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-self
   .tree-item-icon
@@ -78,7 +78,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item.is-collapsed
   .tree-item-icon::before {
@@ -86,10 +86,10 @@
 }
 
 .outline-enhanced:not(.is-grabbing)
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item::after {
-  content: '';
+  content: "";
   width: 2px;
   position: absolute;
   background-color: transparent;
@@ -99,7 +99,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-icon {
   cursor: pointer;
@@ -109,7 +109,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-icon::before {
   width: var(--size-4-2);
@@ -123,7 +123,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-icon
   svg {
@@ -131,7 +131,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-icon
   svg
@@ -140,7 +140,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item:hover
   > .tree-item-children
@@ -149,7 +149,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item:hover
   > .tree-item-self:hover
@@ -159,13 +159,13 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item:hover
   > .tree-item-children
   > .tree-item:hover::after,
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item:hover
   > .tree-item-children
@@ -175,12 +175,12 @@
 }
 
 .outline-enhanced:not(.is-grabbing)
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item:hover
   > .tree-item-children
   > .tree-item:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(var(--nav-item-size) * 1.8 / 2 * -1);
   left: -9px;
@@ -192,7 +192,7 @@
 }
 
 .outline-enhanced
-  .workspace-leaf-content[data-type='outline']
+  .workspace-leaf-content[data-type="outline"]
   .view-content
   :is(.tree-item-children, .tree-item-self .tree-item-self) {
   padding-left: 0;

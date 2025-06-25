@@ -1,8 +1,8 @@
 body.justify-align
-  div[data-type='markdown']
+  div[data-type="markdown"]
   div.cm-line:not(.HyperMD-codeblock),
 body.justify-align
-  div[data-type='markdown']
+  div[data-type="markdown"]
   :is(.markdown-preview-view, .markdown-rendered) {
   text-align: justify;
   hyphens: auto;

@@ -27,7 +27,7 @@
   .cm-contentContainer
   > div
   > .image-embed:nth-child(1 of div.image-embed)::after {
-  content: '🖼️ banner';
+  content: "🖼️ banner";
   font-size: 12px;
   color: var(--text-muted);
 }

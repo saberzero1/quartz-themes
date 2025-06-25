@@ -545,7 +545,7 @@ body.anp-card-layout .workspace,
   .mod-vertical
   .workspace-tab-header.is-active,
 .anp-card-layout:not(.anp-card-layout-filebrowser)
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   --tab-text-color: var(--background-secondary-alt);
   --tab-text-color-focused: var(--background-secondary-alt);
   --tab-text-color-focused-active: var(--background-secondary-alt);

@@ -8,8 +8,8 @@ body {
 ,
 .modal.mod-settings .vertical-tab-content-container,
 .workspace-split:not(.mod-left-split, .mod-right-split)
-  .workspace-leaf-content[data-type='markdown'],
-.workspace-leaf-content[data-type='graph'] > canvas,
+  .workspace-leaf-content[data-type="markdown"],
+.workspace-leaf-content[data-type="graph"] > canvas,
 .workspace-drawer-inner,
 .modal,
 .community-plugin-search,

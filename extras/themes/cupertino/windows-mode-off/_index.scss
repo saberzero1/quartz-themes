@@ -24,19 +24,19 @@ body.windows-mode-off:not(.is-mobile)
 body.windows-mode-off:not(.is-mobile) .modal.mod-settings textarea,
 body.windows-mode-off:not(.is-mobile)
   .modal.mod-settings
-  input[type='text']:not(.metadata-container input):not(.prompt input),
-body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type='number'],
-body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type='search'],
+  input[type="text"]:not(.metadata-container input):not(.prompt input),
+body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type="number"],
+body.windows-mode-off:not(.is-mobile) .modal.mod-settings input[type="search"],
 body.windows-mode-off:not(.is-mobile) .modal.mod-community-modal textarea,
 body.windows-mode-off:not(.is-mobile)
   .modal.mod-community-modal
-  input[type='text']:not(.metadata-container input):not(.prompt input),
+  input[type="text"]:not(.metadata-container input):not(.prompt input),
 body.windows-mode-off:not(.is-mobile)
   .modal.mod-community-modal
-  input[type='number'],
+  input[type="number"],
 body.windows-mode-off:not(.is-mobile)
   .modal.mod-community-modal
-  input[type='search'] {
+  input[type="search"] {
   border: var(--border-width) solid var(--background-modifier-border-hover);
 }
 

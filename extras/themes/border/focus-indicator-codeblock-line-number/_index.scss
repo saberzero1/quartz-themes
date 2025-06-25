@@ -1,5 +1,5 @@
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -19,7 +19,7 @@
 }
 
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -29,17 +29,17 @@
 }
 
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer,
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock-end {
   counter-reset: code-line;
 }
 
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
@@ -49,7 +49,7 @@
 }
 
 .line-hover-indicator.focus-indicator-codeblock-line-number
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-contentContainer
   .cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end

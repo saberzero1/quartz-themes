@@ -1,28 +1,28 @@
-body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='!']
+  li[data-task="!"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='!']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='!'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="!"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="!"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='!']
+  li[data-task="!"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '!';
+  content: "!";
   color: var(--color-red);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -31,31 +31,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='>']
+  li[data-task=">"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='>']
+  li[data-task=">"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '>';
+  content: ">";
   color: var(--color-purple);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -64,31 +64,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='i']
+  li[data-task="i"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='i']
+  li[data-task="i"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: 'i';
+  content: "i";
   color: var(--color-blue);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -97,31 +97,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='?']
+  li[data-task="?"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='?']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='?'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="?"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="?"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='?']
+  li[data-task="?"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '?';
+  content: "?";
   color: var(--color-green);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -130,31 +130,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='#']
+  li[data-task="#"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='#']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='#'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="#"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="#"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='#']
+  li[data-task="#"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '#';
+  content: "#";
   color: var(--color-cyan);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -163,31 +163,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='.']
+  li[data-task="."]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='.']
+  li[data-task="."]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '.';
+  content: ".";
   color: var(--color-orange);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -196,31 +196,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='<']
+  li[data-task="<"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='<']
+  li[data-task="<"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '<';
+  content: "<";
   color: var(--color-yellow);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -229,31 +229,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='$']
+  li[data-task="$"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='$']
+  li[data-task="$"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '$';
+  content: "$";
   color: var(--text-accent);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -262,31 +262,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='*']
+  li[data-task="*"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='*']
+  li[data-task="*"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '*';
+  content: "*";
   color: var(--color-red);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -328,31 +328,31 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.325em;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > p > input:checked {
   background-color: transparent;
   border: none;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='@']
+  li[data-task="@"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='@']
+  li[data-task="@"]
   > p
   > input:checked::after {
   background-color: transparent;
-  content: '@';
+  content: "@";
   color: var(--color-blue);
   font-size: var(--flexcyon-ascii-checkboxes-font-size);
   text-align: center;
@@ -384,7 +384,7 @@ body.flexcyon-ascii-checkboxes-enabled
   li[data-task='"']
   > p
   > input:checked::after {
-  content: '“';
+  content: "“";
   color: var(--color-green);
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
   text-align: center;
@@ -399,14 +399,14 @@ body.flexcyon-ascii-checkboxes-enabled
   li[data-task="'"]
   > p
   > input:checked::after {
-  content: '‘';
+  content: "‘";
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='i']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='i'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="i"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="i"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='i']
+  li[data-task="i"]
   > p
   > input:checked::after {
   border: 1.5px solid var(--color-blue);
@@ -417,72 +417,72 @@ body.flexcyon-ascii-checkboxes-enabled
   top: -0.1rem;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='<']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='<'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="<"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="<"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='<']
+  li[data-task="<"]
   > p
   > input:checked::after,
-body.flexcyon-ascii-checkboxes-enabled input[data-task='>']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='>'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task=">"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task=">"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='>']
+  li[data-task=">"]
   > p
   > input:checked::after {
   transform: scaleY(1.1);
   top: -0.4rem;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='.']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='.'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="."]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="."] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='.']
+  li[data-task="."]
   > p
   > input:checked::after {
-  content: '...';
+  content: "...";
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.2rem);
   letter-spacing: -0.5px;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='*']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='*'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="*"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="*"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='*']
+  li[data-task="*"]
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.75rem);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='$']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='$'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="$"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="$"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='$']
+  li[data-task="$"]
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='@']:checked::after,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='@'] > input:checked::after,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="@"]:checked::after,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="@"] > input:checked::after,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='@']
+  li[data-task="@"]
   > p
   > input:checked::after {
   font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
   top: -0.45rem;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='l']:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > input:checked,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > p > input:checked {
+body.flexcyon-ascii-checkboxes-enabled input[data-task="l"]:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > input:checked,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > p > input:checked {
   background-color: transparent;
   font-weight: 900;
 }
 
-body.flexcyon-ascii-checkboxes-enabled input[data-task='l']:checked:hover,
-body.flexcyon-ascii-checkboxes-enabled li[data-task='l'] > input:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled input[data-task="l"]:checked:hover,
+body.flexcyon-ascii-checkboxes-enabled li[data-task="l"] > input:checked:hover,
 body.flexcyon-ascii-checkboxes-enabled
-  li[data-task='l']
+  li[data-task="l"]
   > p
   > input:checked:hover {
   filter: brightness(1.25);

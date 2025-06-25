@@ -59,8 +59,8 @@
 /***** *****/
 /** 1. Font */
 body {
-  --font-monospace: 'Source Code Pro', 'Courier New', monospace;
-  --font-text: 'Inter', sans-serif;
+  --font-monospace: "Source Code Pro", "Courier New", monospace;
+  --font-text: "Inter", sans-serif;
   -webkit-font-smoothing: auto;
 }
 /** 2. Colors */
@@ -247,13 +247,13 @@ body {
   --checkbox-radius: 10px;
 }
 /** 4.3.2. Fix checkbox tick style */
-input[type='checkbox'] {
+input[type="checkbox"] {
   border: 1px solid var(--checkbox-border-color-unchecked);
 }
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   box-shadow: inset 0 0 0 3px var(--background-primary);
 }
-input[type='checkbox']:checked:after {
+input[type="checkbox"]:checked:after {
   display: none;
   -webkit-mask-size: 75%;
 }

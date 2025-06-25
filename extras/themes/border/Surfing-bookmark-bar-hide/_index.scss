@@ -1,11 +1,11 @@
 body.Surfing-bookmark-bar-hide
-  .workspace-leaf-content[data-type='surfing-view']
+  .workspace-leaf-content[data-type="surfing-view"]
   .wb-bookmark-bar {
   display: none;
 }
 
 body.Surfing-bookmark-bar-hide
-  .workspace-leaf-content[data-type='surfing-view']
+  .workspace-leaf-content[data-type="surfing-view"]
   .wb-view-content:has(.wb-bookmark-bar)
   .wb-frame {
   height: calc(100%);

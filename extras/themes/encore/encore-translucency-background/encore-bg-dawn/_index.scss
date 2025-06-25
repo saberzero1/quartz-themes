@@ -8,7 +8,7 @@ body.encore-translucency.encore-bg-dawn {
 body.encore-translucency.encore-bg-dawn::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   animation: fade-in 60s linear infinite alternate;
   background-image:
     radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)),

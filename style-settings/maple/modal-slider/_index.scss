@@ -1,4 +1,4 @@
-body input[type='range']::-webkit-slider-thumb {
+body input[type="range"]::-webkit-slider-thumb {
   height: 1.6em;
   width: var(--size-4-1);
   background-color: var(--text-muted);
@@ -7,6 +7,6 @@ body input[type='range']::-webkit-slider-thumb {
   transform: translateY(-50%);
   border-radius: var(--radius-m);
 }
-body input[type='range']::-webkit-slider-thumb:hover {
+body input[type="range"]::-webkit-slider-thumb:hover {
   box-shadow: none;
 }

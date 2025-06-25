@@ -1,11 +1,11 @@
-body div.oz-nav-file-title[data-path$='.md'] div svg {
+body div.oz-nav-file-title[data-path$=".md"] div svg {
   display: none;
 }
-body div.oz-nav-file-title[data-path$='.md'] span.oz-nav-file-tag {
+body div.oz-nav-file-title[data-path$=".md"] span.oz-nav-file-tag {
   display: none;
 }
-body div.oz-nav-file-title[data-path$='.md'] div::after {
-  content: '.md';
+body div.oz-nav-file-title[data-path$=".md"] div::after {
+  content: ".md";
   opacity: var(--dimmed);
 }
 body div.oz-nav-file-title div.oz-nav-file-title-content {
@@ -23,5 +23,5 @@ body div.oz-nav-file-title span.oz-nav-file-tag {
   font-weight: unset;
 }
 body div.oz-nav-file-title span.oz-nav-file-tag::before {
-  content: '.';
+  content: ".";
 }

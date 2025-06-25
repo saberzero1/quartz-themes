@@ -1,5 +1,5 @@
 body.theme-setting-overrideCalendar {
-  .workspace-leaf-content[data-type='calendar'] {
+  .workspace-leaf-content[data-type="calendar"] {
     .view-content {
       background-color: var(--theme-color-tabNavActiveBg);
 
@@ -109,7 +109,7 @@ body.theme-setting-overrideCalendar {
   .calendar .day {
     text-align: left;
   }
-  .mod-sidedock .workspace-leaf-content[data-type='calendar'] {
+  .mod-sidedock .workspace-leaf-content[data-type="calendar"] {
     .container {
       border-radius: var(--radius-m);
       overflow: hidden;

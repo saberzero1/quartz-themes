@@ -1,10 +1,10 @@
-body.theme-dark div[data-type='thino_view'].workspace-leaf-content {
+body.theme-dark div[data-type="thino_view"].workspace-leaf-content {
   background-image: var(--thino-background-dark-custom);
   --background-primary: var(--bg-color-settings-2);
   --memos-memo-bg: var(--bg-color-settings-0-1);
   --memos-memo-border: var(--bg-color-settings-0-1);
   background-size: cover;
 }
-body.theme-dark div[data-type='thino_view'] #page-wrapper {
+body.theme-dark div[data-type="thino_view"] #page-wrapper {
   background: var(--bg-color-settings-2);
 }

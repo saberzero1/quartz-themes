@@ -9,7 +9,7 @@ body.mod-windows.win-menu div.menu {
   box-shadow:
     0px 8px 8px 3px rgba(0, 0, 0, 0.05),
     0px 7px 9px -7px rgba(0, 0, 0, 0.13);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body.mod-windows.win-menu div.menu .menu-item {
@@ -37,55 +37,55 @@ body.mod-windows.win-menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='m9 14 2 2 4-4'],
+  path[d="m9 14 2 2 4-4"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M9 12v-1h6v1'],
+  path[d="M9 12v-1h6v1"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M11 17h2'],
+  path[d="M11 17h2"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M12 11v6'],
+  path[d="M12 11v6"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'],
+  path[d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'],
+  path[d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M21 14H11'],
+  path[d="M21 14H11"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='m15 10-4 4 4 4'],
+  path[d="m15 10-4 4 4 4"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'] {
+  path[d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"] {
   color: var(--win-blue);
 }
 
@@ -94,8 +94,8 @@ body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg circle {
   color: var(--win-blue);
 }
 
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y='2'],
-body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y='3'] {
+body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y="2"],
+body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg rect[y="3"] {
   color: var(--menu-text-color);
 }
 
@@ -104,13 +104,13 @@ body.mod-windows.win-menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='M15 6a9 9 0 0 0-9 9'],
+  path[d="M15 6a9 9 0 0 0-9 9"],
 body.mod-windows.win-menu
   div.menu
   .menu-item
   .menu-item-icon
   svg
-  path[d='m15 10-4 4 4 4'],
+  path[d="m15 10-4 4 4 4"],
 body.mod-windows.win-menu div.menu .menu-item .menu-item-icon svg polyline {
   fill: none;
 }

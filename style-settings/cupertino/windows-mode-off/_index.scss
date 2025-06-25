@@ -15,15 +15,15 @@ body:not(.is-mobile) .modal.mod-community-modal .mobile-option-setting-item {
 body:not(.is-mobile) .modal.mod-settings textarea,
 body:not(.is-mobile)
   .modal.mod-settings
-  input[type='text']:not(.metadata-container input):not(.prompt input),
-body:not(.is-mobile) .modal.mod-settings input[type='number'],
-body:not(.is-mobile) .modal.mod-settings input[type='search'],
+  input[type="text"]:not(.metadata-container input):not(.prompt input),
+body:not(.is-mobile) .modal.mod-settings input[type="number"],
+body:not(.is-mobile) .modal.mod-settings input[type="search"],
 body:not(.is-mobile) .modal.mod-community-modal textarea,
 body:not(.is-mobile)
   .modal.mod-community-modal
-  input[type='text']:not(.metadata-container input):not(.prompt input),
-body:not(.is-mobile) .modal.mod-community-modal input[type='number'],
-body:not(.is-mobile) .modal.mod-community-modal input[type='search'] {
+  input[type="text"]:not(.metadata-container input):not(.prompt input),
+body:not(.is-mobile) .modal.mod-community-modal input[type="number"],
+body:not(.is-mobile) .modal.mod-community-modal input[type="search"] {
   border: var(--border-width) solid var(--background-modifier-border-hover);
 }
 body:not(.is-mobile) .modal:not(.mod-community-modal) .setting-item-heading {

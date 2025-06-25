@@ -9,7 +9,7 @@ table:not(.calendar) > thead > tr > th:first-child {
   white-space: nowrap;
 }
 table:not(.calendar) > thead > tr > th:first-child::before {
-  content: ' ';
+  content: " ";
   padding-right: var(--padding-right);
   display: inline-block;
   min-width: 2em;
@@ -34,7 +34,7 @@ table:not(.calendar).table-editor
   .table-cell-wrapper::before,
 table:not(.calendar):not(.table-editor) > tbody > tr > td:first-child::before {
   counter-increment: section;
-  content: counter(section) ' ';
+  content: counter(section) " ";
   text-align: center;
   padding-right: var(--padding-right);
   display: inline-block;
@@ -67,14 +67,14 @@ table:not(.calendar):not(.table-editor)
   padding-inline-start: 0;
 }
 .bases-table .bases-tr > .bases-td:first-child::before {
-  content: ' ';
+  content: " ";
   padding-right: var(--padding-right);
   display: inline-block;
   min-width: 2em;
 }
 .bases-table .bases-tbody .bases-tr > .bases-td:first-child::before {
   counter-increment: section;
-  content: counter(section) ' ';
+  content: counter(section) " ";
   text-align: center;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;

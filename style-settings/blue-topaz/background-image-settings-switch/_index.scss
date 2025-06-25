@@ -45,8 +45,8 @@ body.toggle-nonoverlapping-bg .workspace-split.mod-root .view-content {
 body
   .workspace-split.mod-root
   .workspace-leaf:nth-child(n)
-  .workspace-leaf-content[data-type='markdown']::before {
-  content: '';
+  .workspace-leaf-content[data-type="markdown"]::before {
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -70,7 +70,7 @@ body.background-image-settings-markdown-page-transparent
 body.background-image-settings-markdown-page-custom
   .workspace-split.mod-root
   .workspace-leaf
-  .workspace-leaf-content[data-type='markdown']::before {
+  .workspace-leaf-content[data-type="markdown"]::before {
   background-size: unset;
   background-color: var(--custom-markdown-page-background-color);
   opacity: var(--bg-markdown-page-opacity-cp, 1);

@@ -61,7 +61,7 @@
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
   h1:not(.callout h1, ul h1, ol h1)::before {
-  content: '';
+  content: "";
   position: absolute;
   background: var(--cutout-border-background);
   inset: var(--cutout-outline-inset);
@@ -119,7 +119,7 @@
     :is(.newspaper, .movie-script, .minimalist, .h1-stroke, .h1-normal, .sci-fi)
   )
   h1:not(.callout h1, ul h1, ol h1):is(.is-collapsed > h1)::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: var(--h1-border-color-collapsed);
@@ -177,7 +177,7 @@
   h1:not(.callout h1, ul h1, ol h1) {
   --h1-color: inherit;
   --h1-background: transparent;
-  --h1-font: 'Orbitron', Arial, serif;
+  --h1-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -212,7 +212,7 @@
   h1:not(.callout h1, ul h1, ol h1) {
   --h1-line-height: 1.2em;
   --h1-size: 3em;
-  --h1-font: 'ParkLaneNF', 'Limelight', 'Impact', 'Inter';
+  --h1-font: "ParkLaneNF", "Limelight", "Impact", "Inter";
   --h1-color: var(--art-deco-color);
   --h1-weight: 500;
   --h1-background: var(--color-base-100);
@@ -229,7 +229,7 @@
   )
   h1:not(.callout h1, ul h1, ol h1)::before {
   --corner-size: 0.5em;
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   clip-path: unset;

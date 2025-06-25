@@ -9,7 +9,7 @@
 
 .theme-light {
   color-scheme: light;
-  --font-default: 'Yu Gothic', 'Inter', sans-serif;
+  --font-default: "Yu Gothic", "Inter", sans-serif;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -44,10 +44,10 @@
   --color-base-60: #d99e5a;
   --color-base-70: #af7d43;
   --color-base-100: rgb(155, 109, 87);
-  --theme-decoration: '☀️';
+  --theme-decoration: "☀️";
 }
 
 .theme-light .markdown-rendered hr,
 .theme-light .markdown-source-view hr {
-  font-family: 'Yu Gothic', 'Inter', sans-serif !important;
+  font-family: "Yu Gothic", "Inter", sans-serif !important;
 }

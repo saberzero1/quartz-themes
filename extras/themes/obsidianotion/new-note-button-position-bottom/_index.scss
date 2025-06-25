@@ -2,7 +2,7 @@
   margin-bottom: 40px;
 }
 
-.new-note-button-position-bottom .clickable-icon[aria-label='New note'] {
+.new-note-button-position-bottom .clickable-icon[aria-label="New note"] {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -16,17 +16,17 @@
   display: inline-block;
 }
 
-.new-note-button-position-bottom .clickable-icon[aria-label='New note']:hover,
-.new-note-button-position-bottom .clickable-icon[aria-label='New note']::after {
+.new-note-button-position-bottom .clickable-icon[aria-label="New note"]:hover,
+.new-note-button-position-bottom .clickable-icon[aria-label="New note"]::after {
   background-color: var(--nav-item-background-hover);
   color: var(--nav-item-color-hover);
 }
 
-.new-note-button-position-bottom .clickable-icon[aria-label='New note'] svg {
+.new-note-button-position-bottom .clickable-icon[aria-label="New note"] svg {
   display: none;
 }
 
-.new-note-button-position-bottom .clickable-icon[aria-label='New note']::after {
+.new-note-button-position-bottom .clickable-icon[aria-label="New note"]::after {
   content: attr(aria-label);
   text-overflow: ellipsis;
   font-weight: 600;

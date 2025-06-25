@@ -10,7 +10,7 @@ body.view-button-front.hide-left-ribbon-retention-drawer.color-scheme-options-si
   margin-left: 5px;
 }
 body.hide-left-ribbon-retention-drawer.view-button-front
-  .workspace-leaf-content[data-mode='source']
+  .workspace-leaf-content[data-mode="source"]
   .view-content
   .markdown-source-view:not(.is-live-preview)::before {
   left: 38px;
@@ -42,22 +42,22 @@ body.hide-left-ribbon-retention-drawer .view-header {
   padding-left: 24px;
 }
 body.hide-left-ribbon-retention-drawer.view-button-front
-  .workspace-leaf-content:is([data-mode='preview'], [data-mode='source'])
+  .workspace-leaf-content:is([data-mode="preview"], [data-mode="source"])
   .view-header
   .view-actions
   > :is(
-    [aria-label^='该面板处于编辑视图中'],
-    [aria-label^='Current view: editing']
+    [aria-label^="该面板处于编辑视图中"],
+    [aria-label^="Current view: editing"]
   ) {
   left: 30px;
 }
 body.hide-left-ribbon-retention-drawer.view-button-front
-  .workspace-leaf-content[data-mode='preview']
+  .workspace-leaf-content[data-mode="preview"]
   .view-header
   .view-actions
   > :is(
-    [aria-label^='该面板处于阅读视图中'],
-    [aria-label^='Current view: reading']
+    [aria-label^="该面板处于阅读视图中"],
+    [aria-label^="Current view: reading"]
   ) {
   left: 30px;
 }

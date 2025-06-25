@@ -1,10 +1,10 @@
 .show-tabs
-  .workspace-tab-header-container:not(:has([data-type='file-explorer'])) {
+  .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
   height: var(--header-height);
 }
 
 .show-tabs
-  .workspace-tab-header-container:not(:has([data-type='file-explorer']))
+  .workspace-tab-header-container:not(:has([data-type="file-explorer"]))
   > * {
   opacity: 1;
 }

@@ -1,12 +1,12 @@
 .pt-colored-folders.pt-colored-folders-files-match
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-folder
   .nav-file-title:not(.is-active, :hover) {
   color: var(--interactive-accent-text);
 }
 
 .pt-colored-folders.pt-colored-folders-style-accent
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder {
@@ -14,7 +14,7 @@
 }
 
 .pt-colored-folders.pt-colored-folders-style-accent
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
@@ -23,13 +23,13 @@
 }
 
 .pt-colored-folders.pt-colored-folders-style-accent
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
   .nav-file-title:hover,
 .pt-colored-folders.pt-colored-folders-style-accent
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder

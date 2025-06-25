@@ -18,7 +18,7 @@ a {
 
 span.view-header-breadcrumb,
 div.view-header-title {
-  font-family: 'palatino', serif;
+  font-family: "palatino", serif;
   letter-spacing: 1px;
 }
 
@@ -32,7 +32,7 @@ div.view-header-title {
 
 a.tag,
 .cm-hashtag {
-  font-family: 'palatino', serif;
+  font-family: "palatino", serif;
   text-transform: uppercase;
   font-size: 8px;
   letter-spacing: 1px;
@@ -40,18 +40,18 @@ a.tag,
 
 .nav-file-title,
 .nav-folder-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   font-size: 12.5px;
 }
 
 body {
   --inline-title-color: #8e746d;
-  --inline-title-font: 'palatino', serif;
+  --inline-title-font: "palatino", serif;
   --inline-title-size: 1.5em;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-weight: 200;
 
-  --font-text: 'yu gothic ui', sans-serif;
+  --font-text: "yu gothic ui", sans-serif;
   --font-text-size: 12.5px !important;
 }
 
@@ -97,11 +97,11 @@ svg * {
   } */
 
 .body {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
 
 .workspace-tab-header-inner-title {
-  font-family: 'palatino', serif;
+  font-family: "palatino", serif;
   text-transform: uppercase;
   font-size: 9px;
   letter-spacing: 1px;
@@ -180,7 +180,7 @@ body {
 .callout-title {
   color: #afa9a3;
   font-size: 12px;
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
 
 .callout > .callout-content p:last-child {
@@ -193,7 +193,7 @@ body {
 .markdown-preview-section > div h4,
 .markdown-preview-section > div h5,
 .markdown-preview-section > div h6 {
-  font-family: 'palatino', serif;
+  font-family: "palatino", serif;
   margin-top: 40px;
   font-weight: normal;
   color: #968988 !important;

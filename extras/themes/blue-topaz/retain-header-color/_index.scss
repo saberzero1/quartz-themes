@@ -11,8 +11,8 @@ body.retain-header-color
   :is(h1, h2, h3, h4, h5, h6)
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header[class*='cm-em'],
-body.retain-header-color .cm-s-obsidian .cm-header[class*='cm-strong'] {
+body.retain-header-color .cm-s-obsidian .cm-header[class*="cm-em"],
+body.retain-header-color .cm-s-obsidian .cm-header[class*="cm-strong"] {
   background-image: initial;
   background-clip: initial;
   -webkit-background-clip: initial;
@@ -30,10 +30,10 @@ body.retain-header-color
   h1
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-1[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-1[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-1[class*='cm-strong'] {
+  .cm-header.cm-header-1[class*="cm-strong"] {
   color: var(--h1-color) !important;
   font-family: var(--h1-font) !important;
 }
@@ -48,10 +48,10 @@ body.retain-header-color
   h2
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-2[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-2[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-2[class*='cm-strong'] {
+  .cm-header.cm-header-2[class*="cm-strong"] {
   color: var(--h2-color) !important;
   font-family: var(--h2-font) !important;
 }
@@ -66,10 +66,10 @@ body.retain-header-color
   h3
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-3[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-3[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-3[class*='cm-strong'] {
+  .cm-header.cm-header-3[class*="cm-strong"] {
   color: var(--h3-color) !important;
   font-family: var(--h3-font) !important;
 }
@@ -84,10 +84,10 @@ body.retain-header-color
   h4
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-4[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-4[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-4[class*='cm-strong'] {
+  .cm-header.cm-header-4[class*="cm-strong"] {
   color: var(--h4-color) !important;
   font-family: var(--h4-font) !important;
 }
@@ -102,10 +102,10 @@ body.retain-header-color
   h5
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-5[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-5[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-5[class*='cm-strong'] {
+  .cm-header.cm-header-5[class*="cm-strong"] {
   color: var(--h5-color) !important;
   font-family: var(--h5-font) !important;
 }
@@ -120,10 +120,10 @@ body.retain-header-color
   h6
   strong
   em,
-body.retain-header-color .cm-s-obsidian .cm-header.cm-header-6[class*='cm-em'],
+body.retain-header-color .cm-s-obsidian .cm-header.cm-header-6[class*="cm-em"],
 body.retain-header-color
   .cm-s-obsidian
-  .cm-header.cm-header-6[class*='cm-strong'] {
+  .cm-header.cm-header-6[class*="cm-strong"] {
   color: var(--h6-color) !important;
   font-family: var(--h6-font) !important;
 }

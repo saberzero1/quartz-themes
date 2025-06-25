@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // Define the folder to search
-const obsidianFolder = './obsidian';
+const obsidianFolder = "./obsidian";
 
 // Regular expression to match font-family declarations
 const fontFamilyRegex = /font-family:\s*([^;]+);/gi;
@@ -18,7 +18,7 @@ function getCssFiles(folder) {
     const fullPath = path.join(folder, file);
     if (fs.statSync(fullPath).isDirectory()) {
       cssFiles = cssFiles.concat(getCssFiles(fullPath));
-    } else if (file.endsWith('.css')) {
+    } else if (file.endsWith(".css")) {
       cssFiles.push(fullPath);
     }
   });
@@ -27,20 +27,20 @@ function getCssFiles(folder) {
 
 // Function to extract font-family names from a CSS file
 function extractFontFamilies(filePath) {
-  const content = fs.readFileSync(filePath, 'utf8');
+  const content = fs.readFileSync(filePath, "utf8");
   const matches = [...content.matchAll(fontFamilyRegex)];
   // Extract and clean font-family names
   const fontFamilies = matches.map((match) => {
-    const family = match[1].trim().replace(removeQuotesRegex, '');
-    return family.split(',').map((name) => name.trim());
+    const family = match[1].trim().replace(removeQuotesRegex, "");
+    return family.split(",").map((name) => name.trim());
   });
   // Remove variables and fallback fonts
   const filteredFamilies = fontFamilies.map((families) =>
     families.filter(
       (name) =>
-        !name.startsWith('--') &&
-        !name.includes('fallback') &&
-        !name.startsWith('var'),
+        !name.startsWith("--") &&
+        !name.includes("fallback") &&
+        !name.startsWith("var"),
     ),
   );
   // Flatten the array and remove duplicates
@@ -60,4 +60,4 @@ function extractAllFontFamilies(folder) {
 
 // Extract and print the font-family names
 const fontFamilies = extractAllFontFamilies(obsidianFolder);
-console.log('Font-Family Names:', fontFamilies);
+console.log("Font-Family Names:", fontFamilies);

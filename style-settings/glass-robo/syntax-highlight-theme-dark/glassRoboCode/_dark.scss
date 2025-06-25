@@ -35,8 +35,8 @@ body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-bg {
 body.glassRoboCode .markdown-rendered pre {
   border: var(--code-border);
 }
-body.glassRoboCode :not(pre) > code[class*='language-'],
-body.glassRoboCode pre[class*='language-'] {
+body.glassRoboCode :not(pre) > code[class*="language-"],
+body.glassRoboCode pre[class*="language-"] {
   background-color: rgba(13, 22, 29, 0.568627451);
 }
 body.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-begin-bg {

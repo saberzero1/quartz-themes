@@ -1,4 +1,4 @@
-[data-type='markdown'] .metadata-container:not(.is-collapsed) {
+[data-type="markdown"] .metadata-container:not(.is-collapsed) {
   padding: 15px 20px;
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
@@ -16,9 +16,9 @@
   background-color: transparent;
 }
 .metadata-container:hover .metadata-properties-title::before {
-  content: '+ ';
+  content: "+ ";
 }
 .metadata-container:not(.is-collapsed):hover
   .metadata-properties-title::before {
-  content: '- ';
+  content: "- ";
 }

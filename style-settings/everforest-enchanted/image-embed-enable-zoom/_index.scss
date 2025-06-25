@@ -36,7 +36,7 @@ body {
       background-color: var(--background-primary);
     }
     &:active::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: var(--color-base-00);
       width: 100%;

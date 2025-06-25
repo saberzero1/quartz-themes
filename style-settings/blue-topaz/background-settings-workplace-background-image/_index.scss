@@ -19,21 +19,21 @@ body.color-scheme-options-simplicity-topaz
   .workspace-tab-header-container-inner {
   padding-bottom: 1px;
 }
-body div[data-type='thino_view'] .menu-btns-popup,
-body div[data-type='thino_view'] .selector-wrapper > .items-wrapper {
+body div[data-type="thino_view"] .menu-btns-popup,
+body div[data-type="thino_view"] .selector-wrapper > .items-wrapper {
   background-color: var(--bg-color-settings-3);
   backdrop-filter: blur(10px);
 }
 body:is(.custom-thino-background, .thino-background-color)
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .view-content,
 body:is(.custom-thino-background, .thino-background-color)
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .view-header {
   background: var(--bg-color-settings-0-1);
 }
 body .webpage-container::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -37px;
@@ -92,7 +92,7 @@ body.is-mobile:not(
   opacity: 0.8;
 }
 body .workspace::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -37px;

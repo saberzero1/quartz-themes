@@ -8,7 +8,7 @@ body.encore-translucency.encore-bg-lava {
 body.encore-translucency.encore-bg-lava::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   animation: fade-in 60s linear infinite alternate;
   background-image:
     radial-gradient(transparent, #360700),

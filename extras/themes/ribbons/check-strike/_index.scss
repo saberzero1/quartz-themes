@@ -1,6 +1,6 @@
 .check-strike
   .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task]:not([data-task=' ']),
+  .HyperMD-task-line[data-task]:not([data-task=" "]),
 .check-strike .markdown-preview-view ul > li.task-list-item.is-checked,
 .check-strike .markdown-preview-view ol > li.task-list-item.is-checked {
   --checklist-done-decoration: line-through 2px;

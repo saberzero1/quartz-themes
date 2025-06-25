@@ -102,7 +102,7 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
   .workspace-tabs.mod-top
   .workspace-tab-header-container:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: calc(100% - var(--hovering-trigger-size));
   left: 0;

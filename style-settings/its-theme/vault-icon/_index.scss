@@ -1,13 +1,13 @@
 :root,
 body {
-  --image: '';
+  --image: "";
   --width: 32px;
   --height: 28px;
   --padding: 10px;
 }
 .mod-left .workspace-drawer-header::before,
 .workspace-sidedock-vault-profile::before {
-  content: '';
+  content: "";
   background-image: var(--image);
   background-size: contain;
   background-repeat: no-repeat;

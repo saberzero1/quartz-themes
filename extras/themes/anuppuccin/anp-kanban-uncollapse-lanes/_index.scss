@@ -3,7 +3,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -13,12 +13,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0']) {
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) {
   width: 44px !important;
 }
 
@@ -27,7 +27,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -38,12 +38,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__lane-header-wrapper {
   border-width: 0;
   gap: 10px;
@@ -58,7 +58,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -69,12 +69,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__lane-grip {
   transform: rotate(-90deg);
 }
@@ -84,7 +84,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -95,12 +95,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__lane-settings-button-wrapper {
   display: none;
 }
@@ -110,7 +110,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -121,12 +121,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__item-wrapper {
   display: none;
 }
@@ -136,7 +136,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -147,12 +147,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__placeholder:only-child {
   display: none;
 }
@@ -162,7 +162,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -173,12 +173,12 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__new-item-button {
   font-size: 0;
 }
@@ -188,7 +188,7 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
@@ -199,24 +199,24 @@
   )
   .kanban-plugin__lane-wrapper:not(
     :has(
-      .kanban-plugin__lane[data-count='0'],
+      .kanban-plugin__lane[data-count="0"],
       .kanban-plugin__item:not(.is-search-miss),
       .kanban-plugin__item-form
     )
   )
-  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count='0'])
+  ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"])
   .kanban-plugin__item-button-plus {
   font-size: 0.875rem;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper {
   width: 44px !important;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__lane-header-wrapper {
   border-width: 0;
@@ -228,42 +228,42 @@
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__lane-grip {
   transform: rotate(-90deg);
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__lane-settings-button-wrapper {
   display: none;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__item-wrapper {
   display: none;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__placeholder:only-child {
   display: none;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__new-item-button {
   font-size: 0;
 }
 
 .anp-kanban-collapse-lanes.anp-kanban-uncollapse-lanes
-  .kanban-plugin__drag-container[style*='width: 54px;']
+  .kanban-plugin__drag-container[style*="width: 54px;"]
   .kanban-plugin__lane-wrapper
   .kanban-plugin__item-button-plus {
   font-size: 0.875rem;

@@ -108,7 +108,7 @@ body.aura-card-layout:not(.aura-colorful-frame):not(
 
 .aura-card-layout:not(.aura-workspace-background)
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--tab-container-background);
   box-shadow: none;
   border-width: 0;
@@ -116,7 +116,7 @@ body.aura-card-layout:not(.aura-colorful-frame):not(
 
 .aura-card-layout-fileexplorer
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--card-background-color);
   border-width: 1px;
 }

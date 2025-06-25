@@ -629,7 +629,7 @@ button:hover {
   .canvas-wrapper:not(.mod-readonly)
   .canvas-node:not(.is-editing)
   .canvas-node-container:before {
-  content: '';
+  content: "";
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
@@ -647,7 +647,7 @@ button:hover {
   .canvas-wrapper:not(.mod-readonly)
   .canvas-node:not(.is-editing)
   .canvas-node-container:before {
-  content: '';
+  content: "";
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
@@ -673,8 +673,8 @@ button:hover {
 }
 
 /*HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used*/
-div[data-path$='000_attachments_000'],
-div[data-path$='000_attachments_000'] + div.nav-folder-children {
+div[data-path$="000_attachments_000"],
+div[data-path$="000_attachments_000"] + div.nav-folder-children {
   display: none;
 }
 /************************************************************************************************************************************/
@@ -700,7 +700,7 @@ img {
   border-radius: 10px;
 }
 
-img[alt='c'] {
+img[alt="c"] {
   mix-blend-mode: multiply !important;
   filter: grayscale(100%) !important;
 }
@@ -1078,7 +1078,7 @@ mjx-math {
   font-size: 1.1em;
 }
 
-.callout-icon:not(.el-div .callout[data-callout='c'] .callout-icon) {
+.callout-icon:not(.el-div .callout[data-callout="c"] .callout-icon) {
   display: none;
 }
 
@@ -1089,7 +1089,7 @@ mjx-math {
 }
 /*********************************************/
 
-.markdown-reading-view:not(.is-mobile) .callout[data-callout='c'] {
+.markdown-reading-view:not(.is-mobile) .callout[data-callout="c"] {
   position: absolute;
   translate: 1035px;
   max-width: 400px;
@@ -1099,7 +1099,7 @@ mjx-math {
   font-size: 0.8em;
 }
 
-.el-div .callout[data-callout='c'] .callout-icon .svg-icon:not(.is-mobile) {
+.el-div .callout[data-callout="c"] .callout-icon .svg-icon:not(.is-mobile) {
   color: var(--accent-color-light10);
   translate: -40px -2px;
   position: absolute;
@@ -1108,25 +1108,25 @@ mjx-math {
 
 /*********************************************/
 /*CUSTOM CALLOUT COLORS*/
-.callout[data-callout='red'] {
+.callout[data-callout="red"] {
   background-color: rgba(255, 0, 0, 0.101);
 }
-.callout[data-callout='yellow'] {
+.callout[data-callout="yellow"] {
   background-color: rgba(238, 255, 0, 0.101);
 }
-.callout[data-callout='lime'] {
+.callout[data-callout="lime"] {
   background-color: rgba(0, 255, 60, 0.101);
 }
-.callout[data-callout='green'] {
+.callout[data-callout="green"] {
   background-color: rgba(0, 255, 0, 0.101);
 }
-.callout[data-callout='aqua'] {
+.callout[data-callout="aqua"] {
   background-color: rgba(0, 255, 225, 0.101);
 }
-.callout[data-callout='blue'] {
+.callout[data-callout="blue"] {
   background-color: rgba(30, 0, 255, 0.101);
 }
-.callout[data-callout='purple'] {
+.callout[data-callout="purple"] {
   background-color: rgba(221, 0, 255, 0.101);
 }
 /*********************************************/

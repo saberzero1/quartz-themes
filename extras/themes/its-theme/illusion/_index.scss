@@ -1,14 +1,14 @@
 .illusion
-  .callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='left'] {
+  .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="left"] {
   margin-left: -30px;
 }
 
 .illusion
-  .callout[data-callout~='infobox'].is-collapsed.is-collapsed[data-callout-metadata~='right'] {
+  .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="right"] {
   margin-right: -30px;
 }
 
-.illusion .callout[data-callout~='infobox'] [data-heading] {
+.illusion .callout[data-callout~="infobox"] [data-heading] {
   --illusion-box-shadow: none;
   --header-shadow: var(--illusion-box-shadow);
   --h1-shadow: var(--header-shadow);
@@ -75,7 +75,7 @@
 .illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 .illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
@@ -83,20 +83,20 @@
 .illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 .illusion
   :is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder,
 .illusion:is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 .illusion:is(.markdown-preview-view, .is-live-preview)
   :is(h1, h2, h3, h4, h5, h6)[data-heading]
   .cm-foldPlaceholder,
 .illusion:is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
-  [class*='cm-formatting'],
+  [class*="cm-formatting"],
 .illusion:is(.markdown-preview-view, .is-live-preview)
   :is(.is-live-preview .HyperMD-header)
   .cm-foldPlaceholder {

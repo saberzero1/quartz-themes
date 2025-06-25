@@ -89,7 +89,7 @@ body {
   --callout-color-light-purple: 233, 182, 245;
   --callout-color-grey: 158, 158, 158;
 
-  --callout-icon-mt: '';
+  --callout-icon-mt: "";
 }
 
 .theme-light {
@@ -331,16 +331,16 @@ body.fancy-code .cm-line.HyperMD-codeblock .code-block-flair {
   top: 0;
 }
 
-body.fancy-code .markdown-reading-view pre[class*='language-']::before {
+body.fancy-code .markdown-reading-view pre[class*="language-"]::before {
   display: block;
-  content: ' ';
+  content: " ";
   line-height: 1.5em;
   background-color: var(--code-block-alt-bg);
   border-top-right-radius: calc(var(--codeblock-roundness) * 0.8);
   border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
 }
 
-body.fancy-code pre[class*='language-']::after {
+body.fancy-code pre[class*="language-"]::after {
   content: attr(class);
   font-size: 0.9rem;
   text-shadow: none;
@@ -382,456 +382,456 @@ body.fancy-code .markdown-preview-view pre code {
 
 /* Info */
 
-.callout[data-callout='info-pink'] {
+.callout[data-callout="info-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-blue'] {
+.callout[data-callout="info-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-green'] {
+.callout[data-callout="info-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-yellow'] {
+.callout[data-callout="info-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-red'] {
+.callout[data-callout="info-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-purple'] {
+.callout[data-callout="info-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-orange'] {
+.callout[data-callout="info-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-light-blue'] {
+.callout[data-callout="info-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-cyan'] {
+.callout[data-callout="info-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-light-purple'] {
+.callout[data-callout="info-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='info-grey'] {
+.callout[data-callout="info-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: lucide-info;
 }
 
 /* Text */
 
-.callout[data-callout='text-pink'] {
+.callout[data-callout="text-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-blue'] {
+.callout[data-callout="text-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-green'] {
+.callout[data-callout="text-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-yellow'] {
+.callout[data-callout="text-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-red'] {
+.callout[data-callout="text-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-purple'] {
+.callout[data-callout="text-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-orange'] {
+.callout[data-callout="text-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-light-blue'] {
+.callout[data-callout="text-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-cyan'] {
+.callout[data-callout="text-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-light-purple'] {
+.callout[data-callout="text-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: lucide-text;
 }
 
-.callout[data-callout='text-grey'] {
+.callout[data-callout="text-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: lucide-text;
 }
 
 /* Warning */
 
-.callout[data-callout='warn-pink'] {
+.callout[data-callout="warn-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-blue'] {
+.callout[data-callout="warn-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-green'] {
+.callout[data-callout="warn-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-yellow'] {
+.callout[data-callout="warn-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-red'] {
+.callout[data-callout="warn-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-purple'] {
+.callout[data-callout="warn-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-orange'] {
+.callout[data-callout="warn-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-light-blue'] {
+.callout[data-callout="warn-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-cyan'] {
+.callout[data-callout="warn-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-light-purple'] {
+.callout[data-callout="warn-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: lucide-triangle-alert;
 }
 
-.callout[data-callout='warn-grey'] {
+.callout[data-callout="warn-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: lucide-triangle-alert;
 }
 
 /* Custom 1 */
 
-.callout[data-callout='c1-pink'] {
+.callout[data-callout="c1-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-blue'] {
+.callout[data-callout="c1-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-green'] {
+.callout[data-callout="c1-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-yellow'] {
+.callout[data-callout="c1-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-red'] {
+.callout[data-callout="c1-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-purple'] {
+.callout[data-callout="c1-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-orange'] {
+.callout[data-callout="c1-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-light-blue'] {
+.callout[data-callout="c1-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-cyan'] {
+.callout[data-callout="c1-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-light-purple'] {
+.callout[data-callout="c1-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: var(--callout-icon-c1);
 }
 
-.callout[data-callout='c1-grey'] {
+.callout[data-callout="c1-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: var(--callout-icon-c1);
 }
 
 /* Custom 2 */
 
-.callout[data-callout='c2-pink'] {
+.callout[data-callout="c2-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-blue'] {
+.callout[data-callout="c2-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-green'] {
+.callout[data-callout="c2-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-yellow'] {
+.callout[data-callout="c2-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-red'] {
+.callout[data-callout="c2-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-purple'] {
+.callout[data-callout="c2-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-orange'] {
+.callout[data-callout="c2-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-light-blue'] {
+.callout[data-callout="c2-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-cyan'] {
+.callout[data-callout="c2-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-light-purple'] {
+.callout[data-callout="c2-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: var(--callout-icon-c2);
 }
 
-.callout[data-callout='c2-grey'] {
+.callout[data-callout="c2-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: var(--callout-icon-c2);
 }
 
 /* Custom 3 */
 
-.callout[data-callout='c3-pink'] {
+.callout[data-callout="c3-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-blue'] {
+.callout[data-callout="c3-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-green'] {
+.callout[data-callout="c3-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-yellow'] {
+.callout[data-callout="c3-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-red'] {
+.callout[data-callout="c3-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-purple'] {
+.callout[data-callout="c3-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-orange'] {
+.callout[data-callout="c3-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-light-blue'] {
+.callout[data-callout="c3-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-cyan'] {
+.callout[data-callout="c3-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-light-purple'] {
+.callout[data-callout="c3-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: var(--callout-icon-c3);
 }
 
-.callout[data-callout='c3-grey'] {
+.callout[data-callout="c3-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: var(--callout-icon-c3);
 }
 
 /* Custom 4 */
 
-.callout[data-callout='c4-pink'] {
+.callout[data-callout="c4-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-blue'] {
+.callout[data-callout="c4-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-green'] {
+.callout[data-callout="c4-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-yellow'] {
+.callout[data-callout="c4-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-red'] {
+.callout[data-callout="c4-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-purple'] {
+.callout[data-callout="c4-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-orange'] {
+.callout[data-callout="c4-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-light-blue'] {
+.callout[data-callout="c4-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-cyan'] {
+.callout[data-callout="c4-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-light-purple'] {
+.callout[data-callout="c4-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: var(--callout-icon-c4);
 }
 
-.callout[data-callout='c4-grey'] {
+.callout[data-callout="c4-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: var(--callout-icon-c4);
 }
 
 /* Empty */
 
-.callout[data-callout='mt-pink'] {
+.callout[data-callout="mt-pink"] {
   --callout-color: var(--callout-color-pink);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-blue'] {
+.callout[data-callout="mt-blue"] {
   --callout-color: var(--callout-color-blue);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-green'] {
+.callout[data-callout="mt-green"] {
   --callout-color: var(--callout-color-green);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-yellow'] {
+.callout[data-callout="mt-yellow"] {
   --callout-color: var(--callout-color-yellow);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-red'] {
+.callout[data-callout="mt-red"] {
   --callout-color: var(--callout-color-red);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-purple'] {
+.callout[data-callout="mt-purple"] {
   --callout-color: var(--callout-color-purple);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-orange'] {
+.callout[data-callout="mt-orange"] {
   --callout-color: var(--callout-color-orange);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-light-blue'] {
+.callout[data-callout="mt-light-blue"] {
   --callout-color: var(--callout-color-light-blue);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-cyan'] {
+.callout[data-callout="mt-cyan"] {
   --callout-color: var(--callout-color-cyan);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-light-purple'] {
+.callout[data-callout="mt-light-purple"] {
   --callout-color: var(--callout-color-light-purple);
   --callout-icon: var(--callout-icon-mt);
 }
 
-.callout[data-callout='mt-grey'] {
+.callout[data-callout="mt-grey"] {
   --callout-color: var(--callout-color-grey);
   --callout-icon: var(--callout-icon-mt);
 }

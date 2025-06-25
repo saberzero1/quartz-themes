@@ -1,9 +1,9 @@
 .ss-image-caption
   .image-embed[alt]:not(
-    [alt$='.png'],
-    [alt$='.jpg'],
-    [alt$='.jpeg'],
-    [alt$='.tiff']
+    [alt$=".png"],
+    [alt$=".jpg"],
+    [alt$=".jpeg"],
+    [alt$=".tiff"]
   )::after {
   display: block;
   content: attr(alt);

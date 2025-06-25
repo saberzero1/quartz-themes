@@ -276,12 +276,12 @@ ______  ___  ______ _   __
 
 :root {
   --default-font:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Display', SF Pro Text,
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text,
     Liberation Sans, Inter;
   --editor-font:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Display', SF Pro Text,
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text,
     Liberation Sans, Inter;
-  --font-monospace: 'JetBrains Mono', Liberation Mono, Monospace, Courier New;
+  --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
 }
@@ -301,10 +301,10 @@ ______  ___  ______ _   __
   font-family: var(--default-font);
 }
 
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'],
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }
@@ -477,7 +477,7 @@ blockquote {
 /* changes dropdown color, somewhere in that url: color: deep-orange/h3/ed5b0f */
 .dropdown {
   cursor: pointer;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url("data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 th {
@@ -1106,7 +1106,7 @@ div.HyperMD-task-line span.cm-indent::before,
 .markdown-source-view.mod-cm6 .cm-indent::before,
 .markdown-rendered.show-indentation-guide li > ul::before,
 .markdown-rendered.show-indentation-guide li > ol::before {
-  content: '';
+  content: "";
   border: none;
 }
 
@@ -1116,12 +1116,12 @@ div.HyperMD-task-line span.cm-indent::before,
 }*/
 
 /* fix for annoying bright links when checked */
-li.task-list-item[data-task='x'] a.internal-link,
+li.task-list-item[data-task="x"] a.internal-link,
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='x']
+  .HyperMD-task-line[data-task="x"]
   span.cm-underline,
 .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='X']
+  .HyperMD-task-line[data-task="X"]
   span.cm-underline {
   color: var(--code-orange);
   text-decoration-color: var(--text-faint);
@@ -1245,7 +1245,7 @@ body {
   margin-inline-start: 0.25em;
 }
 
-[class*='HyperMD-list-line'] > .cm-fold-indicator {
+[class*="HyperMD-list-line"] > .cm-fold-indicator {
   position: absolute;
   translate: -0.5em;
 }
@@ -1253,8 +1253,8 @@ body {
 /* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
 /* this kind of visual fix isn't feasible for checkboxes */
 /* this fix is unnecessary for and does not affect ordered/numbered lists */
-.HyperMD-list-line[class*='HyperMD-list-line-'].cm-line
-  > span.cm-formatting.cm-formatting-list-ul[class*='cm-list-']:not(
+.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line
+  > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(
     :has(span.list-bullet)
   ) {
   display: inline-block;

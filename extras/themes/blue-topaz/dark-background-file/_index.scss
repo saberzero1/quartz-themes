@@ -6,7 +6,7 @@ body.dark-background-file .nav-file-title.is-active {
 body.dark-background-file:not(.remove-file-icons):not(
     .bt-toggle-colorful-folder.folder-style-change-options-colorful
   )
-  .nav-file-title.is-active[data-path$='.md']
+  .nav-file-title.is-active[data-path$=".md"]
   > .nav-file-title-content::before {
   background-color: var(--white);
 }

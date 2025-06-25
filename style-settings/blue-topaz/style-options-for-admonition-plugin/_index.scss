@@ -482,10 +482,10 @@ body .admonition-flex .admonition-content > div {
   flex: 1;
   margin: 0 0.625rem;
 }
-body .admonition-flex .admonition-content[data-embed-type='image'] p {
+body .admonition-flex .admonition-content[data-embed-type="image"] p {
   align-self: baseline;
 }
-body .admonition-flex .admonition-content[data-embed-type='image'] {
+body .admonition-flex .admonition-content[data-embed-type="image"] {
   justify-content: space-around;
 }
 body .admonition-table {
@@ -576,7 +576,7 @@ body
   )
   *.admonition-title-content {
   color: white;
-  font-family: '方正书宋_GBK', var(--font-text);
+  font-family: "方正书宋_GBK", var(--font-text);
   font-size: 1.1em;
 }
 body
@@ -627,7 +627,7 @@ body
   )
   p {
   text-indent: 0;
-  font-family: '方正楷体_GBK', var(--font-text) !important;
+  font-family: "方正楷体_GBK", var(--font-text) !important;
   font-size: 1.1em;
 }
 body .admonition-hibox .admonition-content-holder {

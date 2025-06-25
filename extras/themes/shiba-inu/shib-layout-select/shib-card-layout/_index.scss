@@ -123,13 +123,13 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
 .shib-card-shadows .workspace-split .workspace-leaf-content,
 .shib-card-shadows.shib-card-layout-fileexplorer
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
 .shib-card-layout
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--tab-container-background);
   box-shadow: none;
   border-width: 0;
@@ -137,7 +137,7 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
 
 .shib-card-layout-fileexplorer
   .workspace-split
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--card-foreground-color);
   border-width: 1px;
 }

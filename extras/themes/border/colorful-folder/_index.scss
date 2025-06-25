@@ -1,5 +1,5 @@
 body:not(.file-icon-remove).colorful-folder
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .tree-item-icon.collapse-icon {
   background-color: var(--colorful-folder-color);
 }

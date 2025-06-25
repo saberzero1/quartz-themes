@@ -143,11 +143,11 @@ body.tag-pill-outlined
 body.tag-pill-outlined
   .cm-s-obsidian
   span.cm-hashtag-begin:nth-child(n)
-  + span.cm-hashtag:not([class*='-end']),
+  + span.cm-hashtag:not([class*="-end"]),
 body.tag-pill-outlined
   .cm-s-obsidian
   span.cm-hashtag-begin:nth-child(n)
-  + .cm-hashtag.cm-meta:not([class*='-end']) {
+  + .cm-hashtag.cm-meta:not([class*="-end"]) {
   border-left: none;
   border-right: none;
 }
@@ -161,7 +161,7 @@ body.tag-pill-outlined
 }
 
 body.tag-pill-outlined
-  .cm-s-obsidian:not([class='markdown-source-view cm-s-obsidian mod-cm6'])
+  .cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"])
   span.cm-hashtag.cm-meta.cm-hashtag-end:is(
     .cm-tag-important,
     .cm-tag-complete,

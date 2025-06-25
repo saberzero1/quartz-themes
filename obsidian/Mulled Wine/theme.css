@@ -1,6 +1,6 @@
 span.view-header-breadcrumb,
 div.view-header-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
 
 .markdown-source-view,
@@ -13,25 +13,25 @@ div.view-header-title {
 
 a.tag,
 .cm-hashtag {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   text-transform: lowercase;
   font-size: 12px;
 }
 
 .nav-file-title,
 .nav-folder-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   font-size: 14px;
 }
 
 body {
   --inline-title-color: #beb4da;
-  --inline-title-font: 'yu gothic ui', sans-serif;
+  --inline-title-font: "yu gothic ui", sans-serif;
   --inline-title-size: 1.5em;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-weight: 400;
 
-  --font-text: 'yu gothic', yugothic, sans-serif;
+  --font-text: "yu gothic", yugothic, sans-serif;
   --font-text-size: 14px !important;
 }
 
@@ -40,11 +40,11 @@ body {
 }
 
 .body {
-  font-family: 'yu gothic', yugothic, sans-serif;
+  font-family: "yu gothic", yugothic, sans-serif;
 }
 
 .workspace-tab-header-inner-title {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   text-transform: uppercase;
 }
 
@@ -175,7 +175,7 @@ body {
 .callout-title {
   color: #70c8d6;
   font-size: 14px;
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
 }
 
 .callout > .callout-content p:last-child {
@@ -197,7 +197,7 @@ body {
 .markdown-preview-section > div h4,
 .markdown-preview-section > div h5,
 .markdown-preview-section > div h6 {
-  font-family: 'yu gothic ui', sans-serif;
+  font-family: "yu gothic ui", sans-serif;
   margin-top: 40px;
   font-weight: normal;
   color: #ebaeca !important;

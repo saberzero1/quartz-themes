@@ -22,6 +22,6 @@ body.encore-translucency.encore-bg-chromatic {
 body.encore-translucency.encore-bg-chromatic::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
