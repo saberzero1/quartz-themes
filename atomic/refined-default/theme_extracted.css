@@ -1762,7 +1762,6 @@ svg.svg-icon {
   --table-border-color: #dadada;
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1837,7 +1836,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --table-background: #ffffff;
   --table-border-color: #222222;
-  color-scheme: light;
 }
 
 .mod-sidedock {

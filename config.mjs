@@ -5,6 +5,7 @@ import {
 } from "./util/util.mjs";
 
 export const testMode = false;
+export const staticMode = true;
 export const themeToTest = "AnuPpuccin";
 
 export const themes = getValueFromDictionary(

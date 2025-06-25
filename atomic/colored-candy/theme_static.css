@@ -2672,7 +2672,6 @@ body {
   --text-faint: hsl(258, 20%, 47%);
   --text-muted: hsl(258, 15%, 33%);
   --text-normal: hsl(0, 0%, 13%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2786,12 +2785,10 @@ body {
   --text-muted: hsl(258, 15%, 68%);
   --text-normal: hsl(0, 0%, 85%);
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

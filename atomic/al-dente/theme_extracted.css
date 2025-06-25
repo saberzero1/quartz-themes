@@ -1849,7 +1849,6 @@ svg.svg-icon {
   --text-nav-selected: var(--color-light);
   --text-normal: var(--color-light);
   --text-selection: #9a71aa38;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1938,7 +1937,6 @@ svg.svg-icon {
   --text-nav-selected: var(--color-dark);
   --text-normal: var(--color-dark);
   --text-selection: var(--color-purple-lightest);
-  color-scheme: light;
 }
 
 .mod-sidedock {

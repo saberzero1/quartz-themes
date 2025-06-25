@@ -1829,7 +1829,6 @@ svg.svg-icon {
   --text-extreme: #fff;
   --text-normal: #dcdcdc;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1912,7 +1911,6 @@ svg.svg-icon {
   --tab-background-active: rgba(0, 0, 0, 0.08);
   --text-extreme: #000;
   --text-normal: #454545;
-  color-scheme: light;
 }
 
 .mod-sidedock {

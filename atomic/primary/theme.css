@@ -6293,7 +6293,6 @@ body {
   --yaml-keyword-color: var(--color-l-yellow-30);
   --yaml-number-color: var(--color-l-red-10);
   --yaml-string-color: var(--color-l-yellow-30);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -7468,12 +7467,10 @@ body {
   --yaml-keyword-color: var(--color-d-yellow-30);
   --yaml-number-color: var(--color-d-red-20);
   --yaml-string-color: var(--color-d-yellow-30);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

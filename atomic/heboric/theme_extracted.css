@@ -1881,7 +1881,6 @@ svg.svg-icon {
   --text-selection: hsl(0, 40%, 50%);
   --titlebar-background: var(--color-base-00);
   --titlebar-background-focused: var(--color-base-00);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1984,7 +1983,6 @@ svg.svg-icon {
   --text-selection: var(--color-accent);
   --titlebar-background: var(--color-base-20);
   --titlebar-background-focused: var(--color-base-20);
-  color-scheme: light;
 }
 
 .mod-sidedock {

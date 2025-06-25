@@ -2532,7 +2532,6 @@ body {
   --tab-background-active: rgba(0, 0, 0, 0.08);
   --text-extreme: #000;
   --text-normal: #454545;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2623,12 +2622,10 @@ body {
   --text-extreme: #fff;
   --text-normal: #dcdcdc;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

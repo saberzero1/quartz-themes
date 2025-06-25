@@ -2487,7 +2487,6 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tab-background-active: rgb(247, 247, 247);
   --text-selection: rgb(185, 233, 249);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2567,12 +2566,10 @@ body {
   --tag-color: rgb(204, 204, 204);
   --text-accent: hsl(calc(196 - 3), calc(61.5% * 1.02), calc(20.4% * 1.15));
   --text-selection: rgb(20, 68, 84);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

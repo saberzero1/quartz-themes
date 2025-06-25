@@ -1886,7 +1886,6 @@ svg.svg-icon {
   --text-selection: rgba(var(--cpt-accent), 0.1);
   --titlebar-background: rgb(var(--cpt-mantle));
   --titlebar-background-focused: rgb(var(--cpt-crust));
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1994,7 +1993,6 @@ svg.svg-icon {
   --text-selection: rgba(var(--cpt-accent), 0.1);
   --titlebar-background: rgb(var(--cpt-mantle));
   --titlebar-background-focused: rgb(var(--cpt-crust));
-  color-scheme: light;
 }
 
 .mod-sidedock {

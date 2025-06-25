@@ -2560,7 +2560,6 @@ body {
   --text-faint: #808080;
   --text-muted: #1a1a1a;
   --text-selection: DarkGray;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2647,12 +2646,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-selection: rgba(30, 144, 255, 0.4);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

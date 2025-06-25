@@ -2016,7 +2016,6 @@ svg.svg-icon {
   --text-normal: var(--light-text);
   --text-selection: rgba(var(--neutral-red-x), 0.6);
   --titlebar-text-color-focused: var(--neutral-red);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2142,7 +2141,6 @@ svg.svg-icon {
   --text-normal: var(--dark-text);
   --text-selection: rgba(var(--neutral-red-x), 0.6);
   --titlebar-text-color-focused: var(--bright-red);
-  color-scheme: light;
 }
 
 .mod-sidedock {

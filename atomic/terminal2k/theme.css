@@ -2589,7 +2589,6 @@ body {
   --text-accent: var(--green-bright);
   --text-normal: var(--black-light-light);
   --underline-line-color: var(--green-bright);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2703,12 +2702,10 @@ body {
   --text-normal: var(--white);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --underline-line-color: var(--green-bright);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

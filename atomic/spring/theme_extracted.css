@@ -1830,7 +1830,6 @@ svg.svg-icon {
   --tab-text-color-focused-active-current: var(--green);
   --text-accent: var(--color-accent-1);
   --text-selection: var(--code-tag);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1932,7 +1931,6 @@ svg.svg-icon {
   --tab-text-color-active: var(--dark-green);
   --tab-text-color-focused-active-current: var(--dark-green);
   --text-selection: var(--dark-yellow);
-  color-scheme: light;
 }
 
 .mod-sidedock {

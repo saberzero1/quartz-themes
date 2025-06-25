@@ -2646,7 +2646,6 @@ svg.svg-icon {
   --vault-name-font-size: var(--font-ui-medium);
   --vault-name-font-weight: var(--font-medium);
   --vault-profile-color: var(--nav-item-color);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2968,7 +2967,6 @@ svg.svg-icon {
   --vault-name-font-size: var(--font-ui-medium);
   --vault-name-font-weight: var(--font-medium);
   --vault-profile-color: var(--nav-item-color);
-  color-scheme: light;
 }
 
 .mod-sidedock {

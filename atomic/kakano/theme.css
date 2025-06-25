@@ -3599,7 +3599,6 @@ body {
         calc(var(--base-l) * 0.5),
         0.05
       );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3868,12 +3867,10 @@ body {
         calc(var(--base-l) * 0.1),
         0.15
       );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

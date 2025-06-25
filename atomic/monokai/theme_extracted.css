@@ -1864,7 +1864,6 @@ svg.svg-icon {
   --text-selection: var(--blue);
   --white: #ffffff;
   --yellow: #fad872;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2004,7 +2003,6 @@ svg.svg-icon {
   --text-selection: var(--blue);
   --white: #ffffff;
   --yellow: #fad872;
-  color-scheme: light;
 }
 
 .mod-sidedock {

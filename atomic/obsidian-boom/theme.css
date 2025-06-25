@@ -2483,7 +2483,6 @@ body {
   --side-dock-bg: #182026;
   --side-dock-bg-hover: #202b33;
   --text-color: #202b33;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2556,12 +2555,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

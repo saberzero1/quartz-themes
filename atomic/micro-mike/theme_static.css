@@ -3665,7 +3665,6 @@ body {
   --yellow-hover: hsl(37.4, calc(1 * 81.5%), 48.6%);
   --yellow-inverted: hsl(38.2, calc(1 * 100%), 97.8%);
   --yellow-inverted-active: hsl(37.3, calc(1 * 95.7%), 90.8%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3916,12 +3915,10 @@ body {
   --yellow-hover: hsl(37.4, calc(1 * 81.5%), 48.6%);
   --yellow-inverted: hsl(38.2, calc(1 * 100%), 97.8%);
   --yellow-inverted-active: hsl(37.3, calc(1 * 95.7%), 90.8%);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

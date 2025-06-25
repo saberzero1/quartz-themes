@@ -2510,7 +2510,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2582,12 +2581,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(175 - 3), calc(57% * 1.02), calc(33% * 1.15));
   --text-selection: hsla(175, 57%, 33%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

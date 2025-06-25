@@ -2783,7 +2783,6 @@ body {
   --text-selection: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%));
   --translucency: 0.85;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2975,12 +2974,10 @@ body {
   --text-selection: rgba(50, 50, 50, 1);
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 3%));
   --translucency: 0.95;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
   margin: 4% 0% 4% 0%;
   padding: 0;

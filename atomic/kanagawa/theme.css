@@ -2668,7 +2668,6 @@ body {
   --text-title-h6: var(--lotusBlue4);
   --vim-cursor-backgroung: var(--lotusGray);
   --vim-cursor-color: var(--lotusInk1);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2773,12 +2772,10 @@ body {
   --text-title-h6: var(--neutral-blue);
   --vim-cursor-backgroung: var(--fujiWhite);
   --vim-cursor-color: var(--sumiInk1);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

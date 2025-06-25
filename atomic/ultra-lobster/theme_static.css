@@ -2653,7 +2653,6 @@ body {
   --text-highlight-bg: rgb(255 208 0 / 40%);
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: #cdcdcd;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2757,12 +2756,10 @@ body {
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: #f5f3f1;
   --text-selection: hsla(316, 64%, 57%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -24972,7 +24969,6 @@ input.mobile-vault-chooser-field-input {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(316, 64%, 57%, 0.25);
-  color-scheme: dark;
 }
 
 .ulu-soft-l.theme-light {
@@ -25028,7 +25024,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-soft-d.theme-dark {
@@ -25078,7 +25073,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-arch-l.theme-light {
@@ -25132,7 +25126,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-arch-d.theme-dark {
@@ -25175,7 +25168,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-shark-l.theme-light {
@@ -25231,7 +25223,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-shark-d.theme-dark {
@@ -25286,7 +25277,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-shark-d.theme-dark
@@ -25370,7 +25360,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-min-d.theme-dark {
@@ -25405,7 +25394,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-light-l.theme-light {
@@ -25456,7 +25444,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-light.ulu-solar-lt {
@@ -25699,7 +25686,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-green-d.theme-dark {
@@ -25749,7 +25735,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-blue-l.theme-light {
@@ -25776,7 +25761,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-blue-d.theme-dark {
@@ -25801,7 +25785,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-purple-l.theme-light {
@@ -25827,7 +25810,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-purple-d.theme-dark {
@@ -25852,7 +25834,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-light.ulu-gruvbox-lt {
@@ -26088,7 +26069,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-dark.ulu-obplus-dt {
@@ -26140,7 +26120,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-blueprint-d.theme-dark {
@@ -26190,7 +26169,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-control-d.theme-dark {
@@ -26244,7 +26222,6 @@ input.mobile-vault-chooser-field-input {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: #f5f3f1;
-  color-scheme: dark;
 }
 
 .ulu-end-d.theme-dark {
@@ -26271,7 +26248,6 @@ input.mobile-vault-chooser-field-input {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: #f5f3f1;
-  color-scheme: dark;
 }
 
 .theme-dark.ulu-dracula-dt {
@@ -26420,7 +26396,6 @@ input.mobile-vault-chooser-field-input {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: #f5f3f1;
-  color-scheme: dark;
 }
 
 .ulu-gradient-d.theme-dark {
@@ -26459,7 +26434,6 @@ input.mobile-vault-chooser-field-input {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: #f5f3f1;
-  color-scheme: dark;
 }
 
 .ulu-gradient-d.theme-dark .modal:not(.is-mobile) {

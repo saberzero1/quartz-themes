@@ -1794,7 +1794,6 @@ svg.svg-icon {
   --titlebar-background-focused: var(--background-secondary);
   background-color: #171717;
   color: black;
-  color-scheme: dark;
   font-weight: bold;
 }
 
@@ -1883,7 +1882,6 @@ svg.svg-icon {
   background: linear-gradient(to right, #83c092, #dbbc7f);
   background-color: #f7f7f7;
   border-radius: 16px;
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2746,7 +2746,6 @@ body {
   --text-highlight-bg: hsl(210, 34%, 63%);
   --text-muted: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%);
   --text-normal: color-mix(in srgb, hsl(210, 34%, 63%), #000 45%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2877,12 +2876,10 @@ body {
   --text-muted: color-mix(in srgb, hsl(210, 34%, 63%), #fff 40%);
   --text-normal: color-mix(in srgb, hsl(210, 34%, 63%), #fff 65%);
   --text-selection: hsla(210, 34%, 63%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -1863,7 +1863,6 @@ svg.svg-icon {
   --text-normal: var(--main-bg);
   --text-selection: #171413;
   --text-success: #ccff00;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1973,7 +1972,6 @@ svg.svg-icon {
   --text-normal: var(--text);
   --text-selection: var(--dark-beige);
   --text-success: var(--green);
-  color-scheme: light;
 }
 
 .mod-sidedock {

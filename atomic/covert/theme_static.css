@@ -2675,7 +2675,6 @@ body {
   --text-normal: rgb(45, 45, 46);
   --text-selection: rgba(97, 96, 96, 0.6);
   --titlebar-text-color-focused: rgb(97, 96, 96);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2802,12 +2801,10 @@ body {
   --text-normal: rgb(97, 96, 96);
   --text-selection: rgba(97, 96, 96, 0.6);
   --titlebar-text-color-focused: rgb(97, 96, 96);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

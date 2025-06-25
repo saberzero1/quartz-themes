@@ -2612,7 +2612,6 @@ body {
   --tertiary: #4c5f7c;
   --tertiary-container: #d4e3ff;
   --upper-accent: var(--primary);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2717,12 +2716,10 @@ body {
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --upper-accent: var(--on-secondary);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

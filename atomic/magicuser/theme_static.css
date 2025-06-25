@@ -2751,7 +2751,6 @@ body {
   --tab-divider-color: #003364;
   --text-muted: #353535;
   --text-normal: #000;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2880,12 +2879,10 @@ body {
   --tab-divider-color: #003364;
   --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
   --text-selection: hsla(254, 80%, 68%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

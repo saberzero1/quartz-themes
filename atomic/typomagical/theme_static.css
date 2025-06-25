@@ -2485,7 +2485,6 @@ body {
   --tag-color-hover: hsl(219, 37%, 36%);
   --title-gradient-bottom: color-mix(in hsl, hsl(250, 65%, 50%), black);
   --title-gradient-top: hsl(250, 65%, 50%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2559,12 +2558,10 @@ body {
   --text-selection: hsla(258, 88%, 79%, 0.33);
   --title-gradient-bottom: hsl(250, 65%, 50%);
   --title-gradient-top: hsl(219, 37%, 36%);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

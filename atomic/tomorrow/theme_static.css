@@ -2488,7 +2488,6 @@ body {
   border-left: solid 1px;
   border-right: solid 1px;
   border-top: solid 1px;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2567,12 +2566,10 @@ body {
   --text-selection: #373b41;
   --titlebar-background: #1d1f21;
   --titlebar-background-focused: #282a2e;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

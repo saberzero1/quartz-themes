@@ -1770,7 +1770,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1865,7 +1864,6 @@ svg.svg-icon {
   --text-normal: #2e3338;
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(204, 230, 255, 0.99);
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2504,7 +2504,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2698,13 +2697,11 @@ body {
   --text-on-accent-inverted: var(--ocean-blue);
   --text-selection: var(--bright-red);
   --text-success: var(--bright-green);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
   border-radius: 10px;
-  color-scheme: normal;
   display: none;
   height: 500px;
   width: 100%;

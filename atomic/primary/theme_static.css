@@ -5985,7 +5985,6 @@ body {
   --yaml-keyword-color: hsla(40, 79%, 47%, 1);
   --yaml-number-color: hsla(4, 59%, 64%, 1);
   --yaml-string-color: hsla(40, 79%, 47%, 1);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -7179,12 +7178,10 @@ body {
   --yaml-keyword-color: hsla(40, 78%, 48%, 1);
   --yaml-number-color: hsla(4, 91%, 67%, 1);
   --yaml-string-color: hsla(40, 78%, 48%, 1);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

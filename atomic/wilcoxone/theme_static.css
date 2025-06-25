@@ -2538,7 +2538,6 @@ body {
   --text-normal: hsl(227, 66%, 9%);
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(204, 230, 255, 0.99);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2627,12 +2626,10 @@ body {
   --text-normal: hsl(109, 19%, 92%);
   --text-on-accent: hsl(109, 19%, 92%);
   --text-selection: rgba(23, 48, 77, 0.99);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

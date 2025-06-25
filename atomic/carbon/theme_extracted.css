@@ -1785,7 +1785,6 @@ svg.svg-icon {
   --text-normal: #f4f4f4;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: #000000;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1866,7 +1865,6 @@ svg.svg-icon {
   --text-highlight-bg: #d0e2ff;
   --text-normal: #262626;
   --titlebar-background: #000000;
-  color-scheme: light;
 }
 
 .mod-sidedock {

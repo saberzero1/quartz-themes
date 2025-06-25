@@ -1824,7 +1824,6 @@ svg.svg-icon {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   background-color: #a24d00;
   color: #ffffff;
-  color-scheme: dark;
   font-weight: 300;
   padding-left: 15px;
   position: relative;
@@ -1935,7 +1934,6 @@ svg.svg-icon {
   --text-normal: #333333;
   background-color: #a24d00;
   color: #ffffff;
-  color-scheme: light;
   font-weight: 300;
   padding-left: 15px;
   position: relative;

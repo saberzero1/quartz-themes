@@ -2698,7 +2698,6 @@ svg.svg-icon {
   --text-on-accent: var(--background-primary-active);
   --text-selection: hsla(var(--custom-red-500-hsl), 0.25);
   --titlebar-background: var(--custom-background-tertiary);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2898,7 +2897,6 @@ svg.svg-icon {
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-on-accent: var(--background-primary-active);
   --titlebar-background: var(--custom-background-tertiary);
-  color-scheme: light;
 }
 
 .mod-sidedock {

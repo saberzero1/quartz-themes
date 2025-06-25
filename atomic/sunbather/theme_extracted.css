@@ -1783,7 +1783,6 @@ svg.svg-icon {
   --text-faint: #767676;
   --text-normal: #d6d4d4;
   --text-selection: #da5c8133;
-  color-scheme: dark;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell;
@@ -1873,7 +1872,6 @@ svg.svg-icon {
   --text-faint: #767676;
   --text-normal: #262626;
   --text-selection: #da5c8133;
-  color-scheme: light;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell;

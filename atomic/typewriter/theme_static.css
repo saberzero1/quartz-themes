@@ -2623,7 +2623,6 @@ body {
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(204, 230, 255, 0.99);
   --vim-cursor: hsla(129, 31.9%, 46.7%, 0.8);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2720,12 +2719,10 @@ body {
   --text-on-accent: #dcddde;
   --text-selection: rgba(23, 48, 77, 0.99);
   --vim-cursor: hsla(129, 31.9%, 46.7%, 0.8);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

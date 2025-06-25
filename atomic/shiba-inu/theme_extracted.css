@@ -1933,7 +1933,6 @@ svg.svg-icon {
   --text: 198, 206, 239;
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2022,7 +2021,6 @@ svg.svg-icon {
   --surface1: 188, 192, 204;
   --surface2: 221, 225, 238;
   --text: 76, 79, 105;
-  color-scheme: light;
 }
 
 .mod-sidedock {

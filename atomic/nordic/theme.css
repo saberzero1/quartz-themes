@@ -2800,7 +2800,6 @@ body {
   --text-highlight-bg: var(--accent-color);
   --text-muted: color-mix(in srgb, var(--accent-color), #000 20%);
   --text-normal: color-mix(in srgb, var(--accent-color), #000 45%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2967,12 +2966,10 @@ body {
   --text-muted: color-mix(in srgb, var(--accent-color), #fff 40%);
   --text-normal: color-mix(in srgb, var(--accent-color), #fff 65%);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

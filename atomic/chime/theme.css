@@ -2537,7 +2537,6 @@ body {
     var(--accent-l),
     0.2
   );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2616,12 +2615,10 @@ body {
     0.3
   );
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -25199,7 +25196,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-default.theme-dark {
@@ -25234,7 +25230,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* ----- Ash Theme ----- */
@@ -25300,7 +25295,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --vault-name-color: var(--color-accent-1);
-  color-scheme: light;
 }
 
 .theme-crystal.theme-dark {
@@ -25338,7 +25332,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --vault-name-color: var(--color-accent-1);
-  color-scheme: dark;
 }
 
 /* ----- old ash theme ----- */
@@ -25393,7 +25386,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --vault-name-color: var(--color-accent-1);
-  color-scheme: light;
 }
 
 .theme-ash-old.theme-dark {
@@ -25431,7 +25423,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --vault-name-color: var(--color-accent-1);
-  color-scheme: dark;
 }
 
 /* ----- spring theme ----- */
@@ -25480,7 +25471,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-spring.theme-dark {
@@ -25517,7 +25507,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* ----- novelist theme + novel css class ----- */
@@ -25732,7 +25721,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-novelist.theme-dark {
@@ -25750,7 +25738,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* ----- nord theme ----- */
@@ -25816,7 +25803,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-nord.theme-dark {
@@ -25850,7 +25836,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* ----- classic obsidian theme ----- */
@@ -25890,7 +25875,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-classic.theme-dark {
@@ -25924,7 +25908,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* ----- light & bright theme ----- */
@@ -25978,7 +25961,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-light-and-bright.theme-dark {
@@ -26012,7 +25994,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* --- dividers --- */
@@ -26102,7 +26083,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-solarized.theme-dark {
@@ -26118,7 +26098,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-base-60: #586b6d;
   --color-base-70: #657c7e;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 /* ----- gruvbox theme ----- */
@@ -26179,7 +26158,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-gruvbox.theme-dark {
@@ -26214,7 +26192,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-yellow: #fabd2f;
   --color-yellow-rgb: 215, 153, 33;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 /* ----- anytype theme ----- */
@@ -26372,7 +26349,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-anytype.theme-dark {
@@ -26389,7 +26365,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-base-60: #9c9994;
   --color-base-70: #aeaba6;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 /* --------- chinchilla theme --------- */
@@ -26584,7 +26559,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --theme-decoration: "☀️";
-  color-scheme: light;
 }
 
 .theme-celestial.theme-dark {
@@ -26630,7 +26604,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --theme-decoration: "☾";
-  color-scheme: dark;
 }
 
 .theme-celestial.theme-dark blockquote {
@@ -26943,7 +26916,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-notion.theme-dark {
@@ -26977,7 +26949,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-yellow: #cb912f;
   --color-yellow-rgb: 203, 145, 47;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 /* ---------- rainbow folders ---------- */

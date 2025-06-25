@@ -1803,7 +1803,6 @@ svg.svg-icon {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: #926b22e6;
   --text-selection: #6154508f;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1872,7 +1871,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: #eac357;
   --text-selection: #c7a78683;
-  color-scheme: light;
 }
 
 .mod-sidedock {

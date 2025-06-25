@@ -2590,7 +2590,6 @@ body {
   --transparent-primary: rgba(34, 176, 67, 0.6);
   --transparent-secondary: rgba(176, 33, 142, 0.6);
   --yellow: #8eb021;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2700,12 +2699,10 @@ body {
   --transparent-primary: rgba(161, 249, 143, 0.6);
   --transparent-secondary: rgba(231, 143, 249, 0.6);
   --yellow: #f9e78f;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

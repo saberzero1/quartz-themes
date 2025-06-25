@@ -2553,7 +2553,6 @@ body {
   --text-accent: rgb(255, 190, 0);
   --text-accent-hover: rgb(254, 106, 38);
   --text-highlight-bg: #e9b35f;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2659,12 +2658,10 @@ body {
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

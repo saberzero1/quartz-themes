@@ -2698,7 +2698,6 @@ body {
   --titlebar-text-color-focused: hsla(0, 0%, 5%, 1);
   --vault-profile-color: hsla(0, 0%, 80%, 1);
   --vault-profile-color-hover: hsla(0, 0%, 95%, 1);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2841,12 +2840,10 @@ body {
   --titlebar-text-color-focused: hsla(0, 0%, 80%, 1);
   --vault-profile-color: hsla(0, 0%, 80%, 1);
   --vault-profile-color-hover: hsla(0, 0%, 95%, 1);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

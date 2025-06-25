@@ -2520,7 +2520,6 @@ body {
   --titlebar-text-color: #ffffff;
   --titlebar-text-color-focused: #ffffff;
   --vim-cursor: #ff3e3e;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2640,12 +2639,10 @@ body {
   --titlebar-text-color: #ffffff;
   --titlebar-text-color-focused: #ffffff;
   --vim-cursor: #c76cff;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

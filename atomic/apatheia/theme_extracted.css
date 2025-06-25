@@ -2151,7 +2151,6 @@ svg.svg-icon {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --theme-filter: invert(98%) hue-rotate(180deg);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2300,7 +2299,6 @@ svg.svg-icon {
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .mod-sidedock {

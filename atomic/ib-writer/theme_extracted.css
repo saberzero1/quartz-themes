@@ -1790,7 +1790,6 @@ svg.svg-icon {
   --tag-color: var(--text-color-dark);
   --text-accent: var(--color-accent-1);
   --text-selection: var(--my-accent-color-dark);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1860,7 +1859,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --tab-background-active: var(--edit-view-background-color);
   --text-selection: var(--my-accent-color);
-  color-scheme: light;
 }
 
 .mod-sidedock {

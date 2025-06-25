@@ -1878,7 +1878,6 @@ svg.svg-icon {
   );
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1978,7 +1977,6 @@ svg.svg-icon {
     var(--accent-l),
     40%
   );
-  color-scheme: light;
 }
 
 .mod-sidedock {

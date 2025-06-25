@@ -2029,7 +2029,6 @@ svg.svg-icon {
   --text-normal: var(--000);
   --text-selection: var(--500);
   --th-bg: var(--700);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2159,7 +2158,6 @@ svg.svg-icon {
   --text-normal: var(--800);
   --text-selection: var(--200);
   --th-bg: var(--100);
-  color-scheme: light;
 }
 
 .mod-sidedock {

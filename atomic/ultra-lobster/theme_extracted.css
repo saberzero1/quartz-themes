@@ -1930,7 +1930,6 @@ svg.svg-icon {
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: var(--text-on-accent);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2016,7 +2015,6 @@ svg.svg-icon {
   --text-highlight-bg: rgb(255 208 0 / 40%);
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: var(--text-normal);
-  color-scheme: light;
 }
 
 .mod-sidedock {

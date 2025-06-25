@@ -2615,7 +2615,6 @@ body {
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
   --titlebar-background-focused: rgb(2, 4, 9);
-  color-scheme: light;
   text-decoration-color: rgba(236, 166, 99, 1);
 }
 
@@ -2711,13 +2710,11 @@ body {
   --text-muted: hsl(212, 15%, calc(13% + 65%));
   --text-selection: hsla(215, 75%, 60%, 0.25);
   --titlebar-background-focused: rgb(2, 4, 9);
-  color-scheme: dark;
   text-decoration-color: rgba(236, 166, 99, 0.75);
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -24198,7 +24195,6 @@ body.theme-light.is-mobile {
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
   --titlebar-background-focused: rgb(2, 4, 9);
-  color-scheme: light;
   text-decoration-color: rgba(236, 166, 99, 1);
 }
 
@@ -24281,7 +24277,6 @@ body.theme-dark.is-mobile {
   --text-muted: hsl(212, 15%, calc(13% + 65%));
   --text-selection: hsla(215, 75%, 60%, 0.25);
   --titlebar-background-focused: rgb(2, 4, 9);
-  color-scheme: dark;
   text-decoration-color: rgba(236, 166, 99, 0.75);
 }
 

@@ -2028,7 +2028,6 @@ svg.svg-icon {
   --text-on-accent: var(--col-muted-plus);
   --text-selection: var(--col-text-selection);
   --text-success: var(--col-accent);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2144,7 +2143,6 @@ svg.svg-icon {
   --text-on-accent: var(--col-muted-plus);
   --text-selection: var(--col-text-selection);
   --text-success: var(--col-accent);
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2552,7 +2552,6 @@ body {
   --text-normal: var(--color-nearblack);
   --text-on-accent: var(--color-darkgreen);
   --text-selection: var(--color-green);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2646,12 +2645,10 @@ body {
   --text-normal: var(--color-green);
   --text-on-accent: var(--color-darkgreen);
   --text-selection: var(--color-darkgreen);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

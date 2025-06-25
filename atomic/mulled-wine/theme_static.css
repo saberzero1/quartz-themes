@@ -2482,7 +2482,6 @@ body {
   --tag-color-hover: #714785;
   --text-accent: #95bae8;
   --text-highlight-bg: transparent;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2570,12 +2569,10 @@ body {
   --text-accent: #95bae8;
   --text-highlight-bg: transparent;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

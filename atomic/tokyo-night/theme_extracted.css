@@ -1877,7 +1877,6 @@ svg.svg-icon {
   --yellow: rgb(var(--yellow_x));
   --yellow_x: 224, 175, 104;
   background: var(--table-header-background);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1992,7 +1991,6 @@ svg.svg-icon {
   --unknown: #000000;
   --yellow: rgb(var(--yellow_x));
   --yellow_x: 143, 94, 21;
-  color-scheme: light;
 }
 
 .mod-sidedock {

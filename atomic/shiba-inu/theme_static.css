@@ -2639,7 +2639,6 @@ body {
   --surface1: 188, 192, 204;
   --surface2: 221, 225, 238;
   --text: 76, 79, 105;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2729,12 +2728,10 @@ body {
   --text: 198, 206, 239;
   --text-accent: rgb(235, 188, 186);
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

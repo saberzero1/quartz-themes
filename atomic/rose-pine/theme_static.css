@@ -2516,7 +2516,6 @@ body {
   --text-muted: #9893a5;
   --text-normal: #575279;
   --text-selection: rgba(40, 105, 131, 0.6);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2605,12 +2604,10 @@ body {
   --text-muted: #6e6a86;
   --text-normal: #e0def4;
   --text-selection: rgba(49, 116, 143, 0.6);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

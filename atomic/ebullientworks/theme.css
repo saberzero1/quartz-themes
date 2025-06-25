@@ -3000,7 +3000,6 @@ body {
   --text-on-accent: var(--gray-light-8);
   --text-selection: rgba(var(--secondary-accent-4-rgb), 0.2);
   --text-success: var(--green-4);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3145,12 +3144,10 @@ body {
   --text-selection: rgba(var(--primary-accent-4-rgb), 0.2);
   --text-selection-active: rgba(var(--primary-accent-4-rgb), 0.01);
   --text-success: var(--green-3);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

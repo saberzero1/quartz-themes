@@ -2885,7 +2885,6 @@ body {
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-dark {
@@ -3039,13 +3038,11 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --theme-filter: invert(98%) hue-rotate(180deg);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
   border-radius: var(--ap-radius-l);
-  color-scheme: normal;
   display: none;
 }
 
@@ -24374,7 +24371,6 @@ For reference, check the Obsidian style settings repo
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 /*
@@ -24588,7 +24584,6 @@ For reference, check the Obsidian style settings repo
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 /*
@@ -24802,7 +24797,6 @@ For reference, check the Obsidian style settings repo
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 /*
@@ -25016,7 +25010,6 @@ For reference, check the Obsidian style settings repo
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 /*---------------------------------------
@@ -25503,7 +25496,6 @@ Plugins
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 /*---------------------------------------

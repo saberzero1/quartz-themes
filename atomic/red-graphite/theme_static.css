@@ -2812,7 +2812,6 @@ body {
   --vault-name-font-size: 16px;
   --vault-name-font-weight: 500;
   --vault-profile-color: hsl(222, 22%, calc(15% + 80%));
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2965,12 +2964,10 @@ body {
   --vault-name-font-size: 16px;
   --vault-name-font-weight: 500;
   --vault-profile-color: hsl(222, 22%, calc(15% + 80%));
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

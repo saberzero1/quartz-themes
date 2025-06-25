@@ -1772,7 +1772,6 @@ svg.svg-icon {
   --tag-background-hover: #393e50;
   --text-accent: #c8bcac;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1852,7 +1851,6 @@ svg.svg-icon {
   --tag-background: transparent;
   --tag-background-hover: #d2c9bd;
   --text-accent: #4b1b29;
-  color-scheme: light;
 }
 
 .mod-sidedock {

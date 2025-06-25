@@ -2538,7 +2538,6 @@ body {
   background: linear-gradient(to right, #83c092, #dbbc7f);
   background-color: #f7f7f7;
   border-radius: 16px;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2627,13 +2626,11 @@ body {
   --titlebar-background-focused: var(--background-secondary);
   background-color: #171717;
   color: black;
-  color-scheme: dark;
   font-weight: bold;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2213,7 +2213,6 @@ svg.svg-icon {
     var(--base-l),
     0.7
   );
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2408,7 +2407,6 @@ svg.svg-icon {
     var(--base-l),
     0.7
   );
-  color-scheme: light;
 }
 
 .mod-sidedock {

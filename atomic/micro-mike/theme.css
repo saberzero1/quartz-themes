@@ -3814,7 +3814,6 @@ body {
     calc(var(--saturation-factor, 1) * 95.7%),
     90.8%
   );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -4285,12 +4284,10 @@ body {
     calc(var(--saturation-factor, 1) * 95.7%),
     90.8%
   );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

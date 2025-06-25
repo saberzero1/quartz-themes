@@ -2540,7 +2540,6 @@ body {
   --text-normal: #dadada;
   --titlebar-background: #212121;
   --titlebar-background-focused: #212121;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2609,12 +2608,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(80 - 3), calc(45% * 1.02), calc(45% * 1.15));
   --text-selection: hsla(80, 45%, 45%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

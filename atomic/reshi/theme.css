@@ -2867,7 +2867,6 @@ body {
   --titlebar-text-color: var(--medium-grey-2);
   --titlebar-text-focused: var(--medium-grey-3);
   --vault-name-color: var(--dark-grey-3);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3057,12 +3056,10 @@ body {
   --titlebar-text-color: var(--medium-light-grey-3);
   --titlebar-text-focused: var(--medium-light-grey-2);
   --vault-name-color: var(--medium-light-grey-3);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

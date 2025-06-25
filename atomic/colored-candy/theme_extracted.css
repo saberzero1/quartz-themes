@@ -1987,7 +1987,6 @@ svg.svg-icon {
   --text-muted: hsl(var(--accent-h), 15%, 68%);
   --text-normal: hsl(0, 0%, 85%);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2107,7 +2106,6 @@ svg.svg-icon {
   --text-faint: hsl(var(--accent-h), 20%, 47%);
   --text-muted: hsl(var(--accent-h), 15%, 33%);
   --text-normal: hsl(0, 0%, 13%);
-  color-scheme: light;
 }
 
 .mod-sidedock {

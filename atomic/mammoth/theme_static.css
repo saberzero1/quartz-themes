@@ -2548,7 +2548,6 @@ body {
   --todoist-orange-background: rgba(255, 154, 20, 0.1);
   --todoist-red: #ff7066;
   --todoist-red-background: rgba(255, 112, 102, 0.1);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2650,12 +2649,10 @@ body {
   --todoist-orange-background: rgba(255, 154, 20, 0.1);
   --todoist-red: #ff7066;
   --todoist-red-background: rgba(255, 112, 102, 0.1);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

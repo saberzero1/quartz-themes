@@ -1768,7 +1768,6 @@ svg.svg-icon {
   --text-selection: #373b41;
   --titlebar-background: var(--background-primary);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1847,7 +1846,6 @@ svg.svg-icon {
   border-left: solid 1px;
   border-right: solid 1px;
   border-top: solid 1px;
-  color-scheme: light;
 }
 
 .mod-sidedock {

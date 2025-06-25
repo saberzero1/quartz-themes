@@ -2670,7 +2670,6 @@ body {
   --text-highlight-border-color: rgb(167, 98, 64);
   --text-highlight-border-radius: 4px;
   --text-highlight-color: rgb(102, 80, 63);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2789,12 +2788,10 @@ body {
   --text-highlight-border-color: hsl(31, 48%, 66%);
   --text-highlight-color: hsl(40, 20%, 90%);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

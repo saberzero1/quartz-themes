@@ -2615,7 +2615,6 @@ body {
   --subtle: #797593;
   --surface-rgb: 255, 250, 243;
   --text: #575279;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2703,12 +2702,10 @@ body {
   --text: #e0def4;
   --text-accent: hsl(calc(213 - 3), calc(60% * 1.02), calc(67% * 1.15));
   --text-selection: hsla(213, 60%, 67%%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

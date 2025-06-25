@@ -1820,7 +1820,6 @@ svg.svg-icon {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --text-subtitle: #d88874;
   --text-title: #c59445;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1910,7 +1909,6 @@ svg.svg-icon {
   --text-normal: black;
   --text-subtitle: #77220d;
   --text-title: #4b254d;
-  color-scheme: light;
 }
 
 .mod-sidedock {

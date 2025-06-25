@@ -2768,7 +2768,6 @@ body {
   --text-on-accent: var(--col-muted-plus);
   --text-selection: var(--col-text-selection);
   --text-success: var(--col-accent);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2886,12 +2885,10 @@ body {
   --text-on-accent: var(--col-muted-plus);
   --text-selection: var(--col-text-selection);
   --text-success: var(--col-accent);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

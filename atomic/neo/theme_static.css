@@ -2629,7 +2629,6 @@ body {
   --text-accent-hover: hsl(250, 60%, 45%);
   --text-highlight-bg: hsl(250, 0%, 15%);
   --text-selection: hsl(250, 0%, 12%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2720,12 +2719,10 @@ body {
   --text-accent-hover: hsl(250, 90%, 84%);
   --text-highlight-bg: hsl(250, 0%, 19%);
   --text-selection: hsl(250, 0%, 12%);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

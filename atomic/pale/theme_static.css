@@ -2504,7 +2504,6 @@ body {
   --sidebar-forground-color: #b8b8b8bd;
   --tab-text-color: #242424c7;
   --table-border-color: #8c8c8cc7;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2590,12 +2589,10 @@ body {
   --table-border-color: #8c8c8cc7;
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

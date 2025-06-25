@@ -1,0 +1,2015 @@
+:root {
+  --background-modifier-box-shadow: light-dark(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-cover: light-dark(
+    rgba(10, 10, 10, 0.4),
+    rgba(220, 220, 220, 0.4)
+  );
+  --background-secondary-alt: light-dark(#9496ac66, hsl(210, 10%, 96%));
+  --color-accent: light-dark(hsl(232, 75%, 70%), hsl(232, 75%, 70%));
+  --color-accent-1: light-dark(
+    light-dark(
+      hsl(calc(232 - 4), 75%, calc(70% - 2%)),
+      hsl(calc(232 - 1), calc(75% * 1.01), calc(70% * 1.075))
+    ),
+    hsl(calc(232 - 4), 75%, calc(70% - 2%))
+  );
+  --color-accent-2: light-dark(
+    light-dark(
+      hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%)),
+      hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15))
+    ),
+    hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%))
+  );
+  --color-accent-3: light-dark(
+    hsl(calc(232 + 35), 75%, calc(70% + 12%)),
+    hsl(calc(232 + 35), 75%, calc(70% + 12%))
+  );
+  --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+  --color-base-00: light-dark(
+    light-dark(hsla(216, 16%, 13%, 75%), #ffffff),
+    hsla(0, 0%, 100%, 75%)
+  );
+  --color-base-05: light-dark(light-dark(#212121, #fcfcfc), #fcfcfc);
+  --color-base-10: light-dark(light-dark(hsl(216, 17%, 14%), #fafafa), #fdfdfd);
+  --color-base-100: light-dark(light-dark(#c8d4e6, #222222), #252525);
+  --color-base-20: light-dark(
+    light-dark(hsl(216, 19%, 16%), #f6f6f6),
+    hsl(0, 0%, 96%)
+  );
+  --color-base-25: light-dark(light-dark(hsl(216, 20%, 20%), #e3e3e3), #efefef);
+  --color-base-30: light-dark(
+    light-dark(hsl(218, 18%, 15%), #e0e0e0),
+    #9f9f9f66
+  );
+  --color-base-35: light-dark(light-dark(hsl(218, 19%, 27%), #d4d4d4), #dedede);
+  --color-base-40: light-dark(light-dark(hsl(218, 19%, 31%), #bdbdbd), #d7d7d7);
+  --color-base-50: light-dark(light-dark(hsl(219, 13%, 51%), #ababab), #878787);
+  --color-base-60: light-dark(light-dark(hsl(219, 16%, 59%), #707070), #939393);
+  --color-base-70: light-dark(light-dark(hsl(220, 17%, 66%), #5c5c5c), #7f7f7f);
+  --color-blue: light-dark(light-dark(#009be3, #086ddd), #4e8aa6);
+  --color-blue-rgb: light-dark(
+    light-dark(0, 155, 227, 8, 109, 221),
+    0,
+    155,
+    227
+  );
+  --color-cyan: light-dark(light-dark(#00cecb, #00bfbc), #49a7ba);
+  --color-cyan-rgb: light-dark(
+    light-dark(0, 206, 203, 0, 191, 188),
+    0,
+    206,
+    203
+  );
+  --color-green: light-dark(light-dark(#7dcf2b, #08b94e), #8fb26b);
+  --color-green-rgb: light-dark(
+    light-dark(125, 207, 43, 8, 185, 78),
+    125,
+    207,
+    43
+  );
+  --color-orange: light-dark(light-dark(#f69c00, #ec7500), #d08344);
+  --color-orange-rgb: light-dark(
+    light-dark(246, 156, 0, 236, 117, 0),
+    246,
+    156,
+    0
+  );
+  --color-pink: light-dark(light-dark(#e66ab4, #d53984), #ac7aaa);
+  --color-pink-rgb: light-dark(
+    light-dark(230, 106, 180, 213, 57, 132),
+    230,
+    106,
+    180
+  );
+  --color-purple: light-dark(light-dark(#b45af5, #7852ee), #8076ad);
+  --color-purple-rgb: light-dark(
+    light-dark(180, 90, 245, 120, 82, 238),
+    180,
+    90,
+    245
+  );
+  --color-red: light-dark(light-dark(#ff4d3a, #e93147), #c75f54);
+  --color-red-rgb: light-dark(
+    light-dark(255, 77, 58, 233, 49, 71),
+    255,
+    77,
+    58
+  );
+  --color-yellow: light-dark(light-dark(#e8c900, #e0ac00), #dca931);
+  --color-yellow-rgb: light-dark(
+    light-dark(232, 201, 0, 224, 172, 0),
+    232,
+    201,
+    0
+  );
+  --doc-bg: light-dark(hsl(207, 24%, 22%), hsl(181, 20%, 95%));
+  --highlight-mix-blend-mode: light-dark(lighten, darken);
+  --highlight-text: light-dark(white, #3e3a4f);
+  --input-shadow: light-dark(
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+    0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --input-shadow-hover: light-dark(
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --keyboard-height: 0px;
+  --loading-icon-delay: 400ms;
+  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdfViewer-padding-bottom: 0;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --safe-area-inset-left: env(safe-area-inset-left);
+  --safe-area-inset-right: env(safe-area-inset-right);
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --shadow-color: light-dark(rgba(0, 0, 0, 0.2), hsl(0, 0%, 92%));
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-highlight-bg: light-dark(
+    light-dark(hsla(232, 75%, 70%, 0.475), rgba(255, 208, 0, 0.4)),
+    rgba(255, 200, 0, 0.459)
+  );
+  --text-highlight-bg-active: light-dark(
+    rgba(255, 128, 0, 0.4),
+    rgba(255, 128, 0, 0.4)
+  );
+  --viewer-container-height: 0;
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
+}
+
+body {
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 300ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 560ms;
+  --anim-duration-superfast: 70ms;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-motion-swing: cubic-bezier(0.25, 0.05, 0.55, 0.95);
+  --background-modifier-active-hover: hsla(232, 75%, 70%, 0.15);
+  --background-modifier-border: #9496ac66;
+  --background-modifier-border-focus: hsl(242, 19%, 72%);
+  --background-modifier-border-hover: hsl(220, 5%, 78%);
+  --background-modifier-error: rgb(255, 114, 114);
+  --background-modifier-error-hover: rgb(255, 114, 114);
+  --background-modifier-error-rgb: 255, 114, 114;
+  --background-modifier-form-field: hsla(237, 10%, 97%, 75%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-success: rgb(132, 204, 124);
+  --background-modifier-success-rgb: 132, 204, 124;
+  --background-primary: hsla(237, 10%, 97%, 75%);
+  --background-primary-alt: hsl(220, 9%, 95%);
+  --background-secondary: hsl(229, 14%, 91%);
+  --bases-embed-border: 1px solid #d9dde8;
+  --bases-embed-border-radius: 7px;
+  --bases-filter-menu-width: 520px;
+  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-height: 40px;
+  --bases-header-padding-end: 2px;
+  --bases-header-padding-start: 2px;
+  --bases-table-border-color: #d9dde8;
+  --bases-table-cell-background-active: hsla(237, 10%, 97%, 75%);
+  --bases-table-cell-background-disabled: rgba(10, 10, 10, 0.4);
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(232, 75%, 70%);
+  --bases-table-column-border-width: 1px;
+  --bases-table-column-max-width: 300;
+  --bases-table-column-min-width: 40;
+  --bases-table-container-border-radius: 7px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-header-background: hsla(237, 10%, 97%, 75%);
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.15);
+  --bases-table-header-color: #6d6b78;
+  --bases-table-header-icon-display: flex;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  );
+  --bases-table-header-weight: 700;
+  --bases-table-row-background-hover: #9496ac66;
+  --bases-table-row-border-width: 1px;
+  --bases-table-row-height: 30px;
+  --bases-table-text-size: 0.875em;
+  --bases-table-white-space: nowrap;
+  --blockquote-background-color: transparent;
+  --blockquote-border-color: hsl(232, 75%, 70%);
+  --blockquote-border-thickness: 2px;
+  --blockquote-color: inherit;
+  --blockquote-font-style: normal;
+  --bold-color: inherit;
+  --bold-font: inherit;
+  --bold-modifier: 200;
+  --bold-weight: calc(700 + 200);
+  --border-width: 1px;
+  --button-background: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 233, 145, 196;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 131, 145, 237;
+  --callout-error: 255, 160, 88;
+  --callout-example: 183, 140, 218;
+  --callout-fail: 255, 114, 114;
+  --callout-important: 84, 186, 182;
+  --callout-info: 131, 145, 237;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 219, 202, 103;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 7px;
+  --callout-success: 132, 204, 124;
+  --callout-summary: 132, 204, 124;
+  --callout-tip: 219, 202, 103;
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+  --callout-title-weight: calc(700 + 200);
+  --callout-todo: 131, 145, 237;
+  --callout-warning: 255, 160, 88;
+  --canvas-background: hsla(237, 10%, 97%, 75%);
+  --canvas-card-label-color: #787689;
+  --canvas-color: 192, 192, 192;
+  --canvas-color-1: 255, 114, 114;
+  --canvas-color-2: 255, 160, 88;
+  --canvas-color-3: 219, 202, 103;
+  --canvas-color-4: 132, 204, 124;
+  --canvas-color-5: 84, 186, 182;
+  --canvas-color-6: 183, 140, 218;
+  --canvas-dot-pattern: #9496ac66;
+  --caret-color: #3e3a4f;
+  --checkbox-border-color: rgb(255, 114, 114);
+  --checkbox-border-color-hover: #6d6b78;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --checkbox-margin-inline-start: 0.85em;
+  --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --checklist-done-color: #6d6b78;
+  --checklist-done-decoration: none;
+  --clickable-icon-radius: 7px;
+  --code-background: hsl(220, 9%, 95%);
+  --code-border-color: #d9dde8;
+  --code-border-width: 0px;
+  --code-comment: #787689;
+  --code-function: rgb(219, 202, 103);
+  --code-important: rgb(255, 160, 88);
+  --code-keyword: rgb(233, 145, 196);
+  --code-normal: #3e3a4f;
+  --code-operator: rgb(255, 114, 114);
+  --code-property: rgb(84, 186, 182);
+  --code-punctuation: #6d6b78;
+  --code-radius: 7px;
+  --code-size: 0.875em;
+  --code-string: rgb(132, 204, 124);
+  --code-tag: rgb(255, 114, 114);
+  --code-value: rgb(183, 140, 218);
+  --code-white-space: pre-wrap;
+  --collapse-icon-color: #787689;
+  --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --cursor: default;
+  --cursor-link: pointer;
+  --custom-code-height: 1em;
+  --custom-doc-bg: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --custom-line-height: 2em;
+  --dialog-max-height: 85vh;
+  --dialog-max-width: 80vw;
+  --dialog-width: 560px;
+  --direction: 1;
+  --divider-color: #d9dde8;
+  --divider-color-hover: hsl(232, 75%, 70%);
+  --divider-vertical-height: calc(100% - 25px);
+  --divider-width: 1px;
+  --divider-width-hover: 3px;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-text-color: #fff;
+  --dropdown-background: rgba(255, 255, 255, 0.15);
+  --dropdown-background-blend-mode: hard-light;
+  --dropdown-background-hover: hsl(220, 5%, 78%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
+  --embed-background: inherit;
+  --embed-block-shadow-hover: 0 0 0 1px #d9dde8, inset 0 0 0 1px #d9dde8;
+  --embed-border-bottom: none;
+  --embed-border-end: none;
+  --embed-border-left: none;
+  --embed-border-start: 2px solid hsl(232, 75%, 70%);
+  --embed-border-top: none;
+  --embed-canvas-max-height: 400px;
+  --embed-font-style: inherit;
+  --embed-max-height: 4000px;
+  --embed-padding: 0 0 0 24px;
+  --file-emoji: "Noto Emoji";
+  --file-folding-offset: 24px;
+  --file-header-border: 0.5pt solid transparent;
+  --file-header-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --file-header-font-size: calc(16px * 0.937);
+  --file-header-font-weight: 400;
+  --file-header-justify: center;
+  --file-line-width: 900px;
+  --file-margins: 32px;
+  --flair-background: rgba(255, 255, 255, 0.15);
+  --flair-color: #3e3a4f;
+  --folder-1: "🌱";
+  --folder-1-open: "🌳";
+  --folder-2: "🌷";
+  --folder-2-open: "🌺";
+  --folder-3: "🌹";
+  --folder-3-open: "💐";
+  --folder-emoji: "Noto Emoji";
+  --folder-icon-size: 1.6em;
+  --folder-padding: 4px;
+  --font-black: 900;
+  --font-bold: 700;
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-emoji: "Noto Color Emoji";
+  --font-extrabold: 800;
+  --font-extralight: 200;
+  --font-interface:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
+  --font-light: 300;
+  --font-main: "Nunito Sans";
+  --font-medium: 500;
+  --font-mermaid: "??", "??", "??", "Arial";
+  --font-monospace: "DM Mono", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
+  --font-normal: 400;
+  --font-print: "??", "??", "??", "Arial";
+  --font-print-override: "??";
+  --font-semibold: 600;
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --font-smallest: 0.8em;
+  --font-text: "??", "??", "??", "Arial";
+  --font-text-override: "??";
+  --font-text-size: 16px;
+  --font-text-theme: "??";
+  --font-thin: 100;
+  --font-ui-large: 20px;
+  --font-ui-medium: 15px;
+  --font-ui-small: 13px;
+  --font-ui-smaller: 12px;
+  --font-weight: 400;
+  --footnote-divider-color: transparent;
+  --footnote-divider-color-active: transparent;
+  --footnote-divider-width: 1px;
+  --footnote-gap: 4px;
+  --footnote-id-color: #6d6b78;
+  --footnote-id-color-no-occurrences: #787689;
+  --footnote-id-delimiter: ".";
+  --footnote-input-background: transparent;
+  --footnote-input-background-active: transparent;
+  --footnote-line-height: 1.5;
+  --footnote-padding-block: 6px;
+  --footnote-padding-inline: 6px;
+  --footnote-radius: 7px;
+  --footnote-size: 0.875em;
+  --google-font-color-notocoloremoji: colrv1;
+  --graph-controls-width: 240px;
+  --graph-line: hsl(220, 5%, 78%);
+  --graph-node: #6d6b78;
+  --graph-node-attachment: rgb(219, 202, 103);
+  --graph-node-focused: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --graph-node-tag: rgb(132, 204, 124);
+  --graph-node-unresolved: #787689;
+  --graph-text: #3e3a4f;
+  --h1-align: center;
+  --h1-color: inherit;
+  --h1-color-custom: rgb(84, 186, 182);
+  --h1-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h1-line-height: 1.2;
+  --h1-size: 2.2em;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h1-weight: 700;
+  --h2-color: inherit;
+  --h2-color-custom: rgb(131, 145, 237);
+  --h2-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h2-line-height: 1.2;
+  --h2-size: 1.87em;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 700;
+  --h3-color: inherit;
+  --h3-color-custom: rgb(183, 140, 218);
+  --h3-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-line-height: 1.3;
+  --h3-size: 1.57em;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 700;
+  --h4-color: inherit;
+  --h4-color-custom: rgb(233, 145, 196);
+  --h4-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h4-line-height: 1.4;
+  --h4-size: 1.35em;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 700;
+  --h5-color: inherit;
+  --h5-color-custom: rgb(255, 114, 114);
+  --h5-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h5-line-height: 1.5;
+  --h5-size: 1.3em;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 700;
+  --h6-color: inherit;
+  --h6-color-custom: rgb(255, 160, 88);
+  --h6-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h6-line-height: 1.5;
+  --h6-size: 1.1em;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 700;
+  --header-height: 40px;
+  --heading-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif;
+  --heading-font-2:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --heading-formatting: #787689;
+  --heading-spacing: calc(0rem * 2.5);
+  --heading-style: normal;
+  --heading-variant: normal;
+  --heading-weight: 700;
+  --hr-color: #d9dde8;
+  --hr-thickness: 2px;
+  --icon-background: #9496ac66;
+  --icon-color: #6d6b78;
+  --icon-color-active: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --icon-color-focused: #3e3a4f;
+  --icon-color-hover: #6d6b78;
+  --icon-emoji: "Noto Color Emoji";
+  --icon-l: 18px;
+  --icon-l-stroke-width: 1.3px;
+  --icon-m: 18px;
+  --icon-m-stroke-width: 1.3px;
+  --icon-opacity: 0.85;
+  --icon-opacity-active: 1;
+  --icon-opacity-hover: 1;
+  --icon-s: 16px;
+  --icon-s-stroke-width: 1.3px;
+  --icon-shadow: none inset, none;
+  --icon-size: 20px;
+  --icon-stroke: 1.3px;
+  --icon-xl: 32px;
+  --icon-xl-stroke-width: 1.25px;
+  --icon-xs: 14px;
+  --icon-xs-stroke-width: 2px;
+  --img-align: 0px;
+  --img-bg-size: cover;
+  --img-blur: 3px;
+  --img-position-x: 50%;
+  --img-position-y: 50%;
+  --img-sat: 100%;
+  --indent-size: 4;
+  --indent-unit: 0.5625em;
+  --indentation-guide-color: transparent;
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
+  --indentation-guide-editing-indent: 0.85em;
+  --indentation-guide-reading-indent: -0.85em;
+  --indentation-guide-source-indent: 0.25em;
+  --indentation-guide-width: 1px;
+  --indentation-guide-width-active: 1px;
+  --inline-title-color: #3e3a4f;
+  --inline-title-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --inline-title-line-height: 1.2;
+  --inline-title-margin-bottom: 0.5em;
+  --inline-title-size: 2.5em;
+  --inline-title-style: normal;
+  --inline-title-variant: normal;
+  --inline-title-weight: 700;
+  --input-border-width: 1px;
+  --input-date-separator: #787689;
+  --input-font-weight: 400;
+  --input-height: 30px;
+  --input-placeholder-color: #787689;
+  --input-radius: 5px;
+  --interactive-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --interactive-accent-hover: hsl(
+    calc(232 + 2),
+    calc(75% + 5%),
+    calc(70% + 4%)
+  );
+  --interactive-accent-hsl: 232, 75%, 70%;
+  --interactive-hover: hsl(220, 9%, 95%);
+  --interactive-normal: hsla(237, 10%, 97%, 75%);
+  --italic-color: inherit;
+  --italic-weight: inherit;
+  --layer-cover: 5;
+  --layer-dragged-item: 80;
+  --layer-menu: 65;
+  --layer-modal: 50;
+  --layer-notice: 60;
+  --layer-popover: 30;
+  --layer-sidedock: 10;
+  --layer-slides: 45;
+  --layer-status-bar: 15;
+  --layer-tooltip: 70;
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.3;
+  --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --link-color-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --link-external-color-hover: hsl(
+    calc(232 + 2),
+    calc(75% + 5%),
+    calc(70% + 4%)
+  );
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: #787689;
+  --link-unresolved-decoration-color: hsl(220, 5%, 78%);
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 0.7;
+  --link-weight: 700;
+  --list-bullet-border: none;
+  --list-bullet-end-padding: 1.3rem;
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.45em;
+  --list-bullet-transform: none;
+  --list-indent: calc(0.5625em * 4);
+  --list-indent-editing: 0.75em;
+  --list-indent-source: 0;
+  --list-marker-color: rgb(84, 186, 182);
+  --list-marker-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --list-marker-color-hover: rgb(219, 202, 103);
+  --list-numbered-style: decimal;
+  --list-spacing: 0.075em;
+  --menu-backdrop-filter: none;
+  --menu-background: hsl(229, 14%, 91%);
+  --menu-border-color: hsl(220, 5%, 78%);
+  --menu-border-width: 1px;
+  --menu-padding: 6px;
+  --menu-radius: 14px;
+  --menu-shadow: none;
+  --metadata-background: transparent;
+  --metadata-border-color: #d9dde8;
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-display-editing: block;
+  --metadata-display-reading: block;
+  --metadata-divider-color: #d9dde8;
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-input-background: transparent;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.15);
+  --metadata-input-background-hover: transparent;
+  --metadata-input-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-input-font-size: 0.875em;
+  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-longtext-lines: 3;
+  --metadata-input-text-color: #3e3a4f;
+  --metadata-label-background: transparent;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.15);
+  --metadata-label-background-hover: transparent;
+  --metadata-label-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --metadata-label-font-size: 0.875em;
+  --metadata-label-font-weight: inherit;
+  --metadata-label-text-color: #6d6b78;
+  --metadata-label-text-color-hover: #6d6b78;
+  --metadata-label-width: 9em;
+  --metadata-max-width: none;
+  --metadata-padding: 8px 0;
+  --metadata-property-background: transparent;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.15);
+  --metadata-property-background-hover: transparent;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(242, 19%, 72%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(220, 5%, 78%);
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-sidebar-input-font-size: calc(16px * 0.937);
+  --metadata-sidebar-label-font-size: calc(16px * 0.937);
+  --modal-background: hsla(237, 10%, 97%, 75%);
+  --modal-border-color: hsl(242, 19%, 72%);
+  --modal-border-width: 0.5pt;
+  --modal-community-sidebar-width: 25em;
+  --modal-height: 85vh;
+  --modal-max-height: 1000px;
+  --modal-max-width: 1100px;
+  --modal-max-width-narrow: 800px;
+  --modal-radius: 19px;
+  --modal-width: 90vw;
+  --nav-collapse-icon-color: #787689;
+  --nav-collapse-icon-color-collapsed: #787689;
+  --nav-heading-color: #3e3a4f;
+  --nav-heading-color-collapsed: #787689;
+  --nav-heading-color-collapsed-hover: #6d6b78;
+  --nav-heading-color-hover: #3e3a4f;
+  --nav-heading-weight: 500;
+  --nav-heading-weight-hover: 500;
+  --nav-indentation-guide-color: transparent;
+  --nav-indentation-guide-width: 0px;
+  --nav-item-background-active: rgba(255, 255, 255, 0.15);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --nav-item-background-selected: hsla(232, 75%, 70%, 0.15);
+  --nav-item-children-margin-start: 12px;
+  --nav-item-children-padding-start: 4px;
+  --nav-item-color: #6d6b78;
+  --nav-item-color-active: #3e3a4f;
+  --nav-item-color-highlighted: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --nav-item-color-hover: #3e3a4f;
+  --nav-item-color-selected: #3e3a4f;
+  --nav-item-padding: 4px 8px 4px 24px;
+  --nav-item-parent-padding: 6px 8px 6px 24px;
+  --nav-item-size: calc(16px * 0.937);
+  --nav-item-weight: inherit;
+  --nav-item-weight-active: inherit;
+  --nav-item-weight-hover: inherit;
+  --nav-item-white-space: pre;
+  --normal-folder-1: "📒";
+  --normal-folder-1-open: "📖";
+  --normal-folder-2: "📑";
+  --normal-folder-2-open: "📑";
+  --normal-folder-3: "🔖";
+  --normal-folder-3-open: "🔖";
+  --p-spacing: 1rem;
+  --p-spacing-empty: 0rem;
+  --page-transparency: 100%;
+  --panel-child: hsl(220, 9%, 95%);
+  --pdf-background: hsla(237, 10%, 97%, 75%);
+  --pdf-page-background: hsla(237, 10%, 97%, 75%);
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
+  --pdf-sidebar-background: hsla(237, 10%, 97%, 75%);
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pill-background: transparent;
+  --pill-background-hover: transparent;
+  --pill-border-color: #d9dde8;
+  --pill-border-color-hover: hsl(220, 5%, 78%);
+  --pill-border-width: 0.5pt;
+  --pill-color: #6d6b78;
+  --pill-color-hover: #3e3a4f;
+  --pill-color-remove: #787689;
+  --pill-color-remove-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --pill-decoration: none;
+  --pill-decoration-hover: none;
+  --pill-focus-left-adjust: -4px;
+  --pill-focus-width: calc(100% + 6px);
+  --pill-padding-x: 0.65em;
+  --pill-padding-y: 0.25em;
+  --pill-radius: 2em;
+  --pill-weight: inherit;
+  --popover-font-size: 16px;
+  --popover-height: 400px;
+  --popover-max-height: 95vh;
+  --popover-pdf-height: 400px;
+  --popover-pdf-width: 450px;
+  --popover-width: 450px;
+  --prompt-border-color: hsl(242, 19%, 72%);
+  --prompt-border-width: 0.5pt;
+  --prompt-input-height: 40px;
+  --prompt-max-height: 70vh;
+  --prompt-max-width: 80vw;
+  --prompt-width: 700px;
+  --radius-l: 19px;
+  --radius-m: 14px;
+  --radius-s: 7px;
+  --radius-x: 28px;
+  --radius-xl: 16px;
+  --ribbon-background: transparent;
+  --ribbon-background-collapsed: transparent;
+  --ribbon-padding: 8px 4px 12px;
+  --ribbon-width: 44px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --search-clear-button-color: #6d6b78;
+  --search-clear-button-size: 13px;
+  --search-icon-color: #6d6b78;
+  --search-icon-size: 18px;
+  --search-result-background: hsla(237, 10%, 97%, 75%);
+  --shadow-ui:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042);
+  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-tab-text-display: none;
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-10: 40px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+  --size-4-18: 72px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --slider-s-thumb-position: -5px;
+  --slider-s-thumb-size: 15px;
+  --slider-thumb-border-color: hsl(220, 5%, 78%);
+  --slider-thumb-border-width: 1px;
+  --slider-thumb-height: 18px;
+  --slider-thumb-radius: 50%;
+  --slider-thumb-width: 18px;
+  --slider-thumb-y: -6px;
+  --slider-track-background: #d9dde8;
+  --slider-track-height: 1.2px;
+  --status-bar-background: hsl(229, 14%, 91%);
+  --status-bar-border-color: rgba(0, 0, 0, 0.15);
+  --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-font-size: calc(16px * 0.8);
+  --status-bar-position: fixed;
+  --status-bar-radius: 14px 0 0 0;
+  --status-bar-text-color: #6d6b78;
+  --swatch-height: 24px;
+  --swatch-radius: 14px;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --swatch-width: 24px;
+  --sync-avatar-color-1: rgb(255, 114, 114);
+  --sync-avatar-color-2: rgb(255, 160, 88);
+  --sync-avatar-color-3: rgb(219, 202, 103);
+  --sync-avatar-color-4: rgb(132, 204, 124);
+  --sync-avatar-color-5: rgb(84, 186, 182);
+  --sync-avatar-color-6: rgb(131, 145, 237);
+  --sync-avatar-color-7: rgb(183, 140, 218);
+  --sync-avatar-color-8: rgb(233, 145, 196);
+  --sync-avatar-color-current-user: transparent;
+  --tab-background-active: #9496ac66;
+  --tab-container-background: hsl(229, 14%, 91%);
+  --tab-curve: 0px;
+  --tab-divider-color: transparent;
+  --tab-font-size: calc(16px * 0.937);
+  --tab-font-weight: inherit;
+  --tab-max-width: 320px;
+  --tab-outline-color: rgba(0, 0, 0, 0.15);
+  --tab-outline-width: 0.8px;
+  --tab-radius: 7px;
+  --tab-radius-active: 7px;
+  --tab-stacked-font-size: calc(16px * 0.937);
+  --tab-stacked-font-weight: 400;
+  --tab-stacked-header-width: 25px;
+  --tab-stacked-pane-width: 700px;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-text-align: start;
+  --tab-stacked-text-transform: rotate(0deg);
+  --tab-stacked-text-writing-mode: vertical-lr;
+  --tab-switcher-background: hsl(229, 14%, 91%);
+  --tab-switcher-menubar-background: hsl(229, 14%, 91%);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(232, 75%, 70%);
+  --tab-text-color: #787689;
+  --tab-text-color-active: #6d6b78;
+  --tab-text-color-focused: #6d6b78;
+  --tab-text-color-focused-active: #6d6b78;
+  --tab-text-color-focused-active-current: hsl(
+    calc(232 - 4),
+    75%,
+    calc(70% - 2%)
+  );
+  --tab-text-color-focused-highlighted: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tab-width: 200px;
+  --table-add-button-background: transparent;
+  --table-add-button-border-color: #d9dde8;
+  --table-add-button-border-width: 1px;
+  --table-background: #9496ac66;
+  --table-border-color: #d9dde8;
+  --table-border-width: 1px;
+  --table-cell-vertical-alignment: top;
+  --table-column-alt-background: #9496ac66;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-column-max-width: none;
+  --table-column-min-width: 6ch;
+  --table-drag-handle-background: transparent;
+  --table-drag-handle-background-active: hsl(232, 75%, 70%);
+  --table-drag-handle-color: #787689;
+  --table-drag-handle-color-active: white;
+  --table-header-background: #9496ac66;
+  --table-header-background-hover: inherit;
+  --table-header-border-color: #d9dde8;
+  --table-header-border-width: 1px;
+  --table-header-color: #3e3a4f;
+  --table-header-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --table-header-size: 16px;
+  --table-header-weight: normal;
+  --table-line-height: 1.3;
+  --table-row-alt-background: #9496ac66;
+  --table-row-alt-background-hover: #9496ac66;
+  --table-row-background-hover: #9496ac66;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(232, 75%, 70%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(232, 75%, 70%);
+  --table-selection-border-radius: 4px;
+  --table-selection-border-width: 2px;
+  --table-text-color: inherit;
+  --table-text-size: 16px;
+  --table-white-space: break-spaces;
+  --tag-background: hsla(232, 75%, 70%, 0.1);
+  --tag-background-hover: hsla(232, 75%, 70%, 0.2);
+  --tag-border-color: hsla(232, 75%, 70%, 0.15);
+  --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+  --tag-border-width: 0px;
+  --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --tag-size: 0.875em;
+  --tag-weight: inherit;
+  --text-accent: hsl(232, 75%, 70%);
+  --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --text-error: rgb(255, 114, 114);
+  --text-faint: #787689;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-muted: #6d6b78;
+  --text-normal: #3e3a4f;
+  --text-on-accent: white;
+  --text-on-accent-inverted: black;
+  --text-selection: hsla(232, 75%, 70%, 0.2);
+  --text-success: rgb(132, 204, 124);
+  --text-warning: rgb(255, 160, 88);
+  --tile-field-padding: 5px;
+  --tile-img-radius: 14px;
+  --tile-padding: 8px;
+  --tile-radius: 14px;
+  --titlebar-background: hsl(229, 14%, 91%);
+  --titlebar-background-focused: #9496ac66;
+  --titlebar-border-color: #d9dde8;
+  --titlebar-border-width: 0px;
+  --titlebar-height: 30px;
+  --titlebar-text-color: #6d6b78;
+  --titlebar-text-color-focused: #3e3a4f;
+  --titlebar-text-weight: 700;
+  --toggle-border-width: 2px;
+  --toggle-radius: 18px;
+  --toggle-s-border-width: 2px;
+  --toggle-s-thumb-height: 15px;
+  --toggle-s-thumb-width: 15px;
+  --toggle-s-width: 34px;
+  --toggle-thumb-color: white;
+  --toggle-thumb-height: 18px;
+  --toggle-thumb-radius: 18px;
+  --toggle-thumb-width: 18px;
+  --toggle-width: 40px;
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
+  --vault-name-font-size: 2em;
+  --vault-name-font-weight: 700;
+  --vault-profile-actions-display: flex;
+  --vault-profile-color: #3e3a4f;
+  --vault-profile-color-hover: #3e3a4f;
+  --vault-profile-display: flex;
+  --vault-profile-font-size: calc(16px * 0.937);
+  --vault-profile-font-weight: 500;
+  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
+  --zoom-factor: 1;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  background-color: hsla(237, 10%, 97%, 75%);
+  caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  color: #3e3a4f;
+  contain: initial;
+  font-family:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.3;
+  margin: 0;
+  overflow: initial;
+  overscroll-behavior: none;
+  padding: 0;
+  padding-top: 0;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+  width: 100%;
+}
+
+h1 a {
+  --link-weight: 700;
+}
+
+h2 a {
+  --link-weight: 700;
+}
+
+h3 a {
+  --link-weight: 700;
+}
+
+h4 a {
+  --link-weight: 700;
+}
+
+h5 a {
+  --link-weight: 700;
+}
+
+h6 a {
+  --link-weight: 700;
+}
+
+h1 {
+  --font-weight: 700;
+  color: rgb(84, 186, 182);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+h2 {
+  --font-weight: 700;
+  color: rgb(131, 145, 237);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 2.35em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+h3 {
+  --font-weight: 700;
+  color: rgb(183, 140, 218);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+h4 {
+  --font-weight: 700;
+  color: rgb(233, 145, 196);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 1.75em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+h5 {
+  --font-weight: 700;
+  color: rgb(255, 114, 114);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.5;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+h6 {
+  --font-weight: 700;
+  color: rgb(255, 160, 88);
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.5;
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
+
+.markdown-rendered pre {
+  background-color: hsl(220, 9%, 95%);
+  border: 1px solid #d9dde8;
+  border-radius: 7px;
+  box-shadow: none;
+  min-height: 38px;
+  overflow-x: auto;
+  padding: 2em;
+  position: relative;
+  white-space: pre-wrap;
+}
+
+.markdown-rendered code {
+  -webkit-box-decoration-break: clone;
+  background-color: hsl(220, 9%, 95%);
+  border: 0px solid #d9dde8;
+  border-radius: 7px;
+  color: #3e3a4f;
+  font-family: "DM Mono", monospace;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 0.15em 0.3em;
+}
+
+.markdown-rendered pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.markdown-rendered button.copy-code-button {
+  background-color: transparent;
+  box-shadow: none;
+  color: #6d6b78;
+  font-family:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: calc(16px * 0.8);
+  height: auto;
+  inset-inline-end: 0;
+  margin: 6px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 0;
+}
+
+.markdown-rendered button.copy-code-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.callout {
+  --callout-color: 131, 145, 237;
+  --callout-icon: lucide-pencil;
+  background-color: #9496ac66;
+  border: 1px solid rgba(158, 158, 158, 0.35);
+  border-color: rgba(158, 158, 158, 0.25);
+  border-radius: 14px;
+  border-style: solid;
+  border-width: 0px;
+  margin: calc(2em * 0.4) auto;
+  max-width: 700px;
+  min-width: 320px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  padding: 0;
+}
+
+.callout-title {
+  align-items: flex-start;
+  background-color: rgba(158, 158, 158, 0.08);
+  color: rgb(158, 158, 158);
+  display: flex;
+  font-size: inherit;
+  gap: 4px;
+  line-height: 1.3;
+  margin: 0px auto;
+  padding: 12px;
+  width: 100%;
+}
+
+.callout-title-inner {
+  --font-weight: calc(700 + 200);
+  color: inherit;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: auto;
+  width: fit-content;
+}
+
+.callout-content {
+  background-color: transparent;
+  overflow-x: auto;
+  padding: 0;
+}
+
+.callout[data-callout="tip"] {
+  --callout-color: 219, 202, 103;
+  --callout-icon: lucide-star;
+}
+
+.callout[data-callout="warning"] {
+  --callout-color: 255, 160, 88;
+  --callout-icon: lucide-alert-octagon;
+}
+
+.callout[data-callout="danger"] {
+  --callout-color: 255, 160, 88;
+  --callout-icon: lucide-zap;
+}
+
+.callout[data-callout="abstract"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-layout-list;
+}
+
+.callout[data-callout="todo"] {
+  --callout-color: 131, 145, 237;
+  --callout-icon: lucide-check-circle-2;
+}
+
+.callout[data-callout="question"] {
+  --callout-color: 219, 202, 103;
+  --callout-icon: help-circle;
+}
+
+.callout[data-callout="info"] {
+  --callout-color: 131, 145, 237;
+  --callout-icon: lucide-info;
+}
+
+.callout[data-callout="success"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-check-circle;
+}
+
+.callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+  --callout-icon: message-square;
+  clear: right;
+  display: flexbox;
+  float: right;
+  height: flex;
+  margin: 1em;
+  max-width: 35%;
+  min-width: 20%;
+  width: flex;
+}
+
+.callout[data-callout="example"] {
+  --callout-color: 183, 140, 218;
+  --callout-icon: lucide-list;
+}
+
+.callout[data-callout="bug"] {
+  --callout-color: 233, 145, 196;
+  --callout-icon: lucide-server-crash;
+}
+
+.callout[data-callout="summary"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-layout-list;
+}
+
+.callout[data-callout="tldr"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-layout-list;
+}
+
+.callout[data-callout="important"] {
+  --callout-color: 84, 186, 182;
+  --callout-icon: lucide-flame;
+}
+
+.callout[data-callout="hint"] {
+  --callout-color: 219, 202, 103;
+  --callout-icon: lucide-star;
+}
+
+.callout[data-callout="check"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-check-circle;
+}
+
+.callout[data-callout="done"] {
+  --callout-color: 132, 204, 124;
+  --callout-icon: lucide-check-circle;
+}
+
+.callout[data-callout="help"] {
+  --callout-color: 219, 202, 103;
+  --callout-icon: help-circle;
+}
+
+.callout[data-callout="faq"] {
+  --callout-color: 219, 202, 103;
+  --callout-icon: help-circle;
+}
+
+.callout[data-callout="caution"] {
+  --callout-color: 255, 160, 88;
+  --callout-icon: lucide-alert-octagon;
+}
+
+.callout[data-callout="attention"] {
+  --callout-color: 255, 160, 88;
+  --callout-icon: lucide-alert-octagon;
+}
+
+.callout[data-callout="failure"] {
+  --callout-color: 255, 114, 114;
+  --callout-icon: lucide-slash;
+}
+
+.callout[data-callout="error"] {
+  --callout-color: 255, 160, 88;
+  --callout-icon: lucide-zap;
+}
+
+.callout[data-callout="fail"] {
+  --callout-color: 255, 114, 114;
+  --callout-icon: lucide-slash;
+}
+
+.callout[data-callout="missing"] {
+  --callout-color: 255, 114, 114;
+  --callout-icon: lucide-slash;
+}
+
+.callout[data-callout="cite"] {
+  --callout-color: 158, 158, 158;
+  --callout-icon: message-square;
+  clear: right;
+  display: flexbox;
+  float: right;
+  height: flex;
+  margin: 1em;
+  max-width: 35%;
+  min-width: 20%;
+  width: flex;
+}
+
+.callout-content .callout {
+  margin-top: 20px;
+}
+
+.callout-icon {
+  --icon-size: 1.5em;
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  padding-right: 1em;
+}
+
+.callout-icon .svg-icon {
+  color: rgb(158, 158, 158);
+}
+
+.callout-icon::after {
+  content: "\200B";
+}
+
+.callout-fold {
+  align-items: center;
+  display: flex;
+  padding-inline-end: 8px;
+}
+
+.callout-fold::after {
+  content: "\200B";
+}
+
+.callout-fold .svg-icon {
+  transition: transform 100ms ease-in-out;
+}
+
+.callout-fold.is-collapsed .svg-icon {
+  transform: rotate(calc(-1 * -1 * 90deg));
+}
+
+.metadata-input-longtext {
+  color: #3e3a4f;
+  cursor: text;
+  flex-grow: 1;
+  font-size: calc(16px * 0.937);
+  max-height: 300px;
+  padding: 4px 8px;
+  unicode-bidi: plaintext;
+  white-space: pre-wrap;
+}
+
+.popover {
+  background-color: hsla(237, 10%, 97%, 75%);
+  border: 1px solid #d9dde8;
+  border-radius: 14px;
+  box-shadow: none;
+  display: flex;
+  max-height: 95vh;
+  position: absolute;
+  z-index: 30;
+}
+
+.prompt {
+  animation: slide-down 0.25s;
+  background-color: hsla(237, 10%, 97%, 75%);
+  border: 0.5pt solid hsl(242, 19%, 72%);
+  border-radius: 19px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  max-width: 80vw;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  width: 700px;
+  z-index: 1;
+}
+
+input.prompt-input {
+  background-color: hsla(237, 10%, 97%, 75%);
+  border: none;
+  border-bottom: 1px solid hsl(229, 14%, 91%);
+  border-radius: 0;
+  font-size: 16px;
+  height: 48px;
+  padding: 24px;
+  padding-inline-end: 48px;
+  width: 100%;
+}
+
+.suggestion-item.is-selected {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.suggestion-highlight {
+  background-color: transparent;
+  color: hsl(232, 75%, 70%);
+  font-weight: bold;
+}
+
+.markdown-rendered mark {
+  background-color: rgba(255, 208, 0, 0.4);
+  border-radius: 6px;
+  color: white;
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  padding: 3px 0.4em;
+}
+
+a.tag {
+  background-color: #9496ac66;
+  border: 0.8px solid vaR(--background-modifier-border);
+  border-radius: vaR(--radius-s);
+  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif,
+    "Noto Color Emoji";
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: 1;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+input[type="search"] {
+  -webkit-app-region: no-drag;
+  background: #d9dde8;
+  border: 1px solid #d9dde8;
+  border-radius: 5px;
+  color: #3e3a4f;
+  font-family: inherit;
+  font-size: calc(16px * 0.937);
+  height: 40px;
+  outline: none;
+  padding: 4px 8px;
+}
+
+.nav-files-container {
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 16px 16px 0px px;
+  padding-bottom: max(34px, 24px);
+  scroll-padding-block: 8px;
+}
+
+.nav-file-tag {
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 7px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  margin-inline-start: auto;
+  padding: 0 4px;
+  text-transform: uppercase;
+}
+
+.nav-file-icon {
+  align-items: center;
+  color: hsl(232, 75%, 70%);
+  display: inline-flex;
+  margin-inline-end: 6px;
+  opacity: 1;
+  position: relative;
+}
+
+.nav-folder-title {
+  background-color: transparent;
+  border-radius: 7px;
+  color: #3e3a4f;
+  cursor: pointer;
+  display: flex;
+  font-family:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-size: 0.9em;
+  font-weight: inherit;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  padding: 4px;
+  padding-left: 15px;
+  transition: font-size 0.1s;
+}
+
+.nav-file-title {
+  border-radius: 0px;
+  color: #3e3a4f;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.86em;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  padding: 6px 8px 6px 24px;
+  padding-bottom: 6.6px;
+  padding-top: 6.6px;
+  transition: font-size 65ms;
+}
+
+.nav-file-title.is-active {
+  background-color: transparent;
+  border-left: 3px hsl(232, 75%, 70%) solid;
+  color: #3e3a4f;
+  font-weight: inherit;
+}
+
+.nav-folder-title.is-active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #3e3a4f;
+  font-weight: inherit;
+}
+
+.nav-file-title.is-selected {
+  background-color: hsla(232, 75%, 70%, 0.15);
+  color: #3e3a4f;
+}
+
+.nav-folder-title.is-selected {
+  background-color: hsla(232, 75%, 70%, 0.15);
+  color: #3e3a4f;
+}
+
+.tree-item-self {
+  align-items: baseline;
+  border-radius: 7px;
+  color: #3e3a4f;
+  display: flex;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  padding: 6px 8px 6px 24px;
+  position: relative;
+}
+
+.tree-item-self:before {
+  content: "\200B";
+}
+
+.tree-item-self.mod-collapsible {
+  padding: 6px 8px 6px 24px;
+}
+
+.tree-item-self.is-clickable {
+  cursor: pointer;
+}
+
+.is-mobile .tree-item-self.is-clickable {
+  transition:
+    background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+}
+
+.tree-item-self.is-clickable.mobile-tap {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #3e3a4f;
+  font-weight: inherit;
+}
+
+.tree-item-self.is-active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #3e3a4f;
+  font-weight: inherit;
+}
+
+.tree-item-self.is-selected {
+  background-color: hsla(232, 75%, 70%, 0.15);
+  color: #3e3a4f;
+}
+
+.tree-item-self.is-being-dragged {
+  background-color: hsl(232, 75%, 70%);
+  color: white;
+}
+
+.tree-item-self .tree-item-icon {
+  align-items: center;
+  color: hsl(232, 75%, 70%);
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin-inline-start: calc(-1 * 20px);
+  opacity: 1;
+  position: absolute;
+  width: 16px;
+}
+
+.tree-item-self .tree-item-icon:before {
+  content: "\200b";
+}
+
+.tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
+  --icon-size: 14px;
+  --icon-stroke: 1.3px;
+}
+
+.tree-item-flair-outer {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  padding-inline-start: 4px;
+}
+
+.tree-item-flair {
+  border-radius: 7px;
+  color: #787689;
+  font-size: calc(16px * 0.8);
+  line-height: 1;
+}
+
+.tree-item-inner {
+  overflow: hidden;
+  unicode-bidi: plaintext;
+  white-space: pre-wrap;
+}
+
+.tree-item-inner-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tree-item-inner-subtext {
+  color: #787689;
+  font-size: 85%;
+}
+
+.tree-item-children {
+  border-inline-start: 0px solid transparent;
+  margin-bottom: 1px;
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
+}
+
+kbd {
+  background-color: hsl(220, 9%, 95%);
+  border-radius: 7px;
+  color: #3e3a4f;
+  font-family: "DM Mono", monospace;
+  font-size: 1em;
+  padding: 0.1em 0.25em;
+}
+
+svg.svg-icon {
+  height: 32px;
+  stroke-width: 1.25px;
+  width: 32px;
+}
+
+.clickable-icon.mod-warning {
+  color: rgb(255, 114, 114);
+}
+
+.clickable-icon.mod-filled svg {
+  fill: hsl(232, 75%, 70%);
+}
+
+.setting-item-control .clickable-icon {
+  padding: 4px;
+}
+
+.clickable-icon[aria-disabled="true"] {
+  background-color: unset;
+  color: #6d6b78;
+  opacity: 0.4;
+}
+
+.clickable-icon.mobile-tap {
+  opacity: 0.65;
+}
+
+.is-mobile .clickable-icon {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.clickable-icon.is-active {
+  background-color: hsla(232, 75%, 70%, 0.15);
+  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  opacity: 0.65;
+}
+
+.clickable-icon {
+  -webkit-app-region: no-drag;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 7px;
+  color: hsl(232, 75%, 70%);
+  cursor: pointer;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  opacity: 1;
+  padding: 4px 6px;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: #787689;
+  padding: 2px 1px;
+}
+
+.backlink-pane {
+  flex: 1 0 0;
+  overflow-y: auto;
+  padding-bottom: max(34px, 32px);
+  padding-inline-end: 12px;
+  padding-inline-start: 12px;
+  padding-top: 4px;
+}
+
+.backlink-pane .search-result-container {
+  padding: 4px 1px 16px;
+}
+
+.backlink-pane > .tree-item-self {
+  color: #3e3a4f;
+  padding-inline-start: 8px;
+}
+
+.backlink-pane > .tree-item-self .tree-item-inner {
+  font-weight: 500;
+}
+
+.backlink-pane > .tree-item-self.is-clickable.is-collapsed {
+  color: #787689;
+}
+
+.graph-view.color-fill {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-focused {
+  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+}
+
+.graph-view.color-fill-tag {
+  color: rgb(132, 204, 124);
+}
+
+.graph-view.color-fill-attachment {
+  color: rgb(219, 202, 103);
+}
+
+.graph-view.color-fill-unresolved {
+  color: #787689;
+  opacity: 0.5;
+}
+
+.graph-view.color-fill-1 {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-2 {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-3 {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-4 {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-5 {
+  color: #6d6b78;
+}
+
+.graph-view.color-fill-6 {
+  color: #6d6b78;
+}
+
+.graph-view.color-arrow {
+  color: #3e3a4f;
+  opacity: 0.5;
+}
+
+.graph-view.color-circle {
+  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+}
+
+.graph-view.color-line {
+  color: hsl(220, 5%, 78%);
+}
+
+.graph-view.color-text {
+  color: #3e3a4f;
+}
+
+.graph-view.color-fill-highlight {
+  color: hsl(232, 75%, 70%);
+}
+
+.graph-view.color-line-highlight {
+  color: hsl(232, 75%, 70%);
+}
+
+.graph-controls {
+  background-color: hsla(237, 10%, 97%, 75%);
+  border-radius: 14px;
+  inset-inline-end: 12px;
+  overflow: auto;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  width: 240px;
+}
+
+.theme-dark {
+  --background-modifier-border: #d9dde8;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: #d9dde8;
+  --background-secondary-alt: #9496ac66;
+  --color-accent: hsl(232, 75%, 70%);
+  --color-accent-1: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-3: hsl(calc(232 + 35), 75%, calc(70% + 12%));
+  --color-accent-hsl: 232, 75%, 70%;
+  --color-base-00: hsla(216, 16%, 13%, 75%);
+  --color-base-05: #212121;
+  --color-base-10: hsl(216, 17%, 14%);
+  --color-base-100: #c8d4e6;
+  --color-base-20: hsl(216, 19%, 16%);
+  --color-base-25: hsl(216, 20%, 20%);
+  --color-base-30: hsl(218, 18%, 15%);
+  --color-base-35: hsl(218, 19%, 27%);
+  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-50: hsl(219, 13%, 51%);
+  --color-base-60: hsl(219, 16%, 59%);
+  --color-base-70: hsl(220, 17%, 66%);
+  --color-blue: #009be3;
+  --color-blue-rgb: 0, 155, 227;
+  --color-cyan: #00cecb;
+  --color-cyan-rgb: 0, 206, 203;
+  --color-green: #7dcf2b;
+  --color-green-rgb: 125, 207, 43;
+  --color-orange: #f69c00;
+  --color-orange-rgb: 246, 156, 0;
+  --color-pink: #e66ab4;
+  --color-pink-rgb: 230, 106, 180;
+  --color-purple: #b45af5;
+  --color-purple-rgb: 180, 90, 245;
+  --color-red: #ff4d3a;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #e8c900;
+  --color-yellow-rgb: 232, 201, 0;
+  --doc-bg: hsl(207, 24%, 22%);
+  --highlight-mix-blend-mode: lighten;
+  --highlight-text: white;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(232, 75%, 70%);
+  --interactive-accent-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --interactive-hover: hsl(220, 5%, 78%);
+  --interactive-normal: #9496ac66;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #d9dde8;
+  --pdf-thumbnail-shadow: 0 0 0 1px #d9dde8;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(232, 75%, 70%, 0.25);
+}
+
+.theme-light {
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: hsl(210, 10%, 96%);
+  --color-accent: hsl(232, 75%, 70%);
+  --color-accent-1: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-3: hsl(calc(232 + 35), 75%, calc(70% + 12%));
+  --color-accent-hsl: 232, 75%, 70%;
+  --color-base-00: hsla(0, 0%, 100%, 75%);
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fdfdfd;
+  --color-base-100: #252525;
+  --color-base-20: hsl(0, 0%, 96%);
+  --color-base-25: #efefef;
+  --color-base-30: #9f9f9f66;
+  --color-base-35: #dedede;
+  --color-base-40: #d7d7d7;
+  --color-base-50: #878787;
+  --color-base-60: #939393;
+  --color-base-70: #7f7f7f;
+  --color-blue: #4e8aa6;
+  --color-blue-rgb: 0, 155, 227;
+  --color-cyan: #49a7ba;
+  --color-cyan-rgb: 0, 206, 203;
+  --color-green: #8fb26b;
+  --color-green-rgb: 125, 207, 43;
+  --color-orange: #d08344;
+  --color-orange-rgb: 246, 156, 0;
+  --color-pink: #ac7aaa;
+  --color-pink-rgb: 230, 106, 180;
+  --color-purple: #8076ad;
+  --color-purple-rgb: 180, 90, 245;
+  --color-red: #c75f54;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #dca931;
+  --color-yellow-rgb: 232, 201, 0;
+  --doc-bg: hsl(181, 20%, 95%);
+  --highlight-mix-blend-mode: darken;
+  --highlight-text: #3e3a4f;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-color: hsl(0, 0%, 92%);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+}
+
+.mod-sidedock {
+  --bases-table-header-background: hsl(229, 14%, 91%);
+}
+
+.workspace-split {
+  background-color: hsla(237, 10%, 97%, 75%);
+  display: flex;
+  position: relative;
+}
+
+.workspace-tabs.mod-top {
+  --tab-container-background: hsla(237, 10%, 97%, 75%);
+}
+
+.workspace-tabs .workspace-leaf {
+  background-color: transparent;
+  height: 100%;
+}
+
+.workspace-split.mod-root {
+  background-color: hsla(237, 10%, 97%, 75%);
+}
+
+.workspace-split.mod-root .view-content {
+  background-color: hsla(237, 10%, 97%, 75%);
+}
+
+.workspace-leaf-resize-handle {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top: 0;
+  border-width: 0px;
+  margin: 0;
+  position: absolute;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+  z-index: 5;
+}

@@ -2529,7 +2529,6 @@ body {
   --text-title-h3: #333;
   --text-title-h4: #333;
   --text-title-h5: #333;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2624,12 +2623,10 @@ body {
   --text-title-h3: #cbdbe5;
   --text-title-h4: #cbdbe5;
   --text-title-h5: #cbdbe5;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

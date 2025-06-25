@@ -2529,7 +2529,6 @@ body {
   --tag-7-default: rgb(250, 222, 201);
   --tag-8-default: rgb(238, 224, 218);
   --tag-9-default: rgb(227, 226, 224);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2614,12 +2613,10 @@ body {
   --tag-9-default: rgb(96, 59, 44);
   --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --text-selection: hsla(210, 77%, 51%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

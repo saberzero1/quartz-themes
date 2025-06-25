@@ -2913,7 +2913,6 @@ svg.svg-icon {
         calc(var(--base-l) * 0.1),
         0.15
       );
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -3187,7 +3186,6 @@ svg.svg-icon {
         calc(var(--base-l) * 0.5),
         0.05
       );
-  color-scheme: light;
 }
 
 .mod-sidedock {

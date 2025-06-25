@@ -1789,7 +1789,6 @@ svg.svg-icon {
   --text-highlight-bg: var(--color-light-carmine-pink);
   --text-selection: var(--color-light-carmine-pink);
   color: var(--color-timberwolf);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1867,7 +1866,6 @@ svg.svg-icon {
   --text-highlight-bg: var(--color-tulip);
   --text-selection: var(--color-tulip);
   color: var(--color-tulip);
-  color-scheme: light;
 }
 
 .mod-sidedock {

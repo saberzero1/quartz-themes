@@ -2519,7 +2519,6 @@ body {
   --text-on-accent: #ffffff;
   --titlebar-background: #f9fafb;
   --titlebar-background-focused: #f9fafb;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2610,12 +2609,10 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: #212121;
   --titlebar-background-focused: #000000;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2606,7 +2606,6 @@ body {
   --text-on-accent: var(--canvas1);
   --text-selection: var(--canvas4);
   --text-tag: var(--color-green);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2699,12 +2698,10 @@ body {
   --text-on-accent: var(--canvas1);
   --text-selection: var(--canvas4);
   --text-tag: var(--color-green);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

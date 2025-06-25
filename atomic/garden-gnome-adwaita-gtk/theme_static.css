@@ -2640,7 +2640,6 @@ body {
   --text-accent-hover: #3584e4;
   --titlebar-background: #ffffff;
   --titlebar-background-focused: #ffffff;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2738,12 +2737,10 @@ body {
   --text-selection: hsla(213, 88%, 66%, 0.33);
   --titlebar-background: hsl(290, 1%, 15%);
   --titlebar-background-focused: hsl(0, 0%, 19%);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

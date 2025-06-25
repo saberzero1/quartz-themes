@@ -2606,7 +2606,6 @@ body {
   --text-highlight-bg: hsla(210, 100%, 44%, calc(20% + 30%));
   --text-highlight-bg-active: hsla(210, 100%, 44%, calc(20% + 50%));
   --text-muted: hsl(0, calc(0% - 5%), calc(97% - 60%));
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2702,12 +2701,10 @@ body {
   --text-muted: hsl(0, 0%, calc(20% + 65%));
   --text-selection: hsla(210, 100%, 44%, 0.25);
   --titlebar-background-focused: #272727;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -24198,7 +24195,6 @@ body.theme-light.is-mobile {
   --text-highlight-bg: hsla(210, 100%, 44%, calc(20% + 30%));
   --text-highlight-bg-active: hsla(210, 100%, 44%, calc(20% + 50%));
   --text-muted: hsl(0, calc(0% - 5%), calc(97% - 60%));
-  color-scheme: light;
 }
 
 body.theme-dark.is-mobile {
@@ -24283,7 +24279,6 @@ body.theme-dark.is-mobile {
   --text-muted: hsl(0, 0%, calc(20% + 65%));
   --text-selection: hsla(210, 100%, 44%, 0.25);
   --titlebar-background-focused: #272727;
-  color-scheme: dark;
 }
 
 body.is-mobile.theme-dark.mobile-black-background {

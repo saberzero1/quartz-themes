@@ -1801,7 +1801,6 @@ svg.svg-icon {
   --text-selection: rgba(223, 74, 22, 0.8);
   --tooltip-bg: rgba(223, 74, 22, 0.9);
   --workspace-leaf-resize: #494949;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1888,7 +1887,6 @@ svg.svg-icon {
   --text-selection: rgba(223, 74, 22, 0.8);
   --tooltip-bg: rgba(223, 74, 22, 0.9);
   --workspace-leaf-resize: #c1c1c1;
-  color-scheme: light;
 }
 
 .mod-sidedock {

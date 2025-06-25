@@ -1842,7 +1842,6 @@ svg.svg-icon {
   --text-on-accent: var(--white);
   --text-selection: var(--black);
   --white: #000000;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1959,7 +1958,6 @@ svg.svg-icon {
   --text-on-accent: var(--white);
   --text-selection: var(--black);
   --white: #ffffff;
-  color-scheme: light;
 }
 
 .mod-sidedock {

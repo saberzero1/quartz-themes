@@ -2630,7 +2630,6 @@ body {
   --text-faint: rgb(147, 161, 161);
   --text-muted: rgb(131, 148, 150);
   --text-normal: rgb(101, 123, 131);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2723,12 +2722,10 @@ body {
     44.1176470588%,
     0.33
   );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

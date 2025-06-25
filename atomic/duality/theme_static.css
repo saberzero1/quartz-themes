@@ -2774,7 +2774,6 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 16px;
   --vault-profile-font-weight: 500;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2925,12 +2924,10 @@ body {
   --text-normal: #d4c9b5;
   --text-on-accent: #000000;
   --text-selection: rgba(255, 69, 0, 0.3);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2640,7 +2640,6 @@ body {
   --text-title-h6: #4d699b;
   --vim-cursor-backgroung: #dcd7ba;
   --vim-cursor-color: #545464;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2741,12 +2740,10 @@ body {
   --text-title-h6: #458588;
   --vim-cursor-backgroung: #dcd7ba;
   --vim-cursor-color: #1f1f28;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

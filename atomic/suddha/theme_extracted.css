@@ -2077,7 +2077,6 @@ svg.svg-icon {
   --text-selection: rgba(50, 50, 50, 1);
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 3%));
   --translucency: 0.95;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2260,7 +2259,6 @@ svg.svg-icon {
   --text-selection: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%));
   --translucency: 0.85;
-  color-scheme: light;
 }
 
 .mod-sidedock {

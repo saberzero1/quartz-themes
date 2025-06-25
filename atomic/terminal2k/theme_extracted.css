@@ -1863,7 +1863,6 @@ svg.svg-icon {
   --text-normal: var(--white);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --underline-line-color: var(--green-bright);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1970,7 +1969,6 @@ svg.svg-icon {
   --text-accent: var(--green-bright);
   --text-normal: var(--black-light-light);
   --underline-line-color: var(--green-bright);
-  color-scheme: light;
 }
 
 .mod-sidedock {

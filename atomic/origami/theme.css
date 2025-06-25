@@ -2581,7 +2581,6 @@ body {
   --shadow-s: rgb(0 0 0 / 4%) 0px 3px 5px;
   --text-on-accent: var(--color-base-100);
   --text-on-button: var(--color-base-00);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2663,12 +2662,10 @@ body {
   --text-accent: var(--color-accent-1);
   --text-on-button: var(--color-base-00);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -24640,7 +24637,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-green-d.theme-dark {
@@ -24684,7 +24680,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* blue theme
@@ -24730,7 +24725,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-blue-d.theme-dark {
@@ -24774,7 +24768,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* magic theme
@@ -24820,7 +24813,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-purple-d.theme-dark {
@@ -24864,7 +24856,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* minimum
@@ -24910,7 +24901,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-light.o-min-l .workspace-ribbon {
@@ -25004,7 +24994,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* paperlike
@@ -25050,7 +25039,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-soft-d.theme-dark {
@@ -25094,7 +25082,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* shark time
@@ -25147,7 +25134,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-shark-d.theme-dark {
@@ -25198,7 +25184,6 @@ cleaned for readability by void bb with 🖤
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-light.o-shark-l .nav-file-title.is-active {
@@ -25639,7 +25624,6 @@ cleaned for readability by void bb with 🖤
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: var(--color-base-00);
-  color-scheme: dark;
 }
 
 /* hack.night
@@ -25689,7 +25673,6 @@ cleaned for readability by void bb with 🖤
   --radius-m: 0px;
   --radius-s: 0px;
   --text-on-accent: var(--color-base-100);
-  color-scheme: dark;
 }
 
 .o-hack-d.workspace-tab-header-container {

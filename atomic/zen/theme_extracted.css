@@ -1868,7 +1868,6 @@ svg.svg-icon {
   --win-window-brightness: 0.3;
   --win-window-opacity: 0.4;
   --workspace-background-translucent: hsla(0, 0%, 0%, 0.2);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1962,7 +1961,6 @@ svg.svg-icon {
   --win-window-brightness: 0.6;
   --win-window-opacity: 0.2;
   --workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
-  color-scheme: light;
 }
 
 .mod-sidedock {

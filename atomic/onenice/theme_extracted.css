@@ -1839,7 +1839,6 @@ svg.svg-icon {
   --text-title-h5: #bf68d9;
   --text-title-h6: #7a818e;
   --yellow: #e5c07b;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1955,7 +1954,6 @@ svg.svg-icon {
   --text-title-h5: #a626a4;
   --text-title-h6: #818387;
   --yellow: #986801;
-  color-scheme: light;
 }
 
 .mod-sidedock {

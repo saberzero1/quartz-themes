@@ -2889,7 +2889,6 @@ body {
   --text-highlight-bg: var(--color-ash-500);
   --text-highlight-bg-active: var(--color-yellow-alpha-100);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3048,13 +3047,11 @@ body {
   --text-highlight-bg: var(--color-gray-alpha-100);
   --text-highlight-bg-active: var(--color-yellow-alpha-50);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
   border-radius: var(--radius-m);
-  color-scheme: normal;
   display: none;
   width: 100%;
 }

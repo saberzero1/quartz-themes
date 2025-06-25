@@ -2519,7 +2519,6 @@ body {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: hsl(210, 77%, 51%, 0.2);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2589,12 +2588,10 @@ body {
   --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --text-highlight-bg: hsl(210, 77%, 51%, 0.3);
   --text-selection: hsla(210, 77%, 51%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -25204,7 +25201,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-default.theme-dark {
@@ -25239,7 +25235,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-crystal.theme-light .vertical-tab-nav-item {
@@ -25304,7 +25299,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --vault-name-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
-  color-scheme: light;
 }
 
 .theme-crystal.theme-dark {
@@ -25342,7 +25336,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --vault-name-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
-  color-scheme: dark;
 }
 
 .theme-ash-old.theme-light .vertical-tab-nav-item {
@@ -25396,7 +25389,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --vault-name-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
-  color-scheme: light;
 }
 
 .theme-ash-old.theme-dark {
@@ -25434,7 +25426,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --vault-name-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
-  color-scheme: dark;
 }
 
 .theme-spring {
@@ -25482,7 +25473,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-spring.theme-dark {
@@ -25519,7 +25509,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-novelist {
@@ -25729,7 +25718,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-novelist.theme-dark {
@@ -25747,7 +25735,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-nord.colorful-headings {
@@ -25812,7 +25799,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-nord.theme-dark {
@@ -25846,7 +25832,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-classic {
@@ -25885,7 +25870,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-classic.theme-dark {
@@ -25919,7 +25903,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-light-and-bright {
@@ -25968,7 +25951,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-light-and-bright.theme-dark {
@@ -26002,7 +25984,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-light-and-bright .markdown-rendered hr::before {
@@ -26090,7 +26071,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-solarized.theme-dark {
@@ -26106,7 +26086,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-base-60: #586b6d;
   --color-base-70: #657c7e;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 .theme-gruvbox {
@@ -26166,7 +26145,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-gruvbox.theme-dark {
@@ -26201,7 +26179,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-yellow: #fabd2f;
   --color-yellow-rgb: 215, 153, 33;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 .theme-anytype.colored-bold-and-italic {
@@ -26357,7 +26334,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-anytype.theme-dark {
@@ -26374,7 +26350,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-base-60: #9c9994;
   --color-base-70: #aeaba6;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 .theme-chinchilla.theme-light {
@@ -26557,7 +26532,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --theme-decoration: "☀️";
-  color-scheme: light;
 }
 
 .theme-celestial.theme-dark {
@@ -26603,7 +26577,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --theme-decoration: "☾";
-  color-scheme: dark;
 }
 
 .theme-celestial.theme-dark blockquote {
@@ -26905,7 +26878,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-notion.theme-dark {
@@ -26939,7 +26911,6 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
   --color-yellow: #cb912f;
   --color-yellow-rgb: 203, 145, 47;
   --highlight-mix-blend-mode: lighten;
-  color-scheme: dark;
 }
 
 .folder-rainbow-titles .nav-folder-title {

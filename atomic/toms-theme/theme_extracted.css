@@ -1808,7 +1808,6 @@ svg.svg-icon {
   --text-normal: var(--color-green);
   --text-on-accent: var(--color-darkgreen);
   --text-selection: var(--color-darkgreen);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1900,7 +1899,6 @@ svg.svg-icon {
   --text-normal: var(--color-nearblack);
   --text-on-accent: var(--color-darkgreen);
   --text-selection: var(--color-green);
-  color-scheme: light;
 }
 
 .mod-sidedock {

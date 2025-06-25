@@ -2587,7 +2587,6 @@ body {
   --text-faint: var(--color-base-60);
   --text-muted: var(--color-base-50);
   --text-normal: var(--color-base-40);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2663,12 +2662,10 @@ body {
   --text-muted: var(--color-base-50);
   --text-normal: var(--color-base-60);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

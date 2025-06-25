@@ -2519,7 +2519,6 @@ body {
   --text-on-accent: #24272b;
   --text-selection: #fffdfb;
   --yellow: #92963a;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2620,12 +2619,10 @@ body {
   --text-on-accent: #636363;
   --text-selection: #636363;
   --yellow: #92963a;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

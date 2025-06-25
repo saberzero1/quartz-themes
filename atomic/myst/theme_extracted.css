@@ -1774,7 +1774,6 @@ svg.svg-icon {
   --text-normal: #bcbec4;
   --text-selection: #214283;
   color: #932d2d;
-  color-scheme: dark;
   content: "image";
   font-variation-settings:
     "FILL" 1,
@@ -1863,7 +1862,6 @@ svg.svg-icon {
   --text-normal: #000;
   --text-selection: #214283;
   color: #c80505;
-  color-scheme: light;
   content: "image";
   font-variation-settings:
     "FILL" 0,

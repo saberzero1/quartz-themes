@@ -2636,7 +2636,6 @@ body {
   --text-highlight-bg-rgb: var(--highlight-color);
   --titlebar-background: var(--background-secondary-alt);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2752,12 +2751,10 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: var(--background-secondary-alt);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

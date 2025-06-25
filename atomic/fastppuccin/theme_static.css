@@ -2598,7 +2598,6 @@ body {
   --text-muted: rgb(167, 156, 176);
   --text-normal: rgb(217, 224, 238);
   caret-color: rgb(217, 224, 238);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2702,12 +2701,10 @@ body {
   --text-normal: rgb(217, 224, 238);
   --text-selection: hsla(258, 88%, 66%, 0.33);
   caret-color: rgb(217, 224, 238);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

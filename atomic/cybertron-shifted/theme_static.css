@@ -2436,7 +2436,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2542,12 +2541,10 @@ body {
   --text-title-h4: #67c073;
   --text-title-h5: #de87ca;
   --text-title-h6: #b4b4b4;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

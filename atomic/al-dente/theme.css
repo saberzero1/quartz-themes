@@ -2569,7 +2569,6 @@ body {
   --text-nav-selected: var(--color-dark);
   --text-normal: var(--color-dark);
   --text-selection: var(--color-purple-lightest);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2660,12 +2659,10 @@ body {
   --text-nav-selected: var(--color-light);
   --text-normal: var(--color-light);
   --text-selection: #9a71aa38;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
   height: 100%;
   left: 0;

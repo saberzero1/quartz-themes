@@ -2887,7 +2887,6 @@ body {
   --text-placeholder: rgb(169, 168, 165);
   --text-primary: rgb(22, 22, 22);
   --text-secondary: rgb(84, 81, 81);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3015,12 +3014,10 @@ body {
   --text-primary: rgb(244, 244, 240);
   --text-secondary: rgb(199, 197, 194);
   --text-selection: hsla(24.4, 90.8%, 61.8%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

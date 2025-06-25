@@ -1851,7 +1851,6 @@ svg.svg-icon {
   --text-title-h5: var(--dim-aqua);
   --text-title-h6: var(--dim-purple);
   --vim-cursor: var(--faded-blue);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1941,7 +1940,6 @@ svg.svg-icon {
   --text-title-h5: var(--light-aqua);
   --text-title-h6: var(--light-purple);
   --vim-cursor: var(--light-blue);
-  color-scheme: light;
 }
 
 .mod-sidedock {

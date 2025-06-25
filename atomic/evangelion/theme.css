@@ -2668,7 +2668,6 @@ body {
   --text-normal: #e1d6f8;
   --text-on-accent: #d4d4d4;
   --text-selection: #9cda7c;
-  color-scheme: light;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -2818,14 +2817,12 @@ body {
   --text-normal: #e1d6f8;
   --text-on-accent: #d4d4d4;
   --text-selection: #9cda7c;
-  color-scheme: dark;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

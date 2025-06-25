@@ -1972,7 +1972,6 @@ svg.svg-icon {
     var(--theme-accent-d),
     0.8
   );
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2131,7 +2130,6 @@ svg.svg-icon {
     var(--theme-accent-l),
     0.8
   );
-  color-scheme: light;
 }
 
 .mod-sidedock {

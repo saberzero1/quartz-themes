@@ -1894,7 +1894,6 @@ svg.svg-icon {
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   color: var(--dark-link);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1994,7 +1993,6 @@ svg.svg-icon {
   --tab-divider-color: var(--light-divider-color);
   --tab-outline-color: var(--light-divider-color);
   color: var(--light-link);
-  color-scheme: light;
 }
 
 .mod-sidedock {

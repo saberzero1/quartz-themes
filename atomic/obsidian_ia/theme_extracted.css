@@ -1795,7 +1795,6 @@ svg.svg-icon {
   --text-on-accent: #cbcccc;
   --text-selection: #20434e;
   --text-tag: #8c8c8c;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1885,7 +1884,6 @@ svg.svg-icon {
   --text-on-accent: #f7f7f7;
   --text-selection: #c9e9f4;
   --text-tag: #8c8c8c;
-  color-scheme: light;
 }
 
 .mod-sidedock {

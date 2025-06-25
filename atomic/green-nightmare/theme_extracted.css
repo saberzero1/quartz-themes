@@ -1773,7 +1773,6 @@ svg.svg-icon {
   --text-normal: #eeeeee;
   --text-on-accent: #000000;
   --text-selection: #486e02;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1837,7 +1836,6 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .mod-sidedock {

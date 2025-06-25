@@ -2540,7 +2540,6 @@ body {
   --text-normal: #2e3338;
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(0, 122, 255, 0.15);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2635,12 +2634,10 @@ body {
   --text-normal: #dcddde;
   --text-on-accent: #dcddde;
   --text-selection: rgba(0, 122, 255, 0.2);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -1894,7 +1894,6 @@ svg.svg-icon {
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --titlebar-background-focused: var(--color-base-10);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1994,7 +1993,6 @@ svg.svg-icon {
     calc(var(--base-s) - 5%),
     calc(var(--base-l) - 60%)
   );
-  color-scheme: light;
 }
 
 .mod-sidedock {

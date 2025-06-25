@@ -2464,7 +2464,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2557,12 +2556,10 @@ body {
   --titlebar-background-focused: #111;
   --yellow: rgb(235, 203, 139);
   --yellow_x: 235, 203, 139;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

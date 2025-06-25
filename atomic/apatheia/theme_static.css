@@ -3161,7 +3161,6 @@ body {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-dark {
@@ -3324,13 +3323,11 @@ body {
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --theme-filter: invert(98%) hue-rotate(180deg);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
   border-radius: 10px;
-  color-scheme: normal;
   display: none;
 }
 
@@ -25412,7 +25409,6 @@ input.mobile-vault-chooser-field-input {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-dark.a-catpuccin-mocha {
@@ -25619,7 +25615,6 @@ input.mobile-vault-chooser-field-input {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-dark.a-catpuccin-espresso {
@@ -25826,7 +25821,6 @@ input.mobile-vault-chooser-field-input {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .theme-dark.a-winter {
@@ -26033,7 +26027,6 @@ input.mobile-vault-chooser-field-input {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }
 
 .glassMorphism #calendar-container {
@@ -26483,5 +26476,4 @@ code .cm-tag {
   --text-muted: hsl(249.2307692308deg, 33.3333333333%, calc(20% + 65%));
   --text-selection: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.25);
   --yellow: #e5b567;
-  color-scheme: dark;
 }

@@ -2021,7 +2021,6 @@ svg.svg-icon {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background-focused: var(--color-base-00);
   --workspace-background-translucent: hsla(200, 30%, 4%, 0.95);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2186,7 +2185,6 @@ svg.svg-icon {
   --text-normal: var(--color-base-70);
   --titlebar-background-focused: var(--color-base-00);
   --workspace-background-translucent: hsla(205, 35%, 92%, 0.6);
-  color-scheme: light;
 }
 
 .mod-sidedock {

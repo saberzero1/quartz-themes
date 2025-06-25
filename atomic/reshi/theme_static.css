@@ -2725,7 +2725,6 @@ body {
   --titlebar-text-color: #6a6a6a;
   --titlebar-text-focused: #555555;
   --vault-name-color: #151515;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2907,12 +2906,10 @@ body {
   --titlebar-text-color: #c4c4c4;
   --titlebar-text-focused: #d7d7d7;
   --vault-name-color: #c4c4c4;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2504,7 +2504,6 @@ body {
   --window-shadow:
     inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey,
     inset 2px 2px #fff;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2597,12 +2596,10 @@ body {
   --window-shadow:
     inset -1px -1px #3a3a3a, inset 1px 1px #888888, inset -2px -2px #555,
     inset 2px 2px #666;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

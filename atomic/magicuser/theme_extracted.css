@@ -2072,7 +2072,6 @@ svg.svg-icon {
   --tab-divider-color: #003364;
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2215,7 +2214,6 @@ svg.svg-icon {
   --tab-divider-color: #003364;
   --text-muted: #353535;
   --text-normal: #000;
-  color-scheme: light;
 }
 
 .mod-sidedock {

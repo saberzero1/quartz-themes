@@ -1833,7 +1833,6 @@ svg.svg-icon {
   --text-normal: #e8e4da;
   --text-on-accent: #ffffff;
   --text-selection: #4a5a6a;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1948,7 +1947,6 @@ svg.svg-icon {
   --text-normal: #2e2e2e;
   --text-on-accent: #ffffff;
   --text-selection: #e6d9c2;
-  color-scheme: light;
 }
 
 .mod-sidedock {

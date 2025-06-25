@@ -2551,7 +2551,6 @@ body {
   --underline-line-color: #13c4a3;
   --underline-line-thickness: 3px;
   --underline-text-color: #121019;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2620,12 +2619,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

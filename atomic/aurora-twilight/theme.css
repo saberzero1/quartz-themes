@@ -2503,7 +2503,6 @@ body {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text: rgb(2, 2, 34);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2591,12 +2590,10 @@ body {
   --text: rgb(221, 221, 253);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

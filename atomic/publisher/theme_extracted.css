@@ -1928,7 +1928,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: var(--white-80);
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2068,7 +2067,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: var(--black-100);
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
-  color-scheme: light;
 }
 
 .mod-sidedock {

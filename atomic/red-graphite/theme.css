@@ -3393,7 +3393,6 @@ body {
   --vault-name-font-size: var(--font-ui-medium);
   --vault-name-font-weight: var(--font-medium);
   --vault-profile-color: var(--nav-item-color);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3714,12 +3713,10 @@ body {
   --vault-name-font-size: var(--font-ui-medium);
   --vault-name-font-weight: var(--font-medium);
   --vault-profile-color: var(--nav-item-color);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

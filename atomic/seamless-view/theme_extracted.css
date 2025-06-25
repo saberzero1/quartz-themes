@@ -1908,7 +1908,6 @@ svg.svg-icon {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebar-background: var(--background-secondary-alt);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2011,7 +2010,6 @@ svg.svg-icon {
   --text-highlight-bg-rgb: var(--highlight-color);
   --titlebar-background: var(--background-secondary-alt);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2559,7 +2559,6 @@ body {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(254, 80%, 68%, 0.25);
-  color-scheme: dark;
 }
 
 .theme-dark {
@@ -2630,12 +2629,10 @@ body {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(254, 80%, 68%, 0.25);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

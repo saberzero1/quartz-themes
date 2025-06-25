@@ -2743,7 +2743,6 @@ body {
     var(--theme-accent-l),
     0.8
   );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2877,12 +2876,10 @@ body {
     var(--theme-accent-d),
     0.8
   );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2565,7 +2565,6 @@ body {
   --text-1: var(--vercel-gray-900);
   --text-2: var(--vercel-gray-600);
   --text-accent: var(--vercel-blue-600);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2655,12 +2654,10 @@ body {
   --text-2: var(--vercel-gray-400);
   --text-accent: var(--vercel-blue-500);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

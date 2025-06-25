@@ -1942,7 +1942,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: var(--txt);
   --txi: #e499e4a2;
   --txt: #d8bcd8;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2104,7 +2103,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: #30222b;
   --txi: #412438cd;
   --txt: #30222b;
-  color-scheme: light;
 }
 
 .mod-sidedock {

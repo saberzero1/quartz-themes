@@ -2941,7 +2941,6 @@ body {
     var(--base-l),
     0.7
   );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3145,12 +3144,10 @@ body {
     var(--base-l),
     0.7
   );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

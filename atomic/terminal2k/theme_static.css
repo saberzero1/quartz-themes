@@ -2553,7 +2553,6 @@ body {
   --text-accent: #00e077;
   --text-normal: #1f1f1f;
   --underline-line-color: #00e077;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2663,12 +2662,10 @@ body {
   --text-normal: #ffffff;
   --text-selection: hsla(258, 88%, 66%, 0.33);
   --underline-line-color: #00e077;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

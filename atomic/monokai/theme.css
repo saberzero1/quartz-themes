@@ -2621,7 +2621,6 @@ body {
   --text-selection: var(--blue);
   --white: #ffffff;
   --yellow: #fad872;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2749,12 +2748,10 @@ body {
   --text-selection: var(--blue);
   --white: #ffffff;
   --yellow: #fad872;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

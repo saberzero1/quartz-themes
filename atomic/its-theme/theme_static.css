@@ -3113,7 +3113,6 @@ body {
   --theme-rainbow-6: #a4aec2;
   --toggle-thumb-color: transparent;
   --tooltip-color: white;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3320,7 +3319,6 @@ body {
   --theme-rainbow-6: #2e333d;
   --toggle-thumb-color: transparent;
   --tooltip-color: white;
-  color-scheme: dark;
 }
 
 iframe {
@@ -3329,7 +3327,6 @@ iframe {
   border-image: initial;
   border-style: none;
   border-width: calc(0 * 1.1);
-  color-scheme: normal;
   display: none;
 }
 

@@ -1836,7 +1836,6 @@ svg.svg-icon {
   --titlebar-background-focused: var(--color-base-10);
   --violet: #9446f8;
   --white: #fff;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1908,7 +1907,6 @@ svg.svg-icon {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --title-color: black;
-  color-scheme: light;
 }
 
 .mod-sidedock {

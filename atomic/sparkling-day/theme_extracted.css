@@ -1786,7 +1786,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1915,7 +1914,6 @@ svg.svg-icon {
   --underline-line-color: var(--mint);
   --underline-line-thickness: 3px;
   --underline-text-color: var(--rich-black);
-  color-scheme: light;
 }
 
 .mod-sidedock {

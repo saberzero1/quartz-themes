@@ -2509,7 +2509,6 @@ body {
   --text-normal: #6496ff;
   background-color: #ff0000;
   color: #0000ff;
-  color-scheme: light;
   font-weight: 300;
   opacity: 1;
   overflow: visible;
@@ -2597,7 +2596,6 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   background-color: #ff0000;
   color: #38e8ff;
-  color-scheme: dark;
   font-weight: 300;
   opacity: 1;
   overflow: visible;
@@ -2606,7 +2604,6 @@ body {
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2730,7 +2730,6 @@ body {
   --text-faint: hsl(var(--accent-h), 20%, 47%);
   --text-muted: hsl(var(--accent-h), 15%, 33%);
   --text-normal: hsl(0, 0%, 13%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2852,12 +2851,10 @@ body {
   --text-muted: hsl(var(--accent-h), 15%, 68%);
   --text-normal: hsl(0, 0%, 85%);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -1813,7 +1813,6 @@ svg.svg-icon {
   --vcs-added: 135 217 108;
   --vcs-modified: 128 191 255;
   --vcs-removed: 242 121 131;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1914,7 +1913,6 @@ svg.svg-icon {
   --vcs-added: 108 191 67;
   --vcs-modified: 71 138 204;
   --vcs-removed: 255 115 131;
-  color-scheme: light;
 }
 
 .mod-sidedock {

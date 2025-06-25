@@ -1859,7 +1859,6 @@ svg.svg-icon {
   --vim-cursor-color: #b3b3b3;
   --vim-cursor-outline: #e6e6e6;
   --vim-cursor-outline-width: 1px;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1942,7 +1941,6 @@ svg.svg-icon {
   --vim-cursor-color: #e6e6e6;
   --vim-cursor-outline: #b0b5bf;
   --vim-cursor-outline-width: 1.3px;
-  color-scheme: light;
 }
 
 .mod-sidedock {

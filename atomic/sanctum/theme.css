@@ -2873,7 +2873,6 @@ body {
   --text-placeholder: rgb(var(--gray-40));
   --text-primary: rgb(var(--gray-100));
   --text-secondary: rgb(var(--gray-70));
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3005,12 +3004,10 @@ body {
   --text-primary: rgb(var(--gray-10));
   --text-secondary: rgb(var(--gray-30));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

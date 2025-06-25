@@ -1,5 +1,8 @@
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
   .callout {
     --callout-blend-mode: lighten;
   }

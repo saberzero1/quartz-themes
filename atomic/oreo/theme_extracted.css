@@ -2292,7 +2292,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: #dddddd;
   --vault-name-color: #ffffff;
   --workspace-background-translucent: rgba(51, 51, 51, 0.8);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2515,7 +2514,6 @@ svg.svg-icon {
   --titlebar-text-color-focused: #333333;
   --vault-name-color: #000000;
   --workspace-background-translucent: rgba(240, 240, 240, 0.8);
-  color-scheme: light;
 }
 
 .mod-sidedock {

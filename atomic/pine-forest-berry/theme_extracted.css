@@ -1941,7 +1941,6 @@ svg.svg-icon {
   --text-title-h5: #548a7b;
   --text-title-h6: #377362;
   --vim-cursor: #ff5555;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2069,7 +2068,6 @@ svg.svg-icon {
   --text-title-h5: #548a7b;
   --text-title-h6: #377362;
   --vim-cursor: var(--forest-green-dark);
-  color-scheme: light;
 }
 
 .mod-sidedock {

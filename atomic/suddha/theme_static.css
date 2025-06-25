@@ -2612,7 +2612,6 @@ body {
   --text-selection: hsl(0, 0%, calc(95% - 6%));
   --text-shadow: hsl(0, 0%, calc(10% + 80%));
   --translucency: 0.85;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2711,12 +2710,10 @@ body {
   --text-selection: rgba(50, 50, 50, 1);
   --text-shadow: hsl(0, 0%, calc(10% + 3%));
   --translucency: 0.95;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
   margin: 4% 0% 4% 0%;
   padding: 0;

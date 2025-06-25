@@ -2490,7 +2490,6 @@ body {
     #000 100%
   );
   --tab-outline-color: hsl(calc(215 - 10), 79%, 50%, 40%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2569,12 +2568,10 @@ body {
   --tab-outline-color: hsl(calc(215 - 10), 79%, 50%, 55%);
   --text-accent: hsl(215, 79%, calc(50% + 3.5%));
   --text-selection: hsla(215, 79%, 50%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

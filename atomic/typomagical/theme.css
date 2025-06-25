@@ -2501,7 +2501,6 @@ body {
   --tag-color-hover: var(--text-normal);
   --title-gradient-bottom: color-mix(in hsl, var(--link-color), black);
   --title-gradient-top: var(--link-color);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2579,12 +2578,10 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --title-gradient-bottom: var(--link-color);
   --title-gradient-top: var(--text-normal);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

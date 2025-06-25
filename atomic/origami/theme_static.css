@@ -2559,7 +2559,6 @@ body {
   --shadow-s: rgb(0 0 0 / 4%) 0px 3px 5px;
   --text-on-accent: #ffffff;
   --text-on-button: #000000;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2637,12 +2636,10 @@ body {
   --text-accent: hsl(calc(191 - 3), calc(54% * 1.02), calc(64% * 1.15));
   --text-on-button: #000000;
   --text-selection: hsla(210, 92%, 71%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -24349,7 +24346,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-green-d.theme-dark {
@@ -24393,7 +24389,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .o-blue-l.theme-light {
@@ -24437,7 +24432,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-blue-d.theme-dark {
@@ -24481,7 +24475,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .o-purple-l.theme-light {
@@ -24525,7 +24518,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-purple-d.theme-dark {
@@ -24569,7 +24561,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .o-min-l.theme-light {
@@ -24613,7 +24604,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-light.o-min-l .workspace-ribbon {
@@ -24707,7 +24697,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .o-soft-l.theme-light {
@@ -24751,7 +24740,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-soft-d.theme-dark {
@@ -24795,7 +24783,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .o-shark-l.theme-light {
@@ -24846,7 +24833,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .o-shark-d.theme-dark {
@@ -24897,7 +24883,6 @@ input.mobile-vault-chooser-field-input {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .theme-light.o-shark-l .nav-file-title.is-active {
@@ -25329,7 +25314,6 @@ input.mobile-vault-chooser-field-input {
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: #000000;
-  color-scheme: dark;
 }
 
 .o-hack-d.theme-dark {
@@ -25377,7 +25361,6 @@ input.mobile-vault-chooser-field-input {
   --radius-m: 0px;
   --radius-s: 0px;
   --text-on-accent: #ffffff;
-  color-scheme: dark;
 }
 
 .o-hack-d.workspace-tab-header-container {

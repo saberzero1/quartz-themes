@@ -33,7 +33,7 @@ import {
   extractClassToggleCss,
   replaceVariableValue,
 } from "./util/postcss-style-settings.mjs";
-import { themes, usedRules, themeToTest, testMode } from "./config.mjs";
+import { themes, staticMode, themeToTest, testMode } from "./config.mjs";
 import { prune } from "./util/prune-unused.mjs";
 import {
   writeIndex,
@@ -302,7 +302,15 @@ manifestCollection.forEach((manifest) => {
         // Write extracted version to speed up later processing
         const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
         const extractResult = extractCSS(cssAtomicString);
+        const staticExctractResult = extractCSS(
+          generateStatic(cssAtomicString),
+        );
         writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
+        writePrettier(
+          `./static_converted_app_extracted.css`,
+          staticExctractResult,
+          "utf8",
+        );
       }
     }
     ensureDirectoryExists(`./atomic/${getTheme(manifest)}`);
@@ -487,16 +495,18 @@ manifestCollection.forEach((manifest) => {
     const extractResult = extractCSS(cssAtomicString);
     writePrettier(atomicExctractedFile, extractResult, "utf8");
     // Write extracted version of the static version to speed up later processing
-    //const cssAtomicExtractedString = fs.readFileSync(staticFile, "utf8");
-    //const extractStaticResult = extractCSS(cssAtomicExtractedString);
-    //writePrettier(staticExctractedFile, extractStaticResult, "utf8");
+    const cssStaticString = fs.readFileSync(staticFile, "utf8");
+    const staticExtractResult = extractCSS(cssStaticString);
+    writePrettier(staticExctractedFile, staticExtractResult, "utf8");
   }
-  const useExtendedSyntax = getValueFromDictionary(
-    manifest,
-    "use_extended_syntax",
-  )
-    ? "theme"
-    : "theme_extracted";
+  // TODO: Generate extracted version of the static theme CSS
+  const useExtendedSyntax = staticMode
+    ? getValueFromDictionary(manifest, "use_extended_syntax")
+      ? "theme_static"
+      : "theme_static_extracted"
+    : getValueFromDictionary(manifest, "use_extended_syntax")
+      ? "theme"
+      : "theme_extracted";
   let themeName = getTheme(manifest);
   let themeCSS = fs.readFileSync(
     `${atomicFolder}/${themeName}/${useExtendedSyntax}.css`,

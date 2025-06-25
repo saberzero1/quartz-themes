@@ -2552,7 +2552,6 @@ body {
   --text-title-h5: #569d79;
   --text-title-h6: #b87b9d;
   --vim-cursor: #5a93a2;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2644,12 +2643,10 @@ body {
   --text-title-h5: #689d6a;
   --text-title-h6: #b16286;
   --vim-cursor: #83a598;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

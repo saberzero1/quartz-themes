@@ -1854,7 +1854,6 @@ svg.svg-icon {
   --text-highlight-bg-rgb: var(--color-yellow-rgb);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --titlebar-background-focused: var(--bg-darker);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1930,7 +1929,6 @@ svg.svg-icon {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --titlebar-background-focused: #fff5de;
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2493,7 +2493,6 @@ body {
     var(--accent-s),
     calc(var(--accent-l) * 0.4)
   );
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2566,12 +2565,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

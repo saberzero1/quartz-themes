@@ -2629,7 +2629,6 @@ body {
   --titlebar-text-color-focused: #30222b;
   --txi: #412438cd;
   --txt: #30222b;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2792,12 +2791,10 @@ body {
   --titlebar-text-color-focused: #d8bcd8;
   --txi: #e499e4a2;
   --txt: #d8bcd8;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -2422,7 +2422,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2487,12 +2486,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(254, 80%, 68%);
   --text-selection: hsla(254, 80%, 68%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -23840,7 +23837,6 @@ body:is(.theme-light, .theme-dark).theme-light {
   --text-strong: #171717;
   --titlebar-isfocused: #ebebeb;
   --titlebar-not-focused: #b3b3b3;
-  color-scheme: light;
 }
 
 body:is(.theme-light, .theme-dark).theme-light.accent-color-bw-dark {
@@ -23943,7 +23939,6 @@ body:is(.theme-light, .theme-dark).theme-dark {
   --text-strong: #f5f5f5;
   --titlebar-isfocused: #171514;
   --titlebar-not-focused: #4c4c4d;
-  color-scheme: dark;
 }
 
 body:is(.theme-light, .theme-dark).theme-dark.accent-color-bw-dark {

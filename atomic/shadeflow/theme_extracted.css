@@ -1806,7 +1806,6 @@ svg.svg-icon {
   --text-on-accent: black;
   --text-selection: #007bcf;
   --toggle-thumb-color: black;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1903,7 +1902,6 @@ svg.svg-icon {
   --text-muted: rgb(163, 163, 163);
   --text-normal: rgb(0, 0, 0);
   --text-selection: #007bcf;
-  color-scheme: light;
 }
 
 .mod-sidedock {

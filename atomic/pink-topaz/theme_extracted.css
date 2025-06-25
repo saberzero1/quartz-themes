@@ -2132,7 +2132,6 @@ svg.svg-icon {
   --theme-color-translucent: #f39ba0;
   --theme-color-translucent-1: #f39ba0;
   --yellow: #fcdc00;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2332,7 +2331,6 @@ svg.svg-icon {
   --theme-color-translucent: #f5a7a2;
   --theme-color-translucent-1: #ffdece;
   --yellow: #ffc727;
-  color-scheme: light;
 }
 
 .mod-sidedock {

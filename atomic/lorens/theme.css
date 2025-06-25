@@ -3085,7 +3085,6 @@ body {
     inset 0px 1px 2px rgba(0, 0, 0, 0.25),
     0px 1px 0px var(--background-primary), 0px 2px 4px rgba(0, 0, 0, 0.04);
   --workspace-background-translucent: rgba(246, 246, 246, 0.8);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3278,12 +3277,10 @@ body {
     calc(1.25 * var(--accent-l) / 3.6),
     0.6
   );
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

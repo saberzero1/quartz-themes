@@ -2540,7 +2540,6 @@ body {
   --text-rgb: 55, 53, 47;
   --text-selection: rgba(0, 122, 255, 0.15);
   --text-yellow: rgb(223, 171, 1);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2637,12 +2636,10 @@ body {
   --text-rgb: 255, 255, 255;
   --text-selection: hsla(211, 100%, 50%, 0.2);
   --text-yellow: rgb(255, 220, 73);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

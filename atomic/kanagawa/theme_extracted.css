@@ -1939,7 +1939,6 @@ svg.svg-icon {
   --text-title-h6: var(--neutral-blue);
   --vim-cursor-backgroung: var(--fujiWhite);
   --vim-cursor-color: var(--sumiInk1);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2038,7 +2037,6 @@ svg.svg-icon {
   --text-title-h6: var(--lotusBlue4);
   --vim-cursor-backgroung: var(--lotusGray);
   --vim-cursor-color: var(--lotusInk1);
-  color-scheme: light;
 }
 
 .mod-sidedock {

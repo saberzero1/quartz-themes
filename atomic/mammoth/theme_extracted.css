@@ -1846,7 +1846,6 @@ svg.svg-icon {
   --todoist-orange-background: rgba(255, 154, 20, 0.1);
   --todoist-red: #ff7066;
   --todoist-red-background: rgba(255, 112, 102, 0.1);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1955,7 +1954,6 @@ svg.svg-icon {
   --todoist-orange-background: rgba(255, 154, 20, 0.1);
   --todoist-red: #ff7066;
   --todoist-red-background: rgba(255, 112, 102, 0.1);
-  color-scheme: light;
 }
 
 .mod-sidedock {

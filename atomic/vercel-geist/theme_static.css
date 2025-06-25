@@ -2517,7 +2517,6 @@ body {
   --text-1: #000000;
   --text-2: #444444;
   --text-accent: #0070f3;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2603,12 +2602,10 @@ body {
   --text-2: #888888;
   --text-accent: #4d8bf9;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

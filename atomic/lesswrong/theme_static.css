@@ -2480,7 +2480,6 @@ body {
   --table-border-color: #212121;
   --table-header-background: #f0f1f1;
   --text-normal: #212121;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2557,12 +2556,10 @@ body {
   --text-accent: hsl(calc(125 - 3), calc(23% * 1.02), calc(59% * 1.15));
   --text-normal: #dedede;
   --text-selection: hsla(125, 23%, 59%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

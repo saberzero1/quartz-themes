@@ -2492,7 +2492,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2561,12 +2560,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --text-selection: hsla(354, 100%, 64%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -19464,7 +19461,6 @@ body.theme-dark {
   --text-highlight-bg: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --titlebar-background: #090b10;
   --titlebar-background-focused: #090b10;
-  color-scheme: dark;
 }
 
 .canvas-wrapper {
@@ -23930,7 +23926,6 @@ body.is-mobile.theme-dark {
   --text-highlight-bg: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --titlebar-background: #090b10;
   --titlebar-background-focused: #090b10;
-  color-scheme: dark;
 }
 
 body.theme-dark .markdown-rendered mark {

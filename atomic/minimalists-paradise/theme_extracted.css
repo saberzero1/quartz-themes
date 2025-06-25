@@ -1896,7 +1896,6 @@ svg.svg-icon {
   --text-accent: var(--color-accent-1);
   --text-color: #ffffff;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1984,7 +1983,6 @@ svg.svg-icon {
   --tab-background-active: rgba(0, 0, 0, 0.08);
   --table-header-background: var(--color-accent);
   --text-color: #000000;
-  color-scheme: light;
 }
 
 .mod-sidedock {

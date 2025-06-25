@@ -2626,7 +2626,6 @@ body {
   --text-highlight-bg: rgb(255 208 0 / 40%);
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: var(--text-normal);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2734,12 +2733,10 @@ body {
   --text-highlight-bg-active: rgb(255 128 0 / 40%);
   --text-on-button: var(--text-on-accent);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -25041,7 +25038,6 @@ settings:
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  color-scheme: dark;
 }
 
 /* soft theme
@@ -25099,7 +25095,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-soft-d.theme-dark {
@@ -25149,7 +25144,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* architect theme
@@ -25205,7 +25199,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-arch-d.theme-dark {
@@ -25248,7 +25241,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* shark time
@@ -25306,7 +25298,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-shark-d.theme-dark {
@@ -25361,7 +25352,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 .ulu-shark-d.theme-dark
@@ -25447,7 +25437,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-min-d.theme-dark {
@@ -25482,7 +25471,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* paperlike
@@ -25535,7 +25523,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 /* solarized
@@ -25784,7 +25771,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-green-d.theme-dark {
@@ -25834,7 +25820,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* blue theme
@@ -25863,7 +25848,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-blue-d.theme-dark {
@@ -25888,7 +25872,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* magic theme
@@ -25916,7 +25899,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .ulu-purple-d.theme-dark {
@@ -25941,7 +25923,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* gruvbox
@@ -26183,7 +26164,6 @@ settings:
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
 }
 
 .theme-dark.ulu-obplus-dt {
@@ -26235,7 +26215,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* dark mode only themes
@@ -26289,7 +26268,6 @@ settings:
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
 }
 
 /* control, based off of nebula oni cerberus for vscode
@@ -26345,7 +26323,6 @@ settings:
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: var(--color-base-00);
-  color-scheme: dark;
 }
 
 /* abaddon
@@ -26374,7 +26351,6 @@ settings:
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: var(--color-base-00);
-  color-scheme: dark;
 }
 
 .theme-dark.ulu-dracula-dt {
@@ -26525,7 +26501,6 @@ settings:
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: var(--color-base-00);
-  color-scheme: dark;
 }
 
 .ulu-gradient-d.theme-dark {
@@ -26564,7 +26539,6 @@ settings:
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --text-on-accent: var(--color-base-00);
-  color-scheme: dark;
 }
 
 .ulu-gradient-d.theme-dark .modal:not(.is-mobile) {

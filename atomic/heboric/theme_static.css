@@ -2533,7 +2533,6 @@ body {
   --text-selection: rgb(200, 100, 100);
   --titlebar-background: hsl(221, 8%, 23%);
   --titlebar-background-focused: hsl(221, 8%, 23%);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2646,12 +2645,10 @@ body {
   --text-selection: hsl(0, 40%, 50%);
   --titlebar-background: hsl(221, 8%, 14%);
   --titlebar-background-focused: hsl(221, 8%, 14%);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

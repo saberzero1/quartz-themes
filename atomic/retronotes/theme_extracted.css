@@ -1888,7 +1888,6 @@ svg.svg-icon {
   --text-on-accent: var(--white-ink);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --vault-profile-color: var(--leather-contrast-color);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1971,7 +1970,6 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-accent: var(--leather-color-alt);
   --vault-profile-color: var(--leather-contrast-color);
-  color-scheme: light;
 }
 
 .mod-sidedock {

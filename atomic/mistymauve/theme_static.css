@@ -2506,7 +2506,6 @@ body {
   --text-highlight-bg: #ff8787;
   --text-selection: #ff8787;
   color: #ff8787;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2586,12 +2585,10 @@ body {
   --text-highlight-bg: #e26868;
   --text-selection: #e26868;
   color: #d8d9cf;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

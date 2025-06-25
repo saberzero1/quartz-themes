@@ -1903,7 +1903,6 @@ svg.svg-icon {
   --text-accent: var(--color-accent-1);
   --text-on-button: var(--color-base-00);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1978,7 +1977,6 @@ svg.svg-icon {
   --shadow-s: rgb(0 0 0 / 4%) 0px 3px 5px;
   --text-on-accent: var(--color-base-100);
   --text-on-button: var(--color-base-00);
-  color-scheme: light;
 }
 
 .mod-sidedock {

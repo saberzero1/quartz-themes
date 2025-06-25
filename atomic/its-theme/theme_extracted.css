@@ -2482,7 +2482,6 @@ svg.svg-icon {
   --theme-rainbow-6: #2e333d;
   --toggle-thumb-color: transparent;
   --tooltip-color: var(--text-dl);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2695,7 +2694,6 @@ svg.svg-icon {
   --theme-rainbow-6: #a4aec2;
   --toggle-thumb-color: transparent;
   --tooltip-color: var(--text-dl);
-  color-scheme: light;
 }
 
 .mod-sidedock {

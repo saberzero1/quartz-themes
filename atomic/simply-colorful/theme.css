@@ -2634,7 +2634,6 @@ body {
   );
   --text-accent: #7e55dd;
   --text-accent-hover: rgba(126, 85, 221, 0.825);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2725,12 +2724,10 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: rgba(138, 92, 245, 0.825);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

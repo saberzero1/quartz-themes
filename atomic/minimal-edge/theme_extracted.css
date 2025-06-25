@@ -1864,7 +1864,6 @@ svg.svg-icon {
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(0, 122, 255, 0.15);
   --titlebar-background-focused: #20242b;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1976,7 +1975,6 @@ svg.svg-icon {
   --text-on-accent: #f2f2f2;
   --text-selection: rgba(0, 122, 255, 0.15);
   --titlebar-background-focused: #e4ddd3;
-  color-scheme: light;
 }
 
 .mod-sidedock {

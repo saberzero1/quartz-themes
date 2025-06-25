@@ -2764,7 +2764,6 @@ body {
   --toggle-track-enabled-color: #f0916f;
   --toggle-track-hovered-shadow: 0 2px 6px rgba(240, 145, 111, 0.18);
   --toggle-track-shadow: 0 2px 4px rgba(240, 145, 111, 0.13);
-  color-scheme: light;
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
@@ -2897,7 +2896,6 @@ body {
   --toggle-track-enabled-color: #f0916f;
   --toggle-track-hovered-shadow: 0 2px 6px rgba(240, 145, 111, 0.18);
   --toggle-track-shadow: 0 2px 4px rgba(240, 145, 111, 0.13);
-  color-scheme: dark;
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
@@ -2905,7 +2903,6 @@ body {
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

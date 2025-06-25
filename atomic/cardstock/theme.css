@@ -2605,7 +2605,6 @@ body {
   --text-normal: var(--text);
   --text-selection: var(--dark-beige);
   --text-success: var(--green);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2717,12 +2716,10 @@ body {
   --text-normal: var(--main-bg);
   --text-selection: #171413;
   --text-success: #ccff00;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

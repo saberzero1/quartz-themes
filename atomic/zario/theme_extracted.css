@@ -1914,7 +1914,6 @@ svg.svg-icon {
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: dark;
   text-decoration-color: rgba(var(--hover-rgb), 0.75);
 }
 
@@ -2026,7 +2025,6 @@ svg.svg-icon {
     calc(var(--base-l) - 60%)
   );
   --titlebar-background-focused: var(--background-secondary);
-  color-scheme: light;
   text-decoration-color: rgba(var(--hover-rgb), 1);
 }
 

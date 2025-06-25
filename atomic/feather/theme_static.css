@@ -2602,7 +2602,6 @@ body {
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
   --titlebar-background-focused: #e8e8e8;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2689,12 +2688,10 @@ body {
   --text-muted: hsl(212, 15%, calc(13% + 65%));
   --text-selection: hsla(215, 75%, 60%, 0.25);
   --titlebar-background-focused: #272835;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
@@ -25409,7 +25406,6 @@ body.theme-light.is-mobile {
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4);
   --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
   --titlebar-background-focused: #e8e8e8;
-  color-scheme: light;
 }
 
 body.theme-dark.is-mobile {
@@ -25478,7 +25474,6 @@ body.theme-dark.is-mobile {
   --text-muted: hsl(212, 15%, calc(13% + 65%));
   --text-selection: hsla(215, 75%, 60%, 0.25);
   --titlebar-background-focused: #272835;
-  color-scheme: dark;
 }
 
 body.is-mobile.theme-dark.mobile-black-background {

@@ -2654,7 +2654,6 @@ body {
   --text-normal: #7aa3b8;
   --titlebar-background-focused: #000;
   --workspace-background-translucent: hsla(205, 35%, 92%, 0.6);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2786,12 +2785,10 @@ body {
   --text-selection: hsla(200, 70%, 45%, 0.33);
   --titlebar-background-focused: #000;
   --workspace-background-translucent: hsla(200, 30%, 4%, 0.95);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -1978,7 +1978,6 @@ svg.svg-icon {
   --text-normal: rgb(var(--ctp-text));
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   caret-color: var(--text-normal);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2075,7 +2074,6 @@ svg.svg-icon {
   --text-muted: rgb(var(--ctp-overlay2));
   --text-normal: rgb(var(--ctp-text));
   caret-color: var(--text-normal);
-  color-scheme: light;
 }
 
 .mod-sidedock {

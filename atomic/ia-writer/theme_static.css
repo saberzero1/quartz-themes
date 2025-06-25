@@ -2474,7 +2474,6 @@ body {
   --text-highlight-color: #ccc;
   --text-muted: #b5b3b1;
   --text-normal: #1a1a1a;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2550,12 +2549,10 @@ body {
   --text-muted: #707070;
   --text-normal: #ccc;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

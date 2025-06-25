@@ -1850,7 +1850,6 @@ svg.svg-icon {
   --titlebar-text-color: #ffffff;
   --titlebar-text-color-focused: #ffffff;
   --vim-cursor: #c76cff;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1963,7 +1962,6 @@ svg.svg-icon {
   --titlebar-text-color: #ffffff;
   --titlebar-text-color-focused: #ffffff;
   --vim-cursor: #ff3e3e;
-  color-scheme: light;
 }
 
 .mod-sidedock {

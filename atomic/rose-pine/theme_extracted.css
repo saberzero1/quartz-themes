@@ -1820,7 +1820,6 @@ svg.svg-icon {
   --text-muted: var(--muted);
   --text-normal: var(--text);
   --text-selection: rgba(49, 116, 143, 0.6);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -1906,7 +1905,6 @@ svg.svg-icon {
   --text-muted: var(--light-muted);
   --text-normal: var(--light-text);
   --text-selection: rgba(40, 105, 131, 0.6);
-  color-scheme: light;
 }
 
 .mod-sidedock {

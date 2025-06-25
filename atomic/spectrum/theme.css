@@ -2606,7 +2606,6 @@ body {
   --text-accent: var(--main-node);
   --text-accent-hover: var(--main-node-hover);
   --text-highlight-bg: #e9b35f;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2723,12 +2722,10 @@ body {
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

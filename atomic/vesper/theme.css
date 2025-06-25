@@ -2503,7 +2503,6 @@ body {
   --text-selection: #ffb06650;
   --titlebar-background: #ffffff;
   --titlebar-background-focused: #ffffff;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2588,12 +2587,10 @@ body {
   --text-selection: #ffc79950;
   --titlebar-background: #101010;
   --titlebar-background-focused: #101010;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

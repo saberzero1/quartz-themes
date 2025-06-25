@@ -2455,7 +2455,6 @@ body {
   background-color: #d4d0c8;
   caret-color: hsl(calc(240 - 3), calc(100% * 1.02), calc(24% * 1.15));
   color: #181612;
-  color-scheme: light;
   contain: initial;
   font-family:
     "??",
@@ -2538,7 +2537,6 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2607,12 +2605,10 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: hsl(calc(240 - 3), calc(100% * 1.02), calc(24% * 1.15));
   --text-selection: hsla(240, 100%, 24%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

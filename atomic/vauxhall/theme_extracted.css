@@ -1961,7 +1961,6 @@ svg.svg-icon {
   --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), 80%);
   --violet: #9446f8;
   --white: #fff;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2098,7 +2097,6 @@ svg.svg-icon {
   --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), var(--lum-fg));
   --violet: #9446f8;
   --white: #fff;
-  color-scheme: light;
 }
 
 .mod-sidedock {

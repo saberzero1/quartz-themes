@@ -1970,7 +1970,6 @@ svg.svg-icon {
   --text-selection: rgb(78, 91, 154);
   --yellow: #f1fa8c;
   --yellow-rgb: 241, 250, 140;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2109,7 +2108,6 @@ svg.svg-icon {
   --text-selection: rgba(44, 77, 188, 0.2);
   --yellow: #f1fa8c;
   --yellow-rgb: 241, 250, 140;
-  color-scheme: light;
 }
 
 .mod-sidedock {

@@ -2761,7 +2761,6 @@ svg.svg-icon {
   --window-shadow: 0 1px 3px hsla(207, 10%, 10%, 0.1);
   --window-shadow2: 0 0 9px hsla(212, 17%, 0%, 0.3);
   --yellow: #d6b87f;
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -3128,7 +3127,6 @@ svg.svg-icon {
   --window-shadow: 0 1px 3px hsla(212, 17%, 80%, 0.2);
   --window-shadow2: 0 0 9px hsla(217, 15%, 83%, 0.7);
   --yellow: #e48100;
-  color-scheme: light;
 }
 
 .mod-sidedock {

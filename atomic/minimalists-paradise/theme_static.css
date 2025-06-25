@@ -2614,7 +2614,6 @@ body {
   --tab-background-active: rgba(0, 0, 0, 0.08);
   --table-header-background: #2f424c;
   --text-color: #000000;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2705,12 +2704,10 @@ body {
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-color: #ffffff;
   --text-selection: hsla(258, 88%, 66%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

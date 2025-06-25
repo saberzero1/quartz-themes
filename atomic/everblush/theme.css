@@ -2555,7 +2555,6 @@ body {
   --text-title-h5: var(--purple);
   --text-title-h6: var(--orange);
   --vim-cursor: var(--purple);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2655,12 +2654,10 @@ body {
   --text-title-h5: var(--lavender);
   --text-title-h6: var(--teal);
   --vim-cursor: var(--orange);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

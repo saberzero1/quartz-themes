@@ -2702,7 +2702,6 @@ body {
   --text-selection: rgba(247, 224, 159, 0.7);
   --var-bg-col: white;
   --var-tone-sw: black;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2820,12 +2819,10 @@ body {
   --text-selection: rgba(255, 110, 47, 0.3);
   --var-bg-col: rgba(255, 255, 255, 0.2);
   --var-tone-sw: white;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

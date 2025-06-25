@@ -2859,7 +2859,6 @@ body {
   --vault-profile-color: #fbfbfb;
   --vault-profile-color-hover: #fbfbfb;
   --workspace-background-translucent: hsla(218, 9%, 15%, 0.7);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3025,12 +3024,10 @@ body {
   --vault-profile-color: #fbfbfb;
   --vault-profile-color-hover: #fbfbfb;
   --workspace-background-translucent: hsla(218, 9%, 15%, 0.7);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

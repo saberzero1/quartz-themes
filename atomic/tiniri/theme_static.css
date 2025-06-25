@@ -2518,7 +2518,6 @@ body {
   --text-selection: #dae5e2;
   --text-success: #538a8a;
   --text-warning: #ad514c;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2600,12 +2599,10 @@ body {
   --text-selection: #353a42;
   --text-success: #aac2ae;
   --text-warning: #f5a571;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

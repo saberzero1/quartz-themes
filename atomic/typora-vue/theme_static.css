@@ -2484,7 +2484,6 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --table-row-background-hover: #f2f2f2;
   --text-normal: #34495e;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2561,12 +2560,10 @@ body {
   --text-accent: hsl(calc(153 - 3), calc(47% * 1.02), calc(49% * 1.15));
   --text-normal: #eeeeee;
   --text-selection: hsla(153, 47%, 49%, 0.33);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -3124,7 +3124,6 @@ body {
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-on-accent: #232830;
   --titlebar-background: #0c0f11;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -3398,12 +3397,10 @@ body {
   --text-on-accent: #232830;
   --text-selection: hsla(0, 50%, 45%, 0.25);
   --titlebar-background: #0c0f11;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

@@ -1961,7 +1961,6 @@ svg.svg-icon {
   --text-muted: #777;
   --text-normal: #aaa;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
-  color-scheme: dark;
 }
 
 .theme-light {
@@ -2084,7 +2083,6 @@ svg.svg-icon {
   --text-faint: #bbb;
   --text-muted: #888;
   --text-normal: #444;
-  color-scheme: light;
 }
 
 .mod-sidedock {

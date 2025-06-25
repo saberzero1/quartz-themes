@@ -2543,7 +2543,6 @@ body {
   --tab-text-color-active: #32cd32;
   --tab-text-color-focused-active-current: #32cd32;
   --text-selection: #ffd700;
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2651,12 +2650,10 @@ body {
   --tab-text-color-focused-active-current: #00dfa2;
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-selection: #556b2f;
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

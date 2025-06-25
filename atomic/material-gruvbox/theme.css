@@ -2753,7 +2753,6 @@ body {
   --text-normal: var(--dark-text);
   --text-selection: rgba(var(--neutral-red-x), 0.6);
   --titlebar-text-color-focused: var(--bright-red);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2886,12 +2885,10 @@ body {
   --text-normal: var(--light-text);
   --text-selection: rgba(var(--neutral-red-x), 0.6);
   --titlebar-text-color-focused: var(--neutral-red);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 

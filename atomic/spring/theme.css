@@ -2566,7 +2566,6 @@ body {
   --tab-text-color-active: var(--dark-green);
   --tab-text-color-focused-active-current: var(--dark-green);
   --text-selection: var(--dark-yellow);
-  color-scheme: light;
 }
 
 .theme-dark {
@@ -2678,12 +2677,10 @@ body {
   --tab-text-color-focused-active-current: var(--green);
   --text-accent: var(--color-accent-1);
   --text-selection: var(--code-tag);
-  color-scheme: dark;
 }
 
 iframe {
   border: 0;
-  color-scheme: normal;
   display: none;
 }
 
